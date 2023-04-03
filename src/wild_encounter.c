@@ -374,6 +374,8 @@ static u16 GetCurrentMapWildMonHeaderId(void)
 
                 i += alteringCaveId;
             }
+			
+			// if map should have gender-specific encounters, i += player gender
 
             return i;
         }

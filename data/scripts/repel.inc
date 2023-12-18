@@ -44,7 +44,6 @@ EventScript_SprayWoreOffMessage::
 	releaseall
 	end
 
-
 EventScript_UseSingleSpray::
 .if VAR_LAST_REPEL_LURE_USED == 0
 	call EventScript_UseDifferentSpray

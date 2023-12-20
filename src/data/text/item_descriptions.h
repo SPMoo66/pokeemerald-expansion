@@ -3993,3 +3993,10 @@ static const u8 sGlimmeringCharmDesc[] = _(
     "A charm that will\n"
     "raise the shards\n"
     "from Tera Raids.");
+
+//Start Pokevial Branch
+static const u8 sPokevialDesc[] = _(
+    "Restores all\n"
+    "POKéMON to full\n"
+    "health.");
+//End Pokevial Branch

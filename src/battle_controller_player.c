@@ -1749,11 +1749,28 @@ static void MoveSelectionDisplayMoveType(u32 battler)
             type = ItemId_GetSecondaryId(itemId);
         else
             type = gBattleMoves[MOVE_IVY_CUDGEL].type;
+	    StringCopy(txtPtr, gTypeNames[type]);
+    }
+    else if (moveInfo->moves[gMoveSelectionCursor[battler]] == MOVE_HIDDEN_POWER)
+    {
+        u8 typeBits  = ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_HP_IV) & 1) << 0)
+                     | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_ATK_IV) & 1) << 1)
+                     | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_DEF_IV) & 1) << 2)
+                     | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_SPEED_IV) & 1) << 3)
+                     | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_SPATK_IV) & 1) << 4)
+                     | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_SPDEF_IV) & 1) << 5);
+
+        type = (15 * typeBits) / 63 + 1;
+        if (type >= TYPE_MYSTERY)
+            type++;
+        type |= 0xC0;
+        StringCopy(txtPtr, gTypeNames[type & 0x3F]);
     }
     else
+    {
         type = gBattleMoves[moveInfo->moves[gMoveSelectionCursor[battler]]].type;
-
-    StringCopy(txtPtr, gTypeNames[type]);
+        StringCopy(txtPtr, gTypeNames[type]);
+    }
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_TYPE);
 	
 	MoveSelectionDisplaySplitIcon(battler);

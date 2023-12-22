@@ -1856,3 +1856,8 @@ const u8 gText_PokevialIsEmpty[] =_("The {STR_VAR_1} is empty!\nRefill it by hea
 const u8 gText_YourPkmnWereRestored[] =_("Your POKéMON were restored to full health.{PAUSE_UNTIL_PRESS}");
 //End Pokevial Branch
 const u8 gText_AshQty[] = _("Ash Qty:\n{STR_VAR_1}{PAUSE_UNTIL_PRESS}");
+
+// view IVs and EVs on summary screen
+const u8 gText_ViewIVs[] = _("IVs");
+const u8 gText_ViewEVs[] = _("EVs");
+const u8 gText_ViewStats[] = _("Stats");

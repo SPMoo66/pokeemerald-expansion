@@ -3071,4 +3071,9 @@ extern const u8 gText_YourPkmnWereRestored[];
 
 extern const u8 gText_AshQty[];
 
+// view IVs and EVs on summary screen
+extern const u8 gText_ViewIVs[];
+extern const u8 gText_ViewEVs[];
+extern const u8 gText_ViewStats[];
+
 #endif // GUARD_STRINGS_H

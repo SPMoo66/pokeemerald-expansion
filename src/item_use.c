@@ -1568,3 +1568,10 @@ void ItemUseOutOfBattle_Pokevial(u8 taskId)
 //End Pokevial Branch
 
 #undef tUsingRegisteredKeyItem
+
+void ItemUseOutOfBattle_PokeBall(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_PokeBall;
+    gBagMenu->newScreenCallback = CB2_ShowPartyMenuForItemUse;
+    Task_FadeAndCloseBagMenu(taskId);
+}

@@ -478,7 +478,11 @@ static const u8 *const sMalePresetNames[] = {
     gText_DefaultNameLandon,
     gText_DefaultNameCollin,
     gText_DefaultNameStanley,
-    gText_DefaultNameQuincy
+    gText_DefaultNameQuincy,
+    gText_DefaultNameAlex,
+    gText_DefaultNameJon,
+    gText_DefaultNameSteven,
+    gText_DefaultNameTrenton
 };
 
 static const u8 *const sFemalePresetNames[] = {
@@ -501,7 +505,11 @@ static const u8 *const sFemalePresetNames[] = {
     gText_DefaultNameLillie,
     gText_DefaultNameTerra,
     gText_DefaultNameLucy,
-    gText_DefaultNameHalie
+    gText_DefaultNameHalie,
+    gText_DefaultNameKris,
+    gText_DefaultNameLyra,
+    gText_DefaultNameDawn,
+    gText_DefaultNameGloria
 };
 
 // The number of male vs. female names is assumed to be the same.

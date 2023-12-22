@@ -470,6 +470,7 @@
 #define B_SUPER_EFFECTIVE        24
 #define B_NOT_VERY_EFFECTIVE     25
 #define B_NO_EFFECT              26
+#define B_WIN_MOVE_DESCRIPTION   27
 
 // The following are duplicate id values for windows that Battle Arena uses differently.
 #define ARENA_WIN_PLAYER_NAME      15

@@ -1783,7 +1783,7 @@ static void UNUSED Unused_CreateApprenticeMons(u16 trainerId, u8 firstMonId)
     else
         level = FRONTIER_MAX_LEVEL_50;
 
-    for (i = 0; i != FRONTIER_PARTY_SIZE; i++)
+    for (i = 0; i != 3; i++)
     {
         CreateMonWithEVSpread(&gEnemyParty[firstMonId + i], apprentice->party[i].species, level, fixedIV, 8);
         friendship = MAX_FRIENDSHIP;

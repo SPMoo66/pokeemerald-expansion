@@ -4292,7 +4292,7 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
     textPrinter.letterSpacing = 0;
 
     // Print names of the party mons
-    for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
+    for (i = 0; i < 3; i++)
     {
         textPrinter.currentY = sSpeciesNameTextYCoords[i];
         if (trainerId == TRAINER_PLAYER)

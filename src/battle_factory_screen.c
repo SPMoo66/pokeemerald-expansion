@@ -1044,11 +1044,13 @@ static const struct SwapScreenAction sSwap_PlayerScreenActions[] =
     {.id = SWAPACTION_MON, .func = Swap_ActionMon},
     {.id = SWAPACTION_MON, .func = Swap_ActionMon},
     {.id = SWAPACTION_MON, .func = Swap_ActionMon},
+    {.id = SWAPACTION_MON, .func = Swap_ActionMon},
     {.id = SWAPACTION_CANCEL, .func = Swap_ActionCancel},
 };
 
 static const struct SwapScreenAction sSwap_EnemyScreenActions[] =
 {
+    {.id = SWAPACTION_MON, .func = Swap_ActionMon},
     {.id = SWAPACTION_MON, .func = Swap_ActionMon},
     {.id = SWAPACTION_MON, .func = Swap_ActionMon},
     {.id = SWAPACTION_MON, .func = Swap_ActionMon},
@@ -1901,8 +1903,10 @@ static void Select_PrintSelectMonString(void)
         str = gText_SelectSecondPkmn;
     else if (sFactorySelectScreen->selectingMonsState == 3)
         str = gText_SelectThirdPkmn;
+    else if (sFactorySelectScreen->selectingMonsState == 4)
+        str = gText_SelectFourthPkmn;
     else
-        str = gText_TheseThreePkmnOkay;
+        str = gText_TheseFourPkmnOkay;
 
     AddTextPrinterParameterized(SELECT_WIN_INFO, FONT_NORMAL, str, 2, 5, 0, NULL);
     CopyWindowToVram(SELECT_WIN_INFO, COPYWIN_GFX);
@@ -2056,7 +2060,7 @@ static void Select_CreateChosenMonsSprites(void)
 {
     u8 i, j;
 
-    for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
+    for (i = 0; i < 3; i++)
     {
         for (j = 0; j < SELECTABLE_MONS_COUNT; j++)
         {
@@ -2824,13 +2828,13 @@ static void Swap_Task_SlideCycleBalls(u8 taskId)
             if (gTasks[taskId].tBallCycled(i) == TRUE)
             {
                 // New ball coming in from left, check if it has reached dest
-                if (gSprites[sFactorySwapScreen->ballSpriteIds[i]].x > (i * 48) + 72)
+                if (gSprites[sFactorySwapScreen->ballSpriteIds[i]].x > (i * 32) + 72)
                 {
                     // Overshot dest, set x and finish
-                    gSprites[sFactorySwapScreen->ballSpriteIds[i]].x = (i * 48) + 72;
+                    gSprites[sFactorySwapScreen->ballSpriteIds[i]].x = (i * 32) + 72;
                     finished = TRUE;
                 }
-                else if (gSprites[sFactorySwapScreen->ballSpriteIds[i]].x == (i * 48) + 72)
+                else if (gSprites[sFactorySwapScreen->ballSpriteIds[i]].x == (i * 32) + 72)
                 {
                     finished = TRUE;
                 }
@@ -3445,7 +3449,7 @@ static void Swap_InitAllSprites(void)
 
     for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
     {
-        sFactorySwapScreen->ballSpriteIds[i] = CreateSprite(&spriteTemplate, (48 * i) + 72, 64, 1);
+        sFactorySwapScreen->ballSpriteIds[i] = CreateSprite(&spriteTemplate, (32 * i) + 72, 64, 1);
         gSprites[sFactorySwapScreen->ballSpriteIds[i]].data[0] = 0;
     }
     sFactorySwapScreen->cursorSpriteId = CreateSprite(&sSpriteTemplate_Swap_Arrow, gSprites[sFactorySwapScreen->ballSpriteIds[sFactorySwapScreen->cursorPos]].x, 88, 0);

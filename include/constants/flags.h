@@ -1346,7 +1346,7 @@
 #define FLAG_SYS_POKEMON_GET                         (SYSTEM_FLAGS + 0x0) // FLAG_0x860
 #define FLAG_SYS_POKEDEX_GET                         (SYSTEM_FLAGS + 0x1)
 #define FLAG_SYS_POKENAV_GET                         (SYSTEM_FLAGS + 0x2)
-#define FLAG_UNUSED_0x863                            (SYSTEM_FLAGS + 0x3) // Unused Flag
+#define FLAG_NO_BAG                                  (SYSTEM_FLAGS + 0x3) // No Bag use allowed in battle
 #define FLAG_SYS_GAME_CLEAR                          (SYSTEM_FLAGS + 0x4)
 #define FLAG_SYS_CHAT_USED                           (SYSTEM_FLAGS + 0x5)
 #define FLAG_UNLOCKED_TRENDY_SAYINGS                 (SYSTEM_FLAGS + 0x6)
@@ -1385,7 +1385,7 @@
 
 #define FLAG_SYS_DEXNAV_SEARCH                      (SYSTEM_FLAGS + 0x21)
 #define FLAG_FORCE_SHINY                            (SYSTEM_FLAGS + 0x22) // shiny from include/config/pokemon.h
-#define FLAG_UNUSED_0x883                           (SYSTEM_FLAGS + 0x23) // Unused Flag
+#define FLAG_SMART_WILD_AI                          (SYSTEM_FLAGS + 0x23) // Smart Wild AI when set
 #define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
 #define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
 #define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag

@@ -39114,3 +39114,159 @@ static const u16 sOgerponTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_OGERPON
+
+static const u16 sArselloskyTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEvaleonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sAereonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sContageonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sLaneonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sScaleonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sTitaneonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sGolemFribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sCloysterFribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sShuckleFribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sOctilleryFribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sSkarmoryFribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBreloomFribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sGigalithFribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sWoolooFribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sDubwoolFribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sCharizardEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sNinetalesEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sOddishEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sGloomEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sVileplumeEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sNoctowlEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sSpinarakEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sAriadosEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBellossomEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMagcargoEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sRaltsEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKirliaEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sGardevoirEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sDrifloonEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sDrifblimEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sSkiddoEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sGogoatEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sHonedgeEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sDoubladeEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sAegislashEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sTrevenantEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMimikyuEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFalinksEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};

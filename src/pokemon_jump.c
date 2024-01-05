@@ -763,6 +763,7 @@ static const struct PokemonJumpMons sPokeJumpMons[] =
     { .species = SPECIES_MORPEKO_FULL_BELLY,                .jumpType = JUMP_TYPE_NORMAL, },
     { .species = SPECIES_MORPEKO_HANGRY,                    .jumpType = JUMP_TYPE_NORMAL, },
     { .species = SPECIES_KUBFU,                             .jumpType = JUMP_TYPE_FAST, },
+    { .species = SPECIES_ARSELLOSKY,                        .jumpType = JUMP_TYPE_SLOW, },
 };
 
 void StartPokemonJump(u16 partyId, MainCallback exitCallback)

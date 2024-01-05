@@ -392,9 +392,11 @@ struct SpeciesInfo /*0x8C*/
             u32 isGalarianForm:1;
             u32 isHisuianForm:1;
             u32 isPaldeanForm:1;
+            u32 isFribianForm:1;
+            u32 isEmeribianForm:1;
             u32 cannotBeTraded:1;
             u32 allPerfectIVs:1;
-            u32 padding4:18;
+            u32 padding4:16;
             // Move Data
  /* 0x80 */ const struct LevelUpMove *levelUpLearnset;
  /* 0x84 */ const u16 *teachableLearnset;

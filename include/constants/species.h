@@ -1670,7 +1670,55 @@
 #define SPECIES_1024_FORM_3                             GEN9_START + 145
 #define SPECIES_1025                                    GEN9_START + 146
 
-#define PLACEHOLDER_START                               SPECIES_1025
+#define FAKE_START                                      SPECIES_1025
+// Fribian Species
+#define SPECIES_ARSELLOSKY                              FAKE_START + 1
+#define SPECIES_EVALEON                                 FAKE_START + 2
+#define SPECIES_AEREON                                  FAKE_START + 3
+#define SPECIES_CONTAGEON                               FAKE_START + 4
+#define SPECIES_LANEON                                  FAKE_START + 5
+#define SPECIES_SCALEON                                 FAKE_START + 6
+// Fribian Forms
+#define SPECIES_GOLEM_FRIBIAN                           FAKE_START + 7
+#define SPECIES_CLOYSTER_FRIBIAN                        FAKE_START + 8
+#define SPECIES_SHUCKLE_FRIBIAN                         FAKE_START + 9
+#define SPECIES_OCTILLERY_FRIBIAN                       FAKE_START + 10
+#define SPECIES_SKARMORY_FRIBIAN                        FAKE_START + 11
+#define SPECIES_BRELOOM_FRIBIAN                         FAKE_START + 12
+#define SPECIES_GIGALITH_FRIBIAN                        FAKE_START + 13
+#define SPECIES_WOOLOO_FRIBIAN                          FAKE_START + 14
+#define SPECIES_DUBWOOL_FRIBIAN                         FAKE_START + 15
+// Emeribian Species
+#define SPECIES_TITANEON                                FAKE_START + 16
+// Emeribian Forms
+#define SPECIES_CHARIZARD_EMERIBIAN                     FAKE_START + 17
+#define SPECIES_NINETALES_EMERIBIAN                     FAKE_START + 18
+#define SPECIES_ODDISH_EMERIBIAN                        FAKE_START + 19
+#define SPECIES_GLOOM_EMERIBIAN                         FAKE_START + 20
+#define SPECIES_VILEPLUME_EMERIBIAN                     FAKE_START + 21
+#define SPECIES_NOCTOWL_EMERIBIAN                       FAKE_START + 22
+#define SPECIES_SPINARAK_EMERIBIAN                      FAKE_START + 23
+#define SPECIES_ARIADOS_EMERIBIAN                       FAKE_START + 24
+#define SPECIES_BELLOSSOM_EMERIBIAN                     FAKE_START + 25
+#define SPECIES_MAGCARGO_EMERIBIAN                      FAKE_START + 26
+#define SPECIES_RALTS_EMERIBIAN                         FAKE_START + 27
+#define SPECIES_KIRLIA_EMERIBIAN                        FAKE_START + 28
+#define SPECIES_GARDEVOIR_EMERIBIAN                     FAKE_START + 29
+#define SPECIES_DRIFLOON_EMERIBIAN                      FAKE_START + 30
+#define SPECIES_DRIFBLIM_EMERIBIAN                      FAKE_START + 31
+#define SPECIES_SKIDDO_EMERIBIAN                        FAKE_START + 32
+#define SPECIES_GOGOAT_EMERIBIAN                        FAKE_START + 33
+#define SPECIES_HONEDGE_EMERIBIAN                       FAKE_START + 34
+#define SPECIES_DOUBLADE_EMERIBIAN                      FAKE_START + 35
+#define SPECIES_AEGISLASH_EMERIBIAN                     FAKE_START + 36
+#define SPECIES_TREVENANT_EMERIBIAN                     FAKE_START + 37
+#define SPECIES_MIMIKYU_EMERIBIAN                       FAKE_START + 38
+#define SPECIES_FALINKS_EMERIBIAN                       FAKE_START + 39
+// Fribian Megas
+// Emeribian Megas
+#define SPECIES_GARDEVOIR_EMERIBIAN_MEGA                FAKE_START + 40
+
+#define PLACEHOLDER_START                               SPECIES_GARDEVOIR_EMERIBIAN_MEGA
 // XD: Gale of Darkness
 #define SPECIES_LUGIA_SHADOW                            PLACEHOLDER_START + 1
 // Diamond & Pearl

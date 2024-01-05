@@ -3111,6 +3111,56 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         PALETTES(MimikyuBusted),
         ICON(MimikyuBusted, 1),
     },
+
+    [SPECIES_MIMIKYU_EMERIBIAN] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 95,
+        .baseDefense   = 105,
+        .baseSpeed     = 86,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 80,
+        .types = { TYPE_GHOST, TYPE_ROCK },
+        .catchRate = 45,
+        .expYield = 167,
+        .evYield_Defense = 2,
+        .itemRare = ITEM_CHESTO_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS },
+        .abilities = { ABILITY_STEELY_SPIRIT, ABILITY_SOLID_ROCK, ABILITY_SWORD_OF_RUIN },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Mimikyu"),
+        .cryId = CRY_MIMIKYU,
+        .natDexNum = NATIONAL_DEX_MIMIKYU,
+        .categoryName = _("Stone Trap"),
+        .height = 11,
+        .weight = 206,
+        .description = COMPOUND_STRING(
+            "It spends much of its formative years\n"
+            "researching the perfect rock to hollow out\n"
+            "and create its costume from. Alas,\n"
+            "Pikachu will still be more popular."),
+        .pokemonScale = 682,
+        .pokemonOffset = 24,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        FRONT_PIC(MimikyuEmeribian, 64, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = sAnims_MimikyuEmeribian,
+        .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
+        BACK_PIC(MimikyuEmeribian, 64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
+        PALETTES(MimikyuEmeribian),
+        ICON(MimikyuEmeribian, 1),
+        .footprint = gMonFootprint_Mimikyu,
+        .formSpeciesIdTable = sMimikyuFormSpeciesIdTable,
+        LEARNSETS(MimikyuEmeribian),
+        .isEmeribianForm = TRUE,
+    },
 #endif //P_FAMILY_MIMIKYU
 
 #if P_FAMILY_BRUXISH

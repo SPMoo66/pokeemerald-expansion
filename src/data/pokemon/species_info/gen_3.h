@@ -1675,8 +1675,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         PALETTES(Ralts),
         ICON(Ralts, 1),
         .footprint = gMonFootprint_Ralts,
+        .formSpeciesIdTable = sRaltsFormSpeciesIdTable,
         LEARNSETS(Ralts),
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_KIRLIA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_KIRLIA}),
     },
 
     [SPECIES_KIRLIA] =
@@ -1723,6 +1724,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         PALETTES(Kirlia),
         ICON(Kirlia, 1),
         .footprint = gMonFootprint_Kirlia,
+        .formSpeciesIdTable = sKirliaFormSpeciesIdTable,
         LEARNSETS(Kirlia),
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GARDEVOIR},
                                 {EVO_ITEM_MALE, ITEM_DAWN_STONE, SPECIES_GALLADE}),
@@ -1808,6 +1810,196 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         PALETTES(GardevoirMega),
         ICON(GardevoirMega, 1),
         .isMegaEvolution = TRUE,
+    },
+#endif //P_MEGA_EVOLUTIONS
+
+    [SPECIES_RALTS_EMERIBIAN] =
+    {
+        .baseHP        = 30,
+        .baseAttack    = 25,
+        .baseDefense   = 30,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 45,
+        .types = { TYPE_FIRE, TYPE_FAIRY },
+        .catchRate = 235,
+        .expYield = 40,
+        .evYield_SpAttack = 1,
+        .itemCommon = ITEM_PETAYA_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = 35,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = RALTS_FAMILY_EGG_GROUPS,
+        .abilities = { ABILITY_FLAME_BODY, ABILITY_MAGIC_GUARD, ABILITY_POWER_OF_ALCHEMY },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Ralts"),
+        .cryId = CRY_RALTS,
+        .natDexNum = NATIONAL_DEX_RALTS,
+        .categoryName = _("Wisp"),
+        .height = 4,
+        .weight = 66,
+        .description = COMPOUND_STRING(
+            "The fiery wisp on its head is cool to\n"
+            "the touch. Myths say it is the fire of\n"
+            "the soul made manifest, leaking from\n"
+            "the Pokémon's silhouette."),
+        .pokemonScale = 457,
+        .pokemonOffset = -3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        FRONT_PIC(RaltsEmeribian, 24, 40),
+        .frontPicYOffset = 12,
+        .frontAnimFrames = sAnims_RaltsEmeribian,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
+        BACK_PIC(RaltsEmeribian, 32, 40),
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        PALETTES(RaltsEmeribian),
+        ICON(RaltsEmeribian, 1),
+        .footprint = gMonFootprint_Ralts,
+        .formSpeciesIdTable = sRaltsFormSpeciesIdTable,
+        LEARNSETS(RaltsEmeribian),
+        .isEmeribianForm = TRUE,
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_KIRLIA_EMERIBIAN}),
+    },
+
+    [SPECIES_KIRLIA_EMERIBIAN] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 45,
+        .baseDefense   = 45,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 65,
+        .types = { TYPE_FIRE, TYPE_FAIRY },
+        .catchRate = 120,
+        .expYield = 97,
+        .evYield_SpAttack = 2,
+        .itemCommon = ITEM_PETAYA_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = 35,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = RALTS_FAMILY_EGG_GROUPS,
+        .abilities = { ABILITY_FLAME_BODY, ABILITY_MAGIC_GUARD, ABILITY_POWER_OF_ALCHEMY },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Kirlia"),
+        .cryId = CRY_KIRLIA,
+        .natDexNum = NATIONAL_DEX_KIRLIA,
+        .categoryName = _("Wisp"),
+        .height = 8,
+        .weight = 202,
+        .description = COMPOUND_STRING(
+            "The flame on its head is said to connect\n"
+            "the souls of those around it. Many trainers\n"
+            "have claimed its activity changes to\n"
+            "correspond to the mood of a room."),
+        .pokemonScale = 354,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        FRONT_PIC(KirliaEmeribian, 32, 56),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = sAnims_KirliaEmeribian,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        BACK_PIC(KirliaEmeribian, 48, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        PALETTES(KirliaEmeribian),
+        ICON(KirliaEmeribian, 1),
+        .footprint = gMonFootprint_Kirlia,
+        .formSpeciesIdTable = sKirliaFormSpeciesIdTable,
+        LEARNSETS(KirliaEmeribian),
+        .isEmeribianForm = TRUE,
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GARDEVOIR_EMERIBIAN}),
+    },
+
+#define GARDEVOIR_EMERIBIAN_MISC_INFO                               \
+        .catchRate = 45,                                             \
+        .evYield_SpAttack = 2,                                       \
+        .evYield_SpDefense = 1,                                      \
+        .genderRatio = PERCENT_FEMALE(50),                           \
+        .eggCycles = 20,                                             \
+        .friendship = 35,                                            \
+        .growthRate = GROWTH_SLOW,                                   \
+        .eggGroups = RALTS_FAMILY_EGG_GROUPS,                        \
+        .types = { TYPE_FIRE, TYPE_FAIRY },                          \
+        .bodyColor = BODY_COLOR_RED,                                 \
+        .speciesName = _("Gardevoir"),                               \
+        .natDexNum = NATIONAL_DEX_GARDEVOIR,                         \
+        .categoryName = _("Jealousy"),                               \
+        .height = 16,                                                \
+        .weight = 484,                                               \
+        .pokemonScale = 256,                                         \
+        .pokemonOffset = 0,                                          \
+        .trainerScale = 256,                                         \
+        .trainerOffset = 0,                                          \
+        .footprint = gMonFootprint_Gardevoir,                        \
+        LEARNSETS(GardevoirEmeribian),                               \
+        .formSpeciesIdTable = sGardevoirFormSpeciesIdTable,          \
+        .formChangeTable = sGardevoirEmeribianFormChangeTable
+
+    [SPECIES_GARDEVOIR_EMERIBIAN] =
+    {
+        GARDEVOIR_EMERIBIAN_MISC_INFO,
+        .baseHP        = 70,
+        .baseAttack    = 65,
+        .baseDefense   = 65,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 125,
+        .baseSpDefense = 115,
+        .expYield = 233,
+        .itemCommon = ITEM_PETAYA_BERRY,
+        .itemRare = ITEM_TWISTED_SPOON,
+        .abilities = { ABILITY_FLAME_BODY, ABILITY_MAGIC_GUARD, ABILITY_POWER_OF_ALCHEMY },
+        .cryId = CRY_GARDEVOIR,
+        .description = COMPOUND_STRING(
+            "With locks of fiery splendor, myths claim\n"
+            "it holds the power of melding souls.\n"
+            "Throughout history, it has been used in\n"
+            "rituals meant to forgive perceived sins."),
+        FRONT_PIC(GardevoirEmeribian, 64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_GardevoirEmeribian,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
+        BACK_PIC(GardevoirEmeribian, 48, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        PALETTES(GardevoirEmeribian),
+        ICON(GardevoirEmeribian, 1),
+        .isEmeribianForm = TRUE,
+    },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_GARDEVOIR_EMERIBIAN_MEGA] =
+    {
+        GARDEVOIR_EMERIBIAN_MISC_INFO,
+        .baseHP        = 70,
+        .baseAttack    = 85,
+        .baseDefense   = 65,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 165,
+        .baseSpDefense = 135,
+        .expYield = 278,
+        .abilities = { ABILITY_MAGIC_GUARD, ABILITY_MAGIC_GUARD, ABILITY_MAGIC_GUARD },
+        .cryId = CRY_GARDEVOIR_MEGA,
+        .description = COMPOUND_STRING(
+            "With locks of fiery splendor, myths claim\n"
+            "it holds the power of melding souls.\n"
+            "Throughout history, it has been used in\n"
+            "rituals meant to forgive perceived sins."),
+        FRONT_PIC(GardevoirEmeribianMega, 64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_GardevoirEmeribianMega,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        BACK_PIC(GardevoirEmeribianMega, 48, 56),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
+        PALETTES(GardevoirEmeribianMega),
+        ICON(GardevoirEmeribian, 1),
+        .isMegaEvolution = TRUE,
+        .isEmeribianForm = TRUE,
     },
 #endif //P_MEGA_EVOLUTIONS
 
@@ -2056,7 +2248,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Shroomish, 1),
         .footprint = gMonFootprint_Shroomish,
         LEARNSETS(Shroomish),
-        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_BRELOOM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_BRELOOM},
+                                {EVO_MOVE, MOVE_DIG, SPECIES_BRELOOM_FRIBIAN}),
     },
 
     [SPECIES_BRELOOM] =
@@ -2105,7 +2298,59 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         PALETTES(Breloom),
         ICON(Breloom, 1),
         .footprint = gMonFootprint_Breloom,
+        .formSpeciesIdTable = sBreloomFormSpeciesIdTable,
         LEARNSETS(Breloom),
+    },
+	
+    [SPECIES_BRELOOM_FRIBIAN] =
+    {
+        .baseHP        = 75,
+        .baseAttack    = 115,
+        .baseDefense   = 60,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 70,
+        .types = { TYPE_GROUND, TYPE_FIGHTING },
+        .catchRate = 90,
+        .expYield = 161,
+        .evYield_Attack = 1,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_WIKI_BERRY,
+        .itemRare = ITEM_SOFT_SAND,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FLUCTUATING,
+        .eggGroups = { EGG_GROUP_FAIRY, EGG_GROUP_GRASS },
+        .abilities = { ABILITY_DRY_SKIN, ABILITY_DROUGHT, ABILITY_SAND_RUSH },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Breloom"),
+        .cryId = CRY_BRELOOM,
+        .natDexNum = NATIONAL_DEX_BRELOOM,
+        .categoryName = _("Mushroom"),
+        .height = 12,
+        .weight = 392,
+        .description = COMPOUND_STRING(
+            "Originally from humid climates, it adapts\n"
+            "to dry regions by repressing its grassy\n"
+            "nature until the next rain"),
+        .pokemonScale = 324,
+        .pokemonOffset = 6,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        FRONT_PIC(BreloomFribian, 48, 64),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = sAnims_BreloomFribian,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        BACK_PIC(BreloomFribian, 64, 64),
+        .backPicYOffset = 20,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        PALETTES(BreloomFribian),
+        ICON(BreloomFribian, 1),
+        .footprint = gMonFootprint_Breloom,
+        .formSpeciesIdTable = sBreloomFormSpeciesIdTable,
+        LEARNSETS(BreloomFribian),
+        .isFribianForm = TRUE,
     },
 #endif //P_FAMILY_SHROOMISH
 

@@ -235,6 +235,10 @@ static const struct FormChange sGalladeFormChangeTable[] = {
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_GEN_4_CROSS_EVOS
+static const struct FormChange sGardevoirEmeribianFormChangeTable[] = {
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GARDEVOIR_EMERIBIAN_MEGA, ITEM_GARDEVOIRITE},
+    {FORM_CHANGE_TERMINATOR},
+};
 #endif //P_FAMILY_RALTS
 
 #if P_FAMILY_SABLEYE

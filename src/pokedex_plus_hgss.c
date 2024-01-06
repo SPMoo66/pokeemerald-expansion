@@ -6410,9 +6410,9 @@ static void HandleTargetSpeciesPrint(u8 taskId, u16 targetSpecies, u16 previousT
         if (targetSpecies == previousTargetSpecies)
             return;
             else if (targetSpecies == SPECIES_GLACEON)
-                base_i -= 1;
+                base_i -= 0;
             else if (targetSpecies == SPECIES_SYLVEON)
-                base_i -= 2;
+                base_i -= 0;
     }
 
     if (base_i < iterations)
@@ -6612,6 +6612,8 @@ static u8 PrintEvolutionTargetSpeciesAndMethod(u8 taskId, u16 species, u8 depth,
     //Calculate number of possible direct evolutions (e.g. Eevee has 5 but torchic has 1)
     for (i = 0; evolutions[i].method != EVOLUTIONS_END; i++)
     {
+        if (i > 9)
+            break;
         if (evolutions[i].method != 0)
             times += 1;
     }

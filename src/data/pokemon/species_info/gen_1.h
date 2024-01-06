@@ -536,6 +536,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_CharizardEmeribian,
         .frontAnimId = ANIM_V_SHAKE,
+        .enemyMonElevation = 4,
         BACK_PIC(CharizardEmeribian, 64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
@@ -3049,7 +3050,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "of its thousand year lifespan. Other\n"
             "myths claim that it jumps between the\n"
             "lands of dead and living."),
-        FRONT_PIC(Ninetales, 64, 64),
+        FRONT_PIC(NinetalesEmeribian, 64, 64),
         .frontPicYOffset = 3,
         .frontAnimFrames = sAnims_NinetalesEmeribian,
         .frontAnimId = ANIM_GROW_VIBRATE,
@@ -6008,7 +6009,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerScale = 296,
         .trainerOffset = 2,
         FRONT_PIC(GolemFribian, 56, 64),
-        .frontPicYOffset = 1,
+        .frontPicYOffset = 5,
         .frontAnimFrames = sAnims_GolemFribian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         BACK_PIC(GolemFribian, 64, 48),

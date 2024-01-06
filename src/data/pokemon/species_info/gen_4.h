@@ -2052,7 +2052,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .trainerScale = 256,
         .trainerOffset = 0,
         FRONT_PIC(DrifloonEmeribian, 32, 56),
-        .frontPicYOffset = 7,
+        .frontPicYOffset = 3,
         .frontAnimFrames = sAnims_DrifloonEmeribian,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 5,

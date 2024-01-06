@@ -170,6 +170,7 @@ const u16 gEggMoves[] = {
         MOVE_ENDURE,
         MOVE_CHIP_AWAY,
         MOVE_ROCK_CLIMB,
+        MOVE_STRENGTH,
         MOVE_ROTOTILLER,
         MOVE_HONE_CLAWS),
 #if P_ALOLAN_FORMS
@@ -258,7 +259,8 @@ const u16 gEggMoves[] = {
         MOVE_SECRET_POWER,
         MOVE_HEX,
         MOVE_TAIL_SLAP,
-        MOVE_CAPTIVATE),
+        MOVE_CAPTIVATE,
+        MOVE_MEMENTO),
 #if P_ALOLAN_FORMS
     egg_moves(VULPIX_ALOLAN,
         MOVE_AGILITY,
@@ -330,17 +332,11 @@ const u16 gEggMoves[] = {
         MOVE_STRENGTH_SAP),
 
     egg_moves(ODDISH_EMERIBIAN,
-        MOVE_RAZOR_LEAF,
-        MOVE_FLAIL,
-        MOVE_SYNTHESIS,
-        MOVE_CHARM,
+        MOVE_SOAK,
+        MOVE_RAIN_DANCE,
+        MOVE_AQUA_RING,
         MOVE_INGRAIN,
-        MOVE_TICKLE,
-        MOVE_TEETER_DANCE,
-        MOVE_SECRET_POWER,
-        MOVE_NATURE_POWER,
-        MOVE_AFTER_YOU,
-        MOVE_STRENGTH_SAP),
+        MOVE_PLAY_NICE),
 #endif //P_FAMILY_ODDISH
 
 #if P_FAMILY_PARAS
@@ -602,6 +598,7 @@ const u16 gEggMoves[] = {
         MOVE_CURSE,
         MOVE_FOCUS_PUNCH,
         MOVE_ROCK_CLIMB,
+        MOVE_STRENGTH,
         MOVE_ENDURE,
         MOVE_AUTOTOMIZE,
         MOVE_WIDE_GUARD),
@@ -615,6 +612,7 @@ const u16 gEggMoves[] = {
         MOVE_FLAIL,
         MOVE_MAGNET_RISE,
         MOVE_ROCK_CLIMB,
+        MOVE_STRENGTH,
         MOVE_SCREECH,
         MOVE_WIDE_GUARD),
 #endif //P_ALOLAN_FORMS
@@ -784,7 +782,8 @@ const u16 gEggMoves[] = {
         MOVE_WATER_PULSE,
         MOVE_AQUA_RING,
         MOVE_AVALANCHE,
-        MOVE_TWINEEDLE),
+        MOVE_TWINEEDLE,
+        MOVE_LIFE_DEW),
 #endif //P_FAMILY_SHELLDER
 
 #if P_FAMILY_GASTLY
@@ -812,6 +811,7 @@ const u16 gEggMoves[] = {
         MOVE_ROLLOUT,
         MOVE_ROCK_BLAST,
         MOVE_ROCK_CLIMB,
+        MOVE_STRENGTH,
         MOVE_HEAVY_SLAM,
         MOVE_STEALTH_ROCK,
         MOVE_ROTOTILLER,
@@ -951,6 +951,7 @@ const u16 gEggMoves[] = {
         MOVE_SKULL_BASH,
         MOVE_IRON_TAIL,
         MOVE_ROCK_CLIMB,
+        MOVE_STRENGTH,
         MOVE_ROTOTILLER,
         MOVE_METAL_BURST,
         MOVE_GUARD_SPLIT),
@@ -1221,7 +1222,8 @@ const u16 gEggMoves[] = {
         MOVE_NATURAL_GIFT,
         MOVE_STORED_POWER,
         MOVE_SYNCHRONOISE,
-        MOVE_CAPTIVATE),
+        MOVE_CAPTIVATE,
+        MOVE_MUD_SLAP),
 #endif //P_FAMILY_EEVEE
 
 #if P_FAMILY_OMANYTE
@@ -1442,19 +1444,13 @@ const u16 gEggMoves[] = {
         MOVE_LUNGE),
 
     egg_moves(SPINARAK_EMERIBIAN,
-        MOVE_PSYBEAM,
-        MOVE_DISABLE,
-        MOVE_SONIC_BOOM,
-        MOVE_BATON_PASS,
-        MOVE_PURSUIT,
         MOVE_SIGNAL_BEAM,
+        MOVE_PURSUIT,
         MOVE_TOXIC_SPIKES,
-        MOVE_TWINEEDLE,
-        MOVE_ELECTROWEB,
-        MOVE_RAGE_POWDER,
-        MOVE_NIGHT_SLASH,
         MOVE_MEGAHORN,
-        MOVE_LUNGE),
+        MOVE_LUNGE,
+        MOVE_KNOCK_OFF,
+        MOVE_BATON_PASS),
 #endif //P_FAMILY_SPINARAK
 
 #if P_FAMILY_CHINCHOU
@@ -1841,7 +1837,14 @@ const u16 gEggMoves[] = {
         MOVE_MUD_SLAP,
         MOVE_ACID,
         MOVE_ROCK_BLAST,
-        MOVE_FINAL_GAMBIT),
+        MOVE_FINAL_GAMBIT,
+        MOVE_DEFENSE_CURL,
+        MOVE_COVET,
+        MOVE_INFESTATION,
+        MOVE_BULLET_PUNCH,
+        MOVE_RAGE_POWDER,
+        MOVE_VISE_GRIP,
+        MOVE_TICKLE),
 #endif //P_FAMILY_SHUCKLE
 
 #if P_FAMILY_HERACROSS
@@ -2036,7 +2039,8 @@ const u16 gEggMoves[] = {
         MOVE_ASSURANCE,
         MOVE_GUARD_SWAP,
         MOVE_STEALTH_ROCK,
-        MOVE_ENDURE),
+        MOVE_ENDURE,
+        MOVE_CRUSH_CLAW),
 #endif //P_FAMILY_SKARMORY
 
 #if P_FAMILY_HOUNDOUR
@@ -2209,6 +2213,7 @@ const u16 gEggMoves[] = {
         MOVE_MUD_SLAP,
         MOVE_SLEEP_TALK,
         MOVE_ROCK_CLIMB,
+        MOVE_STRENGTH,
         MOVE_SIMPLE_BEAM,
         MOVE_EXTREME_SPEED),
 #if P_GALARIAN_FORMS
@@ -2302,14 +2307,11 @@ const u16 gEggMoves[] = {
         MOVE_MEAN_LOOK,
         MOVE_MEMENTO,
         MOVE_DESTINY_BOND,
-        MOVE_GRUDGE,
-        MOVE_SHADOW_SNEAK,
         MOVE_CONFUSE_RAY,
-        MOVE_ENCORE,
-        MOVE_SYNCHRONOISE,
         MOVE_SKILL_SWAP,
-        MOVE_MISTY_TERRAIN,
-        MOVE_ALLY_SWITCH),
+        MOVE_ME_FIRST,
+        MOVE_SUNNY_DAY,
+        MOVE_MISTY_TERRAIN),
 #endif //P_FAMILY_RALTS
 
 #if P_FAMILY_SURSKIT
@@ -3166,6 +3168,7 @@ const u16 gEggMoves[] = {
         MOVE_ODOR_SLEUTH,
         MOVE_AQUA_TAIL,
         MOVE_ROCK_CLIMB,
+        MOVE_STRENGTH,
         MOVE_SLEEP_TALK,
         MOVE_ENDURE,
         MOVE_SKULL_BASH,
@@ -3314,13 +3317,13 @@ const u16 gEggMoves[] = {
     egg_moves(DRIFLOON_EMERIBIAN,
         MOVE_MEMENTO,
         MOVE_BODY_SLAM,
-        MOVE_DESTINY_BOND,
         MOVE_DISABLE,
         MOVE_HAZE,
         MOVE_HYPNOSIS,
         MOVE_WEATHER_BALL,
         MOVE_CLEAR_SMOG,
         MOVE_DEFOG,
+        MOVE_WILL_O_WISP,
         MOVE_TAILWIND),
 #endif //P_FAMILY_DRIFLOON
 
@@ -3420,6 +3423,7 @@ const u16 gEggMoves[] = {
         MOVE_IRON_HEAD,
         MOVE_MUD_SHOT,
         MOVE_ROCK_CLIMB,
+        MOVE_STRENGTH,
         MOVE_IRON_TAIL),
 #endif //P_FAMILY_GIBLE
 
@@ -3753,7 +3757,8 @@ const u16 gEggMoves[] = {
         MOVE_METAL_SOUND,
         MOVE_SUBMISSION,
         MOVE_SKULL_BASH,
-        MOVE_ROCK_CLIMB),
+        MOVE_ROCK_CLIMB,
+        MOVE_STRENGTH),
 #endif //P_FAMILY_DRILBUR
 
 #if P_FAMILY_AUDINO
@@ -3872,6 +3877,7 @@ const u16 gEggMoves[] = {
     egg_moves(SANDILE,
         MOVE_DOUBLE_EDGE,
         MOVE_ROCK_CLIMB,
+        MOVE_STRENGTH,
         MOVE_PURSUIT,
         MOVE_UPROAR,
         MOVE_FIRE_FANG,
@@ -4340,6 +4346,7 @@ const u16 gEggMoves[] = {
     egg_moves(BOUFFALANT,
         MOVE_STOMP,
         MOVE_ROCK_CLIMB,
+        MOVE_STRENGTH,
         MOVE_HEADBUTT,
         MOVE_SKULL_BASH,
         MOVE_MUD_SHOT,
@@ -4490,10 +4497,12 @@ const u16 gEggMoves[] = {
         MOVE_GRASSY_TERRAIN),
 
     egg_moves(SKIDDO_EMERIBIAN,
-        MOVE_DEFENSE_CURL,
-        MOVE_ROLLOUT,
-        MOVE_MILK_DRINK,
-        MOVE_GRASSY_TERRAIN),
+        MOVE_GRASSY_TERRAIN,
+        MOVE_EMBARGO,
+        MOVE_ROCK_POLISH,
+        MOVE_BULLDOZE,
+        MOVE_STEALTH_ROCK,
+        MOVE_WISH),
 #endif //P_FAMILY_SKIDDO
 
 #if P_FAMILY_PANCHAM
@@ -4531,10 +4540,9 @@ const u16 gEggMoves[] = {
         MOVE_WIDE_GUARD),
 
     egg_moves(HONEDGE_EMERIBIAN,
-        MOVE_METAL_SOUND,
-        MOVE_SHADOW_SNEAK,
-        MOVE_DESTINY_BOND,
-        MOVE_WIDE_GUARD),
+        MOVE_ASTONISH,
+        MOVE_SHADOW_PUNCH,
+        MOVE_CURSE),
 #endif //P_FAMILY_HONEDGE
 
 #if P_FAMILY_SPRITZEE
@@ -4664,7 +4672,9 @@ const u16 gEggMoves[] = {
         MOVE_BESTOW,
         MOVE_IMPRISON,
         MOVE_VENOM_DRENCH,
-        MOVE_POWER_UP_PUNCH),
+        MOVE_POWER_UP_PUNCH,
+        MOVE_SUCKER_PUNCH,
+        MOVE_DISABLE),
 #endif //P_FAMILY_PHANTUMP
 
 #if P_FAMILY_PUMPKABOO
@@ -4959,9 +4969,10 @@ const u16 gEggMoves[] = {
 
     egg_moves(MIMIKYU_EMERIBIAN,
         MOVE_GRUDGE,
-        MOVE_DESTINY_BOND,
+        MOVE_NIGHT_SLASH,
+        MOVE_DISABLE,
         MOVE_CURSE,
-        MOVE_NIGHTMARE),
+        MOVE_DESTINY_BOND),
 #endif //P_FAMILY_MIMIKYU
 
 #if P_FAMILY_BRUXISH
@@ -5070,9 +5081,13 @@ const u16 gEggMoves[] = {
         MOVE_COUNTER),
 
     egg_moves(WOOLOO_FRIBIAN,
+        MOVE_COUNTER,
         MOVE_STOMP,
         MOVE_SWAGGER,
-        MOVE_COUNTER),
+        MOVE_GRASSY_GLIDE,
+        MOVE_ROUND,
+        MOVE_ELECTRO_BALL,
+        MOVE_U_TURN),
 #endif //P_FAMILY_WOOLOO
 
 #if P_FAMILY_CHEWTLE
@@ -5170,6 +5185,15 @@ const u16 gEggMoves[] = {
         MOVE_BABY_DOLL_EYES,
         MOVE_LAST_RESORT),
 #endif //P_FAMILY_MILCERY
+
+#if P_FAMILY_FALINKS
+    egg_moves(FALINKS_EMERIBIAN,
+        MOVE_CORROSIVE_GAS,
+        MOVE_BANEFUL_BUNKER,
+        MOVE_IRON_DEFENSE,
+        MOVE_GEAR_UP,
+        MOVE_HEAVY_SLAM),
+#endif //P_FAMILY_FALINKS
 
 #if P_FAMILY_PINCURCHIN
     egg_moves(PINCURCHIN,

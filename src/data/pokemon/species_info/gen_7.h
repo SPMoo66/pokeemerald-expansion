@@ -3155,7 +3155,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
         PALETTES(MimikyuEmeribian),
-        ICON(MimikyuEmeribian, 1),
+        ICON(MimikyuEmeribian, 2),
         .footprint = gMonFootprint_Mimikyu,
         .formSpeciesIdTable = sMimikyuFormSpeciesIdTable,
         LEARNSETS(MimikyuEmeribian),

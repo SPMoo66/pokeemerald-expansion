@@ -3554,7 +3554,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .backPicYOffset = 0,
         //.backAnimId = BACK_ANIM_NONE,
         PALETTES(FalinksEmeribian),
-        ICON(FalinksEmeribian, 0),
+        ICON(FalinksEmeribian, 2),
         .footprint = gMonFootprint_Falinks,
         .formSpeciesIdTable = sFalinksFormSpeciesIdTable,
         LEARNSETS(FalinksEmeribian),

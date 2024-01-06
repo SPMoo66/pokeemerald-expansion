@@ -605,10 +605,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .height = 10,
         .weight = 290,
         .description = COMPOUND_STRING(
-            "Its scales have a shine like stainless\n"
-            "steel. It has been a constant companion\n"
-            "as a rescue animal in times of war and\n"
-            "strife."),
+            "Its scales have a shine like\n"
+            "stainless steel. It has been a\n"
+            "constant companion as a rescue\n"
+            "animal in times of war and strife."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,

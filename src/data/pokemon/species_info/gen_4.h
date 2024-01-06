@@ -2096,10 +2096,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 12,
         .weight = 150,
         .description = COMPOUND_STRING(
-            "The zeppelin air travel craze of a\n"
-            "century ago went down in flames after\n"
-            "an advertising event with Drifblim caused\n"
-            "a disaster that soured safety perceptions."),
+            "The zeppelin air travel craze a century\n"
+            "ago went down in flames after an\n"
+            "advertising event with Drifblim caused a\n"
+            "disaster that soured safety perceptions."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,

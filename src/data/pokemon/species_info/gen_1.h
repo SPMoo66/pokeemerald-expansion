@@ -3610,9 +3610,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .weight = 54,
         .description = COMPOUND_STRING(
             "It evolved in very wet climates. It has\n"
-            "learned to enjoy soaking itself within the\n"
-            "swampy tropical soil until it becomes\n"
-            "more water than plant."),
+            "learned to enjoy soaking itself within\n"
+            "the swampy tropical soil until it\n"
+            "becomes more water than plant."),
         .pokemonScale = 423,
         .pokemonOffset = 19,
         .trainerScale = 256,
@@ -3713,9 +3713,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .weight = 186,
         .description = COMPOUND_STRING(
             "Its flower produces a sweet pollen often\n"
-            "used as the base for inebriating beverages.\n"
-            "Luckily, the quality of the pollen\n"
-            "improves with Vileplume's happiness."),
+            "used as the base for inebriating\n"
+            "beverages. Luckily, the quality of the\n"
+            "pollen improves with Vileplume's happiness."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -3763,10 +3763,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 4,
         .weight = 58,
         .description = COMPOUND_STRING(
-            "If a Gloom becomes too staturated with water\n"
-            "its flower will wither and its body compacts\n"
-            "to a tiny shape. Undeterred, it playfully\n"
-            "retreats to tropical greenery."),
+            "If a Gloom becomes too staturated with\n"
+            "water its flower will wither and its body\n"
+            "compacts to a tiny shape. Undeterred, it\n"
+            "playfully retreats to tropical greenery."),
         .pokemonScale = 472,
         .pokemonOffset = 21,
         .trainerScale = 256,

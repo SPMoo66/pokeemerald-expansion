@@ -1892,9 +1892,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .weight = 202,
         .description = COMPOUND_STRING(
             "The flame on its head is said to connect\n"
-            "the souls of those around it. Many trainers\n"
-            "have claimed its activity changes to\n"
-            "correspond to the mood of a room."),
+            "the souls of those around it. Many\n"
+            "trainers have claimed its activity changes\n"
+            "to correspond to the mood of a room."),
         .pokemonScale = 354,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2333,7 +2333,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .description = COMPOUND_STRING(
             "Originally from humid climates, it adapts\n"
             "to dry regions by repressing its grassy\n"
-            "nature until the next rain"),
+            "nature until the next rain."),
         .pokemonScale = 324,
         .pokemonOffset = 6,
         .trainerScale = 256,
@@ -2343,7 +2343,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontAnimFrames = sAnims_BreloomFribian,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         BACK_PIC(BreloomFribian, 64, 64),
-        .backPicYOffset = 15,
+        .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
         PALETTES(BreloomFribian),
         ICON(BreloomFribian, 1),

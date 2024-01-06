@@ -1622,9 +1622,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 17,
         .weight = 910,
         .description = COMPOUND_STRING(
-            "To conserve energy, it has developed a slow\n"
-            "moving trot that can be done at a slowed\n"
-            "metabolic rate as it travels between places\n"
+            "To conserve energy, it has developed a\n"
+            "slow-moving trot done at a low metabolic\n"
+            "rate as it travels between places\n"
             "where it knows vegetation grows."),
         .pokemonScale = 259,
         .pokemonOffset = 0,
@@ -2320,9 +2320,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .weight = 530,
         .description = COMPOUND_STRING(
             "A story from the ages of knights and\n"
-            "kings claims that this Pokémon was\n"
-            "responsible for forging an army's worth of\n"
-            "sword style Honedges for a grand rebellion."),
+            "kings claims this Pokémon was able\n"
+            "to forge an army's worth of sword\n"
+            "style Honedges for a grand rebellion."),
         .pokemonScale = 259,
         .pokemonOffset = 0,
         .trainerScale = 290,

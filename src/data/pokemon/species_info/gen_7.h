@@ -3140,8 +3140,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .weight = 206,
         .description = COMPOUND_STRING(
             "It spends much of its formative years\n"
-            "researching the perfect rock to hollow out\n"
-            "and create its costume from. Alas,\n"
+            "researching the perfect rock to hollow\n"
+            "out and create its costume from. Alas,\n"
             "Pikachu will still be more popular."),
         .pokemonScale = 682,
         .pokemonOffset = 24,

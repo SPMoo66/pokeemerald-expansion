@@ -635,7 +635,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .footprint = gMonFootprint_Hoothoot,
         LEARNSETS(Hoothoot),
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_NOCTOWL},
-                                {EVO_LEVEL, 20, SPECIES_NOCTOWL_EMERIBIAN}),
+                                {EVO_MOVE, MOVE_TORMENT, SPECIES_NOCTOWL_EMERIBIAN}),
     },
 
     [SPECIES_NOCTOWL] =
@@ -1014,10 +1014,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 11,
         .weight = 335,
         .description = COMPOUND_STRING(
-            "It can convert radioactive waste into energy\n"
-            "for sustenance and electric output. Wealthy\n"
-            "individuals often keep one available for\n"
-            "THAT potential emergency."),
+            "It can convert radioactive waste into\n"
+            "energy for sustenance and electric output.\n"
+            "Wealthy individuals often keep one\n"
+            "available for THAT potential emergency."),
         .pokemonScale = 316,
         .pokemonOffset = 8,
         .trainerScale = 256,
@@ -3799,9 +3799,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 6,
         .weight = 205,
         .description = COMPOUND_STRING(
-            "In sprawling cities it is said to regularly\n"
-            "check your vases. Otherwise, a Shuckle may\n"
-            "take up residence within."),
+            "In sprawling cities it is said to\n"
+            "regularly check your vases.\n"
+            "Otherwise, a Shuckle may take\n"
+            "up residence within."),
         .pokemonScale = 485,
         .pokemonOffset = 18,
         .trainerScale = 256,
@@ -5121,9 +5122,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .weight = 505,
         .description = COMPOUND_STRING(
             "With steel tempered by hot climates,\n"
-            "Skarmory accelerates at the blink of an\n"
-            "eye with trails of fire propelling it\n"
-            "forward."),
+            "Skarmory accelerates at the blink of\n"
+            "an eye with trails of fire\n"
+            "propelling it forward."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 271,

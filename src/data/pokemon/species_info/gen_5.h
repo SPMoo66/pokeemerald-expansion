@@ -2899,7 +2899,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .footprint = gMonFootprint_Petilil,
         LEARNSETS(Petilil),
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_LILLIGANT},
-                                {EVO_LEVEL, 28, SPECIES_LILLIGANT_HISUIAN}),
+                                {EVO_LEVEL_TYPE_MON_IN_PARTY, 28, SPECIES_LILLIGANT_HISUIAN, TYPE_FIGHTING}),
     },
 
 #define LILLIGANT_MISC_INFO                                 \

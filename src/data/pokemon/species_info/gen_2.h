@@ -5095,7 +5095,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         ICON(Mantyke, 0),
         .footprint = gMonFootprint_Mantyke,
         LEARNSETS(Mantyke),
-        .evolutions = EVOLUTION({EVO_SPECIFIC_MON_IN_PARTY, SPECIES_REMORAID, SPECIES_MANTINE}),
+        .evolutions = EVOLUTION({EVO_SPECIFIC_MON_IN_PARTY, SPECIES_REMORAID, SPECIES_MANTINE, 26}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 

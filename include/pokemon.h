@@ -308,7 +308,7 @@ struct Evolution
     u16 method;
     u16 param;
     u16 targetSpecies;
-	u16 param2; // extra parameter for second evo input field
+    u16 param2; // extra parameter for second evo input field
 };
 
 struct SpeciesInfo /*0x8C*/

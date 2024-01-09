@@ -7309,7 +7309,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Shellder,
         LEARNSETS(Shellder),
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_CLOYSTER},
-                                {EVO_SPECIFIC_MON_IN_PARTY, SPECIES_SLOWPOKE, SPECIES_CLOYSTER_FRIBIAN}),
+                                {EVO_SPECIFIC_MON_IN_PARTY, SPECIES_SLOWPOKE, SPECIES_CLOYSTER_FRIBIAN, 28}),
     },
 
     [SPECIES_CLOYSTER] =

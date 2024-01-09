@@ -3953,14 +3953,14 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
                     }
                 }
                 break;
-            case EVO_LEVEL_DARK_TYPE_MON_IN_PARTY:
+            case EVO_LEVEL_TYPE_MON_IN_PARTY:
                 if (evolutions[i].param <= level)
                 {
                     for (j = 0; j < PARTY_SIZE; j++)
                     {
                         u16 currSpecies = GetMonData(&gPlayerParty[j], MON_DATA_SPECIES, NULL);
-                        if (gSpeciesInfo[currSpecies].types[0] == TYPE_DARK
-                         || gSpeciesInfo[currSpecies].types[1] == TYPE_DARK)
+                        if (gSpeciesInfo[currSpecies].types[0] == evolutions[i].param2
+                         || gSpeciesInfo[currSpecies].types[1] == evolutions[i].param2)
                         {
                             targetSpecies = evolutions[i].targetSpecies;
                             break;

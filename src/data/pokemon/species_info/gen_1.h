@@ -9835,8 +9835,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(MimeJr, 0),
         .footprint = gMonFootprint_MimeJr,
         LEARNSETS(MimeJr),
-        .evolutions = EVOLUTION({EVO_MOVE, MOVE_MIMIC, SPECIES_MR_MIME},
-                                {EVO_NONE, 0, SPECIES_MR_MIME_GALARIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_MR_MIME},
+                                {EVO_LEVEL_TYPE_MON_IN_PARTY, 20, SPECIES_MR_MIME_GALARIAN, TYPE_ICE}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 

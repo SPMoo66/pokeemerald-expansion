@@ -5497,7 +5497,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Karrablast, 0),
         .footprint = gMonFootprint_Karrablast,
         LEARNSETS(Karrablast),
-        .evolutions = EVOLUTION({EVO_TRADE_SPECIFIC_MON, SPECIES_SHELMET, SPECIES_ESCAVALIER}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_ESCAVALIER}),
     },
 
     [SPECIES_ESCAVALIER] =
@@ -5954,7 +5954,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Ferroseed, 1),
         .footprint = gMonFootprint_Ferroseed,
         LEARNSETS(Ferroseed),
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_FERROTHORN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_FERROTHORN}),
     },
 
     [SPECIES_FERROTHORN] =
@@ -7368,7 +7368,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Pawniard, 0),
         .footprint = gMonFootprint_Pawniard,
         LEARNSETS(Pawniard),
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_BISHARP}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_BISHARP}),
     },
 
     [SPECIES_BISHARP] =
@@ -8068,7 +8068,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Larvesta, 0),
         .footprint = gMonFootprint_Larvesta,
         LEARNSETS(Larvesta),
-        .evolutions = EVOLUTION({EVO_LEVEL, 59, SPECIES_VOLCARONA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_VOLCARONA}),
     },
 
     [SPECIES_VOLCARONA] =

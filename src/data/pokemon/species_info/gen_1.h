@@ -10760,9 +10760,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         TAUROS_MISC_INFO,
         TAUROS_PALDEAN_MISC_INFO,
         .types = { TYPE_FIGHTING, TYPE_FIGHTING },
-        .evYield_Attack = 2,
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_ANGER_POINT, ABILITY_CUD_CHEW },
-        .bodyColor = BODY_COLOR_BROWN,
         .weight = 1150,
         .description = COMPOUND_STRING(
             "This Pokémon has a muscular body\n"
@@ -10771,15 +10768,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "the opponent’s weak spots."),
         FRONT_PIC(TaurosPaldeanCombatBreed, 64, 64),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_TaurosPaldean,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         BACK_PIC(TaurosPaldeanCombatBreed, 64, 48),
         .backPicYOffset = 9,
-        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
         PALETTES(TaurosPaldeanCombatBreed),
         ICON(TaurosPaldeanCombatBreed, 0),
         LEARNSETS(TaurosPaldeanCombatBreed),
-        .isPaldeanForm = TRUE,
     },
 
     [SPECIES_TAUROS_PALDEAN_BLAZE_BREED] =
@@ -10787,9 +10780,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         TAUROS_MISC_INFO,
         TAUROS_PALDEAN_MISC_INFO,
         .types = { TYPE_FIGHTING, TYPE_FIRE },
-        .evYield_Attack = 2,
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_ANGER_POINT, ABILITY_CUD_CHEW },
-        .bodyColor = BODY_COLOR_BROWN,
         .weight = 850,
         .description = COMPOUND_STRING(
             "When heated by fire energy, its horns can\n"
@@ -10798,15 +10788,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "both wounds and burns."),
         FRONT_PIC(TaurosPaldeanBlazeBreed, 64, 64),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_TaurosPaldean,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         BACK_PIC(TaurosPaldeanBlazeBreed, 64, 48),
         .backPicYOffset = 9,
-        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
         PALETTES(TaurosPaldeanBlazeBreed),
         ICON(TaurosPaldeanBlazeBreed, 0),
         LEARNSETS(TaurosPaldeanBlazeBreed),
-        .isPaldeanForm = TRUE,
     },
 
     [SPECIES_TAUROS_PALDEAN_AQUA_BREED] =
@@ -10814,9 +10800,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         TAUROS_MISC_INFO,
         TAUROS_PALDEAN_MISC_INFO,
         .types = { TYPE_FIGHTING, TYPE_WATER },
-        .evYield_Attack = 2,
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_ANGER_POINT, ABILITY_CUD_CHEW },
-        .bodyColor = BODY_COLOR_BROWN,
         .weight = 1100,
         .description = COMPOUND_STRING(
             "This Pokémon blasts water from holes on\n"
@@ -10825,15 +10808,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Tauros’s enemies."),
         FRONT_PIC(TaurosPaldeanAquaBreed, 64, 64),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_TaurosPaldean,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         BACK_PIC(TaurosPaldeanAquaBreed, 64, 48),
         .backPicYOffset = 9,
-        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
         PALETTES(TaurosPaldeanAquaBreed),
         ICON(TaurosPaldeanAquaBreed, 0),
         LEARNSETS(TaurosPaldeanAquaBreed),
-        .isPaldeanForm = TRUE,
     },
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_TAUROS

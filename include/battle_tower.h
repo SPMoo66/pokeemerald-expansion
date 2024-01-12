@@ -31,6 +31,7 @@ struct FacilityMon
     u8 itemTableId;
     u8 evSpread;
     u8 nature;
+	u16 ability;
 };
 
 extern const u8 gTowerMaleFacilityClasses[30];
@@ -38,6 +39,7 @@ extern const u16 gTowerMaleTrainerGfxIds[30];
 extern const u8 gTowerFemaleFacilityClasses[20];
 extern const u16 gTowerFemaleTrainerGfxIds[20];
 extern const u16 gBattleFrontierHeldItems[];
+extern const u16 gBattleFrontierAbility[];
 extern const struct FacilityMon gBattleFrontierMons[];
 extern const struct BattleFrontierTrainer gBattleFrontierTrainers[];
 extern const struct FacilityMon gSlateportBattleTentMons[];

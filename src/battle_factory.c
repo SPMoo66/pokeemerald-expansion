@@ -156,37 +156,17 @@ static const u32 sWinStreakMasks[][2] =
 
 static const u8 sFixedIVTable[][2] =
 {
-    {3, 6},
-    {6, 9},
-    {9, 12},
-    {12, 15},
-    {15, 18},
-    {21, 31},
-    {31, 31},
+    {0, 0},
     {31, 31},
 };
 
 static const u16 sInitialRentalMonRanges[][2] =
 {
     // Level 50
-    {FRONTIER_MON_GRIMER,     FRONTIER_MON_FURRET_1},   // 110 - 199
-    {FRONTIER_MON_DELCATTY_1, FRONTIER_MON_CLOYSTER_1}, // 162 - 266
-    {FRONTIER_MON_DELCATTY_2, FRONTIER_MON_CLOYSTER_2}, // 267 - 371
-    {FRONTIER_MON_DUGTRIO_1,  FRONTIER_MON_SLAKING_1},  // 372 - 467
-    {FRONTIER_MON_DUGTRIO_2,  FRONTIER_MON_SLAKING_2},  // 468 - 563
-    {FRONTIER_MON_DUGTRIO_3,  FRONTIER_MON_SLAKING_3},  // 564 - 659
-    {FRONTIER_MON_DUGTRIO_4,  FRONTIER_MON_SLAKING_4},  // 660 - 755
-    {FRONTIER_MON_DUGTRIO_1,  FRONTIER_MONS_HIGH_TIER}, // 372 - 849
+    {FRONTIER_MON_BUTTERFREE,     FRONTIER_MON_WYRDEER},   // Tier 1
 
     // Open level
-    {FRONTIER_MON_DUGTRIO_1, FRONTIER_MON_SLAKING_1}, // 372 - 467
-    {FRONTIER_MON_DUGTRIO_2, FRONTIER_MON_SLAKING_2}, // 468 - 563
-    {FRONTIER_MON_DUGTRIO_3, FRONTIER_MON_SLAKING_3}, // 564 - 659
-    {FRONTIER_MON_DUGTRIO_4, FRONTIER_MON_SLAKING_4}, // 660 - 755
-    {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
-    {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
-    {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
-    {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
+    {FRONTIER_MON_VENUSAUR, FRONTIER_MON_ENAMORUS_THERIAN}, // Tier 2
 };
 
 // code
@@ -305,6 +285,7 @@ static void GenerateOpponentMons(void)
     int i, j, k;
     u16 species[FRONTIER_PARTY_SIZE];
     u16 heldItems[FRONTIER_PARTY_SIZE];
+//    u16 ability[FRONTIER_PARTY_SIZE];
     int firstMonId = 0;
     u16 trainerId = 0;
     u32 lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
@@ -371,6 +352,7 @@ static void GenerateOpponentMons(void)
         // Successful selection
         species[i] = gFacilityTrainerMons[monId].species;
         heldItems[i] = gBattleFrontierHeldItems[gFacilityTrainerMons[monId].itemTableId];
+//        ability[i] = gBattleFrontierAbility[gFacilityTrainerMons[monId].ability];
         gFrontierTempParty[i] = monId;
         i++;
     }
@@ -394,8 +376,8 @@ static void SetRentalsToOpponentParty(void)
     {
         gSaveBlock2Ptr->frontier.rentalMons[i + FRONTIER_PARTY_SIZE].monId = gFrontierTempParty[i];
         gSaveBlock2Ptr->frontier.rentalMons[i + FRONTIER_PARTY_SIZE].ivs = GetBoxMonData(&gEnemyParty[i].box, MON_DATA_ATK_IV, NULL);
+        SetMonData(&gEnemyParty[i + FRONTIER_PARTY_SIZE], MON_DATA_ABILITY_NUM, &gBattleFrontierAbility[gFacilityTrainerMons[gFrontierTempParty[i]].ability]);
         gSaveBlock2Ptr->frontier.rentalMons[i + FRONTIER_PARTY_SIZE].personality = GetMonData(&gEnemyParty[i], MON_DATA_PERSONALITY, NULL);
-        gSaveBlock2Ptr->frontier.rentalMons[i + FRONTIER_PARTY_SIZE].abilityNum = GetBoxMonData(&gEnemyParty[i].box, MON_DATA_ABILITY_NUM, NULL);
         SetMonData(&gEnemyParty[i], MON_DATA_HELD_ITEM, &gBattleFrontierHeldItems[gFacilityTrainerMons[gFrontierTempParty[i]].itemTableId]);
     }
 }
@@ -410,6 +392,7 @@ static void SetPlayerAndOpponentParties(void)
     u16 evs;
     u8 ivs;
     u8 friendship;
+//    u16 ability;
 
     if (gSaveBlock2Ptr->frontier.lvlMode == FRONTIER_LVL_TENT)
     {
@@ -461,7 +444,7 @@ static void SetPlayerAndOpponentParties(void)
                 SetMonMoveAvoidReturn(&gPlayerParty[i], gFacilityTrainerMons[monId].moves[k], k);
             SetMonData(&gPlayerParty[i], MON_DATA_FRIENDSHIP, &friendship);
             SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &gBattleFrontierHeldItems[gFacilityTrainerMons[monId].itemTableId]);
-            SetMonData(&gPlayerParty[i], MON_DATA_ABILITY_NUM, &gSaveBlock2Ptr->frontier.rentalMons[i].abilityNum);
+            SetMonData(&gPlayerParty[i], MON_DATA_ABILITY_NUM, &gBattleFrontierAbility[gFacilityTrainerMons[monId].ability]);
         }
     }
 
@@ -500,7 +483,7 @@ static void SetPlayerAndOpponentParties(void)
             for (k = 0; k < MAX_MON_MOVES; k++)
                 SetMonMoveAvoidReturn(&gEnemyParty[i], gFacilityTrainerMons[monId].moves[k], k);
             SetMonData(&gEnemyParty[i], MON_DATA_HELD_ITEM, &gBattleFrontierHeldItems[gFacilityTrainerMons[monId].itemTableId]);
-            SetMonData(&gEnemyParty[i], MON_DATA_ABILITY_NUM, &gSaveBlock2Ptr->frontier.rentalMons[i + FRONTIER_PARTY_SIZE].abilityNum);
+            SetMonData(&gEnemyParty[i], MON_DATA_ABILITY_NUM, &gBattleFrontierAbility[gFacilityTrainerMons[monId].ability]);
         }
         break;
     }
@@ -521,6 +504,7 @@ static void GenerateInitialRentalMons(void)
     u16 species[PARTY_SIZE];
     u16 monIds[PARTY_SIZE];
     u16 heldItems[PARTY_SIZE];
+//    u16 ability[PARTY_SIZE];
 
     gFacilityTrainers = gBattleFrontierTrainers;
     for (i = 0; i < PARTY_SIZE; i++)
@@ -528,6 +512,7 @@ static void GenerateInitialRentalMons(void)
         species[i] = SPECIES_NONE;
         monIds[i] = 0;
         heldItems[i] = ITEM_NONE;
+//        ability[i] = 0;
     }
     lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
     battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
@@ -595,6 +580,7 @@ static void GenerateInitialRentalMons(void)
         gSaveBlock2Ptr->frontier.rentalMons[i].monId = monId;
         species[i] = gFacilityTrainerMons[monId].species;
         heldItems[i] = gBattleFrontierHeldItems[gFacilityTrainerMons[monId].itemTableId];
+//        ability[i] = gBattleFrontierAbility[gFacilityTrainerMons[monId].ability];
         monIds[i] = monId;
         i++;
     }
@@ -761,6 +747,7 @@ void FillFactoryBrainParty(void)
     int i, j, k;
     u16 species[FRONTIER_PARTY_SIZE];
     u16 heldItems[FRONTIER_PARTY_SIZE];
+//    u16 ability[FRONTIER_PARTY_SIZE];
     u8 friendship;
     int monLevel;
     u8 fixedIV;
@@ -809,6 +796,7 @@ void FillFactoryBrainParty(void)
 
         species[i] = gFacilityTrainerMons[monId].species;
         heldItems[i] = gBattleFrontierHeldItems[gFacilityTrainerMons[monId].itemTableId];
+//        ability[i] = gBattleFrontierAbility[gFacilityTrainerMons[monId].ability];
         CreateMonWithEVSpreadNatureOTID(&gEnemyParty[i],
                                              gFacilityTrainerMons[monId].species,
                                              monLevel,
@@ -822,6 +810,7 @@ void FillFactoryBrainParty(void)
             SetMonMoveAvoidReturn(&gEnemyParty[i], gFacilityTrainerMons[monId].moves[k], k);
         SetMonData(&gEnemyParty[i], MON_DATA_FRIENDSHIP, &friendship);
         SetMonData(&gEnemyParty[i], MON_DATA_HELD_ITEM, &gBattleFrontierHeldItems[gFacilityTrainerMons[monId].itemTableId]);
+        SetMonData(&gEnemyParty[i], MON_DATA_ABILITY_NUM, &gBattleFrontierAbility[gFacilityTrainerMons[monId].ability]);
         i++;
     }
 }
@@ -834,21 +823,21 @@ static u16 GetFactoryMonId(u8 lvlMode, u8 challengeNum, bool8 useBetterRange)
     if (lvlMode == FRONTIER_LVL_50)
         adder = 0;
     else
-        adder = 8;
+        adder = 1;
 
     if (challengeNum < 7)
     {
         if (useBetterRange)
         {
-            numMons = (sInitialRentalMonRanges[adder + challengeNum + 1][1] - sInitialRentalMonRanges[adder + challengeNum + 1][0]) + 1;
+            numMons = (sInitialRentalMonRanges[adder + 1][1] - sInitialRentalMonRanges[adder + 1][0]) + 1;
             monId = Random() % numMons;
-            monId += sInitialRentalMonRanges[adder + challengeNum + 1][0];
+            monId += sInitialRentalMonRanges[adder + 1][0];
         }
         else
         {
-            numMons = (sInitialRentalMonRanges[adder + challengeNum][1] - sInitialRentalMonRanges[adder + challengeNum][0]) + 1;
+            numMons = (sInitialRentalMonRanges[adder][1] - sInitialRentalMonRanges[adder][0]) + 1;
             monId = Random() % numMons;
-            monId += sInitialRentalMonRanges[adder + challengeNum][0];
+            monId += sInitialRentalMonRanges[adder][0];
         }
     }
     else
@@ -857,9 +846,9 @@ static u16 GetFactoryMonId(u8 lvlMode, u8 challengeNum, bool8 useBetterRange)
         if (challenge != 7)
             challenge = 7; // why bother assigning it above at all
 
-        numMons = (sInitialRentalMonRanges[adder + challenge][1] - sInitialRentalMonRanges[adder + challenge][0]) + 1;
+        numMons = (sInitialRentalMonRanges[adder][1] - sInitialRentalMonRanges[adder][0]) + 1;
         monId = Random() % numMons;
-        monId += sInitialRentalMonRanges[adder + challenge][0];
+        monId += sInitialRentalMonRanges[adder][0];
     }
 
     return monId;

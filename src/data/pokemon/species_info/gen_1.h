@@ -10747,13 +10747,20 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_PALDEAN_FORMS
-#define TAUROS_PALDEAN_MISC_INFO                                    \
-        .baseHP        = 75,                                        \
-        .baseAttack    = 110,                                       \
-        .baseDefense   = 105,                                       \
-        .baseSpeed     = 105,                                       \
-        .baseSpAttack  = 30,                                        \
-        .baseSpDefense = 75
+#define TAUROS_PALDEAN_MISC_INFO                                                    \
+        .baseHP        = 75,                                                        \
+        .baseAttack    = 110,                                                       \
+        .baseDefense   = 105,                                                       \
+        .baseSpeed     = 105,                                                       \
+        .baseSpAttack  = 30,                                                        \
+        .baseSpDefense = 75,                                                        \
+        .evYield_Attack = 2,                                                        \
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_ANGER_POINT, ABILITY_CUD_CHEW }, \
+        .bodyColor = BODY_COLOR_BLACK,                                              \
+        .frontAnimFrames = sAnims_TaurosPaldean,                                    \
+        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/                                \
+        .backAnimId = BACK_ANIM_V_SHAKE_LOW,                                        \
+        .isPaldeanForm = TRUE
 
     [SPECIES_TAUROS_PALDEAN_COMBAT_BREED] =
     {

@@ -245,6 +245,89 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giddy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan2;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Arceus;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Articuno;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Articuno_g;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Azelf;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Blacephalon;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Buzzwole;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Calyrex;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Celebi;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Celesteela;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cobalion;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cresselia;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Darkrai;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dialga;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diancie;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Entei;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Eternatus;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Genesect;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giratina;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Glastrier;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Guzzlord;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Heatran;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hoopa;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Jirachi;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kartana;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Keldeo;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kyurem;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Landorus;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Magearna;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Marshadow;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Meloetta;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mesprit;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mewtwo;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Moltres;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Moltres_g;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Necrozma;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nihilego;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Palkia;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pheromosa;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Raikou;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regice;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regidrago;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regieleki;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regigigas;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regirock;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Registeel;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Reshiram;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Shaymin;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Spectrier;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Stakataka;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Suicune;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TapuBulu;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TapuFini;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TapuKoko;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TapuLele;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Terrakion;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Thundurus;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tornadus;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Uxie;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Victini;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Virzion;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Volcanion;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Xerneas;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Xurkitree;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Yveltal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zacian;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zamazenta;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zapdos;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zapdos_g;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zarude;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zekrom;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zeraora;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zygarde;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ChienPao;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ChiYu;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TingLu;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WoChien;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Koraidon;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Miraidon;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_IronCrown;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_IronLeaves;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RagingBolt;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WalkingWake;
+
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -486,6 +569,85 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LINK_RS_MAY] =              &gObjectEventGraphicsInfo_RubySapphireMay,
     [OBJ_EVENT_GFX_LUGIA] =                    &gObjectEventGraphicsInfo_Lugia,
     [OBJ_EVENT_GFX_HOOH] =                     &gObjectEventGraphicsInfo_HoOh,
+    [OBJ_EVENT_GFX_ARCEUS] =                   &gObjectEventGraphicsInfo_Arceus,
+    [OBJ_EVENT_GFX_ARTICUNO] =                 &gObjectEventGraphicsInfo_Articuno,
+    [OBJ_EVENT_GFX_ARTICUNO_G] =               &gObjectEventGraphicsInfo_Articuno_g,
+    [OBJ_EVENT_GFX_AZELF] =                    &gObjectEventGraphicsInfo_Azelf,
+    [OBJ_EVENT_GFX_BLACEPHALON] =              &gObjectEventGraphicsInfo_Blacephalon,
+    [OBJ_EVENT_GFX_BUZZWOLE] =                 &gObjectEventGraphicsInfo_Buzzwole,
+    [OBJ_EVENT_GFX_CALYREX] =                  &gObjectEventGraphicsInfo_Calyrex,
+    [OBJ_EVENT_GFX_CELEBI] =                   &gObjectEventGraphicsInfo_Celebi,
+    [OBJ_EVENT_GFX_CELESTEELA] =               &gObjectEventGraphicsInfo_Celesteela,
+    [OBJ_EVENT_GFX_COBALION] =                 &gObjectEventGraphicsInfo_Cobalion,
+    [OBJ_EVENT_GFX_CRESSELIA] =                &gObjectEventGraphicsInfo_Cresselia,
+    [OBJ_EVENT_GFX_DARKRAI] =                  &gObjectEventGraphicsInfo_Darkrai,
+    [OBJ_EVENT_GFX_DIALGA] =                   &gObjectEventGraphicsInfo_Dialga,
+    [OBJ_EVENT_GFX_DIANCIE] =                  &gObjectEventGraphicsInfo_Diancie,
+    [OBJ_EVENT_GFX_ENTEI] =                    &gObjectEventGraphicsInfo_Entei,
+    [OBJ_EVENT_GFX_ETERNATUS] =                &gObjectEventGraphicsInfo_Eternatus,
+    [OBJ_EVENT_GFX_GENESECT] =                 &gObjectEventGraphicsInfo_Genesect,
+    [OBJ_EVENT_GFX_GIRATINA] =                 &gObjectEventGraphicsInfo_Giratina,
+    [OBJ_EVENT_GFX_GLASTRIER] =                &gObjectEventGraphicsInfo_Glastrier,
+    [OBJ_EVENT_GFX_GUZZLORD] =                 &gObjectEventGraphicsInfo_Guzzlord,
+    [OBJ_EVENT_GFX_HEATRAN] =                  &gObjectEventGraphicsInfo_Heatran,
+    [OBJ_EVENT_GFX_HOOPA] =                    &gObjectEventGraphicsInfo_Hoopa,
+    [OBJ_EVENT_GFX_JIRACHI] =                  &gObjectEventGraphicsInfo_Jirachi,
+    [OBJ_EVENT_GFX_KARTANA] =                  &gObjectEventGraphicsInfo_Kartana,
+    [OBJ_EVENT_GFX_KELDEO] =                   &gObjectEventGraphicsInfo_Keldeo,
+    [OBJ_EVENT_GFX_KYUREM] =                   &gObjectEventGraphicsInfo_Kyurem,
+    [OBJ_EVENT_GFX_LANDORUS] =                 &gObjectEventGraphicsInfo_Landorus,
+    [OBJ_EVENT_GFX_MAGEARNA] =                 &gObjectEventGraphicsInfo_Magearna,
+    [OBJ_EVENT_GFX_MARSHADOW] =                &gObjectEventGraphicsInfo_Marshadow,
+    [OBJ_EVENT_GFX_MELOETTA] =                 &gObjectEventGraphicsInfo_Meloetta,
+    [OBJ_EVENT_GFX_MESPRIT] =                  &gObjectEventGraphicsInfo_Mesprit,
+    [OBJ_EVENT_GFX_MEWTWO] =                   &gObjectEventGraphicsInfo_Mewtwo,
+    [OBJ_EVENT_GFX_MOLTRES] =                  &gObjectEventGraphicsInfo_Moltres,
+    [OBJ_EVENT_GFX_MOLTRES_G] =                &gObjectEventGraphicsInfo_Moltres_g,
+    [OBJ_EVENT_GFX_NECROZMA] =                 &gObjectEventGraphicsInfo_Necrozma,
+    [OBJ_EVENT_GFX_NIHILEGO] =                 &gObjectEventGraphicsInfo_Nihilego,
+    [OBJ_EVENT_GFX_PALKIA] =                   &gObjectEventGraphicsInfo_Palkia,
+    [OBJ_EVENT_GFX_PHEROMOSA] =                &gObjectEventGraphicsInfo_Pheromosa,
+    [OBJ_EVENT_GFX_RAIKOU] =                   &gObjectEventGraphicsInfo_Raikou,
+    [OBJ_EVENT_GFX_REGIDRAGO] =                &gObjectEventGraphicsInfo_Regidrago,
+    [OBJ_EVENT_GFX_REGIELEKI] =                &gObjectEventGraphicsInfo_Regieleki,
+    [OBJ_EVENT_GFX_REGIGIGAS] =                &gObjectEventGraphicsInfo_Regigigas,
+    [OBJ_EVENT_GFX_RESHIRAM] =                 &gObjectEventGraphicsInfo_Reshiram,
+    [OBJ_EVENT_GFX_SHAYMIN] =                  &gObjectEventGraphicsInfo_Shaymin,
+    [OBJ_EVENT_GFX_SPECTRIER] =                &gObjectEventGraphicsInfo_Spectrier,
+    [OBJ_EVENT_GFX_STAKATAKA] =                &gObjectEventGraphicsInfo_Stakataka,
+    [OBJ_EVENT_GFX_SUICUNE] =                  &gObjectEventGraphicsInfo_Suicune,
+    [OBJ_EVENT_GFX_TAPUBULU] =                 &gObjectEventGraphicsInfo_TapuBulu,
+    [OBJ_EVENT_GFX_TAPUFINI] =                 &gObjectEventGraphicsInfo_TapuFini,
+    [OBJ_EVENT_GFX_TAPUKOKO] =                 &gObjectEventGraphicsInfo_TapuKoko,
+    [OBJ_EVENT_GFX_TAPULELE] =                 &gObjectEventGraphicsInfo_TapuLele,
+    [OBJ_EVENT_GFX_TERRAKION] =                &gObjectEventGraphicsInfo_Terrakion,
+    [OBJ_EVENT_GFX_THUNDURUS] =                &gObjectEventGraphicsInfo_Thundurus,
+    [OBJ_EVENT_GFX_TORNADUS] =                 &gObjectEventGraphicsInfo_Tornadus,
+    [OBJ_EVENT_GFX_UXIE] =                     &gObjectEventGraphicsInfo_Uxie,
+    [OBJ_EVENT_GFX_VICTINI] =                  &gObjectEventGraphicsInfo_Victini,
+    [OBJ_EVENT_GFX_VIRIZION] =                 &gObjectEventGraphicsInfo_Virizion,
+    [OBJ_EVENT_GFX_VOLCANION] =                &gObjectEventGraphicsInfo_Volcanion,
+    [OBJ_EVENT_GFX_XERNEAS] =                  &gObjectEventGraphicsInfo_Xerneas,
+    [OBJ_EVENT_GFX_XURKITREE] =                &gObjectEventGraphicsInfo_Xurkitree,
+    [OBJ_EVENT_GFX_YVELTAL] =                  &gObjectEventGraphicsInfo_Yveltal,
+    [OBJ_EVENT_GFX_ZACIAN] =                   &gObjectEventGraphicsInfo_Zacian,
+    [OBJ_EVENT_GFX_ZAMAZENTA] =                &gObjectEventGraphicsInfo_Zamazenta,
+    [OBJ_EVENT_GFX_ZAPDOS] =                   &gObjectEventGraphicsInfo_Zapdos,
+    [OBJ_EVENT_GFX_ZAPDOS_G] =                 &gObjectEventGraphicsInfo_Zapdos_g,
+    [OBJ_EVENT_GFX_ZARUDE] =                   &gObjectEventGraphicsInfo_Zarude,
+    [OBJ_EVENT_GFX_ZEKROM] =                   &gObjectEventGraphicsInfo_Zekrom,
+    [OBJ_EVENT_GFX_ZERAORA] =                  &gObjectEventGraphicsInfo_Zeraora,
+    [OBJ_EVENT_GFX_ZYGARDE] =                  &gObjectEventGraphicsInfo_Zygarde,
+    [OBJ_EVENT_GFX_CHIENPAO] =                 &gObjectEventGraphicsInfo_ChienPao,
+    [OBJ_EVENT_GFX_CHIYU] =                    &gObjectEventGraphicsInfo_ChiYu,
+    [OBJ_EVENT_GFX_TINGLU] =                   &gObjectEventGraphicsInfo_TingLu,
+    [OBJ_EVENT_GFX_WOCHIEN] =                  &gObjectEventGraphicsInfo_WoChien,
+    [OBJ_EVENT_GFX_KORAIDON] =                 &gObjectEventGraphicsInfo_Koraidon,
+    [OBJ_EVENT_GFX_MIRAIDON] =                 &gObjectEventGraphicsInfo_Miraidon,
+    [OBJ_EVENT_GFX_IRONCROWN] =                &gObjectEventGraphicsInfo_IronCrown,
+    [OBJ_EVENT_GFX_IRONLEAVES] =               &gObjectEventGraphicsInfo_IronLeaves,
+    [OBJ_EVENT_GFX_RAGINGBOLT] =               &gObjectEventGraphicsInfo_RagingBolt,
+    [OBJ_EVENT_GFX_WALKINGWAKE] =              &gObjectEventGraphicsInfo_WalkingWake,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

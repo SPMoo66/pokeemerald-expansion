@@ -240,6 +240,85 @@
 #define OBJ_EVENT_GFX_LINK_RS_MAY                236
 #define OBJ_EVENT_GFX_LUGIA                      237
 #define OBJ_EVENT_GFX_HOOH                       238
+#define OBJ_EVENT_GFX_ARCEUS                     239
+#define OBJ_EVENT_GFX_ARTICUNO                   240
+#define OBJ_EVENT_GFX_ARTICUNO_G                 241
+#define OBJ_EVENT_GFX_AZELF                      242
+#define OBJ_EVENT_GFX_BLACEPHALON                243
+#define OBJ_EVENT_GFX_BUZZWOLE                   244
+#define OBJ_EVENT_GFX_CALYREX                    245
+#define OBJ_EVENT_GFX_CELEBI                     246
+#define OBJ_EVENT_GFX_CELESTEELA                 247
+#define OBJ_EVENT_GFX_CHIENPAO                   248
+#define OBJ_EVENT_GFX_CHIYU                      249
+#define OBJ_EVENT_GFX_COBALION                   250
+#define OBJ_EVENT_GFX_CRESSELIA                  251
+#define OBJ_EVENT_GFX_DARKRAI                    252
+#define OBJ_EVENT_GFX_DIALGA                     253
+#define OBJ_EVENT_GFX_DIANCIE                    254
+#define OBJ_EVENT_GFX_ENTEI                      255
+#define OBJ_EVENT_GFX_ETERNATUS                  256
+#define OBJ_EVENT_GFX_GENESECT                   257
+#define OBJ_EVENT_GFX_GIRATINA                   258
+#define OBJ_EVENT_GFX_GLASTRIER                  259
+#define OBJ_EVENT_GFX_GUZZLORD                   260
+#define OBJ_EVENT_GFX_HEATRAN                    261
+#define OBJ_EVENT_GFX_HOOPA                      262
+#define OBJ_EVENT_GFX_IRONCROWN                  263
+#define OBJ_EVENT_GFX_IRONLEAVES                 264
+#define OBJ_EVENT_GFX_JIRACHI                    265
+#define OBJ_EVENT_GFX_KARTANA                    266
+#define OBJ_EVENT_GFX_KELDEO                     267
+#define OBJ_EVENT_GFX_KORAIDON                   268
+#define OBJ_EVENT_GFX_KYUREM                     269
+#define OBJ_EVENT_GFX_LANDORUS                   270
+#define OBJ_EVENT_GFX_MAGEARNA                   271
+#define OBJ_EVENT_GFX_MARSHADOW                  272
+#define OBJ_EVENT_GFX_MELOETTA                   273
+#define OBJ_EVENT_GFX_MESPRIT                    274
+#define OBJ_EVENT_GFX_MEWTWO                     275
+#define OBJ_EVENT_GFX_MIRAIDON                   276
+#define OBJ_EVENT_GFX_MOLTRES                    277
+#define OBJ_EVENT_GFX_MOLTRES_G                  278
+#define OBJ_EVENT_GFX_NECROZMA                   279
+#define OBJ_EVENT_GFX_NIHILEGO                   280
+#define OBJ_EVENT_GFX_PALKIA                     281
+#define OBJ_EVENT_GFX_PHEROMOSA                  282
+#define OBJ_EVENT_GFX_RAGINGBOLT                 283
+#define OBJ_EVENT_GFX_RAIKOU                     284
+#define OBJ_EVENT_GFX_REGIDRAGO                  285
+#define OBJ_EVENT_GFX_REGIELEKI                  286
+#define OBJ_EVENT_GFX_REGIGIGAS                  287
+#define OBJ_EVENT_GFX_RESHIRAM                   288
+#define OBJ_EVENT_GFX_SHAYMIN                    289
+#define OBJ_EVENT_GFX_SPECTRIER                  290
+#define OBJ_EVENT_GFX_STAKATAKA                  291
+#define OBJ_EVENT_GFX_SUICUNE                    292
+#define OBJ_EVENT_GFX_TAPUBULU                   293
+#define OBJ_EVENT_GFX_TAPUFINI                   294
+#define OBJ_EVENT_GFX_TAPUKOKO                   295
+#define OBJ_EVENT_GFX_TAPULELE                   296
+#define OBJ_EVENT_GFX_TERRAKION                  297
+#define OBJ_EVENT_GFX_THUNDURUS                  298
+#define OBJ_EVENT_GFX_TINGLU                     299
+#define OBJ_EVENT_GFX_TORNADUS                   300
+#define OBJ_EVENT_GFX_UXIE                       301
+#define OBJ_EVENT_GFX_VICTINI                    302
+#define OBJ_EVENT_GFX_VIRIZION                   303
+#define OBJ_EVENT_GFX_VOLCANION                  304
+#define OBJ_EVENT_GFX_WALKINGWAKE                305
+#define OBJ_EVENT_GFX_WOCHIEN                    306
+#define OBJ_EVENT_GFX_XERNEAS                    307
+#define OBJ_EVENT_GFX_XURKITREE                  308
+#define OBJ_EVENT_GFX_YVELTAL                    309
+#define OBJ_EVENT_GFX_ZACIAN                     310
+#define OBJ_EVENT_GFX_ZAMAZENTA                  311
+#define OBJ_EVENT_GFX_ZAPDOS                     312
+#define OBJ_EVENT_GFX_ZAPDOS_G                   313
+#define OBJ_EVENT_GFX_ZARUDE                     314
+#define OBJ_EVENT_GFX_ZEKROM                     315
+#define OBJ_EVENT_GFX_ZERAORA                    316
+#define OBJ_EVENT_GFX_ZYGARDE                    317
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
@@ -250,7 +329,7 @@
 // object graphics that can be removed. If more graphics are needed, anything that
 // stores graphics ids will need to be increased in size. See wiki entry below:
 // https://github.com/pret/pokeemerald/wiki/Feature-Branches#overworld-expansion
-#define NUM_OBJ_EVENT_GFX                        239
+#define NUM_OBJ_EVENT_GFX                        318
 
 
 // These are dynamic object gfx ids.

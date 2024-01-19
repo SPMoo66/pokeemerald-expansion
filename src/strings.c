@@ -1879,3 +1879,6 @@ const u8 gText_AshQty[] = _("Ash Qty:\n{STR_VAR_1}{PAUSE_UNTIL_PRESS}");
 const u8 gText_ViewIVs[] = _("IVs");
 const u8 gText_ViewEVs[] = _("EVs");
 const u8 gText_ViewStats[] = _("Stats");
+
+const u8 gText_AM[] = _("AM");
+const u8 gText_PM[] = _("PM");

@@ -3081,4 +3081,8 @@ extern const u8 gText_ViewIVs[];
 extern const u8 gText_ViewEVs[];
 extern const u8 gText_ViewStats[];
 
+// BSBob map pop-ups
+extern const u8 gText_AM[];
+extern const u8 gText_PM[];
+
 #endif // GUARD_STRINGS_H

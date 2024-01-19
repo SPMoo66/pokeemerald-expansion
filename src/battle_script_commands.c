@@ -14773,7 +14773,7 @@ static void Cmd_handleballthrow(void)
                 break;
             case ITEM_NET_BALL:
                 if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_WATER) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_BUG))
-                    ballMultiplier = B_NET_BALL_MODIFIER >= GEN_7 ? 350 : 300;
+                    ballMultiplier = B_NET_BALL_MODIFIER >= GEN_7 ? 300 : 300;
                 break;
             case ITEM_DIVE_BALL:
                 if (GetCurrentMapType() == MAP_TYPE_UNDERWATER
@@ -14803,7 +14803,7 @@ static void Cmd_handleballthrow(void)
                 break;
             case ITEM_REPEAT_BALL:
                 if (GetSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gBattlerTarget].species), FLAG_GET_CAUGHT))
-                    ballMultiplier = (B_REPEAT_BALL_MODIFIER >= GEN_7 ? 350 : 300);
+                    ballMultiplier = (B_REPEAT_BALL_MODIFIER >= GEN_7 ? 500 : 300);
                 break;
             case ITEM_TIMER_BALL:
                 ballMultiplier = 100 + (gBattleResults.battleTurnCounter * (B_TIMER_BALL_MODIFIER >= GEN_5 ? 30 : 10));
@@ -14821,15 +14821,15 @@ static void Cmd_handleballthrow(void)
                 break;
             case ITEM_LEVEL_BALL:
                 if (gBattleMons[gBattlerAttacker].level >= 4 * gBattleMons[gBattlerTarget].level)
-                    ballMultiplier = 800;
-                else if (gBattleMons[gBattlerAttacker].level > 2 * gBattleMons[gBattlerTarget].level)
                     ballMultiplier = 400;
+                else if (gBattleMons[gBattlerAttacker].level > 2 * gBattleMons[gBattlerTarget].level)
+                    ballMultiplier = 300;
                 else if (gBattleMons[gBattlerAttacker].level > gBattleMons[gBattlerTarget].level)
                     ballMultiplier = 200;
                 break;
             case ITEM_LURE_BALL:
                 if (gIsFishingEncounter)
-                    ballMultiplier = (B_LURE_BALL_MODIFIER >= GEN_7 ? 500 : 300);
+                    ballMultiplier = (B_LURE_BALL_MODIFIER >= GEN_7 ? 350 : 300);
                 break;
             case ITEM_MOON_BALL:
             {
@@ -14856,7 +14856,7 @@ static void Cmd_handleballthrow(void)
                 break;
             case ITEM_FAST_BALL:
                 if (gSpeciesInfo[gBattleMons[gBattlerTarget].species].baseSpeed >= 100)
-                    ballMultiplier = 400;
+                    ballMultiplier = 350;
                 break;
             case ITEM_HEAVY_BALL:
                 i = GetSpeciesWeight(gBattleMons[gBattlerTarget].species);

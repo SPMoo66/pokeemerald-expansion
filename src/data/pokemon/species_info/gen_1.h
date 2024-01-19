@@ -1804,7 +1804,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         PALETTES(Pichu),
         ICON(Pichu, 1),
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_PIKACHU}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 12, SPECIES_PIKACHU}),
     },
 
     [SPECIES_PICHU_SPIKY_EARED] =
@@ -1820,6 +1820,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         //.backAnimId = BACK_ANIM_NONE,
         PALETTES(PichuSpikyEared),
         ICON(PichuSpikyEared, 1),
+        .evolutions = EVOLUTION({EVO_LEVEL, 12, SPECIES_PIKACHU}),
     },
 #endif //P_GEN_2_CROSS_EVOS
 

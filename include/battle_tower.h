@@ -31,7 +31,7 @@ struct FacilityMon
     u8 itemTableId;
     u8 evSpread;
     u8 nature;
-	u16 ability;
+    u16 ability;
 };
 
 extern const u8 gTowerMaleFacilityClasses[30];

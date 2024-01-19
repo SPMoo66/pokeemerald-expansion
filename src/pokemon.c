@@ -5018,7 +5018,34 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
         default:
-            return MUS_VS_TRAINER;
+            if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
+            {
+                u8 challengeNum;
+                u32 battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
+                u32 lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
+                challengeNum = gSaveBlock2Ptr->frontier.factoryWinStreaks[battleMode][lvlMode] % 7;
+                switch (challengeNum)
+                {
+                case 0:
+                    return MUS_VS_TRAINER;
+                case 1:
+                    return MUS_RG_VS_TRAINER;
+                case 2:
+                    return MUS_DP_VS_TRAINER;
+                case 3:
+                    return MUS_HG_VS_TRAINER;
+                case 4:
+                    return MUS_HG_VS_TRAINER_KANTO;
+                case 5:
+                    return MUS_DP_VS_GYM_LEADER;
+                case 6:
+                    return MUS_DP_VS_GALACTIC_COMMANDER;
+                default:
+                    return MUS_VS_TRAINER;
+                }
+            }
+            else
+                return MUS_VS_TRAINER;
         }
     }
     else

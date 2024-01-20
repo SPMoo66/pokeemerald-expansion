@@ -150,6 +150,59 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         ICON(Meganium, 1),
         .footprint = gMonFootprint_Meganium,
         LEARNSETS(Meganium),
+        .formSpeciesIdTable = sMeganiumFormSpeciesIdTable,
+        .formChangeTable = sMeganiumFormChangeTable,
+    },
+
+    [SPECIES_MEGANIUM_MEGA] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 87,
+        .baseDefense   = 155,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 93,
+        .baseSpDefense = 155,
+        .types = { TYPE_GRASS, TYPE_GRASS },
+        .catchRate = 45,
+        .expYield = 281,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 2,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_GRASS },
+        .abilities = { ABILITY_THICK_FAT, ABILITY_THICK_FAT, ABILITY_THICK_FAT },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Meganium"),
+        .cryId = CRY_MEGANIUM,
+        .natDexNum = NATIONAL_DEX_MEGANIUM,
+        .categoryName = _("Herb"),
+        .height = 18,
+        .weight = 1005,
+        .description = COMPOUND_STRING(
+            "The fragrance of a Meganium's flower\n"
+            "soothes and calms emotions. In battle,\n"
+            "it gives off more of its becalming scent\n"
+            "to blunt the foe's fighting spirit."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 277,
+        .trainerOffset = 1,
+        FRONT_PIC(MeganiumMega, 48, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_MeganiumMega,
+        .frontAnimId = ANIM_GROW_VIBRATE,
+        BACK_PIC(MeganiumMega, 56, 64),
+        .backPicYOffset = 2,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        PALETTES(MeganiumMega),
+        ICON(Meganium, 1),
+        .footprint = gMonFootprint_Meganium,
+        LEARNSETS(Meganium),
+        .formSpeciesIdTable = sMeganiumFormSpeciesIdTable,
+        .formChangeTable = sMeganiumFormChangeTable,
+        .isMegaEvolution = TRUE,
     },
 #endif //P_FAMILY_CHIKORITA
 
@@ -255,7 +308,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
 #define TYPHLOSION_MISC_INFO                                            \
         .catchRate = 45,                                                \
-        .expYield = 240,                                                \
         .evYield_SpAttack = 3,                                          \
         .genderRatio = PERCENT_FEMALE(12.5),                            \
         .eggCycles = 20,                                                \
@@ -279,6 +331,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpAttack  = 109,
         .baseSpDefense = 85,
         .types = { TYPE_FIRE, TYPE_FIRE },
+        .expYield = 240,
         .abilities = { ABILITY_BLAZE, ABILITY_PRANKSTER, ABILITY_FLASH_FIRE },
         .categoryName = _("Volcano"),
         .height = 17,
@@ -303,6 +356,46 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         PALETTES(Typhlosion),
         ICON(Typhlosion, 3),
         LEARNSETS(Typhlosion),
+        .formChangeTable = sTyphlosionFormChangeTable,
+    },
+
+    [SPECIES_TYPHLOSION_MEGA] =
+    {
+        TYPHLOSION_MISC_INFO,
+        .baseHP        = 78,
+        .baseAttack    = 104,
+        .baseDefense   = 84,
+        .baseSpeed     = 124,
+        .baseSpAttack  = 153,
+        .baseSpDefense = 91,
+        .types = { TYPE_FIRE, TYPE_FIRE },
+        .expYield = 285,
+        .abilities = { ABILITY_DESOLATE_LAND, ABILITY_DESOLATE_LAND, ABILITY_DESOLATE_LAND },
+        .categoryName = _("Volcano"),
+        .height = 17,
+        .weight = 795,
+        .description = COMPOUND_STRING(
+            "It can hide behind a shimmering heat haze\n"
+            "that it creates using its intense flames.\n"
+            "Typhlosion create blazing explosive\n"
+            "blasts that burn everything to cinders."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 268,
+        .trainerOffset = 1,
+        FRONT_PIC(TyphlosionMega, 56, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = sAnims_TyphlosionMega,
+        .frontAnimId = ANIM_V_SHAKE,
+        .frontAnimDelay = 20,
+        BACK_PIC(TyphlosionMega, 64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
+        PALETTES(TyphlosionMega),
+        ICON(Typhlosion, 3),
+        LEARNSETS(Typhlosion),
+        .formChangeTable = sTyphlosionFormChangeTable,
+        .isMegaEvolution = TRUE,
     },
 
 #if P_HISUIAN_FORMS
@@ -316,6 +409,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpAttack  = 119,
         .baseSpDefense = 85,
         .types = { TYPE_FIRE, TYPE_GHOST },
+        .expYield = 240,
         .abilities = { ABILITY_BLAZE, ABILITY_PRANKSTER, ABILITY_FRISK },
         .categoryName = _("Ghost Flame"),
         .height = 16,
@@ -3419,7 +3513,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         PALETTES(Dudunsparce),                                                      \
         ICON(Dudunsparce, 0),                                                       \
         LEARNSETS(Dudunsparce),                                                     \
-        .formSpeciesIdTable = sDudunsparceFormSpeciesIdTable
+        .formSpeciesIdTable = sDudunsparceFormSpeciesIdTable,                       \
+        .formChangeTable = sDudunsparceFormChangeTable
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         //.backAnimId = BACK_ANIM_NONE,
         //.footprint = gMonFootprint_Dudunsparce,
@@ -3446,6 +3541,56 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "number of segments a\n"
             "Dudunsparce's body has is determined by the\n"
             "Pokémon's genes."),
+    },
+
+    [SPECIES_DUDUNSPARCE_MEGA] =
+    {
+        .baseHP        = 125,
+        .baseAttack    = 135,
+        .baseDefense   = 115,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 110,
+        .types = { TYPE_NORMAL, TYPE_DRAGON },
+        .catchRate = 45,
+        .expYield = 227,
+        .evYield_HP = 2,
+        .itemCommon = ITEM_STARF_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD },
+        .abilities = { ABILITY_TRIAGE, ABILITY_TRIAGE, ABILITY_TRIAGE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Dudunsprce"),
+        .cryId = CRY_DUDUNSPARCE,
+        .natDexNum = NATIONAL_DEX_DUDUNSPARCE,
+        .categoryName = _("Land Snake"),
+        .height = 36,
+        .weight = 392,
+        .description = COMPOUND_STRING(
+            "This Pokémon uses its hard tail to\n"
+            "make its nest by boring holes into\n"
+            "bedrock deep underground. The nest\n"
+            "can reach lengths of over six miles."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        FRONT_PIC(DudunsparceMega, 64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_DudunsparceMega,
+        BACK_PIC(DudunsparceMega, 64, 64),
+        .backPicYOffset = 0,
+        PALETTES(DudunsparceMega),
+        ICON(Dudunsparce, 0),
+        LEARNSETS(Dudunsparce),
+        .formSpeciesIdTable = sDudunsparceFormSpeciesIdTable,
+        .formChangeTable = sDudunsparceFormChangeTable,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        //.backAnimId = BACK_ANIM_NONE,
+        //.footprint = gMonFootprint_Dudunsparce,
     },
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_DUNSPARCE
@@ -6107,6 +6252,61 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         ICON(Lugia, 0),
         .footprint = gMonFootprint_Lugia,
         LEARNSETS(Lugia),
+        .formSpeciesIdTable = sLugiaFormSpeciesIdTable,
+        .formChangeTable = sLugiaFormChangeTable,
+    },
+
+    [SPECIES_LUGIA_MEGA] =
+    {
+        .baseHP        = 106,
+        .baseAttack    = 100,
+        .baseDefense   = 140,
+        .baseSpeed     = 125,
+        .baseSpAttack  = 145,
+        .baseSpDefense = 164,
+        .types = { TYPE_PSYCHIC, TYPE_FLYING },
+        .catchRate = 3,
+        .expYield = 351,
+        .evYield_SpDefense = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = { EGG_GROUP_NO_EGGS_DISCOVERED, EGG_GROUP_NO_EGGS_DISCOVERED },
+        .abilities = { ABILITY_STORM_DRAIN, ABILITY_NONE, ABILITY_STORM_DRAIN },
+        .bodyColor = BODY_COLOR_WHITE,
+        .isLegendary = TRUE,
+        .speciesName = _("Lugia"),
+        .cryId = CRY_LUGIA,
+        .natDexNum = NATIONAL_DEX_LUGIA,
+        .categoryName = _("Diving"),
+        .height = 52,
+        .weight = 2160,
+        .description = COMPOUND_STRING(
+            "Lugia is so powerful even a light\n"
+            "fluttering of its wings can blow apart\n"
+            "houses. As a result, it chooses to live out\n"
+            "of sight deep under the sea."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 721,
+        .trainerOffset = 19,
+        FRONT_PIC(LugiaMega, 64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_LugiaMega,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
+        .frontAnimDelay = 20,
+        .enemyMonElevation = 4,
+        BACK_PIC(LugiaMega, 64, 64),
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
+        PALETTES(LugiaMega),
+        ICON(Lugia, 0),
+        .footprint = gMonFootprint_Lugia,
+        LEARNSETS(Lugia),
+        .formSpeciesIdTable = sLugiaFormSpeciesIdTable,
+        .formChangeTable = sLugiaFormChangeTable,
+        .isMegaEvolution = TRUE,
     },
 #endif //P_FAMILY_LUGIA
 
@@ -6160,6 +6360,62 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         ICON(HoOh, 1),
         .footprint = gMonFootprint_HoOh,
         LEARNSETS(HoOh),
+        .formSpeciesIdTable = sHoOhFormSpeciesIdTable,
+        .formChangeTable = sHoOhFormChangeTable,
+    },
+
+    [SPECIES_HO_OH_MEGA] =
+    {
+        .baseHP        = 106,
+        .baseAttack    = 158,
+        .baseDefense   = 100,
+        .baseSpeed     = 102,
+        .baseSpAttack  = 130,
+        .baseSpDefense = 184,
+        .types = { TYPE_FIRE, TYPE_FLYING },
+        .catchRate = 3,
+        .expYield = 351,
+        .evYield_SpDefense = 3,
+        .itemCommon = ITEM_SACRED_ASH,
+        .itemRare   = ITEM_SACRED_ASH,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = { EGG_GROUP_NO_EGGS_DISCOVERED, EGG_GROUP_NO_EGGS_DISCOVERED },
+        .abilities = { ABILITY_GOOD_AS_GOLD, ABILITY_NONE, ABILITY_GOOD_AS_GOLD },
+        .bodyColor = BODY_COLOR_RED,
+        .isLegendary = TRUE,
+        .speciesName = _("Ho-Oh"),
+        .cryId = CRY_HO_OH,
+        .natDexNum = NATIONAL_DEX_HO_OH,
+        .categoryName = _("Rainbow"),
+        .height = 38,
+        .weight = 1990,
+        .description = COMPOUND_STRING(
+            "Its feathers--which glow in seven colors\n"
+            "depending on the angle at which they are\n"
+            "struck by light--are thought to bring joy.\n"
+            "It is said to live at the foot of a rainbow."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 610,
+        .trainerOffset = 17,
+        FRONT_PIC(HoOhMega, 64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_HoOhMega,
+        .frontAnimId = ANIM_GROW_VIBRATE,
+        .enemyMonElevation = 4,
+        BACK_PIC(HoOhMega, 64, 64),
+        .backPicYOffset = 5,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
+        PALETTES(HoOhMega),
+        ICON(HoOh, 1),
+        .footprint = gMonFootprint_HoOh,
+        LEARNSETS(HoOh),
+        .formSpeciesIdTable = sHoOhFormSpeciesIdTable,
+        .formChangeTable = sHoOhFormChangeTable,
+        .isMegaEvolution = TRUE,
     },
 #endif //P_FAMILY_HO_OH
 

@@ -1761,9 +1761,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = 35,                                   \
         .growthRate = GROWTH_SLOW,                          \
         .eggGroups = RALTS_FAMILY_EGG_GROUPS,               \
-        .types = { TYPE_PSYCHIC, RALTS_FAMILY_TYPE2 },      \
         .bodyColor = BODY_COLOR_WHITE,                      \
-        .speciesName = _("Gardevoir"),                      \
         .natDexNum = NATIONAL_DEX_GARDEVOIR,                \
         .categoryName = _("Embrace"),                       \
         .height = 16,                                       \
@@ -1786,8 +1784,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 80,
         .baseSpAttack  = 125,
         .baseSpDefense = 115,
+        .types = { TYPE_PSYCHIC, RALTS_FAMILY_TYPE2 },
         .expYield = 233,
         .abilities = { ABILITY_SYNCHRONIZE, ABILITY_TRACE, ABILITY_TELEPATHY },
+        .speciesName = _("Gardevoir"),
         .cryId = CRY_GARDEVOIR,
         .description = COMPOUND_STRING(
             "It apparently does not feel the pull of\n"
@@ -1815,8 +1815,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 100,
         .baseSpAttack  = 165,
         .baseSpDefense = 135,
+        .types = { TYPE_PSYCHIC, RALTS_FAMILY_TYPE2 },
         .expYield = 278,
         .abilities = { ABILITY_PIXILATE, ABILITY_PIXILATE, ABILITY_PIXILATE },
+        .speciesName = _("Gardevoir"),
         .cryId = CRY_GARDEVOIR_MEGA,
         .description = COMPOUND_STRING(
             "By opening its heart, Mega Gardevoir\n"
@@ -1832,6 +1834,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
         PALETTES(GardevoirMega),
         ICON(GardevoirMega, 1),
+        .isMegaEvolution = TRUE,
+    },
+
+    [SPECIES_GARDEVOIR_MEGA_Q] =
+    {
+        GARDEVOIR_MISC_INFO,
+        .baseHP        = 70,
+        .baseAttack    = 135,
+        .baseDefense   = 65,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 115,
+        .types = { TYPE_PSYCHIC, TYPE_PSYCHIC },
+        .expYield = 278,
+        .abilities = { ABILITY_AS_ONE_SHADOW_RIDER, ABILITY_AS_ONE_SHADOW_RIDER, ABILITY_AS_ONE_SHADOW_RIDER },
+        .speciesName = _("Gardevoir?"),
+        .cryId = CRY_GARDEVOIR_MEGA,
+        .description = COMPOUND_STRING(
+            "By opening its heart, Mega Gardevoir\n"
+            "becomes able to use tremendous psychic\n"
+            "power. The red plate in its chest is said to\n"
+            "be a physical manifestation of its heart."),
+        FRONT_PIC(GardevoirMegaQ, 64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_GardevoirMegaQ,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        BACK_PIC(GardevoirMegaQ, 48, 56),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
+        PALETTES(GardevoirMegaQ),
+        ICON(Gardevoir, 1),
         .isMegaEvolution = TRUE,
     },
 #endif //P_MEGA_EVOLUTIONS
@@ -2028,7 +2061,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
 #if P_GEN_4_CROSS_EVOS
 #define GALLADE_MISC_INFO                                   \
-        .types = { TYPE_PSYCHIC, TYPE_FIGHTING },           \
         .catchRate = 45,                                    \
         .evYield_Attack = 3,                                \
         .itemCommon = ITEM_LIECHI_BERRY,                    \
@@ -2039,7 +2071,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_SLOW,                          \
         .eggGroups = RALTS_FAMILY_EGG_GROUPS,               \
         .bodyColor = BODY_COLOR_WHITE,                      \
-        .speciesName = _("Gallade"),                        \
         .natDexNum = NATIONAL_DEX_GALLADE,                  \
         .categoryName = _("Blade"),                         \
         .height = 16,                                       \
@@ -2061,12 +2092,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 80,
         .baseSpAttack  = 65,
         .baseSpDefense = 115,
+        .types = { TYPE_PSYCHIC, TYPE_FIGHTING },
         .expYield = 233,
         #if P_UPDATED_ABILITIES >= GEN_9
             .abilities = { ABILITY_STEADFAST, ABILITY_SHARPNESS, ABILITY_JUSTIFIED },
         #else
             .abilities = { ABILITY_STEADFAST, ABILITY_NONE, ABILITY_JUSTIFIED },
         #endif
+        .speciesName = _("Gallade"),
         .cryId = CRY_GALLADE,
         .weight = 520,
         .description = COMPOUND_STRING(
@@ -2095,8 +2128,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 110,
         .baseSpAttack  = 65,
         .baseSpDefense = 115,
+        .types = { TYPE_PSYCHIC, TYPE_FIGHTING },
         .expYield = 278,
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_INNER_FOCUS, ABILITY_INNER_FOCUS },
+        .speciesName = _("Gallade"),
         .cryId = CRY_GALLADE_MEGA,
         .weight = 564,
         .description = COMPOUND_STRING(
@@ -2112,6 +2147,38 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
         PALETTES(GalladeMega),
+        ICON(GalladeMega, 1),
+        .isMegaEvolution = TRUE,
+    },
+
+    [SPECIES_GALLADE_MEGA_Q] =
+    {
+        GALLADE_MISC_INFO,
+        .baseHP        = 70,
+        .baseAttack    = 135,
+        .baseDefense   = 65,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 115,
+        .types = { TYPE_PSYCHIC, TYPE_PSYCHIC },
+        .expYield = 278,
+        .abilities = { ABILITY_AS_ONE_ICE_RIDER, ABILITY_AS_ONE_ICE_RIDER, ABILITY_AS_ONE_ICE_RIDER },
+        .speciesName = _("Gallade?"),
+        .cryId = CRY_GALLADE_MEGA,
+        .weight = 564,
+        .description = COMPOUND_STRING(
+            "Mega Gallade has a knightly appearance.\n"
+            "It can use its psychic power to reshape\n"
+            "both arms into blades simultaneously and\n"
+            "fight using a dual-wielding style."),
+        FRONT_PIC(GalladeMegaQ, 64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_GalladeMegaQ,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        BACK_PIC(GalladeMegaQ, 64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        PALETTES(GalladeMegaQ),
         ICON(GalladeMega, 1),
         .isMegaEvolution = TRUE,
     },
@@ -2824,6 +2891,59 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Exploud, 2),
         .footprint = gMonFootprint_Exploud,
         LEARNSETS(Exploud),
+        .formSpeciesIdTable = sExploudFormSpeciesIdTable,
+        .formChangeTable = sExploudFormChangeTable,
+    },
+
+    [SPECIES_EXPLOUD_MEGA] =
+    {
+        .baseHP        = 114,
+        .baseAttack    = 101,
+        .baseDefense   = 88,
+        .baseSpeed     = 93,
+        .baseSpAttack  = 131,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 88 : 78,
+        .types = { TYPE_NORMAL, TYPE_NORMAL },
+        .catchRate = 45,
+        .expYield = 266,
+        .evYield_HP = 3,
+        .itemCommon = ITEM_CHESTO_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_FIELD },
+        .abilities = { ABILITY_PUNK_ROCK, ABILITY_PUNK_ROCK, ABILITY_PUNK_ROCK },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Exploud"),
+        .cryId = CRY_EXPLOUD,
+        .natDexNum = NATIONAL_DEX_EXPLOUD,
+        .categoryName = _("Loud Noise"),
+        .height = 15,
+        .weight = 840,
+        .description = COMPOUND_STRING(
+            "It has sound-generating organs all over\n"
+            "its body. It communicates with others by\n"
+            "adjusting the tone and volume of the cries\n"
+            "it emits."),
+        .pokemonScale = 284,
+        .pokemonOffset = 1,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        FRONT_PIC(ExploudMega, 64, 64),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = sAnims_ExploudMega,
+        .frontAnimId = ANIM_V_SHAKE_TWICE,
+        BACK_PIC(ExploudMega, 64, 64),
+        .backPicYOffset = 8,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
+        PALETTES(ExploudMega),
+        ICON(Exploud, 2),
+        .footprint = gMonFootprint_Exploud,
+        LEARNSETS(Exploud),
+        .formSpeciesIdTable = sExploudFormSpeciesIdTable,
+        .formChangeTable = sExploudFormChangeTable,
+        .isMegaEvolution = TRUE,
     },
 #endif //P_FAMILY_WHISMUR
 
@@ -5023,6 +5143,66 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Flygon, 1),
         .footprint = gMonFootprint_Flygon,
         LEARNSETS(Flygon),
+        .formSpeciesIdTable = sFlygonFormSpeciesIdTable,
+        .formChangeTable = sFlygonFormChangeTable,
+    },
+
+    [SPECIES_FLYGON_MEGA] =
+    {
+        .baseHP        = 90,
+        .baseAttack    = 142,
+        .baseDefense   = 97,
+        .baseSpeed     = 103,
+        .baseSpAttack  = 108,
+        .baseSpDefense = 100,
+        .types = { TYPE_GROUND, TYPE_DRAGON },
+        .catchRate = 45,
+        .expYield = 279,
+        .evYield_Attack = 1,
+        .evYield_Speed = 2,
+        .itemCommon = ITEM_HABAN_BERRY,
+        .itemRare = ITEM_DRAGON_FANG,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        #if P_UPDATED_EGG_GROUPS >= GEN_8
+            .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_DRAGON },
+        #else
+            .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG },
+        #endif
+        .abilities = { ABILITY_ICE_SCALES, ABILITY_ICE_SCALES, ABILITY_ICE_SCALES },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Flygon"),
+        .cryId = CRY_FLYGON,
+        .natDexNum = NATIONAL_DEX_FLYGON,
+        .categoryName = _("Mystic"),
+        .height = 20,
+        .weight = 820,
+        .description = COMPOUND_STRING(
+            "The flapping of its wings sounds like\n"
+            "singing. To prevent detection by enemies,\n"
+            "it hides itself by flapping up a cloud of\n"
+            "desert sand."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 268,
+        .trainerOffset = 1,
+        FRONT_PIC(FlygonMega, 64, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = sAnims_FlygonMega,
+        .frontAnimId = ANIM_ZIGZAG_SLOW,
+        .enemyMonElevation = 7,
+        BACK_PIC(FlygonMega, 64, 64),
+        .backPicYOffset = 3,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        PALETTES(FlygonMega),
+        ICON(Flygon, 1),
+        .footprint = gMonFootprint_Flygon,
+        LEARNSETS(Flygon),
+        .formSpeciesIdTable = sFlygonFormSpeciesIdTable,
+        .formChangeTable = sFlygonFormChangeTable,
+        .isMegaEvolution = TRUE,
     },
 #endif //P_FAMILY_TRAPINCH
 
@@ -6024,8 +6204,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Feebas, 2),
         .footprint = gMonFootprint_Feebas,
         LEARNSETS(Feebas),
-        .evolutions = EVOLUTION({EVO_BEAUTY, 170, SPECIES_MILOTIC},
-                                {EVO_ITEM, ITEM_PRISM_SCALE, SPECIES_MILOTIC}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_PRISM_SCALE, SPECIES_MILOTIC}),
     },
 
     [SPECIES_MILOTIC] =
@@ -6078,6 +6257,61 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Milotic, 2),
         .footprint = gMonFootprint_Milotic,
         LEARNSETS(Milotic),
+        .formSpeciesIdTable = sMiloticFormSpeciesIdTable,
+        .formChangeTable = sMiloticFormChangeTable,
+    },
+
+    [SPECIES_MILOTIC_MEGA] =
+    {
+        .baseHP        = 95,
+        .baseAttack    = 85,
+        .baseDefense   = 110,
+        .baseSpeed     = 99,
+        .baseSpAttack  = 116,
+        .baseSpDefense = 145,
+        .types = { TYPE_WATER, TYPE_FAIRY },
+        .catchRate = 60,
+        .expYield = 224,
+        .evYield_SpDefense = 2,
+        .itemCommon = ITEM_SALAC_BERRY,
+        .itemRare = ITEM_MYSTIC_WATER,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_ERRATIC,
+        .eggGroups = { EGG_GROUP_WATER_1, EGG_GROUP_DRAGON },
+        .abilities = { ABILITY_PRISM_ARMOR, ABILITY_PRISM_ARMOR, ABILITY_PRISM_ARMOR },
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("Milotic"),
+        .cryId = CRY_MILOTIC,
+        .natDexNum = NATIONAL_DEX_MILOTIC,
+        .categoryName = _("Tender"),
+        .height = 62,
+        .weight = 1620,
+        .description = COMPOUND_STRING(
+            "It is said to live at the bottom of\n"
+            "large lakes. Considered to be the most\n"
+            "beautiful of all Pokémon, it has been\n"
+            "depicted in paintings and statues."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 360,
+        .trainerOffset = 7,
+        FRONT_PIC(MiloticMega, 64, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = sAnims_MiloticMega,
+        .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
+        .frontAnimDelay = 45,
+        BACK_PIC(MiloticMega, 64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
+        PALETTES(MiloticMega),
+        ICON(Milotic, 2),
+        .footprint = gMonFootprint_Milotic,
+        LEARNSETS(Milotic),
+        .formSpeciesIdTable = sMiloticFormSpeciesIdTable,
+        .formChangeTable = sMiloticFormChangeTable,
+        .isMegaEvolution = TRUE,
     },
 #endif //P_FAMILY_FEEBAS
 
@@ -6550,6 +6784,61 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Dusknoir, 2),
         .footprint = gMonFootprint_Dusknoir,
         LEARNSETS(Dusknoir),
+        .formSpeciesIdTable = sDusknoirFormSpeciesIdTable,
+        .formChangeTable = sDusknoirFormChangeTable,
+    },
+
+    [SPECIES_DUSKNOIR_MEGA] =
+    {
+        .baseHP        = 55,
+        .baseAttack    = 142,
+        .baseDefense   = 155,
+        .baseSpeed     = 53,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 155,
+        .types = { TYPE_GHOST, TYPE_DARK },
+        .catchRate = 45,
+        .expYield = 281,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 2,
+        .itemRare = ITEM_SPELL_TAG,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 25,
+        .friendship = 35,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS },
+        .abilities = { ABILITY_TECHNICIAN, ABILITY_TECHNICIAN, ABILITY_TECHNICIAN },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Dusknoir"),
+        .cryId = CRY_DUSKNOIR,
+        .natDexNum = NATIONAL_DEX_DUSKNOIR,
+        .categoryName = _("Gripper"),
+        .height = 22,
+        .weight = 1066,
+        .description = COMPOUND_STRING(
+            "This feared Pokémon is said to travel to\n"
+            "worlds unknown. Some even believe that\n"
+            "it takes lost spirits into its pliant body\n"
+            "and guides them home."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 348,
+        .trainerOffset = 6,
+        FRONT_PIC(DusknoirMega, 64, 64),
+        .frontPicYOffset = 2,
+        .frontAnimFrames = sAnims_DusknoirMega,
+        .frontAnimId = ANIM_H_SLIDE,
+        .enemyMonElevation = 6,
+        BACK_PIC(DusknoirMega, 64, 56),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        PALETTES(DusknoirMega),
+        ICON(Dusknoir, 2),
+        .footprint = gMonFootprint_Dusknoir,
+        LEARNSETS(Dusknoir),
+        .formSpeciesIdTable = sDusknoirFormSpeciesIdTable,
+        .formChangeTable = sDusknoirFormChangeTable,
+        .isMegaEvolution = TRUE,
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_DUSKULL
@@ -6711,6 +7000,67 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Chimecho, 0),
         .footprint = gMonFootprint_Chimecho,
         LEARNSETS(Chimecho),
+        .formSpeciesIdTable = sChimechoFormSpeciesIdTable,
+        .formChangeTable = sChimechoFormChangeTable,
+    },
+
+    [SPECIES_CHIMECHO_MEGA] =
+    {
+        .baseAttack    = 25,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 150,
+        #if P_UPDATED_STATS >= GEN_7
+            .baseHP        = 75,
+            .baseDefense   = 110,
+            .baseSpDefense = 110,
+        #else
+            .baseHP        = 65,
+            .baseDefense   = 100,
+            .baseSpDefense = 100,
+        #endif
+        .types = { TYPE_PSYCHIC, TYPE_FLYING },
+        .catchRate = 45,
+        .expYield = 204,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_PURE_INCENSE,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS },
+        .abilities = { ABILITY_AERILATE, ABILITY_NONE, ABILITY_AERILATE},
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Chimecho"),
+        .cryId = CRY_CHIMECHO,
+        .natDexNum = NATIONAL_DEX_CHIMECHO,
+        .categoryName = _("Wind Chime"),
+        .height = 6,
+        .weight = 10,
+        .description = COMPOUND_STRING(
+            "They fly about very actively when the hot\n"
+            "season arrives. They communicate among\n"
+            "themselves using seven different and\n"
+            "distinguishing cries."),
+        .pokemonScale = 505,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        FRONT_PIC(ChimechoMega, 48, 48),
+        .frontPicYOffset = 11,
+        .frontAnimFrames = sAnims_ChimechoMega,
+        .frontAnimId = ANIM_H_SLIDE_WOBBLE,
+        .enemyMonElevation = 16,
+        BACK_PIC(ChimechoMega, 64, 56),
+        .backPicYOffset = 12,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        PALETTES(ChimechoMega),
+        ICON(Chimecho, 0),
+        .footprint = gMonFootprint_Chimecho,
+        LEARNSETS(Chimecho),
+        .formSpeciesIdTable = sChimechoFormSpeciesIdTable,
+        .formChangeTable = sChimechoFormChangeTable,
+        .isMegaEvolution = TRUE,
     },
 #endif //P_FAMILY_CHIMECHO
 
@@ -6995,6 +7345,60 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Froslass, 0),
         .footprint = gMonFootprint_Froslass,
         LEARNSETS(Froslass),
+        .formSpeciesIdTable = sFroslassFormSpeciesIdTable,
+        .formChangeTable = sFroslassFormChangeTable,
+    },
+
+    [SPECIES_FROSLASS_MEGA] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 90,
+        .baseDefense   = 85,
+        .baseSpeed     = 155,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 85,
+        .types = { TYPE_ICE, TYPE_GHOST },
+        .catchRate = 75,
+        .expYield = 213,
+        .evYield_Speed = 2,
+        .itemCommon = ITEM_BABIRI_BERRY,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = { EGG_GROUP_FAIRY, EGG_GROUP_MINERAL },
+        .abilities = { ABILITY_QUEENLY_MAJESTY, ABILITY_QUEENLY_MAJESTY, ABILITY_QUEENLY_MAJESTY },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Froslass"),
+        .cryId = CRY_FROSLASS,
+        .natDexNum = NATIONAL_DEX_FROSLASS,
+        .categoryName = _("Snow Land"),
+        .height = 13,
+        .weight = 266,
+        .description = COMPOUND_STRING(
+            "When it finds people or Pokémon it likes,\n"
+            "it freezes them and takes them to its\n"
+            "chilly den, where they become its\n"
+            "decorations."),
+        .pokemonScale = 272,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        FRONT_PIC(FroslassMega, 48, 48),
+        .frontPicYOffset = 8,
+        .frontAnimFrames = sAnims_FroslassMega,
+        .frontAnimId = ANIM_V_SLIDE_WOBBLE,
+        .enemyMonElevation = 4,
+        BACK_PIC(FroslassMega, 64, 64),
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        PALETTES(FroslassMega),
+        ICON(Froslass, 0),
+        .footprint = gMonFootprint_Froslass,
+        LEARNSETS(Froslass),
+        .formSpeciesIdTable = sFroslassFormSpeciesIdTable,
+        .formChangeTable = sFroslassFormChangeTable,
+        .isMegaEvolution = TRUE,
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_SNORUNT

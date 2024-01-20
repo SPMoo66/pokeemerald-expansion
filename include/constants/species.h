@@ -1715,10 +1715,45 @@
 #define SPECIES_MIMIKYU_EMERIBIAN                       FAKE_START + 38
 #define SPECIES_FALINKS_EMERIBIAN                       FAKE_START + 39
 // Fribian Megas
+#define SPECIES_WIGGLYTUFF_MEGA                         FAKE_START + 40
+#define SPECIES_STARMIE_MEGA                            FAKE_START + 41
+#define SPECIES_MEGANIUM_MEGA                           FAKE_START + 42
+#define SPECIES_FLYGON_MEGA                             FAKE_START + 43
+#define SPECIES_MILOTIC_MEGA                            FAKE_START + 44
+#define SPECIES_CHIMECHO_MEGA                           FAKE_START + 45
+#define SPECIES_TORTERRA_MEGA                           FAKE_START + 46
+#define SPECIES_EMPOLEON_MEGA                           FAKE_START + 47
+#define SPECIES_VESPIQUEN_MEGA                          FAKE_START + 48
+#define SPECIES_DUSKNOIR_MEGA                           FAKE_START + 49
+#define SPECIES_FROSLASS_MEGA                           FAKE_START + 50
+#define SPECIES_KLINKLANG_MEGA                          FAKE_START + 51
+#define SPECIES_HAXORUS_MEGA                            FAKE_START + 52
+#define SPECIES_HYDREIGON_MEGA                          FAKE_START + 53
+#define SPECIES_DELPHOX_MEGA                            FAKE_START + 54
+#define SPECIES_AURORUS_MEGA                            FAKE_START + 55
+#define SPECIES_DUDUNSPARCE_MEGA                        FAKE_START + 56
 // Emeribian Megas
-#define SPECIES_GARDEVOIR_EMERIBIAN_MEGA                FAKE_START + 40
+#define SPECIES_FEAROW_MEGA                             FAKE_START + 57
+#define SPECIES_CLEFABLE_MEGA                           FAKE_START + 58
+#define SPECIES_RAPIDASH_MEGA                           FAKE_START + 59
+#define SPECIES_TYPHLOSION_MEGA                         FAKE_START + 60
+#define SPECIES_LUGIA_MEGA                              FAKE_START + 61
+#define SPECIES_HO_OH_MEGA                              FAKE_START + 62
+#define SPECIES_GARDEVOIR_MEGA_Q                        FAKE_START + 63
+#define SPECIES_GARDEVOIR_EMERIBIAN_MEGA                FAKE_START + 64
+#define SPECIES_EXPLOUD_MEGA                            FAKE_START + 65
+#define SPECIES_INFERNAPE_MEGA                          FAKE_START + 66
+#define SPECIES_STARAPTOR_MEGA                          FAKE_START + 67
+#define SPECIES_LUXRAY_MEGA                             FAKE_START + 68
+#define SPECIES_LUMINEON_MEGA                           FAKE_START + 69
+#define SPECIES_ELECTIVIRE_MEGA                         FAKE_START + 70
+#define SPECIES_MAGMORTAR_MEGA                          FAKE_START + 71
+#define SPECIES_GALLADE_MEGA_Q                          FAKE_START + 72
+#define SPECIES_SERPERIOR_MEGA                          FAKE_START + 73
+#define SPECIES_SLURPUFF_MEGA                           FAKE_START + 74
+#define SPECIES_TSAREENA_MEGA                           FAKE_START + 75
 
-#define PLACEHOLDER_START                               SPECIES_GARDEVOIR_EMERIBIAN_MEGA
+#define PLACEHOLDER_START                               SPECIES_TSAREENA_MEGA
 // XD: Gale of Darkness
 #define SPECIES_LUGIA_SHADOW                            PLACEHOLDER_START + 1
 // Diamond & Pearl

@@ -44,6 +44,7 @@ enum
     MENUITEM_CUSTOM_EXP_BAR,
     MENUITEM_CUSTOM_FONT,
     MENUITEM_CUSTOM_MATCHCALL,
+    MENUITEM_CUSTOM_MUSIC_REGION,
     MENUITEM_CUSTOM_CANCEL,
     MENUITEM_CUSTOM_COUNT,
 };
@@ -165,6 +166,7 @@ static void DrawChoices_UnitSystem(int selection, int y);
 static void DrawChoices_Font(int selection, int y);
 static void DrawChoices_FrameType(int selection, int y);
 static void DrawChoices_MatchCall(int selection, int y);
+static void DrawChoices_MusicRegion(int selection, int y);
 static void DrawBgWindowFrames(void);
 
 // EWRAM vars
@@ -217,6 +219,7 @@ struct // MENU_CUSTOM
     [MENUITEM_CUSTOM_EXP_BAR]      = {DrawChoices_BarSpeed,    ProcessInput_Options_Eleven},
     [MENUITEM_CUSTOM_FONT]         = {DrawChoices_Font,        ProcessInput_Options_Two}, 
     [MENUITEM_CUSTOM_MATCHCALL]    = {DrawChoices_MatchCall,   ProcessInput_Options_Two},
+    [MENUITEM_CUSTOM_MUSIC_REGION] = {DrawChoices_MusicRegion, ProcessInput_Options_Four},
     [MENUITEM_CUSTOM_CANCEL]       = {NULL, NULL},
 };
 
@@ -224,6 +227,7 @@ struct // MENU_CUSTOM
 static const u8 sText_HpBar[]       = _("HP Bar");
 static const u8 sText_ExpBar[]      = _("Exp Bar");
 static const u8 sText_UnitSystem[]  = _("Unit System");
+static const u8 gText_MusicRegion[] = _("Battle music");
 static const u8 *const sOptionMenuItemsNamesMain[MENUITEM_MAIN_COUNT] =
 {
     [MENUITEM_MAIN_TEXTSPEED]   = gText_TextSpeed,
@@ -238,11 +242,12 @@ static const u8 *const sOptionMenuItemsNamesMain[MENUITEM_MAIN_COUNT] =
 
 static const u8 *const sOptionMenuItemsNamesCustom[MENUITEM_CUSTOM_COUNT] =
 {
-    [MENUITEM_CUSTOM_HP_BAR]      = sText_HpBar,
-    [MENUITEM_CUSTOM_EXP_BAR]     = sText_ExpBar,
-    [MENUITEM_CUSTOM_FONT]        = gText_Font,
-    [MENUITEM_CUSTOM_MATCHCALL]   = gText_OptionMatchCalls,
-    [MENUITEM_CUSTOM_CANCEL]      = gText_OptionMenuSave,
+    [MENUITEM_CUSTOM_HP_BAR]       = sText_HpBar,
+    [MENUITEM_CUSTOM_EXP_BAR]      = sText_ExpBar,
+    [MENUITEM_CUSTOM_FONT]         = gText_Font,
+    [MENUITEM_CUSTOM_MATCHCALL]    = gText_OptionMatchCalls,
+    [MENUITEM_CUSTOM_MUSIC_REGION] = gText_MusicRegion,
+    [MENUITEM_CUSTOM_CANCEL]       = gText_OptionMenuSave,
 };
 
 static const u8 *const OptionTextRight(u8 menuItem)
@@ -278,6 +283,7 @@ static bool8 CheckConditions(int selection)
         {
         case MENUITEM_CUSTOM_FONT:            return TRUE;
         case MENUITEM_CUSTOM_MATCHCALL:       return TRUE;
+        case MENUITEM_CUSTOM_MUSIC_REGION:    return TRUE;
         case MENUITEM_CUSTOM_CANCEL:          return TRUE;
         case MENUITEM_CUSTOM_COUNT:           return TRUE;
         }
@@ -323,13 +329,15 @@ static const u8 sText_Desc_BikeOn[]             = _("Enables the bike theme when
 static const u8 sText_Desc_FontType[]           = _("Choose the font design.");
 static const u8 sText_Desc_OverworldCallsOn[]   = _("Trainers will be able to call you,\noffering rematches and info.");
 static const u8 sText_Desc_OverworldCallsOff[]  = _("You will not receive calls.\nSpecial events will still occur.");
+static const u8 sText_Desc_MusicRegion[]        = _("Choose battle music from\nany listed region.");
 static const u8 *const sOptionMenuItemDescriptionsCustom[MENUITEM_CUSTOM_COUNT][2] =
 {
-    [MENUITEM_CUSTOM_HP_BAR]      = {sText_Desc_BattleHPBar,        sText_Empty},
-    [MENUITEM_CUSTOM_EXP_BAR]     = {sText_Desc_BattleExpBar,       sText_Empty},
-    [MENUITEM_CUSTOM_FONT]        = {sText_Desc_FontType,           sText_Desc_FontType},
-    [MENUITEM_CUSTOM_MATCHCALL]   = {sText_Desc_OverworldCallsOn,   sText_Desc_OverworldCallsOff},
-    [MENUITEM_CUSTOM_CANCEL]      = {sText_Desc_Save,               sText_Empty},
+    [MENUITEM_CUSTOM_HP_BAR]       = {sText_Desc_BattleHPBar,        sText_Empty},
+    [MENUITEM_CUSTOM_EXP_BAR]      = {sText_Desc_BattleExpBar,       sText_Empty},
+    [MENUITEM_CUSTOM_FONT]         = {sText_Desc_FontType,           sText_Desc_FontType},
+    [MENUITEM_CUSTOM_MATCHCALL]    = {sText_Desc_OverworldCallsOn,   sText_Desc_OverworldCallsOff},
+    [MENUITEM_CUSTOM_MUSIC_REGION] = {sText_Desc_MusicRegion,        sText_Empty},
+    [MENUITEM_CUSTOM_CANCEL]       = {sText_Desc_Save,               sText_Empty},
 };
 
 // Disabled Descriptions
@@ -350,11 +358,12 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledMain[MENUITEM_MAIN_COU
 static const u8 sText_Desc_Disabled_BattleHPBar[]   = _("Only active if xyz.");
 static const u8 *const sOptionMenuItemDescriptionsDisabledCustom[MENUITEM_CUSTOM_COUNT] =
 {
-    [MENUITEM_CUSTOM_HP_BAR]      = sText_Desc_Disabled_BattleHPBar,
-    [MENUITEM_CUSTOM_EXP_BAR]     = sText_Empty,
-    [MENUITEM_CUSTOM_FONT]        = sText_Empty,
-    [MENUITEM_CUSTOM_MATCHCALL]   = sText_Empty,
-    [MENUITEM_CUSTOM_CANCEL]      = sText_Empty,
+    [MENUITEM_CUSTOM_HP_BAR]       = sText_Desc_Disabled_BattleHPBar,
+    [MENUITEM_CUSTOM_EXP_BAR]      = sText_Empty,
+    [MENUITEM_CUSTOM_FONT]         = sText_Empty,
+    [MENUITEM_CUSTOM_MATCHCALL]    = sText_Empty,
+    [MENUITEM_CUSTOM_MUSIC_REGION] = sText_Empty,
+    [MENUITEM_CUSTOM_CANCEL]       = sText_Empty,
 };
 
 static const u8 *const OptionTextDescription(void)
@@ -375,7 +384,7 @@ static const u8 *const OptionTextDescription(void)
         if (!CheckConditions(menuItem))
             return sOptionMenuItemDescriptionsDisabledMain[menuItem];
         selection = sOptions->sel_custom[menuItem];
-        if (menuItem == MENUITEM_CUSTOM_HP_BAR || menuItem == MENUITEM_CUSTOM_EXP_BAR)
+        if (menuItem == MENUITEM_CUSTOM_HP_BAR || menuItem == MENUITEM_CUSTOM_EXP_BAR || menuItem == MENUITEM_CUSTOM_MUSIC_REGION)
             selection = 0;
         return sOptionMenuItemDescriptionsCustom[menuItem][selection];
     }
@@ -598,10 +607,11 @@ void CB2_InitOptionPlusMenu(void)
         sOptions->sel[MENUITEM_MAIN_UNIT_SYSTEM] = gSaveBlock2Ptr->optionsUnitSystem;
         sOptions->sel[MENUITEM_MAIN_FRAMETYPE]   = gSaveBlock2Ptr->optionsWindowFrameType;
         
-        sOptions->sel_custom[MENUITEM_CUSTOM_HP_BAR]      = gSaveBlock2Ptr->optionsHpBarSpeed;
-        sOptions->sel_custom[MENUITEM_CUSTOM_EXP_BAR]     = gSaveBlock2Ptr->optionsExpBarSpeed;
-        sOptions->sel_custom[MENUITEM_CUSTOM_FONT]        = gSaveBlock2Ptr->optionsCurrentFont;
-        sOptions->sel_custom[MENUITEM_CUSTOM_MATCHCALL]   = gSaveBlock2Ptr->optionsDisableMatchCall;
+        sOptions->sel_custom[MENUITEM_CUSTOM_HP_BAR]       = gSaveBlock2Ptr->optionsHpBarSpeed;
+        sOptions->sel_custom[MENUITEM_CUSTOM_EXP_BAR]      = gSaveBlock2Ptr->optionsExpBarSpeed;
+        sOptions->sel_custom[MENUITEM_CUSTOM_FONT]         = gSaveBlock2Ptr->optionsCurrentFont;
+        sOptions->sel_custom[MENUITEM_CUSTOM_MATCHCALL]    = gSaveBlock2Ptr->optionsDisableMatchCall;
+        sOptions->sel_custom[MENUITEM_CUSTOM_MUSIC_REGION] = gSaveBlock2Ptr->optionsMusicRegion;
 
         sOptions->submenu = MENU_MAIN;
 
@@ -789,6 +799,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsExpBarSpeed      = sOptions->sel_custom[MENUITEM_CUSTOM_EXP_BAR];
     gSaveBlock2Ptr->optionsCurrentFont      = sOptions->sel_custom[MENUITEM_CUSTOM_FONT];
     gSaveBlock2Ptr->optionsDisableMatchCall = sOptions->sel_custom[MENUITEM_CUSTOM_MATCHCALL];
+    gSaveBlock2Ptr->optionsMusicRegion      = sOptions->sel_custom[MENUITEM_CUSTOM_MUSIC_REGION];
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
@@ -1142,6 +1153,12 @@ static void DrawChoices_MatchCall(int selection, int y)
     DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), y, styles[1], active);
 }
 
+static const u8 *const sTextMusicStrings[] = {gText_Kanto, gText_Johto, gText_Hoenn, gText_Sinnoh};
+static void DrawChoices_MusicRegion(int selection, int y)
+{
+    bool8 active = CheckConditions(MENUITEM_CUSTOM_MUSIC_REGION);
+    DrawChoices_Options_Four(sTextMusicStrings, selection, y, active);
+}
 
 // Background tilemap
 #define TILE_TOP_CORNER_L 0x1A2 // 418

@@ -9372,8 +9372,6 @@ static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 m
         if (moveType == TYPE_FIRE || moveType == TYPE_ICE)
         {
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.5));
-            if (updateFlags)
-                RecordAbilityBattle(battlerDef, ABILITY_THICK_FAT);
         }
         break;
     case ABILITY_DAMP:
@@ -9388,16 +9386,19 @@ static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 m
         if (moveType == TYPE_ICE)
         {
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.5));
-            if (updateFlags)
-                RecordAbilityBattle(battlerDef, ABILITY_MAGMA_ARMOR);
         }
         break;
+    case ABILITY_FLAME_BODY:
     case ABILITY_WATER_VEIL:
         if (moveType == TYPE_FIRE)
         {
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.5));
-            if (updateFlags)
-                RecordAbilityBattle(battlerDef, ABILITY_WATER_VEIL);
+        }
+        break;
+    case ABILITY_WATER_COMPACTION:
+        if (moveType == TYPE_WATER)
+        {
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.75));
         }
         break;
     }

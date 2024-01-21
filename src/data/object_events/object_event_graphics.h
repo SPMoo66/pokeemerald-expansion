@@ -360,6 +360,7 @@ const u32 gObjectEventPic_MovingBox[] = INCBIN_U32("graphics/object_events/pics/
 const u16 gObjectEventPal_MovingBox[] = INCBIN_U16("graphics/object_events/palettes/moving_box.gbapal");
 const u32 gObjectEventPic_Sudowoodo[] = INCBIN_U32("graphics/object_events/pics/pokemon/sudowoodo.4bpp");
 const u32 gObjectEventPic_Mew[] = INCBIN_U32("graphics/object_events/pics/pokemon/mew.4bpp");
+const u16 gObjectEventPal_Mew[] = INCBIN_U16("graphics/object_events/palettes/mew.gbapal");
 const u16 gObjectEventPal_RedLeaf[] = INCBIN_U16("graphics/object_events/palettes/red_leaf.gbapal");
 const u32 gObjectEventPic_Red[] = INCBIN_U32("graphics/object_events/pics/people/red.4bpp");
 const u32 gObjectEventPic_Leaf[] = INCBIN_U32("graphics/object_events/pics/people/leaf.4bpp");

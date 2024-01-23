@@ -1551,6 +1551,36 @@ static const u8 sBlueOrbDesc[] = _(
     "ancient power.");
 
 // Mega Stones
+static const u8 sMegaStoneXDesc[] = _(
+    "Enables most\n"
+    "species to Mega\n"
+    "Evolve in battle.");
+
+static const u8 sMegaStoneYDesc[] = _(
+    "Enables Pokémon to\n"
+    "Mega Evolve into\n"
+    "their second forms.");
+
+static const u8 sMegaStoneGDesc[] = _(
+    "Enables Gigantamax\n"
+    "Pokémon to Mega\n"
+    "Evolve in battle.");
+
+static const u8 sMegaStoneLXDesc[] = _(
+    "Enables Legendary\n"
+    "Pokémon to Mega\n"
+    "Evolve in battle.");
+
+static const u8 sMegaStoneLYDesc[] = _(
+    "Enables Mewtwo to\n"
+    "Mega Evolve into\n"
+    "its second form.");
+
+static const u8 sMegaStoneUnusedDesc[] = _(
+    "A Mega Stone\n"
+    "that no longer\n"
+    "holds any effect.");
+/*
 static const u8 sVenusauriteDesc[] = _(
     "This stone enables\n"
     "Venusaur to Mega\n"
@@ -1775,7 +1805,7 @@ static const u8 sDianciteDesc[] = _(
     "This stone enables\n"
     "Diancie to Mega\n"
     "Evolve in battle.");
-
+*/
 // Gems
 static const u8 sNormalGemDesc[] = _(
     "Increases the\n"

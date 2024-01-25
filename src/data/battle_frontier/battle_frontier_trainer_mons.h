@@ -14,8 +14,10 @@
     FRONTIER_MON_NIDOQUEEN,                  \
     FRONTIER_MON_NIDOKING,                   \
     FRONTIER_MON_NINETALES,                  \
+    FRONTIER_MON_NINETALES_EMERIBIAN,        \
     FRONTIER_MON_WIGGLYTUFF,                 \
     FRONTIER_MON_VILEPLUME,                  \
+    FRONTIER_MON_VILEPLUME_EMERIBIAN,        \
     FRONTIER_MON_PARASECT,                   \
     FRONTIER_MON_VENOMOTH,                   \
     FRONTIER_MON_DUGTRIO,                    \
@@ -65,12 +67,15 @@
     FRONTIER_MON_AERODACTYL,                 \
     FRONTIER_MON_FURRET,                     \
     FRONTIER_MON_NOCTOWL,                    \
+    FRONTIER_MON_NOCTOWL_EMERIBIAN,          \
     FRONTIER_MON_LEDIAN,                     \
+    FRONTIER_MON_ARIADOS_EMERIBIAN,          \
     FRONTIER_MON_CROBAT,                     \
     FRONTIER_MON_LANTURN,                    \
     FRONTIER_MON_XATU,                       \
     FRONTIER_MON_AMPHAROS,                   \
     FRONTIER_MON_BELLOSSOM,                  \
+    FRONTIER_MON_BELLOSSOM_EMERIBIAN,        \
     FRONTIER_MON_SUDOWOODO,                  \
     FRONTIER_MON_JUMPLUFF,                   \
     FRONTIER_MON_SUNFLORA,                   \
@@ -82,6 +87,7 @@
     FRONTIER_MON_QWILFISH,                   \
     FRONTIER_MON_HERACROSS,                  \
     FRONTIER_MON_MAGCARGO,                   \
+    FRONTIER_MON_MAGCARGO_EMERIBIAN,         \
     FRONTIER_MON_CORSOLA,                    \
     FRONTIER_MON_OCTILLERY,                  \
     FRONTIER_MON_OCTILLERY_FRIBIAN,          \
@@ -99,6 +105,7 @@
     FRONTIER_MON_SHIFTRY,                    \
     FRONTIER_MON_SWELLOW,                    \
     FRONTIER_MON_GARDEVOIR,                  \
+    FRONTIER_MON_GARDEVOIR_EMERIBIAN,        \
     FRONTIER_MON_MASQUERAIN,                 \
     FRONTIER_MON_SLAKING,                    \
     FRONTIER_MON_NINJASK,                    \
@@ -155,6 +162,7 @@
     FRONTIER_MON_CHERRIM,                    \
     FRONTIER_MON_AMBIPOM,                    \
     FRONTIER_MON_DRIFBLIM,                   \
+    FRONTIER_MON_DRIFBLIM_EMERIBIAN,         \
     FRONTIER_MON_LOPUNNY,                    \
     FRONTIER_MON_MISMAGIUS,                  \
     FRONTIER_MON_HONCHKROW,                  \
@@ -224,6 +232,7 @@
     FRONTIER_MON_VIVILLON,                   \
     FRONTIER_MON_PYROAR,                     \
     FRONTIER_MON_GOGOAT,                     \
+    FRONTIER_MON_GOGOAT_EMERIBIAN,           \
     FRONTIER_MON_PANGORO,                    \
     FRONTIER_MON_FURFROU,                    \
     FRONTIER_MON_MEOWSTIC,                   \
@@ -238,6 +247,7 @@
     FRONTIER_MON_CARBINK,                    \
     FRONTIER_MON_GOODRA,                     \
     FRONTIER_MON_TREVENANT,                  \
+    FRONTIER_MON_TREVENANT_EMERIBIAN,        \
     FRONTIER_MON_GOURGEIST,                  \
     FRONTIER_MON_AVALUGG,                    \
     FRONTIER_MON_AVALUGG_HISUIAN,            \
@@ -265,6 +275,7 @@
     FRONTIER_MON_KOMALA,                     \
     FRONTIER_MON_TURTONATOR,                 \
     FRONTIER_MON_TOGEDEMARU,                 \
+    FRONTIER_MON_MIMIKYU_EMERIBIAN,          \
     FRONTIER_MON_BRUXISH,                    \
     FRONTIER_MON_DRAMPA,                     \
     FRONTIER_MON_GUZZLORD,                   \
@@ -291,6 +302,7 @@
     FRONTIER_MON_RUNERIGUS,                  \
     FRONTIER_MON_ALCREMIE,                   \
     FRONTIER_MON_FALINKS,                    \
+    FRONTIER_MON_FALINKS_EMERIBIAN,          \
     FRONTIER_MON_PINCURCHIN,                 \
     FRONTIER_MON_FROSMOTH,                   \
     FRONTIER_MON_STONJOURNER,                \
@@ -327,12 +339,14 @@
     FRONTIER_MON_AEREON,                     \
     FRONTIER_MON_CONTAGEON,                  \
     FRONTIER_MON_LANEON,                     \
+    FRONTIER_MON_TITANEON,                   \
 	-1
 
 //Tier 2 Pkmn
 #define FRONTIER_MONS_TIER_2 \
     FRONTIER_MON_VENUSAUR,                   \
     FRONTIER_MON_CHARIZARD,                  \
+    FRONTIER_MON_CHARIZARD_EMERIBIAN,        \
     FRONTIER_MON_BLASTOISE,                  \
     FRONTIER_MON_CLEFABLE,                   \
     FRONTIER_MON_NINETALES_ALOLAN,           \
@@ -469,6 +483,7 @@
     FRONTIER_MON_TALONFLAME,                 \
     FRONTIER_MON_FLORGES,                    \
     FRONTIER_MON_AEGISLASH,                  \
+    FRONTIER_MON_AEGISLASH_EMERIBIAN,        \
     FRONTIER_MON_BARBARACLE,                 \
     FRONTIER_MON_DRAGALGE,                   \
     FRONTIER_MON_HELIOLISK,                  \
@@ -578,6 +593,7 @@
     FRONTIER_MON_OKIDOGI,                    \
     FRONTIER_MON_MUNKIDORI,                  \
     FRONTIER_MON_FEZANDIPITI,                \
+    FRONTIER_MON_OGERPON,                    \
     FRONTIER_MON_SCALEON,                    \
 	-1
 

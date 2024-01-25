@@ -163,10 +163,10 @@ static const u8 sFixedIVTable[][2] =
 static const u16 sInitialRentalMonRanges[][2] =
 {
     // Level 50
-    {FRONTIER_MON_BUTTERFREE,     FRONTIER_MON_WYRDEER},   // Tier 1
+    {FRONTIER_MON_BUTTERFREE, FRONTIER_MON_TITANEON},   // Tier 1
 
     // Open level
-    {FRONTIER_MON_VENUSAUR, FRONTIER_MON_ENAMORUS_THERIAN}, // Tier 2
+    {FRONTIER_MON_VENUSAUR, FRONTIER_MON_SCALEON}, // Tier 2
 };
 
 // code
@@ -285,7 +285,6 @@ static void GenerateOpponentMons(void)
     int i, j, k;
     u16 species[FRONTIER_PARTY_SIZE];
     u16 heldItems[FRONTIER_PARTY_SIZE];
-//    u16 ability[FRONTIER_PARTY_SIZE];
     int firstMonId = 0;
     u16 trainerId = 0;
     u32 lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
@@ -352,7 +351,6 @@ static void GenerateOpponentMons(void)
         // Successful selection
         species[i] = gFacilityTrainerMons[monId].species;
         heldItems[i] = gBattleFrontierHeldItems[gFacilityTrainerMons[monId].itemTableId];
-//        ability[i] = gBattleFrontierAbility[gFacilityTrainerMons[monId].ability];
         gFrontierTempParty[i] = monId;
         i++;
     }
@@ -392,7 +390,6 @@ static void SetPlayerAndOpponentParties(void)
     u16 evs;
     u8 ivs;
     u8 friendship;
-//    u16 ability;
 
     if (gSaveBlock2Ptr->frontier.lvlMode == FRONTIER_LVL_TENT)
     {
@@ -504,7 +501,6 @@ static void GenerateInitialRentalMons(void)
     u16 species[PARTY_SIZE];
     u16 monIds[PARTY_SIZE];
     u16 heldItems[PARTY_SIZE];
-//    u16 ability[PARTY_SIZE];
 
     gFacilityTrainers = gBattleFrontierTrainers;
     for (i = 0; i < PARTY_SIZE; i++)
@@ -512,7 +508,6 @@ static void GenerateInitialRentalMons(void)
         species[i] = SPECIES_NONE;
         monIds[i] = 0;
         heldItems[i] = ITEM_NONE;
-//        ability[i] = 0;
     }
     lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
     battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
@@ -580,7 +575,6 @@ static void GenerateInitialRentalMons(void)
         gSaveBlock2Ptr->frontier.rentalMons[i].monId = monId;
         species[i] = gFacilityTrainerMons[monId].species;
         heldItems[i] = gBattleFrontierHeldItems[gFacilityTrainerMons[monId].itemTableId];
-//        ability[i] = gBattleFrontierAbility[gFacilityTrainerMons[monId].ability];
         monIds[i] = monId;
         i++;
     }
@@ -747,7 +741,6 @@ void FillFactoryBrainParty(void)
     int i, j, k;
     u16 species[FRONTIER_PARTY_SIZE];
     u16 heldItems[FRONTIER_PARTY_SIZE];
-//    u16 ability[FRONTIER_PARTY_SIZE];
     u8 friendship;
     int monLevel;
     u8 fixedIV;
@@ -796,7 +789,6 @@ void FillFactoryBrainParty(void)
 
         species[i] = gFacilityTrainerMons[monId].species;
         heldItems[i] = gBattleFrontierHeldItems[gFacilityTrainerMons[monId].itemTableId];
-//        ability[i] = gBattleFrontierAbility[gFacilityTrainerMons[monId].ability];
         CreateMonWithEVSpreadNatureOTID(&gEnemyParty[i],
                                              gFacilityTrainerMons[monId].species,
                                              monLevel,

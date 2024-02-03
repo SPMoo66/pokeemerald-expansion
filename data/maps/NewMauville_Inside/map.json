@@ -2,7 +2,7 @@
   "id": "MAP_NEW_MAUVILLE_INSIDE",
   "name": "NewMauville_Inside",
   "layout": "LAYOUT_NEW_MAUVILLE_INSIDE",
-  "music": "MUS_MT_PYRE",
+  "music": "MUS_HG_LIGHTHOUSE",
   "region_map_section": "MAPSEC_NEW_MAUVILLE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -12,7 +12,7 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",

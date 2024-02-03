@@ -2,7 +2,7 @@
   "id": "MAP_PACIFIDLOG_TOWN",
   "name": "PacifidlogTown",
   "layout": "LAYOUT_PACIFIDLOG_TOWN",
-  "music": "MUS_LILYCOVE",
+  "music": "MUS_HG_CIANWOOD",
   "region_map_section": "MAPSEC_PACIFIDLOG_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -109,7 +109,9 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",

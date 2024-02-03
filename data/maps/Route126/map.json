@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE126",
   "name": "Route126",
   "layout": "LAYOUT_ROUTE126",
-  "music": "MUS_ROUTE120",
+  "music": "MUS_HG_ROUTE26",
   "region_map_section": "MAPSEC_ROUTE_126",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -148,7 +148,13 @@
       "flag": "0"
     }
   ],
-  "warp_events": [],
-  "coord_events": [],
-  "bg_events": []
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
 }

@@ -1386,10 +1386,10 @@
 #define FLAG_SYS_DEXNAV_SEARCH                      (SYSTEM_FLAGS + 0x21)
 #define FLAG_FORCE_SHINY                            (SYSTEM_FLAGS + 0x22) // shiny from include/config/pokemon.h
 #define FLAG_SMART_WILD_AI                          (SYSTEM_FLAGS + 0x23) // Smart Wild AI when set
-#define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
-#define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
-#define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
-#define FLAG_UNUSED_0x887                           (SYSTEM_FLAGS + 0x27) // Unused Flag
+#define FLAG_NO_WILD_ENCOUNTER                      (SYSTEM_FLAGS + 0x24) // Debug Wild Encounter toggle
+#define FLAG_NO_TRAINER_SIGHT                       (SYSTEM_FLAGS + 0x25) // Debug disable trainer sight
+#define FLAG_NO_COLLISION                           (SYSTEM_FLAGS + 0x26) // Debug TCL
+#define FLAG_NO_CATCHING                            (SYSTEM_FLAGS + 0x27) // Disable catching
 
 #define FLAG_SYS_USE_FLASH                          (SYSTEM_FLAGS + 0x28)
 #define FLAG_SYS_USE_STRENGTH                       (SYSTEM_FLAGS + 0x29)

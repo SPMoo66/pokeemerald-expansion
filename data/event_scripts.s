@@ -1071,3 +1071,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/birch_speech.inc"
     .include "data/scripts/dexnav.inc"
     
+
+	.include "data/maps/LeafyClearing/scripts.inc"

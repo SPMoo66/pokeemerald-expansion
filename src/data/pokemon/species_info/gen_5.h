@@ -6319,7 +6319,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Tynamo, 0),
         .footprint = gMonFootprint_Tynamo,
         LEARNSETS(Tynamo),
-        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_EELEKTRIK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_EELEKTRIK}),
     },
 
     [SPECIES_EELEKTRIK] =

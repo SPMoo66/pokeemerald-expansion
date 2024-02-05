@@ -11684,6 +11684,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_GRANITE_CAVE_B3F",
+          "base_label": "gGraniteCave_B3F",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 11,
+                "max_level": 12,
+                "species": "SPECIES_VULPIX_ALOLAN"
+              },
+              {
+                "min_level": 11,
+                "max_level": 12,
+                "species": "SPECIES_SANDSHREW_ALOLAN"
+              },
+              {
+                "min_level": 11,
+                "max_level": 12,
+                "species": "SPECIES_CUBCHOO"
+              },
+              {
+                "min_level": 11,
+                "max_level": 12,
+                "species": "SPECIES_SWINUB"
+              },
+              {
+                "min_level": 11,
+                "max_level": 12,
+                "species": "SPECIES_VANILLITE"
+              },
+              {
+                "min_level": 11,
+                "max_level": 12,
+                "species": "SPECIES_BERGMITE"
+              },
+              {
+                "min_level": 11,
+                "max_level": 12,
+                "species": "SPECIES_MAGNEMITE"
+              },
+              {
+                "min_level": 11,
+                "max_level": 12,
+                "species": "SPECIES_GOLETT"
+              },
+              {
+                "min_level": 11,
+                "max_level": 12,
+                "species": "SPECIES_GOTHITA"
+              },
+              {
+                "min_level": 11,
+                "max_level": 12,
+                "species": "SPECIES_DARUMAKA_GALARIAN"
+              },
+              {
+                "min_level": 11,
+                "max_level": 12,
+                "species": "SPECIES_MIME_JR"
+              },
+              {
+                "min_level": 11,
+                "max_level": 12,
+                "species": "SPECIES_MIME_JR"
+              }
+            ]
+          }
         }
       ]
     },

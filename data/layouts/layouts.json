@@ -2417,7 +2417,7 @@
       "width": 58,
       "height": 26,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "0",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/UnusedOutdoorArea/border.bin",
       "blockdata_filepath": "data/layouts/UnusedOutdoorArea/map.bin"
     },
@@ -4430,6 +4430,16 @@
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/CaveOfDreams/border.bin",
       "blockdata_filepath": "data/layouts/CaveOfDreams/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRANITE_CAVE_B3F",
+      "name": "GraniteCave_B3F_Layout",
+      "width": 28,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GraniteCave_B3F/border.bin",
+      "blockdata_filepath": "data/layouts/GraniteCave_B3F/map.bin"
     }
   ]
 }

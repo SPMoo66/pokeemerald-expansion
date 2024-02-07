@@ -5,7 +5,7 @@ RustboroCity_Gym_EventScript_Roxanne::
 	trainerbattle_single TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxanneIntro, RustboroCity_Gym_Text_RoxanneDefeat, RustboroCity_Gym_EventScript_RoxanneDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, RustboroCity_Gym_EventScript_RoxanneRematch
-	goto_if_unset FLAG_RECEIVED_TM_ROCK_TOMB, RustboroCity_Gym_EventScript_GiveRockTomb
+	goto_if_unset FLAG_RECEIVED_TM_SMACK_DOWN, RustboroCity_Gym_EventScript_GiveSmackDown
 	msgbox RustboroCity_Gym_Text_RoxannePostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -22,14 +22,14 @@ RustboroCity_Gym_EventScript_RoxanneDefeated::
 	setvar VAR_0x8008, 1
 	call Common_EventScript_SetGymTrainers
 	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
-	goto RustboroCity_Gym_EventScript_GiveRockTomb
+	goto RustboroCity_Gym_EventScript_GiveSmackDown
 	end
 
-RustboroCity_Gym_EventScript_GiveRockTomb::
-	giveitem ITEM_TM_ROCK_TOMB
+RustboroCity_Gym_EventScript_GiveSmackDown::
+	giveitem ITEM_TM_SMACK_DOWN
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM_ROCK_TOMB
-	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_TM_SMACK_DOWN
+	msgbox RustboroCity_Gym_Text_ExplainSmackDown, MSGBOX_DEFAULT
 	release
 	end
 
@@ -207,11 +207,11 @@ RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
 	.string "Cut outside of battle.\p"
 	.string "Please take this with you, too.$"
 
-RustboroCity_Gym_Text_ExplainRockTomb:
-	.string "That Technical Machine, TM39,\n"
-	.string "contains Rock Tomb.\p"
-	.string "It not only inflicts damage by dropping\n"
-	.string "rocks, it also lowers Speed.\p"
+RustboroCity_Gym_Text_ExplainSmackDown:
+	.string "That Technical Machine, TM96,\n"
+	.string "contains Smack Down.\p"
+	.string "It not only inflicts damage by throwing\n"
+	.string "rocks, it also grounds flying targets.\p"
 	.string "If you use a TM, it instantly teaches\n"
 	.string "the move to a Pokémon.\p"
 	.string "Remember, a TM can be used only once,\n"

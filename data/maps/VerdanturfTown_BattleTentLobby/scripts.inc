@@ -225,11 +225,11 @@ VerdanturfTown_BattleTentLobby_Movement_PlayerEnterDoor:
 VerdanturfTown_BattleTentLobby_EventScript_AttractGiver::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM_ATTRACT, VerdanturfTown_BattleTentLobby_EventScript_ReceivedAttract
+	goto_if_set FLAG_RECEIVED_RARE_CANDY_ATTRACT, VerdanturfTown_BattleTentLobby_EventScript_ReceivedAttract
 	msgbox VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep, MSGBOX_DEFAULT
-	giveitem ITEM_TM_ATTRACT
+	giveitem ITEM_RARE_CANDY
 	goto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM_ATTRACT
+	setflag FLAG_RECEIVED_RARE_CANDY_ATTRACT
 	msgbox VerdanturfTown_BattleTentLobby_Text_AttractionMutual, MSGBOX_DEFAULT
 	release
 	end

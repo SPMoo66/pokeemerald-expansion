@@ -4,16 +4,16 @@ GraniteCave_1F_MapScripts::
 GraniteCave_1F_EventScript_Hiker::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_HM_FLASH, GraniteCave_1F_EventScript_ReceivedFlash
+	goto_if_set FLAG_RECEIVED_HM_ROCK_CLIMB, GraniteCave_1F_EventScript_ReceivedRockClimb
 	msgbox GraniteCave_1F_Text_GetsDarkAheadHereYouGo, MSGBOX_DEFAULT
-	giveitem ITEM_HM_FLASH
-	setflag FLAG_RECEIVED_HM_FLASH
-	msgbox GraniteCave_1F_Text_ExplainFlash, MSGBOX_DEFAULT
+	giveitem ITEM_HM_ROCK_CLIMB
+	setflag FLAG_RECEIVED_HM_ROCK_CLIMB
+	msgbox GraniteCave_1F_Text_ExplainRockClimb, MSGBOX_DEFAULT
 	release
 	end
 
-GraniteCave_1F_EventScript_ReceivedFlash::
-	msgbox GraniteCave_1F_Text_ExplainFlash, MSGBOX_DEFAULT
+GraniteCave_1F_EventScript_ReceivedRockClimb::
+	msgbox GraniteCave_1F_Text_ExplainRockClimb, MSGBOX_DEFAULT
 	release
 	end
 
@@ -23,14 +23,14 @@ GraniteCave_1F_Text_GetsDarkAheadHereYouGo:
 	.string "It'll be tough trying to explore.\p"
 	.string "That guy who came by earlier…\n"
 	.string "Steven, I think it was.\p"
-	.string "He knew how to use Flash, so he ought\n"
+	.string "He knew how to use RockClimb, so he ought\n"
 	.string "to be all right, but…\p"
 	.string "Well, for us Hikers, helping out those\n"
 	.string "that we meet is our motto.\p"
 	.string "Here you go, I'll pass this on to you.$"
 
-GraniteCave_1F_Text_ExplainFlash:
-	.string "Teach that hidden move Flash to\n"
+GraniteCave_1F_Text_ExplainRockClimb:
+	.string "Teach that hidden move RockClimb to\n"
 	.string "a Pokémon and use it.\p"
 	.string "It lights up even the inky darkness\n"
 	.string "of caves.\p"

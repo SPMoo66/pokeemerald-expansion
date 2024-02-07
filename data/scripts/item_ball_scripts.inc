@@ -107,7 +107,7 @@ Route115_EventScript_ItemSuperPotion::
 	end
 
 Route115_EventScript_ItemTMFocusPunch::
-	finditem ITEM_TM_FOCUS_PUNCH
+	finditem ITEM_RARE_CANDY
 	end
 
 Route115_EventScript_ItemIron::

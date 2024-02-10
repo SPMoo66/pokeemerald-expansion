@@ -364,7 +364,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_ADMIN_M,
+        .trainerPic = TRAINER_PIC_AQUA_ADMIN_MATT,
         .trainerName = _("Matt"),
         .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -388,7 +388,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,
+        .trainerPic = TRAINER_PIC_AQUA_ADMIN_SHELLY,
         .trainerName = _("Shelly"),
         .items = {},
         .doubleBattle = TRUE,
@@ -400,7 +400,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,
+        .trainerPic = TRAINER_PIC_AQUA_ADMIN_SHELLY,
         .trainerName = _("Shelly"),
         .items = {},
         .doubleBattle = TRUE,
@@ -6172,7 +6172,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN_TABITHA,
         .trainerName = _("Tabitha"),
         .items = {},
         .doubleBattle = TRUE,
@@ -7168,7 +7168,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN_TABITHA,
         .trainerName = _("Tabitha"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8788,7 +8788,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN_TABITHA,
         .trainerName = _("Tabitha"),
         .items = {},
         .doubleBattle = TRUE,

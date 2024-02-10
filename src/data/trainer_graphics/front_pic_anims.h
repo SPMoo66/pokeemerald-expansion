@@ -38,15 +38,15 @@ static const union AnimCmd *const sAnims_ExpertM[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_AquaAdminM[] ={
+static const union AnimCmd *const sAnims_AquaAdminMatt[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_AquaAdminShelly[] ={
     sAnim_GeneralFrame0,
 };
 
 static const union AnimCmd *const sAnims_BlackBelt[] ={
-    sAnim_GeneralFrame0,
-};
-
-static const union AnimCmd *const sAnims_AquaAdminF[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -274,7 +274,11 @@ static const union AnimCmd *const sAnims_Sailor[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_MagmaAdmin[] ={
+static const union AnimCmd *const sAnims_MagmaAdminCourtney[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_MagmaAdminTabitha[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -382,9 +386,9 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_SWIMMER_M] = sAnims_SwimmerM,
     [TRAINER_PIC_MAGMA_GRUNT_M] = sAnims_MagmaGruntM,
     [TRAINER_PIC_EXPERT_M] = sAnims_ExpertM,
-    [TRAINER_PIC_AQUA_ADMIN_M] = sAnims_AquaAdminM,
+    [TRAINER_PIC_AQUA_ADMIN_MATT] = sAnims_AquaAdminMatt,
+    [TRAINER_PIC_AQUA_ADMIN_SHELLY] = sAnims_AquaAdminShelly,
     [TRAINER_PIC_BLACK_BELT] = sAnims_BlackBelt,
-    [TRAINER_PIC_AQUA_ADMIN_F] = sAnims_AquaAdminF,
     [TRAINER_PIC_AQUA_LEADER_ARCHIE] = sAnims_AquaLeaderArchie,
     [TRAINER_PIC_HEX_MANIAC] = sAnims_HexManiac,
     [TRAINER_PIC_AROMA_LADY] = sAnims_AromaLady,
@@ -441,7 +445,8 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_SWIMMER_F] = sAnims_SwimmerF,
     [TRAINER_PIC_TWINS] = sAnims_Twins,
     [TRAINER_PIC_SAILOR] = sAnims_Sailor,
-    [TRAINER_PIC_MAGMA_ADMIN] = sAnims_MagmaAdmin,
+    [TRAINER_PIC_MAGMA_ADMIN_COURTNEY] = sAnims_MagmaAdminCourtney,
+    [TRAINER_PIC_MAGMA_ADMIN_TABITHA] = sAnims_MagmaAdminTabitha,
     [TRAINER_PIC_WALLY] = sAnims_Wally,
     [TRAINER_PIC_BRENDAN] = sAnims_Brendan,
     [TRAINER_PIC_MAY] = sAnims_May,

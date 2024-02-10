@@ -905,8 +905,13 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
             }
         }
     }
-
-    if (gSpeciesInfo[species].abilities[1])
+	
+    if (gSpeciesInfo[species].abilities[2] && (Random() % 100) <= 19)
+    {
+        value = 2;
+        SetBoxMonData(boxMon, MON_DATA_ABILITY_NUM, &value);
+    }
+    else if (gSpeciesInfo[species].abilities[1])
     {
         value = personality & 1;
         SetBoxMonData(boxMon, MON_DATA_ABILITY_NUM, &value);

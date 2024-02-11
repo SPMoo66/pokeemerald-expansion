@@ -444,8 +444,8 @@
     {
       "id": "LAYOUT_ROUTE129",
       "name": "Route129_Layout",
-      "width": 80,
-      "height": 40,
+      "width": 65,
+      "height": 35,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/Route129/border.bin",
@@ -4440,6 +4440,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/GraniteCave_B3F/border.bin",
       "blockdata_filepath": "data/layouts/GraniteCave_B3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAVE_OF_DREAMS_CHAMBER",
+      "name": "CaveOfDreamsChamber_Layout",
+      "width": 21,
+      "height": 19,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/CaveOfDreamsChamber/border.bin",
+      "blockdata_filepath": "data/layouts/CaveOfDreamsChamber/map.bin"
     }
   ]
 }

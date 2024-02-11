@@ -47,7 +47,7 @@
       "x": 5,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_CAVE_OF_DREAMS",
+      "dest_map": "MAP_CAVE_OF_DREAMS_CHAMBER",
       "dest_warp_id": "0"
     }
   ],

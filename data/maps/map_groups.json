@@ -432,7 +432,8 @@
     "AlteringCave",
     "MeteorFalls_StevensCave",
     "CaveOfDreams",
-    "GraniteCave_B3F"
+    "GraniteCave_B3F",
+    "CaveOfDreamsChamber"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

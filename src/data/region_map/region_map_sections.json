@@ -721,10 +721,10 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_PEWTER_CITY",
-      "name": "Pewter City",
-      "x": 0,
-      "y": 0,
+      "map_section": "MAPSEC_WOODLAND_CRADLE",
+      "name": "Woodland Cradle",
+      "x": 3,
+      "y": 10,
       "width": 1,
       "height": 1
     },

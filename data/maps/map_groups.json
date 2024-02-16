@@ -433,7 +433,10 @@
     "MeteorFalls_StevensCave",
     "CaveOfDreams",
     "GraniteCave_B3F",
-    "CaveOfDreamsChamber"
+    "CaveOfDreamsChamber",
+    "WoodlandCradleGrass",
+    "WoodlandCradleFire",
+    "WoodlandCradleWater"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

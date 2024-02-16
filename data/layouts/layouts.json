@@ -4450,6 +4450,36 @@
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/CaveOfDreamsChamber/border.bin",
       "blockdata_filepath": "data/layouts/CaveOfDreamsChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_WOODLAND_CRADLE_GRASS",
+      "name": "WoodlandCradleGrass_Layout",
+      "width": 29,
+      "height": 23,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/WoodlandCradleGrass/border.bin",
+      "blockdata_filepath": "data/layouts/WoodlandCradleGrass/map.bin"
+    },
+    {
+      "id": "LAYOUT_WOODLAND_CRADLE_FIRE",
+      "name": "WoodlandCradleFire_Layout",
+      "width": 24,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/WoodlandCradleFire/border.bin",
+      "blockdata_filepath": "data/layouts/WoodlandCradleFire/map.bin"
+    },
+    {
+      "id": "LAYOUT_WOODLAND_CRADLE_WATER",
+      "name": "WoodlandCradleWater_Layout",
+      "width": 22,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/WoodlandCradleWater/border.bin",
+      "blockdata_filepath": "data/layouts/WoodlandCradleWater/map.bin"
     }
   ]
 }

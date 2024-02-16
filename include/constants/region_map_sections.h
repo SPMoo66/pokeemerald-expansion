@@ -91,7 +91,7 @@
 #define MAPSEC_DYNAMIC                      0x57
 #define MAPSEC_LEAFY_CLEARING               0x58
 #define MAPSEC_CAVE_OF_DREAMS               0x59
-#define MAPSEC_PEWTER_CITY                  0x5A
+#define MAPSEC_WOODLAND_CRADLE              0x5A
 #define MAPSEC_CERULEAN_CITY                0x5B
 #define MAPSEC_LAVENDER_TOWN                0x5C
 #define MAPSEC_VERMILION_CITY               0x5D
@@ -220,7 +220,7 @@
 #define METLOC_IN_GAME_TRADE                0xFE
 #define METLOC_FATEFUL_ENCOUNTER            0xFF
 
-#define KANTO_MAPSEC_START  MAPSEC_PEWTER_CITY
+#define KANTO_MAPSEC_START  MAPSEC_CERULEAN_CITY
 #define KANTO_MAPSEC_END    MAPSEC_SPECIAL_AREA
 #define KANTO_MAPSEC_COUNT (KANTO_MAPSEC_END - KANTO_MAPSEC_START + 1)
 

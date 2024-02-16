@@ -404,6 +404,9 @@
 #define MAP_CAVE_OF_DREAMS                           (108 | (24 << 8))
 #define MAP_GRANITE_CAVE_B3F                         (109 | (24 << 8))
 #define MAP_CAVE_OF_DREAMS_CHAMBER                   (110 | (24 << 8))
+#define MAP_WOODLAND_CRADLE_GRASS                    (111 | (24 << 8))
+#define MAP_WOODLAND_CRADLE_FIRE                     (112 | (24 << 8))
+#define MAP_WOODLAND_CRADLE_WATER                    (113 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

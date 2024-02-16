@@ -1079,3 +1079,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/GraniteCave_B3F/scripts.inc"
 
 	.include "data/maps/CaveOfDreamsChamber/scripts.inc"
+
+	.include "data/maps/WoodlandCradleGrass/scripts.inc"
+
+	.include "data/maps/WoodlandCradleFire/scripts.inc"
+
+	.include "data/maps/WoodlandCradleWater/scripts.inc"

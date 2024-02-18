@@ -1,0 +1,43 @@
+mapscripts WoodlandCradleGrass_MapScripts {}
+
+script TrainerTipsMoveInfo {
+	lock
+	msgbox(format("Trainer Tips\pWhen choosing a move to use in battle, press the Start button to view move information."))
+	release
+	end
+}
+
+script TrainerTipsBallCycle {
+	lock
+	msgbox(format("Trainer Tips\pIn battle, hold the R button and press the Left or Right buttons to cycle between available Pokéballs."))
+	release
+	end
+}
+
+script TrainerTipsStatusIVsEVs {
+	lock
+	msgbox(format("Trainer Tips\pWhen viewing stats in the Pokémon status screen, press the A button to cycle between stats, IVs, and EVs."))
+	release
+	end
+}
+
+script TrainerTipsIVsNoEffect {
+	lock
+	msgbox(format("Trainer Tips\pIndividual Values, or IVs, will not influence a Pokémon's stats. They will still change the type of Hidden Power."))
+	release
+	end
+}
+
+script TrainerTipsNatureColors {
+	lock
+	msgbox(format("Trainer Tips\pA Pokémon's nature increases one stat and decreases another.\pThe red stat on the Pokémon status screen is increased and the blue stat is decreased."))
+	release
+	end
+}
+
+script Cheater {
+	lock
+	msgbox(format("How did you get up here?\nAre you cheating?"))
+	release
+	end
+}

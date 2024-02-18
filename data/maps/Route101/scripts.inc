@@ -642,32 +642,38 @@ Route101_PichuGift_1:
 # 336 "data/maps/Route101/scripts.pory"
 	playfanfare MUS_HG_RECEIVE_POKEMON
 # 337 "data/maps/Route101/scripts.pory"
-	waitfanfare
+	msgbox Route101_PichuGift_Text_0
 # 338 "data/maps/Route101/scripts.pory"
-	playse SE_LEDGE
+	waitfanfare
 # 339 "data/maps/Route101/scripts.pory"
-	applymovement 8, PichuDisappear
+	closemessage
 # 340 "data/maps/Route101/scripts.pory"
-	waitmovement 0
+	givemon SPECIES_PICHU_SPIKY_EARED, 5, ITEM_ORAN_BERRY
 # 341 "data/maps/Route101/scripts.pory"
-	removeobject 8
+	playse SE_LEDGE
 # 342 "data/maps/Route101/scripts.pory"
+	applymovement 8, PichuDisappear
+# 343 "data/maps/Route101/scripts.pory"
+	waitmovement 0
+# 344 "data/maps/Route101/scripts.pory"
+	removeobject 8
+# 345 "data/maps/Route101/scripts.pory"
 	compare VAR_TEMP_1, 5
 	goto_if_ne Route101_PichuGift_8
 Route101_PichuGift_7:
-# 353 "data/maps/Route101/scripts.pory"
-	waitmovement 0
-# 354 "data/maps/Route101/scripts.pory"
-	playse SE_LEDGE
-# 355 "data/maps/Route101/scripts.pory"
-	applymovement 7, CynthiaLedgeLeave
 # 356 "data/maps/Route101/scripts.pory"
 	waitmovement 0
 # 357 "data/maps/Route101/scripts.pory"
-	removeobject 7
+	playse SE_LEDGE
+# 358 "data/maps/Route101/scripts.pory"
+	applymovement 7, CynthiaLedgeLeave
 # 359 "data/maps/Route101/scripts.pory"
-	fadedefaultbgm
+	waitmovement 0
 # 360 "data/maps/Route101/scripts.pory"
+	removeobject 7
+# 362 "data/maps/Route101/scripts.pory"
+	fadedefaultbgm
+# 363 "data/maps/Route101/scripts.pory"
 	release
 	return
 
@@ -700,180 +706,184 @@ Route101_PichuGift_6:
 	goto Route101_PichuGift_1
 
 Route101_PichuGift_8:
-# 343 "data/maps/Route101/scripts.pory"
-	switch VAR_TEMP_1
-# 344 "data/maps/Route101/scripts.pory"
-	case 2, Route101_PichuGift_11
 # 346 "data/maps/Route101/scripts.pory"
+	switch VAR_TEMP_1
+# 347 "data/maps/Route101/scripts.pory"
+	case 2, Route101_PichuGift_11
+# 349 "data/maps/Route101/scripts.pory"
 	case 3, Route101_PichuGift_12
-# 348 "data/maps/Route101/scripts.pory"
+# 351 "data/maps/Route101/scripts.pory"
 	case 4, Route101_PichuGift_13
 	goto Route101_PichuGift_7
 
 Route101_PichuGift_11:
-# 345 "data/maps/Route101/scripts.pory"
+# 348 "data/maps/Route101/scripts.pory"
 	applymovement 7, CynthiaDown3
 	goto Route101_PichuGift_7
 
 Route101_PichuGift_12:
-# 347 "data/maps/Route101/scripts.pory"
+# 350 "data/maps/Route101/scripts.pory"
 	applymovement 7, CynthiaDown2
 	goto Route101_PichuGift_7
 
 Route101_PichuGift_13:
-# 349 "data/maps/Route101/scripts.pory"
+# 352 "data/maps/Route101/scripts.pory"
 	applymovement 7, CynthiaDown1
 	goto Route101_PichuGift_7
 
 
-# 363 "data/maps/Route101/scripts.pory"
+# 366 "data/maps/Route101/scripts.pory"
 CynthiaMoveRight:
-# 364 "data/maps/Route101/scripts.pory"
+# 367 "data/maps/Route101/scripts.pory"
 	walk_right
-# 364 "data/maps/Route101/scripts.pory"
+# 367 "data/maps/Route101/scripts.pory"
 	walk_right
-# 364 "data/maps/Route101/scripts.pory"
+# 367 "data/maps/Route101/scripts.pory"
 	walk_right
-# 364 "data/maps/Route101/scripts.pory"
+# 367 "data/maps/Route101/scripts.pory"
 	walk_right
-# 364 "data/maps/Route101/scripts.pory"
-	walk_right
-# 365 "data/maps/Route101/scripts.pory"
-	emote_question_mark
-# 366 "data/maps/Route101/scripts.pory"
-	delay_16
-# 366 "data/maps/Route101/scripts.pory"
-	delay_16
-# 366 "data/maps/Route101/scripts.pory"
-	delay_16
-# 366 "data/maps/Route101/scripts.pory"
-	delay_16
 # 367 "data/maps/Route101/scripts.pory"
 	walk_right
 # 368 "data/maps/Route101/scripts.pory"
-	face_left
-	step_end
-
+	emote_question_mark
+# 369 "data/maps/Route101/scripts.pory"
+	delay_16
+# 369 "data/maps/Route101/scripts.pory"
+	delay_16
+# 369 "data/maps/Route101/scripts.pory"
+	delay_16
+# 369 "data/maps/Route101/scripts.pory"
+	delay_16
+# 370 "data/maps/Route101/scripts.pory"
+	walk_right
 # 371 "data/maps/Route101/scripts.pory"
-PichuMoveRight:
-# 372 "data/maps/Route101/scripts.pory"
-	delay_16
-# 372 "data/maps/Route101/scripts.pory"
-	delay_16
-# 372 "data/maps/Route101/scripts.pory"
-	delay_16
-# 373 "data/maps/Route101/scripts.pory"
-	walk_right
-# 373 "data/maps/Route101/scripts.pory"
-	walk_right
-# 373 "data/maps/Route101/scripts.pory"
-	walk_right
-# 373 "data/maps/Route101/scripts.pory"
-	walk_right
-# 374 "data/maps/Route101/scripts.pory"
-	delay_16
-# 374 "data/maps/Route101/scripts.pory"
-	delay_16
-# 374 "data/maps/Route101/scripts.pory"
-	delay_16
-# 374 "data/maps/Route101/scripts.pory"
-	delay_16
-	step_end
-
-# 377 "data/maps/Route101/scripts.pory"
-CynthiaMoveRight2:
-# 378 "data/maps/Route101/scripts.pory"
-	delay_16
-# 378 "data/maps/Route101/scripts.pory"
-	delay_16
-# 378 "data/maps/Route101/scripts.pory"
-	delay_16
-# 379 "data/maps/Route101/scripts.pory"
-	walk_right
-# 379 "data/maps/Route101/scripts.pory"
-	walk_right
-	step_end
-
-# 382 "data/maps/Route101/scripts.pory"
-PichuMoveRight2:
-# 383 "data/maps/Route101/scripts.pory"
-	jump_in_place_right
-# 384 "data/maps/Route101/scripts.pory"
-	delay_4
-# 385 "data/maps/Route101/scripts.pory"
-	face_up
-# 386 "data/maps/Route101/scripts.pory"
-	delay_4
-# 387 "data/maps/Route101/scripts.pory"
 	face_left
-# 388 "data/maps/Route101/scripts.pory"
-	delay_4
-# 389 "data/maps/Route101/scripts.pory"
-	face_down
-# 390 "data/maps/Route101/scripts.pory"
-	delay_4
-# 391 "data/maps/Route101/scripts.pory"
-	face_right
-# 392 "data/maps/Route101/scripts.pory"
+	step_end
+
+# 374 "data/maps/Route101/scripts.pory"
+PichuMoveRight:
+# 375 "data/maps/Route101/scripts.pory"
 	delay_16
-# 393 "data/maps/Route101/scripts.pory"
+# 375 "data/maps/Route101/scripts.pory"
+	delay_16
+# 375 "data/maps/Route101/scripts.pory"
+	delay_16
+# 376 "data/maps/Route101/scripts.pory"
 	walk_right
-# 393 "data/maps/Route101/scripts.pory"
+# 376 "data/maps/Route101/scripts.pory"
 	walk_right
-# 393 "data/maps/Route101/scripts.pory"
+# 376 "data/maps/Route101/scripts.pory"
 	walk_right
-# 393 "data/maps/Route101/scripts.pory"
+# 376 "data/maps/Route101/scripts.pory"
+	walk_right
+# 377 "data/maps/Route101/scripts.pory"
+	delay_16
+# 377 "data/maps/Route101/scripts.pory"
+	delay_16
+# 377 "data/maps/Route101/scripts.pory"
+	delay_16
+# 377 "data/maps/Route101/scripts.pory"
+	delay_16
+	step_end
+
+# 380 "data/maps/Route101/scripts.pory"
+CynthiaMoveRight2:
+# 381 "data/maps/Route101/scripts.pory"
+	delay_16
+# 381 "data/maps/Route101/scripts.pory"
+	delay_16
+# 381 "data/maps/Route101/scripts.pory"
+	delay_16
+# 382 "data/maps/Route101/scripts.pory"
+	walk_right
+# 382 "data/maps/Route101/scripts.pory"
 	walk_right
 	step_end
 
-# 396 "data/maps/Route101/scripts.pory"
-PichuDisappear:
-# 397 "data/maps/Route101/scripts.pory"
+# 385 "data/maps/Route101/scripts.pory"
+PichuMoveRight2:
+# 386 "data/maps/Route101/scripts.pory"
 	jump_in_place_right
-# 398 "data/maps/Route101/scripts.pory"
+# 387 "data/maps/Route101/scripts.pory"
+	delay_4
+# 388 "data/maps/Route101/scripts.pory"
+	face_up
+# 389 "data/maps/Route101/scripts.pory"
+	delay_4
+# 390 "data/maps/Route101/scripts.pory"
+	face_left
+# 391 "data/maps/Route101/scripts.pory"
+	delay_4
+# 392 "data/maps/Route101/scripts.pory"
+	face_down
+# 393 "data/maps/Route101/scripts.pory"
+	delay_4
+# 394 "data/maps/Route101/scripts.pory"
+	face_right
+# 395 "data/maps/Route101/scripts.pory"
 	delay_16
+# 396 "data/maps/Route101/scripts.pory"
+	walk_right
+# 396 "data/maps/Route101/scripts.pory"
+	walk_right
+# 396 "data/maps/Route101/scripts.pory"
+	walk_right
+# 396 "data/maps/Route101/scripts.pory"
+	walk_right
+	step_end
+
 # 399 "data/maps/Route101/scripts.pory"
-	delay_8
+PichuDisappear:
 # 400 "data/maps/Route101/scripts.pory"
-	set_invisible
-	step_end
-
+	jump_in_place_right
+# 401 "data/maps/Route101/scripts.pory"
+	delay_16
+# 402 "data/maps/Route101/scripts.pory"
+	delay_8
 # 403 "data/maps/Route101/scripts.pory"
-CynthiaDown3:
-# 404 "data/maps/Route101/scripts.pory"
-	walk_down
-# 404 "data/maps/Route101/scripts.pory"
-	walk_down
-# 404 "data/maps/Route101/scripts.pory"
-	walk_down
-	step_end
-
-# 407 "data/maps/Route101/scripts.pory"
-CynthiaDown2:
-# 408 "data/maps/Route101/scripts.pory"
-	walk_down
-# 408 "data/maps/Route101/scripts.pory"
-	walk_down
-	step_end
-
-# 411 "data/maps/Route101/scripts.pory"
-CynthiaDown1:
-# 412 "data/maps/Route101/scripts.pory"
-	walk_down
-	step_end
-
-# 415 "data/maps/Route101/scripts.pory"
-CynthiaLedgeLeave:
-# 416 "data/maps/Route101/scripts.pory"
-	jump_2_down
-# 417 "data/maps/Route101/scripts.pory"
-	walk_down
-# 417 "data/maps/Route101/scripts.pory"
-	walk_down
-# 417 "data/maps/Route101/scripts.pory"
-	walk_down
-# 417 "data/maps/Route101/scripts.pory"
-	walk_down
-# 418 "data/maps/Route101/scripts.pory"
 	set_invisible
 	step_end
+
+# 406 "data/maps/Route101/scripts.pory"
+CynthiaDown3:
+# 407 "data/maps/Route101/scripts.pory"
+	walk_down
+# 407 "data/maps/Route101/scripts.pory"
+	walk_down
+# 407 "data/maps/Route101/scripts.pory"
+	walk_down
+	step_end
+
+# 410 "data/maps/Route101/scripts.pory"
+CynthiaDown2:
+# 411 "data/maps/Route101/scripts.pory"
+	walk_down
+# 411 "data/maps/Route101/scripts.pory"
+	walk_down
+	step_end
+
+# 414 "data/maps/Route101/scripts.pory"
+CynthiaDown1:
+# 415 "data/maps/Route101/scripts.pory"
+	walk_down
+	step_end
+
+# 418 "data/maps/Route101/scripts.pory"
+CynthiaLedgeLeave:
+# 419 "data/maps/Route101/scripts.pory"
+	jump_2_down
+# 420 "data/maps/Route101/scripts.pory"
+	walk_down
+# 420 "data/maps/Route101/scripts.pory"
+	walk_down
+# 420 "data/maps/Route101/scripts.pory"
+	walk_down
+# 420 "data/maps/Route101/scripts.pory"
+	walk_down
+# 421 "data/maps/Route101/scripts.pory"
+	set_invisible
+	step_end
+
+Route101_PichuGift_Text_0:
+# 337 "data/maps/Route101/scripts.pory"
+	.string "Pichu joined {PLAYER}!$"

@@ -334,7 +334,10 @@ script Route101_PichuGift {
 	applymovement (PICHU, PichuMoveRight2)
 	waitmovement (0)
 	playfanfare (MUS_HG_RECEIVE_POKEMON)
+	msgbox("Pichu joined {PLAYER}!")
 	waitfanfare
+	closemessage
+	givemon(SPECIES_PICHU_SPIKY_EARED, 5, ITEM_ORAN_BERRY)
 	playse (SE_LEDGE)
 	applymovement (PICHU, PichuDisappear)
 	waitmovement (0)

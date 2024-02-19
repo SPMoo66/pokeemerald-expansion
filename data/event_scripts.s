@@ -575,6 +575,13 @@ gStdScripts_End::
 	.include "data/maps/Route119_WeatherInstitute_2F/scripts.inc"
 	.include "data/maps/Route119_House/scripts.inc"
 	.include "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc"
+	.include "data/maps/LeafyClearing/scripts.inc"
+	.include "data/maps/CaveOfDreams/scripts.inc"
+	.include "data/maps/GraniteCave_B3F/scripts.inc"
+	.include "data/maps/CaveOfDreamsChamber/scripts.inc"
+	.include "data/maps/WoodlandCradleGrass/scripts.inc"
+	.include "data/maps/WoodlandCradleFire/scripts.inc"
+	.include "data/maps/WoodlandCradleWater/scripts.inc"
 
 	.include "data/scripts/std_msgbox.inc"
 	.include "data/scripts/trainer_battle.inc"
@@ -1070,18 +1077,14 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
     .include "data/scripts/dexnav.inc"
-    
 
-	.include "data/maps/LeafyClearing/scripts.inc"
+Common_EventScript_GymNurse::
+	lock
+	faceplayer
+	msgbox gText_GymNurseHeal, MSGBOX_DEFAULT
+	closemessage
+	call Common_EventScript_OutOfCenterPartyHeal
+	release
 
-	.include "data/maps/CaveOfDreams/scripts.inc"
-
-	.include "data/maps/GraniteCave_B3F/scripts.inc"
-
-	.include "data/maps/CaveOfDreamsChamber/scripts.inc"
-
-	.include "data/maps/WoodlandCradleGrass/scripts.inc"
-
-	.include "data/maps/WoodlandCradleFire/scripts.inc"
-
-	.include "data/maps/WoodlandCradleWater/scripts.inc"
+gText_GymNurseHeal::
+	.string "Allow me to heal your Pokémon.$"

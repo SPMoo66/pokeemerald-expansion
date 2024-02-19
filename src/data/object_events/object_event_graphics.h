@@ -565,3 +565,5 @@ const u32 gObjectEventPic_RagingBolt[] = INCBIN_U32("graphics/object_events/pics
 const u16 gObjectEventPal_RagingBolt[] = INCBIN_U16("graphics/object_events/palettes/ragingbolt.gbapal");
 const u32 gObjectEventPic_WalkingWake[] = INCBIN_U32("graphics/object_events/pics/pokemon/walkingwake.4bpp");
 const u16 gObjectEventPal_WalkingWake[] = INCBIN_U16("graphics/object_events/palettes/walkingwake.gbapal");
+const u32 gObjectEventPic_PichuSpikyEared[] = INCBIN_U32("graphics/object_events/pics/pokemon/pichuspikyeared.4bpp");
+const u16 gObjectEventPal_PichuSpikyEared[] = INCBIN_U16("graphics/object_events/palettes/pichuspikyeared.gbapal");

@@ -331,6 +331,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_IronCrown;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_IronLeaves;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RagingBolt;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WalkingWake;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PichuSpikyEared;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -656,6 +657,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_IRONLEAVES] =               &gObjectEventGraphicsInfo_IronLeaves,
     [OBJ_EVENT_GFX_RAGINGBOLT] =               &gObjectEventGraphicsInfo_RagingBolt,
     [OBJ_EVENT_GFX_WALKINGWAKE] =              &gObjectEventGraphicsInfo_WalkingWake,
+    [OBJ_EVENT_GFX_PICHUSPIKYEARED] =          &gObjectEventGraphicsInfo_PichuSpikyEared,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

@@ -528,6 +528,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_AQUA_MEMBER_F           0x1180
 #define OBJ_EVENT_PAL_TAG_MAGMA_MEMBER_M          0x1181
 #define OBJ_EVENT_PAL_TAG_MAGMA_MEMBER_F          0x1182
+#define OBJ_EVENT_PAL_TAG_PICHUSPIKYEARED         0x1183
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #include "data/field_effects/field_effect_object_template_pointers.h"
@@ -669,6 +670,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_AquaMemberF,           OBJ_EVENT_PAL_TAG_AQUA_MEMBER_F},
     {gObjectEventPal_MagmaMemberM,          OBJ_EVENT_PAL_TAG_MAGMA_MEMBER_M},
     {gObjectEventPal_MagmaMemberF,          OBJ_EVENT_PAL_TAG_MAGMA_MEMBER_F},
+    {gObjectEventPal_PichuSpikyEared,       OBJ_EVENT_PAL_TAG_PICHUSPIKYEARED},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else

@@ -623,8 +623,6 @@ $(OBJEVENTGFXDIR)/pokemon/zeraora.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 $(OBJEVENTGFXDIR)/pokemon/zygarde.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
-$(OBJEVENTGFXDIR)/pokemon/spikypichu.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
 $(OBJEVENTGFXDIR)/pokemon/chienpao.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 $(OBJEVENTGFXDIR)/pokemon/chiyu.4bpp: %.4bpp: %.png
@@ -645,6 +643,9 @@ $(OBJEVENTGFXDIR)/pokemon/ragingbolt.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 6
 $(OBJEVENTGFXDIR)/pokemon/walkingwake.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/pichuspikyeared.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 
 $(OBJEVENTGFXDIR)/berry_trees/aguav.4bpp: %.4bpp: %.png

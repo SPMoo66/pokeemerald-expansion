@@ -294,3 +294,447 @@ BadgedPokemart7:
 # 144 "data/global.pory"
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_NONE
+
+Mart_EventScript_TMClerk::
+# 148 "data/global.pory"
+	lock
+# 149 "data/global.pory"
+	faceplayer
+# 150 "data/global.pory"
+	goto_if_unset FLAG_BADGE01_GET, Mart_EventScript_TMClerk_2
+# 156 "data/global.pory"
+	msgbox gText_HowMayIServeYou
+# 157 "data/global.pory"
+	waitmessage
+# 158 "data/global.pory"
+	dynmultipush Mart_EventScript_TMClerk_Text_1, 0
+# 159 "data/global.pory"
+	goto_if_set FLAG_BADGE02_GET, Mart_EventScript_TMClerk_6
+Mart_EventScript_TMClerk_5:
+# 162 "data/global.pory"
+	goto_if_set FLAG_BADGE03_GET, Mart_EventScript_TMClerk_9
+Mart_EventScript_TMClerk_8:
+# 165 "data/global.pory"
+	goto_if_set FLAG_BADGE04_GET, Mart_EventScript_TMClerk_12
+Mart_EventScript_TMClerk_11:
+# 168 "data/global.pory"
+	goto_if_set FLAG_BADGE05_GET, Mart_EventScript_TMClerk_15
+Mart_EventScript_TMClerk_14:
+# 171 "data/global.pory"
+	goto_if_set FLAG_BADGE06_GET, Mart_EventScript_TMClerk_18
+Mart_EventScript_TMClerk_17:
+# 174 "data/global.pory"
+	goto_if_set FLAG_BADGE07_GET, Mart_EventScript_TMClerk_21
+Mart_EventScript_TMClerk_20:
+# 177 "data/global.pory"
+	goto_if_set FLAG_BADGE08_GET, Mart_EventScript_TMClerk_24
+Mart_EventScript_TMClerk_23:
+# 180 "data/global.pory"
+	dynmultistack 0, 0, FALSE, 6, FALSE, VAR_0x800A, DYN_MULTICHOICE_CB_NONE
+# 181 "data/global.pory"
+	switch VAR_RESULT
+# 182 "data/global.pory"
+	case 0, Mart_EventScript_TMClerk_28
+# 184 "data/global.pory"
+	case 1, Mart_EventScript_TMClerk_29
+# 186 "data/global.pory"
+	case 2, Mart_EventScript_TMClerk_30
+# 188 "data/global.pory"
+	case 3, Mart_EventScript_TMClerk_31
+# 190 "data/global.pory"
+	case 4, Mart_EventScript_TMClerk_32
+# 192 "data/global.pory"
+	case 5, Mart_EventScript_TMClerk_33
+# 194 "data/global.pory"
+	case 6, Mart_EventScript_TMClerk_34
+# 196 "data/global.pory"
+	case 7, Mart_EventScript_TMClerk_35
+Mart_EventScript_TMClerk_26:
+# 201 "data/global.pory"
+	msgbox gText_PleaseComeAgain
+Mart_EventScript_TMClerk_1:
+# 203 "data/global.pory"
+	release
+	end
+
+Mart_EventScript_TMClerk_2:
+# 152 "data/global.pory"
+	msgbox Mart_EventScript_TMClerk_Text_0
+	goto Mart_EventScript_TMClerk_1
+
+Mart_EventScript_TMClerk_6:
+# 160 "data/global.pory"
+	dynmultipush Mart_EventScript_TMClerk_Text_2, 1
+	goto Mart_EventScript_TMClerk_5
+
+Mart_EventScript_TMClerk_9:
+# 163 "data/global.pory"
+	dynmultipush Mart_EventScript_TMClerk_Text_3, 2
+	goto Mart_EventScript_TMClerk_8
+
+Mart_EventScript_TMClerk_12:
+# 166 "data/global.pory"
+	dynmultipush Mart_EventScript_TMClerk_Text_4, 3
+	goto Mart_EventScript_TMClerk_11
+
+Mart_EventScript_TMClerk_15:
+# 169 "data/global.pory"
+	dynmultipush Mart_EventScript_TMClerk_Text_5, 4
+	goto Mart_EventScript_TMClerk_14
+
+Mart_EventScript_TMClerk_18:
+# 172 "data/global.pory"
+	dynmultipush Mart_EventScript_TMClerk_Text_6, 5
+	goto Mart_EventScript_TMClerk_17
+
+Mart_EventScript_TMClerk_21:
+# 175 "data/global.pory"
+	dynmultipush Mart_EventScript_TMClerk_Text_7, 6
+	goto Mart_EventScript_TMClerk_20
+
+Mart_EventScript_TMClerk_24:
+# 178 "data/global.pory"
+	dynmultipush Mart_EventScript_TMClerk_Text_8, 7
+	goto Mart_EventScript_TMClerk_23
+
+Mart_EventScript_TMClerk_28:
+# 183 "data/global.pory"
+	pokemart TMMart1
+	goto Mart_EventScript_TMClerk_26
+
+Mart_EventScript_TMClerk_29:
+# 185 "data/global.pory"
+	pokemart TMMart2
+	goto Mart_EventScript_TMClerk_26
+
+Mart_EventScript_TMClerk_30:
+# 187 "data/global.pory"
+	pokemart TMMart3
+	goto Mart_EventScript_TMClerk_26
+
+Mart_EventScript_TMClerk_31:
+# 189 "data/global.pory"
+	pokemart TMMart4
+	goto Mart_EventScript_TMClerk_26
+
+Mart_EventScript_TMClerk_32:
+# 191 "data/global.pory"
+	pokemart TMMart5
+	goto Mart_EventScript_TMClerk_26
+
+Mart_EventScript_TMClerk_33:
+# 193 "data/global.pory"
+	pokemart TMMart6
+	goto Mart_EventScript_TMClerk_26
+
+Mart_EventScript_TMClerk_34:
+# 195 "data/global.pory"
+	pokemart TMMart7
+	goto Mart_EventScript_TMClerk_26
+
+Mart_EventScript_TMClerk_35:
+# 197 "data/global.pory"
+	pokemart TMMart8
+	goto Mart_EventScript_TMClerk_26
+
+
+	.align 2
+# 207 "data/global.pory"
+TMMart1:
+# 208 "data/global.pory"
+	.2byte ITEM_TM33
+# 209 "data/global.pory"
+	.2byte ITEM_TM47
+# 210 "data/global.pory"
+	.2byte ITEM_TM93
+	.2byte ITEM_NONE
+
+	.align 2
+# 213 "data/global.pory"
+TMMart2:
+# 214 "data/global.pory"
+	.2byte ITEM_TM21
+# 215 "data/global.pory"
+	.2byte ITEM_TM26
+# 216 "data/global.pory"
+	.2byte ITEM_TM29
+# 217 "data/global.pory"
+	.2byte ITEM_TM31
+# 218 "data/global.pory"
+	.2byte ITEM_TM37
+# 219 "data/global.pory"
+	.2byte ITEM_TM81
+# 220 "data/global.pory"
+	.2byte ITEM_TM109
+# 221 "data/global.pory"
+	.2byte ITEM_TM110
+# 222 "data/global.pory"
+	.2byte ITEM_TM119
+	.2byte ITEM_NONE
+
+	.align 2
+# 225 "data/global.pory"
+TMMart3:
+# 226 "data/global.pory"
+	.2byte ITEM_TM01
+# 227 "data/global.pory"
+	.2byte ITEM_TM02
+# 228 "data/global.pory"
+	.2byte ITEM_TM03
+# 229 "data/global.pory"
+	.2byte ITEM_TM04
+# 230 "data/global.pory"
+	.2byte ITEM_TM19
+# 231 "data/global.pory"
+	.2byte ITEM_TM20
+# 232 "data/global.pory"
+	.2byte ITEM_TM30
+# 233 "data/global.pory"
+	.2byte ITEM_TM39
+# 234 "data/global.pory"
+	.2byte ITEM_TM44
+# 235 "data/global.pory"
+	.2byte ITEM_TM48
+# 236 "data/global.pory"
+	.2byte ITEM_TM64
+# 237 "data/global.pory"
+	.2byte ITEM_TM68
+# 238 "data/global.pory"
+	.2byte ITEM_TM76
+# 239 "data/global.pory"
+	.2byte ITEM_TM94
+# 240 "data/global.pory"
+	.2byte ITEM_TM103
+# 241 "data/global.pory"
+	.2byte ITEM_TM115
+	.2byte ITEM_NONE
+
+	.align 2
+# 244 "data/global.pory"
+TMMart4:
+# 245 "data/global.pory"
+	.2byte ITEM_TM10
+# 246 "data/global.pory"
+	.2byte ITEM_TM15
+# 247 "data/global.pory"
+	.2byte ITEM_TM16
+# 248 "data/global.pory"
+	.2byte ITEM_TM16
+# 249 "data/global.pory"
+	.2byte ITEM_TM17
+# 250 "data/global.pory"
+	.2byte ITEM_TM18
+# 251 "data/global.pory"
+	.2byte ITEM_TM25
+# 252 "data/global.pory"
+	.2byte ITEM_TM32
+# 253 "data/global.pory"
+	.2byte ITEM_TM65
+# 254 "data/global.pory"
+	.2byte ITEM_TM73
+# 255 "data/global.pory"
+	.2byte ITEM_TM75
+# 256 "data/global.pory"
+	.2byte ITEM_TM82
+# 257 "data/global.pory"
+	.2byte ITEM_TM87
+# 258 "data/global.pory"
+	.2byte ITEM_TM101
+# 259 "data/global.pory"
+	.2byte ITEM_TM104
+# 260 "data/global.pory"
+	.2byte ITEM_TM108
+# 261 "data/global.pory"
+	.2byte ITEM_TM114
+# 262 "data/global.pory"
+	.2byte ITEM_TM116
+	.2byte ITEM_NONE
+
+	.align 2
+# 265 "data/global.pory"
+TMMart5:
+# 266 "data/global.pory"
+	.2byte ITEM_TM05
+# 267 "data/global.pory"
+	.2byte ITEM_TM06
+# 268 "data/global.pory"
+	.2byte ITEM_TM07
+# 269 "data/global.pory"
+	.2byte ITEM_TM08
+# 270 "data/global.pory"
+	.2byte ITEM_TM11
+# 271 "data/global.pory"
+	.2byte ITEM_TM12
+# 272 "data/global.pory"
+	.2byte ITEM_TM13
+# 273 "data/global.pory"
+	.2byte ITEM_TM24
+# 274 "data/global.pory"
+	.2byte ITEM_TM28
+# 275 "data/global.pory"
+	.2byte ITEM_TM45
+# 276 "data/global.pory"
+	.2byte ITEM_TM50
+# 277 "data/global.pory"
+	.2byte ITEM_TM54
+# 278 "data/global.pory"
+	.2byte ITEM_TM60
+# 279 "data/global.pory"
+	.2byte ITEM_TM61
+# 280 "data/global.pory"
+	.2byte ITEM_TM66
+# 281 "data/global.pory"
+	.2byte ITEM_TM71
+# 282 "data/global.pory"
+	.2byte ITEM_TM78
+# 283 "data/global.pory"
+	.2byte ITEM_TM83
+# 284 "data/global.pory"
+	.2byte ITEM_TM85
+# 285 "data/global.pory"
+	.2byte ITEM_TM86
+# 286 "data/global.pory"
+	.2byte ITEM_TM88
+# 287 "data/global.pory"
+	.2byte ITEM_TM99
+# 288 "data/global.pory"
+	.2byte ITEM_TM111
+# 289 "data/global.pory"
+	.2byte ITEM_TM112
+	.2byte ITEM_NONE
+
+	.align 2
+# 292 "data/global.pory"
+TMMart6:
+# 293 "data/global.pory"
+	.2byte ITEM_TM09
+# 294 "data/global.pory"
+	.2byte ITEM_TM22
+# 295 "data/global.pory"
+	.2byte ITEM_TM23
+# 296 "data/global.pory"
+	.2byte ITEM_TM41
+# 297 "data/global.pory"
+	.2byte ITEM_TM49
+# 298 "data/global.pory"
+	.2byte ITEM_TM51
+# 299 "data/global.pory"
+	.2byte ITEM_TM52
+# 300 "data/global.pory"
+	.2byte ITEM_TM56
+# 301 "data/global.pory"
+	.2byte ITEM_TM57
+# 302 "data/global.pory"
+	.2byte ITEM_TM59
+# 303 "data/global.pory"
+	.2byte ITEM_TM62
+# 304 "data/global.pory"
+	.2byte ITEM_TM67
+# 305 "data/global.pory"
+	.2byte ITEM_TM69
+# 306 "data/global.pory"
+	.2byte ITEM_TM74
+# 307 "data/global.pory"
+	.2byte ITEM_TM79
+# 308 "data/global.pory"
+	.2byte ITEM_TM89
+# 309 "data/global.pory"
+	.2byte ITEM_TM90
+# 310 "data/global.pory"
+	.2byte ITEM_TM91
+# 311 "data/global.pory"
+	.2byte ITEM_TM92
+# 312 "data/global.pory"
+	.2byte ITEM_TM97
+# 313 "data/global.pory"
+	.2byte ITEM_TM98
+# 314 "data/global.pory"
+	.2byte ITEM_TM100
+# 315 "data/global.pory"
+	.2byte ITEM_TM102
+# 316 "data/global.pory"
+	.2byte ITEM_TM105
+# 317 "data/global.pory"
+	.2byte ITEM_TM106
+# 318 "data/global.pory"
+	.2byte ITEM_TM113
+# 319 "data/global.pory"
+	.2byte ITEM_TM117
+# 320 "data/global.pory"
+	.2byte ITEM_TM118
+# 321 "data/global.pory"
+	.2byte ITEM_TM120
+	.2byte ITEM_NONE
+
+	.align 2
+# 324 "data/global.pory"
+TMMart7:
+# 325 "data/global.pory"
+	.2byte ITEM_TM36
+# 326 "data/global.pory"
+	.2byte ITEM_TM38
+# 327 "data/global.pory"
+	.2byte ITEM_TM42
+# 328 "data/global.pory"
+	.2byte ITEM_TM53
+# 329 "data/global.pory"
+	.2byte ITEM_TM58
+# 330 "data/global.pory"
+	.2byte ITEM_TM63
+# 331 "data/global.pory"
+	.2byte ITEM_TM70
+# 332 "data/global.pory"
+	.2byte ITEM_TM72
+# 333 "data/global.pory"
+	.2byte ITEM_TM77
+# 334 "data/global.pory"
+	.2byte ITEM_TM84
+# 335 "data/global.pory"
+	.2byte ITEM_TM95
+	.2byte ITEM_NONE
+
+	.align 2
+# 338 "data/global.pory"
+TMMart8:
+# 339 "data/global.pory"
+	.2byte ITEM_TM43
+# 340 "data/global.pory"
+	.2byte ITEM_TM107
+	.2byte ITEM_NONE
+
+Mart_EventScript_TMClerk_Text_0:
+# 152 "data/global.pory"
+	.string "Sorry, I can only sell to trainers who\n"
+	.string "have earned at least one Gym Badge.$"
+
+Mart_EventScript_TMClerk_Text_1:
+# 158 "data/global.pory"
+	.string "Badge 1 TMs$"
+
+Mart_EventScript_TMClerk_Text_2:
+# 160 "data/global.pory"
+	.string "Badge 2 TMs$"
+
+Mart_EventScript_TMClerk_Text_3:
+# 163 "data/global.pory"
+	.string "Badge 3 TMs$"
+
+Mart_EventScript_TMClerk_Text_4:
+# 166 "data/global.pory"
+	.string "Badge 4 TMs$"
+
+Mart_EventScript_TMClerk_Text_5:
+# 169 "data/global.pory"
+	.string "Badge 5 TMs$"
+
+Mart_EventScript_TMClerk_Text_6:
+# 172 "data/global.pory"
+	.string "Badge 6 TMs$"
+
+Mart_EventScript_TMClerk_Text_7:
+# 175 "data/global.pory"
+	.string "Badge 7 TMs$"
+
+Mart_EventScript_TMClerk_Text_8:
+# 178 "data/global.pory"
+	.string "Badge 8 TMs$"

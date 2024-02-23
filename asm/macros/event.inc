@@ -1736,7 +1736,7 @@
 	.endm
 
 	.macro _dynmultichoice left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req argv:vararg
-	.byte 0xe3
+	.byte 0xe4
 	.2byte \left
 	.2byte \top
 	.byte \ignoreBPress
@@ -1758,7 +1758,7 @@
 	.endm
 
 	.macro dynmultipush name:req, id:req
-	.byte 0xe4
+	.byte 0xe5
 	.4byte \name
 	.2byte \id
 	.endm
@@ -1768,7 +1768,7 @@
 	.endm
     
     .macro givecustommon species:req, level:req, item, ball, nature, abilityNum, hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv, hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv, move1, move2, move3, move4, isShiny
-    .byte 0xe3
+    .byte 0xe6
     .2byte \species
     .byte \level
     .ifb \item

@@ -542,9 +542,10 @@ gSpecials::
 	def_special TrySkyBattle
 	def_special VsSeekerResetObjectMovementAfterChargeComplete
 	def_special VsSeekerFreezeObjectsAfterChargeComplete
-    //Start Pokevial Branch
-    def_special PokevialGetDose
-    def_special PokevialGetSize
-    def_special PokevialRefill
-    //End Pokevial Branch
-    def_special BufferUnitSystemText
+	//Start Pokevial Branch
+	def_special PokevialGetDose
+	def_special PokevialGetSize
+	def_special PokevialRefill
+	//End Pokevial Branch
+	def_special BufferUnitSystemText
+	def_special GetNumberOfBadges

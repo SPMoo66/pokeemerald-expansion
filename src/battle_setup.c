@@ -2013,3 +2013,17 @@ u16 CountBattledRematchTeams(u16 trainerId)
 
     return i;
 }
+
+bool8 GetNumberOfBadges(void)
+{
+    u8 count = 0;
+	u32 i = 0;
+
+    for (i = FLAG_BADGE01_GET; i < FLAG_BADGE01_GET + NUM_BADGES; i++)
+    {
+        if (FlagGet(i))
+            count++;
+    }
+	gSpecialVar_Result = count;
+	return count;
+}

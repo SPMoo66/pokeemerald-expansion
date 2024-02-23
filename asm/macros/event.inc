@@ -2243,3 +2243,7 @@
 	setvar VAR_0x8001, \stringvarnumber
 	special BufferUnitSystemText
 	.endm
+
+	.macro getnumbadges
+	specialvar VAR_RESULT,GetNumberOfBadges
+	.endm

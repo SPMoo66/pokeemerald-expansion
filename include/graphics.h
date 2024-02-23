@@ -166,6 +166,7 @@ extern const u32 gTrainerFrontPic_Harper[];
 extern const u32 gTrainerFrontPic_Jakson[];
 extern const u32 gTrainerFrontPic_Redd[];
 extern const u32 gTrainerFrontPic_Sakura[];
+extern const u32 gTrainerFrontPic_WallyConfident[];
 
 extern const u32 gTrainerPalette_Hiker[];
 extern const u32 gTrainerPalette_AquaGruntM[];

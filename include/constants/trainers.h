@@ -116,6 +116,7 @@
 #define TRAINER_PIC_JAKSON                96
 #define TRAINER_PIC_REDD                  97
 #define TRAINER_PIC_SAKURA                98
+#define TRAINER_PIC_WALLY_CONFIDENT       99
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

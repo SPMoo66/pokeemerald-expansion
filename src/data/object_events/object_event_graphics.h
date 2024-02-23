@@ -567,3 +567,15 @@ const u32 gObjectEventPic_WalkingWake[] = INCBIN_U32("graphics/object_events/pic
 const u16 gObjectEventPal_WalkingWake[] = INCBIN_U16("graphics/object_events/palettes/walkingwake.gbapal");
 const u32 gObjectEventPic_PichuSpikyEared[] = INCBIN_U32("graphics/object_events/pics/pokemon/pichuspikyeared.4bpp");
 const u16 gObjectEventPal_PichuSpikyEared[] = INCBIN_U16("graphics/object_events/palettes/pichuspikyeared.gbapal");
+
+const u32 gObjectEventPic_Baron[] = INCBIN_U32("graphics/object_events/pics/people/baron.4bpp");
+const u16 gObjectEventPal_Baron[] = INCBIN_U16("graphics/object_events/palettes/baron.gbapal");
+const u32 gObjectEventPic_Harper[] = INCBIN_U32("graphics/object_events/pics/people/harper.4bpp");
+const u16 gObjectEventPal_Harper[] = INCBIN_U16("graphics/object_events/palettes/harper.gbapal");
+const u32 gObjectEventPic_Jakson[] = INCBIN_U32("graphics/object_events/pics/people/jakson.4bpp");
+const u16 gObjectEventPal_Jakson[] = INCBIN_U16("graphics/object_events/palettes/jakson.gbapal");
+const u32 gObjectEventPic_Redd[] = INCBIN_U32("graphics/object_events/pics/people/redd.4bpp");
+const u16 gObjectEventPal_Redd[] = INCBIN_U16("graphics/object_events/palettes/redd.gbapal");
+const u32 gObjectEventPic_Sakura[] = INCBIN_U32("graphics/object_events/pics/people/sakura.4bpp");
+const u16 gObjectEventPal_Sakura[] = INCBIN_U16("graphics/object_events/palettes/sakura.gbapal");
+

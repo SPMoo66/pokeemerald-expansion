@@ -332,6 +332,11 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_IronLeaves;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RagingBolt;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WalkingWake;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PichuSpikyEared;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Baron;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Harper;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Jakson;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Redd;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sakura;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -658,6 +663,11 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_RAGINGBOLT] =               &gObjectEventGraphicsInfo_RagingBolt,
     [OBJ_EVENT_GFX_WALKINGWAKE] =              &gObjectEventGraphicsInfo_WalkingWake,
     [OBJ_EVENT_GFX_PICHUSPIKYEARED] =          &gObjectEventGraphicsInfo_PichuSpikyEared,
+    [OBJ_EVENT_GFX_BARON] =                    &gObjectEventGraphicsInfo_Baron,
+    [OBJ_EVENT_GFX_HARPER] =                   &gObjectEventGraphicsInfo_Harper,
+    [OBJ_EVENT_GFX_JAKSON] =                   &gObjectEventGraphicsInfo_Jakson,
+    [OBJ_EVENT_GFX_REDD] =                     &gObjectEventGraphicsInfo_Redd,
+    [OBJ_EVENT_GFX_SAKURA] =                   &gObjectEventGraphicsInfo_Sakura,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

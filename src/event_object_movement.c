@@ -531,6 +531,11 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_MAGMA_MEMBER_M          0x1181
 #define OBJ_EVENT_PAL_TAG_MAGMA_MEMBER_F          0x1182
 #define OBJ_EVENT_PAL_TAG_PICHUSPIKYEARED         0x1183
+#define OBJ_EVENT_PAL_TAG_BARON                   0x1184
+#define OBJ_EVENT_PAL_TAG_HARPER                  0x1185
+#define OBJ_EVENT_PAL_TAG_JAKSON                  0x1186
+#define OBJ_EVENT_PAL_TAG_REDD                    0x1187
+#define OBJ_EVENT_PAL_TAG_SAKURA                  0x1188
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #include "data/field_effects/field_effect_object_template_pointers.h"

@@ -1,0 +1,12 @@
+mapscripts CaveOfDreamsChamber_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+//		if(flag(FLAG_DARKRAI)) {
+//			removeobject(1)
+//			}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(1)
+		}
+	}
+}

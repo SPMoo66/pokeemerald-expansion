@@ -84,7 +84,7 @@
     {
       "id": "LAYOUT_EVER_GRANDE_CITY",
       "name": "EverGrandeCity_Layout",
-      "width": 40,
+      "width": 37,
       "height": 80,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_EverGrande",
@@ -155,7 +155,7 @@
       "id": "LAYOUT_PACIFIDLOG_TOWN",
       "name": "PacifidlogTown_Layout",
       "width": 20,
-      "height": 40,
+      "height": 39,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/PacifidlogTown/border.bin",
@@ -404,7 +404,7 @@
     {
       "id": "LAYOUT_ROUTE125",
       "name": "Route125_Layout",
-      "width": 80,
+      "width": 69,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mossdeep",
@@ -444,7 +444,7 @@
     {
       "id": "LAYOUT_ROUTE129",
       "name": "Route129_Layout",
-      "width": 65,
+      "width": 63,
       "height": 35,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mossdeep",

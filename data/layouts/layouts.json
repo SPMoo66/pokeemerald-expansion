@@ -4480,6 +4480,16 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/WoodlandCradleWater/border.bin",
       "blockdata_filepath": "data/layouts/WoodlandCradleWater/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCORCHED_SLAB_B1F",
+      "name": "ScorchedSlabB1F_Layout",
+      "width": 20,
+      "height": 37,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ScorchedSlabB1F/border.bin",
+      "blockdata_filepath": "data/layouts/ScorchedSlabB1F/map.bin"
     }
   ]
 }

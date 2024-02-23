@@ -12114,6 +12114,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_SCORCHED_SLAB_B1F",
+          "base_label": "gScorchedSlabB1F",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_MINIOR_CORE_RED"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_MINIOR_CORE_ORANGE"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_MINIOR_CORE_YELLOW"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_MINIOR_CORE_GREEN"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_MINIOR_CORE_BLUE"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_MINIOR_CORE_INDIGO"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_MINIOR_CORE_VIOLET"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_TORKOAL"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_KLAWF"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_KLAWF"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_HEATMOR"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_HEATMOR"
+              }
+            ]
+          }
         }
       ]
     },

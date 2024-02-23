@@ -1089,3 +1089,5 @@ Common_EventScript_GymNurse::
 
 gText_GymNurseHeal::
 	.string "Allow me to heal your Pokémon.$"
+
+	.include "data/maps/ScorchedSlabB1F/scripts.inc"

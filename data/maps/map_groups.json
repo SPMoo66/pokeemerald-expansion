@@ -436,7 +436,8 @@
     "CaveOfDreamsChamber",
     "WoodlandCradleGrass",
     "WoodlandCradleFire",
-    "WoodlandCradleWater"
+    "WoodlandCradleWater",
+    "ScorchedSlabB1F"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

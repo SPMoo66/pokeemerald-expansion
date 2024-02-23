@@ -894,6 +894,9 @@ u8 GetTrainerBattleTransition(void)
         return B_TRANSITION_CHAMPION;
     }
 
+    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_RIVAL)
+        return B_TRANSITION_SHRED_SPLIT;
+
     if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_CHAMPION)
         return B_TRANSITION_CHAMPION;
 

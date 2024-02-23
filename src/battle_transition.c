@@ -2864,7 +2864,7 @@ static bool8 ShredSplit_Init(struct Task *task)
 
     task->tDelayTimer = 0;
     task->tExtent = 0;
-    task->tDelay = 7;
+    task->tDelay = 3;
 
     EnableInterrupts(INTR_FLAG_HBLANK);
 

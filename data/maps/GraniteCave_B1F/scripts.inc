@@ -9,3 +9,17 @@ GraniteCave_B1F_SetHoleWarp:
 	setholewarp MAP_GRANITE_CAVE_B2F
 	end
 
+GraniteCave_B1F_EventScript_Evelyn::
+	trainerbattle_single TRAINER_EVELYN, GraniteCave_B1F_Text_EvelynIntro, GraniteCave_B1F_Text_EvelynDefeated
+	msgbox GraniteCave_B1F_Text_EvelynPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+GraniteCave_B1F_Text_EvelynIntro:
+	.string "Now that this cave isn't so dark\n"
+	.string "it's great for training!$"
+
+GraniteCave_B1F_Text_EvelynDefeated:
+	.string "Thrown back into darkness!$"
+
+GraniteCave_B1F_Text_EvelynPostBattle:
+	.string "A lit cave alone won't make me stronger!$"

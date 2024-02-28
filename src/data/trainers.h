@@ -1404,16 +1404,16 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_GruntSpaceCenter2),
     },
 
-    [TRAINER_CINDY_2] =
+    [TRAINER_EVELYN] =
     {
-        .trainerClass = TRAINER_CLASS_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LADY,
-        .trainerName = _("Cindy"),
-        .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerName = _("Evelyn"),
+        .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_Cindy2),
+        .party = TRAINER_PARTY(sParty_Evelyn),
     },
 
     [TRAINER_BRIANNA] =
@@ -2076,16 +2076,16 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_Jack),
     },
 
-    [TRAINER_DUDLEY] =
+    [TRAINER_LOGAN] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .trainerName = _("Dudley"),
+        .trainerClass = TRAINER_CLASS_HIKER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerName = _("Logan"),
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_Dudley),
+        .party = TRAINER_PARTY(sParty_Logan),
     },
 
     [TRAINER_CHAD] =
@@ -5536,16 +5536,16 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_Linda),
     },
 
-    [TRAINER_KAYLEE] =
+    [TRAINER_NOAH] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .trainerName = _("Kaylee"),
+        .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
+        .trainerName = _("Noah"),
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_Kaylee),
+        .party = TRAINER_PARTY(sParty_Noah),
     },
 
     [TRAINER_LAUREL] =

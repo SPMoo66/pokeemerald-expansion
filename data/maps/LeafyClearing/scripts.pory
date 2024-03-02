@@ -9,7 +9,7 @@ script TrainerTipsClock {
 
 script TrainerTipsBRun {
 	lock
-	msgbox(format("Trainer Tips\pIn battle, press the B button to center on Run."))
+	msgbox(format("Trainer Tips\pIn battle, press the B button to center the cursor on Run."))
 	release
 	end
 }

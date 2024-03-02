@@ -42,7 +42,7 @@ TrainerTipsBRun_Text_0:
 # 12 "data/maps/LeafyClearing/scripts.pory"
 	.string "Trainer Tips\p"
 	.string "In battle, press the B button to center\n"
-	.string "on Run.$"
+	.string "the cursor on Run.$"
 
 TrainerTipsPartySelectMove_Text_0:
 # 19 "data/maps/LeafyClearing/scripts.pory"

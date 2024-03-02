@@ -1,0 +1,31 @@
+raw `
+OldaleTown_House1_EventScript_Woman::
+	msgbox OldaleTown_House1_Text_LeftPokemonGoesOutFirst, MSGBOX_NPC
+	end
+
+OldaleTown_House1_Text_LeftPokemonGoesOutFirst:
+	.string "When a Pokémon battle starts, the one\n"
+	.string "at the top left of the list is sent\l"
+	.string "out first.\p"
+	.string "For a double battle, the two Pokémon in\n"
+	.string "the top slots are sent out first.\p"
+	.string "Try switching them around!$"
+`
+
+mapscripts OldaleTown_House1_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_1)
+		if (var(VAR_BIRCH_LAB_STATE) == 3) {
+			clearflag (FLAG_TEMP_1)
+		}
+	
+	}
+}
+
+script Harper_Town01 {
+	faceplayer
+	lock
+	msgbox(format("Harper: So, you're not feeling sick at all? Well, props to you then...\pI guess I never really got into this trend when it got popular a while back.\pIt's a neat gimmick, but its hard to imagine it as more than that.\pI mean, how many cases do you need to perceive the world in a 2D flat plane?\pTechnology is incredible.\pBut fuck, does it give me a headache sometimes..."))
+	release
+	end
+}

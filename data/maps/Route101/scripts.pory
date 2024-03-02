@@ -2,24 +2,6 @@ raw `
 .set LOCALID_BIRCH, 2
 .set LOCALID_ZIGZAGOON, 4
 
-Route101_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, Route101_OnTransition
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route101_OnFrame
-	.byte 0
-
-Route101_OnTransition:
-	call ProfBirch_EventScript_UpdateLocation
-	end
-
-Route101_OnFrame:
-	map_script_2 VAR_ROUTE101_STATE, 0, Route101_EventScript_HideMapNamePopup
-	.2byte 0
-
-Route101_EventScript_HideMapNamePopup::
-	setflag FLAG_HIDE_MAP_NAME_POPUP
-	setvar VAR_ROUTE101_STATE, 1
-	end
-
 Route101_EventScript_StartBirchRescue::
 	lockall
 	playbgm MUS_HELP, TRUE
@@ -419,4 +401,36 @@ movement CynthiaLedgeLeave {
 	jump_2_down
 	walk_down * 4
 	set_invisible
+}
+
+mapscripts Route101_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_1)
+		if (var(VAR_BIRCH_LAB_STATE) == 3) {
+			clearflag (FLAG_TEMP_1)
+		}
+		call (ProfBirch_EventScript_UpdateLocation)
+	
+	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_ROUTE101_STATE, 0 {
+				setflag (FLAG_HIDE_MAP_NAME_POPUP)
+				setvar (VAR_ROUTE101_STATE, 1)
+			}
+		]
+}
+
+script Jakson_Town01 {
+	faceplayer
+	lock
+	msgbox(format("Jakson: {PLAYER}, how are you handling the game so far?\pIf you've never played this sort of game before it can mess with your head.\pJust let me know if anything seems too off and we can try and adjust your settings so you can adjust your own brain to... all this more easily.\pThat includes... stuff not related to controls and everything.\pI threw this mod pack together in a few days with the new release, so there might be a few... unforeseen bugs lurking around the corner.\pIf it does all work, I hope you enjoy the tweaks to the base game, too."))
+	release
+	end
+}
+
+script Redd_Town01 {
+	lock
+	msgbox(format("Redd: There's so many different sorts of Pokémon here...\p Though I guess it's really just Generation 1 through 9 Pokémon.\pIt is retro, sort of. Maybe I got too used to Gen 1 'mons from the remake?\pAh, screw it. It's Pokémon in the end.\nI'm sure I can find a Pikachu or a Charmander around here somewhere."))
+	release
+	end
 }

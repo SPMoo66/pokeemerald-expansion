@@ -339,3 +339,19 @@ mart TMMart8 {
 	ITEM_TM43
 	ITEM_TM107
 }
+
+// Plays Encounter BGM for Emeralbody Rival
+script Common_EventScript_PlayEmRivalBgm {
+	switch (var(VAR_EMERALBODY_RIVAL)) {
+		case 1:
+			playbgm (MUS_DP_DAWN, FALSE)
+		case 2:
+			playbgm (MUS_HG_EUSINE, FALSE)
+		case 3:
+			playbgm (MUS_HG_ETHAN, FALSE)
+		case 4:
+			playbgm (MUS_HG_ENCOUNTER_GIRL_1, FALSE)
+		default:
+			playbgm (MUS_PL_B_HALL, FALSE)
+	}
+}

@@ -15,7 +15,7 @@ OldaleTown_House1_Text_LeftPokemonGoesOutFirst:
 mapscripts OldaleTown_House1_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag (FLAG_TEMP_1)
-		if (var(VAR_BIRCH_LAB_STATE) == 3) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 1) {
 			clearflag (FLAG_TEMP_1)
 		}
 	

@@ -859,7 +859,7 @@ Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 408 "data/maps/Route101/scripts.pory"
 	setflag FLAG_TEMP_1
 # 409 "data/maps/Route101/scripts.pory"
-	compare VAR_BIRCH_LAB_STATE, 3
+	compare VAR_EMERALBODY_RIVAL_STATE, 1
 	goto_if_eq Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 412 "data/maps/Route101/scripts.pory"

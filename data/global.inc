@@ -702,6 +702,42 @@ TMMart8:
 	.2byte ITEM_TM107
 	.2byte ITEM_NONE
 
+Common_EventScript_PlayEmRivalBgm::
+# 345 "data/global.pory"
+	switch VAR_EMERALBODY_RIVAL
+# 346 "data/global.pory"
+	case 1, Common_EventScript_PlayEmRivalBgm_2
+# 348 "data/global.pory"
+	case 2, Common_EventScript_PlayEmRivalBgm_3
+# 350 "data/global.pory"
+	case 3, Common_EventScript_PlayEmRivalBgm_4
+# 352 "data/global.pory"
+	case 4, Common_EventScript_PlayEmRivalBgm_5
+# 355 "data/global.pory"
+	playbgm MUS_PL_B_HALL, FALSE
+	return
+
+Common_EventScript_PlayEmRivalBgm_2:
+# 347 "data/global.pory"
+	playbgm MUS_DP_DAWN, FALSE
+	return
+
+Common_EventScript_PlayEmRivalBgm_3:
+# 349 "data/global.pory"
+	playbgm MUS_HG_EUSINE, FALSE
+	return
+
+Common_EventScript_PlayEmRivalBgm_4:
+# 351 "data/global.pory"
+	playbgm MUS_HG_ETHAN, FALSE
+	return
+
+Common_EventScript_PlayEmRivalBgm_5:
+# 353 "data/global.pory"
+	playbgm MUS_HG_ENCOUNTER_GIRL_1, FALSE
+	return
+
+
 Mart_EventScript_TMClerk_Text_0:
 # 152 "data/global.pory"
 	.string "Sorry, I can only sell to trainers who\n"

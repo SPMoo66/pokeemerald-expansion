@@ -32,7 +32,7 @@ OldaleTown_House1_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 17 "data/maps/OldaleTown_House1/scripts.pory"
 	setflag FLAG_TEMP_1
 # 18 "data/maps/OldaleTown_House1/scripts.pory"
-	compare VAR_BIRCH_LAB_STATE, 3
+	compare VAR_EMERALBODY_RIVAL_STATE, 1
 	goto_if_eq OldaleTown_House1_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 	return
 

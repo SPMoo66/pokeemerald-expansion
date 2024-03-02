@@ -40,9 +40,9 @@
 #define VAR_OBJ_GFX_ID_8           0x4018
 #define VAR_OBJ_GFX_ID_9           0x4019
 #define VAR_OBJ_GFX_ID_A           0x401A
-#define VAR_OBJ_GFX_ID_B           0x401B
-#define VAR_OBJ_GFX_ID_C           0x401C
-#define VAR_OBJ_GFX_ID_D           0x401D
+#define VAR_OBJ_GFX_ID_B           0x401B    // Used for Emeralbody Rival
+#define VAR_OBJ_GFX_ID_C           0x401C    // Unused
+#define VAR_OBJ_GFX_ID_D           0x401D    // Unused
 #define VAR_OBJ_GFX_ID_E           0x401E
 #define VAR_OBJ_GFX_ID_F           0x401F
 
@@ -148,7 +148,7 @@
 #define VAR_ROUTE133_STATE                               0x4080 // Unused Var
 #define VAR_ROUTE134_STATE                               0x4081 // Unused Var
 #define VAR_LITTLEROOT_HOUSES_STATE_MAY                  0x4082
-#define VAR_UNUSED_0x4083                                0x4083 // Unused Var
+#define VAR_EMERALBODY_RIVAL                             0x4083 // 0: Baron, 1: Harper, 2: Jakson, 3: Redd, 4: Sakura (Randomly set at start of game or by personality test)
 #define VAR_BIRCH_LAB_STATE                              0x4084
 #define VAR_PETALBURG_GYM_STATE                          0x4085 // 0-1: Wally tutorial, 2-6: 0-4 badges, 7: Defeated Norman, 8: Rematch Norman
 #define VAR_CONTEST_HALL_STATE                           0x4086
@@ -156,7 +156,7 @@
 #define VAR_CONTEST_TYPE                                 0x4088
 #define VAR_SECRET_BASE_INITIALIZED                      0x4089
 #define VAR_CONTEST_PRIZE_PICKUP                         0x408A
-#define VAR_UNUSED_0x408B                                0x408B // Unused Var
+#define VAR_EMERALBODY_RIVAL_STATE                       0x408B // Rival state, tracks story progress
 #define VAR_LITTLEROOT_HOUSES_STATE_BRENDAN              0x408C
 #define VAR_LITTLEROOT_RIVAL_STATE                       0x408D
 #define VAR_BOARD_BRINEY_BOAT_STATE                      0x408E

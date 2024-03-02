@@ -6,7 +6,6 @@ raw `
 
 LittlerootTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_OnTransition
-	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_OnTransition2
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, LittlerootTown_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, LittlerootTown_OnWarp
 	.byte 0
@@ -44,6 +43,7 @@ LittlerootTown_MapScripts::
 LittlerootTown_OnTransition:
 	setflag FLAG_VISITED_LITTLEROOT_TOWN
 	call Common_EventScript_SetupRivalGfxId
+	call Common_EventScript_SetupEmRivalGfxId
 	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 2, LittlerootTown_EventScript_MoveMomToMaysDoor
 	call_if_unset FLAG_RESCUED_BIRCH, LittlerootTown_EventScript_SetTwinPos
 	call_if_eq VAR_LITTLEROOT_TOWN_STATE, 3, LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos
@@ -53,16 +53,19 @@ LittlerootTown_OnTransition:
 	call_if_eq VAR_LITTLEROOT_RIVAL_STATE, 3, LittlerootTown_EventScript_SetRivalLeftForRoute103
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_HideMapNamePopup
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_EventScript_LeftLabAfterDexUpgrade
-	end
-
-LittlerootTown_OnTransition2:
 	setflag FLAG_TEMP_1
-	call_if_eq VAR_BIRCH_LAB_STATE, 3, LittlerootTown_EventScript_ShowBaron
+	setflag FLAG_TEMP_2
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 1, LittlerootTown_EventScript_ShowBaron
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 0, LittlerootTown_EventScript_ShowRival
 	end
 
 LittlerootTown_EventScript_ShowBaron::
 	clearflag FLAG_TEMP_1
-	end
+	return
+
+LittlerootTown_EventScript_ShowRival:
+	clearflag FLAG_TEMP_2
+	return
 
 LittlerootTown_EventScript_LeftLabAfterDexUpgrade::
 	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 3
@@ -1032,6 +1035,7 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 `
 
 const BARON = 9
+const RIVAL = 10
 
 script Baron_Town01 {
 	lock
@@ -1056,4 +1060,59 @@ script Baron_Town01 {
 movement Baron_Town01_Move {
 	walk_in_place_left
 	delay_16
+}
+
+script Rival_Scene01 {
+	if (var(VAR_BIRCH_LAB_STATE) == 3) {
+		lock
+		call (Common_EventScript_PlayEmRivalBgm)
+		playse (SE_PIN)
+		applymovement (RIVAL, Rival_Scene01_Move1)
+		waitmovement (0)
+		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+		switch (var(VAR_TEMP_1)) {
+			case 17:
+				applymovement (RIVAL, Rival_Scene01_Move1b)
+				waitmovement (0)
+			default:
+		}
+		switch (var(VAR_EMERALBODY_RIVAL)) {
+			case 1:
+				msgbox(format("Harper:"))
+			case 2:
+				msgbox(format("Jakson:"))
+			case 3:
+				msgbox(format("Redd:"))
+			case 4:
+				msgbox(format("Sakura:"))
+			default:
+				msgbox(format("Baron:"))
+		}
+		closemessage
+		setvar (VAR_EMERALBODY_RIVAL_STATE, 1)
+		fadescreen (FADE_TO_BLACK)
+		fadedefaultbgm
+		applymovement (RIVAL, Rival_Scene01_Move2)
+		waitmovement (0)
+		removeobject (RIVAL)
+		clearflag (FLAG_TEMP_1)
+		addobject (BARON)
+		fadescreen (FADE_FROM_BLACK)
+	}
+	release
+	end
+}
+
+movement Rival_Scene01_Move1 {
+	emote_exclamation_mark
+	delay_16 * 4
+	walk_left * 2
+}
+
+movement Rival_Scene01_Move1b {
+	face_up
+}
+
+movement Rival_Scene01_Move2 {
+	walk_fast_down * 7
 }

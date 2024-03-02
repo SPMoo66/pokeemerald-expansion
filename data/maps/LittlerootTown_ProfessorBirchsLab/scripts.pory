@@ -8,7 +8,6 @@ raw `
 
 LittlerootTown_ProfessorBirchsLab_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_ProfessorBirchsLab_OnTransition
-	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_ProfessorBirchsLab_OnTransition2
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, LittlerootTown_ProfessorBirchsLab_OnWarp
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, LittlerootTown_ProfessorBirchsLab_OnFrame
 	.byte 0
@@ -29,16 +28,13 @@ LittlerootTown_ProfessorBirchsLab_MapScripts::
 	@ 5: Received pokedex
 
 LittlerootTown_ProfessorBirchsLab_OnTransition:
+	setflag FLAG_TEMP_1
 	call Common_EventScript_SetupRivalGfxId
 	call ProfBirch_EventScript_UpdateLocation
+	goto_if_eq VAR_EMERALBODY_RIVAL_STATE, 1, LittlerootTown_ProfessorBirchsLab_EventScript_ShowSakura
 	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6, LittlerootTown_ProfessorBirchsLab_EventScript_SetAfterJohtoStarterLayout
 	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 4, LittlerootTown_ProfessorBirchsLab_EventScript_SetJohtoStarterLayout
 	goto_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 3, LittlerootTown_ProfessorBirchsLab_EventScript_CheckReadyForJohtoStarter
-	end
-
-LittlerootTown_ProfessorBirchsLab_OnTransition2:
-	setflag FLAG_TEMP_1
-	goto_if_eq VAR_BIRCH_LAB_STATE, 3, LittlerootTown_ProfessorBirchsLab_EventScript_ShowSakura
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ShowSakura::
@@ -1015,7 +1011,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 script Sakura_Town01 {
 	faceplayer
 	lock
-	msgbox(format("Sakura: So you got your starter Pokémon? It's cute!\pFor me, I wanna get the cutest option possible as my starter.\pMy endgame goal is a majestic and cute queen sitting upon her throne, with steeled and awesome-bodied guards flanking her.\pEach willing to risk life and limb to bring glory to her queendom.\p......\lYeah? Of course I realize we're playing a Pokémon game.\pYou're so weird sometimes, {PLAYER}, hahaha."))
+	msgbox(format("Sakura: So you got your starter Pokémon? It's cute!\pFor me, I wanna get the cutest option possible as my starter.\pMy endgame goal is a majestic and cute queen sitting upon her throne, with steeled and awesome-bodied guards flanking her.\pEach willing to risk life and limb to bring glory to her queendom.\p......\pYeah? Of course I realize we're playing a Pokémon game.\pYou're so weird sometimes, {PLAYER}, hahaha."))
 	release
 	end
 }

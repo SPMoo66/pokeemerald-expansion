@@ -96,16 +96,14 @@ Debug_BoxFilledMessage_Text:
 	.string "Storage boxes filled!$"
 
 Debug_EventScript_Script_1::
-    setflag FLAG_SYS_DEXNAV_GET
-    additem ITEM_POKEVIAL
-	end
-
-Debug_EventScript_Script_2::
     random 5
 	copyvar VAR_EMERALBODY_RIVAL, VAR_RESULT
 	buffernumberstring 0, VAR_EMERALBODY_RIVAL
 	msgbox Debug_PrintRivalVar, MSGBOX_DEFAULT
 	closemessage
+	end
+
+Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::

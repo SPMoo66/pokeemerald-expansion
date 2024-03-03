@@ -101,6 +101,11 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
+    random 5
+	copyvar VAR_EMERALBODY_RIVAL, VAR_RESULT
+	buffernumberstring 0, VAR_EMERALBODY_RIVAL
+	msgbox Debug_PrintRivalVar, MSGBOX_DEFAULT
+	closemessage
 	end
 
 Debug_EventScript_Script_3::
@@ -122,6 +127,9 @@ Debug_EventScript_Script_8::
     cleartrainerflag TRAINER_WATTSON_1
     trainerbattle_single TRAINER_WATTSON_1, gText_Blank, gText_Blank
 	end
+
+Debug_PrintRivalVar::
+	.string "{STR_VAR_1}$"
 
 Debug_CheckSaveBlock::
 	callnative CheckSaveBlock1Size

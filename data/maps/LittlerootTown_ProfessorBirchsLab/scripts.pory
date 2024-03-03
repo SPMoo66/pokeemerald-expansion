@@ -558,7 +558,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex::
 	message LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex
 	waitfanfare
 	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
 	special SetUnlockedPokedexFlags
+    setflag FLAG_SYS_DEXNAV_GET
 	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
 	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
 	return
@@ -762,10 +764,10 @@ LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
 	.string "of any Pokémon you meet or catch.\p"
 	.string "My kid, {RIVAL}, goes everywhere\n"
 	.string "with it.\p"
-	.string "Whenever my kid catches a rare Pokémon\n"
-	.string "and records its data in the Pokédex,\l"
-	.string "why, {RIVAL} looks for me while I'm out\l"
-	.string "doing fieldwork, and shows me.$"
+	.string "The Pokédex also includes the highly-\n"
+	.string "coveted DexNav feature!\p"
+	.string "Be sure to experiment around with it.\n"
+	.string "I'm sure you'll find it useful.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
 	.string "Prof. Birch: Countless Pokémon\n"
@@ -1011,7 +1013,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 script Sakura_Town01 {
 	faceplayer
 	lock
-	msgbox(format("Sakura: So you got your starter Pokémon? It's cute!\pFor me, I wanna get the cutest option possible as my starter.\pMy endgame goal is a majestic and cute queen sitting upon her throne, with steeled and awesome-bodied guards flanking her.\pEach willing to risk life and limb to bring glory to her queendom.\p......\pYeah? Of course I realize we're playing a Pokémon game.\pYou're so weird sometimes, {PLAYER}, hahaha."))
+	msgbox(format("Sakura: So you got your starter Pokémon? It's cute!\pFor me, I wanna get the cutest option possible as my starter.\pMy endgame goal is a majestic and cute queen sitting upon her throne, with steeled and awesome-bodied guards flanking her.\pEach willing to risk life and limb to bring glory to her queendom.\p… … …\pYeah? Of course I realize we're playing a Pokémon game.\pYou're so weird sometimes, {PLAYER}, hahaha."))
 	release
 	end
 }

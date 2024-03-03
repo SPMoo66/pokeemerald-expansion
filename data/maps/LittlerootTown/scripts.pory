@@ -916,7 +916,6 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	playfanfare MUS_OBTAIN_ITEM
 	message LittlerootTown_Text_SwitchShoesWithRunningShoes
 	waitfanfare
-	setflag FLAG_RECEIVED_RUNNING_SHOES
 	msgbox LittlerootTown_Text_ExplainRunningShoes, MSGBOX_DEFAULT
 	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
 	closemessage
@@ -946,20 +945,16 @@ LittlerootTown_Text_WearTheseRunningShoes:
 	.string "You're your father's child, all right.\n"
 	.string "You look good together with Pokémon!\p"
 	.string "Here, honey! If you're going out on an\n"
-	.string "adventure, wear these Running Shoes.\p"
-	.string "They'll put a zip in your step!$"
+	.string "adventure, wear these new shoes I got\l"
+	.string "for you!$"
 
 LittlerootTown_Text_SwitchShoesWithRunningShoes:
 	.string "{PLAYER} switched shoes with the\n"
-	.string "Running Shoes.$"
+	.string "new pair from Mom!$"
 
 LittlerootTown_Text_ExplainRunningShoes:
-	.string "Mom: {PLAYER}, those shoes came with\n"
-	.string "instructions.\p"
-	.string "“Press the B Button while wearing these\n"
-	.string "Running Shoes to run extra-fast!\p"
-	.string "“Slip on these Running Shoes and race\n"
-	.string "in the great outdoors!”$"
+	.string "Mom: {PLAYER}, those shoes look so\n"
+	.string "stylish on you!$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "… … … … … … … …\n"

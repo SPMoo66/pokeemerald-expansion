@@ -39,6 +39,9 @@ LittlerootTown_MapScripts::
 	@ 3: Met Rival
 	@ 4: Received Pokedex
 
+	@ State descriptions for VAR_EMERALBODY_RIVAL_STATE
+	@ 1: Set after scene outside Birch's Lab
+	@ 2: Set after rival fight in Petalburg City
 
 LittlerootTown_OnTransition:
 	setflag FLAG_VISITED_LITTLEROOT_TOWN

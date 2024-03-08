@@ -1085,7 +1085,8 @@ Common_EventScript_GymNurse::
 	msgbox gText_GymNurseHeal, MSGBOX_DEFAULT
 	closemessage
 	call Common_EventScript_OutOfCenterPartyHeal
-	release
+	releaseall
+	end
 
 gText_GymNurseHeal::
 	.string "Allow me to heal your Pokémon.$"

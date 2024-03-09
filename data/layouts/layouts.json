@@ -3285,7 +3285,7 @@
       "id": "LAYOUT_SAFARI_ZONE_REST_HOUSE",
       "name": "SafariZone_RestHouse_Layout",
       "width": 10,
-      "height": 9,
+      "height": 7,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/SafariZone_RestHouse/border.bin",
@@ -3954,7 +3954,7 @@
     {
       "id": "LAYOUT_BATTLE_FRONTIER_RANKING_HALL",
       "name": "BattleFrontier_RankingHall_Layout",
-      "width": 53,
+      "width": 47,
       "height": 15,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BattleFrontierRankingHall",

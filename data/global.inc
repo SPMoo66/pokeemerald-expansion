@@ -738,6 +738,31 @@ Common_EventScript_PlayEmRivalBgm_5:
 	return
 
 
+# 359 "data/global.pory"
+
+# 360 "data/global.pory"
+Common_EventScript_GymNurse::
+# 361 "data/global.pory"
+	lock
+# 362 "data/global.pory"
+	faceplayer
+# 363 "data/global.pory"
+	msgbox gText_GymNurseHeal, MSGBOX_DEFAULT
+# 364 "data/global.pory"
+	closemessage
+# 365 "data/global.pory"
+	call Common_EventScript_OutOfCenterPartyHeal
+# 366 "data/global.pory"
+	releaseall
+# 367 "data/global.pory"
+	end
+# 368 "data/global.pory"
+
+# 369 "data/global.pory"
+gText_GymNurseHeal::
+# 370 "data/global.pory"
+	.string "Allow me to heal your Pokémon.$"
+
 Mart_EventScript_TMClerk_Text_0:
 # 152 "data/global.pory"
 	.string "Sorry, I can only sell to trainers who\n"

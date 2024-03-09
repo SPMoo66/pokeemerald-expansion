@@ -1079,16 +1079,4 @@ EventScript_VsSeekerChargingDone::
     .include "data/scripts/dexnav.inc"
 	.include "data/global.inc"
 
-Common_EventScript_GymNurse::
-	lock
-	faceplayer
-	msgbox gText_GymNurseHeal, MSGBOX_DEFAULT
-	closemessage
-	call Common_EventScript_OutOfCenterPartyHeal
-	releaseall
-	end
-
-gText_GymNurseHeal::
-	.string "Allow me to heal your Pokémon.$"
-
 	.include "data/maps/ScorchedSlabB1F/scripts.inc"

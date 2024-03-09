@@ -355,3 +355,17 @@ script Common_EventScript_PlayEmRivalBgm {
 			playbgm (MUS_PL_B_HALL, FALSE)
 	}
 }
+
+raw `
+Common_EventScript_GymNurse::
+	lock
+	faceplayer
+	msgbox gText_GymNurseHeal, MSGBOX_DEFAULT
+	closemessage
+	call Common_EventScript_OutOfCenterPartyHeal
+	releaseall
+	end
+
+gText_GymNurseHeal::
+	.string "Allow me to heal your Pokémon.$"
+`

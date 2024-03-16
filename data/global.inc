@@ -763,6 +763,114 @@ gText_GymNurseHeal::
 # 370 "data/global.pory"
 	.string "Allow me to heal your Pokémon.$"
 
+Mart_EventScript_EvoClerk::
+# 374 "data/global.pory"
+	lock
+# 375 "data/global.pory"
+	faceplayer
+# 376 "data/global.pory"
+	msgbox gText_HowMayIServeYou
+# 377 "data/global.pory"
+	waitmessage
+# 378 "data/global.pory"
+	special GetNumberOfBadges
+# 379 "data/global.pory"
+	switch VAR_RESULT
+# 380 "data/global.pory"
+	case 0, Mart_EventScript_EvoClerk_3
+# 381 "data/global.pory"
+	case 1, Mart_EventScript_EvoClerk_3
+# 382 "data/global.pory"
+	case 2, Mart_EventScript_EvoClerk_3
+# 384 "data/global.pory"
+	case 3, Mart_EventScript_EvoClerk_4
+# 385 "data/global.pory"
+	case 4, Mart_EventScript_EvoClerk_4
+# 387 "data/global.pory"
+	case 5, Mart_EventScript_EvoClerk_5
+# 388 "data/global.pory"
+	case 6, Mart_EventScript_EvoClerk_5
+# 389 "data/global.pory"
+	case 7, Mart_EventScript_EvoClerk_5
+# 390 "data/global.pory"
+	case 8, Mart_EventScript_EvoClerk_5
+Mart_EventScript_EvoClerk_1:
+# 395 "data/global.pory"
+	msgbox gText_PleaseComeAgain
+# 396 "data/global.pory"
+	release
+	end
+
+Mart_EventScript_EvoClerk_3:
+# 383 "data/global.pory"
+	msgbox Mart_EventScript_EvoClerk_Text_0
+	goto Mart_EventScript_EvoClerk_1
+
+Mart_EventScript_EvoClerk_4:
+# 386 "data/global.pory"
+	pokemart BadgedEvoPokemart3
+	goto Mart_EventScript_EvoClerk_1
+
+Mart_EventScript_EvoClerk_5:
+# 391 "data/global.pory"
+	pokemart BadgedEvoPokemart5
+	goto Mart_EventScript_EvoClerk_1
+
+
+	.align 2
+# 400 "data/global.pory"
+BadgedEvoPokemart3:
+# 401 "data/global.pory"
+	.2byte ITEM_FIRE_STONE
+# 402 "data/global.pory"
+	.2byte ITEM_WATER_STONE
+# 403 "data/global.pory"
+	.2byte ITEM_THUNDER_STONE
+# 404 "data/global.pory"
+	.2byte ITEM_LEAF_STONE
+# 405 "data/global.pory"
+	.2byte ITEM_ICE_STONE
+# 406 "data/global.pory"
+	.2byte ITEM_MOON_STONE
+# 407 "data/global.pory"
+	.2byte ITEM_SUN_STONE
+# 408 "data/global.pory"
+	.2byte ITEM_LINKING_CORD
+# 409 "data/global.pory"
+	.2byte ITEM_KINGS_ROCK
+	.2byte ITEM_NONE
+
+	.align 2
+# 412 "data/global.pory"
+BadgedEvoPokemart5:
+# 413 "data/global.pory"
+	.2byte ITEM_FIRE_STONE
+# 414 "data/global.pory"
+	.2byte ITEM_WATER_STONE
+# 415 "data/global.pory"
+	.2byte ITEM_THUNDER_STONE
+# 416 "data/global.pory"
+	.2byte ITEM_LEAF_STONE
+# 417 "data/global.pory"
+	.2byte ITEM_ICE_STONE
+# 418 "data/global.pory"
+	.2byte ITEM_MOON_STONE
+# 419 "data/global.pory"
+	.2byte ITEM_SUN_STONE
+# 420 "data/global.pory"
+	.2byte ITEM_LINKING_CORD
+# 421 "data/global.pory"
+	.2byte ITEM_KINGS_ROCK
+# 422 "data/global.pory"
+	.2byte ITEM_SHINY_STONE
+# 423 "data/global.pory"
+	.2byte ITEM_DUSK_STONE
+# 424 "data/global.pory"
+	.2byte ITEM_DAWN_STONE
+# 425 "data/global.pory"
+	.2byte ITEM_METAL_COAT
+	.2byte ITEM_NONE
+
 Mart_EventScript_TMClerk_Text_0:
 # 152 "data/global.pory"
 	.string "Sorry, I can only sell to trainers who\n"
@@ -799,3 +907,8 @@ Mart_EventScript_TMClerk_Text_7:
 Mart_EventScript_TMClerk_Text_8:
 # 178 "data/global.pory"
 	.string "Badge 8 TMs$"
+
+Mart_EventScript_EvoClerk_Text_0:
+# 383 "data/global.pory"
+	.string "Sorry, I can only sell to trainers who\n"
+	.string "have earned at least three Gym Badges.$"

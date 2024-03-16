@@ -369,3 +369,58 @@ Common_EventScript_GymNurse::
 gText_GymNurseHeal::
 	.string "Allow me to heal your Pokémon.$"
 `
+
+script Mart_EventScript_EvoClerk{
+	lock
+	faceplayer
+	msgbox(gText_HowMayIServeYou)
+	waitmessage
+	special(GetNumberOfBadges)
+	switch (var(VAR_RESULT)) {
+		case 0:
+		case 1:
+		case 2:
+			msgbox(format("Sorry, I can only sell to trainers who have earned at least three Gym Badges."))
+		case 3:
+		case 4:
+			pokemart(BadgedEvoPokemart3)
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+			pokemart(BadgedEvoPokemart5)
+		default:
+			break
+		}
+	msgbox(gText_PleaseComeAgain)
+	release
+	end
+}
+
+mart BadgedEvoPokemart3 {
+	ITEM_FIRE_STONE
+	ITEM_WATER_STONE
+	ITEM_THUNDER_STONE
+	ITEM_LEAF_STONE
+	ITEM_ICE_STONE
+	ITEM_MOON_STONE
+	ITEM_SUN_STONE
+	ITEM_LINKING_CORD
+	ITEM_KINGS_ROCK
+}
+
+mart BadgedEvoPokemart5 {
+	ITEM_FIRE_STONE
+	ITEM_WATER_STONE
+	ITEM_THUNDER_STONE
+	ITEM_LEAF_STONE
+	ITEM_ICE_STONE
+	ITEM_MOON_STONE
+	ITEM_SUN_STONE
+	ITEM_LINKING_CORD
+	ITEM_KINGS_ROCK
+	ITEM_SHINY_STONE
+	ITEM_DUSK_STONE
+	ITEM_DAWN_STONE
+	ITEM_METAL_COAT
+}

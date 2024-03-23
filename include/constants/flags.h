@@ -1341,9 +1341,9 @@
 
 // System Flags
 
-#define SYSTEM_FLAGS                                   (TRAINER_FLAGS_END + 1) // 0x860
+#define SYSTEM_FLAGS                                   (TRAINER_FLAGS_END + 1) // 0xA00
 
-#define FLAG_SYS_POKEMON_GET                         (SYSTEM_FLAGS + 0x0) // FLAG_0x860
+#define FLAG_SYS_POKEMON_GET                         (SYSTEM_FLAGS + 0x0) // FLAG_0xA00
 #define FLAG_SYS_POKEDEX_GET                         (SYSTEM_FLAGS + 0x1)
 #define FLAG_SYS_POKENAV_GET                         (SYSTEM_FLAGS + 0x2)
 #define FLAG_NO_BAG                                  (SYSTEM_FLAGS + 0x3) // No Bag use allowed in battle
@@ -1399,7 +1399,7 @@
 #define FLAG_SYS_CRUISE_MODE                        (SYSTEM_FLAGS + 0x2D)
 
 #define FLAG_SYS_DETECTOR_MODE                      (SYSTEM_FLAGS + 0x2E) // allow player to find hidden mons
-#define FLAG_SYS_DEXNAV_GET                         (SYSTEM_FLAGS + 0x2F) // FLAG_0x88F - dexnav shows in start menu
+#define FLAG_SYS_DEXNAV_GET                         (SYSTEM_FLAGS + 0x2F) // FLAG_0xA2F - dexnav shows in start menu
 
 #define FLAG_SYS_TV_HOME                            (SYSTEM_FLAGS + 0x30)
 #define FLAG_SYS_TV_WATCH                           (SYSTEM_FLAGS + 0x31)
@@ -1560,7 +1560,7 @@
 #define FLAG_UNUSED_0x91C                           (SYSTEM_FLAGS + 0xBC) // Unused Flag
 #define FLAG_UNUSED_0x91D                           (SYSTEM_FLAGS + 0xBD) // Unused Flag
 #define FLAG_UNUSED_0x91E                           (SYSTEM_FLAGS + 0xBE) // Unused Flag
-#define FLAG_UNUSED_0x91F                           (SYSTEM_FLAGS + 0xBF) // Unused Flag
+#define FLAG_UNUSED_0x91F                           (SYSTEM_FLAGS + 0xBF) // Unused Flag 0xA1F
 
 // Daily Flags
 // These flags are cleared once per day

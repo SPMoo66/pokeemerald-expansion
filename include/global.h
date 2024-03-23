@@ -507,6 +507,7 @@ struct SaveBlock2
              u16 optionsDisableMatchCall:1; //tx_optionsPlus
              u16 optionsCurrentFont:1;  //tx_optionsPlus
              u16 optionsMusicRegion:3;  //tx_optionsPlus
+             u16 optionsLevelCaps:1;    //tx_optionsPlus
              //u16 padding1:4;
              //u16 padding2;
     /*0x18*/ struct Pokedex pokedex;

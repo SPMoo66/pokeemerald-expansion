@@ -103,6 +103,7 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->optionsDisableMatchCall = 0;    //tx_optionsPlus
     gSaveBlock2Ptr->optionsCurrentFont = 0;         //tx_optionsPlus
     gSaveBlock2Ptr->optionsMusicRegion = 2;         //tx_optionsPlus
+    gSaveBlock2Ptr->optionsLevelCaps = 1;           //tx_optionsPlus
 }
 
 static void ClearPokedexFlags(void)

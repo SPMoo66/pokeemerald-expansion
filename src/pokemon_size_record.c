@@ -148,7 +148,7 @@ static void FormatMonSizeRecord(u8 *string, u32 size)
 
     string = ConvertIntToDecimalStringN(string, size / 10, STR_CONV_MODE_LEFT_ALIGN, 8);
     string = StringAppend(string, gText_DecimalPoint);
-    ConvertIntToDecimalStringN(string, size % 10, STR_CONV_MODE_LEFT_ALIGN, 1);
+	ConvertIntToDecimalStringN(string, size % 10, STR_CONV_MODE_LEFT_ALIGN, 1);
 }
 
 static u8 CompareMonSize(u16 species, u16 *sizeRecord)

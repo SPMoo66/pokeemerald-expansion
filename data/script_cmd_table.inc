@@ -121,7 +121,7 @@ gScriptCmdTable::
 	.4byte ScrCmd_hidemonpic                        @ 0x76
 	.4byte ScrCmd_showcontestpainting               @ 0x77
 	.4byte ScrCmd_braillemessage                    @ 0x78
-	.4byte ScrCmd_givemon                           @ 0x79
+	.4byte ScrCmd_nop1                              @ 0x79
 	.4byte ScrCmd_giveegg                           @ 0x7a
 	.4byte ScrCmd_setmonmove                        @ 0x7b
 	.4byte ScrCmd_checkpartymove                    @ 0x7c
@@ -230,7 +230,6 @@ gScriptCmdTable::
     .4byte ScrCmd_pokevial                          @ 0xe3 //Pokevial Branch
 	.4byte ScrCmd_dynmultichoice                    @ 0xe4
 	.4byte ScrCmd_dynmultipush                      @ 0xe5
-    .4byte ScrCmd_givecustommon				        @ 0xe6
 
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop

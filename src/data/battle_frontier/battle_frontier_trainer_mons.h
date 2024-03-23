@@ -597,6 +597,7 @@
     FRONTIER_MON_SCALEON,                    \
 	-1
 
+
 const u16 gBattleFrontierTrainerMons_Brady[] =
 {
     FRONTIER_MONS_TIER_1

@@ -9949,7 +9949,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Crashes down on the\n"
             "foe with electricity.\n"
-            "My cause a flinch."),
+            "May cause a flinch."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

@@ -1311,7 +1311,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_AriadosEmeribian,
         .shinyPalette = gMonShinyPalette_AriadosEmeribian,
-        .iconSprite = gMonIcon_Ariados,
+        .iconSprite = gMonIcon_AriadosEmeribian,
         .iconPalIndex = 1,
         FOOTPRINT(Ariados)
         .levelUpLearnset = sAriadosEmeribianLevelUpLearnset,

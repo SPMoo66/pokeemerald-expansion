@@ -2931,7 +2931,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_DrifloonEmeribian,
         .shinyPalette = gMonShinyPalette_DrifloonEmeribian,
-        .iconSprite = gMonIcon_Drifloon,
+        .iconSprite = gMonIcon_DrifloonEmeribian,
         .iconPalIndex = 2,
         FOOTPRINT(Drifloon)
         .levelUpLearnset = sDrifloonEmeribianLevelUpLearnset,

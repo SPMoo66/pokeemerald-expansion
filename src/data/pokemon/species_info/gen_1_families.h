@@ -5322,7 +5322,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_GloomEmeribian,
         .shinyPalette = gMonShinyPalette_GloomEmeribian,
         .iconSprite = gMonIcon_GloomEmeribian,
-        .iconPalIndex = 0,
+        .iconPalIndex = 4,
         FOOTPRINT(Gloom)
         .levelUpLearnset = sGloomEmeribianLevelUpLearnset,
         .teachableLearnset = sGloomEmeribianTeachableLearnset,

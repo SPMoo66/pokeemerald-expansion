@@ -23,12 +23,12 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_TM_IRON_TAIL",
+      "trainer_sight_or_berry_tree_id": "ITEM_NUGGET",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_TAIL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
       "x": 2,
       "y": 14,
       "elevation": 3,
@@ -36,7 +36,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_MOON_STONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ASSAULT_VEST",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE"
     },
@@ -49,7 +49,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_FULL_HEAL",
+      "trainer_sight_or_berry_tree_id": "ITEM_STAR_PIECE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL"
     },
@@ -62,7 +62,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_PP_UP",
+      "trainer_sight_or_berry_tree_id": "ITEM_PEARL_STRING",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP"
     },

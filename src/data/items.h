@@ -2445,8 +2445,9 @@ const struct Item gItemsInfo[] =
             "It would sell for a\n"
             "very high price."),
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
         .flingPower = 30,
     },
 

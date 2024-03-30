@@ -5764,6 +5764,10 @@ BattleScript_WildMonFled::
 	waitmessage B_WAIT_TIME_LONG
 	end2
 
+BattleScript_PrintCantRunFromBattle::
+	printstring STRINGID_NORUNNINGFROMTHISBATTLE
+	end2
+
 BattleScript_PrintCantRunFromTrainer::
 	printstring STRINGID_NORUNNINGFROMTRAINERS
 	end2

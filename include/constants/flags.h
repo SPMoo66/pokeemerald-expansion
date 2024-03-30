@@ -652,28 +652,28 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
-#define FLAG_UNUSED_0x277  0x277 // Unused Flag
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
+#define FLAG_CHALLENGE_BALL_ROUTE_106       0x264 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_GRANITE_CAVE_1  0x265 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_GRANITE_CAVE_2  0x266 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_103       0x267 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_110_1     0x268 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_110_2     0x269 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_118       0x26A // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_117       0x26B // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_113_1     0x26C // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_113_2     0x26D // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_114       0x26E // Challenge Ball
+#define FLAG_CHALLENGE_BALL_METEOR_FALLS    0x26F // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_123       0x270 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_119       0x271 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_120       0x272 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_MT_PYRE         0x273 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_LILYCOVE_CITY   0x274 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_MOSSDEEP_CITY   0x275 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_127       0x276 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_132       0x277 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_133       0x278 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_134       0x279 // Challenge Ball
 #define FLAG_UNUSED_0x27A  0x27A // Unused Flag
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag
 #define FLAG_UNUSED_0x27C  0x27C // Unused Flag
@@ -1498,7 +1498,7 @@
 #define FLAG_ARRIVED_AT_NAVEL_ROCK                  (SYSTEM_FLAGS + 0x81)
 #define FLAG_LANDMARK_TRAINER_HILL                  (SYSTEM_FLAGS + 0x82)
 
-#define FLAG_UNUSED_0x8E3                           (SYSTEM_FLAGS + 0x83) // Unused Flag
+#define FLAG_NO_RUNNING                             (SYSTEM_FLAGS + 0x83) // Prevents running during battle when set
 
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            (SYSTEM_FLAGS + 0x84)
 

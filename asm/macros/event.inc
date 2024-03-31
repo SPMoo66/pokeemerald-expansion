@@ -1477,10 +1477,12 @@
 	.endm
 
 	@ Prepares to start a wild battle against a 'species' at 'level' holding 'item'.
+	@ abilityNums MUST be set or they will default to ability 0 (First ability).
 	@ If 'species2' is something other than SPECIES_NONE, then the battle is a double battle
-	@ that is also against 'species2' at 'level2' holding 'item2'.
+	@ that is also against 'species2' at 'level2' holding 'item2'. If no second species is defined, abilityNum will be ignored for species1.
 	@ Running this command will not affect normal wild battles. You start the prepared battle with dowildbattle.
 	@ If the player only has one Pokemon, a scripted double battle will be buggy.
+	@ Moves are optional. If omitted or set to MOVE_NONE  the default is used.
 	.macro setwildbattle species:req, level:req, item=ITEM_NONE, abilityNum=0, species2=SPECIES_NONE, level2=0, item2=ITEM_NONE, abilityNum2=0, move11=MOVE_NONE, move12=MOVE_NONE, move13=MOVE_NONE, move14=MOVE_NONE, move21=MOVE_NONE, move22=MOVE_NONE, move23=MOVE_NONE, move24=MOVE_NONE
 	.byte 0xb6
 	.2byte \species
@@ -2182,64 +2184,64 @@
 	.2byte \slot
 	.endm
 
-    @ Start Pokevial Branch
+	@ Start Pokevial Branch
 
 	@ Checks or manipulates the size or dose of the Pokevial.
-    @ When parameter is empty, it assumes VIAL_SIZE.
-    @ When amount is empty, it assumes 1.
+	@ When parameter is empty, it assumes VIAL_SIZE.
+	@ When amount is empty, it assumes 1.
 	.macro pokevial mode:req, parameter=VIAL_SIZE, amount=1
 	.byte 0xe3
-    .byte \mode
-    .byte \parameter
-    .byte \amount
+	.byte \mode
+	.byte \parameter
+	.byte \amount
 	.endm
 
-    @ Gets the current number of doses in the Pokevial and stores it to VAR_0x8006
-    .macro pokevialgetdose
-    specialvar VAR_0x8006,PokevialGetDose
-    .endm
+	@ Gets the current number of doses in the Pokevial and stores it to VAR_0x8006
+	.macro pokevialgetdose
+	specialvar VAR_0x8006,PokevialGetDose
+	.endm
 
-    @ Gets the current size of the Pokevial and stores it to VAR_0x8006
-    .macro pokevialgetsize
-    specialvar VAR_0x8006,PokevialGetSize
-    .endm
+	@ Gets the current size of the Pokevial and stores it to VAR_0x8006
+	.macro pokevialgetsize
+	specialvar VAR_0x8006,PokevialGetSize
+	.endm
 
-    @ Increases the size of the Pokevial by 1
-    @ If the size of the vial exceeds VIAL_MAX_SIZE, it is set to VIAL_MAX_SIZE
-    .macro pokevialincreasesize
-    pokevial VIAL_INCREASE VIAL_SIZE 1
-    .endm
+	@ Increases the size of the Pokevial by 1
+	@ If the size of the vial exceeds VIAL_MAX_SIZE, it is set to VIAL_MAX_SIZE
+	.macro pokevialincreasesize
+	pokevial VIAL_INCREASE VIAL_SIZE 1
+	.endm
 
-    @ Adds 1 dose to the Pokevial
-    @ If the number of doses exceeds the current size of the Pokevial, it is set to the size of the Pokevial
-    .macro pokevialadddose
-    pokevial VIAL_ADD VIAL_DOSE VIAL_STANDARD_DOSE
-    .endm
+	@ Adds 1 dose to the Pokevial
+	@ If the number of doses exceeds the current size of the Pokevial, it is set to the size of the Pokevial
+	.macro pokevialadddose
+	pokevial VIAL_ADD VIAL_DOSE VIAL_STANDARD_DOSE
+	.endm
 
-    @ Decreases the size of the Pokevial by 1
-    @ If the size of the vial is less than VIAL_MIN_SIZE, it is set to VIAL_MIN_SIZE
-    .macro pokevialdecreasesize
-    pokevial VIAL_DECREASE VIAL_SIZE 1
-    .endm
+	@ Decreases the size of the Pokevial by 1
+	@ If the size of the vial is less than VIAL_MIN_SIZE, it is set to VIAL_MIN_SIZE
+	.macro pokevialdecreasesize
+	pokevial VIAL_DECREASE VIAL_SIZE 1
+	.endm
 
-    @ Removes 1 dose to the Pokevial
-    @ If the number of doses is less than EMPTY_VIAL, it is set to EMPTY_VIAL
-    .macro pokevialremovedose
-    pokevial VIAL_REMOVE VIAL_DOSE VIAL_STANDARD_DOSE
-    .endm
+	@ Removes 1 dose to the Pokevial
+	@ If the number of doses is less than EMPTY_VIAL, it is set to EMPTY_VIAL
+	.macro pokevialremovedose
+	pokevial VIAL_REMOVE VIAL_DOSE VIAL_STANDARD_DOSE
+	.endm
 
-    @ Refill vial so doses equals size, and outputs the success of the oepration to VAR_RESULT
-    .macro pokevialrefill
-    specialvar VAR_RESULT,PokevialRefill
-    .endm
+	@ Refill vial so doses equals size, and outputs the success of the oepration to VAR_RESULT
+	.macro pokevialrefill
+	specialvar VAR_RESULT,PokevialRefill
+	.endm
 
-    @ A combination of pokevialincreasesize and pokevialrefill
-    .macro pokevialreward
-    pokevial VIAL_INCREASE VIAL_SIZE 1
-    specialvar VAR_RESULT,PokevialRefill
-    .endm
+	@ A combination of pokevialincreasesize and pokevialrefill
+	.macro pokevialreward
+	pokevial VIAL_INCREASE VIAL_SIZE 1
+	specialvar VAR_RESULT,PokevialRefill
+	.endm
 
-    @ End Pokevial Branch
+	@ End Pokevial Branch
 	
 	@ Adds unit system string to the respective stringvar.
 	@ texttype values:

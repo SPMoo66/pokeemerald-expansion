@@ -104,7 +104,7 @@ Route106_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq Route106_EventScript_ChallengeBall1_2
 Route106_EventScript_ChallengeBall1_1:
-# 63 "data/maps/Route106/scripts.pory"
+# 66 "data/maps/Route106/scripts.pory"
 	release
 	return
 
@@ -118,10 +118,16 @@ Route106_EventScript_ChallengeBall1_2:
 # 58 "data/maps/Route106/scripts.pory"
 	setvar VAR_STARTING_STATUS, 3
 # 59 "data/maps/Route106/scripts.pory"
-	setwildbattle SPECIES_GLOOM_EMERIBIAN, 16, ITEM_NONE, SPECIES_SKIDDO_EMERIBIAN, 16, ITEM_NONE
+	setwildbattle SPECIES_GLOOM_EMERIBIAN, 16, ITEM_NONE, 0, SPECIES_VULPIX, 16, ITEM_NONE, 2
 # 60 "data/maps/Route106/scripts.pory"
 	dowildbattle
 # 61 "data/maps/Route106/scripts.pory"
+	clearflag FLAG_NO_CATCHING
+# 62 "data/maps/Route106/scripts.pory"
+	clearflag FLAG_NO_RUNNING
+# 63 "data/maps/Route106/scripts.pory"
+	clearflag FLAG_SMART_WILD_AI
+# 64 "data/maps/Route106/scripts.pory"
 	finditem ITEM_ESCAPE_ROPE, 1
 	goto Route106_EventScript_ChallengeBall1_1
 

@@ -125,13 +125,16 @@ void CreateScriptedWildMon(u16 species, u8 level, u16 item)
         SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, heldItem);
     }
 }
-void CreateScriptedDoubleWildMon(u16 species1, u8 level1, u16 item1, u8 abilityNum1, u16 species2, u8 level2, u16 item2, u8 abilityNum2)
+void CreateScriptedDoubleWildMon(u16 species1, u8 level1, u16 item1, u8 abilityNum1, u16 species2, u8 level2, u16 item2, u8 abilityNum2, u16 move11, u16 move12, u16 move13, u16 move14, u16 move21, u16 move22, u16 move23, u16 move24)
 {
     u8 heldItem1[2];
     u8 heldItem2[2];
+    u16 movesMon1[MAX_MON_MOVES] = {move11, move12, move13, move14};
+    u16 movesMon2[MAX_MON_MOVES] = {move21, move22, move23, move24};
+    u32 i;
 
     ZeroEnemyPartyMons();
-
+    // mon 1
     if (OW_SYNCHRONIZE_NATURE > GEN_3)
         CreateMonWithNature(&gEnemyParty[0], species1, level1, 32, PickWildMonNature());
     else
@@ -143,7 +146,13 @@ void CreateScriptedDoubleWildMon(u16 species1, u8 level1, u16 item1, u8 abilityN
         SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, heldItem1);
     }
     SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &abilityNum1);
-
+    for (i = 0; i < MAX_MON_MOVES; i++)
+    {
+        if (movesMon1[i] == MOVE_NONE || movesMon1[i] >= MOVES_COUNT)
+            continue;
+        SetMonMoveSlot(&gEnemyParty[0], movesMon1[i], i);
+    }
+    // mon 2
     if (OW_SYNCHRONIZE_NATURE > GEN_3)
         CreateMonWithNature(&gEnemyParty[1], species2, level2, 32, PickWildMonNature());
     else
@@ -155,6 +164,12 @@ void CreateScriptedDoubleWildMon(u16 species1, u8 level1, u16 item1, u8 abilityN
         SetMonData(&gEnemyParty[1], MON_DATA_HELD_ITEM, heldItem2);
     }
     SetMonData(&gEnemyParty[1], MON_DATA_ABILITY_NUM, &abilityNum2);
+    for (i = 0; i < MAX_MON_MOVES; i++)
+    {
+        if (movesMon2[i] == MOVE_NONE || movesMon2[i] >= MOVES_COUNT)
+            continue;
+        SetMonMoveSlot(&gEnemyParty[1], movesMon2[i], i);
+    }
 }
 
 void ScriptSetMonMoveSlot(u8 monIndex, u16 move, u8 slot)

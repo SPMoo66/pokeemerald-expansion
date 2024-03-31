@@ -118,7 +118,7 @@ Route106_EventScript_ChallengeBall1_2:
 # 58 "data/maps/Route106/scripts.pory"
 	setvar VAR_STARTING_STATUS, 3
 # 59 "data/maps/Route106/scripts.pory"
-	setwildbattle SPECIES_GLOOM_EMERIBIAN, 16, ITEM_NONE, 0, SPECIES_VULPIX, 16, ITEM_NONE, 2
+	setwildbattle SPECIES_GLOOM_EMERIBIAN, 16, ITEM_NONE, 0, SPECIES_SKIDDO_EMERIBIAN, 16, ITEM_NONE, 2, MOVE_HYPER_BEAM
 # 60 "data/maps/Route106/scripts.pory"
 	dowildbattle
 # 61 "data/maps/Route106/scripts.pory"

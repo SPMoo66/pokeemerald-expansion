@@ -56,7 +56,7 @@ script Route106_EventScript_ChallengeBall1 {
 		setflag (FLAG_NO_RUNNING)
 		setflag (FLAG_SMART_WILD_AI)
 		setvar (VAR_STARTING_STATUS, 3)
-		setwildbattle (SPECIES_GLOOM_EMERIBIAN, 16, ITEM_NONE, 0, SPECIES_SKIDDO_EMERIBIAN, 16, ITEM_NONE, 2)
+		setwildbattle (SPECIES_GLOOM_EMERIBIAN, 16, ITEM_NONE, 0, SPECIES_SKIDDO_EMERIBIAN, 16, ITEM_NONE, 2, MOVE_HYPER_BEAM)
 		dowildbattle
 		clearflag (FLAG_NO_CATCHING)
 		clearflag (FLAG_NO_RUNNING)

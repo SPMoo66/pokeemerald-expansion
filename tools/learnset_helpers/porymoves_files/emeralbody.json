@@ -1,4 +1,22 @@
 {
+  "NINJASK": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_STEEL_WING"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "SHEDINJA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_STEEL_WING"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
     "ARSELLOSKY": {
       "LevelMoves": [],
       "PreEvoMoves": [],

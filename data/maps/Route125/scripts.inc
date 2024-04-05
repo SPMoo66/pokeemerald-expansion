@@ -175,10 +175,10 @@ Route125_EventScript_WatchGentleman::
 # 90 "data/maps/Route125/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route125_EventScript_WatchGentleman_2
-# 102 "data/maps/Route125/scripts.pory"
-	msgbox Route125_EventScript_WatchGentleman_Text_2
+# 99 "data/maps/Route125/scripts.pory"
+	msgbox Route125_EventScript_WatchGentleman_Text_1
 Route125_EventScript_WatchGentleman_1:
-# 104 "data/maps/Route125/scripts.pory"
+# 101 "data/maps/Route125/scripts.pory"
 	releaseall
 	end
 
@@ -195,12 +195,6 @@ Route125_EventScript_WatchGentleman_2:
 	special Special_ViewWallClock
 # 96 "data/maps/Route125/scripts.pory"
 	waitstate
-# 97 "data/maps/Route125/scripts.pory"
-	delay 300
-# 98 "data/maps/Route125/scripts.pory"
-	waitmovement 0
-# 99 "data/maps/Route125/scripts.pory"
-	msgbox Route125_EventScript_WatchGentleman_Text_1
 	goto Route125_EventScript_WatchGentleman_1
 
 
@@ -211,8 +205,4 @@ Route125_EventScript_WatchGentleman_Text_0:
 
 Route125_EventScript_WatchGentleman_Text_1:
 # 99 "data/maps/Route125/scripts.pory"
-	.string "Thank you!$"
-
-Route125_EventScript_WatchGentleman_Text_2:
-# 102 "data/maps/Route125/scripts.pory"
 	.string "Well then...$"

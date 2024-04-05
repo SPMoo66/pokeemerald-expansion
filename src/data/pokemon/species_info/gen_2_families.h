@@ -1144,6 +1144,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Spinarak)
         .levelUpLearnset = sSpinarakLevelUpLearnset,
         .teachableLearnset = sSpinarakTeachableLearnset,
+        .formSpeciesIdTable = sSpinarakFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_ARIADOS}),
     },
 
@@ -1254,7 +1255,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
         .palette = gMonPalette_SpinarakEmeribian,
         .shinyPalette = gMonShinyPalette_SpinarakEmeribian,
-        .iconSprite = gMonIcon_Spinarak,
+        .iconSprite = gMonIcon_SpinarakEmeribian,
         .iconPalIndex = 1,
         FOOTPRINT(Spinarak)
         .levelUpLearnset = sSpinarakEmeribianLevelUpLearnset,

@@ -7115,9 +7115,7 @@ BattleScript_IllusionOff::
 
 BattleScript_CottonDownActivates::
 	copybyte sSAVED_BATTLER, gBattlerAttacker
-	showabilitypopup BS_TARGET
-	pause B_WAIT_TIME_LONG
-	destroyabilitypopup
+	call BattleScript_AbilityPopUpTarget
 	copybyte gEffectBattler, gBattlerTarget
 	swapattackerwithtarget
 	setbyte gBattlerTarget, 0
@@ -7764,10 +7762,12 @@ BattleScript_TryIntimidateHoldEffectsRet:
 	return
 
 BattleScript_IntimidateActivates::
-	showabilitypopup BS_ATTACKER
 	copybyte sSAVED_BATTLER, gBattlerTarget
+.if B_ABILITY_POP_UP == TRUE
+	showabilitypopup BS_ATTACKER
 	pause B_WAIT_TIME_LONG
 	destroyabilitypopup
+.endif
 	setbyte gBattlerTarget, 0
 BattleScript_IntimidateLoop:
 	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_IntimidateLoopIncrement
@@ -7816,10 +7816,12 @@ BattleScript_IntimidateInReverse:
 	goto BattleScript_IntimidateLoopIncrement
 
 BattleScript_SupersweetSyrupActivates::
-	showabilitypopup BS_ATTACKER
  	copybyte sSAVED_BATTLER, gBattlerTarget
+.if B_ABILITY_POP_UP == TRUE
+	showabilitypopup BS_ATTACKER
 	pause B_WAIT_TIME_LONG
 	destroyabilitypopup
+.endif
 	printstring STRINGID_SUPERSWEETAROMAWAFTS
 	waitmessage B_WAIT_TIME_LONG
 	setbyte gBattlerTarget, 0
@@ -9517,7 +9519,7 @@ BattleScript_WellBakedBodyActivates::
 	attackstring
 	ppreduce
 	pause B_WAIT_TIME_SHORT
-	showabilitypopup BS_TARGET
+	call BattleScript_AbilityPopUpTarget
 	orhalfword gMoveResultFlags, MOVE_RESULT_NO_EFFECT
 	modifybattlerstatstage BS_TARGET, STAT_DEF, INCREASE, 1, BattleScript_WellBakedBodyEnd, ANIM_ON
 BattleScript_WellBakedBodyEnd:
@@ -9527,7 +9529,7 @@ BattleScript_WindRiderActivatesMoveEnd::
 	attackstring
 	ppreduce
 	pause B_WAIT_TIME_SHORT
-	showabilitypopup BS_TARGET
+	call BattleScript_AbilityPopUpTarget
 	orhalfword gMoveResultFlags, MOVE_RESULT_NO_EFFECT
 	modifybattlerstatstage BS_TARGET, STAT_ATK, INCREASE, 1, BattleScript_WindRiderActivatesMoveEnd_End, ANIM_ON
 BattleScript_WindRiderActivatesMoveEnd_End:
@@ -9536,7 +9538,7 @@ BattleScript_WindRiderActivatesMoveEnd_End:
 BattleScript_GoodAsGoldActivates::
 	attackstring
 	ppreduce
-	showabilitypopup BS_TARGET
+	call BattleScript_AbilityPopUpTarget
 	pause B_WAIT_TIME_SHORT
 	printstring STRINGID_ITDOESNTAFFECT
 	waitmessage B_WAIT_TIME_MED

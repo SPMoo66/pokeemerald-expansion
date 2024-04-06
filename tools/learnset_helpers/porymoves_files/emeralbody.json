@@ -466,11 +466,21 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "VAPOREON": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_DAZZLING_GLEAM"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "JOLTEON": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
-        "MOVE_ZING_ZAP"
+        "MOVE_ZING_ZAP",
+        "MOVE_FLASH_CANNON"
 	],
     "EggMoves": [],
     "TutorMoves": []
@@ -535,7 +545,8 @@
     "PreEvoMoves": [],
     "TMMoves": [
         "MOVE_AURA_SPHERE",
-        "MOVE_DAZZLING_GLEAM"
+        "MOVE_DAZZLING_GLEAM",
+        "MOVE_PLAY_ROUGH"
 	],
     "EggMoves": [],
     "TutorMoves": []
@@ -762,11 +773,31 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "WEAVILE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_FROST_BREATH"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "SWINUB": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_AURORA_VEIL"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "PILOSWINE": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
-        "MOVE_SMART_STRIKE"
+        "MOVE_SMART_STRIKE",
+        "MOVE_AURORA_VEIL",
+        "MOVE_FROST_BREATH"
 	],
     "EggMoves": [],
     "TutorMoves": []
@@ -853,6 +884,24 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "GROVYLE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_U_TURN"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "SCEPTILE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_U_TURN"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "COMBUSKEN": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -903,7 +952,8 @@
     "PreEvoMoves": [],
     "TMMoves": [
         "MOVE_STEEL_WING",
-        "MOVE_AURA_SPHERE"
+        "MOVE_AURA_SPHERE",
+        "MOVE_U_TURN"
 	],
     "EggMoves": [],
     "TutorMoves": []
@@ -1085,7 +1135,17 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
-        "MOVE_AURA_SPHERE"
+        "MOVE_AURA_SPHERE",
+        "MOVE_DAZZLING_GLEAM"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "CASTFORM": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_AURORA_VEIL"
 	],
     "EggMoves": [],
     "TutorMoves": []
@@ -1104,6 +1164,51 @@
     "PreEvoMoves": [],
     "TMMoves": [
         "MOVE_VACUUM_WAVE"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "SNORUNT": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_AURORA_VEIL"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "GLALIE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_AURORA_VEIL"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "SPHEAL": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_AURORA_VEIL"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "SEALEO": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_AURORA_VEIL"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "WALREIN": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_AURORA_VEIL"
 	],
     "EggMoves": [],
     "TutorMoves": []
@@ -1368,7 +1473,9 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
-        "MOVE_SMART_STRIKE"
+        "MOVE_SMART_STRIKE",
+        "MOVE_AURORA_VEIL",
+        "MOVE_FROST_BREATH"
 	],
     "EggMoves": [],
     "TutorMoves": []
@@ -1749,11 +1856,21 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "CUBCHOO": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_AURORA_VEIL"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "BEARTIC": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
-        "MOVE_VACUUM_WAVE"
+        "MOVE_VACUUM_WAVE",
+        "MOVE_AURORA_VEIL"
 	],
     "EggMoves": [],
     "TutorMoves": []

@@ -1385,7 +1385,8 @@
     "TMMoves": [
         "MOVE_AURA_SPHERE",
         "MOVE_VACUUM_WAVE",
-        "MOVE_SHADOW_CLAW"
+        "MOVE_SHADOW_CLAW",
+        "MOVE_STEEL_WING"
 	],
     "EggMoves": [],
     "TutorMoves": []
@@ -1431,7 +1432,8 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
-        "MOVE_POWER_GEM"
+        "MOVE_POWER_GEM",
+        "MOVE_STEEL_WING"
 	],
     "EggMoves": [],
     "TutorMoves": []
@@ -2040,7 +2042,8 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
-        "MOVE_POWER_GEM"
+        "MOVE_POWER_GEM",
+        "MOVE_STEEL_WING"
 	],
     "EggMoves": [],
     "TutorMoves": []
@@ -2513,7 +2516,8 @@
     "PreEvoMoves": [],
     "TMMoves": [
         "MOVE_VACUUM_WAVE",
-        "MOVE_POWER_GEM"
+        "MOVE_POWER_GEM",
+        "MOVE_SLUDGE_BOMB"
 	],
     "EggMoves": [],
     "TutorMoves": []

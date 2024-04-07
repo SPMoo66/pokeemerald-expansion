@@ -1,0 +1,12 @@
+raw `
+GraniteCave_1F_MapScripts::
+	.byte 0
+`
+
+script GraniteCave_1F_EventScript_Hiker {
+	lock
+	faceplayer
+	msgbox(format("Years ago the lower levels of this cave used to be pitch dark.\pRecently they've been all lit up, almost like magic.\pI used to hand out a Hidden Machine to deal with it, but they discontinued it."))
+	release
+	end
+}

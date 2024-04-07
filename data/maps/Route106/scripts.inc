@@ -118,11 +118,11 @@ Route106_EventScript_ChallengeBall1_2:
 # 58 "data/maps/Route106/scripts.pory"
 	setvar VAR_STARTING_STATUS, 3
 # 59 "data/maps/Route106/scripts.pory"
-	settotemboost 3, 1
-# 60 "data/maps/Route106/scripts.pory"
 	setwildbattle SPECIES_GLOOM_EMERIBIAN, 17, ITEM_NONE, 0, SPECIES_SKIDDO_EMERIBIAN, 17, ITEM_NONE, 2, MOVE_MEGA_DRAIN, MOVE_SOAK, MOVE_LIFE_DEW, MOVE_BUBBLE_BEAM, MOVE_TRAILBLAZE, MOVE_INGRAIN, MOVE_GROWL, MOVE_CAMOUFLAGE
-# 61 "data/maps/Route106/scripts.pory"
+# 60 "data/maps/Route106/scripts.pory"
 	dowildbattle
+# 61 "data/maps/Route106/scripts.pory"
+	setvar VAR_STARTING_STATUS, 0
 # 62 "data/maps/Route106/scripts.pory"
 	clearflag FLAG_NO_CATCHING
 # 63 "data/maps/Route106/scripts.pory"
@@ -137,5 +137,5 @@ Route106_EventScript_ChallengeBall1_2:
 Route106_EventScript_ChallengeBall1_Text_0:
 # 53 "data/maps/Route106/scripts.pory"
 	.string "You feel grass growing beneath the\n"
-	.string "sand.\l"
+	.string "sand.\p"
 	.string "Reach out for the item?$"

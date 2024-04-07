@@ -125,7 +125,7 @@
 #define FLAG_RECEIVED_HM_STRENGTH            0x6A
 #define FLAG_RECEIVED_HM_ROCK_SMASH          0x6B
 #define FLAG_WHITEOUT_TO_LAVARIDGE           0x6C // Set after defeating Flannery, so the player cant white out from poison before receiving Go Goggles
-#define FLAG_RECEIVED_HM_ROCK_CLIMB          0x6D
+#define FLAG_RECEIVED_HM_ROCK_CLIMB          0x6D // Was for Flash. Assign when giving out the Rock Climb HM
 #define FLAG_RECEIVED_HM_FLY                 0x6E
 #define FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT  0x6F
 #define FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE  0x70
@@ -653,27 +653,27 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
 #define FLAG_CHALLENGE_BALL_ROUTE_106       0x264 // Challenge Ball
-#define FLAG_CHALLENGE_BALL_GRANITE_CAVE_1  0x265 // Challenge Ball
-#define FLAG_CHALLENGE_BALL_GRANITE_CAVE_2  0x266 // Challenge Ball
-#define FLAG_CHALLENGE_BALL_ROUTE_103       0x267 // Challenge Ball
-#define FLAG_CHALLENGE_BALL_ROUTE_110_1     0x268 // Challenge Ball
-#define FLAG_CHALLENGE_BALL_ROUTE_110_2     0x269 // Challenge Ball
-#define FLAG_CHALLENGE_BALL_ROUTE_118       0x26A // Challenge Ball
-#define FLAG_CHALLENGE_BALL_ROUTE_117       0x26B // Challenge Ball
-#define FLAG_CHALLENGE_BALL_ROUTE_113_1     0x26C // Challenge Ball
-#define FLAG_CHALLENGE_BALL_ROUTE_113_2     0x26D // Challenge Ball
-#define FLAG_CHALLENGE_BALL_ROUTE_114       0x26E // Challenge Ball
-#define FLAG_CHALLENGE_BALL_METEOR_FALLS    0x26F // Challenge Ball
-#define FLAG_CHALLENGE_BALL_ROUTE_123       0x270 // Challenge Ball
-#define FLAG_CHALLENGE_BALL_ROUTE_119       0x271 // Challenge Ball
-#define FLAG_CHALLENGE_BALL_ROUTE_120       0x272 // Challenge Ball
-#define FLAG_CHALLENGE_BALL_MT_PYRE         0x273 // Challenge Ball
-#define FLAG_CHALLENGE_BALL_LILYCOVE_CITY   0x274 // Challenge Ball
-#define FLAG_CHALLENGE_BALL_MOSSDEEP_CITY   0x275 // Challenge Ball
-#define FLAG_CHALLENGE_BALL_ROUTE_127       0x276 // Challenge Ball
-#define FLAG_CHALLENGE_BALL_ROUTE_132       0x277 // Challenge Ball
-#define FLAG_CHALLENGE_BALL_ROUTE_133       0x278 // Challenge Ball
-#define FLAG_CHALLENGE_BALL_ROUTE_134       0x279 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_103       0x265 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_110_1     0x266 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_110_2     0x267 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_118       0x268 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_117       0x269 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_113_1     0x26A // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_113_2     0x26B // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_114       0x26C // Challenge Ball
+#define FLAG_CHALLENGE_BALL_METEOR_FALLS    0x26D // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_123       0x26E // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_119       0x26F // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_120       0x270 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_MT_PYRE         0x271 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_LILYCOVE_CITY   0x272 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_MOSSDEEP_CITY   0x273 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_127       0x274 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_132       0x275 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_133       0x276 // Challenge Ball
+#define FLAG_CHALLENGE_BALL_ROUTE_134       0x277 // Challenge Ball
+#define FLAG_ITEM_GRANITE_CAVE_B3F_NUGGET   0x278 // Granite Cave ice floor
+#define FLAG_UNUSED_0x279  0x279 // Unused Flag
 #define FLAG_UNUSED_0x27A  0x27A // Unused Flag
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag
 #define FLAG_UNUSED_0x27C  0x27C // Unused Flag
@@ -1097,10 +1097,10 @@
 #define FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL                          0x418
 #define FLAG_ITEM_RUSTURF_TUNNEL_MAX_ETHER                          0x419
 #define FLAG_ITEM_GRANITE_CAVE_1F_ESCAPE_ROPE                       0x41A
-#define FLAG_ITEM_GRANITE_CAVE_B1F_POKE_BALL                        0x41B
+#define FLAG_CHALLENGE_BALL_GRANITE_CAVE_1                          0x41B // Unused
 #define FLAG_ITEM_MT_PYRE_5F_LAX_INCENSE                            0x41C
 #define FLAG_ITEM_GRANITE_CAVE_B2F_REPEL                            0x41D
-#define FLAG_ITEM_GRANITE_CAVE_B2F_RARE_CANDY                       0x41E
+#define FLAG_CHALLENGE_BALL_GRANITE_CAVE_2                          0x41E
 #define FLAG_ITEM_PETALBURG_WOODS_X_ATTACK                          0x41F
 #define FLAG_ITEM_PETALBURG_WOODS_GREAT_BALL                        0x420
 #define FLAG_ITEM_ROUTE_104_POKE_BALL                               0x421

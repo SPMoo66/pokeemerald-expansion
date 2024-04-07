@@ -1,39 +1,27 @@
+# 1 "data/maps/GraniteCave_1F/scripts.pory"
+
+# 2 "data/maps/GraniteCave_1F/scripts.pory"
 GraniteCave_1F_MapScripts::
+# 3 "data/maps/GraniteCave_1F/scripts.pory"
 	.byte 0
 
 GraniteCave_1F_EventScript_Hiker::
+# 7 "data/maps/GraniteCave_1F/scripts.pory"
 	lock
+# 8 "data/maps/GraniteCave_1F/scripts.pory"
 	faceplayer
-	goto_if_set FLAG_RECEIVED_HM_ROCK_CLIMB, GraniteCave_1F_EventScript_ReceivedRockClimb
-	msgbox GraniteCave_1F_Text_GetsDarkAheadHereYouGo, MSGBOX_DEFAULT
-	giveitem ITEM_HM_ROCK_CLIMB
-	setflag FLAG_RECEIVED_HM_ROCK_CLIMB
-	msgbox GraniteCave_1F_Text_ExplainRockClimb, MSGBOX_DEFAULT
+# 9 "data/maps/GraniteCave_1F/scripts.pory"
+	msgbox GraniteCave_1F_EventScript_Hiker_Text_0
+# 10 "data/maps/GraniteCave_1F/scripts.pory"
 	release
 	end
 
-GraniteCave_1F_EventScript_ReceivedRockClimb::
-	msgbox GraniteCave_1F_Text_ExplainRockClimb, MSGBOX_DEFAULT
-	release
-	end
 
-GraniteCave_1F_Text_GetsDarkAheadHereYouGo:
-	.string "Hey, you.\n"
-	.string "It gets awfully dark ahead.\l"
-	.string "It'll be tough trying to explore.\p"
-	.string "That guy who came by earlier…\n"
-	.string "Steven, I think it was.\p"
-	.string "He knew how to use RockClimb, so he ought\n"
-	.string "to be all right, but…\p"
-	.string "Well, for us Hikers, helping out those\n"
-	.string "that we meet is our motto.\p"
-	.string "Here you go, I'll pass this on to you.$"
-
-GraniteCave_1F_Text_ExplainRockClimb:
-	.string "Teach that hidden move RockClimb to\n"
-	.string "a Pokémon and use it.\p"
-	.string "It lights up even the inky darkness\n"
-	.string "of caves.\p"
-	.string "But, to use it, you need the Gym Badge\n"
-	.string "from Dewford's Pokémon Gym.$"
-
+GraniteCave_1F_EventScript_Hiker_Text_0:
+# 9 "data/maps/GraniteCave_1F/scripts.pory"
+	.string "Years ago the lower levels of this cave\n"
+	.string "used to be pitch dark.\p"
+	.string "Recently they've been all lit up, almost\n"
+	.string "like magic.\p"
+	.string "I used to hand out a Hidden Machine to\n"
+	.string "deal with it, but they discontinued it.$"

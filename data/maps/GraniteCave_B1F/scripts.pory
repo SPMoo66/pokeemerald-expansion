@@ -1,0 +1,45 @@
+raw `
+GraniteCave_B1F_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, CaveHole_CheckFallDownHole
+	map_script MAP_SCRIPT_ON_TRANSITION, CaveHole_FixCrackedGround
+	map_script MAP_SCRIPT_ON_RESUME, GraniteCave_B1F_SetHoleWarp
+	.byte 0
+
+GraniteCave_B1F_SetHoleWarp:
+	setstepcallback STEP_CB_CRACKED_FLOOR
+	setholewarp MAP_GRANITE_CAVE_B2F
+	end
+
+GraniteCave_B1F_EventScript_Evelyn::
+	trainerbattle_single TRAINER_EVELYN, GraniteCave_B1F_Text_EvelynIntro, GraniteCave_B1F_Text_EvelynDefeated
+	msgbox GraniteCave_B1F_Text_EvelynPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+GraniteCave_B1F_Text_EvelynIntro:
+	.string "Now that this cave isn't so dark\n"
+	.string "it's great for training!$"
+
+GraniteCave_B1F_Text_EvelynDefeated:
+	.string "Thrown back into darkness!$"
+
+GraniteCave_B1F_Text_EvelynPostBattle:
+	.string "A lit cave alone won't make me stronger!$"
+`
+
+script GraniteCave_B1F_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You feel a drip from the ceiling.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		settotemboost (1, 1)
+		setwildbattle (SPECIES_LUVDISC, 18, ITEM_NONE, 1, SPECIES_POLIWHIRL, 18, ITEM_NONE, 2, MOVE_AQUA_JET, MOVE_ICY_WIND, MOVE_RAIN_DANCE, MOVE_WHIRLPOOL, MOVE_CHILLING_WATER, MOVE_MUD_SHOT, MOVE_LOW_SWEEP, MOVE_SWIFT)
+		dowildbattle
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_GOOD_ROD, 1)
+	}
+	release
+}

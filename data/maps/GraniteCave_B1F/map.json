@@ -15,7 +15,7 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_BLUE",
       "x": 15,
       "y": 21,
       "elevation": 3,
@@ -23,9 +23,9 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_GOOD_ROD",
-      "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_GRANITE_CAVE_B1F_POKE_BALL"
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GraniteCave_B1F_EventScript_ChallengeBall1",
+      "flag": "FLAG_CHALLENGE_BALL_GRANITE_CAVE_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_3",

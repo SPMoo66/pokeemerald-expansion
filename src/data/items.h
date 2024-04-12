@@ -10070,7 +10070,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Fires an icy cold\n"
             "beam that may\n"
-            "freeze the foe."),
+            "give the foe Frostbite."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10085,7 +10085,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "A brutal snow-and-\n"
             "wind attack that\n"
-            "may freeze the foe."),
+            "may inflict Frostbite."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

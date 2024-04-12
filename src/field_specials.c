@@ -1187,7 +1187,7 @@ void EndLotteryCornerComputerEffect(void)
 void SetTrickHouseNuggetFlag(void)
 {
     u16 *specVar = &gSpecialVar_0x8004;
-    u16 flag = FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET;
+    u16 flag = FLAG_HIDDEN_ITEM_TRICK_HOUSE_BIG_NUGGET;
     *specVar = flag;
     FlagSet(flag);
 }
@@ -1195,7 +1195,7 @@ void SetTrickHouseNuggetFlag(void)
 void ResetTrickHouseNuggetFlag(void)
 {
     u16 *specVar = &gSpecialVar_0x8004;
-    u16 flag = FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET;
+    u16 flag = FLAG_HIDDEN_ITEM_TRICK_HOUSE_BIG_NUGGET;
     *specVar = flag;
     FlagClear(flag);
 }
@@ -1526,7 +1526,7 @@ static void StopCameraShake(u8 taskId)
 
 bool8 FoundBlackGlasses(void)
 {
-    return FlagGet(FLAG_HIDDEN_ITEM_ROUTE_116_BLACK_GLASSES);
+    return FlagGet(FLAG_HIDDEN_ITEM_ROUTE_116_BIG_PEARL);
 }
 
 void SetRoute119Weather(void)

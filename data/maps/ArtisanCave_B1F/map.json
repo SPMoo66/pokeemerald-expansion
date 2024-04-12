@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_NUGGET",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ARTISAN_CAVE_B1F_HP_UP"
+      "flag": "FLAG_ITEM_ARTISAN_CAVE_B1F_NUGGET"
     }
   ],
   "warp_events": [
@@ -54,7 +54,7 @@
       "y": 28,
       "elevation": 0,
       "item": "ITEM_NUGGET",
-      "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_ZINC"
+      "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_NUGGET_2"
     },
     {
       "type": "hidden_item",
@@ -62,7 +62,7 @@
       "y": 7,
       "elevation": 0,
       "item": "ITEM_NUGGET",
-      "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_CALCIUM"
+      "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_NUGGET"
     },
     {
       "type": "hidden_item",
@@ -70,7 +70,7 @@
       "y": 4,
       "elevation": 0,
       "item": "ITEM_NUGGET",
-      "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_PROTEIN"
+      "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_NUGGET_3"
     },
     {
       "type": "hidden_item",
@@ -78,7 +78,7 @@
       "y": 42,
       "elevation": 0,
       "item": "ITEM_NUGGET",
-      "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_IRON"
+      "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_NUGGET_4"
     }
   ]
 }

@@ -244,7 +244,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_RARE_BONE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_119_SUPER_REPEL"
+      "flag": "FLAG_ITEM_ROUTE_119_RARE_BONE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -257,7 +257,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_BIG_PEARL",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_119_ZINC"
+      "flag": "FLAG_ITEM_ROUTE_119_BIG_PEARL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -270,7 +270,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_RARE_BONE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_119_ELIXIR_1"
+      "flag": "FLAG_ITEM_ROUTE_119_RARE_BONE_2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -283,7 +283,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_RARE_BONE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_119_LEAF_STONE"
+      "flag": "FLAG_ITEM_ROUTE_119_RARE_BONE_3"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ANABEL",
@@ -296,7 +296,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_WEAKNESS_POLICY",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_119_RARE_CANDY"
+      "flag": "FLAG_CHALLENGE_BALL_ROUTE_119"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -309,7 +309,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_RARE_BONE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_119_HYPER_POTION_1"
+      "flag": "FLAG_ITEM_ROUTE_119_RARE_BONE_4"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
@@ -439,7 +439,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_RARE_BONE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_119_HYPER_POTION_2"
+      "flag": "FLAG_ITEM_ROUTE_119_RARE_BONE_5"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
@@ -569,7 +569,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_BOTTLE_CAP",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_119_ELIXIR_2"
+      "flag": "FLAG_ITEM_ROUTE_119_BOTTLE_CAP"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCOTT",
@@ -847,7 +847,7 @@
       "y": 82,
       "elevation": 3,
       "item": "ITEM_NUGGET",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_CALCIUM"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_NUGGET"
     },
     {
       "type": "hidden_item",
@@ -855,7 +855,7 @@
       "y": 63,
       "elevation": 3,
       "item": "ITEM_RARE_BONE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_ULTRA_BALL"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_RARE_BONE"
     },
     {
       "type": "secret_base",
@@ -898,7 +898,7 @@
       "y": 120,
       "elevation": 3,
       "item": "ITEM_RARE_BONE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_FULL_HEAL"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_RARE_BONE_2"
     },
     {
       "type": "hidden_item",
@@ -906,7 +906,7 @@
       "y": 29,
       "elevation": 3,
       "item": "ITEM_BIG_PEARL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_MAX_ETHER"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_BIG_PEARL"
     },
     {
       "type": "sign",

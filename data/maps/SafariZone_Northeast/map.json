@@ -156,7 +156,7 @@
       "y": 35,
       "elevation": 3,
       "item": "ITEM_STAR_PIECE",
-      "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_NORTH_EAST_RARE_CANDY"
+      "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_NORTH_EAST_STAR_PIECE_2"
     },
     {
       "type": "hidden_item",
@@ -164,7 +164,7 @@
       "y": 5,
       "elevation": 3,
       "item": "ITEM_STAR_PIECE",
-      "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_NORTH_EAST_ZINC"
+      "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_NORTH_EAST_STAR_PIECE"
     }
   ]
 }

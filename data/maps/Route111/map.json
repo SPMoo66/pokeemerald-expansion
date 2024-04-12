@@ -262,7 +262,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_NUGGET",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_111_TM_SANDSTORM"
+      "flag": "FLAG_ITEM_ROUTE_111_NUGGET"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -366,7 +366,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_BOTTLE_CAP",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_111_HP_UP"
+      "flag": "FLAG_ITEM_ROUTE_111_BOTTLE_CAP"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
@@ -574,7 +574,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_STARDUST",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_111_ELIXIR"
+      "flag": "FLAG_ITEM_ROUTE_111_STARDUST_2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
@@ -1092,8 +1092,8 @@
       "x": 19,
       "y": 55,
       "elevation": 0,
-      "item": "ITEM_PROTEIN",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_PROTEIN"
+      "item": "ITEM_STAR_PIECE",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_STAR_PIECE"
     },
     {
       "type": "hidden_item",
@@ -1101,7 +1101,7 @@
       "y": 66,
       "elevation": 0,
       "item": "ITEM_BIG_PEARL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_RARE_CANDY"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_BIG_PEARL"
     },
     {
       "type": "sign",

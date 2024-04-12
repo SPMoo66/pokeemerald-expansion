@@ -114,7 +114,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_PRETTY_FEATHER",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_116_ETHER"
+      "flag": "FLAG_ITEM_ROUTE_116_PRETTY_FEATHER"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -127,7 +127,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_PRETTY_FEATHER",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_116_REPEL"
+      "flag": "FLAG_ITEM_ROUTE_116_PRETTY_FEATHER_2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -218,7 +218,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_RARE_BONE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_116_HP_UP"
+      "flag": "FLAG_ITEM_ROUTE_116_RARE_BONE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
@@ -283,7 +283,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_PEARL",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_116_X_SPECIAL"
+      "flag": "FLAG_ITEM_ROUTE_116_PEARL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
@@ -348,7 +348,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_PRETTY_FEATHER",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_116_POTION"
+      "flag": "FLAG_ITEM_ROUTE_116_PRETTY_FEATHER_3"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
@@ -559,7 +559,7 @@
       "y": 9,
       "elevation": 3,
       "item": "ITEM_PEARL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_116_SUPER_POTION"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_116_PEARL"
     },
     {
       "type": "hidden_item",
@@ -567,7 +567,7 @@
       "y": 10,
       "elevation": 3,
       "item": "ITEM_BIG_PEARL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_116_BLACK_GLASSES"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_116_BIG_PEARL"
     }
   ]
 }

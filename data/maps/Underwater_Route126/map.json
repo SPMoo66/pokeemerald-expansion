@@ -51,7 +51,7 @@
       "y": 17,
       "elevation": 3,
       "item": "ITEM_RARE_BONE",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE"
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_RARE_BONE_2"
     },
     {
       "type": "hidden_item",
@@ -59,7 +59,7 @@
       "y": 19,
       "elevation": 3,
       "item": "ITEM_RARE_BONE",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_ULTRA_BALL"
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_RARE_BONE_3"
     },
     {
       "type": "hidden_item",
@@ -83,7 +83,7 @@
       "y": 39,
       "elevation": 3,
       "item": "ITEM_BIG_PEARL",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON"
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_BIG_PEARL_2"
     },
     {
       "type": "hidden_item",
@@ -91,7 +91,7 @@
       "y": 35,
       "elevation": 3,
       "item": "ITEM_RARE_BONE",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD"
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_RARE_BONE_4"
     },
     {
       "type": "hidden_item",
@@ -107,7 +107,7 @@
       "y": 77,
       "elevation": 3,
       "item": "ITEM_RARE_BONE",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD"
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_RARE_BONE"
     }
   ]
 }

@@ -153,7 +153,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_CHOICE_SCARF",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_133_MAX_REVIVE"
+      "flag": "FLAG_CHALLENGE_BALL_ROUTE_133"
     }
   ],
   "warp_events": [

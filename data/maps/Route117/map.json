@@ -205,7 +205,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_STARDUST",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_117_GREAT_BALL"
+      "flag": "FLAG_ITEM_ROUTE_117_STARDUST"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
@@ -231,7 +231,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_LUCKY_EGG",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_117_REVIVE"
+      "flag": "FLAG_CHALLENGE_BALL_ROUTE_117"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F",
@@ -407,7 +407,7 @@
       "y": 18,
       "elevation": 3,
       "item": "ITEM_PEARL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_117_REPEL"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_117_PEARL"
     }
   ]
 }

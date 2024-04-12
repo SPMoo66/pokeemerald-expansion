@@ -301,7 +301,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_RARE_BONE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_121_CARBOS"
+      "flag": "FLAG_ITEM_ROUTE_121_RARE_BONE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
@@ -392,7 +392,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_BIG_PEARL",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_121_REVIVE"
+      "flag": "FLAG_ITEM_ROUTE_121_BIG_PEARL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -405,7 +405,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_RARE_BONE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_121_ZINC"
+      "flag": "FLAG_ITEM_ROUTE_121_RARE_BONE_2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -545,7 +545,7 @@
       "y": 10,
       "elevation": 3,
       "item": "ITEM_BIG_PEARL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_HP_UP"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_BIG_PEARL"
     },
     {
       "type": "hidden_item",
@@ -561,7 +561,7 @@
       "y": 5,
       "elevation": 3,
       "item": "ITEM_RARE_BONE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_FULL_HEAL"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_RARE_BONE"
     },
     {
       "type": "hidden_item",
@@ -569,7 +569,7 @@
       "y": 8,
       "elevation": 3,
       "item": "ITEM_NUGGET",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_MAX_REVIVE"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_NUGGET_2"
     }
   ]
 }

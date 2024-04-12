@@ -51,7 +51,7 @@
     },
     {
       "x": 2,
-      "y": 6,
+      "y": 8,
       "elevation": 3,
       "dest_map": "MAP_SHOAL_CAVE_LOW_TIDE_INNER_ROOM",
       "dest_warp_id": "4"

@@ -166,7 +166,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_ROCKY_HELMET",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL"
+      "flag": "FLAG_CHALLENGE_BALL_LILYCOVE_CITY"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
@@ -502,7 +502,7 @@
       "y": 31,
       "elevation": 3,
       "item": "ITEM_RARE_BONE",
-      "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_HEART_SCALE"
+      "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_RARE_BONE"
     },
     {
       "type": "hidden_item",
@@ -510,7 +510,7 @@
       "y": 7,
       "elevation": 0,
       "item": "ITEM_RARE_BONE",
-      "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_PP_UP"
+      "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_RARE_BONE_2"
     },
     {
       "type": "hidden_item",
@@ -518,7 +518,7 @@
       "y": 31,
       "elevation": 0,
       "item": "ITEM_PEARL",
-      "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_POKE_BALL"
+      "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_PEARL"
     }
   ]
 }

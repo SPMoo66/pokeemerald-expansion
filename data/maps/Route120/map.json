@@ -309,7 +309,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_RARE_BONE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_120_FULL_HEAL"
+      "flag": "FLAG_ITEM_ROUTE_120_RARE_BONE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
@@ -387,7 +387,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_HEAVY_DUTY_BOOTS",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_120_NEST_BALL"
+      "flag": "FLAG_CHALLENGE_BALL_ROUTE_120"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -400,7 +400,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_BOTTLE_CAP",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_120_HYPER_POTION"
+      "flag": "FLAG_ITEM_ROUTE_120_BOTTLE_CAP"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KECLEON",
@@ -595,7 +595,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_BIG_PEARL",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_120_REVIVE"
+      "flag": "FLAG_ITEM_ROUTE_120_BIG_PEARL"
     }
   ],
   "warp_events": [
@@ -821,7 +821,7 @@
       "y": 1,
       "elevation": 3,
       "item": "ITEM_RARE_BONE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_1"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_RARE_BONE"
     },
     {
       "type": "hidden_item",
@@ -829,7 +829,7 @@
       "y": 11,
       "elevation": 3,
       "item": "ITEM_RARE_BONE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_REVIVE"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_RARE_BONE_3"
     },
     {
       "type": "hidden_item",
@@ -837,7 +837,7 @@
       "y": 86,
       "elevation": 3,
       "item": "ITEM_BIG_PEARL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_2"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_BIG_PEARL"
     },
     {
       "type": "hidden_item",
@@ -845,7 +845,7 @@
       "y": 42,
       "elevation": 3,
       "item": "ITEM_RARE_BONE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_ZINC"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_RARE_BONE_2"
     },
     {
       "type": "secret_base",

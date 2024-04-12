@@ -104,7 +104,7 @@
       "y": 36,
       "elevation": 3,
       "item": "ITEM_STAR_PIECE",
-      "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_SOUTH_EAST_PP_UP"
+      "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_SOUTH_EAST_STAR_PIECE"
     },
     {
       "type": "hidden_item",
@@ -112,7 +112,7 @@
       "y": 33,
       "elevation": 0,
       "item": "ITEM_STAR_PIECE",
-      "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_SOUTH_EAST_FULL_RESTORE"
+      "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_SOUTH_EAST_STAR_PIECE_2"
     }
   ]
 }

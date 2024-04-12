@@ -51,7 +51,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_RARE_BONE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_JAGGED_PASS_BURN_HEAL"
+      "flag": "FLAG_ITEM_JAGGED_PASS_RARE_BONE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
@@ -232,7 +232,7 @@
       "y": 10,
       "elevation": 3,
       "item": "ITEM_RARE_BONE",
-      "flag": "FLAG_HIDDEN_ITEM_JAGGED_PASS_FULL_HEAL"
+      "flag": "FLAG_HIDDEN_ITEM_JAGGED_PASS_RARE_BONE"
     },
     {
       "type": "hidden_item",
@@ -240,7 +240,7 @@
       "y": 29,
       "elevation": 3,
       "item": "ITEM_BIG_PEARL",
-      "flag": "FLAG_HIDDEN_ITEM_JAGGED_PASS_GREAT_BALL"
+      "flag": "FLAG_HIDDEN_ITEM_JAGGED_PASS_BIG_PEARL"
     }
   ]
 }

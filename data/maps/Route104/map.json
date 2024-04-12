@@ -301,7 +301,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_BOTTLE_CAP",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_104_PP_UP"
+      "flag": "FLAG_ITEM_ROUTE_104_BOTTLE_CAP"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
@@ -379,7 +379,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_TINY_MUSHROOM",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_104_POKE_BALL"
+      "flag": "FLAG_ITEM_ROUTE_104_TINY_MUSHROOM"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
@@ -405,7 +405,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_PEARL",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_104_X_ACCURACY"
+      "flag": "FLAG_ITEM_ROUTE_104_PEARL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
@@ -431,7 +431,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_PRETTY_FEATHER",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_104_POTION"
+      "flag": "FLAG_ITEM_ROUTE_104_PRETTY_FEATHER"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
@@ -589,7 +589,7 @@
       "y": 6,
       "elevation": 3,
       "item": "ITEM_PRETTY_FEATHER",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_SUPER_POTION"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_PRETTY_FEATHER_2"
     },
     {
       "type": "hidden_item",
@@ -597,7 +597,7 @@
       "y": 9,
       "elevation": 3,
       "item": "ITEM_TINY_MUSHROOM",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POKE_BALL"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_TINY_MUSHROOM_3"
     },
     {
       "type": "hidden_item",
@@ -605,7 +605,7 @@
       "y": 55,
       "elevation": 3,
       "item": "ITEM_PRETTY_FEATHER",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POTION"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_PRETTY_FEATHER"
     },
     {
       "type": "hidden_item",
@@ -613,7 +613,7 @@
       "y": 72,
       "elevation": 3,
       "item": "ITEM_TINY_MUSHROOM",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_ANTIDOTE"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_TINY_MUSHROOM"
     },
     {
       "type": "hidden_item",
@@ -621,7 +621,7 @@
       "y": 64,
       "elevation": 3,
       "item": "ITEM_TINY_MUSHROOM",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_HEART_SCALE"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_TINY_MUSHROOM_2"
     }
   ]
 }

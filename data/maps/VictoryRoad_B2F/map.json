@@ -77,7 +77,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_PEARL_STRING",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_VICTORY_ROAD_B2F_FULL_HEAL"
+      "flag": "FLAG_ITEM_VICTORY_ROAD_B2F_PEARL_STRING"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
@@ -146,7 +146,7 @@
       "y": 5,
       "elevation": 3,
       "item": "ITEM_BALM_MUSHROOM",
-      "flag": "FLAG_HIDDEN_ITEM_VICTORY_ROAD_B2F_ELIXIR"
+      "flag": "FLAG_HIDDEN_ITEM_VICTORY_ROAD_B2F_BALM_MUSHROOM"
     },
     {
       "type": "hidden_item",
@@ -154,7 +154,7 @@
       "y": 1,
       "elevation": 3,
       "item": "ITEM_RARE_BONE",
-      "flag": "FLAG_HIDDEN_ITEM_VICTORY_ROAD_B2F_MAX_REPEL"
+      "flag": "FLAG_HIDDEN_ITEM_VICTORY_ROAD_B2F_RARE_BONE"
     }
   ]
 }

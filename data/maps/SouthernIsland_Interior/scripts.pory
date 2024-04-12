@@ -1,0 +1,119 @@
+const LOCALID_LATI = 2
+
+mapscripts SouthernIsland_Interior_MapScripts {
+	MAP_SCRIPT_ON_RESUME: SouthernIsland_OnResume
+	MAP_SCRIPT_ON_TRANSITION: SouthernIsland_OnTransition
+}
+
+script SouthernIsland_OnResume {
+	if (flag(FLAG_SYS_CTRL_OBJ_DELETE) == true) {
+		specialvar (VAR_RESULT, GetBattleOutcome)
+		if (var(VAR_RESULT) != B_OUTCOME_CAUGHT) {
+			removeobject (LOCALID_LATI)
+		}
+	}
+}
+
+// VAR_ROAMER_POKEMON is set by the TV event after beating the game. 0 = Latias, 1 = Latios. The TV event will determine which Lati is fought first.
+script SouthernIsland_OnTransition {
+	if (var(VAR_ROAMER_POKEMON) == 0) {
+		if (flag(FLAG_CAUGHT_LATIAS_OR_LATIOS) == false) {     // This checks if the first Lati was caught
+			setvar (VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_LATIAS)
+			setvar (VAR_TEMP_4, SPECIES_LATIAS)
+			setflag (FLAG_TEMP_3)
+		}
+		else {
+			setvar (VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_LATIOS)
+			setvar (VAR_TEMP_4, SPECIES_LATIOS)
+		}
+	}
+	else {
+		if (flag(FLAG_CAUGHT_LATIAS_OR_LATIOS) == false) {     // Same as above
+			setvar (VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_LATIOS)
+			setvar (VAR_TEMP_4, SPECIES_LATIOS)
+		}
+		else {
+			setvar (VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_LATIAS)
+			setvar (VAR_TEMP_4, SPECIES_LATIAS)
+			setflag (FLAG_TEMP_3)
+		}
+	}
+
+	checkplayergender
+	if (var(VAR_RESULT) == MALE) {
+		setvar (VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL)
+	}
+	else {
+		setvar (VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL)
+	}
+}
+
+script SouthernIsland_Interior_EventScript_TryLatiEncounter {
+	call (SouthernIsland_OnTransition)
+	if (flag(FLAG_TEMP_2) == true || flag(FLAG_CAUGHT_LATIAS_AND_LATIOS) == true) {   // If a Lati has been fought in the room without leaving or if both are caught, show the text
+		msgbox ("All dreams are but another reality.\nNever forget…")
+	}
+	else {
+		setflag (FLAG_TEMP_2)
+		special (SpawnCameraObject)
+		applymovement (OBJ_EVENT_ID_CAMERA, SouthernIsland_Interior_Movement_CameraPanUp)
+		waitmovement (0)
+		delay (50)
+		waitse
+		playmoncry (VAR_TEMP_4, CRY_MODE_NORMAL)
+		delay (30)
+		waitmoncry
+		addobject (LOCALID_LATI)
+		delay (30)
+		applymovement (OBJ_EVENT_ID_CAMERA, SouthernIsland_Interior_Movement_CameraPanDown)
+		applymovement (LOCALID_LATI, SouthernIsland_Interior_Movement_LatiApproach)
+		waitmovement (0)
+		delay (50)
+		special (RemoveCameraObject)
+		setvar(VAR_LAST_TALKED, LOCALID_LATI)
+		if (flag(FLAG_TEMP_3) == true) {
+			seteventmon (SPECIES_LATIAS, 50, ITEM_SOUL_DEW)
+		}
+		else {
+			seteventmon (SPECIES_LATIOS, 50, ITEM_SOUL_DEW)
+		}
+		setflag (FLAG_SYS_CTRL_OBJ_DELETE)
+		special (BattleSetup_StartLatiBattle)
+		waitstate
+		clearflag (FLAG_SYS_CTRL_OBJ_DELETE)
+		specialvar (VAR_RESULT, GetBattleOutcome)
+		switch (var(VAR_RESULT)) {
+			case B_OUTCOME_WON:
+			case B_OUTCOME_RAN:
+			case B_OUTCOME_PLAYER_TELEPORTED:
+				copyvar (VAR_0x8004, VAR_TEMP_4)
+				goto (Common_EventScript_LegendaryFlewAway)
+			default:   // This is caught state
+				if (flag(FLAG_CAUGHT_LATIAS_OR_LATIOS) == false) {   // If neither have been caught, set the flag for the first one, else set the flag for both
+					setflag (FLAG_CAUGHT_LATIAS_OR_LATIOS)
+				}
+				else {
+					setflag (FLAG_CAUGHT_LATIAS_AND_LATIOS)
+				}
+		}
+		
+	}
+	releaseall
+}
+
+
+movement SouthernIsland_Interior_Movement_CameraPanUp {
+	walk_up * 3
+}
+
+movement SouthernIsland_Interior_Movement_CameraPanDown {
+	delay_16 * 7
+	walk_down * 3
+	walk_in_place_faster_up
+}
+
+movement SouthernIsland_Interior_Movement_LatiApproach {
+	walk_down * 5
+	delay_16 * 2
+	walk_down * 4
+}

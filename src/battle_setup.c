@@ -616,6 +616,17 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_DEOXYS_SPEED:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_DEOXYS);
         break;
+    case SPECIES_JIRACHI:
+    case SPECIES_HEATRAN:
+    case SPECIES_CRESSELIA:
+    case SPECIES_MANAPHY:
+    case SPECIES_XERNEAS:
+    case SPECIES_YVELTAL:
+    case SPECIES_MARSHADOW:
+    case SPECIES_ZACIAN:
+    case SPECIES_ZAMAZENTA:
+        CreateBattleStartTask(B_TRANSITION_BLACKHOLE, MUS_DP_VS_LEGEND);
+        break;
     case SPECIES_ARTICUNO:
     case SPECIES_ARTICUNO_GALARIAN:
     case SPECIES_ZAPDOS:
@@ -646,6 +657,23 @@ void BattleSetup_StartLegendaryBattle(void)
         break;
     case SPECIES_CELEBI:
         CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_HG_VS_WILD);
+        break;
+    case SPECIES_UXIE:
+    case SPECIES_MESPRIT:
+    case SPECIES_AZELF:
+    case SPECIES_TORNADUS:
+    case SPECIES_THUNDURUS:
+    case SPECIES_LANDORUS:
+    case SPECIES_TAPU_KOKO:
+    case SPECIES_TAPU_LELE:
+    case SPECIES_TAPU_BULU:
+    case SPECIES_TAPU_FINI:
+    case SPECIES_ENAMORUS:
+        CreateBattleStartTask(B_TRANSITION_RECTANGULAR_SPIRAL, MUS_DP_VS_UXIE_MESPRIT_AZELF);
+        break;
+    case SPECIES_DIALGA:
+    case SPECIES_PALKIA:
+        CreateBattleStartTask(B_TRANSITION_ANGLED_WIPES, MUS_DP_VS_DIALGA_PALKIA);
         break;
     case SPECIES_DARKRAI:
     case SPECIES_GIRATINA:
@@ -695,24 +723,28 @@ void StartRegiBattle(void)
     {
     case SPECIES_REGIROCK:
         transitionId = B_TRANSITION_REGIROCK;
+        CreateBattleStartTask(transitionId, MUS_VS_REGI);
         break;
     case SPECIES_REGICE:
         transitionId = B_TRANSITION_REGICE;
+        CreateBattleStartTask(transitionId, MUS_VS_REGI);
         break;
     case SPECIES_REGISTEEL:
         transitionId = B_TRANSITION_REGISTEEL;
+        CreateBattleStartTask(transitionId, MUS_VS_REGI);
         break;
     case SPECIES_REGIELEKI:
         transitionId = B_TRANSITION_REGISTEEL;
+        CreateBattleStartTask(transitionId, MUS_PL_VS_REGI);
         break;
     case SPECIES_REGIDRAGO:
         transitionId = B_TRANSITION_REGISTEEL;
+        CreateBattleStartTask(transitionId, MUS_PL_VS_REGI);
         break;
     default:
         transitionId = B_TRANSITION_GRID_SQUARES;
         break;
     }
-    CreateBattleStartTask(transitionId, MUS_VS_REGI);
 
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
     IncrementGameStat(GAME_STAT_WILD_BATTLES);

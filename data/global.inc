@@ -877,76 +877,97 @@ Common_EventScript_MoveReminder::
 # 430 "data/global.pory"
 	faceplayer
 # 431 "data/global.pory"
-	setflag FLAG_EGG_MOVE_TUTOR
-# 432 "data/global.pory"
 	goto_if_unset FLAG_TEMP_1, Common_EventScript_MoveReminder_2
 Common_EventScript_MoveReminder_1:
-# 435 "data/global.pory"
+# 434 "data/global.pory"
 	setflag FLAG_TEMP_1
+# 435 "data/global.pory"
+	msgbox Common_EventScript_MoveReminder_Text_1
 # 436 "data/global.pory"
-	msgbox Common_EventScript_MoveReminder_Text_1, MSGBOX_YESNO
+	setvar VAR_RESULT, 2
 # 437 "data/global.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq Common_EventScript_MoveReminder_5
+	dynmultipush Common_EventScript_MoveReminder_Text_2, 0
+# 438 "data/global.pory"
+	goto_if_set FLAG_BADGE02_GET, Common_EventScript_MoveReminder_5
 Common_EventScript_MoveReminder_4:
-# 466 "data/global.pory"
+# 441 "data/global.pory"
+	dynmultipush Common_EventScript_MoveReminder_Text_4, 2
+# 442 "data/global.pory"
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
+# 443 "data/global.pory"
+	compare VAR_RESULT, 2
+	goto_if_ge Common_EventScript_MoveReminder_8
+# 447 "data/global.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Common_EventScript_MoveReminder_12
+Common_EventScript_MoveReminder_11:
+Common_EventScript_MoveReminder_14:
+# 451 "data/global.pory"
+	msgbox Common_EventScript_MoveReminder_Text_6
+# 452 "data/global.pory"
+	special ChooseMonForMoveRelearner
+# 453 "data/global.pory"
+	waitstate
+# 454 "data/global.pory"
+	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
+	goto_if_eq Common_EventScript_MoveReminder_16
+# 459 "data/global.pory"
+	special IsSelectedMonEgg
+# 460 "data/global.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq Common_EventScript_MoveReminder_19
+# 463 "data/global.pory"
+	compare VAR_0x8005, 0
+	goto_if_eq Common_EventScript_MoveReminder_20
+# 467 "data/global.pory"
+	msgbox Common_EventScript_MoveReminder_Text_9
+# 468 "data/global.pory"
+	special TeachMoveRelearnerMove
+# 469 "data/global.pory"
+	waitstate
+# 470 "data/global.pory"
+	msgbox Common_EventScript_MoveReminder_Text_5
+Common_EventScript_MoveReminder_7:
+# 476 "data/global.pory"
+	clearflag FLAG_EGG_MOVE_TUTOR
+# 477 "data/global.pory"
 	releaseall
 	return
 
 Common_EventScript_MoveReminder_2:
-# 433 "data/global.pory"
+# 432 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_0
 	goto Common_EventScript_MoveReminder_1
 
 Common_EventScript_MoveReminder_5:
-Common_EventScript_MoveReminder_7:
 # 439 "data/global.pory"
-	msgbox Common_EventScript_MoveReminder_Text_2
-# 440 "data/global.pory"
-	special ChooseMonForMoveRelearner
-# 441 "data/global.pory"
-	waitstate
-# 442 "data/global.pory"
-	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
-	goto_if_eq Common_EventScript_MoveReminder_9
-# 447 "data/global.pory"
-	special IsSelectedMonEgg
-# 448 "data/global.pory"
-	compare VAR_RESULT, TRUE
-	goto_if_eq Common_EventScript_MoveReminder_12
-# 451 "data/global.pory"
-	compare VAR_0x8005, 0
-	goto_if_eq Common_EventScript_MoveReminder_13
-# 455 "data/global.pory"
-	msgbox Common_EventScript_MoveReminder_Text_6
-# 456 "data/global.pory"
-	special TeachMoveRelearnerMove
-# 457 "data/global.pory"
-	waitstate
-# 458 "data/global.pory"
-	compare VAR_0x8004, 0
-	goto_if_ne Common_EventScript_MoveReminder_17
-	goto Common_EventScript_MoveReminder_7
-
-Common_EventScript_MoveReminder_9:
-# 443 "data/global.pory"
-	msgbox Common_EventScript_MoveReminder_Text_3
+	dynmultipush Common_EventScript_MoveReminder_Text_3, 1
 	goto Common_EventScript_MoveReminder_4
 
-Common_EventScript_MoveReminder_12:
-# 449 "data/global.pory"
-	msgbox Common_EventScript_MoveReminder_Text_4
-	goto Common_EventScript_MoveReminder_7
-
-Common_EventScript_MoveReminder_13:
-# 452 "data/global.pory"
+Common_EventScript_MoveReminder_8:
+# 444 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_5
 	goto Common_EventScript_MoveReminder_7
 
-Common_EventScript_MoveReminder_17:
-# 459 "data/global.pory"
-	msgbox Common_EventScript_MoveReminder_Text_3
-	goto Common_EventScript_MoveReminder_4
+Common_EventScript_MoveReminder_12:
+# 448 "data/global.pory"
+	setflag FLAG_EGG_MOVE_TUTOR
+	goto Common_EventScript_MoveReminder_11
+
+Common_EventScript_MoveReminder_16:
+# 455 "data/global.pory"
+	msgbox Common_EventScript_MoveReminder_Text_5
+	goto Common_EventScript_MoveReminder_7
+
+Common_EventScript_MoveReminder_19:
+# 461 "data/global.pory"
+	msgbox Common_EventScript_MoveReminder_Text_7
+	goto Common_EventScript_MoveReminder_14
+
+Common_EventScript_MoveReminder_20:
+# 464 "data/global.pory"
+	msgbox Common_EventScript_MoveReminder_Text_8
+	goto Common_EventScript_MoveReminder_14
 
 
 Mart_EventScript_TMClerk_Text_0:
@@ -992,7 +1013,7 @@ Mart_EventScript_EvoClerk_Text_0:
 	.string "have earned at least three Gym Badges.$"
 
 Common_EventScript_MoveReminder_Text_0:
-# 433 "data/global.pory"
+# 432 "data/global.pory"
 	.string "I'm the Move Reminder.\p"
 	.string "I know all the moves that Pokémon\n"
 	.string "learn--every one of them--and I can\l"
@@ -1001,28 +1022,40 @@ Common_EventScript_MoveReminder_Text_0:
 	.string "yours if you'd like.$"
 
 Common_EventScript_MoveReminder_Text_1:
-# 436 "data/global.pory"
+# 435 "data/global.pory"
 	.string "Would you like me to teach a move?$"
 
 Common_EventScript_MoveReminder_Text_2:
-# 439 "data/global.pory"
-	.string "Which Pokémon needs tutoring?$"
+# 437 "data/global.pory"
+	.string "Move Relearner$"
 
 Common_EventScript_MoveReminder_Text_3:
-# 443 "data/global.pory"
+# 439 "data/global.pory"
+	.string "Egg Moves$"
+
+Common_EventScript_MoveReminder_Text_4:
+# 441 "data/global.pory"
+	.string "Cancel$"
+
+Common_EventScript_MoveReminder_Text_5:
+# 444 "data/global.pory"
 	.string "Come back if your Pokémon need to learn\n"
 	.string "another move.$"
 
-Common_EventScript_MoveReminder_Text_4:
-# 449 "data/global.pory"
+Common_EventScript_MoveReminder_Text_6:
+# 451 "data/global.pory"
+	.string "Which Pokémon needs tutoring?$"
+
+Common_EventScript_MoveReminder_Text_7:
+# 461 "data/global.pory"
 	.string "Hunh? There isn't a single move that I\n"
 	.string "can teach an Egg.$"
 
-Common_EventScript_MoveReminder_Text_5:
-# 452 "data/global.pory"
+Common_EventScript_MoveReminder_Text_8:
+# 464 "data/global.pory"
 	.string "Sorry, it doesn't appear as if I have\n"
 	.string "any move I can teach that Pokémon.$"
 
-Common_EventScript_MoveReminder_Text_6:
-# 455 "data/global.pory"
+Common_EventScript_MoveReminder_Text_9:
+# 467 "data/global.pory"
 	.string "Which move should I teach?$"

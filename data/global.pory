@@ -428,13 +428,25 @@ mart BadgedEvoPokemart5 {
 script Common_EventScript_MoveReminder {
 	lock
 	faceplayer
-	setflag (FLAG_EGG_MOVE_TUTOR)
 	if (flag(FLAG_TEMP_1) == false) {
 		msgbox(format("I'm the Move Reminder.\pI know all the moves that Pokémon learn--every one of them--and I can teach Pokémon those moves.\pI can teach a move to a Pokémon of yours if you'd like."))
 	}
 	setflag (FLAG_TEMP_1)
-	msgbox(format("Would you like me to teach a move?"), MSGBOX_YESNO)
-	if (var(VAR_RESULT) == 1) {
+	msgbox(format("Would you like me to teach a move?"))
+	setvar (VAR_RESULT, 2)
+	dynmultipush("Move Relearner", 0)
+	if (flag(FLAG_BADGE02_GET)) {
+		dynmultipush("Egg Moves", 1)
+	}
+	dynmultipush("Cancel", 2)
+	dynmultistack(0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+	if (var(VAR_RESULT) >= 2) {
+		msgbox(format("Come back if your Pokémon need to learn another move."))
+	}
+	else {
+		if (var(VAR_RESULT) == 1) {
+			setflag (FLAG_EGG_MOVE_TUTOR)
+		}
 		while {
 			msgbox(format("Which Pokémon needs tutoring?"))
 			special (ChooseMonForMoveRelearner)
@@ -455,13 +467,12 @@ script Common_EventScript_MoveReminder {
 					msgbox(format("Which move should I teach?"))
 					special (TeachMoveRelearnerMove)
 					waitstate
-					if (var(VAR_0x8004) != 0) {
-						msgbox(format("Come back if your Pokémon need to learn another move."))
-						break
-					}
+					msgbox(format("Come back if your Pokémon need to learn another move."))
+					break
 				}
 			}
 		}
 	}
+	clearflag (FLAG_EGG_MOVE_TUTOR)
 	releaseall
 }

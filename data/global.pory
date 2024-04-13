@@ -424,3 +424,43 @@ mart BadgedEvoPokemart5 {
 	ITEM_DAWN_STONE
 	ITEM_METAL_COAT
 }
+
+script Common_EventScript_MoveReminder {
+	lock
+	faceplayer
+	if (flag(FLAG_TEMP_1) == false) {
+		msgbox(format("I'm the Move Reminder.\pI know all the moves that Pokémon learn--every one of them--and I can teach Pokémon those moves.\pI can teach a move to a Pokémon of yours if you'd like."))
+	}
+	setflag (FLAG_TEMP_1)
+	msgbox(format("Would you like me to teach a move?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		while {
+			msgbox(format("Which Pokémon needs tutoring?"))
+			special (ChooseMonForMoveRelearner)
+			waitstate
+			if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) {
+				msgbox(format("Come back if your Pokémon need to learn another move."))
+				break
+			}
+			else {
+				special (IsSelectedMonEgg)
+				if (var(VAR_RESULT) == TRUE) {
+					msgbox(format("Hunh? There isn't a single move that I can teach an Egg."))
+				}
+				elif (var(VAR_0x8005) == 0) {
+					msgbox(format("Sorry, it doesn't appear as if I have any move I can teach that Pokémon."))
+				}
+				else {
+					msgbox(format("Which move should I teach?"))
+					special (TeachMoveRelearnerMove)
+					waitstate
+					if (var(VAR_0x8004) != 0) {
+						msgbox(format("Come back if your Pokémon need to learn another move."))
+						break
+					}
+				}
+			}
+		}
+	}
+	releaseall
+}

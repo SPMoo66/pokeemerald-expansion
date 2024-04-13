@@ -1,12 +1,33 @@
+const DARKRAI = 1
+
 mapscripts CaveOfDreamsChamber_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
-//		if(flag(FLAG_DARKRAI)) {
-//			removeobject(1)
-//			}
+		if(flag(FLAG_CAUGHT_DARKRAI)) {
+			setflag (FLAG_TEMP_2)
+			removeobject(DARKRAI)
+			}
 	}
 	MAP_SCRIPT_ON_RESUME {
 		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
-			removeobject(1)
+			removeobject(DARKRAI)
 		}
 	}
+}
+
+script BattleDarkrai {
+	lock
+	playmoncry(SPECIES_DARKRAI, CRY_MODE_ENCOUNTER)
+	msgbox("...\p...")
+	waitmoncry
+	seteventmon(SPECIES_DARKRAI, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_DARKRAI)
+	}
+	release
+	end
 }

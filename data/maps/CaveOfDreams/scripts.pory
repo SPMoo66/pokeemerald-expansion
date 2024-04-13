@@ -3,24 +3,10 @@ CaveOfDreams_MapScripts::
 	.byte 0
 `
 
-script BattleDarkrai {
-	lock
-	playmoncry(SPECIES_DARKRAI, CRY_MODE_ENCOUNTER)
-	msgbox("...\p...")
-	waitmoncry
-	seteventmon(SPECIES_DARKRAI, 50)
-	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
-	special(BattleSetup_StartLegendaryBattle)
-	waitstate
-	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
-	release
-	end
-}
-
 script CaveOfDreamsHex {
 	lock
 	faceplayer
-	msgbox(format("Heehee...\pThey call this the Cave Of Dreams, but it exudes the essence of nightmares."))
+	msgbox(format("Heehee...\pThey call this the Cave of Dreams, but it exudes the essence of nightmares."))
 	release
 	end
 }

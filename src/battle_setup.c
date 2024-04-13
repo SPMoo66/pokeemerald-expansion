@@ -598,10 +598,12 @@ void BattleSetup_StartLegendaryBattle(void)
     default:
     case SPECIES_GROUDON:
     case SPECIES_GROUDON_PRIMAL:
+    case SPECIES_KORAIDON:
         CreateBattleStartTask(B_TRANSITION_GROUDON, MUS_VS_KYOGRE_GROUDON);
         break;
     case SPECIES_KYOGRE:
     case SPECIES_KYOGRE_PRIMAL:
+    case SPECIES_MIRAIDON:
         CreateBattleStartTask(B_TRANSITION_KYOGRE, MUS_VS_KYOGRE_GROUDON);
         break;
     case SPECIES_RAYQUAZA:
@@ -614,13 +616,46 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_DEOXYS_SPEED:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_DEOXYS);
         break;
+    case SPECIES_ARTICUNO:
+    case SPECIES_ARTICUNO_GALARIAN:
+    case SPECIES_ZAPDOS:
+    case SPECIES_ZAPDOS_GALARIAN:
+    case SPECIES_MOLTRES:
+    case SPECIES_MOLTRES_GALARIAN:
     case SPECIES_LUGIA:
     case SPECIES_HO_OH:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_LEGEND);
         break;
+    case SPECIES_RAIKOU:
+    case SPECIES_RAGING_BOLT:
+        CreateBattleStartTask(B_TRANSITION_BLUR, MUS_HG_VS_RAIKOU);
+        break;
+    case SPECIES_ENTEI:
+    case SPECIES_GOUGING_FIRE:
+        CreateBattleStartTask(B_TRANSITION_BLUR, MUS_HG_VS_ENTEI);
+        break;
+    case SPECIES_SUICUNE:
+    case SPECIES_WALKING_WAKE:
+        CreateBattleStartTask(B_TRANSITION_BLUR, MUS_HG_VS_SUICUNE);
+        break;
+    case SPECIES_MEWTWO:
+        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_RG_VS_MEWTWO);
+        break;
     case SPECIES_MEW:
         CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_MEW);
         break;
+    case SPECIES_CELEBI:
+        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_HG_VS_WILD);
+        break;
+    case SPECIES_DARKRAI:
+    case SPECIES_GIRATINA:
+    case SPECIES_GIRATINA_ORIGIN:
+    case SPECIES_HOOPA:
+    case SPECIES_HOOPA_UNBOUND:
+    case SPECIES_NECROZMA:
+        CreateBattleStartTask(B_TRANSITION_SHRED_SPLIT, MUS_PL_VS_GIRATINA);
+        break;
+		
     }
 
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
@@ -665,6 +700,12 @@ void StartRegiBattle(void)
         transitionId = B_TRANSITION_REGICE;
         break;
     case SPECIES_REGISTEEL:
+        transitionId = B_TRANSITION_REGISTEEL;
+        break;
+    case SPECIES_REGIELEKI:
+        transitionId = B_TRANSITION_REGISTEEL;
+        break;
+    case SPECIES_REGIDRAGO:
         transitionId = B_TRANSITION_REGISTEEL;
         break;
     default:

@@ -428,6 +428,7 @@ mart BadgedEvoPokemart5 {
 script Common_EventScript_MoveReminder {
 	lock
 	faceplayer
+	setflag (FLAG_EGG_MOVE_TUTOR)
 	if (flag(FLAG_TEMP_1) == false) {
 		msgbox(format("I'm the Move Reminder.\pI know all the moves that Pokémon learn--every one of them--and I can teach Pokémon those moves.\pI can teach a move to a Pokémon of yours if you'd like."))
 	}

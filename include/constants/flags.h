@@ -97,8 +97,8 @@
 #define FLAG_RESCUED_BIRCH                       0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
-#define FLAG_UNUSED_0x054                    0x54  // Unused Flag
-#define FLAG_UNUSED_0x055                    0x55  // Unused Flag
+#define FLAG_CAUGHT_HEATRAN                  0x54
+#define FLAG_CAUGHT_DARKRAI                  0x55
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
 #define FLAG_MET_RIVAL_MOM                   0x57
@@ -114,12 +114,12 @@
 #define FLAG_MET_TEAM_AQUA_HARBOR            0x61
 #define FLAG_TV_EXPLAINED                    0x62
 #define FLAG_MAUVILLE_GYM_BARRIERS_STATE     0x63
-#define FLAG_MOSSDEEP_GYM_SWITCH_1           0x64 // Leftover from the RS version of Mossdeep Gym, functionally unused
-#define FLAG_MOSSDEEP_GYM_SWITCH_2           0x65 //
-#define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 //
-#define FLAG_MOSSDEEP_GYM_SWITCH_4           0x67 //
+#define FLAG_UNUSED_0x64                     0x64 // Was leftovers from the RS version of Mossdeep Gym
+#define FLAG_UNUSED_0x65                     0x65 //
+#define FLAG_UNUSED_0x66                     0x66 //
+#define FLAG_UNUSED_0x67                     0x67 //
 
-#define FLAG_CAUGHT_DARKRAI                  0x68
+#define FLAG_UNUSED_0x68                     0x68 // Unused
 
 #define FLAG_OCEANIC_MUSEUM_MET_REPORTER     0x69
 #define FLAG_RECEIVED_HM_STRENGTH            0x6A

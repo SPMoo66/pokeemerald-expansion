@@ -474,5 +474,5 @@ script Common_EventScript_MoveReminder {
 		}
 	}
 	clearflag (FLAG_EGG_MOVE_TUTOR)
-	releaseall
+	release
 }

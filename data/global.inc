@@ -931,7 +931,7 @@ Common_EventScript_MoveReminder_7:
 # 476 "data/global.pory"
 	clearflag FLAG_EGG_MOVE_TUTOR
 # 477 "data/global.pory"
-	releaseall
+	release
 	return
 
 Common_EventScript_MoveReminder_2:

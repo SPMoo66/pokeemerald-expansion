@@ -5,7 +5,7 @@ mapscripts ScorchedSlabB1F_MapScripts {
 		if(flag(FLAG_CAUGHT_HEATRAN)) {
 			setflag (FLAG_TEMP_2)
 			removeobject(HEATRAN)
-			}
+		}
 	}
 	MAP_SCRIPT_ON_RESUME {
 		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {

@@ -114,10 +114,10 @@
 #define FLAG_MET_TEAM_AQUA_HARBOR            0x61
 #define FLAG_TV_EXPLAINED                    0x62
 #define FLAG_MAUVILLE_GYM_BARRIERS_STATE     0x63
-#define FLAG_UNUSED_0x64                     0x64 // Was leftovers from the RS version of Mossdeep Gym
-#define FLAG_UNUSED_0x65                     0x65 //
-#define FLAG_UNUSED_0x66                     0x66 //
-#define FLAG_UNUSED_0x67                     0x67 //
+#define FLAG_CAUGHT_TAPU_BULU                0x64 // Was leftovers from the RS version of Mossdeep Gym
+#define FLAG_CAUGHT_TAPU_FINI                0x65 //
+#define FLAG_CAUGHT_TAPU_KOKO                0x66 //
+#define FLAG_CAUGHT_TAPU_LELE                0x67 //
 
 #define FLAG_UNUSED_0x68                     0x68 // Unused
 

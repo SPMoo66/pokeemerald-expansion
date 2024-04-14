@@ -1,1 +1,106 @@
-mapscripts SeasideGrotto_MapScripts {}
+const TAPU_BULU = 1
+const TAPU_FINI = 2
+const TAPU_KOKO = 3
+const TAPU_LELE = 4
+
+mapscripts SeasideGrotto_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if(flag(FLAG_CAUGHT_TAPU_BULU)) {
+			setflag (FLAG_TEMP_2)
+			removeobject(TAPU_BULU)
+		}
+		elif(flag(FLAG_CAUGHT_TAPU_FINI)) {
+			setflag (FLAG_TEMP_3)
+			removeobject(TAPU_FINI)
+		}
+		elif(flag(FLAG_CAUGHT_TAPU_KOKO)) {
+			setflag (FLAG_TEMP_4)
+			removeobject(TAPU_KOKO)
+		}
+		elif(flag(FLAG_CAUGHT_TAPU_LELE)) {
+			setflag (FLAG_TEMP_5)
+			removeobject(TAPU_LELE)
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(VAR_LAST_TALKED)
+		}
+	}
+}
+
+script BattleTapuBulu {
+	lock
+	setvar (VAR_LAST_TALKED, TAPU_BULU)
+	playmoncry(SPECIES_TAPU_BULU, CRY_MODE_ENCOUNTER)
+	msgbox("Ta-pu-loooo!")
+	waitmoncry
+	seteventmon(SPECIES_TAPU_BULU, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_TAPU_BULU)
+	}
+	release
+	end
+}
+
+script BattleTapuFini {
+	lock
+	setvar (VAR_LAST_TALKED, TAPU_FINI)
+	playmoncry(SPECIES_TAPU_FINI, CRY_MODE_ENCOUNTER)
+	msgbox("Ta-pu-fiiieee!")
+	waitmoncry
+	seteventmon(SPECIES_TAPU_FINI, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_TAPU_FINI)
+	}
+	release
+	end
+}
+
+script BattleTapuKoko {
+	lock
+	setvar (VAR_LAST_TALKED, TAPU_KOKO)
+	playmoncry(SPECIES_TAPU_KOKO, CRY_MODE_ENCOUNTER)
+	msgbox("Tapu ko-ko-ko-kooo!!!")
+	waitmoncry
+	seteventmon(SPECIES_TAPU_KOKO, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_TAPU_KOKO)
+	}
+	release
+	end
+}
+
+script BattleTapuLele {
+	lock
+	setvar (VAR_LAST_TALKED, TAPU_LELE)
+	playmoncry(SPECIES_TAPU_LELE, CRY_MODE_ENCOUNTER)
+	msgbox("Ta-pu leeeh!")
+	waitmoncry
+	seteventmon(SPECIES_TAPU_LELE, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_TAPU_LELE)
+	}
+	release
+	end
+}

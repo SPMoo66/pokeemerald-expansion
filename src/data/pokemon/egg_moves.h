@@ -172,7 +172,8 @@ const u16 gEggMoves[] = {
         MOVE_ROCK_CLIMB,
         MOVE_STRENGTH,
         MOVE_ROTOTILLER,
-        MOVE_HONE_CLAWS),
+        MOVE_HONE_CLAWS,
+        MOVE_FELL_STINGER),
 #if P_ALOLAN_FORMS
     egg_moves(SANDSHREW_ALOLAN,
         MOVE_AMNESIA,
@@ -186,7 +187,8 @@ const u16 gEggMoves[] = {
         MOVE_ICICLE_CRASH,
         MOVE_ICICLE_SPEAR,
         MOVE_METAL_CLAW,
-        MOVE_NIGHT_SLASH),
+        MOVE_NIGHT_SLASH,
+        MOVE_FELL_STINGER),
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_SANDSHREW
 
@@ -2430,7 +2432,8 @@ const u16 gEggMoves[] = {
         MOVE_MUD_BOMB,
         MOVE_SIMPLE_BEAM,
         MOVE_CAPTIVATE,
-        MOVE_COSMIC_POWER),
+        MOVE_COSMIC_POWER,
+        MOVE_NUZZLE),
 #endif //P_FAMILY_SKITTY
 
 #if P_FAMILY_SABLEYE
@@ -4055,7 +4058,8 @@ const u16 gEggMoves[] = {
         MOVE_FAKE_TEARS,
         MOVE_SLEEP_TALK,
         MOVE_ENDURE,
-        MOVE_FLAIL),
+        MOVE_FLAIL,
+        MOVE_TIDY_UP),
 #endif //P_FAMILY_MINCCINO
 
 #if P_FAMILY_GOTHITA

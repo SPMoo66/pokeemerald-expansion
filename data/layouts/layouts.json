@@ -4490,6 +4490,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/ScorchedSlabB1F/border.bin",
       "blockdata_filepath": "data/layouts/ScorchedSlabB1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEASIDE_GROTTO",
+      "name": "SeasideGrotto_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/SeasideGrotto/border.bin",
+      "blockdata_filepath": "data/layouts/SeasideGrotto/map.bin"
     }
   ]
 }

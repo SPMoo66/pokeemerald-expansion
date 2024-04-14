@@ -437,7 +437,8 @@
     "WoodlandCradleGrass",
     "WoodlandCradleFire",
     "WoodlandCradleWater",
-    "ScorchedSlabB1F"
+    "ScorchedSlabB1F",
+    "SeasideGrotto"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

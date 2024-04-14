@@ -715,8 +715,8 @@
     {
       "map_section": "MAPSEC_CAVE_OF_DREAMS",
       "name": "Cave of Dreams",
-      "x": 0,
-      "y": 0,
+      "x": 4,
+      "y": 7,
       "width": 1,
       "height": 1
     },
@@ -729,80 +729,80 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_CERULEAN_CITY",
-      "name": "Cerulean City",
+      "map_section": "MAPSEC_SEASIDE_GROTTO",
+      "name": "Seaside Grotto",
+      "x": 24,
+      "y": 10,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REALMS_FRAY",
+      "name": "Realms Fray",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_LAVENDER_TOWN",
-      "name": "Lavender Town",
+      "map_section": "MAPSEC_SUBMERGED_CAVERN",
+      "name": "Submerged Cavern",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_VERMILION_CITY",
-      "name": "Vermilion City",
+      "map_section": "MAPSEC_TRACKLESS_FOREST",
+      "name": "Trackless Forest",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_CELADON_CITY",
-      "name": "Celadon City",
+      "map_section": "MAPSEC_NAMELESS_CAVERN",
+      "name": "Nameless Cavern",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_FUCHSIA_CITY",
-      "name": "Fuchsia City",
+      "map_section": "MAPSEC_CRESCENT_ISLE",
+      "name": "Crescent Isle",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_CINNABAR_ISLAND",
-      "name": "Cinnabar Island",
+      "map_section": "MAPSEC_PATHLESS_PLAIN",
+      "name": "Pathless Plain",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_INDIGO_PLATEAU",
-      "name": "Indigo Plateau",
+      "map_section": "MAPSEC_FLORAL_PARADISE",
+      "name": "Floral Paradise",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_SAFFRON_CITY",
-      "name": "Saffron City",
+      "map_section": "MAPSEC_GNARLED_DEN",
+      "name": "Gnarled Den",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_4_POKECENTER",
-      "name": "Route 4",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_ROUTE_10_POKECENTER",
-      "name": "Route 10",
+      "map_section": "MAPSEC_FABLED_CAVE",
+      "name": "Fabled Cave",
       "x": 0,
       "y": 0,
       "width": 1,

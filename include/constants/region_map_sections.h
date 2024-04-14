@@ -92,16 +92,16 @@
 #define MAPSEC_LEAFY_CLEARING               0x58
 #define MAPSEC_CAVE_OF_DREAMS               0x59
 #define MAPSEC_WOODLAND_CRADLE              0x5A
-#define MAPSEC_CERULEAN_CITY                0x5B
-#define MAPSEC_LAVENDER_TOWN                0x5C
-#define MAPSEC_VERMILION_CITY               0x5D
-#define MAPSEC_CELADON_CITY                 0x5E
-#define MAPSEC_FUCHSIA_CITY                 0x5F
-#define MAPSEC_CINNABAR_ISLAND              0x60
-#define MAPSEC_INDIGO_PLATEAU               0x61
-#define MAPSEC_SAFFRON_CITY                 0x62
-#define MAPSEC_ROUTE_4_POKECENTER           0x63
-#define MAPSEC_ROUTE_10_POKECENTER          0x64
+#define MAPSEC_SEASIDE_GROTTO               0x5B
+#define MAPSEC_REALMS_FRAY                  0x5C
+#define MAPSEC_SUBMERGED_CAVERN             0x5D
+#define MAPSEC_TRACKLESS_FOREST             0x5E
+#define MAPSEC_NAMELESS_CAVERN              0x5F
+#define MAPSEC_CRESCENT_ISLE                0x60
+#define MAPSEC_PATHLESS_PLAIN               0x61
+#define MAPSEC_FLORAL_PARADISE              0x62
+#define MAPSEC_GNARLED_DEN                  0x63
+#define MAPSEC_FABLED_CAVE                  0x64
 #define MAPSEC_ROUTE_1                      0x65
 #define MAPSEC_ROUTE_2                      0x66
 #define MAPSEC_ROUTE_3                      0x67
@@ -220,7 +220,7 @@
 #define METLOC_IN_GAME_TRADE                0xFE
 #define METLOC_FATEFUL_ENCOUNTER            0xFF
 
-#define KANTO_MAPSEC_START  MAPSEC_CERULEAN_CITY
+#define KANTO_MAPSEC_START  MAPSEC_ROUTE_1
 #define KANTO_MAPSEC_END    MAPSEC_SPECIAL_AREA
 #define KANTO_MAPSEC_COUNT (KANTO_MAPSEC_END - KANTO_MAPSEC_START + 1)
 

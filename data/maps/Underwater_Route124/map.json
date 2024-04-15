@@ -28,7 +28,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 53,
+      "y": 46,
+      "elevation": 0,
+      "dest_map": "MAP_UNDERWATER_SUBMERGED_CAVERN",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

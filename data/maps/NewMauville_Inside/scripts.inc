@@ -38,6 +38,7 @@ NewMauville_Inside_EventScript_ShowVoltorb3::
 
 NewMauville_Inside_OnLoad:
 	call_if_eq VAR_NEW_MAUVILLE_STATE, 2, NewMauville_Inside_EventScript_SetGeneratorOffMetatiles
+	call_if_set FLAG_REGI_DOORS_OPENED, NewMauville_Inside_EventScript_OpenRetiredMechanism
 	end
 
 NewMauville_Inside_EventScript_BlueButton::
@@ -159,6 +160,10 @@ NewMauville_Inside_EventScript_SetGeneratorOffMetatiles::
 	setmetatile 34, 3, METATILE_BikeShop_Generator_Off_Tile6, TRUE
 	setmetatile 35, 3, METATILE_BikeShop_Generator_Off_Tile7, TRUE
 	special DrawWholeMapView
+	return
+	
+NewMauville_Inside_EventScript_OpenRetiredMechanism::
+	setmetatile 35, 38, 0x23D, TRUE
 	return
 
 NewMauville_Inside_EventScript_Generator::

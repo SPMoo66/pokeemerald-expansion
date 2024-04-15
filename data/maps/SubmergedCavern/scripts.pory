@@ -1,0 +1,106 @@
+const CHIEN_PAO = 1
+const CHI_YU = 2
+const TING_LU = 3
+const WO_CHIEN = 4
+
+mapscripts SubmergedCavern_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if(flag(FLAG_CAUGHT_CHIEN_PAO)) {
+			setflag (FLAG_TEMP_2)
+			removeobject(CHIEN_PAO)
+		}
+		elif(flag(FLAG_CAUGHT_CHI_YU)) {
+			setflag (FLAG_TEMP_3)
+			removeobject(CHI_YU)
+		}
+		elif(flag(FLAG_CAUGHT_TING_LU)) {
+			setflag (FLAG_TEMP_4)
+			removeobject(TING_LU)
+		}
+		elif(flag(FLAG_CAUGHT_WO_CHIEN)) {
+			setflag (FLAG_TEMP_5)
+			removeobject(WO_CHIEN)
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(VAR_LAST_TALKED)
+		}
+	}
+}
+
+script BattleChienPao {
+	lock
+	setvar (VAR_LAST_TALKED, CHIEN_PAO)
+	playmoncry(SPECIES_CHIEN_PAO, CRY_MODE_ENCOUNTER)
+	msgbox("Graoo-wuuh!")
+	waitmoncry
+	seteventmon(SPECIES_CHIEN_PAO, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_CHIEN_PAO)
+	}
+	release
+	end
+}
+
+script BattleChiYu {
+	lock
+	setvar (VAR_LAST_TALKED, CHI_YU)
+	playmoncry(SPECIES_CHI_YU, CRY_MODE_ENCOUNTER)
+	msgbox("Di-tiing wuh!")
+	waitmoncry
+	seteventmon(SPECIES_CHI_YU, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_CHI_YU)
+	}
+	release
+	end
+}
+
+script BattleTingLu {
+	lock
+	setvar (VAR_LAST_TALKED, TING_LU)
+	playmoncry(SPECIES_TING_LU, CRY_MODE_ENCOUNTER)
+	msgbox("Aouu-wooouh!")
+	waitmoncry
+	seteventmon(SPECIES_TING_LU, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_TING_LU)
+	}
+	release
+	end
+}
+
+script BattleWoChien {
+	lock
+	setvar (VAR_LAST_TALKED, WO_CHIEN)
+	playmoncry(SPECIES_WO_CHIEN, CRY_MODE_ENCOUNTER)
+	msgbox("Greu-wuuu!")
+	waitmoncry
+	seteventmon(SPECIES_WO_CHIEN, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_WO_CHIEN)
+	}
+	release
+	end
+}

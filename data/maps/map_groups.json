@@ -438,7 +438,10 @@
     "WoodlandCradleFire",
     "WoodlandCradleWater",
     "ScorchedSlabB1F",
-    "SeasideGrotto"
+    "SeasideGrotto",
+    "Underwater_SubmergedCavern",
+    "SubmergedCavern",
+    "RetiredMechanism"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

@@ -1086,3 +1086,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ScorchedSlabB1F/scripts.inc"
 
 	.include "data/maps/SeasideGrotto/scripts.inc"
+
+	.include "data/maps/Underwater_SubmergedCavern/scripts.inc"
+
+	.include "data/maps/SubmergedCavern/scripts.inc"
+
+	.include "data/maps/RetiredMechanism/scripts.inc"

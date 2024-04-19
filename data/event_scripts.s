@@ -917,8 +917,6 @@ gText_PokerusExplanation::
 	.string "While infected, Pokémon are said to\n"
 	.string "grow exceptionally well.$"
 
-	.include "data/text/surf.inc"
-
 gText_DoorOpenedFarAway::
 	.string "It sounded as if a door opened\n"
 	.string "somewhere far away.$"

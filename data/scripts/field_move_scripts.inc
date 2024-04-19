@@ -3,7 +3,7 @@ EventScript_CutTree::
 	lockall
 	goto_if_unset FLAG_BADGE01_GET, EventScript_CheckTreeCantCut
 	checkitem ITEM_HM01
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CheckTreeCantCut
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CheckTreeCantCut
 	setfieldeffectargument 0, VAR_RESULT
 	dofieldeffect FLDEFF_USE_CUT_ON_TREE
 	waitstate
@@ -46,7 +46,7 @@ EventScript_RockSmash::
 	lockall
 	goto_if_unset FLAG_BADGE03_GET, EventScript_CantSmashRock
 	checkitem ITEM_HM06
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSmashRock
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CantSmashRock
 	setfieldeffectargument 0, VAR_RESULT
 	msgbox Text_WantToSmash, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_CancelSmash
@@ -106,7 +106,7 @@ EventScript_StrengthBoulder::
 	goto_if_unset FLAG_BADGE04_GET, EventScript_CantStrength
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_CheckActivatedBoulder
 	checkitem ITEM_HM04
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantStrength
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CantStrength
 	setfieldeffectargument 0, VAR_RESULT
 	dofieldeffect FLDEFF_USE_STRENGTH
 	waitstate
@@ -151,7 +151,7 @@ Text_StrengthActivated:
 EventScript_UseWaterfall::
 	lockall
 	checkitem ITEM_HM07
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantWaterfall
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CantWaterfall
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
 	setfieldeffectargument 0, VAR_RESULT
 	dofieldeffect FLDEFF_USE_WATERFALL
@@ -174,7 +174,7 @@ Text_CantWaterfall:
 EventScript_UseDive::
 	lockall
 	checkitem ITEM_HM05
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantDive
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CantDive
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
 	setfieldeffectargument 0, VAR_RESULT
 	setfieldeffectargument 1, 1
@@ -196,7 +196,7 @@ EventScript_EndDive::
 EventScript_UseDiveUnderwater::
 	lockall
 	checkitem ITEM_HM05
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSurface
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CantSurface
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
 	setfieldeffectargument 0, VAR_RESULT
 	setfieldeffectargument 1, 1
@@ -242,7 +242,7 @@ Text_FailSweetScent:
 EventScript_UseRockClimb::
 	lockall
 	checkitem ITEM_HM08
-	compare VAR_RESULT, PARTY_SIZE
+	compare VAR_RESULT, FALSE
 	goto_if_eq EventScript_CantRockClimb
 	bufferpartymonnick 0, VAR_RESULT
 	setfieldeffectargument 0, VAR_RESULT

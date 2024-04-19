@@ -1813,6 +1813,10 @@ static void UpdatePartySelectionSingleLayout(s8 *slotPtr, s8 movementDir)
             {
                 *slotPtr = PARTY_SIZE + 1;
             }
+            else if (*slotPtr == 1)
+            {
+                *slotPtr = 0;
+            }
             else if (*slotPtr == PARTY_SIZE)
             {
                 *slotPtr = gPlayerPartyCount - 1;
@@ -1860,7 +1864,7 @@ static void UpdatePartySelectionSingleLayout(s8 *slotPtr, s8 movementDir)
             {
                 *slotPtr = 0;
             }
-			else if (*slotPtr == PARTY_SIZE)
+			else if (*slotPtr == gPlayerPartyCount - 1)
 			{
 				*slotPtr = PARTY_SIZE + 1;
 			}

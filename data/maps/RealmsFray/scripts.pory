@@ -1,1 +1,5 @@
 mapscripts RealmsFray_MapScripts {}
+
+script RealmsFray_Portal {
+	warp(MAP_ROUTE120, 2)
+}

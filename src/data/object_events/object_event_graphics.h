@@ -578,3 +578,5 @@ const u16 gObjectEventPal_Redd[] = INCBIN_U16("graphics/object_events/palettes/r
 const u32 gObjectEventPic_Sakura[] = INCBIN_U32("graphics/object_events/pics/people/sakura.4bpp");
 const u16 gObjectEventPal_Sakura[] = INCBIN_U16("graphics/object_events/palettes/sakura.gbapal");
 
+const u32 gObjectEventPic_Portal[] = INCBIN_U32("graphics/object_events/pics/misc/portal.4bpp");
+const u16 gObjectEventPal_Portal[] = INCBIN_U16("graphics/object_events/palettes/portal.gbapal");

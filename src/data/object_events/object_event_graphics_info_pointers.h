@@ -338,6 +338,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Harper;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Jakson;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Redd;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sakura;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Portal;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -670,6 +671,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_JAKSON] =                   &gObjectEventGraphicsInfo_Jakson,
     [OBJ_EVENT_GFX_REDD] =                     &gObjectEventGraphicsInfo_Redd,
     [OBJ_EVENT_GFX_SAKURA] =                   &gObjectEventGraphicsInfo_Sakura,
+    [OBJ_EVENT_GFX_PORTAL] =                   &gObjectEventGraphicsInfo_Portal,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

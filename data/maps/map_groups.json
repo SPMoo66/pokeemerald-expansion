@@ -441,7 +441,8 @@
     "SeasideGrotto",
     "Underwater_SubmergedCavern",
     "SubmergedCavern",
-    "RetiredMechanism"
+    "RetiredMechanism",
+    "RealmsFray"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

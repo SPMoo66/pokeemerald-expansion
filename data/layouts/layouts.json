@@ -4530,6 +4530,16 @@
       "secondary_tileset": "gTileset_BikeShop",
       "border_filepath": "data/layouts/RetiredMechanism/border.bin",
       "blockdata_filepath": "data/layouts/RetiredMechanism/map.bin"
+    },
+    {
+      "id": "LAYOUT_REALMS_FRAY",
+      "name": "RealmsFray_Layout",
+      "width": 44,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/RealmsFray/border.bin",
+      "blockdata_filepath": "data/layouts/RealmsFray/map.bin"
     }
   ]
 }

@@ -1091,3 +1091,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SubmergedCavern/scripts.inc"
 
 	.include "data/maps/RetiredMechanism/scripts.inc"
+
+	.include "data/maps/RealmsFray/scripts.inc"

@@ -4067,32 +4067,44 @@ static const struct TrainerMon sParty_TateAndLiza1[] = {
     {
     .lvl = 40,
     .species = SPECIES_LYCANROC_DUSK,
+    .ability = ABILITY_TOUGH_CLAWS,
     .heldItem = ITEM_CHOICE_BAND,
+    .moves = {MOVE_ACCELEROCK, MOVE_CLOSE_COMBAT, MOVE_STONE_EDGE, MOVE_CRUNCH}
     },
     {
     .lvl = 41,
     .species = SPECIES_EELEKTROSS,
+    .ability = ABILITY_LEVITATE,
     .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_DISCHARGE, MOVE_U_TURN, MOVE_GIGA_DRAIN, MOVE_DRAGON_TAIL}
     },
     {
     .lvl = 42,
     .species = SPECIES_ARCANINE_HISUIAN,
+    .ability = ABILITY_INTIMIDATE,
     .heldItem = ITEM_WEAKNESS_POLICY,
+    .moves = {MOVE_EXTREME_SPEED, MOVE_HEAT_CRASH, MOVE_HEAD_SMASH, MOVE_MORNING_SUN}
     },
     {
     .lvl = 44,
     .species = SPECIES_IRON_THORNS,
+    .ability = ABILITY_QUARK_DRIVE,
     .heldItem = ITEM_LOADED_DICE,
+    .moves = {MOVE_PIN_MISSILE, MOVE_ROCK_BLAST, MOVE_SUPERCELL_SLAM, MOVE_VOLT_SWITCH}
     },
     {
     .lvl = 45,
     .species = SPECIES_AMPHAROS,
+    .ability = ABILITY_STATIC,
     .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_DRAGON_CHEER, MOVE_ELECTROWEB, MOVE_BREAKING_SWIPE, MOVE_DRAGON_PULSE}
     },
     {
     .lvl = 46,
     .species = SPECIES_GOLEM_ALOLAN,
+    .ability = ABILITY_GALVANIZE,
     .heldItem = ITEM_AIR_BALLOON,
+    .moves = {MOVE_EXPLOSION, MOVE_EARTHQUAKE, MOVE_BODY_SLAM, MOVE_STONE_EDGE}
     }
 };
 

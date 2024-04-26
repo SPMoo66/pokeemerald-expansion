@@ -8714,8 +8714,20 @@ static const struct TrainerMon sParty_GruntSpaceCenter6[] = {
 
 static const struct TrainerMon sParty_GruntSpaceCenter7[] = {
     {
-    .lvl = 32,
-    .species = SPECIES_BALTOY,
+    .lvl = 38,
+    .species = SPECIES_GARDEVOIR_EMERIBIAN,
+    },
+    {
+    .lvl = 38,
+    .species = SPECIES_LICKILICKY,
+    },
+    {
+    .lvl = 39,
+    .species = SPECIES_ELECTIVIRE,
+    },
+    {
+    .lvl = 39,
+    .species = SPECIES_MAGMORTAR,
     }
 };
 

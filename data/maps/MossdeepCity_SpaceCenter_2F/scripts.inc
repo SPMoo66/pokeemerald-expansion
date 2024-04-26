@@ -5,7 +5,7 @@
 @ Grunt names numbered like their Trainer values (which are for the full Space Center)
 .set LOCALID_GRUNT_6, 5
 .set LOCALID_GRUNT_5, 6
-.set LOCALID_GRUNT_7, 7
+.set LOCALID_COURTNEY, 7
 .set LOCALID_TABITHA, 8
 .set LOCALID_MAXIE, 9
 
@@ -31,7 +31,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians::
 
 MossdeepCity_SpaceCenter_2F_EventScript_MoveDefeatedGrunts::
 	setobjectxyperm LOCALID_GRUNT_6, 11, 2
-	setobjectxyperm LOCALID_GRUNT_7, 15, 2
+	setobjectxyperm LOCALID_COURTNEY, 15, 2
 	setobjectxyperm LOCALID_GRUNT_5, 13, 4
 	return
 
@@ -73,13 +73,13 @@ MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_7, MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat
-	applymovement LOCALID_GRUNT_7, MossdeepCity_SpaceCenter_2F_Movement_Grunt7Defeated
+	msgbox MossdeepCity_SpaceCenter_2F_Text_CourtneyIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_7, MossdeepCity_SpaceCenter_2F_Text_CourtneyDefeat
+	applymovement LOCALID_COURTNEY, MossdeepCity_SpaceCenter_2F_Movement_CourtneyDefeated
 	waitmovement 0
 	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 2
 	copyobjectxytoperm LOCALID_GRUNT_6
-	copyobjectxytoperm LOCALID_GRUNT_7
+	copyobjectxytoperm LOCALID_COURTNEY
 	copyobjectxytoperm LOCALID_GRUNT_5
 	releaseall
 	end
@@ -96,7 +96,7 @@ MossdeepCity_SpaceCenter_2F_Movement_Grunt5Defeated:
 	unlock_facing_direction
 	step_end
 
-MossdeepCity_SpaceCenter_2F_Movement_Grunt7Defeated:
+MossdeepCity_SpaceCenter_2F_Movement_CourtneyDefeated:
 	lock_facing_direction
 	walk_right
 	unlock_facing_direction
@@ -164,8 +164,8 @@ MossdeepCity_SpaceCenter_2F_EventScript_Grunt6::
 	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle, MSGBOX_NPC
 	end
 
-MossdeepCity_SpaceCenter_2F_EventScript_Grunt7::
-	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt7PostBattle, MSGBOX_NPC
+MossdeepCity_SpaceCenter_2F_EventScript_Courtney::
+	msgbox MossdeepCity_SpaceCenter_2F_Text_CourtneyPostBattle, MSGBOX_NPC
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_Grunt5::
@@ -286,7 +286,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA
 	setflag FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA
 	removeobject LOCALID_GRUNT_6
-	removeobject LOCALID_GRUNT_7
+	removeobject LOCALID_COURTNEY
 	removeobject LOCALID_GRUNT_5
 	removeobject LOCALID_TABITHA
 	removeobject LOCALID_MAXIE
@@ -404,21 +404,20 @@ MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat:
 	.string "I lost, too!\n"
 	.string "But!$"
 
-MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro:
-	.string "I bet you want to take a break.\n"
-	.string "But I'm not about to let you do that!$"
+MossdeepCity_SpaceCenter_2F_Text_CourtneyIntro:
+	.string "To see you take out those two…\n"
+	.string "Well, that's fine. I can take you down.$"
 
-MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat:
-	.string "We should've taken a break…\n"
-	.string "That's what we should've done…$"
+MossdeepCity_SpaceCenter_2F_Text_CourtneyDefeat:
+	.string "Just barely…$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle:
 	.string "Three of us here, and look at the sorry\n"
 	.string "mess we got ourselves into.$"
 
-MossdeepCity_SpaceCenter_2F_Text_Grunt7PostBattle:
+MossdeepCity_SpaceCenter_2F_Text_CourtneyPostBattle:
 	.string "We three losing like this…\n"
-	.string "We look worse than usual by triple!$"
+	.string "You're always messing with us!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5PostBattle:
 	.string "Are we being useful to our leader\n"

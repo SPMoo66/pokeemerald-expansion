@@ -1,0 +1,318 @@
+const LOCALID_MAGMA_GRUNT_1 = 5
+const LOCALID_COURTNEY = 6
+const LOCALID_ARCHIE = 7
+const LOCALID_AQUA_GRUNT_1 = 8
+const LOCALID_AQUA_GRUNT_2 = 9
+const LOCALID_RIVAL = 11
+
+mapscripts MeteorFalls_1F_1R_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (flag(FLAG_SYS_GAME_CLEAR)) {
+			setmetatile (4, 1, METATILE_MeteorFalls_CaveEntrance_Top, TRUE)
+			setmetatile (3, 2, METATILE_MeteorFalls_CaveEntrance_Left, TRUE)
+			setmetatile (4, 2, METATILE_MeteorFalls_CaveEntrance_Bottom, FALSE)
+			setmetatile (5, 2, METATILE_MeteorFalls_CaveEntrance_Right, TRUE)
+		}
+	}
+}
+
+script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
+	lockall
+	playbgm (MUS_ENCOUNTER_MAGMA, FALSE)
+	special (SpawnCameraObject)
+	applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkDown2)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+	waitmovement (0)
+	delay (30)
+	applymovement (LOCALID_AQUA_GRUNT_1, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	msgbox ("Hehehe!\p"
+			"With this Meteorite, that thing in\n"
+			"Mt. Chimney will…")
+	closemessage
+	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterUp)
+	applymovement (LOCALID_COURTNEY, Common_Movement_WalkInPlaceFasterUp)
+	waitmovement (0)
+	playse (SE_PIN)
+	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_ExclamationMark)
+	waitmovement (0)
+	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_Delay48)
+	waitmovement (0)
+	msgbox ("Heh?\p"
+			"I don't know who you are, but if you get\n"
+			"in the way of Team Magma, don't\l"
+			"expect any mercy!")
+	closemessage
+	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkRight)
+	waitmovement (0)
+	applymovement (LOCALID_COURTNEY, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+	msgbox ("Courtney: Hold on…")
+	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceDown)
+	msgbox ("I think you're going to need my help.")
+	closemessage
+	msgbox ("Tch… fine.")
+	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceRight)
+	waitmovement (0)
+	closemessage
+	call (Common_EventScript_SetupRivalGfxId)
+	addobject (LOCALID_RIVAL)
+	applymovement (LOCALID_RIVAL, MeteorFalls_1F_1R_Movement_RivalRunsIn)
+	waitmovement (0)
+	checkplayergender
+	if (var(VAR_RESULT) == MALE ) {
+		msgbox ("May: {PLAYER}!\n"
+				"I'll help you!")
+	}
+	else {
+		msgbox ("Brendan: {PLAYER}!\n"
+				"I'm with you!")
+	}
+	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceRight)
+	waitmovement (0)
+	msgbox ("Courtney! Help me here!")
+	closemessage
+	applymovement (LOCALID_RIVAL, MeteorFalls_1F_1R_Movement_RivalBeforeBattle)
+	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceUp)
+	applymovement (LOCALID_COURTNEY, Common_Movement_WalkUp2)
+	waitmovement (0)
+	special (RemoveCameraObject)
+	special (SavePlayerParty)
+	fadescreen (FADE_TO_BLACK)
+	special (ChooseHalfPartyForBattle)
+	waitstate
+	checkplayergender
+	if (var(VAR_RESULT) == MALE ) {
+		multi_2_vs_2 (TRAINER_COURTNEY_METEOR_FALLS, "Funny… Just a kid…", TRAINER_MAGMA_GRUNT_METEOR_FALLS, "Ach!\nWe've got the Meteorite, let's just go!", PARTNER_MAY_METEOR_FALLS, TRAINER_BACK_PIC_MAY)
+	}
+	else {
+		multi_2_vs_2 (TRAINER_COURTNEY_METEOR_FALLS, "Funny… Just a kid…", TRAINER_MAGMA_GRUNT_METEOR_FALLS, "Ach!\nWe've got the Meteorite, let's just go!", PARTNER_BRENDAN_METEOR_FALLS, TRAINER_BACK_PIC_BRENDAN)
+	}
+	switch (var(VAR_RESULT)) {
+		case 1:
+			msgbox ("Hold it right there, Team Magma!\p"
+				"You're badly mistaken if you think you\n"
+				"can have your way with the world!")
+			closemessage
+			applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
+			applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterLeft)
+			applymovement (LOCALID_COURTNEY, Common_Movement_WalkInPlaceFasterLeft)
+			applymovement (LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterLeft)
+			waitmovement (0)
+			addobject (LOCALID_ARCHIE)
+			addobject (LOCALID_AQUA_GRUNT_1)
+			addobject (LOCALID_AQUA_GRUNT_2)
+			playbgm (MUS_ENCOUNTER_AQUA, FALSE)
+			applymovement (LOCALID_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieArrive)
+			applymovement (LOCALID_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGruntArrive)
+			applymovement (LOCALID_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGruntArrive)
+			waitmovement (0)
+			applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterLeft)
+			waitmovement (0)
+			special (SpawnCameraObject)
+			msgbox ("Hehehe!\n"
+					"Even Team Aqua joins us!\p"
+					"But it's too much trouble to deal with\n"
+					"you all…\p"
+					"Heh, it doesn't matter!\p"
+					"We've got the Meteorite, so off to\n"
+					"Mt. Chimney we go!\p"
+					"Hehehe! Be seeing you, you Team\n"
+					"Aqua dingbats!")
+			closemessage
+			applymovement (OBJ_EVENT_ID_PLAYER, MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay)
+			applymovement (OBJ_EVENT_ID_CAMERA, MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay)
+			applymovement (LOCALID_RIVAL, MeteorFalls_1F_1R_Movement_PushRivalOutOfWay)
+			applymovement (LOCALID_MAGMA_GRUNT_1, MeteorFalls_1F_1R_Movement_MagmaGrunt1Exit)
+			applymovement (LOCALID_COURTNEY, MeteorFalls_1F_1R_Movement_CourtneyExit)
+			waitmovement (0)
+			removeobject (LOCALID_MAGMA_GRUNT_1)
+			removeobject (LOCALID_COURTNEY)
+			applymovement (LOCALID_RIVAL, Common_Movement_FaceDown)
+			applymovement (LOCALID_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieApproachPlayer)
+			waitmovement (0)
+			msgbox ("Archie: Didn't I see you before?\n"
+					"At Slateport's Museum?\p"
+					"Ah, so your name is {PLAYER}.\p"
+					"At the time, I thought you were one\n"
+					"of Team Magma's goons.\p"
+					"Humph…\n"
+					"You're one odd kid.\p"
+					"Team Magma is a dangerous group of\n"
+					"total fanatics.\p"
+					"They engage in destruction, claiming\n"
+					"to expand the land mass.\p"
+					"They are the rivals to us,\n"
+					"the sea-loving Team Aqua!")
+			closemessage
+			applymovement (LOCALID_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1ApproachArchie)
+			applymovement (LOCALID_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2ApproachArchie)
+			waitmovement (0)
+			msgbox ("Boss, we should give chase to\n"
+					"Team Magma…")
+			applymovement (LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterDown)
+			waitmovement (0)
+			msgbox ("Archie: Yes, yes, we must!\n"
+					"We've got to hurry.\p"
+					"There's no telling what Team Magma\n"
+					"will do at Mt. Chimney!")
+			applymovement (LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterLeft)
+			waitmovement (0)
+			msgbox ("Archie: {PLAYER}, you should keep\n"
+					"an eye out for Team Magma, too.\p"
+					"Farewell!")
+			closemessage
+			applymovement (LOCALID_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieExit)
+			applymovement (LOCALID_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1Exit)
+			applymovement (LOCALID_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2Exit)
+			waitmovement (0)
+			fadedefaultbgm
+			removeobject (LOCALID_ARCHIE)
+			removeobject (LOCALID_AQUA_GRUNT_1)
+			removeobject (LOCALID_AQUA_GRUNT_2)
+			setflag (FLAG_HIDE_ROUTE_112_TEAM_MAGMA)
+			setflag (FLAG_MET_ARCHIE_METEOR_FALLS)
+			setflag (FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT)
+			setvar (VAR_METEOR_FALLS_STATE, 1)
+			applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp2)
+			waitmovement (0)
+			special (RemoveCameraObject)
+			applymovement (LOCALID_RIVAL, MeteorFalls_1F_1R_Movement_RivalApproach)
+			waitmovement (0)
+			checkplayergender
+			if (var(VAR_RESULT) == MALE ) {
+				msgbox ("May: Are you ok?\n"
+						"That was scary…\p"
+						"What could that Team Magma be after?\n"
+						"If you're planning on going after\l"
+						"them, please be careful.")
+			}
+			else {
+				msgbox ("Brendan: You're good, right?\n"
+						"That could have gone bad…\p"
+						"Team Magma… What do they want?\n"
+						"They said, Mt. Chimney…\l"
+						"If you're heading there, be safe.")
+			}
+			closemessage
+			applymovement (LOCALID_RIVAL, MeteorFalls_1F_1R_Movement_ArchieExit)
+			waitmovement (0)
+			removeobject (LOCALID_RIVAL)
+			releaseall
+			end
+		default:
+			fadescreen (FADE_TO_BLACK)
+			special (SetCB2WhiteOut)
+			waitstate
+	}
+}
+
+movement MeteorFalls_1F_1R_Movement_MagmaGrunt1Exit {
+	walk_fast_right
+	walk_fast_up * 2
+	walk_fast_right * 7
+}
+
+movement MeteorFalls_1F_1R_Movement_CourtneyExit {
+	walk_fast_up * 2
+	walk_fast_right * 7
+}
+
+movement MeteorFalls_1F_1R_Movement_ArchieArrive {
+	walk_right * 6
+}
+
+movement MeteorFalls_1F_1R_Movement_AquaGruntArrive {
+	delay_16
+	delay_16
+	walk_right * 5
+}
+
+movement MeteorFalls_1F_1R_Movement_ArchieExit {
+	walk_right * 7
+}
+
+movement MeteorFalls_1F_1R_Movement_ArchieApproachPlayer {
+	walk_right * 2
+	walk_up * 2
+	walk_in_place_faster_left
+}
+
+movement MeteorFalls_1F_1R_Movement_AquaGrunt1Exit {
+	walk_up * 2
+	walk_right * 7
+}
+
+movement MeteorFalls_1F_1R_Movement_AquaGrunt1ApproachArchie {
+	walk_right * 3
+	walk_in_place_faster_up
+}
+
+movement MeteorFalls_1F_1R_Movement_AquaGrunt2Exit {
+	walk_up * 3
+	walk_right * 7
+}
+
+movement MeteorFalls_1F_1R_Movement_AquaGrunt2ApproachArchie {
+	walk_right * 3
+	walk_in_place_faster_up
+}
+
+movement MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay {
+	walk_in_place_faster_down
+	delay_4
+	walk_in_place_faster_right
+	lock_facing_direction
+	walk_left
+	unlock_facing_direction
+	face_right
+}
+
+movement MeteorFalls_1F_1R_Movement_RivalRunsIn {
+	walk_fast_left * 6
+}
+
+movement MeteorFalls_1F_1R_Movement_RivalBeforeBattle {
+	walk_left
+	walk_in_place_down
+}
+
+movement MeteorFalls_1F_1R_Movement_PushRivalOutOfWay {
+	walk_in_place_faster_down
+	lock_facing_direction
+	walk_up
+	unlock_facing_direction
+	delay_4
+	face_right
+}
+
+movement MeteorFalls_1F_1R_Movement_RivalApproach {
+	walk_down
+	walk_left
+}
+
+script MeteorFalls_1F_1R_EventScript_ProfCozmo {
+	lock
+	faceplayer
+	if (!flag(FLAG_MET_PROF_COZMO)) {
+		msgbox ("I… I'm Cozmo…\n"
+				"I'm a Professor…\p"
+				"Team Magma asked me to guide them\n"
+				"to Meteor Falls…\p"
+				"But they tricked me.\n"
+				"They even took my Meteorite away…\p"
+				"And then another similar bunch,\n"
+				"Team Aqua showed up.\p"
+				"After that…\n"
+				"I don't understand any of it.\p"
+				"But that Team Magma…")
+		setflag (FLAG_MET_PROF_COZMO)
+	}
+	else {
+		msgbox ("Prof. Cozmo: But that Team Magma…")
+	}
+	msgbox ("What are they going to do with that\n"
+			"Meteorite at Mt. Chimney?")
+	release
+	end
+}

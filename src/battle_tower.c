@@ -3074,7 +3074,7 @@ static void FillPartnerParty(u16 trainerId)
                     thirdIdPart = partnerName[k];
                 }
             }
-            if (trainerId == TRAINER_PARTNER(PARTNER_STEVEN))
+            if (trainerId == TRAINER_PARTNER(PARTNER_STEVEN_MOSSDEEP))
                 otID = STEVEN_OTID;
             else
                 otID = ((firstIdPart % 72) * 1000) + ((secondIdPart % 23) * 10) + (thirdIdPart % 37) % 65536;

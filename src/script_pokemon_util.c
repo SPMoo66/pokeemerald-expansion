@@ -206,7 +206,7 @@ static void CB2_ReturnFromChooseHalfParty(void)
         break;
     }
 
-    SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+    SetMainCallback2(CB2_ReturnToFieldContinueScript);
 }
 
 void ChoosePartyForBattleFrontier(void)

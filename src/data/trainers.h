@@ -5822,28 +5822,28 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_MiuAndYuki),
     },
 
-    [TRAINER_AMY_AND_LIV_3] =
+    [TRAINER_MAGMA_GRUNT_METEOR_FALLS] =
     {
-        .trainerClass = TRAINER_CLASS_TWINS,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_TWINS,
-        .trainerName = _("Amy & Liv"),
+        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerName = _("Grunt"),
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_AmyAndLiv3),
+        .party = TRAINER_PARTY(sParty_MagmaGruntMeteorFalls),
     },
 
-    [TRAINER_GINA_AND_MIA_2] =
+    [TRAINER_COURTNEY_METEOR_FALLS] =
     {
-        .trainerClass = TRAINER_CLASS_TWINS,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_TWINS,
-        .trainerName = _("Gina & Mia"),
+        .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN_COURTNEY,
+        .trainerName = _("Courtney"),
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_GinaAndMia2),
+        .party = TRAINER_PARTY(sParty_CourtneyMeteorFalls),
     },
 
     [TRAINER_AMY_AND_LIV_4] =
@@ -7082,16 +7082,16 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_GruntSpaceCenter6),
     },
 
-    [TRAINER_GRUNT_SPACE_CENTER_7] =
+    [TRAINER_COURTNEY_MOSSDEEP] =
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .trainerName = _("Grunt"),
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN_COURTNEY,
+        .trainerName = _("Courtney"),
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_GruntSpaceCenter7),
+        .party = TRAINER_PARTY(sParty_CourtneyMossdeep),
     },
 
     [TRAINER_MACEY] =

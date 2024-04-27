@@ -488,8 +488,8 @@
 #define TRAINER_AMY_AND_LIV_2               482
 #define TRAINER_GINA_AND_MIA_1              483
 #define TRAINER_MIU_AND_YUKI                484
-#define TRAINER_AMY_AND_LIV_3               485  //Unused
-#define TRAINER_GINA_AND_MIA_2              486  //Unused
+#define TRAINER_MAGMA_GRUNT_METEOR_FALLS    485
+#define TRAINER_COURTNEY_METEOR_FALLS       486
 #define TRAINER_AMY_AND_LIV_4               487
 #define TRAINER_AMY_AND_LIV_5               488
 #define TRAINER_AMY_AND_LIV_6               489
@@ -593,7 +593,7 @@
 #define TRAINER_GRUNT_SPACE_CENTER_4        587
 #define TRAINER_GRUNT_SPACE_CENTER_5        588
 #define TRAINER_GRUNT_SPACE_CENTER_6        589
-#define TRAINER_GRUNT_SPACE_CENTER_7        590
+#define TRAINER_COURTNEY_MOSSDEEP           590
 #define TRAINER_MACEY                       591
 #define TRAINER_BRENDAN_RUSTBORO_TREECKO    592
 #define TRAINER_BRENDAN_RUSTBORO_MUDKIP     593

@@ -444,7 +444,7 @@ const RIVAL = 46
 script RealmsFrayIntroEvent {
 	lock
 	special (SpawnCameraObject)
-	applymovement (OBJ_EVENT_ID_CAMERA, Route120_Movement_CameraPanUp)
+	applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp2)
 	waitmovement (0)
 	applymovement (RIVAL, Rival_RealmsFray_Move1)
 	waitmovement (0)
@@ -457,7 +457,7 @@ script RealmsFrayIntroEvent {
 	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
 	delay (20)
 	waitse
-	applymovement (OBJ_EVENT_ID_CAMERA, Route120_Movement_CameraPanDown)
+	applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkDown2)
 	waitmovement (0)
 	special (RemoveCameraObject)
 	release
@@ -469,14 +469,6 @@ movement Rival_RealmsFray_Move1 {
 	face_down
 	delay_16 * 3
 	walk_up
-}
-
-movement Route120_Movement_CameraPanUp {
-	walk_up * 2
-}
-
-movement Route120_Movement_CameraPanDown {
-	walk_down * 2
 }
 
 script Route120_Portal {

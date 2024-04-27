@@ -883,7 +883,7 @@ RealmsFrayIntroEvent::
 # 446 "data/maps/Route120/scripts.pory"
 	special SpawnCameraObject
 # 447 "data/maps/Route120/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Route120_Movement_CameraPanUp
+	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp2
 # 448 "data/maps/Route120/scripts.pory"
 	waitmovement 0
 # 449 "data/maps/Route120/scripts.pory"
@@ -909,7 +909,7 @@ RealmsFrayIntroEvent::
 # 459 "data/maps/Route120/scripts.pory"
 	waitse
 # 460 "data/maps/Route120/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Route120_Movement_CameraPanDown
+	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkDown2
 # 461 "data/maps/Route120/scripts.pory"
 	waitmovement 0
 # 462 "data/maps/Route120/scripts.pory"
@@ -939,24 +939,8 @@ Rival_RealmsFray_Move1:
 	walk_up
 	step_end
 
-# 474 "data/maps/Route120/scripts.pory"
-Route120_Movement_CameraPanUp:
-# 475 "data/maps/Route120/scripts.pory"
-	walk_up
-# 475 "data/maps/Route120/scripts.pory"
-	walk_up
-	step_end
-
-# 478 "data/maps/Route120/scripts.pory"
-Route120_Movement_CameraPanDown:
-# 479 "data/maps/Route120/scripts.pory"
-	walk_down
-# 479 "data/maps/Route120/scripts.pory"
-	walk_down
-	step_end
-
 Route120_Portal::
-# 483 "data/maps/Route120/scripts.pory"
+# 475 "data/maps/Route120/scripts.pory"
 	warp MAP_REALMS_FRAY, 0
 	return
 

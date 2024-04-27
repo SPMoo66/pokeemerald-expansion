@@ -7034,27 +7034,33 @@ static const struct TrainerMon sParty_MiuAndYuki[] = {
     }
 };
 
-static const struct TrainerMon sParty_AmyAndLiv3[] = {
+static const struct TrainerMon sParty_MagmaGruntMeteorFalls[] = {
     {
-    .lvl = 9,
-    .species = SPECIES_PLUSLE,
+    .lvl = 24,
+    .species = SPECIES_BLITZLE,
     },
     {
-    .lvl = 9,
-    .species = SPECIES_MINUN,
+    .lvl = 24,
+    .species = SPECIES_DRIFLOON_EMERIBIAN,
+    },
+    {
+    .lvl = 24,
+    .species = SPECIES_PAWMO,
     }
 };
 
-static const struct TrainerMon sParty_GinaAndMia2[] = {
+static const struct TrainerMon sParty_CourtneyMeteorFalls[] = {
     {
-    .lvl = 10,
-    .species = SPECIES_DUSKULL,
-    .moves = {MOVE_NIGHT_SHADE, MOVE_DISABLE, MOVE_NONE, MOVE_NONE}
+    .lvl = 25,
+    .species = SPECIES_KIRLIA_EMERIBIAN,
     },
     {
-    .lvl = 10,
-    .species = SPECIES_SHROOMISH,
-    .moves = {MOVE_ABSORB, MOVE_LEECH_SEED, MOVE_NONE, MOVE_NONE}
+    .lvl = 25,
+    .species = SPECIES_ELEKID,
+    },
+    {
+    .lvl = 25,
+    .species = SPECIES_MAGBY,
     }
 };
 
@@ -8712,7 +8718,7 @@ static const struct TrainerMon sParty_GruntSpaceCenter6[] = {
     }
 };
 
-static const struct TrainerMon sParty_GruntSpaceCenter7[] = {
+static const struct TrainerMon sParty_CourtneyMossdeep[] = {
     {
     .lvl = 38,
     .species = SPECIES_GARDEVOIR_EMERIBIAN,

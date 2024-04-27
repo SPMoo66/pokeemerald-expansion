@@ -1306,6 +1306,9 @@ mapscripts SootopolisCity_MapScripts {
 	}
 	MAP_SCRIPT_ON_RESUME {
 		setdivewarp (MAP_UNDERWATER_SOOTOPOLIS_CITY, 9, 6)
+		if (var(VAR_SOOTOPOLIS_CITY_STATE) == 5 || var(VAR_SKY_PILLAR_STATE) <= 1) {
+			setmaplayoutindex (LAYOUT_SOOTOPOLIS_CITY_LEGENDS_BATTLE)
+		}
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [
 		VAR_SOOTOPOLIS_CITY_STATE, 1: SootopolisCity_EventScript_StartLegendariesScene
@@ -1417,93 +1420,123 @@ script SootopolisCity_EventScript_StartRayquazaScene {
 		applymovement (OBJ_EVENT_ID_CAMERA, SootopolisCity_Movement_PanToActionFromPokeCenter)
 	}
 	waitmovement (0)
-	special (RemoveCameraObject)
-	delay (60)
+	delay (20)
 	fadescreenspeed (FADE_TO_BLACK, 8)
-	setmetatile (27, 43, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (28, 43, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (29, 43, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (30, 43, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (27, 44, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (28, 44, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (29, 44, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (30, 44, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (27, 45, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (28, 45, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (29, 45, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (30, 45, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (32, 43, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (33, 43, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (34, 43, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (35, 43, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (32, 44, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (33, 44, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (34, 44, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (35, 44, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (32, 45, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (33, 45, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (34, 45, METATILE_Sootopolis_RoughWater, FALSE)
-	setmetatile (35, 45, METATILE_Sootopolis_RoughWater, FALSE)
-	removeobject (LOCALID_GROUDON)
-	removeobject (LOCALID_KYOGRE)
+	applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp2)
+	waitmovement (0)
+	special (RemoveCameraObject)
 	addobject (LOCALID_RAYQUAZA)
 	setvar (VAR_0x8004, TRUE)
 	special (Script_DoRayquazaScene)
 	waitstate
-	playse (SE_THUNDER)
-	special (SpawnCameraObject)
-	applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp4)
-	if (flag(FLAG_TEMP_1)) {
-		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp4)
-	}
-	waitmovement (0)
-	waitse
-	playmoncry (SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER)
-	setvar (VAR_0x8004, 1)  // vertical pan
-	setvar (VAR_0x8005, 1)  // horizontal pan
-	setvar (VAR_0x8006, 8)  // num shakes
-	setvar (VAR_0x8007, 3)  // shake delay
-	special (ShakeCamera)
+	delay (80)
+	msgbox ("But Rayquaza alone cannot quell them!")
+	closemessage
+	special (SavePlayerParty)
+	fadescreen (FADE_TO_BLACK)
+	special (ChooseHalfPartyForBattle)
 	waitstate
-	waitse
-	playmoncry (SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER)
-	setvar (VAR_0x8004, 1)  // vertical pan
-	setvar (VAR_0x8005, 2)  // horizontal pan
-	setvar (VAR_0x8006, 8)  // num shakes
-	setvar (VAR_0x8007, 5)  // shake delay
-	special (ShakeCamera)
-	waitstate
-	waitmoncry
-	setweather (WEATHER_NONE)
-	doweather
-	applymovement (LOCALID_RAYQUAZA, SootopolisCity_Movement_RayquazaFlyOff)
-	waitmovement (0)
-	removeobject (LOCALID_RAYQUAZA)
-	special (WaitWeather)
-	waitstate
-	clearflag (FLAG_SYS_WEATHER_CTRL)
-	setvar (VAR_SKY_PILLAR_STATE, 2)
-	clearflag (FLAG_LEGENDARIES_IN_SOOTOPOLIS)
-	if (flag(FLAG_TEMP_1)) {
-		fadenewbgm (MUS_SURF)
+	setflag (FLAG_WILD_PARTNER)
+	setflag (FLAG_NO_CATCHING)
+	setflag (FLAG_NO_RUNNING)
+	setwildbattle (SPECIES_GROUDON, 55, ITEM_RED_ORB, 0, SPECIES_KYOGRE, 55, ITEM_BLUE_ORB, 0, MOVE_BULK_UP, MOVE_HAMMER_ARM, MOVE_LAVA_PLUME, MOVE_PRECIPICE_BLADES, MOVE_CALM_MIND, MOVE_BODY_SLAM, MOVE_ICE_BEAM, MOVE_ORIGIN_PULSE)
+	multi_wild (PARTNER_RAYQUAZA, TRAINER_BACK_PIC_BLANK)
+	clearflag (FLAG_WILD_PARTNER)
+	if (var(VAR_RESULT) != 1) {
+		fadescreen (FADE_TO_BLACK)
+		special (SetCB2WhiteOut)
+		waitstate
 	}
 	else {
-		fadenewbgm (MUS_SOOTOPOLIS)
+		fadescreenspeed (FADE_TO_BLACK, 2)
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		removeobject (LOCALID_GROUDON)
+		removeobject (LOCALID_KYOGRE)
+		setmetatile (27, 43, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (28, 43, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (29, 43, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (30, 43, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (27, 44, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (28, 44, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (29, 44, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (30, 44, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (27, 45, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (28, 45, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (29, 45, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (30, 45, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (32, 43, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (33, 43, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (34, 43, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (35, 43, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (32, 44, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (33, 44, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (34, 44, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (35, 44, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (32, 45, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (33, 45, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (34, 45, METATILE_Sootopolis_RoughWater, FALSE)
+		setmetatile (35, 45, METATILE_Sootopolis_RoughWater, FALSE)
+		special (DrawWholeMapView)
+		fadescreenspeed (FADE_FROM_BLACK, 2)
+		playse (SE_THUNDER)
+		special (SpawnCameraObject)
+		applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp2)
+		if (flag(FLAG_TEMP_1)) {
+			applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp4)
+		}
+		waitmovement (0)
+		waitse
+		playmoncry (SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER)
+		setvar (VAR_0x8004, 1)  // vertical pan
+		setvar (VAR_0x8005, 1)  // horizontal pan
+		setvar (VAR_0x8006, 8)  // num shakes
+		setvar (VAR_0x8007, 3)  // shake delay
+		special (ShakeCamera)
+		waitstate
+		waitse
+		playmoncry (SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER)
+		setvar (VAR_0x8004, 1)  // vertical pan
+		setvar (VAR_0x8005, 2)  // horizontal pan
+		setvar (VAR_0x8006, 8)  // num shakes
+		setvar (VAR_0x8007, 5)  // shake delay
+		special (ShakeCamera)
+		waitstate
+		waitmoncry
+		setweather (WEATHER_NONE)
+		doweather
+		applymovement (LOCALID_RAYQUAZA, SootopolisCity_Movement_RayquazaFlyOff)
+		waitmovement (0)
+		removeobject (LOCALID_RAYQUAZA)
+		special (WaitWeather)
+		waitstate
+		clearflag (FLAG_SYS_WEATHER_CTRL)
+		setvar (VAR_SKY_PILLAR_STATE, 2)
+		clearflag (FLAG_LEGENDARIES_IN_SOOTOPOLIS)
+		if (flag(FLAG_TEMP_1)) {
+			fadenewbgm (MUS_SURF)
+		}
+		else {
+			fadenewbgm (MUS_SOOTOPOLIS)
+		}
+		delay (120)
+		clearflag (FLAG_HIDE_MAP_NAME_POPUP)
+		if (flag(FLAG_TEMP_1)) {
+			warpwhitefade (MAP_SOOTOPOLIS_CITY, 29, 53)
+		}
+		else {
+			warpwhitefade (MAP_SOOTOPOLIS_CITY, 43, 32)
+		}
+		waitstate
 	}
-	delay (120)
-	clearflag (FLAG_HIDE_MAP_NAME_POPUP)
-	if (flag(FLAG_TEMP_1)) {
-		warpwhitefade (MAP_SOOTOPOLIS_CITY, 29, 53)
-	}
-	else {
-		warpwhitefade (MAP_SOOTOPOLIS_CITY, 43, 32)
-	}
-	waitstate
 }
 
 script SootopolisCity_EventScript_PlayerFaceLegendaries {
-	turnobject (OBJ_EVENT_ID_PLAYER, DIR_NORTH)
-	if (var(VAR_SKY_PILLAR_STATE) == 2) {
-		setvar (VAR_SKY_PILLAR_STATE, 3)
+	special (StorePlayerCoordsInVars)
+	if (var(VAR_0x8004) != 43 || var(VAR_0x8005) != 32) {
+		turnobject (OBJ_EVENT_ID_PLAYER, DIR_NORTH)
+		if (var(VAR_SKY_PILLAR_STATE) == 2) {
+			setvar (VAR_SKY_PILLAR_STATE, 3)
+		}
 	}
 }

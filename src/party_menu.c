@@ -1434,8 +1434,13 @@ void Task_HandleChooseMonInput(u8 taskId)
             HandleChooseMonSelection(taskId, slotPtr);
             break;
         case B_BUTTON: // Selected Cancel / pressed B
-            HandleChooseMonCancel(taskId, slotPtr);
-            break;
+            if (sPartyMenuInternal->chooseHalf) {
+                break;
+            }
+            else {
+                HandleChooseMonCancel(taskId, slotPtr);
+                break;
+            }
         case SELECT_BUTTON: // Quick Swap
             DestroyTask(taskId);
             break;
@@ -2406,7 +2411,7 @@ static void CreateCancelConfirmWindows(bool8 chooseHalf)
             AddTextPrinterParameterized4(confirmWindowId, FONT_SMALL, mainOffset, 1, 0, 0, sFontColorTable[0], TEXT_SKIP_DRAW, gMenuText_Confirm);
             PutWindowTilemap(confirmWindowId);
             CopyWindowToVram(confirmWindowId, COPYWIN_GFX);
-            cancelWindowId = AddWindow(&sMultiCancelButtonWindowTemplate);
+            cancelWindowId = AddWindow(&sMultiCancelButtonWindowTemplate_equal);
             offset = 0;
         }
         else if (gPartyMenu.layout == PARTY_LAYOUT_SINGLE)

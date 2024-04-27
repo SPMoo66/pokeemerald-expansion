@@ -78,3 +78,16 @@ static const struct TrainerMon sParty_BrendanPartnerMeteorFalls[] = {
         .moves = {MOVE_CURSE, MOVE_FACADE, MOVE_BULLDOZE, MOVE_WATER_PULSE},
     }
 };
+
+
+static const struct TrainerMon sParty_RayquazaPartner[] = {
+    {
+        .species = SPECIES_RAYQUAZA,
+		.ball = ITEM_PARK_BALL,
+        .lvl = 70,
+        .nature = NATURE_JOLLY,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(0, 252, 4, 0, 0, 252),
+        .moves = {MOVE_DRAGON_DANCE, MOVE_DRAGON_ASCENT, MOVE_EXTREME_SPEED, MOVE_DRACO_METEOR},
+    }
+};

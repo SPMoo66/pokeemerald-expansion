@@ -105,7 +105,6 @@ Common_Movement_WalkLeft:
 	walk_left
 	step_end
 
-@ Unused
 Common_Movement_WalkUp2::
 	walk_up
 	walk_up

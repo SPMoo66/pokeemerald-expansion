@@ -659,7 +659,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     TRAINER_CLASS(SWIMMER_F, "Swimmer♀", 2, ITEM_DIVE_BALL),
     TRAINER_CLASS(TWINS, "Twins", 3, ITEM_REPEAT_BALL),
     TRAINER_CLASS(SAILOR, "Sailor", 8),
-    TRAINER_CLASS(COOLTRAINER_2, "Ace Trainer", 5, ITEM_ULTRA_BALL),
+    TRAINER_CLASS(WILD, "Wild", 5, ITEM_PARK_BALL),
     TRAINER_CLASS(MAGMA_ADMIN, "Magma Admin", 10),
     TRAINER_CLASS(RIVAL, "{PKMN} Trainer", 15),
     TRAINER_CLASS(BUG_CATCHER, "Bug Catcher", 4),

@@ -12,20 +12,14 @@
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_SUBMERGED_CAVERN",
-      "offset": 0,
-      "direction": "emerge"
-    }
-  ],
+  "connections": 0,
   "object_events": [
 
   ],
   "warp_events": [
     {
-      "x": 12,
-      "y": 15,
+      "x": 3,
+      "y": 4,
       "elevation": 0,
       "dest_map": "MAP_UNDERWATER_ROUTE124",
       "dest_warp_id": "0"

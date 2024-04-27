@@ -1,1 +1,5 @@
-mapscripts Underwater_SubmergedCavern_MapScripts {}
+mapscripts Underwater_SubmergedCavern_MapScripts {
+	MAP_SCRIPT_ON_RESUME {
+		setdivewarp (MAP_SUBMERGED_CAVERN, 12, 14)
+	}
+}

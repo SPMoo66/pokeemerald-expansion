@@ -26,6 +26,7 @@ mapscripts SubmergedCavern_MapScripts {
 		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
 			removeobject(VAR_LAST_TALKED)
 		}
+		setdivewarp (MAP_UNDERWATER_SUBMERGED_CAVERN, 3, 3)
 	}
 }
 

@@ -4504,8 +4504,8 @@
     {
       "id": "LAYOUT_UNDERWATER_SUBMERGED_CAVERN",
       "name": "Underwater_SubmergedCavern_Layout",
-      "width": 16,
-      "height": 18,
+      "width": 7,
+      "height": 7,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/Underwater_SubmergedCavern/border.bin",

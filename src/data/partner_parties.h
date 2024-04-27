@@ -79,7 +79,6 @@ static const struct TrainerMon sParty_BrendanPartnerMeteorFalls[] = {
     }
 };
 
-
 static const struct TrainerMon sParty_RayquazaPartner[] = {
     {
         .species = SPECIES_RAYQUAZA,

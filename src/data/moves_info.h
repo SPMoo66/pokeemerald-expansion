@@ -729,7 +729,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "A strong jumping kick. May\n"
             "miss and hurt the kicker."),
         #if B_UPDATED_MOVE_DATA >= GEN_5
-            .power = 100,
+            .power = 110,
         #elif B_UPDATED_MOVE_DATA >= GEN_4
             .power = 85,
         #else
@@ -738,7 +738,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .effect = EFFECT_RECOIL_IF_MISS,
         .type = TYPE_FIGHTING,
         .accuracy = 95,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_5 ? 10 : 25,
+        .pp = B_UPDATED_MOVE_DATA >= GEN_5 ? 15 : 25,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
@@ -3345,7 +3345,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "A jumping knee kick. If it\n"
             "misses, the user is hurt."),
         #if B_UPDATED_MOVE_DATA >= GEN_5
-            .power = 130,
+            .power = 140,
         #elif B_UPDATED_MOVE_DATA == GEN_4
             .power = 100,
         #else
@@ -17243,7 +17243,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Fires a beam of steel from\n"
             "its body. It hurts the user."),
         .effect = EFFECT_MAX_HP_50_RECOIL,
-        .power = 140,
+        .power = 150,
         .type = TYPE_STEEL,
         .accuracy = 95,
         .pp = 5,
@@ -19747,7 +19747,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "An electrified slam. If it\n"
             "misses, the user is hurt."),
         .effect = EFFECT_RECOIL_IF_MISS,
-        .power = 100,
+        .power = 110,
         .type = TYPE_ELECTRIC,
         .accuracy = 95,
         .pp = 15,

@@ -4540,6 +4540,16 @@
       "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
       "border_filepath": "data/layouts/RealmsFray/border.bin",
       "blockdata_filepath": "data/layouts/RealmsFray/map.bin"
+    },
+    {
+      "id": "LAYOUT_TRACKLESS_FOREST",
+      "name": "TracklessForest_Layout",
+      "width": 34,
+      "height": 38,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/TracklessForest/border.bin",
+      "blockdata_filepath": "data/layouts/TracklessForest/map.bin"
     }
   ]
 }

@@ -442,7 +442,8 @@
     "Underwater_SubmergedCavern",
     "SubmergedCavern",
     "RetiredMechanism",
-    "RealmsFray"
+    "RealmsFray",
+    "TracklessForest"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

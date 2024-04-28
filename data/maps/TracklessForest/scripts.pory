@@ -1,0 +1,106 @@
+const RAIKOU = 1
+const ENTEI = 2
+const SUICUNE = 3
+const CELEBI = 4
+
+mapscripts TracklessForest_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if(flag(FLAG_CAUGHT_RAIKOU)) {
+			setflag (FLAG_TEMP_2)
+			removeobject(RAIKOU)
+		}
+		elif(flag(FLAG_CAUGHT_ENTEI)) {
+			setflag (FLAG_TEMP_3)
+			removeobject(ENTEI)
+		}
+		elif(flag(FLAG_CAUGHT_SUICUNE)) {
+			setflag (FLAG_TEMP_4)
+			removeobject(SUICUNE)
+		}
+		elif(flag(FLAG_CAUGHT_CELEBI)) {
+			setflag (FLAG_TEMP_5)
+			removeobject(CELEBI)
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(VAR_LAST_TALKED)
+		}
+	}
+}
+
+script BattleRaikou {
+	lock
+	setvar (VAR_LAST_TALKED, RAIKOU)
+	playmoncry(SPECIES_RAIKOU, CRY_MODE_ENCOUNTER)
+	msgbox("Gwooa!")
+	waitmoncry
+	seteventmon(SPECIES_RAIKOU, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_RAIKOU)
+	}
+	release
+	end
+}
+
+script BattleEntei {
+	lock
+	setvar (VAR_LAST_TALKED, ENTEI)
+	playmoncry(SPECIES_ENTEI, CRY_MODE_ENCOUNTER)
+	msgbox("Gwooa!")
+	waitmoncry
+	seteventmon(SPECIES_ENTEI, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_ENTEI)
+	}
+	release
+	end
+}
+
+script BattleSuicune {
+	lock
+	setvar (VAR_LAST_TALKED, SUICUNE)
+	playmoncry(SPECIES_SUICUNE, CRY_MODE_ENCOUNTER)
+	msgbox("Gwooa!")
+	waitmoncry
+	seteventmon(SPECIES_SUICUNE, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_SUICUNE)
+	}
+	release
+	end
+}
+
+script BattleCelebi {
+	lock
+	setvar (VAR_LAST_TALKED, CELEBI)
+	playmoncry(SPECIES_CELEBI, CRY_MODE_ENCOUNTER)
+	msgbox("Kryuu!")
+	waitmoncry
+	seteventmon(SPECIES_CELEBI, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_CELEBI)
+	}
+	release
+	end
+}

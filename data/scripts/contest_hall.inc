@@ -163,14 +163,6 @@ LilycoveCity_ContestLobby_EventScript_CantEnterLowRank::
 	release
 	end
 
-@ Unused
-LilycoveCity_ContestLobby_EventScript_ConfirmEntry::
-	msgbox LilycoveCity_ContestLobby_Text_ConfirmContestMon, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, LilycoveCity_ContestLobby_EventScript_ChooseContestMon
-	case YES, LilycoveCity_ContestLobby_EventScript_EnterMon
-	end
-
 LilycoveCity_ContestLobby_EventScript_ConfirmEntryAlreadyWon::
 	msgbox LilycoveCity_ContestLobby_Text_AlreadyWonEnterAnyway, MSGBOX_YESNO
 	switch VAR_RESULT
@@ -1060,11 +1052,6 @@ ContestHall_EventScript_CheckRankIsMaster::
 ContestHall_EventScript_DontSkipPrize::
 	return
 
-@ This flag is never read
-ContestHall_EventScript_SetSketchFlag::
-	setflag FLAG_CONTEST_SKETCH_CREATED
-	return
-
 ContestHall_EventScript_SetReadyForContestArtist::
 	setvar VAR_LILYCOVE_CONTEST_LOBBY_STATE, 1
 	return
@@ -1080,10 +1067,6 @@ ContestHall_EventScript_EndLinkContest::
 
 ContestHall_EventScript_SetReadyForLinkContestArtist::
 	setvar VAR_LILYCOVE_CONTEST_LOBBY_STATE, 2
-	return
-
-@ Unused
-ContestHall_EventScript_Ret::
 	return
 
 ContestHall_EventScript_WinnerApproachForPrize::
@@ -1132,7 +1115,6 @@ ContestHall_EventScript_GivePrizeIfWinner::
 	return
 
 ContestHall_EventScript_GiveContestPrizes::
-	call_if_eq VAR_CONTEST_TYPE, CONTEST_TYPE_NPC_SUPER, ContestHall_EventScript_SetSketchFlag
 	specialvar VAR_RESULT, HasMonWonThisContestBefore
 	goto_if_eq VAR_RESULT, FALSE, ContestHall_EventScript_ReceiveContestRibbon
 	goto_if_eq VAR_CONTEST_RANK, CONTEST_RANK_MASTER, ContestHall_EventScript_GiveLuxuryBall
@@ -1393,12 +1375,6 @@ LilycoveCity_ContestLobby_Text_ContestReception:
 	.string "This is the reception counter for\n"
 	.string "Pokémon Contests.$"
 
-@ Unused
-LilycoveCity_ContestLobby_Text_CounterOnlyFor4PlayerContests:
-	.string "Hello!\p"
-	.string "This reception counter is only\n"
-	.string "for 4-player Pokémon Contests.$"
-
 LilycoveCity_ContestLobby_Text_EnterContest1:
 	.string "Would you like to enter your Pokémon\n"
 	.string "in our Contests?$"
@@ -1590,14 +1566,6 @@ ContestHall_Text_PickUpPrizeAtCounterLater:
 	.string "the reception counter later.\l"
 	.string "Please do compete again!$"
 
-@ Unused
-ContestHall_Text_OnlyRegister4Players:
-	.string "I only register four players for\n"
-	.string "Pokémon Contests.\p"
-	.string "If three other players link up, all\n"
-	.string "four may enter the same Contest.\p"
-	.string "Would you like to take part?$"
-
 LilycoveCity_ContestLobby_Text_ProgressWillBeSaved:
 	.string "Before entering a Contest, your\n"
 	.string "progress will be saved.$"
@@ -1605,30 +1573,6 @@ LilycoveCity_ContestLobby_Text_ProgressWillBeSaved:
 LilycoveCity_ContestLobby_Text_ParticipateAnotherTime:
 	.string "We hope you will participate another\n"
 	.string "time.$"
-
-@ Unused
-LilycoveCity_ContestLobby_Text_EnterContest2:
-	.string "Would you like to enter a Contest?$"
-
-@ Unused
-LilycoveCity_ContestLobby_Text_Explain4PlayerContest:
-	.string "When four players are ready, connect\n"
-	.string "over a Game Link cable, and register\l"
-	.string "with me, please.\p"
-	.string "Please choose the same Contest\n"
-	.string "as your fellow contestants.\p"
-	.string "The Contest begins as soon as all\n"
-	.string "players register their entry.\p"
-	.string "After that, the usual Contest rules\n"
-	.string "apply.$"
-
-@ Unused
-LilycoveCity_ContestLobby_Text_EnterWhichContest2:
-	.string "Which Contest would you like to enter?$"
-
-@ Unused
-LilycoveCity_ContestLobby_Text_EnterWhichPokemon2:
-	.string "Which Pokémon would you like to enter?$"
 
 LilycoveCity_ContestLobby_Text_Transmitting:
 	.string "Transmitting…$"
@@ -1647,16 +1591,6 @@ LilycoveCity_ContestLobby_Text_PlayersMadeDifferentChoice:
 LilycoveCity_ContestLobby_Text_PleaseWaitBButtonCancel:
 	.string "Please wait.\n"
 	.string "… … B Button: Cancel$"
-
-@ Unused
-LilycoveCity_ContestLobby_Text_ParticipateAnotherTime2:
-	.string "We hope you will participate another\n"
-	.string "time.$"
-
-@ Unused
-LilycoveCity_ContestLobby_Text_TransmissionErrorTryAgain:
-	.string "Transmission error.\n"
-	.string "Please try again.$"
 
 LilycoveCity_ContestLobby_Text_YourMonIsEntryNumX:
 	.string "Your Pokémon will be entered in\n"

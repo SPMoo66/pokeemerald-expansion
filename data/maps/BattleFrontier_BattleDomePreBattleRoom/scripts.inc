@@ -204,7 +204,7 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForTuckerSilver::
 
 BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForTuckerGold::
 	goto_if_set FLAG_TEMP_1, BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForTuckerGoldShort
-	msgbox BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerGold, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver, MSGBOX_DEFAULT
 	setflag FLAG_TEMP_1
 	return
 
@@ -213,7 +213,7 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForTuckerSilverShort::
 	return
 
 BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForTuckerGoldShort::
-	msgbox BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerGoldShort, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleDomePreBattleRoom_EventScript_ReturnFromBattle::
@@ -314,27 +314,6 @@ BattleFrontier_BattleDomePreBattleRoom_Text_SemifinalsComplete:
 	.string "completed.\p"
 	.string "These are the teams that advanced!$"
 
-@ Unused
-BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForRound2:
-	.string "Congratulations for getting through\n"
-	.string "the 1st round.\p"
-	.string "The 2nd round is next.\n"
-	.string "Are you ready?$"
-
-@ Unused
-BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForSemifinals:
-	.string "Congratulations for advancing\n"
-	.string "to the semifinals.\p"
-	.string "The best four teams meet in this round.\n"
-	.string "Are you ready?$"
-
-@ Unused
-BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForFinals:
-	.string "Congratulations for advancing\n"
-	.string "to the final match.\p"
-	.string "You're one win from the championship.\n"
-	.string "Are you ready?$"
-
 BattleFrontier_BattleDomePreBattleRoom_Text_PlayersNextOpponentIsTrainer:
 	.string "{PLAYER}'s next opponent\n"
 	.string "is this Trainer.$"
@@ -374,20 +353,6 @@ BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver:
 	.string "the Dome Ace Tucker.\p"
 	.string "Are you ready?$"
 
-@ Identical to ReadyForTuckerSilver
-BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerGold:
-	.string "Congratulations for advancing\n"
-	.string "to the final match.\p"
-	.string "For the final match, you will challenge\n"
-	.string "the Dome Ace Tucker.\p"
-	.string "Are you ready?$"
-
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort:
 	.string "Your final battle against Tucker is\n"
 	.string "next. Are you ready?$"
-
-@ Identical again
-BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerGoldShort:
-	.string "Your final battle against Tucker is\n"
-	.string "next. Are you ready?$"
-

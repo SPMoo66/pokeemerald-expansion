@@ -6,16 +6,6 @@ BattleFrontier_BattlePyramidLobby_MapScripts::
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, BattleFrontier_BattleDomeLobby_OnWarp
 	.byte 0
 
-@ Unused. Pyramid uses Dome's OnWarp (presumably by mistake). Their effects are identical
-BattleFrontier_BattlePyramidLobby_OnWarp:
-	map_script_2 VAR_TEMP_1, 0, BattleFrontier_BattlePyramidLobby_EventScript_TurnPlayerNorth
-	.2byte 0
-
-BattleFrontier_BattlePyramidLobby_EventScript_TurnPlayerNorth:
-	setvar VAR_TEMP_1, 1
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
-	end
-
 BattleFrontier_BattlePyramidLobby_OnFrame:
 	map_script_2 VAR_TEMP_CHALLENGE_STATUS, 0, BattleFrontier_BattlePyramidLobby_EventScript_GetChallengeStatus
 	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_SAVING, BattleFrontier_BattlePyramidLobby_EventScript_QuitWithoutSaving
@@ -659,11 +649,6 @@ BattleFrontier_BattlePyramidLobby_Text_PickItemsToKeep:
 	.string "Please pick the items you'll keep in the\n"
 	.string "Battle Bag, and with your Pokémon.$"
 
-@ Unused
-BattleFrontier_BattlePyramidLobby_Text_ReturnedEverythingMonsHeld:
-	.string "{PLAYER} returned everything that\n"
-	.string "the Pokémon held.$"
-
 BattleFrontier_BattlePyramidLobby_Text_UsedBattleBagWillBeKept:
 	.string "The Battle Bag you used will be kept\n"
 	.string "in readiness for your next challenge.\p"
@@ -674,23 +659,6 @@ BattleFrontier_BattlePyramidLobby_Text_RecordResultsWait:
 	.string "I must record your results.\n"
 	.string "Please wait.$"
 
-@ Unused
-BattleFrontier_BattlePyramidLobby_Text_ForConqueringPyramidTakeThis:
-	.string "As a memento for conquering\n"
-	.string "the Battle Pyramid, please take this.$"
-
-@ Unused
-BattleFrontier_BattlePyramidLobby_Text_ReceivedPrizeItem:
-	.string "{PLAYER} received the prize\n"
-	.string "{STR_VAR_1}.$"
-
-@ Unused
-BattleFrontier_BattlePyramidLobby_Text_BagIsFull:
-	.string "…Ah…\n"
-	.string "Your Bag appears to be filled.\p"
-	.string "Please return after you've organized\n"
-	.string "your Bag's contents.$"
-
 BattleFrontier_BattlePyramidLobby_Text_DisappointingHereIsBag:
 	.string "How disappointing for you…\p"
 	.string "Here is the Bag we've been holding\n"
@@ -700,13 +668,6 @@ BattleFrontier_BattlePyramidLobby_Text_DisappointingHereIsBag:
 BattleFrontier_BattlePyramidLobby_Text_LookForwardToNextChallenge:
 	.string "We look forward to your\n"
 	.string "next challenge!$"
-
-@ Unused
-BattleFrontier_BattlePyramidLobby_Text_HereIsPrize:
-	.string "We have been looking forward to\n"
-	.string "your arrival!\p"
-	.string "Here is your prize for conquering\n"
-	.string "the Pyramid.$"
 
 BattleFrontier_BattlePyramidLobby_Text_TellYouWhatMisfortunesAwait:
 	.string "Welcome…\p"
@@ -900,4 +861,3 @@ BattleFrontier_BattlePyramidLobby_Text_ExplainBagRules:
 	.string "of ten kinds of items.\p"
 	.string "The contents of the Battle Bag are\n"
 	.string "lost if you fail in your quest.$"
-

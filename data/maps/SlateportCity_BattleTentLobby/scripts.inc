@@ -188,14 +188,6 @@ SlateportCity_BattleTentLobby_EventScript_CancelChallenge::
 	release
 	end
 
-@ Unused
-SlateportCity_BattleTentLobby_Movement_UnusedEnterDoor::
-	walk_up
-	walk_up
-	walk_up
-	set_invisible
-	step_end
-
 SlateportCity_BattleTentLobby_EventScript_TormentGiver::
 	lock
 	faceplayer
@@ -306,4 +298,3 @@ SlateportCity_BattleTentLobby_Text_BattleEvenWithoutToughMons:
 SlateportCity_BattleTentLobby_Text_NiceIfMoreSelection:
 	.string "Wouldn't it be nice if they had more of\n"
 	.string "a selection?$"
-

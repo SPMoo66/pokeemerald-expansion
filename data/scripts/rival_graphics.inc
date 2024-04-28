@@ -54,69 +54,39 @@ EventScript_SetupRivalOnBikeGfxIdMale::
 	setvar VAR_OBJ_GFX_ID_3, OBJ_EVENT_GFX_RIVAL_BRENDAN_MACH_BIKE
 # 28 "data/scripts/rival_graphics.pory"
 	return
-# 29 "data/scripts/rival_graphics.pory"
-
-# 30 "data/scripts/rival_graphics.pory"
-@ Unused
-# 31 "data/scripts/rival_graphics.pory"
-Common_EventScript_SetupRivalGfxIdSameGender::
-# 32 "data/scripts/rival_graphics.pory"
-	checkplayergender
-# 33 "data/scripts/rival_graphics.pory"
-	goto_if_eq VAR_RESULT, MALE, EventScript_SetupRivalGfxIdMale2
-# 34 "data/scripts/rival_graphics.pory"
-	goto_if_eq VAR_RESULT, FEMALE, EventScript_SetupRivalGfxIdFemale2
-# 35 "data/scripts/rival_graphics.pory"
-	end
-# 36 "data/scripts/rival_graphics.pory"
-
-# 37 "data/scripts/rival_graphics.pory"
-EventScript_SetupRivalGfxIdMale2::
-# 38 "data/scripts/rival_graphics.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL
-# 39 "data/scripts/rival_graphics.pory"
-	return
-# 40 "data/scripts/rival_graphics.pory"
-
-# 41 "data/scripts/rival_graphics.pory"
-EventScript_SetupRivalGfxIdFemale2::
-# 42 "data/scripts/rival_graphics.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL
-# 43 "data/scripts/rival_graphics.pory"
-	return
 
 Common_EventScript_SetupEmRivalGfxId::
-# 47 "data/scripts/rival_graphics.pory"
+# 32 "data/scripts/rival_graphics.pory"
 	switch VAR_EMERALBODY_RIVAL
-# 48 "data/scripts/rival_graphics.pory"
+# 33 "data/scripts/rival_graphics.pory"
 	case 1, Common_EventScript_SetupEmRivalGfxId_2
-# 50 "data/scripts/rival_graphics.pory"
+# 35 "data/scripts/rival_graphics.pory"
 	case 2, Common_EventScript_SetupEmRivalGfxId_3
-# 52 "data/scripts/rival_graphics.pory"
+# 37 "data/scripts/rival_graphics.pory"
 	case 3, Common_EventScript_SetupEmRivalGfxId_4
-# 54 "data/scripts/rival_graphics.pory"
+# 39 "data/scripts/rival_graphics.pory"
 	case 4, Common_EventScript_SetupEmRivalGfxId_5
-# 57 "data/scripts/rival_graphics.pory"
+# 42 "data/scripts/rival_graphics.pory"
 	setvar VAR_OBJ_GFX_ID_B, OBJ_EVENT_GFX_BARON
 	return
 
 Common_EventScript_SetupEmRivalGfxId_2:
-# 49 "data/scripts/rival_graphics.pory"
+# 34 "data/scripts/rival_graphics.pory"
 	setvar VAR_OBJ_GFX_ID_B, OBJ_EVENT_GFX_HARPER
 	return
 
 Common_EventScript_SetupEmRivalGfxId_3:
-# 51 "data/scripts/rival_graphics.pory"
+# 36 "data/scripts/rival_graphics.pory"
 	setvar VAR_OBJ_GFX_ID_B, OBJ_EVENT_GFX_JAKSON
 	return
 
 Common_EventScript_SetupEmRivalGfxId_4:
-# 53 "data/scripts/rival_graphics.pory"
+# 38 "data/scripts/rival_graphics.pory"
 	setvar VAR_OBJ_GFX_ID_B, OBJ_EVENT_GFX_REDD
 	return
 
 Common_EventScript_SetupEmRivalGfxId_5:
-# 55 "data/scripts/rival_graphics.pory"
+# 40 "data/scripts/rival_graphics.pory"
 	setvar VAR_OBJ_GFX_ID_B, OBJ_EVENT_GFX_SAKURA
 	return
 

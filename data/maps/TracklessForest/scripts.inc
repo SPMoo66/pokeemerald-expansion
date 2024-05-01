@@ -203,6 +203,42 @@ BattleCelebi_2:
 	goto BattleCelebi_1
 
 
+TracklessForest_Teleport::
+# 109 "data/maps/TracklessForest/scripts.pory"
+	lock
+# 110 "data/maps/TracklessForest/scripts.pory"
+	msgbox TracklessForest_Teleport_Text_0
+# 111 "data/maps/TracklessForest/scripts.pory"
+	goto_if_set FLAG_SYS_GAME_CLEAR, TracklessForest_Teleport_2
+TracklessForest_Teleport_1:
+# 123 "data/maps/TracklessForest/scripts.pory"
+	release
+	end
+
+TracklessForest_Teleport_2:
+# 112 "data/maps/TracklessForest/scripts.pory"
+	msgbox TracklessForest_Teleport_Text_1, MSGBOX_YESNO
+# 113 "data/maps/TracklessForest/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq TracklessForest_Teleport_4
+	goto TracklessForest_Teleport_1
+
+TracklessForest_Teleport_4:
+# 114 "data/maps/TracklessForest/scripts.pory"
+	special StorePlayerCoordsInVars
+# 115 "data/maps/TracklessForest/scripts.pory"
+	compare VAR_0x8004, 16
+	goto_if_eq TracklessForest_Teleport_6
+# 119 "data/maps/TracklessForest/scripts.pory"
+	warp MAP_TRACKLESS_FOREST, 0
+	goto TracklessForest_Teleport_1
+
+TracklessForest_Teleport_6:
+# 116 "data/maps/TracklessForest/scripts.pory"
+	warp MAP_TRACKLESS_FOREST, 1
+	goto TracklessForest_Teleport_1
+
+
 BattleRaikou_Text_0:
 # 36 "data/maps/TracklessForest/scripts.pory"
 	.string "Gwooa!$"
@@ -210,3 +246,11 @@ BattleRaikou_Text_0:
 BattleCelebi_Text_0:
 # 93 "data/maps/TracklessForest/scripts.pory"
 	.string "Kryuu!$"
+
+TracklessForest_Teleport_Text_0:
+# 110 "data/maps/TracklessForest/scripts.pory"
+	.string "You feel a nostalgic air from the stone.$"
+
+TracklessForest_Teleport_Text_1:
+# 112 "data/maps/TracklessForest/scripts.pory"
+	.string "Touch the stone?$"

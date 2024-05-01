@@ -104,3 +104,22 @@ script BattleCelebi {
 	release
 	end
 }
+
+script TracklessForest_Teleport {
+	lock
+	msgbox("You feel a nostalgic air from the stone.")
+	if (flag(FLAG_SYS_GAME_CLEAR)) {
+		msgbox("Touch the stone?", MSGBOX_YESNO)
+		if (var(VAR_RESULT) == 1) {
+			special (StorePlayerCoordsInVars)
+			if (var(VAR_0x8004) == 16) {
+				warp(MAP_TRACKLESS_FOREST, 1)
+			}
+			else {
+				warp(MAP_TRACKLESS_FOREST, 0)
+			}
+		}
+	}
+	release
+	end
+}

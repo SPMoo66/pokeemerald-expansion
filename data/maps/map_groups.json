@@ -443,7 +443,8 @@
     "SubmergedCavern",
     "RetiredMechanism",
     "RealmsFray",
-    "TracklessForest"
+    "TracklessForest",
+    "NamelessCavern"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

@@ -1093,3 +1093,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RealmsFray/scripts.inc"
 
 	.include "data/maps/TracklessForest/scripts.inc"
+
+	.include "data/maps/NamelessCavern/scripts.inc"

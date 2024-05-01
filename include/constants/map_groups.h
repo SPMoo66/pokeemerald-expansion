@@ -414,6 +414,7 @@
 #define MAP_RETIRED_MECHANISM                        (118 | (24 << 8))
 #define MAP_REALMS_FRAY                              (119 | (24 << 8))
 #define MAP_TRACKLESS_FOREST                         (120 | (24 << 8))
+#define MAP_NAMELESS_CAVERN                          (121 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

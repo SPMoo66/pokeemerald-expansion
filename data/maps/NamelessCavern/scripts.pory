@@ -1,0 +1,82 @@
+const MESPRIT = 1
+const UXIE = 2
+const AZELF = 3
+
+mapscripts NamelessCavern_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if(flag(FLAG_CAUGHT_MESPRIT)) {
+			setflag (FLAG_TEMP_2)
+			removeobject(MESPRIT)
+		}
+		elif(flag(FLAG_CAUGHT_UXIE)) {
+			setflag (FLAG_TEMP_3)
+			removeobject(UXIE)
+		}
+		elif(flag(FLAG_CAUGHT_AZELF)) {
+			setflag (FLAG_TEMP_4)
+			removeobject(AZELF)
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(VAR_LAST_TALKED)
+		}
+	}
+}
+
+script BattleMesprit {
+	lock
+	setvar (VAR_LAST_TALKED, MESPRIT)
+	playmoncry(SPECIES_MESPRIT, CRY_MODE_ENCOUNTER)
+	msgbox("Gwooa!")
+	waitmoncry
+	seteventmon(SPECIES_MESPRIT, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_MESPRIT)
+	}
+	release
+	end
+}
+
+script BattleUxie {
+	lock
+	setvar (VAR_LAST_TALKED, UXIE)
+	playmoncry(SPECIES_UXIE, CRY_MODE_ENCOUNTER)
+	msgbox("Gwooa!")
+	waitmoncry
+	seteventmon(SPECIES_UXIE, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_UXIE)
+	}
+	release
+	end
+}
+
+script BattleAzelf {
+	lock
+	setvar (VAR_LAST_TALKED, AZELF)
+	playmoncry(SPECIES_AZELF, CRY_MODE_ENCOUNTER)
+	msgbox("Gwooa!")
+	waitmoncry
+	seteventmon(SPECIES_AZELF, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_AZELF)
+	}
+	release
+	end
+}

@@ -26,6 +26,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BattleDarkrai",
       "flag": "FLAG_TEMP_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PORTAL",
+      "x": 5,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CaveofDreamsChamber_Portal",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -35,6 +48,13 @@
       "elevation": 0,
       "dest_map": "MAP_CAVE_OF_DREAMS",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_CRESCENT_ISLE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

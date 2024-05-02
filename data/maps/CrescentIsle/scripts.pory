@@ -1,0 +1,38 @@
+const CRESSELIA = 2
+
+mapscripts CrescentIsle_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if(flag(FLAG_CAUGHT_CRESSELIA)) {
+			setflag (FLAG_TEMP_2)
+			removeobject(CRESSELIA)
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(VAR_LAST_TALKED)
+		}
+	}
+}
+
+script BattleCresselia {
+	lock
+	setvar (VAR_LAST_TALKED, CRESSELIA)
+	playmoncry(SPECIES_CRESSELIA, CRY_MODE_ENCOUNTER)
+	msgbox("Gwooa!")
+	waitmoncry
+	seteventmon(SPECIES_CRESSELIA, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_CRESSELIA)
+	}
+	release
+	end
+}
+
+script CrescentIsle_Portal {
+	warp(MAP_CAVE_OF_DREAMS_CHAMBER, 1)
+}

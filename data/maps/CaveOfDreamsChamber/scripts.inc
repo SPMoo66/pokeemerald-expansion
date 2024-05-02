@@ -63,6 +63,12 @@ BattleDarkrai_2:
 	goto BattleDarkrai_1
 
 
+CaveofDreamsChamber_Portal::
+# 36 "data/maps/CaveOfDreamsChamber/scripts.pory"
+	warp MAP_CRESCENT_ISLE, 0
+	return
+
+
 BattleDarkrai_Text_0:
 # 20 "data/maps/CaveOfDreamsChamber/scripts.pory"
 	.string "...\p...$"

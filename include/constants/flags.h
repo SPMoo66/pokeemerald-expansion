@@ -118,8 +118,7 @@
 #define FLAG_CAUGHT_TAPU_FINI                0x65 //
 #define FLAG_CAUGHT_TAPU_KOKO                0x66 //
 #define FLAG_CAUGHT_TAPU_LELE                0x67 //
-
-#define FLAG_UNUSED_0x68                     0x68 // Unused
+#define FLAG_CAUGHT_CRESSELIA                0x68
 
 #define FLAG_OCEANIC_MUSEUM_MET_REPORTER     0x69
 #define FLAG_RECEIVED_HM_STRENGTH            0x6A

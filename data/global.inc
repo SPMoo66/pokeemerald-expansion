@@ -970,6 +970,126 @@ Common_EventScript_MoveReminder_20:
 	goto Common_EventScript_MoveReminder_14
 
 
+EventScript_CapCollector::
+# 481 "data/global.pory"
+	lock
+# 482 "data/global.pory"
+	faceplayer
+# 483 "data/global.pory"
+	goto_if_unset FLAG_TEMP_1, EventScript_CapCollector_2
+EventScript_CapCollector_1:
+# 487 "data/global.pory"
+	msgbox DoYouHaveAnyCaps
+# 488 "data/global.pory"
+	waitmessage
+# 489 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_0, ITEM_METRONOME
+# 490 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_1, ITEM_GRIP_CLAW
+# 491 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_2, ITEM_STICKY_BARB
+# 492 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_3, ITEM_SHED_SHELL
+# 493 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_4, ITEM_BIG_ROOT
+# 494 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_5, ITEM_LIGHT_CLAY
+# 495 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_6, ITEM_AIR_BALLOON
+# 496 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_7, ITEM_WHITE_HERB
+# 497 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_8, ITEM_RED_CARD
+# 498 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_9, ITEM_EJECT_BUTTON
+# 499 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_10, ITEM_SAFETY_GOGGLES
+# 500 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_11, ITEM_THROAT_SPRAY
+# 501 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_12, ITEM_MENTAL_HERB
+# 502 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_13, ITEM_NORMAL_GEM
+# 503 "data/global.pory"
+	special GetNumberOfBadges
+# 504 "data/global.pory"
+	compare VAR_RESULT, 5
+	goto_if_ge EventScript_CapCollector_5
+EventScript_CapCollector_4:
+# 509 "data/global.pory"
+	special ShowBottleCapsWindow
+# 510 "data/global.pory"
+	dynmultistack 17, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM
+# 511 "data/global.pory"
+	compare VAR_RESULT, 127
+	goto_if_ne EventScript_CapCollector_8
+EventScript_CapCollector_7:
+# 532 "data/global.pory"
+	msgbox gText_PleaseComeAgain
+# 533 "data/global.pory"
+	special CloseBattlePointsWindow
+# 534 "data/global.pory"
+	release
+	end
+
+EventScript_CapCollector_2:
+# 484 "data/global.pory"
+	msgbox BottleCapCollectorIntro
+# 485 "data/global.pory"
+	setflag FLAG_TEMP_1
+	goto EventScript_CapCollector_1
+
+EventScript_CapCollector_5:
+# 505 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_14, ITEM_BOOSTER_ENERGY
+# 506 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_15, ITEM_MIRROR_HERB
+# 507 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_16, ITEM_POWER_HERB
+	goto EventScript_CapCollector_4
+
+EventScript_CapCollector_8:
+# 512 "data/global.pory"
+	copyvar VAR_0x8009, VAR_RESULT
+# 513 "data/global.pory"
+	checkitem ITEM_BOTTLE_CAP
+# 514 "data/global.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq EventScript_CapCollector_11
+# 520 "data/global.pory"
+	checkitemspace VAR_0x8009
+# 521 "data/global.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_CapCollector_14
+# 527 "data/global.pory"
+	removeitem ITEM_BOTTLE_CAP
+# 528 "data/global.pory"
+	additem VAR_0x8009
+# 529 "data/global.pory"
+	special UpdateBottleCapsWindow
+# 530 "data/global.pory"
+	playse SE_SHOP
+	goto EventScript_CapCollector_7
+
+EventScript_CapCollector_11:
+# 515 "data/global.pory"
+	msgbox EventScript_CapCollector_Text_17
+# 516 "data/global.pory"
+	special CloseBattlePointsWindow
+# 517 "data/global.pory"
+	release
+	end
+
+EventScript_CapCollector_14:
+# 522 "data/global.pory"
+	msgbox EventScript_CapCollector_Text_18
+# 523 "data/global.pory"
+	special CloseBattlePointsWindow
+# 524 "data/global.pory"
+	release
+	end
+
+
 Mart_EventScript_TMClerk_Text_0:
 # 152 "data/global.pory"
 	.string "Sorry, I can only sell to trainers who\n"
@@ -1059,3 +1179,92 @@ Common_EventScript_MoveReminder_Text_8:
 Common_EventScript_MoveReminder_Text_9:
 # 467 "data/global.pory"
 	.string "Which move should I teach?$"
+
+EventScript_CapCollector_Text_0:
+# 489 "data/global.pory"
+	.string "Metronome$"
+
+EventScript_CapCollector_Text_1:
+# 490 "data/global.pory"
+	.string "Grip Claw$"
+
+EventScript_CapCollector_Text_2:
+# 491 "data/global.pory"
+	.string "Sticky Barb$"
+
+EventScript_CapCollector_Text_3:
+# 492 "data/global.pory"
+	.string "Shed Shell$"
+
+EventScript_CapCollector_Text_4:
+# 493 "data/global.pory"
+	.string "Big Root$"
+
+EventScript_CapCollector_Text_5:
+# 494 "data/global.pory"
+	.string "Light Clay$"
+
+EventScript_CapCollector_Text_6:
+# 495 "data/global.pory"
+	.string "Air Balloon$"
+
+EventScript_CapCollector_Text_7:
+# 496 "data/global.pory"
+	.string "White Herb$"
+
+EventScript_CapCollector_Text_8:
+# 497 "data/global.pory"
+	.string "Red Card$"
+
+EventScript_CapCollector_Text_9:
+# 498 "data/global.pory"
+	.string "Eject Button$"
+
+EventScript_CapCollector_Text_10:
+# 499 "data/global.pory"
+	.string "Safety Goggles$"
+
+EventScript_CapCollector_Text_11:
+# 500 "data/global.pory"
+	.string "Throat Spray$"
+
+EventScript_CapCollector_Text_12:
+# 501 "data/global.pory"
+	.string "Mental Herb$"
+
+EventScript_CapCollector_Text_13:
+# 502 "data/global.pory"
+	.string "Normal Gem$"
+
+EventScript_CapCollector_Text_14:
+# 505 "data/global.pory"
+	.string "Booster Energy$"
+
+EventScript_CapCollector_Text_15:
+# 506 "data/global.pory"
+	.string "Mirror Herb$"
+
+EventScript_CapCollector_Text_16:
+# 507 "data/global.pory"
+	.string "Power Herb$"
+
+EventScript_CapCollector_Text_17:
+# 515 "data/global.pory"
+	.string "You don't seem to have any Bottle Caps,\nthus I have nothing to give you.$"
+
+EventScript_CapCollector_Text_18:
+# 522 "data/global.pory"
+	.string "You don't have any room in your Bag for\n"
+	.string "this item.$"
+
+BottleCapCollectorIntro::
+# 539 "data/global.pory"
+	.string "I'm a collector of Bottle Caps.\n"
+	.string "If you happen to come across any, I'll\l"
+	.string "gladly trade you some rare items in\l"
+	.string "exchange for them.$"
+
+DoYouHaveAnyCaps::
+# 543 "data/global.pory"
+	.string "Do you have any Bottle Caps you'd like\n"
+	.string "to trade?$"

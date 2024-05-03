@@ -476,3 +476,70 @@ script Common_EventScript_MoveReminder {
 	clearflag (FLAG_EGG_MOVE_TUTOR)
 	release
 }
+
+script EventScript_CapCollector {
+	lock
+	faceplayer
+	if (!flag(FLAG_TEMP_1)) {
+		msgbox(BottleCapCollectorIntro)
+		setflag (FLAG_TEMP_1)
+	}
+	msgbox(DoYouHaveAnyCaps)
+	waitmessage
+	dynmultipush("Metronome", ITEM_METRONOME)
+	dynmultipush("Grip Claw", ITEM_GRIP_CLAW)
+	dynmultipush("Sticky Barb", ITEM_STICKY_BARB)
+	dynmultipush("Shed Shell", ITEM_SHED_SHELL)
+	dynmultipush("Big Root", ITEM_BIG_ROOT)
+	dynmultipush("Light Clay", ITEM_LIGHT_CLAY)
+	dynmultipush("Air Balloon", ITEM_AIR_BALLOON)
+	dynmultipush("White Herb", ITEM_WHITE_HERB)
+	dynmultipush("Red Card", ITEM_RED_CARD)
+	dynmultipush("Eject Button", ITEM_EJECT_BUTTON)
+	dynmultipush("Safety Goggles", ITEM_SAFETY_GOGGLES)
+	dynmultipush("Throat Spray", ITEM_THROAT_SPRAY)
+	dynmultipush("Mental Herb", ITEM_MENTAL_HERB)
+	dynmultipush("Normal Gem", ITEM_NORMAL_GEM)
+	special(GetNumberOfBadges)
+	if (var(VAR_RESULT) >= 5) {
+		dynmultipush("Booster Energy", ITEM_BOOSTER_ENERGY)
+		dynmultipush("Mirror Herb", ITEM_MIRROR_HERB)
+		dynmultipush("Power Herb", ITEM_POWER_HERB)
+	}
+	special (ShowBottleCapsWindow)
+	dynmultistack(17, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM)
+	if (var(VAR_RESULT) != 127) {
+		copyvar (VAR_0x8009, VAR_RESULT)
+		checkitem (ITEM_BOTTLE_CAP)
+		if (!var(VAR_RESULT)) {
+			msgbox("You don't seem to have any Bottle Caps,\nthus I have nothing to give you.")
+			special (CloseBattlePointsWindow)
+			release
+			end
+		}
+		checkitemspace (VAR_0x8009)
+		if (var(VAR_RESULT) == FALSE) {
+			msgbox(format("You don't have any room in your Bag for this item."))
+			special (CloseBattlePointsWindow)
+			release
+			end
+		}
+		removeitem (ITEM_BOTTLE_CAP)
+		additem (VAR_0x8009)
+		special (UpdateBottleCapsWindow)
+		playse (SE_SHOP)
+	}
+	msgbox(gText_PleaseComeAgain)
+	special (CloseBattlePointsWindow)
+	release
+	end
+}
+
+
+text BottleCapCollectorIntro {
+	format("I'm a collector of Bottle Caps.\nIf you happen to come across any, I'll gladly trade you some rare items in exchange for them.")
+}
+
+text DoYouHaveAnyCaps {
+	format("Do you have any Bottle Caps you'd like to trade?")
+}

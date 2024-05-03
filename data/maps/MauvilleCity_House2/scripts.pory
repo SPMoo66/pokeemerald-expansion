@@ -1,0 +1,17 @@
+mapscripts MauvilleCity_House2_MapScripts {}
+
+script MauvilleCity_House2_EventScript_Woman {
+	lock
+	faceplayer
+	if (!flag(FLAG_RECEIVED_COIN_CASE)) {
+		msgbox(format("I love to collect different Mail, but lately they've been so hard to come by…\pI was going to trade a Coin Case to someone with Harbor Mail…\pSigh…\pHere, how about you just take this Coin Case off my hands. Someone should get some use from it."))
+		giveitem (ITEM_COIN_CASE)
+		if (var(VAR_RESULT) == FALSE) {
+			goto (Common_EventScript_ShowBagIsFull)
+		}
+		setflag (FLAG_RECEIVED_COIN_CASE)
+	}
+	msgbox("That Coin Case can be used\nat the Game Corner.")
+	release
+	end
+}

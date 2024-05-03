@@ -863,6 +863,7 @@ const u8 gText_B4F[] = _("B4F");
 const u8 gText_Rooftop[] = _("Rooftop");
 const u8 gText_ElevatorNowOn[] = _("Now on:");
 const u8 gText_BP[] = _("BP");
+const u8 gText_Caps[] = _("Caps");
 const u8 gText_EnergyPowder50[] = _("Energypowder{CLEAR_TO 114}{FONT_SMALL}50");
 const u8 gText_EnergyRoot80[] = _("Energy Root{CLEAR_TO 114}{FONT_SMALL}80");
 const u8 gText_HealPowder50[] = _("Heal Powder{CLEAR_TO 114}{FONT_SMALL}50");

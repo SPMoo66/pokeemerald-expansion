@@ -19,6 +19,7 @@
 #include "field_weather.h"
 #include "graphics.h"
 #include "international_string_util.h"
+#include "item.h"
 #include "item_icon.h"
 #include "link.h"
 #include "load_save.h"
@@ -2912,6 +2913,34 @@ void FrontierGamblerSetWonOrLost(bool8 won)
                 VarSet(VAR_FRONTIER_GAMBLER_STATE, FRONTIER_GAMBLER_LOST);
         }
     }
+}
+
+void UpdateBottleCapsWindow(void)
+{
+    u8 string[32];
+    u32 x;
+    StringCopy(ConvertIntToDecimalStringN(string, CountTotalItemQuantityInBag(ITEM_BOTTLE_CAP), STR_CONV_MODE_RIGHT_ALIGN, 4), gText_Caps);
+    x = GetStringRightAlignXOffset(FONT_NORMAL, string, 48);
+    AddTextPrinterParameterized(sBattlePointsWindowId, FONT_NORMAL, string, x, 1, 0, NULL);
+}
+
+void ShowBottleCapsWindow(void)
+{
+    static const struct WindowTemplate sBattlePoints_WindowTemplate =
+    {
+        .bg = 0,
+        .tilemapLeft = 1,
+        .tilemapTop = 1,
+        .width = 6,
+        .height = 2,
+        .paletteNum = 15,
+        .baseBlock = 8,
+    };
+
+    sBattlePointsWindowId = AddWindow(&sBattlePoints_WindowTemplate);
+    SetStandardWindowBorderStyle(sBattlePointsWindowId, FALSE);
+    UpdateBottleCapsWindow();
+    CopyWindowToVram(sBattlePointsWindowId, COPYWIN_GFX);
 }
 
 void UpdateBattlePointsWindow(void)

@@ -854,6 +854,7 @@ extern const u8 BattleFrontier_Lounge3_Text_GetToBattlePike[];
 extern const u8 BattleFrontier_Lounge3_Text_GetToBattlePyramid[];
 
 extern const u8 gText_BP[];
+extern const u8 gText_Caps[];
 
 // Battle Frontier Exchange Corner
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_KissPosterDesc[];

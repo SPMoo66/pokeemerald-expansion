@@ -278,7 +278,7 @@
       "flag": "FLAG_HIDE_ROUTE_118_STEVEN"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_BLUE",
       "x": 69,
       "y": 7,
       "elevation": 3,
@@ -287,7 +287,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_SCOPE_LENS",
-      "script": "Common_EventScript_FindItem",
+      "script": "Route118_EventScript_ChallengeBall1",
       "flag": "FLAG_CHALLENGE_BALL_ROUTE_118"
     },
     {

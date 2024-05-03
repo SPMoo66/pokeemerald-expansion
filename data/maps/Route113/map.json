@@ -96,7 +96,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_BLUE",
       "x": 53,
       "y": 7,
       "elevation": 3,
@@ -105,11 +105,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_MUSCLE_BAND",
-      "script": "Common_EventScript_FindItem",
+      "script": "Route113_EventScript_ChallengeBall2",
       "flag": "FLAG_CHALLENGE_BALL_ROUTE_113_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_BLUE",
       "x": 79,
       "y": 5,
       "elevation": 3,
@@ -118,7 +118,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_WISE_GLASSES",
-      "script": "Common_EventScript_FindItem",
+      "script": "Route113_EventScript_ChallengeBall1",
       "flag": "FLAG_CHALLENGE_BALL_ROUTE_113_2"
     },
     {

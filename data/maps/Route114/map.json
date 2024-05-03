@@ -143,7 +143,7 @@
       "flag": "FLAG_ITEM_ROUTE_114_BALM_MUSHROOM"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_BLUE",
       "x": 11,
       "y": 37,
       "elevation": 4,
@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_SUPER_ROD",
-      "script": "Common_EventScript_FindItem",
+      "script": "Route114_EventScript_ChallengeBall1",
       "flag": "FLAG_CHALLENGE_BALL_ROUTE_114"
     },
     {

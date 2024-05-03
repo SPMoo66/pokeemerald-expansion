@@ -28,7 +28,7 @@
       "flag": "FLAG_ITEM_METEOR_FALLS_1F_1R_NUGGET"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_BLUE",
       "x": 2,
       "y": 14,
       "elevation": 3,
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_ASSAULT_VEST",
-      "script": "Common_EventScript_FindItem",
+      "script": "MeteorFalls_EventScript_ChallengeBall1",
       "flag": "FLAG_CHALLENGE_BALL_METEOR_FALLS"
     },
     {

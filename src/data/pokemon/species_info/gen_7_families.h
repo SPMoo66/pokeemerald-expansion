@@ -6306,6 +6306,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .isGigantamax = TRUE,
         .levelUpLearnset = sMelmetalLevelUpLearnset,
         .teachableLearnset = sMelmetalTeachableLearnset,
+        .isMegaEvolution = TRUE,
         .formSpeciesIdTable = sMelmetalFormSpeciesIdTable,
         .formChangeTable = sMelmetalFormChangeTable,
     },

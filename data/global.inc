@@ -869,223 +869,227 @@ BadgedEvoPokemart5:
 	.2byte ITEM_DAWN_STONE
 # 425 "data/global.pory"
 	.2byte ITEM_METAL_COAT
+# 426 "data/global.pory"
+	.2byte ITEM_ABILITY_CAPSULE
+# 427 "data/global.pory"
+	.2byte ITEM_ABILITY_PATCH
 	.2byte ITEM_NONE
 
 Common_EventScript_MoveReminder::
-# 429 "data/global.pory"
-	lock
-# 430 "data/global.pory"
-	faceplayer
 # 431 "data/global.pory"
+	lock
+# 432 "data/global.pory"
+	faceplayer
+# 433 "data/global.pory"
 	goto_if_unset FLAG_TEMP_1, Common_EventScript_MoveReminder_2
 Common_EventScript_MoveReminder_1:
-# 434 "data/global.pory"
-	setflag FLAG_TEMP_1
-# 435 "data/global.pory"
-	msgbox Common_EventScript_MoveReminder_Text_1
 # 436 "data/global.pory"
-	setvar VAR_RESULT, 2
+	setflag FLAG_TEMP_1
 # 437 "data/global.pory"
-	dynmultipush Common_EventScript_MoveReminder_Text_2, 0
+	msgbox Common_EventScript_MoveReminder_Text_1
 # 438 "data/global.pory"
+	setvar VAR_RESULT, 2
+# 439 "data/global.pory"
+	dynmultipush Common_EventScript_MoveReminder_Text_2, 0
+# 440 "data/global.pory"
 	goto_if_set FLAG_BADGE02_GET, Common_EventScript_MoveReminder_5
 Common_EventScript_MoveReminder_4:
-# 441 "data/global.pory"
-	dynmultipush Common_EventScript_MoveReminder_Text_4, 2
-# 442 "data/global.pory"
-	dynmultistack 0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
 # 443 "data/global.pory"
+	dynmultipush Common_EventScript_MoveReminder_Text_4, 2
+# 444 "data/global.pory"
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
+# 445 "data/global.pory"
 	compare VAR_RESULT, 2
 	goto_if_ge Common_EventScript_MoveReminder_8
-# 447 "data/global.pory"
+# 449 "data/global.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_MoveReminder_12
 Common_EventScript_MoveReminder_11:
 Common_EventScript_MoveReminder_14:
-# 451 "data/global.pory"
-	msgbox Common_EventScript_MoveReminder_Text_6
-# 452 "data/global.pory"
-	special ChooseMonForMoveRelearner
 # 453 "data/global.pory"
-	waitstate
+	msgbox Common_EventScript_MoveReminder_Text_6
 # 454 "data/global.pory"
+	special ChooseMonForMoveRelearner
+# 455 "data/global.pory"
+	waitstate
+# 456 "data/global.pory"
 	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
 	goto_if_eq Common_EventScript_MoveReminder_16
-# 459 "data/global.pory"
+# 461 "data/global.pory"
 	special IsSelectedMonEgg
-# 460 "data/global.pory"
+# 462 "data/global.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq Common_EventScript_MoveReminder_19
-# 463 "data/global.pory"
+# 465 "data/global.pory"
 	compare VAR_0x8005, 0
 	goto_if_eq Common_EventScript_MoveReminder_20
-# 467 "data/global.pory"
-	msgbox Common_EventScript_MoveReminder_Text_9
-# 468 "data/global.pory"
-	special TeachMoveRelearnerMove
 # 469 "data/global.pory"
-	waitstate
+	msgbox Common_EventScript_MoveReminder_Text_9
 # 470 "data/global.pory"
+	special TeachMoveRelearnerMove
+# 471 "data/global.pory"
+	waitstate
+# 472 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_5
 Common_EventScript_MoveReminder_7:
-# 476 "data/global.pory"
+# 478 "data/global.pory"
 	clearflag FLAG_EGG_MOVE_TUTOR
-# 477 "data/global.pory"
+# 479 "data/global.pory"
 	release
 	return
 
 Common_EventScript_MoveReminder_2:
-# 432 "data/global.pory"
+# 434 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_0
 	goto Common_EventScript_MoveReminder_1
 
 Common_EventScript_MoveReminder_5:
-# 439 "data/global.pory"
+# 441 "data/global.pory"
 	dynmultipush Common_EventScript_MoveReminder_Text_3, 1
 	goto Common_EventScript_MoveReminder_4
 
 Common_EventScript_MoveReminder_8:
-# 444 "data/global.pory"
+# 446 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_5
 	goto Common_EventScript_MoveReminder_7
 
 Common_EventScript_MoveReminder_12:
-# 448 "data/global.pory"
+# 450 "data/global.pory"
 	setflag FLAG_EGG_MOVE_TUTOR
 	goto Common_EventScript_MoveReminder_11
 
 Common_EventScript_MoveReminder_16:
-# 455 "data/global.pory"
+# 457 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_5
 	goto Common_EventScript_MoveReminder_7
 
 Common_EventScript_MoveReminder_19:
-# 461 "data/global.pory"
+# 463 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_7
 	goto Common_EventScript_MoveReminder_14
 
 Common_EventScript_MoveReminder_20:
-# 464 "data/global.pory"
+# 466 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_8
 	goto Common_EventScript_MoveReminder_14
 
 
 EventScript_CapCollector::
-# 481 "data/global.pory"
-	lock
-# 482 "data/global.pory"
-	faceplayer
 # 483 "data/global.pory"
+	lock
+# 484 "data/global.pory"
+	faceplayer
+# 485 "data/global.pory"
 	goto_if_unset FLAG_TEMP_1, EventScript_CapCollector_2
 EventScript_CapCollector_1:
-# 487 "data/global.pory"
-	msgbox DoYouHaveAnyCaps
-# 488 "data/global.pory"
-	waitmessage
 # 489 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_0, ITEM_METRONOME
+	msgbox DoYouHaveAnyCaps
 # 490 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_1, ITEM_GRIP_CLAW
+	waitmessage
 # 491 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_2, ITEM_STICKY_BARB
+	dynmultipush EventScript_CapCollector_Text_0, ITEM_METRONOME
 # 492 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_3, ITEM_SHED_SHELL
+	dynmultipush EventScript_CapCollector_Text_1, ITEM_GRIP_CLAW
 # 493 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_4, ITEM_BIG_ROOT
+	dynmultipush EventScript_CapCollector_Text_2, ITEM_STICKY_BARB
 # 494 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_5, ITEM_LIGHT_CLAY
+	dynmultipush EventScript_CapCollector_Text_3, ITEM_SHED_SHELL
 # 495 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_6, ITEM_AIR_BALLOON
+	dynmultipush EventScript_CapCollector_Text_4, ITEM_BIG_ROOT
 # 496 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_7, ITEM_WHITE_HERB
+	dynmultipush EventScript_CapCollector_Text_5, ITEM_LIGHT_CLAY
 # 497 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_8, ITEM_RED_CARD
+	dynmultipush EventScript_CapCollector_Text_6, ITEM_AIR_BALLOON
 # 498 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_9, ITEM_EJECT_BUTTON
+	dynmultipush EventScript_CapCollector_Text_7, ITEM_WHITE_HERB
 # 499 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_10, ITEM_SAFETY_GOGGLES
+	dynmultipush EventScript_CapCollector_Text_8, ITEM_RED_CARD
 # 500 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_11, ITEM_THROAT_SPRAY
+	dynmultipush EventScript_CapCollector_Text_9, ITEM_EJECT_BUTTON
 # 501 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_12, ITEM_MENTAL_HERB
+	dynmultipush EventScript_CapCollector_Text_10, ITEM_SAFETY_GOGGLES
 # 502 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_13, ITEM_NORMAL_GEM
+	dynmultipush EventScript_CapCollector_Text_11, ITEM_THROAT_SPRAY
 # 503 "data/global.pory"
-	special GetNumberOfBadges
+	dynmultipush EventScript_CapCollector_Text_12, ITEM_MENTAL_HERB
 # 504 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_13, ITEM_NORMAL_GEM
+# 505 "data/global.pory"
+	special GetNumberOfBadges
+# 506 "data/global.pory"
 	compare VAR_RESULT, 5
 	goto_if_ge EventScript_CapCollector_5
 EventScript_CapCollector_4:
-# 509 "data/global.pory"
-	special ShowBottleCapsWindow
-# 510 "data/global.pory"
-	dynmultistack 17, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM
 # 511 "data/global.pory"
+	special ShowBottleCapsWindow
+# 512 "data/global.pory"
+	dynmultistack 17, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM
+# 513 "data/global.pory"
 	compare VAR_RESULT, 127
 	goto_if_ne EventScript_CapCollector_8
 EventScript_CapCollector_7:
-# 532 "data/global.pory"
-	msgbox gText_PleaseComeAgain
-# 533 "data/global.pory"
-	special CloseBattlePointsWindow
 # 534 "data/global.pory"
+	msgbox gText_PleaseComeAgain
+# 535 "data/global.pory"
+	special CloseBattlePointsWindow
+# 536 "data/global.pory"
 	release
 	end
 
 EventScript_CapCollector_2:
-# 484 "data/global.pory"
+# 486 "data/global.pory"
 	msgbox BottleCapCollectorIntro
-# 485 "data/global.pory"
+# 487 "data/global.pory"
 	setflag FLAG_TEMP_1
 	goto EventScript_CapCollector_1
 
 EventScript_CapCollector_5:
-# 505 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_14, ITEM_BOOSTER_ENERGY
-# 506 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_15, ITEM_MIRROR_HERB
 # 507 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_14, ITEM_BOOSTER_ENERGY
+# 508 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_15, ITEM_MIRROR_HERB
+# 509 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_16, ITEM_POWER_HERB
 	goto EventScript_CapCollector_4
 
 EventScript_CapCollector_8:
-# 512 "data/global.pory"
-	copyvar VAR_0x8009, VAR_RESULT
-# 513 "data/global.pory"
-	checkitem ITEM_BOTTLE_CAP
 # 514 "data/global.pory"
+	copyvar VAR_0x8009, VAR_RESULT
+# 515 "data/global.pory"
+	checkitem ITEM_BOTTLE_CAP
+# 516 "data/global.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq EventScript_CapCollector_11
-# 520 "data/global.pory"
+# 522 "data/global.pory"
 	checkitemspace VAR_0x8009
-# 521 "data/global.pory"
+# 523 "data/global.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq EventScript_CapCollector_14
-# 527 "data/global.pory"
-	removeitem ITEM_BOTTLE_CAP
-# 528 "data/global.pory"
-	additem VAR_0x8009
 # 529 "data/global.pory"
-	special UpdateBottleCapsWindow
+	removeitem ITEM_BOTTLE_CAP
 # 530 "data/global.pory"
+	additem VAR_0x8009
+# 531 "data/global.pory"
+	special UpdateBottleCapsWindow
+# 532 "data/global.pory"
 	playse SE_SHOP
 	goto EventScript_CapCollector_7
 
 EventScript_CapCollector_11:
-# 515 "data/global.pory"
-	msgbox EventScript_CapCollector_Text_17
-# 516 "data/global.pory"
-	special CloseBattlePointsWindow
 # 517 "data/global.pory"
+	msgbox EventScript_CapCollector_Text_17
+# 518 "data/global.pory"
+	special CloseBattlePointsWindow
+# 519 "data/global.pory"
 	release
 	end
 
 EventScript_CapCollector_14:
-# 522 "data/global.pory"
-	msgbox EventScript_CapCollector_Text_18
-# 523 "data/global.pory"
-	special CloseBattlePointsWindow
 # 524 "data/global.pory"
+	msgbox EventScript_CapCollector_Text_18
+# 525 "data/global.pory"
+	special CloseBattlePointsWindow
+# 526 "data/global.pory"
 	release
 	end
 
@@ -1133,7 +1137,7 @@ Mart_EventScript_EvoClerk_Text_0:
 	.string "have earned at least three Gym Badges.$"
 
 Common_EventScript_MoveReminder_Text_0:
-# 432 "data/global.pory"
+# 434 "data/global.pory"
 	.string "I'm the Move Reminder.\p"
 	.string "I know all the moves that Pokémon\n"
 	.string "learn--every one of them--and I can\l"
@@ -1142,129 +1146,129 @@ Common_EventScript_MoveReminder_Text_0:
 	.string "yours if you'd like.$"
 
 Common_EventScript_MoveReminder_Text_1:
-# 435 "data/global.pory"
+# 437 "data/global.pory"
 	.string "Would you like me to teach a move?$"
 
 Common_EventScript_MoveReminder_Text_2:
-# 437 "data/global.pory"
+# 439 "data/global.pory"
 	.string "Move Relearner$"
 
 Common_EventScript_MoveReminder_Text_3:
-# 439 "data/global.pory"
+# 441 "data/global.pory"
 	.string "Egg Moves$"
 
 Common_EventScript_MoveReminder_Text_4:
-# 441 "data/global.pory"
+# 443 "data/global.pory"
 	.string "Cancel$"
 
 Common_EventScript_MoveReminder_Text_5:
-# 444 "data/global.pory"
+# 446 "data/global.pory"
 	.string "Come back if your Pokémon need to learn\n"
 	.string "another move.$"
 
 Common_EventScript_MoveReminder_Text_6:
-# 451 "data/global.pory"
+# 453 "data/global.pory"
 	.string "Which Pokémon needs tutoring?$"
 
 Common_EventScript_MoveReminder_Text_7:
-# 461 "data/global.pory"
+# 463 "data/global.pory"
 	.string "Hunh? There isn't a single move that I\n"
 	.string "can teach an Egg.$"
 
 Common_EventScript_MoveReminder_Text_8:
-# 464 "data/global.pory"
+# 466 "data/global.pory"
 	.string "Sorry, it doesn't appear as if I have\n"
 	.string "any move I can teach that Pokémon.$"
 
 Common_EventScript_MoveReminder_Text_9:
-# 467 "data/global.pory"
+# 469 "data/global.pory"
 	.string "Which move should I teach?$"
 
 EventScript_CapCollector_Text_0:
-# 489 "data/global.pory"
+# 491 "data/global.pory"
 	.string "Metronome$"
 
 EventScript_CapCollector_Text_1:
-# 490 "data/global.pory"
+# 492 "data/global.pory"
 	.string "Grip Claw$"
 
 EventScript_CapCollector_Text_2:
-# 491 "data/global.pory"
+# 493 "data/global.pory"
 	.string "Sticky Barb$"
 
 EventScript_CapCollector_Text_3:
-# 492 "data/global.pory"
+# 494 "data/global.pory"
 	.string "Shed Shell$"
 
 EventScript_CapCollector_Text_4:
-# 493 "data/global.pory"
+# 495 "data/global.pory"
 	.string "Big Root$"
 
 EventScript_CapCollector_Text_5:
-# 494 "data/global.pory"
+# 496 "data/global.pory"
 	.string "Light Clay$"
 
 EventScript_CapCollector_Text_6:
-# 495 "data/global.pory"
+# 497 "data/global.pory"
 	.string "Air Balloon$"
 
 EventScript_CapCollector_Text_7:
-# 496 "data/global.pory"
+# 498 "data/global.pory"
 	.string "White Herb$"
 
 EventScript_CapCollector_Text_8:
-# 497 "data/global.pory"
+# 499 "data/global.pory"
 	.string "Red Card$"
 
 EventScript_CapCollector_Text_9:
-# 498 "data/global.pory"
+# 500 "data/global.pory"
 	.string "Eject Button$"
 
 EventScript_CapCollector_Text_10:
-# 499 "data/global.pory"
+# 501 "data/global.pory"
 	.string "Safety Goggles$"
 
 EventScript_CapCollector_Text_11:
-# 500 "data/global.pory"
+# 502 "data/global.pory"
 	.string "Throat Spray$"
 
 EventScript_CapCollector_Text_12:
-# 501 "data/global.pory"
+# 503 "data/global.pory"
 	.string "Mental Herb$"
 
 EventScript_CapCollector_Text_13:
-# 502 "data/global.pory"
+# 504 "data/global.pory"
 	.string "Normal Gem$"
 
 EventScript_CapCollector_Text_14:
-# 505 "data/global.pory"
+# 507 "data/global.pory"
 	.string "Booster Energy$"
 
 EventScript_CapCollector_Text_15:
-# 506 "data/global.pory"
+# 508 "data/global.pory"
 	.string "Mirror Herb$"
 
 EventScript_CapCollector_Text_16:
-# 507 "data/global.pory"
+# 509 "data/global.pory"
 	.string "Power Herb$"
 
 EventScript_CapCollector_Text_17:
-# 515 "data/global.pory"
+# 517 "data/global.pory"
 	.string "You don't seem to have any Bottle Caps,\nthus I have nothing to give you.$"
 
 EventScript_CapCollector_Text_18:
-# 522 "data/global.pory"
+# 524 "data/global.pory"
 	.string "You don't have any room in your Bag for\n"
 	.string "this item.$"
 
 BottleCapCollectorIntro::
-# 539 "data/global.pory"
+# 541 "data/global.pory"
 	.string "I'm a collector of Bottle Caps.\n"
 	.string "If you happen to come across any, I'll\l"
 	.string "gladly trade you some rare items in\l"
 	.string "exchange for them.$"
 
 DoYouHaveAnyCaps::
-# 543 "data/global.pory"
+# 545 "data/global.pory"
 	.string "Do you have any Bottle Caps you'd like\n"
 	.string "to trade?$"

@@ -5152,6 +5152,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .isGigantamax = TRUE,
         .levelUpLearnset = sGarbodorLevelUpLearnset,
         .teachableLearnset = sGarbodorTeachableLearnset,
+        .isMegaEvolution = TRUE,
         .formSpeciesIdTable = sGarbodorFormSpeciesIdTable,
         .formChangeTable = sGarbodorFormChangeTable,
     },
@@ -7380,7 +7381,6 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         FOOTPRINT(Klinklang)
         .levelUpLearnset = sKlinklangLevelUpLearnset,
         .teachableLearnset = sKlinklangTeachableLearnset,
-        .isMegaEvolution = TRUE,
         .formSpeciesIdTable = sKlinklangFormSpeciesIdTable,
         .formChangeTable = sKlinklangFormChangeTable,
     },
@@ -9563,7 +9563,6 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         FOOTPRINT(Hydreigon)
         .levelUpLearnset = sHydreigonLevelUpLearnset,
         .teachableLearnset = sHydreigonTeachableLearnset,
-        .isMegaEvolution = TRUE,
         .formSpeciesIdTable = sHydreigonFormSpeciesIdTable,
         .formChangeTable = sHydreigonFormChangeTable,
     },

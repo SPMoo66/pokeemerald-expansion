@@ -370,7 +370,7 @@ gText_GymNurseHeal::
 	.string "Allow me to heal your Pokémon.$"
 `
 
-script Mart_EventScript_EvoClerk{
+script Mart_EventScript_EvoClerk {
 	lock
 	faceplayer
 	msgbox(gText_HowMayIServeYou)

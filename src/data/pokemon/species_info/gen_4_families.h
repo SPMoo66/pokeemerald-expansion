@@ -877,7 +877,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         FOOTPRINT(Staraptor)
         .levelUpLearnset = sStaraptorLevelUpLearnset,
         .teachableLearnset = sStaraptorTeachableLearnset,
-        .isMegaEvolution = TRUE,
         .formSpeciesIdTable = sStaraptorFormSpeciesIdTable,
         .formChangeTable = sStaraptorFormChangeTable,
     },

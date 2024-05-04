@@ -3749,7 +3749,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         FOOTPRINT(Aurorus)
         .levelUpLearnset = sAurorusLevelUpLearnset,
         .teachableLearnset = sAurorusTeachableLearnset,
-        .isMegaEvolution = TRUE,
         .formSpeciesIdTable = sAurorusFormSpeciesIdTable,
         .formChangeTable = sAurorusFormChangeTable,
     },

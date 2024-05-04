@@ -1403,7 +1403,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ABILITY_CAPSULE] =
     {
         .name = _("AbilityCapsle"),
-        .price = (I_PRICE < GEN_7) ? 1000 : ((I_PRICE < GEN_9) ? 10000 : 100000),
+        .price = (I_PRICE < GEN_7) ? 1000 : ((I_PRICE < GEN_9) ? 8000 : 8000),
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
             "Switches a Poké-\n"
@@ -1417,7 +1417,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("AbilityPatch"),
         .pluralName = _("AbilityPatches"),
-        .price = (I_PRICE >= GEN_9) ? 250000 : 20,
+        .price = (I_PRICE >= GEN_9) ? 12000 : 20,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
             "Turns the ability\n"
@@ -2295,6 +2295,7 @@ const struct Item gItemsInfo[] =
             "A beautiful bottle\n"
             "cap that gives off\n"
             "a silver gleam."),
+        .importance = 1,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -2309,6 +2310,7 @@ const struct Item gItemsInfo[] =
             "A beautiful bottle\n"
             "cap that gives off\n"
             "a golden gleam."),
+        .importance = 1,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

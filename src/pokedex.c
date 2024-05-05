@@ -1504,7 +1504,7 @@ static const struct WindowTemplate sSearchMenu_WindowTemplate[] =
 
 void ResetPokedex(void)
 {
-    u16 i;
+//    u16 i;
 
     sLastSelectedPokemon = 0;
     sPokeBallRotation = POKEBALL_ROTATION_TOP;
@@ -1517,11 +1517,13 @@ void ResetPokedex(void)
     gSaveBlock2Ptr->pokedex.spindaPersonality = 0;
     gSaveBlock2Ptr->pokedex.unknown3 = 0;
     DisableNationalPokedex();
+/*
     for (i = 0; i < NUM_DEX_FLAG_BYTES; i++)
     {
         gSaveBlock1Ptr->dexCaught[i] = 0;
         gSaveBlock1Ptr->dexSeen[i] = 0;
     }
+*/
 }
 
 void ResetPokedexScrollPositions(void)

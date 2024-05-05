@@ -110,7 +110,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_BLUE",
-      "x": 79,
+      "x": 78,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -123,7 +123,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
-      "x": 29,
+      "x": 31,
       "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BURIED",
@@ -241,7 +241,7 @@
   ],
   "warp_events": [
     {
-      "x": 33,
+      "x": 82,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_ROUTE113_GLASS_WORKSHOP",
@@ -424,7 +424,7 @@
     },
     {
       "type": "sign",
-      "x": 31,
+      "x": 80,
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

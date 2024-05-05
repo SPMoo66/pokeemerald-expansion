@@ -1090,6 +1090,69 @@ EventScript_CapCollector_14:
 	end
 
 
+Mart_EventScript_AbilityNatureClerk::
+# 548 "data/global.pory"
+	lock
+# 549 "data/global.pory"
+	faceplayer
+# 550 "data/global.pory"
+	msgbox gText_HowMayIServeYou
+# 551 "data/global.pory"
+	waitmessage
+# 552 "data/global.pory"
+	pokemart AbilityNaturePokemart
+# 553 "data/global.pory"
+	msgbox gText_PleaseComeAgain
+# 554 "data/global.pory"
+	release
+	end
+
+
+	.align 2
+# 558 "data/global.pory"
+AbilityNaturePokemart:
+# 559 "data/global.pory"
+	.2byte ITEM_ABILITY_CAPSULE
+# 560 "data/global.pory"
+	.2byte ITEM_ABILITY_PATCH
+# 561 "data/global.pory"
+	.2byte ITEM_SASSY_MINT
+# 562 "data/global.pory"
+	.2byte ITEM_TIMID_MINT
+# 563 "data/global.pory"
+	.2byte ITEM_HASTY_MINT
+# 564 "data/global.pory"
+	.2byte ITEM_CALM_MINT
+# 565 "data/global.pory"
+	.2byte ITEM_GENTLE_MINT
+# 566 "data/global.pory"
+	.2byte ITEM_CAREFUL_MINT
+# 567 "data/global.pory"
+	.2byte ITEM_MILD_MINT
+# 568 "data/global.pory"
+	.2byte ITEM_RASH_MINT
+# 569 "data/global.pory"
+	.2byte ITEM_QUIET_MINT
+# 570 "data/global.pory"
+	.2byte ITEM_LAX_MINT
+# 571 "data/global.pory"
+	.2byte ITEM_RELAXED_MINT
+# 572 "data/global.pory"
+	.2byte ITEM_MODEST_MINT
+# 573 "data/global.pory"
+	.2byte ITEM_BRAVE_MINT
+# 574 "data/global.pory"
+	.2byte ITEM_BOLD_MINT
+# 575 "data/global.pory"
+	.2byte ITEM_IMPISH_MINT
+# 576 "data/global.pory"
+	.2byte ITEM_LONELY_MINT
+# 577 "data/global.pory"
+	.2byte ITEM_ADAMANT_MINT
+# 578 "data/global.pory"
+	.2byte ITEM_NAUGHTY_MINT
+	.2byte ITEM_NONE
+
 Mart_EventScript_TMClerk_Text_0:
 # 152 "data/global.pory"
 	.string "Sorry, I can only sell to trainers who\n"

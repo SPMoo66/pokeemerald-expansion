@@ -322,6 +322,8 @@ RusturfTunnel_EventScript_Grunt::
 	applymovement LOCALID_BRINEY, RusturfTunnel_Movement_BrineyApproachPeeko2
 	waitmovement 0
 	msgbox RusturfTunnel_Text_PeekoGladToSeeYouSafe, MSGBOX_DEFAULT
+	playfanfare MUS_HG_DEX_RATING_6
+	waitfanfare
 	applymovement LOCALID_BRINEY, Common_Movement_FacePlayer
 	waitmovement 0
 	message RusturfTunnel_Text_ThankYouLetsGoHomePeeko

@@ -12,7 +12,7 @@
 #define FLAG_TEMP_2      (TEMP_FLAGS_START + 0x2)
 #define FLAG_TEMP_3      (TEMP_FLAGS_START + 0x3)
 #define FLAG_TEMP_4      (TEMP_FLAGS_START + 0x4)
-#define FLAG_TEMP_5      (TEMP_FLAGS_START + 0x5)  // Unused Flag
+#define FLAG_TEMP_5      (TEMP_FLAGS_START + 0x5)
 #define FLAG_TEMP_6      (TEMP_FLAGS_START + 0x6)  // Unused Flag
 #define FLAG_TEMP_7      (TEMP_FLAGS_START + 0x7)  // Unused Flag
 #define FLAG_TEMP_8      (TEMP_FLAGS_START + 0x8)  // Unused Flag
@@ -214,8 +214,8 @@
 #define FLAG_EMIB_DEMO_1                     0xC2 // Reserved for Demo (Possible Save import)
 #define FLAG_EMIB_DEMO_2                     0xC3 // Reserved for Demo (Possible Save import)
 #define FLAG_EMIB_DEMO_3                     0xC4 // Reserved for Demo (Possible Save import)
-#define FLAG_UNUSED_0xC5                     0xC5 // Unused Flag
-#define FLAG_UNUSED_0xC6                     0xC6 // Unused Flag
+#define FLAG_EXPANSION_1                     0xC5 // Reserved for potential future expansions (Used for Level Caps)
+#define FLAG_EXPANSION_2                     0xC6 // Reserved for potential future expansions (Used for Level Caps)
 #define FLAG_RUSTURF_TUNNEL_OPENED           0xC7
 #define FLAG_RECEIVED_RED_SCARF              0xC8
 #define FLAG_RECEIVED_BLUE_SCARF             0xC9

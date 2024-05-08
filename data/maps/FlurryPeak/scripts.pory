@@ -1,0 +1,12 @@
+mapscripts FlurryPeak_MapScripts {}
+
+script FlurryPeak_Boy {
+	lock
+	faceplayer
+	msgbox(format("Playing in the snow is so much fun!\pBut I wish I had warm clothes like the people down the trail."))
+	release
+}
+
+script FlurryPeak_Sign {
+	msgbox (format("{RIGHT_ARROW} Flurry Peak\n {LEFT_ARROW} Route 104"), MSGBOX_SIGN)
+}

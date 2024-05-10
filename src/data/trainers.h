@@ -6818,16 +6818,16 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_GruntSeafloorCavern5),
     },
 
-    [TRAINER_GRUNT_UNUSED] =
+    [TRAINER_JOSEF] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-        .trainerName = _("Grunt"),
+        .trainerClass = TRAINER_CLASS_SKIER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_SKIER_M,
+        .trainerName = _("Josef"),
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_GruntUnused),
+        .party = TRAINER_PARTY(sParty_Josef),
     },
 
     [TRAINER_GRUNT_MT_PYRE_4] =
@@ -6974,16 +6974,16 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_Clarence),
     },
 
-    [TRAINER_TERRY] =
+    [TRAINER_CANDY] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .trainerName = _("Terry"),
+        .trainerClass = TRAINER_CLASS_SKIER,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_SKIER_F,
+        .trainerName = _("Candy"),
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_Terry),
+        .party = TRAINER_PARTY(sParty_Candy),
     },
 
     [TRAINER_NATE] =
@@ -7598,28 +7598,28 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_Eric),
     },
 
-    [TRAINER_LUCAS_2] =
+    [TRAINER_GERARDO] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
+        .trainerClass = TRAINER_CLASS_SKIER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
-        .trainerName = _("Lucas"),
+        .trainerPic = TRAINER_PIC_SKIER_M,
+        .trainerName = _("Gerardo"),
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_Lucas2),
+        .party = TRAINER_PARTY(sParty_Gerardo),
     },
 
-    [TRAINER_MIKE_1] =
+    [TRAINER_AURELIA] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
-        .trainerName = _("Mike"),
+        .trainerClass = TRAINER_CLASS_SKIER,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_SKIER_F,
+        .trainerName = _("Aurelia"),
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_Mike1),
+        .party = TRAINER_PARTY(sParty_Aurelia),
     },
 
     [TRAINER_MIKE_2] =

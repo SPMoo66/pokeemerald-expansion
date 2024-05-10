@@ -580,3 +580,8 @@ const u16 gObjectEventPal_Sakura[] = INCBIN_U16("graphics/object_events/palettes
 
 const u32 gObjectEventPic_Portal[] = INCBIN_U32("graphics/object_events/pics/misc/portal.4bpp");
 const u16 gObjectEventPal_Portal[] = INCBIN_U16("graphics/object_events/palettes/portal.gbapal");
+
+const u32 gObjectEventPic_Skier_M[] = INCBIN_U32("graphics/object_events/pics/people/skier_m.4bpp");
+const u16 gObjectEventPal_Skier_M[] = INCBIN_U16("graphics/object_events/palettes/skier_m.gbapal");
+const u32 gObjectEventPic_Skier_F[] = INCBIN_U32("graphics/object_events/pics/people/skier_f.4bpp");
+const u16 gObjectEventPal_Skier_F[] = INCBIN_U16("graphics/object_events/palettes/skier_f.gbapal");

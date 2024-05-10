@@ -184,9 +184,6 @@ struct Pokedex
     /*0x04*/ u32 unownPersonality; // set when you first see Unown
     /*0x08*/ u32 spindaPersonality; // set when you first see Spinda
     /*0x0C*/ u32 unknown3;
-#if FREE_EXTRA_SEEN_FLAGS_SAVEBLOCK2 == FALSE
-    /*0x10*/ u8 filler[0x68]; // Previously Dex Flags, feel free to remove.
-#endif //FREE_EXTRA_SEEN_FLAGS_SAVEBLOCK2
 };
 
 struct PokemonJumpRecords
@@ -508,10 +505,15 @@ struct SaveBlock2
              u16 optionsCurrentFont:1;  //tx_optionsPlus
              u16 optionsMusicRegion:3;  //tx_optionsPlus
              u16 optionsLevelCaps:1;    //tx_optionsPlus
-             //u16 padding1:4;
-             //u16 padding2;
-    /*0x18*/ struct Pokedex pokedex;
-    /*0x90*/ u8 filler_90[0x8];
+             u8 padding[0x8];          //Will save 4 bytes for later, likely for options
+
+     /*notes on padding*/
+             //u8 padding1:4;     :4 here represents 4 bits, so 4/16 for 0x17
+             //u8 padding2;       The lack of any :# here represents a full byte (16/16), so 0x17->0x18 for example
+             //u8 padding3[0x4];  If [0x#] is used, that increments the number of bytes, so [0x4] would be 0x10->0x14
+             //u16 padding4;      u8 is 1 byte, while u16 doubles everything listed previously. A u16 alone uses 2 bytes, so 0x10->0x12
+
+    /*0x20*/ struct Pokedex pokedex;
     /*0x98*/ struct Time localTimeOffset;
     /*0xA0*/ struct Time lastBerryTreeUpdate;
     /*0xA8*/ u32 gcnLinkFlags; // Read by Pokémon Colosseum/XD
@@ -1008,11 +1010,7 @@ struct SaveBlock1
     /*0x690*/ struct ItemSlot bagPocket_TMHM[BAG_TMHM_COUNT];
     /*0x790*/ struct ItemSlot bagPocket_Berries[BAG_BERRIES_COUNT];
     /*0x848*/ struct Pokeblock pokeblocks[POKEBLOCKS_COUNT];
-#if FREE_EXTRA_SEEN_FLAGS_SAVEBLOCK1 == FALSE
-    /*0x988*/ u8 filler1[0x34]; // Previously Dex Flags, feel free to remove.
-#endif //FREE_EXTRA_SEEN_FLAGS_SAVEBLOCK1
     /*0x9BC*/ u16 berryBlenderRecords[3];
-    /*0x9C2*/ u8 unused_9C2[6];
 #if FREE_MATCH_CALL == FALSE
     /*0x9C8*/ u16 trainerRematchStepCounter;
     // MAX_REMATCH_ENTRIES decreased from vanilla's 100 to 92

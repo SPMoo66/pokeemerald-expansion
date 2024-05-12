@@ -2447,7 +2447,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
         .formChangeTable = sPikachuFormChangeTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_SHINY_STONE, SPECIES_RAICHU_ALOLAN}),
+                                {EVO_ITEM, ITEM_SUN_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
 #if P_COSPLAY_PIKACHU_FORMS
@@ -7627,7 +7627,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Bellsprout)
         .levelUpLearnset = sBellsproutLevelUpLearnset,
         .teachableLearnset = sBellsproutTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_WEEPINBELL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_WEEPINBELL}),
     },
 
     [SPECIES_WEEPINBELL] =
@@ -11887,7 +11887,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Rhyhorn)
         .levelUpLearnset = sRhyhornLevelUpLearnset,
         .teachableLearnset = sRhyhornTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_RHYDON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_RHYDON}),
     },
 
     [SPECIES_RHYDON] =
@@ -12463,7 +12463,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Horsea)
         .levelUpLearnset = sHorseaLevelUpLearnset,
         .teachableLearnset = sHorseaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_SEADRA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_SEADRA}),
     },
 
     [SPECIES_SEADRA] =

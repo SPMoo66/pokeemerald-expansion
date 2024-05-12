@@ -373,31 +373,79 @@ gText_GymNurseHeal::
 script Mart_EventScript_EvoClerk {
 	lock
 	faceplayer
-	msgbox(gText_HowMayIServeYou)
-	waitmessage
 	special(GetNumberOfBadges)
-	switch (var(VAR_RESULT)) {
-		case 0:
-		case 1:
-		case 2:
-			msgbox(format("Sorry, I can only sell to trainers who have earned at least three Gym Badges."))
-		case 3:
-		case 4:
-			pokemart(BadgedEvoPokemart3)
-		case 5:
-		case 6:
-		case 7:
-		case 8:
-			pokemart(BadgedEvoPokemart5)
-		default:
-			break
+	copyvar (VAR_TEMP_0, VAR_RESULT)
+	if (var(VAR_TEMP_0) < 3) {
+		msgbox(format("Sorry, I can only sell to trainers who have earned at least three Gym Badges."))
+	}
+	else {
+		msgbox(gText_HowMayIServeYou)
+		waitmessage
+		dynmultipush("Stones", 0)
+		dynmultipush("Other", 0)
+		if (var(VAR_RESULT) < 5) {
+			dynmultipush("Extra", 0)
 		}
-	msgbox(gText_PleaseComeAgain)
+		dynmultistack(0, 0, FALSE, 4, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+		if (var(VAR_RESULT) == 0) {
+			switch (var(VAR_TEMP_0)) {
+				case 0:
+				case 1:
+				case 2:
+				case 3:
+				case 4:
+					pokemart(EvoStonesPokemart3)
+				case 5:
+				case 6:
+				case 7:
+				case 8:
+					pokemart(EvoStonesPokemart5)
+				default:
+					break
+			}
+		}
+		elif (var(VAR_RESULT) == 1) {
+			switch (var(VAR_TEMP_0)) {
+				case 0:
+				case 1:
+				case 2:
+				case 3:
+					pokemart(EvoOtherPokemart3)
+				case 4:
+					pokemart(EvoOtherPokemart4)
+				case 5:
+				case 6:
+				case 7:
+				case 8:
+					pokemart(EvoOtherPokemart5)
+				default:
+					break
+			}
+		}
+		elif (var(VAR_RESULT) == 2) {
+			switch (var(VAR_TEMP_0)) {
+				case 0:
+				case 1:
+				case 2:
+				case 3:
+				case 4:
+				case 5:
+				case 6:
+					pokemart(EvoExtraPokemart6)
+				case 7:
+				case 8:
+					pokemart(EvoExtraPokemart6)
+				default:
+					break
+			}
+		}
+		msgbox(gText_PleaseComeAgain)
+	}
 	release
 	end
 }
 
-mart BadgedEvoPokemart3 {
+mart EvoStonesPokemart3 {
 	ITEM_FIRE_STONE
 	ITEM_WATER_STONE
 	ITEM_THUNDER_STONE
@@ -405,11 +453,9 @@ mart BadgedEvoPokemart3 {
 	ITEM_ICE_STONE
 	ITEM_MOON_STONE
 	ITEM_SUN_STONE
-	ITEM_LINKING_CORD
-	ITEM_KINGS_ROCK
 }
 
-mart BadgedEvoPokemart5 {
+mart EvoStonesPokemart5 {
 	ITEM_FIRE_STONE
 	ITEM_WATER_STONE
 	ITEM_THUNDER_STONE
@@ -417,12 +463,69 @@ mart BadgedEvoPokemart5 {
 	ITEM_ICE_STONE
 	ITEM_MOON_STONE
 	ITEM_SUN_STONE
-	ITEM_LINKING_CORD
-	ITEM_KINGS_ROCK
 	ITEM_SHINY_STONE
 	ITEM_DUSK_STONE
 	ITEM_DAWN_STONE
+}
+
+mart EvoOtherPokemart3 {
+	ITEM_SACHET
+	ITEM_WHIPPED_DREAM
+}
+
+mart EvoOtherPokemart4 {
+	ITEM_LINKING_CORD
+	ITEM_KINGS_ROCK
+	ITEM_SACHET
+	ITEM_WHIPPED_DREAM
+	ITEM_CHIPPED_POT
+	ITEM_TART_APPLE
+	ITEM_SWEET_APPLE
+	ITEM_SYRUPY_APPLE
+}
+
+mart EvoOtherPokemart5 {
+	ITEM_LINKING_CORD
+	ITEM_KINGS_ROCK
 	ITEM_METAL_COAT
+	ITEM_BLACK_AUGURITE
+	ITEM_DRAGON_SCALE
+	ITEM_UPGRADE
+	ITEM_DEEP_SEA_TOOTH
+	ITEM_DEEP_SEA_SCALE
+	ITEM_PRISM_SCALE
+	ITEM_SACHET
+	ITEM_WHIPPED_DREAM
+	ITEM_CHIPPED_POT
+	ITEM_TART_APPLE
+	ITEM_SWEET_APPLE
+	ITEM_SYRUPY_APPLE
+	ITEM_GALARICA_CUFF
+	ITEM_GALARICA_WREATH
+	ITEM_AUSPICIOUS_ARMOR
+	ITEM_MALICIOUS_ARMOR
+}
+
+mart EvoExtraPokemart6 {
+	ITEM_DUBIOUS_DISC
+	ITEM_ELECTIRIZER
+	ITEM_MAGMARIZER
+	ITEM_PROTECTOR
+	ITEM_RAZOR_CLAW
+	ITEM_RAZOR_FANG
+	ITEM_REAPER_CLOTH
+}
+
+mart EvoExtraPokemart7 {
+	ITEM_DUBIOUS_DISC
+	ITEM_ELECTIRIZER
+	ITEM_MAGMARIZER
+	ITEM_PROTECTOR
+	ITEM_RAZOR_CLAW
+	ITEM_RAZOR_FANG
+	ITEM_REAPER_CLOTH
+	ITEM_SCROLL_OF_DARKNESS
+	ITEM_SCROLL_OF_WATERS
 }
 
 script Common_EventScript_MoveReminder {

@@ -6205,7 +6205,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_KUBFU
     [SPECIES_KUBFU] =
     {
-        .baseHP        = 60,
+        .baseHP        = 70,
         .baseAttack    = 90,
         .baseDefense   = 60,
         .baseSpeed     = 72,

@@ -7801,7 +7801,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Shuppet)
         .levelUpLearnset = sShuppetLevelUpLearnset,
         .teachableLearnset = sShuppetTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_BANETTE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_BANETTE}),
     },
 
     [SPECIES_BANETTE] =
@@ -7972,7 +7972,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Duskull)
         .levelUpLearnset = sDuskullLevelUpLearnset,
         .teachableLearnset = sDuskullTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_DUSCLOPS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_DUSCLOPS}),
     },
 
     [SPECIES_DUSCLOPS] =

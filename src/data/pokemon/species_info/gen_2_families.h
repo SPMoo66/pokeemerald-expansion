@@ -2560,12 +2560,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_SUNKERN
     [SPECIES_SUNKERN] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 35,
+        .baseHP        = 40,
+        .baseAttack    = 40,
         .baseDefense   = 30,
         .baseSpeed     = 30,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 45,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 235,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 36 : 52,
@@ -2609,17 +2609,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Sunkern)
         .levelUpLearnset = sSunkernLevelUpLearnset,
         .teachableLearnset = sSunkernTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_SUNFLORA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_SUNFLORA}),
     },
 
     [SPECIES_SUNFLORA] =
     {
         .baseHP        = 75,
         .baseAttack    = 75,
-        .baseDefense   = 65,
+        .baseDefense   = 55,
         .baseSpeed     = 30,
-        .baseSpAttack  = 110,
-        .baseSpDefense = 90,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 120,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 149 : 146,

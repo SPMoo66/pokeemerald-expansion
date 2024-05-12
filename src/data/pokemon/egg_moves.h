@@ -715,6 +715,19 @@ const u16 gEggMoves[] = {
         MOVE_BRAVE_BIRD,
         MOVE_NATURAL_GIFT,
         MOVE_ASSURANCE),
+
+    egg_moves(DODUO_EMERIBIAN,
+        MOVE_QUICK_ATTACK,
+        MOVE_SUPERSONIC,
+        MOVE_HAZE,
+        MOVE_FEINT_ATTACK,
+        MOVE_FLAIL,
+        MOVE_ENDEAVOR,
+        MOVE_MIRROR_MOVE,
+        MOVE_NATURAL_GIFT,
+        MOVE_ASSURANCE,
+        MOVE_SUNNY_DAY,
+        MOVE_ELECTRIC_TERRAIN),
 #endif //P_FAMILY_DODUO
 
 #if P_FAMILY_SEEL
@@ -1591,6 +1604,13 @@ const u16 gEggMoves[] = {
         MOVE_ENDURE,
         MOVE_GRASSY_TERRAIN,
         MOVE_STRENGTH_SAP),
+
+    egg_moves(HOPPIP_EMERIBIAN,
+        MOVE_AMNESIA,
+        MOVE_HELPING_HAND,
+        MOVE_HAIL,
+        MOVE_ENCORE,
+        MOVE_CHARM),
 #endif //P_FAMILY_HOPPIP
 
 #if P_FAMILY_AIPOM
@@ -3351,6 +3371,19 @@ const u16 gEggMoves[] = {
         MOVE_COSMIC_POWER,
         MOVE_MUD_SPORT,
         MOVE_POWER_UP_PUNCH),
+
+    egg_moves(BUNEARY_EMERIBIAN,
+        MOVE_FAKE_OUT,
+        MOVE_FAKE_TEARS,
+        MOVE_FLAIL,
+        MOVE_COPYCAT,
+        MOVE_ENCORE,
+        MOVE_SWITCHEROO,
+        MOVE_SWEET_KISS,
+        MOVE_CHARM,
+        MOVE_FORESIGHT,
+        MOVE_HAIL,
+        MOVE_HOLD_HANDS),
 #endif //P_FAMILY_BUNEARY
 
 #if P_FAMILY_GLAMEOW
@@ -4592,6 +4625,15 @@ const u16 gEggMoves[] = {
         MOVE_HAZE,
         MOVE_ACID_ARMOR,
         MOVE_VENOM_DRENCH),
+
+    egg_moves(SKRELP_EMERIBIAN,
+        MOVE_TOXIC_SPIKES,
+        MOVE_SWITCHEROO,
+        MOVE_HELPING_HAND,
+        MOVE_WATER_SPORT,
+        MOVE_NASTY_PLOT,
+        MOVE_DRAGON_TAIL,
+        MOVE_SPIKE_CANNON),
 #endif //P_FAMILY_SKRELP
 
 #if P_FAMILY_CLAUNCHER

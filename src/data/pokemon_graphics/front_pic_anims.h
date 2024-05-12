@@ -1255,6 +1255,9 @@ static const union AnimCmd sAnim_Dodrio_1[] =
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_END,
 };
+
+PLACEHOLDER_ANIM_SINGLE_FRAME(DoduoEmeribian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(DodrioEmeribian);
 #endif //P_FAMILY_DODUO
 
 #if P_FAMILY_SEEL
@@ -2745,6 +2748,10 @@ static const union AnimCmd sAnim_Jumpluff_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
+
+PLACEHOLDER_ANIM_SINGLE_FRAME(HoppipEmeribian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(SkiploomEmeribian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(JumpluffEmeribian);
 #endif //P_FAMILY_HOPPIP
 
 #if P_FAMILY_AIPOM
@@ -5764,8 +5771,25 @@ static const union AnimCmd sAnim_Lopunny_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_BunearyEmeribian_1[] =
+{
+    ANIMCMD_FRAME(1, 35),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_LopunnyEmeribian_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(LopunnyMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(LopunnyEmeribianMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BUNEARY
 
@@ -8638,6 +8662,9 @@ static const union AnimCmd sAnim_Dragalge_1[] =
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
+
+PLACEHOLDER_ANIM_SINGLE_FRAME(SkrelpEmeribian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(DragalgeEmeribian);
 #endif //P_FAMILY_SKRELP
 
 #if P_FAMILY_CLAUNCHER
@@ -10255,6 +10282,10 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Contageon);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Laneon);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Scaleon);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Titaneon);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Apimarill);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Solflora);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Delijoy);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Cogment);
 
 static const union AnimCmd sAnim_Egg_1[] =
 {
@@ -10579,6 +10610,8 @@ SINGLE_ANIMATION(Sirfetchd);
 #if P_FAMILY_DODUO
 SINGLE_ANIMATION(Doduo);
 SINGLE_ANIMATION(Dodrio);
+SINGLE_ANIMATION(DoduoEmeribian);
+SINGLE_ANIMATION(DodrioEmeribian);
 #endif //P_FAMILY_DODUO
 #if P_FAMILY_SEEL
 SINGLE_ANIMATION(Seel);
@@ -10957,6 +10990,9 @@ SINGLE_ANIMATION(Sudowoodo);
 SINGLE_ANIMATION(Hoppip);
 SINGLE_ANIMATION(Skiploom);
 SINGLE_ANIMATION(Jumpluff);
+SINGLE_ANIMATION(HoppipEmeribian);
+SINGLE_ANIMATION(SkiploomEmeribian);
+SINGLE_ANIMATION(JumpluffEmeribian);
 #endif //P_FAMILY_HOPPIP
 #if P_FAMILY_AIPOM
 SINGLE_ANIMATION(Aipom);
@@ -11627,8 +11663,11 @@ SINGLE_ANIMATION(DrifblimEmeribian);
 #if P_FAMILY_BUNEARY
 SINGLE_ANIMATION(Buneary);
 SINGLE_ANIMATION(Lopunny);
+SINGLE_ANIMATION(BunearyEmeribian);
+SINGLE_ANIMATION(LopunnyEmeribian);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(LopunnyMega);
+SINGLE_ANIMATION(LopunnyEmeribianMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BUNEARY
 #if P_FAMILY_GLAMEOW
@@ -12201,6 +12240,8 @@ SINGLE_ANIMATION(Barbaracle);
 #if P_FAMILY_SKRELP
 SINGLE_ANIMATION(Skrelp);
 SINGLE_ANIMATION(Dragalge);
+SINGLE_ANIMATION(SkrelpEmeribian);
+SINGLE_ANIMATION(DragalgeEmeribian);
 #endif //P_FAMILY_SKRELP
 #if P_FAMILY_CLAUNCHER
 SINGLE_ANIMATION(Clauncher);
@@ -13007,5 +13048,9 @@ SINGLE_ANIMATION(Contageon);
 SINGLE_ANIMATION(Laneon);
 SINGLE_ANIMATION(Scaleon);
 SINGLE_ANIMATION(Titaneon);
+SINGLE_ANIMATION(Apimarill);
+SINGLE_ANIMATION(Solflora);
+SINGLE_ANIMATION(Delijoy);
+SINGLE_ANIMATION(Cogment);
 
 SINGLE_ANIMATION(Egg);

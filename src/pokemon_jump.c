@@ -570,6 +570,7 @@ static const struct PokemonJumpMons sPokeJumpMons[] =
     { .species = SPECIES_SHELLOS_WEST_SEA,                  .jumpType = JUMP_TYPE_SLOW, },
     { .species = SPECIES_SHELLOS_EAST_SEA,                  .jumpType = JUMP_TYPE_SLOW, },
     { .species = SPECIES_BUNEARY,                           .jumpType = JUMP_TYPE_FAST, },
+    { .species = SPECIES_BUNEARY_EMERIBIAN,                 .jumpType = JUMP_TYPE_FAST, },
     { .species = SPECIES_GLAMEOW,                           .jumpType = JUMP_TYPE_FAST, },
     { .species = SPECIES_STUNKY,                            .jumpType = JUMP_TYPE_NORMAL, },
     { .species = SPECIES_BONSLY,                            .jumpType = JUMP_TYPE_FAST, },

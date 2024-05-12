@@ -387,6 +387,20 @@ static const u16 sFarfetchdFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_FARFETCHD
 
+#if P_FAMILY_DODUO
+static const u16 sDoduoFormSpeciesIdTable[] = {
+    SPECIES_DODUO,
+    SPECIES_DODUO_EMERIBIAN,
+    FORM_SPECIES_END,
+};
+
+static const u16 sDodrioFormSpeciesIdTable[] = {
+    SPECIES_DODRIO,
+    SPECIES_DODRIO_EMERIBIAN,
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_DODUO
+
 #if P_FAMILY_GRIMER
 static const u16 sGrimerFormSpeciesIdTable[] = {
     SPECIES_GRIMER,
@@ -717,6 +731,26 @@ static const u16 sAmpharosFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_MAREEP
+
+#if P_FAMILY_HOPPIP
+static const u16 sHoppipFormSpeciesIdTable[] = {
+    SPECIES_HOPPIP,
+    SPECIES_HOPPIP_EMERIBIAN,
+    FORM_SPECIES_END,
+};
+
+static const u16 sSkiploomFormSpeciesIdTable[] = {
+    SPECIES_SKIPLOOM,
+    SPECIES_SKIPLOOM_EMERIBIAN,
+    FORM_SPECIES_END,
+};
+
+static const u16 sJumpluffFormSpeciesIdTable[] = {
+    SPECIES_JUMPLUFF,
+    SPECIES_JUMPLUFF_EMERIBIAN,
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_HOPPIP
 
 #if P_FAMILY_WOOPER
 static const u16 sWooperFormSpeciesIdTable[] = {
@@ -1333,10 +1367,18 @@ static const u16 sDrifblimFormSpeciesIdTable[] = {
 #endif //P_FAMILY_DRIFLOON
 
 #if P_FAMILY_BUNEARY
+static const u16 sBunearyFormSpeciesIdTable[] = {
+    SPECIES_BUNEARY,
+    SPECIES_BUNEARY_EMERIBIAN,
+    FORM_SPECIES_END,
+};
+
 static const u16 sLopunnyFormSpeciesIdTable[] = {
     SPECIES_LOPUNNY,
+    SPECIES_LOPUNNY_EMERIBIAN,
 #if P_MEGA_EVOLUTIONS
     SPECIES_LOPUNNY_MEGA,
+    SPECIES_LOPUNNY_EMERIBIAN_MEGA,
 #endif
     FORM_SPECIES_END,
 };
@@ -1876,6 +1918,20 @@ static const u16 sSlurpuffFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_SWIRLIX
+
+#if P_FAMILY_SKRELP
+static const u16 sSkrelpFormSpeciesIdTable[] = {
+    SPECIES_SKRELP,
+    SPECIES_SKRELP_EMERIBIAN,
+    FORM_SPECIES_END,
+};
+
+static const u16 sDragalgeFormSpeciesIdTable[] = {
+    SPECIES_DRAGALGE,
+    SPECIES_DRAGALGE_EMERIBIAN,
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_SKRELP
 
 #if P_FAMILY_AMAURA
 static const u16 sAurorusFormSpeciesIdTable[] = {

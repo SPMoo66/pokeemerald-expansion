@@ -46537,3 +46537,42 @@ static const u16 sFalinksEmeribianTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+
+static const u16 sApimarillTeachableLearnset[] = {
+};
+
+static const u16 sSolfloraTeachableLearnset[] = {
+};
+
+static const u16 sDelijoyTeachableLearnset[] = {
+};
+
+static const u16 sCogmentTeachableLearnset[] = {
+};
+
+static const u16 sDoduoEmeribianTeachableLearnset[] = {
+};
+
+static const u16 sDodrioEmeribianTeachableLearnset[] = {
+};
+
+static const u16 sHoppipEmeribianTeachableLearnset[] = {
+};
+
+static const u16 sSkiploomEmeribianTeachableLearnset[] = {
+};
+
+static const u16 sJumpluffEmeribianTeachableLearnset[] = {
+};
+
+static const u16 sBunearyEmeribianTeachableLearnset[] = {
+};
+
+static const u16 sLopunnyEmeribianTeachableLearnset[] = {
+};
+
+static const u16 sSkrelpEmeribianTeachableLearnset[] = {
+};
+
+static const u16 sDragalgeEmeribianTeachableLearnset[] = {
+};

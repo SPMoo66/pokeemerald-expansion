@@ -2076,7 +2076,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Marill)
         .levelUpLearnset = sMarillLevelUpLearnset,
         .teachableLearnset = sMarillTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_AZUMARILL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_AZUMARILL},
+                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_APIMARILL}),
     },
 
     [SPECIES_AZUMARILL] =
@@ -2315,6 +2316,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Hoppip)
         .levelUpLearnset = sHoppipLevelUpLearnset,
         .teachableLearnset = sHoppipTeachableLearnset,
+        .formSpeciesIdTable = sHoppipFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_SKIPLOOM}),
     },
 
@@ -2370,6 +2372,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Skiploom)
         .levelUpLearnset = sSkiploomLevelUpLearnset,
         .teachableLearnset = sSkiploomTeachableLearnset,
+        .formSpeciesIdTable = sSkiploomFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_JUMPLUFF}),
     },
 
@@ -2434,6 +2437,186 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Jumpluff)
         .levelUpLearnset = sJumpluffLevelUpLearnset,
         .teachableLearnset = sJumpluffTeachableLearnset,
+        .formSpeciesIdTable = sJumpluffFormSpeciesIdTable,
+    },
+
+    [SPECIES_HOPPIP_EMERIBIAN] =
+    {
+        .baseHP        = 35,
+        .baseAttack    = 35,
+        .baseDefense   = 40,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 45,
+        .types = MON_TYPES(TYPE_ICE, TYPE_FAIRY),
+        .catchRate = 255,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 50 : 74,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_SNOWBALL,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_SLUSH_RUSH, ABILITY_SNOW_WARNING, ABILITY_REFRIGERATE },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Hoppip"),
+        .cryId = CRY_HOPPIP,
+        .natDexNum = NATIONAL_DEX_HOPPIP,
+        .categoryName = _("Snow Drift"),
+        .height = 4,
+        .weight = 5,
+        .description = COMPOUND_STRING(
+            "This Pokémon drifts and floats with the\n"
+            "wind. If it senses the approach of strong\n"
+            "winds, a Hoppip links leaves with others\n"
+            "to prepare against being blown away."),
+        .pokemonScale = 562,
+        .pokemonOffset = -7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_HoppipEmeribian,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 10,
+        .frontAnimFrames = sAnims_HoppipEmeribian,
+        .frontAnimId = ANIM_V_SLIDE_WOBBLE,
+        .enemyMonElevation = 1,
+        .backPic = gMonBackPic_HoppipEmeribian,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = gMonPalette_HoppipEmeribian,
+        .shinyPalette = gMonShinyPalette_HoppipEmeribian,
+        .iconSprite = gMonIcon_HoppipEmeribian,
+        .iconPalIndex = 0,
+        FOOTPRINT(Hoppip)
+        .levelUpLearnset = sHoppipEmeribianLevelUpLearnset,
+        .teachableLearnset = sHoppipEmeribianTeachableLearnset,
+        .isEmeribianForm = TRUE,
+        .formSpeciesIdTable = sHoppipFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_SKIPLOOM_EMERIBIAN}),
+    },
+
+    [SPECIES_SKIPLOOM_EMERIBIAN] =
+    {
+        .baseHP        = 55,
+        .baseAttack    = 45,
+        .baseDefense   = 55,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_ICE, TYPE_FAIRY),
+        .catchRate = 120,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 119 : 136,
+        .evYield_Speed = 2,
+        .itemCommon = ITEM_SNOWBALL,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_SLUSH_RUSH, ABILITY_SNOW_WARNING, ABILITY_REFRIGERATE },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Skiploom"),
+        .cryId = CRY_SKIPLOOM,
+        .natDexNum = NATIONAL_DEX_SKIPLOOM,
+        .categoryName = _("Snow Drift"),
+        .height = 6,
+        .weight = 10,
+        .description = COMPOUND_STRING(
+            "It blossoms when the temperature rises\n"
+            "above 64 degrees F. Because its flower's\n"
+            "blooming changes with the temperature,\n"
+            "it is sometimes used as a thermometer."),
+        .pokemonScale = 387,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_SkiploomEmeribian,
+        .frontPicSize = MON_COORDS_SIZE(40, 40),
+        .frontPicYOffset = 5,
+        .frontAnimFrames = sAnims_SkiploomEmeribian,
+        .frontAnimId = ANIM_RISING_WOBBLE,
+        .enemyMonElevation = 1,
+        .backPic = gMonBackPic_SkiploomEmeribian,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 3,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = gMonPalette_SkiploomEmeribian,
+        .shinyPalette = gMonShinyPalette_SkiploomEmeribian,
+        .iconSprite = gMonIcon_SkiploomEmeribian,
+        .iconPalIndex = 0,
+        FOOTPRINT(Skiploom)
+        .levelUpLearnset = sSkiploomEmeribianLevelUpLearnset,
+        .teachableLearnset = sSkiploomEmeribianTeachableLearnset,
+        .isEmeribianForm = TRUE,
+        .formSpeciesIdTable = sSkiploomFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_JUMPLUFF_EMERIBIAN}),
+    },
+
+    [SPECIES_JUMPLUFF_EMERIBIAN] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 60,
+        .baseDefense   = 75,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 90,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 90 : 80,
+        .types = MON_TYPES(TYPE_ICE, TYPE_FAIRY),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 230,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_6
+        .expYield = 207,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 203,
+    #else
+        .expYield = 176,
+    #endif
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 2,
+        .itemCommon = ITEM_SNOWBALL,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_SLUSH_RUSH, ABILITY_SNOW_WARNING, ABILITY_REFRIGERATE },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Jumpluff"),
+        .cryId = CRY_JUMPLUFF,
+        .natDexNum = NATIONAL_DEX_JUMPLUFF,
+        .categoryName = _("Snow Drift"),
+        .height = 8,
+        .weight = 50,
+        .description = COMPOUND_STRING(
+            "Jumpluff ride warm southern winds to\n"
+            "cross the sea and fly to foreign lands.\n"
+            "This Pokémon lands when it encounters\n"
+            "cold air while it is floating."),
+        .pokemonScale = 418,
+        .pokemonOffset = -4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_JumpluffEmeribian,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 8,
+        .frontAnimFrames = sAnims_JumpluffEmeribian,
+        .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
+        .enemyMonElevation = 9,
+        .backPic = gMonBackPic_JumpluffEmeribian,
+        .backPicSize = MON_COORDS_SIZE(56, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = gMonPalette_JumpluffEmeribian,
+        .shinyPalette = gMonShinyPalette_JumpluffEmeribian,
+        .iconSprite = gMonIcon_JumpluffEmeribian,
+        .iconPalIndex = 0,
+        FOOTPRINT(Jumpluff)
+        .levelUpLearnset = sJumpluffEmeribianLevelUpLearnset,
+        .teachableLearnset = sJumpluffEmeribianTeachableLearnset,
+        .isEmeribianForm = TRUE,
+        .formSpeciesIdTable = sJumpluffFormSpeciesIdTable,
     },
 #endif //P_FAMILY_HOPPIP
 
@@ -2663,6 +2846,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Sunflora)
         .levelUpLearnset = sSunfloraLevelUpLearnset,
         .teachableLearnset = sSunfloraTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MAGMARIZER, SPECIES_SOLFLORA}),
     },
 #endif //P_FAMILY_SUNKERN
 
@@ -5792,6 +5976,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Delibird)
         .levelUpLearnset = sDelibirdLevelUpLearnset,
         .teachableLearnset = sDelibirdTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_DELIJOY}),
     },
 #endif //P_FAMILY_DELIBIRD
 

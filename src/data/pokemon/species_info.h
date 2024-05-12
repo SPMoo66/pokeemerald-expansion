@@ -464,6 +464,286 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .teachableLearnset = sTitaneonTeachableLearnset,
     },
 
+    [SPECIES_APIMARILL] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 85,
+        .baseDefense   = 100,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_WATER, TYPE_STEEL),
+        .catchRate = 75,
+        .expYield = 210,
+        .evYield_HP = 1,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 1,
+        .itemCommon = ITEM_WACAN_BERRY,
+        .itemRare = ITEM_SEA_INCENSE,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_THICK_FAT, ABILITY_STEELY_SPIRIT, ABILITY_SAP_SIPPER },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Apimarill"),
+        .cryId = CRY_AZUMARILL,
+        .natDexNum = NATIONAL_DEX_APIMARILL,
+        .categoryName = _("Flail"),
+        .height = 7,
+        .weight = 356,
+        .description = COMPOUND_STRING(
+            "Placeholder\n"
+            "Placeholder\n"
+            "Placeholder\n"
+            "Placeholder"),
+        .pokemonScale = 448,
+        .pokemonOffset = 16,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Apimarill,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = sAnims_Apimarill,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Apimarill,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_Apimarill,
+        .shinyPalette = gMonShinyPalette_Apimarill,
+        .iconSprite = gMonIcon_Apimarill,
+        .iconPalIndex = 0,
+        FOOTPRINT(Azumarill)
+        .levelUpLearnset = sApimarillLevelUpLearnset,
+        .teachableLearnset = sApimarillTeachableLearnset,
+    },
+
+    [SPECIES_SOLFLORA] =
+    {
+        .baseHP        = 85,
+        .baseAttack    = 80,
+        .baseDefense   = 75,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 130,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FIRE),
+        .catchRate = 30,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 200 : 160,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
+        .itemCommon = ITEM_COBA_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
+        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_SOLAR_POWER, ABILITY_DRY_SKIN },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Solflora"),
+        .cryId = CRY_SUNFLORA,
+        .natDexNum = NATIONAL_DEX_SOLFLORA,
+        .categoryName = _("Sun"),
+        .height = 12,
+        .weight = 190,
+        .description = COMPOUND_STRING(
+            "Placeholder\n"
+            "Placeholder\n"
+            "Placeholder\n"
+            "Placeholder"),
+        .pokemonScale = 444,
+        .pokemonOffset = 15,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Solflora,
+        .frontPicSize = MON_COORDS_SIZE(40, 48),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_Solflora,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Solflora,
+        .backPicSize = MON_COORDS_SIZE(56, 56),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_Solflora,
+        .shinyPalette = gMonShinyPalette_Solflora,
+        .iconSprite = gMonIcon_Solflora,
+        .iconPalIndex = 1,
+        FOOTPRINT(Sunflora)
+        .levelUpLearnset = sSolfloraLevelUpLearnset,
+        .teachableLearnset = sSolfloraTeachableLearnset,
+    },
+
+    [SPECIES_DELIJOY] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 85,
+        .baseDefense   = 70,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_ICE, TYPE_FLYING),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 183 : 183,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+		.itemCommon = ITEM_STARDUST,
+		.itemRare = ITEM_STAR_PIECE,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
+        .abilities = { ABILITY_SNOW_WARNING, ABILITY_DAZZLING, ABILITY_SOUL_HEART },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Delijoy"),
+        .cryId = CRY_DELIBIRD,
+        .natDexNum = NATIONAL_DEX_DELIJOY,
+        .categoryName = _("Delivery"),
+        .height = 9,
+        .weight = 163,
+        .description = COMPOUND_STRING(
+            "Placeholder\n"
+            "Placeholder\n"
+            "Placeholder\n"
+            "Placeholder"),
+        .pokemonScale = 293,
+        .pokemonOffset = 11,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Delijoy,
+        .frontPicSize = MON_COORDS_SIZE(48, 56),
+        .frontPicYOffset = 7,
+        .frontAnimFrames = sAnims_Delijoy,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .enemyMonElevation = 1,
+        .backPic = gMonBackPic_Delijoy,
+        .backPicSize = MON_COORDS_SIZE(56, 56),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_Delijoy,
+        .shinyPalette = gMonShinyPalette_Delijoy,
+        .iconSprite = gMonIcon_Delijoy,
+        .iconPalIndex = 2,
+        FOOTPRINT(Delibird)
+        .levelUpLearnset = sDelijoyLevelUpLearnset,
+        .teachableLearnset = sDelijoyTeachableLearnset,
+    },
+
+    [SPECIES_COGMENT] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 100,
+        .baseDefense   = 60,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_ROCK, TYPE_FAIRY),
+        .catchRate = 30,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 184 : 184,
+        .evYield_Attack = 1,
+        .evYield_SpAttack = 1,
+		.itemCommon = ITEM_STAR_PIECE,
+		.itemRare = ITEM_COMET_SHARD,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE},
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Cogment"),
+        .cryId = CRY_MINIOR,
+        .natDexNum = NATIONAL_DEX_COGMENT,
+        .categoryName = _("Meteor"),
+        .height = 3,
+        .weight = 350,
+        .description = COMPOUND_STRING(
+            "Placeholder\n"
+            "Placeholder\n"
+            "Placeholder\n"
+            "Placeholder"),
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Cogment,
+        .frontPicSize = MON_COORDS_SIZE(48, 40),
+        .frontPicYOffset = 7,
+        .frontAnimFrames = sAnims_Delijoy,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .enemyMonElevation = 9,
+        .backPic = gMonBackPic_Cogment,
+        .backPicSize = MON_COORDS_SIZE(56, 56),
+        .backPicYOffset = 14,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_Cogment,
+        .shinyPalette = gMonShinyPalette_Cogment,
+        .iconSprite = gMonIcon_Cogment,
+        .iconPalIndex = 2,
+        //.footprint = gMonFootprint_None,
+        .levelUpLearnset = sCogmentLevelUpLearnset,
+        .teachableLearnset = sCogmentTeachableLearnset,
+    },
+
+
+
+#define MINIOR_MISC_INFO(color)                                             \
+        .types = MON_TYPES(TYPE_ROCK, TYPE_FLYING),                         \
+        .catchRate = 30,                                                    \
+        .expYield = 154,                                                    \
+        .evYield_Defense = 1,                                               \
+        .evYield_SpDefense = 1,                                             \
+        .itemRare = ITEM_STAR_PIECE,                                        \
+        .genderRatio = MON_GENDERLESS,                                      \
+        .eggCycles = 25,                                                    \
+        .friendship = STANDARD_FRIENDSHIP,                                  \
+        .growthRate = GROWTH_MEDIUM_SLOW,                                   \
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),                     \
+        .abilities = { ABILITY_SHIELDS_DOWN, ABILITY_NONE, ABILITY_NONE },  \
+        .bodyColor = color,                                                 \
+        .noFlip = TRUE,                                                     \
+        .speciesName = _("Minior"),                                         \
+        .cryId = CRY_MINIOR,                                                \
+        .natDexNum = NATIONAL_DEX_MINIOR,                                   \
+        .categoryName = _("Meteor"),                                        \
+        .height = 3,                                                        \
+        .pokemonScale = 530,                                                \
+        .pokemonOffset = 13,                                                \
+        .trainerScale = 256,                                                \
+        .trainerOffset = 0,                                                 \
+        FOOTPRINT(Minior)                                                   \
+        .levelUpLearnset = sMiniorLevelUpLearnset,                          \
+        .teachableLearnset = sMiniorTeachableLearnset,                      \
+        .formSpeciesIdTable = sMiniorFormSpeciesIdTable
+
+#define MINIOR_METEOR_SPECIES_INFO(Form)                        \
+    {                                                           \
+        .baseHP        = 60,                                    \
+        .baseAttack    = 60,                                    \
+        .baseDefense   = 100,                                   \
+        .baseSpeed     = 60,                                    \
+        .baseSpAttack  = 60,                                    \
+        .baseSpDefense = 100,                                   \
+        .weight = 400,                                          \
+        .frontPic = gMonFrontPic_MiniorMeteor,                  \
+        .frontPicSize = MON_COORDS_SIZE(48, 40),                \
+        .frontPicYOffset = 14,                                  \
+        .frontAnimFrames = sAnims_MiniorMeteor,                 \
+        .frontAnimId = ANIM_TUMBLING_FRONT_FLIP_TWICE,          \
+        .enemyMonElevation = 17,                                \
+        .backPic = gMonBackPic_MiniorMeteor,                    \
+        .backPicSize = MON_COORDS_SIZE(56, 40),                 \
+        .backPicYOffset = 14,                                   \
+        /*.backAnimId = BACK_ANIM_NONE,*/                       \
+        .palette = gMonPalette_MiniorMeteor,                    \
+        .shinyPalette = gMonShinyPalette_MiniorMeteor,          \
+        .iconSprite = gMonIcon_MiniorMeteor,                    \
+        .iconPalIndex = 0,                                      \
+        .formChangeTable = sMinior ##Form##FormChangeTable,     \
+        MINIOR_MISC_INFO(BODY_COLOR_BROWN),                     \
+    }
+
 };
     /* You may add any custom species below this point based on the following structure: */
 

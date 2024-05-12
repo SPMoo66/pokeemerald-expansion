@@ -2136,7 +2136,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Fearow,
-        .frontAnimId = ANIM_FIGURE_8,
+        //.frontAnimId = ANIM_FIGURE_8,
         .frontAnimDelay = 2,
         .enemyMonElevation = 6,
         .backPic = gMonBackPic_FearowMega,
@@ -9349,6 +9349,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Doduo)
         .levelUpLearnset = sDoduoLevelUpLearnset,
         .teachableLearnset = sDoduoTeachableLearnset,
+        .formSpeciesIdTable = sDoduoFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_DODRIO}),
     },
 
@@ -9413,6 +9414,125 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Dodrio)
         .levelUpLearnset = sDodrioLevelUpLearnset,
         .teachableLearnset = sDodrioTeachableLearnset,
+        .formSpeciesIdTable = sDodrioFormSpeciesIdTable,
+    },
+
+    [SPECIES_DODUO_EMERIBIAN] =
+    {
+        .baseHP        = 40,
+        .baseAttack    = 85,
+        .baseDefense   = 45,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 35,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FIRE),
+        .catchRate = 190,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 62 : 96,
+        .evYield_Attack = 1,
+        .itemRare = ITEM_SHARP_BEAK,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_STATIC, ABILITY_FLUFFY, ABILITY_THERMAL_EXCHANGE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Doduo"),
+        .cryId = CRY_DODUO,
+        .natDexNum = NATIONAL_DEX_DODUO,
+        .categoryName = _("Twin Bird"),
+        .height = 14,
+        .weight = 392,
+        .description = COMPOUND_STRING(
+            "Even while eating or sleeping, one of the\n"
+            "heads remains always vigilant for any sign\n"
+            "of danger. When threatened, it flees at\n"
+            "over 60 miles per hour."),
+        .pokemonScale = 256,
+        .pokemonOffset = 3,
+        .trainerScale = 257,
+        .trainerOffset = -1,
+        .frontPic = gMonFrontPic_DoduoEmeribian,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 5,
+        .frontAnimFrames = sAnims_DoduoEmeribian,
+        //.frontAnimId = ANIM_H_SHAKE_SLOW,
+        .backPic = gMonBackPic_DoduoEmeribian,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_DoduoEmeribian,
+        .shinyPalette = gMonShinyPalette_DoduoEmeribian,
+        .iconSprite = gMonIcon_DoduoEmeribian,
+        .iconPalIndex = 0,
+        FOOTPRINT(Doduo)
+        .levelUpLearnset = sDoduoEmeribianLevelUpLearnset,
+        .teachableLearnset = sDoduoEmeribianTeachableLearnset,
+        .isEmeribianForm = TRUE,
+        .formSpeciesIdTable = sDoduoFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_DODRIO_EMERIBIAN}),
+    },
+
+    [SPECIES_DODRIO_EMERIBIAN] =
+    {
+        .baseHP        = 75,
+        .baseAttack    = 110,
+        .baseDefense   = 75,
+        .baseSpeed     = P_UPDATED_STATS >= GEN_7 ? 110 : 100,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FIRE),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_7
+        .expYield = 165,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 161,
+    #else
+        .expYield = 158,
+    #endif
+        .evYield_Attack = 1,
+        .evYield_Speed = 1,
+        .itemRare = ITEM_SHARP_BEAK,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_STATIC, ABILITY_FLUFFY, ABILITY_THERMAL_EXCHANGE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Dodrio"),
+        .cryId = CRY_DODRIO,
+        .natDexNum = NATIONAL_DEX_DODRIO,
+        .categoryName = _("Triple Bird"),
+        .height = 18,
+        .weight = 852,
+        .description = COMPOUND_STRING(
+            "A peculiar Pokémon species with three\n"
+            "heads. It vigorously races across grassy\n"
+            "plains even in arid seasons with little\n"
+            "rainfall."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 268,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_DodrioEmeribian,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_DodrioEmeribian,
+        //.frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_DodrioEmeribian,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_DodrioEmeribian,
+        .shinyPalette = gMonShinyPalette_DodrioEmeribian,
+        .iconSprite = gMonIcon_DodrioEmeribian,
+        .iconPalIndex = 3,
+        FOOTPRINT(Dodrio)
+        .levelUpLearnset = sDodrioEmeribianLevelUpLearnset,
+        .teachableLearnset = sDodrioEmeribianTeachableLearnset,
+        .isEmeribianForm = TRUE,
+        .formSpeciesIdTable = sDodrioFormSpeciesIdTable,
     },
 #endif //P_FAMILY_DODUO
 

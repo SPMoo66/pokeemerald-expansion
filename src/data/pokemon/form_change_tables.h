@@ -631,6 +631,11 @@ static const struct FormChange sLopunnyFormChangeTable[] = {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_LOPUNNY_MEGA, ITEM_MEGA_STONE_X},
     {FORM_CHANGE_TERMINATOR},
 };
+
+static const struct FormChange sLopunnyEmeribianFormChangeTable[] = {
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_LOPUNNY_EMERIBIAN_MEGA, ITEM_MEGA_STONE_X},
+    {FORM_CHANGE_TERMINATOR},
+};
 #endif //P_FAMILY_BUNEARY
 
 #if P_FAMILY_GIBLE

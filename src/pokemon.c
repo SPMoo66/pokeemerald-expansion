@@ -3469,8 +3469,8 @@ const u32 sExpCandyExperienceTable[] = {
     [EXP_100 - 1] = 100,
     [EXP_800 - 1] = 800,
     [EXP_3000 - 1] = 3000,
-    [EXP_10000 - 1] = 10000,
-    [EXP_30000 - 1] = 30000,
+    [EXP_10000 - 1] = 8000,
+    [EXP_30000 - 1] = 25000,
 };
 
 // Returns TRUE if the item has no effect on the Pokémon, FALSE otherwise

@@ -14,8 +14,9 @@ script Mart_EventScript_Clerk{
 		case 3:
 			pokemart(BadgedPokemart3)
 		case 4:
-		case 5:
 			pokemart(BadgedPokemart4)
+		case 5:
+			pokemart(BadgedPokemart5)
 		case 6:
 			pokemart(BadgedPokemart6)
 		case 7:
@@ -38,6 +39,7 @@ mart BadgedPokemart0 {
 	ITEM_BURN_HEAL
 	ITEM_ICE_HEAL
 	ITEM_REPEL
+	ITEM_EXP_CANDY_XS
 }
 
 mart BadgedPokemart1 {
@@ -51,6 +53,7 @@ mart BadgedPokemart1 {
 	ITEM_BURN_HEAL
 	ITEM_ICE_HEAL
 	ITEM_REPEL
+	ITEM_EXP_CANDY_XS
 }
 
 mart BadgedPokemart2 {
@@ -65,6 +68,8 @@ mart BadgedPokemart2 {
 	ITEM_ICE_HEAL
 	ITEM_REPEL
 	ITEM_SUPER_REPEL
+	ITEM_EXP_CANDY_XS
+	ITEM_EXP_CANDY_S
 }
 
 mart BadgedPokemart3 {
@@ -82,6 +87,8 @@ mart BadgedPokemart3 {
 	ITEM_REPEL
 	ITEM_SUPER_REPEL
 	ITEM_MAX_REPEL
+	ITEM_EXP_CANDY_XS
+	ITEM_EXP_CANDY_S
 }
 
 mart BadgedPokemart4 {
@@ -101,6 +108,30 @@ mart BadgedPokemart4 {
 	ITEM_REPEL
 	ITEM_SUPER_REPEL
 	ITEM_MAX_REPEL
+	ITEM_EXP_CANDY_XS
+	ITEM_EXP_CANDY_S
+}
+
+mart BadgedPokemart5 {
+	ITEM_POKE_BALL
+	ITEM_GREAT_BALL
+	ITEM_ULTRA_BALL
+	ITEM_POTION
+	ITEM_SUPER_POTION
+	ITEM_HYPER_POTION
+	ITEM_REVIVE
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+	ITEM_AWAKENING
+	ITEM_BURN_HEAL
+	ITEM_ICE_HEAL
+	ITEM_FULL_HEAL
+	ITEM_REPEL
+	ITEM_SUPER_REPEL
+	ITEM_MAX_REPEL
+	ITEM_EXP_CANDY_XS
+	ITEM_EXP_CANDY_S
+	ITEM_EXP_CANDY_M
 }
 
 mart BadgedPokemart6 {
@@ -121,6 +152,9 @@ mart BadgedPokemart6 {
 	ITEM_REPEL
 	ITEM_SUPER_REPEL
 	ITEM_MAX_REPEL
+	ITEM_EXP_CANDY_XS
+	ITEM_EXP_CANDY_S
+	ITEM_EXP_CANDY_M
 }
 
 mart BadgedPokemart7 {
@@ -142,6 +176,10 @@ mart BadgedPokemart7 {
 	ITEM_REPEL
 	ITEM_SUPER_REPEL
 	ITEM_MAX_REPEL
+	ITEM_EXP_CANDY_XS
+	ITEM_EXP_CANDY_S
+	ITEM_EXP_CANDY_M
+	ITEM_EXP_CANDY_L
 }
 
 script Mart_EventScript_TMClerk{

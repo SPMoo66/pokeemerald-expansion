@@ -269,9 +269,9 @@ static const u16 sQuizLadyQuizAnswers[] =
 
 static const u16 sQuizLadyPrizes[] =
 {
-    ITEM_GLITTER_MAIL,
-    ITEM_BEAD_MAIL,
-    ITEM_TROPIC_MAIL,
+    ITEM_PEARL,
+    ITEM_PRETTY_FEATHER,
+    ITEM_STARDUST,
     ITEM_MAX_ETHER,
     ITEM_MAX_ETHER,
     ITEM_MAX_ETHER,
@@ -279,7 +279,7 @@ static const u16 sQuizLadyPrizes[] =
     ITEM_BELUE_BERRY,
     ITEM_DURIN_BERRY,
     ITEM_LUXURY_BALL,
-    ITEM_TM_HYPER_BEAM,
+    ITEM_STAR_PIECE,
     ITEM_BIG_PEARL,
     ITEM_STAR_PIECE,
     ITEM_RARE_CANDY,

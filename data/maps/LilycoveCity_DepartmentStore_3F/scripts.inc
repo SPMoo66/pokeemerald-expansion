@@ -1,6 +1,7 @@
 LilycoveCity_DepartmentStore_3F_MapScripts::
 	.byte 0
 
+@ The merchant below uses a copy of the Energy Guru mart for vitamins
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkLeft::
 	lock
 	faceplayer

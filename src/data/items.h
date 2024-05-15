@@ -303,7 +303,7 @@ const struct Item gItemsInfo[] =
     [ITEM_DIVE_BALL] =
     {
         .name = _("Dive Ball"),
-        .price = 1000,
+        .price = 800,
         .description = COMPOUND_STRING(
             "A Ball that works\n"
             "better on Pokémon\n"
@@ -318,7 +318,7 @@ const struct Item gItemsInfo[] =
     [ITEM_DUSK_BALL] =
     {
         .name = _("Dusk Ball"),
-        .price = 1000,
+        .price = 2000,
         .description = COMPOUND_STRING(
             "Works well if\n"
             "used in a\n"
@@ -333,7 +333,7 @@ const struct Item gItemsInfo[] =
     [ITEM_TIMER_BALL] =
     {
         .name = _("Timer Ball"),
-        .price = 1000,
+        .price = 1200,
         .description = COMPOUND_STRING(
             "A Ball that gains\n"
             "power in battles\n"
@@ -348,7 +348,7 @@ const struct Item gItemsInfo[] =
     [ITEM_QUICK_BALL] =
     {
         .name = _("Quick Ball"),
-        .price = 1000,
+        .price = 2000,
         .description = COMPOUND_STRING(
             "Works well if\n"
             "used on the\n"
@@ -363,7 +363,7 @@ const struct Item gItemsInfo[] =
     [ITEM_REPEAT_BALL] =
     {
         .name = _("Repeat Ball"),
-        .price = 1000,
+        .price = 500,
         .description = COMPOUND_STRING(
             "A Ball that works\n"
             "better on Pokémon\n"
@@ -378,7 +378,7 @@ const struct Item gItemsInfo[] =
     [ITEM_LUXURY_BALL] =
     {
         .name = _("Luxury Ball"),
-        .price = (I_PRICE >= GEN_8) ? 3000 : 1000,
+        .price = (I_PRICE >= GEN_8) ? 2000 : 1000,
         .description = COMPOUND_STRING(
             "A cozy Ball that\n"
             "makes Pokémon\n"
@@ -393,7 +393,7 @@ const struct Item gItemsInfo[] =
     [ITEM_LEVEL_BALL] =
     {
         .name = _("Level Ball"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = (I_PRICE >= GEN_7) ? 800 : 300,
         .description = COMPOUND_STRING(
             "A Ball that works\n"
             "well on lower\n"
@@ -408,7 +408,7 @@ const struct Item gItemsInfo[] =
     [ITEM_LURE_BALL] =
     {
         .name = _("Lure Ball"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = (I_PRICE >= GEN_7) ? 800 : 300,
         .description = COMPOUND_STRING(
             "A Ball that works\n"
             "well on fished\n"
@@ -423,7 +423,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MOON_BALL] =
     {
         .name = _("Moon Ball"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = (I_PRICE >= GEN_7) ? 800 : 300,
         .description = COMPOUND_STRING(
             "A Ball that works\n"
             "well on Moon\n"
@@ -438,7 +438,7 @@ const struct Item gItemsInfo[] =
     [ITEM_FRIEND_BALL] =
     {
         .name = _("Friend Ball"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = (I_PRICE >= GEN_7) ? 600 : 300,
         .description = COMPOUND_STRING(
             "A Ball that makes\n"
             "a Pokémon friendly\n"
@@ -453,7 +453,7 @@ const struct Item gItemsInfo[] =
     [ITEM_LOVE_BALL] =
     {
         .name = _("Love Ball"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = (I_PRICE >= GEN_7) ? 700 : 300,
         .description = COMPOUND_STRING(
             "Works well on\n"
             "Pokémon of the\n"
@@ -468,7 +468,7 @@ const struct Item gItemsInfo[] =
     [ITEM_FAST_BALL] =
     {
         .name = _("Fast Ball"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = (I_PRICE >= GEN_7) ? 800 : 300,
         .description = COMPOUND_STRING(
             "Works well on\n"
             "very fast\n"
@@ -498,7 +498,7 @@ const struct Item gItemsInfo[] =
     [ITEM_DREAM_BALL] =
     {
         .name = _("Dream Ball"),
-        .price = 0,
+        .price = 1200,
         .description = COMPOUND_STRING(
         #if B_DREAM_BALL_MODIFIER >= GEN_8
             "A Ball that works\n"
@@ -562,7 +562,7 @@ const struct Item gItemsInfo[] =
     [ITEM_BEAST_BALL] =
     {
         .name = _("Beast Ball"),
-        .price = 0,
+        .price = 2000,
         .description = COMPOUND_STRING(
             "A Ball designed to\n"
             "catch Ultra Beasts."),

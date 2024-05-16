@@ -59,14 +59,18 @@ LittlerootTown_OnTransition:
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 1, LittlerootTown_EventScript_ShowBaron
-	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 0, LittlerootTown_EventScript_ShowRival
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 0, LittlerootTown_EventScript_ShowRivalCheck
 	end
 
 LittlerootTown_EventScript_ShowBaron::
 	clearflag FLAG_TEMP_1
 	return
 
-LittlerootTown_EventScript_ShowRival:
+LittlerootTown_EventScript_ShowRivalCheck::
+	call_if_eq VAR_BIRCH_LAB_STATE, 3, LittlerootTown_EventScript_ShowRival
+	return
+	
+LittlerootTown_EventScript_ShowRival::
 	clearflag FLAG_TEMP_2
 	return
 

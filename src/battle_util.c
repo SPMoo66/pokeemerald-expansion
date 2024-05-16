@@ -8847,7 +8847,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
 
     // various effects
     if (gProtectStructs[battlerAtk].helpingHand)
-        modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        modifier = uq4_12_multiply(modifier, UQ_4_12(1.75));
     if (gSpecialStatuses[battlerAtk].gemBoost)
         modifier = uq4_12_multiply(modifier, UQ_4_12(1.0) + sPercentToModifier[gSpecialStatuses[battlerAtk].gemParam]);
     if (gStatuses3[battlerAtk] & STATUS3_CHARGED_UP && moveType == TYPE_ELECTRIC)

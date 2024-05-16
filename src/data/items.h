@@ -1770,8 +1770,7 @@ const struct Item gItemsInfo[] =
         .price = 350,
         .holdEffectParam = EXP_100,
         .description = COMPOUND_STRING(
-            "Gives a very small\n"
-            "amount of Exp. to\n"
+            "Gives 100 Exp. to\n"
             "a single Pokémon."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
@@ -1787,8 +1786,7 @@ const struct Item gItemsInfo[] =
         .price = 2500,
         .holdEffectParam = EXP_800,
         .description = COMPOUND_STRING(
-            "Gives a small\n"
-            "amount of Exp. to\n"
+            "Gives 800 Exp. to\n"
             "a single Pokémon."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
@@ -1804,8 +1802,7 @@ const struct Item gItemsInfo[] =
         .price = 8000,
         .holdEffectParam = EXP_3000,
         .description = COMPOUND_STRING(
-            "Gives a moderate\n"
-            "amount of Exp. to\n"
+            "Gives 3000 Exp. to\n"
             "a single Pokémon."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
@@ -1821,8 +1818,7 @@ const struct Item gItemsInfo[] =
         .price = 20000,
         .holdEffectParam = EXP_10000,
         .description = COMPOUND_STRING(
-            "Gives a large\n"
-            "amount of Exp. to\n"
+            "Gives 8000 Exp. to\n"
             "a single Pokémon."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
@@ -1838,8 +1834,7 @@ const struct Item gItemsInfo[] =
         .price = 60000,
         .holdEffectParam = EXP_30000,
         .description = COMPOUND_STRING(
-            "Gives a very large\n"
-            "amount of Exp. to\n"
+            "Gives 25000 Exp. to\n"
             "a single Pokémon."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,

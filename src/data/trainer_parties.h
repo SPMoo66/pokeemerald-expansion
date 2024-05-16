@@ -8458,12 +8458,16 @@ static const struct TrainerMon sParty_GruntSeafloorCavern5[] = {
 
 static const struct TrainerMon sParty_Josef[] = {
     {
-    .lvl = 31,
-    .species = SPECIES_WAILMER,
+    .lvl = 7,
+    .species = SPECIES_NACLI,
     },
     {
-    .lvl = 31,
-    .species = SPECIES_ZUBAT,
+    .lvl = 7,
+    .species = SPECIES_CUBCHOO,
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_NIDORAN_M,
     }
 };
 
@@ -8621,8 +8625,16 @@ static const struct TrainerMon sParty_Clarence[] = {
 
 static const struct TrainerMon sParty_Candy[] = {
     {
-    .lvl = 37,
-    .species = SPECIES_GIRAFARIG,
+    .lvl = 7,
+    .species = SPECIES_SNORUNT,
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_SMOLIV,
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_HOPPIP_EMERIBIAN,
     }
 };
 
@@ -9389,22 +9401,35 @@ static const struct TrainerMon sParty_Eric[] = {
 
 static const struct TrainerMon sParty_Gerardo[] = {
     {
-    .lvl = 9,
-    .species = SPECIES_WAILMER,
-    .moves = {MOVE_SPLASH, MOVE_WATER_GUN, MOVE_NONE, MOVE_NONE}
+    .lvl = 7,
+    .species = SPECIES_SANDILE,
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_GEODUDE_ALOLAN,
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_VANILLITE,
     }
 };
 
 static const struct TrainerMon sParty_Aurelia[] = {
     {
-    .lvl = 10,
-    .species = SPECIES_PELIPPER,
-    .moves = {MOVE_GUST, MOVE_GROWL, MOVE_NONE, MOVE_NONE}
+    .lvl = 7,
+    .species = SPECIES_PINECO,
     },
     {
-    .lvl = 10,
-    .species = SPECIES_POOCHYENA,
-    .moves = {MOVE_BITE, MOVE_SCARY_FACE, MOVE_NONE, MOVE_NONE}
+    .lvl = 7,
+    .species = SPECIES_REMORAID,
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_SHROODLE,
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_BUNEARY_EMERIBIAN,
     }
 };
 

@@ -10,3 +10,23 @@ script FlurryPeak_Boy {
 script FlurryPeak_Sign {
 	msgbox (format("{RIGHT_ARROW} Flurry Peak\n {LEFT_ARROW} Route 104"), MSGBOX_SIGN)
 }
+
+script FlurryPeak_EventScript_Candy {
+	trainerbattle_single (TRAINER_CANDY, "Are you enjoying the snow?", "No! I slipped!")
+	msgbox ("Take your time trekking through\nthe snow.", MSGBOX_AUTOCLOSE)
+}
+
+script FlurryPeak_EventScript_Josef {
+	trainerbattle_single (TRAINER_JOSEF, "Are you sure you're dressed for\nthis weather?", "Ach! That wind!")
+	msgbox ("Even with my gloves on, I can\nbarely feel my hands.", MSGBOX_AUTOCLOSE)
+}
+
+script FlurryPeak_EventScript_Gerardo {
+	trainerbattle_single (TRAINER_GERARDO, "I wonder where this mountain leads.", "It's snow cold out here!")
+	msgbox ("Don't fall on the ice down there.", MSGBOX_AUTOCLOSE)
+}
+
+script FlurryPeak_EventScript_Aurelia {
+	trainerbattle_single (TRAINER_AURELIA, "I hope you weren't planning on\ngoing in the cave.", "Aw no.")
+	msgbox ("Even after you beat me, there's\nstill a rock in the way up there.", MSGBOX_AUTOCLOSE)
+}

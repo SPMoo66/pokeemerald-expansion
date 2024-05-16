@@ -3613,7 +3613,7 @@ const struct Item gItemsInfo[] =
     [ITEM_CHIPPED_POT] =
     {
         .name = _("Chipped Pot"),
-        .price = 38000,
+        .price = 3000,
         .description = COMPOUND_STRING(
             "A chipped teapot\n"
             "that makes certain\n"
@@ -3659,7 +3659,7 @@ const struct Item gItemsInfo[] =
     [ITEM_DRAGON_SCALE] =
     {
         .name = _("Dragon Scale"),
-        .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
+        .price = (I_PRICE >= GEN_7) ? 2500 * TREASURE_FACTOR : 2100,
         .holdEffect = HOLD_EFFECT_DRAGON_SCALE,
         .holdEffectParam = 10,
         .description = COMPOUND_STRING(
@@ -3691,7 +3691,7 @@ const struct Item gItemsInfo[] =
     [ITEM_PROTECTOR] =
     {
         .name = _("Protector"),
-        .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
+        .price = (I_PRICE >= GEN_7) ? 3000 * TREASURE_FACTOR : 2100,
         .description = COMPOUND_STRING(
             "Loved by a certain\n"
             "Pokémon. It's stiff\n"
@@ -3706,7 +3706,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ELECTIRIZER] =
     {
         .name = _("Electirizer"),
-        .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
+        .price = (I_PRICE >= GEN_7) ? 3000 * TREASURE_FACTOR : 2100,
         .description = COMPOUND_STRING(
             "Loved by a certain\n"
             "Pokémon. It's full\n"
@@ -3721,7 +3721,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MAGMARIZER] =
     {
         .name = _("Magmarizer"),
-        .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
+        .price = (I_PRICE >= GEN_7) ? 3000 * TREASURE_FACTOR : 2100,
         .description = COMPOUND_STRING(
             "Loved by a certain\n"
             "Pokémon. It's full\n"
@@ -3736,7 +3736,7 @@ const struct Item gItemsInfo[] =
     [ITEM_DUBIOUS_DISC] =
     {
         .name = _("Dubious Disc"),
-        .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
+        .price = (I_PRICE >= GEN_7) ? 3000 * TREASURE_FACTOR : 2100,
         .description = COMPOUND_STRING(
             "A transparent device\n"
             "overflowing with\n"
@@ -3752,7 +3752,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Reaper Cloth"),
         .pluralName = _("Reaper Cloths"),
-        .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
+        .price = (I_PRICE >= GEN_7) ? 3000 * TREASURE_FACTOR : 2100,
         .description = COMPOUND_STRING(
             "Loved by a certain\n"
             "Pokémon. Imbued with\n"
@@ -3943,7 +3943,7 @@ const struct Item gItemsInfo[] =
     [ITEM_RED_NECTAR] =
     {
         .name = _("Red Nectar"),
-        .price = 300,
+        .price = 600,
         .holdEffectParam = 0,
         .description = sNectarDesc,
         .pocket = POCKET_ITEMS,
@@ -3955,7 +3955,7 @@ const struct Item gItemsInfo[] =
     [ITEM_YELLOW_NECTAR] =
     {
         .name = _("Yellow Nectar"),
-        .price = 300,
+        .price = 600,
         .holdEffectParam = 0,
         .description = sNectarDesc,
         .pocket = POCKET_ITEMS,
@@ -3967,7 +3967,7 @@ const struct Item gItemsInfo[] =
     [ITEM_PINK_NECTAR] =
     {
         .name = _("Pink Nectar"),
-        .price = 300,
+        .price = 600,
         .holdEffectParam = 0,
         .description = sNectarDesc,
         .pocket = POCKET_ITEMS,
@@ -3979,7 +3979,7 @@ const struct Item gItemsInfo[] =
     [ITEM_PURPLE_NECTAR] =
     {
         .name = _("Purple Nectar"),
-        .price = 300,
+        .price = 600,
         .holdEffectParam = 0,
         .description = sNectarDesc,
         .pocket = POCKET_ITEMS,
@@ -12226,7 +12226,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("ScrllOfDrknss"),
         .pluralName = _("ScrllsOfDrknss"),
-        .price = 0,
+        .price = 8000,
         .description = COMPOUND_STRING(
             "A peculiar scroll\n"
             "with secrets of\n"
@@ -12242,7 +12242,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("ScrollOfWatrs"),
         .pluralName = _("ScrollsOfWatrs"),
-        .price = 0,
+        .price = 8000,
         .description = COMPOUND_STRING(
             "A peculiar scroll\n"
             "with secrets of\n"
@@ -12507,7 +12507,7 @@ const struct Item gItemsInfo[] =
     [ITEM_BLACK_AUGURITE] =
     {
         .name = _("BlackAugurite"),
-        .price = 8000,
+        .price = 6000,
         .description = COMPOUND_STRING(
             "A black stone that\n"
             "makes some Pokémon\n"
@@ -12522,7 +12522,7 @@ const struct Item gItemsInfo[] =
     [ITEM_LINKING_CORD] =
     {
         .name = _("Linking Cord"),
-        .price = 8000,
+        .price = 5000,
         .description = COMPOUND_STRING(
             "A mysterious string\n"
             "that makes some\n"

@@ -991,7 +991,7 @@
 #define FLAG_HIDE_ROUTE_128_MAXIE                                   0x3B1
 #define FLAG_HIDE_SEAFLOOR_CAVERN_AQUA_GRUNTS                       0x3B2
 #define FLAG_HIDE_ROUTE_116_DEVON_EMPLOYEE                          0x3B3
-#define FLAG_UNUSED_0x3B4                                           0x3B4 // Was for Slateport Hidden/Secret Power TM salesman
+#define FLAG_UNUSED_0x3B4                                           0x3B4 // Unused, was for Slateport Hidden/Secret Power TM salesman
 #define FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE              0x3B5
 #define FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY                       0x3B6
 #define FLAG_HIDE_SS_TIDAL_ROOMS_SNATCH_GIVER                       0x3B7
@@ -1170,9 +1170,9 @@
 #define FLAG_ITEM_NEW_MAUVILLE_RARE_BONE_2                          0x462
 #define FLAG_ITEM_NEW_MAUVILLE_RARE_BONE_3                          0x463
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_MASTER_BALL                      0x464
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MASTER_BALL                 0x465 // Unused Flag, leftover from the Ruby Magma hideout
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MAX_ELIXIR                  0x466 // Unused Flag, leftover from the Ruby Magma hideout
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B2F_NEST_BALL                   0x467 // Unused Flag, leftover from the Ruby Magma hideout
+#define FLAG_ITEM_FLURRY_PEAK_PRETTY_FEATHER                        0x465 // Was leftover from the Ruby Magma hideout
+#define FLAG_HIDDEN_ITEM_FLURRY_PEAK_TINY_MUSHROOM                  0x466 // Was leftover from the Ruby Magma hideout
+#define FLAG_HIDDEN_ITEM_FLURRY_PEAK_PRETTY_FEATHER                 0x467 // Was leftover from the Ruby Magma hideout
 #define FLAG_ITEM_GRANITE_CAVE_B3F_NUGGET                           0x468
 #define FLAG_ITEM_MT_PYRE_2F_RARE_BONE                              0x469
 #define FLAG_ITEM_MT_PYRE_4F_NUGGET                                 0x46A

@@ -8726,7 +8726,7 @@ static inline u32 CalcMoveBasePower(u32 move, u32 battlerAtk, u32 battlerDef, u3
             basePower = uq4_12_multiply(basePower, UQ_4_12(1.5));
         break;
     case EFFECT_DYNAMAX_DOUBLE_DMG:
-        if (IsDynamaxed(battlerDef))
+        if (gSpeciesInfo[gBattleMons[battlerDef].species].isMegaEvolution)
             basePower *= 2;
         break;
     case EFFECT_HIDDEN_POWER:

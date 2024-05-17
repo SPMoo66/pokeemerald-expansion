@@ -1298,24 +1298,44 @@ EventScript_CapCollector_1:
 # 643 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_13, ITEM_NORMAL_GEM
 # 644 "data/global.pory"
-	special GetNumberOfBadges
+	dynmultipush EventScript_CapCollector_Text_14, ITEM_FLAME_ORB
 # 645 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_15, ITEM_TOXIC_ORB
+# 646 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_16, ITEM_EVIOLITE
+# 647 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_17, ITEM_TERRAIN_EXTENDER
+# 648 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_18, ITEM_PROTECTIVE_PADS
+# 649 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_19, ITEM_BINDING_BAND
+# 650 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_20, ITEM_EJECT_PACK
+# 651 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_21, ITEM_ABILITY_SHIELD
+# 652 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_22, ITEM_PUNCHING_GLOVE
+# 653 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_23, ITEM_COVERT_CLOAK
+# 654 "data/global.pory"
+	special GetNumberOfBadges
+# 655 "data/global.pory"
 	compare VAR_RESULT, 5
 	goto_if_ge EventScript_CapCollector_5
 EventScript_CapCollector_4:
-# 650 "data/global.pory"
+# 660 "data/global.pory"
 	special ShowBottleCapsWindow
-# 651 "data/global.pory"
+# 661 "data/global.pory"
 	dynmultistack 17, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM
-# 652 "data/global.pory"
+# 662 "data/global.pory"
 	compare VAR_RESULT, 127
 	goto_if_ne EventScript_CapCollector_8
 EventScript_CapCollector_7:
-# 673 "data/global.pory"
+# 683 "data/global.pory"
 	msgbox gText_PleaseComeAgain
-# 674 "data/global.pory"
+# 684 "data/global.pory"
 	special CloseBattlePointsWindow
-# 675 "data/global.pory"
+# 685 "data/global.pory"
 	release
 	end
 
@@ -1327,116 +1347,116 @@ EventScript_CapCollector_2:
 	goto EventScript_CapCollector_1
 
 EventScript_CapCollector_5:
-# 646 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_14, ITEM_BOOSTER_ENERGY
-# 647 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_15, ITEM_MIRROR_HERB
-# 648 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_16, ITEM_POWER_HERB
+# 656 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_24, ITEM_BOOSTER_ENERGY
+# 657 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_25, ITEM_MIRROR_HERB
+# 658 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_26, ITEM_POWER_HERB
 	goto EventScript_CapCollector_4
 
 EventScript_CapCollector_8:
-# 653 "data/global.pory"
+# 663 "data/global.pory"
 	copyvar VAR_0x8009, VAR_RESULT
-# 654 "data/global.pory"
+# 664 "data/global.pory"
 	checkitem ITEM_BOTTLE_CAP
-# 655 "data/global.pory"
+# 665 "data/global.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq EventScript_CapCollector_11
-# 661 "data/global.pory"
+# 671 "data/global.pory"
 	checkitemspace VAR_0x8009
-# 662 "data/global.pory"
+# 672 "data/global.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq EventScript_CapCollector_14
-# 668 "data/global.pory"
+# 678 "data/global.pory"
 	removeitem ITEM_BOTTLE_CAP
-# 669 "data/global.pory"
+# 679 "data/global.pory"
 	additem VAR_0x8009
-# 670 "data/global.pory"
+# 680 "data/global.pory"
 	special UpdateBottleCapsWindow
-# 671 "data/global.pory"
+# 681 "data/global.pory"
 	playse SE_SHOP
 	goto EventScript_CapCollector_7
 
 EventScript_CapCollector_11:
-# 656 "data/global.pory"
-	msgbox EventScript_CapCollector_Text_17
-# 657 "data/global.pory"
+# 666 "data/global.pory"
+	msgbox EventScript_CapCollector_Text_27
+# 667 "data/global.pory"
 	special CloseBattlePointsWindow
-# 658 "data/global.pory"
+# 668 "data/global.pory"
 	release
 	end
 
 EventScript_CapCollector_14:
-# 663 "data/global.pory"
-	msgbox EventScript_CapCollector_Text_18
-# 664 "data/global.pory"
+# 673 "data/global.pory"
+	msgbox EventScript_CapCollector_Text_28
+# 674 "data/global.pory"
 	special CloseBattlePointsWindow
-# 665 "data/global.pory"
+# 675 "data/global.pory"
 	release
 	end
 
 
 Mart_EventScript_AbilityNatureClerk::
-# 689 "data/global.pory"
+# 699 "data/global.pory"
 	lock
-# 690 "data/global.pory"
+# 700 "data/global.pory"
 	faceplayer
-# 691 "data/global.pory"
+# 701 "data/global.pory"
 	msgbox gText_HowMayIServeYou
-# 692 "data/global.pory"
+# 702 "data/global.pory"
 	waitmessage
-# 693 "data/global.pory"
+# 703 "data/global.pory"
 	pokemart AbilityNaturePokemart
-# 694 "data/global.pory"
+# 704 "data/global.pory"
 	msgbox gText_PleaseComeAgain
-# 695 "data/global.pory"
+# 705 "data/global.pory"
 	release
 	end
 
 
 	.align 2
-# 699 "data/global.pory"
-AbilityNaturePokemart:
-# 700 "data/global.pory"
-	.2byte ITEM_ABILITY_CAPSULE
-# 701 "data/global.pory"
-	.2byte ITEM_ABILITY_PATCH
-# 702 "data/global.pory"
-	.2byte ITEM_SASSY_MINT
-# 703 "data/global.pory"
-	.2byte ITEM_TIMID_MINT
-# 704 "data/global.pory"
-	.2byte ITEM_HASTY_MINT
-# 705 "data/global.pory"
-	.2byte ITEM_CALM_MINT
-# 706 "data/global.pory"
-	.2byte ITEM_GENTLE_MINT
-# 707 "data/global.pory"
-	.2byte ITEM_CAREFUL_MINT
-# 708 "data/global.pory"
-	.2byte ITEM_MILD_MINT
 # 709 "data/global.pory"
-	.2byte ITEM_RASH_MINT
+AbilityNaturePokemart:
 # 710 "data/global.pory"
-	.2byte ITEM_QUIET_MINT
+	.2byte ITEM_ABILITY_CAPSULE
 # 711 "data/global.pory"
-	.2byte ITEM_LAX_MINT
+	.2byte ITEM_ABILITY_PATCH
 # 712 "data/global.pory"
-	.2byte ITEM_RELAXED_MINT
+	.2byte ITEM_SASSY_MINT
 # 713 "data/global.pory"
-	.2byte ITEM_MODEST_MINT
+	.2byte ITEM_TIMID_MINT
 # 714 "data/global.pory"
-	.2byte ITEM_BRAVE_MINT
+	.2byte ITEM_HASTY_MINT
 # 715 "data/global.pory"
-	.2byte ITEM_BOLD_MINT
+	.2byte ITEM_CALM_MINT
 # 716 "data/global.pory"
-	.2byte ITEM_IMPISH_MINT
+	.2byte ITEM_GENTLE_MINT
 # 717 "data/global.pory"
-	.2byte ITEM_LONELY_MINT
+	.2byte ITEM_CAREFUL_MINT
 # 718 "data/global.pory"
-	.2byte ITEM_ADAMANT_MINT
+	.2byte ITEM_MILD_MINT
 # 719 "data/global.pory"
+	.2byte ITEM_RASH_MINT
+# 720 "data/global.pory"
+	.2byte ITEM_QUIET_MINT
+# 721 "data/global.pory"
+	.2byte ITEM_LAX_MINT
+# 722 "data/global.pory"
+	.2byte ITEM_RELAXED_MINT
+# 723 "data/global.pory"
+	.2byte ITEM_MODEST_MINT
+# 724 "data/global.pory"
+	.2byte ITEM_BRAVE_MINT
+# 725 "data/global.pory"
+	.2byte ITEM_BOLD_MINT
+# 726 "data/global.pory"
+	.2byte ITEM_IMPISH_MINT
+# 727 "data/global.pory"
+	.2byte ITEM_LONELY_MINT
+# 728 "data/global.pory"
+	.2byte ITEM_ADAMANT_MINT
+# 729 "data/global.pory"
 	.2byte ITEM_NAUGHTY_MINT
 	.2byte ITEM_NONE
 
@@ -1599,34 +1619,74 @@ EventScript_CapCollector_Text_13:
 	.string "Normal Gem$"
 
 EventScript_CapCollector_Text_14:
-# 646 "data/global.pory"
-	.string "Booster Energy$"
+# 644 "data/global.pory"
+	.string "Flame Orb$"
 
 EventScript_CapCollector_Text_15:
-# 647 "data/global.pory"
-	.string "Mirror Herb$"
+# 645 "data/global.pory"
+	.string "Toxic Orb$"
 
 EventScript_CapCollector_Text_16:
-# 648 "data/global.pory"
-	.string "Power Herb$"
+# 646 "data/global.pory"
+	.string "Eviolite$"
 
 EventScript_CapCollector_Text_17:
-# 656 "data/global.pory"
-	.string "You don't seem to have any Bottle Caps,\nthus I have nothing to give you.$"
+# 647 "data/global.pory"
+	.string "Terrain Extender$"
 
 EventScript_CapCollector_Text_18:
-# 663 "data/global.pory"
+# 648 "data/global.pory"
+	.string "Protective Pads$"
+
+EventScript_CapCollector_Text_19:
+# 649 "data/global.pory"
+	.string "Binding Band$"
+
+EventScript_CapCollector_Text_20:
+# 650 "data/global.pory"
+	.string "Eject Pack$"
+
+EventScript_CapCollector_Text_21:
+# 651 "data/global.pory"
+	.string "Ability Shield$"
+
+EventScript_CapCollector_Text_22:
+# 652 "data/global.pory"
+	.string "Punching Glove$"
+
+EventScript_CapCollector_Text_23:
+# 653 "data/global.pory"
+	.string "Covert Cloak$"
+
+EventScript_CapCollector_Text_24:
+# 656 "data/global.pory"
+	.string "Booster Energy$"
+
+EventScript_CapCollector_Text_25:
+# 657 "data/global.pory"
+	.string "Mirror Herb$"
+
+EventScript_CapCollector_Text_26:
+# 658 "data/global.pory"
+	.string "Power Herb$"
+
+EventScript_CapCollector_Text_27:
+# 666 "data/global.pory"
+	.string "You don't seem to have any Bottle Caps,\nthus I have nothing to give you.$"
+
+EventScript_CapCollector_Text_28:
+# 673 "data/global.pory"
 	.string "You don't have any room in your Bag for\n"
 	.string "this item.$"
 
 BottleCapCollectorIntro::
-# 680 "data/global.pory"
+# 690 "data/global.pory"
 	.string "I'm a collector of Bottle Caps.\n"
 	.string "If you happen to come across any, I'll\l"
 	.string "gladly trade you some rare items in\l"
 	.string "exchange for them.$"
 
 DoYouHaveAnyCaps::
-# 684 "data/global.pory"
+# 694 "data/global.pory"
 	.string "Do you have any Bottle Caps you'd like\n"
 	.string "to trade?$"

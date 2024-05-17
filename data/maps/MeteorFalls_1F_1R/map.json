@@ -200,6 +200,13 @@
       "elevation": 0,
       "dest_map": "MAP_METEOR_FALLS_STEVENS_CAVE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_DRAKES_SANCTUM",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

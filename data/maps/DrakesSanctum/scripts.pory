@@ -1,32 +1,32 @@
-const REGIELEKI = 1
+const REGIDRAGO = 1
 
-mapscripts RetiredMechanism_MapScripts {
+mapscripts DrakesSanctum_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
-		if(flag(FLAG_CAUGHT_REGIELEKI)) {
+		if(flag(FLAG_CAUGHT_REGIDRAGO)) {
 			setflag (FLAG_TEMP_2)
-			removeobject(REGIELEKI)
+			removeobject(REGIDRAGO)
 		}
 	}
 	MAP_SCRIPT_ON_RESUME {
 		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
-			removeobject(REGIELEKI)
+			removeobject(REGIDRAGO)
 		}
 	}
 }
 
-script BattleRegieleki {
+script BattleRegidrago {
 	lock
-	playmoncry(SPECIES_REGIELEKI, CRY_MODE_ENCOUNTER)
-	msgbox("Zizi zizizi.")
+	playmoncry(SPECIES_REGIDRAGO, CRY_MODE_ENCOUNTER)
+	msgbox("Zagd.")
 	waitmoncry
-	setwildbattle(SPECIES_REGIELEKI, 40)
+	setwildbattle(SPECIES_REGIDRAGO, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(StartRegiBattle)
 	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
-		setflag (FLAG_CAUGHT_REGIELEKI)
+		setflag (FLAG_CAUGHT_REGIDRAGO)
 	}
 	release
 	end

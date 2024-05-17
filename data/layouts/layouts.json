@@ -4580,6 +4580,16 @@
       "secondary_tileset": "gTileset_Snow",
       "border_filepath": "data/layouts/FlurryPeak/border.bin",
       "blockdata_filepath": "data/layouts/FlurryPeak/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAKES_SANCTUM",
+      "name": "DrakesSanctum_Layout",
+      "width": 19,
+      "height": 17,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/DrakesSanctum/border.bin",
+      "blockdata_filepath": "data/layouts/DrakesSanctum/map.bin"
     }
   ]
 }

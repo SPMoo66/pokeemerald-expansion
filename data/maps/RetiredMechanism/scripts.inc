@@ -14,7 +14,7 @@ RetiredMechanism_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 6 "data/maps/RetiredMechanism/scripts.pory"
 	setflag FLAG_TEMP_2
 # 7 "data/maps/RetiredMechanism/scripts.pory"
-	removeobject 5
+	removeobject 1
 	return
 
 RetiredMechanism_MapScripts_MAP_SCRIPT_ON_RESUME:
@@ -24,7 +24,7 @@ RetiredMechanism_MapScripts_MAP_SCRIPT_ON_RESUME:
 
 RetiredMechanism_MapScripts_MAP_SCRIPT_ON_RESUME_1:
 # 12 "data/maps/RetiredMechanism/scripts.pory"
-	removeobject 5
+	removeobject 1
 	return
 
 

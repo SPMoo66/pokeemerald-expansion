@@ -1090,3 +1090,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/NamelessCavern/scripts.inc"
 	.include "data/maps/CrescentIsle/scripts.inc"
 	.include "data/maps/FlurryPeak/scripts.inc"
+
+	.include "data/maps/DrakesSanctum/scripts.inc"

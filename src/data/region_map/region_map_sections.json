@@ -756,15 +756,15 @@
       "map_section": "MAPSEC_TRACKLESS_FOREST",
       "name": "Trackless Forest",
       "x": 0,
-      "y": 0,
+      "y": 8,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_NAMELESS_CAVERN",
       "name": "Nameless Cavern",
-      "x": 0,
-      "y": 0,
+      "x": 22,
+      "y": 4,
       "width": 1,
       "height": 1
     },
@@ -817,8 +817,8 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_2",
-      "name": "Route 2",
+      "map_section": "MAPSEC_DRAKES_SANCTUM",
+      "name": "Drake's Sanctum",
       "x": 0,
       "y": 0,
       "width": 1,

@@ -8495,7 +8495,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .effect = EFFECT_MULTI_HIT,
         .power = 25,
         .type = TYPE_ROCK,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 90 : 80,
+        .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 95 : 85,
         .pp = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,

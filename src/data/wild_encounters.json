@@ -12257,7 +12257,7 @@
           "map": "MAP_FLURRY_PEAK",
           "base_label": "gFlurryPeak",
           "land_mons": {
-            "encounter_rate": 5,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 5,

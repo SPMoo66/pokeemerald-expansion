@@ -13,6 +13,12 @@ mapscripts MeteorFalls_1F_1R_MapScripts {
 			setmetatile (4, 2, METATILE_MeteorFalls_CaveEntrance_Bottom, FALSE)
 			setmetatile (5, 2, METATILE_MeteorFalls_CaveEntrance_Right, TRUE)
 		}
+		if (flag(FLAG_REGI_DOORS_OPENED)) {
+			setmetatile (12, 25, METATILE_MeteorFalls_CaveEntrance_Top, TRUE)
+			setmetatile (11, 26, METATILE_MeteorFalls_CaveEntrance_Left, TRUE)
+			setmetatile (12, 26, METATILE_MeteorFalls_CaveEntrance_Bottom, FALSE)
+			setmetatile (13, 26, METATILE_MeteorFalls_CaveEntrance_Right, TRUE)
+		}
 	}
 }
 

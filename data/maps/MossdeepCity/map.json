@@ -96,7 +96,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_BLUE",
       "x": 62,
       "y": 35,
       "elevation": 5,
@@ -105,7 +105,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_FOCUS_SASH",
-      "script": "Common_EventScript_FindItem",
+      "script": "MossdeepCity_EventScript_ChallengeBall1",
       "flag": "FLAG_CHALLENGE_BALL_MOSSDEEP_CITY"
     },
     {

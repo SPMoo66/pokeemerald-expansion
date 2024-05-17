@@ -958,24 +958,24 @@ PetalburgWoods_MapScripts_MAP_SCRIPT_ON_LOAD:
 
 PetalburgWoods_MapScripts_MAP_SCRIPT_ON_LOAD_1:
 # 479 "data/maps/PetalburgWoods/scripts.pory"
-	setmetatile 42, 27, METATILE_General_TallGrass, FALSE
+	setmetatile 40, 27, METATILE_General_TallGrass, FALSE
 # 480 "data/maps/PetalburgWoods/scripts.pory"
-	setmetatile 43, 27, METATILE_General_TallGrass, FALSE
+	setmetatile 41, 27, METATILE_General_TallGrass, FALSE
 # 481 "data/maps/PetalburgWoods/scripts.pory"
-	setmetatile 42, 28, METATILE_General_Grass, FALSE
+	setmetatile 40, 28, METATILE_General_Grass, FALSE
 # 482 "data/maps/PetalburgWoods/scripts.pory"
-	setmetatile 43, 28, METATILE_General_Grass, FALSE
+	setmetatile 41, 28, METATILE_General_Grass, FALSE
 # 483 "data/maps/PetalburgWoods/scripts.pory"
-	setmetatile 42, 29, METATILE_General_Grass, FALSE
+	setmetatile 40, 29, METATILE_General_Grass, FALSE
 # 484 "data/maps/PetalburgWoods/scripts.pory"
-	setmetatile 43, 29, METATILE_General_Grass, FALSE
+	setmetatile 41, 29, METATILE_General_Grass, FALSE
 # 485 "data/maps/PetalburgWoods/scripts.pory"
-	setmetatile 42, 30, METATILE_General_Grass, FALSE
+	setmetatile 40, 30, METATILE_General_Grass, FALSE
 # 486 "data/maps/PetalburgWoods/scripts.pory"
-	setmetatile 43, 30, METATILE_General_Grass, FALSE
+	setmetatile 41, 30, METATILE_General_Grass, FALSE
 # 487 "data/maps/PetalburgWoods/scripts.pory"
-	setmetatile 42, 31, METATILE_General_Grass, FALSE
+	setmetatile 40, 31, METATILE_General_Grass, FALSE
 # 488 "data/maps/PetalburgWoods/scripts.pory"
-	setmetatile 43, 31, METATILE_General_Grass, FALSE
+	setmetatile 41, 31, METATILE_General_Grass, FALSE
 	return
 

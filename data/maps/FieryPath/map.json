@@ -122,7 +122,7 @@
   "warp_events": [
     {
       "x": 26,
-      "y": 36,
+      "y": 35,
       "elevation": 3,
       "dest_map": "MAP_ROUTE112",
       "dest_warp_id": "4"

@@ -26,7 +26,7 @@
     },
     {
       "x": 10,
-      "y": 75,
+      "y": 61,
       "elevation": 3,
       "dest_map": "MAP_NAVEL_ROCK_B1F",
       "dest_warp_id": "1"

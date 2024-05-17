@@ -476,16 +476,16 @@ PetalburgWoods_Text_TrainerTipsPP:
 mapscripts PetalburgWoods_MapScripts {
 	MAP_SCRIPT_ON_LOAD {
 		if (var(VAR_SKY_PILLAR_STATE) >= 2) {
-			setmetatile (42, 27, METATILE_General_TallGrass, FALSE)
-			setmetatile (43, 27, METATILE_General_TallGrass, FALSE)
-			setmetatile (42, 28, METATILE_General_Grass, FALSE)
-			setmetatile (43, 28, METATILE_General_Grass, FALSE)
-			setmetatile (42, 29, METATILE_General_Grass, FALSE)
-			setmetatile (43, 29, METATILE_General_Grass, FALSE)
-			setmetatile (42, 30, METATILE_General_Grass, FALSE)
-			setmetatile (43, 30, METATILE_General_Grass, FALSE)
-			setmetatile (42, 31, METATILE_General_Grass, FALSE)
-			setmetatile (43, 31, METATILE_General_Grass, FALSE)
+			setmetatile (40, 27, METATILE_General_TallGrass, FALSE)
+			setmetatile (41, 27, METATILE_General_TallGrass, FALSE)
+			setmetatile (40, 28, METATILE_General_Grass, FALSE)
+			setmetatile (41, 28, METATILE_General_Grass, FALSE)
+			setmetatile (40, 29, METATILE_General_Grass, FALSE)
+			setmetatile (41, 29, METATILE_General_Grass, FALSE)
+			setmetatile (40, 30, METATILE_General_Grass, FALSE)
+			setmetatile (41, 30, METATILE_General_Grass, FALSE)
+			setmetatile (40, 31, METATILE_General_Grass, FALSE)
+			setmetatile (41, 31, METATILE_General_Grass, FALSE)
 		}
 	}
 }

@@ -9143,7 +9143,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
         break;
     case HOLD_EFFECT_PUNCHING_GLOVE:
         if (gMovesInfo[move].punchingMove)
-           modifier = uq4_12_multiply(modifier, UQ_4_12(1.1));
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;
     }
     return uq4_12_multiply_by_int_half_down(modifier, basePower);

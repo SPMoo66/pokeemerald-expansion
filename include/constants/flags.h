@@ -1178,19 +1178,19 @@
 #define FLAG_ITEM_MT_PYRE_4F_NUGGET                                 0x46A
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_WEST_STAR_PIECE                 0x46B
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_NUGGET                           0x46C
-#define FLAG_ITEM_MOSSDEEP_STEVENS_HOUSE_HM08                       0x46D // Unused Flag, leftover from R/S. HM08 is given to the player directly in Emerald
+#define FLAG_CHALLENGE_BALL_ROUTE_109                               0x46D
 #define FLAG_ITEM_ROUTE_119_NUGGET                                  0x46E
 #define FLAG_ITEM_ROUTE_104_PRETTY_FEATHER                          0x46F
 #define FLAG_ITEM_SCORCHED_SLAB_B1F_COMET_SHARD                     0x470
 #define FLAG_ITEM_ROUTE_103_PEARL                                   0x471
-#define FLAG_CHALLENGE_BALL_ROUTE_106                               0x472 // Unused Flag
+#define FLAG_CHALLENGE_BALL_ROUTE_106                               0x472
 #define FLAG_ITEM_ROUTE_108_STAR_PIECE                              0x473
 #define FLAG_ITEM_ROUTE_109_STARDUST                                0x474
 #define FLAG_CHALLENGE_BALL_ROUTE_110_2                             0x475
 #define FLAG_ITEM_ROUTE_111_STARDUST_2                              0x476
 #define FLAG_ITEM_ROUTE_113_STAR_PIECE                              0x477
 #define FLAG_ITEM_ROUTE_115_BIG_PEARL                               0x478
-#define FLAG_UNUSED_0x479                                           0x479 // Unused Flag
+#define FLAG_CHALLENGE_BALL_ROUTE_112                               0x479
 #define FLAG_ITEM_ROUTE_116_PRETTY_FEATHER_3                        0x47A
 #define FLAG_ITEM_ROUTE_119_BOTTLE_CAP                              0x47B
 #define FLAG_ITEM_ROUTE_120_BIG_PEARL                               0x47C

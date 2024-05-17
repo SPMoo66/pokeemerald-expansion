@@ -161,6 +161,8 @@ Debug_EventScript_Script_6::
 	end
 
 Debug_EventScript_Script_7::
+    cleartrainerflag TRAINER_CINDY_1
+    trainerbattle_single TRAINER_CINDY_1, gText_Blank, gText_Blank
 	end
 
 Debug_EventScript_Script_8::

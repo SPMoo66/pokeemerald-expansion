@@ -4522,7 +4522,7 @@ static void PrintHMMovesCantBeForgotten(void)
 {
     u8 windowId = AddWindowFromTemplateList(sPageMovesTemplate, PSS_DATA_WINDOW_MOVE_DESCRIPTION);
     FillWindowPixelBuffer(windowId, PIXEL_FILL(0));
-    PrintTextOnWindow_BW_Font(windowId, gText_HMMovesCantBeForgotten2, 2, 0, 0, 0);
+    PrintTextOnWindow_BW_Font(windowId, gText_Blank, 2, 0, 0, 0);
 }
 
 static void ShowCategoryIcon(u16 move)

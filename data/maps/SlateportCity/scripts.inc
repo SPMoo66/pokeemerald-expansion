@@ -560,7 +560,7 @@ SlateportCity_EventScript_SweetsClerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemartdecoration SlateportCity_PokemartSweets
+	pokemart SlateportCity_PokemartSweets
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
@@ -574,6 +574,7 @@ SlateportCity_PokemartSweets:
 	.2byte ITEM_FLOWER_SWEET
 	.2byte ITEM_STAR_SWEET
 	.2byte ITEM_RIBBON_SWEET
+	.2byte ITEM_NONE
 	release
 	end
 

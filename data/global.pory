@@ -420,11 +420,11 @@ script Mart_EventScript_EvoClerk {
 		msgbox(gText_HowMayIServeYou)
 		waitmessage
 		dynmultipush("Stones", 0)
-		dynmultipush("Other", 0)
-		if (var(VAR_RESULT) < 5) {
-			dynmultipush("Extra", 0)
+		dynmultipush("Other", 1)
+		if (var(VAR_TEMP_0) >= 5) {
+			dynmultipush("Extra", 2)
 		}
-		dynmultistack(0, 0, FALSE, 4, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+		dynmultistack(0, 0, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
 		if (var(VAR_RESULT) == 0) {
 			switch (var(VAR_TEMP_0)) {
 				case 0:
@@ -472,7 +472,7 @@ script Mart_EventScript_EvoClerk {
 					pokemart(EvoExtraPokemart6)
 				case 7:
 				case 8:
-					pokemart(EvoExtraPokemart6)
+					pokemart(EvoExtraPokemart7)
 				default:
 					break
 			}

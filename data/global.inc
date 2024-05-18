@@ -860,13 +860,13 @@ Mart_EventScript_EvoClerk::
 # 422 "data/global.pory"
 	dynmultipush Mart_EventScript_EvoClerk_Text_1, 0
 # 423 "data/global.pory"
-	dynmultipush Mart_EventScript_EvoClerk_Text_2, 0
+	dynmultipush Mart_EventScript_EvoClerk_Text_2, 1
 # 424 "data/global.pory"
-	compare VAR_RESULT, 5
-	goto_if_lt Mart_EventScript_EvoClerk_6
+	compare VAR_TEMP_0, 5
+	goto_if_ge Mart_EventScript_EvoClerk_6
 Mart_EventScript_EvoClerk_5:
 # 427 "data/global.pory"
-	dynmultistack 0, 0, FALSE, 4, FALSE, 0, DYN_MULTICHOICE_CB_NONE
+	dynmultistack 0, 0, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE
 # 428 "data/global.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Mart_EventScript_EvoClerk_9
@@ -891,7 +891,7 @@ Mart_EventScript_EvoClerk_2:
 
 Mart_EventScript_EvoClerk_6:
 # 425 "data/global.pory"
-	dynmultipush Mart_EventScript_EvoClerk_Text_3, 0
+	dynmultipush Mart_EventScript_EvoClerk_Text_3, 2
 	goto Mart_EventScript_EvoClerk_5
 
 Mart_EventScript_EvoClerk_9:
@@ -995,7 +995,7 @@ Mart_EventScript_EvoClerk_25:
 
 Mart_EventScript_EvoClerk_26:
 # 475 "data/global.pory"
-	pokemart EvoExtraPokemart6
+	pokemart EvoExtraPokemart7
 	goto Mart_EventScript_EvoClerk_8
 
 

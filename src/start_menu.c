@@ -127,10 +127,6 @@ void ShowThrobber(void)
     spriteId = CreateSprite(&sSpriteTemplate_Throbber, 217, 123, 2);
 };
 
-#if (DECAP_ENABLED) && (DECAP_MIRRORING) && !(DECAP_START_MENU)
-#define AddTextPrinterParameterized (AddTextPrinterFixedCaseParameterized)
-#endif
-
 // Menu actions
 enum
 {

@@ -211,9 +211,11 @@ script Route114_EventScript_ChallengeBall1 {
 		setflag (FLAG_SMART_WILD_AI)
 		setweather (WEATHER_RAIN)
 		doweather
+		delay (60)
 		setwildbattle (SPECIES_LUDICOLO, 31, ITEM_NONE, 1, SPECIES_ARMALDO, 31, ITEM_NONE, 2, MOVE_FAKE_OUT, MOVE_MEGA_DRAIN, MOVE_ASTONISH, MOVE_ENCORE, MOVE_X_SCISSOR, MOVE_ROCK_TOMB, MOVE_SHADOW_CLAW, MOVE_BODY_SLAM)
 		dowildbattle
 		resetweather
+		delay (60)
 		clearflag (FLAG_NO_CATCHING)
 		clearflag (FLAG_NO_RUNNING)
 		clearflag (FLAG_SMART_WILD_AI)

@@ -28,7 +28,7 @@ static const struct TrainerMon sParty_StevenPartnerMossdeep[] = {
 static const struct TrainerMon sParty_MayPartnerMeteorFalls[] = {
     {
         .species = SPECIES_TRANQUILL,
-        .lvl = 26,
+        .lvl = 27,
         .nature = NATURE_JOLLY,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 4, 252),
@@ -36,7 +36,7 @@ static const struct TrainerMon sParty_MayPartnerMeteorFalls[] = {
     },
     {
         .species = SPECIES_GOTHORITA,
-        .lvl = 26,
+        .lvl = 27,
         .nature = NATURE_CALM,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(244, 0, 172, 4, 76, 12),
@@ -44,7 +44,7 @@ static const struct TrainerMon sParty_MayPartnerMeteorFalls[] = {
     },
     {
         .species = SPECIES_BUNEARY,
-        .lvl = 26,
+        .lvl = 27,
         .nature = NATURE_JOLLY,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 6, 252),
@@ -55,7 +55,7 @@ static const struct TrainerMon sParty_MayPartnerMeteorFalls[] = {
 static const struct TrainerMon sParty_BrendanPartnerMeteorFalls[] = {
     {
         .species = SPECIES_TRANQUILL,
-        .lvl = 26,
+        .lvl = 27,
         .nature = NATURE_JOLLY,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 4, 252),
@@ -63,7 +63,7 @@ static const struct TrainerMon sParty_BrendanPartnerMeteorFalls[] = {
     },
     {
         .species = SPECIES_MORGREM,
-        .lvl = 26,
+        .lvl = 27,
         .nature = NATURE_BOLD,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(244, 0, 188, 0, 76, 0),
@@ -71,7 +71,7 @@ static const struct TrainerMon sParty_BrendanPartnerMeteorFalls[] = {
     },
     {
         .species = SPECIES_MUNCHLAX,
-        .lvl = 26,
+        .lvl = 27,
         .nature = NATURE_JOLLY,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 6, 252),

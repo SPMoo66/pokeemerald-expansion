@@ -7108,30 +7108,30 @@ static const struct TrainerMon sParty_MiuAndYuki[] = {
 
 static const struct TrainerMon sParty_MagmaGruntMeteorFalls[] = {
     {
-    .lvl = 24,
+    .lvl = 26,
     .species = SPECIES_BLITZLE,
     },
     {
-    .lvl = 24,
+    .lvl = 26,
     .species = SPECIES_DRIFLOON_EMERIBIAN,
     },
     {
-    .lvl = 24,
+    .lvl = 27,
     .species = SPECIES_PAWMO,
     }
 };
 
 static const struct TrainerMon sParty_CourtneyMeteorFalls[] = {
     {
-    .lvl = 25,
+    .lvl = 27,
     .species = SPECIES_KIRLIA_EMERIBIAN,
     },
     {
-    .lvl = 25,
+    .lvl = 27,
     .species = SPECIES_ELEKID,
     },
     {
-    .lvl = 25,
+    .lvl = 28,
     .species = SPECIES_MAGBY,
     }
 };

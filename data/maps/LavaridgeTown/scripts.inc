@@ -113,7 +113,7 @@ LavaridgeTown_EventScript_RivalExitHerbShop::
 	opendoor 12, 15
 	waitdooranim
 	addobject LOCALID_RIVAL
-	applymovement LOCALID_RIVAL, LavaridgeTown_Movement_RivalExitHerbShop
+	applymovement LOCALID_RIVAL, Common_Movement_WalkDown
 	waitmovement 0
 	closedoor 12, 15
 	waitdooranim
@@ -193,10 +193,6 @@ LavaridgeTown_Movement_RivalApproachPlayer1:
 	walk_left
 	walk_left
 	walk_up
-	step_end
-
-LavaridgeTown_Movement_RivalExitHerbShop:
-	walk_down
 	step_end
 
 LavaridgeTown_EventScript_HotSpringsTrigger::

@@ -412,7 +412,7 @@ Route114_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq Route114_EventScript_ChallengeBall1_2
 Route114_EventScript_ChallengeBall1_1:
-# 222 "data/maps/Route114/scripts.pory"
+# 224 "data/maps/Route114/scripts.pory"
 	release
 	return
 
@@ -428,18 +428,22 @@ Route114_EventScript_ChallengeBall1_2:
 # 213 "data/maps/Route114/scripts.pory"
 	doweather
 # 214 "data/maps/Route114/scripts.pory"
-	setwildbattle SPECIES_LUDICOLO, 31, ITEM_NONE, 1, SPECIES_ARMALDO, 31, ITEM_NONE, 2, MOVE_FAKE_OUT, MOVE_MEGA_DRAIN, MOVE_ASTONISH, MOVE_ENCORE, MOVE_X_SCISSOR, MOVE_ROCK_TOMB, MOVE_SHADOW_CLAW, MOVE_BODY_SLAM
+	delay 60
 # 215 "data/maps/Route114/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_LUDICOLO, 31, ITEM_NONE, 1, SPECIES_ARMALDO, 31, ITEM_NONE, 2, MOVE_FAKE_OUT, MOVE_MEGA_DRAIN, MOVE_ASTONISH, MOVE_ENCORE, MOVE_X_SCISSOR, MOVE_ROCK_TOMB, MOVE_SHADOW_CLAW, MOVE_BODY_SLAM
 # 216 "data/maps/Route114/scripts.pory"
-	resetweather
+	dowildbattle
 # 217 "data/maps/Route114/scripts.pory"
-	clearflag FLAG_NO_CATCHING
+	resetweather
 # 218 "data/maps/Route114/scripts.pory"
-	clearflag FLAG_NO_RUNNING
+	delay 60
 # 219 "data/maps/Route114/scripts.pory"
-	clearflag FLAG_SMART_WILD_AI
+	clearflag FLAG_NO_CATCHING
 # 220 "data/maps/Route114/scripts.pory"
+	clearflag FLAG_NO_RUNNING
+# 221 "data/maps/Route114/scripts.pory"
+	clearflag FLAG_SMART_WILD_AI
+# 222 "data/maps/Route114/scripts.pory"
 	finditem ITEM_SUPER_ROD, 1
 	goto Route114_EventScript_ChallengeBall1_1
 

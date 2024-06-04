@@ -626,7 +626,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route111_EventScript_RockSmashTipFatMan",
-      "flag": "FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY"
+      "flag": "FLAG_RECEIVED_HM_ROCK_SMASH"
     }
   ],
   "warp_events": [

@@ -537,27 +537,27 @@ Route110_TrickHousePuzzle5_EventScript_MechadollWalkRight5::
 	return
 
 Route110_TrickHousePuzzle5_EventScript_Mechadoll1WalkLeft1::
-	applymovement LOCALID_MECHADOLL_1, Route110_TrickHousePuzzle5_Movement_WalkLeft1
+	applymovement LOCALID_MECHADOLL_1, Common_Movement_WalkLeft
 	waitmovement 0
 	return
 
 Route110_TrickHousePuzzle5_EventScript_Mechadoll2WalkLeft1::
-	applymovement LOCALID_MECHADOLL_2, Route110_TrickHousePuzzle5_Movement_WalkLeft1
+	applymovement LOCALID_MECHADOLL_2, Common_Movement_WalkLeft
 	waitmovement 0
 	return
 
 Route110_TrickHousePuzzle5_EventScript_Mechadoll3WalkLeft1::
-	applymovement LOCALID_MECHADOLL_3, Route110_TrickHousePuzzle5_Movement_WalkLeft1
+	applymovement LOCALID_MECHADOLL_3, Common_Movement_WalkLeft
 	waitmovement 0
 	return
 
 Route110_TrickHousePuzzle5_EventScript_Mechadoll4WalkLeft1::
-	applymovement LOCALID_MECHADOLL_4, Route110_TrickHousePuzzle5_Movement_WalkLeft1
+	applymovement LOCALID_MECHADOLL_4, Common_Movement_WalkLeft
 	waitmovement 0
 	return
 
 Route110_TrickHousePuzzle5_EventScript_Mechadoll5WalkLeft1::
-	applymovement LOCALID_MECHADOLL_5, Route110_TrickHousePuzzle5_Movement_WalkLeft1
+	applymovement LOCALID_MECHADOLL_5, Common_Movement_WalkLeft
 	waitmovement 0
 	return
 
@@ -662,27 +662,27 @@ Route110_TrickHousePuzzle5_EventScript_Mechadoll5WalkLeft5::
 	return
 
 Route110_TrickHousePuzzle5_EventScript_Mechadoll1WalkRight1::
-	applymovement LOCALID_MECHADOLL_1, Route110_TrickHousePuzzle5_Movement_WalkRight1
+	applymovement LOCALID_MECHADOLL_1, Common_Movement_WalkRight
 	waitmovement 0
 	return
 
 Route110_TrickHousePuzzle5_EventScript_Mechadoll2WalkRight1::
-	applymovement LOCALID_MECHADOLL_2, Route110_TrickHousePuzzle5_Movement_WalkRight1
+	applymovement LOCALID_MECHADOLL_2, Common_Movement_WalkRight
 	waitmovement 0
 	return
 
 Route110_TrickHousePuzzle5_EventScript_Mechadoll3WalkRight1::
-	applymovement LOCALID_MECHADOLL_3, Route110_TrickHousePuzzle5_Movement_WalkRight1
+	applymovement LOCALID_MECHADOLL_3, Common_Movement_WalkRight
 	waitmovement 0
 	return
 
 Route110_TrickHousePuzzle5_EventScript_Mechadoll4WalkRight1::
-	applymovement LOCALID_MECHADOLL_4, Route110_TrickHousePuzzle5_Movement_WalkRight1
+	applymovement LOCALID_MECHADOLL_4, Common_Movement_WalkRight
 	waitmovement 0
 	return
 
 Route110_TrickHousePuzzle5_EventScript_Mechadoll5WalkRight1::
-	applymovement LOCALID_MECHADOLL_5, Route110_TrickHousePuzzle5_Movement_WalkRight1
+	applymovement LOCALID_MECHADOLL_5, Common_Movement_WalkRight
 	waitmovement 0
 	return
 
@@ -786,10 +786,6 @@ Route110_TrickHousePuzzle5_EventScript_Mechadoll5WalkRight5::
 	waitmovement 0
 	return
 
-Route110_TrickHousePuzzle5_Movement_WalkLeft1:
-	walk_left
-	step_end
-
 Route110_TrickHousePuzzle5_Movement_WalkLeft2:
 	walk_left
 	walk_left
@@ -814,10 +810,6 @@ Route110_TrickHousePuzzle5_Movement_WalkLeft5:
 	walk_left
 	walk_left
 	walk_left
-	step_end
-
-Route110_TrickHousePuzzle5_Movement_WalkRight1:
-	walk_right
 	step_end
 
 Route110_TrickHousePuzzle5_Movement_WalkRight2:

@@ -569,7 +569,7 @@ mart EvoExtraPokemart7 {
 script Common_EventScript_MoveReminder {
 	lock
 	faceplayer
-	if (flag(FLAG_TEMP_1) == false) {
+	if (!flag(FLAG_TEMP_1)) {
 		msgbox(format("I'm the Move Reminder.\pI know all the moves that Pokémon learn--every one of them--and I can teach Pokémon those moves.\pI can teach a move to a Pokémon of yours if you'd like."))
 	}
 	setflag (FLAG_TEMP_1)

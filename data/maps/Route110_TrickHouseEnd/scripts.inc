@@ -234,16 +234,12 @@ Route110_TrickHouseEnd_EventScript_TrickMasterExitTrigger::
 	waitmovement 0
 	msgbox Route110_TrickHouseEnd_Text_YoureIgnoringMe, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Route110_TrickHouseEnd_Movement_KeepPlayerInRoom
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
 	waitmovement 0
 	delay 4
 	turnobject LOCALID_TRICK_MASTER, DIR_EAST
 	releaseall
 	end
-
-Route110_TrickHouseEnd_Movement_KeepPlayerInRoom:
-	walk_down
-	step_end
 
 Route110_TrickHouseEnd_Movement_TrickMasterSurprise:
 	jump_in_place_left

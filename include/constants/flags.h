@@ -226,7 +226,7 @@
 #define FLAG_CAUGHT_LATIAS_AND_LATIOS        0xCE
 #define FLAG_MET_ARCHIE_METEOR_FALLS         0xCF
 #define FLAG_GOT_BASEMENT_KEY_FROM_WATTSON   0xD0
-#define FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON 0xD1
+#define FLAG_GOT_REWARD_FROM_WATTSON         0xD1
 #define FLAG_FAN_CLUB_STRENGTH_SHARED        0xD2 // Set when you rate the strength of another trainer in Lilycove's Trainer Fan Club.
 #define FLAG_DEFEATED_RIVAL_RUSTBORO         0xD3
 #define FLAG_RECEIVED_RED_OR_BLUE_ORB        0xD4
@@ -886,7 +886,7 @@
 #define FLAG_HIDE_SLATEPORT_CITY_CAPTAIN_STERN                      0x348
 #define FLAG_HIDE_SLATEPORT_CITY_HARBOR_CAPTAIN_STERN               0x349
 #define FLAG_HIDE_BATTLE_FRONTIER_SUDOWOODO                         0x34A
-#define FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY                      0x34B
+#define FLAG_UNUSED_0x34B                                           0x34B // Unused, was a duplicate for Rock Smash scripting
 #define FLAG_HIDE_RUSTBORO_CITY_SCIENTIST                           0x34C
 #define FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_GRUNT                  0x34D
 #define FLAG_HIDE_SLATEPORT_CITY_HARBOR_ARCHIE                      0x34E

@@ -525,7 +525,7 @@ mart EvoOtherPokemart4 {
 mart EvoOtherPokemart5 {
 	ITEM_LINKING_CORD
 	ITEM_KINGS_ROCK
-	ITEM_METAL_COAT
+	ITEM_METAL_ALLOY
 	ITEM_BLACK_AUGURITE
 	ITEM_DRAGON_SCALE
 	ITEM_UPGRADE
@@ -727,4 +727,36 @@ mart AbilityNaturePokemart {
 	ITEM_LONELY_MINT
 	ITEM_ADAMANT_MINT
 	ITEM_NAUGHTY_MINT
+}
+
+script Mart_EventScript_TypeEnhancingHeldItems {
+	lock
+	faceplayer
+	msgbox(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(TypeEnhancingHeldItemsPokemart)
+	msgbox(gText_PleaseComeAgain)
+	release
+	end
+}
+
+mart TypeEnhancingHeldItemsPokemart {
+	ITEM_SILK_SCARF
+	ITEM_CHARCOAL
+	ITEM_MYSTIC_WATER
+	ITEM_MAGNET
+	ITEM_MIRACLE_SEED
+	ITEM_NEVER_MELT_ICE
+	ITEM_BLACK_BELT
+	ITEM_POISON_BARB
+	ITEM_SOFT_SAND
+	ITEM_SHARP_BEAK
+	ITEM_TWISTED_SPOON
+	ITEM_SILVER_POWDER
+	ITEM_HARD_STONE
+	ITEM_SPELL_TAG
+	ITEM_DRAGON_FANG
+	ITEM_BLACK_GLASSES
+	ITEM_METAL_COAT
+	ITEM_FAIRY_FEATHER
 }

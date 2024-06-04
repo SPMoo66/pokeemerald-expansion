@@ -10393,7 +10393,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Onix)
         .levelUpLearnset = sOnixLevelUpLearnset,
         .teachableLearnset = sOnixTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_METAL_COAT, SPECIES_STEELIX}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_METAL_ALLOY, SPECIES_STEELIX}),
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -13281,7 +13281,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sScytherLevelUpLearnset,
         .teachableLearnset = sScytherTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_BLACK_AUGURITE, SPECIES_KLEAVOR},
-                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_SCIZOR}),
+                                {EVO_ITEM, ITEM_METAL_ALLOY, SPECIES_SCIZOR}),
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -14800,7 +14800,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
                                 {EVO_MOVE, MOVE_TOXIC, SPECIES_CONTAGEON},
                                 {EVO_ITEM, ITEM_SHINY_STONE, SPECIES_LANEON},
                                 {EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_SCALEON},
-                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_TITANEON}),
+                                {EVO_ITEM, ITEM_METAL_ALLOY, SPECIES_TITANEON}),
     },
 
 #if P_GIGANTAMAX_FORMS

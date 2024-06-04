@@ -6196,7 +6196,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .isMythical = TRUE,
         .levelUpLearnset = sMeltanLevelUpLearnset,
         .teachableLearnset = sMeltanTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_METAL_COAT, SPECIES_MELMETAL}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_METAL_ALLOY, SPECIES_MELMETAL}),
     },
 
     [SPECIES_MELMETAL] =

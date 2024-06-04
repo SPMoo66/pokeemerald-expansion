@@ -9,7 +9,7 @@ Route109_EventScript_StartDepartForDewford::
 	call EventScript_BackupMrBrineyLocation
 	setobjectsubpriority LOCALID_BRINEY_R109, MAP_ROUTE109, 0
 	setobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE109, 0
-	applymovement LOCALID_BRINEY_R109, Route109_Movement_BrineyEnterBoat
+	applymovement LOCALID_BRINEY_R109, Common_Movement_WalkDown
 	waitmovement 0
 	removeobject LOCALID_BRINEY_R109
 	switch VAR_FACING
@@ -19,7 +19,7 @@ Route109_EventScript_StartDepartForDewford::
 	end
 
 Route109_EventScript_EnterBoatSouth::
-	applymovement OBJ_EVENT_ID_PLAYER, Route109_Movement_PlayerEnterBoatSouth
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown2
 	waitmovement 0
 	goto Route109_EventScript_DoSailToDewford
 	end
@@ -242,11 +242,6 @@ Route109_Movement_SailToDewford:
 	walk_in_place_faster_down
 	step_end
 
-Route109_Movement_PlayerEnterBoatSouth:
-	walk_down
-	walk_down
-	step_end
-
 Route109_Movement_PlayerExitBoat:
 	walk_down
 	walk_down
@@ -261,10 +256,6 @@ Route109_Movement_PlayerEnterBoatEast:
 
 Route109_Movement_PlayerEnterBoatWest:
 	walk_left
-	walk_down
-	step_end
-
-Route109_Movement_BrineyEnterBoat:
 	walk_down
 	step_end
 

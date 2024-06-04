@@ -460,7 +460,7 @@ SlateportCity_EventScript_AquaGrunt9::
 	closemessage
 	applymovement LOCALID_GRUNT_9, Common_Movement_FaceOriginalDirection
 	waitmovement 0
-	applymovement LOCALID_GRUNT_9, SlateportCity_Movement_DelayAquaGrunt
+	applymovement LOCALID_GRUNT_9, Common_Movement_Delay32
 	waitmovement 0
 	applymovement LOCALID_GRUNT_9, Common_Movement_FacePlayer
 	waitmovement 0
@@ -468,23 +468,18 @@ SlateportCity_EventScript_AquaGrunt9::
 	closemessage
 	applymovement LOCALID_GRUNT_9, Common_Movement_FaceOriginalDirection
 	waitmovement 0
-	applymovement LOCALID_GRUNT_9, SlateportCity_Movement_DelayAquaGrunt
+	applymovement LOCALID_GRUNT_9, Common_Movement_Delay32
 	waitmovement 0
 	msgbox SlateportCity_Text_SaysSomethingLikeSeaIsEndless, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_GRUNT_9, Common_Movement_FacePlayer
 	waitmovement 0
-	applymovement LOCALID_GRUNT_9, SlateportCity_Movement_DelayAquaGrunt
+	applymovement LOCALID_GRUNT_9, Common_Movement_Delay32
 	waitmovement 0
 	applymovement LOCALID_GRUNT_9, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
-
-SlateportCity_Movement_DelayAquaGrunt:
-	delay_16
-	delay_16
-	step_end
 
 SlateportCity_EventScript_AquaGrunt10::
 	msgbox SlateportCity_Text_ShouldveBroughtMyGameBoy, MSGBOX_SIGN

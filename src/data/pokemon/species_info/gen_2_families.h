@@ -2077,7 +2077,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sMarillLevelUpLearnset,
         .teachableLearnset = sMarillTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_AZUMARILL},
-                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_APIMARILL}),
+                                {EVO_ITEM, ITEM_METAL_ALLOY, SPECIES_APIMARILL}),
     },
 
     [SPECIES_AZUMARILL] =
@@ -5267,7 +5267,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sSlugmaLevelUpLearnset,
         .teachableLearnset = sSlugmaTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_MAGCARGO},
-                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_MAGCARGO_EMERIBIAN}),
+                                {EVO_ITEM, ITEM_METAL_ALLOY, SPECIES_MAGCARGO_EMERIBIAN}),
     },
 
     [SPECIES_MAGCARGO] =

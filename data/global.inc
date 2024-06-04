@@ -1081,7 +1081,7 @@ EvoOtherPokemart5:
 # 527 "data/global.pory"
 	.2byte ITEM_KINGS_ROCK
 # 528 "data/global.pory"
-	.2byte ITEM_METAL_COAT
+	.2byte ITEM_METAL_ALLOY
 # 529 "data/global.pory"
 	.2byte ITEM_BLACK_AUGURITE
 # 530 "data/global.pory"
@@ -1458,6 +1458,65 @@ AbilityNaturePokemart:
 	.2byte ITEM_ADAMANT_MINT
 # 729 "data/global.pory"
 	.2byte ITEM_NAUGHTY_MINT
+	.2byte ITEM_NONE
+
+Mart_EventScript_TypeEnhancingHeldItems::
+# 733 "data/global.pory"
+	lock
+# 734 "data/global.pory"
+	faceplayer
+# 735 "data/global.pory"
+	msgbox gText_HowMayIServeYou
+# 736 "data/global.pory"
+	waitmessage
+# 737 "data/global.pory"
+	pokemart TypeEnhancingHeldItemsPokemart
+# 738 "data/global.pory"
+	msgbox gText_PleaseComeAgain
+# 739 "data/global.pory"
+	release
+	end
+
+
+	.align 2
+# 743 "data/global.pory"
+TypeEnhancingHeldItemsPokemart:
+# 744 "data/global.pory"
+	.2byte ITEM_SILK_SCARF
+# 745 "data/global.pory"
+	.2byte ITEM_CHARCOAL
+# 746 "data/global.pory"
+	.2byte ITEM_MYSTIC_WATER
+# 747 "data/global.pory"
+	.2byte ITEM_MAGNET
+# 748 "data/global.pory"
+	.2byte ITEM_MIRACLE_SEED
+# 749 "data/global.pory"
+	.2byte ITEM_NEVER_MELT_ICE
+# 750 "data/global.pory"
+	.2byte ITEM_BLACK_BELT
+# 751 "data/global.pory"
+	.2byte ITEM_POISON_BARB
+# 752 "data/global.pory"
+	.2byte ITEM_SOFT_SAND
+# 753 "data/global.pory"
+	.2byte ITEM_SHARP_BEAK
+# 754 "data/global.pory"
+	.2byte ITEM_TWISTED_SPOON
+# 755 "data/global.pory"
+	.2byte ITEM_SILVER_POWDER
+# 756 "data/global.pory"
+	.2byte ITEM_HARD_STONE
+# 757 "data/global.pory"
+	.2byte ITEM_SPELL_TAG
+# 758 "data/global.pory"
+	.2byte ITEM_DRAGON_FANG
+# 759 "data/global.pory"
+	.2byte ITEM_BLACK_GLASSES
+# 760 "data/global.pory"
+	.2byte ITEM_METAL_COAT
+# 761 "data/global.pory"
+	.2byte ITEM_FAIRY_FEATHER
 	.2byte ITEM_NONE
 
 Mart_EventScript_TMClerk_Text_0:

@@ -97,8 +97,8 @@ VerdanturfTown_WandasHouse_Text_StrongerSpeech:
 VerdanturfTown_WandasHouse_Text_StrongerSpeechShort:
 	.string "Wally: Please watch me, {PLAYER}.\n"
 	.string "I'm going to get stronger than you.\p"
-	.string "When I do, I'm going to challenge you\n"
-	.string "to another battle.$"
+	.string "Once I am, I hope I can help you\n"
+	.string "like you've helped me.$"
 
 VerdanturfTown_WandasHouse_Text_WallysNextDoor:
 	.string "Uncle: Oh! {PLAYER}{KUN}!\n"

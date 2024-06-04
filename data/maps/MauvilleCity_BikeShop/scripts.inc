@@ -333,13 +333,13 @@ MauvilleCity_BikeShop_EventScript_Rydel_5:
 
 MauvilleCity_BikeShop_EventScript_Rydel_8:
 # 167 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	setflag FLAG_RECEIVED_BIKE
-# 168 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	msgbox MauvilleCity_BikeShop_EventScript_Rydel_Text_3
-# 169 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+# 168 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	giveitem ITEM_ACRO_BIKE
-# 170 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+# 169 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	giveitem ITEM_MACH_BIKE
+# 170 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	setflag FLAG_RECEIVED_BIKE
 # 171 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	msgbox MauvilleCity_BikeShop_EventScript_Rydel_Text_4
 	goto MauvilleCity_BikeShop_EventScript_Rydel_7
@@ -360,7 +360,7 @@ MauvilleCity_BikeShop_EventScript_Rydel_Text_2:
 	.string "Rydel: Your Running Shoes…\nThey're awfully filthy.\pDid you come from far away?$"
 
 MauvilleCity_BikeShop_EventScript_Rydel_Text_3:
-# 168 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+# 167 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	.string "Rydel: Hm, hm… … … … …\pYou're saying that you came all this\nway from Littleroot?\pMy goodness!\nThat's ridiculously far!\pIf you had one of my Bikes, you could\ngo anywhere easily while feeling the\lgentle caress of the wind!\pI'll tell you what!\nI'll give you a Bike!\pOh, wait a second!\pI forgot to tell you that there are\ntwo kinds of Bikes!\pThey are the Mach Bike and\nthe Acro Bike!\pThe Mach Bike is for cyclists who want\nto feel the wind with their bodies!\pAnd an Acro Bike is for those who\nprefer technical rides!\pI'm a real sweetheart, so you can have both Bikes!$"
 
 MauvilleCity_BikeShop_EventScript_Rydel_Text_4:

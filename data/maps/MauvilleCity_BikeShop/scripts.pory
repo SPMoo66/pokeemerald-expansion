@@ -164,10 +164,10 @@ script MauvilleCity_BikeShop_EventScript_Rydel {
 	msgbox ("Rydel: Your Running Shoes…\nThey're awfully filthy.\pDid you come from far away?", MSGBOX_YESNO)
 	if (var(VAR_RESULT) == YES)
 	{
-		setflag (FLAG_RECEIVED_BIKE)
 		msgbox ("Rydel: Hm, hm… … … … …\pYou're saying that you came all this\nway from Littleroot?\pMy goodness!\nThat's ridiculously far!\pIf you had one of my Bikes, you could\ngo anywhere easily while feeling the\lgentle caress of the wind!\pI'll tell you what!\nI'll give you a Bike!\pOh, wait a second!\pI forgot to tell you that there are\ntwo kinds of Bikes!\pThey are the Mach Bike and\nthe Acro Bike!\pThe Mach Bike is for cyclists who want\nto feel the wind with their bodies!\pAnd an Acro Bike is for those who\nprefer technical rides!\pI'm a real sweetheart, so you can have both Bikes!")
 		giveitem (ITEM_ACRO_BIKE)
 		giveitem (ITEM_MACH_BIKE)
+		setflag (FLAG_RECEIVED_BIKE)
 		msgbox (format("Rydel: Enjoy! And if you need any help, the books in the back should be useful."))
 	}
 	else

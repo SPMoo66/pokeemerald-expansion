@@ -191,40 +191,24 @@ Route111_EventScript_PreventRouteAccess::
 	end
 
 Route111_EventScript_PushUpFromRoute::
-	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_PushUpFromRoute
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
 	waitmovement 0
 	return
 
 Route111_EventScript_PushDownFromRoute::
-	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_PushDownFromRoute
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
 	waitmovement 0
 	return
 
 Route111_EventScript_PushLeftFromRoute::
-	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_PushLeftFromRoute
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft
 	waitmovement 0
 	return
 
 Route111_EventScript_PushRightFromRoute::
-	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_PushRightFromRoute
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight
 	waitmovement 0
 	return
-
-Route111_Movement_PushUpFromRoute:
-	walk_up
-	step_end
-
-Route111_Movement_PushDownFromRoute:
-	walk_down
-	step_end
-
-Route111_Movement_PushLeftFromRoute:
-	walk_left
-	step_end
-
-Route111_Movement_PushRightFromRoute:
-	walk_right
-	step_end
 
 Route111_EventScript_SunTrigger::
 	setweather WEATHER_SUNNY
@@ -265,7 +249,7 @@ Route111_EventScript_BattleWinstrates::
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
 	addobject LOCALID_VICTORIA
-	applymovement LOCALID_VICTORIA, Route111_Movement_WinstrateExitHouse
+	applymovement LOCALID_VICTORIA, Common_Movement_WalkDown
 	waitmovement 0
 	call Route111_EventScript_CloseWinstrateDoor
 	msgbox Route111_Text_VictoriaIntro, MSGBOX_DEFAULT
@@ -283,7 +267,7 @@ Route111_EventScript_BattleWinstrates::
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
 	addobject LOCALID_VIVI
-	applymovement LOCALID_VIVI, Route111_Movement_WinstrateExitHouse
+	applymovement LOCALID_VIVI, Common_Movement_WalkDown
 	waitmovement 0
 	call Route111_EventScript_CloseWinstrateDoor
 	msgbox Route111_Text_ViviIntro, MSGBOX_DEFAULT
@@ -301,7 +285,7 @@ Route111_EventScript_BattleWinstrates::
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
 	addobject LOCALID_VICKY
-	applymovement LOCALID_VICKY, Route111_Movement_WinstrateExitHouse
+	applymovement LOCALID_VICKY, Common_Movement_WalkDown
 	waitmovement 0
 	call Route111_EventScript_CloseWinstrateDoor
 	msgbox Route111_Text_VickyIntro, MSGBOX_DEFAULT
@@ -331,10 +315,6 @@ Route111_EventScript_CloseWinstrateDoor::
 Route111_Movement_WinstrateEnterHouse:
 	walk_in_place_faster_up
 	walk_up
-	step_end
-
-Route111_Movement_WinstrateExitHouse:
-	walk_down
 	step_end
 
 Route111_Movement_WaitForNextWinstrate:

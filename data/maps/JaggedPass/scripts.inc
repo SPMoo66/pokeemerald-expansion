@@ -66,6 +66,7 @@ JaggedPass_EventScript_OpenMagmaHideout::
 
 JaggedPass_EventScript_MagmaHideoutGuard::
 	lockall
+	goto_if_unset FLAG_BADGE04_GET, JaggedPass_EventScript_GuardCantGetIn
 	goto_if_set FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS, JaggedPass_EventScript_GuardDefeated
 	waitse
 	playse SE_PIN
@@ -81,6 +82,12 @@ JaggedPass_EventScript_MagmaHideoutGuard::
 	setflag FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS
 	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
 	waitmovement 0
+	releaseall
+	end
+
+JaggedPass_EventScript_GuardCantGetIn::
+	msgbox JaggedPass_Text_CantGetIn, MSGBOX_DEFAULT
+	closemessage
 	releaseall
 	end
 
@@ -238,6 +245,10 @@ JaggedPass_Text_GoWhereverYouWant:
 	.string "I admit it--you're strong!\p"
 	.string "Don't worry about me.\n"
 	.string "Go wherever you want!$"
+
+JaggedPass_Text_CantGetIn:
+	.string "Tch… How do I get this…\n"
+	.string "thing… open again?$"
 
 JaggedPass_Text_BoulderShakingInResponseToEmblem:
 	.string "Oh! This boulder is shaking in response\n"

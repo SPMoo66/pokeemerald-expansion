@@ -47,7 +47,7 @@ SlateportCity_Harbor_EventScript_AquaEscapeTrigger2::
 SlateportCity_Harbor_EventScript_AquaEscapeTrigger3::
 	lockall
 	setvar VAR_0x8008, 3
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Harbor_Movement_PlayerWalkUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
 	waitmovement 0
 	goto SlateportCity_Harbor_EventScript_AquaEscapeScene
 	end
@@ -148,10 +148,6 @@ SlateportCity_Harbor_Movement_SternApproachPlayer:
 	walk_left
 	step_end
 
-SlateportCity_Harbor_Movement_PlayerWalkUp:
-	walk_up
-	step_end
-
 SlateportCity_Harbor_EventScript_FerryAttendant::
 	lock
 	faceplayer
@@ -236,17 +232,13 @@ SlateportCity_Harbor_EventScript_BoardFerryEast::
 	return
 
 SlateportCity_Harbor_EventScript_BoardFerryNorth::
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Harbor_Movement_BoardFerryNorth
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
 	waitmovement 0
 	return
 
 SlateportCity_Harbor_Movement_BoardFerryEast:
 	walk_right
 	walk_in_place_faster_up
-	step_end
-
-SlateportCity_Harbor_Movement_BoardFerryNorth:
-	walk_up
 	step_end
 
 SlateportCity_Harbor_EventScript_Sailor::

@@ -188,20 +188,20 @@ SlateportCity_BattleTentLobby_EventScript_CancelChallenge::
 	release
 	end
 
-SlateportCity_BattleTentLobby_EventScript_TormentGiver::
+SlateportCity_BattleTentLobby_EventScript_BlackGlassesGiver::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM_TORMENT, SlateportCity_BattleTentLobby_EventScript_ReceivedTorment
+	goto_if_set FLAG_RECEIVED_BLACK_GLASSES, SlateportCity_BattleTentLobby_EventScript_ReceivedBlackGlasses
 	msgbox SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe, MSGBOX_DEFAULT
-	giveitem ITEM_TM_TORMENT
+	giveitem ITEM_BLACK_GLASSES
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM_TORMENT
-	msgbox SlateportCity_BattleTentLobby_Text_ExplainTorment, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_BLACK_GLASSES
+	msgbox SlateportCity_BattleTentLobby_Text_ExplainBlackGlasses, MSGBOX_DEFAULT
 	release
 	end
 
-SlateportCity_BattleTentLobby_EventScript_ReceivedTorment::
-	msgbox SlateportCity_BattleTentLobby_Text_ExplainTorment, MSGBOX_DEFAULT
+SlateportCity_BattleTentLobby_EventScript_ReceivedBlackGlasses::
+	msgbox SlateportCity_BattleTentLobby_Text_ExplainBlackGlasses, MSGBOX_DEFAULT
 	release
 	end
 
@@ -276,13 +276,12 @@ SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe:
 	.string "Hey, like, you! Zip it, you know?\n"
 	.string "Just, you know, take this!$"
 
-SlateportCity_BattleTentLobby_Text_ExplainTorment:
-	.string "That's, like, TM41, you know?\n"
-	.string "Hey, it's Torment, you hearing me?\p"
-	.string "Like, it won't let the other guy\n"
-	.string "use the same move twice in a row, see?\p"
-	.string "Hey, now, you listen here, like,\n"
-	.string "I'm not laying a torment on you!$"
+SlateportCity_BattleTentLobby_Text_ExplainBlackGlasses:
+	.string "Those are Black Glasses, you know?\n"
+	.string "Pokémon can hold them, you hearing me?\p"
+	.string "Like, I found them on some mountain\n"
+	.string "pass, and some guy probably dropped\l"
+	.string "them or something.$"
 
 SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons:
 	.string "I don't really like Bug Pokémon,\n"

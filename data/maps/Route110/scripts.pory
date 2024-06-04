@@ -425,8 +425,8 @@ Route110_EventScript_MayBattleMudkip::
 
 Route110_EventScript_MayDefeated::
 	msgbox Route110_Text_MayTakeThis, MSGBOX_DEFAULT
-	call Route110_EventScript_GiveItemfinder
-	msgbox Route110_Text_MayExplainItemfinder, MSGBOX_DEFAULT
+	call Route110_EventScript_GivePokemonBoxLink
+	msgbox Route110_Text_MayExplainPokemonBoxLink, MSGBOX_DEFAULT
 	goto Route110_EventScript_RivalExit
 	end
 
@@ -455,13 +455,13 @@ Route110_EventScript_BrendanBattleMudkip::
 
 Route110_EventScript_BrendanDefeated::
 	msgbox Route110_Text_BrendanTakeThis, MSGBOX_DEFAULT
-	call Route110_EventScript_GiveItemfinder
-	msgbox Route110_Text_BrendanExplainItemfinder, MSGBOX_DEFAULT
+	call Route110_EventScript_GivePokemonBoxLink
+	msgbox Route110_Text_BrendanExplainPokemonBoxLink, MSGBOX_DEFAULT
 	goto Route110_EventScript_RivalExit
 	end
 
-Route110_EventScript_GiveItemfinder::
-	giveitem ITEM_DOWSING_MACHINE
+Route110_EventScript_GivePokemonBoxLink::
+	giveitem ITEM_POKEMON_BOX_LINK
 	return
 
 Route110_EventScript_RivalExit::
@@ -490,7 +490,7 @@ Route110_EventScript_RivalApproachPlayer1::
 	return
 
 Route110_EventScript_RivalApproachPlayer2::
-	applymovement LOCALID_RIVAL, Route110_Movement_RivalApproachPlayer2
+	applymovement LOCALID_RIVAL, Common_Movement_WalkDown
 	waitmovement 0
 	return
 
@@ -530,10 +530,6 @@ Route110_Movement_RivalApproachPlayer1:
 	walk_down
 	walk_left
 	walk_in_place_faster_down
-	step_end
-
-Route110_Movement_RivalApproachPlayer2:
-	walk_down
 	step_end
 
 Route110_Movement_RivalApproachPlayer3:
@@ -649,7 +645,7 @@ Route110_EventScript_BirchApproachPlayer2::
 	return
 
 Route110_EventScript_BirchApproachPlayer3::
-	applymovement LOCALID_BIRCH, Route110_Movement_BirchApproachPlayer3
+	applymovement LOCALID_BIRCH, Common_Movement_WalkDown2
 	waitmovement 0
 	return
 
@@ -669,12 +665,12 @@ Route110_EventScript_BirchExit2::
 	return
 
 Route110_EventScript_BirchExit3::
-	applymovement LOCALID_BIRCH, Route110_Movement_BirchExit3
+	applymovement LOCALID_BIRCH, Route110_Movement_BirchExit2
 	waitmovement 0
 	return
 
 Route110_EventScript_BirchExit4::
-	applymovement LOCALID_BIRCH, Route110_Movement_BirchExit4
+	applymovement LOCALID_BIRCH, Route110_Movement_BirchExit2
 	waitmovement 0
 	return
 
@@ -697,11 +693,6 @@ Route110_Movement_BirchApproachPlayer2:
 	walk_down
 	step_end
 
-Route110_Movement_BirchApproachPlayer3:
-	walk_down
-	walk_down
-	step_end
-
 Route110_Movement_BirchApproachPlayer4:
 	walk_down
 	walk_right
@@ -718,22 +709,6 @@ Route110_Movement_BirchExit1:
 	step_end
 
 Route110_Movement_BirchExit2:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-Route110_Movement_BirchExit3:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-Route110_Movement_BirchExit4:
 	walk_up
 	walk_up
 	walk_up
@@ -774,10 +749,10 @@ Route110_Text_MayTakeThis:
 	.string "I think you deserve a reward!\n"
 	.string "This is from me!$"
 
-Route110_Text_MayExplainItemfinder:
-	.string "May: That's an Itemfinder.\p"
-	.string "Try it out. If there is an item that's\n"
-	.string "not visible, it emits a sound.\p"
+Route110_Text_MayExplainPokemonBoxLink:
+	.string "May: That's a Pokémon Box Link.\p"
+	.string "Try it out. It allows you to access\n"
+	.string "your PC remotely when you use it.\p"
 	.string "Okay, {PLAYER}{KUN}, let's meet again!\p"
 	.string "I know it's a little silly coming from\n"
 	.string "me, but I think you should train a lot\l"
@@ -800,12 +775,10 @@ Route110_Text_BrendanTakeThis:
 	.string "Good enough!\n"
 	.string "Here, take this.$"
 
-Route110_Text_BrendanExplainItemfinder:
-	.string "Brendan: That's an Itemfinder.\p"
-	.string "Use it to root around for items that\n"
-	.string "aren't visible.\p"
-	.string "If it senses something, it emits\n"
-	.string "a sound.\p"
+Route110_Text_BrendanExplainPokemonBoxLink:
+	.string "Brendan: That's a Pokémon Box Link.\p"
+	.string "Use it and you can access your PC\n"
+	.string "remotely.\p"
 	.string "Anyway, I'm off to look for new\n"
 	.string "Pokémon.$"
 

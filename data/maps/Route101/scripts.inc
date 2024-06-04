@@ -621,12 +621,12 @@ Route101_PichuGift_11:
 
 Route101_PichuGift_12:
 # 299 "data/maps/Route101/scripts.pory"
-	applymovement 7, CynthiaDown2
+	applymovement 7, Common_Movement_WalkDown2
 	goto Route101_PichuGift_7
 
 Route101_PichuGift_13:
 # 301 "data/maps/Route101/scripts.pory"
-	applymovement 7, CynthiaDown1
+	applymovement 7, Common_Movement_WalkDown
 	goto Route101_PichuGift_7
 
 
@@ -753,89 +753,75 @@ CynthiaDown3:
 	step_end
 
 # 359 "data/maps/Route101/scripts.pory"
-CynthiaDown2:
-# 360 "data/maps/Route101/scripts.pory"
-	walk_down
-# 360 "data/maps/Route101/scripts.pory"
-	walk_down
-	step_end
-
-# 363 "data/maps/Route101/scripts.pory"
-CynthiaDown1:
-# 364 "data/maps/Route101/scripts.pory"
-	walk_down
-	step_end
-
-# 367 "data/maps/Route101/scripts.pory"
 CynthiaLedgeLeave:
-# 368 "data/maps/Route101/scripts.pory"
+# 360 "data/maps/Route101/scripts.pory"
 	jump_2_down
-# 369 "data/maps/Route101/scripts.pory"
+# 361 "data/maps/Route101/scripts.pory"
 	walk_down
-# 369 "data/maps/Route101/scripts.pory"
+# 361 "data/maps/Route101/scripts.pory"
 	walk_down
-# 369 "data/maps/Route101/scripts.pory"
+# 361 "data/maps/Route101/scripts.pory"
 	walk_down
-# 369 "data/maps/Route101/scripts.pory"
+# 361 "data/maps/Route101/scripts.pory"
 	walk_down
-# 370 "data/maps/Route101/scripts.pory"
+# 362 "data/maps/Route101/scripts.pory"
 	set_invisible
 	step_end
 
 Route101_MapScripts::
-# 374 "data/maps/Route101/scripts.pory"
+# 366 "data/maps/Route101/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION
-# 382 "data/maps/Route101/scripts.pory"
+# 374 "data/maps/Route101/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route101_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
 Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION:
-# 375 "data/maps/Route101/scripts.pory"
+# 367 "data/maps/Route101/scripts.pory"
 	setflag FLAG_TEMP_1
-# 376 "data/maps/Route101/scripts.pory"
+# 368 "data/maps/Route101/scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 1
 	goto_if_eq Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
-# 379 "data/maps/Route101/scripts.pory"
+# 371 "data/maps/Route101/scripts.pory"
 	call ProfBirch_EventScript_UpdateLocation
 	return
 
 Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
-# 377 "data/maps/Route101/scripts.pory"
+# 369 "data/maps/Route101/scripts.pory"
 	clearflag FLAG_TEMP_1
 	goto Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
 Route101_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-# 383 "data/maps/Route101/scripts.pory"
+# 375 "data/maps/Route101/scripts.pory"
 	map_script_2 VAR_ROUTE101_STATE, 0, Route101_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0
 	.2byte 0
 
 Route101_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0:
-# 384 "data/maps/Route101/scripts.pory"
+# 376 "data/maps/Route101/scripts.pory"
 	setflag FLAG_HIDE_MAP_NAME_POPUP
-# 385 "data/maps/Route101/scripts.pory"
+# 377 "data/maps/Route101/scripts.pory"
 	setvar VAR_ROUTE101_STATE, 1
 	return
 
 
 Jakson_Town01::
-# 391 "data/maps/Route101/scripts.pory"
+# 383 "data/maps/Route101/scripts.pory"
 	faceplayer
-# 392 "data/maps/Route101/scripts.pory"
+# 384 "data/maps/Route101/scripts.pory"
 	lock
-# 393 "data/maps/Route101/scripts.pory"
+# 385 "data/maps/Route101/scripts.pory"
 	msgbox Jakson_Town01_Text_0
-# 394 "data/maps/Route101/scripts.pory"
+# 386 "data/maps/Route101/scripts.pory"
 	release
 	end
 
 
 Redd_Town01::
-# 399 "data/maps/Route101/scripts.pory"
+# 391 "data/maps/Route101/scripts.pory"
 	lock
-# 400 "data/maps/Route101/scripts.pory"
+# 392 "data/maps/Route101/scripts.pory"
 	msgbox Redd_Town01_Text_0
-# 401 "data/maps/Route101/scripts.pory"
+# 393 "data/maps/Route101/scripts.pory"
 	release
 	end
 
@@ -845,7 +831,7 @@ Route101_PichuGift_Text_0:
 	.string "Pichu joined {PLAYER}!$"
 
 Jakson_Town01_Text_0:
-# 393 "data/maps/Route101/scripts.pory"
+# 385 "data/maps/Route101/scripts.pory"
 	.string "Jakson: {PLAYER}, how are you\n"
 	.string "handling the game so far?\p"
 	.string "If you've never played this sort of\n"
@@ -864,7 +850,7 @@ Jakson_Town01_Text_0:
 	.string "tweaks to the base game, too.$"
 
 Redd_Town01_Text_0:
-# 400 "data/maps/Route101/scripts.pory"
+# 392 "data/maps/Route101/scripts.pory"
 	.string "Redd: There's so many different sorts\n"
 	.string "of Pokémon here...\p"
 	.string "Though I guess it's really just\n"

@@ -296,9 +296,9 @@ script Route101_PichuGift {
 			case 2:
 				applymovement (CYNTHIA, CynthiaDown3)
 			case 3:
-				applymovement (CYNTHIA, CynthiaDown2)
+				applymovement (CYNTHIA, Common_Movement_WalkDown2)
 			case 4:
-				applymovement (CYNTHIA, CynthiaDown1)
+				applymovement (CYNTHIA, Common_Movement_WalkDown)
 			default:
 		}
 	}
@@ -354,14 +354,6 @@ movement PichuDisappear {
 
 movement CynthiaDown3 {
 	walk_down * 3
-}
-
-movement CynthiaDown2 {
-	walk_down * 2
-}
-
-movement CynthiaDown1 {
-	walk_down * 1
 }
 
 movement CynthiaLedgeLeave {

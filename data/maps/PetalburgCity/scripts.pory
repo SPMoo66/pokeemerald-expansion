@@ -84,7 +84,7 @@ PetalburgCity_EventScript_WalkToWallyHouse::
 	opendoor VAR_0x8004, VAR_0x8005
 	waitdooranim
 	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Movement_WalkInsideHouseWallysDad
-	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_WalkInsideHousePlayer
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
 	waitmovement 0
 	setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_DAD
 	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_PETALBURG_CITY
@@ -128,11 +128,6 @@ PetalburgCity_Movement_WalkToWallyHousePlayer:
 	walk_up
 	walk_up
 	walk_up
-	walk_up
-	walk_up
-	step_end
-
-PetalburgCity_Movement_WalkInsideHousePlayer:
 	walk_up
 	walk_up
 	step_end
@@ -547,7 +542,7 @@ PetalburgCity_EventScript_Scott::
 	waitmovement 0
 	applymovement LOCALID_SCOTT, Common_Movement_Delay48
 	waitmovement 0
-	applymovement LOCALID_SCOTT, PetalburgCity_Movement_ScottApproachPlayer
+	applymovement LOCALID_SCOTT, PetalburgCity_Movement_ScottStartWalkLeft
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
@@ -598,13 +593,6 @@ PetalburgCity_EventScript_ScottExit3::
 	return
 
 PetalburgCity_Movement_ScottStartWalkLeft:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
-
-PetalburgCity_Movement_ScottApproachPlayer:
 	walk_left
 	walk_left
 	walk_left
@@ -793,7 +781,7 @@ script Rival_Scene02 {
 				applymovement (RIVAL, Common_Movement_WalkUp)
 				waitmovement (0)
 			case 19:
-				applymovement (RIVAL, Rival_Scene02_Move1d)
+				applymovement (RIVAL, Common_Movement_WalkDown)
 				waitmovement (0)
 			default:
 		}
@@ -815,7 +803,7 @@ script Rival_Scene02 {
 		setvar (VAR_EMERALBODY_RIVAL_STATE, 2)
 		fadedefaultbgm
 		if (var(VAR_TEMP_1) == 16) {
-			applymovement (RIVAL, Rival_Scene02_Move1d)
+			applymovement (RIVAL, Common_Movement_WalkDown)
 			waitmovement (0)
 		}
 		applymovement (RIVAL, Rival_Scene02_Move2)
@@ -828,10 +816,6 @@ script Rival_Scene02 {
 
 movement Rival_Scene02_Move1 {
 	walk_right * 2
-}
-
-movement Rival_Scene02_Move1d {
-	walk_down
 }
 
 movement Rival_Scene02_Move2 {

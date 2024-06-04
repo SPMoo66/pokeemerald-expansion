@@ -72,24 +72,24 @@ PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon:
 	.string "a battle could be easy or hard.$"
 
 PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType:
-	.string "For example, your Treecko\n"
-	.string "is a Grass type.\p"
+	.string "For example, your starter\n"
+	.string "was a Grass type.\p"
 	.string "It's strong against the Water and\n"
 	.string "Ground types.\p"
 	.string "But, it's weak against Fire-type\n"
 	.string "Pokémon.$"
 
 PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType:
-	.string "For example, your Torchic\n"
-	.string "is a Fire type.\p"
+	.string "For example, your starter\n"
+	.string "was a Fire type.\p"
 	.string "It's strong against the Grass and\n"
 	.string "Bug types.\p"
 	.string "But, it's weak against Water-type\n"
 	.string "Pokémon.$"
 
 PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType:
-	.string "For example, your Mudkip\n"
-	.string "is a Water type.\p"
+	.string "For example, your starter\n"
+	.string "was a Water type.\p"
 	.string "It's strong against the Fire type.\p"
 	.string "But, it's weak against Grass-type\n"
 	.string "and Electric-type Pokémon.$"

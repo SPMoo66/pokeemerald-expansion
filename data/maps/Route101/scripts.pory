@@ -31,7 +31,7 @@ Route101_EventScript_PreventExitSouth::
 	lockall
 	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_PreventExitSouth
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
 	waitmovement 0
 	releaseall
 	end
@@ -40,7 +40,7 @@ Route101_EventScript_PreventExitWest::
 	lockall
 	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_PreventExitWest
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight
 	waitmovement 0
 	releaseall
 	end
@@ -49,22 +49,10 @@ Route101_EventScript_PreventExitNorth::
 	lockall
 	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_PreventExitNorth
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
 	waitmovement 0
 	releaseall
 	end
-
-Route101_Movement_PreventExitSouth:
-	walk_up
-	step_end
-
-Route101_Movement_PreventExitWest:
-	walk_right
-	step_end
-
-Route101_Movement_PreventExitNorth:
-	walk_down
-	step_end
 
 Route101_Movement_ZigzagoonChaseInCircles:
 	walk_fast_up
@@ -196,7 +184,7 @@ Route101_EventScript_BirchsBag::
 	waitmovement 0
 	special ChooseStarter
 	waitstate
-	applymovement LOCALID_BIRCH, Route101_Movement_BirchApproachPlayer
+	applymovement LOCALID_BIRCH, Common_Movement_WalkRight
 	waitmovement 0
 	msgbox Route101_Text_YouSavedMe, MSGBOX_DEFAULT
 	special HealPlayerParty
@@ -221,10 +209,6 @@ Route101_EventScript_HideMayInBedroom::
 Route101_EventScript_HideBrendanInBedroom::
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM
 	return
-
-Route101_Movement_BirchApproachPlayer:
-	walk_right
-	step_end
 
 Route101_Text_HelpMe:
 	.string "H-help me!$"

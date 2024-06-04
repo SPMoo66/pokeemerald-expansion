@@ -72,11 +72,11 @@ Common_Movement_WalkInPlaceRight:
 	walk_in_place_right
 	step_end
 
-Common_Movement_WalkUp6:
+Common_Movement_WalkUp:
 	walk_up
-	walk_up
-	walk_up
-	walk_up
+	step_end
+
+Common_Movement_WalkUp2::
 	walk_up
 	walk_up
 	step_end
@@ -88,13 +88,22 @@ Common_Movement_WalkUp4:
 	walk_up
 	step_end
 
-Common_Movement_Delay32:
-	delay_16
-	delay_16
+Common_Movement_WalkUp6:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
 	step_end
 
-Common_Movement_WalkUp:
-	walk_up
+Common_Movement_WalkDown::
+	walk_down
+	step_end
+
+Common_Movement_WalkDown2::
+	walk_down
+	walk_down
 	step_end
 
 Common_Movement_WalkRight:
@@ -105,12 +114,7 @@ Common_Movement_WalkLeft:
 	walk_left
 	step_end
 
-Common_Movement_WalkUp2::
-	walk_up
-	walk_up
-	step_end
-
-Common_Movement_WalkDown2::
-	walk_down
-	walk_down
+Common_Movement_Delay32:
+	delay_16
+	delay_16
 	step_end

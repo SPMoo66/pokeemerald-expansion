@@ -322,16 +322,16 @@ Route104_EventScript_Woman::
 Route104_EventScript_Boy2::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM_BULLET_SEED, Route104_EventScript_ReceivedBulletSeed
-	msgbox Route104_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_TM_BULLET_SEED
+	goto_if_set FLAG_RECEIVED_DOWSING_MACHINE, Route104_EventScript_ReceivedDowsingMachine
+	msgbox Route104_Text_GiveDowsingMachine, MSGBOX_DEFAULT
+	giveitem ITEM_DOWSING_MACHINE
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM_BULLET_SEED
+	setflag FLAG_RECEIVED_DOWSING_MACHINE
 	release
 	end
 
-Route104_EventScript_ReceivedBulletSeed::
-	msgbox Route104_Text_TMsAreOneTimeUse, MSGBOX_DEFAULT
+Route104_EventScript_ReceivedDowsingMachine::
+	msgbox Route104_Text_DowsingMachineDone, MSGBOX_DEFAULT
 	release
 	end
 
@@ -1021,19 +1021,15 @@ Route104_Text_ImNotATrainer:
 	.string "If you don't want to battle, stay out\n"
 	.string "of their sight.$"
 
-Route104_Text_LikeFillingMouthWithSeedsTakeThis:
-	.string "I like filling my mouth with seeds,\n"
-	.string "then spitting them out fast!\p"
-	.string "You can have this, so you try it out!\p"
-	.string "Use it on a Pokémon, and it will learn\n"
-	.string "a move for firing seeds rapidly.$"
+Route104_Text_GiveDowsingMachine:
+	.string "Ah, I usually like to give out TMs\n"
+	.string "to trainers, but I'm all out.\p"
+	.string "I guess you can have this old\n"
+	.string "Dowsing Machine I have.$"
 
-Route104_Text_TMsAreOneTimeUse:
-	.string "A word of advice!\p"
-	.string "A TM, Technical Machine, is good only\n"
-	.string "for one-time use.\p"
-	.string "Once you use it, it's gone.\n"
-	.string "Think twice before using it!$"
+Route104_Text_DowsingMachineDone:
+	.string "Use that Dowsing Machine to hunt\n"
+	.string "down all those hidden Items!$"
 
 Route104_Text_DontNeedThisTakeIt:
 	.string "This Flower Shop started selling\n"

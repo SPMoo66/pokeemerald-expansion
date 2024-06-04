@@ -61,7 +61,7 @@ Route104_EventScript_RivalTrigger::
 	clearflag FLAG_HIDE_ROUTE_104_RIVAL
 	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerBackUp
 	waitmovement 0
-	applymovement LOCALID_RIVAL, Route104_Movement_RivalExitBrineysCottage
+	applymovement LOCALID_RIVAL, Common_Movement_WalkDown
 	waitmovement 0
 	delay 20
 	setvar VAR_0x8008, 0
@@ -246,10 +246,6 @@ Route104_Movement_PlayerBackUp:
 	unlock_facing_direction
 	step_end
 
-Route104_Movement_RivalExitBrineysCottage:
-	walk_down
-	step_end
-
 Route104_EventScript_ExpertF::
 	lock
 	faceplayer
@@ -342,7 +338,7 @@ Route104_EventScript_Girl2::
 Route104_EventScript_SailToDewford::
 	setobjectsubpriority LOCALID_BRINEY_R104, MAP_ROUTE104, 0
 	setobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE104, 0
-	applymovement LOCALID_BRINEY_R104, Route104_Movement_BrineyBoardBoat
+	applymovement LOCALID_BRINEY_R104, Common_Movement_WalkDown2
 	waitmovement 0
 	removeobject LOCALID_BRINEY_R104
 	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerBoardBoat
@@ -380,7 +376,7 @@ Route104_EventScript_SailToDewfordDadCalls::
 
 Route104_EventScript_ArriveInDewford::
 	delay 50
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerExitBoat
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
 	waitmovement 0
 	call Common_EventScript_StopBrineysBoatMusic
 	showobjectat OBJ_EVENT_ID_PLAYER, MAP_DEWFORD_TOWN
@@ -819,19 +815,10 @@ Route104_Movement_PlayerBoardBoat:
 	walk_down
 	step_end
 
-Route104_Movement_PlayerExitBoat:
-	walk_down
-	step_end
-
 Route104_Movement_PlayerMoveForBriney:
 	walk_down
 	walk_left
 	walk_in_place_faster_right
-	step_end
-
-Route104_Movement_BrineyBoardBoat:
-	walk_down
-	walk_down
 	step_end
 
 Route104_Movement_BrineyExitBoat:
@@ -1049,11 +1036,11 @@ Route104_Text_MrBrineysCottage:
 	.string "Mr. Briney's Cottage$"
 
 Route104_Text_RouteSignPetalburg:
-	.string "Route 1O4\n"
+	.string "Route 104\n"
 	.string "{RIGHT_ARROW} Petalburg City$"
 
 Route104_Text_RouteSignRustboro:
-	.string "Route 1O4\n"
+	.string "Route 104\n"
 	.string "{UP_ARROW} Rustboro City$"
 
 Route104_Text_PrettyPetalFlowShop:

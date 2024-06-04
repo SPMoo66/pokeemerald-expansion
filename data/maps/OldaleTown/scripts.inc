@@ -61,7 +61,7 @@ OldaleTown_EventScript_GoToMartSouth::
 
 OldaleTown_EventScript_GoToMartNorth::
 	applymovement LOCALID_MART_EMPLOYEE, OldaleTown_Movement_EmployeeNorth
-	applymovement OBJ_EVENT_ID_PLAYER, OldaleTown_Movement_PlayerNorth
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp7
 	waitmovement 0
 	goto OldaleTown_EventScript_ExplainPokemonMart
 	end
@@ -160,16 +160,6 @@ OldaleTown_Movement_PlayerSouth:
 	delay_16
 	delay_16
 	delay_16
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-OldaleTown_Movement_PlayerNorth:
-	walk_up
-	walk_up
 	walk_up
 	walk_up
 	walk_up

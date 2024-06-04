@@ -38,7 +38,7 @@ RustboroCity_OnFrame:
 RustboroCity_EventScript_ScientistAddMatchCall::
 	lockall
 	setvar VAR_ROUTE104_STATE, 1
-	applymovement OBJ_EVENT_ID_PLAYER, RustboroCity_Movement_PlayerWalkDown
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
 	waitmovement 0
 	playse SE_EXIT
 	delay 10
@@ -52,7 +52,7 @@ RustboroCity_EventScript_ScientistAddMatchCall::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	applymovement LOCALID_SCIENTIST, RustboroCity_Movement_ScientistWalkInPlaceDown
+	applymovement LOCALID_SCIENTIST, Common_Movement_WalkInPlaceDown
 	waitmovement 0
 	msgbox RustboroCity_Text_DevelopedNewPokenavFeature, MSGBOX_DEFAULT
 	closemessage
@@ -98,7 +98,7 @@ RustboroCity_EventScript_MatchCallTutorial::
 	delay 20
 	msgbox RustboroCity_Text_IdBetterGetBackToWork, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SCIENTIST, RustboroCity_Movement_ScientistLeave
+	applymovement LOCALID_SCIENTIST, Common_Movement_WalkUp
 	waitmovement 0
 	playse SE_EXIT
 	removeobject LOCALID_SCIENTIST
@@ -108,21 +108,9 @@ RustboroCity_EventScript_MatchCallTutorial::
 	releaseall
 	end
 
-RustboroCity_Movement_ScientistWalkInPlaceDown:
-	walk_in_place_down
-	step_end
-
-RustboroCity_Movement_PlayerWalkDown:
-	walk_down
-	step_end
-
 RustboroCity_Movement_ScientistApproachPlayer:
 	walk_down
 	delay_16
-	step_end
-
-RustboroCity_Movement_ScientistLeave:
-	walk_up
 	step_end
 
 RustboroCity_EventScript_FatMan::
@@ -285,7 +273,7 @@ RustboroCity_EventScript_StolenGoodsScene::
 	waitmovement 0
 	msgbox RustboroCity_Text_WaitDontTakeMyGoods, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_DEVON_EMPLOYEE, RustboroCity_Movement_EmployeeChaseGrunt2
+	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkUp7
 	waitmovement 0
 	fadedefaultbgm
 	removeobject LOCALID_DEVON_EMPLOYEE
@@ -330,16 +318,6 @@ RustboroCity_Movement_EmployeeChaseGrunt1:
 	walk_right
 	walk_right
 	walk_in_place_faster_up
-	step_end
-
-RustboroCity_Movement_EmployeeChaseGrunt2:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
 	step_end
 
 RustboroCity_EventScript_DevonEmployee1::
@@ -650,7 +628,7 @@ RustboroCity_EventScript_RivalTrigger4::
 	waitmovement 0
 	applymovement LOCALID_RIVAL, Common_Movement_Delay48
 	waitmovement 0
-	applymovement LOCALID_RIVAL, RustboroCity_Movement_RivalApproachPlayer4
+	applymovement LOCALID_RIVAL, Common_Movement_WalkDown2
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
@@ -869,11 +847,6 @@ RustboroCity_Movement_RivalApproachPlayer3:
 	walk_down
 	step_end
 
-RustboroCity_Movement_RivalApproachPlayer4:
-	walk_down
-	walk_down
-	step_end
-
 RustboroCity_Movement_RivalApproachPlayer5:
 	walk_down
 	walk_right
@@ -932,8 +905,9 @@ RustboroCity_Text_GymLeaderIsntEasyWithFire:
 	.string "I challenged the Gym Leader, but…\p"
 	.string "It's not going to be easy winning with\n"
 	.string "my Fire-type Pokémon…\p"
-	.string "Fire-type Pokémon don't match up\n"
-	.string "well against Rock-type Pokémon…$"
+	.string "Fire-type Pokémon match up well\n"
+	.string "against Ice-type Pokémon, but\n"
+	.string "not Ground-type Pokémon…$"
 
 RustboroCity_Text_MrBrineyWalksInTheTunnel:
 	.string "The old sailor Mr. Briney lives in\n"

@@ -16,7 +16,7 @@ RustboroCity_PokemonSchool_EventScript_ChooseBlackboardTopic::
 	case 1, RustboroCity_PokemonSchool_EventScript_Paralysis
 	case 2, RustboroCity_PokemonSchool_EventScript_Sleep
 	case 3, RustboroCity_PokemonSchool_EventScript_Burn
-	case 4, RustboroCity_PokemonSchool_EventScript_Freeze
+	case 4, RustboroCity_PokemonSchool_EventScript_Frostbite
 	case 5, RustboroCity_PokemonSchool_EventScript_ExitTopicSelect
 	case MULTI_B_PRESSED, RustboroCity_PokemonSchool_EventScript_ExitTopicSelect
 	end
@@ -41,8 +41,8 @@ RustboroCity_PokemonSchool_EventScript_Burn::
 	goto RustboroCity_PokemonSchool_EventScript_ChooseBlackboardTopic
 	end
 
-RustboroCity_PokemonSchool_EventScript_Freeze::
-	msgbox RustboroCity_PokemonSchool_Text_ExplainFreeze, MSGBOX_DEFAULT
+RustboroCity_PokemonSchool_EventScript_Frostbite::
+	msgbox RustboroCity_PokemonSchool_Text_ExplainFrostbite, MSGBOX_DEFAULT
 	goto RustboroCity_PokemonSchool_EventScript_ChooseBlackboardTopic
 	end
 
@@ -237,10 +237,11 @@ RustboroCity_PokemonSchool_Text_ExplainBurn:
 	.string "A burn lingers after battle.\n"
 	.string "Cure a burn using a Burn Heal.$"
 
-RustboroCity_PokemonSchool_Text_ExplainFreeze:
-	.string "If a Pokémon is frozen, it becomes\n"
-	.string "completely helpless.\p"
-	.string "It will remain frozen after battle.\n"
+RustboroCity_PokemonSchool_Text_ExplainFrostbite:
+	.string "If a Pokémon is frostbitten, its\n"
+	.string "Special Attack is reduced and its\l"
+	.string "HP will be steadily reduced.\p"
+	.string "Frostbite lingers after battle.\n"
 	.string "Thaw it out using an Ice Heal.$"
 
 RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw:

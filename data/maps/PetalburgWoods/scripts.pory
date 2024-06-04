@@ -24,7 +24,7 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 	waitmovement 0
 	msgbox PetalburgWoods_Text_YouHaveToHelpMe, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaApproachPlayer
+	applymovement LOCALID_GRUNT, Common_Movement_WalkDown
 	waitmovement 0
 	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
@@ -234,10 +234,6 @@ PetalburgWoods_Movement_AquaEntrance:
 	delay_16
 	step_end
 
-PetalburgWoods_Movement_AquaApproachPlayer:
-	walk_down
-	step_end
-
 PetalburgWoods_EventScript_Boy1::
 	msgbox PetalburgWoods_Text_StayOutOfTallGrass, MSGBOX_NPC
 	end
@@ -249,16 +245,16 @@ PetalburgWoods_EventScript_Boy2::
 PetalburgWoods_EventScript_Girl::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_MIRACLE_SEED, PetalburgWoods_EventScript_ExplainMiracleSeed
+	goto_if_set FLAG_RECEIVED_SITRUS_BERRY, PetalburgWoods_EventScript_ExplainSitrusBerry
 	msgbox PetalburgWoods_Text_TryUsingThisItem, MSGBOX_DEFAULT
-	giveitem ITEM_MIRACLE_SEED
+	giveitem ITEM_SITRUS_BERRY
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_MIRACLE_SEED
+	setflag FLAG_RECEIVED_SITRUS_BERRY
 	release
 	end
 
-PetalburgWoods_EventScript_ExplainMiracleSeed::
-	msgbox PetalburgWoods_Text_MiracleSeedExplanation, MSGBOX_DEFAULT
+PetalburgWoods_EventScript_ExplainSitrusBerry::
+	msgbox PetalburgWoods_Text_SitrusBerryExplanation, MSGBOX_DEFAULT
 	release
 	end
 
@@ -446,13 +442,10 @@ PetalburgWoods_Text_TryUsingThisItem:
 	.string "You must be a Trainer.\n"
 	.string "You should try using this item.$"
 
-PetalburgWoods_Text_MiracleSeedExplanation:
-	.string "It's a Miracle Seed.\n"
-	.string "If a Pokémon holds that item, its\l"
-	.string "Grass-type moves become stronger.\p"
-	.string "Besides Miracle Seed, I think there are\n"
-	.string "other convenient items for Pokémon\l"
-	.string "to hold.$"
+PetalburgWoods_Text_SitrusBerryExplanation:
+	.string "If a Pokémon holds that berry, its\n"
+	.string "HP will be restored if it drops\l"
+	.string "below half.$"
 
 PetalburgWoods_Text_TrainerTipsExperience:
 	.string "Trainer Tips\p"

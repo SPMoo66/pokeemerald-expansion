@@ -249,7 +249,7 @@
 #define FLAG_RECEIVED_GOOD_ROD               0xE3
 #define FLAG_REGI_DOORS_OPENED               0xE4
 #define FLAG_RECEIVED_RARE_CANDY_COZMOS      0xE5
-#define FLAG_RECEIVED_TM_SLUDGE_BOMB         0xE6
+#define FLAG_UNUSED_0xE6                     0xE6 // Unused, was used when receiving Sludge Bomb TM gift
 #define FLAG_RECEIVED_RARE_CANDY_ROAR        0xE7
 #define FLAG_RECEIVED_TM_GIGA_DRAIN          0xE8
 
@@ -278,7 +278,7 @@
 #define FLAG_RECEIVED_CHARCOAL               0xFE
 #define FLAG_LATIOS_OR_LATIAS_ROAMING        0xFF
 #define FLAG_RECEIVED_REPEAT_BALL            0x100
-#define FLAG_UNUSED_0x101                    0x101  // Unused, was for Old Rod
+#define FLAG_UNUSED_0x101                    0x101 // Unused, was for Old Rod
 #define FLAG_RECEIVED_COIN_CASE              0x102
 #define FLAG_RETURNED_RED_OR_BLUE_ORB        0x103
 #define FLAG_RECEIVED_RARE_CANDY_SNATCH      0x104
@@ -291,7 +291,7 @@
 #define FLAG_RECEIVED_REVIVED_FOSSIL_MON     0x10B
 #define FLAG_SECRET_BASE_REGISTRY_ENABLED    0x10C
 #define FLAG_RECEIVED_TM_THIEF               0x10D
-#define FLAG_UNUSED_0x10E                    0x10E  // Unused Flag
+#define FLAG_UNUSED_0x10E                    0x10E // Unused Flag
 #define FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE   0x10F
 #define FLAG_RECEIVED_EXP_SHARE              0x110
 #define FLAG_POKERUS_EXPLAINED               0x111
@@ -983,7 +983,7 @@
 #define FLAG_HIDE_REGISTEEL                                         0x3A9
 #define FLAG_HIDE_METEOR_FALLS_TEAM_AQUA                            0x3AA
 #define FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA                           0x3AB
-#define FLAG_HIDE_DEWFORD_HALL_SLUDGE_BOMB_MAN                      0x3AC
+#define FLAG_UNUSED_0x3AC                                           0x3AC // Unused, was for a man in Dewford Hall who gave the Sludge Bomb TM
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT               0x3AD
 #define FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO                          0x3AE
 #define FLAG_HIDE_AQUA_HIDEOUT_B2F_SUBMARINE_SHADOW                 0x3AF

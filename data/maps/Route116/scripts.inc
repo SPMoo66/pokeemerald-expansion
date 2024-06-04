@@ -126,6 +126,10 @@ Route116_EventScript_TunnelersRestHouseSign::
 	msgbox Route116_Text_TunnelersRestHouse, MSGBOX_SIGN
 	end
 
+Route116_EventScript_CaveOfDreamsSign::
+	msgbox Route116_Text_CaveOfDreamsSign, MSGBOX_SIGN
+	end
+
 Route116_EventScript_TrainerTipsBToStopEvolution::
 	msgbox Route116_Text_TrainerTipsBToStopEvolution, MSGBOX_SIGN
 	end
@@ -155,8 +159,6 @@ Route116_EventScript_BrineyTrigger::
 Route116_EventScript_GlassesMan::
 	lock
 	faceplayer
-	checkitem ITEM_BLACK_GLASSES
-	goto_if_eq VAR_RESULT, TRUE, Route116_EventScript_PlayerHasGlasses
 	specialvar VAR_RESULT, FoundBlackGlasses
 	goto_if_eq VAR_RESULT, TRUE, Route116_EventScript_FoundGlassesNotOnPlayer
 	msgbox Route116_Text_CanYouHelpMeFindGlasses, MSGBOX_DEFAULT
@@ -165,21 +167,6 @@ Route116_EventScript_GlassesMan::
 
 Route116_EventScript_FoundGlassesNotOnPlayer::
 	msgbox Route116_Text_CantFindGlassesNotHere, MSGBOX_DEFAULT
-	closemessage
-	goto Route116_EventScript_GlassesManExit
-	end
-
-Route116_EventScript_PlayerHasGlasses::
-	msgbox Route116_Text_CanYouHelpMeFindGlasses, MSGBOX_DEFAULT
-	msgbox Route116_Text_MayISeeThoseGlasses, MSGBOX_DEFAULT
-	specialvar VAR_RESULT, FoundBlackGlasses
-	goto_if_eq VAR_RESULT, TRUE, Route116_EventScript_FoundGlassesOnPlayer
-	msgbox Route116_Text_NotWhatImLookingFor, MSGBOX_DEFAULT
-	release
-	end
-
-Route116_EventScript_FoundGlassesOnPlayer::
-	msgbox Route116_Text_NotWhatImLookingForMaybeTheyArentHere, MSGBOX_DEFAULT
 	closemessage
 	goto Route116_EventScript_GlassesManExit
 	end
@@ -421,26 +408,10 @@ Route116_Text_CanYouHelpMeFindGlasses:
 	.string "I dropped my glasses…\n"
 	.string "Can you help me find them?$"
 
-Route116_Text_MayISeeThoseGlasses:
-	.string "Those glasses!\n"
-	.string "May I see them for a second?$"
-
-Route116_Text_NotWhatImLookingForMaybeTheyArentHere:
-	.string "Hmm…\n"
-	.string "These are Blackglasses.\l"
-	.string "They're not what I'm looking for…\p"
-	.string "Maybe my glasses aren't around\n"
-	.string "here…$"
-
 Route116_Text_CantFindGlassesNotHere:
 	.string "Hmm…\n"
 	.string "I can't find my glasses anywhere…\l"
 	.string "Maybe they're not around here…$"
-
-Route116_Text_NotWhatImLookingFor:
-	.string "Hmm…\n"
-	.string "These are Blackglasses.\l"
-	.string "They're not what I'm looking for…$"
 
 Route116_Text_RouteSignRustboro:
 	.string "Route 116\n"
@@ -454,6 +425,9 @@ Route116_Text_RusturfTunnelSign:
 
 Route116_Text_TunnelersRestHouse:
 	.string "Tunneler's Rest House$"
+
+Route116_Text_CaveOfDreamsSign:
+	.string "Cave of Dreams$"
 
 Route116_Text_TrainerTipsBToStopEvolution:
 	.string "Trainer Tips\p"

@@ -126,7 +126,7 @@ DewfordTown_EventScript_SailToPetalburg::
 	call EventScript_BackupMrBrineyLocation
 	setobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN, 0
 	setobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_DEWFORD_TOWN, 0
-	applymovement LOCALID_BRINEY_DEWFORD, DewfordTown_Movement_BrineyBoardBoat
+	applymovement LOCALID_BRINEY_DEWFORD, Common_Movement_WalkUp
 	waitmovement 0
 	removeobject LOCALID_BRINEY_DEWFORD
 	applymovement OBJ_EVENT_ID_PLAYER, DewfordTown_Movement_PlayerBoardBoat
@@ -158,7 +158,7 @@ DewfordTown_EventScript_SailToSlateport::
 	call EventScript_BackupMrBrineyLocation
 	setobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN, 0
 	setobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_DEWFORD_TOWN, 1
-	applymovement LOCALID_BRINEY_DEWFORD, DewfordTown_Movement_BrineyBoardBoat
+	applymovement LOCALID_BRINEY_DEWFORD, Common_Movement_WalkUp
 	waitmovement 0
 	removeobject LOCALID_BRINEY_DEWFORD
 	applymovement OBJ_EVENT_ID_PLAYER, DewfordTown_Movement_PlayerBoardBoat
@@ -175,7 +175,7 @@ DewfordTown_EventScript_SailToSlateport::
 	setobjectxyperm LOCALID_BRINEY_R109, 21, 26
 	addobject LOCALID_BRINEY_R109
 	setobjectsubpriority LOCALID_BRINEY_R109, MAP_ROUTE109, 0
-	applymovement LOCALID_BRINEY_R109, DewfordTown_Movement_BrineyExitBoat
+	applymovement LOCALID_BRINEY_R109, Common_Movement_WalkUp2
 	waitmovement 0
 	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY
 	addobject LOCALID_BOAT_R109
@@ -589,15 +589,6 @@ DewfordTown_Movement_ExitBoatSlateport:
 	walk_in_place_faster_down
 	step_end
 
-DewfordTown_Movement_BrineyBoardBoat:
-	walk_up
-	step_end
-
-DewfordTown_Movement_BrineyExitBoat:
-	walk_up
-	walk_up
-	step_end
-
 DewfordTown_EventScript_TrendyPhraseBoy::
 	lock
 	faceplayer
@@ -743,10 +734,7 @@ DewfordTown_Text_FishingAdvice:
 	.string "then use the Rod.\p"
 	.string "Focus your mind…\n"
 	.string "If you get a bite, pull the Rod.\p"
-	.string "Sometimes you can snag something\n"
-	.string "immediately, but with bigger catches,\l"
-	.string "you need to time the pulls on your Rod\l"
-	.string "to haul them in.$"
+	.string "It should snag immediately.$"
 
 DewfordTown_Text_XIsTheBiggestHappeningThingRight:
 	.string "I like what's hip, happening, and trendy.\n"

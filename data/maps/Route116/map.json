@@ -568,6 +568,14 @@
       "elevation": 3,
       "item": "ITEM_BIG_PEARL",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_116_BIG_PEARL"
+    },
+    {
+      "type": "sign",
+      "x": 85,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route116_EventScript_CaveOfDreamsSign"
     }
   ]
 }

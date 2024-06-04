@@ -117,7 +117,7 @@ RusturfTunnel_EventScript_FaceWandasBoyfriend3::
 
 RusturfTunnel_EventScript_WandasBoyfriendApproachPlayer::
 	closemessage
-	applymovement LOCALID_WANDAS_BF, RusturfTunnel_Movement_WandasBoyfriendApproachPlayer
+	applymovement LOCALID_WANDAS_BF, Common_Movement_WalkRight
 	waitmovement 0
 	return
 
@@ -221,10 +221,6 @@ RusturfTunnel_Movement_WandasBoyfriendExit:
 	walk_down
 	walk_down
 	walk_down
-	step_end
-
-RusturfTunnel_Movement_WandasBoyfriendApproachPlayer:
-	walk_right
 	step_end
 
 RusturfTunnel_Movement_BoyfriendApproachWanda1:

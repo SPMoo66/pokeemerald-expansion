@@ -1893,6 +1893,49 @@ Sakura_Town01::
 	end
 
 
+LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox::
+# 953 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	lock
+# 954 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	checkitem ITEM_EXP_CHARM
+# 955 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_ne LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_2
+# 963 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_2
+# 964 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_3, MSGBOX_YESNO
+# 965 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_7
+LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_1:
+# 969 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	closemessage
+# 970 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	release
+	return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_2:
+# 956 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_0, MSGBOX_YESNO
+# 957 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_5
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_1
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_5:
+# 958 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	removeitem ITEM_EXP_CHARM
+# 959 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_1
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_1
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_7:
+# 966 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	giveitem ITEM_EXP_CHARM
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_1
+
+
 Sakura_Town01_Text_0:
 # 947 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Sakura: So you got your starter\n"
@@ -1910,3 +1953,21 @@ Sakura_Town01_Text_0:
 	.string "a Pokémon game.\p"
 	.string "You're so weird sometimes, {PLAYER},\n"
 	.string "hahaha.$"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_0:
+# 956 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	.string "Return the Exp. Charm to the box?$"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_1:
+# 959 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	.string "The Exp. Charm was returned to the box.$"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_2:
+# 963 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	.string "There's an Exp. Charm in the box!$"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_3:
+# 964 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	.string "WARNING: The game is not balanced\n"
+	.string "around the use of the Exp. Charm.\p"
+	.string "Take the Exp. Charm anyway?$"

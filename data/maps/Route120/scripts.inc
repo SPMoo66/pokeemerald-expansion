@@ -403,7 +403,7 @@ Route120_EventScript_StevenBattleKecleon::
 # 202 "data/maps/Route120/scripts.pory"
 	waitmoncry
 # 203 "data/maps/Route120/scripts.pory"
-	setwildbattle SPECIES_KECLEON, 30
+	setwildbattle SPECIES_KECLEON, 35
 # 204 "data/maps/Route120/scripts.pory"
 	setvar VAR_0x8009, 0
 # 205 "data/maps/Route120/scripts.pory"

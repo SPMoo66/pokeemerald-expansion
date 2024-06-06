@@ -180,12 +180,12 @@ Route114_EventScript_Kai::
 Route114_Text_AllMyMonDoesIsRoarTakeThis:
 	.string "All my Pokémon does is Roar…\n"
 	.string "No one dares to come near me…\p"
-	.string "Sigh… If you would, please take\n"
-	.string "this TM away…$"
+	.string "I'm so sorry. Please take this\n"
+	.string "to make up for it…$"
 
 Route114_Text_ExplainRoar:
-	.string "TM05 contains Roar.\n"
-	.string "A Roar sends Pokémon scurrying.$"
+	.string "I've been trying to train him,\n"
+	.string "but nothing seems to work.$"
 
 Route114_Text_Poochyena:
 	.string "Bow! Bowwow!$"

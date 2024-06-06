@@ -363,17 +363,17 @@ Route114_Text_AllMyMonDoesIsRoarTakeThis:
 # 182 "data/maps/Route114/scripts.pory"
 	.string "No one dares to come near me…\p"
 # 183 "data/maps/Route114/scripts.pory"
-	.string "Sigh… If you would, please take\n"
+	.string "I'm so sorry. Please take this\n"
 # 184 "data/maps/Route114/scripts.pory"
-	.string "this TM away…$"
+	.string "to make up for it…$"
 # 185 "data/maps/Route114/scripts.pory"
 
 # 186 "data/maps/Route114/scripts.pory"
 Route114_Text_ExplainRoar:
 # 187 "data/maps/Route114/scripts.pory"
-	.string "TM05 contains Roar.\n"
+	.string "I've been trying to train him,\n"
 # 188 "data/maps/Route114/scripts.pory"
-	.string "A Roar sends Pokémon scurrying.$"
+	.string "but nothing seems to work.$"
 # 189 "data/maps/Route114/scripts.pory"
 
 # 190 "data/maps/Route114/scripts.pory"

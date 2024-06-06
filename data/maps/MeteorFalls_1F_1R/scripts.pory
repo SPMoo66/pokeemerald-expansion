@@ -191,15 +191,18 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 						"That was scary…\p"
 						"What could that Team Magma be after?\n"
 						"If you're planning on going after\l"
-						"them, please be careful.")
+						"them, please be careful."
+						"Here, maybe this will help you.")
 			}
 			else {
 				msgbox ("Brendan: You're good, right?\n"
 						"That could have gone bad…\p"
 						"Team Magma… What do they want?\n"
 						"They said, Mt. Chimney…\l"
-						"If you're heading there, be safe.")
+						"If you're heading there, be safe."
+						"I think you'll be needing this")
 			}
+			giveitem (ITEM_SUPER_ROD)
 			closemessage
 			applymovement (LOCALID_RIVAL, MeteorFalls_1F_1R_Movement_ArchieExit)
 			waitmovement (0)

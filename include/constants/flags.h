@@ -248,7 +248,7 @@
 #define FLAG_RECEIVED_STARTER_DOLL           0xE2
 #define FLAG_RECEIVED_GOOD_ROD               0xE3
 #define FLAG_REGI_DOORS_OPENED               0xE4
-#define FLAG_RECEIVED_RARE_CANDY_COZMOS      0xE5
+#define FLAG_RECEIVED_BOTTLE_CAP_COZMOS      0xE5
 #define FLAG_UNUSED_0xE6                     0xE6 // Unused, was used when receiving Sludge Bomb TM gift
 #define FLAG_RECEIVED_RARE_CANDY_ROAR        0xE7
 #define FLAG_RECEIVED_TM_GIGA_DRAIN          0xE8

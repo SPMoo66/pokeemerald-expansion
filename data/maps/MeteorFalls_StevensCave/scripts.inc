@@ -55,5 +55,6 @@ MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
 	.string "And where will you go from here?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "Fufufu, even I couldn't tell you that.$"
+	.string "Fufufu, even I couldn't tell you that.\n"
+	.string "Maybe you'll invite me along?$"
 

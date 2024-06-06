@@ -192,7 +192,7 @@ FallarborTown_BattleTentLobby_EventScript_EndCancelChallenge::
 
 FallarborTown_BattleTentLobby_EventScript_WalkToDoor::
 	applymovement LOCALID_ATTENDANT, FallarborTown_BattleTentLobby_Movement_AttendantWalkToDoor
-	applymovement OBJ_EVENT_ID_PLAYER, FallarborTown_BattleTentLobby_Movement_PlayerWalkToDoor
+	applymovement OBJ_EVENT_ID_PLAYER, FallarborTown_BattleTentLobby_Movement_AttendantWalkToDoor
 	waitmovement 0
 	opendoor 6, 1
 	waitdooranim
@@ -213,13 +213,6 @@ FallarborTown_BattleTentLobby_Movement_AttendantEnterDoor:
 	walk_up
 	set_invisible
 	step_end
-
-FallarborTown_BattleTentLobby_Movement_PlayerWalkToDoor:
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
 FallarborTown_BattleTentLobby_Movement_PlayerEnterDoor:
 	walk_up
 	walk_up

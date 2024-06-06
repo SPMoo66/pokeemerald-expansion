@@ -708,7 +708,7 @@ Route103_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq Route103_EventScript_ChallengeBall1_2
 Route103_EventScript_ChallengeBall1_1:
-# 368 "data/maps/Route103/scripts.pory"
+# 369 "data/maps/Route103/scripts.pory"
 	release
 	return
 
@@ -733,6 +733,8 @@ Route103_EventScript_ChallengeBall1_2:
 	clearflag FLAG_SMART_WILD_AI
 # 366 "data/maps/Route103/scripts.pory"
 	finditem ITEM_BRIGHT_POWDER, 1
+# 367 "data/maps/Route103/scripts.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route103_EventScript_ChallengeBall1_1
 
 

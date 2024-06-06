@@ -1530,7 +1530,7 @@ LilycoveCity_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq LilycoveCity_EventScript_ChallengeBall1_2
 LilycoveCity_EventScript_ChallengeBall1_1:
-# 780 "data/maps/LilycoveCity/scripts.pory"
+# 781 "data/maps/LilycoveCity/scripts.pory"
 	release
 	return
 
@@ -1557,6 +1557,8 @@ LilycoveCity_EventScript_ChallengeBall1_2:
 	clearflag FLAG_SMART_WILD_AI
 # 778 "data/maps/LilycoveCity/scripts.pory"
 	finditem ITEM_ROCKY_HELMET, 1
+# 779 "data/maps/LilycoveCity/scripts.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
 	goto LilycoveCity_EventScript_ChallengeBall1_1
 
 

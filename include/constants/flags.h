@@ -282,7 +282,7 @@
 #define FLAG_RECEIVED_COIN_CASE              0x102
 #define FLAG_RETURNED_RED_OR_BLUE_ORB        0x103
 #define FLAG_RECEIVED_RARE_CANDY_SNATCH      0x104
-#define FLAG_RECEIVED_TM_DIG                 0x105
+#define FLAG_UNUSED_0x105                    0x105 // Unused, was for TM Dig
 #define FLAG_RECEIVED_DOWSING_MACHINE        0x106
 #define FLAG_ENTERED_ELITE_FOUR              0x107
 #define FLAG_RECEIVED_ROTOM_CATALOG          0x108

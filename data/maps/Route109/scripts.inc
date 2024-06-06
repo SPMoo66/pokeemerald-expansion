@@ -1120,7 +1120,7 @@ Route109_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq Route109_EventScript_ChallengeBall1_2
 Route109_EventScript_ChallengeBall1_1:
-# 574 "data/maps/Route109/scripts.pory"
+# 575 "data/maps/Route109/scripts.pory"
 	release
 	return
 
@@ -1145,6 +1145,8 @@ Route109_EventScript_ChallengeBall1_2:
 	clearflag FLAG_SMART_WILD_AI
 # 572 "data/maps/Route109/scripts.pory"
 	finditem ITEM_CLEAR_AMULET, 1
+# 573 "data/maps/Route109/scripts.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route109_EventScript_ChallengeBall1_1
 
 

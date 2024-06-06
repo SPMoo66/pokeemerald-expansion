@@ -954,7 +954,7 @@ Route120_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq Route120_EventScript_ChallengeBall1_2
 Route120_EventScript_ChallengeBall1_1:
-# 493 "data/maps/Route120/scripts.pory"
+# 494 "data/maps/Route120/scripts.pory"
 	release
 	return
 
@@ -979,6 +979,8 @@ Route120_EventScript_ChallengeBall1_2:
 	clearflag FLAG_SMART_WILD_AI
 # 491 "data/maps/Route120/scripts.pory"
 	finditem ITEM_HEAVY_DUTY_BOOTS, 1
+# 492 "data/maps/Route120/scripts.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route120_EventScript_ChallengeBall1_1
 
 

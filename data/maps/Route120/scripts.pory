@@ -489,6 +489,7 @@ script Route120_EventScript_ChallengeBall1 {
 		clearflag (FLAG_NO_RUNNING)
 		clearflag (FLAG_SMART_WILD_AI)
 		finditem (ITEM_HEAVY_DUTY_BOOTS, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
 	}
 	release
 }

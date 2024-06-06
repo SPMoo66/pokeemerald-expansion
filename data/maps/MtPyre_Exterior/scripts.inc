@@ -62,7 +62,7 @@ MtPyre_Exterior_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq MtPyre_Exterior_EventScript_ChallengeBall1_2
 MtPyre_Exterior_EventScript_ChallengeBall1_1:
-# 46 "data/maps/MtPyre_Exterior/scripts.pory"
+# 47 "data/maps/MtPyre_Exterior/scripts.pory"
 	release
 	return
 
@@ -89,6 +89,8 @@ MtPyre_Exterior_EventScript_ChallengeBall1_2:
 	clearflag FLAG_SMART_WILD_AI
 # 44 "data/maps/MtPyre_Exterior/scripts.pory"
 	finditem ITEM_BLACK_SLUDGE, 1
+# 45 "data/maps/MtPyre_Exterior/scripts.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
 	goto MtPyre_Exterior_EventScript_ChallengeBall1_1
 
 

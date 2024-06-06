@@ -424,7 +424,7 @@ Route117_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq Route117_EventScript_ChallengeBall1_2
 Route117_EventScript_ChallengeBall1_1:
-# 226 "data/maps/Route117/scripts.pory"
+# 227 "data/maps/Route117/scripts.pory"
 	release
 	return
 
@@ -449,6 +449,8 @@ Route117_EventScript_ChallengeBall1_2:
 	clearflag FLAG_SMART_WILD_AI
 # 224 "data/maps/Route117/scripts.pory"
 	finditem ITEM_LUCKY_EGG, 1
+# 225 "data/maps/Route117/scripts.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route117_EventScript_ChallengeBall1_1
 
 

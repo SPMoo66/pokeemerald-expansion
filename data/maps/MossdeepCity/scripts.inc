@@ -859,7 +859,7 @@ MossdeepCity_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq MossdeepCity_EventScript_ChallengeBall1_2
 MossdeepCity_EventScript_ChallengeBall1_1:
-# 446 "data/maps/MossdeepCity/scripts.pory"
+# 447 "data/maps/MossdeepCity/scripts.pory"
 	release
 	return
 
@@ -886,11 +886,13 @@ MossdeepCity_EventScript_ChallengeBall1_2:
 	clearflag FLAG_SMART_WILD_AI
 # 444 "data/maps/MossdeepCity/scripts.pory"
 	finditem ITEM_FOCUS_SASH, 1
+# 445 "data/maps/MossdeepCity/scripts.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
 	goto MossdeepCity_EventScript_ChallengeBall1_1
 
 
 MossdeepCity_EventScript_WhiteRock::
-# 450 "data/maps/MossdeepCity/scripts.pory"
+# 451 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_WhiteRock_Text_0, MSGBOX_SIGN
 	return
 
@@ -902,5 +904,5 @@ MossdeepCity_EventScript_ChallengeBall1_Text_0:
 	.string "Reach out for the item?$"
 
 MossdeepCity_EventScript_WhiteRock_Text_0:
-# 450 "data/maps/MossdeepCity/scripts.pory"
+# 451 "data/maps/MossdeepCity/scripts.pory"
 	.string "It's a white rock.$"

@@ -1936,7 +1936,7 @@ Route110_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq Route110_EventScript_ChallengeBall1_2
 Route110_EventScript_ChallengeBall1_1:
-# 983 "data/maps/Route110/scripts.pory"
+# 984 "data/maps/Route110/scripts.pory"
 	release
 	return
 
@@ -1963,43 +1963,47 @@ Route110_EventScript_ChallengeBall1_2:
 	clearflag FLAG_SMART_WILD_AI
 # 981 "data/maps/Route110/scripts.pory"
 	finditem ITEM_WIDE_LENS, 1
+# 982 "data/maps/Route110/scripts.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route110_EventScript_ChallengeBall1_1
 
 
 Route110_EventScript_ChallengeBall2::
-# 987 "data/maps/Route110/scripts.pory"
-	lock
 # 988 "data/maps/Route110/scripts.pory"
-	msgbox Route110_EventScript_ChallengeBall2_Text_0, MSGBOX_YESNO
+	lock
 # 989 "data/maps/Route110/scripts.pory"
+	msgbox Route110_EventScript_ChallengeBall2_Text_0, MSGBOX_YESNO
+# 990 "data/maps/Route110/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route110_EventScript_ChallengeBall2_2
 Route110_EventScript_ChallengeBall2_1:
-# 1001 "data/maps/Route110/scripts.pory"
+# 1003 "data/maps/Route110/scripts.pory"
 	release
 	return
 
 Route110_EventScript_ChallengeBall2_2:
-# 990 "data/maps/Route110/scripts.pory"
-	setflag FLAG_NO_CATCHING
 # 991 "data/maps/Route110/scripts.pory"
-	setflag FLAG_NO_RUNNING
+	setflag FLAG_NO_CATCHING
 # 992 "data/maps/Route110/scripts.pory"
-	setflag FLAG_SMART_WILD_AI
+	setflag FLAG_NO_RUNNING
 # 993 "data/maps/Route110/scripts.pory"
-	settotemboost 1, 0, 0, 3
+	setflag FLAG_SMART_WILD_AI
 # 994 "data/maps/Route110/scripts.pory"
-	setwildbattle SPECIES_TORKOAL, 32, ITEM_NONE, 1, SPECIES_WHIMSICOTT, 32, ITEM_NONE, 2, MOVE_STEALTH_ROCK, MOVE_FLAME_CHARGE, MOVE_CURSE, MOVE_ROCK_TOMB, MOVE_TAILWIND, MOVE_GROWTH, MOVE_COTTON_SPORE, MOVE_GRASS_KNOT
+	settotemboost 1, 0, 0, 3
 # 995 "data/maps/Route110/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_TORKOAL, 32, ITEM_NONE, 1, SPECIES_WHIMSICOTT, 32, ITEM_NONE, 2, MOVE_STEALTH_ROCK, MOVE_FLAME_CHARGE, MOVE_CURSE, MOVE_ROCK_TOMB, MOVE_TAILWIND, MOVE_GROWTH, MOVE_COTTON_SPORE, MOVE_GRASS_KNOT
 # 996 "data/maps/Route110/scripts.pory"
-	clearflag FLAG_NO_CATCHING
+	dowildbattle
 # 997 "data/maps/Route110/scripts.pory"
-	clearflag FLAG_NO_RUNNING
+	clearflag FLAG_NO_CATCHING
 # 998 "data/maps/Route110/scripts.pory"
-	clearflag FLAG_SMART_WILD_AI
+	clearflag FLAG_NO_RUNNING
 # 999 "data/maps/Route110/scripts.pory"
+	clearflag FLAG_SMART_WILD_AI
+# 1000 "data/maps/Route110/scripts.pory"
 	finditem ITEM_ZOOM_LENS, 1
+# 1001 "data/maps/Route110/scripts.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route110_EventScript_ChallengeBall2_1
 
 
@@ -2009,7 +2013,7 @@ Route110_EventScript_ChallengeBall1_Text_0:
 	.string "Reach out for the item?$"
 
 Route110_EventScript_ChallengeBall2_Text_0:
-# 988 "data/maps/Route110/scripts.pory"
+# 989 "data/maps/Route110/scripts.pory"
 	.string "You sense a drought approaching\n"
 	.string "quickly.\p"
 	.string "Reach out for the item?$"

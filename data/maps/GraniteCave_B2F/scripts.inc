@@ -96,7 +96,7 @@ GraniteCave_B2F_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq GraniteCave_B2F_EventScript_ChallengeBall1_2
 GraniteCave_B2F_EventScript_ChallengeBall1_1:
-# 62 "data/maps/GraniteCave_B2F/scripts.pory"
+# 63 "data/maps/GraniteCave_B2F/scripts.pory"
 	release
 	return
 
@@ -121,6 +121,8 @@ GraniteCave_B2F_EventScript_ChallengeBall1_2:
 	clearflag FLAG_SMART_WILD_AI
 # 60 "data/maps/GraniteCave_B2F/scripts.pory"
 	finditem ITEM_EXPERT_BELT, 1
+# 61 "data/maps/GraniteCave_B2F/scripts.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
 	goto GraniteCave_B2F_EventScript_ChallengeBall1_1
 
 

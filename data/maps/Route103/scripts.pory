@@ -364,6 +364,7 @@ script Route103_EventScript_ChallengeBall1 {
 		clearflag (FLAG_NO_RUNNING)
 		clearflag (FLAG_SMART_WILD_AI)
 		finditem (ITEM_BRIGHT_POWDER, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
 	}
 	release
 }

@@ -605,7 +605,7 @@ MeteorFalls_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq MeteorFalls_EventScript_ChallengeBall1_2
 MeteorFalls_EventScript_ChallengeBall1_1:
-# 345 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 346 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	release
 	return
 
@@ -632,6 +632,8 @@ MeteorFalls_EventScript_ChallengeBall1_2:
 	clearflag FLAG_SMART_WILD_AI
 # 343 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	finditem ITEM_ASSAULT_VEST, 1
+# 344 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
 	goto MeteorFalls_EventScript_ChallengeBall1_1
 
 

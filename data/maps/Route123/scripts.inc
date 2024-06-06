@@ -404,7 +404,7 @@ Route123_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq Route123_EventScript_ChallengeBall1_2
 Route123_EventScript_ChallengeBall1_1:
-# 216 "data/maps/Route123/scripts.pory"
+# 217 "data/maps/Route123/scripts.pory"
 	release
 	return
 
@@ -429,6 +429,8 @@ Route123_EventScript_ChallengeBall1_2:
 	clearflag FLAG_SMART_WILD_AI
 # 214 "data/maps/Route123/scripts.pory"
 	finditem ITEM_LEFTOVERS, 1
+# 215 "data/maps/Route123/scripts.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route123_EventScript_ChallengeBall1_1
 
 

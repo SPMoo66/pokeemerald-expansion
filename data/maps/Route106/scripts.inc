@@ -104,7 +104,7 @@ Route106_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq Route106_EventScript_ChallengeBall1_2
 Route106_EventScript_ChallengeBall1_1:
-# 67 "data/maps/Route106/scripts.pory"
+# 68 "data/maps/Route106/scripts.pory"
 	release
 	return
 
@@ -131,6 +131,8 @@ Route106_EventScript_ChallengeBall1_2:
 	clearflag FLAG_SMART_WILD_AI
 # 65 "data/maps/Route106/scripts.pory"
 	finditem ITEM_ESCAPE_ROPE, 1
+# 66 "data/maps/Route106/scripts.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route106_EventScript_ChallengeBall1_1
 
 

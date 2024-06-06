@@ -24,9 +24,7 @@ Route118_OnFrame:
 	.2byte 0
 
 Route118_EventScript_GoodRodFisherman::
-	lock
-	faceplayer
-	msgbox Route118_Text_TryYourLuckFishing, MSGBOX_DEFAULT
+	msgbox Route118_Text_TryYourLuckFishing, MSGBOX_NPC
 	end
 
 Route118_EventScript_Girl::
@@ -268,6 +266,7 @@ script Route118_EventScript_ChallengeBall1 {
 		clearflag (FLAG_NO_RUNNING)
 		clearflag (FLAG_SMART_WILD_AI)
 		finditem (ITEM_SCOPE_LENS, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
 	}
 	release
 }

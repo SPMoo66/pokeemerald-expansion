@@ -340,7 +340,7 @@ Route113_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq Route113_EventScript_ChallengeBall1_2
 Route113_EventScript_ChallengeBall1_1:
-# 185 "data/maps/Route113/scripts.pory"
+# 186 "data/maps/Route113/scripts.pory"
 	release
 	return
 
@@ -367,45 +367,49 @@ Route113_EventScript_ChallengeBall1_2:
 	clearflag FLAG_SMART_WILD_AI
 # 183 "data/maps/Route113/scripts.pory"
 	finditem ITEM_WISE_GLASSES, 1
+# 184 "data/maps/Route113/scripts.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route113_EventScript_ChallengeBall1_1
 
 
 Route113_EventScript_ChallengeBall2::
-# 189 "data/maps/Route113/scripts.pory"
-	lock
 # 190 "data/maps/Route113/scripts.pory"
-	msgbox Route113_EventScript_ChallengeBall2_Text_0, MSGBOX_YESNO
+	lock
 # 191 "data/maps/Route113/scripts.pory"
+	msgbox Route113_EventScript_ChallengeBall2_Text_0, MSGBOX_YESNO
+# 192 "data/maps/Route113/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route113_EventScript_ChallengeBall2_2
 Route113_EventScript_ChallengeBall2_1:
-# 204 "data/maps/Route113/scripts.pory"
+# 206 "data/maps/Route113/scripts.pory"
 	release
 	return
 
 Route113_EventScript_ChallengeBall2_2:
-# 192 "data/maps/Route113/scripts.pory"
-	setflag FLAG_NO_CATCHING
 # 193 "data/maps/Route113/scripts.pory"
-	setflag FLAG_NO_RUNNING
+	setflag FLAG_NO_CATCHING
 # 194 "data/maps/Route113/scripts.pory"
-	setflag FLAG_SMART_WILD_AI
+	setflag FLAG_NO_RUNNING
 # 195 "data/maps/Route113/scripts.pory"
-	setvar VAR_STARTING_STATUS, 5
+	setflag FLAG_SMART_WILD_AI
 # 196 "data/maps/Route113/scripts.pory"
-	setwildbattle SPECIES_CLODSIRE, 30, ITEM_NONE, 1, SPECIES_QUAGSIRE, 30, ITEM_NONE, 2, MOVE_ACID_SPRAY, MOVE_CHILLING_WATER, MOVE_HELPING_HAND, MOVE_LOW_KICK, MOVE_SURF, MOVE_ENDURE, MOVE_RAIN_DANCE, MOVE_TOXIC_SPIKES
+	setvar VAR_STARTING_STATUS, 5
 # 197 "data/maps/Route113/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_CLODSIRE, 30, ITEM_NONE, 1, SPECIES_QUAGSIRE, 30, ITEM_NONE, 2, MOVE_ACID_SPRAY, MOVE_CHILLING_WATER, MOVE_HELPING_HAND, MOVE_LOW_KICK, MOVE_SURF, MOVE_ENDURE, MOVE_RAIN_DANCE, MOVE_TOXIC_SPIKES
 # 198 "data/maps/Route113/scripts.pory"
-	setvar VAR_STARTING_STATUS, 0
+	dowildbattle
 # 199 "data/maps/Route113/scripts.pory"
-	clearflag FLAG_NO_CATCHING
+	setvar VAR_STARTING_STATUS, 0
 # 200 "data/maps/Route113/scripts.pory"
-	clearflag FLAG_NO_RUNNING
+	clearflag FLAG_NO_CATCHING
 # 201 "data/maps/Route113/scripts.pory"
-	clearflag FLAG_SMART_WILD_AI
+	clearflag FLAG_NO_RUNNING
 # 202 "data/maps/Route113/scripts.pory"
+	clearflag FLAG_SMART_WILD_AI
+# 203 "data/maps/Route113/scripts.pory"
 	finditem ITEM_MUSCLE_BAND, 1
+# 204 "data/maps/Route113/scripts.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route113_EventScript_ChallengeBall2_1
 
 
@@ -415,6 +419,6 @@ Route113_EventScript_ChallengeBall1_Text_0:
 	.string "Reach out for the item?$"
 
 Route113_EventScript_ChallengeBall2_Text_0:
-# 190 "data/maps/Route113/scripts.pory"
+# 191 "data/maps/Route113/scripts.pory"
 	.string "You feel a trickster's presence.\p"
 	.string "Reach out for the item?$"

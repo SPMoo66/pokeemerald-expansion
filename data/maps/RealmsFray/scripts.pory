@@ -3,3 +3,18 @@ mapscripts RealmsFray_MapScripts {}
 script RealmsFray_Portal {
 	warp(MAP_ROUTE120, 2)
 }
+
+script RealmsFray_MegaStone_Vending_Machine {
+	lock
+	msgbox(gText_HowMayIServeYou)
+	pokemart (MegaStonesMart)
+	msgbox(gText_PleaseComeAgain)
+	release
+}
+
+mart MegaStonesMart {
+	ITEM_MEGA_STONE_X
+	ITEM_MEGA_STONE_Y
+	ITEM_MEGA_STONE_G
+}
+

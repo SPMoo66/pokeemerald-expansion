@@ -4709,43 +4709,43 @@ const struct Item gItemsInfo[] =
     [ITEM_MEGA_STONE_X] =
     {
         .name = _("Megalite X"),
-        .price = 0,
+        .price = 1000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sMegaStoneXDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 80,
+        .flingPower = 70,
     },
 
     [ITEM_MEGA_STONE_Y] =
     {
         .name = _("Megalite Y"),
-        .price = 0,
+        .price = 1000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sMegaStoneYDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 80,
+        .flingPower = 70,
     },
 
     [ITEM_MEGA_STONE_G] =
     {
         .name = _("Megalite G"),
-        .price = 0,
+        .price = 1000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sMegaStoneGDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 80,
+        .flingPower = 70,
     },
 
     [ITEM_MEGA_STONE_LX] =
     {
         .name = _("Megalite LX"),
-        .price = 0,
+        .price = 3000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sMegaStoneLXDesc,
         .pocket = POCKET_ITEMS,
@@ -4757,7 +4757,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MEGA_STONE_LY] =
     {
         .name = _("Megalite LY"),
-        .price = 0,
+        .price = 3000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sMegaStoneLYDesc,
         .pocket = POCKET_ITEMS,

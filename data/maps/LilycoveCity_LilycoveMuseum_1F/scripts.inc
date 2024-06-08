@@ -35,7 +35,7 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_NotInterested::
 
 LilycoveCity_LilycoveMuseum_1F_EventScript_InterestedInPaintings::
 	msgbox LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouComeWithMe, MSGBOX_SIGN
-	applymovement LOCALID_CURATOR, LilycoveCity_LilycoveMuseum_1F_Movement_CuratorEnterStairs
+	applymovement LOCALID_CURATOR, Common_Movement_WalkUp
 	waitmovement 0
 	removeobject LOCALID_CURATOR
 	switch VAR_FACING
@@ -46,7 +46,7 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_InterestedInPaintings::
 
 LilycoveCity_LilycoveMuseum_1F_EventScript_FollowCuratorNorth::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_LilycoveMuseum_1F_Movement_FollowCuratorNorth
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
 	waitmovement 0
 	warp MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_2F, 11, 8
 	waitstate
@@ -68,10 +68,6 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_FollowCuratorEast::
 	waitstate
 	end
 
-LilycoveCity_LilycoveMuseum_1F_Movement_CuratorEnterStairs:
-	walk_up
-	step_end
-
 LilycoveCity_LilycoveMuseum_1F_Movement_FollowCuratorWest:
 	walk_left
 	walk_up
@@ -79,11 +75,6 @@ LilycoveCity_LilycoveMuseum_1F_Movement_FollowCuratorWest:
 
 LilycoveCity_LilycoveMuseum_1F_Movement_FollowCuratorEast:
 	walk_right
-	walk_up
-	step_end
-
-LilycoveCity_LilycoveMuseum_1F_Movement_FollowCuratorNorth:
-	walk_up
 	walk_up
 	step_end
 

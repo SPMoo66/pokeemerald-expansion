@@ -382,7 +382,7 @@ LilycoveCity_Harbor_EventScript_PlayerBoardFerryEast::
 	return
 
 LilycoveCity_Harbor_EventScript_PlayerBoardFerryNorth::
-	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_Harbor_Movement_PlayerBoardFerryNorth
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
 	waitmovement 0
 	return
 
@@ -394,10 +394,6 @@ LilycoveCity_Harbor_EventScript_ExitSailSelect::
 LilycoveCity_Harbor_Movement_PlayerBoardFerryEast:
 	walk_right
 	walk_in_place_faster_up
-	step_end
-
-LilycoveCity_Harbor_Movement_PlayerBoardFerryNorth:
-	walk_up
 	step_end
 
 LilycoveCity_Harbor_EventScript_Sailor::

@@ -61,7 +61,7 @@ Route128_EventScript_KyogreAwakenedScene::
 	waitmovement 0
 	msgbox Route128_Text_StevenWhatIsHappening, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_STEVEN, Route128_Movement_StevenWalkUp
+	applymovement LOCALID_STEVEN, Common_Movement_WalkUp
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox Route128_Text_StevenWholeWorldWillDrown, MSGBOX_DEFAULT
@@ -81,10 +81,6 @@ Route128_EventScript_KyogreAwakenedScene::
 	setvar VAR_ROUTE128_STATE, 2
 	releaseall
 	end
-
-Route128_Movement_StevenWalkUp:
-	walk_up
-	step_end
 
 Route128_Movement_StevenApproachPlayer:
 	walk_fast_left

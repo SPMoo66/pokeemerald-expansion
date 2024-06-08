@@ -76,16 +76,12 @@ FortreeCity_EventScript_UseDevonScope::
 	playmoncry SPECIES_KECLEON, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	applymovement VAR_LAST_TALKED, FortreeCity_Movement_KecleonFlee
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkRight
 	waitmovement 0
 	removeobject VAR_LAST_TALKED
 	setflag FLAG_KECLEON_FLED_FORTREE
 	release
 	end
-
-FortreeCity_Movement_KecleonFlee:
-	walk_right
-	step_end
 
 FortreeCity_Text_SawGiganticPokemonInSky:
 	.string "No one believes me, but I saw this\n"

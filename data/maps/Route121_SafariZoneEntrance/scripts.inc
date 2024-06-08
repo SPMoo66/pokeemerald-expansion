@@ -105,14 +105,10 @@ Route121_SafariZoneEntrance_EventScript_NotEnoughMoney::
 Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter::
 	closemessage
 	hidemoneybox
-	applymovement OBJ_EVENT_ID_PLAYER, Route121_SafariZoneEntrance_Movement_BackAwayFromCounter
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight
 	waitmovement 0
 	releaseall
 	end
-
-Route121_SafariZoneEntrance_Movement_BackAwayFromCounter:
-	walk_right
-	step_end
 
 Route121_SafariZoneEntrance_Movement_EnterSafariZone:
 	walk_left

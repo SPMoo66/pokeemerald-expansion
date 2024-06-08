@@ -43,7 +43,7 @@ LilycoveCity_ContestLobby_EventScript_ContestArtist::
 	addobject LOCALID_ARTIST
 	applymovement LOCALID_ARTIST, LilycoveCity_ContestLobby_Movement_ArtistApproachPlayer
 	waitmovement LOCALID_ARTIST
-	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_ContestLobby_Movement_PlayerFaceArtist
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint, MSGBOX_DEFAULT
 	lockall
@@ -63,7 +63,7 @@ LilycoveCity_ContestLobby_EventScript_TakePaintingToMuseum::
 	setvar VAR_LILYCOVE_CONTEST_LOBBY_STATE, 0
 	specialvar VAR_RESULT, GiveMonArtistRibbon
 	call_if_eq VAR_RESULT, TRUE, LilycoveCity_ContestLobby_EventScript_ReceivedArtistRibbon
-	applymovement LOCALID_ARTIST, LilycoveCity_ContestLobby_Movement_ArtistExit
+	applymovement LOCALID_ARTIST, Common_Movement_WalkDown8
 	waitmovement 0
 	removeobject LOCALID_ARTIST
 	call LilycoveCity_ContestLobby_EventScript_UpdateMuseumPatrons
@@ -76,7 +76,7 @@ LilycoveCity_ContestLobby_EventScript_ConfirmDontTakePainting::
 	goto_if_eq VAR_RESULT, YES, LilycoveCity_ContestLobby_EventScript_TakePaintingToMuseum
 	msgbox LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_ARTIST, LilycoveCity_ContestLobby_Movement_ArtistExit
+	applymovement LOCALID_ARTIST, Common_Movement_WalkDown8
 	waitmovement 0
 	setvar VAR_LILYCOVE_CONTEST_LOBBY_STATE, 0
 	removeobject LOCALID_ARTIST
@@ -171,21 +171,6 @@ LilycoveCity_ContestLobby_Movement_ArtistApproachPlayer:
 	walk_right
 	step_end
 
-LilycoveCity_ContestLobby_Movement_ArtistExit:
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	step_end
-
-LilycoveCity_ContestLobby_Movement_PlayerFaceArtist:
-	walk_in_place_faster_left
-	step_end
-
 LilycoveCity_ContestLobby_Movement_ArtistBeginToExit:
 	walk_down
 	walk_down
@@ -213,7 +198,7 @@ LilycoveCity_ContestLobby_EventScript_LinkContestArtist::
 	addobject LOCALID_ARTIST_LINK
 	applymovement LOCALID_ARTIST_LINK, LilycoveCity_ContestLobby_Movement_LinkArtistApproachPlayer
 	waitmovement LOCALID_ARTIST_LINK
-	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_ContestLobby_Movement_PlayerFaceLinkArtist
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	msgbox LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint, MSGBOX_DEFAULT
 	lockall
@@ -231,7 +216,7 @@ LilycoveCity_ContestLobby_EventScript_TakePaintingToMuseumLink::
 	setvar VAR_LILYCOVE_CONTEST_LOBBY_STATE, 0
 	specialvar VAR_RESULT, GiveMonArtistRibbon
 	call_if_eq VAR_RESULT, TRUE, LilycoveCity_ContestLobby_EventScript_ReceivedLinkArtistRibbon
-	applymovement LOCALID_ARTIST_LINK, LilycoveCity_ContestLobby_Movement_LinkArtistExit
+	applymovement LOCALID_ARTIST_LINK, Common_Movement_WalkDown8
 	waitmovement 0
 	removeobject LOCALID_ARTIST_LINK
 	call LilycoveCity_ContestLobby_EventScript_UpdateMuseumPatrons
@@ -244,7 +229,7 @@ LilycoveCity_ContestLobby_EventScript_ConfirmDontTakePaintingLink::
 	goto_if_eq VAR_RESULT, YES, LilycoveCity_ContestLobby_EventScript_TakePaintingToMuseumLink
 	msgbox LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_ARTIST_LINK, LilycoveCity_ContestLobby_Movement_LinkArtistExit
+	applymovement LOCALID_ARTIST_LINK, Common_Movement_WalkDown8
 	waitmovement 0
 	setvar VAR_LILYCOVE_CONTEST_LOBBY_STATE, 0
 	removeobject LOCALID_ARTIST_LINK
@@ -255,7 +240,7 @@ LilycoveCity_ContestLobby_EventScript_ReceivedLinkArtistRibbon::
 	incrementgamestat GAME_STAT_RECEIVED_RIBBONS
 	setflag FLAG_SYS_RIBBON_GET
 	special BufferContestWinnerMonName
-	applymovement LOCALID_ARTIST_LINK, LilycoveCity_ContestLobby_Movement_LinkArtistBeginExit
+	applymovement LOCALID_ARTIST_LINK, LilycoveCity_ContestLobby_Movement_ArtistBeginToExit
 	waitmovement 0
 	playse SE_PIN
 	applymovement LOCALID_ARTIST_LINK, Common_Movement_ExclamationMark
@@ -280,27 +265,6 @@ LilycoveCity_ContestLobby_Movement_LinkArtistApproachPlayer:
 	walk_left
 	walk_left
 	walk_left
-	step_end
-
-LilycoveCity_ContestLobby_Movement_LinkArtistExit:
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	step_end
-
-LilycoveCity_ContestLobby_Movement_PlayerFaceLinkArtist:
-	walk_in_place_faster_right
-	step_end
-
-LilycoveCity_ContestLobby_Movement_LinkArtistBeginExit:
-	walk_down
-	walk_down
-	walk_down
 	step_end
 
 LilycoveCity_ContestLobby_Movement_LinkArtistReturnToPlayer:
@@ -418,7 +382,7 @@ LilycoveCity_ContestLobby_EventScript_LeadToContestHall::
 	setmetatile 12, 3, METATILE_Contest_CounterFlap_Bottom, TRUE
 	special DrawWholeMapView
 	delay 20
-	applymovement LOCALID_RECEPTIONIST, LilycoveCity_ContestLobby_Movement_ReceptionistFacePlayer
+	applymovement LOCALID_RECEPTIONIST, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_ContestLobby_Movement_PlayerApproachReceptionist
 	waitmovement 0
@@ -468,10 +432,6 @@ LilycoveCity_ContestLobby_Movement_ReceptionistWalkToContestHall:
 	walk_up
 	delay_8
 	set_invisible
-	step_end
-
-LilycoveCity_ContestLobby_Movement_ReceptionistFacePlayer:
-	walk_in_place_faster_right
 	step_end
 
 LilycoveCity_ContestLobby_EventScript_BlackBelt::
@@ -909,9 +869,9 @@ LilycoveCity_ContestLobby_EventScript_LeadToLinkContestHall::
 	setmetatile 17, 3, METATILE_Contest_CounterFlap_Bottom, TRUE
 	special DrawWholeMapView
 	delay 20
-	applymovement LOCALID_LINK_RECEPTIONIST, LilycoveCity_ContestLobby_Movement_LinkReceptionistFacePlayer
+	applymovement LOCALID_LINK_RECEPTIONIST, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_ContestLobby_Movement_PlayerApproachLinkReceptionist
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight
 	waitmovement 0
 	messageautoscroll LilycoveCity_ContestLobby_Text_ComeThroughHere
 	waitmessage
@@ -937,10 +897,6 @@ LilycoveCity_ContestLobby_Movement_PlayerWalkToLinkContestHall:
 	set_invisible
 	step_end
 
-LilycoveCity_ContestLobby_Movement_PlayerApproachLinkReceptionist:
-	walk_right
-	step_end
-
 LilycoveCity_ContestLobby_Movement_LinkReceptionistApproachCounter:
 	walk_right
 	walk_right
@@ -963,10 +919,6 @@ LilycoveCity_ContestLobby_Movement_LinkReceptionistWalkToContestHall:
 	walk_up
 	delay_8
 	set_invisible
-	step_end
-
-LilycoveCity_ContestLobby_Movement_LinkReceptionistFacePlayer:
-	walk_in_place_faster_left
 	step_end
 
 LilycoveCity_ContestLobby_EventScript_LittleGirl::

@@ -51,7 +51,7 @@ LilycoveCity_CoveLilyMotel_1F_EventScript_BlockingTV::
 	msgbox LilycoveCity_CoveLilyMotel_1F_Text_CantSeeTheTV, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_CoveLilyMotel_1F_Movement_PlayerPushFromTV
-	applymovement LOCALID_OWNER, LilycoveCity_CoveLilyMotel_1F_Movement_OwnerPushPlayer
+	applymovement LOCALID_OWNER, Common_Movement_WalkUp
 	waitmovement 0
 	applymovement LOCALID_OWNER, LilycoveCity_CoveLilyMotel_1F_Movement_OwnerReturn
 	waitmovement 0
@@ -63,10 +63,6 @@ LilycoveCity_CoveLilyMotel_1F_Movement_PlayerPushFromTV:
 	lock_facing_direction
 	walk_left
 	unlock_facing_direction
-	step_end
-
-LilycoveCity_CoveLilyMotel_1F_Movement_OwnerPushPlayer:
-	walk_up
 	step_end
 
 LilycoveCity_CoveLilyMotel_1F_Movement_OwnerReturn:

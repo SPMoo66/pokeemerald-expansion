@@ -10065,8 +10065,8 @@ const struct Item gItemsInfo[] =
         .price = 5000,
         .description = COMPOUND_STRING(
             "Fires an icy cold\n"
-            "beam that may\n"
-            "give the foe Frostbite."),
+            "beam that may give\n"
+            "the foe Frostbite."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

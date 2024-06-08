@@ -22,13 +22,13 @@ TrainerHill_Elevator_EventScript_ExitToRoof::
 TrainerHill_Elevator_EventScript_EnterElevator::
 	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Elevator_Movement_PlayerApproachAttendant
 	waitmovement 0
-	applymovement LOCALID_ATTENDANT, TrainerHill_Elevator_Movement_AttendantFacePlayer
+	applymovement LOCALID_ATTENDANT, Common_Movement_FaceRight
 	waitmovement 0
 	lockall
 	msgbox TrainerHill_Elevator_Text_ReturnToReception, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, TrainerHill_Elevator_EventScript_ExitToRoof
 	releaseall
-	applymovement LOCALID_ATTENDANT, TrainerHill_Elevator_Movement_AttendantFaceDown
+	applymovement LOCALID_ATTENDANT, Common_Movement_FaceDown
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Elevator_Movement_PlayerMoveToCenterOfElevator
 	waitmovement 0
@@ -67,13 +67,5 @@ TrainerHill_Elevator_Movement_PlayerExitElevator:
 TrainerHill_Elevator_Movement_PlayerExitElevatorToRoof:
 	face_down
 	delay_16
-	step_end
-
-TrainerHill_Elevator_Movement_AttendantFacePlayer:
-	face_right
-	step_end
-
-TrainerHill_Elevator_Movement_AttendantFaceDown:
-	face_down
 	step_end
 

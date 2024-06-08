@@ -194,9 +194,9 @@ ContestHall_EventScript_DoContest::
 	special LinkContestTryShowWirelessIndicator
 	setvar VAR_0x8006, 0
 	lockall
-	applymovement LOCALID_CONTESTANT_4, ContestHall_Movement_Player4FaceUp
+	applymovement LOCALID_CONTESTANT_4, Common_Movement_FaceUp
 	waitmovement 0
-	applymovement LOCALID_MC, ContestHall_Movement_MCWalkDown
+	applymovement LOCALID_MC, Common_Movement_WalkDown
 	waitmovement 0
 	releaseall
 	call ContestHall_EventScript_TryWaitForLink
@@ -372,7 +372,7 @@ ContestHall_EventScript_ShowContestMonPic::
 	addvar VAR_0x8006, 1
 	buffernumberstring STR_VAR_2, VAR_0x8006
 	lockall
-	applymovement VAR_0x800B, ContestHall_Movement_ContestantDelay32
+	applymovement VAR_0x800B, Common_Movement_Delay32
 	waitmovement 0
 	releaseall
 	call ContestHall_EventScript_TryWaitForLink
@@ -380,7 +380,7 @@ ContestHall_EventScript_ShowContestMonPic::
 	addobject LOCALID_POKEBALL
 	playse SE_LEDGE
 	lockall
-	applymovement VAR_0x800B, ContestHall_Movement_ContestantDelay32
+	applymovement VAR_0x800B, Common_Movement_Delay32
 	waitmovement 0
 	releaseall
 	addvar VAR_0x8006, -1
@@ -406,13 +406,13 @@ ContestHall_EventScript_AudienceVote::
 	playse SE_M_ENCORE2
 	waitmessage
 	call ContestHall_EventScript_AudienceLookAround
-	applymovement LOCALID_MC, ContestHall_Movement_MCFaceJudge2
+	applymovement LOCALID_MC, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	applymovement LOCALID_JUDGE, ContestHall_Movement_JudgeFaceMC
+	applymovement LOCALID_JUDGE, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 20
-	applymovement LOCALID_MC, ContestHall_Movement_FaceContestants
-	applymovement LOCALID_JUDGE, ContestHall_Movement_FaceContestants
+	applymovement LOCALID_MC, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_JUDGE, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	return
 
@@ -757,7 +757,7 @@ ContestHall_EventScript_Player4WalkBack::
 
 ContestHall_EventScript_DoContestAppeals::
 	lockall
-	applymovement LOCALID_MC, ContestHall_Movement_FaceContestants2
+	applymovement LOCALID_MC, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	call ContestHall_EventScript_TryWaitForLink
 	call ContestHall_EventScript_LetsAppeal
@@ -810,13 +810,13 @@ ContestHall_EventScript_ContestResults::
 	call ContestHall_EventScript_TryWaitForLink
 	call ContestHall_EventScript_ThankYouForAppeals
 	call ContestHall_EventScript_TryWaitForLink
-	applymovement LOCALID_MC, ContestHall_Movement_MCFaceJudge
+	applymovement LOCALID_MC, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	call ContestHall_EventScript_JudgeLooksReady
 	call ContestHall_EventScript_TryWaitForLink
 	call ContestHall_EventScript_WeWillDeclareWinner
 	call ContestHall_EventScript_TryWaitForLink
-	applymovement LOCALID_MC, ContestHall_Movement_FaceContestants
+	applymovement LOCALID_MC, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	closemessage
 	releaseall
@@ -1086,7 +1086,7 @@ ContestHall_EventScript_Player1ApproachForPrize::
 
 ContestHall_EventScript_Player2ApproachForPrize::
 	lockall
-	applymovement VAR_TEMP_3, ContestHall_Movement_Player2ApproachForPrize
+	applymovement VAR_TEMP_3, Common_Movement_WalkUp
 	waitmovement 0
 	releaseall
 	return
@@ -1153,26 +1153,14 @@ ContestHall_EventScript_ReceiveContestRibbon::
 	releaseall
 	return
 
-ContestHall_Movement_MCWalkDown:
-	walk_down
-	step_end
-
 ContestHall_Movement_MCBackUp:
 	lock_facing_direction
 	walk_up
 	unlock_facing_direction
 	step_end
 
-ContestHall_Movement_MCFaceJudge:
-	walk_in_place_faster_right
-	step_end
-
 ContestHall_Movement_Heart:
 	emote_heart
-	step_end
-
-ContestHall_Movement_FaceContestants:
-	walk_in_place_faster_down
 	step_end
 
 ContestHall_Movement_WalkStageLeft:
@@ -1189,23 +1177,6 @@ ContestHall_Movement_WalkStageRight:
 
 ContestHall_Movement_WinningPlayerWalkUp:
 	walk_up
-	walk_in_place_faster_down
-	step_end
-
-ContestHall_Movement_ContestantDelay32:
-	delay_16
-	delay_16
-	step_end
-
-ContestHall_Movement_MCFaceJudge2:
-	walk_in_place_faster_right
-	step_end
-
-ContestHall_Movement_JudgeFaceMC:
-	walk_in_place_faster_left
-	step_end
-
-ContestHall_Movement_FaceContestants2:
 	walk_in_place_faster_down
 	step_end
 
@@ -1245,10 +1216,6 @@ ContestHall_Movement_AudienceMemberLookDown:
 	face_down
 	delay_16
 	face_original_direction
-	step_end
-
-ContestHall_Movement_Player4FaceUp:
-	face_up
 	step_end
 
 ContestHall_Movement_MCLookAtJudge:
@@ -1329,10 +1296,6 @@ ContestHall_Movement_Player4WalkBack:
 ContestHall_Movement_Player1ApproachForPrize:
 	walk_right
 	walk_right
-	walk_up
-	step_end
-
-ContestHall_Movement_Player2ApproachForPrize:
 	walk_up
 	step_end
 

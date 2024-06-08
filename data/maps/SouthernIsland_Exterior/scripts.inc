@@ -33,7 +33,7 @@ SouthernIsland_Exterior_EventScript_AsYouLike::
 	end
 
 Ferry_EventScript_DepartIslandSouth::
-	applymovement OBJ_EVENT_ID_PLAYER, Ferry_Movement_DepartIslandBoardSouth
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
 	waitmovement 0
 	return
 
@@ -41,10 +41,6 @@ Ferry_EventScript_DepartIslandWest::
 	applymovement OBJ_EVENT_ID_PLAYER, Ferry_Movement_DepartIslandBoardWest
 	waitmovement 0
 	return
-
-Ferry_Movement_DepartIslandBoardSouth:
-	walk_down
-	step_end
 
 Ferry_Movement_DepartIslandBoardWest:
 	walk_left

@@ -22,7 +22,7 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_EnterRoom::
 	goto_if_eq VAR_0x8006, 1, BattleFrontier_BattleDomePreBattleRoom_EventScript_ReturnFromBattle
 	frontier_set FRONTIER_DATA_RECORD_DISABLED, TRUE
 	setvar VAR_TEMP_0, 1
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleDomePreBattleRoom_Movement_PlayerEnter
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp4
 	waitmovement 0
 	lockall
 BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRound::
@@ -152,7 +152,7 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_ContinueChallenge::
 	closemessage
 	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleDomePreBattleRoom_Movement_AttendantMoveAside
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleDomePreBattleRoom_Movement_PlayerWalkToDoor
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
 	waitmovement 0
 	opendoor 5, 1
 	waitdooranim
@@ -253,17 +253,6 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_SemifinalsComplete::
 BattleFrontier_BattleDomePreBattleRoom_Movement_AttendantMoveAside:
 	walk_right
 	face_left
-	step_end
-
-BattleFrontier_BattleDomePreBattleRoom_Movement_PlayerEnter:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-BattleFrontier_BattleDomePreBattleRoom_Movement_PlayerWalkToDoor:
-	walk_up
 	step_end
 
 BattleFrontier_BattleDomePreBattleRoom_Movement_PlayerEnterDoor:

@@ -16,7 +16,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	setvar VAR_0x8007, LOCALID_GRUNT_2
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, SeafloorCavern_Room9_Movement_Delay32
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_Delay32
 	waitmovement 0
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 	msgbox SeafloorCavern_Room9_Text_ArchieHoldItRightThere, MSGBOX_DEFAULT
@@ -209,11 +209,6 @@ SeafloorCavern_Room9_Movement_MagmaGruntArrive:
 	walk_fast_right
 	walk_fast_right
 	walk_fast_right
-	step_end
-
-SeafloorCavern_Room9_Movement_Delay32:
-	delay_16
-	delay_16
 	step_end
 
 SeafloorCavern_Room9_Text_ArchieHoldItRightThere:

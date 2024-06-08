@@ -58,8 +58,8 @@ BattleFrontier_BattleTowerMultiCorridor_EventScript_EnterCorridor::
 	clearflag FLAG_ENABLE_MULTI_CORRIDOR_DOOR
 	showobjectat LOCALID_PLAYER, MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR
 	showobjectat LOCALID_PARTNER, MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleTowerMultiCorridor_Movement_ExitElevator
-	applymovement LOCALID_PARTNER, BattleFrontier_BattleTowerMultiCorridor_Movement_ExitElevator
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDown
+	applymovement LOCALID_PARTNER, Common_Movement_WalkDown
 	waitmovement 0
 	setflag FLAG_ENABLE_MULTI_CORRIDOR_DOOR
 	setvar VAR_0x8004, 14  @ x coord of far door, used by DrawDoor
@@ -166,9 +166,5 @@ BattleFrontier_BattleTowerMultiCorridor_Movement_TrainerEnterDoor:
 BattleFrontier_BattleTowerMultiCorridor_Movement_AttendantEnterDoor:
 	walk_up
 	set_invisible
-	step_end
-
-BattleFrontier_BattleTowerMultiCorridor_Movement_ExitElevator:
-	walk_down
 	step_end
 

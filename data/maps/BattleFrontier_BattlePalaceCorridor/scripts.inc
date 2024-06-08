@@ -10,8 +10,8 @@ BattleFrontier_BattlePalaceCorridor_OnFrame:
 
 BattleFrontier_BattlePalaceCorridor_EventScript_WalkThroughCorridor::
 	delay 16
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePalaceCorridor_Movement_EnterCorridor
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattlePalaceCorridor_Movement_EnterCorridor
+	applymovement LOCALID_ATTENDANT, Common_Movement_WalkUp4
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp4
 	waitmovement 0
 	lockall
 	palace_getcomment
@@ -70,13 +70,6 @@ BattleFrontier_BattlePalaceCorridor_EventScript_StreakComment::
 BattleFrontier_BattlePalaceCorridor_EventScript_LongStreakComment::
 	msgbox BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons, MSGBOX_DEFAULT
 	return
-
-BattleFrontier_BattlePalaceCorridor_Movement_EnterCorridor:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
 
 BattleFrontier_BattlePalaceCorridor_Movement_AttendantWalkTo50BattleRoom:
 	walk_up

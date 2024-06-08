@@ -208,18 +208,18 @@ GabbyAndTy_EventScript_FirstInterview::
 	end
 
 GabbyAndTy_EventScript_FacePlayerNorth::
-	applymovement VAR_0x8004, GabbyAndTy_Movement_WalkInPlaceDown
+	applymovement VAR_0x8004, Common_Movement_WalkInPlaceDown
 	waitmovement 0
 	return
 
 GabbyAndTy_EventScript_FacePlayerSouth::
-	applymovement VAR_0x8004, GabbyAndTy_Movement_WalkInPlaceUp
+	applymovement VAR_0x8004, Common_Movement_WalkInPlaceUp
 	applymovement VAR_0x8005, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	return
 
 GabbyAndTy_EventScript_FacePlayerEast::
-	applymovement VAR_0x8004, GabbyAndTy_Movement_WalkInPlaceLeft
+	applymovement VAR_0x8004, Common_Movement_WalkInPlaceLeft
 	applymovement VAR_0x8005, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	return
@@ -242,18 +242,6 @@ GabbyAndTy_EventScript_RequestInterview::
 	case 3, GabbyAndTy_EventScript_RequestInterviewUsedItems
 	case 4, GabbyAndTy_EventScript_RequestInterviewLostAMon
 	end
-
-GabbyAndTy_Movement_WalkInPlaceDown:
-	walk_in_place_down
-	step_end
-
-GabbyAndTy_Movement_WalkInPlaceUp:
-	walk_in_place_up
-	step_end
-
-GabbyAndTy_Movement_WalkInPlaceLeft:
-	walk_in_place_left
-	step_end
 
 GabbyAndTy_EventScript_DidntInterviewLastTime::
 	msgbox GabbyAndTy_Text_GiveUsAnInterviewThisTime, MSGBOX_YESNO

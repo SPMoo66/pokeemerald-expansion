@@ -357,7 +357,7 @@ BattleFrontier_BattlePyramidLobby_EventScript_ShowResults::
 
 BattleFrontier_BattlePyramidLobby_EventScript_WalkToPanelAndReceiveBag::
 	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePyramidLobby_Movement_AttendantWalkToPanel
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattlePyramidLobby_Movement_PlayerWalkToPanel
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp7
 	waitmovement 0
 	msgbox BattleFrontier_BattlePyramidLobby_Text_WeWillHoldBagForSafekeeping, MSGBOX_DEFAULT
 	pyramid_get PYRAMID_DATA_WIN_STREAK
@@ -376,7 +376,7 @@ BattleFrontier_BattlePyramidLobby_EventScript_ReceiveBattleBag::
 	closemessage
 	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePyramidLobby_Movement_AttendantMoveAside
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattlePyramidLobby_Movement_PlayerStepOnPanel
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
 	waitmovement 0
 	return
 
@@ -391,24 +391,9 @@ BattleFrontier_BattlePyramidLobby_Movement_AttendantWalkToPanel:
 	face_down
 	step_end
 
-BattleFrontier_BattlePyramidLobby_Movement_PlayerWalkToPanel:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
 BattleFrontier_BattlePyramidLobby_Movement_AttendantMoveAside:
 	walk_right
 	face_left
-	step_end
-
-BattleFrontier_BattlePyramidLobby_Movement_PlayerStepOnPanel:
-	walk_up
-	walk_up
 	step_end
 
 BattleFrontier_BattlePyramidLobby_EventScript_StoreHeldItemsInPyramidBag::

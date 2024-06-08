@@ -144,7 +144,7 @@ SecretBase_EventScript_InitSecretBase::
 	end
 
 SecretBase_EventScript_FirstEntrance::
-	applymovement OBJ_EVENT_ID_PLAYER, SecretBase_Movement_EnterBase
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
 	waitmovement 0
 	setvar VAR_INIT_SECRET_BASE, 1
 	msgbox SecretBase_Text_WantToMakeYourSecretBaseHere, MSGBOX_YESNO
@@ -160,11 +160,6 @@ SecretBase_EventScript_SetAsBase::
 	special EnterNewlyCreatedSecretBase
 	waitstate
 	end
-
-SecretBase_Movement_EnterBase:
-	walk_up
-	walk_up
-	step_end
 
 SecretBase_EventScript_Enter::
 	lockall

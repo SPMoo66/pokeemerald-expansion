@@ -11,7 +11,7 @@ BattleFrontier_BattlePikeRoomFinal_OnFrame:
 
 BattleFrontier_BattlePikeRoomFinal_EventScript_EnterRoom::
 	delay 16
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePikeRoomFinal_Movement_AttendantApproachPlayer
+	applymovement LOCALID_ATTENDANT, Common_Movement_WalkDown2
 	waitmovement 0
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_WON
 	lockall
@@ -21,11 +21,6 @@ BattleFrontier_BattlePikeRoomFinal_EventScript_EnterRoom::
 	warp MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY, 5, 6
 	waitstate
 	end
-
-BattleFrontier_BattlePikeRoomFinal_Movement_AttendantApproachPlayer:
-	walk_down
-	walk_down
-	step_end
 
 BattleFrontier_BattlePikeRoomFinal_OnWarp:
 	map_script_2 VAR_TEMP_4, 0, BattleFrontier_BattlePikeRoomFinal_EventScript_TurnPlayerNorth

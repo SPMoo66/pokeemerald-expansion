@@ -46,7 +46,7 @@ BattleFrontier_BattlePalaceBattleRoom_EventScript_EnterRoom::
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePalaceBattleRoom_EventScript_BeginChallenge
 	applymovement LOCALID_PLAYER, BattleFrontier_BattlePalaceBattleRoom_Movement_PlayerReturnToChallenge
 	waitmovement 0
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePalaceBattleRoom_Movement_FaceDown
+	applymovement LOCALID_ATTENDANT, Common_Movement_FaceDown
 	setvar VAR_TEMP_2, 1
 	frontier_set FRONTIER_DATA_RECORD_DISABLED, TRUE
 	goto BattleFrontier_BattlePalaceBattleRoom_EventScript_AskReadyForOpponent
@@ -76,11 +76,11 @@ BattleFrontier_BattlePalaceBattleRoom_EventScript_DefeatedOpponent::
 	frontier_set FRONTIER_DATA_BATTLE_NUM, VAR_RESULT
 	switch VAR_RESULT
 	case 7, BattleFrontier_BattlePalaceBattleRoom_EventScript_WarpToLobbyWon
-	applymovement LOCALID_OPPONENT, BattleFrontier_BattlePalaceBattleRoom_Movement_OpponentExit
+	applymovement LOCALID_OPPONENT, Common_Movement_WalkUp4
 	waitmovement 0
 	removeobject LOCALID_OPPONENT
-	applymovement LOCALID_PLAYER, BattleFrontier_BattlePalaceBattleRoom_Movement_FaceUp
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePalaceBattleRoom_Movement_FaceDown
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	applymovement LOCALID_ATTENDANT, Common_Movement_FaceDown
 	waitmovement 0
 	msgbox BattleFrontier_BattlePalaceBattleRoom_Text_LetMeRestoreYourMons, MSGBOX_DEFAULT
 	special LoadPlayerParty
@@ -226,8 +226,8 @@ BattleFrontier_BattlePalaceBattleRoom_EventScript_DefeatedSpenserSilver::
 	frontier_getsymbols
 	goto_if_ne VAR_RESULT, 0, BattleFrontier_BattlePalaceBattleRoom_EventScript_WarpToLobbyWon
 	msgbox BattleFrontier_BattlePalaceBattleRoom_Text_SpenserPostSilverBattle, MSGBOX_DEFAULT
-	applymovement LOCALID_PLAYER, BattleFrontier_BattlePalaceBattleRoom_Movement_FaceUp
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePalaceBattleRoom_Movement_FaceDown
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	applymovement LOCALID_ATTENDANT, Common_Movement_FaceDown
 	msgbox BattleFrontier_BattlePalaceBattleRoom_Text_LetsSeeFrontierPass, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_SYMBOL
 	message BattleFrontier_BattlePalaceBattleRoom_Text_ReceivedSpiritsSymbol
@@ -258,8 +258,8 @@ BattleFrontier_BattlePalaceBattleRoom_EventScript_DefeatedSpenserGold::
 	frontier_getsymbols
 	goto_if_eq VAR_RESULT, 2, BattleFrontier_BattlePalaceBattleRoom_EventScript_WarpToLobbyWon
 	msgbox BattleFrontier_BattlePalaceBattleRoom_Text_SpenserYourTeamIsAdmirable, MSGBOX_DEFAULT
-	applymovement LOCALID_PLAYER, BattleFrontier_BattlePalaceBattleRoom_Movement_FaceUp
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePalaceBattleRoom_Movement_FaceDown
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	applymovement LOCALID_ATTENDANT, Common_Movement_FaceDown
 	msgbox BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_SYMBOL
 	message BattleFrontier_BattlePalaceBattleRoom_Text_SpiritsSymbolTookGoldenShine
@@ -346,10 +346,6 @@ BattleFrontier_BattlePalaceBattleRoom_Movement_FaceRight:
 	face_right
 	step_end
 
-BattleFrontier_BattlePalaceBattleRoom_Movement_FaceUp:
-	face_up
-	step_end
-
 BattleFrontier_BattlePalaceBattleRoom_Movement_PlayerReturnToChallenge:
 	set_visible
 	walk_up
@@ -364,17 +360,6 @@ BattleFrontier_BattlePalaceBattleRoom_Movement_OpponentEnter:
 	walk_down
 	walk_down
 	face_left
-	step_end
-
-BattleFrontier_BattlePalaceBattleRoom_Movement_OpponentExit:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-BattleFrontier_BattlePalaceBattleRoom_Movement_FaceDown:
-	face_down
 	step_end
 
 BattleFrontier_BattlePalaceBattleRoom_EventScript_WarpToLobby::

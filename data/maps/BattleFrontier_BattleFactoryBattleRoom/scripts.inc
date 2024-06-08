@@ -138,7 +138,7 @@ BattleFrontier_BattleFactoryBattleRoom_EventScript_DefeatedNolandSilver::
 	goto_if_ne VAR_RESULT, 0, BattleFrontier_BattleFactoryBattleRoom_EventScript_DefeatedNoland
 	msgbox BattleFrontier_BattleFactoryBattleRoom_Text_NolandLetsSeeFrontierPass, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleFactoryBattleRoom_Movement_PlayerApproachNoland
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRight
 	waitmovement 0
 	playfanfare MUS_OBTAIN_SYMBOL
 	message BattleFrontier_BattleFactoryBattleRoom_Text_ReceivedKnowledgeSymbol
@@ -164,7 +164,7 @@ BattleFrontier_BattleFactoryBattleRoom_EventScript_DefeatedNolandGold::
 	goto_if_eq VAR_RESULT, 2, BattleFrontier_BattleFactoryBattleRoom_EventScript_DefeatedNoland
 	msgbox BattleFrontier_BattleFactoryBattleRoom_Text_OutOfMyLeagueLetsSeePass, MSGBOX_DEFAULT
 	waitmessage
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleFactoryBattleRoom_Movement_PlayerApproachNoland
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRight
 	waitmovement 0
 	playfanfare MUS_OBTAIN_SYMBOL
 	message BattleFrontier_BattleFactoryBattleRoom_Text_KnowledgeSymbolTookGoldenShine
@@ -206,10 +206,6 @@ BattleFrontier_BattleFactoryBattleRoom_Movement_PlayerEnterRoom:
 	walk_up
 	walk_up
 	face_right
-	step_end
-
-BattleFrontier_BattleFactoryBattleRoom_Movement_PlayerApproachNoland:
-	walk_right
 	step_end
 
 BattleFrontier_BattleFactoryBattleRoom_Movement_OpponentEnter:

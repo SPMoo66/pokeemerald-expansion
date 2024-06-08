@@ -31,8 +31,8 @@ BattleFrontier_BattleDomeCorridor_EventScript_WalkToBattleRoomLvOpen::
 	waitmovement 0
 	opendoor 37, 3
 	waitdooranim
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleDomeCorridor_Movement_AttendantEnterDoorLvOpen
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleDomeCorridor_Movement_PlayerEnterDoorLvOpen
+	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleDomeCorridor_Movement_AttendantEnterDoorLv50
+	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleDomeCorridor_Movement_PlayerEnterDoorLv50
 	waitmovement 0
 	closedoor 37, 3
 	waitdooranim
@@ -102,12 +102,6 @@ BattleFrontier_BattleDomeCorridor_Movement_PlayerWalkToDoorLvOpen:
 	walk_in_place_faster_up
 	step_end
 
-BattleFrontier_BattleDomeCorridor_Movement_PlayerEnterDoorLvOpen:
-	walk_up
-	walk_up
-	set_invisible
-	step_end
-
 BattleFrontier_BattleDomeCorridor_Movement_AttendantWalkToDoorLvOpen:
 	walk_right
 	walk_right
@@ -126,7 +120,3 @@ BattleFrontier_BattleDomeCorridor_Movement_AttendantWalkToDoorLvOpen:
 	walk_up
 	step_end
 
-BattleFrontier_BattleDomeCorridor_Movement_AttendantEnterDoorLvOpen:
-	walk_up
-	set_invisible
-	step_end

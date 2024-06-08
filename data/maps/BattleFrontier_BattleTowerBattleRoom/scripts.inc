@@ -28,7 +28,7 @@ BattleFrontier_BattleTowerBattleRoom_EventScript_EnterRoom::
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerBattleRoom_EventScript_OpponentEnter
 	applymovement LOCALID_ATTENDANT_1, BattleFrontier_BattleTowerBattleRoom_Movement_AttendantApproachPlayer
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleTowerBattleRoom_Movement_PlayerFaceAttendant
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 	waitmovement 0
 	setvar VAR_TEMP_2, 1
 	frontier_set FRONTIER_DATA_RECORD_DISABLED, TRUE
@@ -57,14 +57,14 @@ BattleFrontier_BattleTowerBattleRoom_EventScript_DefeatedOpponent::
 	tower_setbattlewon
 	switch VAR_RESULT
 	case 7, BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobbyWon
-	applymovement LOCALID_OPPONENT, BattleFrontier_BattleTowerBattleRoom_Movement_OpponentExit
+	applymovement LOCALID_OPPONENT, Common_Movement_WalkUp4
 	waitmovement 0
 	removeobject LOCALID_OPPONENT
 	frontier_getbrainstatus
 	call_if_ne VAR_RESULT, FRONTIER_BRAIN_NOT_READY, BattleFrontier_BattleTowerBattleRoom_EventScript_SecondAttendantEnter
 	applymovement LOCALID_ATTENDANT_1, BattleFrontier_BattleTowerBattleRoom_Movement_AttendantApproachPlayer
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleTowerBattleRoom_Movement_PlayerFaceAttendant
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 	waitmovement 0
 	msgbox BattleFrontier_BattleTowerBattleRoom_Text_RestoreMonsToFullHealth, MSGBOX_DEFAULT
 	playfanfare MUS_HEAL
@@ -125,7 +125,7 @@ BattleFrontier_BattleTowerBattleRoom_EventScript_AskRetireChallenge::
 
 BattleFrontier_BattleTowerBattleRoom_EventScript_ContinueChallenge::
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleTowerBattleRoom_Movement_PlayerFaceBattle
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
 	waitmovement 0
 	applymovement LOCALID_ATTENDANT_1, BattleFrontier_BattleTowerBattleRoom_Movement_AttendantReturnToPos
 	waitmovement 0
@@ -237,7 +237,7 @@ BattleFrontier_BattleTowerBattleRoom_EventScript_AskReadyForMaidenNoRecord::
 BattleFrontier_BattleTowerBattleRoom_EventScript_BattleAnabel::
 	call BattleFrontier_EventScript_SetBrainObjectGfx
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleTowerBattleRoom_Movement_PlayerFaceBattle
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
 	waitmovement 0
 	applymovement LOCALID_ATTENDANT_1, BattleFrontier_BattleTowerBattleRoom_Movement_AttendantReturnToPos
 	waitmovement 0
@@ -325,27 +325,12 @@ BattleFrontier_BattleTowerBattleRoom_Movement_PlayerEnter:
 	face_right
 	step_end
 
-BattleFrontier_BattleTowerBattleRoom_Movement_PlayerFaceAttendant:
-	face_down
-	step_end
-
-BattleFrontier_BattleTowerBattleRoom_Movement_PlayerFaceBattle:
-	face_right
-	step_end
-
 BattleFrontier_BattleTowerBattleRoom_Movement_OpponentEnter:
 	walk_down
 	walk_down
 	walk_down
 	walk_down
 	face_left
-	step_end
-
-BattleFrontier_BattleTowerBattleRoom_Movement_OpponentExit:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
 	step_end
 
 BattleFrontier_BattleTowerBattleRoom_Movement_AttendantApproachPlayer:

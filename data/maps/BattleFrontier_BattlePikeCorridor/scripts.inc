@@ -14,7 +14,7 @@ BattleFrontier_BattlePikeCorridor_EventScript_EnterCorridor::
 	frontier_set FRONTIER_DATA_BATTLE_NUM, 1
 	pike_cleartrainerids
 	pike_nohealing TRUE
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattlePikeCorridor_Movement_PlayerEnterCorridor
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
 	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePikeCorridor_Movement_AttendantEnterCorridor
 	waitmovement 0
 	lockall
@@ -37,11 +37,6 @@ BattleFrontier_BattlePikeCorridor_EventScript_TurnPlayerNorth::
 	setvar VAR_TEMP_1, 1
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	end
-
-BattleFrontier_BattlePikeCorridor_Movement_PlayerEnterCorridor:
-	walk_up
-	walk_up
-	step_end
 
 BattleFrontier_BattlePikeCorridor_Movement_PlayerExitCorridor:
 	walk_up

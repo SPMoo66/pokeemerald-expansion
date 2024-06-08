@@ -59,7 +59,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_ExitRoom::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_EnterRoom::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleTowerMultiPartnerRoom_Movement_PlayerEnterRoom
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
 	waitmovement 0
 	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleTowerMultiPartnerRoom_Movement_AttendantBlockExit
 	waitmovement 0
@@ -71,10 +71,6 @@ BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_EnterRoom::
 	setvar VAR_TEMP_1, 1
 	releaseall
 	end
-
-BattleFrontier_BattleTowerMultiPartnerRoom_Movement_PlayerEnterRoom:
-	walk_down
-	step_end
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Movement_AttendantBlockExit:
 	walk_left

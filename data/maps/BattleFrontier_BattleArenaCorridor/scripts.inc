@@ -14,7 +14,7 @@ BattleFrontier_BattleArenaCorridor_EventScript_WalkToBattleRoom::
 	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleArenaCorridor_Movement_AttendantWalkToDoor
 	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleArenaCorridor_Movement_PlayerWalkToDoor
 	waitmovement 0
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleArenaCorridor_Movement_AttendantFacePlayer
+	applymovement LOCALID_ATTENDANT, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn, MSGBOX_SIGN
 	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleArenaCorridor_Movement_AttendantMoveOutOfWay
@@ -75,10 +75,6 @@ BattleFrontier_BattleArenaCorridor_Movement_AttendantWalkToDoor:
 	walk_right
 	walk_right
 	walk_right
-	step_end
-
-BattleFrontier_BattleArenaCorridor_Movement_AttendantFacePlayer:
-	walk_in_place_faster_left
 	step_end
 
 BattleFrontier_BattleArenaCorridor_Movement_AttendantMoveOutOfWay:

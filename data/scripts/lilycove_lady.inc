@@ -407,7 +407,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_MonEnjoyPokeblock::
 	waitmovement 0
 	delay 60
 LilycoveCity_PokemonCenter_1F_EventScript_FinishFeedPokeblock::
-	applymovement LOCALID_LILYCOVE_LADY, LilycoveCity_PokemonCenter_1F_Movement_LadyFacePlayer
+	applymovement LOCALID_LILYCOVE_LADY, Common_Movement_FacePlayer
 	waitmovement 0
 	delay 60
 	goto_if_eq VAR_0x8004, 0, LilycoveCity_PokemonCenter_1F_EventScript_MonDislikedPokeblock
@@ -450,10 +450,6 @@ LilycoveCity_PokemonCenter_1F_Movement_LadyFaceMon:
 LilycoveCity_PokemonCenter_1F_Movement_MonFaceLady:
 	face_left
 	delay_8
-	step_end
-
-LilycoveCity_PokemonCenter_1F_Movement_LadyFacePlayer:
-	face_player
 	step_end
 
 LilycoveCity_PokemonCenter_1F_Movement_MonJump:

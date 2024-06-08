@@ -76,7 +76,7 @@ Common_Movement_WalkUp:
 	walk_up
 	step_end
 
-Common_Movement_WalkUp2::
+Common_Movement_WalkUp2:
 	walk_up
 	walk_up
 	step_end
@@ -104,18 +104,19 @@ Common_Movement_WalkUp7:
 	walk_up
 	walk_up
 	walk_up
+	walk_up
 	step_end
 
-Common_Movement_WalkDown::
+Common_Movement_WalkDown:
 	walk_down
 	step_end
 
-Common_Movement_WalkDown2::
+Common_Movement_WalkDown2:
 	walk_down
 	walk_down
 	step_end
 
-Common_Movement_WalkDown8::
+Common_Movement_WalkDown8:
 	walk_down
 	walk_down
 	walk_down

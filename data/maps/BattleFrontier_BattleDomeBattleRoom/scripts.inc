@@ -71,7 +71,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_BattleOpponent::
 	msgbox BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTrainer, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerStepForward
-	applymovement LOCALID_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_OpponentStepForward
+	applymovement LOCALID_OPPONENT, Common_Movement_WalkLeft
 	waitmovement 0
 	tower_getopponentintro 0
 	msgbox gStringVar4, MSGBOX_DEFAULT
@@ -92,7 +92,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_Draw::
 	delay 60
 	applymovement LOCALID_REFEREE, BattleFrontier_BattleDomeBattleRoom_Movement_RefereeEnter
 	waitmovement 0
-	applymovement LOCALID_ANNOUNCER, BattleFrontier_BattleDomeBattleRoom_Movement_AnnouncerFaceLeft
+	applymovement LOCALID_ANNOUNCER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 180
 	applymovement LOCALID_REFEREE, BattleFrontier_BattleDomeBattleRoom_Movement_RefereeExit
@@ -154,7 +154,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_DefeatedOpponent::
 	waitstate
 
 BattleFrontier_BattleDomeBattleRoom_EventScript_WonTourney::
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerApproachAudience
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
 	waitmovement 0
 	frontier_get FRONTIER_DATA_LVL_MODE
 	switch VAR_RESULT
@@ -426,8 +426,8 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_BattleTuckerGold::
 BattleFrontier_BattleDomeBattleRoom_EventScript_DoTuckerBattle::
 	msgbox BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerStepForward2
-	applymovement LOCALID_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_TuckerStepForward
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRight
+	applymovement LOCALID_OPPONENT, Common_Movement_WalkLeft
 	waitmovement 0
 	call BattleFrontier_BattleDomeBattleRoom_EventScript_DoDomeBattle
 	return
@@ -587,10 +587,6 @@ BattleFrontier_BattleDomeBattleRoom_Movement_PlayerStepForward:
 	walk_right
 	step_end
 
-BattleFrontier_BattleDomeBattleRoom_Movement_PlayerApproachAudience:
-	walk_up
-	step_end
-
 @ Identical to Movement_PlayerEnter
 BattleFrontier_BattleDomeBattleRoom_Movement_PlayerEnterForTucker:
 	set_visible
@@ -600,14 +596,6 @@ BattleFrontier_BattleDomeBattleRoom_Movement_PlayerEnterForTucker:
 	walk_up
 	walk_right
 	walk_right
-	step_end
-
-BattleFrontier_BattleDomeBattleRoom_Movement_PlayerStepForward2:
-	walk_right
-	step_end
-
-BattleFrontier_BattleDomeBattleRoom_Movement_OpponentStepForward:
-	walk_left
 	step_end
 
 BattleFrontier_BattleDomeBattleRoom_Movement_SetInvisibleFacingUp:
@@ -774,10 +762,6 @@ BattleFrontier_BattleDomeBattleRoom_Movement_AnnouncerMoveForTuckerEntrance:
 	walk_in_place_faster_down
 	step_end
 
-BattleFrontier_BattleDomeBattleRoom_Movement_TuckerStepForward:
-	walk_left
-	step_end
-
 BattleFrontier_BattleDomeBattleRoom_Movement_TuckerApproachPlayer:
 	walk_left
 	walk_left
@@ -912,10 +896,6 @@ BattleFrontier_BattleDomeBattleRoom_Movement_RefereeEnter:
 	walk_right
 	walk_right
 	walk_right
-	step_end
-
-BattleFrontier_BattleDomeBattleRoom_Movement_AnnouncerFaceLeft:
-	walk_in_place_faster_left
 	step_end
 
 BattleFrontier_BattleDomeBattleRoom_Movement_RefereeExit:

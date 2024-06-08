@@ -2285,12 +2285,11 @@ const struct Item gItemsInfo[] =
     [ITEM_BOTTLE_CAP] =
     {
         .name = _("Bottle Cap"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : 5000,
+        .price = (I_PRICE >= GEN_9) ? 1 : 1,
         .description = COMPOUND_STRING(
             "A beautiful bottle\n"
             "cap that gives off\n"
             "a silver gleam."),
-        .importance = 1,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -2300,12 +2299,11 @@ const struct Item gItemsInfo[] =
     [ITEM_GOLD_BOTTLE_CAP] =
     {
         .name = _("GoldBottlCap"),
-        .price = (I_PRICE >= GEN_9) ? 60000 : 10000,
+        .price = (I_PRICE >= GEN_9) ? 1 : 1,
         .description = COMPOUND_STRING(
             "A beautiful bottle\n"
             "cap that gives off\n"
             "a golden gleam."),
-        .importance = 1,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

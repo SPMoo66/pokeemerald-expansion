@@ -3760,7 +3760,7 @@ const struct Item gItemsInfo[] =
     [ITEM_PRISM_SCALE] =
     {
         .name = _("Prism Scale"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 2000 : 500),
+        .price = (I_PRICE >= GEN_9) ? 5000 : ((I_PRICE >= GEN_7) ? 2000 : 500),
         .description = COMPOUND_STRING(
             "A mysterious scale\n"
             "that evolves certain\n"
@@ -6185,7 +6185,7 @@ const struct Item gItemsInfo[] =
     [ITEM_DEEP_SEA_SCALE] =
     {
         .name = _("DeepSeaScale"),
-        .price = (I_PRICE >= GEN_7) ? 2000 : 200,
+        .price = (I_PRICE >= GEN_7) ? 4000 : 200,
         .holdEffect = HOLD_EFFECT_DEEP_SEA_SCALE,
         .description = COMPOUND_STRING(
             "A hold item that\n"
@@ -6202,7 +6202,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("DeepSeaTooth"),
         .pluralName = _("DeepSeaTeeth"),
-        .price = (I_PRICE >= GEN_7) ? 2000 : 200,
+        .price = (I_PRICE >= GEN_7) ? 4000 : 200,
         .holdEffect = HOLD_EFFECT_DEEP_SEA_TOOTH,
         .description = COMPOUND_STRING(
             "A hold item that\n"
@@ -7262,7 +7262,7 @@ const struct Item gItemsInfo[] =
     [ITEM_KINGS_ROCK] =
     {
         .name = _("King's Rock"),
-        .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 5000 : 100),
+        .price = (I_PRICE >= GEN_9) ? 5000 : ((I_PRICE >= GEN_7) ? 5000 : 100),
         .holdEffect = HOLD_EFFECT_FLINCH,
         .holdEffectParam = 10,
         .description = sKingsRockDesc,
@@ -7675,7 +7675,7 @@ const struct Item gItemsInfo[] =
     [ITEM_RAZOR_CLAW] =
     {
         .name = _("Razor Claw"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 5000 : 2100),
+        .price = (I_PRICE >= GEN_9) ? 5000 : ((I_PRICE >= GEN_7) ? 5000 : 2100),
         .holdEffect = HOLD_EFFECT_SCOPE_LENS,
         .description = COMPOUND_STRING(
             "A hooked claw that\n"
@@ -7691,7 +7691,7 @@ const struct Item gItemsInfo[] =
     [ITEM_RAZOR_FANG] =
     {
         .name = _("Razor Fang"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 5000 : 2100),
+        .price = (I_PRICE >= GEN_9) ? 5000 : ((I_PRICE >= GEN_7) ? 5000 : 2100),
         .holdEffect = HOLD_EFFECT_FLINCH,
         .holdEffectParam = 10,
         .description = sKingsRockDesc,
@@ -12514,7 +12514,7 @@ const struct Item gItemsInfo[] =
     [ITEM_LINKING_CORD] =
     {
         .name = _("Linking Cord"),
-        .price = 5000,
+        .price = 4000,
         .description = COMPOUND_STRING(
             "A mysterious string\n"
             "that makes some\n"

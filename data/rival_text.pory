@@ -1,0 +1,119 @@
+text Scene01_BaronText {
+	format(	"H- Hello…? You don't look like you're stapled in place like the others/p"
+			"Ack!? It moved!? Stay back, demon!\n"
+			"Stay back or else I'll… I'l…!!!\p"
+			"… … …?\p"
+			"…{PLAYER}? Why do you look like that?\p"
+			"It's nothing like how I thought…\n"
+			"…how I remembered you looking?\p"
+			"Avatars? And I have a converted version of my ENCORE avatar?\p"
+			"So that's why I look like this …?\n"
+			"Hopefully the others are recognizable.\p"
+			"Actually, hopefully I learn how to put my left foot in front of the right…\p"
+			"This… whatever reality thing is all new to me. It's hard to imagine how the coders mapped our senses to a 2D pixel world like this…\p"
+			"I- Ignore me! You seem plenty used to it yourself, so don't let me hold you up!\p"
+			"I'll just… find a place to practice for a while…")
+}
+
+text Scene01_HarperText {
+	format(	"Sigh… well, this is disorientating.\p"
+			"I hope I get used to walking around in 2D. Such a mindfuck at first.\p"
+			"… … …\n"
+			"Are you another NPC? Do I need to do something to get you to move?\p"
+			"… … …\n"
+			"{PLAYER}?\p"
+			"Well that looks nothing like your ENCORE avatar like mine is.\p"
+			"The default avatar? Alright, noted.\n"
+			"Never played this Pokémon gen before.\l"
+			"… … …\p"
+			"Nah, I should be fine. I might just need to… sit down for a bit first.\p"
+			"Feel free to go on ahead. I'll catch up later when I get my bearings.\p"
+			"I'll wait here for the others while I get used to it.")
+}
+
+text Scene01_JaksonText {
+	format(	"Oh, that's interesting to see you from the outside looking in.\p"
+			"You must've been first in the server if you claimed the default avatar.\p"
+			"My avatar not looking too janky?\l"
+			"… … …\p"
+			"Good. I think it just converted my ENCORE avatar into this format.\p"
+			"The others should be connected soon enough. They'll probably be the same.\p"
+			"If you're already up to getting your starter, go on ahead.\p"
+			"I should stay back and make sure no one's setup blows up before I delve too deep into the game myself.\p"
+			"Try not to get too far ahead of the rest of us, haha.")
+}
+
+text Scene01_ReddText {
+	format(	"Yo, {PLAYER}? That you?\n"
+			"You actually got the default avatar?\p"
+			"I wonder if everyone will look like that or just the first person in?\p"
+			"… … …\l"
+			"Me? This is my old custom avatar from the base game.\p"
+			"It's actually pretty cool. It's almost like I'm continuing my journey.\p"
+			"First I conquered Kanto, and now I'll reign supreme over Hoenn, too!\p"
+			"You already got your starter 'mon, right? I better make sure I don't fall far behind too quickly so I can make up the ground later.\p"
+			"There can only be one true champ to stand above the rest, after all!\p"
+			"You and the others better be ready!")
+}
+
+text Scene01_SakuraText {
+	format(	"Hey hey{EMOJI_TILDE}\l"
+			"Good to see you in the flesh. Or… in the pixels?\p"
+			"I haven't played many of these 2D spatial reality games, but it always throws me for a loop when I do.\p"
+			"So who do we have here? Jakson?\p"
+			"It is his modpack, after all. He'd probably be the first one in to grab the default avatar.\p"
+			"… … …\p"
+			"Oh, really? {PLAYER}? You've got quite the deft hand to beat him to the punch.\p"
+			"I'll have to stay on my guard around you this time{EMOJI_TILDE}\p"
+			"As for me, I'm happy the system could convert my ENCORE avatar for this.\p"
+			"Nothing better to prep you for success than looking and feeling cute{EMOJI_TILDE}\p"
+			"I wanna see how everyone else looks, so feel free to go on ahead. G'luck!")
+}
+
+text Town01_BaronText {
+	format(	"O- Oh, there you are… {PLAYER}, right?\n"
+			"I didn't notice you there.\p"
+			"When I was told about… this control system… I didn't think…\p"
+			"Well, I assumed it would be like a pop-up book where all the pixel sprites sprung up in a 3D area you walked around in.\p"
+			"I didn't think it'd LITERALLY be a system for mapping perception of 2D pixel art worlds into your head to walk around in.\p"
+			"Technology is…\p"
+			"Technology can be incredible and very scary at times.")
+}
+
+text Town01_HarperText {
+	format(	"So, you're not feeling sick at all?\n"
+			"Well, props to you then…\p"
+			"I guess I never really got into this trend when it got popular a while back.\p"
+			"It's a neat gimmick, but its hard to imagine it as more than that.\p"
+			"I mean, how many cases do you need to perceive the world in a 2D flat plane?\p"
+			"Technology is incredible.\p"
+			"But fuck, does it give me a headache sometimes…")
+}
+
+text Town01_JaksonText {
+	format(	"{PLAYER}, how are you handling the game so far?\p"
+			"If you've never played this sort of game before it can mess with your head.\p"
+			"Just let me know if anything seems too off and we can try and adjust your settings so you can adjust your own brain to… all this more easily.\p"
+			"That includes… stuff not related to controls and everything.\p"
+			"I threw this mod pack together in a few days with the new release, so there might be a few… unforeseen bugs lurking around the corner.\p"
+			"If it does all work, I hope you enjoy the tweaks to the base game, too.")
+}
+
+text Town01_ReddText {
+	format(	"There's so many different sorts of Pokémon here…\p"
+			"Though I guess it's really just Generation 1 through 9 Pokémon.\p"
+			"It is retro, sort of. Maybe I got too used to Gen 1 'mons from the remake?\p"
+			"Ah, screw it. It's Pokémon in the end.\n"
+			"I'm sure I can find a Pikachu or a Charmander around here somewhere.")
+}
+
+text Town01_SakuraText {
+	format(	"So you got your starter Pokémon?\n"
+			"It's cute!\p"
+			"For me, I wanna get the cutest option possible as my starter.\p"
+			"My endgame goal is a majestic and cute queen sitting upon her throne, with steeled and awesome-bodied guards flanking her.\p"
+			"Each willing to risk life and limb to bring glory to her queendom.\p"
+			"… … …\p"
+			"Yeah? Of course I realize we're playing a Pokémon game.\p"
+			"You're so weird sometimes, {PLAYER}, hahaha.")
+}

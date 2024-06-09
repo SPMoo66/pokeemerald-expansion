@@ -1933,7 +1933,7 @@ Sakura_Town01::
 # 969 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	speakername CommonText_Sakura
 # 970 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox Sakura_Town01_Text_0
+	msgbox Town01_SakuraText
 # 971 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	release
 	end
@@ -1981,24 +1981,6 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_7:
 	giveitem ITEM_EXP_CHARM
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_1
 
-
-Sakura_Town01_Text_0:
-# 970 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	.string "So you got your starter Pokémon?\n"
-	.string "It's cute!\p"
-	.string "For me, I wanna get the cutest option\n"
-	.string "possible as my starter.\p"
-	.string "My endgame goal is a majestic and cute\n"
-	.string "queen sitting upon her throne, with\l"
-	.string "steeled and awesome-bodied guards\l"
-	.string "flanking her.\p"
-	.string "Each willing to risk life and limb to\n"
-	.string "bring glory to her queendom.\p"
-	.string "… … …\p"
-	.string "Yeah? Of course I realize we're playing\n"
-	.string "a Pokémon game.\p"
-	.string "You're so weird sometimes, {PLAYER},\n"
-	.string "hahaha.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_0:
 # 979 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"

@@ -2043,7 +2043,7 @@ Baron_Town01::
 # 1027 "data/maps/LittlerootTown/scripts.pory"
 	speakername CommonText_Baron
 # 1028 "data/maps/LittlerootTown/scripts.pory"
-	msgbox Baron_Town01_Text_1
+	msgbox Town01_BaronText
 # 1029 "data/maps/LittlerootTown/scripts.pory"
 	applymovement 9, Common_Movement_FaceLeft
 # 1030 "data/maps/LittlerootTown/scripts.pory"
@@ -2101,7 +2101,7 @@ Rival_Scene01_4:
 # 1062 "data/maps/LittlerootTown/scripts.pory"
 	case 4, Rival_Scene01_12
 # 1065 "data/maps/LittlerootTown/scripts.pory"
-	msgbox Rival_Scene01_Text_4
+	msgbox Scene01_BaronText
 Rival_Scene01_7:
 # 1067 "data/maps/LittlerootTown/scripts.pory"
 	closemessage
@@ -2134,22 +2134,22 @@ Rival_Scene01_6:
 
 Rival_Scene01_9:
 # 1057 "data/maps/LittlerootTown/scripts.pory"
-	msgbox Rival_Scene01_Text_0
+	msgbox Scene01_HarperText
 	goto Rival_Scene01_7
 
 Rival_Scene01_10:
 # 1059 "data/maps/LittlerootTown/scripts.pory"
-	msgbox Rival_Scene01_Text_1
+	msgbox Scene01_JaksonText
 	goto Rival_Scene01_7
 
 Rival_Scene01_11:
 # 1061 "data/maps/LittlerootTown/scripts.pory"
-	msgbox Rival_Scene01_Text_2
+	msgbox Scene01_ReddText
 	goto Rival_Scene01_7
 
 Rival_Scene01_12:
 # 1063 "data/maps/LittlerootTown/scripts.pory"
-	msgbox Rival_Scene01_Text_3
+	msgbox Scene01_SakuraText
 	goto Rival_Scene01_7
 
 
@@ -2192,40 +2192,3 @@ Rival_Scene01_Move2:
 Baron_Town01_Text_0:
 # 1020 "data/maps/LittlerootTown/scripts.pory"
 	.string "Left foot… Right foot…\nLeft foot… Right foot…$"
-
-Baron_Town01_Text_1:
-# 1028 "data/maps/LittlerootTown/scripts.pory"
-	.string "O- Oh, there you are… {PLAYER}, right?\n"
-	.string "I didn't notice you there.\p"
-	.string "When I was told about… this control\n"
-	.string "system… I didn't think…\p"
-	.string "Well, I assumed it would be like a pop-up\n"
-	.string "book where all the pixel sprites sprung\l"
-	.string "up in a 3D area you walked around in.\p"
-	.string "I didn't think it'd LITERALLY be a\n"
-	.string "system for mapping perception of 2D\l"
-	.string "pixel art worlds into your head to walk\l"
-	.string "around in.\p"
-	.string "Technology is…\p"
-	.string "Technology can be incredible and very\n"
-	.string "scary at times.$"
-
-Rival_Scene01_Text_0:
-# 1057 "data/maps/LittlerootTown/scripts.pory"
-	.string "Harper:$"
-
-Rival_Scene01_Text_1:
-# 1059 "data/maps/LittlerootTown/scripts.pory"
-	.string "Jakson:$"
-
-Rival_Scene01_Text_2:
-# 1061 "data/maps/LittlerootTown/scripts.pory"
-	.string "Redd:$"
-
-Rival_Scene01_Text_3:
-# 1063 "data/maps/LittlerootTown/scripts.pory"
-	.string "Sakura:$"
-
-Rival_Scene01_Text_4:
-# 1065 "data/maps/LittlerootTown/scripts.pory"
-	.string "Baron:$"

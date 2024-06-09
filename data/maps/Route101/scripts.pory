@@ -389,7 +389,7 @@ script Jakson_Town01 {
 	faceplayer
 	lock
 	speakername (CommonText_Jakson)
-	msgbox(format("{PLAYER}, how are you handling the game so far?\pIf you've never played this sort of game before it can mess with your head.\pJust let me know if anything seems too off and we can try and adjust your settings so you can adjust your own brain to… all this more easily.\pThat includes… stuff not related to controls and everything.\pI threw this mod pack together in a few days with the new release, so there might be a few… unforeseen bugs lurking around the corner.\pIf it does all work, I hope you enjoy the tweaks to the base game, too."))
+	msgbox(Town01_JaksonText)
 	release
 	end
 }
@@ -397,7 +397,7 @@ script Jakson_Town01 {
 script Redd_Town01 {
 	lock
 	speakername (CommonText_Redd)
-	msgbox(format("There's so many different sorts of Pokémon here…\p Though I guess it's really just Generation 1 through 9 Pokémon.\pIt is retro, sort of. Maybe I got too used to Gen 1 'mons from the remake?\pAh, screw it. It's Pokémon in the end.\nI'm sure I can find a Pikachu or a Charmander around here somewhere."))
+	msgbox(Town01_ReddText)
 	release
 	end
 }

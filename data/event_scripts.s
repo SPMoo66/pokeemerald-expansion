@@ -1079,6 +1079,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/birch_speech.inc"
     .include "data/scripts/dexnav.inc"
 	.include "data/global.inc"
+	.include "data/rival_text.inc"
 
 	.include "data/maps/ScorchedSlabB1F/scripts.inc"
 	.include "data/maps/SeasideGrotto/scripts.inc"
@@ -1090,5 +1091,4 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/NamelessCavern/scripts.inc"
 	.include "data/maps/CrescentIsle/scripts.inc"
 	.include "data/maps/FlurryPeak/scripts.inc"
-
 	.include "data/maps/DrakesSanctum/scripts.inc"

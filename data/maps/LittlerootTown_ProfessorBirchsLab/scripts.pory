@@ -967,7 +967,7 @@ script Sakura_Town01 {
 	faceplayer
 	lock
 	speakername (CommonText_Sakura)
-	msgbox(format("So you got your starter Pokémon?\nIt's cute!\pFor me, I wanna get the cutest option possible as my starter.\pMy endgame goal is a majestic and cute queen sitting upon her throne, with steeled and awesome-bodied guards flanking her.\pEach willing to risk life and limb to bring glory to her queendom.\p… … …\pYeah? Of course I realize we're playing a Pokémon game.\pYou're so weird sometimes, {PLAYER}, hahaha."))
+	msgbox(Town01_SakuraText)
 	release
 	end
 }

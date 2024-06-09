@@ -824,7 +824,7 @@ Jakson_Town01::
 # 391 "data/maps/Route101/scripts.pory"
 	speakername CommonText_Jakson
 # 392 "data/maps/Route101/scripts.pory"
-	msgbox Jakson_Town01_Text_0
+	msgbox Town01_JaksonText
 # 393 "data/maps/Route101/scripts.pory"
 	release
 	end
@@ -836,7 +836,7 @@ Redd_Town01::
 # 399 "data/maps/Route101/scripts.pory"
 	speakername CommonText_Redd
 # 400 "data/maps/Route101/scripts.pory"
-	msgbox Redd_Town01_Text_0
+	msgbox Town01_ReddText
 # 401 "data/maps/Route101/scripts.pory"
 	release
 	end
@@ -845,34 +845,3 @@ Redd_Town01::
 Route101_PichuGift_Text_0:
 # 292 "data/maps/Route101/scripts.pory"
 	.string "Pichu joined {PLAYER}!$"
-
-Jakson_Town01_Text_0:
-# 392 "data/maps/Route101/scripts.pory"
-	.string "{PLAYER}, how are you handling the\n"
-	.string "game so far?\p"
-	.string "If you've never played this sort of\n"
-	.string "game before it can mess with your head.\p"
-	.string "Just let me know if anything seems too\n"
-	.string "off and we can try and adjust your\l"
-	.string "settings so you can adjust your own\l"
-	.string "brain to… all this more easily.\p"
-	.string "That includes… stuff not related to\n"
-	.string "controls and everything.\p"
-	.string "I threw this mod pack together in a few\n"
-	.string "days with the new release, so there\l"
-	.string "might be a few… unforeseen bugs lurking\l"
-	.string "around the corner.\p"
-	.string "If it does all work, I hope you enjoy the\n"
-	.string "tweaks to the base game, too.$"
-
-Redd_Town01_Text_0:
-# 400 "data/maps/Route101/scripts.pory"
-	.string "There's so many different sorts of\n"
-	.string "Pokémon here…\p"
-	.string "Though I guess it's really just\n"
-	.string "Generation 1 through 9 Pokémon.\p"
-	.string "It is retro, sort of. Maybe I got too\n"
-	.string "used to Gen 1 'mons from the remake?\p"
-	.string "Ah, screw it. It's Pokémon in the end.\n"
-	.string "I'm sure I can find a Pikachu or a\l"
-	.string "Charmander around here somewhere.$"

@@ -1025,7 +1025,7 @@ script Baron_Town01 {
 	waitmovement (0)
 	delay (60)
 	speakername (CommonText_Baron)
-	msgbox(format("O- Oh, there you are… {PLAYER}, right?\nI didn't notice you there.\pWhen I was told about… this control system… I didn't think…\pWell, I assumed it would be like a pop-up book where all the pixel sprites sprung up in a 3D area you walked around in.\pI didn't think it'd LITERALLY be a system for mapping perception of 2D pixel art worlds into your head to walk around in.\pTechnology is…\pTechnology can be incredible and very scary at times."))
+	msgbox(Town01_BaronText)
 	applymovement (BARON, Common_Movement_FaceLeft)
 	waitmovement (0)
 	release
@@ -1054,15 +1054,15 @@ script Rival_Scene01 {
 		call (GetRivalForNameBox)
 		switch (var(VAR_EMERALBODY_RIVAL)) {
 			case 1:
-				msgbox(format("Harper:"))
+				msgbox(Scene01_HarperText)
 			case 2:
-				msgbox(format("Jakson:"))
+				msgbox(Scene01_JaksonText)
 			case 3:
-				msgbox(format("Redd:"))
+				msgbox(Scene01_ReddText)
 			case 4:
-				msgbox(format("Sakura:"))
+				msgbox(Scene01_SakuraText)
 			default:
-				msgbox(format("Baron:"))
+				msgbox(Scene01_BaronText)
 		}
 		closemessage
 		setvar (VAR_EMERALBODY_RIVAL_STATE, 1)

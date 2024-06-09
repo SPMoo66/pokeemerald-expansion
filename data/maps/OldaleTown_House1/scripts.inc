@@ -50,22 +50,8 @@ Harper_Town01::
 # 28 "data/maps/OldaleTown_House1/scripts.pory"
 	speakername CommonText_Harper
 # 29 "data/maps/OldaleTown_House1/scripts.pory"
-	msgbox Harper_Town01_Text_0
+	msgbox Town01_HarperText
 # 30 "data/maps/OldaleTown_House1/scripts.pory"
 	release
 	end
 
-
-Harper_Town01_Text_0:
-# 29 "data/maps/OldaleTown_House1/scripts.pory"
-	.string "So, you're not feeling sick at all?\n"
-	.string "Well, props to you then…\p"
-	.string "I guess I never really got into this\n"
-	.string "trend when it got popular a while back.\p"
-	.string "It's a neat gimmick, but its hard to\n"
-	.string "imagine it as more than that.\p"
-	.string "I mean, how many cases do you need to\n"
-	.string "perceive the world in a 2D flat plane?\p"
-	.string "Technology is incredible.\p"
-	.string "But fuck, does it give me a headache\n"
-	.string "sometimes…$"

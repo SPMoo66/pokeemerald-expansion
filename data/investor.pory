@@ -1,0 +1,146 @@
+script Investor {
+	lock
+	if (!flag(FLAG_MET_INVESTOR)) {
+		msgbox(format(	"Hey, you!\n"
+						"You look like a financially savvy kid!\p"
+						"Hmm…\n"
+						"You see, I've got quite a valuable investment opportunity on my hands.\p"
+						"If you'll so graciously lend me some money, I promise I can pay it back in dividends!\p"
+						"And then next day, too!\n"
+						"Really, you won't find a better way to earn!"))
+		setflag (FLAG_MET_INVESTOR)
+	}
+	if (!flag(FLAG_INVESTMENT_MADE)) {
+		msgbox(format("So, would you like to invest with me?"))
+		call (AskForInvestment)
+	}
+	elif (flag(FLAG_INVESTMENT_MADE) && flag(FLAG_INVESTMENT_WAITING)) {//investment made but day has not passed
+		msgbox(format("Come back tomorrow and I'll have your earnings ready."))
+	}
+	elif (flag(FLAG_INVESTMENT_MADE) && !flag(FLAG_INVESTMENT_WAITING)) {//investment made and day has passed (claim)
+		showmoneybox (0, 0)
+		if (!flag(FLAG_BADGE05_GET)) {
+			switch (var(VAR_INVESTOR_MONEY)) {
+				case 0:
+					msgbox(Text_InvestmentFailure)
+					addmoney (2500)
+				case 1:
+					msgbox(Text_InvestmentNeutral)
+					addmoney (5000)
+				case 2:
+					msgbox(Text_InvestmentSuccess)
+					addmoney (10000)
+				case 3:
+					msgbox(Text_InvestmentGreatSuccess)
+					addmoney (20000)
+				default:
+					break
+			}
+		}
+		else {
+			switch (var(VAR_INVESTOR_MONEY)) {
+				case 0:
+					msgbox(Text_InvestmentFailure)
+					addmoney (5000)
+				case 1:
+					msgbox(Text_InvestmentNeutral)
+					addmoney (10000)
+				case 2:
+					msgbox(Text_InvestmentSuccess)
+					addmoney (20000)
+				case 3:
+					msgbox(Text_InvestmentGreatSuccess)
+					addmoney (40000)
+				default:
+					break
+			}
+		}
+		clearflag (FLAG_INVESTMENT_MADE)
+		msgbox(format("So, would you like to make another investment?"))
+		call (AskForInvestment)
+	}
+	hidemoneybox
+	end
+}
+
+script AskForInvestment {
+	showmoneybox (0, 0)
+	if (!flag(FLAG_BADGE06_GET)) {//0-5 badges
+		msgbox(format("If you'd just lend ¥5000 to me, it's bound to be a success!"), MSGBOX_YESNO)
+		if (var(VAR_RESULT) == 0) {//0=no
+			msgbox(Text_DeclineInvestor)
+		}
+		else {//1=yes
+			checkmoney (5000)
+			if (var(VAR_RESULT) == TRUE) {
+				removemoney (5000)
+				goto (InvestmentCalculations)
+			}
+		}
+	}
+	else {//6+ badges
+		msgbox(format("If you'd just lend ¥10000 to me, it's bound to be a success!"), MSGBOX_YESNO)
+		if (var(VAR_RESULT) == 0) {//0=no
+			msgbox(Text_DeclineInvestor)
+		}
+		else {//1=yes
+			checkmoney (10000)
+			if (var(VAR_RESULT) == TRUE) {
+				removemoney (10000)
+				goto (InvestmentCalculations)
+			}
+		}
+	}
+}
+
+script InvestmentCalculations {
+	setflag (FLAG_INVESTMENT_MADE)
+	setflag (FLAG_INVESTMENT_WAITING)
+	msgbox(Text_AcceptInvestor)
+	random (3) //0-3
+	copyvar (VAR_INVESTOR_MONEY, VAR_RESULT)
+}
+
+text Text_DeclineInvestor {
+	format(	"Ah, you've disappointed me.\p"
+			"If you change your mind, do return.")
+}
+
+text Text_AcceptInvestor {
+	format(	"Fantastic!\n"
+			"Check back tomrorrow and I'll give you your return.")
+}
+
+text Text_InvestmentFailure {
+	format(	"Ah, you're back.\p"
+			"Unfortunately I hit a snag in the whole process.\n"
+			"Nothing too bad, but well… …\p"
+			"All I can give you is half of what you invested with me.\p"
+			"But next time, I promise I can do better!")
+}
+
+text Text_InvestmentNeutral {
+	format(	"You've returned!\p"
+			"I've got good news and bad news.\p"
+			"Unfortunately, I wasn't able to make you any money.\p"
+			"But I didn't lose you any either!\p"
+			"Here's your original investment back.\n"
+			"If you want to give it another shot, let me know.")
+}
+
+text Text_InvestmentSuccess {
+	format(	"Back already?\p"
+			"You should have waited longer, because I made you quite a bit already.\p"
+			"Well, here's your seed back anyway, doubled in value!\p"
+			"How do I do it?\p"
+			"Ha! I've got to keep some secrets if I want customers to return!\p"
+			"If you want to give it another go, I'll be here.")
+}
+
+text Text_InvestmentGreatSuccess {
+	format(	"You must have sensed our victory!\p"
+			"Yes, we've had a great success!\n"
+			"Don't ask how I did it, but I've quadrupled what you'd given me.\p"
+			"Here, take it, before it burns a whole in my pocket.\p"
+			"If you want to taste victory once more, you know where to find me.")
+}

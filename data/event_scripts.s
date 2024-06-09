@@ -1080,6 +1080,7 @@ EventScript_VsSeekerChargingDone::
     .include "data/scripts/dexnav.inc"
 	.include "data/global.inc"
 	.include "data/rival_text.inc"
+	.include "data/investor.inc"
 
 	.include "data/maps/ScorchedSlabB1F/scripts.inc"
 	.include "data/maps/SeasideGrotto/scripts.inc"

@@ -1571,7 +1571,7 @@ Rival_Scene02_4:
 # 797 "data/maps/PetalburgCity/scripts.pory"
 	case 4, Rival_Scene02_14
 # 800 "data/maps/PetalburgCity/scripts.pory"
-	msgbox Rival_Scene02_Text_4
+	msgbox Scene02_BaronText_PreBattle
 Rival_Scene02_9:
 # 802 "data/maps/PetalburgCity/scripts.pory"
 	closemessage
@@ -1614,22 +1614,22 @@ Rival_Scene02_8:
 
 Rival_Scene02_11:
 # 792 "data/maps/PetalburgCity/scripts.pory"
-	msgbox Rival_Scene02_Text_0
+	msgbox Scene02_HarperText_PreBattle
 	goto Rival_Scene02_9
 
 Rival_Scene02_12:
 # 794 "data/maps/PetalburgCity/scripts.pory"
-	msgbox Rival_Scene02_Text_1
+	msgbox Scene02_JaksonText_PreBattle
 	goto Rival_Scene02_9
 
 Rival_Scene02_13:
 # 796 "data/maps/PetalburgCity/scripts.pory"
-	msgbox Rival_Scene02_Text_2
+	msgbox Scene02_ReddText_PreBattle
 	goto Rival_Scene02_9
 
 Rival_Scene02_14:
 # 798 "data/maps/PetalburgCity/scripts.pory"
-	msgbox Rival_Scene02_Text_3
+	msgbox Scene02_SakuraText_PreBattle
 	goto Rival_Scene02_9
 
 Rival_Scene02_17:
@@ -1665,23 +1665,3 @@ Rival_Scene02_Move2:
 # 822 "data/maps/PetalburgCity/scripts.pory"
 	walk_left
 	step_end
-
-Rival_Scene02_Text_0:
-# 792 "data/maps/PetalburgCity/scripts.pory"
-	.string "Harper:$"
-
-Rival_Scene02_Text_1:
-# 794 "data/maps/PetalburgCity/scripts.pory"
-	.string "Jakson:$"
-
-Rival_Scene02_Text_2:
-# 796 "data/maps/PetalburgCity/scripts.pory"
-	.string "Redd:$"
-
-Rival_Scene02_Text_3:
-# 798 "data/maps/PetalburgCity/scripts.pory"
-	.string "Sakura:$"
-
-Rival_Scene02_Text_4:
-# 800 "data/maps/PetalburgCity/scripts.pory"
-	.string "Baron:$"

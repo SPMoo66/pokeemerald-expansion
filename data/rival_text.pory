@@ -117,3 +117,75 @@ text Town01_SakuraText {
 			"Yeah? Of course I realize we're playing a Pokémon game.\p"
 			"You're so weird sometimes, {PLAYER}, hahaha.")
 }
+
+text Scene02_BaronText_PreBattle {
+	format(	"")
+}
+
+text Scene02_HarperText_PreBattle {
+	format(	"")
+}
+
+text Scene02_JaksonText_PreBattle {
+	format(	"{PLAYER}.\p"
+			"Everything running smoothly?\n"
+			"Nothing catastrophic break?\l"
+			"… … …\p"
+			"Nah, I wouldn't say I think something is broken. It just feels… inevitable.\p"
+			"If I'm just being paranoid, then all the better. Then it means the tweaks I made are working as intended and we can enjoy all the new stuff.\p"
+			"With that said… maybe it could use a little more testing of the battles.\p"
+			"I won't lie, I've been wondering how good you'd be if you played seriously.\p"
+			"Just one more thing to test, yeah?")
+}
+
+text Scene02_ReddText_PreBattle {
+	format(	"")
+}
+
+text Scene02_SakuraText_PreBattle {
+	format(	"")
+}
+
+text Scene02_BaronText_BattleVictory {
+	format(	"")
+}
+
+text Scene02_HarperText_BattleVictory {
+	format(	"")
+}
+
+text Scene02_JaksonText_BattleVictory {
+	format(	"I… lost? Huh…")
+}
+
+text Scene02_ReddText_BattleVictory {
+	format(	"")
+}
+
+text Scene02_SakuraText_BattleVictory {
+	format(	"")
+}
+
+text Scene02_BaronText_PostBattle {
+	format(	"")
+}
+
+text Scene02_HarperText_PostBattle {
+	format(	"")
+}
+
+text Scene02_JaksonText_PostBattle {
+	format(	"Haha… I don't know what I expected, but that was exhilarating.\p"
+			"I get a feeling this is gonna be a lot of fun with multiplayer.\p"
+			"Enough so to take this seriously.\p"
+			"Don't think you're gonna stay ahead of me for long, {PLAYER}.")
+}
+
+text Scene02_ReddText_PostBattle {
+	format(	"")
+}
+
+text Scene02_SakuraText_PostBattle {
+	format(	"")
+}
+

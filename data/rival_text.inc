@@ -189,3 +189,83 @@ Town01_SakuraText::
 	.string "a Pokémon game.\p"
 	.string "You're so weird sometimes, {PLAYER},\n"
 	.string "hahaha.$"
+
+Scene02_BaronText_PreBattle::
+# 121 "data/rival_text.pory"
+	.string "$"
+
+Scene02_HarperText_PreBattle::
+# 125 "data/rival_text.pory"
+	.string "$"
+
+Scene02_JaksonText_PreBattle::
+# 129 "data/rival_text.pory"
+	.string "{PLAYER}.\p"
+	.string "Everything running smoothly?\n"
+	.string "Nothing catastrophic break?\l"
+	.string "… … …\p"
+	.string "Nah, I wouldn't say I think something is\n"
+	.string "broken. It just feels… inevitable.\p"
+	.string "If I'm just being paranoid, then all the\n"
+	.string "better. Then it means the tweaks I made\l"
+	.string "are working as intended and we can\l"
+	.string "enjoy all the new stuff.\p"
+	.string "With that said… maybe it could use a\n"
+	.string "little more testing of the battles.\p"
+	.string "I won't lie, I've been wondering how\n"
+	.string "good you'd be if you played seriously.\p"
+	.string "Just one more thing to test, yeah?$"
+
+Scene02_ReddText_PreBattle::
+# 141 "data/rival_text.pory"
+	.string "$"
+
+Scene02_SakuraText_PreBattle::
+# 145 "data/rival_text.pory"
+	.string "$"
+
+Scene02_BaronText_BattleVictory::
+# 149 "data/rival_text.pory"
+	.string "$"
+
+Scene02_HarperText_BattleVictory::
+# 153 "data/rival_text.pory"
+	.string "$"
+
+Scene02_JaksonText_BattleVictory::
+# 157 "data/rival_text.pory"
+	.string "I… lost? Huh…$"
+
+Scene02_ReddText_BattleVictory::
+# 161 "data/rival_text.pory"
+	.string "$"
+
+Scene02_SakuraText_BattleVictory::
+# 165 "data/rival_text.pory"
+	.string "$"
+
+Scene02_BaronText_PostBattle::
+# 169 "data/rival_text.pory"
+	.string "$"
+
+Scene02_HarperText_PostBattle::
+# 173 "data/rival_text.pory"
+	.string "$"
+
+Scene02_JaksonText_PostBattle::
+# 177 "data/rival_text.pory"
+	.string "Haha… I don't know what I expected, but\n"
+	.string "that was exhilarating.\p"
+	.string "I get a feeling this is gonna be a lot of\n"
+	.string "fun with multiplayer.\p"
+	.string "Enough so to take this seriously.\p"
+	.string "Don't think you're gonna stay ahead of\n"
+	.string "me for long, {PLAYER}.$"
+
+Scene02_ReddText_PostBattle::
+# 184 "data/rival_text.pory"
+	.string "$"
+
+Scene02_SakuraText_PostBattle::
+# 188 "data/rival_text.pory"
+	.string "$"

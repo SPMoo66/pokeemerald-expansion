@@ -789,15 +789,15 @@ script Rival_Scene02 {
 		waitmovement (0)
 		switch (var(VAR_EMERALBODY_RIVAL)) {
 			case 1:
-				msgbox(format("Harper:"))
+				msgbox(Scene02_HarperText_PreBattle)
 			case 2:
-				msgbox(format("Jakson:"))
+				msgbox(Scene02_JaksonText_PreBattle)
 			case 3:
-				msgbox(format("Redd:"))
+				msgbox(Scene02_ReddText_PreBattle)
 			case 4:
-				msgbox(format("Sakura:"))
+				msgbox(Scene02_SakuraText_PreBattle)
 			default:
-				msgbox(format("Baron:"))
+				msgbox(Scene02_BaronText_PreBattle)
 		}
 		closemessage
 		setvar (VAR_EMERALBODY_RIVAL_STATE, 2)

@@ -25,7 +25,8 @@ mapscripts OldaleTown_House1_MapScripts {
 script Harper_Town01 {
 	faceplayer
 	lock
-	msgbox(format("Harper: So, you're not feeling sick at all? Well, props to you then...\pI guess I never really got into this trend when it got popular a while back.\pIt's a neat gimmick, but its hard to imagine it as more than that.\pI mean, how many cases do you need to perceive the world in a 2D flat plane?\pTechnology is incredible.\pBut fuck, does it give me a headache sometimes..."))
+	speakername (CommonText_Harper)
+	msgbox(format("So, you're not feeling sick at all?\nWell, props to you then…\pI guess I never really got into this trend when it got popular a while back.\pIt's a neat gimmick, but its hard to imagine it as more than that.\pI mean, how many cases do you need to perceive the world in a 2D flat plane?\pTechnology is incredible.\pBut fuck, does it give me a headache sometimes…"))
 	release
 	end
 }

@@ -5,6 +5,7 @@ raw `
 Route101_EventScript_StartBirchRescue::
 	lockall
 	playbgm MUS_HELP, TRUE
+	speakername CommonText_Q
 	msgbox Route101_Text_HelpMe, MSGBOX_DEFAULT
 	closemessage
 	setobjectxy LOCALID_BIRCH, 0, 15
@@ -21,6 +22,7 @@ Route101_EventScript_StartBirchRescue::
 	applymovement LOCALID_ZIGZAGOON, Route101_Movement_ZigzagoonFaceBirch
 	applymovement LOCALID_BIRCH, Route101_Movement_BirchFaceZigzagoon
 	waitmovement 0
+	speakername CommonText_Birch
 	msgbox Route101_Text_PleaseHelp, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_ROUTE101_STATE, 2
@@ -29,6 +31,7 @@ Route101_EventScript_StartBirchRescue::
 
 Route101_EventScript_PreventExitSouth::
 	lockall
+	speakername CommonText_Birch
 	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
@@ -38,6 +41,7 @@ Route101_EventScript_PreventExitSouth::
 
 Route101_EventScript_PreventExitWest::
 	lockall
+	speakername CommonText_Birch
 	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight
@@ -47,6 +51,7 @@ Route101_EventScript_PreventExitWest::
 
 Route101_EventScript_PreventExitNorth::
 	lockall
+	speakername CommonText_Birch
 	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
@@ -186,6 +191,7 @@ Route101_EventScript_BirchsBag::
 	waitstate
 	applymovement LOCALID_BIRCH, Common_Movement_WalkRight
 	waitmovement 0
+	speakername CommonText_Birch
 	msgbox Route101_Text_YouSavedMe, MSGBOX_DEFAULT
 	special HealPlayerParty
 	setflag FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE
@@ -382,14 +388,16 @@ mapscripts Route101_MapScripts {
 script Jakson_Town01 {
 	faceplayer
 	lock
-	msgbox(format("Jakson: {PLAYER}, how are you handling the game so far?\pIf you've never played this sort of game before it can mess with your head.\pJust let me know if anything seems too off and we can try and adjust your settings so you can adjust your own brain to... all this more easily.\pThat includes... stuff not related to controls and everything.\pI threw this mod pack together in a few days with the new release, so there might be a few... unforeseen bugs lurking around the corner.\pIf it does all work, I hope you enjoy the tweaks to the base game, too."))
+	speakername (CommonText_Jakson)
+	msgbox(format("{PLAYER}, how are you handling the game so far?\pIf you've never played this sort of game before it can mess with your head.\pJust let me know if anything seems too off and we can try and adjust your settings so you can adjust your own brain to… all this more easily.\pThat includes… stuff not related to controls and everything.\pI threw this mod pack together in a few days with the new release, so there might be a few… unforeseen bugs lurking around the corner.\pIf it does all work, I hope you enjoy the tweaks to the base game, too."))
 	release
 	end
 }
 
 script Redd_Town01 {
 	lock
-	msgbox(format("Redd: There's so many different sorts of Pokémon here...\p Though I guess it's really just Generation 1 through 9 Pokémon.\pIt is retro, sort of. Maybe I got too used to Gen 1 'mons from the remake?\pAh, screw it. It's Pokémon in the end.\nI'm sure I can find a Pikachu or a Charmander around here somewhere."))
+	speakername (CommonText_Redd)
+	msgbox(format("There's so many different sorts of Pokémon here…\p Though I guess it's really just Generation 1 through 9 Pokémon.\pIt is retro, sort of. Maybe I got too used to Gen 1 'mons from the remake?\pAh, screw it. It's Pokémon in the end.\nI'm sure I can find a Pikachu or a Charmander around here somewhere."))
 	release
 	end
 }

@@ -759,3 +759,72 @@ mart TypeEnhancingHeldItemsPokemart {
 	ITEM_METAL_COAT
 	ITEM_FAIRY_FEATHER
 }
+
+text CommonText_Mom {
+	"Mom"
+}
+
+text CommonText_Dad {
+	"Dad"
+}
+
+
+text CommonText_Birch {
+	"Prof. Birch"
+}
+
+text CommonText_Archie {
+	"Archie"
+}
+
+text CommonText_Maxie {
+	"Maxie"
+}
+
+text CommonText_May {
+	"May"
+}
+
+text CommonText_Brendan {
+	"Brendan"
+}
+
+text CommonText_Q {
+	"?????"
+}
+
+script GetRivalForNameBox {
+	switch (var(VAR_EMERALBODY_RIVAL)) {
+		case 1:
+			speakername (CommonText_Harper)
+		case 2:
+			speakername (CommonText_Jakson)
+		case 3:
+			speakername (CommonText_Redd)
+		case 4:
+			speakername (CommonText_Sakura)
+		default:
+			speakername (CommonText_Baron)
+	}
+}
+
+text CommonText_Baron {
+	"Baron"
+}
+
+text CommonText_Harper {
+	"Harper"
+}
+
+text CommonText_Jakson {
+	"Jakson"
+}
+
+text CommonText_Redd {
+	"Redd"
+}
+
+text CommonText_Sakura {
+	"Sakura"
+}
+

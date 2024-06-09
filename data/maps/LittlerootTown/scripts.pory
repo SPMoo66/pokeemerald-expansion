@@ -170,6 +170,7 @@ LittlerootTown_EventScript_GoInsideWithMom::
 	delay 10
 	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachPlayerAtTruck
 	waitmovement 0
+	speakername CommonText_Mom
 	msgbox LittlerootTown_Text_OurNewHomeLetsGoInside, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachDoor
@@ -225,6 +226,7 @@ LittlerootTown_EventScript_BeginDexUpgradeScene::
 	applymovement LOCALID_BIRCH, Common_Movement_ExclamationMark
 	waitmovement 0
 	delay 80
+	speakername CommonText_Birch
 	msgbox LittlerootTown_Text_BirchSomethingToShowYouAtLab, MSGBOX_DEFAULT
 	closemessage
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_RIVAL
@@ -489,6 +491,7 @@ LittlerootTown_EventScript_GiveRunningShoesTrigger::
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_SetHomeDoorCoordsMale
 	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_SetHomeDoorCoordsFemale
+	speakername CommonText_Mom
 	msgbox LittlerootTown_Text_WaitPlayer, MSGBOX_DEFAULT
 	closemessage
 	checkplayergender
@@ -633,7 +636,7 @@ LittlerootTown_EventScript_MomReturnHome0::
 	return
 
 LittlerootTown_EventScript_MomReturnHome1::
-	applymovement LOCALID_MOM, LittlerootTown_Movement_MomReturnHome1
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomReturnHome0
 	waitmovement 0
 	return
 
@@ -793,14 +796,6 @@ LittlerootTown_Movement_MomReturnHome0:
 	walk_down
 	step_end
 
-LittlerootTown_Movement_MomReturnHome1:
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	step_end
-
 LittlerootTown_Movement_MomReturnHomeMale2:
 	walk_left
 	walk_left
@@ -887,19 +882,24 @@ LittlerootTown_EventScript_SetReceivedRunningShoes::
 	end
 
 LittlerootTown_EventScript_GiveRunningShoes::
+	speakername CommonText_Mom
 	msgbox LittlerootTown_Text_WearTheseRunningShoes, MSGBOX_DEFAULT
+	closemessage
 	playfanfare MUS_OBTAIN_ITEM
 	message LittlerootTown_Text_SwitchShoesWithRunningShoes
 	waitfanfare
+	speakername CommonText_Mom
 	msgbox LittlerootTown_Text_ExplainRunningShoes, MSGBOX_DEFAULT
+	closemessage
 	giveitem ITEM_OLD_ROD
+	speakername CommonText_Mom
 	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
 	closemessage
 	delay 30
 	return
 
 LittlerootTown_Text_OurNewHomeLetsGoInside:
-	.string "Mom: {PLAYER}, we're here, honey!\p"
+	.string "{PLAYER}, we're here, honey!\p"
 	.string "It must be tiring riding with our things\n"
 	.string "in the moving truck.\p"
 	.string "Well, this is Littleroot Town.\p"
@@ -911,10 +911,10 @@ LittlerootTown_Text_OurNewHomeLetsGoInside:
 	.string "Let's go inside.$"
 
 LittlerootTown_Text_WaitPlayer:
-	.string "Mom: Wait, {PLAYER}!$"
+	.string "Wait, {PLAYER}!$"
 
 LittlerootTown_Text_WearTheseRunningShoes:
-	.string "Mom: {PLAYER}! {PLAYER}! Did you\n"
+	.string "{PLAYER}! {PLAYER}! Did you\n"
 	.string "introduce yourself to Prof. Birch?\p"
 	.string "Oh! What an adorable Pokémon!\n"
 	.string "You got it from Prof. Birch. How nice!\p"
@@ -929,7 +929,7 @@ LittlerootTown_Text_SwitchShoesWithRunningShoes:
 	.string "new pair from Mom!$"
 
 LittlerootTown_Text_ExplainRunningShoes:
-	.string "Mom: {PLAYER}, those shoes look so\n"
+	.string "{PLAYER}, those shoes look so\n"
 	.string "stylish on you!\p"
 	.string "Oh!\n"
 	.string "Let me give you your old fishing rod.$"
@@ -996,7 +996,7 @@ LittlerootTown_Text_ProfBirchsHouse:
 	.string "Prof. Birch's House$"
 
 LittlerootTown_Text_BirchSomethingToShowYouAtLab:
-	.string "Prof. Birch: Well, well, {PLAYER}{KUN}!\n"
+	.string "Well, well, {PLAYER}{KUN}!\n"
 	.string "That was good work out there!\p"
 	.string "I knew there was something special\n"
 	.string "about you when I first saw you,\l"
@@ -1016,14 +1016,16 @@ script Baron_Town01 {
 	waitmovement (0)
 	applymovement (BARON, Baron_Town01_Move)
 	waitmovement (0)
-	msgbox("Baron: Left foot... Right foot..\nLeft foot.. Right foot...")
+	speakername (CommonText_Baron)
+	msgbox("Left foot… Right foot…\nLeft foot… Right foot…")
 	closemessage
 	faceplayer
 	playse (SE_PIN)
 	applymovement (BARON, Common_Movement_ExclamationMark)
 	waitmovement (0)
 	delay (60)
-	msgbox(format("O- Oh, there you are... {PLAYER}, right?\nI didn't notice you there.\pWhen I was told about... this control system... I didn't think...\pWell, I assumed it would be like a pop-up book where all the pixel sprites sprung up in a 3D area you walked around in.\pI didn't think it'd LITERALLY be a system for mapping perception of 2D pixel art worlds into your head to walk around in.\pTechnology is...\pTechnology can be incredible and very scary at times."))
+	speakername (CommonText_Baron)
+	msgbox(format("O- Oh, there you are… {PLAYER}, right?\nI didn't notice you there.\pWhen I was told about… this control system… I didn't think…\pWell, I assumed it would be like a pop-up book where all the pixel sprites sprung up in a 3D area you walked around in.\pI didn't think it'd LITERALLY be a system for mapping perception of 2D pixel art worlds into your head to walk around in.\pTechnology is…\pTechnology can be incredible and very scary at times."))
 	applymovement (BARON, Common_Movement_FaceLeft)
 	waitmovement (0)
 	release
@@ -1045,10 +1047,11 @@ script Rival_Scene01 {
 		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
 		switch (var(VAR_TEMP_1)) {
 			case 17:
-				applymovement (RIVAL, Rival_Scene01_Move1b)
+				applymovement (RIVAL, Common_Movement_FaceUp)
 				waitmovement (0)
 			default:
 		}
+		call (GetRivalForNameBox)
 		switch (var(VAR_EMERALBODY_RIVAL)) {
 			case 1:
 				msgbox(format("Harper:"))
@@ -1080,10 +1083,6 @@ movement Rival_Scene01_Move1 {
 	emote_exclamation_mark
 	delay_16 * 4
 	walk_left * 2
-}
-
-movement Rival_Scene01_Move1b {
-	face_up
 }
 
 movement Rival_Scene01_Move2 {

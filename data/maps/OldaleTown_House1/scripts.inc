@@ -48,16 +48,18 @@ Harper_Town01::
 # 27 "data/maps/OldaleTown_House1/scripts.pory"
 	lock
 # 28 "data/maps/OldaleTown_House1/scripts.pory"
-	msgbox Harper_Town01_Text_0
+	speakername CommonText_Harper
 # 29 "data/maps/OldaleTown_House1/scripts.pory"
+	msgbox Harper_Town01_Text_0
+# 30 "data/maps/OldaleTown_House1/scripts.pory"
 	release
 	end
 
 
 Harper_Town01_Text_0:
-# 28 "data/maps/OldaleTown_House1/scripts.pory"
-	.string "Harper: So, you're not feeling sick at\n"
-	.string "all? Well, props to you then...\p"
+# 29 "data/maps/OldaleTown_House1/scripts.pory"
+	.string "So, you're not feeling sick at all?\n"
+	.string "Well, props to you then…\p"
 	.string "I guess I never really got into this\n"
 	.string "trend when it got popular a while back.\p"
 	.string "It's a neat gimmick, but its hard to\n"
@@ -66,4 +68,4 @@ Harper_Town01_Text_0:
 	.string "perceive the world in a 2D flat plane?\p"
 	.string "Technology is incredible.\p"
 	.string "But fuck, does it give me a headache\n"
-	.string "sometimes...$"
+	.string "sometimes…$"

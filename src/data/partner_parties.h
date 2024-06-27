@@ -1,27 +1,30 @@
 static const struct TrainerMon sParty_StevenPartnerMossdeep[] = {
     {
         .species = SPECIES_METANG,
-        .lvl = 42,
+        .lvl = 47,
         .nature = NATURE_BRAVE,
+        .heldItem = ITEM_AIR_BALLOON,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(0, 252, 252, 0, 6, 0),
-        .moves = {MOVE_LIGHT_SCREEN, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_METAL_CLAW},
+        .moves = {MOVE_LIGHT_SCREEN, MOVE_ZEN_HEADBUTT, MOVE_REFLECT, MOVE_IRON_HEAD},
     },
     {
         .species = SPECIES_SKARMORY,
-        .lvl = 43,
+        .lvl = 48,
         .nature = NATURE_IMPISH,
+        .heldItem = ITEM_SITRUS_BERRY,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 6, 252),
-        .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_PROTECT, MOVE_STEEL_WING},
+        .moves = {MOVE_TOXIC, MOVE_DRILL_PECK, MOVE_PROTECT, MOVE_STEEL_WING},
     },
     {
         .species = SPECIES_AGGRON,
-        .lvl = 44,
+        .lvl = 49,
         .nature = NATURE_ADAMANT,
+        .heldItem = ITEM_MEGA_STONE_X,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 252, 6),
-        .moves = {MOVE_THUNDER, MOVE_PROTECT, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW},
+        .moves = {MOVE_IRON_TAIL, MOVE_PROTECT, MOVE_ROCK_SLIDE, MOVE_DRAGON_CLAW},
     }
 };
 

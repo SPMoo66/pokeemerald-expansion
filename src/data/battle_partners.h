@@ -16,6 +16,7 @@ const struct Trainer gBattlePartners[] = {
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_BACK_PIC_STEVEN,
         .trainerName = _("Steven"),
+        .items = {ITEM_MEGA_RING},
     },
 
     [PARTNER_MAY_METEOR_FALLS] =

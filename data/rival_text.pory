@@ -1,3 +1,4 @@
+# Scene01
 text Scene01_BaronText {
 	format(	"H- Hello…? You don't look like you're stapled in place like the others/p"
 			"Ack!? It moved!? Stay back, demon!\n"
@@ -70,6 +71,7 @@ text Scene01_SakuraText {
 			"I wanna see how everyone else looks, so feel free to go on ahead. G'luck!")
 }
 
+# Town01
 text Town01_BaronText {
 	format(	"O- Oh, there you are… {PLAYER}, right?\n"
 			"I didn't notice you there.\p"
@@ -118,12 +120,30 @@ text Town01_SakuraText {
 			"You're so weird sometimes, {PLAYER}, hahaha.")
 }
 
+# Scene02
 text Scene02_BaronText_PreBattle {
-	format(	"")
+	format(	"H- Hello? It's… good to… see…\n"
+			"You……………… {PLAYER}?\l"
+			"… … …\p"
+			"Oh, thank God that's you. That's not your normal look, right?\p"
+			"Just trying to remember what each person looks like is a task…\p"
+			"Let alone remember everything I was told about-\p"
+			"…A- Actually. I got a gift for you.\p"
+			"You like this sort of thing, right?\n"
+			"Now, how do I…\l"
+			"Do I just… press this…?")
 }
 
 text Scene02_HarperText_PreBattle {
-	format(	"")
+	format(	"Yo. How ya doing?\p"
+			"Catch any interesting… Uh… Pokémon, right?\p"
+			"… … …\p"
+			"Yeah, I know. I've played the games before today after all.\p"
+			"I'm just seeing some of these and wondering if Jakson modded in some.\p"
+			"Like one of these has gotta be a Digimon or something, right?\p"
+			"… … …\p"
+			"There's no way that's a real one.\n"
+			"C'mon, show me.")
 }
 
 text Scene02_JaksonText_PreBattle {
@@ -139,19 +159,33 @@ text Scene02_JaksonText_PreBattle {
 }
 
 text Scene02_ReddText_PreBattle {
-	format(	"")
+	format(	"If it isn't the “Blue” to my “Red”?\n"
+			"Or maybe you'd prefer “Green”?\p"
+			"… … …\p"
+			"Ah, just have fun with it.\p"
+			"What's a Pokémon game without rivals, after all?\p"
+			"That is to say… don't let your guard down and fall behind.\p"
+			"You can't afford to do that. Since, there's that fun fact about me.\p"
+			"I am the most powerful trainer in the world!")
 }
 
 text Scene02_SakuraText_PreBattle {
-	format(	"")
+	format(	"{PLAYER}, you're alive and kickin'?\n"
+			"Never was a doubt in my mind.\p"
+			"Better watch out, yeah? Turn a corner and the next thing you know… Dead!\p"
+			"… … …\p"
+			"Haha{EMOJI_TILDE} Of course I'm serious.\p"
+			"How about we test just how much permadeath is baked into the game?\p"
+			"Cuteness Inspector Sakura…\n"
+			"wants to battle!")
 }
 
 text Scene02_BaronText_BattleVictory {
-	format(	"")
+	format(	"Misclick! Misclick!")
 }
 
 text Scene02_HarperText_BattleVictory {
-	format(	"")
+	format(	"So next I'll send out…!\nWait, am I out of them?!")
 }
 
 text Scene02_JaksonText_BattleVictory {
@@ -159,19 +193,31 @@ text Scene02_JaksonText_BattleVictory {
 }
 
 text Scene02_ReddText_BattleVictory {
-	format(	"")
+	format(	"…?!")
 }
 
 text Scene02_SakuraText_BattleVictory {
-	format(	"")
+	format(	"Aww{EMOJI_TILDE} I couldn't end your run.")
 }
 
 text Scene02_BaronText_PostBattle {
-	format(	"")
+	format(	"I'm sorry, I thought that I pressed something else.\p"
+			"Then the “run” button thing stopped working…!\p"
+			"S- Sorry. I should just try and not make a mess of everything.\p"
+			"Please go have fun with everyone.\p"
+			"I need to learn how to control this better and actually help.\l"
+			"… … …\l"
+			"Cookies? Maybe cookies…")
 }
 
 text Scene02_HarperText_PostBattle {
-	format(	"")
+	format(	"Sigh… I knew there was a reason I was dodging those trainers.\p"
+			"Maybe I really should've sat this one out.\p"
+			"This is… more complicated than that phone game I played.\p"
+			"… … …\p"
+			"No, just go on ahead, I think I need to take another break.\p"
+			"Seriously, don't worry.\n"
+			"I'm just tired.")
 }
 
 text Scene02_JaksonText_PostBattle {
@@ -182,10 +228,20 @@ text Scene02_JaksonText_PostBattle {
 }
 
 text Scene02_ReddText_PostBattle {
-	format(	"")
+	format(	"Ack. What are you, Route 22 Blue?!\p"
+			"I knew I should've grinded more…\p"
+			"… … …\p"
+			"Well, good job not falling behind!\p"
+			"It's only gonna get harder from her on out. So… uh…\p"
+			"S- Smell ya later!")
 }
 
 text Scene02_SakuraText_PostBattle {
-	format(	"")
+	format(	"Huh? I thought my team would fare better in that battle.\p"
+			"It's okay. At least I got to see how cute your team is.\p"
+			"Seeing your face when you weren't sure about the permadeath was great!\p"
+			"Plus, there's always next time.\p"
+			"We've got all game, so…\p"
+			"You're destined to let your guard down eventually{EMOJI_TILDE}")
 }
 

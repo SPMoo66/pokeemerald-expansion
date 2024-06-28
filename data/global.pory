@@ -788,6 +788,10 @@ text CommonText_Brendan {
 	"Brendan"
 }
 
+text CommonText_Wally {
+	"Wally"
+}
+
 text CommonText_Scott {
 	"Scott"
 }

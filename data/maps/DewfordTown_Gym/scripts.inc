@@ -282,26 +282,6 @@ DewfordTown_Gym_EventScript_GymStatue::
 	releaseall
 	end
 
-DewfordTown_Gym_Text_GymGuideAdvice:
-	.string "Hey, how's it going, Champion-\n"
-	.string "bound {PLAYER}?\p"
-	.string "Dewford's Gym Leader Brawly commands\n"
-	.string "Fighting-type Pokémon.\p"
-	.string "Going against him with Normal-type\n"
-	.string "Pokémon is asking for trouble.\p"
-	.string "Fighting Pokémon will lay a serious\n"
-	.string "smack down on Normal Pokémon,\l"
-	.string "so be careful!\p"
-	.string "What's worse, the Gym is as dark as\n"
-	.string "the ocean floor.\p"
-	.string "But it will get brighter after defeating\n"
-	.string "the Trainers in your way.\p"
-	.string "Hey, okay, go for it!$"
-
-DewfordTown_Gym_Text_GymGuidePostVictory:
-	.string "Whoah! It's turned too bright in here!\p"
-	.string "Your future is bright, too!$"
-
 DewfordTown_Gym_Text_TakaoIntro:
 	.string "Might is right!\n"
 	.string "Come on!$"

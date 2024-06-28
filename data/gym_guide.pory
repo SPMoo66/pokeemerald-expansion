@@ -1,0 +1,62 @@
+# Rustboro
+text RustboroCity_Gym_Text_GymGuideAdvice {
+	format(	"Yo, how's it going?\p"
+			"Listen, my friend!\n"
+			"Would you like to become the Champion?\p"
+			"I'm no Trainer, not me, but I can\n"
+			"sure give you winning advice.\p"
+			"That's settled, then! We'll aim for the\n"
+			"Pokémon Championship together!\p"
+			"It's your job as a Trainer to collect\n"
+			"Gym Badges, am I right?\p"
+			"But Gym Leaders aren't pushovers!\p"
+			"And that's where I come in!\n"
+			"I'm here to provide expert advice!\p"
+			"Roxanne, the Gym Leader, is a user\n"
+			"of both Ice and Ground-type Pokémon.\p"
+			"The Ground type is very durable, but\n"
+			"it can't stand Water-type and\l"
+			"Grass-type moves.\p"
+			"The Ice type is frail, but packs a\n"
+			"punch that will leave you frozen stiff!\p"
+			"Come see me afterwards, if you beat\n"
+			"the Gym Leader.\p"
+			"Well, go for it!$")
+}
+
+text RustboroCity_Gym_Text_GymGuidePostVictory {
+	format(	"Whoa! What a breathtaking victory!\n"
+			"My cheering must've worked!\p"
+			"Great!\n"
+			"Check your Trainer Card.\p"
+			"The Stone Badge you got should be\n"
+			"properly recorded on it.\p"
+			"In other words…\p"
+			"You've climbed the first step on\n"
+			"the stairs to the Championship!\p"
+			"That's got to feel awesome!$")
+}
+
+# Dewford
+text DewfordTown_Gym_Text_GymGuideAdvice {
+	format(	"Hey, how's it going, Champion-\n"
+			"bound {PLAYER}?\p"
+			"Dewford's Gym Leader Brawly commands\n"
+			"Flying and Psychic-type Pokémon.\p"
+			"Going against him with Fighting-type\n"
+			"Pokémon is asking for trouble.\p"
+			"But using Rock, Electric, Dark, or\n"
+			"Ghost-type Pokémon may help give you\l"
+			"the upperhand.\p"
+			"What's worse, the Gym is as dark as\n"
+			"the ocean floor.\p"
+			"But it will get brighter after defeating\n"
+			"the Trainers in your way.\p"
+			"Hey, okay, go for it!$")
+}
+
+text DewfordTown_Gym_Text_GymGuidePostVictory {
+	format(	"Whoah! It's turned too bright in here!\p"
+			"Your future is bright, too!$")
+}
+

@@ -768,7 +768,6 @@ text CommonText_Dad {
 	"Dad"
 }
 
-
 text CommonText_Birch {
 	"Prof. Birch"
 }
@@ -787,6 +786,10 @@ text CommonText_May {
 
 text CommonText_Brendan {
 	"Brendan"
+}
+
+text CommonText_Scott {
+	"Scott"
 }
 
 text CommonText_Q {

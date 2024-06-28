@@ -1518,37 +1518,37 @@ TypeEnhancingHeldItemsPokemart:
 	.2byte ITEM_NONE
 
 GetRivalForNameBox::
-# 797 "data/global.pory"
-	switch VAR_EMERALBODY_RIVAL
-# 798 "data/global.pory"
-	case 1, GetRivalForNameBox_2
 # 800 "data/global.pory"
+	switch VAR_EMERALBODY_RIVAL
+# 801 "data/global.pory"
+	case 1, GetRivalForNameBox_2
+# 803 "data/global.pory"
 	case 2, GetRivalForNameBox_3
-# 802 "data/global.pory"
+# 805 "data/global.pory"
 	case 3, GetRivalForNameBox_4
-# 804 "data/global.pory"
-	case 4, GetRivalForNameBox_5
 # 807 "data/global.pory"
+	case 4, GetRivalForNameBox_5
+# 810 "data/global.pory"
 	speakername CommonText_Baron
 	return
 
 GetRivalForNameBox_2:
-# 799 "data/global.pory"
+# 802 "data/global.pory"
 	speakername CommonText_Harper
 	return
 
 GetRivalForNameBox_3:
-# 801 "data/global.pory"
+# 804 "data/global.pory"
 	speakername CommonText_Jakson
 	return
 
 GetRivalForNameBox_4:
-# 803 "data/global.pory"
+# 806 "data/global.pory"
 	speakername CommonText_Redd
 	return
 
 GetRivalForNameBox_5:
-# 805 "data/global.pory"
+# 808 "data/global.pory"
 	speakername CommonText_Sakura
 	return
 
@@ -1793,45 +1793,49 @@ CommonText_Dad::
 	.string "Dad$"
 
 CommonText_Birch::
-# 772 "data/global.pory"
+# 771 "data/global.pory"
 	.string "Prof. Birch$"
 
 CommonText_Archie::
-# 776 "data/global.pory"
+# 775 "data/global.pory"
 	.string "Archie$"
 
 CommonText_Maxie::
-# 780 "data/global.pory"
+# 779 "data/global.pory"
 	.string "Maxie$"
 
 CommonText_May::
-# 784 "data/global.pory"
+# 783 "data/global.pory"
 	.string "May$"
 
 CommonText_Brendan::
-# 788 "data/global.pory"
+# 787 "data/global.pory"
 	.string "Brendan$"
 
+CommonText_Scott::
+# 791 "data/global.pory"
+	.string "Scott$"
+
 CommonText_Q::
-# 792 "data/global.pory"
+# 795 "data/global.pory"
 	.string "?????$"
 
 CommonText_Baron::
-# 811 "data/global.pory"
+# 814 "data/global.pory"
 	.string "Baron$"
 
 CommonText_Harper::
-# 815 "data/global.pory"
+# 818 "data/global.pory"
 	.string "Harper$"
 
 CommonText_Jakson::
-# 819 "data/global.pory"
+# 822 "data/global.pory"
 	.string "Jakson$"
 
 CommonText_Redd::
-# 823 "data/global.pory"
+# 826 "data/global.pory"
 	.string "Redd$"
 
 CommonText_Sakura::
-# 827 "data/global.pory"
+# 830 "data/global.pory"
 	.string "Sakura$"

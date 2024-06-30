@@ -174,6 +174,7 @@ RustboroCity_PokemonSchool_EventScript_Scott::
 
 RustboroCity_PokemonSchool_EventScript_ScottSpokeAlready::
 	goto_if_set FLAG_BADGE01_GET, RustboroCity_PokemonSchool_EventScript_ScottNoticeBadge
+	speakername (CommonText_Scott)
 	msgbox RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown, MSGBOX_DEFAULT
 	release
 	end
@@ -184,6 +185,7 @@ RustboroCity_PokemonSchool_EventScript_ScottGreetHasBadge::
 	end
 
 RustboroCity_PokemonSchool_EventScript_ScottNoticeBadge::
+	speakername (CommonText_Scott)
 	msgbox RustboroCity_PokemonSchool_Text_ScottStoneBadge, MSGBOX_DEFAULT
 	goto RustboroCity_PokemonSchool_EventScript_MetScottAfterBadge
 	end
@@ -195,6 +197,7 @@ RustboroCity_PokemonSchool_EventScript_MetScottAfterBadge::
 	end
 
 RustboroCity_PokemonSchool_EventScript_ScottWatchStudents::
+	speakername (CommonText_Scott)
 	msgbox RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown, MSGBOX_DEFAULT
 	release
 	end
@@ -319,12 +322,12 @@ RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut:
 	.string "this town has Cut.$"
 
 RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown:
-	.string "Scott: Hmm…\p"
+	.string "Hmm…\p"
 	.string "The talent levels of the students here\n"
 	.string "are unknown. The potential's there.$"
 
 RustboroCity_PokemonSchool_Text_ScottStoneBadge:
-	.string "Scott: Oh, what's that?\p"
+	.string "Oh, what's that?\p"
 	.string "It's a Stone Badge, isn't it?\n"
 	.string "That's pretty impressive, I'd say.\p"
 	.string "But, you know, I would've loved to see\n"

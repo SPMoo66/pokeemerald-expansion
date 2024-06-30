@@ -800,6 +800,16 @@ text CommonText_Q {
 	"?????"
 }
 
+text CommonText_MrStone {
+	"Mr. Stone"
+}
+
+text CommonText_Peeko {
+	"Peeko"
+}
+
+
+
 script GetRivalForNameBox {
 	switch (var(VAR_EMERALBODY_RIVAL)) {
 		case 1:

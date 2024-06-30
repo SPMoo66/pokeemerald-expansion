@@ -273,6 +273,7 @@ RusturfTunnel_EventScript_Peeko::
 	faceplayer
 	waitse
 	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
+	speakername (CommonText_Peeko)
 	msgbox RusturfTunnel_Text_Peeko, MSGBOX_DEFAULT
 	waitmoncry
 	release

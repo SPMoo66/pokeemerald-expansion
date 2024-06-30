@@ -33,13 +33,16 @@ Route104_MrBrineysHouse_EventScript_Briney::
 
 Route104_MrBrineysHouse_EventScript_SailingIntro::
 	setflag FLAG_MR_BRINEY_SAILING_INTRO
+	speakername (CommonText_MrBriney)
 	msgbox Route104_MrBrineysHouse_Text_WaitUpPeeko, MSGBOX_DEFAULT
+	speakername (CommonText_MrBriney)
 	msgbox Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route104_MrBrineysHouse_EventScript_DeclineDeliverySailing
 	goto Route104_MrBrineysHouse_EventScript_SailToDewford
 	end
 
 Route104_MrBrineysHouse_EventScript_WhereAreWeBound::
+	speakername (CommonText_MrBriney)
 	message Route104_MrBrineysHouse_Text_WhereAreWeBound
 	waitmessage
 	multichoicedefault 20, 8, MULTI_BRINEY_OFF_DEWFORD, 1, FALSE
@@ -50,28 +53,33 @@ Route104_MrBrineysHouse_EventScript_WhereAreWeBound::
 	end
 
 Route104_MrBrineysHouse_EventScript_SailBothDeliveries::
+	speakername (CommonText_MrBriney)
 	msgbox Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route104_MrBrineysHouse_EventScript_DeclineDeliverySailing
 	goto Route104_MrBrineysHouse_EventScript_SailToDewford
 	end
 
 Route104_MrBrineysHouse_EventScript_SailDeliverPackage::
+	speakername (CommonText_MrBriney)
 	msgbox Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route104_MrBrineysHouse_EventScript_DeclineDeliverySailing
 	goto Route104_MrBrineysHouse_EventScript_SailToDewford
 	end
 
 Route104_MrBrineysHouse_EventScript_DeclineDeliverySailing::
+	speakername (CommonText_MrBriney)
 	msgbox Route104_MrBrineysHouse_Text_DeclineDeliverySail, MSGBOX_DEFAULT
 	release
 	end
 
 Route104_MrBrineysHouse_EventScript_DeclineSailing::
+	speakername (CommonText_MrBriney)
 	msgbox Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail, MSGBOX_DEFAULT
 	release
 	end
 
 Route104_MrBrineysHouse_EventScript_SailToDewford::
+	speakername (CommonText_MrBriney)
 	msgbox Route104_MrBrineysHouse_Text_SetSailForDewford, MSGBOX_DEFAULT
 	call EventScript_BackupMrBrineyLocation
 	setvar VAR_BOARD_BRINEY_BOAT_STATE, 1
@@ -92,13 +100,14 @@ Route104_MrBrineysHouse_EventScript_Peeko::
 	faceplayer
 	waitse
 	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
+	speakername (CommonText_Peeko)
 	msgbox Route104_MrBrineysHouse_Text_Peeko, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
 
 Route104_MrBrineysHouse_Text_WaitUpPeeko:
-	.string "Mr. Briney: Hold on, lass!\n"
+	.string "Hold on, lass!\n"
 	.string "Wait up, Peeko!$"
 
 Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford:
@@ -117,18 +126,18 @@ Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford:
 	.string "We'll set sail for Dewford.$"
 
 Route104_MrBrineysHouse_Text_SetSailForDewford:
-	.string "Mr. Briney: Dewford it is, then!\p"
+	.string "Dewford it is, then!\p"
 	.string "Anchors aweigh!\n"
 	.string "Peeko, we're setting sail, my darling!$"
 
 Route104_MrBrineysHouse_Text_DeclineDeliverySail:
-	.string "Mr. Briney: Is that so?\n"
+	.string "Is that so?\n"
 	.string "Your deliveries can wait?\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail!$"
 
 Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford:
-	.string "Mr. Briney: Ahoy!\n"
+	.string "Ahoy!\n"
 	.string "I know exactly what you want to say!\p"
 	.string "You're to deliver a Letter to Dewford\n"
 	.string "and a package to Slateport.\p"
@@ -137,7 +146,7 @@ Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford:
 	.string "First, we'll set sail for Dewford.$"
 
 Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford:
-	.string "Mr. Briney: Ahoy!\n"
+	.string "Ahoy!\n"
 	.string "I know exactly what you want to say!\p"
 	.string "You're to deliver a package to\n"
 	.string "Capt. Stern in Slateport.\p"
@@ -146,16 +155,16 @@ Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford:
 	.string "First, we'll set sail for Dewford.$"
 
 Route104_MrBrineysHouse_Text_WhereAreWeBound:
-	.string "Mr. Briney: Ahoy!\n"
+	.string "Ahoy!\n"
 	.string "For you, I'll go out to sea anytime!\p"
 	.string "Now, my friend, where are we bound?$"
 
 Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail:
-	.string "Mr. Briney: Is that so?\n"
+	.string "Is that so?\n"
 	.string "Well, Peeko owes her life to you.\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail!$"
 
 Route104_MrBrineysHouse_Text_Peeko:
-	.string "Peeko: Pii piihyoro!$"
+	.string "Pii piihyoro!$"
 

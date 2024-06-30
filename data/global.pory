@@ -804,6 +804,10 @@ text CommonText_MrStone {
 	"Mr. Stone"
 }
 
+text CommonText_MrBriney {
+	"Mr. Briney"
+}
+
 text CommonText_Peeko {
 	"Peeko"
 }

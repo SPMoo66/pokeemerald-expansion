@@ -1079,8 +1079,8 @@ RustboroCity_Text_BrendanWantToBattle:
 	.string "Want to have a battle with me?$"
 
 RustboroCity_Text_BrendanIWontGoEasy:
-	.string "I know you just became a\n"
-	.string "Trainer, but I won't go easy!$"
+	.string "I know you just became a Trainer,\n"
+	.string "but I won't go easy!$"
 
 RustboroCity_Text_BrendanDefeat:
 	.string "Hmm…\n"

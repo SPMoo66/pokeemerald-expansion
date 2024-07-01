@@ -22,6 +22,7 @@ DewfordTown_EventScript_Briney::
 	lock
 	faceplayer
 	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, DewfordTown_EventScript_ReturnToPetalburgPrompt
+	speakername (CommonText_MrBriney)
 	message DewfordTown_Text_WhereAreWeBound
 	waitmessage
 	multichoicedefault 21, 6, MULTI_BRINEY_ON_DEWFORD, 2, FALSE
@@ -33,6 +34,7 @@ DewfordTown_EventScript_Briney::
 	end
 
 DewfordTown_EventScript_ChoosePetalburg::
+	speakername (CommonText_MrBriney)
 	msgbox DewfordTown_Text_PetalburgWereSettingSail, MSGBOX_DEFAULT
 	closemessage
 	goto DewfordTown_EventScript_SailToPetalburg
@@ -40,6 +42,7 @@ DewfordTown_EventScript_ChoosePetalburg::
 	end
 
 DewfordTown_EventScript_ChooseSlateport::
+	speakername (CommonText_MrBriney)
 	msgbox DewfordTown_Text_SlateportWereSettingSail, MSGBOX_DEFAULT
 	closemessage
 	goto DewfordTown_EventScript_SailToSlateport
@@ -47,19 +50,23 @@ DewfordTown_EventScript_ChooseSlateport::
 	end
 
 DewfordTown_EventScript_CancelSailSelect::
-	msgbox DewfordTown_Text_JustTellMeWhenYouNeedToSetSail, MSGBOX_DEFAULT
+	speakername (CommonText_MrBriney)
+	msgbox Route109_Text_BrineyTellMeWhenYouNeedToSail, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
 DewfordTown_EventScript_ReturnToPetalburgPrompt::
+	speakername (CommonText_MrBriney)
 	msgbox DewfordTown_Text_SetSailBackToPetalburg, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_SailBackToPetalburg
+	speakername (CommonText_MrBriney)
 	msgbox DewfordTown_Text_GoDeliverIllBeWaiting, MSGBOX_DEFAULT
 	release
 	end
 
 DewfordTown_EventScript_SailBackToPetalburg::
+	speakername (CommonText_MrBriney)
 	msgbox DewfordTown_Text_PetalburgWereSettingSail2, MSGBOX_DEFAULT
 	closemessage
 	goto DewfordTown_EventScript_SailToPetalburg
@@ -193,10 +200,12 @@ DewfordTown_EventScript_SailToSlateport::
 	end
 
 DewfordTown_EventScript_LandedSlateportDeliverGoods::
+	speakername (CommonText_MrBriney)
 	msgbox DewfordTown_Text_BrineyLandedInSlateportDeliverGoods, MSGBOX_DEFAULT
 	return
 
 DewfordTown_EventScript_LandedSlateport::
+	speakername (CommonText_MrBriney)
 	msgbox DewfordTown_Text_BrineyLandedInSlateport, MSGBOX_DEFAULT
 	return
 
@@ -649,50 +658,45 @@ DewfordTown_Text_HallSign:
 	.string "“Everyone's information exchange!”$"
 
 Route104_Text_LandedInDewfordDeliverLetter:
-	.string "Mr. Briney: Ahoy!\n"
+	.string "Ahoy!\n"
 	.string "We've hit land in Dewford.\p"
 	.string "I suppose you're off to deliver that\n"
 	.string "Letter to, who was it now, Steven!$"
 
 DewfordTown_Text_SetSailBackToPetalburg:
-	.string "Mr. Briney: Have you delivered your\n"
-	.string "Letter?\p"
+	.string "Have you delivered your Letter?\p"
 	.string "Or were you meaning to sail back to\n"
 	.string "Petalburg?$"
 
 DewfordTown_Text_PetalburgWereSettingSail2:
-	.string "Mr. Briney: Petalburg it is, then!\p"
+	.string "Petalburg it is, then!\p"
 	.string "Anchors aweigh!\n"
 	.string "Peeko, we're setting sail, my darling!$"
 
 DewfordTown_Text_GoDeliverIllBeWaiting:
-	.string "Mr. Briney: Then you go on and deliver\n"
-	.string "the Letter. I'll be waiting.$"
+	.string "Then you go on and deliver the Letter.\n"
+	.string "I'll be waiting.$"
 
 DewfordTown_Text_BrineyLandedInDewford:
-	.string "Mr. Briney: Ahoy!\n"
+	.string "Ahoy!\n"
 	.string "We've hit land in Dewford!\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail again!$"
 
 DewfordTown_Text_WhereAreWeBound:
-	.string "Mr. Briney: Ahoy!\n"
+	.string "Ahoy!\n"
 	.string "For you, I'll go out to sea anytime!\p"
 	.string "Now, my friend, where are we bound?$"
 
 DewfordTown_Text_PetalburgWereSettingSail:
-	.string "Mr. Briney: Petalburg, is it?\p"
+	.string "Petalburg, is it?\p"
 	.string "Anchors aweigh!\n"
 	.string "Peeko, we're setting sail, my darling!$"
 
 DewfordTown_Text_SlateportWereSettingSail:
-	.string "Mr. Briney: Slateport, is it?\p"
+	.string "Slateport, is it?\p"
 	.string "Anchors aweigh!\n"
 	.string "Peeko, we're setting sail, my darling!$"
-
-DewfordTown_Text_JustTellMeWhenYouNeedToSetSail:
-	.string "Mr. Briney: You just tell me whenever\n"
-	.string "you need to set sail again!$"
 
 DewfordTown_Text_GettingItchToFish:
 	.string "This is a renowned fishing spot.\n"

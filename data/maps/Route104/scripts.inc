@@ -419,11 +419,13 @@ Route104_EventScript_ArriveInDewford::
 	end
 
 Route104_EventScript_DeliverLetterReminder::
+	speakername (CommonText_MrBriney)
 	msgbox Route104_Text_LandedInDewfordDeliverLetter, MSGBOX_DEFAULT
 	releaseall
 	end
 
 Route104_EventScript_LandedInDewford::
+	speakername (CommonText_MrBriney)
 	msgbox DewfordTown_Text_BrineyLandedInDewford, MSGBOX_DEFAULT
 	releaseall
 	end

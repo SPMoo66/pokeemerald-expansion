@@ -6,13 +6,16 @@ GraniteCave_StevensRoom_MapScripts::
 GraniteCave_StevensRoom_EventScript_Steven::
 	lock
 	faceplayer
+	speakername (CommonText_Steven)
 	msgbox GraniteCave_StevensRoom_Text_ImStevenLetterForMe, MSGBOX_DEFAULT
 	setvar VAR_0x8004, ITEM_LETTER
 	call Common_EventScript_PlayerHandedOverTheItem
 	setflag FLAG_DELIVERED_STEVEN_LETTER
+	speakername (CommonText_Steven)
 	msgbox GraniteCave_StevensRoom_Text_ThankYouTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM_STEEL_WING
 	call_if_eq VAR_RESULT, FALSE, GraniteCave_StevensRoom_EventScript_BagFull
+	speakername (CommonText_Steven)
 	msgbox GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -22,6 +25,7 @@ GraniteCave_StevensRoom_EventScript_Steven::
 	closemessage
 	delay 30
 	setflag FLAG_REGISTERED_STEVEN_POKENAV
+	speakername (CommonText_Steven)
 	msgbox GraniteCave_StevensRoom_Text_IveGotToHurryAlong, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_FACING, DIR_NORTH, GraniteCave_StevensRoom_EventScript_StevenExitNorth
@@ -51,6 +55,7 @@ GraniteCave_StevensRoom_EventScript_StevenExitSouth::
 	return
 
 GraniteCave_StevensRoom_EventScript_BagFull::
+	speakername (CommonText_Steven)
 	msgbox GraniteCave_StevensRoom_Text_OhBagIsFull, MSGBOX_DEFAULT
 	return
 
@@ -89,7 +94,7 @@ GraniteCave_StevensRoom_Text_ImStevenLetterForMe:
 	.string "A Letter for me?$"
 
 GraniteCave_StevensRoom_Text_ThankYouTakeThis:
-	.string "Steven: Okay, thank you.\p"
+	.string "Okay, thank you.\p"
 	.string "You went through all this trouble to\n"
 	.string "deliver that. I need to thank you.\p"
 	.string "Let me see…\n"
@@ -98,8 +103,7 @@ GraniteCave_StevensRoom_Text_ThankYouTakeThis:
 	.string "Steel Wing.$"
 
 GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister:
-	.string "Steven: Your Pokémon appear quite\n"
-	.string "capable.\p"
+	.string "Your Pokémon appear quite capable.\p"
 	.string "If you keep training, you could even\n"
 	.string "become the Champion of the Pokémon\l"
 	.string "League one day. That's what I think.\p"

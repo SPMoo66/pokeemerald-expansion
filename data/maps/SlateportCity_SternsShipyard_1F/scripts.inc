@@ -12,6 +12,7 @@ SlateportCity_SternsShipyard_1F_EventScript_Dock::
 	msgbox SlateportCity_SternsShipyard_1F_Text_CantMakeHeadsOrTails, MSGBOX_DEFAULT
 	applymovement LOCALID_DOCK, Common_Movement_FacePlayer
 	waitmovement 0
+	speakername (CommonText_Dock)
 	msgbox SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_DOCK, Common_Movement_FaceOriginalDirection
@@ -24,6 +25,7 @@ SlateportCity_SternsShipyard_1F_EventScript_Dock::
 SlateportCity_SternsShipyard_1F_EventScript_FerryReady::
 	applymovement LOCALID_DOCK, Common_Movement_FacePlayer
 	waitmovement 0
+	speakername (CommonText_Dock)
 	msgbox SlateportCity_SternsShipyard_1F_Text_FerryIsReady, MSGBOX_DEFAULT
 	releaseall
 	end
@@ -31,6 +33,7 @@ SlateportCity_SternsShipyard_1F_EventScript_FerryReady::
 SlateportCity_SternsShipyard_1F_EventScript_BrineyJoined::
 	applymovement LOCALID_DOCK, Common_Movement_FacePlayer
 	waitmovement 0
+	speakername (CommonText_Dock)
 	msgbox SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs, MSGBOX_DEFAULT
 	releaseall
 	end
@@ -38,6 +41,7 @@ SlateportCity_SternsShipyard_1F_EventScript_BrineyJoined::
 SlateportCity_SternsShipyard_1F_EventScript_GoFindStern::
 	applymovement LOCALID_DOCK, Common_Movement_FacePlayer
 	waitmovement 0
+	speakername (CommonText_Dock)
 	msgbox SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_DOCK, Common_Movement_FaceOriginalDirection
@@ -48,6 +52,7 @@ SlateportCity_SternsShipyard_1F_EventScript_GoFindStern::
 SlateportCity_SternsShipyard_1F_EventScript_NeedVeteran::
 	applymovement LOCALID_DOCK, Common_Movement_FacePlayer
 	waitmovement 0
+	speakername (CommonText_Dock)
 	msgbox SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran, MSGBOX_DEFAULT
 	releaseall
 	end
@@ -61,6 +66,7 @@ SlateportCity_SternsShipyard_1F_EventScript_Scientist2::
 	end
 
 SlateportCity_SternsShipyard_1F_EventScript_Briney::
+	speakername (CommonText_MrBriney)
 	msgbox SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock, MSGBOX_NPC
 	end
 
@@ -87,26 +93,26 @@ SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern:
 	.string "Stern and deliver that to him?$"
 
 SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern:
-	.string "Dock: Where could Capt. Stern have\n"
-	.string "gone off to?\p"
+	.string "Where could Capt. Stern have gone\n"
+	.string "off to?\p"
 	.string "Could you go find Capt. Stern and\n"
 	.string "deliver that parcel to him?$"
 
 SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran:
-	.string "Dock: Shipbuilding is an art.\p"
+	.string "Shipbuilding is an art.\p"
 	.string "A lot of things can't be figured out\n"
 	.string "just by calculating.\p"
 	.string "I really could use advice from a veteran\n"
 	.string "who knows the seas…$"
 
 SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs:
-	.string "Dock: Hi! Mr. Briney's joined us to\n"
+	.string "Hi! Mr. Briney's joined us to\n"
 	.string "lend us his help.\p"
 	.string "Thanks to the veteran sailor, the\n"
 	.string "ferry is steadily coming together.$"
 
 SlateportCity_SternsShipyard_1F_Text_FerryIsReady:
-	.string "Dock: The ferry is finally ready!\p"
+	.string "The ferry is finally ready!\p"
 	.string "The new S.S. Tidal is truly a marvel\n"
 	.string "of technology!\p"
 	.string "But, I get the feeling that we can\n"
@@ -115,7 +121,7 @@ SlateportCity_SternsShipyard_1F_Text_FerryIsReady:
 	.string "technology's march.$"
 
 SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock:
-	.string "Mr. Briney: Ah, {PLAYER}{KUN}!\n"
+	.string "Ah, {PLAYER}{KUN}!\n"
 	.string "It's been too long!\p"
 	.string "Aye, since I met you, this old sea dog's\n"
 	.string "been feeling frisky!\p"

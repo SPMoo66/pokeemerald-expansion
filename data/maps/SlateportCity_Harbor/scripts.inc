@@ -58,6 +58,7 @@ SlateportCity_Harbor_EventScript_AquaEscapeScene::
 	applymovement LOCALID_GRUNT, Common_Movement_WalkInPlaceFasterDown
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
+	speakername (CommonText_Archie)
 	msgbox SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_GRUNT, SlateportCity_Harbor_Movement_AquaBoardSub
@@ -74,6 +75,7 @@ SlateportCity_Harbor_EventScript_AquaEscapeScene::
 	call_if_eq VAR_0x8008, 1, SlateportCity_Harbor_EventScript_SternApproachPlayer1
 	call_if_eq VAR_0x8008, 2, SlateportCity_Harbor_EventScript_SternApproachPlayer
 	call_if_eq VAR_0x8008, 3, SlateportCity_Harbor_EventScript_SternApproachPlayer
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_1_BLOCKING_ENTRANCE
@@ -273,6 +275,7 @@ SlateportCity_Harbor_EventScript_CaptStern::
 	goto_if_set FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE, SlateportCity_Harbor_EventScript_NeedDive
 	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, SlateportCity_Harbor_EventScript_TeamAquaLeftNeedDive
 	goto_if_eq VAR_SLATEPORT_HARBOR_STATE, 2, SlateportCity_Harbor_EventScript_WhyStealSubmarine
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum, MSGBOX_DEFAULT
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
@@ -281,17 +284,20 @@ SlateportCity_Harbor_EventScript_CaptStern::
 	end
 
 SlateportCity_Harbor_EventScript_WhyStealSubmarine::
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine, MSGBOX_DEFAULT
 	release
 	end
 
 SlateportCity_Harbor_EventScript_TeamAquaLeftNeedDive::
 	setflag FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Harbor_Text_TeamAquaLeftNeedDive, MSGBOX_DEFAULT
 	release
 	end
 
 SlateportCity_Harbor_EventScript_NeedDive::
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Harbor_Text_NeedDiveToCatchSub, MSGBOX_DEFAULT
 	release
 	end
@@ -301,16 +307,19 @@ SlateportCity_Harbor_EventScript_CaptSternFerryOrScannerComment::
 	checkitem ITEM_SCANNER
 	goto_if_eq VAR_RESULT, TRUE, SlateportCity_Harbor_EventScript_AskToTradeScanner
 	goto_if_set FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_FerryFinished
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry, MSGBOX_DEFAULT
 	release
 	end
 
 SlateportCity_Harbor_EventScript_FerryFinished::
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Harbor_Text_FinishedMakingFerry, MSGBOX_DEFAULT
 	release
 	end
 
 SlateportCity_Harbor_EventScript_AskToTradeScanner::
+	speakername (CommonText_CaptStern)
 	message SlateportCity_Harbor_Text_WouldYouTradeScanner
 	waitmessage
 	goto SlateportCity_Harbor_EventScript_ChooseScannerTrade
@@ -326,6 +335,7 @@ SlateportCity_Harbor_EventScript_ChooseScannerTrade::
 	end
 
 SlateportCity_Harbor_EventScript_DeepSeaTooth::
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Harbor_Text_TradeForDeepSeaTooth, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseDifferentTrade
 	giveitem ITEM_DEEP_SEA_TOOTH
@@ -337,6 +347,7 @@ SlateportCity_Harbor_EventScript_DeepSeaTooth::
 	end
 
 SlateportCity_Harbor_EventScript_DeepSeaScale::
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Harbor_Text_TradeForDeepSeaScale, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseDifferentTrade
 	giveitem ITEM_DEEP_SEA_SCALE
@@ -348,11 +359,13 @@ SlateportCity_Harbor_EventScript_DeepSeaScale::
 	end
 
 SlateportCity_Harbor_EventScript_DeclineTrade::
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow, MSGBOX_DEFAULT
 	release
 	end
 
 SlateportCity_Harbor_EventScript_ChooseDifferentTrade::
+	speakername (CommonText_CaptStern)
 	message SlateportCity_Harbor_Text_WhichOneDoYouWant
 	waitmessage
 	goto SlateportCity_Harbor_EventScript_ChooseScannerTrade
@@ -360,6 +373,7 @@ SlateportCity_Harbor_EventScript_ChooseDifferentTrade::
 
 SlateportCity_Harbor_EventScript_TradedScanner::
 	setvar VAR_TEMP_1, 1
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Harbor_Text_ThisWillHelpResearch, MSGBOX_DEFAULT
 	release
 	end
@@ -426,12 +440,12 @@ SlateportCity_Harbor_Text_SubTooSmallForMe:
 	.string "any room for the Captain…$"
 
 SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
-	.string "Capt. Stern: Those thugs…\p"
+	.string "Those thugs…\p"
 	.string "They're the same lot who tried to rob\n"
 	.string "the Devon Goods at the Museum.$"
 
 SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
-	.string "Archie: Oh?\n"
+	.string "Oh?\n"
 	.string "Not you again…\p"
 	.string "You are tenacious to track us here,\n"
 	.string "that much I will give you.\p"
@@ -442,7 +456,7 @@ SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
 	.string "Fwahahahaha…$"
 
 SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine:
-	.string "Capt. Stern: Why…\p"
+	.string "Why…\p"
 	.string "Why would Team Aqua steal my\n"
 	.string "Submarine Explorer 1?\p"
 	.string "They can't be after the slumbering\n"
@@ -451,7 +465,7 @@ SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine:
 	.string "I don't stand a chance against them…$"
 
 SlateportCity_Harbor_Text_TeamAquaLeftNeedDive:
-	.string "Capt. Stern: Oh, {PLAYER}{KUN}…\p"
+	.string "Oh, {PLAYER}{KUN}…\p"
 	.string "Okay… So Team Aqua left before you\n"
 	.string "could stop them…\p"
 	.string "Oh, no, don't blame yourself.\n"
@@ -466,8 +480,8 @@ SlateportCity_Harbor_Text_TeamAquaLeftNeedDive:
 	.string "someone might teach you…$"
 
 SlateportCity_Harbor_Text_NeedDiveToCatchSub:
-	.string "Capt. Stern: Trying to catch a\n"
-	.string "submarine… It's impossible.\p"
+	.string "Trying to catch a submarine…\n"
+	.string "It's impossible.\p"
 	.string "You would need a Pokémon that knows\n"
 	.string "how to Dive…\p"
 	.string "Perhaps if you went out to\n"
@@ -476,13 +490,13 @@ SlateportCity_Harbor_Text_NeedDiveToCatchSub:
 	.string "someone might teach you…$"
 
 SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry:
-	.string "Capt. Stern: Oh, yes.\n"
+	.string "Oh, yes.\n"
 	.string "Mr. Briney came to our Shipyard.\p"
 	.string "It won't be long now before we finish\n"
 	.string "making the ferry!$"
 
 SlateportCity_Harbor_Text_FinishedMakingFerry:
-	.string "Capt. Stern: {PLAYER}{KUN}!\p"
+	.string "{PLAYER}{KUN}!\p"
 	.string "We finally finished making the ferry\n"
 	.string "S.S. Tidal!\p"
 	.string "We couldn't have done it without\n"
@@ -490,7 +504,7 @@ SlateportCity_Harbor_Text_FinishedMakingFerry:
 	.string "Please go for a short cruise on it!$"
 
 SlateportCity_Harbor_Text_WouldYouTradeScanner:
-	.string "Capt. Stern: Oh?\n"
+	.string "Oh?\n"
 	.string "{PLAYER}{KUN}, that item you have…\p"
 	.string "That's a Scanner! That would sure\n"
 	.string "help us on our explorations.\p"
@@ -500,26 +514,26 @@ SlateportCity_Harbor_Text_WouldYouTradeScanner:
 	.string "a Deepseascale that I have?$"
 
 SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow:
-	.string "Capt. Stern: Are you certain?\n"
+	.string "Are you certain?\n"
 	.string "It's useless to you, {PLAYER}{KUN}…\p"
 	.string "Well, okay, then. If you want to trade\n"
 	.string "your Scanner, let me know.$"
 
 SlateportCity_Harbor_Text_TradeForDeepSeaTooth:
-	.string "Capt. Stern: So you'll trade it for\n"
-	.string "my Deepseatooth?$"
+	.string "So you'll trade it for my\n"
+	.string "Deepseatooth?$"
 
 SlateportCity_Harbor_Text_TradeForDeepSeaScale:
-	.string "Capt. Stern: So you'll trade it for\n"
-	.string "my Deepseascale?$"
+	.string "So you'll trade it for my\n"
+	.string "Deepseascale?$"
 
 SlateportCity_Harbor_Text_WhichOneDoYouWant:
-	.string "Capt. Stern: Which one do you want?$"
+	.string "Which one do you want?$"
 
 SlateportCity_Harbor_Text_HandedScannerToStern:
 	.string "{PLAYER} handed the Scanner to\n"
 	.string "Capt. Stern.$"
 
 SlateportCity_Harbor_Text_ThisWillHelpResearch:
-	.string "Capt. Stern: Thanks, {PLAYER}{KUN}!\n"
+	.string "Thanks, {PLAYER}{KUN}!\n"
 	.string "This will help our research a lot!$"

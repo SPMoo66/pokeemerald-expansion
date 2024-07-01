@@ -79,14 +79,17 @@ SlateportCity_EventScript_ScottScene::
 	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Movement_PlayerFaceScott
 	applymovement LOCALID_SCOTT, SlateportCity_Movement_ScottApproachPlayer
 	waitmovement 0
+	speakername (CommonText_Scott)
 	msgbox SlateportCity_Text_YouDroveTeamAquaAway, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_SCOTT, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 60
+	speakername (CommonText_Scott)
 	msgbox SlateportCity_Text_MaybeThisTrainer, MSGBOX_DEFAULT
 	applymovement LOCALID_SCOTT, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
+	speakername (CommonText_Scott)
 	msgbox SlateportCity_Text_LetsRegisterEachOther, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -96,6 +99,7 @@ SlateportCity_EventScript_ScottScene::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_SCOTT_MATCH_CALL
+	speakername (CommonText_Scott)
 	msgbox SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_SCOTT, SlateportCity_Movement_ScottExit
@@ -576,7 +580,9 @@ SlateportCity_PokemartSweets:
 @ Scene with Capt Sterns interview and Team Aqua announcing plans to steal Submarine
 SlateportCity_EventScript_CaptStern::
 	lockall
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Text_SternMoveAheadWithExploration, MSGBOX_DEFAULT
+	speakername (CommonText_Gabby)
 	msgbox SlateportCity_Text_GabbyWonderfulThanksForInterview, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_GABBY, Common_Movement_WalkInPlaceFasterRight
@@ -592,11 +598,14 @@ SlateportCity_EventScript_CaptStern::
 	waitmovement 0
 	removeobject LOCALID_GABBY
 	removeobject LOCALID_TY
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Text_SternWhewFirstInterview, MSGBOX_DEFAULT
 	applymovement LOCALID_CAPT_STERN, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Text_OhPlayerWeMadeDiscovery, MSGBOX_DEFAULT
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
+	speakername (CommonText_Q)
 	msgbox SlateportCity_Text_AquaWillAssumeControlOfSubmarine, MSGBOX_DEFAULT
 	applymovement LOCALID_COOK, Common_Movement_WalkInPlaceFasterLeft
 	applymovement LOCALID_FAT_MAN, Common_Movement_WalkInPlaceFasterLeft
@@ -606,6 +615,7 @@ SlateportCity_EventScript_CaptStern::
 	waitmovement 0
 	applymovement LOCALID_CAPT_STERN, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Text_SternWhatWasAllThat, MSGBOX_DEFAULT
 	playse SE_PIN
 	applymovement LOCALID_CAPT_STERN, Common_Movement_ExclamationMark
@@ -614,7 +624,9 @@ SlateportCity_EventScript_CaptStern::
 	waitmovement 0
 	applymovement LOCALID_CAPT_STERN, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Text_FromHarborTryingToTakeSub, MSGBOX_DEFAULT
+	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_CAPT_STERN, SlateportCity_Movement_SternEnterHarbor
@@ -719,10 +731,12 @@ SlateportCity_Movement_PlayerFaceStern:
 	step_end
 
 SlateportCity_EventScript_Ty::
+	speakername (CommonText_Ty)
 	msgbox SlateportCity_Text_BigSmileForCamera, MSGBOX_SIGN
 	end
 
 SlateportCity_EventScript_Gabby::
+	speakername (CommonText_Gabby)
 	msgbox SlateportCity_Text_MostInvaluableExperience, MSGBOX_SIGN
 	end
 
@@ -901,6 +915,7 @@ SlateportCity_EventScript_ScottBattleTentScene::
 	waitmovement 0
 	closedoor 10, 12
 	waitdooranim
+	speakername (CommonText_Scott)
 	msgbox SlateportCity_Text_TakingBattleTentChallenge, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Movement_PlayerWatchScottExit
@@ -1165,26 +1180,26 @@ SlateportCity_Text_CaptainsACelebrity:
 	.string "The Captain's a celebrity!$"
 
 SlateportCity_Text_BigSmileForCamera:
-	.string "Ty: Okay, Capt. Stern, a big smile\n"
-	.string "for the camera!$"
+	.string "Okay, Capt. Stern, a big smile for\n"
+	.string "the camera!$"
 
 SlateportCity_Text_MostInvaluableExperience:
-	.string "Gabby: I see, I see. You've had a most\n"
+	.string "I see, I see. You've had a most\n"
 	.string "invaluable experience…$"
 
 SlateportCity_Text_SternMoveAheadWithExploration:
-	.string "Capt. Stern: Yes, indeed. We intend to\n"
-	.string "move ahead with our exploration.$"
+	.string "Yes, indeed. We intend to move ahead\n"
+	.string "with our exploration.$"
 
 SlateportCity_Text_GabbyWonderfulThanksForInterview:
-	.string "Gabby: That's wonderful, Capt. Stern!\n"
+	.string "That's wonderful, Capt. Stern!\n"
 	.string "Thank you for taking the time from\l"
 	.string "your busy schedule to talk to us.\p"
 	.string "We hope we can interview you again\n"
 	.string "with news of more discoveries!$"
 
 SlateportCity_Text_SternWhewFirstInterview:
-	.string "Capt. Stern: Whew…\p"
+	.string "Whew…\p"
 	.string "That was my first time to be filmed for\n"
 	.string "TV. That was nerve-wracking.$"
 
@@ -1210,7 +1225,7 @@ SlateportCity_Text_AquaWillAssumeControlOfSubmarine:
 	.string "Aqua has planned!$"
 
 SlateportCity_Text_SternWhatWasAllThat:
-	.string "Capt. Stern: What was that all about?\p"
+	.string "What was that all about?\p"
 	.string "It sounded like someone using\n"
 	.string "a megaphone…\p"
 	.string "Where did it come from?$"
@@ -1338,7 +1353,7 @@ SlateportCity_Text_ComeBackToTradeBerryPowder:
 	.string "Did you know?$"
 
 SlateportCity_Text_YouDroveTeamAquaAway:
-	.string "Scott: Huh?\n"
+	.string "Huh?\n"
 	.string "I'm sure I met you somewhere before.\p"
 	.string "Have I introduced myself to you?\n"
 	.string "If not, my name's Scott.\p"
@@ -1347,12 +1362,12 @@ SlateportCity_Text_YouDroveTeamAquaAway:
 	.string "Let me guess--you drove them away?$"
 
 SlateportCity_Text_MaybeThisTrainer:
-	.string "Scott: Hmm…\n"
+	.string "Hmm…\n"
 	.string "Maybe, just maybe, this Trainer…$"
 
 SlateportCity_Text_LetsRegisterEachOther:
-	.string "Scott: All right! I think you're going\n"
-	.string "to become a good friend.\p"
+	.string "All right! I think you're going to\n"
+	.string "become a good friend.\p"
 	.string "So, let's register each other in our\n"
 	.string "Pokénavs.\p"
 	.string "… … … … … …$"
@@ -1362,15 +1377,15 @@ SlateportCity_Text_RegisteredScott:
 	.string "in the Pokénav.$"
 
 SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou:
-	.string "Scott: What I'd like to do is tag along\n"
-	.string "with you, but I do want to keep an eye\l"
+	.string "What I'd like to do is tag along with\n"
+	.string "you, but I do want to keep an eye\l"
 	.string "on the talents of other people, too.\p"
 	.string "So, I'll be off to roam other towns\n"
 	.string "a bit more.\p"
 	.string "Be seeing you, {PLAYER}{KUN}!$"
 
 SlateportCity_Text_TakingBattleTentChallenge:
-	.string "Scott: Oh, hey!\n"
+	.string "Oh, hey!\n"
 	.string "If it isn't {PLAYER}{KUN}!\p"
 	.string "{PLAYER}{KUN}, let me guess--you're going\n"
 	.string "to take the Battle Tent challenge?\p"

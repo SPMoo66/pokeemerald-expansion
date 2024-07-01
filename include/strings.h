@@ -1266,7 +1266,6 @@ extern const u8 gText_10BP[];
 extern const u8 gText_15BP[];
 extern const u8 gText_ClawFossil[];
 extern const u8 gText_RootFossil[];
-extern const u8 gText_No4[];
 extern const u8 gText_TwoStyles[];
 extern const u8 gText_Lv50_3[];
 extern const u8 gText_OpenLevel2[];
@@ -2120,7 +2119,6 @@ extern const u8 gText_MaleSymbol4[];
 extern const u8 gText_FemaleSymbol4[];
 extern const u8 gText_GenderlessSymbol[];
 extern const u8 gText_NewLine2[];
-extern const u8 gText_Exit4[];
 extern const u8 gText_Lv[];
 extern const u8 gExpandedPlaceholder_Empty[];
 extern const u8 gText_Exit[];
@@ -2145,7 +2143,6 @@ extern const u8 gText_EnjoyCycling[];
 extern const u8 gText_InUseAlready_PM[];
 extern const u8 gText_CantUseHere[];
 extern const u8 gText_NoPokemonForBattle[];
-extern const u8 gText_ChoosePokemon2[];
 extern const u8 gText_NotEnoughHp[];
 extern const u8 gText_PokemonAreNeeded[];
 extern const u8 gText_PokemonCantBeSame[];
@@ -2181,7 +2178,6 @@ extern const u8 gText_NoEntry[];
 extern const u8 gText_Store[];
 extern const u8 gText_Register[];
 extern const u8 gText_Trade4[];
-extern const u8 gText_Summary5[];
 extern const u8 gText_Switch2[];
 extern const u8 gText_Item[];
 extern const u8 gText_NotPkmnOtherTrainerWants[];
@@ -2883,8 +2879,6 @@ extern const u8 gText_IfLeaderLeavesChatEnds[];
 extern const u8 gText_Upper[];
 extern const u8 gText_Lower[];
 extern const u8 gText_Symbols[];
-extern const u8 gText_Register2[];
-extern const u8 gText_Exit2[];
 
 // Dodrio Berry Picking
 extern const u8 gText_BerryPickingRecords[];
@@ -2909,17 +2903,11 @@ extern const u8 gText_CommunicationStandby3[];
 extern const u8 gText_SomeoneDroppedOut[];
 
 // Pokémon jump
-extern const u8 gText_WantToPlayAgain2[];
-extern const u8 gText_SomeoneDroppedOut2[];
-extern const u8 gText_CommunicationStandby4[];
 extern const u8 gText_AwesomeWonF701F700[];
-extern const u8 gText_FilledStorageSpace2[];
 extern const u8 gText_CantHoldMore[];
-extern const u8 gText_SpacePoints2[];
 extern const u8 gText_SpaceTimes3[];
 extern const u8 gText_PkmnJumpRecords[];
 extern const u8 gText_JumpsInARow[];
-extern const u8 gText_BestScore2[];
 extern const u8 gText_ExcellentsInARow[];
 
 // Berry crush
@@ -3022,7 +3010,6 @@ extern const u8 gText_Cuteness[];
 extern const u8 gText_Beauty3[];
 
 // Berry Blender
-extern const u8 gText_SavingDontTurnOff2[];
 extern const u8 gText_BlenderMaxSpeedRecord[];
 extern const u8 gText_234Players[];
 
@@ -3039,10 +3026,6 @@ extern const u8 gText_Rechoose[];
 extern const u8 gText_Deselect[];
 extern const u8 gText_Rent[];
 extern const u8 gText_Others2[];
-extern const u8 gText_Yes2[];
-extern const u8 gText_Yes3[];
-extern const u8 gText_No2[];
-extern const u8 gText_No3[];
 extern const u8 gText_QuitSwapping[];
 extern const u8 gText_AcceptThisPkmn[];
 extern const u8 gText_SelectPkmnToAccept[];

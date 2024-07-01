@@ -360,7 +360,8 @@ SECTIONS {
         src/pokemon_debug.o(.text);
         src/expansion_intro.o(.text);
         src/sound_check_menu.o(.text);
-		src/dexnav.o(.text);
+        src/dexnav.o(.text);
+        src/mugshot.o(.text);
     } > ROM =0
 
     script_data :
@@ -726,15 +727,12 @@ SECTIONS {
         data/mystery_gift.o(.rodata);
         src/m4a_tables.o(.rodata);
         data/sound_data.o(.rodata);
-<<<<<<< HEAD:ld_script.ld
         src/pokemon_debug.o(.rodata);
         src/expansion_intro.o(.rodata);
         src/sound_check_menu.o(.rodata);
+        src/dexnav.o(.rodata);
+        src/mugshot.o(.rodata);
     } > ROM =0
-=======
-		src/dexnav.o(.rodata);
-    } =0
->>>>>>> 01a91c4a56324f89acc50dcd7f7538fbcdcb77a7:ld_script.txt
 
     song_data :
     ALIGN(4)

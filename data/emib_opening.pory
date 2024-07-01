@@ -2,6 +2,8 @@ script Intro_EmibOpening {
 	msgbox("Earlier…")
 	fadescreen (FADE_TO_BLACK)
 	fadenewbgm (MUS_DP_B_TOWER)
+	setvar (VAR_0x8000, MUGSHOT_TEST)
+	callnative (DrawMugshot)
 	msgbox( format(	"Loading… 25%\n"
 					"Loading… 76%\l"
 					"… … …\p"
@@ -111,6 +113,7 @@ script Intro_EmibOpening {
 					"… … …\l"
 					"Connecting to server…"))
 	closemessage
+	callnative (ClearMugshot)
 	fadedefaultbgm
 	fadescreen (FADE_FROM_BLACK)
 }

@@ -28,6 +28,7 @@
 #include "rtc.h"
 #include "save.h"
 #include "scanline_effect.h"
+#include "script.h"
 #include "sound.h"
 #include "sprite.h"
 #include "strings.h"
@@ -1270,6 +1271,10 @@ static void HighlightSelectedMainMenuItem(u8 menuType, u8 selectedMenuItem, s16 
 #define tBrendanSpriteId data[10]
 #define tMaySpriteId data[11]
 
+// NOTE: This can be hijacked in order to set up a custom intro through scripting. Check  static void DebugAction_Util_CheckROMSpace(u8 taskId)  for an example of calling a script through C.
+// The below line will link to the script. For an example, git grep extern const u8 Debug_CheckROMSpace[];
+// extern const u8 Intro_EmibOpening[];
+// ScriptContext_SetupScript(Intro_EmibOpening);
 static void Task_NewGameBirchSpeech_Init(u8 taskId)
 {
     SetGpuReg(REG_OFFSET_DISPCNT, 0);

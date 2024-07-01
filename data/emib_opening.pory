@@ -1,0 +1,125 @@
+script Intro_EmibOpening {
+	msgbox("Earlier…")
+	fadescreen (FADE_TO_BLACK)
+	fadenewbgm (MUS_DP_B_TOWER)
+	msgbox( format(	"Loading… 25%\n"
+					"Loading… 76%\l"
+					"… … …\p"
+					"Updating…  5%\n"
+					"Updating… 65%\l"
+					"Updating… 92%\l"
+					"Updating… 95%\l"
+					"Updating… 97%\l"
+					"Updating… 97%\l"
+					"Updating… 97%\l"
+					"Updated!\p"
+					"Welcome to ENCORE, the world's foremost chat system!\p"
+					"Your ENCORE server, FRIENDSCROPOLIS, has updates."))
+	speakername (CommonText_Feed)
+	msgbox( format(	"Scientists disucss whether 2104 will be the year that manned flights to the Mars colony start, and about the tourism industry."))
+	closemessage
+	delay (16)
+	speakername (CommonText_Feed)
+	msgbox( format(	"Harper posted a meme.\p"
+					"“New job, who this”\p"
+					"An image of a dog wearing sunglasses is affixed.\p"
+					"EMOTE: Cheering skeleton\n"
+					"EMOTE: Praying for good fortune."))
+	closemessage
+	delay (16)
+	msgbox(	"Keep scrolling?", MSGBOX_YESNO)
+	speakername (CommonText_Feed)
+	msgbox( format(	"Baron posted\n"
+					"“Nostalgic Pokémon Personality Quiz for the Soul”"))
+	closemessage
+	msgbox(	"Try the quiz?", MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) { //1=yes
+		speakername (CommonText_Quiz)
+		msgbox( format(	"Q1. You receive a gift, and are curious about it. What next?"))
+		dynmultichoice(0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Open it now", "Open it later", "Get someone else to open it.")
+		speakername (CommonText_Quiz)
+		msgbox( format(	"Q2. It is a pleasant day at the beach. How are you feeling?"))
+		dynmultichoice(0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "This feels great!", "Snore…", "I want to go home!")
+		speakername (CommonText_Quiz)
+		msgbox( format(	"Q3. You're suddenly locked in a pitch-black room! What do you do?"))
+		dynmultichoice(0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Kick the door", "Cry", "Clean the room")
+		speakername (CommonText_Quiz)
+		msgbox( format(	"Q4. Do you like groan inducing puns?"))
+		dynmultichoice(0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Love them!", "A little", "Spare me")
+		speakername (CommonText_Quiz)
+		msgbox( format(	"Q5. The road forks. A sign says treasure is to the right. You…?"))
+		dynmultichoice(0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Instantly go right", "It's a trap! Go left", "Flip a coin")
+		closemessage
+		delay (16)
+		speakername (CommonText_Quiz)
+		msgbox( format(	"Congrats! Your answers have been transmitted and recorded."))
+		closemessage
+		msgbox( format(	"… … …\p"
+						"The browser closed on its own, cleared itself from my internet history, and blacklisted me from accessing the URL again.\p"
+						"… … …"))
+		closemessage
+		delay (16)
+	}
+	else { //no
+		random (4) //0-4
+		copyvar (VAR_EMERALBODY_RIVAL, VAR_RESULT)
+	}
+
+	speakername (CommonText_Feed)
+	msgbox( format(	"Jakson posted a link to a video game modding webiste.\p"
+					"Pokémon Emerald remake in the Pokémon Anniversary Experience v1.0"))
+	closemessage
+	delay (16)
+
+	msgbox( format(	"A chat log branched off from the article headline."))
+	speakername (CommonText_Jakson)
+	msgbox( format(	"Remember that Spatial Reality game they made for Pokémon's anniversary a few years back? Some people made a port of Emerald in it."))
+	speakername (CommonText_Sakura)
+	msgbox( format(	"That's awesome!!! I didn't think they'd crack the code so easily."))
+	speakername (CommonText_Harper)
+	msgbox( format(	"Neat."))
+	speakername (CommonText_Redd)
+	msgbox( format(	"Will have to try it sometime.\n"
+					"Gen1 in the original was fun."))
+	speakername (CommonText_Baron)
+	msgbox( format(	"Is this the one that got the multiplayer mod last year?"))
+	speakername (CommonText_Jakson)
+	msgbox( format(	"That's actually where I was going with it. I can put together a modpack if anyone is interested.\l"
+					"Any takers?"))
+	speakername (CommonText_Sakura)
+	msgbox( format(	"Day one, I'm in."))
+	speakername (CommonText_Harper)
+	msgbox( format(	"How much is the base game to purchase?"))
+	speakername (CommonText_Redd)
+	msgbox( format(	"No need. I've got like a dozen extra redemption codes for it."))
+	speakername (CommonText_Harper)
+	msgbox( format(	"… … … Why do you have a bunch of extra copies?"))
+	speakername (CommonText_Baron)
+	msgbox( format(	"I'm in, too. Feels like forever since we all last got together and hung out or played a game together."))
+	speakername (CommonText_Jakson)
+	msgbox( format(	"{EMOJI_BIGSMILE}{EMOJI_RIGHT_THUMBS} Give me a few days and I'll set up the mods and a server."))
+	closemessage
+
+	delay (16)
+	msgbox( format(	"Initializing scripts…\n"
+					"Initializing textures…\l"
+					"Initializing mods…\l"
+					"Initializing mods {EMOJI_LEFT_PAREN}multi-framework{EMOJI_RIGHT_PAREN}…\l"
+					"Initializing mods {EMOJI_LEFT_PAREN}emerald your body{EMOJI_RIGHT_PAREN}…\l"
+					"Initializing mods {EMOJI_LEFT_PAREN}custom pack 2{EMOJI_RIGHT_PAREN}…\l"
+					"Initializing world…\l"
+					"… … …\l"
+					"Connecting to server…"))
+	closemessage
+	fadedefaultbgm
+	fadescreen (FADE_FROM_BLACK)
+}
+
+text CommonText_Feed {
+	"Feed"
+}
+
+text CommonText_Quiz {
+	"Quiz"
+}
+

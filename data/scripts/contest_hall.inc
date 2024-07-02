@@ -1551,10 +1551,6 @@ LilycoveCity_ContestLobby_Text_PlayersMadeDifferentChoice:
 	.string "You may have made a different\n"
 	.string "choice than another player.$"
 
-LilycoveCity_ContestLobby_Text_PleaseWaitBButtonCancel:
-	.string "Please wait.\n"
-	.string "… … B Button: Cancel$"
-
 LilycoveCity_ContestLobby_Text_YourMonIsEntryNumX:
 	.string "Your Pokémon will be entered in\n"
 	.string "the Contest.\p"
@@ -1569,25 +1565,8 @@ LilycoveCity_ContestLobby_Text_LinkContestReception:
 	.string "You may enter Contests together with\n"
 	.string "one or more friends.$"
 
-LilycoveCity_ContestLobby_Text_WhichTopic2:
-	.string "Which topic would you like?$"
-
 LilycoveCity_ContestLobby_Text_EnterContest3:
 	.string "Would you like to enter a Contest?$"
-
-LilycoveCity_ContestLobby_Text_EnterWhichContest3:
-	.string "Which Contest would you like to enter?$"
-
-LilycoveCity_ContestLobby_Text_MonInNoCondition2:
-	.string "Your Pokémon appears to be in no\n"
-	.string "condition to take part in a Contest…$"
-
-LilycoveCity_ContestLobby_Text_EggCannotTakePart2:
-	.string "I'm sorry, but an Egg cannot take part\n"
-	.string "in a Pokémon Contest.$"
-
-LilycoveCity_ContestLobby_Text_EnterWhichPokemon3:
-	.string "Which Pokémon would you like to enter?$"
 
 LilycoveCity_ContestLobby_Text_PleaseDecideLinkLeader:
 	.string "Please decide which of you will\n"

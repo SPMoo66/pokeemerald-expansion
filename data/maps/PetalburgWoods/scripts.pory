@@ -468,7 +468,7 @@ PetalburgWoods_Text_TrainerTipsPP:
 
 mapscripts PetalburgWoods_MapScripts {
 	MAP_SCRIPT_ON_LOAD {
-		if (var(VAR_SKY_PILLAR_STATE) >= 2) {
+		if (flag(FLAG_BADGE06_GET)) {
 			setmetatile (40, 27, METATILE_General_TallGrass, FALSE)
 			setmetatile (41, 27, METATILE_General_TallGrass, FALSE)
 			setmetatile (40, 28, METATILE_General_Grass, FALSE)

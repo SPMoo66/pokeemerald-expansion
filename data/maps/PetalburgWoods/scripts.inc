@@ -938,8 +938,7 @@ PetalburgWoods_MapScripts::
 
 PetalburgWoods_MapScripts_MAP_SCRIPT_ON_LOAD:
 # 471 "data/maps/PetalburgWoods/scripts.pory"
-	compare VAR_SKY_PILLAR_STATE, 2
-	goto_if_ge PetalburgWoods_MapScripts_MAP_SCRIPT_ON_LOAD_1
+	goto_if_set FLAG_BADGE06_GET, PetalburgWoods_MapScripts_MAP_SCRIPT_ON_LOAD_1
 	return
 
 PetalburgWoods_MapScripts_MAP_SCRIPT_ON_LOAD_1:

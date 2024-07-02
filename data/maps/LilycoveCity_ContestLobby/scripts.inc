@@ -618,7 +618,7 @@ LilycoveCity_ContestLobby_EventScript_GlobalMode::
 	end
 
 LilycoveCity_ContestLobby_EventScript_ChooseLinkContestType::
-	message LilycoveCity_ContestLobby_Text_EnterWhichContest3
+	message LilycoveCity_ContestLobby_Text_EnterWhichContest1
 	waitmessage
 	multichoice 0, 0, MULTI_CONTEST_TYPE, FALSE
 	switch VAR_RESULT
@@ -629,7 +629,7 @@ LilycoveCity_ContestLobby_EventScript_ChooseLinkContestType::
 	end
 
 LilycoveCity_ContestLobby_EventScript_LinkContestInfo::
-	message LilycoveCity_ContestLobby_Text_WhichTopic2
+	message LilycoveCity_ContestLobby_Text_WhichTopic1
 	waitmessage
 	multichoice 0, 0, MULTI_LINK_CONTEST_INFO, FALSE
 	switch VAR_RESULT
@@ -662,7 +662,7 @@ LilycoveCity_ContestLobby_EventScript_CancelLinkContest::
 	end
 
 LilycoveCity_ContestLobby_EventScript_ChooseLinkContestMon::
-	msgbox LilycoveCity_ContestLobby_Text_EnterWhichPokemon3, MSGBOX_DEFAULT
+	msgbox LilycoveCity_ContestLobby_Text_EnterWhichPokemon1, MSGBOX_DEFAULT
 	setvar VAR_CONTEST_RANK, 0
 	choosecontestmon
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LilycoveCity_ContestLobby_EventScript_CancelLinkContest
@@ -680,12 +680,12 @@ LilycoveCity_ContestLobby_EventScript_LinkCantEnterLowRank::
 	end
 
 LilycoveCity_ContestLobby_EventScript_LinkCantEnterEgg::
-	msgbox LilycoveCity_ContestLobby_Text_EggCannotTakePart2, MSGBOX_DEFAULT
+	msgbox LilycoveCity_ContestLobby_Text_EggCannotTakePart, MSGBOX_DEFAULT
 	goto LilycoveCity_ContestLobby_EventScript_ChooseLinkContestMon
 	end
 
 LilycoveCity_ContestLobby_EventScript_LinkCantEnterFainted::
-	msgbox LilycoveCity_ContestLobby_Text_MonInNoCondition2, MSGBOX_DEFAULT
+	msgbox LilycoveCity_ContestLobby_Text_MonInNoConditionForContest, MSGBOX_DEFAULT
 	goto LilycoveCity_ContestLobby_EventScript_ChooseLinkContestMon
 	end
 
@@ -697,7 +697,7 @@ LilycoveCity_ContestLobby_EventScript_EnterMonForLinkContest::
 LilycoveCity_ContestLobby_EventScript_TrySetUpLinkContest::
 	goto_if_eq VAR_TEMP_D, 1, LilycoveCity_ContestLobby_EventScript_SetLinkGroupType
 	goto_if_ge VAR_TEMP_D, 2, LilycoveCity_ContestLobby_EventScript_CancelLinkContest
-	message LilycoveCity_ContestLobby_Text_PleaseWaitBButtonCancel
+	message gText_PleaseWaitForLink
 	waitmessage
 	copyvar VAR_0x8004, VAR_RESULT
 	call_if_eq VAR_TEMP_C, 0, LilycoveCity_ContestLobby_EventScript_TryLinkEMode

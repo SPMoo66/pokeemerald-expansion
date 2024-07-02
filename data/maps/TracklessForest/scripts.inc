@@ -209,7 +209,8 @@ TracklessForest_Teleport::
 # 110 "data/maps/TracklessForest/scripts.pory"
 	msgbox TracklessForest_Teleport_Text_0
 # 111 "data/maps/TracklessForest/scripts.pory"
-	goto_if_set FLAG_SYS_GAME_CLEAR, TracklessForest_Teleport_2
+	compare VAR_SKY_PILLAR_STATE, 2
+	goto_if_ge TracklessForest_Teleport_2
 TracklessForest_Teleport_1:
 # 123 "data/maps/TracklessForest/scripts.pory"
 	release

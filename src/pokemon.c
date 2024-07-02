@@ -5640,8 +5640,16 @@ u16 GetBattleBGM(void)
         case SPECIES_SUICUNE:
             return MUS_HG_VS_SUICUNE;
         case SPECIES_LUGIA:
+        case SPECIES_ZYGARDE:
+        case SPECIES_VOLCANION:
             return MUS_HG_VS_LUGIA;
         case SPECIES_HO_OH:
+        case SPECIES_MELOETTA:
+        case SPECIES_ZARUDE:
+        case SPECIES_TING_LU:
+        case SPECIES_CHIEN_PAO:
+        case SPECIES_WO_CHIEN:
+        case SPECIES_CHI_YU:
             return MUS_HG_VS_HO_OH;
         case SPECIES_CELEBI:
             return MUS_HG_VS_WILD;
@@ -5670,14 +5678,33 @@ u16 GetBattleBGM(void)
         case SPECIES_DEOXYS_ATTACK:
         case SPECIES_DEOXYS_DEFENSE:
         case SPECIES_DEOXYS_SPEED:
+        case SPECIES_NIHILEGO:
+        case SPECIES_BUZZWOLE:
+        case SPECIES_PHEROMOSA:
+        case SPECIES_XURKITREE:
+        case SPECIES_CELESTEELA:
+        case SPECIES_KARTANA:
+        case SPECIES_GUZZLORD:
+        case SPECIES_STAKATAKA:
+        case SPECIES_BLACEPHALON:
             return MUS_RG_VS_DEOXYS;
         case SPECIES_UXIE:
         case SPECIES_MESPRIT:
         case SPECIES_AZELF:
+        case SPECIES_TORNADUS:
+        case SPECIES_THUNDURUS:
+        case SPECIES_LANDORUS:
+        case SPECIES_ENAMORUS:
+        case SPECIES_TAPU_KOKO:
+        case SPECIES_TAPU_LELE:
+        case SPECIES_TAPU_BULU:
+        case SPECIES_TAPU_FINI:
             return MUS_DP_VS_UXIE_MESPRIT_AZELF;
         case SPECIES_DIALGA:
         case SPECIES_PALKIA:
+        case SPECIES_TERAPAGOS:
             return MUS_DP_VS_DIALGA_PALKIA;
+        case SPECIES_JIRACHI:
         case SPECIES_ROTOM:
         case SPECIES_ROTOM_HEAT:
         case SPECIES_ROTOM_WASH:
@@ -5687,15 +5714,23 @@ u16 GetBattleBGM(void)
         case SPECIES_HEATRAN:
         case SPECIES_MANAPHY:
         case SPECIES_CRESSELIA:
-        case SPECIES_JIRACHI:
+        case SPECIES_XERNEAS:
+        case SPECIES_YVELTAL:
+        case SPECIES_MARSHADOW:
+        case SPECIES_ZACIAN:
+        case SPECIES_ZAMAZENTA:
             return MUS_DP_VS_LEGEND;
         case SPECIES_GIRATINA:
         case SPECIES_GIRATINA_ORIGIN:
         case SPECIES_DARKRAI:
+        case SPECIES_HOOPA:
+        case SPECIES_HOOPA_UNBOUND:
+        case SPECIES_NECROZMA:
             return MUS_PL_VS_GIRATINA;
         case SPECIES_PHIONE:
         case SPECIES_SHAYMIN:
         case SPECIES_SHAYMIN_SKY:
+        case SPECIES_OGERPON:
             return MUS_DP_VS_WILD;
         case SPECIES_ARCEUS:
         case SPECIES_ARCEUS_FIGHTING:
@@ -5715,9 +5750,48 @@ u16 GetBattleBGM(void)
         case SPECIES_ARCEUS_DRAGON:
         case SPECIES_ARCEUS_DARK:
         case SPECIES_ARCEUS_FAIRY:
+        case SPECIES_ETERNATUS:
             return MUS_DP_VS_ARCEUS;
+        case SPECIES_VICTINI:
+        case SPECIES_GENESECT:
+        case SPECIES_MAGEARNA:
+        case SPECIES_ZERAORA:
+            return MUS_PL_VS_FRONTIER_BRAIN;
+        case SPECIES_COBALION:
+        case SPECIES_TERRAKION:
+        case SPECIES_VIRIZION:
+        case SPECIES_KELDEO:
+        case SPECIES_IRON_LEAVES:
+        case SPECIES_IRON_BOULDER:
+        case SPECIES_IRON_CROWN:
+            return MUS_HG_VS_GYM_LEADER_KANTO;
+        case SPECIES_RESHIRAM:
+        case SPECIES_ZEKROM:
+        case SPECIES_KYUREM:
+        case SPECIES_SOLGALEO:
+        case SPECIES_LUNALA:
+            return MUS_DP_VS_GALACTIC_BOSS;
+        case SPECIES_DIANCIE:
+        case SPECIES_MELMETAL:
+        case SPECIES_GLASTRIER:
+        case SPECIES_SPECTRIER:
+        case SPECIES_CALYREX:
+            return MUS_HG_VS_TRAINER;
+        case SPECIES_KORAIDON:
+        case SPECIES_MIRAIDON:
+            return MUS_HG_VS_KYOGRE_GROUDON;
+        case SPECIES_WALKING_WAKE:
+        case SPECIES_GOUGING_FIRE:
+        case SPECIES_RAGING_BOLT:
+            return MUS_C_VS_LEGEND_BEAST;
+        case SPECIES_OKIDOGI:
+        case SPECIES_MUNKIDORI:
+        case SPECIES_FEZANDIPITI:
+            return MUS_HG_VS_GYM_LEADER;
+        case SPECIES_PECHARUNT:
+            return MUS_DP_VS_GALACTIC_COMMANDER;
         default:
-            u32 musicRegion = gSaveBlock2Ptr->optionsMusicRegion; //0 - 3 = Kanto - Sinnoh
+            u32 musicRegion = gSaveBlock2Ptr->optionsMusicRegion; // 0 - 3 = Kanto - Sinnoh
             switch (musicRegion)
             {
             case 0:

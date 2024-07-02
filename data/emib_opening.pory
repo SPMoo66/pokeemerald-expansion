@@ -38,20 +38,63 @@ script Intro_EmibOpening {
 	if (var(VAR_RESULT) == 1) { //1=yes
 		speakername (CommonText_Quiz)
 		msgbox( format(	"Q1. You receive a gift, and are curious about it. What next?"))
-		dynmultichoice(0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Open it now", "Open it later", "Get someone else to open it.")
+		dynmultichoice(0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Open it now", "Open it later", "Get someone else to open it.") // 0: Baron, 1: Harper, 2: Jakson, 3: Redd, 4: Sakura
+		switch (var(VAR_RESULT)) {
+			case 0:
+				addvar (VAR_TEMP_4, 1)
+			case 1:
+				addvar (VAR_TEMP_3, 1)
+			case 2:
+				addvar (VAR_TEMP_1, 1)
+		}
 		speakername (CommonText_Quiz)
 		msgbox( format(	"Q2. It is a pleasant day at the beach. How are you feeling?"))
 		dynmultichoice(0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "This feels great!", "Snore…", "I want to go home!")
+		switch (var(VAR_RESULT)) {
+			case 0:
+				addvar (VAR_TEMP_1, 1)
+			case 1:
+				addvar (VAR_TEMP_2, 1)
+			case 2:
+				addvar (VAR_TEMP_0, 1)
+		}
 		speakername (CommonText_Quiz)
 		msgbox( format(	"Q3. You're suddenly locked in a pitch-black room! What do you do?"))
 		dynmultichoice(0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Kick the door", "Cry", "Clean the room")
+		switch (var(VAR_RESULT)) {
+			case 0:
+				addvar (VAR_TEMP_3, 1)
+			case 1:
+				addvar (VAR_TEMP_4, 1)
+			case 2:
+				addvar (VAR_TEMP_0, 1)
+		}
 		speakername (CommonText_Quiz)
 		msgbox( format(	"Q4. Do you like groan inducing puns?"))
 		dynmultichoice(0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Love them!", "A little", "Spare me")
+		switch (var(VAR_RESULT)) {
+			case 0:
+				addvar (VAR_TEMP_4, 1)
+			case 1:
+				addvar (VAR_TEMP_0, 1)
+			case 2:
+				addvar (VAR_TEMP_2, 1)
+		}
 		speakername (CommonText_Quiz)
 		msgbox( format(	"Q5. The road forks. A sign says treasure is to the right. You…?"))
 		dynmultichoice(0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Instantly go right", "It's a trap! Go left", "Flip a coin")
+		switch (var(VAR_RESULT)) {
+			case 0:
+				addvar (VAR_TEMP_3, 1)
+			case 1:
+				addvar (VAR_TEMP_2, 1)
+			case 2:
+				addvar (VAR_TEMP_1, 1)
+		}
 		closemessage
+		
+		call (Intro_DetermineRival)
+		
 		delay (16)
 		speakername (CommonText_Quiz)
 		msgbox( format(	"Congrats! Your answers have been transmitted and recorded."))
@@ -117,6 +160,64 @@ script Intro_EmibOpening {
 	fadedefaultbgm
 	fadescreen (FADE_FROM_BLACK)
 }
+
+script Intro_DetermineRival {
+	// 0: Baron, 1: Harper, 2: Jakson, 3: Redd, 4: Sakura
+	if(var(VAR_TEMP_0) == 3) { // Baron
+		setvar (VAR_EMERALBODY_RIVAL, 0)
+		return
+	}
+	elif (var(VAR_TEMP_0) == 2) {
+		setflag (FLAG_TEMP_10)
+	}
+
+	if(var(VAR_TEMP_1) == 3) { // Harper
+		setvar (VAR_EMERALBODY_RIVAL, 1)
+		return
+	}
+	elif (var(VAR_TEMP_1) == 2) {
+		setflag (FLAG_TEMP_1)
+	}
+
+	if(var(VAR_TEMP_2) == 3) { // Jakson
+		setvar (VAR_EMERALBODY_RIVAL, 2)
+		return
+	} // Technically don't need to set FLAG_TEMP_2 for Jakson, because he is highest priority
+
+	if(var(VAR_TEMP_3) == 3) { // Redd
+		setvar (VAR_EMERALBODY_RIVAL, 3)
+		return
+	}
+	elif (var(VAR_TEMP_3) == 2) {
+		setflag (FLAG_TEMP_3)
+	}
+
+	if(var(VAR_TEMP_4) == 3) { // Sakura
+		setvar (VAR_EMERALBODY_RIVAL, 4)
+		return
+	}
+	elif (var(VAR_TEMP_4) == 2) {
+		setflag (FLAG_TEMP_4)
+	}
+
+	// 0: Baron, 1: Harper, 2: Jakson, 3: Redd, 4: Sakura
+	if(flag(FLAG_TEMP_10)) { // Baron -> Sakura -> Redd -> Harper -> Jakson
+		setvar (VAR_EMERALBODY_RIVAL, 0) // Technically not required since the var is originally 0
+	}
+	if(flag(FLAG_TEMP_4)) {
+		setvar (VAR_EMERALBODY_RIVAL, 4)
+	}
+	if(flag(FLAG_TEMP_3)) {
+		setvar (VAR_EMERALBODY_RIVAL, 3)
+	}
+	if(flag(FLAG_TEMP_1)) {
+		setvar (VAR_EMERALBODY_RIVAL, 1)
+	}
+	if(!flag(FLAG_TEMP_10) && !flag(FLAG_TEMP_1) && !flag(FLAG_TEMP_3) && !flag(FLAG_TEMP_4)) {
+		setvar (VAR_EMERALBODY_RIVAL, 2)
+	}
+}
+
 
 text CommonText_Feed {
 	"Feed"

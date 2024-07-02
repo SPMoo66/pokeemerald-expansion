@@ -1,0 +1,42 @@
+const MELOETTA = 1
+
+mapscripts VictoryRoad_2F_MapScripts {
+	MAP_SCRIPT_ON_RESUME {
+		setobjectxy (MELOETTA, 9, 0)
+		if(flag(FLAG_CAUGHT_MELOETTA)) {
+			removeobject(VAR_LAST_TALKED)
+		}
+	}
+	MAP_SCRIPT_ON_TRANSITION {
+		if(flag(FLAG_CAUGHT_MELOETTA)) {
+			setflag (FLAG_TEMP_2)
+		}
+	}
+}
+
+script BattleMeloetta {
+	if (!flag(FLAG_CAUGHT_MELOETTA)) {
+		lock
+		applymovement (MELOETTA, SkyPillar_Top_Movement_CameraPanDown)
+		waitmovement (0)
+		setvar (VAR_LAST_TALKED, MELOETTA)
+		playmoncry(SPECIES_MELOETTA, CRY_MODE_ENCOUNTER)
+		msgbox("Laaa-liii!!")
+		waitmoncry
+		seteventmon(SPECIES_MELOETTA, 50)
+		setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+		special(BattleSetup_StartLegendaryBattle)
+		waitstate
+		clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+		specialvar (VAR_RESULT, GetBattleOutcome)
+		if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+			setflag (FLAG_CAUGHT_MELOETTA)
+		}
+	}
+	else {
+		msgbox(format("You can see the Pokémon League building in the distance."))
+	}
+	release
+	end
+}
+

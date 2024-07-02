@@ -796,6 +796,10 @@ text CommonText_Uncle {
 	"Uncle"
 }
 
+text CommonText_Wanda {
+	"Wanda"
+}
+
 text CommonText_Steven {
 	"Steven"
 }

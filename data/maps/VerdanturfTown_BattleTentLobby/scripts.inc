@@ -253,6 +253,7 @@ VerdanturfTown_BattleTentLobby_EventScript_Scott::
 	lock
 	faceplayer
 	goto_if_set FLAG_MET_SCOTT_IN_VERDANTURF, VerdanturfTown_BattleTentLobby_EventScript_ScottAlreadySpokenTo
+	speakername (CommonText_Scott)
 	msgbox VerdanturfTown_BattleTentLobby_Text_ScottCanMeetToughTrainers, MSGBOX_DEFAULT
 	addvar VAR_SCOTT_STATE, 1
 	setflag FLAG_MET_SCOTT_IN_VERDANTURF
@@ -260,6 +261,7 @@ VerdanturfTown_BattleTentLobby_EventScript_Scott::
 	end
 
 VerdanturfTown_BattleTentLobby_EventScript_ScottAlreadySpokenTo::
+	speakername (CommonText_Scott)
 	msgbox VerdanturfTown_BattleTentLobby_Text_ScottVisitRegularly, MSGBOX_DEFAULT
 	release
 	end
@@ -368,7 +370,7 @@ VerdanturfTown_BattleTentLobby_Text_TaughtWhatKindsOfMoves:
 	.string "heal or protect themselves.$"
 
 VerdanturfTown_BattleTentLobby_Text_ScottCanMeetToughTrainers:
-	.string "Scott: Hey there, {PLAYER}{KUN}!\n"
+	.string "Hey there, {PLAYER}{KUN}!\n"
 	.string "I thought I might see you here.\p"
 	.string "A Battle Tent's a place where\n"
 	.string "you can meet tough Trainers.\p"
@@ -378,6 +380,6 @@ VerdanturfTown_BattleTentLobby_Text_ScottCanMeetToughTrainers:
 	.string "the best you can!$"
 
 VerdanturfTown_BattleTentLobby_Text_ScottVisitRegularly:
-	.string "Scott: I visit here regularly in hopes\n"
-	.string "of seeing tough Trainers in action\l"
+	.string "I visit here regularly in hopes of\n"
+	.string "seeing tough Trainers in action\l"
 	.string "in whatever the situation.$"

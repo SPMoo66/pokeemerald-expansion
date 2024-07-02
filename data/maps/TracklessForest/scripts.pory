@@ -35,7 +35,7 @@ script BattleRaikou {
 	playmoncry(SPECIES_RAIKOU, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")
 	waitmoncry
-	seteventmon(SPECIES_RAIKOU, 50)
+	seteventmon(SPECIES_RAIKOU, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
@@ -54,7 +54,7 @@ script BattleEntei {
 	playmoncry(SPECIES_ENTEI, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")
 	waitmoncry
-	seteventmon(SPECIES_ENTEI, 50)
+	seteventmon(SPECIES_ENTEI, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
@@ -73,7 +73,7 @@ script BattleSuicune {
 	playmoncry(SPECIES_SUICUNE, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")
 	waitmoncry
-	seteventmon(SPECIES_SUICUNE, 50)
+	seteventmon(SPECIES_SUICUNE, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate

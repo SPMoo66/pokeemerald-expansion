@@ -35,7 +35,7 @@ script BattleTapuBulu {
 	playmoncry(SPECIES_TAPU_BULU, CRY_MODE_ENCOUNTER)
 	msgbox("Ta-pu-loooo!")
 	waitmoncry
-	seteventmon(SPECIES_TAPU_BULU, 50)
+	seteventmon(SPECIES_TAPU_BULU, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
@@ -54,7 +54,7 @@ script BattleTapuFini {
 	playmoncry(SPECIES_TAPU_FINI, CRY_MODE_ENCOUNTER)
 	msgbox("Ta-pu-fiiieee!")
 	waitmoncry
-	seteventmon(SPECIES_TAPU_FINI, 50)
+	seteventmon(SPECIES_TAPU_FINI, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
@@ -73,7 +73,7 @@ script BattleTapuKoko {
 	playmoncry(SPECIES_TAPU_KOKO, CRY_MODE_ENCOUNTER)
 	msgbox("Tapu ko-ko-ko-kooo!!!")
 	waitmoncry
-	seteventmon(SPECIES_TAPU_KOKO, 50)
+	seteventmon(SPECIES_TAPU_KOKO, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
@@ -92,7 +92,7 @@ script BattleTapuLele {
 	playmoncry(SPECIES_TAPU_LELE, CRY_MODE_ENCOUNTER)
 	msgbox("Ta-pu leeeh!")
 	waitmoncry
-	seteventmon(SPECIES_TAPU_LELE, 50)
+	seteventmon(SPECIES_TAPU_LELE, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate

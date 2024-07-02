@@ -30,7 +30,7 @@ script BattleMesprit {
 	playmoncry(SPECIES_MESPRIT, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")
 	waitmoncry
-	seteventmon(SPECIES_MESPRIT, 50)
+	seteventmon(SPECIES_MESPRIT, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
@@ -49,7 +49,7 @@ script BattleUxie {
 	playmoncry(SPECIES_UXIE, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")
 	waitmoncry
-	seteventmon(SPECIES_UXIE, 50)
+	seteventmon(SPECIES_UXIE, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
@@ -68,7 +68,7 @@ script BattleAzelf {
 	playmoncry(SPECIES_AZELF, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")
 	waitmoncry
-	seteventmon(SPECIES_AZELF, 50)
+	seteventmon(SPECIES_AZELF, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate

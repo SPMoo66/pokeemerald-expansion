@@ -36,7 +36,7 @@ script BattleChienPao {
 	playmoncry(SPECIES_CHIEN_PAO, CRY_MODE_ENCOUNTER)
 	msgbox("Graoo-wuuh!")
 	waitmoncry
-	seteventmon(SPECIES_CHIEN_PAO, 50)
+	seteventmon(SPECIES_CHIEN_PAO, 45)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
@@ -55,7 +55,7 @@ script BattleChiYu {
 	playmoncry(SPECIES_CHI_YU, CRY_MODE_ENCOUNTER)
 	msgbox("Di-tiing wuh!")
 	waitmoncry
-	seteventmon(SPECIES_CHI_YU, 50)
+	seteventmon(SPECIES_CHI_YU, 45)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
@@ -74,7 +74,7 @@ script BattleTingLu {
 	playmoncry(SPECIES_TING_LU, CRY_MODE_ENCOUNTER)
 	msgbox("Aouu-wooouh!")
 	waitmoncry
-	seteventmon(SPECIES_TING_LU, 50)
+	seteventmon(SPECIES_TING_LU, 45)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
@@ -93,7 +93,7 @@ script BattleWoChien {
 	playmoncry(SPECIES_WO_CHIEN, CRY_MODE_ENCOUNTER)
 	msgbox("Greu-wuuu!")
 	waitmoncry
-	seteventmon(SPECIES_WO_CHIEN, 50)
+	seteventmon(SPECIES_WO_CHIEN, 45)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate

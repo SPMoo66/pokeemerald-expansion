@@ -401,6 +401,7 @@ Route110_EventScript_PlayBrendanMusic::
 	return
 
 Route110_EventScript_MayBattle::
+	speakername (CommonText_May)
 	msgbox Route110_Text_MayLetsBattle, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
 	case 0, Route110_EventScript_MayBattleTreecko
@@ -424,13 +425,16 @@ Route110_EventScript_MayBattleMudkip::
 	end
 
 Route110_EventScript_MayDefeated::
+	speakername (CommonText_May)
 	msgbox Route110_Text_MayTakeThis, MSGBOX_DEFAULT
 	call Route110_EventScript_GivePokemonBoxLink
+	speakername (CommonText_May)
 	msgbox Route110_Text_MayExplainPokemonBoxLink, MSGBOX_DEFAULT
 	goto Route110_EventScript_RivalExit
 	end
 
 Route110_EventScript_BrendanBattle::
+	speakername (CommonText_Brendan)
 	msgbox Route110_Text_BrendanLetsBattle, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
 	case 0, Route110_EventScript_BrendanBattleTreecko
@@ -454,8 +458,10 @@ Route110_EventScript_BrendanBattleMudkip::
 	end
 
 Route110_EventScript_BrendanDefeated::
+	speakername (CommonText_Brendan)
 	msgbox Route110_Text_BrendanTakeThis, MSGBOX_DEFAULT
 	call Route110_EventScript_GivePokemonBoxLink
+	speakername (CommonText_Brendan)
 	msgbox Route110_Text_BrendanExplainPokemonBoxLink, MSGBOX_DEFAULT
 	goto Route110_EventScript_RivalExit
 	end
@@ -602,6 +608,7 @@ Route110_EventScript_BirchScene::
 	call_if_eq VAR_0x8008, 2, Route110_EventScript_BirchApproachPlayer2
 	call_if_eq VAR_0x8008, 3, Route110_EventScript_BirchApproachPlayer3
 	call_if_eq VAR_0x8008, 4, Route110_EventScript_BirchApproachPlayer4
+	speakername (CommonText_Birch)
 	msgbox Route110_Text_ImagineSeeingYouHere, MSGBOX_DEFAULT
 	closemessage
 	delay 20
@@ -623,6 +630,7 @@ Route110_EventScript_BirchScene::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_PROF_BIRCH_MATCH_CALL
+	speakername (CommonText_Birch)
 	msgbox Route110_Text_KeepAnEyeOutForRival, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_0x8008, 1, Route110_EventScript_BirchExit1
@@ -733,7 +741,7 @@ Route110_Text_AquaActionsBringSmiles:
 	.string "smiles to people's faces!$"
 
 Route110_Text_MayLetsBattle:
-	.string "May: Hi, {PLAYER}{KUN}, long time no see!\p"
+	.string "Hi, {PLAYER}{KUN}, long time no see!\p"
 	.string "While I was searching for other\n"
 	.string "Pokémon, my Pokémon grew stronger.\p"
 	.string "So…\n"
@@ -744,13 +752,13 @@ Route110_Text_MayDefeated:
 	.string "You're better than I expected!$"
 
 Route110_Text_MayTakeThis:
-	.string "May: {PLAYER}{KUN}, you've been busy\n"
+	.string "{PLAYER}{KUN}, you've been busy\n"
 	.string "training, too, haven't you?\p"
 	.string "I think you deserve a reward!\n"
 	.string "This is from me!$"
 
 Route110_Text_MayExplainPokemonBoxLink:
-	.string "May: That's a Pokémon Box Link.\p"
+	.string "That's a Pokémon Box Link.\p"
 	.string "Try it out. It allows you to access\n"
 	.string "your PC remotely when you use it.\p"
 	.string "Okay, {PLAYER}{KUN}, let's meet again!\p"
@@ -759,7 +767,7 @@ Route110_Text_MayExplainPokemonBoxLink:
 	.string "harder for the next time.$"
 
 Route110_Text_BrendanLetsBattle:
-	.string "Brendan: Hey, {PLAYER}.\n"
+	.string "Hey, {PLAYER}.\n"
 	.string "So this is where you were.\l"
 	.string "How's it going?\p"
 	.string "Have you been raising your Pokémon?\n"
@@ -770,13 +778,13 @@ Route110_Text_BrendanDefeated:
 	.string "You're pretty good.$"
 
 Route110_Text_BrendanTakeThis:
-	.string "Brendan: {PLAYER}, you've trained\n"
-	.string "without me noticing…\p"
+	.string "{PLAYER}, you've trained without\n"
+	.string "me noticing…\p"
 	.string "Good enough!\n"
 	.string "Here, take this.$"
 
 Route110_Text_BrendanExplainPokemonBoxLink:
-	.string "Brendan: That's a Pokémon Box Link.\p"
+	.string "That's a Pokémon Box Link.\p"
 	.string "Use it and you can access your PC\n"
 	.string "remotely.\p"
 	.string "Anyway, I'm off to look for new\n"
@@ -936,7 +944,7 @@ Route110_Text_ThereIsNoRecord:
 	.string "challenge. There is no record…$"
 
 Route110_Text_ImagineSeeingYouHere:
-	.string "Prof. Birch: Oh, {PLAYER}{KUN}!\n"
+	.string "Oh, {PLAYER}{KUN}!\n"
 	.string "Imagine seeing you here!\p"
 	.string "And where might my {RIVAL} be?$"
 
@@ -957,7 +965,7 @@ Route110_Text_RegisteredBirchInPokenav:
 	.string "in the Pokénav.$"
 
 Route110_Text_KeepAnEyeOutForRival:
-	.string "Prof. Birch: {PLAYER}{KUN}…\p"
+	.string "{PLAYER}{KUN}…\p"
 	.string "Please keep an eye out for my {RIVAL}.\n"
 	.string "… … … … … …\p"
 	.string "Well, I had better get going.\n"

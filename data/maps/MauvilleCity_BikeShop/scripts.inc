@@ -302,72 +302,84 @@ MauvilleCity_BikeShop_EventScript_Rydel::
 	faceplayer
 # 154 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	goto_if_set FLAG_RECEIVED_BIKE, MauvilleCity_BikeShop_EventScript_Rydel_2
-# 160 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+# 161 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	goto_if_unset FLAG_DECLINED_BIKE, MauvilleCity_BikeShop_EventScript_Rydel_5
 MauvilleCity_BikeShop_EventScript_Rydel_4:
-# 164 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+# 166 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	speakername CommonText_Rydel
+# 167 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	msgbox MauvilleCity_BikeShop_EventScript_Rydel_Text_2, MSGBOX_YESNO
-# 165 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+# 168 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq MauvilleCity_BikeShop_EventScript_Rydel_8
-# 175 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+# 180 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	setflag FLAG_DECLINED_BIKE
-# 176 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+# 181 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	speakername CommonText_Rydel
+# 182 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	msgbox MauvilleCity_BikeShop_EventScript_Rydel_Text_5
 MauvilleCity_BikeShop_EventScript_Rydel_7:
-# 178 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+# 184 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	release
 	end
 
 MauvilleCity_BikeShop_EventScript_Rydel_2:
 # 156 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	msgbox MauvilleCity_BikeShop_EventScript_Rydel_Text_0
+	speakername CommonText_Rydel
 # 157 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	msgbox MauvilleCity_BikeShop_EventScript_Rydel_Text_0
+# 158 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	release
 	end
 
 MauvilleCity_BikeShop_EventScript_Rydel_5:
-# 162 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+# 163 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	speakername CommonText_Rydel
+# 164 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	msgbox MauvilleCity_BikeShop_EventScript_Rydel_Text_1
 	goto MauvilleCity_BikeShop_EventScript_Rydel_4
 
 MauvilleCity_BikeShop_EventScript_Rydel_8:
-# 167 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	msgbox MauvilleCity_BikeShop_EventScript_Rydel_Text_3
-# 168 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	giveitem ITEM_ACRO_BIKE
-# 169 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	giveitem ITEM_MACH_BIKE
 # 170 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	setflag FLAG_RECEIVED_BIKE
+	speakername CommonText_Rydel
 # 171 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	msgbox MauvilleCity_BikeShop_EventScript_Rydel_Text_3
+# 172 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	giveitem ITEM_ACRO_BIKE
+# 173 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	giveitem ITEM_MACH_BIKE
+# 174 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	setflag FLAG_RECEIVED_BIKE
+# 175 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	speakername CommonText_Rydel
+# 176 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	msgbox MauvilleCity_BikeShop_EventScript_Rydel_Text_4
 	goto MauvilleCity_BikeShop_EventScript_Rydel_7
 
 
 MauvilleCity_BikeShop_EventScript_Rydel_Text_0:
-# 156 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+# 157 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	.string "I hope you're enjoying the bikes!\p"
 	.string "Take a look at the books in the back if\n"
 	.string "you need help using them.$"
 
 MauvilleCity_BikeShop_EventScript_Rydel_Text_1:
-# 162 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+# 164 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	.string "Well, well, what have we here?\nA most energetic customer!\pMe? You may call me Rydel.\nI'm the owner of this cycle shop.$"
 
 MauvilleCity_BikeShop_EventScript_Rydel_Text_2:
-# 164 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	.string "Rydel: Your Running Shoes…\nThey're awfully filthy.\pDid you come from far away?$"
+# 167 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	.string "Your Running Shoes…\nThey're awfully filthy.\pDid you come from far away?$"
 
 MauvilleCity_BikeShop_EventScript_Rydel_Text_3:
-# 167 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	.string "Rydel: Hm, hm… … … … …\pYou're saying that you came all this\nway from Littleroot?\pMy goodness!\nThat's ridiculously far!\pIf you had one of my Bikes, you could\ngo anywhere easily while feeling the\lgentle caress of the wind!\pI'll tell you what!\nI'll give you a Bike!\pOh, wait a second!\pI forgot to tell you that there are\ntwo kinds of Bikes!\pThey are the Mach Bike and\nthe Acro Bike!\pThe Mach Bike is for cyclists who want\nto feel the wind with their bodies!\pAnd an Acro Bike is for those who\nprefer technical rides!\pI'm a real sweetheart, so you can have both Bikes!$"
+# 171 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	.string "Hm, hm… … … … …\pYou're saying that you came all this\nway from Littleroot?\pMy goodness!\nThat's ridiculously far!\pIf you had one of my Bikes, you could\ngo anywhere easily while feeling the\lgentle caress of the wind!\pI'll tell you what!\nI'll give you a Bike!\pOh, wait a second!\pI forgot to tell you that there are\ntwo kinds of Bikes!\pThey are the Mach Bike and\nthe Acro Bike!\pThe Mach Bike is for cyclists who want\nto feel the wind with their bodies!\pAnd an Acro Bike is for those who\nprefer technical rides!\pI'm a real sweetheart, so you can have both Bikes!$"
 
 MauvilleCity_BikeShop_EventScript_Rydel_Text_4:
-# 171 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	.string "Rydel: Enjoy! And if you need any help,\n"
-	.string "the books in the back should be useful.$"
+# 176 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	.string "Enjoy! And if you need any help, the\n"
+	.string "books in the back should be useful.$"
 
 MauvilleCity_BikeShop_EventScript_Rydel_Text_5:
-# 176 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	.string "Rydel: Is that right?\pThen, I guess you have no need for\nany of my Bikes.$"
+# 182 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	.string "Is that right?\pThen, I guess you have no need for\nany of my Bikes.$"

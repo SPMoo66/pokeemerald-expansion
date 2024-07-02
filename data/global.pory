@@ -792,8 +792,16 @@ text CommonText_Wally {
 	"Wally"
 }
 
+text CommonText_Uncle {
+	"Uncle"
+}
+
 text CommonText_Steven {
 	"Steven"
+}
+
+text CommonText_Wattson {
+	"Wattson"
 }
 
 text CommonText_Scott {
@@ -830,6 +838,10 @@ text CommonText_Gabby {
 
 text CommonText_Ty {
 	"Ty"
+}
+
+text CommonText_Rydel {
+	"Rydel"
 }
 
 

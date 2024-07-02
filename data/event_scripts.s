@@ -796,21 +796,6 @@ RusturfTunnel_EventScript_SetRusturfTunnelOpen::
 	setflag FLAG_RUSTURF_TUNNEL_OPENED
 	return
 
-EventScript_UnusedBoardFerry::
-	delay 30
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
-	waitmovement 0
-	showobjectat OBJ_EVENT_ID_PLAYER, 0
-	delay 30
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_UnusedBoardFerry
-	waitmovement 0
-	delay 30
-	return
-
-Movement_UnusedBoardFerry:
-	walk_up
-	step_end
-
 Common_EventScript_FerryDepartIsland::
 	call_if_eq VAR_FACING, DIR_SOUTH, Ferry_EventScript_DepartIslandSouth
 	call_if_eq VAR_FACING, DIR_WEST, Ferry_EventScript_DepartIslandWest
@@ -886,10 +871,6 @@ gText_PlayerHouseBootPC::
 gText_PokeblockLinkCanceled::
 	.string "The link was canceled.$"
 
-gText_UnusedNicknameReceivedPokemon::
-	.string "Want to give a nickname to\n"
-	.string "the {STR_VAR_2} you received?$"
-
 gText_PlayerWhitedOut::
 	.string "{PLAYER} is out of usable\n"
 	.string "Pokémon!\p{PLAYER} whited out!$"
@@ -932,16 +913,6 @@ gText_UndergoingAdjustments::
 	.string "It appears to be undergoing\n"
 	.string "adjustments…$"
 
-@ Unused
-gText_SorryTradeCenterInspections::
-	.string "I'm terribly sorry. The Trade Center\n"
-	.string "is undergoing inspections.$"
-
-@ Unused
-gText_SorryRecordCornerPreparation::
-	.string "I'm terribly sorry. The Record Corner\n"
-	.string "is under preparation.$"
-
 gText_PlayerHandedOverTheItem::
 	.string "{PLAYER} handed over the\n"
 	.string "{STR_VAR_1}.$"
@@ -977,11 +948,6 @@ EventScript_SelectWithoutRegisteredItem::
 	.include "data/scripts/field_poison.inc"
 
 Common_EventScript_NopReturn::
-	return
-
-@ Unused
-EventScript_CableClub_SetVarResult1::
-	setvar VAR_RESULT, 1
 	return
 
 EventScript_CableClub_SetVarResult0::

@@ -153,27 +153,33 @@ script MauvilleCity_BikeShop_EventScript_Rydel {
 	faceplayer
 	if (flag(FLAG_RECEIVED_BIKE))
 	{
+		speakername (CommonText_Rydel)
 		msgbox(format("I hope you're enjoying the bikes!\pTake a look at the books in the back if you need help using them."))
 		release
 		end
 	}
 	if (!flag(FLAG_DECLINED_BIKE))
 	{
+		speakername (CommonText_Rydel)
 		msgbox("Well, well, what have we here?\nA most energetic customer!\pMe? You may call me Rydel.\nI'm the owner of this cycle shop.")
 	}
-	msgbox ("Rydel: Your Running Shoes…\nThey're awfully filthy.\pDid you come from far away?", MSGBOX_YESNO)
+		speakername (CommonText_Rydel)
+	msgbox ("Your Running Shoes…\nThey're awfully filthy.\pDid you come from far away?", MSGBOX_YESNO)
 	if (var(VAR_RESULT) == YES)
 	{
-		msgbox ("Rydel: Hm, hm… … … … …\pYou're saying that you came all this\nway from Littleroot?\pMy goodness!\nThat's ridiculously far!\pIf you had one of my Bikes, you could\ngo anywhere easily while feeling the\lgentle caress of the wind!\pI'll tell you what!\nI'll give you a Bike!\pOh, wait a second!\pI forgot to tell you that there are\ntwo kinds of Bikes!\pThey are the Mach Bike and\nthe Acro Bike!\pThe Mach Bike is for cyclists who want\nto feel the wind with their bodies!\pAnd an Acro Bike is for those who\nprefer technical rides!\pI'm a real sweetheart, so you can have both Bikes!")
+		speakername (CommonText_Rydel)
+		msgbox ("Hm, hm… … … … …\pYou're saying that you came all this\nway from Littleroot?\pMy goodness!\nThat's ridiculously far!\pIf you had one of my Bikes, you could\ngo anywhere easily while feeling the\lgentle caress of the wind!\pI'll tell you what!\nI'll give you a Bike!\pOh, wait a second!\pI forgot to tell you that there are\ntwo kinds of Bikes!\pThey are the Mach Bike and\nthe Acro Bike!\pThe Mach Bike is for cyclists who want\nto feel the wind with their bodies!\pAnd an Acro Bike is for those who\nprefer technical rides!\pI'm a real sweetheart, so you can have both Bikes!")
 		giveitem (ITEM_ACRO_BIKE)
 		giveitem (ITEM_MACH_BIKE)
 		setflag (FLAG_RECEIVED_BIKE)
-		msgbox (format("Rydel: Enjoy! And if you need any help, the books in the back should be useful."))
+		speakername (CommonText_Rydel)
+		msgbox (format("Enjoy! And if you need any help, the books in the back should be useful."))
 	}
 	else
 	{
 		setflag (FLAG_DECLINED_BIKE)
-		msgbox ("Rydel: Is that right?\pThen, I guess you have no need for\nany of my Bikes.")
+		speakername (CommonText_Rydel)
+		msgbox ("Is that right?\pThen, I guess you have no need for\nany of my Bikes.")
 	}
 	release
 	end

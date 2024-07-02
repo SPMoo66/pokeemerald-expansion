@@ -221,8 +221,8 @@ MtPyre_Summit_EventScript_ArchieMaxieReturnOrbs::
 	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_MaxieApproachArchie1
 	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_MaxieApproachArchie2
 	delay 30
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieExit
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_ArchieExit
+	applymovement LOCALID_ARCHIE, Common_Movement_WalkDown6
+	applymovement LOCALID_MAXIE, Common_Movement_WalkDown6
 	waitmovement 0
 	removeobject LOCALID_ARCHIE
 	removeobject LOCALID_MAXIE
@@ -232,22 +232,22 @@ MtPyre_Summit_EventScript_ArchieMaxieReturnOrbs::
 
 MtPyre_Summit_EventScript_ArchieMaxieBeginExit0::
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit0
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieExit
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_ArchieExit
+	applymovement LOCALID_ARCHIE, Common_Movement_WalkDown6
+	applymovement LOCALID_MAXIE, Common_Movement_WalkDown6
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_ArchieMaxieBeginExit1::
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit1
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieExit
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_ArchieExit
+	applymovement LOCALID_ARCHIE, Common_Movement_WalkDown6
+	applymovement LOCALID_MAXIE, Common_Movement_WalkDown6
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_ArchieMaxieBeginExit2::
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit2
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieExit
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_ArchieExit
+	applymovement LOCALID_ARCHIE, Common_Movement_WalkDown6
+	applymovement LOCALID_MAXIE, Common_Movement_WalkDown6
 	waitmovement 0
 	return
 
@@ -290,7 +290,7 @@ MtPyre_Summit_EventScript_MaxieApproachArchie1::
 
 MtPyre_Summit_EventScript_MaxieApproachArchie2::
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchMaxie
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie2
+	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie1
 	waitmovement 0
 	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
@@ -306,15 +306,6 @@ MtPyre_Summit_Movement_PlayerFaceMaxie:
 	delay_16
 	delay_16
 	walk_in_place_faster_left
-	step_end
-
-MtPyre_Summit_Movement_ArchieExit:
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
 	step_end
 
 MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit0:
@@ -383,13 +374,6 @@ MtPyre_Summit_Movement_MaxieApproachArchie0:
 	step_end
 
 MtPyre_Summit_Movement_MaxieApproachArchie1:
-	walk_down
-	walk_down
-	walk_down
-	walk_in_place_faster_left
-	step_end
-
-MtPyre_Summit_Movement_MaxieApproachArchie2:
 	walk_down
 	walk_down
 	walk_down

@@ -56,7 +56,7 @@ script SouthernIsland_Interior_EventScript_TryLatiEncounter {
 	else {
 		setflag (FLAG_TEMP_2)
 		special (SpawnCameraObject)
-		applymovement (OBJ_EVENT_ID_CAMERA, SouthernIsland_Interior_Movement_CameraPanUp)
+		applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp3)
 		waitmovement (0)
 		delay (50)
 		waitse
@@ -101,10 +101,6 @@ script SouthernIsland_Interior_EventScript_TryLatiEncounter {
 	releaseall
 }
 
-
-movement SouthernIsland_Interior_Movement_CameraPanUp {
-	walk_up * 3
-}
 
 movement SouthernIsland_Interior_Movement_CameraPanDown {
 	delay_16 * 7

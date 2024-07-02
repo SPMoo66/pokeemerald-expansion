@@ -84,12 +84,12 @@ FallarborTown_BattleTentBattleRoom_EventScript_IncrementBattleNum::
 	frontier_set FRONTIER_DATA_BATTLE_NUM, VAR_RESULT
 	switch VAR_RESULT
 	case 3, FallarborTown_BattleTentBattleRoom_EventScript_WarpToLobbyWon
-	applymovement LOCALID_OPPONENT, FallarborTown_BattleTentBattleRoom_Movement_OpponentExit
+	applymovement LOCALID_OPPONENT, Common_Movement_WalkUp4
 	waitmovement 0
 	removeobject LOCALID_OPPONENT
 	applymovement LOCALID_ATTENDANT, FallarborTown_BattleTentBattleRoom_Movement_AttendantApproachPlayer
 	waitmovement 0
-	applymovement LOCALID_PLAYER, FallarborTown_BattleTentBattleRoom_Movement_PlayerFaceAttendant
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox BattleFrontier_BattleArenaBattleRoom_Text_MonsWillBeRestored, MSGBOX_DEFAULT
 	special LoadPlayerParty
@@ -128,7 +128,7 @@ FallarborTown_BattleTentBattleRoom_EventScript_ContinueChallenge::
 	closemessage
 	applymovement LOCALID_ATTENDANT, FallarborTown_BattleTentBattleRoom_Movement_AttendantReturnToPos
 	waitmovement 0
-	applymovement LOCALID_PLAYER, FallarborTown_BattleTentBattleRoom_Movement_PlayerFaceBattle
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	goto FallarborTown_BattleTentBattleRoom_EventScript_NextOpponentEnter
 	waitstate
@@ -170,7 +170,7 @@ FallarborTown_BattleTentBattleRoom_EventScript_PauseChallenge::
 FallarborTown_BattleTentBattleRoom_EventScript_ResumeChallenge::
 	applymovement LOCALID_ATTENDANT, FallarborTown_BattleTentBattleRoom_Movement_AttendantApproachPlayer
 	waitmovement 0
-	applymovement LOCALID_PLAYER, FallarborTown_BattleTentBattleRoom_Movement_PlayerFaceAttendant
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	goto FallarborTown_BattleTentBattleRoom_EventScript_AskContinueChallenge
 	end
@@ -182,27 +182,12 @@ FallarborTown_BattleTentBattleRoom_Movement_PlayerEnter:
 	walk_in_place_faster_right
 	step_end
 
-FallarborTown_BattleTentBattleRoom_Movement_PlayerFaceBattle:
-	walk_in_place_faster_right
-	step_end
-
-FallarborTown_BattleTentBattleRoom_Movement_PlayerFaceAttendant:
-	walk_in_place_faster_left
-	step_end
-
 FallarborTown_BattleTentBattleRoom_Movement_OpponentEnter:
 	walk_down
 	walk_down
 	walk_down
 	walk_down
 	walk_in_place_faster_left
-	step_end
-
-FallarborTown_BattleTentBattleRoom_Movement_OpponentExit:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
 	step_end
 
 FallarborTown_BattleTentBattleRoom_Movement_AttendantJump:

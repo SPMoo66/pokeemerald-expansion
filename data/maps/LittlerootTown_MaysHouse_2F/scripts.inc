@@ -93,7 +93,7 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMayNorth::
 	return
 
 LittlerootTown_MaysHouse_2F_EventScript_MeetMaySouth::
-	applymovement LOCALID_RIVAL, LittlerootTown_MaysHouse_2F_Movement_MayApproachPlayerSouth
+	applymovement LOCALID_RIVAL, Common_Movement_WalkRight3
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
@@ -164,12 +164,6 @@ LittlerootTown_MaysHouse_2F_Movement_PlayerWatchMayNorth:
 	delay_16
 	delay_16
 	walk_in_place_faster_right
-	step_end
-
-LittlerootTown_MaysHouse_2F_Movement_MayApproachPlayerSouth:
-	walk_right
-	walk_right
-	walk_right
 	step_end
 
 LittlerootTown_MaysHouse_2F_Movement_MayWalkToPCSouth:

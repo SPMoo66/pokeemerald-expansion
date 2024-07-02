@@ -11,13 +11,13 @@ FallarborTown_BattleTentCorridor_OnFrame:
 FallarborTown_BattleTentCorridor_EventScript_EnterCorridor::
 	lockall
 	setvar VAR_TEMP_0, 1
-	applymovement LOCALID_ATTENDANT, FallarborTown_BattleTentCorridor_Movement_WalkToDoor
-	applymovement OBJ_EVENT_ID_PLAYER, FallarborTown_BattleTentCorridor_Movement_WalkToDoor
+	applymovement LOCALID_ATTENDANT, Common_Movement_WalkUp4
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp4
 	waitmovement 0
 	opendoor 2, 1
 	waitdooranim
-	applymovement LOCALID_ATTENDANT, FallarborTown_BattleTentCorridor_Movement_AttendantEnterDoor
-	applymovement OBJ_EVENT_ID_PLAYER, FallarborTown_BattleTentCorridor_Movement_PlayerEnterDoor
+	applymovement LOCALID_ATTENDANT, Common_Movement_EnterHouse
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
 	waitmovement 0
 	closedoor 2, 1
 	waitdooranim
@@ -26,17 +26,3 @@ FallarborTown_BattleTentCorridor_EventScript_EnterCorridor::
 	waitstate
 	releaseall
 	end
-
-FallarborTown_BattleTentCorridor_Movement_WalkToDoor:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-FallarborTown_BattleTentCorridor_Movement_PlayerEnterDoor:
-	walk_up
-FallarborTown_BattleTentCorridor_Movement_AttendantEnterDoor:
-	walk_up
-	set_invisible
-	step_end

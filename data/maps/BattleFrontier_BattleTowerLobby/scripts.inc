@@ -620,28 +620,17 @@ BattleFrontier_BattleTowerLobby_EventScript_WalkToElevator::
 	closemessage
 	call BattleFrontier_BattleTowerLobby_EventScript_SetAttendantTalkedTo
 	call BattleFrontier_BattleTowerLobby_EventScript_GetDoorXCoord
-	applymovement VAR_LAST_TALKED, BattleFrontier_BattleTowerLobby_Movement_WalkToElevator
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleTowerLobby_Movement_WalkToElevator
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkUp3
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp3
 	waitmovement 0
 	opendoor VAR_0x8004, 1
 	waitdooranim
-	applymovement VAR_LAST_TALKED, BattleFrontier_BattleTowerLobby_Movement_AttendantEnterElevator
+	applymovement VAR_LAST_TALKED, Common_Movement_EnterHouse
 	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleTowerLobby_Movement_PlayerEnterElevator
 	waitmovement 0
 	closedoor VAR_0x8004, 1
 	waitdooranim
 	return
-
-BattleFrontier_BattleTowerLobby_Movement_WalkToElevator:
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-BattleFrontier_BattleTowerLobby_Movement_AttendantEnterElevator:
-	walk_up
-	set_invisible
-	step_end
 
 BattleFrontier_BattleTowerLobby_Movement_PlayerEnterElevator:
 	walk_up

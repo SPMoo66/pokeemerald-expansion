@@ -54,12 +54,15 @@ PetalburgCity_EventScript_WallyTutorial::
 	applymovement LOCALID_WALLY, PetalburgCity_Movement_WallyTutorialWally
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_WallyTutorialPlayer
 	waitmovement 0
+	speakername (CommonText_Wally)
 	msgbox Route102_Text_WatchMeCatchPokemon, MSGBOX_DEFAULT
 	special StartWallyTutorialBattle
 	waitstate
+	speakername (CommonText_Wally)
 	msgbox Route102_Text_WallyIDidIt, MSGBOX_DEFAULT
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterLeft, MAP_PETALBURG_CITY
 	waitmovement LOCALID_WALLY, MAP_PETALBURG_CITY
+	speakername (CommonText_Wally)
 	msgbox Route102_Text_LetsGoBack, MSGBOX_DEFAULT
 	closemessage
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
@@ -83,7 +86,7 @@ PetalburgCity_EventScript_WalkToWallyHouse::
 	setvar VAR_0x8005, 5
 	opendoor VAR_0x8004, VAR_0x8005
 	waitdooranim
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Movement_WalkInsideHouseWallysDad
+	applymovement LOCALID_WALLYS_DAD, Common_Movement_EnterHouse
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
 	waitmovement 0
 	setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_DAD
@@ -150,11 +153,6 @@ PetalburgCity_Movement_WalkToWallyHouseWallysDad:
 	walk_up
 	walk_up
 	walk_up
-	step_end
-
-PetalburgCity_Movement_WalkInsideHouseWallysDad:
-	walk_up
-	set_invisible
 	step_end
 
 PetalburgCity_Movement_WallyTutorialPlayer:
@@ -310,7 +308,7 @@ PetalburgCity_EventScript_BoyApproachPlayer0::
 	return
 
 PetalburgCity_EventScript_BoyApproachPlayer1::
-	applymovement LOCALID_GYM_BOY, PetalburgCity_Movement_BoyApproachPlayer1
+	applymovement LOCALID_GYM_BOY, Common_Movement_WalkRight2
 	waitmovement 0
 	return
 
@@ -357,11 +355,6 @@ PetalburgCity_Movement_BoyApproachPlayer0:
 	walk_right
 	walk_right
 	walk_in_place_faster_up
-	step_end
-
-PetalburgCity_Movement_BoyApproachPlayer1:
-	walk_right
-	walk_right
 	step_end
 
 PetalburgCity_Movement_BoyApproachPlayer2:
@@ -535,14 +528,14 @@ PetalburgCity_EventScript_Scott3::
 	end
 
 PetalburgCity_EventScript_Scott::
-	applymovement LOCALID_SCOTT, PetalburgCity_Movement_ScottStartWalkLeft
+	applymovement LOCALID_SCOTT, Common_Movement_WalkLeft4
 	waitmovement 0
 	playse SE_PIN
 	applymovement LOCALID_SCOTT, Common_Movement_ExclamationMark
 	waitmovement 0
 	applymovement LOCALID_SCOTT, Common_Movement_Delay48
 	waitmovement 0
-	applymovement LOCALID_SCOTT, PetalburgCity_Movement_ScottStartWalkLeft
+	applymovement LOCALID_SCOTT, Common_Movement_WalkLeft4
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
@@ -594,13 +587,6 @@ PetalburgCity_EventScript_ScottExit3::
 	applymovement LOCALID_SCOTT, PetalburgCity_Movement_ScottExit3
 	waitmovement 0
 	return
-
-PetalburgCity_Movement_ScottStartWalkLeft:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
 
 PetalburgCity_Movement_ScottExit0:
 	walk_down
@@ -773,7 +759,7 @@ script Rival_Scene02 {
 		applymovement (RIVAL, Common_Movement_ExclamationMark)
 		waitmovement (0)
 		delay (60)
-		applymovement (RIVAL, Rival_Scene02_Move1)
+		applymovement (RIVAL, Common_Movement_WalkRight2)
 		waitmovement (0)
 		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
 		switch (var(VAR_TEMP_1)) {
@@ -788,7 +774,7 @@ script Rival_Scene02 {
 				waitmovement (0)
 			default:
 		}
-		applymovement (RIVAL, Rival_Scene02_Move1)
+		applymovement (RIVAL, Common_Movement_WalkRight2)
 		waitmovement (0)
 		call (GetRivalForNameBox)
 		switch (var(VAR_EMERALBODY_RIVAL)) {
@@ -811,7 +797,7 @@ script Rival_Scene02 {
 			applymovement (RIVAL, Common_Movement_WalkDown)
 			waitmovement (0)
 		}
-		applymovement (RIVAL, Rival_Scene02_Move2)
+		applymovement (RIVAL, Common_Movement_WalkLeft7)
 		waitmovement (0)
 		removeobject (RIVAL)
 	}
@@ -819,10 +805,3 @@ script Rival_Scene02 {
 	end
 }
 
-movement Rival_Scene02_Move1 {
-	walk_right * 2
-}
-
-movement Rival_Scene02_Move2 {
-	walk_left * 7
-}

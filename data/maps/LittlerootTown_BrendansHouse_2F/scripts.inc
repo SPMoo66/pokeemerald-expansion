@@ -94,7 +94,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanNorth::
 	return
 
 LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanSouth::
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanApproachPlayerSouth
+	applymovement LOCALID_RIVAL, Common_Movement_WalkLeft3
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
@@ -164,12 +164,6 @@ LittlerootTown_BrendansHouse_2F_Movement_PlayerWatchBrendanNorth:
 	delay_16
 	delay_16
 	walk_in_place_faster_left
-	step_end
-
-LittlerootTown_BrendansHouse_2F_Movement_BrendanApproachPlayerSouth:
-	walk_left
-	walk_left
-	walk_left
 	step_end
 
 LittlerootTown_BrendansHouse_2F_Movement_BrendanWalkToPCSouth:

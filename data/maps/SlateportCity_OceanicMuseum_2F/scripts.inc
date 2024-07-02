@@ -17,7 +17,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	applymovement LOCALID_GRUNT_1, SlateportCity_OceanicMuseum_2F_Movement_FirstGruntEnter
 	waitmovement 0
 	addobject LOCALID_GRUNT_2
-	applymovement LOCALID_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_SecondGruntEnter
+	applymovement LOCALID_GRUNT_2, Common_Movement_WalkDown
 	waitmovement 0
 	applymovement LOCALID_GRUNT_1, SlateportCity_OceanicMuseum_2F_Movement_FirstGruntApproach
 	applymovement LOCALID_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_SecondGruntApproach
@@ -30,7 +30,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	msgbox SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou, MSGBOX_DEFAULT
 	msgbox SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_GruntApproachToBattle
+	applymovement LOCALID_GRUNT_2, Common_Movement_WalkRight
 	waitmovement 0
 	call_if_eq VAR_FACING, DIR_SOUTH, SlateportCity_OceanicMuseum_2F_EventScript_PlayerApproachGruntSouth
 	call_if_eq VAR_FACING, DIR_WEST, SlateportCity_OceanicMuseum_2F_EventScript_PlayerApproachGruntWest
@@ -39,7 +39,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	closemessage
 	applymovement LOCALID_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_GruntDefeated
 	waitmovement 0
-	applymovement LOCALID_GRUNT_1, SlateportCity_OceanicMuseum_2F_Movement_GruntApproachToBattle
+	applymovement LOCALID_GRUNT_1, Common_Movement_WalkRight
 	waitmovement 0
 	msgbox SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GRUNT_MUSEUM_2, SlateportCity_OceanicMuseum_2F_Text_Grunt2Defeat
@@ -58,7 +58,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	speakername (CommonText_Q)
 	msgbox SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_ARCHIE, SlateportCity_OceanicMuseum_2F_Movement_ArchieApproachPlayer
+	applymovement LOCALID_ARCHIE, Common_Movement_WalkRight
 	waitmovement 0
 	speakername (CommonText_Archie)
 	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchieWarning, MSGBOX_DEFAULT
@@ -134,10 +134,6 @@ SlateportCity_OceanicMuseum_2F_Movement_PlayerApproachGruntWest:
 	walk_in_place_faster_left
 	step_end
 
-SlateportCity_OceanicMuseum_2F_Movement_ArchieApproachPlayer:
-	walk_right
-	step_end
-
 SlateportCity_OceanicMuseum_2F_Movement_ArchieEnter:
 	walk_down
 	walk_down
@@ -147,10 +143,6 @@ SlateportCity_OceanicMuseum_2F_Movement_ArchieEnter:
 	walk_right
 	walk_right
 	walk_right
-	walk_right
-	step_end
-
-SlateportCity_OceanicMuseum_2F_Movement_GruntApproachToBattle:
 	walk_right
 	step_end
 
@@ -173,10 +165,6 @@ SlateportCity_OceanicMuseum_2F_Movement_GruntDefeated:
 	lock_facing_direction
 	walk_left
 	unlock_facing_direction
-	step_end
-
-SlateportCity_OceanicMuseum_2F_Movement_SecondGruntEnter:
-	walk_down
 	step_end
 
 SlateportCity_OceanicMuseum_2F_Movement_SecondGruntApproach:

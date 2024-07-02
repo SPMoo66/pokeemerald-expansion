@@ -134,7 +134,7 @@ LavaridgeTown_EventScript_RivalApproachPlayer1::
 	return
 
 LavaridgeTown_EventScript_RivalApproachPlayer2::
-	applymovement LOCALID_RIVAL, LavaridgeTown_Movement_RivalApproachPlayer2
+	applymovement LOCALID_RIVAL, Common_Movement_WalkLeft6
 	waitmovement 0
 	return
 
@@ -178,15 +178,6 @@ LavaridgeTown_Movement_RivalExit1:
 	walk_fast_right
 	walk_fast_right
 	walk_fast_right
-	step_end
-
-LavaridgeTown_Movement_RivalApproachPlayer2:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
 	step_end
 
 LavaridgeTown_Movement_RivalApproachPlayer1:

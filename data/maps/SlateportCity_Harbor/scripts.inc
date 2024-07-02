@@ -100,7 +100,7 @@ SlateportCity_Harbor_EventScript_SternApproachPlayer1::
 	return
 
 SlateportCity_Harbor_EventScript_SternApproachPlayer::
-	applymovement LOCALID_CAPT_STERN, SlateportCity_Harbor_Movement_SternApproachPlayer
+	applymovement LOCALID_CAPT_STERN, Common_Movement_WalkLeft3
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
@@ -141,12 +141,6 @@ SlateportCity_Harbor_Movement_SternApproachPlayer1:
 	walk_left
 	walk_left
 	walk_up
-	walk_left
-	step_end
-
-SlateportCity_Harbor_Movement_SternApproachPlayer:
-	walk_left
-	walk_left
 	walk_left
 	step_end
 

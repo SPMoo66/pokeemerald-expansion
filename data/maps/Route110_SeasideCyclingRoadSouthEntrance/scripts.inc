@@ -35,14 +35,10 @@ Route110_SeasideCyclingRoadSouthEntrance_EventScript_OnMachBike::
 Route110_SeasideCyclingRoadSouthEntrance_EventScript_NoBike::
 	msgbox Route110_SeasideCyclingRoadSouthEntrance_Text_TooDangerousToWalk, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Route110_SeasideCyclingRoadSouthEntrance_Movement_PushPlayerBackFromCounter
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft
 	waitmovement 0
 	releaseall
 	end
-
-Route110_SeasideCyclingRoadSouthEntrance_Movement_PushPlayerBackFromCounter:
-	walk_left
-	step_end
 
 Route110_SeasideCyclingRoadSouthEntrance_EventScript_ClearCyclingRoad::
 	lockall

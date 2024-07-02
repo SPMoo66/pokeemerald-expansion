@@ -65,7 +65,7 @@ VerdanturfTown_BattleTentBattleRoom_EventScript_DefeatedOpponent::
 	frontier_set FRONTIER_DATA_BATTLE_NUM, VAR_RESULT
 	switch VAR_RESULT
 	case 3, VerdanturfTown_BattleTentBattleRoom_EventScript_WarpToLobbyWon
-	applymovement LOCALID_OPPONENT, VerdanturfTown_BattleTentBattleRoom_Movement_OpponentExit
+	applymovement LOCALID_OPPONENT, Common_Movement_WalkUp4
 	waitmovement 0
 	removeobject LOCALID_OPPONENT
 	applymovement LOCALID_ATTENDANT, Common_Movement_WalkInPlaceFasterDown
@@ -136,7 +136,7 @@ VerdanturfTown_BattleTentBattleRoom_EventScript_SetUpObjects::
 	hideobjectat LOCALID_PLAYER, MAP_VERDANTURF_TOWN_BATTLE_TENT_BATTLE_ROOM
 	call VerdanturfTown_BattleTentBattleRoom_EventScript_SetPlayerGfx
 	setvar VAR_TEMP_1, 1
-	applymovement OBJ_EVENT_ID_PLAYER, VerdanturfTown_BattleTentBattleRoom_Movement_SetInvisible
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_SetInvisible
 	removeobject LOCALID_OPPONENT
 	end
 
@@ -149,10 +149,6 @@ VerdanturfTown_BattleTentBattleRoom_EventScript_ReadyFor3rdOpponent::
 	message BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor3rdOpponent
 	waitmessage
 	return
-
-VerdanturfTown_BattleTentBattleRoom_Movement_SetInvisible:
-	set_invisible
-	step_end
 
 VerdanturfTown_BattleTentBattleRoom_Movement_PlayerEnter:
 	set_visible
@@ -168,12 +164,5 @@ VerdanturfTown_BattleTentBattleRoom_Movement_OpponentEnter:
 	walk_down
 	walk_down
 	face_left
-	step_end
-
-VerdanturfTown_BattleTentBattleRoom_Movement_OpponentExit:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
 	step_end
 

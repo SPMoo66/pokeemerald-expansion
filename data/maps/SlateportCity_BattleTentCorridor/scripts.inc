@@ -28,7 +28,7 @@ SlateportCity_BattleTentCorridor_EventScript_EnterCorridor::
 	goto_if_eq VAR_0x8006, 1, SlateportCity_BattleTentCorridor_EventScript_ReturnToRoomFromBattle
 	setvar VAR_TEMP_0, 1
 	applymovement LOCALID_ATTENDANT, SlateportCity_BattleTentCorridor_Movement_AttendantEnter
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_BattleTentCorridor_Movement_PlayerEnter
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp4
 	waitmovement 0
 	goto_if_eq VAR_0x8006, 2, SlateportCity_BattleTentCorridor_EventScript_ResumeChallenge
 	slateporttent_generaterentalmons
@@ -44,7 +44,7 @@ SlateportCity_BattleTentCorridor_EventScript_EnterBattleRoom::
 	waitmovement 0
 	opendoor 2, 1
 	waitdooranim
-	applymovement LOCALID_ATTENDANT, SlateportCity_BattleTentCorridor_Movement_AttendantExit
+	applymovement LOCALID_ATTENDANT, Common_Movement_EnterHouse
 	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_BattleTentCorridor_Movement_PlayerExit
 	waitmovement 0
 	closedoor 2, 1
@@ -127,13 +127,6 @@ SlateportCity_BattleTentCorridor_EventScript_ResumeChallenge::
 	factory_setparties 0
 	goto SlateportCity_BattleTentCorridor_EventScript_AskReadyForOpponent
 
-SlateportCity_BattleTentCorridor_Movement_PlayerEnter:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
 SlateportCity_BattleTentCorridor_Movement_PlayerExit:
 	walk_up
 	walk_up
@@ -146,9 +139,4 @@ SlateportCity_BattleTentCorridor_Movement_AttendantEnter:
 	walk_up
 	walk_up
 	walk_in_place_faster_down
-	step_end
-
-SlateportCity_BattleTentCorridor_Movement_AttendantExit:
-	walk_up
-	set_invisible
 	step_end

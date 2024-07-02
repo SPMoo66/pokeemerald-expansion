@@ -19,10 +19,10 @@ BattleFrontier_OutsideWest_OnTransition:
 BattleFrontier_OutsideWest_EventScript_FerryAttendant::
 	lock
 	faceplayer
-	msgbox BattleFrontier_OutsideWest_Text_MayISeeYourTicket, MSGBOX_DEFAULT
+	msgbox SlateportCity_Harbor_Text_MayISeeYourTicket, MSGBOX_DEFAULT
 	checkitem ITEM_SS_TICKET
 	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_OutsideWest_EventScript_NoSSTicket
-	message BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo
+	message SlateportCity_Harbor_Text_FlashedTicketWhereTo
 	waitmessage
 	goto BattleFrontier_OutsideWest_EventScript_ChooseFerryDestination
 	end
@@ -37,14 +37,14 @@ BattleFrontier_OutsideWest_EventScript_ChooseFerryDestination::
 	end
 
 BattleFrontier_OutsideWest_EventScript_NoSSTicket::
-	msgbox BattleFrontier_OutsideWest_Text_MustHaveTicketToBoard, MSGBOX_DEFAULT
+	msgbox SlateportCity_Harbor_Text_YouMustHaveTicket, MSGBOX_DEFAULT
 	release
 	end
 
 BattleFrontier_OutsideWest_EventScript_FerryToSlateport::
-	msgbox BattleFrontier_OutsideWest_Text_SlateportItIs, MSGBOX_YESNO
+	msgbox LilycoveCity_Harbor_Text_SlateportItIs, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_OutsideWest_EventScript_ChooseNewFerryDestination
-	msgbox BattleFrontier_OutsideWest_Text_PleaseBoardFerry, MSGBOX_DEFAULT
+	msgbox SlateportCity_Harbor_Text_PleaseBoardFerry, MSGBOX_DEFAULT
 	call BattleFrontier_OutsideWest_EventScript_BoardFerry
 	warp MAP_SLATEPORT_CITY_HARBOR, 8, 11
 	waitstate
@@ -52,9 +52,9 @@ BattleFrontier_OutsideWest_EventScript_FerryToSlateport::
 	end
 
 BattleFrontier_OutsideWest_EventScript_FerryToLilycove::
-	msgbox BattleFrontier_OutsideWest_Text_LilycoveItIs, MSGBOX_YESNO
+	msgbox SlateportCity_Harbor_Text_LilycoveItIs, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_OutsideWest_EventScript_ChooseNewFerryDestination
-	msgbox BattleFrontier_OutsideWest_Text_PleaseBoardFerry, MSGBOX_DEFAULT
+	msgbox SlateportCity_Harbor_Text_PleaseBoardFerry, MSGBOX_DEFAULT
 	call BattleFrontier_OutsideWest_EventScript_BoardFerry
 	warp MAP_LILYCOVE_CITY_HARBOR, 8, 11
 	waitstate
@@ -62,7 +62,7 @@ BattleFrontier_OutsideWest_EventScript_FerryToLilycove::
 	end
 
 BattleFrontier_OutsideWest_EventScript_ChooseNewFerryDestination::
-	message BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo
+	message SlateportCity_Harbor_Text_WhereWouldYouLikeToGo
 	waitmessage
 	goto BattleFrontier_OutsideWest_EventScript_ChooseFerryDestination
 	end
@@ -78,7 +78,7 @@ BattleFrontier_OutsideWest_EventScript_BoardFerry::
 	return
 
 BattleFrontier_OutsideWest_EventScript_CancelFerrySelect::
-	msgbox BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime, MSGBOX_DEFAULT
+	msgbox SlateportCity_Harbor_Text_SailAnotherTime, MSGBOX_DEFAULT
 	release
 	end
 
@@ -303,37 +303,6 @@ BattleFrontier_OutsideWest_Text_BattleFactorySign:
 BattleFrontier_OutsideWest_Text_BattlePikeSign:
 	.string "This is the Battle Pike!\n"
 	.string "Choose one of three paths!$"
-
-BattleFrontier_OutsideWest_Text_MayISeeYourTicket:
-	.string "Hello, are you here for the ferry?\n"
-	.string "May I see your Ticket?$"
-
-BattleFrontier_OutsideWest_Text_MustHaveTicketToBoard:
-	.string "{PLAYER} doesn't have the Ticket…\p"
-	.string "I'm terribly sorry.\p"
-	.string "You must have a Ticket to board\n"
-	.string "the ferry.$"
-
-BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo:
-	.string "{PLAYER} flashed the Ticket.\p"
-	.string "Perfect! That's all you need!\p"
-	.string "And where would you like to go?$"
-
-BattleFrontier_OutsideWest_Text_SlateportItIs:
-	.string "Slateport City it is, then!$"
-
-BattleFrontier_OutsideWest_Text_LilycoveItIs:
-	.string "Lilycove City it is, then!$"
-
-BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime:
-	.string "Please sail with us another time!$"
-
-BattleFrontier_OutsideWest_Text_PleaseBoardFerry:
-	.string "Please board the ferry and wait for\n"
-	.string "departure.$"
-
-BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo:
-	.string "Then, where would you like to go?$"
 
 BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends:
 	.string "I'm the best out of all my friends.\n"

@@ -145,7 +145,7 @@ DewfordTown_EventScript_SailToPetalburg::
 	waitmovement 0
 	showobjectat OBJ_EVENT_ID_PLAYER, MAP_ROUTE104
 	call Common_EventScript_StopBrineysBoatMusic
-	applymovement OBJ_EVENT_ID_PLAYER, DewfordTown_Movement_ExitBoatPetalburg
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp3
 	waitmovement 0
 	showobjectat OBJ_EVENT_ID_PLAYER, MAP_ROUTE104
 	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
@@ -582,12 +582,6 @@ DewfordTown_Movement_SailToSlateport:
 
 DewfordTown_Movement_PlayerBoardBoat:
 	walk_right
-	walk_up
-	step_end
-
-DewfordTown_Movement_ExitBoatPetalburg:
-	walk_up
-	walk_up
 	walk_up
 	step_end
 

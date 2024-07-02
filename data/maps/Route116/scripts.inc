@@ -71,7 +71,7 @@ Route116_EventScript_GiveRepeatBall::
 	end
 
 Route116_EventScript_DevonEmployeeExit::
-	applymovement VAR_LAST_TALKED, Route116_Movement_DevonEmployeeExit
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkLeft8
 	waitmovement 0
 	return
 
@@ -89,17 +89,6 @@ Route116_EventScript_NoRoomForRepeatBall::
 	msgbox Route116_Text_BagIsJamPacked, MSGBOX_DEFAULT
 	release
 	end
-
-Route116_Movement_DevonEmployeeExit:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
 
 Route116_Movement_DevonEmployeeExitEast:
 	walk_down
@@ -182,7 +171,7 @@ Route116_EventScript_GlassesManExit::
 	end
 
 Route116_EventScript_GlassesManExitNormal::
-	applymovement VAR_LAST_TALKED, Route116_Movement_GlassesManExit
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkLeft9
 	waitmovement 0
 	return
 
@@ -190,18 +179,6 @@ Route116_EventScript_GlassesManExitEast::
 	applymovement VAR_LAST_TALKED, Route116_Movement_GlassesManExitEast
 	waitmovement 0
 	return
-
-Route116_Movement_GlassesManExit:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
 
 Route116_Movement_GlassesManExitEast:
 	walk_up

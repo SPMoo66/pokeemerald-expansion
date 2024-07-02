@@ -24,7 +24,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	addobject VAR_0x8004
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	applymovement VAR_0x8004, SeafloorCavern_Room9_Movement_ArchieApproachPlayer
+	applymovement VAR_0x8004, Common_Movement_WalkRight7
 	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_ArchieSoItWasYou, MSGBOX_DEFAULT
 	applymovement VAR_0x8004, Common_Movement_WalkInPlaceFasterUp
@@ -118,7 +118,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	msgbox SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty, MSGBOX_DEFAULT
 	msgbox SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue, MSGBOX_DEFAULT
 	closemessage
-	applymovement VAR_0x8005, SeafloorCavern_Room9_Movement_MaxieExit
+	applymovement VAR_0x8005, Common_Movement_WalkRight2
 	applymovement VAR_0x8004, SeafloorCavern_Room9_Movement_ArchieExit
 	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_MaxieComeOnPlayer, MSGBOX_DEFAULT
@@ -149,16 +149,6 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	waitstate
 	releaseall
 	end
-
-SeafloorCavern_Room9_Movement_ArchieApproachPlayer:
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	step_end
 
 SeafloorCavern_Room9_Movement_ArchieListenMessage:
 	walk_left
@@ -197,11 +187,6 @@ SeafloorCavern_Room9_Movement_MaxieArrive:
 	walk_fast_right
 	walk_fast_right
 	walk_fast_right
-	step_end
-
-SeafloorCavern_Room9_Movement_MaxieExit:
-	walk_right
-	walk_right
 	step_end
 
 SeafloorCavern_Room9_Movement_MagmaGruntArrive:

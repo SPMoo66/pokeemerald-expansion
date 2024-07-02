@@ -206,7 +206,7 @@ BattleFrontier_BattleArenaLobby_EventScript_WalkToDoorLv50::
 	waitmovement 0
 	opendoor 2, 2
 	waitdooranim
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantEnterDoor
+	applymovement LOCALID_ATTENDANT, Common_Movement_EnterHouse
 	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerEnterDoor
 	waitmovement 0
 	closedoor 2, 2
@@ -223,11 +223,6 @@ BattleFrontier_BattleArenaLobby_Movement_AttendantWalkToLeftDoor:
 	walk_left
 	walk_left
 	walk_up
-	step_end
-
-BattleFrontier_BattleArenaLobby_Movement_AttendantEnterDoor:
-	walk_up
-	set_invisible
 	step_end
 
 BattleFrontier_BattleArenaLobby_Movement_PlayerWalkToLeftDoor:
@@ -255,7 +250,7 @@ BattleFrontier_BattleArenaLobby_EventScript_WalkToDoorLvOpen::
 	waitmovement 0
 	opendoor 11, 2
 	waitdooranim
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantEnterDoor
+	applymovement LOCALID_ATTENDANT, Common_Movement_EnterHouse
 	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerEnterDoor
 	waitmovement 0
 	closedoor 11, 2

@@ -118,7 +118,7 @@ BattleFrontier_BattleArenaBattleRoom_EventScript_DefeatedOpponent::
 	switch VAR_RESULT
 	case 7, BattleFrontier_BattleArenaBattleRoom_EventScript_ReturnToLobbyWon
 	applymovement LOCALID_PLAYER, BattleFrontier_BattleArenaBattleRoom_Movement_PlayerWalkBackToLine
-	applymovement LOCALID_OPPONENT, BattleFrontier_BattleArenaBattleRoom_Movement_OpponentExit
+	applymovement LOCALID_OPPONENT, Common_Movement_WalkRight7
 	waitmovement 0
 	removeobject LOCALID_OPPONENT
 	applymovement LOCALID_ATTENDANT, Common_Movement_WalkInPlaceFasterDown
@@ -427,16 +427,6 @@ BattleFrontier_BattleArenaBattleRoom_Movement_GretaEnter:
 	walk_fast_left
 	step_end
 
-BattleFrontier_BattleArenaBattleRoom_Movement_OpponentExit:
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	step_end
-
 BattleFrontier_BattleArenaBattleRoom_Movement_JumpInPlaceDown:
 	disable_jump_landing_ground_effect
 	jump_in_place_down
@@ -455,7 +445,7 @@ BattleFrontier_BattleArenaBattleRoom_EventScript_SetUpRoomObjects::
 	hideobjectat LOCALID_PLAYER, MAP_BATTLE_FRONTIER_BATTLE_ARENA_BATTLE_ROOM
 	removeobject LOCALID_OPPONENT
 	call BattleFrontier_BattleDomeBattleRoom_EventScript_SetPlayerGfx
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_SetInvisible
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_SetInvisible
 	setvar VAR_TEMP_1, 1
 	end
 

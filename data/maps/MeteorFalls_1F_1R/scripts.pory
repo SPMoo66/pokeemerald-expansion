@@ -109,7 +109,7 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 			addobject (LOCALID_AQUA_GRUNT_1)
 			addobject (LOCALID_AQUA_GRUNT_2)
 			playbgm (MUS_ENCOUNTER_AQUA, FALSE)
-			applymovement (LOCALID_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieArrive)
+			applymovement (LOCALID_ARCHIE, Common_Movement_WalkRight6)
 			applymovement (LOCALID_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGruntArrive)
 			applymovement (LOCALID_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGruntArrive)
 			waitmovement (0)
@@ -168,7 +168,7 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 					"an eye out for Team Magma, too.\p"
 					"Farewell!")
 			closemessage
-			applymovement (LOCALID_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieExit)
+			applymovement (LOCALID_ARCHIE, Common_Movement_WalkRight7)
 			applymovement (LOCALID_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1Exit)
 			applymovement (LOCALID_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2Exit)
 			waitmovement (0)
@@ -204,7 +204,7 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 			}
 			giveitem (ITEM_SUPER_ROD)
 			closemessage
-			applymovement (LOCALID_RIVAL, MeteorFalls_1F_1R_Movement_ArchieExit)
+			applymovement (LOCALID_RIVAL, Common_Movement_WalkRight7)
 			waitmovement (0)
 			removeobject (LOCALID_RIVAL)
 			releaseall
@@ -227,18 +227,10 @@ movement MeteorFalls_1F_1R_Movement_CourtneyExit {
 	walk_fast_right * 7
 }
 
-movement MeteorFalls_1F_1R_Movement_ArchieArrive {
-	walk_right * 6
-}
-
 movement MeteorFalls_1F_1R_Movement_AquaGruntArrive {
 	delay_16
 	delay_16
 	walk_right * 5
-}
-
-movement MeteorFalls_1F_1R_Movement_ArchieExit {
-	walk_right * 7
 }
 
 movement MeteorFalls_1F_1R_Movement_ArchieApproachPlayer {

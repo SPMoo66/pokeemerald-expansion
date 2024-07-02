@@ -31,7 +31,7 @@ SootopolisCity_MysteryEventsHouse_1F_OnFrame:
 
 SootopolisCity_MysteryEventsHouse_1F_EventScript_OldManCommentOnBattle::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, SootopolisCity_MysteryEventsHouse_1F_Movement_PlayerExitStairs
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
 	waitmovement 0
 	applymovement LOCALID_OLD_MAN, SootopolisCity_MysteryEventsHouse_1F_Movement_OldManWalkBehindPlayer
 	waitmovement 0
@@ -57,10 +57,6 @@ SootopolisCity_MysteryEventsHouse_1F_EventScript_BattleLostComment::
 SootopolisCity_MysteryEventsHouse_1F_EventScript_BattleTiedComment::
 	msgbox SootopolisCity_MysteryEventsHouse_1F_Text_BrilliantStandoff, MSGBOX_DEFAULT
 	return
-
-SootopolisCity_MysteryEventsHouse_1F_Movement_PlayerExitStairs:
-	walk_down
-	step_end
 
 SootopolisCity_MysteryEventsHouse_1F_Movement_OldManWalkBehindPlayer:
 	walk_right

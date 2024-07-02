@@ -42,7 +42,7 @@ AquaHideout_B2F_EventScript_SubmarineEscape::
 	msgbox AquaHideout_B2F_Text_OurBossGotThroughHisPreparations, MSGBOX_DEFAULT
 	closemessage
 	applymovement VAR_0x8008, Common_Movement_WalkInPlaceFasterLeft
-	applymovement VAR_0x8009, AquaHideout_B2F_Movement_SumbarineDepartLeft
+	applymovement VAR_0x8009, Common_Movement_WalkLeft4
 	waitmovement 0
 	removeobject VAR_0x8009
 	delay 20
@@ -53,13 +53,6 @@ AquaHideout_B2F_EventScript_SubmarineEscape::
 	setflag FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS
 	release
 	end
-
-AquaHideout_B2F_Movement_SumbarineDepartLeft:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
 
 AquaHideout_B2F_EventScript_Grunt4::
 	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_4, AquaHideout_B2F_Text_Grunt4Intro, AquaHideout_B2F_Text_Grunt4Defeat, AquaHideout_B2F_EventScript_Grunt4Defeated

@@ -294,7 +294,7 @@ RusturfTunnel_EventScript_Grunt::
 	removeobject LOCALID_GRUNT
 	delay 50
 	addobject LOCALID_BRINEY
-	applymovement LOCALID_BRINEY, RusturfTunnel_Movement_BrineyApproachPeeko1
+	applymovement LOCALID_BRINEY, Common_Movement_WalkRight7
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, RusturfTunnel_Movement_PlayerMoveAsideForBriney
 	applymovement LOCALID_BRINEY, RusturfTunnel_Movement_BrineyApproachPeeko2
@@ -313,7 +313,7 @@ RusturfTunnel_EventScript_Grunt::
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, RusturfTunnel_Movement_PlayerWatchBrineyExit
 	applymovement LOCALID_BRINEY, RusturfTunnel_Movement_BrineyExit
-	applymovement LOCALID_PEEKO, RusturfTunnel_Movement_PeekoExit
+	applymovement LOCALID_PEEKO, Common_Movement_WalkLeft9
 	waitmovement 0
 	removeobject LOCALID_BRINEY
 	removeobject LOCALID_PEEKO
@@ -350,16 +350,6 @@ RusturfTunnel_Movement_GruntEscape:
 	walk_fast_left
 	step_end
 
-RusturfTunnel_Movement_BrineyApproachPeeko1:
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	step_end
-
 RusturfTunnel_Movement_BrineyExit:
 	walk_left
 	walk_left
@@ -384,18 +374,6 @@ RusturfTunnel_Movement_PlayerWatchBrineyExit:
 RusturfTunnel_Movement_BrineyApproachPeeko2:
 	delay_16
 	walk_right
-	step_end
-
-RusturfTunnel_Movement_PeekoExit:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
 	step_end
 
 RusturfTunnel_EventScript_Mike::

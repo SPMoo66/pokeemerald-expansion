@@ -90,12 +90,12 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_Draw::
 	playse SE_M_ENCORE2
 	call BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround
 	delay 60
-	applymovement LOCALID_REFEREE, BattleFrontier_BattleDomeBattleRoom_Movement_RefereeEnter
+	applymovement LOCALID_REFEREE, Common_Movement_WalkRight4
 	waitmovement 0
 	applymovement LOCALID_ANNOUNCER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 180
-	applymovement LOCALID_REFEREE, BattleFrontier_BattleDomeBattleRoom_Movement_RefereeExit
+	applymovement LOCALID_REFEREE, Common_Movement_WalkLeft4
 	waitmovement 0
 	goto_if_eq VAR_TEMP_2, DRAW_TUCKER, BattleFrontier_BattleDomeBattleRoom_EventScript_LostToOpponent @ Tucker always wins on a draw
 	dome_compareseeds
@@ -384,7 +384,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_BattleTuckerSilver::
 	frontier_getsymbols
 	goto_if_ne VAR_RESULT, 0, BattleFrontier_BattleDomeBattleRoom_EventScript_WonTourney
 	closemessage
-	applymovement LOCALID_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_TuckerApproachPlayer
+	applymovement LOCALID_OPPONENT, Common_Movement_WalkLeft2
 	waitmovement 0
 	msgbox BattleFrontier_BattleDomeBattleRoom_Text_SeeYourFrontierPass, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_SYMBOL
@@ -412,7 +412,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_BattleTuckerGold::
 	frontier_getsymbols
 	goto_if_eq VAR_RESULT, 2, BattleFrontier_BattleDomeBattleRoom_EventScript_WonTourney
 	closemessage
-	applymovement LOCALID_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_TuckerApproachPlayer
+	applymovement LOCALID_OPPONENT, Common_Movement_WalkLeft2
 	waitmovement 0
 	msgbox BattleFrontier_BattleDomeBattleRoom_Text_NeverLostWhenPowerUnleashed, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_SYMBOL
@@ -466,7 +466,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_SetUpObjects::
 	call BattleFrontier_BattleDomeBattleRoom_EventScript_AddAudience
 	call BattleFrontier_BattleDomeBattleRoom_EventScript_SetPlayerGfx
 	setvar VAR_TEMP_1, 1
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_SetInvisible
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_SetInvisible
 	frontier_get FRONTIER_DATA_BATTLE_NUM
 	goto_if_ne VAR_RESULT, DOME_FINAL, BattleFrontier_BattleDomeBattleRoom_EventScript_EndSetUpObjects
 	frontier_getbrainstatus
@@ -571,10 +571,6 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_AddFinalAudience::
 	createvobject OBJ_EVENT_GFX_MART_EMPLOYEE, 30, 6, 2
 	createvobject OBJ_EVENT_GFX_WOMAN_5, 31, 8, 2
 	return
-
-BattleFrontier_BattleDomeBattleRoom_Movement_SetInvisible:
-	set_invisible
-	step_end
 
 BattleFrontier_BattleDomeBattleRoom_Movement_PlayerEnter:
 	set_visible
@@ -762,11 +758,6 @@ BattleFrontier_BattleDomeBattleRoom_Movement_AnnouncerMoveForTuckerEntrance:
 	walk_in_place_faster_down
 	step_end
 
-BattleFrontier_BattleDomeBattleRoom_Movement_TuckerApproachPlayer:
-	walk_left
-	walk_left
-	step_end
-
 BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround::
 	turnvobject 0, DIR_EAST
 	turnvobject 2, DIR_EAST
@@ -889,20 +880,6 @@ BattleFrontier_BattleDomeBattleRoom_Movement_AudienceMemberWalkToSeat:
 	walk_right
 	walk_right
 	walk_in_place_faster_down
-	step_end
-
-BattleFrontier_BattleDomeBattleRoom_Movement_RefereeEnter:
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	step_end
-
-BattleFrontier_BattleDomeBattleRoom_Movement_RefereeExit:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
 	step_end
 
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerHasEnteredDome:

@@ -86,7 +86,7 @@ LilycoveCity_ContestLobby_EventScript_ConfirmDontTakePainting::
 LilycoveCity_ContestLobby_EventScript_ReceivedArtistRibbon::
 	incrementgamestat GAME_STAT_RECEIVED_RIBBONS
 	special BufferContestWinnerMonName
-	applymovement LOCALID_ARTIST, LilycoveCity_ContestLobby_Movement_ArtistBeginToExit
+	applymovement LOCALID_ARTIST, Common_Movement_WalkDown3
 	waitmovement 0
 	playse SE_PIN
 	applymovement LOCALID_ARTIST, Common_Movement_ExclamationMark
@@ -95,9 +95,9 @@ LilycoveCity_ContestLobby_EventScript_ReceivedArtistRibbon::
 	waitmovement 0
 	msgbox LilycoveCity_ContestLobby_Text_TakeMementoOfPainting, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_ITEM
-	msgbox LilycoveCity_ContestLobby_Text_ReceivedARibbon, MSGBOX_DEFAULT
+	msgbox ContestHall_Text_ReceivedRibbon, MSGBOX_DEFAULT
 	waitfanfare
-	msgbox LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon, MSGBOX_DEFAULT
+	msgbox ContestHall_Text_PutRibbonOnMon, MSGBOX_DEFAULT
 	msgbox LilycoveCity_ContestLobby_Text_OkaySeeYou, MSGBOX_DEFAULT
 	closemessage
 	return
@@ -171,12 +171,6 @@ LilycoveCity_ContestLobby_Movement_ArtistApproachPlayer:
 	walk_right
 	step_end
 
-LilycoveCity_ContestLobby_Movement_ArtistBeginToExit:
-	walk_down
-	walk_down
-	walk_down
-	step_end
-
 LilycoveCity_ContestLobby_Movement_ArtistReturnToPlayer:
 	delay_16
 	delay_16
@@ -240,7 +234,7 @@ LilycoveCity_ContestLobby_EventScript_ReceivedLinkArtistRibbon::
 	incrementgamestat GAME_STAT_RECEIVED_RIBBONS
 	setflag FLAG_SYS_RIBBON_GET
 	special BufferContestWinnerMonName
-	applymovement LOCALID_ARTIST_LINK, LilycoveCity_ContestLobby_Movement_ArtistBeginToExit
+	applymovement LOCALID_ARTIST_LINK, Common_Movement_WalkDown3
 	waitmovement 0
 	playse SE_PIN
 	applymovement LOCALID_ARTIST_LINK, Common_Movement_ExclamationMark
@@ -249,9 +243,9 @@ LilycoveCity_ContestLobby_EventScript_ReceivedLinkArtistRibbon::
 	waitmovement 0
 	msgbox LilycoveCity_ContestLobby_Text_TakeMementoOfPainting, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_ITEM
-	msgbox LilycoveCity_ContestLobby_Text_ReceivedARibbon, MSGBOX_DEFAULT
+	msgbox ContestHall_Text_ReceivedRibbon, MSGBOX_DEFAULT
 	waitfanfare
-	msgbox LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon, MSGBOX_DEFAULT
+	msgbox ContestHall_Text_PutRibbonOnMon, MSGBOX_DEFAULT
 	msgbox LilycoveCity_ContestLobby_Text_OkaySeeYou, MSGBOX_DEFAULT
 	closemessage
 	return
@@ -975,13 +969,6 @@ LilycoveCity_ContestLobby_Text_TakeMementoOfPainting:
 	.string "Oh, that's right!\p"
 	.string "As a memento of me painting your\n"
 	.string "Pokémon, please take this.$"
-
-LilycoveCity_ContestLobby_Text_ReceivedARibbon:
-	.string "{PLAYER} received a Ribbon.$"
-
-LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon:
-	.string "{PLAYER} put the Ribbon on\n"
-	.string "{STR_VAR_1}.$"
 
 LilycoveCity_ContestLobby_Text_OkaySeeYou:
 	.string "Okay, see you!$"

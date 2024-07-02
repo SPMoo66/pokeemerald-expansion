@@ -28,7 +28,7 @@ TerraCave_End_EventScript_Groudon::
 	lockall
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
-	applymovement LOCALID_GROUDON, TerraCave_End_Movement_GroudonApproach
+	applymovement LOCALID_GROUDON, MarineCave_End_Movement_KyogreApproach
 	waitmovement 0
 	waitse
 	playmoncry SPECIES_GROUDON, CRY_MODE_ENCOUNTER
@@ -60,15 +60,4 @@ TerraCave_End_EventScript_RanFromGroudon::
 	setvar VAR_0x8004, SPECIES_GROUDON
 	goto Common_EventScript_LegendaryFlewAway
 	end
-
-TerraCave_End_Movement_GroudonApproach:
-	init_affine_anim
-	walk_down_start_affine
-	delay_16
-	delay_16
-	walk_down_affine
-	delay_16
-	delay_16
-	walk_down_affine
-	step_end
 

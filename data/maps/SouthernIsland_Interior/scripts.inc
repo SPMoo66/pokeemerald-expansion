@@ -90,7 +90,7 @@ SouthernIsland_Interior_EventScript_TryLatiEncounter::
 # 58 "data/maps/SouthernIsland_Interior/scripts.pory"
 	special SpawnCameraObject
 # 59 "data/maps/SouthernIsland_Interior/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, SouthernIsland_Interior_Movement_CameraPanUp
+	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp3
 # 60 "data/maps/SouthernIsland_Interior/scripts.pory"
 	waitmovement 0
 # 61 "data/maps/SouthernIsland_Interior/scripts.pory"
@@ -175,64 +175,54 @@ SouthernIsland_Interior_EventScript_TryLatiEncounter_14:
 
 
 # 105 "data/maps/SouthernIsland_Interior/scripts.pory"
-SouthernIsland_Interior_Movement_CameraPanUp:
-# 106 "data/maps/SouthernIsland_Interior/scripts.pory"
-	walk_up
-# 106 "data/maps/SouthernIsland_Interior/scripts.pory"
-	walk_up
-# 106 "data/maps/SouthernIsland_Interior/scripts.pory"
-	walk_up
-	step_end
-
-# 109 "data/maps/SouthernIsland_Interior/scripts.pory"
 SouthernIsland_Interior_Movement_CameraPanDown:
-# 110 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 106 "data/maps/SouthernIsland_Interior/scripts.pory"
 	delay_16
-# 110 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 106 "data/maps/SouthernIsland_Interior/scripts.pory"
 	delay_16
-# 110 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 106 "data/maps/SouthernIsland_Interior/scripts.pory"
 	delay_16
-# 110 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 106 "data/maps/SouthernIsland_Interior/scripts.pory"
 	delay_16
-# 110 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 106 "data/maps/SouthernIsland_Interior/scripts.pory"
 	delay_16
-# 110 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 106 "data/maps/SouthernIsland_Interior/scripts.pory"
 	delay_16
-# 110 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 106 "data/maps/SouthernIsland_Interior/scripts.pory"
 	delay_16
-# 111 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 107 "data/maps/SouthernIsland_Interior/scripts.pory"
 	walk_down
-# 111 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 107 "data/maps/SouthernIsland_Interior/scripts.pory"
 	walk_down
-# 111 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 107 "data/maps/SouthernIsland_Interior/scripts.pory"
 	walk_down
-# 112 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 108 "data/maps/SouthernIsland_Interior/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 115 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 111 "data/maps/SouthernIsland_Interior/scripts.pory"
 SouthernIsland_Interior_Movement_LatiApproach:
-# 116 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 112 "data/maps/SouthernIsland_Interior/scripts.pory"
 	walk_down
-# 116 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 112 "data/maps/SouthernIsland_Interior/scripts.pory"
 	walk_down
-# 116 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 112 "data/maps/SouthernIsland_Interior/scripts.pory"
 	walk_down
-# 116 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 112 "data/maps/SouthernIsland_Interior/scripts.pory"
 	walk_down
-# 116 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 112 "data/maps/SouthernIsland_Interior/scripts.pory"
 	walk_down
-# 117 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 113 "data/maps/SouthernIsland_Interior/scripts.pory"
 	delay_16
-# 117 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 113 "data/maps/SouthernIsland_Interior/scripts.pory"
 	delay_16
-# 118 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 114 "data/maps/SouthernIsland_Interior/scripts.pory"
 	walk_down
-# 118 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 114 "data/maps/SouthernIsland_Interior/scripts.pory"
 	walk_down
-# 118 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 114 "data/maps/SouthernIsland_Interior/scripts.pory"
 	walk_down
-# 118 "data/maps/SouthernIsland_Interior/scripts.pory"
+# 114 "data/maps/SouthernIsland_Interior/scripts.pory"
 	walk_down
 	step_end
 

@@ -109,18 +109,13 @@ BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_EnterElevator::
 	end
 
 BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_MoveToElevator::
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleTowerMultiPartnerRoom_Movement_AttendantEnterElevator
+	applymovement LOCALID_ATTENDANT, Common_Movement_EnterHouse
 	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleTowerMultiPartnerRoom_Movement_PlayerEnterElevator
 	waitmovement 0
 	return
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Movement_PlayerEnterElevator:
 	walk_up
-	walk_up
-	set_invisible
-	step_end
-
-BattleFrontier_BattleTowerMultiPartnerRoom_Movement_AttendantEnterElevator:
 	walk_up
 	set_invisible
 	step_end

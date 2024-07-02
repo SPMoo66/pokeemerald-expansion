@@ -26,7 +26,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_EventScript_EnterRoom::
 	goto_if_eq VAR_0x8006, 1, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_ReturnToRoomFromBattle
 	setvar VAR_TEMP_0, 1
 	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleFactoryPreBattleRoom_Movement_AttendantEnterRoom
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerEnterRoom
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp5
 	waitmovement 0
 	goto_if_eq VAR_0x8006, 2, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_ResumeChallenge
 	factory_generaterentalmons
@@ -66,7 +66,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_EventScript_ReturnToRoomFromBattle::
 	waitse
 	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_WaitFewMoments, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleFactoryPreBattleRoom_Movement_AttendantMoveToReceiveCall
+	applymovement LOCALID_ATTENDANT, Common_Movement_WalkLeft3
 	waitmovement 0
 	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_UnderstoodSirWillDo, MSGBOX_DEFAULT
 	closemessage
@@ -392,14 +392,6 @@ BattleFrontier_BattleFactoryPreBattleRoom_EventScript_WalkToBattleRoomLvOpen::
 	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerWalkToBattleRoomLvOpen
 	return
 
-BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerEnterRoom:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
 BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerWalkToBattleRoomLv50:
 	walk_up
 	walk_left
@@ -439,12 +431,6 @@ BattleFrontier_BattleFactoryPreBattleRoom_Movement_GuideWalkToBattleRoomLvOpen:
 	walk_up
 	walk_up
 	set_invisible
-	step_end
-
-BattleFrontier_BattleFactoryPreBattleRoom_Movement_AttendantMoveToReceiveCall:
-	walk_left
-	walk_left
-	walk_left
 	step_end
 
 BattleFrontier_BattleFactoryPreBattleRoom_Movement_AttendantReturnToPlayer:

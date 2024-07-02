@@ -30,11 +30,9 @@ LilycoveCity_Harbor_EventScript_FerryAttendant::
 	goto LilycoveCity_Harbor_EventScript_NoFirstTimeEventTickets
 	end
 
-@ First goto_if_eq is unnecessary; identical scripts
 LilycoveCity_Harbor_EventScript_NoFirstTimeEventTickets::
-	goto_if_eq VAR_TEMP_A, 0, LilycoveCity_Harbor_EventScript_NoEventTickets
-	msgbox LilycoveCity_Harbor_Text_MayISeeYourTicket, MSGBOX_DEFAULT
-	message LilycoveCity_Harbor_Text_FlashTicketWhereTo
+	msgbox SlateportCity_Harbor_Text_MayISeeYourTicket, MSGBOX_DEFAULT
+	message SlateportCity_Harbor_Text_FlashedTicketWhereTo
 	waitmessage
 	goto LilycoveCity_Harbor_EventScript_FerryRegularLocationSelect
 	end
@@ -94,7 +92,7 @@ LilycoveCity_Harbor_EventScript_GoToSlateport::
 	end
 
 LilycoveCity_Harbor_EventScript_GoToBattleFrontier::
-	msgbox LilycoveCity_Harbor_Text_BattleFrontierItIs, MSGBOX_YESNO
+	msgbox SlateportCity_Harbor_Text_BattleFrontierItIs, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_Harbor_EventScript_FerryDestinationChangeMind
 	call LilycoveCity_Harbor_EventScript_BoardFerry
 	warp MAP_BATTLE_FRONTIER_OUTSIDE_WEST, 19, 67
@@ -314,7 +312,7 @@ LilycoveCity_Harbor_EventScript_ExitFirstTimeTicketSailSelect::
 	waitmovement 0
 	showobjectat LOCALID_ATTENDANT, MAP_LILYCOVE_CITY_HARBOR
 	delay 30
-	msgbox LilycoveCity_Harbor_Text_SailAnotherTime, MSGBOX_DEFAULT
+	msgbox SlateportCity_Harbor_Text_SailAnotherTime, MSGBOX_DEFAULT
 	release
 	end
 
@@ -344,25 +342,18 @@ LilycoveCity_Harbor_EventScript_BoardFerryWithSailor::
 	return
 
 LilycoveCity_Harbor_EventScript_FerryUnavailable::
-	msgbox LilycoveCity_Harbor_Text_FerryUnavailable, MSGBOX_DEFAULT
+	msgbox SlateportCity_Harbor_Text_FerryServiceUnavailable, MSGBOX_DEFAULT
 	release
 	end
 
-LilycoveCity_Harbor_EventScript_NoEventTickets::
-	msgbox LilycoveCity_Harbor_Text_MayISeeYourTicket, MSGBOX_DEFAULT
-	message LilycoveCity_Harbor_Text_FlashTicketWhereTo
-	waitmessage
-	goto LilycoveCity_Harbor_EventScript_FerryRegularLocationSelect
-	end
-
 LilycoveCity_Harbor_EventScript_FerryDestinationChangeMind::
-	message LilycoveCity_Harbor_Text_WhereWouldYouLikeToGo
+	message SlateportCity_Harbor_Text_WhereWouldYouLikeToGo
 	waitmessage
 	goto LilycoveCity_Harbor_EventScript_FerryRegularLocationSelect
 	end
 
 LilycoveCity_Harbor_EventScript_BoardFerry::
-	msgbox LilycoveCity_Harbor_Text_PleaseBoard, MSGBOX_DEFAULT
+	msgbox SlateportCity_Harbor_Text_PleaseBoardFerry, MSGBOX_DEFAULT
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
@@ -387,7 +378,7 @@ LilycoveCity_Harbor_EventScript_PlayerBoardFerryNorth::
 	return
 
 LilycoveCity_Harbor_EventScript_ExitSailSelect::
-	msgbox LilycoveCity_Harbor_Text_SailAnotherTime, MSGBOX_DEFAULT
+	msgbox SlateportCity_Harbor_Text_SailAnotherTime, MSGBOX_DEFAULT
 	release
 	end
 
@@ -506,43 +497,8 @@ LilycoveCity_Harbor_Movement_SailorBoardWithBrineyEast:
 	set_invisible
 	step_end
 
-LilycoveCity_Harbor_Text_FerryUnavailable:
-	.string "I beg your pardon?\n"
-	.string "You're looking for a ship?\p"
-	.string "I'm sorry, the ferry service isn't\n"
-	.string "available at present…$"
-
-LilycoveCity_Harbor_Text_MayISeeYourTicket:
-	.string "Hello, are you here for the ferry?\n"
-	.string "May I see your Ticket?$"
-
-
-LilycoveCity_Harbor_Text_NoTicket:
-	.string "{PLAYER} doesn't have the Ticket…\p"
-	.string "I'm terribly sorry.\p"
-	.string "You must have a Ticket to board\n"
-	.string "the ferry.$"
-
-LilycoveCity_Harbor_Text_FlashTicketWhereTo:
-	.string "{PLAYER} flashed the Ticket.\p"
-	.string "Perfect! That's all you need!\p"
-	.string "And where would you like to go?$"
-
-LilycoveCity_Harbor_Text_SailAnotherTime:
-	.string "Please sail with us another time!$"
-
 LilycoveCity_Harbor_Text_SlateportItIs:
 	.string "Slateport City it is, then!$"
-
-LilycoveCity_Harbor_Text_BattleFrontierItIs:
-	.string "Battle Frontier it is, then!$"
-
-LilycoveCity_Harbor_Text_PleaseBoard:
-	.string "Please board the ferry and wait for\n"
-	.string "departure.$"
-
-LilycoveCity_Harbor_Text_WhereWouldYouLikeToGo:
-	.string "Then, where would you like to go?$"
 
 LilycoveCity_Harbor_Text_SailorFerryUnavailable:
 	.string "Until they finish making the ferry,\n"

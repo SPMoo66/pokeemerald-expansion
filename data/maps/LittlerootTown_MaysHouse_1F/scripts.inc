@@ -219,7 +219,7 @@ LittlerootTown_MaysHouse_1F_EventScript_MayApproachPlayer0::
 	return
 
 LittlerootTown_MaysHouse_1F_EventScript_MayApproachPlayer1::
-	applymovement LOCALID_RIVAL, LittlerootTown_MaysHouse_1F_Movement_MayApproachPlayer1
+	applymovement LOCALID_RIVAL, Common_Movement_WalkUp3
 	waitmovement 0
 	return
 
@@ -233,12 +233,6 @@ LittlerootTown_MaysHouse_1F_Movement_MayApproachPlayer0:
 	walk_left
 	walk_in_place_faster_up
 	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-LittlerootTown_MaysHouse_1F_Movement_MayApproachPlayer1:
 	walk_up
 	walk_up
 	walk_up

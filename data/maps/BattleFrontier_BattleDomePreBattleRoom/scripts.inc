@@ -156,7 +156,7 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_ContinueChallenge::
 	waitmovement 0
 	opendoor 5, 1
 	waitdooranim
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleDomePreBattleRoom_Movement_PlayerEnterDoor
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_EnterHouse
 	waitmovement 0
 	closedoor 5, 1
 	waitdooranim
@@ -253,11 +253,6 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_SemifinalsComplete::
 BattleFrontier_BattleDomePreBattleRoom_Movement_AttendantMoveAside:
 	walk_right
 	face_left
-	step_end
-
-BattleFrontier_BattleDomePreBattleRoom_Movement_PlayerEnterDoor:
-	walk_up
-	set_invisible
 	step_end
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForRound1:

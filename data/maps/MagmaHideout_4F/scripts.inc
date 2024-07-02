@@ -40,7 +40,7 @@ MagmaHideout_4F_EventScript_Maxie::
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
 	waitstate
-	applymovement LOCALID_GROUDON, MagmaHideout_4F_Movement_GroudonExit
+	applymovement LOCALID_GROUDON, SeafloorCavern_Room9_Movement_KyogreExit
 	waitmovement 0
 	removeobject LOCALID_GROUDON
 	delay 4
@@ -92,11 +92,6 @@ MagmaHideout_4F_Movement_GroudonApproach:
 	delay_16
 	delay_16
 	delay_16
-	step_end
-
-MagmaHideout_4F_Movement_GroudonExit:
-	slide_up
-	slide_up
 	step_end
 
 MagmaHideout_4F_Movement_MaxieLookAround:

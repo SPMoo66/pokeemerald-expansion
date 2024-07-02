@@ -77,7 +77,7 @@ SlateportCity_EventScript_ScottScene::
 	lockall
 	addobject LOCALID_SCOTT
 	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Movement_PlayerFaceScott
-	applymovement LOCALID_SCOTT, SlateportCity_Movement_ScottApproachPlayer
+	applymovement LOCALID_SCOTT, Common_Movement_WalkRight7
 	waitmovement 0
 	speakername (CommonText_Scott)
 	msgbox SlateportCity_Text_YouDroveTeamAquaAway, MSGBOX_DEFAULT
@@ -102,7 +102,7 @@ SlateportCity_EventScript_ScottScene::
 	speakername (CommonText_Scott)
 	msgbox SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SCOTT, SlateportCity_Movement_ScottExit
+	applymovement LOCALID_SCOTT, Common_Movement_WalkLeft8
 	waitmovement 0
 	removeobject LOCALID_SCOTT
 	setobjectxyperm LOCALID_SCOTT, 10, 12
@@ -117,27 +117,6 @@ SlateportCity_Movement_PlayerFaceScott:
 	delay_16
 	delay_8
 	walk_in_place_faster_left
-	step_end
-
-SlateportCity_Movement_ScottApproachPlayer:
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	step_end
-
-SlateportCity_Movement_ScottExit:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
 	step_end
 
 SlateportCity_EventScript_EnergyGuru::
@@ -919,7 +898,7 @@ SlateportCity_EventScript_ScottBattleTentScene::
 	msgbox SlateportCity_Text_TakingBattleTentChallenge, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Movement_PlayerWatchScottExit
-	applymovement LOCALID_SCOTT, SlateportCity_Movement_ScottExitAfterBattleTent
+	applymovement LOCALID_SCOTT, Common_Movement_WalkRight8
 	waitmovement 0
 	removeobject LOCALID_SCOTT
 	addvar VAR_SCOTT_STATE, 1
@@ -941,17 +920,6 @@ SlateportCity_Movement_PlayerWatchScottExit:
 SlateportCity_Movement_ScottExitBattleTent:
 	delay_8
 	walk_down
-	step_end
-
-SlateportCity_Movement_ScottExitAfterBattleTent:
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
 	step_end
 
 SlateportCity_EventScript_BerryCrushRankingsSign::

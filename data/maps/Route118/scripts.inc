@@ -195,7 +195,7 @@ Route118_EventScript_StevenExit2::
 # 98 "data/maps/Route118/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route118_Movement_PlayerWatchStevenExit
 # 99 "data/maps/Route118/scripts.pory"
-	applymovement LOCALID_STEVEN, Route118_Movement_StevenExit2
+	applymovement LOCALID_STEVEN, Common_Movement_WalkRight8
 # 100 "data/maps/Route118/scripts.pory"
 	waitmovement 0
 # 101 "data/maps/Route118/scripts.pory"
@@ -275,275 +275,253 @@ Route118_Movement_StevenExit1:
 # 138 "data/maps/Route118/scripts.pory"
 
 # 139 "data/maps/Route118/scripts.pory"
-Route118_Movement_StevenExit2:
-# 140 "data/maps/Route118/scripts.pory"
-	walk_right
-# 141 "data/maps/Route118/scripts.pory"
-	walk_right
-# 142 "data/maps/Route118/scripts.pory"
-	walk_right
-# 143 "data/maps/Route118/scripts.pory"
-	walk_right
-# 144 "data/maps/Route118/scripts.pory"
-	walk_right
-# 145 "data/maps/Route118/scripts.pory"
-	walk_right
-# 146 "data/maps/Route118/scripts.pory"
-	walk_right
-# 147 "data/maps/Route118/scripts.pory"
-	walk_right
-# 148 "data/maps/Route118/scripts.pory"
-	step_end
-# 149 "data/maps/Route118/scripts.pory"
-
-# 150 "data/maps/Route118/scripts.pory"
 Route118_EventScript_Rose::
-# 151 "data/maps/Route118/scripts.pory"
+# 140 "data/maps/Route118/scripts.pory"
 	trainerbattle_single TRAINER_ROSE_1, Route118_Text_RoseIntro, Route118_Text_RoseDefeat, Route118_EventScript_RegisterRose
-# 152 "data/maps/Route118/scripts.pory"
+# 141 "data/maps/Route118/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-# 153 "data/maps/Route118/scripts.pory"
+# 142 "data/maps/Route118/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route118_EventScript_RematchRose
-# 154 "data/maps/Route118/scripts.pory"
+# 143 "data/maps/Route118/scripts.pory"
 	msgbox Route118_Text_RosePostBattle, MSGBOX_DEFAULT
-# 155 "data/maps/Route118/scripts.pory"
+# 144 "data/maps/Route118/scripts.pory"
 	release
-# 156 "data/maps/Route118/scripts.pory"
+# 145 "data/maps/Route118/scripts.pory"
 	end
-# 157 "data/maps/Route118/scripts.pory"
+# 146 "data/maps/Route118/scripts.pory"
 
-# 158 "data/maps/Route118/scripts.pory"
+# 147 "data/maps/Route118/scripts.pory"
 Route118_EventScript_RegisterRose::
-# 159 "data/maps/Route118/scripts.pory"
+# 148 "data/maps/Route118/scripts.pory"
 	special PlayerFaceTrainerAfterBattle
-# 160 "data/maps/Route118/scripts.pory"
+# 149 "data/maps/Route118/scripts.pory"
 	waitmovement 0
-# 161 "data/maps/Route118/scripts.pory"
+# 150 "data/maps/Route118/scripts.pory"
 	msgbox Route118_Text_RoseRegister, MSGBOX_DEFAULT
-# 162 "data/maps/Route118/scripts.pory"
+# 151 "data/maps/Route118/scripts.pory"
 	register_matchcall TRAINER_ROSE_1
-# 163 "data/maps/Route118/scripts.pory"
+# 152 "data/maps/Route118/scripts.pory"
 	release
-# 164 "data/maps/Route118/scripts.pory"
+# 153 "data/maps/Route118/scripts.pory"
 	end
-# 165 "data/maps/Route118/scripts.pory"
+# 154 "data/maps/Route118/scripts.pory"
 
-# 166 "data/maps/Route118/scripts.pory"
+# 155 "data/maps/Route118/scripts.pory"
 Route118_EventScript_RematchRose::
-# 167 "data/maps/Route118/scripts.pory"
+# 156 "data/maps/Route118/scripts.pory"
 	trainerbattle_rematch TRAINER_ROSE_1, Route118_Text_RoseRematchIntro, Route118_Text_RoseRematchDefeat
-# 168 "data/maps/Route118/scripts.pory"
+# 157 "data/maps/Route118/scripts.pory"
 	msgbox Route118_Text_RosePostRematch, MSGBOX_AUTOCLOSE
-# 169 "data/maps/Route118/scripts.pory"
+# 158 "data/maps/Route118/scripts.pory"
 	end
-# 170 "data/maps/Route118/scripts.pory"
+# 159 "data/maps/Route118/scripts.pory"
 
-# 171 "data/maps/Route118/scripts.pory"
+# 160 "data/maps/Route118/scripts.pory"
 Route118_EventScript_Barny::
-# 172 "data/maps/Route118/scripts.pory"
+# 161 "data/maps/Route118/scripts.pory"
 	trainerbattle_single TRAINER_BARNY, Route118_Text_BarnyIntro, Route118_Text_BarnyDefeat
-# 173 "data/maps/Route118/scripts.pory"
+# 162 "data/maps/Route118/scripts.pory"
 	msgbox Route118_Text_BarnyPostBattle, MSGBOX_AUTOCLOSE
-# 174 "data/maps/Route118/scripts.pory"
+# 163 "data/maps/Route118/scripts.pory"
 	end
-# 175 "data/maps/Route118/scripts.pory"
+# 164 "data/maps/Route118/scripts.pory"
 
-# 176 "data/maps/Route118/scripts.pory"
+# 165 "data/maps/Route118/scripts.pory"
 Route118_EventScript_Wade::
-# 177 "data/maps/Route118/scripts.pory"
+# 166 "data/maps/Route118/scripts.pory"
 	trainerbattle_single TRAINER_WADE, Route118_Text_WadeIntro, Route118_Text_WadeDefeat
-# 178 "data/maps/Route118/scripts.pory"
+# 167 "data/maps/Route118/scripts.pory"
 	msgbox Route118_Text_WadePostBattle, MSGBOX_AUTOCLOSE
-# 179 "data/maps/Route118/scripts.pory"
+# 168 "data/maps/Route118/scripts.pory"
 	end
-# 180 "data/maps/Route118/scripts.pory"
+# 169 "data/maps/Route118/scripts.pory"
 
-# 181 "data/maps/Route118/scripts.pory"
+# 170 "data/maps/Route118/scripts.pory"
 Route118_EventScript_Dalton::
-# 182 "data/maps/Route118/scripts.pory"
+# 171 "data/maps/Route118/scripts.pory"
 	trainerbattle_single TRAINER_DALTON_1, Route118_Text_DaltonIntro, Route118_Text_DaltonDefeat, Route118_EventScript_RegisterDalton
-# 183 "data/maps/Route118/scripts.pory"
+# 172 "data/maps/Route118/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-# 184 "data/maps/Route118/scripts.pory"
+# 173 "data/maps/Route118/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route118_EventScript_RematchDalton
-# 185 "data/maps/Route118/scripts.pory"
+# 174 "data/maps/Route118/scripts.pory"
 	msgbox Route118_Text_DaltonPostBattle, MSGBOX_DEFAULT
-# 186 "data/maps/Route118/scripts.pory"
+# 175 "data/maps/Route118/scripts.pory"
 	release
-# 187 "data/maps/Route118/scripts.pory"
+# 176 "data/maps/Route118/scripts.pory"
 	end
-# 188 "data/maps/Route118/scripts.pory"
+# 177 "data/maps/Route118/scripts.pory"
 
-# 189 "data/maps/Route118/scripts.pory"
+# 178 "data/maps/Route118/scripts.pory"
 Route118_EventScript_RegisterDalton::
-# 190 "data/maps/Route118/scripts.pory"
+# 179 "data/maps/Route118/scripts.pory"
 	special PlayerFaceTrainerAfterBattle
-# 191 "data/maps/Route118/scripts.pory"
+# 180 "data/maps/Route118/scripts.pory"
 	waitmovement 0
-# 192 "data/maps/Route118/scripts.pory"
+# 181 "data/maps/Route118/scripts.pory"
 	msgbox Route118_Text_DaltonRegister, MSGBOX_DEFAULT
-# 193 "data/maps/Route118/scripts.pory"
+# 182 "data/maps/Route118/scripts.pory"
 	register_matchcall TRAINER_DALTON_1
-# 194 "data/maps/Route118/scripts.pory"
+# 183 "data/maps/Route118/scripts.pory"
 	release
-# 195 "data/maps/Route118/scripts.pory"
+# 184 "data/maps/Route118/scripts.pory"
 	end
-# 196 "data/maps/Route118/scripts.pory"
+# 185 "data/maps/Route118/scripts.pory"
 
-# 197 "data/maps/Route118/scripts.pory"
+# 186 "data/maps/Route118/scripts.pory"
 Route118_EventScript_RematchDalton::
-# 198 "data/maps/Route118/scripts.pory"
+# 187 "data/maps/Route118/scripts.pory"
 	trainerbattle_rematch TRAINER_DALTON_1, Route118_Text_DaltonRematchIntro, Route118_Text_DaltonRematchDefeat
-# 199 "data/maps/Route118/scripts.pory"
+# 188 "data/maps/Route118/scripts.pory"
 	msgbox Route118_Text_DaltonPostRematch, MSGBOX_AUTOCLOSE
-# 200 "data/maps/Route118/scripts.pory"
+# 189 "data/maps/Route118/scripts.pory"
 	end
-# 201 "data/maps/Route118/scripts.pory"
+# 190 "data/maps/Route118/scripts.pory"
 
-# 202 "data/maps/Route118/scripts.pory"
+# 191 "data/maps/Route118/scripts.pory"
 Route118_EventScript_Perry::
-# 203 "data/maps/Route118/scripts.pory"
+# 192 "data/maps/Route118/scripts.pory"
 	trainerbattle_single TRAINER_PERRY, Route118_Text_PerryIntro, Route118_Text_PerryDefeat
-# 204 "data/maps/Route118/scripts.pory"
+# 193 "data/maps/Route118/scripts.pory"
 	msgbox Route118_Text_PerryPostBattle, MSGBOX_AUTOCLOSE
-# 205 "data/maps/Route118/scripts.pory"
+# 194 "data/maps/Route118/scripts.pory"
 	end
-# 206 "data/maps/Route118/scripts.pory"
+# 195 "data/maps/Route118/scripts.pory"
 
-# 207 "data/maps/Route118/scripts.pory"
+# 196 "data/maps/Route118/scripts.pory"
 Route118_EventScript_Chester::
-# 208 "data/maps/Route118/scripts.pory"
+# 197 "data/maps/Route118/scripts.pory"
 	trainerbattle_single TRAINER_CHESTER, Route118_Text_ChesterIntro, Route118_Text_ChesterDefeat
-# 209 "data/maps/Route118/scripts.pory"
+# 198 "data/maps/Route118/scripts.pory"
 	msgbox Route118_Text_ChesterPostBattle, MSGBOX_AUTOCLOSE
-# 210 "data/maps/Route118/scripts.pory"
+# 199 "data/maps/Route118/scripts.pory"
 	end
-# 211 "data/maps/Route118/scripts.pory"
+# 200 "data/maps/Route118/scripts.pory"
 
-# 212 "data/maps/Route118/scripts.pory"
+# 201 "data/maps/Route118/scripts.pory"
 Route118_EventScript_Deandre::
-# 213 "data/maps/Route118/scripts.pory"
+# 202 "data/maps/Route118/scripts.pory"
 	trainerbattle_single TRAINER_DEANDRE, Route118_Text_DeandreIntro, Route118_Text_DeandreDefeat
-# 214 "data/maps/Route118/scripts.pory"
+# 203 "data/maps/Route118/scripts.pory"
 	msgbox Route118_Text_DeandrePostBattle, MSGBOX_AUTOCLOSE
-# 215 "data/maps/Route118/scripts.pory"
+# 204 "data/maps/Route118/scripts.pory"
 	end
-# 216 "data/maps/Route118/scripts.pory"
+# 205 "data/maps/Route118/scripts.pory"
 
-# 217 "data/maps/Route118/scripts.pory"
+# 206 "data/maps/Route118/scripts.pory"
 Route118_Text_StevenQuestions:
-# 218 "data/maps/Route118/scripts.pory"
+# 207 "data/maps/Route118/scripts.pory"
 	.string "Steven: Hi, {PLAYER}{KUN}!\p"
-# 219 "data/maps/Route118/scripts.pory"
+# 208 "data/maps/Route118/scripts.pory"
 	.string "It's me, Steven!\n"
-# 220 "data/maps/Route118/scripts.pory"
+# 209 "data/maps/Route118/scripts.pory"
 	.string "We met in the cave near Dewford.\p"
-# 221 "data/maps/Route118/scripts.pory"
+# 210 "data/maps/Route118/scripts.pory"
 	.string "Have you met many kinds of Pokémon\n"
-# 222 "data/maps/Route118/scripts.pory"
+# 211 "data/maps/Route118/scripts.pory"
 	.string "since I last saw you?\p"
-# 223 "data/maps/Route118/scripts.pory"
+# 212 "data/maps/Route118/scripts.pory"
 	.string "There are many, many kinds of Pokémon\n"
-# 224 "data/maps/Route118/scripts.pory"
+# 213 "data/maps/Route118/scripts.pory"
 	.string "in this wide world of ours.\p"
-# 225 "data/maps/Route118/scripts.pory"
+# 214 "data/maps/Route118/scripts.pory"
 	.string "If you wanted to raise only your\n"
-# 226 "data/maps/Route118/scripts.pory"
+# 215 "data/maps/Route118/scripts.pory"
 	.string "favorites, that's fine.\p"
-# 227 "data/maps/Route118/scripts.pory"
+# 216 "data/maps/Route118/scripts.pory"
 	.string "Perhaps you find it more fun to raise\n"
-# 228 "data/maps/Route118/scripts.pory"
+# 217 "data/maps/Route118/scripts.pory"
 	.string "all sorts of Pokémon.\p"
-# 229 "data/maps/Route118/scripts.pory"
+# 218 "data/maps/Route118/scripts.pory"
 	.string "As a Trainer of Pokémon,\n"
-# 230 "data/maps/Route118/scripts.pory"
+# 219 "data/maps/Route118/scripts.pory"
 	.string "what do you think?\p"
-# 231 "data/maps/Route118/scripts.pory"
+# 220 "data/maps/Route118/scripts.pory"
 	.string "Of course, it's not any of my business.\p"
-# 232 "data/maps/Route118/scripts.pory"
+# 221 "data/maps/Route118/scripts.pory"
 	.string "It would be nice if we were to meet\n"
-# 233 "data/maps/Route118/scripts.pory"
+# 222 "data/maps/Route118/scripts.pory"
 	.string "again somewhere.$"
+# 223 "data/maps/Route118/scripts.pory"
+
+# 224 "data/maps/Route118/scripts.pory"
+Route118_Text_TryYourLuckFishing:
+# 225 "data/maps/Route118/scripts.pory"
+	.string "Wherever there's water, try your luck\n"
+# 226 "data/maps/Route118/scripts.pory"
+	.string "at fishing.$"
+# 227 "data/maps/Route118/scripts.pory"
+
+# 228 "data/maps/Route118/scripts.pory"
+Route118_Text_CanCrossRiversWithSurf:
+# 229 "data/maps/Route118/scripts.pory"
+	.string "Even if there isn't a boat, you can\n"
+# 230 "data/maps/Route118/scripts.pory"
+	.string "cross rivers and the sea if you have\l"
+# 231 "data/maps/Route118/scripts.pory"
+	.string "a Pokémon that knows Surf.\p"
+# 232 "data/maps/Route118/scripts.pory"
+	.string "Pokémon can be counted on to do so\n"
+# 233 "data/maps/Route118/scripts.pory"
+	.string "much!$"
 # 234 "data/maps/Route118/scripts.pory"
 
 # 235 "data/maps/Route118/scripts.pory"
-Route118_Text_TryYourLuckFishing:
+Route118_Text_RouteSignMauville:
 # 236 "data/maps/Route118/scripts.pory"
-	.string "Wherever there's water, try your luck\n"
+	.string "Route 118\n"
 # 237 "data/maps/Route118/scripts.pory"
-	.string "at fishing.$"
+	.string "{LEFT_ARROW} Mauville City$"
 # 238 "data/maps/Route118/scripts.pory"
 
 # 239 "data/maps/Route118/scripts.pory"
-Route118_Text_CanCrossRiversWithSurf:
-# 240 "data/maps/Route118/scripts.pory"
-	.string "Even if there isn't a boat, you can\n"
-# 241 "data/maps/Route118/scripts.pory"
-	.string "cross rivers and the sea if you have\l"
-# 242 "data/maps/Route118/scripts.pory"
-	.string "a Pokémon that knows Surf.\p"
-# 243 "data/maps/Route118/scripts.pory"
-	.string "Pokémon can be counted on to do so\n"
-# 244 "data/maps/Route118/scripts.pory"
-	.string "much!$"
-# 245 "data/maps/Route118/scripts.pory"
-
-# 246 "data/maps/Route118/scripts.pory"
-Route118_Text_RouteSignMauville:
-# 247 "data/maps/Route118/scripts.pory"
-	.string "Route 118\n"
-# 248 "data/maps/Route118/scripts.pory"
-	.string "{LEFT_ARROW} Mauville City$"
-# 249 "data/maps/Route118/scripts.pory"
-
-# 250 "data/maps/Route118/scripts.pory"
 Route118_Text_RouteSign119:
-# 251 "data/maps/Route118/scripts.pory"
+# 240 "data/maps/Route118/scripts.pory"
 	.string "Route 118\n"
-# 252 "data/maps/Route118/scripts.pory"
+# 241 "data/maps/Route118/scripts.pory"
 	.string "{UP_ARROW} Route 119$"
 
 Route118_EventScript_ChallengeBall1::
-# 256 "data/maps/Route118/scripts.pory"
+# 245 "data/maps/Route118/scripts.pory"
 	lock
-# 257 "data/maps/Route118/scripts.pory"
+# 246 "data/maps/Route118/scripts.pory"
 	msgbox Route118_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 258 "data/maps/Route118/scripts.pory"
+# 247 "data/maps/Route118/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route118_EventScript_ChallengeBall1_2
 Route118_EventScript_ChallengeBall1_1:
-# 271 "data/maps/Route118/scripts.pory"
+# 260 "data/maps/Route118/scripts.pory"
 	release
 	return
 
 Route118_EventScript_ChallengeBall1_2:
-# 259 "data/maps/Route118/scripts.pory"
+# 248 "data/maps/Route118/scripts.pory"
 	setflag FLAG_NO_CATCHING
-# 260 "data/maps/Route118/scripts.pory"
+# 249 "data/maps/Route118/scripts.pory"
 	setflag FLAG_NO_RUNNING
-# 261 "data/maps/Route118/scripts.pory"
+# 250 "data/maps/Route118/scripts.pory"
 	setflag FLAG_SMART_WILD_AI
-# 262 "data/maps/Route118/scripts.pory"
+# 251 "data/maps/Route118/scripts.pory"
 	settotemboost 1, 0, 1, 0, 0, 1
-# 263 "data/maps/Route118/scripts.pory"
+# 252 "data/maps/Route118/scripts.pory"
 	setwildbattle SPECIES_FEAROW, 33, ITEM_NONE, 2, SPECIES_ABSOL, 33, ITEM_NONE, 1, MOVE_FOCUS_ENERGY, MOVE_DRILL_RUN, MOVE_DRILL_PECK, MOVE_STEEL_WING, MOVE_NIGHT_SLASH, MOVE_DETECT, MOVE_SHADOW_CLAW, MOVE_THUNDER_WAVE
-# 264 "data/maps/Route118/scripts.pory"
+# 253 "data/maps/Route118/scripts.pory"
 	dowildbattle
-# 265 "data/maps/Route118/scripts.pory"
+# 254 "data/maps/Route118/scripts.pory"
 	clearflag FLAG_NO_CATCHING
-# 266 "data/maps/Route118/scripts.pory"
+# 255 "data/maps/Route118/scripts.pory"
 	clearflag FLAG_NO_RUNNING
-# 267 "data/maps/Route118/scripts.pory"
+# 256 "data/maps/Route118/scripts.pory"
 	clearflag FLAG_SMART_WILD_AI
-# 268 "data/maps/Route118/scripts.pory"
+# 257 "data/maps/Route118/scripts.pory"
 	finditem ITEM_SCOPE_LENS, 1
-# 269 "data/maps/Route118/scripts.pory"
+# 258 "data/maps/Route118/scripts.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route118_EventScript_ChallengeBall1_1
 
 
 Route118_EventScript_ChallengeBall1_Text_0:
-# 257 "data/maps/Route118/scripts.pory"
+# 246 "data/maps/Route118/scripts.pory"
 	.string "You sense enemies with sharp claws\n"
 	.string "ready to strike.\p"
 	.string "Reach out for the item?$"

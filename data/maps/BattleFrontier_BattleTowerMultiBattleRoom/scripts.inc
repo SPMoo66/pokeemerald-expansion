@@ -54,8 +54,8 @@ BattleFrontier_BattleTowerMultiBattleRoom_EventScript_EnterRoom::
 	waitmovement 0
 	frontier_get FRONTIER_DATA_BATTLE_NUM
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_OpponentsEnter
-	applymovement LOCALID_ATTENDANT_1, BattleFrontier_BattleTowerMultiBattleRoom_Movement_AttendantApproachPlayer
-	applymovement LOCALID_ATTENDANT_2, BattleFrontier_BattleTowerMultiBattleRoom_Movement_AttendantApproachPlayer
+	applymovement LOCALID_ATTENDANT_1, Common_Movement_WalkRight2
+	applymovement LOCALID_ATTENDANT_2, Common_Movement_WalkRight2
 	waitmovement 0
 	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
 	applymovement LOCALID_PARTNER, Common_Movement_FaceLeft
@@ -119,8 +119,8 @@ BattleFrontier_BattleTowerMultiBattleRoom_EventScript_DefeatedOpponents::
 	waitmovement 0
 	removeobject LOCALID_OPPONENT_1
 	removeobject LOCALID_OPPONENT_2
-	applymovement LOCALID_ATTENDANT_1, BattleFrontier_BattleTowerMultiBattleRoom_Movement_AttendantApproachPlayer
-	applymovement LOCALID_ATTENDANT_2, BattleFrontier_BattleTowerMultiBattleRoom_Movement_AttendantApproachPlayer
+	applymovement LOCALID_ATTENDANT_1, Common_Movement_WalkRight2
+	applymovement LOCALID_ATTENDANT_2, Common_Movement_WalkRight2
 	waitmovement 0
 	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
 	applymovement LOCALID_PARTNER, Common_Movement_FaceLeft
@@ -412,11 +412,6 @@ BattleFrontier_BattleTowerMultiBattleRoom_Movement_Opponent2Exit:
 	walk_up
 	walk_up
 	set_invisible
-	step_end
-
-BattleFrontier_BattleTowerMultiBattleRoom_Movement_AttendantApproachPlayer:
-	walk_right
-	walk_right
 	step_end
 
 BattleFrontier_BattleTowerMultiBattleRoom_Movement_AttendantReturnToPos:

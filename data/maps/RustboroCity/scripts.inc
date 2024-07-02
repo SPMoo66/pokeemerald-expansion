@@ -415,15 +415,11 @@ RustboroCity_EventScript_EmployeeApproachPlayerDown1::
 	waitmovement 0
 	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_Delay48
 	waitmovement 0
-	applymovement LOCALID_DEVON_EMPLOYEE, RustboroCity_Movement_EmployeeApproachPlayerDown
+	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkDown
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	return
-
-RustboroCity_Movement_EmployeeApproachPlayerDown:
-	walk_down
-	step_end
 
 RustboroCity_EventScript_ReturnGoodsTrigger0::
 	lockall
@@ -517,7 +513,7 @@ RustboroCity_EventScript_EmployeeApproachPlayerDown2::
 	waitmovement 0
 	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_Delay48
 	waitmovement 0
-	applymovement LOCALID_DEVON_EMPLOYEE, RustboroCity_Movement_EmployeeApproachPlayerDown
+	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkDown
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0

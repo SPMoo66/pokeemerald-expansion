@@ -13,7 +13,7 @@ BattleFrontier_BattleTowerBattleRoom_OnWarp:
 
 BattleFrontier_BattleTowerBattleRoom_EventScript_SetUpObjects::
 	setvar VAR_TEMP_1, 1
-	applymovement LOCALID_ATTENDANT_2, BattleFrontier_BattleTowerBattleRoom_Movement_SetInvisible
+	applymovement LOCALID_ATTENDANT_2, Common_Movement_SetInvisible
 	end
 
 BattleFrontier_BattleTowerBattleRoom_OnFrame:
@@ -346,10 +346,6 @@ BattleFrontier_BattleTowerBattleRoom_Movement_AttendantReturnToPos:
 	walk_left
 	walk_left
 	face_right
-	step_end
-
-BattleFrontier_BattleTowerBattleRoom_Movement_SetInvisible:
-	set_invisible
 	step_end
 
 BattleFrontier_BattleTowerBattleRoom_Movement_SecondAttendantEnter:

@@ -40,7 +40,7 @@ NavelRock_Top_EventScript_HoOh::
 	setvar VAR_0x8005, 35 @ delay
 	special LoopWingFlapSE
 	applymovement LOCALID_HO_OH, NavelRock_Top_Movement_HoOhAppear
-	applymovement OBJ_EVENT_ID_CAMERA, NavelRock_Top_Movement_CameraPanUp
+	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp3
 	waitmovement 0
 	delay 50
 	setweather WEATHER_NONE
@@ -81,12 +81,6 @@ NavelRock_Top_EventScript_RanFromHoOh::
 	setvar VAR_0x8004, SPECIES_HO_OH
 	goto Common_EventScript_LegendaryFlewAway
 	end
-
-NavelRock_Top_Movement_CameraPanUp:
-	walk_up
-	walk_up
-	walk_up
-	step_end
 
 NavelRock_Top_Movement_CameraPanDown:
 	delay_16

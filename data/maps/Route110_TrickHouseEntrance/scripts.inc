@@ -465,7 +465,7 @@ Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom::
 	delay 20
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Route110_TrickHouseEntrance_Movement_EnterRoom
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_SetInvisible
 	waitmovement 0
 	switch VAR_TRICK_HOUSE_LEVEL
 	case 0, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom1
@@ -477,10 +477,6 @@ Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom::
 	case 6, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom7
 	case 7, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom8
 	end
-
-Route110_TrickHouseEntrance_Movement_EnterRoom:
-	set_invisible
-	step_end
 
 Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom1::
 	warp MAP_ROUTE110_TRICK_HOUSE_PUZZLE1, 0, 21

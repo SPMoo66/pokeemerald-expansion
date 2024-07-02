@@ -38,7 +38,7 @@ MtChimney_CableCarStation_EventScript_Attendant::
 	end
 
 MtChimney_CableCarStation_EventScript_RideCableCar::
-	msgbox MtChimney_CableCarStation_Text_StepThisWay, MSGBOX_DEFAULT
+	msgbox Route112_CableCarStation_Text_StepThisWay, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ATTENDANT, MtChimney_CableCarStation_Movement_LeadPlayerToCableCar
 	applymovement OBJ_EVENT_ID_PLAYER, MtChimney_CableCarStation_Movement_BoardCableCar
@@ -53,7 +53,7 @@ MtChimney_CableCarStation_EventScript_RideCableCar::
 	end
 
 MtChimney_CableCarStation_EventScript_DeclineRide::
-	msgbox MtChimney_CableCarStation_Text_RideAnotherTime, MSGBOX_DEFAULT
+	msgbox Route112_CableCarStation_Text_RideAnotherTime, MSGBOX_DEFAULT
 	release
 	end
 
@@ -88,10 +88,4 @@ MtChimney_CableCarStation_Movement_ExitCableCar:
 MtChimney_CableCarStation_Text_CableCarReadyGetOn:
 	.string "The Cable Car is ready to go down.\n"
 	.string "Would you like to be on it?$"
-
-MtChimney_CableCarStation_Text_StepThisWay:
-	.string "Please step this way.$"
-
-MtChimney_CableCarStation_Text_RideAnotherTime:
-	.string "Please ride with us another time.$"
 

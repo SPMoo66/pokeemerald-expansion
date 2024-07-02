@@ -96,7 +96,7 @@ Route118_EventScript_StevenExit1::
 
 Route118_EventScript_StevenExit2::
 	applymovement OBJ_EVENT_ID_PLAYER, Route118_Movement_PlayerWatchStevenExit
-	applymovement LOCALID_STEVEN, Route118_Movement_StevenExit2
+	applymovement LOCALID_STEVEN, Common_Movement_WalkRight8
 	waitmovement 0
 	return
 
@@ -126,17 +126,6 @@ Route118_Movement_StevenExit0:
 
 Route118_Movement_StevenExit1:
 	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	step_end
-
-Route118_Movement_StevenExit2:
 	walk_right
 	walk_right
 	walk_right

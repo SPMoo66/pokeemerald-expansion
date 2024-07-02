@@ -78,8 +78,8 @@ BattleFrontier_BattleTowerMultiCorridor_EventScript_EnterCorridor::
 	waitmovement 0
 	opendoor 7, 1
 	waitdooranim
-	applymovement LOCALID_ATTENDANT_2, BattleFrontier_BattleTowerMultiCorridor_Movement_AttendantEnterDoor
-	applymovement LOCALID_ATTENDANT_1, BattleFrontier_BattleTowerMultiCorridor_Movement_AttendantEnterDoor
+	applymovement LOCALID_ATTENDANT_2, Common_Movement_EnterHouse
+	applymovement LOCALID_ATTENDANT_1, Common_Movement_EnterHouse
 	applymovement LOCALID_PLAYER, BattleFrontier_BattleTowerMultiCorridor_Movement_TrainerEnterDoor
 	applymovement LOCALID_PARTNER, BattleFrontier_BattleTowerMultiCorridor_Movement_TrainerEnterDoor
 	waitmovement 0
@@ -159,11 +159,6 @@ BattleFrontier_BattleTowerMultiCorridor_Movement_PartnerAttendantWalkToDoor:
 BattleFrontier_BattleTowerMultiCorridor_Movement_TrainerEnterDoor:
 	delay_16
 	walk_up
-	walk_up
-	set_invisible
-	step_end
-
-BattleFrontier_BattleTowerMultiCorridor_Movement_AttendantEnterDoor:
 	walk_up
 	set_invisible
 	step_end

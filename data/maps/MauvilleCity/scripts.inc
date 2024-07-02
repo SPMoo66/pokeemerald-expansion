@@ -136,7 +136,7 @@ MauvilleCity_EventScript_WallyAndUncleExitNorth::
 	msgbox MauvilleCity_Text_UncleVisitUsSometime, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchWallyExitNorth2
-	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleExitNorth2
+	applymovement LOCALID_WALLYS_UNCLE, Common_Movement_WalkLeft8
 	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyExitNorth2
 	waitmovement 0
 	goto MauvilleCity_EventScript_DefeatedWally
@@ -199,7 +199,7 @@ MauvilleCity_EventScript_ScottApproachPlayerEast::
 
 MauvilleCity_EventScript_ScottExitNorth::
 	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchScottExitNorth
-	applymovement LOCALID_SCOTT, MauvilleCity_Movement_ScottExitNorth
+	applymovement LOCALID_SCOTT, Common_Movement_WalkLeft9
 	waitmovement 0
 	return
 
@@ -354,17 +354,6 @@ MauvilleCity_Movement_WallysUncleApproachPlayerEast:
 	walk_up
 	step_end
 
-MauvilleCity_Movement_WallysUncleExitNorth2:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
-
 MauvilleCity_Movement_WallysUncleExitEast2:
 	walk_down
 	walk_left
@@ -403,18 +392,6 @@ MauvilleCity_Movement_ScottApproachPlayerEast:
 	walk_left
 	walk_left
 	walk_up
-	step_end
-
-MauvilleCity_Movement_ScottExitNorth:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
 	step_end
 
 MauvilleCity_Movement_ScottExitEast:

@@ -27,7 +27,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_PayEntranceFee::
 	goto_if_eq VAR_RESULT, YES, SlateportCity_OceanicMuseum_1F_EventScript_CheckMoneyForFee
 	closemessage
 	hidemoneybox
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PushPlayerBackFromCounter
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
 	waitmovement 0
 	releaseall
 	end
@@ -49,7 +49,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_NotEnoughMoney::
 	msgbox SlateportCity_OceanicMuseum_1F_Text_NotEnoughMoney, MSGBOX_DEFAULT
 	closemessage
 	hidemoneybox
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PushPlayerBackFromCounter
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
 	waitmovement 0
 	releaseall
 	end
@@ -60,10 +60,6 @@ SlateportCity_OceanicMuseum_1F_EventScript_AllowEntranceAnyway::
 	hidemoneybox
 	releaseall
 	end
-
-SlateportCity_OceanicMuseum_1F_Movement_PushPlayerBackFromCounter:
-	walk_down
-	step_end
 
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt1::
 	msgbox SlateportCity_OceanicMuseum_1F_Text_AquaExistForGoodOfAll, MSGBOX_NPC

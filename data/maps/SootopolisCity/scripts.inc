@@ -2903,7 +2903,7 @@ SootopolisCity_EventScript_StartRayquazaScene_6:
 # 1429 "data/maps/SootopolisCity/scripts.pory"
 	setwildbattle SPECIES_GROUDON, 55, ITEM_RED_ORB, 0, SPECIES_KYOGRE, 55, ITEM_BLUE_ORB, 0, MOVE_BULK_UP, MOVE_HAMMER_ARM, MOVE_LAVA_PLUME, MOVE_PRECIPICE_BLADES, MOVE_CALM_MIND, MOVE_BODY_SLAM, MOVE_ICE_BEAM, MOVE_ORIGIN_PULSE
 # 1430 "data/maps/SootopolisCity/scripts.pory"
-	multi_wild PARTNER_RAYQUAZA, TRAINER_BACK_PIC_BLANK
+	multi_wild PARTNER_RAYQUAZA
 # 1431 "data/maps/SootopolisCity/scripts.pory"
 	clearflag FLAG_WILD_PARTNER
 # 1432 "data/maps/SootopolisCity/scripts.pory"

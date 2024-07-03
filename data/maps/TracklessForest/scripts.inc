@@ -67,7 +67,7 @@ BattleRaikou::
 # 37 "data/maps/TracklessForest/scripts.pory"
 	waitmoncry
 # 38 "data/maps/TracklessForest/scripts.pory"
-	seteventmon SPECIES_RAIKOU, 50
+	seteventmon SPECIES_RAIKOU, 40
 # 39 "data/maps/TracklessForest/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 40 "data/maps/TracklessForest/scripts.pory"
@@ -104,7 +104,7 @@ BattleEntei::
 # 56 "data/maps/TracklessForest/scripts.pory"
 	waitmoncry
 # 57 "data/maps/TracklessForest/scripts.pory"
-	seteventmon SPECIES_ENTEI, 50
+	seteventmon SPECIES_ENTEI, 40
 # 58 "data/maps/TracklessForest/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 59 "data/maps/TracklessForest/scripts.pory"
@@ -141,7 +141,7 @@ BattleSuicune::
 # 75 "data/maps/TracklessForest/scripts.pory"
 	waitmoncry
 # 76 "data/maps/TracklessForest/scripts.pory"
-	seteventmon SPECIES_SUICUNE, 50
+	seteventmon SPECIES_SUICUNE, 40
 # 77 "data/maps/TracklessForest/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 78 "data/maps/TracklessForest/scripts.pory"

@@ -67,7 +67,7 @@ BattleTapuBulu::
 # 37 "data/maps/SeasideGrotto/scripts.pory"
 	waitmoncry
 # 38 "data/maps/SeasideGrotto/scripts.pory"
-	seteventmon SPECIES_TAPU_BULU, 50
+	seteventmon SPECIES_TAPU_BULU, 40
 # 39 "data/maps/SeasideGrotto/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 40 "data/maps/SeasideGrotto/scripts.pory"
@@ -104,7 +104,7 @@ BattleTapuFini::
 # 56 "data/maps/SeasideGrotto/scripts.pory"
 	waitmoncry
 # 57 "data/maps/SeasideGrotto/scripts.pory"
-	seteventmon SPECIES_TAPU_FINI, 50
+	seteventmon SPECIES_TAPU_FINI, 40
 # 58 "data/maps/SeasideGrotto/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 59 "data/maps/SeasideGrotto/scripts.pory"
@@ -141,7 +141,7 @@ BattleTapuKoko::
 # 75 "data/maps/SeasideGrotto/scripts.pory"
 	waitmoncry
 # 76 "data/maps/SeasideGrotto/scripts.pory"
-	seteventmon SPECIES_TAPU_KOKO, 50
+	seteventmon SPECIES_TAPU_KOKO, 40
 # 77 "data/maps/SeasideGrotto/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 78 "data/maps/SeasideGrotto/scripts.pory"
@@ -178,7 +178,7 @@ BattleTapuLele::
 # 94 "data/maps/SeasideGrotto/scripts.pory"
 	waitmoncry
 # 95 "data/maps/SeasideGrotto/scripts.pory"
-	seteventmon SPECIES_TAPU_LELE, 50
+	seteventmon SPECIES_TAPU_LELE, 40
 # 96 "data/maps/SeasideGrotto/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 97 "data/maps/SeasideGrotto/scripts.pory"

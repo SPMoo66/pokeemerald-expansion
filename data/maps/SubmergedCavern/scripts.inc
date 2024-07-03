@@ -70,7 +70,7 @@ BattleChienPao::
 # 38 "data/maps/SubmergedCavern/scripts.pory"
 	waitmoncry
 # 39 "data/maps/SubmergedCavern/scripts.pory"
-	seteventmon SPECIES_CHIEN_PAO, 50
+	seteventmon SPECIES_CHIEN_PAO, 45
 # 40 "data/maps/SubmergedCavern/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 41 "data/maps/SubmergedCavern/scripts.pory"
@@ -107,7 +107,7 @@ BattleChiYu::
 # 57 "data/maps/SubmergedCavern/scripts.pory"
 	waitmoncry
 # 58 "data/maps/SubmergedCavern/scripts.pory"
-	seteventmon SPECIES_CHI_YU, 50
+	seteventmon SPECIES_CHI_YU, 45
 # 59 "data/maps/SubmergedCavern/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 60 "data/maps/SubmergedCavern/scripts.pory"
@@ -144,7 +144,7 @@ BattleTingLu::
 # 76 "data/maps/SubmergedCavern/scripts.pory"
 	waitmoncry
 # 77 "data/maps/SubmergedCavern/scripts.pory"
-	seteventmon SPECIES_TING_LU, 50
+	seteventmon SPECIES_TING_LU, 45
 # 78 "data/maps/SubmergedCavern/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 79 "data/maps/SubmergedCavern/scripts.pory"
@@ -181,7 +181,7 @@ BattleWoChien::
 # 95 "data/maps/SubmergedCavern/scripts.pory"
 	waitmoncry
 # 96 "data/maps/SubmergedCavern/scripts.pory"
-	seteventmon SPECIES_WO_CHIEN, 50
+	seteventmon SPECIES_WO_CHIEN, 45
 # 97 "data/maps/SubmergedCavern/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 98 "data/maps/SubmergedCavern/scripts.pory"

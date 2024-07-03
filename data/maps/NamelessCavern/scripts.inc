@@ -58,7 +58,7 @@ BattleMesprit::
 # 32 "data/maps/NamelessCavern/scripts.pory"
 	waitmoncry
 # 33 "data/maps/NamelessCavern/scripts.pory"
-	seteventmon SPECIES_MESPRIT, 50
+	seteventmon SPECIES_MESPRIT, 40
 # 34 "data/maps/NamelessCavern/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 35 "data/maps/NamelessCavern/scripts.pory"
@@ -95,7 +95,7 @@ BattleUxie::
 # 51 "data/maps/NamelessCavern/scripts.pory"
 	waitmoncry
 # 52 "data/maps/NamelessCavern/scripts.pory"
-	seteventmon SPECIES_UXIE, 50
+	seteventmon SPECIES_UXIE, 40
 # 53 "data/maps/NamelessCavern/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 54 "data/maps/NamelessCavern/scripts.pory"
@@ -132,7 +132,7 @@ BattleAzelf::
 # 70 "data/maps/NamelessCavern/scripts.pory"
 	waitmoncry
 # 71 "data/maps/NamelessCavern/scripts.pory"
-	seteventmon SPECIES_AZELF, 50
+	seteventmon SPECIES_AZELF, 40
 # 72 "data/maps/NamelessCavern/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 73 "data/maps/NamelessCavern/scripts.pory"

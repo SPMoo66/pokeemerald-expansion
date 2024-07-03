@@ -31,11 +31,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
-        .description = COMPOUND_STRING(
-            "This is a newly discovered Pokémon.\n"
-            "It is currently under investigation.\n"
-            "No detailed information is available\n"
-            "at this time."),
+        .description = gFallbackPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -686,64 +682,6 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .levelUpLearnset = sCogmentLevelUpLearnset,
         .teachableLearnset = sCogmentTeachableLearnset,
     },
-
-
-
-#define MINIOR_MISC_INFO(color)                                             \
-        .types = MON_TYPES(TYPE_ROCK, TYPE_FLYING),                         \
-        .catchRate = 30,                                                    \
-        .expYield = 154,                                                    \
-        .evYield_Defense = 1,                                               \
-        .evYield_SpDefense = 1,                                             \
-        .itemRare = ITEM_STAR_PIECE,                                        \
-        .genderRatio = MON_GENDERLESS,                                      \
-        .eggCycles = 25,                                                    \
-        .friendship = STANDARD_FRIENDSHIP,                                  \
-        .growthRate = GROWTH_MEDIUM_SLOW,                                   \
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),                     \
-        .abilities = { ABILITY_SHIELDS_DOWN, ABILITY_NONE, ABILITY_NONE },  \
-        .bodyColor = color,                                                 \
-        .noFlip = TRUE,                                                     \
-        .speciesName = _("Minior"),                                         \
-        .cryId = CRY_MINIOR,                                                \
-        .natDexNum = NATIONAL_DEX_MINIOR,                                   \
-        .categoryName = _("Meteor"),                                        \
-        .height = 3,                                                        \
-        .pokemonScale = 530,                                                \
-        .pokemonOffset = 13,                                                \
-        .trainerScale = 256,                                                \
-        .trainerOffset = 0,                                                 \
-        FOOTPRINT(Minior)                                                   \
-        .levelUpLearnset = sMiniorLevelUpLearnset,                          \
-        .teachableLearnset = sMiniorTeachableLearnset,                      \
-        .formSpeciesIdTable = sMiniorFormSpeciesIdTable
-
-#define MINIOR_METEOR_SPECIES_INFO(Form)                        \
-    {                                                           \
-        .baseHP        = 60,                                    \
-        .baseAttack    = 60,                                    \
-        .baseDefense   = 100,                                   \
-        .baseSpeed     = 60,                                    \
-        .baseSpAttack  = 60,                                    \
-        .baseSpDefense = 100,                                   \
-        .weight = 400,                                          \
-        .frontPic = gMonFrontPic_MiniorMeteor,                  \
-        .frontPicSize = MON_COORDS_SIZE(48, 40),                \
-        .frontPicYOffset = 14,                                  \
-        .frontAnimFrames = sAnims_MiniorMeteor,                 \
-        .frontAnimId = ANIM_TUMBLING_FRONT_FLIP_TWICE,          \
-        .enemyMonElevation = 17,                                \
-        .backPic = gMonBackPic_MiniorMeteor,                    \
-        .backPicSize = MON_COORDS_SIZE(56, 40),                 \
-        .backPicYOffset = 14,                                   \
-        /*.backAnimId = BACK_ANIM_NONE,*/                       \
-        .palette = gMonPalette_MiniorMeteor,                    \
-        .shinyPalette = gMonShinyPalette_MiniorMeteor,          \
-        .iconSprite = gMonIcon_MiniorMeteor,                    \
-        .iconPalIndex = 0,                                      \
-        .formChangeTable = sMinior ##Form##FormChangeTable,     \
-        MINIOR_MISC_INFO(BODY_COLOR_BROWN),                     \
-    }
 
 };
     /* You may add any custom species below this point based on the following structure: */

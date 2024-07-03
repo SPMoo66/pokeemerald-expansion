@@ -89,10 +89,10 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 	waitstate
 	checkplayergender
 	if (var(VAR_RESULT) == MALE ) {
-		multi_2_vs_2 (TRAINER_COURTNEY_METEOR_FALLS, "Funny… Just a kid…", TRAINER_MAGMA_GRUNT_METEOR_FALLS, "Ach!\nWe've got the Meteorite, let's just go!", PARTNER_MAY_METEOR_FALLS, TRAINER_BACK_PIC_MAY)
+		multi_2_vs_2 (TRAINER_COURTNEY_METEOR_FALLS, "Funny… Just a kid…", TRAINER_MAGMA_GRUNT_METEOR_FALLS, "Ach!\nWe've got the Meteorite, let's just go!", PARTNER_MAY_METEOR_FALLS)
 	}
 	else {
-		multi_2_vs_2 (TRAINER_COURTNEY_METEOR_FALLS, "Funny… Just a kid…", TRAINER_MAGMA_GRUNT_METEOR_FALLS, "Ach!\nWe've got the Meteorite, let's just go!", PARTNER_BRENDAN_METEOR_FALLS, TRAINER_BACK_PIC_BRENDAN)
+		multi_2_vs_2 (TRAINER_COURTNEY_METEOR_FALLS, "Funny… Just a kid…", TRAINER_MAGMA_GRUNT_METEOR_FALLS, "Ach!\nWe've got the Meteorite, let's just go!", PARTNER_BRENDAN_METEOR_FALLS)
 	}
 	switch (var(VAR_RESULT)) {
 		case 1:

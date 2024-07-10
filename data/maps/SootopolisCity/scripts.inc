@@ -859,7 +859,7 @@ SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin::
 # 430 "data/maps/SootopolisCity/scripts.pory"
 	waitmovement 0
 # 431 "data/maps/SootopolisCity/scripts.pory"
-	warp MAP_CAVE_OF_ORIGIN_ENTRANCE, 9, 20
+	warp MAP_CAVE_OF_ORIGIN_ENTRANCE, 9, 19
 # 432 "data/maps/SootopolisCity/scripts.pory"
 	waitstate
 # 433 "data/maps/SootopolisCity/scripts.pory"

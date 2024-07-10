@@ -173,7 +173,7 @@ Text_CantWaterfall:
 
 EventScript_UseDive::
 	lockall
-	checkitem ITEM_HM05
+	checkitem ITEM_HM08
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CantDive
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
 	setfieldeffectargument 0, VAR_RESULT
@@ -195,7 +195,7 @@ EventScript_EndDive::
 
 EventScript_UseDiveUnderwater::
 	lockall
-	checkitem ITEM_HM05
+	checkitem ITEM_HM08
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CantSurface
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
 	setfieldeffectargument 0, VAR_RESULT

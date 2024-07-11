@@ -12,14 +12,14 @@ u32 GetCurrentLevelCap(void)
         {FLAG_BADGE01_GET, 15},
         {FLAG_BADGE02_GET, 20},
         {FLAG_BADGE03_GET, 26},
-        {FLAG_BADGE04_GET, 31},
-        {FLAG_BADGE05_GET, 33},
-        {FLAG_BADGE06_GET, 39},
-        {FLAG_BADGE07_GET, 50},
+        {FLAG_BADGE04_GET, 34},
+        {FLAG_BADGE05_GET, 36},
+        {FLAG_BADGE06_GET, 42},
+        {FLAG_BADGE07_GET, 52},
         {FLAG_BADGE08_GET, 58},
         {FLAG_IS_CHAMPION, 66},
-        {FLAG_EXPANSION_1, 70},
-        {FLAG_EXPANSION_2, 75},
+        {FLAG_EXPANSION_1, 75},
+        {FLAG_EXPANSION_2, 80},
     };
 
     u32 i;

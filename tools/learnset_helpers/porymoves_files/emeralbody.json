@@ -2964,6 +2964,16 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "DUDUNSPARCE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_DRAGON_DANCE",
+        "MOVE_DEFOG"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "KINGAMBIT": {
     "LevelMoves": [],
     "PreEvoMoves": [],

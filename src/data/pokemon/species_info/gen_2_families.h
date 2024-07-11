@@ -5267,7 +5267,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Slugma)
         .levelUpLearnset = sSlugmaLevelUpLearnset,
         .teachableLearnset = sSlugmaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_MAGCARGO},
+        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_MAGCARGO},
                                 {EVO_ITEM, ITEM_METAL_ALLOY, SPECIES_MAGCARGO_EMERIBIAN}),
     },
 

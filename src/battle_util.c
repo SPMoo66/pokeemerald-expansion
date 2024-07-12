@@ -1716,7 +1716,10 @@ static bool32 EndTurnTerrain(u32 terrainFlag, u32 stringTableId)
             gFieldStatuses &= ~terrainFlag;
             TryToRevertMimicryAndFlags();
             gBattleCommunication[MULTISTRING_CHOOSER] = stringTableId;
-            BattleScriptExecute(BattleScript_TerrainEnds);
+            if (terrainFlag & STATUS_FIELD_GRASSY_TERRAIN)
+                BattleScriptExecute(BattleScript_GrassyTerrainEnds);
+            else
+                BattleScriptExecute(BattleScript_TerrainEnds);
             return TRUE;
         }
     }
@@ -5078,11 +5081,11 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                     effect = 2, statId = STAT_SPEED, statAmount = 2;
                 break;
             case ABILITY_LIGHTNING_ROD:
-                if (moveType == TYPE_ELECTRIC && gMovesInfo[move].target != MOVE_TARGET_ALL_BATTLERS)
+                if (B_REDIRECT_ABILITY_IMMUNITY >= GEN_5 && moveType == TYPE_ELECTRIC && gMovesInfo[move].target != MOVE_TARGET_ALL_BATTLERS)
                     effect = 2, statId = STAT_SPATK;
                 break;
             case ABILITY_STORM_DRAIN:
-                if (moveType == TYPE_WATER)
+                if (B_REDIRECT_ABILITY_IMMUNITY >= GEN_5 && moveType == TYPE_WATER)
                     effect = 2, statId = STAT_SPATK;
                 break;
             case ABILITY_SAP_SIPPER:

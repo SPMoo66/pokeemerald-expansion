@@ -88,7 +88,7 @@ Scene01_ReddText::
 
 Scene01_SakuraText::
 # 60 "data/rival_text.pory"
-	.string "Hey hey{EMOJI_TILDE}\l"
+	.string "Hey hey{EMOJI_TILDE}\n"
 	.string "Good to see you in the flesh. Or… in the\l"
 	.string "pixels?\p"
 	.string "I haven't played many of these 2D\n"

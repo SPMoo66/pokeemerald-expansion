@@ -1891,3 +1891,7 @@ CommonText_Redd::
 CommonText_Sakura::
 # 884 "data/global.pory"
 	.string "Sakura$"
+
+Text_PokevialSizeIncrease::
+# 888 "data/global.pory"
+	.string "The Pokévial's size was increased!$"

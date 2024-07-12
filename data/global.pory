@@ -885,3 +885,7 @@ text CommonText_Sakura {
 	"Sakura"
 }
 
+text Text_PokevialSizeIncrease {
+	"The Pokévial's size was increased!"
+}
+

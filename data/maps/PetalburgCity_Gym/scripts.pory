@@ -101,6 +101,7 @@ PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial::
 	message PetalburgCity_Gym_Text_PokevialGet
     additem ITEM_POKEVIAL
 	waitfanfare
+	speakername (CommonText_Dad)
 	msgbox PetalburgCity_Gym_Text_DadPokevial, MSGBOX_DEFAULT
 	setvar VAR_PETALBURG_GYM_STATE, 2
 	releaseall
@@ -416,10 +417,20 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 	call PetalburgCity_Gym_EventScript_UnlockAllDoors
 	special DrawWholeMapView
 	call PetalburgCity_Gym_EventScript_GiveFacade
-	delay 30
+	delay 10
+	speakername (CommonText_Dad)
+	msgbox PetalburgCity_Gym_Text_DadPokevial2, MSGBOX_DEFAULT
+	closemessage
+	pokevialincreasesize
+	msgbox Text_PokevialSizeIncrease, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+	closemessage
+	delay 20
+	speakername (CommonText_Dad)
 	msgbox PetalburgCity_Gym_Text_DadHappyAndSad, MSGBOX_DEFAULT
 	closemessage
-	delay 40
+	delay 30
 	playse SE_DOOR
 	delay 10
 	addobject LOCALID_WALLYS_DAD
@@ -433,6 +444,7 @@ PetalburgCity_Gym_EventScript_GiveFacade::
 	giveitem ITEM_TM_FACADE
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	setflag FLAG_RECEIVED_TM_FACADE
+	speakername (CommonText_Dad)
 	msgbox PetalburgCity_Gym_Text_ExplainFacade, MSGBOX_DEFAULT
 	return
 
@@ -1251,7 +1263,6 @@ PetalburgCity_Gym_Text_PokevialGet:
 	.string "Obtained a Pokévial from Dad!$"
 	
 PetalburgCity_Gym_Text_DadPokevial:
-	speakername (CommonText_Dad)
 	.string "That's a Pokévial. Each dose\n"
 	.string "from it will let you heal your\l"
 	.string "Pokémon to full while on the road.\p"
@@ -1259,6 +1270,14 @@ PetalburgCity_Gym_Text_DadPokevial:
 	.string "for you. It only holds one dose\l"
 	.string "for now, but I'm sure you'll find\l"
 	.string "ways to expand it on your journey.$"
+	
+PetalburgCity_Gym_Text_DadPokevial2:
+	.string "Wait, what's this?\p"
+	.string "You still haven't gotten any\n"
+	.string "additional doses for your Pokevial\l"
+	.string "yet?\p"
+	.string "I suppose since you beat me, I\n"
+	.string "should award another to you.$"
 
 PetalburgCity_Gym_Text_NormanGoToRustboro:
 	.string "Hm? Aren't you going to the\n"

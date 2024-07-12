@@ -58,7 +58,7 @@ text Scene01_ReddText {
 }
 
 text Scene01_SakuraText {
-	format(	"Hey hey{EMOJI_TILDE}\l"
+	format(	"Hey hey{EMOJI_TILDE}\n"
 			"Good to see you in the flesh. Or… in the pixels?\p"
 			"I haven't played many of these 2D spatial reality games, but it always throws me for a loop when I do.\p"
 			"So who do we have here? Jakson?\p"

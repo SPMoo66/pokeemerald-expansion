@@ -61,17 +61,21 @@ LavaridgeTown_EventScript_RivalGiveGoGoggles::
 	end
 
 LavaridgeTown_EventScript_MayGiveGoGoggles::
+	speakername (CommonText_May)
 	msgbox LavaridgeTown_Text_MayNiceBadgesTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_GO_GOGGLES
 	setflag FLAG_RECEIVED_GO_GOGGLES
+	speakername (CommonText_May)
 	msgbox LavaridgeTown_Text_MayExplainGoGogglesChallengeDad, MSGBOX_DEFAULT
 	goto LavaridgeTown_EventScript_RivalExit
 	end
 
 LavaridgeTown_EventScript_BrendanGiveGoGoggles::
+	speakername (CommonText_Brendan)
 	msgbox LavaridgeTown_Text_BrendanNiceBadgesTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_GO_GOGGLES
 	setflag FLAG_RECEIVED_GO_GOGGLES
+	speakername (CommonText_Brendan)
 	msgbox LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad, MSGBOX_DEFAULT
 	goto LavaridgeTown_EventScript_RivalExit
 	end
@@ -264,7 +268,7 @@ LavaridgeTown_EventScript_HerbShopSign::
 	end
 
 LavaridgeTown_Text_MayNiceBadgesTakeThis:
-	.string "May: {PLAYER}{KUN}! Long time no see!\p"
+	.string "{PLAYER}{KUN}! Long time no see!\p"
 	.string "Oh? While I visited the hot springs,\n"
 	.string "you got the Lavaridge Gym Badge.\p"
 	.string "You must have collected\n"
@@ -274,9 +278,9 @@ LavaridgeTown_Text_MayNiceBadgesTakeThis:
 	.string "have this.$"
 
 LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
-	.string "May: With those Go-Goggles, you'll\n"
-	.string "have no trouble getting through the\l"
-	.string "desert near Route 111.\p"
+	.string "With those Go-Goggles, you'll have\n"
+	.string "no trouble getting through the desert\l"
+	.string "near Route 111.\p"
 	.string "But, wow, {PLAYER}{KUN}…\n"
 	.string "Challenging Gyms…\p"
 	.string "You're trying hard because you don't\n"
@@ -286,7 +290,7 @@ LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
 	.string "See you again!$"
 
 LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
-	.string "Brendan: {PLAYER}, hey, it's been a while.\n"
+	.string "{PLAYER}, hey, it's been a while.\n"
 	.string "How's it going?\p"
 	.string "Hmm…\n"
 	.string "That's a decent collection of Badges.\p"
@@ -294,9 +298,8 @@ LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
 	.string "You may as well have this.$"
 
 LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
-	.string "Brendan: Keep those with you if you're\n"
-	.string "planning on going into that desert near\l"
-	.string "Route 111.\p"
+	.string "Keep those with you if you're planning\n"
+	.string on going into that desert near Route 111.\p"
 	.string "There should be some Pokémon that\n"
 	.string "are exclusively desert-dwellers.\l"
 	.string "You might look around for those.\p"

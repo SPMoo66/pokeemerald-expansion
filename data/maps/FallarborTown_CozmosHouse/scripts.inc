@@ -7,6 +7,7 @@ FallarborTown_CozmosHouse_EventScript_ProfCozmo::
 	goto_if_set FLAG_RECEIVED_BOTTLE_CAP_COZMOS, FallarborTown_CozmosHouse_EventScript_GaveMeteorite
 	checkitem ITEM_METEORITE
 	goto_if_eq VAR_RESULT, TRUE, FallarborTown_CozmosHouse_EventScript_PlayerHasMeteorite
+	speakername (CommonText_Cozmo)
 	msgbox FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow, MSGBOX_DEFAULT
 	release
 	end
@@ -15,32 +16,39 @@ FallarborTown_CozmosHouse_EventScript_PlayerHasMeteorite::
 	call_if_unset FLAG_TEMP_2, FallarborTown_CozmosHouse_EventScript_NoticeMeteorite
 	call_if_set FLAG_TEMP_2, FallarborTown_CozmosHouse_EventScript_AskForMeteorite
 	goto_if_eq VAR_RESULT, NO, FallarborTown_CozmosHouse_EventScript_DeclineGiveMeteorite
-	msgbox FallarborTown_CozmosHouse_Text_PleaseUseThisTM, MSGBOX_DEFAULT
+	speakername (CommonText_Cozmo)
+	msgbox FallarborTown_CozmosHouse_Text_PleaseTakeThisBottleCap, MSGBOX_DEFAULT
 	giveitem ITEM_BOTTLE_CAP
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setvar VAR_0x8004, ITEM_METEORITE
 	call Common_EventScript_PlayerHandedOverTheItem
 	setflag FLAG_RECEIVED_BOTTLE_CAP_COZMOS
+	speakername (CommonText_Cozmo)
 	msgbox FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch, MSGBOX_DEFAULT
 	release
 	end
 
 FallarborTown_CozmosHouse_EventScript_NoticeMeteorite::
+	speakername (CommonText_Cozmo)
 	msgbox FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow, MSGBOX_DEFAULT
+	speakername (CommonText_Cozmo)
 	msgbox FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt, MSGBOX_YESNO
 	return
 
 FallarborTown_CozmosHouse_EventScript_AskForMeteorite::
+	speakername (CommonText_Cozmo)
 	msgbox FallarborTown_CozmosHouse_Text_MayIHaveMeteorite, MSGBOX_YESNO
 	return
 
 FallarborTown_CozmosHouse_EventScript_DeclineGiveMeteorite::
 	setflag FLAG_TEMP_2
+	speakername (CommonText_Cozmo)
 	msgbox FallarborTown_CozmosHouse_Text_CrushedWithDisappointment, MSGBOX_DEFAULT
 	release
 	end
 
 FallarborTown_CozmosHouse_EventScript_GaveMeteorite::
+	speakername (CommonText_Cozmo)
 	msgbox FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch, MSGBOX_DEFAULT
 	release
 	end
@@ -65,7 +73,7 @@ FallarborTown_CozmosHouse_EventScript_CozmoIsHappy::
 	end
 
 FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow:
-	.string "Prof. Cozmo: Oh…\n"
+	.string "Oh…\n"
 	.string "I never should have let myself be\l"
 	.string "conned into telling Team Magma where\l"
 	.string "you can find Meteorites…\p"
@@ -81,25 +89,26 @@ FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt:
 	.string "took from Meteor Falls?\p"
 	.string "Please, may I have it?\p"
 	.string "I'm not asking for it for free.\n"
-	.string "How about in exchange for something$"
+	.string "And you can have it back later.\l"
+	.string "How about in exchange for something?$"
 
-FallarborTown_CozmosHouse_Text_PleaseUseThisTM:
-	.string "Prof. Cozmo: This represents my\n"
-	.string "feeling of gratitude.\l"
+FallarborTown_CozmosHouse_Text_PleaseTakeThisBottleCap
+	.string "This represents my feelings of gratitude.\n"
 	.string "Please use it!$"
 
 FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch:
-	.string "Prof. Cozmo: Oh, I can't believe it.\n"
+	.string "Oh, I can't believe it.\n"
 	.string "This is really, really great!\p"
-	.string "This is really going to help my research!$"
+	.string "This is really going to help my research!\p"
+	.string "Come back later and I'll share my\n$"
+	.string "with you.$"
 
 FallarborTown_CozmosHouse_Text_CrushedWithDisappointment:
-	.string "Prof. Cozmo: Oh, but…\n"
+	.string "Oh, but…\n"
 	.string "I'm crushed with disappointment…$"
 
 FallarborTown_CozmosHouse_Text_MayIHaveMeteorite:
-	.string "Prof. Cozmo: Please, may I have that\n"
-	.string "Meteorite?\p"
+	.string "Please, may I have that Meteorite?\p"
 	.string "I'm not asking for it for free.\n"
 	.string "How about in exchange for this TM?$"
 

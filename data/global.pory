@@ -848,6 +848,10 @@ text CommonText_Rydel {
 	"Rydel"
 }
 
+text CommonText_Cozmo {
+	"Prof. Cozmo"
+}
+
 
 
 script GetRivalForNameBox {

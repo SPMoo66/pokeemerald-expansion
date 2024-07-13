@@ -106,7 +106,7 @@ FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt:
 	.string "And you can have it back later.\l"
 	.string "How about in exchange for something?$"
 
-FallarborTown_CozmosHouse_Text_PleaseTakeThisBottleCap
+FallarborTown_CozmosHouse_Text_PleaseTakeThisBottleCap:
 	.string "This represents my feelings of gratitude.\n"
 	.string "Please use it!$"
 

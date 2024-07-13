@@ -299,7 +299,7 @@ LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
 
 LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
 	.string "Keep those with you if you're planning\n"
-	.string on going into that desert near Route 111.\p"
+	.string "on going into that desert near Route 111.\p"
 	.string "There should be some Pokémon that\n"
 	.string "are exclusively desert-dwellers.\l"
 	.string "You might look around for those.\p"

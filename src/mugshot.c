@@ -25,7 +25,7 @@ static const u32 sMugshotImg_Test[] = INCBIN_U32("graphics/mugshots/test.4bpp.lz
 static const u16 sMugshotPal_Test[] = INCBIN_U16("graphics/mugshots/test.gbapal");
 
 static const struct Mugshot sMugshots[] = {
-    [MUGSHOT_TEST] = {.x = 0, .y = 5, .width = 240, .height = 96, .image = sMugshotImg_Test, .palette = sMugshotPal_Test},
+    [MUGSHOT_TEST] = {.x = 0, .y = 1, .width = 240, .height = 96, .image = sMugshotImg_Test, .palette = sMugshotPal_Test},
 };
 
 

@@ -309,3 +309,7 @@ Common_Movement_EnterHouse:
 Common_Movement_SetInvisible:
 	set_invisible
 	step_end
+
+Common_Movement_SetVisible:
+	set_invisible
+	step_end

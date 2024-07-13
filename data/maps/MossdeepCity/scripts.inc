@@ -849,7 +849,7 @@ MossdeepCity_EventScript_ChallengeBall1_2:
 # 425 "data/maps/MossdeepCity/scripts.pory"
 	setvar VAR_STARTING_STATUS, 6
 # 426 "data/maps/MossdeepCity/scripts.pory"
-	setwildbattle SPECIES_CONTAGEON, 40, ITEM_NONE, 2, SPECIES_SLAKING, 40, ITEM_NONE, 0, MOVE_PROTECT, MOVE_DIRE_CLAW, MOVE_SPECTRAL_THIEF, MOVE_TAUNT, MOVE_BODY_SLAM, MOVE_HAMMER_ARM, MOVE_PLAY_ROUGH, MOVE_SHADOW_CLAW
+	setwildbattle SPECIES_CONTAGEON, 50, ITEM_NONE, 2, SPECIES_SLAKING, 50, ITEM_NONE, 0, MOVE_PROTECT, MOVE_DIRE_CLAW, MOVE_SPECTRAL_THIEF, MOVE_TAUNT, MOVE_BODY_SLAM, MOVE_HAMMER_ARM, MOVE_PLAY_ROUGH, MOVE_SHADOW_CLAW
 # 427 "data/maps/MossdeepCity/scripts.pory"
 	dowildbattle
 # 428 "data/maps/MossdeepCity/scripts.pory"

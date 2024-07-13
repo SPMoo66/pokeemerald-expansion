@@ -7773,6 +7773,17 @@ void ChoosePartyMon(void)
     CreateTask(Task_ChoosePartyMon, 10);
 }
 
+bool8 CheckPartyForMon(void)
+{
+    int i;
+    for (i = 0; i < CalculatePlayerPartyCount(); i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == VarGet(VAR_TEMP_1))
+            return TRUE;
+    }
+    return FALSE;
+}
+
 static void Task_ChoosePartyMon(u8 taskId)
 {
     if (!gPaletteFade.active)

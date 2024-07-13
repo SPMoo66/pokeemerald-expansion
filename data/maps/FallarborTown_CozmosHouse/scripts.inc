@@ -49,7 +49,21 @@ FallarborTown_CozmosHouse_EventScript_DeclineGiveMeteorite::
 
 FallarborTown_CozmosHouse_EventScript_GaveMeteorite::
 	speakername (CommonText_Cozmo)
+	goto_if_set FLAG_METEORITE, FallarborTown_CozmosHouse_EventScript_DeoxysMeteoriteObtained
+	checkforspecies SPECIES_DEOXYS, NO_PARTY_SCREEN, FallarborTown_CozmosHouse_EventScript_HasDeoxys
 	msgbox FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch, MSGBOX_DEFAULT
+	release
+	end
+
+FallarborTown_CozmosHouse_EventScript_HasDeoxys::
+	msgbox FallarborTown_CozmosHouse_Text_HasDeoxys, MSGBOX_DEFAULT
+	giveitem ITEM_METEORITE
+	setflag FLAG_METEORITE
+	release
+	end
+
+FallarborTown_CozmosHouse_EventScript_DeoxysMeteoriteObtained::
+	msgbox FallarborTown_CozmosHouse_Text_DeoxysMeteorite, MSGBOX_DEFAULT
 	release
 	end
 
@@ -111,6 +125,20 @@ FallarborTown_CozmosHouse_Text_MayIHaveMeteorite:
 	.string "Please, may I have that Meteorite?\p"
 	.string "I'm not asking for it for free.\n"
 	.string "How about in exchange for this TM?$"
+
+FallarborTown_CozmosHouse_Text_HasDeoxys:
+	.string "Wait, is that what I think it is?!\p"
+	.string "That Pokémon you have there came down\n"
+	.string "with the very same Meteorite you gave me!\p"
+	.string "My research has shown that Deoxys will\n"
+	.string "react to a Meteorite in some way.\p"
+	.string "Here, if you take the Meteorite back"
+	.string "maybe you can find better use for it.$"
+
+FallarborTown_CozmosHouse_Text_DeoxysMeteorite:
+	.string "I have a feeling that a Deoxys will\n"
+	.string "react to a Meteorite in some way.\p"
+	.string "Try it out when you have a chance.$"
 
 FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls:
 	.string "Prof. Cozmo went off to Meteor Falls\n"

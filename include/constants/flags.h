@@ -133,7 +133,7 @@
 #define FLAG_RECEIVED_METEORITE              0x73
 #define FLAG_ADVENTURE_STARTED               0x74 // RECEIVED Pokédex.
 #define FLAG_DEFEATED_MAGMA_SPACE_CENTER     0x75 // Set when Team Magma is defeated at Mossdeep's Space Center.
-#define FLAG_UNUSED_0x76                     0x76 // Unused, was for meeting the giver of Hidden Power in Fortree
+#define FLAG_METEORITE                       0x76 // Was for meeting the giver of Hidden Power in Fortree
 
 #define FLAG_CANCEL_BATTLE_ROOM_CHALLENGE    0x77
 

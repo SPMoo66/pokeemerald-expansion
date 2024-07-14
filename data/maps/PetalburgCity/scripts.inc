@@ -1619,3 +1619,17 @@ Rival_Scene02_17:
 	waitmovement 0
 	goto Rival_Scene02_16
 
+
+PetalburgCity_EventScript_Simulation::
+# 809 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_Simulation_Text_0, MSGBOX_NPC
+	return
+
+
+PetalburgCity_EventScript_Simulation_Text_0:
+# 809 "data/maps/PetalburgCity/scripts.pory"
+	.string "I heard there's a realistic computer\n"
+	.string "simulation out there.\n"
+	.string "If you lose a Pokémon battle in it, you\l"
+	.string "lose one in real life!\n"
+	.string "That's just too scary.$"

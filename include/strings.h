@@ -326,6 +326,10 @@ extern const u8 gText_Font[];               //tx_optionsPlus
 extern const u8 gText_OptionFontFireRed[];  //tx_optionsPlus
 extern const u8 gText_OptionFontEmerald[];  //tx_optionsPlus
 extern const u8 gText_OptionMatchCalls[];   //tx_optionsPlus
+extern const u8 gText_Option1x[];           //tx_optionsPlus
+extern const u8 gText_Option2x[];           //tx_optionsPlus
+extern const u8 gText_Option3x[];           //tx_optionsPlus
+extern const u8 gText_Option4x[];           //tx_optionsPlus
 extern const u8 gText_OptionMenuSave[];
 extern const u8 gText_ButtonMode[];
 

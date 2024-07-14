@@ -41,7 +41,7 @@ enum
 enum
 {
     MENUITEM_CUSTOM_HP_BAR,
-    MENUITEM_CUSTOM_EXP_BAR,
+    MENUITEM_CUSTOM_BATTLE_SPEED,
     MENUITEM_CUSTOM_FONT,
     MENUITEM_CUSTOM_MATCHCALL,
     MENUITEM_CUSTOM_MUSIC_REGION,
@@ -168,6 +168,7 @@ static void DrawChoices_Font(int selection, int y);
 static void DrawChoices_FrameType(int selection, int y);
 static void DrawChoices_MatchCall(int selection, int y);
 static void DrawChoices_MusicRegion(int selection, int y);
+static void DrawChoices_BattleSpeed(int selection, int y);
 static void DrawChoices_LevelCaps(int selection, int y);
 static void DrawBgWindowFrames(void);
 
@@ -218,7 +219,7 @@ struct // MENU_CUSTOM
 } static const sItemFunctionsCustom[MENUITEM_CUSTOM_COUNT] =
 {
     [MENUITEM_CUSTOM_HP_BAR]       = {DrawChoices_BarSpeed,    ProcessInput_Options_Eleven},
-    [MENUITEM_CUSTOM_EXP_BAR]      = {DrawChoices_BarSpeed,    ProcessInput_Options_Eleven},
+    [MENUITEM_CUSTOM_BATTLE_SPEED] = {DrawChoices_BattleSpeed, ProcessInput_Options_Four},
     [MENUITEM_CUSTOM_FONT]         = {DrawChoices_Font,        ProcessInput_Options_Two}, 
     [MENUITEM_CUSTOM_MATCHCALL]    = {DrawChoices_MatchCall,   ProcessInput_Options_Two},
     [MENUITEM_CUSTOM_MUSIC_REGION] = {DrawChoices_MusicRegion, ProcessInput_Options_Four},
@@ -228,7 +229,7 @@ struct // MENU_CUSTOM
 
 // Menu left side option names text
 static const u8 sText_HpBar[]       = _("HP bar");
-static const u8 sText_ExpBar[]      = _("Exp bar");
+static const u8 sText_BattleSpeed[] = _("Battle speed");
 static const u8 sText_UnitSystem[]  = _("Unit System");
 static const u8 gText_MusicRegion[] = _("Battle music");
 static const u8 gText_LevelCaps[]   = _("Level caps");
@@ -247,7 +248,7 @@ static const u8 *const sOptionMenuItemsNamesMain[MENUITEM_MAIN_COUNT] =
 static const u8 *const sOptionMenuItemsNamesCustom[MENUITEM_CUSTOM_COUNT] =
 {
     [MENUITEM_CUSTOM_HP_BAR]       = sText_HpBar,
-    [MENUITEM_CUSTOM_EXP_BAR]      = sText_ExpBar,
+    [MENUITEM_CUSTOM_BATTLE_SPEED] = sText_BattleSpeed,
     [MENUITEM_CUSTOM_FONT]         = gText_Font,
     [MENUITEM_CUSTOM_MATCHCALL]    = gText_OptionMatchCalls,
     [MENUITEM_CUSTOM_MUSIC_REGION] = gText_MusicRegion,
@@ -286,6 +287,7 @@ static bool8 CheckConditions(int selection)
     case MENU_CUSTOM:
         switch(selection)
         {
+        case MENUITEM_CUSTOM_BATTLE_SPEED:    return TRUE;
         case MENUITEM_CUSTOM_FONT:            return TRUE;
         case MENUITEM_CUSTOM_MATCHCALL:       return TRUE;
         case MENUITEM_CUSTOM_MUSIC_REGION:    return TRUE;
@@ -327,11 +329,7 @@ static const u8 *const sOptionMenuItemDescriptionsMain[MENUITEM_MAIN_COUNT][3] =
 
 // Custom
 static const u8 sText_Desc_BattleHPBar[]        = _("Choose how fast the HP BAR will get\ndrained in battles.");
-static const u8 sText_Desc_BattleExpBar[]       = _("Choose how fast the EXP BAR will get\nfilled in battles.");
-static const u8 sText_Desc_SurfOff[]            = _("Disables the surf theme when\nusing surf.");
-static const u8 sText_Desc_SurfOn[]             = _("Enables the surf theme\nwhen using surf.");
-static const u8 sText_Desc_BikeOff[]            = _("Disables the bike theme when\nusing the bike.");
-static const u8 sText_Desc_BikeOn[]             = _("Enables the bike theme when\nusing the bike.");
+static const u8 sText_Desc_BattleSpeed[]        = _("Choose how quickly battles will take\nplace.");
 static const u8 sText_Desc_FontType[]           = _("Choose the font design.");
 static const u8 sText_Desc_OverworldCallsOn[]   = _("Trainers will be able to call you,\noffering rematches and info.");
 static const u8 sText_Desc_OverworldCallsOff[]  = _("You will not receive calls.\nSpecial events will still occur.");
@@ -341,7 +339,7 @@ static const u8 sText_Desc_LevelCapsOff[]       = _("Level caps are disabled.");
 static const u8 *const sOptionMenuItemDescriptionsCustom[MENUITEM_CUSTOM_COUNT][2] =
 {
     [MENUITEM_CUSTOM_HP_BAR]       = {sText_Desc_BattleHPBar,        sText_Empty},
-    [MENUITEM_CUSTOM_EXP_BAR]      = {sText_Desc_BattleExpBar,       sText_Empty},
+    [MENUITEM_CUSTOM_BATTLE_SPEED] = {sText_Desc_BattleSpeed,        sText_Empty},
     [MENUITEM_CUSTOM_FONT]         = {sText_Desc_FontType,           sText_Desc_FontType},
     [MENUITEM_CUSTOM_MATCHCALL]    = {sText_Desc_OverworldCallsOn,   sText_Desc_OverworldCallsOff},
     [MENUITEM_CUSTOM_MUSIC_REGION] = {sText_Desc_MusicRegion,        sText_Empty},
@@ -363,12 +361,12 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledMain[MENUITEM_MAIN_COU
     [MENUITEM_MAIN_CANCEL]      = sText_Empty,
 };
 
-// Disabled Custom
+// Disabled Custom Descriptions
 static const u8 sText_Desc_Disabled_BattleHPBar[]   = _("Only active if xyz.");
 static const u8 *const sOptionMenuItemDescriptionsDisabledCustom[MENUITEM_CUSTOM_COUNT] =
 {
     [MENUITEM_CUSTOM_HP_BAR]       = sText_Desc_Disabled_BattleHPBar,
-    [MENUITEM_CUSTOM_EXP_BAR]      = sText_Empty,
+    [MENUITEM_CUSTOM_BATTLE_SPEED] = sText_Empty,
     [MENUITEM_CUSTOM_FONT]         = sText_Empty,
     [MENUITEM_CUSTOM_MATCHCALL]    = sText_Empty,
     [MENUITEM_CUSTOM_MUSIC_REGION] = sText_Empty,
@@ -394,7 +392,7 @@ static const u8 *const OptionTextDescription(void)
         if (!CheckConditions(menuItem))
             return sOptionMenuItemDescriptionsDisabledMain[menuItem];
         selection = sOptions->sel_custom[menuItem];
-        if (menuItem == MENUITEM_CUSTOM_HP_BAR || menuItem == MENUITEM_CUSTOM_EXP_BAR || menuItem == MENUITEM_CUSTOM_MUSIC_REGION)
+        if (menuItem == MENUITEM_CUSTOM_HP_BAR || menuItem == MENUITEM_CUSTOM_BATTLE_SPEED || menuItem == MENUITEM_CUSTOM_MUSIC_REGION)
             selection = 0;
         return sOptionMenuItemDescriptionsCustom[menuItem][selection];
     }
@@ -618,7 +616,7 @@ void CB2_InitOptionPlusMenu(void)
         sOptions->sel[MENUITEM_MAIN_FRAMETYPE]   = gSaveBlock2Ptr->optionsWindowFrameType;
         
         sOptions->sel_custom[MENUITEM_CUSTOM_HP_BAR]       = gSaveBlock2Ptr->optionsHpBarSpeed;
-        sOptions->sel_custom[MENUITEM_CUSTOM_EXP_BAR]      = gSaveBlock2Ptr->optionsExpBarSpeed;
+        sOptions->sel_custom[MENUITEM_CUSTOM_BATTLE_SPEED] = gSaveBlock2Ptr->optionsBattleSpeed;
         sOptions->sel_custom[MENUITEM_CUSTOM_FONT]         = gSaveBlock2Ptr->optionsCurrentFont;
         sOptions->sel_custom[MENUITEM_CUSTOM_MATCHCALL]    = gSaveBlock2Ptr->optionsDisableMatchCall;
         sOptions->sel_custom[MENUITEM_CUSTOM_MUSIC_REGION] = gSaveBlock2Ptr->optionsMusicRegion;
@@ -807,7 +805,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsWindowFrameType  = sOptions->sel[MENUITEM_MAIN_FRAMETYPE];
 
     gSaveBlock2Ptr->optionsHpBarSpeed       = sOptions->sel_custom[MENUITEM_CUSTOM_HP_BAR];
-    gSaveBlock2Ptr->optionsExpBarSpeed      = sOptions->sel_custom[MENUITEM_CUSTOM_EXP_BAR];
+    gSaveBlock2Ptr->optionsBattleSpeed      = sOptions->sel_custom[MENUITEM_CUSTOM_BATTLE_SPEED];
     gSaveBlock2Ptr->optionsCurrentFont      = sOptions->sel_custom[MENUITEM_CUSTOM_FONT];
     gSaveBlock2Ptr->optionsDisableMatchCall = sOptions->sel_custom[MENUITEM_CUSTOM_MATCHCALL];
     gSaveBlock2Ptr->optionsMusicRegion      = sOptions->sel_custom[MENUITEM_CUSTOM_MUSIC_REGION];
@@ -1089,7 +1087,7 @@ static void DrawChoices_ButtonMode(int selection, int y)
 static const u8 sText_Normal[] = _("Normal");
 static void DrawChoices_BarSpeed(int selection, int y) //HP and EXP
 {
-    bool8 active = CheckConditions(MENUITEM_CUSTOM_EXP_BAR);
+    bool8 active = CheckConditions(MENUITEM_CUSTOM_HP_BAR);
 
     if (selection == 0)
          DrawOptionMenuChoice(sText_Normal, 104, y, 1, active);
@@ -1170,6 +1168,13 @@ static void DrawChoices_MusicRegion(int selection, int y)
 {
     bool8 active = CheckConditions(MENUITEM_CUSTOM_MUSIC_REGION);
     DrawChoices_Options_Four(sTextMusicStrings, selection, y, active);
+}
+
+static const u8 *const sTextBattleSpeedStrings[] = {gText_Option1x, gText_Option2x, gText_Option3x, gText_Option4x};
+static void DrawChoices_BattleSpeed(int selection, int y)
+{
+    bool8 active = CheckConditions(MENUITEM_CUSTOM_BATTLE_SPEED);
+    DrawChoices_Options_Four(sTextBattleSpeedStrings, selection, y, active);
 }
 
 static void DrawChoices_LevelCaps(int selection, int y)

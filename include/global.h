@@ -495,14 +495,15 @@ struct SaveBlock2
              u16 optionsBattleStyle:1; // OPTIONS_BATTLE_STYLE_[SHIFT/SET]
              u16 optionsBattleSceneOff:1; // whether battle animations are disabled
              u16 regionMapZoom:1; // whether the map is zoomed in
-             u16 optionsUnitSystem:1;   //tx_optionsPlus
-             u16 optionsHpBarSpeed:4;   //tx_optionsPlus
-             u16 optionsExpBarSpeed:4;  //tx_optionsPlus
+             u16 optionsUnitSystem:1;       //tx_optionsPlus
+             u16 optionsHpBarSpeed:4;       //tx_optionsPlus
+             u16 optionsBattleSpeed:3;      //tx_optionsPlus
+             u16 paddingOptions:1;          //tx_optionsPlus, was used for optionsBattleSpeed/optionsExpBarSpeed
              u16 optionsDisableMatchCall:1; //tx_optionsPlus
-             u16 optionsCurrentFont:1;  //tx_optionsPlus
-             u16 optionsMusicRegion:3;  //tx_optionsPlus
-             u16 optionsLevelCaps:1;    //tx_optionsPlus
-             u8 padding[0x8];          //Will save 4 bytes for later, likely for options
+             u16 optionsCurrentFont:1;      //tx_optionsPlus
+             u16 optionsMusicRegion:3;      //tx_optionsPlus
+             u16 optionsLevelCaps:1;        //tx_optionsPlus
+             u8 padding[0x8];          //Will save 8 bytes for later, likely for options
 
      /*notes on padding*/
              //u8 padding1:4;     :4 here represents 4 bits, so 4/16 for 0x17

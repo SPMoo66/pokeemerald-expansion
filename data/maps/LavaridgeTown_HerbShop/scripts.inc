@@ -25,6 +25,10 @@ LavaridgeTown_HerbShop_EventScript_ExpertM::
 	msgbox LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike, MSGBOX_NPC
 	end
 
+LavaridgeTown_HerbShop_EventScript_RotomMan::
+	msgbox LavaridgeTown_HerbShop_Text_RotomMan, MSGBOX_NPC
+	end
+
 LavaridgeTown_HerbShop_EventScript_OldMan::
 	lock
 	faceplayer
@@ -63,4 +67,9 @@ LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike:
 	.string "Herbal medicine works impressively well.\n"
 	.string "But your Pokémon will dislike you for it.\l"
 	.string "It must be horribly bitter!$"
+
+LavaridgeTown_HerbShop_Text_RotomMan:
+	.string "Rotom is an incredibly deadly Pokémon\n"
+	.string "and there's no way they could use it in\l"
+	.string "a phone or something.$"
 

@@ -1793,179 +1793,183 @@ Route110_Text_TrainerTipsRegisterItems:
 # 897 "data/maps/Route110/scripts.pory"
 	.string "The items in the Bag can be reorganized\n"
 # 898 "data/maps/Route110/scripts.pory"
-	.string "by pressing Select.$"
+	.string "by pressing Select.\p"
 # 899 "data/maps/Route110/scripts.pory"
-
+	.string "It can also be automatically sorted by\n"
 # 900 "data/maps/Route110/scripts.pory"
-Route110_Text_TrickHouseSign:
+	.string "by pressing Start.$"
 # 901 "data/maps/Route110/scripts.pory"
-	.string "“Three steps {RIGHT_ARROW} and two steps {UP_ARROW}\n"
+
 # 902 "data/maps/Route110/scripts.pory"
-	.string "to reach the wondrous Trick House.”$"
+Route110_Text_TrickHouseSign:
 # 903 "data/maps/Route110/scripts.pory"
-
+	.string "“Three steps {RIGHT_ARROW} and two steps {UP_ARROW}\n"
 # 904 "data/maps/Route110/scripts.pory"
-Route110_Text_BestRecord:
+	.string "to reach the wondrous Trick House.”$"
 # 905 "data/maps/Route110/scripts.pory"
-	.string "The best record to date…\p"
+
 # 906 "data/maps/Route110/scripts.pory"
-	.string "No. of collisions: {STR_VAR_1}\p"
+Route110_Text_BestRecord:
 # 907 "data/maps/Route110/scripts.pory"
-	.string "Elapsed time: {STR_VAR_2}$"
-# 908 "data/maps/Route110/scripts.pory"
-
-# 909 "data/maps/Route110/scripts.pory"
-Route110_Text_ThereIsNoRecord:
-# 910 "data/maps/Route110/scripts.pory"
 	.string "The best record to date…\p"
+# 908 "data/maps/Route110/scripts.pory"
+	.string "No. of collisions: {STR_VAR_1}\p"
+# 909 "data/maps/Route110/scripts.pory"
+	.string "Elapsed time: {STR_VAR_2}$"
+# 910 "data/maps/Route110/scripts.pory"
+
 # 911 "data/maps/Route110/scripts.pory"
-	.string "No one seems to have taken the\n"
+Route110_Text_ThereIsNoRecord:
 # 912 "data/maps/Route110/scripts.pory"
-	.string "challenge. There is no record…$"
+	.string "The best record to date…\p"
 # 913 "data/maps/Route110/scripts.pory"
-
+	.string "No one seems to have taken the\n"
 # 914 "data/maps/Route110/scripts.pory"
-Route110_Text_ImagineSeeingYouHere:
+	.string "challenge. There is no record…$"
 # 915 "data/maps/Route110/scripts.pory"
-	.string "Oh, {PLAYER}{KUN}!\n"
+
 # 916 "data/maps/Route110/scripts.pory"
-	.string "Imagine seeing you here!\p"
+Route110_Text_ImagineSeeingYouHere:
 # 917 "data/maps/Route110/scripts.pory"
-	.string "And where might my {RIVAL} be?$"
+	.string "Oh, {PLAYER}{KUN}!\n"
 # 918 "data/maps/Route110/scripts.pory"
-
+	.string "Imagine seeing you here!\p"
 # 919 "data/maps/Route110/scripts.pory"
-Route110_Text_HeardYouInstallMatchCall:
+	.string "And where might my {RIVAL} be?$"
 # 920 "data/maps/Route110/scripts.pory"
-	.string "Oh, I see!\n"
+
 # 921 "data/maps/Route110/scripts.pory"
-	.string "You two are running separately.\l"
+Route110_Text_HeardYouInstallMatchCall:
 # 922 "data/maps/Route110/scripts.pory"
-	.string "Well, that's fine.\p"
+	.string "Oh, I see!\n"
 # 923 "data/maps/Route110/scripts.pory"
-	.string "Oh, yes, I heard that your Pokénav\n"
+	.string "You two are running separately.\l"
 # 924 "data/maps/Route110/scripts.pory"
-	.string "had the Match Call system installed.\p"
+	.string "Well, that's fine.\p"
 # 925 "data/maps/Route110/scripts.pory"
-	.string "Well, then, I should register you in\n"
+	.string "Oh, yes, I heard that your Pokénav\n"
 # 926 "data/maps/Route110/scripts.pory"
-	.string "my Pokénav as well.\p"
+	.string "had the Match Call system installed.\p"
 # 927 "data/maps/Route110/scripts.pory"
-	.string "That way, even when we're apart,\n"
+	.string "Well, then, I should register you in\n"
 # 928 "data/maps/Route110/scripts.pory"
-	.string "I can rate your Pokédex anytime.\p"
+	.string "my Pokénav as well.\p"
 # 929 "data/maps/Route110/scripts.pory"
-	.string "… … … … … …$"
+	.string "That way, even when we're apart,\n"
 # 930 "data/maps/Route110/scripts.pory"
-
+	.string "I can rate your Pokédex anytime.\p"
 # 931 "data/maps/Route110/scripts.pory"
-Route110_Text_RegisteredBirchInPokenav:
+	.string "… … … … … …$"
 # 932 "data/maps/Route110/scripts.pory"
-	.string "Registered Prof. Birch\n"
-# 933 "data/maps/Route110/scripts.pory"
-	.string "in the Pokénav.$"
-# 934 "data/maps/Route110/scripts.pory"
 
+# 933 "data/maps/Route110/scripts.pory"
+Route110_Text_RegisteredBirchInPokenav:
+# 934 "data/maps/Route110/scripts.pory"
+	.string "Registered Prof. Birch\n"
 # 935 "data/maps/Route110/scripts.pory"
-Route110_Text_KeepAnEyeOutForRival:
+	.string "in the Pokénav.$"
 # 936 "data/maps/Route110/scripts.pory"
-	.string "{PLAYER}{KUN}…\p"
+
 # 937 "data/maps/Route110/scripts.pory"
-	.string "Please keep an eye out for my {RIVAL}.\n"
+Route110_Text_KeepAnEyeOutForRival:
 # 938 "data/maps/Route110/scripts.pory"
-	.string "… … … … … …\p"
+	.string "{PLAYER}{KUN}…\p"
 # 939 "data/maps/Route110/scripts.pory"
-	.string "Well, I had better get going.\n"
+	.string "Please keep an eye out for my {RIVAL}.\n"
 # 940 "data/maps/Route110/scripts.pory"
+	.string "… … … … … …\p"
+# 941 "data/maps/Route110/scripts.pory"
+	.string "Well, I had better get going.\n"
+# 942 "data/maps/Route110/scripts.pory"
 	.string "See you again, {PLAYER}{KUN}!$"
 
 Route110_EventScript_ChallengeBall1::
-# 944 "data/maps/Route110/scripts.pory"
-	lock
-# 945 "data/maps/Route110/scripts.pory"
-	msgbox Route110_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
 # 946 "data/maps/Route110/scripts.pory"
+	lock
+# 947 "data/maps/Route110/scripts.pory"
+	msgbox Route110_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
+# 948 "data/maps/Route110/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route110_EventScript_ChallengeBall1_2
 Route110_EventScript_ChallengeBall1_1:
-# 960 "data/maps/Route110/scripts.pory"
+# 962 "data/maps/Route110/scripts.pory"
 	release
 	return
 
 Route110_EventScript_ChallengeBall1_2:
-# 947 "data/maps/Route110/scripts.pory"
-	setflag FLAG_NO_CATCHING
-# 948 "data/maps/Route110/scripts.pory"
-	setflag FLAG_NO_RUNNING
 # 949 "data/maps/Route110/scripts.pory"
-	setflag FLAG_SMART_WILD_AI
+	setflag FLAG_NO_CATCHING
 # 950 "data/maps/Route110/scripts.pory"
-	setvar VAR_STARTING_STATUS, 4
+	setflag FLAG_NO_RUNNING
 # 951 "data/maps/Route110/scripts.pory"
-	setwildbattle SPECIES_GOTHORITA, 24, ITEM_NONE, 1, SPECIES_RIBOMBEE, 24, ITEM_NONE, 1, MOVE_CALM_MIND, MOVE_FLATTER, MOVE_PSYBEAM, MOVE_GRASS_KNOT, MOVE_NATURE_POWER, MOVE_SECRET_POWER, MOVE_STICKY_WEB, MOVE_DRAINING_KISS
+	setflag FLAG_SMART_WILD_AI
 # 952 "data/maps/Route110/scripts.pory"
-	dowildbattle
+	setvar VAR_STARTING_STATUS, 4
 # 953 "data/maps/Route110/scripts.pory"
-	setvar VAR_STARTING_STATUS, 0
+	setwildbattle SPECIES_GOTHORITA, 24, ITEM_NONE, 1, SPECIES_RIBOMBEE, 24, ITEM_NONE, 1, MOVE_CALM_MIND, MOVE_FLATTER, MOVE_PSYBEAM, MOVE_GRASS_KNOT, MOVE_NATURE_POWER, MOVE_SECRET_POWER, MOVE_STICKY_WEB, MOVE_DRAINING_KISS
 # 954 "data/maps/Route110/scripts.pory"
-	clearflag FLAG_NO_CATCHING
+	dowildbattle
 # 955 "data/maps/Route110/scripts.pory"
-	clearflag FLAG_NO_RUNNING
+	setvar VAR_STARTING_STATUS, 0
 # 956 "data/maps/Route110/scripts.pory"
-	clearflag FLAG_SMART_WILD_AI
+	clearflag FLAG_NO_CATCHING
 # 957 "data/maps/Route110/scripts.pory"
-	finditem ITEM_WIDE_LENS, 1
+	clearflag FLAG_NO_RUNNING
 # 958 "data/maps/Route110/scripts.pory"
+	clearflag FLAG_SMART_WILD_AI
+# 959 "data/maps/Route110/scripts.pory"
+	finditem ITEM_WIDE_LENS, 1
+# 960 "data/maps/Route110/scripts.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route110_EventScript_ChallengeBall1_1
 
 
 Route110_EventScript_ChallengeBall2::
-# 964 "data/maps/Route110/scripts.pory"
-	lock
-# 965 "data/maps/Route110/scripts.pory"
-	msgbox Route110_EventScript_ChallengeBall2_Text_0, MSGBOX_YESNO
 # 966 "data/maps/Route110/scripts.pory"
+	lock
+# 967 "data/maps/Route110/scripts.pory"
+	msgbox Route110_EventScript_ChallengeBall2_Text_0, MSGBOX_YESNO
+# 968 "data/maps/Route110/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route110_EventScript_ChallengeBall2_2
 Route110_EventScript_ChallengeBall2_1:
-# 979 "data/maps/Route110/scripts.pory"
+# 981 "data/maps/Route110/scripts.pory"
 	release
 	return
 
 Route110_EventScript_ChallengeBall2_2:
-# 967 "data/maps/Route110/scripts.pory"
-	setflag FLAG_NO_CATCHING
-# 968 "data/maps/Route110/scripts.pory"
-	setflag FLAG_NO_RUNNING
 # 969 "data/maps/Route110/scripts.pory"
-	setflag FLAG_SMART_WILD_AI
+	setflag FLAG_NO_CATCHING
 # 970 "data/maps/Route110/scripts.pory"
-	settotemboost 1, 0, 0, 3
+	setflag FLAG_NO_RUNNING
 # 971 "data/maps/Route110/scripts.pory"
-	setwildbattle SPECIES_TORKOAL, 37, ITEM_NONE, 1, SPECIES_WHIMSICOTT, 37, ITEM_NONE, 2, MOVE_STEALTH_ROCK, MOVE_FLAME_CHARGE, MOVE_CURSE, MOVE_ROCK_TOMB, MOVE_TAILWIND, MOVE_GROWTH, MOVE_COTTON_SPORE, MOVE_GRASS_KNOT
+	setflag FLAG_SMART_WILD_AI
 # 972 "data/maps/Route110/scripts.pory"
-	dowildbattle
+	settotemboost 1, 0, 0, 3
 # 973 "data/maps/Route110/scripts.pory"
-	clearflag FLAG_NO_CATCHING
+	setwildbattle SPECIES_TORKOAL, 37, ITEM_NONE, 1, SPECIES_WHIMSICOTT, 37, ITEM_NONE, 2, MOVE_STEALTH_ROCK, MOVE_FLAME_CHARGE, MOVE_CURSE, MOVE_ROCK_TOMB, MOVE_TAILWIND, MOVE_GROWTH, MOVE_COTTON_SPORE, MOVE_GRASS_KNOT
 # 974 "data/maps/Route110/scripts.pory"
-	clearflag FLAG_NO_RUNNING
+	dowildbattle
 # 975 "data/maps/Route110/scripts.pory"
-	clearflag FLAG_SMART_WILD_AI
+	clearflag FLAG_NO_CATCHING
 # 976 "data/maps/Route110/scripts.pory"
-	finditem ITEM_ZOOM_LENS, 1
+	clearflag FLAG_NO_RUNNING
 # 977 "data/maps/Route110/scripts.pory"
+	clearflag FLAG_SMART_WILD_AI
+# 978 "data/maps/Route110/scripts.pory"
+	finditem ITEM_ZOOM_LENS, 1
+# 979 "data/maps/Route110/scripts.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route110_EventScript_ChallengeBall2_1
 
 
 Route110_EventScript_ChallengeBall1_Text_0:
-# 945 "data/maps/Route110/scripts.pory"
+# 947 "data/maps/Route110/scripts.pory"
 	.string "You feel a circle of mysticism around.\p"
 	.string "Reach out for the item?$"
 
 Route110_EventScript_ChallengeBall2_Text_0:
-# 965 "data/maps/Route110/scripts.pory"
+# 967 "data/maps/Route110/scripts.pory"
 	.string "You sense a drought approaching\n"
 	.string "quickly.\p"
 	.string "Reach out for the item?$"

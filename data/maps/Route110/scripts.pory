@@ -467,6 +467,7 @@ Route110_EventScript_BrendanDefeated::
 	end
 
 Route110_EventScript_GivePokemonBoxLink::
+	closemessage
 	giveitem ITEM_POKEMON_BOX_LINK
 	return
 
@@ -611,6 +612,7 @@ Route110_EventScript_BirchScene::
 	applymovement LOCALID_BIRCH, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	delay 30
+	speakername (CommonText_Birch)
 	msgbox Route110_Text_HeardYouInstallMatchCall, MSGBOX_DEFAULT
 	closemessage
 	delay 30

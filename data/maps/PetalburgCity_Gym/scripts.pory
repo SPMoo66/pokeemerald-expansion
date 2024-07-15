@@ -182,10 +182,14 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorial::
 	call_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_NormanAddressWallyEast
 	speakername (CommonText_Dad)
 	msgbox PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon, MSGBOX_DEFAULT
+	closemessage
+	msgbox PetalburgCity_Gym_Text_WallyReceivedAZigzagoon, MSGBOX_DEFAULT
 	speakername (CommonText_Wally)
 	msgbox PetalburgCity_Gym_Text_WallyThankYou, MSGBOX_DEFAULT
 	speakername (CommonText_Dad)
 	msgbox PetalburgCity_Gym_Text_AndDadGivesPokeBall, MSGBOX_DEFAULT
+	closemessage
+	msgbox PetalburgCity_Gym_Text_WallyReceivedAPokeball, MSGBOX_DEFAULT
 	speakername (CommonText_Wally)
 	msgbox PetalburgCity_Gym_Text_WallyOhWowThankYou, MSGBOX_DEFAULT
 	call_if_eq VAR_0x8008, 0, PetalburgCity_Gym_EventScript_NormanFaceDoorSouth
@@ -1205,7 +1209,9 @@ PetalburgCity_Gym_Text_DadPlayerGoWithWally:
 	.string "safely catches a Pokémon.$"
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon:
-	.string "Wally, here, I'll loan you my Pokémon.\p"
+	.string "Wally, here, I'll loan you my Pokémon.$"
+
+PetalburgCity_Gym_Text_WallyReceivedAZigzagoon:
 	.string "Wally received a Zigzagoon!$"
 
 PetalburgCity_Gym_Text_WallyThankYou:
@@ -1214,7 +1220,9 @@ PetalburgCity_Gym_Text_WallyThankYou:
 
 PetalburgCity_Gym_Text_AndDadGivesPokeBall:
 	.string "Hm. I'll give you a Poké Ball, too.\n"
-	.string "Go for it!\p"
+	.string "Go for it!$"
+
+PetalburgCity_Gym_Text_WallyReceivedAPokeball:
 	.string "Wally received a Poké Ball!$"
 
 PetalburgCity_Gym_Text_WallyOhWowThankYou:

@@ -806,6 +806,6 @@ script Rival_Scene02 {
 }
 
 script PetalburgCity_EventScript_Simulation {
-	msgbox(format("I heard there's a realistic computer simulation out there.\nIf you lose a Pokémon battle in it, you lose one in real life!\nThat's just too scary."), MSGBOX_NPC)
+	msgbox(format("I heard there's a realistic computer simulation out there.\pIf you lose a Pokémon battle in it, you lose one in real life!\pThat's just too scary."), MSGBOX_NPC)
 }
 

@@ -312,14 +312,14 @@ MauvilleCity_BikeShop_EventScript_Rydel_4:
 # 168 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq MauvilleCity_BikeShop_EventScript_Rydel_8
-# 180 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	setflag FLAG_DECLINED_BIKE
 # 181 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	speakername CommonText_Rydel
+	setflag FLAG_DECLINED_BIKE
 # 182 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	speakername CommonText_Rydel
+# 183 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	msgbox MauvilleCity_BikeShop_EventScript_Rydel_Text_5
 MauvilleCity_BikeShop_EventScript_Rydel_7:
-# 184 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+# 185 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	release
 	end
 
@@ -345,14 +345,16 @@ MauvilleCity_BikeShop_EventScript_Rydel_8:
 # 171 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	msgbox MauvilleCity_BikeShop_EventScript_Rydel_Text_3
 # 172 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	giveitem ITEM_ACRO_BIKE
+	closemessage
 # 173 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	giveitem ITEM_MACH_BIKE
+	giveitem ITEM_ACRO_BIKE
 # 174 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	setflag FLAG_RECEIVED_BIKE
+	giveitem ITEM_MACH_BIKE
 # 175 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	speakername CommonText_Rydel
+	setflag FLAG_RECEIVED_BIKE
 # 176 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	speakername CommonText_Rydel
+# 177 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	msgbox MauvilleCity_BikeShop_EventScript_Rydel_Text_4
 	goto MauvilleCity_BikeShop_EventScript_Rydel_7
 
@@ -373,13 +375,13 @@ MauvilleCity_BikeShop_EventScript_Rydel_Text_2:
 
 MauvilleCity_BikeShop_EventScript_Rydel_Text_3:
 # 171 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	.string "Hm, hm… … … … …\pYou're saying that you came all this\nway from Littleroot?\pMy goodness!\nThat's ridiculously far!\pIf you had one of my Bikes, you could\ngo anywhere easily while feeling the\lgentle caress of the wind!\pI'll tell you what!\nI'll give you a Bike!\pOh, wait a second!\pI forgot to tell you that there are\ntwo kinds of Bikes!\pThey are the Mach Bike and\nthe Acro Bike!\pThe Mach Bike is for cyclists who want\nto feel the wind with their bodies!\pAnd an Acro Bike is for those who\nprefer technical rides!\pI'm a real sweetheart, so you can have both Bikes!$"
+	.string "Hm, hm… … … … …\pYou're saying that you came all this\nway from Littleroot?\pMy goodness!\nThat's ridiculously far!\pIf you had one of my Bikes, you could\ngo anywhere easily while feeling the\lgentle caress of the wind!\pI'll tell you what!\nI'll give you a Bike!\pOh, wait a second!\pI forgot to tell you that there are\ntwo kinds of Bikes!\pThey are the Mach Bike and\nthe Acro Bike!\pThe Mach Bike is for cyclists who want\nto feel the wind with their bodies!\pAnd an Acro Bike is for those who\nprefer technical rides!\pI'm a real sweetheart, so you can have\nboth Bikes!$"
 
 MauvilleCity_BikeShop_EventScript_Rydel_Text_4:
-# 176 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+# 177 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	.string "Enjoy! And if you need any help, the\n"
 	.string "books in the back should be useful.$"
 
 MauvilleCity_BikeShop_EventScript_Rydel_Text_5:
-# 182 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+# 183 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	.string "Is that right?\pThen, I guess you have no need for\nany of my Bikes.$"

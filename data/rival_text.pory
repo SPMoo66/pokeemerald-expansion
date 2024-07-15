@@ -48,7 +48,7 @@ text Scene01_ReddText {
 	format(	"Yo, {PLAYER}? That you?\n"
 			"You actually got the default avatar?\p"
 			"I wonder if everyone will look like that or just the first person in?\p"
-			"… … …\l"
+			"… … …\n"
 			"Me? This is my old custom avatar from the base game.\p"
 			"It's actually pretty cool. It's almost like I'm continuing my journey.\p"
 			"First I conquered Kanto, and now I'll reign supreme over Hoenn, too!\p"

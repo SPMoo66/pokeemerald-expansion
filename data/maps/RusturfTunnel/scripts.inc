@@ -304,7 +304,9 @@ RusturfTunnel_EventScript_Grunt::
 	waitfanfare
 	applymovement LOCALID_BRINEY, Common_Movement_FacePlayer
 	waitmovement 0
-	message RusturfTunnel_Text_ThankYouLetsGoHomePeeko
+	msgbox RusturfTunnel_Text_ThankYouLetsGoHomePeeko, MSGBOX_DEFAULT
+	speakername (CommonText_Peeko)
+	message RusturfTunnel_Text_Peeko2
 	waitmessage
 	waitse
 	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
@@ -386,7 +388,7 @@ RusturfTunnel_Text_ComeAndGetSome:
 	.string "Come and get some, then!$"
 
 RusturfTunnel_Text_Peeko:
-	.string "Peeko: Pii pihyoh!$"
+	.string "Pii pihyoh!$"
 
 RusturfTunnel_Text_GruntIntro:
 	.string "Grah, keelhaul it all!\p"
@@ -427,8 +429,10 @@ RusturfTunnel_Text_ThankYouLetsGoHomePeeko:
 	.string "You can usually find me in my cottage\n"
 	.string "by the sea near Petalburg Woods.\p"
 	.string "Come, Peeko, we should make our way\n"
-	.string "home.\p"
-	.string "Peeko: Pihyoh!$"
+	.string "home.$"
+
+RusturfTunnel_Text_Peeko2:
+	.string "Pihyoh!$"
 
 RusturfTunnel_Text_WhyCantTheyKeepDigging:
 	.string "… …\p"

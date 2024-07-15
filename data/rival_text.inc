@@ -71,7 +71,7 @@ Scene01_ReddText::
 	.string "You actually got the default avatar?\p"
 	.string "I wonder if everyone will look like that\n"
 	.string "or just the first person in?\p"
-	.string "… … …\l"
+	.string "… … …\n"
 	.string "Me? This is my old custom avatar from\l"
 	.string "the base game.\p"
 	.string "It's actually pretty cool. It's almost\n"

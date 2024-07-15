@@ -1629,7 +1629,7 @@ PetalburgCity_EventScript_Simulation::
 PetalburgCity_EventScript_Simulation_Text_0:
 # 809 "data/maps/PetalburgCity/scripts.pory"
 	.string "I heard there's a realistic computer\n"
-	.string "simulation out there.\n"
-	.string "If you lose a Pokémon battle in it, you\l"
-	.string "lose one in real life!\n"
+	.string "simulation out there.\p"
+	.string "If you lose a Pokémon battle in it, you\n"
+	.string "lose one in real life!\p"
 	.string "That's just too scary.$"

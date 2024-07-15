@@ -81,6 +81,7 @@ Route104_MrBrineysHouse_EventScript_DeclineSailing::
 Route104_MrBrineysHouse_EventScript_SailToDewford::
 	speakername (CommonText_MrBriney)
 	msgbox Route104_MrBrineysHouse_Text_SetSailForDewford, MSGBOX_DEFAULT
+	closemessage
 	call EventScript_BackupMrBrineyLocation
 	setvar VAR_BOARD_BRINEY_BOAT_STATE, 1
 	clearflag FLAG_HIDE_ROUTE_104_MR_BRINEY

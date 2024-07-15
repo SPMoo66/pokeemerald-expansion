@@ -46,7 +46,7 @@ DewfordTown_Gym_Text_GymGuideAdvice::
 	.string "Pokémon is asking for trouble.\p"
 	.string "But using Rock, Electric, Dark, or\n"
 	.string "Ghost-type Pokémon may help give you\l"
-	.string "the upperhand.\p"
+	.string "the upper hand.\p"
 	.string "What's worse, the Gym is as dark as\n"
 	.string "the ocean floor.\p"
 	.string "But it will get brighter after defeating\n"

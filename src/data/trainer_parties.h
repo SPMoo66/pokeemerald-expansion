@@ -213,19 +213,19 @@ static const struct TrainerMon sParty_Declan[] = {
 
 static const struct TrainerMon sParty_GruntRusturfTunnel[] = {
     {
-    .lvl = 11,
+    .lvl = 12,
     .species = SPECIES_SPINARAK,
     },
     {
-    .lvl = 11,
+    .lvl = 12,
     .species = SPECIES_WOOPER_PALDEAN,
     },
     {
-    .lvl = 12,
+    .lvl = 13,
     .species = SPECIES_RATTATA_ALOLAN,
     },
     {
-    .lvl = 12,
+    .lvl = 13,
     .species = SPECIES_NICKIT,
     .heldItem = ITEM_ORAN_BERRY
     }

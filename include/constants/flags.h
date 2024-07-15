@@ -246,7 +246,7 @@
 #define FLAG_WINGULL_DELIVERED_MAIL          0xE0
 #define FLAG_RECEIVED_20_COINS               0xE1
 #define FLAG_RECEIVED_STARTER_DOLL           0xE2
-#define FLAG_RECEIVED_GOOD_ROD               0xE3
+#define FLAG_UNUSED_0x0E3                    0xE3 // Unused, was for good rod but that is now a challenge ball
 #define FLAG_REGI_DOORS_OPENED               0xE4
 #define FLAG_RECEIVED_BOTTLE_CAP_COZMOS      0xE5
 #define FLAG_UNUSED_0xE6                     0xE6 // Unused, was used when receiving Sludge Bomb TM gift

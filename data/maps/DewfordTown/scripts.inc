@@ -91,24 +91,8 @@ DewfordTown_EventScript_HallSign::
 DewfordTown_EventScript_GoodRodFisherman::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_GOOD_ROD, DewfordTown_EventScript_HowsFishing
-	msgbox DewfordTown_Text_GettingItchToFish, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_GiveGoodRod
-	goto_if_eq VAR_RESULT, NO, DewfordTown_EventScript_NotGettingItchToFish
-	end
-
-DewfordTown_EventScript_GiveGoodRod::
-	msgbox DewfordTown_Text_GiveYouOneOfMyRods, MSGBOX_DEFAULT
-	giveitem ITEM_GOOD_ROD
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_GOOD_ROD
-	msgbox DewfordTown_Text_ThrowInFishingAdvice, MSGBOX_DEFAULT
-	release
-	end
-
-DewfordTown_EventScript_NotGettingItchToFish::
-	msgbox DewfordTown_Text_ThatsTooBadThen, MSGBOX_DEFAULT
-	release
+	goto_if_set FLAG_CHALLENGE_BALL_GRANITE_CAVE_1, DewfordTown_EventScript_HowsFishing
+	msgbox DewfordTown_Text_GettingItchToFish, MSGBOX_DEFAULT
 	end
 
 DewfordTown_EventScript_HowsFishing::
@@ -695,27 +679,6 @@ DewfordTown_Text_SlateportWereSettingSail:
 DewfordTown_Text_GettingItchToFish:
 	.string "This is a renowned fishing spot.\n"
 	.string "Are you getting the itch to fish?$"
-
-DewfordTown_Text_GiveYouOneOfMyRods:
-	.string "I hear you, and I like what\n"
-	.string "you're saying!\p"
-	.string "I'll give you one of my fishing Rods.$"
-
-DewfordTown_Text_ThrowInFishingAdvice:
-	.string "And, as an added bonus, I'll even throw\n"
-	.string "in a little fishing advice!\p"
-	.string "First, you want to face the water,\n"
-	.string "then use the Rod.\p"
-	.string "Focus your mind…\n"
-	.string "If you get a bite, pull on the Rod.\p"
-	.string "Sometimes you can snag something\n"
-	.string "immediately, but with bigger catches,\l"
-	.string "you need to time the pulls on your Rod\l"
-	.string "to haul them in.$"
-
-DewfordTown_Text_ThatsTooBadThen:
-	.string "Oh, is that so?\n"
-	.string "That's too bad, then.$"
 
 DewfordTown_Text_HowsYourFishing:
 	.string "Yo!\n"

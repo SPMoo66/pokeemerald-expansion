@@ -10,3 +10,7 @@ script GraniteCave_1F_EventScript_Hiker {
 	release
 	end
 }
+
+script TrainerTipsEscapeRope {
+	msgbox(format("Trainer Tips\pAn Escape Rope is a reusable item that can be used to exit a cave at any time."), MSGBOX_SIGN)
+}

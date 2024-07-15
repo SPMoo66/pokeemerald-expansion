@@ -750,7 +750,21 @@ Route103_EventScript_ChallengeBall1_2:
 	goto Route103_EventScript_ChallengeBall1_1
 
 
+TrainerTipsBattleSpeed::
+# 379 "data/maps/Route103/scripts.pory"
+	msgbox TrainerTipsBattleSpeed_Text_0, MSGBOX_SIGN
+	return
+
+
 Route103_EventScript_ChallengeBall1_Text_0:
 # 361 "data/maps/Route103/scripts.pory"
 	.string "You sense some real horsepower in wait.\p"
 	.string "Reach out for the item?$"
+
+TrainerTipsBattleSpeed_Text_0:
+# 379 "data/maps/Route103/scripts.pory"
+	.string "Trainer Tips\p"
+	.string "If battle speed is set higher than 1x,\n"
+	.string "hold the L button in battle to\l"
+	.string "temporarily slow the battle down to\l"
+	.string "normal speed.$"

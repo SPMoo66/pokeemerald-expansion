@@ -873,6 +873,12 @@ MossdeepCity_EventScript_WhiteRock::
 	return
 
 
+TrainerTipsDiveSprinting::
+# 443 "data/maps/MossdeepCity/scripts.pory"
+	msgbox TrainerTipsDiveSprinting_Text_0, MSGBOX_SIGN
+	return
+
+
 MossdeepCity_EventScript_ChallengeBall1_Text_0:
 # 420 "data/maps/MossdeepCity/scripts.pory"
 	.string "You feel a magical sensation as you\n"
@@ -882,3 +888,9 @@ MossdeepCity_EventScript_ChallengeBall1_Text_0:
 MossdeepCity_EventScript_WhiteRock_Text_0:
 # 439 "data/maps/MossdeepCity/scripts.pory"
 	.string "It's a white rock.$"
+
+TrainerTipsDiveSprinting_Text_0:
+# 443 "data/maps/MossdeepCity/scripts.pory"
+	.string "Trainer Tips\p"
+	.string "While diving, hold the A or B buttons to\n"
+	.string "move faster.$"

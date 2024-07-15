@@ -438,3 +438,7 @@ script MossdeepCity_EventScript_ChallengeBall1 {
 script MossdeepCity_EventScript_WhiteRock {
 	msgbox ("It's a white rock.", MSGBOX_SIGN)
 }
+
+script TrainerTipsDiveSprinting {
+	msgbox(format("Trainer Tips\pWhile diving, hold the A or B buttons to move faster."), MSGBOX_SIGN)
+}

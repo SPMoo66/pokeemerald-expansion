@@ -520,8 +520,20 @@ Route118_EventScript_ChallengeBall1_2:
 	goto Route118_EventScript_ChallengeBall1_1
 
 
+TrainerTipsSurfSprinting::
+# 264 "data/maps/Route118/scripts.pory"
+	msgbox TrainerTipsSurfSprinting_Text_0, MSGBOX_SIGN
+	return
+
+
 Route118_EventScript_ChallengeBall1_Text_0:
 # 246 "data/maps/Route118/scripts.pory"
 	.string "You sense enemies with sharp claws\n"
 	.string "ready to strike.\p"
 	.string "Reach out for the item?$"
+
+TrainerTipsSurfSprinting_Text_0:
+# 264 "data/maps/Route118/scripts.pory"
+	.string "Trainer Tips\p"
+	.string "While surfing, hold the B button to move\n"
+	.string "faster.$"

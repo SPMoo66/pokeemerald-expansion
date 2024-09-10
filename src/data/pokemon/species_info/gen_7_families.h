@@ -3672,33 +3672,34 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #endif //P_FAMILY_TYPE_NULL
 
 #if P_FAMILY_MINIOR
-#define MINIOR_MISC_INFO(color)                                             \
-        .types = MON_TYPES(TYPE_ROCK, TYPE_FLYING),                         \
-        .catchRate = 30,                                                    \
-        .expYield = 154,                                                    \
-        .evYield_Defense = 1,                                               \
-        .evYield_SpDefense = 1,                                             \
-        .itemRare = ITEM_STAR_PIECE,                                        \
-        .genderRatio = MON_GENDERLESS,                                      \
-        .eggCycles = 25,                                                    \
-        .friendship = STANDARD_FRIENDSHIP,                                  \
-        .growthRate = GROWTH_MEDIUM_SLOW,                                   \
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),                     \
-        .abilities = { ABILITY_SHIELDS_DOWN, ABILITY_NONE, ABILITY_NONE },  \
-        .bodyColor = color,                                                 \
-        .noFlip = TRUE,                                                     \
-        .speciesName = _("Minior"),                                         \
-        .cryId = CRY_MINIOR,                                                \
-        .natDexNum = NATIONAL_DEX_MINIOR,                                   \
-        .categoryName = _("Meteor"),                                        \
-        .height = 3,                                                        \
-        .pokemonScale = 530,                                                \
-        .pokemonOffset = 13,                                                \
-        .trainerScale = 256,                                                \
-        .trainerOffset = 0,                                                 \
-        FOOTPRINT(Minior)                                                   \
-        .levelUpLearnset = sMiniorLevelUpLearnset,                          \
-        .teachableLearnset = sMiniorTeachableLearnset,                      \
+#define MINIOR_MISC_INFO(color)                                                \
+        .types = MON_TYPES(TYPE_ROCK, TYPE_FLYING),                            \
+        .catchRate = 30,                                                       \
+        .expYield = 154,                                                       \
+        .evYield_Defense = 1,                                                  \
+        .evYield_SpDefense = 1,                                                \
+        .itemRare = ITEM_STAR_PIECE,                                           \
+        .genderRatio = MON_GENDERLESS,                                         \
+        .eggCycles = 25,                                                       \
+        .friendship = STANDARD_FRIENDSHIP,                                     \
+        .growthRate = GROWTH_MEDIUM_SLOW,                                      \
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),                        \
+        .abilities = { ABILITY_SHIELDS_DOWN, ABILITY_NONE, ABILITY_NONE },     \
+        .bodyColor = color,                                                    \
+        .noFlip = TRUE,                                                        \
+        .speciesName = _("Minior"),                                            \
+        .cryId = CRY_MINIOR,                                                   \
+        .natDexNum = NATIONAL_DEX_MINIOR,                                      \
+        .categoryName = _("Meteor"),                                           \
+        .height = 3,                                                           \
+        .pokemonScale = 530,                                                   \
+        .pokemonOffset = 13,                                                   \
+        .trainerScale = 256,                                                   \
+        .trainerOffset = 0,                                                    \
+        FOOTPRINT(Minior)                                                      \
+        .levelUpLearnset = sMiniorLevelUpLearnset,                             \
+        .teachableLearnset = sMiniorTeachableLearnset,                         \
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DAWN_STONE, SPECIES_COGMENT}), \
         .formSpeciesIdTable = sMiniorFormSpeciesIdTable
 
 #define MINIOR_METEOR_SPECIES_INFO(Form)                        \

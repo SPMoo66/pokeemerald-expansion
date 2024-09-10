@@ -415,25 +415,6 @@ mapscripts MossdeepCity_MapScripts {
 	}
 }
 
-script MossdeepCity_EventScript_ChallengeBall1 {
-	lock
-	msgbox(format("You feel a magical sensation as you approach.\pReach out for the item?"), MSGBOX_YESNO)
-	if (var(VAR_RESULT) == 1) {
-		setflag (FLAG_NO_CATCHING)
-		setflag (FLAG_NO_RUNNING)
-		setflag (FLAG_SMART_WILD_AI)
-		setvar (VAR_STARTING_STATUS, 6)
-		setwildbattle (SPECIES_CONTAGEON, 50, ITEM_NONE, 2, SPECIES_SLAKING, 50, ITEM_NONE, 0, MOVE_PROTECT, MOVE_DIRE_CLAW, MOVE_SPECTRAL_THIEF, MOVE_TAUNT, MOVE_BODY_SLAM, MOVE_HAMMER_ARM, MOVE_PLAY_ROUGH, MOVE_SHADOW_CLAW)
-		dowildbattle
-		setvar (VAR_STARTING_STATUS, 0)
-		clearflag (FLAG_NO_CATCHING)
-		clearflag (FLAG_NO_RUNNING)
-		clearflag (FLAG_SMART_WILD_AI)
-		finditem (ITEM_FOCUS_SASH, 1)
-		setwildbattle (SPECIES_BULBASAUR, 1)
-	}
-	release
-}
 
 script MossdeepCity_EventScript_WhiteRock {
 	msgbox ("It's a white rock.", MSGBOX_SIGN)

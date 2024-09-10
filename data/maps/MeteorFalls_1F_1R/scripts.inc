@@ -562,47 +562,6 @@ MeteorFalls_1F_1R_EventScript_ProfCozmo_2:
 	goto MeteorFalls_1F_1R_EventScript_ProfCozmo_1
 
 
-MeteorFalls_EventScript_ChallengeBall1::
-# 322 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	lock
-# 323 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	msgbox MeteorFalls_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 324 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq MeteorFalls_EventScript_ChallengeBall1_2
-MeteorFalls_EventScript_ChallengeBall1_1:
-# 338 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	release
-	return
-
-MeteorFalls_EventScript_ChallengeBall1_2:
-# 325 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setflag FLAG_NO_CATCHING
-# 326 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setflag FLAG_NO_RUNNING
-# 327 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setflag FLAG_SMART_WILD_AI
-# 328 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setvar VAR_STARTING_STATUS, 1
-# 329 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setwildbattle SPECIES_FLOETTE, 32, ITEM_NONE, 2, SPECIES_BELLIBOLT, 32, ITEM_NONE, 0, MOVE_NATURE_POWER, MOVE_SECRET_POWER, MOVE_MAGICAL_LEAF, MOVE_DRAINING_KISS, MOVE_VOLT_SWITCH, MOVE_CHILLING_WATER, MOVE_ACID_SPRAY, MOVE_MUD_SLAP
-# 330 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	dowildbattle
-# 331 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setvar VAR_STARTING_STATUS, 0
-# 332 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	clearflag FLAG_NO_CATCHING
-# 333 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	clearflag FLAG_NO_RUNNING
-# 334 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	clearflag FLAG_SMART_WILD_AI
-# 335 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	finditem ITEM_ASSAULT_VEST, 1
-# 336 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setwildbattle SPECIES_BULBASAUR, 1
-	goto MeteorFalls_EventScript_ChallengeBall1_1
-
-
 MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene_Text_0:
 # 35 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	.string "Hehehe!\p"
@@ -742,9 +701,3 @@ MeteorFalls_1F_1R_EventScript_ProfCozmo_Text_2:
 # 315 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	.string "What are they going to do with that\n"
 	.string "Meteorite at Mt. Chimney?$"
-
-MeteorFalls_EventScript_ChallengeBall1_Text_0:
-# 323 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	.string "You feel static running across the\n"
-	.string "ground.\p"
-	.string "Reach out for the item?$"

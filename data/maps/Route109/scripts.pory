@@ -559,21 +559,3 @@ Route109_Text_TrainerTipsSign:
 	.string "to grow stronger than wild Pokémon.$"
 `
 
-script Route109_EventScript_ChallengeBall1 {
-	lock
-	msgbox(format("Enemies are clearly lying in wait.\pReach out for the item?"), MSGBOX_YESNO)
-	if (var(VAR_RESULT) == 1) {
-		setflag (FLAG_NO_CATCHING)
-		setflag (FLAG_NO_RUNNING)
-		setflag (FLAG_SMART_WILD_AI)
-		settotemboost (1, 1, 0, 0, 0, 1)
-		setwildbattle (SPECIES_DODUO_EMERIBIAN, 21, ITEM_NONE, 1, SPECIES_TINKATUFF, 21, ITEM_NONE, 0, MOVE_FLAME_CHARGE, MOVE_SPARK, MOVE_TAILWIND, MOVE_FEINT_ATTACK, MOVE_FAKE_OUT, MOVE_METAL_CLAW, MOVE_POUNCE, MOVE_REFLECT)
-		dowildbattle
-		clearflag (FLAG_NO_CATCHING)
-		clearflag (FLAG_NO_RUNNING)
-		clearflag (FLAG_SMART_WILD_AI)
-		finditem (ITEM_CLEAR_AMULET, 1)
-		setwildbattle (SPECIES_BULBASAUR, 1)
-	}
-	release
-}

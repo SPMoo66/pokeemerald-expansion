@@ -711,58 +711,14 @@ Route103_Text_RouteSign:
 # 356 "data/maps/Route103/scripts.pory"
 	.string "{DOWN_ARROW} Oldale Town$"
 
-Route103_EventScript_ChallengeBall1::
-# 360 "data/maps/Route103/scripts.pory"
-	lock
-# 361 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 362 "data/maps/Route103/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq Route103_EventScript_ChallengeBall1_2
-Route103_EventScript_ChallengeBall1_1:
-# 375 "data/maps/Route103/scripts.pory"
-	release
-	return
-
-Route103_EventScript_ChallengeBall1_2:
-# 363 "data/maps/Route103/scripts.pory"
-	setflag FLAG_NO_CATCHING
-# 364 "data/maps/Route103/scripts.pory"
-	setflag FLAG_NO_RUNNING
-# 365 "data/maps/Route103/scripts.pory"
-	setflag FLAG_SMART_WILD_AI
-# 366 "data/maps/Route103/scripts.pory"
-	settotemboost 3, 0, 0, 1
-# 367 "data/maps/Route103/scripts.pory"
-	setwildbattle SPECIES_JIGGLYPUFF, 23, ITEM_NONE, 2, SPECIES_MUDBRAY, 23, ITEM_NONE, 1, MOVE_HELPING_HAND, MOVE_AMNESIA, MOVE_DRAINING_KISS, MOVE_DISABLE, MOVE_BULLDOZE, MOVE_ROCK_SMASH, MOVE_SMACK_DOWN, MOVE_STOMP
-# 368 "data/maps/Route103/scripts.pory"
-	dowildbattle
-# 369 "data/maps/Route103/scripts.pory"
-	clearflag FLAG_NO_CATCHING
-# 370 "data/maps/Route103/scripts.pory"
-	clearflag FLAG_NO_RUNNING
-# 371 "data/maps/Route103/scripts.pory"
-	clearflag FLAG_SMART_WILD_AI
-# 372 "data/maps/Route103/scripts.pory"
-	finditem ITEM_BRIGHT_POWDER, 1
-# 373 "data/maps/Route103/scripts.pory"
-	setwildbattle SPECIES_BULBASAUR, 1
-	goto Route103_EventScript_ChallengeBall1_1
-
-
 TrainerTipsBattleSpeed::
-# 379 "data/maps/Route103/scripts.pory"
+# 361 "data/maps/Route103/scripts.pory"
 	msgbox TrainerTipsBattleSpeed_Text_0, MSGBOX_SIGN
 	return
 
 
-Route103_EventScript_ChallengeBall1_Text_0:
-# 361 "data/maps/Route103/scripts.pory"
-	.string "You sense some real horsepower in wait.\p"
-	.string "Reach out for the item?$"
-
 TrainerTipsBattleSpeed_Text_0:
-# 379 "data/maps/Route103/scripts.pory"
+# 361 "data/maps/Route103/scripts.pory"
 	.string "Trainer Tips\p"
 	.string "If battle speed is set higher than 1x,\n"
 	.string "hold the L button in battle to\l"

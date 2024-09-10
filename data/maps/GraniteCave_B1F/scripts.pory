@@ -26,21 +26,3 @@ GraniteCave_B1F_Text_EvelynPostBattle:
 	.string "A lit cave alone won't make me stronger!$"
 `
 
-script GraniteCave_B1F_EventScript_ChallengeBall1 {
-	lock
-	msgbox(format("You feel a drip from the ceiling.\pReach out for the item?"), MSGBOX_YESNO)
-	if (var(VAR_RESULT) == 1) {
-		setflag (FLAG_NO_CATCHING)
-		setflag (FLAG_NO_RUNNING)
-		setflag (FLAG_SMART_WILD_AI)
-		settotemboost (1, 1)
-		setwildbattle (SPECIES_LUVDISC, 18, ITEM_NONE, 1, SPECIES_POLIWHIRL, 18, ITEM_NONE, 2, MOVE_AQUA_JET, MOVE_ICY_WIND, MOVE_RAIN_DANCE, MOVE_WHIRLPOOL, MOVE_CHILLING_WATER, MOVE_MUD_SHOT, MOVE_LOW_SWEEP, MOVE_SWIFT)
-		dowildbattle
-		clearflag (FLAG_NO_CATCHING)
-		clearflag (FLAG_NO_RUNNING)
-		clearflag (FLAG_SMART_WILD_AI)
-		finditem (ITEM_GOOD_ROD, 1)
-		setwildbattle (SPECIES_BULBASAUR, 1)
-	}
-	release
-}

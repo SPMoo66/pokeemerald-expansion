@@ -356,24 +356,6 @@ Route103_Text_RouteSign:
 	.string "{DOWN_ARROW} Oldale Town$"
 `
 
-script Route103_EventScript_ChallengeBall1 {
-	lock
-	msgbox(format("You sense some real horsepower in wait.\pReach out for the item?"), MSGBOX_YESNO)
-	if (var(VAR_RESULT) == 1) {
-		setflag (FLAG_NO_CATCHING)
-		setflag (FLAG_NO_RUNNING)
-		setflag (FLAG_SMART_WILD_AI)
-		settotemboost (3, 0, 0, 1)
-		setwildbattle (SPECIES_JIGGLYPUFF, 23, ITEM_NONE, 2, SPECIES_MUDBRAY, 23, ITEM_NONE, 1, MOVE_HELPING_HAND, MOVE_AMNESIA, MOVE_DRAINING_KISS, MOVE_DISABLE, MOVE_BULLDOZE, MOVE_ROCK_SMASH, MOVE_SMACK_DOWN, MOVE_STOMP)
-		dowildbattle
-		clearflag (FLAG_NO_CATCHING)
-		clearflag (FLAG_NO_RUNNING)
-		clearflag (FLAG_SMART_WILD_AI)
-		finditem (ITEM_BRIGHT_POWDER, 1)
-		setwildbattle (SPECIES_BULBASAUR, 1)
-	}
-	release
-}
 
 script TrainerTipsBattleSpeed {
 	msgbox(format("Trainer Tips\pIf battle speed is set higher than 1x, hold the L button in battle to temporarily slow the battle down to normal speed."), MSGBOX_SIGN)

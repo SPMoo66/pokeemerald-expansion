@@ -1,0 +1,372 @@
+script Route106_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You feel grass growing beneath the sand.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		setvar (VAR_STARTING_STATUS, 3)
+		setwildbattle (SPECIES_GLOOM_EMERIBIAN, 17, ITEM_NONE, 0, SPECIES_SKIDDO_EMERIBIAN, 17, ITEM_NONE, 2, MOVE_MEGA_DRAIN, MOVE_SOAK, MOVE_LIFE_DEW, MOVE_BUBBLE_BEAM, MOVE_TRAILBLAZE, MOVE_INGRAIN, MOVE_GROWL, MOVE_CAMOUFLAGE)
+		dowildbattle
+		setvar (VAR_STARTING_STATUS, 0)
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_ESCAPE_ROPE, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script GraniteCave_B1F_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You feel a drip from the ceiling.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		settotemboost (1, 1)
+		setwildbattle (SPECIES_LUVDISC, 18, ITEM_NONE, 1, SPECIES_POLIWHIRL, 18, ITEM_NONE, 2, MOVE_AQUA_JET, MOVE_ICY_WIND, MOVE_RAIN_DANCE, MOVE_WHIRLPOOL, MOVE_CHILLING_WATER, MOVE_MUD_SHOT, MOVE_LOW_SWEEP, MOVE_SWIFT)
+		dowildbattle
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_GOOD_ROD, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script GraniteCave_B2F_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You sense an enemy in a defensive position.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		settotemboost (1, 0, 1, 0, 0, 1)
+		setwildbattle (SPECIES_ARIADOS_EMERIBIAN, 28, ITEM_NONE, 0, SPECIES_SMOOCHUM, 28, ITEM_NONE, 0, MOVE_THUNDER_FANG, MOVE_POISON_STING, MOVE_HONE_CLAWS, MOVE_CONSTRICT, MOVE_DRAINING_KISS, MOVE_ICY_WIND, MOVE_CONFUSION, MOVE_WATER_PULSE)
+		dowildbattle
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_EXPERT_BELT, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script Route109_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("Enemies are clearly lying in wait.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		settotemboost (1, 1, 0, 0, 0, 1)
+		setwildbattle (SPECIES_DODUO_EMERIBIAN, 21, ITEM_NONE, 1, SPECIES_TINKATUFF, 21, ITEM_NONE, 0, MOVE_FLAME_CHARGE, MOVE_SPARK, MOVE_TAILWIND, MOVE_FEINT_ATTACK, MOVE_FAKE_OUT, MOVE_METAL_CLAW, MOVE_POUNCE, MOVE_REFLECT)
+		dowildbattle
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_CLEAR_AMULET, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script Route103_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You sense some real horsepower in wait.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		settotemboost (3, 0, 0, 1)
+		setwildbattle (SPECIES_JIGGLYPUFF, 23, ITEM_NONE, 2, SPECIES_MUDBRAY, 23, ITEM_NONE, 1, MOVE_HELPING_HAND, MOVE_AMNESIA, MOVE_DRAINING_KISS, MOVE_DISABLE, MOVE_BULLDOZE, MOVE_ROCK_SMASH, MOVE_SMACK_DOWN, MOVE_STOMP)
+		dowildbattle
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_BRIGHT_POWDER, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script Route110_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You feel a circle of mysticism around.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		setvar (VAR_STARTING_STATUS, 4)
+		setwildbattle (SPECIES_GOTHORITA, 24, ITEM_NONE, 1, SPECIES_RIBOMBEE, 24, ITEM_NONE, 1, MOVE_CALM_MIND, MOVE_FLATTER, MOVE_PSYBEAM, MOVE_GRASS_KNOT, MOVE_NATURE_POWER, MOVE_SECRET_POWER, MOVE_STICKY_WEB, MOVE_DRAINING_KISS)
+		dowildbattle
+		setvar (VAR_STARTING_STATUS, 0)
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_WIDE_LENS, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script Route110_EventScript_ChallengeBall2 {
+	lock
+	msgbox(format("You sense a drought approaching quickly.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		settotemboost (1, 0, 0, 3)
+		setwildbattle (SPECIES_TORKOAL, 37, ITEM_NONE, 1, SPECIES_WHIMSICOTT, 37, ITEM_NONE, 2, MOVE_STEALTH_ROCK, MOVE_FLAME_CHARGE, MOVE_CURSE, MOVE_ROCK_TOMB, MOVE_TAILWIND, MOVE_GROWTH, MOVE_COTTON_SPORE, MOVE_GRASS_KNOT)
+		dowildbattle
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_ZOOM_LENS, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script Route117_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You sense a drought approaching.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		settotemboost (1, 0, 0, 1)
+		setwildbattle (SPECIES_CHERRIM, 27, ITEM_NONE, 0, SPECIES_BRELOOM_FRIBIAN, 27, ITEM_NONE, 1, MOVE_GROWTH, MOVE_TRAILBLAZE, MOVE_GRASSY_TERRAIN, MOVE_HEAL_PULSE, MOVE_MACH_PUNCH, MOVE_BULLET_SEED, MOVE_BULLDOZE, MOVE_HEADBUTT)
+		dowildbattle
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_LUCKY_EGG, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script Route112_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You see an enemy waiting in an offensive position.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		settotemboost (1, 1)
+		setwildbattle (SPECIES_OINKOLOGNE_FEMALE, 29, ITEM_NONE, 0, SPECIES_SKIPLOOM_EMERIBIAN, 29, ITEM_NONE, 2, MOVE_HEADBUTT, MOVE_STOMPING_TANTRUM, MOVE_TRAILBLAZE, MOVE_CURSE, MOVE_ICY_WIND, MOVE_ROUND, MOVE_DRAINING_KISS, MOVE_SING)
+		dowildbattle
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_LOADED_DICE, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script Route113_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You feel a magical aura.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		setvar (VAR_STARTING_STATUS, 6)
+		setwildbattle (SPECIES_ZANGOOSE, 31, ITEM_NONE, 1, SPECIES_SEVIPER, 31, ITEM_NONE, 2, MOVE_QUICK_ATTACK, MOVE_NIGHT_SLASH, MOVE_DOUBLE_KICK, MOVE_HONE_CLAWS, MOVE_BREAKING_SWIPE, MOVE_ASSURANCE, MOVE_POISON_FANG, MOVE_LICK)
+		dowildbattle
+		setvar (VAR_STARTING_STATUS, 0)
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_WISE_GLASSES, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script Route113_EventScript_ChallengeBall2 {
+	lock
+	msgbox(format("You feel a trickster's presence.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		setvar (VAR_STARTING_STATUS, 5)
+		setwildbattle (SPECIES_CLODSIRE, 31, ITEM_NONE, 1, SPECIES_QUAGSIRE, 31, ITEM_NONE, 2, MOVE_ACID_SPRAY, MOVE_CHILLING_WATER, MOVE_HELPING_HAND, MOVE_LOW_KICK, MOVE_SURF, MOVE_ENDURE, MOVE_RAIN_DANCE, MOVE_TOXIC_SPIKES)
+		dowildbattle
+		setvar (VAR_STARTING_STATUS, 0)
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_MUSCLE_BAND, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script Route114_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You see clouds forming above.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		setweather (WEATHER_RAIN)
+		doweather
+		delay (60)
+		setwildbattle (SPECIES_LUDICOLO, 32, ITEM_NONE, 1, SPECIES_ARMALDO, 32, ITEM_NONE, 2, MOVE_FAKE_OUT, MOVE_MEGA_DRAIN, MOVE_ASTONISH, MOVE_ENCORE, MOVE_X_SCISSOR, MOVE_ROCK_TOMB, MOVE_SHADOW_CLAW, MOVE_BODY_SLAM)
+		dowildbattle
+		resetweather
+		delay (60)
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_SUPER_ROD, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script MeteorFalls_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You feel static running across the ground.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		setvar (VAR_STARTING_STATUS, 1)
+		setwildbattle (SPECIES_FLOETTE, 32, ITEM_NONE, 2, SPECIES_BELLIBOLT, 32, ITEM_NONE, 0, MOVE_NATURE_POWER, MOVE_SECRET_POWER, MOVE_MAGICAL_LEAF, MOVE_DRAINING_KISS, MOVE_VOLT_SWITCH, MOVE_CHILLING_WATER, MOVE_ACID_SPRAY, MOVE_MUD_SLAP)
+		dowildbattle
+		setvar (VAR_STARTING_STATUS, 0)
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_ASSAULT_VEST, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script Route118_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You sense enemies with sharp claws ready to strike.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		settotemboost (1, 0, 1, 0, 0, 1)
+		setwildbattle (SPECIES_FEAROW, 37, ITEM_NONE, 2, SPECIES_ABSOL, 37, ITEM_NONE, 1, MOVE_FOCUS_ENERGY, MOVE_DRILL_RUN, MOVE_DRILL_PECK, MOVE_STEEL_WING, MOVE_NIGHT_SLASH, MOVE_DETECT, MOVE_SHADOW_CLAW, MOVE_THUNDER_WAVE)
+		dowildbattle
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_SCOPE_LENS, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script Route123_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You sense enemies with sharp claws ready to strike.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		settotemboost (1, 1)
+		setwildbattle (SPECIES_TITANEON, 38, ITEM_NONE, 2, SPECIES_NINETALES_EMERIBIAN, 38, ITEM_NONE, 0, MOVE_HEAL_ORDER, MOVE_PARABOLIC_CHARGE, MOVE_METAL_CLAW, MOVE_HELPING_HAND, MOVE_FLAME_BURST, MOVE_FIRE_SPIN, MOVE_WILL_O_WISP, MOVE_HEX)
+		dowildbattle
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_LEFTOVERS, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script Route120_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("After trudging through the mud you sense enemies nearby.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		settotemboost (1, 0, 1, 0, 0, 1)
+		setwildbattle (SPECIES_WUGTRIO, 40, ITEM_NONE, 0, SPECIES_SLOWKING_GALARIAN, 40, ITEM_NONE, 1, MOVE_FLATTER, MOVE_TRIPLE_DIVE, MOVE_SUCKER_PUNCH, MOVE_HELPING_HAND, MOVE_SCALD, MOVE_PSYCHIC, MOVE_SLUDGE_BOMB, MOVE_SLACK_OFF)
+		dowildbattle
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_HEAVY_DUTY_BOOTS, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script MtPyre_Exterior_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("A strong wind blows against you.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		setvar (VAR_STARTING_STATUS, 9)
+		setwildbattle (SPECIES_GOLEM_FRIBIAN, 43, ITEM_NONE, 2, SPECIES_NOCTOWL_EMERIBIAN, 43, ITEM_NONE, 2, MOVE_EARTHQUAKE, MOVE_FLAME_WHEEL, MOVE_SHADOW_PUNCH, MOVE_ROCK_BLAST, MOVE_HYPNOSIS, MOVE_NIGHT_DAZE, MOVE_EXTRASENSORY, MOVE_AIR_SLASH)
+		dowildbattle
+		setvar (VAR_STARTING_STATUS, 0)
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_BLACK_SLUDGE, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script LilycoveCity_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You feel a wondrous sensation as you approach.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		setvar (VAR_STARTING_STATUS, 7)
+		setwildbattle (SPECIES_ELDEGOSS, 44, ITEM_NONE, 0, SPECIES_MALAMAR, 44, ITEM_NONE, 0, MOVE_COTTON_GUARD, MOVE_GIGA_DRAIN, MOVE_LIGHT_SCREEN, MOVE_POLLEN_PUFF, MOVE_SUPERPOWER, MOVE_STORED_POWER, MOVE_AERIAL_ACE, MOVE_PROTECT)
+		dowildbattle
+		setvar (VAR_STARTING_STATUS, 0)
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_ROCKY_HELMET, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script MossdeepCity_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You feel a magical sensation as you approach.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		setvar (VAR_STARTING_STATUS, 6)
+		setwildbattle (SPECIES_CONTAGEON, 50, ITEM_NONE, 2, SPECIES_SLAKING, 50, ITEM_NONE, 0, MOVE_PROTECT, MOVE_DIRE_CLAW, MOVE_SPECTRAL_THIEF, MOVE_TAUNT, MOVE_BODY_SLAM, MOVE_HAMMER_ARM, MOVE_PLAY_ROUGH, MOVE_SHADOW_CLAW)
+		dowildbattle
+		setvar (VAR_STARTING_STATUS, 0)
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_FOCUS_SASH, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}

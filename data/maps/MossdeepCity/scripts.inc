@@ -826,71 +826,24 @@ MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 	goto MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
 
-MossdeepCity_EventScript_ChallengeBall1::
-# 419 "data/maps/MossdeepCity/scripts.pory"
-	lock
-# 420 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 421 "data/maps/MossdeepCity/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq MossdeepCity_EventScript_ChallengeBall1_2
-MossdeepCity_EventScript_ChallengeBall1_1:
-# 435 "data/maps/MossdeepCity/scripts.pory"
-	release
-	return
-
-MossdeepCity_EventScript_ChallengeBall1_2:
-# 422 "data/maps/MossdeepCity/scripts.pory"
-	setflag FLAG_NO_CATCHING
-# 423 "data/maps/MossdeepCity/scripts.pory"
-	setflag FLAG_NO_RUNNING
-# 424 "data/maps/MossdeepCity/scripts.pory"
-	setflag FLAG_SMART_WILD_AI
-# 425 "data/maps/MossdeepCity/scripts.pory"
-	setvar VAR_STARTING_STATUS, 6
-# 426 "data/maps/MossdeepCity/scripts.pory"
-	setwildbattle SPECIES_CONTAGEON, 50, ITEM_NONE, 2, SPECIES_SLAKING, 50, ITEM_NONE, 0, MOVE_PROTECT, MOVE_DIRE_CLAW, MOVE_SPECTRAL_THIEF, MOVE_TAUNT, MOVE_BODY_SLAM, MOVE_HAMMER_ARM, MOVE_PLAY_ROUGH, MOVE_SHADOW_CLAW
-# 427 "data/maps/MossdeepCity/scripts.pory"
-	dowildbattle
-# 428 "data/maps/MossdeepCity/scripts.pory"
-	setvar VAR_STARTING_STATUS, 0
-# 429 "data/maps/MossdeepCity/scripts.pory"
-	clearflag FLAG_NO_CATCHING
-# 430 "data/maps/MossdeepCity/scripts.pory"
-	clearflag FLAG_NO_RUNNING
-# 431 "data/maps/MossdeepCity/scripts.pory"
-	clearflag FLAG_SMART_WILD_AI
-# 432 "data/maps/MossdeepCity/scripts.pory"
-	finditem ITEM_FOCUS_SASH, 1
-# 433 "data/maps/MossdeepCity/scripts.pory"
-	setwildbattle SPECIES_BULBASAUR, 1
-	goto MossdeepCity_EventScript_ChallengeBall1_1
-
-
 MossdeepCity_EventScript_WhiteRock::
-# 439 "data/maps/MossdeepCity/scripts.pory"
+# 420 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_WhiteRock_Text_0, MSGBOX_SIGN
 	return
 
 
 TrainerTipsDiveSprinting::
-# 443 "data/maps/MossdeepCity/scripts.pory"
+# 424 "data/maps/MossdeepCity/scripts.pory"
 	msgbox TrainerTipsDiveSprinting_Text_0, MSGBOX_SIGN
 	return
 
 
-MossdeepCity_EventScript_ChallengeBall1_Text_0:
-# 420 "data/maps/MossdeepCity/scripts.pory"
-	.string "You feel a magical sensation as you\n"
-	.string "approach.\p"
-	.string "Reach out for the item?$"
-
 MossdeepCity_EventScript_WhiteRock_Text_0:
-# 439 "data/maps/MossdeepCity/scripts.pory"
+# 420 "data/maps/MossdeepCity/scripts.pory"
 	.string "It's a white rock.$"
 
 TrainerTipsDiveSprinting_Text_0:
-# 443 "data/maps/MossdeepCity/scripts.pory"
+# 424 "data/maps/MossdeepCity/scripts.pory"
 	.string "Trainer Tips\p"
 	.string "While diving, hold the A or B buttons to\n"
 	.string "move faster.$"

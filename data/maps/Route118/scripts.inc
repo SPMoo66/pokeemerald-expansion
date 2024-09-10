@@ -481,59 +481,14 @@ Route118_Text_RouteSign119:
 # 241 "data/maps/Route118/scripts.pory"
 	.string "{UP_ARROW} Route 119$"
 
-Route118_EventScript_ChallengeBall1::
-# 245 "data/maps/Route118/scripts.pory"
-	lock
-# 246 "data/maps/Route118/scripts.pory"
-	msgbox Route118_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 247 "data/maps/Route118/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq Route118_EventScript_ChallengeBall1_2
-Route118_EventScript_ChallengeBall1_1:
-# 260 "data/maps/Route118/scripts.pory"
-	release
-	return
-
-Route118_EventScript_ChallengeBall1_2:
-# 248 "data/maps/Route118/scripts.pory"
-	setflag FLAG_NO_CATCHING
-# 249 "data/maps/Route118/scripts.pory"
-	setflag FLAG_NO_RUNNING
-# 250 "data/maps/Route118/scripts.pory"
-	setflag FLAG_SMART_WILD_AI
-# 251 "data/maps/Route118/scripts.pory"
-	settotemboost 1, 0, 1, 0, 0, 1
-# 252 "data/maps/Route118/scripts.pory"
-	setwildbattle SPECIES_FEAROW, 37, ITEM_NONE, 2, SPECIES_ABSOL, 37, ITEM_NONE, 1, MOVE_FOCUS_ENERGY, MOVE_DRILL_RUN, MOVE_DRILL_PECK, MOVE_STEEL_WING, MOVE_NIGHT_SLASH, MOVE_DETECT, MOVE_SHADOW_CLAW, MOVE_THUNDER_WAVE
-# 253 "data/maps/Route118/scripts.pory"
-	dowildbattle
-# 254 "data/maps/Route118/scripts.pory"
-	clearflag FLAG_NO_CATCHING
-# 255 "data/maps/Route118/scripts.pory"
-	clearflag FLAG_NO_RUNNING
-# 256 "data/maps/Route118/scripts.pory"
-	clearflag FLAG_SMART_WILD_AI
-# 257 "data/maps/Route118/scripts.pory"
-	finditem ITEM_SCOPE_LENS, 1
-# 258 "data/maps/Route118/scripts.pory"
-	setwildbattle SPECIES_BULBASAUR, 1
-	goto Route118_EventScript_ChallengeBall1_1
-
-
 TrainerTipsSurfSprinting::
-# 264 "data/maps/Route118/scripts.pory"
+# 246 "data/maps/Route118/scripts.pory"
 	msgbox TrainerTipsSurfSprinting_Text_0, MSGBOX_SIGN
 	return
 
 
-Route118_EventScript_ChallengeBall1_Text_0:
-# 246 "data/maps/Route118/scripts.pory"
-	.string "You sense enemies with sharp claws\n"
-	.string "ready to strike.\p"
-	.string "Reach out for the item?$"
-
 TrainerTipsSurfSprinting_Text_0:
-# 264 "data/maps/Route118/scripts.pory"
+# 246 "data/maps/Route118/scripts.pory"
 	.string "Trainer Tips\p"
 	.string "While surfing, hold the B button to move\n"
 	.string "faster.$"

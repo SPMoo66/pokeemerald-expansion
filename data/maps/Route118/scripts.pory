@@ -241,24 +241,6 @@ Route118_Text_RouteSign119:
 	.string "{UP_ARROW} Route 119$"
 `
 
-script Route118_EventScript_ChallengeBall1 {
-	lock
-	msgbox(format("You sense enemies with sharp claws ready to strike.\pReach out for the item?"), MSGBOX_YESNO)
-	if (var(VAR_RESULT) == 1) {
-		setflag (FLAG_NO_CATCHING)
-		setflag (FLAG_NO_RUNNING)
-		setflag (FLAG_SMART_WILD_AI)
-		settotemboost (1, 0, 1, 0, 0, 1)
-		setwildbattle (SPECIES_FEAROW, 37, ITEM_NONE, 2, SPECIES_ABSOL, 37, ITEM_NONE, 1, MOVE_FOCUS_ENERGY, MOVE_DRILL_RUN, MOVE_DRILL_PECK, MOVE_STEEL_WING, MOVE_NIGHT_SLASH, MOVE_DETECT, MOVE_SHADOW_CLAW, MOVE_THUNDER_WAVE)
-		dowildbattle
-		clearflag (FLAG_NO_CATCHING)
-		clearflag (FLAG_NO_RUNNING)
-		clearflag (FLAG_SMART_WILD_AI)
-		finditem (ITEM_SCOPE_LENS, 1)
-		setwildbattle (SPECIES_BULBASAUR, 1)
-	}
-	release
-}
 
 script TrainerTipsSurfSprinting {
 	msgbox(format("Trainer Tips\pWhile surfing, hold the B button to move faster."), MSGBOX_SIGN)

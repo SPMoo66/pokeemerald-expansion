@@ -44,21 +44,3 @@ GraniteCave_B2F_Sign:
 	.string "Freezing temperatures below!$"
 `
 
-script GraniteCave_B2F_EventScript_ChallengeBall1 {
-	lock
-	msgbox(format("You sense an enemy in a defensive position.\pReach out for the item?"), MSGBOX_YESNO)
-	if (var(VAR_RESULT) == 1) {
-		setflag (FLAG_NO_CATCHING)
-		setflag (FLAG_NO_RUNNING)
-		setflag (FLAG_SMART_WILD_AI)
-		settotemboost (1, 0, 1, 0, 0, 1)
-		setwildbattle (SPECIES_ARIADOS_EMERIBIAN, 28, ITEM_NONE, 0, SPECIES_SMOOCHUM, 28, ITEM_NONE, 0, MOVE_THUNDER_FANG, MOVE_POISON_STING, MOVE_HONE_CLAWS, MOVE_CONSTRICT, MOVE_DRAINING_KISS, MOVE_ICY_WIND, MOVE_CONFUSION, MOVE_WATER_PULSE)
-		dowildbattle
-		clearflag (FLAG_NO_CATCHING)
-		clearflag (FLAG_NO_RUNNING)
-		clearflag (FLAG_SMART_WILD_AI)
-		finditem (ITEM_EXPERT_BELT, 1)
-		setwildbattle (SPECIES_BULBASAUR, 1)
-	}
-	release
-}

@@ -48,22 +48,3 @@ Route106_Text_TrainerTips:
 	.string "Press the A Button if you get a bite.$"
 `
 
-script Route106_EventScript_ChallengeBall1 {
-	lock
-	msgbox(format("You feel grass growing beneath the sand.\pReach out for the item?"), MSGBOX_YESNO)
-	if (var(VAR_RESULT) == 1) {
-		setflag (FLAG_NO_CATCHING)
-		setflag (FLAG_NO_RUNNING)
-		setflag (FLAG_SMART_WILD_AI)
-		setvar (VAR_STARTING_STATUS, 3)
-		setwildbattle (SPECIES_GLOOM_EMERIBIAN, 17, ITEM_NONE, 0, SPECIES_SKIDDO_EMERIBIAN, 17, ITEM_NONE, 2, MOVE_MEGA_DRAIN, MOVE_SOAK, MOVE_LIFE_DEW, MOVE_BUBBLE_BEAM, MOVE_TRAILBLAZE, MOVE_INGRAIN, MOVE_GROWL, MOVE_CAMOUFLAGE)
-		dowildbattle
-		setvar (VAR_STARTING_STATUS, 0)
-		clearflag (FLAG_NO_CATCHING)
-		clearflag (FLAG_NO_RUNNING)
-		clearflag (FLAG_SMART_WILD_AI)
-		finditem (ITEM_ESCAPE_ROPE, 1)
-		setwildbattle (SPECIES_BULBASAUR, 1)
-	}
-	release
-}

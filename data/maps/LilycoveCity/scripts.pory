@@ -761,22 +761,3 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "I mean, we are totally happy!$"
 `
 
-script LilycoveCity_EventScript_ChallengeBall1 {
-	lock
-	msgbox(format("You feel a wondrous sensation as you approach.\pReach out for the item?"), MSGBOX_YESNO)
-	if (var(VAR_RESULT) == 1) {
-		setflag (FLAG_NO_CATCHING)
-		setflag (FLAG_NO_RUNNING)
-		setflag (FLAG_SMART_WILD_AI)
-		setvar (VAR_STARTING_STATUS, 7)
-		setwildbattle (SPECIES_ELDEGOSS, 44, ITEM_NONE, 0, SPECIES_MALAMAR, 44, ITEM_NONE, 0, MOVE_COTTON_GUARD, MOVE_GIGA_DRAIN, MOVE_LIGHT_SCREEN, MOVE_POLLEN_PUFF, MOVE_SUPERPOWER, MOVE_STORED_POWER, MOVE_AERIAL_ACE, MOVE_PROTECT)
-		dowildbattle
-		setvar (VAR_STARTING_STATUS, 0)
-		clearflag (FLAG_NO_CATCHING)
-		clearflag (FLAG_NO_RUNNING)
-		clearflag (FLAG_SMART_WILD_AI)
-		finditem (ITEM_ROCKY_HELMET, 1)
-		setwildbattle (SPECIES_BULBASAUR, 1)
-	}
-	release
-}

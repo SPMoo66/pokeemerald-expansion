@@ -202,25 +202,3 @@ Route114_Text_LanettesHouse:
 	.string "Lanette's House$"
 `
 
-script Route114_EventScript_ChallengeBall1 {
-	lock
-	msgbox(format("You see clouds forming above.\pReach out for the item?"), MSGBOX_YESNO)
-	if (var(VAR_RESULT) == 1) {
-		setflag (FLAG_NO_CATCHING)
-		setflag (FLAG_NO_RUNNING)
-		setflag (FLAG_SMART_WILD_AI)
-		setweather (WEATHER_RAIN)
-		doweather
-		delay (60)
-		setwildbattle (SPECIES_LUDICOLO, 32, ITEM_NONE, 1, SPECIES_ARMALDO, 32, ITEM_NONE, 2, MOVE_FAKE_OUT, MOVE_MEGA_DRAIN, MOVE_ASTONISH, MOVE_ENCORE, MOVE_X_SCISSOR, MOVE_ROCK_TOMB, MOVE_SHADOW_CLAW, MOVE_BODY_SLAM)
-		dowildbattle
-		resetweather
-		delay (60)
-		clearflag (FLAG_NO_CATCHING)
-		clearflag (FLAG_NO_RUNNING)
-		clearflag (FLAG_SMART_WILD_AI)
-		finditem (ITEM_SUPER_ROD, 1)
-		setwildbattle (SPECIES_BULBASAUR, 1)
-	}
-	release
-}

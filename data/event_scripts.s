@@ -1050,6 +1050,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/investor.inc"
 	.include "data/gym_guide.inc"
 	.include "data/emib_opening.inc"
+	.include "data/challenge_balls.inc"
 
 	.include "data/maps/ScorchedSlabB1F/scripts.inc"
 	.include "data/maps/SeasideGrotto/scripts.inc"

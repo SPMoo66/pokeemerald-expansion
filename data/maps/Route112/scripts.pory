@@ -145,21 +145,3 @@ Route112_Text_RouteSignLavaridge:
 	.string "{LEFT_ARROW} Lavaridge Town$"
 `
 
-script Route112_EventScript_ChallengeBall1 {
-	lock
-	msgbox(format("You see an enemy waiting in an offensive position.\pReach out for the item?"), MSGBOX_YESNO)
-	if (var(VAR_RESULT) == 1) {
-		setflag (FLAG_NO_CATCHING)
-		setflag (FLAG_NO_RUNNING)
-		setflag (FLAG_SMART_WILD_AI)
-		settotemboost (1, 1)
-		setwildbattle (SPECIES_OINKOLOGNE_FEMALE, 29, ITEM_NONE, 0, SPECIES_SKIPLOOM_EMERIBIAN, 29, ITEM_NONE, 2, MOVE_HEADBUTT, MOVE_STOMPING_TANTRUM, MOVE_TRAILBLAZE, MOVE_CURSE, MOVE_ICY_WIND, MOVE_ROUND, MOVE_DRAINING_KISS, MOVE_SING)
-		dowildbattle
-		clearflag (FLAG_NO_CATCHING)
-		clearflag (FLAG_NO_RUNNING)
-		clearflag (FLAG_SMART_WILD_AI)
-		finditem (ITEM_LOADED_DICE, 1)
-		setwildbattle (SPECIES_BULBASAUR, 1)
-	}
-	release
-}

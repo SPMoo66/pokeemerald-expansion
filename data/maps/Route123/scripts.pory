@@ -198,21 +198,3 @@ Route123_Text_BerryMastersHouse:
 	.string "Berry Master's House$"
 `
 
-script Route123_EventScript_ChallengeBall1 {
-	lock
-	msgbox(format("You sense enemies with sharp claws ready to strike.\pReach out for the item?"), MSGBOX_YESNO)
-	if (var(VAR_RESULT) == 1) {
-		setflag (FLAG_NO_CATCHING)
-		setflag (FLAG_NO_RUNNING)
-		setflag (FLAG_SMART_WILD_AI)
-		settotemboost (1, 1)
-		setwildbattle (SPECIES_TITANEON, 38, ITEM_NONE, 2, SPECIES_NINETALES_EMERIBIAN, 38, ITEM_NONE, 0, MOVE_HEAL_ORDER, MOVE_PARABOLIC_CHARGE, MOVE_METAL_CLAW, MOVE_HELPING_HAND, MOVE_FLAME_BURST, MOVE_FIRE_SPIN, MOVE_WILL_O_WISP, MOVE_HEX)
-		dowildbattle
-		clearflag (FLAG_NO_CATCHING)
-		clearflag (FLAG_NO_RUNNING)
-		clearflag (FLAG_SMART_WILD_AI)
-		finditem (ITEM_LEFTOVERS, 1)
-		setwildbattle (SPECIES_BULBASAUR, 1)
-	}
-	release
-}

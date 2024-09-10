@@ -437,42 +437,42 @@ static const struct TrainerMon sParty_Zander[] = {
 
 static const struct TrainerMon sParty_ShellyWeatherInstitute[] = {
     {
-    .lvl = 34,
+    .lvl = 35,
     .species = SPECIES_VILEPLUME,
     .ability = ABILITY_EFFECT_SPORE,
     .heldItem = ITEM_ROCKY_HELMET,
     .moves = {MOVE_STUN_SPORE, MOVE_LEECH_SEED, MOVE_STRENGTH_SAP, MOVE_GIGA_DRAIN}
     },
     {
-    .lvl = 34,
+    .lvl = 35,
     .species = SPECIES_OCTILLERY_FRIBIAN,
     .ability = ABILITY_SNIPER,
     .heldItem = ITEM_SCOPE_LENS,
     .moves = {MOVE_BUBBLE_BEAM, MOVE_GUNK_SHOT, MOVE_OCTOLOCK, MOVE_INCINERATE}
     },
     {
-    .lvl = 35,
+    .lvl = 36,
     .species = SPECIES_JUMPLUFF,
     .ability = ABILITY_INFILTRATOR,
     .heldItem = ITEM_FOCUS_SASH,
     .moves = {MOVE_TAILWIND, MOVE_METRONOME, MOVE_ENCORE, MOVE_LIGHT_SCREEN}
     },
     {
-    .lvl = 35,
+    .lvl = 36,
     .species = SPECIES_WISHIWASHI,
     .ability = ABILITY_SCHOOLING,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_FLIP_TURN, MOVE_BRINE, MOVE_REST, MOVE_SLEEP_TALK}
     },
     {
-    .lvl = 36,
+    .lvl = 37,
     .species = SPECIES_SHIFTRY,
     .ability = ABILITY_WIND_RIDER,
     .heldItem = ITEM_QUICK_CLAW,
     .moves = {MOVE_TAILWIND, MOVE_TRAILBLAZE, MOVE_RAZOR_LEAF, MOVE_KNOCK_OFF}
     },
     {
-    .lvl = 37,
+    .lvl = 38,
     .species = SPECIES_SHARPEDO,
     .ability = ABILITY_SPEED_BOOST,
     .heldItem = ITEM_RAZOR_CLAW,
@@ -7666,23 +7666,23 @@ static const struct TrainerMon sParty_BrendanRoute110Mudkip[] = {
 
 static const struct TrainerMon sParty_BrendanRoute119Mudkip[] = {
     {
-    .lvl = 33,
+    .lvl = 35,
     .species = SPECIES_DIGGERSBY,
     },
     {
-    .lvl = 32,
+    .lvl = 34,
     .species = SPECIES_TRANQUILL,
     },
     {
-    .lvl = 32,
+    .lvl = 34,
     .species = SPECIES_MORGREM,
     },
     {
-    .lvl = 31,
+    .lvl = 33,
     .species = SPECIES_SNORLAX,
     },
     {
-    .lvl = 36,
+    .lvl = 38,
     .species = SPECIES_DECIDUEYE_HISUIAN,
     }
 };
@@ -7719,23 +7719,23 @@ static const struct TrainerMon sParty_BrendanRoute110Treecko[] = {
 
 static const struct TrainerMon sParty_BrendanRoute119Treecko[] = {
     {
-    .lvl = 33,
+    .lvl = 35,
     .species = SPECIES_TOXTRICITY,
     },
     {
-    .lvl = 32,
+    .lvl = 34,
     .species = SPECIES_TRANQUILL,
     },
     {
-    .lvl = 32,
+    .lvl = 34,
     .species = SPECIES_MORGREM,
     },
     {
-    .lvl = 31,
+    .lvl = 33,
     .species = SPECIES_SNORLAX,
     },
     {
-    .lvl = 36,
+    .lvl = 38,
     .species = SPECIES_INCINEROAR,
     }
 };
@@ -7772,23 +7772,23 @@ static const struct TrainerMon sParty_BrendanRoute110Torchic[] = {
 
 static const struct TrainerMon sParty_BrendanRoute119Torchic[] = {
     {
-    .lvl = 33,
+    .lvl = 35,
     .species = SPECIES_MR_MIME_GALARIAN,
     },
     {
-    .lvl = 32,
+    .lvl = 34,
     .species = SPECIES_TRANQUILL,
     },
     {
-    .lvl = 32,
+    .lvl = 34,
     .species = SPECIES_MORGREM,
     },
     {
-    .lvl = 31,
+    .lvl = 33,
     .species = SPECIES_SNORLAX,
     },
     {
-    .lvl = 36,
+    .lvl = 38,
     .species = SPECIES_INTELEON,
     }
 };
@@ -7825,23 +7825,23 @@ static const struct TrainerMon sParty_MayRoute110Mudkip[] = {
 
 static const struct TrainerMon sParty_MayRoute119Mudkip[] = {
     {
-    .lvl = 33,
+    .lvl = 35,
     .species = SPECIES_NIDOQUEEN,
     },
     {
-    .lvl = 32,
+    .lvl = 34,
     .species = SPECIES_TRANQUILL,
     },
     {
-    .lvl = 32,
+    .lvl = 34,
     .species = SPECIES_GOTHORITA,
     },
     {
-    .lvl = 31,
+    .lvl = 33,
     .species = SPECIES_LOPUNNY,
     },
     {
-    .lvl = 36,
+    .lvl = 38,
     .species = SPECIES_MEOWSCARADA,
     }
 };
@@ -7878,23 +7878,23 @@ static const struct TrainerMon sParty_MayRoute110Treecko[] = {
 
 static const struct TrainerMon sParty_MayRoute119Treecko[] = {
     {
-    .lvl = 33,
+    .lvl = 35,
     .species = SPECIES_LILLIGANT,
     },
     {
-    .lvl = 32,
+    .lvl = 34,
     .species = SPECIES_TRANQUILL,
     },
     {
-    .lvl = 32,
+    .lvl = 34,
     .species = SPECIES_GOTHORITA,
     },
     {
-    .lvl = 31,
+    .lvl = 33,
     .species = SPECIES_LOPUNNY,
     },
     {
-    .lvl = 36,
+    .lvl = 38,
     .species = SPECIES_DELPHOX,
     }
 };
@@ -7931,23 +7931,23 @@ static const struct TrainerMon sParty_MayRoute110Torchic[] = {
 
 static const struct TrainerMon sParty_MayRoute119Torchic[] = {
     {
-    .lvl = 33,
+    .lvl = 35,
     .species = SPECIES_FROSLASS,
     },
     {
-    .lvl = 32,
+    .lvl = 34,
     .species = SPECIES_TRANQUILL,
     },
     {
-    .lvl = 32,
+    .lvl = 34,
     .species = SPECIES_GOTHORITA,
     },
     {
-    .lvl = 31,
+    .lvl = 33,
     .species = SPECIES_LOPUNNY,
     },
     {
-    .lvl = 36,
+    .lvl = 38,
     .species = SPECIES_PRIMARINA,
     }
 };

@@ -63,6 +63,7 @@ LavaridgeTown_EventScript_RivalGiveGoGoggles::
 LavaridgeTown_EventScript_MayGiveGoGoggles::
 	speakername (CommonText_May)
 	msgbox LavaridgeTown_Text_MayNiceBadgesTakeThis, MSGBOX_DEFAULT
+	closemessage
 	giveitem ITEM_GO_GOGGLES
 	setflag FLAG_RECEIVED_GO_GOGGLES
 	speakername (CommonText_May)

@@ -10863,7 +10863,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = COMPOUND_STRING("Charge Beam"),
         .description = COMPOUND_STRING(
             "Fires a beam of electricity.\n"
-            "May raise Sp. Atk."),
+            "Raises Sp. Atk."),
         .effect = EFFECT_HIT,
         .power = 50,
         .type = TYPE_ELECTRIC,

@@ -370,3 +370,49 @@ script MossdeepCity_EventScript_ChallengeBall1 {
 	}
 	release
 }
+
+script Route127_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You sense an imminent downpour.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		setweather (WEATHER_RAIN)
+		doweather
+		delay (60)
+		setwildbattle (SPECIES_KINGDRA, 54, ITEM_NONE, 1, SPECIES_CACTURNE, 54, ITEM_NONE, 2, MOVE_DRAGON_DANCE, MOVE_DRAGON_PULSE, MOVE_SURF, MOVE_FOCUS_ENERGY, MOVE_SPIKY_SHIELD, MOVE_RAIN_DANCE, MOVE_NEEDLE_ARM, MOVE_NIGHT_SLASH)
+		dowildbattle
+		resetweather
+		delay (60)
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_SUPER_ROD, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script Route132_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You see stray snowflakes falling.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		setweather (WEATHER_SNOW)
+		doweather
+		delay (60)
+		setwildbattle (SPECIES_VANILLUXE, 57, ITEM_NONE, 0, SPECIES_TREVENANT_EMERIBIAN, 57, ITEM_NONE, 0, MOVE_FREEZE_DRY, MOVE_AURORA_VEIL, MOVE_HYPER_VOICE, MOVE_FLASH_CANNON, MOVE_SPIRIT_BREAK, MOVE_HORN_LEECH, MOVE_INGRAIN, MOVE_LEECH_SEED)
+		dowildbattle
+		resetweather
+		delay (60)
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_SUPER_ROD, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}

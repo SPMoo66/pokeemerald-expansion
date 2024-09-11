@@ -763,6 +763,100 @@ MossdeepCity_EventScript_ChallengeBall1_2:
 	goto MossdeepCity_EventScript_ChallengeBall1_1
 
 
+Route127_EventScript_ChallengeBall1::
+# 375 "data/challenge_balls.pory"
+	lock
+# 376 "data/challenge_balls.pory"
+	msgbox Route127_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
+# 377 "data/challenge_balls.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Route127_EventScript_ChallengeBall1_2
+Route127_EventScript_ChallengeBall1_1:
+# 394 "data/challenge_balls.pory"
+	release
+	return
+
+Route127_EventScript_ChallengeBall1_2:
+# 378 "data/challenge_balls.pory"
+	setflag FLAG_NO_CATCHING
+# 379 "data/challenge_balls.pory"
+	setflag FLAG_NO_RUNNING
+# 380 "data/challenge_balls.pory"
+	setflag FLAG_SMART_WILD_AI
+# 381 "data/challenge_balls.pory"
+	setweather WEATHER_RAIN
+# 382 "data/challenge_balls.pory"
+	doweather
+# 383 "data/challenge_balls.pory"
+	delay 60
+# 384 "data/challenge_balls.pory"
+	setwildbattle SPECIES_KINGDRA, 54, ITEM_NONE, 1, SPECIES_CACTURNE, 54, ITEM_NONE, 2, MOVE_DRAGON_DANCE, MOVE_DRAGON_PULSE, MOVE_SURF, MOVE_FOCUS_ENERGY, MOVE_SPIKY_SHIELD, MOVE_RAIN_DANCE, MOVE_NEEDLE_ARM, MOVE_NIGHT_SLASH
+# 385 "data/challenge_balls.pory"
+	dowildbattle
+# 386 "data/challenge_balls.pory"
+	resetweather
+# 387 "data/challenge_balls.pory"
+	delay 60
+# 388 "data/challenge_balls.pory"
+	clearflag FLAG_NO_CATCHING
+# 389 "data/challenge_balls.pory"
+	clearflag FLAG_NO_RUNNING
+# 390 "data/challenge_balls.pory"
+	clearflag FLAG_SMART_WILD_AI
+# 391 "data/challenge_balls.pory"
+	finditem ITEM_SUPER_ROD, 1
+# 392 "data/challenge_balls.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
+	goto Route127_EventScript_ChallengeBall1_1
+
+
+Route132_EventScript_ChallengeBall1::
+# 398 "data/challenge_balls.pory"
+	lock
+# 399 "data/challenge_balls.pory"
+	msgbox Route132_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
+# 400 "data/challenge_balls.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Route132_EventScript_ChallengeBall1_2
+Route132_EventScript_ChallengeBall1_1:
+# 417 "data/challenge_balls.pory"
+	release
+	return
+
+Route132_EventScript_ChallengeBall1_2:
+# 401 "data/challenge_balls.pory"
+	setflag FLAG_NO_CATCHING
+# 402 "data/challenge_balls.pory"
+	setflag FLAG_NO_RUNNING
+# 403 "data/challenge_balls.pory"
+	setflag FLAG_SMART_WILD_AI
+# 404 "data/challenge_balls.pory"
+	setweather WEATHER_SNOW
+# 405 "data/challenge_balls.pory"
+	doweather
+# 406 "data/challenge_balls.pory"
+	delay 60
+# 407 "data/challenge_balls.pory"
+	setwildbattle SPECIES_VANILLUXE, 57, ITEM_NONE, 0, SPECIES_TREVENANT_EMERIBIAN, 57, ITEM_NONE, 0, MOVE_FREEZE_DRY, MOVE_AURORA_VEIL, MOVE_HYPER_VOICE, MOVE_FLASH_CANNON, MOVE_SPIRIT_BREAK, MOVE_HORN_LEECH, MOVE_INGRAIN, MOVE_LEECH_SEED
+# 408 "data/challenge_balls.pory"
+	dowildbattle
+# 409 "data/challenge_balls.pory"
+	resetweather
+# 410 "data/challenge_balls.pory"
+	delay 60
+# 411 "data/challenge_balls.pory"
+	clearflag FLAG_NO_CATCHING
+# 412 "data/challenge_balls.pory"
+	clearflag FLAG_NO_RUNNING
+# 413 "data/challenge_balls.pory"
+	clearflag FLAG_SMART_WILD_AI
+# 414 "data/challenge_balls.pory"
+	finditem ITEM_SUPER_ROD, 1
+# 415 "data/challenge_balls.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
+	goto Route132_EventScript_ChallengeBall1_1
+
+
 Route106_EventScript_ChallengeBall1_Text_0:
 # 3 "data/challenge_balls.pory"
 	.string "You feel grass growing beneath the\n"
@@ -860,4 +954,14 @@ MossdeepCity_EventScript_ChallengeBall1_Text_0:
 # 356 "data/challenge_balls.pory"
 	.string "You feel a magical sensation as you\n"
 	.string "approach.\p"
+	.string "Reach out for the item?$"
+
+Route127_EventScript_ChallengeBall1_Text_0:
+# 376 "data/challenge_balls.pory"
+	.string "You sense an imminent downpour.\p"
+	.string "Reach out for the item?$"
+
+Route132_EventScript_ChallengeBall1_Text_0:
+# 399 "data/challenge_balls.pory"
+	.string "You see stray snowflakes falling.\p"
 	.string "Reach out for the item?$"

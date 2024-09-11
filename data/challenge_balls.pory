@@ -459,3 +459,22 @@ script Route134_EventScript_ChallengeBall1 {
 	}
 	release
 }
+
+script Route119_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("Enemies manipulating their own power are near.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		settotemboost (1, 0, 1, 0, 0, 1)
+		setwildbattle (SPECIES_KINGAMBIT, 60, ITEM_NONE, 0, SPECIES_LOPUNNY_EMERIBIAN, 60, ITEM_NONE, 2, MOVE_KOWTOW_CLEAVE, MOVE_IRON_HEAD, MOVE_IRON_DEFENSE, MOVE_SHADOW_CLAW, MOVE_SUPERPOWER, MOVE_ICE_HAMMER, MOVE_ME_FIRST, MOVE_STRENGTH)
+		dowildbattle
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_WEAKNESS_POLICY, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}

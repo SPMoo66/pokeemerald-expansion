@@ -945,6 +945,45 @@ Route134_EventScript_ChallengeBall1_2:
 	goto Route134_EventScript_ChallengeBall1_1
 
 
+Route119_EventScript_ChallengeBall1::
+# 464 "data/challenge_balls.pory"
+	lock
+# 465 "data/challenge_balls.pory"
+	msgbox Route119_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
+# 466 "data/challenge_balls.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Route119_EventScript_ChallengeBall1_2
+Route119_EventScript_ChallengeBall1_1:
+# 479 "data/challenge_balls.pory"
+	release
+	return
+
+Route119_EventScript_ChallengeBall1_2:
+# 467 "data/challenge_balls.pory"
+	setflag FLAG_NO_CATCHING
+# 468 "data/challenge_balls.pory"
+	setflag FLAG_NO_RUNNING
+# 469 "data/challenge_balls.pory"
+	setflag FLAG_SMART_WILD_AI
+# 470 "data/challenge_balls.pory"
+	settotemboost 1, 0, 1, 0, 0, 1
+# 471 "data/challenge_balls.pory"
+	setwildbattle SPECIES_KINGAMBIT, 60, ITEM_NONE, 0, SPECIES_LOPUNNY_EMERIBIAN, 60, ITEM_NONE, 2, MOVE_KOWTOW_CLEAVE, MOVE_IRON_HEAD, MOVE_IRON_DEFENSE, MOVE_SHADOW_CLAW, MOVE_SUPERPOWER, MOVE_ICE_HAMMER, MOVE_ME_FIRST, MOVE_STRENGTH
+# 472 "data/challenge_balls.pory"
+	dowildbattle
+# 473 "data/challenge_balls.pory"
+	clearflag FLAG_NO_CATCHING
+# 474 "data/challenge_balls.pory"
+	clearflag FLAG_NO_RUNNING
+# 475 "data/challenge_balls.pory"
+	clearflag FLAG_SMART_WILD_AI
+# 476 "data/challenge_balls.pory"
+	finditem ITEM_WEAKNESS_POLICY, 1
+# 477 "data/challenge_balls.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
+	goto Route119_EventScript_ChallengeBall1_1
+
+
 Route106_EventScript_ChallengeBall1_Text_0:
 # 3 "data/challenge_balls.pory"
 	.string "You feel grass growing beneath the\n"
@@ -1063,4 +1102,10 @@ Route134_EventScript_ChallengeBall1_Text_0:
 # 445 "data/challenge_balls.pory"
 	.string "An electric current runs through the\n"
 	.string "sand.\p"
+	.string "Reach out for the item?$"
+
+Route119_EventScript_ChallengeBall1_Text_0:
+# 465 "data/challenge_balls.pory"
+	.string "Enemies manipulating their own power\n"
+	.string "are near.\p"
 	.string "Reach out for the item?$"

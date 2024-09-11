@@ -388,7 +388,7 @@ script Route127_EventScript_ChallengeBall1 {
 		clearflag (FLAG_NO_CATCHING)
 		clearflag (FLAG_NO_RUNNING)
 		clearflag (FLAG_SMART_WILD_AI)
-		finditem (ITEM_SUPER_ROD, 1)
+		finditem (ITEM_LIFE_ORB, 1)
 		setwildbattle (SPECIES_BULBASAUR, 1)
 	}
 	release
@@ -411,7 +411,50 @@ script Route132_EventScript_ChallengeBall1 {
 		clearflag (FLAG_NO_CATCHING)
 		clearflag (FLAG_NO_RUNNING)
 		clearflag (FLAG_SMART_WILD_AI)
-		finditem (ITEM_SUPER_ROD, 1)
+		finditem (ITEM_CHOICE_BAND, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script Route133_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("You enter an area lacking in humidity.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		setweather (WEATHER_DROUGHT)
+		doweather
+		delay (60)
+		setwildbattle (SPECIES_SOLFLORA, 57, ITEM_NONE, 0, SPECIES_SCREAM_TAIL, 57, ITEM_NONE, 0, MOVE_TORCH_SONG, MOVE_DAZZLING_GLEAM, MOVE_SOLAR_BEAM, MOVE_TRAILBLAZE, MOVE_PLAY_ROUGH, MOVE_PSYCHIC_FANGS, MOVE_CRUNCH, MOVE_GYRO_BALL)
+		dowildbattle
+		resetweather
+		delay (60)
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_CHOICE_SCARF, 1)
+		setwildbattle (SPECIES_BULBASAUR, 1)
+	}
+	release
+}
+
+script Route134_EventScript_ChallengeBall1 {
+	lock
+	msgbox(format("An electric current runs through the sand.\pReach out for the item?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		setflag (FLAG_NO_CATCHING)
+		setflag (FLAG_NO_RUNNING)
+		setflag (FLAG_SMART_WILD_AI)
+		setvar (VAR_STARTING_STATUS, 1)
+		setwildbattle (SPECIES_SAWSBUCK, 57, ITEM_NONE, 2, SPECIES_IRON_HANDS, 57, ITEM_NONE, 0, MOVE_NATURE_POWER, MOVE_HORN_LEECH, MOVE_ZEN_HEADBUTT, MOVE_BODY_SLAM, MOVE_WILD_CHARGE, MOVE_CLOSE_COMBAT, MOVE_HEAVY_SLAM, MOVE_FAKE_OUT)
+		dowildbattle
+		setvar (VAR_STARTING_STATUS, 0)
+		clearflag (FLAG_NO_CATCHING)
+		clearflag (FLAG_NO_RUNNING)
+		clearflag (FLAG_SMART_WILD_AI)
+		finditem (ITEM_CHOICE_SPECS, 1)
 		setwildbattle (SPECIES_BULBASAUR, 1)
 	}
 	release

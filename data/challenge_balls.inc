@@ -804,7 +804,7 @@ Route127_EventScript_ChallengeBall1_2:
 # 390 "data/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
 # 391 "data/challenge_balls.pory"
-	finditem ITEM_SUPER_ROD, 1
+	finditem ITEM_LIFE_ORB, 1
 # 392 "data/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route127_EventScript_ChallengeBall1_1
@@ -851,10 +851,98 @@ Route132_EventScript_ChallengeBall1_2:
 # 413 "data/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
 # 414 "data/challenge_balls.pory"
-	finditem ITEM_SUPER_ROD, 1
+	finditem ITEM_CHOICE_BAND, 1
 # 415 "data/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route132_EventScript_ChallengeBall1_1
+
+
+Route133_EventScript_ChallengeBall1::
+# 421 "data/challenge_balls.pory"
+	lock
+# 422 "data/challenge_balls.pory"
+	msgbox Route133_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
+# 423 "data/challenge_balls.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Route133_EventScript_ChallengeBall1_2
+Route133_EventScript_ChallengeBall1_1:
+# 440 "data/challenge_balls.pory"
+	release
+	return
+
+Route133_EventScript_ChallengeBall1_2:
+# 424 "data/challenge_balls.pory"
+	setflag FLAG_NO_CATCHING
+# 425 "data/challenge_balls.pory"
+	setflag FLAG_NO_RUNNING
+# 426 "data/challenge_balls.pory"
+	setflag FLAG_SMART_WILD_AI
+# 427 "data/challenge_balls.pory"
+	setweather WEATHER_DROUGHT
+# 428 "data/challenge_balls.pory"
+	doweather
+# 429 "data/challenge_balls.pory"
+	delay 60
+# 430 "data/challenge_balls.pory"
+	setwildbattle SPECIES_SOLFLORA, 57, ITEM_NONE, 0, SPECIES_SCREAM_TAIL, 57, ITEM_NONE, 0, MOVE_TORCH_SONG, MOVE_DAZZLING_GLEAM, MOVE_SOLAR_BEAM, MOVE_TRAILBLAZE, MOVE_PLAY_ROUGH, MOVE_PSYCHIC_FANGS, MOVE_CRUNCH, MOVE_GYRO_BALL
+# 431 "data/challenge_balls.pory"
+	dowildbattle
+# 432 "data/challenge_balls.pory"
+	resetweather
+# 433 "data/challenge_balls.pory"
+	delay 60
+# 434 "data/challenge_balls.pory"
+	clearflag FLAG_NO_CATCHING
+# 435 "data/challenge_balls.pory"
+	clearflag FLAG_NO_RUNNING
+# 436 "data/challenge_balls.pory"
+	clearflag FLAG_SMART_WILD_AI
+# 437 "data/challenge_balls.pory"
+	finditem ITEM_CHOICE_SCARF, 1
+# 438 "data/challenge_balls.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
+	goto Route133_EventScript_ChallengeBall1_1
+
+
+Route134_EventScript_ChallengeBall1::
+# 444 "data/challenge_balls.pory"
+	lock
+# 445 "data/challenge_balls.pory"
+	msgbox Route134_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
+# 446 "data/challenge_balls.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Route134_EventScript_ChallengeBall1_2
+Route134_EventScript_ChallengeBall1_1:
+# 460 "data/challenge_balls.pory"
+	release
+	return
+
+Route134_EventScript_ChallengeBall1_2:
+# 447 "data/challenge_balls.pory"
+	setflag FLAG_NO_CATCHING
+# 448 "data/challenge_balls.pory"
+	setflag FLAG_NO_RUNNING
+# 449 "data/challenge_balls.pory"
+	setflag FLAG_SMART_WILD_AI
+# 450 "data/challenge_balls.pory"
+	setvar VAR_STARTING_STATUS, 1
+# 451 "data/challenge_balls.pory"
+	setwildbattle SPECIES_SAWSBUCK, 57, ITEM_NONE, 2, SPECIES_IRON_HANDS, 57, ITEM_NONE, 0, MOVE_NATURE_POWER, MOVE_HORN_LEECH, MOVE_ZEN_HEADBUTT, MOVE_BODY_SLAM, MOVE_WILD_CHARGE, MOVE_CLOSE_COMBAT, MOVE_HEAVY_SLAM, MOVE_FAKE_OUT
+# 452 "data/challenge_balls.pory"
+	dowildbattle
+# 453 "data/challenge_balls.pory"
+	setvar VAR_STARTING_STATUS, 0
+# 454 "data/challenge_balls.pory"
+	clearflag FLAG_NO_CATCHING
+# 455 "data/challenge_balls.pory"
+	clearflag FLAG_NO_RUNNING
+# 456 "data/challenge_balls.pory"
+	clearflag FLAG_SMART_WILD_AI
+# 457 "data/challenge_balls.pory"
+	finditem ITEM_CHOICE_SPECS, 1
+# 458 "data/challenge_balls.pory"
+	setwildbattle SPECIES_BULBASAUR, 1
+	goto Route134_EventScript_ChallengeBall1_1
 
 
 Route106_EventScript_ChallengeBall1_Text_0:
@@ -964,4 +1052,15 @@ Route127_EventScript_ChallengeBall1_Text_0:
 Route132_EventScript_ChallengeBall1_Text_0:
 # 399 "data/challenge_balls.pory"
 	.string "You see stray snowflakes falling.\p"
+	.string "Reach out for the item?$"
+
+Route133_EventScript_ChallengeBall1_Text_0:
+# 422 "data/challenge_balls.pory"
+	.string "You enter an area lacking in humidity.\p"
+	.string "Reach out for the item?$"
+
+Route134_EventScript_ChallengeBall1_Text_0:
+# 445 "data/challenge_balls.pory"
+	.string "An electric current runs through the\n"
+	.string "sand.\p"
 	.string "Reach out for the item?$"

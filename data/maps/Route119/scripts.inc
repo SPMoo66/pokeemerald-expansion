@@ -72,6 +72,7 @@ Route119_EventScript_PlayBrendanMusic::
 	return
 
 Route119_EventScript_BattleMay::
+	speakername (CommonText_May)
 	msgbox Route119_Text_MayIntro, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
 	case 0, Route119_EventScript_BattleMayTreecko
@@ -95,13 +96,17 @@ Route119_EventScript_BattleMayMudkip::
 	end
 
 Route119_EventScript_DefeatedMay::
+	speakername (CommonText_May)
 	msgbox Route119_Text_MayPresentForYou, MSGBOX_DEFAULT
+	closemessage
 	call Route119_EventScript_GiveFlyHM
+	speakername (CommonText_May)
 	msgbox Route119_Text_MayExplainFly, MSGBOX_DEFAULT
 	goto Route119_EventScript_RivalExitScottArrive
 	end
 
 Route119_EventScript_BattleBrendan::
+	speakername (CommonText_Brendan)
 	msgbox Route119_Text_BrendanIntro, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
 	case 0, Route119_EventScript_BattleBrendanTreecko
@@ -125,8 +130,11 @@ Route119_EventScript_BattleBrendanMudkip::
 	end
 
 Route119_EventScript_DefeatedBrendan::
+	speakername (CommonText_Brendan)
 	msgbox Route119_Text_BrendanIllGiveYouThis, MSGBOX_DEFAULT
+	closemessage
 	call Route119_EventScript_GiveFlyHM
+	speakername (CommonText_Brendan)
 	msgbox Route119_Text_BrendanExplainFly, MSGBOX_DEFAULT
 	goto Route119_EventScript_RivalExitScottArrive
 	end
@@ -156,6 +164,7 @@ Route119_EventScript_RivalExitScottArrive::
 	applymovement LOCALID_SCOTT, Route119_Movement_ScottEnter
 	waitmovement 0
 	addvar VAR_SCOTT_STATE, 1
+	speakername (CommonText_Scott)
 	msgbox Route119_Text_ScottWayToGoBeSeeingYou, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_TEMP_1, 1, Route119_EventScript_ScottExit1
@@ -480,7 +489,7 @@ Route119_EventScript_ScottWonAtFortreeGymCall::
 	end
 
 Route119_Text_MayIntro:
-	.string "May: {PLAYER}{KUN}!\n"
+	.string "{PLAYER}{KUN}!\n"
 	.string "Where were you? I was looking for you!\p"
 	.string "How much stronger have you gotten?\n"
 	.string "Let me check for you!\p"
@@ -494,12 +503,12 @@ Route119_Text_MayDefeat:
 	.string "struggling with your training.$"
 
 Route119_Text_MayPresentForYou:
-	.string "May: But I had absolutely nothing to\n"
+	.string "But I had absolutely nothing to\n"
 	.string "worry about! Keep it up!\p"
 	.string "And, here! I have a present for you.$"
 
 Route119_Text_MayExplainFly:
-	.string "May: Use Fly, and your Pokémon will\n"
+	.string "Use Fly, and your Pokémon will\n"
 	.string "instantly carry you to any town you've\l"
 	.string "already visited.\p"
 	.string "But, to use Fly, you have to get\n"
@@ -512,7 +521,7 @@ Route119_Text_MayExplainFly:
 	.string "Well, let's meet again somewhere!$"
 
 Route119_Text_BrendanIntro:
-	.string "Brendan: {PLAYER}! So this is where\n"
+	.string "{PLAYER}! So this is where\n"
 	.string "you've been looking for Pokémon?\p"
 	.string "Let me see how good you got.\n"
 	.string "I'll test you!\p"
@@ -524,13 +533,13 @@ Route119_Text_BrendanDefeat:
 	.string "You've gotten pretty darn decent.$"
 
 Route119_Text_BrendanIllGiveYouThis:
-	.string "Brendan: I'd say you're good enough\n"
+	.string "I'd say you're good enough\n"
 	.string "to search for Pokémon anywhere.\p"
 	.string "Here, I'll give you this.\n"
 	.string "Try it out.$"
 
 Route119_Text_BrendanExplainFly:
-	.string "Brendan: Use Fly, and your Pokémon\n"
+	.string "Use Fly, and your Pokémon\n"
 	.string "instantly carries you to any town\l"
 	.string "you've already visited.\p"
 	.string "But you need the Fortree Gym Badge \n"
@@ -538,7 +547,7 @@ Route119_Text_BrendanExplainFly:
 	.string "Anyway, I have to move along.$"
 
 Route119_Text_ScottWayToGoBeSeeingYou:
-	.string "Scott: Hahahah!\n"
+	.string "Hahahah!\n"
 	.string "Way to go, {PLAYER}{KUN}!\p"
 	.string "I just passed by a Trainer riding\n"
 	.string "a Bike.\p"

@@ -780,6 +780,10 @@ text CommonText_Maxie {
 	"Maxie"
 }
 
+text CommonText_Courtney {
+	"Courtney"
+}
+
 text CommonText_May {
 	"May"
 }
@@ -850,6 +854,10 @@ text CommonText_Rydel {
 
 text CommonText_Cozmo {
 	"Prof. Cozmo"
+}
+
+text CommonText_Lanette {
+	"Lanette"
 }
 
 

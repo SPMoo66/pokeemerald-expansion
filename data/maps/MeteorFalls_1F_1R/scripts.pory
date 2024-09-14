@@ -53,8 +53,10 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 	waitmovement (0)
 	applymovement (LOCALID_COURTNEY, Common_Movement_WalkInPlaceUp)
 	waitmovement (0)
-	msgbox ("Courtney: Hold on…")
+	speakername (CommonText_Courtney)
+	msgbox ("Hold on…")
 	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceDown)
+	speakername (CommonText_Courtney)
 	msgbox ("I think you're going to need my help.")
 	closemessage
 	msgbox ("Tch… fine.")
@@ -67,11 +69,13 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 	waitmovement (0)
 	checkplayergender
 	if (var(VAR_RESULT) == MALE ) {
-		msgbox ("May: {PLAYER}!\n"
+		speakername (CommonText_May)
+		msgbox ("{PLAYER}!\n"
 				"I'll help you!")
 	}
 	else {
-		msgbox ("Brendan: {PLAYER}!\n"
+		speakername (CommonText_Brendan)
+		msgbox ("{PLAYER}!\n"
 				"I'm with you!")
 	}
 	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceRight)
@@ -137,7 +141,8 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 			applymovement (LOCALID_RIVAL, Common_Movement_FaceDown)
 			applymovement (LOCALID_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieApproachPlayer)
 			waitmovement (0)
-			msgbox ("Archie: Didn't I see you before?\n"
+			speakername (CommonText_Archie)
+			msgbox ("Didn't I see you before?\n"
 					"At Slateport's Museum?\p"
 					"Ah, so your name is {PLAYER}.\p"
 					"At the time, I thought you were one\n"
@@ -158,13 +163,15 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 					"Team Magma…")
 			applymovement (LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterDown)
 			waitmovement (0)
-			msgbox ("Archie: Yes, yes, we must!\n"
+			speakername (CommonText_Archie)
+			msgbox ("Yes, yes, we must!\n"
 					"We've got to hurry.\p"
 					"There's no telling what Team Magma\n"
 					"will do at Mt. Chimney!")
 			applymovement (LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterLeft)
 			waitmovement (0)
-			msgbox ("Archie: {PLAYER}, you should keep\n"
+			speakername (CommonText_Archie)
+			msgbox ("{PLAYER}, you should keep\n"
 					"an eye out for Team Magma, too.\p"
 					"Farewell!")
 			closemessage
@@ -187,7 +194,8 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 			waitmovement (0)
 			checkplayergender
 			if (var(VAR_RESULT) == MALE ) {
-				msgbox ("May: Are you ok?\n"
+				speakername (CommonText_May)
+				msgbox ("Are you ok?\n"
 						"That was scary…\p"
 						"What could that Team Magma be after?\n"
 						"If you're planning on going after\l"
@@ -195,14 +203,15 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 						"Here, maybe this will help you.")
 			}
 			else {
-				msgbox ("Brendan: You're good, right?\n"
+				speakername (CommonText_Brendan)
+				msgbox ("You're good, right?\n"
 						"That could have gone bad…\p"
 						"Team Magma… What do they want?\n"
 						"They said, Mt. Chimney…\l"
 						"If you're heading there, be safe."
 						"I think you'll be needing this")
 			}
-			giveitem (ITEM_SUPER_ROD)
+			giveitem (ITEM_BOTTLE_CAP)
 			closemessage
 			applymovement (LOCALID_RIVAL, Common_Movement_WalkRight7)
 			waitmovement (0)
@@ -310,7 +319,8 @@ script MeteorFalls_1F_1R_EventScript_ProfCozmo {
 		setflag (FLAG_MET_PROF_COZMO)
 	}
 	else {
-		msgbox ("Prof. Cozmo: But that Team Magma…")
+		speakername (CommonText_Cozmo)
+		msgbox ("But that Team Magma…")
 	}
 	msgbox ("What are they going to do with that\n"
 			"Meteorite at Mt. Chimney?")

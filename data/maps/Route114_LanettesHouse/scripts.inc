@@ -11,7 +11,9 @@ Route114_LanettesHouse_EventScript_Lanette::
 	faceplayer
 	goto_if_set FLAG_RECEIVED_DOLL_LANETTE, Route114_LanettesHouse_EventScript_OfferAdvice
 	setflag FLAG_SYS_PC_LANETTE
+	speakername (CommonText_Lanette)
 	msgbox Route114_LanettesHouse_Text_EverythingClutteredKeepThis, MSGBOX_DEFAULT
+	closemessage
 	givedecoration DECOR_LOTAD_DOLL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowNoRoomForDecor
 	setflag FLAG_RECEIVED_DOLL_LANETTE
@@ -19,6 +21,7 @@ Route114_LanettesHouse_EventScript_Lanette::
 	end
 
 Route114_LanettesHouse_EventScript_OfferAdvice::
+	speakername (CommonText_Lanette)
 	msgbox Route114_LanettesHouse_Text_OrganizeYourBoxes, MSGBOX_DEFAULT
 	release
 	end
@@ -46,7 +49,7 @@ Route114_LanettesHouse_EventScript_PC::
 	end
 
 Route114_LanettesHouse_Text_EverythingClutteredKeepThis:
-	.string "Lanette: Oh! {PLAYER}{KUN}!\p"
+	.string "Oh! {PLAYER}{KUN}!\p"
 	.string "I'm sorry everything is so cluttered…\n"
 	.string "When I get engrossed in research,\l"
 	.string "things end up this way…\p"

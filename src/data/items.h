@@ -12458,13 +12458,14 @@ const struct Item gItemsInfo[] =
     {
         .name = _("AdamantCrystl"),
         .price = 0,
+        .importance = 1,
         .description = COMPOUND_STRING(
             "A large, glowing gem\n"
             "that lets Dialga\n"
             "change form."),
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
         .flingPower = 60,
     },
 
@@ -12472,13 +12473,14 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Griseous Core"),
         .price = 0,
+        .importance = 1,
         .description = COMPOUND_STRING(
             "A large, glowing gem\n"
             "that lets Giratina\n"
             "change form."),
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
         .flingPower = 60,
     },
 
@@ -12486,13 +12488,14 @@ const struct Item gItemsInfo[] =
     {
         .name = _("LustrousGlobe"),
         .price = 0,
+        .importance = 1,
         .description = COMPOUND_STRING(
             "A large, glowing gem\n"
             "that lets Palkia\n"
             "change form."),
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
         .flingPower = 60,
     },
 

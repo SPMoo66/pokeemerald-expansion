@@ -165,24 +165,28 @@ Route120_EventScript_Steven::
 	lock
 	faceplayer
 	goto_if_set FLAG_NOT_READY_FOR_BATTLE_ROUTE_120, Route120_EventScript_StevenAskReadyForBattle
+	speakername (CommonText_Steven)
 	msgbox Route120_Text_StevenGreeting, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route120_EventScript_StevenNotReady
 	goto Route120_EventScript_StevenBattleKecleon
 	end
 
 Route120_EventScript_StevenNotReady::
+	speakername (CommonText_Steven)
 	msgbox Route120_Text_StevenIllWaitHere, MSGBOX_DEFAULT
 	setflag FLAG_NOT_READY_FOR_BATTLE_ROUTE_120
 	release
 	end
 
 Route120_EventScript_StevenAskReadyForBattle::
+	speakername (CommonText_Steven)
 	msgbox Route120_Text_StevenReadyForBattle, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route120_EventScript_StevenNotReady
 	goto Route120_EventScript_StevenBattleKecleon
 	end
 
 Route120_EventScript_StevenBattleKecleon::
+	speakername (CommonText_Steven)
 	msgbox Route120_Text_StevenShowMeYourPower, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_FACING, DIR_NORTH, Route120_EventScript_PlayerApproachKecleonNorth
@@ -224,9 +228,12 @@ Route120_EventScript_StevenGiveDeconScope::
 	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
+	speakername (CommonText_Steven)
 	msgbox Route120_Text_StevenGiveDevonScope, MSGBOX_DEFAULT
+	closemessage
 	giveitem ITEM_DEVON_SCOPE
 	setflag FLAG_RECEIVED_DEVON_SCOPE
+	speakername (CommonText_Steven)
 	msgbox Route120_Text_StevenGoodbye, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
@@ -370,7 +377,7 @@ Route120_EventScript_Callie::
 	end
 
 Route120_Text_StevenGreeting:
-	.string "Steven: Hm? {PLAYER}{KUN}, hi.\n"
+	.string "Hm? {PLAYER}{KUN}, hi.\n"
 	.string "It's been a while.\p"
 	.string "There's something here that you can't\n"
 	.string "see, right?\p"
@@ -383,15 +390,15 @@ Route120_Text_StevenGreeting:
 	.string "battle?$"
 
 Route120_Text_StevenIllWaitHere:
-	.string "Steven: No?\p"
+	.string "No?\p"
 	.string "I'll wait here, so you can get ready.$"
 
 Route120_Text_StevenReadyForBattle:
-	.string "Steven: {PLAYER}{KUN}, are your Pokémon\n"
+	.string "{PLAYER}{KUN}, are your Pokémon\n"
 	.string "ready for battle?$"
 
 Route120_Text_StevenShowMeYourPower:
-	.string "Steven: {PLAYER}{KUN}, show me your true\n"
+	.string "{PLAYER}{KUN}, show me your true\n"
 	.string "power as a Trainer!$"
 
 Route120_Text_StevenUsedDevonScope:
@@ -401,7 +408,7 @@ Route120_Text_StevenUsedDevonScope:
 	.string "The startled Pokémon attacked!$"
 
 Route120_Text_StevenGiveDevonScope:
-	.string "Steven: I see…\n"
+	.string "I see…\n"
 	.string "Your battle style is intriguing.\p"
 	.string "Your Pokémon have obviously grown\n"
 	.string "since I first met you in Dewford.\p"
@@ -411,7 +418,7 @@ Route120_Text_StevenGiveDevonScope:
 	.string "concealed Pokémon.$"
 
 Route120_Text_StevenGoodbye:
-	.string "Steven: {PLAYER}{KUN}.\p"
+	.string "{PLAYER}{KUN}.\p"
 	.string "I enjoy seeing Pokémon and Trainers\n"
 	.string "who strive together.\p"
 	.string "I think you're doing great.\p"

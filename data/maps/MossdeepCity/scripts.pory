@@ -243,6 +243,7 @@ MossdeepCity_EventScript_BlackBelt::
 MossdeepCity_EventScript_Scott::
 	lock
 	faceplayer
+	speakername (CommonText_Scott)
 	msgbox MossdeepCity_Text_ScottSomethingWrongWithTown, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_FACING, DIR_NORTH, MossdeepCity_EventScript_ScottExitNorth
@@ -381,7 +382,7 @@ MossdeepCity_Text_SpaceCenterSign:
 	.string "“The closest place to space.”$"
 
 MossdeepCity_Text_ScottSomethingWrongWithTown:
-	.string "Scott: {PLAYER}{KUN}, feeling good?\n"
+	.string "{PLAYER}{KUN}, feeling good?\n"
 	.string "I'm doing great!\p"
 	.string "I'd heard Mossdeep's Gym Leader is\n"
 	.string "pretty strong, so I decided to come\l"

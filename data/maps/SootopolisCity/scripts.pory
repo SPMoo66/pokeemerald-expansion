@@ -388,30 +388,36 @@ SootopolisCity_EventScript_Steven::
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 3, SootopolisCity_EventScript_StevenHelpedWallace
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 4, SootopolisCity_EventScript_StevenHelpedWallace
 	goto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, SootopolisCity_EventScript_StevenMaxieArchieLeft
+	speakername (CommonText_Steven)
 	msgbox SootopolisCity_Text_SoThatsRayquaza, MSGBOX_DEFAULT
 	releaseall
 	end
 
 SootopolisCity_EventScript_StevenHelpWallace::
+	speakername (CommonText_Steven)
 	msgbox SootopolisCity_Text_KnowWhatsNeededToHelpHim, MSGBOX_DEFAULT
 	releaseall
 	end
 
 SootopolisCity_EventScript_StevenMaxieArchieLeft::
+	speakername (CommonText_Steven)
 	msgbox SootopolisCity_Text_MaxieArchieLeft, MSGBOX_DEFAULT
 	releaseall
 	end
 
 SootopolisCity_EventScript_StevenHelpedWallace::
+	speakername (CommonText_Steven)
 	msgbox SootopolisCity_Text_NeverBeenToSkyPillar, MSGBOX_DEFAULT
 	releaseall
 	end
 
 SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin::
+	speakername (CommonText_Steven)
 	msgbox SootopolisCity_Text_InvolvedWithCrisisComeWithMe, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_FACING, DIR_WEST, SootopolisCity_EventScript_StartWalkToCaveOfOriginWest
 	call_if_eq VAR_FACING, DIR_NORTH, SootopolisCity_EventScript_StartWalkToCaveOfOriginNorth
+	speakername (CommonText_Steven)
 	msgbox SootopolisCity_Text_DoesThisMakeYourFearPokemon, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_STEVEN, SootopolisCity_Movement_StevenWalkToCaveOfOrigin
@@ -423,6 +429,7 @@ SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin::
 	applymovement LOCALID_STEVEN, SootopolisCity_Movement_StevenArriveCaveEntrance
 	applymovement OBJ_EVENT_ID_PLAYER, SootopolisCity_Movement_PlayerArriveCaveEntrance
 	waitmovement 0
+	speakername (CommonText_Steven)
 	msgbox SootopolisCity_Text_HereWereAreHelpWallace, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_STEVEN_GUIDES_TO_CAVE_OF_ORIGIN
@@ -783,14 +790,18 @@ SootopolisCity_EventScript_Wallace::
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 4, SootopolisCity_EventScript_GoToSkyPillar
 	goto_if_set FLAG_RECEIVED_HM_WATERFALL, SootopolisCity_EventScript_GoToGym
 	goto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, SootopolisCity_EventScript_GiveWaterfall
+	speakername (CommonText_Wallace)
 	msgbox SootopolisCity_Text_AquaMagmaDidntMeanHarm, MSGBOX_DEFAULT
 	release
 	end
 
 SootopolisCity_EventScript_GiveWaterfall::
+	speakername (CommonText_Wallace)
 	msgbox SootopolisCity_Text_ThankYouForHelpAcceptThis, MSGBOX_DEFAULT
+	closemessage
 	giveitem ITEM_HM_WATERFALL
 	setflag FLAG_RECEIVED_HM_WATERFALL
+	speakername (CommonText_Wallace)
 	msgbox SootopolisCity_Text_ExplainWaterfallGoToGym, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_FACING, DIR_NORTH, SootopolisCity_EventScript_WallaceMoveFromGym
@@ -814,11 +825,13 @@ SootopolisCity_EventScript_WallaceMoveFromGymWest::
 	return
 
 SootopolisCity_EventScript_GoToSkyPillar::
+	speakername (CommonText_Wallace)
 	msgbox SootopolisCity_Text_HaventYouScaledSkyPillar, MSGBOX_DEFAULT
 	release
 	end
 
 SootopolisCity_EventScript_GoToGym::
+	speakername (CommonText_Wallace)
 	msgbox SootopolisCity_Text_DazzledByMentor, MSGBOX_DEFAULT
 	release
 	end
@@ -836,12 +849,14 @@ SootopolisCity_Movement_WallaceMoveFromGymWest:
 SootopolisCity_EventScript_Maxie::
 	lockall
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_MaxieRayquaza
+	speakername (CommonText_Maxie)
 	msgbox SootopolisCity_Text_GroudonPleaseStop, MSGBOX_DEFAULT
 	closemessage
 	releaseall
 	end
 
 SootopolisCity_EventScript_MaxieRayquaza::
+	speakername (CommonText_Maxie)
 	msgbox SootopolisCity_Text_AfterAllOurScheming, MSGBOX_DEFAULT
 	setflag FLAG_MET_MAXIE_SOOTOPOLIS
 	goto_if_set FLAG_MET_ARCHIE_SOOTOPOLIS, SootopolisCity_EventScript_MaxieArchieLeave
@@ -851,12 +866,14 @@ SootopolisCity_EventScript_MaxieRayquaza::
 SootopolisCity_EventScript_Archie::
 	lockall
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_ArchieRayquaza
+	speakername (CommonText_Archie)
 	msgbox SootopolisCity_Text_KyogreCalmDown, MSGBOX_DEFAULT
 	closemessage
 	releaseall
 	end
 
 SootopolisCity_EventScript_ArchieRayquaza::
+	speakername (CommonText_Archie)
 	msgbox SootopolisCity_Text_TryingMeaninglessToPokemon, MSGBOX_DEFAULT
 	setflag FLAG_MET_ARCHIE_SOOTOPOLIS
 	goto_if_set FLAG_MET_MAXIE_SOOTOPOLIS, SootopolisCity_EventScript_MaxieArchieLeave
@@ -1067,14 +1084,14 @@ SootopolisCity_Text_YouBroughtFlyingMon:
 	.string "Well, aren't you amazing!$"
 
 SootopolisCity_Text_GroudonPleaseStop:
-	.string "Maxie: G… Groudon…\n"
+	.string "G… Groudon…\n"
 	.string "Please! Stop what you're doing!\p"
 	.string "I know the extent of your power now!\p"
 	.string "If you keep going, all Hoenn, not just\n"
 	.string "Sootopolis, will be utterly ruined!$"
 
 SootopolisCity_Text_AfterAllOurScheming:
-	.string "Maxie: So the super-ancient Pokémon\n"
+	.string "So the super-ancient Pokémon\n"
 	.string "weren't only Groudon and Kyogre…\p"
 	.string "After all our fruitless scheming and\n"
 	.string "frantic efforts, that one Pokémon's\l"
@@ -1084,7 +1101,7 @@ SootopolisCity_Text_AfterAllOurScheming:
 	.string "Fuhahaha…$"
 
 SootopolisCity_Text_KyogreCalmDown:
-	.string "Archie: Kyogre! What's wrong?!\n"
+	.string "Kyogre! What's wrong?!\n"
 	.string "Look over here! It's the Red Orb!\l"
 	.string "Calm down! Kyogre!\p"
 	.string "… … … … … …\n"
@@ -1093,8 +1110,8 @@ SootopolisCity_Text_KyogreCalmDown:
 	.string "It's not responding at all!$"
 
 SootopolisCity_Text_TryingMeaninglessToPokemon:
-	.string "Archie: Kyogre and Groudon both\n"
-	.string "flew off to who knows where.\p"
+	.string "Kyogre and Groudon both flew\n"
+	.string "off to who knows where.\p"
 	.string "The weather in Hoenn has returned\n"
 	.string "to its normal state…\p"
 	.string "Haha…\n"
@@ -1104,7 +1121,7 @@ SootopolisCity_Text_TryingMeaninglessToPokemon:
 	.string "to Pokémon…$"
 
 SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
-	.string "Steven: Those Pokémon fighting…\n"
+	.string "Those Pokémon fighting…\n"
 	.string "Groudon… And Kyogre…\p"
 	.string "The two super-ancient Pokémon\n"
 	.string "were awakened from a long sleep…\p"
@@ -1119,7 +1136,7 @@ SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
 	.string "Come with me, please.$"
 
 SootopolisCity_Text_DoesThisMakeYourFearPokemon:
-	.string "Steven: Listen, {PLAYER}{KUN}.\p"
+	.string "Listen, {PLAYER}{KUN}.\p"
 	.string "Does seeing Groudon and Kyogre make\n"
 	.string "you think Pokémon are to be feared?\p"
 	.string "But that's not true.\n"
@@ -1128,34 +1145,34 @@ SootopolisCity_Text_DoesThisMakeYourFearPokemon:
 	.string "You already know.$"
 
 SootopolisCity_Text_HereWereAreHelpWallace:
-	.string "Steven: Okay, here we are!\p"
+	.string "Okay, here we are!\p"
 	.string "Inside here you'll find someone named\n"
 	.string "Wallace.\p"
 	.string "I think you have what's needed to\n"
 	.string "help him…$"
 
 SootopolisCity_Text_KnowWhatsNeededToHelpHim:
-	.string "Steven: I think you have what's\n"
-	.string "needed to help him…$"
+	.string "I think you have what's needed to\n"
+	.string "help him…$"
 
 SootopolisCity_Text_NeverBeenToSkyPillar:
-	.string "Steven: The Sky Pillar…\p"
+	.string "The Sky Pillar…\p"
 	.string "I've never been there.\n"
 	.string "I wonder where it could be?$"
 
 SootopolisCity_Text_SoThatsRayquaza:
-	.string "Steven: So that's Rayquaza…\p"
+	.string "So that's Rayquaza…\p"
 	.string "It's incredible how the two rampaging\n"
 	.string "Pokémon would flee from it in fear…$"
 
 SootopolisCity_Text_MaxieArchieLeft:
-	.string "Steven: It looks like both Maxie and\n"
-	.string "Archie have gone away somewhere.\p"
+	.string "It looks like both Maxie and Archie\n"
+	.string "have gone away somewhere.\p"
 	.string "Perhaps they've gone to Mt. Pyre to\n"
 	.string "return those Orbs…$"
 
 SootopolisCity_Text_HaventYouScaledSkyPillar:
-	.string "Wallace: Oh?\n"
+	.string "Oh?\n"
 	.string "{PLAYER}{KUN}?\p"
 	.string "Haven't you scaled the Sky Pillar\n"
 	.string "yet?\p"
@@ -1163,14 +1180,14 @@ SootopolisCity_Text_HaventYouScaledSkyPillar:
 	.string "the top of the Sky Pillar…$"
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm:
-	.string "Wallace: {PLAYER}{KUN}…\p"
+	.string "{PLAYER}{KUN}…\p"
 	.string "The leaders of Team Magma and Aqua,\n"
 	.string "I don't think they meant harm.\p"
 	.string "It wouldn't hurt to hear what they\n"
 	.string "have to say for themselves.$"
 
 SootopolisCity_Text_ThankYouForHelpAcceptThis:
-	.string "Wallace: {PLAYER}{KUN}…\n"
+	.string "{PLAYER}{KUN}…\n"
 	.string "My eyes didn't deceive me.\p"
 	.string "Thanks to your help, Sootopolis…\n"
 	.string "No, all of Hoenn was saved.\p"
@@ -1192,10 +1209,11 @@ SootopolisCity_Text_ExplainWaterfallGoToGym:
 	.string "that door.$"
 
 SootopolisCity_Text_DazzledByMentor:
-	.string "Wallace: I'm sure that you will be\n"
-	.string "dazzled by my mentor's breathtakingly\l"
+	.string "I'm sure that you will be dazzled\n"
+	.string "by my mentor's breathtakingly\l"
 	.string "elegant battle style.$"
 `
+
 const LOCALID_EXPERT = 1
 const LOCALID_WOMAN_2 = 2
 const LOCALID_KIRI = 3

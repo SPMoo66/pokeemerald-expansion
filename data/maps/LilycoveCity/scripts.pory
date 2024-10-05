@@ -243,6 +243,7 @@ LilycoveCity_EventScript_May::
 	call_if_set FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_MayAskToBattleAgain
 	call_if_unset FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_MayAskToBattle
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DeclineMayBattle
+	speakername (CommonText_May)
 	msgbox LilycoveCity_Text_MayWontBeBeaten, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
 	case 0, LilycoveCity_EventScript_BattleMayTreecko
@@ -251,15 +252,18 @@ LilycoveCity_EventScript_May::
 	end
 
 LilycoveCity_EventScript_MayAskToBattleAgain::
+	speakername (CommonText_May)
 	msgbox LilycoveCity_Text_MayBattleMe, MSGBOX_YESNO
 	return
 
 LilycoveCity_EventScript_MayAskToBattle::
+	speakername (CommonText_May)
 	msgbox LilycoveCity_Text_MayShoppingLetsBattle, MSGBOX_YESNO
 	return
 
 LilycoveCity_EventScript_DeclineMayBattle::
 	setflag FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE
+	speakername (CommonText_May)
 	msgbox LilycoveCity_Text_MayNotRaisingPokemon, MSGBOX_DEFAULT
 	savebgm MUS_DUMMY
 	fadedefaultbgm
@@ -271,6 +275,7 @@ LilycoveCity_EventScript_Brendan::
 	call_if_set FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_BrendanAskToBattleAgain
 	call_if_unset FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_BrendanAskToBattle
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DeclineBrendanBattle
+	speakername (CommonText_Brendan)
 	msgbox LilycoveCity_Text_BrendanWontBeBeaten, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
 	case 0, LilycoveCity_EventScript_BattleBrendanTreecko
@@ -279,15 +284,18 @@ LilycoveCity_EventScript_Brendan::
 	end
 
 LilycoveCity_EventScript_BrendanAskToBattleAgain::
+	speakername (CommonText_Brendan)
 	msgbox LilycoveCity_Text_BrendanBattleMe, MSGBOX_YESNO
 	return
 
 LilycoveCity_EventScript_BrendanAskToBattle::
+	speakername (CommonText_Brendan)
 	msgbox LilycoveCity_Text_BrendanShoppingLetsBattle, MSGBOX_YESNO
 	return
 
 LilycoveCity_EventScript_DeclineBrendanBattle::
 	setflag FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE
+	speakername (CommonText_Brendan)
 	msgbox LilycoveCity_Text_BrendanNoConfidence, MSGBOX_DEFAULT
 	savebgm MUS_DUMMY
 	fadedefaultbgm
@@ -325,9 +333,11 @@ LilycoveCity_EventScript_BattleBrendanMudkip::
 	end
 
 LilycoveCity_EventScript_DefeatedMay::
+	speakername (CommonText_May)
 	msgbox LilycoveCity_Text_MayGoingBackToLittleroot, MSGBOX_DEFAULT
 	setvar VAR_RESULT, FALSE
 	call_if_set FLAG_BADGE06_GET, LilycoveCity_EventScript_CheckFinalBadge
+	speakername (CommonText_May)
 	call_if_eq VAR_RESULT, FALSE, LilycoveCity_EventScript_MayCollectBadges
 	call_if_eq VAR_RESULT, TRUE, LilycoveCity_EventScript_MayPokemonLeague
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
@@ -357,9 +367,11 @@ LilycoveCity_EventScript_MayBattleFrontier::
 	return
 
 LilycoveCity_EventScript_DefeatedBrendan::
+	speakername (CommonText_Brendan)
 	msgbox LilycoveCity_Text_BrendanGoingBackToLittleroot, MSGBOX_DEFAULT
 	setvar VAR_RESULT, FALSE
 	call_if_set FLAG_BADGE06_GET, LilycoveCity_EventScript_CheckFinalBadge
+	speakername (CommonText_Brendan)
 	call_if_eq VAR_RESULT, FALSE, LilycoveCity_EventScript_BrendanCollectBadges
 	call_if_eq VAR_RESULT, TRUE, LilycoveCity_EventScript_BrendanPokemonLeague
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM
@@ -414,7 +426,7 @@ LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 	return
 
 LilycoveCity_Text_MayShoppingLetsBattle:
-	.string "May: Oh, hey?\n"
+	.string "Oh, hey?\n"
 	.string "{PLAYER}{KUN}, are you shopping, too?\p"
 	.string "I bought a whole bunch of Dolls and\n"
 	.string "Posters.\p"
@@ -427,17 +439,17 @@ LilycoveCity_Text_MayShoppingLetsBattle:
 	.string "me your Pokémon, {PLAYER}{KUN}.$"
 
 LilycoveCity_Text_MayNotRaisingPokemon:
-	.string "May: Oh, why? {PLAYER}{KUN}, haven't you\n"
+	.string "Oh, why? {PLAYER}{KUN}, haven't you\n"
 	.string "been raising your Pokémon?\p"
 	.string "That's not a very good showing as a\n"
 	.string "Trainer…$"
 
 LilycoveCity_Text_MayBattleMe:
-	.string "May: Come on, battle with me, so I can\n"
+	.string "Come on, battle with me, so I can\n"
 	.string "check out your Pokémon!$"
 
 LilycoveCity_Text_MayWontBeBeaten:
-	.string "May: The Pokémon I raised won't be\n"
+	.string "The Pokémon I raised won't be\n"
 	.string "beaten by your Pokémon, {PLAYER}{KUN}!$"
 
 LilycoveCity_Text_MayDefeat:
@@ -448,7 +460,7 @@ LilycoveCity_Text_MayDefeat:
 	.string "strong, {PLAYER}{KUN}, didn't it?$"
 
 LilycoveCity_Text_MayGoingBackToLittleroot:
-	.string "May: I'm thinking of going back to\n"
+	.string "I'm thinking of going back to\n"
 	.string "Littleroot soon.\p"
 	.string "I've caught a decent group of Pokémon,\n"
 	.string "and my Pokédex is coming along, so\l"
@@ -484,7 +496,7 @@ LilycoveCity_Text_MayYouGoingToBattleFrontier:
 	.string "See you!$"
 
 LilycoveCity_Text_BrendanShoppingLetsBattle:
-	.string "Brendan: Oh, hey, it's {PLAYER}.\p"
+	.string "Oh, hey, it's {PLAYER}.\p"
 	.string "I'm running an errand for my dad.\n"
 	.string "No, I'm not buying any Dolls.\p"
 	.string "Anyways, it's been a while.\p"
@@ -492,15 +504,15 @@ LilycoveCity_Text_BrendanShoppingLetsBattle:
 	.string "raising Pokémon better?$"
 
 LilycoveCity_Text_BrendanNoConfidence:
-	.string "Brendan: Oh, what's the matter?\n"
+	.string "Oh, what's the matter?\n"
 	.string "Don't have the confidence?$"
 
 LilycoveCity_Text_BrendanBattleMe:
-	.string "Brendan: Want to battle to see who's\n"
+	.string "Want to battle to see who's\n"
 	.string "been raising Pokémon better?$"
 
 LilycoveCity_Text_BrendanWontBeBeaten:
-	.string "Brendan: Aww, but you know I'm not\n"
+	.string "Aww, but you know I'm not\n"
 	.string "going to lose to no {PLAYER}.$"
 
 LilycoveCity_Text_BrendanDefeat:
@@ -510,7 +522,7 @@ LilycoveCity_Text_BrendanDefeat:
 	.string "on you as a Trainer…$"
 
 LilycoveCity_Text_BrendanGoingBackToLittleroot:
-	.string "Brendan: I…\n"
+	.string "I…\n"
 	.string "I plan on going home to Littleroot.\p"
 	.string "You know I'm helping out my dad on his\n"
 	.string "Pokédex. It's coming together pretty\l"

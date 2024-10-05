@@ -38,6 +38,7 @@ SkyPillar_Outside_EventScript_WallaceScene::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
+	speakername (CommonText_Wallace)
 	msgbox SkyPillar_Outside_Text_OpenedDoorToSkyPillar, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -48,6 +49,7 @@ SkyPillar_Outside_EventScript_WallaceScene::
 	special ShakeCamera
 	waitstate
 	delay 40
+	speakername (CommonText_Wallace)
 	msgbox SkyPillar_Outside_Text_EarthquakeNotMomentToWaste, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, SkyPillar_Outside_Movement_PlayerClimbSkyPillar
@@ -69,6 +71,7 @@ SkyPillar_Outside_EventScript_WallaceScene::
 	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	delay 30
+	speakername (CommonText_Wallace)
 	msgbox SkyPillar_Outside_Text_SituationGettingWorse, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_SYS_WEATHER_CTRL
@@ -77,6 +80,7 @@ SkyPillar_Outside_EventScript_WallaceScene::
 	special WaitWeather
 	waitstate
 	delay 30
+	speakername (CommonText_Wallace)
 	msgbox SkyPillar_Outside_Text_GotToGoBackForSootopolis, MSGBOX_DEFAULT
 	closemessage
 	playse SE_EXIT
@@ -143,7 +147,7 @@ SkyPillar_Outside_Text_DoorIsClosed:
 	.string "The door is closed.$"
 
 SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
-	.string "Wallace: Oh, my, I'm terribly sorry!\p"
+	.string "Oh, my, I'm terribly sorry!\p"
 	.string "In my haste, I didn't notice that\n"
 	.string "I'd left you behind!\p"
 	.string "I've opened the locked door of\n"
@@ -151,16 +155,16 @@ SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
 	.string "{PLAYER}{KUN}, let's be on our way!$"
 
 SkyPillar_Outside_Text_EarthquakeNotMomentToWaste:
-	.string "Wallace: It's an earthquake!\p"
+	.string "It's an earthquake!\p"
 	.string "There's not a moment to waste!\n"
 	.string "We've got to hurry!$"
 
 SkyPillar_Outside_Text_SituationGettingWorse:
-	.string "Wallace: Hmm…\n"
+	.string "Hmm…\n"
 	.string "The situation is getting worse…$"
 
 SkyPillar_Outside_Text_GotToGoBackForSootopolis:
-	.string "Wallace: This isn't good…\p"
+	.string "This isn't good…\p"
 	.string "The weather distortion is spreading\n"
 	.string "even here…\p"
 	.string "{PLAYER}{KUN}.\p"

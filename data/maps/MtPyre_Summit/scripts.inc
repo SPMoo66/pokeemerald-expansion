@@ -47,6 +47,7 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_ArchieFacePlayer0
 	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_ArchieFacePlayer1
 	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_ArchieFacePlayer2
+	speakername (CommonText_Archie)
 	msgbox MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo, MSGBOX_DEFAULT
 	closemessage
 	fadescreen FADE_TO_BLACK
@@ -215,6 +216,7 @@ MtPyre_Summit_EventScript_ArchieMaxieReturnOrbs::
 	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_MaxieApproachPlayer0
 	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_MaxieApproachPlayer1
 	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_MaxieApproachPlayer2
+	speakername (CommonText_Maxie)
 	msgbox MtPyre_Summit_Text_MaxieSilence, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_MaxieApproachArchie0
@@ -461,8 +463,8 @@ MtPyre_Summit_Text_Grunt4PostBattle:
 	.string "with us members and our leader.$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
-	.string "Archie: Team Magma's Maxie got ahead\n"
-	.string "of us, but we also got what we wanted.\p"
+	.string "Team Magma's Maxie got ahead of us,\n"
+	.string "but we also got what we wanted.\p"
 	.string "The Red Orb preserved at Mt. Pyre…\n"
 	.string "I, Archie, now have it in my possession!\p"
 	.string "Fufufu… Now we can bring our ultimate\n"
@@ -563,7 +565,7 @@ MtPyre_Summit_Text_WellThatTooIsFine:
 	.string "Well, that, too, is fine…$"
 
 MtPyre_Summit_Text_MaxieSilence:
-	.string "Maxie: {PLAYER}…\p"
+	.string "{PLAYER}…\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …$"
 

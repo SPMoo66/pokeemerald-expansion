@@ -192,6 +192,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_OldManMagma::
 MossdeepCity_SpaceCenter_1F_EventScript_Steven::
 	lock
 	faceplayer
+	speakername (CommonText_Steven)
 	msgbox MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel, MSGBOX_DEFAULT
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -357,7 +358,7 @@ MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream:
 	.string "I'm not having any of that!$"
 
 MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
-	.string "Steven: {PLAYER}{KUN}, have you read that\n"
+	.string "{PLAYER}{KUN}, have you read that\n"
 	.string "proclamation already?\p"
 	.string "Team Magma is coming after the rocket\n"
 	.string "fuel on this island.\p"

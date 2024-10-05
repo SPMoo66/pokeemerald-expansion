@@ -20,28 +20,33 @@ Route128_EventScript_KyogreAwakenedScene::
 	delay 20
 	applymovement LOCALID_ARCHIE, Route128_Movement_ArchieLookAround
 	waitmovement 0
+	speakername (CommonText_Archie)
 	msgbox Route128_Text_ArchieWhatHappened, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ARCHIE, Route128_Movement_ArchieBackUp
 	waitmovement 0
+	speakername (CommonText_Archie)
 	msgbox Route128_Text_ArchieIOnlyWanted, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_MAXIE, Route128_Movement_MaxieApproachArchie
 	waitmovement 0
 	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
+	speakername (CommonText_Maxie)
 	msgbox Route128_Text_MaxieDoYouUnderstandNow, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_MAXIE, Route128_Movement_MaxieApproachPlayer
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
+	speakername (CommonText_Maxie)
 	msgbox Route128_Text_MaxieResposibilityFallsToArchieAndMe, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ARCHIE, Route128_Movement_ArchieRunLeft
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	applymovement LOCALID_MAXIE, Route128_Movement_MaxieWalkLeft
 	waitmovement 0
+	speakername (CommonText_Maxie)
 	msgbox Route128_Text_MaxieThisDefiesBelief, MSGBOX_DEFAULT
 	closemessage
 	delay 40
@@ -59,14 +64,17 @@ Route128_EventScript_KyogreAwakenedScene::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
+	speakername (CommonText_Steven)
 	msgbox Route128_Text_StevenWhatIsHappening, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_STEVEN, Common_Movement_WalkUp
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
+	speakername (CommonText_Steven)
 	msgbox Route128_Text_StevenWholeWorldWillDrown, MSGBOX_DEFAULT
 	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
+	speakername (CommonText_Steven)
 	msgbox Route128_Text_StevenImGoingToSootopolis, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
@@ -223,7 +231,7 @@ Route128_EventScript_Carlee::
 	end
 
 Route128_Text_ArchieWhatHappened:
-	.string "Archie: What happened…\n"
+	.string "What happened…\n"
 	.string "What is this wretched scene…\p"
 	.string "Did I…make a horrible mistake?$"
 
@@ -232,8 +240,7 @@ Route128_Text_ArchieIOnlyWanted:
 	.string "I only wanted…$"
 
 Route128_Text_MaxieDoYouUnderstandNow:
-	.string "Maxie: Do you understand now,\n"
-	.string "Archie?\p"
+	.string "Do you understand now, Archie?\p"
 	.string "Do you finally see how disastrous\n"
 	.string "your dream turned out to be?\p"
 	.string "We have to hurry! We have to do\n"
@@ -241,7 +248,7 @@ Route128_Text_MaxieDoYouUnderstandNow:
 	.string "completely out of control!$"
 
 Route128_Text_MaxieResposibilityFallsToArchieAndMe:
-	.string "Maxie: {PLAYER}, don't say anything.\p"
+	.string "{PLAYER}, don't say anything.\p"
 	.string "I know that I have no right to be\n"
 	.string "critical of Archie…\p"
 	.string "But the way things are now, I doubt\n"
@@ -253,13 +260,13 @@ Route128_Text_MaxieResposibilityFallsToArchieAndMe:
 	.string "to this falls to Archie and me…$"
 
 Route128_Text_MaxieThisDefiesBelief:
-	.string "Maxie: This defies belief…\p"
+	.string "This defies belief…\p"
 	.string "Those super-ancient Pokémon…\p"
 	.string "Their power is unbelievable.\n"
 	.string "They've upset the balance of nature…$"
 
 Route128_Text_StevenWhatIsHappening:
-	.string "Steven: {PLAYER}{KUN}!\n"
+	.string "{PLAYER}{KUN}!\n"
 	.string "What is happening?$"
 
 Route128_Text_StevenWholeWorldWillDrown:

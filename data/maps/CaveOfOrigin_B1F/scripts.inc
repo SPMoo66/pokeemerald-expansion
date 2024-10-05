@@ -6,7 +6,9 @@ CaveOfOrigin_B1F_MapScripts::
 CaveOfOrigin_B1F_EventScript_Wallace::
 	lock
 	faceplayer
-	msgbox CaveOfOrigin_B1F_Text_WallaceStory, MSGBOX_DEFAULT
+	msgbox CaveOfOrigin_B1F_Text_WallaceStory1, MSGBOX_DEFAULT
+	speakername (CommonText_Wallace)
+	msgbox CaveOfOrigin_B1F_Text_WallaceStory2, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
@@ -19,6 +21,7 @@ CaveOfOrigin_B1F_EventScript_Wallace::
 	delay 30
 	applymovement LOCALID_WALLACE, Common_Movement_FacePlayer
 	waitmovement 0
+	speakername (CommonText_Wallace)
 	message CaveOfOrigin_B1F_Text_WhereIsRayquaza
 	waitmessage
 	goto CaveOfOrigin_B1F_EventScript_WheresRayquaza
@@ -34,21 +37,25 @@ CaveOfOrigin_B1F_EventScript_WheresRayquaza::
 	end
 
 CaveOfOrigin_B1F_EventScript_AtCaveOfOrigin::
+	speakername (CommonText_Wallace)
 	message CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin
 	waitmessage
 	goto CaveOfOrigin_B1F_EventScript_WheresRayquaza
 
 CaveOfOrigin_B1F_EventScript_AtMtPyre::
+	speakername (CommonText_Wallace)
 	message CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat
 	waitmessage
 	goto CaveOfOrigin_B1F_EventScript_WheresRayquaza
 
 CaveOfOrigin_B1F_EventScript_DontRemember::
+	speakername (CommonText_Wallace)
 	message CaveOfOrigin_B1F_Text_CantYouRememberSomehow
 	waitmessage
 	goto CaveOfOrigin_B1F_EventScript_WheresRayquaza
 
 CaveOfOrigin_B1F_EventScript_AtSkyPillar::
+	speakername (CommonText_Wallace)
 	msgbox CaveOfOrigin_B1F_Text_WellHeadToSkyPillar, MSGBOX_DEFAULT
 	closemessage
 	playse SE_EXIT
@@ -61,10 +68,12 @@ CaveOfOrigin_B1F_EventScript_AtSkyPillar::
 	release
 	end
 
-CaveOfOrigin_B1F_Text_WallaceStory:
+CaveOfOrigin_B1F_Text_WallaceStory1:
 	.string "Ah, so you are {PLAYER}{KUN}?\n"
 	.string "I've heard tales of your exploits.\p"
-	.string "My name is Wallace.\p"
+	.string "My name is Wallace.$"
+
+CaveOfOrigin_B1F_Text_WallaceStory2:
 	.string "I was once the Gym Leader of\n"
 	.string "Sootopolis, but something came up.\p"
 	.string "So now, I've entrusted my mentor Juan\n"
@@ -86,19 +95,19 @@ CaveOfOrigin_B1F_Text_WallaceStory:
 	.string "Rayquaza's whereabouts…$"
 
 CaveOfOrigin_B1F_Text_WhereIsRayquaza:
-	.string "Wallace: {PLAYER}{KUN}, do you perhaps\n"
-	.string "know where Rayquaza is now?\p"
+	.string "{PLAYER}{KUN}, do you perhaps know\n"
+	.string "where Rayquaza is now?\p"
 	.string "If you do, please tell me.$"
 
 CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin:
-	.string "Wallace: The Cave of Origin?\p"
+	.string "The Cave of Origin?\p"
 	.string "But that's right here!\n"
 	.string "I need you to do better than that!\p"
 	.string "Please, I need you to think about\n"
 	.string "where Rayquaza might be right now.$"
 
 CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat:
-	.string "Wallace: Mt. Pyre?\p"
+	.string "Mt. Pyre?\p"
 	.string "But when I met the old lady there\n"
 	.string "earlier, she made no mention of it.\p"
 	.string "I very much doubt that the old lady\n"
@@ -107,12 +116,12 @@ CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat:
 	.string "more carefully for me?$"
 
 CaveOfOrigin_B1F_Text_CantYouRememberSomehow:
-	.string "Wallace: Huh? You don't remember?\n"
+	.string "Huh? You don't remember?\n"
 	.string "Hmm… That's a problem…\p"
 	.string "Can't you remember somehow?$"
 
 CaveOfOrigin_B1F_Text_WellHeadToSkyPillar:
-	.string "Wallace: The Sky Pillar?\p"
+	.string "The Sky Pillar?\p"
 	.string "That's it!\n"
 	.string "It must be the Sky Pillar!\p"
 	.string "{PLAYER}{KUN}, there's not a moment to lose!\n"

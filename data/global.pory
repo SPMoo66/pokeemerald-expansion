@@ -860,6 +860,10 @@ text CommonText_Lanette {
 	"Lanette"
 }
 
+text CommonText_Wallace {
+	"Wallace"
+}
+
 
 
 script GetRivalForNameBox {

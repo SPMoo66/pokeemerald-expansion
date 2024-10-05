@@ -9027,7 +9027,7 @@ static const struct TrainerMon sParty_MaxieMagmaHideout[] = {
     },
     {
     .lvl = 45,
-    .species = SPECIES_SANDYGAST,
+    .species = SPECIES_PALOSSAND,
     .ability = ABILITY_WATER_COMPACTION,
     .heldItem = ITEM_COLBUR_BERRY,
     .moves = {MOVE_ATTRACT, MOVE_STEALTH_ROCK, MOVE_SWAGGER, MOVE_SHADOW_BALL}

@@ -852,8 +852,18 @@ static const u8 sText_LastSwitchNorman[] = _("{B_PLAYER_NAME}, I'm so proud…")
 static const u8 sText_LastSwitchWinona[] = _("Every great tale has its climax…\nEn garde!");
 static const u8 sText_LastSwitchLizaTate[] = _("Tate: Liza, focus!");
 static const u8 sText_LastSwitchJuan[] = _("Glitz! Glamor!\nShow me all you have!");
+static const u8 sText_LastSwitchMaxieMtChimney[] = _("I must last…\nUntil the Meteorite…");
+static const u8 sText_LastSwitchMaxieMagmaHideout[] = _("Where is… Groudon?");
+static const u8 sText_LastSwitchMaxieMossdeep[] = _("No… Not this plan too!");
+static const u8 sText_LastSwitchArchie[] = _("How 'boat that?\nWe're down to the last…");
 static const u8 sText_MegaLizaTate[] = _("Tate: Now!\nLiza: Mega Evolution!");
 static const u8 sText_MegaJuan[] = _("Now, to display even greater beauty!\nDance with me!");
+static const u8 sText_MegaMaxieMagmaHideout[] = _("Sandaconda!\nUse this power!");
+static const u8 sText_MegaArchie[] = _("No! More power!");
+static const u8 sText_CriticalHitMaxie[] = _("Child! Stop that at once!");
+static const u8 sText_CriticalHitArchie[] = _("Ha! Bring it on, kid!");
+static const u8 sText_LastHalfMaxieMossdeep[] = _("Hah… Is this… the end?");
+static const u8 sText_LastHalfArchie[] = _("Hah…\nIt's looking pretty grim now.");
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
@@ -875,6 +885,16 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_LASTSWITCHJUAN - BATTLESTRINGS_TABLE_START] = sText_LastSwitchJuan,
     [STRINGID_MEGALIZATATE - BATTLESTRINGS_TABLE_START] = sText_MegaLizaTate,
     [STRINGID_MEGAJUAN - BATTLESTRINGS_TABLE_START] = sText_MegaJuan,
+    [STRINGID_LASTSWITCHMAXIEMTCHIMNEY - BATTLESTRINGS_TABLE_START] = sText_LastSwitchMaxieMtChimney,
+    [STRINGID_LASTSWITCHMAXIEMAGMAHIDEOUT - BATTLESTRINGS_TABLE_START] = sText_LastSwitchMaxieMagmaHideout,
+    [STRINGID_LASTSWITCHMAXIEMOSSDEEP - BATTLESTRINGS_TABLE_START] = sText_LastSwitchMaxieMossdeep,
+    [STRINGID_LASTSWITCHARCHIE - BATTLESTRINGS_TABLE_START] = sText_LastSwitchArchie,
+    [STRINGID_MEGAMAXIEMAGMAHIDEOUT - BATTLESTRINGS_TABLE_START] = sText_MegaMaxieMagmaHideout,
+    [STRINGID_MEGAARCHIE - BATTLESTRINGS_TABLE_START] = sText_MegaArchie,
+    [STRINGID_MEGACRITICALHITMAXIE - BATTLESTRINGS_TABLE_START] = sText_CriticalHitMaxie,
+    [STRINGID_MEGACRITICALHITARCHIE - BATTLESTRINGS_TABLE_START] = sText_CriticalHitArchie,
+    [STRINGID_LASTHALFMAXIEMOSSDEEP - BATTLESTRINGS_TABLE_START] = sText_LastHalfMaxieMossdeep,
+    [STRINGID_LASTHALFARCHIE - BATTLESTRINGS_TABLE_START] = sText_LastHalfArchie,
     [STRINGID_TIDYINGUPCOMPLETE - BATTLESTRINGS_TABLE_START] = sText_TidyingUpComplete,
     [STRINGID_SUPERSWEETAROMAWAFTS - BATTLESTRINGS_TABLE_START] = sText_SupersweetAromaWafts,
     [STRINGID_SHEDITSTAIL - BATTLESTRINGS_TABLE_START] = sText_ShedItsTail,
@@ -4061,6 +4081,34 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgFirstDown = sText_FirstDownJuan,
 		.msgMegaEvolution = sText_MegaJuan,
         .msgLastSwitchIn = sText_LastSwitchJuan,
+    },
+    {
+        .trainerId = TRAINER_ARCHIE,
+        .isFrontierTrainer = FALSE,
+		.msgMegaEvolution = sText_MegaArchie,
+        .msgLastSwitchIn = sText_LastSwitchArchie,
+        .msgFirstCriticalHit = sText_CriticalHitArchie,
+        .msgLastHalfHp = sText_LastHalfArchie,
+    },
+    {
+        .trainerId = TRAINER_MAXIE_MT_CHIMNEY,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_LastSwitchMaxieMtChimney,
+        .msgFirstCriticalHit = sText_CriticalHitMaxie,
+    },
+    {
+        .trainerId = TRAINER_MAXIE_MAGMA_HIDEOUT,
+        .isFrontierTrainer = FALSE,
+		.msgMegaEvolution = sText_MegaMaxieMagmaHideout,
+        .msgLastSwitchIn = sText_LastSwitchMaxieMagmaHideout,
+        .msgFirstCriticalHit = sText_CriticalHitMaxie,
+    },
+    {
+        .trainerId = TRAINER_MAXIE_MOSSDEEP,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_LastSwitchMaxieMossdeep,
+        .msgFirstCriticalHit = sText_CriticalHitMaxie,
+        .msgLastHalfHp = sText_LastHalfMaxieMossdeep,
     }
 };
 

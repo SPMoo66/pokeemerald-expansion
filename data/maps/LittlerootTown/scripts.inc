@@ -515,7 +515,7 @@ LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeFemale::
 # 258 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_EventScript_FatMan::
 # 259 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_CanUsePCToStoreItems, MSGBOX_NPC
+	msgbox LittlerootTown_Text_Simulation, MSGBOX_NPC
 # 260 "data/maps/LittlerootTown/scripts.pory"
 	end
 # 261 "data/maps/LittlerootTown/scripts.pory"
@@ -1753,7 +1753,7 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens:
 # 877 "data/maps/LittlerootTown/scripts.pory"
 
 # 878 "data/maps/LittlerootTown/scripts.pory"
-LittlerootTown_Text_CanUsePCToStoreItems:
+LittlerootTown_Text_Simulation:
 # 879 "data/maps/LittlerootTown/scripts.pory"
 	.string "Experts have said that we could\n"
 # 880 "data/maps/LittlerootTown/scripts.pory"

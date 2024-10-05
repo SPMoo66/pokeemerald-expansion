@@ -256,7 +256,7 @@ LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeFemale::
 	end
 
 LittlerootTown_EventScript_FatMan::
-	msgbox LittlerootTown_Text_CanUsePCToStoreItems, MSGBOX_NPC
+	msgbox LittlerootTown_Text_Simulation, MSGBOX_NPC
 	end
 
 LittlerootTown_EventScript_Boy::
@@ -875,7 +875,7 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "If anything happens, you can come home.\p"
 	.string "Go on, go get them, honey!$"
 
-LittlerootTown_Text_CanUsePCToStoreItems:
+LittlerootTown_Text_Simulation:
 	.string "Experts have said that we could\n"
 	.string "be living inside of a simulation.\p"
 	.string "The power of science is staggering!$"

@@ -837,9 +837,45 @@ static const u8 sText_AttackerLostItsType[] = _("{B_ATK_NAME_WITH_PREFIX} lost\n
 static const u8 sText_ShedItsTail[] = _("{B_ATK_NAME_WITH_PREFIX} shed its tail\nto create a decoy!");
 static const u8 sText_SupersweetAromaWafts[] = _("A supersweet aroma is wafting from\nthe syrup covering {B_ATK_NAME_WITH_PREFIX}!");
 static const u8 sText_TidyingUpComplete[] = _("Tidying up complete!");
+static const u8 sText_FirstDownRoxanne[] = _("I just have to apply what I've\nlearned in school. Then, I'll win!");
+static const u8 sText_FirstDownBrawly[] = _("Whoa, that's what I'm talking about!");
+static const u8 sText_FirstDownWattson[] = _("Wahaha! What a shock!");
+static const u8 sText_FirstDownFlannery[] = _("Shoot, what line am I supposed to say?");
+static const u8 sText_FirstDownNorman[] = _("Oh? You've become strong!");
+static const u8 sText_FirstDownWinona[] = _("Ha!\nCome, rise up!");
+static const u8 sText_FirstDownLizaTate[] = _("Liza: The stars will guide us!");
+static const u8 sText_FirstDownJuan[] = _("Yes! Let me embrace your artistry!");
+static const u8 sText_LastSwitchRoxanne[] = _("No… What was I supposed to do in\nthis situation?");
+static const u8 sText_LastSwitchBrawly[] = _("Great show!\nBut there's no wave I can't conquer!");
+static const u8 sText_LastSwitchWattson[] = _("Let's see if you get past this last\ntrap I've laid!");
+static const u8 sText_LastSwitchFlannery[] = _("Ah! Trainer!\nI've not lost yet!");
+static const u8 sText_LastSwitchNorman[] = _("{B_PLAYER_NAME}, I'm so proud…");
+static const u8 sText_LastSwitchWinona[] = _("Every great tale has its climax…\nEn garde!");
+static const u8 sText_LastSwitchLizaTate[] = _("Tate: Liza, focus!");
+static const u8 sText_LastSwitchJuan[] = _("Glitz! Glamor!\nShow me all you have!");
+static const u8 sText_MegaLizaTate[] = _("Tate: Now!\nLiza: Mega Evolution!");
+static const u8 sText_MegaJuan[] = _("Now, to display even greater beauty!\nDance with me!");
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
+    [STRINGID_FIRSTDOWNROXANNE - BATTLESTRINGS_TABLE_START] = sText_FirstDownRoxanne,
+    [STRINGID_FIRSTDOWNBRAWLY - BATTLESTRINGS_TABLE_START] = sText_FirstDownBrawly,
+    [STRINGID_FIRSTDOWNWATTSON - BATTLESTRINGS_TABLE_START] = sText_FirstDownWattson,
+    [STRINGID_FIRSTDOWNFLANNERY - BATTLESTRINGS_TABLE_START] = sText_FirstDownFlannery,
+    [STRINGID_FIRSTDOWNNORMAN - BATTLESTRINGS_TABLE_START] = sText_FirstDownNorman,
+    [STRINGID_FIRSTDOWNWINONA - BATTLESTRINGS_TABLE_START] = sText_FirstDownWinona,
+    [STRINGID_FIRSTDOWNLIZATATE - BATTLESTRINGS_TABLE_START] = sText_FirstDownLizaTate,
+    [STRINGID_FIRSTDOWNJUAN - BATTLESTRINGS_TABLE_START] = sText_FirstDownJuan,
+    [STRINGID_LASTSWITCHROXANNE - BATTLESTRINGS_TABLE_START] = sText_LastSwitchRoxanne,
+    [STRINGID_LASTSWITCHBRAWLY - BATTLESTRINGS_TABLE_START] = sText_LastSwitchBrawly,
+    [STRINGID_LASTSWITCHWATTSON - BATTLESTRINGS_TABLE_START] = sText_LastSwitchWattson,
+    [STRINGID_LASTSWITCHFLANNERY - BATTLESTRINGS_TABLE_START] = sText_LastSwitchFlannery,
+    [STRINGID_LASTSWITCHNORMAN - BATTLESTRINGS_TABLE_START] = sText_LastSwitchNorman,
+    [STRINGID_LASTSWITCHWINONA - BATTLESTRINGS_TABLE_START] = sText_LastSwitchWinona,
+    [STRINGID_LASTSWITCHLIZATATE - BATTLESTRINGS_TABLE_START] = sText_LastSwitchLizaTate,
+    [STRINGID_LASTSWITCHJUAN - BATTLESTRINGS_TABLE_START] = sText_LastSwitchJuan,
+    [STRINGID_MEGALIZATATE - BATTLESTRINGS_TABLE_START] = sText_MegaLizaTate,
+    [STRINGID_MEGAJUAN - BATTLESTRINGS_TABLE_START] = sText_MegaJuan,
     [STRINGID_TIDYINGUPCOMPLETE - BATTLESTRINGS_TABLE_START] = sText_TidyingUpComplete,
     [STRINGID_SUPERSWEETAROMAWAFTS - BATTLESTRINGS_TABLE_START] = sText_SupersweetAromaWafts,
     [STRINGID_SHEDITSTAIL - BATTLESTRINGS_TABLE_START] = sText_ShedItsTail,
@@ -3979,9 +4015,54 @@ static const struct TrainerSlide sTrainerSlides[] =
     },
     */
     {
+        .trainerId = TRAINER_ROXANNE_1,
+        .isFrontierTrainer = FALSE,
+        .msgFirstDown = sText_FirstDownRoxanne,
+        .msgLastSwitchIn = sText_LastSwitchRoxanne,
+    },
+    {
+        .trainerId = TRAINER_BRAWLY_1,
+        .isFrontierTrainer = FALSE,
+        .msgFirstDown = sText_FirstDownBrawly,
+        .msgLastSwitchIn = sText_LastSwitchBrawly,
+    },
+    {
         .trainerId = TRAINER_WATTSON_1,
-        .msgLastSwitchIn = sText_CantEscape2,
-        .msgLastLowHp = sText_ShootSoClose,
+        .isFrontierTrainer = FALSE,
+        .msgFirstDown = sText_FirstDownWattson,
+        .msgLastSwitchIn = sText_LastSwitchWattson,
+    },
+    {
+        .trainerId = TRAINER_FLANNERY_1,
+        .isFrontierTrainer = FALSE,
+        .msgFirstDown = sText_FirstDownFlannery,
+        .msgLastSwitchIn = sText_LastSwitchFlannery,
+    },
+    {
+        .trainerId = TRAINER_NORMAN_1,
+        .isFrontierTrainer = FALSE,
+        .msgFirstDown = sText_FirstDownNorman,
+        .msgLastSwitchIn = sText_LastSwitchNorman,
+    },
+    {
+        .trainerId = TRAINER_WINONA_1,
+        .isFrontierTrainer = FALSE,
+        .msgFirstDown = sText_FirstDownWinona,
+        .msgLastSwitchIn = sText_LastSwitchWinona,
+    },
+    {
+        .trainerId = TRAINER_TATE_AND_LIZA_1,
+        .isFrontierTrainer = FALSE,
+        .msgFirstDown = sText_FirstDownLizaTate,
+		.msgMegaEvolution = sText_MegaLizaTate,
+        .msgLastSwitchIn = sText_LastSwitchLizaTate,
+    },
+    {
+        .trainerId = TRAINER_JUAN_1,
+        .isFrontierTrainer = FALSE,
+        .msgFirstDown = sText_FirstDownJuan,
+		.msgMegaEvolution = sText_MegaJuan,
+        .msgLastSwitchIn = sText_LastSwitchJuan,
     }
 };
 

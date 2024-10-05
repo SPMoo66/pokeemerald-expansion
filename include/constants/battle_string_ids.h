@@ -708,8 +708,26 @@
 #define STRINGID_BIZARREAREACREATED                   706
 #define STRINGID_TIDYINGUPCOMPLETE                    707
 #define STRINGID_NORUNNINGFROMTHISBATTLE              708
+#define STRINGID_FIRSTDOWNROXANNE                     709
+#define STRINGID_FIRSTDOWNBRAWLY                      710
+#define STRINGID_FIRSTDOWNWATTSON                     711
+#define STRINGID_FIRSTDOWNFLANNERY                    712
+#define STRINGID_FIRSTDOWNNORMAN                      713
+#define STRINGID_FIRSTDOWNWINONA                      714
+#define STRINGID_FIRSTDOWNLIZATATE                    715
+#define STRINGID_FIRSTDOWNJUAN                        716
+#define STRINGID_LASTSWITCHROXANNE                    717
+#define STRINGID_LASTSWITCHBRAWLY                     718
+#define STRINGID_LASTSWITCHWATTSON                    719
+#define STRINGID_LASTSWITCHFLANNERY                   720
+#define STRINGID_LASTSWITCHNORMAN                     721
+#define STRINGID_LASTSWITCHWINONA                     722
+#define STRINGID_LASTSWITCHLIZATATE                   723
+#define STRINGID_LASTSWITCHJUAN                       724
+#define STRINGID_MEGALIZATATE                         725
+#define STRINGID_MEGAJUAN                             726
 
-#define BATTLESTRINGS_COUNT                           709
+#define BATTLESTRINGS_COUNT                           727
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

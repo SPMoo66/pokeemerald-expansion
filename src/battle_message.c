@@ -844,6 +844,11 @@ static const u8 sText_FirstDownNorman[] = _("Oh? You've become strong!");
 static const u8 sText_FirstDownWinona[] = _("Ha!\nCome, rise up!");
 static const u8 sText_FirstDownLizaTate[] = _("Liza: The stars will guide us!");
 static const u8 sText_FirstDownJuan[] = _("Yes! Let me embrace your artistry!");
+static const u8 sText_FirstDownSidney[] = _("Yeah! My blood's pumping!");
+static const u8 sText_FirstDownPhoebe[] = _("Are the bonds you share enough to\nbeat ours?");
+static const u8 sText_FirstDownGlacia[] = _("Is that the best that one from\nHoenn can bring?");
+static const u8 sText_FirstDownDrake[] = _("Is that luck… or skill?");
+static const u8 sText_FirstDownWallace[] = _("");
 static const u8 sText_LastSwitchRoxanne[] = _("No… What was I supposed to do in\nthis situation?");
 static const u8 sText_LastSwitchBrawly[] = _("Great show!\nBut there's no wave I can't conquer!");
 static const u8 sText_LastSwitchWattson[] = _("Let's see if you get past this last\ntrap I've laid!");
@@ -852,18 +857,34 @@ static const u8 sText_LastSwitchNorman[] = _("{B_PLAYER_NAME}, I'm so proud…")
 static const u8 sText_LastSwitchWinona[] = _("Every great tale has its climax…\nEn garde!");
 static const u8 sText_LastSwitchLizaTate[] = _("Tate: Liza, focus!");
 static const u8 sText_LastSwitchJuan[] = _("Glitz! Glamor!\nShow me all you have!");
+static const u8 sText_LastSwitchSidney[] = _("Keep it up, or I'll knock you out!");
+static const u8 sText_LastSwitchPhoebe[] = _("Down to the last…\nWe can do this.");
+static const u8 sText_LastSwitchGlacia[] = _("A trainer of your strength has been\nsuch a rare occurrence!");
+static const u8 sText_LastSwitchDrake[] = _("Pay attention now. It's far from over!");
+static const u8 sText_LastSwitchWallace[] = _("Keep this dance going!");
 static const u8 sText_LastSwitchMaxieMtChimney[] = _("I must last…\nUntil the Meteorite…");
 static const u8 sText_LastSwitchMaxieMagmaHideout[] = _("Where is… Groudon?");
 static const u8 sText_LastSwitchMaxieMossdeep[] = _("No… Not this plan too!");
 static const u8 sText_LastSwitchArchie[] = _("How 'boat that?\nWe're down to the last…");
 static const u8 sText_MegaLizaTate[] = _("Tate: Now!\nLiza: Mega Evolution!");
 static const u8 sText_MegaJuan[] = _("Now, to display even greater beauty!\nDance with me!");
+static const u8 sText_MegaSidney[] = _("What a show!\nCome on, Centiskorch!");
+static const u8 sText_MegaPhoebe[] = _("Hydreigon, help me finish this out!");
+static const u8 sText_MegaGlacia[] = _("Let me cool down your drive.");
+static const u8 sText_MegaDrake[] = _("Flygon, let's put an end to this!");
+static const u8 sText_MegaWallace[] = _("Yes, more power is what I'll need to\nkeep up with you!");
 static const u8 sText_MegaMaxieMagmaHideout[] = _("Sandaconda!\nUse this power!");
 static const u8 sText_MegaArchie[] = _("No! More power!");
 static const u8 sText_CriticalHitMaxie[] = _("Child! Stop that at once!");
 static const u8 sText_CriticalHitArchie[] = _("Ha! Bring it on, kid!");
+static const u8 sText_LastHalfSidney[] = _("Come on, time for the photo finish!");
+static const u8 sText_LastHalfPhoebe[] = _("{B_PLAYER_NAME}, it seems that\nyou've overcome a lot.");
+static const u8 sText_LastHalfGlacia[] = _("What a fiery spirit you have within you!");
+static const u8 sText_LastHalfDrake[] = _("Yes… it seems like you may know what\nyou need to be a trainer.");
+static const u8 sText_LastHalfWallace[] = _("And now, the final step!");
 static const u8 sText_LastHalfMaxieMossdeep[] = _("Hah… Is this… the end?");
 static const u8 sText_LastHalfArchie[] = _("Hah…\nIt's looking pretty grim now.");
+static const u8 sText_BeforeFirstTurnWallace[] = _("I know your strength, but now is your\nchance to show the world!");
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
@@ -875,6 +896,11 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_FIRSTDOWNWINONA - BATTLESTRINGS_TABLE_START] = sText_FirstDownWinona,
     [STRINGID_FIRSTDOWNLIZATATE - BATTLESTRINGS_TABLE_START] = sText_FirstDownLizaTate,
     [STRINGID_FIRSTDOWNJUAN - BATTLESTRINGS_TABLE_START] = sText_FirstDownJuan,
+    [STRINGID_FIRSTDOWNSIDNEY - BATTLESTRINGS_TABLE_START] = sText_FirstDownSidney,
+    [STRINGID_FIRSTDOWNPHOEBE - BATTLESTRINGS_TABLE_START] = sText_FirstDownPhoebe,
+    [STRINGID_FIRSTDOWNGLACIA - BATTLESTRINGS_TABLE_START] = sText_FirstDownGlacia,
+    [STRINGID_FIRSTDOWNDRAKE - BATTLESTRINGS_TABLE_START] = sText_FirstDownDrake,
+    [STRINGID_FIRSTDOWNWALLACE - BATTLESTRINGS_TABLE_START] = sText_FirstDownWallace,
     [STRINGID_LASTSWITCHROXANNE - BATTLESTRINGS_TABLE_START] = sText_LastSwitchRoxanne,
     [STRINGID_LASTSWITCHBRAWLY - BATTLESTRINGS_TABLE_START] = sText_LastSwitchBrawly,
     [STRINGID_LASTSWITCHWATTSON - BATTLESTRINGS_TABLE_START] = sText_LastSwitchWattson,
@@ -883,8 +909,24 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_LASTSWITCHWINONA - BATTLESTRINGS_TABLE_START] = sText_LastSwitchWinona,
     [STRINGID_LASTSWITCHLIZATATE - BATTLESTRINGS_TABLE_START] = sText_LastSwitchLizaTate,
     [STRINGID_LASTSWITCHJUAN - BATTLESTRINGS_TABLE_START] = sText_LastSwitchJuan,
+    [STRINGID_LASTSWITCHSIDNEY - BATTLESTRINGS_TABLE_START] = sText_LastSwitchSidney,
+    [STRINGID_LASTSWITCHPHOEBE - BATTLESTRINGS_TABLE_START] = sText_LastSwitchPhoebe,
+    [STRINGID_LASTSWITCHGLACIA - BATTLESTRINGS_TABLE_START] = sText_LastSwitchGlacia,
+    [STRINGID_LASTSWITCHDRAKE - BATTLESTRINGS_TABLE_START] = sText_LastSwitchDrake,
+    [STRINGID_LASTSWITCHWALLACE - BATTLESTRINGS_TABLE_START] = sText_LastSwitchWallace,
     [STRINGID_MEGALIZATATE - BATTLESTRINGS_TABLE_START] = sText_MegaLizaTate,
     [STRINGID_MEGAJUAN - BATTLESTRINGS_TABLE_START] = sText_MegaJuan,
+    [STRINGID_MEGASIDNEY - BATTLESTRINGS_TABLE_START] = sText_MegaSidney,
+    [STRINGID_MEGAPHOEBE - BATTLESTRINGS_TABLE_START] = sText_MegaPhoebe,
+    [STRINGID_MEGAGLACIA - BATTLESTRINGS_TABLE_START] = sText_MegaGlacia,
+    [STRINGID_MEGADRAKE - BATTLESTRINGS_TABLE_START] = sText_MegaDrake,
+    [STRINGID_MEGAWALLACE - BATTLESTRINGS_TABLE_START] = sText_MegaWallace,
+    [STRINGID_LASTHALFSIDNEY - BATTLESTRINGS_TABLE_START] = sText_LastHalfSidney,
+    [STRINGID_LASTHALFPHOEBE - BATTLESTRINGS_TABLE_START] = sText_LastHalfPhoebe,
+    [STRINGID_LASTHALFGLACIA - BATTLESTRINGS_TABLE_START] = sText_LastHalfGlacia,
+    [STRINGID_LASTHALFDRAKE - BATTLESTRINGS_TABLE_START] = sText_LastHalfDrake,
+    [STRINGID_LASTHALFWALLACE - BATTLESTRINGS_TABLE_START] = sText_LastHalfWallace,
+    [STRINGID_BEFOREFIRSTTURNWALLACE - BATTLESTRINGS_TABLE_START] = sText_BeforeFirstTurnWallace,
     [STRINGID_LASTSWITCHMAXIEMTCHIMNEY - BATTLESTRINGS_TABLE_START] = sText_LastSwitchMaxieMtChimney,
     [STRINGID_LASTSWITCHMAXIEMAGMAHIDEOUT - BATTLESTRINGS_TABLE_START] = sText_LastSwitchMaxieMagmaHideout,
     [STRINGID_LASTSWITCHMAXIEMOSSDEEP - BATTLESTRINGS_TABLE_START] = sText_LastSwitchMaxieMossdeep,
@@ -4081,6 +4123,47 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgFirstDown = sText_FirstDownJuan,
 		.msgMegaEvolution = sText_MegaJuan,
         .msgLastSwitchIn = sText_LastSwitchJuan,
+    },
+    {
+        .trainerId = TRAINER_SIDNEY,
+        .isFrontierTrainer = FALSE,
+        .msgFirstDown = sText_FirstDownSidney,
+		.msgMegaEvolution = sText_MegaSidney,
+        .msgLastSwitchIn = sText_LastSwitchSidney,
+        .msgLastHalfHp = sText_LastHalfSidney,
+    },
+    {
+        .trainerId = TRAINER_PHOEBE,
+        .isFrontierTrainer = FALSE,
+        .msgFirstDown = sText_FirstDownPhoebe,
+		.msgMegaEvolution = sText_MegaPhoebe,
+        .msgLastSwitchIn = sText_LastSwitchPhoebe,
+        .msgLastHalfHp = sText_LastHalfPhoebe,
+    },
+    {
+        .trainerId = TRAINER_GLACIA,
+        .isFrontierTrainer = FALSE,
+        .msgFirstDown = sText_FirstDownGlacia,
+		.msgMegaEvolution = sText_MegaGlacia,
+        .msgLastSwitchIn = sText_LastSwitchGlacia,
+        .msgLastHalfHp = sText_LastHalfGlacia,
+    },
+    {
+        .trainerId = TRAINER_DRAKE,
+        .isFrontierTrainer = FALSE,
+        .msgFirstDown = sText_FirstDownDrake,
+		.msgMegaEvolution = sText_MegaDrake,
+        .msgLastSwitchIn = sText_LastSwitchDrake,
+        .msgLastHalfHp = sText_LastHalfDrake,
+    },
+    {
+        .trainerId = TRAINER_WALLACE,
+        .isFrontierTrainer = FALSE,
+        .msgBeforeFirstTurn = sText_BeforeFirstTurnWallace,
+        .msgFirstDown = sText_FirstDownWallace,
+		.msgMegaEvolution = sText_MegaWallace,
+        .msgLastSwitchIn = sText_LastSwitchWallace,
+        .msgLastHalfHp = sText_LastHalfWallace,
     },
     {
         .trainerId = TRAINER_ARCHIE,

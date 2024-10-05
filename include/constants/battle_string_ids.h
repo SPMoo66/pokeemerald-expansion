@@ -736,8 +736,29 @@
 #define STRINGID_MEGACRITICALHITARCHIE                733
 #define STRINGID_LASTHALFMAXIEMOSSDEEP                734
 #define STRINGID_LASTHALFARCHIE                       735
+#define STRINGID_FIRSTDOWNSIDNEY                      736
+#define STRINGID_FIRSTDOWNPHOEBE                      737
+#define STRINGID_FIRSTDOWNGLACIA                      738
+#define STRINGID_FIRSTDOWNDRAKE                       739
+#define STRINGID_FIRSTDOWNWALLACE                     740
+#define STRINGID_LASTSWITCHSIDNEY                     741
+#define STRINGID_LASTSWITCHPHOEBE                     742
+#define STRINGID_LASTSWITCHGLACIA                     743
+#define STRINGID_LASTSWITCHDRAKE                      744
+#define STRINGID_LASTSWITCHWALLACE                    745
+#define STRINGID_MEGASIDNEY                           746
+#define STRINGID_MEGAPHOEBE                           747
+#define STRINGID_MEGAGLACIA                           748
+#define STRINGID_MEGADRAKE                            749
+#define STRINGID_MEGAWALLACE                          750
+#define STRINGID_LASTHALFSIDNEY                       751
+#define STRINGID_LASTHALFPHOEBE                       752
+#define STRINGID_LASTHALFGLACIA                       753
+#define STRINGID_LASTHALFDRAKE                        754
+#define STRINGID_LASTHALFWALLACE                      755
+#define STRINGID_BEFOREFIRSTTURNWALLACE               756
 
-#define BATTLESTRINGS_COUNT                           736
+#define BATTLESTRINGS_COUNT                           757
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

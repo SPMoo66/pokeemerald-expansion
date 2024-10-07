@@ -19,21 +19,23 @@ EverGrandeCity_HallOfFame_OnFrame:
 
 EverGrandeCity_HallOfFame_EventScript_EnterHallOfFame::
 	lockall
-	applymovement LOCALID_WALLACE, EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame1
-	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame1
+	applymovement LOCALID_WALLACE, Common_Movement_WalkUp6
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6
 	waitmovement 0
 	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterRight
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
+	speakername (CommonText_Wallace)
 	msgbox EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_WALLACE, EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame2
-	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame2
+	applymovement LOCALID_WALLACE, Common_Movement_WalkUp5
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp5
 	waitmovement 0
 	delay 20
 	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterRight
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
+	speakername (CommonText_Wallace)
 	msgbox EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterUp
@@ -66,25 +68,8 @@ EverGrandeCity_HallOfFame_EventScript_GameClearFemale::
 	releaseall
 	end
 
-EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame1:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame2:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
 EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions:
-	.string "Wallace: This room…\p"
+	.string "This room…\p"
 	.string "This is where we keep records of\n"
 	.string "Pokémon that prevailed through\l"
 	.string "harsh battles.\p"
@@ -92,8 +77,8 @@ EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions:
 	.string "are honored.$"
 
 EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames:
-	.string "Wallace: Come on, let's record your\n"
-	.string "name as a Trainer who triumphed over\l"
-	.string "the Pokémon League, and the names of\l"
-	.string "the partners who battled with you.$"
+	.string "Come on, let's record your name as a\n"
+	.string "nTrainer who triumphed over the\l"
+	.string "Pokémon League, and the names of the\l"
+	.string "partners who battled with you.$"
 

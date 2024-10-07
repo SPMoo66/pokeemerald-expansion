@@ -55,6 +55,7 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_Scott::
 	lock
 	faceplayer
 	goto_if_set FLAG_MET_SCOTT_IN_LILYCOVE, LilycoveCity_CoveLilyMotel_2F_EventScript_MetScott
+	speakername (CommonText_Scott)
 	msgbox LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles, MSGBOX_DEFAULT
 	addvar VAR_SCOTT_STATE, 1
 	setflag FLAG_MET_SCOTT_IN_LILYCOVE
@@ -62,6 +63,7 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_Scott::
 	end
 
 LilycoveCity_CoveLilyMotel_2F_EventScript_MetScott::
+	speakername (CommonText_Scott)
 	msgbox LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy, MSGBOX_DEFAULT
 	release
 	end
@@ -113,7 +115,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy:
 	.string "my Game Boy Advance.$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles:
-	.string "Scott: … … … … …\n"
+	.string "… … … … …\n"
 	.string "… … … … … Zzz…\p"
 	.string "… … … … … Huh?!\n"
 	.string "Oh, sorry, sorry! I was snoozing!\p"
@@ -129,8 +131,8 @@ LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles:
 	.string "the whole works!$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy:
-	.string "Scott: I think it does take strategy\n"
-	.string "to win a Contest.\p"
+	.string "I think it does take strategy to win a\n"
+	.string "Contest.\p"
 	.string "Devising Contest strategies is one way\n"
 	.string "of becoming a better Trainer, I'd say.$"
 

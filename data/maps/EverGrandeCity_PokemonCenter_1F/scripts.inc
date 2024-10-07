@@ -35,6 +35,7 @@ EverGrandeCity_PokemonCenter_1F_EventScript_ExpertM::
 EverGrandeCity_PokemonCenter_1F_EventScript_Scott::
 	lock
 	faceplayer
+	speakername (CommonText_Scott)
 	msgbox EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_FACING, DIR_NORTH, EverGrandeCity_PokemonCenter_1F_EventScript_ScottExitNorth
@@ -90,8 +91,8 @@ EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon:
 	.string "your very best!$"
 
 EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou:
-	.string "Scott: {PLAYER}{KUN}, you've clawed your\n"
-	.string "way up to face the Pokémon League!\p"
+	.string "{PLAYER}{KUN}, you've clawed your way\n"
+	.string "up to face the Pokémon League!\p"
 	.string "I'm happy for you!\n"
 	.string "You made my cheering worthwhile!\p"
 	.string "{PLAYER}{KUN}, if you were to become\n"

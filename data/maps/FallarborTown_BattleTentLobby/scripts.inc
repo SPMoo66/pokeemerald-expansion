@@ -225,6 +225,7 @@ FallarborTown_BattleTentLobby_EventScript_Scott::
 	lock
 	faceplayer
 	goto_if_set FLAG_MET_SCOTT_IN_FALLARBOR, FallarborTown_BattleTentLobby_EventScript_ScottAlreadySpokenTo
+	speakername (CommonText_Scott)
 	msgbox FallarborTown_BattleTentLobby_Text_ScottLookingForSomeone, MSGBOX_DEFAULT
 	addvar VAR_SCOTT_STATE, 1
 	setflag FLAG_MET_SCOTT_IN_FALLARBOR
@@ -232,6 +233,7 @@ FallarborTown_BattleTentLobby_EventScript_Scott::
 	end
 
 FallarborTown_BattleTentLobby_EventScript_ScottAlreadySpokenTo::
+	speakername (CommonText_Scott)
 	msgbox FallarborTown_BattleTentLobby_Text_ScottMakeChallenge, MSGBOX_DEFAULT
 	release
 	end
@@ -310,7 +312,7 @@ FallarborTown_BattleTentLobby_Text_CameToCampOut:
 	.string "my hand at battling!$"
 
 FallarborTown_BattleTentLobby_Text_ScottLookingForSomeone:
-	.string "Scott: Hi, {PLAYER}{KUN}!\n"
+	.string "Hi, {PLAYER}{KUN}!\n"
 	.string "So you came out to this Battle Tent!\p"
 	.string "The people in these parts tend to be\n"
 	.string "easygoing and laid-back.\p"
@@ -325,7 +327,6 @@ FallarborTown_BattleTentLobby_Text_ScottLookingForSomeone:
 	.string "Keep working at it!$"
 
 FallarborTown_BattleTentLobby_Text_ScottMakeChallenge:
-	.string "Scott: Instead of wasting your\n"
-	.string "time with the likes of me, why not\l"
-	.string "make a challenge?$"
+	.string "Instead of wasting your time with the\n"
+	.string "likes of me, why not make a challenge?$"
 

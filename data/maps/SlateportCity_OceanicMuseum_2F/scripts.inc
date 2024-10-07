@@ -28,6 +28,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	call_if_ne VAR_FACING, DIR_EAST, SlateportCity_OceanicMuseum_2F_EventScript_SternFaceGrunts
 	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou, MSGBOX_DEFAULT
+	closemessage
 	msgbox SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_GRUNT_2, Common_Movement_WalkRight
@@ -263,7 +264,7 @@ SlateportCity_OceanicMuseum_2F_Text_WellTakeThoseParts:
 	.string "We'll take those parts!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou:
-	.string "Capt. Stern: Wh-what?\n"
+	.string "Wh-what?\n"
 	.string "Who are you people?$"
 
 SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua:

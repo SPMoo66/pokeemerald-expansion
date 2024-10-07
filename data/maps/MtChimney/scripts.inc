@@ -31,10 +31,12 @@ MtChimney_EventScript_Archie::
 	end
 
 MtChimney_EventScript_ArchieGoStopTeamMagma::
+	speakername (CommonText_Archie)
 	msgbox MtChimney_Text_ArchieGoStopTeamMagma, MSGBOX_DEFAULT
 	return
 
 MtChimney_EventScript_ArchieBusyFighting::
+	speakername (CommonText_Archie)
 	msgbox MtChimney_Text_ArchieIHaveMyHandsFull, MSGBOX_DEFAULT
 	return
 
@@ -49,8 +51,10 @@ MtChimney_EventScript_Maxie::
 	waitmovement 0
 	applymovement LOCALID_MAXIE, Common_Movement_Delay48
 	waitmovement 0
+	speakername (CommonText_Maxie)
 	msgbox MtChimney_Text_MaxieIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_MAXIE_MT_CHIMNEY, MtChimney_Text_MaxieDefeat
+	speakername (CommonText_Maxie)
 	msgbox MtChimney_Text_MaxieYouHaventSeenLastOfMagma, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -67,6 +71,7 @@ MtChimney_EventScript_Maxie::
 	call_if_eq VAR_FACING, DIR_NORTH, MtChimney_EventScript_ArchieApproachPlayerNorth
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
+	speakername (CommonText_Archie)
 	msgbox MtChimney_Text_ArchieThankYou, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_FACING, DIR_EAST, MtChimney_EventScript_ArchieExitEast
@@ -341,7 +346,7 @@ MtChimney_Text_MeteoriteWillActivateVolcano:
 	.string "Fufufu…$"
 
 MtChimney_Text_MaxieIntro:
-	.string "Maxie: Hm?\n"
+	.string "Hm?\n"
 	.string "Who are you?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
@@ -373,7 +378,7 @@ MtChimney_Text_MaxieDefeat:
 	.string "I, Maxie, was caught off guard?!$"
 
 MtChimney_Text_MaxieYouHaventSeenLastOfMagma:
-	.string "Maxie: But, enough.\n"
+	.string "But, enough.\n"
 	.string "I will back off this time.\p"
 	.string "But don't think that this is the last\n"
 	.string "you've seen of Team Magma.\p"
@@ -456,7 +461,7 @@ MtChimney_Text_Bufoh:
 	.string "Bufoh!$"
 
 MtChimney_Text_ArchieGoStopTeamMagma:
-	.string "Archie: Grr, {PLAYER}!\n"
+	.string "Grr, {PLAYER}!\n"
 	.string "I should've guessed you'd show up!\p"
 	.string "See for yourself what the fanatics\n"
 	.string "of Team Magma are up to!\p"
@@ -466,14 +471,14 @@ MtChimney_Text_ArchieGoStopTeamMagma:
 	.string "the volcano's eruption!$"
 
 MtChimney_Text_ArchieIHaveMyHandsFull:
-	.string "Archie: Grrr…\p"
+	.string "Grrr…\p"
 	.string "I want to stop that Maxie,\n"
 	.string "but I can't!\p"
 	.string "Not when I have my hands full battling\n"
 	.string "three opponents at once!$"
 
 MtChimney_Text_ArchieThankYou:
-	.string "Archie: {PLAYER}!\n"
+	.string "{PLAYER}!\n"
 	.string "Thank you!\p"
 	.string "With your help, we thwarted Team\n"
 	.string "Magma's destructive plan!\p"

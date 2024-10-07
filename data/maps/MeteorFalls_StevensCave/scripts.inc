@@ -14,8 +14,10 @@ MeteorFalls_StevensCave_EventScript_Steven::
 	waitmovement 0
 	applymovement LOCALID_STEVEN, Common_Movement_FacePlayer
 	waitmovement 0
+	speakername (CommonText_Steven)
 	msgbox MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_STEVEN, MeteorFalls_StevensCave_Text_StevenDefeat
+	speakername (CommonText_Steven)
 	msgbox MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_METEOR_FALLS_STEVEN
 	release
@@ -24,12 +26,13 @@ MeteorFalls_StevensCave_EventScript_Steven::
 MeteorFalls_StevensCave_EventScript_Defeated::
 	applymovement LOCALID_STEVEN, Common_Movement_FacePlayer
 	waitmovement 0
+	speakername (CommonText_Steven)
 	msgbox MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT
 	release
 	end
 
 MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst:
-	.string "Steven: Oh, wow, {PLAYER}{KUN}.\n"
+	.string "Oh, wow, {PLAYER}{KUN}.\n"
 	.string "I'm amazed you knew where to find me.\p"
 	.string "Do you, uh…maybe think of me as\n"
 	.string "just a rock maniac?\p"
@@ -46,9 +49,9 @@ MeteorFalls_StevensCave_Text_StevenDefeat:
 	.string "I had no idea you'd become so strong…$"
 
 MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
-	.string "Steven: Come to think of it, ever since\n"
-	.string "our paths first crossed in Granite\l"
-	.string "Cave in Dewford, I had this feeling.\p"
+	.string "Come to think of it, ever since our\n"
+	.string "paths first crossed in Granite Cave\l"
+	.string "in Dewford, I had this feeling.\p"
 	.string "I thought that you would eventually\n"
 	.string "become the Champion.\p"
 	.string "My predictions usually come true.\p"

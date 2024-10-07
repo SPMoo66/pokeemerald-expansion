@@ -762,8 +762,8 @@ LittlerootTown_ProfessorBirchsLab_Text_OhYourBagsFull:
 	.string "Oh? Your Bag's full.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhereShouldIGoNext:
-	.string "May: I wonder where I should go look\n"
-	.string "for Pokémon next?$"
+	.string "I wonder where I should go look for\n"
+	.string "Pokémon next?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese:
 	.string "Huh…\n"

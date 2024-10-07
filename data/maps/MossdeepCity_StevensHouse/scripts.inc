@@ -39,10 +39,13 @@ MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 	waitmovement 0
 	applymovement LOCALID_STEVEN, MossdeepCity_StevensHouse_Movement_StevenApproachPlayer
 	waitmovement 0
+	speakername (CommonText_Steven)
 	msgbox MossdeepCity_StevensHouse_Text_YouveEarnedHMDive, MSGBOX_DEFAULT
+	closemessage
 	giveitem ITEM_HM_DIVE
 	setflag FLAG_RECEIVED_HM_DIVE
 	setflag FLAG_OMIT_DIVE_FROM_STEVEN_LETTER
+	speakername (CommonText_Steven)
 	msgbox MossdeepCity_StevensHouse_Text_ExplainDive, MSGBOX_DEFAULT
 	closemessage
 	delay 20
@@ -135,6 +138,7 @@ MossdeepCity_StevensHouse_EventScript_RockDisplay::
 	end
 
 MossdeepCity_StevensHouse_EventScript_Steven::
+	speakername (CommonText_Steven)
 	msgbox MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis, MSGBOX_NPC
 	end
 
@@ -145,7 +149,7 @@ MossdeepCity_StevensHouse_EventScript_Letter::
 	end
 
 MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
-	.string "Steven: {PLAYER}{KUN}…\p"
+	.string "{PLAYER}{KUN}…\p"
 	.string "As you can see, there's not much here,\n"
 	.string "but this is my home.\p"
 	.string "Thank you for all that you've done.\p"
@@ -155,8 +159,8 @@ MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
 	.string "this HM.$"
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
-	.string "Steven: While you're using Surf, you\n"
-	.string "should notice dark patches of water.\p"
+	.string "While you're using Surf, you should\n"
+	.string "notice dark patches of water.\p"
 	.string "Use Dive if you come to deep water\n"
 	.string "like it. You'll drop to the seafloor.\p"
 	.string "When you want to come back up, use\n"
@@ -165,9 +169,9 @@ MossdeepCity_StevensHouse_Text_ExplainDive:
 	.string "for you to surface, though.$"
 
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
-	.string "Steven: Apparently, there's an\n"
-	.string "underwater cavern between\l"
-	.string "Mossdeep and Sootopolis.\p"
+	.string "Apparently, there's an underwater\n"
+	.string "cavern between Mossdeep and\l"
+	.string "Sootopolis.\p"
 	.string "You know, the one that Capt. Stern\n"
 	.string "found in his submarine.$"
 

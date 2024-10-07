@@ -12,6 +12,7 @@ MagmaHideout_4F_MapScripts::
 MagmaHideout_4F_EventScript_Maxie::
 	lockall
 	playbgm MUS_ENCOUNTER_MAGMA, FALSE
+	speakername (CommonText_Maxie)
 	msgbox MagmaHideout_4F_Text_MaxieAwakenGroudon, MSGBOX_DEFAULT
 	closemessage
 	delay 20
@@ -53,6 +54,7 @@ MagmaHideout_4F_EventScript_Maxie::
 	delay 30
 	applymovement LOCALID_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
 	waitmovement 0
+	speakername (CommonText_Maxie)
 	msgbox MagmaHideout_4F_Text_MaxieGroudonWhatsWrong, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
@@ -60,9 +62,11 @@ MagmaHideout_4F_EventScript_Maxie::
 	delay 30
 	applymovement LOCALID_MAXIE, Common_Movement_FacePlayer
 	waitmovement 0
+	speakername (CommonText_Maxie)
 	msgbox MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT
 	closemessage
 	trainerbattle_no_intro TRAINER_MAXIE_MAGMA_HIDEOUT, MagmaHideout_4F_Text_MaxieDefeat
+	speakername (CommonText_Maxie)
 	msgbox MagmaHideout_4F_Text_MaxieImGoingAfterGroudon, MSGBOX_DEFAULT
 	closemessage
 	clearflag FLAG_HIDE_SLATEPORT_CITY_CAPTAIN_STERN
@@ -184,7 +188,7 @@ MagmaHideout_4F_Text_TabithaPostBattle:
 	.string "Maxie should have awakened Groudon…$"
 
 MagmaHideout_4F_Text_MaxieAwakenGroudon:
-	.string "Maxie: Groudon…\p"
+	.string "Groudon…\p"
 	.string "Nothing could awaken you from your\n"
 	.string "sleep bathed in magma…\p"
 	.string "This Blue Orb is what you sought.\n"
@@ -195,14 +199,14 @@ MagmaHideout_4F_Text_MaxieAwakenGroudon:
 	.string "Show me the full extent of your power!$"
 
 MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
-	.string "Maxie: Groudon!\n"
+	.string "Groudon!\n"
 	.string "What's wrong?\p"
 	.string "Wasn't the Blue Orb the key?\p"
 	.string "Groudon!\n"
 	.string "Where have you gone…$"
 
 MagmaHideout_4F_Text_MaxieOhItWasYou:
-	.string "Maxie: Oh, so it was you?\p"
+	.string "Oh, so it was you?\p"
 	.string "I've seen you poking around uninvited\n"
 	.string "here and there…\p"
 	.string "I get it now!\n"
@@ -213,8 +217,8 @@ MagmaHideout_4F_Text_MaxieDefeat:
 	.string "Pokémon?$"
 
 MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
-	.string "Maxie: There has to be some reason\n"
-	.string "why Groudon fled…\p"
+	.string "There has to be some reason why\n"
+	.string "Groudon fled…\p"
 	.string "That's what you're trying to say,\n"
 	.string "aren't you?\p"
 	.string "… … … … … …\n"

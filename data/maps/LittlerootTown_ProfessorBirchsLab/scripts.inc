@@ -1527,9 +1527,9 @@ LittlerootTown_ProfessorBirchsLab_Text_OhYourBagsFull:
 # 764 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 LittlerootTown_ProfessorBirchsLab_Text_MayWhereShouldIGoNext:
 # 765 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	.string "May: I wonder where I should go look\n"
+	.string "I wonder where I should go look for\n"
 # 766 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	.string "for Pokémon next?$"
+	.string "Pokémon next?$"
 # 767 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 
 # 768 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"

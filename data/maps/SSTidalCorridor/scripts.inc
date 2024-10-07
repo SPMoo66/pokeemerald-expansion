@@ -83,6 +83,7 @@ SSTidalRooms_EventScript_ProgessCruiseAfterBed::
 	return
 
 SSTidalCorridor_EventScript_Briney::
+	speakername (CommonText_MrBriney)
 	msgbox SSTidalCorridor_Text_BrineyWelcomeAboard, MSGBOX_NPC
 	end
 
@@ -91,6 +92,7 @@ SSTidalCorridor_EventScript_Peeko::
 	faceplayer
 	waitse
 	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
+	speakername (CommonText_Peeko)
 	msgbox SSTidalCorridor_Text_Peeko, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -192,6 +194,7 @@ SSTidalCorridor_EventScript_ScottScene::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
+	speakername (CommonText_Scott)
 	msgbox SSTidalCorridor_Text_ScottBattleFrontierInvite, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, SSTidalCorridor_Movement_PlayerWatchScottExit
@@ -254,7 +257,7 @@ SSTidalCorridor_Movement_SailorReturn:
 	step_end
 
 SSTidalCorridor_Text_ScottBattleFrontierInvite:
-	.string "Scott: Well, hi, hi!\n"
+	.string "Well, hi, hi!\n"
 	.string "{PLAYER}{KUN}, {PLAYER}{KUN}!\p"
 	.string "Something's come up, so I have to\n"
 	.string "disembark, but am I glad to see you!\p"
@@ -315,7 +318,7 @@ SSTidalCorridor_Text_HorizonSpreadsBeyondPorthole:
 	.string "the porthole.$"
 
 SSTidalCorridor_Text_BrineyWelcomeAboard:
-	.string "Mr. Briney: Welcome aboard, {PLAYER}{KUN}!\p"
+	.string "Welcome aboard, {PLAYER}{KUN}!\p"
 	.string "They made me honorary captain of\n"
 	.string "the S.S. Tidal!\p"
 	.string "You can call me Captain Briney now!\p"
@@ -325,7 +328,7 @@ SSTidalCorridor_Text_BrineyWelcomeAboard:
 	.string "soul as a sailor!$"
 
 SSTidalCorridor_Text_Peeko:
-	.string "Peeko: Pihyo pihyohyo…$"
+	.string "Pihyo pihyohyo…$"
 
 SSTidalCorridor_Text_Cabin1:
 	.string "Cabin 1$"

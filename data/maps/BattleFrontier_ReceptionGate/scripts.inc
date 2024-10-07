@@ -58,6 +58,7 @@ BattleFrontier_ReceptionGate_EventScript_ScottScene::
 	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_ReceptionGate_Movement_PlayerFaceScott
 	applymovement LOCALID_SCOTT, BattleFrontier_ReceptionGate_Movement_ScottEnter
 	waitmovement 0
+	speakername (CommonText_Scott)
 	msgbox BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_SCOTT, BattleFrontier_ReceptionGate_Movement_ScottExit
@@ -328,8 +329,7 @@ BattleFrontier_ReceptionGate_Text_OhMrScottGoodDay:
 	.string "Good day to you, sir!$"
 
 BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere:
-	.string "Scott: It's great to see you here,\n"
-	.string "it really is!\p"
+	.string "It's great to see you here, it really is!\p"
 	.string "I hope you'll take your time and\n"
 	.string "explore everywhere.\p"
 	.string "Naturally, I hope you'll also experience\n"

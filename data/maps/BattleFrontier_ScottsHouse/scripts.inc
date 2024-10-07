@@ -6,6 +6,7 @@ BattleFrontier_ScottsHouse_MapScripts::
 BattleFrontier_ScottsHouse_EventScript_Scott::
 	lock
 	faceplayer
+	speakername (CommonText_Scott)
 	goto_if_set FLAG_TEMP_4, BattleFrontier_ScottsHouse_EventScript_GivenBerry
 	goto_if_set FLAG_TEMP_3, BattleFrontier_ScottsHouse_EventScript_GivenShield
 	goto_if_set FLAG_TEMP_2, BattleFrontier_ScottsHouse_EventScript_GivenBattlePoints
@@ -34,6 +35,7 @@ BattleFrontier_ScottsHouse_EventScript_CheckSilverSymbols::
 	goto_if_unset FLAG_SYS_PIKE_SILVER, BattleFrontier_ScottsHouse_EventScript_CheckGiveShield
 	goto_if_unset FLAG_SYS_PYRAMID_SILVER, BattleFrontier_ScottsHouse_EventScript_CheckGiveShield
 	msgbox BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols, MSGBOX_DEFAULT
+	closemessage
 	giveitem ITEM_LANSAT_BERRY
 	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_BerryPocketFull
 	setflag FLAG_COLLECTED_ALL_SILVER_SYMBOLS
@@ -50,6 +52,7 @@ BattleFrontier_ScottsHouse_EventScript_CheckGoldSymbols::
 	goto_if_unset FLAG_SYS_PIKE_GOLD, BattleFrontier_ScottsHouse_EventScript_CheckGiveShield
 	goto_if_unset FLAG_SYS_PYRAMID_GOLD, BattleFrontier_ScottsHouse_EventScript_CheckGiveShield
 	msgbox BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols, MSGBOX_DEFAULT
+	closemessage
 	giveitem ITEM_STARF_BERRY
 	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_BerryPocketFull
 	setflag FLAG_COLLECTED_ALL_GOLD_SYMBOLS
@@ -58,6 +61,7 @@ BattleFrontier_ScottsHouse_EventScript_CheckGoldSymbols::
 	end
 
 BattleFrontier_ScottsHouse_EventScript_BerryPocketFull::
+	speakername (CommonText_Scott)
 	msgbox BattleFrontier_ScottsHouse_Text_BerryPocketStuffed, MSGBOX_DEFAULT
 	release
 	end
@@ -98,6 +102,7 @@ BattleFrontier_ScottsHouse_EventScript_CheckGiveSilverShield::
 
 BattleFrontier_ScottsHouse_EventScript_GiveSilverShield::
 	msgbox BattleFrontier_ScottsHouse_Text_Beat50TrainersInARow, MSGBOX_DEFAULT
+	closemessage
 	givedecoration DECOR_SILVER_SHIELD
 	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_NoRoomForShield
 	setflag FLAG_RECEIVED_SILVER_SHIELD
@@ -106,11 +111,13 @@ BattleFrontier_ScottsHouse_EventScript_GiveSilverShield::
 	end
 
 BattleFrontier_ScottsHouse_EventScript_NoRoomForShield::
+	speakername (CommonText_Scott)
 	msgbox BattleFrontier_ScottsHouse_Text_ComeBackForThisLater, MSGBOX_DEFAULT
 	release
 	end
 
 BattleFrontier_ScottsHouse_EventScript_GivenShield::
+	speakername (CommonText_Scott)
 	msgbox BattleFrontier_ScottsHouse_Text_ExpectingToHearEvenGreaterThings, MSGBOX_DEFAULT
 	release
 	end
@@ -128,6 +135,7 @@ BattleFrontier_ScottsHouse_EventScript_CheckGiveGoldShield::
 
 BattleFrontier_ScottsHouse_EventScript_GiveGoldShield::
 	msgbox BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow, MSGBOX_DEFAULT
+	closemessage
 	givedecoration DECOR_GOLD_SHIELD
 	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_NoRoomForShield
 	setflag FLAG_RECEIVED_GOLD_SHIELD
@@ -212,7 +220,7 @@ BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayWest::
 	return
 
 BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier:
-	.string "Scott: Well, hello and welcome!\n"
+	.string "Well, hello and welcome!\n"
 	.string "Heheh… Sorry about the cramped space.\p"
 	.string "Anyway, {PLAYER}{KUN}, let me formally\n"
 	.string "welcome you to the Battle Frontier.\p"
@@ -242,8 +250,8 @@ BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints:
 	.string "{STR_VAR_1} Battle Point(s).$"
 
 BattleFrontier_ScottsHouse_Text_ExplainBattlePoints:
-	.string "Scott: You can check your Battle\n"
-	.string "Points on your Frontier Pass.\p"
+	.string "You can check your Battle Points\n"
+	.string "on your Frontier Pass.\p"
 	.string "The more success you have here at\n"
 	.string "the Battle Frontier, the more Battle\l"
 	.string "Points you will collect.\p"
@@ -254,7 +262,7 @@ BattleFrontier_ScottsHouse_Text_ExpectingGreatThings:
 	.string "I'm expecting great things from you!$"
 
 BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers:
-	.string "Scott: Every Trainer is an individual.\n"
+	.string "Every Trainer is an individual.\n"
 	.string "They all lead lives of their own.\p"
 	.string "But when they're in a battle,\n"
 	.string "it doesn't matter who they are.\p"
@@ -266,8 +274,8 @@ BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers:
 	.string "battling, and invite them here.$"
 
 BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain:
-	.string "Scott: Have you met any of\n"
-	.string "the Frontier Brains?\p"
+	.string "Have you met any of the\n"
+	.string "Frontier Brains?\p"
 	.string "Better yet, have you obtained any\n"
 	.string "symbols from them?\p"
 	.string "I handpicked the Frontier Brains\n"
@@ -276,8 +284,7 @@ BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain:
 	.string "you are will startle even them!$"
 
 BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier:
-	.string "Scott: You don't just train for battle,\n"
-	.string "right?\p"
+	.string "You don't just train for battle, right?\p"
 	.string "I think I remember you working on\n"
 	.string "a Pokédex as well.\p"
 	.string "Well, guess what?\p"
@@ -286,8 +293,8 @@ BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier:
 	.string "Fufufu!$"
 
 BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols:
-	.string "Scott: Are you enjoying things in\n"
-	.string "the Battle Frontier?\p"
+	.string "Are you enjoying things in the\n"
+	.string "Battle Frontier?\p"
 	.string "…Wait a second…\n"
 	.string "Oh!\p"
 	.string "Your Frontier Pass!\n"
@@ -301,8 +308,8 @@ BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols:
 	.string "I'm sure you can put it to proper use.$"
 
 BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols:
-	.string "Scott: I hope you're enjoying\n"
-	.string "everything in the Battle Frontier.\p"
+	.string "I hope you're enjoying everything\n"
+	.string "in the Battle Frontier.\p"
 	.string "…Wait a second…\n"
 	.string "Oh, my disbelieving eyes!\p"
 	.string "Your Frontier Pass!\n"
@@ -326,14 +333,14 @@ BattleFrontier_ScottsHouse_Text_BerryPocketStuffed:
 	.string "be stuffed.$"
 
 BattleFrontier_ScottsHouse_Text_Beat50TrainersInARow:
-	.string "Scott: Oh, I heard about you!\n"
+	.string "Oh, I heard about you!\n"
 	.string "How you ruled the Battle Tower!\l"
 	.string "You beat over 50 Trainers in a row?\p"
 	.string "That's fantastic!\n"
 	.string "I want you to have this!$"
 
 BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow:
-	.string "Scott: Oh, my! I heard about you!\n"
+	.string "Oh, my! I heard about you!\n"
 	.string "How you overwhelmed the Battle Tower!\l"
 	.string "You beat over 100 Trainers in a row?\p"
 	.string "That's ridiculously spectacular!\n"

@@ -463,7 +463,7 @@ Route101_Text_DontLeaveMe:
 # 232 "data/maps/Route101/scripts.pory"
 Route101_Text_YouSavedMe:
 # 233 "data/maps/Route101/scripts.pory"
-	.string "Prof. Birch: Whew…\p"
+	.string "Whew…\p"
 # 234 "data/maps/Route101/scripts.pory"
 	.string "I was in the tall grass studying wild\n"
 # 235 "data/maps/Route101/scripts.pory"

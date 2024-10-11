@@ -1065,3 +1065,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DrakesSanctum/scripts.inc"
 
 	.include "data/maps/VictoryRoad_2F/scripts.inc"
+
+	.include "data/maps/SeaSpiritsDen/scripts.inc"
+
+	.include "data/maps/SeaSpiritsDenAlt/scripts.inc"

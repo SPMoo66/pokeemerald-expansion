@@ -4600,6 +4600,26 @@
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/VictoryRoad_2F/border.bin",
       "blockdata_filepath": "data/layouts/VictoryRoad_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEA_SPIRITS_DEN",
+      "name": "SeaSpiritsDen_Layout",
+      "width": 13,
+      "height": 11,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SeaSpiritsDen/border.bin",
+      "blockdata_filepath": "data/layouts/SeaSpiritsDen/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEA_SPIRITS_DEN_ALT",
+      "name": "SeaSpiritsDenAlt_Layout",
+      "width": 13,
+      "height": 11,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SeaSpiritsDenAlt/border.bin",
+      "blockdata_filepath": "data/layouts/SeaSpiritsDenAlt/map.bin"
     }
   ]
 }

@@ -447,7 +447,9 @@
     "TracklessForest",
     "NamelessCavern",
     "DrakesSanctum",
-    "VictoryRoad_2F"
+    "VictoryRoad_2F",
+    "SeaSpiritsDen",
+    "SeaSpiritsDenAlt"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

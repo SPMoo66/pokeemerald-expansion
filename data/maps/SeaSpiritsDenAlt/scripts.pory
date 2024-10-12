@@ -1,1 +1,86 @@
-mapscripts SeaSpiritsDenAlt_MapScripts {}
+const ARTICUNO_G = 1
+const ZAPDOS_G = 2
+const MOLTRES_G = 3
+
+mapscripts SeaSpiritsDenAlt_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if(flag(FLAG_CAUGHT_ARTICUNO_G)) {
+			setflag (FLAG_TEMP_2)
+			removeobject(ARTICUNO_G)
+		}
+		elif(flag(FLAG_CAUGHT_ZAPDOS_G)) {
+			setflag (FLAG_TEMP_3)
+			removeobject(ZAPDOS_G)
+		}
+		elif(flag(FLAG_CAUGHT_MOLTRES_G)) {
+			setflag (FLAG_TEMP_4)
+			removeobject(MOLTRES_G)
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(VAR_LAST_TALKED)
+		}
+	}
+}
+
+script SeaSpiritsDenAlt_Portal {
+	warp(MAP_SEA_SPIRITS_DEN, 1)
+}
+
+script BattleArticunoG {
+	lock
+	setvar (VAR_LAST_TALKED, ARTICUNO_G)
+	playmoncry(SPECIES_ARTICUNO_GALARIAN, CRY_MODE_ENCOUNTER)
+	msgbox("Gyooa!")
+	waitmoncry
+	seteventmon(SPECIES_ARTICUNO_GALARIAN, 40)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_ARTICUNO_G)
+	}
+	release
+	end
+}
+
+script BattleZapdosG {
+	lock
+	setvar (VAR_LAST_TALKED, ZAPDOS_G)
+	playmoncry(SPECIES_ZAPDOS_GALARIAN, CRY_MODE_ENCOUNTER)
+	msgbox("Gyooa!")
+	waitmoncry
+	seteventmon(SPECIES_ZAPDOS_GALARIAN, 40)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_ZAPDOS_G)
+	}
+	release
+	end
+}
+
+script BattleMoltresG {
+	lock
+	setvar (VAR_LAST_TALKED, MOLTRES_G)
+	playmoncry(SPECIES_MOLTRES_GALARIAN, CRY_MODE_ENCOUNTER)
+	msgbox("Gyooa!")
+	waitmoncry
+	seteventmon(SPECIES_MOLTRES_GALARIAN, 40)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_MOLTRES_G)
+	}
+	release
+	end
+}

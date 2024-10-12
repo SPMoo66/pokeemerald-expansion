@@ -1,1 +1,86 @@
-mapscripts SeaSpiritsDen_MapScripts {}
+const ARTICUNO = 1
+const ZAPDOS = 2
+const MOLTRES = 3
+
+mapscripts SeaSpiritsDen_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if(flag(FLAG_CAUGHT_ARTICUNO)) {
+			setflag (FLAG_TEMP_2)
+			removeobject(ARTICUNO)
+		}
+		elif(flag(FLAG_CAUGHT_ZAPDOS)) {
+			setflag (FLAG_TEMP_3)
+			removeobject(ZAPDOS)
+		}
+		elif(flag(FLAG_CAUGHT_MOLTRES)) {
+			setflag (FLAG_TEMP_4)
+			removeobject(MOLTRES)
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(VAR_LAST_TALKED)
+		}
+	}
+}
+
+script SeaSpiritsDen_Portal {
+	warp(MAP_SEA_SPIRITS_DEN_ALT, 0)
+}
+
+script BattleArticuno {
+	lock
+	setvar (VAR_LAST_TALKED, ARTICUNO)
+	playmoncry(SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER)
+	msgbox("Gyooa!")
+	waitmoncry
+	seteventmon(SPECIES_ARTICUNO, 40)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_ARTICUNO)
+	}
+	release
+	end
+}
+
+script BattleZapdos {
+	lock
+	setvar (VAR_LAST_TALKED, ZAPDOS)
+	playmoncry(SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER)
+	msgbox("Gyooa!")
+	waitmoncry
+	seteventmon(SPECIES_ZAPDOS, 40)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_ZAPDOS)
+	}
+	release
+	end
+}
+
+script BattleMoltres {
+	lock
+	setvar (VAR_LAST_TALKED, MOLTRES)
+	playmoncry(SPECIES_MOLTRES, CRY_MODE_ENCOUNTER)
+	msgbox("Gyooa!")
+	waitmoncry
+	seteventmon(SPECIES_MOLTRES, 40)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_MOLTRES)
+	}
+	release
+	end
+}

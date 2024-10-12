@@ -18,10 +18,10 @@ enum {
     FONT_NARROW,
     FONT_SMALL_NARROW, // Very similar to FONT_SMALL, some glyphs are narrower
     FONT_BOLD, // JP glyph set only
-    FONT_BW_SUMMARY_SCREEN,
     FONT_NARROWER,
     FONT_SMALL_NARROWER,
     FONT_SHORT_NARROW,
+    FONT_BW_SUMMARY_SCREEN,
 };
 
 // Return values for font functions

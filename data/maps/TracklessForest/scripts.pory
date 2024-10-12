@@ -29,6 +29,10 @@ mapscripts TracklessForest_MapScripts {
 	}
 }
 
+script TracklessForest_Portal {
+	warp(MAP_TRACKLESS_FOREST_ALT, 0)
+}
+
 script BattleRaikou {
 	lock
 	setvar (VAR_LAST_TALKED, RAIKOU)

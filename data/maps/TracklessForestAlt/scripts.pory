@@ -24,6 +24,10 @@ mapscripts TracklessForestAlt_MapScripts {
 	}
 }
 
+script TracklessForestAlt_Portal {
+	warp(MAP_TRACKLESS_FOREST, 2)
+}
+
 script BattleRagingBolt {
 	lock
 	setvar (VAR_LAST_TALKED, RAGING_BOLT)

@@ -46,117 +46,123 @@ TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_RESUME_1:
 	return
 
 
-BattleRagingBolt::
+TracklessForestAlt_Portal::
 # 28 "data/maps/TracklessForestAlt/scripts.pory"
-	lock
-# 29 "data/maps/TracklessForestAlt/scripts.pory"
-	setvar VAR_LAST_TALKED, 1
-# 30 "data/maps/TracklessForestAlt/scripts.pory"
-	playmoncry SPECIES_RAGING_BOLT, CRY_MODE_ENCOUNTER
-# 31 "data/maps/TracklessForestAlt/scripts.pory"
-	msgbox BattleRagingBolt_Text_0
+	warp MAP_TRACKLESS_FOREST, 2
+	return
+
+
+BattleRagingBolt::
 # 32 "data/maps/TracklessForestAlt/scripts.pory"
-	waitmoncry
+	lock
 # 33 "data/maps/TracklessForestAlt/scripts.pory"
-	seteventmon SPECIES_RAGING_BOLT, 40
+	setvar VAR_LAST_TALKED, 1
 # 34 "data/maps/TracklessForestAlt/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	playmoncry SPECIES_RAGING_BOLT, CRY_MODE_ENCOUNTER
 # 35 "data/maps/TracklessForestAlt/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	msgbox BattleRagingBolt_Text_0
 # 36 "data/maps/TracklessForestAlt/scripts.pory"
-	waitstate
+	waitmoncry
 # 37 "data/maps/TracklessForestAlt/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_RAGING_BOLT, 40
 # 38 "data/maps/TracklessForestAlt/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 39 "data/maps/TracklessForestAlt/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 40 "data/maps/TracklessForestAlt/scripts.pory"
+	waitstate
+# 41 "data/maps/TracklessForestAlt/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 42 "data/maps/TracklessForestAlt/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 43 "data/maps/TracklessForestAlt/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleRagingBolt_2
 BattleRagingBolt_1:
-# 42 "data/maps/TracklessForestAlt/scripts.pory"
+# 46 "data/maps/TracklessForestAlt/scripts.pory"
 	release
 	end
 
 BattleRagingBolt_2:
-# 40 "data/maps/TracklessForestAlt/scripts.pory"
+# 44 "data/maps/TracklessForestAlt/scripts.pory"
 	setflag FLAG_CAUGHT_RAGING_BOLT
 	goto BattleRagingBolt_1
 
 
 BattleGougingFire::
-# 47 "data/maps/TracklessForestAlt/scripts.pory"
-	lock
-# 48 "data/maps/TracklessForestAlt/scripts.pory"
-	setvar VAR_LAST_TALKED, 2
-# 49 "data/maps/TracklessForestAlt/scripts.pory"
-	playmoncry SPECIES_GOUGING_FIRE, CRY_MODE_ENCOUNTER
-# 50 "data/maps/TracklessForestAlt/scripts.pory"
-	msgbox BattleRagingBolt_Text_0
 # 51 "data/maps/TracklessForestAlt/scripts.pory"
-	waitmoncry
+	lock
 # 52 "data/maps/TracklessForestAlt/scripts.pory"
-	seteventmon SPECIES_GOUGING_FIRE, 40
+	setvar VAR_LAST_TALKED, 2
 # 53 "data/maps/TracklessForestAlt/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	playmoncry SPECIES_GOUGING_FIRE, CRY_MODE_ENCOUNTER
 # 54 "data/maps/TracklessForestAlt/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	msgbox BattleRagingBolt_Text_0
 # 55 "data/maps/TracklessForestAlt/scripts.pory"
-	waitstate
+	waitmoncry
 # 56 "data/maps/TracklessForestAlt/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_GOUGING_FIRE, 40
 # 57 "data/maps/TracklessForestAlt/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 58 "data/maps/TracklessForestAlt/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 59 "data/maps/TracklessForestAlt/scripts.pory"
+	waitstate
+# 60 "data/maps/TracklessForestAlt/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 61 "data/maps/TracklessForestAlt/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 62 "data/maps/TracklessForestAlt/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleGougingFire_2
 BattleGougingFire_1:
-# 61 "data/maps/TracklessForestAlt/scripts.pory"
+# 65 "data/maps/TracklessForestAlt/scripts.pory"
 	release
 	end
 
 BattleGougingFire_2:
-# 59 "data/maps/TracklessForestAlt/scripts.pory"
+# 63 "data/maps/TracklessForestAlt/scripts.pory"
 	setflag FLAG_CAUGHT_GOUGING_FIRE
 	goto BattleGougingFire_1
 
 
 BattleWalkingWake::
-# 66 "data/maps/TracklessForestAlt/scripts.pory"
-	lock
-# 67 "data/maps/TracklessForestAlt/scripts.pory"
-	setvar VAR_LAST_TALKED, 3
-# 68 "data/maps/TracklessForestAlt/scripts.pory"
-	playmoncry SPECIES_WALKING_WAKE, CRY_MODE_ENCOUNTER
-# 69 "data/maps/TracklessForestAlt/scripts.pory"
-	msgbox BattleRagingBolt_Text_0
 # 70 "data/maps/TracklessForestAlt/scripts.pory"
-	waitmoncry
+	lock
 # 71 "data/maps/TracklessForestAlt/scripts.pory"
-	seteventmon SPECIES_WALKING_WAKE, 40
+	setvar VAR_LAST_TALKED, 3
 # 72 "data/maps/TracklessForestAlt/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	playmoncry SPECIES_WALKING_WAKE, CRY_MODE_ENCOUNTER
 # 73 "data/maps/TracklessForestAlt/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	msgbox BattleRagingBolt_Text_0
 # 74 "data/maps/TracklessForestAlt/scripts.pory"
-	waitstate
+	waitmoncry
 # 75 "data/maps/TracklessForestAlt/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_WALKING_WAKE, 40
 # 76 "data/maps/TracklessForestAlt/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 77 "data/maps/TracklessForestAlt/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 78 "data/maps/TracklessForestAlt/scripts.pory"
+	waitstate
+# 79 "data/maps/TracklessForestAlt/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 80 "data/maps/TracklessForestAlt/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 81 "data/maps/TracklessForestAlt/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleWalkingWake_2
 BattleWalkingWake_1:
-# 80 "data/maps/TracklessForestAlt/scripts.pory"
+# 84 "data/maps/TracklessForestAlt/scripts.pory"
 	release
 	end
 
 BattleWalkingWake_2:
-# 78 "data/maps/TracklessForestAlt/scripts.pory"
+# 82 "data/maps/TracklessForestAlt/scripts.pory"
 	setflag FLAG_CAUGHT_WALKING_WAKE
 	goto BattleWalkingWake_1
 
 
 BattleRagingBolt_Text_0:
-# 31 "data/maps/TracklessForestAlt/scripts.pory"
+# 35 "data/maps/TracklessForestAlt/scripts.pory"
 	.string "Gwooa!$"

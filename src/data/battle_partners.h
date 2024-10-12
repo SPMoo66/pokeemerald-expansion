@@ -1,12 +1,12 @@
-const struct Trainer gBattlePartners[] = {
     [PARTNER_NONE] =
     {
-        .party = NULL,
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+        .trainerPic = TRAINER_BACK_PIC_BRENDAN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_HIKER,
-        .trainerName = _(""),
-        .items = {},
+        .partySize = 0,
+        .party = (const struct TrainerMon[])
+        {
+        },
     },
 
     [PARTNER_STEVEN_MOSSDEEP] =
@@ -45,4 +45,3 @@ const struct Trainer gBattlePartners[] = {
         .trainerPic = TRAINER_BACK_PIC_BLANK,
         .trainerName = _("Rayquaza"),
     },
-};

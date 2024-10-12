@@ -310,7 +310,6 @@
     FRONTIER_MON_MORPEKO,                    \
     FRONTIER_MON_COPPERAJAH,                 \
     FRONTIER_MON_ARCTOVISH,                  \
-    FRONTIER_MON_DURALUDON,                  \
     FRONTIER_MON_WYRDEER,                    \
     FRONTIER_MON_OINKOLOGNE,                 \
     FRONTIER_MON_SPIDOPS,                    \
@@ -588,12 +587,13 @@
     FRONTIER_MON_IRON_VALIANT,               \
     FRONTIER_MON_WALKING_WAKE,               \
     FRONTIER_MON_IRON_LEAVES,                \
-    FRONTIER_MON_DIPPLIN,                    \
     FRONTIER_MON_SINISTCHA,                  \
     FRONTIER_MON_OKIDOGI,                    \
     FRONTIER_MON_MUNKIDORI,                  \
     FRONTIER_MON_FEZANDIPITI,                \
     FRONTIER_MON_OGERPON,                    \
+    FRONTIER_MON_ARCHALUDON,                 \
+    FRONTIER_MON_HYDRAPPLE,                  \
     FRONTIER_MON_SCALEON,                    \
 	-1
 

@@ -48,6 +48,7 @@ u8 GetAilmentFromStatus(u32 status);
 u8 GetMonAilment(struct Pokemon *mon);
 void DisplayPartyMenuStdMessage(u32 stringId);
 bool8 FieldCallback_PrepareFadeInFromMenu(void);
+bool8 FieldCallback_PrepareFadeInForTeleport(void);
 void CB2_ReturnToPartyMenuFromFlyMap(void);
 void LoadHeldItemIcons(void);
 void DrawHeldItemIconsForTrade(u8 *partyCounts, u8 *partySpriteIds, u8 whichParty);
@@ -106,6 +107,8 @@ void MoveDeleterForgetMove(void);
 void BufferMoveDeleterNicknameAndMove(void);
 void GetNumMovesSelectedMonHas(void);
 void MoveDeleterChooseMoveToForget(void);
+bool32 IsItemFlute(u16 item);
+
 void ItemUseCB_UsePokevial(u8 taskId, TaskFunc task); //Pokevial Branch
 void InitPartyMenuForPokevialFromField(u8 taskId); //Pokevial Branch
 void ItemUseCB_PokeBall(u8 taskId, TaskFunc task);

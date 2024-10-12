@@ -143,32 +143,40 @@ Debug_EventScript_Script_1::
 	buffernumberstring 0, VAR_EMERALBODY_RIVAL
 	msgbox Debug_PrintRivalVar, MSGBOX_DEFAULT
 	closemessage
+	release
 	end
 
 Debug_EventScript_Script_2::
 	call (Intro_EmibOpening)
+	release
 	end
 
 Debug_EventScript_Script_3::
+	release
 	end
 
 Debug_EventScript_Script_4::
+	release
 	end
 
 Debug_EventScript_Script_5::
+	release
 	end
 
 Debug_EventScript_Script_6::
+	release
 	end
 
 Debug_EventScript_Script_7::
     cleartrainerflag TRAINER_CINDY_1
     trainerbattle_single TRAINER_CINDY_1, gText_Blank, gText_Blank
+	release
 	end
 
 Debug_EventScript_Script_8::
     cleartrainerflag TRAINER_WATTSON_1
     trainerbattle_single TRAINER_WATTSON_1, gText_Blank, gText_Blank
+	release
 	end
 
 Debug_PrintRivalVar::
@@ -437,5 +445,15 @@ Debug_EventScript_InflictStatus1_Text_Freeze:
 
 Debug_EventScript_InflictStatus1_Text_Frostbite:
 	.string "Frostbite$"
+
+Debug_EventScript_EWRAMCounters::
+	callnative CheckEWRAMCounters
+	msgbox Debug_EventScript_EWRAMCounters_Text, MSGBOX_DEFAULT
+	release
+	end
+
+Debug_EventScript_EWRAMCounters_Text::
+	.string "Follower Steps: {STR_VAR_1}.\n"
+	.string "Fishing Chain: {STR_VAR_2}.$"
 
 .endif

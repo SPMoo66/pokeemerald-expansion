@@ -45,6 +45,7 @@
 #include "strings.h"
 #include "task.h"
 #include "text.h"
+#include "tilesets.h"
 #include "tv.h"
 #include "wallclock.h"
 #include "window.h"
@@ -970,6 +971,20 @@ void FieldShowRegionMap(void)
     SetMainCallback2(CB2_FieldShowRegionMap);
 }
 
+static bool32 IsBuildingPCTile(u32 tileId)
+{
+    return gMapHeader.mapLayout->primaryTileset == &gTileset_Building && (tileId == METATILE_Building_PC_On || tileId == METATILE_Building_PC_Off);
+}
+
+static bool32 IsPlayerHousePCTile(u32 tileId)
+{
+    return gMapHeader.mapLayout->secondaryTileset == &gTileset_BrendansMaysHouse
+        && (tileId == METATILE_BrendansMaysHouse_BrendanPC_On
+            || tileId == METATILE_BrendansMaysHouse_BrendanPC_Off
+            || tileId == METATILE_BrendansMaysHouse_MayPC_On
+            || tileId == METATILE_BrendansMaysHouse_MayPC_Off);
+}
+
 static bool8 IsPlayerInFrontOfPC(void)
 {
     s16 x, y;
@@ -978,12 +993,7 @@ static bool8 IsPlayerInFrontOfPC(void)
     GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
     tileInFront = MapGridGetMetatileIdAt(x, y);
 
-    return (tileInFront == METATILE_BrendansMaysHouse_BrendanPC_On
-         || tileInFront == METATILE_BrendansMaysHouse_BrendanPC_Off
-         || tileInFront == METATILE_BrendansMaysHouse_MayPC_On
-         || tileInFront == METATILE_BrendansMaysHouse_MayPC_Off
-         || tileInFront == METATILE_Building_PC_On
-         || tileInFront == METATILE_Building_PC_Off);
+    return IsBuildingPCTile(tileInFront) || IsPlayerHousePCTile(tileInFront);
 }
 
 // Task data for Task_PCTurnOnEffect and Task_LotteryCornerComputerEffect
@@ -2793,41 +2803,13 @@ void SetBattleTowerLinkPlayerGfx(void)
 
 void ShowNatureGirlMessage(void)
 {
-    static const u8 *const sNatureGirlMessages[NUM_NATURES] = {
-        [NATURE_HARDY]   = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
-        [NATURE_LONELY]  = BattleFrontier_Lounge5_Text_NatureGirlSupportHighAttackLow,
-        [NATURE_BRAVE]   = BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow,
-        [NATURE_ADAMANT] = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
-        [NATURE_NAUGHTY] = BattleFrontier_Lounge5_Text_NatureGirlDefenseHighAttackLow,
-        [NATURE_BOLD]    = BattleFrontier_Lounge5_Text_NatureGirlSupportHighDefenseLow,
-        [NATURE_DOCILE]  = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
-        [NATURE_RELAXED] = BattleFrontier_Lounge5_Text_NatureGirlSupportHighAttackLow,
-        [NATURE_IMPISH]  = BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow,
-        [NATURE_LAX]     = BattleFrontier_Lounge5_Text_NatureGirlSupportHighSupportLow,
-        [NATURE_TIMID]   = BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow,
-        [NATURE_HASTY]   = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
-        [NATURE_SERIOUS] = BattleFrontier_Lounge5_Text_NatureGirlSupportHighSupportLow,
-        [NATURE_JOLLY]   = BattleFrontier_Lounge5_Text_NatureGirlSupportHighDefenseLow,
-        [NATURE_NAIVE]   = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
-        [NATURE_MODEST]  = BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow,
-        [NATURE_MILD]    = BattleFrontier_Lounge5_Text_NatureGirlDefenseHighSupportLow,
-        [NATURE_QUIET]   = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
-        [NATURE_BASHFUL] = BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow,
-        [NATURE_RASH]    = BattleFrontier_Lounge5_Text_NatureGirlSupportHighSupportLow,
-        [NATURE_CALM]    = BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow,
-        [NATURE_GENTLE]  = BattleFrontier_Lounge5_Text_NatureGirlDefenseHighAttackLow,
-        [NATURE_SASSY]   = BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow,
-        [NATURE_CAREFUL] = BattleFrontier_Lounge5_Text_NatureGirlDefenseHighSupportLow,
-        [NATURE_QUIRKY]  = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
-    };
-
     u8 nature;
 
     if (gSpecialVar_0x8004 >= PARTY_SIZE)
         gSpecialVar_0x8004 = 0;
 
     nature = GetNature(&gPlayerParty[gSpecialVar_0x8004]);
-    ShowFieldMessage(sNatureGirlMessages[nature]);
+    ShowFieldMessage(gNaturesInfo[nature].natureGirlMessage);
 }
 
 void UpdateFrontierGambler(u16 daysSince)
@@ -3093,7 +3075,8 @@ static void HideFrontierExchangeCornerItemIcon(u16 menu, u16 unused)
         case SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_2:
         case SCROLL_MULTI_BF_EXCHANGE_CORNER_VITAMIN_VENDOR:
         case SCROLL_MULTI_BF_EXCHANGE_CORNER_HOLD_ITEM_VENDOR:
-            DestroySpriteAndFreeResources(&gSprites[sScrollableMultichoice_ItemSpriteId]);
+            // This makes sure deleting the icon will not clear palettes in use by object events
+            FieldEffectFreeGraphicsResources(&gSprites[sScrollableMultichoice_ItemSpriteId]);
             break;
         }
         sScrollableMultichoice_ItemSpriteId = MAX_SPRITES;
@@ -3234,7 +3217,6 @@ void ScrollableMultichoice_ClosePersistentMenu(void)
 #undef tTaskId
 
 #define DEOXYS_ROCK_LEVELS 11
-#define ROCK_PAL_ID 10
 
 void DoDeoxysRockInteraction(void)
 {
@@ -3313,9 +3295,8 @@ static void Task_DeoxysRockInteraction(u8 taskId)
 
 static void ChangeDeoxysRockLevel(u8 rockLevel)
 {
-    u8 objectEventId;
-    LoadPalette(&sDeoxysRockPalettes[rockLevel], OBJ_PLTT_ID(ROCK_PAL_ID), PLTT_SIZEOF(4));
-    TryGetObjectEventIdByLocalIdAndMap(LOCALID_BIRTH_ISLAND_EXTERIOR_ROCK, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, &objectEventId);
+    u8 paletteNum = IndexOfSpritePaletteTag(OBJ_EVENT_PAL_TAG_BIRTH_ISLAND_STONE);
+    LoadPalette(&sDeoxysRockPalettes[rockLevel], OBJ_PLTT_ID(paletteNum), PLTT_SIZEOF(4));
 
     if (rockLevel == 0)
         PlaySE(SE_M_CONFUSE_RAY); // Failure sound
@@ -3361,10 +3342,13 @@ void IncrementBirthIslandRockStepCount(void)
     }
 }
 
+// called before fade-in
 void SetDeoxysRockPalette(void)
 {
-    LoadPalette(&sDeoxysRockPalettes[(u8)VarGet(VAR_DEOXYS_ROCK_LEVEL)], OBJ_PLTT_ID(ROCK_PAL_ID), PLTT_SIZEOF(4));
-    BlendPalettes(1 << (ROCK_PAL_ID + 16), 16, 0);
+    u32 paletteNum = IndexOfSpritePaletteTag(OBJ_EVENT_PAL_TAG_BIRTH_ISLAND_STONE);
+    LoadPalette(&sDeoxysRockPalettes[(u8)VarGet(VAR_DEOXYS_ROCK_LEVEL)], OBJ_PLTT_ID(paletteNum), PLTT_SIZEOF(4));
+    // Set faded to all black, weather blending handled during fade-in
+    CpuFill16(0, &gPlttBufferFaded[OBJ_PLTT_ID(paletteNum)], 32);
 }
 
 void SetPCBoxToSendMon(u8 boxId)

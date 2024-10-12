@@ -1431,6 +1431,7 @@ script SootopolisCity_EventScript_StartRayquazaScene {
 	waitmovement (0)
 	special (RemoveCameraObject)
 	addobject (LOCALID_RAYQUAZA)
+	hideobjectat (LOCALID_RAYQUAZA, MAP_SOOTOPOLIS_CITY)
 	setvar (VAR_0x8004, TRUE)
 	special (Script_DoRayquazaScene)
 	waitstate

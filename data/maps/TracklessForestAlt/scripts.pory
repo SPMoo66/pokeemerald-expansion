@@ -1,0 +1,82 @@
+const RAGING_BOLT = 1
+const GOUGING_FIRE = 2
+const WALKING_WAKE = 3
+
+mapscripts TracklessForestAlt_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if(flag(FLAG_CAUGHT_RAGING_BOLT)) {
+			setflag (FLAG_TEMP_2)
+			removeobject(RAGING_BOLT)
+		}
+		elif(flag(FLAG_CAUGHT_GOUGING_FIRE)) {
+			setflag (FLAG_TEMP_3)
+			removeobject(GOUGING_FIRE)
+		}
+		elif(flag(FLAG_CAUGHT_WALKING_WAKE)) {
+			setflag (FLAG_TEMP_4)
+			removeobject(WALKING_WAKE)
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(VAR_LAST_TALKED)
+		}
+	}
+}
+
+script BattleRagingBolt {
+	lock
+	setvar (VAR_LAST_TALKED, RAGING_BOLT)
+	playmoncry(SPECIES_RAGING_BOLT, CRY_MODE_ENCOUNTER)
+	msgbox("Gwooa!")
+	waitmoncry
+	seteventmon(SPECIES_RAGING_BOLT, 40)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_RAGING_BOLT)
+	}
+	release
+	end
+}
+
+script BattleGougingFire {
+	lock
+	setvar (VAR_LAST_TALKED, GOUGING_FIRE)
+	playmoncry(SPECIES_GOUGING_FIRE, CRY_MODE_ENCOUNTER)
+	msgbox("Gwooa!")
+	waitmoncry
+	seteventmon(SPECIES_GOUGING_FIRE, 40)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_GOUGING_FIRE)
+	}
+	release
+	end
+}
+
+script BattleWalkingWake {
+	lock
+	setvar (VAR_LAST_TALKED, WALKING_WAKE)
+	playmoncry(SPECIES_WALKING_WAKE, CRY_MODE_ENCOUNTER)
+	msgbox("Gwooa!")
+	waitmoncry
+	seteventmon(SPECIES_WALKING_WAKE, 40)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_WALKING_WAKE)
+	}
+	release
+	end
+}

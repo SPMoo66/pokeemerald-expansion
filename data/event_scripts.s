@@ -1069,3 +1069,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SeaSpiritsDen/scripts.inc"
 
 	.include "data/maps/SeaSpiritsDenAlt/scripts.inc"
+
+	.include "data/maps/TracklessForestAlt/scripts.inc"

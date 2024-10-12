@@ -420,6 +420,7 @@
 #define MAP_VICTORY_ROAD_2F                          (123 | (24 << 8))
 #define MAP_SEA_SPIRITS_DEN                          (124 | (24 << 8))
 #define MAP_SEA_SPIRITS_DEN_ALT                      (125 | (24 << 8))
+#define MAP_TRACKLESS_FOREST_ALT                     (126 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

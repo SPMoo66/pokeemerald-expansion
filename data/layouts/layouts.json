@@ -4620,6 +4620,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/SeaSpiritsDenAlt/border.bin",
       "blockdata_filepath": "data/layouts/SeaSpiritsDenAlt/map.bin"
+    },
+    {
+      "id": "LAYOUT_TRACKLESS_FOREST_ALT",
+      "name": "TracklessForestAlt_Layout",
+      "width": 24,
+      "height": 38,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/TracklessForestAlt/border.bin",
+      "blockdata_filepath": "data/layouts/TracklessForestAlt/map.bin"
     }
   ]
 }

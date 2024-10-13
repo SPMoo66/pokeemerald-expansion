@@ -1,4 +1,5 @@
 const HEATRAN = 5
+const VOLCANION = 6
 
 mapscripts ScorchedSlabB1F_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
@@ -6,10 +7,14 @@ mapscripts ScorchedSlabB1F_MapScripts {
 			setflag (FLAG_TEMP_2)
 			removeobject(HEATRAN)
 		}
+		if(flag(FLAG_CAUGHT_VOLCANION)) {
+			setflag (FLAG_TEMP_3)
+			removeobject(VOLCANION)
+		}
 	}
 	MAP_SCRIPT_ON_RESUME {
 		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
-			removeobject(HEATRAN)
+			removeobject(VAR_LAST_TALKED)
 		}
 	}
 }
@@ -28,6 +33,25 @@ script BattleHeatran {
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
 		setflag (FLAG_CAUGHT_HEATRAN)
+	}
+	release
+	end
+}
+
+script BattleVolcanion {
+	lock
+	faceplayer
+	playmoncry(SPECIES_VOLCANION, CRY_MODE_ENCOUNTER)
+	msgbox("Waaoow!")
+	waitmoncry
+	seteventmon(SPECIES_VOLCANION, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_VOLCANION)
 	}
 	release
 	end

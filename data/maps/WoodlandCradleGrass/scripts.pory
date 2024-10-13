@@ -2,14 +2,14 @@ mapscripts WoodlandCradleGrass_MapScripts {}
 
 script TrainerTipsMoveInfo {
 	lock
-	msgbox(format("Trainer Tips\pWhen choosing a move to use in battle, press the Start button to view move information."))
+	msgbox(format("Trainer Tips\pWhen choosing a move to use in battle, press the L button to view move information."))
 	release
 	end
 }
 
 script TrainerTipsBallCycle {
 	lock
-	msgbox(format("Trainer Tips\pIn battle, hold the R button and press the Left or Right buttons to cycle between available Pokéballs."))
+	msgbox(format("Trainer Tips\pIn wild battles, hold the R button and press the Left or Right buttons to cycle between available Pokéballs."))
 	release
 	end
 }

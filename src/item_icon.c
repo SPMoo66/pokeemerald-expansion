@@ -16,7 +16,7 @@ EWRAM_DATA u8 *gItemIconDecompressionBuffer = NULL;
 EWRAM_DATA u8 *gItemIcon4x4Buffer = NULL;
 
 // const rom data
-#include "data/item_icon_table.h"
+//#include "data/item_icon_table.h"
 
 static const struct OamData sOamData_ItemIcon =
 {
@@ -129,17 +129,17 @@ u8 BlitItemIconToWindow(u16 itemId, u8 windowId, u16 x, u16 y, void * paletteDes
     if (!AllocItemIconTemporaryBuffers())
         return 16;
 
-    LZDecompressWram(GetItemIconPicOrPalette(itemId, 0), gItemIconDecompressionBuffer);
+    LZDecompressWram(GetItemIconPic(itemId), gItemIconDecompressionBuffer);
     CopyItemIconPicTo4x4Buffer(gItemIconDecompressionBuffer, gItemIcon4x4Buffer);
     BlitBitmapToWindow(windowId, gItemIcon4x4Buffer, x, y, 32, 32);
 
     // if paletteDest is nonzero, copies the decompressed palette directly into it
     // otherwise, loads the compressed palette into the windowId's BG palette ID
     if (paletteDest) {
-        LZDecompressWram(GetItemIconPicOrPalette(itemId, 1), gPaletteDecompressionBuffer);
+        LZDecompressWram(GetItemIconPalette(itemId), gPaletteDecompressionBuffer);
         CpuFastCopy(gPaletteDecompressionBuffer, paletteDest, PLTT_SIZE_4BPP);
     } else {
-        LoadCompressedPalette(GetItemIconPicOrPalette(itemId, 1), BG_PLTT_ID(gWindows[windowId].window.paletteNum), PLTT_SIZE_4BPP);
+        LoadCompressedPalette(GetItemIconPalette(itemId), BG_PLTT_ID(gWindows[windowId].window.paletteNum), PLTT_SIZE_4BPP);
     }
     FreeItemIconTemporaryBuffers();
     return 0;
@@ -196,7 +196,7 @@ const void *GetItemIconPic(u16 itemId)
     }
 
     // Start Pokevial Branch
-    if (itemId == ITEM_POKEVIAL && which == 0)
+    if (itemId == ITEM_POKEVIAL)
         return PokevialGetDoseIcon();
     // End Pokevial Branch
 

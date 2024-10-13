@@ -1,4 +1,4 @@
-const struct Trainer gTrainers[] = {
+
     [TRAINER_NONE] =
     {
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
@@ -10261,4 +10261,3 @@ const struct Trainer gTrainers[] = {
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_MayLinkPlaceholder),
     },
-};

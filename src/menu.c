@@ -517,7 +517,7 @@ static u16 UNUSED GetStandardFrameBaseTileNum(void)
     return STD_WINDOW_BASE_TILE_NUM;
 }
 
-u8 AddPrimaryPopUpWindow(void)
+u8 AddMapNamePopUpWindow(void)
 {
     if (sMapNamePopupWindowId == WINDOW_NONE)
     {
@@ -529,17 +529,17 @@ u8 AddPrimaryPopUpWindow(void)
     return sMapNamePopupWindowId;
 }
 
-u8 GetPrimaryPopUpWindowId(void)
+u8 GetMapNamePopUpWindowId(void)
 {
-    return sPrimaryPopupWindowId;
+    return sMapNamePopupWindowId;
 }
 
-void RemovePrimaryPopUpWindow(void)
+void RemoveMapNamePopUpWindow(void)
 {
-    if (sPrimaryPopupWindowId != WINDOW_NONE)
+    if (sMapNamePopupWindowId != WINDOW_NONE)
     {
-        RemoveWindow(sPrimaryPopupWindowId);
-        sPrimaryPopupWindowId = WINDOW_NONE;
+        RemoveWindow(sMapNamePopupWindowId);
+        sMapNamePopupWindowId = WINDOW_NONE;
     }
 }
 

@@ -3141,8 +3141,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sSunkernTeachableLearnset,
         .eggMoveLearnset = sSunkernEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_SUNFLORA}),
-        .eggMoveLearnset = sSunkernEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_SUNFLORA}),
     },
 
     [SPECIES_SUNFLORA] =

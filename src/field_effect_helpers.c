@@ -595,7 +595,6 @@ u32 FldEff_JumpLongGrass(void)
     u8 spriteId;
 
     SetSpritePosToOffsetMapCoords((s16 *)&gFieldEffectArguments[0], (s16 *)&gFieldEffectArguments[1], 8, 8);
-    LoadFieldEffectPalette(FLDEFFOBJ_SURF_BLOB);
     spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_JUMP_LONG_GRASS], gFieldEffectArguments[0], gFieldEffectArguments[1], 0);
     if (spriteId != MAX_SPRITES)
     {
@@ -1492,7 +1491,6 @@ u32 FldEff_BerryTreeGrowthSparkle(void)
     u8 spriteId;
 
     SetSpritePosToOffsetMapCoords((s16 *)&gFieldEffectArguments[0], (s16 *)&gFieldEffectArguments[1], 8, 4);
-    LoadFieldEffectPalette(FLDEFFOBJ_SPARKLE);
     spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_SPARKLE], gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
     if (spriteId != MAX_SPRITES)
     {
@@ -1502,7 +1500,7 @@ u32 FldEff_BerryTreeGrowthSparkle(void)
         UpdateSpritePaletteByTemplate(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_SPARKLE], sprite);
         sprite->sWaitFldEff = FLDEFF_BERRY_TREE_GROWTH_SPARKLE;
     }
-    return spriteId;
+    return 0;
 }
 
 // Sprite data for FLDEFF_TREE_DISGUISE / FLDEFF_MOUNTAIN_DISGUISE / FLDEFF_SAND_DISGUISE
@@ -1892,22 +1890,4 @@ static void UpdateGrassFieldEffectSubpriority(struct Sprite *sprite, u8 elevatio
             }
         }
     }
-}
-
-static void LoadFieldEffectPalette_(u8 fieldEffect, bool8 updateGammaType)
-{
-    const struct SpriteTemplate *spriteTemplate;
-
-    spriteTemplate = gFieldEffectObjectTemplatePointers[fieldEffect];
-    if (spriteTemplate->paletteTag != 0xffff)
-    {
-        LoadObjectEventPalette(spriteTemplate->paletteTag);
-        if (updateGammaType)
-            UpdatePaletteGammaType(IndexOfSpritePaletteTag(spriteTemplate->paletteTag), GAMMA_NORMAL);
-    }
-}
-
-void LoadFieldEffectPalette(u8 fieldEffect)
-{
-    LoadFieldEffectPalette_(fieldEffect, TRUE);
 }

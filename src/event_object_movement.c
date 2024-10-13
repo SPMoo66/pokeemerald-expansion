@@ -529,6 +529,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Portal,                OBJ_EVENT_PAL_TAG_PORTAL},
     {gObjectEventPal_Skier_M,               OBJ_EVENT_PAL_TAG_SKIER_M},
     {gObjectEventPal_Skier_F,               OBJ_EVENT_PAL_TAG_SKIER_F},
+    {gObjectEventPal_Mew,                   OBJ_EVENT_PAL_TAG_MEW},
 
 #if OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_MasterBall,            OBJ_EVENT_PAL_TAG_BALL_MASTER},
@@ -2459,18 +2460,15 @@ void GetFollowerAction(struct ScriptContext *ctx) // Essentially a big switch fo
         switch (gMapHeader.regionMapSectionId)
         {
         case MAPSEC_RUSTBORO_CITY:
-        case MAPSEC_PEWTER_CITY:
             multi = TYPE_ROCK;
             break;
         case MAPSEC_DEWFORD_TOWN:
             multi = TYPE_FIGHTING;
             break;
         case MAPSEC_MAUVILLE_CITY:
-        case MAPSEC_VERMILION_CITY:
             multi = TYPE_ELECTRIC;
             break;
         case MAPSEC_LAVARIDGE_TOWN:
-        case MAPSEC_CINNABAR_ISLAND:
             multi = TYPE_FIRE;
             break;
         case MAPSEC_PETALBURG_CITY:
@@ -2480,22 +2478,20 @@ void GetFollowerAction(struct ScriptContext *ctx) // Essentially a big switch fo
             multi = TYPE_FLYING;
             break;
         case MAPSEC_MOSSDEEP_CITY:
-        case MAPSEC_SAFFRON_CITY:
             multi = TYPE_PSYCHIC;
             break;
         case MAPSEC_SOOTOPOLIS_CITY:
-        case MAPSEC_CERULEAN_CITY:
             multi = TYPE_WATER;
             break;
-        case MAPSEC_CELADON_CITY:
+        /*case grass:
             multi = TYPE_GRASS;
-            break;
-        case MAPSEC_FUCHSIA_CITY:
+            break;*/
+        /*case poison:
             multi = TYPE_POISON;
-            break;
-        case MAPSEC_VIRIDIAN_CITY:
+            break;*/
+        /*case ground:
             multi = TYPE_GROUND;
-            break;
+            break;*/
         default:
             multi = NUMBER_OF_MON_TYPES;
         }
@@ -2861,6 +2857,7 @@ static void SetBerryTreeGraphics(struct ObjectEvent *objectEvent, struct Sprite 
         SetBerryTreeGraphicsById(objectEvent, berryId, berryStage);
         StartSpriteAnim(sprite, berryStage);
     }
+}
 
 const struct ObjectEventGraphicsInfo *GetObjectEventGraphicsInfo(u16 graphicsId)
 {
@@ -5546,6 +5543,7 @@ bool8 FollowablePlayerMovement_Step(struct ObjectEvent *objectEvent, struct Spri
     {
         // InitJumpRegular will set the proper speed
         ObjectEventSetSingleMovement(objectEvent, sprite, GetJump2MovementAction(direction));
+    }
     else if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH))
     {
         // Set follow speed according to player's speed

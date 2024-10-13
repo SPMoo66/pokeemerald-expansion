@@ -26,12 +26,7 @@
 // enums
 enum MapPopUp_Themes
 {
-    MAPPOPUP_THEME_WOOD,
-    MAPPOPUP_THEME_MARBLE,
-    MAPPOPUP_THEME_STONE,
-    MAPPOPUP_THEME_BRICK,
     MAPPOPUP_THEME_UNDERWATER,
-    MAPPOPUP_THEME_STONE2,
     MAPPOPUP_THEME_BLACK,
 };
 
@@ -43,7 +38,7 @@ enum MapPopUp_Themes_BW
 // static functions
 static void Task_MapNamePopUpWindow(u8 taskId);
 static void ShowMapNamePopUpWindow(void);
-static void LoadMapNamePopUpWindowBgs(void);
+static void LoadMapNamePopUpWindowBg(void);
 
 // add additional themes here
 static const u8 sMapPopUpTilesPrimary_Black[] = INCBIN_U8("graphics/map_popup/black_primary.4bpp");
@@ -56,32 +51,17 @@ EWRAM_DATA u8 gPopupTaskId = 0;
 // .rodata
 static const u8 sMapPopUp_Table[][960] =
 {
-    [MAPPOPUP_THEME_WOOD]       = INCBIN_U8("graphics/map_popup/wood.4bpp"),
-    [MAPPOPUP_THEME_MARBLE]     = INCBIN_U8("graphics/map_popup/marble.4bpp"),
-    [MAPPOPUP_THEME_STONE]      = INCBIN_U8("graphics/map_popup/stone.4bpp"),
-    [MAPPOPUP_THEME_BRICK]      = INCBIN_U8("graphics/map_popup/brick.4bpp"),
     [MAPPOPUP_THEME_UNDERWATER] = INCBIN_U8("graphics/map_popup/underwater.4bpp"),
-    [MAPPOPUP_THEME_STONE2]     = INCBIN_U8("graphics/map_popup/stone2.4bpp"),
 };
 
 static const u8 sMapPopUp_OutlineTable[][960] =
 {
-    [MAPPOPUP_THEME_WOOD]       = INCBIN_U8("graphics/map_popup/wood_outline.4bpp"),
-    [MAPPOPUP_THEME_MARBLE]     = INCBIN_U8("graphics/map_popup/marble_outline.4bpp"),
-    [MAPPOPUP_THEME_STONE]      = INCBIN_U8("graphics/map_popup/stone_outline.4bpp"),
-    [MAPPOPUP_THEME_BRICK]      = INCBIN_U8("graphics/map_popup/brick_outline.4bpp"),
     [MAPPOPUP_THEME_UNDERWATER] = INCBIN_U8("graphics/map_popup/underwater_outline.4bpp"),
-    [MAPPOPUP_THEME_STONE2]     = INCBIN_U8("graphics/map_popup/stone2_outline.4bpp"),
 };
 
 static const u16 sMapPopUp_PaletteTable[][16] =
 {
-    [MAPPOPUP_THEME_WOOD]       = INCBIN_U16("graphics/map_popup/wood.gbapal"),
-    [MAPPOPUP_THEME_MARBLE]     = INCBIN_U16("graphics/map_popup/marble_outline.gbapal"),
-    [MAPPOPUP_THEME_STONE]      = INCBIN_U16("graphics/map_popup/stone_outline.gbapal"),
-    [MAPPOPUP_THEME_BRICK]      = INCBIN_U16("graphics/map_popup/brick_outline.gbapal"),
     [MAPPOPUP_THEME_UNDERWATER] = INCBIN_U16("graphics/map_popup/underwater_outline.gbapal"),
-    [MAPPOPUP_THEME_STONE2]     = INCBIN_U16("graphics/map_popup/stone2_outline.gbapal"),
 };
 
 static const u16 sMapPopUp_Palette_Underwater[16] = INCBIN_U16("graphics/map_popup/underwater.gbapal");
@@ -475,15 +455,11 @@ void HideMapNamePopUpWindow(void)
     if (FuncIsActiveTask(Task_MapNamePopUpWindow))
     {
     #ifdef UBFIX
-        if (GetPrimaryPopUpWindowId() != WINDOW_NONE)
+        if (GetMapNamePopUpWindowId() != WINDOW_NONE)
     #endif // UBFIX
         {
-            ClearStdWindowAndFrame(GetPrimaryPopUpWindowId(), TRUE);
-            ClearStdWindowAndFrame(GetSecondaryPopUpWindowId(), TRUE);
-            RemovePrimaryPopUpWindow();
-            RemoveSecondaryPopUpWindow();
-            DisableInterrupts(INTR_FLAG_HBLANK);
-            SetHBlankCallback(NULL);
+            ClearStdWindowAndFrame(GetMapNamePopUpWindowId(), TRUE);
+            RemoveMapNamePopUpWindow();
         }
 
         if (OW_POPUP_GENERATION == GEN_5)
@@ -514,22 +490,9 @@ static void ShowMapNamePopUpWindow(void)
 {
     u8 mapDisplayHeader[24];
     u8 *withoutPrefixPtr;
-    u8 mapNameX, timeX, mapNameY, timeY, primaryPopUpWindowId, secondaryPopUpWindowId;
+    u8 x;
     const u8 *mapDisplayHeaderSource;
     u8 mapNamePopUpWindowId, secondaryPopUpWindowId;
-
-    mapNameX = 8;
-    mapNameY = 2;
-    timeX = 5;
-    timeY = 8;
-
-    if (MAPPOPUP_ALPHA_BLEND && !IsWeatherAlphaBlend())
-        SetGpuRegBits(REG_OFFSET_WININ, WININ_WIN0_CLR);
-
-    primaryPopUpWindowId = AddPrimaryPopUpWindow();
-    secondaryPopUpWindowId = AddSecondaryPopUpWindow();
-
-    LoadMapNamePopUpWindowBgs();
 
     if (InBattlePyramid())
     {
@@ -592,11 +555,42 @@ static void ShowMapNamePopUpWindow(void)
     }
 }
 
-static void LoadMapNamePopUpWindowBgs(void)
+#define TILE_TOP_EDGE_START 0x21D
+#define TILE_TOP_EDGE_END   0x228
+#define TILE_LEFT_EDGE_TOP  0x229
+#define TILE_RIGHT_EDGE_TOP 0x22A
+#define TILE_LEFT_EDGE_MID  0x22B
+#define TILE_RIGHT_EDGE_MID 0x22C
+#define TILE_LEFT_EDGE_BOT  0x22D
+#define TILE_RIGHT_EDGE_BOT 0x22E
+#define TILE_BOT_EDGE_START 0x22F
+#define TILE_BOT_EDGE_END   0x23A
+
+static void DrawMapNamePopUpFrame(u8 bg, u8 x, u8 y, u8 deltaX, u8 deltaY, u8 unused)
 {
-    u8 popupThemeId;
-    u8 primaryPopUpWindowId = GetPrimaryPopUpWindowId();
-    u8 secondaryPopUpWindowId = GetSecondaryPopUpWindowId();
+    s32 i;
+
+    // Draw top edge
+    for (i = 0; i < 1 + TILE_TOP_EDGE_END - TILE_TOP_EDGE_START; i++)
+        FillBgTilemapBufferRect(bg, TILE_TOP_EDGE_START + i, i - 1 + x, y - 1, 1, 1, 14);
+
+    // Draw sides
+    FillBgTilemapBufferRect(bg, TILE_LEFT_EDGE_TOP,       x - 1,     y, 1, 1, 14);
+    FillBgTilemapBufferRect(bg, TILE_RIGHT_EDGE_TOP, deltaX + x,     y, 1, 1, 14);
+    FillBgTilemapBufferRect(bg, TILE_LEFT_EDGE_MID,       x - 1, y + 1, 1, 1, 14);
+    FillBgTilemapBufferRect(bg, TILE_RIGHT_EDGE_MID, deltaX + x, y + 1, 1, 1, 14);
+    FillBgTilemapBufferRect(bg, TILE_LEFT_EDGE_BOT,       x - 1, y + 2, 1, 1, 14);
+    FillBgTilemapBufferRect(bg, TILE_RIGHT_EDGE_BOT, deltaX + x, y + 2, 1, 1, 14);
+
+    // Draw bottom edge
+    for (i = 0; i < 1 + TILE_BOT_EDGE_END - TILE_BOT_EDGE_START; i++)
+        FillBgTilemapBufferRect(bg, TILE_BOT_EDGE_START + i, i - 1 + x, y + deltaY, 1, 1, 14);
+}
+
+static void LoadMapNamePopUpWindowBg(void)
+{
+    u8 popUpThemeId;
+    u8 popupWindowId = GetMapNamePopUpWindowId();
     u16 regionMapSectionId = gMapHeader.regionMapSectionId;
     u8 secondaryPopUpWindowId;
 

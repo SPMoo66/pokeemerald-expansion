@@ -392,6 +392,27 @@
 #define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1122
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
 #define OBJ_EVENT_PAL_TAG_DYNAMIC                 0x1124
+#define OBJ_EVENT_PAL_TAG_ARCHIE                  0x1125
+#define OBJ_EVENT_PAL_TAG_MATT                    0x1126
+#define OBJ_EVENT_PAL_TAG_SHELLY                  0x1127
+#define OBJ_EVENT_PAL_TAG_MAXIE                   0x1128
+#define OBJ_EVENT_PAL_TAG_COURTNEY                0x1129
+#define OBJ_EVENT_PAL_TAG_TABITHA                 0x112A
+#define OBJ_EVENT_PAL_TAG_AQUA_MEMBER_M           0x112B
+#define OBJ_EVENT_PAL_TAG_AQUA_MEMBER_F           0x112C
+#define OBJ_EVENT_PAL_TAG_MAGMA_MEMBER_M          0x112D
+#define OBJ_EVENT_PAL_TAG_MAGMA_MEMBER_F          0x112E
+#define OBJ_EVENT_PAL_TAG_PICHUSPIKYEARED         0x112F
+#define OBJ_EVENT_PAL_TAG_BARON                   0x1130
+#define OBJ_EVENT_PAL_TAG_HARPER                  0x1131
+#define OBJ_EVENT_PAL_TAG_JAKSON                  0x1132
+#define OBJ_EVENT_PAL_TAG_REDD                    0x1133
+#define OBJ_EVENT_PAL_TAG_SAKURA                  0x1134
+#define OBJ_EVENT_PAL_TAG_ITEM_BALL_BLUE          0x1135
+#define OBJ_EVENT_PAL_TAG_PORTAL                  0x1136
+#define OBJ_EVENT_PAL_TAG_SKIER_M                 0x1137
+#define OBJ_EVENT_PAL_TAG_SKIER_F                 0x1138
+#define OBJ_EVENT_PAL_TAG_MEW                     0x1139
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

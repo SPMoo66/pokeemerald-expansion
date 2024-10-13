@@ -291,6 +291,7 @@ static const u16 sVulpixEggMoveLearnset[] = {
     MOVE_CAPTIVATE,
     MOVE_MEMENTO,
     MOVE_UNAVAILABLE,
+};
 #if P_ALOLAN_FORMS
 static const u16 sVulpixAlolanEggMoveLearnset[] = {
     MOVE_AGILITY,
@@ -2318,6 +2319,7 @@ static const u16 sArselloskyEggMoveLearnset[] = {
     MOVE_ENDURE,
     MOVE_CRUSH_CLAW,
     MOVE_UNAVAILABLE,
+};
 #endif //P_FAMILY_SKARMORY
 
 #if P_FAMILY_HOUNDOUR
@@ -3888,7 +3890,7 @@ static const u16 sGibleEggMoveLearnset[] = {
     MOVE_MUD_SHOT,
     MOVE_ROCK_CLIMB,
     MOVE_STRENGTH,
-    MOVE_IRON_TAILL,
+    MOVE_IRON_TAIL,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_GIBLE
@@ -4266,7 +4268,7 @@ static const u16 sDrilburEggMoveLearnset[] = {
     MOVE_SUBMISSION,
     MOVE_SKULL_BASH,
     MOVE_ROCK_CLIMB,
-    MOVE_STRENGTHB,
+    MOVE_STRENGTH,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_DRILBUR

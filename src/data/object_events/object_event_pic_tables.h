@@ -860,30 +860,6 @@ static const struct SpriteFrameImage sPicTable_BigRegisteelDoll[] = {
     obj_frame_tiles(gObjectEventPic_BigRegisteelDoll),
 };
 
-static const struct SpriteFrameImage sPicTable_Latias[] = {
-    overworld_frame(gObjectEventPic_Latias, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Latias, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Latias, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Latias, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Latias, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Latias, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Latias, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Latias, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Latias, 4, 4, 2),
-};
-
-static const struct SpriteFrameImage sPicTable_Latios[] = {
-    overworld_frame(gObjectEventPic_Latios, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Latios, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Latios, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Latios, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Latios, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Latios, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Latios, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Latios, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Latios, 4, 4, 2),
-};
-
 static const struct SpriteFrameImage sPicTable_GameboyKid[] = {
     overworld_frame(gObjectEventPic_GameboyKid, 2, 4, 0),
     overworld_frame(gObjectEventPic_GameboyKid, 2, 4, 1),

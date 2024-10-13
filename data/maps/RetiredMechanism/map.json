@@ -2,7 +2,7 @@
   "id": "MAP_RETIRED_MECHANISM",
   "name": "RetiredMechanism",
   "layout": "LAYOUT_RETIRED_MECHANISM",
-  "music": "MUS_SEALED_CHAMBER",
+  "music": "MUS_DP_GALACTIC_HQ_BASEMENT",
   "region_map_section": "MAPSEC_NEW_MAUVILLE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

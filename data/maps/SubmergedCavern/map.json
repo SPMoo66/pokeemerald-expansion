@@ -2,7 +2,7 @@
   "id": "MAP_SUBMERGED_CAVERN",
   "name": "SubmergedCavern",
   "layout": "LAYOUT_SUBMERGED_CAVERN",
-  "music": "MUS_DUMMY",
+  "music": "MUS_DP_OREBURGH_GATE",
   "region_map_section": "MAPSEC_SUBMERGED_CAVERN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

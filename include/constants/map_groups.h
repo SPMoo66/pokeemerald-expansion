@@ -65,6 +65,7 @@
 #define MAP_UNDERWATER_ROUTE125 (56 | (0 << 8))
 #define MAP_LEAFY_CLEARING      (57 | (0 << 8))
 #define MAP_FLURRY_PEAK         (58 | (0 << 8))
+#define MAP_PATHLESS_PLAIN      (59 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

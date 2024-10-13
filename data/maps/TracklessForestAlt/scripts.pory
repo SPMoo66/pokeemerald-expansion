@@ -30,6 +30,7 @@ script TracklessForestAlt_Portal {
 
 script BattleRagingBolt {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, RAGING_BOLT)
 	playmoncry(SPECIES_RAGING_BOLT, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")
@@ -49,6 +50,7 @@ script BattleRagingBolt {
 
 script BattleGougingFire {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, GOUGING_FIRE)
 	playmoncry(SPECIES_GOUGING_FIRE, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")
@@ -68,6 +70,7 @@ script BattleGougingFire {
 
 script BattleWalkingWake {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, WALKING_WAKE)
 	playmoncry(SPECIES_WALKING_WAKE, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")

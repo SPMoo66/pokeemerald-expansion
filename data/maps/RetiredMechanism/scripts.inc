@@ -32,37 +32,39 @@ BattleRegieleki::
 # 18 "data/maps/RetiredMechanism/scripts.pory"
 	lock
 # 19 "data/maps/RetiredMechanism/scripts.pory"
-	playmoncry SPECIES_REGIELEKI, CRY_MODE_ENCOUNTER
+	faceplayer
 # 20 "data/maps/RetiredMechanism/scripts.pory"
-	msgbox BattleRegieleki_Text_0
+	playmoncry SPECIES_REGIELEKI, CRY_MODE_ENCOUNTER
 # 21 "data/maps/RetiredMechanism/scripts.pory"
-	waitmoncry
+	msgbox BattleRegieleki_Text_0
 # 22 "data/maps/RetiredMechanism/scripts.pory"
-	setwildbattle SPECIES_REGIELEKI, 40
+	waitmoncry
 # 23 "data/maps/RetiredMechanism/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	setwildbattle SPECIES_REGIELEKI, 40
 # 24 "data/maps/RetiredMechanism/scripts.pory"
-	special StartRegiBattle
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 25 "data/maps/RetiredMechanism/scripts.pory"
-	waitstate
+	special StartRegiBattle
 # 26 "data/maps/RetiredMechanism/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	waitstate
 # 27 "data/maps/RetiredMechanism/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 28 "data/maps/RetiredMechanism/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 29 "data/maps/RetiredMechanism/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleRegieleki_2
 BattleRegieleki_1:
-# 31 "data/maps/RetiredMechanism/scripts.pory"
+# 32 "data/maps/RetiredMechanism/scripts.pory"
 	release
 	end
 
 BattleRegieleki_2:
-# 29 "data/maps/RetiredMechanism/scripts.pory"
+# 30 "data/maps/RetiredMechanism/scripts.pory"
 	setflag FLAG_CAUGHT_REGIELEKI
 	goto BattleRegieleki_1
 
 
 BattleRegieleki_Text_0:
-# 20 "data/maps/RetiredMechanism/scripts.pory"
+# 21 "data/maps/RetiredMechanism/scripts.pory"
 	.string "Zizi zizizi.$"

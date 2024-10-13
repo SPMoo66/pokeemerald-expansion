@@ -30,6 +30,7 @@ script SeaSpiritsDenAlt_Portal {
 
 script BattleArticunoG {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, ARTICUNO_G)
 	playmoncry(SPECIES_ARTICUNO_GALARIAN, CRY_MODE_ENCOUNTER)
 	msgbox("Gyooa!")
@@ -49,6 +50,7 @@ script BattleArticunoG {
 
 script BattleZapdosG {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, ZAPDOS_G)
 	playmoncry(SPECIES_ZAPDOS_GALARIAN, CRY_MODE_ENCOUNTER)
 	msgbox("Gyooa!")
@@ -68,6 +70,7 @@ script BattleZapdosG {
 
 script BattleMoltresG {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, MOLTRES_G)
 	playmoncry(SPECIES_MOLTRES_GALARIAN, CRY_MODE_ENCOUNTER)
 	msgbox("Gyooa!")

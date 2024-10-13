@@ -16,6 +16,7 @@ mapscripts CaveOfDreamsChamber_MapScripts {
 
 script BattleDarkrai {
 	lock
+	faceplayer
 	playmoncry(SPECIES_DARKRAI, CRY_MODE_ENCOUNTER)
 	msgbox("...\p...")
 	waitmoncry

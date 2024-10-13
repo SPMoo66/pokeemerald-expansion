@@ -35,6 +35,7 @@ script TracklessForest_Portal {
 
 script BattleRaikou {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, RAIKOU)
 	playmoncry(SPECIES_RAIKOU, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")
@@ -54,6 +55,7 @@ script BattleRaikou {
 
 script BattleEntei {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, ENTEI)
 	playmoncry(SPECIES_ENTEI, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")
@@ -73,6 +75,7 @@ script BattleEntei {
 
 script BattleSuicune {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, SUICUNE)
 	playmoncry(SPECIES_SUICUNE, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")
@@ -92,6 +95,7 @@ script BattleSuicune {
 
 script BattleCelebi {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, CELEBI)
 	playmoncry(SPECIES_CELEBI, CRY_MODE_ENCOUNTER)
 	msgbox("Kryuu!")

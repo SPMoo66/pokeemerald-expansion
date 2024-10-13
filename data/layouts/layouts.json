@@ -4630,6 +4630,16 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/TracklessForestAlt/border.bin",
       "blockdata_filepath": "data/layouts/TracklessForestAlt/map.bin"
+    },
+    {
+      "id": "LAYOUT_PATHLESS_PLAIN",
+      "name": "PathlessPlain_Layout",
+      "width": 28,
+      "height": 23,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_EverGrande",
+      "border_filepath": "data/layouts/PathlessPlain/border.bin",
+      "blockdata_filepath": "data/layouts/PathlessPlain/map.bin"
     }
   ]
 }

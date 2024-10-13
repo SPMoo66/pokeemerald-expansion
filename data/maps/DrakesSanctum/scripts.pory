@@ -16,6 +16,7 @@ mapscripts DrakesSanctum_MapScripts {
 
 script BattleRegidrago {
 	lock
+	faceplayer
 	playmoncry(SPECIES_REGIDRAGO, CRY_MODE_ENCOUNTER)
 	msgbox("Zagd.")
 	waitmoncry

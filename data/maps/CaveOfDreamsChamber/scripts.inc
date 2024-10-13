@@ -32,43 +32,45 @@ BattleDarkrai::
 # 18 "data/maps/CaveOfDreamsChamber/scripts.pory"
 	lock
 # 19 "data/maps/CaveOfDreamsChamber/scripts.pory"
-	playmoncry SPECIES_DARKRAI, CRY_MODE_ENCOUNTER
+	faceplayer
 # 20 "data/maps/CaveOfDreamsChamber/scripts.pory"
-	msgbox BattleDarkrai_Text_0
+	playmoncry SPECIES_DARKRAI, CRY_MODE_ENCOUNTER
 # 21 "data/maps/CaveOfDreamsChamber/scripts.pory"
-	waitmoncry
+	msgbox BattleDarkrai_Text_0
 # 22 "data/maps/CaveOfDreamsChamber/scripts.pory"
-	seteventmon SPECIES_DARKRAI, 50
+	waitmoncry
 # 23 "data/maps/CaveOfDreamsChamber/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_DARKRAI, 50
 # 24 "data/maps/CaveOfDreamsChamber/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 25 "data/maps/CaveOfDreamsChamber/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 26 "data/maps/CaveOfDreamsChamber/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	waitstate
 # 27 "data/maps/CaveOfDreamsChamber/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 28 "data/maps/CaveOfDreamsChamber/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 29 "data/maps/CaveOfDreamsChamber/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleDarkrai_2
 BattleDarkrai_1:
-# 31 "data/maps/CaveOfDreamsChamber/scripts.pory"
+# 32 "data/maps/CaveOfDreamsChamber/scripts.pory"
 	release
 	end
 
 BattleDarkrai_2:
-# 29 "data/maps/CaveOfDreamsChamber/scripts.pory"
+# 30 "data/maps/CaveOfDreamsChamber/scripts.pory"
 	setflag FLAG_CAUGHT_DARKRAI
 	goto BattleDarkrai_1
 
 
 CaveofDreamsChamber_Portal::
-# 36 "data/maps/CaveOfDreamsChamber/scripts.pory"
+# 37 "data/maps/CaveOfDreamsChamber/scripts.pory"
 	warp MAP_CRESCENT_ISLE, 0
 	return
 
 
 BattleDarkrai_Text_0:
-# 20 "data/maps/CaveOfDreamsChamber/scripts.pory"
+# 21 "data/maps/CaveOfDreamsChamber/scripts.pory"
 	.string "...\p...$"

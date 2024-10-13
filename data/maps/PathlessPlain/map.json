@@ -1,80 +1,80 @@
 {
-  "id": "MAP_TRACKLESS_FOREST_ALT",
-  "name": "TracklessForestAlt",
-  "layout": "LAYOUT_TRACKLESS_FOREST_ALT",
-  "music": "MUS_HG_SPROUT_TOWER",
-  "region_map_section": "MAPSEC_MYSTERY",
+  "id": "MAP_PATHLESS_PLAIN",
+  "name": "PathlessPlain",
+  "layout": "LAYOUT_PATHLESS_PLAIN",
+  "music": "MUS_DP_POKEMON_LEAGUE_DAY",
+  "region_map_section": "MAPSEC_PATHLESS_PLAIN",
   "requires_flash": false,
-  "weather": "WEATHER_SHADE",
+  "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": [
+    {
+      "map": "MAP_EVER_GRANDE_CITY",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RAGING_BOLT)",
-      "x": 19,
-      "y": 31,
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(COBALION)",
+      "x": 15,
+      "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "BattleRagingBolt",
+      "script": "BattleCobalion",
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOUGING_FIRE)",
-      "x": 5,
-      "y": 5,
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TERRAKION)",
+      "x": 15,
+      "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "BattleGougingFire",
+      "script": "BattleTerrakion",
       "flag": "FLAG_TEMP_3"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(WALKING_WAKE)",
-      "x": 18,
-      "y": 5,
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VIRIZION)",
+      "x": 21,
+      "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "BattleWalkingWake",
+      "script": "BattleVirizion",
       "flag": "FLAG_TEMP_4"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_PORTAL",
-      "x": 6,
-      "y": 21,
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KELDEO)",
+      "x": 10,
+      "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "TracklessForestAlt_Portal",
-      "flag": "0"
+      "script": "BattleKeldeo",
+      "flag": "FLAG_TEMP_5"
     }
   ],
   "warp_events": [
-    {
-      "x": 6,
-      "y": 22,
-      "elevation": 0,
-      "dest_map": "MAP_TRACKLESS_FOREST",
-      "dest_warp_id": "2"
-    }
+
   ],
   "coord_events": [
 

@@ -2,7 +2,7 @@
   "id": "MAP_CRESCENT_ISLE",
   "name": "CrescentIsle",
   "layout": "LAYOUT_CRESCENT_ISLE",
-  "music": "MUS_DUMMY",
+  "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_CRESCENT_ISLE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

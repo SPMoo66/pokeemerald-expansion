@@ -26,6 +26,7 @@ mapscripts NamelessCavern_MapScripts {
 
 script BattleMesprit {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, MESPRIT)
 	playmoncry(SPECIES_MESPRIT, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")
@@ -45,6 +46,7 @@ script BattleMesprit {
 
 script BattleUxie {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, UXIE)
 	playmoncry(SPECIES_UXIE, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")
@@ -64,6 +66,7 @@ script BattleUxie {
 
 script BattleAzelf {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, AZELF)
 	playmoncry(SPECIES_AZELF, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")

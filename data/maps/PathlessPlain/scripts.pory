@@ -1,25 +1,25 @@
-const TAPU_BULU = 1
-const TAPU_FINI = 2
-const TAPU_KOKO = 3
-const TAPU_LELE = 4
+const COBALION = 1
+const TERRAKION = 2
+const VIRIZION = 3
+const KELDEO = 4
 
-mapscripts SeasideGrotto_MapScripts {
+mapscripts PathlessPlain_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
-		if(flag(FLAG_CAUGHT_TAPU_BULU)) {
+		if(flag(FLAG_CAUGHT_COBALION)) {
 			setflag (FLAG_TEMP_2)
-			removeobject(TAPU_BULU)
+			removeobject(COBALION)
 		}
-		elif(flag(FLAG_CAUGHT_TAPU_FINI)) {
+		elif(flag(FLAG_CAUGHT_TERRAKION)) {
 			setflag (FLAG_TEMP_3)
-			removeobject(TAPU_FINI)
+			removeobject(TERRAKION)
 		}
-		elif(flag(FLAG_CAUGHT_TAPU_KOKO)) {
+		elif(flag(FLAG_CAUGHT_VIRIZION)) {
 			setflag (FLAG_TEMP_4)
-			removeobject(TAPU_KOKO)
+			removeobject(VIRIZION)
 		}
-		elif(flag(FLAG_CAUGHT_TAPU_LELE)) {
+		elif(flag(FLAG_CAUGHT_KELDEO)) {
 			setflag (FLAG_TEMP_5)
-			removeobject(TAPU_LELE)
+			removeobject(KELDEO)
 		}
 	}
 	MAP_SCRIPT_ON_RESUME {
@@ -29,81 +29,81 @@ mapscripts SeasideGrotto_MapScripts {
 	}
 }
 
-script BattleTapuBulu {
+script BattleCobalion {
 	lock
 	faceplayer
-	setvar (VAR_LAST_TALKED, TAPU_BULU)
-	playmoncry(SPECIES_TAPU_BULU, CRY_MODE_ENCOUNTER)
-	msgbox("Ta-pu-loooo!")
+	setvar (VAR_LAST_TALKED, COBALION)
+	playmoncry(SPECIES_COBALION, CRY_MODE_ENCOUNTER)
+	msgbox("Kawbraa!")
 	waitmoncry
-	seteventmon(SPECIES_TAPU_BULU, 40)
+	seteventmon(SPECIES_COBALION, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
-		setflag (FLAG_CAUGHT_TAPU_BULU)
+		setflag (FLAG_CAUGHT_COBALION)
 	}
 	release
 	end
 }
 
-script BattleTapuFini {
+script BattleTerrakion {
 	lock
 	faceplayer
-	setvar (VAR_LAST_TALKED, TAPU_FINI)
-	playmoncry(SPECIES_TAPU_FINI, CRY_MODE_ENCOUNTER)
-	msgbox("Ta-pu-fiiieee!")
+	setvar (VAR_LAST_TALKED, TERRAKION)
+	playmoncry(SPECIES_TERRAKION, CRY_MODE_ENCOUNTER)
+	msgbox("Gurooooohhh!")
 	waitmoncry
-	seteventmon(SPECIES_TAPU_FINI, 40)
+	seteventmon(SPECIES_TERRAKION, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
-		setflag (FLAG_CAUGHT_TAPU_FINI)
+		setflag (FLAG_CAUGHT_TERRAKION)
 	}
 	release
 	end
 }
 
-script BattleTapuKoko {
+script BattleVirizion {
 	lock
 	faceplayer
-	setvar (VAR_LAST_TALKED, TAPU_KOKO)
-	playmoncry(SPECIES_TAPU_KOKO, CRY_MODE_ENCOUNTER)
-	msgbox("Tapu ko-ko-ko-kooo!!!")
+	setvar (VAR_LAST_TALKED, VIRIZION)
+	playmoncry(SPECIES_VIRIZION, CRY_MODE_ENCOUNTER)
+	msgbox("Aeepraaa!")
 	waitmoncry
-	seteventmon(SPECIES_TAPU_KOKO, 40)
+	seteventmon(SPECIES_VIRIZION, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
-		setflag (FLAG_CAUGHT_TAPU_KOKO)
+		setflag (FLAG_CAUGHT_VIRIZION)
 	}
 	release
 	end
 }
 
-script BattleTapuLele {
+script BattleKeldeo {
 	lock
 	faceplayer
-	setvar (VAR_LAST_TALKED, TAPU_LELE)
-	playmoncry(SPECIES_TAPU_LELE, CRY_MODE_ENCOUNTER)
-	msgbox("Ta-pu leeeh!")
+	setvar (VAR_LAST_TALKED, KELDEO)
+	playmoncry(SPECIES_KELDEO, CRY_MODE_ENCOUNTER)
+	msgbox("Rarurarii!")
 	waitmoncry
-	seteventmon(SPECIES_TAPU_LELE, 40)
+	seteventmon(SPECIES_KELDEO, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
-		setflag (FLAG_CAUGHT_TAPU_LELE)
+		setflag (FLAG_CAUGHT_KELDEO)
 	}
 	release
 	end

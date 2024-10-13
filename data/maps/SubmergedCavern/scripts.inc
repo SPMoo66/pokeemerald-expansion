@@ -62,162 +62,170 @@ BattleChienPao::
 # 34 "data/maps/SubmergedCavern/scripts.pory"
 	lock
 # 35 "data/maps/SubmergedCavern/scripts.pory"
-	setvar VAR_LAST_TALKED, 1
+	faceplayer
 # 36 "data/maps/SubmergedCavern/scripts.pory"
-	playmoncry SPECIES_CHIEN_PAO, CRY_MODE_ENCOUNTER
+	setvar VAR_LAST_TALKED, 1
 # 37 "data/maps/SubmergedCavern/scripts.pory"
-	msgbox BattleChienPao_Text_0
+	playmoncry SPECIES_CHIEN_PAO, CRY_MODE_ENCOUNTER
 # 38 "data/maps/SubmergedCavern/scripts.pory"
-	waitmoncry
+	msgbox BattleChienPao_Text_0
 # 39 "data/maps/SubmergedCavern/scripts.pory"
-	seteventmon SPECIES_CHIEN_PAO, 45
+	waitmoncry
 # 40 "data/maps/SubmergedCavern/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_CHIEN_PAO, 45
 # 41 "data/maps/SubmergedCavern/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 42 "data/maps/SubmergedCavern/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 43 "data/maps/SubmergedCavern/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	waitstate
 # 44 "data/maps/SubmergedCavern/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 45 "data/maps/SubmergedCavern/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 46 "data/maps/SubmergedCavern/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleChienPao_2
 BattleChienPao_1:
-# 48 "data/maps/SubmergedCavern/scripts.pory"
+# 49 "data/maps/SubmergedCavern/scripts.pory"
 	release
 	end
 
 BattleChienPao_2:
-# 46 "data/maps/SubmergedCavern/scripts.pory"
+# 47 "data/maps/SubmergedCavern/scripts.pory"
 	setflag FLAG_CAUGHT_CHIEN_PAO
 	goto BattleChienPao_1
 
 
 BattleChiYu::
-# 53 "data/maps/SubmergedCavern/scripts.pory"
-	lock
 # 54 "data/maps/SubmergedCavern/scripts.pory"
-	setvar VAR_LAST_TALKED, 2
+	lock
 # 55 "data/maps/SubmergedCavern/scripts.pory"
-	playmoncry SPECIES_CHI_YU, CRY_MODE_ENCOUNTER
+	faceplayer
 # 56 "data/maps/SubmergedCavern/scripts.pory"
-	msgbox BattleChiYu_Text_0
+	setvar VAR_LAST_TALKED, 2
 # 57 "data/maps/SubmergedCavern/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_CHI_YU, CRY_MODE_ENCOUNTER
 # 58 "data/maps/SubmergedCavern/scripts.pory"
-	seteventmon SPECIES_CHI_YU, 45
+	msgbox BattleChiYu_Text_0
 # 59 "data/maps/SubmergedCavern/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	waitmoncry
 # 60 "data/maps/SubmergedCavern/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	seteventmon SPECIES_CHI_YU, 45
 # 61 "data/maps/SubmergedCavern/scripts.pory"
-	waitstate
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 62 "data/maps/SubmergedCavern/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
 # 63 "data/maps/SubmergedCavern/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	waitstate
 # 64 "data/maps/SubmergedCavern/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 65 "data/maps/SubmergedCavern/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 66 "data/maps/SubmergedCavern/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleChiYu_2
 BattleChiYu_1:
-# 67 "data/maps/SubmergedCavern/scripts.pory"
+# 69 "data/maps/SubmergedCavern/scripts.pory"
 	release
 	end
 
 BattleChiYu_2:
-# 65 "data/maps/SubmergedCavern/scripts.pory"
+# 67 "data/maps/SubmergedCavern/scripts.pory"
 	setflag FLAG_CAUGHT_CHI_YU
 	goto BattleChiYu_1
 
 
 BattleTingLu::
-# 72 "data/maps/SubmergedCavern/scripts.pory"
-	lock
-# 73 "data/maps/SubmergedCavern/scripts.pory"
-	setvar VAR_LAST_TALKED, 3
 # 74 "data/maps/SubmergedCavern/scripts.pory"
-	playmoncry SPECIES_TING_LU, CRY_MODE_ENCOUNTER
+	lock
 # 75 "data/maps/SubmergedCavern/scripts.pory"
-	msgbox BattleTingLu_Text_0
+	faceplayer
 # 76 "data/maps/SubmergedCavern/scripts.pory"
-	waitmoncry
+	setvar VAR_LAST_TALKED, 3
 # 77 "data/maps/SubmergedCavern/scripts.pory"
-	seteventmon SPECIES_TING_LU, 45
+	playmoncry SPECIES_TING_LU, CRY_MODE_ENCOUNTER
 # 78 "data/maps/SubmergedCavern/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	msgbox BattleTingLu_Text_0
 # 79 "data/maps/SubmergedCavern/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	waitmoncry
 # 80 "data/maps/SubmergedCavern/scripts.pory"
-	waitstate
+	seteventmon SPECIES_TING_LU, 45
 # 81 "data/maps/SubmergedCavern/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 82 "data/maps/SubmergedCavern/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	special BattleSetup_StartLegendaryBattle
 # 83 "data/maps/SubmergedCavern/scripts.pory"
+	waitstate
+# 84 "data/maps/SubmergedCavern/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 85 "data/maps/SubmergedCavern/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 86 "data/maps/SubmergedCavern/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleTingLu_2
 BattleTingLu_1:
-# 86 "data/maps/SubmergedCavern/scripts.pory"
+# 89 "data/maps/SubmergedCavern/scripts.pory"
 	release
 	end
 
 BattleTingLu_2:
-# 84 "data/maps/SubmergedCavern/scripts.pory"
+# 87 "data/maps/SubmergedCavern/scripts.pory"
 	setflag FLAG_CAUGHT_TING_LU
 	goto BattleTingLu_1
 
 
 BattleWoChien::
-# 91 "data/maps/SubmergedCavern/scripts.pory"
-	lock
-# 92 "data/maps/SubmergedCavern/scripts.pory"
-	setvar VAR_LAST_TALKED, 4
-# 93 "data/maps/SubmergedCavern/scripts.pory"
-	playmoncry SPECIES_WO_CHIEN, CRY_MODE_ENCOUNTER
 # 94 "data/maps/SubmergedCavern/scripts.pory"
-	msgbox BattleWoChien_Text_0
+	lock
 # 95 "data/maps/SubmergedCavern/scripts.pory"
-	waitmoncry
+	faceplayer
 # 96 "data/maps/SubmergedCavern/scripts.pory"
-	seteventmon SPECIES_WO_CHIEN, 45
+	setvar VAR_LAST_TALKED, 4
 # 97 "data/maps/SubmergedCavern/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	playmoncry SPECIES_WO_CHIEN, CRY_MODE_ENCOUNTER
 # 98 "data/maps/SubmergedCavern/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	msgbox BattleWoChien_Text_0
 # 99 "data/maps/SubmergedCavern/scripts.pory"
-	waitstate
+	waitmoncry
 # 100 "data/maps/SubmergedCavern/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_WO_CHIEN, 45
 # 101 "data/maps/SubmergedCavern/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 102 "data/maps/SubmergedCavern/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 103 "data/maps/SubmergedCavern/scripts.pory"
+	waitstate
+# 104 "data/maps/SubmergedCavern/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 105 "data/maps/SubmergedCavern/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 106 "data/maps/SubmergedCavern/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleWoChien_2
 BattleWoChien_1:
-# 105 "data/maps/SubmergedCavern/scripts.pory"
+# 109 "data/maps/SubmergedCavern/scripts.pory"
 	release
 	end
 
 BattleWoChien_2:
-# 103 "data/maps/SubmergedCavern/scripts.pory"
+# 107 "data/maps/SubmergedCavern/scripts.pory"
 	setflag FLAG_CAUGHT_WO_CHIEN
 	goto BattleWoChien_1
 
 
 BattleChienPao_Text_0:
-# 37 "data/maps/SubmergedCavern/scripts.pory"
+# 38 "data/maps/SubmergedCavern/scripts.pory"
 	.string "Graoo-wuuh!$"
 
 BattleChiYu_Text_0:
-# 56 "data/maps/SubmergedCavern/scripts.pory"
+# 58 "data/maps/SubmergedCavern/scripts.pory"
 	.string "Di-tiing wuh!$"
 
 BattleTingLu_Text_0:
-# 75 "data/maps/SubmergedCavern/scripts.pory"
+# 78 "data/maps/SubmergedCavern/scripts.pory"
 	.string "Aouu-wooouh!$"
 
 BattleWoChien_Text_0:
-# 94 "data/maps/SubmergedCavern/scripts.pory"
+# 98 "data/maps/SubmergedCavern/scripts.pory"
 	.string "Greu-wuuu!$"

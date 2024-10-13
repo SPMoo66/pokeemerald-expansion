@@ -16,6 +16,7 @@ mapscripts CrescentIsle_MapScripts {
 
 script BattleCresselia {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, CRESSELIA)
 	playmoncry(SPECIES_CRESSELIA, CRY_MODE_ENCOUNTER)
 	msgbox("Gwooa!")

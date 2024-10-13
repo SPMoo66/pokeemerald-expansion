@@ -16,6 +16,7 @@ mapscripts RetiredMechanism_MapScripts {
 
 script BattleRegieleki {
 	lock
+	faceplayer
 	playmoncry(SPECIES_REGIELEKI, CRY_MODE_ENCOUNTER)
 	msgbox("Zizi zizizi.")
 	waitmoncry

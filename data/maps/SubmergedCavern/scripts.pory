@@ -32,6 +32,7 @@ mapscripts SubmergedCavern_MapScripts {
 
 script BattleChienPao {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, CHIEN_PAO)
 	playmoncry(SPECIES_CHIEN_PAO, CRY_MODE_ENCOUNTER)
 	msgbox("Graoo-wuuh!")
@@ -51,6 +52,7 @@ script BattleChienPao {
 
 script BattleChiYu {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, CHI_YU)
 	playmoncry(SPECIES_CHI_YU, CRY_MODE_ENCOUNTER)
 	msgbox("Di-tiing wuh!")
@@ -70,6 +72,7 @@ script BattleChiYu {
 
 script BattleTingLu {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, TING_LU)
 	playmoncry(SPECIES_TING_LU, CRY_MODE_ENCOUNTER)
 	msgbox("Aouu-wooouh!")
@@ -89,6 +92,7 @@ script BattleTingLu {
 
 script BattleWoChien {
 	lock
+	faceplayer
 	setvar (VAR_LAST_TALKED, WO_CHIEN)
 	playmoncry(SPECIES_WO_CHIEN, CRY_MODE_ENCOUNTER)
 	msgbox("Greu-wuuu!")

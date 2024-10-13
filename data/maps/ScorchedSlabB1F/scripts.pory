@@ -16,6 +16,7 @@ mapscripts ScorchedSlabB1F_MapScripts {
 
 script BattleHeatran {
 	lock
+	faceplayer
 	playmoncry(SPECIES_HEATRAN, CRY_MODE_ENCOUNTER)
 	msgbox("Gwogobo gwobobobo!")
 	waitmoncry

@@ -50,113 +50,119 @@ BattleMesprit::
 # 28 "data/maps/NamelessCavern/scripts.pory"
 	lock
 # 29 "data/maps/NamelessCavern/scripts.pory"
-	setvar VAR_LAST_TALKED, 1
+	faceplayer
 # 30 "data/maps/NamelessCavern/scripts.pory"
-	playmoncry SPECIES_MESPRIT, CRY_MODE_ENCOUNTER
+	setvar VAR_LAST_TALKED, 1
 # 31 "data/maps/NamelessCavern/scripts.pory"
-	msgbox BattleMesprit_Text_0
+	playmoncry SPECIES_MESPRIT, CRY_MODE_ENCOUNTER
 # 32 "data/maps/NamelessCavern/scripts.pory"
-	waitmoncry
+	msgbox BattleMesprit_Text_0
 # 33 "data/maps/NamelessCavern/scripts.pory"
-	seteventmon SPECIES_MESPRIT, 40
+	waitmoncry
 # 34 "data/maps/NamelessCavern/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_MESPRIT, 40
 # 35 "data/maps/NamelessCavern/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 36 "data/maps/NamelessCavern/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 37 "data/maps/NamelessCavern/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	waitstate
 # 38 "data/maps/NamelessCavern/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 39 "data/maps/NamelessCavern/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 40 "data/maps/NamelessCavern/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleMesprit_2
 BattleMesprit_1:
-# 42 "data/maps/NamelessCavern/scripts.pory"
+# 43 "data/maps/NamelessCavern/scripts.pory"
 	release
 	end
 
 BattleMesprit_2:
-# 40 "data/maps/NamelessCavern/scripts.pory"
+# 41 "data/maps/NamelessCavern/scripts.pory"
 	setflag FLAG_CAUGHT_MESPRIT
 	goto BattleMesprit_1
 
 
 BattleUxie::
-# 47 "data/maps/NamelessCavern/scripts.pory"
-	lock
 # 48 "data/maps/NamelessCavern/scripts.pory"
-	setvar VAR_LAST_TALKED, 2
+	lock
 # 49 "data/maps/NamelessCavern/scripts.pory"
-	playmoncry SPECIES_UXIE, CRY_MODE_ENCOUNTER
+	faceplayer
 # 50 "data/maps/NamelessCavern/scripts.pory"
-	msgbox BattleMesprit_Text_0
+	setvar VAR_LAST_TALKED, 2
 # 51 "data/maps/NamelessCavern/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_UXIE, CRY_MODE_ENCOUNTER
 # 52 "data/maps/NamelessCavern/scripts.pory"
-	seteventmon SPECIES_UXIE, 40
+	msgbox BattleMesprit_Text_0
 # 53 "data/maps/NamelessCavern/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	waitmoncry
 # 54 "data/maps/NamelessCavern/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	seteventmon SPECIES_UXIE, 40
 # 55 "data/maps/NamelessCavern/scripts.pory"
-	waitstate
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 56 "data/maps/NamelessCavern/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
 # 57 "data/maps/NamelessCavern/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	waitstate
 # 58 "data/maps/NamelessCavern/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 59 "data/maps/NamelessCavern/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 60 "data/maps/NamelessCavern/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleUxie_2
 BattleUxie_1:
-# 61 "data/maps/NamelessCavern/scripts.pory"
+# 63 "data/maps/NamelessCavern/scripts.pory"
 	release
 	end
 
 BattleUxie_2:
-# 59 "data/maps/NamelessCavern/scripts.pory"
+# 61 "data/maps/NamelessCavern/scripts.pory"
 	setflag FLAG_CAUGHT_UXIE
 	goto BattleUxie_1
 
 
 BattleAzelf::
-# 66 "data/maps/NamelessCavern/scripts.pory"
-	lock
-# 67 "data/maps/NamelessCavern/scripts.pory"
-	setvar VAR_LAST_TALKED, 3
 # 68 "data/maps/NamelessCavern/scripts.pory"
-	playmoncry SPECIES_AZELF, CRY_MODE_ENCOUNTER
+	lock
 # 69 "data/maps/NamelessCavern/scripts.pory"
-	msgbox BattleMesprit_Text_0
+	faceplayer
 # 70 "data/maps/NamelessCavern/scripts.pory"
-	waitmoncry
+	setvar VAR_LAST_TALKED, 3
 # 71 "data/maps/NamelessCavern/scripts.pory"
-	seteventmon SPECIES_AZELF, 40
+	playmoncry SPECIES_AZELF, CRY_MODE_ENCOUNTER
 # 72 "data/maps/NamelessCavern/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	msgbox BattleMesprit_Text_0
 # 73 "data/maps/NamelessCavern/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	waitmoncry
 # 74 "data/maps/NamelessCavern/scripts.pory"
-	waitstate
+	seteventmon SPECIES_AZELF, 40
 # 75 "data/maps/NamelessCavern/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 76 "data/maps/NamelessCavern/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	special BattleSetup_StartLegendaryBattle
 # 77 "data/maps/NamelessCavern/scripts.pory"
+	waitstate
+# 78 "data/maps/NamelessCavern/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 79 "data/maps/NamelessCavern/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 80 "data/maps/NamelessCavern/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleAzelf_2
 BattleAzelf_1:
-# 80 "data/maps/NamelessCavern/scripts.pory"
+# 83 "data/maps/NamelessCavern/scripts.pory"
 	release
 	end
 
 BattleAzelf_2:
-# 78 "data/maps/NamelessCavern/scripts.pory"
+# 81 "data/maps/NamelessCavern/scripts.pory"
 	setflag FLAG_CAUGHT_AZELF
 	goto BattleAzelf_1
 
 
 BattleMesprit_Text_0:
-# 31 "data/maps/NamelessCavern/scripts.pory"
+# 32 "data/maps/NamelessCavern/scripts.pory"
 	.string "Gwooa!$"

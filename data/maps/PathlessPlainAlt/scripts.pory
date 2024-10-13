@@ -1,0 +1,89 @@
+const IRON_CROWN = 1
+const IRON_BOULDER = 2
+const IRON_LEAVES = 3
+
+mapscripts PathlessPlainAlt_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if(flag(FLAG_CAUGHT_IRON_CROWN)) {
+			setflag (FLAG_TEMP_2)
+			removeobject(IRON_CROWN)
+		}
+		elif(flag(FLAG_CAUGHT_IRON_BOULDER)) {
+			setflag (FLAG_TEMP_3)
+			removeobject(IRON_BOULDER)
+		}
+		elif(flag(FLAG_CAUGHT_IRON_LEAVES)) {
+			setflag (FLAG_TEMP_4)
+			removeobject(IRON_LEAVES)
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(VAR_LAST_TALKED)
+		}
+	}
+}
+
+script PathlessPlainAlt_Portal {
+	warp(MAP_PATHLESS_PLAIN, 0)
+}
+
+script BattleIronCrown {
+	lock
+	faceplayer
+	setvar (VAR_LAST_TALKED, IRON_CROWN)
+	playmoncry(SPECIES_IRON_CROWN, CRY_MODE_ENCOUNTER)
+	msgbox("Kawbraa!")
+	waitmoncry
+	seteventmon(SPECIES_IRON_CROWN, 40)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_IRON_CROWN)
+	}
+	release
+	end
+}
+
+script BattleIronBoulder {
+	lock
+	faceplayer
+	setvar (VAR_LAST_TALKED, IRON_BOULDER)
+	playmoncry(SPECIES_IRON_BOULDER, CRY_MODE_ENCOUNTER)
+	msgbox("Gurooooohhh!")
+	waitmoncry
+	seteventmon(SPECIES_IRON_BOULDER, 40)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_IRON_BOULDER)
+	}
+	release
+	end
+}
+
+script BattleIronLeaves {
+	lock
+	faceplayer
+	setvar (VAR_LAST_TALKED, IRON_LEAVES)
+	playmoncry(SPECIES_IRON_LEAVES, CRY_MODE_ENCOUNTER)
+	msgbox("Aeepraaa!")
+	waitmoncry
+	seteventmon(SPECIES_IRON_LEAVES, 40)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_IRON_LEAVES)
+	}
+	release
+	end
+}

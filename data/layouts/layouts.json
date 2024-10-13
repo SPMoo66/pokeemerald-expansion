@@ -4640,6 +4640,16 @@
       "secondary_tileset": "gTileset_EverGrande",
       "border_filepath": "data/layouts/PathlessPlain/border.bin",
       "blockdata_filepath": "data/layouts/PathlessPlain/map.bin"
+    },
+    {
+      "id": "LAYOUT_PATHLESS_PLAIN_ALT",
+      "name": "PathlessPlainAlt_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/PathlessPlainAlt/border.bin",
+      "blockdata_filepath": "data/layouts/PathlessPlainAlt/map.bin"
     }
   ]
 }

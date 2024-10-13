@@ -606,7 +606,8 @@
     "NavelRock_Down11",
     "NavelRock_Bottom",
     "TrainerHill_Elevator",
-    "CrescentIsle"
+    "CrescentIsle",
+    "PathlessPlainAlt"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

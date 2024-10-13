@@ -55,174 +55,180 @@ PathlessPlain_MapScripts_MAP_SCRIPT_ON_RESUME_1:
 	return
 
 
-BattleCobalion::
+PathlessPlain_Portal::
 # 33 "data/maps/PathlessPlain/scripts.pory"
-	lock
-# 34 "data/maps/PathlessPlain/scripts.pory"
-	faceplayer
-# 35 "data/maps/PathlessPlain/scripts.pory"
-	setvar VAR_LAST_TALKED, 1
-# 36 "data/maps/PathlessPlain/scripts.pory"
-	playmoncry SPECIES_COBALION, CRY_MODE_ENCOUNTER
+	warp MAP_PATHLESS_PLAIN_ALT, 0
+	return
+
+
+BattleCobalion::
 # 37 "data/maps/PathlessPlain/scripts.pory"
-	msgbox BattleCobalion_Text_0
+	lock
 # 38 "data/maps/PathlessPlain/scripts.pory"
-	waitmoncry
+	faceplayer
 # 39 "data/maps/PathlessPlain/scripts.pory"
-	seteventmon SPECIES_COBALION, 40
+	setvar VAR_LAST_TALKED, 1
 # 40 "data/maps/PathlessPlain/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	playmoncry SPECIES_COBALION, CRY_MODE_ENCOUNTER
 # 41 "data/maps/PathlessPlain/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	msgbox BattleCobalion_Text_0
 # 42 "data/maps/PathlessPlain/scripts.pory"
-	waitstate
+	waitmoncry
 # 43 "data/maps/PathlessPlain/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_COBALION, 40
 # 44 "data/maps/PathlessPlain/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 45 "data/maps/PathlessPlain/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 46 "data/maps/PathlessPlain/scripts.pory"
+	waitstate
+# 47 "data/maps/PathlessPlain/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 48 "data/maps/PathlessPlain/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 49 "data/maps/PathlessPlain/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleCobalion_2
 BattleCobalion_1:
-# 48 "data/maps/PathlessPlain/scripts.pory"
+# 52 "data/maps/PathlessPlain/scripts.pory"
 	release
 	end
 
 BattleCobalion_2:
-# 46 "data/maps/PathlessPlain/scripts.pory"
+# 50 "data/maps/PathlessPlain/scripts.pory"
 	setflag FLAG_CAUGHT_COBALION
 	goto BattleCobalion_1
 
 
 BattleTerrakion::
-# 53 "data/maps/PathlessPlain/scripts.pory"
-	lock
-# 54 "data/maps/PathlessPlain/scripts.pory"
-	faceplayer
-# 55 "data/maps/PathlessPlain/scripts.pory"
-	setvar VAR_LAST_TALKED, 2
-# 56 "data/maps/PathlessPlain/scripts.pory"
-	playmoncry SPECIES_TERRAKION, CRY_MODE_ENCOUNTER
 # 57 "data/maps/PathlessPlain/scripts.pory"
-	msgbox BattleTerrakion_Text_0
+	lock
 # 58 "data/maps/PathlessPlain/scripts.pory"
-	waitmoncry
+	faceplayer
 # 59 "data/maps/PathlessPlain/scripts.pory"
-	seteventmon SPECIES_TERRAKION, 40
+	setvar VAR_LAST_TALKED, 2
 # 60 "data/maps/PathlessPlain/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	playmoncry SPECIES_TERRAKION, CRY_MODE_ENCOUNTER
 # 61 "data/maps/PathlessPlain/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	msgbox BattleTerrakion_Text_0
 # 62 "data/maps/PathlessPlain/scripts.pory"
-	waitstate
+	waitmoncry
 # 63 "data/maps/PathlessPlain/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_TERRAKION, 40
 # 64 "data/maps/PathlessPlain/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 65 "data/maps/PathlessPlain/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 66 "data/maps/PathlessPlain/scripts.pory"
+	waitstate
+# 67 "data/maps/PathlessPlain/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 68 "data/maps/PathlessPlain/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 69 "data/maps/PathlessPlain/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleTerrakion_2
 BattleTerrakion_1:
-# 68 "data/maps/PathlessPlain/scripts.pory"
+# 72 "data/maps/PathlessPlain/scripts.pory"
 	release
 	end
 
 BattleTerrakion_2:
-# 66 "data/maps/PathlessPlain/scripts.pory"
+# 70 "data/maps/PathlessPlain/scripts.pory"
 	setflag FLAG_CAUGHT_TERRAKION
 	goto BattleTerrakion_1
 
 
 BattleVirizion::
-# 73 "data/maps/PathlessPlain/scripts.pory"
-	lock
-# 74 "data/maps/PathlessPlain/scripts.pory"
-	faceplayer
-# 75 "data/maps/PathlessPlain/scripts.pory"
-	setvar VAR_LAST_TALKED, 3
-# 76 "data/maps/PathlessPlain/scripts.pory"
-	playmoncry SPECIES_VIRIZION, CRY_MODE_ENCOUNTER
 # 77 "data/maps/PathlessPlain/scripts.pory"
-	msgbox BattleVirizion_Text_0
+	lock
 # 78 "data/maps/PathlessPlain/scripts.pory"
-	waitmoncry
+	faceplayer
 # 79 "data/maps/PathlessPlain/scripts.pory"
-	seteventmon SPECIES_VIRIZION, 40
+	setvar VAR_LAST_TALKED, 3
 # 80 "data/maps/PathlessPlain/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	playmoncry SPECIES_VIRIZION, CRY_MODE_ENCOUNTER
 # 81 "data/maps/PathlessPlain/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	msgbox BattleVirizion_Text_0
 # 82 "data/maps/PathlessPlain/scripts.pory"
-	waitstate
+	waitmoncry
 # 83 "data/maps/PathlessPlain/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_VIRIZION, 40
 # 84 "data/maps/PathlessPlain/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 85 "data/maps/PathlessPlain/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 86 "data/maps/PathlessPlain/scripts.pory"
+	waitstate
+# 87 "data/maps/PathlessPlain/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 88 "data/maps/PathlessPlain/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 89 "data/maps/PathlessPlain/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleVirizion_2
 BattleVirizion_1:
-# 88 "data/maps/PathlessPlain/scripts.pory"
+# 92 "data/maps/PathlessPlain/scripts.pory"
 	release
 	end
 
 BattleVirizion_2:
-# 86 "data/maps/PathlessPlain/scripts.pory"
+# 90 "data/maps/PathlessPlain/scripts.pory"
 	setflag FLAG_CAUGHT_VIRIZION
 	goto BattleVirizion_1
 
 
 BattleKeldeo::
-# 93 "data/maps/PathlessPlain/scripts.pory"
-	lock
-# 94 "data/maps/PathlessPlain/scripts.pory"
-	faceplayer
-# 95 "data/maps/PathlessPlain/scripts.pory"
-	setvar VAR_LAST_TALKED, 4
-# 96 "data/maps/PathlessPlain/scripts.pory"
-	playmoncry SPECIES_KELDEO, CRY_MODE_ENCOUNTER
 # 97 "data/maps/PathlessPlain/scripts.pory"
-	msgbox BattleKeldeo_Text_0
+	lock
 # 98 "data/maps/PathlessPlain/scripts.pory"
-	waitmoncry
+	faceplayer
 # 99 "data/maps/PathlessPlain/scripts.pory"
-	seteventmon SPECIES_KELDEO, 40
+	setvar VAR_LAST_TALKED, 4
 # 100 "data/maps/PathlessPlain/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	playmoncry SPECIES_KELDEO, CRY_MODE_ENCOUNTER
 # 101 "data/maps/PathlessPlain/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	msgbox BattleKeldeo_Text_0
 # 102 "data/maps/PathlessPlain/scripts.pory"
-	waitstate
+	waitmoncry
 # 103 "data/maps/PathlessPlain/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_KELDEO, 40
 # 104 "data/maps/PathlessPlain/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 105 "data/maps/PathlessPlain/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 106 "data/maps/PathlessPlain/scripts.pory"
+	waitstate
+# 107 "data/maps/PathlessPlain/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 108 "data/maps/PathlessPlain/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 109 "data/maps/PathlessPlain/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleKeldeo_2
 BattleKeldeo_1:
-# 108 "data/maps/PathlessPlain/scripts.pory"
+# 112 "data/maps/PathlessPlain/scripts.pory"
 	release
 	end
 
 BattleKeldeo_2:
-# 106 "data/maps/PathlessPlain/scripts.pory"
+# 110 "data/maps/PathlessPlain/scripts.pory"
 	setflag FLAG_CAUGHT_KELDEO
 	goto BattleKeldeo_1
 
 
 BattleCobalion_Text_0:
-# 37 "data/maps/PathlessPlain/scripts.pory"
+# 41 "data/maps/PathlessPlain/scripts.pory"
 	.string "Kawbraa!$"
 
 BattleTerrakion_Text_0:
-# 57 "data/maps/PathlessPlain/scripts.pory"
+# 61 "data/maps/PathlessPlain/scripts.pory"
 	.string "Gurooooohhh!$"
 
 BattleVirizion_Text_0:
-# 77 "data/maps/PathlessPlain/scripts.pory"
+# 81 "data/maps/PathlessPlain/scripts.pory"
 	.string "Aeepraaa!$"
 
 BattleKeldeo_Text_0:
-# 97 "data/maps/PathlessPlain/scripts.pory"
+# 101 "data/maps/PathlessPlain/scripts.pory"
 	.string "Rarurarii!$"

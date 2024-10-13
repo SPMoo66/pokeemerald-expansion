@@ -29,6 +29,10 @@ mapscripts PathlessPlain_MapScripts {
 	}
 }
 
+script PathlessPlain_Portal {
+	warp(MAP_PATHLESS_PLAIN_ALT, 0)
+}
+
 script BattleCobalion {
 	lock
 	faceplayer

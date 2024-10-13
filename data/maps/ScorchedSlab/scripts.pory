@@ -1,0 +1,12 @@
+mapscripts ScorchedSlab_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_LANDMARK_SCORCHED_SLAB)
+	}
+	MAP_SCRIPT_ON_LOAD {
+		if (var(VAR_SKY_PILLAR_STATE) >= 2) {
+			setmetatile (8, 2, METATILE_Cave_DiamondFloor, FALSE)
+			setmetatile (8, 3, METATILE_Cave_DiamondFloor, FALSE)
+			setmetatile (9, 4, METATILE_Cave_DiamondFloor, FALSE)
+		}
+	}
+}

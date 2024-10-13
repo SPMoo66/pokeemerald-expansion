@@ -1746,18 +1746,19 @@ u8 TypeEffectiveness(u8 targetId, u32 battler)
 
 static void MoveSelectionDisplayMoveTypeDoubles(u8 targetId, u32 battler)
 {
-	u8 *txtPtr;
+	u8 *txtPtr, *end;
 	struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct*)(&gBattleResources->bufferA[battler][4]);
 
 	txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
-	txtPtr[0] = EXT_CTRL_CODE_BEGIN;
+/*	txtPtr[0] = EXT_CTRL_CODE_BEGIN;
 	txtPtr++;
 	txtPtr[0] = 6;
 	txtPtr++;
 	txtPtr[0] = 1;
 	txtPtr++;
-
-	StringCopy(txtPtr, gTypesInfo[gMovesInfo[moveInfo->moves[gMoveSelectionCursor[battler]]].type].name);
+*/
+	end = StringCopy(txtPtr, gTypesInfo[gMovesInfo[moveInfo->moves[gMoveSelectionCursor[battler]]].type].name);
+    PrependFontIdToFit(txtPtr, end, FONT_NORMAL, WindowWidthPx(B_WIN_MOVE_TYPE) - 25);
 	BattlePutTextOnWindow(gDisplayedStringBattle, TypeEffectiveness(targetId, battler));
 }
 

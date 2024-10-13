@@ -58,7 +58,6 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CyclingTria
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CyclingTriathleteF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nurse;
 
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ItemBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ItemBallBlue;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BerryTree;
@@ -324,6 +323,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M] =     &gObjectEventGraphicsInfo_CyclingTriathleteM,
     [OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F] =     &gObjectEventGraphicsInfo_CyclingTriathleteF,
     [OBJ_EVENT_GFX_NURSE] =                    &gObjectEventGraphicsInfo_Nurse,
+    [OBJ_EVENT_GFX_ITEM_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_ITEM_BALL_BLUE] =           &gObjectEventGraphicsInfo_ItemBallBlue,
 
     [OBJ_EVENT_GFX_BERRY_TREE] =               &gObjectEventGraphicsInfo_BerryTree,

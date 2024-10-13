@@ -613,10 +613,10 @@ static void LoadMapNamePopUpWindowBg(void)
                 if (OW_POPUP_BW_COLOR == OW_POPUP_BW_COLOR_WHITE)
                     LoadPalette(sMapPopUpTilesPalette_BW_White, BG_PLTT_ID(14), sizeof(sMapPopUpTilesPalette_BW_White));
                 else
-                    LoadPalette(sMapPopUpTilesPalette_BW_Black, BG_PLTT_ID(14), sizeof(sMapPopUpTilesPalette_BW_Black));
+                    LoadPalette(sMapPopUpTilesPalette_Black, BG_PLTT_ID(14), sizeof(sMapPopUpTilesPalette_Black));
 
-                CopyToWindowPixelBuffer(popupWindowId, sMapPopUpTilesPrimary_BW, sizeof(sMapPopUpTilesPrimary_BW), 0);
-                CopyToWindowPixelBuffer(secondaryPopUpWindowId, sMapPopUpTilesSecondary_BW, sizeof(sMapPopUpTilesSecondary_BW), 0);
+                CopyToWindowPixelBuffer(popupWindowId, sMapPopUpTilesPrimary_Black, sizeof(sMapPopUpTilesPrimary_Black), 0);
+                CopyToWindowPixelBuffer(secondaryPopUpWindowId, sMapPopUpTilesSecondary_Black, sizeof(sMapPopUpTilesSecondary_Black), 0);
                 break;
         }
 

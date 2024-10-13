@@ -7,19 +7,23 @@ EventScript_CutTree::
 	setfieldeffectargument 0, VAR_RESULT
 	dofieldeffect FLDEFF_USE_CUT_ON_TREE
 	waitstate
-EventScript_CutTreeDown:: @ fallthrough
-	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
-	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
-	applymovement VAR_LAST_TALKED, Movement_CutTreeDown
-	waitmovement 0
-	removeobject VAR_LAST_TALKED
-	releaseall
+	goto EventScript_CutTreeDown
 	end
 
 @ Use cut from party menu
 EventScript_UseCut::
 	lockall
-	goto EventScript_CutTreeCommon
+	dofieldeffect FLDEFF_USE_CUT_ON_TREE
+	waitstate
+	goto EventScript_CutTreeDown
+	end
+
+EventScript_CutTreeDown::
+	applymovement VAR_LAST_TALKED, Movement_CutTreeDown
+	waitmovement 0
+	removeobject VAR_LAST_TALKED
+	releaseall
+	end
 
 Movement_CutTreeDown:
 	cut_tree
@@ -37,11 +41,6 @@ Text_CantCut:
 	.string "This tree looks like it can be\n"
 	.string "Cut down!$"
 
-@ Use rock smash from party menu
-EventScript_UseRockSmash::
-	lockall
-	goto EventScript_RockSmashCommon
-
 @ Interact with smashable rock
 EventScript_RockSmash::
 	lockall
@@ -53,9 +52,18 @@ EventScript_RockSmash::
 	goto_if_eq VAR_RESULT, NO, EventScript_CancelSmash
 	dofieldeffect FLDEFF_USE_ROCK_SMASH
 	waitstate
-EventScript_SmashRock:: @ fallthrough
-	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
-	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
+	goto EventScript_SmashRock
+	end
+
+@ Use rock smash from party menu
+EventScript_UseRockSmash::
+	lockall
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashRock
+	end
+
+EventScript_SmashRock::
 	applymovement VAR_LAST_TALKED, Movement_SmashRock
 	waitmovement 0
 	removeobject VAR_LAST_TALKED
@@ -66,6 +74,32 @@ EventScript_SmashRock:: @ fallthrough
 	waitstate
 	releaseall
 	end
+
+EventScript_EndSmash::
+	releaseall
+	end
+
+Movement_SmashRock:
+	rock_smash_break
+	step_end
+
+EventScript_CantSmashRock::
+	msgbox Text_CantSmash, MSGBOX_DEFAULT
+	releaseall
+	end
+
+EventScript_CancelSmash::
+	closemessage
+	releaseall
+	end
+
+Text_WantToSmash:
+	.string "This rock appears to be breakable.\n"
+	.string "Would you like to use Rock Smash?$"
+
+Text_CantSmash:
+	.string "It's a rugged rock, but a Pokémon\n"
+	.string "may be able to smash it.$"
 
 EventScript_FollowerFieldMove:
 	getdirectiontoface VAR_0x8005, OBJ_EVENT_ID_FOLLOWER, OBJ_EVENT_ID_PLAYER
@@ -142,10 +176,6 @@ EventScript_FollowerJumpWest:
 	waitmovement 0
 	return
 
-EventScript_EndSmash::
-	releaseall
-	end
-
 Movement_WalkUp:
 	walk_up
 	step_end
@@ -177,28 +207,6 @@ Movement_WalkLeft:
 Movement_JumpLeft:
 	jump_in_place_left
 	step_end
-
-Movement_SmashRock:
-	rock_smash_break
-	step_end
-
-EventScript_CantSmashRock::
-	msgbox Text_CantSmash, MSGBOX_DEFAULT
-	releaseall
-	end
-
-EventScript_CancelSmash::
-	closemessage
-	releaseall
-	end
-
-Text_WantToSmash:
-	.string "This rock appears to be breakable.\n"
-	.string "Would you like to use Rock Smash?$"
-
-Text_CantSmash:
-	.string "It's a rugged rock, but a Pokémon\n"
-	.string "may be able to smash it.$"
 
 EventScript_StrengthBoulder::
 	lockall

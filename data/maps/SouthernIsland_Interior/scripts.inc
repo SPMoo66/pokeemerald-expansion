@@ -32,7 +32,7 @@ SouthernIsland_OnTransition::
 # 31 "data/maps/SouthernIsland_Interior/scripts.pory"
 	goto_if_unset FLAG_CAUGHT_LATIAS_OR_LATIOS, SouthernIsland_OnTransition_11
 # 36 "data/maps/SouthernIsland_Interior/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_LATIAS
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SPECIES ( LATIAS )
 # 37 "data/maps/SouthernIsland_Interior/scripts.pory"
 	setvar VAR_TEMP_4, SPECIES_LATIAS
 # 38 "data/maps/SouthernIsland_Interior/scripts.pory"
@@ -51,7 +51,7 @@ SouthernIsland_OnTransition_2:
 # 20 "data/maps/SouthernIsland_Interior/scripts.pory"
 	goto_if_unset FLAG_CAUGHT_LATIAS_OR_LATIOS, SouthernIsland_OnTransition_8
 # 26 "data/maps/SouthernIsland_Interior/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_LATIOS
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SPECIES ( LATIOS )
 # 27 "data/maps/SouthernIsland_Interior/scripts.pory"
 	setvar VAR_TEMP_4, SPECIES_LATIOS
 	goto SouthernIsland_OnTransition_1
@@ -63,7 +63,7 @@ SouthernIsland_OnTransition_5:
 
 SouthernIsland_OnTransition_8:
 # 21 "data/maps/SouthernIsland_Interior/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_LATIAS
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SPECIES ( LATIAS )
 # 22 "data/maps/SouthernIsland_Interior/scripts.pory"
 	setvar VAR_TEMP_4, SPECIES_LATIAS
 # 23 "data/maps/SouthernIsland_Interior/scripts.pory"
@@ -72,7 +72,7 @@ SouthernIsland_OnTransition_8:
 
 SouthernIsland_OnTransition_11:
 # 32 "data/maps/SouthernIsland_Interior/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_LATIOS
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SPECIES ( LATIOS )
 # 33 "data/maps/SouthernIsland_Interior/scripts.pory"
 	setvar VAR_TEMP_4, SPECIES_LATIOS
 	goto SouthernIsland_OnTransition_1

@@ -519,7 +519,6 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_AquaMemberF,           OBJ_EVENT_PAL_TAG_AQUA_MEMBER_F},
     {gObjectEventPal_MagmaMemberM,          OBJ_EVENT_PAL_TAG_MAGMA_MEMBER_M},
     {gObjectEventPal_MagmaMemberF,          OBJ_EVENT_PAL_TAG_MAGMA_MEMBER_F},
-    {gObjectEventPal_PichuSpikyEared,       OBJ_EVENT_PAL_TAG_PICHUSPIKYEARED},
     {gObjectEventPal_Baron,                 OBJ_EVENT_PAL_TAG_BARON},
     {gObjectEventPal_Harper,                OBJ_EVENT_PAL_TAG_HARPER},
     {gObjectEventPal_Jakson,                OBJ_EVENT_PAL_TAG_JAKSON},

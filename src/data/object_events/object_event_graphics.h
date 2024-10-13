@@ -408,9 +408,6 @@ const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/h
 const u32 gFieldEffectObjectPic_CaveDust[] = INCBIN_U32("graphics/field_effects/pics/cave_dust.4bpp");
 const u16 gFieldEffectObjectPalette_CaveDust[] = INCBIN_U16("graphics/field_effects/palettes/cave_dust.gbapal");
 
-const u32 gObjectEventPic_PichuSpikyEared[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/pichuspikyeared.4bpp");
-const u16 gObjectEventPal_PichuSpikyEared[] = INCBIN_U16("graphics/object_events/palettes/pichuspikyeared.gbapal");
-
 const u32 gObjectEventPic_Baron[] = INCBIN_U32("graphics/object_events/pics/people/baron.4bpp");
 const u16 gObjectEventPal_Baron[] = INCBIN_U16("graphics/object_events/palettes/baron.gbapal");
 const u32 gObjectEventPic_Harper[] = INCBIN_U32("graphics/object_events/pics/people/harper.4bpp");

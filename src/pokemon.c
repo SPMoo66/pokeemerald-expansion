@@ -5599,7 +5599,7 @@ u8 GetMoveRelearnerMoves(struct Pokemon *mon, u16 *moves)
         learnedMoves[i] = GetMonData(mon, MON_DATA_MOVE1 + i, 0);
     
     // Egg move tutor.
-    if (FlagGet(FLAG_EGG_MOVE_TUTOR))
+/*    if (FlagGet(FLAG_EGG_MOVE_TUTOR))
     {
         // Species to pull egg moves from.
         species = GetBaseForm(species);
@@ -5630,7 +5630,7 @@ u8 GetMoveRelearnerMoves(struct Pokemon *mon, u16 *moves)
         return numMoves;
     }
     // Level up move tutor
-    else
+    else*/
     {
         for (i = 0; i < MAX_LEVEL_UP_MOVES; i++)
         {
@@ -5691,7 +5691,7 @@ u8 GetNumberOfRelearnableMoves(struct Pokemon *mon)
 
 
     // Egg move tutor.
-	if (FlagGet(FLAG_EGG_MOVE_TUTOR))
+/*	if (FlagGet(FLAG_EGG_MOVE_TUTOR))
 	{
 		// Species to pull egg moves from.
 		species = GetBaseForm(species);
@@ -5722,7 +5722,7 @@ u8 GetNumberOfRelearnableMoves(struct Pokemon *mon)
         return numMoves;
 	}
 	// Level up move tutor
-	else
+	else*/
     {
         for (i = 0; i < MAX_LEVEL_UP_MOVES; i++)
         {

@@ -18,22 +18,22 @@ script SouthernIsland_OnResume {
 script SouthernIsland_OnTransition {
 	if (var(VAR_ROAMER_POKEMON) == 0) {
 		if (flag(FLAG_CAUGHT_LATIAS_OR_LATIOS) == false) {     // This checks if the first Lati was caught
-			setvar (VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_LATIAS)
+			setvar (VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SPECIES(LATIAS))
 			setvar (VAR_TEMP_4, SPECIES_LATIAS)
 			setflag (FLAG_TEMP_3)
 		}
 		else {
-			setvar (VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_LATIOS)
+			setvar (VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SPECIES(LATIOS))
 			setvar (VAR_TEMP_4, SPECIES_LATIOS)
 		}
 	}
 	else {
 		if (flag(FLAG_CAUGHT_LATIAS_OR_LATIOS) == false) {     // Same as above
-			setvar (VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_LATIOS)
+			setvar (VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SPECIES(LATIOS))
 			setvar (VAR_TEMP_4, SPECIES_LATIOS)
 		}
 		else {
-			setvar (VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_LATIAS)
+			setvar (VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SPECIES(LATIAS))
 			setvar (VAR_TEMP_4, SPECIES_LATIAS)
 			setflag (FLAG_TEMP_3)
 		}

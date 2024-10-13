@@ -67,7 +67,7 @@
       "flag": "FLAG_TEMP_12"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HEATRAN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HEATRAN)",
       "x": 9,
       "y": 24,
       "elevation": 0,

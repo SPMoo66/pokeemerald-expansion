@@ -13138,20 +13138,20 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_ContestPass,
     },
 
-    [ITEM_PARCEL] =
+    [ITEM_WISH_TAG] =
     {
-        .name = _("Parcel"),
+        .name = _("Wish Tag"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A parcel for Prof.\n"
-            "Oak from a Pokémon\n"
-            "Mart's clerk."),
-        .importance = 2,
+            "In some place, this\n"
+            "tag may be used\n"
+            "to grant a wish."),
+        .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_Parcel,
-        .iconPalette = gItemIconPalette_Parcel,
+        .iconPic = gItemIcon_WishTag,
+        .iconPalette = gItemIconPalette_WishTag,
     },
 
     [ITEM_SECRET_KEY] =

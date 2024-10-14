@@ -1921,8 +1921,8 @@ const u32 gItemIconPalette_MagmaEmblem[] = INCBIN_U32("graphics/items/icon_palet
 const u32 gItemIcon_ContestPass[] = INCBIN_U32("graphics/items/icons/contest_pass.4bpp.lz");
 const u32 gItemIconPalette_ContestPass[] = INCBIN_U32("graphics/items/icon_palettes/contest_pass.gbapal.lz");
 
-const u32 gItemIcon_Parcel[] = INCBIN_U32("graphics/items/icons/parcel.4bpp.lz");
-const u32 gItemIconPalette_Parcel[] = INCBIN_U32("graphics/items/icon_palettes/parcel.gbapal.lz");
+const u32 gItemIcon_WishTag[] = INCBIN_U32("graphics/items/icons/wish_tag.4bpp.lz");
+const u32 gItemIconPalette_WishTag[] = INCBIN_U32("graphics/items/icon_palettes/wish_tag.gbapal.lz");
 
 const u32 gItemIcon_SecretKey[] = INCBIN_U32("graphics/items/icons/secret_key.4bpp.lz");
 const u32 gItemIconPalette_SecretKey[] = INCBIN_U32("graphics/items/icon_palettes/secret_key.gbapal.lz");

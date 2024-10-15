@@ -733,7 +733,7 @@ MossdeepCity_Text_SpecialSpaceCenterRock:
 # 367 "data/maps/MossdeepCity/scripts.pory"
 	.string "Do you wish upon a star?\p"
 # 368 "data/maps/MossdeepCity/scripts.pory"
-	.string "I use a wish tag to make it happen.\n"
+	.string "I use a Wish Tag to make it happen.\n"
 # 369 "data/maps/MossdeepCity/scripts.pory"
 	.string "That's what I do.$"
 # 370 "data/maps/MossdeepCity/scripts.pory"
@@ -808,44 +808,153 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "People tell me the new Leader once\n"
 # 405 "data/maps/MossdeepCity/scripts.pory"
 	.string "mentored Wallace.$"
+# 406 "data/maps/MossdeepCity/scripts.pory"
+
+# 407 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_Movement_JirachiAppearance:
+# 408 "data/maps/MossdeepCity/scripts.pory"
+	walk_slow_down
+# 409 "data/maps/MossdeepCity/scripts.pory"
+	walk_slow_down
+# 410 "data/maps/MossdeepCity/scripts.pory"
+	walk_slow_down
+# 411 "data/maps/MossdeepCity/scripts.pory"
+	walk_slow_down
+# 412 "data/maps/MossdeepCity/scripts.pory"
+	step_end
 
 MossdeepCity_MapScripts::
-# 411 "data/maps/MossdeepCity/scripts.pory"
+# 419 "data/maps/MossdeepCity/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION
+# 425 "data/maps/MossdeepCity/scripts.pory"
+	map_script MAP_SCRIPT_ON_RESUME, MossdeepCity_MapScripts_MAP_SCRIPT_ON_RESUME
 	.byte 0
 
 MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION:
-# 412 "data/maps/MossdeepCity/scripts.pory"
+# 420 "data/maps/MossdeepCity/scripts.pory"
 	goto_if_set FLAG_SYS_WEATHER_CTRL, MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
-# 415 "data/maps/MossdeepCity/scripts.pory"
+# 423 "data/maps/MossdeepCity/scripts.pory"
 	setflag FLAG_TEMP_2
 	return
 
 MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
-# 413 "data/maps/MossdeepCity/scripts.pory"
+# 421 "data/maps/MossdeepCity/scripts.pory"
 	call Common_EventScript_SetAbnormalWeather
 	goto MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
+MossdeepCity_MapScripts_MAP_SCRIPT_ON_RESUME:
+# 426 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_set FLAG_SYS_CTRL_OBJ_DELETE, MossdeepCity_MapScripts_MAP_SCRIPT_ON_RESUME_1
+	return
 
-MossdeepCity_EventScript_WhiteRock::
-# 421 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_WhiteRock_Text_0, MSGBOX_SIGN
+MossdeepCity_MapScripts_MAP_SCRIPT_ON_RESUME_1:
+# 427 "data/maps/MossdeepCity/scripts.pory"
+	removeobject 18
 	return
 
 
+MossdeepCity_EventScript_WhiteRock::
+# 433 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_WhiteRock_Text_0, MSGBOX_SIGN
+# 434 "data/maps/MossdeepCity/scripts.pory"
+	checkitem ITEM_WISH_TAG
+# 435 "data/maps/MossdeepCity/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq MossdeepCity_EventScript_WhiteRock_3
+	return
+
+MossdeepCity_EventScript_WhiteRock_1:
+# 436 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_WhiteRock_Text_1, MSGBOX_YESNO
+# 437 "data/maps/MossdeepCity/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq MossdeepCity_EventScript_WhiteRock_7
+	return
+
+MossdeepCity_EventScript_WhiteRock_2:
+# 435 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_unset FLAG_CAUGHT_JIRACHI, MossdeepCity_EventScript_WhiteRock_1
+	return
+
+MossdeepCity_EventScript_WhiteRock_3:
+# 435 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_unset FLAG_TEMP_3, MossdeepCity_EventScript_WhiteRock_2
+	return
+
+MossdeepCity_EventScript_WhiteRock_7:
+# 438 "data/maps/MossdeepCity/scripts.pory"
+	clearflag FLAG_TEMP_2
+# 439 "data/maps/MossdeepCity/scripts.pory"
+	applymovement 8, Common_Movement_FaceUp
+# 440 "data/maps/MossdeepCity/scripts.pory"
+	waitmovement 0
+# 441 "data/maps/MossdeepCity/scripts.pory"
+	playse SE_PIN
+# 442 "data/maps/MossdeepCity/scripts.pory"
+	applymovement 8, Common_Movement_ExclamationMark
+# 443 "data/maps/MossdeepCity/scripts.pory"
+	waitmovement 0
+# 444 "data/maps/MossdeepCity/scripts.pory"
+	addobject 18
+# 445 "data/maps/MossdeepCity/scripts.pory"
+	applymovement 18, MossdeepCity_Movement_JirachiAppearance
+# 446 "data/maps/MossdeepCity/scripts.pory"
+	waitmovement 0
+# 447 "data/maps/MossdeepCity/scripts.pory"
+	setvar VAR_LAST_TALKED, 18
+# 448 "data/maps/MossdeepCity/scripts.pory"
+	playmoncry SPECIES_JIRACHI, CRY_MODE_ENCOUNTER
+# 449 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_WhiteRock_Text_2
+# 450 "data/maps/MossdeepCity/scripts.pory"
+	waitmoncry
+# 451 "data/maps/MossdeepCity/scripts.pory"
+	seteventmon SPECIES_JIRACHI, 50
+# 452 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+# 453 "data/maps/MossdeepCity/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 454 "data/maps/MossdeepCity/scripts.pory"
+	waitstate
+# 455 "data/maps/MossdeepCity/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 456 "data/maps/MossdeepCity/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 457 "data/maps/MossdeepCity/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq MossdeepCity_EventScript_WhiteRock_10
+MossdeepCity_EventScript_WhiteRock_9:
+# 460 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_TEMP_3
+	return
+
+MossdeepCity_EventScript_WhiteRock_10:
+# 458 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_CAUGHT_JIRACHI
+	goto MossdeepCity_EventScript_WhiteRock_9
+
+
 TrainerTipsDiveSprinting::
-# 425 "data/maps/MossdeepCity/scripts.pory"
+# 466 "data/maps/MossdeepCity/scripts.pory"
 	msgbox TrainerTipsDiveSprinting_Text_0, MSGBOX_SIGN
 	return
 
 
 MossdeepCity_EventScript_WhiteRock_Text_0:
-# 421 "data/maps/MossdeepCity/scripts.pory"
+# 433 "data/maps/MossdeepCity/scripts.pory"
 	.string "It's a white rock.$"
 
+MossdeepCity_EventScript_WhiteRock_Text_1:
+# 436 "data/maps/MossdeepCity/scripts.pory"
+	.string "Use the Wish Tag to make a wish?$"
+
+MossdeepCity_EventScript_WhiteRock_Text_2:
+# 449 "data/maps/MossdeepCity/scripts.pory"
+	.string "Shii?$"
+
 TrainerTipsDiveSprinting_Text_0:
-# 425 "data/maps/MossdeepCity/scripts.pory"
+# 466 "data/maps/MossdeepCity/scripts.pory"
 	.string "Trainer Tips\p"
 	.string "While diving, hold the A or B buttons to\n"
 	.string "move faster.$"

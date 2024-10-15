@@ -3,13 +3,14 @@ const MELOETTA = 1
 mapscripts VictoryRoad_2F_MapScripts {
 	MAP_SCRIPT_ON_RESUME {
 		setobjectxy (MELOETTA, 9, 0)
-		if(flag(FLAG_CAUGHT_MELOETTA)) {
-			removeobject(VAR_LAST_TALKED)
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(MELOETTA)
 		}
 	}
 	MAP_SCRIPT_ON_TRANSITION {
 		if(flag(FLAG_CAUGHT_MELOETTA)) {
 			setflag (FLAG_TEMP_2)
+			removeobject(MELOETTA)
 		}
 	}
 }
@@ -19,7 +20,6 @@ script BattleMeloetta {
 		lock
 		applymovement (MELOETTA, SkyPillar_Top_Movement_CameraPanDown)
 		waitmovement (0)
-		setvar (VAR_LAST_TALKED, MELOETTA)
 		playmoncry(SPECIES_MELOETTA, CRY_MODE_ENCOUNTER)
 		msgbox("Laaa-liii!!")
 		waitmoncry

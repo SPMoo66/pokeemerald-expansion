@@ -365,7 +365,7 @@ MossdeepCity_Text_SpecialSpaceCenterRock:
 	.string "their rockets to fly safely.\p"
 	.string "When you make a wish, what do you use?\n"
 	.string "Do you wish upon a star?\p"
-	.string "I use a wish tag to make it happen.\n"
+	.string "I use a Wish Tag to make it happen.\n"
 	.string "That's what I do.$"
 
 MossdeepCity_Text_GymSign:
@@ -403,8 +403,16 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "Leader come in.\p"
 	.string "People tell me the new Leader once\n"
 	.string "mentored Wallace.$"
+
+MossdeepCity_Movement_JirachiAppearance:
+	walk_slow_down
+	walk_slow_down
+	walk_slow_down
+	walk_slow_down
+	step_end
 `
 
+const WOMAN = 8
 const JIRACHI = 18
 
 mapscripts MossdeepCity_MapScripts {
@@ -414,11 +422,44 @@ mapscripts MossdeepCity_MapScripts {
 		}
 		setflag (FLAG_TEMP_2)
 	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(JIRACHI)
+		}
+	}
 }
-
 
 script MossdeepCity_EventScript_WhiteRock {
 	msgbox ("It's a white rock.", MSGBOX_SIGN)
+	checkitem (ITEM_WISH_TAG)
+	if (var(VAR_RESULT) == TRUE && !flag(FLAG_TEMP_3) && !flag(FLAG_CAUGHT_JIRACHI)) {
+		msgbox ("Use the Wish Tag to make a wish?", MSGBOX_YESNO)
+		if (var(VAR_RESULT) == TRUE) {
+			clearflag (FLAG_TEMP_2)
+			applymovement (WOMAN, Common_Movement_FaceUp)
+			waitmovement (0)
+			playse (SE_PIN)
+			applymovement (WOMAN, Common_Movement_ExclamationMark)
+			waitmovement (0)
+			addobject (JIRACHI)
+			applymovement (JIRACHI, MossdeepCity_Movement_JirachiAppearance)
+			waitmovement (0)
+			setvar (VAR_LAST_TALKED, JIRACHI)
+			playmoncry(SPECIES_JIRACHI, CRY_MODE_ENCOUNTER)
+			msgbox("Shii?")
+			waitmoncry
+			seteventmon(SPECIES_JIRACHI, 50)
+			setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+			special(BattleSetup_StartLegendaryBattle)
+			waitstate
+			clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+			specialvar (VAR_RESULT, GetBattleOutcome)
+			if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+				setflag (FLAG_CAUGHT_JIRACHI)
+			}
+			setflag(FLAG_TEMP_3)
+		}
+	}
 }
 
 script TrainerTipsDiveSprinting {

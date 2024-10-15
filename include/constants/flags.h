@@ -66,7 +66,7 @@
 #define FLAG_CAUGHT_IRON_BOULDER 0x35
 #define FLAG_CAUGHT_IRON_LEAVES  0x36
 #define FLAG_CAUGHT_VOLCANION    0x37
-#define FLAG_UNUSED_0x038        0x38 // Unused Flag
+#define FLAG_CAUGHT_JIRACHI      0x38
 #define FLAG_UNUSED_0x039        0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A        0x3A // Unused Flag
 #define FLAG_UNUSED_0x03B        0x3B // Unused Flag

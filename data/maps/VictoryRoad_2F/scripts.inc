@@ -9,12 +9,12 @@ VictoryRoad_2F_MapScripts_MAP_SCRIPT_ON_RESUME:
 # 5 "data/maps/VictoryRoad_2F/scripts.pory"
 	setobjectxy 1, 9, 0
 # 6 "data/maps/VictoryRoad_2F/scripts.pory"
-	goto_if_set FLAG_CAUGHT_MELOETTA, VictoryRoad_2F_MapScripts_MAP_SCRIPT_ON_RESUME_1
+	goto_if_set FLAG_SYS_CTRL_OBJ_DELETE, VictoryRoad_2F_MapScripts_MAP_SCRIPT_ON_RESUME_1
 	return
 
 VictoryRoad_2F_MapScripts_MAP_SCRIPT_ON_RESUME_1:
 # 7 "data/maps/VictoryRoad_2F/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	removeobject 1
 	return
 
 VictoryRoad_2F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
@@ -25,11 +25,13 @@ VictoryRoad_2F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 VictoryRoad_2F_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 12 "data/maps/VictoryRoad_2F/scripts.pory"
 	setflag FLAG_TEMP_2
+# 13 "data/maps/VictoryRoad_2F/scripts.pory"
+	removeobject 1
 	return
 
 
 BattleMeloetta::
-# 18 "data/maps/VictoryRoad_2F/scripts.pory"
+# 19 "data/maps/VictoryRoad_2F/scripts.pory"
 	goto_if_unset FLAG_CAUGHT_MELOETTA, BattleMeloetta_2
 # 37 "data/maps/VictoryRoad_2F/scripts.pory"
 	msgbox BattleMeloetta_Text_1
@@ -39,14 +41,12 @@ BattleMeloetta_1:
 	end
 
 BattleMeloetta_2:
-# 19 "data/maps/VictoryRoad_2F/scripts.pory"
-	lock
 # 20 "data/maps/VictoryRoad_2F/scripts.pory"
-	applymovement 1, SkyPillar_Top_Movement_CameraPanDown
+	lock
 # 21 "data/maps/VictoryRoad_2F/scripts.pory"
-	waitmovement 0
+	applymovement 1, SkyPillar_Top_Movement_CameraPanDown
 # 22 "data/maps/VictoryRoad_2F/scripts.pory"
-	setvar VAR_LAST_TALKED, 1
+	waitmovement 0
 # 23 "data/maps/VictoryRoad_2F/scripts.pory"
 	playmoncry SPECIES_MELOETTA, CRY_MODE_ENCOUNTER
 # 24 "data/maps/VictoryRoad_2F/scripts.pory"

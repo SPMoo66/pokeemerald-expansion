@@ -14,21 +14,21 @@ MysteryGiftScript_OldSeaMap::
 	giveitem ITEM_OLD_SEA_MAP
 	setflag FLAG_ENABLE_SHIP_FARAWAY_ISLAND
 	setflag FLAG_RECEIVED_OLD_SEA_MAP
-	vmessage sText_MysteryGiftOldSeaMapUseAtPort
+	vmessage sText_AuroraTicketUseAtPort
 	waitmessage
 	waitbuttonpress
 	release
 	end
 
 OldSeaMap_NoBagSpace:
-	vmessage sText_MysteryGiftOldSeaMapBagFull
+	vmessage sText_AuroraTicketBagFull
 	waitmessage
 	waitbuttonpress
 	release
 	end
 
 OldSeaMap_Obtained:
-	vmessage sText_MysteryGiftOldSeaMapThankYou
+	vmessage sText_AuroraTicketThankYou
 	waitmessage
 	waitbuttonpress
 	release
@@ -40,19 +40,3 @@ sText_MysteryGiftOldSeaMapForYou:
 	.string "Let me confirm--you are {PLAYER}?\p"
 	.string "We received this Old Sea Map\n"
 	.string "addressed to you.$"
-
-sText_MysteryGiftOldSeaMapUseAtPort:
-	.string "It appears to be for use at the\n"
-	.string "Lilycove City port.\p"
-	.string "Why not give it a try and see what\n"
-	.string "it is about?$"
-
-sText_MysteryGiftOldSeaMapThankYou:
-	.string "Thank you for using the Mystery\n"
-	.string "Gift System.$"
-
-sText_MysteryGiftOldSeaMapBagFull:
-	.string "Oh, I'm sorry, {PLAYER}.\n"
-	.string "Your Bag's Key Items Pocket is full.\p"
-	.string "Please store something on your PC,\n"
-	.string "then come back for this.$"

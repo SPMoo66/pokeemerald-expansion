@@ -784,6 +784,10 @@ text CommonText_Courtney {
 	"Courtney"
 }
 
+text CommonText_Tabitha {
+	"Tabitha"
+}
+
 text CommonText_May {
 	"May"
 }

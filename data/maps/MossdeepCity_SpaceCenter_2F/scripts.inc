@@ -73,6 +73,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
+	speakername (CommonText_Courtney)
 	msgbox MossdeepCity_SpaceCenter_2F_Text_CourtneyIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_COURTNEY_MOSSDEEP, MossdeepCity_SpaceCenter_2F_Text_CourtneyDefeat
 	applymovement LOCALID_COURTNEY, MossdeepCity_SpaceCenter_2F_Movement_CourtneyDefeated
@@ -175,6 +176,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Grunt5::
 MossdeepCity_SpaceCenter_2F_EventScript_Tabitha::
 	lock
 	faceplayer
+	speakername (CommonText_Tabitha)
 	msgbox MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou, MSGBOX_DEFAULT
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0

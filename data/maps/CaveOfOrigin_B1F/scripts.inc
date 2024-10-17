@@ -6,6 +6,7 @@ CaveOfOrigin_B1F_MapScripts::
 CaveOfOrigin_B1F_EventScript_Wallace::
 	lock
 	faceplayer
+	speakername (CommonText_Q)
 	msgbox CaveOfOrigin_B1F_Text_WallaceStory1, MSGBOX_DEFAULT
 	speakername (CommonText_Wallace)
 	msgbox CaveOfOrigin_B1F_Text_WallaceStory2, MSGBOX_DEFAULT

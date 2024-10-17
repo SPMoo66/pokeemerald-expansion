@@ -44,6 +44,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	doweather
 	special Script_FadeOutMapMusic
 	waitstate
+	closemessage
 	msgbox SeafloorCavern_Room9_Text_RedOrbShinesByItself, MSGBOX_DEFAULT
 	special WaitWeather
 	waitstate

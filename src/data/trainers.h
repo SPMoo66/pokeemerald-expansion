@@ -10261,3 +10261,75 @@
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_MayLinkPlaceholder),
     },
+
+    [TRAINER_ROCKET_GRUNT_DEVONCORP_1] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_GruntDevoncorp1),
+    },
+
+    [TRAINER_ROCKET_GRUNT_DEVONCORP_2] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_F,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_GruntDevoncorp2),
+    },
+
+    [TRAINER_ROCKET_GRUNT_DEVONCORP_3] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_GruntDevoncorp3),
+    },
+
+    [TRAINER_ROCKET_GRUNT_DEVONCORP_4] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_F,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_GruntDevoncorp4),
+    },
+
+    [TRAINER_ROCKET_GRUNT_DEVONCORP_5] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_GruntDevoncorp5),
+    },
+
+    [TRAINER_GIOVANNI_DEVONCORP] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerName = _("Giovanni"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_GiovanniDevoncorp),
+    },

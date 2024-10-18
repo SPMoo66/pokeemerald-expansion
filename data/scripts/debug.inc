@@ -152,6 +152,7 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
+	setvar VAR_LOOKER_ROCKET 3
 	release
 	end
 

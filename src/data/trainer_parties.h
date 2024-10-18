@@ -13730,3 +13730,89 @@ static const struct TrainerMon sParty_MayLinkPlaceholder[] = {
     .species = SPECIES_KYOGRE,
     }
 };
+
+static const struct TrainerMon sParty_GruntDevoncorp1[] = {
+    {
+    .lvl = 23,
+    .species = SPECIES_SLUGMA,
+    },
+    {
+    .lvl = 23,
+    .species = SPECIES_EKANS,
+    }
+};
+
+static const struct TrainerMon sParty_GruntDevoncorp2[] = {
+    {
+    .lvl = 22,
+    .species = SPECIES_RATICATE_ALOLAN,
+    },
+    {
+    .lvl = 22,
+    .species = SPECIES_PINECO,
+    },
+    {
+    .lvl = 22,
+    .species = SPECIES_DUSKULL,
+    }
+};
+
+static const struct TrainerMon sParty_GruntDevoncorp3[] = {
+    {
+    .lvl = 23,
+    .species = SPECIES_TOGETIC,
+    },
+    {
+    .lvl = 23,
+    .species = SPECIES_ARIADOS_EMERIBIAN,
+    }
+};
+
+static const struct TrainerMon sParty_GruntDevoncorp4[] = {
+    {
+    .lvl = 22,
+    .species = SPECIES_KABUTO,
+    },
+    {
+    .lvl = 22,
+    .species = SPECIES_QUAGSIRE,
+    },
+    {
+    .lvl = 22,
+    .species = SPECIES_SCRAGGY,
+    }
+};
+
+static const struct TrainerMon sParty_GruntDevoncorp5[] = {
+    {
+    .lvl = 23,
+    .species = SPECIES_MEOWTH_ALOLAN,
+    },
+    {
+    .lvl = 23,
+    .species = SPECIES_LUXIO,
+    },
+    {
+    .lvl = 23,
+    .species = SPECIES_PHANTUMP,
+    }
+};
+
+static const struct TrainerMon sParty_GiovanniDevoncorp[] = {
+    {
+    .lvl = 28,
+    .species = SPECIES_DEWOTT,
+    },
+    {
+    .lvl = 28,
+    .species = SPECIES_RHYHORN,
+    },
+    {
+    .lvl = 28,
+    .species = SPECIES_PERSIAN,
+    },
+    {
+    .lvl = 30,
+    .species = SPECIES_DEINO,
+    }
+};

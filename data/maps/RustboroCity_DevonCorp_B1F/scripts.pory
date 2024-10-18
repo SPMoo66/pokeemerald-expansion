@@ -1,1 +1,57 @@
-mapscripts RustboroCity_DevonCorp_B1F_MapScripts {}
+const ROCKET = 1
+
+mapscripts RustboroCity_DevonCorp_B1F_MapScripts {
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_LOOKER_ROCKET, 4: Devoncorp_B1F_Intro
+	]
+}
+
+script Devoncorp_B1F_Intro {
+	special (SpawnCameraObject)
+	applymovement (OBJ_EVENT_ID_CAMERA, PanDownLeft3)
+	waitmovement (0)
+	delay (20)
+	applymovement (ROCKET, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement (0)
+	delay (20)
+	msgbox (format("Urk.\nNot feeling good about this first job.\pI know that I made the choice to join\nTeam Rocket, but I didn't expect one of\lour first operations to be out here in\lHoenn.\pI really thought we were starting out\nin Kanto…\pWhatever.\nBoss trusted us to prevent anyone from\linterfering, so we'll do it."), MSGBOX_AUTOCLOSE)
+	applymovement (ROCKET, Common_Movement_WalkInPlaceFasterLeft)
+	waitmovement (0)
+	applymovement (OBJ_EVENT_ID_CAMERA, PanUpRight3)
+	waitmovement (0)
+	special (RemoveCameraObject)
+	setvar (VAR_LOOKER_ROCKET, 5)
+}
+
+script Devoncorp_B1F_RocketGrunt_1 {
+	trainerbattle_single (TRAINER_ROCKET_GRUNT_DEVONCORP_1, "What!? A kid?\nYou're not supposed to be here!", "No!\nYou're going to screw this up for us!")
+	msgbox ("Don't you dare take another step\nforward!\pThe others will crush you!", MSGBOX_AUTOCLOSE)
+}
+
+script Devoncorp_B1F_RocketGrunt_2 {
+	trainerbattle_single (TRAINER_ROCKET_GRUNT_DEVONCORP_2, "You don't know us?\pWe're Team Rocket, and a kid isn't going\nto stop us!", "Ah! Oh no!")
+	msgbox ("Hm.\nDid I make a mistake joining up?", MSGBOX_AUTOCLOSE)
+}
+
+script Devoncorp_B1F_RocketGrunt_3 {
+	trainerbattle_single (TRAINER_ROCKET_GRUNT_DEVONCORP_3, "Oh no! I left the oven on!\nBoss said I have to beat any intruders,\lthen I'll race home!", "Nooo!\nThe oven!")
+	msgbox ("My family are at home…\nYou've done a horrible thing…", MSGBOX_AUTOCLOSE)
+}
+
+script Devoncorp_B1F_RocketGrunt_4 {
+	trainerbattle_single (TRAINER_ROCKET_GRUNT_DEVONCORP_4, "Wait, is this Hoenn?\nI thought we were being shipped out to\lKanto.", "Aw, darn…")
+	msgbox ("I heard the boss isn't very happy about\nwomen joining Team Rocket.", MSGBOX_AUTOCLOSE)
+}
+
+script Devoncorp_B1F_RocketGrunt_5 {
+	trainerbattle_single (TRAINER_ROCKET_GRUNT_DEVONCORP_5, "So you're the kid I've been hearing\nabout.\pYour intrusion ends here!", "Well, well.")
+	msgbox ("Alright. Go on ahead.\nThe boss is here, and there's no chance\lyou'll get past him.", MSGBOX_AUTOCLOSE)
+}
+
+movement PanDownLeft3 {
+	walk_slow_diag_southwest * 3
+}
+
+movement PanUpRight3 {
+	walk_slow_diag_northeast * 3
+}

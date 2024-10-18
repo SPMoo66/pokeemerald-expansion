@@ -1,63 +1,4 @@
 raw `
-RustboroCity_DevonCorp_1F_EventScript_Employee::
-	lock
-	faceplayer
-	goto_if_set FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_GoodsRecovered
-	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_RobberWasntBright
-	msgbox RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct, MSGBOX_DEFAULT
-	release
-	end
-
-RustboroCity_DevonCorp_1F_EventScript_RobberWasntBright::
-	msgbox RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright, MSGBOX_DEFAULT
-	release
-	end
-
-RustboroCity_DevonCorp_1F_EventScript_GoodsRecovered::
-	msgbox RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered, MSGBOX_DEFAULT
-	release
-	end
-
-RustboroCity_DevonCorp_1F_EventScript_StairGuard::
-	lock
-	faceplayer
-	goto_if_set FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_AlwaysWelcome
-	goto_if_set FLAG_RECOVERED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_GotRobbed
-	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_GotRobbed
-	msgbox RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter, MSGBOX_DEFAULT
-	release
-	end
-
-RustboroCity_DevonCorp_1F_EventScript_AlwaysWelcome::
-	msgbox RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere, MSGBOX_DEFAULT
-	release
-	end
-
-RustboroCity_DevonCorp_1F_EventScript_GotRobbed::
-	msgbox RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed, MSGBOX_DEFAULT
-	release
-	end
-
-RustboroCity_DevonCorp_1F_EventScript_Greeter::
-	lock
-	faceplayer
-	goto_if_set FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_WelcomeToDevonCorp
-	goto_if_set FLAG_RECOVERED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_StaffGotRobbed
-	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_StaffGotRobbed
-	msgbox RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp, MSGBOX_DEFAULT
-	release
-	end
-
-RustboroCity_DevonCorp_1F_EventScript_WelcomeToDevonCorp::
-	msgbox RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp, MSGBOX_DEFAULT
-	release
-	end
-
-RustboroCity_DevonCorp_1F_EventScript_StaffGotRobbed::
-	msgbox RustboroCity_DevonCorp_1F_Text_StaffGotRobbed, MSGBOX_DEFAULT
-	release
-	end
-
 RustboroCity_DevonCorp_1F_EventScript_RocksMetalDisplay::
 	msgbox RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay, MSGBOX_SIGN
 	end
@@ -131,13 +72,143 @@ RustboroCity_DevonCorp_1F_Text_ProductDisplay:
 	.string "Poké Balls and Pokénav systems.”$"
 `
 
-const LOCALID_STAIR_GUARD = 2
+const EMPLOYEE = 1
+const STAIR_GUARD = 2
+const GREETER = 3
 
 mapscripts RustboroCity_DevonCorp_1F_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
 		if (!flag(FLAG_RETURNED_DEVON_GOODS)) {
-			setobjectxyperm (LOCALID_STAIR_GUARD, 21, 2)
-			setobjectmovementtype (LOCALID_STAIR_GUARD, MOVEMENT_TYPE_FACE_DOWN)
+			setobjectxyperm (STAIR_GUARD, 21, 2)
+			setobjectmovementtype (STAIR_GUARD, MOVEMENT_TYPE_FACE_DOWN)
+			setflag(FLAG_TEMP_1)
+		}
+		elif (var(VAR_LOOKER_ROCKET) >= 3 && var(VAR_LOOKER_ROCKET) <= 5) {
+			setobjectxyperm (STAIR_GUARD, 6, 5)
+			setobjectmovementtype (STAIR_GUARD, MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT)
+			setobjectxyperm (EMPLOYEE, 0, 7)
+			setobjectmovementtype (EMPLOYEE, MOVEMENT_TYPE_FACE_RIGHT)
+			setobjectxyperm (GREETER, 1, 5)
+		}
+		else {
+			setflag(FLAG_TEMP_1)
+		}
+		if (var(VAR_LOOKER_ROCKET) == 3) {
+			getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+			if (var(VAR_TEMP_0) == 13) {
+				setobjectxyperm (GREETER, 21, 6)
+			}
+			else {
+				setobjectxyperm (GREETER, 20, 6)
+			}
 		}
 	}
+	MAP_SCRIPT_ON_LOAD {
+		if (var(VAR_LOOKER_ROCKET) >= 3 && var(VAR_LOOKER_ROCKET) <= 5) {
+			playbgm (MUS_HG_ROCKET_TAKEOVER, FALSE)
+			setmetatile (3, 3, 0x381, FALSE)
+			setmetatile (3, 4, 0x381, FALSE)
+			setmetatile (4, 3, 0x380, FALSE)
+			setmetatile (4, 4, 0x380, FALSE)
+			setmetatile (4, 5, 0x380, FALSE)
+			setmetatile (5, 3, 0x380, FALSE)
+			setmetatile (5, 4, 0x380, FALSE)
+			setmetatile (5, 5, 0x380, FALSE)
+			setmetatile (20, 3, 0x386, FALSE)
+			setmetatile (20, 4, 0x38E, TRUE)
+			setmetatile (21, 3, 0x387, FALSE)
+			setmetatile (21, 4, 0x38F, TRUE)
+			setmetatile (21, 5, 0x383, FALSE)
+			setmetatile (22, 4, 0x384, FALSE)
+			setmetatile (22, 5, 0x385, FALSE)
+		}
+	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_TEMP_2, 0 {
+			if (var(VAR_LOOKER_ROCKET) >= 3 && var(VAR_LOOKER_ROCKET) <= 5) {
+				playbgm (MUS_HG_ROCKET_TAKEOVER, FALSE)
+			}
+			setvar (VAR_TEMP_2, 1)
+		}
+		VAR_LOOKER_ROCKET, 3: Devoncorp_RocketEntrance
+	]
+}
+
+script Devoncorp_RocketEntrance {
+	msgbox("Iyaaaaa!!")
+	applymovement (GREETER, GreeterRun)
+	waitmovement (0)
+	closemessage
+	applymovement (GREETER, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement (0)
+	playse (SE_PIN)
+	applymovement (GREETER, Common_Movement_ExclamationMark)
+	waitmovement (0)
+	delay (60)
+	applymovement (GREETER, Common_Movement_WalkDown)
+	waitmovement (0)
+	msgbox(format("Oh! Please, you've got to help!\pA group of jackbooted thugs stormed in\nand went upstairs!\pI've got friends up there in other\ndepartments!\lOh no…"), MSGBOX_AUTOCLOSE)
+	applymovement (GREETER, GreeterRun)
+	waitmovement (0)
+	setobjectxy (GREETER, 1, 5)
+	applymovement (GREETER, Common_Movement_WalkInPlaceFasterDown)
+	setvar (VAR_LOOKER_ROCKET, 4)
+}
+
+movement GreeterRun {
+	walk_fast_left * 8
+}
+
+script RustboroCity_DevonCorp_1F_EventScript_StairGuard {
+	lock
+	faceplayer
+	if (var(VAR_LOOKER_ROCKET) >= 3 && var(VAR_LOOKER_ROCKET) <= 5) {
+		msgbox ("I saw a few of them go into the\nbasement here.\pIt's probably a safer bet than charging\nupstairs.\pI can watch over the others if you want\nto try it, but be careful.")
+	}
+	elif (flag(FLAG_RETURNED_DEVON_GOODS)) {
+		msgbox (RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere, MSGBOX_DEFAULT)
+	}
+	elif (flag(FLAG_RECOVERED_DEVON_GOODS) || flag(FLAG_DEVON_GOODS_STOLEN)) {
+		msgbox (RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed, MSGBOX_DEFAULT)
+	}
+	else {
+		msgbox (RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter, MSGBOX_DEFAULT)
+	}
+	release
+}
+
+script RustboroCity_DevonCorp_1F_EventScript_Employee {
+	lock
+	faceplayer
+	if (var(VAR_LOOKER_ROCKET) >= 3 && var(VAR_LOOKER_ROCKET) <= 5) {
+		msgbox ("Trust me, if I could be a hero here,\nI would.\pI don't have it in me to take on all\nthose goons that ran in!")
+	}
+	elif (flag(FLAG_RETURNED_DEVON_GOODS)) {
+		msgbox (RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered, MSGBOX_DEFAULT)
+	}
+	elif (flag(FLAG_DEVON_GOODS_STOLEN)) {
+		msgbox (RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright, MSGBOX_DEFAULT)
+	}
+	else {
+		msgbox (RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct, MSGBOX_DEFAULT)
+	}
+	release
+}
+
+script RustboroCity_DevonCorp_1F_EventScript_Greeter {
+	lock
+	faceplayer
+	if (var(VAR_LOOKER_ROCKET) >= 3 && var(VAR_LOOKER_ROCKET) <= 5) {
+		msgbox ("No, no, no. This can't be happening.")
+	}
+	elif (flag(FLAG_RETURNED_DEVON_GOODS)) {
+		msgbox (RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp, MSGBOX_DEFAULT)
+	}
+	elif (flag(FLAG_RECOVERED_DEVON_GOODS) || flag(FLAG_DEVON_GOODS_STOLEN)) {
+		msgbox (RustboroCity_DevonCorp_1F_Text_StaffGotRobbed, MSGBOX_DEFAULT)
+	}
+	else {
+		msgbox (RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp, MSGBOX_DEFAULT)
+	}
+	release
 }

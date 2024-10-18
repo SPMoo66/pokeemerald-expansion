@@ -72,10 +72,10 @@ script SouthernIsland_Interior_EventScript_TryLatiEncounter {
 		special (RemoveCameraObject)
 		setvar(VAR_LAST_TALKED, LOCALID_LATI)
 		if (flag(FLAG_TEMP_3) == true) {
-			seteventmon (SPECIES_LATIAS, 50, ITEM_SOUL_DEW)
+			seteventmon (SPECIES_LATIAS, 60, ITEM_SOUL_DEW)
 		}
 		else {
-			seteventmon (SPECIES_LATIOS, 50, ITEM_SOUL_DEW)
+			seteventmon (SPECIES_LATIOS, 60, ITEM_SOUL_DEW)
 		}
 		setflag (FLAG_SYS_CTRL_OBJ_DELETE)
 		special (BattleSetup_StartLatiBattle)

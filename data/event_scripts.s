@@ -1079,3 +1079,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PathlessPlainAlt/scripts.inc"
 
 	.include "data/maps/GaleforceCliffs/scripts.inc"
+
+	.include "data/maps/RustboroCity_DevonCorp_B1F/scripts.inc"

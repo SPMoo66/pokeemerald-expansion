@@ -122,7 +122,7 @@ SouthernIsland_Interior_EventScript_TryLatiEncounter::
 # 74 "data/maps/SouthernIsland_Interior/scripts.pory"
 	goto_if_set FLAG_TEMP_3, SouthernIsland_Interior_EventScript_TryLatiEncounter_8
 # 78 "data/maps/SouthernIsland_Interior/scripts.pory"
-	seteventmon SPECIES_LATIOS, 50, ITEM_SOUL_DEW
+	seteventmon SPECIES_LATIOS, 60, ITEM_SOUL_DEW
 SouthernIsland_Interior_EventScript_TryLatiEncounter_7:
 # 80 "data/maps/SouthernIsland_Interior/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
@@ -158,7 +158,7 @@ SouthernIsland_Interior_EventScript_TryLatiEncounter_2:
 
 SouthernIsland_Interior_EventScript_TryLatiEncounter_8:
 # 75 "data/maps/SouthernIsland_Interior/scripts.pory"
-	seteventmon SPECIES_LATIAS, 50, ITEM_SOUL_DEW
+	seteventmon SPECIES_LATIAS, 60, ITEM_SOUL_DEW
 	goto SouthernIsland_Interior_EventScript_TryLatiEncounter_7
 
 SouthernIsland_Interior_EventScript_TryLatiEncounter_12:

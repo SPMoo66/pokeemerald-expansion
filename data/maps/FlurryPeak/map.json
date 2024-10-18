@@ -218,6 +218,13 @@
       "y": 19,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_SNOW"
+    },
+    {
+      "type": "weather",
+      "x": 38,
+      "y": 9,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_SNOW"
     }
   ],
   "bg_events": [

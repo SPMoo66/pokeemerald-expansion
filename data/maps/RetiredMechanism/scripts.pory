@@ -20,7 +20,7 @@ script BattleRegieleki {
 	playmoncry(SPECIES_REGIELEKI, CRY_MODE_ENCOUNTER)
 	msgbox("Zizi zizizi.")
 	waitmoncry
-	setwildbattle(SPECIES_REGIELEKI, 40)
+	setwildbattle(SPECIES_REGIELEKI, 45)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(StartRegiBattle)
 	waitstate

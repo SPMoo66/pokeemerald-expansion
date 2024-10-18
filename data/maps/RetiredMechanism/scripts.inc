@@ -40,7 +40,7 @@ BattleRegieleki::
 # 22 "data/maps/RetiredMechanism/scripts.pory"
 	waitmoncry
 # 23 "data/maps/RetiredMechanism/scripts.pory"
-	setwildbattle SPECIES_REGIELEKI, 40
+	setwildbattle SPECIES_REGIELEKI, 45
 # 24 "data/maps/RetiredMechanism/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 25 "data/maps/RetiredMechanism/scripts.pory"

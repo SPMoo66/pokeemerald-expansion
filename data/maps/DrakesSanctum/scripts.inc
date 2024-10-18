@@ -40,7 +40,7 @@ BattleRegidrago::
 # 22 "data/maps/DrakesSanctum/scripts.pory"
 	waitmoncry
 # 23 "data/maps/DrakesSanctum/scripts.pory"
-	setwildbattle SPECIES_REGIDRAGO, 40
+	setwildbattle SPECIES_REGIDRAGO, 45
 # 24 "data/maps/DrakesSanctum/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 25 "data/maps/DrakesSanctum/scripts.pory"

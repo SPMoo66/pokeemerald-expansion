@@ -102,6 +102,7 @@ mapscripts RustboroCity_DevonCorp_1F_MapScripts {
 				setobjectxyperm (GREETER, 20, 6)
 			}
 		}
+		clearflag (FLAG_DONT_TRANSITION_MUSIC)
 	}
 	MAP_SCRIPT_ON_LOAD {
 		if (var(VAR_LOOKER_ROCKET) >= 3 && var(VAR_LOOKER_ROCKET) <= 5) {

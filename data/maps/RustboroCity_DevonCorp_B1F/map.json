@@ -118,8 +118,8 @@
       "x": 15,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_RUSTBORO_CITY_DEVON_CORP_B1F",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_RUSTBORO_CITY_DEVON_CORP_3F",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

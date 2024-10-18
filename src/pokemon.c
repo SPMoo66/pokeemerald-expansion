@@ -5823,6 +5823,7 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_MAGMA_ADMIN:
             return MUS_VS_AQUA_MAGMA;
         case TRAINER_CLASS_ROCKET:
+        case TRAINER_CLASS_BOSS:
             return MUS_HG_VS_ROCKET;
         case TRAINER_CLASS_LEADER:
             switch (musicRegion)

@@ -4,6 +4,9 @@ mapscripts RustboroCity_DevonCorp_B1F_MapScripts {
 	MAP_SCRIPT_ON_FRAME_TABLE [
 		VAR_LOOKER_ROCKET, 4: Devoncorp_B1F_Intro
 	]
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_DONT_TRANSITION_MUSIC)
+	}
 }
 
 script Devoncorp_B1F_Intro {

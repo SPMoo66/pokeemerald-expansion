@@ -430,6 +430,10 @@ const u16 gObjectEventPal_Skier_F[] = INCBIN_U16("graphics/object_events/palette
 const u32 gObjectEventPic_Rocket_M[] = INCBIN_U32("graphics/object_events/pics/people/rocket_m.4bpp");
 const u16 gObjectEventPal_Rocket[] = INCBIN_U16("graphics/object_events/palettes/rocket.gbapal");
 const u32 gObjectEventPic_Rocket_F[] = INCBIN_U32("graphics/object_events/pics/people/rocket_f.4bpp");
+const u32 gObjectEventPic_Giovanni[] = INCBIN_U32("graphics/object_events/pics/people/giovanni.4bpp");
+
+const u32 gObjectEventPic_Looker[] = INCBIN_U32("graphics/object_events/pics/people/looker.4bpp");
+const u16 gObjectEventPal_Looker[] = INCBIN_U16("graphics/object_events/palettes/looker.gbapal");
 
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 

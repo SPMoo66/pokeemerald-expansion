@@ -304,6 +304,12 @@ const u32 gTrainerPalette_Skier_M[] = INCBIN_U32("graphics/trainers/front_pics/s
 const u32 gTrainerFrontPic_Skier_F[] = INCBIN_U32("graphics/trainers/front_pics/skier_f.4bpp.lz");
 const u32 gTrainerPalette_Skier_F[] = INCBIN_U32("graphics/trainers/front_pics/skier_f.gbapal.lz");
 
+const u32 gTrainerFrontPic_Rocket_M[] = INCBIN_U32("graphics/trainers/front_pics/rocket_m.4bpp.lz");
+const u32 gTrainerPalette_Rocket_M[] = INCBIN_U32("graphics/trainers/front_pics/rocket_m.gbapal.lz");
+
+const u32 gTrainerFrontPic_Rocket_F[] = INCBIN_U32("graphics/trainers/front_pics/rocket_f.4bpp.lz");
+const u32 gTrainerPalette_Rocket_F[] = INCBIN_U32("graphics/trainers/front_pics/rocket_f.gbapal.lz");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -438,6 +444,8 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(WALLY_CONFIDENT, WallyConfident),
     TRAINER_SPRITE(SKIER_M, Skier_M),
     TRAINER_SPRITE(SKIER_F, Skier_F),
+    TRAINER_SPRITE(ROCKET_M, Rocket_M),
+    TRAINER_SPRITE(ROCKET_F, Rocket_F),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

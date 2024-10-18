@@ -427,6 +427,10 @@ const u16 gObjectEventPal_Skier_M[] = INCBIN_U16("graphics/object_events/palette
 const u32 gObjectEventPic_Skier_F[] = INCBIN_U32("graphics/object_events/pics/people/skier_f.4bpp");
 const u16 gObjectEventPal_Skier_F[] = INCBIN_U16("graphics/object_events/palettes/skier_f.gbapal");
 
+const u32 gObjectEventPic_Rocket_M[] = INCBIN_U32("graphics/object_events/pics/people/rocket_m.4bpp");
+const u16 gObjectEventPal_Rocket[] = INCBIN_U16("graphics/object_events/palettes/rocket.gbapal");
+const u32 gObjectEventPic_Rocket_F[] = INCBIN_U32("graphics/object_events/pics/people/rocket_f.4bpp");
+
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 
 const u16 gObjectEventPal_Substitute[] = INCBIN_U16("graphics/pokemon/question_mark/overworld.gbapal");

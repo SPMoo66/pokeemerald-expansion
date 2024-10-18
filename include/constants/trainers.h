@@ -117,7 +117,9 @@
 #define TRAINER_PIC_WALLY_CONFIDENT       99
 #define TRAINER_PIC_SKIER_M               100
 #define TRAINER_PIC_SKIER_F               101
-#define TRAINER_PIC_COUNT                 102
+#define TRAINER_PIC_ROCKET_M        102
+#define TRAINER_PIC_ROCKET_F        103
+#define TRAINER_PIC_COUNT                 104
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -296,7 +298,7 @@
 #define RS_FACILITY_CLASSES_COUNT               0x4D
 
 #define TRAINER_CLASS_PKMN_TRAINER_1 0x0  // Unused
-#define TRAINER_CLASS_PKMN_TRAINER_2 0x1  // Unused
+#define TRAINER_CLASS_ROCKET         0x1  // Was unused, now for Rocket
 #define TRAINER_CLASS_HIKER          0x2
 #define TRAINER_CLASS_TEAM_AQUA      0x3
 #define TRAINER_CLASS_PKMN_BREEDER   0x4
@@ -378,6 +380,7 @@
 #define TRAINER_ENCOUNTER_MUSIC_HIKER       11 // used for other trainer classes too
 #define TRAINER_ENCOUNTER_MUSIC_INTERVIEWER 12
 #define TRAINER_ENCOUNTER_MUSIC_RICH        13 // Rich Boys and Gentlemen
+#define TRAINER_ENCOUNTER_MUSIC_ROCKET      14 // Team Rocket
 
 #define F_TRAINER_FEMALE (1 << 7)
 

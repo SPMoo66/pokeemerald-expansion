@@ -261,6 +261,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sakura;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Portal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Skier_M;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Skier_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rocket_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rocket_F;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -515,6 +517,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PORTAL] =                   &gObjectEventGraphicsInfo_Portal,
     [OBJ_EVENT_GFX_SKIER_M] =                  &gObjectEventGraphicsInfo_Skier_M,
     [OBJ_EVENT_GFX_SKIER_F] =                  &gObjectEventGraphicsInfo_Skier_F,
+    [OBJ_EVENT_GFX_ROCKET_M] =                 &gObjectEventGraphicsInfo_Rocket_M,
+    [OBJ_EVENT_GFX_ROCKET_F] =                 &gObjectEventGraphicsInfo_Rocket_F,
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
 };

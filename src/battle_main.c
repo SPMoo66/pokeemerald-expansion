@@ -315,7 +315,7 @@ static const s8 sCenterToCornerVecXs[8] ={-32, -16, -16, -32, -32};
 const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
 {
     TRAINER_CLASS(PKMN_TRAINER_1, "{PKMN} Trainer"),
-    TRAINER_CLASS(PKMN_TRAINER_2, "{PKMN} Trainer"),
+    TRAINER_CLASS(ROCKET, "Team Rocket"),
     TRAINER_CLASS(HIKER, "Hiker", 6, ITEM_HEAVY_BALL),
     TRAINER_CLASS(TEAM_AQUA, "Team Aqua"),
     TRAINER_CLASS(PKMN_BREEDER, "{PKMN} Breeder", 10, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? ITEM_HEAL_BALL : ITEM_FRIEND_BALL),

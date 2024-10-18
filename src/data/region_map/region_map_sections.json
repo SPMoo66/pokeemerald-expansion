@@ -747,8 +747,8 @@
     {
       "map_section": "MAPSEC_SUBMERGED_CAVERN",
       "name": "Submerged Cavern",
-      "x": 0,
-      "y": 0,
+      "x": 22,
+      "y": 4,
       "width": 1,
       "height": 1
     },
@@ -763,8 +763,8 @@
     {
       "map_section": "MAPSEC_NAMELESS_CAVERN",
       "name": "Nameless Cavern",
-      "x": 22,
-      "y": 4,
+      "x": 20,
+      "y": 8,
       "width": 1,
       "height": 1
     },
@@ -820,15 +820,15 @@
       "map_section": "MAPSEC_DRAKES_SANCTUM",
       "name": "Drake's Sanctum",
       "x": 0,
-      "y": 0,
+      "y": 2,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_SEA_SPIRITS_DEN",
       "name": "Sea Spirit's Den",
-      "x": 0,
-      "y": 0,
+      "x": 23,
+      "y": 6,
       "width": 1,
       "height": 1
     },
@@ -841,10 +841,10 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_5",
-      "name": "Route 5",
-      "x": 0,
-      "y": 0,
+      "map_section": "MAPSEC_GALEFORCE_CLIFF",
+      "name": "Galeforce Cliff",
+      "x": 25,
+      "y": 2,
       "width": 1,
       "height": 1
     },

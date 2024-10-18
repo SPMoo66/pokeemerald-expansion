@@ -4650,6 +4650,16 @@
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/PathlessPlainAlt/border.bin",
       "blockdata_filepath": "data/layouts/PathlessPlainAlt/map.bin"
+    },
+    {
+      "id": "LAYOUT_GALEFORCE_CLIFFS",
+      "name": "GaleforceCliffs_Layout",
+      "width": 25,
+      "height": 28,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_EverGrande",
+      "border_filepath": "data/layouts/GaleforceCliffs/border.bin",
+      "blockdata_filepath": "data/layouts/GaleforceCliffs/map.bin"
     }
   ]
 }

@@ -1077,3 +1077,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PathlessPlain/scripts.inc"
 
 	.include "data/maps/PathlessPlainAlt/scripts.inc"
+
+	.include "data/maps/GaleforceCliffs/scripts.inc"

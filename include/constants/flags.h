@@ -67,10 +67,10 @@
 #define FLAG_CAUGHT_IRON_LEAVES  0x36
 #define FLAG_CAUGHT_VOLCANION    0x37
 #define FLAG_CAUGHT_JIRACHI      0x38
-#define FLAG_UNUSED_0x039        0x39 // Unused Flag
-#define FLAG_UNUSED_0x03A        0x3A // Unused Flag
-#define FLAG_UNUSED_0x03B        0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C        0x3C // Unused Flag
+#define FLAG_CAUGHT_TORNADUS     0x39
+#define FLAG_CAUGHT_THUNDURUS    0x3A
+#define FLAG_CAUGHT_ENAMORUS     0x3B
+#define FLAG_CAUGHT_LANDORUS     0x3C
 #define FLAG_UNUSED_0x03D        0x3D // Unused Flag
 #define FLAG_UNUSED_0x03E        0x3E // Unused Flag
 #define FLAG_UNUSED_0x03F        0x3F // Unused Flag

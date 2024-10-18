@@ -1,0 +1,110 @@
+const TORNADUS = 1
+const THUNDURUS = 2
+const ENAMORUS = 3
+const LANDORUS = 4
+
+mapscripts GaleforceCliffs_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if(flag(FLAG_CAUGHT_TORNADUS)) {
+			setflag (FLAG_TEMP_2)
+			removeobject(TORNADUS)
+		}
+		elif(flag(FLAG_CAUGHT_THUNDURUS)) {
+			setflag (FLAG_TEMP_3)
+			removeobject(THUNDURUS)
+		}
+		elif(flag(FLAG_CAUGHT_ENAMORUS)) {
+			setflag (FLAG_TEMP_4)
+			removeobject(ENAMORUS)
+		}
+		elif(flag(FLAG_CAUGHT_LANDORUS)) {
+			setflag (FLAG_TEMP_5)
+			removeobject(LANDORUS)
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(VAR_LAST_TALKED)
+		}
+	}
+}
+
+script BattleTornadus {
+	lock
+	faceplayer
+	setvar (VAR_LAST_TALKED, TORNADUS)
+	playmoncry(SPECIES_TORNADUS, CRY_MODE_ENCOUNTER)
+	msgbox("Kawbraa!")
+	waitmoncry
+	seteventmon(SPECIES_TORNADUS, 40)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_TORNADUS)
+	}
+	release
+	end
+}
+
+script BattleThundurus {
+	lock
+	faceplayer
+	setvar (VAR_LAST_TALKED, THUNDURUS)
+	playmoncry(SPECIES_THUNDURUS, CRY_MODE_ENCOUNTER)
+	msgbox("Gurooooohhh!")
+	waitmoncry
+	seteventmon(SPECIES_THUNDURUS, 40)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_THUNDURUS)
+	}
+	release
+	end
+}
+
+script BattleEnamorus {
+	lock
+	faceplayer
+	setvar (VAR_LAST_TALKED, ENAMORUS)
+	playmoncry(SPECIES_ENAMORUS, CRY_MODE_ENCOUNTER)
+	msgbox("Aeepraaa!")
+	waitmoncry
+	seteventmon(SPECIES_ENAMORUS, 40)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_ENAMORUS)
+	}
+	release
+	end
+}
+
+script BattleLandorus {
+	lock
+	faceplayer
+	setvar (VAR_LAST_TALKED, LANDORUS)
+	playmoncry(SPECIES_LANDORUS, CRY_MODE_ENCOUNTER)
+	msgbox("Rarurarii!")
+	waitmoncry
+	seteventmon(SPECIES_LANDORUS, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_LANDORUS)
+	}
+	release
+	end
+}

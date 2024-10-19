@@ -2063,6 +2063,23 @@ static const u16 sQwilfishEggMoveLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_BRINE,
     MOVE_ACID_SPRAY,
+    MOVE_SELF_DESTRUCT,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sQwilfishHisuianEggMoveLearnset[] = {
+    MOVE_FLAIL,
+    MOVE_HAZE,
+    MOVE_BUBBLE_BEAM,
+    MOVE_SUPERSONIC,
+    MOVE_ASTONISH,
+    MOVE_SIGNAL_BEAM,
+    MOVE_AQUA_JET,
+    MOVE_AQUA_TAIL,
+    MOVE_WATER_PULSE,
+    MOVE_BRINE,
+    MOVE_ACID_SPRAY,
+    MOVE_SELF_DESTRUCT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_QWILFISH

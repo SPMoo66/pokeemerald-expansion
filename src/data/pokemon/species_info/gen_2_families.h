@@ -5036,6 +5036,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .isHisuianForm = TRUE,
         .levelUpLearnset = sQwilfishHisuianLevelUpLearnset,
         .teachableLearnset = sQwilfishHisuianTeachableLearnset,
+        .eggMoveLearnset = sQwilfishHisuianEggMoveLearnset,
         .formSpeciesIdTable = sQwilfishFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_MOVE, MOVE_BARB_BARRAGE, SPECIES_OVERQWIL}),
     },

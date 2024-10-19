@@ -233,6 +233,7 @@ RustboroCity_DevonCorp_3F_Text_RareRocksDisplay:
 `
 
 const LOCALID_DEVON_EMPLOYEE = 2
+const LOOKER = 5
 
 mapscripts RustboroCity_DevonCorp_3F_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
@@ -247,6 +248,7 @@ mapscripts RustboroCity_DevonCorp_3F_MapScripts {
 		else {
 			setobjectxyperm (LOCALID_DEVON_EMPLOYEE, 2, 2)
 		}
+		setflag (FLAG_TEMP_2)
 	}
 	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
 		VAR_DEVON_CORP_3F_STATE, 0 {
@@ -325,7 +327,14 @@ script RustboroCity_DevonCorp_3F_EventScript_Giovanni {
 }
 
 script RustboroCity_DevonCorp_3F_GiovanniDefeated {
-	msgbox ("")
+	clearflag (FLAG_TEMP_2)
+	addobject (LOOKER)
+	speakername (CommonText_Looker)
+	msgbox ("Not so fast!")
+	applymovement (LOOKER, Movement_LookerRun)
+	waitmovement (0)
+	applymovement (LOOKER, Movement_LookerRun2)
+	waitmovement (0)
 	closemessage
 	setvar (VAR_LOOKER_ROCKET, 6)
 	release
@@ -337,4 +346,12 @@ text RustboroCity_DevonCorp_3F_Text_GiovanniIntro {
 
 text RustboroCity_DevonCorp_3F_Text_GiovanniDefeat {
 	"I'll sue that boat captain into the\nground!"
+}
+
+movement Movement_LookerRun {
+	walk_fast_right * 8
+}
+
+movement Movement_LookerRun2 {
+	walk_fast_down
 }

@@ -868,6 +868,10 @@ text CommonText_Wallace {
 	"Wallace"
 }
 
+text CommonText_Looker {
+	"Looker"
+}
+
 
 
 script GetRivalForNameBox {

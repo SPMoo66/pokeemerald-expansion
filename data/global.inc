@@ -1518,37 +1518,37 @@ TypeEnhancingHeldItemsPokemart:
 	.2byte ITEM_NONE
 
 GetRivalForNameBox::
-# 874 "data/global.pory"
+# 878 "data/global.pory"
 	switch VAR_EMERALBODY_RIVAL
-# 875 "data/global.pory"
-	case 1, GetRivalForNameBox_2
-# 877 "data/global.pory"
-	case 2, GetRivalForNameBox_3
 # 879 "data/global.pory"
-	case 3, GetRivalForNameBox_4
+	case 1, GetRivalForNameBox_2
 # 881 "data/global.pory"
+	case 2, GetRivalForNameBox_3
+# 883 "data/global.pory"
+	case 3, GetRivalForNameBox_4
+# 885 "data/global.pory"
 	case 4, GetRivalForNameBox_5
-# 884 "data/global.pory"
+# 888 "data/global.pory"
 	speakername CommonText_Baron
 	return
 
 GetRivalForNameBox_2:
-# 876 "data/global.pory"
+# 880 "data/global.pory"
 	speakername CommonText_Harper
 	return
 
 GetRivalForNameBox_3:
-# 878 "data/global.pory"
+# 882 "data/global.pory"
 	speakername CommonText_Jakson
 	return
 
 GetRivalForNameBox_4:
-# 880 "data/global.pory"
+# 884 "data/global.pory"
 	speakername CommonText_Redd
 	return
 
 GetRivalForNameBox_5:
-# 882 "data/global.pory"
+# 886 "data/global.pory"
 	speakername CommonText_Sakura
 	return
 
@@ -1892,26 +1892,30 @@ CommonText_Wallace::
 # 867 "data/global.pory"
 	.string "Wallace$"
 
+CommonText_Looker::
+# 871 "data/global.pory"
+	.string "Looker$"
+
 CommonText_Baron::
-# 888 "data/global.pory"
+# 892 "data/global.pory"
 	.string "Baron$"
 
 CommonText_Harper::
-# 892 "data/global.pory"
+# 896 "data/global.pory"
 	.string "Harper$"
 
 CommonText_Jakson::
-# 896 "data/global.pory"
+# 900 "data/global.pory"
 	.string "Jakson$"
 
 CommonText_Redd::
-# 900 "data/global.pory"
+# 904 "data/global.pory"
 	.string "Redd$"
 
 CommonText_Sakura::
-# 904 "data/global.pory"
+# 908 "data/global.pory"
 	.string "Sakura$"
 
 Text_PokevialSizeIncrease::
-# 908 "data/global.pory"
+# 912 "data/global.pory"
 	.string "The Pokévial's size was increased!$"

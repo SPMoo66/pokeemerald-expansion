@@ -46541,6 +46541,30 @@ static const u16 sFalinksEmeribianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sTangtripTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sSludgmaTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMudcargoTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKotoraTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sRaitoraTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMadameTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sApimarillTeachableLearnset[] = {
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -46633,6 +46657,10 @@ static const u16 sSolfloraTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sShibirefuguTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
@@ -47000,5 +47028,33 @@ static const u16 sDragalgeEmeribianTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SWAGGER,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMeganiumEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sTyphlosionEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFeraligatrEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMightyenaEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sShinxEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sLuxioEmeribianTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sLuxrayEmeribianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };

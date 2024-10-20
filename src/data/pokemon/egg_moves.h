@@ -1123,7 +1123,7 @@ static const u16 sChanseyEggMoveLearnset[] = {
 #endif //P_FAMILY_CHANSEY
 
 #if P_FAMILY_TANGELA
-static const u16 sTangelaEggMoveLearnset[] = {
+static const u16 sTangtripEggMoveLearnset[] = {
     MOVE_FLAIL,
     MOVE_CONFUSION,
     MOVE_MEGA_DRAIN,
@@ -2192,6 +2192,16 @@ static const u16 sSlugmaEggMoveLearnset[] = {
     MOVE_INFERNO,
     MOVE_EARTH_POWER,
     MOVE_GUARD_SWAP,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sSludgmaEggMoveLearnset[] = {
+    MOVE_MUD_BOMB,
+    MOVE_MUD_SPORT,
+    MOVE_WATER_SPORT,
+    MOVE_SAND_TOMB,
+    MOVE_AQUA_RING,
+    MOVE_BRINE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SLUGMA
@@ -3631,6 +3641,23 @@ static const u16 sShinxEggMoveLearnset[] = {
     MOVE_HELPING_HAND,
     MOVE_EERIE_IMPULSE,
     MOVE_FAKE_TEARS,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sShinxEmeribianEggMoveLearnset[] = {
+    MOVE_ICE_FANG,
+    MOVE_FIRE_FANG,
+    MOVE_THUNDER_FANG,
+    MOVE_QUICK_ATTACK,
+    MOVE_HOWL,
+    MOVE_NIGHT_SLASH,
+    MOVE_SWIFT,
+    MOVE_DOUBLE_KICK,
+    MOVE_SIGNAL_BEAM,
+    MOVE_HELPING_HAND,
+    MOVE_FAKE_TEARS,
+    MOVE_PSYCHIC_TERRAIN,
+    MOVE_REFLECT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SHINX
@@ -6503,3 +6530,19 @@ static const u16 sFrigibaxEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FRIGIBAX
+
+static const u16 sKotoraEggMoveLearnset[] = {
+    MOVE_ELECTRIC_TERRAIN,
+    MOVE_WISH,
+    MOVE_YAWN,
+    MOVE_SLACK_OFF,
+    MOVE_ASSIST,
+    MOVE_ION_DELUGE,
+    MOVE_THUNDER_FANG,
+    MOVE_FOCUS_ENERGY,
+    MOVE_DISARMING_VOICE,
+    MOVE_FLING,
+    MOVE_AGILITY,
+    MOVE_GLARE,
+    MOVE_UNAVAILABLE,
+};

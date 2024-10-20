@@ -229,6 +229,7 @@ static const u8 sText_EVO_LEVEL_DUSK[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, dusk 
 static const u8 sText_EVO_ITEM_HOLD_DAY[] = _("{LV}{UP_ARROW}, holds {STR_VAR_2}, day");
 static const u8 sText_EVO_ITEM_HOLD_NIGHT[] = _("{LV}{UP_ARROW}, holds {STR_VAR_2}, night");
 static const u8 sText_EVO_MOVE[] = _("{LV}{UP_ARROW}, knows {STR_VAR_2}");
+static const u8 sText_EVO_LEVEL_MOVE[] = _("{LV}{UP_ARROW} to {STR_VAR_3}, knows {STR_VAR_2}");
 static const u8 sText_EVO_MAPSEC[] = _("{LV}{UP_ARROW} on {STR_VAR_2}");
 static const u8 sText_EVO_ITEM_MALE[] = _("{STR_VAR_2} used on male");
 static const u8 sText_EVO_ITEM_FEMALE[] = _("{STR_VAR_2} used on female");
@@ -6730,6 +6731,11 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, u16 species, u8 dept
         case EVO_MOVE:
             StringCopy(gStringVar2, GetMoveName(evolutions[i].param));
             StringExpandPlaceholders(gStringVar4, sText_EVO_MOVE );
+            break;
+        case EVO_LEVEL_MOVE:
+            StringCopy(gStringVar2, GetMoveName(evolutions[i].param));
+			ConvertIntToDecimalStringN(gStringVar3, evolutions[i].param2, STR_CONV_MODE_LEADING_ZEROS, EVO_SCREEN_LVL_DIGITS); //level
+            StringExpandPlaceholders(gStringVar4, sText_EVO_LEVEL_MOVE );
             break;
         case EVO_FRIENDSHIP_MOVE_TYPE:
             StringCopy(gStringVar2, gTypesInfo[evolutions[i].param].name);

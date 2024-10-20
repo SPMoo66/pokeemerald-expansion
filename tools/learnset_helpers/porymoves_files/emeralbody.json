@@ -4179,6 +4179,33 @@
       "TutorMoves": [
       ]
     },
+    "MEGANIUM_EMERIBIAN": {
+      "LevelMoves": [],
+      "PreEvoMoves": [],
+      "TMMoves": [
+      ],
+      "EggMoves": [],
+      "TutorMoves": [
+      ]
+    },
+    "TYPHLOSION_EMERIBIAN": {
+      "LevelMoves": [],
+      "PreEvoMoves": [],
+      "TMMoves": [
+      ],
+      "EggMoves": [],
+      "TutorMoves": [
+      ]
+    },
+    "FERALIGATR_EMERIBIAN": {
+      "LevelMoves": [],
+      "PreEvoMoves": [],
+      "TMMoves": [
+      ],
+      "EggMoves": [],
+      "TutorMoves": [
+      ]
+    },
     "NOCTOWL_EMERIBIAN": {
       "LevelMoves": [],
       "PreEvoMoves": [],
@@ -4471,6 +4498,15 @@
       "TutorMoves": [
       ]
     },
+    "MIGHTYENA_EMERIBIAN": {
+      "LevelMoves": [],
+      "PreEvoMoves": [],
+      "TMMoves": [
+      ],
+      "EggMoves": [],
+      "TutorMoves": [
+      ]
+    },
     "RALTS_EMERIBIAN": {
       "LevelMoves": [],
       "PreEvoMoves": [],
@@ -4611,6 +4647,33 @@
         "MOVE_STRENGTH",
         "MOVE_ROCK_CLIMB",
         "MOVE_ROCK_SMASH"
+      ],
+      "EggMoves": [],
+      "TutorMoves": [
+      ]
+    },
+    "SHINX_EMERIBIAN": {
+      "LevelMoves": [],
+      "PreEvoMoves": [],
+      "TMMoves": [
+      ],
+      "EggMoves": [],
+      "TutorMoves": [
+      ]
+    },
+    "LUXIO_EMERIBIAN": {
+      "LevelMoves": [],
+      "PreEvoMoves": [],
+      "TMMoves": [
+      ],
+      "EggMoves": [],
+      "TutorMoves": [
+      ]
+    },
+    "LUXRAY_EMERIBIAN": {
+      "LevelMoves": [],
+      "PreEvoMoves": [],
+      "TMMoves": [
       ],
       "EggMoves": [],
       "TutorMoves": [
@@ -5113,6 +5176,60 @@
       "TutorMoves": [
       ]
     },
+    "TANGTRIP": {
+      "LevelMoves": [],
+      "PreEvoMoves": [],
+      "TMMoves": [
+      ],
+      "EggMoves": [],
+      "TutorMoves": [
+      ]
+    },
+    "SLUDGMA": {
+      "LevelMoves": [],
+      "PreEvoMoves": [],
+      "TMMoves": [
+      ],
+      "EggMoves": [],
+      "TutorMoves": [
+      ]
+    },
+    "MUDCARGO": {
+      "LevelMoves": [],
+      "PreEvoMoves": [],
+      "TMMoves": [
+      ],
+      "EggMoves": [],
+      "TutorMoves": [
+      ]
+    },
+    "KOTORA": {
+      "LevelMoves": [],
+      "PreEvoMoves": [],
+      "TMMoves": [
+      ],
+      "EggMoves": [],
+      "TutorMoves": [
+      ]
+    },
+    "RAITORA": {
+      "LevelMoves": [],
+      "PreEvoMoves": [],
+      "TMMoves": [
+      ],
+      "EggMoves": [],
+      "TutorMoves": [
+      ]
+    },
+    "MADAME": {
+      "LevelMoves": [],
+      "PreEvoMoves": [],
+      "TMMoves": [
+      ],
+      "EggMoves": [],
+      "TutorMoves": [
+      ]
+    },
     "APIMARILL": {
       "LevelMoves": [],
       "PreEvoMoves": [],
@@ -5215,6 +5332,15 @@
 	],
       "EggMoves": [],
       "TutorMoves": []
+    },
+    "SHIBIREFUGU": {
+      "LevelMoves": [],
+      "PreEvoMoves": [],
+      "TMMoves": [
+      ],
+      "EggMoves": [],
+      "TutorMoves": [
+      ]
     },
     "DELIJOY": {
       "LevelMoves": [],

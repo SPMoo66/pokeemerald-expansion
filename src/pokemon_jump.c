@@ -476,6 +476,7 @@ static const struct PokemonJumpMons sPokeJumpMons[] =
     { .species = SPECIES_KRABBY,                            .jumpType = JUMP_TYPE_FAST, },
     { .species = SPECIES_EXEGGCUTE,                         .jumpType = JUMP_TYPE_SLOW, },
     { .species = SPECIES_CUBONE,                            .jumpType = JUMP_TYPE_NORMAL, },
+    { .species = SPECIES_TANGTRIP,                          .jumpType = JUMP_TYPE_NORMAL, },
     { .species = SPECIES_DITTO,                             .jumpType = JUMP_TYPE_SLOW, },
     { .species = SPECIES_EEVEE,                             .jumpType = JUMP_TYPE_NORMAL, },
     { .species = SPECIES_EEVEE_PARTNER,                     .jumpType = JUMP_TYPE_NORMAL, },

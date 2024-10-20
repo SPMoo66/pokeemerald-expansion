@@ -449,6 +449,8 @@ static const union AnimCmd sAnim_Nidoqueen_1[] =
     ANIMCMD_END,
 };
 
+PLACEHOLDER_ANIM_SINGLE_FRAME(NidoqueenMega);
+
 static const union AnimCmd sAnim_NidoranM_1[] =
 {
     ANIMCMD_FRAME(0, 15),
@@ -473,6 +475,8 @@ static const union AnimCmd sAnim_Nidoking_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
+
+PLACEHOLDER_ANIM_SINGLE_FRAME(NidokingMega);
 #endif //P_FAMILY_NIDORAN
 
 #if P_FAMILY_CLEFAIRY
@@ -1703,6 +1707,8 @@ static const union AnimCmd sAnim_Tangrowth_1[] =
     ANIMCMD_FRAME(0, 50),
     ANIMCMD_END,
 };
+
+PLACEHOLDER_ANIM_SINGLE_FRAME(Tangtrip);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_TANGELA
 
@@ -2388,6 +2394,13 @@ static const union AnimCmd sAnim_Meganium_1[] =
 };
 
 PLACEHOLDER_ANIM_SINGLE_FRAME(MeganiumMega);
+
+static const union AnimCmd sAnim_MeganiumEmeribian_1[] =
+{
+    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
 #endif //P_FAMILY_CHIKORITA
 
 #if P_FAMILY_CYNDAQUIL
@@ -2419,6 +2432,13 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(TyphlosionMega);
 #if P_HISUIAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(TyphlosionHisuian);
 #endif //P_HISUIAN_FORMS
+
+static const union AnimCmd sAnim_TyphlosionEmeribian_1[] =
+{
+    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
 #endif //P_FAMILY_CYNDAQUIL
 
 #if P_FAMILY_TOTODILE
@@ -2441,6 +2461,15 @@ static const union AnimCmd sAnim_Croconaw_1[] =
 };
 
 static const union AnimCmd sAnim_Feraligatr_1[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 40),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_FeraligatrEmeribian_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -3165,6 +3194,25 @@ static const union AnimCmd sAnim_Magcargo_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
+static const union AnimCmd sAnim_Sludgma_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Mudcargo_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
 
 PLACEHOLDER_ANIM_SINGLE_FRAME(MagcargoEmeribian);
 #endif //P_FAMILY_SLUGMA
@@ -3575,6 +3623,16 @@ static const union AnimCmd sAnim_Poochyena_1[] =
 };
 
 static const union AnimCmd sAnim_Mightyena_1[] =
+{
+    ANIMCMD_FRAME(0, 27),
+    ANIMCMD_FRAME(1, 6),
+    ANIMCMD_FRAME(0, 6),
+    ANIMCMD_FRAME(1, 6),
+    ANIMCMD_FRAME(0, 6),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_MightyenaEmeribian_1[] =
 {
     ANIMCMD_FRAME(0, 27),
     ANIMCMD_FRAME(1, 6),
@@ -4647,6 +4705,8 @@ static const union AnimCmd sAnim_Crawdaunt_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
+
+PLACEHOLDER_ANIM_SINGLE_FRAME(CrawdauntMega);
 #endif //P_FAMILY_CORPHISH
 
 #if P_FAMILY_BALTOY
@@ -4749,6 +4809,7 @@ static const union AnimCmd sAnim_Milotic_1[] =
 };
 
 PLACEHOLDER_ANIM_SINGLE_FRAME(MiloticMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(MiloticMegaE);
 #endif //P_FAMILY_FEEBAS
 
 #if P_FAMILY_CASTFORM
@@ -5513,6 +5574,31 @@ static const union AnimCmd sAnim_Luxio_1[] =
 };
 
 static const union AnimCmd sAnim_Luxray_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_ShinxEmeribian_1[] =
+{
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_LuxioEmeribian_1[] =
+{
+    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_LuxrayEmeribian_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -10288,8 +10374,20 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Contageon);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Laneon);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Scaleon);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Titaneon);
+
+static const union AnimCmd sAnim_Kotora_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+PLACEHOLDER_ANIM_SINGLE_FRAME(Raitora);
+
+PLACEHOLDER_ANIM_SINGLE_FRAME(Madame);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Apimarill);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Solflora);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Shibirefugu);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Delijoy);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Cogment);
 
@@ -10431,9 +10529,11 @@ SINGLE_ANIMATION(SandslashAlolan);
 SINGLE_ANIMATION(NidoranF);
 SINGLE_ANIMATION(Nidorina);
 SINGLE_ANIMATION(Nidoqueen);
+SINGLE_ANIMATION(NidoqueenMega);
 SINGLE_ANIMATION(NidoranM);
 SINGLE_ANIMATION(Nidorino);
 SINGLE_ANIMATION(Nidoking);
+SINGLE_ANIMATION(NidokingMega);
 #endif //P_FAMILY_NIDORAN
 #if P_FAMILY_CLEFAIRY
 #if P_GEN_2_CROSS_EVOS
@@ -10733,6 +10833,7 @@ SINGLE_ANIMATION(Tangela);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Tangrowth);
 #endif //P_GEN_4_CROSS_EVOS
+SINGLE_ANIMATION(Tangtrip);
 #endif //P_FAMILY_TANGELA
 #if P_FAMILY_KANGASKHAN
 SINGLE_ANIMATION(Kangaskhan);
@@ -10922,6 +11023,7 @@ SINGLE_ANIMATION(Chikorita);
 SINGLE_ANIMATION(Bayleef);
 SINGLE_ANIMATION(Meganium);
 SINGLE_ANIMATION(MeganiumMega);
+SINGLE_ANIMATION(MeganiumEmeribian);
 #endif //P_FAMILY_CHIKORITA
 #if P_FAMILY_CYNDAQUIL
 SINGLE_ANIMATION(Cyndaquil);
@@ -10931,11 +11033,13 @@ SINGLE_ANIMATION(TyphlosionMega);
 #if P_HISUIAN_FORMS
 SINGLE_ANIMATION(TyphlosionHisuian);
 #endif //P_HISUIAN_FORMS
+SINGLE_ANIMATION(TyphlosionEmeribian);
 #endif //P_FAMILY_CYNDAQUIL
 #if P_FAMILY_TOTODILE
 SINGLE_ANIMATION(Totodile);
 SINGLE_ANIMATION(Croconaw);
 SINGLE_ANIMATION(Feraligatr);
+SINGLE_ANIMATION(FeraligatrEmeribian);
 #endif //P_FAMILY_TOTODILE
 #if P_FAMILY_SENTRET
 SINGLE_ANIMATION(Sentret);
@@ -11111,6 +11215,8 @@ SINGLE_ANIMATION(UrsalunaBloodmoon);
 SINGLE_ANIMATION(Slugma);
 SINGLE_ANIMATION(Magcargo);
 SINGLE_ANIMATION(MagcargoEmeribian);
+SINGLE_ANIMATION(Sludgma);
+SINGLE_ANIMATION(Mudcargo);
 #endif //P_FAMILY_SLUGMA
 #if P_FAMILY_SWINUB
 SINGLE_ANIMATION(Swinub);
@@ -11222,6 +11328,7 @@ SINGLE_ANIMATION(SwampertMega);
 #if P_FAMILY_POOCHYENA
 SINGLE_ANIMATION(Poochyena);
 SINGLE_ANIMATION(Mightyena);
+SINGLE_ANIMATION(MightyenaEmeribian);
 #endif //P_FAMILY_POOCHYENA
 #if P_FAMILY_ZIGZAGOON
 SINGLE_ANIMATION(Zigzagoon);
@@ -11439,6 +11546,7 @@ SINGLE_ANIMATION(Whiscash);
 #if P_FAMILY_CORPHISH
 SINGLE_ANIMATION(Corphish);
 SINGLE_ANIMATION(Crawdaunt);
+SINGLE_ANIMATION(CrawdauntMega);
 #endif //P_FAMILY_CORPHISH
 #if P_FAMILY_BALTOY
 SINGLE_ANIMATION(Baltoy);
@@ -11456,6 +11564,7 @@ SINGLE_ANIMATION(Armaldo);
 SINGLE_ANIMATION(Feebas);
 SINGLE_ANIMATION(Milotic);
 SINGLE_ANIMATION(MiloticMega);
+SINGLE_ANIMATION(MiloticMegaE);
 #endif //P_FAMILY_FEEBAS
 #if P_FAMILY_CASTFORM
 SINGLE_ANIMATION(CastformNormal);
@@ -11625,6 +11734,9 @@ SINGLE_ANIMATION(Shinx);
 SINGLE_ANIMATION(Luxio);
 SINGLE_ANIMATION(Luxray);
 SINGLE_ANIMATION(LuxrayMega);
+SINGLE_ANIMATION(ShinxEmeribian);
+SINGLE_ANIMATION(LuxioEmeribian);
+SINGLE_ANIMATION(LuxrayEmeribian);
 #endif //P_FAMILY_SHINX
 #if P_FAMILY_CRANIDOS
 SINGLE_ANIMATION(Cranidos);
@@ -13054,8 +13166,12 @@ SINGLE_ANIMATION(Contageon);
 SINGLE_ANIMATION(Laneon);
 SINGLE_ANIMATION(Scaleon);
 SINGLE_ANIMATION(Titaneon);
+SINGLE_ANIMATION(Kotora);
+SINGLE_ANIMATION(Raitora);
+SINGLE_ANIMATION(Madame);
 SINGLE_ANIMATION(Apimarill);
 SINGLE_ANIMATION(Solflora);
+SINGLE_ANIMATION(Shibirefugu);
 SINGLE_ANIMATION(Delijoy);
 SINGLE_ANIMATION(Cogment);
 

@@ -13734,7 +13734,7 @@ static const struct TrainerMon sParty_MayLinkPlaceholder[] = {
 static const struct TrainerMon sParty_GruntDevoncorp1[] = {
     {
     .lvl = 23,
-    .species = SPECIES_SLUGMA,
+    .species = SPECIES_SLUDGMA,
     },
     {
     .lvl = 23,
@@ -13771,7 +13771,7 @@ static const struct TrainerMon sParty_GruntDevoncorp3[] = {
 static const struct TrainerMon sParty_GruntDevoncorp4[] = {
     {
     .lvl = 22,
-    .species = SPECIES_KABUTO,
+    .species = SPECIES_KOTORA,
     },
     {
     .lvl = 22,
@@ -13790,7 +13790,7 @@ static const struct TrainerMon sParty_GruntDevoncorp5[] = {
     },
     {
     .lvl = 23,
-    .species = SPECIES_LUXIO,
+    .species = SPECIES_LUXIO_EMERIBIAN,
     },
     {
     .lvl = 23,

@@ -14199,6 +14199,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Pokevial,
         .effect = gItemEffect_Pokevial,
+        .iconPic = gItemIcon_Pokevial,
+        .iconPalette = gItemIconPalette_Pokevial,
     },
     //End Pokevial Branch
 

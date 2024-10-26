@@ -6223,12 +6223,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_GIGANTAMAX_FORMS
     [SPECIES_DURALUDON_GIGANTAMAX] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 115,
-        .baseDefense   = 135,
+        .baseHP        = 90,
+        .baseAttack    = 125,
+        .baseDefense   = 150,
         .baseSpeed     = 100,
-        .baseSpAttack  = 145,
-        .baseSpDefense = 70,
+        .baseSpAttack  = 150,
+        .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_STEEL, TYPE_DRAGON),
         .catchRate = 45,
         .expYield = 187,

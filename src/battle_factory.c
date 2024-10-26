@@ -163,10 +163,10 @@ static const u8 sFixedIVTable[][2] =
 static const u16 sInitialRentalMonRanges[][2] =
 {
     // Level 50
-    {FRONTIER_MON_BUTTERFREE, FRONTIER_MON_TITANEON},   // Tier 1
+    {FRONTIER_MON_BUTTERFREE, FRONTIER_MON_COGMENT},   // Tier 1
 
     // Open level
-    {FRONTIER_MON_VENUSAUR, FRONTIER_MON_SCALEON}, // Tier 2
+    {FRONTIER_MON_VENUSAUR, FRONTIER_MON_DELIJOY}, // Tier 2
 };
 
 // code

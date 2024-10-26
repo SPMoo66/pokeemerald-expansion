@@ -35,8 +35,8 @@
     FRONTIER_MON_RAPIDASH,                   \
     FRONTIER_MON_RAPIDASH_GALARIAN,          \
     FRONTIER_MON_SLOWBRO_GALARIAN,           \
-    FRONTIER_MON_FARFETCHD,                  \
     FRONTIER_MON_DODRIO,                     \
+    FRONTIER_MON_DODRIO_EMERIBIAN,           \
     FRONTIER_MON_DEWGONG,                    \
     FRONTIER_MON_MUK,                        \
     FRONTIER_MON_MUK_ALOLAN,                 \
@@ -78,20 +78,18 @@
     FRONTIER_MON_BELLOSSOM_EMERIBIAN,        \
     FRONTIER_MON_SUDOWOODO,                  \
     FRONTIER_MON_JUMPLUFF,                   \
-    FRONTIER_MON_SUNFLORA,                   \
+    FRONTIER_MON_JUMPLUFF_EMERIBIAN,         \
     FRONTIER_MON_ESPEON,                     \
     FRONTIER_MON_WOBBUFFET,                  \
     FRONTIER_MON_FORRETRESS,                 \
     FRONTIER_MON_STEELIX,                    \
     FRONTIER_MON_GRANBULL,                   \
-    FRONTIER_MON_QWILFISH,                   \
     FRONTIER_MON_HERACROSS,                  \
     FRONTIER_MON_MAGCARGO,                   \
     FRONTIER_MON_MAGCARGO_EMERIBIAN,         \
     FRONTIER_MON_CORSOLA,                    \
     FRONTIER_MON_OCTILLERY,                  \
     FRONTIER_MON_OCTILLERY_FRIBIAN,          \
-    FRONTIER_MON_DELIBIRD,                   \
     FRONTIER_MON_MANTINE,                    \
     FRONTIER_MON_HOUNDOOM,                   \
     FRONTIER_MON_KINGDRA,                    \
@@ -99,6 +97,7 @@
     FRONTIER_MON_HITMONTOP,                  \
     FRONTIER_MON_MILTANK,                    \
     FRONTIER_MON_MIGHTYENA,                  \
+    FRONTIER_MON_MIGHTYENA_EMERIBIAN,        \
     FRONTIER_MON_BEAUTIFLY,                  \
     FRONTIER_MON_DUSTOX,                     \
     FRONTIER_MON_LUDICOLO,                   \
@@ -152,6 +151,7 @@
     FRONTIER_MON_LUVDISC,                    \
     FRONTIER_MON_KRICKETUNE,                 \
     FRONTIER_MON_LUXRAY,                     \
+    FRONTIER_MON_LUXRAY_EMERIBIAN,           \
     FRONTIER_MON_RAMPARDOS,                  \
     FRONTIER_MON_BASTIODON,                  \
     FRONTIER_MON_WORMADAM,                   \
@@ -339,6 +339,11 @@
     FRONTIER_MON_CONTAGEON,                  \
     FRONTIER_MON_LANEON,                     \
     FRONTIER_MON_TITANEON,                   \
+    FRONTIER_MON_MUDCARGO,                   \
+    FRONTIER_MON_APIMARILL,                  \
+    FRONTIER_MON_SOLFLORA,                   \
+    FRONTIER_MON_SHIBIREFUGU,                \
+    FRONTIER_MON_COGMENT,                    \
 	-1
 
 //Tier 2 Pkmn
@@ -371,9 +376,12 @@
     FRONTIER_MON_MOLTRES_GALARIAN,           \
     FRONTIER_MON_DRAGONITE,                  \
     FRONTIER_MON_MEGANIUM,                   \
+    FRONTIER_MON_MEGANIUM_EMERIBIAN,         \
     FRONTIER_MON_TYPHLOSION,                 \
     FRONTIER_MON_TYPHLOSION_HISUIAN,         \
+    FRONTIER_MON_TYPHLOSION_EMERIBIAN,       \
     FRONTIER_MON_FERALIGATR,                 \
+    FRONTIER_MON_FERALIGATR_EMERIBIAN,       \
     FRONTIER_MON_ARIADOS,                    \
     FRONTIER_MON_AZUMARILL,                  \
     FRONTIER_MON_POLITOED,                   \
@@ -417,6 +425,7 @@
     FRONTIER_MON_BIBAREL,                    \
     FRONTIER_MON_ROSERADE,                   \
     FRONTIER_MON_GASTRODON,                  \
+    FRONTIER_MON_LOPUNNY_EMERIBIAN,          \
     FRONTIER_MON_GARCHOMP,                   \
     FRONTIER_MON_LUCARIO,                    \
     FRONTIER_MON_HIPPOWDON,                  \
@@ -485,6 +494,7 @@
     FRONTIER_MON_AEGISLASH_EMERIBIAN,        \
     FRONTIER_MON_BARBARACLE,                 \
     FRONTIER_MON_DRAGALGE,                   \
+    FRONTIER_MON_DRAGALGE_EMERIBIAN,         \
     FRONTIER_MON_HELIOLISK,                  \
     FRONTIER_MON_SYLVEON,                    \
     FRONTIER_MON_HAWLUCHA,                   \
@@ -594,7 +604,14 @@
     FRONTIER_MON_OGERPON,                    \
     FRONTIER_MON_ARCHALUDON,                 \
     FRONTIER_MON_HYDRAPPLE,                  \
+    FRONTIER_MON_GOUGING_FIRE,               \
+    FRONTIER_MON_RAGING_BOLT,                \
+    FRONTIER_MON_IRON_BOULDER,               \
+    FRONTIER_MON_IRON_CROWN,                 \
     FRONTIER_MON_SCALEON,                    \
+    FRONTIER_MON_RAITORA,                    \
+    FRONTIER_MON_MADAME,                     \
+    FRONTIER_MON_DELIJOY,                    \
 	-1
 
 

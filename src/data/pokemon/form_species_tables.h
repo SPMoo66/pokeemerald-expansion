@@ -2580,8 +2580,8 @@ static const u16 sCopperajahFormSpeciesIdTable[] = {
 #endif //P_FAMILY_CUFANT
 
 #if P_FAMILY_DURALUDON
-static const u16 sDuraludonFormSpeciesIdTable[] = {
-    SPECIES_DURALUDON,
+static const u16 sArchaludonFormSpeciesIdTable[] = {
+    SPECIES_ARCHALUDON,
 #if P_GIGANTAMAX_FORMS
     SPECIES_DURALUDON_GIGANTAMAX,
 #endif

@@ -6217,8 +6217,6 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sDuraludonLevelUpLearnset,
         .teachableLearnset = sDuraludonTeachableLearnset,
         .eggMoveLearnset = sDuraludonEggMoveLearnset,
-        .formSpeciesIdTable = sDuraludonFormSpeciesIdTable,
-        .formChangeTable = sDuraludonFormChangeTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_METAL_ALLOY, SPECIES_ARCHALUDON}),
     },
 
@@ -6243,9 +6241,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_STEELWORKER, ABILITY_STEELWORKER, ABILITY_STEELWORKER },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Duraludon"),
+        .speciesName = _("Archaludon"),
         .cryId = CRY_DURALUDON,
-        .natDexNum = NATIONAL_DEX_DURALUDON,
+        .natDexNum = NATIONAL_DEX_ARCHALUDON,
         .categoryName = _("Alloy"),
         .height = 430,
         .weight = 0,
@@ -6277,8 +6275,8 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .teachableLearnset = sDuraludonTeachableLearnset,
         .isMegaEvolution = TRUE,
         .eggMoveLearnset = sDuraludonEggMoveLearnset,
-        .formSpeciesIdTable = sDuraludonFormSpeciesIdTable,
-        .formChangeTable = sDuraludonFormChangeTable,
+        .formSpeciesIdTable = sArchaludonFormSpeciesIdTable,
+        .formChangeTable = sArchaludonFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
 
@@ -6339,6 +6337,8 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
             gOverworldPalette_Archaludon,
             gShinyOverworldPalette_Archaludon
         )
+        .formSpeciesIdTable = sArchaludonFormSpeciesIdTable,
+        .formChangeTable = sArchaludonFormChangeTable,
         .levelUpLearnset = sArchaludonLevelUpLearnset,
         .teachableLearnset = sArchaludonTeachableLearnset,
     },

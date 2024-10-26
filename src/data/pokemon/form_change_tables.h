@@ -1298,7 +1298,7 @@ static const struct FormChange sCopperajahFormChangeTable[] = {
 #endif //P_FAMILY_CUFANT
 
 #if P_FAMILY_DURALUDON
-static const struct FormChange sDuraludonFormChangeTable[] = {
+static const struct FormChange sArchaludonFormChangeTable[] = {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM, SPECIES_DURALUDON_GIGANTAMAX, ITEM_MEGA_STONE_G},
     {FORM_CHANGE_TERMINATOR},
 };

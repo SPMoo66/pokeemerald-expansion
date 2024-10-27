@@ -78,7 +78,7 @@ EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions:
 
 EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames:
 	.string "Come on, let's record your name as a\n"
-	.string "nTrainer who triumphed over the\l"
+	.string "Trainer who triumphed over the\l"
 	.string "Pokémon League, and the names of the\l"
 	.string "partners who battled with you.$"
 

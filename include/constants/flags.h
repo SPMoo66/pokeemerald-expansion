@@ -651,15 +651,17 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_STARDUST                  (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264    0x264 // Unused Flag
-#define FLAG_UNUSED_0x265    0x265 // Unused Flag
-#define FLAG_UNUSED_0x266    0x266 // Unused Flag
-#define FLAG_UNUSED_0x267    0x267 // Unused Flag
-#define FLAG_UNUSED_0x268    0x268 // Unused Flag
-#define FLAG_UNUSED_0x269    0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A    0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B    0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C    0x26C // Unused Flag
+#define FLAG_HIDE_EEVEE      0x264
+#define FLAG_HIDE_HONEDGE    0x265
+#define FLAG_HIDE_MAREEP     0x266
+#define FLAG_HIDE_GOOMY      0x267
+#define FLAG_HIDE_ROOKIDEE   0x268
+#define FLAG_HIDE_DRATINI    0x269
+#define FLAG_HIDE_MUDKIP     0x26A
+#define FLAG_DEMO_LADY       0x26B
+
+#define FLAG_RANDOM_MUSIC    0x26C
+
 #define FLAG_UNUSED_0x26D    0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E    0x26E // Unused Flag
 #define FLAG_UNUSED_0x26F    0x26F // Unused Flag

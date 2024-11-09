@@ -5882,28 +5882,140 @@ u16 GetBattleBGM(void)
         default:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
             {
-                u8 challengeNum;
-                u32 battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
-                u32 lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
-                challengeNum = gSaveBlock2Ptr->frontier.factoryWinStreaks[battleMode][lvlMode] % 7;
-                switch (challengeNum)
-                {
-                case 0:
-                    return MUS_VS_TRAINER;
-                case 1:
-                    return MUS_RG_VS_TRAINER;
-                case 2:
-                    return MUS_DP_VS_TRAINER;
-                case 3:
-                    return MUS_HG_VS_TRAINER;
-                case 4:
-                    return MUS_HG_VS_TRAINER_KANTO;
-                case 5:
-                    return MUS_DP_VS_GYM_LEADER;
-                case 6:
-                    return MUS_DP_VS_GALACTIC_COMMANDER;
-                default:
-                    return MUS_VS_TRAINER;
+				if(!FlagGet(FLAG_RANDOM_MUSIC)) {
+                    u8 challengeNum;
+                    u32 battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
+                    u32 lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
+                    challengeNum = gSaveBlock2Ptr->frontier.factoryWinStreaks[battleMode][lvlMode] % 7;
+                    switch (challengeNum)
+                    {
+                    case 0:
+                        return MUS_VS_TRAINER;
+                    case 1:
+                        return MUS_RG_VS_TRAINER;
+                    case 2:
+                        return MUS_DP_VS_TRAINER;
+                    case 3:
+                        return MUS_HG_VS_TRAINER;
+                    case 4:
+                        return MUS_HG_VS_TRAINER_KANTO;
+                    case 5:
+                        return MUS_DP_VS_GYM_LEADER;
+                    case 6:
+                        return MUS_DP_VS_GALACTIC_COMMANDER;
+                    default:
+                        return MUS_VS_TRAINER;
+                    }
+				}
+                else {
+                    u16 rnd = Random() % 50;
+                    switch (rnd)
+                    {
+                    case 0:
+                        return MUS_C_VS_LEGEND_BEAST;
+                    case 1:
+                        return MUS_VS_WILD;
+                    case 2:
+                        return MUS_VS_AQUA_MAGMA;
+                    case 3:
+                        return MUS_VS_GYM_LEADER;
+                    case 4:
+                        return MUS_VS_CHAMPION;
+                    case 5:
+                        return MUS_VS_REGI;
+                    case 6:
+                        return MUS_VS_KYOGRE_GROUDON;
+                    case 7:
+                        return MUS_VS_RIVAL;
+                    case 8:
+                        return MUS_VS_ELITE_FOUR;
+                    case 9:
+                        return MUS_VS_AQUA_MAGMA_LEADER;
+                    case 10:
+                        return MUS_RG_VS_GYM_LEADER;
+                    case 11:
+                        return MUS_RG_VS_TRAINER;
+                    case 12:
+                        return MUS_RG_VS_WILD;
+                    case 13:
+                        return MUS_RG_VS_CHAMPION;
+                    case 14:
+                        return MUS_RG_VS_DEOXYS;
+                    case 15:
+                        return MUS_RG_VS_MEWTWO;
+                    case 16:
+                        return MUS_RG_VS_LEGEND;
+                    case 17:
+                        return MUS_VS_RAYQUAZA;
+                    case 18:
+                        return MUS_VS_FRONTIER_BRAIN;
+                    case 19:
+                        return MUS_VS_MEW;
+                    case 20:
+                        return MUS_DP_VS_GYM_LEADER;
+                    case 21:
+                        return MUS_DP_VS_UXIE_MESPRIT_AZELF;
+                    case 22:
+                        return MUS_DP_VS_TRAINER;
+                    case 23:
+                        return MUS_DP_VS_GALACTIC_BOSS;
+                    case 24:
+                        return MUS_DP_VS_DIALGA_PALKIA;
+                    case 25:
+                        return MUS_DP_VS_CHAMPION;
+                    case 26:
+                        return MUS_DP_VS_GALACTIC;
+                    case 27:
+                        return MUS_DP_VS_RIVAL;
+                    case 28:
+                        return MUS_DP_VS_ARCEUS;
+                    case 29:
+                        return MUS_DP_VS_LEGEND;
+                    case 30:
+                        return MUS_DP_VS_GALACTIC_COMMANDER;
+                    case 31:
+                        return MUS_DP_VS_ELITE_FOUR;
+                    case 32:
+                        return MUS_PL_VS_GIRATINA;
+                    case 33:
+                        return MUS_PL_VS_FRONTIER_BRAIN;
+                    case 34:
+                        return MUS_PL_VS_REGI;
+                    case 35:
+                        return MUS_HG_VS_WILD;
+                    case 36:
+                        return MUS_HG_VS_TRAINER;
+                    case 37:
+                        return MUS_HG_VS_GYM_LEADER;
+                    case 38:
+                        return MUS_HG_VS_RIVAL;
+                    case 39:
+                        return MUS_HG_VS_ROCKET;
+                    case 40:
+                        return MUS_HG_VS_SUICUNE;
+                    case 41:
+                        return MUS_HG_VS_ENTEI;
+                    case 42:
+                        return MUS_HG_VS_RAIKOU;
+                    case 43:
+                        return MUS_HG_VS_CHAMPION;
+                    case 44:
+                        return MUS_HG_VS_WILD_KANTO;
+                    case 45:
+                        return MUS_HG_VS_TRAINER_KANTO;
+                    case 46:
+                        return MUS_HG_VS_GYM_LEADER_KANTO;
+                    case 47:
+                        return MUS_HG_VS_HO_OH;
+                    case 48:
+                        return MUS_HG_VS_LUGIA;
+                    case 49:
+                        return MUS_HG_VS_KYOGRE_GROUDON;
+                    case 50:
+                        return MUS_VS_TRAINER;
+                    default:
+                        return MUS_VS_TRAINER;
+                    }
                 }
             }
             else

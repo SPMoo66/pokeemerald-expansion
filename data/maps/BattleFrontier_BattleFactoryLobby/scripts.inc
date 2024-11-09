@@ -1,5 +1,5 @@
 .set LOCALID_ATTENDANT_SINGLES, 1
-.set LOCALID_ATTENDANT_DOUBLES, 6
+.set LOCALID_ATTENDANT_DOUBLES, 5
 
 BattleFrontier_BattleFactoryLobby_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattleFactoryLobby_OnFrame
@@ -54,6 +54,7 @@ BattleFrontier_BattleFactoryLobby_EventScript_DefeatedFactoryHead::
 BattleFrontier_BattleFactoryLobby_EventScript_GiveBattlePoints::
 	msgbox BattleFrontier_BattleFactoryLobby_Text_AwardBattlePoints, MSGBOX_DEFAULT
 	frontier_givepoints
+	setflag FLAG_EMIB_DEMO_1
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
 	message BattleFrontier_BattleFactoryLobby_Text_ExchangeMonsAndSave
 	waitmessage
@@ -471,7 +472,7 @@ BattleFrontier_BattleFactoryLobby_Text_ReadWhichHeading:
 
 BattleFrontier_BattleFactoryLobby_Text_ExplainBasicRules:
 	.string "In a Battle Swap event, you may use\n"
-	.string "only three Pokémon.\p"
+	.string "only four Pokémon.\p"
 	.string "Whether you are renting or swapping,\n"
 	.string "your team may not have two or more\l"
 	.string "of the same Pokémon.$"
@@ -505,3 +506,14 @@ BattleFrontier_BattleFactoryLobby_Text_ExplainOpenLvRules:
 	.string "In the Open Level, the rental Pokémon\n"
 	.string "and the opposing Trainers' Pokémon\l"
 	.string "are all Level 100.$"
+
+BattleFrontier_BattleFactoryLobby_EventScript_Balls::
+	lockall
+	msgbox BattleFrontier_BattleFactoryLobby_Text_Balls, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+BattleFrontier_BattleFactoryLobby_Text_Balls:
+	.string "Pokéballs are laid out with Rental\n"
+	.string "Pokémon inside.$"

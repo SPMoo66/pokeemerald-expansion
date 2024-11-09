@@ -1,0 +1,247 @@
+raw `
+BattleFrontier_Lounge6_MapScripts::
+	.byte 0
+
+BattleFrontier_Lounge6_EventScript_Trader::
+	lock
+	faceplayer
+	goto_if_set FLAG_BATTLE_FRONTIER_TRADE_DONE, BattleFrontier_Lounge6_EventScript_TradeCompleted
+	setvar VAR_0x8008, INGAME_TRADE_MEOWTH
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
+	copyvar VAR_0x8009, VAR_RESULT
+	msgbox BattleFrontier_Lounge6_Text_WouldYouLikeToTrade, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, BattleFrontier_Lounge6_EventScript_DeclineTrade
+	special ChoosePartyMon
+	waitstate
+	copyvar VAR_0x800A, VAR_0x8004
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, BattleFrontier_Lounge6_EventScript_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x800A
+	specialvar VAR_RESULT, GetTradeSpecies
+	copyvar VAR_0x800B, VAR_RESULT
+	goto_if_ne VAR_RESULT, VAR_0x8009, BattleFrontier_Lounge6_EventScript_NotRequestedMon
+	copyvar VAR_0x8004, VAR_0x8008
+	copyvar VAR_0x8005, VAR_0x800A
+	special CreateInGameTradePokemon
+	special DoInGameTradeScene
+	waitstate
+	msgbox BattleFrontier_Lounge6_Text_PromiseIllBeGoodToIt, MSGBOX_DEFAULT
+	setflag FLAG_BATTLE_FRONTIER_TRADE_DONE
+	release
+	end
+
+BattleFrontier_Lounge6_EventScript_DeclineTrade::
+	msgbox BattleFrontier_Lounge6_Text_WellThatsFineToo, MSGBOX_DEFAULT
+	release
+	end
+
+BattleFrontier_Lounge6_EventScript_NotRequestedMon::
+	bufferspeciesname STR_VAR_1, VAR_0x8009
+	msgbox BattleFrontier_Lounge6_Text_DontTradeForAnythingButMon, MSGBOX_DEFAULT
+	release
+	end
+
+BattleFrontier_Lounge6_EventScript_TradeCompleted::
+	msgbox BattleFrontier_Lounge6_Text_SkittySoMuchCuterThanImagined, MSGBOX_DEFAULT
+	release
+	end
+
+BattleFrontier_Lounge6_Text_WouldYouLikeToTrade:
+	.string "My Pokémon is a {STR_VAR_2}.\n"
+	.string "Do you know it?\l"
+	.string "It's quite cute and rather nice.\p"
+	.string "This little one, I could trade with\n"
+	.string "pride!\p"
+	.string "Would you like to trade me a {STR_VAR_1}\n"
+	.string "for my {STR_VAR_2}?$"
+
+BattleFrontier_Lounge6_Text_PromiseIllBeGoodToIt:
+	.string "Oh, it's adorable!\n"
+	.string "Thank you!\l"
+	.string "I promise I'll be good to it!\p"
+	.string "Oh! I hope you'll be good to\n"
+	.string "my {STR_VAR_2}, too!$"
+
+BattleFrontier_Lounge6_Text_DontTradeForAnythingButMon:
+	.string "Oh, I'm sorry!\n"
+	.string "I don't intend to trade for anything\l"
+	.string "but a {STR_VAR_1}.$"
+
+BattleFrontier_Lounge6_Text_WellThatsFineToo:
+	.string "Oh, you won't?\n"
+	.string "Well, that's fine, too.\l"
+	.string "Please come visit us again.$"
+
+BattleFrontier_Lounge6_Text_SkittySoMuchCuterThanImagined:
+	.string "Giggle!\n"
+	.string "A Skitty is so much cuter than I had\l"
+	.string "imagined. I'm delighted!$"
+`
+
+const DEMO_VENDOR = 1
+const DEMO_LADY = 2
+const MON_ROOKIDEE = 3
+const MON_GOOMY = 4
+const MON_MAREEP = 5
+const MON_EEVEE = 6
+const MON_HONEDGE = 7
+const MON_DRATINI = 8
+const MON_MUDKIP = 9
+
+script DemoLady {
+	if (!flag(FLAG_DEMO_LADY)) {
+		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+		switch (var(VAR_TEMP_0)) {
+			case 13:
+				applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+			default:
+		}
+		applymovement (DEMO_LADY, Common_Movement_FacePlayer)
+		waitmovement (0)
+		msgbox (format ("Hello!\p"
+						"I used to run a daycare out in Kanto.\p"
+						"If you'd like, you can spend your BP with me and I'll populate the area with some Pokémon."))
+		closemessage
+		setflag (FLAG_DEMO_LADY)
+	}
+	else {
+		applymovement (DEMO_LADY, Common_Movement_FacePlayer)
+		if (!flag(FLAG_HIDE_EEVEE) && !flag(FLAG_HIDE_MAREEP) && !flag(FLAG_HIDE_ROOKIDEE) && !flag(FLAG_HIDE_HONEDGE) && !flag(FLAG_HIDE_GOOMY) && !flag(FLAG_HIDE_MUDKIP) && !flag(FLAG_HIDE_DRATINI)) {
+			msgbox (format ("You've managed to fill this area as much as I could imagine.\p"
+							"Thank you for all of your help, dear."))
+			closemessage
+		}
+		else {
+			msgbox (format ("Would you like me to fill the area with any new Pokémon?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == YES) {
+
+				specialvar (VAR_TEMP_1, GetFrontierBattlePoints)
+				if (var(VAR_TEMP_1) >= 2) {
+		
+					if (flag(FLAG_HIDE_EEVEE)) {
+						dynmultipush("Eevee{CLEAR_TO 0x5E}2BP", 1)
+					}
+					if (flag(FLAG_HIDE_MAREEP)) {
+						dynmultipush("Mareep{CLEAR_TO 0x5E}2BP", 2)
+					}
+					if (flag(FLAG_HIDE_ROOKIDEE)) {
+						dynmultipush("Rookidee{CLEAR_TO 0x5E}2BP", 3)
+					}
+					if (flag(FLAG_HIDE_HONEDGE)) {
+						dynmultipush("Honedge{CLEAR_TO 0x5E}2BP", 4)
+					}
+					if (flag(FLAG_HIDE_GOOMY)) {
+						dynmultipush("Goomy{CLEAR_TO 0x5E}2BP", 5)
+					}
+					if (flag(FLAG_HIDE_MUDKIP)) {
+						dynmultipush("Mudkip{CLEAR_TO 0x5E}2BP", 6)
+					}
+					if (flag(FLAG_HIDE_DRATINI)) {
+						dynmultipush("Dratini{CLEAR_TO 0x5E}2BP", 7)
+					}
+
+					special (ShowBattlePointsWindow)
+					dynmultistack(17, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+					switch (var(VAR_RESULT)) {
+						case 1:
+							clearflag (FLAG_HIDE_EEVEE)
+						case 2:
+							clearflag (FLAG_HIDE_MAREEP)
+						case 3:
+							clearflag (FLAG_HIDE_ROOKIDEE)
+						case 4:
+							clearflag (FLAG_HIDE_HONEDGE)
+						case 5:
+							clearflag (FLAG_HIDE_GOOMY)
+						case 6:
+							clearflag (FLAG_HIDE_MUDKIP)
+						case 7:
+							clearflag (FLAG_HIDE_DRATINI)
+						default:
+							msgbox (format ("Do come back if you want me to find you another Pokémon."))
+							special (CloseBattlePointsWindow)
+							closemessage
+							end
+					}
+					setvar (VAR_0x8004, 2)
+					special (TakeFrontierBattlePoints)
+					special (UpdateBattlePointsWindow)
+					msgbox (format ("Wonderful!\n"
+									"I'll have that Pokémon out here the next time you visit."))
+					special (CloseBattlePointsWindow)
+					closemessage
+					end
+				}
+				else {
+					msgbox (format ("Oh…\p"
+									"It doesn't seem as though you have enough BP for me.\p"
+									"Do come back when you obtain some more."))
+					closemessage
+					end
+				}
+			}
+		msgbox (format ("Thank you for all of your help!"))
+		closemessage
+		}
+	}
+}
+
+script SetMons {
+	setflag (FLAG_HIDE_EEVEE)
+	setflag (FLAG_HIDE_MAREEP)
+	setflag (FLAG_HIDE_ROOKIDEE)
+	setflag (FLAG_HIDE_HONEDGE)
+	setflag (FLAG_HIDE_GOOMY)
+	setflag (FLAG_HIDE_MUDKIP)
+	setflag (FLAG_HIDE_DRATINI)
+}
+
+script ScriptEevee {
+	faceplayer
+	msgbox (format ("You pet the Eevee as it so desperately needs."))
+	closemessage
+}
+
+script ScriptMareep {
+	faceplayer
+	msgbox (format ("The Mareep looks so fluffy!"))
+	closemessage
+}
+
+script ScriptRookidee {
+	faceplayer
+	msgbox (format ("Rookidee flaps its small wings about."))
+	closemessage
+}
+
+script ScriptHonedge {
+	faceplayer
+	msgbox (format ("Honedge has been sharpening itself on the cliffside."))
+	closemessage
+}
+
+script ScriptGoomy {
+	faceplayer
+	msgbox (format ("Goomy is bouncing around like usual."))
+	setflag (FLAG_SAFE_FOLLOWER_MOVEMENT)
+	applymovement (MON_GOOMY, FollowerHopFast)
+	waitmovement (0)
+	closemessage
+	clearflag (FLAG_SAFE_FOLLOWER_MOVEMENT)
+}
+
+script ScriptMudkip {
+	faceplayer
+	msgbox (format ("The Mudkip can be seen splashing about in the water."))
+	setflag (FLAG_SAFE_FOLLOWER_MOVEMENT)
+	applymovement (MON_MUDKIP, FollowerStartled)
+	waitmovement (0)
+	closemessage
+	clearflag (FLAG_SAFE_FOLLOWER_MOVEMENT)
+}
+
+script ScriptDratini {
+	faceplayer
+	msgbox (format ("Dratini has been curled up, basking in the sunlight."))
+	closemessage
+}

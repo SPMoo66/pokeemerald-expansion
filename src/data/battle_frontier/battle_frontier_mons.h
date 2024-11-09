@@ -2146,7 +2146,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_GLISCOR] = {
         .species = SPECIES_GLISCOR,
-        .moves = {MOVE_STEALTH_ROCK, MOVE_EARTHQUAKE, MOVE_ICE_SHARD, MOVE_FREEZE_DRY},
+        .moves = {MOVE_STEALTH_ROCK, MOVE_EARTHQUAKE, MOVE_ROOST, MOVE_TOXIC},
         .heldItem = ITEM_TOXIC_ORB,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,

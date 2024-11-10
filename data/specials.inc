@@ -563,3 +563,6 @@ gSpecials::
 	def_special ShowBottleCapsWindow
 	def_special UpdateBottleCapsWindow
 	def_special CheckPartyForMon
+	def_special GiveRandomDemoSpeciesCommon
+	def_special GiveRandomDemoSpeciesRare
+	def_special GiveRandomDemoSpeciesLegendary

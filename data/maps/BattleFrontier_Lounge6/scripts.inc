@@ -384,107 +384,143 @@ DemoLady_57:
 	goto DemoLady_49
 
 
-SetMons::
+DemoEvoItemShopSign::
 # 190 "data/maps/BattleFrontier_Lounge6/scripts.pory"
-	setflag FLAG_HIDE_EEVEE
+	msgbox DemoEvoItemShopSign_Text_0
 # 191 "data/maps/BattleFrontier_Lounge6/scripts.pory"
-	setflag FLAG_HIDE_MAREEP
-# 192 "data/maps/BattleFrontier_Lounge6/scripts.pory"
-	setflag FLAG_HIDE_ROOKIDEE
-# 193 "data/maps/BattleFrontier_Lounge6/scripts.pory"
-	setflag FLAG_HIDE_HONEDGE
-# 194 "data/maps/BattleFrontier_Lounge6/scripts.pory"
-	setflag FLAG_HIDE_GOOMY
+	closemessage
+	return
+
+
+SetMons::
 # 195 "data/maps/BattleFrontier_Lounge6/scripts.pory"
-	setflag FLAG_HIDE_MUDKIP
+	setflag FLAG_HIDE_EEVEE
 # 196 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	setflag FLAG_HIDE_MAREEP
+# 197 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	setflag FLAG_HIDE_ROOKIDEE
+# 198 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	setflag FLAG_HIDE_HONEDGE
+# 199 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	setflag FLAG_HIDE_GOOMY
+# 200 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	setflag FLAG_HIDE_MUDKIP
+# 201 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	setflag FLAG_HIDE_DRATINI
 	return
 
 
 ScriptEevee::
-# 200 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 205 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	lock
+# 206 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	faceplayer
-# 201 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 207 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	msgbox ScriptEevee_Text_0
-# 202 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 208 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	closemessage
+# 209 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	release
 	return
 
 
 ScriptMareep::
-# 206 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 213 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	lock
+# 214 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	faceplayer
-# 207 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 215 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	msgbox ScriptMareep_Text_0
-# 208 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 216 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	closemessage
+# 217 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	release
 	return
 
 
 ScriptRookidee::
-# 212 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 221 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	lock
+# 222 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	faceplayer
-# 213 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 223 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	msgbox ScriptRookidee_Text_0
-# 214 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 224 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	closemessage
+# 225 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	release
 	return
 
 
 ScriptHonedge::
-# 218 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 229 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	lock
+# 230 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	faceplayer
-# 219 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 231 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	msgbox ScriptHonedge_Text_0
-# 220 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 232 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	closemessage
+# 233 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	release
 	return
 
 
 ScriptGoomy::
-# 224 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 237 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	lock
+# 238 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	faceplayer
-# 225 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 239 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	msgbox ScriptGoomy_Text_0
-# 226 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 240 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
-# 227 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 241 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	applymovement 4, FollowerHopFast
-# 228 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 242 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	waitmovement 0
-# 229 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 243 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	closemessage
-# 230 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 244 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
+# 245 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	release
 	return
 
 
 ScriptMudkip::
-# 234 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 249 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	lock
+# 250 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	faceplayer
-# 235 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 251 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	msgbox ScriptMudkip_Text_0
-# 236 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 252 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
-# 237 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 253 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	applymovement 9, FollowerStartled
-# 238 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 254 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	waitmovement 0
-# 239 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 255 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	closemessage
-# 240 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 256 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
+# 257 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	release
 	return
 
 
 ScriptDratini::
-# 244 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 261 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	lock
+# 262 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	faceplayer
-# 245 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 263 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	msgbox ScriptDratini_Text_0
-# 246 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 264 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	closemessage
+# 265 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	release
 	return
 
 
@@ -557,34 +593,38 @@ DemoLady_Text_13:
 # 183 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	.string "Thank you for all of your help!$"
 
+DemoEvoItemShopSign_Text_0:
+# 190 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+	.string "Get your evolution items here!$"
+
 ScriptEevee_Text_0:
-# 201 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 207 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	.string "You pet the Eevee as it so desperately\n"
 	.string "needs.$"
 
 ScriptMareep_Text_0:
-# 207 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 215 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	.string "The Mareep looks so fluffy!$"
 
 ScriptRookidee_Text_0:
-# 213 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 223 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	.string "Rookidee flaps its small wings about.$"
 
 ScriptHonedge_Text_0:
-# 219 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 231 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	.string "Honedge has been sharpening itself on\n"
 	.string "the cliffside.$"
 
 ScriptGoomy_Text_0:
-# 225 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 239 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	.string "Goomy is bouncing around like usual.$"
 
 ScriptMudkip_Text_0:
-# 235 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 251 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	.string "The Mudkip can be seen splashing about\n"
 	.string "in the water.$"
 
 ScriptDratini_Text_0:
-# 245 "data/maps/BattleFrontier_Lounge6/scripts.pory"
+# 263 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	.string "Dratini has been curled up, basking in\n"
 	.string "the sunlight.$"

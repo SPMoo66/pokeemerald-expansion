@@ -293,5 +293,14 @@ EventScript_ResetAllMapFlags::
 	special EnableNationalPokedex
 	setflag FLAG_SYS_DEXNAV_GET
 	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
+	setflag FLAG_SYS_FRONTIER_PASS
+	setflag FLAG_HIDE_EEVEE
+	setflag FLAG_HIDE_MAREEP
+	setflag FLAG_HIDE_ROOKIDEE
+	setflag FLAG_HIDE_HONEDGE
+	setflag FLAG_HIDE_GOOMY
+	setflag FLAG_HIDE_MUDKIP
+	setflag FLAG_HIDE_DRATINI
+	setvar VAR_EMERALBODY_RIVAL, 9
 	call EventScript_ResetAllBerries
 	end

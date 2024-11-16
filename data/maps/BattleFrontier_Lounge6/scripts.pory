@@ -186,6 +186,11 @@ script DemoLady {
 	}
 }
 
+script DemoEvoItemShopSign {
+	msgbox (format ("Get your evolution items here!"))
+	closemessage
+}
+
 script SetMons {
 	setflag (FLAG_HIDE_EEVEE)
 	setflag (FLAG_HIDE_MAREEP)
@@ -197,30 +202,39 @@ script SetMons {
 }
 
 script ScriptEevee {
+	lock
 	faceplayer
 	msgbox (format ("You pet the Eevee as it so desperately needs."))
 	closemessage
+	release
 }
 
 script ScriptMareep {
+	lock
 	faceplayer
 	msgbox (format ("The Mareep looks so fluffy!"))
 	closemessage
+	release
 }
 
 script ScriptRookidee {
+	lock
 	faceplayer
 	msgbox (format ("Rookidee flaps its small wings about."))
 	closemessage
+	release
 }
 
 script ScriptHonedge {
+	lock
 	faceplayer
 	msgbox (format ("Honedge has been sharpening itself on the cliffside."))
 	closemessage
+	release
 }
 
 script ScriptGoomy {
+	lock
 	faceplayer
 	msgbox (format ("Goomy is bouncing around like usual."))
 	setflag (FLAG_SAFE_FOLLOWER_MOVEMENT)
@@ -228,9 +242,11 @@ script ScriptGoomy {
 	waitmovement (0)
 	closemessage
 	clearflag (FLAG_SAFE_FOLLOWER_MOVEMENT)
+	release
 }
 
 script ScriptMudkip {
+	lock
 	faceplayer
 	msgbox (format ("The Mudkip can be seen splashing about in the water."))
 	setflag (FLAG_SAFE_FOLLOWER_MOVEMENT)
@@ -238,10 +254,13 @@ script ScriptMudkip {
 	waitmovement (0)
 	closemessage
 	clearflag (FLAG_SAFE_FOLLOWER_MOVEMENT)
+	release
 }
 
 script ScriptDratini {
+	lock
 	faceplayer
 	msgbox (format ("Dratini has been curled up, basking in the sunlight."))
 	closemessage
+	release
 }

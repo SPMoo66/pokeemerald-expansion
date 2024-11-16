@@ -410,159 +410,107 @@ gText_GymNurseHeal::
 script Mart_EventScript_EvoClerk {
 	lock
 	faceplayer
-	special(GetNumberOfBadges)
-	copyvar (VAR_TEMP_0, VAR_RESULT)
-	if (var(VAR_TEMP_0) < 3) {
-		msgbox(format("Sorry, I can only sell to trainers who have earned at least three Gym Badges."))
+	specialvar (VAR_TEMP_1, GetFrontierBattlePoints)
+	if (var(VAR_TEMP_1) == 0) {
+		msgbox (format ("You don't seem to have any Battle Points.\pPlease come back once you obtain some."))
 	}
 	else {
 		msgbox(gText_HowMayIServeYou)
 		waitmessage
 		dynmultipush("Stones", 0)
 		dynmultipush("Other", 1)
-		if (var(VAR_TEMP_0) >= 5) {
-			dynmultipush("Extra", 2)
-		}
+		dynmultipush("Extra", 2)
 		dynmultistack(0, 0, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
 		if (var(VAR_RESULT) == 0) {
-			switch (var(VAR_TEMP_0)) {
-				case 0:
-				case 1:
-				case 2:
-				case 3:
-				case 4:
-					pokemart(EvoStonesPokemart3)
-				case 5:
-				case 6:
-				case 7:
-				case 8:
-					pokemart(EvoStonesPokemart5)
-				default:
-					break
-			}
+			special (ShowBattlePointsWindow)
+			call (EvoStonesPokemart5)
 		}
 		elif (var(VAR_RESULT) == 1) {
-			switch (var(VAR_TEMP_0)) {
-				case 0:
-				case 1:
-				case 2:
-				case 3:
-					pokemart(EvoOtherPokemart3)
-				case 4:
-					pokemart(EvoOtherPokemart4)
-				case 5:
-				case 6:
-				case 7:
-				case 8:
-					pokemart(EvoOtherPokemart5)
-				default:
-					break
-			}
+			special (ShowBattlePointsWindow)
+			call (EvoOtherPokemart5)
 		}
 		elif (var(VAR_RESULT) == 2) {
-			switch (var(VAR_TEMP_0)) {
-				case 0:
-				case 1:
-				case 2:
-				case 3:
-				case 4:
-				case 5:
-				case 6:
-					pokemart(EvoExtraPokemart6)
-				case 7:
-				case 8:
-					pokemart(EvoExtraPokemart7)
-				default:
-					break
-			}
+			special (ShowBattlePointsWindow)
+			call (EvoExtraPokemart7)
 		}
+		special (CloseBattlePointsWindow)
 		msgbox(gText_PleaseComeAgain)
 	}
+	closemessage
 	release
 	end
 }
 
-mart EvoStonesPokemart3 {
-	ITEM_FIRE_STONE
-	ITEM_WATER_STONE
-	ITEM_THUNDER_STONE
-	ITEM_LEAF_STONE
-	ITEM_ICE_STONE
-	ITEM_MOON_STONE
-	ITEM_SUN_STONE
+script EvoStonesPokemart5 {
+	dynmultipush("Fire Stone{CLEAR_TO 0x66}1BP", ITEM_FIRE_STONE)
+	dynmultipush("Water Stone{CLEAR_TO 0x66}1BP", ITEM_WATER_STONE)
+	dynmultipush("Thunder Stone{CLEAR_TO 0x66}1BP", ITEM_THUNDER_STONE)
+	dynmultipush("Leaf Stone{CLEAR_TO 0x66}1BP", ITEM_LEAF_STONE)
+	dynmultipush("Ice Stone{CLEAR_TO 0x66}1BP", ITEM_ICE_STONE)
+	dynmultipush("Moon Stone{CLEAR_TO 0x66}1BP", ITEM_MOON_STONE)
+	dynmultipush("Sun Stone{CLEAR_TO 0x66}1BP", ITEM_SUN_STONE)
+	dynmultipush("Shiny Stone{CLEAR_TO 0x66}1BP", ITEM_SHINY_STONE)
+	dynmultipush("Dusk Stone{CLEAR_TO 0x66}1BP", ITEM_DUSK_STONE)
+	dynmultipush("Dawn Stone{CLEAR_TO 0x66}1BP", ITEM_DAWN_STONE)
+	dynmultistack(17, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM)
+	if (var(VAR_RESULT) != 127) {
+		additem (VAR_RESULT)
+		setvar (VAR_0x8004, 1)
+		special (TakeFrontierBattlePoints)
+		special (UpdateBattlePointsWindow)
+		playse (SE_SHOP)
+	}
 }
 
-mart EvoStonesPokemart5 {
-	ITEM_FIRE_STONE
-	ITEM_WATER_STONE
-	ITEM_THUNDER_STONE
-	ITEM_LEAF_STONE
-	ITEM_ICE_STONE
-	ITEM_MOON_STONE
-	ITEM_SUN_STONE
-	ITEM_SHINY_STONE
-	ITEM_DUSK_STONE
-	ITEM_DAWN_STONE
+script EvoOtherPokemart5 {
+	dynmultipush("Rare Candy{CLEAR_TO 0x66}1BP", ITEM_RARE_CANDY)
+	dynmultipush("Linking Cord{CLEAR_TO 0x66}1BP", ITEM_LINKING_CORD)
+	dynmultipush("King's Rock{CLEAR_TO 0x66}1BP", ITEM_KINGS_ROCK)
+	dynmultipush("Metal Alloy{CLEAR_TO 0x66}1BP", ITEM_METAL_ALLOY)
+	dynmultipush("Black Augurite{CLEAR_TO 0x66}1BP", ITEM_BLACK_AUGURITE)
+	dynmultipush("Dragon Scale{CLEAR_TO 0x66}1BP", ITEM_DRAGON_SCALE)
+	dynmultipush("Upgrade{CLEAR_TO 0x66}1BP", ITEM_UPGRADE)
+	dynmultipush("Deep Sea Tooth{CLEAR_TO 0x66}1BP", ITEM_DEEP_SEA_TOOTH)
+	dynmultipush("Deep Sea Scale{CLEAR_TO 0x66}1BP", ITEM_DEEP_SEA_SCALE)
+	dynmultipush("Prism Scale{CLEAR_TO 0x66}1BP", ITEM_PRISM_SCALE)
+	dynmultipush("Sachet{CLEAR_TO 0x66}1BP", ITEM_SACHET)
+	dynmultipush("Whipped Dream{CLEAR_TO 0x66}1BP", ITEM_WHIPPED_DREAM)
+	dynmultipush("Chipped Pot{CLEAR_TO 0x66}1BP", ITEM_CHIPPED_POT)
+	dynmultipush("Tart Apple{CLEAR_TO 0x66}1BP", ITEM_TART_APPLE)
+	dynmultipush("Sweet Apple{CLEAR_TO 0x66}1BP", ITEM_SWEET_APPLE)
+	dynmultipush("Syrupy Apple{CLEAR_TO 0x66}1BP", ITEM_SYRUPY_APPLE)
+	dynmultipush("Galarica Cuff{CLEAR_TO 0x66}1BP", ITEM_GALARICA_CUFF)
+	dynmultipush("Galarica Wreath{CLEAR_TO 0x66}1BP", ITEM_GALARICA_WREATH)
+	dynmultipush("Auspicious Armor{CLEAR_TO 0x66}1BP", ITEM_AUSPICIOUS_ARMOR)
+	dynmultipush("Malicious Armor{CLEAR_TO 0x66}1BP", ITEM_MALICIOUS_ARMOR)
+	dynmultistack(17, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM)
+	if (var(VAR_RESULT) != 127) {
+		additem (VAR_RESULT)
+		setvar (VAR_0x8004, 1)
+		special (TakeFrontierBattlePoints)
+		special (UpdateBattlePointsWindow)
+		playse (SE_SHOP)
+	}
 }
 
-mart EvoOtherPokemart3 {
-	ITEM_SACHET
-	ITEM_WHIPPED_DREAM
-}
-
-mart EvoOtherPokemart4 {
-	ITEM_LINKING_CORD
-	ITEM_KINGS_ROCK
-	ITEM_SACHET
-	ITEM_WHIPPED_DREAM
-	ITEM_CHIPPED_POT
-	ITEM_TART_APPLE
-	ITEM_SWEET_APPLE
-	ITEM_SYRUPY_APPLE
-}
-
-mart EvoOtherPokemart5 {
-	ITEM_LINKING_CORD
-	ITEM_KINGS_ROCK
-	ITEM_METAL_ALLOY
-	ITEM_BLACK_AUGURITE
-	ITEM_DRAGON_SCALE
-	ITEM_UPGRADE
-	ITEM_DEEP_SEA_TOOTH
-	ITEM_DEEP_SEA_SCALE
-	ITEM_PRISM_SCALE
-	ITEM_SACHET
-	ITEM_WHIPPED_DREAM
-	ITEM_CHIPPED_POT
-	ITEM_TART_APPLE
-	ITEM_SWEET_APPLE
-	ITEM_SYRUPY_APPLE
-	ITEM_GALARICA_CUFF
-	ITEM_GALARICA_WREATH
-	ITEM_AUSPICIOUS_ARMOR
-	ITEM_MALICIOUS_ARMOR
-}
-
-mart EvoExtraPokemart6 {
-	ITEM_DUBIOUS_DISC
-	ITEM_ELECTIRIZER
-	ITEM_MAGMARIZER
-	ITEM_PROTECTOR
-	ITEM_RAZOR_CLAW
-	ITEM_RAZOR_FANG
-	ITEM_REAPER_CLOTH
-}
-
-mart EvoExtraPokemart7 {
-	ITEM_DUBIOUS_DISC
-	ITEM_ELECTIRIZER
-	ITEM_MAGMARIZER
-	ITEM_PROTECTOR
-	ITEM_RAZOR_CLAW
-	ITEM_RAZOR_FANG
-	ITEM_REAPER_CLOTH
-	ITEM_SCROLL_OF_DARKNESS
-	ITEM_SCROLL_OF_WATERS
+script EvoExtraPokemart7 {
+	dynmultipush("Dubious Disc{CLEAR_TO 0x66}1BP", ITEM_DUBIOUS_DISC)
+	dynmultipush("Electirizer{CLEAR_TO 0x66}1BP", ITEM_ELECTIRIZER)
+	dynmultipush("Magmarizer{CLEAR_TO 0x66}1BP", ITEM_MAGMARIZER)
+	dynmultipush("Protector{CLEAR_TO 0x66}1BP", ITEM_PROTECTOR)
+	dynmultipush("Razor Claw{CLEAR_TO 0x66}1BP", ITEM_RAZOR_CLAW)
+	dynmultipush("Razor Fang{CLEAR_TO 0x66}1BP", ITEM_RAZOR_FANG)
+	dynmultipush("Reaper Cloth{CLEAR_TO 0x66}1BP", ITEM_REAPER_CLOTH)
+	dynmultipush("Scroll of Darkness{CLEAR_TO 0x66}1BP", ITEM_SCROLL_OF_DARKNESS)
+	dynmultipush("Scroll of Waters{CLEAR_TO 0x66}1BP", ITEM_SCROLL_OF_WATERS)
+	dynmultistack(17, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM)
+	if (var(VAR_RESULT) != 127) {
+		additem (VAR_RESULT)
+		setvar (VAR_0x8004, 1)
+		special (TakeFrontierBattlePoints)
+		special (UpdateBattlePointsWindow)
+		playse (SE_SHOP)
+	}
 }
 
 script Common_EventScript_MoveReminder {

@@ -162,7 +162,7 @@ static void MultichoiceDynamicEventShowItem_OnInit(struct DynamicListMenuEventAr
 {
     struct WindowTemplate *template = &gWindows[eventArgs->windowId].window;
     u32 baseBlock = template->baseBlock + template->width * template->height;
-    struct WindowTemplate auxTemplate = CreateWindowTemplate(0, template->tilemapLeft - 6, template->tilemapTop, 4, 4, 15, baseBlock);
+    struct WindowTemplate auxTemplate = CreateWindowTemplate(0, template->tilemapLeft - 6, template->tilemapTop + 4, 4, 4, 15, baseBlock);
     u32 auxWindowId = AddWindow(&auxTemplate);
     SetStandardWindowBorderStyle(auxWindowId, FALSE);
     FillWindowPixelBuffer(auxWindowId, 0x11);
@@ -175,7 +175,7 @@ static void MultichoiceDynamicEventShowItem_OnSelectionChanged(struct DynamicLis
 {
     struct WindowTemplate *template = &gWindows[eventArgs->windowId].window;
     u32 x = template->tilemapLeft * 8 - 28;
-    u32 y = template->tilemapTop * 8 + 20;
+    u32 y = template->tilemapTop * 8 + 52;
 
     if (sItemSpriteId != MAX_SPRITES)
     {

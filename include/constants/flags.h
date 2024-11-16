@@ -662,7 +662,8 @@
 
 #define FLAG_RANDOM_MUSIC    0x26C
 
-#define FLAG_UNUSED_0x26D    0x26D // Unused Flag
+#define FLAG_HIDE_STEVEN     0x26D
+
 #define FLAG_UNUSED_0x26E    0x26E // Unused Flag
 #define FLAG_UNUSED_0x26F    0x26F // Unused Flag
 #define FLAG_UNUSED_0x270    0x270 // Unused Flag

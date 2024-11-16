@@ -301,7 +301,7 @@ static bool8 CheckConditions(int selection)
 
 // Descriptions
 static const u8 sText_Empty[]                   = _("");
-static const u8 sText_Desc_Save[]               = _("Save your settings.");
+static const u8 sText_Desc_Save[]               = _("Save your settings.\nEmeralbody Demo v1.0.0");
 static const u8 sText_Desc_TextSpeed[]          = _("Choose one of the four text-display\nspeeds.");
 static const u8 sText_Desc_BattleScene_On[]     = _("Show the Pokémon battle animations.");
 static const u8 sText_Desc_BattleScene_Off[]    = _("Skip the Pokémon battle animations.");

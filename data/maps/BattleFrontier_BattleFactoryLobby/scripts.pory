@@ -520,6 +520,8 @@ BattleFrontier_BattleFactoryLobby_Text_Balls:
 	.string "Pokémon inside.$"
 `
 
+const STEVEN = 6
+
 script BattleFrontier_BattleFactoryLobby_EventScript_Vending {
 	msgbox (format ("It's a vending machine for Pokémon!"))
 	msgbox (format ("Would you like to spend BP to obtain a Pokémon?"))
@@ -569,4 +571,77 @@ script BattleFrontier_BattleFactoryLobby_EventScript_NotEnoughBP {
 	msgbox(format("You don't have enough BP to make that purchase."))
 	closemessage
 	special (CloseBattlePointsWindow)
+}
+
+script BattleFrontier_BattleFactoryLobby_EventScript_Settings {
+	if (!flag(FLAG_RANDOM_MUSIC)) {
+		msgbox (format ("Random music is currently disabled.\p"
+						"Enable randomized battle music?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT) == YES) {
+			setflag (FLAG_RANDOM_MUSIC)
+		}
+	}
+	else {
+		msgbox (format ("Random music is currently enabled.\p"
+						"Disable randomized battle music?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT) == YES) {
+			clearflag (FLAG_RANDOM_MUSIC)
+		}
+	}
+	closemessage
+}
+
+script DemoStart {
+	lock
+	applymovement (STEVEN, StevenEnter)
+	waitmovement (0)
+	speakername (CommonText_Steven)
+	msgbox (format ("You're finally here.\p"
+					"Hmm…\n"
+					"This might be the Battle Factory, but you should still have a Pokémon with you.\p"
+					"I was out hunting for shiny Pokémon and accidentally caught this one.\p"
+					"You can have it."))
+	closemessage
+	special (GiveRandomDemoSpeciesCommon)
+	msgbox ("Got {STR_VAR_1}!")
+	playfanfare (MUS_OBTAIN_ITEM)
+	waitfanfare
+	setflag (FLAG_SYS_POKEMON_GET)
+	speakername (CommonText_Steven)
+	msgbox (format ("Alright then.\nGet up there and challenge the Factory already!\p"
+					"… … …\p"
+					"Oh, I guess I should mention…"))
+	applymovement (STEVEN, Common_Movement_FaceRight)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+	waitmovement (0)
+	msgbox (format ("Up in the back corner on that side of the room is a machine you can use to obtain more Pokémon."))
+	applymovement (STEVEN, Common_Movement_FaceDown)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+	waitmovement (0)
+	msgbox (format ("That is, once you manage to obtain some BP by winning a few challenges."))
+	applymovement (STEVEN, Common_Movement_FaceLeft)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+	waitmovement (0)
+	msgbox (format ("On that side of the room there's a PC and another machine you can use to adjust your settings."))
+	applymovement (STEVEN, Common_Movement_FaceDown)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+	waitmovement (0)
+	msgbox (format ("That should be everything.\p"
+					"Good luck with your challenge now!"))
+	closemessage
+	applymovement (STEVEN, StevenLeave)
+	waitmovement (0)
+	setflag (FLAG_HIDE_STEVEN)
+	removeobject (STEVEN)
+	release
+}
+
+movement StevenEnter {
+	walk_down * 4
+}
+
+movement StevenLeave {
+	walk_up * 3
+	walk_left * 5
+	walk_up * 2
 }

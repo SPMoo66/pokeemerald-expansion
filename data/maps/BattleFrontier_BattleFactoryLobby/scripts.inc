@@ -1040,129 +1040,322 @@ BattleFrontier_BattleFactoryLobby_Text_Balls:
 	.string "Pokémon inside.$"
 
 BattleFrontier_BattleFactoryLobby_EventScript_Vending::
-# 524 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_0
-# 525 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_1
 # 526 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-	special ShowBattlePointsWindow
+	msgbox BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_0
 # 527 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-	dynmultichoice 0, 5, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_2, BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_3, BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_4
+	msgbox BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_1
 # 528 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-	switch VAR_RESULT
+	special ShowBattlePointsWindow
 # 529 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	dynmultichoice 0, 5, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_2, BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_3, BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_4
+# 530 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	switch VAR_RESULT
+# 531 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	case 0, BattleFrontier_BattleFactoryLobby_EventScript_Vending_3
-# 538 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 540 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	case 1, BattleFrontier_BattleFactoryLobby_EventScript_Vending_4
-# 547 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 549 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	case 2, BattleFrontier_BattleFactoryLobby_EventScript_Vending_5
-# 557 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 559 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	closemessage
-# 558 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 560 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	special CloseBattlePointsWindow
 	end
 
 BattleFrontier_BattleFactoryLobby_EventScript_Vending_1:
-# 561 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-	special TakeFrontierBattlePoints
-# 562 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-	special UpdateBattlePointsWindow
 # 563 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_5
+	special TakeFrontierBattlePoints
 # 564 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-	closemessage
+	special UpdateBattlePointsWindow
 # 565 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	msgbox BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_5
+# 566 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	closemessage
+# 567 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	special CloseBattlePointsWindow
 	return
 
 BattleFrontier_BattleFactoryLobby_EventScript_Vending_3:
-# 530 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 532 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	specialvar VAR_TEMP_1, GetFrontierBattlePoints
-# 531 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 533 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	compare VAR_TEMP_1, 2
 	goto_if_ge BattleFrontier_BattleFactoryLobby_EventScript_Vending_7
-# 536 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 538 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	goto BattleFrontier_BattleFactoryLobby_EventScript_NotEnoughBP
 	goto BattleFrontier_BattleFactoryLobby_EventScript_Vending_1
 
 BattleFrontier_BattleFactoryLobby_EventScript_Vending_4:
-# 539 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 541 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	specialvar VAR_TEMP_1, GetFrontierBattlePoints
-# 540 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 542 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	compare VAR_TEMP_1, 3
 	goto_if_ge BattleFrontier_BattleFactoryLobby_EventScript_Vending_10
-# 545 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 547 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	goto BattleFrontier_BattleFactoryLobby_EventScript_NotEnoughBP
 	goto BattleFrontier_BattleFactoryLobby_EventScript_Vending_1
 
 BattleFrontier_BattleFactoryLobby_EventScript_Vending_5:
-# 548 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 550 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	specialvar VAR_TEMP_1, GetFrontierBattlePoints
-# 549 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 551 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	compare VAR_TEMP_1, 5
 	goto_if_ge BattleFrontier_BattleFactoryLobby_EventScript_Vending_13
-# 554 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 556 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	goto BattleFrontier_BattleFactoryLobby_EventScript_NotEnoughBP
 	goto BattleFrontier_BattleFactoryLobby_EventScript_Vending_1
 
 BattleFrontier_BattleFactoryLobby_EventScript_Vending_7:
-# 532 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 534 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	special GiveRandomDemoSpeciesCommon
-# 533 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 535 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	setvar VAR_0x8004, 2
 	goto BattleFrontier_BattleFactoryLobby_EventScript_Vending_1
 
 BattleFrontier_BattleFactoryLobby_EventScript_Vending_10:
-# 541 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 543 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	special GiveRandomDemoSpeciesRare
-# 542 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 544 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	setvar VAR_0x8004, 3
 	goto BattleFrontier_BattleFactoryLobby_EventScript_Vending_1
 
 BattleFrontier_BattleFactoryLobby_EventScript_Vending_13:
-# 550 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 552 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	special GiveRandomDemoSpeciesLegendary
-# 551 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 553 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	setvar VAR_0x8004, 5
 	goto BattleFrontier_BattleFactoryLobby_EventScript_Vending_1
 
 
 BattleFrontier_BattleFactoryLobby_EventScript_NotEnoughBP::
-# 569 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryLobby_EventScript_NotEnoughBP_Text_0
-# 570 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-	closemessage
 # 571 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	msgbox BattleFrontier_BattleFactoryLobby_EventScript_NotEnoughBP_Text_0
+# 572 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	closemessage
+# 573 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	special CloseBattlePointsWindow
 	return
 
 
+BattleFrontier_BattleFactoryLobby_EventScript_Settings::
+# 577 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	goto_if_unset FLAG_RANDOM_MUSIC, BattleFrontier_BattleFactoryLobby_EventScript_Settings_2
+# 585 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	msgbox BattleFrontier_BattleFactoryLobby_EventScript_Settings_Text_1, MSGBOX_YESNO
+# 587 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq BattleFrontier_BattleFactoryLobby_EventScript_Settings_7
+BattleFrontier_BattleFactoryLobby_EventScript_Settings_1:
+# 591 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	closemessage
+	return
+
+BattleFrontier_BattleFactoryLobby_EventScript_Settings_2:
+# 578 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	msgbox BattleFrontier_BattleFactoryLobby_EventScript_Settings_Text_0, MSGBOX_YESNO
+# 580 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq BattleFrontier_BattleFactoryLobby_EventScript_Settings_5
+	goto BattleFrontier_BattleFactoryLobby_EventScript_Settings_1
+
+BattleFrontier_BattleFactoryLobby_EventScript_Settings_5:
+# 581 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	setflag FLAG_RANDOM_MUSIC
+	goto BattleFrontier_BattleFactoryLobby_EventScript_Settings_1
+
+BattleFrontier_BattleFactoryLobby_EventScript_Settings_7:
+# 588 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	clearflag FLAG_RANDOM_MUSIC
+	goto BattleFrontier_BattleFactoryLobby_EventScript_Settings_1
+
+
+DemoStart::
+# 595 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	lock
+# 596 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	applymovement 6, StevenEnter
+# 597 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	waitmovement 0
+# 598 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	speakername CommonText_Steven
+# 599 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	msgbox DemoStart_Text_0
+# 604 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	closemessage
+# 605 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	special GiveRandomDemoSpeciesCommon
+# 606 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	msgbox BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_5
+# 607 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 608 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	waitfanfare
+# 609 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 610 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	speakername CommonText_Steven
+# 611 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	msgbox DemoStart_Text_1
+# 614 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	applymovement 6, Common_Movement_FaceRight
+# 615 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 616 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	waitmovement 0
+# 617 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	msgbox DemoStart_Text_2
+# 618 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	applymovement 6, Common_Movement_FaceDown
+# 619 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+# 620 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	waitmovement 0
+# 621 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	msgbox DemoStart_Text_3
+# 622 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	applymovement 6, Common_Movement_FaceLeft
+# 623 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+# 624 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	waitmovement 0
+# 625 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	msgbox DemoStart_Text_4
+# 626 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	applymovement 6, Common_Movement_FaceDown
+# 627 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+# 628 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	waitmovement 0
+# 629 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	msgbox DemoStart_Text_5
+# 631 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	closemessage
+# 632 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	applymovement 6, StevenLeave
+# 633 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	waitmovement 0
+# 634 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	setflag FLAG_HIDE_STEVEN
+# 635 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	removeobject 6
+# 636 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	release
+	return
+
+
+# 639 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+StevenEnter:
+# 640 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	walk_down
+# 640 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	walk_down
+# 640 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	walk_down
+# 640 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	walk_down
+	step_end
+
+# 643 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+StevenLeave:
+# 644 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	walk_up
+# 644 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	walk_up
+# 644 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	walk_up
+# 645 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	walk_left
+# 645 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	walk_left
+# 645 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	walk_left
+# 645 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	walk_left
+# 645 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	walk_left
+# 646 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	walk_up
+# 646 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	walk_up
+	step_end
+
 BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_0:
-# 524 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 526 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	.string "It's a vending machine for Pokémon!$"
 
 BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_1:
-# 525 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 527 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	.string "Would you like to spend BP to obtain a\n"
 	.string "Pokémon?$"
 
 BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_2:
-# 527 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 529 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	.string "Common Species{CLEAR_TO 0x66}2BP$"
 
 BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_3:
-# 527 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 529 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	.string "Rare Species{CLEAR_TO 0x66}3BP$"
 
 BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_4:
-# 527 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 529 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	.string "Legendary Species{CLEAR_TO 0x66}5BP$"
 
 BattleFrontier_BattleFactoryLobby_EventScript_Vending_Text_5:
-# 563 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 565 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	.string "Got {STR_VAR_1}!$"
 
 BattleFrontier_BattleFactoryLobby_EventScript_NotEnoughBP_Text_0:
-# 569 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+# 571 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	.string "You don't have enough BP to make that\n"
 	.string "purchase.$"
+
+BattleFrontier_BattleFactoryLobby_EventScript_Settings_Text_0:
+# 578 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	.string "Random music is currently disabled.\p"
+	.string "Enable randomized battle music?$"
+
+BattleFrontier_BattleFactoryLobby_EventScript_Settings_Text_1:
+# 585 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	.string "Random music is currently enabled.\p"
+	.string "Disable randomized battle music?$"
+
+DemoStart_Text_0:
+# 599 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	.string "You're finally here.\p"
+	.string "Hmm…\n"
+	.string "This might be the Battle Factory, but\l"
+	.string "you should still have a Pokémon with\l"
+	.string "you.\p"
+	.string "I was out hunting for shiny Pokémon and\n"
+	.string "accidentally caught this one.\p"
+	.string "You can have it.$"
+
+DemoStart_Text_1:
+# 611 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	.string "Alright then.\n"
+	.string "Get up there and challenge the Factory\l"
+	.string "already!\p"
+	.string "… … …\p"
+	.string "Oh, I guess I should mention…$"
+
+DemoStart_Text_2:
+# 617 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	.string "Up in the back corner on that side of\n"
+	.string "the room is a machine you can use to\l"
+	.string "obtain more Pokémon.$"
+
+DemoStart_Text_3:
+# 621 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	.string "That is, once you manage to obtain some\n"
+	.string "BP by winning a few challenges.$"
+
+DemoStart_Text_4:
+# 625 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	.string "On that side of the room there's a PC\n"
+	.string "and another machine you can use to\l"
+	.string "adjust your settings.$"
+
+DemoStart_Text_5:
+# 629 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	.string "That should be everything.\p"
+	.string "Good luck with your challenge now!$"

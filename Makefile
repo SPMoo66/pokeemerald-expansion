@@ -36,7 +36,7 @@ else
 EXE :=
 endif
 
-TITLE        := EMERALBODY
+TITLE        := EMERALBODY DEMO
 GAME_CODE    := BPEE
 MAKER_CODE   := 01
 REVISION     := 0

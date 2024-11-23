@@ -3146,7 +3146,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_DEDENNE] = {
         .species = SPECIES_DEDENNE,
-        .moves = {MOVE_SUBSTITUTE, MOVE_RECYCLE, MOVE_THUNDERBOLT, MOVE_HYDRO_PUMP},
+        .moves = {MOVE_SUBSTITUTE, MOVE_RECYCLE, MOVE_THUNDERBOLT, MOVE_DAZZLING_GLEAM},
         .heldItem = ITEM_PETAYA_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,

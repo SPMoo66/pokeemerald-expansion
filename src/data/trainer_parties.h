@@ -135,15 +135,15 @@ static const struct TrainerMon sParty_Gabrielle1[] = {
 
 static const struct TrainerMon sParty_GruntPetalburgWoods[] = {
     {
-    .lvl = 7,
+    .lvl = 8,
     .species = SPECIES_SPINARAK,
     },
     {
-    .lvl = 7,
+    .lvl = 8,
     .species = SPECIES_WOOPER_PALDEAN,
     },
     {
-    .lvl = 7,
+    .lvl = 8,
     .species = SPECIES_NICKIT,
     }
 };

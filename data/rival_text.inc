@@ -1,7 +1,7 @@
 Scene01_BaronText::
 # 2 "data/rival_text.pory"
 	.string "H- Hello…? You don't look like you're\n"
-	.string "stapled in place like the others/p\l"
+	.string "stapled in place like the others.\p"
 	.string "Ack!? It moved!? Stay back, demon!\n"
 	.string "Stay back or else I'll… I'l…!!!\p"
 	.string "… … …?\p"

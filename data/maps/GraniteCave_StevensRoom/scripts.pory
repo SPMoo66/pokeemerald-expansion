@@ -22,6 +22,16 @@ script GraniteCave_StevensRoom_EventScript_Steven {
 	speakername (CommonText_Q)
 	msgbox ("Hold it!")
 	closemessage
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	special (SpawnCameraObject)
+	if (var(VAR_TEMP_1) == 8) {
+		applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp)
+		waitmovement (0)
+	}
+	elif (var(VAR_TEMP_1) == 9) {
+		applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp2)
+		waitmovement (0)
+	}
 	playse (SE_PIN)
 	applymovement (STEVEN, Common_Movement_ExclamationMark)
 	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
@@ -48,7 +58,6 @@ script GraniteCave_StevensRoom_EventScript_Steven {
 	msgbox ("Devon Goods?\n"
 			"I have nothing of the sort.\p"
 			"Unless…")
-	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
 	switch (var(VAR_TEMP_1)) {
 		case 7:
 			applymovement (STEVEN, Common_Movement_WalkInPlaceFasterUp)
@@ -82,7 +91,10 @@ script GraniteCave_StevensRoom_EventScript_Steven {
 	}
 	elif (var(VAR_TEMP_1) == 9) {
 		applymovement (OBJ_EVENT_ID_PLAYER, GraniteCave_PlayerRunUp)
+		applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft)
 	}
+	waitmovement (0)
+	special (RemoveCameraObject)
 	special (SavePlayerParty)
 	fadescreen (FADE_TO_BLACK)
 	special (ChooseHalfPartyForBattle)

@@ -94,3 +94,127 @@ Route106_Text_TrainerTips:
 	.string "Advice on catching Pokémon with a Rod:\n"
 # 48 "data/maps/Route106/scripts.pory"
 	.string "Press the A Button if you get a bite.$"
+
+Route106_ChallengeBallTutorial::
+# 54 "data/maps/Route106/scripts.pory"
+	lock
+# 55 "data/maps/Route106/scripts.pory"
+	addobject 7
+# 56 "data/maps/Route106/scripts.pory"
+	setobjectxy 7, 56, 16
+# 57 "data/maps/Route106/scripts.pory"
+	speakername CommonText_Q
+# 58 "data/maps/Route106/scripts.pory"
+	msgbox Route106_ChallengeBallTutorial_Text_0
+# 59 "data/maps/Route106/scripts.pory"
+	closemessage
+# 60 "data/maps/Route106/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+# 61 "data/maps/Route106/scripts.pory"
+	applymovement 7, Route106_BiancaEnter
+# 62 "data/maps/Route106/scripts.pory"
+	waitmovement 0
+# 63 "data/maps/Route106/scripts.pory"
+	speakername CommonText_Bianca
+# 64 "data/maps/Route106/scripts.pory"
+	msgbox Route106_ChallengeBallTutorial_Text_1
+# 67 "data/maps/Route106/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
+# 68 "data/maps/Route106/scripts.pory"
+	applymovement 7, Common_Movement_WalkInPlaceLeft
+# 69 "data/maps/Route106/scripts.pory"
+	waitmovement 0
+# 70 "data/maps/Route106/scripts.pory"
+	msgbox Route106_ChallengeBallTutorial_Text_2
+# 72 "data/maps/Route106/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+# 73 "data/maps/Route106/scripts.pory"
+	waitmovement 0
+# 74 "data/maps/Route106/scripts.pory"
+	msgbox Route106_ChallengeBallTutorial_Text_3
+# 77 "data/maps/Route106/scripts.pory"
+	closemessage
+# 78 "data/maps/Route106/scripts.pory"
+	applymovement 7, Route106_BiancaExit
+# 79 "data/maps/Route106/scripts.pory"
+	waitmovement 0
+# 80 "data/maps/Route106/scripts.pory"
+	removeobject 7
+# 81 "data/maps/Route106/scripts.pory"
+	setvar VAR_ROUTE106_STATE, 1
+# 82 "data/maps/Route106/scripts.pory"
+	release
+	return
+
+
+# 85 "data/maps/Route106/scripts.pory"
+Route106_BiancaEnter:
+# 86 "data/maps/Route106/scripts.pory"
+	walk_left
+# 86 "data/maps/Route106/scripts.pory"
+	walk_left
+# 86 "data/maps/Route106/scripts.pory"
+	walk_left
+# 86 "data/maps/Route106/scripts.pory"
+	walk_left
+# 87 "data/maps/Route106/scripts.pory"
+	walk_down
+# 87 "data/maps/Route106/scripts.pory"
+	walk_down
+# 88 "data/maps/Route106/scripts.pory"
+	walk_left
+# 88 "data/maps/Route106/scripts.pory"
+	walk_left
+# 88 "data/maps/Route106/scripts.pory"
+	walk_left
+	step_end
+
+# 91 "data/maps/Route106/scripts.pory"
+Route106_BiancaExit:
+# 92 "data/maps/Route106/scripts.pory"
+	walk_right
+# 92 "data/maps/Route106/scripts.pory"
+	walk_right
+# 92 "data/maps/Route106/scripts.pory"
+	walk_right
+# 93 "data/maps/Route106/scripts.pory"
+	walk_up
+# 93 "data/maps/Route106/scripts.pory"
+	walk_up
+# 94 "data/maps/Route106/scripts.pory"
+	walk_right
+# 94 "data/maps/Route106/scripts.pory"
+	walk_right
+# 94 "data/maps/Route106/scripts.pory"
+	walk_right
+# 94 "data/maps/Route106/scripts.pory"
+	walk_right
+	step_end
+
+Route106_ChallengeBallTutorial_Text_0:
+# 58 "data/maps/Route106/scripts.pory"
+	.string "Heeey!$"
+
+Route106_ChallengeBallTutorial_Text_1:
+# 64 "data/maps/Route106/scripts.pory"
+	.string "{PLAYER}, it's good to see you again!\p"
+	.string "Oh! You've gotten a Badge! Wow!\n"
+	.string "Amazing!\p"
+	.string "And that thing over there…$"
+
+Route106_ChallengeBallTutorial_Text_2:
+# 70 "data/maps/Route106/scripts.pory"
+	.string "Those blue Pokéball looking things are\n"
+	.string "actually really good items, but there\l"
+	.string "just always seem to be really strong\l"
+	.string "Pokémon nearby protecting them.\p"
+	.string "Most people just call them Challenge\n"
+	.string "Balls!$"
+
+Route106_ChallengeBallTutorial_Text_3:
+# 74 "data/maps/Route106/scripts.pory"
+	.string "They're usually super dangerous, but\n"
+	.string "you're starting to look like you can\l"
+	.string "handle yourself, {PLAYER}!\p"
+	.string "Give it a shot if you've got some time!\p"
+	.string "Anyway, I'll see you around, hopefully!$"

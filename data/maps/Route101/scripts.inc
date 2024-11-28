@@ -627,6 +627,8 @@ Route101_PichuGift_11:
 	waitmovement 0
 # 352 "data/maps/Route101/scripts.pory"
 	removeobject 7
+# 353 "data/maps/Route101/scripts.pory"
+	setvar VAR_ROUTE101_STATE, 4
 # 354 "data/maps/Route101/scripts.pory"
 	fadedefaultbgm
 # 355 "data/maps/Route101/scripts.pory"

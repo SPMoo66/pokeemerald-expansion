@@ -350,7 +350,7 @@ script Route101_PichuGift {
 	applymovement (BIANCA, BiancaLedgeLeave)
 	waitmovement (0)
 	removeobject (BIANCA)
-	//setvar (VAR_ROUTE101_STATE, 4)
+	setvar (VAR_ROUTE101_STATE, 4)
 	fadedefaultbgm
 	release
 }

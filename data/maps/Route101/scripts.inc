@@ -519,329 +519,410 @@ Route101_PichuGift::
 # 265 "data/maps/Route101/scripts.pory"
 	playbgm MUS_HG_SPIKY_EARED_PICHU, FALSE
 # 266 "data/maps/Route101/scripts.pory"
-	addobject 7
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 # 267 "data/maps/Route101/scripts.pory"
-	addobject 8
+	addobject 7
 # 268 "data/maps/Route101/scripts.pory"
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	addobject 8
 # 269 "data/maps/Route101/scripts.pory"
-	switch VAR_TEMP_1
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 # 270 "data/maps/Route101/scripts.pory"
+	switch VAR_TEMP_1
+# 271 "data/maps/Route101/scripts.pory"
 	case 2, Route101_PichuGift_3
-# 273 "data/maps/Route101/scripts.pory"
+# 274 "data/maps/Route101/scripts.pory"
 	case 3, Route101_PichuGift_4
-# 276 "data/maps/Route101/scripts.pory"
+# 277 "data/maps/Route101/scripts.pory"
 	case 4, Route101_PichuGift_5
-# 279 "data/maps/Route101/scripts.pory"
+# 280 "data/maps/Route101/scripts.pory"
 	case 5, Route101_PichuGift_6
 Route101_PichuGift_1:
-# 284 "data/maps/Route101/scripts.pory"
-	applymovement 7, CynthiaMoveRight
 # 285 "data/maps/Route101/scripts.pory"
-	applymovement 8, PichuMoveRight
+	applymovement 7, BiancaMoveRight
 # 286 "data/maps/Route101/scripts.pory"
-	waitmovement 0
+	applymovement 8, PichuMoveRight
 # 287 "data/maps/Route101/scripts.pory"
-	playse SE_LEDGE
+	waitmovement 0
 # 288 "data/maps/Route101/scripts.pory"
-	applymovement 7, CynthiaMoveRight2
+	playse SE_LEDGE
 # 289 "data/maps/Route101/scripts.pory"
-	applymovement 8, PichuMoveRight2
+	applymovement 7, BiancaMoveRight2
 # 290 "data/maps/Route101/scripts.pory"
-	waitmovement 0
+	applymovement 8, PichuMoveRight2
 # 291 "data/maps/Route101/scripts.pory"
-	playfanfare MUS_HG_RECEIVE_POKEMON
+	waitmovement 0
 # 292 "data/maps/Route101/scripts.pory"
-	msgbox Route101_PichuGift_Text_0
+	speakername CommonText_Q
 # 293 "data/maps/Route101/scripts.pory"
-	waitfanfare
-# 294 "data/maps/Route101/scripts.pory"
-	closemessage
-# 295 "data/maps/Route101/scripts.pory"
-	givemon SPECIES_PICHU_SPIKY_EARED, 5, ITEM_ORAN_BERRY
-# 296 "data/maps/Route101/scripts.pory"
-	playse SE_LEDGE
+	msgbox Route101_PichuGift_Text_0
 # 297 "data/maps/Route101/scripts.pory"
-	applymovement 8, PichuDisappear
+	closemessage
 # 298 "data/maps/Route101/scripts.pory"
-	waitmovement 0
-# 299 "data/maps/Route101/scripts.pory"
-	removeobject 8
-# 300 "data/maps/Route101/scripts.pory"
-	compare VAR_TEMP_1, 5
-	goto_if_ne Route101_PichuGift_8
-Route101_PichuGift_7:
-# 311 "data/maps/Route101/scripts.pory"
-	waitmovement 0
-# 312 "data/maps/Route101/scripts.pory"
 	playse SE_LEDGE
-# 313 "data/maps/Route101/scripts.pory"
-	applymovement 7, CynthiaLedgeLeave
-# 314 "data/maps/Route101/scripts.pory"
+# 299 "data/maps/Route101/scripts.pory"
+	applymovement 8, PichuJump
+# 300 "data/maps/Route101/scripts.pory"
 	waitmovement 0
-# 315 "data/maps/Route101/scripts.pory"
-	removeobject 7
+# 301 "data/maps/Route101/scripts.pory"
+	playse SE_LEDGE
+# 302 "data/maps/Route101/scripts.pory"
+	applymovement 8, PichuJump
+# 303 "data/maps/Route101/scripts.pory"
+	waitmovement 0
+# 304 "data/maps/Route101/scripts.pory"
+	compare VAR_TEMP_1, 5
+	goto_if_eq Route101_PichuGift_8
+# 308 "data/maps/Route101/scripts.pory"
+	applymovement 7, Common_Movement_WalkInPlaceDown
+Route101_PichuGift_7:
+# 310 "data/maps/Route101/scripts.pory"
+	waitmovement 0
+# 311 "data/maps/Route101/scripts.pory"
+	speakername CommonText_Q
+# 312 "data/maps/Route101/scripts.pory"
+	msgbox Route101_PichuGift_Text_1
+# 316 "data/maps/Route101/scripts.pory"
+	applymovement 7, Common_Movement_WalkInPlaceRight
 # 317 "data/maps/Route101/scripts.pory"
+	msgbox Route101_PichuGift_Text_2
+# 320 "data/maps/Route101/scripts.pory"
+	closemessage
+# 321 "data/maps/Route101/scripts.pory"
+	playfanfare MUS_HG_RECEIVE_POKEMON
+# 322 "data/maps/Route101/scripts.pory"
+	msgbox Route101_PichuGift_Text_3
+# 323 "data/maps/Route101/scripts.pory"
+	waitfanfare
+# 324 "data/maps/Route101/scripts.pory"
+	closemessage
+# 325 "data/maps/Route101/scripts.pory"
+	givemon SPECIES_PICHU_SPIKY_EARED, 5, ITEM_ORAN_BERRY
+# 326 "data/maps/Route101/scripts.pory"
+	playse SE_LEDGE
+# 327 "data/maps/Route101/scripts.pory"
+	applymovement 8, PichuDisappear
+# 328 "data/maps/Route101/scripts.pory"
+	waitmovement 0
+# 329 "data/maps/Route101/scripts.pory"
+	removeobject 8
+# 330 "data/maps/Route101/scripts.pory"
+	delay 20
+# 331 "data/maps/Route101/scripts.pory"
+	speakername CommonText_Bianca
+# 332 "data/maps/Route101/scripts.pory"
+	msgbox Route101_PichuGift_Text_4
+# 336 "data/maps/Route101/scripts.pory"
+	closemessage
+# 337 "data/maps/Route101/scripts.pory"
+	compare VAR_TEMP_1, 5
+	goto_if_ne Route101_PichuGift_12
+Route101_PichuGift_11:
+# 348 "data/maps/Route101/scripts.pory"
+	waitmovement 0
+# 349 "data/maps/Route101/scripts.pory"
+	playse SE_LEDGE
+# 350 "data/maps/Route101/scripts.pory"
+	applymovement 7, BiancaLedgeLeave
+# 351 "data/maps/Route101/scripts.pory"
+	waitmovement 0
+# 352 "data/maps/Route101/scripts.pory"
+	removeobject 7
+# 354 "data/maps/Route101/scripts.pory"
 	fadedefaultbgm
-# 318 "data/maps/Route101/scripts.pory"
+# 355 "data/maps/Route101/scripts.pory"
 	release
 	return
 
 Route101_PichuGift_3:
-# 271 "data/maps/Route101/scripts.pory"
-	setobjectxy 7, 2, 2
 # 272 "data/maps/Route101/scripts.pory"
+	setobjectxy 7, 2, 2
+# 273 "data/maps/Route101/scripts.pory"
 	setobjectxy 8, 2, 3
 	goto Route101_PichuGift_1
 
 Route101_PichuGift_4:
-# 274 "data/maps/Route101/scripts.pory"
-	setobjectxy 7, 2, 3
 # 275 "data/maps/Route101/scripts.pory"
+	setobjectxy 7, 2, 3
+# 276 "data/maps/Route101/scripts.pory"
 	setobjectxy 8, 2, 4
 	goto Route101_PichuGift_1
 
 Route101_PichuGift_5:
-# 277 "data/maps/Route101/scripts.pory"
-	setobjectxy 7, 2, 4
 # 278 "data/maps/Route101/scripts.pory"
+	setobjectxy 7, 2, 4
+# 279 "data/maps/Route101/scripts.pory"
 	setobjectxy 8, 2, 5
 	goto Route101_PichuGift_1
 
 Route101_PichuGift_6:
-# 280 "data/maps/Route101/scripts.pory"
-	setobjectxy 7, 2, 5
 # 281 "data/maps/Route101/scripts.pory"
+	setobjectxy 7, 2, 5
+# 282 "data/maps/Route101/scripts.pory"
 	setobjectxy 8, 2, 4
 	goto Route101_PichuGift_1
 
 Route101_PichuGift_8:
-# 301 "data/maps/Route101/scripts.pory"
-	switch VAR_TEMP_1
-# 302 "data/maps/Route101/scripts.pory"
-	case 2, Route101_PichuGift_11
-# 304 "data/maps/Route101/scripts.pory"
-	case 3, Route101_PichuGift_12
-# 306 "data/maps/Route101/scripts.pory"
-	case 4, Route101_PichuGift_13
-	goto Route101_PichuGift_7
-
-Route101_PichuGift_11:
-# 303 "data/maps/Route101/scripts.pory"
-	applymovement 7, CynthiaDown3
+# 305 "data/maps/Route101/scripts.pory"
+	applymovement 7, Common_Movement_WalkInPlaceUp
 	goto Route101_PichuGift_7
 
 Route101_PichuGift_12:
-# 305 "data/maps/Route101/scripts.pory"
-	applymovement 7, Common_Movement_WalkDown2
-	goto Route101_PichuGift_7
-
-Route101_PichuGift_13:
-# 307 "data/maps/Route101/scripts.pory"
-	applymovement 7, Common_Movement_WalkDown
-	goto Route101_PichuGift_7
-
-
-# 321 "data/maps/Route101/scripts.pory"
-CynthiaMoveRight:
-# 322 "data/maps/Route101/scripts.pory"
-	walk_right
-# 322 "data/maps/Route101/scripts.pory"
-	walk_right
-# 322 "data/maps/Route101/scripts.pory"
-	walk_right
-# 322 "data/maps/Route101/scripts.pory"
-	walk_right
-# 322 "data/maps/Route101/scripts.pory"
-	walk_right
-# 323 "data/maps/Route101/scripts.pory"
-	emote_question_mark
-# 324 "data/maps/Route101/scripts.pory"
-	delay_16
-# 324 "data/maps/Route101/scripts.pory"
-	delay_16
-# 324 "data/maps/Route101/scripts.pory"
-	delay_16
-# 324 "data/maps/Route101/scripts.pory"
-	delay_16
-# 325 "data/maps/Route101/scripts.pory"
-	walk_right
-# 326 "data/maps/Route101/scripts.pory"
-	face_left
-	step_end
-
-# 329 "data/maps/Route101/scripts.pory"
-PichuMoveRight:
-# 330 "data/maps/Route101/scripts.pory"
-	delay_16
-# 330 "data/maps/Route101/scripts.pory"
-	delay_16
-# 330 "data/maps/Route101/scripts.pory"
-	delay_16
-# 331 "data/maps/Route101/scripts.pory"
-	walk_right
-# 331 "data/maps/Route101/scripts.pory"
-	walk_right
-# 331 "data/maps/Route101/scripts.pory"
-	walk_right
-# 331 "data/maps/Route101/scripts.pory"
-	walk_right
-# 332 "data/maps/Route101/scripts.pory"
-	delay_16
-# 332 "data/maps/Route101/scripts.pory"
-	delay_16
-# 332 "data/maps/Route101/scripts.pory"
-	delay_16
-# 332 "data/maps/Route101/scripts.pory"
-	delay_16
-	step_end
-
-# 335 "data/maps/Route101/scripts.pory"
-CynthiaMoveRight2:
-# 336 "data/maps/Route101/scripts.pory"
-	delay_16
-# 336 "data/maps/Route101/scripts.pory"
-	delay_16
-# 336 "data/maps/Route101/scripts.pory"
-	delay_16
-# 337 "data/maps/Route101/scripts.pory"
-	walk_right
-# 337 "data/maps/Route101/scripts.pory"
-	walk_right
-	step_end
-
-# 340 "data/maps/Route101/scripts.pory"
-PichuMoveRight2:
+# 338 "data/maps/Route101/scripts.pory"
+	switch VAR_TEMP_1
+# 339 "data/maps/Route101/scripts.pory"
+	case 2, Route101_PichuGift_15
 # 341 "data/maps/Route101/scripts.pory"
-	jump_in_place_right
-# 342 "data/maps/Route101/scripts.pory"
-	delay_4
+	case 3, Route101_PichuGift_16
 # 343 "data/maps/Route101/scripts.pory"
-	face_up
+	case 4, Route101_PichuGift_17
+	goto Route101_PichuGift_11
+
+Route101_PichuGift_15:
+# 340 "data/maps/Route101/scripts.pory"
+	applymovement 7, Common_Movement_WalkDown3
+	goto Route101_PichuGift_11
+
+Route101_PichuGift_16:
+# 342 "data/maps/Route101/scripts.pory"
+	applymovement 7, Common_Movement_WalkDown2
+	goto Route101_PichuGift_11
+
+Route101_PichuGift_17:
 # 344 "data/maps/Route101/scripts.pory"
-	delay_4
-# 345 "data/maps/Route101/scripts.pory"
-	face_left
-# 346 "data/maps/Route101/scripts.pory"
-	delay_4
-# 347 "data/maps/Route101/scripts.pory"
-	face_down
-# 348 "data/maps/Route101/scripts.pory"
-	delay_4
-# 349 "data/maps/Route101/scripts.pory"
-	face_right
-# 350 "data/maps/Route101/scripts.pory"
+	applymovement 7, Common_Movement_WalkDown
+	goto Route101_PichuGift_11
+
+
+# 358 "data/maps/Route101/scripts.pory"
+BiancaMoveRight:
+# 359 "data/maps/Route101/scripts.pory"
+	walk_right
+# 359 "data/maps/Route101/scripts.pory"
+	walk_right
+# 359 "data/maps/Route101/scripts.pory"
+	walk_right
+# 359 "data/maps/Route101/scripts.pory"
+	walk_right
+# 359 "data/maps/Route101/scripts.pory"
+	walk_right
+# 360 "data/maps/Route101/scripts.pory"
+	emote_question_mark
+# 361 "data/maps/Route101/scripts.pory"
 	delay_16
-# 351 "data/maps/Route101/scripts.pory"
+# 361 "data/maps/Route101/scripts.pory"
+	delay_16
+# 361 "data/maps/Route101/scripts.pory"
+	delay_16
+# 361 "data/maps/Route101/scripts.pory"
+	delay_16
+# 362 "data/maps/Route101/scripts.pory"
 	walk_right
-# 351 "data/maps/Route101/scripts.pory"
+# 363 "data/maps/Route101/scripts.pory"
+	face_left
+	step_end
+
+# 366 "data/maps/Route101/scripts.pory"
+PichuMoveRight:
+# 367 "data/maps/Route101/scripts.pory"
+	delay_16
+# 367 "data/maps/Route101/scripts.pory"
+	delay_16
+# 367 "data/maps/Route101/scripts.pory"
+	delay_16
+# 368 "data/maps/Route101/scripts.pory"
 	walk_right
-# 351 "data/maps/Route101/scripts.pory"
+# 368 "data/maps/Route101/scripts.pory"
 	walk_right
-# 351 "data/maps/Route101/scripts.pory"
+# 368 "data/maps/Route101/scripts.pory"
+	walk_right
+# 368 "data/maps/Route101/scripts.pory"
+	walk_right
+# 369 "data/maps/Route101/scripts.pory"
+	delay_16
+# 369 "data/maps/Route101/scripts.pory"
+	delay_16
+# 369 "data/maps/Route101/scripts.pory"
+	delay_16
+# 369 "data/maps/Route101/scripts.pory"
+	delay_16
+	step_end
+
+# 372 "data/maps/Route101/scripts.pory"
+BiancaMoveRight2:
+# 373 "data/maps/Route101/scripts.pory"
+	delay_16
+# 373 "data/maps/Route101/scripts.pory"
+	delay_16
+# 373 "data/maps/Route101/scripts.pory"
+	delay_16
+# 374 "data/maps/Route101/scripts.pory"
+	walk_right
+# 374 "data/maps/Route101/scripts.pory"
 	walk_right
 	step_end
 
-# 354 "data/maps/Route101/scripts.pory"
-PichuDisappear:
-# 355 "data/maps/Route101/scripts.pory"
+# 377 "data/maps/Route101/scripts.pory"
+PichuMoveRight2:
+# 378 "data/maps/Route101/scripts.pory"
 	jump_in_place_right
-# 356 "data/maps/Route101/scripts.pory"
+# 379 "data/maps/Route101/scripts.pory"
+	delay_4
+# 380 "data/maps/Route101/scripts.pory"
+	face_up
+# 381 "data/maps/Route101/scripts.pory"
+	delay_4
+# 382 "data/maps/Route101/scripts.pory"
+	face_left
+# 383 "data/maps/Route101/scripts.pory"
+	delay_4
+# 384 "data/maps/Route101/scripts.pory"
+	face_down
+# 385 "data/maps/Route101/scripts.pory"
+	delay_4
+# 386 "data/maps/Route101/scripts.pory"
+	face_right
+# 387 "data/maps/Route101/scripts.pory"
 	delay_16
-# 357 "data/maps/Route101/scripts.pory"
+# 388 "data/maps/Route101/scripts.pory"
+	walk_right
+# 388 "data/maps/Route101/scripts.pory"
+	walk_right
+# 388 "data/maps/Route101/scripts.pory"
+	walk_right
+# 388 "data/maps/Route101/scripts.pory"
+	walk_right
+	step_end
+
+# 391 "data/maps/Route101/scripts.pory"
+PichuJump:
+# 392 "data/maps/Route101/scripts.pory"
+	jump_in_place_right
+	step_end
+
+# 395 "data/maps/Route101/scripts.pory"
+PichuDisappear:
+# 396 "data/maps/Route101/scripts.pory"
+	jump_in_place_right
+# 397 "data/maps/Route101/scripts.pory"
+	delay_16
+# 398 "data/maps/Route101/scripts.pory"
 	delay_8
-# 358 "data/maps/Route101/scripts.pory"
+# 399 "data/maps/Route101/scripts.pory"
 	set_invisible
 	step_end
 
-# 361 "data/maps/Route101/scripts.pory"
-CynthiaDown3:
-# 362 "data/maps/Route101/scripts.pory"
-	walk_down
-# 362 "data/maps/Route101/scripts.pory"
-	walk_down
-# 362 "data/maps/Route101/scripts.pory"
-	walk_down
-	step_end
-
-# 365 "data/maps/Route101/scripts.pory"
-CynthiaLedgeLeave:
-# 366 "data/maps/Route101/scripts.pory"
+# 402 "data/maps/Route101/scripts.pory"
+BiancaLedgeLeave:
+# 403 "data/maps/Route101/scripts.pory"
 	jump_2_down
-# 367 "data/maps/Route101/scripts.pory"
+# 404 "data/maps/Route101/scripts.pory"
 	walk_down
-# 367 "data/maps/Route101/scripts.pory"
+# 404 "data/maps/Route101/scripts.pory"
 	walk_down
-# 367 "data/maps/Route101/scripts.pory"
+# 404 "data/maps/Route101/scripts.pory"
 	walk_down
-# 367 "data/maps/Route101/scripts.pory"
+# 404 "data/maps/Route101/scripts.pory"
 	walk_down
-# 368 "data/maps/Route101/scripts.pory"
+# 405 "data/maps/Route101/scripts.pory"
 	set_invisible
 	step_end
 
 Route101_MapScripts::
-# 372 "data/maps/Route101/scripts.pory"
+# 409 "data/maps/Route101/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION
-# 380 "data/maps/Route101/scripts.pory"
+# 417 "data/maps/Route101/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route101_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
 Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION:
-# 373 "data/maps/Route101/scripts.pory"
+# 410 "data/maps/Route101/scripts.pory"
 	setflag FLAG_TEMP_1
-# 374 "data/maps/Route101/scripts.pory"
+# 411 "data/maps/Route101/scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 1
 	goto_if_eq Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
-# 377 "data/maps/Route101/scripts.pory"
+# 414 "data/maps/Route101/scripts.pory"
 	call ProfBirch_EventScript_UpdateLocation
 	return
 
 Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
-# 375 "data/maps/Route101/scripts.pory"
+# 412 "data/maps/Route101/scripts.pory"
 	clearflag FLAG_TEMP_1
 	goto Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
 Route101_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-# 381 "data/maps/Route101/scripts.pory"
+# 418 "data/maps/Route101/scripts.pory"
 	map_script_2 VAR_ROUTE101_STATE, 0, Route101_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0
 	.2byte 0
 
 Route101_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0:
-# 382 "data/maps/Route101/scripts.pory"
+# 419 "data/maps/Route101/scripts.pory"
 	setflag FLAG_HIDE_MAP_NAME_POPUP
-# 383 "data/maps/Route101/scripts.pory"
+# 420 "data/maps/Route101/scripts.pory"
 	setvar VAR_ROUTE101_STATE, 1
 	return
 
 
 Jakson_Town01::
-# 389 "data/maps/Route101/scripts.pory"
+# 426 "data/maps/Route101/scripts.pory"
 	faceplayer
-# 390 "data/maps/Route101/scripts.pory"
+# 427 "data/maps/Route101/scripts.pory"
 	lock
-# 391 "data/maps/Route101/scripts.pory"
+# 428 "data/maps/Route101/scripts.pory"
 	speakername CommonText_Jakson
-# 392 "data/maps/Route101/scripts.pory"
+# 429 "data/maps/Route101/scripts.pory"
 	msgbox Town01_JaksonText
-# 393 "data/maps/Route101/scripts.pory"
+# 430 "data/maps/Route101/scripts.pory"
 	release
 	end
 
 
 Redd_Town01::
-# 398 "data/maps/Route101/scripts.pory"
+# 435 "data/maps/Route101/scripts.pory"
 	lock
-# 399 "data/maps/Route101/scripts.pory"
+# 436 "data/maps/Route101/scripts.pory"
 	speakername CommonText_Redd
-# 400 "data/maps/Route101/scripts.pory"
+# 437 "data/maps/Route101/scripts.pory"
 	msgbox Town01_ReddText
-# 401 "data/maps/Route101/scripts.pory"
+# 438 "data/maps/Route101/scripts.pory"
 	release
 	end
 
 
 Route101_PichuGift_Text_0:
-# 292 "data/maps/Route101/scripts.pory"
+# 293 "data/maps/Route101/scripts.pory"
+	.string "Hello there.\n"
+	.string "If you're coming from the direction of\l"
+	.string "Littleroot Town you must be a newer\l"
+	.string "trainer!\p"
+	.string "Aww, the start of a new journey is so\n"
+	.string "wonderful.\p"
+	.string "I still remember when I…$"
+
+Route101_PichuGift_Text_1:
+# 312 "data/maps/Route101/scripts.pory"
+	.string "Hey, hey, you!\n"
+	.string "Take it easy, now!\l"
+	.string "… … …\l"
+	.string "Unless…$"
+
+Route101_PichuGift_Text_2:
+# 317 "data/maps/Route101/scripts.pory"
+	.string "This Pichu had taken a liking to me when\n"
+	.string "I arrived here in Hoenn, but now it\l"
+	.string "seems like they might prefer you…\p"
+	.string "How would you like to take them with\n"
+	.string "you?\p"
+	.string "You would like that, right?!$"
+
+Route101_PichuGift_Text_3:
+# 322 "data/maps/Route101/scripts.pory"
 	.string "Pichu joined {PLAYER}!$"
+
+Route101_PichuGift_Text_4:
+# 332 "data/maps/Route101/scripts.pory"
+	.string "Oh! Right!\n"
+	.string "My name is Bianca.\p"
+	.string "I'll be in Hoenn for a while, so I hope we\n"
+	.string "get to meet again, {PLAYER}!\l"
+	.string "Bye-bye!$"

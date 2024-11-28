@@ -1518,37 +1518,37 @@ TypeEnhancingHeldItemsPokemart:
 	.2byte ITEM_NONE
 
 GetRivalForNameBox::
-# 885 "data/global.pory"
+# 889 "data/global.pory"
 	switch VAR_EMERALBODY_RIVAL
-# 886 "data/global.pory"
-	case 1, GetRivalForNameBox_2
-# 888 "data/global.pory"
-	case 2, GetRivalForNameBox_3
 # 890 "data/global.pory"
-	case 3, GetRivalForNameBox_4
+	case 1, GetRivalForNameBox_2
 # 892 "data/global.pory"
+	case 2, GetRivalForNameBox_3
+# 894 "data/global.pory"
+	case 3, GetRivalForNameBox_4
+# 896 "data/global.pory"
 	case 4, GetRivalForNameBox_5
-# 895 "data/global.pory"
+# 899 "data/global.pory"
 	speakername CommonText_Baron
 	return
 
 GetRivalForNameBox_2:
-# 887 "data/global.pory"
+# 891 "data/global.pory"
 	speakername CommonText_Harper
 	return
 
 GetRivalForNameBox_3:
-# 889 "data/global.pory"
+# 893 "data/global.pory"
 	speakername CommonText_Jakson
 	return
 
 GetRivalForNameBox_4:
-# 891 "data/global.pory"
+# 895 "data/global.pory"
 	speakername CommonText_Redd
 	return
 
 GetRivalForNameBox_5:
-# 893 "data/global.pory"
+# 897 "data/global.pory"
 	speakername CommonText_Sakura
 	return
 
@@ -1896,34 +1896,38 @@ CommonText_Looker::
 # 871 "data/global.pory"
 	.string "Looker$"
 
-CommonText_MagmaGrunt::
+CommonText_Bianca::
 # 875 "data/global.pory"
+	.string "Bianca$"
+
+CommonText_MagmaGrunt::
+# 879 "data/global.pory"
 	.string "Magma Grunt$"
 
 CommonText_AquaGrunt::
-# 879 "data/global.pory"
+# 883 "data/global.pory"
 	.string "Aqua Grunt$"
 
 CommonText_Baron::
-# 899 "data/global.pory"
+# 903 "data/global.pory"
 	.string "Baron$"
 
 CommonText_Harper::
-# 903 "data/global.pory"
+# 907 "data/global.pory"
 	.string "Harper$"
 
 CommonText_Jakson::
-# 907 "data/global.pory"
+# 911 "data/global.pory"
 	.string "Jakson$"
 
 CommonText_Redd::
-# 911 "data/global.pory"
+# 915 "data/global.pory"
 	.string "Redd$"
 
 CommonText_Sakura::
-# 915 "data/global.pory"
+# 919 "data/global.pory"
 	.string "Sakura$"
 
 Text_PokevialSizeIncrease::
-# 919 "data/global.pory"
+# 923 "data/global.pory"
 	.string "The Pokévial's size was increased!$"

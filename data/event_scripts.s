@@ -1053,6 +1053,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/gym_guide.inc"
 	.include "data/emib_opening.inc"
 	.include "data/challenge_balls.inc"
+	.include "data/looker.inc"
 
 	.include "data/maps/ScorchedSlabB1F/scripts.inc"
 	.include "data/maps/SeasideGrotto/scripts.inc"
@@ -1065,19 +1066,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/CrescentIsle/scripts.inc"
 	.include "data/maps/FlurryPeak/scripts.inc"
 	.include "data/maps/DrakesSanctum/scripts.inc"
-
 	.include "data/maps/VictoryRoad_2F/scripts.inc"
-
 	.include "data/maps/SeaSpiritsDen/scripts.inc"
-
 	.include "data/maps/SeaSpiritsDenAlt/scripts.inc"
-
 	.include "data/maps/TracklessForestAlt/scripts.inc"
-
 	.include "data/maps/PathlessPlain/scripts.inc"
-
 	.include "data/maps/PathlessPlainAlt/scripts.inc"
-
 	.include "data/maps/GaleforceCliffs/scripts.inc"
-
 	.include "data/maps/RustboroCity_DevonCorp_B1F/scripts.inc"

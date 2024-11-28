@@ -1,0 +1,40 @@
+script RustboroCity_EventScript_Looker {
+	lock
+	setflag (FLAG_SAFE_FOLLOWER_MOVEMENT)
+	addobject (LOOKER)
+	setobjectxy (LOOKER, 21, 15)
+	special (SpawnCameraObject)
+	applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight2)
+	waitmovement (0)
+	playbgm (MUS_PL_LOOKER, FALSE)
+	applymovement (LOOKER, RustboroCity_LookerMove)
+	waitmovement (0)
+	removeobject (LOOKER)
+	setvar (VAR_RUSTBORO_CITY_STATE, 8)
+	applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft2)
+	waitmovement (0)
+	special (RemoveCameraObject)
+	clearflag (FLAG_SAFE_FOLLOWER_MOVEMENT)
+	fadedefaultbgm
+	release
+}
+
+movement RustboroCity_LookerMove {
+	walk_down * 4
+	delay_16 * 2
+	walk_in_place_faster_up
+	delay_16 * 4
+	walk_down * 2
+	delay_16 * 1
+	walk_in_place_right
+	delay_16 * 4
+	walk_down * 2
+	delay_16 * 2
+	walk_faster_up * 4
+	delay_16 * 4
+	lock_facing_direction
+	walk_slow_down * 3
+	delay_16 * 1
+	unlock_facing_direction
+	walk_faster_down * 7
+}

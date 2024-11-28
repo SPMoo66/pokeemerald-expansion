@@ -4,6 +4,7 @@
 .set LOCALID_GRUNT, 10
 .set LOCALID_RIVAL, 14
 .set LOCALID_SCIENTIST, 15
+.set LOOKER, 17
 
 RustboroCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_OnTransition
@@ -698,7 +699,7 @@ RustboroCity_EventScript_MayEncounter::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
-	setvar VAR_RUSTBORO_CITY_STATE, 8
+	setvar VAR_RUSTBORO_CITY_STATE, 9
 	setvar VAR_ROUTE104_STATE, 2
 	setvar VAR_0x8008, 0
 	speakername (CommonText_May)
@@ -773,7 +774,7 @@ RustboroCity_EventScript_BrendanEncounter::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
-	setvar VAR_RUSTBORO_CITY_STATE, 8
+	setvar VAR_RUSTBORO_CITY_STATE, 9
 	setvar VAR_ROUTE104_STATE, 2
 	speakername (CommonText_Brendan)
 	msgbox RustboroCity_Text_BrendanPassedBrineyWantToBattle, MSGBOX_YESNO

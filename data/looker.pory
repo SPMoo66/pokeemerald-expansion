@@ -1,15 +1,15 @@
 script RustboroCity_EventScript_Looker {
 	lock
 	setflag (FLAG_SAFE_FOLLOWER_MOVEMENT)
-	addobject (LOOKER)
-	setobjectxy (LOOKER, 21, 15)
+	addobject (LOOKER_RUSTBORO)
+	setobjectxy (LOOKER_RUSTBORO, 21, 15)
 	special (SpawnCameraObject)
 	applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight2)
 	waitmovement (0)
 	playbgm (MUS_PL_LOOKER, FALSE)
-	applymovement (LOOKER, RustboroCity_LookerMove)
+	applymovement (LOOKER_RUSTBORO, RustboroCity_LookerMove)
 	waitmovement (0)
-	removeobject (LOOKER)
+	removeobject (LOOKER_RUSTBORO)
 	setvar (VAR_RUSTBORO_CITY_STATE, 8)
 	applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft2)
 	waitmovement (0)
@@ -37,4 +37,73 @@ movement RustboroCity_LookerMove {
 	delay_16 * 1
 	unlock_facing_direction
 	walk_faster_down * 7
+}
+
+script SlateportCity_EventScript_Looker {
+	lock
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	addobject (LOOKER_SLATEPORT)
+	setobjectxy (LOOKER_SLATEPORT, VAR_TEMP_0, 16)
+	playbgm (MUS_PL_LOOKER, FALSE)
+	applymovement (LOOKER_SLATEPORT, SlateportCity_LookerMove1)
+	waitmovement (0)
+	playse (SE_SUPER_EFFECTIVE)
+	applymovement (LOOKER_SLATEPORT, SlateportCity_LookerMove2)
+	waitmovement (0)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	speakername (CommonText_Q)
+	msgbox (format ("Ah!\n"
+					"My greatest apologies. It seems as though running through the City without paying any mind was a poor choice.\p"
+					"I am-"))
+	playse (SE_PIN)
+	applymovement (LOOKER_SLATEPORT, Common_Movement_ExclamationMark)
+	waitmovement (0)
+	delay (50)
+	msgbox (format ("No!\n"
+					"Is it possible that you have already suspected that I am a part of the International Police?"))
+	applymovement (LOOKER_SLATEPORT, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement (0)
+	msgbox (format ("No, this is very bad, for an agent such as myself to have his cover blown so quickly…\p"
+					"How could I ever show my face again at headquarters?!"))
+	closemessage
+	delay (30)
+	applymovement (LOOKER_SLATEPORT, Common_Movement_WalkInPlaceFasterUp)
+	waitmovement (0)
+	speakername (CommonText_Looker)
+	msgbox (format ("Very well, you may refer to me as Looker!\p"
+					"My name? A codename, yes.\n"
+					"An elite agent such as myself must keep many secrets.\p"
+					"I am here in Hoenn to root out enemy agents of the world!\p"
+					"Team Aqua?\n"
+					"Team Magma?\l"
+					"I know none of the sort!\p"
+					"No, I am on the tail of other evildoers that spread chaos through the world.\p"
+					"If you come across any such persons, be sure to make me aware!\p"
+					"Farewell, then!"))
+	closemessage
+	if (var(VAR_TEMP_0) == 19) {
+		applymovement (LOOKER_SLATEPORT, Common_Movement_WalkLeft)
+	}
+	else {
+		applymovement (LOOKER_SLATEPORT, Common_Movement_WalkRight)
+	}
+	waitmovement (0)
+	applymovement (LOOKER_SLATEPORT, Common_Movement_WalkUp7)
+	waitmovement (0)
+	removeobject (LOOKER_SLATEPORT)
+	setvar (VAR_SLATEPORT_CITY_STATE, 1)
+	fadedefaultbgm
+	release
+}
+
+movement SlateportCity_LookerMove1 {
+	walk_faster_up * 6
+}
+
+movement SlateportCity_LookerMove2 {
+	lock_facing_direction
+	walk_slow_down * 1
+	unlock_facing_direction
+	delay_16 * 2
 }

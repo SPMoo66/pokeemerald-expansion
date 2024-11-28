@@ -4,9 +4,9 @@ RustboroCity_EventScript_Looker::
 # 3 "data/looker.pory"
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 # 4 "data/looker.pory"
-	addobject LOOKER
+	addobject LOOKER_RUSTBORO
 # 5 "data/looker.pory"
-	setobjectxy LOOKER, 21, 15
+	setobjectxy LOOKER_RUSTBORO, 21, 15
 # 6 "data/looker.pory"
 	special SpawnCameraObject
 # 7 "data/looker.pory"
@@ -16,11 +16,11 @@ RustboroCity_EventScript_Looker::
 # 9 "data/looker.pory"
 	playbgm MUS_PL_LOOKER, FALSE
 # 10 "data/looker.pory"
-	applymovement LOOKER, RustboroCity_LookerMove
+	applymovement LOOKER_RUSTBORO, RustboroCity_LookerMove
 # 11 "data/looker.pory"
 	waitmovement 0
 # 12 "data/looker.pory"
-	removeobject LOOKER
+	removeobject LOOKER_RUSTBORO
 # 13 "data/looker.pory"
 	setvar VAR_RUSTBORO_CITY_STATE, 8
 # 14 "data/looker.pory"
@@ -129,3 +129,162 @@ RustboroCity_LookerMove:
 # 39 "data/looker.pory"
 	walk_faster_down
 	step_end
+
+SlateportCity_EventScript_Looker::
+# 43 "data/looker.pory"
+	lock
+# 44 "data/looker.pory"
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 45 "data/looker.pory"
+	addobject LOOKER_SLATEPORT
+# 46 "data/looker.pory"
+	setobjectxy LOOKER_SLATEPORT, VAR_TEMP_0, 16
+# 47 "data/looker.pory"
+	playbgm MUS_PL_LOOKER, FALSE
+# 48 "data/looker.pory"
+	applymovement LOOKER_SLATEPORT, SlateportCity_LookerMove1
+# 49 "data/looker.pory"
+	waitmovement 0
+# 50 "data/looker.pory"
+	playse SE_SUPER_EFFECTIVE
+# 51 "data/looker.pory"
+	applymovement LOOKER_SLATEPORT, SlateportCity_LookerMove2
+# 52 "data/looker.pory"
+	waitmovement 0
+# 53 "data/looker.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
+# 54 "data/looker.pory"
+	waitmovement 0
+# 55 "data/looker.pory"
+	speakername CommonText_Q
+# 56 "data/looker.pory"
+	msgbox SlateportCity_EventScript_Looker_Text_0
+# 59 "data/looker.pory"
+	playse SE_PIN
+# 60 "data/looker.pory"
+	applymovement LOOKER_SLATEPORT, Common_Movement_ExclamationMark
+# 61 "data/looker.pory"
+	waitmovement 0
+# 62 "data/looker.pory"
+	delay 50
+# 63 "data/looker.pory"
+	msgbox SlateportCity_EventScript_Looker_Text_1
+# 65 "data/looker.pory"
+	applymovement LOOKER_SLATEPORT, Common_Movement_WalkInPlaceFasterDown
+# 66 "data/looker.pory"
+	waitmovement 0
+# 67 "data/looker.pory"
+	msgbox SlateportCity_EventScript_Looker_Text_2
+# 69 "data/looker.pory"
+	closemessage
+# 70 "data/looker.pory"
+	delay 30
+# 71 "data/looker.pory"
+	applymovement LOOKER_SLATEPORT, Common_Movement_WalkInPlaceFasterUp
+# 72 "data/looker.pory"
+	waitmovement 0
+# 73 "data/looker.pory"
+	speakername CommonText_Looker
+# 74 "data/looker.pory"
+	msgbox SlateportCity_EventScript_Looker_Text_3
+# 84 "data/looker.pory"
+	closemessage
+# 85 "data/looker.pory"
+	compare VAR_TEMP_0, 19
+	goto_if_eq SlateportCity_EventScript_Looker_2
+# 89 "data/looker.pory"
+	applymovement LOOKER_SLATEPORT, Common_Movement_WalkRight
+SlateportCity_EventScript_Looker_1:
+# 91 "data/looker.pory"
+	waitmovement 0
+# 92 "data/looker.pory"
+	applymovement LOOKER_SLATEPORT, Common_Movement_WalkUp7
+# 93 "data/looker.pory"
+	waitmovement 0
+# 94 "data/looker.pory"
+	removeobject LOOKER_SLATEPORT
+# 95 "data/looker.pory"
+	setvar VAR_SLATEPORT_CITY_STATE, 1
+# 96 "data/looker.pory"
+	fadedefaultbgm
+# 97 "data/looker.pory"
+	release
+	return
+
+SlateportCity_EventScript_Looker_2:
+# 86 "data/looker.pory"
+	applymovement LOOKER_SLATEPORT, Common_Movement_WalkLeft
+	goto SlateportCity_EventScript_Looker_1
+
+
+# 100 "data/looker.pory"
+SlateportCity_LookerMove1:
+# 101 "data/looker.pory"
+	walk_faster_up
+# 101 "data/looker.pory"
+	walk_faster_up
+# 101 "data/looker.pory"
+	walk_faster_up
+# 101 "data/looker.pory"
+	walk_faster_up
+# 101 "data/looker.pory"
+	walk_faster_up
+# 101 "data/looker.pory"
+	walk_faster_up
+	step_end
+
+# 104 "data/looker.pory"
+SlateportCity_LookerMove2:
+# 105 "data/looker.pory"
+	lock_facing_direction
+# 106 "data/looker.pory"
+	walk_slow_down
+# 107 "data/looker.pory"
+	unlock_facing_direction
+# 108 "data/looker.pory"
+	delay_16
+# 108 "data/looker.pory"
+	delay_16
+	step_end
+
+SlateportCity_EventScript_Looker_Text_0:
+# 56 "data/looker.pory"
+	.string "Ah!\n"
+	.string "My greatest apologies. It seems as\l"
+	.string "though running through the City\l"
+	.string "without paying any mind was a poor\l"
+	.string "choice.\p"
+	.string "I am-$"
+
+SlateportCity_EventScript_Looker_Text_1:
+# 63 "data/looker.pory"
+	.string "No!\n"
+	.string "Is it possible that you have already\l"
+	.string "suspected that I am a part of the\l"
+	.string "International Police?$"
+
+SlateportCity_EventScript_Looker_Text_2:
+# 67 "data/looker.pory"
+	.string "No, this is very bad, for an agent such\n"
+	.string "as myself to have his cover blown so\l"
+	.string "quickly…\p"
+	.string "How could I ever show my face again at\n"
+	.string "headquarters?!$"
+
+SlateportCity_EventScript_Looker_Text_3:
+# 74 "data/looker.pory"
+	.string "Very well, you may refer to me as\n"
+	.string "Looker!\p"
+	.string "My name? A codename, yes.\n"
+	.string "An elite agent such as myself must keep\l"
+	.string "many secrets.\p"
+	.string "I am here in Hoenn to root out enemy\n"
+	.string "agents of the world!\p"
+	.string "Team Aqua?\n"
+	.string "Team Magma?\l"
+	.string "I know none of the sort!\p"
+	.string "No, I am on the tail of other evildoers\n"
+	.string "that spread chaos through the world.\p"
+	.string "If you come across any such persons, be\n"
+	.string "sure to make me aware!\p"
+	.string "Farewell, then!$"

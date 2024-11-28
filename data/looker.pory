@@ -107,3 +107,21 @@ movement SlateportCity_LookerMove2 {
 	unlock_facing_direction
 	delay_16 * 2
 }
+
+script Route115_EventScript_Looker {
+	lock
+	pokenavcall (Route115_Text_Looker_Call)
+	setvar (VAR_LOOKER_ROCKET, 3)
+	release
+}
+
+text Route115_Text_Looker_Call {
+	"… … … … … Beep!\p"
+	"Looker: {PLAYER}!\p"
+	"Quickly, I am in dire need of your help!\n"
+	"I have managed to track down our\l"
+	"adversaries at last!\p"
+	"Come to Devoncorp in Rustboro as soon\nas you are able.\l"
+	"The enemy, they've already launched\lan attack!"
+	"… … … … … Click!"
+}

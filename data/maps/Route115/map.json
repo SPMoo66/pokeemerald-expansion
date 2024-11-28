@@ -388,7 +388,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 42,
+      "elevation": 0,
+      "var": "VAR_LOOKER_ROCKET",
+      "var_value": "0",
+      "script": "Route115_EventScript_Looker"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 42,
+      "elevation": 0,
+      "var": "VAR_LOOKER_ROCKET",
+      "var_value": "0",
+      "script": "Route115_EventScript_Looker"
+    }
   ],
   "bg_events": [
     {

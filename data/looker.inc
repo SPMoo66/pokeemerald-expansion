@@ -247,6 +247,18 @@ SlateportCity_LookerMove2:
 	delay_16
 	step_end
 
+Route115_EventScript_Looker::
+# 112 "data/looker.pory"
+	lock
+# 113 "data/looker.pory"
+	pokenavcall Route115_Text_Looker_Call
+# 114 "data/looker.pory"
+	setvar VAR_LOOKER_ROCKET, 3
+# 115 "data/looker.pory"
+	release
+	return
+
+
 SlateportCity_EventScript_Looker_Text_0:
 # 56 "data/looker.pory"
 	.string "Ah!\n"
@@ -288,3 +300,14 @@ SlateportCity_EventScript_Looker_Text_3:
 	.string "If you come across any such persons, be\n"
 	.string "sure to make me aware!\p"
 	.string "Farewell, then!$"
+
+Route115_Text_Looker_Call::
+# 118 "data/looker.pory"
+	.string "… … … … … Beep!\p"
+	.string "Looker: {PLAYER}!\p"
+	.string "Quickly, I am in dire need of your help!\n"
+	.string "I have managed to track down our\l"
+	.string "adversaries at last!\p"
+	.string "Come to Devoncorp in Rustboro as soon\nas you are able.\l"
+	.string "The enemy, they've already launched\lan attack!"
+	.string "… … … … … Click!$"

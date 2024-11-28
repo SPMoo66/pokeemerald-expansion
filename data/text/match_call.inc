@@ -2709,6 +2709,49 @@ MatchCall_Text_Scott7::
 	.string "Scott appears to be out of\n"
 	.string "the Pokénav's service area…$"
 
+MatchCall_Text_Looker1::
+	.string "Looker: {PLAYER}!\n"
+	.string "Hurry yourself up and come\l"
+	.string "to Devoncorp in Rustboro!$"
+
+MatchCall_Text_Looker2::
+	.string "Looker: Ah, {PLAYER}.\p"
+	.string "It is good that you are calling.\p"
+	.string "I am hot on the trail of\n"
+	.string "Team Rocket.\p"
+	.string "They will be caught any minute\l"
+	.string "now, I am sure.$"
+
+MatchCall_Text_Looker3::
+	.string "… … … … … …\n"
+	.string "… … … … … …\p"
+	.string "Looker appears to be out of\n"
+	.string "the Pokénav's service area…$"
+
+MatchCall_Text_Looker4::
+	.string "… … … … … …\n"
+	.string "… … … … … …\p"
+	.string "Looker appears to be out of\n"
+	.string "the Pokénav's service area…$"
+
+MatchCall_Text_Looker5::
+	.string "… … … … … …\n"
+	.string "… … … … … …\p"
+	.string "Looker appears to be out of\n"
+	.string "the Pokénav's service area…$"
+
+MatchCall_Text_Looker6::
+	.string "… … … … … …\n"
+	.string "… … … … … …\p"
+	.string "Looker appears to be out of\n"
+	.string "the Pokénav's service area…$"
+
+MatchCall_Text_Looker7::
+	.string "… … … … … …\n"
+	.string "… … … … … …\p"
+	.string "Looker appears to be out of\n"
+	.string "the Pokénav's service area…$"
+
 MatchCall_Text_Norman1:: @ 82B5719
 	.string "Dad: In Rustboro, there's a man\n"
 	.string "that goes by the odd name of\l"
@@ -2845,11 +2888,6 @@ MatchCall_Text_BirchRegisterCall: @ 82B5F52
 MatchCall_Text_RegisteredBirch: @ 82B603A
 	.string "Registered Prof. Birch\n"
 	.string "in the Pokénav.$"
-	
-MatchCall_Text_UnusedProfBirch:
-	.string "Prof. Birch: When one has both\n"
-	.string "the Pokédex and Pokénav, studying\l"
-	.string "Pokémon becomes more fun, eh?$"
 
 MatchCall_Text_MrStone1:: @ 82B60C0
 	.string "Mr. Stone: Oh? {PLAYER}{KUN}!\p"

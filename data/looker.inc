@@ -253,8 +253,24 @@ Route115_EventScript_Looker::
 # 113 "data/looker.pory"
 	pokenavcall Route115_Text_Looker_Call
 # 114 "data/looker.pory"
-	setvar VAR_LOOKER_ROCKET, 3
+	waitmessage
 # 115 "data/looker.pory"
+	delay 30
+# 116 "data/looker.pory"
+	playfanfare MUS_REGISTER_MATCH_CALL
+# 117 "data/looker.pory"
+	msgbox MatchCall_Text_RegisteredLooker, MSGBOX_DEFAULT
+# 118 "data/looker.pory"
+	waitfanfare
+# 119 "data/looker.pory"
+	closemessage
+# 120 "data/looker.pory"
+	delay 30
+# 121 "data/looker.pory"
+	setflag FLAG_ENABLE_LOOKER_MATCH_CALL
+# 122 "data/looker.pory"
+	setvar VAR_LOOKER_ROCKET, 3
+# 123 "data/looker.pory"
 	release
 	return
 
@@ -302,12 +318,20 @@ SlateportCity_EventScript_Looker_Text_3:
 	.string "Farewell, then!$"
 
 Route115_Text_Looker_Call::
-# 118 "data/looker.pory"
+# 126 "data/looker.pory"
 	.string "… … … … … Beep!\p"
 	.string "Looker: {PLAYER}!\p"
-	.string "Quickly, I am in dire need of your help!\n"
+	.string "Quickly, I am in dire need of your\n"
+	.string "help!\l"
 	.string "I have managed to track down our\l"
 	.string "adversaries at last!\p"
-	.string "Come to Devoncorp in Rustboro as soon\nas you are able.\l"
-	.string "The enemy, they've already launched\lan attack!"
+	.string "Come to Devoncorp in Rustboro as\n"
+	.string "soon as you are able.\l"
+	.string "The enemy, they've already\l"
+	.string "launched an attack!\p"
 	.string "… … … … … Click!$"
+
+MatchCall_Text_RegisteredLooker::
+# 140 "data/looker.pory"
+	.string "Registered Looker\n"
+	.string "in the Pokénav.$"

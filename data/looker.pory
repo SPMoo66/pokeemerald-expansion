@@ -111,6 +111,14 @@ movement SlateportCity_LookerMove2 {
 script Route115_EventScript_Looker {
 	lock
 	pokenavcall (Route115_Text_Looker_Call)
+	waitmessage
+	delay (30)
+	playfanfare (MUS_REGISTER_MATCH_CALL)
+	msgbox (MatchCall_Text_RegisteredLooker, MSGBOX_DEFAULT)
+	waitfanfare
+	closemessage
+	delay (30)
+	setflag (FLAG_ENABLE_LOOKER_MATCH_CALL)
 	setvar (VAR_LOOKER_ROCKET, 3)
 	release
 }
@@ -118,10 +126,18 @@ script Route115_EventScript_Looker {
 text Route115_Text_Looker_Call {
 	"… … … … … Beep!\p"
 	"Looker: {PLAYER}!\p"
-	"Quickly, I am in dire need of your help!\n"
+	"Quickly, I am in dire need of your\n"
+	"help!\l"
 	"I have managed to track down our\l"
 	"adversaries at last!\p"
-	"Come to Devoncorp in Rustboro as soon\nas you are able.\l"
-	"The enemy, they've already launched\lan attack!"
+	"Come to Devoncorp in Rustboro as\n"
+	"soon as you are able.\l"
+	"The enemy, they've already\l"
+	"launched an attack!\p"
 	"… … … … … Click!"
+}
+
+text MatchCall_Text_RegisteredLooker {
+	"Registered Looker\n"
+	"in the Pokénav.$"
 }

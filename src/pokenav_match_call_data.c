@@ -364,6 +364,28 @@ static const struct MatchCallStructNPC sScottMatchCallHeader =
     .textData = sScottTextScripts
 };
 
+static const match_call_text_data_t sLookerTextScripts[] = {
+    { MatchCall_Text_Looker1, 0xFFFF,                              0xFFFF },
+    { MatchCall_Text_Looker2, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY,  0xFFFF },
+    { MatchCall_Text_Looker3, FLAG_RECEIVED_CASTFORM,              0xFFFF },
+    { MatchCall_Text_Looker4, FLAG_RECEIVED_RED_OR_BLUE_ORB,       0xFFFF },
+    { MatchCall_Text_Looker5, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
+    { MatchCall_Text_Looker6, FLAG_DEFEATED_SOOTOPOLIS_GYM,        0xFFFF },
+    { MatchCall_Text_Looker7, FLAG_SYS_GAME_CLEAR,                 0xFFFF },
+    { NULL,                  0xFFFF,                              0xFFFF }
+};
+
+
+static const struct MatchCallStructNPC sLookerMatchCallHeader =
+{
+    .type = 0,
+    .mapSec = MAPSEC_NONE,
+    .flag = FLAG_ENABLE_LOOKER_MATCH_CALL,
+    .desc = gText_LookerMatchCallDesc,
+    .name = gText_LookerMatchCallName,
+    .textData = sLookerTextScripts
+};
+
 static const match_call_text_data_t sRoxanneTextScripts[] = {
     { MatchCall_Text_Roxanne1, 0xFFFE,              0xFFFF },
     { MatchCall_Text_Roxanne2, 0xFFFF,              0xFFFF },
@@ -587,6 +609,7 @@ static const match_call_t sMatchCallHeaders[] = {
     [MC_HEADER_MOM]        = {.npc    = &sMomMatchCallHeader},
     [MC_HEADER_STEVEN]     = {.npc    = &sStevenMatchCallHeader},
     [MC_HEADER_SCOTT]      = {.npc    = &sScottMatchCallHeader},
+    [MC_HEADER_LOOKER]     = {.npc    = &sLookerMatchCallHeader},
     [MC_HEADER_ROXANNE]    = {.leader = &sRoxanneMatchCallHeader},
     [MC_HEADER_BRAWLY]     = {.leader = &sBrawlyMatchCallHeader},
     [MC_HEADER_WATTSON]    = {.leader = &sWattsonMatchCallHeader},

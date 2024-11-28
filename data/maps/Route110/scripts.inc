@@ -1237,7 +1237,7 @@ Route110_EventScript_BirchScene::
 # 619 "data/maps/Route110/scripts.pory"
 	playfanfare MUS_REGISTER_MATCH_CALL
 # 620 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_RegisteredBirchInPokenav, MSGBOX_DEFAULT
+	msgbox MatchCall_Text_RegisteredBirch, MSGBOX_DEFAULT
 # 621 "data/maps/Route110/scripts.pory"
 	waitfanfare
 # 622 "data/maps/Route110/scripts.pory"
@@ -1863,22 +1863,14 @@ Route110_Text_HeardYouInstallMatchCall:
 # 932 "data/maps/Route110/scripts.pory"
 
 # 933 "data/maps/Route110/scripts.pory"
-Route110_Text_RegisteredBirchInPokenav:
-# 934 "data/maps/Route110/scripts.pory"
-	.string "Registered Prof. Birch\n"
-# 935 "data/maps/Route110/scripts.pory"
-	.string "in the Pokénav.$"
-# 936 "data/maps/Route110/scripts.pory"
-
-# 937 "data/maps/Route110/scripts.pory"
 Route110_Text_KeepAnEyeOutForRival:
-# 938 "data/maps/Route110/scripts.pory"
+# 934 "data/maps/Route110/scripts.pory"
 	.string "{PLAYER}{KUN}…\p"
-# 939 "data/maps/Route110/scripts.pory"
+# 935 "data/maps/Route110/scripts.pory"
 	.string "Please keep an eye out for my {RIVAL}.\n"
-# 940 "data/maps/Route110/scripts.pory"
+# 936 "data/maps/Route110/scripts.pory"
 	.string "… … … … … …\p"
-# 941 "data/maps/Route110/scripts.pory"
+# 937 "data/maps/Route110/scripts.pory"
 	.string "Well, I had better get going.\n"
-# 942 "data/maps/Route110/scripts.pory"
+# 938 "data/maps/Route110/scripts.pory"
 	.string "See you again, {PLAYER}{KUN}!$"

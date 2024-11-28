@@ -617,7 +617,7 @@ Route110_EventScript_BirchScene::
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox Route110_Text_RegisteredBirchInPokenav, MSGBOX_DEFAULT
+	msgbox MatchCall_Text_RegisteredBirch, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
@@ -929,10 +929,6 @@ Route110_Text_HeardYouInstallMatchCall:
 	.string "That way, even when we're apart,\n"
 	.string "I can rate your Pokédex anytime.\p"
 	.string "… … … … … …$"
-
-Route110_Text_RegisteredBirchInPokenav:
-	.string "Registered Prof. Birch\n"
-	.string "in the Pokénav.$"
 
 Route110_Text_KeepAnEyeOutForRival:
 	.string "{PLAYER}{KUN}…\p"

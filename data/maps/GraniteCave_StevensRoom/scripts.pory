@@ -1,0 +1,101 @@
+const STEVEN = 1
+
+mapscripts GraniteCave_StevensRoom_MapScripts {}
+
+script GraniteCave_StevensRoom_EventScript_Steven {
+	lock
+	faceplayer
+	speakername (CommonText_Steven)
+	msgbox (GraniteCave_StevensRoom_Text_ImStevenLetterForMe)
+	closemessage
+	setvar (VAR_0x8004, ITEM_LETTER)
+	call (Common_EventScript_PlayerHandedOverTheItem)
+	speakername (CommonText_Steven)
+	msgbox (GraniteCave_StevensRoom_Text_ThankYouTakeThis)
+	closemessage
+	giveitem (ITEM_TM_STEEL_WING)
+	speakername (CommonText_Steven)
+	msgbox (GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister)
+	closemessage
+	delay (30)
+	playfanfare (MUS_REGISTER_MATCH_CALL)
+	msgbox (GraniteCave_StevensRoom_Text_RegisteredSteven)
+	waitfanfare
+	closemessage
+	delay (30)
+	setflag (FLAG_REGISTERED_STEVEN_POKENAV)
+	speakername (CommonText_Steven)
+	msgbox (GraniteCave_StevensRoom_Text_IveGotToHurryAlong)
+	closemessage
+	if (var(VAR_FACING) == DIR_NORTH) {
+		applymovement (STEVEN, GraniteCave_StevensRoom_Movement_StevenExit)
+	}
+	elif (var(VAR_FACING) == DIR_SOUTH) {
+		applymovement (OBJ_EVENT_ID_PLAYER, GraniteCave_StevensRoom_Movement_PlayerTurnTowardExit)
+		applymovement (STEVEN, GraniteCave_StevensRoom_Movement_StevenExitSouth)
+	}
+	else {
+		applymovement (OBJ_EVENT_ID_PLAYER, GraniteCave_StevensRoom_Movement_PlayerTurnTowardExit)
+		applymovement (STEVEN, GraniteCave_StevensRoom_Movement_StevenExit)
+	}
+	waitmovement (0)
+	playse (SE_EXIT)
+	removeobject (STEVEN)
+	release
+}
+
+movement GraniteCave_StevensRoom_Movement_StevenExit {
+	walk_up * 5
+	delay_8
+}
+
+movement GraniteCave_StevensRoom_Movement_PlayerTurnTowardExit {
+	delay_16 * 3
+	walk_in_place_faster_up
+}
+
+movement GraniteCave_StevensRoom_Movement_StevenExitSouth {
+	walk_left
+	walk_up * 3
+	walk_right
+	walk_up * 2
+	delay_8
+}
+
+text GraniteCave_StevensRoom_Text_ImStevenLetterForMe {
+	"My name is Steven.\p"
+	"I'm interested in rare stones,\n"
+	"so I travel here and there.\p"
+	"Oh?\n"
+	"A Letter for me?"
+}
+
+text GraniteCave_StevensRoom_Text_ThankYouTakeThis {
+	"Okay, thank you.\p"
+	"You went through all this trouble to\n"
+	"deliver that. I need to thank you.\p"
+	"Let me see…\n"
+	"I'll give you this TM.\p"
+	"It contains my favorite move,\n"
+	"Steel Wing."
+}
+
+text GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister {
+	"Your Pokémon appear quite capable.\p"
+	"If you keep training, you could even\n"
+	"become the Champion of the Pokémon\l"
+	"League one day. That's what I think.\p"
+	"I know, since we've gotten to know each\n"
+	"other, let's register one another in\l"
+	"our Pokénavs.\p"
+	"… … … … … …$"
+}
+
+text GraniteCave_StevensRoom_Text_RegisteredSteven {
+	"Registered Steven\n"
+	"in the Pokénav.$"
+}
+
+text GraniteCave_StevensRoom_Text_IveGotToHurryAlong {
+	"Now, I've got to hurry along.$"
+}

@@ -2586,6 +2586,96 @@ MatchCall_Text_Brendan15:: @ 2B4D46
 	.string "with you, {PLAYER}, they get pretty\l"
 	.string "envious!$"
 
+MatchCall_Text_Jakson1::
+	.string "$"
+
+MatchCall_Text_Jakson2::
+	.string "$"
+
+MatchCall_Text_Jakson3::
+	.string "$"
+
+MatchCall_Text_Jakson4::
+	.string "$"
+
+MatchCall_Text_Jakson5::
+	.string "$"
+
+MatchCall_Text_Jakson6::
+	.string "$"
+
+MatchCall_Text_Harper1::
+	.string "$"
+
+MatchCall_Text_Harper2::
+	.string "$"
+
+MatchCall_Text_Harper3::
+	.string "$"
+
+MatchCall_Text_Harper4::
+	.string "$"
+
+MatchCall_Text_Harper5::
+	.string "$"
+
+MatchCall_Text_Harper6::
+	.string "$"
+
+MatchCall_Text_Redd1::
+	.string "$"
+
+MatchCall_Text_Redd2::
+	.string "$"
+
+MatchCall_Text_Redd3::
+	.string "$"
+
+MatchCall_Text_Redd4::
+	.string "$"
+
+MatchCall_Text_Redd5::
+	.string "$"
+
+MatchCall_Text_Redd6::
+	.string "$"
+
+MatchCall_Text_Sakura1::
+	.string "$"
+
+MatchCall_Text_Sakura2::
+	.string "$"
+
+MatchCall_Text_Sakura3::
+	.string "$"
+
+MatchCall_Text_Sakura4::
+	.string "$"
+
+MatchCall_Text_Sakura5::
+	.string "$"
+
+MatchCall_Text_Sakura6::
+	.string "$"
+
+MatchCall_Text_Baron1::
+	.string "$"
+
+MatchCall_Text_Baron2::
+	.string "$"
+
+MatchCall_Text_Baron3::
+	.string "$"
+
+MatchCall_Text_Baron4::
+	.string "$"
+
+MatchCall_Text_Baron5::
+	.string "$"
+
+MatchCall_Text_Baron6::
+	.string "$"
+
 MatchCall_Text_Wally1:: @ 2B4DE2
 	.string "Wally: Oh, {PLAYER}!\p"
 	.string "I've been getting healthier and\n"
@@ -2735,18 +2825,6 @@ MatchCall_Text_Looker4::
 	.string "the Pokénav's service area…$"
 
 MatchCall_Text_Looker5::
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "Looker appears to be out of\n"
-	.string "the Pokénav's service area…$"
-
-MatchCall_Text_Looker6::
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "Looker appears to be out of\n"
-	.string "the Pokénav's service area…$"
-
-MatchCall_Text_Looker7::
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "Looker appears to be out of\n"

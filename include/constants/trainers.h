@@ -215,8 +215,13 @@
 #define FACILITY_CLASS_LEAF                  0x4f
 #define FACILITY_CLASS_RS_BRENDAN            0x50
 #define FACILITY_CLASS_RS_MAY                0x51
+#define FACILITY_CLASS_JAKSON                0x52
+#define FACILITY_CLASS_HARPER                0x53
+#define FACILITY_CLASS_REDD                  0x54
+#define FACILITY_CLASS_SAKURA                0x55
+#define FACILITY_CLASS_BARON                 0x56
 
-#define FACILITY_CLASSES_COUNT               0x52
+#define FACILITY_CLASSES_COUNT               0x57
 
 #define RS_FACILITY_CLASS_AQUA_LEADER_ARCHIE    0x0
 #define RS_FACILITY_CLASS_AQUA_GRUNT_M          0x1

@@ -313,6 +313,101 @@ static const struct MatchCallRival sBrendanMatchCallHeader =
     .textData = sBrendanTextScripts
 };
 
+static const match_call_text_data_t sJaksonTextScripts[] = {
+    { MatchCall_Text_Jakson1,  0xFFFF,                              0xFFFF },
+    { MatchCall_Text_Jakson2,  FLAG_DEFEATED_DEWFORD_GYM,           0xFFFF },
+    { MatchCall_Text_Jakson3,  FLAG_DELIVERED_DEVON_GOODS,          0xFFFF },
+    { MatchCall_Text_Jakson4,  FLAG_HIDE_MAUVILLE_CITY_WALLY,       0xFFFF },
+    { MatchCall_Text_Jakson5,  FLAG_RECEIVED_HM_STRENGTH,           0xFFFF },
+    { MatchCall_Text_Jakson6,  FLAG_DEFEATED_LAVARIDGE_GYM,         0xFFFF },
+    { NULL,                     0xFFFF,                              0xFFFF }
+};
+
+static const struct MatchCallRival sJaksonMatchCallHeader =
+{
+    .type = MC_TYPE_RIVAL,
+    .flag = FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL,
+    .desc = gText_JaksonMatchCallDesc,
+    .name = gText_Jakson,
+    .textData = sJaksonTextScripts
+};
+
+static const match_call_text_data_t sHarperTextScripts[] = {
+    { MatchCall_Text_Harper1,  0xFFFF,                              0xFFFF },
+    { MatchCall_Text_Harper2,  FLAG_DEFEATED_DEWFORD_GYM,           0xFFFF },
+    { MatchCall_Text_Harper3,  FLAG_DELIVERED_DEVON_GOODS,          0xFFFF },
+    { MatchCall_Text_Harper4,  FLAG_HIDE_MAUVILLE_CITY_WALLY,       0xFFFF },
+    { MatchCall_Text_Harper5,  FLAG_RECEIVED_HM_STRENGTH,           0xFFFF },
+    { MatchCall_Text_Harper6,  FLAG_DEFEATED_LAVARIDGE_GYM,         0xFFFF },
+    { NULL,                     0xFFFF,                              0xFFFF }
+};
+
+static const struct MatchCallRival sHarperMatchCallHeader =
+{
+    .type = MC_TYPE_RIVAL,
+    .flag = FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL,
+    .desc = gText_HarperMatchCallDesc,
+    .name = gText_Harper,
+    .textData = sHarperTextScripts
+};
+
+static const match_call_text_data_t sReddTextScripts[] = {
+    { MatchCall_Text_Redd1,  0xFFFF,                              0xFFFF },
+    { MatchCall_Text_Redd2,  FLAG_DEFEATED_DEWFORD_GYM,           0xFFFF },
+    { MatchCall_Text_Redd3,  FLAG_DELIVERED_DEVON_GOODS,          0xFFFF },
+    { MatchCall_Text_Redd4,  FLAG_HIDE_MAUVILLE_CITY_WALLY,       0xFFFF },
+    { MatchCall_Text_Redd5,  FLAG_RECEIVED_HM_STRENGTH,           0xFFFF },
+    { MatchCall_Text_Redd6,  FLAG_DEFEATED_LAVARIDGE_GYM,         0xFFFF },
+    { NULL,                     0xFFFF,                              0xFFFF }
+};
+
+static const struct MatchCallRival sReddMatchCallHeader =
+{
+    .type = MC_TYPE_RIVAL,
+    .flag = FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL,
+    .desc = gText_ReddMatchCallDesc,
+    .name = gText_Redd,
+    .textData = sReddTextScripts
+};
+
+static const match_call_text_data_t sSakuraTextScripts[] = {
+    { MatchCall_Text_Sakura1,  0xFFFF,                              0xFFFF },
+    { MatchCall_Text_Sakura2,  FLAG_DEFEATED_DEWFORD_GYM,           0xFFFF },
+    { MatchCall_Text_Sakura3,  FLAG_DELIVERED_DEVON_GOODS,          0xFFFF },
+    { MatchCall_Text_Sakura4,  FLAG_HIDE_MAUVILLE_CITY_WALLY,       0xFFFF },
+    { MatchCall_Text_Sakura5,  FLAG_RECEIVED_HM_STRENGTH,           0xFFFF },
+    { MatchCall_Text_Sakura6,  FLAG_DEFEATED_LAVARIDGE_GYM,         0xFFFF },
+    { NULL,                     0xFFFF,                              0xFFFF }
+};
+
+static const struct MatchCallRival sSakuraMatchCallHeader =
+{
+    .type = MC_TYPE_RIVAL,
+    .flag = FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL,
+    .desc = gText_SakuraMatchCallDesc,
+    .name = gText_Sakura,
+    .textData = sSakuraTextScripts
+};
+
+static const match_call_text_data_t sBaronTextScripts[] = {
+    { MatchCall_Text_Baron1,  0xFFFF,                              0xFFFF },
+    { MatchCall_Text_Baron2,  FLAG_DEFEATED_DEWFORD_GYM,           0xFFFF },
+    { MatchCall_Text_Baron3,  FLAG_DELIVERED_DEVON_GOODS,          0xFFFF },
+    { MatchCall_Text_Baron4,  FLAG_HIDE_MAUVILLE_CITY_WALLY,       0xFFFF },
+    { MatchCall_Text_Baron5,  FLAG_RECEIVED_HM_STRENGTH,           0xFFFF },
+    { MatchCall_Text_Baron6,  FLAG_DEFEATED_LAVARIDGE_GYM,         0xFFFF },
+    { NULL,                     0xFFFF,                              0xFFFF }
+};
+
+static const struct MatchCallRival sBaronMatchCallHeader =
+{
+    .type = MC_TYPE_RIVAL,
+    .flag = FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL,
+    .desc = gText_BaronMatchCallDesc,
+    .name = gText_Baron,
+    .textData = sBaronTextScripts
+};
+
 static const match_call_text_data_t sWallyTextScripts[] = {
     { MatchCall_Text_Wally1, 0xFFFF,                              0xFFFF },
     { MatchCall_Text_Wally2, FLAG_RUSTURF_TUNNEL_OPENED,          0xFFFF },
@@ -370,8 +465,6 @@ static const match_call_text_data_t sLookerTextScripts[] = {
     { MatchCall_Text_Looker3, FLAG_RECEIVED_CASTFORM,              0xFFFF },
     { MatchCall_Text_Looker4, FLAG_RECEIVED_RED_OR_BLUE_ORB,       0xFFFF },
     { MatchCall_Text_Looker5, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
-    { MatchCall_Text_Looker6, FLAG_DEFEATED_SOOTOPOLIS_GYM,        0xFFFF },
-    { MatchCall_Text_Looker7, FLAG_SYS_GAME_CLEAR,                 0xFFFF },
     { NULL,                  0xFFFF,                              0xFFFF }
 };
 
@@ -604,6 +697,11 @@ static const match_call_t sMatchCallHeaders[] = {
     [MC_HEADER_PROF_BIRCH] = {.birch  = &sProfBirchMatchCallHeader},
     [MC_HEADER_BRENDAN]    = {.rival  = &sBrendanMatchCallHeader},
     [MC_HEADER_MAY]        = {.rival  = &sMayMatchCallHeader},
+    [MC_HEADER_JAKSON]     = {.rival  = &sJaksonMatchCallHeader},
+    [MC_HEADER_HARPER]     = {.rival  = &sHarperMatchCallHeader},
+    [MC_HEADER_REDD]       = {.rival  = &sReddMatchCallHeader},
+    [MC_HEADER_SAKURA]     = {.rival  = &sSakuraMatchCallHeader},
+    [MC_HEADER_BARON]      = {.rival  = &sBaronMatchCallHeader},
     [MC_HEADER_WALLY]      = {.wally  = &sWallyMatchCallHeader},
     [MC_HEADER_NORMAN]     = {.leader = &sNormanMatchCallHeader},
     [MC_HEADER_MOM]        = {.npc    = &sMomMatchCallHeader},
@@ -714,6 +812,61 @@ static const struct MatchCallCheckPageOverride sCheckPageOverrides[] = {
         .facilityClass = FACILITY_CLASS_MAY,
         .flag = 0xFFFF,
         .flavorTexts = MCFLAVOR(May)
+    },
+    {
+        .idx = MC_HEADER_JAKSON,
+        .facilityClass = FACILITY_CLASS_JAKSON,
+        .flag = 0xFFFF,
+        .flavorTexts = {
+            [CHECK_PAGE_STRATEGY] = gText_MatchCallJakson_Strategy,
+            [CHECK_PAGE_POKEMON]  = gText_MatchCallJakson_Pokemon,
+            [CHECK_PAGE_INTRO_1]  = gText_MatchCallJakson_Intro1,
+            [CHECK_PAGE_INTRO_2]  = gText_MatchCallJakson_Intro2
+        }
+    },
+    {
+        .idx = MC_HEADER_HARPER,
+        .facilityClass = FACILITY_CLASS_HARPER,
+        .flag = 0xFFFF,
+        .flavorTexts = {
+            [CHECK_PAGE_STRATEGY] = gText_MatchCallHarper_Strategy,
+            [CHECK_PAGE_POKEMON]  = gText_MatchCallHarper_Pokemon,
+            [CHECK_PAGE_INTRO_1]  = gText_MatchCallHarper_Intro1,
+            [CHECK_PAGE_INTRO_2]  = gText_MatchCallHarper_Intro2
+        }
+    },
+    {
+        .idx = MC_HEADER_REDD,
+        .facilityClass = FACILITY_CLASS_REDD,
+        .flag = 0xFFFF,
+        .flavorTexts = {
+            [CHECK_PAGE_STRATEGY] = gText_MatchCallRedd_Strategy,
+            [CHECK_PAGE_POKEMON]  = gText_MatchCallRedd_Pokemon,
+            [CHECK_PAGE_INTRO_1]  = gText_MatchCallRedd_Intro1,
+            [CHECK_PAGE_INTRO_2]  = gText_MatchCallRedd_Intro2
+        }
+    },
+    {
+        .idx = MC_HEADER_SAKURA,
+        .facilityClass = FACILITY_CLASS_SAKURA,
+        .flag = 0xFFFF,
+        .flavorTexts = {
+            [CHECK_PAGE_STRATEGY] = gText_MatchCallSakura_Strategy,
+            [CHECK_PAGE_POKEMON]  = gText_MatchCallSakura_Pokemon,
+            [CHECK_PAGE_INTRO_1]  = gText_MatchCallSakura_Intro1,
+            [CHECK_PAGE_INTRO_2]  = gText_MatchCallSakura_Intro2
+        }
+    },
+    {
+        .idx = MC_HEADER_BARON,
+        .facilityClass = FACILITY_CLASS_BARON,
+        .flag = 0xFFFF,
+        .flavorTexts = {
+            [CHECK_PAGE_STRATEGY] = gText_MatchCallBaron_Strategy,
+            [CHECK_PAGE_POKEMON]  = gText_MatchCallBaron_Pokemon,
+            [CHECK_PAGE_INTRO_1]  = gText_MatchCallBaron_Intro1,
+            [CHECK_PAGE_INTRO_2]  = gText_MatchCallBaron_Intro2
+        }
     }
 };
 

@@ -302,6 +302,15 @@ Common_Movement_WalkLeft9:
 	walk_left
 	walk_left
 	step_end
+	
+Common_Movement_WalkFastUp:
+	walk_fast_up
+	step_end
+	
+Common_Movement_WalkFastUp2:
+	walk_fast_up
+	walk_fast_up
+	step_end
 
 Common_Movement_Delay32:
 	delay_16

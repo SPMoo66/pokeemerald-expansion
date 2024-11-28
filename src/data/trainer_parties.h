@@ -13816,3 +13816,33 @@ static const struct TrainerMon sParty_GiovanniDevoncorp[] = {
     .species = SPECIES_DEINO,
     }
 };
+
+static const struct TrainerMon sParty_MagmaGruntFGraniteCave[] = {
+    {
+    .lvl = 16,
+    .species = SPECIES_DODUO_EMERIBIAN,
+    },
+    {
+    .lvl = 16,
+    .species = SPECIES_GOLETT,
+    },
+    {
+    .lvl = 17,
+    .species = SPECIES_SPINARAK_EMERIBIAN,
+    }
+};
+
+static const struct TrainerMon sParty_MagmaGruntMGraniteCave[] = {
+    {
+    .lvl = 16,
+    .species = SPECIES_DIGLETT,
+    },
+    {
+    .lvl = 16,
+    .species = SPECIES_PIKACHU,
+    },
+    {
+    .lvl = 17,
+    .species = SPECIES_DRILBUR,
+    }
+};

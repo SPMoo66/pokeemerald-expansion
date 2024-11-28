@@ -12,7 +12,7 @@
     [PARTNER_STEVEN_MOSSDEEP] =
     {
         .party = TRAINER_PARTY(sParty_StevenPartnerMossdeep),
-        .trainerClass = TRAINER_CLASS_RIVAL,
+        .trainerClass = TRAINER_CLASS_CHAMPION,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_BACK_PIC_STEVEN,
         .trainerName = _("Steven"),
@@ -44,4 +44,13 @@
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_BACK_PIC_BLANK,
         .trainerName = _("Rayquaza"),
+    },
+
+    [PARTNER_STEVEN_GRANITE_CAVE] =
+    {
+        .party = TRAINER_PARTY(sParty_StevenPartnerGraniteCave),
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_BACK_PIC_STEVEN,
+        .trainerName = _("Steven"),
     },

@@ -872,6 +872,13 @@ text CommonText_Looker {
 	"Looker"
 }
 
+text CommonText_MagmaGrunt {
+	"Magma Grunt"
+}
+
+text CommonText_AquaGrunt {
+	"Aqua Grunt"
+}
 
 
 script GetRivalForNameBox {

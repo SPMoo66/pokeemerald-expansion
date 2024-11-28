@@ -93,3 +93,35 @@ static const struct TrainerMon sParty_RayquazaPartner[] = {
         .moves = {MOVE_DRAGON_DANCE, MOVE_DRAGON_ASCENT, MOVE_EXTREME_SPEED, MOVE_DRACO_METEOR},
     }
 };
+
+static const struct TrainerMon sParty_StevenPartnerGraniteCave[] = {
+    {
+        .species = SPECIES_ARSELLOSKY,
+        .lvl = 16,
+		.ability = ABILITY_BIG_PECKS,
+        .nature = NATURE_ADAMANT,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(4, 128, 0, 128, 0, 0),
+        .moves = {MOVE_WING_ATTACK, MOVE_STEEL_WING, MOVE_SPIKES, MOVE_CRUSH_CLAW},
+    },
+    {
+        .species = SPECIES_LILEEP,
+        .lvl = 16,
+		.ability = ABILITY_SAP_SIPPER,
+        .nature = NATURE_MODEST,
+        .heldItem = ITEM_BIG_ROOT,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(128, 0, 128, 0, 0, 4),
+        .moves = {MOVE_INGRAIN, MOVE_MEGA_DRAIN, MOVE_CONFUSE_RAY, MOVE_MUD_SHOT},
+    },
+    {
+        .species = SPECIES_ARON,
+        .lvl = 16,
+		.ability = ABILITY_STURDY,
+        .nature = NATURE_ADAMANT,
+        .heldItem = ITEM_CUSTAP_BERRY,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(128, 0, 4, 0, 0, 128),
+        .moves = {MOVE_ROCK_TOMB, MOVE_METAL_CLAW, MOVE_ENDEAVOR, MOVE_CURSE},
+    }
+};

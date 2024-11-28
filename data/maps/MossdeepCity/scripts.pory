@@ -435,6 +435,7 @@ script MossdeepCity_EventScript_WhiteRock {
 	if (var(VAR_RESULT) == TRUE && !flag(FLAG_TEMP_3) && !flag(FLAG_CAUGHT_JIRACHI)) {
 		msgbox ("Use the Wish Tag to make a wish?", MSGBOX_YESNO)
 		if (var(VAR_RESULT) == TRUE) {
+			closemessage
 			clearflag (FLAG_TEMP_2)
 			applymovement (WOMAN, Common_Movement_FaceUp)
 			waitmovement (0)

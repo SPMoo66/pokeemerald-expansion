@@ -251,26 +251,30 @@ Route115_EventScript_Looker::
 # 112 "data/looker.pory"
 	lock
 # 113 "data/looker.pory"
-	pokenavcall Route115_Text_Looker_Call
+	playbgm MUS_PL_LOOKER, FALSE
 # 114 "data/looker.pory"
-	waitmessage
+	pokenavcall Route115_Text_Looker_Call
 # 115 "data/looker.pory"
-	delay 30
+	waitmessage
 # 116 "data/looker.pory"
-	playfanfare MUS_REGISTER_MATCH_CALL
-# 117 "data/looker.pory"
-	msgbox MatchCall_Text_RegisteredLooker, MSGBOX_DEFAULT
-# 118 "data/looker.pory"
-	waitfanfare
-# 119 "data/looker.pory"
-	closemessage
-# 120 "data/looker.pory"
 	delay 30
+# 117 "data/looker.pory"
+	playfanfare MUS_REGISTER_MATCH_CALL
+# 118 "data/looker.pory"
+	msgbox MatchCall_Text_RegisteredLooker, MSGBOX_DEFAULT
+# 119 "data/looker.pory"
+	waitfanfare
+# 120 "data/looker.pory"
+	closemessage
 # 121 "data/looker.pory"
-	setflag FLAG_ENABLE_LOOKER_MATCH_CALL
+	delay 30
 # 122 "data/looker.pory"
-	setvar VAR_LOOKER_ROCKET, 3
+	setflag FLAG_ENABLE_LOOKER_MATCH_CALL
 # 123 "data/looker.pory"
+	setvar VAR_LOOKER_ROCKET, 3
+# 124 "data/looker.pory"
+	fadedefaultbgm
+# 125 "data/looker.pory"
 	release
 	return
 
@@ -318,7 +322,7 @@ SlateportCity_EventScript_Looker_Text_3:
 	.string "Farewell, then!$"
 
 Route115_Text_Looker_Call::
-# 126 "data/looker.pory"
+# 128 "data/looker.pory"
 	.string "… … … … … Beep!\p"
 	.string "Looker: {PLAYER}!\p"
 	.string "Quickly, I am in dire need of your\n"
@@ -332,6 +336,6 @@ Route115_Text_Looker_Call::
 	.string "… … … … … Click!$"
 
 MatchCall_Text_RegisteredLooker::
-# 140 "data/looker.pory"
+# 142 "data/looker.pory"
 	.string "Registered Looker\n"
 	.string "in the Pokénav.$"

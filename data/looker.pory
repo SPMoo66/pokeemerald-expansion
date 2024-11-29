@@ -110,6 +110,7 @@ movement SlateportCity_LookerMove2 {
 
 script Route115_EventScript_Looker {
 	lock
+	playbgm (MUS_PL_LOOKER, FALSE)
 	pokenavcall (Route115_Text_Looker_Call)
 	waitmessage
 	delay (30)
@@ -120,6 +121,7 @@ script Route115_EventScript_Looker {
 	delay (30)
 	setflag (FLAG_ENABLE_LOOKER_MATCH_CALL)
 	setvar (VAR_LOOKER_ROCKET, 3)
+	fadedefaultbgm
 	release
 }
 

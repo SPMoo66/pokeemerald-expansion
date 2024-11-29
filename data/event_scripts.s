@@ -1054,6 +1054,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/emib_opening.inc"
 	.include "data/challenge_balls.inc"
 	.include "data/looker.inc"
+	.include "data/tera.inc"
 
 	.include "data/maps/ScorchedSlabB1F/scripts.inc"
 	.include "data/maps/SeasideGrotto/scripts.inc"

@@ -565,7 +565,7 @@ Aide_SetTeraType_Text_5:
 # 114 "data/tera.pory"
 	.string "Great!\n"
 	.string "Go ahead for me and pick the Pokémon\l"
-	.string "shoe Tera Type you'd like changed.$"
+	.string "whose Tera Type you'd like changed.$"
 
 Aide_SetTeraType_Text_6:
 # 122 "data/tera.pory"

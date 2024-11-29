@@ -5301,7 +5301,9 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 70,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Venusaurite,
+        .iconPalette = gItemIconPalette_Venusaurite,
     },
 
     [ITEM_MEGA_STONE_Y] =
@@ -5313,7 +5315,9 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 70,
+        .flingPower = 80,
+        .iconPic = gItemIcon_CharizarditeX,
+        .iconPalette = gItemIconPalette_CharizarditeX,
     },
 
     [ITEM_MEGA_STONE_G] =
@@ -5325,7 +5329,9 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 70,
+        .flingPower = 80,
+        .iconPic = gItemIcon_CharizarditeY,
+        .iconPalette = gItemIconPalette_CharizarditeY,
     },
 
     [ITEM_MEGA_STONE_LX] =
@@ -5337,9 +5343,9 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 80,
-        .iconPic = gItemIcon_Venusaurite,
-        .iconPalette = gItemIconPalette_Venusaurite,
+        .flingPower = 90,
+        .iconPic = gItemIcon_Blastoisinite,
+        .iconPalette = gItemIconPalette_Blastoisinite,
     },
 
     [ITEM_MEGA_STONE_LY] =
@@ -5352,7 +5358,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 80,
+        .flingPower = 90,
         .iconPic = gItemIcon_Beedrillite,
         .iconPalette = gItemIconPalette_Beedrillite,
     },

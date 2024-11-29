@@ -112,7 +112,7 @@ script Aide_SetTeraType {
 		msgbox( format( "Do you want me to change the Tera Type of one of your Pokémon in exchange for a Normal Tera Shard?"), MSGBOX_YESNO)
 		if (var(VAR_RESULT)) {
 			msgbox( format( "Great!\n"
-							"Go ahead for me and pick the Pokémon shoe Tera Type you'd like changed."))
+							"Go ahead for me and pick the Pokémon whose Tera Type you'd like changed."))
 			special (ChoosePartyMon)
 			waitstate
 			if (var(VAR_0x8004) != PARTY_NOTHING_CHOSEN) {

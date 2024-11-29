@@ -772,6 +772,10 @@ text CommonText_Birch {
 	"Prof. Birch"
 }
 
+text CommonText_Rowan {
+	"Prof. Rowan"
+}
+
 text CommonText_Archie {
 	"Archie"
 }

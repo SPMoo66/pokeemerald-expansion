@@ -204,7 +204,7 @@ static const struct MatchCallStructTrainer sNormanMatchCallHeader =
     .flag = FLAG_ENABLE_NORMAN_MATCH_CALL,
     .rematchTableIdx = REMATCH_NORMAN,
     .desc = gText_NormanMatchCallDesc,
-    .name = gText_NormanMatchCallName,
+    .name = gText_Dad,
     .textData = sNormanTextScripts
 };
 
@@ -230,7 +230,7 @@ static const struct MatchCallStructNPC sMomMatchCallHeader =
     .mapSec = MAPSEC_LITTLEROOT_TOWN,
     .flag = FLAG_ENABLE_MOM_MATCH_CALL,
     .desc = gText_MomMatchCallDesc,
-    .name = gText_MomMatchCallName,
+    .name = gText_Mom,
     .textData = sMomTextScripts
 };
 
@@ -251,7 +251,7 @@ static const struct MatchCallStructNPC sStevenMatchCallHeader =
     .mapSec = MAPSEC_NONE,
     .flag = FLAG_REGISTERED_STEVEN_POKENAV,
     .desc = gText_StevenMatchCallDesc,
-    .name = gText_StevenMatchCallName,
+    .name = gText_Steven,
     .textData = sStevenTextScripts
 };
 

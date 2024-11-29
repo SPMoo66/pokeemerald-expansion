@@ -3688,7 +3688,7 @@ static void Msg_CommunicationStandby(void)
     {
     case 0:
         sPokemonJumpGfx->msgWindowId = AddMessageWindow(7, 10, 16, 2);
-        AddTextPrinterParameterized(sPokemonJumpGfx->msgWindowId, FONT_NORMAL, gText_CommunicationStandby3, 0, 1, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(sPokemonJumpGfx->msgWindowId, FONT_NORMAL, gText_CommunicationStandby, 0, 1, TEXT_SKIP_DRAW, NULL);
         CopyWindowToVram(sPokemonJumpGfx->msgWindowId, COPYWIN_GFX);
         sPokemonJumpGfx->mainState++;
         break;
@@ -3913,7 +3913,7 @@ static void PrintScoreSuffixes(void)
     FillWindowPixelBuffer(WIN_POINTS, 0);
     FillWindowPixelBuffer(WIN_TIMES, 0);
     AddTextPrinterParameterized3(WIN_POINTS, FONT_SMALL, 0, 1, color, 0, gText_SpacePoints);
-    AddTextPrinterParameterized3(WIN_TIMES, FONT_SMALL, 0, 1, color, 0, gText_SpaceTimes3);
+    AddTextPrinterParameterized3(WIN_TIMES, FONT_SMALL, 0, 1, color, 0, gText_SpaceTimes);
 }
 
 // The venusaurs in the background are actually an empty 256x512 bg with 3 pairs of venusaurs on it.

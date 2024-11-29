@@ -1858,7 +1858,7 @@ static void Select_ErasePopupMenu(u8 windowId)
 static void Select_PrintRentalPkmnString(void)
 {
     FillWindowPixelBuffer(SELECT_WIN_TITLE, PIXEL_FILL(0));
-    AddTextPrinterParameterized(SELECT_WIN_TITLE, FONT_NORMAL, gText_RentalPkmn2, 2, 1, 0, NULL);
+    AddTextPrinterParameterized(SELECT_WIN_TITLE, FONT_NORMAL, gText_RentalPkmn, 2, 1, 0, NULL);
     CopyWindowToVram(SELECT_WIN_TITLE, COPYWIN_FULL);
 }
 
@@ -3799,7 +3799,7 @@ static void Swap_PrintMenuOptions(void)
 {
     PutWindowTilemap(SWAP_WIN_OPTIONS);
     FillWindowPixelBuffer(SWAP_WIN_OPTIONS, PIXEL_FILL(0));
-    AddTextPrinterParameterized3(SWAP_WIN_OPTIONS, FONT_NORMAL, 15,  1, sSwapMenuOptionsTextColors, 0, gText_Summary2);
+    AddTextPrinterParameterized3(SWAP_WIN_OPTIONS, FONT_NORMAL, 15,  1, sSwapMenuOptionsTextColors, 0, gText_Summary);
     AddTextPrinterParameterized3(SWAP_WIN_OPTIONS, FONT_NORMAL, 15, 17, sSwapMenuOptionsTextColors, 0, gText_Swap);
     AddTextPrinterParameterized3(SWAP_WIN_OPTIONS, FONT_NORMAL, 15, 33, sSwapMenuOptionsTextColors, 0, gText_Rechoose);
     CopyWindowToVram(SWAP_WIN_OPTIONS, COPYWIN_FULL);
@@ -3828,7 +3828,7 @@ static void Swap_PrintActionStrings(void)
     case TRUE:
         Swap_PrintActionString(gText_PkmnForSwap, 0, SWAP_WIN_ACTION_FADE);
     case FALSE:
-        Swap_PrintActionString(gText_Cancel3, 24, SWAP_WIN_ACTION_FADE);
+        Swap_PrintActionString(gText_Cancel, 24, SWAP_WIN_ACTION_FADE);
         break;
     }
     CopyWindowToVram(SWAP_WIN_ACTION_FADE, COPYWIN_FULL);
@@ -3842,7 +3842,7 @@ static void Swap_PrintActionStrings2(void)
     case TRUE:
         Swap_PrintActionString(gText_PkmnForSwap, 8, SWAP_WIN_OPTIONS);
     case FALSE:
-        Swap_PrintActionString(gText_Cancel3, 32, SWAP_WIN_OPTIONS);
+        Swap_PrintActionString(gText_Cancel, 32, SWAP_WIN_OPTIONS);
         break;
     }
     CopyWindowToVram(SWAP_WIN_OPTIONS, COPYWIN_FULL);
@@ -3857,7 +3857,7 @@ static void Swap_PrintOneActionString(u8 which)
             Swap_PrintActionString(gText_PkmnForSwap, 8, SWAP_WIN_OPTIONS);
         break;
     case 1:
-        Swap_PrintActionString(gText_Cancel3, 32, SWAP_WIN_OPTIONS);
+        Swap_PrintActionString(gText_Cancel, 32, SWAP_WIN_OPTIONS);
         break;
     }
     CopyWindowToVram(SWAP_WIN_OPTIONS, COPYWIN_FULL);

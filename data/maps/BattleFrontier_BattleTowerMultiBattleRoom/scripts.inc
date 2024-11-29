@@ -114,7 +114,7 @@ BattleFrontier_BattleTowerMultiBattleRoom_EventScript_DefeatedOpponents::
 	tower_setbattlewon
 	switch VAR_RESULT
 	case 7, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_WarpToLobbyWon
-	applymovement LOCALID_OPPONENT_2, BattleFrontier_BattleTowerMultiBattleRoom_Movement_Opponent2Exit
+	applymovement LOCALID_OPPONENT_2, Common_Movement_WalkUp3Invis
 	applymovement LOCALID_OPPONENT_1, Common_Movement_WalkUp4
 	waitmovement 0
 	removeobject LOCALID_OPPONENT_1
@@ -405,13 +405,6 @@ BattleFrontier_BattleTowerMultiBattleRoom_Movement_Opponent2Enter:
 	walk_down
 	walk_down
 	face_left
-	step_end
-
-BattleFrontier_BattleTowerMultiBattleRoom_Movement_Opponent2Exit:
-	walk_up
-	walk_up
-	walk_up
-	set_invisible
 	step_end
 
 BattleFrontier_BattleTowerMultiBattleRoom_Movement_AttendantReturnToPos:

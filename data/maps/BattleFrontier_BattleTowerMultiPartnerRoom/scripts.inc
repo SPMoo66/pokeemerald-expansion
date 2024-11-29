@@ -110,15 +110,9 @@ BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_EnterElevator::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_MoveToElevator::
 	applymovement LOCALID_ATTENDANT, Common_Movement_EnterHouse
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleTowerMultiPartnerRoom_Movement_PlayerEnterElevator
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2Invis
 	waitmovement 0
 	return
-
-BattleFrontier_BattleTowerMultiPartnerRoom_Movement_PlayerEnterElevator:
-	walk_up
-	walk_up
-	set_invisible
-	step_end
 
 BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_Partner1::
 	lock
@@ -162,7 +156,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_RejectPartner::
 	end
 
 BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_PartnerExit::
-	applymovement VAR_LAST_TALKED, BattleFrontier_BattleTowerMultiPartnerRoom_Movement_PartnerExit
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkFastUp7
 	waitmovement 0
 	return
 
@@ -170,16 +164,6 @@ BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_PartnerExitSouth::
 	applymovement VAR_LAST_TALKED, BattleFrontier_BattleTowerMultiPartnerRoom_Movement_PartnerExitSouth
 	waitmovement 0
 	return
-
-BattleFrontier_BattleTowerMultiPartnerRoom_Movement_PartnerExit:
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	step_end
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Movement_PartnerExitSouth:
 	walk_fast_left

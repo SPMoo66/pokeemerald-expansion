@@ -572,13 +572,13 @@ PetalburgCity_EventScript_ScottExit0::
 
 PetalburgCity_EventScript_ScottExit1::
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_PlayerWatchScottExit1
-	applymovement LOCALID_SCOTT, PetalburgCity_Movement_ScottExit1
+	applymovement LOCALID_SCOTT, PetalburgCity_Movement_BoyWalkAway
 	waitmovement 0
 	return
 
 PetalburgCity_EventScript_ScottExit2::
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_PlayerWatchScottExit2
-	applymovement LOCALID_SCOTT, PetalburgCity_Movement_ScottExit2
+	applymovement LOCALID_SCOTT, PetalburgCity_Movement_BoyWalkAway
 	waitmovement 0
 	return
 
@@ -613,42 +613,12 @@ PetalburgCity_Movement_PlayerWatchScottExit0:
 	walk_in_place_faster_left
 	step_end
 
-PetalburgCity_Movement_ScottExit1:
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
-
 PetalburgCity_Movement_PlayerWatchScottExit1:
 	delay_16
 	walk_in_place_faster_down
 	delay_16
 	delay_8
 	walk_in_place_faster_left
-	step_end
-
-PetalburgCity_Movement_ScottExit2:
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
 	step_end
 
 PetalburgCity_Movement_PlayerWatchScottExit2:

@@ -497,12 +497,12 @@ PlayersHouse_1F_EventScript_SetUpObjectEventVarsFemale::
 	return
 
 PlayersHouse_1F_EventScript_DadApproachPlayerMale::
-	applymovement VAR_0x8009, PlayersHouse_1F_Movement_DadApproachPlayerMale
+	applymovement VAR_0x8009, Common_Movement_WalkRight2
 	waitmovement 0
 	return
 
 PlayersHouse_1F_EventScript_DadApproachPlayerFemale::
-	applymovement VAR_0x8009, PlayersHouse_1F_Movement_DadApproachPlayerFemale
+	applymovement VAR_0x8009, Common_Movement_WalkLeft2
 	waitmovement 0
 	return
 
@@ -595,16 +595,6 @@ PlayersHouse_1F_EventScript_MomApproachPlayerAfterTVFemale::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	return
-
-PlayersHouse_1F_Movement_DadApproachPlayerMale:
-	walk_right
-	walk_right
-	step_end
-
-PlayersHouse_1F_Movement_DadApproachPlayerFemale:
-	walk_left
-	walk_left
-	step_end
 
 PlayersHouse_1F_Movement_DadExitsMale:
 	walk_down

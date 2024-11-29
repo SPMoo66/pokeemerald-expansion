@@ -9,6 +9,11 @@ Common_Movement_ExclamationMark:
 	emote_exclamation_mark
 	step_end
 
+Common_Movement_Delay32:
+	delay_16
+	delay_16
+	step_end
+
 Common_Movement_Delay48:
 	delay_16
 	delay_16
@@ -231,6 +236,31 @@ Common_Movement_WalkRight8:
 	walk_right
 	step_end
 
+Common_Movement_WalkRight9:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+Common_Movement_WalkRight10:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
 Common_Movement_WalkLeft:
 	walk_left
 	step_end
@@ -302,6 +332,20 @@ Common_Movement_WalkLeft9:
 	walk_left
 	walk_left
 	step_end
+
+Common_Movement_WalkLeft11:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
 	
 Common_Movement_WalkFastUp:
 	walk_fast_up
@@ -311,13 +355,31 @@ Common_Movement_WalkFastUp2:
 	walk_fast_up
 	walk_fast_up
 	step_end
-
-Common_Movement_Delay32:
-	delay_16
-	delay_16
+	
+Common_Movement_WalkFastUp7:
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
 	step_end
 
 Common_Movement_EnterHouse:
+	walk_up
+	set_invisible
+	step_end
+
+Common_Movement_WalkUp2Invis:
+	walk_up
+	walk_up
+	set_invisible
+	step_end
+
+Common_Movement_WalkUp3Invis:
+	walk_up
+	walk_up
 	walk_up
 	set_invisible
 	step_end
@@ -327,5 +389,5 @@ Common_Movement_SetInvisible:
 	step_end
 
 Common_Movement_SetVisible:
-	set_invisible
+	set_visible
 	step_end

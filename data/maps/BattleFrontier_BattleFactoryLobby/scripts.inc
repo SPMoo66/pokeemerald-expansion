@@ -171,7 +171,7 @@ BattleFrontier_BattleFactoryLobby_EventScript_EnterChallenge::
 	closemessage
 	call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES, BattleFrontier_BattleFactoryLobby_EventScript_TalkedToSinglesAttendant
 	call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_DOUBLES, BattleFrontier_BattleFactoryLobby_EventScript_TalkedToDoublesAttendant
-	applymovement VAR_LAST_TALKED, BattleFrontier_BattleFactoryLobby_Movement_AttendantEnterDoor
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkUp3Invis
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp4
 	waitmovement 0
 	warp MAP_BATTLE_FRONTIER_BATTLE_FACTORY_PRE_BATTLE_ROOM, 8, 13
@@ -203,13 +203,6 @@ BattleFrontier_BattleFactoryLobby_EventScript_CancelChallenge::
 	msgbox BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit, MSGBOX_DEFAULT
 	release
 	end
-
-BattleFrontier_BattleFactoryLobby_Movement_AttendantEnterDoor:
-	walk_up
-	walk_up
-	walk_up
-	set_invisible
-	step_end
 
 BattleFrontier_BattleFactoryLobby_EventScript_WelcomeForSingleBattle::
 	msgbox BattleFrontier_BattleFactoryLobby_Text_WelcomeForSingleBattle, MSGBOX_DEFAULT

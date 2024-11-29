@@ -56,7 +56,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_EnterRoom::
 	goto_if_ne VAR_TEMP_F, DOME_FINAL, BattleFrontier_BattleDomeBattleRoom_EventScript_PlayerEnter
 	goto_if_ne VAR_TEMP_E, FRONTIER_BRAIN_NOT_READY, BattleFrontier_BattleDomeBattleRoom_EventScript_PlayerEnterForTucker
 BattleFrontier_BattleDomeBattleRoom_EventScript_PlayerEnter::
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerEnter
+	applymovement LOCALID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerEnterForTucker
 	goto BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceReactToPlayer
 
 BattleFrontier_BattleDomeBattleRoom_EventScript_PlayerEnterForTucker::
@@ -71,7 +71,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_BattleOpponent::
 	dome_getopponentname
 	msgbox BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTrainer, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerStepForward
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRight
 	applymovement LOCALID_OPPONENT, Common_Movement_WalkLeft
 	waitmovement 0
 	tower_getopponentintro 0
@@ -572,17 +572,6 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_AddFinalAudience::
 	createvobject OBJ_EVENT_GFX_MART_EMPLOYEE, 30, 6, 2
 	createvobject OBJ_EVENT_GFX_WOMAN_5, 31, 8, 2
 	return
-
-BattleFrontier_BattleDomeBattleRoom_Movement_PlayerEnter:
-	set_visible
-	delay_16
-	walk_up
-	walk_up
-	walk_up
-	walk_right
-BattleFrontier_BattleDomeBattleRoom_Movement_PlayerStepForward:
-	walk_right
-	step_end
 
 @ Identical to Movement_PlayerEnter
 BattleFrontier_BattleDomeBattleRoom_Movement_PlayerEnterForTucker:

@@ -197,17 +197,11 @@ FallarborTown_BattleTentLobby_EventScript_WalkToDoor::
 	opendoor 6, 1
 	waitdooranim
 	applymovement LOCALID_ATTENDANT, Common_Movement_EnterHouse
-	applymovement OBJ_EVENT_ID_PLAYER, FallarborTown_BattleTentLobby_Movement_PlayerEnterDoor
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2Invis
 	waitmovement 0
 	closedoor 6, 1
 	waitdooranim
 	return
-
-FallarborTown_BattleTentLobby_Movement_PlayerEnterDoor:
-	walk_up
-	walk_up
-	set_invisible
-	step_end
 
 FallarborTown_BattleTentLobby_EventScript_Hiker::
 	msgbox FallarborTown_BattleTentLobby_Text_CameToCampOut, MSGBOX_NPC

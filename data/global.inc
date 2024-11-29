@@ -1935,3 +1935,79 @@ CommonText_Sakura::
 Text_PokevialSizeIncrease::
 # 927 "data/global.pory"
 	.string "The Pokévial's size was increased!$"
+
+CommonText_NormalType::
+# 931 "data/global.pory"
+	.string "Normal Type$"
+
+CommonText_FightingType::
+# 935 "data/global.pory"
+	.string "Fighting Type$"
+
+CommonText_FlyingType::
+# 939 "data/global.pory"
+	.string "Flying Type$"
+
+CommonText_PoisonType::
+# 943 "data/global.pory"
+	.string "Poison Type$"
+
+CommonText_GroundType::
+# 947 "data/global.pory"
+	.string "Ground Type$"
+
+CommonText_RockType::
+# 951 "data/global.pory"
+	.string "Rock Type$"
+
+CommonText_BugType::
+# 955 "data/global.pory"
+	.string "Bug Type$"
+
+CommonText_GhostType::
+# 959 "data/global.pory"
+	.string "Ghost Type$"
+
+CommonText_SteelType::
+# 963 "data/global.pory"
+	.string "Steel Type$"
+
+CommonText_FireType::
+# 967 "data/global.pory"
+	.string "Fire Type$"
+
+CommonText_WaterType::
+# 971 "data/global.pory"
+	.string "Water Type$"
+
+CommonText_GrassType::
+# 975 "data/global.pory"
+	.string "Grass Type$"
+
+CommonText_ElectricType::
+# 979 "data/global.pory"
+	.string "Electric Type$"
+
+CommonText_PsychicType::
+# 983 "data/global.pory"
+	.string "Psychic Type$"
+
+CommonText_IceType::
+# 987 "data/global.pory"
+	.string "Ice Type$"
+
+CommonText_DragonType::
+# 991 "data/global.pory"
+	.string "Dragon Type$"
+
+CommonText_DarkType::
+# 995 "data/global.pory"
+	.string "Dark Type$"
+
+CommonText_FairyType::
+# 999 "data/global.pory"
+	.string "Fairy Type$"
+
+CommonText_StellarType::
+# 1003 "data/global.pory"
+	.string "Stellar Type$"

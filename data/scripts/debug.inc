@@ -157,6 +157,10 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
+	additem ITEM_TERA_ORB
+	setflag FLAG_TERA_ENABLED
+	givemon SPECIES_BRAMBLEGHAST, 5, ITEM_NONE
+	warp MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB, 0
 	release
 	end
 

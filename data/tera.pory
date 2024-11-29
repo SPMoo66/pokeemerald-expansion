@@ -68,3 +68,168 @@ script Route104_EventScript_RowanTera {
 	release
 }
 
+script Aide_SetTeraType {
+	lock
+	faceplayer
+	if (!flag(FLAG_TEMP_6)) {
+		msgbox( format( "Hello!\n"
+						"I work with Professor Rowan.\l"
+						"If you have any Tera Shards, I can change the Tera Type of one of your Pokémon."))
+		setflag (FLAG_TEMP_6)
+	}
+	checkitem (ITEM_STELLAR_TERA_SHARD)
+	if (var(VAR_RESULT)) {
+		msgbox( format( "Oh!\n"
+						"That's a Stellar Tera Shard!\p"
+						"Would you like me to set one of your Pokémon's Tera Type to Stellar?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT)) {
+			msgbox( format( "Great!\n"
+							"Go ahead for me and pick the Pokémon whose Tera Type you'd like changed to Stellar."))
+			special (ChoosePartyMon)
+			waitstate
+			if (var(VAR_0x8004) != PARTY_NOTHING_CHOSEN) {
+				specialvar (VAR_TEMP_2, ScriptGetPartyMonSpecies)
+				bufferspeciesname (STR_VAR_1, VAR_TEMP_2)
+				bufferstring (STR_VAR_2, CommonText_StellarType)
+				if (var(VAR_TEMP_2) != SPECIES_EGG && var(VAR_TEMP_2) != SPECIES_OGERPON) {
+					setteratype (TYPE_STELLAR, VAR_0x8004)
+					msgbox(Text_ChangedTeraType)
+					removeitem (ITEM_STELLAR_TERA_SHARD)
+				}
+				elif (var(VAR_TEMP_2) == SPECIES_OGERPON) {
+					msgbox( format( "I'm sorry, the Tera Type of your {STR_VAR_1} can't be changed to the {STR_VAR_2}."))
+				}
+				else {
+					msgbox(Text_EggTeraType)
+				}
+				closemessage
+				end
+			}
+		}
+	}
+	checkitem (ITEM_NORMAL_TERA_SHARD)
+	if (var(VAR_RESULT)) {
+		msgbox( format( "Do you want me to change the Tera Type of one of your Pokémon in exchange for a Normal Tera Shard?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT)) {
+			msgbox( format( "Great!\n"
+							"Go ahead for me and pick the Pokémon shoe Tera Type you'd like changed."))
+			special (ChoosePartyMon)
+			waitstate
+			if (var(VAR_0x8004) != PARTY_NOTHING_CHOSEN) {
+				specialvar (VAR_TEMP_2, ScriptGetPartyMonSpecies)
+				if (var(VAR_TEMP_2) != SPECIES_EGG) {
+					bufferspeciesname (STR_VAR_1, VAR_TEMP_2)
+					msgbox(	"Your {STR_VAR_1}?\n"
+							"Ok, which type?")
+					dynmultipush (CommonText_NormalType,    0)
+					dynmultipush (CommonText_FightingType,  1)
+					dynmultipush (CommonText_FlyingType,    2)
+					dynmultipush (CommonText_PoisonType,    3)
+					dynmultipush (CommonText_GroundType,    4)
+					dynmultipush (CommonText_RockType,      5)
+					dynmultipush (CommonText_BugType,       6)
+					dynmultipush (CommonText_GhostType,     7)
+					dynmultipush (CommonText_SteelType,     8)
+					dynmultipush (CommonText_FireType,      9)
+					dynmultipush (CommonText_WaterType,    10)
+					dynmultipush (CommonText_GrassType,    11)
+					dynmultipush (CommonText_ElectricType, 12)
+					dynmultipush (CommonText_PsychicType,  13)
+					dynmultipush (CommonText_IceType,      14)
+					dynmultipush (CommonText_DragonType,   15)
+					dynmultipush (CommonText_DarkType,     16)
+					dynmultipush (CommonText_FairyType,    17)
+					dynmultistack(0, 0, FALSE, 6, FALSE, VAR_0x800A, DYN_MULTICHOICE_CB_NONE)
+					switch (var(VAR_RESULT)) {
+						case 0:
+							setteratype (TYPE_NORMAL, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_NormalType)
+						case 1:
+							setteratype (TYPE_FIGHTING, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_FightingType)
+						case 2:
+							setteratype (TYPE_FLYING, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_FlyingType)
+						case 3:
+							setteratype (TYPE_POISON, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_PoisonType)
+						case 4:
+							setteratype (TYPE_GROUND, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_GroundType)
+						case 5:
+							setteratype (TYPE_ROCK, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_RockType)
+						case 6:
+							setteratype (TYPE_BUG, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_BugType)
+						case 7:
+							setteratype (TYPE_GHOST, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_GhostType)
+						case 8:
+							setteratype (TYPE_STEEL, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_SteelType)
+						case 9:
+							setteratype (TYPE_FIRE, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_FireType)
+						case 10:
+							setteratype (TYPE_WATER, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_WaterType)
+						case 11:
+							setteratype (TYPE_GRASS, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_GrassType)
+						case 12:
+							setteratype (TYPE_ELECTRIC, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_ElectricType)
+						case 13:
+							setteratype (TYPE_PSYCHIC, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_PsychicType)
+						case 14:
+							setteratype (TYPE_ICE, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_IceType)
+						case 15:
+							setteratype (TYPE_DRAGON, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_DragonType)
+						case 16:
+							setteratype (TYPE_DARK, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_DarkType)
+						case 17:
+							setteratype (TYPE_FAIRY, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_FairyType)
+						default:
+					}
+					msgbox(Text_ChangedTeraType)
+					removeitem (ITEM_NORMAL_TERA_SHARD)
+				}
+				else {
+					msgbox(Text_EggTeraType)
+				}
+			}
+			else {
+				msgbox("Nothing chosen.")
+			}
+		}
+		else {
+			msgbox( format( "Do return to me if you change your mind."))
+			closemessage
+			end
+		}
+	}
+	else {
+		msgbox(format ("If you get some Tera Shards into your hands, come back to me and I can change the Tera Type of one of your Pokémon."))
+	}
+	closemessage
+	release
+}
+
+text Text_ChangedTeraType {
+	"The Tera Type of your {STR_VAR_1}\n"
+	"has been changed to {STR_VAR_2}."
+}
+
+text Text_EggTeraType {
+	"Umm…\n"
+	"That's a Pokémon Egg.\l"
+	"I'm not sure what you expect me to do\l"
+	"with that."
+
+}

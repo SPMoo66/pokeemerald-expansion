@@ -776,14 +776,16 @@ script Rival_Scene02 {
 }
 
 script PetalburgCity_EventScript_Simulation {
-	msgbox(format("I heard there's a realistic computer simulation out there.\pIf you lose a Pokémon battle in it, you lose one in real life!\pThat's just too scary."), MSGBOX_NPC)
+	msgbox( format(	"I heard there's a realistic computer simulation out there.\p"
+					"If you lose a Pokémon battle in it, you lose one in real life!\p"
+					"That's just too scary."), MSGBOX_NPC)
 }
 
 script PetalburgCity_EventScript_WallyBattle {
 	speakername(CommonText_Q)
 	msgbox("{PLAYER}! Please wait!")
 	closemessage
-	applymovment (LOCAL_ID_OBJECT_PLAYER, CommonMovement_FaceDown)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
 	waitmovement (0)
 	addobject (LOCALID_WALLY)
 	setobjectxy (LOCALID_WALLY, 15, 12)

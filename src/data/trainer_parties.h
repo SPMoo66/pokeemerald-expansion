@@ -13846,3 +13846,48 @@ static const struct TrainerMon sParty_MagmaGruntMGraniteCave[] = {
     .species = SPECIES_DRILBUR,
     }
 };
+
+static const struct TrainerMon sParty_WallyPetalburg[] = {
+    {
+    .lvl = 32,
+    .species = SPECIES_MAGIKARP,
+    .ability = ABILITY_RATTLED,
+    .heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_SURF, MOVE_RAIN_DANCE, MOVE_FLAIL, MOVE_SCALE_SHOT}
+    },
+    {
+    .lvl = 32,
+    .species = SPECIES_KIRLIA,
+    .ability = ABILITY_TELEPATHY,
+    .heldItem = ITEM_WIDE_LENS,
+    .moves = {MOVE_LIFE_DEW, MOVE_PSYSHOCK, MOVE_HYPNOSIS, MOVE_CHARGE_BEAM}
+    },
+    {
+    .lvl = 32,
+    .species = SPECIES_SANDILE,
+    .ability = ABILITY_INTIMIDATE,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = {MOVE_CRUNCH, MOVE_DIG, MOVE_FIRE_FANG, MOVE_THUNDER_FANG}
+    },
+    {
+    .lvl = 32,
+    .species = SPECIES_WIMPOD,
+    .ability = ABILITY_WIMP_OUT,
+    .heldItem = ITEM_WATER_GEM,
+    .moves = {MOVE_SPIKES, MOVE_AQUA_JET, MOVE_STRUGGLE_BUG, MOVE_SCALD}
+    },
+    {
+    .lvl = 32,
+    .species = SPECIES_LARVESTA,
+    .ability = ABILITY_FLAME_BODY,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_LEECH_LIFE, MOVE_FLAME_CHARGE, MOVE_BUG_BITE, MOVE_ZEN_HEADBUTT}
+    },
+    {
+    .lvl = 33,
+    .species = SPECIES_COSMOEM,
+    .ability = ABILITY_STURDY,
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_COSMIC_POWER, MOVE_TELEPORT, MOVE_STORED_POWER, MOVE_HELPING_HAND}
+    }
+};

@@ -779,3 +779,48 @@ script PetalburgCity_EventScript_Simulation {
 	msgbox(format("I heard there's a realistic computer simulation out there.\pIf you lose a Pokémon battle in it, you lose one in real life!\pThat's just too scary."), MSGBOX_NPC)
 }
 
+script PetalburgCity_EventScript_WallyBattle {
+	speakername(CommonText_Q)
+	msgbox("{PLAYER}! Please wait!")
+	closemessage
+	applymovment (LOCAL_ID_OBJECT_PLAYER, CommonMovement_FaceDown)
+	waitmovement (0)
+	addobject (LOCALID_WALLY)
+	setobjectxy (LOCALID_WALLY, 15, 12)
+	getplayerxy  (VAR_TEMP_0, VAR_TEMP_1)
+	switch (var(VAR_TEMP_0)) {
+		case 4:
+			applymovement (LOCALID_WALLY, Common_Movement_WalkLeft11)
+		case 5:
+			applymovement (LOCALID_WALLY, Common_Movement_WalkLeft10)
+		case 6:
+			applymovement (LOCALID_WALLY, Common_Movement_WalkLeft9)
+		case 7:
+			applymovement (LOCALID_WALLY, Common_Movement_WalkLeft8)
+		default:
+	}
+	waitmovement (0)
+	applymovement (LOCALID_WALLY, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+	delay (50)
+	applymovement (LOCALID_WALLY, Common_Movement_WalkUp3)
+	waitmovement (0)
+	speakername (CommonText_Wally)
+	msgbox( format( "I… … … … …\p"
+					"I've heard about the things you've done.\p"
+					"The people you've helped, the bad ones you've driven off.\p"
+					"{PLAYER}, I don't want to just sit around and wait.\p"
+					"I don't want to be overshadowed any longer!\p"
+					"{PLAYER}, please battle me now and see how far I've come.\p"
+					"I'll sit at home no longer!"))
+	trainerbattle_no_intro (TRAINER_WALLY_PETALBURG, "Ah…\nI think I see now…")
+	msgbox( format( "{PLAYER}, you're strong.\p"
+					"You're really strong.\p"
+					"Thank you for the battle.\n"
+					"I have a long way to go, but I hope I can be up there on the stage with you some day.\p"
+					"I'll be back, and I'll give you a challenge you won't forget!"))
+	fadescreen (FADE_TO_BLACK)
+	removeobject (LOCALID_WALLY)
+	fadescreen (FADE_FROM_BLACK)
+	setvar (VAR_PETALBURG_CITY_STATE, 6)
+}

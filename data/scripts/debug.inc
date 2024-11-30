@@ -165,6 +165,8 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
+	warp MAP_PETALBURG_CITY, 1
+	setvar VAR_PETALBURG_CITY_STATE, 5
 	release
 	end
 

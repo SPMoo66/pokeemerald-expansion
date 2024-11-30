@@ -1566,6 +1566,81 @@ PetalburgCity_EventScript_Simulation::
 	return
 
 
+PetalburgCity_EventScript_WallyBattle::
+# 783 "data/maps/PetalburgCity/scripts.pory"
+	speakername CommonText_Q
+# 784 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_WallyBattle_Text_0
+# 785 "data/maps/PetalburgCity/scripts.pory"
+	closemessage
+# 786 "data/maps/PetalburgCity/scripts.pory"
+	addobject LOCALID_WALLY
+# 787 "data/maps/PetalburgCity/scripts.pory"
+	setobjectxy LOCALID_WALLY, 15, 12
+# 788 "data/maps/PetalburgCity/scripts.pory"
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 789 "data/maps/PetalburgCity/scripts.pory"
+	switch VAR_TEMP_0
+# 790 "data/maps/PetalburgCity/scripts.pory"
+	case 4, PetalburgCity_EventScript_WallyBattle_3
+# 792 "data/maps/PetalburgCity/scripts.pory"
+	case 5, PetalburgCity_EventScript_WallyBattle_4
+# 794 "data/maps/PetalburgCity/scripts.pory"
+	case 6, PetalburgCity_EventScript_WallyBattle_5
+# 796 "data/maps/PetalburgCity/scripts.pory"
+	case 7, PetalburgCity_EventScript_WallyBattle_6
+PetalburgCity_EventScript_WallyBattle_1:
+# 800 "data/maps/PetalburgCity/scripts.pory"
+	waitmovement 0
+# 801 "data/maps/PetalburgCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceUp
+# 802 "data/maps/PetalburgCity/scripts.pory"
+	waitmovement 0
+# 803 "data/maps/PetalburgCity/scripts.pory"
+	delay 50
+# 804 "data/maps/PetalburgCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_WalkUp3
+# 805 "data/maps/PetalburgCity/scripts.pory"
+	waitmovement 0
+# 806 "data/maps/PetalburgCity/scripts.pory"
+	speakername CommonText_Wally
+# 807 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_WallyBattle_Text_1
+# 814 "data/maps/PetalburgCity/scripts.pory"
+	trainerbattle_no_intro TRAINER_WALLY_PETALBURG, PetalburgCity_EventScript_WallyBattle_Text_2
+# 815 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_WallyBattle_Text_3
+# 820 "data/maps/PetalburgCity/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 821 "data/maps/PetalburgCity/scripts.pory"
+	removeobject LOCALID_WALLY
+# 822 "data/maps/PetalburgCity/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 823 "data/maps/PetalburgCity/scripts.pory"
+	setvar VAR_PETALBURG_CITY_STATE, 6
+	return
+
+PetalburgCity_EventScript_WallyBattle_3:
+# 791 "data/maps/PetalburgCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_WalkLeft11
+	goto PetalburgCity_EventScript_WallyBattle_1
+
+PetalburgCity_EventScript_WallyBattle_4:
+# 793 "data/maps/PetalburgCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_WalkLeft10
+	goto PetalburgCity_EventScript_WallyBattle_1
+
+PetalburgCity_EventScript_WallyBattle_5:
+# 795 "data/maps/PetalburgCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_WalkLeft9
+	goto PetalburgCity_EventScript_WallyBattle_1
+
+PetalburgCity_EventScript_WallyBattle_6:
+# 797 "data/maps/PetalburgCity/scripts.pory"
+	applymovement LOCALID_WALLY, Common_Movement_WalkLeft8
+	goto PetalburgCity_EventScript_WallyBattle_1
+
+
 PetalburgCity_EventScript_Simulation_Text_0:
 # 779 "data/maps/PetalburgCity/scripts.pory"
 	.string "I heard there's a realistic computer\n"
@@ -1573,3 +1648,37 @@ PetalburgCity_EventScript_Simulation_Text_0:
 	.string "If you lose a Pokémon battle in it, you\n"
 	.string "lose one in real life!\p"
 	.string "That's just too scary.$"
+
+PetalburgCity_EventScript_WallyBattle_Text_0:
+# 784 "data/maps/PetalburgCity/scripts.pory"
+	.string "{PLAYER}! Please wait!$"
+
+PetalburgCity_EventScript_WallyBattle_Text_1:
+# 807 "data/maps/PetalburgCity/scripts.pory"
+	.string "I… … … … …\p"
+	.string "I've heard about the things you've\n"
+	.string "done.\p"
+	.string "The people you've helped, the bad ones\n"
+	.string "you've driven off.\p"
+	.string "{PLAYER}, I don't want to just sit\n"
+	.string "around and wait.\p"
+	.string "I don't want to be overshadowed any\n"
+	.string "longer!\p"
+	.string "{PLAYER}, please battle me now and\n"
+	.string "see how far I've come.\p"
+	.string "I'll sit at home no longer!$"
+
+PetalburgCity_EventScript_WallyBattle_Text_2:
+# 814 "data/maps/PetalburgCity/scripts.pory"
+	.string "Ah…\nI think I see now…$"
+
+PetalburgCity_EventScript_WallyBattle_Text_3:
+# 815 "data/maps/PetalburgCity/scripts.pory"
+	.string "{PLAYER}, you're strong.\p"
+	.string "You're really strong.\p"
+	.string "Thank you for the battle.\n"
+	.string "I have a long way to go, but I hope I can\l"
+	.string "be up there on the stage with you some\l"
+	.string "day.\p"
+	.string "I'll be back, and I'll give you a\n"
+	.string "challenge you won't forget!$"

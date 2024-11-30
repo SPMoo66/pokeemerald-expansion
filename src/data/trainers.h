@@ -10357,3 +10357,15 @@
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_MagmaGruntMGraniteCave),
     },
+
+    [TRAINER_WALLY_PETALBURG] =
+    {
+        .trainerClass = TRAINER_CLASS_RIVAL,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerName = _("Wally"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_CONSERVATIVE,
+        .party = TRAINER_PARTY(sParty_WallyPetalburg),
+    },

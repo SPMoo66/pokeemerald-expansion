@@ -270,22 +270,22 @@ static const struct TrainerMon sParty_GruntWeatherInst3[] = {
 
 static const struct TrainerMon sParty_GruntMuseum1[] = {
     {
-    .lvl = 16,
+    .lvl = 19,
     .species = SPECIES_VENIPEDE,
     },
     {
-    .lvl = 16,
+    .lvl = 19,
     .species = SPECIES_PURRLOIN,
     }
 };
 
 static const struct TrainerMon sParty_GruntMuseum2[] = {
     {
-    .lvl = 16,
+    .lvl = 19,
     .species = SPECIES_ZUBAT,
     },
     {
-    .lvl = 16,
+    .lvl = 19,
     .species = SPECIES_CARVANHA,
     .heldItem = ITEM_ORAN_BERRY
     }

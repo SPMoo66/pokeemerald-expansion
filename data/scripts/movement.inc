@@ -378,6 +378,10 @@ Common_Movement_WalkFastUp7:
 	walk_fast_up
 	walk_fast_up
 	step_end
+	
+Common_Movement_WalkFastDown:
+	walk_fast_down
+	step_end
 
 Common_Movement_EnterHouse:
 	walk_up

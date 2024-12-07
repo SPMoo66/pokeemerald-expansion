@@ -10324,9 +10324,9 @@
 
     [TRAINER_GIOVANNI_DEVONCORP] =
     {
-        .trainerClass = TRAINER_CLASS_ROCKET,
+        .trainerClass = TRAINER_CLASS_BOSS,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerPic = TRAINER_PIC_GIOVANNI,
         .trainerName = _("Giovanni"),
         .items = {},
         .doubleBattle = TRUE,

@@ -784,6 +784,10 @@ text CommonText_Maxie {
 	"Maxie"
 }
 
+text CommonText_Giovanni {
+	"Giovanni"
+}
+
 text CommonText_Courtney {
 	"Courtney"
 }

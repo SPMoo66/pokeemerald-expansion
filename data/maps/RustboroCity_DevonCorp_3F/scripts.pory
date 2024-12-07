@@ -235,6 +235,7 @@ RustboroCity_DevonCorp_3F_Text_RareRocksDisplay:
 `
 
 const LOCALID_DEVON_EMPLOYEE = 2
+const GIOVANNI = 4
 const LOOKER = 5
 
 mapscripts RustboroCity_DevonCorp_3F_MapScripts {
@@ -249,6 +250,7 @@ mapscripts RustboroCity_DevonCorp_3F_MapScripts {
 		}
 		else {
 			setobjectxyperm (LOCALID_DEVON_EMPLOYEE, 2, 2)
+			savebgm (MUS_HG_ROCKET_TAKEOVER)
 		}
 		setflag (FLAG_TEMP_2)
 	}
@@ -259,6 +261,7 @@ mapscripts RustboroCity_DevonCorp_3F_MapScripts {
 	]
 	MAP_SCRIPT_ON_FRAME_TABLE [
 		VAR_DEVON_CORP_3F_STATE, 0: RustboroCity_DevonCorp_3F_EventScript_MeetPresident
+		VAR_LOOKER_ROCKET, 6: RustboroCity_DevonCorp_3F_PresidentSaved
 	]
 	MAP_SCRIPT_ON_LOAD {
 		if (var(VAR_LOOKER_ROCKET) == 5) {
@@ -274,7 +277,6 @@ mapscripts RustboroCity_DevonCorp_3F_MapScripts {
 			setmetatile (5, 2, 0x352, FALSE)
 			setmetatile (6, 1, 0x34B, TRUE)
 			setmetatile (6, 2, 0x353, FALSE)
-			playbgm (MUS_HG_ROCKET_TAKEOVER, FALSE)
 		}
 	}
 }
@@ -335,15 +337,40 @@ script RustboroCity_DevonCorp_3F_GiovanniDefeated {
 	msgbox ("Not so fast!")
 	applymovement (LOOKER, Movement_LookerRun)
 	waitmovement (0)
-	applymovement (LOOKER, Movement_LookerRun2)
+	applymovement (LOOKER, Common_Movement_WalkInPlaceFasterDown)
+	applymovement (GIOVANNI, Common_Movement_WalkInPlaceFasterUp)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
 	waitmovement (0)
+	speakername (CommonText_Giovanni)
+	msgbox( format( "Tch…\nThe police already?"))
+	closemessage
+	speakername (CommonText_Looker)
+	msgbox( format( "{PLAYER}, thank you for your help, but I will be taking it from here.\p"
+					"Criminal!\nYou'll be coming with me!"))
 	closemessage
 	setvar (VAR_LOOKER_ROCKET, 6)
+	warp (MAP_RUSTBORO_CITY_DEVON_CORP_3F, 14, 5)
+	waitstate
+}
+
+script RustboroCity_DevonCorp_3F_PresidentSaved {
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+	waitmovement(0)
+	speakername (CommonText_MrStone)
+	msgbox( format( "{PLAYER}, I must thank you once again.\pYou've done a great deal for me and this company, no, the city of Rustboro itself.\pPlease, take this as a note of my appreciation, though small it may be."))
+	closemessage
+	giveitem (ITEM_BOTTLE_CAP)
+	giveitem (ITEM_NORMAL_TERA_SHARD, 3)
+	speakername (CommonText_MrStone)
+	msgbox( format( "It looks like that man…\nLooker, was it?\pHe took the intruder away, if you're looking for him."))
+	closemessage
+	setvar (VAR_LOOKER_ROCKET, 7)
 	release
 }
 
+
 text RustboroCity_DevonCorp_3F_Text_GiovanniIntro {
-	"We arrived on boat, set for Kanto!\pHow did we end up here in Hoenn!?\nWe decided to come here, taking the\nopportunity, and you won't be stopping\lus!"
+	"We arrived on boat, set for Kanto!\pHow did we end up here in Hoenn!?\nWe decided to come here, taking the\lopportunity, and you won't be stopping\lus!"
 }
 
 text RustboroCity_DevonCorp_3F_Text_GiovanniDefeat {
@@ -352,8 +379,4 @@ text RustboroCity_DevonCorp_3F_Text_GiovanniDefeat {
 
 movement Movement_LookerRun {
 	walk_fast_right * 8
-}
-
-movement Movement_LookerRun2 {
-	walk_fast_down
 }

@@ -35,7 +35,7 @@ script BattleChienPao {
 	faceplayer
 	setvar (VAR_LAST_TALKED, CHIEN_PAO)
 	playmoncry(SPECIES_CHIEN_PAO, CRY_MODE_ENCOUNTER)
-	msgbox("Graoo-wuuh!")
+	msgbox("Scrrr…\nScriiibe!")
 	waitmoncry
 	seteventmon(SPECIES_CHIEN_PAO, 45)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -55,7 +55,7 @@ script BattleChiYu {
 	faceplayer
 	setvar (VAR_LAST_TALKED, CHI_YU)
 	playmoncry(SPECIES_CHI_YU, CRY_MODE_ENCOUNTER)
-	msgbox("Di-tiing wuh!")
+	msgbox("Sp… Sp…\nSplashyyy!")
 	waitmoncry
 	seteventmon(SPECIES_CHI_YU, 45)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -75,7 +75,7 @@ script BattleTingLu {
 	faceplayer
 	setvar (VAR_LAST_TALKED, TING_LU)
 	playmoncry(SPECIES_TING_LU, CRY_MODE_ENCOUNTER)
-	msgbox("Aouu-wooouh!")
+	msgbox("Rrr…\nPooourrr!")
 	waitmoncry
 	seteventmon(SPECIES_TING_LU, 45)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -95,7 +95,7 @@ script BattleWoChien {
 	faceplayer
 	setvar (VAR_LAST_TALKED, WO_CHIEN)
 	playmoncry(SPECIES_WO_CHIEN, CRY_MODE_ENCOUNTER)
-	msgbox("Greu-wuuu!")
+	msgbox("C-c… cu…\nCut! Cuuuttt!")
 	waitmoncry
 	seteventmon(SPECIES_WO_CHIEN, 45)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)

@@ -255,8 +255,8 @@ FlurryPeak_Man_Text_0:
 
 BattleGlastrier_Text_0:
 # 71 "data/maps/FlurryPeak/scripts.pory"
-	.string "Raaaaoo!$"
+	.string "Brrrrrriiiiiice!$"
 
 BattleSpectrier_Text_0:
 # 91 "data/maps/FlurryPeak/scripts.pory"
-	.string "Raaooo!$"
+	.string "Sheeeighhhhd!$"

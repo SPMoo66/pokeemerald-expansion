@@ -173,4 +173,4 @@ BattleMoltresG_2:
 
 BattleArticunoG_Text_0:
 # 36 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	.string "Gyooa!$"
+	.string "Gyaoo!$"

@@ -38,7 +38,7 @@ script BattleRaikou {
 	faceplayer
 	setvar (VAR_LAST_TALKED, RAIKOU)
 	playmoncry(SPECIES_RAIKOU, CRY_MODE_ENCOUNTER)
-	msgbox("Gwooa!")
+	msgbox("Rararaiiiii!")
 	waitmoncry
 	seteventmon(SPECIES_RAIKOU, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -58,7 +58,7 @@ script BattleEntei {
 	faceplayer
 	setvar (VAR_LAST_TALKED, ENTEI)
 	playmoncry(SPECIES_ENTEI, CRY_MODE_ENCOUNTER)
-	msgbox("Gwooa!")
+	msgbox("Enteiiiii!")
 	waitmoncry
 	seteventmon(SPECIES_ENTEI, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -78,7 +78,7 @@ script BattleSuicune {
 	faceplayer
 	setvar (VAR_LAST_TALKED, SUICUNE)
 	playmoncry(SPECIES_SUICUNE, CRY_MODE_ENCOUNTER)
-	msgbox("Gwooa!")
+	msgbox("Susuiiiii!")
 	waitmoncry
 	seteventmon(SPECIES_SUICUNE, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -98,7 +98,7 @@ script BattleCelebi {
 	faceplayer
 	setvar (VAR_LAST_TALKED, CELEBI)
 	playmoncry(SPECIES_CELEBI, CRY_MODE_ENCOUNTER)
-	msgbox("Kryuu!")
+	msgbox("Lululalala!")
 	waitmoncry
 	seteventmon(SPECIES_CELEBI, 50)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)

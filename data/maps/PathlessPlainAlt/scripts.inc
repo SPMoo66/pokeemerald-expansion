@@ -173,11 +173,11 @@ BattleIronLeaves_2:
 
 BattleIronCrown_Text_0:
 # 36 "data/maps/PathlessPlainAlt/scripts.pory"
-	.string "Kawbraa!$"
+	.string "Kaw-brah-on!$"
 
 BattleIronBoulder_Text_0:
 # 56 "data/maps/PathlessPlainAlt/scripts.pory"
-	.string "Gurooooohhh!$"
+	.string "Gurr-oonnn!$"
 
 BattleIronLeaves_Text_0:
 # 76 "data/maps/PathlessPlainAlt/scripts.pory"

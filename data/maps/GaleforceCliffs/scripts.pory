@@ -34,7 +34,7 @@ script BattleTornadus {
 	faceplayer
 	setvar (VAR_LAST_TALKED, TORNADUS)
 	playmoncry(SPECIES_TORNADUS, CRY_MODE_ENCOUNTER)
-	msgbox("Kawbraa!")
+	msgbox("Whhhwhhhwhhh!!")
 	waitmoncry
 	seteventmon(SPECIES_TORNADUS, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -54,7 +54,7 @@ script BattleThundurus {
 	faceplayer
 	setvar (VAR_LAST_TALKED, THUNDURUS)
 	playmoncry(SPECIES_THUNDURUS, CRY_MODE_ENCOUNTER)
-	msgbox("Gurooooohhh!")
+	msgbox("GKrrrkrrrkrrak!")
 	waitmoncry
 	seteventmon(SPECIES_THUNDURUS, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -74,7 +74,7 @@ script BattleEnamorus {
 	faceplayer
 	setvar (VAR_LAST_TALKED, ENAMORUS)
 	playmoncry(SPECIES_ENAMORUS, CRY_MODE_ENCOUNTER)
-	msgbox("Aeepraaa!")
+	msgbox("Amoooooor!")
 	waitmoncry
 	seteventmon(SPECIES_ENAMORUS, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -94,7 +94,7 @@ script BattleLandorus {
 	faceplayer
 	setvar (VAR_LAST_TALKED, LANDORUS)
 	playmoncry(SPECIES_LANDORUS, CRY_MODE_ENCOUNTER)
-	msgbox("Rarurarii!")
+	msgbox("Karamukukuk!")
 	waitmoncry
 	seteventmon(SPECIES_LANDORUS, 50)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)

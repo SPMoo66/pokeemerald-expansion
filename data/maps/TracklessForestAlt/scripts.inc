@@ -103,7 +103,7 @@ BattleGougingFire::
 # 55 "data/maps/TracklessForestAlt/scripts.pory"
 	playmoncry SPECIES_GOUGING_FIRE, CRY_MODE_ENCOUNTER
 # 56 "data/maps/TracklessForestAlt/scripts.pory"
-	msgbox BattleRagingBolt_Text_0
+	msgbox BattleGougingFire_Text_0
 # 57 "data/maps/TracklessForestAlt/scripts.pory"
 	waitmoncry
 # 58 "data/maps/TracklessForestAlt/scripts.pory"
@@ -142,7 +142,7 @@ BattleWalkingWake::
 # 75 "data/maps/TracklessForestAlt/scripts.pory"
 	playmoncry SPECIES_WALKING_WAKE, CRY_MODE_ENCOUNTER
 # 76 "data/maps/TracklessForestAlt/scripts.pory"
-	msgbox BattleRagingBolt_Text_0
+	msgbox BattleWalkingWake_Text_0
 # 77 "data/maps/TracklessForestAlt/scripts.pory"
 	waitmoncry
 # 78 "data/maps/TracklessForestAlt/scripts.pory"
@@ -173,4 +173,12 @@ BattleWalkingWake_2:
 
 BattleRagingBolt_Text_0:
 # 36 "data/maps/TracklessForestAlt/scripts.pory"
-	.string "Gwooa!$"
+	.string "Rai-gooohhh!!!$"
+
+BattleGougingFire_Text_0:
+# 56 "data/maps/TracklessForestAlt/scripts.pory"
+	.string "Ennn-grahhh!$"
+
+BattleWalkingWake_Text_0:
+# 76 "data/maps/TracklessForestAlt/scripts.pory"
+	.string "Su-suiiiii!$"

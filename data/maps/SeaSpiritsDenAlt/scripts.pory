@@ -33,7 +33,7 @@ script BattleArticunoG {
 	faceplayer
 	setvar (VAR_LAST_TALKED, ARTICUNO_G)
 	playmoncry(SPECIES_ARTICUNO_GALARIAN, CRY_MODE_ENCOUNTER)
-	msgbox("Gyooa!")
+	msgbox("Gyaoo!")
 	waitmoncry
 	seteventmon(SPECIES_ARTICUNO_GALARIAN, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -53,7 +53,7 @@ script BattleZapdosG {
 	faceplayer
 	setvar (VAR_LAST_TALKED, ZAPDOS_G)
 	playmoncry(SPECIES_ZAPDOS_GALARIAN, CRY_MODE_ENCOUNTER)
-	msgbox("Gyooa!")
+	msgbox("Gyaoo!")
 	waitmoncry
 	seteventmon(SPECIES_ZAPDOS_GALARIAN, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -73,7 +73,7 @@ script BattleMoltresG {
 	faceplayer
 	setvar (VAR_LAST_TALKED, MOLTRES_G)
 	playmoncry(SPECIES_MOLTRES_GALARIAN, CRY_MODE_ENCOUNTER)
-	msgbox("Gyooa!")
+	msgbox("Gyaoo!")
 	waitmoncry
 	seteventmon(SPECIES_MOLTRES_GALARIAN, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)

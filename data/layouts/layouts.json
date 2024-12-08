@@ -4660,6 +4660,16 @@
       "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/RustboroCity_DevonCorp_B1F/border.bin",
       "blockdata_filepath": "data/layouts/RustboroCity_DevonCorp_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEASIDE_HOLLOW",
+      "name": "SeasideHollow_Layout",
+      "width": 13,
+      "height": 11,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/SeasideHollow/border.bin",
+      "blockdata_filepath": "data/layouts/SeasideHollow/map.bin"
     }
   ]
 }

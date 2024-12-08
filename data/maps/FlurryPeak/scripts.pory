@@ -68,7 +68,7 @@ script BattleGlastrier {
 	faceplayer
 	setvar (VAR_LAST_TALKED, GLASTRIER)
 	playmoncry(SPECIES_GLASTRIER, CRY_MODE_ENCOUNTER)
-	msgbox("Raaaaoo!")
+	msgbox("Brrrrrriiiiiice!")
 	waitmoncry
 	seteventmon(SPECIES_GLASTRIER, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -88,7 +88,7 @@ script BattleSpectrier {
 	faceplayer
 	setvar (VAR_LAST_TALKED, SPECTRIER)
 	playmoncry(SPECIES_SPECTRIER, CRY_MODE_ENCOUNTER)
-	msgbox("Raaooo!")
+	msgbox("Sheeeighhhhd!")
 	waitmoncry
 	seteventmon(SPECIES_SPECTRIER, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)

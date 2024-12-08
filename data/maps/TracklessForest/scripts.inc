@@ -113,7 +113,7 @@ BattleEntei::
 # 60 "data/maps/TracklessForest/scripts.pory"
 	playmoncry SPECIES_ENTEI, CRY_MODE_ENCOUNTER
 # 61 "data/maps/TracklessForest/scripts.pory"
-	msgbox BattleRaikou_Text_0
+	msgbox BattleEntei_Text_0
 # 62 "data/maps/TracklessForest/scripts.pory"
 	waitmoncry
 # 63 "data/maps/TracklessForest/scripts.pory"
@@ -152,7 +152,7 @@ BattleSuicune::
 # 80 "data/maps/TracklessForest/scripts.pory"
 	playmoncry SPECIES_SUICUNE, CRY_MODE_ENCOUNTER
 # 81 "data/maps/TracklessForest/scripts.pory"
-	msgbox BattleRaikou_Text_0
+	msgbox BattleSuicune_Text_0
 # 82 "data/maps/TracklessForest/scripts.pory"
 	waitmoncry
 # 83 "data/maps/TracklessForest/scripts.pory"
@@ -259,11 +259,19 @@ TracklessForest_Teleport_6:
 
 BattleRaikou_Text_0:
 # 41 "data/maps/TracklessForest/scripts.pory"
-	.string "Gwooa!$"
+	.string "Rararaiiiii!$"
+
+BattleEntei_Text_0:
+# 61 "data/maps/TracklessForest/scripts.pory"
+	.string "Enteiiiii!$"
+
+BattleSuicune_Text_0:
+# 81 "data/maps/TracklessForest/scripts.pory"
+	.string "Susuiiiii!$"
 
 BattleCelebi_Text_0:
 # 101 "data/maps/TracklessForest/scripts.pory"
-	.string "Kryuu!$"
+	.string "Lululalala!$"
 
 TracklessForest_Teleport_Text_0:
 # 118 "data/maps/TracklessForest/scripts.pory"

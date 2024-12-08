@@ -609,7 +609,8 @@
     "NavelRock_Bottom",
     "TrainerHill_Elevator",
     "CrescentIsle",
-    "PathlessPlainAlt"
+    "PathlessPlainAlt",
+    "SeasideHollow"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

@@ -21,7 +21,7 @@ script BattleMeloetta {
 		applymovement (MELOETTA, SkyPillar_Top_Movement_CameraPanDown)
 		waitmovement (0)
 		playmoncry(SPECIES_MELOETTA, CRY_MODE_ENCOUNTER)
-		msgbox("Laaa-liii!!")
+		msgbox("Melote!")
 		waitmoncry
 		seteventmon(SPECIES_MELOETTA, 50)
 		setflag(FLAG_SYS_CTRL_OBJ_DELETE)

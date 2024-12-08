@@ -216,16 +216,16 @@ BattleLandorus_2:
 
 BattleTornadus_Text_0:
 # 37 "data/maps/GaleforceCliffs/scripts.pory"
-	.string "Kawbraa!$"
+	.string "Whhhwhhhwhhh!!$"
 
 BattleThundurus_Text_0:
 # 57 "data/maps/GaleforceCliffs/scripts.pory"
-	.string "Gurooooohhh!$"
+	.string "GKrrrkrrrkrrak!$"
 
 BattleEnamorus_Text_0:
 # 77 "data/maps/GaleforceCliffs/scripts.pory"
-	.string "Aeepraaa!$"
+	.string "Amoooooor!$"
 
 BattleLandorus_Text_0:
 # 97 "data/maps/GaleforceCliffs/scripts.pory"
-	.string "Rarurarii!$"
+	.string "Karamukukuk!$"

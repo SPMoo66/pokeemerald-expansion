@@ -580,6 +580,7 @@
 #define MAP_TRAINER_HILL_ELEVATOR                           (88 | (26 << 8))
 #define MAP_CRESCENT_ISLE                                   (89 | (26 << 8))
 #define MAP_PATHLESS_PLAIN_ALT                              (90 | (26 << 8))
+#define MAP_SEASIDE_HOLLOW                                  (91 | (26 << 8))
 
 // gMapGroup_IndoorRoute104Prototype
 #define MAP_ROUTE104_PROTOTYPE                          (0 | (27 << 8))

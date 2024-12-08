@@ -97,7 +97,7 @@ BattleUxie::
 # 51 "data/maps/NamelessCavern/scripts.pory"
 	playmoncry SPECIES_UXIE, CRY_MODE_ENCOUNTER
 # 52 "data/maps/NamelessCavern/scripts.pory"
-	msgbox BattleMesprit_Text_0
+	msgbox BattleUxie_Text_0
 # 53 "data/maps/NamelessCavern/scripts.pory"
 	waitmoncry
 # 54 "data/maps/NamelessCavern/scripts.pory"
@@ -167,4 +167,8 @@ BattleAzelf_2:
 
 BattleMesprit_Text_0:
 # 32 "data/maps/NamelessCavern/scripts.pory"
-	.string "Gwooa!$"
+	.string "Kyauun!$"
+
+BattleUxie_Text_0:
+# 52 "data/maps/NamelessCavern/scripts.pory"
+	.string "Kyouuuun!$"

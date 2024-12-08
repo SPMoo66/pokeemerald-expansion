@@ -219,16 +219,16 @@ BattleWoChien_2:
 
 BattleChienPao_Text_0:
 # 38 "data/maps/SubmergedCavern/scripts.pory"
-	.string "Graoo-wuuh!$"
+	.string "Scrrr…\nScriiibe!$"
 
 BattleChiYu_Text_0:
 # 58 "data/maps/SubmergedCavern/scripts.pory"
-	.string "Di-tiing wuh!$"
+	.string "Sp… Sp…\nSplashyyy!$"
 
 BattleTingLu_Text_0:
 # 78 "data/maps/SubmergedCavern/scripts.pory"
-	.string "Aouu-wooouh!$"
+	.string "Rrr…\nPooourrr!$"
 
 BattleWoChien_Text_0:
 # 98 "data/maps/SubmergedCavern/scripts.pory"
-	.string "Greu-wuuu!$"
+	.string "C-c… cu…\nCut! Cuuuttt!$"

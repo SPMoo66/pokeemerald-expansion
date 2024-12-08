@@ -8,11 +8,11 @@ mapscripts TracklessForestAlt_MapScripts {
 			setflag (FLAG_TEMP_2)
 			removeobject(RAGING_BOLT)
 		}
-		elif(flag(FLAG_CAUGHT_GOUGING_FIRE)) {
+		if(flag(FLAG_CAUGHT_GOUGING_FIRE)) {
 			setflag (FLAG_TEMP_3)
 			removeobject(GOUGING_FIRE)
 		}
-		elif(flag(FLAG_CAUGHT_WALKING_WAKE)) {
+		if(flag(FLAG_CAUGHT_WALKING_WAKE)) {
 			setflag (FLAG_TEMP_4)
 			removeobject(WALKING_WAKE)
 		}

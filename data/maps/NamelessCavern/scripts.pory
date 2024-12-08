@@ -8,11 +8,11 @@ mapscripts NamelessCavern_MapScripts {
 			setflag (FLAG_TEMP_2)
 			removeobject(MESPRIT)
 		}
-		elif(flag(FLAG_CAUGHT_UXIE)) {
+		if(flag(FLAG_CAUGHT_UXIE)) {
 			setflag (FLAG_TEMP_3)
 			removeobject(UXIE)
 		}
-		elif(flag(FLAG_CAUGHT_AZELF)) {
+		if(flag(FLAG_CAUGHT_AZELF)) {
 			setflag (FLAG_TEMP_4)
 			removeobject(AZELF)
 		}

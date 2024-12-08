@@ -7,37 +7,40 @@ SeasideGrotto_MapScripts::
 
 SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 8 "data/maps/SeasideGrotto/scripts.pory"
-	goto_if_set FLAG_CAUGHT_TAPU_BULU, SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	goto_if_set FLAG_CAUGHT_TAPU_BULU, SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 12 "data/maps/SeasideGrotto/scripts.pory"
-	goto_if_set FLAG_CAUGHT_TAPU_FINI, SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+	goto_if_set FLAG_CAUGHT_TAPU_FINI, SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
+SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 16 "data/maps/SeasideGrotto/scripts.pory"
-	goto_if_set FLAG_CAUGHT_TAPU_KOKO, SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_3
+	goto_if_set FLAG_CAUGHT_TAPU_KOKO, SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_8
+SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
 # 20 "data/maps/SeasideGrotto/scripts.pory"
-	goto_if_set FLAG_CAUGHT_TAPU_LELE, SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
+	goto_if_set FLAG_CAUGHT_TAPU_LELE, SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_10
 	return
 
-SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 # 9 "data/maps/SeasideGrotto/scripts.pory"
 	setflag FLAG_TEMP_2
 # 10 "data/maps/SeasideGrotto/scripts.pory"
 	removeobject 1
-	return
+	goto SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
-SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
+SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
 # 13 "data/maps/SeasideGrotto/scripts.pory"
 	setflag FLAG_TEMP_3
 # 14 "data/maps/SeasideGrotto/scripts.pory"
 	removeobject 2
-	return
+	goto SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
 
-SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
+SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_8:
 # 17 "data/maps/SeasideGrotto/scripts.pory"
 	setflag FLAG_TEMP_4
 # 18 "data/maps/SeasideGrotto/scripts.pory"
 	removeobject 3
-	return
+	goto SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 
-SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
+SeasideGrotto_MapScripts_MAP_SCRIPT_ON_TRANSITION_10:
 # 21 "data/maps/SeasideGrotto/scripts.pory"
 	setflag FLAG_TEMP_5
 # 22 "data/maps/SeasideGrotto/scripts.pory"

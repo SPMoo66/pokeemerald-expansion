@@ -8,11 +8,11 @@ mapscripts PathlessPlainAlt_MapScripts {
 			setflag (FLAG_TEMP_2)
 			removeobject(IRON_CROWN)
 		}
-		elif(flag(FLAG_CAUGHT_IRON_BOULDER)) {
+		if(flag(FLAG_CAUGHT_IRON_BOULDER)) {
 			setflag (FLAG_TEMP_3)
 			removeobject(IRON_BOULDER)
 		}
-		elif(flag(FLAG_CAUGHT_IRON_LEAVES)) {
+		if(flag(FLAG_CAUGHT_IRON_LEAVES)) {
 			setflag (FLAG_TEMP_4)
 			removeobject(IRON_LEAVES)
 		}

@@ -9,15 +9,15 @@ mapscripts TracklessForest_MapScripts {
 			setflag (FLAG_TEMP_2)
 			removeobject(RAIKOU)
 		}
-		elif(flag(FLAG_CAUGHT_ENTEI)) {
+		if(flag(FLAG_CAUGHT_ENTEI)) {
 			setflag (FLAG_TEMP_3)
 			removeobject(ENTEI)
 		}
-		elif(flag(FLAG_CAUGHT_SUICUNE)) {
+		if(flag(FLAG_CAUGHT_SUICUNE)) {
 			setflag (FLAG_TEMP_4)
 			removeobject(SUICUNE)
 		}
-		elif(flag(FLAG_CAUGHT_CELEBI)) {
+		if(flag(FLAG_CAUGHT_CELEBI)) {
 			setflag (FLAG_TEMP_5)
 			removeobject(CELEBI)
 		}

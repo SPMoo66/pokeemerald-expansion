@@ -9,15 +9,15 @@ mapscripts SubmergedCavern_MapScripts {
 			setflag (FLAG_TEMP_2)
 			removeobject(CHIEN_PAO)
 		}
-		elif(flag(FLAG_CAUGHT_CHI_YU)) {
+		if(flag(FLAG_CAUGHT_CHI_YU)) {
 			setflag (FLAG_TEMP_3)
 			removeobject(CHI_YU)
 		}
-		elif(flag(FLAG_CAUGHT_TING_LU)) {
+		if(flag(FLAG_CAUGHT_TING_LU)) {
 			setflag (FLAG_TEMP_4)
 			removeobject(TING_LU)
 		}
-		elif(flag(FLAG_CAUGHT_WO_CHIEN)) {
+		if(flag(FLAG_CAUGHT_WO_CHIEN)) {
 			setflag (FLAG_TEMP_5)
 			removeobject(WO_CHIEN)
 		}

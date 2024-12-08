@@ -7,28 +7,30 @@ SeaSpiritsDenAlt_MapScripts::
 
 SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 7 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	goto_if_set FLAG_CAUGHT_ARTICUNO_G, SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	goto_if_set FLAG_CAUGHT_ARTICUNO_G, SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 11 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	goto_if_set FLAG_CAUGHT_ZAPDOS_G, SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+	goto_if_set FLAG_CAUGHT_ZAPDOS_G, SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
+SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 15 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	goto_if_set FLAG_CAUGHT_MOLTRES_G, SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_3
+	goto_if_set FLAG_CAUGHT_MOLTRES_G, SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 	return
 
-SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 # 8 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	setflag FLAG_TEMP_2
 # 9 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	removeobject 1
-	return
+	goto SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
-SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
+SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
 # 12 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	setflag FLAG_TEMP_3
 # 13 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	removeobject 2
-	return
+	goto SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
 
-SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
+SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
 # 16 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	setflag FLAG_TEMP_4
 # 17 "data/maps/SeaSpiritsDenAlt/scripts.pory"

@@ -4564,8 +4564,8 @@
     {
       "id": "LAYOUT_FLURRY_PEAK",
       "name": "FlurryPeak_Layout",
-      "width": 48,
-      "height": 24,
+      "width": 54,
+      "height": 28,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Snow",
       "border_filepath": "data/layouts/FlurryPeak/border.bin",

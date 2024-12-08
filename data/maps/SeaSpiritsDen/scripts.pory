@@ -8,11 +8,11 @@ mapscripts SeaSpiritsDen_MapScripts {
 			setflag (FLAG_TEMP_2)
 			removeobject(ARTICUNO)
 		}
-		elif(flag(FLAG_CAUGHT_ZAPDOS)) {
+		if(flag(FLAG_CAUGHT_ZAPDOS)) {
 			setflag (FLAG_TEMP_3)
 			removeobject(ZAPDOS)
 		}
-		elif(flag(FLAG_CAUGHT_MOLTRES)) {
+		if(flag(FLAG_CAUGHT_MOLTRES)) {
 			setflag (FLAG_TEMP_4)
 			removeobject(MOLTRES)
 		}

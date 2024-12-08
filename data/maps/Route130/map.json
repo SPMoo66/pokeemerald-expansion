@@ -79,7 +79,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 71,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE130",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

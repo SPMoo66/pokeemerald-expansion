@@ -2617,7 +2617,7 @@
       "width": 80,
       "height": 38,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/Route130/border.bin",
       "blockdata_filepath": "data/layouts/Route130/map.bin"
     },

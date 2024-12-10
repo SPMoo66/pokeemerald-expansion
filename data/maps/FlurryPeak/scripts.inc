@@ -124,7 +124,7 @@ BattleGlastrier::
 # 72 "data/maps/FlurryPeak/scripts.pory"
 	waitmoncry
 # 73 "data/maps/FlurryPeak/scripts.pory"
-	seteventmon SPECIES_GLASTRIER, 40
+	seteventmon SPECIES_GLASTRIER, 50
 # 74 "data/maps/FlurryPeak/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 75 "data/maps/FlurryPeak/scripts.pory"
@@ -163,7 +163,7 @@ BattleSpectrier::
 # 92 "data/maps/FlurryPeak/scripts.pory"
 	waitmoncry
 # 93 "data/maps/FlurryPeak/scripts.pory"
-	seteventmon SPECIES_SPECTRIER, 40
+	seteventmon SPECIES_SPECTRIER, 50
 # 94 "data/maps/FlurryPeak/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 95 "data/maps/FlurryPeak/scripts.pory"

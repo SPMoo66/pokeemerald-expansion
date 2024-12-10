@@ -70,7 +70,7 @@ script BattleGlastrier {
 	playmoncry(SPECIES_GLASTRIER, CRY_MODE_ENCOUNTER)
 	msgbox("Brrrrrriiiiiice!")
 	waitmoncry
-	seteventmon(SPECIES_GLASTRIER, 40)
+	seteventmon(SPECIES_GLASTRIER, 50)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
@@ -90,7 +90,7 @@ script BattleSpectrier {
 	playmoncry(SPECIES_SPECTRIER, CRY_MODE_ENCOUNTER)
 	msgbox("Sheeeighhhhd!")
 	waitmoncry
-	seteventmon(SPECIES_SPECTRIER, 40)
+	seteventmon(SPECIES_SPECTRIER, 50)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate

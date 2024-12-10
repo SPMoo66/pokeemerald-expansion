@@ -141,7 +141,7 @@ BattleGlastrier::
 BattleGlastrier_1:
 # 82 "data/maps/FlurryPeak/scripts.pory"
 	release
-	end
+	return
 
 BattleGlastrier_2:
 # 80 "data/maps/FlurryPeak/scripts.pory"
@@ -150,40 +150,40 @@ BattleGlastrier_2:
 
 
 BattleSpectrier::
-# 87 "data/maps/FlurryPeak/scripts.pory"
+# 86 "data/maps/FlurryPeak/scripts.pory"
 	lock
-# 88 "data/maps/FlurryPeak/scripts.pory"
+# 87 "data/maps/FlurryPeak/scripts.pory"
 	faceplayer
-# 89 "data/maps/FlurryPeak/scripts.pory"
+# 88 "data/maps/FlurryPeak/scripts.pory"
 	setvar VAR_LAST_TALKED, 10
-# 90 "data/maps/FlurryPeak/scripts.pory"
+# 89 "data/maps/FlurryPeak/scripts.pory"
 	playmoncry SPECIES_SPECTRIER, CRY_MODE_ENCOUNTER
-# 91 "data/maps/FlurryPeak/scripts.pory"
+# 90 "data/maps/FlurryPeak/scripts.pory"
 	msgbox BattleSpectrier_Text_0
-# 92 "data/maps/FlurryPeak/scripts.pory"
+# 91 "data/maps/FlurryPeak/scripts.pory"
 	waitmoncry
-# 93 "data/maps/FlurryPeak/scripts.pory"
+# 92 "data/maps/FlurryPeak/scripts.pory"
 	seteventmon SPECIES_SPECTRIER, 50
-# 94 "data/maps/FlurryPeak/scripts.pory"
+# 93 "data/maps/FlurryPeak/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 95 "data/maps/FlurryPeak/scripts.pory"
+# 94 "data/maps/FlurryPeak/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 96 "data/maps/FlurryPeak/scripts.pory"
+# 95 "data/maps/FlurryPeak/scripts.pory"
 	waitstate
-# 97 "data/maps/FlurryPeak/scripts.pory"
+# 96 "data/maps/FlurryPeak/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 98 "data/maps/FlurryPeak/scripts.pory"
+# 97 "data/maps/FlurryPeak/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 99 "data/maps/FlurryPeak/scripts.pory"
+# 98 "data/maps/FlurryPeak/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleSpectrier_2
 BattleSpectrier_1:
-# 102 "data/maps/FlurryPeak/scripts.pory"
+# 101 "data/maps/FlurryPeak/scripts.pory"
 	release
-	end
+	return
 
 BattleSpectrier_2:
-# 100 "data/maps/FlurryPeak/scripts.pory"
+# 99 "data/maps/FlurryPeak/scripts.pory"
 	setflag FLAG_CAUGHT_SPECTRIER
 	goto BattleSpectrier_1
 
@@ -258,5 +258,5 @@ BattleGlastrier_Text_0:
 	.string "Brrrrrriiiiiice!$"
 
 BattleSpectrier_Text_0:
-# 91 "data/maps/FlurryPeak/scripts.pory"
+# 90 "data/maps/FlurryPeak/scripts.pory"
 	.string "Sheeeighhhhd!$"

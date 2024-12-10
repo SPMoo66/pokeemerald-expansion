@@ -2,23 +2,6 @@ raw `
 .set LOCALID_WOMAN_1, 19
 .set LOCALID_MAN_1, 20
 
-LilycoveCity_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, LilycoveCity_OnTransition
-	map_script MAP_SCRIPT_ON_LOAD, LilycoveCity_OnLoad
-	.byte 0
-
-LilycoveCity_OnTransition:
-	setflag FLAG_VISITED_LILYCOVE_CITY
-	setvar VAR_CONTEST_HALL_STATE, 0
-	setflag FLAG_HIDE_LILYCOVE_CONTEST_HALL_REPORTER
-	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
-	call Common_EventScript_SetupRivalGfxId
-	end
-
-LilycoveCity_OnLoad:
-	call_if_unset FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_SetWailmerMetatiles
-	end
-
 LilycoveCity_EventScript_SetWailmerMetatiles::
 	setmetatile 76, 12, METATILE_Lilycove_Wailmer0, TRUE
 	setmetatile 77, 12, METATILE_Lilycove_Wailmer1, TRUE
@@ -773,3 +756,53 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "I mean, we are totally happy!$"
 `
 
+const VICTINI = 23
+
+mapscripts LilycoveCity_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION: LilycoveCity_OnTransition
+	MAP_SCRIPT_ON_LOAD: LilycoveCity_OnLoad
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(VICTINI)
+		}
+	}
+}
+
+script LilycoveCity_OnTransition {
+	setflag (FLAG_VISITED_LILYCOVE_CITY)
+	setvar (VAR_CONTEST_HALL_STATE, 0)
+	if (flag(FLAG_CAUGHT_VICTINI)) {
+		setflag (FLAG_TEMP_2)
+	}
+	setflag (FLAG_HIDE_LILYCOVE_CONTEST_HALL_REPORTER)
+	if (flag(FLAG_SYS_WEATHER_CTRL)) {
+		call (Common_EventScript_SetAbnormalWeather)
+	}
+	call (Common_EventScript_SetupRivalGfxId)
+}
+
+script LilycoveCity_OnLoad {
+	if (!flag(FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE)) {
+		call (LilycoveCity_EventScript_SetWailmerMetatiles)
+	}
+}
+
+script BattleVictini {
+	lock
+	faceplayer
+	setvar (VAR_LAST_TALKED, VICTINI)
+	playmoncry(SPECIES_VICTINI, CRY_MODE_ENCOUNTER)
+	msgbox("Ta-ta-ta-tah!")
+	waitmoncry
+	seteventmon(SPECIES_VICTINI, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_VICTINI)
+	}
+	release
+
+}

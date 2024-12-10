@@ -80,7 +80,6 @@ script BattleGlastrier {
 		setflag (FLAG_CAUGHT_GLASTRIER)
 	}
 	release
-	end
 }
 
 script BattleSpectrier {
@@ -100,5 +99,4 @@ script BattleSpectrier {
 		setflag (FLAG_CAUGHT_SPECTRIER)
 	}
 	release
-	end
 }

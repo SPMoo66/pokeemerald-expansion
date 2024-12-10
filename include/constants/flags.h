@@ -278,11 +278,11 @@
 #define FLAG_RECEIVED_CHARCOAL               0xFE
 #define FLAG_LATIOS_OR_LATIAS_ROAMING        0xFF
 #define FLAG_RECEIVED_REPEAT_BALL            0x100
-#define FLAG_VICTINI_READY                    0x101 // Was for Old Rod
+#define FLAG_VICTINI_READY                   0x101 // Was for Old Rod
 #define FLAG_RECEIVED_COIN_CASE              0x102
 #define FLAG_RETURNED_RED_OR_BLUE_ORB        0x103
 #define FLAG_RECEIVED_RARE_CANDY_SNATCH      0x104
-#define FLAG_UNUSED_0x105                    0x105 // Unused, was for TM Dig
+#define FLAG_CAUGHT_VICTINI                  0x105 // Was for TM Dig
 #define FLAG_RECEIVED_DOWSING_MACHINE        0x106
 #define FLAG_ENTERED_ELITE_FOUR              0x107
 #define FLAG_RECEIVED_ROTOM_CATALOG          0x108

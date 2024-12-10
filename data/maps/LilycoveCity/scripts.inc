@@ -1538,12 +1538,14 @@ LilycoveCity_OnTransition::
 	setvar VAR_CONTEST_HALL_STATE, 0
 # 774 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_set FLAG_CAUGHT_VICTINI, LilycoveCity_OnTransition_2
+# 774 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_unset FLAG_VICTINI_READY, LilycoveCity_OnTransition_2
 LilycoveCity_OnTransition_1:
 # 777 "data/maps/LilycoveCity/scripts.pory"
 	setflag FLAG_HIDE_LILYCOVE_CONTEST_HALL_REPORTER
 # 778 "data/maps/LilycoveCity/scripts.pory"
-	goto_if_set FLAG_SYS_WEATHER_CTRL, LilycoveCity_OnTransition_5
-LilycoveCity_OnTransition_4:
+	goto_if_set FLAG_SYS_WEATHER_CTRL, LilycoveCity_OnTransition_7
+LilycoveCity_OnTransition_6:
 # 781 "data/maps/LilycoveCity/scripts.pory"
 	call Common_EventScript_SetupRivalGfxId
 	return
@@ -1553,10 +1555,10 @@ LilycoveCity_OnTransition_2:
 	setflag FLAG_TEMP_2
 	goto LilycoveCity_OnTransition_1
 
-LilycoveCity_OnTransition_5:
+LilycoveCity_OnTransition_7:
 # 779 "data/maps/LilycoveCity/scripts.pory"
 	call Common_EventScript_SetAbnormalWeather
-	goto LilycoveCity_OnTransition_4
+	goto LilycoveCity_OnTransition_6
 
 
 LilycoveCity_OnLoad::

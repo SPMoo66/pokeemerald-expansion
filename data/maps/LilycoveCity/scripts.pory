@@ -771,7 +771,7 @@ mapscripts LilycoveCity_MapScripts {
 script LilycoveCity_OnTransition {
 	setflag (FLAG_VISITED_LILYCOVE_CITY)
 	setvar (VAR_CONTEST_HALL_STATE, 0)
-	if (flag(FLAG_CAUGHT_VICTINI)) {
+	if (flag(FLAG_CAUGHT_VICTINI) || !flag(FLAG_VICTINI_READY)) {
 		setflag (FLAG_TEMP_2)
 	}
 	setflag (FLAG_HIDE_LILYCOVE_CONTEST_HALL_REPORTER)
@@ -804,5 +804,4 @@ script BattleVictini {
 		setflag (FLAG_CAUGHT_VICTINI)
 	}
 	release
-
 }

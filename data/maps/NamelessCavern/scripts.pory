@@ -8,11 +8,11 @@ mapscripts NamelessCavern_MapScripts {
 			setflag (FLAG_TEMP_2)
 			removeobject(MESPRIT)
 		}
-		elif(flag(FLAG_CAUGHT_UXIE)) {
+		if(flag(FLAG_CAUGHT_UXIE)) {
 			setflag (FLAG_TEMP_3)
 			removeobject(UXIE)
 		}
-		elif(flag(FLAG_CAUGHT_AZELF)) {
+		if(flag(FLAG_CAUGHT_AZELF)) {
 			setflag (FLAG_TEMP_4)
 			removeobject(AZELF)
 		}
@@ -29,7 +29,7 @@ script BattleMesprit {
 	faceplayer
 	setvar (VAR_LAST_TALKED, MESPRIT)
 	playmoncry(SPECIES_MESPRIT, CRY_MODE_ENCOUNTER)
-	msgbox("Gwooa!")
+	msgbox("Kyauun!")
 	waitmoncry
 	seteventmon(SPECIES_MESPRIT, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -49,7 +49,7 @@ script BattleUxie {
 	faceplayer
 	setvar (VAR_LAST_TALKED, UXIE)
 	playmoncry(SPECIES_UXIE, CRY_MODE_ENCOUNTER)
-	msgbox("Gwooa!")
+	msgbox("Kyouuuun!")
 	waitmoncry
 	seteventmon(SPECIES_UXIE, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -69,7 +69,7 @@ script BattleAzelf {
 	faceplayer
 	setvar (VAR_LAST_TALKED, AZELF)
 	playmoncry(SPECIES_AZELF, CRY_MODE_ENCOUNTER)
-	msgbox("Gwooa!")
+	msgbox("Kyauun!")
 	waitmoncry
 	seteventmon(SPECIES_AZELF, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)

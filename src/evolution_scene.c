@@ -48,7 +48,7 @@ struct EvoInfo
 static EWRAM_DATA struct EvoInfo *sEvoStructPtr = NULL;
 static EWRAM_DATA u16 *sBgAnimPal = NULL;
 
-void (*gCB2_AfterEvolution)(void);
+COMMON_DATA void (*gCB2_AfterEvolution)(void) = NULL;
 
 #define sEvoCursorPos           gBattleCommunication[1] // when learning a new move
 #define sEvoGraphicsTaskId      gBattleCommunication[2]
@@ -1227,7 +1227,7 @@ static void Task_TradeEvolutionScene(u8 taskId)
             else
             {
                 PlayBGM(MUS_EVOLUTION);
-                DrawTextOnTradeWindow(0, gText_CommunicationStandby5, 1);
+                DrawTextOnTradeWindow(0, gText_CommunicationStandby, 1);
                 gTasks[taskId].tState++;
             }
         }

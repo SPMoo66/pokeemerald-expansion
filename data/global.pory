@@ -720,12 +720,20 @@ text CommonText_Birch {
 	"Prof. Birch"
 }
 
+text CommonText_Rowan {
+	"Prof. Rowan"
+}
+
 text CommonText_Archie {
 	"Archie"
 }
 
 text CommonText_Maxie {
 	"Maxie"
+}
+
+text CommonText_Giovanni {
+	"Giovanni"
 }
 
 text CommonText_Courtney {
@@ -820,6 +828,17 @@ text CommonText_Looker {
 	"Looker"
 }
 
+text CommonText_Bianca {
+	"Bianca"
+}
+
+text CommonText_MagmaGrunt {
+	"Magma Grunt"
+}
+
+text CommonText_AquaGrunt {
+	"Aqua Grunt"
+}
 
 
 script GetRivalForNameBox {
@@ -861,3 +880,78 @@ text Text_PokevialSizeIncrease {
 	"The Pokévial's size was increased!"
 }
 
+text CommonText_NormalType {
+	"Normal Type"
+}
+
+text CommonText_FightingType {
+	"Fighting Type"
+}
+
+text CommonText_FlyingType {
+	"Flying Type"
+}
+
+text CommonText_PoisonType {
+	"Poison Type"
+}
+
+text CommonText_GroundType {
+	"Ground Type"
+}
+
+text CommonText_RockType {
+	"Rock Type"
+}
+
+text CommonText_BugType {
+	"Bug Type"
+}
+
+text CommonText_GhostType {
+	"Ghost Type"
+}
+
+text CommonText_SteelType {
+	"Steel Type"
+}
+
+text CommonText_FireType {
+	"Fire Type"
+}
+
+text CommonText_WaterType {
+	"Water Type"
+}
+
+text CommonText_GrassType {
+	"Grass Type"
+}
+
+text CommonText_ElectricType {
+	"Electric Type"
+}
+
+text CommonText_PsychicType {
+	"Psychic Type"
+}
+
+text CommonText_IceType {
+	"Ice Type"
+}
+
+text CommonText_DragonType {
+	"Dragon Type"
+}
+
+text CommonText_DarkType {
+	"Dark Type"
+}
+
+text CommonText_FairyType {
+	"Fairy Type"
+}
+
+text CommonText_StellarType {
+	"Stellar Type"
+}

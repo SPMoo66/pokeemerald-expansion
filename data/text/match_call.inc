@@ -2586,6 +2586,96 @@ MatchCall_Text_Brendan15:: @ 2B4D46
 	.string "with you, {PLAYER}, they get pretty\l"
 	.string "envious!$"
 
+MatchCall_Text_Jakson1::
+	.string "$"
+
+MatchCall_Text_Jakson2::
+	.string "$"
+
+MatchCall_Text_Jakson3::
+	.string "$"
+
+MatchCall_Text_Jakson4::
+	.string "$"
+
+MatchCall_Text_Jakson5::
+	.string "$"
+
+MatchCall_Text_Jakson6::
+	.string "$"
+
+MatchCall_Text_Harper1::
+	.string "$"
+
+MatchCall_Text_Harper2::
+	.string "$"
+
+MatchCall_Text_Harper3::
+	.string "$"
+
+MatchCall_Text_Harper4::
+	.string "$"
+
+MatchCall_Text_Harper5::
+	.string "$"
+
+MatchCall_Text_Harper6::
+	.string "$"
+
+MatchCall_Text_Redd1::
+	.string "$"
+
+MatchCall_Text_Redd2::
+	.string "$"
+
+MatchCall_Text_Redd3::
+	.string "$"
+
+MatchCall_Text_Redd4::
+	.string "$"
+
+MatchCall_Text_Redd5::
+	.string "$"
+
+MatchCall_Text_Redd6::
+	.string "$"
+
+MatchCall_Text_Sakura1::
+	.string "$"
+
+MatchCall_Text_Sakura2::
+	.string "$"
+
+MatchCall_Text_Sakura3::
+	.string "$"
+
+MatchCall_Text_Sakura4::
+	.string "$"
+
+MatchCall_Text_Sakura5::
+	.string "$"
+
+MatchCall_Text_Sakura6::
+	.string "$"
+
+MatchCall_Text_Baron1::
+	.string "$"
+
+MatchCall_Text_Baron2::
+	.string "$"
+
+MatchCall_Text_Baron3::
+	.string "$"
+
+MatchCall_Text_Baron4::
+	.string "$"
+
+MatchCall_Text_Baron5::
+	.string "$"
+
+MatchCall_Text_Baron6::
+	.string "$"
+
 MatchCall_Text_Wally1:: @ 2B4DE2
 	.string "Wally: Oh, {PLAYER}!\p"
 	.string "I've been getting healthier and\n"
@@ -2707,6 +2797,37 @@ MatchCall_Text_Scott7::
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "Scott appears to be out of\n"
+	.string "the Pokénav's service area…$"
+
+MatchCall_Text_Looker1::
+	.string "Looker: {PLAYER}!\n"
+	.string "Hurry yourself up and come\l"
+	.string "to Devoncorp in Rustboro!$"
+
+MatchCall_Text_Looker2::
+	.string "Looker: Ah, {PLAYER}.\p"
+	.string "It is good that you are calling.\p"
+	.string "I am hot on the trail of\n"
+	.string "Team Rocket.\p"
+	.string "They will be caught any minute\l"
+	.string "now, I am sure.$"
+
+MatchCall_Text_Looker3::
+	.string "… … … … … …\n"
+	.string "… … … … … …\p"
+	.string "Looker appears to be out of\n"
+	.string "the Pokénav's service area…$"
+
+MatchCall_Text_Looker4::
+	.string "… … … … … …\n"
+	.string "… … … … … …\p"
+	.string "Looker appears to be out of\n"
+	.string "the Pokénav's service area…$"
+
+MatchCall_Text_Looker5::
+	.string "… … … … … …\n"
+	.string "… … … … … …\p"
+	.string "Looker appears to be out of\n"
 	.string "the Pokénav's service area…$"
 
 MatchCall_Text_Norman1:: @ 82B5719
@@ -2845,11 +2966,6 @@ MatchCall_Text_BirchRegisterCall: @ 82B5F52
 MatchCall_Text_RegisteredBirch: @ 82B603A
 	.string "Registered Prof. Birch\n"
 	.string "in the Pokénav.$"
-	
-MatchCall_Text_UnusedProfBirch:
-	.string "Prof. Birch: When one has both\n"
-	.string "the Pokédex and Pokénav, studying\l"
-	.string "Pokémon becomes more fun, eh?$"
 
 MatchCall_Text_MrStone1:: @ 82B60C0
 	.string "Mr. Stone: Oh? {PLAYER}{KUN}!\p"

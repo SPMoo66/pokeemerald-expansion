@@ -32,6 +32,7 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 	delay (30)
 	applymovement (LOCALID_AQUA_GRUNT_1, Common_Movement_WalkInPlaceDown)
 	waitmovement (0)
+	speakername (CommonText_MagmaGrunt)
 	msgbox ("Hehehe!\p"
 			"With this Meteorite, that thing in\n"
 			"Mt. Chimney will…")
@@ -44,6 +45,7 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 	waitmovement (0)
 	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_Delay48)
 	waitmovement (0)
+	speakername (CommonText_MagmaGrunt)
 	msgbox ("Heh?\p"
 			"I don't know who you are, but if you get\n"
 			"in the way of Team Magma, don't\l"
@@ -59,6 +61,7 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 	speakername (CommonText_Courtney)
 	msgbox ("I think you're going to need my help.")
 	closemessage
+	speakername (CommonText_MagmaGrunt)
 	msgbox ("Tch… fine.")
 	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceRight)
 	waitmovement (0)
@@ -80,6 +83,7 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 	}
 	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceRight)
 	waitmovement (0)
+	speakername (CommonText_MagmaGrunt)
 	msgbox ("Courtney! Help me here!")
 	closemessage
 	applymovement (LOCALID_RIVAL, MeteorFalls_1F_1R_Movement_RivalBeforeBattle)
@@ -100,6 +104,7 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 	}
 	switch (var(VAR_RESULT)) {
 		case 1:
+			speakername (CommonText_Q)
 			msgbox ("Hold it right there, Team Magma!\p"
 				"You're badly mistaken if you think you\n"
 				"can have your way with the world!")
@@ -120,6 +125,7 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 			applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterLeft)
 			waitmovement (0)
 			special (SpawnCameraObject)
+			speakername (CommonText_MagmaGrunt)
 			msgbox ("Hehehe!\n"
 					"Even Team Aqua joins us!\p"
 					"But it's too much trouble to deal with\n"
@@ -159,6 +165,7 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 			applymovement (LOCALID_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1ApproachArchie)
 			applymovement (LOCALID_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2ApproachArchie)
 			waitmovement (0)
+			speakername (CommonText_AquaGrunt)
 			msgbox ("Boss, we should give chase to\n"
 					"Team Magma…")
 			applymovement (LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterDown)

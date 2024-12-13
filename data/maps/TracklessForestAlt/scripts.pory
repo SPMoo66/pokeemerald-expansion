@@ -8,11 +8,11 @@ mapscripts TracklessForestAlt_MapScripts {
 			setflag (FLAG_TEMP_2)
 			removeobject(RAGING_BOLT)
 		}
-		elif(flag(FLAG_CAUGHT_GOUGING_FIRE)) {
+		if(flag(FLAG_CAUGHT_GOUGING_FIRE)) {
 			setflag (FLAG_TEMP_3)
 			removeobject(GOUGING_FIRE)
 		}
-		elif(flag(FLAG_CAUGHT_WALKING_WAKE)) {
+		if(flag(FLAG_CAUGHT_WALKING_WAKE)) {
 			setflag (FLAG_TEMP_4)
 			removeobject(WALKING_WAKE)
 		}
@@ -33,7 +33,7 @@ script BattleRagingBolt {
 	faceplayer
 	setvar (VAR_LAST_TALKED, RAGING_BOLT)
 	playmoncry(SPECIES_RAGING_BOLT, CRY_MODE_ENCOUNTER)
-	msgbox("Gwooa!")
+	msgbox("Rai-gooohhh!!!")
 	waitmoncry
 	seteventmon(SPECIES_RAGING_BOLT, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -53,7 +53,7 @@ script BattleGougingFire {
 	faceplayer
 	setvar (VAR_LAST_TALKED, GOUGING_FIRE)
 	playmoncry(SPECIES_GOUGING_FIRE, CRY_MODE_ENCOUNTER)
-	msgbox("Gwooa!")
+	msgbox("Ennn-grahhh!")
 	waitmoncry
 	seteventmon(SPECIES_GOUGING_FIRE, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -73,7 +73,7 @@ script BattleWalkingWake {
 	faceplayer
 	setvar (VAR_LAST_TALKED, WALKING_WAKE)
 	playmoncry(SPECIES_WALKING_WAKE, CRY_MODE_ENCOUNTER)
-	msgbox("Gwooa!")
+	msgbox("Su-suiiiii!")
 	waitmoncry
 	seteventmon(SPECIES_WALKING_WAKE, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)

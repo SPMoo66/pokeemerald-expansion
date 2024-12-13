@@ -45,7 +45,7 @@ SlateportCity_BattleTentCorridor_EventScript_EnterBattleRoom::
 	opendoor 2, 1
 	waitdooranim
 	applymovement LOCALID_ATTENDANT, Common_Movement_EnterHouse
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_BattleTentCorridor_Movement_PlayerExit
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2Invis
 	waitmovement 0
 	closedoor 2, 1
 	waitdooranim
@@ -126,12 +126,6 @@ SlateportCity_BattleTentCorridor_EventScript_ResumeChallenge::
 	special SavePlayerParty
 	factory_setparties 0
 	goto SlateportCity_BattleTentCorridor_EventScript_AskReadyForOpponent
-
-SlateportCity_BattleTentCorridor_Movement_PlayerExit:
-	walk_up
-	walk_up
-	set_invisible
-	step_end
 
 SlateportCity_BattleTentCorridor_Movement_AttendantEnter:
 	walk_up

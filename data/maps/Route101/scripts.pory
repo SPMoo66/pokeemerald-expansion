@@ -257,37 +257,67 @@ Route101_Text_RouteSign:
 	.string "{UP_ARROW} Oldale Town$"
 `
 
-const CYNTHIA = 7
+const BIANCA = 7
 const PICHU = 8
 
 script Route101_PichuGift {
 	lock
 	playbgm (MUS_HG_SPIKY_EARED_PICHU, FALSE)
-	addobject (CYNTHIA)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+	addobject (BIANCA)
 	addobject (PICHU)
 	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
 	switch (var(VAR_TEMP_1)) {
 		case 2:
-			setobjectxy (CYNTHIA, 2, 2)
+			setobjectxy (BIANCA, 2, 2)
 			setobjectxy (PICHU, 2, 3)
 		case 3:
-			setobjectxy (CYNTHIA, 2, 3)
+			setobjectxy (BIANCA, 2, 3)
 			setobjectxy (PICHU, 2, 4)
 		case 4:
-			setobjectxy (CYNTHIA, 2, 4)
+			setobjectxy (BIANCA, 2, 4)
 			setobjectxy (PICHU, 2, 5)
 		case 5:
-			setobjectxy (CYNTHIA, 2, 5)
+			setobjectxy (BIANCA, 2, 5)
 			setobjectxy (PICHU, 2, 4)
 		default:
 	}
-	applymovement (CYNTHIA, CynthiaMoveRight)
+	applymovement (BIANCA, BiancaMoveRight)
 	applymovement (PICHU, PichuMoveRight)
 	waitmovement (0)
 	playse (SE_LEDGE)
-	applymovement (CYNTHIA, CynthiaMoveRight2)
+	applymovement (BIANCA, BiancaMoveRight2)
 	applymovement (PICHU, PichuMoveRight2)
 	waitmovement (0)
+	speakername (CommonText_Q)
+	msgbox (format ("Hello there.\n"
+					"If you're coming from the direction of Littleroot Town you must be a newer trainer!\p"
+					"Aww, the start of a new journey is so wonderful.\p"
+					"I still remember when I…"))
+	closemessage
+	playse (SE_LEDGE)
+	applymovement (PICHU, PichuJump)
+	waitmovement (0)
+	playse (SE_LEDGE)
+	applymovement (PICHU, PichuJump)
+	waitmovement (0)
+	if (var(VAR_TEMP_1) == 5) {
+		applymovement (BIANCA, Common_Movement_WalkInPlaceUp)
+	}
+	else {
+		applymovement (BIANCA, Common_Movement_WalkInPlaceDown)
+	}
+	waitmovement (0)
+	speakername (CommonText_Q)
+	msgbox (format ("Hey, hey, you!\n"
+					"Take it easy, now!\l"
+					"… … …\l"
+					"Unless…"))
+	applymovement (BIANCA, Common_Movement_WalkInPlaceRight)
+	msgbox (format ("This Pichu had taken a liking to me when I arrived here in Hoenn, but now it seems like they might prefer you…\p"
+					"How would you like to take them with you?\p"
+					"You would like that, right?!"))
+	closemessage
 	playfanfare (MUS_HG_RECEIVE_POKEMON)
 	msgbox("Pichu joined {PLAYER}!")
 	waitfanfare
@@ -297,28 +327,35 @@ script Route101_PichuGift {
 	applymovement (PICHU, PichuDisappear)
 	waitmovement (0)
 	removeobject (PICHU)
+	delay (20)
+	speakername (CommonText_Bianca)
+	msgbox (format ("Oh! Right!\n"
+					"My name is Bianca.\p"
+					"I'll be in Hoenn for a while, so I hope we get to meet again, {PLAYER}!\l"
+					"Bye-bye!"))
+	closemessage
 	if (var(VAR_TEMP_1) != 5) {
 		switch (var(VAR_TEMP_1)) {
 			case 2:
-				applymovement (CYNTHIA, CynthiaDown3)
+				applymovement (BIANCA, Common_Movement_WalkDown3)
 			case 3:
-				applymovement (CYNTHIA, Common_Movement_WalkDown2)
+				applymovement (BIANCA, Common_Movement_WalkDown2)
 			case 4:
-				applymovement (CYNTHIA, Common_Movement_WalkDown)
+				applymovement (BIANCA, Common_Movement_WalkDown)
 			default:
 		}
 	}
 	waitmovement (0)
 	playse (SE_LEDGE)
-	applymovement (CYNTHIA, CynthiaLedgeLeave)
+	applymovement (BIANCA, BiancaLedgeLeave)
 	waitmovement (0)
-	removeobject (CYNTHIA)
-	//setvar (VAR_ROUTE101_STATE, 4)
+	removeobject (BIANCA)
+	setvar (VAR_ROUTE101_STATE, 4)
 	fadedefaultbgm
 	release
 }
 
-movement CynthiaMoveRight {
+movement BiancaMoveRight {
 	walk_right * 5
 	emote_question_mark
 	delay_16 * 4
@@ -332,7 +369,7 @@ movement PichuMoveRight {
 	delay_16 * 4
 }
 
-movement CynthiaMoveRight2 {
+movement BiancaMoveRight2 {
 	delay_16 * 3
 	walk_right * 2
 }
@@ -351,6 +388,10 @@ movement PichuMoveRight2 {
 	walk_right * 4
 }
 
+movement PichuJump {
+	jump_in_place_right
+}
+
 movement PichuDisappear {
 	jump_in_place_right
 	delay_16
@@ -358,11 +399,7 @@ movement PichuDisappear {
 	set_invisible
 }
 
-movement CynthiaDown3 {
-	walk_down * 3
-}
-
-movement CynthiaLedgeLeave {
+movement BiancaLedgeLeave {
 	jump_2_down
 	walk_down * 4
 	set_invisible

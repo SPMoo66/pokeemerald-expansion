@@ -1,7 +1,7 @@
 mapscripts LeafyClearing_MapScripts {}
 
 script TrainerTipsClock {
-	msgbox(format("Trainer Tips\pWhen viewing a clock press the R button to set the time."), MSGBOX_SIGN)
+	msgbox(format("Trainer Tips\pWhen viewing a clock, press the R button to set the time."), MSGBOX_SIGN)
 }
 
 script TrainerTipsBRun {

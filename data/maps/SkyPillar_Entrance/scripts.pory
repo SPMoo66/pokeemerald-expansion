@@ -1,0 +1,94 @@
+const RIVAL = 1
+
+mapscripts SkyPillar_Entrance_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_LANDMARK_SKY_PILLAR)
+		call (Common_EventScript_SetupRivalGfxId)
+	}
+}
+
+script SkyPillar_Rival_Battle {
+	lock
+	addobject (RIVAL)
+	setobjectxy (RIVAL, 6, 16)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+	applymovement (RIVAL, Common_Movement_FaceUp)
+	checkplayergender
+	if (var(VAR_RESULT) == MALE) {
+		call(Route119_EventScript_PlayMayMusic)
+	}
+	else {
+		call(Route119_EventScript_PlayBrendanMusic)
+	}
+	playse (SE_EXIT)
+	delay (30)
+	applymovement (RIVAL, Common_Movement_WalkUp3)
+	waitmovement (0)
+	if (var(VAR_RESULT) == MALE) {
+		speakername (CommonText_May)
+		msgbox( format( "{PLAYER}!\n"
+						"This is really bad, isn't it?"))
+		applymovement (RIVAL, Common_Movement_WalkInPlaceDown)
+		waitmovement (0)
+		msgbox( format( "I had asked my dad, and he said that this kind of thing was just to dangerous for kids to be involved in."))
+		applymovement (RIVAL, Common_Movement_WalkInPlaceUp)
+		waitmovement (0)
+		msgbox( format( "But you're here, aren't you {PLAYER}?\p"
+						"Can you really handle this on your own?\p"
+						"That's why I'm here.\n"
+						"I need to know.\p"
+						"Show me how strong your Pokémon really are!"))
+		switch (var(VAR_STARTER_MON)) {
+			case 0:
+				trainerbattle_no_intro (TRAINER_MAY_SKY_PILLAR_TREECKO, SkyPillar_Text_MayDefeat)
+			case 1:
+				trainerbattle_no_intro (TRAINER_MAY_SKY_PILLAR_TORCHIC, SkyPillar_Text_MayDefeat)
+			case 2:
+				trainerbattle_no_intro (TRAINER_MAY_SKY_PILLAR_MUDKIP, SkyPillar_Text_MayDefeat)
+		}
+		speakername (CommonText_May)
+		msgbox( format( "I think I already knew it, but I couldn't bring myself to believe it all.\p"
+						"{PLAYER}, you're the only one I know who can stop those monsters.\p"
+						"Just please, please be safe.\p"
+						"I'll go do what I can in the meantime."))
+	}
+	else {
+		speakername (CommonText_Brendan)
+		msgbox( format( "Hey, {PLAYER}!\p"
+						"It's bad out there, right?\p"
+						"I wish I could be the one up there helping put an end to this…\p"
+						"But that's what you're about to go do, I'm sure.\p"
+						"Battle me now, {PLAYER}!\p"
+						"Show me why you're the one who has to do this!"))
+		switch (var(VAR_STARTER_MON)) {
+			case 0:
+				trainerbattle_no_intro (TRAINER_BRENDAN_SKY_PILLAR_TREECKO, SkyPillar_Text_BrendanDefeat)
+			case 1:
+				trainerbattle_no_intro (TRAINER_BRENDAN_SKY_PILLAR_TORCHIC, SkyPillar_Text_BrendanDefeat)
+			case 2:
+				trainerbattle_no_intro (TRAINER_BRENDAN_SKY_PILLAR_MUDKIP, SkyPillar_Text_BrendanDefeat)
+		}
+		speakername (CommonText_Brendan)
+		msgbox( format( "Every time we battle, {PLAYER}, you show me just how strong you really are.\p"
+						"Alright, I believe in you.\n"
+						"If there's anyone who can put an end to this mess, it's you.\p"
+						"I guess I need to work even harder in order to stand next to you."))
+	}
+	closemessage
+	applymovement (RIVAL, Common_Movement_WalkDown3)
+	waitmovement (0)
+	removeobject (RIVAL)
+	playse (SE_EXIT)
+	fadedefaultbgm
+	setflag (FLAG_DEFEATED_RIVAL_SKY_PILLAR)
+	delay (30)
+	release
+}
+
+text SkyPillar_Text_MayDefeat {
+	"So that's how it is…"
+}
+
+text SkyPillar_Text_BrendanDefeat {
+	"I guess I knew it all along…"
+}

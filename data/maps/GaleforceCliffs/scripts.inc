@@ -7,37 +7,40 @@ GaleforceCliffs_MapScripts::
 
 GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 8 "data/maps/GaleforceCliffs/scripts.pory"
-	goto_if_set FLAG_CAUGHT_TORNADUS, GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	goto_if_set FLAG_CAUGHT_TORNADUS, GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 12 "data/maps/GaleforceCliffs/scripts.pory"
-	goto_if_set FLAG_CAUGHT_THUNDURUS, GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+	goto_if_set FLAG_CAUGHT_THUNDURUS, GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
+GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 16 "data/maps/GaleforceCliffs/scripts.pory"
-	goto_if_set FLAG_CAUGHT_ENAMORUS, GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_3
+	goto_if_set FLAG_CAUGHT_ENAMORUS, GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_8
+GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
 # 20 "data/maps/GaleforceCliffs/scripts.pory"
-	goto_if_set FLAG_CAUGHT_LANDORUS, GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
+	goto_if_set FLAG_CAUGHT_LANDORUS, GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_10
 	return
 
-GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 # 9 "data/maps/GaleforceCliffs/scripts.pory"
 	setflag FLAG_TEMP_2
 # 10 "data/maps/GaleforceCliffs/scripts.pory"
 	removeobject 1
-	return
+	goto GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
-GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
+GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
 # 13 "data/maps/GaleforceCliffs/scripts.pory"
 	setflag FLAG_TEMP_3
 # 14 "data/maps/GaleforceCliffs/scripts.pory"
 	removeobject 2
-	return
+	goto GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
 
-GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
+GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_8:
 # 17 "data/maps/GaleforceCliffs/scripts.pory"
 	setflag FLAG_TEMP_4
 # 18 "data/maps/GaleforceCliffs/scripts.pory"
 	removeobject 3
-	return
+	goto GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 
-GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
+GaleforceCliffs_MapScripts_MAP_SCRIPT_ON_TRANSITION_10:
 # 21 "data/maps/GaleforceCliffs/scripts.pory"
 	setflag FLAG_TEMP_5
 # 22 "data/maps/GaleforceCliffs/scripts.pory"
@@ -213,16 +216,16 @@ BattleLandorus_2:
 
 BattleTornadus_Text_0:
 # 37 "data/maps/GaleforceCliffs/scripts.pory"
-	.string "Kawbraa!$"
+	.string "Whhhwhhhwhhh!!$"
 
 BattleThundurus_Text_0:
 # 57 "data/maps/GaleforceCliffs/scripts.pory"
-	.string "Gurooooohhh!$"
+	.string "GKrrrkrrrkrrak!$"
 
 BattleEnamorus_Text_0:
 # 77 "data/maps/GaleforceCliffs/scripts.pory"
-	.string "Aeepraaa!$"
+	.string "Amoooooor!$"
 
 BattleLandorus_Text_0:
 # 97 "data/maps/GaleforceCliffs/scripts.pory"
-	.string "Rarurarii!$"
+	.string "Karamukukuk!$"

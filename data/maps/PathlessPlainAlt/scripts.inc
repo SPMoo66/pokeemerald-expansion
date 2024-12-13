@@ -7,28 +7,30 @@ PathlessPlainAlt_MapScripts::
 
 PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 7 "data/maps/PathlessPlainAlt/scripts.pory"
-	goto_if_set FLAG_CAUGHT_IRON_CROWN, PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	goto_if_set FLAG_CAUGHT_IRON_CROWN, PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 11 "data/maps/PathlessPlainAlt/scripts.pory"
-	goto_if_set FLAG_CAUGHT_IRON_BOULDER, PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+	goto_if_set FLAG_CAUGHT_IRON_BOULDER, PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
+PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 15 "data/maps/PathlessPlainAlt/scripts.pory"
-	goto_if_set FLAG_CAUGHT_IRON_LEAVES, PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_3
+	goto_if_set FLAG_CAUGHT_IRON_LEAVES, PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 	return
 
-PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 # 8 "data/maps/PathlessPlainAlt/scripts.pory"
 	setflag FLAG_TEMP_2
 # 9 "data/maps/PathlessPlainAlt/scripts.pory"
 	removeobject 1
-	return
+	goto PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
-PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
+PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
 # 12 "data/maps/PathlessPlainAlt/scripts.pory"
 	setflag FLAG_TEMP_3
 # 13 "data/maps/PathlessPlainAlt/scripts.pory"
 	removeobject 2
-	return
+	goto PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
 
-PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
+PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
 # 16 "data/maps/PathlessPlainAlt/scripts.pory"
 	setflag FLAG_TEMP_4
 # 17 "data/maps/PathlessPlainAlt/scripts.pory"
@@ -171,11 +173,11 @@ BattleIronLeaves_2:
 
 BattleIronCrown_Text_0:
 # 36 "data/maps/PathlessPlainAlt/scripts.pory"
-	.string "Kawbraa!$"
+	.string "Kaw-brah-on!$"
 
 BattleIronBoulder_Text_0:
 # 56 "data/maps/PathlessPlainAlt/scripts.pory"
-	.string "Gurooooohhh!$"
+	.string "Gurr-oonnn!$"
 
 BattleIronLeaves_Text_0:
 # 76 "data/maps/PathlessPlainAlt/scripts.pory"

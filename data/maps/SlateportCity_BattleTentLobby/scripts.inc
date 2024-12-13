@@ -138,40 +138,17 @@ SlateportCity_BattleTentLobby_EventScript_EnterChallenge::
 	end
 
 SlateportCity_BattleTentLobby_EventScript_WalkToDoor::
-	applymovement LOCALID_ATTENDANT, SlateportCity_BattleTentLobby_Movement_AttendantWalkToDoor
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_BattleTentLobby_Movement_PlayerWalkToDoor
+	applymovement LOCALID_ATTENDANT, Common_Movement_WalkUp3
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp3
 	waitmovement 0
 	opendoor 6, 1
 	waitdooranim
-	applymovement LOCALID_ATTENDANT, SlateportCity_BattleTentLobby_Movement_AttendantEnterDoor
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_BattleTentLobby_Movement_PlayerEnterDoor
+	applymovement LOCALID_ATTENDANT, Common_Movement_EnterHouse
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2Invis
 	waitmovement 0
 	closedoor 6, 1
 	waitdooranim
 	return
-
-SlateportCity_BattleTentLobby_Movement_AttendantWalkToDoor:
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-SlateportCity_BattleTentLobby_Movement_AttendantEnterDoor:
-	walk_up
-	set_invisible
-	step_end
-
-SlateportCity_BattleTentLobby_Movement_PlayerWalkToDoor:
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-SlateportCity_BattleTentLobby_Movement_PlayerEnterDoor:
-	walk_up
-	walk_up
-	set_invisible
-	step_end
 
 SlateportCity_BattleTentLobby_EventScript_ExplainChallenge::
 	msgbox SlateportCity_BattleTentLobby_Text_ExplainSlateportTent, MSGBOX_DEFAULT

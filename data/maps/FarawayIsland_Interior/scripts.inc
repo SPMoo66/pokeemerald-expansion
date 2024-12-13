@@ -72,10 +72,6 @@ FarawayIsland_Interior_Movement_MewMoveAndHide:
 	set_invisible
 	step_end
 
-FarawayIsland_Interior_Movement_MewAppear:
-	set_visible
-	step_end
-
 FarawayIsland_Interior_Movement_MewFloatUpNorth:
 	lock_facing_direction
 	walk_fast_up
@@ -115,7 +111,7 @@ FarawayIsland_Interior_Movement_MewFloatUpEast:
 FarawayIsland_Interior_EventScript_Mew::
 	lock
 	faceplayer
-	applymovement LOCALID_FARAWAY_ISLAND_MEW, FarawayIsland_Interior_Movement_MewAppear
+	applymovement LOCALID_FARAWAY_ISLAND_MEW, Common_Movement_SetVisible
 	waitmovement 0
 	setvar VAR_0x8004, 0
 	special SetMewAboveGrass

@@ -567,8 +567,8 @@ gStdScripts_End::
 	.include "data/maps/Route110_TrickHousePuzzle6/scripts.inc"
 	.include "data/maps/Route110_TrickHousePuzzle7/scripts.inc"
 	.include "data/maps/Route110_TrickHousePuzzle8/scripts.inc"
-	.include "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc"
 	.include "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc"
+	.include "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc"
 	.include "data/maps/Route113_GlassWorkshop/scripts.inc"
 	.include "data/maps/Route123_BerryMastersHouse/scripts.inc"
 	.include "data/maps/Route119_WeatherInstitute_1F/scripts.inc"
@@ -1053,6 +1053,8 @@ EventScript_VsSeekerChargingDone::
 	.include "data/gym_guide.inc"
 	.include "data/emib_opening.inc"
 	.include "data/challenge_balls.inc"
+	.include "data/looker.inc"
+	.include "data/tera.inc"
 
 	.include "data/maps/ScorchedSlabB1F/scripts.inc"
 	.include "data/maps/SeasideGrotto/scripts.inc"
@@ -1065,19 +1067,13 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/CrescentIsle/scripts.inc"
 	.include "data/maps/FlurryPeak/scripts.inc"
 	.include "data/maps/DrakesSanctum/scripts.inc"
-
 	.include "data/maps/VictoryRoad_2F/scripts.inc"
-
 	.include "data/maps/SeaSpiritsDen/scripts.inc"
-
 	.include "data/maps/SeaSpiritsDenAlt/scripts.inc"
-
 	.include "data/maps/TracklessForestAlt/scripts.inc"
-
 	.include "data/maps/PathlessPlain/scripts.inc"
-
 	.include "data/maps/PathlessPlainAlt/scripts.inc"
-
 	.include "data/maps/GaleforceCliffs/scripts.inc"
-
 	.include "data/maps/RustboroCity_DevonCorp_B1F/scripts.inc"
+
+	.include "data/maps/SeasideHollow/scripts.inc"

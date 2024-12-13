@@ -7,37 +7,40 @@ PathlessPlain_MapScripts::
 
 PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 8 "data/maps/PathlessPlain/scripts.pory"
-	goto_if_set FLAG_CAUGHT_COBALION, PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	goto_if_set FLAG_CAUGHT_COBALION, PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 12 "data/maps/PathlessPlain/scripts.pory"
-	goto_if_set FLAG_CAUGHT_TERRAKION, PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+	goto_if_set FLAG_CAUGHT_TERRAKION, PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
+PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 16 "data/maps/PathlessPlain/scripts.pory"
-	goto_if_set FLAG_CAUGHT_VIRIZION, PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_3
+	goto_if_set FLAG_CAUGHT_VIRIZION, PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_8
+PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
 # 20 "data/maps/PathlessPlain/scripts.pory"
-	goto_if_set FLAG_CAUGHT_KELDEO, PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
+	goto_if_set FLAG_CAUGHT_KELDEO, PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_10
 	return
 
-PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 # 9 "data/maps/PathlessPlain/scripts.pory"
 	setflag FLAG_TEMP_2
 # 10 "data/maps/PathlessPlain/scripts.pory"
 	removeobject 1
-	return
+	goto PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
-PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
+PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
 # 13 "data/maps/PathlessPlain/scripts.pory"
 	setflag FLAG_TEMP_3
 # 14 "data/maps/PathlessPlain/scripts.pory"
 	removeobject 2
-	return
+	goto PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
 
-PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
+PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_8:
 # 17 "data/maps/PathlessPlain/scripts.pory"
 	setflag FLAG_TEMP_4
 # 18 "data/maps/PathlessPlain/scripts.pory"
 	removeobject 3
-	return
+	goto PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 
-PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
+PathlessPlain_MapScripts_MAP_SCRIPT_ON_TRANSITION_10:
 # 21 "data/maps/PathlessPlain/scripts.pory"
 	setflag FLAG_TEMP_5
 # 22 "data/maps/PathlessPlain/scripts.pory"

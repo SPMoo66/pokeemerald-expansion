@@ -26,6 +26,7 @@ SeafloorCavern_Entrance_EventScript_Grunt::
 	setvar VAR_HAS_TALKED_TO_SEAFLOOR_CAVERN_ENTRANCE_GRUNT, 1
 	copyobjectxytoperm LOCALID_GRUNT
 	msgbox SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep, MSGBOX_DEFAULT
+	msgbox SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_GRUNT, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
@@ -62,17 +63,7 @@ SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep:
 	.string "Hey!\n"
 	.string "I remember your face!\p"
 	.string "If you're here, it must mean that\n"
-	.string "you're about to mess with us again!\p"
-	.string "A punk like you, do you really think\n"
-	.string "you can take on Team Aqua?\p"
-	.string "I'd say you're too early by about\n"
-	.string "a trillion years!\p"
-	.string "You're a perfect fit for the likes of\n"
-	.string "Team Magma!\p"
-	.string "Speaking of Team Magma, I hear they\n"
-	.string "were spotted near Mossdeep.\p"
-	.string "That bunch of goons, they sure don't\n"
-	.string "look good near the sea!$"
+	.string "you're about to mess with us again!$"
 
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort:
 	.string "A punk like you, do you really think\n"

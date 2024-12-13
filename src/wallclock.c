@@ -720,7 +720,7 @@ void CB2_StartWallClock(void)
 
     WallClockInit();
 
-    AddTextPrinterParameterized(WIN_BUTTON_LABEL, FONT_NORMAL, gText_Confirm3, 0, 1, 0, NULL);
+    AddTextPrinterParameterized(WIN_BUTTON_LABEL, FONT_NORMAL, gMenuText_Confirm, 0, 1, 0, NULL);
     PutWindowTilemap(WIN_BUTTON_LABEL);
     ScheduleBgCopyTilemapToVram(2);
 }
@@ -768,7 +768,7 @@ void CB2_ViewWallClock(void)
 
     WallClockInit();
 
-    AddTextPrinterParameterized(WIN_BUTTON_LABEL, FONT_NORMAL, gText_Cancel4, 0, 1, 0, NULL);
+    AddTextPrinterParameterized(WIN_BUTTON_LABEL, FONT_NORMAL, gText_Cancel, 0, 1, 0, NULL);
     PutWindowTilemap(WIN_BUTTON_LABEL);
     ScheduleBgCopyTilemapToVram(2);
 }
@@ -888,7 +888,7 @@ static void Task_ViewClock_HandleInput(u8 taskId)
     if (JOY_NEW(R_BUTTON)){
         PlaySE(SE_SELECT);
         LZ77UnCompVram(gWallClockStart_Tilemap, (u16 *)BG_SCREEN_ADDR(7));
-        AddTextPrinterParameterized(1, FONT_NORMAL, gText_Confirm3, 0, 1, 0, NULL);
+        AddTextPrinterParameterized(1, FONT_NORMAL, gMenuText_Confirm, 0, 1, 0, NULL);
         PutWindowTilemap(1);
         ScheduleBgCopyTilemapToVram(2);
         gTasks[taskId].func = Task_SetClock_HandleInput;

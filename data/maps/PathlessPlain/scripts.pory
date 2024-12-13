@@ -9,15 +9,15 @@ mapscripts PathlessPlain_MapScripts {
 			setflag (FLAG_TEMP_2)
 			removeobject(COBALION)
 		}
-		elif(flag(FLAG_CAUGHT_TERRAKION)) {
+		if(flag(FLAG_CAUGHT_TERRAKION)) {
 			setflag (FLAG_TEMP_3)
 			removeobject(TERRAKION)
 		}
-		elif(flag(FLAG_CAUGHT_VIRIZION)) {
+		if(flag(FLAG_CAUGHT_VIRIZION)) {
 			setflag (FLAG_TEMP_4)
 			removeobject(VIRIZION)
 		}
-		elif(flag(FLAG_CAUGHT_KELDEO)) {
+		if(flag(FLAG_CAUGHT_KELDEO)) {
 			setflag (FLAG_TEMP_5)
 			removeobject(KELDEO)
 		}

@@ -29,17 +29,12 @@ EverGrandeCity_ChampionsRoom_EventScript_EnterRoom::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp4
 	waitmovement 0
 	delay 40
-	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerApproachWallace
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
 	waitmovement 0
 	setvar VAR_TEMP_1, 1
 	goto EverGrandeCity_ChampionsRoom_EventScript_Wallace
 	releaseall
 	end
-
-EverGrandeCity_ChampionsRoom_Movement_PlayerApproachWallace:
-	walk_up
-	walk_up
-	step_end
 
 EverGrandeCity_ChampionsRoom_EventScript_Wallace::
 	playbgm MUS_ENCOUNTER_CHAMPION, FALSE
@@ -128,7 +123,7 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF::
 	closemessage
 	delay 30
 	applymovement LOCALID_WALLACE, EverGrandeCity_ChampionsRoom_Movement_WallaceExitStart
-	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerExitStart
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
 	applymovement LOCALID_BIRCH, Common_Movement_WalkInPlaceFasterUp
 	applymovement LOCALID_RIVAL, EverGrandeCity_ChampionsRoom_Movement_RivalFollows
 	waitmovement 0
@@ -171,11 +166,6 @@ EverGrandeCity_ChampionsRoom_EventScript_RivalLookBackAndForth::
 	applymovement LOCALID_RIVAL, EverGrandeCity_ChampionsRoom_Movement_RivalLookBackAndForth
 	waitmovement 0
 	return
-
-EverGrandeCity_ChampionsRoom_Movement_PlayerExitStart:
-	walk_up
-	walk_up
-	step_end
 
 EverGrandeCity_ChampionsRoom_Movement_PlayerExit:
 	walk_up

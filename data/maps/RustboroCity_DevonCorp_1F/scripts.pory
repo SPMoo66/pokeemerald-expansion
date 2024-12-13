@@ -101,12 +101,15 @@ mapscripts RustboroCity_DevonCorp_1F_MapScripts {
 			else {
 				setobjectxyperm (GREETER, 20, 6)
 			}
+			savebgm (MUS_HG_ROCKET_TAKEOVER)
+		}
+		elif (var(VAR_LOOKER_ROCKET) == 4 || var(VAR_LOOKER_ROCKET) == 5) {
+			savebgm (MUS_HG_ROCKET_TAKEOVER)
 		}
 		clearflag (FLAG_DONT_TRANSITION_MUSIC)
 	}
 	MAP_SCRIPT_ON_LOAD {
 		if (var(VAR_LOOKER_ROCKET) >= 3 && var(VAR_LOOKER_ROCKET) <= 5) {
-			playbgm (MUS_HG_ROCKET_TAKEOVER, FALSE)
 			setmetatile (3, 3, 0x381, FALSE)
 			setmetatile (3, 4, 0x381, FALSE)
 			setmetatile (4, 3, 0x380, FALSE)
@@ -125,12 +128,6 @@ mapscripts RustboroCity_DevonCorp_1F_MapScripts {
 		}
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [
-		VAR_TEMP_2, 0 {
-			if (var(VAR_LOOKER_ROCKET) >= 3 && var(VAR_LOOKER_ROCKET) <= 5) {
-				playbgm (MUS_HG_ROCKET_TAKEOVER, FALSE)
-			}
-			setvar (VAR_TEMP_2, 1)
-		}
 		VAR_LOOKER_ROCKET, 3: Devoncorp_RocketEntrance
 	]
 }

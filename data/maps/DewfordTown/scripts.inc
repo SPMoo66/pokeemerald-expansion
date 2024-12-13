@@ -93,6 +93,7 @@ DewfordTown_EventScript_GoodRodFisherman::
 	faceplayer
 	goto_if_set FLAG_CHALLENGE_BALL_GRANITE_CAVE_1, DewfordTown_EventScript_HowsFishing
 	msgbox DewfordTown_Text_GettingItchToFish, MSGBOX_DEFAULT
+	release
 	end
 
 DewfordTown_EventScript_HowsFishing::

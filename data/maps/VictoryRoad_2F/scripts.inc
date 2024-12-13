@@ -78,7 +78,7 @@ BattleMeloetta_5:
 
 BattleMeloetta_Text_0:
 # 24 "data/maps/VictoryRoad_2F/scripts.pory"
-	.string "Laaa-liii!!$"
+	.string "Melote!$"
 
 BattleMeloetta_Text_1:
 # 37 "data/maps/VictoryRoad_2F/scripts.pory"

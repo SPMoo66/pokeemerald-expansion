@@ -29,9 +29,13 @@ LittlerootTown_ProfessorBirchsLab_MapScripts::
 
 LittlerootTown_ProfessorBirchsLab_OnTransition:
 	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	setflag FLAG_TEMP_3
 	call Common_EventScript_SetupRivalGfxId
 	call ProfBirch_EventScript_UpdateLocation
-	goto_if_eq VAR_EMERALBODY_RIVAL_STATE, 1, LittlerootTown_ProfessorBirchsLab_EventScript_ShowSakura
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 1, LittlerootTown_ProfessorBirchsLab_EventScript_ShowSakura
+	call_if_set FLAG_TERA_ENABLED, LittlerootTown_ProfessorBirchsLab_EventScript_ShowRowanAide
+	call_if_ge VAR_SKY_PILLAR_STATE, 2, LittlerootTown_ProfessorBirchsLab_EventScript_ShowBianca
 	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6, LittlerootTown_ProfessorBirchsLab_EventScript_SetAfterJohtoStarterLayout
 	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 4, LittlerootTown_ProfessorBirchsLab_EventScript_SetJohtoStarterLayout
 	goto_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 3, LittlerootTown_ProfessorBirchsLab_EventScript_CheckReadyForJohtoStarter
@@ -39,6 +43,10 @@ LittlerootTown_ProfessorBirchsLab_OnTransition:
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ShowSakura::
 	clearflag FLAG_TEMP_1
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ShowRowanAide::
+	clearflag FLAG_TEMP_2
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_CheckReadyForJohtoStarter::
@@ -113,6 +121,7 @@ LittlerootTown_ProfessorBirchsLab_OnFrame:
 	map_script_2 VAR_BIRCH_LAB_STATE, 2, LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterEvent
 	map_script_2 VAR_BIRCH_LAB_STATE, 4, LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedexEvent
 	map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_ProfessorBirchsLab_EventScript_UpgradeToNationalDex
+	map_script_2 VAR_TEMP_2, 1, LittlerootTown_ProfessorBirchsLab_EventScript_Bianca
 	map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 4, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseJohtoStarter
 	.2byte 0
 
@@ -962,6 +971,50 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 `
+
+const BIANCA = 9
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_ShowBianca {
+	if (!flag(FLAG_VICTINI_READY)) {
+		clearflag (FLAG_TEMP_3)
+		setvar (VAR_TEMP_2, 1)
+	}
+}
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_Bianca {
+	lockall
+	delay (20)
+	applymovement (BIANCA, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	speakername (CommonText_Bianca)
+	msgbox ("Oh, hi {PLAYER}!")
+	closemessage
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+	waitmovement (0)
+	speakername (CommonText_Bianca)
+	msgbox (format ("It's been a while since I last saw you, but I've heard you've been doing great things!\p"
+					"I was just here visiting your local Professor.\p"
+					"We were just talking about Pokémon like the ones you just fought off!\p"
+					"The ones that are really, really strong!\p"
+					"In my home region of Unova, there's one that's said to appear near lighthouses.\p"
+					"Do you know of any lighthouses in\nHoenn?\lMaybe you could find one like that there, hehe!\p"
+					"Anyway, I've got to get going.\nI hope we can see each other again while I'm visiting!\p"
+					"Bye-bye!"))
+	closemessage
+	setflag (FLAG_VICTINI_READY)
+	applymovement (BIANCA, Common_Movement_WalkRight)
+	waitmovement (0)
+	applymovement (BIANCA, Common_Movement_WalkDown3)
+	waitmovement (0)
+	delay (10)
+	playse (SE_EXIT)
+	removeobject (BIANCA)
+	setflag (FLAG_TEMP_3)
+	setvar (VAR_TEMP_2, 0)
+	delay (30)
+	releaseall
+}
+
 
 script Sakura_Town01 {
 	faceplayer

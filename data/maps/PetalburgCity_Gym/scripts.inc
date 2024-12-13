@@ -647,7 +647,7 @@ PetalburgCity_Gym_EventScript_WallyFaceDown::
 # 324 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_NormanNoBadges::
 # 325 "data/maps/PetalburgCity_Gym/scripts.pory"
-	speakername (CommonText_Wally)
+	speakername (CommonText_Dad)
 # 326 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_Text_NormanGoToRustboro, MSGBOX_DEFAULT
 # 327 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -659,7 +659,7 @@ PetalburgCity_Gym_EventScript_NormanNoBadges::
 # 330 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_NormanOneBadge::
 # 331 "data/maps/PetalburgCity_Gym/scripts.pory"
-	speakername (CommonText_Wally)
+	speakername (CommonText_Dad)
 # 332 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_Text_NormanGoToDewford, MSGBOX_DEFAULT
 # 333 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -671,7 +671,7 @@ PetalburgCity_Gym_EventScript_NormanOneBadge::
 # 336 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_NormanTwoBadges::
 # 337 "data/maps/PetalburgCity_Gym/scripts.pory"
-	speakername (CommonText_Wally)
+	speakername (CommonText_Dad)
 # 338 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_Text_YouHaveGottenStronger, MSGBOX_DEFAULT
 # 339 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -683,7 +683,7 @@ PetalburgCity_Gym_EventScript_NormanTwoBadges::
 # 342 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_NormanThreeBadges::
 # 343 "data/maps/PetalburgCity_Gym/scripts.pory"
-	speakername (CommonText_Wally)
+	speakername (CommonText_Dad)
 # 344 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_Text_YouHaveGottenStronger, MSGBOX_DEFAULT
 # 345 "data/maps/PetalburgCity_Gym/scripts.pory"

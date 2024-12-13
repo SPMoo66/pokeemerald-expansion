@@ -245,7 +245,7 @@ Route111_EventScript_BattleWinstrates::
 	waitmovement 0
 	removeobject LOCALID_VICTOR
 	call Route111_EventScript_CloseWinstrateDoor
-	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_WaitForNextWinstrate
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_Delay48
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
 	addobject LOCALID_VICTORIA
@@ -263,7 +263,7 @@ Route111_EventScript_BattleWinstrates::
 	waitmovement 0
 	removeobject LOCALID_VICTORIA
 	call Route111_EventScript_CloseWinstrateDoor
-	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_WaitForNextWinstrate
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_Delay48
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
 	addobject LOCALID_VIVI
@@ -281,7 +281,7 @@ Route111_EventScript_BattleWinstrates::
 	waitmovement 0
 	removeobject LOCALID_VIVI
 	call Route111_EventScript_CloseWinstrateDoor
-	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_WaitForNextWinstrate
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_Delay48
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
 	addobject LOCALID_VICKY
@@ -315,12 +315,6 @@ Route111_EventScript_CloseWinstrateDoor::
 Route111_Movement_WinstrateEnterHouse:
 	walk_in_place_faster_up
 	walk_up
-	step_end
-
-Route111_Movement_WaitForNextWinstrate:
-	delay_16
-	delay_16
-	delay_16
 	step_end
 
 Route111_EventScript_RouteSignMauville::

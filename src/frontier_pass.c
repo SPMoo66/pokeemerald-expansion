@@ -555,13 +555,13 @@ struct
     u8 animNum;
 } static const sMapLandmarks[NUM_FRONTIER_FACILITIES] =
 {
-    [FRONTIER_FACILITY_TOWER]   = {gText_BattleTower3,   gText_BattleTowerDesc,    89,  40, MAP_INDICATOR_SQUARE},
-    [FRONTIER_FACILITY_DOME]    = {gText_BattleDome2,    gText_BattleDomeDesc,     33,  42, MAP_INDICATOR_SQUARE},
-    [FRONTIER_FACILITY_PALACE]  = {gText_BattlePalace2,  gText_BattlePalaceDesc,  120,  86, MAP_INDICATOR_RECTANGLE},
-    [FRONTIER_FACILITY_ARENA]   = {gText_BattleArena2,   gText_BattleArenaDesc,   114,  59, MAP_INDICATOR_RECTANGLE},
-    [FRONTIER_FACILITY_FACTORY] = {gText_BattleFactory2, gText_BattleFactoryDesc,  25,  67, MAP_INDICATOR_RECTANGLE},
-    [FRONTIER_FACILITY_PIKE]    = {gText_BattlePike2,    gText_BattlePikeDesc,     57,  57, MAP_INDICATOR_SQUARE},
-    [FRONTIER_FACILITY_PYRAMID] = {gText_BattlePyramid2, gText_BattlePyramidDesc, 134,  41, MAP_INDICATOR_SQUARE},
+    [FRONTIER_FACILITY_TOWER]   = {gText_BattleTower,   gText_BattleTowerDesc,    89,  40, MAP_INDICATOR_SQUARE},
+    [FRONTIER_FACILITY_DOME]    = {gText_BattleDome,    gText_BattleDomeDesc,     33,  42, MAP_INDICATOR_SQUARE},
+    [FRONTIER_FACILITY_PALACE]  = {gText_BattlePalace,  gText_BattlePalaceDesc,  120,  86, MAP_INDICATOR_RECTANGLE},
+    [FRONTIER_FACILITY_ARENA]   = {gText_BattleArena,   gText_BattleArenaDesc,   114,  59, MAP_INDICATOR_RECTANGLE},
+    [FRONTIER_FACILITY_FACTORY] = {gText_BattleFactory, gText_BattleFactoryDesc,  25,  67, MAP_INDICATOR_RECTANGLE},
+    [FRONTIER_FACILITY_PIKE]    = {gText_BattlePike,    gText_BattlePikeDesc,     57,  57, MAP_INDICATOR_SQUARE},
+    [FRONTIER_FACILITY_PYRAMID] = {gText_BattlePyramid, gText_BattlePyramidDesc, 134,  41, MAP_INDICATOR_SQUARE},
 };
 
 static void ResetGpuRegsAndBgs(void)
@@ -1241,7 +1241,7 @@ static void ShowHideZoomingArea(bool8 show, bool8 zoomedIn)
 
 static void UpdateAreaHighlight(u8 cursorArea, u8 previousCursorArea)
 {
-    #define NON_HIGHLIGHT_AREA(area)((area) == CURSOR_AREA_NOTHING || (area) > CURSOR_AREA_CANCEL)
+    #define NON_HIGHLIGHT_AREA(area) ((area) == CURSOR_AREA_NOTHING || (area) > CURSOR_AREA_CANCEL)
 
     // If moving off highlightable area, unhighlight it
     switch (previousCursorArea)

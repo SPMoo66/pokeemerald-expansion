@@ -8,8 +8,8 @@ static const struct MenuAction MultichoiceList_BrineyOnDewford[] =
 
 static const struct MenuAction MultichoiceList_EnterInfo[] =
 {
-    {gText_Enter2},
-    {gText_Info2},
+    {gText_Enter},
+    {gText_Info},
     {gText_Exit},
 };
 
@@ -33,7 +33,7 @@ static const struct MenuAction MultichoiceList_ContestType[] =
 
 static const struct MenuAction MultichoiceList_BasePCWithRegistry[] =
 {
-    {gText_Decoration2},
+    {gText_Decoration},
     {gText_PackUp},
     {gText_Registry},
     {gText_Exit},
@@ -41,7 +41,7 @@ static const struct MenuAction MultichoiceList_BasePCWithRegistry[] =
 
 static const struct MenuAction MultichoiceList_BasePCNoRegistry[] =
 {
-    {gText_Decoration2},
+    {gText_Decoration},
     {gText_PackUp},
     {gText_Exit},
 };
@@ -86,13 +86,13 @@ static const struct MenuAction MultichoiceList_YesNoInfo2[] =
 {
     {gText_Yes},
     {gText_No},
-    {gText_Info2},
+    {gText_Info},
 };
 
 static const struct MenuAction MultichoiceList_ChallengeInfo[] =
 {
     {gText_Challenge},
-    {gText_Info3},
+    {gText_Info},
     {gText_Exit},
 };
 
@@ -247,11 +247,11 @@ static const struct MenuAction MultichoiceList_SternDeepSea[] =
 
 static const struct MenuAction MultichoiceList_UnusedAshVendor[] =
 {
-    {gText_BlueFlute2},
-    {gText_YellowFlute2},
-    {gText_RedFlute2},
-    {gText_WhiteFlute2},
-    {gText_BlackFlute2},
+    {gText_BlueFlute},
+    {gText_YellowFlute},
+    {gText_RedFlute},
+    {gText_WhiteFlute},
+    {gText_BlackFlute},
     {gText_GlassChair},
     {gText_GlassDesk},
     {gText_Cancel2},
@@ -284,7 +284,7 @@ static const struct MenuAction MultichoiceList_GameCornerCoins[] =
 
 static const struct MenuAction MultichoiceList_HowsFishing[] =
 {
-    {gText_Excellent2},
+    {gText_Excellent},
     {gText_NotSoGood},
 };
 
@@ -436,7 +436,7 @@ static const struct MenuAction MultichoiceList_TourneyWithRecord[] =
     {gText_Opponent},
     {gText_Tourney_Tree},
     {gText_ReadyToStart},
-    {gText_Record2},
+    {gText_Record},
     {gText_Rest},
     {gText_Retire},
 };
@@ -468,7 +468,7 @@ static const struct MenuAction MultichoiceList_YesNoInfo[] =
 {
     {gText_Yes},
     {gText_No},
-    {gText_Info2},
+    {gText_Info},
 };
 
 static const struct MenuAction MultichoiceList_BattleMode[] =
@@ -476,7 +476,7 @@ static const struct MenuAction MultichoiceList_BattleMode[] =
     {gText_SingleBattle},
     {gText_DoubleBattle},
     {gText_MultiBattle},
-    {gText_Info2},
+    {gText_Info},
     {gText_Exit},
 };
 
@@ -484,7 +484,7 @@ static const struct MenuAction MultichoiceList_LinkServicesNoRecord[] =
 {
     {gText_TradeCenter},
     {gText_Colosseum},
-    {gText_BerryCrush3},
+    {gText_BerryCrush},
     {gText_Exit},
 };
 
@@ -493,7 +493,7 @@ static const struct MenuAction MultichoiceList_LinkServicesAll[] =
     {gText_TradeCenter},
     {gText_Colosseum},
     {gText_RecordCorner},
-    {gText_BerryCrush3},
+    {gText_BerryCrush},
     {gText_Exit},
 };
 
@@ -552,7 +552,7 @@ static const struct MenuAction MultichoiceList_LinkContestMode[] =
 static const struct MenuAction MultichoiceList_ForcedStartMenu[] =
 {
     {gText_MenuOptionPokedex},
-    {gText_MenuOptionPokemon},
+    {gText_Pokemon},
     {gText_MenuOptionBag},
     {gText_MenuOptionPokenav},
     {gText_Blank}, // blank because it's filled by the player's name
@@ -614,8 +614,8 @@ static const struct MenuAction MultichoiceList_YesNo[] =
 static const struct MenuAction MultichoiceList_FrontierRules[] =
 {
     {gText_TwoStyles},
-    {gText_Lv50_3},
-    {gText_OpenLevel2},
+    {gText_Lv50},
+    {gText_OpenLevel},
     {gText_MonTypeAndNo},
     {gText_HoldItems},
     {gText_Exit},
@@ -623,8 +623,8 @@ static const struct MenuAction MultichoiceList_FrontierRules[] =
 
 static const struct MenuAction MultichoiceList_FrontierPassInfo[] =
 {
-    {gText_Symbols2},
-    {gText_Record3},
+    {gText_Symbols},
+    {gText_Record},
     {gText_BattlePts},
     {gText_Exit},
 };
@@ -643,7 +643,7 @@ static const struct MenuAction MultichoiceList_BattleTowerRules[] =
     {gText_TowerInfo},
     {gText_BattleMon},
     {gText_BattleSalon},
-    {gText_MultiLink2},
+    {gText_MultiLink},
     {gText_Exit},
 };
 
@@ -661,7 +661,7 @@ static const struct MenuAction MultichoiceList_BattleFactoryRules[] =
     {gText_SwapPartners},
     {gText_SwapNumber},
     {gText_SwapNotes},
-    {gText_OpenLevel3},
+    {gText_OpenLevel},
     {gText_Exit},
 };
 
@@ -680,7 +680,7 @@ static const struct MenuAction MultichoiceList_BattlePyramidRules[] =
     {gText_PyramidPokemon},
     {gText_PyramidTrainers},
     {gText_PyramidMaze},
-    {gText_BattleBag2},
+    {gText_BattleBag},
     {gText_Exit},
 };
 
@@ -695,7 +695,7 @@ static const struct MenuAction MultichoiceList_BattlePikeRules[] =
 static const struct MenuAction MultichoiceList_GoOnRecordRestRetire[] =
 {
     {gText_GoOn},
-    {gText_Record2},
+    {gText_Record},
     {gText_Rest},
     {gText_Retire},
 };
@@ -710,7 +710,7 @@ static const struct MenuAction MultichoiceList_GoOnRestRetire[] =
 static const struct MenuAction MultichoiceList_GoOnRecordRetire[] =
 {
     {gText_GoOn},
-    {gText_Record2},
+    {gText_Record},
     {gText_Retire},
 };
 
@@ -926,14 +926,14 @@ const u8 *const gStdStrings[] =
     [STDSTRING_TOUGH2] = gText_Tough2,
     [STDSTRING_ITEMS] = gText_Items,
     [STDSTRING_KEYITEMS] = gText_Key_Items,
-    [STDSTRING_POKEBALLS] = gText_Poke_Balls,
+    [STDSTRING_POKEBALLS] = gText_PokeBalls,
     [STDSTRING_TMHMS] = gText_TMs_Hms,
-    [STDSTRING_BERRIES] = gText_Berries2,
-    [STDSTRING_SINGLE] = gText_Single2,
-    [STDSTRING_DOUBLE] = gText_Double2,
+    [STDSTRING_BERRIES] = gText_Berries,
+    [STDSTRING_SINGLE] = gText_Single,
+    [STDSTRING_DOUBLE] = gText_Double,
     [STDSTRING_MULTI] = gText_Multi,
     [STDSTRING_MULTI_LINK] = gText_MultiLink,
-    [STDSTRING_BATTLE_TOWER] = gText_BattleTower2,
+    [STDSTRING_BATTLE_TOWER] = gText_BattleTower,
     [STDSTRING_BATTLE_DOME] = gText_BattleDome,
     [STDSTRING_BATTLE_FACTORY] = gText_BattleFactory,
     [STDSTRING_BATTLE_PALACE] = gText_BattlePalace,

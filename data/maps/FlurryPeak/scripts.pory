@@ -1,4 +1,29 @@
-mapscripts FlurryPeak_MapScripts {}
+const GLASTRIER = 9
+const SPECTRIER = 10
+
+mapscripts FlurryPeak_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if(var(VAR_SKY_PILLAR_STATE) < 2) {
+			setflag (FLAG_TEMP_2)
+			setflag (FLAG_TEMP_3)
+		}
+		else {
+			if(flag(FLAG_CAUGHT_GLASTRIER)) {
+				setflag (FLAG_TEMP_2)
+				removeobject(GLASTRIER)
+			}
+			if(flag(FLAG_CAUGHT_SPECTRIER)) {
+				setflag (FLAG_TEMP_3)
+				removeobject(SPECTRIER)
+			}
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(VAR_LAST_TALKED)
+		}
+	}
+}
 
 script FlurryPeak_Boy {
 	lock
@@ -29,4 +54,49 @@ script FlurryPeak_EventScript_Gerardo {
 script FlurryPeak_EventScript_Aurelia {
 	trainerbattle_single (TRAINER_AURELIA, "I hope you weren't planning on\ngoing in the cave.", "Aw no.")
 	msgbox ("Even after you beat me, there's\nstill a rock in the way up there.", MSGBOX_AUTOCLOSE)
+}
+
+script FlurryPeak_Man {
+	lock
+	faceplayer
+	msgbox(format("They say that at some nights you can hear the chilling neighs of a horse long since departed from this world."))
+	release
+}
+
+script BattleGlastrier {
+	lock
+	faceplayer
+	setvar (VAR_LAST_TALKED, GLASTRIER)
+	playmoncry(SPECIES_GLASTRIER, CRY_MODE_ENCOUNTER)
+	msgbox("Brrrrrriiiiiice!")
+	waitmoncry
+	seteventmon(SPECIES_GLASTRIER, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_GLASTRIER)
+	}
+	release
+}
+
+script BattleSpectrier {
+	lock
+	faceplayer
+	setvar (VAR_LAST_TALKED, SPECTRIER)
+	playmoncry(SPECIES_SPECTRIER, CRY_MODE_ENCOUNTER)
+	msgbox("Sheeeighhhhd!")
+	waitmoncry
+	seteventmon(SPECIES_SPECTRIER, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_SPECTRIER)
+	}
+	release
 }

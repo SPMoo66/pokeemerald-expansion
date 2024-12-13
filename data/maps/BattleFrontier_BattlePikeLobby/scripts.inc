@@ -202,18 +202,10 @@ BattleFrontier_BattlePikeLobby_EventScript_ShowResults::
 	end
 
 BattleFrontier_BattlePikeLobby_EventScript_WalkToCorridor::
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePikeLobby_Movement_AttendantWalkToCorridor
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattlePikeLobby_Movement_PlayerWalkToCorridor
+	applymovement LOCALID_ATTENDANT, Common_Movement_WalkUp2Invis
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp3Invis
 	waitmovement 0
 	return
-
-BattleFrontier_BattlePikeLobby_Movement_PlayerWalkToCorridor:
-	walk_up
-BattleFrontier_BattlePikeLobby_Movement_AttendantWalkToCorridor:
-	walk_up
-	walk_up
-	set_invisible
-	step_end
 
 BattleFrontier_BattlePikeLobby_EventScript_Hiker::
 	msgbox BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal, MSGBOX_NPC

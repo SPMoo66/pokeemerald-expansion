@@ -2018,7 +2018,7 @@ void InitUnionRoomChatRegisteredTexts(void)
 {
 #if FREE_UNION_ROOM_CHAT == FALSE
     StringCopy(gSaveBlock1Ptr->registeredTexts[0], gText_Hello);
-    StringCopy(gSaveBlock1Ptr->registeredTexts[1], gText_Pokemon2);
+    StringCopy(gSaveBlock1Ptr->registeredTexts[1], gText_Pokemon);
     StringCopy(gSaveBlock1Ptr->registeredTexts[2], gText_Trade);
     StringCopy(gSaveBlock1Ptr->registeredTexts[3], gText_Battle);
     StringCopy(gSaveBlock1Ptr->registeredTexts[4], gText_Lets);

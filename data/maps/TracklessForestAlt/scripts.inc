@@ -7,28 +7,30 @@ TracklessForestAlt_MapScripts::
 
 TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 7 "data/maps/TracklessForestAlt/scripts.pory"
-	goto_if_set FLAG_CAUGHT_RAGING_BOLT, TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	goto_if_set FLAG_CAUGHT_RAGING_BOLT, TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 11 "data/maps/TracklessForestAlt/scripts.pory"
-	goto_if_set FLAG_CAUGHT_GOUGING_FIRE, TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+	goto_if_set FLAG_CAUGHT_GOUGING_FIRE, TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
+TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 15 "data/maps/TracklessForestAlt/scripts.pory"
-	goto_if_set FLAG_CAUGHT_WALKING_WAKE, TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_3
+	goto_if_set FLAG_CAUGHT_WALKING_WAKE, TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 	return
 
-TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 # 8 "data/maps/TracklessForestAlt/scripts.pory"
 	setflag FLAG_TEMP_2
 # 9 "data/maps/TracklessForestAlt/scripts.pory"
 	removeobject 1
-	return
+	goto TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
-TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
+TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
 # 12 "data/maps/TracklessForestAlt/scripts.pory"
 	setflag FLAG_TEMP_3
 # 13 "data/maps/TracklessForestAlt/scripts.pory"
 	removeobject 2
-	return
+	goto TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
 
-TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
+TracklessForestAlt_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
 # 16 "data/maps/TracklessForestAlt/scripts.pory"
 	setflag FLAG_TEMP_4
 # 17 "data/maps/TracklessForestAlt/scripts.pory"
@@ -101,7 +103,7 @@ BattleGougingFire::
 # 55 "data/maps/TracklessForestAlt/scripts.pory"
 	playmoncry SPECIES_GOUGING_FIRE, CRY_MODE_ENCOUNTER
 # 56 "data/maps/TracklessForestAlt/scripts.pory"
-	msgbox BattleRagingBolt_Text_0
+	msgbox BattleGougingFire_Text_0
 # 57 "data/maps/TracklessForestAlt/scripts.pory"
 	waitmoncry
 # 58 "data/maps/TracklessForestAlt/scripts.pory"
@@ -140,7 +142,7 @@ BattleWalkingWake::
 # 75 "data/maps/TracklessForestAlt/scripts.pory"
 	playmoncry SPECIES_WALKING_WAKE, CRY_MODE_ENCOUNTER
 # 76 "data/maps/TracklessForestAlt/scripts.pory"
-	msgbox BattleRagingBolt_Text_0
+	msgbox BattleWalkingWake_Text_0
 # 77 "data/maps/TracklessForestAlt/scripts.pory"
 	waitmoncry
 # 78 "data/maps/TracklessForestAlt/scripts.pory"
@@ -171,4 +173,12 @@ BattleWalkingWake_2:
 
 BattleRagingBolt_Text_0:
 # 36 "data/maps/TracklessForestAlt/scripts.pory"
-	.string "Gwooa!$"
+	.string "Rai-gooohhh!!!$"
+
+BattleGougingFire_Text_0:
+# 56 "data/maps/TracklessForestAlt/scripts.pory"
+	.string "Ennn-grahhh!$"
+
+BattleWalkingWake_Text_0:
+# 76 "data/maps/TracklessForestAlt/scripts.pory"
+	.string "Su-suiiiii!$"

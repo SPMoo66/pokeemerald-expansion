@@ -1,0 +1,234 @@
+script Route104_EventScript_RowanTera {
+	lock
+	addobject (ROWAN_ROUTE104)
+	setobjectxy (ROWAN_ROUTE104, 23, 57)
+	speakername (CommonText_Q)
+	msgbox (format ("Wait!\n"
+					"Hold on, if you could!"))
+	closemessage
+	playbgm (MUS_DP_ROWAN, FALSE)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+	applymovement (ROWAN_ROUTE104, Common_Movement_WalkUp4)
+	waitmovement (0)
+	delay (20)
+	applymovement (ROWAN_ROUTE104, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	speakername (CommonText_Q)
+	msgbox ("Huff…")
+	closemessage
+	applymovement (ROWAN_ROUTE104, Common_Movement_WalkUp2)
+	waitmovement (0)
+	applymovement (ROWAN_ROUTE104, Common_Movement_WalkLeft5)
+	waitmovement (0)
+	speakername (CommonText_Q)
+	msgbox ("Thank you for waiting.")
+	applymovement (ROWAN_ROUTE104, Common_Movement_WalkInPlaceRight)
+	waitmovement (0)
+	speakername (CommonText_Q)
+	msgbox (format ("And to think I'm going to return home and resume my duties like this…"))
+	closemessage
+	applymovement (ROWAN_ROUTE104, Common_Movement_WalkInPlaceLeft)
+	waitmovement (0)
+	speakername (CommonText_Rowan)
+	msgbox (format ("Er-hem.\n"
+					"My name is Rowan.\p"
+					"I work as a professor out in Sinnoh.\p"
+					"I stopped you today when I saw the badge you were wearing.\p"
+					"As a trainer strong enough to challenge gyms, I though you may be able to assist me in some of my reaserch here."))
+	applymovement (ROWAN_ROUTE104, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	msgbox (format ("There exists a phenomenon known as Terastallization in which Pokémon are able to change their type temporarily.\p"
+					"This allows a great deal of complexity to battles and a great advantage to those who are able to use it well."))
+	applymovement (ROWAN_ROUTE104, Common_Movement_WalkInPlaceLeft)
+	waitmovement (0)
+	msgbox (format ("Each Pokémon has its own Terastallization Type, or Tera Type.\p"
+					"That Tera Type does not necessarily match with the type of the Pokémon.\p"
+					"All that being said, my request of you is to go out and gather data for me on the Terastal phenomenon.\p"
+					"This Tera Orb will allow you to utilize the phenomenon once per battle."))
+	closemessage
+	giveitem (ITEM_TERA_ORB)
+	speakername (CommonText_Rowan)
+	msgbox (format ("It's also possible to change a Pokémon's Tera Type.\p"
+					"If you bring me Tera Shards, I will do that for you.\p"
+					"I'll give you some now, so look for more of these in the future."))
+	closemessage
+	giveitem (ITEM_NORMAL_TERA_SHARD, 3)
+	speakername (CommonText_Rowan)
+	msgbox (format ("I'll be staying with Professor Birch out in Littleroot Town while I'm here in Hoenn.\p"
+					"Come see me there if you need to know more or if you want to change your Pokémon's Tera Type."))
+	closemessage
+	applymovement (ROWAN_ROUTE104, Common_Movement_WalkRight5)
+	waitmovement (0)
+	applymovement (ROWAN_ROUTE104, Common_Movement_WalkDown6)
+	waitmovement (0)
+	removeobject (ROWAN_ROUTE104)
+	fadedefaultbgm
+	setvar (VAR_ROUTE104_STATE, 3)
+	setflag (FLAG_TERA_ENABLED)
+	release
+}
+
+script Aide_SetTeraType {
+	lock
+	faceplayer
+	if (!flag(FLAG_TEMP_6)) {
+		msgbox( format( "Hello!\n"
+						"I work with Professor Rowan.\l"
+						"If you have any Tera Shards, I can change the Tera Type of one of your Pokémon."))
+		setflag (FLAG_TEMP_6)
+	}
+	checkitem (ITEM_STELLAR_TERA_SHARD)
+	if (var(VAR_RESULT)) {
+		msgbox( format( "Oh!\n"
+						"That's a Stellar Tera Shard!\p"
+						"Would you like me to set one of your Pokémon's Tera Type to Stellar?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT)) {
+			msgbox( format( "Great!\n"
+							"Go ahead for me and pick the Pokémon whose Tera Type you'd like changed to Stellar."))
+			special (ChoosePartyMon)
+			waitstate
+			if (var(VAR_0x8004) != PARTY_NOTHING_CHOSEN) {
+				specialvar (VAR_TEMP_2, ScriptGetPartyMonSpecies)
+				bufferspeciesname (STR_VAR_1, VAR_TEMP_2)
+				bufferstring (STR_VAR_2, CommonText_StellarType)
+				if (var(VAR_TEMP_2) != SPECIES_EGG && var(VAR_TEMP_2) != SPECIES_OGERPON) {
+					setteratype (TYPE_STELLAR, VAR_0x8004)
+					msgbox(Text_ChangedTeraType)
+					removeitem (ITEM_STELLAR_TERA_SHARD)
+				}
+				elif (var(VAR_TEMP_2) == SPECIES_OGERPON) {
+					msgbox( format( "I'm sorry, the Tera Type of your {STR_VAR_1} can't be changed to the {STR_VAR_2}."))
+				}
+				else {
+					msgbox(Text_EggTeraType)
+				}
+				closemessage
+				end
+			}
+		}
+	}
+	checkitem (ITEM_NORMAL_TERA_SHARD)
+	if (var(VAR_RESULT)) {
+		msgbox( format( "Do you want me to change the Tera Type of one of your Pokémon in exchange for a Normal Tera Shard?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT)) {
+			msgbox( format( "Great!\n"
+							"Go ahead for me and pick the Pokémon whose Tera Type you'd like changed."))
+			special (ChoosePartyMon)
+			waitstate
+			if (var(VAR_0x8004) != PARTY_NOTHING_CHOSEN) {
+				specialvar (VAR_TEMP_2, ScriptGetPartyMonSpecies)
+				if (var(VAR_TEMP_2) != SPECIES_EGG) {
+					bufferspeciesname (STR_VAR_1, VAR_TEMP_2)
+					msgbox(	"Your {STR_VAR_1}?\n"
+							"Ok, which type?")
+					dynmultipush (CommonText_NormalType,    0)
+					dynmultipush (CommonText_FightingType,  1)
+					dynmultipush (CommonText_FlyingType,    2)
+					dynmultipush (CommonText_PoisonType,    3)
+					dynmultipush (CommonText_GroundType,    4)
+					dynmultipush (CommonText_RockType,      5)
+					dynmultipush (CommonText_BugType,       6)
+					dynmultipush (CommonText_GhostType,     7)
+					dynmultipush (CommonText_SteelType,     8)
+					dynmultipush (CommonText_FireType,      9)
+					dynmultipush (CommonText_WaterType,    10)
+					dynmultipush (CommonText_GrassType,    11)
+					dynmultipush (CommonText_ElectricType, 12)
+					dynmultipush (CommonText_PsychicType,  13)
+					dynmultipush (CommonText_IceType,      14)
+					dynmultipush (CommonText_DragonType,   15)
+					dynmultipush (CommonText_DarkType,     16)
+					dynmultipush (CommonText_FairyType,    17)
+					dynmultistack(0, 0, FALSE, 6, FALSE, VAR_0x800A, DYN_MULTICHOICE_CB_NONE)
+					switch (var(VAR_RESULT)) {
+						case 0:
+							setteratype (TYPE_NORMAL, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_NormalType)
+						case 1:
+							setteratype (TYPE_FIGHTING, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_FightingType)
+						case 2:
+							setteratype (TYPE_FLYING, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_FlyingType)
+						case 3:
+							setteratype (TYPE_POISON, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_PoisonType)
+						case 4:
+							setteratype (TYPE_GROUND, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_GroundType)
+						case 5:
+							setteratype (TYPE_ROCK, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_RockType)
+						case 6:
+							setteratype (TYPE_BUG, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_BugType)
+						case 7:
+							setteratype (TYPE_GHOST, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_GhostType)
+						case 8:
+							setteratype (TYPE_STEEL, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_SteelType)
+						case 9:
+							setteratype (TYPE_FIRE, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_FireType)
+						case 10:
+							setteratype (TYPE_WATER, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_WaterType)
+						case 11:
+							setteratype (TYPE_GRASS, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_GrassType)
+						case 12:
+							setteratype (TYPE_ELECTRIC, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_ElectricType)
+						case 13:
+							setteratype (TYPE_PSYCHIC, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_PsychicType)
+						case 14:
+							setteratype (TYPE_ICE, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_IceType)
+						case 15:
+							setteratype (TYPE_DRAGON, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_DragonType)
+						case 16:
+							setteratype (TYPE_DARK, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_DarkType)
+						case 17:
+							setteratype (TYPE_FAIRY, VAR_0x8004)
+							bufferstring (STR_VAR_2, CommonText_FairyType)
+						default:
+					}
+					msgbox(Text_ChangedTeraType)
+					removeitem (ITEM_NORMAL_TERA_SHARD)
+				}
+				else {
+					msgbox(Text_EggTeraType)
+				}
+			}
+			else {
+				msgbox("Nothing chosen.")
+			}
+		}
+		else {
+			msgbox( format( "Do return to me if you change your mind."))
+			closemessage
+			end
+		}
+	}
+	else {
+		msgbox(format ("If you get some Tera Shards into your hands, come back to me and I can change the Tera Type of one of your Pokémon."))
+	}
+	closemessage
+	release
+}
+
+text Text_ChangedTeraType {
+	"The Tera Type of your {STR_VAR_1}\n"
+	"has been changed to {STR_VAR_2}."
+}
+
+text Text_EggTeraType {
+	"Umm…\n"
+	"That's a Pokémon Egg.\l"
+	"I'm not sure what you expect me to do\l"
+	"with that."
+}

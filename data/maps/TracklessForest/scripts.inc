@@ -7,37 +7,40 @@ TracklessForest_MapScripts::
 
 TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 8 "data/maps/TracklessForest/scripts.pory"
-	goto_if_set FLAG_CAUGHT_RAIKOU, TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	goto_if_set FLAG_CAUGHT_RAIKOU, TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 12 "data/maps/TracklessForest/scripts.pory"
-	goto_if_set FLAG_CAUGHT_ENTEI, TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+	goto_if_set FLAG_CAUGHT_ENTEI, TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
+TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 16 "data/maps/TracklessForest/scripts.pory"
-	goto_if_set FLAG_CAUGHT_SUICUNE, TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_3
+	goto_if_set FLAG_CAUGHT_SUICUNE, TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_8
+TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
 # 20 "data/maps/TracklessForest/scripts.pory"
-	goto_if_set FLAG_CAUGHT_CELEBI, TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
+	goto_if_set FLAG_CAUGHT_CELEBI, TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_10
 	return
 
-TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 # 9 "data/maps/TracklessForest/scripts.pory"
 	setflag FLAG_TEMP_2
 # 10 "data/maps/TracklessForest/scripts.pory"
 	removeobject 1
-	return
+	goto TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
-TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
+TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
 # 13 "data/maps/TracklessForest/scripts.pory"
 	setflag FLAG_TEMP_3
 # 14 "data/maps/TracklessForest/scripts.pory"
 	removeobject 2
-	return
+	goto TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
 
-TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
+TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_8:
 # 17 "data/maps/TracklessForest/scripts.pory"
 	setflag FLAG_TEMP_4
 # 18 "data/maps/TracklessForest/scripts.pory"
 	removeobject 3
-	return
+	goto TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 
-TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
+TracklessForest_MapScripts_MAP_SCRIPT_ON_TRANSITION_10:
 # 21 "data/maps/TracklessForest/scripts.pory"
 	setflag FLAG_TEMP_5
 # 22 "data/maps/TracklessForest/scripts.pory"
@@ -110,7 +113,7 @@ BattleEntei::
 # 60 "data/maps/TracklessForest/scripts.pory"
 	playmoncry SPECIES_ENTEI, CRY_MODE_ENCOUNTER
 # 61 "data/maps/TracklessForest/scripts.pory"
-	msgbox BattleRaikou_Text_0
+	msgbox BattleEntei_Text_0
 # 62 "data/maps/TracklessForest/scripts.pory"
 	waitmoncry
 # 63 "data/maps/TracklessForest/scripts.pory"
@@ -149,7 +152,7 @@ BattleSuicune::
 # 80 "data/maps/TracklessForest/scripts.pory"
 	playmoncry SPECIES_SUICUNE, CRY_MODE_ENCOUNTER
 # 81 "data/maps/TracklessForest/scripts.pory"
-	msgbox BattleRaikou_Text_0
+	msgbox BattleSuicune_Text_0
 # 82 "data/maps/TracklessForest/scripts.pory"
 	waitmoncry
 # 83 "data/maps/TracklessForest/scripts.pory"
@@ -256,11 +259,19 @@ TracklessForest_Teleport_6:
 
 BattleRaikou_Text_0:
 # 41 "data/maps/TracklessForest/scripts.pory"
-	.string "Gwooa!$"
+	.string "Rararaiiiii!$"
+
+BattleEntei_Text_0:
+# 61 "data/maps/TracklessForest/scripts.pory"
+	.string "Enteiiiii!$"
+
+BattleSuicune_Text_0:
+# 81 "data/maps/TracklessForest/scripts.pory"
+	.string "Susuiiiii!$"
 
 BattleCelebi_Text_0:
 # 101 "data/maps/TracklessForest/scripts.pory"
-	.string "Kryuu!$"
+	.string "Lululalala!$"
 
 TracklessForest_Teleport_Text_0:
 # 118 "data/maps/TracklessForest/scripts.pory"

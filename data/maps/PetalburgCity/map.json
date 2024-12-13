@@ -321,6 +321,42 @@
       "var": "VAR_EMERALBODY_RIVAL_STATE",
       "var_value": "1",
       "script": "Rival_Scene02"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_PETALBURG_CITY_STATE",
+      "var_value": "5",
+      "script": "PetalburgCity_EventScript_WallyBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_PETALBURG_CITY_STATE",
+      "var_value": "5",
+      "script": "PetalburgCity_EventScript_WallyBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_PETALBURG_CITY_STATE",
+      "var_value": "5",
+      "script": "PetalburgCity_EventScript_WallyBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_PETALBURG_CITY_STATE",
+      "var_value": "5",
+      "script": "PetalburgCity_EventScript_WallyBattle"
     }
   ],
   "bg_events": [

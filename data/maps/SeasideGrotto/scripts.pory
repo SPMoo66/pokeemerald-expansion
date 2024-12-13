@@ -9,15 +9,15 @@ mapscripts SeasideGrotto_MapScripts {
 			setflag (FLAG_TEMP_2)
 			removeobject(TAPU_BULU)
 		}
-		elif(flag(FLAG_CAUGHT_TAPU_FINI)) {
+		if(flag(FLAG_CAUGHT_TAPU_FINI)) {
 			setflag (FLAG_TEMP_3)
 			removeobject(TAPU_FINI)
 		}
-		elif(flag(FLAG_CAUGHT_TAPU_KOKO)) {
+		if(flag(FLAG_CAUGHT_TAPU_KOKO)) {
 			setflag (FLAG_TEMP_4)
 			removeobject(TAPU_KOKO)
 		}
-		elif(flag(FLAG_CAUGHT_TAPU_LELE)) {
+		if(flag(FLAG_CAUGHT_TAPU_LELE)) {
 			setflag (FLAG_TEMP_5)
 			removeobject(TAPU_LELE)
 		}

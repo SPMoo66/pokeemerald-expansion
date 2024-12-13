@@ -1812,8 +1812,8 @@ static void Task_ShowRankings(u8 taskId)
         break;
     case 1:
         // Print header text
-        xPos = 96 - GetStringWidth(FONT_NORMAL, gText_BerryCrush2, -1) / 2u;
-        AddTextPrinterParameterized3(tWindowId, FONT_NORMAL, xPos, 1, sTextColorTable[COLORID_BLUE], 0, gText_BerryCrush2);
+        xPos = 96 - GetStringWidth(FONT_NORMAL, gText_BerryCrush, -1) / 2u;
+        AddTextPrinterParameterized3(tWindowId, FONT_NORMAL, xPos, 1, sTextColorTable[COLORID_BLUE], 0, gText_BerryCrush);
         xPos = 96 - GetStringWidth(FONT_NORMAL, gText_PressingSpeedRankings, -1) / 2u;
         AddTextPrinterParameterized3(tWindowId, FONT_NORMAL, xPos, 17, sTextColorTable[COLORID_BLUE], 0, gText_PressingSpeedRankings);
 

@@ -23,8 +23,8 @@ TrainerTipsPartySelectMove::
 TrainerTipsClock_Text_0:
 # 4 "data/maps/LeafyClearing/scripts.pory"
 	.string "Trainer Tips\p"
-	.string "When viewing a clock press the R button\n"
-	.string "to set the time.$"
+	.string "When viewing a clock, press the R\n"
+	.string "button to set the time.$"
 
 TrainerTipsBRun_Text_0:
 # 8 "data/maps/LeafyClearing/scripts.pory"

@@ -152,15 +152,25 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
+	warp MAP_RUSTBORO_CITY, 5
 	setvar VAR_LOOKER_ROCKET 3
+	givemon SPECIES_VENUSAUR, 100, ITEM_NONE
+	givemon SPECIES_BLASTOISE, 100, ITEM_NONE
+	call Debug_CheatStart
 	release
 	end
 
 Debug_EventScript_Script_4::
+	additem ITEM_TERA_ORB
+	setflag FLAG_TERA_ENABLED
+	givemon SPECIES_BRAMBLEGHAST, 5, ITEM_NONE
+	warp MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB, 0
 	release
 	end
 
 Debug_EventScript_Script_5::
+	warp MAP_PETALBURG_CITY, 1
+	setvar VAR_PETALBURG_CITY_STATE, 5
 	release
 	end
 

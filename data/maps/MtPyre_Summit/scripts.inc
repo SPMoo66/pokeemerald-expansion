@@ -270,7 +270,7 @@ MtPyre_Summit_EventScript_MaxieApproachPlayer1::
 MtPyre_Summit_EventScript_MaxieApproachPlayer2::
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerFaceMaxie
 	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieWatchMaxie
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachPlayer2
+	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachPlayer1
 	waitmovement 0
 	return
 
@@ -344,13 +344,6 @@ MtPyre_Summit_Movement_MaxieApproachPlayer0:
 	step_end
 
 MtPyre_Summit_Movement_MaxieApproachPlayer1:
-	walk_up
-	walk_up
-	walk_up
-	walk_in_place_faster_right
-	step_end
-
-MtPyre_Summit_Movement_MaxieApproachPlayer2:
 	walk_up
 	walk_up
 	walk_up

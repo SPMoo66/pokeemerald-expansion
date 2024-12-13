@@ -452,16 +452,6 @@
       "blockdata_filepath": "data/layouts/Route129/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE130_MIRAGE_ISLAND",
-      "name": "Route130_MirageIsland_Layout",
-      "width": 80,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/Route130_MirageIsland/border.bin",
-      "blockdata_filepath": "data/layouts/Route130_MirageIsland/map.bin"
-    },
-    {
       "id": "LAYOUT_ROUTE131",
       "name": "Route131_Layout",
       "width": 60,
@@ -2625,9 +2615,9 @@
       "id": "LAYOUT_ROUTE130",
       "name": "Route130_Layout",
       "width": 80,
-      "height": 40,
+      "height": 38,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/Route130/border.bin",
       "blockdata_filepath": "data/layouts/Route130/map.bin"
     },
@@ -4574,8 +4564,8 @@
     {
       "id": "LAYOUT_FLURRY_PEAK",
       "name": "FlurryPeak_Layout",
-      "width": 48,
-      "height": 24,
+      "width": 54,
+      "height": 28,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Snow",
       "border_filepath": "data/layouts/FlurryPeak/border.bin",
@@ -4670,6 +4660,16 @@
       "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/RustboroCity_DevonCorp_B1F/border.bin",
       "blockdata_filepath": "data/layouts/RustboroCity_DevonCorp_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEASIDE_HOLLOW",
+      "name": "SeasideHollow_Layout",
+      "width": 13,
+      "height": 11,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/SeasideHollow/border.bin",
+      "blockdata_filepath": "data/layouts/SeasideHollow/map.bin"
     }
   ]
 }

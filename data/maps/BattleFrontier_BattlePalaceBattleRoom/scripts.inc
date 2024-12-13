@@ -332,10 +332,6 @@ BattleFrontier_BattlePalaceBattleRoom_EventScript_ReadyFor7thOpponent::
 	waitmessage
 	return
 
-BattleFrontier_BattlePalaceBattleRoom_Movement_SetInvisible:
-	set_invisible
-	step_end
-
 BattleFrontier_BattlePalaceBattleRoom_Movement_PlayerEnterRoom:
 	set_visible
 	walk_up

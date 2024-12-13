@@ -48,11 +48,11 @@ BattleFrontier_BattleTowerBattleRoom2_EventScript_248F4D:: @ 8248F4D
 	frontier_get FRONTIER_DATA_BATTLE_NUM
 	compare VAR_RESULT, 0
 	goto_if_eq BattleFrontier_BattleTowerBattleRoom2_EventScript_248FB4
-	applymovement 2, BattleFrontier_BattleTowerBattleRoom2_Movement_24953E
-	applymovement 3, BattleFrontier_BattleTowerBattleRoom2_Movement_24953E
+	applymovement 2, Common_Movement_WalkRight2
+	applymovement 3, Common_Movement_WalkRight2
 	waitmovement 0
-	applymovement 5, BattleFrontier_BattleTowerBattleRoom2_Movement_249524
-	applymovement 6, BattleFrontier_BattleTowerBattleRoom2_Movement_249524
+	applymovement 5, Common_Movement_FaceLeft
+	applymovement 6, Common_Movement_FaceLeft
 	waitmovement 0
 	frontier_set FRONTIER_DATA_6, 1
 	goto BattleFrontier_BattleTowerBattleRoom2_EventScript_249143
@@ -68,12 +68,12 @@ BattleFrontier_BattleTowerBattleRoom2_EventScript_248FB4:: @ 8248FB4
 	goto_if_eq BattleFrontier_BattleTowerBattleRoom2_EventScript_249026
 	tower_getopponentintro 0
 	delay 15
-	applymovement 1, BattleFrontier_BattleTowerBattleRoom2_Movement_249545
+	applymovement 1, Common_Movement_WalkInPlaceLeft
 	waitmovement 0
 	msgbox gStringVar4, MSGBOX_DEFAULT
 	waitmessage
 	tower_getopponentintro 1
-	applymovement 4, BattleFrontier_BattleTowerBattleRoom2_Movement_249545
+	applymovement 4, Common_Movement_WalkInPlaceLeft
 	waitmovement 0
 	msgbox gStringVar4, MSGBOX_DEFAULT
 	waitmessage
@@ -82,13 +82,13 @@ BattleFrontier_BattleTowerBattleRoom2_EventScript_248FB4:: @ 8248FB4
 BattleFrontier_BattleTowerBattleRoom2_EventScript_249026:: @ 8249026
 	tower_getopponentintro 0
 	delay 15
-	applymovement 1, BattleFrontier_BattleTowerBattleRoom2_Movement_249545
+	applymovement 1, Common_Movement_WalkInPlaceLeft
 	waitmovement 0
 	messageautoscroll gStringVar4
 	waitmessage
 	delay 48
 	tower_getopponentintro 1
-	applymovement 4, BattleFrontier_BattleTowerBattleRoom2_Movement_249545
+	applymovement 4, Common_Movement_WalkInPlaceLeft
 	waitmovement 0
 	messageautoscroll gStringVar4
 	waitmessage
@@ -111,16 +111,16 @@ BattleFrontier_BattleTowerBattleRoom2_EventScript_2490AA:: @ 82490AA
 	tower_setbattlewon
 	switch VAR_RESULT
 	case 7, BattleFrontier_BattleTowerBattleRoom2_EventScript_2492AF
-	applymovement 4, BattleFrontier_BattleTowerBattleRoom2_Movement_249534
-	applymovement 1, BattleFrontier_BattleTowerBattleRoom2_Movement_249539
+	applymovement 4, Common_Movement_WalkUp3Invis
+	applymovement 1, Common_Movement_WalkUp4
 	waitmovement 0
 	removeobject 1
 	removeobject 4
-	applymovement 2, BattleFrontier_BattleTowerBattleRoom2_Movement_24953E
-	applymovement 3, BattleFrontier_BattleTowerBattleRoom2_Movement_24953E
+	applymovement 2, Common_Movement_WalkRight2
+	applymovement 3, Common_Movement_WalkRight2
 	waitmovement 0
-	applymovement 5, BattleFrontier_BattleTowerBattleRoom2_Movement_249524
-	applymovement 6, BattleFrontier_BattleTowerBattleRoom2_Movement_249524
+	applymovement 5, Common_Movement_FaceLeft
+	applymovement 6, Common_Movement_FaceLeft
 	waitmovement 0
 	compare VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_LINK_MULTIS
 	goto_if_eq BattleFrontier_BattleTowerBattleRoom2_EventScript_249118
@@ -236,32 +236,32 @@ BattleFrontier_BattleTowerBattleRoom2_EventScript_2492FD:: @ 82492FD
 	case 6, BattleFrontier_BattleTowerBattleRoom2_EventScript_249377
 
 BattleFrontier_BattleTowerBattleRoom2_EventScript_249354:: @ 8249354
-	message BattleFrontier_BattleTowerBattleRoom2_Text_249547
+	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor2ndOpponentSet
 	waitmessage
 	return
 
 BattleFrontier_BattleTowerBattleRoom2_EventScript_24935B:: @ 824935B
-	message BattleFrontier_BattleTowerBattleRoom2_Text_249578
+	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor3rdOpponentSet
 	waitmessage
 	return
 
 BattleFrontier_BattleTowerBattleRoom2_EventScript_249362:: @ 8249362
-	message BattleFrontier_BattleTowerBattleRoom2_Text_2495A9
+	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor4thOpponentSet
 	waitmessage
 	return
 
 BattleFrontier_BattleTowerBattleRoom2_EventScript_249369:: @ 8249369
-	message BattleFrontier_BattleTowerBattleRoom2_Text_2495DA
+	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor5thOpponentSet
 	waitmessage
 	return
 
 BattleFrontier_BattleTowerBattleRoom2_EventScript_249370:: @ 8249370
-	message BattleFrontier_BattleTowerBattleRoom2_Text_24960B
+	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor6thOpponentSet
 	waitmessage
 	return
 
 BattleFrontier_BattleTowerBattleRoom2_EventScript_249377:: @ 8249377
-	message BattleFrontier_BattleTowerBattleRoom2_Text_24963C
+	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor7thOpponentSet
 	waitmessage
 	return
 
@@ -276,37 +276,37 @@ BattleFrontier_BattleTowerBattleRoom2_EventScript_24937E:: @ 824937E
 	case 6, BattleFrontier_BattleTowerBattleRoom2_EventScript_249406
 
 BattleFrontier_BattleTowerBattleRoom2_EventScript_2493CA:: @ 82493CA
-	message BattleFrontier_BattleTowerBattleRoom2_Text_249547
+	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor2ndOpponentSet
 	waitmessage
 	goto BattleFrontier_BattleTowerBattleRoom2_EventScript_249417
 	end
 
 BattleFrontier_BattleTowerBattleRoom2_EventScript_2493D6:: @ 82493D6
-	message BattleFrontier_BattleTowerBattleRoom2_Text_249578
+	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor3rdOpponentSet
 	waitmessage
 	goto BattleFrontier_BattleTowerBattleRoom2_EventScript_249417
 	end
 
 BattleFrontier_BattleTowerBattleRoom2_EventScript_2493E2:: @ 82493E2
-	message BattleFrontier_BattleTowerBattleRoom2_Text_2495A9
+	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor4thOpponentSet
 	waitmessage
 	goto BattleFrontier_BattleTowerBattleRoom2_EventScript_249417
 	end
 
 BattleFrontier_BattleTowerBattleRoom2_EventScript_2493EE:: @ 82493EE
-	message BattleFrontier_BattleTowerBattleRoom2_Text_2495DA
+	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor5thOpponentSet
 	waitmessage
 	goto BattleFrontier_BattleTowerBattleRoom2_EventScript_249417
 	end
 
 BattleFrontier_BattleTowerBattleRoom2_EventScript_2493FA:: @ 82493FA
-	message BattleFrontier_BattleTowerBattleRoom2_Text_24960B
+	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor6thOpponentSet
 	waitmessage
 	goto BattleFrontier_BattleTowerBattleRoom2_EventScript_249417
 	end
 
 BattleFrontier_BattleTowerBattleRoom2_EventScript_249406:: @ 8249406
-	message BattleFrontier_BattleTowerBattleRoom2_Text_24963C
+	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor7thOpponentSet
 	waitmessage
 	goto BattleFrontier_BattleTowerBattleRoom2_EventScript_249417
 	end
@@ -397,10 +397,6 @@ BattleFrontier_BattleTowerBattleRoom2_Movement_24951E: @ 824951E
 	face_right
 	step_end
 
-BattleFrontier_BattleTowerBattleRoom2_Movement_249524: @ 8249524
-	face_left
-	step_end
-
 BattleFrontier_BattleTowerBattleRoom2_Movement_249526: @ 8249526
 	walk_in_place_fastest_right
 	step_end
@@ -421,58 +417,11 @@ BattleFrontier_BattleTowerBattleRoom2_Movement_24952E: @ 824952E
 	face_left
 	step_end
 
-BattleFrontier_BattleTowerBattleRoom2_Movement_249534: @ 8249534
-	walk_up
-	walk_up
-	walk_up
-	set_invisible
-	step_end
-
-BattleFrontier_BattleTowerBattleRoom2_Movement_249539: @ 8249539
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-BattleFrontier_BattleTowerBattleRoom2_Movement_24953E: @ 824953E
-	walk_right
-	walk_right
-	step_end
-
 BattleFrontier_BattleTowerBattleRoom2_Movement_249541: @ 8249541
 	walk_left
 	walk_left
 	walk_in_place_fastest_right
 	step_end
-
-BattleFrontier_BattleTowerBattleRoom2_Movement_249545: @ 8249545
-	walk_in_place_left
-	step_end
-
-BattleFrontier_BattleTowerBattleRoom2_Text_249547: @ 8249547
-	.string "The 2nd set of opponents is next.\n"
-	.string "Are you ready?$"
-
-BattleFrontier_BattleTowerBattleRoom2_Text_249578: @ 8249578
-	.string "The 3rd set of opponents is next.\n"
-	.string "Are you ready?$"
-
-BattleFrontier_BattleTowerBattleRoom2_Text_2495A9: @ 82495A9
-	.string "The 4th set of opponents is next.\n"
-	.string "Are you ready?$"
-
-BattleFrontier_BattleTowerBattleRoom2_Text_2495DA: @ 82495DA
-	.string "The 5th set of opponents is next.\n"
-	.string "Are you ready?$"
-
-BattleFrontier_BattleTowerBattleRoom2_Text_24960B: @ 824960B
-	.string "The 6th set of opponents is next.\n"
-	.string "Are you ready?$"
-
-BattleFrontier_BattleTowerBattleRoom2_Text_24963C: @ 824963C
-	.string "The 7th set of opponents is next.\n"
-	.string "Are you ready?$"
 
 BattleFrontier_BattleTowerBattleRoom2_Text_24966D: @ 824966D
 	.string "The 2nd set of opponents is next.\n"

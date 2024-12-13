@@ -28,8 +28,8 @@ BattleFrontier_BattlePalaceCorridor_EventScript_WalkThroughCorridor::
 	waitmovement 0
 	opendoor 6, 3
 	waitdooranim
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePalaceCorridor_Movement_AttendantEnterBattleRoom
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattlePalaceCorridor_Movement_PlayerEnterBattleRoom
+	applymovement LOCALID_ATTENDANT, Common_Movement_EnterHouse
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2Invis
 	waitmovement 0
 	closedoor 6, 3
 	waitdooranim
@@ -41,8 +41,8 @@ BattleFrontier_BattlePalaceCorridor_EventScript_WalkToOpenBattleRoom::
 	waitmovement 0
 	opendoor 10, 3
 	waitdooranim
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePalaceCorridor_Movement_AttendantEnterBattleRoom
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattlePalaceCorridor_Movement_PlayerEnterBattleRoom
+	applymovement LOCALID_ATTENDANT, Common_Movement_EnterHouse
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2Invis
 	waitmovement 0
 	closedoor 10, 3
 	waitdooranim
@@ -105,13 +105,6 @@ BattleFrontier_BattlePalaceCorridor_Movement_PlayerWalkToOpenBattleRoom:
 	walk_right
 	walk_up
 	walk_up
-	step_end
-
-BattleFrontier_BattlePalaceCorridor_Movement_PlayerEnterBattleRoom:
-	walk_up
-BattleFrontier_BattlePalaceCorridor_Movement_AttendantEnterBattleRoom:
-	walk_up
-	set_invisible
 	step_end
 
 BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame:

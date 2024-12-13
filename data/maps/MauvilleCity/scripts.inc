@@ -122,7 +122,7 @@ MauvilleCity_EventScript_BattleWallyPrompt::
 	end
 
 MauvilleCity_EventScript_WallyAndUncleExitNorth::
-	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchWallyExitNorth1
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchScottExitNorth
 	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyExitNorth1
 	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleExitNorth1
 	waitmovement 0
@@ -313,11 +313,6 @@ MauvilleCity_Movement_PlayerWatchScottExitEast:
 MauvilleCity_Movement_PlayerWatchWallyExitEast1:
 	delay_16
 	walk_in_place_faster_down
-	step_end
-
-MauvilleCity_Movement_PlayerWatchWallyExitNorth1:
-	delay_16
-	walk_in_place_faster_left
 	step_end
 
 MauvilleCity_Movement_WallysUncleExitNorth1:

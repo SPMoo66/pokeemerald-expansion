@@ -21,7 +21,7 @@ BattleFrontier_BattlePikeCorridor_EventScript_EnterCorridor::
 	msgbox BattleFrontier_BattlePikeCorridor_Text_YourChallengeHasBegun, MSGBOX_DEFAULT
 	closemessage
 	releaseall
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattlePikeCorridor_Movement_PlayerExitCorridor
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2Invis
 	waitmovement 0
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 99
 	call BattleFrontier_BattlePike_EventScript_CloseCurtain
@@ -37,12 +37,6 @@ BattleFrontier_BattlePikeCorridor_EventScript_TurnPlayerNorth::
 	setvar VAR_TEMP_1, 1
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	end
-
-BattleFrontier_BattlePikeCorridor_Movement_PlayerExitCorridor:
-	walk_up
-	walk_up
-	set_invisible
-	step_end
 
 BattleFrontier_BattlePikeCorridor_Movement_AttendantEnterCorridor:
 	walk_up

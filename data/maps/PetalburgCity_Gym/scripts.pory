@@ -322,25 +322,25 @@ PetalburgCity_Gym_EventScript_WallyFaceDown::
 	return
 
 PetalburgCity_Gym_EventScript_NormanNoBadges::
-	speakername (CommonText_Wally)
+	speakername (CommonText_Dad)
 	msgbox PetalburgCity_Gym_Text_NormanGoToRustboro, MSGBOX_DEFAULT
 	release
 	end
 
 PetalburgCity_Gym_EventScript_NormanOneBadge::
-	speakername (CommonText_Wally)
+	speakername (CommonText_Dad)
 	msgbox PetalburgCity_Gym_Text_NormanGoToDewford, MSGBOX_DEFAULT
 	release
 	end
 
 PetalburgCity_Gym_EventScript_NormanTwoBadges::
-	speakername (CommonText_Wally)
+	speakername (CommonText_Dad)
 	msgbox PetalburgCity_Gym_Text_YouHaveGottenStronger, MSGBOX_DEFAULT
 	release
 	end
 
 PetalburgCity_Gym_EventScript_NormanThreeBadges::
-	speakername (CommonText_Wally)
+	speakername (CommonText_Dad)
 	msgbox PetalburgCity_Gym_Text_YouHaveGottenStronger, MSGBOX_DEFAULT
 	release
 	end

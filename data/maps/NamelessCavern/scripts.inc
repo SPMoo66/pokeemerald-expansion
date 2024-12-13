@@ -7,28 +7,30 @@ NamelessCavern_MapScripts::
 
 NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 7 "data/maps/NamelessCavern/scripts.pory"
-	goto_if_set FLAG_CAUGHT_MESPRIT, NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	goto_if_set FLAG_CAUGHT_MESPRIT, NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 11 "data/maps/NamelessCavern/scripts.pory"
-	goto_if_set FLAG_CAUGHT_UXIE, NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+	goto_if_set FLAG_CAUGHT_UXIE, NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
+NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 15 "data/maps/NamelessCavern/scripts.pory"
-	goto_if_set FLAG_CAUGHT_AZELF, NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_3
+	goto_if_set FLAG_CAUGHT_AZELF, NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 	return
 
-NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 # 8 "data/maps/NamelessCavern/scripts.pory"
 	setflag FLAG_TEMP_2
 # 9 "data/maps/NamelessCavern/scripts.pory"
 	removeobject 1
-	return
+	goto NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
-NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
+NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
 # 12 "data/maps/NamelessCavern/scripts.pory"
 	setflag FLAG_TEMP_3
 # 13 "data/maps/NamelessCavern/scripts.pory"
 	removeobject 2
-	return
+	goto NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
 
-NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
+NamelessCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
 # 16 "data/maps/NamelessCavern/scripts.pory"
 	setflag FLAG_TEMP_4
 # 17 "data/maps/NamelessCavern/scripts.pory"
@@ -95,7 +97,7 @@ BattleUxie::
 # 51 "data/maps/NamelessCavern/scripts.pory"
 	playmoncry SPECIES_UXIE, CRY_MODE_ENCOUNTER
 # 52 "data/maps/NamelessCavern/scripts.pory"
-	msgbox BattleMesprit_Text_0
+	msgbox BattleUxie_Text_0
 # 53 "data/maps/NamelessCavern/scripts.pory"
 	waitmoncry
 # 54 "data/maps/NamelessCavern/scripts.pory"
@@ -165,4 +167,8 @@ BattleAzelf_2:
 
 BattleMesprit_Text_0:
 # 32 "data/maps/NamelessCavern/scripts.pory"
-	.string "Gwooa!$"
+	.string "Kyauun!$"
+
+BattleUxie_Text_0:
+# 52 "data/maps/NamelessCavern/scripts.pory"
+	.string "Kyouuuun!$"

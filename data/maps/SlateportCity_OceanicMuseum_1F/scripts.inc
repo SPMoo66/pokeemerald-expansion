@@ -147,9 +147,9 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
 	applymovement LOCALID_FAMILIAR_GRUNT, Common_Movement_Delay48
 	waitmovement 0
 	msgbox SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_TM_THIEF
+	giveitem ITEM_BOTTLE_CAP
 	goto_if_eq VAR_RESULT, 0, SlateportCity_OceanicMuseum_1F_EventScript_NoRoomForThief
-	setflag FLAG_RECEIVED_TM_THIEF
+	setflag FLAG_RECEIVED_BOTTLE_CAP_OCEANIC
 	msgbox SlateportCity_OceanicMuseum_1F_Text_HopeINeverSeeYouAgain, MSGBOX_DEFAULT
 	closemessage
 	goto_if_eq VAR_FACING, DIR_NORTH, SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitNorth
@@ -294,8 +294,6 @@ SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis:
 	.string "You have to forgive me!$"
 
 SlateportCity_OceanicMuseum_1F_Text_HopeINeverSeeYouAgain:
-	.string "That TM, it suits you more than it\n"
-	.string "does me.\p"
 	.string "Hope I never see you again!\n"
 	.string "Wahahaha!$"
 

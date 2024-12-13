@@ -7,37 +7,40 @@ SubmergedCavern_MapScripts::
 
 SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 8 "data/maps/SubmergedCavern/scripts.pory"
-	goto_if_set FLAG_CAUGHT_CHIEN_PAO, SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	goto_if_set FLAG_CAUGHT_CHIEN_PAO, SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 12 "data/maps/SubmergedCavern/scripts.pory"
-	goto_if_set FLAG_CAUGHT_CHI_YU, SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+	goto_if_set FLAG_CAUGHT_CHI_YU, SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
+SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 16 "data/maps/SubmergedCavern/scripts.pory"
-	goto_if_set FLAG_CAUGHT_TING_LU, SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_3
+	goto_if_set FLAG_CAUGHT_TING_LU, SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_8
+SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
 # 20 "data/maps/SubmergedCavern/scripts.pory"
-	goto_if_set FLAG_CAUGHT_WO_CHIEN, SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
+	goto_if_set FLAG_CAUGHT_WO_CHIEN, SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_10
 	return
 
-SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 # 9 "data/maps/SubmergedCavern/scripts.pory"
 	setflag FLAG_TEMP_2
 # 10 "data/maps/SubmergedCavern/scripts.pory"
 	removeobject 1
-	return
+	goto SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
-SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
+SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
 # 13 "data/maps/SubmergedCavern/scripts.pory"
 	setflag FLAG_TEMP_3
 # 14 "data/maps/SubmergedCavern/scripts.pory"
 	removeobject 2
-	return
+	goto SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
 
-SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
+SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_8:
 # 17 "data/maps/SubmergedCavern/scripts.pory"
 	setflag FLAG_TEMP_4
 # 18 "data/maps/SubmergedCavern/scripts.pory"
 	removeobject 3
-	return
+	goto SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 
-SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
+SubmergedCavern_MapScripts_MAP_SCRIPT_ON_TRANSITION_10:
 # 21 "data/maps/SubmergedCavern/scripts.pory"
 	setflag FLAG_TEMP_5
 # 22 "data/maps/SubmergedCavern/scripts.pory"
@@ -216,16 +219,16 @@ BattleWoChien_2:
 
 BattleChienPao_Text_0:
 # 38 "data/maps/SubmergedCavern/scripts.pory"
-	.string "Graoo-wuuh!$"
+	.string "Scrrr…\nScriiibe!$"
 
 BattleChiYu_Text_0:
 # 58 "data/maps/SubmergedCavern/scripts.pory"
-	.string "Di-tiing wuh!$"
+	.string "Sp… Sp…\nSplashyyy!$"
 
 BattleTingLu_Text_0:
 # 78 "data/maps/SubmergedCavern/scripts.pory"
-	.string "Aouu-wooouh!$"
+	.string "Rrr…\nPooourrr!$"
 
 BattleWoChien_Text_0:
 # 98 "data/maps/SubmergedCavern/scripts.pory"
-	.string "Greu-wuuu!$"
+	.string "C-c… cu…\nCut! Cuuuttt!$"

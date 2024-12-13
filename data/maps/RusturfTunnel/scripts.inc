@@ -122,7 +122,7 @@ RusturfTunnel_EventScript_WandasBoyfriendApproachPlayer::
 	return
 
 RusturfTunnel_EventScript_WandaAndBoyfriendExit1::
-	applymovement LOCALID_WANDA, RusturfTunnel_Movement_WandaExit1
+	applymovement LOCALID_WANDA, RusturfTunnel_Movement_WandaExit
 	applymovement LOCALID_WANDAS_BF, RusturfTunnel_Movement_WandasBoyfriendExit1
 	waitmovement 0
 	return
@@ -141,20 +141,6 @@ RusturfTunnel_EventScript_WandasBoyfriendNotice::
 	applymovement LOCALID_WANDAS_BF, Common_Movement_Delay48
 	waitmovement 0
 	return
-
-RusturfTunnel_Movement_WandaExit1:
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	step_end
 
 RusturfTunnel_Movement_WandaExit:
 	walk_right
@@ -315,7 +301,7 @@ RusturfTunnel_EventScript_Grunt::
 	waitmoncry
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, RusturfTunnel_Movement_PlayerWatchBrineyExit
-	applymovement LOCALID_BRINEY, RusturfTunnel_Movement_BrineyExit
+	applymovement LOCALID_BRINEY, Common_Movement_WalkLeft11
 	applymovement LOCALID_PEEKO, Common_Movement_WalkLeft9
 	waitmovement 0
 	removeobject LOCALID_BRINEY
@@ -351,20 +337,6 @@ RusturfTunnel_Movement_GruntEscape:
 	walk_fast_left
 	walk_fast_left
 	walk_fast_left
-	step_end
-
-RusturfTunnel_Movement_BrineyExit:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
 	step_end
 
 RusturfTunnel_Movement_PlayerWatchBrineyExit:

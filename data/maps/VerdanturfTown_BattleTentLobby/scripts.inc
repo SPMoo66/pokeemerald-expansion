@@ -199,17 +199,11 @@ VerdanturfTown_BattleTentLobby_EventScript_WalkToDoor::
 	opendoor 6, 1
 	waitdooranim
 	applymovement LOCALID_ATTENDANT, Common_Movement_EnterHouse
-	applymovement OBJ_EVENT_ID_PLAYER, VerdanturfTown_BattleTentLobby_Movement_PlayerEnterDoor
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2Invis
 	waitmovement 0
 	closedoor 6, 1
 	waitdooranim
 	return
-
-VerdanturfTown_BattleTentLobby_Movement_PlayerEnterDoor:
-	walk_up
-	walk_up
-	set_invisible
-	step_end
 
 VerdanturfTown_BattleTentLobby_EventScript_AttractGiver::
 	lock

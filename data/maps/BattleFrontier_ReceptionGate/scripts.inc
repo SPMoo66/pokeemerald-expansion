@@ -40,6 +40,7 @@ BattleFrontier_ReceptionGate_EventScript_ScottScene::
 	msgbox BattleFrontier_ReceptionGate_Text_PlacedTrainerCardInFrontierPass, MSGBOX_DEFAULT
 	setflag FLAG_SYS_FRONTIER_PASS
 	msgbox BattleFrontier_ReceptionGate_Text_EnjoyBattleFrontier, MSGBOX_DEFAULT
+	speakername (CommonText_Q)
 	msgbox BattleFrontier_ReceptionGate_Text_IfItIsntPlayerYouCame, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_GREETER, Common_Movement_WalkInPlaceFasterUp
@@ -321,7 +322,7 @@ BattleFrontier_ReceptionGate_Text_EnjoyBattleFrontier:
 	.string "Frontier has to offer!$"
 
 BattleFrontier_ReceptionGate_Text_IfItIsntPlayerYouCame:
-	.string "???: Well, if it isn't {PLAYER}{KUN}!\n"
+	.string "Well, if it isn't {PLAYER}{KUN}!\n"
 	.string "You came out here!$"
 
 BattleFrontier_ReceptionGate_Text_OhMrScottGoodDay:

@@ -75,4 +75,4 @@ CrescentIsle_Portal::
 
 BattleCresselia_Text_0:
 # 22 "data/maps/CrescentIsle/scripts.pory"
-	.string "Gwooa!$"
+	.string "Lunaaan…$"

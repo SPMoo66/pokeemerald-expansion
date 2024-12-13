@@ -8,11 +8,11 @@ mapscripts PathlessPlainAlt_MapScripts {
 			setflag (FLAG_TEMP_2)
 			removeobject(IRON_CROWN)
 		}
-		elif(flag(FLAG_CAUGHT_IRON_BOULDER)) {
+		if(flag(FLAG_CAUGHT_IRON_BOULDER)) {
 			setflag (FLAG_TEMP_3)
 			removeobject(IRON_BOULDER)
 		}
-		elif(flag(FLAG_CAUGHT_IRON_LEAVES)) {
+		if(flag(FLAG_CAUGHT_IRON_LEAVES)) {
 			setflag (FLAG_TEMP_4)
 			removeobject(IRON_LEAVES)
 		}
@@ -33,7 +33,7 @@ script BattleIronCrown {
 	faceplayer
 	setvar (VAR_LAST_TALKED, IRON_CROWN)
 	playmoncry(SPECIES_IRON_CROWN, CRY_MODE_ENCOUNTER)
-	msgbox("Kawbraa!")
+	msgbox("Kaw-brah-on!")
 	waitmoncry
 	seteventmon(SPECIES_IRON_CROWN, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -53,7 +53,7 @@ script BattleIronBoulder {
 	faceplayer
 	setvar (VAR_LAST_TALKED, IRON_BOULDER)
 	playmoncry(SPECIES_IRON_BOULDER, CRY_MODE_ENCOUNTER)
-	msgbox("Gurooooohhh!")
+	msgbox("Gurr-oonnn!")
 	waitmoncry
 	seteventmon(SPECIES_IRON_BOULDER, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)

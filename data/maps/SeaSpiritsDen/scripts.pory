@@ -8,11 +8,11 @@ mapscripts SeaSpiritsDen_MapScripts {
 			setflag (FLAG_TEMP_2)
 			removeobject(ARTICUNO)
 		}
-		elif(flag(FLAG_CAUGHT_ZAPDOS)) {
+		if(flag(FLAG_CAUGHT_ZAPDOS)) {
 			setflag (FLAG_TEMP_3)
 			removeobject(ZAPDOS)
 		}
-		elif(flag(FLAG_CAUGHT_MOLTRES)) {
+		if(flag(FLAG_CAUGHT_MOLTRES)) {
 			setflag (FLAG_TEMP_4)
 			removeobject(MOLTRES)
 		}
@@ -33,7 +33,7 @@ script BattleArticuno {
 	faceplayer
 	setvar (VAR_LAST_TALKED, ARTICUNO)
 	playmoncry(SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER)
-	msgbox("Gyooa!")
+	msgbox("Gyaoo!")
 	waitmoncry
 	seteventmon(SPECIES_ARTICUNO, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -53,7 +53,7 @@ script BattleZapdos {
 	faceplayer
 	setvar (VAR_LAST_TALKED, ZAPDOS)
 	playmoncry(SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER)
-	msgbox("Gyooa!")
+	msgbox("Gyaoo!")
 	waitmoncry
 	seteventmon(SPECIES_ZAPDOS, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -73,7 +73,7 @@ script BattleMoltres {
 	faceplayer
 	setvar (VAR_LAST_TALKED, MOLTRES)
 	playmoncry(SPECIES_MOLTRES, CRY_MODE_ENCOUNTER)
-	msgbox("Gyooa!")
+	msgbox("Gyaoo!")
 	waitmoncry
 	seteventmon(SPECIES_MOLTRES, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)

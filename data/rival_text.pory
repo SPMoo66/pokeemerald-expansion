@@ -1,6 +1,6 @@
 # Scene01
 text Scene01_BaronText {
-	format(	"H- Hello…? You don't look like you're stapled in place like the others/p"
+	format(	"H- Hello…? You don't look like you're stapled in place like the others.\p"
 			"Ack!? It moved!? Stay back, demon!\n"
 			"Stay back or else I'll… I'l…!!!\p"
 			"… … …?\p"

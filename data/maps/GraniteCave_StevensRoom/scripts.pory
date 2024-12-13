@@ -1,0 +1,248 @@
+const STEVEN = 1
+const MAGMA_F = 2
+const MAGMA_M = 3
+
+mapscripts GraniteCave_StevensRoom_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_1)
+	}
+}
+
+script GraniteCave_StevensRoom_EventScript_Steven {
+	lock
+	faceplayer
+	speakername (CommonText_Steven)
+	msgbox (GraniteCave_StevensRoom_Text_ImStevenLetterForMe)
+	closemessage
+	setvar (VAR_0x8004, ITEM_LETTER)
+	call (Common_EventScript_PlayerHandedOverTheItem)
+	speakername (CommonText_Steven)
+	msgbox (GraniteCave_StevensRoom_Text_ThankYouTakeThis)
+	closemessage
+	speakername (CommonText_Q)
+	msgbox ("Hold it!")
+	closemessage
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	special (SpawnCameraObject)
+	if (var(VAR_TEMP_1) == 8) {
+		applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp)
+		waitmovement (0)
+	}
+	elif (var(VAR_TEMP_1) == 9) {
+		applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp2)
+		waitmovement (0)
+	}
+	playse (SE_PIN)
+	applymovement (STEVEN, Common_Movement_ExclamationMark)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+	delay (30)
+	playbgm (MUS_ENCOUNTER_MAGMA, FALSE)
+	playse (SE_EXIT)
+	addobject (MAGMA_F)
+	if (var(VAR_FACING) != DIR_SOUTH) {
+		applymovement (STEVEN, Common_Movement_WalkInPlaceFasterUp)
+	}
+	if (var(VAR_FACING) != DIR_NORTH) {
+		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
+	}
+	applymovement (MAGMA_F, Common_Movement_WalkDown2)
+	waitmovement (0)
+	playse (SE_EXIT)
+	addobject (MAGMA_M)
+	applymovement (MAGMA_F, GraniteCave_MagmaF_Enter)
+	applymovement (MAGMA_M, Common_Movement_WalkDown2)
+	waitmovement (0)
+	speakername (CommonText_MagmaGrunt)
+	msgbox("Hand over those Devon Goods, now!")
+	speakername (CommonText_Steven)
+	msgbox ("Devon Goods?\n"
+			"I have nothing of the sort.\p"
+			"Unless…")
+	switch (var(VAR_TEMP_1)) {
+		case 7:
+			applymovement (STEVEN, Common_Movement_WalkInPlaceFasterUp)
+		case 8:
+			if (var(VAR_TEMP_0) == 5) {
+				applymovement (STEVEN, Common_Movement_WalkInPlaceFasterLeft)
+			}
+			else {
+				applymovement (STEVEN, Common_Movement_WalkInPlaceFasterRight)
+			}
+		case 9:
+			applymovement (STEVEN, Common_Movement_WalkInPlaceFasterDown)
+		default:
+	}
+	waitmovement (0)
+	delay (30)
+	playse (SE_PIN)
+	applymovement (STEVEN, Common_Movement_ExclamationMark)
+	delay (30)
+	applymovement (STEVEN, Common_Movement_WalkFastUp)
+	if (var(VAR_TEMP_1) == 7) {
+		applymovement (OBJ_EVENT_ID_PLAYER, GraniteCave_PlayerPushed)
+		applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft)
+	}
+	waitmovement (0)
+	speakername (CommonText_Steven)
+	msgbox ("{PLAYER}!\n"
+			"Let me take care of-!!\p"
+			"No, help me with this!")
+	if (var(VAR_TEMP_1) == 8) {
+		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkFastUp)
+	}
+	elif (var(VAR_TEMP_1) == 9) {
+		applymovement (OBJ_EVENT_ID_PLAYER, GraniteCave_PlayerRunUp)
+		applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft)
+	}
+	waitmovement (0)
+	special (RemoveCameraObject)
+	special (SavePlayerParty)
+	fadescreen (FADE_TO_BLACK)
+	special (ChooseHalfPartyForBattle)
+	waitstate
+	multi_2_vs_2 (TRAINER_MAGMA_GRUNT_F_GRANITE_CAVE, "Wh-what??", TRAINER_MAGMA_GRUNT_M_GRANITE_CAVE, "Tch…\nYou told me we could handle this!", PARTNER_STEVEN_GRANITE_CAVE)
+
+	if (var(VAR_RESULT) == 1) {
+		applymovement (MAGMA_F, Common_Movement_FaceRight)
+		applymovement (MAGMA_M, Common_Movement_WalkInPlaceFasterLeft)
+		waitmovement (0)
+		speakername (CommonText_MagmaGrunt)
+		msgbox (format("You never told me HE would be here!"))
+		applymovement (MAGMA_F, Common_Movement_WalkInPlaceFasterRight)
+		waitmovement (0)
+		msgbox (format("I-I didn't know either!\pWe were just following the kid, right?"))
+		applymovement (MAGMA_M, Common_Movement_WalkInPlaceFasterLeft)
+		waitmovement (0)
+		msgbox (format(	"Well, you know what to do in this situation…\p"
+						"… … …\n"
+						"Run!"))
+		closemessage
+		delay (20)
+		applymovement (MAGMA_M, Common_Movement_WalkFastUp2)
+		waitmovement (0)
+		playse (SE_EXIT)
+		removeobject (MAGMA_M)
+		delay (30)
+		applymovement (MAGMA_F, Common_Movement_WalkInPlaceDown)
+		waitmovement (0)
+		delay (30)
+		playse (SE_PIN)
+		applymovement (MAGMA_F, Common_Movement_ExclamationMark)
+		delay (30)
+		applymovement (MAGMA_F, Common_Movement_WalkInPlaceFasterUp)
+		waitmovement (0)
+		speakername (CommonText_MagmaGrunt)
+		msgbox ("Ah-ahh!\nWait for me!")
+		closemessage
+		applymovement (MAGMA_F, GraniteCave_MagmaF_Exit)
+		waitmovement (0)
+		playse (SE_EXIT)
+		removeobject (MAGMA_F)
+		delay (30)
+		speakername (CommonText_Steven)
+		msgbox ("… … …")
+		closemessage
+		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+		if (var(VAR_TEMP_0) == 5) {
+			applymovement (STEVEN, Common_Movement_WalkInPlaceFasterLeft)
+			applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
+		}
+		else {
+			applymovement (STEVEN, Common_Movement_WalkInPlaceFasterRight)
+			applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
+		}
+		speakername (CommonText_Steven)
+		msgbox (format(	"Well then.\p"
+						"As entertaining as those two characters were, they were a part of Team Magma.\p"
+						"You may not be from Hoenn, so I'll let you know that they're incredibly dangerous.\p"
+						"At least, they usually are…\p"
+						"You handled yourself well there, and your Pokémon appear quite capable.\p"
+						"If you keep training, you could even\n"
+						"become the Champion of the Pokémon\l"
+						"League one day. That's what I think.\p"
+						"Still, be very wary of those types of people.\p"
+						"I know, since we've gotten to know each\n"
+						"other, let's register one another in\l"
+						"our Pokénavs.\p"
+						"… … … … … …$"))
+		closemessage
+		delay (30)
+		playfanfare (MUS_REGISTER_MATCH_CALL)
+		msgbox (GraniteCave_StevensRoom_Text_RegisteredSteven)
+		waitfanfare
+		closemessage
+		delay (30)
+		setflag (FLAG_REGISTERED_STEVEN_POKENAV)
+		setflag (FLAG_DELIVERED_STEVEN_LETTER)
+		speakername (CommonText_Steven)
+		msgbox (GraniteCave_StevensRoom_Text_IveGotToHurryAlong)
+		closemessage
+		applymovement (STEVEN, GraniteCave_StevensRoom_Movement_StevenExit)
+		waitmovement (0)
+		playse (SE_EXIT)
+		removeobject (STEVEN)
+		release
+	}
+	else {
+		fadescreen (FADE_TO_BLACK)
+		special (SetCB2WhiteOut)
+		waitstate
+	}
+}
+
+
+movement GraniteCave_StevensRoom_Movement_StevenExit {
+	walk_up * 4
+	delay_8
+}
+
+movement GraniteCave_StevensRoom_Movement_PlayerTurnTowardExit {
+	delay_16 * 3
+	walk_in_place_faster_up
+}
+
+movement GraniteCave_MagmaF_Enter {
+	walk_left
+	walk_in_place_down
+}
+
+movement GraniteCave_PlayerPushed {
+	lock_facing_direction
+	walk_fast_left
+}
+
+movement GraniteCave_PlayerRunUp {
+	walk_fast_left
+	walk_fast_up * 2
+}
+
+movement GraniteCave_MagmaF_Exit {
+	walk_fast_up
+	walk_fast_right
+	walk_fast_up
+}
+
+
+text GraniteCave_StevensRoom_Text_ImStevenLetterForMe {
+	"My name is Steven.\p"
+	"I'm interested in rare stones,\n"
+	"so I travel here and there.\p"
+	"Oh?\n"
+	"A Letter for me?"
+}
+
+text GraniteCave_StevensRoom_Text_ThankYouTakeThis {
+	"Okay, thank you.\p"
+	"You went through all this trouble to\n"
+	"deliver that. I need to thank you.\p"
+	"Let me see…"
+}
+
+text GraniteCave_StevensRoom_Text_RegisteredSteven {
+	"Registered Steven\n"
+	"in the Pokénav.$"
+}
+
+text GraniteCave_StevensRoom_Text_IveGotToHurryAlong {
+	"Now, I've got to hurry along.$"
+}

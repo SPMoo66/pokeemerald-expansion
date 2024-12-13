@@ -6,7 +6,7 @@ REVISION    := 0
 KEEP_TEMPS  ?= 0
 
 # `File name`.gba ('_agbcc' will be appended to the non-modern builds)
-FILE_NAME := emeralbody_demo
+FILE_NAME := Emeralbody_Demo
 BUILD_DIR := build
 
 # Builds the ROM using a modern compiler

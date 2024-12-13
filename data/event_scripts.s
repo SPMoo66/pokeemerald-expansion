@@ -1077,3 +1077,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RustboroCity_DevonCorp_B1F/scripts.inc"
 
 	.include "data/maps/SeasideHollow/scripts.inc"
+
+	.include "data/maps/InfernalDrylands/scripts.inc"

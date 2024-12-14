@@ -249,6 +249,7 @@ BattleScript_TrainerASlideMsgRet::
 	trainerslidein BS_OPPONENT1
 	handletrainerslidemsg BS_SCRIPTING, 1
 	waitstate
+	pause 80
 	trainerslideout BS_OPPONENT1
 	waitstate
 	handletrainerslidemsg BS_SCRIPTING, 2
@@ -263,6 +264,7 @@ BattleScript_TrainerBSlideMsgRet::
 	trainerslidein BS_OPPONENT2
 	handletrainerslidemsg BS_SCRIPTING, 1
 	waitstate
+	pause 80
 	trainerslideout BS_OPPONENT2
 	waitstate
 	handletrainerslidemsg BS_SCRIPTING, 2

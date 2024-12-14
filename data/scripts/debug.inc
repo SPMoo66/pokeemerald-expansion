@@ -185,8 +185,8 @@ Debug_EventScript_Script_7::
 	end
 
 Debug_EventScript_Script_8::
-    cleartrainerflag TRAINER_JUAN_1
-    trainerbattle_single TRAINER_JUAN_1, gText_Blank, gText_Blank
+    cleartrainerflag TRAINER_WATTSON_1
+    trainerbattle_single TRAINER_WATTSON_1, gText_Blank, gText_Blank
 	release
 	end
 

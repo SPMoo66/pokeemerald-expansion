@@ -3741,13 +3741,6 @@ static const struct TrainerMon sParty_Sidney[] = {
     .moves = {MOVE_STICKY_WEB, MOVE_LIQUIDATION, MOVE_LEECH_LIFE, MOVE_POWER_SPLIT}
     },
     {
-    .lvl = 58,
-    .species = SPECIES_KLEAVOR,
-    .ability = ABILITY_SHARPNESS,
-    .heldItem = ITEM_CHOICE_SCARF,
-    .moves = {MOVE_MIGHTY_CLEAVE, MOVE_X_SCISSOR, MOVE_U_TURN, MOVE_CLOSE_COMBAT}
-    },
-    {
     .lvl = 59,
     .species = SPECIES_CARRACOSTA,
     .ability = ABILITY_STURDY,
@@ -3767,6 +3760,14 @@ static const struct TrainerMon sParty_Sidney[] = {
     .ability = ABILITY_PROTOSYNTHESIS,
     .heldItem = ITEM_THROAT_SPRAY,
     .moves = {MOVE_HYDRO_STEAM, MOVE_DRAGON_PULSE, MOVE_NOBLE_ROAR, MOVE_AQUA_JET}
+    },
+    {
+    .lvl = 58,
+    .species = SPECIES_KLEAVOR,
+    .ability = ABILITY_SHARPNESS,
+    .heldItem = ITEM_CHOICE_SCARF,
+    .teraType = TYPE_FIGHTING,
+    .moves = {MOVE_MIGHTY_CLEAVE, MOVE_X_SCISSOR, MOVE_U_TURN, MOVE_CLOSE_COMBAT}
     }
 };
 
@@ -3777,13 +3778,6 @@ static const struct TrainerMon sParty_Phoebe[] = {
     .ability = ABILITY_SYNCHRONIZE,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_MOONLIGHT, MOVE_CURSE, MOVE_BATON_PASS, MOVE_TOXIC}
-    },
-    {
-    .lvl = 58,
-    .species = SPECIES_ELECTRODE_HISUIAN,
-    .ability = ABILITY_AFTERMATH,
-    .heldItem = ITEM_LIFE_ORB,
-    .moves = {MOVE_CHLOROBLAST, MOVE_THUNDERBOLT, MOVE_GIGA_DRAIN, MOVE_FOUL_PLAY}
     },
     {
     .lvl = 59,
@@ -3797,6 +3791,7 @@ static const struct TrainerMon sParty_Phoebe[] = {
     .species = SPECIES_HYDRAPPLE,
     .ability = ABILITY_REGENERATOR,
     .heldItem = ITEM_ASSAULT_VEST,
+    .teraType = TYPE_STEEL,
     .moves = {MOVE_FICKLE_BEAM, MOVE_POLLEN_PUFF, MOVE_GIGA_DRAIN, MOVE_BREAKING_SWIPE}
     },
     {
@@ -3812,6 +3807,13 @@ static const struct TrainerMon sParty_Phoebe[] = {
     .ability = ABILITY_PROTOSYNTHESIS,
     .heldItem = ITEM_BOOSTER_ENERGY,
     .moves = {MOVE_CALM_MIND, MOVE_THUNDERCLAP, MOVE_DRACO_METEOR, MOVE_SOLAR_BEAM}
+    },
+    {
+    .lvl = 58,
+    .species = SPECIES_ELECTRODE_HISUIAN,
+    .ability = ABILITY_AFTERMATH,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_CHLOROBLAST, MOVE_THUNDERBOLT, MOVE_GIGA_DRAIN, MOVE_FOUL_PLAY}
     }
 };
 
@@ -3829,13 +3831,6 @@ static const struct TrainerMon sParty_Glacia[] = {
     .ability = ABILITY_SNOW_WARNING,
     .heldItem = ITEM_LIGHT_CLAY,
     .moves = {MOVE_AURORA_VEIL, MOVE_FREEZE_DRY, MOVE_ENCORE, MOVE_MOONBLAST}
-    },
-    {
-    .lvl = 60,
-    .species = SPECIES_AEGISLASH_EMERIBIAN,
-    .ability = ABILITY_STEELY_SPIRIT,
-    .heldItem = ITEM_METAL_COAT,
-    .moves = {MOVE_GIGATON_HAMMER, MOVE_FIRE_LASH, MOVE_SHADOW_SNEAK, MOVE_SPIRIT_BREAK}
     },
     {
     .lvl = 61,
@@ -3857,6 +3852,14 @@ static const struct TrainerMon sParty_Glacia[] = {
     .ability = ABILITY_FAIRY_AURA,
     .heldItem = ITEM_POWER_HERB,
     .moves = {MOVE_GEOMANCY, MOVE_MOONBLAST, MOVE_THUNDERBOLT, MOVE_AROMATHERAPY}
+    },
+    {
+    .lvl = 60,
+    .species = SPECIES_AEGISLASH_EMERIBIAN,
+    .ability = ABILITY_STEELY_SPIRIT,
+    .heldItem = ITEM_METAL_COAT,
+    .teraType = TYPE_GHOST,
+    .moves = {MOVE_GIGATON_HAMMER, MOVE_FIRE_LASH, MOVE_SHADOW_SNEAK, MOVE_SPIRIT_BREAK}
     }
 };
 
@@ -3874,13 +3877,6 @@ static const struct TrainerMon sParty_Drake[] = {
     .ability = ABILITY_STRONG_JAW,
     .heldItem = ITEM_CHOICE_BAND,
     .moves = {MOVE_FISHIOUS_REND, MOVE_PSYCHIC_FANGS, MOVE_CRUNCH, MOVE_OUTRAGE}
-    },
-    {
-    .lvl = 61,
-    .species = SPECIES_GLISCOR,
-    .ability = ABILITY_POISON_HEAL,
-    .heldItem = ITEM_TOXIC_ORB,
-    .moves = {MOVE_DIRE_CLAW, MOVE_EARTHQUAKE, MOVE_FACADE, MOVE_PROTECT}
     },
     {
     .lvl = 62,
@@ -3902,6 +3898,14 @@ static const struct TrainerMon sParty_Drake[] = {
     .ability = ABILITY_REGENERATOR,
     .heldItem = ITEM_WEAKNESS_POLICY,
     .moves = {MOVE_SACRED_FIRE, MOVE_WHIRLWIND, MOVE_EARTHQUAKE, MOVE_AIR_CUTTER}
+    },
+    {
+    .lvl = 61,
+    .species = SPECIES_GLISCOR,
+    .ability = ABILITY_POISON_HEAL,
+    .heldItem = ITEM_TOXIC_ORB,
+    .teraType = TYPE_NORMAL,
+    .moves = {MOVE_DIRE_CLAW, MOVE_EARTHQUAKE, MOVE_FACADE, MOVE_PROTECT}
     }
 };
 
@@ -4001,6 +4005,7 @@ static const struct TrainerMon sParty_Wattson1[] = {
     .species = SPECIES_VAROOM,
     .ability = ABILITY_OVERCOAT,
     .heldItem = ITEM_AIR_BALLOON,
+    .teraType = TYPE_STEEL,
     .moves = {MOVE_SHIFT_GEAR, MOVE_HEADBUTT, MOVE_IRON_HEAD, MOVE_VENOSHOCK}
     }
 };
@@ -4025,6 +4030,7 @@ static const struct TrainerMon sParty_Flannery1[] = {
     .species = SPECIES_DACHSBUN,
     .ability = ABILITY_WELL_BAKED_BODY,
     .heldItem = ITEM_ROCKY_HELMET,
+    .teraType = TYPE_FIRE,
     .moves = {MOVE_PLAY_ROUGH, MOVE_BABY_DOLL_EYES, MOVE_FIRE_FANG, MOVE_RAIN_DANCE}
     },
     {
@@ -4063,6 +4069,7 @@ static const struct TrainerMon sParty_Norman1[] = {
     .species = SPECIES_MAGCARGO_EMERIBIAN,
     .ability = ABILITY_STEAM_ENGINE,
     .heldItem = ITEM_AIR_BALLOON,
+    .teraType = TYPE_GHOST,
     .moves = {MOVE_LAVA_PLUME, MOVE_MAGNET_BOMB, MOVE_SHELL_SMASH, MOVE_GUARD_SWAP}
     },
     {
@@ -4108,6 +4115,7 @@ static const struct TrainerMon sParty_Winona1[] = {
     .species = SPECIES_TOXICROAK,
     .ability = ABILITY_DRY_SKIN,
     .heldItem = ITEM_PAYAPA_BERRY,
+    .teraType = TYPE_ROCK,
     .moves = {MOVE_ROCK_SLIDE, MOVE_UPPER_HAND, MOVE_POISON_JAB, MOVE_BRICK_BREAK}
     },
     {
@@ -4153,6 +4161,7 @@ static const struct TrainerMon sParty_TateAndLiza1[] = {
     .species = SPECIES_ARCANINE_HISUIAN,
     .ability = ABILITY_INTIMIDATE,
     .heldItem = ITEM_WEAKNESS_POLICY,
+    .teraType = TYPE_NORMAL,
     .moves = {MOVE_EXTREME_SPEED, MOVE_HEAT_CRASH, MOVE_HEAD_SMASH, MOVE_MORNING_SUN}
     },
     {
@@ -4184,6 +4193,7 @@ static const struct TrainerMon sParty_Juan1[] = {
     .species = SPECIES_CYCLIZAR,
     .heldItem = ITEM_ASSAULT_VEST,
     .ability = ABILITY_REGENERATOR,
+    .teraType = TYPE_STEEL,
     .moves = {MOVE_U_TURN, MOVE_DRAGON_CHEER, MOVE_BREAKING_SWIPE, MOVE_SHED_TAIL}
     },
     {
@@ -5123,6 +5133,7 @@ static const struct TrainerMon sParty_Wallace[] = {
     .species = SPECIES_TERAPAGOS,
     .ability = ABILITY_TERA_SHIFT,
     .heldItem = ITEM_POWER_HERB,
+    .teraType = TYPE_STELLAR,
     .moves = {MOVE_METEOR_BEAM, MOVE_SOLAR_BEAM, MOVE_TERA_STARSTORM, MOVE_DAZZLING_GLEAM}
     },
     {

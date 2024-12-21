@@ -326,7 +326,7 @@ BattleGenesect::
 # 164 "data/maps/AquaHideout_B2F/scripts.pory"
 	waitmoncry
 # 165 "data/maps/AquaHideout_B2F/scripts.pory"
-	seteventmon SPECIES_GENESECT, 40
+	seteventmon SPECIES_GENESECT, 50
 # 166 "data/maps/AquaHideout_B2F/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 167 "data/maps/AquaHideout_B2F/scripts.pory"

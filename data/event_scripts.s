@@ -1079,3 +1079,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SeasideHollow/scripts.inc"
 
 	.include "data/maps/InfernalDrylands/scripts.inc"
+
+	.include "data/maps/FloralParadise/scripts.inc"

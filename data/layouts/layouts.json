@@ -4680,6 +4680,16 @@
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/InfernalDrylands/border.bin",
       "blockdata_filepath": "data/layouts/InfernalDrylands/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLORAL_PARADISE",
+      "name": "FloralParadise_Layout",
+      "width": 28,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_EverGrande",
+      "border_filepath": "data/layouts/FloralParadise/border.bin",
+      "blockdata_filepath": "data/layouts/FloralParadise/map.bin"
     }
   ]
 }

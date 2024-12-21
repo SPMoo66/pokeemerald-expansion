@@ -162,7 +162,7 @@ script BattleGenesect {
 	playmoncry(SPECIES_GENESECT, CRY_MODE_ENCOUNTER)
 	msgbox("Wraaayuu!")
 	waitmoncry
-	seteventmon(SPECIES_GENESECT, 40)
+	seteventmon(SPECIES_GENESECT, 50)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate

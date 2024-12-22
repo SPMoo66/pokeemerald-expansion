@@ -2208,6 +2208,46 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_TIMID,
 		.ability = ABILITY_LEVITATE
     },
+    [FRONTIER_MON_ROTOM_FAN] = {
+        .species = SPECIES_ROTOM_FAN,
+        .moves = {MOVE_NASTY_PLOT, MOVE_THUNDERBOLT, MOVE_AIR_SLASH, MOVE_SUBSTITUTE},
+        .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+        .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
+        .nature = NATURE_TIMID,
+		.ability = ABILITY_WIND_POWER
+    },
+    [FRONTIER_MON_ROTOM_FROST] = {
+        .species = SPECIES_ROTOM_FROST,
+        .moves = {MOVE_VOLT_SWITCH, MOVE_THUNDERBOLT, MOVE_BLIZZARD, MOVE_DEFOG},
+        .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+        .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
+        .nature = NATURE_TIMID,
+		.ability = ABILITY_LEVITATE
+    },
+    [FRONTIER_MON_ROTOM_HEAT] = {
+        .species = SPECIES_ROTOM_HEAT,
+        .moves = {MOVE_OVERHEAT, MOVE_THUNDERBOLT, MOVE_NASTY_PLOT, MOVE_PROTECT},
+        .heldItem = ITEM_SAFETY_GOGGLES,
+        .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
+        .nature = NATURE_MODEST,
+		.ability = ABILITY_LEVITATE
+    },
+    [FRONTIER_MON_ROTOM_MOW] = {
+        .species = SPECIES_ROTOM_MOW,
+        .moves = {MOVE_LEAF_STORM, MOVE_VOLT_SWITCH, MOVE_TRICK, MOVE_DEFOG},
+        .heldItem = ITEM_CHOICE_SCARF,
+        .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
+        .nature = NATURE_TIMID,
+		.ability = ABILITY_SEED_SOWER
+    },
+    [FRONTIER_MON_ROTOM_WASH] = {
+        .species = SPECIES_ROTOM_WASH,
+        .moves = {MOVE_THUNDERBOLT, MOVE_HYDRO_PUMP, MOVE_NASTY_PLOT, MOVE_PROTECT},
+        .heldItem = ITEM_SITRUS_BERRY,
+        .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
+        .nature = NATURE_MODEST,
+		.ability = ABILITY_LEVITATE
+    },
     [FRONTIER_MON_UXIE] = {
         .species = SPECIES_UXIE,
         .moves = {MOVE_TRICK_ROOM, MOVE_STEALTH_ROCK, MOVE_YAWN, MOVE_MAGIC_COAT},

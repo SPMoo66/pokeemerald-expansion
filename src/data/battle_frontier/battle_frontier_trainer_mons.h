@@ -185,6 +185,11 @@
     FRONTIER_MON_PROBOPASS,                  \
     FRONTIER_MON_DUSKNOIR,                   \
     FRONTIER_MON_ROTOM,                      \
+    FRONTIER_MON_ROTOM_FAN,                  \
+    FRONTIER_MON_ROTOM_FROST,                \
+    FRONTIER_MON_ROTOM_HEAT,                 \
+    FRONTIER_MON_ROTOM_MOW,                  \
+    FRONTIER_MON_ROTOM_WASH,                 \
     FRONTIER_MON_PHIONE,                     \
     FRONTIER_MON_WATCHOG,                    \
     FRONTIER_MON_STOUTLAND,                  \

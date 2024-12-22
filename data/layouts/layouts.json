@@ -1265,7 +1265,7 @@
       "id": "LAYOUT_METEOR_FALLS_B1F_2R",
       "name": "MeteorFalls_B1F_2R_Layout",
       "width": 11,
-      "height": 17,
+      "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/MeteorFalls_B1F_2R/border.bin",
@@ -4414,7 +4414,7 @@
     {
       "id": "LAYOUT_CAVE_OF_DREAMS",
       "name": "CaveOfDreams_Layout",
-      "width": 32,
+      "width": 36,
       "height": 32,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_MeteorFalls",
@@ -4670,6 +4670,26 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/SeasideHollow/border.bin",
       "blockdata_filepath": "data/layouts/SeasideHollow/map.bin"
+    },
+    {
+      "id": "LAYOUT_INFERNAL_DRYLANDS",
+      "name": "InfernalDrylands_Layout",
+      "width": 25,
+      "height": 18,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/InfernalDrylands/border.bin",
+      "blockdata_filepath": "data/layouts/InfernalDrylands/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLORAL_PARADISE",
+      "name": "FloralParadise_Layout",
+      "width": 28,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_EverGrande",
+      "border_filepath": "data/layouts/FloralParadise/border.bin",
+      "blockdata_filepath": "data/layouts/FloralParadise/map.bin"
     }
   ]
 }

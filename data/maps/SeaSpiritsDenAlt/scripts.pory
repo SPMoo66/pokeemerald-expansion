@@ -32,10 +32,10 @@ script BattleArticunoG {
 	lock
 	faceplayer
 	setvar (VAR_LAST_TALKED, ARTICUNO_G)
-	playmoncry(SPECIES_ARTICUNO_GALARIAN, CRY_MODE_ENCOUNTER)
+	playmoncry(SPECIES_ARTICUNO_GALAR, CRY_MODE_ENCOUNTER)
 	msgbox("Gyaoo!")
 	waitmoncry
-	seteventmon(SPECIES_ARTICUNO_GALARIAN, 40)
+	seteventmon(SPECIES_ARTICUNO_GALAR, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
@@ -52,10 +52,10 @@ script BattleZapdosG {
 	lock
 	faceplayer
 	setvar (VAR_LAST_TALKED, ZAPDOS_G)
-	playmoncry(SPECIES_ZAPDOS_GALARIAN, CRY_MODE_ENCOUNTER)
+	playmoncry(SPECIES_ZAPDOS_GALAR, CRY_MODE_ENCOUNTER)
 	msgbox("Gyaoo!")
 	waitmoncry
-	seteventmon(SPECIES_ZAPDOS_GALARIAN, 40)
+	seteventmon(SPECIES_ZAPDOS_GALAR, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate
@@ -72,10 +72,10 @@ script BattleMoltresG {
 	lock
 	faceplayer
 	setvar (VAR_LAST_TALKED, MOLTRES_G)
-	playmoncry(SPECIES_MOLTRES_GALARIAN, CRY_MODE_ENCOUNTER)
+	playmoncry(SPECIES_MOLTRES_GALAR, CRY_MODE_ENCOUNTER)
 	msgbox("Gyaoo!")
 	waitmoncry
-	seteventmon(SPECIES_MOLTRES_GALARIAN, 40)
+	seteventmon(SPECIES_MOLTRES_GALAR, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
 	waitstate

@@ -62,13 +62,13 @@ BattleArticunoG::
 # 34 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	setvar VAR_LAST_TALKED, 1
 # 35 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	playmoncry SPECIES_ARTICUNO_GALARIAN, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_ARTICUNO_GALAR, CRY_MODE_ENCOUNTER
 # 36 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	msgbox BattleArticunoG_Text_0
 # 37 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	waitmoncry
 # 38 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	seteventmon SPECIES_ARTICUNO_GALARIAN, 40
+	seteventmon SPECIES_ARTICUNO_GALAR, 40
 # 39 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 40 "data/maps/SeaSpiritsDenAlt/scripts.pory"
@@ -101,13 +101,13 @@ BattleZapdosG::
 # 54 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	setvar VAR_LAST_TALKED, 2
 # 55 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	playmoncry SPECIES_ZAPDOS_GALARIAN, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_ZAPDOS_GALAR, CRY_MODE_ENCOUNTER
 # 56 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	msgbox BattleArticunoG_Text_0
 # 57 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	waitmoncry
 # 58 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	seteventmon SPECIES_ZAPDOS_GALARIAN, 40
+	seteventmon SPECIES_ZAPDOS_GALAR, 40
 # 59 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 60 "data/maps/SeaSpiritsDenAlt/scripts.pory"
@@ -140,13 +140,13 @@ BattleMoltresG::
 # 74 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	setvar VAR_LAST_TALKED, 3
 # 75 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	playmoncry SPECIES_MOLTRES_GALARIAN, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_MOLTRES_GALAR, CRY_MODE_ENCOUNTER
 # 76 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	msgbox BattleArticunoG_Text_0
 # 77 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	waitmoncry
 # 78 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	seteventmon SPECIES_MOLTRES_GALARIAN, 40
+	seteventmon SPECIES_MOLTRES_GALAR, 40
 # 79 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 80 "data/maps/SeaSpiritsDenAlt/scripts.pory"

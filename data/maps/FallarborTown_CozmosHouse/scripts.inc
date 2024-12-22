@@ -50,7 +50,8 @@ FallarborTown_CozmosHouse_EventScript_DeclineGiveMeteorite::
 FallarborTown_CozmosHouse_EventScript_GaveMeteorite::
 	speakername (CommonText_Cozmo)
 	goto_if_set FLAG_METEORITE, FallarborTown_CozmosHouse_EventScript_DeoxysMeteoriteObtained
-	checkforspecies SPECIES_DEOXYS, NO_PARTY_SCREEN, FallarborTown_CozmosHouse_EventScript_HasDeoxys
+	checkspecies SPECIES_DEOXYS, NO_PARTY_SCREEN
+	goto_if_ne VAR_RESULT, FALSE, FallarborTown_CozmosHouse_EventScript_HasDeoxys
 	msgbox FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch, MSGBOX_DEFAULT
 	release
 	end

@@ -4,13 +4,13 @@
     FRONTIER_MON_BEEDRILL,                   \
     FRONTIER_MON_PIDGEOT,                    \
     FRONTIER_MON_RATICATE,                   \
-    FRONTIER_MON_RATICATE_ALOLAN,            \
+    FRONTIER_MON_RATICATE_ALOLA,             \
     FRONTIER_MON_FEAROW,                     \
     FRONTIER_MON_ARBOK,                      \
     FRONTIER_MON_RAICHU,                     \
-    FRONTIER_MON_RAICHU_ALOLAN,              \
+    FRONTIER_MON_RAICHU_ALOLA,               \
     FRONTIER_MON_SANDSLASH,                  \
-    FRONTIER_MON_SANDSLASH_ALOLAN,           \
+    FRONTIER_MON_SANDSLASH_ALOLA,            \
     FRONTIER_MON_NIDOQUEEN,                  \
     FRONTIER_MON_NIDOKING,                   \
     FRONTIER_MON_NINETALES,                  \
@@ -21,32 +21,32 @@
     FRONTIER_MON_PARASECT,                   \
     FRONTIER_MON_VENOMOTH,                   \
     FRONTIER_MON_DUGTRIO,                    \
-    FRONTIER_MON_DUGTRIO_ALOLAN,             \
+    FRONTIER_MON_DUGTRIO_ALOLA,              \
     FRONTIER_MON_PERSIAN,                    \
-    FRONTIER_MON_PERSIAN_ALOLAN,             \
+    FRONTIER_MON_PERSIAN_ALOLA,              \
     FRONTIER_MON_GOLDUCK,                    \
     FRONTIER_MON_ARCANINE,                   \
     FRONTIER_MON_POLIWRATH,                  \
     FRONTIER_MON_MACHAMP,                    \
     FRONTIER_MON_VICTREEBEL,                 \
     FRONTIER_MON_GOLEM,                      \
-    FRONTIER_MON_GOLEM_ALOLAN,               \
+    FRONTIER_MON_GOLEM_ALOLA,                \
     FRONTIER_MON_GOLEM_FRIBIAN,              \
     FRONTIER_MON_RAPIDASH,                   \
-    FRONTIER_MON_RAPIDASH_GALARIAN,          \
-    FRONTIER_MON_SLOWBRO_GALARIAN,           \
+    FRONTIER_MON_RAPIDASH_GALAR,             \
+    FRONTIER_MON_SLOWBRO_GALAR,              \
     FRONTIER_MON_DODRIO,                     \
     FRONTIER_MON_DODRIO_EMERIBIAN,           \
     FRONTIER_MON_DEWGONG,                    \
     FRONTIER_MON_MUK,                        \
-    FRONTIER_MON_MUK_ALOLAN,                 \
+    FRONTIER_MON_MUK_ALOLA,                  \
     FRONTIER_MON_HYPNO,                      \
     FRONTIER_MON_KINGLER,                    \
     FRONTIER_MON_ELECTRODE,                  \
     FRONTIER_MON_EXEGGUTOR,                  \
-    FRONTIER_MON_EXEGGUTOR_ALOLAN,           \
+    FRONTIER_MON_EXEGGUTOR_ALOLA,            \
     FRONTIER_MON_MAROWAK,                    \
-    FRONTIER_MON_MAROWAK_ALOLAN,             \
+    FRONTIER_MON_MAROWAK_ALOLA,              \
     FRONTIER_MON_HITMONLEE,                  \
     FRONTIER_MON_HITMONCHAN,                 \
     FRONTIER_MON_WEEZING,                    \
@@ -56,7 +56,7 @@
     FRONTIER_MON_JYNX,                       \
     FRONTIER_MON_PINSIR,                     \
     FRONTIER_MON_TAUROS,                     \
-    FRONTIER_MON_TAUROS_PALDEAN,             \
+    FRONTIER_MON_TAUROS_PALDEA_COMBAT,       \
     FRONTIER_MON_LAPRAS,                     \
     FRONTIER_MON_DITTO,                      \
     FRONTIER_MON_VAPOREON,                   \
@@ -223,7 +223,7 @@
     FRONTIER_MON_CRYOGONAL,                  \
     FRONTIER_MON_ACCELGOR,                   \
     FRONTIER_MON_STUNFISK,                   \
-    FRONTIER_MON_STUNFISK_GALARIAN,          \
+    FRONTIER_MON_STUNFISK_GALAR,             \
     FRONTIER_MON_DRUDDIGON,                  \
     FRONTIER_MON_GOLURK,                     \
     FRONTIER_MON_BOUFFALANT,                 \
@@ -235,8 +235,8 @@
     FRONTIER_MON_GOGOAT_EMERIBIAN,           \
     FRONTIER_MON_PANGORO,                    \
     FRONTIER_MON_FURFROU,                    \
-    FRONTIER_MON_MEOWSTIC,                   \
-    FRONTIER_MON_MEOWSTIC_FEMALE,            \
+    FRONTIER_MON_MEOWSTIC_M,                 \
+    FRONTIER_MON_MEOWSTIC_F,                 \
     FRONTIER_MON_AROMATISSE,                 \
     FRONTIER_MON_SLURPUFF,                   \
     FRONTIER_MON_MALAMAR,                    \
@@ -250,7 +250,7 @@
     FRONTIER_MON_TREVENANT_EMERIBIAN,        \
     FRONTIER_MON_GOURGEIST,                  \
     FRONTIER_MON_AVALUGG,                    \
-    FRONTIER_MON_AVALUGG_HISUIAN,            \
+    FRONTIER_MON_AVALUGG_HISUI,              \
     FRONTIER_MON_TOUCANNON,                  \
     FRONTIER_MON_GUMSHOOS,                   \
     FRONTIER_MON_VIKAVOLT,                   \
@@ -353,32 +353,32 @@
     FRONTIER_MON_CHARIZARD_EMERIBIAN,        \
     FRONTIER_MON_BLASTOISE,                  \
     FRONTIER_MON_CLEFABLE,                   \
-    FRONTIER_MON_NINETALES_ALOLAN,           \
-    FRONTIER_MON_ARCANINE_HISUIAN,           \
+    FRONTIER_MON_NINETALES_ALOLA,            \
+    FRONTIER_MON_ARCANINE_HISUI,             \
     FRONTIER_MON_ALAKAZAM,                   \
     FRONTIER_MON_TENTACRUEL,                 \
     FRONTIER_MON_SLOWBRO,                    \
     FRONTIER_MON_CLOYSTER,                   \
     FRONTIER_MON_CLOYSTER_FRIBIAN,           \
     FRONTIER_MON_GENGAR,                     \
-    FRONTIER_MON_ELECTRODE_HISUIAN,          \
-    FRONTIER_MON_WEEZING_GALARIAN,           \
+    FRONTIER_MON_ELECTRODE_HISUI,            \
+    FRONTIER_MON_WEEZING_GALAR,              \
     FRONTIER_MON_STARMIE,                    \
-    FRONTIER_MON_TAUROS_PALDEAN_AQUA_BREED,  \
-    FRONTIER_MON_TAUROS_PALDEAN_BLAZE_BREED, \
+    FRONTIER_MON_TAUROS_PALDEA_AQUA,         \
+    FRONTIER_MON_TAUROS_PALDEA_BLAZE,        \
     FRONTIER_MON_GYARADOS,                   \
     FRONTIER_MON_SNORLAX,                    \
     FRONTIER_MON_ARTICUNO,                   \
-    FRONTIER_MON_ARTICUNO_GALARIAN,          \
+    FRONTIER_MON_ARTICUNO_GALAR,             \
     FRONTIER_MON_ZAPDOS,                     \
-    FRONTIER_MON_ZAPDOS_GALARIAN,            \
+    FRONTIER_MON_ZAPDOS_GALAR,               \
     FRONTIER_MON_MOLTRES,                    \
-    FRONTIER_MON_MOLTRES_GALARIAN,           \
+    FRONTIER_MON_MOLTRES_GALAR,              \
     FRONTIER_MON_DRAGONITE,                  \
     FRONTIER_MON_MEGANIUM,                   \
     FRONTIER_MON_MEGANIUM_EMERIBIAN,         \
     FRONTIER_MON_TYPHLOSION,                 \
-    FRONTIER_MON_TYPHLOSION_HISUIAN,         \
+    FRONTIER_MON_TYPHLOSION_HISUI,           \
     FRONTIER_MON_TYPHLOSION_EMERIBIAN,       \
     FRONTIER_MON_FERALIGATR,                 \
     FRONTIER_MON_FERALIGATR_EMERIBIAN,       \
@@ -388,7 +388,7 @@
     FRONTIER_MON_QUAGSIRE,                   \
     FRONTIER_MON_UMBREON,                    \
     FRONTIER_MON_SLOWKING,                   \
-    FRONTIER_MON_SLOWKING_GALARIAN,          \
+    FRONTIER_MON_SLOWKING_GALAR,             \
     FRONTIER_MON_SCIZOR,                     \
     FRONTIER_MON_SHUCKLE,                    \
     FRONTIER_MON_SHUCKLE_FRIBIAN,            \
@@ -447,18 +447,18 @@
     FRONTIER_MON_SERPERIOR,                  \
     FRONTIER_MON_EMBOAR,                     \
     FRONTIER_MON_SAMUROTT,                   \
-    FRONTIER_MON_SAMUROTT_HISUIAN,           \
+    FRONTIER_MON_SAMUROTT_HISUI,             \
     FRONTIER_MON_EXCADRILL,                  \
     FRONTIER_MON_CONKELDURR,                 \
     FRONTIER_MON_SEISMITOAD,                 \
     FRONTIER_MON_SCOLIPEDE,                  \
     FRONTIER_MON_WHIMSICOTT,                 \
     FRONTIER_MON_LILLIGANT,                  \
-    FRONTIER_MON_LILLIGANT_HISUIAN,          \
+    FRONTIER_MON_LILLIGANT_HISUI,            \
     FRONTIER_MON_KROOKODILE,                 \
     FRONTIER_MON_DARMANITAN,                 \
-    FRONTIER_MON_DARMANITAN_GALARIAN,        \
-    FRONTIER_MON_ZOROARK_HISUIAN,            \
+    FRONTIER_MON_DARMANITAN_GALAR,           \
+    FRONTIER_MON_ZOROARK_HISUI,              \
     FRONTIER_MON_GOTHITELLE,                 \
     FRONTIER_MON_REUNICLUS,                  \
     FRONTIER_MON_VANILLUXE,                  \
@@ -470,7 +470,7 @@
     FRONTIER_MON_CHANDELURE,                 \
     FRONTIER_MON_HAXORUS,                    \
     FRONTIER_MON_MIENSHAO,                   \
-    FRONTIER_MON_BRAVIARY_HISUIAN,           \
+    FRONTIER_MON_BRAVIARY_HISUI,             \
     FRONTIER_MON_MANDIBUZZ,                  \
     FRONTIER_MON_DURANT,                     \
     FRONTIER_MON_HYDREIGON,                  \
@@ -498,11 +498,11 @@
     FRONTIER_MON_HELIOLISK,                  \
     FRONTIER_MON_SYLVEON,                    \
     FRONTIER_MON_HAWLUCHA,                   \
-    FRONTIER_MON_GOODRA_HISUIAN,             \
+    FRONTIER_MON_GOODRA_HISUI,               \
     FRONTIER_MON_KLEFKI,                     \
     FRONTIER_MON_NOIVERN,                    \
     FRONTIER_MON_DECIDUEYE,                  \
-    FRONTIER_MON_DECIDUEYE_HISUIAN,          \
+    FRONTIER_MON_DECIDUEYE_HISUI,            \
     FRONTIER_MON_INCINEROAR,                 \
     FRONTIER_MON_PRIMARINA,                  \
     FRONTIER_MON_RIBOMBEE,                   \
@@ -540,7 +540,7 @@
     FRONTIER_MON_ARCTOZOLT,                  \
     FRONTIER_MON_DRACOVISH,                  \
     FRONTIER_MON_DRAGAPULT,                  \
-    FRONTIER_MON_URSHIFU_RAPID_STRIKE_STYLE, \
+    FRONTIER_MON_URSHIFU_RAPID_STRIKE,       \
     FRONTIER_MON_URSHIFU,                    \
     FRONTIER_MON_REGIELEKI,                  \
     FRONTIER_MON_REGIDRAGO,                  \

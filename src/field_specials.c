@@ -31,6 +31,7 @@
 #include "overworld.h"
 #include "party_menu.h"
 #include "pokeblock.h"
+#include "pokedex.h"
 #include "pokemon.h"
 #include "pokemon_storage_system.h"
 #include "random.h"
@@ -4307,7 +4308,6 @@ void PreparePartyForSkyBattle(void)
     CompactPartySlots();
 }
 
-
 void GiveRandomDemoSpeciesCommon(void)
 {
     static const u16 sDemoBaseSpeciesCommon[] =
@@ -4316,55 +4316,55 @@ void GiveRandomDemoSpeciesCommon(void)
         SPECIES_WEEDLE,
         SPECIES_PIDGEY,
         SPECIES_RATTATA,
-        SPECIES_RATTATA_ALOLAN,
+        SPECIES_RATTATA_ALOLA,
         SPECIES_SPEAROW,
         SPECIES_EKANS,
         SPECIES_SANDSHREW,
-        SPECIES_SANDSHREW_ALOLAN,
+        SPECIES_SANDSHREW_ALOLA,
         SPECIES_NIDORAN_F,
         SPECIES_NIDORAN_M,
         SPECIES_VULPIX,
-        SPECIES_VULPIX_ALOLAN,
+        SPECIES_VULPIX_ALOLA,
         SPECIES_ZUBAT,
         SPECIES_ODDISH,
         SPECIES_ODDISH_EMERIBIAN,
         SPECIES_PARAS,
         SPECIES_VENONAT,
         SPECIES_DIGLETT,
-        SPECIES_DIGLETT_ALOLAN,
+        SPECIES_DIGLETT_ALOLA,
         SPECIES_MEOWTH,
-        SPECIES_MEOWTH_ALOLAN,
-        SPECIES_MEOWTH_GALARIAN,
+        SPECIES_MEOWTH_ALOLA,
+        SPECIES_MEOWTH_GALAR,
         SPECIES_PSYDUCK,
         SPECIES_MANKEY,
         SPECIES_GROWLITHE,
-        SPECIES_GROWLITHE_HISUIAN,
+        SPECIES_GROWLITHE_HISUI,
         SPECIES_POLIWAG,
         SPECIES_ABRA,
         SPECIES_MACHOP,
         SPECIES_BELLSPROUT,
         SPECIES_TENTACOOL,
         SPECIES_GEODUDE,
-        SPECIES_GEODUDE_ALOLAN,
+        SPECIES_GEODUDE_ALOLA,
         SPECIES_PONYTA,
-        SPECIES_PONYTA_GALARIAN,
+        SPECIES_PONYTA_GALAR,
         SPECIES_SLOWPOKE,
-        SPECIES_SLOWPOKE_GALARIAN,
+        SPECIES_SLOWPOKE_GALAR,
         SPECIES_MAGNEMITE,
         SPECIES_FARFETCHD,
-        SPECIES_FARFETCHD_GALARIAN,
+        SPECIES_FARFETCHD_GALAR,
         SPECIES_DODUO,
         SPECIES_DODUO_EMERIBIAN,
         SPECIES_SEEL,
         SPECIES_GRIMER,
-        SPECIES_GRIMER_ALOLAN,
+        SPECIES_GRIMER_ALOLA,
         SPECIES_SHELLDER,
         SPECIES_GASTLY,
         SPECIES_ONIX,
         SPECIES_DROWZEE,
         SPECIES_KRABBY,
         SPECIES_VOLTORB,
-        SPECIES_VOLTORB_HISUIAN,
+        SPECIES_VOLTORB_HISUI,
         SPECIES_EXEGGCUTE,
         SPECIES_CUBONE,
         SPECIES_LICKITUNG,
@@ -4377,9 +4377,9 @@ void GiveRandomDemoSpeciesCommon(void)
         SPECIES_SCYTHER,
         SPECIES_PINSIR,
         SPECIES_TAUROS,
-        SPECIES_TAUROS_PALDEAN_COMBAT_BREED,
-        SPECIES_TAUROS_PALDEAN_BLAZE_BREED,
-        SPECIES_TAUROS_PALDEAN_AQUA_BREED,
+        SPECIES_TAUROS_PALDEA_COMBAT,
+        SPECIES_TAUROS_PALDEA_BLAZE,
+        SPECIES_TAUROS_PALDEA_AQUA,
         SPECIES_MAGIKARP,
         SPECIES_LAPRAS,
         SPECIES_DITTO,
@@ -4406,7 +4406,7 @@ void GiveRandomDemoSpeciesCommon(void)
         SPECIES_SUNKERN,
         SPECIES_YANMA,
         SPECIES_WOOPER,
-        SPECIES_WOOPER_PALDEAN,
+        SPECIES_WOOPER_PALDEA,
         SPECIES_MURKROW,
         SPECIES_MISDREAVUS,
         SPECIES_UNOWN,
@@ -4416,12 +4416,12 @@ void GiveRandomDemoSpeciesCommon(void)
         SPECIES_GLIGAR,
         SPECIES_SNUBBULL,
         SPECIES_QWILFISH,
-        SPECIES_QWILFISH_HISUIAN,
+        SPECIES_QWILFISH_HISUI,
         SPECIES_TEDDIURSA,
         SPECIES_SLUGMA,
         SPECIES_SWINUB,
         SPECIES_CORSOLA,
-        SPECIES_CORSOLA_GALARIAN,
+        SPECIES_CORSOLA_GALAR,
         SPECIES_REMORAID,
         SPECIES_DELIBIRD,
         SPECIES_HOUNDOUR,
@@ -4435,7 +4435,7 @@ void GiveRandomDemoSpeciesCommon(void)
         SPECIES_MILTANK,
         SPECIES_POOCHYENA,
         SPECIES_ZIGZAGOON,
-        SPECIES_ZIGZAGOON_GALARIAN,
+        SPECIES_ZIGZAGOON_GALAR,
         SPECIES_WURMPLE,
         SPECIES_LOTAD,
         SPECIES_SEEDOT,
@@ -4553,18 +4553,18 @@ void GiveRandomDemoSpeciesCommon(void)
         SPECIES_BASCULIN,
         SPECIES_SANDILE,
         SPECIES_DARUMAKA,
-        SPECIES_DARUMAKA_GALARIAN,
+        SPECIES_DARUMAKA_GALAR,
         SPECIES_MARACTUS,
         SPECIES_DWEBBLE,
         SPECIES_SCRAGGY,
         SPECIES_SIGILYPH,
         SPECIES_YAMASK,
-        SPECIES_YAMASK_GALARIAN,
+        SPECIES_YAMASK_GALAR,
         SPECIES_TIRTOUGA,
         SPECIES_ARCHEN,
         SPECIES_TRUBBISH,
         SPECIES_ZORUA,
-        SPECIES_ZORUA_HISUIAN,
+        SPECIES_ZORUA_HISUI,
         SPECIES_MINCCINO,
         SPECIES_GOTHITA,
         SPECIES_SOLOSIS,
@@ -4586,7 +4586,7 @@ void GiveRandomDemoSpeciesCommon(void)
         SPECIES_CUBCHOO,
         SPECIES_SHELMET,
         SPECIES_STUNFISK,
-        SPECIES_STUNFISK_GALARIAN,
+        SPECIES_STUNFISK_GALAR,
         SPECIES_MIENFOO,
         SPECIES_DRUDDIGON,
         SPECIES_GOLETT,
@@ -4810,9 +4810,9 @@ void GiveRandomDemoSpeciesLegendary(void)
         SPECIES_ARTICUNO,
         SPECIES_ZAPDOS,
         SPECIES_MOLTRES,
-        SPECIES_ARTICUNO_GALARIAN,
-        SPECIES_ZAPDOS_GALARIAN,
-        SPECIES_MOLTRES_GALARIAN,
+        SPECIES_ARTICUNO_GALAR,
+        SPECIES_ZAPDOS_GALAR,
+        SPECIES_MOLTRES_GALAR,
         SPECIES_MEWTWO,
         SPECIES_MEW,
         SPECIES_RAIKOU,
@@ -4915,4 +4915,60 @@ void GiveRandomDemoSpeciesLegendary(void)
     u16 rnd = Random() % ARRAY_COUNT(sDemoBaseSpeciesLegendary);
     ScriptGiveMon(sDemoBaseSpeciesLegendary[rnd], 50, ITEM_NONE);
     StringCopy(gStringVar1, GetSpeciesName(sDemoBaseSpeciesLegendary[rnd]));
+}
+
+void GetObjectPosition(u16* xPointer, u16* yPointer, u32 localId, u32 useTemplate)
+{
+    u32 objectId;
+    struct ObjectEvent* objEvent;
+
+    if (useTemplate)
+    {
+        const struct ObjectEventTemplate *objTemplate = FindObjectEventTemplateByLocalId(localId, gSaveBlock1Ptr->objectEventTemplates, gMapHeader.events->objectEventCount);
+        *xPointer = objTemplate->x;
+        *yPointer = objTemplate->y;
+        return;
+    }
+
+    objectId = GetObjectEventIdByLocalId(localId);
+    objEvent = &gObjectEvents[objectId];
+    *xPointer = objEvent->currentCoords.x - 7;
+    *yPointer = objEvent->currentCoords.y - 7;
+}
+
+bool32 CheckObjectAtXY(u32 x, u32 y)
+{
+    u32 i;
+
+    for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
+    {
+        if (!gObjectEvents[i].active)
+            continue;
+
+        if (gObjectEvents[i].currentCoords.x != x)
+            continue;
+
+        if (gObjectEvents[i].currentCoords.y != y)
+            continue;
+        return TRUE;
+    }
+    return FALSE;
+}
+
+bool32 CheckPartyHasSpecies(u32 givenSpecies)
+{
+    u32 partyIndex;
+
+    for (partyIndex = 0; partyIndex < CalculatePlayerPartyCount(); partyIndex++)
+        if (GetMonData(&gPlayerParty[partyIndex], MON_DATA_SPECIES) == givenSpecies)
+            return TRUE;
+
+    return FALSE;
+}
+
+void UseBlankMessageToCancelPokemonPic(void)
+{
+    u8 t = EOS;
+    AddTextPrinterParameterized(0, FONT_NORMAL, &t, 0, 1, 0, NULL);
+    ScriptMenu_HidePokemonPic();
 }

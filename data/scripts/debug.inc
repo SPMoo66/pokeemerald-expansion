@@ -1,4 +1,3 @@
-.if DEBUG_OVERWORLD_MENU == TRUE
 Debug_MessageEnd:
 	waitmessage
 	waitbuttonpress
@@ -185,8 +184,8 @@ Debug_EventScript_Script_7::
 	end
 
 Debug_EventScript_Script_8::
-    cleartrainerflag TRAINER_JUAN_1
-    trainerbattle_single TRAINER_JUAN_1, gText_Blank, gText_Blank
+    cleartrainerflag TRAINER_WATTSON_1
+    trainerbattle_single TRAINER_WATTSON_1, gText_Blank, gText_Blank
 	release
 	end
 
@@ -466,5 +465,3 @@ Debug_EventScript_EWRAMCounters::
 Debug_EventScript_EWRAMCounters_Text::
 	.string "Follower Steps: {STR_VAR_1}.\n"
 	.string "Fishing Chain: {STR_VAR_2}.$"
-
-.endif

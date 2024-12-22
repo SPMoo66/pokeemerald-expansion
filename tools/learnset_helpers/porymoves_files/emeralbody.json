@@ -73,7 +73,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "RATICATE_ALOLAN": {
+  "RATICATE_ALOLA": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -102,7 +102,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "RAICHU_ALOLAN": {
+  "RAICHU_ALOLA": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -222,7 +222,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "ARCANINE_HISUIAN": {
+  "ARCANINE_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -240,7 +240,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "GEODUDE_ALOLAN": {
+  "GEODUDE_ALOLA": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -249,7 +249,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "GRAVELER_ALOLAN": {
+  "GRAVELER_ALOLA": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -267,7 +267,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "GOLEM_ALOLAN": {
+  "GOLEM_ALOLA": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -295,7 +295,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "RAPIDASH_GALARIAN": {
+  "RAPIDASH_GALAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -331,7 +331,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "FARFETCHD_GALARIAN": {
+  "FARFETCHD_GALAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -394,7 +394,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "VOLTORB_HISUIAN": {
+  "VOLTORB_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -412,7 +412,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "ELECTRODE_HISUIAN": {
+  "ELECTRODE_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -440,7 +440,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "MAROWAK_ALOLAN": {
+  "MAROWAK_ALOLA": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -551,7 +551,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "ZAPDOS_GALARIAN": {
+  "ZAPDOS_GALAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -608,7 +608,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "TYPHLOSION_HISUIAN": {
+  "TYPHLOSION_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -798,7 +798,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "QWILFISH_HISUIAN": {
+  "QWILFISH_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -816,7 +816,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "SNEASEL_HISUIAN": {
+  "SNEASEL_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -1661,7 +1661,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "SAMUROTT_HISUIAN": {
+  "SAMUROTT_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -1779,7 +1779,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "LILLIGANT_HISUIAN": {
+  "LILLIGANT_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -1861,7 +1861,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "ZOROARK_HISUIAN": {
+  "ZOROARK_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -2038,7 +2038,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "BRAVIARY_HISUIAN": {
+  "BRAVIARY_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -2258,7 +2258,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "GOODRA_HISUIAN": {
+  "GOODRA_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -2267,7 +2267,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "AVALUGG_HISUIAN": {
+  "AVALUGG_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -2276,7 +2276,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "AVALUGG_HISUIAN": {
+  "AVALUGG_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
@@ -2287,7 +2287,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "DECIDUEYE_HISUIAN": {
+  "DECIDUEYE_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [

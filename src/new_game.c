@@ -55,6 +55,7 @@ static void ClearFrontierRecord(void);
 static void WarpToTruck(void);
 static void ResetMiniGamesRecords(void);
 void ClearSav1NotDex(void);
+static void ResetItemFlags(void);
 
 EWRAM_DATA bool8 gDifferentSaveFile = FALSE;
 EWRAM_DATA bool8 gEnableContestDebugging = FALSE;
@@ -216,6 +217,7 @@ void NewGameInitData(void)
     ResetContestLinkResults();
     memset(gSaveBlock1Ptr->dexNavSearchLevels, 0, sizeof(gSaveBlock1Ptr->dexNavSearchLevels));
     gSaveBlock1Ptr->dexNavChain = 0;
+    ResetItemFlags();
 }
 
 static void ResetMiniGamesRecords(void)
@@ -278,4 +280,11 @@ void ClearSav1NotDex(void)
     CpuFill32(0, &gSaveBlock1Ptr->recordMixingGift, sizeof(struct RecordMixingGift));
     gSaveBlock1Ptr->pokevial.Size = VIAL_MIN_SIZE;
     gSaveBlock1Ptr->pokevial.Dose = VIAL_MIN_SIZE;
+}
+
+static void ResetItemFlags(void)
+{
+#if OW_SHOW_ITEM_DESCRIPTIONS == OW_ITEM_DESCRIPTIONS_FIRST_TIME
+    memset(&gSaveBlock3Ptr->itemFlags, 0, sizeof(gSaveBlock3Ptr->itemFlags));
+#endif
 }

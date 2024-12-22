@@ -562,4 +562,4 @@ gSpecials::
 	def_special Script_GetChosenMonDefensiveIVs
 	def_special ShowBottleCapsWindow
 	def_special UpdateBottleCapsWindow
-	def_special CheckPartyForMon
+	def_special UseBlankMessageToCancelPokemonPic

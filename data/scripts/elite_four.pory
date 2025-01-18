@@ -41,3 +41,178 @@ script PokemonLeague_EliteFour_EventScript_CloseDoor {
 	setmetatile (7, 13, METATILE_EliteFour_EntryDoor_ClosedBottom, TRUE)
 	return
 }
+
+
+
+script EverGrandeCity_SidneysRoom_EventScript_Sidney {
+	lock
+	faceplayer
+	if (!flag(FLAG_DEFEATED_ELITE_4_SIDNEY)) {
+		playbgm (MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+		msgbox (EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT)
+		trainerbattle_no_intro (TRAINER_SIDNEY, EverGrandeCity_SidneysRoom_Text_Defeat)
+		setflag (FLAG_DEFEATED_ELITE_4_SIDNEY)
+		call (PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
+	}
+	msgbox (EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT)
+	release
+}
+
+text EverGrandeCity_SidneysRoom_Text_IntroSpeech {
+	"Welcome, challenger!\n"
+	"I'm Sidney of the Elite Four.\p"
+	"I like that look you're giving me.\n"
+	"I guess you'll give me a good match.\l"
+	"That's good! Looking real good!\p"
+	"All right! You and me, let's enjoy\n"
+	"a battle that can only be staged\l"
+	"here in the Pokémon League!"
+}
+
+text EverGrandeCity_SidneysRoom_Text_Defeat {
+	"Well, how do you like that? I lost!\n"
+	"Eh, it was fun, so it doesn't matter."
+}
+
+text EverGrandeCity_SidneysRoom_Text_PostBattleSpeech {
+	"Well, listen to what this loser has\n"
+	"to say.\p"
+	"You've got what it takes to go far.\n"
+	"Now, go on to the next room and enjoy\l"
+	"your next battle!"
+}
+
+
+
+script EverGrandeCity_PhoebesRoom_EventScript_Phoebe {
+	lock
+	faceplayer
+	if (!flag(FLAG_DEFEATED_ELITE_4_PHOEBE)) {
+		playbgm (MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+		msgbox (EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT)
+		trainerbattle_no_intro (TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat)
+		setflag (FLAG_DEFEATED_ELITE_4_PHOEBE)
+		call (PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
+	}
+	msgbox (EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT)
+	release
+}
+
+text EverGrandeCity_PhoebesRoom_Text_IntroSpeech {
+	"Ahahaha!\p"
+	"I'm Phoebe of the Elite Four.\n"
+	"I did my training on Mt. Pyre.\p"
+	"While I trained, I gained the ability\n"
+	"to commune with Ghost-type Pokémon.\p"
+	"Yes, the bond I developed with Pokémon\n"
+	"is extremely tight.\p"
+	"So, come on, just try and see if you can\n"
+	"even inflict damage on my Pokémon!"
+}
+
+text EverGrandeCity_PhoebesRoom_Text_Defeat {
+	"Oh, darn.\n"
+	"I've gone and lost."
+}
+
+text EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech {
+	"There's a definite bond between you\n"
+	"and your Pokémon, too.\p"
+	"I didn't recognize it, so it's only\n"
+	"natural that I lost.\p"
+	"Yup, I'd like to see how far your bond\n"
+	"will carry you.\p"
+	"Go ahead, move on to the next room."
+}
+
+
+
+script EverGrandeCity_GlaciasRoom_EventScript_Glacia {
+	lock
+	faceplayer
+	if (!flag(FLAG_DEFEATED_ELITE_4_GLACIA)) {
+		playbgm (MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+		msgbox (EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT)
+		trainerbattle_no_intro (TRAINER_GLACIA, EverGrandeCity_GlaciasRoom_Text_Defeat)
+		setflag (FLAG_DEFEATED_ELITE_4_GLACIA)
+		call (PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
+	}
+	msgbox (EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT)
+	release
+}
+
+text EverGrandeCity_GlaciasRoom_Text_IntroSpeech {
+	"Welcome, my name is Glacia\n"
+	"of the Elite Four.\p"
+	"I've traveled from afar to Hoenn\n"
+	"so that I may hone my ice skills.\p"
+	"But all I have seen are challenges by\n"
+	"weak Trainers and their Pokémon.\p"
+	"What about you?\p"
+	"It would please me to no end if I could\n"
+	"go all out against you!"
+}
+
+text EverGrandeCity_GlaciasRoom_Text_Defeat {
+	"You and your Pokémon…\n"
+	"How hot your spirits burn!\p"
+	"The all-consuming heat overwhelms.\p"
+	"It's no surprise that my icy skills\n"
+	"failed to harm you."
+}
+
+text EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech {
+	"Advance to the next room.\p"
+	"And there, confirm the truly fearsome\n"
+	"side of the Pokémon League."
+}
+
+
+
+script EverGrandeCity_DrakesRoom_EventScript_Drake {
+	lock
+	faceplayer
+	if (!flag(FLAG_DEFEATED_ELITE_4_DRAKE)) {
+		playbgm (MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+		msgbox (EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT)
+		trainerbattle_no_intro (TRAINER_DRAKE, EverGrandeCity_DrakesRoom_Text_Defeat)
+		setvar (VAR_0x8004, FANCOUNTER_DEFEATED_DRAKE)
+		special (Script_TryGainNewFanFromCounter)
+		setflag (FLAG_DEFEATED_ELITE_4_DRAKE)
+		call (PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
+	}
+	msgbox (EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT)
+	release
+}
+
+text EverGrandeCity_DrakesRoom_Text_IntroSpeech {
+	"I am the last of the Pokémon League\n"
+	"Elite Four, Drake the Dragon master!\p"
+	"In their natural state, Pokémon are\n"
+	"wild living things. They are free.\p"
+	"At times, they hinder us.\n"
+	"At times, they help us.\p"
+	"For us to battle with Pokémon as\n"
+	"partners, do you know what it takes?\p"
+	"Do you know what is needed?\p"
+	"If you don't, then you will never\n"
+	"prevail over me!"
+}
+
+text EverGrandeCity_DrakesRoom_Text_Defeat {
+	"Superb, it should be said."
+}
+
+text EverGrandeCity_DrakesRoom_Text_PostBattleSpeech {
+	"You deserve every credit for coming\n"
+	"this far as a Trainer of Pokémon.\p"
+	"You do seem to know what is needed.\p"
+	"Yes, what a Trainer needs is a\n"
+	"virtuous heart.\p"
+	"Pokémon touch the good hearts of\n"
+	"Trainers and learn good from wrong.\p"
+	"They touch the good hearts of\n"
+	"Trainers and grow strong.\p"
+	"Go! Go onwards!\n"
+	"The Champion is waiting!"
+}

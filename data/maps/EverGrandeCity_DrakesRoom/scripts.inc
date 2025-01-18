@@ -16,13 +16,8 @@ EverGrandeCity_DrakesRoom_EventScript_WalkInCloseDoor::
 	end
 
 EverGrandeCity_DrakesRoom_OnLoad:
-	call_if_set FLAG_DEFEATED_ELITE_4_DRAKE, EverGrandeCity_DrakesRoom_EventScript_ResetAdvanceToNextRoom
 	call_if_eq VAR_ELITE_4_STATE, 4, EverGrandeCity_DrakesRoom_EventScript_CloseDoor
 	end
-
-EverGrandeCity_DrakesRoom_EventScript_ResetAdvanceToNextRoom::
-	call PokemonLeague_EliteFour_EventScript_ResetAdvanceToNextRoom
-	return
 
 EverGrandeCity_DrakesRoom_EventScript_CloseDoor::
 	call PokemonLeague_EliteFour_EventScript_CloseDoor

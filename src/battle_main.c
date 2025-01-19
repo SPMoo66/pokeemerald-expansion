@@ -1970,6 +1970,22 @@ void CustomTrainerPartyAssignMoves(struct Pokemon *mon, const struct TrainerMon 
     }
 }
 
+u8 GetMaxLevel(u8 lvl)
+{
+    s32 i;
+    u8 level = 1;
+	lvl = 1;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        level = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
+        if (level > lvl)
+        {
+            lvl = level;
+        }
+    }
+	return lvl;
+}
+
 u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer *trainer, bool32 firstTrainer, u32 battleTypeFlags)
 {
     u32 personalityValue;
@@ -2023,8 +2039,27 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 otIdType = OT_ID_PRESET;
                 fixedOtId = HIHALF(personalityValue) ^ LOHALF(personalityValue);
             }
-            CreateMon(&party[i], partyData[i].species, partyData[i].lvl, 0, TRUE, personalityValue, otIdType, fixedOtId);
-            SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
+            if (FlagGet(FLAG_LEVEL_SYNC)) {
+                u8 lvl = 1;
+                lvl = GetMaxLevel(0);
+                if (FlagGet(FLAG_CHALLENGING_TRAINER))
+                {
+                    CreateMon(&party[i], partyData[i].species, lvl, 0, TRUE, personalityValue, otIdType, fixedOtId);
+                }
+                else
+                {
+                    CreateMon(&party[i], partyData[i].species, lvl - 2, 0, TRUE, personalityValue, otIdType, fixedOtId);
+                }
+            }
+            else if (FlagGet(FLAG_ELITE_FOUR_CHALLENGE))
+            {
+                CreateMon(&party[i], partyData[i].species, 55 + i + VarGet(VAR_ELITE_4_STATE), 0, TRUE, personalityValue, otIdType, fixedOtId);
+            }
+            else
+            {
+                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, 0, TRUE, personalityValue, otIdType, fixedOtId);
+            }
+			SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
 
             CustomTrainerPartyAssignMoves(&party[i], &partyData[i]);
             SetMonData(&party[i], MON_DATA_IVS, &(partyData[i].iv));

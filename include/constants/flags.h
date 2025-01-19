@@ -1413,7 +1413,7 @@
 #define FLAG_SYS_NATIONAL_DEX                       (SYSTEM_FLAGS + 0x36)
 #define FLAG_WILD_PARTNER                           (SYSTEM_FLAGS + 0x37) // Set when multi partner is a wild Pokémon
 #define FLAG_SUPPRESS_SPEAKER_NAME                  (SYSTEM_FLAGS + 0x38) // Suppresses the speaker on text box
-#define FLAG_UNUSED_0xA39                           (SYSTEM_FLAGS + 0x39) // Unused Flag
+#define FLAG_ELITE_FOUR_CHALLENGE                   (SYSTEM_FLAGS + 0x39) // Was unused
 #define FLAG_SYS_SHOAL_TIDE                         (SYSTEM_FLAGS + 0x3A)
 #define FLAG_SYS_RIBBON_GET                         (SYSTEM_FLAGS + 0x3B)
 
@@ -1507,9 +1507,9 @@
 
 #define FLAG_MET_INVESTOR                           (SYSTEM_FLAGS + 0x85) // Met the Investor NPC
 #define FLAG_INVESTMENT_MADE                        (SYSTEM_FLAGS + 0x86) // Made an investment with the Investor NPC
+#define FLAG_LEVEL_SYNC                             (SYSTEM_FLAGS + 0x87) // Was unused
+#define FLAG_CHALLENGING_TRAINER                    (SYSTEM_FLAGS + 0x88) // Was unused
 
-#define FLAG_UNUSED_0x8E7                           (SYSTEM_FLAGS + 0x87) // Unused Flag
-#define FLAG_UNUSED_0x8E8                           (SYSTEM_FLAGS + 0x88) // Unused Flag
 #define FLAG_UNUSED_0x8E9                           (SYSTEM_FLAGS + 0x89) // Unused Flag
 #define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
 #define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag

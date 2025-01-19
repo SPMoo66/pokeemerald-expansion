@@ -13,11 +13,22 @@ RustboroCity_MapScripts::
 
 RustboroCity_OnTransition:
 	setflag FLAG_VISITED_RUSTBORO_CITY
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 2, RustboroCity_EventScript_UpdateRivalState
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 3, RustboroCity_EventScript_ShowRivals
 	call Common_EventScript_SetupRivalGfxId
 	call_if_eq VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_HideMapNamePopup
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 	goto_if_eq VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_PositionScientistForExit
 	end
+
+RustboroCity_EventScript_UpdateRivalState::
+	setvar VAR_EMERALBODY_RIVAL_STATE, 3
+	return
+
+RustboroCity_EventScript_ShowRivals::
+	clearflag FLAG_TEMP_1
+	return
 
 RustboroCity_EventScript_PositionScientistForExit::
 	goto_if_eq VAR_TEMP_0, 11, RustboroCity_EventScript_PositionScientistLeftExit

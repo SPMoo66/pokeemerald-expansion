@@ -2008,59 +2008,45 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Bianca::
 	return
 
 
-Sakura_Town01::
-# 1020 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	faceplayer
-# 1021 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	lock
-# 1022 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	speakername CommonText_Sakura
-# 1023 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox Town01_SakuraText
-# 1024 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	release
-	end
-
-
 LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox::
-# 1029 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1019 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	lock
-# 1030 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1020 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	checkitem ITEM_EXP_CHARM
-# 1031 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1021 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_2
-# 1039 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1029 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_2
-# 1040 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1030 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_3, MSGBOX_YESNO
-# 1041 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1031 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_7
 LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_1:
-# 1045 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1035 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	closemessage
-# 1046 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1036 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	release
 	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_2:
-# 1032 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1022 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_0, MSGBOX_YESNO
-# 1033 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1023 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_5
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_1
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_5:
-# 1034 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1024 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	removeitem ITEM_EXP_CHARM
-# 1035 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1025 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_1
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_1
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_7:
-# 1042 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1032 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	giveitem ITEM_EXP_CHARM
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_1
 
@@ -2091,19 +2077,19 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Bianca_Text_1:
 	.string "Bye-bye!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_0:
-# 1032 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1022 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Return the Exp. Charm to the box?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_1:
-# 1035 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1025 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "The Exp. Charm was returned to the box.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_2:
-# 1039 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1029 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "There's an Exp. Charm in the box!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_Text_3:
-# 1040 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1030 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "WARNING: The game is not balanced\n"
 	.string "around the use of the Exp. Charm.\p"
 	.string "Take the Exp. Charm anyway?$"

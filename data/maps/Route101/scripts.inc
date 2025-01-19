@@ -865,32 +865,6 @@ Route101_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0:
 	return
 
 
-Jakson_Town01::
-# 426 "data/maps/Route101/scripts.pory"
-	faceplayer
-# 427 "data/maps/Route101/scripts.pory"
-	lock
-# 428 "data/maps/Route101/scripts.pory"
-	speakername CommonText_Jakson
-# 429 "data/maps/Route101/scripts.pory"
-	msgbox Town01_JaksonText
-# 430 "data/maps/Route101/scripts.pory"
-	release
-	end
-
-
-Redd_Town01::
-# 435 "data/maps/Route101/scripts.pory"
-	lock
-# 436 "data/maps/Route101/scripts.pory"
-	speakername CommonText_Redd
-# 437 "data/maps/Route101/scripts.pory"
-	msgbox Town01_ReddText
-# 438 "data/maps/Route101/scripts.pory"
-	release
-	end
-
-
 Route101_PichuGift_Text_0:
 # 293 "data/maps/Route101/scripts.pory"
 	.string "Hello there.\n"

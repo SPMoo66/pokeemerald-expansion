@@ -282,9 +282,12 @@ text Town02_SakuraText {
 }
 
 # Town03
-text Town03_BaronText {
-	format(	"One step… two step… three step… four step…?\p"
-			"Oh, sorry. I didn't mean to bother you.\p"
+text Town03_BaronText1 {
+	format(	"One step… two step… three step… four step…?")
+}
+
+text Town03_BaronText2 {
+	format(	"Oh, sorry. I didn't mean to bother you.\p"
 			"I'm actually starting to get used to walking through this world.\p"
 			"I think I can thank that tutorial from a while back.\p"
 			"My muscle memory was helped a lot by it.\p"

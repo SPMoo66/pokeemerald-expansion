@@ -1912,142 +1912,142 @@ Baron_Town01::
 	waitmovement 0
 # 962 "data/maps/LittlerootTown/scripts.pory"
 	release
-	end
+	return
 
 
-# 966 "data/maps/LittlerootTown/scripts.pory"
+# 965 "data/maps/LittlerootTown/scripts.pory"
 Baron_Town01_Move:
-# 967 "data/maps/LittlerootTown/scripts.pory"
+# 966 "data/maps/LittlerootTown/scripts.pory"
 	walk_in_place_left
-# 968 "data/maps/LittlerootTown/scripts.pory"
+# 967 "data/maps/LittlerootTown/scripts.pory"
 	delay_16
 	step_end
 
 Rival_Scene01::
-# 972 "data/maps/LittlerootTown/scripts.pory"
+# 971 "data/maps/LittlerootTown/scripts.pory"
 	compare VAR_BIRCH_LAB_STATE, 3
 	goto_if_eq Rival_Scene01_2
 Rival_Scene01_1:
-# 1009 "data/maps/LittlerootTown/scripts.pory"
+# 1008 "data/maps/LittlerootTown/scripts.pory"
 	release
 	end
 
 Rival_Scene01_2:
-# 973 "data/maps/LittlerootTown/scripts.pory"
+# 972 "data/maps/LittlerootTown/scripts.pory"
 	lock
-# 974 "data/maps/LittlerootTown/scripts.pory"
+# 973 "data/maps/LittlerootTown/scripts.pory"
 	call Common_EventScript_PlayEmRivalBgm
-# 975 "data/maps/LittlerootTown/scripts.pory"
+# 974 "data/maps/LittlerootTown/scripts.pory"
 	playse SE_PIN
-# 976 "data/maps/LittlerootTown/scripts.pory"
+# 975 "data/maps/LittlerootTown/scripts.pory"
 	applymovement 10, Rival_Scene01_Move1
-# 977 "data/maps/LittlerootTown/scripts.pory"
+# 976 "data/maps/LittlerootTown/scripts.pory"
 	waitmovement 0
-# 978 "data/maps/LittlerootTown/scripts.pory"
+# 977 "data/maps/LittlerootTown/scripts.pory"
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-# 979 "data/maps/LittlerootTown/scripts.pory"
+# 978 "data/maps/LittlerootTown/scripts.pory"
 	switch VAR_TEMP_1
-# 980 "data/maps/LittlerootTown/scripts.pory"
+# 979 "data/maps/LittlerootTown/scripts.pory"
 	case 17, Rival_Scene01_6
 Rival_Scene01_4:
-# 985 "data/maps/LittlerootTown/scripts.pory"
+# 984 "data/maps/LittlerootTown/scripts.pory"
 	call GetRivalForNameBox
-# 986 "data/maps/LittlerootTown/scripts.pory"
+# 985 "data/maps/LittlerootTown/scripts.pory"
 	switch VAR_EMERALBODY_RIVAL
-# 987 "data/maps/LittlerootTown/scripts.pory"
+# 986 "data/maps/LittlerootTown/scripts.pory"
 	case 1, Rival_Scene01_9
-# 989 "data/maps/LittlerootTown/scripts.pory"
+# 988 "data/maps/LittlerootTown/scripts.pory"
 	case 2, Rival_Scene01_10
-# 991 "data/maps/LittlerootTown/scripts.pory"
+# 990 "data/maps/LittlerootTown/scripts.pory"
 	case 3, Rival_Scene01_11
-# 993 "data/maps/LittlerootTown/scripts.pory"
+# 992 "data/maps/LittlerootTown/scripts.pory"
 	case 4, Rival_Scene01_12
-# 996 "data/maps/LittlerootTown/scripts.pory"
+# 995 "data/maps/LittlerootTown/scripts.pory"
 	msgbox Scene01_BaronText
 Rival_Scene01_7:
-# 998 "data/maps/LittlerootTown/scripts.pory"
+# 997 "data/maps/LittlerootTown/scripts.pory"
 	closemessage
-# 999 "data/maps/LittlerootTown/scripts.pory"
+# 998 "data/maps/LittlerootTown/scripts.pory"
 	setvar VAR_EMERALBODY_RIVAL_STATE, 1
-# 1000 "data/maps/LittlerootTown/scripts.pory"
+# 999 "data/maps/LittlerootTown/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 1001 "data/maps/LittlerootTown/scripts.pory"
+# 1000 "data/maps/LittlerootTown/scripts.pory"
 	fadedefaultbgm
-# 1002 "data/maps/LittlerootTown/scripts.pory"
+# 1001 "data/maps/LittlerootTown/scripts.pory"
 	applymovement 10, Rival_Scene01_Move2
-# 1003 "data/maps/LittlerootTown/scripts.pory"
+# 1002 "data/maps/LittlerootTown/scripts.pory"
 	waitmovement 0
-# 1004 "data/maps/LittlerootTown/scripts.pory"
+# 1003 "data/maps/LittlerootTown/scripts.pory"
 	removeobject 10
-# 1005 "data/maps/LittlerootTown/scripts.pory"
+# 1004 "data/maps/LittlerootTown/scripts.pory"
 	clearflag FLAG_TEMP_1
-# 1006 "data/maps/LittlerootTown/scripts.pory"
+# 1005 "data/maps/LittlerootTown/scripts.pory"
 	addobject 9
-# 1007 "data/maps/LittlerootTown/scripts.pory"
+# 1006 "data/maps/LittlerootTown/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 	goto Rival_Scene01_1
 
 Rival_Scene01_6:
-# 981 "data/maps/LittlerootTown/scripts.pory"
+# 980 "data/maps/LittlerootTown/scripts.pory"
 	applymovement 10, Common_Movement_FaceUp
-# 982 "data/maps/LittlerootTown/scripts.pory"
+# 981 "data/maps/LittlerootTown/scripts.pory"
 	waitmovement 0
 	goto Rival_Scene01_4
 
 Rival_Scene01_9:
-# 988 "data/maps/LittlerootTown/scripts.pory"
+# 987 "data/maps/LittlerootTown/scripts.pory"
 	msgbox Scene01_HarperText
 	goto Rival_Scene01_7
 
 Rival_Scene01_10:
-# 990 "data/maps/LittlerootTown/scripts.pory"
+# 989 "data/maps/LittlerootTown/scripts.pory"
 	msgbox Scene01_JaksonText
 	goto Rival_Scene01_7
 
 Rival_Scene01_11:
-# 992 "data/maps/LittlerootTown/scripts.pory"
+# 991 "data/maps/LittlerootTown/scripts.pory"
 	msgbox Scene01_ReddText
 	goto Rival_Scene01_7
 
 Rival_Scene01_12:
-# 994 "data/maps/LittlerootTown/scripts.pory"
+# 993 "data/maps/LittlerootTown/scripts.pory"
 	msgbox Scene01_SakuraText
 	goto Rival_Scene01_7
 
 
-# 1013 "data/maps/LittlerootTown/scripts.pory"
+# 1012 "data/maps/LittlerootTown/scripts.pory"
 Rival_Scene01_Move1:
-# 1014 "data/maps/LittlerootTown/scripts.pory"
+# 1013 "data/maps/LittlerootTown/scripts.pory"
 	emote_exclamation_mark
-# 1015 "data/maps/LittlerootTown/scripts.pory"
+# 1014 "data/maps/LittlerootTown/scripts.pory"
+	delay_16
+# 1014 "data/maps/LittlerootTown/scripts.pory"
+	delay_16
+# 1014 "data/maps/LittlerootTown/scripts.pory"
+	delay_16
+# 1014 "data/maps/LittlerootTown/scripts.pory"
 	delay_16
 # 1015 "data/maps/LittlerootTown/scripts.pory"
-	delay_16
-# 1015 "data/maps/LittlerootTown/scripts.pory"
-	delay_16
-# 1015 "data/maps/LittlerootTown/scripts.pory"
-	delay_16
-# 1016 "data/maps/LittlerootTown/scripts.pory"
 	walk_left
-# 1016 "data/maps/LittlerootTown/scripts.pory"
+# 1015 "data/maps/LittlerootTown/scripts.pory"
 	walk_left
 	step_end
 
-# 1019 "data/maps/LittlerootTown/scripts.pory"
+# 1018 "data/maps/LittlerootTown/scripts.pory"
 Rival_Scene01_Move2:
-# 1020 "data/maps/LittlerootTown/scripts.pory"
+# 1019 "data/maps/LittlerootTown/scripts.pory"
 	walk_fast_down
-# 1020 "data/maps/LittlerootTown/scripts.pory"
+# 1019 "data/maps/LittlerootTown/scripts.pory"
 	walk_fast_down
-# 1020 "data/maps/LittlerootTown/scripts.pory"
+# 1019 "data/maps/LittlerootTown/scripts.pory"
 	walk_fast_down
-# 1020 "data/maps/LittlerootTown/scripts.pory"
+# 1019 "data/maps/LittlerootTown/scripts.pory"
 	walk_fast_down
-# 1020 "data/maps/LittlerootTown/scripts.pory"
+# 1019 "data/maps/LittlerootTown/scripts.pory"
 	walk_fast_down
-# 1020 "data/maps/LittlerootTown/scripts.pory"
+# 1019 "data/maps/LittlerootTown/scripts.pory"
 	walk_fast_down
-# 1020 "data/maps/LittlerootTown/scripts.pory"
+# 1019 "data/maps/LittlerootTown/scripts.pory"
 	walk_fast_down
 	step_end
 

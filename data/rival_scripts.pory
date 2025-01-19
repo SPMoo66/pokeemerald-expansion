@@ -1,0 +1,80 @@
+#This file contains generic scripts without movements
+
+#Town01
+script Sakura_Town01 {
+	speakername (CommonText_Sakura)
+	msgbox(Town01_SakuraText, MSGBOX_NPC)
+}
+
+script Jakson_Town01 {
+	speakername (CommonText_Jakson)
+	msgbox(Town01_JaksonText, MSGBOX_NPC)
+}
+
+script Redd_Town01 {
+	lock
+	speakername (CommonText_Redd)
+	msgbox(Town01_ReddText)
+	release
+}
+
+script Harper_Town01 {
+	speakername (CommonText_Harper)
+	msgbox(Town01_HarperText, MSGBOX_NPC)
+}
+
+#Town02
+script Sakura_Town02 {
+	speakername (CommonText_Sakura)
+	msgbox(Town02_SakuraText, MSGBOX_NPC)
+}
+
+script Harper_Town02 {
+	speakername (CommonText_Harper)
+	msgbox(Town02_HarperText, MSGBOX_NPC)
+}
+
+script Redd_Town02 {
+	speakername (CommonText_Redd)
+	msgbox(Town02_ReddText, MSGBOX_NPC)
+}
+
+script Baron_Town02 {
+	speakername (CommonText_Baron)
+	msgbox(Town02_BaronText, MSGBOX_NPC)
+}
+
+script Jakson_Town02 {
+	speakername (CommonText_Jakson)
+	msgbox(Town02_JaksonText, MSGBOX_NPC)
+}
+
+#Town03
+script Sakura_Town03 {
+	speakername (CommonText_Sakura)
+	msgbox(Town03_SakuraText, MSGBOX_NPC)
+}
+
+script Harper_Town03 {
+	speakername (CommonText_Harper)
+	msgbox(Town03_HarperText, MSGBOX_NPC)
+}
+
+script Redd_Town03 {
+	speakername (CommonText_Redd)
+	msgbox(Town03_ReddText, MSGBOX_NPC)
+}
+
+script Jakson_Town03 {
+	speakername (CommonText_Jakson)
+	msgbox(Town03_JaksonText, MSGBOX_NPC)
+}
+
+script Baron_Town03 {
+	lock
+	speakername (CommonText_Baron)
+	msgbox(Town03_BaronText1)
+	faceplayer
+	msgbox(Town03_BaronText2)
+	release
+}

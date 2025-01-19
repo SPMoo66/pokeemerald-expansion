@@ -1015,16 +1015,6 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_Bianca {
 	releaseall
 }
 
-
-script Sakura_Town01 {
-	faceplayer
-	lock
-	speakername (CommonText_Sakura)
-	msgbox(Town01_SakuraText)
-	release
-	end
-}
-
 script LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox {
 	lock
 	checkitem (ITEM_EXP_CHARM)

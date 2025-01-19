@@ -934,6 +934,8 @@ PetalburgWoods_Text_TrainerTipsPP:
 PetalburgWoods_MapScripts::
 # 470 "data/maps/PetalburgWoods/scripts.pory"
 	map_script MAP_SCRIPT_ON_LOAD, PetalburgWoods_MapScripts_MAP_SCRIPT_ON_LOAD
+# 484 "data/maps/PetalburgWoods/scripts.pory"
+	map_script MAP_SCRIPT_ON_TRANSITION, PetalburgWoods_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
 
 PetalburgWoods_MapScripts_MAP_SCRIPT_ON_LOAD:
@@ -962,5 +964,18 @@ PetalburgWoods_MapScripts_MAP_SCRIPT_ON_LOAD_1:
 	setmetatile 40, 31, METATILE_General_Grass, FALSE
 # 481 "data/maps/PetalburgWoods/scripts.pory"
 	setmetatile 41, 31, METATILE_General_Grass, FALSE
+	return
+
+PetalburgWoods_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+# 485 "data/maps/PetalburgWoods/scripts.pory"
+	setflag FLAG_TEMP_1
+# 486 "data/maps/PetalburgWoods/scripts.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 2
+	goto_if_eq PetalburgWoods_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	return
+
+PetalburgWoods_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+# 487 "data/maps/PetalburgWoods/scripts.pory"
+	clearflag FLAG_TEMP_1
 	return
 

@@ -960,7 +960,6 @@ script Baron_Town01 {
 	applymovement (BARON, Common_Movement_FaceLeft)
 	waitmovement (0)
 	release
-	end
 }
 
 movement Baron_Town01_Move {

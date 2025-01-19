@@ -41,17 +41,3 @@ OldaleTown_House1_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 	clearflag FLAG_TEMP_1
 	return
 
-
-Harper_Town01::
-# 26 "data/maps/OldaleTown_House1/scripts.pory"
-	faceplayer
-# 27 "data/maps/OldaleTown_House1/scripts.pory"
-	lock
-# 28 "data/maps/OldaleTown_House1/scripts.pory"
-	speakername CommonText_Harper
-# 29 "data/maps/OldaleTown_House1/scripts.pory"
-	msgbox Town01_HarperText
-# 30 "data/maps/OldaleTown_House1/scripts.pory"
-	release
-	end
-

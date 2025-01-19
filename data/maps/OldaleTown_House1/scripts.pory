@@ -21,12 +21,3 @@ mapscripts OldaleTown_House1_MapScripts {
 	
 	}
 }
-
-script Harper_Town01 {
-	faceplayer
-	lock
-	speakername (CommonText_Harper)
-	msgbox(Town01_HarperText)
-	release
-	end
-}

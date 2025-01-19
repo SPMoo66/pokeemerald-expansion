@@ -399,10 +399,13 @@ Town02_SakuraText::
 	.string "Oh, or maybe Iron Valiant somehow!\n"
 	.string "Best of both worlds{EMOJI_TILDE}$"
 
-Town03_BaronText::
+Town03_BaronText1::
 # 285 "data/rival_text.pory"
 	.string "One step… two step… three step… four\n"
-	.string "step…?\p"
+	.string "step…?$"
+
+Town03_BaronText2::
+# 289 "data/rival_text.pory"
 	.string "Oh, sorry. I didn't mean to bother you.\p"
 	.string "I'm actually starting to get used to\n"
 	.string "walking through this world.\p"
@@ -412,7 +415,7 @@ Town03_BaronText::
 	.string "Wait, would it be muscle memory here?$"
 
 Town03_HarperText::
-# 294 "data/rival_text.pory"
+# 297 "data/rival_text.pory"
 	.string "Cool, an actual city. Wonder if they\n"
 	.string "have much of a night life?\p"
 	.string "… … … What?\p"
@@ -420,7 +423,7 @@ Town03_HarperText::
 	.string "Sigh…$"
 
 Town03_JaksonText::
-# 301 "data/rival_text.pory"
+# 304 "data/rival_text.pory"
 	.string "Hmm… I wonder if there could be like 5\n"
 	.string "of them at once…?\p"
 	.string "Oh, hey {PLAYER}. I was just\n"
@@ -433,7 +436,7 @@ Town03_JaksonText::
 	.string "Things that cross one's mind, ya know?$"
 
 Town03_ReddText::
-# 310 "data/rival_text.pory"
+# 313 "data/rival_text.pory"
 	.string "I wonder if there are any trade Pokémon\n"
 	.string "in this city?\p"
 	.string "They do like to hide secrets on NPCs.\n"
@@ -442,7 +445,7 @@ Town03_ReddText::
 	.string "trade evolution an everstone…$"
 
 Town03_SakuraText::
-# 317 "data/rival_text.pory"
+# 320 "data/rival_text.pory"
 	.string "Badge numero uno is mine{EMOJI_TILDE}\p"
 	.string "Did you see her Nosepass?\n"
 	.string "It's so…!\l"
@@ -453,7 +456,7 @@ Town03_SakuraText::
 	.string "more derp and splendor.$"
 
 Scene03_BaronText::
-# 327 "data/rival_text.pory"
+# 330 "data/rival_text.pory"
 	.string "Hey uh… {PLAYER}, right?\n"
 	.string "Mind if I ask a question?\p"
 	.string "Is it just me or did they give me a flip\n"
@@ -463,11 +466,11 @@ Scene03_BaronText::
 	.string "Thank you. Now, how to… uh… work… this…$"
 
 Scene03_HarperText::
-# 337 "data/rival_text.pory"
+# 340 "data/rival_text.pory"
 	.string "$"
 
 Scene03_JaksonText::
-# 341 "data/rival_text.pory"
+# 344 "data/rival_text.pory"
 	.string "{PLAYER}, you got a PokéNav too?\p"
 	.string "I guess it's not too surprising, but…\p"
 	.string "You up for a challenge?\p"
@@ -475,7 +478,7 @@ Scene03_JaksonText::
 	.string "board just follow my lead.$"
 
 Scene03_ReddText::
-# 348 "data/rival_text.pory"
+# 351 "data/rival_text.pory"
 	.string "{PLAYER}. Sup.\p"
 	.string "Get one of those PokéNav things too?\p"
 	.string "They had something similar in a dozen or\n"
@@ -484,7 +487,7 @@ Scene03_ReddText::
 	.string "So much for being rivals, heheh.$"
 
 Scene03_SakuraText::
-# 356 "data/rival_text.pory"
+# 359 "data/rival_text.pory"
 	.string "Cute! We match\p"
 	.string "Did you just get that PokéNav?\n"
 	.string "Samesies for me.\p"

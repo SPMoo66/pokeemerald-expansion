@@ -349,3 +349,105 @@ Scene02_SakuraText_PostBattle::
 	.string "We've got all game, so…\p"
 	.string "You're destined to let your guard down\n"
 	.string "eventually{EMOJI_TILDE}$"
+
+Town02_BaronText::
+# 249 "data/rival_text.pory"
+	.string "Ugh… no one told me that the game could\n"
+	.string "take control of your body.\p"
+	.string "I was so scared for a moment in that\n"
+	.string "tutorial thingy.\p"
+	.string "People can't use that to like… kidnap\n"
+	.string "people, can they?\p"
+	.string "He… I… I should be careful going into\n"
+	.string "public servers in the future.$"
+
+Town02_HarperText::
+# 256 "data/rival_text.pory"
+	.string "I sort of wish you could talk more to\n"
+	.string "the NPCs.\p"
+	.string "This place is trippy, but immersive in a\n"
+	.string "weird way.\p"
+	.string "I had a few moments where I tried to\n"
+	.string "continue the conversation.\p"
+	.string "Eh, what sort of writer would make a\n"
+	.string "character just repeat themself?$"
+
+Town02_JaksonText::
+# 263 "data/rival_text.pory"
+	.string "You know, I actually used an algorithm\n"
+	.string "to decide Pokémon spots.\p"
+	.string "I've started to think about team\n"
+	.string "compostion, but that's a blocker.\p"
+	.string "Maybe it's more fun for it to be a\n"
+	.string "surprise though?$"
+
+Town02_ReddText::
+# 269 "data/rival_text.pory"
+	.string "Don't bother with the gym now.\n"
+	.string "It's locked for story reasons.\p"
+	.string "Well you don't need to fight it right now\n"
+	.string "at least.\p"
+	.string "It's just copying Gen 1 though.\n"
+	.string "Or maybe it's just nostalgia bait?$"
+
+Town02_SakuraText::
+# 277 "data/rival_text.pory"
+	.string "Have you done the Wally tutorial fight\n"
+	.string "yet? Where he gets a Ralts?\p"
+	.string "I wonder if he'll evolve it into a\n"
+	.string "Gardevoir or Gallade in this mod?\p"
+	.string "Oh, or maybe Iron Valiant somehow!\n"
+	.string "Best of both worlds{EMOJI_TILDE}$"
+
+Town03_BaronText::
+# 285 "data/rival_text.pory"
+	.string "One step… two step… three step… four\n"
+	.string "step…?\p"
+	.string "Oh, sorry. I didn't mean to bother you.\p"
+	.string "I'm actually starting to get used to\n"
+	.string "walking through this world.\p"
+	.string "I think I can thank that tutorial from a\n"
+	.string "while back.\p"
+	.string "My muscle memory was helped a lot by it.\p"
+	.string "Wait, would it be muscle memory here?$"
+
+Town03_HarperText::
+# 294 "data/rival_text.pory"
+	.string "Cool, an actual city. Wonder if they\n"
+	.string "have much of a night life?\p"
+	.string "… … … What?\p"
+	.string "There's no… night in this game?\p"
+	.string "Sigh…$"
+
+Town03_JaksonText::
+# 301 "data/rival_text.pory"
+	.string "Hmm… I wonder if there could be like 5\n"
+	.string "of them at once…?\p"
+	.string "Oh, hey {PLAYER}. I was just\n"
+	.string "considering how the online works.\p"
+	.string "If we all saved the named Wingull\n"
+	.string "within…\p"
+	.string "Would the graphics start overlapping?\p"
+	.string "Would the characters be like clones of\n"
+	.string "themselves?\p"
+	.string "Things that cross one's mind, ya know?$"
+
+Town03_ReddText::
+# 310 "data/rival_text.pory"
+	.string "I wonder if there are any trade Pokémon\n"
+	.string "in this city?\p"
+	.string "They do like to hide secrets on NPCs.\n"
+	.string "Jakson could have done that, too.\p"
+	.string "He's the sort that might've gave a\n"
+	.string "trade evolution an everstone…$"
+
+Town03_SakuraText::
+# 317 "data/rival_text.pory"
+	.string "Badge numero uno is mine{EMOJI_TILDE}\p"
+	.string "Did you see her Nosepass?\n"
+	.string "It's so…!\l"
+	.string "… unfortunate… I wonder if they ever\l"
+	.string "gave it a cuter form? A regional form,\l"
+	.string "maybe?\p"
+	.string "That design would thrive with a little\n"
+	.string "more derp and splendor.$"

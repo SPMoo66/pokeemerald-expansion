@@ -245,3 +245,80 @@ text Scene02_SakuraText_PostBattle {
 			"You're destined to let your guard down eventually{EMOJI_TILDE}")
 }
 
+# Town02
+text Town02_BaronText {
+	format(	"Ugh… no one told me that the game could take control of your body.\p"
+			"I was so scared for a moment in that tutorial thingy.\p"
+			"People can't use that to like… kidnap people, can they?\p"
+			"He… I… I should be careful going into public servers in the future.")
+}
+
+text Town02_HarperText {
+	format(	"I sort of wish you could talk more to the NPCs.\p"
+			"This place is trippy, but immersive in a weird way.\p"
+			"I had a few moments where I tried to continue the conversation.\p"
+			"Eh, what sort of writer would make a character just repeat themself?")
+}
+
+text Town02_JaksonText {
+	format(	"You know, I actually used an algorithm to decide Pokémon spots.\p"
+			"I've started to think about team compostion, but that's a blocker.\p"
+			"Maybe it's more fun for it to be a surprise though?")
+}
+
+text Town02_ReddText {
+	format(	"Don't bother with the gym now.\n"
+			"It's locked for story reasons.\p"
+			"Well you don't need to fight it right now at least.\p"
+			"It's just copying Gen 1 though.\n"
+			"Or maybe it's just nostalgia bait?")
+}
+
+text Town02_SakuraText {
+	format(	"Have you done the Wally tutorial fight yet? Where he gets a Ralts?\p"
+			"I wonder if he'll evolve it into a Gardevoir or Gallade in this mod?\p"
+			"Oh, or maybe Iron Valiant somehow!\n"
+			"Best of both worlds{EMOJI_TILDE}")
+}
+
+# Town03
+text Town03_BaronText {
+	format(	"One step… two step… three step… four step…?\p"
+			"Oh, sorry. I didn't mean to bother you.\p"
+			"I'm actually starting to get used to walking through this world.\p"
+			"I think I can thank that tutorial from a while back.\p"
+			"My muscle memory was helped a lot by it.\p"
+			"Wait, would it be muscle memory here?")
+}
+
+text Town03_HarperText {
+	format(	"Cool, an actual city. Wonder if they have much of a night life?\p"
+			"… … … What?\p"
+			"There's no… night in this game?\p"
+			"Sigh…")
+}
+
+text Town03_JaksonText {
+	format(	"Hmm… I wonder if there could be like 5 of them at once…?\p"
+			"Oh, hey {PLAYER}. I was just considering how the online works.\p"
+			"If we all saved the named Wingull within…\p"
+			"Would the graphics start overlapping?\p"
+			"Would the characters be like clones of themselves?\p"
+			"Things that cross one's mind, ya know?")
+}
+
+text Town03_ReddText {
+	format(	"I wonder if there are any trade Pokémon in this city?\p"
+			"They do like to hide secrets on NPCs.\n"
+			"Jakson could have done that, too.\p"
+			"He's the sort that might've gave a trade evolution an everstone…")
+}
+
+text Town03_SakuraText {
+	format(	"Badge numero uno is mine{EMOJI_TILDE}\p"
+			"Did you see her Nosepass?\n"
+			"It's so…!\l"
+			"… unfortunate…"
+			"I wonder if they ever gave it a cuter form? A regional form, maybe?\p"
+			"That design would thrive with a little more derp and splendor.")
+}

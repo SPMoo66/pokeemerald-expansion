@@ -546,6 +546,7 @@ gSpecials::
 	def_special PokevialGetSize
 	def_special PokevialRefill
 	//End Pokevial Branch
+	def_special TeleportCamera
 	def_special BufferUnitSystemText
 	def_special GetNumberOfBadges
 	def_special PlayerHasMulch

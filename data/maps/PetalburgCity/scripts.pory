@@ -4,15 +4,12 @@ raw `
 .set LOCALID_WALLYS_DAD, 5
 .set LOCALID_GYM_BOY, 8
 .set LOCALID_SCOTT, 9
+.set RIVAL_PETALBURG, 10
 
 PetalburgCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PetalburgCity_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, PetalburgCity_OnFrame
 	.byte 0
-
-	@ State descriptions for VAR_EMERALBODY_RIVAL_STATE
-	@ 1: Set after scene outside Birch's Lab
-	@ 2: Set after rival fight in Petalburg City
 
 PetalburgCity_OnTransition:
 	setflag FLAG_VISITED_PETALBURG_CITY
@@ -724,62 +721,6 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "talented Trainers.\p"
 	.string "I'm sorry to have taken your time.$"
 `
-
-const RIVAL = 10
-
-script Rival_Scene02 {
-	if (var(VAR_EMERALBODY_RIVAL_STATE) == 1) {
-		lock
-		call (Common_EventScript_PlayEmRivalBgm)
-		playse (SE_PIN)
-		applymovement (RIVAL, Common_Movement_ExclamationMark)
-		waitmovement (0)
-		delay (60)
-		applymovement (RIVAL, Common_Movement_WalkRight2)
-		waitmovement (0)
-		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
-		switch (var(VAR_TEMP_1)) {
-			case 16:
-				applymovement (RIVAL, Common_Movement_WalkUp2)
-				waitmovement (0)
-			case 17:
-				applymovement (RIVAL, Common_Movement_WalkUp)
-				waitmovement (0)
-			case 19:
-				applymovement (RIVAL, Common_Movement_WalkDown)
-				waitmovement (0)
-			default:
-		}
-		applymovement (RIVAL, Common_Movement_WalkRight2)
-		waitmovement (0)
-		call (GetRivalForNameBox)
-		switch (var(VAR_EMERALBODY_RIVAL)) {
-			case 1:
-				msgbox(Scene02_HarperText_PreBattle)
-			case 2:
-				msgbox(Scene02_JaksonText_PreBattle)
-			case 3:
-				msgbox(Scene02_ReddText_PreBattle)
-			case 4:
-				msgbox(Scene02_SakuraText_PreBattle)
-			default:
-				msgbox(Scene02_BaronText_PreBattle)
-		}
-		closemessage
-		# battle
-		setvar (VAR_EMERALBODY_RIVAL_STATE, 2)
-		fadedefaultbgm
-		if (var(VAR_TEMP_1) == 16) {
-			applymovement (RIVAL, Common_Movement_WalkDown)
-			waitmovement (0)
-		}
-		applymovement (RIVAL, Common_Movement_WalkLeft7)
-		waitmovement (0)
-		removeobject (RIVAL)
-	}
-	release
-	end
-}
 
 script PetalburgCity_EventScript_Simulation {
 	msgbox( format(	"I heard there's a realistic computer simulation out there.\p"

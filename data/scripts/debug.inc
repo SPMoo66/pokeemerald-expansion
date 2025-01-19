@@ -152,7 +152,7 @@ Debug_EventScript_Script_2::
 
 Debug_EventScript_Script_3::
 	warp MAP_RUSTBORO_CITY, 5
-	setvar VAR_LOOKER_ROCKET 3
+	setvar VAR_LOOKER_ROCKET, 3
 	givemon SPECIES_VENUSAUR, 100, ITEM_NONE
 	givemon SPECIES_BLASTOISE, 100, ITEM_NONE
 	call Debug_CheatStart
@@ -174,6 +174,8 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
+	warp MAP_RUSTBORO_CITY, 5
+	setvar VAR_RUSTBORO_CITY_STATE, 7
 	release
 	end
 

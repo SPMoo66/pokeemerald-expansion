@@ -34,7 +34,7 @@ RustboroCity_EventScript_Looker::
 # 18 "data/looker.pory"
 	fadedefaultbgm
 # 19 "data/looker.pory"
-	release
+	goto Rival_Scene03
 	return
 
 

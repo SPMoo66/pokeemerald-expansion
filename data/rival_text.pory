@@ -330,7 +330,7 @@ text Town03_SakuraText {
 text Scene03_BaronText {
 	format(	"Hey uh… {PLAYER}, right?\n"
 			"Mind if I ask a question?\p"
-			"Is it just me or did they give me a flip phone\p"
+			"Is it just me or did they give me a flip phone?\p"
 			"… … … PokéNav?\n"
 			"That's… I guess that makes sense.\p"
 			"Thank you."

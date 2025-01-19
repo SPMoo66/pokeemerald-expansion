@@ -1,5 +1,65 @@
 #This file contains generic scripts without movements
 
+	# State descriptions for VAR_EMERALBODY_RIVAL_STATE
+	# 1: Set after scene outside Birch's Lab
+	# 2: Set after rival fight in Petalburg City
+	# 3: Set after entering Rustboro City
+	# 4: Set after Brendan/May is fought before traveling to Dewford Town
+
+
+#Scene01
+script Rival_Scene01 {
+	if (var(VAR_BIRCH_LAB_STATE) == 3) {
+		lock
+		call (Common_EventScript_PlayEmRivalBgm)
+		playse (SE_PIN)
+		applymovement (RIVAL_LITTLEROOT, Rival_Scene01_Move1)
+		waitmovement (0)
+		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+		switch (var(VAR_TEMP_1)) {
+			case 17:
+				applymovement (RIVAL_LITTLEROOT, Common_Movement_FaceUp)
+				waitmovement (0)
+			default:
+		}
+		call (GetRivalForNameBox)
+		switch (var(VAR_EMERALBODY_RIVAL)) {
+			case 1:
+				msgbox(Scene01_HarperText)
+			case 2:
+				msgbox(Scene01_JaksonText)
+			case 3:
+				msgbox(Scene01_ReddText)
+			case 4:
+				msgbox(Scene01_SakuraText)
+			default:
+				msgbox(Scene01_BaronText)
+		}
+		closemessage
+		setvar (VAR_EMERALBODY_RIVAL_STATE, 1)
+		fadescreen (FADE_TO_BLACK)
+		fadedefaultbgm
+		applymovement (RIVAL_LITTLEROOT, Rival_Scene01_Move2)
+		waitmovement (0)
+		removeobject (RIVAL_LITTLEROOT)
+		clearflag (FLAG_TEMP_1)
+		addobject (BARON_LITTLEROOT)
+		fadescreen (FADE_FROM_BLACK)
+	}
+	release
+}
+
+movement Rival_Scene01_Move1 {
+	emote_exclamation_mark
+	delay_16 * 4
+	walk_left * 2
+}
+
+movement Rival_Scene01_Move2 {
+	walk_fast_down * 7
+}
+
+
 #Town01
 script Sakura_Town01 {
 	speakername (CommonText_Sakura)
@@ -22,6 +82,88 @@ script Harper_Town01 {
 	speakername (CommonText_Harper)
 	msgbox(Town01_HarperText, MSGBOX_NPC)
 }
+
+script Baron_Town01 {
+	lock
+	applymovement (BARON_LITTLEROOT, Baron_Town01_Move)
+	waitmovement (0)
+	applymovement (BARON_LITTLEROOT, Baron_Town01_Move)
+	waitmovement (0)
+	speakername (CommonText_Baron)
+	msgbox("Left foot… Right foot…\nLeft foot… Right foot…")
+	closemessage
+	faceplayer
+	playse (SE_PIN)
+	applymovement (BARON_LITTLEROOT, Common_Movement_ExclamationMark)
+	waitmovement (0)
+	delay (60)
+	speakername (CommonText_Baron)
+	msgbox(Town01_BaronText)
+	applymovement (BARON_LITTLEROOT, Common_Movement_FaceLeft)
+	waitmovement (0)
+	release
+}
+
+movement Baron_Town01_Move {
+	walk_in_place_left
+	delay_16
+}
+
+
+#Scene02
+script Rival_Scene02 {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 1) {
+		lock
+		call (Common_EventScript_PlayEmRivalBgm)
+		playse (SE_PIN)
+		applymovement (RIVAL_PETALBURG, Common_Movement_ExclamationMark)
+		waitmovement (0)
+		delay (60)
+		applymovement (RIVAL_PETALBURG, Common_Movement_WalkRight2)
+		waitmovement (0)
+		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+		switch (var(VAR_TEMP_1)) {
+			case 16:
+				applymovement (RIVAL_PETALBURG, Common_Movement_WalkUp2)
+				waitmovement (0)
+			case 17:
+				applymovement (RIVAL_PETALBURG, Common_Movement_WalkUp)
+				waitmovement (0)
+			case 19:
+				applymovement (RIVAL_PETALBURG, Common_Movement_WalkDown)
+				waitmovement (0)
+			default:
+		}
+		applymovement (RIVAL_PETALBURG, Common_Movement_WalkRight2)
+		waitmovement (0)
+		call (GetRivalForNameBox)
+		switch (var(VAR_EMERALBODY_RIVAL)) {
+			case 1:
+				msgbox(Scene02_HarperText_PreBattle)
+			case 2:
+				msgbox(Scene02_JaksonText_PreBattle)
+			case 3:
+				msgbox(Scene02_ReddText_PreBattle)
+			case 4:
+				msgbox(Scene02_SakuraText_PreBattle)
+			default:
+				msgbox(Scene02_BaronText_PreBattle)
+		}
+		closemessage
+		# battle
+		setvar (VAR_EMERALBODY_RIVAL_STATE, 2)
+		fadedefaultbgm
+		if (var(VAR_TEMP_1) == 16) {
+			applymovement (RIVAL_PETALBURG, Common_Movement_WalkDown)
+			waitmovement (0)
+		}
+		applymovement (RIVAL_PETALBURG, Common_Movement_WalkLeft7)
+		waitmovement (0)
+		removeobject (RIVAL_PETALBURG)
+	}
+	release
+}
+
 
 #Town02
 script Sakura_Town02 {
@@ -48,6 +190,7 @@ script Jakson_Town02 {
 	speakername (CommonText_Jakson)
 	msgbox(Town02_JaksonText, MSGBOX_NPC)
 }
+
 
 #Town03
 script Sakura_Town03 {
@@ -77,4 +220,86 @@ script Baron_Town03 {
 	faceplayer
 	msgbox(Town03_BaronText2)
 	release
+}
+
+
+#Scene03
+script Rival_Scene03 {
+	delay (100)
+	call (Common_EventScript_PlayEmRivalBgm)
+	addobject (RIVAL_RUSTBORO)
+	setobjectxy (RIVAL_RUSTBORO, 20, 15)
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	switch (var(VAR_TEMP_1)) {
+		case 21:
+			applymovement (RIVAL_RUSTBORO, Common_Movement_WalkDown6)
+			waitmovement (0)
+		default:
+			applymovement (RIVAL_RUSTBORO, Common_Movement_WalkDown7)
+			waitmovement (0)
+	}
+	applymovement (RIVAL_RUSTBORO, Common_Movement_WalkLeft2)
+	waitmovement (0)
+	call (GetRivalForNameBox)
+	switch (var(VAR_EMERALBODY_RIVAL)) {
+		case 1:
+			msgbox(Scene03_HarperText)
+		case 2:
+			msgbox(Scene03_JaksonText)
+		case 3:
+			msgbox(Scene03_ReddText)
+		case 4:
+			msgbox(Scene03_SakuraText)
+		default:
+			msgbox(Scene03_BaronText)
+	}
+	closemessage
+	fadescreen (FADE_TO_BLACK)
+	setobjectxy (OBJ_EVENT_ID_PLAYER, 11, 19)
+	setvar (VAR_0x8004, 11)
+	setvar (VAR_0x8005, 19)
+	special (TeleportCamera)
+	addobject (REDD_RUSTBORO)
+	addobject (SAKURA_RUSTBORO)
+	addobject (BARON_RUSTBORO)
+	addobject (HARPER_RUSTBORO)
+	addobject (JAKSON_RUSTBORO)
+	applymovement (SAKURA_RUSTBORO, Common_Movement_FaceDown)
+	applymovement (REDD_RUSTBORO, Common_Movement_FaceRight)
+	applymovement (HARPER_RUSTBORO, Common_Movement_FaceLeft)
+	applymovement (JAKSON_RUSTBORO, Common_Movement_FaceUp)
+	setobjectxy (REDD_RUSTBORO, 10, 18)
+	setobjectxy (SAKURA_RUSTBORO, 11, 17)
+	setobjectxy (BARON_RUSTBORO, 12, 17)
+	setobjectxy (HARPER_RUSTBORO, 13, 18)
+	setobjectxy (JAKSON_RUSTBORO, 12, 19)
+	setobjectxy (RIVAL_RUSTBORO, 0, 6)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+	fadescreen (FADE_FROM_BLACK)
+	message (format ("You exchanged PokéNav info with your friends."))
+	applymovement (JAKSON_RUSTBORO, Common_Movement_WalkInPlaceLeft)
+	waitmovement (0)
+	delay (30)
+	applymovement (JAKSON_RUSTBORO, Common_Movement_WalkInPlaceUp)
+	applymovement (HARPER_RUSTBORO, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	delay (40)
+	applymovement (BARON_RUSTBORO, Common_Movement_WalkInPlaceLeft)
+	applymovement (SAKURA_RUSTBORO, Common_Movement_WalkInPlaceRight)
+	waitmovement (0)
+	delay (30)
+	applymovement (REDD_RUSTBORO, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	delay (50)
+	closemessage
+	fadescreen (FADE_TO_BLACK)
+	removeobject (REDD_RUSTBORO)
+	removeobject (SAKURA_RUSTBORO)
+	removeobject (BARON_RUSTBORO)
+	removeobject (HARPER_RUSTBORO)
+	removeobject (JAKSON_RUSTBORO)
+	fadescreen (FADE_FROM_BLACK)
+	fadedefaultbgm
+	release
+	releaseall
 }

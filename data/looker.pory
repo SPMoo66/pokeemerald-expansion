@@ -16,7 +16,7 @@ script RustboroCity_EventScript_Looker {
 	special (RemoveCameraObject)
 	clearflag (FLAG_SAFE_FOLLOWER_MOVEMENT)
 	fadedefaultbgm
-	release
+	goto (Rival_Scene03)
 }
 
 movement RustboroCity_LookerMove {

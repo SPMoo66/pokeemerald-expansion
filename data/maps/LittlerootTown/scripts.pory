@@ -3,6 +3,8 @@ raw `
 .set LOCALID_MOM, 4
 .set LOCALID_RIVAL, 7
 .set LOCALID_BIRCH, 8
+.set BARON_LITTLEROOT, 9
+.set RIVAL_LITTLEROOT, 10
 
 LittlerootTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_OnTransition
@@ -937,84 +939,3 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my Lab.$"
 `
-
-const BARON = 9
-const RIVAL = 10
-
-script Baron_Town01 {
-	lock
-	applymovement (BARON, Baron_Town01_Move)
-	waitmovement (0)
-	applymovement (BARON, Baron_Town01_Move)
-	waitmovement (0)
-	speakername (CommonText_Baron)
-	msgbox("Left foot… Right foot…\nLeft foot… Right foot…")
-	closemessage
-	faceplayer
-	playse (SE_PIN)
-	applymovement (BARON, Common_Movement_ExclamationMark)
-	waitmovement (0)
-	delay (60)
-	speakername (CommonText_Baron)
-	msgbox(Town01_BaronText)
-	applymovement (BARON, Common_Movement_FaceLeft)
-	waitmovement (0)
-	release
-}
-
-movement Baron_Town01_Move {
-	walk_in_place_left
-	delay_16
-}
-
-script Rival_Scene01 {
-	if (var(VAR_BIRCH_LAB_STATE) == 3) {
-		lock
-		call (Common_EventScript_PlayEmRivalBgm)
-		playse (SE_PIN)
-		applymovement (RIVAL, Rival_Scene01_Move1)
-		waitmovement (0)
-		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
-		switch (var(VAR_TEMP_1)) {
-			case 17:
-				applymovement (RIVAL, Common_Movement_FaceUp)
-				waitmovement (0)
-			default:
-		}
-		call (GetRivalForNameBox)
-		switch (var(VAR_EMERALBODY_RIVAL)) {
-			case 1:
-				msgbox(Scene01_HarperText)
-			case 2:
-				msgbox(Scene01_JaksonText)
-			case 3:
-				msgbox(Scene01_ReddText)
-			case 4:
-				msgbox(Scene01_SakuraText)
-			default:
-				msgbox(Scene01_BaronText)
-		}
-		closemessage
-		setvar (VAR_EMERALBODY_RIVAL_STATE, 1)
-		fadescreen (FADE_TO_BLACK)
-		fadedefaultbgm
-		applymovement (RIVAL, Rival_Scene01_Move2)
-		waitmovement (0)
-		removeobject (RIVAL)
-		clearflag (FLAG_TEMP_1)
-		addobject (BARON)
-		fadescreen (FADE_FROM_BLACK)
-	}
-	release
-	end
-}
-
-movement Rival_Scene01_Move1 {
-	emote_exclamation_mark
-	delay_16 * 4
-	walk_left * 2
-}
-
-movement Rival_Scene01_Move2 {
-	walk_fast_down * 7
-}

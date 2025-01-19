@@ -460,7 +460,7 @@ Scene03_BaronText::
 	.string "Hey uh… {PLAYER}, right?\n"
 	.string "Mind if I ask a question?\p"
 	.string "Is it just me or did they give me a flip\n"
-	.string "phone\p"
+	.string "phone?\p"
 	.string "… … … PokéNav?\n"
 	.string "That's… I guess that makes sense.\p"
 	.string "Thank you. Now, how to… uh… work… this…$"

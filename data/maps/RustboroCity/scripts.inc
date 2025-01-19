@@ -5,6 +5,12 @@
 .set LOCALID_RIVAL, 14
 .set LOCALID_SCIENTIST, 15
 .set LOOKER_RUSTBORO, 17
+.set REDD_RUSTBORO, 18
+.set HARPER_RUSTBORO, 19
+.set SAKURA_RUSTBORO, 20
+.set JAKSON_RUSTBORO, 21
+.set BARON_RUSTBORO, 22
+.set RIVAL_RUSTBORO, 23
 
 RustboroCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_OnTransition
@@ -16,6 +22,7 @@ RustboroCity_OnTransition:
 	setflag FLAG_TEMP_1
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 2, RustboroCity_EventScript_UpdateRivalState
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 3, RustboroCity_EventScript_ShowRivals
+	call Common_EventScript_SetupEmRivalGfxId
 	call Common_EventScript_SetupRivalGfxId
 	call_if_eq VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_HideMapNamePopup
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1

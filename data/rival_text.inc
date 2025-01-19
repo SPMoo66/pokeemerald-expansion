@@ -451,3 +451,46 @@ Town03_SakuraText::
 	.string "maybe?\p"
 	.string "That design would thrive with a little\n"
 	.string "more derp and splendor.$"
+
+Scene03_BaronText::
+# 327 "data/rival_text.pory"
+	.string "Hey uh… {PLAYER}, right?\n"
+	.string "Mind if I ask a question?\p"
+	.string "Is it just me or did they give me a flip\n"
+	.string "phone\p"
+	.string "… … … PokéNav?\n"
+	.string "That's… I guess that makes sense.\p"
+	.string "Thank you. Now, how to… uh… work… this…$"
+
+Scene03_HarperText::
+# 337 "data/rival_text.pory"
+	.string "$"
+
+Scene03_JaksonText::
+# 341 "data/rival_text.pory"
+	.string "{PLAYER}, you got a PokéNav too?\p"
+	.string "I guess it's not too surprising, but…\p"
+	.string "You up for a challenge?\p"
+	.string "Not that you'll win, but if you are on\n"
+	.string "board just follow my lead.$"
+
+Scene03_ReddText::
+# 348 "data/rival_text.pory"
+	.string "{PLAYER}. Sup.\p"
+	.string "Get one of those PokéNav things too?\p"
+	.string "They had something similar in a dozen or\n"
+	.string "so of the Gen 1 remakes.\p"
+	.string "With this, you'll never catch up to me!\p"
+	.string "So much for being rivals, heheh.$"
+
+Scene03_SakuraText::
+# 356 "data/rival_text.pory"
+	.string "Cute! We match\p"
+	.string "Did you just get that PokéNav?\n"
+	.string "Samesies for me.\p"
+	.string "I wonder if they let you customize it at\n"
+	.string "all?\p"
+	.string "It is a bit… super retro flip phone\n"
+	.string "style. That was so many decades ago.\p"
+	.string "Well, if not. Then I'll have to deck out\n"
+	.string "my profile to be cool as can be{EMOJI_TILDE}$"

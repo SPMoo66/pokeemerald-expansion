@@ -322,3 +322,42 @@ text Town03_SakuraText {
 			"I wonder if they ever gave it a cuter form? A regional form, maybe?\p"
 			"That design would thrive with a little more derp and splendor.")
 }
+
+# Scene02
+text Scene03_BaronText {
+	format(	"Hey uh… {PLAYER}, right?\n"
+			"Mind if I ask a question?\p"
+			"Is it just me or did they give me a flip phone\p"
+			"… … … PokéNav?\n"
+			"That's… I guess that makes sense.\p"
+			"Thank you."
+			"Now, how to… uh… work… this…")
+}
+
+text Scene03_HarperText {
+	format(	"")
+}
+
+text Scene03_JaksonText {
+	format(	"{PLAYER}, you got a PokéNav too?\p"
+			"I guess it's not too surprising, but…\p"
+			"You up for a challenge?\p"
+			"Not that you'll win, but if you are on board just follow my lead.")
+}
+
+text Scene03_ReddText {
+	format(	"{PLAYER}. Sup.\p"
+			"Get one of those PokéNav things too?\p"
+			"They had something similar in a dozen or so of the Gen 1 remakes.\p"
+			"With this, you'll never catch up to me!\p"
+			"So much for being rivals, heheh.")
+}
+
+text Scene03_SakuraText {
+	format(	"Cute! We match\p"
+			"Did you just get that PokéNav?\n"
+			"Samesies for me.\p"
+			"I wonder if they let you customize it at all?\p"
+			"It is a bit… super retro flip phone style. That was so many decades ago.\p"
+			"Well, if not. Then I'll have to deck out my profile to be cool as can be{EMOJI_TILDE}")
+}

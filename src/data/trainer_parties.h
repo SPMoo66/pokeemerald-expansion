@@ -14082,3 +14082,148 @@ static const struct TrainerMon sParty_MaySkyPillarTorchic[] = {
     .species = SPECIES_PRIMARINA,
     }
 };
+
+static const struct TrainerMon sParty_Jakson1[] = {
+    {
+    .lvl = 7,
+    .species = SPECIES_TAILLOW,
+	.ability = ABILITY_GUTS,
+    .heldItem = ITEM_TOXIC_ORB,
+    .moves = {MOVE_PECK, MOVE_WORK_UP, MOVE_QUICK_ATTACK, MOVE_NONE}
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_ZIGZAGOON_GALAR,
+	.ability = ABILITY_GLUTTONY,
+    .heldItem = ITEM_STARF_BERRY,
+    .moves = {MOVE_BELLY_DRUM, MOVE_TACKLE, MOVE_SNARL, MOVE_NONE}
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_EKANS,
+	.ability = ABILITY_INTIMIDATE,
+    .moves = {MOVE_POISON_STING, MOVE_COIL, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_EEVEE,
+	.ability = ABILITY_ADAPTABILITY,
+    .moves = {MOVE_SAND_ATTACK, MOVE_SWIFT, MOVE_NONE, MOVE_NONE}
+    }
+};
+
+static const struct TrainerMon sParty_Harper1[] = {
+    {
+    .lvl = 7,
+    .species = SPECIES_ROOKIDEE,
+	.ability = ABILITY_UNNERVE,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_PECK, MOVE_LEER, MOVE_POWER_TRIP, MOVE_NONE}
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_MINCCINO,
+	.ability = ABILITY_TECHNICIAN,
+    .heldItem = ITEM_SILK_SCARF,
+    .moves = {MOVE_POUND, MOVE_BABY_DOLL_EYES, MOVE_HELPING_HAND, MOVE_NONE}
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_CLEFFA,
+	.ability = ABILITY_FRIEND_GUARD,
+    .moves = {MOVE_SWEET_KISS, MOVE_POUND, MOVE_CHARM, MOVE_NONE}
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_EEVEE,
+	.ability = ABILITY_ADAPTABILITY,
+    .moves = {MOVE_TACKLE, MOVE_HELPING_HAND, MOVE_NONE, MOVE_NONE}
+    }
+};
+
+static const struct TrainerMon sParty_Redd1[] = {
+    {
+    .lvl = 7,
+    .species = SPECIES_SPEAROW,
+	.ability = ABILITY_SNIPER,
+    .heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_PECK, MOVE_TACKLE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_RATTATA,
+	.ability = ABILITY_GUTS,
+    .heldItem = ITEM_TOXIC_ORB,
+    .moves = {MOVE_TACKLE, MOVE_LEER, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_METAPOD,
+	.ability = ABILITY_SHED_SKIN,
+    .moves = {MOVE_HARDEN, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_EEVEE,
+	.ability = ABILITY_ADAPTABILITY,
+    .moves = {MOVE_BITE, MOVE_TAIL_WHIP, MOVE_NONE, MOVE_NONE}
+    }
+};
+
+static const struct TrainerMon sParty_Sakura1[] = {
+    {
+    .lvl = 7,
+    .species = SPECIES_PIKIPEK,
+	.ability = ABILITY_SKILL_LINK,
+    .heldItem = ITEM_BLUNDER_POLICY,
+    .moves = {MOVE_PECK, MOVE_GROWL, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_FIDOUGH,
+	.ability = ABILITY_OWN_TEMPO,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_LICK, MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_NONE}
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_BIDOOF,
+	.ability = ABILITY_MOODY,
+    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_EEVEE,
+	.ability = ABILITY_ADAPTABILITY,
+    .moves = {MOVE_BABY_DOLL_EYES, MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE}
+    }
+};
+
+static const struct TrainerMon sParty_Baron1[] = {
+    {
+    .lvl = 7,
+    .species = SPECIES_HOOTHOOT,
+	.ability = ABILITY_TINTED_LENS,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_PECK, MOVE_ECHOED_VOICE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_PHANPY,
+	.ability = ABILITY_SAND_VEIL,
+    .heldItem = ITEM_WEAKNESS_POLICY,
+    .moves = {MOVE_DEFENSE_CURL, MOVE_FLAIL, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_MEOWTH_ALOLA,
+	.ability = ABILITY_TECHNICIAN,
+    .moves = {MOVE_FAKE_OUT, MOVE_PAY_DAY, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_EEVEE,
+	.ability = ABILITY_ADAPTABILITY,
+    .moves = {MOVE_GROWL, MOVE_TAIL_WHIP, MOVE_TACKLE, MOVE_NONE}
+    }
+};

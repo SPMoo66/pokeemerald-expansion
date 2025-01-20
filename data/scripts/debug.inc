@@ -139,7 +139,7 @@ Debug_EventScript_Text_DefensiveIVs:
 Debug_EventScript_Script_1::
     random 5
 	copyvar VAR_EMERALBODY_RIVAL, VAR_RESULT
-	buffernumberstring 0, VAR_EMERALBODY_RIVAL
+	buffernumberstring STR_VAR_1, VAR_EMERALBODY_RIVAL
 	msgbox Debug_PrintRivalVar, MSGBOX_DEFAULT
 	closemessage
 	release
@@ -174,8 +174,8 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	warp MAP_RUSTBORO_CITY, 5
-	setvar VAR_RUSTBORO_CITY_STATE, 7
+	warp MAP_PETALBURG_CITY, 5
+	setvar VAR_EMERALBODY_RIVAL_STATE, 1
 	release
 	end
 

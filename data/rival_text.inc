@@ -193,7 +193,7 @@ Town01_SakuraText::
 Scene02_BaronText_PreBattle::
 # 124 "data/rival_text.pory"
 	.string "H- Hello? It's… good to… see…\n"
-	.string "You……………… {PLAYER}?\l"
+	.string "You… … … … … {PLAYER}?\l"
 	.string "… … …\p"
 	.string "Oh, thank God that's you. That's not\n"
 	.string "your normal look, right?\p"
@@ -488,7 +488,7 @@ Scene03_ReddText::
 
 Scene03_SakuraText::
 # 359 "data/rival_text.pory"
-	.string "Cute! We match\p"
+	.string "Cute! We match!\p"
 	.string "Did you just get that PokéNav?\n"
 	.string "Samesies for me.\p"
 	.string "I wonder if they let you customize it at\n"

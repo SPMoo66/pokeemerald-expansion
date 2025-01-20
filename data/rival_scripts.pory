@@ -140,18 +140,33 @@ script Rival_Scene02 {
 		switch (var(VAR_EMERALBODY_RIVAL)) {
 			case 1:
 				msgbox(Scene02_HarperText_PreBattle)
+				trainerbattle_no_intro (TRAINER_HARPER_1, Scene02_HarperText_BattleVictory)
+				call (GetRivalForNameBox)
+				msgbox(Scene02_HarperText_PostBattle)
 			case 2:
 				msgbox(Scene02_JaksonText_PreBattle)
+				trainerbattle_no_intro (TRAINER_JAKSON_1, Scene02_JaksonText_BattleVictory)
+				call (GetRivalForNameBox)
+				msgbox(Scene02_JaksonText_PostBattle)
 			case 3:
 				msgbox(Scene02_ReddText_PreBattle)
+				trainerbattle_no_intro (TRAINER_REDD_1, Scene02_ReddText_BattleVictory)
+				call (GetRivalForNameBox)
+				msgbox(Scene02_ReddText_PostBattle)
 			case 4:
 				msgbox(Scene02_SakuraText_PreBattle)
+				trainerbattle_no_intro (TRAINER_SAKURA_1, Scene02_SakuraText_BattleVictory)
+				call (GetRivalForNameBox)
+				msgbox(Scene02_SakuraText_PostBattle)
 			default:
 				msgbox(Scene02_BaronText_PreBattle)
+				trainerbattle_no_intro (TRAINER_BARON_1, Scene02_BaronText_BattleVictory)
+				call (GetRivalForNameBox)
+				msgbox(Scene02_BaronText_PostBattle)
 		}
 		closemessage
-		# battle
 		setvar (VAR_EMERALBODY_RIVAL_STATE, 2)
+		clearflag (FLAG_TEMP_2)
 		fadedefaultbgm
 		if (var(VAR_TEMP_1) == 16) {
 			applymovement (RIVAL_PETALBURG, Common_Movement_WalkDown)
@@ -300,6 +315,6 @@ script Rival_Scene03 {
 	removeobject (JAKSON_RUSTBORO)
 	fadescreen (FADE_FROM_BLACK)
 	fadedefaultbgm
+	setflag (FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL)
 	release
-	releaseall
 }

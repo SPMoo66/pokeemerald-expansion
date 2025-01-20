@@ -123,7 +123,7 @@ text Town01_SakuraText {
 # Scene02
 text Scene02_BaronText_PreBattle {
 	format(	"H- Hello? It's… good to… see…\n"
-			"You……………… {PLAYER}?\l"
+			"You… … … … … {PLAYER}?\l"
 			"… … …\p"
 			"Oh, thank God that's you. That's not your normal look, right?\p"
 			"Just trying to remember what each person looks like is a task…\p"
@@ -357,7 +357,7 @@ text Scene03_ReddText {
 }
 
 text Scene03_SakuraText {
-	format(	"Cute! We match\p"
+	format(	"Cute! We match!\p"
 			"Did you just get that PokéNav?\n"
 			"Samesies for me.\p"
 			"I wonder if they let you customize it at all?\p"

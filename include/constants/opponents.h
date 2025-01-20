@@ -873,12 +873,37 @@
 #define TRAINER_MAY_SKY_PILLAR_MUDKIP       867
 #define TRAINER_MAY_SKY_PILLAR_TREECKO      868
 #define TRAINER_MAY_SKY_PILLAR_TORCHIC      869
+#define TRAINER_JAKSON_1                    870
+#define TRAINER_JAKSON_2                    871
+#define TRAINER_JAKSON_3                    872
+#define TRAINER_JAKSON_4                    873
+#define TRAINER_JAKSON_5                    874
+#define TRAINER_HARPER_1                    875
+#define TRAINER_HARPER_2                    876
+#define TRAINER_HARPER_3                    877
+#define TRAINER_HARPER_4                    878
+#define TRAINER_HARPER_5                    879
+#define TRAINER_REDD_1                      880
+#define TRAINER_REDD_2                      881
+#define TRAINER_REDD_3                      882
+#define TRAINER_REDD_4                      883
+#define TRAINER_REDD_5                      884
+#define TRAINER_SAKURA_1                    885
+#define TRAINER_SAKURA_2                    886
+#define TRAINER_SAKURA_3                    887
+#define TRAINER_SAKURA_4                    888
+#define TRAINER_SAKURA_5                    889
+#define TRAINER_BARON_1                     890
+#define TRAINER_BARON_2                     891
+#define TRAINER_BARON_3                     892
+#define TRAINER_BARON_4                     893
+#define TRAINER_BARON_5                     894
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                      870
+#define TRAINERS_COUNT                      895
 #define MAX_TRAINERS_COUNT                  1280
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 

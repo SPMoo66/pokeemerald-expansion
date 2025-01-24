@@ -7620,28 +7620,44 @@ static const struct TrainerMon sParty_WallyVR1[] = {
     {
     .lvl = 56,
     .species = SPECIES_GYARADOS,
-    //.ability = ABILITY_,
-    //.moves = {MOVE_, MOVE_, MOVE_, MOVE_}
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_DRAGON_DANCE, MOVE_DRAGON_RUSH, MOVE_WATERFALL, MOVE_ICE_FANG}
     },
     {
     .lvl = 56,
     .species = SPECIES_KROOKODILE,
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_PASSHO_BERRY,
+    .moves = {MOVE_SUCKER_PUNCH, MOVE_TAUNT, MOVE_EARTHQUAKE, MOVE_STEALTH_ROCK}
     },
     {
     .lvl = 57,
     .species = SPECIES_GOLISOPOD,
+    .ability = ABILITY_EMERGENCY_EXIT,
+	.heldItem = ITEM_WATER_GEM,
+    .moves = {MOVE_FIRST_IMPRESSION, MOVE_LIQUIDATION, MOVE_POISON_JAB, MOVE_ROCK_TOMB}
     },
     {
     .lvl = 57,
     .species = SPECIES_VOLCARONA,
+    .ability = ABILITY_COSTAR,
+	.heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_QUIVER_DANCE, MOVE_FIERY_DANCE, MOVE_HEAT_WAVE, MOVE_BURNING_BULWARK}
     },
     {
     .lvl = 59,
     .species = SPECIES_GALLADE,
+    .ability = ABILITY_SHARPNESS,
+	.heldItem = ITEM_MEGA_STONE_Y,
+    .moves = {MOVE_AQUA_CUTTER, MOVE_SACRED_SWORD, MOVE_PSYBLADE, MOVE_SWORDS_DANCE}
     },
     {
     .lvl = 59,
     .species = SPECIES_SOLGALEO,
+    .ability = ABILITY_FULL_METAL_BODY,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_SUNSTEEL_STRIKE, MOVE_PSYCHIC_FANGS, MOVE_WILD_CHARGE, MOVE_MORNING_SUN}
     }
 };
 
@@ -7649,10 +7665,14 @@ static const struct TrainerMon sParty_BrendanRoute103Mudkip[] = {
     {
     .lvl = 5,
     .species = SPECIES_MUNCHLAX,
+    .ability = ABILITY_THICK_FAT,
+    .moves = {MOVE_TACKLE, MOVE_ODOR_SLEUTH, MOVE_DEFENSE_CURL, MOVE_NONE}
     },
     {
     .lvl = 6,
     .species = SPECIES_ROWLET,
+    .ability = ABILITY_OVERGROW,
+    .moves = {MOVE_TACKLE, MOVE_LEAFAGE, MOVE_ASTONISH, MOVE_FORESIGHT}
     }
 };
 
@@ -7660,19 +7680,31 @@ static const struct TrainerMon sParty_BrendanRoute110Mudkip[] = {
     {
     .lvl = 20,
     .species = SPECIES_BUNNELBY,
+    .ability = ABILITY_CHEEK_POUCH,
+	.heldItem = ITEM_KEE_BERRY,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_BULLDOZE, MOVE_ROCK_TOMB, MOVE_DOUBLE_EDGE}
     },
     {
     .lvl = 20,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_MALE,
+    .ability = ABILITY_SUPER_LUCK,
+	.heldItem = ITEM_SHARP_BEAK,
+    .moves = {MOVE_STEEL_WING, MOVE_AIR_CUTTER, MOVE_ROOST, MOVE_FACADE}
     },
     {
     .lvl = 21,
     .species = SPECIES_MUNCHLAX,
+    .ability = ABILITY_THICK_FAT,
+	.heldItem = ITEM_IRON_BALL,
+    .moves = {MOVE_FLING, MOVE_COVET, MOVE_SCREECH, MOVE_TRAILBLAZE}
     },
     {
     .lvl = 22,
     .species = SPECIES_DARTRIX,
+    .ability = ABILITY_LONG_REACH,
+	.heldItem = ITEM_EXPERT_BELT,
+    .moves = {MOVE_RAZOR_LEAF, MOVE_SHADOW_SNEAK, MOVE_PLUCK, MOVE_TAILWIND}
     }
 };
 
@@ -7680,23 +7712,38 @@ static const struct TrainerMon sParty_BrendanRoute119Mudkip[] = {
     {
     .lvl = 35,
     .species = SPECIES_DIGGERSBY,
+    .ability = ABILITY_HUGE_POWER,
+	.heldItem = ITEM_NORMAL_GEM,
+    .moves = {MOVE_FACADE, MOVE_BULLDOZE, MOVE_ROCK_TOMB, MOVE_ICE_PUNCH}
     },
     {
     .lvl = 34,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_MALE,
+    .ability = ABILITY_SUPER_LUCK,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_STEEL_WING, MOVE_AIR_SLASH, MOVE_ROOST, MOVE_FACADE}
     },
     {
     .lvl = 34,
     .species = SPECIES_MORGREM,
+    .ability = ABILITY_PRANKSTER,
+	.heldItem = ITEM_MIRROR_HERB,
+    .moves = {MOVE_FALSE_SURRENDER, MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_SWAGGER}
     },
     {
     .lvl = 33,
     .species = SPECIES_SNORLAX,
+    .ability = ABILITY_THICK_FAT,
+	.heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_BULLDOZE, MOVE_CHIP_AWAY, MOVE_METRONOME, MOVE_TRAILBLAZE}
     },
     {
     .lvl = 38,
     .species = SPECIES_DECIDUEYE_HISUI,
+    .ability = ABILITY_SCRAPPY,
+	.heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_TRIPLE_ARROWS, MOVE_LEAF_BLADE, MOVE_PLUCK, MOVE_SHADOW_SNEAK}
     }
 };
 
@@ -7704,10 +7751,14 @@ static const struct TrainerMon sParty_BrendanRoute103Treecko[] = {
     {
     .lvl = 5,
     .species = SPECIES_MUNCHLAX,
+    .ability = ABILITY_THICK_FAT,
+    .moves = {MOVE_TACKLE, MOVE_ODOR_SLEUTH, MOVE_DEFENSE_CURL, MOVE_NONE}
     },
     {
     .lvl = 6,
     .species = SPECIES_LITTEN,
+    .ability = ABILITY_BLAZE,
+    .moves = {MOVE_SCRATCH, MOVE_LEER, MOVE_EMBER, MOVE_LICK}
     }
 };
 
@@ -7715,19 +7766,31 @@ static const struct TrainerMon sParty_BrendanRoute110Treecko[] = {
     {
     .lvl = 20,
     .species = SPECIES_TOXEL,
+    .ability = ABILITY_STATIC,
+	.heldItem = ITEM_SHUCA_BERRY,
+    .moves = {MOVE_NUZZLE, MOVE_ENCORE, MOVE_ACID, MOVE_FLAIL}
     },
     {
     .lvl = 20,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_MALE,
+    .ability = ABILITY_SUPER_LUCK,
+	.heldItem = ITEM_SHARP_BEAK,
+    .moves = {MOVE_STEEL_WING, MOVE_AIR_CUTTER, MOVE_ROOST, MOVE_FACADE}
     },
     {
     .lvl = 21,
     .species = SPECIES_MUNCHLAX,
+    .ability = ABILITY_THICK_FAT,
+	.heldItem = ITEM_IRON_BALL,
+    .moves = {MOVE_FLING, MOVE_COVET, MOVE_SCREECH, MOVE_TRAILBLAZE}
     },
     {
     .lvl = 22,
     .species = SPECIES_TORRACAT,
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_DOUBLE_KICK, MOVE_FIRE_SPIN, MOVE_FAKE_OUT, MOVE_GROWL}
     }
 };
 
@@ -7735,23 +7798,38 @@ static const struct TrainerMon sParty_BrendanRoute119Treecko[] = {
     {
     .lvl = 35,
     .species = SPECIES_TOXTRICITY,
+    .ability = ABILITY_TECHNICIAN,
+	.heldItem = ITEM_SHUCA_BERRY,
+    .moves = {MOVE_SHOCK_WAVE, MOVE_VENOSHOCK, MOVE_TOXIC, MOVE_NUZZLE}
     },
     {
     .lvl = 34,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_MALE,
+    .ability = ABILITY_SUPER_LUCK,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_STEEL_WING, MOVE_AIR_SLASH, MOVE_ROOST, MOVE_FACADE}
     },
     {
     .lvl = 34,
     .species = SPECIES_MORGREM,
+    .ability = ABILITY_PRANKSTER,
+	.heldItem = ITEM_MIRROR_HERB,
+    .moves = {MOVE_FALSE_SURRENDER, MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_SWAGGER}
     },
     {
     .lvl = 33,
     .species = SPECIES_SNORLAX,
+    .ability = ABILITY_THICK_FAT,
+	.heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_BULLDOZE, MOVE_CHIP_AWAY, MOVE_METRONOME, MOVE_TRAILBLAZE}
     },
     {
     .lvl = 38,
     .species = SPECIES_INCINEROAR,
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_DARKEST_LARIAT, MOVE_FIRE_FANG, MOVE_U_TURN, MOVE_IRON_HEAD}
     }
 };
 
@@ -7759,10 +7837,14 @@ static const struct TrainerMon sParty_BrendanRoute103Torchic[] = {
     {
     .lvl = 5,
     .species = SPECIES_MUNCHLAX,
+    .ability = ABILITY_THICK_FAT,
+    .moves = {MOVE_TACKLE, MOVE_ODOR_SLEUTH, MOVE_DEFENSE_CURL, MOVE_NONE}
     },
     {
     .lvl = 6,
     .species = SPECIES_SOBBLE,
+    .ability = ABILITY_TORRENT,
+    .moves = {MOVE_POUND, MOVE_WATER_GUN, MOVE_GROWL, MOVE_BIND}
     }
 };
 
@@ -7770,19 +7852,31 @@ static const struct TrainerMon sParty_BrendanRoute110Torchic[] = {
     {
     .lvl = 20,
     .species = SPECIES_MIME_JR,
+    .ability = ABILITY_FILTER,
+	.heldItem = ITEM_KEE_BERRY,
+    .moves = {MOVE_CONFUSION, MOVE_ENCORE, MOVE_COPYCAT, MOVE_BARRIER}
     },
     {
     .lvl = 20,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_MALE,
+    .ability = ABILITY_SUPER_LUCK,
+	.heldItem = ITEM_SHARP_BEAK,
+    .moves = {MOVE_STEEL_WING, MOVE_AIR_CUTTER, MOVE_ROOST, MOVE_FACADE}
     },
     {
     .lvl = 21,
     .species = SPECIES_MUNCHLAX,
+    .ability = ABILITY_THICK_FAT,
+	.heldItem = ITEM_IRON_BALL,
+    .moves = {MOVE_FLING, MOVE_COVET, MOVE_SCREECH, MOVE_TRAILBLAZE}
     },
     {
     .lvl = 22,
     .species = SPECIES_DRIZZILE,
+    .ability = ABILITY_SNIPER,
+	.heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_WATER_PULSE, MOVE_TEARFUL_LOOK, MOVE_U_TURN, MOVE_PROTECT}
     }
 };
 
@@ -7790,23 +7884,38 @@ static const struct TrainerMon sParty_BrendanRoute119Torchic[] = {
     {
     .lvl = 35,
     .species = SPECIES_MR_MIME_GALAR,
+    .ability = ABILITY_SCREEN_CLEANER,
+	.heldItem = ITEM_LIGHT_CLAY,
+    .moves = {MOVE_PSYBEAM, MOVE_LIGHT_SCREEN, MOVE_FREEZE_DRY, MOVE_REFLECT}
     },
     {
     .lvl = 34,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_MALE,
+    .ability = ABILITY_SUPER_LUCK,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_STEEL_WING, MOVE_AIR_SLASH, MOVE_ROOST, MOVE_FACADE}
     },
     {
     .lvl = 34,
     .species = SPECIES_MORGREM,
+    .ability = ABILITY_PRANKSTER,
+	.heldItem = ITEM_MIRROR_HERB,
+    .moves = {MOVE_FALSE_SURRENDER, MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_SWAGGER}
     },
     {
     .lvl = 33,
     .species = SPECIES_SNORLAX,
+    .ability = ABILITY_THICK_FAT,
+	.heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_BULLDOZE, MOVE_CHIP_AWAY, MOVE_METRONOME, MOVE_TRAILBLAZE}
     },
     {
     .lvl = 38,
     .species = SPECIES_INTELEON,
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_SNIPE_SHOT, MOVE_DARK_PULSE, MOVE_ICE_BEAM, MOVE_PROTECT}
     }
 };
 
@@ -7814,10 +7923,14 @@ static const struct TrainerMon sParty_MayRoute103Mudkip[] = {
     {
     .lvl = 5,
     .species = SPECIES_BUNEARY,
+    .ability = ABILITY_LIMBER,
+    .moves = {MOVE_BABY_DOLL_EYES, MOVE_POUND, MOVE_AFTER_YOU, MOVE_FORESIGHT}
     },
     {
     .lvl = 6,
     .species = SPECIES_SPRIGATITO,
+    .ability = ABILITY_OVERGROW,
+    .moves = {MOVE_SCRATCH, MOVE_LEAFAGE, MOVE_TAIL_WHIP, MOVE_CHARM}
     }
 };
 
@@ -7825,19 +7938,31 @@ static const struct TrainerMon sParty_MayRoute110Mudkip[] = {
     {
     .lvl = 20,
     .species = SPECIES_NIDORINA,
+    .ability = ABILITY_POISON_POINT,
+	.heldItem = ITEM_POISON_BARB,
+    .moves = {MOVE_DOUBLE_KICK, MOVE_BULLDOZE, MOVE_POISON_FANG, MOVE_TOXIC}
     },
     {
     .lvl = 20,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_FEMALE,
+    .ability = ABILITY_RIVALRY,
+	.heldItem = ITEM_SHARP_BEAK,
+    .moves = {MOVE_STEEL_WING, MOVE_AIR_CUTTER, MOVE_ROOST, MOVE_FACADE}
     },
     {
     .lvl = 21,
     .species = SPECIES_BUNEARY,
+    .ability = ABILITY_LIMBER,
+	.heldItem = ITEM_PROTECTIVE_PADS,
+    .moves = {MOVE_DOUBLE_KICK, MOVE_HEADBUTT, MOVE_AFTER_YOU, MOVE_ENCORE}
     },
     {
     .lvl = 22,
-    .species = SPECIES_DARTRIX,
+    .species = SPECIES_FLORAGATO,
+    .ability = ABILITY_PROTEAN,
+	.heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_THUNDER_PUNCH, MOVE_TRAILBLAZE, MOVE_HONE_CLAWS, MOVE_SUCKER_PUNCH}
     }
 };
 
@@ -7845,23 +7970,38 @@ static const struct TrainerMon sParty_MayRoute119Mudkip[] = {
     {
     .lvl = 35,
     .species = SPECIES_NIDOQUEEN,
+    .ability = ABILITY_SHEER_FORCE,
+	.heldItem = ITEM_BLACK_SLUDGE,
+    .moves = {MOVE_STEALTH_ROCK, MOVE_BULLDOZE, MOVE_POISON_JAB, MOVE_TOXIC}
     },
     {
     .lvl = 34,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_FEMALE,
+    .ability = ABILITY_RIVALRY,
+	.heldItem = ITEM_BRIGHT_POWDER,
+    .moves = {MOVE_STEEL_WING, MOVE_AIR_SLASH, MOVE_ROOST, MOVE_FACADE}
     },
     {
     .lvl = 34,
     .species = SPECIES_GOTHORITA,
+    .ability = ABILITY_COMPETITIVE,
+	.heldItem = ITEM_WISE_GLASSES,
+    .moves = {MOVE_PSYSHOCK, MOVE_HYPNOSIS, MOVE_FAKE_TEARS, MOVE_SHADOW_BALL}
     },
     {
     .lvl = 33,
     .species = SPECIES_LOPUNNY,
+    .ability = ABILITY_LIMBER,
+	.heldItem = ITEM_PUNCHING_GLOVE,
+    .moves = {MOVE_LOW_SWEEP, MOVE_DIZZY_PUNCH, MOVE_AFTER_YOU, MOVE_ENCORE}
     },
     {
     .lvl = 38,
     .species = SPECIES_MEOWSCARADA,
+    .ability = ABILITY_PROTEAN,
+	.heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_SCALD, MOVE_ICY_WIND, MOVE_ENCORE}
     }
 };
 
@@ -7869,10 +8009,14 @@ static const struct TrainerMon sParty_MayRoute103Treecko[] = {
     {
     .lvl = 5,
     .species = SPECIES_BUNEARY,
+    .ability = ABILITY_LIMBER,
+    .moves = {MOVE_BABY_DOLL_EYES, MOVE_POUND, MOVE_AFTER_YOU, MOVE_FORESIGHT}
     },
     {
     .lvl = 6,
     .species = SPECIES_FENNEKIN,
+    .ability = ABILITY_BLAZE,
+    .moves = {MOVE_SCRATCH, MOVE_EMBER, MOVE_HOWL, MOVE_LEER}
     }
 };
 
@@ -7880,19 +8024,31 @@ static const struct TrainerMon sParty_MayRoute110Treecko[] = {
     {
     .lvl = 20,
     .species = SPECIES_PETILIL,
+    .ability = ABILITY_OWN_TEMPO,
+	.heldItem = ITEM_ABSORB_BULB,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_CHARM, MOVE_HELPING_HAND, MOVE_SLEEP_POWDER}
     },
     {
     .lvl = 20,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_FEMALE,
+    .ability = ABILITY_RIVALRY,
+	.heldItem = ITEM_SHARP_BEAK,
+    .moves = {MOVE_STEEL_WING, MOVE_AIR_CUTTER, MOVE_ROOST, MOVE_FACADE}
     },
     {
     .lvl = 21,
     .species = SPECIES_BUNEARY,
+    .ability = ABILITY_LIMBER,
+	.heldItem = ITEM_PROTECTIVE_PADS,
+    .moves = {MOVE_DOUBLE_KICK, MOVE_HEADBUTT, MOVE_AFTER_YOU, MOVE_ENCORE}
     },
     {
     .lvl = 22,
     .species = SPECIES_BRAIXEN,
+    .ability = ABILITY_MAGICIAN,
+	.heldItem = ITEM_FIRE_GEM,
+    .moves = {MOVE_PSYBEAM, MOVE_INCINERATE, MOVE_WISH, MOVE_COPYCAT}
     }
 };
 
@@ -7900,23 +8056,38 @@ static const struct TrainerMon sParty_MayRoute119Treecko[] = {
     {
     .lvl = 35,
     .species = SPECIES_LILLIGANT,
+    .ability = ABILITY_OWN_TEMPO,
+	.heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE, MOVE_SLEEP_POWDER, MOVE_HELPING_HAND}
     },
     {
     .lvl = 34,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_FEMALE,
+    .ability = ABILITY_RIVALRY,
+	.heldItem = ITEM_BRIGHT_POWDER,
+    .moves = {MOVE_STEEL_WING, MOVE_AIR_CUTTER, MOVE_ROOST, MOVE_FACADE}
     },
     {
     .lvl = 34,
     .species = SPECIES_GOTHORITA,
+    .ability = ABILITY_COMPETITIVE,
+	.heldItem = ITEM_WISE_GLASSES,
+    .moves = {MOVE_PSYSHOCK, MOVE_HYPNOSIS, MOVE_FAKE_TEARS, MOVE_SHADOW_BALL}
     },
     {
     .lvl = 33,
     .species = SPECIES_LOPUNNY,
+    .ability = ABILITY_LIMBER,
+	.heldItem = ITEM_PUNCHING_GLOVE,
+    .moves = {MOVE_LOW_SWEEP, MOVE_DIZZY_PUNCH, MOVE_AFTER_YOU, MOVE_ENCORE}
     },
     {
     .lvl = 38,
     .species = SPECIES_DELPHOX,
+    .ability = ABILITY_MAGICIAN,
+	.heldItem = ITEM_FIRE_GEM,
+    .moves = {MOVE_PSYSHOCK, MOVE_MYSTICAL_FIRE, MOVE_WISH, MOVE_REFLECT}
     }
 };
 
@@ -7924,10 +8095,14 @@ static const struct TrainerMon sParty_MayRoute103Torchic[] = {
     {
     .lvl = 5,
     .species = SPECIES_BUNEARY,
+    .ability = ABILITY_LIMBER,
+    .moves = {MOVE_BABY_DOLL_EYES, MOVE_POUND, MOVE_AFTER_YOU, MOVE_FORESIGHT}
     },
     {
     .lvl = 6,
     .species = SPECIES_POPPLIO,
+    .ability = ABILITY_TORRENT,
+    .moves = {MOVE_POUND, MOVE_WATER_GUN, MOVE_BABY_DOLL_EYES, MOVE_GROWL}
     }
 };
 
@@ -7935,19 +8110,31 @@ static const struct TrainerMon sParty_MayRoute110Torchic[] = {
     {
     .lvl = 20,
     .species = SPECIES_SNORUNT,
+    .ability = ABILITY_INNER_FOCUS,
+	.heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_POWDER_SNOW, MOVE_BITE, MOVE_PROTECT, MOVE_HEADBUTT}
     },
     {
     .lvl = 20,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_FEMALE,
+    .ability = ABILITY_RIVALRY,
+	.heldItem = ITEM_SHARP_BEAK,
+    .moves = {MOVE_STEEL_WING, MOVE_AIR_CUTTER, MOVE_ROOST, MOVE_FACADE}
     },
     {
     .lvl = 21,
     .species = SPECIES_BUNEARY,
+    .ability = ABILITY_LIMBER,
+	.heldItem = ITEM_PROTECTIVE_PADS,
+    .moves = {MOVE_DOUBLE_KICK, MOVE_HEADBUTT, MOVE_AFTER_YOU, MOVE_ENCORE}
     },
     {
     .lvl = 22,
     .species = SPECIES_BRIONNE,
+    .ability = ABILITY_TORRENT,
+	.heldItem = ITEM_WIDE_LENS,
+    .moves = {MOVE_DRAINING_KISS, MOVE_BUBBLE_BEAM, MOVE_ICY_WIND, MOVE_SING}
     }
 };
 
@@ -7955,23 +8142,38 @@ static const struct TrainerMon sParty_MayRoute119Torchic[] = {
     {
     .lvl = 35,
     .species = SPECIES_FROSLASS,
+    .ability = ABILITY_SUPER_LUCK,
+	.heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_OMINOUS_WIND, MOVE_WILL_O_WISP, MOVE_CONFUSE_RAY, MOVE_AURORA_BEAM}
     },
     {
     .lvl = 34,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_FEMALE,
+    .ability = ABILITY_RIVALRY,
+	.heldItem = ITEM_BRIGHT_POWDER,
+    .moves = {MOVE_STEEL_WING, MOVE_AIR_SLASH, MOVE_ROOST, MOVE_FACADE}
     },
     {
     .lvl = 34,
     .species = SPECIES_GOTHORITA,
+    .ability = ABILITY_COMPETITIVE,
+	.heldItem = ITEM_WISE_GLASSES,
+    .moves = {MOVE_PSYSHOCK, MOVE_HYPNOSIS, MOVE_FAKE_TEARS, MOVE_SHADOW_BALL}
     },
     {
     .lvl = 33,
     .species = SPECIES_LOPUNNY,
+    .ability = ABILITY_LIMBER,
+	.heldItem = ITEM_PUNCHING_GLOVE,
+    .moves = {MOVE_LOW_SWEEP, MOVE_DIZZY_PUNCH, MOVE_AFTER_YOU, MOVE_ENCORE}
     },
     {
     .lvl = 38,
     .species = SPECIES_PRIMARINA,
+    .ability = ABILITY_TORRENT,
+	.heldItem = ITEM_WIDE_LENS,
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_SCALD, MOVE_ICY_WIND, MOVE_ENCORE}
     }
 };
 
@@ -8874,18 +9076,30 @@ static const struct TrainerMon sParty_BrendanRustboroTreecko[] = {
     {
     .lvl = 14,
     .species = SPECIES_LITTEN,
+    .ability = ABILITY_BLAZE,
+	.heldItem = ITEM_CHARCOAL,
+    .moves = {MOVE_BITE, MOVE_EMBER, MOVE_ROAR, MOVE_FAKE_OUT}
     },
     {
     .lvl = 15,
     .species = SPECIES_PIDOVE,
+    .ability = ABILITY_SUPER_LUCK,
+	.heldItem = ITEM_SHARP_BEAK,
+    .moves = {MOVE_AIR_CUTTER, MOVE_TAUNT, MOVE_DETECT, MOVE_QUICK_ATTACK}
     },
     {
     .lvl = 14,
     .species = SPECIES_TOXEL,
+    .ability = ABILITY_STATIC,
+	.heldItem = ITEM_SHUCA_BERRY,
+    .moves = {MOVE_NUZZLE, MOVE_TEARFUL_LOOK, MOVE_ACID, MOVE_GROWL}
     },
     {
     .lvl = 16,
     .species = SPECIES_MUNCHLAX,
+    .ability = ABILITY_THICK_FAT,
+	.heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_COVET, MOVE_TRAILBLAZE, MOVE_BITE, MOVE_DEFENSE_CURL}
     }
 };
 
@@ -8893,18 +9107,30 @@ static const struct TrainerMon sParty_BrendanRustboroMudkip[] = {
     {
     .lvl = 14,
     .species = SPECIES_ROWLET,
+    .ability = ABILITY_OVERGROW,
+	.heldItem = ITEM_MIRACLE_SEED,
+    .moves = {MOVE_LEAFAGE, MOVE_PECK, MOVE_SHADOW_SNEAK, MOVE_HELPING_HAND}
     },
     {
     .lvl = 15,
     .species = SPECIES_PIDOVE,
+    .ability = ABILITY_SUPER_LUCK,
+	.heldItem = ITEM_SHARP_BEAK,
+    .moves = {MOVE_AIR_CUTTER, MOVE_TAUNT, MOVE_DETECT, MOVE_QUICK_ATTACK}
     },
     {
     .lvl = 14,
     .species = SPECIES_BUNNELBY,
+    .ability = ABILITY_CHEEK_POUCH,
+	.heldItem = ITEM_KEE_BERRY,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_BULLDOZE, MOVE_ROCK_TOMB, MOVE_DOUBLE_KICK}
     },
     {
     .lvl = 16,
     .species = SPECIES_MUNCHLAX,
+    .ability = ABILITY_THICK_FAT,
+	.heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_COVET, MOVE_TRAILBLAZE, MOVE_BITE, MOVE_DEFENSE_CURL}
     }
 };
 
@@ -9006,18 +9232,30 @@ static const struct TrainerMon sParty_BrendanRustboroTorchic[] = {
     {
     .lvl = 14,
     .species = SPECIES_SOBBLE,
+    .ability = ABILITY_TORRENT,
+	.heldItem = ITEM_MYSTIC_WATER,
+    .moves = {MOVE_WATER_PULSE, MOVE_TEARFUL_LOOK, MOVE_BIND, MOVE_PROTECT}
     },
     {
     .lvl = 15,
     .species = SPECIES_PIDOVE,
+    .ability = ABILITY_SUPER_LUCK,
+	.heldItem = ITEM_SHARP_BEAK,
+    .moves = {MOVE_AIR_CUTTER, MOVE_TAUNT, MOVE_DETECT, MOVE_QUICK_ATTACK}
     },
     {
     .lvl = 14,
     .species = SPECIES_MIME_JR,
+    .ability = ABILITY_FILTER,
+	.heldItem = ITEM_KEE_BERRY,
+    .moves = {MOVE_CONFUSION, MOVE_TICKLE, MOVE_COPYCAT, MOVE_BARRIER}
     },
     {
     .lvl = 16,
     .species = SPECIES_MUNCHLAX,
+    .ability = ABILITY_THICK_FAT,
+	.heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_COVET, MOVE_TRAILBLAZE, MOVE_BITE, MOVE_DEFENSE_CURL}
     }
 };
 
@@ -9025,18 +9263,30 @@ static const struct TrainerMon sParty_MayRustboroMudkip[] = {
     {
     .lvl = 14,
     .species = SPECIES_SPRIGATITO,
+    .ability = ABILITY_OVERGROW,
+	.heldItem = ITEM_MIRACLE_SEED,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_TRAILBLAZE, MOVE_HONE_CLAWS, MOVE_BITE}
     },
     {
     .lvl = 15,
     .species = SPECIES_PIDOVE,
+    .ability = ABILITY_RIVALRY,
+	.heldItem = ITEM_SHARP_BEAK,
+    .moves = {MOVE_AIR_CUTTER, MOVE_TAUNT, MOVE_DETECT, MOVE_QUICK_ATTACK}
     },
     {
     .lvl = 14,
     .species = SPECIES_NIDORAN_F,
+    .ability = ABILITY_POISON_POINT,
+	.heldItem = ITEM_POISON_BARB,
+    .moves = {MOVE_DOUBLE_KICK, MOVE_HELPING_HAND, MOVE_POISON_STING, MOVE_BITE}
     },
     {
     .lvl = 16,
     .species = SPECIES_BUNEARY,
+    .ability = ABILITY_LIMBER,
+	.heldItem = ITEM_PROTECTIVE_PADS,
+    .moves = {MOVE_DOUBLE_KICK, MOVE_QUICK_ATTACK, MOVE_AFTER_YOU, MOVE_ENCORE}
     }
 };
 
@@ -9898,11 +10148,13 @@ static const struct TrainerMon sParty_WallyMauville[] = {
     {
     .lvl = 20,
     .species = SPECIES_RALTS,
+    .moves = {MOVE_PSYBEAM, MOVE_DRAINING_KISS, MOVE_LIFE_DEW, MOVE_HYPNOSIS}
     },
     {
     .lvl = 20,
     .species = SPECIES_COSMOG,
-    .moves = {MOVE_METRONOME, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_COSMIC_POWER, MOVE_STORED_POWER, MOVE_HELPING_HAND, MOVE_NONE}
     }
 };
 
@@ -10042,27 +10294,45 @@ static const struct TrainerMon sParty_BrendanLilycoveMudkip[] = {
     {
     .lvl = 40,
     .species = SPECIES_SNORLAX,
+    .ability = ABILITY_THICK_FAT,
+	.heldItem = ITEM_MEGA_STONE_G,
+    .moves = {MOVE_BELLY_DRUM, MOVE_NEEDLE_ARM, MOVE_BODY_SLAM, MOVE_SLACK_OFF}
     },
     {
     .lvl = 37,
     .species = SPECIES_UNFEZANT,
     .gender = TRAINER_MON_MALE,
+    .ability = ABILITY_SUPER_LUCK,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_STEEL_WING, MOVE_BRAVE_BIRD, MOVE_ROOST, MOVE_TAILWIND}
     },
     {
     .lvl = 39,
     .species = SPECIES_DIGGERSBY,
+    .ability = ABILITY_HUGE_POWER,
+	.heldItem = ITEM_NORMAL_GEM,
+    .moves = {MOVE_BODY_SLAM, MOVE_BULLDOZE, MOVE_ROCK_TOMB, MOVE_ICE_PUNCH}
     },
     {
     .lvl = 41,
     .species = SPECIES_GRIMMSNARL,
+    .ability = ABILITY_PRANKSTER,
+	.heldItem = ITEM_MIRROR_HERB,
+    .moves = {MOVE_FALSE_SURRENDER, MOVE_FAKE_OUT, MOVE_SPIRIT_BREAK, MOVE_SWAGGER}
     },
     {
     .lvl = 40,
     .species = SPECIES_BUZZWOLE,
+    .ability = ABILITY_BEAST_BOOST,
+	.heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_LUNGE, MOVE_HAMMER_ARM, MOVE_BULK_UP, MOVE_HIGH_HORSEPOWER}
     },
     {
     .lvl = 42,
     .species = SPECIES_DECIDUEYE_HISUI,
+    .ability = ABILITY_SCRAPPY,
+	.heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_TRIPLE_ARROWS, MOVE_LEAF_BLADE, MOVE_PLUCK, MOVE_SHADOW_CLAW}
     }
 };
 
@@ -10070,27 +10340,45 @@ static const struct TrainerMon sParty_BrendanLilycoveTreecko[] = {
     {
     .lvl = 40,
     .species = SPECIES_SNORLAX,
+    .ability = ABILITY_THICK_FAT,
+	.heldItem = ITEM_MEGA_STONE_G,
+    .moves = {MOVE_BELLY_DRUM, MOVE_NEEDLE_ARM, MOVE_BODY_SLAM, MOVE_SLACK_OFF}
     },
     {
     .lvl = 37,
     .species = SPECIES_UNFEZANT,
     .gender = TRAINER_MON_MALE,
+    .ability = ABILITY_SUPER_LUCK,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_STEEL_WING, MOVE_BRAVE_BIRD, MOVE_ROOST, MOVE_TAILWIND}
     },
     {
     .lvl = 39,
     .species = SPECIES_TOXTRICITY,
+    .ability = ABILITY_PUNK_ROCK,
+	.heldItem = ITEM_THROAT_SPRAY,
+    .moves = {MOVE_THUNDERBOLT, MOVE_VENOSHOCK, MOVE_TOXIC, MOVE_HYPER_VOICE}
     },
     {
     .lvl = 41,
     .species = SPECIES_GRIMMSNARL,
+    .ability = ABILITY_PRANKSTER,
+	.heldItem = ITEM_MIRROR_HERB,
+    .moves = {MOVE_FALSE_SURRENDER, MOVE_FAKE_OUT, MOVE_SPIRIT_BREAK, MOVE_SWAGGER}
     },
     {
     .lvl = 40,
     .species = SPECIES_BUZZWOLE,
+    .ability = ABILITY_BEAST_BOOST,
+	.heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_LUNGE, MOVE_HAMMER_ARM, MOVE_BULK_UP, MOVE_HIGH_HORSEPOWER}
     },
     {
     .lvl = 42,
     .species = SPECIES_INCINEROAR,
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_DARKEST_LARIAT, MOVE_FIRE_FANG, MOVE_U_TURN, MOVE_IRON_HEAD}
     }
 };
 
@@ -10098,27 +10386,45 @@ static const struct TrainerMon sParty_BrendanLilycoveTorchic[] = {
     {
     .lvl = 40,
     .species = SPECIES_SNORLAX,
+    .ability = ABILITY_THICK_FAT,
+	.heldItem = ITEM_MEGA_STONE_G,
+    .moves = {MOVE_BELLY_DRUM, MOVE_NEEDLE_ARM, MOVE_BODY_SLAM, MOVE_SLACK_OFF}
     },
     {
     .lvl = 37,
     .species = SPECIES_UNFEZANT,
     .gender = TRAINER_MON_MALE,
+    .ability = ABILITY_SUPER_LUCK,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_STEEL_WING, MOVE_BRAVE_BIRD, MOVE_ROOST, MOVE_TAILWIND}
     },
     {
     .lvl = 39,
     .species = SPECIES_MR_RIME,
+    .ability = ABILITY_SCREEN_CLEANER,
+	.heldItem = ITEM_LIGHT_CLAY,
+    .moves = {MOVE_PSYCHIC, MOVE_LIGHT_SCREEN, MOVE_FREEZE_DRY, MOVE_REFLECT}
     },
     {
     .lvl = 41,
     .species = SPECIES_GRIMMSNARL,
+    .ability = ABILITY_PRANKSTER,
+	.heldItem = ITEM_MIRROR_HERB,
+    .moves = {MOVE_FALSE_SURRENDER, MOVE_FAKE_OUT, MOVE_SPIRIT_BREAK, MOVE_SWAGGER}
     },
     {
     .lvl = 40,
     .species = SPECIES_BUZZWOLE,
+    .ability = ABILITY_BEAST_BOOST,
+	.heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_LUNGE, MOVE_HAMMER_ARM, MOVE_BULK_UP, MOVE_HIGH_HORSEPOWER}
     },
     {
     .lvl = 42,
     .species = SPECIES_INTELEON,
+    .ability = ABILITY_SNIPER,
+	.heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_SNIPE_SHOT, MOVE_DARK_PULSE, MOVE_ICE_BEAM, MOVE_PROTECT}
     }
 };
 
@@ -10126,27 +10432,45 @@ static const struct TrainerMon sParty_MayLilycoveMudkip[] = {
     {
     .lvl = 40,
     .species = SPECIES_LOPUNNY,
+    .ability = ABILITY_LIMBER,
+	.heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_DRAIN_PUNCH, MOVE_DIZZY_PUNCH, MOVE_AFTER_YOU, MOVE_ENCORE}
     },
     {
     .lvl = 37,
     .species = SPECIES_UNFEZANT,
     .gender = TRAINER_MON_FEMALE,
+    .ability = ABILITY_RIVALRY,
+	.heldItem = ITEM_BRIGHT_POWDER,
+    .moves = {MOVE_STEEL_WING, MOVE_DUAL_WINGBEAT, MOVE_ROOST, MOVE_TAILWIND}
     },
     {
     .lvl = 39,
     .species = SPECIES_NIDOQUEEN,
+    .ability = ABILITY_SHEER_FORCE,
+	.heldItem = ITEM_BLACK_SLUDGE,
+    .moves = {MOVE_STEALTH_ROCK, MOVE_BULLDOZE, MOVE_POISON_JAB, MOVE_FIRE_PUNCH}
     },
     {
     .lvl = 41,
     .species = SPECIES_GOTHITELLE,
+    .ability = ABILITY_COMPETITIVE,
+	.heldItem = ITEM_WISE_GLASSES,
+    .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL}
     },
     {
     .lvl = 40,
     .species = SPECIES_PHEROMOSA,
+    .ability = ABILITY_BEAST_BOOST,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_U_TURN, MOVE_ICE_BEAM, MOVE_PROTECT}
     },
     {
     .lvl = 42,
     .species = SPECIES_MEOWSCARADA,
+    .ability = ABILITY_PROTEAN,
+	.heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_PLAY_ROUGH, MOVE_FLOWER_TRICK, MOVE_AGILITY, MOVE_SUCKER_PUNCH}
     }
 };
 
@@ -10154,27 +10478,45 @@ static const struct TrainerMon sParty_MayLilycoveTreecko[] = {
     {
     .lvl = 40,
     .species = SPECIES_LOPUNNY,
+    .ability = ABILITY_LIMBER,
+	.heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_DRAIN_PUNCH, MOVE_DIZZY_PUNCH, MOVE_AFTER_YOU, MOVE_ENCORE}
     },
     {
     .lvl = 37,
     .species = SPECIES_UNFEZANT,
     .gender = TRAINER_MON_FEMALE,
+    .ability = ABILITY_RIVALRY,
+	.heldItem = ITEM_BRIGHT_POWDER,
+    .moves = {MOVE_STEEL_WING, MOVE_DUAL_WINGBEAT, MOVE_ROOST, MOVE_TAILWIND}
     },
     {
     .lvl = 39,
     .species = SPECIES_LILLIGANT,
+    .ability = ABILITY_OWN_TEMPO,
+	.heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE, MOVE_SLEEP_POWDER, MOVE_POLLEN_PUFF}
     },
     {
     .lvl = 41,
     .species = SPECIES_GOTHITELLE,
+    .ability = ABILITY_COMPETITIVE,
+	.heldItem = ITEM_WISE_GLASSES,
+    .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL}
     },
     {
     .lvl = 40,
     .species = SPECIES_PHEROMOSA,
+    .ability = ABILITY_BEAST_BOOST,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_U_TURN, MOVE_ICE_BEAM, MOVE_PROTECT}
     },
     {
     .lvl = 42,
     .species = SPECIES_DELPHOX,
+    .ability = ABILITY_MAGICIAN,
+	.heldItem = ITEM_FIRE_GEM,
+    .moves = {MOVE_PSYCHIC, MOVE_MYSTICAL_FIRE, MOVE_WISH, MOVE_REFLECT}
     }
 };
 
@@ -10182,27 +10524,45 @@ static const struct TrainerMon sParty_MayLilycoveTorchic[] = {
     {
     .lvl = 40,
     .species = SPECIES_LOPUNNY,
+    .ability = ABILITY_LIMBER,
+	.heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_DRAIN_PUNCH, MOVE_DIZZY_PUNCH, MOVE_AFTER_YOU, MOVE_ENCORE}
     },
     {
     .lvl = 37,
     .species = SPECIES_UNFEZANT,
     .gender = TRAINER_MON_FEMALE,
+    .ability = ABILITY_RIVALRY,
+	.heldItem = ITEM_BRIGHT_POWDER,
+    .moves = {MOVE_STEEL_WING, MOVE_DUAL_WINGBEAT, MOVE_ROOST, MOVE_TAILWIND}
     },
     {
     .lvl = 39,
     .species = SPECIES_FROSLASS,
+    .ability = ABILITY_SUPER_LUCK,
+	.heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_HEX, MOVE_WILL_O_WISP, MOVE_CONFUSE_RAY, MOVE_ICE_BEAM}
     },
     {
     .lvl = 41,
     .species = SPECIES_GOTHITELLE,
+    .ability = ABILITY_COMPETITIVE,
+	.heldItem = ITEM_WISE_GLASSES,
+    .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL}
     },
     {
     .lvl = 40,
     .species = SPECIES_PHEROMOSA,
+    .ability = ABILITY_BEAST_BOOST,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_U_TURN, MOVE_ICE_BEAM, MOVE_PROTECT}
     },
     {
     .lvl = 42,
     .species = SPECIES_PRIMARINA,
+    .ability = ABILITY_TORRENT,
+	.heldItem = ITEM_WIDE_LENS,
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_SCALD, MOVE_ICY_WIND, MOVE_ENCORE}
     }
 };
 
@@ -11581,18 +11941,30 @@ static const struct TrainerMon sParty_MayRustboroTreecko[] = {
     {
     .lvl = 14,
     .species = SPECIES_FENNEKIN,
+    .ability = ABILITY_BLAZE,
+	.heldItem = ITEM_CHARCOAL,
+    .moves = {MOVE_CONFUSION, MOVE_FIRE_SPIN, MOVE_WISH, MOVE_COPYCAT}
     },
     {
     .lvl = 15,
     .species = SPECIES_PIDOVE,
+    .ability = ABILITY_RIVALRY,
+	.heldItem = ITEM_SHARP_BEAK,
+    .moves = {MOVE_AIR_CUTTER, MOVE_TAUNT, MOVE_DETECT, MOVE_QUICK_ATTACK}
     },
     {
     .lvl = 14,
     .species = SPECIES_PETILIL,
+    .ability = ABILITY_OWN_TEMPO,
+	.heldItem = ITEM_ABSORB_BULB,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_CHARM, MOVE_HELPING_HAND, MOVE_NONE}
     },
     {
     .lvl = 16,
     .species = SPECIES_BUNEARY,
+    .ability = ABILITY_LIMBER,
+	.heldItem = ITEM_PROTECTIVE_PADS,
+    .moves = {MOVE_DOUBLE_KICK, MOVE_QUICK_ATTACK, MOVE_AFTER_YOU, MOVE_ENCORE}
     }
 };
 
@@ -11600,18 +11972,30 @@ static const struct TrainerMon sParty_MayRustboroTorchic[] = {
     {
     .lvl = 14,
     .species = SPECIES_POPPLIO,
+    .ability = ABILITY_TORRENT,
+	.heldItem = ITEM_MYSTIC_WATER,
+    .moves = {MOVE_DISARMING_VOICE, MOVE_CHILLING_WATER, MOVE_BABY_DOLL_EYES, MOVE_SING}
     },
     {
     .lvl = 15,
     .species = SPECIES_PIDOVE,
+    .ability = ABILITY_RIVALRY,
+	.heldItem = ITEM_SHARP_BEAK,
+    .moves = {MOVE_AIR_CUTTER, MOVE_TAUNT, MOVE_DETECT, MOVE_QUICK_ATTACK}
     },
     {
     .lvl = 14,
     .species = SPECIES_SNORUNT,
+    .ability = ABILITY_INNER_FOCUS,
+	.heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_POWDER_SNOW, MOVE_BITE, MOVE_PROTECT, MOVE_LEER}
     },
     {
     .lvl = 16,
     .species = SPECIES_BUNEARY,
+    .ability = ABILITY_LIMBER,
+	.heldItem = ITEM_PROTECTIVE_PADS,
+    .moves = {MOVE_DOUBLE_KICK, MOVE_QUICK_ATTACK, MOVE_AFTER_YOU, MOVE_ENCORE}
     }
 };
 
@@ -13925,26 +14309,44 @@ static const struct TrainerMon sParty_BrendanSkyPillarMudkip[] = {
     {
     .lvl = 51,
     .species = SPECIES_SNORLAX,
+    .ability = ABILITY_GLUTTONY,
+	.heldItem = ITEM_SALAC_BERRY,
+    .moves = {MOVE_BELLY_DRUM, MOVE_HEAVY_SLAM, MOVE_DOUBLE_EDGE, MOVE_SLACK_OFF}
     },
     {
     .lvl = 52,
     .species = SPECIES_BUZZWOLE,
+    .ability = ABILITY_BEAST_BOOST,
+	.heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_LUNGE, MOVE_CLOSE_COMBAT, MOVE_BULK_UP, MOVE_HIGH_HORSEPOWER}
     },
     {
     .lvl = 53,
     .species = SPECIES_DIGGERSBY,
+    .ability = ABILITY_HUGE_POWER,
+	.heldItem = ITEM_NORMAL_GEM,
+    .moves = {MOVE_BODY_SLAM, MOVE_BULLDOZE, MOVE_ROCK_TOMB, MOVE_ICE_PUNCH}
     },
     {
     .lvl = 51,
     .species = SPECIES_GRIMMSNARL,
+    .ability = ABILITY_FRISK,
+	.heldItem = ITEM_MUSCLE_BAND,
+    .moves = {MOVE_FALSE_SURRENDER, MOVE_FAKE_OUT, MOVE_SPIRIT_BREAK, MOVE_HAMMER_ARM}
     },
     {
     .lvl = 54,
     .species = SPECIES_MEWTWO,
+    .ability = ABILITY_PRESSURE,
+	.heldItem = ITEM_MEGA_STONE_LX,
+    .moves = {MOVE_ZEN_HEADBUTT, MOVE_DRAIN_PUNCH, MOVE_RECOVER, MOVE_POISON_JAB}
     },
     {
     .lvl = 54,
     .species = SPECIES_DECIDUEYE_HISUI,
+    .ability = ABILITY_SCRAPPY,
+	.heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_TRIPLE_ARROWS, MOVE_LEAF_BLADE, MOVE_BRAVE_BIRD, MOVE_SHADOW_CLAW}
     }
 };
 
@@ -13952,26 +14354,44 @@ static const struct TrainerMon sParty_BrendanSkyPillarTreecko[] = {
     {
     .lvl = 51,
     .species = SPECIES_SNORLAX,
+    .ability = ABILITY_GLUTTONY,
+	.heldItem = ITEM_SALAC_BERRY,
+    .moves = {MOVE_BELLY_DRUM, MOVE_HEAVY_SLAM, MOVE_DOUBLE_EDGE, MOVE_SLACK_OFF}
     },
     {
     .lvl = 52,
     .species = SPECIES_BUZZWOLE,
+    .ability = ABILITY_BEAST_BOOST,
+	.heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_LUNGE, MOVE_CLOSE_COMBAT, MOVE_BULK_UP, MOVE_HIGH_HORSEPOWER}
     },
     {
     .lvl = 53,
     .species = SPECIES_TOXTRICITY,
+    .ability = ABILITY_PUNK_ROCK,
+	.heldItem = ITEM_THROAT_SPRAY,
+    .moves = {MOVE_OVERDRIVE, MOVE_VENOSHOCK, MOVE_TOXIC, MOVE_HYPER_VOICE}
     },
     {
     .lvl = 51,
     .species = SPECIES_GRIMMSNARL,
+    .ability = ABILITY_FRISK,
+	.heldItem = ITEM_MUSCLE_BAND,
+    .moves = {MOVE_FALSE_SURRENDER, MOVE_FAKE_OUT, MOVE_SPIRIT_BREAK, MOVE_HAMMER_ARM}
     },
     {
     .lvl = 54,
     .species = SPECIES_MEWTWO,
+    .ability = ABILITY_PRESSURE,
+	.heldItem = ITEM_MEGA_STONE_LX,
+    .moves = {MOVE_ZEN_HEADBUTT, MOVE_DRAIN_PUNCH, MOVE_RECOVER, MOVE_POISON_JAB}
     },
     {
     .lvl = 54,
     .species = SPECIES_INCINEROAR,
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_DARKEST_LARIAT, MOVE_FLARE_BLITZ, MOVE_U_TURN, MOVE_IRON_HEAD}
     }
 };
 
@@ -13979,26 +14399,44 @@ static const struct TrainerMon sParty_BrendanSkyPillarTorchic[] = {
     {
     .lvl = 51,
     .species = SPECIES_SNORLAX,
+    .ability = ABILITY_GLUTTONY,
+	.heldItem = ITEM_SALAC_BERRY,
+    .moves = {MOVE_BELLY_DRUM, MOVE_HEAVY_SLAM, MOVE_DOUBLE_EDGE, MOVE_SLACK_OFF}
     },
     {
     .lvl = 52,
     .species = SPECIES_BUZZWOLE,
+    .ability = ABILITY_BEAST_BOOST,
+	.heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_LUNGE, MOVE_CLOSE_COMBAT, MOVE_BULK_UP, MOVE_HIGH_HORSEPOWER}
     },
     {
     .lvl = 53,
     .species = SPECIES_MR_RIME,
+    .ability = ABILITY_SCREEN_CLEANER,
+	.heldItem = ITEM_LIGHT_CLAY,
+    .moves = {MOVE_PSYCHIC, MOVE_LIGHT_SCREEN, MOVE_FREEZE_DRY, MOVE_REFLECT}
     },
     {
     .lvl = 51,
     .species = SPECIES_GRIMMSNARL,
+    .ability = ABILITY_FRISK,
+	.heldItem = ITEM_MUSCLE_BAND,
+    .moves = {MOVE_FALSE_SURRENDER, MOVE_FAKE_OUT, MOVE_SPIRIT_BREAK, MOVE_HAMMER_ARM}
     },
     {
     .lvl = 54,
     .species = SPECIES_MEWTWO,
+    .ability = ABILITY_PRESSURE,
+	.heldItem = ITEM_MEGA_STONE_LX,
+    .moves = {MOVE_ZEN_HEADBUTT, MOVE_DRAIN_PUNCH, MOVE_RECOVER, MOVE_POISON_JAB}
     },
     {
     .lvl = 54,
     .species = SPECIES_INTELEON,
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_SNIPE_SHOT, MOVE_DARK_PULSE, MOVE_ICE_BEAM, MOVE_PROTECT}
     }
 };
 
@@ -14006,26 +14444,44 @@ static const struct TrainerMon sParty_MaySkyPillarMudkip[] = {
     {
     .lvl = 51,
     .species = SPECIES_LOPUNNY,
+    .ability = ABILITY_LIMBER,
+	.heldItem = ITEM_PUNCHING_GLOVE,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_DIZZY_PUNCH, MOVE_THUNDER_PUNCH, MOVE_ENCORE}
     },
     {
     .lvl = 52,
     .species = SPECIES_PHEROMOSA,
+    .ability = ABILITY_BEAST_BOOST,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_U_TURN, MOVE_ICE_BEAM, MOVE_PROTECT}
     },
     {
     .lvl = 53,
     .species = SPECIES_NIDOQUEEN,
+    .ability = ABILITY_SHEER_FORCE,
+	.heldItem = ITEM_BLACK_SLUDGE,
+    .moves = {MOVE_STEALTH_ROCK, MOVE_BULLDOZE, MOVE_DIRE_CLAW, MOVE_FIRE_PUNCH}
     },
     {
     .lvl = 51,
     .species = SPECIES_GOTHITELLE,
+    .ability = ABILITY_COMPETITIVE,
+	.heldItem = ITEM_CHOICE_SPECS,
+    .moves = {MOVE_PSYCHIC, MOVE_FOCUS_BLAST, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL}
     },
     {
     .lvl = 54,
     .species = SPECIES_DIANCIE,
+    .ability = ABILITY_CLEAR_BODY,
+	.heldItem = ITEM_MEGA_STONE_LX,
+    .moves = {MOVE_DIAMOND_STORM, MOVE_MOONBLAST, MOVE_SUBSTITUTE, MOVE_PROTECT}
     },
     {
     .lvl = 54,
     .species = SPECIES_MEOWSCARADA,
+    .ability = ABILITY_PROTEAN,
+	.heldItem = ITEM_CHOICE_SCARF,
+    .moves = {MOVE_PLAY_ROUGH, MOVE_FLOWER_TRICK, MOVE_THUNDER_PUNCH, MOVE_SUCKER_PUNCH}
     }
 };
 
@@ -14033,26 +14489,44 @@ static const struct TrainerMon sParty_MaySkyPillarTreecko[] = {
     {
     .lvl = 51,
     .species = SPECIES_LOPUNNY,
+    .ability = ABILITY_LIMBER,
+	.heldItem = ITEM_PUNCHING_GLOVE,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_DIZZY_PUNCH, MOVE_THUNDER_PUNCH, MOVE_ENCORE}
     },
     {
     .lvl = 52,
     .species = SPECIES_PHEROMOSA,
+    .ability = ABILITY_BEAST_BOOST,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_U_TURN, MOVE_ICE_BEAM, MOVE_PROTECT}
     },
     {
     .lvl = 53,
     .species = SPECIES_LILLIGANT,
+    .ability = ABILITY_OWN_TEMPO,
+	.heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE, MOVE_SLEEP_POWDER, MOVE_POLLEN_PUFF}
     },
     {
     .lvl = 51,
     .species = SPECIES_GOTHITELLE,
+    .ability = ABILITY_COMPETITIVE,
+	.heldItem = ITEM_CHOICE_SPECS,
+    .moves = {MOVE_PSYCHIC, MOVE_FOCUS_BLAST, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL}
     },
     {
     .lvl = 54,
     .species = SPECIES_DIANCIE,
+    .ability = ABILITY_CLEAR_BODY,
+	.heldItem = ITEM_MEGA_STONE_LX,
+    .moves = {MOVE_DIAMOND_STORM, MOVE_MOONBLAST, MOVE_SUBSTITUTE, MOVE_PROTECT}
     },
     {
     .lvl = 54,
     .species = SPECIES_DELPHOX,
+    .ability = ABILITY_MAGICIAN,
+	.heldItem = ITEM_FIRE_GEM,
+    .moves = {MOVE_PSYCHIC, MOVE_MYSTICAL_FIRE, MOVE_WISH, MOVE_REFLECT}
     }
 };
 
@@ -14060,26 +14534,44 @@ static const struct TrainerMon sParty_MaySkyPillarTorchic[] = {
     {
     .lvl = 51,
     .species = SPECIES_LOPUNNY,
+    .ability = ABILITY_LIMBER,
+	.heldItem = ITEM_PUNCHING_GLOVE,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_DIZZY_PUNCH, MOVE_THUNDER_PUNCH, MOVE_ENCORE}
     },
     {
     .lvl = 52,
     .species = SPECIES_PHEROMOSA,
+    .ability = ABILITY_BEAST_BOOST,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_U_TURN, MOVE_ICE_BEAM, MOVE_PROTECT}
     },
     {
     .lvl = 53,
     .species = SPECIES_FROSLASS,
+    .ability = ABILITY_SUPER_LUCK,
+	.heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_INFERNAL_PARADE, MOVE_WILL_O_WISP, MOVE_CONFUSE_RAY, MOVE_ICE_BEAM}
     },
     {
     .lvl = 51,
     .species = SPECIES_GOTHITELLE,
+    .ability = ABILITY_COMPETITIVE,
+	.heldItem = ITEM_CHOICE_SPECS,
+    .moves = {MOVE_PSYCHIC, MOVE_FOCUS_BLAST, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL}
     },
     {
     .lvl = 54,
     .species = SPECIES_DIANCIE,
+    .ability = ABILITY_CLEAR_BODY,
+	.heldItem = ITEM_MEGA_STONE_LX,
+    .moves = {MOVE_DIAMOND_STORM, MOVE_MOONBLAST, MOVE_SUBSTITUTE, MOVE_PROTECT}
     },
     {
     .lvl = 54,
     .species = SPECIES_PRIMARINA,
+    .ability = ABILITY_TORRENT,
+	.heldItem = ITEM_WIDE_LENS,
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_HYDRO_PUMP, MOVE_ICY_WIND, MOVE_ENCORE}
     }
 };
 

@@ -19344,6 +19344,7 @@ static const struct LevelUpMove sCarbinkLevelUpLearnset[] = {
 	LEVEL_UP_MOVE(52, MOVE_GUARD_SPLIT),
 	LEVEL_UP_MOVE(56, MOVE_MOONBLAST),
 	LEVEL_UP_MOVE(60, MOVE_STONE_EDGE),
+	LEVEL_UP_MOVE(64, MOVE_DIAMOND_STORM),
 	LEVEL_UP_END
 };
 #endif //P_FAMILY_CARBINK
@@ -19957,6 +19958,7 @@ static const struct LevelUpMove sDecidueyeLevelUpLearnset[] = {
 static const struct LevelUpMove sDecidueyeHisuiLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 0, MOVE_MACH_PUNCH),
 	LEVEL_UP_MOVE( 1, MOVE_MACH_PUNCH),
+	LEVEL_UP_MOVE( 1, MOVE_TRIPLE_ARROWS),
 	LEVEL_UP_MOVE( 1, MOVE_U_TURN),
 	LEVEL_UP_MOVE( 1, MOVE_DETECT),
 	LEVEL_UP_MOVE( 1, MOVE_TACKLE),

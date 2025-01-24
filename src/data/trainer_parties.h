@@ -7647,17 +7647,17 @@ static const struct TrainerMon sParty_WallyVR1[] = {
     },
     {
     .lvl = 59,
-    .species = SPECIES_GALLADE,
-    .ability = ABILITY_SHARPNESS,
-	.heldItem = ITEM_MEGA_STONE_Y,
-    .moves = {MOVE_AQUA_CUTTER, MOVE_SACRED_SWORD, MOVE_PSYBLADE, MOVE_SWORDS_DANCE}
-    },
-    {
-    .lvl = 59,
     .species = SPECIES_SOLGALEO,
     .ability = ABILITY_FULL_METAL_BODY,
 	.heldItem = ITEM_LIFE_ORB,
     .moves = {MOVE_SUNSTEEL_STRIKE, MOVE_PSYCHIC_FANGS, MOVE_WILD_CHARGE, MOVE_MORNING_SUN}
+    },
+    {
+    .lvl = 59,
+    .species = SPECIES_GALLADE,
+    .ability = ABILITY_SHARPNESS,
+	.heldItem = ITEM_MEGA_STONE_Y,
+    .moves = {MOVE_AQUA_CUTTER, MOVE_SACRED_SWORD, MOVE_PSYBLADE, MOVE_SWORDS_DANCE}
     }
 };
 

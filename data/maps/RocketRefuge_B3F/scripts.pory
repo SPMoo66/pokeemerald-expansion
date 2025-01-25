@@ -1,0 +1,9 @@
+mapscripts RocketRefuge_B3F_MapScripts {}
+
+script RocketRefuge_Teleport {
+	lock
+	warp (MAP_ROCKET_REFUGE_B1F, 2)
+	setvar (VAR_TEMP_0, 1)
+	delay (100)
+	release
+}

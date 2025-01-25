@@ -613,7 +613,9 @@
     "CrescentIsle",
     "PathlessPlainAlt",
     "SeasideHollow",
-    "RocketRefuge_B1F"
+    "RocketRefuge_B1F",
+    "RocketRefuge_B2F",
+    "RocketRefuge_B3F"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

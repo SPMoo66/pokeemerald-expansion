@@ -1161,3 +1161,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FloralParadise/scripts.inc"
 
 	.include "data/maps/RocketRefuge_B1F/scripts.inc"
+
+	.include "data/maps/RocketRefuge_B2F/scripts.inc"
+
+	.include "data/maps/RocketRefuge_B3F/scripts.inc"

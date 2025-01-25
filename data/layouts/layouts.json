@@ -4694,12 +4694,32 @@
     {
       "id": "LAYOUT_ROCKET_REFUGE_B1F",
       "name": "RocketRefuge_B1F_Layout",
-      "width": 30,
+      "width": 27,
       "height": 21,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_TrainerHill",
       "border_filepath": "data/layouts/RocketRefuge_B1F/border.bin",
       "blockdata_filepath": "data/layouts/RocketRefuge_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCKET_REFUGE_B2F",
+      "name": "RocketRefuge_B2F_Layout",
+      "width": 20,
+      "height": 21,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_TrainerHill",
+      "border_filepath": "data/layouts/RocketRefuge_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/RocketRefuge_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCKET_REFUGE_B3F",
+      "name": "RocketRefuge_B3F_Layout",
+      "width": 20,
+      "height": 19,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_TrainerHill",
+      "border_filepath": "data/layouts/RocketRefuge_B3F/border.bin",
+      "blockdata_filepath": "data/layouts/RocketRefuge_B3F/map.bin"
     }
   ]
 }

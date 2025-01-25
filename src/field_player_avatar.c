@@ -582,28 +582,24 @@ static bool8 ForcedMovement_WalkEast(void)
 
 static bool8 ForcedMovement_SpinRight(void)
 {
-	RemoveFollowingPokemon();
     PlaySpinSound();
     return DoForcedMovement(DIR_EAST, PlayerGoSpin);
 }
 
 static bool8 ForcedMovement_SpinLeft(void)
 {
-	RemoveFollowingPokemon();
     PlaySpinSound();
     return DoForcedMovement(DIR_WEST, PlayerGoSpin);
 }
 
 static bool8 ForcedMovement_SpinUp(void)
 {
-	RemoveFollowingPokemon();
     PlaySpinSound();
     return DoForcedMovement(DIR_NORTH, PlayerGoSpin);
 }
 
 static bool8 ForcedMovement_SpinDown(void)
 {
-	RemoveFollowingPokemon();
     PlaySpinSound();
     return DoForcedMovement(DIR_SOUTH, PlayerGoSpin);
 }

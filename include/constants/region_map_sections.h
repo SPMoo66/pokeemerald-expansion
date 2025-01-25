@@ -109,7 +109,7 @@
 #define MAPSEC_GALEFORCE_CLIFF              0x69
 #define MAPSEC_SEASIDE_HOLLOW               0x6A
 #define MAPSEC_INFERNAL_DRYLANDS            0x6B
-#define MAPSEC_ROUTE_8                      0x6C
+#define MAPSEC_ROCKET_REFUGE                0x6C
 #define MAPSEC_ROUTE_9                      0x6D
 #define MAPSEC_ROUTE_10                     0x6E
 #define MAPSEC_ROUTE_11                     0x6F
@@ -220,7 +220,7 @@
 #define METLOC_IN_GAME_TRADE                0xFE
 #define METLOC_FATEFUL_ENCOUNTER            0xFF
 
-#define KANTO_MAPSEC_START  MAPSEC_ROUTE_8
+#define KANTO_MAPSEC_START  MAPSEC_ROUTE_9
 #define KANTO_MAPSEC_END    MAPSEC_SPECIAL_AREA
 #define KANTO_MAPSEC_COUNT (KANTO_MAPSEC_END - KANTO_MAPSEC_START + 1)
 

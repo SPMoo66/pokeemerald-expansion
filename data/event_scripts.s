@@ -1159,3 +1159,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/InfernalDrylands/scripts.inc"
 
 	.include "data/maps/FloralParadise/scripts.inc"
+
+	.include "data/maps/RocketRefuge_B1F/scripts.inc"

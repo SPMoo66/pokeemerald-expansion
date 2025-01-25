@@ -612,7 +612,8 @@
     "TrainerHill_Elevator",
     "CrescentIsle",
     "PathlessPlainAlt",
-    "SeasideHollow"
+    "SeasideHollow",
+    "RocketRefuge_B1F"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

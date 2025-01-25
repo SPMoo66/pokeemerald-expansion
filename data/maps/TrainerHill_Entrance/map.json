@@ -106,7 +106,7 @@
       "x": 2,
       "y": 15,
       "elevation": 0,
-      "dest_map": "MAP_TRAINER_HILL_ENTRANCE",
+      "dest_map": "MAP_ROCKET_REFUGE_B1F",
       "dest_warp_id": "0"
     }
   ],

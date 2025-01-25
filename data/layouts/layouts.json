@@ -4690,6 +4690,16 @@
       "secondary_tileset": "gTileset_EverGrande",
       "border_filepath": "data/layouts/FloralParadise/border.bin",
       "blockdata_filepath": "data/layouts/FloralParadise/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCKET_REFUGE_B1F",
+      "name": "RocketRefuge_B1F_Layout",
+      "width": 30,
+      "height": 21,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_TrainerHill",
+      "border_filepath": "data/layouts/RocketRefuge_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/RocketRefuge_B1F/map.bin"
     }
   ]
 }

@@ -137,11 +137,11 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
-    random 5
-	copyvar VAR_EMERALBODY_RIVAL, VAR_RESULT
-	buffernumberstring STR_VAR_1, VAR_EMERALBODY_RIVAL
-	msgbox Debug_PrintRivalVar, MSGBOX_DEFAULT
-	closemessage
+	setflag FLAG_TEMP_HIDE_FOLLOWER
+    applymovement OBJ_EVENT_ID_FOLLOWER, EnterPokeballMovement
+	waitmovement 0
+	setflag FLAG_TEMP_HIDE_FOLLOWER
+	setflag FLAG_TEMP_E
 	release
 	end
 

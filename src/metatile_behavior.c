@@ -36,7 +36,7 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_ICE]                                = TILE_FLAG_UNUSED,
     [MB_SAND]                               = TILE_FLAG_UNUSED,
     [MB_SEAWEED]                            = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE | TILE_FLAG_HAS_ENCOUNTERS,
-    [MB_UNUSED_23]                          = TILE_FLAG_UNUSED,
+    [MB_STOP_SPINNING]                      = TILE_FLAG_UNUSED,
     [MB_ASHGRASS]                           = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
     [MB_FOOTPRINTS]                         = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
     [MB_THIN_ICE]                           = TILE_FLAG_UNUSED,
@@ -45,10 +45,10 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_LAVARIDGE_GYM_B1F_WARP]             = TILE_FLAG_UNUSED,
     [MB_SEAWEED_NO_SURFACING]               = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE | TILE_FLAG_HAS_ENCOUNTERS,
     [MB_REFLECTION_UNDER_BRIDGE]            = TILE_FLAG_UNUSED,
-    [MB_IMPASSABLE_EAST]                    = TILE_FLAG_UNUSED,
-    [MB_IMPASSABLE_WEST]                    = TILE_FLAG_UNUSED,
-    [MB_IMPASSABLE_NORTH]                   = TILE_FLAG_UNUSED,
-    [MB_IMPASSABLE_SOUTH]                   = TILE_FLAG_UNUSED,
+    [MB_SPIN_RIGHT]                         = TILE_FLAG_UNUSED,
+    [MB_SPIN_LEFT]                          = TILE_FLAG_UNUSED,
+    [MB_SPIN_UP]                            = TILE_FLAG_UNUSED,
+    [MB_SPIN_DOWN]                          = TILE_FLAG_UNUSED,
     [MB_IMPASSABLE_NORTHEAST]               = TILE_FLAG_UNUSED,
     [MB_IMPASSABLE_NORTHWEST]               = TILE_FLAG_UNUSED,
     [MB_IMPASSABLE_SOUTHEAST]               = TILE_FLAG_UNUSED,
@@ -353,7 +353,8 @@ bool8 MetatileBehavior_IsForcedMovementTile(u8 metatileBehavior)
      || metatileBehavior == MB_WATERFALL
      || metatileBehavior == MB_ICE
      || metatileBehavior == MB_SECRET_BASE_JUMP_MAT
-     || metatileBehavior == MB_SECRET_BASE_SPIN_MAT)
+     || metatileBehavior == MB_SECRET_BASE_SPIN_MAT
+     || (metatileBehavior >= MB_SPIN_RIGHT && metatileBehavior <= MB_SPIN_DOWN))
         return TRUE;
     else
         return FALSE;
@@ -1461,6 +1462,57 @@ bool8 MetatileBehavior_IsDirectionalStairWarp(u8 metatileBehavior)
         return FALSE;
 }
 
+bool8 MetatileBehavior_IsSpinRight(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_SPIN_RIGHT)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsSpinLeft(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_SPIN_LEFT)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsSpinUp(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_SPIN_UP)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsSpinDown(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_SPIN_DOWN)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsStopSpinning(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_STOP_SPINNING)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsSpinTile(u8 metatileBehavior)
+{
+    bool8 result = FALSE;
+
+    if (metatileBehavior >= MB_SPIN_RIGHT && metatileBehavior <= MB_SPIN_DOWN)
+        result = TRUE;
+    else
+        result = FALSE;
+
+    return result;
+}
 bool8 MetatileBehavior_IsSignpost(u32 metatileBehavior)
 {
     return (metatileBehavior == MB_SIGNPOST);

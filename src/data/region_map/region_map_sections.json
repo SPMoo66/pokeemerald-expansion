@@ -865,10 +865,10 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_8",
-      "name": "Route 8",
-      "x": 0,
-      "y": 0,
+      "map_section": "MAPSEC_ROCKET_REFUGE",
+      "name": "Rocket Refuge",
+      "x": 8,
+      "y": 4,
       "width": 1,
       "height": 1
     },

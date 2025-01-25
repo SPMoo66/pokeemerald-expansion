@@ -146,7 +146,16 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	call (Intro_EmibOpening)
+	setmetatile 0, 14, 0x3D0, TRUE
+	setmetatile 1, 14, 0x3D1, TRUE
+	setmetatile 2, 14, 0x3D2, FALSE
+	setmetatile 0, 15, 0x3D8, TRUE
+	setmetatile 1, 15, 0x3D9, TRUE
+	setmetatile 2, 15, 0x3DA, FALSE
+	setmetatile 0, 16, 0x3E0, TRUE
+	setmetatile 1, 16, 0x3E1, TRUE
+	setmetatile 2, 16, 0x3E2, FALSE
+	special DrawWholeMapView
 	release
 	end
 

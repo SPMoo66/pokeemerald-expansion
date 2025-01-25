@@ -271,7 +271,7 @@ Route115_EventScript_Looker::
 # 122 "data/looker.pory"
 	setflag FLAG_ENABLE_LOOKER_MATCH_CALL
 # 123 "data/looker.pory"
-	setvar VAR_LOOKER_ROCKET, 3
+	setvar VAR_LOOKER_ROCKET, 1
 # 124 "data/looker.pory"
 	fadedefaultbgm
 # 125 "data/looker.pory"

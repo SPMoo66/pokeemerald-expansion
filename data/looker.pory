@@ -120,7 +120,7 @@ script Route115_EventScript_Looker {
 	closemessage
 	delay (30)
 	setflag (FLAG_ENABLE_LOOKER_MATCH_CALL)
-	setvar (VAR_LOOKER_ROCKET, 3)
+	setvar (VAR_LOOKER_ROCKET, 1)
 	fadedefaultbgm
 	release
 }

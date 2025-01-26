@@ -1509,8 +1509,8 @@
 #define FLAG_INVESTMENT_MADE                        (SYSTEM_FLAGS + 0x86) // Made an investment with the Investor NPC
 #define FLAG_LEVEL_SYNC                             (SYSTEM_FLAGS + 0x87) // Was unused
 #define FLAG_CHALLENGING_TRAINER                    (SYSTEM_FLAGS + 0x88) // Was unused
+#define FLAG_PREVENT_OVERWORLD_SPEEDUP              (SYSTEM_FLAGS + 0x89) // Was unused
 
-#define FLAG_UNUSED_0x8E9                           (SYSTEM_FLAGS + 0x89) // Unused Flag
 #define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
 #define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
 #define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag

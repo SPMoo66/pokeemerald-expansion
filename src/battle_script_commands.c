@@ -10312,6 +10312,7 @@ static void Cmd_various(void)
             gBattleScripting.battler = battler;
             BattleScriptPush(cmd->nextInstr);
             gBattlescriptCurrInstr = (i == 1 ? BattleScript_TrainerASlideMsgRet : BattleScript_TrainerBSlideMsgRet);
+            SetLastPokemonMusic();
             return;
         }
         break;

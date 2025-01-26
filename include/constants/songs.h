@@ -946,10 +946,11 @@
 #define MUS_HG_OBTAIN_CASTLE_POINTS       896 // Received Castle Points!
 #define MUS_HG_OBTAIN_B_POINTS            897 // Received Battle Points!
 #define MUS_HG_WIN_MINIGAME               898 // Cleared Wobbuffet Pop!
+#define MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES 899 // Victory is Right Before Your Eyes (BW)
 
 #define HG_MUSIC_END                      MUS_HG_WIN_MINIGAME
-#define END_MUS                           HG_MUSIC_END
-#define SONGS_END                         HG_MUSIC_END
+#define END_MUS                           MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES
+#define SONGS_END                         MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES
 
 #define MUS_ROUTE118                      0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

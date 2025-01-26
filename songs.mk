@@ -2339,3 +2339,6 @@ $(MID_SUBDIR)/mus_hg_obtain_b_points.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_hg_win_minigame.s: %.s: %.mid
 	$(MID) $< $@ -E -R0 -G229 -V091 -p5
+
+$(MID_SUBDIR)/mus_victory_is_right_before_your_eyes.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G274 -V076 -P2

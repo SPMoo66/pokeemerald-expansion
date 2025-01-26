@@ -4981,6 +4981,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_HG_OBTAIN_CASTLE_POINTS) \
     X(MUS_HG_OBTAIN_B_POINTS) \
     X(MUS_HG_WIN_MINIGAME) \
+    X(MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES) \
 	
 /*    X(PH_TRAP_BLEND) \
     X(PH_TRAP_HELD) \

@@ -1431,3 +1431,10 @@ bool32 ShouldPlayNormalMonCry(struct Pokemon *mon)
 
     return TRUE;
 }
+
+void TryLastMonBGM(void)
+{
+    ResetMapMusic();
+    m4aMPlayAllStop();
+    PlayBGM(MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES);
+}

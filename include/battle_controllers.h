@@ -346,4 +346,6 @@ void SetControllerToLinkPartner(u32 battler);
 // Battle Speed Up (Credit to Pokabbie)
 u32 Rogue_GetBattleSpeedScale(bool32 forHealthbar);
 
+void SetLastPokemonMusic (void); // Last mon music
+
 #endif // GUARD_BATTLE_CONTROLLERS_H

@@ -3117,3 +3117,8 @@ u32 Rogue_GetBattleSpeedScale(bool32 forHealthbar)
 
     return 1;
 }
+
+void SetLastPokemonMusic (void)
+{
+    TryLastMonBGM();
+}

@@ -75,6 +75,7 @@ RustboroCity_DevonCorp_1F_Text_ProductDisplay:
 const EMPLOYEE = 1
 const STAIR_GUARD = 2
 const GREETER = 3
+const LOOKER_DEVONCORP_1F = 5
 
 mapscripts RustboroCity_DevonCorp_1F_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
@@ -150,11 +151,46 @@ script Devoncorp_RocketEntrance {
 	waitmovement (0)
 	setobjectxy (GREETER, 1, 5)
 	applymovement (GREETER, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement (0)
+	addobject (LOOKER_DEVONCORP_1F)
+	switch (var(VAR_TEMP_0)) {
+		case 12:
+			setobjectxy (LOOKER_DEVONCORP_1F, 13, 8)
+		case 13:
+			setobjectxy (LOOKER_DEVONCORP_1F, 12, 8)
+		default:
+	}
+	applymovement (LOOKER_DEVONCORP_1F, Common_Movement_FaceUp)
+	waitmovement (0)
+	playse (SE_EXIT)
+	waitse
+	applymovement (LOOKER_DEVONCORP_1F, Common_Movement_WalkUp2)
+	waitmovement (0)
+	applymovement (LOOKER_DEVONCORP_1F, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement (0)
+	speakername (CommonText_Looker)
+	msgbox (format ("{PLAYER}, it is good that you have arrived.\p"
+					"Our adversaries are a group of villains I have not met before."))
+	applymovement (LOOKER_DEVONCORP_1F, Common_Movement_WalkInPlaceFasterRight)
+	waitmovement (0)
+	msgbox (format ("I will try to take them on at the main staircase.\p"
+					"If I cannot break through, try to find another path!\p"
+					"We will meet up at the top and save Mr. Stone!"))
+	applymovement (LOOKER_DEVONCORP_1F, LookerRunRight)
+	waitmovement (0)
+	setobjectxy (LOOKER_DEVONCORP_1F, 22, 5)
+	applymovement (LOOKER_DEVONCORP_1F, Common_Movement_FaceUp)
+	waitmovement (0)
 	setvar (VAR_LOOKER_ROCKET, 4)
+	release
 }
 
 movement GreeterRun {
 	walk_fast_left * 8
+}
+
+movement LookerRunRight {
+	walk_fast_right * 9
 }
 
 script RustboroCity_DevonCorp_1F_EventScript_StairGuard {
@@ -208,5 +244,14 @@ script RustboroCity_DevonCorp_1F_EventScript_Greeter {
 	else {
 		msgbox (RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp, MSGBOX_DEFAULT)
 	}
+	release
+}
+
+script Looker_Devoncorp_1F {
+	lock
+	speakername (CommonText_Looker)
+	msgbox (format ("You must let me through!\n"
+					"I am an officer of the law!\p"
+					"Stand down at once!"))
 	release
 }

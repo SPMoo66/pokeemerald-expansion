@@ -1153,15 +1153,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PathlessPlainAlt/scripts.inc"
 	.include "data/maps/GaleforceCliffs/scripts.inc"
 	.include "data/maps/RustboroCity_DevonCorp_B1F/scripts.inc"
-
 	.include "data/maps/SeasideHollow/scripts.inc"
-
 	.include "data/maps/InfernalDrylands/scripts.inc"
-
 	.include "data/maps/FloralParadise/scripts.inc"
-
 	.include "data/maps/RocketRefuge_B1F/scripts.inc"
-
 	.include "data/maps/RocketRefuge_B2F/scripts.inc"
-
 	.include "data/maps/RocketRefuge_B3F/scripts.inc"

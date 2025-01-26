@@ -144,336 +144,429 @@ RustboroCity_DevonCorp_1F_Text_ProductDisplay:
 	.string "Poké Balls and Pokénav systems.”$"
 
 RustboroCity_DevonCorp_1F_MapScripts::
-# 80 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 81 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION
-# 111 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 112 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	map_script MAP_SCRIPT_ON_LOAD, RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_LOAD
-# 130 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 131 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
 RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
-# 81 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 82 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	goto_if_unset FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
-# 86 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 87 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	compare VAR_LOOKER_ROCKET, 3
 	goto_if_ge RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
 RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
-# 94 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 95 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	setflag FLAG_TEMP_1
 RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
-# 96 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 97 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	compare VAR_LOOKER_ROCKET, 3
 	goto_if_eq RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_10
-# 106 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 107 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	compare VAR_LOOKER_ROCKET, 4
 	goto_if_eq RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_11
-# 106 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 107 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	compare VAR_LOOKER_ROCKET, 5
 	goto_if_eq RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_11
 RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_9:
-# 109 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 110 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	clearflag FLAG_DONT_TRANSITION_MUSIC
 	return
 
 RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
-# 82 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setobjectxyperm 2, 21, 2
 # 83 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 2, 21, 2
 # 84 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_DOWN
+# 85 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	setflag FLAG_TEMP_1
 	goto RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
 RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
-# 87 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setobjectxyperm 2, 6, 5
 # 88 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT
+	setobjectxyperm 2, 6, 5
 # 89 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setobjectxyperm 1, 0, 7
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT
 # 90 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm 1, 0, 7
 # 91 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_RIGHT
+# 92 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	setobjectxyperm 3, 1, 5
 	goto RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
 RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
-# 86 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 87 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	compare VAR_LOOKER_ROCKET, 5
 	goto_if_le RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_3
 	goto RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
 
 RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_10:
-# 97 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 # 98 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 99 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	compare VAR_TEMP_0, 13
 	goto_if_eq RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_17
-# 102 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 103 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	setobjectxyperm 3, 20, 6
 RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_16:
-# 104 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 105 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	savebgm MUS_HG_ROCKET_TAKEOVER
 	goto RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_9
 
 RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_11:
-# 107 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 108 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	savebgm MUS_HG_ROCKET_TAKEOVER
 	goto RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_9
 
 RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_17:
-# 99 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 100 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	setobjectxyperm 3, 21, 6
 	goto RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_16
 
 RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_LOAD:
-# 112 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 113 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	compare VAR_LOOKER_ROCKET, 3
 	goto_if_ge RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_LOAD_2
 	return
 
 RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_LOAD_1:
-# 113 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setmetatile 3, 3, 0x381, FALSE
 # 114 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setmetatile 3, 4, 0x381, FALSE
+	setmetatile 3, 3, 0x381, FALSE
 # 115 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setmetatile 4, 3, 0x380, FALSE
+	setmetatile 3, 4, 0x381, FALSE
 # 116 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setmetatile 4, 4, 0x380, FALSE
+	setmetatile 4, 3, 0x380, FALSE
 # 117 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setmetatile 4, 5, 0x380, FALSE
+	setmetatile 4, 4, 0x380, FALSE
 # 118 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setmetatile 5, 3, 0x380, FALSE
+	setmetatile 4, 5, 0x380, FALSE
 # 119 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setmetatile 5, 4, 0x380, FALSE
+	setmetatile 5, 3, 0x380, FALSE
 # 120 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setmetatile 5, 5, 0x380, FALSE
+	setmetatile 5, 4, 0x380, FALSE
 # 121 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setmetatile 20, 3, 0x386, FALSE
+	setmetatile 5, 5, 0x380, FALSE
 # 122 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setmetatile 20, 4, 0x38E, TRUE
+	setmetatile 20, 3, 0x386, FALSE
 # 123 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setmetatile 21, 3, 0x387, FALSE
+	setmetatile 20, 4, 0x38E, TRUE
 # 124 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setmetatile 21, 4, 0x38F, TRUE
+	setmetatile 21, 3, 0x387, FALSE
 # 125 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setmetatile 21, 5, 0x383, FALSE
+	setmetatile 21, 4, 0x38F, TRUE
 # 126 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setmetatile 22, 4, 0x384, FALSE
+	setmetatile 21, 5, 0x383, FALSE
 # 127 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	setmetatile 22, 4, 0x384, FALSE
+# 128 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	setmetatile 22, 5, 0x385, FALSE
 	return
 
 RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_LOAD_2:
-# 112 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 113 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	compare VAR_LOOKER_ROCKET, 5
 	goto_if_le RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_LOAD_1
 	return
 
 RustboroCity_DevonCorp_1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-# 131 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 132 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	map_script_2 VAR_LOOKER_ROCKET, 3, Devoncorp_RocketEntrance
 	.2byte 0
 
 
 Devoncorp_RocketEntrance::
-# 136 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox Devoncorp_RocketEntrance_Text_0
 # 137 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	applymovement 3, GreeterRun
+	msgbox Devoncorp_RocketEntrance_Text_0
 # 138 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	waitmovement 0
-# 139 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	closemessage
-# 140 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	applymovement 3, Common_Movement_WalkInPlaceFasterDown
-# 141 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	waitmovement 0
-# 142 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	playse SE_PIN
-# 143 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	applymovement 3, Common_Movement_ExclamationMark
-# 144 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	waitmovement 0
-# 145 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	delay 60
-# 146 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	applymovement 3, Common_Movement_WalkDown
-# 147 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	waitmovement 0
-# 148 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox Devoncorp_RocketEntrance_Text_1, MSGBOX_AUTOCLOSE
-# 149 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	applymovement 3, GreeterRun
-# 150 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 139 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	waitmovement 0
-# 151 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	setobjectxy 3, 1, 5
-# 152 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 140 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	closemessage
+# 141 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	applymovement 3, Common_Movement_WalkInPlaceFasterDown
+# 142 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	waitmovement 0
+# 143 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	playse SE_PIN
+# 144 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	applymovement 3, Common_Movement_ExclamationMark
+# 145 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	waitmovement 0
+# 146 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	delay 60
+# 147 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	applymovement 3, Common_Movement_WalkDown
+# 148 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	waitmovement 0
+# 149 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	msgbox Devoncorp_RocketEntrance_Text_1, MSGBOX_AUTOCLOSE
+# 150 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	applymovement 3, GreeterRun
+# 151 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	waitmovement 0
+# 152 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	setobjectxy 3, 1, 5
 # 153 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	applymovement 3, Common_Movement_WalkInPlaceFasterDown
+# 154 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	waitmovement 0
+# 155 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	addobject 5
+# 156 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	switch VAR_TEMP_0
+# 157 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	case 12, Devoncorp_RocketEntrance_3
+# 159 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	case 13, Devoncorp_RocketEntrance_4
+Devoncorp_RocketEntrance_1:
+# 163 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	applymovement 5, Common_Movement_FaceUp
+# 164 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	waitmovement 0
+# 165 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	playse SE_EXIT
+# 166 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	waitse
+# 167 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	applymovement 5, Common_Movement_WalkUp2
+# 168 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	waitmovement 0
+# 169 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	applymovement 5, Common_Movement_WalkInPlaceFasterDown
+# 170 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	waitmovement 0
+# 171 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	speakername CommonText_Looker
+# 172 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	msgbox Devoncorp_RocketEntrance_Text_2
+# 174 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	applymovement 5, Common_Movement_WalkInPlaceFasterRight
+# 175 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	waitmovement 0
+# 176 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	msgbox Devoncorp_RocketEntrance_Text_3
+# 179 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	applymovement 5, LookerRunRight
+# 180 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	waitmovement 0
+# 181 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	setobjectxy 5, 22, 5
+# 182 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	applymovement 5, Common_Movement_FaceUp
+# 183 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	waitmovement 0
+# 184 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	setvar VAR_LOOKER_ROCKET, 4
+# 185 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	release
 	return
 
+Devoncorp_RocketEntrance_3:
+# 158 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	setobjectxy 5, 13, 8
+	goto Devoncorp_RocketEntrance_1
 
-# 156 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+Devoncorp_RocketEntrance_4:
+# 160 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	setobjectxy 5, 12, 8
+	goto Devoncorp_RocketEntrance_1
+
+
+# 188 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 GreeterRun:
-# 157 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 189 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	walk_fast_left
-# 157 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 189 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	walk_fast_left
-# 157 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 189 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	walk_fast_left
-# 157 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 189 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	walk_fast_left
-# 157 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 189 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	walk_fast_left
-# 157 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 189 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	walk_fast_left
-# 157 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 189 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	walk_fast_left
-# 157 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 189 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	walk_fast_left
 	step_end
 
-RustboroCity_DevonCorp_1F_EventScript_StairGuard::
-# 161 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	lock
-# 162 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	faceplayer
-# 163 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	compare VAR_LOOKER_ROCKET, 3
-	goto_if_ge RustboroCity_DevonCorp_1F_EventScript_StairGuard_10
-RustboroCity_DevonCorp_1F_EventScript_StairGuard_9:
-# 166 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	goto_if_set FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_StairGuard_3
-# 169 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	goto_if_set FLAG_RECOVERED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_StairGuard_4
-# 169 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_StairGuard_4
-# 173 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter, MSGBOX_DEFAULT
-RustboroCity_DevonCorp_1F_EventScript_StairGuard_1:
-# 175 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	release
-	return
-
-RustboroCity_DevonCorp_1F_EventScript_StairGuard_2:
-# 164 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_1F_EventScript_StairGuard_Text_0
-	goto RustboroCity_DevonCorp_1F_EventScript_StairGuard_1
-
-RustboroCity_DevonCorp_1F_EventScript_StairGuard_3:
-# 167 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere, MSGBOX_DEFAULT
-	goto RustboroCity_DevonCorp_1F_EventScript_StairGuard_1
-
-RustboroCity_DevonCorp_1F_EventScript_StairGuard_4:
-# 170 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed, MSGBOX_DEFAULT
-	goto RustboroCity_DevonCorp_1F_EventScript_StairGuard_1
-
-RustboroCity_DevonCorp_1F_EventScript_StairGuard_10:
-# 163 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	compare VAR_LOOKER_ROCKET, 5
-	goto_if_le RustboroCity_DevonCorp_1F_EventScript_StairGuard_2
-	goto RustboroCity_DevonCorp_1F_EventScript_StairGuard_9
-
-
-RustboroCity_DevonCorp_1F_EventScript_Employee::
-# 179 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	lock
-# 180 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	faceplayer
-# 181 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	compare VAR_LOOKER_ROCKET, 3
-	goto_if_ge RustboroCity_DevonCorp_1F_EventScript_Employee_8
-RustboroCity_DevonCorp_1F_EventScript_Employee_7:
-# 184 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	goto_if_set FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_Employee_3
-# 187 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_Employee_4
-# 191 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct, MSGBOX_DEFAULT
-RustboroCity_DevonCorp_1F_EventScript_Employee_1:
+# 192 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+LookerRunRight:
 # 193 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	release
-	return
+	walk_fast_right
+# 193 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	walk_fast_right
+# 193 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	walk_fast_right
+# 193 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	walk_fast_right
+# 193 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	walk_fast_right
+# 193 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	walk_fast_right
+# 193 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	walk_fast_right
+# 193 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	walk_fast_right
+# 193 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	walk_fast_right
+	step_end
 
-RustboroCity_DevonCorp_1F_EventScript_Employee_2:
-# 182 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_1F_EventScript_Employee_Text_0
-	goto RustboroCity_DevonCorp_1F_EventScript_Employee_1
-
-RustboroCity_DevonCorp_1F_EventScript_Employee_3:
-# 185 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered, MSGBOX_DEFAULT
-	goto RustboroCity_DevonCorp_1F_EventScript_Employee_1
-
-RustboroCity_DevonCorp_1F_EventScript_Employee_4:
-# 188 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright, MSGBOX_DEFAULT
-	goto RustboroCity_DevonCorp_1F_EventScript_Employee_1
-
-RustboroCity_DevonCorp_1F_EventScript_Employee_8:
-# 181 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	compare VAR_LOOKER_ROCKET, 5
-	goto_if_le RustboroCity_DevonCorp_1F_EventScript_Employee_2
-	goto RustboroCity_DevonCorp_1F_EventScript_Employee_7
-
-
-RustboroCity_DevonCorp_1F_EventScript_Greeter::
+RustboroCity_DevonCorp_1F_EventScript_StairGuard::
 # 197 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	lock
 # 198 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	faceplayer
 # 199 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	compare VAR_LOOKER_ROCKET, 3
-	goto_if_ge RustboroCity_DevonCorp_1F_EventScript_Greeter_10
-RustboroCity_DevonCorp_1F_EventScript_Greeter_9:
+	goto_if_ge RustboroCity_DevonCorp_1F_EventScript_StairGuard_10
+RustboroCity_DevonCorp_1F_EventScript_StairGuard_9:
 # 202 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	goto_if_set FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_Greeter_3
+	goto_if_set FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_StairGuard_3
 # 205 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	goto_if_set FLAG_RECOVERED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_Greeter_4
+	goto_if_set FLAG_RECOVERED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_StairGuard_4
 # 205 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_Greeter_4
+	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_StairGuard_4
 # 209 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp, MSGBOX_DEFAULT
-RustboroCity_DevonCorp_1F_EventScript_Greeter_1:
+	msgbox RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter, MSGBOX_DEFAULT
+RustboroCity_DevonCorp_1F_EventScript_StairGuard_1:
 # 211 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	release
 	return
 
-RustboroCity_DevonCorp_1F_EventScript_Greeter_2:
+RustboroCity_DevonCorp_1F_EventScript_StairGuard_2:
 # 200 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	msgbox RustboroCity_DevonCorp_1F_EventScript_StairGuard_Text_0
+	goto RustboroCity_DevonCorp_1F_EventScript_StairGuard_1
+
+RustboroCity_DevonCorp_1F_EventScript_StairGuard_3:
+# 203 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	msgbox RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere, MSGBOX_DEFAULT
+	goto RustboroCity_DevonCorp_1F_EventScript_StairGuard_1
+
+RustboroCity_DevonCorp_1F_EventScript_StairGuard_4:
+# 206 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	msgbox RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed, MSGBOX_DEFAULT
+	goto RustboroCity_DevonCorp_1F_EventScript_StairGuard_1
+
+RustboroCity_DevonCorp_1F_EventScript_StairGuard_10:
+# 199 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	compare VAR_LOOKER_ROCKET, 5
+	goto_if_le RustboroCity_DevonCorp_1F_EventScript_StairGuard_2
+	goto RustboroCity_DevonCorp_1F_EventScript_StairGuard_9
+
+
+RustboroCity_DevonCorp_1F_EventScript_Employee::
+# 215 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	lock
+# 216 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	faceplayer
+# 217 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	compare VAR_LOOKER_ROCKET, 3
+	goto_if_ge RustboroCity_DevonCorp_1F_EventScript_Employee_8
+RustboroCity_DevonCorp_1F_EventScript_Employee_7:
+# 220 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	goto_if_set FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_Employee_3
+# 223 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_Employee_4
+# 227 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	msgbox RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct, MSGBOX_DEFAULT
+RustboroCity_DevonCorp_1F_EventScript_Employee_1:
+# 229 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	release
+	return
+
+RustboroCity_DevonCorp_1F_EventScript_Employee_2:
+# 218 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	msgbox RustboroCity_DevonCorp_1F_EventScript_Employee_Text_0
+	goto RustboroCity_DevonCorp_1F_EventScript_Employee_1
+
+RustboroCity_DevonCorp_1F_EventScript_Employee_3:
+# 221 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	msgbox RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered, MSGBOX_DEFAULT
+	goto RustboroCity_DevonCorp_1F_EventScript_Employee_1
+
+RustboroCity_DevonCorp_1F_EventScript_Employee_4:
+# 224 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	msgbox RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright, MSGBOX_DEFAULT
+	goto RustboroCity_DevonCorp_1F_EventScript_Employee_1
+
+RustboroCity_DevonCorp_1F_EventScript_Employee_8:
+# 217 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	compare VAR_LOOKER_ROCKET, 5
+	goto_if_le RustboroCity_DevonCorp_1F_EventScript_Employee_2
+	goto RustboroCity_DevonCorp_1F_EventScript_Employee_7
+
+
+RustboroCity_DevonCorp_1F_EventScript_Greeter::
+# 233 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	lock
+# 234 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	faceplayer
+# 235 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	compare VAR_LOOKER_ROCKET, 3
+	goto_if_ge RustboroCity_DevonCorp_1F_EventScript_Greeter_10
+RustboroCity_DevonCorp_1F_EventScript_Greeter_9:
+# 238 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	goto_if_set FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_Greeter_3
+# 241 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	goto_if_set FLAG_RECOVERED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_Greeter_4
+# 241 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_Greeter_4
+# 245 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	msgbox RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp, MSGBOX_DEFAULT
+RustboroCity_DevonCorp_1F_EventScript_Greeter_1:
+# 247 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	release
+	return
+
+RustboroCity_DevonCorp_1F_EventScript_Greeter_2:
+# 236 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_1F_EventScript_Greeter_Text_0
 	goto RustboroCity_DevonCorp_1F_EventScript_Greeter_1
 
 RustboroCity_DevonCorp_1F_EventScript_Greeter_3:
-# 203 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 239 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp, MSGBOX_DEFAULT
 	goto RustboroCity_DevonCorp_1F_EventScript_Greeter_1
 
 RustboroCity_DevonCorp_1F_EventScript_Greeter_4:
-# 206 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 242 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_1F_Text_StaffGotRobbed, MSGBOX_DEFAULT
 	goto RustboroCity_DevonCorp_1F_EventScript_Greeter_1
 
 RustboroCity_DevonCorp_1F_EventScript_Greeter_10:
-# 199 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 235 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	compare VAR_LOOKER_ROCKET, 5
 	goto_if_le RustboroCity_DevonCorp_1F_EventScript_Greeter_2
 	goto RustboroCity_DevonCorp_1F_EventScript_Greeter_9
 
 
+Looker_Devoncorp_1F::
+# 251 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	lock
+# 252 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	speakername CommonText_Looker
+# 253 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	msgbox Looker_Devoncorp_1F_Text_0
+# 256 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	release
+	return
+
+
 Devoncorp_RocketEntrance_Text_0:
-# 136 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 137 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	.string "Iyaaaaa!!$"
 
 Devoncorp_RocketEntrance_Text_1:
-# 148 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 149 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	.string "Oh! Please, you've got to help!\p"
 	.string "A group of jackbooted thugs stormed in\n"
 	.string "and went upstairs!\p"
@@ -481,14 +574,36 @@ Devoncorp_RocketEntrance_Text_1:
 	.string "departments!\l"
 	.string "Oh no…$"
 
+Devoncorp_RocketEntrance_Text_2:
+# 172 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	.string "{PLAYER}, it is good that you have\n"
+	.string "arrived.\p"
+	.string "Our adversaries are a group of villains\n"
+	.string "I have not met before.$"
+
+Devoncorp_RocketEntrance_Text_3:
+# 176 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	.string "I will try to take them on at the main\n"
+	.string "staircase.\p"
+	.string "If I cannot break through, try to find\n"
+	.string "another path!\p"
+	.string "We will meet up at the top and save Mr.\n"
+	.string "Stone!$"
+
 RustboroCity_DevonCorp_1F_EventScript_StairGuard_Text_0:
-# 164 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 200 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	.string "I saw a few of them go into the\nbasement here.\pIt's probably a safer bet than charging\nupstairs.\pI can watch over the others if you want\nto try it, but be careful.$"
 
 RustboroCity_DevonCorp_1F_EventScript_Employee_Text_0:
-# 182 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 218 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	.string "Trust me, if I could be a hero here,\nI would.\pI don't have it in me to take on all\nthose goons that ran in!$"
 
 RustboroCity_DevonCorp_1F_EventScript_Greeter_Text_0:
-# 200 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+# 236 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	.string "No, no, no. This can't be happening.$"
+
+Looker_Devoncorp_1F_Text_0:
+# 253 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
+	.string "You must let me through!\n"
+	.string "I am an officer of the law!\p"
+	.string "Stand down at once!$"

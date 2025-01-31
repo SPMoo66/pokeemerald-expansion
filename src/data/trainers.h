@@ -10271,7 +10271,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_GruntDevoncorp1),
+        .party = TRAINER_PARTY(sParty_RocketGruntDevoncorp1),
     },
 
     [TRAINER_ROCKET_GRUNT_DEVONCORP_2] =
@@ -10283,7 +10283,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_GruntDevoncorp2),
+        .party = TRAINER_PARTY(sParty_RocketGruntDevoncorp2),
     },
 
     [TRAINER_ROCKET_GRUNT_DEVONCORP_3] =
@@ -10295,7 +10295,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_GruntDevoncorp3),
+        .party = TRAINER_PARTY(sParty_RocketGruntDevoncorp3),
     },
 
     [TRAINER_ROCKET_GRUNT_DEVONCORP_4] =
@@ -10307,7 +10307,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_GruntDevoncorp4),
+        .party = TRAINER_PARTY(sParty_RocketGruntDevoncorp4),
     },
 
     [TRAINER_ROCKET_GRUNT_DEVONCORP_5] =
@@ -10319,7 +10319,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_GruntDevoncorp5),
+        .party = TRAINER_PARTY(sParty_RocketGruntDevoncorp5),
     },
 
     [TRAINER_GIOVANNI_DEVONCORP] =

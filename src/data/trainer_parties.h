@@ -14144,7 +14144,7 @@ static const struct TrainerMon sParty_MayLinkPlaceholder[] = {
     }
 };
 
-static const struct TrainerMon sParty_GruntDevoncorp1[] = {
+static const struct TrainerMon sParty_RocketGruntDevoncorp1[] = {
     {
     .lvl = 23,
     .species = SPECIES_SLUDGMA,
@@ -14155,7 +14155,7 @@ static const struct TrainerMon sParty_GruntDevoncorp1[] = {
     }
 };
 
-static const struct TrainerMon sParty_GruntDevoncorp2[] = {
+static const struct TrainerMon sParty_RocketGruntDevoncorp2[] = {
     {
     .lvl = 22,
     .species = SPECIES_RATICATE_ALOLA,
@@ -14170,7 +14170,7 @@ static const struct TrainerMon sParty_GruntDevoncorp2[] = {
     }
 };
 
-static const struct TrainerMon sParty_GruntDevoncorp3[] = {
+static const struct TrainerMon sParty_RocketGruntDevoncorp3[] = {
     {
     .lvl = 23,
     .species = SPECIES_TOGETIC,
@@ -14181,7 +14181,7 @@ static const struct TrainerMon sParty_GruntDevoncorp3[] = {
     }
 };
 
-static const struct TrainerMon sParty_GruntDevoncorp4[] = {
+static const struct TrainerMon sParty_RocketGruntDevoncorp4[] = {
     {
     .lvl = 22,
     .species = SPECIES_KOTORA,
@@ -14196,7 +14196,7 @@ static const struct TrainerMon sParty_GruntDevoncorp4[] = {
     }
 };
 
-static const struct TrainerMon sParty_GruntDevoncorp5[] = {
+static const struct TrainerMon sParty_RocketGruntDevoncorp5[] = {
     {
     .lvl = 23,
     .species = SPECIES_MEOWTH_ALOLA,

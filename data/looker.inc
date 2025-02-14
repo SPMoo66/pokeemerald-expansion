@@ -251,7 +251,7 @@ Route115_EventScript_Looker::
 # 112 "data/looker.pory"
 	lock
 # 113 "data/looker.pory"
-	playbgm MUS_PL_LOOKER, FALSE
+	playbgm MUS_DP_LAKE_EVENT, FALSE
 # 114 "data/looker.pory"
 	pokenavcall Route115_Text_Looker_Call
 # 115 "data/looker.pory"

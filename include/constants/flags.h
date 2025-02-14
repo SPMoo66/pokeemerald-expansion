@@ -467,16 +467,16 @@
 #define FLAG_SHOWN_EON_TICKET                0x1AE
 #define FLAG_SHOWN_AURORA_TICKET             0x1AF
 #define FLAG_SHOWN_OLD_SEA_MAP               0x1B0
-#define FLAG_MOVE_TUTOR_TAUGHT_SWAGGER       0x1B1
-#define FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT       0x1B2
-#define FLAG_MOVE_TUTOR_TAUGHT_FURY_CUTTER   0x1B3
-#define FLAG_MOVE_TUTOR_TAUGHT_MIMIC         0x1B4
-#define FLAG_MOVE_TUTOR_TAUGHT_METRONOME     0x1B5
-#define FLAG_MOVE_TUTOR_TAUGHT_SLEEP_TALK    0x1B6
-#define FLAG_MOVE_TUTOR_TAUGHT_SUBSTITUTE    0x1B7
-#define FLAG_MOVE_TUTOR_TAUGHT_DYNAMICPUNCH  0x1B8
-#define FLAG_MOVE_TUTOR_TAUGHT_DOUBLE_EDGE   0x1B9
-#define FLAG_MOVE_TUTOR_TAUGHT_EXPLOSION     0x1BA
+#define FLAG_UNUSED_0x1B1                    0x1B1 // Was Swagger flag
+#define FLAG_UNUSED_0x1B2                    0x1B2 // Was Rollout flag
+#define FLAG_UNUSED_0x1B3                    0x1B3 // Was Fury Cutter flag
+#define FLAG_UNUSED_0x1B4                    0x1B4 // Was Mimic flag
+#define FLAG_UNUSED_0x1B5                    0x1B5 // Was Metronome flag
+#define FLAG_UNUSED_0x1B6                    0x1B6 // Was Sleep Talk flag
+#define FLAG_UNUSED_0x1B7                    0x1B7 // Was Substitute flag
+#define FLAG_UNUSED_0x1B8                    0x1B8 // Was Dynamic Punch flag
+#define FLAG_MOVE_TUTOR_TAUGHT_DOUBLE_EDGE   0x1B9 // Was Double-Edge flag
+#define FLAG_MOVE_TUTOR_TAUGHT_EXPLOSION     0x1BA // Was Explosion flag
 #define FLAG_DEFEATED_REGIROCK               0x1BB
 #define FLAG_DEFEATED_REGICE                 0x1BC
 #define FLAG_DEFEATED_REGISTEEL              0x1BD

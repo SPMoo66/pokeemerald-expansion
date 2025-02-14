@@ -110,7 +110,7 @@ movement SlateportCity_LookerMove2 {
 
 script Route115_EventScript_Looker {
 	lock
-	playbgm (MUS_PL_LOOKER, FALSE)
+	playbgm (MUS_DP_LAKE_EVENT, FALSE)
 	pokenavcall (Route115_Text_Looker_Call)
 	waitmessage
 	delay (30)

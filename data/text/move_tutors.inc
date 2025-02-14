@@ -215,7 +215,7 @@ MoveTutor_Text_DynamicPunchTaught:
 	.string "I won't live for love anymore!\n"
 	.string "I'll become tough!$"
 
-MoveTutor_Text_ExplosionTeach:
+MoveTutor_Text_RecoilMoveTeach:
 	.string "I don't intend to be going nowhere\n"
 	.string "fast in the sticks like this forever.\p"
 	.string "You watch me, I'll get out to the city\n"
@@ -225,15 +225,15 @@ MoveTutor_Text_ExplosionTeach:
 	.string "If you overheard that, I'll happily\n"
 	.string "teach Explosion to your Pokémon!$"
 
-MoveTutor_Text_ExplosionDeclined:
+MoveTutor_Text_RecoilMoveDeclined:
 	.string "Gaah! You're turning me down because\n"
 	.string "I live in the country?$"
 
-MoveTutor_Text_ExplosionWhichMon:
+MoveTutor_Text_RecoilMoveWhichMon:
 	.string "Fine! An Explosion it is!\n"
 	.string "Which Pokémon wants to blow up?$"
 
-MoveTutor_Text_ExplosionTaught:
+MoveTutor_Text_RecoilMoveTaught:
 	.string "For a long time, I've taught Pokémon\n"
 	.string "how to use Explosion, but I've yet\l"
 	.string "to ignite my own Explosion…\p"

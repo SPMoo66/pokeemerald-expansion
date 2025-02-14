@@ -1,30 +1,4 @@
 raw `
-PacifidlogTown_PokemonCenter_1F_EventScript_ExplosionTutor::
-	lock
-	faceplayer
-	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_EXPLOSION, MoveTutor_EventScript_ExplosionTaught
-	msgbox MoveTutor_Text_ExplosionTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_ExplosionDeclined
-	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_ExplosionDeclined
-	msgbox MoveTutor_Text_ExplosionWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, MOVE_EXPLOSION
-	call MoveTutor_EventScript_OpenPartyMenu
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_ExplosionDeclined
-	setflag FLAG_MOVE_TUTOR_TAUGHT_EXPLOSION
-	goto MoveTutor_EventScript_ExplosionTaught
-	end
-
-MoveTutor_EventScript_ExplosionDeclined::
-	msgbox MoveTutor_Text_ExplosionDeclined, MSGBOX_DEFAULT
-	release
-	end
-
-MoveTutor_EventScript_ExplosionTaught::
-	msgbox MoveTutor_Text_ExplosionTaught, MSGBOX_DEFAULT
-	release
-	end
-
 MoveTutor_EventScript_OpenPartyMenu::
 	special ChooseMonForMoveTutor
 	waitstate
@@ -300,5 +274,45 @@ script SootopolisCity_PokemonCenter_1F_EventScript_DynamicPunchTutor {
 
 script MoveTutor_EventScript_DynamicPunchDeclined {
 	msgbox (MoveTutor_Text_DynamicPunchDeclined, MSGBOX_DEFAULT)
+	release
+}
+
+
+script PacifidlogTown_PokemonCenter_1F_EventScript_RecoilMoveTutor {
+	lock
+	faceplayer
+	msgbox (MoveTutor_Text_RecoilMoveTeach, MSGBOX_YESNO)
+	if (var(VAR_RESULT) == NO) {
+		goto (MoveTutor_EventScript_RecoilMoveDeclined)
+	}
+	msgbox(MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT)
+	dynmultichoice(0, 5, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Double-Edge", "Wood Hammer", "Flare Blitz", "Wave Crash", "Brave Bird", "Wild Charge")
+	switch (var(VAR_RESULT)) {
+		case 0:
+			setvar (VAR_0x8005, MOVE_DOUBLE_EDGE)
+		case 1:
+			setvar (VAR_0x8005, MOVE_WOOD_HAMMER)
+		case 2:
+			setvar (VAR_0x8005, MOVE_FLARE_BLITZ)
+		case 3:
+			setvar (VAR_0x8005, MOVE_WAVE_CRASH)
+		case 4:
+			setvar (VAR_0x8005, MOVE_BRAVE_BIRD)
+		case 5:
+			setvar (VAR_0x8005, MOVE_WILD_CHARGE)
+		case 127:
+			goto (MoveTutor_EventScript_RecoilMoveDeclined)
+	}
+	msgbox (MoveTutor_Text_RecoilMoveWhichMon, MSGBOX_DEFAULT)
+	call (MoveTutor_EventScript_OpenPartyMenu)
+	if (var(VAR_RESULT) == NO) {
+		goto (MoveTutor_EventScript_RecoilMoveDeclined)
+	}
+	msgbox (MoveTutor_Text_RecoilMoveTaught, MSGBOX_DEFAULT)
+	release
+}
+
+script MoveTutor_EventScript_RecoilMoveDeclined {
+	msgbox (MoveTutor_Text_RecoilMoveDeclined, MSGBOX_DEFAULT)
 	release
 }

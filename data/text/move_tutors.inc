@@ -153,7 +153,7 @@ MoveTutor_Text_HyperVoiceTaught:
 	.string "I hope you'll get that way, too!$"
 
 MoveTutor_Text_CombatMoveTeach:
-	.string "I can't believet it!\p"
+	.string "I can't believe it!\p"
 	.string "I fell in the water and washed up here!\p"
 	.string "It just makes me want to hit something!\p"
 	.string "Let me teach your Pokémon a move\n"
@@ -171,26 +171,47 @@ MoveTutor_Text_CombatMoveTaught:
 	.string "I want you to win using the moves\n"
 	.string "I've taught your Pokémon!$"
 
-MoveTutor_Text_DoubleEdgeTeach:
+MoveTutor_Text_PledgeMoveTeach:
+	.string "This is the city where I proposed to\n"
+	.string "my wife long ago.\p"
+	.string "Every year I return to honor that\n"
+	.string "pledge.\p"
+	.string "Would you like me to teach your Pokémon\n"
+	.string "a Pledge move to use in combination\l"
+	.string "with their battle partner?$"
+
+MoveTutor_Text_PledgeMoveDeclined:
+	.string "Ah, well return if you feel so.\n"
+	.string "I will remain here for a while.$"
+
+MoveTutor_Text_PledgeMoveWhichMon:
+	.string "In her memory, which Pokémon\n"
+	.string "will I be teaching?$"
+
+MoveTutor_Text_PledgeMoveTaught:
+	.string "I hope that with this move, you'll\n"
+	.string "always remember your partners.$"
+
+MoveTutor_Text_DynamicPunchTeach:
 	.string "Sigh…\p"
 	.string "Sootopolis's Gym Leader is really\n"
 	.string "lovably admirable.\p"
 	.string "But that also means I have many\n"
 	.string "rivals for his attention.\p"
-	.string "He's got appeal with a Double-Edge.\n"
-	.string "I couldn't even catch his eye.\p"
+	.string "The only way I could compete is to\n"
+	.string "strike them with a Dynamic Punch!\p"
 	.string "Please, let me teach your Pokémon\n"
-	.string "the move Double-Edge!$"
+	.string "the move Dynamic Punch!$"
 
-MoveTutor_Text_DoubleEdgeDeclined:
+MoveTutor_Text_DynamicPunchDeclined:
 	.string "Oh…\n"
 	.string "Even you rejected me…$"
 
-MoveTutor_Text_DoubleEdgeWhichMon:
+MoveTutor_Text_DynamicPunchWhichMon:
 	.string "Okay, which Pokémon should I teach\n"
-	.string "Double-Edge?$"
+	.string "Dynamic Punch?$"
 
-MoveTutor_Text_DoubleEdgeTaught:
+MoveTutor_Text_DynamicPunchTaught:
 	.string "I won't live for love anymore!\n"
 	.string "I'll become tough!$"
 

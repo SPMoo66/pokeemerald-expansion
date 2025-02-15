@@ -1,16 +1,3 @@
-raw `
-MoveTutor_EventScript_OpenPartyMenu::
-	special ChooseMonForMoveTutor
-	waitstate
-	lock
-	faceplayer
-	return
-
-MoveTutor_EventScript_CanOnlyBeLearnedOnce::
-	msgbox MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce, MSGBOX_YESNO
-	return
-`
-
 script SlateportCity_PokemonFanClub_EventScript_SwaggerTutor {
 	lock
 	faceplayer
@@ -42,7 +29,7 @@ script MauvilleCity_EventScript_TricksTutor {
 		goto (MoveTutor_EventScript_TricksDeclined)
 	}
 	msgbox(MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT)
-	dynmultichoice(0, 5, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Trick", "Switcheroo")
+	dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Trick", "Switcheroo")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			setvar (VAR_0x8005, MOVE_TRICK)
@@ -189,7 +176,7 @@ script LilycoveCity_EventScript_CombatMoveTutor {
 		goto (MoveTutor_EventScript_CombatMoveDeclined)
 	}
 	msgbox(MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT)
-	dynmultichoice(0, 5, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Ice Punch", "Thunder Punch", "Fire Punch", "Mega Punch", "Mega Kick", "Rock Slide")
+	dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Ice Punch", "Thunder Punch", "Fire Punch", "Mega Punch", "Mega Kick", "Rock Slide")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			setvar (VAR_0x8005, MOVE_ICE_PUNCH)
@@ -229,7 +216,7 @@ script MossdeepCity_EventScript_PledgeMoveTutor {
 		goto (MoveTutor_EventScript_PledgeMoveDeclined)
 	}
 	msgbox(MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT)
-	dynmultichoice(0, 5, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Grass Pledge", "Fire Pledge", "Water Pledge")
+	dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Grass Pledge", "Fire Pledge", "Water Pledge")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			setvar (VAR_0x8005, MOVE_GRASS_PLEDGE)
@@ -286,7 +273,7 @@ script PacifidlogTown_PokemonCenter_1F_EventScript_RecoilMoveTutor {
 		goto (MoveTutor_EventScript_RecoilMoveDeclined)
 	}
 	msgbox(MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT)
-	dynmultichoice(0, 5, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Double-Edge", "Wood Hammer", "Flare Blitz", "Wave Crash", "Brave Bird", "Wild Charge")
+	dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Double-Edge", "Wood Hammer", "Flare Blitz", "Wave Crash", "Brave Bird", "Wild Charge")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			setvar (VAR_0x8005, MOVE_DOUBLE_EDGE)
@@ -314,5 +301,53 @@ script PacifidlogTown_PokemonCenter_1F_EventScript_RecoilMoveTutor {
 
 script MoveTutor_EventScript_RecoilMoveDeclined {
 	msgbox (MoveTutor_Text_RecoilMoveDeclined, MSGBOX_DEFAULT)
+	release
+}
+
+
+script EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor {
+	lock
+	faceplayer
+	msgbox (MoveTutor_Text_LeagueMoveTeach, MSGBOX_YESNO)
+	if (var(VAR_RESULT) == NO) {
+		goto (MoveTutor_EventScript_LeagueMoveDeclined)
+	}
+	msgbox(MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT)
+	dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Frenzy Plant", "Blast Burn", "Hydro Cannon", "Rock Wrecker", "Roar of Time")
+	switch (var(VAR_RESULT)) {
+		case 0:
+			setvar (VAR_0x8005, MOVE_FRENZY_PLANT)
+		case 1:
+			setvar (VAR_0x8005, MOVE_BLAST_BURN)
+		case 2:
+			setvar (VAR_0x8005, MOVE_HYDRO_CANNON)
+		case 3:
+			setvar (VAR_0x8005, MOVE_ROCK_WRECKER)
+		case 4:
+			setvar (VAR_0x8005, MOVE_ROAR_OF_TIME)
+		case 127:
+			goto (MoveTutor_EventScript_LeagueMoveDeclined)
+	}
+	msgbox (MoveTutor_Text_LeagueMoveWhichMon, MSGBOX_DEFAULT)
+	call (MoveTutor_EventScript_OpenPartyMenu)
+	if (var(VAR_RESULT) == NO) {
+		goto (MoveTutor_EventScript_LeagueMoveDeclined)
+	}
+	msgbox (MoveTutor_Text_LeagueMoveTaught, MSGBOX_DEFAULT)
+	release
+}
+
+script MoveTutor_EventScript_LeagueMoveDeclined {
+	msgbox (MoveTutor_Text_LeagueMoveDeclined, MSGBOX_DEFAULT)
+	release
+}
+
+
+
+script MoveTutor_EventScript_OpenPartyMenu {
+	special (ChooseMonForMoveTutor)
+	waitstate
+	lock
+	faceplayer
 	release
 }

@@ -220,22 +220,40 @@ MoveTutor_Text_RecoilMoveTeach:
 	.string "fast in the sticks like this forever.\p"
 	.string "You watch me, I'll get out to the city\n"
 	.string "and become a huge hit.\p"
-	.string "Seriously, I'm going to cause\n"
-	.string "a huge Explosion of popularity!\p"
-	.string "If you overheard that, I'll happily\n"
-	.string "teach Explosion to your Pokémon!$"
+	.string "Seriously, I'm going to put my all\n"
+	.string "into it, no matter what happens!\p"
+	.string "Come on, I'll happily teach your\n"
+	.string "Pokémon to attack recklessly!$"
 
 MoveTutor_Text_RecoilMoveDeclined:
 	.string "Gaah! You're turning me down because\n"
 	.string "I live in the country?$"
 
 MoveTutor_Text_RecoilMoveWhichMon:
-	.string "Fine! An Explosion it is!\n"
+	.string "Fine! All out it is!\n"
 	.string "Which Pokémon wants to blow up?$"
 
 MoveTutor_Text_RecoilMoveTaught:
 	.string "For a long time, I've taught Pokémon\n"
-	.string "how to use Explosion, but I've yet\l"
-	.string "to ignite my own Explosion…\p"
+	.string "to strike without abandon, but I've\l"
+	.string "yet to ignite myself…\p"
 	.string "Maybe it's because deep down,\n"
 	.string "I would rather stay here…$"
+
+MoveTutor_Text_LeagueMoveTeach:
+	.string "For you to come this far, you must be in\n"
+	.string "search of only the strongest moves.\p"
+	.string "Allow me to teach one of your Pokémon\n"
+	.string "an incredibly powerful attack.$"
+
+MoveTutor_Text_LeagueMoveDeclined:
+	.string "You must be confident in the moves\n"
+	.string "your Pokémon know already.$"
+
+MoveTutor_Text_LeagueMoveWhichMon:
+	.string "Which Pokémon are we teaching?$"
+
+MoveTutor_Text_LeagueMoveTaught:
+	.string "Now you're ready.\p"
+	.string "Go!\n"
+	.string "Conquer the Pokémon League!$"

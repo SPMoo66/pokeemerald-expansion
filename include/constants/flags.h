@@ -475,8 +475,8 @@
 #define FLAG_UNUSED_0x1B6                    0x1B6 // Was Sleep Talk flag
 #define FLAG_UNUSED_0x1B7                    0x1B7 // Was Substitute flag
 #define FLAG_UNUSED_0x1B8                    0x1B8 // Was Dynamic Punch flag
-#define FLAG_MOVE_TUTOR_TAUGHT_DOUBLE_EDGE   0x1B9 // Was Double-Edge flag
-#define FLAG_MOVE_TUTOR_TAUGHT_EXPLOSION     0x1BA // Was Explosion flag
+#define FLAG_UNUSED_0x1B9                    0x1B9 // Was Double-Edge flag
+#define FLAG_UNUSED_0x1BA                    0x1BA // Was Explosion flag
 #define FLAG_DEFEATED_REGIROCK               0x1BB
 #define FLAG_DEFEATED_REGICE                 0x1BC
 #define FLAG_DEFEATED_REGISTEEL              0x1BD

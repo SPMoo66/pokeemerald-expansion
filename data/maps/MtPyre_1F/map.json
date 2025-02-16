@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
       "x": 18,
-      "y": 2,
+      "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -30,7 +30,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
       "x": 14,
-      "y": 8,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
@@ -43,7 +43,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
       "x": 10,
-      "y": 10,
+      "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -52,47 +52,60 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtPyre_1F_EventScript_Man",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MARSHADOW)",
+      "x": 14,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BattleMarshadow",
+      "flag": "FLAG_TEMP_2"
     }
   ],
   "warp_events": [
     {
       "x": 14,
-      "y": 18,
+      "y": 16,
       "elevation": 3,
       "dest_map": "MAP_ROUTE122",
       "dest_warp_id": "0"
     },
     {
       "x": 0,
-      "y": 6,
+      "y": 8,
       "elevation": 3,
       "dest_map": "MAP_MT_PYRE_EXTERIOR",
       "dest_warp_id": "0"
     },
     {
       "x": 15,
-      "y": 18,
+      "y": 16,
       "elevation": 3,
       "dest_map": "MAP_ROUTE122",
       "dest_warp_id": "0"
     },
     {
       "x": 1,
-      "y": 6,
+      "y": 8,
       "elevation": 3,
       "dest_map": "MAP_MT_PYRE_EXTERIOR",
       "dest_warp_id": "0"
     },
     {
       "x": 8,
-      "y": 1,
+      "y": 3,
       "elevation": 3,
       "dest_map": "MAP_MT_PYRE_2F",
       "dest_warp_id": "0"
     },
     {
       "x": 17,
-      "y": 9,
+      "y": 11,
       "elevation": 3,
       "dest_map": "MAP_MT_PYRE_2F",
       "dest_warp_id": "4"

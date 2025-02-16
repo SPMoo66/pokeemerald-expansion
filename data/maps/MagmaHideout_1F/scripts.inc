@@ -4,6 +4,16 @@ MagmaHideout_1F_MapScripts::
 
 MagmaHideout_1F_OnTransition:
 	setvar VAR_JAGGED_PASS_ASH_WEATHER, 0
+	setflag FLAG_TEMP_1
+	call_if_set FLAG_DEFEATED_SOOTOPOLIS_GYM, MagmaHideout_1F_EventScript_ShowPortal
+	end
+
+MagmaHideout_1F_EventScript_ShowPortal:
+	clearflag FLAG_TEMP_1
+	return
+
+MagmaHideout_1F_EventScript_PortalTeleport:
+	warp MAP_MAGMA_HIDEOUT_1F, 4
 	end
 
 MagmaHideout_1F_EventScript_Grunt1::

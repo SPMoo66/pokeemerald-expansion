@@ -586,6 +586,7 @@
 #define MAP_ROCKET_REFUGE_B1F                               (92 | (26 << 8))
 #define MAP_ROCKET_REFUGE_B2F                               (93 | (26 << 8))
 #define MAP_ROCKET_REFUGE_B3F                               (94 | (26 << 8))
+#define MAP_MAGMA_HIDEOUT_PORTAL_ROOM                       (95 | (26 << 8))
 
 // gMapGroup_IndoorRoute104Prototype
 #define MAP_ROUTE104_PROTOTYPE                          (0 | (27 << 8))

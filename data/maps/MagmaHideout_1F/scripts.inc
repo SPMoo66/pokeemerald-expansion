@@ -12,8 +12,8 @@ MagmaHideout_1F_EventScript_ShowPortal:
 	clearflag FLAG_TEMP_1
 	return
 
-MagmaHideout_1F_EventScript_PortalTeleport:
-	warp MAP_MAGMA_HIDEOUT_1F, 4
+MagmaHideout_1F_EventScript_PortalTeleport::
+	warp MAP_MAGMA_HIDEOUT_PORTAL_ROOM, 0
 	end
 
 MagmaHideout_1F_EventScript_Grunt1::

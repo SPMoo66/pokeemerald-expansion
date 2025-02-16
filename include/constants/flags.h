@@ -292,7 +292,7 @@
 #define FLAG_RECEIVED_REVIVED_FOSSIL_MON     0x10B
 #define FLAG_SECRET_BASE_REGISTRY_ENABLED    0x10C
 #define FLAG_RECEIVED_BOTTLE_CAP_OCEANIC     0x10D // Was Thief TM
-#define FLAG_UNUSED_0x10E                    0x10E // Unused Flag
+#define FLAG_CAUGHT_HOOPA                    0x10E // Unused Flag
 #define FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE   0x10F
 #define FLAG_RECEIVED_EXP_SHARE              0x110
 #define FLAG_POKERUS_EXPLAINED               0x111

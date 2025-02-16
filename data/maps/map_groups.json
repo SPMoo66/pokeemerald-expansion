@@ -615,7 +615,8 @@
     "SeasideHollow",
     "RocketRefuge_B1F",
     "RocketRefuge_B2F",
-    "RocketRefuge_B3F"
+    "RocketRefuge_B3F",
+    "MagmaHideout_PortalRoom"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

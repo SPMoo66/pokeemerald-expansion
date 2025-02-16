@@ -428,6 +428,9 @@ void Overworld_ResetBattleFlagsAndVars(void)
     FlagClear(B_FLAG_DYNAMAX_BATTLE);
     FlagClear(B_FLAG_SKY_BATTLE);
     FlagClear(FLAG_NO_RUNNING);
+    FlagClear(FLAG_CHALLENGING_TRAINER);
+    FlagClear(FLAG_ELITE_FOUR_CHALLENGE);
+    FlagClear(FLAG_WILD_PARTNER);
 }
 #endif
 

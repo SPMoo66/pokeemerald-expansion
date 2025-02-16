@@ -7,11 +7,13 @@ MossdeepCity_Gym_OnTransition:
 	end
 
 MossdeepCity_Gym_EventScript_TateAndLiza::
+	setflag FLAG_CHALLENGING_TRAINER
 	trainerbattle_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaIntro, MossdeepCity_Gym_Text_TateAndLizaDefeat, MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons, MossdeepCity_Gym_EventScript_TateAndLizaDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, MossdeepCity_Gym_EventScript_TateAndLizaRematch
 	goto_if_unset FLAG_RECEIVED_TM_TRICK_ROOM, MossdeepCity_Gym_EventScript_GiveTrickRoom2
 	msgbox MossdeepCity_Gym_Text_TateAndLizaPostBattle, MSGBOX_DEFAULT
+	clearflag FLAG_CHALLENGING_TRAINER
 	release
 	end
 

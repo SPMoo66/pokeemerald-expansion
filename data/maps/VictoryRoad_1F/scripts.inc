@@ -42,7 +42,9 @@ VictoryRoad_1F_EventScript_WallyEntranceBattle::
 	waitmovement 0
 	speakername (CommonText_Wally)
 	msgbox VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore, MSGBOX_DEFAULT
+	setflag FLAG_CHALLENGING_TRAINER
 	trainerbattle_no_intro TRAINER_WALLY_VR_1, VictoryRoad_1F_Text_WallyEntranceDefeat
+	clearflag FLAG_CHALLENGING_TRAINER
 	speakername (CommonText_Wally)
 	msgbox VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_DEFAULT
 	clearflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY

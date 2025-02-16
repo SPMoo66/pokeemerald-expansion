@@ -46,8 +46,10 @@ Route119_WeatherInstitute_2F_EventScript_Grunt3::
 	end
 
 Route119_WeatherInstitute_2F_EventScript_Shelly::
+	setflag FLAG_CHALLENGING_TRAINER
 	trainerbattle_single TRAINER_SHELLY_WEATHER_INSTITUTE, Route119_WeatherInstitute_2F_Text_ShellyIntro, Route119_WeatherInstitute_2F_Text_ShellyDefeat, Route119_WeatherInstitute_2F_EventScript_ShellyDefeated
 	msgbox Route119_WeatherInstitute_2F_Text_ShellyPostBattle, MSGBOX_AUTOCLOSE
+	clearflag FLAG_CHALLENGING_TRAINER
 	end
 
 Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::

@@ -24,6 +24,7 @@ script SkyPillar_Rival_Battle {
 	delay (30)
 	applymovement (RIVAL, Common_Movement_WalkUp3)
 	waitmovement (0)
+	setflag (FLAG_CHALLENGING_TRAINER)
 	if (var(VAR_RESULT) == MALE) {
 		speakername (CommonText_May)
 		msgbox( format( "{PLAYER}!\n"
@@ -74,6 +75,7 @@ script SkyPillar_Rival_Battle {
 						"If there's anyone who can put an end to this mess, it's you.\p"
 						"I guess I need to work even harder in order to stand next to you."))
 	}
+	clearflag (FLAG_CHALLENGING_TRAINER)
 	closemessage
 	applymovement (RIVAL, Common_Movement_WalkDown3)
 	waitmovement (0)

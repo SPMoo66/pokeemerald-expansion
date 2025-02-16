@@ -80,118 +80,120 @@ EverGrandeCity_SidneysRoom_EventScript_Sidney::
 # 49 "data/scripts/elite_four.pory"
 	faceplayer
 # 50 "data/scripts/elite_four.pory"
+	setflag FLAG_CHALLENGING_TRAINER
+# 51 "data/scripts/elite_four.pory"
 	goto_if_unset FLAG_DEFEATED_ELITE_4_SIDNEY, EverGrandeCity_SidneysRoom_EventScript_Sidney_2
 EverGrandeCity_SidneysRoom_EventScript_Sidney_1:
-# 57 "data/scripts/elite_four.pory"
-	msgbox EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 # 58 "data/scripts/elite_four.pory"
+	msgbox EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+# 59 "data/scripts/elite_four.pory"
 	release
 	return
 
 EverGrandeCity_SidneysRoom_EventScript_Sidney_2:
-# 51 "data/scripts/elite_four.pory"
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 52 "data/scripts/elite_four.pory"
-	msgbox EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 53 "data/scripts/elite_four.pory"
-	trainerbattle_no_intro TRAINER_SIDNEY, EverGrandeCity_SidneysRoom_Text_Defeat
+	msgbox EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 # 54 "data/scripts/elite_four.pory"
-	setflag FLAG_DEFEATED_ELITE_4_SIDNEY
+	trainerbattle_no_intro TRAINER_SIDNEY, EverGrandeCity_SidneysRoom_Text_Defeat
 # 55 "data/scripts/elite_four.pory"
+	setflag FLAG_DEFEATED_ELITE_4_SIDNEY
+# 56 "data/scripts/elite_four.pory"
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	goto EverGrandeCity_SidneysRoom_EventScript_Sidney_1
 
 
 EverGrandeCity_PhoebesRoom_EventScript_Phoebe::
-# 88 "data/scripts/elite_four.pory"
-	lock
 # 89 "data/scripts/elite_four.pory"
-	faceplayer
+	lock
 # 90 "data/scripts/elite_four.pory"
+	faceplayer
+# 91 "data/scripts/elite_four.pory"
 	goto_if_unset FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_Phoebe_2
 EverGrandeCity_PhoebesRoom_EventScript_Phoebe_1:
-# 97 "data/scripts/elite_four.pory"
-	msgbox EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 # 98 "data/scripts/elite_four.pory"
+	msgbox EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+# 99 "data/scripts/elite_four.pory"
 	release
 	return
 
 EverGrandeCity_PhoebesRoom_EventScript_Phoebe_2:
-# 91 "data/scripts/elite_four.pory"
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 92 "data/scripts/elite_four.pory"
-	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 93 "data/scripts/elite_four.pory"
-	trainerbattle_no_intro TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat
+	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 # 94 "data/scripts/elite_four.pory"
-	setflag FLAG_DEFEATED_ELITE_4_PHOEBE
+	trainerbattle_no_intro TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat
 # 95 "data/scripts/elite_four.pory"
+	setflag FLAG_DEFEATED_ELITE_4_PHOEBE
+# 96 "data/scripts/elite_four.pory"
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	goto EverGrandeCity_PhoebesRoom_EventScript_Phoebe_1
 
 
 EverGrandeCity_GlaciasRoom_EventScript_Glacia::
-# 131 "data/scripts/elite_four.pory"
-	lock
 # 132 "data/scripts/elite_four.pory"
-	faceplayer
+	lock
 # 133 "data/scripts/elite_four.pory"
+	faceplayer
+# 134 "data/scripts/elite_four.pory"
 	goto_if_unset FLAG_DEFEATED_ELITE_4_GLACIA, EverGrandeCity_GlaciasRoom_EventScript_Glacia_2
 EverGrandeCity_GlaciasRoom_EventScript_Glacia_1:
-# 140 "data/scripts/elite_four.pory"
-	msgbox EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 # 141 "data/scripts/elite_four.pory"
+	msgbox EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+# 142 "data/scripts/elite_four.pory"
 	release
 	return
 
 EverGrandeCity_GlaciasRoom_EventScript_Glacia_2:
-# 134 "data/scripts/elite_four.pory"
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 135 "data/scripts/elite_four.pory"
-	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 136 "data/scripts/elite_four.pory"
-	trainerbattle_no_intro TRAINER_GLACIA, EverGrandeCity_GlaciasRoom_Text_Defeat
+	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 # 137 "data/scripts/elite_four.pory"
-	setflag FLAG_DEFEATED_ELITE_4_GLACIA
+	trainerbattle_no_intro TRAINER_GLACIA, EverGrandeCity_GlaciasRoom_Text_Defeat
 # 138 "data/scripts/elite_four.pory"
+	setflag FLAG_DEFEATED_ELITE_4_GLACIA
+# 139 "data/scripts/elite_four.pory"
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	goto EverGrandeCity_GlaciasRoom_EventScript_Glacia_1
 
 
 EverGrandeCity_DrakesRoom_EventScript_Drake::
-# 173 "data/scripts/elite_four.pory"
-	lock
 # 174 "data/scripts/elite_four.pory"
-	faceplayer
+	lock
 # 175 "data/scripts/elite_four.pory"
+	faceplayer
+# 176 "data/scripts/elite_four.pory"
 	goto_if_unset FLAG_DEFEATED_ELITE_4_DRAKE, EverGrandeCity_DrakesRoom_EventScript_Drake_2
 EverGrandeCity_DrakesRoom_EventScript_Drake_1:
-# 184 "data/scripts/elite_four.pory"
-	msgbox EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 # 185 "data/scripts/elite_four.pory"
+	msgbox EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+# 186 "data/scripts/elite_four.pory"
 	release
 	return
 
 EverGrandeCity_DrakesRoom_EventScript_Drake_2:
-# 176 "data/scripts/elite_four.pory"
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 177 "data/scripts/elite_four.pory"
-	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 178 "data/scripts/elite_four.pory"
-	trainerbattle_no_intro TRAINER_DRAKE, EverGrandeCity_DrakesRoom_Text_Defeat
+	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 # 179 "data/scripts/elite_four.pory"
-	setvar VAR_0x8004, FANCOUNTER_DEFEATED_DRAKE
+	trainerbattle_no_intro TRAINER_DRAKE, EverGrandeCity_DrakesRoom_Text_Defeat
 # 180 "data/scripts/elite_four.pory"
-	special Script_TryGainNewFanFromCounter
+	setvar VAR_0x8004, FANCOUNTER_DEFEATED_DRAKE
 # 181 "data/scripts/elite_four.pory"
-	setflag FLAG_DEFEATED_ELITE_4_DRAKE
+	special Script_TryGainNewFanFromCounter
 # 182 "data/scripts/elite_four.pory"
+	setflag FLAG_DEFEATED_ELITE_4_DRAKE
+# 183 "data/scripts/elite_four.pory"
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	goto EverGrandeCity_DrakesRoom_EventScript_Drake_1
 
 
 EverGrandeCity_SidneysRoom_Text_IntroSpeech::
-# 61 "data/scripts/elite_four.pory"
+# 62 "data/scripts/elite_four.pory"
 	.string "Welcome, challenger!\n"
 	.string "I'm Sidney of the Elite Four.\p"
 	.string "I like that look you're giving me.\n"
@@ -202,12 +204,12 @@ EverGrandeCity_SidneysRoom_Text_IntroSpeech::
 	.string "here in the Pokémon League!$"
 
 EverGrandeCity_SidneysRoom_Text_Defeat::
-# 72 "data/scripts/elite_four.pory"
+# 73 "data/scripts/elite_four.pory"
 	.string "Well, how do you like that? I lost!\n"
 	.string "Eh, it was fun, so it doesn't matter.$"
 
 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech::
-# 77 "data/scripts/elite_four.pory"
+# 78 "data/scripts/elite_four.pory"
 	.string "Well, listen to what this loser has\n"
 	.string "to say.\p"
 	.string "You've got what it takes to go far.\n"
@@ -215,7 +217,7 @@ EverGrandeCity_SidneysRoom_Text_PostBattleSpeech::
 	.string "your next battle!$"
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech::
-# 101 "data/scripts/elite_four.pory"
+# 102 "data/scripts/elite_four.pory"
 	.string "Ahahaha!\p"
 	.string "I'm Phoebe of the Elite Four.\n"
 	.string "I did my training on Mt. Pyre.\p"
@@ -227,12 +229,12 @@ EverGrandeCity_PhoebesRoom_Text_IntroSpeech::
 	.string "even inflict damage on my Pokémon!$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat::
-# 113 "data/scripts/elite_four.pory"
+# 114 "data/scripts/elite_four.pory"
 	.string "Oh, darn.\n"
 	.string "I've gone and lost.$"
 
 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech::
-# 118 "data/scripts/elite_four.pory"
+# 119 "data/scripts/elite_four.pory"
 	.string "There's a definite bond between you\n"
 	.string "and your Pokémon, too.\p"
 	.string "I didn't recognize it, so it's only\n"
@@ -242,7 +244,7 @@ EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech::
 	.string "Go ahead, move on to the next room.$"
 
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech::
-# 144 "data/scripts/elite_four.pory"
+# 145 "data/scripts/elite_four.pory"
 	.string "Welcome, my name is Glacia\n"
 	.string "of the Elite Four.\p"
 	.string "I've traveled from afar to Hoenn\n"
@@ -254,7 +256,7 @@ EverGrandeCity_GlaciasRoom_Text_IntroSpeech::
 	.string "go all out against you!$"
 
 EverGrandeCity_GlaciasRoom_Text_Defeat::
-# 156 "data/scripts/elite_four.pory"
+# 157 "data/scripts/elite_four.pory"
 	.string "You and your Pokémon…\n"
 	.string "How hot your spirits burn!\p"
 	.string "The all-consuming heat overwhelms.\p"
@@ -262,13 +264,13 @@ EverGrandeCity_GlaciasRoom_Text_Defeat::
 	.string "failed to harm you.$"
 
 EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech::
-# 164 "data/scripts/elite_four.pory"
+# 165 "data/scripts/elite_four.pory"
 	.string "Advance to the next room.\p"
 	.string "And there, confirm the truly fearsome\n"
 	.string "side of the Pokémon League.$"
 
 EverGrandeCity_DrakesRoom_Text_IntroSpeech::
-# 188 "data/scripts/elite_four.pory"
+# 189 "data/scripts/elite_four.pory"
 	.string "I am the last of the Pokémon League\n"
 	.string "Elite Four, Drake the Dragon master!\p"
 	.string "In their natural state, Pokémon are\n"
@@ -282,11 +284,11 @@ EverGrandeCity_DrakesRoom_Text_IntroSpeech::
 	.string "prevail over me!$"
 
 EverGrandeCity_DrakesRoom_Text_Defeat::
-# 202 "data/scripts/elite_four.pory"
+# 203 "data/scripts/elite_four.pory"
 	.string "Superb, it should be said.$"
 
 EverGrandeCity_DrakesRoom_Text_PostBattleSpeech::
-# 206 "data/scripts/elite_four.pory"
+# 207 "data/scripts/elite_four.pory"
 	.string "You deserve every credit for coming\n"
 	.string "this far as a Trainer of Pokémon.\p"
 	.string "You do seem to know what is needed.\p"

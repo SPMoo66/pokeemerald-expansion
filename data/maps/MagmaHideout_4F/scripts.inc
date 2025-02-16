@@ -65,7 +65,9 @@ MagmaHideout_4F_EventScript_Maxie::
 	speakername (CommonText_Maxie)
 	msgbox MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT
 	closemessage
+	setflag FLAG_CHALLENGING_TRAINER
 	trainerbattle_no_intro TRAINER_MAXIE_MAGMA_HIDEOUT, MagmaHideout_4F_Text_MaxieDefeat
+	clearflag FLAG_CHALLENGING_TRAINER
 	speakername (CommonText_Maxie)
 	msgbox MagmaHideout_4F_Text_MaxieImGoingAfterGroudon, MSGBOX_DEFAULT
 	closemessage
@@ -128,8 +130,10 @@ MagmaHideout_4F_EventScript_Grunt13::
 	end
 
 MagmaHideout_4F_EventScript_Tabitha::
+	setflag FLAG_CHALLENGING_TRAINER
 	trainerbattle_single TRAINER_TABITHA_MAGMA_HIDEOUT, MagmaHideout_4F_Text_TabithaIntro, MagmaHideout_4F_Text_TabithaDefeat
 	msgbox MagmaHideout_4F_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE
+	clearflag FLAG_CHALLENGING_TRAINER
 	end
 
 MagmaHideout_4F_Text_Grunt11Intro:

@@ -42,6 +42,7 @@ Route119_EventScript_RivalTrigger2::
 
 Route119_EventScript_RivalEncounter::
 	lockall
+	setflag FLAG_CHALLENGING_TRAINER
 	addobject LOCALID_RIVAL_ON_BIKE
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, Route119_EventScript_PlayMayMusic
@@ -170,6 +171,7 @@ Route119_EventScript_RivalExitScottArrive::
 	call_if_eq VAR_TEMP_1, 1, Route119_EventScript_ScottExit1
 	call_if_eq VAR_TEMP_1, 2, Route119_EventScript_ScottExit2
 	removeobject LOCALID_SCOTT
+	clearflag FLAG_CHALLENGING_TRAINER
 	releaseall
 	end
 

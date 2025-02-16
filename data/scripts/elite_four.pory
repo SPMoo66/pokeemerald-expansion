@@ -47,6 +47,7 @@ script PokemonLeague_EliteFour_EventScript_CloseDoor {
 script EverGrandeCity_SidneysRoom_EventScript_Sidney {
 	lock
 	faceplayer
+	setflag (FLAG_CHALLENGING_TRAINER)
 	if (!flag(FLAG_DEFEATED_ELITE_4_SIDNEY)) {
 		playbgm (MUS_ENCOUNTER_ELITE_FOUR, FALSE)
 		msgbox (EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT)

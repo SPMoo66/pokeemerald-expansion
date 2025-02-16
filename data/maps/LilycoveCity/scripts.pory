@@ -226,6 +226,7 @@ LilycoveCity_EventScript_May::
 	call_if_set FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_MayAskToBattleAgain
 	call_if_unset FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_MayAskToBattle
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DeclineMayBattle
+	setflag FLAG_CHALLENGING_TRAINER
 	speakername (CommonText_May)
 	msgbox LilycoveCity_Text_MayWontBeBeaten, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
@@ -258,6 +259,7 @@ LilycoveCity_EventScript_Brendan::
 	call_if_set FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_BrendanAskToBattleAgain
 	call_if_unset FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_BrendanAskToBattle
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DeclineBrendanBattle
+	setflag FLAG_CHALLENGING_TRAINER
 	speakername (CommonText_Brendan)
 	msgbox LilycoveCity_Text_BrendanWontBeBeaten, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
@@ -388,6 +390,7 @@ LilycoveCity_EventScript_RivalFlyAway::
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	setflag FLAG_MET_RIVAL_LILYCOVE
+	clearflag FLAG_CHALLENGING_TRAINER
 	release
 	end
 

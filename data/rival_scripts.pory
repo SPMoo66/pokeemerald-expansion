@@ -114,6 +114,7 @@ movement Baron_Town01_Move {
 script Rival_Scene02 {
 	if (var(VAR_EMERALBODY_RIVAL_STATE) == 1) {
 		lock
+		setflag (FLAG_CHALLENGING_TRAINER)
 		call (Common_EventScript_PlayEmRivalBgm)
 		playse (SE_PIN)
 		applymovement (RIVAL_PETALBURG, Common_Movement_ExclamationMark)
@@ -176,6 +177,7 @@ script Rival_Scene02 {
 		waitmovement (0)
 		removeobject (RIVAL_PETALBURG)
 	}
+	clearflag (FLAG_CHALLENGING_TRAINER)
 	release
 }
 

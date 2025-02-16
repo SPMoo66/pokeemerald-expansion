@@ -74,6 +74,7 @@ PetalburgWoods_EventScript_DevonResearcherRight::
 	end
 
 PetalburgWoods_EventScript_DevonResearcherIntro::
+	setflag FLAG_CHALLENGING_TRAINER
 	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherLookAround
 	waitmovement 0
 	msgbox PetalburgWoods_Text_NotAOneToBeFound, MSGBOX_DEFAULT
@@ -110,6 +111,7 @@ PetalburgWoods_EventScript_DevonResearcherFinish::
 PetalburgWoods_EventScript_RemoveDevonResearcher::
 	removeobject LOCALID_DEVON_EMPLOYEE
 	setvar VAR_PETALBURG_WOODS_STATE, 1
+	clearflag FLAG_CHALLENGING_TRAINER
 	releaseall
 	end
 

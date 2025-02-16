@@ -682,6 +682,7 @@ RustboroCity_EventScript_MayAskToBattle::
 	end
 
 RustboroCity_EventScript_BattleMay::
+	setflag FLAG_CHALLENGING_TRAINER
 	speakername (CommonText_May)
 	msgbox RustboroCity_Text_MayImNotGoingToLose, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
@@ -694,6 +695,7 @@ RustboroCity_EventScript_MayBrineyHint::
 	speakername (CommonText_May)
 	msgbox RustboroCity_Text_MayMrBrineyHint, MSGBOX_DEFAULT
 	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
+	clearflag FLAG_CHALLENGING_TRAINER
 	releaseall
 	end
 
@@ -755,6 +757,7 @@ RustboroCity_EventScript_BrendanAskToBattle::
 	end
 
 RustboroCity_EventScript_BattleBrendan::
+	setflag FLAG_CHALLENGING_TRAINER
 	speakername (CommonText_Brendan)
 	msgbox RustboroCity_Text_BrendanIWontGoEasy, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
@@ -767,6 +770,7 @@ RustboroCity_EventScript_BrendanBrineyHint::
 	speakername (CommonText_Brendan)
 	msgbox RustboroCity_Text_BrendanMrBrineyHint, MSGBOX_DEFAULT
 	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
+	clearflag FLAG_CHALLENGING_TRAINER
 	releaseall
 	end
 

@@ -212,8 +212,9 @@ MauvilleCity_EventScript_ScottExitEast::
 MauvilleCity_EventScript_BattleWally::
 	speakername (CommonText_Wally)
 	msgbox MauvilleCity_Text_WallyHereICome, MSGBOX_DEFAULT
-	speakername (CommonText_Wally)
+	setflag FLAG_CHALLENGING_TRAINER
 	trainerbattle_no_intro TRAINER_WALLY_MAUVILLE, MauvilleCity_Text_WallyDefeat
+	clearflag FLAG_CHALLENGING_TRAINER
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	speakername (CommonText_Wally)

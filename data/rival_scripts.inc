@@ -215,7 +215,9 @@ Rival_Scene02::
 	compare VAR_EMERALBODY_RIVAL_STATE, 1
 	goto_if_eq Rival_Scene02_2
 Rival_Scene02_1:
-# 179 "data/rival_scripts.pory"
+# 180 "data/rival_scripts.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 181 "data/rival_scripts.pory"
 	release
 	return
 
@@ -223,399 +225,401 @@ Rival_Scene02_2:
 # 116 "data/rival_scripts.pory"
 	lock
 # 117 "data/rival_scripts.pory"
-	call Common_EventScript_PlayEmRivalBgm
+	setflag FLAG_CHALLENGING_TRAINER
 # 118 "data/rival_scripts.pory"
-	playse SE_PIN
+	call Common_EventScript_PlayEmRivalBgm
 # 119 "data/rival_scripts.pory"
-	applymovement RIVAL_PETALBURG, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 120 "data/rival_scripts.pory"
-	waitmovement 0
+	applymovement RIVAL_PETALBURG, Common_Movement_ExclamationMark
 # 121 "data/rival_scripts.pory"
-	delay 60
-# 122 "data/rival_scripts.pory"
-	applymovement RIVAL_PETALBURG, Common_Movement_WalkRight2
-# 123 "data/rival_scripts.pory"
 	waitmovement 0
+# 122 "data/rival_scripts.pory"
+	delay 60
+# 123 "data/rival_scripts.pory"
+	applymovement RIVAL_PETALBURG, Common_Movement_WalkRight2
 # 124 "data/rival_scripts.pory"
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	waitmovement 0
 # 125 "data/rival_scripts.pory"
-	switch VAR_TEMP_1
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 # 126 "data/rival_scripts.pory"
+	switch VAR_TEMP_1
+# 127 "data/rival_scripts.pory"
 	case 16, Rival_Scene02_6
-# 129 "data/rival_scripts.pory"
+# 130 "data/rival_scripts.pory"
 	case 17, Rival_Scene02_7
-# 132 "data/rival_scripts.pory"
+# 133 "data/rival_scripts.pory"
 	case 19, Rival_Scene02_8
 Rival_Scene02_4:
-# 137 "data/rival_scripts.pory"
-	applymovement RIVAL_PETALBURG, Common_Movement_WalkRight2
 # 138 "data/rival_scripts.pory"
-	waitmovement 0
+	applymovement RIVAL_PETALBURG, Common_Movement_WalkRight2
 # 139 "data/rival_scripts.pory"
-	call GetRivalForNameBox
+	waitmovement 0
 # 140 "data/rival_scripts.pory"
-	switch VAR_EMERALBODY_RIVAL
-# 141 "data/rival_scripts.pory"
-	case 1, Rival_Scene02_11
-# 146 "data/rival_scripts.pory"
-	case 2, Rival_Scene02_12
-# 151 "data/rival_scripts.pory"
-	case 3, Rival_Scene02_13
-# 156 "data/rival_scripts.pory"
-	case 4, Rival_Scene02_14
-# 162 "data/rival_scripts.pory"
-	msgbox Scene02_BaronText_PreBattle
-# 163 "data/rival_scripts.pory"
-	trainerbattle_no_intro TRAINER_BARON_1, Scene02_BaronText_BattleVictory
-# 164 "data/rival_scripts.pory"
 	call GetRivalForNameBox
+# 141 "data/rival_scripts.pory"
+	switch VAR_EMERALBODY_RIVAL
+# 142 "data/rival_scripts.pory"
+	case 1, Rival_Scene02_11
+# 147 "data/rival_scripts.pory"
+	case 2, Rival_Scene02_12
+# 152 "data/rival_scripts.pory"
+	case 3, Rival_Scene02_13
+# 157 "data/rival_scripts.pory"
+	case 4, Rival_Scene02_14
+# 163 "data/rival_scripts.pory"
+	msgbox Scene02_BaronText_PreBattle
+# 164 "data/rival_scripts.pory"
+	trainerbattle_no_intro TRAINER_BARON_1, Scene02_BaronText_BattleVictory
 # 165 "data/rival_scripts.pory"
+	call GetRivalForNameBox
+# 166 "data/rival_scripts.pory"
 	msgbox Scene02_BaronText_PostBattle
 Rival_Scene02_9:
-# 167 "data/rival_scripts.pory"
-	closemessage
 # 168 "data/rival_scripts.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 2
+	closemessage
 # 169 "data/rival_scripts.pory"
-	clearflag FLAG_TEMP_2
+	setvar VAR_EMERALBODY_RIVAL_STATE, 2
 # 170 "data/rival_scripts.pory"
-	fadedefaultbgm
+	clearflag FLAG_TEMP_2
 # 171 "data/rival_scripts.pory"
+	fadedefaultbgm
+# 172 "data/rival_scripts.pory"
 	compare VAR_TEMP_1, 16
 	goto_if_eq Rival_Scene02_17
 Rival_Scene02_16:
-# 175 "data/rival_scripts.pory"
-	applymovement RIVAL_PETALBURG, Common_Movement_WalkLeft7
 # 176 "data/rival_scripts.pory"
-	waitmovement 0
+	applymovement RIVAL_PETALBURG, Common_Movement_WalkLeft7
 # 177 "data/rival_scripts.pory"
+	waitmovement 0
+# 178 "data/rival_scripts.pory"
 	removeobject RIVAL_PETALBURG
 	goto Rival_Scene02_1
 
 Rival_Scene02_6:
-# 127 "data/rival_scripts.pory"
-	applymovement RIVAL_PETALBURG, Common_Movement_WalkUp2
 # 128 "data/rival_scripts.pory"
+	applymovement RIVAL_PETALBURG, Common_Movement_WalkUp2
+# 129 "data/rival_scripts.pory"
 	waitmovement 0
 	goto Rival_Scene02_4
 
 Rival_Scene02_7:
-# 130 "data/rival_scripts.pory"
-	applymovement RIVAL_PETALBURG, Common_Movement_WalkUp
 # 131 "data/rival_scripts.pory"
+	applymovement RIVAL_PETALBURG, Common_Movement_WalkUp
+# 132 "data/rival_scripts.pory"
 	waitmovement 0
 	goto Rival_Scene02_4
 
 Rival_Scene02_8:
-# 133 "data/rival_scripts.pory"
-	applymovement RIVAL_PETALBURG, Common_Movement_WalkDown
 # 134 "data/rival_scripts.pory"
+	applymovement RIVAL_PETALBURG, Common_Movement_WalkDown
+# 135 "data/rival_scripts.pory"
 	waitmovement 0
 	goto Rival_Scene02_4
 
 Rival_Scene02_11:
-# 142 "data/rival_scripts.pory"
-	msgbox Scene02_HarperText_PreBattle
 # 143 "data/rival_scripts.pory"
-	trainerbattle_no_intro TRAINER_HARPER_1, Scene02_HarperText_BattleVictory
+	msgbox Scene02_HarperText_PreBattle
 # 144 "data/rival_scripts.pory"
-	call GetRivalForNameBox
+	trainerbattle_no_intro TRAINER_HARPER_1, Scene02_HarperText_BattleVictory
 # 145 "data/rival_scripts.pory"
+	call GetRivalForNameBox
+# 146 "data/rival_scripts.pory"
 	msgbox Scene02_HarperText_PostBattle
 	goto Rival_Scene02_9
 
 Rival_Scene02_12:
-# 147 "data/rival_scripts.pory"
-	msgbox Scene02_JaksonText_PreBattle
 # 148 "data/rival_scripts.pory"
-	trainerbattle_no_intro TRAINER_JAKSON_1, Scene02_JaksonText_BattleVictory
+	msgbox Scene02_JaksonText_PreBattle
 # 149 "data/rival_scripts.pory"
-	call GetRivalForNameBox
+	trainerbattle_no_intro TRAINER_JAKSON_1, Scene02_JaksonText_BattleVictory
 # 150 "data/rival_scripts.pory"
+	call GetRivalForNameBox
+# 151 "data/rival_scripts.pory"
 	msgbox Scene02_JaksonText_PostBattle
 	goto Rival_Scene02_9
 
 Rival_Scene02_13:
-# 152 "data/rival_scripts.pory"
-	msgbox Scene02_ReddText_PreBattle
 # 153 "data/rival_scripts.pory"
-	trainerbattle_no_intro TRAINER_REDD_1, Scene02_ReddText_BattleVictory
+	msgbox Scene02_ReddText_PreBattle
 # 154 "data/rival_scripts.pory"
-	call GetRivalForNameBox
+	trainerbattle_no_intro TRAINER_REDD_1, Scene02_ReddText_BattleVictory
 # 155 "data/rival_scripts.pory"
+	call GetRivalForNameBox
+# 156 "data/rival_scripts.pory"
 	msgbox Scene02_ReddText_PostBattle
 	goto Rival_Scene02_9
 
 Rival_Scene02_14:
-# 157 "data/rival_scripts.pory"
-	msgbox Scene02_SakuraText_PreBattle
 # 158 "data/rival_scripts.pory"
-	trainerbattle_no_intro TRAINER_SAKURA_1, Scene02_SakuraText_BattleVictory
+	msgbox Scene02_SakuraText_PreBattle
 # 159 "data/rival_scripts.pory"
-	call GetRivalForNameBox
+	trainerbattle_no_intro TRAINER_SAKURA_1, Scene02_SakuraText_BattleVictory
 # 160 "data/rival_scripts.pory"
+	call GetRivalForNameBox
+# 161 "data/rival_scripts.pory"
 	msgbox Scene02_SakuraText_PostBattle
 	goto Rival_Scene02_9
 
 Rival_Scene02_17:
-# 172 "data/rival_scripts.pory"
-	applymovement RIVAL_PETALBURG, Common_Movement_WalkDown
 # 173 "data/rival_scripts.pory"
+	applymovement RIVAL_PETALBURG, Common_Movement_WalkDown
+# 174 "data/rival_scripts.pory"
 	waitmovement 0
 	goto Rival_Scene02_16
 
 
 Sakura_Town02::
-# 185 "data/rival_scripts.pory"
+# 187 "data/rival_scripts.pory"
 	speakername CommonText_Sakura
-# 186 "data/rival_scripts.pory"
+# 188 "data/rival_scripts.pory"
 	msgbox Town02_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town02::
-# 190 "data/rival_scripts.pory"
+# 192 "data/rival_scripts.pory"
 	speakername CommonText_Harper
-# 191 "data/rival_scripts.pory"
+# 193 "data/rival_scripts.pory"
 	msgbox Town02_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town02::
-# 195 "data/rival_scripts.pory"
+# 197 "data/rival_scripts.pory"
 	speakername CommonText_Redd
-# 196 "data/rival_scripts.pory"
+# 198 "data/rival_scripts.pory"
 	msgbox Town02_ReddText, MSGBOX_NPC
 	return
 
 
 Baron_Town02::
-# 200 "data/rival_scripts.pory"
+# 202 "data/rival_scripts.pory"
 	speakername CommonText_Baron
-# 201 "data/rival_scripts.pory"
+# 203 "data/rival_scripts.pory"
 	msgbox Town02_BaronText, MSGBOX_NPC
 	return
 
 
 Jakson_Town02::
-# 205 "data/rival_scripts.pory"
+# 207 "data/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 206 "data/rival_scripts.pory"
+# 208 "data/rival_scripts.pory"
 	msgbox Town02_JaksonText, MSGBOX_NPC
 	return
 
 
 Sakura_Town03::
-# 212 "data/rival_scripts.pory"
+# 214 "data/rival_scripts.pory"
 	speakername CommonText_Sakura
-# 213 "data/rival_scripts.pory"
+# 215 "data/rival_scripts.pory"
 	msgbox Town03_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town03::
-# 217 "data/rival_scripts.pory"
+# 219 "data/rival_scripts.pory"
 	speakername CommonText_Harper
-# 218 "data/rival_scripts.pory"
+# 220 "data/rival_scripts.pory"
 	msgbox Town03_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town03::
-# 222 "data/rival_scripts.pory"
+# 224 "data/rival_scripts.pory"
 	speakername CommonText_Redd
-# 223 "data/rival_scripts.pory"
+# 225 "data/rival_scripts.pory"
 	msgbox Town03_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town03::
-# 227 "data/rival_scripts.pory"
+# 229 "data/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 228 "data/rival_scripts.pory"
+# 230 "data/rival_scripts.pory"
 	msgbox Town03_JaksonText, MSGBOX_NPC
 	return
 
 
 Baron_Town03::
-# 232 "data/rival_scripts.pory"
-	lock
-# 233 "data/rival_scripts.pory"
-	speakername CommonText_Baron
 # 234 "data/rival_scripts.pory"
-	msgbox Town03_BaronText1
+	lock
 # 235 "data/rival_scripts.pory"
-	faceplayer
+	speakername CommonText_Baron
 # 236 "data/rival_scripts.pory"
-	msgbox Town03_BaronText2
+	msgbox Town03_BaronText1
 # 237 "data/rival_scripts.pory"
+	faceplayer
+# 238 "data/rival_scripts.pory"
+	msgbox Town03_BaronText2
+# 239 "data/rival_scripts.pory"
 	release
 	return
 
 
 Rival_Scene03::
-# 243 "data/rival_scripts.pory"
-	delay 100
-# 244 "data/rival_scripts.pory"
-	call Common_EventScript_PlayEmRivalBgm
 # 245 "data/rival_scripts.pory"
-	addobject RIVAL_RUSTBORO
+	delay 100
 # 246 "data/rival_scripts.pory"
-	setobjectxy RIVAL_RUSTBORO, 20, 15
+	call Common_EventScript_PlayEmRivalBgm
 # 247 "data/rival_scripts.pory"
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	addobject RIVAL_RUSTBORO
 # 248 "data/rival_scripts.pory"
-	switch VAR_TEMP_1
+	setobjectxy RIVAL_RUSTBORO, 20, 15
 # 249 "data/rival_scripts.pory"
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 250 "data/rival_scripts.pory"
+	switch VAR_TEMP_1
+# 251 "data/rival_scripts.pory"
 	case 21, Rival_Scene03_3
-# 253 "data/rival_scripts.pory"
+# 255 "data/rival_scripts.pory"
 	applymovement RIVAL_RUSTBORO, Common_Movement_WalkDown7
-# 254 "data/rival_scripts.pory"
+# 256 "data/rival_scripts.pory"
 	waitmovement 0
 Rival_Scene03_1:
-# 256 "data/rival_scripts.pory"
-	applymovement RIVAL_RUSTBORO, Common_Movement_WalkLeft2
-# 257 "data/rival_scripts.pory"
-	waitmovement 0
 # 258 "data/rival_scripts.pory"
-	call GetRivalForNameBox
+	applymovement RIVAL_RUSTBORO, Common_Movement_WalkLeft2
 # 259 "data/rival_scripts.pory"
-	switch VAR_EMERALBODY_RIVAL
+	waitmovement 0
 # 260 "data/rival_scripts.pory"
-	case 1, Rival_Scene03_7
+	call GetRivalForNameBox
+# 261 "data/rival_scripts.pory"
+	switch VAR_EMERALBODY_RIVAL
 # 262 "data/rival_scripts.pory"
-	case 2, Rival_Scene03_8
+	case 1, Rival_Scene03_7
 # 264 "data/rival_scripts.pory"
-	case 3, Rival_Scene03_9
+	case 2, Rival_Scene03_8
 # 266 "data/rival_scripts.pory"
+	case 3, Rival_Scene03_9
+# 268 "data/rival_scripts.pory"
 	case 4, Rival_Scene03_10
-# 269 "data/rival_scripts.pory"
+# 271 "data/rival_scripts.pory"
 	msgbox Scene03_BaronText
 Rival_Scene03_5:
-# 271 "data/rival_scripts.pory"
-	closemessage
-# 272 "data/rival_scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 273 "data/rival_scripts.pory"
-	setobjectxy OBJ_EVENT_ID_PLAYER, 11, 19
-# 274 "data/rival_scripts.pory"
-	setvar VAR_0x8004, 11
-# 275 "data/rival_scripts.pory"
-	setvar VAR_0x8005, 19
-# 276 "data/rival_scripts.pory"
-	special TeleportCamera
-# 277 "data/rival_scripts.pory"
-	addobject REDD_RUSTBORO
-# 278 "data/rival_scripts.pory"
-	addobject SAKURA_RUSTBORO
-# 279 "data/rival_scripts.pory"
-	addobject BARON_RUSTBORO
-# 280 "data/rival_scripts.pory"
-	addobject HARPER_RUSTBORO
-# 281 "data/rival_scripts.pory"
-	addobject JAKSON_RUSTBORO
-# 282 "data/rival_scripts.pory"
-	applymovement SAKURA_RUSTBORO, Common_Movement_FaceDown
-# 283 "data/rival_scripts.pory"
-	applymovement REDD_RUSTBORO, Common_Movement_FaceRight
-# 284 "data/rival_scripts.pory"
-	applymovement HARPER_RUSTBORO, Common_Movement_FaceLeft
-# 285 "data/rival_scripts.pory"
-	applymovement JAKSON_RUSTBORO, Common_Movement_FaceUp
-# 286 "data/rival_scripts.pory"
-	setobjectxy REDD_RUSTBORO, 10, 18
-# 287 "data/rival_scripts.pory"
-	setobjectxy SAKURA_RUSTBORO, 11, 17
-# 288 "data/rival_scripts.pory"
-	setobjectxy BARON_RUSTBORO, 12, 17
-# 289 "data/rival_scripts.pory"
-	setobjectxy HARPER_RUSTBORO, 13, 18
-# 290 "data/rival_scripts.pory"
-	setobjectxy JAKSON_RUSTBORO, 12, 19
-# 291 "data/rival_scripts.pory"
-	setobjectxy RIVAL_RUSTBORO, 0, 6
-# 292 "data/rival_scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
-# 293 "data/rival_scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 294 "data/rival_scripts.pory"
-	message Rival_Scene03_Text_0
-# 295 "data/rival_scripts.pory"
-	applymovement JAKSON_RUSTBORO, Common_Movement_WalkInPlaceLeft
-# 296 "data/rival_scripts.pory"
-	waitmovement 0
-# 297 "data/rival_scripts.pory"
-	delay 30
-# 298 "data/rival_scripts.pory"
-	applymovement JAKSON_RUSTBORO, Common_Movement_WalkInPlaceUp
-# 299 "data/rival_scripts.pory"
-	applymovement HARPER_RUSTBORO, Common_Movement_WalkInPlaceDown
-# 300 "data/rival_scripts.pory"
-	waitmovement 0
-# 301 "data/rival_scripts.pory"
-	delay 40
-# 302 "data/rival_scripts.pory"
-	applymovement BARON_RUSTBORO, Common_Movement_WalkInPlaceLeft
-# 303 "data/rival_scripts.pory"
-	applymovement SAKURA_RUSTBORO, Common_Movement_WalkInPlaceRight
-# 304 "data/rival_scripts.pory"
-	waitmovement 0
-# 305 "data/rival_scripts.pory"
-	delay 30
-# 306 "data/rival_scripts.pory"
-	applymovement REDD_RUSTBORO, Common_Movement_WalkInPlaceDown
-# 307 "data/rival_scripts.pory"
-	waitmovement 0
-# 308 "data/rival_scripts.pory"
-	delay 50
-# 309 "data/rival_scripts.pory"
 	closemessage
-# 310 "data/rival_scripts.pory"
+# 274 "data/rival_scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 311 "data/rival_scripts.pory"
-	removeobject REDD_RUSTBORO
-# 312 "data/rival_scripts.pory"
-	removeobject SAKURA_RUSTBORO
-# 313 "data/rival_scripts.pory"
-	removeobject BARON_RUSTBORO
-# 314 "data/rival_scripts.pory"
-	removeobject HARPER_RUSTBORO
-# 315 "data/rival_scripts.pory"
-	removeobject JAKSON_RUSTBORO
-# 316 "data/rival_scripts.pory"
+# 275 "data/rival_scripts.pory"
+	setobjectxy OBJ_EVENT_ID_PLAYER, 11, 19
+# 276 "data/rival_scripts.pory"
+	setvar VAR_0x8004, 11
+# 277 "data/rival_scripts.pory"
+	setvar VAR_0x8005, 19
+# 278 "data/rival_scripts.pory"
+	special TeleportCamera
+# 279 "data/rival_scripts.pory"
+	addobject REDD_RUSTBORO
+# 280 "data/rival_scripts.pory"
+	addobject SAKURA_RUSTBORO
+# 281 "data/rival_scripts.pory"
+	addobject BARON_RUSTBORO
+# 282 "data/rival_scripts.pory"
+	addobject HARPER_RUSTBORO
+# 283 "data/rival_scripts.pory"
+	addobject JAKSON_RUSTBORO
+# 284 "data/rival_scripts.pory"
+	applymovement SAKURA_RUSTBORO, Common_Movement_FaceDown
+# 285 "data/rival_scripts.pory"
+	applymovement REDD_RUSTBORO, Common_Movement_FaceRight
+# 286 "data/rival_scripts.pory"
+	applymovement HARPER_RUSTBORO, Common_Movement_FaceLeft
+# 287 "data/rival_scripts.pory"
+	applymovement JAKSON_RUSTBORO, Common_Movement_FaceUp
+# 288 "data/rival_scripts.pory"
+	setobjectxy REDD_RUSTBORO, 10, 18
+# 289 "data/rival_scripts.pory"
+	setobjectxy SAKURA_RUSTBORO, 11, 17
+# 290 "data/rival_scripts.pory"
+	setobjectxy BARON_RUSTBORO, 12, 17
+# 291 "data/rival_scripts.pory"
+	setobjectxy HARPER_RUSTBORO, 13, 18
+# 292 "data/rival_scripts.pory"
+	setobjectxy JAKSON_RUSTBORO, 12, 19
+# 293 "data/rival_scripts.pory"
+	setobjectxy RIVAL_RUSTBORO, 0, 6
+# 294 "data/rival_scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+# 295 "data/rival_scripts.pory"
 	fadescreen FADE_FROM_BLACK
+# 296 "data/rival_scripts.pory"
+	message Rival_Scene03_Text_0
+# 297 "data/rival_scripts.pory"
+	applymovement JAKSON_RUSTBORO, Common_Movement_WalkInPlaceLeft
+# 298 "data/rival_scripts.pory"
+	waitmovement 0
+# 299 "data/rival_scripts.pory"
+	delay 30
+# 300 "data/rival_scripts.pory"
+	applymovement JAKSON_RUSTBORO, Common_Movement_WalkInPlaceUp
+# 301 "data/rival_scripts.pory"
+	applymovement HARPER_RUSTBORO, Common_Movement_WalkInPlaceDown
+# 302 "data/rival_scripts.pory"
+	waitmovement 0
+# 303 "data/rival_scripts.pory"
+	delay 40
+# 304 "data/rival_scripts.pory"
+	applymovement BARON_RUSTBORO, Common_Movement_WalkInPlaceLeft
+# 305 "data/rival_scripts.pory"
+	applymovement SAKURA_RUSTBORO, Common_Movement_WalkInPlaceRight
+# 306 "data/rival_scripts.pory"
+	waitmovement 0
+# 307 "data/rival_scripts.pory"
+	delay 30
+# 308 "data/rival_scripts.pory"
+	applymovement REDD_RUSTBORO, Common_Movement_WalkInPlaceDown
+# 309 "data/rival_scripts.pory"
+	waitmovement 0
+# 310 "data/rival_scripts.pory"
+	delay 50
+# 311 "data/rival_scripts.pory"
+	closemessage
+# 312 "data/rival_scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 313 "data/rival_scripts.pory"
+	removeobject REDD_RUSTBORO
+# 314 "data/rival_scripts.pory"
+	removeobject SAKURA_RUSTBORO
+# 315 "data/rival_scripts.pory"
+	removeobject BARON_RUSTBORO
+# 316 "data/rival_scripts.pory"
+	removeobject HARPER_RUSTBORO
 # 317 "data/rival_scripts.pory"
-	fadedefaultbgm
+	removeobject JAKSON_RUSTBORO
 # 318 "data/rival_scripts.pory"
-	setflag FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL
+	fadescreen FADE_FROM_BLACK
 # 319 "data/rival_scripts.pory"
+	fadedefaultbgm
+# 320 "data/rival_scripts.pory"
+	setflag FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL
+# 321 "data/rival_scripts.pory"
 	release
 	return
 
 Rival_Scene03_3:
-# 250 "data/rival_scripts.pory"
+# 252 "data/rival_scripts.pory"
 	applymovement RIVAL_RUSTBORO, Common_Movement_WalkDown6
-# 251 "data/rival_scripts.pory"
+# 253 "data/rival_scripts.pory"
 	waitmovement 0
 	goto Rival_Scene03_1
 
 Rival_Scene03_7:
-# 261 "data/rival_scripts.pory"
+# 263 "data/rival_scripts.pory"
 	msgbox Scene03_HarperText
 	goto Rival_Scene03_5
 
 Rival_Scene03_8:
-# 263 "data/rival_scripts.pory"
+# 265 "data/rival_scripts.pory"
 	msgbox Scene03_JaksonText
 	goto Rival_Scene03_5
 
 Rival_Scene03_9:
-# 265 "data/rival_scripts.pory"
+# 267 "data/rival_scripts.pory"
 	msgbox Scene03_ReddText
 	goto Rival_Scene03_5
 
 Rival_Scene03_10:
-# 267 "data/rival_scripts.pory"
+# 269 "data/rival_scripts.pory"
 	msgbox Scene03_SakuraText
 	goto Rival_Scene03_5
 
@@ -625,6 +629,6 @@ Baron_Town01_Text_0:
 	.string "Left foot… Right foot…\nLeft foot… Right foot…$"
 
 Rival_Scene03_Text_0:
-# 294 "data/rival_scripts.pory"
+# 296 "data/rival_scripts.pory"
 	.string "You exchanged PokéNav info with your\n"
 	.string "friends.$"

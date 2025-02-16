@@ -1451,79 +1451,87 @@ PetalburgCity_EventScript_Simulation::
 
 PetalburgCity_EventScript_WallyBattle::
 # 732 "data/maps/PetalburgCity/scripts.pory"
-	speakername CommonText_Q
+	lock
 # 733 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_WallyBattle_Text_0
+	setflag FLAG_CHALLENGING_TRAINER
 # 734 "data/maps/PetalburgCity/scripts.pory"
-	closemessage
+	speakername CommonText_Q
 # 735 "data/maps/PetalburgCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	msgbox PetalburgCity_EventScript_WallyBattle_Text_0
 # 736 "data/maps/PetalburgCity/scripts.pory"
-	waitmovement 0
+	closemessage
 # 737 "data/maps/PetalburgCity/scripts.pory"
-	addobject LOCALID_WALLY
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 # 738 "data/maps/PetalburgCity/scripts.pory"
-	setobjectxy LOCALID_WALLY, 15, 12
+	waitmovement 0
 # 739 "data/maps/PetalburgCity/scripts.pory"
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	addobject LOCALID_WALLY
 # 740 "data/maps/PetalburgCity/scripts.pory"
-	switch VAR_TEMP_0
+	setobjectxy LOCALID_WALLY, 15, 12
 # 741 "data/maps/PetalburgCity/scripts.pory"
-	case 4, PetalburgCity_EventScript_WallyBattle_3
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 742 "data/maps/PetalburgCity/scripts.pory"
+	switch VAR_TEMP_0
 # 743 "data/maps/PetalburgCity/scripts.pory"
-	case 5, PetalburgCity_EventScript_WallyBattle_4
+	case 4, PetalburgCity_EventScript_WallyBattle_3
 # 745 "data/maps/PetalburgCity/scripts.pory"
-	case 6, PetalburgCity_EventScript_WallyBattle_5
+	case 5, PetalburgCity_EventScript_WallyBattle_4
 # 747 "data/maps/PetalburgCity/scripts.pory"
+	case 6, PetalburgCity_EventScript_WallyBattle_5
+# 749 "data/maps/PetalburgCity/scripts.pory"
 	case 7, PetalburgCity_EventScript_WallyBattle_6
 PetalburgCity_EventScript_WallyBattle_1:
-# 751 "data/maps/PetalburgCity/scripts.pory"
-	waitmovement 0
-# 752 "data/maps/PetalburgCity/scripts.pory"
-	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceUp
 # 753 "data/maps/PetalburgCity/scripts.pory"
 	waitmovement 0
 # 754 "data/maps/PetalburgCity/scripts.pory"
-	delay 50
+	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceUp
 # 755 "data/maps/PetalburgCity/scripts.pory"
-	applymovement LOCALID_WALLY, Common_Movement_WalkUp3
-# 756 "data/maps/PetalburgCity/scripts.pory"
 	waitmovement 0
+# 756 "data/maps/PetalburgCity/scripts.pory"
+	delay 50
 # 757 "data/maps/PetalburgCity/scripts.pory"
-	speakername CommonText_Wally
+	applymovement LOCALID_WALLY, Common_Movement_WalkUp3
 # 758 "data/maps/PetalburgCity/scripts.pory"
+	waitmovement 0
+# 759 "data/maps/PetalburgCity/scripts.pory"
+	speakername CommonText_Wally
+# 760 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_WallyBattle_Text_1
-# 765 "data/maps/PetalburgCity/scripts.pory"
+# 767 "data/maps/PetalburgCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_WALLY_PETALBURG, PetalburgCity_EventScript_WallyBattle_Text_2
-# 766 "data/maps/PetalburgCity/scripts.pory"
+# 768 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_WallyBattle_Text_3
-# 771 "data/maps/PetalburgCity/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 772 "data/maps/PetalburgCity/scripts.pory"
-	removeobject LOCALID_WALLY
 # 773 "data/maps/PetalburgCity/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreen FADE_TO_BLACK
 # 774 "data/maps/PetalburgCity/scripts.pory"
+	removeobject LOCALID_WALLY
+# 775 "data/maps/PetalburgCity/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 776 "data/maps/PetalburgCity/scripts.pory"
 	setvar VAR_PETALBURG_CITY_STATE, 6
+# 777 "data/maps/PetalburgCity/scripts.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 778 "data/maps/PetalburgCity/scripts.pory"
+	release
 	return
 
 PetalburgCity_EventScript_WallyBattle_3:
-# 742 "data/maps/PetalburgCity/scripts.pory"
+# 744 "data/maps/PetalburgCity/scripts.pory"
 	applymovement LOCALID_WALLY, Common_Movement_WalkLeft11
 	goto PetalburgCity_EventScript_WallyBattle_1
 
 PetalburgCity_EventScript_WallyBattle_4:
-# 744 "data/maps/PetalburgCity/scripts.pory"
+# 746 "data/maps/PetalburgCity/scripts.pory"
 	applymovement LOCALID_WALLY, Common_Movement_WalkLeft10
 	goto PetalburgCity_EventScript_WallyBattle_1
 
 PetalburgCity_EventScript_WallyBattle_5:
-# 746 "data/maps/PetalburgCity/scripts.pory"
+# 748 "data/maps/PetalburgCity/scripts.pory"
 	applymovement LOCALID_WALLY, Common_Movement_WalkLeft9
 	goto PetalburgCity_EventScript_WallyBattle_1
 
 PetalburgCity_EventScript_WallyBattle_6:
-# 748 "data/maps/PetalburgCity/scripts.pory"
+# 750 "data/maps/PetalburgCity/scripts.pory"
 	applymovement LOCALID_WALLY, Common_Movement_WalkLeft8
 	goto PetalburgCity_EventScript_WallyBattle_1
 
@@ -1537,11 +1545,11 @@ PetalburgCity_EventScript_Simulation_Text_0:
 	.string "That's just too scary.$"
 
 PetalburgCity_EventScript_WallyBattle_Text_0:
-# 733 "data/maps/PetalburgCity/scripts.pory"
+# 735 "data/maps/PetalburgCity/scripts.pory"
 	.string "{PLAYER}! Please wait!$"
 
 PetalburgCity_EventScript_WallyBattle_Text_1:
-# 758 "data/maps/PetalburgCity/scripts.pory"
+# 760 "data/maps/PetalburgCity/scripts.pory"
 	.string "I… … … … …\p"
 	.string "I've heard about the things you've\n"
 	.string "done.\p"
@@ -1556,11 +1564,11 @@ PetalburgCity_EventScript_WallyBattle_Text_1:
 	.string "I'll sit at home no longer!$"
 
 PetalburgCity_EventScript_WallyBattle_Text_2:
-# 765 "data/maps/PetalburgCity/scripts.pory"
+# 767 "data/maps/PetalburgCity/scripts.pory"
 	.string "Ah…\nI think I see now…$"
 
 PetalburgCity_EventScript_WallyBattle_Text_3:
-# 766 "data/maps/PetalburgCity/scripts.pory"
+# 768 "data/maps/PetalburgCity/scripts.pory"
 	.string "{PLAYER}, you're strong.\p"
 	.string "You're really strong.\p"
 	.string "Thank you for the battle.\n"

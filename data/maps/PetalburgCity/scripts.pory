@@ -729,6 +729,8 @@ script PetalburgCity_EventScript_Simulation {
 }
 
 script PetalburgCity_EventScript_WallyBattle {
+	lock
+	setflag (FLAG_CHALLENGING_TRAINER)
 	speakername(CommonText_Q)
 	msgbox("{PLAYER}! Please wait!")
 	closemessage
@@ -772,4 +774,6 @@ script PetalburgCity_EventScript_WallyBattle {
 	removeobject (LOCALID_WALLY)
 	fadescreen (FADE_FROM_BLACK)
 	setvar (VAR_PETALBURG_CITY_STATE, 6)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+	release
 }

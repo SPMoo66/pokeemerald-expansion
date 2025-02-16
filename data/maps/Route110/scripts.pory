@@ -373,6 +373,7 @@ Route110_EventScript_RivalTrigger3::
 
 Route110_EventScript_RivalScene::
 	lockall
+	setflag FLAG_CHALLENGING_TRAINER
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, Route110_EventScript_PlayMayMusic
 	call_if_eq VAR_RESULT, FEMALE, Route110_EventScript_PlayBrendanMusic
@@ -389,7 +390,6 @@ Route110_EventScript_RivalScene::
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, Route110_EventScript_MayBattle
 	goto_if_eq VAR_RESULT, FEMALE, Route110_EventScript_BrendanBattle
-	releaseall
 	end
 
 Route110_EventScript_PlayMayMusic::
@@ -486,6 +486,7 @@ Route110_EventScript_RivalExit::
 	setvar VAR_ROUTE110_STATE, 1
 	savebgm MUS_DUMMY
 	fadedefaultbgm
+	clearflag FLAG_CHALLENGING_TRAINER
 	releaseall
 	end
 

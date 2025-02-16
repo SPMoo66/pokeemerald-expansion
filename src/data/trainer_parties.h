@@ -14719,3 +14719,231 @@ static const struct TrainerMon sParty_Baron1[] = {
     .moves = {MOVE_GROWL, MOVE_TAIL_WHIP, MOVE_TACKLE, MOVE_NONE}
     }
 };
+
+static const struct TrainerMon sParty_RocketGruntRefuge1[] = {
+    {
+    .lvl = 47,
+    .species = SPECIES_RAITORA,
+    },
+    {
+    .lvl = 47,
+    .species = SPECIES_ARBOK,
+    },
+    {
+    .lvl = 47,
+    .species = SPECIES_BEHEEYEM,
+    }
+};
+
+static const struct TrainerMon sParty_RocketGruntRefuge2[] = {
+    {
+    .lvl = 47,
+    .species = SPECIES_HEATMOR,
+    },
+    {
+    .lvl = 47,
+    .species = SPECIES_JELLICENT,
+    },
+    {
+    .lvl = 47,
+    .species = SPECIES_KLEFKI,
+    }
+};
+
+static const struct TrainerMon sParty_RocketGruntRefuge3[] = {
+    {
+    .lvl = 46,
+    .species = SPECIES_KOMMO_O,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_LIEPARD,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_SHIBIREFUGU,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_CURSOLA,
+    }
+};
+
+static const struct TrainerMon sParty_RocketGruntRefuge4[] = {
+    {
+    .lvl = 46,
+    .species = SPECIES_DRAPION,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_GIGALITH_FRIBIAN,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_BANETTE,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_CETITAN,
+    }
+};
+
+static const struct TrainerMon sParty_RocketGruntRefuge5[] = {
+    {
+    .lvl = 46,
+    .species = SPECIES_CHANDELURE,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_GARGANACL,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_SNEASLER,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_FLAPPLE,
+    }
+};
+
+static const struct TrainerMon sParty_RocketGruntRefuge6[] = {
+    {
+    .lvl = 46,
+    .species = SPECIES_GLIMMORA,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_CACTURNE,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_DUSTOX,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_FALINKS_EMERIBIAN,
+    }
+};
+
+static const struct TrainerMon sParty_RocketGruntRefuge7[] = {
+    {
+    .lvl = 46,
+    .species = SPECIES_GOLURK,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_DRAMPA,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_NOCTOWL_EMERIBIAN,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_GHOLDENGO,
+    }
+};
+
+static const struct TrainerMon sParty_RocketGruntRefuge8[] = {
+    {
+    .lvl = 46,
+    .species = SPECIES_AMOONGUSS,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_COGMENT,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_SWALOT,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_LOKIX,
+    }
+};
+
+static const struct TrainerMon sParty_RocketGruntRefuge9[] = {
+    {
+    .lvl = 46,
+    .species = SPECIES_VICTREEBEL,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_MIGHTYENA,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_MALAMAR,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_RUNERIGUS,
+    }
+};
+
+static const struct TrainerMon sParty_RocketGruntRefuge10[] = {
+    {
+    .lvl = 46,
+    .species = SPECIES_TATSUGIRI,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_DONDOZO,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_PANGORO,
+    },
+    {
+    .lvl = 46,
+    .species = SPECIES_PERSIAN,
+    }
+};
+
+static const struct TrainerMon sParty_GiovanniRefuge[] = {
+    {
+    .lvl = 57,
+    .species = SPECIES_SAMUROTT_HISUI,
+	.ability = ABILITY_SHARPNESS,
+    .heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_CEASELESS_EDGE, MOVE_AQUA_TAIL, MOVE_SWORDS_DANCE, MOVE_ENCORE}
+    },
+    {
+    .lvl = 57,
+    .species = SPECIES_MEGANIUM_EMERIBIAN,
+	.ability = ABILITY_DRAGONS_MAW,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_DRAGON_PULSE, MOVE_GRASSY_TERRAIN, MOVE_PETAL_DANCE, MOVE_ANCIENT_POWER}
+    },
+    {
+    .lvl = 57,
+    .species = SPECIES_HYDREIGON,
+	.ability = ABILITY_LEVITATE,
+    .heldItem = ITEM_CHOICE_SPECS,
+    .moves = {MOVE_HEAT_WAVE, MOVE_DARK_PULSE, MOVE_SNARL, MOVE_DRACO_METEOR}
+    },
+    {
+    .lvl = 58,
+    .species = SPECIES_NIDOKING,
+	.ability = ABILITY_POISON_POINT,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_HEADLONG_RUSH, MOVE_DIRE_CLAW, MOVE_MEGAHORN, MOVE_THRASH}
+    },
+    {
+    .lvl = 58,
+    .species = SPECIES_OVERQWIL,
+	.ability = ABILITY_INTIMIDATE,
+    .heldItem = ITEM_LOADED_DICE,
+    .teraType = TYPE_DRAGON,
+    .moves = {MOVE_GUNK_SHOT, MOVE_SCALE_SHOT, MOVE_CRUNCH, MOVE_SWORDS_DANCE}
+    },
+    {
+    .lvl = 59,
+    .species = SPECIES_NAGANADEL,
+	.ability = ABILITY_BEAST_BOOST,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_DRACO_METEOR, MOVE_SLUDGE_BOMB, MOVE_FIRE_BLAST, MOVE_TAILWIND}
+    }
+};

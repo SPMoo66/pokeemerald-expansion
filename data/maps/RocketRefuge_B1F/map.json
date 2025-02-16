@@ -2,7 +2,7 @@
   "id": "MAP_ROCKET_REFUGE_B1F",
   "name": "RocketRefuge_B1F",
   "layout": "LAYOUT_ROCKET_REFUGE_B1F",
-  "music": "MUS_DUMMY",
+  "music": "MUS_HG_TEAM_ROCKET_HQ",
   "region_map_section": "MAPSEC_ROCKET_REFUGE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

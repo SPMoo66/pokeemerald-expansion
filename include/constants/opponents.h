@@ -898,12 +898,23 @@
 #define TRAINER_BARON_3                     892
 #define TRAINER_BARON_4                     893
 #define TRAINER_BARON_5                     894
+#define TRAINER_ROCKET_GRUNT_REFUGE_1       895
+#define TRAINER_ROCKET_GRUNT_REFUGE_2       896
+#define TRAINER_ROCKET_GRUNT_REFUGE_3       897
+#define TRAINER_ROCKET_GRUNT_REFUGE_4       898
+#define TRAINER_ROCKET_GRUNT_REFUGE_5       899
+#define TRAINER_ROCKET_GRUNT_REFUGE_6       900
+#define TRAINER_ROCKET_GRUNT_REFUGE_7       901
+#define TRAINER_ROCKET_GRUNT_REFUGE_8       902
+#define TRAINER_ROCKET_GRUNT_REFUGE_9       903
+#define TRAINER_ROCKET_GRUNT_REFUGE_10      904
+#define TRAINER_GIOVANNI_REFUGE             905
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                      895
+#define TRAINERS_COUNT                      906
 #define MAX_TRAINERS_COUNT                  1280
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 

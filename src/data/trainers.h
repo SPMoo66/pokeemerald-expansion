@@ -10741,3 +10741,135 @@
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_ACE_POKEMON,
         .party = TRAINER_PARTY(sParty_Baron1),
     },
+
+    [TRAINER_ROCKET_GRUNT_REFUGE_1] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_RocketGruntRefuge1),
+    },
+
+    [TRAINER_ROCKET_GRUNT_REFUGE_2] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_RocketGruntRefuge2),
+    },
+
+    [TRAINER_ROCKET_GRUNT_REFUGE_3] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_RocketGruntRefuge3),
+    },
+
+    [TRAINER_ROCKET_GRUNT_REFUGE_4] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_RocketGruntRefuge4),
+    },
+
+    [TRAINER_ROCKET_GRUNT_REFUGE_5] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_RocketGruntRefuge5),
+    },
+
+    [TRAINER_ROCKET_GRUNT_REFUGE_6] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_RocketGruntRefuge6),
+    },
+
+    [TRAINER_ROCKET_GRUNT_REFUGE_7] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_RocketGruntRefuge7),
+    },
+
+    [TRAINER_ROCKET_GRUNT_REFUGE_8] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_RocketGruntRefuge8),
+    },
+
+    [TRAINER_ROCKET_GRUNT_REFUGE_9] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_RocketGruntRefuge9),
+    },
+
+    [TRAINER_ROCKET_GRUNT_REFUGE_10] =
+    {
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_RocketGruntRefuge10),
+    },
+
+    [TRAINER_GIOVANNI_REFUGE] =
+    {
+        .trainerClass = TRAINER_CLASS_BOSS,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .trainerPic = TRAINER_PIC_GIOVANNI,
+        .trainerName = _("Giovanni"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_GiovanniRefuge),
+    },

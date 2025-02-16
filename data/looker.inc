@@ -279,6 +279,26 @@ Route115_EventScript_Looker::
 	return
 
 
+RustboroCity_EventScript_Looker_2::
+# 149 "data/looker.pory"
+	lock
+# 150 "data/looker.pory"
+	playbgm MUS_PL_LOOKER, FALSE
+# 151 "data/looker.pory"
+	pokenavcall RustboroCity_Text_Looker_Call
+# 152 "data/looker.pory"
+	waitmessage
+# 153 "data/looker.pory"
+	closemessage
+# 154 "data/looker.pory"
+	setvar VAR_LOOKER_ROCKET, 8
+# 155 "data/looker.pory"
+	fadedefaultbgm
+# 156 "data/looker.pory"
+	release
+	return
+
+
 SlateportCity_EventScript_Looker_Text_0:
 # 56 "data/looker.pory"
 	.string "Ah!\n"
@@ -339,3 +359,25 @@ MatchCall_Text_RegisteredLooker::
 # 142 "data/looker.pory"
 	.string "Registered Looker\n"
 	.string "in the Pokénav.$"
+
+RustboroCity_Text_Looker_Call::
+# 159 "data/looker.pory"
+	.string "… … … … … Beep!\p"
+	.string "Looker: {PLAYER}!\p"
+	.string "You are safe, yes?\p"
+	.string "It seems that in my haste,\n"
+	.string "focusing on the safety of\l"
+	.string "civilians while escorting our\l"
+	.string "villainous boss to the police,\l"
+	.string "he gave me the slip!\p"
+	.string "You have not seen him, no?\p"
+	.string "… … … … …\n"
+	.string "No? That is unfortunate.\p"
+	.string "Continue on your journey then.\n"
+	.string "I will begin the manhunt for our\l"
+	.string "escapee.\p"
+	.string "Your job will be to stay safe, and\n"
+	.string "if you sight him, contact me\l"
+	.string "immediately.\p"
+	.string "Stay safe, {PLAYER}!\p"
+	.string "… … … … … Click!$"

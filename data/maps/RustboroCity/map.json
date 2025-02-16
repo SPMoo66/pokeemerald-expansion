@@ -623,6 +623,24 @@
       "var": "VAR_RUSTBORO_CITY_STATE",
       "var_value": "7",
       "script": "RustboroCity_EventScript_Looker"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 21,
+      "elevation": 3,
+      "var": "VAR_LOOKER_ROCKET",
+      "var_value": "7",
+      "script": "RustboroCity_EventScript_Looker_2"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 22,
+      "elevation": 3,
+      "var": "VAR_LOOKER_ROCKET",
+      "var_value": "7",
+      "script": "RustboroCity_EventScript_Looker_2"
     }
   ],
   "bg_events": [

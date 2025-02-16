@@ -143,3 +143,37 @@ text MatchCall_Text_RegisteredLooker {
 	"Registered Looker\n"
 	"in the Pokénav.$"
 }
+
+
+script RustboroCity_EventScript_Looker_2 {
+	lock
+	playbgm (MUS_PL_LOOKER, FALSE)
+	pokenavcall (RustboroCity_Text_Looker_Call)
+	waitmessage
+	closemessage
+	setvar (VAR_LOOKER_ROCKET, 8)
+	fadedefaultbgm
+	release
+}
+
+text RustboroCity_Text_Looker_Call {
+	"… … … … … Beep!\p"
+	"Looker: {PLAYER}!\p"
+	"You are safe, yes?\p"
+	"It seems that in my haste,\n"
+	"focusing on the safety of\l"
+	"civilians while escorting our\l"
+	"villainous boss to the police,\l"
+	"he gave me the slip!\p"
+	"You have not seen him, no?\p"
+	"… … … … …\n"
+	"No? That is unfortunate.\p"
+	"Continue on your journey then.\n"
+	"I will begin the manhunt for our\l"
+	"escapee.\p"
+	"Your job will be to stay safe, and\n"
+	"if you sight him, contact me\l"
+	"immediately.\p"
+	"Stay safe, {PLAYER}!\p"
+	"… … … … … Click!"
+}

@@ -564,6 +564,7 @@ void HandleInputChooseTarget(u32 battler)
                     i++;
                     break;
                 }
+                MoveSelectionDisplayMoveTypeDoubles(GetBattlerPosition(gMultiUsePlayerCursor), battler);
 
                 if (gAbsentBattlerFlags & (1u << gMultiUsePlayerCursor)
                  || !CanTargetBattler(battler, gMultiUsePlayerCursor, move))

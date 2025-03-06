@@ -432,6 +432,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_SUPEREFFECTIVE]                       = COMPOUND_STRING("It's super effective!"),
     [STRINGID_GOTAWAYSAFELY]                        = sText_GotAwaySafely,
     [STRINGID_WILDPKMNFLED]                         = COMPOUND_STRING("{PLAY_SE SE_FLEE}The wild {B_BUFF1} fled!"),
+    [STRINGID_NORUNNINGFROMTHISBATTLE ]             = COMPOUND_STRING("No! Can't run from this battle!\p"),
     [STRINGID_NORUNNINGFROMTRAINERS]                = COMPOUND_STRING("No! There's no running from a Trainer battle!\p"),
     [STRINGID_CANTESCAPE]                           = COMPOUND_STRING("You can't escape!\p"),
     [STRINGID_DONTLEAVEBIRCH]                       = COMPOUND_STRING("PROF. BIRCH: Don't leave me like this!\p"), //no decapitalize until it is everywhere

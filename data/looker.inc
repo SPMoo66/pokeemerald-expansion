@@ -299,6 +299,18 @@ RustboroCity_EventScript_Looker_2::
 	return
 
 
+FortreeCity_EventScript_Looker::
+# 182 "data/looker.pory"
+	lock
+# 183 "data/looker.pory"
+	speakername CommonText_Looker
+# 184 "data/looker.pory"
+	msgbox FortreeCity_EventScript_Looker_Text_0
+# 188 "data/looker.pory"
+	release
+	return
+
+
 SlateportCity_EventScript_Looker_Text_0:
 # 56 "data/looker.pory"
 	.string "Ah!\n"
@@ -340,6 +352,13 @@ SlateportCity_EventScript_Looker_Text_3:
 	.string "If you come across any such persons, be\n"
 	.string "sure to make me aware!\p"
 	.string "Farewell, then!$"
+
+FortreeCity_EventScript_Looker_Text_0:
+# 184 "data/looker.pory"
+	.string "Greetings, {PLAYER}.\p"
+	.string "I am still on the hunt for Team Rocket,\n"
+	.string "but I will inform you immediately should\l"
+	.string "I get a lead on them.$"
 
 Route115_Text_Looker_Call::
 # 128 "data/looker.pory"

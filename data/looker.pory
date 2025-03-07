@@ -177,3 +177,13 @@ text RustboroCity_Text_Looker_Call {
 	"Stay safe, {PLAYER}!\p"
 	"… … … … … Click!"
 }
+
+script FortreeCity_EventScript_Looker {
+	lock
+	speakername (CommonText_Looker)
+	msgbox (format ("Greetings, {PLAYER}.\p"
+					"I am still on the hunt for Team Rocket,\n"
+					"but I will inform you immediately should\l"
+					"I get a lead on them."))
+	release
+}

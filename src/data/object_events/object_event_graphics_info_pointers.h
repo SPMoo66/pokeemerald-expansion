@@ -267,6 +267,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giovanni;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Looker;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bianca;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ProfRowan;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Galactic_Grunt_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Galactic_Grunt_F;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -528,6 +530,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BIANCA] =                   &gObjectEventGraphicsInfo_Bianca,
     [OBJ_EVENT_GFX_PROF_ROWAN] =               &gObjectEventGraphicsInfo_ProfRowan,
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
+    [OBJ_EVENT_GFX_GALACTIC_GRUNT_M] =         &gObjectEventGraphicsInfo_Galactic_Grunt_M,
+    [OBJ_EVENT_GFX_GALACTIC_GRUNT_F] =         &gObjectEventGraphicsInfo_Galactic_Grunt_F,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
 };
 

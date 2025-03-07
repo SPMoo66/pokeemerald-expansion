@@ -441,6 +441,10 @@ const u16 gObjectEventPal_Bianca[] = INCBIN_U16("graphics/object_events/palettes
 const u32 gObjectEventPic_ProfRowan[] = INCBIN_U32("graphics/object_events/pics/people/rowan.4bpp");
 const u16 gObjectEventPal_ProfRowan[] = INCBIN_U16("graphics/object_events/palettes/rowan.gbapal");
 
+const u32 gObjectEventPic_Galactic_Grunt_M[] = INCBIN_U32("graphics/object_events/pics/people/galactic_grunt_m.4bpp");
+const u16 gObjectEventPal_Galactic_Grunt[] = INCBIN_U16("graphics/object_events/palettes/galactic_grunt.gbapal");
+const u32 gObjectEventPic_Galactic_Grunt_F[] = INCBIN_U32("graphics/object_events/pics/people/galactic_grunt_f.4bpp");
+
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 
 const u16 gObjectEventPal_Substitute[] = INCBIN_U16("graphics/pokemon/question_mark/overworld.gbapal");

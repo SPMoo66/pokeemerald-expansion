@@ -323,10 +323,195 @@ SootopolisCity_EventScript_Looker::
 # 196 "data/looker.pory"
 	closemessage
 # 197 "data/looker.pory"
-	setvar VAR_LOOKER_ROCKET, 8
+	setvar VAR_LOOKER_ROCKET, 9
 # 198 "data/looker.pory"
 	fadedefaultbgm
 # 199 "data/looker.pory"
+	release
+	return
+
+
+TrainerHill_Looker1::
+# 215 "data/looker.pory"
+	lock
+# 216 "data/looker.pory"
+	speakername CommonText_Looker
+# 217 "data/looker.pory"
+	msgbox TrainerHill_Looker1_Text_0
+# 219 "data/looker.pory"
+	closemessage
+# 220 "data/looker.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+# 221 "data/looker.pory"
+	waitmovement 0
+# 222 "data/looker.pory"
+	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkLeft
+# 223 "data/looker.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+# 224 "data/looker.pory"
+	waitmovement 0
+# 225 "data/looker.pory"
+	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkLeft6
+# 226 "data/looker.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft6
+# 227 "data/looker.pory"
+	waitmovement 0
+# 228 "data/looker.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft
+# 229 "data/looker.pory"
+	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkUp
+# 230 "data/looker.pory"
+	waitmovement 0
+# 231 "data/looker.pory"
+	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkLeft
+# 232 "data/looker.pory"
+	waitmovement 0
+# 233 "data/looker.pory"
+	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkInPlaceDown
+# 234 "data/looker.pory"
+	waitmovement 0
+# 235 "data/looker.pory"
+	speakername CommonText_Looker
+# 236 "data/looker.pory"
+	msgbox TrainerHill_Looker1_Text_1
+# 242 "data/looker.pory"
+	closemessage
+# 243 "data/looker.pory"
+	setvar VAR_LOOKER_ROCKET, 10
+# 244 "data/looker.pory"
+	release
+	return
+
+
+TrainerHill_SetLooker::
+# 248 "data/looker.pory"
+	compare VAR_LOOKER_ROCKET, 12
+	goto_if_le TrainerHill_SetLooker_1
+	return
+
+TrainerHill_SetLooker_1:
+# 249 "data/looker.pory"
+	addobject LOOKER_TRAINERHILL
+# 250 "data/looker.pory"
+	setobjectxyperm LOOKER_TRAINERHILL, 1, 13
+	return
+
+
+TrainerHill_LookerSwitch::
+# 256 "data/looker.pory"
+	compare VAR_LOOKER_ROCKET, 10
+	goto_if_eq TrainerHill_LookerSwitch_1
+	return
+
+TrainerHill_LookerSwitch_1:
+# 257 "data/looker.pory"
+	lock
+# 258 "data/looker.pory"
+	playse SE_SWITCH
+# 259 "data/looker.pory"
+	delay 20
+# 260 "data/looker.pory"
+	playse SE_UNLOCK
+# 261 "data/looker.pory"
+	call TrainerHill_SetRocketRefuge
+# 262 "data/looker.pory"
+	delay 30
+# 263 "data/looker.pory"
+	playse SE_PIN
+# 264 "data/looker.pory"
+	applymovement LOOKER_TRAINERHILL, Common_Movement_ExclamationMark
+# 265 "data/looker.pory"
+	waitmovement 0
+# 266 "data/looker.pory"
+	delay 50
+# 267 "data/looker.pory"
+	speakername CommonText_Looker
+# 268 "data/looker.pory"
+	msgbox TrainerHill_LookerSwitch_Text_0
+# 270 "data/looker.pory"
+	msgbox TrainerHill_Text_LookerGoIn, MSGBOX_DEFAULT
+# 271 "data/looker.pory"
+	setvar VAR_LOOKER_ROCKET, 11
+# 272 "data/looker.pory"
+	release
+	return
+
+
+TrainerHill_SetRocketRefuge::
+# 277 "data/looker.pory"
+	setmetatile 0, 14, 0x3D0, TRUE
+# 278 "data/looker.pory"
+	setmetatile 1, 14, 0x3D1, TRUE
+# 279 "data/looker.pory"
+	setmetatile 2, 14, 0x3D2, FALSE
+# 280 "data/looker.pory"
+	setmetatile 0, 15, 0x3D8, TRUE
+# 281 "data/looker.pory"
+	setmetatile 1, 15, 0x3D9, TRUE
+# 282 "data/looker.pory"
+	setmetatile 2, 15, 0x3DA, FALSE
+# 283 "data/looker.pory"
+	setmetatile 0, 16, 0x3E0, TRUE
+# 284 "data/looker.pory"
+	setmetatile 1, 16, 0x3E1, TRUE
+# 285 "data/looker.pory"
+	setmetatile 2, 16, 0x3E2, FALSE
+# 286 "data/looker.pory"
+	special DrawWholeMapView
+	return
+
+
+TrainerHill_LookerTalk::
+# 291 "data/looker.pory"
+	compare VAR_LOOKER_ROCKET, 10
+	goto_if_eq TrainerHill_LookerTalk_2
+TrainerHill_LookerTalk_1:
+# 294 "data/looker.pory"
+	compare VAR_LOOKER_ROCKET, 11
+	goto_if_eq TrainerHill_LookerTalk_4
+	return
+
+TrainerHill_LookerTalk_2:
+# 292 "data/looker.pory"
+	goto TrainerHill_Looker2
+	goto TrainerHill_LookerTalk_1
+
+TrainerHill_LookerTalk_4:
+# 295 "data/looker.pory"
+	goto TrainerHill_Looker3
+	return
+
+
+TrainerHill_Looker2::
+# 301 "data/looker.pory"
+	lock
+# 302 "data/looker.pory"
+	faceplayer
+# 303 "data/looker.pory"
+	speakername CommonText_Looker
+# 304 "data/looker.pory"
+	msgbox TrainerHill_Looker2_Text_0
+# 306 "data/looker.pory"
+	closemessage
+# 307 "data/looker.pory"
+	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkInPlaceDown
+# 308 "data/looker.pory"
+	waitmovement 0
+# 309 "data/looker.pory"
+	release
+	return
+
+
+TrainerHill_Looker3::
+# 313 "data/looker.pory"
+	lock
+# 314 "data/looker.pory"
+	faceplayer
+# 315 "data/looker.pory"
+	speakername CommonText_Looker
+# 316 "data/looker.pory"
+	msgbox TrainerHill_Text_LookerGoIn, MSGBOX_DEFAULT
+# 317 "data/looker.pory"
 	release
 	return
 
@@ -380,6 +565,30 @@ FortreeCity_EventScript_Looker_Text_0:
 	.string "but I will inform you immediately should\l"
 	.string "I get a lead on them.$"
 
+TrainerHill_Looker1_Text_0:
+# 217 "data/looker.pory"
+	.string "It is good that you are here.\p"
+	.string "Follow me. We cannot squander any time.$"
+
+TrainerHill_Looker1_Text_1:
+# 236 "data/looker.pory"
+	.string "Feast your eyes on this!\p"
+	.string "… … …\n"
+	.string "No, this is not just a bollard, but one\l"
+	.string "with a secret switch hidden on it!\p"
+	.string "Go ahead, press the switch and see for\n"
+	.string "yourself!$"
+
+TrainerHill_LookerSwitch_Text_0:
+# 268 "data/looker.pory"
+	.string "Yes!\n"
+	.string "Just as I suspected!$"
+
+TrainerHill_Looker2_Text_0:
+# 304 "data/looker.pory"
+	.string "What are you waiting for?\p"
+	.string "Go ahead and press the switch.$"
+
 Route115_Text_Looker_Call::
 # 128 "data/looker.pory"
 	.string "… … … … … Beep!\p"
@@ -431,3 +640,8 @@ SootopolisCity_Text_Looker_Call::
 	.string "There is the location at which we\n"
 	.string "will make our stand against Team\l"
 	.string "Rocket!$"
+
+TrainerHill_Text_LookerGoIn::
+# 320 "data/looker.pory"
+	.string "Go on inside.\n"
+	.string "I will be right behind you.$"

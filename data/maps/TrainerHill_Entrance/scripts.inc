@@ -2,6 +2,7 @@
 .set LOCALID_NURSE, 2
 .set LOCALID_GIRL, 4
 .set LOCALID_MAN, 5
+.set LOOKER_TRAINERHILL, 6
 
 TrainerHill_Entrance_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, TrainerHill_Entrance_OnResume
@@ -14,6 +15,7 @@ TrainerHill_Entrance_MapScripts::
 TrainerHill_Entrance_OnTransition:
 	setflag FLAG_LANDMARK_TRAINER_HILL
 	getplayerxy VAR_TEMP_D, VAR_RESULT
+	call_if_ge VAR_LOOKER_ROCKET, 10, TrainerHill_SetLooker
 	end
 
 TrainerHill_Entrance_OnResume:
@@ -43,6 +45,7 @@ TrainerHill_Entrance_OnReturn:
 
 TrainerHill_Entrance_OnLoad:
 	call_if_eq VAR_TEMP_D, 17, TrainerHill_Entrance_EventScript_OpenCounterDoor
+	call_if_ge VAR_LOOKER_ROCKET, 11, TrainerHill_SetRocketRefuge
 	end
 
 TrainerHill_Entrance_EventScript_OpenCounterDoor::
@@ -54,6 +57,7 @@ TrainerHill_Entrance_OnFrame:
 	map_script_2 VAR_TEMP_D, 17, TrainerHill_Entrance_EventScript_ExitElevator
 	map_script_2 VAR_TEMP_5, 1, TrainerHill_Entrance_EventScript_EntryTrigger
 	map_script_2 VAR_TEMP_1, 1, TrainerHill_EventScript_WarpToEntranceCounter
+	map_script_2 VAR_LOOKER_ROCKET, 9, TrainerHill_Looker1
 	.2byte 0
 
 TrainerHill_Entrance_EventScript_ExitElevator::

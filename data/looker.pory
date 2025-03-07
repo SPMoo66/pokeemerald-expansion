@@ -194,7 +194,7 @@ script SootopolisCity_EventScript_Looker {
 	pokenavcall (SootopolisCity_Text_Looker_Call)
 	waitmessage
 	closemessage
-	setvar (VAR_LOOKER_ROCKET, 8)
+	setvar (VAR_LOOKER_ROCKET, 9)
 	fadedefaultbgm
 	release
 }
@@ -208,4 +208,116 @@ text SootopolisCity_Text_Looker_Call {
 	"There is the location at which we\n"
 	"will make our stand against Team\l"
 	"Rocket!"
+}
+
+//map script
+script TrainerHill_Looker1 {
+	lock
+	speakername (CommonText_Looker)
+	msgbox (format ("It is good that you are here.\p"
+					"Follow me. We cannot squander any time."))
+	closemessage
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+	waitmovement (0)
+	applymovement (LOOKER_TRAINERHILL, Common_Movement_WalkLeft)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+	waitmovement (0)
+	applymovement (LOOKER_TRAINERHILL, Common_Movement_WalkLeft6)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft6)
+	waitmovement (0)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft)
+	applymovement (LOOKER_TRAINERHILL, Common_Movement_WalkUp)
+	waitmovement (0)
+	applymovement (LOOKER_TRAINERHILL, Common_Movement_WalkLeft)
+	waitmovement (0)
+	applymovement (LOOKER_TRAINERHILL, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	speakername (CommonText_Looker)
+	msgbox (format ("Feast your eyes on this!\p"
+					"… … …\n"
+					"No, this is not just a bollard, but one\l"
+					"with a secret switch hidden on it!\p"
+					"Go ahead, press the switch and see for\n"
+					"yourself!"))
+	closemessage
+	setvar (VAR_LOOKER_ROCKET, 10)
+	release
+}
+
+script TrainerHill_SetLooker {
+	if (var(VAR_LOOKER_ROCKET) <= 12) { 
+		addobject (LOOKER_TRAINERHILL)
+		setobjectxyperm (LOOKER_TRAINERHILL, 1, 13)
+	}
+}
+
+//pressing switch
+script TrainerHill_LookerSwitch {
+	if (var(VAR_LOOKER_ROCKET) == 10) {
+		lock
+		playse (SE_SWITCH)
+		delay (20)
+		playse (SE_UNLOCK)
+		call (TrainerHill_SetRocketRefuge)
+		delay (30)
+		playse (SE_PIN)
+		applymovement (LOOKER_TRAINERHILL, Common_Movement_ExclamationMark)
+		waitmovement (0)
+		delay (50)
+		speakername (CommonText_Looker)
+		msgbox (format ("Yes!\n"
+						"Just as I suspected!"))
+		msgbox (TrainerHill_Text_LookerGoIn, MSGBOX_DEFAULT)
+		setvar (VAR_LOOKER_ROCKET, 11)
+		release
+	}
+}
+
+script TrainerHill_SetRocketRefuge {
+	setmetatile (0, 14, 0x3D0, TRUE)
+	setmetatile (1, 14, 0x3D1, TRUE)
+	setmetatile (2, 14, 0x3D2, FALSE)
+	setmetatile (0, 15, 0x3D8, TRUE)
+	setmetatile (1, 15, 0x3D9, TRUE)
+	setmetatile (2, 15, 0x3DA, FALSE)
+	setmetatile (0, 16, 0x3E0, TRUE)
+	setmetatile (1, 16, 0x3E1, TRUE)
+	setmetatile (2, 16, 0x3E2, FALSE)
+	special (DrawWholeMapView)
+}
+
+//chooses which script when talking to Looker
+script TrainerHill_LookerTalk {
+	if (var(VAR_LOOKER_ROCKET) == 10) {
+		goto (TrainerHill_Looker2)
+	}
+	if (var(VAR_LOOKER_ROCKET) == 11) {
+		goto (TrainerHill_Looker3)
+	}
+}
+
+//speaking to looker before pressing button
+script TrainerHill_Looker2 {
+	lock
+	faceplayer
+	speakername (CommonText_Looker)
+	msgbox (format ("What are you waiting for?\p"
+					"Go ahead and press the switch."))
+	closemessage
+	applymovement (LOOKER_TRAINERHILL, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	release
+}
+//speaking to looker before entering refuge
+script TrainerHill_Looker3 {
+	lock
+	faceplayer
+	speakername (CommonText_Looker)
+	msgbox (TrainerHill_Text_LookerGoIn, MSGBOX_DEFAULT)
+	release
+}
+
+text TrainerHill_Text_LookerGoIn {
+	"Go on inside.\n"
+	"I will be right behind you."
 }

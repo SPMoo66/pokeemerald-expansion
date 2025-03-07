@@ -146,16 +146,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	setmetatile 0, 14, 0x3D0, TRUE
-	setmetatile 1, 14, 0x3D1, TRUE
-	setmetatile 2, 14, 0x3D2, FALSE
-	setmetatile 0, 15, 0x3D8, TRUE
-	setmetatile 1, 15, 0x3D9, TRUE
-	setmetatile 2, 15, 0x3DA, FALSE
-	setmetatile 0, 16, 0x3E0, TRUE
-	setmetatile 1, 16, 0x3E1, TRUE
-	setmetatile 2, 16, 0x3E2, FALSE
-	special DrawWholeMapView
+	call TrainerHill_SetRocketRefuge
 	release
 	end
 
@@ -183,8 +174,8 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	warp MAP_PETALBURG_CITY, 5
-	setvar VAR_EMERALBODY_RIVAL_STATE, 1
+	setvar VAR_LOOKER_ROCKET, 9
+	warp MAP_ROUTE111, 4
 	release
 	end
 

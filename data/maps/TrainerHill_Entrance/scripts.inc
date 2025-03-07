@@ -15,6 +15,8 @@ TrainerHill_Entrance_MapScripts::
 TrainerHill_Entrance_OnTransition:
 	setflag FLAG_LANDMARK_TRAINER_HILL
 	getplayerxy VAR_TEMP_D, VAR_RESULT
+	setflag FLAG_TEMP_1
+	call_if_ge VAR_LOOKER_ROCKET, 9, TrainerHill_SetLooker
 	call_if_ge VAR_LOOKER_ROCKET, 10, TrainerHill_SetLooker
 	end
 

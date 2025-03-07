@@ -245,9 +245,13 @@ script TrainerHill_Looker1 {
 }
 
 script TrainerHill_SetLooker {
-	if (var(VAR_LOOKER_ROCKET) <= 12) { 
+	if (var(VAR_LOOKER_ROCKET) <= 11 && (var(VAR_LOOKER_ROCKET) >= 10)) {
+		clearflag (FLAG_TEMP_1)
 		addobject (LOOKER_TRAINERHILL)
 		setobjectxyperm (LOOKER_TRAINERHILL, 1, 13)
+	}
+	elif (var(VAR_LOOKER_ROCKET) == 9) {
+		clearflag (FLAG_TEMP_1)
 	}
 }
 

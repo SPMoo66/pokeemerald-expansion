@@ -385,133 +385,150 @@ TrainerHill_Looker1::
 
 TrainerHill_SetLooker::
 # 248 "data/looker.pory"
-	compare VAR_LOOKER_ROCKET, 12
-	goto_if_le TrainerHill_SetLooker_1
+	compare VAR_LOOKER_ROCKET, 11
+	goto_if_le TrainerHill_SetLooker_4
+TrainerHill_SetLooker_3:
+# 253 "data/looker.pory"
+	compare VAR_LOOKER_ROCKET, 9
+	goto_if_eq TrainerHill_SetLooker_2
 	return
 
 TrainerHill_SetLooker_1:
 # 249 "data/looker.pory"
-	addobject LOOKER_TRAINERHILL
+	clearflag FLAG_TEMP_1
 # 250 "data/looker.pory"
+	addobject LOOKER_TRAINERHILL
+# 251 "data/looker.pory"
 	setobjectxyperm LOOKER_TRAINERHILL, 1, 13
 	return
 
+TrainerHill_SetLooker_2:
+# 254 "data/looker.pory"
+	clearflag FLAG_TEMP_1
+	return
+
+TrainerHill_SetLooker_4:
+# 248 "data/looker.pory"
+	compare VAR_LOOKER_ROCKET, 10
+	goto_if_ge TrainerHill_SetLooker_1
+	goto TrainerHill_SetLooker_3
+
 
 TrainerHill_LookerSwitch::
-# 256 "data/looker.pory"
+# 260 "data/looker.pory"
 	compare VAR_LOOKER_ROCKET, 10
 	goto_if_eq TrainerHill_LookerSwitch_1
 	return
 
 TrainerHill_LookerSwitch_1:
-# 257 "data/looker.pory"
-	lock
-# 258 "data/looker.pory"
-	playse SE_SWITCH
-# 259 "data/looker.pory"
-	delay 20
-# 260 "data/looker.pory"
-	playse SE_UNLOCK
 # 261 "data/looker.pory"
-	call TrainerHill_SetRocketRefuge
+	lock
 # 262 "data/looker.pory"
-	delay 30
+	playse SE_SWITCH
 # 263 "data/looker.pory"
-	playse SE_PIN
+	delay 20
 # 264 "data/looker.pory"
-	applymovement LOOKER_TRAINERHILL, Common_Movement_ExclamationMark
+	playse SE_UNLOCK
 # 265 "data/looker.pory"
-	waitmovement 0
+	call TrainerHill_SetRocketRefuge
 # 266 "data/looker.pory"
-	delay 50
+	delay 30
 # 267 "data/looker.pory"
-	speakername CommonText_Looker
+	playse SE_PIN
 # 268 "data/looker.pory"
-	msgbox TrainerHill_LookerSwitch_Text_0
+	applymovement LOOKER_TRAINERHILL, Common_Movement_ExclamationMark
+# 269 "data/looker.pory"
+	waitmovement 0
 # 270 "data/looker.pory"
-	msgbox TrainerHill_Text_LookerGoIn, MSGBOX_DEFAULT
+	delay 50
 # 271 "data/looker.pory"
-	setvar VAR_LOOKER_ROCKET, 11
+	speakername CommonText_Looker
 # 272 "data/looker.pory"
+	msgbox TrainerHill_LookerSwitch_Text_0
+# 274 "data/looker.pory"
+	msgbox TrainerHill_Text_LookerGoIn, MSGBOX_DEFAULT
+# 275 "data/looker.pory"
+	setvar VAR_LOOKER_ROCKET, 11
+# 276 "data/looker.pory"
 	release
 	return
 
 
 TrainerHill_SetRocketRefuge::
-# 277 "data/looker.pory"
-	setmetatile 0, 14, 0x3D0, TRUE
-# 278 "data/looker.pory"
-	setmetatile 1, 14, 0x3D1, TRUE
-# 279 "data/looker.pory"
-	setmetatile 2, 14, 0x3D2, FALSE
-# 280 "data/looker.pory"
-	setmetatile 0, 15, 0x3D8, TRUE
 # 281 "data/looker.pory"
-	setmetatile 1, 15, 0x3D9, TRUE
+	setmetatile 0, 14, 0x3D0, TRUE
 # 282 "data/looker.pory"
-	setmetatile 2, 15, 0x3DA, FALSE
+	setmetatile 1, 14, 0x3D1, TRUE
 # 283 "data/looker.pory"
-	setmetatile 0, 16, 0x3E0, TRUE
+	setmetatile 2, 14, 0x3D2, FALSE
 # 284 "data/looker.pory"
-	setmetatile 1, 16, 0x3E1, TRUE
+	setmetatile 0, 15, 0x3D8, TRUE
 # 285 "data/looker.pory"
-	setmetatile 2, 16, 0x3E2, FALSE
+	setmetatile 1, 15, 0x3D9, TRUE
 # 286 "data/looker.pory"
+	setmetatile 2, 15, 0x3DA, FALSE
+# 287 "data/looker.pory"
+	setmetatile 0, 16, 0x3E0, TRUE
+# 288 "data/looker.pory"
+	setmetatile 1, 16, 0x3E1, TRUE
+# 289 "data/looker.pory"
+	setmetatile 2, 16, 0x3E2, FALSE
+# 290 "data/looker.pory"
 	special DrawWholeMapView
 	return
 
 
 TrainerHill_LookerTalk::
-# 291 "data/looker.pory"
+# 295 "data/looker.pory"
 	compare VAR_LOOKER_ROCKET, 10
 	goto_if_eq TrainerHill_LookerTalk_2
 TrainerHill_LookerTalk_1:
-# 294 "data/looker.pory"
+# 298 "data/looker.pory"
 	compare VAR_LOOKER_ROCKET, 11
 	goto_if_eq TrainerHill_LookerTalk_4
 	return
 
 TrainerHill_LookerTalk_2:
-# 292 "data/looker.pory"
+# 296 "data/looker.pory"
 	goto TrainerHill_Looker2
 	goto TrainerHill_LookerTalk_1
 
 TrainerHill_LookerTalk_4:
-# 295 "data/looker.pory"
+# 299 "data/looker.pory"
 	goto TrainerHill_Looker3
 	return
 
 
 TrainerHill_Looker2::
-# 301 "data/looker.pory"
+# 305 "data/looker.pory"
 	lock
-# 302 "data/looker.pory"
-	faceplayer
-# 303 "data/looker.pory"
-	speakername CommonText_Looker
-# 304 "data/looker.pory"
-	msgbox TrainerHill_Looker2_Text_0
 # 306 "data/looker.pory"
-	closemessage
+	faceplayer
 # 307 "data/looker.pory"
-	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkInPlaceDown
+	speakername CommonText_Looker
 # 308 "data/looker.pory"
+	msgbox TrainerHill_Looker2_Text_0
+# 310 "data/looker.pory"
+	closemessage
+# 311 "data/looker.pory"
+	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkInPlaceDown
+# 312 "data/looker.pory"
 	waitmovement 0
-# 309 "data/looker.pory"
+# 313 "data/looker.pory"
 	release
 	return
 
 
 TrainerHill_Looker3::
-# 313 "data/looker.pory"
-	lock
-# 314 "data/looker.pory"
-	faceplayer
-# 315 "data/looker.pory"
-	speakername CommonText_Looker
-# 316 "data/looker.pory"
-	msgbox TrainerHill_Text_LookerGoIn, MSGBOX_DEFAULT
 # 317 "data/looker.pory"
+	lock
+# 318 "data/looker.pory"
+	faceplayer
+# 319 "data/looker.pory"
+	speakername CommonText_Looker
+# 320 "data/looker.pory"
+	msgbox TrainerHill_Text_LookerGoIn, MSGBOX_DEFAULT
+# 321 "data/looker.pory"
 	release
 	return
 
@@ -580,12 +597,12 @@ TrainerHill_Looker1_Text_1:
 	.string "yourself!$"
 
 TrainerHill_LookerSwitch_Text_0:
-# 268 "data/looker.pory"
+# 272 "data/looker.pory"
 	.string "Yes!\n"
 	.string "Just as I suspected!$"
 
 TrainerHill_Looker2_Text_0:
-# 304 "data/looker.pory"
+# 308 "data/looker.pory"
 	.string "What are you waiting for?\p"
 	.string "Go ahead and press the switch.$"
 
@@ -642,6 +659,6 @@ SootopolisCity_Text_Looker_Call::
 	.string "Rocket!$"
 
 TrainerHill_Text_LookerGoIn::
-# 320 "data/looker.pory"
+# 324 "data/looker.pory"
 	.string "Go on inside.\n"
 	.string "I will be right behind you.$"

@@ -48,3 +48,7 @@ src/data/map_group_count.h
 agbcc/
 /*.zip
 tools/trainerproc/trainerproc
+*.Identifier
+*.smol
+*.fastSmol
+*.smolTM

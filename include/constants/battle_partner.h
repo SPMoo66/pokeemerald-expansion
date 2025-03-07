@@ -8,5 +8,6 @@
 #define PARTNER_BRENDAN_METEOR_FALLS  3
 #define PARTNER_RAYQUAZA              4
 #define PARTNER_STEVEN_GRANITE_CAVE   5
+#define PARTNER_COUNT                 6
 
 #endif  // GUARD_CONSTANTS_BATTLE_PARTNERS_H

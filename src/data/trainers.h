@@ -10873,3 +10873,4 @@
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GiovanniRefuge),
     },
+

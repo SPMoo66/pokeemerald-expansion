@@ -42,6 +42,7 @@
 #include "string_util.h"
 #include "strings.h"
 #include "task.h"
+#include "test_runner.h"
 #include "text.h"
 #include "trainer_hill.h"
 #include "util.h"
@@ -58,6 +59,7 @@
 #include "constants/items.h"
 #include "constants/layouts.h"
 #include "constants/moves.h"
+#include "constants/regions.h"
 #include "constants/songs.h"
 #include "constants/species.h"
 #include "constants/trainers.h"
@@ -79,7 +81,6 @@ static void EncryptBoxMon(struct BoxPokemon *boxMon);
 static void DecryptBoxMon(struct BoxPokemon *boxMon);
 static void Task_PlayMapChosenOrBattleBGM(u8 taskId);
 static bool8 ShouldSkipFriendshipChange(void);
-static void RemoveIVIndexFromList(u8 *ivs, u8 selectedIv);
 void TrySpecialOverworldEvo();
 
 EWRAM_DATA static u8 sLearningMoveTableID = 0;
@@ -3718,7 +3719,7 @@ void CopyPartyMonToBattleData(u32 battlerId, u32 partyIndex)
     PokemonToBattleMon(&party[partyIndex], &gBattleMons[battlerId]);
     gBattleStruct->hpOnSwitchout[side] = gBattleMons[battlerId].hp;
     UpdateSentPokesToOpponentValue(battlerId);
-    ClearTemporarySpeciesSpriteData(battlerId, FALSE);
+    ClearTemporarySpeciesSpriteData(battlerId, FALSE, FALSE);
 }
 
 bool8 ExecuteTableBasedItemEffect(struct Pokemon *mon, u16 item, u8 partyIndex, u8 moveIndex)
@@ -4425,7 +4426,7 @@ u8 GetNatureFromPersonality(u32 personality)
     return personality % NUM_NATURES;
 }
 
-static u32 GetGMaxTargetSpecies(u32 species)
+u32 GetGMaxTargetSpecies(u32 species)
 {
     const struct FormChange *formChanges = GetSpeciesFormChanges(species);
     u32 i;
@@ -4434,7 +4435,7 @@ static u32 GetGMaxTargetSpecies(u32 species)
         if (formChanges[i].method == FORM_CHANGE_BATTLE_GIGANTAMAX)
             return formChanges[i].targetSpecies;
     }
-    return SPECIES_NONE;
+    return species;
 }
 
 u16 GetEvolutionTargetSpecies(struct Pokemon *mon, enum EvolutionMode mode, u16 evolutionItem, struct Pokemon *tradePartner)
@@ -4876,8 +4877,8 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, enum EvolutionMode mode, u16 
     // Gigantamax Factor. We assume that is because their evolutions
     // do not have a Gigantamax Form.
     if (GetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR, NULL)
-     && GetGMaxTargetSpecies(species) != SPECIES_NONE
-     && GetGMaxTargetSpecies(targetSpecies) == SPECIES_NONE)
+     && GetGMaxTargetSpecies(species) != species
+     && GetGMaxTargetSpecies(targetSpecies) == targetSpecies)
     {
         return SPECIES_NONE;
     }
@@ -5818,7 +5819,9 @@ u16 GetBattleBGM(void)
         }
     }
     else if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK))
+    {
         return MUS_VS_TRAINER;
+    }
     else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
         u8 trainerClass;
@@ -5942,189 +5945,189 @@ u16 GetBattleBGM(void)
     {
         switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
         {
-        case SPECIES_ARTICUNO:
-        case SPECIES_ZAPDOS:
-        case SPECIES_MOLTRES:
-        case SPECIES_ARTICUNO_GALAR:
-        case SPECIES_ZAPDOS_GALAR:
-        case SPECIES_MOLTRES_GALAR:
-            return MUS_RG_VS_LEGEND;
-        case SPECIES_MEWTWO:
-        case SPECIES_MEWTWO_MEGA_X:
-        case SPECIES_MEWTWO_MEGA_Y:
-            return MUS_RG_VS_MEWTWO;
-        case SPECIES_MEW:
-            return MUS_VS_MEW;
-        case SPECIES_RAIKOU:
-            return MUS_HG_VS_RAIKOU;
-        case SPECIES_ENTEI:
-            return MUS_HG_VS_ENTEI;
-        case SPECIES_SUICUNE:
-            return MUS_HG_VS_SUICUNE;
-        case SPECIES_LUGIA:
-        case SPECIES_ZYGARDE:
-        case SPECIES_VOLCANION:
-            return MUS_HG_VS_LUGIA;
-        case SPECIES_HO_OH:
-        case SPECIES_MELOETTA:
-        case SPECIES_ZARUDE:
-        case SPECIES_TING_LU:
-        case SPECIES_CHIEN_PAO:
-        case SPECIES_WO_CHIEN:
-        case SPECIES_CHI_YU:
-            return MUS_HG_VS_HO_OH;
-        case SPECIES_CELEBI:
-            return MUS_HG_VS_WILD;
-        case SPECIES_REGIROCK:
-        case SPECIES_REGICE:
-        case SPECIES_REGISTEEL:
-        case SPECIES_REGIELEKI:
-        case SPECIES_REGIDRAGO:
-            return MUS_VS_REGI;
-        case SPECIES_REGIGIGAS:
-            return MUS_PL_VS_REGI;
-        case SPECIES_LATIAS:
-        case SPECIES_LATIOS:
-        case SPECIES_LATIAS_MEGA:
-        case SPECIES_LATIOS_MEGA:
-            return MUS_DP_VS_LEGEND;
-        case SPECIES_GROUDON:
-        case SPECIES_KYOGRE:
-        case SPECIES_KYOGRE_PRIMAL:
-        case SPECIES_GROUDON_PRIMAL:
-            return MUS_VS_KYOGRE_GROUDON;
-        case SPECIES_RAYQUAZA:
-        case SPECIES_RAYQUAZA_MEGA:
-            return MUS_VS_RAYQUAZA;
-        case SPECIES_DEOXYS:
-        case SPECIES_DEOXYS_ATTACK:
-        case SPECIES_DEOXYS_DEFENSE:
-        case SPECIES_DEOXYS_SPEED:
-        case SPECIES_NIHILEGO:
-        case SPECIES_BUZZWOLE:
-        case SPECIES_PHEROMOSA:
-        case SPECIES_XURKITREE:
-        case SPECIES_CELESTEELA:
-        case SPECIES_KARTANA:
-        case SPECIES_GUZZLORD:
-        case SPECIES_STAKATAKA:
-        case SPECIES_BLACEPHALON:
-            return MUS_RG_VS_DEOXYS;
-        case SPECIES_UXIE:
-        case SPECIES_MESPRIT:
-        case SPECIES_AZELF:
-        case SPECIES_TORNADUS:
-        case SPECIES_THUNDURUS:
-        case SPECIES_LANDORUS:
-        case SPECIES_ENAMORUS:
-        case SPECIES_TAPU_KOKO:
-        case SPECIES_TAPU_LELE:
-        case SPECIES_TAPU_BULU:
-        case SPECIES_TAPU_FINI:
-            return MUS_DP_VS_UXIE_MESPRIT_AZELF;
-        case SPECIES_DIALGA:
-        case SPECIES_PALKIA:
-        case SPECIES_TERAPAGOS:
-            return MUS_DP_VS_DIALGA_PALKIA;
-        case SPECIES_JIRACHI:
-        case SPECIES_ROTOM:
-        case SPECIES_ROTOM_HEAT:
-        case SPECIES_ROTOM_WASH:
-        case SPECIES_ROTOM_FROST:
-        case SPECIES_ROTOM_FAN:
-        case SPECIES_ROTOM_MOW:
-        case SPECIES_HEATRAN:
-        case SPECIES_MANAPHY:
-        case SPECIES_CRESSELIA:
-        case SPECIES_XERNEAS:
-        case SPECIES_YVELTAL:
-        case SPECIES_MARSHADOW:
-        case SPECIES_ZACIAN:
-        case SPECIES_ZAMAZENTA:
-            return MUS_DP_VS_LEGEND;
-        case SPECIES_GIRATINA:
-        case SPECIES_GIRATINA_ORIGIN:
-        case SPECIES_DARKRAI:
-        case SPECIES_HOOPA:
-        case SPECIES_HOOPA_UNBOUND:
-        case SPECIES_NECROZMA:
-            return MUS_PL_VS_GIRATINA;
-        case SPECIES_PHIONE:
-        case SPECIES_SHAYMIN:
-        case SPECIES_SHAYMIN_SKY:
-        case SPECIES_OGERPON:
-            return MUS_DP_VS_WILD;
-        case SPECIES_ARCEUS:
-        case SPECIES_ARCEUS_FIGHTING:
-        case SPECIES_ARCEUS_FLYING:
-        case SPECIES_ARCEUS_POISON:
-        case SPECIES_ARCEUS_GROUND:
-        case SPECIES_ARCEUS_ROCK:
-        case SPECIES_ARCEUS_BUG:
-        case SPECIES_ARCEUS_GHOST:
-        case SPECIES_ARCEUS_STEEL:
-        case SPECIES_ARCEUS_FIRE:
-        case SPECIES_ARCEUS_WATER:
-        case SPECIES_ARCEUS_GRASS:
-        case SPECIES_ARCEUS_ELECTRIC:
-        case SPECIES_ARCEUS_PSYCHIC:
-        case SPECIES_ARCEUS_ICE:
-        case SPECIES_ARCEUS_DRAGON:
-        case SPECIES_ARCEUS_DARK:
-        case SPECIES_ARCEUS_FAIRY:
-        case SPECIES_ETERNATUS:
-            return MUS_DP_VS_ARCEUS;
-        case SPECIES_VICTINI:
-        case SPECIES_GENESECT:
-        case SPECIES_MAGEARNA:
-        case SPECIES_ZERAORA:
-            return MUS_PL_VS_FRONTIER_BRAIN;
-        case SPECIES_COBALION:
-        case SPECIES_TERRAKION:
-        case SPECIES_VIRIZION:
-        case SPECIES_KELDEO:
-        case SPECIES_IRON_LEAVES:
-        case SPECIES_IRON_BOULDER:
-        case SPECIES_IRON_CROWN:
-            return MUS_HG_VS_GYM_LEADER_KANTO;
-        case SPECIES_RESHIRAM:
-        case SPECIES_ZEKROM:
-        case SPECIES_KYUREM:
-        case SPECIES_SOLGALEO:
-        case SPECIES_LUNALA:
-            return MUS_DP_VS_GALACTIC_BOSS;
-        case SPECIES_DIANCIE:
-        case SPECIES_MELMETAL:
-        case SPECIES_GLASTRIER:
-        case SPECIES_SPECTRIER:
-        case SPECIES_CALYREX:
-            return MUS_HG_VS_TRAINER;
-        case SPECIES_KORAIDON:
-        case SPECIES_MIRAIDON:
-            return MUS_HG_VS_KYOGRE_GROUDON;
-        case SPECIES_WALKING_WAKE:
-        case SPECIES_GOUGING_FIRE:
-        case SPECIES_RAGING_BOLT:
-            return MUS_C_VS_LEGEND_BEAST;
-        case SPECIES_OKIDOGI:
-        case SPECIES_MUNKIDORI:
-        case SPECIES_FEZANDIPITI:
-            return MUS_HG_VS_GYM_LEADER;
-        case SPECIES_PECHARUNT:
-            return MUS_DP_VS_GALACTIC_COMMANDER;
-        default:
-            u32 musicRegion = gSaveBlock2Ptr->optionsMusicRegion; // 0 - 3 = Kanto - Sinnoh
-            switch (musicRegion)
-            {
-            case 0:
-                return MUS_RG_VS_WILD;
-            case 1:
+            case SPECIES_ARTICUNO:
+            case SPECIES_ZAPDOS:
+            case SPECIES_MOLTRES:
+            case SPECIES_ARTICUNO_GALAR:
+            case SPECIES_ZAPDOS_GALAR:
+            case SPECIES_MOLTRES_GALAR:
+                return MUS_RG_VS_LEGEND;
+            case SPECIES_MEWTWO:
+            case SPECIES_MEWTWO_MEGA_X:
+            case SPECIES_MEWTWO_MEGA_Y:
+                return MUS_RG_VS_MEWTWO;
+            case SPECIES_MEW:
+                return MUS_VS_MEW;
+            case SPECIES_RAIKOU:
+                return MUS_HG_VS_RAIKOU;
+            case SPECIES_ENTEI:
+                return MUS_HG_VS_ENTEI;
+            case SPECIES_SUICUNE:
+                return MUS_HG_VS_SUICUNE;
+            case SPECIES_LUGIA:
+            case SPECIES_ZYGARDE:
+            case SPECIES_VOLCANION:
+                return MUS_HG_VS_LUGIA;
+            case SPECIES_HO_OH:
+            case SPECIES_MELOETTA:
+            case SPECIES_ZARUDE:
+            case SPECIES_TING_LU:
+            case SPECIES_CHIEN_PAO:
+            case SPECIES_WO_CHIEN:
+            case SPECIES_CHI_YU:
+                return MUS_HG_VS_HO_OH;
+            case SPECIES_CELEBI:
                 return MUS_HG_VS_WILD;
-            case 3:
+            case SPECIES_REGIROCK:
+            case SPECIES_REGICE:
+            case SPECIES_REGISTEEL:
+            case SPECIES_REGIELEKI:
+            case SPECIES_REGIDRAGO:
+                return MUS_VS_REGI;
+            case SPECIES_REGIGIGAS:
+                return MUS_PL_VS_REGI;
+            case SPECIES_LATIAS:
+            case SPECIES_LATIOS:
+            case SPECIES_LATIAS_MEGA:
+            case SPECIES_LATIOS_MEGA:
+                return MUS_DP_VS_LEGEND;
+            case SPECIES_GROUDON:
+            case SPECIES_KYOGRE:
+            case SPECIES_KYOGRE_PRIMAL:
+            case SPECIES_GROUDON_PRIMAL:
+                return MUS_VS_KYOGRE_GROUDON;
+            case SPECIES_RAYQUAZA:
+            case SPECIES_RAYQUAZA_MEGA:
+                return MUS_VS_RAYQUAZA;
+            case SPECIES_DEOXYS:
+            case SPECIES_DEOXYS_ATTACK:
+            case SPECIES_DEOXYS_DEFENSE:
+            case SPECIES_DEOXYS_SPEED:
+            case SPECIES_NIHILEGO:
+            case SPECIES_BUZZWOLE:
+            case SPECIES_PHEROMOSA:
+            case SPECIES_XURKITREE:
+            case SPECIES_CELESTEELA:
+            case SPECIES_KARTANA:
+            case SPECIES_GUZZLORD:
+            case SPECIES_STAKATAKA:
+            case SPECIES_BLACEPHALON:
+                return MUS_RG_VS_DEOXYS;
+            case SPECIES_UXIE:
+            case SPECIES_MESPRIT:
+            case SPECIES_AZELF:
+            case SPECIES_TORNADUS:
+            case SPECIES_THUNDURUS:
+            case SPECIES_LANDORUS:
+            case SPECIES_ENAMORUS:
+            case SPECIES_TAPU_KOKO:
+            case SPECIES_TAPU_LELE:
+            case SPECIES_TAPU_BULU:
+            case SPECIES_TAPU_FINI:
+                return MUS_DP_VS_UXIE_MESPRIT_AZELF;
+            case SPECIES_DIALGA:
+            case SPECIES_PALKIA:
+            case SPECIES_TERAPAGOS:
+                return MUS_DP_VS_DIALGA_PALKIA;
+            case SPECIES_JIRACHI:
+            case SPECIES_ROTOM:
+            case SPECIES_ROTOM_HEAT:
+            case SPECIES_ROTOM_WASH:
+            case SPECIES_ROTOM_FROST:
+            case SPECIES_ROTOM_FAN:
+            case SPECIES_ROTOM_MOW:
+            case SPECIES_HEATRAN:
+            case SPECIES_MANAPHY:
+            case SPECIES_CRESSELIA:
+            case SPECIES_XERNEAS:
+            case SPECIES_YVELTAL:
+            case SPECIES_MARSHADOW:
+            case SPECIES_ZACIAN:
+            case SPECIES_ZAMAZENTA:
+                return MUS_DP_VS_LEGEND;
+            case SPECIES_GIRATINA:
+            case SPECIES_GIRATINA_ORIGIN:
+            case SPECIES_DARKRAI:
+            case SPECIES_HOOPA:
+            case SPECIES_HOOPA_UNBOUND:
+            case SPECIES_NECROZMA:
+                return MUS_PL_VS_GIRATINA;
+            case SPECIES_PHIONE:
+            case SPECIES_SHAYMIN:
+            case SPECIES_SHAYMIN_SKY:
+            case SPECIES_OGERPON:
                 return MUS_DP_VS_WILD;
+            case SPECIES_ARCEUS:
+            case SPECIES_ARCEUS_FIGHTING:
+            case SPECIES_ARCEUS_FLYING:
+            case SPECIES_ARCEUS_POISON:
+            case SPECIES_ARCEUS_GROUND:
+            case SPECIES_ARCEUS_ROCK:
+            case SPECIES_ARCEUS_BUG:
+            case SPECIES_ARCEUS_GHOST:
+            case SPECIES_ARCEUS_STEEL:
+            case SPECIES_ARCEUS_FIRE:
+            case SPECIES_ARCEUS_WATER:
+            case SPECIES_ARCEUS_GRASS:
+            case SPECIES_ARCEUS_ELECTRIC:
+            case SPECIES_ARCEUS_PSYCHIC:
+            case SPECIES_ARCEUS_ICE:
+            case SPECIES_ARCEUS_DRAGON:
+            case SPECIES_ARCEUS_DARK:
+            case SPECIES_ARCEUS_FAIRY:
+            case SPECIES_ETERNATUS:
+                return MUS_DP_VS_ARCEUS;
+            case SPECIES_VICTINI:
+            case SPECIES_GENESECT:
+            case SPECIES_MAGEARNA:
+            case SPECIES_ZERAORA:
+                return MUS_PL_VS_FRONTIER_BRAIN;
+            case SPECIES_COBALION:
+            case SPECIES_TERRAKION:
+            case SPECIES_VIRIZION:
+            case SPECIES_KELDEO:
+            case SPECIES_IRON_LEAVES:
+            case SPECIES_IRON_BOULDER:
+            case SPECIES_IRON_CROWN:
+                return MUS_HG_VS_GYM_LEADER_KANTO;
+            case SPECIES_RESHIRAM:
+            case SPECIES_ZEKROM:
+            case SPECIES_KYUREM:
+            case SPECIES_SOLGALEO:
+            case SPECIES_LUNALA:
+                return MUS_DP_VS_GALACTIC_BOSS;
+            case SPECIES_DIANCIE:
+            case SPECIES_MELMETAL:
+            case SPECIES_GLASTRIER:
+            case SPECIES_SPECTRIER:
+            case SPECIES_CALYREX:
+                return MUS_HG_VS_TRAINER;
+            case SPECIES_KORAIDON:
+            case SPECIES_MIRAIDON:
+                return MUS_HG_VS_KYOGRE_GROUDON;
+            case SPECIES_WALKING_WAKE:
+            case SPECIES_GOUGING_FIRE:
+            case SPECIES_RAGING_BOLT:
+                return MUS_C_VS_LEGEND_BEAST;
+            case SPECIES_OKIDOGI:
+            case SPECIES_MUNKIDORI:
+            case SPECIES_FEZANDIPITI:
+                return MUS_HG_VS_GYM_LEADER;
+            case SPECIES_PECHARUNT:
+                return MUS_DP_VS_GALACTIC_COMMANDER;
             default:
-                return MUS_VS_WILD;
-            }
+                u32 musicRegion = gSaveBlock2Ptr->optionsMusicRegion; // 0 - 3 = Kanto - Sinnoh
+                switch (musicRegion)
+                {
+                    case 0:
+                        return MUS_RG_VS_WILD;
+                    case 1:
+                        return MUS_HG_VS_WILD;
+                    case 3:
+                        return MUS_DP_VS_WILD;
+                    default:
+                        return MUS_VS_WILD;
+                }
         }
     }
 }
@@ -6407,15 +6410,8 @@ const u8 *GetTrainerPartnerName(void)
 {
     if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER)
     {
-        if (gPartnerTrainerId == TRAINER_PARTNER(PARTNER_STEVEN_MOSSDEEP))
-        {
-            return GetTrainerNameFromId(TRAINER_STEVEN);
-        }
-        else
-        {
-            GetFrontierTrainerName(gStringVar1, gPartnerTrainerId);
-            return gStringVar1;
-        }
+        GetFrontierTrainerName(gStringVar1, gPartnerTrainerId);
+        return gStringVar1;
     }
     else
     {
@@ -6647,7 +6643,7 @@ void HandleSetPokedexFlag(u16 nationalNum, u8 caseId, u32 personality)
 
 bool8 HasTwoFramesAnimation(u16 species)
 {
-    return P_TWO_FRAME_FRONT_SPRITES && species != SPECIES_UNOWN;
+    return P_TWO_FRAME_FRONT_SPRITES && species != SPECIES_UNOWN && !gTestRunnerHeadless;
 }
 
 static bool8 ShouldSkipFriendshipChange(void)
@@ -7028,7 +7024,9 @@ u16 MonTryLearningNewMoveEvolution(struct Pokemon *mon, bool8 firstMove)
     return 0;
 }
 
-static void RemoveIVIndexFromList(u8 *ivs, u8 selectedIv)
+// Removes the selected index from the given IV list and shifts the remaining
+// elements to the left.
+void RemoveIVIndexFromList(u8 *ivs, u8 selectedIv)
 {
     s32 i, j;
     u8 temp[NUM_STATS];
@@ -7264,7 +7262,7 @@ void HealBoxPokemon(struct BoxPokemon *boxMon)
 u16 GetCryIdBySpecies(u16 species)
 {
     species = SanitizeSpeciesId(species);
-    if (P_CRIES_ENABLED == FALSE || gSpeciesInfo[species].cryId >= CRY_COUNT)
+    if (P_CRIES_ENABLED == FALSE || gSpeciesInfo[species].cryId >= CRY_COUNT || gTestRunnerHeadless)
         return CRY_NONE;
     return gSpeciesInfo[species].cryId;
 }
@@ -7344,4 +7342,78 @@ u32 CheckDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler)
     if (moveType != TYPE_NONE)
         return moveType;
     return gMovesInfo[move].type;
+}
+
+uq4_12_t GetDynamaxLevelHPMultiplier(u32 dynamaxLevel, bool32 inverseMultiplier)
+{
+    if (inverseMultiplier)
+        return UQ_4_12(1.0/(1.5 + 0.05 * dynamaxLevel));
+    return UQ_4_12(1.5 + 0.05 * dynamaxLevel);
+}
+
+bool32 IsSpeciesRegionalForm(u32 species)
+{
+    return gSpeciesInfo[species].isAlolanForm
+        || gSpeciesInfo[species].isGalarianForm
+        || gSpeciesInfo[species].isHisuianForm
+        || gSpeciesInfo[species].isPaldeanForm;
+}
+
+bool32 IsSpeciesRegionalFormFromRegion(u32 species, u32 region)
+{
+    switch (region)
+    {
+    case REGION_ALOLA:  return gSpeciesInfo[species].isAlolanForm;
+    case REGION_GALAR:  return gSpeciesInfo[species].isGalarianForm;
+    case REGION_HISUI:  return gSpeciesInfo[species].isHisuianForm;
+    case REGION_PALDEA: return gSpeciesInfo[species].isPaldeanForm;
+    default:            return FALSE;
+    }
+}
+
+bool32 SpeciesHasRegionalForm(u32 species)
+{
+    u32 formId;
+    const u16 *formTable = GetSpeciesFormTable(species);
+    for (formId = 0; formTable != NULL && formTable[formId] != FORM_SPECIES_END; formId++)
+    {
+        if (IsSpeciesRegionalForm(formTable[formId]))
+            return TRUE;
+    }
+    return FALSE;
+}
+
+u32 GetRegionalFormByRegion(u32 species, u32 region)
+{
+    u32 formId = 0;
+    u32 firstFoundSpecies = 0;
+    const u16 *formTable = GetSpeciesFormTable(species);
+
+    if (formTable != NULL)
+    {
+        for (formId = 0; formTable[formId] != FORM_SPECIES_END; formId++)
+        {
+            if (firstFoundSpecies == 0)
+                firstFoundSpecies = formTable[formId];
+            
+            if (IsSpeciesRegionalFormFromRegion(formTable[formId], region))
+                return formTable[formId];
+        }
+        if (firstFoundSpecies != 0)
+            return firstFoundSpecies;
+    }
+    return species;
+}
+
+bool32 IsSpeciesForeignRegionalForm(u32 species, u32 currentRegion)
+{
+    u32 i;
+    for (i = 0; i < REGIONS_COUNT; i++)
+    {
+        if (currentRegion != i && IsSpeciesRegionalFormFromRegion(species, i))
+            return TRUE;
+        else if (currentRegion == i && SpeciesHasRegionalForm(species) && !IsSpeciesRegionalFormFromRegion(species, i))
+            return TRUE;
+    }
+    return FALSE;
 }

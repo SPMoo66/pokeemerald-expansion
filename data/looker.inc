@@ -311,6 +311,26 @@ FortreeCity_EventScript_Looker::
 	return
 
 
+SootopolisCity_EventScript_Looker::
+# 192 "data/looker.pory"
+	lock
+# 193 "data/looker.pory"
+	playbgm MUS_PL_LOOKER, FALSE
+# 194 "data/looker.pory"
+	pokenavcall SootopolisCity_Text_Looker_Call
+# 195 "data/looker.pory"
+	waitmessage
+# 196 "data/looker.pory"
+	closemessage
+# 197 "data/looker.pory"
+	setvar VAR_LOOKER_ROCKET, 8
+# 198 "data/looker.pory"
+	fadedefaultbgm
+# 199 "data/looker.pory"
+	release
+	return
+
+
 SlateportCity_EventScript_Looker_Text_0:
 # 56 "data/looker.pory"
 	.string "Ah!\n"
@@ -400,3 +420,14 @@ RustboroCity_Text_Looker_Call::
 	.string "immediately.\p"
 	.string "Stay safe, {PLAYER}!\p"
 	.string "… … … … … Click!$"
+
+SootopolisCity_Text_Looker_Call::
+# 202 "data/looker.pory"
+	.string "… … … … … Beep!\p"
+	.string "Looker: I have discerned the\n"
+	.string "current location of Team Rocket!\p"
+	.string "{PLAYER}, please join me at\n"
+	.string "Trainer Hill on Route 111!\p"
+	.string "There is the location at which we\n"
+	.string "will make our stand against Team\l"
+	.string "Rocket!$"

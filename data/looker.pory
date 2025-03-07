@@ -187,3 +187,25 @@ script FortreeCity_EventScript_Looker {
 					"I get a lead on them."))
 	release
 }
+
+script SootopolisCity_EventScript_Looker {
+	lock
+	playbgm (MUS_PL_LOOKER, FALSE)
+	pokenavcall (SootopolisCity_Text_Looker_Call)
+	waitmessage
+	closemessage
+	setvar (VAR_LOOKER_ROCKET, 8)
+	fadedefaultbgm
+	release
+}
+
+text SootopolisCity_Text_Looker_Call {
+	"… … … … … Beep!\p"
+	"Looker: I have discerned the\n"
+	"current location of Team Rocket!\p"
+	"{PLAYER}, please join me at\n"
+	"Trainer Hill on Route 111!\p"
+	"There is the location at which we\n"
+	"will make our stand against Team\l"
+	"Rocket!"
+}

@@ -1245,6 +1245,9 @@ mapscripts SootopolisCity_MapScripts {
 		if (var(VAR_SOOTOPOLIS_CITY_STATE) == 6) {
 			setobjectxyperm (LOCALID_EXPERT, 31, 18)
 		}
+		if ((flag(FLAG_BADGE08_GET)) && (var(VAR_LOOKER_ROCKET) == 8)) {
+			call (SootopolisCity_EventScript_Looker)
+		}
 	}
 	MAP_SCRIPT_ON_RESUME {
 		setdivewarp (MAP_UNDERWATER_SOOTOPOLIS_CITY, 9, 6)

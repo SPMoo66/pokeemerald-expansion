@@ -251,6 +251,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_TorterraMega,
         .iconSprite = gMonIcon_Torterra,
         .iconPalIndex = 1,
+        SHADOW(-1, 7, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Torterra)
         .levelUpLearnset = sTorterraLevelUpLearnset,
         .teachableLearnset = sTorterraTeachableLearnset,
@@ -510,6 +511,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_InfernapeMega,
         .iconSprite = gMonIcon_Infernape,
         .iconPalIndex = 0,
+        SHADOW(1, 9, SHADOW_SIZE_M)
         FOOTPRINT(Infernape)
         .levelUpLearnset = sInfernapeLevelUpLearnset,
         .teachableLearnset = sInfernapeTeachableLearnset,
@@ -774,6 +776,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_EmpoleonMega,
         .iconSprite = gMonIcon_Empoleon,
         .iconPalIndex = 0,
+        SHADOW(-3, 13, SHADOW_SIZE_M)
         FOOTPRINT(Empoleon)
         .levelUpLearnset = sEmpoleonLevelUpLearnset,
         .teachableLearnset = sEmpoleonTeachableLearnset,
@@ -1066,6 +1069,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_StaraptorMega,
         .iconSprite = gMonIcon_Staraptor,
         .iconPalIndex = 0,
+        SHADOW(-10, 18, SHADOW_SIZE_M)
         FOOTPRINT(Staraptor)
         .levelUpLearnset = sStaraptorLevelUpLearnset,
         .teachableLearnset = sStaraptorTeachableLearnset,
@@ -1664,6 +1668,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_LuxrayMega,
         .iconSprite = gMonIcon_Luxray,
         .iconPalIndex = 0,
+        SHADOW(-2, 11, SHADOW_SIZE_L)
         FOOTPRINT(Luxray)
         .levelUpLearnset = sLuxrayLevelUpLearnset,
         .teachableLearnset = sLuxrayTeachableLearnset,
@@ -1720,6 +1725,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_ShinxEmeribian,
         .iconSprite = gMonIcon_ShinxEmeribian,
         .iconPalIndex = 0,
+        SHADOW(2, -1, SHADOW_SIZE_S)
         FOOTPRINT(Shinx)
         .levelUpLearnset = sShinxEmeribianLevelUpLearnset,
         .teachableLearnset = sShinxEmeribianTeachableLearnset,
@@ -1776,6 +1782,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_LuxioEmeribian,
         .iconSprite = gMonIcon_LuxioEmeribian,
         .iconPalIndex = 0,
+        SHADOW(-2, 7, SHADOW_SIZE_M)
         FOOTPRINT(Luxio)
         .levelUpLearnset = sLuxioEmeribianLevelUpLearnset,
         .teachableLearnset = sLuxioEmeribianTeachableLearnset,
@@ -1838,6 +1845,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_LuxrayEmeribian,
         .iconSprite = gMonIcon_LuxrayEmeribian,
         .iconPalIndex = 0,
+        SHADOW(0, 8, SHADOW_SIZE_L)
         FOOTPRINT(Luxray)
         .levelUpLearnset = sLuxrayEmeribianLevelUpLearnset,
         .teachableLearnset = sLuxrayEmeribianTeachableLearnset,
@@ -2762,6 +2770,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_VespiquenMega,
         .iconSprite = gMonIcon_Vespiquen,
         .iconPalIndex = 0,
+        SHADOW(-2, 15, SHADOW_SIZE_M)
         FOOTPRINT(Vespiquen)
         .levelUpLearnset = sVespiquenLevelUpLearnset,
         .teachableLearnset = sVespiquenTeachableLearnset,
@@ -3620,6 +3629,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_DrifloonEmeribian,
         .iconSprite = gMonIcon_DrifloonEmeribian,
         .iconPalIndex = 2,
+        SHADOW(2, 13, SHADOW_SIZE_S)
         FOOTPRINT(Drifloon)
         .levelUpLearnset = sDrifloonEmeribianLevelUpLearnset,
         .teachableLearnset = sDrifloonEmeribianTeachableLearnset,
@@ -3679,6 +3689,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_DrifblimEmeribian,
         .iconSprite = gMonIcon_DrifblimEmeribian,
         .iconPalIndex = 2,
+        SHADOW(-2, 9, SHADOW_SIZE_L)
         FOOTPRINT(Drifblim)
         .levelUpLearnset = sDrifblimEmeribianLevelUpLearnset,
         .teachableLearnset = sDrifblimEmeribianTeachableLearnset,
@@ -3926,6 +3937,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_BunearyEmeribian,
         .iconSprite = gMonIcon_BunearyEmeribian,
         .iconPalIndex = 2,
+        SHADOW(-1, 9, SHADOW_SIZE_S)
         FOOTPRINT(Buneary)
         .levelUpLearnset = sBunearyEmeribianLevelUpLearnset,
         .teachableLearnset = sBunearyEmeribianTeachableLearnset,
@@ -3983,6 +3995,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_LopunnyEmeribian,
         .iconSprite = gMonIcon_LopunnyEmeribian,
         .iconPalIndex = 2,
+        SHADOW(1, 12, SHADOW_SIZE_M)
         FOOTPRINT(Lopunny)
         .levelUpLearnset = sLopunnyEmeribianLevelUpLearnset,
         .teachableLearnset = sLopunnyEmeribianTeachableLearnset,
@@ -4039,6 +4052,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_LopunnyEmeribianMega,
         .iconSprite = gMonIcon_LopunnyEmeribian,
         .iconPalIndex = 2,
+        SHADOW(-2, 13, SHADOW_SIZE_M)
         FOOTPRINT(Lopunny)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sLopunnyEmeribianLevelUpLearnset,
@@ -5760,6 +5774,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_LumineonMega,
         .iconSprite = gMonIcon_Lumineon,
         .iconPalIndex = 0,
+        SHADOW(-4, 8, SHADOW_SIZE_L)
         FOOTPRINT(Lumineon)
         .levelUpLearnset = sLumineonLevelUpLearnset,
         .teachableLearnset = sLumineonTeachableLearnset,

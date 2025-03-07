@@ -254,6 +254,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Arsellosky,
         .iconSprite = gMonIcon_Arsellosky,
         .iconPalIndex = 0,
+        SHADOW(1, 11, SHADOW_SIZE_M)
         //.footprint = gMonFootprint_None,
         .levelUpLearnset = sArselloskyLevelUpLearnset,
         .teachableLearnset = sArselloskyTeachableLearnset,
@@ -311,6 +312,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Evaleon,
         .iconSprite = gMonIcon_Evaleon,
         .iconPalIndex = 2,
+        SHADOW(0, 14, SHADOW_SIZE_L)
         //.footprint = gMonFootprint_None,
         .levelUpLearnset = sEvaleonLevelUpLearnset,
         .teachableLearnset = sEvaleonTeachableLearnset,
@@ -365,6 +367,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Aereon,
         .iconSprite = gMonIcon_Aereon,
         .iconPalIndex = 2,
+        SHADOW(0, 8, SHADOW_SIZE_M)
         //.footprint = gMonFootprint_None,
         .levelUpLearnset = sAereonLevelUpLearnset,
         .teachableLearnset = sAereonTeachableLearnset,
@@ -420,6 +423,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Contageon,
         .iconSprite = gMonIcon_Contageon,
         .iconPalIndex = 2,
+        SHADOW(0, 5, SHADOW_SIZE_L)
         //.footprint = gMonFootprint_None,
         .levelUpLearnset = sContageonLevelUpLearnset,
         .teachableLearnset = sContageonTeachableLearnset,
@@ -475,6 +479,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Laneon,
         .iconSprite = gMonIcon_Laneon,
         .iconPalIndex = 2,
+        SHADOW(0, 12, SHADOW_SIZE_M)
         //.footprint = gMonFootprint_None,
         .levelUpLearnset = sLaneonLevelUpLearnset,
         .teachableLearnset = sLaneonTeachableLearnset,
@@ -529,6 +534,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Scaleon,
         .iconSprite = gMonIcon_Scaleon,
         .iconPalIndex = 0,
+        SHADOW(0, 8, SHADOW_SIZE_L)
         //.footprint = gMonFootprint_None,
         .levelUpLearnset = sScaleonLevelUpLearnset,
         .teachableLearnset = sScaleonTeachableLearnset,
@@ -583,6 +589,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Titaneon,
         .iconSprite = gMonIcon_Titaneon,
         .iconPalIndex = 2,
+        SHADOW(-1, 9, SHADOW_SIZE_L)
         //.footprint = gMonFootprint_None,
         .levelUpLearnset = sTitaneonLevelUpLearnset,
         .teachableLearnset = sTitaneonTeachableLearnset,
@@ -640,6 +647,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Tangtrip,
         .iconSprite = gMonIcon_Tangtrip,
         .iconPalIndex = 0,
+        SHADOW(0, 4, SHADOW_SIZE_S)
         FOOTPRINT(Tangela)
         .levelUpLearnset = sTangtripLevelUpLearnset,
         .teachableLearnset = sTangtripTeachableLearnset,
@@ -695,6 +703,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Sludgma,
         .iconSprite = gMonIcon_Sludgma,
         .iconPalIndex = 0,
+        SHADOW(0, 1, SHADOW_SIZE_S)
         FOOTPRINT(Slugma)
         .levelUpLearnset = sSludgmaLevelUpLearnset,
         .teachableLearnset = sSludgmaTeachableLearnset,
@@ -758,6 +767,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Mudcargo,
         .iconSprite = gMonIcon_Mudcargo,
         .iconPalIndex = 0,
+        SHADOW(-1, 8, SHADOW_SIZE_L)
         FOOTPRINT(Magcargo)
         .levelUpLearnset = sMudcargoLevelUpLearnset,
         .teachableLearnset = sMudcargoTeachableLearnset,
@@ -810,6 +820,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Kotora,
         .iconSprite = gMonIcon_Kotora,
         .iconPalIndex = 0,
+        SHADOW(-4, 7, SHADOW_SIZE_M)
         .levelUpLearnset = sKotoraLevelUpLearnset,
         .teachableLearnset = sKotoraTeachableLearnset,
         .eggMoveLearnset = sKotoraEggMoveLearnset,
@@ -870,6 +881,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Raitora,
         .iconSprite = gMonIcon_Raitora,
         .iconPalIndex = 0,
+        SHADOW(1, 5, SHADOW_SIZE_L)
         .levelUpLearnset = sRaitoraLevelUpLearnset,
         .teachableLearnset = sRaitoraTeachableLearnset,
     },
@@ -922,6 +934,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Madame,
         .iconSprite = gMonIcon_Madame,
         .iconPalIndex = 0,
+        SHADOW(-3, 11, SHADOW_SIZE_M)
         FOOTPRINT(Farfetchd)
         .levelUpLearnset = sMadameLevelUpLearnset,
         .teachableLearnset = sMadameTeachableLearnset,
@@ -978,6 +991,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Apimarill,
         .iconSprite = gMonIcon_Apimarill,
         .iconPalIndex = 0,
+        SHADOW(-3, 6, SHADOW_SIZE_S)
         FOOTPRINT(Azumarill)
         .levelUpLearnset = sApimarillLevelUpLearnset,
         .teachableLearnset = sApimarillTeachableLearnset,
@@ -1032,6 +1046,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Solflora,
         .iconSprite = gMonIcon_Solflora,
         .iconPalIndex = 1,
+        SHADOW(3, 13, SHADOW_SIZE_M)
         FOOTPRINT(Sunflora)
         .levelUpLearnset = sSolfloraLevelUpLearnset,
         .teachableLearnset = sSolfloraTeachableLearnset,
@@ -1088,6 +1103,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Shibirefugu,
         .iconSprite = gMonIcon_Shibirefugu,
         .iconPalIndex = 0,
+        SHADOW(0, 14, SHADOW_SIZE_M)
         FOOTPRINT(Qwilfish)
         .levelUpLearnset = sShibirefuguLevelUpLearnset,
         .teachableLearnset = sShibirefuguTeachableLearnset,
@@ -1144,6 +1160,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Delijoy,
         .iconSprite = gMonIcon_Delijoy,
         .iconPalIndex = 2,
+        SHADOW(0, 4, SHADOW_SIZE_S)
         FOOTPRINT(Delibird)
         .levelUpLearnset = sDelijoyLevelUpLearnset,
         .teachableLearnset = sDelijoyTeachableLearnset,
@@ -1200,6 +1217,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_Cogment,
         .iconSprite = gMonIcon_Cogment,
         .iconPalIndex = 2,
+        SHADOW(1, 11, SHADOW_SIZE_S)
         //.footprint = gMonFootprint_None,
         .levelUpLearnset = sCogmentLevelUpLearnset,
         .teachableLearnset = sCogmentTeachableLearnset,

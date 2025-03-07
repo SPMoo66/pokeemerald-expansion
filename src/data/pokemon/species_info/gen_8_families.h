@@ -1823,6 +1823,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_WoolooFribian,
         .iconSprite = gMonIcon_WoolooFribian,
         .iconPalIndex = 0,
+        SHADOW(0, 8, SHADOW_SIZE_M)
         FOOTPRINT(Wooloo)
         .levelUpLearnset = sWoolooFribianLevelUpLearnset,
         .teachableLearnset = sWoolooFribianTeachableLearnset,
@@ -1882,6 +1883,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_DubwoolFribian,
         .iconSprite = gMonIcon_DubwoolFribian,
         .iconPalIndex = 2,
+        SHADOW(-2, 10, SHADOW_SIZE_L)
         FOOTPRINT(Dubwool)
         .levelUpLearnset = sDubwoolFribianLevelUpLearnset,
         .teachableLearnset = sDubwoolFribianTeachableLearnset,
@@ -5162,6 +5164,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_FalinksEmeribian,
         .iconSprite = gMonIcon_FalinksEmeribian,
         .iconPalIndex = 2,
+        SHADOW(0, 1, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Falinks)
         .levelUpLearnset = sFalinksEmeribianLevelUpLearnset,
         .teachableLearnset = sFalinksEmeribianTeachableLearnset,

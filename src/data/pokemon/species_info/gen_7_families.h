@@ -3615,6 +3615,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .shinyPalette = gMonShinyPalette_TsareenaMega,
         .iconSprite = gMonIcon_Tsareena,
         .iconPalIndex = 1,
+        SHADOW(1, 14, SHADOW_SIZE_S)
         FOOTPRINT(Tsareena)
         .levelUpLearnset = sTsareenaLevelUpLearnset,
         .teachableLearnset = sTsareenaTeachableLearnset,
@@ -4944,6 +4945,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .shinyPalette = gMonShinyPalette_MimikyuEmeribian,
         .iconSprite = gMonIcon_MimikyuEmeribian,
         .iconPalIndex = 2,
+        SHADOW(-2, 10, SHADOW_SIZE_L)
         FOOTPRINT(Mimikyu)
         .levelUpLearnset = sMimikyuEmeribianLevelUpLearnset,
         .teachableLearnset = sMimikyuEmeribianTeachableLearnset,

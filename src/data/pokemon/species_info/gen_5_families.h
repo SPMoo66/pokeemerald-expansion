@@ -306,6 +306,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .shinyPalette = gMonShinyPalette_SerperiorMega,
         .iconSprite = gMonIcon_Serperior,
         .iconPalIndex = 1,
+        SHADOW(1, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Serperior)
         .levelUpLearnset = sSerperiorLevelUpLearnset,
         .teachableLearnset = sSerperiorTeachableLearnset,
@@ -2343,6 +2344,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .shinyPalette = gMonShinyPalette_GigalithFribian,
         .iconSprite = gMonIcon_GigalithFribian,
         .iconPalIndex = 0,
+        SHADOW(0, 8, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Gigalith)
         .levelUpLearnset = sGigalithFribianLevelUpLearnset,
         .teachableLearnset = sGigalithFribianTeachableLearnset,
@@ -8696,6 +8698,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .shinyPalette = gMonShinyPalette_KlinklangMega,
         .iconSprite = gMonIcon_Klinklang,
         .iconPalIndex = 0,
+        SHADOW(-1, 4, SHADOW_SIZE_M)
         FOOTPRINT(Klinklang)
         .levelUpLearnset = sKlinklangLevelUpLearnset,
         .teachableLearnset = sKlinklangTeachableLearnset,
@@ -9472,6 +9475,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .palette = gMonPalette_HaxorusMega,
         .shinyPalette = gMonShinyPalette_HaxorusMega,
         .iconSprite = gMonIcon_Haxorus,
+        SHADOW(1, 11, SHADOW_SIZE_L)
         .iconPalIndex = 2,
         FOOTPRINT(Haxorus)
         .levelUpLearnset = sHaxorusLevelUpLearnset,
@@ -11232,6 +11236,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .shinyPalette = gMonShinyPalette_HydreigonMega,
         .iconSprite = gMonIcon_Hydreigon,
         .iconPalIndex = 2,
+        SHADOW(6, 10, SHADOW_SIZE_L)
         FOOTPRINT(Hydreigon)
         .levelUpLearnset = sHydreigonLevelUpLearnset,
         .teachableLearnset = sHydreigonTeachableLearnset,

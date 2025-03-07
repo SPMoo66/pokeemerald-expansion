@@ -429,6 +429,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_DelphoxMega,
         .iconSprite = gMonIcon_Delphox,
         .iconPalIndex = 0,
+        SHADOW(1, 12, SHADOW_SIZE_L)
         FOOTPRINT(Delphox)
         .levelUpLearnset = sDelphoxLevelUpLearnset,
         .teachableLearnset = sDelphoxTeachableLearnset,
@@ -2133,6 +2134,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_SkiddoEmeribian,
         .iconSprite = gMonIcon_SkiddoEmeribian,
         .iconPalIndex = 2,
+        SHADOW(2, 12, SHADOW_SIZE_M)
         FOOTPRINT(Skiddo)
         .levelUpLearnset = sSkiddoEmeribianLevelUpLearnset,
         .teachableLearnset = sSkiddoEmeribianTeachableLearnset,
@@ -2191,6 +2193,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_GogoatEmeribian,
         .iconSprite = gMonIcon_GogoatEmeribian,
         .iconPalIndex = 2,
+        SHADOW(1, 12, SHADOW_SIZE_L)
         FOOTPRINT(Gogoat)
         .levelUpLearnset = sGogoatEmeribianLevelUpLearnset,
         .teachableLearnset = sGogoatEmeribianTeachableLearnset,
@@ -2907,6 +2910,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_HonedgeEmeribian,
         .iconSprite = gMonIcon_HonedgeEmeribian,
         .iconPalIndex = 2,
+        SHADOW(0, 12, SHADOW_SIZE_S)
         FOOTPRINT(Honedge)
         .levelUpLearnset = sHonedgeEmeribianLevelUpLearnset,
         .teachableLearnset = sHonedgeEmeribianTeachableLearnset,
@@ -2965,6 +2969,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_DoubladeEmeribian,
         .iconSprite = gMonIcon_DoubladeEmeribian,
         .iconPalIndex = 2,
+        SHADOW(-1, 12, SHADOW_SIZE_M)
         FOOTPRINT(Doublade)
         .levelUpLearnset = sDoubladeEmeribianLevelUpLearnset,
         .teachableLearnset = sDoubladeEmeribianTeachableLearnset,
@@ -3021,6 +3026,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_AegislashEmeribian,
         .iconSprite = gMonIcon_AegislashEmeribian,
         .iconPalIndex = 2,
+        SHADOW(-2, 14, SHADOW_SIZE_L)
         FOOTPRINT(Aegislash)
         .levelUpLearnset = sAegislashEmeribianLevelUpLearnset,
         .teachableLearnset = sAegislashEmeribianTeachableLearnset,
@@ -3339,6 +3345,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_SlurpuffMega,
         .iconSprite = gMonIcon_Slurpuff,
         .iconPalIndex = 1,
+        SHADOW(-1, 13, SHADOW_SIZE_S)
         FOOTPRINT(Slurpuff)
         .levelUpLearnset = sSlurpuffLevelUpLearnset,
         .teachableLearnset = sSlurpuffTeachableLearnset,
@@ -3785,6 +3792,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_SkrelpEmeribian,
         .iconSprite = gMonIcon_SkrelpEmeribian,
         .iconPalIndex = 2,
+        SHADOW(3, 5, SHADOW_SIZE_S)
         FOOTPRINT(Skrelp)
         .levelUpLearnset = sSkrelpEmeribianLevelUpLearnset,
         .teachableLearnset = sSkrelpEmeribianTeachableLearnset,
@@ -3842,6 +3850,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_DragalgeEmeribian,
         .iconSprite = gMonIcon_DragalgeEmeribian,
         .iconPalIndex = 4,
+        SHADOW(0, 9, SHADOW_SIZE_M)
         FOOTPRINT(Dragalge)
         .levelUpLearnset = sDragalgeEmeribianLevelUpLearnset,
         .teachableLearnset = sDragalgeEmeribianTeachableLearnset,
@@ -4414,6 +4423,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_AurorusMega,
         .iconSprite = gMonIcon_Aurorus,
         .iconPalIndex = 0,
+        SHADOW(0, 12, SHADOW_SIZE_M)
         FOOTPRINT(Aurorus)
         .levelUpLearnset = sAurorusLevelUpLearnset,
         .teachableLearnset = sAurorusTeachableLearnset,
@@ -5200,6 +5210,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_TrevenantEmeribian,
         .iconSprite = gMonIcon_TrevenantEmeribian,
         .iconPalIndex = 1,
+        SHADOW(-3, 5, SHADOW_SIZE_L)
         FOOTPRINT(Trevenant)
         .levelUpLearnset = sTrevenantEmeribianLevelUpLearnset,
         .teachableLearnset = sTrevenantEmeribianTeachableLearnset,

@@ -5,7 +5,18 @@ FortreeCity_MapScripts::
 
 FortreeCity_OnTransition:
 	setflag FLAG_VISITED_FORTREE_CITY
+	setflag FLAG_TEMP_1
+	call_if_unset FLAG_BADGE06_GET, FortreeCity_ShowLooker1
 	end
+
+FortreeCity_ShowLooker1:
+	compare VAR_LOOKER_ROCKET, 8
+	goto_if_eq FortreeCity_ShowLooker2
+	return
+	
+FortreeCity_ShowLooker2:
+	clearflag FLAG_TEMP_1
+	return
 
 FortreeCity_OnResume:
 	setstepcallback STEP_CB_FORTREE_BRIDGE

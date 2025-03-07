@@ -393,6 +393,15 @@ Common_Movement_WalkFastUp7:
 Common_Movement_WalkFastDown:
 	walk_fast_down
 	step_end
+	
+Common_Movement_WalkFastDown6:
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	step_end
 
 Common_Movement_EnterHouse:
 	walk_up

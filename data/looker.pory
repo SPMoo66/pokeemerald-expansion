@@ -325,3 +325,64 @@ text TrainerHill_Text_LookerGoIn {
 	"Go on inside.\n"
 	"I will be right behind you."
 }
+
+const LOOKER_ROCKETREFUGE_B1F = 8
+
+script RocketRefuge_B1F_Looker {
+	lock
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight)
+	waitmovement (0)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+	waitmovement (0)
+	delay (10)
+	playse (SE_EXIT)
+	addobject (LOOKER_ROCKETREFUGE_B1F)
+	applymovement (LOOKER_ROCKETREFUGE_B1F, Common_Movement_FaceRight)
+	waitmovement (0)
+	setobjectxy (LOOKER_ROCKETREFUGE_B1F, 2, 2)
+	speakername (CommonText_Looker)
+	msgbox ("Yes. Here we are.")
+	closemessage
+	applymovement (LOOKER_ROCKETREFUGE_B1F, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	delay (30)
+	applymovement (LOOKER_ROCKETREFUGE_B1F, Common_Movement_WalkInPlaceLeft)
+	waitmovement (0)
+	delay (30)
+	applymovement (LOOKER_ROCKETREFUGE_B1F, Common_Movement_WalkInPlaceRight)
+	waitmovement (0)
+	speakername (CommonText_Looker)
+	msgbox (format ("Now. I will go on ahead, clearing a path for us both.\p"
+					"Follow after me, but do be careful.\p"
+					"I will attempt to retrieve a disguise, so you may not recognize me when we next meet.\p"
+					"That is one of my strengths, after all."))
+	closemessage
+	applymovement (LOOKER_ROCKETREFUGE_B1F, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	playbgm (MUS_PL_LOOKER, FALSE)
+	delay (40)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+	applymovement (LOOKER_ROCKETREFUGE_B1F, Common_Movement_WalkFastDown6)
+	waitmovement (0)
+	speakername (CommonText_Looker)
+	playse (SE_M_RAZOR_WIND2)
+	delay (6)
+	playse (SE_M_RAZOR_WIND2)
+	delay (6)
+	playse (SE_M_RAZOR_WIND2)
+	delay (6)
+	playse (SE_M_RAZOR_WIND2)
+	delay (6)
+	playse (SE_M_RAZOR_WIND2)
+	delay (6)
+	playse (SE_M_RAZOR_WIND2)
+	delay (6)
+	playse (SE_M_RAZOR_WIND2)
+	msgbox (format ("Ahhhh!"))
+	closemessage
+	fadedefaultbgm
+	delay (20)
+	removeobject (LOOKER_ROCKETREFUGE_B1F)
+	setvar (VAR_LOOKER_ROCKET, 12)
+	release
+}

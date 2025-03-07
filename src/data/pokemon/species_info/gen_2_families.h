@@ -266,6 +266,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sMeganiumLevelUpLearnset,
         .teachableLearnset = sMeganiumTeachableLearnset,
+        .formSpeciesIdTable = sMeganiumFormSpeciesIdTable,
+        .formChangeTable = sMeganiumFormChangeTable,
     },
 
     [SPECIES_MEGANIUM_EMERIBIAN] =

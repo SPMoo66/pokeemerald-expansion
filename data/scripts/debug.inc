@@ -174,8 +174,8 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	setvar VAR_LOOKER_ROCKET, 9
-	warp MAP_ROUTE111, 4
+	setvar VAR_LOOKER_ROCKET, 12
+	warp MAP_ROCKET_REFUGE_B1F, 1
 	release
 	end
 

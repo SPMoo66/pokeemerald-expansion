@@ -1,1 +1,12 @@
-mapscripts RocketRefuge_B2F_MapScripts {}
+const LOOKER_ROCKETREFUGE_B2F = 6
+
+mapscripts RocketRefuge_B2F_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if (var(VAR_LOOKER_ROCKET) > 12) {
+			setflag (FLAG_TEMP_1)
+		}
+	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_LOOKER_ROCKET, 12: RocketRefuge_B2F_Looker
+	]
+}

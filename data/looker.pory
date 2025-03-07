@@ -386,3 +386,46 @@ script RocketRefuge_B1F_Looker {
 	setvar (VAR_LOOKER_ROCKET, 12)
 	release
 }
+
+
+const LOOKER_ROCKETREFUGE_B2F = 6
+
+script RocketRefuge_B2F_Looker {
+	lock
+	playbgm (MUS_DP_ENCOUNTER_GALACTIC, FALSE)
+	applymovement (LOOKER_ROCKETREFUGE_B2F, Common_Movement_ExclamationMark)
+	waitmovement (0)
+	delay (60)
+	applymovement (LOOKER_ROCKETREFUGE_B2F, Common_Movement_WalkLeft4)
+	waitmovement (0)
+	speakername (CommonText_Q)
+	msgbox (format ("Ah!\n"
+					"Here you finally are.\p"
+					"I've been waiting for your return.\p"
+					"I managed to find this uniform, but\nit doesn't seem quite right…\p"
+					"Wait, do you not recognize me,\n{PLAYER}?"))
+	playbgm (MUS_PL_LOOKER, FALSE)
+	speakername (CommonText_Looker)
+	msgbox (format ("It is I, Looker, of course!\p"
+					"From the look on your face, it seems\nthat I was able to fool you at least.\p"
+					"Once I do find the correct uniform,\nI will easily be able to fool the many\lgrunts in this hideaway."))
+	msgbox (RocketRefuge_B2F_LookerText, MSGBOX_DEFAULT)
+	closemessage
+	fadedefaultbgm
+	setvar(VAR_LOOKER_ROCKET, 13)
+	release
+}
+
+script RocketRefuge_B2F_LookerTalk {
+	lock
+	faceplayer
+	speakername (CommonText_Looker)
+	msgbox (RocketRefuge_B2F_LookerText, MSGBOX_DEFAULT)
+	release
+}
+
+text RocketRefuge_B2F_LookerText {
+	"Anyway, go on ahead.\n"
+	"I will return to you once I am able.\p"
+	"This uniform would be a dead giveaway."
+}

@@ -643,6 +643,58 @@ RocketRefuge_B1F_Looker::
 	return
 
 
+RocketRefuge_B2F_Looker::
+# 394 "data/looker.pory"
+	lock
+# 395 "data/looker.pory"
+	playbgm MUS_DP_ENCOUNTER_GALACTIC, FALSE
+# 396 "data/looker.pory"
+	applymovement 6, Common_Movement_ExclamationMark
+# 397 "data/looker.pory"
+	waitmovement 0
+# 398 "data/looker.pory"
+	delay 60
+# 399 "data/looker.pory"
+	applymovement 6, Common_Movement_WalkLeft4
+# 400 "data/looker.pory"
+	waitmovement 0
+# 401 "data/looker.pory"
+	speakername CommonText_Q
+# 402 "data/looker.pory"
+	msgbox RocketRefuge_B2F_Looker_Text_0
+# 407 "data/looker.pory"
+	playbgm MUS_PL_LOOKER, FALSE
+# 408 "data/looker.pory"
+	speakername CommonText_Looker
+# 409 "data/looker.pory"
+	msgbox RocketRefuge_B2F_Looker_Text_1
+# 412 "data/looker.pory"
+	msgbox RocketRefuge_B2F_LookerText, MSGBOX_DEFAULT
+# 413 "data/looker.pory"
+	closemessage
+# 414 "data/looker.pory"
+	fadedefaultbgm
+# 415 "data/looker.pory"
+	setvar VAR_LOOKER_ROCKET, 13
+# 416 "data/looker.pory"
+	release
+	return
+
+
+RocketRefuge_B2F_LookerTalk::
+# 420 "data/looker.pory"
+	lock
+# 421 "data/looker.pory"
+	faceplayer
+# 422 "data/looker.pory"
+	speakername CommonText_Looker
+# 423 "data/looker.pory"
+	msgbox RocketRefuge_B2F_LookerText, MSGBOX_DEFAULT
+# 424 "data/looker.pory"
+	release
+	return
+
+
 SlateportCity_EventScript_Looker_Text_0:
 # 56 "data/looker.pory"
 	.string "Ah!\n"
@@ -734,6 +786,25 @@ RocketRefuge_B1F_Looker_Text_2:
 # 381 "data/looker.pory"
 	.string "Ahhhh!$"
 
+RocketRefuge_B2F_Looker_Text_0:
+# 402 "data/looker.pory"
+	.string "Ah!\n"
+	.string "Here you finally are.\p"
+	.string "I've been waiting for your return.\p"
+	.string "I managed to find this uniform, but\n"
+	.string "it doesn't seem quite right…\p"
+	.string "Wait, do you not recognize me,\n"
+	.string "{PLAYER}?$"
+
+RocketRefuge_B2F_Looker_Text_1:
+# 409 "data/looker.pory"
+	.string "It is I, Looker, of course!\p"
+	.string "From the look on your face, it seems\n"
+	.string "that I was able to fool you at least.\p"
+	.string "Once I do find the correct uniform,\n"
+	.string "I will easily be able to fool the many\l"
+	.string "grunts in this hideaway.$"
+
 Route115_Text_Looker_Call::
 # 128 "data/looker.pory"
 	.string "… … … … … Beep!\p"
@@ -790,3 +861,9 @@ TrainerHill_Text_LookerGoIn::
 # 324 "data/looker.pory"
 	.string "Go on inside.\n"
 	.string "I will be right behind you.$"
+
+RocketRefuge_B2F_LookerText::
+# 427 "data/looker.pory"
+	.string "Anyway, go on ahead.\n"
+	.string "I will return to you once I am able.\p"
+	.string "This uniform would be a dead giveaway.$"

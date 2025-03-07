@@ -8,3 +8,18 @@ mapscripts RocketRefuge_B1F_MapScripts {
 		VAR_LOOKER_ROCKET, 11: RocketRefuge_B1F_Looker
 	]
 }
+
+script RocketRefuge_B1F_EventScript_Grunt1 {
+	trainerbattle_single (TRAINER_ROCKET_GRUNT_REFUGE_1, "Some guy just flew past me, but I can\nget you!", "You're slipping away too!?")
+	msgbox ("Look, it's not easy to grab someone who\nflies by that fast!", MSGBOX_AUTOCLOSE)
+}
+
+script RocketRefuge_B1F_EventScript_Grunt2 {
+	trainerbattle_single (TRAINER_ROCKET_GRUNT_REFUGE_2, "Shoot, I was supposed to put a poster\nup on top of the hideout's entrance\lswitch!", "I guess it doesn't matter anymore…")
+	msgbox ("I'll remember to disguise the hideout\nbetter next time.", MSGBOX_AUTOCLOSE)
+}
+
+script RocketRefuge_B1F_EventScript_Grunt3 {
+	trainerbattle_single (TRAINER_ROCKET_GRUNT_REFUGE_3, "Another intruder!", "And it's just a kid…")
+	msgbox ("Whatever. I'm sure the grunts up ahead\nhave already bagged your friend.", MSGBOX_AUTOCLOSE)
+}

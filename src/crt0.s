@@ -23,6 +23,10 @@ Init::
 	svc #1 << 16
 @ Fill RAM areas with appropriate data
 	bl InitializeWorkingMemory
+@ Prepare for interrupt handling
+	ldr r1, =INTR_VECTOR
+	ldr r0, =IntrMain
+	str r0, [r1]
 @ Jump to AgbMain
 	ldr r1, =AgbMain + 1
 	mov lr, pc

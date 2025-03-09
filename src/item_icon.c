@@ -1,9 +1,12 @@
 #include "global.h"
+#include "battle_main.h"
 #include "decompress.h"
 #include "graphics.h"
+#include "item.h"
 #include "item_icon.h"
 #include "malloc.h"
 #include "palette.h"
+#include "move.h"
 #include "sprite.h"
 #include "window.h"
 #include "constants/items.h"
@@ -125,10 +128,12 @@ u8 AddItemIconSprite(u16 tilesTag, u16 paletteTag, u16 itemId)
     }
 }
 
-u8 BlitItemIconToWindow(u16 itemId, u8 windowId, u16 x, u16 y, void * paletteDest) {
+u8 BlitItemIconToWindow(u16 itemId, u8 windowId, u16 x, u16 y, void * paletteDest)
+{
     if (!AllocItemIconTemporaryBuffers())
         return 16;
 
+    void *decompressionBuffer = Alloc(0x800);
     LZDecompressWram(GetItemIconPic(itemId), gItemIconDecompressionBuffer);
     CopyItemIconPicTo4x4Buffer(gItemIconDecompressionBuffer, gItemIcon4x4Buffer);
     BlitBitmapToWindow(windowId, gItemIcon4x4Buffer, x, y, 32, 32);
@@ -136,8 +141,8 @@ u8 BlitItemIconToWindow(u16 itemId, u8 windowId, u16 x, u16 y, void * paletteDes
     // if paletteDest is nonzero, copies the decompressed palette directly into it
     // otherwise, loads the compressed palette into the windowId's BG palette ID
     if (paletteDest) {
-        LZDecompressWram(GetItemIconPalette(itemId), gDecompressionBuffer);
-        CpuFastCopy(gDecompressionBuffer, paletteDest, PLTT_SIZE_4BPP);
+        LZDecompressWram(GetItemIconPalette(itemId), decompressionBuffer);
+        CpuFastCopy(decompressionBuffer, paletteDest, PLTT_SIZE_4BPP);
     } else {
         LoadCompressedPalette(GetItemIconPalette(itemId), BG_PLTT_ID(gWindows[windowId].window.paletteNum), PLTT_SIZE_4BPP);
     }
@@ -210,7 +215,7 @@ const void *GetItemIconPalette(u16 itemId)
     if (itemId >= ITEMS_COUNT)
         return gItemsInfo[0].iconPalette;
     if (itemId >= ITEM_TM01 && itemId < ITEM_HM01 + NUM_HIDDEN_MACHINES)
-        return gTypesInfo[gMovesInfo[gItemsInfo[itemId].secondaryId].type].paletteTMHM;
+        return gTypesInfo[GetMoveType(gItemsInfo[itemId].secondaryId)].paletteTMHM;
 
     return gItemsInfo[itemId].iconPalette;
 }

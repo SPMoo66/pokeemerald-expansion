@@ -1,4 +1,4 @@
-    [PARTNER_NONE] =
+    [DIFFICULTY_NORMAL][PARTNER_NONE] =
     {
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
         .trainerPic = TRAINER_BACK_PIC_BRENDAN,
@@ -9,7 +9,7 @@
         },
     },
 
-    [PARTNER_STEVEN_MOSSDEEP] =
+    [DIFFICULTY_NORMAL][PARTNER_STEVEN_MOSSDEEP] =
     {
         .party = TRAINER_PARTY(sParty_StevenPartnerMossdeep),
         .trainerClass = TRAINER_CLASS_CHAMPION,
@@ -19,7 +19,7 @@
         .items = {ITEM_MEGA_RING},
     },
 
-    [PARTNER_MAY_METEOR_FALLS] =
+    [DIFFICULTY_NORMAL][PARTNER_MAY_METEOR_FALLS] =
     {
         .party = TRAINER_PARTY(sParty_MayPartnerMeteorFalls),
         .trainerClass = TRAINER_CLASS_RIVAL,
@@ -28,7 +28,7 @@
         .trainerName = _("May"),
     },
 
-    [PARTNER_BRENDAN_METEOR_FALLS] =
+    [DIFFICULTY_NORMAL][PARTNER_BRENDAN_METEOR_FALLS] =
     {
         .party = TRAINER_PARTY(sParty_BrendanPartnerMeteorFalls),
         .trainerClass = TRAINER_CLASS_RIVAL,
@@ -37,7 +37,7 @@
         .trainerName = _("Brendan"),
     },
 
-    [PARTNER_RAYQUAZA] =
+    [DIFFICULTY_NORMAL][PARTNER_RAYQUAZA] =
     {
         .party = TRAINER_PARTY(sParty_RayquazaPartner),
         .trainerClass = TRAINER_CLASS_WILD,
@@ -46,7 +46,7 @@
         .trainerName = _("Rayquaza"),
     },
 
-    [PARTNER_STEVEN_GRANITE_CAVE] =
+    [DIFFICULTY_NORMAL][PARTNER_STEVEN_GRANITE_CAVE] =
     {
         .party = TRAINER_PARTY(sParty_StevenPartnerGraniteCave),
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,

@@ -23,3 +23,13 @@ script RocketRefuge_B1F_EventScript_Grunt3 {
 	trainerbattle_single (TRAINER_ROCKET_GRUNT_REFUGE_3, "Another intruder!", "And it's just a kid…")
 	msgbox ("Whatever. I'm sure the grunts up ahead\nhave already bagged your friend.", MSGBOX_AUTOCLOSE)
 }
+
+script RocketRefuge_B1F_EventScript_Grunt4 {
+	trainerbattle_single (TRAINER_ROCKET_GRUNT_REFUGE_5, "Ambush!", "Not on me!")
+	msgbox ("You'd think hiding around a corner\nwould give me an advantage…", MSGBOX_AUTOCLOSE)
+}
+
+script RocketRefuge_B1F_EventScript_Grunt5 {
+	trainerbattle_single (TRAINER_ROCKET_GRUNT_REFUGE_6, "Don't think that you're walking\npast without greeting me!", "Should've kept to myself…")
+	msgbox ("The spinner to the left will take you\ntowards the exit.\pI recommend you do that and get out of here!", MSGBOX_AUTOCLOSE)
+}

@@ -10,3 +10,18 @@ mapscripts RocketRefuge_B2F_MapScripts {
 		VAR_LOOKER_ROCKET, 12: RocketRefuge_B2F_Looker
 	]
 }
+
+script RocketRefuge_B2F_EventScript_Grunt1 {
+	trainerbattle_single (TRAINER_ROCKET_GRUNT_REFUGE_4, "The intruder's you? Stop!", "Urk!")
+	msgbox ("I thought I heard the others say there\nwas a cop, but you're just some brat.", MSGBOX_AUTOCLOSE)
+}
+
+script RocketRefuge_B2F_EventScript_Grunt2 {
+	trainerbattle_single (TRAINER_ROCKET_GRUNT_REFUGE_7, "What do you think you're doing here?", "Would you just go away already?")
+	msgbox ("Is the Boss here?\pHmm, I wonder.", MSGBOX_AUTOCLOSE)
+}
+
+script RocketRefuge_B2F_EventScript_Grunt3 {
+	trainerbattle_single (TRAINER_ROCKET_GRUNT_REFUGE_8, "Not on my watch!", "You broke my watch!")
+	msgbox ("Must all brats be such a nuisance?", MSGBOX_AUTOCLOSE)
+}

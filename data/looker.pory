@@ -429,3 +429,148 @@ text RocketRefuge_B2F_LookerText {
 	"I will return to you once I am able.\p"
 	"This uniform would be a dead giveaway."
 }
+
+const GIOVANNI_ROCKETREFUGE_B3F = 3
+const LOOKER_ROCKETREFUGE_B3F = 4
+
+script RocketRefuge_B3F_Giovanni {
+	faceplayer
+	speakername (CommonText_Giovanni)
+	trainerbattle_single (TRAINER_GIOVANNI_REFUGE, "So this is what it's come to.\pAll of my men, put down like dogs before\nme.\pAwfully weak, I must think… but no,\nany failures lie at my feet alone.\pNo, I cannot allow the great Team\nRocket's operations in Hoenn to be\lput to an end by a mere child!", "What is it about this region that makes\nexpansion so difficult?", RocketRefuge_B3F_Looker, NO_MUSIC)
+}
+
+script RocketRefuge_B3F_Looker {
+	speakername (CommonText_Giovanni)
+	msgbox (format ("… … … … …\p"
+					"My anger is burning ever so strongly\nright now, but my eyes remain on our\lultimate goal.\p"
+					"{PLAYER}, you have made it clear that\nTeam Rocket has no right to operate\lwithin Hoenn at our current strength.\p"
+					"For now we will abscond, but know\nthat all Pokémon in this very region\lwill belong to us some day.\p"
+					"Team Rocket's operations will continue,\nbut may us never meet again!"))
+	closemessage
+	fadescreen (FADE_TO_BLACK)
+	removeobject (GIOVANNI_ROCKETREFUGE_B3F)
+	playse (SE_EXIT)
+	delay (30)
+	fadescreen (FADE_FROM_BLACK)
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	setvar (VAR_OBJ_GFX_ID_A, OBJ_EVENT_GFX_ROCKET_M)
+	addobject (LOOKER_ROCKETREFUGE_B3F)
+	setobjectxy (LOOKER_ROCKETREFUGE_B3F, 13, 13)
+	playbgm (MUS_HG_ENCOUNTER_ROCKET, FALSE)
+	speakername (CommonText_Q)
+	msgbox ("{PLAYER}!")
+	closemessage
+	applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkUp3)
+	waitmovement (0)
+	applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkLeft3)
+	waitmovement (0)
+	if (var(VAR_TEMP_0) == 12) {
+		applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkUp4)
+		waitmovement (0)
+		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+		applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkRight)
+	}
+	elif (var(VAR_TEMP_0) == 13) {
+		if (var(VAR_TEMP_1) == 5) {
+			applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkUp5)
+			waitmovement (0)
+		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+			applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkRight2)
+		}
+		else {
+			applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkUp3)
+			waitmovement (0)
+		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+			applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkRight2)
+		}
+	}
+	else {
+		applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkUp3)
+		waitmovement (0)
+		applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkRight4)
+		waitmovement (0)
+		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+		applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkInPlaceUp)
+	}
+	waitmovement (0)
+	speakername (CommonText_Q)
+	msgbox (format ("Giovanni, have you defeated him already?\p"
+					"Oh, my apologies.\nI did end up finding the correct\ldisguise."
+					"No further need for it, I presume?"))
+	closemessage
+	if (var(VAR_TEMP_0) != 14) {
+		applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_FaceUp)
+		waitmovement (0)
+	}
+	applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_FaceLeft)
+	waitmovement (0)
+	applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_FaceDown)
+	waitmovement (0)
+	applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_FaceRight)
+	waitmovement (0)
+	if (var(VAR_TEMP_0) == 14) {
+		applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_FaceUp)
+		waitmovement (0)
+	}
+	removeobject (LOOKER_ROCKETREFUGE_B3F)
+	setvar (VAR_OBJ_GFX_ID_A, OBJ_EVENT_GFX_LOOKER)
+	addobject (LOOKER_ROCKETREFUGE_B3F)
+	if (var(VAR_TEMP_0) == 14) {
+		applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_FaceUp)
+	}
+	else {
+		applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_FaceRight)
+	}
+	if (var(VAR_TEMP_0) == 12) {
+		setobjectxy (LOOKER_ROCKETREFUGE_B3F, 11, 6)
+	}
+	elif (var(VAR_TEMP_0) == 13) {
+		if (var(VAR_TEMP_1) == 5) {
+			setobjectxy (LOOKER_ROCKETREFUGE_B3F, 12, 5)
+		}
+		else {
+			setobjectxy (LOOKER_ROCKETREFUGE_B3F, 12, 7)
+		}
+	}
+	else {
+		setobjectxy (LOOKER_ROCKETREFUGE_B3F, 14, 7)
+	}
+	playbgm (MUS_PL_LOOKER, FALSE)
+	speakername (CommonText_Looker)
+	msgbox (format ("It is I, Looker, of course!\p"
+					"Giovanni has already escaped you,\nI presume.\p"
+					"Despair not!\p"
+					"This time, I did call for backup.\nIt is likely that the police\lalready have our villain in tow.\p"
+					"Though I would relish the chance\nto bring him to custody myself…\p"
+					"Regardless, you have done a great\ndeed on your own!\lTruly, I and the police at large owe\lyou a great deal for your help.\p"
+					"I had relayed your actions to my\nsuperiors in advance, and though I was\lchided for relying on someone so young,\lI have been given something that I can\lgrant you as reward.\p"
+					"Please, take these, {PLAYER}."))
+	closemessage
+	giveitem (ITEM_NORMAL_TERA_SHARD, 10)
+	giveitem (ITEM_BOTTLE_CAP, 1)
+	speakername (CommonText_Looker)
+	msgbox (format ("And you have a Pokévial, yes?\p"
+					"Allow me to increase its maximum\ncapacity for you."))
+	closemessage
+	pokevialincreasesize
+	msgbox (Text_PokevialSizeIncrease, MSGBOX_DEFAULT)
+	playfanfare (MUS_OBTAIN_ITEM)
+	waitfanfare
+	closemessage
+	speakername (CommonText_Looker)
+	msgbox (format ("That may seem like a great reward to\nyou, but the help you have given us is\linvaluable.\p"
+					"Now, hopefully Mr. Rocket remains in\nour custody.\p"
+					"But if he does not, I know who I can\nrely on in Hoenn.\p"
+					"If you ever do need assistance, you\nhave my number which you can contact.\p"
+					"For now, goodbye {PLAYER}!"))
+	closemessage
+	fadescreen (FADE_TO_BLACK)
+	removeobject (LOOKER_ROCKETREFUGE_B3F)
+	playse (SE_EXIT)
+	delay (30)
+	fadescreen (FADE_FROM_BLACK)
+	setvar (VAR_LOOKER_ROCKET, 14)
+	setflag (FLAG_HIDE_ROCKETS_IN_REFUGE)
+	fadedefaultbgm
+	release
+}

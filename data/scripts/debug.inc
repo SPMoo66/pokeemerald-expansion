@@ -146,7 +146,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	call TrainerHill_SetRocketRefuge
+	goto RocketRefuge_B3F_Looker
 	release
 	end
 
@@ -174,8 +174,8 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	setvar VAR_LOOKER_ROCKET, 12
-	warp MAP_ROCKET_REFUGE_B1F, 1
+	setvar VAR_LOOKER_ROCKET, 13
+	warp MAP_ROCKET_REFUGE_B3F, 14, 6
 	release
 	end
 

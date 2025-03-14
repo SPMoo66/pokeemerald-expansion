@@ -1,4 +1,11 @@
-mapscripts RocketRefuge_B3F_MapScripts {}
+const GIOVANNI_ROCKETREFUGE_B3F = 3
+const LOOKER_ROCKETREFUGE_B3F = 4
+
+mapscripts RocketRefuge_B3F_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_1)
+	}
+}
 
 script RocketRefuge_Teleport {
 	lock
@@ -6,4 +13,14 @@ script RocketRefuge_Teleport {
 	setvar (VAR_TEMP_0, 1)
 	delay (100)
 	release
+}
+
+script RocketRefuge_B3F_EventScript_Grunt1 {
+	trainerbattle_single (TRAINER_ROCKET_GRUNT_REFUGE_9, "Oh, not you again!", "A repeat defeat!")
+	msgbox ("Yeah, I remember you from Rustboro, kid.", MSGBOX_AUTOCLOSE)
+}
+
+script RocketRefuge_B3F_EventScript_Grunt2 {
+	trainerbattle_single (TRAINER_ROCKET_GRUNT_REFUGE_10, "Boss trusted me to stop anyone from\ngetting to him!\pYou're done!", "Boss will be furious!")
+	msgbox ("You can put me down, but you should\nfear what's to come.\pBoss will put you in your place, trust\nme.", MSGBOX_AUTOCLOSE)
 }

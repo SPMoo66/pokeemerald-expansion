@@ -863,8 +863,10 @@ RocketRefuge_B3F_Looker_20:
 # 573 "data/looker.pory"
 	setflag FLAG_HIDE_ROCKETS_IN_REFUGE
 # 574 "data/looker.pory"
-	fadedefaultbgm
+	setvar VAR_TEMP_0, 0
 # 575 "data/looker.pory"
+	fadedefaultbgm
+# 576 "data/looker.pory"
 	release
 	return
 

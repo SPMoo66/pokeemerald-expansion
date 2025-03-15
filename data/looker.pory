@@ -435,11 +435,13 @@ const LOOKER_ROCKETREFUGE_B3F = 4
 
 script RocketRefuge_B3F_Giovanni {
 	faceplayer
+	setflag (FLAG_CHALLENGING_TRAINER)
 	speakername (CommonText_Giovanni)
 	trainerbattle_single (TRAINER_GIOVANNI_REFUGE, "So this is what it's come to.\pAll of my men, put down like dogs before\nme.\pAwfully weak, I must think… but no,\nany failures lie at my feet alone.\pNo, I cannot allow the great Team\nRocket's operations in Hoenn to be\lput to an end by a mere child!", "What is it about this region that makes\nexpansion so difficult?", RocketRefuge_B3F_Looker, NO_MUSIC)
 }
 
 script RocketRefuge_B3F_Looker {
+	clearflag (FLAG_CHALLENGING_TRAINER)
 	speakername (CommonText_Giovanni)
 	msgbox (format ("… … … … …\p"
 					"My anger is burning ever so strongly\nright now, but my eyes remain on our\lultimate goal.\p"

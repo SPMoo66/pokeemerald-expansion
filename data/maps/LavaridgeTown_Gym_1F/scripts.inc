@@ -165,16 +165,11 @@ LavaridgeTown_Gym_1F_EventScript_GymGuidePostVictory::
 	release
 	end
 
-LavaridgeTown_Gym_1F_EventScript_LeftGymStatue::
+LavaridgeTown_Gym_1F_EventScript_GymStatue::
 	lockall
 	goto_if_set FLAG_BADGE04_GET, LavaridgeTown_Gym_1F_EventScript_GymStatueCertified
-	goto LavaridgeTown_Gym_1F_EventScript_GymStatue
-	end
-
-LavaridgeTown_Gym_1F_EventScript_RightGymStatue::
-	lockall
-	goto_if_set FLAG_BADGE04_GET, LavaridgeTown_Gym_1F_EventScript_GymStatueCertified
-	goto LavaridgeTown_Gym_1F_EventScript_GymStatue
+	msgbox LavaridgeTown_Gym_1F_Text_GymStatue, MSGBOX_DEFAULT
+	releaseall
 	end
 
 LavaridgeTown_Gym_1F_EventScript_GymStatueCertified::
@@ -182,8 +177,13 @@ LavaridgeTown_Gym_1F_EventScript_GymStatueCertified::
 	releaseall
 	end
 
-LavaridgeTown_Gym_1F_EventScript_GymStatue::
-	msgbox LavaridgeTown_Gym_1F_Text_GymStatue, MSGBOX_DEFAULT
+LavaridgeTown_Gym_1F_EventScript_GymStatueCertified2::
+	msgbox LavaridgeTown_Gym_1F_Text_GymStatueCertified2, MSGBOX_DEFAULT
+	releaseall
+	end
+
+LavaridgeTown_Gym_1F_EventScript_GymStatueCertified3::
+	msgbox LavaridgeTown_Gym_1F_Text_GymStatueCertified3, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -362,12 +362,26 @@ LavaridgeTown_Gym_1F_Text_FlanneryPostBattle:
 	.string "the Gym Leader of Petalburg.$"
 
 LavaridgeTown_Gym_1F_Text_GymStatue:
-	.string "Lavaridge Town Pokémon Gym$"
+	.string "Lavaridge Town Pokémon Gym\p"
+	.string "Flannery's certified Trainers:\n"
+	.string "Sakura, Jakson$"
 
 LavaridgeTown_Gym_1F_Text_GymStatueCertified:
 	.string "Lavaridge Town Pokémon Gym\p"
 	.string "Flannery's certified Trainers:\n"
-	.string "{PLAYER}$"
+	.string "Sakura, Jakson, {PLAYER}$"
+
+LavaridgeTown_Gym_1F_Text_GymStatueCertified2:
+	.string "Lavaridge Town Pokémon Gym\p"
+	.string "Flannery's certified Trainers:\n"
+	.string "Sakura, Jakson, {PLAYER}, Redd\l"
+	.string "Harper, Baron$"
+
+LavaridgeTown_Gym_1F_Text_GymStatueCertified3:
+	.string "Lavaridge Town Pokémon Gym\p"
+	.string "Flannery's certified Trainers:\n"
+	.string "Sakura, Jakson, {PLAYER}, Redd\l"
+	.string "Harper, Baron, Wally$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPreRematch:
 	.string "Flannery: Losing a battle isn't going\n"

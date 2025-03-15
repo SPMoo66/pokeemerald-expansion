@@ -300,7 +300,7 @@
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "LavaridgeTown_Gym_1F_EventScript_LeftGymStatue"
+      "script": "LavaridgeTown_Gym_1F_EventScript_GymStatue"
     },
     {
       "type": "sign",
@@ -308,7 +308,7 @@
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "LavaridgeTown_Gym_1F_EventScript_RightGymStatue"
+      "script": "LavaridgeTown_Gym_1F_EventScript_GymStatue"
     }
   ]
 }

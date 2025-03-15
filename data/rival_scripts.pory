@@ -5,7 +5,9 @@
 	# 2: Set after rival fight in Petalburg City
 	# 3: Set after entering Rustboro City
 	# 4: Set after Brendan/May is fought before traveling to Dewford Town
-
+	# 5: Set after arriving traveling to Slateport by boat
+	# 6: Set after entering Mauville City
+	# 7: Set after getting past the Rock Smash boulders on Route 111
 
 #Scene01
 script Rival_Scene01 {

@@ -236,16 +236,13 @@ MauvilleCity_Gym_EventScript_GymGuidePostVictory::
 	release
 	end
 
-MauvilleCity_Gym_EventScript_LeftGymStatue::
+MauvilleCity_Gym_EventScript_GymStatue::
 	lockall
+	goto_if_set FLAG_RECEIVED_RED_OR_BLUE_ORB, MauvilleCity_Gym_EventScript_GymStatueCertified3
+	goto_if_ge VAR_EMERALBODY_RIVAL_STATE, 7, MauvilleCity_Gym_EventScript_GymStatueCertified2
 	goto_if_set FLAG_BADGE03_GET, MauvilleCity_Gym_EventScript_GymStatueCertified
-	goto MauvilleCity_Gym_EventScript_GymStatue
-	end
-
-MauvilleCity_Gym_EventScript_RightGymStatue::
-	lockall
-	goto_if_set FLAG_BADGE03_GET, MauvilleCity_Gym_EventScript_GymStatueCertified
-	goto MauvilleCity_Gym_EventScript_GymStatue
+	msgbox MauvilleCity_Gym_Text_GymStatue, MSGBOX_DEFAULT
+	releaseall
 	end
 
 MauvilleCity_Gym_EventScript_GymStatueCertified::
@@ -253,8 +250,13 @@ MauvilleCity_Gym_EventScript_GymStatueCertified::
 	releaseall
 	end
 
-MauvilleCity_Gym_EventScript_GymStatue::
-	msgbox MauvilleCity_Gym_Text_GymStatue, MSGBOX_DEFAULT
+MauvilleCity_Gym_EventScript_GymStatueCertified2::
+	msgbox MauvilleCity_Gym_Text_GymStatueCertified2, MSGBOX_DEFAULT
+	releaseall
+	end
+
+MauvilleCity_Gym_EventScript_GymStatueCertified3::
+	msgbox MauvilleCity_Gym_Text_GymStatueCertified3, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -384,12 +386,26 @@ MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor:
 	.string "Go forth and endeavor, youngster!$"
 
 MauvilleCity_Gym_Text_GymStatue:
-	.string "Mauville City Pokémon Gym$"
+	.string "Mauville City Pokémon Gym\p"
+	.string "Wattson's certified Trainers:\n"
+	.string "Sakura, Jakson$"
 
 MauvilleCity_Gym_Text_GymStatueCertified:
 	.string "Mauville City Pokémon Gym\p"
 	.string "Wattson's certified Trainers:\n"
-	.string "{PLAYER}$"
+	.string "Sakura, Jakson, {PLAYER}$"
+
+MauvilleCity_Gym_Text_GymStatueCertified2:
+	.string "Mauville City Pokémon Gym\p"
+	.string "Wattson's certified Trainers:\n"
+	.string "Sakura, Jakson, {PLAYER}, Redd,\l"
+	.string "Harper, Baron$"
+
+MauvilleCity_Gym_Text_GymStatueCertified3:
+	.string "Mauville City Pokémon Gym\p"
+	.string "Wattson's certified Trainers:\n"
+	.string "Sakura, Jakson, {PLAYER}, Redd,\l"
+	.string "Harper, Baron, Wally$"
 
 MauvilleCity_Gym_Text_WattsonPreRematch:
 	.string "Wattson: Ah-ha! Here at last!\n"

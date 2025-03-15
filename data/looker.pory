@@ -571,7 +571,6 @@ script RocketRefuge_B3F_Looker {
 	fadescreen (FADE_FROM_BLACK)
 	setvar (VAR_LOOKER_ROCKET, 14)
 	setflag (FLAG_HIDE_ROCKETS_IN_REFUGE)
-	setvar (VAR_TEMP_0, 0)
 	fadedefaultbgm
 	release
 }

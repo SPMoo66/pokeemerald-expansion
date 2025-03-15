@@ -138,21 +138,6 @@ FortreeCity_Gym_EventScript_GymStatueCertified3::
 	releaseall
 	end
 
-FortreeCity_Gym_Text_GymGuideAdvice:
-	.string "Yo, how's it going, Champion-\n"
-	.string "bound {PLAYER}?\p"
-	.string "Fortree Gym Leader Winona is\n"
-	.string "a master of Flying-type Pokémon.\p"
-	.string "She's waiting at the back of this Gym,\n"
-	.string "behind the rotating doors.\p"
-	.string "She's waiting for new challengers\n"
-	.string "who are trying to take wing!\p"
-	.string "Okay, go for it!$"
-
-FortreeCity_Gym_Text_GymGuidePostVictory:
-	.string "You did it!\n"
-	.string "You've achieved liftoff!$"
-
 FortreeCity_Gym_Text_JaredIntro:
 	.string "Behold the elegant battle style of\n"
 	.string "Bird Pokémon!$"

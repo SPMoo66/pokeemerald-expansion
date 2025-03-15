@@ -21,7 +21,7 @@ text RustboroCity_Gym_Text_GymGuideAdvice {
 			"punch that will leave you frozen stiff!\p"
 			"Come see me afterwards, if you beat\n"
 			"the Gym Leader.\p"
-			"Well, go for it!$")
+			"Well, go for it!")
 }
 
 text RustboroCity_Gym_Text_GymGuidePostVictory {
@@ -34,7 +34,7 @@ text RustboroCity_Gym_Text_GymGuidePostVictory {
 			"In other words…\p"
 			"You've climbed the first step on\n"
 			"the stairs to the Championship!\p"
-			"That's got to feel awesome!$")
+			"That's got to feel awesome!")
 }
 
 # Dewford
@@ -52,11 +52,138 @@ text DewfordTown_Gym_Text_GymGuideAdvice {
 			"the ocean floor.\p"
 			"But it will get brighter after defeating\n"
 			"the Trainers in your way.\p"
-			"Hey, okay, go for it!$")
+			"Hey, okay, go for it!")
 }
 
 text DewfordTown_Gym_Text_GymGuidePostVictory {
 	format(	"Whoah! It's turned too bright in here!\p"
-			"Your future is bright, too!$")
+			"Your future is bright, too!")
+}
+
+# Mauville
+text MauvilleCity_Gym_Text_GymGuideAdvice {
+	format(	"Hey, how's it going, Champion-\n"
+			"bound {PLAYER}?\p"
+			"Wattson, the Leader of Mauville Gym,\n"
+			"uses Steel and Poison-type Pokémon.\p"
+			"If you challenge him with Fairy-type\n"
+			"Pokémon, he'll melt them!\p"
+			"Using Ground-type Pokémon to sink\n"
+			"them in a chasm will give you your\l"
+			"best shot!\p"
+			"And he's put in switch-controlled\n"
+			"doors all over his Gym! Eccentric!\p"
+			"Hey, go for it!")
+}
+
+text MauvilleCity_Gym_Text_GymGuidePostVictory {
+	format(	"Whoa, you're elctrifying!\n"
+			"You've powered the door open!")
+}
+
+#Lavaridge
+text LavaridgeTown_Gym_1F_Text_GymGuideAdvice {
+	format(	"Hey, how's it going, Champion-\n"
+			"bound {PLAYER}?\p"
+			"Lavaridge's Gym Leader Flannery\n"
+			"uses Water and Fairy-type Pokémon.\p"
+			"There's no one type that she'll be able\n"
+			"to crush with those, and none you could\l"
+			"use for an easy win against her!\p"
+			"Her passion for Pokémon burns stronger\n"
+			"and hotter than those types let on!\p"
+			"Go for it!")
+}
+
+text LavaridgeTown_Gym_1F_Text_GymGuidePostVictory {
+			"Yow! That was a dazzling battle!"
+}
+
+#Petalburg
+text PetalburgCity_Gym_Text_GymGuideAdvice {
+	format(	"Hey, how's it going, Champion-\n"
+			"bound {PLAYER}?\p"
+			"The doors in this Gym open when you\n"
+			"beat the awaiting Trainers.\p"
+			"Whoops! The doors in this room are\n"
+			"already open, so don't attack me!\p"
+			"The Trainers and Leader of Petalburg\n"
+			"Gym use Fire and Ghost-type Pokémon.\p"
+			"Once again, there's no easy picks\n"
+			"against that combination, but Bug-type\l"
+			"Pokémon won't make a dent in them!\p"
+			"Well, hey, go for it!$")
+}
+
+text PetalburgCity_Gym_Text_GymGuidePostVictory {
+	format(	"{PLAYER}! Whoa! You've overcome even\n"
+			"your own father!\p"
+			"Like, whoa!\n"
+			"What a stunning turn of events!")
+}
+
+#Fortree
+text FortreeCity_Gym_Text_GymGuideAdvice {
+	format(	"Yo, how's it going, Champion-\n"
+			"bound {PLAYER}?\p"
+			"Fortree Gym Leader Winona is a master\n"
+			"of Grass and Fighting-type Pokémon.\p"
+			"Using Flying-types against her is a\n"
+			"safe bet, but Rock-types will be\l"
+			"crushed!\p"
+			"She's waiting at the back of this Gym,\n"
+			"behind the rotating doors.\p"
+			"She's waiting for new challengers\n"
+			"who are trying to take wing!\p"
+			"Okay, go for it!")
+}
+
+text FortreeCity_Gym_Text_GymGuidePostVictory {
+	format(	"You did it!\n"
+			"You've achieved liftoff!")
+}
+
+#Mossdeep
+text MossdeepCity_Gym_Text_GymGuideAdvice {
+	format(	"Yo, how's it going, Champion-bound\n"
+			"{PLAYER}?\p"
+			"The Gym Leaders here use Electric\n"
+			"and Rock-type Pokémon.\p"
+			"If you use your Flying-type Pokémon\n"
+			"against them, they'll be grounded!\p"
+			"Plus, they'll come at you with\n"
+			"outstanding combination attacks.\p"
+			"If you want to win, you'll need to show\n"
+			"them how tight you are with your\l"
+			"Pokémon. Go for it!")
+}
+
+text MossdeepCity_Gym_Text_GymGuidePostVictory {
+	format(	"Wow, you're astounding!\n"
+			"You're one great Trainer!")
+}
+
+#Sootopolis
+text SootopolisCity_Gym_1F_Text_GymGuideAdvice {
+	format(	"Yo! How's it going, Champion-\n"
+			"bound {PLAYER}?\p"
+			"Sootopolis's Gym Leader Juan is a\n"
+			"master of Dragon and Normal-type\l"
+			"Pokémon.\p"
+			"Advice for that?\n"
+			"You should be an expert on\l"
+			"matchups by now!\p"
+			"And, to get to Juan, an icy floor\n"
+			"will hamper your progress…\p"
+			"The rest of the way, you have to\n"
+			"go for it yourself!")
+}
+
+text SootopolisCity_Gym_1F_Text_GymGuidePostVictory {
+	format(	"Yow! You've beaten even Juan, who\n"
+			"was supposedly the best in all Hoenn!\p"
+			"Okay! Check out your Trainer Card.\p"
+			"If you've gotten all the Badges, you're\n"
+			"set for the Pokémon League challenge!")
 }
 

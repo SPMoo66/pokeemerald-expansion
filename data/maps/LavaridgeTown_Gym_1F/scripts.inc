@@ -189,20 +189,6 @@ LavaridgeTown_Gym_1F_EventScript_GymStatueCertified3::
 	releaseall
 	end
 
-LavaridgeTown_Gym_1F_Text_GymGuideAdvice:
-	.string "Hey, how's it going, Champion-\n"
-	.string "bound {PLAYER}?\p"
-	.string "Lavaridge's Gym Leader Flannery\n"
-	.string "uses Fire-type Pokémon.\p"
-	.string "Her passion for Pokémon burns stronger\n"
-	.string "and hotter than a volcano.\p"
-	.string "Don't get too close to her--you'll burn!\n"
-	.string "Hose her down with water and then\l"
-	.string "go for it!$"
-
-LavaridgeTown_Gym_1F_Text_GymGuidePostVictory:
-	.string "Yow! That was a scorching-hot battle!$"
-
 LavaridgeTown_Gym_1F_Text_ColeIntro:
 	.string "Owowowowow!\n"
 	.string "Yikes, it's hot!$"

@@ -57,3 +57,124 @@ DewfordTown_Gym_Text_GymGuidePostVictory::
 # 58 "data/gym_guide.pory"
 	.string "Whoah! It's turned too bright in here!\p"
 	.string "Your future is bright, too!$"
+
+MauvilleCity_Gym_Text_GymGuideAdvice::
+# 64 "data/gym_guide.pory"
+	.string "Hey, how's it going, Champion-\n"
+	.string "bound {PLAYER}?\p"
+	.string "Wattson, the Leader of Mauville Gym,\n"
+	.string "uses Steel and Poison-type Pokémon.\p"
+	.string "If you challenge him with Fairy-type\n"
+	.string "Pokémon, he'll melt them!\p"
+	.string "Using Ground-type Pokémon to sink\n"
+	.string "them in a chasm will give you your\l"
+	.string "best shot!\p"
+	.string "And he's put in switch-controlled\n"
+	.string "doors all over his Gym! Eccentric!\p"
+	.string "Hey, go for it!$"
+
+MauvilleCity_Gym_Text_GymGuidePostVictory::
+# 79 "data/gym_guide.pory"
+	.string "Whoa, you're elctrifying!\n"
+	.string "You've powered the door open!$"
+
+LavaridgeTown_Gym_1F_Text_GymGuideAdvice::
+# 85 "data/gym_guide.pory"
+	.string "Hey, how's it going, Champion-\n"
+	.string "bound {PLAYER}?\p"
+	.string "Lavaridge's Gym Leader Flannery\n"
+	.string "uses Water and Fairy-type Pokémon.\p"
+	.string "There's no one type that she'll be able\n"
+	.string "to crush with those, and none you could\l"
+	.string "use for an easy win against her!\p"
+	.string "Her passion for Pokémon burns stronger\n"
+	.string "and hotter than those types let on!\p"
+	.string "Go for it!$"
+
+LavaridgeTown_Gym_1F_Text_GymGuidePostVictory::
+# 98 "data/gym_guide.pory"
+	.string "Yow! That was a dazzling battle!$"
+
+PetalburgCity_Gym_Text_GymGuideAdvice::
+# 103 "data/gym_guide.pory"
+	.string "Hey, how's it going, Champion-\n"
+	.string "bound {PLAYER}?\p"
+	.string "The doors in this Gym open when you\n"
+	.string "beat the awaiting Trainers.\p"
+	.string "Whoops! The doors in this room are\n"
+	.string "already open, so don't attack me!\p"
+	.string "The Trainers and Leader of Petalburg\n"
+	.string "Gym use Fire and Ghost-type Pokémon.\p"
+	.string "Once again, there's no easy picks\n"
+	.string "against that combination, but Bug-type\l"
+	.string "Pokémon won't make a dent in them!\p"
+	.string "Well, hey, go for it!$"
+
+PetalburgCity_Gym_Text_GymGuidePostVictory::
+# 118 "data/gym_guide.pory"
+	.string "{PLAYER}! Whoa! You've overcome even\n"
+	.string "your own father!\p"
+	.string "Like, whoa!\n"
+	.string "What a stunning turn of events!$"
+
+FortreeCity_Gym_Text_GymGuideAdvice::
+# 126 "data/gym_guide.pory"
+	.string "Yo, how's it going, Champion-\n"
+	.string "bound {PLAYER}?\p"
+	.string "Fortree Gym Leader Winona is a master\n"
+	.string "of Grass and Fighting-type Pokémon.\p"
+	.string "Using Flying-types against her is a\n"
+	.string "safe bet, but Rock-types will be\l"
+	.string "crushed!\p"
+	.string "She's waiting at the back of this Gym,\n"
+	.string "behind the rotating doors.\p"
+	.string "She's waiting for new challengers\n"
+	.string "who are trying to take wing!\p"
+	.string "Okay, go for it!$"
+
+FortreeCity_Gym_Text_GymGuidePostVictory::
+# 141 "data/gym_guide.pory"
+	.string "You did it!\n"
+	.string "You've achieved liftoff!$"
+
+MossdeepCity_Gym_Text_GymGuideAdvice::
+# 147 "data/gym_guide.pory"
+	.string "Yo, how's it going, Champion-bound\n"
+	.string "{PLAYER}?\p"
+	.string "The Gym Leaders here use Electric\n"
+	.string "and Rock-type Pokémon.\p"
+	.string "If you use your Flying-type Pokémon\n"
+	.string "against them, they'll be grounded!\p"
+	.string "Plus, they'll come at you with\n"
+	.string "outstanding combination attacks.\p"
+	.string "If you want to win, you'll need to show\n"
+	.string "them how tight you are with your\l"
+	.string "Pokémon. Go for it!$"
+
+MossdeepCity_Gym_Text_GymGuidePostVictory::
+# 161 "data/gym_guide.pory"
+	.string "Wow, you're astounding!\n"
+	.string "You're one great Trainer!$"
+
+SootopolisCity_Gym_1F_Text_GymGuideAdvice::
+# 167 "data/gym_guide.pory"
+	.string "Yo! How's it going, Champion-\n"
+	.string "bound {PLAYER}?\p"
+	.string "Sootopolis's Gym Leader Juan is a\n"
+	.string "master of Dragon and Normal-type\l"
+	.string "Pokémon.\p"
+	.string "Advice for that?\n"
+	.string "You should be an expert on\l"
+	.string "matchups by now!\p"
+	.string "And, to get to Juan, an icy floor\n"
+	.string "will hamper your progress…\p"
+	.string "The rest of the way, you have to\n"
+	.string "go for it yourself!$"
+
+SootopolisCity_Gym_1F_Text_GymGuidePostVictory::
+# 182 "data/gym_guide.pory"
+	.string "Yow! You've beaten even Juan, who\n"
+	.string "was supposedly the best in all Hoenn!\p"
+	.string "Okay! Check out your Trainer Card.\p"
+	.string "If you've gotten all the Badges, you're\n"
+	.string "set for the Pokémon League challenge!$"

@@ -173,25 +173,6 @@ SootopolisCity_Gym_1F_EventScript_GymStatueCertified2::
 	releaseall
 	end
 
-SootopolisCity_Gym_1F_Text_GymGuideAdvice:
-	.string "Yo! How's it going, Champion-\n"
-	.string "bound {PLAYER}?\p"
-	.string "Sootopolis's Gym Leader Juan is\n"
-	.string "a master of Water-type Pokémon.\p"
-	.string "And, to get to Juan, an icy floor\n"
-	.string "will hamper your progress…\p"
-	.string "Listen, I'm sorry, but that's all the\n"
-	.string "advice that I have for you.\p"
-	.string "The rest of the way, you have to\n"
-	.string "go for it yourself!$"
-
-SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
-	.string "Yow! You've beaten even Juan, who\n"
-	.string "was supposedly the best in all Hoenn!\p"
-	.string "Okay! Check out your Trainer Card.\p"
-	.string "If you've gotten all the Badges, you're\n"
-	.string "set for the Pokémon League challenge!$"
-
 SootopolisCity_Gym_1F_Text_JuanIntro:
 	.string "Let me ask you.\n"
 	.string "Did you know?\l"

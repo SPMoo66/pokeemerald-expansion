@@ -232,24 +232,6 @@ MossdeepCity_Gym_EventScript_RedFloorSwitch::
 	freerotatingtilepuzzle
 	end
 
-MossdeepCity_Gym_Text_GymGuideAdvice:
-	.string "Yo, how's it going, Champion-bound\n"
-	.string "{PLAYER}?\p"
-	.string "The Gym Leaders here use\n"
-	.string "Psychic-type Pokémon.\p"
-	.string "If you go up against them with\n"
-	.string "Fighting- or Poison-type Pokémon,\l"
-	.string "they'll inflict horrible damage!\p"
-	.string "Plus, they'll come at you with\n"
-	.string "outstanding combination attacks.\p"
-	.string "If you want to win, you'll need to show\n"
-	.string "them how tight you are with your\l"
-	.string "Pokémon. Go for it!$"
-
-MossdeepCity_Gym_Text_GymGuidePostVictory:
-	.string "Wow, you're astounding!\n"
-	.string "You're one great Trainer!$"
-
 MossdeepCity_Gym_Text_PrestonIntro:
 	.string "Battles hinge on the strength of your\n"
 	.string "spirit! The weak-spirited will never win!$"

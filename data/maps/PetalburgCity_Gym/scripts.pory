@@ -1389,30 +1389,6 @@ PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough:
 	.string "I honestly think that no amount of\n"
 	.string "training would ever be enough.$"
 
-PetalburgCity_Gym_Text_GymGuideAdvice:
-	.string "Hey, how's it going, Champion-\n"
-	.string "bound {PLAYER}?\p"
-	.string "The doors in this Gym open when you\n"
-	.string "beat the awaiting Trainers.\p"
-	.string "Whoops! The doors in this room are\n"
-	.string "already open, so don't attack me!\p"
-	.string "The Trainers of Petalburg Gym\n"
-	.string "use all kinds of items.\p"
-	.string "The door at the left leads to\n"
-	.string "the Speed Room.\p"
-	.string "The door at the right leads to\n"
-	.string "the Accuracy Room.\p"
-	.string "The room's name will be on\n"
-	.string "the door, so choose carefully.\p"
-	.string "Once you've chosen the door…\n"
-	.string "Well, hey, go for it!$"
-
-PetalburgCity_Gym_Text_GymGuidePostVictory:
-	.string "{PLAYER}! Whoa! You've overcome even\n"
-	.string "your own father!\p"
-	.string "Like, whoa!\n"
-	.string "What a stunning turn of events!$"
-
 PetalburgCity_Gym_Text_RandallIntro:
 	.string "The ability to attack before the\n"
 	.string "opponent…\p"

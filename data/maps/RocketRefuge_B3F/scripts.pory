@@ -7,14 +7,6 @@ mapscripts RocketRefuge_B3F_MapScripts {
 	}
 }
 
-script RocketRefuge_Teleport {
-	lock
-	warp (MAP_ROCKET_REFUGE_B1F, 2)
-	setvar (VAR_TEMP_0, 1)
-	delay (100)
-	release
-}
-
 script RocketRefuge_B3F_EventScript_Grunt1 {
 	trainerbattle_single (TRAINER_ROCKET_GRUNT_REFUGE_9, "Oh, not you again!", "A repeat defeat!")
 	msgbox ("Yeah, I remember you from Rustboro, kid.", MSGBOX_AUTOCLOSE)

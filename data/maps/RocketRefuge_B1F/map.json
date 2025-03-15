@@ -138,8 +138,8 @@
       "x": 5,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_ROCKET_REFUGE_B1F",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_ROCKET_REFUGE_B3F",
+      "dest_warp_id": "2"
     },
     {
       "x": 24,

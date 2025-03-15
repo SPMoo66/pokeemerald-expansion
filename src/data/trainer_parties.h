@@ -14215,18 +14215,30 @@ static const struct TrainerMon sParty_GiovanniDevoncorp[] = {
     {
     .lvl = 28,
     .species = SPECIES_DEWOTT,
+	.ability = ABILITY_QUICK_DRAW,
+    .heldItem = ITEM_MYSTIC_WATER,
+    .moves = {MOVE_WATER_PULSE, MOVE_AQUA_JET, MOVE_ENCORE, MOVE_REVENGE}
     },
     {
     .lvl = 28,
     .species = SPECIES_RHYHORN,
+	.ability = ABILITY_LIGHTNING_ROD,
+    .heldItem = ITEM_LOADED_DICE,
+    .moves = {MOVE_BULLDOZE, MOVE_ROCK_BLAST, MOVE_FURY_ATTACK, MOVE_ROCK_POLISH}
     },
     {
     .lvl = 28,
     .species = SPECIES_PERSIAN,
+	.ability = ABILITY_TECHNICIAN,
+    .heldItem = ITEM_SALAC_BERRY,
+    .moves = {MOVE_DIRE_CLAW, MOVE_CRUSH_CLAW, MOVE_THIEF, MOVE_NONE}
     },
     {
     .lvl = 30,
     .species = SPECIES_DEINO,
+	.ability = ABILITY_HUSTLE,
+    .heldItem = ITEM_WIDE_LENS,
+    .moves = {MOVE_HEADBUTT, MOVE_ASSURANCE, MOVE_TAUNT, MOVE_PROTECT}
     }
 };
 

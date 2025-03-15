@@ -984,53 +984,53 @@ static const union AffineAnimCmd *const sAffineAnims_CrossingMonPics[] =
 
 static const struct InGameTrade sIngameTrades[] =
 {
-    [INGAME_TRADE_SEEDOT] =
+    [INGAME_TRADE_FRIGIBAX] =
     {
-        .nickname = _("Dots"),
-        .species = SPECIES_SEEDOT,
+        .nickname = _("Freezy"),
+        .species = SPECIES_FRIGIBAX,
         .ivs = {5, 4, 5, 4, 4, 4},
-        .abilityNum = 1,
+        .abilityNum = 0,
         .otId = 38726,
         .conditions = {30, 5, 5, 5, 5},
         .personality = 0x84,
-        .heldItem = ITEM_CHESTO_BERRY,
+        .heldItem = ITEM_BABIRI_BERRY,
         .mailNum = -1,
-        .otName = _("Kobe"),
+        .otName = _("Steven"),
         .otGender = MALE, 
         .sheen = 10,
-        .requestedSpecies = SPECIES_RALTS
+        .requestedSpecies = SPECIES_DRATINI
     },
-    [INGAME_TRADE_PLUSLE] =
+    [INGAME_TRADE_BOMBIRDIER] =
     {
-        .nickname = _("Pluses"),
-        .species = SPECIES_PLUSLE,
+        .nickname = _("Delivery"),
+        .species = SPECIES_BOMBIRDIER,
         .ivs = {4, 4, 4, 5, 5, 4},
-        .abilityNum = 0,
+        .abilityNum = 2,
         .otId = 73996,
         .conditions = {5, 5, 30, 5, 5},
         .personality = 0x6F,
-        .heldItem = ITEM_WOOD_MAIL,
+        .heldItem = ITEM_NUGGET,
         .mailNum = 0,
-        .otName = _("Roman"),
+        .otName = _("Jon"),
         .otGender = MALE, 
         .sheen = 10,
-        .requestedSpecies = SPECIES_VOLBEAT
+        .requestedSpecies = SPECIES_TROPIUS
     },
-    [INGAME_TRADE_HORSEA] =
+    [INGAME_TRADE_SKARMORY_F] =
     {
-        .nickname = _("Seasor"),
-        .species = SPECIES_HORSEA,
+        .nickname = _("Skarmor"),
+        .species = SPECIES_SKARMORY_FRIBIAN,
         .ivs = {5, 4, 4, 4, 5, 4},
-        .abilityNum = 0,
+        .abilityNum = 2,
         .otId = 46285,
         .conditions = {5, 5, 5, 5, 30},
         .personality = 0x7F,
-        .heldItem = ITEM_WAVE_MAIL,
+        .heldItem = ITEM_CHARCOAL,
         .mailNum = 1,
-        .otName = _("Skylar"),
+        .otName = _("Alex"),
         .otGender = MALE, 
         .sheen = 10,
-        .requestedSpecies = SPECIES_BAGON
+        .requestedSpecies = SPECIES_WOBBUFFET
     },
     [INGAME_TRADE_MEOWTH] =
     {
@@ -1043,7 +1043,7 @@ static const struct InGameTrade sIngameTrades[] =
         .personality = 0x8B,
         .heldItem = ITEM_RETRO_MAIL,
         .mailNum = 2,
-        .otName = _("Isis"),
+        .otName = _("Erika"),
         .otGender = FEMALE, 
         .sheen = 10,
         .requestedSpecies = SPECIES_SKITTY

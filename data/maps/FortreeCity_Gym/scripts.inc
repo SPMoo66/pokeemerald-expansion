@@ -114,16 +114,13 @@ FortreeCity_Gym_EventScript_GymGuidePostVictory::
 	release
 	end
 
-FortreeCity_Gym_EventScript_LeftGymStatue::
+FortreeCity_Gym_EventScript_GymStatue::
 	lockall
+	goto_if_set FLAG_BADGE07_GET, FortreeCity_Gym_EventScript_GymStatueCertified3
+	goto_if_ge VAR_EMERALBODY_RIVAL_STATE, 7, FortreeCity_Gym_EventScript_GymStatueCertified2
 	goto_if_set FLAG_BADGE06_GET, FortreeCity_Gym_EventScript_GymStatueCertified
-	goto FortreeCity_Gym_EventScript_GymStatue
-	end
-
-FortreeCity_Gym_EventScript_RightGymStatue::
-	lockall
-	goto_if_set FLAG_BADGE06_GET, FortreeCity_Gym_EventScript_GymStatueCertified
-	goto FortreeCity_Gym_EventScript_GymStatue
+	msgbox FortreeCity_Gym_Text_GymStatue, MSGBOX_DEFAULT
+	releaseall
 	end
 
 FortreeCity_Gym_EventScript_GymStatueCertified::
@@ -131,8 +128,13 @@ FortreeCity_Gym_EventScript_GymStatueCertified::
 	releaseall
 	end
 
-FortreeCity_Gym_EventScript_GymStatue::
-	msgbox FortreeCity_Gym_Text_GymStatue, MSGBOX_DEFAULT
+FortreeCity_Gym_EventScript_GymStatueCertified2::
+	msgbox FortreeCity_Gym_Text_GymStatueCertified2, MSGBOX_DEFAULT
+	releaseall
+	end
+
+FortreeCity_Gym_EventScript_GymStatueCertified3::
+	msgbox FortreeCity_Gym_Text_GymStatueCertified3, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -279,12 +281,26 @@ FortreeCity_Gym_Text_WinonaPostBattle:
 	.string "devoted to Bird Pokémon.$"
 
 FortreeCity_Gym_Text_GymStatue:
-	.string "Fortree City Pokémon Gym$"
+	.string "Fortree City Pokémon Gym\p"
+	.string "Winona's certified Trainers:\n"
+	.string "Sakura, Jakson, Redd$"
 
 FortreeCity_Gym_Text_GymStatueCertified:
 	.string "Fortree City Pokémon Gym\p"
 	.string "Winona's certified Trainers:\n"
-	.string "{PLAYER}$"
+	.string "Sakura, Jakson, Redd, {PLAYER}$"
+
+FortreeCity_Gym_Text_GymStatueCertified2:
+	.string "Fortree City Pokémon Gym\p"
+	.string "Winona's certified Trainers:\n"
+	.string "Sakura, Jakson, Redd, {PLAYER},\l"
+	.string "Harper, Baron$"
+
+FortreeCity_Gym_Text_GymStatueCertified3:
+	.string "Fortree City Pokémon Gym\p"
+	.string "Winona's certified Trainers:\n"
+	.string "Sakura, Jakson, Redd, {PLAYER},\l"
+	.string "Harper, Baron, Wally$"
 
 FortreeCity_Gym_Text_WinonaPreRematch:
 	.string "Winona: We humans can never escape\n"

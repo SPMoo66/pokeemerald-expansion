@@ -686,7 +686,7 @@
       "y": 34,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "MossdeepCity_Gym_EventScript_LeftGymStatue"
+      "script": "MossdeepCity_Gym_EventScript_GymStatue"
     },
     {
       "type": "sign",
@@ -694,7 +694,7 @@
       "y": 34,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "MossdeepCity_Gym_EventScript_RightGymStatue"
+      "script": "MossdeepCity_Gym_EventScript_GymStatue"
     }
   ]
 }

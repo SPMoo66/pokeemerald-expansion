@@ -155,16 +155,12 @@ SootopolisCity_Gym_1F_EventScript_GymGuidePostVictory::
 	release
 	end
 
-SootopolisCity_Gym_1F_EventScript_LeftGymStatue::
+SootopolisCity_Gym_1F_EventScript_GymStatue::
 	lockall
+	goto_if_ge VAR_EMERALBODY_RIVAL_STATE, 7, MossdeepCity_Gym_EventScript_GymStatueCertified2
 	goto_if_set FLAG_BADGE08_GET, SootopolisCity_Gym_1F_EventScript_GymStatueCertified
-	goto SootopolisCity_Gym_1F_EventScript_GymStatue
-	end
-
-SootopolisCity_Gym_1F_EventScript_RightGymStatue::
-	lockall
-	goto_if_set FLAG_BADGE08_GET, SootopolisCity_Gym_1F_EventScript_GymStatueCertified
-	goto SootopolisCity_Gym_1F_EventScript_GymStatue
+	msgbox SootopolisCity_Gym_1F_Text_GymStatue, MSGBOX_DEFAULT
+	releaseall
 	end
 
 SootopolisCity_Gym_1F_EventScript_GymStatueCertified::
@@ -172,8 +168,8 @@ SootopolisCity_Gym_1F_EventScript_GymStatueCertified::
 	releaseall
 	end
 
-SootopolisCity_Gym_1F_EventScript_GymStatue::
-	msgbox SootopolisCity_Gym_1F_Text_GymStatue, MSGBOX_DEFAULT
+SootopolisCity_Gym_1F_EventScript_GymStatueCertified2::
+	msgbox SootopolisCity_Gym_1F_Text_GymStatueCertified2, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -277,12 +273,21 @@ SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
 	.string "Badge from the Gym in Fortree.$"
 
 SootopolisCity_Gym_1F_Text_GymStatue:
-	.string "Sootopolis City Pokémon Gym$"
+	.string "Sootopolis City Pokémon Gym\p"
+	.string "Juan's certified Trainers:\n"
+	.string "Wally, Sakura, Jakson, Redd$"
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified:
 	.string "Sootopolis City Pokémon Gym\p"
 	.string "Juan's certified Trainers:\n"
+	.string "Wally, Sakura, Jakson, Redd,\l"
 	.string "{PLAYER}$"
+
+SootopolisCity_Gym_1F_Text_GymStatueCertified2:
+	.string "Sootopolis City Pokémon Gym\p"
+	.string "Juan's certified Trainers:\n"
+	.string "Wally, Sakura, Jakson, Redd,\l"
+	.string "{PLAYER}, Harper, Baron$"
 
 SootopolisCity_Gym_1F_Text_JuanPreRematch:
 	.string "Juan: Ah, this Gym had returned to its\n"

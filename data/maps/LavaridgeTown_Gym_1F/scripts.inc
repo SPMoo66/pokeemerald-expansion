@@ -167,6 +167,8 @@ LavaridgeTown_Gym_1F_EventScript_GymGuidePostVictory::
 
 LavaridgeTown_Gym_1F_EventScript_GymStatue::
 	lockall
+	goto_if_set FLAG_RECEIVED_RED_OR_BLUE_ORB, LavaridgeTown_Gym_1F_EventScript_GymStatueCertified3
+	goto_if_ge VAR_EMERALBODY_RIVAL_STATE, 7, LavaridgeTown_Gym_1F_EventScript_GymStatueCertified2
 	goto_if_set FLAG_BADGE04_GET, LavaridgeTown_Gym_1F_EventScript_GymStatueCertified
 	msgbox LavaridgeTown_Gym_1F_Text_GymStatue, MSGBOX_DEFAULT
 	releaseall

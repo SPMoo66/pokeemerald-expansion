@@ -148,16 +148,13 @@ MossdeepCity_Gym_EventScript_GymGuidePostVictory::
 	release
 	end
 
-MossdeepCity_Gym_EventScript_LeftGymStatue::
+MossdeepCity_Gym_EventScript_GymStatue::
 	lockall
+	goto_if_set FLAG_VISITED_SOOTOPOLIS_CITY, MossdeepCity_Gym_EventScript_GymStatueCertified3
+	goto_if_ge VAR_EMERALBODY_RIVAL_STATE, 7, MossdeepCity_Gym_EventScript_GymStatueCertified2
 	goto_if_set FLAG_BADGE07_GET, MossdeepCity_Gym_EventScript_GymStatueCertified
-	goto MossdeepCity_Gym_EventScript_GymStatue
-	end
-
-MossdeepCity_Gym_EventScript_RightGymStatue::
-	lockall
-	goto_if_set FLAG_BADGE07_GET, MossdeepCity_Gym_EventScript_GymStatueCertified
-	goto MossdeepCity_Gym_EventScript_GymStatue
+	msgbox MossdeepCity_Gym_Text_GymStatue, MSGBOX_DEFAULT
+	releaseall
 	end
 
 MossdeepCity_Gym_EventScript_GymStatueCertified::
@@ -165,8 +162,13 @@ MossdeepCity_Gym_EventScript_GymStatueCertified::
 	releaseall
 	end
 
-MossdeepCity_Gym_EventScript_GymStatue::
-	msgbox MossdeepCity_Gym_Text_GymStatue, MSGBOX_DEFAULT
+MossdeepCity_Gym_EventScript_GymStatueCertified2::
+	msgbox MossdeepCity_Gym_Text_GymStatueCertified2, MSGBOX_DEFAULT
+	releaseall
+	end
+
+MossdeepCity_Gym_EventScript_GymStatueCertified3::
+	msgbox MossdeepCity_Gym_Text_GymStatueCertified3, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -472,12 +474,26 @@ MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
 	.string "bring some more Pokémon.$"
 
 MossdeepCity_Gym_Text_GymStatue:
-	.string "Mossdeep City Pokémon Gym$"
+	.string "Mossdeep City Pokémon Gym\p"
+	.string "Liza and Tate's certified Trainers:\n"
+	.string "Sakura, Jakson, Redd$"
 
 MossdeepCity_Gym_Text_GymStatueCertified:
 	.string "Mossdeep City Pokémon Gym\p"
 	.string "Liza and Tate's certified Trainers:\n"
-	.string "{PLAYER}$"
+	.string "Sakura, Jakson, Redd, {PLAYER}$"
+
+MossdeepCity_Gym_Text_GymStatueCertified2:
+	.string "Mossdeep City Pokémon Gym\p"
+	.string "Liza and Tate's certified Trainers:\n"
+	.string "Sakura, Jakson, Redd, {PLAYER},\l"
+	.string "Harper, Baron$"
+
+MossdeepCity_Gym_Text_GymStatueCertified3:
+	.string "Mossdeep City Pokémon Gym\p"
+	.string "Liza and Tate's certified Trainers:\n"
+	.string "Sakura, Jakson, Redd, {PLAYER},\l"
+	.string "Harper, Baron, Wally$"
 
 MossdeepCity_Gym_Text_TateAndLizaPreRematch:
 	.string "Tate: Pokémon…\n"

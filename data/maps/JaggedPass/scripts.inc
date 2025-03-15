@@ -66,7 +66,7 @@ JaggedPass_EventScript_OpenMagmaHideout::
 
 JaggedPass_EventScript_MagmaHideoutGuard::
 	lockall
-	goto_if_unset FLAG_BADGE04_GET, JaggedPass_EventScript_GuardCantGetIn
+	goto_if_unset FLAG_RECEIVED_RED_OR_BLUE_ORB, JaggedPass_EventScript_GuardCantGetIn
 	goto_if_set FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS, JaggedPass_EventScript_GuardDefeated
 	waitse
 	playse SE_PIN
@@ -82,6 +82,8 @@ JaggedPass_EventScript_MagmaHideoutGuard::
 	setflag FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS
 	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
 	waitmovement 0
+	playse SE_EXIT
+	removeobject LOCALID_HIDEOUT_GUARD
 	releaseall
 	end
 
@@ -230,10 +232,9 @@ JaggedPass_Text_EthanPostRematch:
 	.string "in Mauville City…$"
 
 JaggedPass_Text_GruntIntro:
-	.string "Wah!\n"
-	.string "What are you doing here?\p"
-	.string "What am I doing in a place like this?\p"
-	.string "What business is it of yours?$"
+	.string "Heh.\n"
+	.string "Thanks for the assist, kid!\p"
+	.string "Can't let you in though!$"
 
 JaggedPass_Text_GruntDefeat:
 	.string "Urrrgh…\p"

@@ -5662,6 +5662,60 @@ u8 GetMoveRelearnerMoves(struct Pokemon *mon, u16 *moves)
     return numMoves;
 }
 
+u8 GetRelearnerEggMoves(struct Pokemon *mon, u16 *moves)
+{
+    u16 learnedMoves[4];
+    u8 numMoves = 0;
+    u16 species = GetMonData(mon, MON_DATA_SPECIES);
+    const u16 *eggMoves;
+    u8 i, j, k;
+    bool8 hasMonMove = FALSE;
+    bool8 isMoveAlreadyInList = FALSE;
+
+    while ((eggMoves = GetSpeciesEggMoves(species)) == sNoneEggMoveLearnset)
+    {
+        species = GetSpeciesPreEvolution(species);
+        if (species == SPECIES_NONE)
+            break;
+    }
+
+    for (i = 0; i < MAX_MON_MOVES; i++)
+        learnedMoves[i] = GetMonData(mon, MON_DATA_MOVE1 + i, 0);
+
+    for (i = 0; eggMoves[i] != MOVE_UNAVAILABLE; i++)
+    {
+        hasMonMove = FALSE;
+        isMoveAlreadyInList = FALSE;
+
+        for (j = 0; j < MAX_MON_MOVES; j++)
+        {
+            if (learnedMoves[j] == eggMoves[i])
+            {
+                hasMonMove = TRUE;
+                break;
+            }
+        }
+        if (!hasMonMove)
+        {
+            for (k = 0; k < numMoves; k++)
+            {
+                if (moves[k] == eggMoves[i])
+                {
+                    isMoveAlreadyInList = TRUE;
+                    break;
+                }
+            }
+
+            if (!isMoveAlreadyInList)
+            {
+                moves[numMoves++] = eggMoves[i];
+            }
+        }
+    }
+
+    return numMoves;
+}
+
 u8 GetLevelUpMovesBySpecies(u16 species, u16 *moves)
 {
     u8 numMoves = 0;
@@ -5716,6 +5770,17 @@ u8 GetNumberOfRelearnableMoves(struct Pokemon *mon)
     }
 
     return numMoves;
+}
+
+u8 GetNumberOfEggMoves(struct Pokemon *mon)
+{
+    u16 moves[EGG_MOVES_ARRAY_COUNT];
+    u16 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG, 0);
+
+    if (species == SPECIES_EGG)
+        return 0;
+
+    return GetRelearnerEggMoves(mon, moves);
 }
 
 u16 SpeciesToPokedexNum(u16 species)

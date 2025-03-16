@@ -13777,7 +13777,7 @@ const struct Item gItemsInfo[] =
     [ITEM_NORMAL_TERA_SHARD] =
     {
         .name = _("Normal Tera Shard"),
-        .price = 0,
+        .price = 3000,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

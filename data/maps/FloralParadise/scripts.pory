@@ -1,4 +1,5 @@
 const SHAYMIN = 1
+const GRACIDEA_GIRL = 2
 
 mapscripts FloralParadise_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
@@ -6,10 +7,26 @@ mapscripts FloralParadise_MapScripts {
 			setflag (FLAG_TEMP_2)
 			removeobject(SHAYMIN)
 		}
+		setflag (FLAG_TEMP_3)
+		getcaughtmon (SPECIES_SHAYMIN)
+		if (var(VAR_RESULT)) {
+			clearflag (FLAG_TEMP_3)
+		}
+		checkitem (ITEM_GRACIDEA)
+		if (var(VAR_RESULT)) {
+			setobjectxyperm (GRACIDEA_GIRL, 13, 5)
+			setobjectmovementtype (GRACIDEA_GIRL, MOVEMENT_TYPE_FACE_RIGHT)
+		}
 	}
 	MAP_SCRIPT_ON_RESUME {
 		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
-			removeobject(VAR_LAST_TALKED)
+			removeobject(SHAYMIN)
+		}
+		getcaughtmon (SPECIES_SHAYMIN)
+		copyvar (VAR_TEMP_0, VAR_RESULT)
+		checkitem (ITEM_GRACIDEA)
+		if (var(VAR_TEMP_0) && !var(VAR_RESULT)) {
+			addobject (GRACIDEA_GIRL)
 		}
 	}
 }
@@ -32,4 +49,33 @@ script BattleShaymin {
 	}
 	release
 	end
+}
+
+script FloralParadise_GracideaGirl {
+	lock
+	faceplayer
+	checkitem (ITEM_GRACIDEA)
+	if (!var(VAR_RESULT)) {
+		msgbox (format ("Hi. Did you just catch Shaymin?\p"
+						"I was hoping to come and give it\nsome of its favorite flowers.\p"
+						"I know, could you give these to\nShaymin for me?"))
+		giveitem (ITEM_GRACIDEA)
+		msgbox (format ("I'll come back here, so please\nbring Shaymin by some time!"))
+		setflag (FLAG_TEMP_4)
+	}
+	elif (!flag(FLAG_TEMP_4)) {
+		checkspecies (SPECIES_SHAYMIN, NO_PARTY_SCREEN)
+		copyvar (VAR_TEMP_1, VAR_RESULT)
+		checkspecies (SPECIES_SHAYMIN_SKY, NO_PARTY_SCREEN)
+		if (var(VAR_TEMP_1) || var(VAR_RESULT)) {
+			msgbox (format ("Aww, it looks like Shaymin is doing well.\nI'm glad I got to see it again.\lThank you for taking good care of it!"))
+		}
+		else {
+			msgbox (format ("Please bring Shaymin by some time so\nI can see it again!"))
+		}
+	}
+	else {
+		msgbox (format ("Please take good care of Shaymin!"))
+	}
+	release
 }

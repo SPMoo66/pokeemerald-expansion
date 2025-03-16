@@ -50,7 +50,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Damp"),
         .description = COMPOUND_STRING("Prevents self-destruction."),
-        .aiRating = 2,
+        .aiRating = 4,
         .breakable = TRUE,
     },
 
@@ -310,7 +310,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Magma Armor"),
         .description = COMPOUND_STRING("Prevents freezing."),
-        .aiRating = 1,
+        .aiRating = 4,
         .breakable = TRUE,
     },
 
@@ -377,7 +377,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Flame Body"),
         .description = COMPOUND_STRING("Burns the foe on contact."),
-        .aiRating = 4,
+        .aiRating = 5,
     },
 
     [ABILITY_RUN_AWAY] =
@@ -391,7 +391,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Keen Eye"),
         .description = COMPOUND_STRING("Prevents loss of accuracy."),
-        .aiRating = 1,
+        .aiRating = 5,
         .breakable = TRUE,
     },
 
@@ -399,7 +399,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Hyper Cutter"),
         .description = COMPOUND_STRING("Prevents Attack reduction."),
-        .aiRating = 3,
+        .aiRating = 5,
         .breakable = TRUE,
     },
 
@@ -599,7 +599,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Rivalry"),
         .description = COMPOUND_STRING("Powers up against rivals."),
-        .aiRating = 1,
+        .aiRating = 3,
     },
 
     [ABILITY_STEADFAST] =
@@ -837,7 +837,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Slow Start"),
         .description = COMPOUND_STRING("Takes a while to get going."),
-        .aiRating = -2,
+        .aiRating = 1,
     },
 
     [ABILITY_SCRAPPY] =
@@ -971,7 +971,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Defeatist"),
         .description = COMPOUND_STRING("Gives up at half HP."),
-        .aiRating = -1,
+        .aiRating = 0,
     },
 
     [ABILITY_CURSED_BODY] =
@@ -1159,7 +1159,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Justified"),
         .description = COMPOUND_STRING("Dark hits raise Attack."),
-        .aiRating = 4,
+        .aiRating = 5,
     },
 
     [ABILITY_RATTLED] =
@@ -1221,7 +1221,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Victory Star"),
         .description = COMPOUND_STRING("Raises party accuracy."),
-        .aiRating = 6,
+        .aiRating = 7,
     },
 
     [ABILITY_TURBOBLAZE] =
@@ -1461,7 +1461,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Water Compaction"),
         .description = COMPOUND_STRING("Water boosts Defense."),
-        .aiRating = 4,
+        .aiRating = 5,
     },
 
     [ABILITY_MERCILESS] =
@@ -1607,7 +1607,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Corrosion"),
         .description = COMPOUND_STRING("Poisons any type."),
-        .aiRating = 5,
+        .aiRating = 6,
     },
 
     [ABILITY_COMATOSE] =

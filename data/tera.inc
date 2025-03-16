@@ -459,6 +459,75 @@ Aide_SetTeraType_51:
 	goto Aide_SetTeraType_32
 
 
+LittlerootTown_ProfessorBirchsLab_EventScript_Rowan::
+# 237 "data/tera.pory"
+	lock
+# 238 "data/tera.pory"
+	faceplayer
+# 239 "data/tera.pory"
+	speakername CommonText_Rowan
+# 240 "data/tera.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_0
+# 241 "data/tera.pory"
+	compare VAR_ROUTE104_STATE, 3
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_2
+LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_1:
+# 247 "data/tera.pory"
+	goto_if_set FLAG_BADGE04_GET, LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_5
+LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_4:
+# 272 "data/tera.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_5
+# 273 "data/tera.pory"
+	closemessage
+# 274 "data/tera.pory"
+	release
+	return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_2:
+# 242 "data/tera.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_1
+# 245 "data/tera.pory"
+	setvar VAR_ROUTE104_STATE, 4
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_1
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_5:
+# 248 "data/tera.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_2, MSGBOX_YESNO
+# 252 "data/tera.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_7
+# 258 "data/tera.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_3
+# 259 "data/tera.pory"
+	setvar VAR_0x8005, MOVE_TERA_BLAST
+# 260 "data/tera.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 261 "data/tera.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_11
+# 267 "data/tera.pory"
+	speakername CommonText_Rowan
+# 268 "data/tera.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_4
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_7:
+# 253 "data/tera.pory"
+	msgbox Text_Declined_TeraBlast, MSGBOX_DEFAULT
+# 254 "data/tera.pory"
+	release
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_11:
+# 262 "data/tera.pory"
+	speakername CommonText_Rowan
+# 263 "data/tera.pory"
+	msgbox Text_Declined_TeraBlast, MSGBOX_DEFAULT
+# 264 "data/tera.pory"
+	release
+	end
+
+
 Route104_EventScript_RowanTera_Text_0:
 # 6 "data/tera.pory"
 	.string "Wait!\n"
@@ -586,6 +655,49 @@ Aide_SetTeraType_Text_9:
 	.string "hands, come back to me and I can change\l"
 	.string "the Tera Type of one of your Pokémon.$"
 
+LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_0:
+# 240 "data/tera.pory"
+	.string "Ah, {PLAYER}.\n"
+	.string "It's good to see you again.$"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_1:
+# 242 "data/tera.pory"
+	.string "Professor Birch has been kind enough\n"
+	.string "to put up with me for the time being.\p"
+	.string "This isn't my first visit to Hoenn,\n"
+	.string "but it's still unfamiliar to me\l"
+	.string "compared to Sinnoh.\p"
+	.string "But anyway, you're here to help me\n"
+	.string "with Terastallization, aren't you?$"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_2:
+# 248 "data/tera.pory"
+	.string "Thanks to your assistance so far,\n"
+	.string "I've come across a move which changes\l"
+	.string "type based upon the Tera Type of the\l"
+	.string "Pokémon using it.\p"
+	.string "It's called Tera Blast.\p"
+	.string "Would you like me to teach Tera Blast\n"
+	.string "to one of your Pokémon?$"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_3:
+# 258 "data/tera.pory"
+	.string "Great!\n"
+	.string "Now, which Pokémon will be learning\l"
+	.string "Tera Blast?$"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_4:
+# 268 "data/tera.pory"
+	.string "Great, now go out and give Tera Blast\n"
+	.string "a shot.\p"
+	.string "I'm quite interested in hearing\n"
+	.string "about the results.$"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_5:
+# 272 "data/tera.pory"
+	.string "If you wish to change your Pokémon's\n"
+	.string "Tera Type, please speak with my Aide.$"
+
 Text_ChangedTeraType::
 # 224 "data/tera.pory"
 	.string "The Tera Type of your {STR_VAR_1}\n"
@@ -597,3 +709,9 @@ Text_EggTeraType::
 	.string "That's a Pokémon Egg.\l"
 	.string "I'm not sure what you expect me to do\l"
 	.string "with that.$"
+
+Text_Declined_TeraBlast::
+# 277 "data/tera.pory"
+	.string "Do return if you wish to teach\na Pokémon Tera Blast.\p"
+	.string "Or speak with my Aide if you wish to\nchange a Pokémon's Tera Type.\p"
+	.string "This is all very interesting.$"

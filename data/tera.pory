@@ -232,3 +232,50 @@ text Text_EggTeraType {
 	"I'm not sure what you expect me to do\l"
 	"with that."
 }
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_Rowan {
+	lock
+	faceplayer
+	speakername (CommonText_Rowan)
+	msgbox (format ("Ah, {PLAYER}.\nIt's good to see you again."))
+	if (var(VAR_ROUTE104_STATE) == 3) {
+		msgbox (format ("Professor Birch has been kind enough\nto put up with me for the time being.\p"
+						"This isn't my first visit to Hoenn,\nbut it's still unfamiliar to me\lcompared to Sinnoh.\p"
+						"But anyway, you're here to help me\nwith Terastallization, aren't you?"))
+		setvar (VAR_ROUTE104_STATE, 4)
+	}
+	if (flag(FLAG_BADGE04_GET)) {
+		msgbox (format ("Thanks to your assistance so far,\nI've come across a move which changes\ltype based upon the Tera Type of the\lPokémon using it.\p"
+						"It's called Tera Blast.\p"
+						"Would you like me to teach Tera Blast\nto one of your Pokémon?"), MSGBOX_YESNO)
+		
+		if (var(VAR_RESULT) == NO) {
+			msgbox (Text_Declined_TeraBlast, MSGBOX_DEFAULT)
+			release
+			end
+		}
+		else {
+			msgbox (format ("Great!\nNow, which Pokémon will be learning\lTera Blast?"))
+			setvar (VAR_0x8005, MOVE_TERA_BLAST)
+			call (MoveTutor_EventScript_OpenPartyMenu)
+			if (var(VAR_RESULT) == NO) {
+				speakername (CommonText_Rowan)
+				msgbox (Text_Declined_TeraBlast, MSGBOX_DEFAULT)
+				release
+				end
+			}
+			speakername (CommonText_Rowan)
+			msgbox (format ("Great, now go out and give Tera Blast\na shot.\p"
+							"I'm quite interested in hearing\nabout the results."))
+		}
+	}
+	msgbox (format ("If you wish to change your Pokémon's\nTera Type, please speak with my Aide."))
+	closemessage
+	release
+}
+
+text Text_Declined_TeraBlast {
+	"Do return if you wish to teach\na Pokémon Tera Blast.\p"
+	"Or speak with my Aide if you wish to\nchange a Pokémon's Tera Type.\p"
+	"This is all very interesting."
+}

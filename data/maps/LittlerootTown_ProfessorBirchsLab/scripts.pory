@@ -972,7 +972,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "… … … … … Click!$"
 `
 
-const BIANCA = 9
+const BIANCA_BIRCHS_LAB = 9
 
 script LittlerootTown_ProfessorBirchsLab_EventScript_ShowBianca {
 	if (!flag(FLAG_VICTINI_READY)) {
@@ -984,7 +984,7 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ShowBianca {
 script LittlerootTown_ProfessorBirchsLab_EventScript_Bianca {
 	lockall
 	delay (20)
-	applymovement (BIANCA, Common_Movement_WalkInPlaceDown)
+	applymovement (BIANCA_BIRCHS_LAB, Common_Movement_WalkInPlaceDown)
 	waitmovement (0)
 	speakername (CommonText_Bianca)
 	msgbox ("Oh, hi {PLAYER}!")
@@ -1002,13 +1002,13 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_Bianca {
 					"Bye-bye!"))
 	closemessage
 	setflag (FLAG_VICTINI_READY)
-	applymovement (BIANCA, Common_Movement_WalkRight)
+	applymovement (BIANCA_BIRCHS_LAB, Common_Movement_WalkRight)
 	waitmovement (0)
-	applymovement (BIANCA, Common_Movement_WalkDown3)
+	applymovement (BIANCA_BIRCHS_LAB, Common_Movement_WalkDown3)
 	waitmovement (0)
 	delay (10)
 	playse (SE_EXIT)
-	removeobject (BIANCA)
+	removeobject (BIANCA_BIRCHS_LAB)
 	setflag (FLAG_TEMP_3)
 	setvar (VAR_TEMP_2, 0)
 	delay (30)

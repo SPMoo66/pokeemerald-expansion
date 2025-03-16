@@ -137,11 +137,6 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
-	setflag FLAG_TEMP_HIDE_FOLLOWER
-    applymovement OBJ_EVENT_ID_FOLLOWER, EnterPokeballMovement
-	waitmovement 0
-	setflag FLAG_TEMP_HIDE_FOLLOWER
-	setflag FLAG_TEMP_E
 	release
 	end
 
@@ -151,8 +146,6 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	warp MAP_RUSTBORO_CITY, 5
-	setvar VAR_LOOKER_ROCKET, 3
 	givemon SPECIES_VENUSAUR, 100, ITEM_NONE
 	givemon SPECIES_BLASTOISE, 100, ITEM_NONE
 	call Debug_CheatStart
@@ -160,6 +153,7 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
+	setvar VAR_ROUTE104_STATE, 3
 	additem ITEM_TERA_ORB
 	setflag FLAG_TERA_ENABLED
 	givemon SPECIES_BRAMBLEGHAST, 5, ITEM_NONE

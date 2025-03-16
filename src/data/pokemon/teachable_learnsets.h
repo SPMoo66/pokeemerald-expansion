@@ -46911,6 +46911,7 @@ static const u16 sSkiddoEmeribianTeachableLearnset[] = {
     MOVE_STRENGTH,
     MOVE_TOXIC,
     MOVE_TRAILBLAZE,
+    MOVE_TRIPLE_AXEL,
     MOVE_ZEN_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
@@ -46944,6 +46945,7 @@ static const u16 sGogoatEmeribianTeachableLearnset[] = {
     MOVE_STRENGTH,
     MOVE_TOXIC,
     MOVE_TRAILBLAZE,
+    MOVE_TRIPLE_AXEL,
     MOVE_ZEN_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
@@ -47680,6 +47682,7 @@ static const u16 sSkiploomEmeribianTeachableLearnset[] = {
     MOVE_STORED_POWER,
     MOVE_SWIFT,
     MOVE_TRAILBLAZE,
+    MOVE_TRIPLE_AXEL,
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
@@ -47704,6 +47707,7 @@ static const u16 sJumpluffEmeribianTeachableLearnset[] = {
     MOVE_STORED_POWER,
     MOVE_SWIFT,
     MOVE_TRAILBLAZE,
+    MOVE_TRIPLE_AXEL,
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };

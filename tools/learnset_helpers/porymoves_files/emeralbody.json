@@ -3862,7 +3862,9 @@
         "MOVE_SHADOW_BALL",
         "MOVE_SCALE_SHOT",
         "MOVE_DRAGON_PULSE",
-        "MOVE_DRAINING_KISS"
+        "MOVE_DRAINING_KISS",
+        "MOVE_UPPER_HAND",
+        "MOVE_ALLURING_VOICE"
       ]
     },
     "AEREON": {
@@ -3967,7 +3969,8 @@
         "MOVE_BRAVE_BIRD",
         "MOVE_TRAILBLAZE",
         "MOVE_VACUUM_WAVE",
-        "MOVE_HURRICANE"
+        "MOVE_HURRICANE",
+        "MOVE_ALLURING_VOICE"
       ]
     },
     "CONTAGEON": {
@@ -4072,7 +4075,9 @@
         "MOVE_TOXIC",
         "MOVE_TRAILBLAZE",
         "MOVE_GUNK_SHOT",
-        "MOVE_STORED_POWER"
+        "MOVE_STORED_POWER",
+        "MOVE_LASH_OUT",
+        "MOVE_ALLURING_VOICE"
       ]
     },
     "LANEON": {
@@ -4175,7 +4180,9 @@
         "MOVE_FLAME_CHARGE",
         "MOVE_BLAZE_KICK",
         "MOVE_TRAILBLAZE",
-        "MOVE_LOW_SWEEP"
+        "MOVE_LOW_SWEEP",
+        "MOVE_COACHING",
+        "MOVE_ALLURING_VOICE"
       ]
     },
     "SCALEON": {
@@ -4270,7 +4277,8 @@
         "MOVE_GIGA_IMPACT",
         "MOVE_TRAILBLAZE",
         "MOVE_VACUUM_WAVE",
-        "MOVE_SMART_STRIKE"
+        "MOVE_SMART_STRIKE",
+        "MOVE_ALLURING_VOICE"
       ]
     },
     "TITANEON": {
@@ -4351,7 +4359,10 @@
         "MOVE_CUT",
         "MOVE_STRENGTH",
         "MOVE_ROCK_CLIMB",
-        "MOVE_ROCK_SMASH"
+        "MOVE_ROCK_SMASH",
+        "MOVE_SUPERCELL_SLAM",
+        "MOVE_STEEL_BEAM",
+        "MOVE_ALLURING_VOICE"
       ]
     },
     "CHARIZARD_EMERIBIAN": {
@@ -4413,6 +4424,8 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_TEMPER_FLARE",
+        "MOVE_PSYCHIC_NOISE"
       ]
     },
     "NINETALES_EMERIBIAN": {
@@ -4480,6 +4493,8 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_GRASSY_GLIDE",
+        "MOVE_ALLURING_VOICE"
       ]
     },
     "GLOOM_EMERIBIAN": {
@@ -4507,6 +4522,8 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_GRASSY_GLIDE",
+        "MOVE_ALLURING_VOICE"
       ]
     },
     "VILEPLUME_EMERIBIAN": {
@@ -4534,7 +4551,9 @@
       ],
       "EggMoves": [],
     "TutorMoves": [
-        "MOVE_WAVE_CRASH"
+        "MOVE_WAVE_CRASH",
+        "MOVE_GRASSY_GLIDE",
+        "MOVE_ALLURING_VOICE"
     ]
     },
     "GOLEM_FRIBIAN": {
@@ -4581,7 +4600,9 @@
       ],
       "EggMoves": [],
     "TutorMoves": [
-        "MOVE_ROCK_WRECKER"
+        "MOVE_ROCK_WRECKER",
+        "MOVE_TEMPER_FLARE",
+        "MOVE_LASH_OUT"
     ]
     },
     "CLOYSTER_FRIBIAN": {
@@ -4686,6 +4707,7 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_GRASSY_GLIDE"
       ]
     },
     "TYPHLOSION_EMERIBIAN": {
@@ -4759,7 +4781,8 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
-        "MOVE_WILD_CHARGE"
+        "MOVE_WILD_CHARGE",
+        "MOVE_SUPERCELL_SLAM"
       ]
     },
     "FERALIGATR_EMERIBIAN": {
@@ -4845,7 +4868,9 @@
       ],
       "EggMoves": [],
     "TutorMoves": [
-        "MOVE_WAVE_CRASH"
+        "MOVE_WAVE_CRASH",
+        "MOVE_LASH_OUT",
+        "MOVE_STEEL_BEAM"
     ]
     },
     "NOCTOWL_EMERIBIAN": {
@@ -4886,6 +4911,7 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_LASH_OUT"
       ]
     },
     "SPINARAK_EMERIBIAN": {
@@ -4919,6 +4945,8 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_SUPERCELL_SLAM",
+        "MOVE_SKITTER_SMACK"
       ]
     },
     "ARIADOS_EMERIBIAN": {
@@ -4955,7 +4983,9 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
-        "MOVE_WILD_CHARGE"
+        "MOVE_WILD_CHARGE",
+        "MOVE_SUPERCELL_SLAM",
+        "MOVE_SKITTER_SMACK"
       ]
     },
     "BELLOSSOM_EMERIBIAN": {
@@ -4984,7 +5014,9 @@
       ],
       "EggMoves": [],
     "TutorMoves": [
-        "MOVE_WAVE_CRASH"
+        "MOVE_WAVE_CRASH",
+        "MOVE_GRASSY_GLIDE",
+        "MOVE_ALLURING_VOICE"
     ]
     },
     "SHUCKLE_FRIBIAN": {
@@ -5012,6 +5044,8 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_SKITTER_SMACK",
+        "MOVE_STEEL_BEAM"
       ]
     },
     "MAGCARGO_EMERIBIAN": {
@@ -5046,6 +5080,8 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_TEMPER_FLARE",
+        "MOVE_STEEL_BEAM"
       ]
     },
     "OCTILLERY_FRIBIAN": {
@@ -5085,6 +5121,8 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_TEMPER_FLARE",
+        "MOVE_SKITTER_SMACK"
       ]
     },
     "SKARMORY_FRIBIAN": {
@@ -5140,6 +5178,8 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_TEMPER_FLARE",
+        "MOVE_STEEL_BEAM"
       ]
     },
     "MIGHTYENA_EMERIBIAN": {
@@ -5195,6 +5235,8 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_TEMPER_FLARE",
+        "MOVE_LASH_OUT"
       ]
     },
     "RALTS_EMERIBIAN": {
@@ -5226,6 +5268,7 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_ALLURING_VOICE"
       ]
     },
     "KIRLIA_EMERIBIAN": {
@@ -5257,6 +5300,7 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_ALLURING_VOICE"
       ]
     },
     "GARDEVOIR_EMERIBIAN": {
@@ -5291,6 +5335,7 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_ALLURING_VOICE"
       ]
     },
     "BRELOOM_FRIBIAN": {
@@ -5340,6 +5385,8 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_TEMPER_FLARE",
+        "MOVE_COACHING"
       ]
     },
     "SHINX_EMERIBIAN": {
@@ -5390,6 +5437,7 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_PSYCHIC_NOISE"
       ]
     },
     "LUXIO_EMERIBIAN": {
@@ -5440,6 +5488,7 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_PSYCHIC_NOISE"
       ]
     },
     "LUXRAY_EMERIBIAN": {
@@ -5490,6 +5539,7 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_PSYCHIC_NOISE"
       ]
     },
     "DRIFLOON_EMERIBIAN": {
@@ -5524,6 +5574,7 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_TEMPER_FLARE"
       ]
     },
     "DRIFBLIM_EMERIBIAN": {
@@ -5567,6 +5618,7 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_TEMPER_FLARE"
       ]
     },
     "GIGALITH_FRIBIAN": {
@@ -5639,6 +5691,8 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_GRASSY_GLIDE",
+        "MOVE_TRIPLE_AXEL"
       ]
     },
     "GOGOAT_EMERIBIAN": {
@@ -5677,6 +5731,8 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_GRASSY_GLIDE",
+        "MOVE_TRIPLE_AXEL"
       ]
     },
     "HONEDGE_EMERIBIAN": {
@@ -5706,6 +5762,8 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_SKITTER_SMACK",
+        "MOVE_STEEL_BEAM"
       ]
     },
     "DOUBLADE_EMERIBIAN": {
@@ -5736,6 +5794,9 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_TEMPER_FLARE",
+        "MOVE_SKITTER_SMACK",
+        "MOVE_STEEL_BEAM"
       ]
     },
     "AEGISLASH_EMERIBIAN": {
@@ -5770,6 +5831,9 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_TEMPER_FLARE",
+        "MOVE_SKITTER_SMACK",
+        "MOVE_STEEL_BEAM"
       ]
     },
     "TREVENANT_EMERIBIAN": {
@@ -5818,6 +5882,9 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_GRASSY_GLIDE",
+        "MOVE_SKITTER_SMACK",
+        "MOVE_LASH_OUT"
       ]
     },
     "MIMIKYU_EMERIBIAN": {
@@ -5856,6 +5923,7 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_SKITTER_SMACK"
       ]
     },
     "WOOLOO_FRIBIAN": {
@@ -5900,6 +5968,9 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_SKITTER_SMACK",
+        "MOVE_LASH_OUT",
+        "MOVE_ALLURING_VOICE"
       ]
     },
     "DUBWOOL_FRIBIAN": {
@@ -5944,6 +6015,9 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_SKITTER_SMACK",
+        "MOVE_LASH_OUT",
+        "MOVE_ALLURING_VOICE"
       ]
     },
     "FALINKS_EMERIBIAN": {
@@ -5988,6 +6062,7 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_STEEL_BEAM"
       ]
     },
     "TANGTRIP": {
@@ -6152,6 +6227,7 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_SUPERCELL_SLAM"
       ]
     },
     "RAITORA": {
@@ -6189,7 +6265,8 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
-        "MOVE_WILD_CHARGE"
+        "MOVE_WILD_CHARGE",
+        "MOVE_SUPERCELL_SLAM"
       ]
     },
     "MADAME": {
@@ -6236,6 +6313,7 @@
       ],
       "EggMoves": [],
       "TutorMoves": [
+        "MOVE_UPPER_HAND"
       ]
     },
     "APIMARILL": {
@@ -6298,7 +6376,10 @@
         "MOVE_SWIFT"
 	],
       "EggMoves": [],
-      "TutorMoves": []
+      "TutorMoves": [
+        "MOVE_STEEL_BEAM",
+        "MOVE_ALLURING_VOICE"
+      ]
     },
     "SOLFLORA": {
       "LevelMoves": [],
@@ -6339,7 +6420,10 @@
         "MOVE_SWORDS_DANCE"
 	],
       "EggMoves": [],
-      "TutorMoves": []
+      "TutorMoves": [
+        "MOVE_TEMPER_FLARE",
+        "MOVE_GRASSY_GLIDE"
+      ]
     },
     "SHIBIREFUGU": {
       "LevelMoves": [],
@@ -6459,7 +6543,9 @@
 	],
       "EggMoves": [],
       "TutorMoves": [
-        "MOVE_BRAVE_BIRD"
+        "MOVE_BRAVE_BIRD",
+        "MOVE_TRIPLE_AXEL",
+        "MOVE_ALLURING_VOICE"
     ]
     },
     "COGMENT": {
@@ -6550,7 +6636,9 @@
     ],
       "EggMoves": [],
       "TutorMoves": [
-        "MOVE_WILD_CHARGE"
+        "MOVE_WILD_CHARGE",
+        "MOVE_TEMPER_FLARE",
+        "MOVE_SUPERCELL_SLAM"
     ]
     },
     "DODRIO_EMERIBIAN": {
@@ -6598,7 +6686,9 @@
     ],
       "EggMoves": [],
       "TutorMoves": [
-        "MOVE_WILD_CHARGE"
+        "MOVE_WILD_CHARGE",
+        "MOVE_TEMPER_FLARE",
+        "MOVE_SUPERCELL_SLAM"
     ]
     },
     "HOPPIP_EMERIBIAN": {
@@ -6627,7 +6717,9 @@
         "MOVE_DAZZLING_GLEAM"
 	  ],
       "EggMoves": [],
-      "TutorMoves": []
+      "TutorMoves": [
+        "MOVE_ALLURING_VOICE"
+      ]
     },
     "SKIPLOOM_EMERIBIAN": {
       "LevelMoves": [],
@@ -6655,7 +6747,10 @@
         "MOVE_DAZZLING_GLEAM"
 	  ],
       "EggMoves": [],
-      "TutorMoves": []
+      "TutorMoves": [
+        "MOVE_TRIPLE_AXEL",
+        "MOVE_ALLURING_VOICE"
+      ]
     },
     "JUMPLUFF_EMERIBIAN": {
       "LevelMoves": [],
@@ -6683,7 +6778,10 @@
         "MOVE_DAZZLING_GLEAM"
 	  ],
       "EggMoves": [],
-      "TutorMoves": []
+      "TutorMoves": [
+        "MOVE_TRIPLE_AXEL",
+        "MOVE_ALLURING_VOICE"
+      ]
     },
     "BUNEARY_EMERIBIAN": {
       "LevelMoves": [],
@@ -6732,7 +6830,9 @@
         "MOVE_THUNDER_WAVE"
     ],
       "EggMoves": [],
-      "TutorMoves": []
+      "TutorMoves": [
+        "MOVE_TRIPLE_AXEL"
+      ]
     },
     "LOPUNNY_EMERIBIAN": {
       "LevelMoves": [],
@@ -6789,7 +6889,9 @@
         "MOVE_THUNDER_WAVE"
     ],
       "EggMoves": [],
-      "TutorMoves": []
+      "TutorMoves": [
+        "MOVE_TRIPLE_AXEL"
+      ]
     },
     "SKRELP_EMERIBIAN": {
       "LevelMoves": [],
@@ -6828,7 +6930,10 @@
     "MOVE_SWAGGER"
 	  ],
       "EggMoves": [],
-      "TutorMoves": []
+      "TutorMoves": [
+        "MOVE_GRASSY_GLIDE",
+        "MOVE_SKITTER_SMACK"
+      ]
     },
     "DRAGALGE_EMERIBIAN": {
       "LevelMoves": [],
@@ -6875,8 +6980,10 @@
     "MOVE_SWAGGER"
 	  ],
       "EggMoves": [],
-    "TutorMoves": [
-        "MOVE_WAVE_CRASH"
-    ]
+      "TutorMoves": [
+        "MOVE_WAVE_CRASH",
+        "MOVE_GRASSY_GLIDE",
+        "MOVE_SKITTER_SMACK"
+      ]
     }
 }

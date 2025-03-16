@@ -229,8 +229,8 @@ text Text_ChangedTeraType {
 text Text_EggTeraType {
 	"Umm…\n"
 	"That's a Pokémon Egg.\l"
-	"I'm not sure what you expect me to do\l"
-	"with that."
+	"I'm not sure what you expect me to\l"
+	"do with that."
 }
 
 script LittlerootTown_ProfessorBirchsLab_EventScript_Rowan {

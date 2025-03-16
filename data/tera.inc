@@ -707,8 +707,8 @@ Text_EggTeraType::
 # 229 "data/tera.pory"
 	.string "Umm…\n"
 	.string "That's a Pokémon Egg.\l"
-	.string "I'm not sure what you expect me to do\l"
-	.string "with that.$"
+	.string "I'm not sure what you expect me to\l"
+	.string "do with that.$"
 
 Text_Declined_TeraBlast::
 # 277 "data/tera.pory"

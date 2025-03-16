@@ -153,1462 +153,1474 @@ BadgedPokemart2:
 # 70 "data/global.pory"
 	.2byte ITEM_SUPER_REPEL
 # 71 "data/global.pory"
-	.2byte ITEM_EXP_CANDY_XS
+	.2byte ITEM_NORMAL_TERA_SHARD
 # 72 "data/global.pory"
+	.2byte ITEM_EXP_CANDY_XS
+# 73 "data/global.pory"
 	.2byte ITEM_EXP_CANDY_S
 	.2byte ITEM_NONE
 
 	.align 2
-# 75 "data/global.pory"
-BadgedPokemart3:
 # 76 "data/global.pory"
-	.2byte ITEM_POKE_BALL
+BadgedPokemart3:
 # 77 "data/global.pory"
-	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_POKE_BALL
 # 78 "data/global.pory"
-	.2byte ITEM_POTION
+	.2byte ITEM_GREAT_BALL
 # 79 "data/global.pory"
-	.2byte ITEM_SUPER_POTION
+	.2byte ITEM_POTION
 # 80 "data/global.pory"
-	.2byte ITEM_REVIVE
+	.2byte ITEM_SUPER_POTION
 # 81 "data/global.pory"
-	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_REVIVE
 # 82 "data/global.pory"
-	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_ANTIDOTE
 # 83 "data/global.pory"
-	.2byte ITEM_AWAKENING
+	.2byte ITEM_PARALYZE_HEAL
 # 84 "data/global.pory"
-	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_AWAKENING
 # 85 "data/global.pory"
-	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_BURN_HEAL
 # 86 "data/global.pory"
-	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_ICE_HEAL
 # 87 "data/global.pory"
-	.2byte ITEM_REPEL
+	.2byte ITEM_FULL_HEAL
 # 88 "data/global.pory"
-	.2byte ITEM_SUPER_REPEL
+	.2byte ITEM_REPEL
 # 89 "data/global.pory"
-	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_SUPER_REPEL
 # 90 "data/global.pory"
-	.2byte ITEM_EXP_CANDY_XS
+	.2byte ITEM_MAX_REPEL
 # 91 "data/global.pory"
+	.2byte ITEM_NORMAL_TERA_SHARD
+# 92 "data/global.pory"
+	.2byte ITEM_EXP_CANDY_XS
+# 93 "data/global.pory"
 	.2byte ITEM_EXP_CANDY_S
 	.2byte ITEM_NONE
 
 	.align 2
-# 94 "data/global.pory"
-BadgedPokemart4:
-# 95 "data/global.pory"
-	.2byte ITEM_POKE_BALL
 # 96 "data/global.pory"
-	.2byte ITEM_GREAT_BALL
+BadgedPokemart4:
 # 97 "data/global.pory"
-	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_POKE_BALL
 # 98 "data/global.pory"
-	.2byte ITEM_POTION
+	.2byte ITEM_GREAT_BALL
 # 99 "data/global.pory"
-	.2byte ITEM_SUPER_POTION
+	.2byte ITEM_ULTRA_BALL
 # 100 "data/global.pory"
-	.2byte ITEM_HYPER_POTION
+	.2byte ITEM_POTION
 # 101 "data/global.pory"
-	.2byte ITEM_REVIVE
+	.2byte ITEM_SUPER_POTION
 # 102 "data/global.pory"
-	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_HYPER_POTION
 # 103 "data/global.pory"
-	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_REVIVE
 # 104 "data/global.pory"
-	.2byte ITEM_AWAKENING
+	.2byte ITEM_ANTIDOTE
 # 105 "data/global.pory"
-	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_PARALYZE_HEAL
 # 106 "data/global.pory"
-	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_AWAKENING
 # 107 "data/global.pory"
-	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_BURN_HEAL
 # 108 "data/global.pory"
-	.2byte ITEM_REPEL
+	.2byte ITEM_ICE_HEAL
 # 109 "data/global.pory"
-	.2byte ITEM_SUPER_REPEL
+	.2byte ITEM_FULL_HEAL
 # 110 "data/global.pory"
-	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_REPEL
 # 111 "data/global.pory"
-	.2byte ITEM_EXP_CANDY_XS
+	.2byte ITEM_SUPER_REPEL
 # 112 "data/global.pory"
-	.2byte ITEM_EXP_CANDY_S
-	.2byte ITEM_NONE
-
-	.align 2
+	.2byte ITEM_MAX_REPEL
+# 113 "data/global.pory"
+	.2byte ITEM_NORMAL_TERA_SHARD
+# 114 "data/global.pory"
+	.2byte ITEM_EXP_CANDY_XS
 # 115 "data/global.pory"
-BadgedPokemart5:
-# 116 "data/global.pory"
-	.2byte ITEM_POKE_BALL
-# 117 "data/global.pory"
-	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_EXP_CANDY_S
+	.2byte ITEM_NONE
+
+	.align 2
 # 118 "data/global.pory"
-	.2byte ITEM_ULTRA_BALL
+BadgedPokemart5:
 # 119 "data/global.pory"
-	.2byte ITEM_POTION
+	.2byte ITEM_POKE_BALL
 # 120 "data/global.pory"
-	.2byte ITEM_SUPER_POTION
+	.2byte ITEM_GREAT_BALL
 # 121 "data/global.pory"
-	.2byte ITEM_HYPER_POTION
+	.2byte ITEM_ULTRA_BALL
 # 122 "data/global.pory"
-	.2byte ITEM_REVIVE
+	.2byte ITEM_POTION
 # 123 "data/global.pory"
-	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_SUPER_POTION
 # 124 "data/global.pory"
-	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_HYPER_POTION
 # 125 "data/global.pory"
-	.2byte ITEM_AWAKENING
+	.2byte ITEM_REVIVE
 # 126 "data/global.pory"
-	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_ANTIDOTE
 # 127 "data/global.pory"
-	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_PARALYZE_HEAL
 # 128 "data/global.pory"
-	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_AWAKENING
 # 129 "data/global.pory"
-	.2byte ITEM_REPEL
+	.2byte ITEM_BURN_HEAL
 # 130 "data/global.pory"
-	.2byte ITEM_SUPER_REPEL
+	.2byte ITEM_ICE_HEAL
 # 131 "data/global.pory"
-	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_FULL_HEAL
 # 132 "data/global.pory"
-	.2byte ITEM_EXP_CANDY_XS
+	.2byte ITEM_REPEL
 # 133 "data/global.pory"
-	.2byte ITEM_EXP_CANDY_S
+	.2byte ITEM_SUPER_REPEL
 # 134 "data/global.pory"
-	.2byte ITEM_EXP_CANDY_M
-	.2byte ITEM_NONE
-
-	.align 2
+	.2byte ITEM_MAX_REPEL
+# 135 "data/global.pory"
+	.2byte ITEM_NORMAL_TERA_SHARD
+# 136 "data/global.pory"
+	.2byte ITEM_EXP_CANDY_XS
 # 137 "data/global.pory"
-BadgedPokemart6:
-# 138 "data/global.pory"
-	.2byte ITEM_POKE_BALL
-# 139 "data/global.pory"
-	.2byte ITEM_GREAT_BALL
-# 140 "data/global.pory"
-	.2byte ITEM_ULTRA_BALL
-# 141 "data/global.pory"
-	.2byte ITEM_POTION
-# 142 "data/global.pory"
-	.2byte ITEM_SUPER_POTION
-# 143 "data/global.pory"
-	.2byte ITEM_HYPER_POTION
-# 144 "data/global.pory"
-	.2byte ITEM_MAX_POTION
-# 145 "data/global.pory"
-	.2byte ITEM_REVIVE
-# 146 "data/global.pory"
-	.2byte ITEM_ANTIDOTE
-# 147 "data/global.pory"
-	.2byte ITEM_PARALYZE_HEAL
-# 148 "data/global.pory"
-	.2byte ITEM_AWAKENING
-# 149 "data/global.pory"
-	.2byte ITEM_BURN_HEAL
-# 150 "data/global.pory"
-	.2byte ITEM_ICE_HEAL
-# 151 "data/global.pory"
-	.2byte ITEM_FULL_HEAL
-# 152 "data/global.pory"
-	.2byte ITEM_REPEL
-# 153 "data/global.pory"
-	.2byte ITEM_SUPER_REPEL
-# 154 "data/global.pory"
-	.2byte ITEM_MAX_REPEL
-# 155 "data/global.pory"
-	.2byte ITEM_EXP_CANDY_XS
-# 156 "data/global.pory"
 	.2byte ITEM_EXP_CANDY_S
-# 157 "data/global.pory"
+# 138 "data/global.pory"
 	.2byte ITEM_EXP_CANDY_M
 	.2byte ITEM_NONE
 
 	.align 2
-# 160 "data/global.pory"
-BadgedPokemart7:
-# 161 "data/global.pory"
+# 141 "data/global.pory"
+BadgedPokemart6:
+# 142 "data/global.pory"
 	.2byte ITEM_POKE_BALL
-# 162 "data/global.pory"
+# 143 "data/global.pory"
 	.2byte ITEM_GREAT_BALL
-# 163 "data/global.pory"
+# 144 "data/global.pory"
 	.2byte ITEM_ULTRA_BALL
-# 164 "data/global.pory"
+# 145 "data/global.pory"
 	.2byte ITEM_POTION
-# 165 "data/global.pory"
+# 146 "data/global.pory"
 	.2byte ITEM_SUPER_POTION
-# 166 "data/global.pory"
+# 147 "data/global.pory"
 	.2byte ITEM_HYPER_POTION
-# 167 "data/global.pory"
+# 148 "data/global.pory"
 	.2byte ITEM_MAX_POTION
-# 168 "data/global.pory"
-	.2byte ITEM_FULL_RESTORE
-# 169 "data/global.pory"
+# 149 "data/global.pory"
 	.2byte ITEM_REVIVE
-# 170 "data/global.pory"
+# 150 "data/global.pory"
 	.2byte ITEM_ANTIDOTE
-# 171 "data/global.pory"
+# 151 "data/global.pory"
 	.2byte ITEM_PARALYZE_HEAL
-# 172 "data/global.pory"
+# 152 "data/global.pory"
 	.2byte ITEM_AWAKENING
-# 173 "data/global.pory"
+# 153 "data/global.pory"
 	.2byte ITEM_BURN_HEAL
-# 174 "data/global.pory"
+# 154 "data/global.pory"
 	.2byte ITEM_ICE_HEAL
-# 175 "data/global.pory"
+# 155 "data/global.pory"
 	.2byte ITEM_FULL_HEAL
-# 176 "data/global.pory"
+# 156 "data/global.pory"
 	.2byte ITEM_REPEL
-# 177 "data/global.pory"
+# 157 "data/global.pory"
 	.2byte ITEM_SUPER_REPEL
-# 178 "data/global.pory"
+# 158 "data/global.pory"
 	.2byte ITEM_MAX_REPEL
-# 179 "data/global.pory"
+# 159 "data/global.pory"
+	.2byte ITEM_NORMAL_TERA_SHARD
+# 160 "data/global.pory"
 	.2byte ITEM_EXP_CANDY_XS
-# 180 "data/global.pory"
+# 161 "data/global.pory"
 	.2byte ITEM_EXP_CANDY_S
-# 181 "data/global.pory"
+# 162 "data/global.pory"
 	.2byte ITEM_EXP_CANDY_M
+	.2byte ITEM_NONE
+
+	.align 2
+# 165 "data/global.pory"
+BadgedPokemart7:
+# 166 "data/global.pory"
+	.2byte ITEM_POKE_BALL
+# 167 "data/global.pory"
+	.2byte ITEM_GREAT_BALL
+# 168 "data/global.pory"
+	.2byte ITEM_ULTRA_BALL
+# 169 "data/global.pory"
+	.2byte ITEM_POTION
+# 170 "data/global.pory"
+	.2byte ITEM_SUPER_POTION
+# 171 "data/global.pory"
+	.2byte ITEM_HYPER_POTION
+# 172 "data/global.pory"
+	.2byte ITEM_MAX_POTION
+# 173 "data/global.pory"
+	.2byte ITEM_FULL_RESTORE
+# 174 "data/global.pory"
+	.2byte ITEM_REVIVE
+# 175 "data/global.pory"
+	.2byte ITEM_ANTIDOTE
+# 176 "data/global.pory"
+	.2byte ITEM_PARALYZE_HEAL
+# 177 "data/global.pory"
+	.2byte ITEM_AWAKENING
+# 178 "data/global.pory"
+	.2byte ITEM_BURN_HEAL
+# 179 "data/global.pory"
+	.2byte ITEM_ICE_HEAL
+# 180 "data/global.pory"
+	.2byte ITEM_FULL_HEAL
+# 181 "data/global.pory"
+	.2byte ITEM_REPEL
 # 182 "data/global.pory"
+	.2byte ITEM_SUPER_REPEL
+# 183 "data/global.pory"
+	.2byte ITEM_MAX_REPEL
+# 184 "data/global.pory"
+	.2byte ITEM_NORMAL_TERA_SHARD
+# 185 "data/global.pory"
+	.2byte ITEM_EXP_CANDY_XS
+# 186 "data/global.pory"
+	.2byte ITEM_EXP_CANDY_S
+# 187 "data/global.pory"
+	.2byte ITEM_EXP_CANDY_M
+# 188 "data/global.pory"
 	.2byte ITEM_EXP_CANDY_L
 	.2byte ITEM_NONE
 
 Mart_EventScript_TMClerk::
-# 186 "data/global.pory"
+# 192 "data/global.pory"
 	lock
-# 187 "data/global.pory"
+# 193 "data/global.pory"
 	faceplayer
-# 188 "data/global.pory"
-	goto_if_unset FLAG_BADGE01_GET, Mart_EventScript_TMClerk_2
 # 194 "data/global.pory"
+	goto_if_unset FLAG_BADGE01_GET, Mart_EventScript_TMClerk_2
+# 200 "data/global.pory"
 	msgbox gText_HowMayIServeYou
-# 195 "data/global.pory"
+# 201 "data/global.pory"
 	waitmessage
-# 196 "data/global.pory"
+# 202 "data/global.pory"
 	dynmultipush Mart_EventScript_TMClerk_Text_1, 0
-# 197 "data/global.pory"
+# 203 "data/global.pory"
 	goto_if_set FLAG_BADGE02_GET, Mart_EventScript_TMClerk_6
 Mart_EventScript_TMClerk_5:
-# 200 "data/global.pory"
+# 206 "data/global.pory"
 	goto_if_set FLAG_BADGE03_GET, Mart_EventScript_TMClerk_9
 Mart_EventScript_TMClerk_8:
-# 203 "data/global.pory"
+# 209 "data/global.pory"
 	goto_if_set FLAG_BADGE04_GET, Mart_EventScript_TMClerk_12
 Mart_EventScript_TMClerk_11:
-# 206 "data/global.pory"
+# 212 "data/global.pory"
 	goto_if_set FLAG_BADGE05_GET, Mart_EventScript_TMClerk_15
 Mart_EventScript_TMClerk_14:
-# 209 "data/global.pory"
+# 215 "data/global.pory"
 	goto_if_set FLAG_BADGE06_GET, Mart_EventScript_TMClerk_18
 Mart_EventScript_TMClerk_17:
-# 212 "data/global.pory"
+# 218 "data/global.pory"
 	goto_if_set FLAG_BADGE07_GET, Mart_EventScript_TMClerk_21
 Mart_EventScript_TMClerk_20:
-# 215 "data/global.pory"
+# 221 "data/global.pory"
 	goto_if_set FLAG_BADGE08_GET, Mart_EventScript_TMClerk_24
 Mart_EventScript_TMClerk_23:
-# 218 "data/global.pory"
-	dynmultistack 0, 0, FALSE, 6, FALSE, VAR_0x800A, DYN_MULTICHOICE_CB_NONE
-# 219 "data/global.pory"
-	switch VAR_RESULT
-# 220 "data/global.pory"
-	case 0, Mart_EventScript_TMClerk_28
-# 222 "data/global.pory"
-	case 1, Mart_EventScript_TMClerk_29
 # 224 "data/global.pory"
-	case 2, Mart_EventScript_TMClerk_30
+	dynmultistack 0, 0, FALSE, 6, FALSE, VAR_0x800A, DYN_MULTICHOICE_CB_NONE
+# 225 "data/global.pory"
+	switch VAR_RESULT
 # 226 "data/global.pory"
-	case 3, Mart_EventScript_TMClerk_31
+	case 0, Mart_EventScript_TMClerk_28
 # 228 "data/global.pory"
-	case 4, Mart_EventScript_TMClerk_32
+	case 1, Mart_EventScript_TMClerk_29
 # 230 "data/global.pory"
-	case 5, Mart_EventScript_TMClerk_33
+	case 2, Mart_EventScript_TMClerk_30
 # 232 "data/global.pory"
-	case 6, Mart_EventScript_TMClerk_34
+	case 3, Mart_EventScript_TMClerk_31
 # 234 "data/global.pory"
+	case 4, Mart_EventScript_TMClerk_32
+# 236 "data/global.pory"
+	case 5, Mart_EventScript_TMClerk_33
+# 238 "data/global.pory"
+	case 6, Mart_EventScript_TMClerk_34
+# 240 "data/global.pory"
 	case 7, Mart_EventScript_TMClerk_35
 Mart_EventScript_TMClerk_26:
-# 239 "data/global.pory"
+# 245 "data/global.pory"
 	msgbox gText_PleaseComeAgain
 Mart_EventScript_TMClerk_1:
-# 241 "data/global.pory"
+# 247 "data/global.pory"
 	release
 	end
 
 Mart_EventScript_TMClerk_2:
-# 190 "data/global.pory"
+# 196 "data/global.pory"
 	msgbox Mart_EventScript_TMClerk_Text_0
 	goto Mart_EventScript_TMClerk_1
 
 Mart_EventScript_TMClerk_6:
-# 198 "data/global.pory"
+# 204 "data/global.pory"
 	dynmultipush Mart_EventScript_TMClerk_Text_2, 1
 	goto Mart_EventScript_TMClerk_5
 
 Mart_EventScript_TMClerk_9:
-# 201 "data/global.pory"
+# 207 "data/global.pory"
 	dynmultipush Mart_EventScript_TMClerk_Text_3, 2
 	goto Mart_EventScript_TMClerk_8
 
 Mart_EventScript_TMClerk_12:
-# 204 "data/global.pory"
+# 210 "data/global.pory"
 	dynmultipush Mart_EventScript_TMClerk_Text_4, 3
 	goto Mart_EventScript_TMClerk_11
 
 Mart_EventScript_TMClerk_15:
-# 207 "data/global.pory"
+# 213 "data/global.pory"
 	dynmultipush Mart_EventScript_TMClerk_Text_5, 4
 	goto Mart_EventScript_TMClerk_14
 
 Mart_EventScript_TMClerk_18:
-# 210 "data/global.pory"
+# 216 "data/global.pory"
 	dynmultipush Mart_EventScript_TMClerk_Text_6, 5
 	goto Mart_EventScript_TMClerk_17
 
 Mart_EventScript_TMClerk_21:
-# 213 "data/global.pory"
+# 219 "data/global.pory"
 	dynmultipush Mart_EventScript_TMClerk_Text_7, 6
 	goto Mart_EventScript_TMClerk_20
 
 Mart_EventScript_TMClerk_24:
-# 216 "data/global.pory"
+# 222 "data/global.pory"
 	dynmultipush Mart_EventScript_TMClerk_Text_8, 7
 	goto Mart_EventScript_TMClerk_23
 
 Mart_EventScript_TMClerk_28:
-# 221 "data/global.pory"
+# 227 "data/global.pory"
 	pokemart TMMart1
 	goto Mart_EventScript_TMClerk_26
 
 Mart_EventScript_TMClerk_29:
-# 223 "data/global.pory"
+# 229 "data/global.pory"
 	pokemart TMMart2
 	goto Mart_EventScript_TMClerk_26
 
 Mart_EventScript_TMClerk_30:
-# 225 "data/global.pory"
+# 231 "data/global.pory"
 	pokemart TMMart3
 	goto Mart_EventScript_TMClerk_26
 
 Mart_EventScript_TMClerk_31:
-# 227 "data/global.pory"
+# 233 "data/global.pory"
 	pokemart TMMart4
 	goto Mart_EventScript_TMClerk_26
 
 Mart_EventScript_TMClerk_32:
-# 229 "data/global.pory"
+# 235 "data/global.pory"
 	pokemart TMMart5
 	goto Mart_EventScript_TMClerk_26
 
 Mart_EventScript_TMClerk_33:
-# 231 "data/global.pory"
+# 237 "data/global.pory"
 	pokemart TMMart6
 	goto Mart_EventScript_TMClerk_26
 
 Mart_EventScript_TMClerk_34:
-# 233 "data/global.pory"
+# 239 "data/global.pory"
 	pokemart TMMart7
 	goto Mart_EventScript_TMClerk_26
 
 Mart_EventScript_TMClerk_35:
-# 235 "data/global.pory"
+# 241 "data/global.pory"
 	pokemart TMMart8
 	goto Mart_EventScript_TMClerk_26
 
 
 	.align 2
-# 245 "data/global.pory"
+# 251 "data/global.pory"
 TMMart1:
-# 246 "data/global.pory"
+# 252 "data/global.pory"
 	.2byte ITEM_TM33
-# 247 "data/global.pory"
+# 253 "data/global.pory"
 	.2byte ITEM_TM47
-# 248 "data/global.pory"
+# 254 "data/global.pory"
 	.2byte ITEM_TM93
 	.2byte ITEM_NONE
 
 	.align 2
-# 251 "data/global.pory"
-TMMart2:
-# 252 "data/global.pory"
-	.2byte ITEM_TM21
-# 253 "data/global.pory"
-	.2byte ITEM_TM26
-# 254 "data/global.pory"
-	.2byte ITEM_TM29
-# 255 "data/global.pory"
-	.2byte ITEM_TM31
-# 256 "data/global.pory"
-	.2byte ITEM_TM37
 # 257 "data/global.pory"
-	.2byte ITEM_TM81
+TMMart2:
 # 258 "data/global.pory"
-	.2byte ITEM_TM109
+	.2byte ITEM_TM21
 # 259 "data/global.pory"
-	.2byte ITEM_TM110
+	.2byte ITEM_TM26
 # 260 "data/global.pory"
+	.2byte ITEM_TM29
+# 261 "data/global.pory"
+	.2byte ITEM_TM31
+# 262 "data/global.pory"
+	.2byte ITEM_TM37
+# 263 "data/global.pory"
+	.2byte ITEM_TM81
+# 264 "data/global.pory"
+	.2byte ITEM_TM109
+# 265 "data/global.pory"
+	.2byte ITEM_TM110
+# 266 "data/global.pory"
 	.2byte ITEM_TM119
 	.2byte ITEM_NONE
 
 	.align 2
-# 263 "data/global.pory"
-TMMart3:
-# 264 "data/global.pory"
-	.2byte ITEM_TM01
-# 265 "data/global.pory"
-	.2byte ITEM_TM02
-# 266 "data/global.pory"
-	.2byte ITEM_TM03
-# 267 "data/global.pory"
-	.2byte ITEM_TM04
-# 268 "data/global.pory"
-	.2byte ITEM_TM19
 # 269 "data/global.pory"
-	.2byte ITEM_TM20
+TMMart3:
 # 270 "data/global.pory"
-	.2byte ITEM_TM30
+	.2byte ITEM_TM01
 # 271 "data/global.pory"
-	.2byte ITEM_TM39
+	.2byte ITEM_TM02
 # 272 "data/global.pory"
-	.2byte ITEM_TM44
+	.2byte ITEM_TM03
 # 273 "data/global.pory"
-	.2byte ITEM_TM48
+	.2byte ITEM_TM04
 # 274 "data/global.pory"
-	.2byte ITEM_TM64
+	.2byte ITEM_TM19
 # 275 "data/global.pory"
-	.2byte ITEM_TM68
+	.2byte ITEM_TM20
 # 276 "data/global.pory"
-	.2byte ITEM_TM76
+	.2byte ITEM_TM30
 # 277 "data/global.pory"
-	.2byte ITEM_TM94
+	.2byte ITEM_TM39
 # 278 "data/global.pory"
-	.2byte ITEM_TM103
+	.2byte ITEM_TM44
 # 279 "data/global.pory"
+	.2byte ITEM_TM48
+# 280 "data/global.pory"
+	.2byte ITEM_TM64
+# 281 "data/global.pory"
+	.2byte ITEM_TM68
+# 282 "data/global.pory"
+	.2byte ITEM_TM76
+# 283 "data/global.pory"
+	.2byte ITEM_TM94
+# 284 "data/global.pory"
+	.2byte ITEM_TM103
+# 285 "data/global.pory"
 	.2byte ITEM_TM115
 	.2byte ITEM_NONE
 
 	.align 2
-# 282 "data/global.pory"
-TMMart4:
-# 283 "data/global.pory"
-	.2byte ITEM_TM10
-# 284 "data/global.pory"
-	.2byte ITEM_TM15
-# 285 "data/global.pory"
-	.2byte ITEM_TM16
-# 286 "data/global.pory"
-	.2byte ITEM_TM17
-# 287 "data/global.pory"
-	.2byte ITEM_TM18
 # 288 "data/global.pory"
-	.2byte ITEM_TM25
+TMMart4:
 # 289 "data/global.pory"
-	.2byte ITEM_TM32
+	.2byte ITEM_TM10
 # 290 "data/global.pory"
-	.2byte ITEM_TM65
+	.2byte ITEM_TM15
 # 291 "data/global.pory"
-	.2byte ITEM_TM73
+	.2byte ITEM_TM16
 # 292 "data/global.pory"
-	.2byte ITEM_TM75
+	.2byte ITEM_TM17
 # 293 "data/global.pory"
-	.2byte ITEM_TM82
+	.2byte ITEM_TM18
 # 294 "data/global.pory"
-	.2byte ITEM_TM87
+	.2byte ITEM_TM25
 # 295 "data/global.pory"
-	.2byte ITEM_TM101
+	.2byte ITEM_TM32
 # 296 "data/global.pory"
-	.2byte ITEM_TM104
+	.2byte ITEM_TM65
 # 297 "data/global.pory"
-	.2byte ITEM_TM108
+	.2byte ITEM_TM73
 # 298 "data/global.pory"
-	.2byte ITEM_TM114
+	.2byte ITEM_TM75
 # 299 "data/global.pory"
+	.2byte ITEM_TM82
+# 300 "data/global.pory"
+	.2byte ITEM_TM87
+# 301 "data/global.pory"
+	.2byte ITEM_TM101
+# 302 "data/global.pory"
+	.2byte ITEM_TM104
+# 303 "data/global.pory"
+	.2byte ITEM_TM108
+# 304 "data/global.pory"
+	.2byte ITEM_TM114
+# 305 "data/global.pory"
 	.2byte ITEM_TM116
 	.2byte ITEM_NONE
 
 	.align 2
-# 302 "data/global.pory"
-TMMart5:
-# 303 "data/global.pory"
-	.2byte ITEM_TM05
-# 304 "data/global.pory"
-	.2byte ITEM_TM06
-# 305 "data/global.pory"
-	.2byte ITEM_TM07
-# 306 "data/global.pory"
-	.2byte ITEM_TM08
-# 307 "data/global.pory"
-	.2byte ITEM_TM11
 # 308 "data/global.pory"
-	.2byte ITEM_TM12
+TMMart5:
 # 309 "data/global.pory"
-	.2byte ITEM_TM13
+	.2byte ITEM_TM05
 # 310 "data/global.pory"
-	.2byte ITEM_TM24
+	.2byte ITEM_TM06
 # 311 "data/global.pory"
-	.2byte ITEM_TM28
+	.2byte ITEM_TM07
 # 312 "data/global.pory"
-	.2byte ITEM_TM45
+	.2byte ITEM_TM08
 # 313 "data/global.pory"
-	.2byte ITEM_TM50
+	.2byte ITEM_TM11
 # 314 "data/global.pory"
-	.2byte ITEM_TM54
+	.2byte ITEM_TM12
 # 315 "data/global.pory"
-	.2byte ITEM_TM60
+	.2byte ITEM_TM13
 # 316 "data/global.pory"
-	.2byte ITEM_TM61
+	.2byte ITEM_TM24
 # 317 "data/global.pory"
-	.2byte ITEM_TM66
+	.2byte ITEM_TM28
 # 318 "data/global.pory"
-	.2byte ITEM_TM71
+	.2byte ITEM_TM45
 # 319 "data/global.pory"
-	.2byte ITEM_TM78
+	.2byte ITEM_TM50
 # 320 "data/global.pory"
-	.2byte ITEM_TM83
+	.2byte ITEM_TM54
 # 321 "data/global.pory"
-	.2byte ITEM_TM85
+	.2byte ITEM_TM60
 # 322 "data/global.pory"
-	.2byte ITEM_TM86
+	.2byte ITEM_TM61
 # 323 "data/global.pory"
-	.2byte ITEM_TM88
+	.2byte ITEM_TM66
 # 324 "data/global.pory"
-	.2byte ITEM_TM99
+	.2byte ITEM_TM71
 # 325 "data/global.pory"
-	.2byte ITEM_TM111
+	.2byte ITEM_TM78
 # 326 "data/global.pory"
+	.2byte ITEM_TM83
+# 327 "data/global.pory"
+	.2byte ITEM_TM85
+# 328 "data/global.pory"
+	.2byte ITEM_TM86
+# 329 "data/global.pory"
+	.2byte ITEM_TM88
+# 330 "data/global.pory"
+	.2byte ITEM_TM99
+# 331 "data/global.pory"
+	.2byte ITEM_TM111
+# 332 "data/global.pory"
 	.2byte ITEM_TM112
 	.2byte ITEM_NONE
 
 	.align 2
-# 329 "data/global.pory"
-TMMart6:
-# 330 "data/global.pory"
-	.2byte ITEM_TM09
-# 331 "data/global.pory"
-	.2byte ITEM_TM22
-# 332 "data/global.pory"
-	.2byte ITEM_TM23
-# 333 "data/global.pory"
-	.2byte ITEM_TM41
-# 334 "data/global.pory"
-	.2byte ITEM_TM49
 # 335 "data/global.pory"
-	.2byte ITEM_TM51
+TMMart6:
 # 336 "data/global.pory"
-	.2byte ITEM_TM52
+	.2byte ITEM_TM09
 # 337 "data/global.pory"
-	.2byte ITEM_TM56
+	.2byte ITEM_TM22
 # 338 "data/global.pory"
-	.2byte ITEM_TM57
+	.2byte ITEM_TM23
 # 339 "data/global.pory"
-	.2byte ITEM_TM59
+	.2byte ITEM_TM41
 # 340 "data/global.pory"
-	.2byte ITEM_TM62
+	.2byte ITEM_TM49
 # 341 "data/global.pory"
-	.2byte ITEM_TM67
+	.2byte ITEM_TM51
 # 342 "data/global.pory"
-	.2byte ITEM_TM69
+	.2byte ITEM_TM52
 # 343 "data/global.pory"
-	.2byte ITEM_TM74
+	.2byte ITEM_TM56
 # 344 "data/global.pory"
-	.2byte ITEM_TM79
+	.2byte ITEM_TM57
 # 345 "data/global.pory"
-	.2byte ITEM_TM89
+	.2byte ITEM_TM59
 # 346 "data/global.pory"
-	.2byte ITEM_TM90
+	.2byte ITEM_TM62
 # 347 "data/global.pory"
-	.2byte ITEM_TM91
+	.2byte ITEM_TM67
 # 348 "data/global.pory"
-	.2byte ITEM_TM92
+	.2byte ITEM_TM69
 # 349 "data/global.pory"
-	.2byte ITEM_TM97
+	.2byte ITEM_TM74
 # 350 "data/global.pory"
-	.2byte ITEM_TM98
+	.2byte ITEM_TM79
 # 351 "data/global.pory"
-	.2byte ITEM_TM100
+	.2byte ITEM_TM89
 # 352 "data/global.pory"
-	.2byte ITEM_TM102
+	.2byte ITEM_TM90
 # 353 "data/global.pory"
-	.2byte ITEM_TM105
+	.2byte ITEM_TM91
 # 354 "data/global.pory"
-	.2byte ITEM_TM106
+	.2byte ITEM_TM92
 # 355 "data/global.pory"
-	.2byte ITEM_TM113
+	.2byte ITEM_TM97
 # 356 "data/global.pory"
-	.2byte ITEM_TM117
+	.2byte ITEM_TM98
 # 357 "data/global.pory"
-	.2byte ITEM_TM118
+	.2byte ITEM_TM100
 # 358 "data/global.pory"
+	.2byte ITEM_TM102
+# 359 "data/global.pory"
+	.2byte ITEM_TM105
+# 360 "data/global.pory"
+	.2byte ITEM_TM106
+# 361 "data/global.pory"
+	.2byte ITEM_TM113
+# 362 "data/global.pory"
+	.2byte ITEM_TM117
+# 363 "data/global.pory"
+	.2byte ITEM_TM118
+# 364 "data/global.pory"
 	.2byte ITEM_TM120
 	.2byte ITEM_NONE
 
 	.align 2
-# 361 "data/global.pory"
-TMMart7:
-# 362 "data/global.pory"
-	.2byte ITEM_TM36
-# 363 "data/global.pory"
-	.2byte ITEM_TM38
-# 364 "data/global.pory"
-	.2byte ITEM_TM42
-# 365 "data/global.pory"
-	.2byte ITEM_TM53
-# 366 "data/global.pory"
-	.2byte ITEM_TM58
 # 367 "data/global.pory"
-	.2byte ITEM_TM63
+TMMart7:
 # 368 "data/global.pory"
-	.2byte ITEM_TM70
+	.2byte ITEM_TM36
 # 369 "data/global.pory"
-	.2byte ITEM_TM72
+	.2byte ITEM_TM38
 # 370 "data/global.pory"
-	.2byte ITEM_TM77
+	.2byte ITEM_TM42
 # 371 "data/global.pory"
-	.2byte ITEM_TM84
+	.2byte ITEM_TM53
 # 372 "data/global.pory"
+	.2byte ITEM_TM58
+# 373 "data/global.pory"
+	.2byte ITEM_TM63
+# 374 "data/global.pory"
+	.2byte ITEM_TM70
+# 375 "data/global.pory"
+	.2byte ITEM_TM72
+# 376 "data/global.pory"
+	.2byte ITEM_TM77
+# 377 "data/global.pory"
+	.2byte ITEM_TM84
+# 378 "data/global.pory"
 	.2byte ITEM_TM95
 	.2byte ITEM_NONE
 
 	.align 2
-# 375 "data/global.pory"
+# 381 "data/global.pory"
 TMMart8:
-# 376 "data/global.pory"
+# 382 "data/global.pory"
 	.2byte ITEM_TM43
-# 377 "data/global.pory"
+# 383 "data/global.pory"
 	.2byte ITEM_TM107
 	.2byte ITEM_NONE
 
 Common_EventScript_PlayEmRivalBgm::
-# 382 "data/global.pory"
+# 388 "data/global.pory"
 	switch VAR_EMERALBODY_RIVAL
-# 383 "data/global.pory"
-	case 1, Common_EventScript_PlayEmRivalBgm_2
-# 385 "data/global.pory"
-	case 2, Common_EventScript_PlayEmRivalBgm_3
-# 387 "data/global.pory"
-	case 3, Common_EventScript_PlayEmRivalBgm_4
 # 389 "data/global.pory"
+	case 1, Common_EventScript_PlayEmRivalBgm_2
+# 391 "data/global.pory"
+	case 2, Common_EventScript_PlayEmRivalBgm_3
+# 393 "data/global.pory"
+	case 3, Common_EventScript_PlayEmRivalBgm_4
+# 395 "data/global.pory"
 	case 4, Common_EventScript_PlayEmRivalBgm_5
-# 392 "data/global.pory"
+# 398 "data/global.pory"
 	playbgm MUS_PL_B_HALL, FALSE
 	return
 
 Common_EventScript_PlayEmRivalBgm_2:
-# 384 "data/global.pory"
+# 390 "data/global.pory"
 	playbgm MUS_DP_DAWN, FALSE
 	return
 
 Common_EventScript_PlayEmRivalBgm_3:
-# 386 "data/global.pory"
+# 392 "data/global.pory"
 	playbgm MUS_HG_EUSINE, FALSE
 	return
 
 Common_EventScript_PlayEmRivalBgm_4:
-# 388 "data/global.pory"
+# 394 "data/global.pory"
 	playbgm MUS_HG_ETHAN, FALSE
 	return
 
 Common_EventScript_PlayEmRivalBgm_5:
-# 390 "data/global.pory"
+# 396 "data/global.pory"
 	playbgm MUS_HG_ENCOUNTER_GIRL_1, FALSE
 	return
 
 
-# 396 "data/global.pory"
-
-# 397 "data/global.pory"
-Common_EventScript_GymNurse::
-# 398 "data/global.pory"
-	lock
-# 399 "data/global.pory"
-	faceplayer
-# 400 "data/global.pory"
-	msgbox gText_GymNurseHeal, MSGBOX_DEFAULT
-# 401 "data/global.pory"
-	closemessage
 # 402 "data/global.pory"
-	call Common_EventScript_OutOfCenterPartyHeal
-# 403 "data/global.pory"
-	releaseall
-# 404 "data/global.pory"
-	end
-# 405 "data/global.pory"
 
+# 403 "data/global.pory"
+Common_EventScript_GymNurse::
+# 404 "data/global.pory"
+	lock
+# 405 "data/global.pory"
+	faceplayer
 # 406 "data/global.pory"
-gText_GymNurseHeal::
+	msgbox gText_GymNurseHeal, MSGBOX_DEFAULT
 # 407 "data/global.pory"
+	closemessage
+# 408 "data/global.pory"
+	call Common_EventScript_OutOfCenterPartyHeal
+# 409 "data/global.pory"
+	releaseall
+# 410 "data/global.pory"
+	end
+# 411 "data/global.pory"
+
+# 412 "data/global.pory"
+gText_GymNurseHeal::
+# 413 "data/global.pory"
 	.string "Allow me to heal your Pokémon.$"
 
 Mart_EventScript_EvoClerk::
-# 411 "data/global.pory"
+# 417 "data/global.pory"
 	lock
-# 412 "data/global.pory"
+# 418 "data/global.pory"
 	faceplayer
-# 413 "data/global.pory"
+# 419 "data/global.pory"
 	special GetNumberOfBadges
-# 414 "data/global.pory"
+# 420 "data/global.pory"
 	copyvar VAR_TEMP_0, VAR_RESULT
-# 415 "data/global.pory"
+# 421 "data/global.pory"
 	compare VAR_TEMP_0, 3
 	goto_if_lt Mart_EventScript_EvoClerk_2
-# 419 "data/global.pory"
+# 425 "data/global.pory"
 	msgbox gText_HowMayIServeYou
-# 420 "data/global.pory"
+# 426 "data/global.pory"
 	waitmessage
-# 421 "data/global.pory"
+# 427 "data/global.pory"
 	dynmultipush Mart_EventScript_EvoClerk_Text_1, 0
-# 422 "data/global.pory"
+# 428 "data/global.pory"
 	dynmultipush Mart_EventScript_EvoClerk_Text_2, 1
-# 423 "data/global.pory"
+# 429 "data/global.pory"
 	compare VAR_TEMP_0, 5
 	goto_if_ge Mart_EventScript_EvoClerk_6
 Mart_EventScript_EvoClerk_5:
-# 426 "data/global.pory"
+# 432 "data/global.pory"
 	dynmultistack 0, 0, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE
-# 427 "data/global.pory"
+# 433 "data/global.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Mart_EventScript_EvoClerk_9
-# 444 "data/global.pory"
+# 450 "data/global.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Mart_EventScript_EvoClerk_10
-# 462 "data/global.pory"
+# 468 "data/global.pory"
 	compare VAR_RESULT, 2
 	goto_if_eq Mart_EventScript_EvoClerk_11
 Mart_EventScript_EvoClerk_8:
-# 479 "data/global.pory"
+# 485 "data/global.pory"
 	msgbox gText_PleaseComeAgain
 Mart_EventScript_EvoClerk_1:
-# 481 "data/global.pory"
+# 487 "data/global.pory"
 	release
 	end
 
 Mart_EventScript_EvoClerk_2:
-# 416 "data/global.pory"
+# 422 "data/global.pory"
 	msgbox Mart_EventScript_EvoClerk_Text_0
 	goto Mart_EventScript_EvoClerk_1
 
 Mart_EventScript_EvoClerk_6:
-# 424 "data/global.pory"
+# 430 "data/global.pory"
 	dynmultipush Mart_EventScript_EvoClerk_Text_3, 2
 	goto Mart_EventScript_EvoClerk_5
 
 Mart_EventScript_EvoClerk_9:
-# 428 "data/global.pory"
+# 434 "data/global.pory"
 	switch VAR_TEMP_0
-# 429 "data/global.pory"
-	case 0, Mart_EventScript_EvoClerk_16
-# 430 "data/global.pory"
-	case 1, Mart_EventScript_EvoClerk_16
-# 431 "data/global.pory"
-	case 2, Mart_EventScript_EvoClerk_16
-# 432 "data/global.pory"
-	case 3, Mart_EventScript_EvoClerk_16
-# 433 "data/global.pory"
-	case 4, Mart_EventScript_EvoClerk_16
 # 435 "data/global.pory"
-	case 5, Mart_EventScript_EvoClerk_17
+	case 0, Mart_EventScript_EvoClerk_16
 # 436 "data/global.pory"
-	case 6, Mart_EventScript_EvoClerk_17
+	case 1, Mart_EventScript_EvoClerk_16
 # 437 "data/global.pory"
-	case 7, Mart_EventScript_EvoClerk_17
+	case 2, Mart_EventScript_EvoClerk_16
 # 438 "data/global.pory"
+	case 3, Mart_EventScript_EvoClerk_16
+# 439 "data/global.pory"
+	case 4, Mart_EventScript_EvoClerk_16
+# 441 "data/global.pory"
+	case 5, Mart_EventScript_EvoClerk_17
+# 442 "data/global.pory"
+	case 6, Mart_EventScript_EvoClerk_17
+# 443 "data/global.pory"
+	case 7, Mart_EventScript_EvoClerk_17
+# 444 "data/global.pory"
 	case 8, Mart_EventScript_EvoClerk_17
 	goto Mart_EventScript_EvoClerk_8
 
 Mart_EventScript_EvoClerk_10:
-# 445 "data/global.pory"
-	switch VAR_TEMP_0
-# 446 "data/global.pory"
-	case 0, Mart_EventScript_EvoClerk_20
-# 447 "data/global.pory"
-	case 1, Mart_EventScript_EvoClerk_20
-# 448 "data/global.pory"
-	case 2, Mart_EventScript_EvoClerk_20
-# 449 "data/global.pory"
-	case 3, Mart_EventScript_EvoClerk_20
 # 451 "data/global.pory"
-	case 4, Mart_EventScript_EvoClerk_21
+	switch VAR_TEMP_0
+# 452 "data/global.pory"
+	case 0, Mart_EventScript_EvoClerk_20
 # 453 "data/global.pory"
-	case 5, Mart_EventScript_EvoClerk_22
+	case 1, Mart_EventScript_EvoClerk_20
 # 454 "data/global.pory"
-	case 6, Mart_EventScript_EvoClerk_22
+	case 2, Mart_EventScript_EvoClerk_20
 # 455 "data/global.pory"
+	case 3, Mart_EventScript_EvoClerk_20
+# 457 "data/global.pory"
+	case 4, Mart_EventScript_EvoClerk_21
+# 459 "data/global.pory"
+	case 5, Mart_EventScript_EvoClerk_22
+# 460 "data/global.pory"
+	case 6, Mart_EventScript_EvoClerk_22
+# 461 "data/global.pory"
 	case 7, Mart_EventScript_EvoClerk_22
-# 456 "data/global.pory"
+# 462 "data/global.pory"
 	case 8, Mart_EventScript_EvoClerk_22
 	goto Mart_EventScript_EvoClerk_8
 
 Mart_EventScript_EvoClerk_11:
-# 463 "data/global.pory"
-	switch VAR_TEMP_0
-# 464 "data/global.pory"
-	case 0, Mart_EventScript_EvoClerk_25
-# 465 "data/global.pory"
-	case 1, Mart_EventScript_EvoClerk_25
-# 466 "data/global.pory"
-	case 2, Mart_EventScript_EvoClerk_25
-# 467 "data/global.pory"
-	case 3, Mart_EventScript_EvoClerk_25
-# 468 "data/global.pory"
-	case 4, Mart_EventScript_EvoClerk_25
 # 469 "data/global.pory"
-	case 5, Mart_EventScript_EvoClerk_25
+	switch VAR_TEMP_0
 # 470 "data/global.pory"
-	case 6, Mart_EventScript_EvoClerk_25
+	case 0, Mart_EventScript_EvoClerk_25
+# 471 "data/global.pory"
+	case 1, Mart_EventScript_EvoClerk_25
 # 472 "data/global.pory"
-	case 7, Mart_EventScript_EvoClerk_26
+	case 2, Mart_EventScript_EvoClerk_25
 # 473 "data/global.pory"
+	case 3, Mart_EventScript_EvoClerk_25
+# 474 "data/global.pory"
+	case 4, Mart_EventScript_EvoClerk_25
+# 475 "data/global.pory"
+	case 5, Mart_EventScript_EvoClerk_25
+# 476 "data/global.pory"
+	case 6, Mart_EventScript_EvoClerk_25
+# 478 "data/global.pory"
+	case 7, Mart_EventScript_EvoClerk_26
+# 479 "data/global.pory"
 	case 8, Mart_EventScript_EvoClerk_26
 	goto Mart_EventScript_EvoClerk_8
 
 Mart_EventScript_EvoClerk_16:
-# 434 "data/global.pory"
+# 440 "data/global.pory"
 	pokemart EvoStonesPokemart3
 	goto Mart_EventScript_EvoClerk_8
 
 Mart_EventScript_EvoClerk_17:
-# 439 "data/global.pory"
+# 445 "data/global.pory"
 	pokemart EvoStonesPokemart5
 	goto Mart_EventScript_EvoClerk_8
 
 Mart_EventScript_EvoClerk_20:
-# 450 "data/global.pory"
+# 456 "data/global.pory"
 	pokemart EvoOtherPokemart3
 	goto Mart_EventScript_EvoClerk_8
 
 Mart_EventScript_EvoClerk_21:
-# 452 "data/global.pory"
+# 458 "data/global.pory"
 	pokemart EvoOtherPokemart4
 	goto Mart_EventScript_EvoClerk_8
 
 Mart_EventScript_EvoClerk_22:
-# 457 "data/global.pory"
+# 463 "data/global.pory"
 	pokemart EvoOtherPokemart5
 	goto Mart_EventScript_EvoClerk_8
 
 Mart_EventScript_EvoClerk_25:
-# 471 "data/global.pory"
+# 477 "data/global.pory"
 	pokemart EvoExtraPokemart6
 	goto Mart_EventScript_EvoClerk_8
 
 Mart_EventScript_EvoClerk_26:
-# 474 "data/global.pory"
+# 480 "data/global.pory"
 	pokemart EvoExtraPokemart7
 	goto Mart_EventScript_EvoClerk_8
 
 
 	.align 2
-# 485 "data/global.pory"
-EvoStonesPokemart3:
-# 486 "data/global.pory"
-	.2byte ITEM_FIRE_STONE
-# 487 "data/global.pory"
-	.2byte ITEM_WATER_STONE
-# 488 "data/global.pory"
-	.2byte ITEM_THUNDER_STONE
-# 489 "data/global.pory"
-	.2byte ITEM_LEAF_STONE
-# 490 "data/global.pory"
-	.2byte ITEM_ICE_STONE
 # 491 "data/global.pory"
-	.2byte ITEM_MOON_STONE
+EvoStonesPokemart3:
 # 492 "data/global.pory"
+	.2byte ITEM_FIRE_STONE
+# 493 "data/global.pory"
+	.2byte ITEM_WATER_STONE
+# 494 "data/global.pory"
+	.2byte ITEM_THUNDER_STONE
+# 495 "data/global.pory"
+	.2byte ITEM_LEAF_STONE
+# 496 "data/global.pory"
+	.2byte ITEM_ICE_STONE
+# 497 "data/global.pory"
+	.2byte ITEM_MOON_STONE
+# 498 "data/global.pory"
 	.2byte ITEM_SUN_STONE
 	.2byte ITEM_NONE
 
 	.align 2
-# 495 "data/global.pory"
-EvoStonesPokemart5:
-# 496 "data/global.pory"
-	.2byte ITEM_FIRE_STONE
-# 497 "data/global.pory"
-	.2byte ITEM_WATER_STONE
-# 498 "data/global.pory"
-	.2byte ITEM_THUNDER_STONE
-# 499 "data/global.pory"
-	.2byte ITEM_LEAF_STONE
-# 500 "data/global.pory"
-	.2byte ITEM_ICE_STONE
 # 501 "data/global.pory"
-	.2byte ITEM_MOON_STONE
+EvoStonesPokemart5:
 # 502 "data/global.pory"
-	.2byte ITEM_SUN_STONE
+	.2byte ITEM_FIRE_STONE
 # 503 "data/global.pory"
-	.2byte ITEM_SHINY_STONE
+	.2byte ITEM_WATER_STONE
 # 504 "data/global.pory"
-	.2byte ITEM_DUSK_STONE
+	.2byte ITEM_THUNDER_STONE
 # 505 "data/global.pory"
+	.2byte ITEM_LEAF_STONE
+# 506 "data/global.pory"
+	.2byte ITEM_ICE_STONE
+# 507 "data/global.pory"
+	.2byte ITEM_MOON_STONE
+# 508 "data/global.pory"
+	.2byte ITEM_SUN_STONE
+# 509 "data/global.pory"
+	.2byte ITEM_SHINY_STONE
+# 510 "data/global.pory"
+	.2byte ITEM_DUSK_STONE
+# 511 "data/global.pory"
 	.2byte ITEM_DAWN_STONE
 	.2byte ITEM_NONE
 
 	.align 2
-# 508 "data/global.pory"
-EvoOtherPokemart3:
-# 509 "data/global.pory"
-	.2byte ITEM_SACHET
-# 510 "data/global.pory"
-	.2byte ITEM_WHIPPED_DREAM
-	.2byte ITEM_NONE
-
-	.align 2
-# 513 "data/global.pory"
-EvoOtherPokemart4:
 # 514 "data/global.pory"
-	.2byte ITEM_LINKING_CORD
+EvoOtherPokemart3:
 # 515 "data/global.pory"
-	.2byte ITEM_KINGS_ROCK
-# 516 "data/global.pory"
 	.2byte ITEM_SACHET
-# 517 "data/global.pory"
+# 516 "data/global.pory"
 	.2byte ITEM_WHIPPED_DREAM
-# 518 "data/global.pory"
-	.2byte ITEM_CHIPPED_POT
+	.2byte ITEM_NONE
+
+	.align 2
 # 519 "data/global.pory"
-	.2byte ITEM_TART_APPLE
+EvoOtherPokemart4:
 # 520 "data/global.pory"
-	.2byte ITEM_SWEET_APPLE
+	.2byte ITEM_LINKING_CORD
 # 521 "data/global.pory"
+	.2byte ITEM_KINGS_ROCK
+# 522 "data/global.pory"
+	.2byte ITEM_SACHET
+# 523 "data/global.pory"
+	.2byte ITEM_WHIPPED_DREAM
+# 524 "data/global.pory"
+	.2byte ITEM_CHIPPED_POT
+# 525 "data/global.pory"
+	.2byte ITEM_TART_APPLE
+# 526 "data/global.pory"
+	.2byte ITEM_SWEET_APPLE
+# 527 "data/global.pory"
 	.2byte ITEM_SYRUPY_APPLE
 	.2byte ITEM_NONE
 
 	.align 2
-# 524 "data/global.pory"
-EvoOtherPokemart5:
-# 525 "data/global.pory"
-	.2byte ITEM_LINKING_CORD
-# 526 "data/global.pory"
-	.2byte ITEM_KINGS_ROCK
-# 527 "data/global.pory"
-	.2byte ITEM_METAL_ALLOY
-# 528 "data/global.pory"
-	.2byte ITEM_BLACK_AUGURITE
-# 529 "data/global.pory"
-	.2byte ITEM_DRAGON_SCALE
 # 530 "data/global.pory"
-	.2byte ITEM_UPGRADE
+EvoOtherPokemart5:
 # 531 "data/global.pory"
-	.2byte ITEM_DEEP_SEA_TOOTH
+	.2byte ITEM_LINKING_CORD
 # 532 "data/global.pory"
-	.2byte ITEM_DEEP_SEA_SCALE
+	.2byte ITEM_KINGS_ROCK
 # 533 "data/global.pory"
-	.2byte ITEM_PRISM_SCALE
+	.2byte ITEM_METAL_ALLOY
 # 534 "data/global.pory"
-	.2byte ITEM_SACHET
+	.2byte ITEM_BLACK_AUGURITE
 # 535 "data/global.pory"
-	.2byte ITEM_WHIPPED_DREAM
+	.2byte ITEM_DRAGON_SCALE
 # 536 "data/global.pory"
-	.2byte ITEM_CHIPPED_POT
+	.2byte ITEM_UPGRADE
 # 537 "data/global.pory"
-	.2byte ITEM_TART_APPLE
+	.2byte ITEM_DEEP_SEA_TOOTH
 # 538 "data/global.pory"
-	.2byte ITEM_SWEET_APPLE
+	.2byte ITEM_DEEP_SEA_SCALE
 # 539 "data/global.pory"
-	.2byte ITEM_SYRUPY_APPLE
+	.2byte ITEM_PRISM_SCALE
 # 540 "data/global.pory"
-	.2byte ITEM_GALARICA_CUFF
+	.2byte ITEM_SACHET
 # 541 "data/global.pory"
-	.2byte ITEM_GALARICA_WREATH
+	.2byte ITEM_WHIPPED_DREAM
 # 542 "data/global.pory"
-	.2byte ITEM_AUSPICIOUS_ARMOR
+	.2byte ITEM_CHIPPED_POT
 # 543 "data/global.pory"
+	.2byte ITEM_TART_APPLE
+# 544 "data/global.pory"
+	.2byte ITEM_SWEET_APPLE
+# 545 "data/global.pory"
+	.2byte ITEM_SYRUPY_APPLE
+# 546 "data/global.pory"
+	.2byte ITEM_GALARICA_CUFF
+# 547 "data/global.pory"
+	.2byte ITEM_GALARICA_WREATH
+# 548 "data/global.pory"
+	.2byte ITEM_AUSPICIOUS_ARMOR
+# 549 "data/global.pory"
 	.2byte ITEM_MALICIOUS_ARMOR
 	.2byte ITEM_NONE
 
 	.align 2
-# 546 "data/global.pory"
-EvoExtraPokemart6:
-# 547 "data/global.pory"
-	.2byte ITEM_DUBIOUS_DISC
-# 548 "data/global.pory"
-	.2byte ITEM_ELECTIRIZER
-# 549 "data/global.pory"
-	.2byte ITEM_MAGMARIZER
-# 550 "data/global.pory"
-	.2byte ITEM_PROTECTOR
-# 551 "data/global.pory"
-	.2byte ITEM_RAZOR_CLAW
 # 552 "data/global.pory"
-	.2byte ITEM_RAZOR_FANG
+EvoExtraPokemart6:
 # 553 "data/global.pory"
+	.2byte ITEM_DUBIOUS_DISC
+# 554 "data/global.pory"
+	.2byte ITEM_ELECTIRIZER
+# 555 "data/global.pory"
+	.2byte ITEM_MAGMARIZER
+# 556 "data/global.pory"
+	.2byte ITEM_PROTECTOR
+# 557 "data/global.pory"
+	.2byte ITEM_RAZOR_CLAW
+# 558 "data/global.pory"
+	.2byte ITEM_RAZOR_FANG
+# 559 "data/global.pory"
 	.2byte ITEM_REAPER_CLOTH
 	.2byte ITEM_NONE
 
 	.align 2
-# 556 "data/global.pory"
-EvoExtraPokemart7:
-# 557 "data/global.pory"
-	.2byte ITEM_DUBIOUS_DISC
-# 558 "data/global.pory"
-	.2byte ITEM_ELECTIRIZER
-# 559 "data/global.pory"
-	.2byte ITEM_MAGMARIZER
-# 560 "data/global.pory"
-	.2byte ITEM_PROTECTOR
-# 561 "data/global.pory"
-	.2byte ITEM_RAZOR_CLAW
 # 562 "data/global.pory"
-	.2byte ITEM_RAZOR_FANG
+EvoExtraPokemart7:
 # 563 "data/global.pory"
-	.2byte ITEM_REAPER_CLOTH
+	.2byte ITEM_DUBIOUS_DISC
 # 564 "data/global.pory"
-	.2byte ITEM_SCROLL_OF_DARKNESS
+	.2byte ITEM_ELECTIRIZER
 # 565 "data/global.pory"
+	.2byte ITEM_MAGMARIZER
+# 566 "data/global.pory"
+	.2byte ITEM_PROTECTOR
+# 567 "data/global.pory"
+	.2byte ITEM_RAZOR_CLAW
+# 568 "data/global.pory"
+	.2byte ITEM_RAZOR_FANG
+# 569 "data/global.pory"
+	.2byte ITEM_REAPER_CLOTH
+# 570 "data/global.pory"
+	.2byte ITEM_SCROLL_OF_DARKNESS
+# 571 "data/global.pory"
 	.2byte ITEM_SCROLL_OF_WATERS
 	.2byte ITEM_NONE
 
 Common_EventScript_MoveReminder::
-# 569 "data/global.pory"
+# 575 "data/global.pory"
 	lock
-# 570 "data/global.pory"
+# 576 "data/global.pory"
 	faceplayer
-# 571 "data/global.pory"
+# 577 "data/global.pory"
 	goto_if_unset FLAG_TEMP_1, Common_EventScript_MoveReminder_2
 Common_EventScript_MoveReminder_1:
-# 574 "data/global.pory"
+# 580 "data/global.pory"
 	setflag FLAG_TEMP_1
-# 575 "data/global.pory"
+# 581 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_1
-# 576 "data/global.pory"
+# 582 "data/global.pory"
 	setvar VAR_RESULT, 2
-# 577 "data/global.pory"
+# 583 "data/global.pory"
 	dynmultipush Common_EventScript_MoveReminder_Text_2, 0
-# 578 "data/global.pory"
+# 584 "data/global.pory"
 	goto_if_set FLAG_BADGE02_GET, Common_EventScript_MoveReminder_5
 Common_EventScript_MoveReminder_4:
-# 581 "data/global.pory"
+# 587 "data/global.pory"
 	dynmultipush Common_EventScript_MoveReminder_Text_4, 2
-# 582 "data/global.pory"
+# 588 "data/global.pory"
 	dynmultistack 0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
-# 583 "data/global.pory"
+# 589 "data/global.pory"
 	compare VAR_RESULT, 2
 	goto_if_ge Common_EventScript_MoveReminder_8
-# 587 "data/global.pory"
+# 593 "data/global.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_MoveReminder_12
 Common_EventScript_MoveReminder_11:
 Common_EventScript_MoveReminder_14:
-# 591 "data/global.pory"
+# 597 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_6
-# 592 "data/global.pory"
+# 598 "data/global.pory"
 	special ChooseMonForMoveRelearner
-# 593 "data/global.pory"
+# 599 "data/global.pory"
 	waitstate
-# 594 "data/global.pory"
+# 600 "data/global.pory"
 	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
 	goto_if_eq Common_EventScript_MoveReminder_16
-# 599 "data/global.pory"
+# 605 "data/global.pory"
 	special IsSelectedMonEgg
-# 600 "data/global.pory"
+# 606 "data/global.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq Common_EventScript_MoveReminder_19
-# 603 "data/global.pory"
+# 609 "data/global.pory"
 	compare VAR_0x8005, 0
 	goto_if_eq Common_EventScript_MoveReminder_20
-# 607 "data/global.pory"
+# 613 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_9
-# 608 "data/global.pory"
+# 614 "data/global.pory"
 	special TeachMoveRelearnerMove
-# 609 "data/global.pory"
+# 615 "data/global.pory"
 	waitstate
-# 610 "data/global.pory"
+# 616 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_5
 Common_EventScript_MoveReminder_7:
-# 616 "data/global.pory"
+# 622 "data/global.pory"
 	clearflag FLAG_EGG_MOVE_TUTOR
-# 617 "data/global.pory"
+# 623 "data/global.pory"
 	release
 	return
 
 Common_EventScript_MoveReminder_2:
-# 572 "data/global.pory"
+# 578 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_0
 	goto Common_EventScript_MoveReminder_1
 
 Common_EventScript_MoveReminder_5:
-# 579 "data/global.pory"
+# 585 "data/global.pory"
 	dynmultipush Common_EventScript_MoveReminder_Text_3, 1
 	goto Common_EventScript_MoveReminder_4
 
 Common_EventScript_MoveReminder_8:
-# 584 "data/global.pory"
+# 590 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_5
 	goto Common_EventScript_MoveReminder_7
 
 Common_EventScript_MoveReminder_12:
-# 588 "data/global.pory"
+# 594 "data/global.pory"
 	setflag FLAG_EGG_MOVE_TUTOR
 	goto Common_EventScript_MoveReminder_11
 
 Common_EventScript_MoveReminder_16:
-# 595 "data/global.pory"
+# 601 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_5
 	goto Common_EventScript_MoveReminder_7
 
 Common_EventScript_MoveReminder_19:
-# 601 "data/global.pory"
+# 607 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_7
 	goto Common_EventScript_MoveReminder_14
 
 Common_EventScript_MoveReminder_20:
-# 604 "data/global.pory"
+# 610 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_8
 	goto Common_EventScript_MoveReminder_14
 
 
 EventScript_CapCollector::
-# 621 "data/global.pory"
+# 627 "data/global.pory"
 	lock
-# 622 "data/global.pory"
+# 628 "data/global.pory"
 	faceplayer
-# 623 "data/global.pory"
+# 629 "data/global.pory"
 	goto_if_unset FLAG_TEMP_1, EventScript_CapCollector_2
 EventScript_CapCollector_1:
-# 627 "data/global.pory"
-	msgbox DoYouHaveAnyCaps
-# 628 "data/global.pory"
-	waitmessage
-# 629 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_0, ITEM_METRONOME
-# 630 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_1, ITEM_GRIP_CLAW
-# 631 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_2, ITEM_STICKY_BARB
-# 632 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_3, ITEM_SHED_SHELL
 # 633 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_4, ITEM_BIG_ROOT
+	msgbox DoYouHaveAnyCaps
 # 634 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_5, ITEM_LIGHT_CLAY
+	waitmessage
 # 635 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_6, ITEM_AIR_BALLOON
+	dynmultipush EventScript_CapCollector_Text_0, ITEM_METRONOME
 # 636 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_7, ITEM_WHITE_HERB
+	dynmultipush EventScript_CapCollector_Text_1, ITEM_GRIP_CLAW
 # 637 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_8, ITEM_RED_CARD
+	dynmultipush EventScript_CapCollector_Text_2, ITEM_STICKY_BARB
 # 638 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_9, ITEM_EJECT_BUTTON
+	dynmultipush EventScript_CapCollector_Text_3, ITEM_SHED_SHELL
 # 639 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_10, ITEM_SAFETY_GOGGLES
+	dynmultipush EventScript_CapCollector_Text_4, ITEM_BIG_ROOT
 # 640 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_11, ITEM_THROAT_SPRAY
+	dynmultipush EventScript_CapCollector_Text_5, ITEM_LIGHT_CLAY
 # 641 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_12, ITEM_MENTAL_HERB
+	dynmultipush EventScript_CapCollector_Text_6, ITEM_AIR_BALLOON
 # 642 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_13, ITEM_NORMAL_GEM
+	dynmultipush EventScript_CapCollector_Text_7, ITEM_WHITE_HERB
 # 643 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_14, ITEM_FLAME_ORB
+	dynmultipush EventScript_CapCollector_Text_8, ITEM_RED_CARD
 # 644 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_15, ITEM_TOXIC_ORB
+	dynmultipush EventScript_CapCollector_Text_9, ITEM_EJECT_BUTTON
 # 645 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_16, ITEM_EVIOLITE
+	dynmultipush EventScript_CapCollector_Text_10, ITEM_SAFETY_GOGGLES
 # 646 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_17, ITEM_TERRAIN_EXTENDER
+	dynmultipush EventScript_CapCollector_Text_11, ITEM_THROAT_SPRAY
 # 647 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_18, ITEM_PROTECTIVE_PADS
+	dynmultipush EventScript_CapCollector_Text_12, ITEM_MENTAL_HERB
 # 648 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_19, ITEM_BINDING_BAND
+	dynmultipush EventScript_CapCollector_Text_13, ITEM_NORMAL_GEM
 # 649 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_20, ITEM_EJECT_PACK
+	dynmultipush EventScript_CapCollector_Text_14, ITEM_FLAME_ORB
 # 650 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_21, ITEM_ABILITY_SHIELD
+	dynmultipush EventScript_CapCollector_Text_15, ITEM_TOXIC_ORB
 # 651 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_22, ITEM_PUNCHING_GLOVE
+	dynmultipush EventScript_CapCollector_Text_16, ITEM_EVIOLITE
 # 652 "data/global.pory"
-	dynmultipush EventScript_CapCollector_Text_23, ITEM_COVERT_CLOAK
+	dynmultipush EventScript_CapCollector_Text_17, ITEM_TERRAIN_EXTENDER
 # 653 "data/global.pory"
-	special GetNumberOfBadges
+	dynmultipush EventScript_CapCollector_Text_18, ITEM_PROTECTIVE_PADS
 # 654 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_19, ITEM_BINDING_BAND
+# 655 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_20, ITEM_EJECT_PACK
+# 656 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_21, ITEM_ABILITY_SHIELD
+# 657 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_22, ITEM_PUNCHING_GLOVE
+# 658 "data/global.pory"
+	dynmultipush EventScript_CapCollector_Text_23, ITEM_COVERT_CLOAK
+# 659 "data/global.pory"
+	special GetNumberOfBadges
+# 660 "data/global.pory"
 	compare VAR_RESULT, 5
 	goto_if_ge EventScript_CapCollector_5
 EventScript_CapCollector_4:
-# 659 "data/global.pory"
+# 665 "data/global.pory"
 	special ShowBottleCapsWindow
-# 660 "data/global.pory"
+# 666 "data/global.pory"
 	dynmultistack 17, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM
-# 661 "data/global.pory"
+# 667 "data/global.pory"
 	compare VAR_RESULT, 127
 	goto_if_ne EventScript_CapCollector_8
 EventScript_CapCollector_7:
-# 682 "data/global.pory"
+# 688 "data/global.pory"
 	msgbox gText_PleaseComeAgain
-# 683 "data/global.pory"
+# 689 "data/global.pory"
 	special CloseBattlePointsWindow
-# 684 "data/global.pory"
+# 690 "data/global.pory"
 	release
 	end
 
 EventScript_CapCollector_2:
-# 624 "data/global.pory"
+# 630 "data/global.pory"
 	msgbox BottleCapCollectorIntro
-# 625 "data/global.pory"
+# 631 "data/global.pory"
 	setflag FLAG_TEMP_1
 	goto EventScript_CapCollector_1
 
 EventScript_CapCollector_5:
-# 655 "data/global.pory"
+# 661 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_24, ITEM_BOOSTER_ENERGY
-# 656 "data/global.pory"
+# 662 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_25, ITEM_MIRROR_HERB
-# 657 "data/global.pory"
+# 663 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_26, ITEM_POWER_HERB
 	goto EventScript_CapCollector_4
 
 EventScript_CapCollector_8:
-# 662 "data/global.pory"
+# 668 "data/global.pory"
 	copyvar VAR_0x8009, VAR_RESULT
-# 663 "data/global.pory"
+# 669 "data/global.pory"
 	checkitem ITEM_BOTTLE_CAP
-# 664 "data/global.pory"
+# 670 "data/global.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq EventScript_CapCollector_11
-# 670 "data/global.pory"
+# 676 "data/global.pory"
 	checkitemspace VAR_0x8009
-# 671 "data/global.pory"
+# 677 "data/global.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq EventScript_CapCollector_14
-# 677 "data/global.pory"
+# 683 "data/global.pory"
 	removeitem ITEM_BOTTLE_CAP
-# 678 "data/global.pory"
+# 684 "data/global.pory"
 	additem VAR_0x8009
-# 679 "data/global.pory"
+# 685 "data/global.pory"
 	special UpdateBottleCapsWindow
-# 680 "data/global.pory"
+# 686 "data/global.pory"
 	playse SE_SHOP
 	goto EventScript_CapCollector_7
 
 EventScript_CapCollector_11:
-# 665 "data/global.pory"
+# 671 "data/global.pory"
 	msgbox EventScript_CapCollector_Text_27
-# 666 "data/global.pory"
+# 672 "data/global.pory"
 	special CloseBattlePointsWindow
-# 667 "data/global.pory"
+# 673 "data/global.pory"
 	release
 	end
 
 EventScript_CapCollector_14:
-# 672 "data/global.pory"
+# 678 "data/global.pory"
 	msgbox EventScript_CapCollector_Text_28
-# 673 "data/global.pory"
+# 679 "data/global.pory"
 	special CloseBattlePointsWindow
-# 674 "data/global.pory"
+# 680 "data/global.pory"
 	release
 	end
 
 
 Mart_EventScript_AbilityNatureClerk::
-# 698 "data/global.pory"
-	lock
-# 699 "data/global.pory"
-	faceplayer
-# 700 "data/global.pory"
-	msgbox gText_HowMayIServeYou
-# 701 "data/global.pory"
-	waitmessage
-# 702 "data/global.pory"
-	pokemart AbilityNaturePokemart
-# 703 "data/global.pory"
-	msgbox gText_PleaseComeAgain
 # 704 "data/global.pory"
+	lock
+# 705 "data/global.pory"
+	faceplayer
+# 706 "data/global.pory"
+	msgbox gText_HowMayIServeYou
+# 707 "data/global.pory"
+	waitmessage
+# 708 "data/global.pory"
+	pokemart AbilityNaturePokemart
+# 709 "data/global.pory"
+	msgbox gText_PleaseComeAgain
+# 710 "data/global.pory"
 	release
 	end
 
 
 	.align 2
-# 708 "data/global.pory"
-AbilityNaturePokemart:
-# 709 "data/global.pory"
-	.2byte ITEM_ABILITY_CAPSULE
-# 710 "data/global.pory"
-	.2byte ITEM_ABILITY_PATCH
-# 711 "data/global.pory"
-	.2byte ITEM_SASSY_MINT
-# 712 "data/global.pory"
-	.2byte ITEM_TIMID_MINT
-# 713 "data/global.pory"
-	.2byte ITEM_HASTY_MINT
 # 714 "data/global.pory"
-	.2byte ITEM_CALM_MINT
+AbilityNaturePokemart:
 # 715 "data/global.pory"
-	.2byte ITEM_GENTLE_MINT
+	.2byte ITEM_ABILITY_CAPSULE
 # 716 "data/global.pory"
-	.2byte ITEM_CAREFUL_MINT
+	.2byte ITEM_ABILITY_PATCH
 # 717 "data/global.pory"
-	.2byte ITEM_MILD_MINT
+	.2byte ITEM_SASSY_MINT
 # 718 "data/global.pory"
-	.2byte ITEM_RASH_MINT
+	.2byte ITEM_TIMID_MINT
 # 719 "data/global.pory"
-	.2byte ITEM_QUIET_MINT
+	.2byte ITEM_HASTY_MINT
 # 720 "data/global.pory"
-	.2byte ITEM_LAX_MINT
+	.2byte ITEM_CALM_MINT
 # 721 "data/global.pory"
-	.2byte ITEM_RELAXED_MINT
+	.2byte ITEM_GENTLE_MINT
 # 722 "data/global.pory"
-	.2byte ITEM_MODEST_MINT
+	.2byte ITEM_CAREFUL_MINT
 # 723 "data/global.pory"
-	.2byte ITEM_BRAVE_MINT
+	.2byte ITEM_MILD_MINT
 # 724 "data/global.pory"
-	.2byte ITEM_BOLD_MINT
+	.2byte ITEM_RASH_MINT
 # 725 "data/global.pory"
-	.2byte ITEM_IMPISH_MINT
+	.2byte ITEM_QUIET_MINT
 # 726 "data/global.pory"
-	.2byte ITEM_LONELY_MINT
+	.2byte ITEM_LAX_MINT
 # 727 "data/global.pory"
-	.2byte ITEM_ADAMANT_MINT
+	.2byte ITEM_RELAXED_MINT
 # 728 "data/global.pory"
+	.2byte ITEM_MODEST_MINT
+# 729 "data/global.pory"
+	.2byte ITEM_BRAVE_MINT
+# 730 "data/global.pory"
+	.2byte ITEM_BOLD_MINT
+# 731 "data/global.pory"
+	.2byte ITEM_IMPISH_MINT
+# 732 "data/global.pory"
+	.2byte ITEM_LONELY_MINT
+# 733 "data/global.pory"
+	.2byte ITEM_ADAMANT_MINT
+# 734 "data/global.pory"
 	.2byte ITEM_NAUGHTY_MINT
 	.2byte ITEM_NONE
 
 Mart_EventScript_TypeEnhancingHeldItems::
-# 732 "data/global.pory"
-	lock
-# 733 "data/global.pory"
-	faceplayer
-# 734 "data/global.pory"
-	msgbox gText_HowMayIServeYou
-# 735 "data/global.pory"
-	waitmessage
-# 736 "data/global.pory"
-	pokemart TypeEnhancingHeldItemsPokemart
-# 737 "data/global.pory"
-	msgbox gText_PleaseComeAgain
 # 738 "data/global.pory"
+	lock
+# 739 "data/global.pory"
+	faceplayer
+# 740 "data/global.pory"
+	msgbox gText_HowMayIServeYou
+# 741 "data/global.pory"
+	waitmessage
+# 742 "data/global.pory"
+	pokemart TypeEnhancingHeldItemsPokemart
+# 743 "data/global.pory"
+	msgbox gText_PleaseComeAgain
+# 744 "data/global.pory"
 	release
 	end
 
 
 	.align 2
-# 742 "data/global.pory"
-TypeEnhancingHeldItemsPokemart:
-# 743 "data/global.pory"
-	.2byte ITEM_SILK_SCARF
-# 744 "data/global.pory"
-	.2byte ITEM_CHARCOAL
-# 745 "data/global.pory"
-	.2byte ITEM_MYSTIC_WATER
-# 746 "data/global.pory"
-	.2byte ITEM_MAGNET
-# 747 "data/global.pory"
-	.2byte ITEM_MIRACLE_SEED
 # 748 "data/global.pory"
-	.2byte ITEM_NEVER_MELT_ICE
+TypeEnhancingHeldItemsPokemart:
 # 749 "data/global.pory"
-	.2byte ITEM_BLACK_BELT
+	.2byte ITEM_SILK_SCARF
 # 750 "data/global.pory"
-	.2byte ITEM_POISON_BARB
+	.2byte ITEM_CHARCOAL
 # 751 "data/global.pory"
-	.2byte ITEM_SOFT_SAND
+	.2byte ITEM_MYSTIC_WATER
 # 752 "data/global.pory"
-	.2byte ITEM_SHARP_BEAK
+	.2byte ITEM_MAGNET
 # 753 "data/global.pory"
-	.2byte ITEM_TWISTED_SPOON
+	.2byte ITEM_MIRACLE_SEED
 # 754 "data/global.pory"
-	.2byte ITEM_SILVER_POWDER
+	.2byte ITEM_NEVER_MELT_ICE
 # 755 "data/global.pory"
-	.2byte ITEM_HARD_STONE
+	.2byte ITEM_BLACK_BELT
 # 756 "data/global.pory"
-	.2byte ITEM_SPELL_TAG
+	.2byte ITEM_POISON_BARB
 # 757 "data/global.pory"
-	.2byte ITEM_DRAGON_FANG
+	.2byte ITEM_SOFT_SAND
 # 758 "data/global.pory"
-	.2byte ITEM_BLACK_GLASSES
+	.2byte ITEM_SHARP_BEAK
 # 759 "data/global.pory"
-	.2byte ITEM_METAL_COAT
+	.2byte ITEM_TWISTED_SPOON
 # 760 "data/global.pory"
+	.2byte ITEM_SILVER_POWDER
+# 761 "data/global.pory"
+	.2byte ITEM_HARD_STONE
+# 762 "data/global.pory"
+	.2byte ITEM_SPELL_TAG
+# 763 "data/global.pory"
+	.2byte ITEM_DRAGON_FANG
+# 764 "data/global.pory"
+	.2byte ITEM_BLACK_GLASSES
+# 765 "data/global.pory"
+	.2byte ITEM_METAL_COAT
+# 766 "data/global.pory"
 	.2byte ITEM_FAIRY_FEATHER
 	.2byte ITEM_NONE
 
 GetRivalForNameBox::
-# 897 "data/global.pory"
+# 903 "data/global.pory"
 	switch VAR_EMERALBODY_RIVAL
-# 898 "data/global.pory"
-	case 1, GetRivalForNameBox_2
-# 900 "data/global.pory"
-	case 2, GetRivalForNameBox_3
-# 902 "data/global.pory"
-	case 3, GetRivalForNameBox_4
 # 904 "data/global.pory"
+	case 1, GetRivalForNameBox_2
+# 906 "data/global.pory"
+	case 2, GetRivalForNameBox_3
+# 908 "data/global.pory"
+	case 3, GetRivalForNameBox_4
+# 910 "data/global.pory"
 	case 4, GetRivalForNameBox_5
-# 907 "data/global.pory"
+# 913 "data/global.pory"
 	speakername CommonText_Baron
 	return
 
 GetRivalForNameBox_2:
-# 899 "data/global.pory"
+# 905 "data/global.pory"
 	speakername CommonText_Harper
 	return
 
 GetRivalForNameBox_3:
-# 901 "data/global.pory"
+# 907 "data/global.pory"
 	speakername CommonText_Jakson
 	return
 
 GetRivalForNameBox_4:
-# 903 "data/global.pory"
+# 909 "data/global.pory"
 	speakername CommonText_Redd
 	return
 
 GetRivalForNameBox_5:
-# 905 "data/global.pory"
+# 911 "data/global.pory"
 	speakername CommonText_Sakura
 	return
 
 
 Mart_EventScript_TMClerk_Text_0:
-# 190 "data/global.pory"
+# 196 "data/global.pory"
 	.string "Sorry, I can only sell to trainers who\n"
 	.string "have earned at least one Gym Badge.$"
 
 Mart_EventScript_TMClerk_Text_1:
-# 196 "data/global.pory"
+# 202 "data/global.pory"
 	.string "Badge 1 TMs$"
 
 Mart_EventScript_TMClerk_Text_2:
-# 198 "data/global.pory"
+# 204 "data/global.pory"
 	.string "Badge 2 TMs$"
 
 Mart_EventScript_TMClerk_Text_3:
-# 201 "data/global.pory"
+# 207 "data/global.pory"
 	.string "Badge 3 TMs$"
 
 Mart_EventScript_TMClerk_Text_4:
-# 204 "data/global.pory"
+# 210 "data/global.pory"
 	.string "Badge 4 TMs$"
 
 Mart_EventScript_TMClerk_Text_5:
-# 207 "data/global.pory"
+# 213 "data/global.pory"
 	.string "Badge 5 TMs$"
 
 Mart_EventScript_TMClerk_Text_6:
-# 210 "data/global.pory"
+# 216 "data/global.pory"
 	.string "Badge 6 TMs$"
 
 Mart_EventScript_TMClerk_Text_7:
-# 213 "data/global.pory"
+# 219 "data/global.pory"
 	.string "Badge 7 TMs$"
 
 Mart_EventScript_TMClerk_Text_8:
-# 216 "data/global.pory"
+# 222 "data/global.pory"
 	.string "Badge 8 TMs$"
 
 Mart_EventScript_EvoClerk_Text_0:
-# 416 "data/global.pory"
+# 422 "data/global.pory"
 	.string "Sorry, I can only sell to trainers who\n"
 	.string "have earned at least three Gym Badges.$"
 
 Mart_EventScript_EvoClerk_Text_1:
-# 421 "data/global.pory"
+# 427 "data/global.pory"
 	.string "Stones$"
 
 Mart_EventScript_EvoClerk_Text_2:
-# 422 "data/global.pory"
+# 428 "data/global.pory"
 	.string "Other$"
 
 Mart_EventScript_EvoClerk_Text_3:
-# 424 "data/global.pory"
+# 430 "data/global.pory"
 	.string "Extra$"
 
 Common_EventScript_MoveReminder_Text_0:
-# 572 "data/global.pory"
+# 578 "data/global.pory"
 	.string "I'm the Move Reminder.\p"
 	.string "I know all the moves that Pokémon\n"
 	.string "learn--every one of them--and I can\l"
@@ -1617,401 +1629,401 @@ Common_EventScript_MoveReminder_Text_0:
 	.string "yours if you'd like.$"
 
 Common_EventScript_MoveReminder_Text_1:
-# 575 "data/global.pory"
+# 581 "data/global.pory"
 	.string "Would you like me to teach a move?$"
 
 Common_EventScript_MoveReminder_Text_2:
-# 577 "data/global.pory"
+# 583 "data/global.pory"
 	.string "Move Relearner$"
 
 Common_EventScript_MoveReminder_Text_3:
-# 579 "data/global.pory"
+# 585 "data/global.pory"
 	.string "Egg Moves$"
 
 Common_EventScript_MoveReminder_Text_4:
-# 581 "data/global.pory"
+# 587 "data/global.pory"
 	.string "Cancel$"
 
 Common_EventScript_MoveReminder_Text_5:
-# 584 "data/global.pory"
+# 590 "data/global.pory"
 	.string "Come back if your Pokémon need to learn\n"
 	.string "another move.$"
 
 Common_EventScript_MoveReminder_Text_6:
-# 591 "data/global.pory"
+# 597 "data/global.pory"
 	.string "Which Pokémon needs tutoring?$"
 
 Common_EventScript_MoveReminder_Text_7:
-# 601 "data/global.pory"
+# 607 "data/global.pory"
 	.string "Hunh? There isn't a single move that I\n"
 	.string "can teach an Egg.$"
 
 Common_EventScript_MoveReminder_Text_8:
-# 604 "data/global.pory"
+# 610 "data/global.pory"
 	.string "Sorry, it doesn't appear as if I have\n"
 	.string "any move I can teach that Pokémon.$"
 
 Common_EventScript_MoveReminder_Text_9:
-# 607 "data/global.pory"
+# 613 "data/global.pory"
 	.string "Which move should I teach?$"
 
 EventScript_CapCollector_Text_0:
-# 629 "data/global.pory"
+# 635 "data/global.pory"
 	.string "Metronome$"
 
 EventScript_CapCollector_Text_1:
-# 630 "data/global.pory"
+# 636 "data/global.pory"
 	.string "Grip Claw$"
 
 EventScript_CapCollector_Text_2:
-# 631 "data/global.pory"
+# 637 "data/global.pory"
 	.string "Sticky Barb$"
 
 EventScript_CapCollector_Text_3:
-# 632 "data/global.pory"
+# 638 "data/global.pory"
 	.string "Shed Shell$"
 
 EventScript_CapCollector_Text_4:
-# 633 "data/global.pory"
+# 639 "data/global.pory"
 	.string "Big Root$"
 
 EventScript_CapCollector_Text_5:
-# 634 "data/global.pory"
+# 640 "data/global.pory"
 	.string "Light Clay$"
 
 EventScript_CapCollector_Text_6:
-# 635 "data/global.pory"
+# 641 "data/global.pory"
 	.string "Air Balloon$"
 
 EventScript_CapCollector_Text_7:
-# 636 "data/global.pory"
+# 642 "data/global.pory"
 	.string "White Herb$"
 
 EventScript_CapCollector_Text_8:
-# 637 "data/global.pory"
+# 643 "data/global.pory"
 	.string "Red Card$"
 
 EventScript_CapCollector_Text_9:
-# 638 "data/global.pory"
+# 644 "data/global.pory"
 	.string "Eject Button$"
 
 EventScript_CapCollector_Text_10:
-# 639 "data/global.pory"
+# 645 "data/global.pory"
 	.string "Safety Goggles$"
 
 EventScript_CapCollector_Text_11:
-# 640 "data/global.pory"
+# 646 "data/global.pory"
 	.string "Throat Spray$"
 
 EventScript_CapCollector_Text_12:
-# 641 "data/global.pory"
+# 647 "data/global.pory"
 	.string "Mental Herb$"
 
 EventScript_CapCollector_Text_13:
-# 642 "data/global.pory"
+# 648 "data/global.pory"
 	.string "Normal Gem$"
 
 EventScript_CapCollector_Text_14:
-# 643 "data/global.pory"
+# 649 "data/global.pory"
 	.string "Flame Orb$"
 
 EventScript_CapCollector_Text_15:
-# 644 "data/global.pory"
+# 650 "data/global.pory"
 	.string "Toxic Orb$"
 
 EventScript_CapCollector_Text_16:
-# 645 "data/global.pory"
+# 651 "data/global.pory"
 	.string "Eviolite$"
 
 EventScript_CapCollector_Text_17:
-# 646 "data/global.pory"
+# 652 "data/global.pory"
 	.string "Terrain Extender$"
 
 EventScript_CapCollector_Text_18:
-# 647 "data/global.pory"
+# 653 "data/global.pory"
 	.string "Protective Pads$"
 
 EventScript_CapCollector_Text_19:
-# 648 "data/global.pory"
+# 654 "data/global.pory"
 	.string "Binding Band$"
 
 EventScript_CapCollector_Text_20:
-# 649 "data/global.pory"
+# 655 "data/global.pory"
 	.string "Eject Pack$"
 
 EventScript_CapCollector_Text_21:
-# 650 "data/global.pory"
+# 656 "data/global.pory"
 	.string "Ability Shield$"
 
 EventScript_CapCollector_Text_22:
-# 651 "data/global.pory"
+# 657 "data/global.pory"
 	.string "Punching Glove$"
 
 EventScript_CapCollector_Text_23:
-# 652 "data/global.pory"
+# 658 "data/global.pory"
 	.string "Covert Cloak$"
 
 EventScript_CapCollector_Text_24:
-# 655 "data/global.pory"
+# 661 "data/global.pory"
 	.string "Booster Energy$"
 
 EventScript_CapCollector_Text_25:
-# 656 "data/global.pory"
+# 662 "data/global.pory"
 	.string "Mirror Herb$"
 
 EventScript_CapCollector_Text_26:
-# 657 "data/global.pory"
+# 663 "data/global.pory"
 	.string "Power Herb$"
 
 EventScript_CapCollector_Text_27:
-# 665 "data/global.pory"
+# 671 "data/global.pory"
 	.string "You don't seem to have any Bottle Caps,\nthus I have nothing to give you.$"
 
 EventScript_CapCollector_Text_28:
-# 672 "data/global.pory"
+# 678 "data/global.pory"
 	.string "You don't have any room in your Bag for\n"
 	.string "this item.$"
 
 BottleCapCollectorIntro::
-# 689 "data/global.pory"
+# 695 "data/global.pory"
 	.string "I'm a collector of Bottle Caps.\n"
 	.string "If you happen to come across any, I'll\l"
 	.string "gladly trade you some rare items in\l"
 	.string "exchange for them.$"
 
 DoYouHaveAnyCaps::
-# 693 "data/global.pory"
+# 699 "data/global.pory"
 	.string "Do you have any Bottle Caps you'd like\n"
 	.string "to trade?$"
 
 CommonText_Mom::
-# 763 "data/global.pory"
+# 769 "data/global.pory"
 	.string "Mom$"
 
 CommonText_Dad::
-# 767 "data/global.pory"
+# 773 "data/global.pory"
 	.string "Dad$"
 
 CommonText_Birch::
-# 771 "data/global.pory"
+# 777 "data/global.pory"
 	.string "Prof. Birch$"
 
 CommonText_Rowan::
-# 775 "data/global.pory"
+# 781 "data/global.pory"
 	.string "Prof. Rowan$"
 
 CommonText_Archie::
-# 779 "data/global.pory"
+# 785 "data/global.pory"
 	.string "Archie$"
 
 CommonText_Maxie::
-# 783 "data/global.pory"
+# 789 "data/global.pory"
 	.string "Maxie$"
 
 CommonText_Giovanni::
-# 787 "data/global.pory"
+# 793 "data/global.pory"
 	.string "Giovanni$"
 
 CommonText_Courtney::
-# 791 "data/global.pory"
+# 797 "data/global.pory"
 	.string "Courtney$"
 
 CommonText_Tabitha::
-# 795 "data/global.pory"
+# 801 "data/global.pory"
 	.string "Tabitha$"
 
 CommonText_May::
-# 799 "data/global.pory"
+# 805 "data/global.pory"
 	.string "May$"
 
 CommonText_Brendan::
-# 803 "data/global.pory"
+# 809 "data/global.pory"
 	.string "Brendan$"
 
 CommonText_Wally::
-# 807 "data/global.pory"
+# 813 "data/global.pory"
 	.string "Wally$"
 
 CommonText_Uncle::
-# 811 "data/global.pory"
+# 817 "data/global.pory"
 	.string "Uncle$"
 
 CommonText_Wanda::
-# 815 "data/global.pory"
+# 821 "data/global.pory"
 	.string "Wanda$"
 
 CommonText_Steven::
-# 819 "data/global.pory"
+# 825 "data/global.pory"
 	.string "Steven$"
 
 CommonText_Wattson::
-# 823 "data/global.pory"
+# 829 "data/global.pory"
 	.string "Wattson$"
 
 CommonText_Scott::
-# 827 "data/global.pory"
+# 833 "data/global.pory"
 	.string "Scott$"
 
 CommonText_Q::
-# 831 "data/global.pory"
+# 837 "data/global.pory"
 	.string "?????$"
 
 CommonText_MrStone::
-# 835 "data/global.pory"
+# 841 "data/global.pory"
 	.string "Mr. Stone$"
 
 CommonText_MrBriney::
-# 839 "data/global.pory"
+# 845 "data/global.pory"
 	.string "Mr. Briney$"
 
 CommonText_Peeko::
-# 843 "data/global.pory"
+# 849 "data/global.pory"
 	.string "Peeko$"
 
 CommonText_CaptStern::
-# 847 "data/global.pory"
+# 853 "data/global.pory"
 	.string "Capt. Stern$"
 
 CommonText_Dock::
-# 851 "data/global.pory"
+# 857 "data/global.pory"
 	.string "Dock$"
 
 CommonText_Gabby::
-# 855 "data/global.pory"
+# 861 "data/global.pory"
 	.string "Gabby$"
 
 CommonText_Ty::
-# 859 "data/global.pory"
+# 865 "data/global.pory"
 	.string "Ty$"
 
 CommonText_Rydel::
-# 863 "data/global.pory"
+# 869 "data/global.pory"
 	.string "Rydel$"
 
 CommonText_Cozmo::
-# 867 "data/global.pory"
+# 873 "data/global.pory"
 	.string "Prof. Cozmo$"
 
 CommonText_Lanette::
-# 871 "data/global.pory"
+# 877 "data/global.pory"
 	.string "Lanette$"
 
 CommonText_Wallace::
-# 875 "data/global.pory"
+# 881 "data/global.pory"
 	.string "Wallace$"
 
 CommonText_Looker::
-# 879 "data/global.pory"
+# 885 "data/global.pory"
 	.string "Looker$"
 
 CommonText_Bianca::
-# 883 "data/global.pory"
+# 889 "data/global.pory"
 	.string "Bianca$"
 
 CommonText_MagmaGrunt::
-# 887 "data/global.pory"
+# 893 "data/global.pory"
 	.string "Magma Grunt$"
 
 CommonText_AquaGrunt::
-# 891 "data/global.pory"
+# 897 "data/global.pory"
 	.string "Aqua Grunt$"
 
 CommonText_Baron::
-# 911 "data/global.pory"
+# 917 "data/global.pory"
 	.string "Baron$"
 
 CommonText_Harper::
-# 915 "data/global.pory"
+# 921 "data/global.pory"
 	.string "Harper$"
 
 CommonText_Jakson::
-# 919 "data/global.pory"
+# 925 "data/global.pory"
 	.string "Jakson$"
 
 CommonText_Redd::
-# 923 "data/global.pory"
+# 929 "data/global.pory"
 	.string "Redd$"
 
 CommonText_Sakura::
-# 927 "data/global.pory"
+# 933 "data/global.pory"
 	.string "Sakura$"
 
 Text_PokevialSizeIncrease::
-# 931 "data/global.pory"
+# 937 "data/global.pory"
 	.string "The Pokévial's size was increased!$"
 
 CommonText_NormalType::
-# 935 "data/global.pory"
+# 941 "data/global.pory"
 	.string "Normal Type$"
 
 CommonText_FightingType::
-# 939 "data/global.pory"
+# 945 "data/global.pory"
 	.string "Fighting Type$"
 
 CommonText_FlyingType::
-# 943 "data/global.pory"
+# 949 "data/global.pory"
 	.string "Flying Type$"
 
 CommonText_PoisonType::
-# 947 "data/global.pory"
+# 953 "data/global.pory"
 	.string "Poison Type$"
 
 CommonText_GroundType::
-# 951 "data/global.pory"
+# 957 "data/global.pory"
 	.string "Ground Type$"
 
 CommonText_RockType::
-# 955 "data/global.pory"
+# 961 "data/global.pory"
 	.string "Rock Type$"
 
 CommonText_BugType::
-# 959 "data/global.pory"
+# 965 "data/global.pory"
 	.string "Bug Type$"
 
 CommonText_GhostType::
-# 963 "data/global.pory"
+# 969 "data/global.pory"
 	.string "Ghost Type$"
 
 CommonText_SteelType::
-# 967 "data/global.pory"
+# 973 "data/global.pory"
 	.string "Steel Type$"
 
 CommonText_FireType::
-# 971 "data/global.pory"
+# 977 "data/global.pory"
 	.string "Fire Type$"
 
 CommonText_WaterType::
-# 975 "data/global.pory"
+# 981 "data/global.pory"
 	.string "Water Type$"
 
 CommonText_GrassType::
-# 979 "data/global.pory"
+# 985 "data/global.pory"
 	.string "Grass Type$"
 
 CommonText_ElectricType::
-# 983 "data/global.pory"
+# 989 "data/global.pory"
 	.string "Electric Type$"
 
 CommonText_PsychicType::
-# 987 "data/global.pory"
+# 993 "data/global.pory"
 	.string "Psychic Type$"
 
 CommonText_IceType::
-# 991 "data/global.pory"
+# 997 "data/global.pory"
 	.string "Ice Type$"
 
 CommonText_DragonType::
-# 995 "data/global.pory"
+# 1001 "data/global.pory"
 	.string "Dragon Type$"
 
 CommonText_DarkType::
-# 999 "data/global.pory"
+# 1005 "data/global.pory"
 	.string "Dark Type$"
 
 CommonText_FairyType::
-# 1003 "data/global.pory"
+# 1009 "data/global.pory"
 	.string "Fairy Type$"
 
 CommonText_StellarType::
-# 1007 "data/global.pory"
+# 1013 "data/global.pory"
 	.string "Stellar Type$"

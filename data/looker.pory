@@ -548,7 +548,7 @@ script RocketRefuge_B3F_Looker {
 					"I had relayed your actions to my\nsuperiors in advance, and though I was\lchided for relying on someone so young,\lI have been given something that I can\lgrant you as reward.\p"
 					"Please, take these, {PLAYER}."))
 	closemessage
-	giveitem (ITEM_NORMAL_TERA_SHARD, 10)
+	giveitem (ITEM_STELLAR_TERA_SHARD, 3)
 	giveitem (ITEM_BOTTLE_CAP, 1)
 	speakername (CommonText_Looker)
 	msgbox (format ("And you have a Pokévial, yes?\p"

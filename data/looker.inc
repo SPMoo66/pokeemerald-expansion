@@ -827,7 +827,7 @@ RocketRefuge_B3F_Looker_20:
 # 550 "data/looker.pory"
 	closemessage
 # 551 "data/looker.pory"
-	giveitem ITEM_NORMAL_TERA_SHARD, 10
+	giveitem ITEM_STELLAR_TERA_SHARD, 3
 # 552 "data/looker.pory"
 	giveitem ITEM_BOTTLE_CAP, 1
 # 553 "data/looker.pory"

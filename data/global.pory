@@ -3,28 +3,33 @@ script Mart_EventScript_Clerk{
 	faceplayer
 	msgbox(gText_HowMayIServeYou)
 	waitmessage
-	special(GetNumberOfBadges)
-	switch (var(VAR_RESULT)) {
-		case 0:
-			pokemart(BadgedPokemart0)
-		case 1:
-			pokemart(BadgedPokemart1)
-		case 2:
-			pokemart(BadgedPokemart2)
-		case 3:
-			pokemart(BadgedPokemart3)
-		case 4:
-			pokemart(BadgedPokemart4)
-		case 5:
-			pokemart(BadgedPokemart5)
-		case 6:
-			pokemart(BadgedPokemart6)
-		case 7:
-		case 8:
-			pokemart(BadgedPokemart7)
-		default:
-			break
-		}
+	if (flag(FLAG_SYS_GAME_CLEAR)) {
+		pokemart(BadgedPokemartClear)
+	}
+	else {
+		special(GetNumberOfBadges)
+		switch (var(VAR_RESULT)) {
+			case 0:
+				pokemart(BadgedPokemart0)
+			case 1:
+				pokemart(BadgedPokemart1)
+			case 2:
+				pokemart(BadgedPokemart2)
+			case 3:
+				pokemart(BadgedPokemart3)
+			case 4:
+				pokemart(BadgedPokemart4)
+			case 5:
+				pokemart(BadgedPokemart5)
+			case 6:
+				pokemart(BadgedPokemart6)
+			case 7:
+			case 8:
+				pokemart(BadgedPokemart7)
+			default:
+				break
+			}
+	}
 	msgbox(gText_PleaseComeAgain)
 	release
 	end
@@ -187,6 +192,35 @@ mart BadgedPokemart7 {
 	ITEM_EXP_CANDY_M
 	ITEM_EXP_CANDY_L
 }
+
+mart BadgedPokemartClear {
+	ITEM_POKE_BALL
+	ITEM_GREAT_BALL
+	ITEM_ULTRA_BALL
+	ITEM_POTION
+	ITEM_SUPER_POTION
+	ITEM_HYPER_POTION
+	ITEM_MAX_POTION
+	ITEM_FULL_RESTORE
+	ITEM_REVIVE
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+	ITEM_AWAKENING
+	ITEM_BURN_HEAL
+	ITEM_ICE_HEAL
+	ITEM_FULL_HEAL
+	ITEM_REPEL
+	ITEM_SUPER_REPEL
+	ITEM_MAX_REPEL
+	ITEM_NORMAL_TERA_SHARD
+	ITEM_STELLAR_TERA_SHARD
+	ITEM_EXP_CANDY_XS
+	ITEM_EXP_CANDY_S
+	ITEM_EXP_CANDY_M
+	ITEM_EXP_CANDY_L
+	ITEM_EXP_CANDY_XL
+}
+
 
 script Mart_EventScript_TMClerk{
 	lock

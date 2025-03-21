@@ -271,12 +271,12 @@ mapscripts RustboroCity_DevonCorp_3F_MapScripts {
 			setmetatile (9, 2, 0x381, FALSE)
 			setmetatile (10, 1, 0x397, TRUE)
 			setmetatile (10, 2, 0x381, FALSE)
-			setmetatile (4, 1, 0x349, TRUE)
-			setmetatile (4, 2, 0x351, FALSE)
-			setmetatile (5, 1, 0x34A, FALSE)
-			setmetatile (5, 2, 0x352, FALSE)
-			setmetatile (6, 1, 0x34B, TRUE)
-			setmetatile (6, 2, 0x353, FALSE)
+			setmetatile (1, 1, 0x349, TRUE)
+			setmetatile (1, 2, 0x351, FALSE)
+			setmetatile (2, 1, 0x34A, TRUE)
+			setmetatile (2, 2, 0x352, FALSE)
+			setmetatile (3, 1, 0x34B, TRUE)
+			setmetatile (3, 2, 0x353, FALSE)
 		}
 	}
 }

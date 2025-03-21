@@ -130,10 +130,8 @@ MagmaHideout_4F_EventScript_Grunt13::
 	end
 
 MagmaHideout_4F_EventScript_Tabitha::
-	setflag FLAG_CHALLENGING_TRAINER
 	trainerbattle_single TRAINER_TABITHA_MAGMA_HIDEOUT, MagmaHideout_4F_Text_TabithaIntro, MagmaHideout_4F_Text_TabithaDefeat
 	msgbox MagmaHideout_4F_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE
-	clearflag FLAG_CHALLENGING_TRAINER
 	end
 
 MagmaHideout_4F_Text_Grunt11Intro:

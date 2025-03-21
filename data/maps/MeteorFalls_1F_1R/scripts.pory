@@ -206,7 +206,7 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 						"That was scary…\p"
 						"What could that Team Magma be after?\n"
 						"If you're planning on going after\l"
-						"them, please be careful."
+						"them, please be careful.\l"
 						"Here, maybe this will help you.")
 			}
 			else {
@@ -215,9 +215,10 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 						"That could have gone bad…\p"
 						"Team Magma… What do they want?\n"
 						"They said, Mt. Chimney…\l"
-						"If you're heading there, be safe."
+						"If you're heading there, be safe.\l"
 						"I think you'll be needing this")
 			}
+			closemessage
 			giveitem (ITEM_BOTTLE_CAP)
 			closemessage
 			applymovement (LOCALID_RIVAL, Common_Movement_WalkRight7)

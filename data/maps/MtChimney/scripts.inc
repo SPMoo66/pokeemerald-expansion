@@ -217,10 +217,8 @@ MtChimney_EventScript_BusyAquaGrunt3::
 	end
 
 MtChimney_EventScript_Tabitha::
-	setflag FLAG_CHALLENGING_TRAINER
 	trainerbattle_single TRAINER_TABITHA_MT_CHIMNEY, MtChimney_Text_TabithaIntro, MtChimney_Text_TabithaDefeat
 	msgbox MtChimney_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE
-	clearflag FLAG_CHALLENGING_TRAINER
 	end
 
 MtChimney_EventScript_Grunt2::

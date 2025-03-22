@@ -5324,6 +5324,9 @@ const struct Item gItemsInfo[] =
 
     [ITEM_MEGA_STONE_Y] =
     {
+        .name = _("Megalite Y"),
+        .pluralName = _("Megalites Y"),
+        .price = 1000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sMegaStoneYDesc,
         .pocket = POCKET_ITEMS,

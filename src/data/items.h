@@ -14478,4 +14478,21 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    [ITEM_SHINY_LURE] =
+    {
+        .name = _("Shiny Lure"),
+        .price = 1,
+        .description = COMPOUND_STRING(
+            "Makes the next\n"
+            "wild Pokémon\n"
+            "encountered shiny."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_ShinyLure,
+        .secondaryId = 0,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Lure,
+        .iconPalette = gItemIconPalette_Lure,
+    },
 };

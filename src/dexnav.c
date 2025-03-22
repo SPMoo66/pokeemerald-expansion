@@ -1248,6 +1248,7 @@ static void CreateDexNavWildMon(u16 species, u8 potential, u8 level, u8 abilityN
         SetMonMoveSlot(mon, moves[i], i);
 
     CalculateMonStats(mon);
+    FlagClear(FLAG_FORCE_SHINY);
 }
 
 // gets a random level of the species based on map data.

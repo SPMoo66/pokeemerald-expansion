@@ -6092,14 +6092,6 @@ u16 GetBattleBGM(void)
             case SPECIES_MAGEARNA:
             case SPECIES_ZERAORA:
                 return MUS_PL_VS_FRONTIER_BRAIN;
-            case SPECIES_COBALION:
-            case SPECIES_TERRAKION:
-            case SPECIES_VIRIZION:
-            case SPECIES_KELDEO:
-            case SPECIES_IRON_LEAVES:
-            case SPECIES_IRON_BOULDER:
-            case SPECIES_IRON_CROWN:
-                return MUS_HG_VS_GYM_LEADER_KANTO;
             case SPECIES_RESHIRAM:
             case SPECIES_ZEKROM:
             case SPECIES_KYUREM:

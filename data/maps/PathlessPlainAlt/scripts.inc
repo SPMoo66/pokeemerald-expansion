@@ -68,11 +68,11 @@ BattleIronCrown::
 # 37 "data/maps/PathlessPlainAlt/scripts.pory"
 	waitmoncry
 # 38 "data/maps/PathlessPlainAlt/scripts.pory"
-	seteventmon SPECIES_IRON_CROWN, 40
+	setwildbattle SPECIES_IRON_CROWN, 40
 # 39 "data/maps/PathlessPlainAlt/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 40 "data/maps/PathlessPlainAlt/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	special StartRegiBattle
 # 41 "data/maps/PathlessPlainAlt/scripts.pory"
 	waitstate
 # 42 "data/maps/PathlessPlainAlt/scripts.pory"
@@ -107,11 +107,11 @@ BattleIronBoulder::
 # 57 "data/maps/PathlessPlainAlt/scripts.pory"
 	waitmoncry
 # 58 "data/maps/PathlessPlainAlt/scripts.pory"
-	seteventmon SPECIES_IRON_BOULDER, 40
+	setwildbattle SPECIES_IRON_BOULDER, 40
 # 59 "data/maps/PathlessPlainAlt/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 60 "data/maps/PathlessPlainAlt/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	special StartRegiBattle
 # 61 "data/maps/PathlessPlainAlt/scripts.pory"
 	waitstate
 # 62 "data/maps/PathlessPlainAlt/scripts.pory"
@@ -146,11 +146,11 @@ BattleIronLeaves::
 # 77 "data/maps/PathlessPlainAlt/scripts.pory"
 	waitmoncry
 # 78 "data/maps/PathlessPlainAlt/scripts.pory"
-	seteventmon SPECIES_IRON_LEAVES, 40
+	setwildbattle SPECIES_IRON_LEAVES, 40
 # 79 "data/maps/PathlessPlainAlt/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 80 "data/maps/PathlessPlainAlt/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	special StartRegiBattle
 # 81 "data/maps/PathlessPlainAlt/scripts.pory"
 	waitstate
 # 82 "data/maps/PathlessPlainAlt/scripts.pory"

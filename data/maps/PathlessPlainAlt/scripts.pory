@@ -35,9 +35,9 @@ script BattleIronCrown {
 	playmoncry(SPECIES_IRON_CROWN, CRY_MODE_ENCOUNTER)
 	msgbox("Kaw-brah-on!")
 	waitmoncry
-	seteventmon(SPECIES_IRON_CROWN, 40)
+	setwildbattle(SPECIES_IRON_CROWN, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
-	special(BattleSetup_StartLegendaryBattle)
+	special(StartRegiBattle)
 	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
@@ -55,9 +55,9 @@ script BattleIronBoulder {
 	playmoncry(SPECIES_IRON_BOULDER, CRY_MODE_ENCOUNTER)
 	msgbox("Gurr-oonnn!")
 	waitmoncry
-	seteventmon(SPECIES_IRON_BOULDER, 40)
+	setwildbattle(SPECIES_IRON_BOULDER, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
-	special(BattleSetup_StartLegendaryBattle)
+	special(StartRegiBattle)
 	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
@@ -75,9 +75,9 @@ script BattleIronLeaves {
 	playmoncry(SPECIES_IRON_LEAVES, CRY_MODE_ENCOUNTER)
 	msgbox("Aeepraaa!")
 	waitmoncry
-	seteventmon(SPECIES_IRON_LEAVES, 40)
+	setwildbattle(SPECIES_IRON_LEAVES, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
-	special(BattleSetup_StartLegendaryBattle)
+	special(StartRegiBattle)
 	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)

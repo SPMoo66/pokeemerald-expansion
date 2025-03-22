@@ -560,7 +560,6 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_NECROZMA:
         CreateBattleStartTask(B_TRANSITION_SHRED_SPLIT, MUS_PL_VS_GIRATINA);
         break;
-		
     }
 
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
@@ -617,6 +616,16 @@ void StartRegiBattle(void)
     case SPECIES_REGIDRAGO:
         transitionId = B_TRANSITION_REGISTEEL;
         CreateBattleStartTask(transitionId, MUS_PL_VS_REGI);
+        break;
+    case SPECIES_COBALION:
+    case SPECIES_TERRAKION:
+    case SPECIES_VIRIZION:
+    case SPECIES_KELDEO:
+    case SPECIES_IRON_LEAVES:
+    case SPECIES_IRON_BOULDER:
+    case SPECIES_IRON_CROWN:
+        transitionId = B_TRANSITION_SWORDS_OF_JUSTICE;
+        CreateBattleStartTask(transitionId, MUS_HG_VS_GYM_LEADER_KANTO);
         break;
     default:
         transitionId = B_TRANSITION_GRID_SQUARES;

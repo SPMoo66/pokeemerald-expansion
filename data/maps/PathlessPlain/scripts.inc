@@ -78,11 +78,11 @@ BattleCobalion::
 # 42 "data/maps/PathlessPlain/scripts.pory"
 	waitmoncry
 # 43 "data/maps/PathlessPlain/scripts.pory"
-	seteventmon SPECIES_COBALION, 40
+	setwildbattle SPECIES_COBALION, 40
 # 44 "data/maps/PathlessPlain/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 45 "data/maps/PathlessPlain/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	special StartRegiBattle
 # 46 "data/maps/PathlessPlain/scripts.pory"
 	waitstate
 # 47 "data/maps/PathlessPlain/scripts.pory"
@@ -117,11 +117,11 @@ BattleTerrakion::
 # 62 "data/maps/PathlessPlain/scripts.pory"
 	waitmoncry
 # 63 "data/maps/PathlessPlain/scripts.pory"
-	seteventmon SPECIES_TERRAKION, 40
+	setwildbattle SPECIES_TERRAKION, 40
 # 64 "data/maps/PathlessPlain/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 65 "data/maps/PathlessPlain/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	special StartRegiBattle
 # 66 "data/maps/PathlessPlain/scripts.pory"
 	waitstate
 # 67 "data/maps/PathlessPlain/scripts.pory"
@@ -156,11 +156,11 @@ BattleVirizion::
 # 82 "data/maps/PathlessPlain/scripts.pory"
 	waitmoncry
 # 83 "data/maps/PathlessPlain/scripts.pory"
-	seteventmon SPECIES_VIRIZION, 40
+	setwildbattle SPECIES_VIRIZION, 40
 # 84 "data/maps/PathlessPlain/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 85 "data/maps/PathlessPlain/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	special StartRegiBattle
 # 86 "data/maps/PathlessPlain/scripts.pory"
 	waitstate
 # 87 "data/maps/PathlessPlain/scripts.pory"
@@ -195,11 +195,11 @@ BattleKeldeo::
 # 102 "data/maps/PathlessPlain/scripts.pory"
 	waitmoncry
 # 103 "data/maps/PathlessPlain/scripts.pory"
-	seteventmon SPECIES_KELDEO, 40
+	setwildbattle SPECIES_KELDEO, 40
 # 104 "data/maps/PathlessPlain/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 105 "data/maps/PathlessPlain/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	special StartRegiBattle
 # 106 "data/maps/PathlessPlain/scripts.pory"
 	waitstate
 # 107 "data/maps/PathlessPlain/scripts.pory"

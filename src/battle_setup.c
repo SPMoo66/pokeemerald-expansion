@@ -613,11 +613,11 @@ void StartRegiBattle(void)
         CreateBattleStartTask(transitionId, MUS_VS_REGI);
         break;
     case SPECIES_REGIELEKI:
-        transitionId = B_TRANSITION_REGISTEEL;
+        transitionId = B_TRANSITION_REGIELEKI;
         CreateBattleStartTask(transitionId, MUS_PL_VS_REGI);
         break;
     case SPECIES_REGIDRAGO:
-        transitionId = B_TRANSITION_REGISTEEL;
+        transitionId = B_TRANSITION_REGIDRAGO;
         CreateBattleStartTask(transitionId, MUS_PL_VS_REGI);
         break;
     case SPECIES_COBALION:

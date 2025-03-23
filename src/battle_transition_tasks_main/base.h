@@ -16,6 +16,8 @@
     [B_TRANSITION_REGICE] = Task_Regice,
     [B_TRANSITION_REGISTEEL] = Task_Registeel,
     [B_TRANSITION_REGIROCK] = Task_Regirock,
+    [B_TRANSITION_REGIELEKI] = Task_Regieleki,
+    [B_TRANSITION_REGIDRAGO] = Task_Regidrago,
     [B_TRANSITION_KYOGRE] = Task_Kyogre,
     [B_TRANSITION_GROUDON] = Task_Groudon,
     [B_TRANSITION_RAYQUAZA] = Task_Rayquaza,

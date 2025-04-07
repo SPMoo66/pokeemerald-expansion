@@ -11879,7 +11879,7 @@ const struct Item gItemsInfo[] =
     [ITEM_TM_DRAGON_TAIL] =
     {
         .name = _("TM104"),
-        .price = 35000,
+        .price = 3500,
         .description = COMPOUND_STRING(
             "Knocks away the\n"
             "foe and drags out\n"

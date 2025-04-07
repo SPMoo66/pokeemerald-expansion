@@ -1344,7 +1344,7 @@ static const struct TrainerMon sParty_Mary[] = {
     .species = SPECIES_LAMPENT,
     },
     {
-    .lvl = 24,
+    .lvl = 26,
     .species = SPECIES_CROCALOR,
     }
 };

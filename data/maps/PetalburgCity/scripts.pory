@@ -770,6 +770,7 @@ script PetalburgCity_EventScript_WallyBattle {
 					"Thank you for the battle.\n"
 					"I have a long way to go, but I hope I can be up there on the stage with you some day.\p"
 					"I'll be back, and I'll give you a challenge you won't forget!"))
+	closemessage
 	fadescreen (FADE_TO_BLACK)
 	removeobject (LOCALID_WALLY)
 	fadescreen (FADE_FROM_BLACK)

@@ -1502,16 +1502,18 @@ PetalburgCity_EventScript_WallyBattle_1:
 # 768 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_WallyBattle_Text_3
 # 773 "data/maps/PetalburgCity/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	closemessage
 # 774 "data/maps/PetalburgCity/scripts.pory"
-	removeobject LOCALID_WALLY
+	fadescreen FADE_TO_BLACK
 # 775 "data/maps/PetalburgCity/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	removeobject LOCALID_WALLY
 # 776 "data/maps/PetalburgCity/scripts.pory"
-	setvar VAR_PETALBURG_CITY_STATE, 6
+	fadescreen FADE_FROM_BLACK
 # 777 "data/maps/PetalburgCity/scripts.pory"
-	clearflag FLAG_CHALLENGING_TRAINER
+	setvar VAR_PETALBURG_CITY_STATE, 6
 # 778 "data/maps/PetalburgCity/scripts.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 779 "data/maps/PetalburgCity/scripts.pory"
 	release
 	return
 

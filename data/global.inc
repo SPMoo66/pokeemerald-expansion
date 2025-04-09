@@ -1495,134 +1495,140 @@ AbilityNaturePokemart:
 # 750 "data/global.pory"
 	.2byte ITEM_ABILITY_PATCH
 # 751 "data/global.pory"
-	.2byte ITEM_SASSY_MINT
-# 752 "data/global.pory"
-	.2byte ITEM_TIMID_MINT
-# 753 "data/global.pory"
-	.2byte ITEM_HASTY_MINT
-# 754 "data/global.pory"
-	.2byte ITEM_CALM_MINT
-# 755 "data/global.pory"
-	.2byte ITEM_GENTLE_MINT
-# 756 "data/global.pory"
-	.2byte ITEM_CAREFUL_MINT
-# 757 "data/global.pory"
-	.2byte ITEM_MILD_MINT
-# 758 "data/global.pory"
-	.2byte ITEM_RASH_MINT
-# 759 "data/global.pory"
-	.2byte ITEM_QUIET_MINT
-# 760 "data/global.pory"
-	.2byte ITEM_LAX_MINT
-# 761 "data/global.pory"
-	.2byte ITEM_RELAXED_MINT
-# 762 "data/global.pory"
-	.2byte ITEM_MODEST_MINT
-# 763 "data/global.pory"
-	.2byte ITEM_BRAVE_MINT
-# 764 "data/global.pory"
-	.2byte ITEM_BOLD_MINT
-# 765 "data/global.pory"
-	.2byte ITEM_IMPISH_MINT
-# 766 "data/global.pory"
 	.2byte ITEM_LONELY_MINT
-# 767 "data/global.pory"
+# 752 "data/global.pory"
 	.2byte ITEM_ADAMANT_MINT
-# 768 "data/global.pory"
+# 753 "data/global.pory"
 	.2byte ITEM_NAUGHTY_MINT
+# 754 "data/global.pory"
+	.2byte ITEM_BRAVE_MINT
+# 755 "data/global.pory"
+	.2byte ITEM_BOLD_MINT
+# 756 "data/global.pory"
+	.2byte ITEM_IMPISH_MINT
+# 757 "data/global.pory"
+	.2byte ITEM_LAX_MINT
+# 758 "data/global.pory"
+	.2byte ITEM_RELAXED_MINT
+# 759 "data/global.pory"
+	.2byte ITEM_MODEST_MINT
+# 760 "data/global.pory"
+	.2byte ITEM_MILD_MINT
+# 761 "data/global.pory"
+	.2byte ITEM_RASH_MINT
+# 762 "data/global.pory"
+	.2byte ITEM_QUIET_MINT
+# 763 "data/global.pory"
+	.2byte ITEM_CALM_MINT
+# 764 "data/global.pory"
+	.2byte ITEM_GENTLE_MINT
+# 765 "data/global.pory"
+	.2byte ITEM_CAREFUL_MINT
+# 766 "data/global.pory"
+	.2byte ITEM_SASSY_MINT
+# 767 "data/global.pory"
+	.2byte ITEM_TIMID_MINT
+# 768 "data/global.pory"
+	.2byte ITEM_HASTY_MINT
+# 769 "data/global.pory"
+	.2byte ITEM_JOLLY_MINT
+# 770 "data/global.pory"
+	.2byte ITEM_NAIVE_MINT
+# 771 "data/global.pory"
+	.2byte ITEM_SERIOUS_MINT
 	.2byte ITEM_NONE
 
 Mart_EventScript_TypeEnhancingHeldItems::
-# 772 "data/global.pory"
-	lock
-# 773 "data/global.pory"
-	faceplayer
-# 774 "data/global.pory"
-	msgbox gText_HowMayIServeYou
 # 775 "data/global.pory"
-	waitmessage
+	lock
 # 776 "data/global.pory"
-	pokemart TypeEnhancingHeldItemsPokemart
+	faceplayer
 # 777 "data/global.pory"
-	msgbox gText_PleaseComeAgain
+	msgbox gText_HowMayIServeYou
 # 778 "data/global.pory"
+	waitmessage
+# 779 "data/global.pory"
+	pokemart TypeEnhancingHeldItemsPokemart
+# 780 "data/global.pory"
+	msgbox gText_PleaseComeAgain
+# 781 "data/global.pory"
 	release
 	end
 
 
 	.align 2
-# 782 "data/global.pory"
-TypeEnhancingHeldItemsPokemart:
-# 783 "data/global.pory"
-	.2byte ITEM_SILK_SCARF
-# 784 "data/global.pory"
-	.2byte ITEM_CHARCOAL
 # 785 "data/global.pory"
-	.2byte ITEM_MYSTIC_WATER
+TypeEnhancingHeldItemsPokemart:
 # 786 "data/global.pory"
-	.2byte ITEM_MAGNET
+	.2byte ITEM_SILK_SCARF
 # 787 "data/global.pory"
-	.2byte ITEM_MIRACLE_SEED
+	.2byte ITEM_CHARCOAL
 # 788 "data/global.pory"
-	.2byte ITEM_NEVER_MELT_ICE
+	.2byte ITEM_MYSTIC_WATER
 # 789 "data/global.pory"
-	.2byte ITEM_BLACK_BELT
+	.2byte ITEM_MAGNET
 # 790 "data/global.pory"
-	.2byte ITEM_POISON_BARB
+	.2byte ITEM_MIRACLE_SEED
 # 791 "data/global.pory"
-	.2byte ITEM_SOFT_SAND
+	.2byte ITEM_NEVER_MELT_ICE
 # 792 "data/global.pory"
-	.2byte ITEM_SHARP_BEAK
+	.2byte ITEM_BLACK_BELT
 # 793 "data/global.pory"
-	.2byte ITEM_TWISTED_SPOON
+	.2byte ITEM_POISON_BARB
 # 794 "data/global.pory"
-	.2byte ITEM_SILVER_POWDER
+	.2byte ITEM_SOFT_SAND
 # 795 "data/global.pory"
-	.2byte ITEM_HARD_STONE
+	.2byte ITEM_SHARP_BEAK
 # 796 "data/global.pory"
-	.2byte ITEM_SPELL_TAG
+	.2byte ITEM_TWISTED_SPOON
 # 797 "data/global.pory"
-	.2byte ITEM_DRAGON_FANG
+	.2byte ITEM_SILVER_POWDER
 # 798 "data/global.pory"
-	.2byte ITEM_BLACK_GLASSES
+	.2byte ITEM_HARD_STONE
 # 799 "data/global.pory"
-	.2byte ITEM_METAL_COAT
+	.2byte ITEM_SPELL_TAG
 # 800 "data/global.pory"
+	.2byte ITEM_DRAGON_FANG
+# 801 "data/global.pory"
+	.2byte ITEM_BLACK_GLASSES
+# 802 "data/global.pory"
+	.2byte ITEM_METAL_COAT
+# 803 "data/global.pory"
 	.2byte ITEM_FAIRY_FEATHER
 	.2byte ITEM_NONE
 
 GetRivalForNameBox::
-# 937 "data/global.pory"
-	switch VAR_EMERALBODY_RIVAL
-# 938 "data/global.pory"
-	case 1, GetRivalForNameBox_2
 # 940 "data/global.pory"
+	switch VAR_EMERALBODY_RIVAL
+# 941 "data/global.pory"
+	case 1, GetRivalForNameBox_2
+# 943 "data/global.pory"
 	case 2, GetRivalForNameBox_3
-# 942 "data/global.pory"
+# 945 "data/global.pory"
 	case 3, GetRivalForNameBox_4
-# 944 "data/global.pory"
-	case 4, GetRivalForNameBox_5
 # 947 "data/global.pory"
+	case 4, GetRivalForNameBox_5
+# 950 "data/global.pory"
 	speakername CommonText_Baron
 	return
 
 GetRivalForNameBox_2:
-# 939 "data/global.pory"
+# 942 "data/global.pory"
 	speakername CommonText_Harper
 	return
 
 GetRivalForNameBox_3:
-# 941 "data/global.pory"
+# 944 "data/global.pory"
 	speakername CommonText_Jakson
 	return
 
 GetRivalForNameBox_4:
-# 943 "data/global.pory"
+# 946 "data/global.pory"
 	speakername CommonText_Redd
 	return
 
 GetRivalForNameBox_5:
-# 945 "data/global.pory"
+# 948 "data/global.pory"
 	speakername CommonText_Sakura
 	return
 
@@ -1859,233 +1865,233 @@ DoYouHaveAnyCaps::
 	.string "to trade?$"
 
 CommonText_Mom::
-# 803 "data/global.pory"
+# 806 "data/global.pory"
 	.string "Mom$"
 
 CommonText_Dad::
-# 807 "data/global.pory"
+# 810 "data/global.pory"
 	.string "Dad$"
 
 CommonText_Birch::
-# 811 "data/global.pory"
+# 814 "data/global.pory"
 	.string "Prof. Birch$"
 
 CommonText_Rowan::
-# 815 "data/global.pory"
+# 818 "data/global.pory"
 	.string "Prof. Rowan$"
 
 CommonText_Archie::
-# 819 "data/global.pory"
+# 822 "data/global.pory"
 	.string "Archie$"
 
 CommonText_Maxie::
-# 823 "data/global.pory"
+# 826 "data/global.pory"
 	.string "Maxie$"
 
 CommonText_Giovanni::
-# 827 "data/global.pory"
+# 830 "data/global.pory"
 	.string "Giovanni$"
 
 CommonText_Courtney::
-# 831 "data/global.pory"
+# 834 "data/global.pory"
 	.string "Courtney$"
 
 CommonText_Tabitha::
-# 835 "data/global.pory"
+# 838 "data/global.pory"
 	.string "Tabitha$"
 
 CommonText_May::
-# 839 "data/global.pory"
+# 842 "data/global.pory"
 	.string "May$"
 
 CommonText_Brendan::
-# 843 "data/global.pory"
+# 846 "data/global.pory"
 	.string "Brendan$"
 
 CommonText_Wally::
-# 847 "data/global.pory"
+# 850 "data/global.pory"
 	.string "Wally$"
 
 CommonText_Uncle::
-# 851 "data/global.pory"
+# 854 "data/global.pory"
 	.string "Uncle$"
 
 CommonText_Wanda::
-# 855 "data/global.pory"
+# 858 "data/global.pory"
 	.string "Wanda$"
 
 CommonText_Steven::
-# 859 "data/global.pory"
+# 862 "data/global.pory"
 	.string "Steven$"
 
 CommonText_Wattson::
-# 863 "data/global.pory"
+# 866 "data/global.pory"
 	.string "Wattson$"
 
 CommonText_Scott::
-# 867 "data/global.pory"
+# 870 "data/global.pory"
 	.string "Scott$"
 
 CommonText_Q::
-# 871 "data/global.pory"
+# 874 "data/global.pory"
 	.string "?????$"
 
 CommonText_MrStone::
-# 875 "data/global.pory"
+# 878 "data/global.pory"
 	.string "Mr. Stone$"
 
 CommonText_MrBriney::
-# 879 "data/global.pory"
+# 882 "data/global.pory"
 	.string "Mr. Briney$"
 
 CommonText_Peeko::
-# 883 "data/global.pory"
+# 886 "data/global.pory"
 	.string "Peeko$"
 
 CommonText_CaptStern::
-# 887 "data/global.pory"
+# 890 "data/global.pory"
 	.string "Capt. Stern$"
 
 CommonText_Dock::
-# 891 "data/global.pory"
+# 894 "data/global.pory"
 	.string "Dock$"
 
 CommonText_Gabby::
-# 895 "data/global.pory"
+# 898 "data/global.pory"
 	.string "Gabby$"
 
 CommonText_Ty::
-# 899 "data/global.pory"
+# 902 "data/global.pory"
 	.string "Ty$"
 
 CommonText_Rydel::
-# 903 "data/global.pory"
+# 906 "data/global.pory"
 	.string "Rydel$"
 
 CommonText_Cozmo::
-# 907 "data/global.pory"
+# 910 "data/global.pory"
 	.string "Prof. Cozmo$"
 
 CommonText_Lanette::
-# 911 "data/global.pory"
+# 914 "data/global.pory"
 	.string "Lanette$"
 
 CommonText_Wallace::
-# 915 "data/global.pory"
+# 918 "data/global.pory"
 	.string "Wallace$"
 
 CommonText_Looker::
-# 919 "data/global.pory"
+# 922 "data/global.pory"
 	.string "Looker$"
 
 CommonText_Bianca::
-# 923 "data/global.pory"
+# 926 "data/global.pory"
 	.string "Bianca$"
 
 CommonText_MagmaGrunt::
-# 927 "data/global.pory"
+# 930 "data/global.pory"
 	.string "Magma Grunt$"
 
 CommonText_AquaGrunt::
-# 931 "data/global.pory"
+# 934 "data/global.pory"
 	.string "Aqua Grunt$"
 
 CommonText_Baron::
-# 951 "data/global.pory"
+# 954 "data/global.pory"
 	.string "Baron$"
 
 CommonText_Harper::
-# 955 "data/global.pory"
+# 958 "data/global.pory"
 	.string "Harper$"
 
 CommonText_Jakson::
-# 959 "data/global.pory"
+# 962 "data/global.pory"
 	.string "Jakson$"
 
 CommonText_Redd::
-# 963 "data/global.pory"
+# 966 "data/global.pory"
 	.string "Redd$"
 
 CommonText_Sakura::
-# 967 "data/global.pory"
+# 970 "data/global.pory"
 	.string "Sakura$"
 
 Text_PokevialSizeIncrease::
-# 971 "data/global.pory"
+# 974 "data/global.pory"
 	.string "The Pokévial's size was increased!$"
 
 CommonText_NormalType::
-# 975 "data/global.pory"
+# 978 "data/global.pory"
 	.string "Normal Type$"
 
 CommonText_FightingType::
-# 979 "data/global.pory"
+# 982 "data/global.pory"
 	.string "Fighting Type$"
 
 CommonText_FlyingType::
-# 983 "data/global.pory"
+# 986 "data/global.pory"
 	.string "Flying Type$"
 
 CommonText_PoisonType::
-# 987 "data/global.pory"
+# 990 "data/global.pory"
 	.string "Poison Type$"
 
 CommonText_GroundType::
-# 991 "data/global.pory"
+# 994 "data/global.pory"
 	.string "Ground Type$"
 
 CommonText_RockType::
-# 995 "data/global.pory"
+# 998 "data/global.pory"
 	.string "Rock Type$"
 
 CommonText_BugType::
-# 999 "data/global.pory"
+# 1002 "data/global.pory"
 	.string "Bug Type$"
 
 CommonText_GhostType::
-# 1003 "data/global.pory"
+# 1006 "data/global.pory"
 	.string "Ghost Type$"
 
 CommonText_SteelType::
-# 1007 "data/global.pory"
+# 1010 "data/global.pory"
 	.string "Steel Type$"
 
 CommonText_FireType::
-# 1011 "data/global.pory"
+# 1014 "data/global.pory"
 	.string "Fire Type$"
 
 CommonText_WaterType::
-# 1015 "data/global.pory"
+# 1018 "data/global.pory"
 	.string "Water Type$"
 
 CommonText_GrassType::
-# 1019 "data/global.pory"
+# 1022 "data/global.pory"
 	.string "Grass Type$"
 
 CommonText_ElectricType::
-# 1023 "data/global.pory"
+# 1026 "data/global.pory"
 	.string "Electric Type$"
 
 CommonText_PsychicType::
-# 1027 "data/global.pory"
+# 1030 "data/global.pory"
 	.string "Psychic Type$"
 
 CommonText_IceType::
-# 1031 "data/global.pory"
+# 1034 "data/global.pory"
 	.string "Ice Type$"
 
 CommonText_DragonType::
-# 1035 "data/global.pory"
+# 1038 "data/global.pory"
 	.string "Dragon Type$"
 
 CommonText_DarkType::
-# 1039 "data/global.pory"
+# 1042 "data/global.pory"
 	.string "Dark Type$"
 
 CommonText_FairyType::
-# 1043 "data/global.pory"
+# 1046 "data/global.pory"
 	.string "Fairy Type$"
 
 CommonText_StellarType::
-# 1047 "data/global.pory"
+# 1050 "data/global.pory"
 	.string "Stellar Type$"

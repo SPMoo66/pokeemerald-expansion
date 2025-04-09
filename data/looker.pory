@@ -180,6 +180,7 @@ text RustboroCity_Text_Looker_Call {
 
 script FortreeCity_EventScript_Looker {
 	lock
+	faceplayer
 	speakername (CommonText_Looker)
 	msgbox (format ("Greetings, {PLAYER}.\p"
 					"I am still on the hunt for Team Rocket,\n"

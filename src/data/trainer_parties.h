@@ -4603,7 +4603,7 @@ static const struct TrainerMon sParty_Victoria[] = {
 
 static const struct TrainerMon sParty_Vanessa[] = {
     {
-    .lvl = 30,
+    .lvl = 31,
     .species = SPECIES_PLUSLE,
     .heldItem = ITEM_ORAN_BERRY,
     },

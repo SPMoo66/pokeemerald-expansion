@@ -791,23 +791,23 @@ static const struct TrainerMon sParty_GabbyAndTy1[] = {
 
 static const struct TrainerMon sParty_GabbyAndTy2[] = {
     {
-    .lvl = 29,
+    .lvl = 31,
     .species = SPECIES_DEINO,
     },
     {
-    .lvl = 29,
+    .lvl = 31,
     .species = SPECIES_JANGMO_O,
     }
 };
 
 static const struct TrainerMon sParty_GabbyAndTy3[] = {
     {
-    .lvl = 31,
-    .species = SPECIES_DEINO,
+    .lvl = 35,
+    .species = SPECIES_ZWEILOUS,
     },
     {
-    .lvl = 31,
-    .species = SPECIES_JANGMO_O,
+    .lvl = 35,
+    .species = SPECIES_HAKAMO_O,
     }
 };
 

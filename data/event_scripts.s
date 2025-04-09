@@ -718,7 +718,6 @@ Common_ShowEasyChatScreen::
 
 Common_EventScript_ReadyPetalburgGymForBattle::
 	clearflag FLAG_HIDE_PETALBURG_GYM_GREETER
-	setflag FLAG_PETALBURG_MART_EXPANDED_ITEMS
 	return
 
 Common_EventScript_BufferTrendyPhrase::
@@ -1135,6 +1134,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/challenge_balls.inc"
 	.include "data/looker.inc"
 	.include "data/tera.inc"
+	.include "data/gym_leaders.inc"
 
 	.include "data/maps/ScorchedSlabB1F/scripts.inc"
 	.include "data/maps/SeasideGrotto/scripts.inc"

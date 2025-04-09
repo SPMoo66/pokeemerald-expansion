@@ -7710,14 +7710,14 @@ static const struct TrainerMon sParty_BrendanRoute110Mudkip[] = {
 
 static const struct TrainerMon sParty_BrendanRoute119Mudkip[] = {
     {
-    .lvl = 35,
+    .lvl = 38,
     .species = SPECIES_DIGGERSBY,
     .ability = ABILITY_HUGE_POWER,
 	.heldItem = ITEM_NORMAL_GEM,
     .moves = {MOVE_FACADE, MOVE_BULLDOZE, MOVE_ROCK_TOMB, MOVE_ICE_PUNCH}
     },
     {
-    .lvl = 34,
+    .lvl = 36,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_MALE,
     .ability = ABILITY_SUPER_LUCK,
@@ -7725,21 +7725,21 @@ static const struct TrainerMon sParty_BrendanRoute119Mudkip[] = {
     .moves = {MOVE_STEEL_WING, MOVE_AIR_SLASH, MOVE_ROOST, MOVE_FACADE}
     },
     {
-    .lvl = 34,
+    .lvl = 37,
     .species = SPECIES_MORGREM,
     .ability = ABILITY_PRANKSTER,
 	.heldItem = ITEM_MIRROR_HERB,
     .moves = {MOVE_FALSE_SURRENDER, MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_SWAGGER}
     },
     {
-    .lvl = 33,
+    .lvl = 36,
     .species = SPECIES_SNORLAX,
     .ability = ABILITY_THICK_FAT,
 	.heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_BULLDOZE, MOVE_CHIP_AWAY, MOVE_METRONOME, MOVE_TRAILBLAZE}
     },
     {
-    .lvl = 38,
+    .lvl = 40,
     .species = SPECIES_DECIDUEYE_HISUI,
     .ability = ABILITY_SCRAPPY,
 	.heldItem = ITEM_ASSAULT_VEST,
@@ -7796,14 +7796,14 @@ static const struct TrainerMon sParty_BrendanRoute110Treecko[] = {
 
 static const struct TrainerMon sParty_BrendanRoute119Treecko[] = {
     {
-    .lvl = 35,
+    .lvl = 38,
     .species = SPECIES_TOXTRICITY,
     .ability = ABILITY_TECHNICIAN,
 	.heldItem = ITEM_SHUCA_BERRY,
     .moves = {MOVE_SHOCK_WAVE, MOVE_VENOSHOCK, MOVE_TOXIC, MOVE_NUZZLE}
     },
     {
-    .lvl = 34,
+    .lvl = 36,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_MALE,
     .ability = ABILITY_SUPER_LUCK,
@@ -7811,21 +7811,21 @@ static const struct TrainerMon sParty_BrendanRoute119Treecko[] = {
     .moves = {MOVE_STEEL_WING, MOVE_AIR_SLASH, MOVE_ROOST, MOVE_FACADE}
     },
     {
-    .lvl = 34,
+    .lvl = 37,
     .species = SPECIES_MORGREM,
     .ability = ABILITY_PRANKSTER,
 	.heldItem = ITEM_MIRROR_HERB,
     .moves = {MOVE_FALSE_SURRENDER, MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_SWAGGER}
     },
     {
-    .lvl = 33,
+    .lvl = 36,
     .species = SPECIES_SNORLAX,
     .ability = ABILITY_THICK_FAT,
 	.heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_BULLDOZE, MOVE_CHIP_AWAY, MOVE_METRONOME, MOVE_TRAILBLAZE}
     },
     {
-    .lvl = 38,
+    .lvl = 40,
     .species = SPECIES_INCINEROAR,
     .ability = ABILITY_INTIMIDATE,
 	.heldItem = ITEM_ASSAULT_VEST,
@@ -7882,14 +7882,14 @@ static const struct TrainerMon sParty_BrendanRoute110Torchic[] = {
 
 static const struct TrainerMon sParty_BrendanRoute119Torchic[] = {
     {
-    .lvl = 35,
+    .lvl = 38,
     .species = SPECIES_MR_MIME_GALAR,
     .ability = ABILITY_SCREEN_CLEANER,
 	.heldItem = ITEM_LIGHT_CLAY,
     .moves = {MOVE_PSYBEAM, MOVE_LIGHT_SCREEN, MOVE_FREEZE_DRY, MOVE_REFLECT}
     },
     {
-    .lvl = 34,
+    .lvl = 36,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_MALE,
     .ability = ABILITY_SUPER_LUCK,
@@ -7897,21 +7897,21 @@ static const struct TrainerMon sParty_BrendanRoute119Torchic[] = {
     .moves = {MOVE_STEEL_WING, MOVE_AIR_SLASH, MOVE_ROOST, MOVE_FACADE}
     },
     {
-    .lvl = 34,
+    .lvl = 37,
     .species = SPECIES_MORGREM,
     .ability = ABILITY_PRANKSTER,
 	.heldItem = ITEM_MIRROR_HERB,
     .moves = {MOVE_FALSE_SURRENDER, MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_SWAGGER}
     },
     {
-    .lvl = 33,
+    .lvl = 36,
     .species = SPECIES_SNORLAX,
     .ability = ABILITY_THICK_FAT,
 	.heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_BULLDOZE, MOVE_CHIP_AWAY, MOVE_METRONOME, MOVE_TRAILBLAZE}
     },
     {
-    .lvl = 38,
+    .lvl = 40,
     .species = SPECIES_INTELEON,
     .ability = ABILITY_INTIMIDATE,
 	.heldItem = ITEM_ASSAULT_VEST,
@@ -7968,14 +7968,14 @@ static const struct TrainerMon sParty_MayRoute110Mudkip[] = {
 
 static const struct TrainerMon sParty_MayRoute119Mudkip[] = {
     {
-    .lvl = 35,
+    .lvl = 38,
     .species = SPECIES_NIDOQUEEN,
     .ability = ABILITY_SHEER_FORCE,
 	.heldItem = ITEM_BLACK_SLUDGE,
     .moves = {MOVE_STEALTH_ROCK, MOVE_BULLDOZE, MOVE_POISON_JAB, MOVE_TOXIC}
     },
     {
-    .lvl = 34,
+    .lvl = 36,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_FEMALE,
     .ability = ABILITY_RIVALRY,
@@ -7983,21 +7983,21 @@ static const struct TrainerMon sParty_MayRoute119Mudkip[] = {
     .moves = {MOVE_STEEL_WING, MOVE_AIR_SLASH, MOVE_ROOST, MOVE_FACADE}
     },
     {
-    .lvl = 34,
+    .lvl = 37,
     .species = SPECIES_GOTHORITA,
     .ability = ABILITY_COMPETITIVE,
 	.heldItem = ITEM_WISE_GLASSES,
     .moves = {MOVE_PSYSHOCK, MOVE_HYPNOSIS, MOVE_FAKE_TEARS, MOVE_SHADOW_BALL}
     },
     {
-    .lvl = 33,
+    .lvl = 36,
     .species = SPECIES_LOPUNNY,
     .ability = ABILITY_LIMBER,
 	.heldItem = ITEM_PUNCHING_GLOVE,
     .moves = {MOVE_LOW_SWEEP, MOVE_DIZZY_PUNCH, MOVE_AFTER_YOU, MOVE_ENCORE}
     },
     {
-    .lvl = 38,
+    .lvl = 40,
     .species = SPECIES_MEOWSCARADA,
     .ability = ABILITY_PROTEAN,
 	.heldItem = ITEM_FOCUS_SASH,
@@ -8054,14 +8054,14 @@ static const struct TrainerMon sParty_MayRoute110Treecko[] = {
 
 static const struct TrainerMon sParty_MayRoute119Treecko[] = {
     {
-    .lvl = 35,
+    .lvl = 38,
     .species = SPECIES_LILLIGANT,
     .ability = ABILITY_OWN_TEMPO,
 	.heldItem = ITEM_HEAVY_DUTY_BOOTS,
     .moves = {MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE, MOVE_SLEEP_POWDER, MOVE_HELPING_HAND}
     },
     {
-    .lvl = 34,
+    .lvl = 36,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_FEMALE,
     .ability = ABILITY_RIVALRY,
@@ -8069,21 +8069,21 @@ static const struct TrainerMon sParty_MayRoute119Treecko[] = {
     .moves = {MOVE_STEEL_WING, MOVE_AIR_CUTTER, MOVE_ROOST, MOVE_FACADE}
     },
     {
-    .lvl = 34,
+    .lvl = 37,
     .species = SPECIES_GOTHORITA,
     .ability = ABILITY_COMPETITIVE,
 	.heldItem = ITEM_WISE_GLASSES,
     .moves = {MOVE_PSYSHOCK, MOVE_HYPNOSIS, MOVE_FAKE_TEARS, MOVE_SHADOW_BALL}
     },
     {
-    .lvl = 33,
+    .lvl = 36,
     .species = SPECIES_LOPUNNY,
     .ability = ABILITY_LIMBER,
 	.heldItem = ITEM_PUNCHING_GLOVE,
     .moves = {MOVE_LOW_SWEEP, MOVE_DIZZY_PUNCH, MOVE_AFTER_YOU, MOVE_ENCORE}
     },
     {
-    .lvl = 38,
+    .lvl = 40,
     .species = SPECIES_DELPHOX,
     .ability = ABILITY_MAGICIAN,
 	.heldItem = ITEM_FIRE_GEM,
@@ -8140,14 +8140,14 @@ static const struct TrainerMon sParty_MayRoute110Torchic[] = {
 
 static const struct TrainerMon sParty_MayRoute119Torchic[] = {
     {
-    .lvl = 35,
+    .lvl = 38,
     .species = SPECIES_FROSLASS,
     .ability = ABILITY_SUPER_LUCK,
 	.heldItem = ITEM_SCOPE_LENS,
     .moves = {MOVE_OMINOUS_WIND, MOVE_WILL_O_WISP, MOVE_CONFUSE_RAY, MOVE_AURORA_BEAM}
     },
     {
-    .lvl = 34,
+    .lvl = 36,
     .species = SPECIES_TRANQUILL,
     .gender = TRAINER_MON_FEMALE,
     .ability = ABILITY_RIVALRY,
@@ -8155,21 +8155,21 @@ static const struct TrainerMon sParty_MayRoute119Torchic[] = {
     .moves = {MOVE_STEEL_WING, MOVE_AIR_SLASH, MOVE_ROOST, MOVE_FACADE}
     },
     {
-    .lvl = 34,
+    .lvl = 37,
     .species = SPECIES_GOTHORITA,
     .ability = ABILITY_COMPETITIVE,
 	.heldItem = ITEM_WISE_GLASSES,
     .moves = {MOVE_PSYSHOCK, MOVE_HYPNOSIS, MOVE_FAKE_TEARS, MOVE_SHADOW_BALL}
     },
     {
-    .lvl = 33,
+    .lvl = 36,
     .species = SPECIES_LOPUNNY,
     .ability = ABILITY_LIMBER,
 	.heldItem = ITEM_PUNCHING_GLOVE,
     .moves = {MOVE_LOW_SWEEP, MOVE_DIZZY_PUNCH, MOVE_AFTER_YOU, MOVE_ENCORE}
     },
     {
-    .lvl = 38,
+    .lvl = 40,
     .species = SPECIES_PRIMARINA,
     .ability = ABILITY_TORRENT,
 	.heldItem = ITEM_WIDE_LENS,
@@ -10292,14 +10292,14 @@ static const struct TrainerMon sParty_WallyVR5[] = {
 
 static const struct TrainerMon sParty_BrendanLilycoveMudkip[] = {
     {
-    .lvl = 40,
+    .lvl = 41,
     .species = SPECIES_SNORLAX,
     .ability = ABILITY_THICK_FAT,
 	.heldItem = ITEM_MEGA_STONE_G,
     .moves = {MOVE_BELLY_DRUM, MOVE_NEEDLE_ARM, MOVE_BODY_SLAM, MOVE_SLACK_OFF}
     },
     {
-    .lvl = 37,
+    .lvl = 39,
     .species = SPECIES_UNFEZANT,
     .gender = TRAINER_MON_MALE,
     .ability = ABILITY_SUPER_LUCK,
@@ -10307,28 +10307,28 @@ static const struct TrainerMon sParty_BrendanLilycoveMudkip[] = {
     .moves = {MOVE_STEEL_WING, MOVE_BRAVE_BIRD, MOVE_ROOST, MOVE_TAILWIND}
     },
     {
-    .lvl = 39,
+    .lvl = 40,
     .species = SPECIES_DIGGERSBY,
     .ability = ABILITY_HUGE_POWER,
 	.heldItem = ITEM_NORMAL_GEM,
     .moves = {MOVE_BODY_SLAM, MOVE_BULLDOZE, MOVE_ROCK_TOMB, MOVE_ICE_PUNCH}
     },
     {
-    .lvl = 41,
+    .lvl = 42,
     .species = SPECIES_GRIMMSNARL,
     .ability = ABILITY_PRANKSTER,
 	.heldItem = ITEM_MIRROR_HERB,
     .moves = {MOVE_FALSE_SURRENDER, MOVE_FAKE_OUT, MOVE_SPIRIT_BREAK, MOVE_SWAGGER}
     },
     {
-    .lvl = 40,
+    .lvl = 41,
     .species = SPECIES_BUZZWOLE,
     .ability = ABILITY_BEAST_BOOST,
 	.heldItem = ITEM_ROCKY_HELMET,
     .moves = {MOVE_LUNGE, MOVE_HAMMER_ARM, MOVE_BULK_UP, MOVE_HIGH_HORSEPOWER}
     },
     {
-    .lvl = 42,
+    .lvl = 43,
     .species = SPECIES_DECIDUEYE_HISUI,
     .ability = ABILITY_SCRAPPY,
 	.heldItem = ITEM_ASSAULT_VEST,
@@ -10338,14 +10338,14 @@ static const struct TrainerMon sParty_BrendanLilycoveMudkip[] = {
 
 static const struct TrainerMon sParty_BrendanLilycoveTreecko[] = {
     {
-    .lvl = 40,
+    .lvl = 41,
     .species = SPECIES_SNORLAX,
     .ability = ABILITY_THICK_FAT,
 	.heldItem = ITEM_MEGA_STONE_G,
     .moves = {MOVE_BELLY_DRUM, MOVE_NEEDLE_ARM, MOVE_BODY_SLAM, MOVE_SLACK_OFF}
     },
     {
-    .lvl = 37,
+    .lvl = 39,
     .species = SPECIES_UNFEZANT,
     .gender = TRAINER_MON_MALE,
     .ability = ABILITY_SUPER_LUCK,
@@ -10353,28 +10353,28 @@ static const struct TrainerMon sParty_BrendanLilycoveTreecko[] = {
     .moves = {MOVE_STEEL_WING, MOVE_BRAVE_BIRD, MOVE_ROOST, MOVE_TAILWIND}
     },
     {
-    .lvl = 39,
+    .lvl = 40,
     .species = SPECIES_TOXTRICITY,
     .ability = ABILITY_PUNK_ROCK,
 	.heldItem = ITEM_THROAT_SPRAY,
     .moves = {MOVE_THUNDERBOLT, MOVE_VENOSHOCK, MOVE_TOXIC, MOVE_HYPER_VOICE}
     },
     {
-    .lvl = 41,
+    .lvl = 42,
     .species = SPECIES_GRIMMSNARL,
     .ability = ABILITY_PRANKSTER,
 	.heldItem = ITEM_MIRROR_HERB,
     .moves = {MOVE_FALSE_SURRENDER, MOVE_FAKE_OUT, MOVE_SPIRIT_BREAK, MOVE_SWAGGER}
     },
     {
-    .lvl = 40,
+    .lvl = 41,
     .species = SPECIES_BUZZWOLE,
     .ability = ABILITY_BEAST_BOOST,
 	.heldItem = ITEM_ROCKY_HELMET,
     .moves = {MOVE_LUNGE, MOVE_HAMMER_ARM, MOVE_BULK_UP, MOVE_HIGH_HORSEPOWER}
     },
     {
-    .lvl = 42,
+    .lvl = 43,
     .species = SPECIES_INCINEROAR,
     .ability = ABILITY_INTIMIDATE,
 	.heldItem = ITEM_ASSAULT_VEST,
@@ -10384,14 +10384,14 @@ static const struct TrainerMon sParty_BrendanLilycoveTreecko[] = {
 
 static const struct TrainerMon sParty_BrendanLilycoveTorchic[] = {
     {
-    .lvl = 40,
+    .lvl = 41,
     .species = SPECIES_SNORLAX,
     .ability = ABILITY_THICK_FAT,
 	.heldItem = ITEM_MEGA_STONE_G,
     .moves = {MOVE_BELLY_DRUM, MOVE_NEEDLE_ARM, MOVE_BODY_SLAM, MOVE_SLACK_OFF}
     },
     {
-    .lvl = 37,
+    .lvl = 39,
     .species = SPECIES_UNFEZANT,
     .gender = TRAINER_MON_MALE,
     .ability = ABILITY_SUPER_LUCK,
@@ -10399,28 +10399,28 @@ static const struct TrainerMon sParty_BrendanLilycoveTorchic[] = {
     .moves = {MOVE_STEEL_WING, MOVE_BRAVE_BIRD, MOVE_ROOST, MOVE_TAILWIND}
     },
     {
-    .lvl = 39,
+    .lvl = 40,
     .species = SPECIES_MR_RIME,
     .ability = ABILITY_SCREEN_CLEANER,
 	.heldItem = ITEM_LIGHT_CLAY,
     .moves = {MOVE_PSYCHIC, MOVE_LIGHT_SCREEN, MOVE_FREEZE_DRY, MOVE_REFLECT}
     },
     {
-    .lvl = 41,
+    .lvl = 42,
     .species = SPECIES_GRIMMSNARL,
     .ability = ABILITY_PRANKSTER,
 	.heldItem = ITEM_MIRROR_HERB,
     .moves = {MOVE_FALSE_SURRENDER, MOVE_FAKE_OUT, MOVE_SPIRIT_BREAK, MOVE_SWAGGER}
     },
     {
-    .lvl = 40,
+    .lvl = 41,
     .species = SPECIES_BUZZWOLE,
     .ability = ABILITY_BEAST_BOOST,
 	.heldItem = ITEM_ROCKY_HELMET,
     .moves = {MOVE_LUNGE, MOVE_HAMMER_ARM, MOVE_BULK_UP, MOVE_HIGH_HORSEPOWER}
     },
     {
-    .lvl = 42,
+    .lvl = 43,
     .species = SPECIES_INTELEON,
     .ability = ABILITY_SNIPER,
 	.heldItem = ITEM_SCOPE_LENS,
@@ -10430,14 +10430,14 @@ static const struct TrainerMon sParty_BrendanLilycoveTorchic[] = {
 
 static const struct TrainerMon sParty_MayLilycoveMudkip[] = {
     {
-    .lvl = 40,
+    .lvl = 41,
     .species = SPECIES_LOPUNNY,
     .ability = ABILITY_LIMBER,
 	.heldItem = ITEM_MEGA_STONE_X,
     .moves = {MOVE_DRAIN_PUNCH, MOVE_DIZZY_PUNCH, MOVE_AFTER_YOU, MOVE_ENCORE}
     },
     {
-    .lvl = 37,
+    .lvl = 39,
     .species = SPECIES_UNFEZANT,
     .gender = TRAINER_MON_FEMALE,
     .ability = ABILITY_RIVALRY,
@@ -10445,28 +10445,28 @@ static const struct TrainerMon sParty_MayLilycoveMudkip[] = {
     .moves = {MOVE_STEEL_WING, MOVE_DUAL_WINGBEAT, MOVE_ROOST, MOVE_TAILWIND}
     },
     {
-    .lvl = 39,
+    .lvl = 40,
     .species = SPECIES_NIDOQUEEN,
     .ability = ABILITY_SHEER_FORCE,
 	.heldItem = ITEM_BLACK_SLUDGE,
     .moves = {MOVE_STEALTH_ROCK, MOVE_BULLDOZE, MOVE_POISON_JAB, MOVE_FIRE_PUNCH}
     },
     {
-    .lvl = 41,
+    .lvl = 42,
     .species = SPECIES_GOTHITELLE,
     .ability = ABILITY_COMPETITIVE,
 	.heldItem = ITEM_WISE_GLASSES,
     .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL}
     },
     {
-    .lvl = 40,
+    .lvl = 41,
     .species = SPECIES_PHEROMOSA,
     .ability = ABILITY_BEAST_BOOST,
 	.heldItem = ITEM_LIFE_ORB,
     .moves = {MOVE_CLOSE_COMBAT, MOVE_U_TURN, MOVE_ICE_BEAM, MOVE_PROTECT}
     },
     {
-    .lvl = 42,
+    .lvl = 43,
     .species = SPECIES_MEOWSCARADA,
     .ability = ABILITY_PROTEAN,
 	.heldItem = ITEM_FOCUS_SASH,
@@ -10476,14 +10476,14 @@ static const struct TrainerMon sParty_MayLilycoveMudkip[] = {
 
 static const struct TrainerMon sParty_MayLilycoveTreecko[] = {
     {
-    .lvl = 40,
+    .lvl = 41,
     .species = SPECIES_LOPUNNY,
     .ability = ABILITY_LIMBER,
 	.heldItem = ITEM_MEGA_STONE_X,
     .moves = {MOVE_DRAIN_PUNCH, MOVE_DIZZY_PUNCH, MOVE_AFTER_YOU, MOVE_ENCORE}
     },
     {
-    .lvl = 37,
+    .lvl = 39,
     .species = SPECIES_UNFEZANT,
     .gender = TRAINER_MON_FEMALE,
     .ability = ABILITY_RIVALRY,
@@ -10491,28 +10491,28 @@ static const struct TrainerMon sParty_MayLilycoveTreecko[] = {
     .moves = {MOVE_STEEL_WING, MOVE_DUAL_WINGBEAT, MOVE_ROOST, MOVE_TAILWIND}
     },
     {
-    .lvl = 39,
+    .lvl = 40,
     .species = SPECIES_LILLIGANT,
     .ability = ABILITY_OWN_TEMPO,
 	.heldItem = ITEM_HEAVY_DUTY_BOOTS,
     .moves = {MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE, MOVE_SLEEP_POWDER, MOVE_POLLEN_PUFF}
     },
     {
-    .lvl = 41,
+    .lvl = 42,
     .species = SPECIES_GOTHITELLE,
     .ability = ABILITY_COMPETITIVE,
 	.heldItem = ITEM_WISE_GLASSES,
     .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL}
     },
     {
-    .lvl = 40,
+    .lvl = 41,
     .species = SPECIES_PHEROMOSA,
     .ability = ABILITY_BEAST_BOOST,
 	.heldItem = ITEM_LIFE_ORB,
     .moves = {MOVE_CLOSE_COMBAT, MOVE_U_TURN, MOVE_ICE_BEAM, MOVE_PROTECT}
     },
     {
-    .lvl = 42,
+    .lvl = 43,
     .species = SPECIES_DELPHOX,
     .ability = ABILITY_MAGICIAN,
 	.heldItem = ITEM_FIRE_GEM,
@@ -10522,14 +10522,14 @@ static const struct TrainerMon sParty_MayLilycoveTreecko[] = {
 
 static const struct TrainerMon sParty_MayLilycoveTorchic[] = {
     {
-    .lvl = 40,
+    .lvl = 41,
     .species = SPECIES_LOPUNNY,
     .ability = ABILITY_LIMBER,
 	.heldItem = ITEM_MEGA_STONE_X,
     .moves = {MOVE_DRAIN_PUNCH, MOVE_DIZZY_PUNCH, MOVE_AFTER_YOU, MOVE_ENCORE}
     },
     {
-    .lvl = 37,
+    .lvl = 39,
     .species = SPECIES_UNFEZANT,
     .gender = TRAINER_MON_FEMALE,
     .ability = ABILITY_RIVALRY,
@@ -10537,28 +10537,28 @@ static const struct TrainerMon sParty_MayLilycoveTorchic[] = {
     .moves = {MOVE_STEEL_WING, MOVE_DUAL_WINGBEAT, MOVE_ROOST, MOVE_TAILWIND}
     },
     {
-    .lvl = 39,
+    .lvl = 40,
     .species = SPECIES_FROSLASS,
     .ability = ABILITY_SUPER_LUCK,
 	.heldItem = ITEM_SCOPE_LENS,
     .moves = {MOVE_HEX, MOVE_WILL_O_WISP, MOVE_CONFUSE_RAY, MOVE_ICE_BEAM}
     },
     {
-    .lvl = 41,
+    .lvl = 42,
     .species = SPECIES_GOTHITELLE,
     .ability = ABILITY_COMPETITIVE,
 	.heldItem = ITEM_WISE_GLASSES,
     .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL}
     },
     {
-    .lvl = 40,
+    .lvl = 41,
     .species = SPECIES_PHEROMOSA,
     .ability = ABILITY_BEAST_BOOST,
 	.heldItem = ITEM_LIFE_ORB,
     .moves = {MOVE_CLOSE_COMBAT, MOVE_U_TURN, MOVE_ICE_BEAM, MOVE_PROTECT}
     },
     {
-    .lvl = 42,
+    .lvl = 43,
     .species = SPECIES_PRIMARINA,
     .ability = ABILITY_TORRENT,
 	.heldItem = ITEM_WIDE_LENS,

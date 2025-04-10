@@ -53,101 +53,113 @@ script RustboroCity_Gym_EventScript_RegisterRoxanne {
 }
 
 
-//RustboroCity_Gym_Text_RoxanneIntro:
-//	.string "Hello, I am Roxanne, the Rustboro\n"
-//	.string "Pokémon Gym Leader.\p"
-//	.string "I became a Gym Leader so that I might\n"
-//	.string "apply what I learned at the Pokémon\l"
-//	.string "Trainer's School in battle.\p"
-//	.string "Would you kindly demonstrate how you\n"
-//	.string "battle, and with which Pokémon?$"
-//
-//RustboroCity_Gym_Text_RoxanneDefeat:
-//	.string "So…\n"
-//	.string "I lost…\p"
-//	.string "It seems that I still have much more\n"
-//	.string "to learn…\p"
-//	.string "I understand.\p"
-//	.string "The Pokémon League's rules state\n"
-//	.string "that Trainers are to be given this\l"
-//	.string "if they defeat a Gym Leader.\p"
-//	.string "Please accept the official Pokémon\n"
-//	.string "League Stone Badge.$"
-//
-//RustboroCity_Gym_Text_ReceivedStoneBadge:
-//	.string "{PLAYER} received the Stone Badge\n"
-//	.string "from Roxanne.$"
-//
-//RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
-//	.string "The Stone Badge heightens the Attack\n"
-//	.string "power of your Pokémon.\p"
-//	.string "It also enables them to use the HM move\n"
-//	.string "Cut outside of battle.\p"
-//	.string "Please take this with you, too.$"
-//
-//RustboroCity_Gym_Text_ExplainSmackDown:
-//	.string "That Technical Machine, TM96,\n"
-//	.string "contains Smack Down.\p"
-//	.string "It not only inflicts damage by throwing\n"
-//	.string "rocks, it also grounds flying targets.\p"
-//	.string "If you use a TM, it instantly teaches\n"
-//	.string "the move to a Pokémon.\p"
-//	.string "Remember, a TM can be used only once,\n"
-//	.string "so think before you use it.$"
-//
-//RustboroCity_Gym_Text_RoxannePostBattle:
-//	.string "Since you are so strong, you should\n"
-//	.string "challenge other Gym Leaders.\p"
-//	.string "By battling many Trainers, you should\n"
-//	.string "learn many things.$"
-//
-//RustboroCity_Gym_Text_RoxanneRegisterCall:
-//	.string "… … … … … …\n"
-//	.string "… … … … … Beep!\p"
-//	.string "Roxanne: Oh, hello, {PLAYER}?\n"
-//	.string "This is Roxanne of Rustboro City.\p"
-//	.string "I heard from Brawly that you're\n"
-//	.string "moving up through the ranks of\l"
-//	.string "Trainers at an incredible clip.\p"
-//	.string "Well, I'd rather not think that\n"
-//	.string "I can't beat you.\p"
-//	.string "I promise, I will shape up my Gym\n"
-//	.string "so that you may challenge us again.\p"
-//	.string "I hope you'll be looking forward to\n"
-//	.string "that occasion as much as me!\p"
-//	.string "… … … … … …\n"
-//	.string "… … … … … Click!$"
-//
-//RustboroCity_Gym_Text_RegisteredRoxanne:
-//	.string "Registered Gym Leader Roxanne\n"
-//	.string "in the Pokénav.$"
-//
-//RustboroCity_Gym_Text_RoxannePreRematch:
-//	.string "Roxanne: I'm so glad to see you again.\n"
-//	.string "I'm Roxanne, the Gym Leader here.\p"
-//	.string "I'm sure we've both experienced many\n"
-//	.string "battles since we last met.\p"
-//	.string "I would like to see how much better\n"
-//	.string "we've become. Let us battle!$"
-//
-//RustboroCity_Gym_Text_RoxanneRematchDefeat:
-//	.string "Grr…\n"
-//	.string "Again, I have lost…$"
-//
-//RustboroCity_Gym_Text_RoxannePostRematch:
-//	.string "Roxanne: I still have much to learn\n"
-//	.string "when it comes to battling Pokémon.\p"
-//	.string "That awareness makes me love battling\n"
-//	.string "all that much more!$"
-//
-//RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
-//	.string "Roxanne: I'm so glad to see you again.\n"
-//	.string "I'm Roxanne, the Gym Leader here.\p"
-//	.string "I'm sure we've both experienced many\n"
-//	.string "battles since we last met.\p"
-//	.string "I would like to see how much better\n"
-//	.string "we've become…\p"
-//	.string "Oh, no…\n"
-//	.string "You only have one Pokémon with you?\p"
-//	.string "Please return with at least one more\n"
-//	.string "Pokémon.$"
+text RustboroCity_Gym_Text_RoxanneIntro {
+	"Hello, I am Roxanne, the Rustboro\n"
+	"Pokémon Gym Leader.\p"
+	"I became a Gym Leader so that I might\n"
+	"apply what I learned at the Pokémon\l"
+	"Trainer's School in battle.\p"
+	"Would you kindly demonstrate how you\n"
+	"battle, and with which Pokémon?"
+}
+
+text RustboroCity_Gym_Text_RoxanneDefeat {
+	"So…\n"
+	"I lost…\p"
+	"It seems that I still have much more\n"
+	"to learn…\p"
+	"I understand.\p"
+	"The Pokémon League's rules state\n"
+	"that Trainers are to be given this\l"
+	"if they defeat a Gym Leader.\p"
+	"Please accept the official Pokémon\n"
+	"League Stone Badge."
+}
+
+text RustboroCity_Gym_Text_ReceivedStoneBadge {
+	"{PLAYER} received the Stone Badge\n"
+	"from Roxanne."
+}
+
+text RustboroCity_Gym_Text_StoneBadgeInfoTakeThis {
+	"The Stone Badge heightens the Attack\n"
+	"power of your Pokémon.\p"
+	"It also enables them to use the HM move\n"
+	"Cut outside of battle.\p"
+	"Please take this with you, too.$"
+}
+
+text RustboroCity_Gym_Text_ExplainSmackDown {
+	"That Technical Machine, TM96,\n"
+	"contains Smack Down.\p"
+	"It not only inflicts damage by throwing\n"
+	"rocks, it also grounds flying targets.\p"
+	"If you use a TM, it instantly teaches\n"
+	"the move to a Pokémon.\p"
+	"Remember, a TM can be used only once,\n"
+	"so think before you use it."
+}
+
+text RustboroCity_Gym_Text_RoxannePostBattle {
+	"Since you are so strong, you should\n"
+	"challenge other Gym Leaders.\p"
+	"By battling many Trainers, you should\n"
+	"learn many things."
+}
+
+text RustboroCity_Gym_Text_RoxanneRegisterCall {
+	"… … … … … …\n"
+	"… … … … … Beep!\p"
+	"Roxanne: Oh, hello, {PLAYER}?\n"
+	"This is Roxanne of Rustboro City.\p"
+	"I heard from Brawly that you're\n"
+	"moving up through the ranks of\l"
+	"Trainers at an incredible clip.\p"
+	"Well, I'd rather not think that\n"
+	"I can't beat you.\p"
+	"I promise, I will shape up my Gym\n"
+	"so that you may challenge us again.\p"
+	"I hope you'll be looking forward to\n"
+	"that occasion as much as me!\p"
+	"… … … … … …\n"
+	"… … … … … Click!"
+}
+
+text RustboroCity_Gym_Text_RegisteredRoxanne {
+	"Registered Gym Leader Roxanne\n"
+	"in the Pokénav."
+}
+
+text RustboroCity_Gym_Text_RoxannePreRematch {
+	"Roxanne: I'm so glad to see you again.\n"
+	"I'm Roxanne, the Gym Leader here.\p"
+	"I'm sure we've both experienced many\n"
+	"battles since we last met.\p"
+	"I would like to see how much better\n"
+	"we've become. Let us battle!"
+}
+
+text RustboroCity_Gym_Text_RoxanneRematchDefeat {
+	"Grr…\n"
+	"Again, I have lost…"
+}
+
+text RustboroCity_Gym_Text_RoxannePostRematch {
+	"Roxanne: I still have much to learn\n"
+	"when it comes to battling Pokémon.\p"
+	"That awareness makes me love battling\n"
+	"all that much more!"
+}
+
+text RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons {
+	"Roxanne: I'm so glad to see you again.\n"
+	"I'm Roxanne, the Gym Leader here.\p"
+	"I'm sure we've both experienced many\n"
+	"battles since we last met.\p"
+	"I would like to see how much better\n"
+	"we've become…\p"
+	"Oh, no…\n"
+	"You only have one Pokémon with you?\p"
+	"Please return with at least one more\n"
+	"Pokémon."
+}

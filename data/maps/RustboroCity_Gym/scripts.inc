@@ -91,54 +91,6 @@ RustboroCity_Gym_Text_MarcPostBattle:
 	.string "It took smarts and sense for her to\n"
 	.string "pick the Rock type at her young age.$"
 
-RustboroCity_Gym_Text_RoxanneIntro:
-	.string "Hello, I am Roxanne, the Rustboro\n"
-	.string "Pokémon Gym Leader.\p"
-	.string "I became a Gym Leader so that I might\n"
-	.string "apply what I learned at the Pokémon\l"
-	.string "Trainer's School in battle.\p"
-	.string "Would you kindly demonstrate how you\n"
-	.string "battle, and with which Pokémon?$"
-
-RustboroCity_Gym_Text_RoxanneDefeat:
-	.string "So…\n"
-	.string "I lost…\p"
-	.string "It seems that I still have much more\n"
-	.string "to learn…\p"
-	.string "I understand.\p"
-	.string "The Pokémon League's rules state\n"
-	.string "that Trainers are to be given this\l"
-	.string "if they defeat a Gym Leader.\p"
-	.string "Please accept the official Pokémon\n"
-	.string "League Stone Badge.$"
-
-RustboroCity_Gym_Text_ReceivedStoneBadge:
-	.string "{PLAYER} received the Stone Badge\n"
-	.string "from Roxanne.$"
-
-RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
-	.string "The Stone Badge heightens the Attack\n"
-	.string "power of your Pokémon.\p"
-	.string "It also enables them to use the HM move\n"
-	.string "Cut outside of battle.\p"
-	.string "Please take this with you, too.$"
-
-RustboroCity_Gym_Text_ExplainSmackDown:
-	.string "That Technical Machine, TM96,\n"
-	.string "contains Smack Down.\p"
-	.string "It not only inflicts damage by throwing\n"
-	.string "rocks, it also grounds flying targets.\p"
-	.string "If you use a TM, it instantly teaches\n"
-	.string "the move to a Pokémon.\p"
-	.string "Remember, a TM can be used only once,\n"
-	.string "so think before you use it.$"
-
-RustboroCity_Gym_Text_RoxannePostBattle:
-	.string "Since you are so strong, you should\n"
-	.string "challenge other Gym Leaders.\p"
-	.string "By battling many Trainers, you should\n"
-	.string "learn many things.$"
-
 RustboroCity_Gym_Text_GymStatue:
 	.string "Rustboro City Pokémon Gym\p"
 	.string "Roxanne's certified Trainers:\n"
@@ -160,54 +112,3 @@ RustboroCity_Gym_Text_GymStatueCertified3:
 	.string "Roxanne's certified Trainers:\n"
 	.string "Sakura, Jakson, {PLAYER}, Redd,\l"
 	.string "Harper, Baron, Wally$"
-
-RustboroCity_Gym_Text_RoxanneRegisterCall:
-	.string "… … … … … …\n"
-	.string "… … … … … Beep!\p"
-	.string "Roxanne: Oh, hello, {PLAYER}?\n"
-	.string "This is Roxanne of Rustboro City.\p"
-	.string "I heard from Brawly that you're\n"
-	.string "moving up through the ranks of\l"
-	.string "Trainers at an incredible clip.\p"
-	.string "Well, I'd rather not think that\n"
-	.string "I can't beat you.\p"
-	.string "I promise, I will shape up my Gym\n"
-	.string "so that you may challenge us again.\p"
-	.string "I hope you'll be looking forward to\n"
-	.string "that occasion as much as me!\p"
-	.string "… … … … … …\n"
-	.string "… … … … … Click!$"
-
-RustboroCity_Gym_Text_RegisteredRoxanne:
-	.string "Registered Gym Leader Roxanne\n"
-	.string "in the Pokénav.$"
-
-RustboroCity_Gym_Text_RoxannePreRematch:
-	.string "Roxanne: I'm so glad to see you again.\n"
-	.string "I'm Roxanne, the Gym Leader here.\p"
-	.string "I'm sure we've both experienced many\n"
-	.string "battles since we last met.\p"
-	.string "I would like to see how much better\n"
-	.string "we've become. Let us battle!$"
-
-RustboroCity_Gym_Text_RoxanneRematchDefeat:
-	.string "Grr…\n"
-	.string "Again, I have lost…$"
-
-RustboroCity_Gym_Text_RoxannePostRematch:
-	.string "Roxanne: I still have much to learn\n"
-	.string "when it comes to battling Pokémon.\p"
-	.string "That awareness makes me love battling\n"
-	.string "all that much more!$"
-
-RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
-	.string "Roxanne: I'm so glad to see you again.\n"
-	.string "I'm Roxanne, the Gym Leader here.\p"
-	.string "I'm sure we've both experienced many\n"
-	.string "battles since we last met.\p"
-	.string "I would like to see how much better\n"
-	.string "we've become…\p"
-	.string "Oh, no…\n"
-	.string "You only have one Pokémon with you?\p"
-	.string "Please return with at least one more\n"
-	.string "Pokémon.$"

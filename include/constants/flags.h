@@ -183,14 +183,14 @@
 #define FLAG_CUTE_PAINTING_MADE              0xA2
 #define FLAG_SMART_PAINTING_MADE             0xA3
 #define FLAG_TOUGH_PAINTING_MADE             0xA4
-#define FLAG_RECEIVED_TM_SMACK_DOWN          0xA5
-#define FLAG_RECEIVED_TM_BULK_UP             0xA6
-#define FLAG_RECEIVED_TM_CHARGE_BEAM         0xA7
-#define FLAG_RECEIVED_TM_BLAZE_KICK          0xA8
-#define FLAG_RECEIVED_TM_FACADE              0xA9
-#define FLAG_RECEIVED_TM_DUAL_WINGBEAT       0xAA
-#define FLAG_RECEIVED_TM_TRICK_ROOM          0xAB
-#define FLAG_RECEIVED_TM_HYDRO_PUMP          0xAC
+#define FLAG_UNUSED_0xA5                     0xA5 // Was for Gym 1 TM
+#define FLAG_RECEIVED_TM_BULK_UP             0xA6 // Gym 2 TM
+#define FLAG_RECEIVED_TM_CHARGE_BEAM         0xA7 // Gym 3 TM
+#define FLAG_RECEIVED_TM_BLAZE_KICK          0xA8 // Gym 4 TM
+#define FLAG_RECEIVED_TM_FACADE              0xA9 // Gym 5 TM
+#define FLAG_RECEIVED_TM_DUAL_WINGBEAT       0xAA // Gym 6 TM
+#define FLAG_RECEIVED_TM_TRICK_ROOM          0xAB // Gym 7 TM
+#define FLAG_RECEIVED_TM_HYDRO_PUMP          0xAC // Gym 8 TM
 #define FLAG_HIDE_SECRET_BASE_TRAINER        0xAD
 #define FLAG_DECORATION_1                    0xAE
 #define FLAG_DECORATION_2                    0xAF

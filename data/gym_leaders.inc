@@ -51,10 +51,8 @@ RustboroCity_Gym_EventScript_RoxanneDefeated_1:
 # 29 "data/gym_leaders.pory"
 	giveitem ITEM_TM_SMACK_DOWN
 # 30 "data/gym_leaders.pory"
-	setflag FLAG_RECEIVED_TM_SMACK_DOWN
-# 31 "data/gym_leaders.pory"
 	msgbox RustboroCity_Gym_Text_ExplainSmackDown, MSGBOX_DEFAULT
-# 32 "data/gym_leaders.pory"
+# 31 "data/gym_leaders.pory"
 	release
 	return
 
@@ -65,43 +63,43 @@ RustboroCity_Gym_EventScript_RoxanneDefeated_2:
 
 
 RustboroCity_Gym_EventScript_RoxanneRematch::
-# 36 "data/gym_leaders.pory"
+# 35 "data/gym_leaders.pory"
 	trainerbattle_rematch_double TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxannePreRematch, RustboroCity_Gym_Text_RoxanneRematchDefeat, RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons
-# 37 "data/gym_leaders.pory"
+# 36 "data/gym_leaders.pory"
 	msgbox RustboroCity_Gym_Text_RoxannePostRematch, MSGBOX_AUTOCLOSE
 	return
 
 
 RustboroCity_Gym_EventScript_RegisterRoxanne::
-# 41 "data/gym_leaders.pory"
+# 40 "data/gym_leaders.pory"
 	lockall
-# 42 "data/gym_leaders.pory"
+# 41 "data/gym_leaders.pory"
 	pokenavcall RustboroCity_Gym_Text_RoxanneRegisterCall
-# 43 "data/gym_leaders.pory"
+# 42 "data/gym_leaders.pory"
 	waitmessage
+# 43 "data/gym_leaders.pory"
+	delay 30
 # 44 "data/gym_leaders.pory"
-	delay 30
-# 45 "data/gym_leaders.pory"
 	playfanfare MUS_REGISTER_MATCH_CALL
-# 46 "data/gym_leaders.pory"
+# 45 "data/gym_leaders.pory"
 	msgbox RustboroCity_Gym_Text_RegisteredRoxanne, MSGBOX_DEFAULT
-# 47 "data/gym_leaders.pory"
+# 46 "data/gym_leaders.pory"
 	waitfanfare
-# 48 "data/gym_leaders.pory"
+# 47 "data/gym_leaders.pory"
 	closemessage
-# 49 "data/gym_leaders.pory"
+# 48 "data/gym_leaders.pory"
 	delay 30
-# 50 "data/gym_leaders.pory"
+# 49 "data/gym_leaders.pory"
 	setflag FLAG_ENABLE_ROXANNE_MATCH_CALL
-# 51 "data/gym_leaders.pory"
+# 50 "data/gym_leaders.pory"
 	clearflag FLAG_ENABLE_ROXANNE_FIRST_CALL
-# 52 "data/gym_leaders.pory"
+# 51 "data/gym_leaders.pory"
 	releaseall
 	return
 
 
 RustboroCity_Gym_Text_RoxanneIntro::
-# 56 "data/gym_leaders.pory"
+# 55 "data/gym_leaders.pory"
 	.string "Hello, I am Roxanne, the Rustboro\n"
 	.string "Pokémon Gym Leader.\p"
 	.string "I became a Gym Leader so that I might\n"
@@ -111,7 +109,7 @@ RustboroCity_Gym_Text_RoxanneIntro::
 	.string "battle, and with which Pokémon?$"
 
 RustboroCity_Gym_Text_RoxanneDefeat::
-# 66 "data/gym_leaders.pory"
+# 65 "data/gym_leaders.pory"
 	.string "So…\n"
 	.string "I lost…\p"
 	.string "It seems that I still have much more\n"
@@ -124,38 +122,36 @@ RustboroCity_Gym_Text_RoxanneDefeat::
 	.string "League Stone Badge.$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge::
-# 79 "data/gym_leaders.pory"
+# 78 "data/gym_leaders.pory"
 	.string "{PLAYER} received the Stone Badge\n"
 	.string "from Roxanne.$"
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis::
-# 84 "data/gym_leaders.pory"
-	.string "The Stone Badge heightens the Attack\n"
-	.string "power of your Pokémon.\p"
-	.string "It also enables them to use the HM move\n"
+# 83 "data/gym_leaders.pory"
+	.string "The Stone Badge enables the use of\n"
 	.string "Cut outside of battle.\p"
 	.string "Please take this with you, too.$"
 
 RustboroCity_Gym_Text_ExplainSmackDown::
-# 92 "data/gym_leaders.pory"
+# 89 "data/gym_leaders.pory"
 	.string "That Technical Machine, TM96,\n"
 	.string "contains Smack Down.\p"
 	.string "It not only inflicts damage by throwing\n"
 	.string "rocks, it also grounds flying targets.\p"
 	.string "If you use a TM, it instantly teaches\n"
 	.string "the move to a Pokémon.\p"
-	.string "Remember, a TM can be used only once,\n"
-	.string "so think before you use it.$"
+	.string "Remember, a TM can be used multiple\n"
+	.string "times.$"
 
 RustboroCity_Gym_Text_RoxannePostBattle::
-# 103 "data/gym_leaders.pory"
+# 100 "data/gym_leaders.pory"
 	.string "Since you are so strong, you should\n"
 	.string "challenge other Gym Leaders.\p"
 	.string "By battling many Trainers, you should\n"
 	.string "learn many things.$"
 
 RustboroCity_Gym_Text_RoxanneRegisterCall::
-# 110 "data/gym_leaders.pory"
+# 107 "data/gym_leaders.pory"
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
 	.string "Roxanne: Oh, hello, {PLAYER}?\n"
@@ -173,12 +169,12 @@ RustboroCity_Gym_Text_RoxanneRegisterCall::
 	.string "… … … … … Click!$"
 
 RustboroCity_Gym_Text_RegisteredRoxanne::
-# 128 "data/gym_leaders.pory"
+# 125 "data/gym_leaders.pory"
 	.string "Registered Gym Leader Roxanne\n"
 	.string "in the Pokénav.$"
 
 RustboroCity_Gym_Text_RoxannePreRematch::
-# 133 "data/gym_leaders.pory"
+# 130 "data/gym_leaders.pory"
 	.string "Roxanne: I'm so glad to see you again.\n"
 	.string "I'm Roxanne, the Gym Leader here.\p"
 	.string "I'm sure we've both experienced many\n"
@@ -187,19 +183,19 @@ RustboroCity_Gym_Text_RoxannePreRematch::
 	.string "we've become. Let us battle!$"
 
 RustboroCity_Gym_Text_RoxanneRematchDefeat::
-# 142 "data/gym_leaders.pory"
+# 139 "data/gym_leaders.pory"
 	.string "Grr…\n"
 	.string "Again, I have lost…$"
 
 RustboroCity_Gym_Text_RoxannePostRematch::
-# 147 "data/gym_leaders.pory"
+# 144 "data/gym_leaders.pory"
 	.string "Roxanne: I still have much to learn\n"
 	.string "when it comes to battling Pokémon.\p"
 	.string "That awareness makes me love battling\n"
 	.string "all that much more!$"
 
 RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons::
-# 154 "data/gym_leaders.pory"
+# 151 "data/gym_leaders.pory"
 	.string "Roxanne: I'm so glad to see you again.\n"
 	.string "I'm Roxanne, the Gym Leader here.\p"
 	.string "I'm sure we've both experienced many\n"

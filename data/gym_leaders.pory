@@ -27,7 +27,6 @@ script RustboroCity_Gym_EventScript_RoxanneDefeated {
 		call (Common_EventScript_ReadyPetalburgGymForBattle)
 	}
 	giveitem (ITEM_TM_SMACK_DOWN)
-	setflag (FLAG_RECEIVED_TM_SMACK_DOWN) // IS THIS FLAG REQUIRED? COULD 8 FLAGS BE FREED BY REMOVING THESE?
 	msgbox (RustboroCity_Gym_Text_ExplainSmackDown, MSGBOX_DEFAULT)
 	release
 }
@@ -82,9 +81,7 @@ text RustboroCity_Gym_Text_ReceivedStoneBadge {
 }
 
 text RustboroCity_Gym_Text_StoneBadgeInfoTakeThis {
-	"The Stone Badge heightens the Attack\n"
-	"power of your Pokémon.\p"
-	"It also enables them to use the HM move\n"
+	"The Stone Badge enables the use of\n"
 	"Cut outside of battle.\p"
 	"Please take this with you, too.$"
 }
@@ -96,8 +93,8 @@ text RustboroCity_Gym_Text_ExplainSmackDown {
 	"rocks, it also grounds flying targets.\p"
 	"If you use a TM, it instantly teaches\n"
 	"the move to a Pokémon.\p"
-	"Remember, a TM can be used only once,\n"
-	"so think before you use it."
+	"Remember, a TM can be used multiple\n"
+	"times."
 }
 
 text RustboroCity_Gym_Text_RoxannePostBattle {

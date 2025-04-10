@@ -262,30 +262,6 @@ DewfordTown_Gym_EventScript_GymGuidePostVictory::
 	release
 	end
 
-DewfordTown_Gym_EventScript_GymStatue::
-	lockall
-	goto_if_set FLAG_BADGE06_GET, DewfordTown_Gym_EventScript_GymStatueCertified3
-	goto_if_ge VAR_EMERALBODY_RIVAL_STATE, 5, DewfordTown_Gym_EventScript_GymStatueCertified2
-	goto_if_set FLAG_BADGE02_GET, DewfordTown_Gym_EventScript_GymStatueCertified
-	msgbox DewfordTown_Gym_Text_GymStatue, MSGBOX_DEFAULT
-	releaseall
-	end
-
-DewfordTown_Gym_EventScript_GymStatueCertified::
-	msgbox DewfordTown_Gym_Text_GymStatueCertified, MSGBOX_DEFAULT
-	releaseall
-	end
-
-DewfordTown_Gym_EventScript_GymStatueCertified2::
-	msgbox DewfordTown_Gym_Text_GymStatueCertified2, MSGBOX_DEFAULT
-	releaseall
-	end
-
-DewfordTown_Gym_EventScript_GymStatueCertified3::
-	msgbox DewfordTown_Gym_Text_GymStatueCertified3, MSGBOX_DEFAULT
-	releaseall
-	end
-
 DewfordTown_Gym_Text_TakaoIntro:
 	.string "Might is right!\n"
 	.string "Come on!$"
@@ -406,28 +382,6 @@ DewfordTown_Gym_Text_BrawlyPostBattle:
 	.string "I can see your talent becoming a giant\n"
 	.string "wave to cause a storm of astonishment\l"
 	.string "among Trainers one day!$"
-
-DewfordTown_Gym_Text_GymStatue:
-	.string "Dewford Town Pokémon Gym\p"
-	.string "Brawly's certified Trainers:\n"
-	.string "Sakura, Jakson$"
-
-DewfordTown_Gym_Text_GymStatueCertified:
-	.string "Dewford Town Pokémon Gym\p"
-	.string "Brawly's certified Trainers:\n"
-	.string "Sakura, Jakson, {PLAYER}$"
-
-DewfordTown_Gym_Text_GymStatueCertified2:
-	.string "Dewford Town Pokémon Gym\p"
-	.string "Brawly's certified Trainers:\n"
-	.string "Sakura, Jakson, {PLAYER}, Redd,\l"
-	.string "Harper, Baron$"
-
-DewfordTown_Gym_Text_GymStatueCertified3:
-	.string "Dewford Town Pokémon Gym\p"
-	.string "Brawly's certified Trainers:\n"
-	.string "Sakura, Jakson, {PLAYER}, Redd,\l"
-	.string "Harper, Baron, Wally$"
 
 DewfordTown_Gym_Text_BrawlyPreRematch:
 	.string "Brawly: A wave may draw back, but it\n"

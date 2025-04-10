@@ -1,3 +1,4 @@
+# Rustboro - Petalburg
 text Text_GymStatue_Sakura_Jakson {
 	"{STR_VAR_1} Pokémon Gym\p"
 	"{STR_VAR_2}'s certified Trainers:\n"
@@ -24,6 +25,54 @@ text Text_GymStatue_Sakura_Jakson_Player_Redd_Harper_Baron_Wally {
 	"Harper, Baron, Wally"
 }
 
+# Fortree - Mossdeep
+text Text_GymStatue_Sakura_Jakson_Redd {
+	"{STR_VAR_1} Pokémon Gym\p"
+	"{STR_VAR_2}'s certified Trainers:\n"
+	"Sakura, Jakson, Redd"
+}
+
+text Text_GymStatue_Sakura_Jakson_Redd_Player {
+	"{STR_VAR_1} Pokémon Gym\p"
+	"{STR_VAR_2}'s certified Trainers:\n"
+	"Sakura, Jakson, Redd, {PLAYER}"
+}
+
+text Text_GymStatue_Sakura_Jakson_Redd_Player_Harper_Baron {
+	"{STR_VAR_1} Pokémon Gym\p"
+	"{STR_VAR_2}'s certified Trainers:\n"
+	"Sakura, Jakson, Redd, {PLAYER}\l"
+	"Harper, Baron"
+}
+
+text Text_GymStatue_Sakura_Jakson_Redd_Player_Harper_Baron_Wally {
+	"{STR_VAR_1} Pokémon Gym\p"
+	"{STR_VAR_2}'s certified Trainers:\n"
+	"Sakura, Jakson, Redd, {PLAYER}\l"
+	"Harper, Baron, Wally"
+}
+
+# Sootopolis
+text Text_GymStatue_Wally_Sakura_Jakson_Redd {
+	"{STR_VAR_1} Pokémon Gym\p"
+	"{STR_VAR_2}'s certified Trainers:\n"
+	"Wally, Sakura, Jakson, Redd"
+}
+
+text Text_GymStatue_Wally_Sakura_Jakson_Redd_Player {
+	"{STR_VAR_1} Pokémon Gym\p"
+	"{STR_VAR_2}'s certified Trainers:\n"
+	"Wally, Sakura, Jakson, Redd,\l"
+	"{PLAYER}"
+}
+
+text Text_GymStatue_Wally_Sakura_Jakson_Redd_Player_Harper_Baron {
+	"{STR_VAR_1} Pokémon Gym\p"
+	"{STR_VAR_2}'s certified Trainers:\n"
+	"Wally, Sakura, Jakson, Redd\l"
+	"{PLAYER}, Harper, Baron"
+}
+
 
 script RustboroCity_Gym_EventScript_GymStatue {
 	lockall
@@ -40,6 +89,136 @@ script RustboroCity_Gym_EventScript_GymStatue {
 	}
 	else {
 		msgbox (Text_GymStatue_Sakura_Jakson, MSGBOX_DEFAULT)
+	}
+	releaseall
+}
+
+script DewfordTown_Gym_EventScript_GymStatue {
+	lockall
+	bufferstring (STR_VAR_1, CommonText_DewfordTown)
+	bufferstring (STR_VAR_2, CommonText_Brawly)
+	if (flag(FLAG_BADGE06_GET)) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Player_Redd_Harper_Baron_Wally, MSGBOX_DEFAULT)
+	}
+	elif (var(VAR_EMERALBODY_RIVAL_STATE) >= 5) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Player_Redd_Harper_Baron, MSGBOX_DEFAULT)
+	}
+	elif (flag(FLAG_BADGE02_GET)) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Player, MSGBOX_DEFAULT)
+	}
+	else {
+		msgbox (Text_GymStatue_Sakura_Jakson, MSGBOX_DEFAULT)
+	}
+	releaseall
+}
+
+script MauvilleCity_Gym_EventScript_GymStatue {
+	lockall
+	bufferstring (STR_VAR_1, CommonText_MauvilleCity)
+	bufferstring (STR_VAR_2, CommonText_Wattson)
+	if (flag(FLAG_RECEIVED_RED_OR_BLUE_ORB)) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Player_Redd_Harper_Baron_Wally, MSGBOX_DEFAULT)
+	}
+	elif (var(VAR_EMERALBODY_RIVAL_STATE) >= 7) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Player_Redd_Harper_Baron, MSGBOX_DEFAULT)
+	}
+	elif (flag(FLAG_BADGE03_GET)) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Player, MSGBOX_DEFAULT)
+	}
+	else {
+		msgbox (Text_GymStatue_Sakura_Jakson, MSGBOX_DEFAULT)
+	}
+	releaseall
+}
+
+script LavaridgeTown_Gym_1F_EventScript_GymStatue {
+	lockall
+	bufferstring (STR_VAR_1, CommonText_LavaridgeTown)
+	bufferstring (STR_VAR_2, CommonText_Flannery)
+	if (flag(FLAG_RECEIVED_RED_OR_BLUE_ORB)) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Player_Redd_Harper_Baron_Wally, MSGBOX_DEFAULT)
+	}
+	elif (var(VAR_EMERALBODY_RIVAL_STATE) >= 7) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Player_Redd_Harper_Baron, MSGBOX_DEFAULT)
+	}
+	elif (flag(FLAG_BADGE04_GET)) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Player, MSGBOX_DEFAULT)
+	}
+	else {
+		msgbox (Text_GymStatue_Sakura_Jakson, MSGBOX_DEFAULT)
+	}
+	releaseall
+}
+
+script PetalburgCity_Gym_EventScript_GymStatue {
+	lockall
+	bufferstring (STR_VAR_1, CommonText_PetalburgCity)
+	bufferstring (STR_VAR_2, CommonText_Norman)
+	if (flag(FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE)) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Player_Redd_Harper_Baron_Wally, MSGBOX_DEFAULT)
+	}
+	elif (var(VAR_EMERALBODY_RIVAL_STATE) >= 7) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Player_Redd_Harper_Baron, MSGBOX_DEFAULT)
+	}
+	elif (flag(FLAG_BADGE05_GET)) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Player, MSGBOX_DEFAULT)
+	}
+	else {
+		msgbox (Text_GymStatue_Sakura_Jakson, MSGBOX_DEFAULT)
+	}
+	releaseall
+}
+
+script FortreeCity_Gym_EventScript_GymStatue {
+	lockall
+	bufferstring (STR_VAR_1, CommonText_FortreeCity)
+	bufferstring (STR_VAR_2, CommonText_Winona)
+	if (flag(FLAG_BADGE07_GET)) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Redd_Player_Harper_Baron_Wally, MSGBOX_DEFAULT)
+	}
+	elif (var(VAR_EMERALBODY_RIVAL_STATE) >= 7) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Redd_Player_Harper_Baron, MSGBOX_DEFAULT)
+	}
+	elif (flag(FLAG_BADGE06_GET)) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Redd_Player, MSGBOX_DEFAULT)
+	}
+	else {
+		msgbox (Text_GymStatue_Sakura_Jakson_Redd, MSGBOX_DEFAULT)
+	}
+	releaseall
+}
+
+script MossdeepCity_Gym_EventScript_GymStatue {
+	lockall
+	bufferstring (STR_VAR_1, CommonText_MossdeepCity)
+	bufferstring (STR_VAR_2, CommonText_LizaAndTate)
+	if (flag(FLAG_VISITED_SOOTOPOLIS_CITY)) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Redd_Player_Harper_Baron_Wally, MSGBOX_DEFAULT)
+	}
+	elif (var(VAR_EMERALBODY_RIVAL_STATE) >= 7) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Redd_Player_Harper_Baron, MSGBOX_DEFAULT)
+	}
+	elif (flag(FLAG_BADGE07_GET)) {
+		msgbox (Text_GymStatue_Sakura_Jakson_Redd_Player, MSGBOX_DEFAULT)
+	}
+	else {
+		msgbox (Text_GymStatue_Sakura_Jakson_Redd, MSGBOX_DEFAULT)
+	}
+	releaseall
+}
+
+script SootopolisCity_Gym_1F_EventScript_GymStatue {
+	lockall
+	bufferstring (STR_VAR_1, CommonText_SootopolisCity)
+	bufferstring (STR_VAR_2, CommonText_Juan)
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 7) {
+		msgbox (Text_GymStatue_Wally_Sakura_Jakson_Redd_Player_Harper_Baron, MSGBOX_DEFAULT)
+	}
+	elif (flag(FLAG_BADGE08_GET)) {
+		msgbox (Text_GymStatue_Wally_Sakura_Jakson_Redd_Player, MSGBOX_DEFAULT)
+	}
+	else {
+		msgbox (Text_GymStatue_Wally_Sakura_Jakson_Redd, MSGBOX_DEFAULT)
 	}
 	releaseall
 }

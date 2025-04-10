@@ -148,30 +148,6 @@ MossdeepCity_Gym_EventScript_GymGuidePostVictory::
 	release
 	end
 
-MossdeepCity_Gym_EventScript_GymStatue::
-	lockall
-	goto_if_set FLAG_VISITED_SOOTOPOLIS_CITY, MossdeepCity_Gym_EventScript_GymStatueCertified3
-	goto_if_ge VAR_EMERALBODY_RIVAL_STATE, 7, MossdeepCity_Gym_EventScript_GymStatueCertified2
-	goto_if_set FLAG_BADGE07_GET, MossdeepCity_Gym_EventScript_GymStatueCertified
-	msgbox MossdeepCity_Gym_Text_GymStatue, MSGBOX_DEFAULT
-	releaseall
-	end
-
-MossdeepCity_Gym_EventScript_GymStatueCertified::
-	msgbox MossdeepCity_Gym_Text_GymStatueCertified, MSGBOX_DEFAULT
-	releaseall
-	end
-
-MossdeepCity_Gym_EventScript_GymStatueCertified2::
-	msgbox MossdeepCity_Gym_Text_GymStatueCertified2, MSGBOX_DEFAULT
-	releaseall
-	end
-
-MossdeepCity_Gym_EventScript_GymStatueCertified3::
-	msgbox MossdeepCity_Gym_Text_GymStatueCertified3, MSGBOX_DEFAULT
-	releaseall
-	end
-
 MossdeepCity_Gym_EventScript_YellowFloorSwitch::
 	playse SE_SWITCH
 	waitse
@@ -454,28 +430,6 @@ MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
 	.string "Tate: We can't battle that way!\p"
 	.string "Liza: If you want to challenge us,\n"
 	.string "bring some more Pokémon.$"
-
-MossdeepCity_Gym_Text_GymStatue:
-	.string "Mossdeep City Pokémon Gym\p"
-	.string "Liza and Tate's certified Trainers:\n"
-	.string "Sakura, Jakson, Redd$"
-
-MossdeepCity_Gym_Text_GymStatueCertified:
-	.string "Mossdeep City Pokémon Gym\p"
-	.string "Liza and Tate's certified Trainers:\n"
-	.string "Sakura, Jakson, Redd, {PLAYER}$"
-
-MossdeepCity_Gym_Text_GymStatueCertified2:
-	.string "Mossdeep City Pokémon Gym\p"
-	.string "Liza and Tate's certified Trainers:\n"
-	.string "Sakura, Jakson, Redd, {PLAYER},\l"
-	.string "Harper, Baron$"
-
-MossdeepCity_Gym_Text_GymStatueCertified3:
-	.string "Mossdeep City Pokémon Gym\p"
-	.string "Liza and Tate's certified Trainers:\n"
-	.string "Sakura, Jakson, Redd, {PLAYER},\l"
-	.string "Harper, Baron, Wally$"
 
 MossdeepCity_Gym_Text_TateAndLizaPreRematch:
 	.string "Tate: Pokémon…\n"

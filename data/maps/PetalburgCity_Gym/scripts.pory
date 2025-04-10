@@ -1152,30 +1152,6 @@ PetalburgCity_Gym_EventScript_GymGuidePostVictory::
 	release
 	end
 
-PetalburgCity_Gym_EventScript_GymStatue::
-	lockall
-	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, PetalburgCity_Gym_EventScript_GymStatueCertified3
-	goto_if_ge VAR_EMERALBODY_RIVAL_STATE, 7, PetalburgCity_Gym_EventScript_GymStatueCertified2
-	goto_if_set FLAG_BADGE05_GET, PetalburgCity_Gym_EventScript_GymStatueCertified
-	msgbox PetalburgCity_Gym_Text_GymStatue, MSGBOX_DEFAULT
-	releaseall
-	end
-
-PetalburgCity_Gym_EventScript_GymStatueCertified::
-	msgbox PetalburgCity_Gym_Text_GymStatueCertified, MSGBOX_DEFAULT
-	releaseall
-	end
-
-PetalburgCity_Gym_EventScript_GymStatueCertified2::
-	msgbox PetalburgCity_Gym_Text_GymStatueCertified2, MSGBOX_DEFAULT
-	releaseall
-	end
-
-PetalburgCity_Gym_EventScript_GymStatueCertified3::
-	msgbox PetalburgCity_Gym_Text_GymStatueCertified3, MSGBOX_DEFAULT
-	releaseall
-	end
-
 PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon:
 	.string "Hm?\p"
 	.string "Well, if it isn't {PLAYER}!\n"
@@ -1579,28 +1555,6 @@ PetalburgCity_Gym_Text_EnterGymLeadersRoom:
 	.string "“See for yourself what Pokémon await\n"
 	.string "you!” the sign says.\p"
 	.string "Do you want to go through?$"
-
-PetalburgCity_Gym_Text_GymStatue:
-	.string "Petalburg City Pokémon Gym\p"
-	.string "Norman's certified Trainers:\n"
-	.string "Sakura, Jakson$"
-
-PetalburgCity_Gym_Text_GymStatueCertified:
-	.string "Petalburg City Pokémon Gym\p"
-	.string "Norman's certified Trainers:\n"
-	.string "Sakura, Jakson, {PLAYER}$"
-
-PetalburgCity_Gym_Text_GymStatueCertified2:
-	.string "Petalburg City Pokémon Gym\p"
-	.string "Norman's certified Trainers:\n"
-	.string "Sakura, Jakson, {PLAYER}, Redd,\l"
-	.string "Harper, Baron$"
-
-PetalburgCity_Gym_Text_GymStatueCertified3:
-	.string "Petalburg City Pokémon Gym\p"
-	.string "Norman's certified Trainers:\n"
-	.string "Sakura, Jakson, {PLAYER}, Redd,\l"
-	.string "Harper, Baron, Wally$"
 
 PetalburgCity_Gym_Text_NormanPreRematch:
 	.string "{PLAYER}…\n"

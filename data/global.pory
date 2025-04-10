@@ -1103,8 +1103,8 @@ text CommonText_Winona{
 	"Winona"
 }
 
-text CommonText_TateAndLiza{
-	"Tate & Liza"
+text CommonText_LizaAndTate{
+	"Liza and Tate"
 }
 
 text CommonText_Juan{

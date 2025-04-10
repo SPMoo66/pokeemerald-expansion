@@ -236,30 +236,6 @@ MauvilleCity_Gym_EventScript_GymGuidePostVictory::
 	release
 	end
 
-MauvilleCity_Gym_EventScript_GymStatue::
-	lockall
-	goto_if_set FLAG_RECEIVED_RED_OR_BLUE_ORB, MauvilleCity_Gym_EventScript_GymStatueCertified3
-	goto_if_ge VAR_EMERALBODY_RIVAL_STATE, 7, MauvilleCity_Gym_EventScript_GymStatueCertified2
-	goto_if_set FLAG_BADGE03_GET, MauvilleCity_Gym_EventScript_GymStatueCertified
-	msgbox MauvilleCity_Gym_Text_GymStatue, MSGBOX_DEFAULT
-	releaseall
-	end
-
-MauvilleCity_Gym_EventScript_GymStatueCertified::
-	msgbox MauvilleCity_Gym_Text_GymStatueCertified, MSGBOX_DEFAULT
-	releaseall
-	end
-
-MauvilleCity_Gym_EventScript_GymStatueCertified2::
-	msgbox MauvilleCity_Gym_Text_GymStatueCertified2, MSGBOX_DEFAULT
-	releaseall
-	end
-
-MauvilleCity_Gym_EventScript_GymStatueCertified3::
-	msgbox MauvilleCity_Gym_Text_GymStatueCertified3, MSGBOX_DEFAULT
-	releaseall
-	end
-
 MauvilleCity_Gym_Text_KirkIntro:
 	.string "My electric soul, it'll shatter your\n"
 	.string "dreams whole, whoa-yeahah!$"
@@ -369,28 +345,6 @@ MauvilleCity_Gym_Text_WattsonPostBattle:
 MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor:
 	.string "Wahahahah!\n"
 	.string "Go forth and endeavor, youngster!$"
-
-MauvilleCity_Gym_Text_GymStatue:
-	.string "Mauville City Pokémon Gym\p"
-	.string "Wattson's certified Trainers:\n"
-	.string "Sakura, Jakson$"
-
-MauvilleCity_Gym_Text_GymStatueCertified:
-	.string "Mauville City Pokémon Gym\p"
-	.string "Wattson's certified Trainers:\n"
-	.string "Sakura, Jakson, {PLAYER}$"
-
-MauvilleCity_Gym_Text_GymStatueCertified2:
-	.string "Mauville City Pokémon Gym\p"
-	.string "Wattson's certified Trainers:\n"
-	.string "Sakura, Jakson, {PLAYER}, Redd,\l"
-	.string "Harper, Baron$"
-
-MauvilleCity_Gym_Text_GymStatueCertified3:
-	.string "Mauville City Pokémon Gym\p"
-	.string "Wattson's certified Trainers:\n"
-	.string "Sakura, Jakson, {PLAYER}, Redd,\l"
-	.string "Harper, Baron, Wally$"
 
 MauvilleCity_Gym_Text_WattsonPreRematch:
 	.string "Wattson: Ah-ha! Here at last!\n"

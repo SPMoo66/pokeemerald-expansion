@@ -2148,9 +2148,9 @@ CommonText_Winona::
 # 1102 "data/global.pory"
 	.string "Winona$"
 
-CommonText_TateAndLiza::
+CommonText_LizaAndTate::
 # 1106 "data/global.pory"
-	.string "Tate & Liza$"
+	.string "Liza and Tate$"
 
 CommonText_Juan::
 # 1110 "data/global.pory"

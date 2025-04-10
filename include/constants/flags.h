@@ -184,8 +184,8 @@
 #define FLAG_SMART_PAINTING_MADE             0xA3
 #define FLAG_TOUGH_PAINTING_MADE             0xA4
 #define FLAG_UNUSED_0xA5                     0xA5 // Was for Gym 1 TM
-#define FLAG_RECEIVED_TM_BULK_UP             0xA6 // Gym 2 TM
-#define FLAG_RECEIVED_TM_CHARGE_BEAM         0xA7 // Gym 3 TM
+#define FLAG_UNUSED_0xA6                     0xA6 // Was for Gym 2 TM
+#define FLAG_UNUSED_0xA7                     0xA7 // Was for Gym 3 TM
 #define FLAG_RECEIVED_TM_BLAZE_KICK          0xA8 // Gym 4 TM
 #define FLAG_RECEIVED_TM_FACADE              0xA9 // Gym 5 TM
 #define FLAG_RECEIVED_TM_DUAL_WINGBEAT       0xAA // Gym 6 TM

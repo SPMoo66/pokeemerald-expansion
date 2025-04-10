@@ -8,6 +8,7 @@ script RustboroCity_Gym_EventScript_Roxanne {
 		goto (RustboroCity_Gym_EventScript_RoxanneRematch)
 	}
 	msgbox (RustboroCity_Gym_Text_RoxannePostBattle, MSGBOX_DEFAULT)
+	clearflag (FLAG_CHALLENGING_TRAINER)
 	release
 }
 
@@ -35,7 +36,6 @@ script RustboroCity_Gym_EventScript_RoxanneRematch {
 	trainerbattle_rematch_double (TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxannePreRematch, RustboroCity_Gym_Text_RoxanneRematchDefeat, RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons)
 	msgbox (RustboroCity_Gym_Text_RoxannePostRematch, MSGBOX_AUTOCLOSE)
 	clearflag (FLAG_CHALLENGING_TRAINER)
-	release
 }
 
 script RustboroCity_Gym_EventScript_RegisterRoxanne {
@@ -174,6 +174,7 @@ script DewfordTown_Gym_EventScript_Brawly {
 		goto (DewfordTown_Gym_EventScript_BrawlyRematch)
 	}
 	msgbox (DewfordTown_Gym_Text_BrawlyPostBattle, MSGBOX_DEFAULT)
+	clearflag (FLAG_CHALLENGING_TRAINER)
 	release
 }
 
@@ -210,8 +211,8 @@ script DewfordTown_Gym_EventScript_BrawlyRematch {
 	trainerbattle_rematch_double (TRAINER_BRAWLY_1, DewfordTown_Gym_Text_BrawlyPreRematch, DewfordTown_Gym_Text_BrawlyRematchDefeat, DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons)
 	msgbox (DewfordTown_Gym_Text_BrawlyPostRematch, MSGBOX_AUTOCLOSE)
 	clearflag (FLAG_CHALLENGING_TRAINER)
-	release
 }
+
 
 text DewfordTown_Gym_Text_BrawlyIntro {
 	"I'm Brawly!\n"
@@ -292,3 +293,161 @@ text DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons {
 	"I'm sorry, but I'd like you to come back\n"
 	"with at least two Pokémon."
 }
+
+
+# MAUVILLE CITY(GYM #3)
+
+script MauvilleCity_Gym_EventScript_Wattson {
+	setflag (FLAG_CHALLENGING_TRAINER)
+	trainerbattle_single (TRAINER_WATTSON_1, MauvilleCity_Gym_Text_WattsonIntro, MauvilleCity_Gym_Text_WattsonDefeat, MauvilleCity_Gym_EventScript_WattsonDefeated, NO_MUSIC)
+	specialvar (VAR_RESULT, ShouldTryRematchBattle)
+	if (var(VAR_RESULT) == TRUE ) {
+		goto (MauvilleCity_Gym_EventScript_WattsonRematch)
+	}
+	if (var(VAR_NEW_MAUVILLE_STATE) == 2) {
+		goto (MauvilleCity_Gym_EventScript_CompletedNewMauville)
+	}
+	msgbox (MauvilleCity_Gym_Text_WattsonPostBattle, MSGBOX_DEFAULT)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+	release
+}
+
+script MauvilleCity_Gym_EventScript_WattsonDefeated {
+	message (MauvilleCity_Gym_Text_ReceivedDynamoBadge)
+	waitmessage
+	call (Common_EventScript_PlayGymBadgeFanfare)
+	msgbox (MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis, MSGBOX_DEFAULT)
+	setvar (VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 3)
+	clearflag (FLAG_HIDE_VERDANTURF_TOWN_SCOTT)
+	setflag (FLAG_DEFEATED_MAUVILLE_GYM)
+	setflag (FLAG_BADGE03_GET)
+	addvar (VAR_PETALBURG_GYM_STATE, 1)
+	if (var(VAR_PETALBURG_GYM_STATE) == 6) {
+		call (Common_EventScript_ReadyPetalburgGymForBattle)
+	}
+	setvar (VAR_0x8008, 3)
+	call (Common_EventScript_SetGymTrainers)
+	special (MauvilleGymDeactivatePuzzle)
+	special (DrawWholeMapView)
+	playse (SE_UNLOCK)
+	call (MauvilleCity_Gym_EventScript_GiveChargeBeam)
+	closemessage
+	delay (30)
+	playfanfare (MUS_REGISTER_MATCH_CALL)
+	msgbox (MauvilleCity_Gym_Text_RegisteredWattson, MSGBOX_DEFAULT)
+	waitfanfare
+	closemessage
+	delay (30)
+	setflag (FLAG_ENABLE_WATTSON_MATCH_CALL)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+	release
+}
+
+script MauvilleCity_Gym_EventScript_GiveChargeBeam {
+	giveitem (ITEM_TM_CHARGE_BEAM)
+	msgbox (MauvilleCity_Gym_Text_ExplainChargeBeam, MSGBOX_DEFAULT)
+	return
+}
+
+script MauvilleCity_Gym_EventScript_CompletedNewMauville {
+	msgbox (MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor, MSGBOX_DEFAULT)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+	release
+}
+
+script MauvilleCity_Gym_EventScript_WattsonRematch {
+	trainerbattle_rematch_double (TRAINER_WATTSON_1, MauvilleCity_Gym_Text_WattsonPreRematch, MauvilleCity_Gym_Text_WattsonRematchDefeat, MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons)
+	msgbox (MauvilleCity_Gym_Text_WattsonPostRematch, MSGBOX_AUTOCLOSE)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+}
+
+
+text MauvilleCity_Gym_Text_WattsonIntro {
+	"I've given up on my plans to convert\n"
+	"the city, I have.\p"
+	"And so, I put my time into making\n"
+	"door traps in my Gym.\p"
+	"Oh? Now, what are you doing here?\p"
+	"What's that? You say you've gotten\n"
+	"past all my rigged doors?\p"
+	"Wahahahah!\n"
+	"Now, that is amusing!\p"
+	"Then, I, Wattson, the Leader of\n"
+	"Mauville Gym, shall electrify you!"
+}
+
+text MauvilleCity_Gym_Text_WattsonDefeat {
+	"Wahahahah!\n"
+	"Fine, I lost!\p"
+	"You ended up giving me a thrill!\n"
+	"Take this Badge!"
+}
+
+text MauvilleCity_Gym_Text_ReceivedDynamoBadge {
+	"{PLAYER} received the Dynamo Badge\n"
+	"from Wattson."
+}
+
+text MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis {
+	"With the Dynamo Badge, you can\n"
+	"use Rock Smash out of battle.\p"
+	"Hmm…\n"
+	"You should take this, too!"
+}
+
+text MauvilleCity_Gym_Text_ExplainChargeBeam {
+	"That TM55 there contains Charge Beam.\p"
+	"It's a trustworthy move that always\n"
+	"raises Sp. Attack! You can count on it!\p"
+	"… … … … … …"
+}
+
+text MauvilleCity_Gym_Text_RegisteredWattson {
+	"Registered Gym Leader Wattson\n"
+	"in the Pokénav."
+}
+
+text MauvilleCity_Gym_Text_WattsonPostBattle {
+	"I swell with optimism, seeing a promising\n"
+	"young Trainer like you!"
+}
+
+text MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor {
+	"Wahahahah!\n"
+	"Go forth and endeavor, youngster!"
+}
+
+text MauvilleCity_Gym_Text_WattsonPreRematch {
+	"Wattson: Ah-ha! Here at last!\n"
+	"I know what you want.\l"
+	"You want to battle my Pokémon!\p"
+	"Wahahahaha!\p"
+	"I'll make sparks fly from you!\n"
+	"Don't say I didn't warn you!"
+}
+
+text MauvilleCity_Gym_Text_WattsonRematchDefeat {
+	"Oof…\n"
+	"Our batteries ran dry…"
+}
+
+text MauvilleCity_Gym_Text_WattsonPostRematch {
+	"Wattson: We'll have to recharge our\n"
+	"batteries again.\p"
+	"When we're fully charged up, we'll\n"
+	"gladly accept your challenge.\p"
+	"So, come back again sometime,\n"
+	"won't you?"
+}
+
+text MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons {
+	"Wattson: Ah-ha! Here at last!\n"
+	"I know what you want.\l"
+	"You want to battle my Pokémon!\p"
+	"Wahahahaha!\p"
+	"Oops! Wait!\n"
+	"You've only one Pokémon with you!\p"
+	"Come see me with two or more\n"
+	"Pokémon, all right?"
+}
+

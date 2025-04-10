@@ -29,30 +29,6 @@ RustboroCity_Gym_EventScript_GymGuidePostVictory::
 	release
 	end
 
-RustboroCity_Gym_EventScript_GymStatue::
-	lockall
-	goto_if_set FLAG_BADGE06_GET, RustboroCity_Gym_EventScript_GymStatueCertified3
-	goto_if_ge VAR_EMERALBODY_RIVAL_STATE, 4, RustboroCity_Gym_EventScript_GymStatueCertified2
-	goto_if_set FLAG_BADGE01_GET, RustboroCity_Gym_EventScript_GymStatueCertified
-	msgbox RustboroCity_Gym_Text_GymStatue, MSGBOX_DEFAULT
-	releaseall
-	end
-
-RustboroCity_Gym_EventScript_GymStatueCertified::
-	msgbox RustboroCity_Gym_Text_GymStatueCertified, MSGBOX_DEFAULT
-	releaseall
-	end
-
-RustboroCity_Gym_EventScript_GymStatueCertified2::
-	msgbox RustboroCity_Gym_Text_GymStatueCertified2, MSGBOX_DEFAULT
-	releaseall
-	end
-
-RustboroCity_Gym_EventScript_GymStatueCertified3::
-	msgbox RustboroCity_Gym_Text_GymStatueCertified3, MSGBOX_DEFAULT
-	releaseall
-	end
-
 RustboroCity_Gym_Text_JoshIntro:
 	.string "Don't take us Gym Trainers lightly!\n"
 	.string "I'll show you why we're better!$"
@@ -90,25 +66,3 @@ RustboroCity_Gym_Text_MarcPostBattle:
 	.string "I have to hand it to our Leader.\p"
 	.string "It took smarts and sense for her to\n"
 	.string "pick the Rock type at her young age.$"
-
-RustboroCity_Gym_Text_GymStatue:
-	.string "Rustboro City Pokémon Gym\p"
-	.string "Roxanne's certified Trainers:\n"
-	.string "Sakura, Jakson$"
-
-RustboroCity_Gym_Text_GymStatueCertified:
-	.string "Rustboro City Pokémon Gym\p"
-	.string "Roxanne's certified Trainers:\n"
-	.string "Sakura, Jakson, {PLAYER}$"
-
-RustboroCity_Gym_Text_GymStatueCertified2:
-	.string "Rustboro City Pokémon Gym\p"
-	.string "Roxanne's certified Trainers:\n"
-	.string "Sakura, Jakson, {PLAYER}, Redd,\l"
-	.string "Harper, Baron$"
-
-RustboroCity_Gym_Text_GymStatueCertified3:
-	.string "Rustboro City Pokémon Gym\p"
-	.string "Roxanne's certified Trainers:\n"
-	.string "Sakura, Jakson, {PLAYER}, Redd,\l"
-	.string "Harper, Baron, Wally$"

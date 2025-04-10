@@ -1137,6 +1137,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/looker.inc"
 	.include "data/tera.inc"
 	.include "data/gym_leaders.inc"
+	.include "data/gym_statues.inc"
 
 	.include "data/maps/ScorchedSlabB1F/scripts.inc"
 	.include "data/maps/SeasideGrotto/scripts.inc"

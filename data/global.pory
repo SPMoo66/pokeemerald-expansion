@@ -863,10 +863,6 @@ text CommonText_Steven {
 	"Steven"
 }
 
-text CommonText_Wattson {
-	"Wattson"
-}
-
 text CommonText_Scott {
 	"Scott"
 }
@@ -1049,4 +1045,68 @@ text CommonText_FairyType {
 
 text CommonText_StellarType {
 	"Stellar Type"
+}
+
+text CommonText_RustboroCity {
+	"Rustboro City"
+}
+
+text CommonText_DewfordTown{
+	"Dewford Town"
+}
+
+text CommonText_MauvilleCity{
+	"Mauville City"
+}
+
+text CommonText_LavaridgeTown{
+	"Lavaridge Town"
+}
+
+text CommonText_PetalburgCity{
+	"Petalburg City"
+}
+
+text CommonText_FortreeCity{
+	"Fortree City"
+}
+
+text CommonText_MossdeepCity{
+	"Mossdeep City"
+}
+
+text CommonText_SootopolisCity{
+	"Sootopolis City"
+}
+
+text CommonText_Roxanne{
+	"Roxanne"
+}
+
+text CommonText_Brawly{
+	"Brawly"
+}
+
+text CommonText_Wattson{
+	"Wattson"
+}
+
+text CommonText_Flannery{
+	"Flannery"
+}
+
+text CommonText_Norman{
+	"Norman"
+}
+
+text CommonText_Winona{
+	"Winona"
+}
+
+text CommonText_TateAndLiza{
+	"Tate & Liza"
+}
+
+text CommonText_Juan{
+	"Juan"
 }

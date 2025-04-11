@@ -867,6 +867,10 @@ u8 GetTrainerBattleTransition(void)
         || trainerClass == TRAINER_CLASS_AQUA_ADMIN)
         return B_TRANSITION_AQUA;
 
+    if (trainerClass == TRAINER_CLASS_ROCKET
+        || trainerClass == TRAINER_CLASS_BOSS)
+        return B_TRANSITION_ROCKET;
+
     if (IsTrainerDoubleBattle(trainerId))
         minPartyCount = 2; // double battles always at least have 2 Pokémon.
     else

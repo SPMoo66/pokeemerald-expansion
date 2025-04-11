@@ -13,6 +13,7 @@
     [B_TRANSITION_MUGSHOT] = Task_Mugshot,
     [B_TRANSITION_AQUA] = Task_Aqua,
     [B_TRANSITION_MAGMA] = Task_Magma,
+    [B_TRANSITION_ROCKET] = Task_Rocket,
     [B_TRANSITION_REGICE] = Task_Regice,
     [B_TRANSITION_REGISTEEL] = Task_Registeel,
     [B_TRANSITION_REGIROCK] = Task_Regirock,

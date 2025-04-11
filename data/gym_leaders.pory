@@ -295,7 +295,7 @@ text DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons {
 }
 
 
-# MAUVILLE CITY(GYM #3)
+# MAUVILLE CITY (GYM #3)
 
 script MauvilleCity_Gym_EventScript_Wattson {
 	setflag (FLAG_CHALLENGING_TRAINER)
@@ -330,7 +330,8 @@ script MauvilleCity_Gym_EventScript_WattsonDefeated {
 	special (MauvilleGymDeactivatePuzzle)
 	special (DrawWholeMapView)
 	playse (SE_UNLOCK)
-	call (MauvilleCity_Gym_EventScript_GiveChargeBeam)
+	giveitem (ITEM_TM_CHARGE_BEAM)
+	msgbox (MauvilleCity_Gym_Text_ExplainChargeBeam, MSGBOX_DEFAULT)
 	closemessage
 	delay (30)
 	playfanfare (MUS_REGISTER_MATCH_CALL)
@@ -341,12 +342,6 @@ script MauvilleCity_Gym_EventScript_WattsonDefeated {
 	setflag (FLAG_ENABLE_WATTSON_MATCH_CALL)
 	clearflag (FLAG_CHALLENGING_TRAINER)
 	release
-}
-
-script MauvilleCity_Gym_EventScript_GiveChargeBeam {
-	giveitem (ITEM_TM_CHARGE_BEAM)
-	msgbox (MauvilleCity_Gym_Text_ExplainChargeBeam, MSGBOX_DEFAULT)
-	return
 }
 
 script MauvilleCity_Gym_EventScript_CompletedNewMauville {
@@ -449,5 +444,158 @@ text MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons {
 	"You've only one Pokémon with you!\p"
 	"Come see me with two or more\n"
 	"Pokémon, all right?"
+}
+
+
+# LAVARIDGE TOWN (GYM #4)
+
+script LavaridgeTown_Gym_1F_EventScript_Flannery {
+	setflag (FLAG_CHALLENGING_TRAINER)
+	trainerbattle_single (TRAINER_FLANNERY_1, LavaridgeTown_Gym_1F_Text_FlanneryIntro, LavaridgeTown_Gym_1F_Text_FlanneryDefeat, LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated, NO_MUSIC)
+	specialvar (VAR_RESULT, ShouldTryRematchBattle)
+	if (var(VAR_RESULT) == TRUE) {
+		goto (LavaridgeTown_Gym_1F_EventScript_FlanneryRematch)
+	}
+	msgbox (LavaridgeTown_Gym_1F_Text_FlanneryPostBattle, MSGBOX_DEFAULT)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+	release
+}
+
+script LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated {
+	message (LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge)
+	waitmessage
+	call (Common_EventScript_PlayGymBadgeFanfare)
+	msgbox (LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis, MSGBOX_DEFAULT)
+	setflag (FLAG_WHITEOUT_TO_LAVARIDGE)
+	setflag (FLAG_DEFEATED_LAVARIDGE_GYM)
+	setflag (FLAG_BADGE04_GET)
+	addvar (VAR_PETALBURG_GYM_STATE, 1)
+	if (var(VAR_PETALBURG_GYM_STATE) == 6) {
+		call (Common_EventScript_ReadyPetalburgGymForBattle)
+	}
+	setvar (VAR_0x8008, 4)
+	call (Common_EventScript_SetGymTrainers)
+	setflag (FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY)
+	setvar (VAR_LAVARIDGE_TOWN_STATE, 1)
+	giveitem (ITEM_TM_BLAZE_KICK)
+	msgbox (LavaridgeTown_Gym_1F_Text_ExplainBlazeKick, MSGBOX_DEFAULT)
+	closemessage
+	delay (30)
+	playfanfare (MUS_REGISTER_MATCH_CALL)
+	msgbox (LavaridgeTown_Gym_1F_Text_RegisteredFlannery, MSGBOX_DEFAULT)
+	waitfanfare
+	closemessage
+	delay (30)
+	setflag (FLAG_ENABLE_FLANNERY_MATCH_CALL)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+	release
+}
+
+script LavaridgeTown_Gym_1F_EventScript_FlanneryRematch {
+	trainerbattle_rematch_double (TRAINER_FLANNERY_1, LavaridgeTown_Gym_1F_Text_FlanneryPreRematch, LavaridgeTown_Gym_1F_Text_FlanneryRematchDefeat, LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons)
+	msgbox (LavaridgeTown_Gym_1F_Text_FlanneryPostRematch, MSGBOX_AUTOCLOSE)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+}
+
+
+text LavaridgeTown_Gym_1F_Text_FlanneryIntro {
+	"Welcome… No, wait.\p"
+	"Puny Trainer, how good to see you've\n"
+	"made it here!\p"
+	"I have been entrusted with the…\n"
+	"No, wait.\p"
+	"I am Flannery, and I'm the Gym\n"
+	"Leader here!\p"
+	"Uh…\n"
+	"Dare not underestimate me, though\l"
+	"I have been Leader only a short time!\p"
+	"With skills inherited from my grand-\n"
+	"father, I shall, uh…demonstrate the\l"
+	"hot moves we have honed on this land!$"
+}
+
+text LavaridgeTown_Gym_1F_Text_FlanneryDefeat {
+	"Oh…\n"
+	"I guess I was trying too hard…\p"
+	"I… I've only recently become\n"
+	"a Gym Leader.\p"
+	"I tried too hard to be someone\n"
+	"I'm not.\p"
+	"I have to do things my natural way. If\n"
+	"I don't, my Pokémon will be confused.\p"
+	"Thanks for teaching me that.\n"
+	"For that, you deserve this.$"
+}
+
+text LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge {
+	"{PLAYER} received the Heat Badge\n"
+	"from Flannery.$"
+}
+
+text LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis {
+	"If you have a Heat Badge, all Pokémon\n"
+	"up to Level 50, even those you get in\l"
+	"trades from other people, will obey\l"
+	"you completely.\p"
+	"And, it lets you use the HM move\n"
+	"Strength outside of battle.\p"
+	"This is a token of my appreciation.\n"
+	"Don't be shy about taking it!$"
+}
+
+text LavaridgeTown_Gym_1F_Text_ExplainBlazeKick {
+	"That TM40 contains Blaze Kick.\p"
+	"That move inflicts serious damage on\n"
+	"the opponent and has a high chance\l"
+	"to deal a critical hit.$"
+}
+
+text LavaridgeTown_Gym_1F_Text_RegisteredFlannery {
+	"Registered Gym Leader Flannery\n"
+	"in the Pokénav.$"
+}
+
+text LavaridgeTown_Gym_1F_Text_FlanneryPostBattle {
+	"Your power reminds me of someone…\p"
+	"Oh! I know! You battle like Norman,\n"
+	"the Gym Leader of Petalburg.$"
+}
+
+text LavaridgeTown_Gym_1F_Text_FlanneryPreRematch {
+	"Flannery: Losing a battle isn't going\n"
+	"to deflate me.\p"
+	"I love Pokémon.\n"
+	"I love to battle.\l"
+	"And… I love this Gym!\p"
+	"Let's exchange superhot moves\n"
+	"in another battle!$"
+}
+
+text LavaridgeTown_Gym_1F_Text_FlanneryRematchDefeat {
+	"Whew!\n"
+	"On the verge of eruption!$"
+}
+
+text LavaridgeTown_Gym_1F_Text_FlanneryPostRematch {
+	"Flannery: I lost the match,\n"
+	"but I'm completely satisfied.\p"
+	"It's not often I get to enjoy a battle\n"
+	"this heated.\p"
+	"Let's have another one like this\n"
+	"again sometime!$"
+}
+
+text LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons {
+	"Flannery: Losing a battle isn't going\n"
+	"to deflate me.\p"
+	"I love Pokémon.\n"
+	"I love to battle.\l"
+	"And… I love this Gym!\p"
+	"Let's exchange superhot moves\n"
+	"in another battle!\p"
+	"Oh, wait. Do you only have one Pokémon\n"
+	"that can battle?\p"
+	"I hate to say this, but when you come\n"
+	"see me, bring at least two Pokémon.$"
 }
 

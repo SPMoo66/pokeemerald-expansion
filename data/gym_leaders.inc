@@ -259,26 +259,28 @@ MauvilleCity_Gym_EventScript_WattsonDefeated_1:
 # 332 "data/gym_leaders.pory"
 	playse SE_UNLOCK
 # 333 "data/gym_leaders.pory"
-	call MauvilleCity_Gym_EventScript_GiveChargeBeam
+	giveitem ITEM_TM_CHARGE_BEAM
 # 334 "data/gym_leaders.pory"
-	closemessage
+	msgbox MauvilleCity_Gym_Text_ExplainChargeBeam, MSGBOX_DEFAULT
 # 335 "data/gym_leaders.pory"
-	delay 30
-# 336 "data/gym_leaders.pory"
-	playfanfare MUS_REGISTER_MATCH_CALL
-# 337 "data/gym_leaders.pory"
-	msgbox MauvilleCity_Gym_Text_RegisteredWattson, MSGBOX_DEFAULT
-# 338 "data/gym_leaders.pory"
-	waitfanfare
-# 339 "data/gym_leaders.pory"
 	closemessage
-# 340 "data/gym_leaders.pory"
+# 336 "data/gym_leaders.pory"
 	delay 30
+# 337 "data/gym_leaders.pory"
+	playfanfare MUS_REGISTER_MATCH_CALL
+# 338 "data/gym_leaders.pory"
+	msgbox MauvilleCity_Gym_Text_RegisteredWattson, MSGBOX_DEFAULT
+# 339 "data/gym_leaders.pory"
+	waitfanfare
+# 340 "data/gym_leaders.pory"
+	closemessage
 # 341 "data/gym_leaders.pory"
-	setflag FLAG_ENABLE_WATTSON_MATCH_CALL
+	delay 30
 # 342 "data/gym_leaders.pory"
-	clearflag FLAG_CHALLENGING_TRAINER
+	setflag FLAG_ENABLE_WATTSON_MATCH_CALL
 # 343 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 344 "data/gym_leaders.pory"
 	release
 	return
 
@@ -288,30 +290,118 @@ MauvilleCity_Gym_EventScript_WattsonDefeated_2:
 	goto MauvilleCity_Gym_EventScript_WattsonDefeated_1
 
 
-MauvilleCity_Gym_EventScript_GiveChargeBeam::
-# 347 "data/gym_leaders.pory"
-	giveitem ITEM_TM_CHARGE_BEAM
-# 348 "data/gym_leaders.pory"
-	msgbox MauvilleCity_Gym_Text_ExplainChargeBeam, MSGBOX_DEFAULT
-	return
-
-
 MauvilleCity_Gym_EventScript_CompletedNewMauville::
-# 353 "data/gym_leaders.pory"
+# 348 "data/gym_leaders.pory"
 	msgbox MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor, MSGBOX_DEFAULT
-# 354 "data/gym_leaders.pory"
+# 349 "data/gym_leaders.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
-# 355 "data/gym_leaders.pory"
+# 350 "data/gym_leaders.pory"
 	release
 	return
 
 
 MauvilleCity_Gym_EventScript_WattsonRematch::
-# 359 "data/gym_leaders.pory"
+# 354 "data/gym_leaders.pory"
 	trainerbattle_rematch_double TRAINER_WATTSON_1, MauvilleCity_Gym_Text_WattsonPreRematch, MauvilleCity_Gym_Text_WattsonRematchDefeat, MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons
-# 360 "data/gym_leaders.pory"
+# 355 "data/gym_leaders.pory"
 	msgbox MauvilleCity_Gym_Text_WattsonPostRematch, MSGBOX_AUTOCLOSE
-# 361 "data/gym_leaders.pory"
+# 356 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+	return
+
+
+LavaridgeTown_Gym_1F_EventScript_Flannery::
+# 453 "data/gym_leaders.pory"
+	setflag FLAG_CHALLENGING_TRAINER
+# 454 "data/gym_leaders.pory"
+	trainerbattle_single TRAINER_FLANNERY_1, LavaridgeTown_Gym_1F_Text_FlanneryIntro, LavaridgeTown_Gym_1F_Text_FlanneryDefeat, LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated, NO_MUSIC
+# 455 "data/gym_leaders.pory"
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+# 456 "data/gym_leaders.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq LavaridgeTown_Gym_1F_EventScript_Flannery_2
+LavaridgeTown_Gym_1F_EventScript_Flannery_1:
+# 459 "data/gym_leaders.pory"
+	msgbox LavaridgeTown_Gym_1F_Text_FlanneryPostBattle, MSGBOX_DEFAULT
+# 460 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 461 "data/gym_leaders.pory"
+	release
+	return
+
+LavaridgeTown_Gym_1F_EventScript_Flannery_2:
+# 457 "data/gym_leaders.pory"
+	goto LavaridgeTown_Gym_1F_EventScript_FlanneryRematch
+	goto LavaridgeTown_Gym_1F_EventScript_Flannery_1
+
+
+LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated::
+# 465 "data/gym_leaders.pory"
+	message LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge
+# 466 "data/gym_leaders.pory"
+	waitmessage
+# 467 "data/gym_leaders.pory"
+	call Common_EventScript_PlayGymBadgeFanfare
+# 468 "data/gym_leaders.pory"
+	msgbox LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis, MSGBOX_DEFAULT
+# 469 "data/gym_leaders.pory"
+	setflag FLAG_WHITEOUT_TO_LAVARIDGE
+# 470 "data/gym_leaders.pory"
+	setflag FLAG_DEFEATED_LAVARIDGE_GYM
+# 471 "data/gym_leaders.pory"
+	setflag FLAG_BADGE04_GET
+# 472 "data/gym_leaders.pory"
+	addvar VAR_PETALBURG_GYM_STATE, 1
+# 473 "data/gym_leaders.pory"
+	compare VAR_PETALBURG_GYM_STATE, 6
+	goto_if_eq LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated_2
+LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated_1:
+# 476 "data/gym_leaders.pory"
+	setvar VAR_0x8008, 4
+# 477 "data/gym_leaders.pory"
+	call Common_EventScript_SetGymTrainers
+# 478 "data/gym_leaders.pory"
+	setflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY
+# 479 "data/gym_leaders.pory"
+	setvar VAR_LAVARIDGE_TOWN_STATE, 1
+# 480 "data/gym_leaders.pory"
+	giveitem ITEM_TM_BLAZE_KICK
+# 481 "data/gym_leaders.pory"
+	msgbox LavaridgeTown_Gym_1F_Text_ExplainBlazeKick, MSGBOX_DEFAULT
+# 482 "data/gym_leaders.pory"
+	closemessage
+# 483 "data/gym_leaders.pory"
+	delay 30
+# 484 "data/gym_leaders.pory"
+	playfanfare MUS_REGISTER_MATCH_CALL
+# 485 "data/gym_leaders.pory"
+	msgbox LavaridgeTown_Gym_1F_Text_RegisteredFlannery, MSGBOX_DEFAULT
+# 486 "data/gym_leaders.pory"
+	waitfanfare
+# 487 "data/gym_leaders.pory"
+	closemessage
+# 488 "data/gym_leaders.pory"
+	delay 30
+# 489 "data/gym_leaders.pory"
+	setflag FLAG_ENABLE_FLANNERY_MATCH_CALL
+# 490 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 491 "data/gym_leaders.pory"
+	release
+	return
+
+LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated_2:
+# 474 "data/gym_leaders.pory"
+	call Common_EventScript_ReadyPetalburgGymForBattle
+	goto LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated_1
+
+
+LavaridgeTown_Gym_1F_EventScript_FlanneryRematch::
+# 495 "data/gym_leaders.pory"
+	trainerbattle_rematch_double TRAINER_FLANNERY_1, LavaridgeTown_Gym_1F_Text_FlanneryPreRematch, LavaridgeTown_Gym_1F_Text_FlanneryRematchDefeat, LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons
+# 496 "data/gym_leaders.pory"
+	msgbox LavaridgeTown_Gym_1F_Text_FlanneryPostRematch, MSGBOX_AUTOCLOSE
+# 497 "data/gym_leaders.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
 	return
 
@@ -506,7 +596,7 @@ DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons::
 	.string "with at least two Pokémon.$"
 
 MauvilleCity_Gym_Text_WattsonIntro::
-# 365 "data/gym_leaders.pory"
+# 360 "data/gym_leaders.pory"
 	.string "I've given up on my plans to convert\n"
 	.string "the city, I have.\p"
 	.string "And so, I put my time into making\n"
@@ -520,48 +610,48 @@ MauvilleCity_Gym_Text_WattsonIntro::
 	.string "Mauville Gym, shall electrify you!$"
 
 MauvilleCity_Gym_Text_WattsonDefeat::
-# 379 "data/gym_leaders.pory"
+# 374 "data/gym_leaders.pory"
 	.string "Wahahahah!\n"
 	.string "Fine, I lost!\p"
 	.string "You ended up giving me a thrill!\n"
 	.string "Take this Badge!$"
 
 MauvilleCity_Gym_Text_ReceivedDynamoBadge::
-# 386 "data/gym_leaders.pory"
+# 381 "data/gym_leaders.pory"
 	.string "{PLAYER} received the Dynamo Badge\n"
 	.string "from Wattson.$"
 
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis::
-# 391 "data/gym_leaders.pory"
+# 386 "data/gym_leaders.pory"
 	.string "With the Dynamo Badge, you can\n"
 	.string "use Rock Smash out of battle.\p"
 	.string "Hmm…\n"
 	.string "You should take this, too!$"
 
 MauvilleCity_Gym_Text_ExplainChargeBeam::
-# 398 "data/gym_leaders.pory"
+# 393 "data/gym_leaders.pory"
 	.string "That TM55 there contains Charge Beam.\p"
 	.string "It's a trustworthy move that always\n"
 	.string "raises Sp. Attack! You can count on it!\p"
 	.string "… … … … … …$"
 
 MauvilleCity_Gym_Text_RegisteredWattson::
-# 405 "data/gym_leaders.pory"
+# 400 "data/gym_leaders.pory"
 	.string "Registered Gym Leader Wattson\n"
 	.string "in the Pokénav.$"
 
 MauvilleCity_Gym_Text_WattsonPostBattle::
-# 410 "data/gym_leaders.pory"
+# 405 "data/gym_leaders.pory"
 	.string "I swell with optimism, seeing a promising\n"
 	.string "young Trainer like you!$"
 
 MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor::
-# 415 "data/gym_leaders.pory"
+# 410 "data/gym_leaders.pory"
 	.string "Wahahahah!\n"
 	.string "Go forth and endeavor, youngster!$"
 
 MauvilleCity_Gym_Text_WattsonPreRematch::
-# 420 "data/gym_leaders.pory"
+# 415 "data/gym_leaders.pory"
 	.string "Wattson: Ah-ha! Here at last!\n"
 	.string "I know what you want.\l"
 	.string "You want to battle my Pokémon!\p"
@@ -570,12 +660,12 @@ MauvilleCity_Gym_Text_WattsonPreRematch::
 	.string "Don't say I didn't warn you!$"
 
 MauvilleCity_Gym_Text_WattsonRematchDefeat::
-# 429 "data/gym_leaders.pory"
+# 424 "data/gym_leaders.pory"
 	.string "Oof…\n"
 	.string "Our batteries ran dry…$"
 
 MauvilleCity_Gym_Text_WattsonPostRematch::
-# 434 "data/gym_leaders.pory"
+# 429 "data/gym_leaders.pory"
 	.string "Wattson: We'll have to recharge our\n"
 	.string "batteries again.\p"
 	.string "When we're fully charged up, we'll\n"
@@ -584,7 +674,7 @@ MauvilleCity_Gym_Text_WattsonPostRematch::
 	.string "won't you?$"
 
 MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons::
-# 443 "data/gym_leaders.pory"
+# 438 "data/gym_leaders.pory"
 	.string "Wattson: Ah-ha! Here at last!\n"
 	.string "I know what you want.\l"
 	.string "You want to battle my Pokémon!\p"
@@ -593,3 +683,104 @@ MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons::
 	.string "You've only one Pokémon with you!\p"
 	.string "Come see me with two or more\n"
 	.string "Pokémon, all right?$"
+
+LavaridgeTown_Gym_1F_Text_FlanneryIntro::
+# 501 "data/gym_leaders.pory"
+	.string "Welcome… No, wait.\p"
+	.string "Puny Trainer, how good to see you've\n"
+	.string "made it here!\p"
+	.string "I have been entrusted with the…\n"
+	.string "No, wait.\p"
+	.string "I am Flannery, and I'm the Gym\n"
+	.string "Leader here!\p"
+	.string "Uh…\n"
+	.string "Dare not underestimate me, though\l"
+	.string "I have been Leader only a short time!\p"
+	.string "With skills inherited from my grand-\n"
+	.string "father, I shall, uh…demonstrate the\l"
+	.string "hot moves we have honed on this land!$"
+
+LavaridgeTown_Gym_1F_Text_FlanneryDefeat::
+# 517 "data/gym_leaders.pory"
+	.string "Oh…\n"
+	.string "I guess I was trying too hard…\p"
+	.string "I… I've only recently become\n"
+	.string "a Gym Leader.\p"
+	.string "I tried too hard to be someone\n"
+	.string "I'm not.\p"
+	.string "I have to do things my natural way. If\n"
+	.string "I don't, my Pokémon will be confused.\p"
+	.string "Thanks for teaching me that.\n"
+	.string "For that, you deserve this.$"
+
+LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge::
+# 530 "data/gym_leaders.pory"
+	.string "{PLAYER} received the Heat Badge\n"
+	.string "from Flannery.$"
+
+LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis::
+# 535 "data/gym_leaders.pory"
+	.string "If you have a Heat Badge, all Pokémon\n"
+	.string "up to Level 50, even those you get in\l"
+	.string "trades from other people, will obey\l"
+	.string "you completely.\p"
+	.string "And, it lets you use the HM move\n"
+	.string "Strength outside of battle.\p"
+	.string "This is a token of my appreciation.\n"
+	.string "Don't be shy about taking it!$"
+
+LavaridgeTown_Gym_1F_Text_ExplainBlazeKick::
+# 546 "data/gym_leaders.pory"
+	.string "That TM40 contains Blaze Kick.\p"
+	.string "That move inflicts serious damage on\n"
+	.string "the opponent and has a high chance\l"
+	.string "to deal a critical hit.$"
+
+LavaridgeTown_Gym_1F_Text_RegisteredFlannery::
+# 553 "data/gym_leaders.pory"
+	.string "Registered Gym Leader Flannery\n"
+	.string "in the Pokénav.$"
+
+LavaridgeTown_Gym_1F_Text_FlanneryPostBattle::
+# 558 "data/gym_leaders.pory"
+	.string "Your power reminds me of someone…\p"
+	.string "Oh! I know! You battle like Norman,\n"
+	.string "the Gym Leader of Petalburg.$"
+
+LavaridgeTown_Gym_1F_Text_FlanneryPreRematch::
+# 564 "data/gym_leaders.pory"
+	.string "Flannery: Losing a battle isn't going\n"
+	.string "to deflate me.\p"
+	.string "I love Pokémon.\n"
+	.string "I love to battle.\l"
+	.string "And… I love this Gym!\p"
+	.string "Let's exchange superhot moves\n"
+	.string "in another battle!$"
+
+LavaridgeTown_Gym_1F_Text_FlanneryRematchDefeat::
+# 574 "data/gym_leaders.pory"
+	.string "Whew!\n"
+	.string "On the verge of eruption!$"
+
+LavaridgeTown_Gym_1F_Text_FlanneryPostRematch::
+# 579 "data/gym_leaders.pory"
+	.string "Flannery: I lost the match,\n"
+	.string "but I'm completely satisfied.\p"
+	.string "It's not often I get to enjoy a battle\n"
+	.string "this heated.\p"
+	.string "Let's have another one like this\n"
+	.string "again sometime!$"
+
+LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons::
+# 588 "data/gym_leaders.pory"
+	.string "Flannery: Losing a battle isn't going\n"
+	.string "to deflate me.\p"
+	.string "I love Pokémon.\n"
+	.string "I love to battle.\l"
+	.string "And… I love this Gym!\p"
+	.string "Let's exchange superhot moves\n"
+	.string "in another battle!\p"
+	.string "Oh, wait. Do you only have one Pokémon\n"
+	.string "that can battle?\p"
+	.string "I hate to say this, but when you come\n"
+	.string "see me, bring at least two Pokémon.$"

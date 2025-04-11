@@ -27,13 +27,6 @@ Route110_TrickHousePuzzle8_EventScript_Leroy::
 	msgbox Route110_TrickHousePuzzle8_Text_LeroyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened::
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
-	.string "“Trick Master I love.”\n"
-	.string "… … … … … … … …\p"
-	.string "The lock clicked open!$"
-
 Route110_TrickHousePuzzle8_Text_VincentIntro:
 	.string "Not many Trainers have made it\n"
 	.string "this far.$"

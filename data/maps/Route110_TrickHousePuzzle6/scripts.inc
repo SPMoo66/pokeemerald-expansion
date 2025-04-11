@@ -42,13 +42,6 @@ Route110_TrickHousePuzzle6_EventScript_Sebastian::
 	msgbox Route110_TrickHousePuzzle6_Text_SebastianPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened:
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
-	.string "“Trick Master is my life.”\n"
-	.string "… … … … … … … …\p"
-	.string "The lock clicked open!$"
-
 Route110_TrickHousePuzzle6_Text_SophiaIntro:
 	.string "When I heard there was a strange\n"
 	.string "house, I had to check it out.$"

@@ -557,7 +557,8 @@ Route110_TrickHousePuzzle_EventScript_Door::
 
 Route110_TrickHousePuzzle1_EventScript_Door::
 	goto_if_eq VAR_TRICK_HOUSE_PUZZLE_1_STATE, 0, Route110_TrickHousePuzzle_EventScript_DoorLocked
-	msgbox Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, Text_TrickMasterIs_Puzzle1
+	msgbox Text_TrickMasterIsBlank, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_1_STATE, 2
 	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, FALSE
@@ -567,7 +568,8 @@ Route110_TrickHousePuzzle1_EventScript_Door::
 
 Route110_TrickHousePuzzle2_EventScript_Door::
 	goto_if_eq VAR_TRICK_HOUSE_PUZZLE_2_STATE, 0, Route110_TrickHousePuzzle_EventScript_DoorLocked
-	msgbox Route110_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, Text_TrickMasterIs_Puzzle2
+	msgbox Text_TrickMasterIsBlank, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_2_STATE, 2
 	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, FALSE
@@ -577,7 +579,8 @@ Route110_TrickHousePuzzle2_EventScript_Door::
 
 Route110_TrickHousePuzzle3_EventScript_Door::
 	goto_if_eq VAR_TRICK_HOUSE_PUZZLE_3_STATE, 0, Route110_TrickHousePuzzle_EventScript_DoorLocked
-	msgbox Route110_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, Text_TrickMasterIs_Puzzle3
+	msgbox Text_TrickMasterIsBlank, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_3_STATE, 2
 	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, FALSE
@@ -587,7 +590,8 @@ Route110_TrickHousePuzzle3_EventScript_Door::
 
 Route110_TrickHousePuzzle4_EventScript_Door::
 	goto_if_eq VAR_TRICK_HOUSE_PUZZLE_4_STATE, 0, Route110_TrickHousePuzzle_EventScript_DoorLocked
-	msgbox Route110_TrickHousePuzzle4_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, Text_TrickMasterIs_Puzzle4
+	msgbox Text_TrickMasterIsBlank, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_4_STATE, 2
 	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, FALSE
@@ -597,7 +601,8 @@ Route110_TrickHousePuzzle4_EventScript_Door::
 
 Route110_TrickHousePuzzle5_EventScript_Door::
 	goto_if_eq VAR_TRICK_HOUSE_PUZZLE_5_STATE, 0, Route110_TrickHousePuzzle_EventScript_DoorLocked
-	msgbox Route110_TrickHousePuzzle5_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, Text_TrickMasterIs_Puzzle5
+	msgbox Text_TrickMasterIsBlank, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_5_STATE, 2
 	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, FALSE
@@ -607,7 +612,8 @@ Route110_TrickHousePuzzle5_EventScript_Door::
 
 Route110_TrickHousePuzzle6_EventScript_Door::
 	goto_if_eq VAR_TRICK_HOUSE_PUZZLE_6_STATE, 0, Route110_TrickHousePuzzle_EventScript_DoorLocked
-	msgbox Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, Text_TrickMasterIs_Puzzle6
+	msgbox Text_TrickMasterIsBlank, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_6_STATE, 2
 	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, FALSE
@@ -617,7 +623,8 @@ Route110_TrickHousePuzzle6_EventScript_Door::
 
 Route110_TrickHousePuzzle7_EventScript_Door::
 	goto_if_eq VAR_TRICK_HOUSE_PUZZLE_7_STATE, 0, Route110_TrickHousePuzzle_EventScript_DoorLocked
-	msgbox Route110_TrickHousePuzzle7_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, Text_TrickMasterIs_Puzzle7
+	msgbox Text_TrickMasterIsBlank, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_7_STATE, 2
 	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, FALSE
@@ -627,7 +634,8 @@ Route110_TrickHousePuzzle7_EventScript_Door::
 
 Route110_TrickHousePuzzle8_EventScript_Door::
 	goto_if_eq VAR_TRICK_HOUSE_PUZZLE_8_STATE, 0, Route110_TrickHousePuzzle_EventScript_DoorLocked
-	msgbox Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, Text_TrickMasterIs_Puzzle8
+	msgbox Text_TrickMasterIsBlank, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_8_STATE, 2
 	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, FALSE

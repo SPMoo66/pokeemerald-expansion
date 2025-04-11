@@ -633,13 +633,6 @@ Route110_TrickHousePuzzle5_Movement_MechadollShake:
 	face_down
 	step_end
 
-Route110_TrickHousePuzzle5_Text_WroteSecretCodeLockOpened:
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
-	.string "“Trick Master is a genius.”\n"
-	.string "… … … … … … … …\p"
-	.string "The lock clicked open!$"
-
 Route110_TrickHousePuzzle5_Text_Mechadoll1Intro:
 	.string "Clickety-clack…\n"
 	.string "Mechadoll 1 am I!\p"

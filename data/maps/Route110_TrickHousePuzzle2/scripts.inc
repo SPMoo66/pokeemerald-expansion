@@ -99,13 +99,6 @@ Route110_TrickHousePuzzle2_EventScript_Georgia::
 	msgbox Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route110_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened:
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
-	.string "“Trick Master is based.”\n"
-	.string "… … … … … … … …\p"
-	.string "The lock clicked open!$"
-
 Route110_TrickHousePuzzle2_Text_TedIntro:
 	.string "Which switch closes which hole?$"
 

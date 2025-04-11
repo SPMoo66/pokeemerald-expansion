@@ -2155,3 +2155,43 @@ CommonText_LizaAndTate::
 CommonText_Juan::
 # 1110 "data/global.pory"
 	.string "Juan$"
+
+Text_TrickMasterIs_Puzzle1::
+# 1114 "data/global.pory"
+	.string "fabulous$"
+
+Text_TrickMasterIs_Puzzle2::
+# 1118 "data/global.pory"
+	.string "based$"
+
+Text_TrickMasterIs_Puzzle3::
+# 1122 "data/global.pory"
+	.string "coveted$"
+
+Text_TrickMasterIs_Puzzle4::
+# 1126 "data/global.pory"
+	.string "cool$"
+
+Text_TrickMasterIs_Puzzle5::
+# 1130 "data/global.pory"
+	.string "a genius$"
+
+Text_TrickMasterIs_Puzzle6::
+# 1134 "data/global.pory"
+	.string "my life$"
+
+Text_TrickMasterIs_Puzzle7::
+# 1138 "data/global.pory"
+	.string "huggable$"
+
+Text_TrickMasterIs_Puzzle8::
+# 1142 "data/global.pory"
+	.string "my love$"
+
+Text_TrickMasterIsBlank::
+# 1146 "data/global.pory"
+	.string "{PLAYER} wrote down the secret code\n"
+	.string "on the door.\p"
+	.string "“Trick Master is {STR_VAR_1}.”\n"
+	.string "… … … … … … … …\p"
+	.string "The lock clicked open!$"

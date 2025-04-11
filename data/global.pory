@@ -1051,62 +1051,102 @@ text CommonText_RustboroCity {
 	"Rustboro City"
 }
 
-text CommonText_DewfordTown{
+text CommonText_DewfordTown {
 	"Dewford Town"
 }
 
-text CommonText_MauvilleCity{
+text CommonText_MauvilleCity {
 	"Mauville City"
 }
 
-text CommonText_LavaridgeTown{
+text CommonText_LavaridgeTown {
 	"Lavaridge Town"
 }
 
-text CommonText_PetalburgCity{
+text CommonText_PetalburgCity {
 	"Petalburg City"
 }
 
-text CommonText_FortreeCity{
+text CommonText_FortreeCity {
 	"Fortree City"
 }
 
-text CommonText_MossdeepCity{
+text CommonText_MossdeepCity {
 	"Mossdeep City"
 }
 
-text CommonText_SootopolisCity{
+text CommonText_SootopolisCity {
 	"Sootopolis City"
 }
 
-text CommonText_Roxanne{
+text CommonText_Roxanne {
 	"Roxanne"
 }
 
-text CommonText_Brawly{
+text CommonText_Brawly {
 	"Brawly"
 }
 
-text CommonText_Wattson{
+text CommonText_Wattson {
 	"Wattson"
 }
 
-text CommonText_Flannery{
+text CommonText_Flannery {
 	"Flannery"
 }
 
-text CommonText_Norman{
+text CommonText_Norman {
 	"Norman"
 }
 
-text CommonText_Winona{
+text CommonText_Winona {
 	"Winona"
 }
 
-text CommonText_LizaAndTate{
+text CommonText_LizaAndTate {
 	"Liza and Tate"
 }
 
-text CommonText_Juan{
+text CommonText_Juan {
 	"Juan"
+}
+
+text Text_TrickMasterIs_Puzzle1 {
+	"fabulous"
+}
+
+text Text_TrickMasterIs_Puzzle2 {
+	"based"
+}
+
+text Text_TrickMasterIs_Puzzle3 {
+	"coveted"
+}
+
+text Text_TrickMasterIs_Puzzle4 {
+	"cool"
+}
+
+text Text_TrickMasterIs_Puzzle5 {
+	"a genius"
+}
+
+text Text_TrickMasterIs_Puzzle6 {
+	"my life"
+}
+
+text Text_TrickMasterIs_Puzzle7 {
+	"huggable"
+}
+
+text Text_TrickMasterIs_Puzzle8 {
+	"my love"
+}
+
+text Text_TrickMasterIsBlank {
+	"{PLAYER} wrote down the secret code\n"
+	"on the door.\p"
+	"“Trick Master is {STR_VAR_1}.”\n"
+	"… … … … … … … …\p"
+	"The lock clicked open!"
 }

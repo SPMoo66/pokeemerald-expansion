@@ -27,13 +27,6 @@ Route110_TrickHousePuzzle4_EventScript_Paula::
 	msgbox Route110_TrickHousePuzzle4_Text_PaulaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route110_TrickHousePuzzle4_Text_WroteSecretCodeLockOpened:
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
-	.string "“Trick Master is cool.”\n"
-	.string "… … … … … … … …\p"
-	.string "The lock clicked open!$"
-
 Route110_TrickHousePuzzle4_Text_CoraIntro:
 	.string "It's too much bother to think this out.\n"
 	.string "I only wanted to battle!$"

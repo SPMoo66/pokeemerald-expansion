@@ -10458,7 +10458,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_Jakson1),
+        .party = TRAINER_PARTY(sParty_Jakson2),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAKSON_3] =
@@ -10470,7 +10470,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
-        .party = TRAINER_PARTY(sParty_Jakson1),
+        .party = TRAINER_PARTY(sParty_Jakson3),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAKSON_4] =
@@ -10482,7 +10482,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
-        .party = TRAINER_PARTY(sParty_Jakson1),
+        .party = TRAINER_PARTY(sParty_Jakson4),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAKSON_5] =
@@ -10494,7 +10494,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_ACE_POKEMON,
-        .party = TRAINER_PARTY(sParty_Jakson1),
+        .party = TRAINER_PARTY(sParty_Jakson5),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HARPER_1] =
@@ -10518,7 +10518,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_Harper1),
+        .party = TRAINER_PARTY(sParty_Harper2),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HARPER_3] =
@@ -10530,7 +10530,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
-        .party = TRAINER_PARTY(sParty_Harper1),
+        .party = TRAINER_PARTY(sParty_Harper3),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HARPER_4] =
@@ -10542,7 +10542,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
-        .party = TRAINER_PARTY(sParty_Harper1),
+        .party = TRAINER_PARTY(sParty_Harper4),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HARPER_5] =
@@ -10554,7 +10554,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_ACE_POKEMON,
-        .party = TRAINER_PARTY(sParty_Harper1),
+        .party = TRAINER_PARTY(sParty_Harper5),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_REDD_1] =
@@ -10578,7 +10578,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_Redd1),
+        .party = TRAINER_PARTY(sParty_Redd2),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_REDD_3] =
@@ -10590,7 +10590,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
-        .party = TRAINER_PARTY(sParty_Redd1),
+        .party = TRAINER_PARTY(sParty_Redd3),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_REDD_4] =
@@ -10602,7 +10602,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
-        .party = TRAINER_PARTY(sParty_Redd1),
+        .party = TRAINER_PARTY(sParty_Redd4),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_REDD_5] =
@@ -10614,7 +10614,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_ACE_POKEMON,
-        .party = TRAINER_PARTY(sParty_Redd1),
+        .party = TRAINER_PARTY(sParty_Redd5),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SAKURA_1] =
@@ -10638,7 +10638,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_Sakura1),
+        .party = TRAINER_PARTY(sParty_Sakura2),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SAKURA_3] =
@@ -10650,7 +10650,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
-        .party = TRAINER_PARTY(sParty_Sakura1),
+        .party = TRAINER_PARTY(sParty_Sakura3),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SAKURA_4] =
@@ -10662,7 +10662,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
-        .party = TRAINER_PARTY(sParty_Sakura1),
+        .party = TRAINER_PARTY(sParty_Sakura4),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SAKURA_5] =
@@ -10674,7 +10674,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_ACE_POKEMON,
-        .party = TRAINER_PARTY(sParty_Sakura1),
+        .party = TRAINER_PARTY(sParty_Sakura5),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BARON_1] =
@@ -10698,7 +10698,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_Baron1),
+        .party = TRAINER_PARTY(sParty_Baron2),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BARON_3] =
@@ -10710,7 +10710,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
-        .party = TRAINER_PARTY(sParty_Baron1),
+        .party = TRAINER_PARTY(sParty_Baron3),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BARON_4] =
@@ -10722,7 +10722,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
-        .party = TRAINER_PARTY(sParty_Baron1),
+        .party = TRAINER_PARTY(sParty_Baron4),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BARON_5] =
@@ -10734,7 +10734,7 @@
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_ACE_POKEMON,
-        .party = TRAINER_PARTY(sParty_Baron1),
+        .party = TRAINER_PARTY(sParty_Baron5),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_REFUGE_1] =

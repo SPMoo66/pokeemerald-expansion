@@ -540,17 +540,104 @@ PetalburgCity_Gym_EventScript_NormanPostBattle_5:
 
 PetalburgCity_Gym_EventScript_NormanRematch::
 # 667 "data/gym_leaders.pory"
-	trainerbattle_rematch_double TRAINER_NORMAN_1, PetalburgCity_Gym_Text_NormanPreRematch, PetalburgCity_Gym_Text_NormanRematchDefeat, PetalburgCity_Gym_Text_NormanRematchNeedTwoMons
+	setflag FLAG_CHALLENGING_TRAINER
 # 668 "data/gym_leaders.pory"
+	trainerbattle_rematch_double TRAINER_NORMAN_1, PetalburgCity_Gym_Text_NormanPreRematch, PetalburgCity_Gym_Text_NormanRematchDefeat, PetalburgCity_Gym_Text_NormanRematchNeedTwoMons
+# 669 "data/gym_leaders.pory"
 	msgbox PetalburgCity_Gym_Text_NormanPostRematch, MSGBOX_AUTOCLOSE
+# 670 "data/gym_leaders.pory"
+	setflag FLAG_CHALLENGING_TRAINER
 	return
 
 
 PetalburgCity_Gym_EventScript_NoAmountOfTrainingIsEnough::
-# 672 "data/gym_leaders.pory"
+# 674 "data/gym_leaders.pory"
 	msgbox PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough, MSGBOX_DEFAULT
-# 673 "data/gym_leaders.pory"
+# 675 "data/gym_leaders.pory"
 	release
+	return
+
+
+FortreeCity_Gym_EventScript_Winona::
+# 801 "data/gym_leaders.pory"
+	setflag FLAG_CHALLENGING_TRAINER
+# 802 "data/gym_leaders.pory"
+	trainerbattle_single TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaIntro, FortreeCity_Gym_Text_WinonaDefeat, FortreeCity_Gym_EventScript_WinonaDefeated, NO_MUSIC
+# 803 "data/gym_leaders.pory"
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+# 804 "data/gym_leaders.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq FortreeCity_Gym_EventScript_Winona_2
+FortreeCity_Gym_EventScript_Winona_1:
+# 807 "data/gym_leaders.pory"
+	msgbox FortreeCity_Gym_Text_WinonaPostBattle, MSGBOX_DEFAULT
+# 808 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 809 "data/gym_leaders.pory"
+	release
+	return
+
+FortreeCity_Gym_EventScript_Winona_2:
+# 805 "data/gym_leaders.pory"
+	goto FortreeCity_Gym_EventScript_WinonaRematch
+	goto FortreeCity_Gym_EventScript_Winona_1
+
+
+FortreeCity_Gym_EventScript_WinonaDefeated::
+# 813 "data/gym_leaders.pory"
+	message FortreeCity_Gym_Text_ReceivedFeatherBadge
+# 814 "data/gym_leaders.pory"
+	waitmessage
+# 815 "data/gym_leaders.pory"
+	call Common_EventScript_PlayGymBadgeFanfare
+# 816 "data/gym_leaders.pory"
+	msgbox FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis, MSGBOX_DEFAULT
+# 817 "data/gym_leaders.pory"
+	setflag FLAG_DEFEATED_FORTREE_GYM
+# 818 "data/gym_leaders.pory"
+	setflag FLAG_BADGE06_GET
+# 819 "data/gym_leaders.pory"
+	setvar VAR_0x8008, 6
+# 820 "data/gym_leaders.pory"
+	call Common_EventScript_SetGymTrainers
+# 821 "data/gym_leaders.pory"
+	giveitem ITEM_TM_DUAL_WINGBEAT
+# 822 "data/gym_leaders.pory"
+	msgbox FortreeCity_Gym_Text_ExplainDualWingbeat, MSGBOX_DEFAULT
+# 823 "data/gym_leaders.pory"
+	closemessage
+# 824 "data/gym_leaders.pory"
+	delay 30
+# 825 "data/gym_leaders.pory"
+	playfanfare MUS_REGISTER_MATCH_CALL
+# 826 "data/gym_leaders.pory"
+	msgbox FortreeCity_Gym_Text_RegisteredWinona, MSGBOX_DEFAULT
+# 827 "data/gym_leaders.pory"
+	waitfanfare
+# 828 "data/gym_leaders.pory"
+	closemessage
+# 829 "data/gym_leaders.pory"
+	delay 30
+# 830 "data/gym_leaders.pory"
+	setflag FLAG_ENABLE_WINONA_MATCH_CALL
+# 831 "data/gym_leaders.pory"
+	setvar VAR_SCOTT_FORTREE_CALL_STEP_COUNTER, 0
+# 832 "data/gym_leaders.pory"
+	setflag FLAG_SCOTT_CALL_FORTREE_GYM
+# 833 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 834 "data/gym_leaders.pory"
+	release
+	return
+
+
+FortreeCity_Gym_EventScript_WinonaRematch::
+# 838 "data/gym_leaders.pory"
+	trainerbattle_rematch_double TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaPreRematch, FortreeCity_Gym_Text_WinonaRematchDefeat, FortreeCity_Gym_Text_WinonaRematchNeedTwoMons
+# 839 "data/gym_leaders.pory"
+	msgbox FortreeCity_Gym_Text_WinonaPostRematch, MSGBOX_AUTOCLOSE
+# 840 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
 	return
 
 
@@ -934,7 +1021,7 @@ LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons::
 	.string "see me, bring at least two Pokémon.$"
 
 PetalburgCity_Gym_Text_NormanIntro::
-# 677 "data/gym_leaders.pory"
+# 679 "data/gym_leaders.pory"
 	.string "Hm…\n"
 	.string "So, you did get four Gym Badges.\p"
 	.string "Fine, as I promised, we will have\n"
@@ -949,7 +1036,7 @@ PetalburgCity_Gym_Text_NormanIntro::
 	.string "best shot, too!$"
 
 PetalburgCity_Gym_Text_NormanDefeat::
-# 692 "data/gym_leaders.pory"
+# 694 "data/gym_leaders.pory"
 	.string "…\p"
 	.string "I… I can't…\p"
 	.string "I can't believe it. {PLAYER}…\p"
@@ -958,19 +1045,19 @@ PetalburgCity_Gym_Text_NormanDefeat::
 	.string "Here, take this.$"
 
 PetalburgCity_Gym_Text_ReceivedBalanceBadge::
-# 701 "data/gym_leaders.pory"
+# 703 "data/gym_leaders.pory"
 	.string "{PLAYER} received the Balance Badge\n"
 	.string "from Dad!$"
 
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis::
-# 706 "data/gym_leaders.pory"
+# 708 "data/gym_leaders.pory"
 	.string "With that Badge, you will be able\n"
 	.string "to use Surf to travel over water\p"
 	.string "This is my gift to you. {PLAYER}, I'm\n"
 	.string "sure you can use it correctly.$"
 
 PetalburgCity_Gym_Text_ExplainFacade::
-# 713 "data/gym_leaders.pory"
+# 715 "data/gym_leaders.pory"
 	.string "TM42 contains Facade.\p"
 	.string "It doubles the power of moves if\n"
 	.string "the Pokémon is poisoned, paralyzed,\l"
@@ -979,7 +1066,7 @@ PetalburgCity_Gym_Text_ExplainFacade::
 	.string "situation into an advantage.$"
 
 PetalburgCity_Gym_Text_DadPokevial2::
-# 722 "data/gym_leaders.pory"
+# 724 "data/gym_leaders.pory"
 	.string "Wait, what's this?\p"
 	.string "You still haven't gotten any\n"
 	.string "additional doses for your Pokevial\l"
@@ -988,14 +1075,14 @@ PetalburgCity_Gym_Text_DadPokevial2::
 	.string "should award another to you.$"
 
 PetalburgCity_Gym_Text_DadHappyAndSad::
-# 731 "data/gym_leaders.pory"
+# 733 "data/gym_leaders.pory"
 	.string "As the Gym Leader, I can't\n"
 	.string "express how upset I am…\p"
 	.string "But as a father, it makes me both\n"
 	.string "happy and a little sad. It's odd…$"
 
 PetalburgCity_Gym_Text_DadGoingToKeepTraining::
-# 738 "data/gym_leaders.pory"
+# 740 "data/gym_leaders.pory"
 	.string "{PLAYER}, you should go visit your\n"
 	.string "mother every so often.\p"
 	.string "I'm going to stay here and redouble\n"
@@ -1004,14 +1091,14 @@ PetalburgCity_Gym_Text_DadGoingToKeepTraining::
 	.string "not avenge my loss to you, {PLAYER}!$"
 
 PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough::
-# 747 "data/gym_leaders.pory"
+# 749 "data/gym_leaders.pory"
 	.string "{PLAYER}, how are things going?\p"
 	.string "The world of Pokémon is deep.\p"
 	.string "I honestly think that no amount of\n"
 	.string "training would ever be enough.$"
 
 PetalburgCity_Gym_Text_NormanPreRematch::
-# 754 "data/gym_leaders.pory"
+# 756 "data/gym_leaders.pory"
 	.string "{PLAYER}…\n"
 	.string "I had a feeling that you would come.\p"
 	.string "I would never refuse to accept\n"
@@ -1024,12 +1111,12 @@ PetalburgCity_Gym_Text_NormanPreRematch::
 	.string "we can. Isn't that right, {PLAYER}?$"
 
 PetalburgCity_Gym_Text_NormanRematchDefeat::
-# 767 "data/gym_leaders.pory"
+# 769 "data/gym_leaders.pory"
 	.string "Uh… Haha…\n"
 	.string "Maybe that was going too hard…$"
 
 PetalburgCity_Gym_Text_NormanPostRematch::
-# 772 "data/gym_leaders.pory"
+# 774 "data/gym_leaders.pory"
 	.string "{PLAYER}…\n"
 	.string "What is your dream?\p"
 	.string "My dream…\n"
@@ -1037,7 +1124,7 @@ PetalburgCity_Gym_Text_NormanPostRematch::
 	.string "It has already come true, actually.$"
 
 PetalburgCity_Gym_Text_NormanRematchNeedTwoMons::
-# 780 "data/gym_leaders.pory"
+# 782 "data/gym_leaders.pory"
 	.string "{PLAYER}…\n"
 	.string "I had a feeling that you would come.\p"
 	.string "I would never refuse to accept\n"
@@ -1050,3 +1137,92 @@ PetalburgCity_Gym_Text_NormanRematchNeedTwoMons::
 	.string "capable of battle?\p"
 	.string "Sorry, but you'll have to come back\n"
 	.string "with at least two Pokémon.$"
+
+FortreeCity_Gym_Text_WinonaIntro::
+# 844 "data/gym_leaders.pory"
+	.string "I am Winona. I am the Leader of\n"
+	.string "the Fortree Pokémon Gym.\p"
+	.string "I have become one with Bird Pokémon\n"
+	.string "and have soared the skies…\p"
+	.string "However grueling the battle, we have\n"
+	.string "triumphed with grace…\p"
+	.string "Witness the elegant choreography\n"
+	.string "of Bird Pokémon and I!$"
+
+FortreeCity_Gym_Text_WinonaDefeat::
+# 855 "data/gym_leaders.pory"
+	.string "Never before have I seen a Trainer\n"
+	.string "command Pokémon with more grace\l"
+	.string "than I…\p"
+	.string "In recognition of your prowess,\n"
+	.string "I present to you this Gym Badge.$"
+
+FortreeCity_Gym_Text_ReceivedFeatherBadge::
+# 863 "data/gym_leaders.pory"
+	.string "{PLAYER} received the Feather Badge\n"
+	.string "from Winona.$"
+
+FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis::
+# 868 "data/gym_leaders.pory"
+	.string "With the Feather Badge, all Pokémon up\n"
+	.string "to Lv 70, even those received through\l"
+	.string "trades, will obey your every command.\p"
+	.string "You will also be able to use\n"
+	.string "Fly outside of battle.\p"
+	.string "And this…\n"
+	.string "This is a gift from me.$"
+
+FortreeCity_Gym_Text_ExplainDualWingbeat::
+# 878 "data/gym_leaders.pory"
+	.string "TM80 contains Dual Wingbeat.\p"
+	.string "Its speed…\n"
+	.string "Two wings strike at blinding speed.\p"
+	.string "… … … … … …$"
+
+FortreeCity_Gym_Text_RegisteredWinona::
+# 885 "data/gym_leaders.pory"
+	.string "Registered Gym Leader Winona\n"
+	.string "in the Pokénav.$"
+
+FortreeCity_Gym_Text_WinonaPostBattle::
+# 890 "data/gym_leaders.pory"
+	.string "Though I fell to you, I will remain\n"
+	.string "devoted to Bird Pokémon.$"
+
+FortreeCity_Gym_Text_WinonaPreRematch::
+# 895 "data/gym_leaders.pory"
+	.string "Winona: We humans can never escape\n"
+	.string "gravity's pull on the ground.\p"
+	.string "But by striving for excellence,\n"
+	.string "we have the power to soar!\p"
+	.string "You have scaled the pinnacle as\n"
+	.string "the reigning Champion.\p"
+	.string "Please, allow me to see your power\n"
+	.string "at full flight!$"
+
+FortreeCity_Gym_Text_WinonaRematchDefeat::
+# 906 "data/gym_leaders.pory"
+	.string "I failed to reach your height again…$"
+
+FortreeCity_Gym_Text_WinonaPostRematch::
+# 910 "data/gym_leaders.pory"
+	.string "Winona: Even though I have lost,\n"
+	.string "the wings of my heart remain unbroken.\p"
+	.string "I can rise and soar again and\n"
+	.string "yet again.\p"
+	.string "I am convinced of it!$"
+
+FortreeCity_Gym_Text_WinonaRematchNeedTwoMons::
+# 918 "data/gym_leaders.pory"
+	.string "Winona: We humans can never escape\n"
+	.string "gravity's pull on the ground.\p"
+	.string "But by striving for excellence,\n"
+	.string "we have the power to soar!\p"
+	.string "You have scaled the pinnacle as\n"
+	.string "the reigning Champion.\p"
+	.string "Please, allow me to see your power\n"
+	.string "at full flight!\p"
+	.string "Oh, no… Do you have but one\n"
+	.string "Pokémon with you?\p"
+	.string "Please return with two Pokémon\n"
+	.string "at the very least.$"

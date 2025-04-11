@@ -664,8 +664,10 @@ script PetalburgCity_Gym_EventScript_NormanPostBattle {
 }
 
 script PetalburgCity_Gym_EventScript_NormanRematch {
+	setflag (FLAG_CHALLENGING_TRAINER)
 	trainerbattle_rematch_double (TRAINER_NORMAN_1, PetalburgCity_Gym_Text_NormanPreRematch, PetalburgCity_Gym_Text_NormanRematchDefeat, PetalburgCity_Gym_Text_NormanRematchNeedTwoMons)
 	msgbox (PetalburgCity_Gym_Text_NormanPostRematch, MSGBOX_AUTOCLOSE)
+	setflag (FLAG_CHALLENGING_TRAINER)
 }
 
 script PetalburgCity_Gym_EventScript_NoAmountOfTrainingIsEnough {
@@ -790,5 +792,141 @@ text PetalburgCity_Gym_Text_NormanRematchNeedTwoMons {
 	"capable of battle?\p"
 	"Sorry, but you'll have to come back\n"
 	"with at least two Pokémon."
+}
+
+
+# FORTREE CITY (GYM #6)
+
+script FortreeCity_Gym_EventScript_Winona {
+	setflag (FLAG_CHALLENGING_TRAINER)
+	trainerbattle_single (TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaIntro, FortreeCity_Gym_Text_WinonaDefeat, FortreeCity_Gym_EventScript_WinonaDefeated, NO_MUSIC)
+	specialvar (VAR_RESULT, ShouldTryRematchBattle)
+	if (var(VAR_RESULT) == TRUE) {
+		goto (FortreeCity_Gym_EventScript_WinonaRematch)
+	}
+	msgbox (FortreeCity_Gym_Text_WinonaPostBattle, MSGBOX_DEFAULT)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+	release
+}
+
+script FortreeCity_Gym_EventScript_WinonaDefeated {
+	message (FortreeCity_Gym_Text_ReceivedFeatherBadge)
+	waitmessage
+	call (Common_EventScript_PlayGymBadgeFanfare)
+	msgbox (FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis, MSGBOX_DEFAULT)
+	setflag (FLAG_DEFEATED_FORTREE_GYM)
+	setflag (FLAG_BADGE06_GET)
+	setvar (VAR_0x8008, 6)
+	call (Common_EventScript_SetGymTrainers)
+	giveitem (ITEM_TM_DUAL_WINGBEAT)
+	msgbox (FortreeCity_Gym_Text_ExplainDualWingbeat, MSGBOX_DEFAULT)
+	closemessage
+	delay (30)
+	playfanfare (MUS_REGISTER_MATCH_CALL)
+	msgbox (FortreeCity_Gym_Text_RegisteredWinona, MSGBOX_DEFAULT)
+	waitfanfare
+	closemessage
+	delay (30)
+	setflag (FLAG_ENABLE_WINONA_MATCH_CALL)
+	setvar (VAR_SCOTT_FORTREE_CALL_STEP_COUNTER, 0)
+	setflag (FLAG_SCOTT_CALL_FORTREE_GYM)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+	release
+}
+
+script FortreeCity_Gym_EventScript_WinonaRematch {
+	trainerbattle_rematch_double (TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaPreRematch, FortreeCity_Gym_Text_WinonaRematchDefeat, FortreeCity_Gym_Text_WinonaRematchNeedTwoMons)
+	msgbox (FortreeCity_Gym_Text_WinonaPostRematch, MSGBOX_AUTOCLOSE)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+}
+
+
+text FortreeCity_Gym_Text_WinonaIntro {
+	"I am Winona. I am the Leader of\n"
+	"the Fortree Pokémon Gym.\p"
+	"I have become one with Bird Pokémon\n"
+	"and have soared the skies…\p"
+	"However grueling the battle, we have\n"
+	"triumphed with grace…\p"
+	"Witness the elegant choreography\n"
+	"of Bird Pokémon and I!"
+}
+
+text FortreeCity_Gym_Text_WinonaDefeat {
+	"Never before have I seen a Trainer\n"
+	"command Pokémon with more grace\l"
+	"than I…\p"
+	"In recognition of your prowess,\n"
+	"I present to you this Gym Badge."
+}
+
+text FortreeCity_Gym_Text_ReceivedFeatherBadge {
+	"{PLAYER} received the Feather Badge\n"
+	"from Winona."
+}
+
+text FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis {
+	"With the Feather Badge, all Pokémon up\n"
+	"to Lv 70, even those received through\l"
+	"trades, will obey your every command.\p"
+	"You will also be able to use\n"
+	"Fly outside of battle.\p"
+	"And this…\n"
+	"This is a gift from me."
+}
+
+text FortreeCity_Gym_Text_ExplainDualWingbeat {
+	"TM80 contains Dual Wingbeat.\p"
+	"Its speed…\n"
+	"Two wings strike at blinding speed.\p"
+	"… … … … … …"
+}
+
+text FortreeCity_Gym_Text_RegisteredWinona {
+	"Registered Gym Leader Winona\n"
+	"in the Pokénav."
+}
+
+text FortreeCity_Gym_Text_WinonaPostBattle {
+	"Though I fell to you, I will remain\n"
+	"devoted to Bird Pokémon."
+}
+
+text FortreeCity_Gym_Text_WinonaPreRematch {
+	"Winona: We humans can never escape\n"
+	"gravity's pull on the ground.\p"
+	"But by striving for excellence,\n"
+	"we have the power to soar!\p"
+	"You have scaled the pinnacle as\n"
+	"the reigning Champion.\p"
+	"Please, allow me to see your power\n"
+	"at full flight!"
+}
+
+text FortreeCity_Gym_Text_WinonaRematchDefeat {
+	"I failed to reach your height again…"
+}
+
+text FortreeCity_Gym_Text_WinonaPostRematch {
+	"Winona: Even though I have lost,\n"
+	"the wings of my heart remain unbroken.\p"
+	"I can rise and soar again and\n"
+	"yet again.\p"
+	"I am convinced of it!"
+}
+
+text FortreeCity_Gym_Text_WinonaRematchNeedTwoMons {
+	"Winona: We humans can never escape\n"
+	"gravity's pull on the ground.\p"
+	"But by striving for excellence,\n"
+	"we have the power to soar!\p"
+	"You have scaled the pinnacle as\n"
+	"the reigning Champion.\p"
+	"Please, allow me to see your power\n"
+	"at full flight!\p"
+	"Oh, no… Do you have but one\n"
+	"Pokémon with you?\p"
+	"Please return with two Pokémon\n"
+	"at the very least."
 }
 

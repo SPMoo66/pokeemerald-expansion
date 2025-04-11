@@ -930,3 +930,162 @@ text FortreeCity_Gym_Text_WinonaRematchNeedTwoMons {
 	"at the very least."
 }
 
+
+# MOSSDEEP CITY (GYM #7)
+
+script MossdeepCity_Gym_EventScript_TateAndLiza {
+	setflag (FLAG_CHALLENGING_TRAINER)
+	trainerbattle_double (TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaIntro, MossdeepCity_Gym_Text_TateAndLizaDefeat, MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons, MossdeepCity_Gym_EventScript_TateAndLizaDefeated, NO_MUSIC)
+	specialvar (VAR_RESULT, ShouldTryRematchBattle)
+	if (var(VAR_RESULT) == TRUE) {
+		goto (MossdeepCity_Gym_EventScript_TateAndLizaRematch)
+	}
+	msgbox (MossdeepCity_Gym_Text_TateAndLizaPostBattle, MSGBOX_DEFAULT)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+	release
+}
+
+script MossdeepCity_Gym_EventScript_TateAndLizaDefeated {
+	message (MossdeepCity_Gym_Text_ReceivedMindBadge)
+	waitmessage
+	call (Common_EventScript_PlayGymBadgeFanfare)
+	msgbox (MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis, MSGBOX_DEFAULT)
+	setflag (FLAG_DEFEATED_MOSSDEEP_GYM)
+	setflag (FLAG_BADGE07_GET)
+	setflag (FLAG_HIDE_AQUA_HIDEOUT_GRUNTS)
+	clearflag (FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY)
+	setvar (VAR_0x8008, 7)
+	call (Common_EventScript_SetGymTrainers)
+	clearflag (FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS)
+	clearflag (FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA)
+	clearflag (FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA)
+	clearflag (FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA)
+	clearflag (FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_STEVEN)
+	setvar (VAR_MOSSDEEP_CITY_STATE, 1)
+	setflag (FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN)
+	setvar (VAR_MOSSDEEP_SPACE_CENTER_STATE, 1)
+	giveitem (ITEM_TM_TRICK_ROOM)
+	msgbox (MossdeepCity_Gym_Text_ExplainTrickRoom, MSGBOX_DEFAULT)
+	closemessage
+	delay (30)
+	playfanfare (MUS_REGISTER_MATCH_CALL)
+	msgbox (MossdeepCity_Gym_Text_RegisteredTateAndLiza, MSGBOX_DEFAULT)
+	waitfanfare
+	closemessage
+	delay (30)
+	setflag (FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+	release
+}
+
+script MossdeepCity_Gym_EventScript_TateAndLizaRematch {
+	trainerbattle_rematch_double (TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaPreRematch, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat, MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons)
+	msgbox (MossdeepCity_Gym_Text_TateAndLizaPostRematch, MSGBOX_AUTOCLOSE)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+}
+
+
+text MossdeepCity_Gym_Text_TateAndLizaIntro {
+	"Tate: Hehehe… Were you surprised?\p"
+	"Liza: Fufufu… Were you surprised?\p"
+	"Tate: That there are two Gym Leaders?\n"
+	"Liza: That there are two Gym Leaders?\p"
+	"Tate: We're twins!\n"
+	"Liza: We're twins!\p"
+	"Tate: We don't need to talk because…\n"
+	"Liza: We can each determine what…\p"
+	"Tate: The other is thinking…\n"
+	"Liza: All in our minds!\p"
+	"Tate: This combination of ours…\n"
+	"Liza: Can you beat it?"
+}
+
+text MossdeepCity_Gym_Text_TateAndLizaDefeat {
+	"Tate: What?! Our combination…\n"
+	"Liza: Was shattered!\p"
+	"Tate: It can't be helped. You've won…\n"
+	"Liza: So, in recognition, take this."
+}
+
+text MossdeepCity_Gym_Text_ReceivedMindBadge {
+	"{PLAYER} received the Mind Badge\n"
+	"from Tate and Liza."
+}
+
+text MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis {
+	"Liza: The Mind Badge lets you use\n"
+	"Dive outside of battle.\p"
+	"Tate: You should also take this, too."
+}
+
+text MossdeepCity_Gym_Text_ExplainTrickRoom {
+	"Tate: That TM04 contains…\n"
+	"Liza: Trick Room!\p"
+	"Tate: It creates a bizarre area…\n"
+	"Liza: That inverts speed!\p"
+	"Tate: It's a move that's perfect…\n"
+	"Liza: For Psychic Pokémon!\p"
+	"… … … … … …"
+}
+
+text MossdeepCity_Gym_Text_RegisteredTateAndLiza {
+	"Registered Gym Leaders Tate & Liza\n"
+	"in the Pokénav."
+}
+
+text MossdeepCity_Gym_Text_TateAndLizaPostBattle {
+	"Tate: Looks like the bond between you\n"
+	"and your Pokémon is far stronger than\l"
+	"the bond that we share as twins.\p"
+	"Liza: You will become even stronger!\n"
+	"We've battled you, so we know."
+}
+
+text MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons {
+	"Tate: Hehehe… Were you surprised?\p"
+	"Liza: That there are two Gym Leaders?\p"
+	"Tate: Oops, you have only one…\n"
+	"Liza: Pokémon that can battle.\p"
+	"Tate: We can't battle that way!\p"
+	"Liza: If you want to challenge us,\n"
+	"bring some more Pokémon."
+}
+
+text MossdeepCity_Gym_Text_TateAndLizaPreRematch {
+	"Tate: Pokémon…\n"
+	"Liza: Pokémon…\p"
+	"Tate: By changing the party's mix…\n"
+	"Liza: The battle style changes.\p"
+	"Tate: But me…\n"
+	"Liza: But me…\p"
+	"Tate: I'll always be with Liza!\n"
+	"Liza: I'll always be with Tate!\p"
+	"Tate: Our combination…\n"
+	"Liza: We'll show you again and again!"
+}
+
+text MossdeepCity_Gym_Text_TateAndLizaRematchDefeat {
+	"Tate: You and your Pokémon…\n"
+	"Liza: It's as if you were siblings!"
+}
+
+text MossdeepCity_Gym_Text_TateAndLizaPostRematch {
+	"Tate: You can knock us down,\n"
+	"but we'll never stay down!\p"
+	"Liza: Because the two of us,\n"
+	"we always support each other!"
+}
+
+text MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons {
+	"Tate: You're back again…\n"
+	"Liza: You're back again…\p"
+	"Tate: To give us a rematch.\n"
+	"Liza: To give us a rematch.\p"
+	"Tate: But…\n"
+	"Liza: For our match…\p"
+	"Tate: You brought just one Pokémon!\n"
+	"Liza: You brought just one Pokémon!\p"
+	"Tate: We need you to bring at least…\n"
+	"Liza: Two Pokémon when you come back."
+}
+

@@ -641,6 +641,105 @@ FortreeCity_Gym_EventScript_WinonaRematch::
 	return
 
 
+MossdeepCity_Gym_EventScript_TateAndLiza::
+# 937 "data/gym_leaders.pory"
+	setflag FLAG_CHALLENGING_TRAINER
+# 938 "data/gym_leaders.pory"
+	trainerbattle_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaIntro, MossdeepCity_Gym_Text_TateAndLizaDefeat, MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons, MossdeepCity_Gym_EventScript_TateAndLizaDefeated, NO_MUSIC
+# 939 "data/gym_leaders.pory"
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+# 940 "data/gym_leaders.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq MossdeepCity_Gym_EventScript_TateAndLiza_2
+MossdeepCity_Gym_EventScript_TateAndLiza_1:
+# 943 "data/gym_leaders.pory"
+	msgbox MossdeepCity_Gym_Text_TateAndLizaPostBattle, MSGBOX_DEFAULT
+# 944 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 945 "data/gym_leaders.pory"
+	release
+	return
+
+MossdeepCity_Gym_EventScript_TateAndLiza_2:
+# 941 "data/gym_leaders.pory"
+	goto MossdeepCity_Gym_EventScript_TateAndLizaRematch
+	goto MossdeepCity_Gym_EventScript_TateAndLiza_1
+
+
+MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
+# 949 "data/gym_leaders.pory"
+	message MossdeepCity_Gym_Text_ReceivedMindBadge
+# 950 "data/gym_leaders.pory"
+	waitmessage
+# 951 "data/gym_leaders.pory"
+	call Common_EventScript_PlayGymBadgeFanfare
+# 952 "data/gym_leaders.pory"
+	msgbox MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis, MSGBOX_DEFAULT
+# 953 "data/gym_leaders.pory"
+	setflag FLAG_DEFEATED_MOSSDEEP_GYM
+# 954 "data/gym_leaders.pory"
+	setflag FLAG_BADGE07_GET
+# 955 "data/gym_leaders.pory"
+	setflag FLAG_HIDE_AQUA_HIDEOUT_GRUNTS
+# 956 "data/gym_leaders.pory"
+	clearflag FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY
+# 957 "data/gym_leaders.pory"
+	setvar VAR_0x8008, 7
+# 958 "data/gym_leaders.pory"
+	call Common_EventScript_SetGymTrainers
+# 959 "data/gym_leaders.pory"
+	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS
+# 960 "data/gym_leaders.pory"
+	clearflag FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA
+# 961 "data/gym_leaders.pory"
+	clearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA
+# 962 "data/gym_leaders.pory"
+	clearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA
+# 963 "data/gym_leaders.pory"
+	clearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_STEVEN
+# 964 "data/gym_leaders.pory"
+	setvar VAR_MOSSDEEP_CITY_STATE, 1
+# 965 "data/gym_leaders.pory"
+	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN
+# 966 "data/gym_leaders.pory"
+	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 1
+# 967 "data/gym_leaders.pory"
+	giveitem ITEM_TM_TRICK_ROOM
+# 968 "data/gym_leaders.pory"
+	msgbox MossdeepCity_Gym_Text_ExplainTrickRoom, MSGBOX_DEFAULT
+# 969 "data/gym_leaders.pory"
+	closemessage
+# 970 "data/gym_leaders.pory"
+	delay 30
+# 971 "data/gym_leaders.pory"
+	playfanfare MUS_REGISTER_MATCH_CALL
+# 972 "data/gym_leaders.pory"
+	msgbox MossdeepCity_Gym_Text_RegisteredTateAndLiza, MSGBOX_DEFAULT
+# 973 "data/gym_leaders.pory"
+	waitfanfare
+# 974 "data/gym_leaders.pory"
+	closemessage
+# 975 "data/gym_leaders.pory"
+	delay 30
+# 976 "data/gym_leaders.pory"
+	setflag FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL
+# 977 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 978 "data/gym_leaders.pory"
+	release
+	return
+
+
+MossdeepCity_Gym_EventScript_TateAndLizaRematch::
+# 982 "data/gym_leaders.pory"
+	trainerbattle_rematch_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaPreRematch, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat, MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons
+# 983 "data/gym_leaders.pory"
+	msgbox MossdeepCity_Gym_Text_TateAndLizaPostRematch, MSGBOX_AUTOCLOSE
+# 984 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+	return
+
+
 RustboroCity_Gym_Text_RoxanneIntro::
 # 57 "data/gym_leaders.pory"
 	.string "Hello, I am Roxanne, the Rustboro\n"
@@ -1226,3 +1325,107 @@ FortreeCity_Gym_Text_WinonaRematchNeedTwoMons::
 	.string "Pokémon with you?\p"
 	.string "Please return with two Pokémon\n"
 	.string "at the very least.$"
+
+MossdeepCity_Gym_Text_TateAndLizaIntro::
+# 988 "data/gym_leaders.pory"
+	.string "Tate: Hehehe… Were you surprised?\p"
+	.string "Liza: Fufufu… Were you surprised?\p"
+	.string "Tate: That there are two Gym Leaders?\n"
+	.string "Liza: That there are two Gym Leaders?\p"
+	.string "Tate: We're twins!\n"
+	.string "Liza: We're twins!\p"
+	.string "Tate: We don't need to talk because…\n"
+	.string "Liza: We can each determine what…\p"
+	.string "Tate: The other is thinking…\n"
+	.string "Liza: All in our minds!\p"
+	.string "Tate: This combination of ours…\n"
+	.string "Liza: Can you beat it?$"
+
+MossdeepCity_Gym_Text_TateAndLizaDefeat::
+# 1003 "data/gym_leaders.pory"
+	.string "Tate: What?! Our combination…\n"
+	.string "Liza: Was shattered!\p"
+	.string "Tate: It can't be helped. You've won…\n"
+	.string "Liza: So, in recognition, take this.$"
+
+MossdeepCity_Gym_Text_ReceivedMindBadge::
+# 1010 "data/gym_leaders.pory"
+	.string "{PLAYER} received the Mind Badge\n"
+	.string "from Tate and Liza.$"
+
+MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis::
+# 1015 "data/gym_leaders.pory"
+	.string "Liza: The Mind Badge lets you use\n"
+	.string "Dive outside of battle.\p"
+	.string "Tate: You should also take this, too.$"
+
+MossdeepCity_Gym_Text_ExplainTrickRoom::
+# 1021 "data/gym_leaders.pory"
+	.string "Tate: That TM04 contains…\n"
+	.string "Liza: Trick Room!\p"
+	.string "Tate: It creates a bizarre area…\n"
+	.string "Liza: That inverts speed!\p"
+	.string "Tate: It's a move that's perfect…\n"
+	.string "Liza: For Psychic Pokémon!\p"
+	.string "… … … … … …$"
+
+MossdeepCity_Gym_Text_RegisteredTateAndLiza::
+# 1031 "data/gym_leaders.pory"
+	.string "Registered Gym Leaders Tate & Liza\n"
+	.string "in the Pokénav.$"
+
+MossdeepCity_Gym_Text_TateAndLizaPostBattle::
+# 1036 "data/gym_leaders.pory"
+	.string "Tate: Looks like the bond between you\n"
+	.string "and your Pokémon is far stronger than\l"
+	.string "the bond that we share as twins.\p"
+	.string "Liza: You will become even stronger!\n"
+	.string "We've battled you, so we know.$"
+
+MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons::
+# 1044 "data/gym_leaders.pory"
+	.string "Tate: Hehehe… Were you surprised?\p"
+	.string "Liza: That there are two Gym Leaders?\p"
+	.string "Tate: Oops, you have only one…\n"
+	.string "Liza: Pokémon that can battle.\p"
+	.string "Tate: We can't battle that way!\p"
+	.string "Liza: If you want to challenge us,\n"
+	.string "bring some more Pokémon.$"
+
+MossdeepCity_Gym_Text_TateAndLizaPreRematch::
+# 1054 "data/gym_leaders.pory"
+	.string "Tate: Pokémon…\n"
+	.string "Liza: Pokémon…\p"
+	.string "Tate: By changing the party's mix…\n"
+	.string "Liza: The battle style changes.\p"
+	.string "Tate: But me…\n"
+	.string "Liza: But me…\p"
+	.string "Tate: I'll always be with Liza!\n"
+	.string "Liza: I'll always be with Tate!\p"
+	.string "Tate: Our combination…\n"
+	.string "Liza: We'll show you again and again!$"
+
+MossdeepCity_Gym_Text_TateAndLizaRematchDefeat::
+# 1067 "data/gym_leaders.pory"
+	.string "Tate: You and your Pokémon…\n"
+	.string "Liza: It's as if you were siblings!$"
+
+MossdeepCity_Gym_Text_TateAndLizaPostRematch::
+# 1072 "data/gym_leaders.pory"
+	.string "Tate: You can knock us down,\n"
+	.string "but we'll never stay down!\p"
+	.string "Liza: Because the two of us,\n"
+	.string "we always support each other!$"
+
+MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons::
+# 1079 "data/gym_leaders.pory"
+	.string "Tate: You're back again…\n"
+	.string "Liza: You're back again…\p"
+	.string "Tate: To give us a rematch.\n"
+	.string "Liza: To give us a rematch.\p"
+	.string "Tate: But…\n"
+	.string "Liza: For our match…\p"
+	.string "Tate: You brought just one Pokémon!\n"
+	.string "Liza: You brought just one Pokémon!\p"
+	.string "Tate: We need you to bring at least…\n"
+	.string "Liza: Two Pokémon when you come back.$"

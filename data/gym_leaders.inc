@@ -406,6 +406,154 @@ LavaridgeTown_Gym_1F_EventScript_FlanneryRematch::
 	return
 
 
+PetalburgCity_Gym_EventScript_NormanBattle::
+# 605 "data/gym_leaders.pory"
+	setflag FLAG_CHALLENGING_TRAINER
+# 606 "data/gym_leaders.pory"
+	msgbox PetalburgCity_Gym_Text_NormanIntro, MSGBOX_DEFAULT
+# 607 "data/gym_leaders.pory"
+	trainerbattle_no_intro TRAINER_NORMAN_1, PetalburgCity_Gym_Text_NormanDefeat
+# 608 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 609 "data/gym_leaders.pory"
+	message PetalburgCity_Gym_Text_ReceivedBalanceBadge
+# 610 "data/gym_leaders.pory"
+	waitmessage
+# 611 "data/gym_leaders.pory"
+	call Common_EventScript_PlayGymBadgeFanfare
+# 612 "data/gym_leaders.pory"
+	msgbox PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis, MSGBOX_DEFAULT
+# 613 "data/gym_leaders.pory"
+	setflag FLAG_DEFEATED_PETALBURG_GYM
+# 614 "data/gym_leaders.pory"
+	setvar VAR_PETALBURG_GYM_STATE, 7
+# 615 "data/gym_leaders.pory"
+	setflag FLAG_BADGE05_GET
+# 616 "data/gym_leaders.pory"
+	special ResetHealLocationFromDewford
+# 617 "data/gym_leaders.pory"
+	call EventScript_HideMrBriney
+# 618 "data/gym_leaders.pory"
+	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
+# 619 "data/gym_leaders.pory"
+	clearflag FLAG_HIDE_MAUVILLE_CITY_WATTSON
+# 620 "data/gym_leaders.pory"
+	setvar VAR_0x8008, 5
+# 621 "data/gym_leaders.pory"
+	call Common_EventScript_SetGymTrainers
+# 622 "data/gym_leaders.pory"
+	call PetalburgCity_Gym_EventScript_UnlockAllDoors
+# 623 "data/gym_leaders.pory"
+	special DrawWholeMapView
+# 624 "data/gym_leaders.pory"
+	giveitem ITEM_TM_FACADE
+# 625 "data/gym_leaders.pory"
+	speakername CommonText_Dad
+# 626 "data/gym_leaders.pory"
+	msgbox PetalburgCity_Gym_Text_ExplainFacade, MSGBOX_DEFAULT
+# 627 "data/gym_leaders.pory"
+	delay 10
+# 628 "data/gym_leaders.pory"
+	speakername CommonText_Dad
+# 629 "data/gym_leaders.pory"
+	msgbox PetalburgCity_Gym_Text_DadPokevial2, MSGBOX_DEFAULT
+# 630 "data/gym_leaders.pory"
+	closemessage
+# 631 "data/gym_leaders.pory"
+	pokevialincreasesize
+# 632 "data/gym_leaders.pory"
+	msgbox Text_PokevialSizeIncrease, MSGBOX_DEFAULT
+# 633 "data/gym_leaders.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 634 "data/gym_leaders.pory"
+	waitfanfare
+# 635 "data/gym_leaders.pory"
+	closemessage
+# 636 "data/gym_leaders.pory"
+	delay 20
+# 637 "data/gym_leaders.pory"
+	speakername CommonText_Dad
+# 638 "data/gym_leaders.pory"
+	msgbox PetalburgCity_Gym_Text_DadHappyAndSad, MSGBOX_DEFAULT
+# 639 "data/gym_leaders.pory"
+	closemessage
+# 640 "data/gym_leaders.pory"
+	delay 30
+# 641 "data/gym_leaders.pory"
+	playse SE_DOOR
+# 642 "data/gym_leaders.pory"
+	delay 10
+# 643 "data/gym_leaders.pory"
+	addobject LOCALID_WALLYS_DAD
+# 644 "data/gym_leaders.pory"
+	switch VAR_FACING
+# 645 "data/gym_leaders.pory"
+	case DIR_NORTH, PetalburgCity_Gym_EventScript_NormanBattle_2
+# 647 "data/gym_leaders.pory"
+	case DIR_WEST, PetalburgCity_Gym_EventScript_NormanBattle_3
+# 649 "data/gym_leaders.pory"
+	case DIR_EAST, PetalburgCity_Gym_EventScript_NormanBattle_4
+	return
+
+PetalburgCity_Gym_EventScript_NormanBattle_2:
+# 646 "data/gym_leaders.pory"
+	goto PetalburgCity_Gym_EventScript_WallysDadArrivesNorth
+	return
+
+PetalburgCity_Gym_EventScript_NormanBattle_3:
+# 648 "data/gym_leaders.pory"
+	goto PetalburgCity_Gym_EventScript_WallysDadArrivesWest
+	return
+
+PetalburgCity_Gym_EventScript_NormanBattle_4:
+# 650 "data/gym_leaders.pory"
+	goto PetalburgCity_Gym_EventScript_WallysDadArrivesEast
+	return
+
+
+PetalburgCity_Gym_EventScript_NormanPostBattle::
+# 655 "data/gym_leaders.pory"
+	call PetalburgCity_Gym_EventScript_ShouldGiveEnigmaBerry
+# 656 "data/gym_leaders.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq PetalburgCity_Gym_EventScript_NormanPostBattle_2
+PetalburgCity_Gym_EventScript_NormanPostBattle_1:
+# 659 "data/gym_leaders.pory"
+	goto_if_set FLAG_SYS_GAME_CLEAR, PetalburgCity_Gym_EventScript_NormanPostBattle_5
+PetalburgCity_Gym_EventScript_NormanPostBattle_4:
+# 662 "data/gym_leaders.pory"
+	msgbox PetalburgCity_Gym_Text_DadGoingToKeepTraining, MSGBOX_DEFAULT
+# 663 "data/gym_leaders.pory"
+	release
+	return
+
+PetalburgCity_Gym_EventScript_NormanPostBattle_2:
+# 657 "data/gym_leaders.pory"
+	goto PetalburgCity_Gym_EventScript_GiveEnigmaBerry
+	goto PetalburgCity_Gym_EventScript_NormanPostBattle_1
+
+PetalburgCity_Gym_EventScript_NormanPostBattle_5:
+# 660 "data/gym_leaders.pory"
+	goto PetalburgCity_Gym_EventScript_NoAmountOfTrainingIsEnough
+	goto PetalburgCity_Gym_EventScript_NormanPostBattle_4
+
+
+PetalburgCity_Gym_EventScript_NormanRematch::
+# 667 "data/gym_leaders.pory"
+	trainerbattle_rematch_double TRAINER_NORMAN_1, PetalburgCity_Gym_Text_NormanPreRematch, PetalburgCity_Gym_Text_NormanRematchDefeat, PetalburgCity_Gym_Text_NormanRematchNeedTwoMons
+# 668 "data/gym_leaders.pory"
+	msgbox PetalburgCity_Gym_Text_NormanPostRematch, MSGBOX_AUTOCLOSE
+	return
+
+
+PetalburgCity_Gym_EventScript_NoAmountOfTrainingIsEnough::
+# 672 "data/gym_leaders.pory"
+	msgbox PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough, MSGBOX_DEFAULT
+# 673 "data/gym_leaders.pory"
+	release
+	return
+
+
 RustboroCity_Gym_Text_RoxanneIntro::
 # 57 "data/gym_leaders.pory"
 	.string "Hello, I am Roxanne, the Rustboro\n"
@@ -784,3 +932,112 @@ LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons::
 	.string "that can battle?\p"
 	.string "I hate to say this, but when you come\n"
 	.string "see me, bring at least two Pokémon.$"
+
+PetalburgCity_Gym_Text_NormanIntro::
+# 677 "data/gym_leaders.pory"
+	.string "Hm…\n"
+	.string "So, you did get four Gym Badges.\p"
+	.string "Fine, as I promised, we will have\n"
+	.string "a Pokémon battle.\p"
+	.string "{PLAYER}…\p"
+	.string "I'm so happy that I can have\n"
+	.string "a real battle with my own child.\p"
+	.string "But, a battle is a battle!\p"
+	.string "I will do everything in my power as\n"
+	.string "a Gym Leader to win.\p"
+	.string "{PLAYER}, you'd better give it your\n"
+	.string "best shot, too!$"
+
+PetalburgCity_Gym_Text_NormanDefeat::
+# 692 "data/gym_leaders.pory"
+	.string "…\p"
+	.string "I… I can't…\p"
+	.string "I can't believe it. {PLAYER}…\p"
+	.string "I lost to {PLAYER}?\p"
+	.string "But, rules are rules!\n"
+	.string "Here, take this.$"
+
+PetalburgCity_Gym_Text_ReceivedBalanceBadge::
+# 701 "data/gym_leaders.pory"
+	.string "{PLAYER} received the Balance Badge\n"
+	.string "from Dad!$"
+
+PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis::
+# 706 "data/gym_leaders.pory"
+	.string "With that Badge, you will be able\n"
+	.string "to use Surf to travel over water\p"
+	.string "This is my gift to you. {PLAYER}, I'm\n"
+	.string "sure you can use it correctly.$"
+
+PetalburgCity_Gym_Text_ExplainFacade::
+# 713 "data/gym_leaders.pory"
+	.string "TM42 contains Facade.\p"
+	.string "It doubles the power of moves if\n"
+	.string "the Pokémon is poisoned, paralyzed,\l"
+	.string "or burned.\p"
+	.string "It might be able to turn a bad\n"
+	.string "situation into an advantage.$"
+
+PetalburgCity_Gym_Text_DadPokevial2::
+# 722 "data/gym_leaders.pory"
+	.string "Wait, what's this?\p"
+	.string "You still haven't gotten any\n"
+	.string "additional doses for your Pokevial\l"
+	.string "yet?\p"
+	.string "I suppose since you beat me, I\n"
+	.string "should award another to you.$"
+
+PetalburgCity_Gym_Text_DadHappyAndSad::
+# 731 "data/gym_leaders.pory"
+	.string "As the Gym Leader, I can't\n"
+	.string "express how upset I am…\p"
+	.string "But as a father, it makes me both\n"
+	.string "happy and a little sad. It's odd…$"
+
+PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough::
+# 738 "data/gym_leaders.pory"
+	.string "{PLAYER}, how are things going?\p"
+	.string "The world of Pokémon is deep.\p"
+	.string "I honestly think that no amount of\n"
+	.string "training would ever be enough.$"
+
+PetalburgCity_Gym_Text_NormanPreRematch::
+# 745 "data/gym_leaders.pory"
+	.string "{PLAYER}…\n"
+	.string "I had a feeling that you would come.\p"
+	.string "I would never refuse to accept\n"
+	.string "a challenge from you.\p"
+	.string "You do understand, don't you?\p"
+	.string "Inside a Gym, it doesn't matter that\n"
+	.string "we are a parent and child.\p"
+	.string "…No, because we are parent and child,\n"
+	.string "we owe it to each other to do the best\l"
+	.string "we can. Isn't that right, {PLAYER}?$"
+
+PetalburgCity_Gym_Text_NormanRematchDefeat::
+# 758 "data/gym_leaders.pory"
+	.string "Uh… Haha…\n"
+	.string "Maybe that was going too hard…$"
+
+PetalburgCity_Gym_Text_NormanPostRematch::
+# 763 "data/gym_leaders.pory"
+	.string "{PLAYER}…\n"
+	.string "What is your dream?\p"
+	.string "My dream…\n"
+	.string "Hahaha…\l"
+	.string "It has already come true, actually.$"
+
+PetalburgCity_Gym_Text_NormanRematchNeedTwoMons::
+# 771 "data/gym_leaders.pory"
+	.string "{PLAYER}…\n"
+	.string "I had a feeling that you would come.\p"
+	.string "I would never refuse to accept\n"
+	.string "a challenge from you.\p"
+	.string "You do understand, don't you?\p"
+	.string "Inside a Gym, it doesn't matter that\n"
+	.string "we are a parent and child.\p"
+	.string "Hm? Wait a second, {PLAYER}.\p"
+	.string "Do you only have one Pokémon that is\n"
+	.string "capable of battle?\p"
+	.string "Sorry, but you'll have to come back\n"
+	.string "with at least two Pokémon.$"

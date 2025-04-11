@@ -599,3 +599,196 @@ text LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons {
 	"see me, bring at least two Pokémon.$"
 }
 
+# PETALBURG CITY (GYM #5)
+
+script PetalburgCity_Gym_EventScript_NormanBattle {
+	setflag (FLAG_CHALLENGING_TRAINER)
+	msgbox (PetalburgCity_Gym_Text_NormanIntro, MSGBOX_DEFAULT)
+	trainerbattle_no_intro (TRAINER_NORMAN_1, PetalburgCity_Gym_Text_NormanDefeat)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+	message (PetalburgCity_Gym_Text_ReceivedBalanceBadge)
+	waitmessage
+	call (Common_EventScript_PlayGymBadgeFanfare)
+	msgbox (PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis, MSGBOX_DEFAULT)
+	setflag (FLAG_DEFEATED_PETALBURG_GYM)
+	setvar (VAR_PETALBURG_GYM_STATE, 7)
+	setflag (FLAG_BADGE05_GET)
+	special (ResetHealLocationFromDewford)
+	call (EventScript_HideMrBriney)
+	setflag (FLAG_HIDE_MAUVILLE_GYM_WATTSON)
+	clearflag (FLAG_HIDE_MAUVILLE_CITY_WATTSON)
+	setvar (VAR_0x8008, 5)
+	call (Common_EventScript_SetGymTrainers)
+	call (PetalburgCity_Gym_EventScript_UnlockAllDoors)
+	special (DrawWholeMapView)
+	giveitem (ITEM_TM_FACADE)
+	speakername (CommonText_Dad)
+	msgbox (PetalburgCity_Gym_Text_ExplainFacade, MSGBOX_DEFAULT)
+	delay (10)
+	speakername (CommonText_Dad)
+	msgbox (PetalburgCity_Gym_Text_DadPokevial2, MSGBOX_DEFAULT)
+	closemessage
+	pokevialincreasesize
+	msgbox (Text_PokevialSizeIncrease, MSGBOX_DEFAULT)
+	playfanfare (MUS_OBTAIN_ITEM)
+	waitfanfare
+	closemessage
+	delay (20)
+	speakername (CommonText_Dad)
+	msgbox (PetalburgCity_Gym_Text_DadHappyAndSad, MSGBOX_DEFAULT)
+	closemessage
+	delay (30)
+	playse (SE_DOOR)
+	delay (10)
+	addobject (LOCALID_WALLYS_DAD)
+	switch (var(VAR_FACING)) {
+		case DIR_NORTH:
+			goto (PetalburgCity_Gym_EventScript_WallysDadArrivesNorth)
+		case DIR_WEST:
+			goto (PetalburgCity_Gym_EventScript_WallysDadArrivesWest)
+		case DIR_EAST:
+			goto (PetalburgCity_Gym_EventScript_WallysDadArrivesEast)
+	}
+}
+
+script PetalburgCity_Gym_EventScript_NormanPostBattle {
+	call (PetalburgCity_Gym_EventScript_ShouldGiveEnigmaBerry) // THIS SEEMS TO BE RELATED TO MYSTERY GIFT
+	if (var(VAR_RESULT) == TRUE) {
+		goto (PetalburgCity_Gym_EventScript_GiveEnigmaBerry)
+	}
+	if (flag(FLAG_SYS_GAME_CLEAR)) {
+		goto (PetalburgCity_Gym_EventScript_NoAmountOfTrainingIsEnough)
+	}
+	msgbox (PetalburgCity_Gym_Text_DadGoingToKeepTraining, MSGBOX_DEFAULT)
+	release
+}
+
+script PetalburgCity_Gym_EventScript_NormanRematch {
+	trainerbattle_rematch_double (TRAINER_NORMAN_1, PetalburgCity_Gym_Text_NormanPreRematch, PetalburgCity_Gym_Text_NormanRematchDefeat, PetalburgCity_Gym_Text_NormanRematchNeedTwoMons)
+	msgbox (PetalburgCity_Gym_Text_NormanPostRematch, MSGBOX_AUTOCLOSE)
+}
+
+script PetalburgCity_Gym_EventScript_NoAmountOfTrainingIsEnough {
+	msgbox (PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough, MSGBOX_DEFAULT)
+	release
+}
+
+
+text PetalburgCity_Gym_Text_NormanIntro {
+	"Hm…\n"
+	"So, you did get four Gym Badges.\p"
+	"Fine, as I promised, we will have\n"
+	"a Pokémon battle.\p"
+	"{PLAYER}…\p"
+	"I'm so happy that I can have\n"
+	"a real battle with my own child.\p"
+	"But, a battle is a battle!\p"
+	"I will do everything in my power as\n"
+	"a Gym Leader to win.\p"
+	"{PLAYER}, you'd better give it your\n"
+	"best shot, too!"
+}
+
+text PetalburgCity_Gym_Text_NormanDefeat {
+	"…\p"
+	"I… I can't…\p"
+	"I can't believe it. {PLAYER}…\p"
+	"I lost to {PLAYER}?\p"
+	"But, rules are rules!\n"
+	"Here, take this."
+}
+
+text PetalburgCity_Gym_Text_ReceivedBalanceBadge {
+	"{PLAYER} received the Balance Badge\n"
+	"from Dad!"
+}
+
+text PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis {
+	"With that Badge, you will be able\n"
+	"to use Surf to travel over water\p"
+	"This is my gift to you. {PLAYER}, I'm\n"
+	"sure you can use it correctly."
+}
+
+text PetalburgCity_Gym_Text_ExplainFacade {
+	"TM42 contains Facade.\p"
+	"It doubles the power of moves if\n"
+	"the Pokémon is poisoned, paralyzed,\l"
+	"or burned.\p"
+	"It might be able to turn a bad\n"
+	"situation into an advantage."
+}
+
+text PetalburgCity_Gym_Text_DadPokevial2 {
+	"Wait, what's this?\p"
+	"You still haven't gotten any\n"
+	"additional doses for your Pokevial\l"
+	"yet?\p"
+	"I suppose since you beat me, I\n"
+	"should award another to you."
+}
+
+text PetalburgCity_Gym_Text_DadHappyAndSad {
+	"As the Gym Leader, I can't\n"
+	"express how upset I am…\p"
+	"But as a father, it makes me both\n"
+	"happy and a little sad. It's odd…"
+}
+
+text PetalburgCity_Gym_Text_DadGoingToKeepTraining {
+	"{PLAYER}, you should go visit your\n"
+	"mother every so often.\p"
+	"I'm going to stay here and redouble\n"
+	"my training.\p"
+	"It would bother me as a Trainer to\n"
+	"not avenge my loss to you, {PLAYER}!"
+}
+
+text PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough {
+	"{PLAYER}, how are things going?\p"
+	"The world of Pokémon is deep.\p"
+	"I honestly think that no amount of\n"
+	"training would ever be enough."
+}
+
+text PetalburgCity_Gym_Text_NormanPreRematch {
+	"{PLAYER}…\n"
+	"I had a feeling that you would come.\p"
+	"I would never refuse to accept\n"
+	"a challenge from you.\p"
+	"You do understand, don't you?\p"
+	"Inside a Gym, it doesn't matter that\n"
+	"we are a parent and child.\p"
+	"…No, because we are parent and child,\n"
+	"we owe it to each other to do the best\l"
+	"we can. Isn't that right, {PLAYER}?"
+}
+
+text PetalburgCity_Gym_Text_NormanRematchDefeat {
+	"Uh… Haha…\n"
+	"Maybe that was going too hard…"
+}
+
+text PetalburgCity_Gym_Text_NormanPostRematch {
+	"{PLAYER}…\n"
+	"What is your dream?\p"
+	"My dream…\n"
+	"Hahaha…\l"
+	"It has already come true, actually."
+}
+
+text PetalburgCity_Gym_Text_NormanRematchNeedTwoMons {
+	"{PLAYER}…\n"
+	"I had a feeling that you would come.\p"
+	"I would never refuse to accept\n"
+	"a challenge from you.\p"
+	"You do understand, don't you?\p"
+	"Inside a Gym, it doesn't matter that\n"
+	"we are a parent and child.\p"
+	"Hm? Wait a second, {PLAYER}.\p"
+	"Do you only have one Pokémon that is\n"
+	"capable of battle?\p"
+	"Sorry, but you'll have to come back\n"
+	"with at least two Pokémon."
+}
+

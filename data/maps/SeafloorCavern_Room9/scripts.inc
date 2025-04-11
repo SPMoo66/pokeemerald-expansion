@@ -42,8 +42,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	clearflag FLAG_CHALLENGING_TRAINER
 	speakername (CommonText_Archie)
 	msgbox SeafloorCavern_Room9_Text_ArchieWithThisRedOrb, MSGBOX_DEFAULT
-	setweather WEATHER_NONE
-	doweather
+	call WeatherScript_SetAndDo_None
 	special Script_FadeOutMapMusic
 	waitstate
 	closemessage

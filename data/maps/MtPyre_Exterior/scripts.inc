@@ -32,23 +32,3 @@ MtPyre_Exterior_EventScript_EnterFromSummit::
 	setweather WEATHER_FOG_HORIZONTAL
 # 17 "data/maps/MtPyre_Exterior/scripts.pory"
 	return
-# 18 "data/maps/MtPyre_Exterior/scripts.pory"
-
-# 19 "data/maps/MtPyre_Exterior/scripts.pory"
-MtPyre_Exterior_EventScript_FogTrigger::
-# 20 "data/maps/MtPyre_Exterior/scripts.pory"
-	setweather WEATHER_FOG_HORIZONTAL
-# 21 "data/maps/MtPyre_Exterior/scripts.pory"
-	doweather
-# 22 "data/maps/MtPyre_Exterior/scripts.pory"
-	end
-# 23 "data/maps/MtPyre_Exterior/scripts.pory"
-
-# 24 "data/maps/MtPyre_Exterior/scripts.pory"
-MtPyre_Exterior_EventScript_SunTrigger::
-# 25 "data/maps/MtPyre_Exterior/scripts.pory"
-	setweather WEATHER_SUNNY
-# 26 "data/maps/MtPyre_Exterior/scripts.pory"
-	doweather
-# 27 "data/maps/MtPyre_Exterior/scripts.pory"
-	end

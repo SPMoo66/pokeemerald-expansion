@@ -1,0 +1,49 @@
+script WeatherScript_SetAndDo_None {
+	setweather (WEATHER_NONE)
+	doweather
+}
+
+script WeatherScript_SetAndDo_Sunny {
+	setweather (WEATHER_SUNNY)
+	doweather
+}
+
+script WeatherScript_SetAndDo_SunnyClouds {
+	setweather (WEATHER_SUNNY_CLOUDS)
+	doweather
+}
+
+script WeatherScript_SetAndDo_Drought {
+	setweather (WEATHER_DROUGHT)
+	doweather
+}
+
+script WeatherScript_SetAndDo_FogHorizontal {
+	setweather (WEATHER_FOG_HORIZONTAL)
+	doweather
+}
+
+script WeatherScript_SetAndDo_VolcanicAsh {
+	setweather (WEATHER_VOLCANIC_ASH)
+	doweather
+}
+
+script WeatherScript_SetAndDo_Sandstorm {
+	setweather (WEATHER_SANDSTORM)
+	doweather
+}
+
+script WeatherScript_SetAndDo_Rain {
+	setweather (WEATHER_RAIN)
+	doweather
+}
+
+script WeatherScript_SetAndDo_Snow {
+	setweather (WEATHER_SNOW)
+	doweather
+}
+
+script WeatherScript_SetAndDo_Abnormal {
+	setweather (WEATHER_ABNORMAL)
+	doweather
+}

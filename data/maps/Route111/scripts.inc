@@ -211,16 +211,14 @@ Route111_EventScript_PushRightFromRoute::
 	return
 
 Route111_EventScript_SunTrigger::
-	setweather WEATHER_SUNNY
+	call WeatherScript_SetAndDo_Sunny
 	fadenewbgm MUS_ROUTE110
-	doweather
 	setvar VAR_TEMP_3, 0
 	end
 
 Route111_EventScript_SandstormTrigger::
-	setweather WEATHER_SANDSTORM
+	call WeatherScript_SetAndDo_Sandstorm
 	fadenewbgm MUS_DESERT
-	doweather
 	end
 
 Route111_EventScript_Victor::

@@ -444,7 +444,7 @@ Route114_EventScript_ChallengeBall1::
 	compare VAR_RESULT, 1
 	goto_if_eq Route114_EventScript_ChallengeBall1_2
 Route114_EventScript_ChallengeBall1_1:
-# 234 "data/challenge_balls.pory"
+# 233 "data/challenge_balls.pory"
 	release
 	return
 
@@ -456,530 +456,522 @@ Route114_EventScript_ChallengeBall1_2:
 # 220 "data/challenge_balls.pory"
 	setflag FLAG_SMART_WILD_AI
 # 221 "data/challenge_balls.pory"
-	setweather WEATHER_RAIN
+	call WeatherScript_SetAndDo_Rain
 # 222 "data/challenge_balls.pory"
-	doweather
+	delay 60
 # 223 "data/challenge_balls.pory"
-	delay 60
-# 224 "data/challenge_balls.pory"
 	setwildbattle SPECIES_LUDICOLO, 32, ITEM_NONE, 1, SPECIES_ARMALDO, 32, ITEM_NONE, 2, MOVE_FAKE_OUT, MOVE_MEGA_DRAIN, MOVE_ASTONISH, MOVE_ENCORE, MOVE_X_SCISSOR, MOVE_ROCK_TOMB, MOVE_SHADOW_CLAW, MOVE_BODY_SLAM
-# 225 "data/challenge_balls.pory"
+# 224 "data/challenge_balls.pory"
 	dowildbattle
-# 226 "data/challenge_balls.pory"
+# 225 "data/challenge_balls.pory"
 	resetweather
-# 227 "data/challenge_balls.pory"
+# 226 "data/challenge_balls.pory"
 	delay 60
-# 228 "data/challenge_balls.pory"
+# 227 "data/challenge_balls.pory"
 	clearflag FLAG_NO_CATCHING
-# 229 "data/challenge_balls.pory"
+# 228 "data/challenge_balls.pory"
 	clearflag FLAG_NO_RUNNING
-# 230 "data/challenge_balls.pory"
+# 229 "data/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
-# 231 "data/challenge_balls.pory"
+# 230 "data/challenge_balls.pory"
 	finditem ITEM_SUPER_ROD, 1
-# 232 "data/challenge_balls.pory"
+# 231 "data/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route114_EventScript_ChallengeBall1_1
 
 
 MeteorFalls_EventScript_ChallengeBall1::
-# 238 "data/challenge_balls.pory"
+# 237 "data/challenge_balls.pory"
 	lock
-# 239 "data/challenge_balls.pory"
+# 238 "data/challenge_balls.pory"
 	msgbox MeteorFalls_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 240 "data/challenge_balls.pory"
+# 239 "data/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MeteorFalls_EventScript_ChallengeBall1_2
 MeteorFalls_EventScript_ChallengeBall1_1:
-# 254 "data/challenge_balls.pory"
+# 253 "data/challenge_balls.pory"
 	release
 	return
 
 MeteorFalls_EventScript_ChallengeBall1_2:
-# 241 "data/challenge_balls.pory"
+# 240 "data/challenge_balls.pory"
 	setflag FLAG_NO_CATCHING
-# 242 "data/challenge_balls.pory"
+# 241 "data/challenge_balls.pory"
 	setflag FLAG_NO_RUNNING
-# 243 "data/challenge_balls.pory"
+# 242 "data/challenge_balls.pory"
 	setflag FLAG_SMART_WILD_AI
-# 244 "data/challenge_balls.pory"
+# 243 "data/challenge_balls.pory"
 	setvar VAR_STARTING_STATUS, 1
-# 245 "data/challenge_balls.pory"
+# 244 "data/challenge_balls.pory"
 	setwildbattle SPECIES_FLOETTE, 32, ITEM_NONE, 2, SPECIES_BELLIBOLT, 32, ITEM_NONE, 0, MOVE_NATURE_POWER, MOVE_SECRET_POWER, MOVE_MAGICAL_LEAF, MOVE_DRAINING_KISS, MOVE_VOLT_SWITCH, MOVE_CHILLING_WATER, MOVE_ACID_SPRAY, MOVE_MUD_SLAP
-# 246 "data/challenge_balls.pory"
+# 245 "data/challenge_balls.pory"
 	dowildbattle
-# 247 "data/challenge_balls.pory"
+# 246 "data/challenge_balls.pory"
 	setvar VAR_STARTING_STATUS, 0
-# 248 "data/challenge_balls.pory"
+# 247 "data/challenge_balls.pory"
 	clearflag FLAG_NO_CATCHING
-# 249 "data/challenge_balls.pory"
+# 248 "data/challenge_balls.pory"
 	clearflag FLAG_NO_RUNNING
-# 250 "data/challenge_balls.pory"
+# 249 "data/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
-# 251 "data/challenge_balls.pory"
+# 250 "data/challenge_balls.pory"
 	finditem ITEM_ASSAULT_VEST, 1
-# 252 "data/challenge_balls.pory"
+# 251 "data/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto MeteorFalls_EventScript_ChallengeBall1_1
 
 
 Route118_EventScript_ChallengeBall1::
-# 258 "data/challenge_balls.pory"
+# 257 "data/challenge_balls.pory"
 	lock
-# 259 "data/challenge_balls.pory"
+# 258 "data/challenge_balls.pory"
 	msgbox Route118_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 260 "data/challenge_balls.pory"
+# 259 "data/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route118_EventScript_ChallengeBall1_2
 Route118_EventScript_ChallengeBall1_1:
-# 273 "data/challenge_balls.pory"
+# 272 "data/challenge_balls.pory"
 	release
 	return
 
 Route118_EventScript_ChallengeBall1_2:
-# 261 "data/challenge_balls.pory"
+# 260 "data/challenge_balls.pory"
 	setflag FLAG_NO_CATCHING
-# 262 "data/challenge_balls.pory"
+# 261 "data/challenge_balls.pory"
 	setflag FLAG_NO_RUNNING
-# 263 "data/challenge_balls.pory"
+# 262 "data/challenge_balls.pory"
 	setflag FLAG_SMART_WILD_AI
-# 264 "data/challenge_balls.pory"
+# 263 "data/challenge_balls.pory"
 	settotemboost 1, 0, 1, 0, 0, 1
-# 265 "data/challenge_balls.pory"
+# 264 "data/challenge_balls.pory"
 	setwildbattle SPECIES_FEAROW, 37, ITEM_NONE, 2, SPECIES_ABSOL, 37, ITEM_NONE, 1, MOVE_FOCUS_ENERGY, MOVE_DRILL_RUN, MOVE_DRILL_PECK, MOVE_STEEL_WING, MOVE_NIGHT_SLASH, MOVE_DETECT, MOVE_SHADOW_CLAW, MOVE_THUNDER_WAVE
-# 266 "data/challenge_balls.pory"
+# 265 "data/challenge_balls.pory"
 	dowildbattle
-# 267 "data/challenge_balls.pory"
+# 266 "data/challenge_balls.pory"
 	clearflag FLAG_NO_CATCHING
-# 268 "data/challenge_balls.pory"
+# 267 "data/challenge_balls.pory"
 	clearflag FLAG_NO_RUNNING
-# 269 "data/challenge_balls.pory"
+# 268 "data/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
-# 270 "data/challenge_balls.pory"
+# 269 "data/challenge_balls.pory"
 	finditem ITEM_SCOPE_LENS, 1
-# 271 "data/challenge_balls.pory"
+# 270 "data/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route118_EventScript_ChallengeBall1_1
 
 
 Route123_EventScript_ChallengeBall1::
-# 277 "data/challenge_balls.pory"
+# 276 "data/challenge_balls.pory"
 	lock
-# 278 "data/challenge_balls.pory"
+# 277 "data/challenge_balls.pory"
 	msgbox Route118_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 279 "data/challenge_balls.pory"
+# 278 "data/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route123_EventScript_ChallengeBall1_2
 Route123_EventScript_ChallengeBall1_1:
-# 292 "data/challenge_balls.pory"
+# 291 "data/challenge_balls.pory"
 	release
 	return
 
 Route123_EventScript_ChallengeBall1_2:
-# 280 "data/challenge_balls.pory"
+# 279 "data/challenge_balls.pory"
 	setflag FLAG_NO_CATCHING
-# 281 "data/challenge_balls.pory"
+# 280 "data/challenge_balls.pory"
 	setflag FLAG_NO_RUNNING
-# 282 "data/challenge_balls.pory"
+# 281 "data/challenge_balls.pory"
 	setflag FLAG_SMART_WILD_AI
-# 283 "data/challenge_balls.pory"
+# 282 "data/challenge_balls.pory"
 	settotemboost 1, 1
-# 284 "data/challenge_balls.pory"
+# 283 "data/challenge_balls.pory"
 	setwildbattle SPECIES_TITANEON, 38, ITEM_NONE, 2, SPECIES_NINETALES_EMERIBIAN, 38, ITEM_NONE, 0, MOVE_HEAL_ORDER, MOVE_PARABOLIC_CHARGE, MOVE_METAL_CLAW, MOVE_HELPING_HAND, MOVE_FLAME_BURST, MOVE_FIRE_SPIN, MOVE_WILL_O_WISP, MOVE_HEX
-# 285 "data/challenge_balls.pory"
+# 284 "data/challenge_balls.pory"
 	dowildbattle
-# 286 "data/challenge_balls.pory"
+# 285 "data/challenge_balls.pory"
 	clearflag FLAG_NO_CATCHING
-# 287 "data/challenge_balls.pory"
+# 286 "data/challenge_balls.pory"
 	clearflag FLAG_NO_RUNNING
-# 288 "data/challenge_balls.pory"
+# 287 "data/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
-# 289 "data/challenge_balls.pory"
+# 288 "data/challenge_balls.pory"
 	finditem ITEM_LEFTOVERS, 1
-# 290 "data/challenge_balls.pory"
+# 289 "data/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route123_EventScript_ChallengeBall1_1
 
 
 Route120_EventScript_ChallengeBall1::
-# 296 "data/challenge_balls.pory"
+# 295 "data/challenge_balls.pory"
 	lock
-# 297 "data/challenge_balls.pory"
+# 296 "data/challenge_balls.pory"
 	msgbox Route120_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 298 "data/challenge_balls.pory"
+# 297 "data/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route120_EventScript_ChallengeBall1_2
 Route120_EventScript_ChallengeBall1_1:
-# 311 "data/challenge_balls.pory"
+# 310 "data/challenge_balls.pory"
 	release
 	return
 
 Route120_EventScript_ChallengeBall1_2:
-# 299 "data/challenge_balls.pory"
+# 298 "data/challenge_balls.pory"
 	setflag FLAG_NO_CATCHING
-# 300 "data/challenge_balls.pory"
+# 299 "data/challenge_balls.pory"
 	setflag FLAG_NO_RUNNING
-# 301 "data/challenge_balls.pory"
+# 300 "data/challenge_balls.pory"
 	setflag FLAG_SMART_WILD_AI
-# 302 "data/challenge_balls.pory"
+# 301 "data/challenge_balls.pory"
 	settotemboost 1, 0, 1, 0, 0, 1
-# 303 "data/challenge_balls.pory"
+# 302 "data/challenge_balls.pory"
 	setwildbattle SPECIES_WUGTRIO, 41, ITEM_NONE, 0, SPECIES_SLOWKING_GALAR, 41, ITEM_NONE, 1, MOVE_FLATTER, MOVE_TRIPLE_DIVE, MOVE_SUCKER_PUNCH, MOVE_HELPING_HAND, MOVE_SCALD, MOVE_PSYCHIC, MOVE_SLUDGE_BOMB, MOVE_SLACK_OFF
-# 304 "data/challenge_balls.pory"
+# 303 "data/challenge_balls.pory"
 	dowildbattle
-# 305 "data/challenge_balls.pory"
+# 304 "data/challenge_balls.pory"
 	clearflag FLAG_NO_CATCHING
-# 306 "data/challenge_balls.pory"
+# 305 "data/challenge_balls.pory"
 	clearflag FLAG_NO_RUNNING
-# 307 "data/challenge_balls.pory"
+# 306 "data/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
-# 308 "data/challenge_balls.pory"
+# 307 "data/challenge_balls.pory"
 	finditem ITEM_HEAVY_DUTY_BOOTS, 1
-# 309 "data/challenge_balls.pory"
+# 308 "data/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route120_EventScript_ChallengeBall1_1
 
 
 MtPyre_Exterior_EventScript_ChallengeBall1::
-# 315 "data/challenge_balls.pory"
+# 314 "data/challenge_balls.pory"
 	lock
-# 316 "data/challenge_balls.pory"
+# 315 "data/challenge_balls.pory"
 	msgbox MtPyre_Exterior_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 317 "data/challenge_balls.pory"
+# 316 "data/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MtPyre_Exterior_EventScript_ChallengeBall1_2
 MtPyre_Exterior_EventScript_ChallengeBall1_1:
-# 331 "data/challenge_balls.pory"
+# 330 "data/challenge_balls.pory"
 	release
 	return
 
 MtPyre_Exterior_EventScript_ChallengeBall1_2:
-# 318 "data/challenge_balls.pory"
+# 317 "data/challenge_balls.pory"
 	setflag FLAG_NO_CATCHING
-# 319 "data/challenge_balls.pory"
+# 318 "data/challenge_balls.pory"
 	setflag FLAG_NO_RUNNING
-# 320 "data/challenge_balls.pory"
+# 319 "data/challenge_balls.pory"
 	setflag FLAG_SMART_WILD_AI
-# 321 "data/challenge_balls.pory"
+# 320 "data/challenge_balls.pory"
 	setvar VAR_STARTING_STATUS, 9
-# 322 "data/challenge_balls.pory"
+# 321 "data/challenge_balls.pory"
 	setwildbattle SPECIES_GOLEM_FRIBIAN, 43, ITEM_NONE, 2, SPECIES_NOCTOWL_EMERIBIAN, 43, ITEM_NONE, 2, MOVE_EARTHQUAKE, MOVE_FLAME_WHEEL, MOVE_SHADOW_PUNCH, MOVE_ROCK_BLAST, MOVE_HYPNOSIS, MOVE_NIGHT_DAZE, MOVE_EXTRASENSORY, MOVE_AIR_SLASH
-# 323 "data/challenge_balls.pory"
+# 322 "data/challenge_balls.pory"
 	dowildbattle
-# 324 "data/challenge_balls.pory"
+# 323 "data/challenge_balls.pory"
 	setvar VAR_STARTING_STATUS, 0
-# 325 "data/challenge_balls.pory"
+# 324 "data/challenge_balls.pory"
 	clearflag FLAG_NO_CATCHING
-# 326 "data/challenge_balls.pory"
+# 325 "data/challenge_balls.pory"
 	clearflag FLAG_NO_RUNNING
-# 327 "data/challenge_balls.pory"
+# 326 "data/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
-# 328 "data/challenge_balls.pory"
+# 327 "data/challenge_balls.pory"
 	finditem ITEM_BLACK_SLUDGE, 1
-# 329 "data/challenge_balls.pory"
+# 328 "data/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto MtPyre_Exterior_EventScript_ChallengeBall1_1
 
 
 LilycoveCity_EventScript_ChallengeBall1::
-# 335 "data/challenge_balls.pory"
+# 334 "data/challenge_balls.pory"
 	lock
-# 336 "data/challenge_balls.pory"
+# 335 "data/challenge_balls.pory"
 	msgbox LilycoveCity_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 337 "data/challenge_balls.pory"
+# 336 "data/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq LilycoveCity_EventScript_ChallengeBall1_2
 LilycoveCity_EventScript_ChallengeBall1_1:
-# 351 "data/challenge_balls.pory"
+# 350 "data/challenge_balls.pory"
 	release
 	return
 
 LilycoveCity_EventScript_ChallengeBall1_2:
-# 338 "data/challenge_balls.pory"
+# 337 "data/challenge_balls.pory"
 	setflag FLAG_NO_CATCHING
-# 339 "data/challenge_balls.pory"
+# 338 "data/challenge_balls.pory"
 	setflag FLAG_NO_RUNNING
-# 340 "data/challenge_balls.pory"
+# 339 "data/challenge_balls.pory"
 	setflag FLAG_SMART_WILD_AI
-# 341 "data/challenge_balls.pory"
+# 340 "data/challenge_balls.pory"
 	setvar VAR_STARTING_STATUS, 7
-# 342 "data/challenge_balls.pory"
+# 341 "data/challenge_balls.pory"
 	setwildbattle SPECIES_ELDEGOSS, 44, ITEM_NONE, 0, SPECIES_MALAMAR, 44, ITEM_NONE, 0, MOVE_COTTON_GUARD, MOVE_GIGA_DRAIN, MOVE_LIGHT_SCREEN, MOVE_POLLEN_PUFF, MOVE_SUPERPOWER, MOVE_STORED_POWER, MOVE_AERIAL_ACE, MOVE_PROTECT
-# 343 "data/challenge_balls.pory"
+# 342 "data/challenge_balls.pory"
 	dowildbattle
-# 344 "data/challenge_balls.pory"
+# 343 "data/challenge_balls.pory"
 	setvar VAR_STARTING_STATUS, 0
-# 345 "data/challenge_balls.pory"
+# 344 "data/challenge_balls.pory"
 	clearflag FLAG_NO_CATCHING
-# 346 "data/challenge_balls.pory"
+# 345 "data/challenge_balls.pory"
 	clearflag FLAG_NO_RUNNING
-# 347 "data/challenge_balls.pory"
+# 346 "data/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
-# 348 "data/challenge_balls.pory"
+# 347 "data/challenge_balls.pory"
 	finditem ITEM_ROCKY_HELMET, 1
-# 349 "data/challenge_balls.pory"
+# 348 "data/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto LilycoveCity_EventScript_ChallengeBall1_1
 
 
 MossdeepCity_EventScript_ChallengeBall1::
-# 355 "data/challenge_balls.pory"
+# 354 "data/challenge_balls.pory"
 	lock
-# 356 "data/challenge_balls.pory"
+# 355 "data/challenge_balls.pory"
 	msgbox MossdeepCity_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 357 "data/challenge_balls.pory"
+# 356 "data/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MossdeepCity_EventScript_ChallengeBall1_2
 MossdeepCity_EventScript_ChallengeBall1_1:
-# 371 "data/challenge_balls.pory"
+# 370 "data/challenge_balls.pory"
 	release
 	return
 
 MossdeepCity_EventScript_ChallengeBall1_2:
-# 358 "data/challenge_balls.pory"
+# 357 "data/challenge_balls.pory"
 	setflag FLAG_NO_CATCHING
-# 359 "data/challenge_balls.pory"
+# 358 "data/challenge_balls.pory"
 	setflag FLAG_NO_RUNNING
-# 360 "data/challenge_balls.pory"
+# 359 "data/challenge_balls.pory"
 	setflag FLAG_SMART_WILD_AI
-# 361 "data/challenge_balls.pory"
+# 360 "data/challenge_balls.pory"
 	setvar VAR_STARTING_STATUS, 6
-# 362 "data/challenge_balls.pory"
+# 361 "data/challenge_balls.pory"
 	setwildbattle SPECIES_CONTAGEON, 50, ITEM_NONE, 2, SPECIES_SLAKING, 50, ITEM_NONE, 0, MOVE_PROTECT, MOVE_DIRE_CLAW, MOVE_SPECTRAL_THIEF, MOVE_TAUNT, MOVE_BODY_SLAM, MOVE_HAMMER_ARM, MOVE_PLAY_ROUGH, MOVE_SHADOW_CLAW
-# 363 "data/challenge_balls.pory"
+# 362 "data/challenge_balls.pory"
 	dowildbattle
-# 364 "data/challenge_balls.pory"
+# 363 "data/challenge_balls.pory"
 	setvar VAR_STARTING_STATUS, 0
-# 365 "data/challenge_balls.pory"
+# 364 "data/challenge_balls.pory"
 	clearflag FLAG_NO_CATCHING
-# 366 "data/challenge_balls.pory"
+# 365 "data/challenge_balls.pory"
 	clearflag FLAG_NO_RUNNING
-# 367 "data/challenge_balls.pory"
+# 366 "data/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
-# 368 "data/challenge_balls.pory"
+# 367 "data/challenge_balls.pory"
 	finditem ITEM_FOCUS_SASH, 1
-# 369 "data/challenge_balls.pory"
+# 368 "data/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto MossdeepCity_EventScript_ChallengeBall1_1
 
 
 Route127_EventScript_ChallengeBall1::
-# 375 "data/challenge_balls.pory"
+# 374 "data/challenge_balls.pory"
 	lock
-# 376 "data/challenge_balls.pory"
+# 375 "data/challenge_balls.pory"
 	msgbox Route127_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 377 "data/challenge_balls.pory"
+# 376 "data/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route127_EventScript_ChallengeBall1_2
 Route127_EventScript_ChallengeBall1_1:
-# 394 "data/challenge_balls.pory"
+# 392 "data/challenge_balls.pory"
 	release
 	return
 
 Route127_EventScript_ChallengeBall1_2:
-# 378 "data/challenge_balls.pory"
+# 377 "data/challenge_balls.pory"
 	setflag FLAG_NO_CATCHING
-# 379 "data/challenge_balls.pory"
+# 378 "data/challenge_balls.pory"
 	setflag FLAG_NO_RUNNING
-# 380 "data/challenge_balls.pory"
+# 379 "data/challenge_balls.pory"
 	setflag FLAG_SMART_WILD_AI
+# 380 "data/challenge_balls.pory"
+	call WeatherScript_SetAndDo_Rain
 # 381 "data/challenge_balls.pory"
-	setweather WEATHER_RAIN
+	delay 60
 # 382 "data/challenge_balls.pory"
-	doweather
-# 383 "data/challenge_balls.pory"
-	delay 60
-# 384 "data/challenge_balls.pory"
 	setwildbattle SPECIES_KINGDRA, 54, ITEM_NONE, 1, SPECIES_CACTURNE, 54, ITEM_NONE, 2, MOVE_DRAGON_DANCE, MOVE_DRAGON_PULSE, MOVE_SURF, MOVE_FOCUS_ENERGY, MOVE_SPIKY_SHIELD, MOVE_RAIN_DANCE, MOVE_NEEDLE_ARM, MOVE_NIGHT_SLASH
-# 385 "data/challenge_balls.pory"
+# 383 "data/challenge_balls.pory"
 	dowildbattle
-# 386 "data/challenge_balls.pory"
+# 384 "data/challenge_balls.pory"
 	resetweather
-# 387 "data/challenge_balls.pory"
+# 385 "data/challenge_balls.pory"
 	delay 60
-# 388 "data/challenge_balls.pory"
+# 386 "data/challenge_balls.pory"
 	clearflag FLAG_NO_CATCHING
-# 389 "data/challenge_balls.pory"
+# 387 "data/challenge_balls.pory"
 	clearflag FLAG_NO_RUNNING
-# 390 "data/challenge_balls.pory"
+# 388 "data/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
-# 391 "data/challenge_balls.pory"
+# 389 "data/challenge_balls.pory"
 	finditem ITEM_LIFE_ORB, 1
-# 392 "data/challenge_balls.pory"
+# 390 "data/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route127_EventScript_ChallengeBall1_1
 
 
 Route132_EventScript_ChallengeBall1::
-# 398 "data/challenge_balls.pory"
+# 396 "data/challenge_balls.pory"
 	lock
-# 399 "data/challenge_balls.pory"
+# 397 "data/challenge_balls.pory"
 	msgbox Route132_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 400 "data/challenge_balls.pory"
+# 398 "data/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route132_EventScript_ChallengeBall1_2
 Route132_EventScript_ChallengeBall1_1:
-# 417 "data/challenge_balls.pory"
+# 414 "data/challenge_balls.pory"
 	release
 	return
 
 Route132_EventScript_ChallengeBall1_2:
-# 401 "data/challenge_balls.pory"
+# 399 "data/challenge_balls.pory"
 	setflag FLAG_NO_CATCHING
-# 402 "data/challenge_balls.pory"
+# 400 "data/challenge_balls.pory"
 	setflag FLAG_NO_RUNNING
-# 403 "data/challenge_balls.pory"
+# 401 "data/challenge_balls.pory"
 	setflag FLAG_SMART_WILD_AI
+# 402 "data/challenge_balls.pory"
+	call WeatherScript_SetAndDo_Snow
+# 403 "data/challenge_balls.pory"
+	delay 60
 # 404 "data/challenge_balls.pory"
-	setweather WEATHER_SNOW
-# 405 "data/challenge_balls.pory"
-	doweather
-# 406 "data/challenge_balls.pory"
-	delay 60
-# 407 "data/challenge_balls.pory"
 	setwildbattle SPECIES_VANILLUXE, 57, ITEM_NONE, 0, SPECIES_TREVENANT_EMERIBIAN, 57, ITEM_NONE, 0, MOVE_FREEZE_DRY, MOVE_AURORA_VEIL, MOVE_HYPER_VOICE, MOVE_FLASH_CANNON, MOVE_SPIRIT_BREAK, MOVE_HORN_LEECH, MOVE_INGRAIN, MOVE_LEECH_SEED
-# 408 "data/challenge_balls.pory"
+# 405 "data/challenge_balls.pory"
 	dowildbattle
-# 409 "data/challenge_balls.pory"
+# 406 "data/challenge_balls.pory"
 	resetweather
-# 410 "data/challenge_balls.pory"
+# 407 "data/challenge_balls.pory"
 	delay 60
-# 411 "data/challenge_balls.pory"
+# 408 "data/challenge_balls.pory"
 	clearflag FLAG_NO_CATCHING
-# 412 "data/challenge_balls.pory"
+# 409 "data/challenge_balls.pory"
 	clearflag FLAG_NO_RUNNING
-# 413 "data/challenge_balls.pory"
+# 410 "data/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
-# 414 "data/challenge_balls.pory"
+# 411 "data/challenge_balls.pory"
 	finditem ITEM_CHOICE_BAND, 1
-# 415 "data/challenge_balls.pory"
+# 412 "data/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route132_EventScript_ChallengeBall1_1
 
 
 Route133_EventScript_ChallengeBall1::
-# 421 "data/challenge_balls.pory"
+# 418 "data/challenge_balls.pory"
 	lock
-# 422 "data/challenge_balls.pory"
+# 419 "data/challenge_balls.pory"
 	msgbox Route133_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 423 "data/challenge_balls.pory"
+# 420 "data/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route133_EventScript_ChallengeBall1_2
 Route133_EventScript_ChallengeBall1_1:
-# 440 "data/challenge_balls.pory"
+# 436 "data/challenge_balls.pory"
 	release
 	return
 
 Route133_EventScript_ChallengeBall1_2:
-# 424 "data/challenge_balls.pory"
+# 421 "data/challenge_balls.pory"
 	setflag FLAG_NO_CATCHING
-# 425 "data/challenge_balls.pory"
+# 422 "data/challenge_balls.pory"
 	setflag FLAG_NO_RUNNING
-# 426 "data/challenge_balls.pory"
+# 423 "data/challenge_balls.pory"
 	setflag FLAG_SMART_WILD_AI
+# 424 "data/challenge_balls.pory"
+	call WeatherScript_SetAndDo_Drought
+# 425 "data/challenge_balls.pory"
+	delay 60
+# 426 "data/challenge_balls.pory"
+	setwildbattle SPECIES_SOLFLORA, 57, ITEM_NONE, 0, SPECIES_SCREAM_TAIL, 57, ITEM_NONE, 0, MOVE_TORCH_SONG, MOVE_DAZZLING_GLEAM, MOVE_SOLAR_BEAM, MOVE_TRAILBLAZE, MOVE_PLAY_ROUGH, MOVE_PSYCHIC_FANGS, MOVE_CRUNCH, MOVE_GYRO_BALL
 # 427 "data/challenge_balls.pory"
-	setweather WEATHER_DROUGHT
+	dowildbattle
 # 428 "data/challenge_balls.pory"
-	doweather
+	resetweather
 # 429 "data/challenge_balls.pory"
 	delay 60
 # 430 "data/challenge_balls.pory"
-	setwildbattle SPECIES_SOLFLORA, 57, ITEM_NONE, 0, SPECIES_SCREAM_TAIL, 57, ITEM_NONE, 0, MOVE_TORCH_SONG, MOVE_DAZZLING_GLEAM, MOVE_SOLAR_BEAM, MOVE_TRAILBLAZE, MOVE_PLAY_ROUGH, MOVE_PSYCHIC_FANGS, MOVE_CRUNCH, MOVE_GYRO_BALL
-# 431 "data/challenge_balls.pory"
-	dowildbattle
-# 432 "data/challenge_balls.pory"
-	resetweather
-# 433 "data/challenge_balls.pory"
-	delay 60
-# 434 "data/challenge_balls.pory"
 	clearflag FLAG_NO_CATCHING
-# 435 "data/challenge_balls.pory"
+# 431 "data/challenge_balls.pory"
 	clearflag FLAG_NO_RUNNING
-# 436 "data/challenge_balls.pory"
+# 432 "data/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
-# 437 "data/challenge_balls.pory"
+# 433 "data/challenge_balls.pory"
 	finditem ITEM_CHOICE_SCARF, 1
-# 438 "data/challenge_balls.pory"
+# 434 "data/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route133_EventScript_ChallengeBall1_1
 
 
 Route134_EventScript_ChallengeBall1::
-# 444 "data/challenge_balls.pory"
+# 440 "data/challenge_balls.pory"
 	lock
-# 445 "data/challenge_balls.pory"
+# 441 "data/challenge_balls.pory"
 	msgbox Route134_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 446 "data/challenge_balls.pory"
+# 442 "data/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route134_EventScript_ChallengeBall1_2
 Route134_EventScript_ChallengeBall1_1:
-# 460 "data/challenge_balls.pory"
+# 456 "data/challenge_balls.pory"
 	release
 	return
 
 Route134_EventScript_ChallengeBall1_2:
-# 447 "data/challenge_balls.pory"
+# 443 "data/challenge_balls.pory"
 	setflag FLAG_NO_CATCHING
-# 448 "data/challenge_balls.pory"
+# 444 "data/challenge_balls.pory"
 	setflag FLAG_NO_RUNNING
-# 449 "data/challenge_balls.pory"
+# 445 "data/challenge_balls.pory"
 	setflag FLAG_SMART_WILD_AI
-# 450 "data/challenge_balls.pory"
+# 446 "data/challenge_balls.pory"
 	setvar VAR_STARTING_STATUS, 1
-# 451 "data/challenge_balls.pory"
+# 447 "data/challenge_balls.pory"
 	setwildbattle SPECIES_SAWSBUCK, 57, ITEM_NONE, 2, SPECIES_IRON_HANDS, 57, ITEM_NONE, 0, MOVE_NATURE_POWER, MOVE_HORN_LEECH, MOVE_ZEN_HEADBUTT, MOVE_BODY_SLAM, MOVE_WILD_CHARGE, MOVE_CLOSE_COMBAT, MOVE_HEAVY_SLAM, MOVE_FAKE_OUT
-# 452 "data/challenge_balls.pory"
+# 448 "data/challenge_balls.pory"
 	dowildbattle
-# 453 "data/challenge_balls.pory"
+# 449 "data/challenge_balls.pory"
 	setvar VAR_STARTING_STATUS, 0
-# 454 "data/challenge_balls.pory"
+# 450 "data/challenge_balls.pory"
 	clearflag FLAG_NO_CATCHING
-# 455 "data/challenge_balls.pory"
+# 451 "data/challenge_balls.pory"
 	clearflag FLAG_NO_RUNNING
-# 456 "data/challenge_balls.pory"
+# 452 "data/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
-# 457 "data/challenge_balls.pory"
+# 453 "data/challenge_balls.pory"
 	finditem ITEM_CHOICE_SPECS, 1
-# 458 "data/challenge_balls.pory"
+# 454 "data/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route134_EventScript_ChallengeBall1_1
 
 
 Route119_EventScript_ChallengeBall1::
-# 464 "data/challenge_balls.pory"
+# 460 "data/challenge_balls.pory"
 	lock
-# 465 "data/challenge_balls.pory"
+# 461 "data/challenge_balls.pory"
 	msgbox Route119_EventScript_ChallengeBall1_Text_0, MSGBOX_YESNO
-# 466 "data/challenge_balls.pory"
+# 462 "data/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route119_EventScript_ChallengeBall1_2
 Route119_EventScript_ChallengeBall1_1:
-# 479 "data/challenge_balls.pory"
+# 475 "data/challenge_balls.pory"
 	release
 	return
 
 Route119_EventScript_ChallengeBall1_2:
-# 467 "data/challenge_balls.pory"
+# 463 "data/challenge_balls.pory"
 	setflag FLAG_NO_CATCHING
-# 468 "data/challenge_balls.pory"
+# 464 "data/challenge_balls.pory"
 	setflag FLAG_NO_RUNNING
-# 469 "data/challenge_balls.pory"
+# 465 "data/challenge_balls.pory"
 	setflag FLAG_SMART_WILD_AI
-# 470 "data/challenge_balls.pory"
+# 466 "data/challenge_balls.pory"
 	settotemboost 1, 0, 1, 0, 0, 1
-# 471 "data/challenge_balls.pory"
+# 467 "data/challenge_balls.pory"
 	setwildbattle SPECIES_KINGAMBIT, 60, ITEM_NONE, 0, SPECIES_LOPUNNY_EMERIBIAN, 60, ITEM_NONE, 2, MOVE_KOWTOW_CLEAVE, MOVE_IRON_HEAD, MOVE_IRON_DEFENSE, MOVE_SHADOW_CLAW, MOVE_SUPERPOWER, MOVE_ICE_HAMMER, MOVE_ME_FIRST, MOVE_STRENGTH
-# 472 "data/challenge_balls.pory"
+# 468 "data/challenge_balls.pory"
 	dowildbattle
-# 473 "data/challenge_balls.pory"
+# 469 "data/challenge_balls.pory"
 	clearflag FLAG_NO_CATCHING
-# 474 "data/challenge_balls.pory"
+# 470 "data/challenge_balls.pory"
 	clearflag FLAG_NO_RUNNING
-# 475 "data/challenge_balls.pory"
+# 471 "data/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
-# 476 "data/challenge_balls.pory"
+# 472 "data/challenge_balls.pory"
 	finditem ITEM_WEAKNESS_POLICY, 1
-# 477 "data/challenge_balls.pory"
+# 473 "data/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto Route119_EventScript_ChallengeBall1_1
 
@@ -1049,63 +1041,63 @@ Route114_EventScript_ChallengeBall1_Text_0:
 	.string "Reach out for the item?$"
 
 MeteorFalls_EventScript_ChallengeBall1_Text_0:
-# 239 "data/challenge_balls.pory"
+# 238 "data/challenge_balls.pory"
 	.string "You feel static running across the\n"
 	.string "ground.\p"
 	.string "Reach out for the item?$"
 
 Route118_EventScript_ChallengeBall1_Text_0:
-# 259 "data/challenge_balls.pory"
+# 258 "data/challenge_balls.pory"
 	.string "You sense enemies with sharp claws\n"
 	.string "ready to strike.\p"
 	.string "Reach out for the item?$"
 
 Route120_EventScript_ChallengeBall1_Text_0:
-# 297 "data/challenge_balls.pory"
+# 296 "data/challenge_balls.pory"
 	.string "After trudging through the mud you\n"
 	.string "sense enemies nearby.\p"
 	.string "Reach out for the item?$"
 
 MtPyre_Exterior_EventScript_ChallengeBall1_Text_0:
-# 316 "data/challenge_balls.pory"
+# 315 "data/challenge_balls.pory"
 	.string "A strong wind blows against you.\p"
 	.string "Reach out for the item?$"
 
 LilycoveCity_EventScript_ChallengeBall1_Text_0:
-# 336 "data/challenge_balls.pory"
+# 335 "data/challenge_balls.pory"
 	.string "You feel a wondrous sensation as you\n"
 	.string "approach.\p"
 	.string "Reach out for the item?$"
 
 MossdeepCity_EventScript_ChallengeBall1_Text_0:
-# 356 "data/challenge_balls.pory"
+# 355 "data/challenge_balls.pory"
 	.string "You feel a magical sensation as you\n"
 	.string "approach.\p"
 	.string "Reach out for the item?$"
 
 Route127_EventScript_ChallengeBall1_Text_0:
-# 376 "data/challenge_balls.pory"
+# 375 "data/challenge_balls.pory"
 	.string "You sense an imminent downpour.\p"
 	.string "Reach out for the item?$"
 
 Route132_EventScript_ChallengeBall1_Text_0:
-# 399 "data/challenge_balls.pory"
+# 397 "data/challenge_balls.pory"
 	.string "You see stray snowflakes falling.\p"
 	.string "Reach out for the item?$"
 
 Route133_EventScript_ChallengeBall1_Text_0:
-# 422 "data/challenge_balls.pory"
+# 419 "data/challenge_balls.pory"
 	.string "You enter an area lacking in humidity.\p"
 	.string "Reach out for the item?$"
 
 Route134_EventScript_ChallengeBall1_Text_0:
-# 445 "data/challenge_balls.pory"
+# 441 "data/challenge_balls.pory"
 	.string "An electric current runs through the\n"
 	.string "sand.\p"
 	.string "Reach out for the item?$"
 
 Route119_EventScript_ChallengeBall1_Text_0:
-# 465 "data/challenge_balls.pory"
+# 461 "data/challenge_balls.pory"
 	.string "Enemies manipulating their own power\n"
 	.string "are near.\p"
 	.string "Reach out for the item?$"

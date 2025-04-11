@@ -15,15 +15,5 @@ MtPyre_Exterior_EventScript_CheckEnterFromSummit::
 MtPyre_Exterior_EventScript_EnterFromSummit::
 	setweather WEATHER_FOG_HORIZONTAL
 	return
-
-MtPyre_Exterior_EventScript_FogTrigger::
-	setweather WEATHER_FOG_HORIZONTAL
-	doweather
-	end
-
-MtPyre_Exterior_EventScript_SunTrigger::
-	setweather WEATHER_SUNNY
-	doweather
-	end
 `
 

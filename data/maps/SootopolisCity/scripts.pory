@@ -1283,8 +1283,7 @@ script SootopolisCity_EventScript_StartLegendariesScene {
 	special (RemoveCameraObject)
 	delay (60)
 	fadescreenspeed (FADE_TO_BLACK, 8)
-	setweather (WEATHER_ABNORMAL)
-	doweather
+	call (WeatherScript_SetAndDo_Abnormal)
 	setvar (VAR_0x8004, FALSE) // Just do Groudon/Kyogre fight scene
 	special (Script_DoRayquazaScene)
 	waitstate
@@ -1449,8 +1448,7 @@ script SootopolisCity_EventScript_StartRayquazaScene {
 		special (ShakeCamera)
 		waitstate
 		waitmoncry
-		setweather (WEATHER_NONE)
-		doweather
+		call (WeatherScript_SetAndDo_None)
 		applymovement (LOCALID_RAYQUAZA, SootopolisCity_Movement_RayquazaFlyOff)
 		waitmovement (0)
 		removeobject (LOCALID_RAYQUAZA)

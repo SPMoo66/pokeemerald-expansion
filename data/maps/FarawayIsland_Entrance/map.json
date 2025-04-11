@@ -65,7 +65,7 @@
       "elevation": 3,
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
-      "script": "FarawayIsland_Entrance_EventScript_SetCloudsWeather"
+      "script": "WeatherScript_SetAndDo_SunnyClouds"
     },
     {
       "type": "trigger",
@@ -74,7 +74,7 @@
       "elevation": 3,
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
-      "script": "FarawayIsland_Entrance_EventScript_ClearWeather"
+      "script": "WeatherScript_SetAndDo_None"
     },
     {
       "type": "trigger",
@@ -83,7 +83,7 @@
       "elevation": 3,
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
-      "script": "FarawayIsland_Entrance_EventScript_SetCloudsWeather"
+      "script": "WeatherScript_SetAndDo_SunnyClouds"
     }
   ],
   "bg_events": [

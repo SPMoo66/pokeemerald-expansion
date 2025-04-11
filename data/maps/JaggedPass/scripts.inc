@@ -21,13 +21,8 @@ JaggedPass_EventScript_SetReadyToOpenHideout::
 	return
 
 JaggedPass_OnTransition:
-	call_if_eq VAR_JAGGED_PASS_ASH_WEATHER, 1, JaggedPass_EventScript_SetWeatherAsh
+	call_if_eq VAR_JAGGED_PASS_ASH_WEATHER, 1, WeatherScript_SetAndDo_VolcanicAsh
 	end
-
-JaggedPass_EventScript_SetWeatherAsh::
-	setweather WEATHER_VOLCANIC_ASH
-	doweather
-	return
 
 JaggedPass_OnLoad:
 	goto_if_le VAR_JAGGED_PASS_STATE, 1, JaggedPass_EventScript_ConcealHideoutEntrance

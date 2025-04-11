@@ -45,7 +45,6 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	waitmovement 0
 	delay 50
 	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_ArchieFacePlayer0
-	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_ArchieFacePlayer1
 	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_ArchieFacePlayer2
 	speakername (CommonText_Archie)
 	msgbox MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo, MSGBOX_DEFAULT
@@ -74,10 +73,6 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 MtPyre_Summit_EventScript_ArchieFacePlayer0::
 	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieFacePlayer0
 	waitmovement 0
-	return
-
-@ Archie is already facing player
-MtPyre_Summit_EventScript_ArchieFacePlayer1::
 	return
 
 MtPyre_Summit_EventScript_ArchieFacePlayer2::

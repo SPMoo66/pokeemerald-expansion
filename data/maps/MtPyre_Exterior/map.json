@@ -72,7 +72,7 @@
       "elevation": 3,
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
-      "script": "MtPyre_Exterior_EventScript_FogTrigger"
+      "script": "WeatherScript_SetAndDo_FogHorizontal"
     },
     {
       "type": "trigger",
@@ -81,7 +81,7 @@
       "elevation": 3,
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
-      "script": "MtPyre_Exterior_EventScript_FogTrigger"
+      "script": "WeatherScript_SetAndDo_FogHorizontal"
     },
     {
       "type": "trigger",
@@ -90,7 +90,7 @@
       "elevation": 3,
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
-      "script": "MtPyre_Exterior_EventScript_SunTrigger"
+      "script": "WeatherScript_SetAndDo_Sunny"
     },
     {
       "type": "trigger",
@@ -99,7 +99,7 @@
       "elevation": 3,
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
-      "script": "MtPyre_Exterior_EventScript_SunTrigger"
+      "script": "WeatherScript_SetAndDo_Sunny"
     },
     {
       "type": "trigger",
@@ -108,7 +108,7 @@
       "elevation": 3,
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
-      "script": "MtPyre_Exterior_EventScript_FogTrigger"
+      "script": "WeatherScript_SetAndDo_FogHorizontal"
     }
   ],
   "bg_events": [

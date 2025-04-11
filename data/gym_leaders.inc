@@ -740,6 +740,107 @@ MossdeepCity_Gym_EventScript_TateAndLizaRematch::
 	return
 
 
+SootopolisCity_Gym_1F_EventScript_Juan::
+# 1096 "data/gym_leaders.pory"
+	setflag FLAG_CHALLENGING_TRAINER
+# 1097 "data/gym_leaders.pory"
+	trainerbattle_single TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanIntro, SootopolisCity_Gym_1F_Text_JuanDefeat, SootopolisCity_Gym_1F_EventScript_JuanDefeated, NO_MUSIC
+# 1098 "data/gym_leaders.pory"
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+# 1099 "data/gym_leaders.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq SootopolisCity_Gym_1F_EventScript_Juan_2
+SootopolisCity_Gym_1F_EventScript_Juan_1:
+# 1102 "data/gym_leaders.pory"
+	goto_if_unset FLAG_BADGE06_GET, SootopolisCity_Gym_1F_EventScript_Juan_5
+SootopolisCity_Gym_1F_EventScript_Juan_4:
+# 1105 "data/gym_leaders.pory"
+	msgbox SootopolisCity_Gym_1F_Text_JuanPostBattle, MSGBOX_DEFAULT
+# 1106 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 1107 "data/gym_leaders.pory"
+	release
+	return
+
+SootopolisCity_Gym_1F_EventScript_Juan_2:
+# 1100 "data/gym_leaders.pory"
+	goto SootopolisCity_Gym_1F_EventScript_JuanRematch
+	goto SootopolisCity_Gym_1F_EventScript_Juan_1
+
+SootopolisCity_Gym_1F_EventScript_Juan_5:
+# 1103 "data/gym_leaders.pory"
+	goto SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge
+	goto SootopolisCity_Gym_1F_EventScript_Juan_4
+
+
+SootopolisCity_Gym_1F_EventScript_JuanDefeated::
+# 1111 "data/gym_leaders.pory"
+	message SootopolisCity_Gym_1F_Text_ReceivedRainBadge
+# 1112 "data/gym_leaders.pory"
+	waitmessage
+# 1113 "data/gym_leaders.pory"
+	call Common_EventScript_PlayGymBadgeFanfare
+# 1114 "data/gym_leaders.pory"
+	msgbox SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
+# 1115 "data/gym_leaders.pory"
+	setflag FLAG_DEFEATED_SOOTOPOLIS_GYM
+# 1116 "data/gym_leaders.pory"
+	setflag FLAG_BADGE08_GET
+# 1117 "data/gym_leaders.pory"
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS
+# 1118 "data/gym_leaders.pory"
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
+# 1119 "data/gym_leaders.pory"
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
+# 1120 "data/gym_leaders.pory"
+	setvar VAR_SOOTOPOLIS_CITY_STATE, 6
+# 1121 "data/gym_leaders.pory"
+	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_MAN_1
+# 1122 "data/gym_leaders.pory"
+	setvar VAR_0x8008, 8
+# 1123 "data/gym_leaders.pory"
+	call Common_EventScript_SetGymTrainers
+# 1124 "data/gym_leaders.pory"
+	giveitem ITEM_TM_HYDRO_PUMP
+# 1125 "data/gym_leaders.pory"
+	msgbox SootopolisCity_Gym_1F_Text_ExplainHydroPump, MSGBOX_DEFAULT
+# 1126 "data/gym_leaders.pory"
+	closemessage
+# 1127 "data/gym_leaders.pory"
+	delay 30
+# 1128 "data/gym_leaders.pory"
+	playfanfare MUS_REGISTER_MATCH_CALL
+# 1129 "data/gym_leaders.pory"
+	msgbox SootopolisCity_Gym_1F_Text_RegisteredJuan, MSGBOX_DEFAULT
+# 1130 "data/gym_leaders.pory"
+	waitfanfare
+# 1131 "data/gym_leaders.pory"
+	closemessage
+# 1132 "data/gym_leaders.pory"
+	delay 30
+# 1133 "data/gym_leaders.pory"
+	setflag FLAG_ENABLE_JUAN_MATCH_CALL
+# 1134 "data/gym_leaders.pory"
+	release
+	return
+
+
+SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge::
+# 1138 "data/gym_leaders.pory"
+	msgbox SootopolisCity_Gym_1F_Text_GoGetFortreeBadge, MSGBOX_DEFAULT
+# 1139 "data/gym_leaders.pory"
+	release
+	return
+
+
+SootopolisCity_Gym_1F_EventScript_JuanRematch::
+# 1143 "data/gym_leaders.pory"
+	trainerbattle_rematch_double TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanPreRematch, SootopolisCity_Gym_1F_Text_JuanRematchDefeat, SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons
+# 1144 "data/gym_leaders.pory"
+	msgbox SootopolisCity_Gym_1F_Text_JuanPostRematch, MSGBOX_AUTOCLOSE
+	return
+
+
 RustboroCity_Gym_Text_RoxanneIntro::
 # 57 "data/gym_leaders.pory"
 	.string "Hello, I am Roxanne, the Rustboro\n"
@@ -1429,3 +1530,126 @@ MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons::
 	.string "Liza: You brought just one Pokémon!\p"
 	.string "Tate: We need you to bring at least…\n"
 	.string "Liza: Two Pokémon when you come back.$"
+
+SootopolisCity_Gym_1F_Text_JuanIntro::
+# 1148 "data/gym_leaders.pory"
+	.string "Let me ask you.\n"
+	.string "Did you know?\l"
+	.string "Ah, I should not be so coy.\p"
+	.string "It was I who taught Wallace everything\n"
+	.string "there is to know about Pokémon.\p"
+	.string "Once, I had given up my position as\n"
+	.string "the Gym Leader.\p"
+	.string "In my place, I had entrusted Wallace\n"
+	.string "with the Gym.\p"
+	.string "However, a compelling reason arose for\n"
+	.string "me to make a comeback.\p"
+	.string "Ah, but enough chatter.\n"
+	.string "Let us begin our match, shall we?\p"
+	.string "Please, you shall bear witness to\n"
+	.string "our artistry.\p"
+	.string "A grand illusion of water sculpted\n"
+	.string "by Pokémon and myself!$"
+
+SootopolisCity_Gym_1F_Text_JuanDefeat::
+# 1172 "data/gym_leaders.pory"
+	.string "Ahahaha, excellent!\n"
+	.string "Very well, you are the winner.\p"
+	.string "From you, I sense the brilliant shine\n"
+	.string "of skill that will overcome all.\p"
+	.string "However, compared with me or even\n"
+	.string "Wallace, you are lacking in elegance.\p"
+	.string "Perhaps I should make you a loan\n"
+	.string "of my outfit?\p"
+	.string "… … … … … …\n"
+	.string "… … … … … …\p"
+	.string "Hahaha, I merely jest!\p"
+	.string "Rather than my clothes, I shall reward\n"
+	.string "you with this, the Rain Badge!$"
+
+SootopolisCity_Gym_1F_Text_ReceivedRainBadge::
+# 1188 "data/gym_leaders.pory"
+	.string "{PLAYER} received the Rain Badge\n"
+	.string "from Juan.$"
+
+SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis::
+# 1193 "data/gym_leaders.pory"
+	.string "Having the Rain Badge shall assure you\n"
+	.string "the full obedience of all your Pokémon\l"
+	.string "to your every command.\p"
+	.string "The Rain Badge also allows the use\n"
+	.string "of Waterfall to scale walls of \l"
+	.string "cascading water.\p"
+	.string "And, so that you never forget the\n"
+	.string "battle we shared, take this…$"
+
+SootopolisCity_Gym_1F_Text_ExplainHydroPump::
+# 1204 "data/gym_leaders.pory"
+	.string "The Technical Machine I handed you\n"
+	.string "contains Hydro Pump.\p"
+	.string "In use, it will strike twice with\n"
+	.string "a huge volume of pressurized water.\p"
+	.string "… … … … … …$"
+
+SootopolisCity_Gym_1F_Text_RegisteredJuan::
+# 1212 "data/gym_leaders.pory"
+	.string "Registered Gym Leader Juan\n"
+	.string "in the Pokénav.$"
+
+SootopolisCity_Gym_1F_Text_JuanPostBattle::
+# 1217 "data/gym_leaders.pory"
+	.string "The Trainers who have gathered all\n"
+	.string "the Gym Badges of Hoenn should make\l"
+	.string "way to the ultimate destination.\p"
+	.string "The Pokémon League.\p"
+	.string "Travel to the easternmost reaches\n"
+	.string "of Hoenn, to the island Ever Grande.\p"
+	.string "There, you shall find the Pokémon\n"
+	.string "League.$"
+
+SootopolisCity_Gym_1F_Text_GoGetFortreeBadge::
+# 1228 "data/gym_leaders.pory"
+	.string "There remains but one Badge to\n"
+	.string "obtain in Hoenn.\p"
+	.string "If you wish to challenge the Pokémon\n"
+	.string "League, you must obtain the last\l"
+	.string "Badge from the Gym in Fortree.$"
+
+SootopolisCity_Gym_1F_Text_JuanPreRematch::
+# 1236 "data/gym_leaders.pory"
+	.string "Juan: Ah, this Gym had returned to its\n"
+	.string "usual state of serenity…\p"
+	.string "But our young typhoon has returned\n"
+	.string "to put us to the test again!\p"
+	.string "Well, my friend, most certainly!\p"
+	.string "I shall be delighted to dance with you\n"
+	.string "as often as you wish!$"
+
+SootopolisCity_Gym_1F_Text_JuanRematchDefeat::
+# 1246 "data/gym_leaders.pory"
+	.string "Ahahaha, you are the winner!\n"
+	.string "You have defeated me again!$"
+
+SootopolisCity_Gym_1F_Text_JuanPostRematch::
+# 1251 "data/gym_leaders.pory"
+	.string "Juan: If I told you to become my\n"
+	.string "apprentice, you will refuse, I am sure.\p"
+	.string "I would like to make a gift of my coat\n"
+	.string "to you.\p"
+	.string "But again, you will refuse.\n"
+	.string "I imagine that to be so.\p"
+	.string "And that, my friend, is a certain sign\n"
+	.string "of nobility!$"
+
+SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons::
+# 1262 "data/gym_leaders.pory"
+	.string "Juan: Ah, this Gym had returned to its\n"
+	.string "usual state of serenity…\p"
+	.string "But our young typhoon has returned\n"
+	.string "to put us to the test again!\p"
+	.string "Well, my friend, most certainly!\n"
+	.string "I shall be delighted to dance with you…\p"
+	.string "Ah, no, no, no.\n"
+	.string "You have with you but one Pokémon.\p"
+	.string "I wish that you would return with\n"
+	.string "two, perhaps more, Pokémon, please.$"

@@ -585,32 +585,6 @@ Route110_TrickHousePuzzle5_EventScript_Mechadoll2WalkRight5::
 	waitmovement 0
 	return
 
-Route110_TrickHousePuzzle5_Movement_WalkLeft2:
-	walk_left
-	walk_left
-	step_end
-
-Route110_TrickHousePuzzle5_Movement_WalkLeft3:
-	walk_left
-	walk_left
-	walk_left
-	step_end
-
-Route110_TrickHousePuzzle5_Movement_WalkLeft4:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
-
-Route110_TrickHousePuzzle5_Movement_WalkLeft5:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
-
 Route110_TrickHousePuzzle5_Movement_MechadollShake:
 	face_left
 	delay_2

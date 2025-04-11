@@ -1,14 +1,14 @@
-WeatherScript_SetAndDo_Sunny::
+WeatherScript_SetAndDo_None::
 # 2 "data/scripts/weather.pory"
-	setweather WEATHER_SUNNY
+	setweather WEATHER_NONE
 # 3 "data/scripts/weather.pory"
 	doweather
 	return
 
 
-WeatherScript_SetAndDo_FogHorizontal::
+WeatherScript_SetAndDo_Sunny::
 # 7 "data/scripts/weather.pory"
-	setweather WEATHER_FOG_HORIZONTAL
+	setweather WEATHER_SUNNY
 # 8 "data/scripts/weather.pory"
 	doweather
 	return
@@ -22,33 +22,33 @@ WeatherScript_SetAndDo_SunnyClouds::
 	return
 
 
-WeatherScript_SetAndDo_None::
+WeatherScript_SetAndDo_Drought::
 # 17 "data/scripts/weather.pory"
-	setweather WEATHER_NONE
+	setweather WEATHER_DROUGHT
 # 18 "data/scripts/weather.pory"
 	doweather
 	return
 
 
-WeatherScript_SetAndDo_VolcanicAsh::
+WeatherScript_SetAndDo_FogHorizontal::
 # 22 "data/scripts/weather.pory"
-	setweather WEATHER_VOLCANIC_ASH
+	setweather WEATHER_FOG_HORIZONTAL
 # 23 "data/scripts/weather.pory"
 	doweather
 	return
 
 
-WeatherScript_SetAndDo_Sandstorm::
+WeatherScript_SetAndDo_VolcanicAsh::
 # 27 "data/scripts/weather.pory"
-	setweather WEATHER_SANDSTORM
+	setweather WEATHER_VOLCANIC_ASH
 # 28 "data/scripts/weather.pory"
 	doweather
 	return
 
 
-WeatherScript_SetAndDo_Abnormal::
+WeatherScript_SetAndDo_Sandstorm::
 # 32 "data/scripts/weather.pory"
-	setweather WEATHER_ABNORMAL
+	setweather WEATHER_SANDSTORM
 # 33 "data/scripts/weather.pory"
 	doweather
 	return
@@ -70,9 +70,9 @@ WeatherScript_SetAndDo_Snow::
 	return
 
 
-WeatherScript_SetAndDo_Drought::
+WeatherScript_SetAndDo_Abnormal::
 # 47 "data/scripts/weather.pory"
-	setweather WEATHER_DROUGHT
+	setweather WEATHER_ABNORMAL
 # 48 "data/scripts/weather.pory"
 	doweather
 	return

@@ -34,29 +34,13 @@ SootopolisCity_Gym_1F_EventScript_StopCheckingStairs::
 	return
 
 SootopolisCity_Gym_1F_OnFrame:
-	map_script_2 VAR_ICE_STEP_COUNT, 8, SootopolisCity_Gym_1F_EventScript_UnlockFirstStairs
-	map_script_2 VAR_ICE_STEP_COUNT, 28, SootopolisCity_Gym_1F_EventScript_UnlockSecondStairs
-	map_script_2 VAR_ICE_STEP_COUNT, 67, SootopolisCity_Gym_1F_EventScript_UnlockThirdStairs
+	map_script_2 VAR_ICE_STEP_COUNT, 8, SootopolisCity_Gym_1F_EventScript_UnlockStairs
+	map_script_2 VAR_ICE_STEP_COUNT, 28, SootopolisCity_Gym_1F_EventScript_UnlockStairs
+	map_script_2 VAR_ICE_STEP_COUNT, 67, SootopolisCity_Gym_1F_EventScript_UnlockStairs
 	map_script_2 VAR_ICE_STEP_COUNT, 0, SootopolisCity_Gym_1F_EventScript_FallThroughIce
 	.2byte 0
 
-SootopolisCity_Gym_1F_EventScript_UnlockFirstStairs::
-	addvar VAR_ICE_STEP_COUNT, 1
-	delay 40
-	playse SE_ICE_STAIRS
-	call SootopolisCity_Gym_1F_EventScript_CheckSetStairMetatiles
-	special DrawWholeMapView
-	end
-
-SootopolisCity_Gym_1F_EventScript_UnlockSecondStairs::
-	addvar VAR_ICE_STEP_COUNT, 1
-	delay 40
-	playse SE_ICE_STAIRS
-	call SootopolisCity_Gym_1F_EventScript_CheckSetStairMetatiles
-	special DrawWholeMapView
-	end
-
-SootopolisCity_Gym_1F_EventScript_UnlockThirdStairs::
+SootopolisCity_Gym_1F_EventScript_UnlockStairs::
 	addvar VAR_ICE_STEP_COUNT, 1
 	delay 40
 	playse SE_ICE_STAIRS
@@ -67,17 +51,13 @@ SootopolisCity_Gym_1F_EventScript_UnlockThirdStairs::
 SootopolisCity_Gym_1F_EventScript_FallThroughIce::
 	lockall
 	delay 20
-	applymovement OBJ_EVENT_ID_PLAYER, SootopolisCity_Gym_1F_Movement_FallThroughIce
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_SetInvisible
 	waitmovement 0
 	playse SE_FALL
 	delay 60
 	warphole MAP_SOOTOPOLIS_CITY_GYM_B1F
 	waitstate
 	end
-
-SootopolisCity_Gym_1F_Movement_FallThroughIce:
-	set_invisible
-	step_end
 
 SootopolisCity_Gym_1F_EventScript_GymGuide::
 	lock

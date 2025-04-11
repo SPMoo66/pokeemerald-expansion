@@ -10777,7 +10777,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerPic = TRAINER_PIC_ROCKET_F,
         .trainerName = _("Grunt"),
         .items = {},
         .doubleBattle = TRUE,
@@ -10813,7 +10813,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerPic = TRAINER_PIC_ROCKET_F,
         .trainerName = _("Grunt"),
         .items = {},
         .doubleBattle = TRUE,
@@ -10825,7 +10825,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_ROCKET_M,
+        .trainerPic = TRAINER_PIC_ROCKET_F,
         .trainerName = _("Grunt"),
         .items = {},
         .doubleBattle = TRUE,

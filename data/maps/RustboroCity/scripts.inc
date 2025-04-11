@@ -654,7 +654,8 @@ RustboroCity_EventScript_MayEncounter::
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox RustboroCity_Text_RegisteredMay, MSGBOX_DEFAULT
+	bufferstring STR_VAR_2, CommonText_May
+	msgbox Text_RegisteredInPokenav_OneInput, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
@@ -731,7 +732,8 @@ RustboroCity_EventScript_BrendanEncounter::
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox RustboroCity_Text_RegisteredBrendan, MSGBOX_DEFAULT
+	bufferstring STR_VAR_2, CommonText_Brendan
+	msgbox Text_RegisteredInPokenav_OneInput, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
@@ -969,10 +971,6 @@ RustboroCity_Text_MayHiLetsRegister:
 	.string "contact one another anytime!\p"
 	.string "… … … … … …$"
 
-RustboroCity_Text_RegisteredMay:
-	.string "Registered May\n"
-	.string "in the Pokénav.$"
-
 RustboroCity_Text_MayPassedBrineyWantToBattle:
 	.string "Oh, by the way, I passed\n"
 	.string "Mr. Briney in Petalburg Woods.\p"
@@ -1015,10 +1013,6 @@ RustboroCity_Text_BrendanHiLetsRegister:
 	.string "Let's register each other so we can\n"
 	.string "get in touch anytime!\p"
 	.string "… … … … … …$"
-
-RustboroCity_Text_RegisteredBrendan:
-	.string "Registered Brendan\n"
-	.string "in the Pokénav.$"
 
 RustboroCity_Text_BrendanPassedBrineyWantToBattle:
 	.string "By the way, {PLAYER}, I walked by\n"

@@ -44,7 +44,9 @@ script RustboroCity_Gym_EventScript_RegisterRoxanne {
 	waitmessage
 	delay (30)
 	playfanfare (MUS_REGISTER_MATCH_CALL)
-	msgbox (RustboroCity_Gym_Text_RegisteredRoxanne, MSGBOX_DEFAULT)
+	bufferstring (STR_VAR_1, Text_GymLeader)
+	bufferstring (STR_VAR_2, CommonText_Roxanne)
+	msgbox (Text_RegisteredInPokenav_TwoInputs, MSGBOX_DEFAULT)
 	waitfanfare
 	closemessage
 	delay (30)
@@ -124,11 +126,6 @@ text RustboroCity_Gym_Text_RoxanneRegisterCall {
 	"… … … … … Click!"
 }
 
-text RustboroCity_Gym_Text_RegisteredRoxanne {
-	"Registered Gym Leader Roxanne\n"
-	"in the Pokénav."
-}
-
 text RustboroCity_Gym_Text_RoxannePreRematch {
 	"Roxanne: I'm so glad to see you again.\n"
 	"I'm Roxanne, the Gym Leader here.\p"
@@ -195,7 +192,9 @@ script DewfordTown_Gym_EventScript_BrawlyDefeated {
 	closemessage
 	delay (30)
 	playfanfare (MUS_REGISTER_MATCH_CALL)
-	msgbox (DewfordTown_Gym_Text_RegisteredBrawly, MSGBOX_DEFAULT)
+	bufferstring (STR_VAR_1, Text_GymLeader)
+	bufferstring (STR_VAR_2, CommonText_Brawly)
+	msgbox (Text_RegisteredInPokenav_TwoInputs, MSGBOX_DEFAULT)
 	waitfanfare
 	closemessage
 	delay (30)
@@ -250,11 +249,6 @@ text DewfordTown_Gym_Text_ExplainBulkUp {
 	"It's a move that raises both Attack\n"
 	"and Defense stats.\p"
 	"… … … … … …"
-}
-
-text DewfordTown_Gym_Text_RegisteredBrawly {
-	"Registered Gym Leader Brawly\n"
-	"in the Pokénav."
 }
 
 text DewfordTown_Gym_Text_BrawlyPostBattle {
@@ -335,7 +329,9 @@ script MauvilleCity_Gym_EventScript_WattsonDefeated {
 	closemessage
 	delay (30)
 	playfanfare (MUS_REGISTER_MATCH_CALL)
-	msgbox (MauvilleCity_Gym_Text_RegisteredWattson, MSGBOX_DEFAULT)
+	bufferstring (STR_VAR_1, Text_GymLeader)
+	bufferstring (STR_VAR_2, CommonText_Wattson)
+	msgbox (Text_RegisteredInPokenav_TwoInputs, MSGBOX_DEFAULT)
 	waitfanfare
 	closemessage
 	delay (30)
@@ -395,11 +391,6 @@ text MauvilleCity_Gym_Text_ExplainChargeBeam {
 	"It's a trustworthy move that always\n"
 	"raises Sp. Attack! You can count on it!\p"
 	"… … … … … …"
-}
-
-text MauvilleCity_Gym_Text_RegisteredWattson {
-	"Registered Gym Leader Wattson\n"
-	"in the Pokénav."
 }
 
 text MauvilleCity_Gym_Text_WattsonPostBattle {
@@ -482,7 +473,9 @@ script LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated {
 	closemessage
 	delay (30)
 	playfanfare (MUS_REGISTER_MATCH_CALL)
-	msgbox (LavaridgeTown_Gym_1F_Text_RegisteredFlannery, MSGBOX_DEFAULT)
+	bufferstring (STR_VAR_1, Text_GymLeader)
+	bufferstring (STR_VAR_2, CommonText_Flannery)
+	msgbox (Text_RegisteredInPokenav_TwoInputs, MSGBOX_DEFAULT)
 	waitfanfare
 	closemessage
 	delay (30)
@@ -548,11 +541,6 @@ text LavaridgeTown_Gym_1F_Text_ExplainBlazeKick {
 	"That move inflicts serious damage on\n"
 	"the opponent and has a high chance\l"
 	"to deal a critical hit.$"
-}
-
-text LavaridgeTown_Gym_1F_Text_RegisteredFlannery {
-	"Registered Gym Leader Flannery\n"
-	"in the Pokénav.$"
 }
 
 text LavaridgeTown_Gym_1F_Text_FlanneryPostBattle {
@@ -823,7 +811,9 @@ script FortreeCity_Gym_EventScript_WinonaDefeated {
 	closemessage
 	delay (30)
 	playfanfare (MUS_REGISTER_MATCH_CALL)
-	msgbox (FortreeCity_Gym_Text_RegisteredWinona, MSGBOX_DEFAULT)
+	bufferstring (STR_VAR_1, Text_GymLeader)
+	bufferstring (STR_VAR_2, CommonText_Winona)
+	msgbox (Text_RegisteredInPokenav_TwoInputs, MSGBOX_DEFAULT)
 	waitfanfare
 	closemessage
 	delay (30)
@@ -880,11 +870,6 @@ text FortreeCity_Gym_Text_ExplainDualWingbeat {
 	"Its speed…\n"
 	"Two wings strike at blinding speed.\p"
 	"… … … … … …"
-}
-
-text FortreeCity_Gym_Text_RegisteredWinona {
-	"Registered Gym Leader Winona\n"
-	"in the Pokénav."
 }
 
 text FortreeCity_Gym_Text_WinonaPostBattle {
@@ -969,7 +954,9 @@ script MossdeepCity_Gym_EventScript_TateAndLizaDefeated {
 	closemessage
 	delay (30)
 	playfanfare (MUS_REGISTER_MATCH_CALL)
-	msgbox (MossdeepCity_Gym_Text_RegisteredTateAndLiza, MSGBOX_DEFAULT)
+	bufferstring (STR_VAR_1, Text_GymLeaders)
+	bufferstring (STR_VAR_2, CommonText_LizaAndTate)
+	msgbox (Text_RegisteredInPokenav_TwoInputs, MSGBOX_DEFAULT)
 	waitfanfare
 	closemessage
 	delay (30)
@@ -1026,11 +1013,6 @@ text MossdeepCity_Gym_Text_ExplainTrickRoom {
 	"Tate: It's a move that's perfect…\n"
 	"Liza: For Psychic Pokémon!\p"
 	"… … … … … …"
-}
-
-text MossdeepCity_Gym_Text_RegisteredTateAndLiza {
-	"Registered Gym Leaders Tate & Liza\n"
-	"in the Pokénav."
 }
 
 text MossdeepCity_Gym_Text_TateAndLizaPostBattle {
@@ -1126,7 +1108,9 @@ script SootopolisCity_Gym_1F_EventScript_JuanDefeated {
 	closemessage
 	delay (30)
 	playfanfare (MUS_REGISTER_MATCH_CALL)
-	msgbox (SootopolisCity_Gym_1F_Text_RegisteredJuan, MSGBOX_DEFAULT)
+	bufferstring (STR_VAR_1, Text_GymLeader)
+	bufferstring (STR_VAR_2, CommonText_Juan)
+	msgbox (Text_RegisteredInPokenav_TwoInputs, MSGBOX_DEFAULT)
 	waitfanfare
 	closemessage
 	delay (30)
@@ -1207,11 +1191,6 @@ text SootopolisCity_Gym_1F_Text_ExplainHydroPump {
 	"In use, it will strike twice with\n"
 	"a huge volume of pressurized water.\p"
 	"… … … … … …"
-}
-
-text SootopolisCity_Gym_1F_Text_RegisteredJuan {
-	"Registered Gym Leader Juan\n"
-	"in the Pokénav."
 }
 
 text SootopolisCity_Gym_1F_Text_JuanPostBattle {

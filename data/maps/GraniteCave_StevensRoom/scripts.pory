@@ -168,7 +168,8 @@ script GraniteCave_StevensRoom_EventScript_Steven {
 		closemessage
 		delay (30)
 		playfanfare (MUS_REGISTER_MATCH_CALL)
-		msgbox (GraniteCave_StevensRoom_Text_RegisteredSteven)
+		bufferstring (STR_VAR_2, CommonText_Steven)
+		msgbox (Text_RegisteredInPokenav_OneInput)
 		waitfanfare
 		closemessage
 		delay (30)
@@ -236,11 +237,6 @@ text GraniteCave_StevensRoom_Text_ThankYouTakeThis {
 	"You went through all this trouble to\n"
 	"deliver that. I need to thank you.\p"
 	"Let me see…"
-}
-
-text GraniteCave_StevensRoom_Text_RegisteredSteven {
-	"Registered Steven\n"
-	"in the Pokénav.$"
 }
 
 text GraniteCave_StevensRoom_Text_IveGotToHurryAlong {

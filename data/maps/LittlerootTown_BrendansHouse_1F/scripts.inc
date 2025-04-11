@@ -351,10 +351,6 @@ PlayersHouse_1F_Text_IsThatAPokenav:
 	.string "your mom?\p"
 	.string "… … …$"
 
-PlayersHouse_1F_Text_RegisteredMom:
-	.string "Registered Mom\n"
-	.string "in the Pokénav.$"
-
 PlayersHouse_1F_Text_Vigoroth1:
 	.string "Fugiiiiih!$"
 

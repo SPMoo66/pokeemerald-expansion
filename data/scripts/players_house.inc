@@ -326,8 +326,8 @@ PlayersHouse_1F_EventScript_TryRegisterMom::
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	speakername CommonText_Mom
-	msgbox PlayersHouse_1F_Text_RegisteredMom, MSGBOX_DEFAULT
+	bufferstring STR_VAR_2, CommonText_Mom
+	msgbox Text_RegisteredInPokenav_OneInput, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30

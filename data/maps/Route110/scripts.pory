@@ -580,7 +580,8 @@ Route110_EventScript_BirchScene::
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox MatchCall_Text_RegisteredBirch, MSGBOX_DEFAULT
+	bufferstring STR_VAR_2, CommonText_Birch
+	msgbox Text_RegisteredInPokenav_OneInput, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30

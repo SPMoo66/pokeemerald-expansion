@@ -452,7 +452,8 @@ MauvilleCity_EventScript_RegisterWallyCall::
 	waitmessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox MauvilleCity_Text_RegisteredWally, MSGBOX_DEFAULT
+	bufferstring STR_VAR_2, CommonText_Wally
+	msgbox Text_RegisteredInPokenav_OneInput, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
@@ -557,10 +558,6 @@ MauvilleCity_Text_WallyPokenavCall:
 	.string "anytime, {PLAYER}!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
-
-MauvilleCity_Text_RegisteredWally:
-	.string "Registered Wally\n"
-	.string "in the Pokénav.$"
 
 MauvilleCity_Text_ScottYouDidntHoldBack:
 	.string "Hehe…\n"

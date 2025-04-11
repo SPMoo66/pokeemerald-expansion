@@ -1,0 +1,21 @@
+text Text_RegisteredInPokenav_OneInput {
+	"Registered {STR_VAR_2}\n"
+	"in the Pokénav."
+}
+
+text Text_RegisteredInPokenav_TwoInputs {
+	"Registered {STR_VAR_1} {STR_VAR_2}\n"
+	"in the Pokénav."
+}
+
+text Text_GymLeader {
+	"Gym Leader"
+}
+
+text Text_GymLeaders {
+	"Gym Leaders"
+}
+
+text Text_ThisScottPerson {
+	"this Scott person"
+}

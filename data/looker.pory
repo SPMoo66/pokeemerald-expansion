@@ -115,7 +115,8 @@ script Route115_EventScript_Looker {
 	waitmessage
 	delay (30)
 	playfanfare (MUS_REGISTER_MATCH_CALL)
-	msgbox (MatchCall_Text_RegisteredLooker, MSGBOX_DEFAULT)
+	bufferstring (STR_VAR_2, CommonText_Looker)
+	msgbox (Text_RegisteredInPokenav_OneInput, MSGBOX_DEFAULT)
 	waitfanfare
 	closemessage
 	delay (30)
@@ -137,11 +138,6 @@ text Route115_Text_Looker_Call {
 	"The enemy, they've already\l"
 	"launched an attack!\p"
 	"… … … … … Click!"
-}
-
-text MatchCall_Text_RegisteredLooker {
-	"Registered Looker\n"
-	"in the Pokénav.$"
 }
 
 

@@ -378,7 +378,9 @@ Route104_EventScript_SailToDewfordDadCalls::
 	waitmessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox Route104_Text_RegisteredDadInPokenav, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_Dad
+	bufferstring STR_VAR_2, CommonText_Norman
+	msgbox Text_RegisteredInPokenav_TwoInputs, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
@@ -1129,3 +1131,20 @@ Route104_Text_BrendanPostBattle:
 	.string "making Pokémon battle.\p"
 	.string "Like Mr. Briney, it's important to\n"
 	.string "become friends with your Pokémon.$"
+
+Route104_Text_DadPokenavCall:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Dad: Oh, {PLAYER}?\p"
+	.string "… … … … … …\n"
+	.string "Where are you now?\l"
+	.string "It sounds windy wherever you are.\p"
+	.string "I just heard from Devon's Mr. Stone\n"
+	.string "about your Pokénav, so I decided\l"
+	.string "to give you a call.\p"
+	.string "It sounds like you're doing fine,\n"
+	.string "so that's fine with me.\p"
+	.string "You take care now.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+

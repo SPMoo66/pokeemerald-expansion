@@ -2963,10 +2963,6 @@ MatchCall_Text_BirchRegisterCall: @ 82B5F52
 	.string "out in the field.\p"
 	.string "… … … … … …$"
 
-MatchCall_Text_RegisteredBirch: @ 82B603A
-	.string "Registered Prof. Birch\n"
-	.string "in the Pokénav.$"
-
 MatchCall_Text_MrStone1:: @ 82B60C0
 	.string "Mr. Stone: Oh? {PLAYER}{KUN}!\p"
 	.string "Since you called me, the Pokénav\n"

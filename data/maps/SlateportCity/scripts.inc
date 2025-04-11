@@ -95,7 +95,8 @@ SlateportCity_EventScript_ScottScene::
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox SlateportCity_Text_RegisteredScott, MSGBOX_DEFAULT
+	bufferstring STR_VAR_2, Text_ThisScottPerson
+	msgbox Text_RegisteredInPokenav_OneInput, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
@@ -1336,10 +1337,6 @@ SlateportCity_Text_LetsRegisterEachOther:
 	.string "So, let's register each other in our\n"
 	.string "Pokénavs.\p"
 	.string "… … … … … …$"
-
-SlateportCity_Text_RegisteredScott:
-	.string "Registered this Scott person\n"
-	.string "in the Pokénav.$"
 
 SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou:
 	.string "What I'd like to do is tag along with\n"

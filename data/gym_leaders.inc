@@ -994,15 +994,24 @@ PetalburgCity_Gym_Text_DadHappyAndSad::
 	.string "But as a father, it makes me both\n"
 	.string "happy and a little sad. It's odd…$"
 
-PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough::
+PetalburgCity_Gym_Text_DadGoingToKeepTraining::
 # 738 "data/gym_leaders.pory"
+	.string "{PLAYER}, you should go visit your\n"
+	.string "mother every so often.\p"
+	.string "I'm going to stay here and redouble\n"
+	.string "my training.\p"
+	.string "It would bother me as a Trainer to\n"
+	.string "not avenge my loss to you, {PLAYER}!$"
+
+PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough::
+# 747 "data/gym_leaders.pory"
 	.string "{PLAYER}, how are things going?\p"
 	.string "The world of Pokémon is deep.\p"
 	.string "I honestly think that no amount of\n"
 	.string "training would ever be enough.$"
 
 PetalburgCity_Gym_Text_NormanPreRematch::
-# 745 "data/gym_leaders.pory"
+# 754 "data/gym_leaders.pory"
 	.string "{PLAYER}…\n"
 	.string "I had a feeling that you would come.\p"
 	.string "I would never refuse to accept\n"
@@ -1015,12 +1024,12 @@ PetalburgCity_Gym_Text_NormanPreRematch::
 	.string "we can. Isn't that right, {PLAYER}?$"
 
 PetalburgCity_Gym_Text_NormanRematchDefeat::
-# 758 "data/gym_leaders.pory"
+# 767 "data/gym_leaders.pory"
 	.string "Uh… Haha…\n"
 	.string "Maybe that was going too hard…$"
 
 PetalburgCity_Gym_Text_NormanPostRematch::
-# 763 "data/gym_leaders.pory"
+# 772 "data/gym_leaders.pory"
 	.string "{PLAYER}…\n"
 	.string "What is your dream?\p"
 	.string "My dream…\n"
@@ -1028,7 +1037,7 @@ PetalburgCity_Gym_Text_NormanPostRematch::
 	.string "It has already come true, actually.$"
 
 PetalburgCity_Gym_Text_NormanRematchNeedTwoMons::
-# 771 "data/gym_leaders.pory"
+# 780 "data/gym_leaders.pory"
 	.string "{PLAYER}…\n"
 	.string "I had a feeling that you would come.\p"
 	.string "I would never refuse to accept\n"

@@ -1,0 +1,31 @@
+# Sakura
+
+const SAKURA_BATTLE02 = 3
+
+script Sakura_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
+	if (var(VAR_EMERALBODY_RIVAL) == 4) { // Check if Sakura is your rival
+		lock
+		call (Common_EventScript_PlayEmRivalBgm)
+		addobject (SAKURA_BATTLE02)
+		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+		waitmovement (0)
+		playse (SE_PIN)
+		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+		waitmovement (0)
+		delay (50)
+		applymovement (SAKURA_BATTLE02, Common_Movement_WalkUp5)
+		waitmovement (0)
+		call (GetRivalForNameBox)
+		msgbox (Battle02_SakuraText_PreBattle, MSGBOX_DEFAULT)
+		trainerbattle_no_intro (TRAINER_SAKURA_2, Battle02_SakuraText_BattleVictory)
+		call (GetRivalForNameBox)
+		msgbox(Battle02_SakuraText_PostBattle)
+		closemessage
+		applymovement (SAKURA_BATTLE02, Common_Movement_WalkDown5)
+		waitmovement (0)
+		removeobject (SAKURA_BATTLE02)
+		fadedefaultbgm
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
+		release
+	}
+}

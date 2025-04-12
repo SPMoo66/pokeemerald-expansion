@@ -364,3 +364,30 @@ text Scene03_SakuraText {
 			"It is a bit… super retro flip phone style. That was so many decades ago.\p"
 			"Well, if not. Then I'll have to deck out my profile to be cool as can be{EMOJI_TILDE}")
 }
+
+
+# Battle02
+
+text Battle02_SakuraText_PreBattle {
+	format(	"Hii-yah! Sakura Strike!\p"
+			"You think you can just waltz on through\n"
+			"the cave without difficulty?\p"
+			"Not on my watch!\p"
+			"I'll beat you so hard you'll be\n"
+			"vaporized!")
+}
+
+text Battle02_SakuraText_BattleVictory {
+	format(	"Oh darn, you've survived.")
+}
+
+text Battle02_SakuraText_PostBattle {
+	format(	"One one hand I wish you were easy to\n"
+			"beat down, but prey that puts up a\l"
+			"fight is more interesting.\p"
+			"Go on then, I suppose.\n"
+			"Deliver your Letter to Steven.\p"
+			"He's a cutie…\n"
+			"And I'm lookng forward to crushing\l"
+			"him at the end of this too{EMOJI_TILDE}")
+}

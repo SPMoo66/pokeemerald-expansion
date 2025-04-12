@@ -1,7 +1,8 @@
-raw `
-GraniteCave_1F_MapScripts::
-	.byte 0
-`
+mapscripts GraniteCave_1F_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_2)
+	}
+}
 
 script GraniteCave_1F_EventScript_Hiker {
 	lock

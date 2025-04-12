@@ -497,3 +497,27 @@ Scene03_SakuraText::
 	.string "style. That was so many decades ago.\p"
 	.string "Well, if not. Then I'll have to deck out\n"
 	.string "my profile to be cool as can be{EMOJI_TILDE}$"
+
+Battle02_SakuraText_PreBattle::
+# 371 "data/rival_text.pory"
+	.string "Hii-yah! Sakura Strike!\p"
+	.string "You think you can just waltz on through\n"
+	.string "the cave without difficulty?\p"
+	.string "Not on my watch!\p"
+	.string "I'll beat you so hard you'll be\n"
+	.string "vaporized!$"
+
+Battle02_SakuraText_BattleVictory::
+# 380 "data/rival_text.pory"
+	.string "Oh darn, you've survived.$"
+
+Battle02_SakuraText_PostBattle::
+# 384 "data/rival_text.pory"
+	.string "One one hand I wish you were easy to\n"
+	.string "beat down, but prey that puts up a\l"
+	.string "fight is more interesting.\p"
+	.string "Go on then, I suppose.\n"
+	.string "Deliver your Letter to Steven.\p"
+	.string "He's a cutie…\n"
+	.string "And I'm lookng forward to crushing\l"
+	.string "him at the end of this too{EMOJI_TILDE}$"

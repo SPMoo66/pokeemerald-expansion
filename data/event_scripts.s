@@ -1130,6 +1130,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/global.inc"
 	.include "data/rival_text.inc"
 	.include "data/rival_scripts.inc"
+	.include "data/rival_battles.inc"
 	.include "data/investor.inc"
 	.include "data/gym_guide.inc"
 	.include "data/emib_opening.inc"

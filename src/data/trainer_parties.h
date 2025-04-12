@@ -813,36 +813,34 @@ static const struct TrainerMon sParty_GabbyAndTy3[] = {
 
 static const struct TrainerMon sParty_GabbyAndTy4[] = {
     {
-    .lvl = 33,
-    .species = SPECIES_MAGNETON,
+    .lvl = 40,
+    .species = SPECIES_ZWEILOUS,
     },
     {
-    .lvl = 33,
-    .species = SPECIES_LOUDRED,
+    .lvl = 40,
+    .species = SPECIES_HAKAMO_O,
     }
 };
 
 static const struct TrainerMon sParty_GabbyAndTy5[] = {
     {
-    .lvl = 36,
-    .species = SPECIES_MAGNETON,
+    .lvl = 45,
+    .species = SPECIES_ZWEILOUS,
     },
     {
-    .lvl = 36,
-    .species = SPECIES_LOUDRED,
+    .lvl = 45,
+    .species = SPECIES_HAKAMO_O,
     }
 };
 
 static const struct TrainerMon sParty_GabbyAndTy6[] = {
     {
-    .lvl = 39,
-    .species = SPECIES_MAGNETON,
-    .moves = {MOVE_SONIC_BOOM, MOVE_THUNDER_WAVE, MOVE_METAL_SOUND, MOVE_THUNDERBOLT}
+    .lvl = 50,
+    .species = SPECIES_HYDREIGON,
     },
     {
-    .lvl = 39,
-    .species = SPECIES_EXPLOUD,
-    .moves = {MOVE_ASTONISH, MOVE_STOMP, MOVE_SUPERSONIC, MOVE_HYPER_VOICE}
+    .lvl = 50,
+    .species = SPECIES_KOMMO_O,
     }
 };
 

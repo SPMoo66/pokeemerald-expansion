@@ -187,10 +187,10 @@
 #define FLAG_UNUSED_0xA6                     0xA6 // Was for Gym 2 TM
 #define FLAG_UNUSED_0xA7                     0xA7 // Was for Gym 3 TM
 #define FLAG_UNUSED_0xA8                     0xA8 // Was for Gym 4 TM
-#define FLAG_RECEIVED_TM_FACADE              0xA9 // Gym 5 TM
-#define FLAG_RECEIVED_TM_DUAL_WINGBEAT       0xAA // Gym 6 TM
-#define FLAG_RECEIVED_TM_TRICK_ROOM          0xAB // Gym 7 TM
-#define FLAG_RECEIVED_TM_HYDRO_PUMP          0xAC // Gym 8 TM
+#define FLAG_UNUSED_0xA9                     0xA9 // Was for Gym 5 TM
+#define FLAG_UNUSED_0xAA                     0xAA // Was for Gym 6 TM
+#define FLAG_UNUSED_0xAB                     0xAB // Was for Gym 7 TM
+#define FLAG_UNUSED_0xAC                     0xAC // Was for Gym 8 TM
 #define FLAG_HIDE_SECRET_BASE_TRAINER        0xAD
 #define FLAG_DECORATION_1                    0xAE
 #define FLAG_DECORATION_2                    0xAF

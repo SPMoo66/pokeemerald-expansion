@@ -368,6 +368,18 @@ text Scene03_SakuraText {
 
 # Battle02
 
+text Battle02_HarperText_PreBattle {
+	""
+}
+
+text Battle02_HarperText_BattleVictory {
+	""
+}
+
+text Battle02_HarperText_PostBattle {
+	""
+}
+
 text Battle02_SakuraText_PreBattle {
 	format(	"Hii-yah! Sakura Strike!\p"
 			"You think you can just waltz on through\n"

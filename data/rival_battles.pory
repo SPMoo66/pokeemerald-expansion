@@ -1,3 +1,42 @@
+# Harper
+
+const HARPER_BATTLE02 = 4
+
+script Harper_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
+	if (var(VAR_EMERALBODY_RIVAL) == 1) { // Check if Harper is your rival
+		lock
+		call (Common_EventScript_PlayEmRivalBgm)
+		addobject (HARPER_BATTLE02)
+		playse (SE_EXIT)
+		waitse
+		applymovement (HARPER_BATTLE02, Common_Movement_WalkUp4)
+		waitmovement (0)
+		applymovement (HARPER_BATTLE02, Common_Movement_WalkRight4)
+		waitmovement (0)
+		call (GetRivalForNameBox)
+		msgbox (Battle02_HarperText_PreBattle, MSGBOX_DEFAULT)
+		trainerbattle_no_intro (TRAINER_HARPER_2, Battle02_HarperText_BattleVictory)
+		call (GetRivalForNameBox)
+		msgbox(Battle02_HarperText_PostBattle)
+		closemessage
+		applymovement (OBJ_EVENT_ID_PLAYER, Harper_PlayerMoves)
+		waitmovement (0)
+		applymovement (HARPER_BATTLE02, Common_Movement_WalkRight9)
+		waitmovement (0)
+		removeobject (HARPER_BATTLE02)
+		fadedefaultbgm
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
+		release
+	}
+}
+
+movement Harper_PlayerMoves {
+	face_up
+	lock_facing_direction
+	walk_down
+	unlock_facing_direction
+}
+
 # Sakura
 
 const SAKURA_BATTLE02 = 3
@@ -12,7 +51,7 @@ script Sakura_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		playse (SE_PIN)
 		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
 		waitmovement (0)
-		delay (50)
+		delay (30)
 		applymovement (SAKURA_BATTLE02, Common_Movement_WalkUp5)
 		waitmovement (0)
 		call (GetRivalForNameBox)

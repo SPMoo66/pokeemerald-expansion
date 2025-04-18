@@ -1830,10 +1830,25 @@ static const struct TrainerMon sParty_Brianna[] = {
 
 static const struct TrainerMon sParty_Naomi[] = {
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 45,
-    .species = SPECIES_ROSELIA,
-    .heldItem = ITEM_NUGGET
+    .lvl = 51,
+    .species = SPECIES_SILVALLY,
+    .heldItem = ITEM_GHOST_MEMORY,
+    },
+    {
+    .lvl = 51,
+    .species = SPECIES_SOLFLORA,
+    },
+    {
+    .lvl = 51,
+    .species = SPECIES_ALCREMIE,
+    },
+    {
+    .lvl = 51,
+    .species = SPECIES_BELLIBOLT,
+    },
+    {
+    .lvl = 51,
+    .species = SPECIES_SCREAM_TAIL,
     }
 };
 
@@ -2076,9 +2091,20 @@ static const struct TrainerMon sParty_Mollie[] = {
 
 static const struct TrainerMon sParty_Garret[] = {
     {
-    .lvl = 45,
-    .species = SPECIES_AZUMARILL,
-    .heldItem = ITEM_NUGGET
+    .lvl = 52,
+    .species = SPECIES_IRON_TREADS,
+    },
+    {
+    .lvl = 52,
+    .species = SPECIES_SPIRITOMB,
+    },
+    {
+    .lvl = 52,
+    .species = SPECIES_PERSIAN_ALOLA,
+    },
+    {
+    .lvl = 52,
+    .species = SPECIES_LUXRAY_EMERIBIAN,
     }
 };
 
@@ -3648,19 +3674,47 @@ static const struct TrainerMon sParty_Walter1[] = {
 
 static const struct TrainerMon sParty_Micah[] = {
     {
-    .lvl = 44,
-    .species = SPECIES_MANECTRIC,
+    .lvl = 51,
+    .species = SPECIES_SHUCKLE,
     },
     {
-    .lvl = 44,
-    .species = SPECIES_MANECTRIC,
+    .lvl = 51,
+    .species = SPECIES_XATU,
+    },
+    {
+    .lvl = 51,
+    .species = SPECIES_LANTURN,
+    },
+    {
+    .lvl = 51,
+    .species = SPECIES_CRYOGONAL,
+    },
+    {
+    .lvl = 51,
+    .species = SPECIES_SIRFETCHD,
     }
 };
 
 static const struct TrainerMon sParty_Thomas[] = {
     {
-    .lvl = 45,
-    .species = SPECIES_ZANGOOSE,
+    .lvl = 51,
+    .species = SPECIES_THIEVUL,
+    },
+    {
+    .lvl = 51,
+    .species = SPECIES_RILLABOOM,
+    },
+    {
+    .lvl = 51,
+    .species = SPECIES_SAWK,
+    },
+    {
+    .lvl = 51,
+    .species = SPECIES_OCTILLERY,
+    },
+    {
+    .lvl = 51,
+    .species = SPECIES_FLAREON,
     }
 };
 
@@ -4518,40 +4572,28 @@ static const struct TrainerMon sParty_Miguel1[] = {
 
 static const struct TrainerMon sParty_Colton[] = {
     {
-    .lvl = 22,
-    .species = SPECIES_SKITTY,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
+    .lvl = 50,
+    .species = SPECIES_BLISSEY,
     },
     {
-    .lvl = 36,
-    .species = SPECIES_SKITTY,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
+    .lvl = 50,
+    .species = SPECIES_ALTARIA,
     },
     {
-    .lvl = 40,
-    .species = SPECIES_SKITTY,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
+    .lvl = 50,
+    .species = SPECIES_LOPUNNY_EMERIBIAN,
     },
     {
-    .lvl = 12,
-    .species = SPECIES_SKITTY,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
+    .lvl = 50,
+    .species = SPECIES_GLACEON,
     },
     {
-    .lvl = 30,
-    .species = SPECIES_SKITTY,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
+    .lvl = 50,
+    .species = SPECIES_LEAFEON,
     },
     {
-    .lvl = 42,
-    .species = SPECIES_DELCATTY,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
+    .lvl = 50,
+    .species = SPECIES_MAUSHOLD,
     }
 };
 
@@ -7244,27 +7286,31 @@ static const struct TrainerMon sParty_Dwayne[] = {
 
 static const struct TrainerMon sParty_Phillip[] = {
     {
-    .lvl = 44,
-    .species = SPECIES_TENTACRUEL,
+    .lvl = 52,
+    .species = SPECIES_CLAWITZER,
     },
     {
-    .lvl = 44,
-    .species = SPECIES_MACHOKE,
+    .lvl = 52,
+    .species = SPECIES_FLOATZEL,
+    },
+    {
+    .lvl = 52,
+    .species = SPECIES_HARIYAMA,
     }
 };
 
 static const struct TrainerMon sParty_Leonard[] = {
     {
-    .lvl = 43,
-    .species = SPECIES_MACHOP,
+    .lvl = 52,
+    .species = SPECIES_GRENINJA,
     },
     {
-    .lvl = 43,
-    .species = SPECIES_PELIPPER,
+    .lvl = 52,
+    .species = SPECIES_POLITOED,
     },
     {
-    .lvl = 43,
-    .species = SPECIES_MACHOKE,
+    .lvl = 52,
+    .species = SPECIES_BEARTIC,
     }
 };
 
@@ -9955,12 +10001,20 @@ static const struct TrainerMon sParty_DezAndLuke[] = {
 
 static const struct TrainerMon sParty_LeaAndJed[] = {
     {
-    .lvl = 45,
-    .species = SPECIES_LUVDISC,
+    .lvl = 52,
+    .species = SPECIES_GRAPPLOCT,
     },
     {
-    .lvl = 45,
-    .species = SPECIES_LUVDISC,
+    .lvl = 52,
+    .species = SPECIES_ORANGURU,
+    },
+    {
+    .lvl = 52,
+    .species = SPECIES_STARAPTOR,
+    },
+    {
+    .lvl = 52,
+    .species = SPECIES_CLOYSTER,
     }
 };
 

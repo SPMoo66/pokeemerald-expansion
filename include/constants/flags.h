@@ -252,11 +252,11 @@
 #define FLAG_RECEIVED_BOTTLE_CAP_COZMOS      0xE5
 #define FLAG_DEFEATED_RIVAL_SKY_PILLAR       0xE6 // Was used when receiving Sludge Bomb TM gift
 #define FLAG_RECEIVED_RARE_CANDY_ROAR        0xE7
-#define FLAG_RECEIVED_BIG_ROOT            0xE8 // Was TM Giga Drain
+#define FLAG_RECEIVED_BIG_ROOT               0xE8 // Was TM Giga Drain
 
 #define FLAG_CAUGHT_MANAPHY                  0xE9 // Was unused
 
-#define FLAG_RECEIVED_TM_REST                0xEA
+#define FLAG_UNUSED_0xEA                     0xEA // Was for TM Rest
 #define FLAG_RECEIVED_RARE_CANDY_ATTRACT     0xEB
 #define FLAG_RECEIVED_GLASS_ORNAMENT         0xEC
 #define FLAG_RECEIVED_SILVER_SHIELD          0xED

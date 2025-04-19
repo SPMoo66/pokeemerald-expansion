@@ -1,3 +1,9 @@
+	# State descriptions for VAR_EMERALBODY_RIVAL_BATTLE_STATE
+	#  1: Set after winning Battle02
+	#  2: Set after winning Battle03
+	#  3: Set after winning Battle04
+	#  4: Set after winning Battle05
+
 # Harper
 
 const HARPER_BATTLE02 = 4

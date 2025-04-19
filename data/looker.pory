@@ -59,7 +59,7 @@ script SlateportCity_EventScript_Looker {
 	playse (SE_PIN)
 	applymovement (LOOKER_SLATEPORT, Common_Movement_ExclamationMark)
 	waitmovement (0)
-	delay (50)
+	delay (60)
 	msgbox (format ("No!\n"
 					"Is it possible that you have already suspected that I am a part of the International Police?"))
 	applymovement (LOOKER_SLATEPORT, Common_Movement_WalkInPlaceFasterDown)
@@ -264,7 +264,7 @@ script TrainerHill_LookerSwitch {
 		playse (SE_PIN)
 		applymovement (LOOKER_TRAINERHILL, Common_Movement_ExclamationMark)
 		waitmovement (0)
-		delay (50)
+		delay (60)
 		speakername (CommonText_Looker)
 		msgbox (format ("Yes!\n"
 						"Just as I suspected!"))

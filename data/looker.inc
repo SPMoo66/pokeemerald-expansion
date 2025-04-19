@@ -166,7 +166,7 @@ SlateportCity_EventScript_Looker::
 # 61 "data/looker.pory"
 	waitmovement 0
 # 62 "data/looker.pory"
-	delay 50
+	delay 60
 # 63 "data/looker.pory"
 	msgbox SlateportCity_EventScript_Looker_Text_1
 # 65 "data/looker.pory"
@@ -444,7 +444,7 @@ TrainerHill_LookerSwitch_1:
 # 266 "data/looker.pory"
 	waitmovement 0
 # 267 "data/looker.pory"
-	delay 50
+	delay 60
 # 268 "data/looker.pory"
 	speakername CommonText_Looker
 # 269 "data/looker.pory"

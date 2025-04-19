@@ -37,6 +37,65 @@ movement Harper_PlayerMoves {
 	unlock_facing_direction
 }
 
+
+# Redd
+
+const REDD_BATTLE02 = 40
+
+script Redd_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
+	if (var(VAR_EMERALBODY_RIVAL) == 3) { // Check if Redd is your rival
+		lock
+		call (Common_EventScript_PlayEmRivalBgm)
+		call (GetRivalForNameBox)
+		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+		if (var(VAR_TEMP_1) == 58) { // Standard bottom entrance
+			switch (var(VAR_TEMP_0)) {
+				case 17: // Left side
+					applymovement (REDD_BATTLE02, Common_Movement_WalkLeft)
+					waitmovement (0)
+				case 19: // Right side
+					applymovement (REDD_BATTLE02, Common_Movement_WalkRight)
+					waitmovement (0)
+				default: // Center, no side movement
+			}
+			applymovement (REDD_BATTLE02, Common_Movement_WalkDown2)
+			waitmovement (0)
+			msgbox (Battle02_ReddText_PreBattle, MSGBOX_DEFAULT)
+		}
+		else { // Side entrance
+			applymovement (REDD_BATTLE02, Common_Movement_FaceUp)
+			waitmovement (0)
+			playse (SE_PIN)
+			applymovement (REDD_BATTLE02, Common_Movement_ExclamationMark)
+			waitmovement (0)
+			delay (60)
+			if (var(VAR_TEMP_1) == 52) { // Upper tile
+				applymovement (REDD_BATTLE02, Common_Movement_WalkUp3)
+				waitmovement (0)
+			}
+			else { // Lower tile
+				applymovement (REDD_BATTLE02, Common_Movement_WalkUp2)
+				waitmovement (0)
+			}
+			applymovement (REDD_BATTLE02, Common_Movement_WalkRight)
+			waitmovement (0)
+			msgbox (Battle02_ReddText_PreBattleAlt, MSGBOX_DEFAULT)
+		}
+		trainerbattle_no_intro (TRAINER_REDD_2, Battle02_ReddText_BattleVictory)
+		call (GetRivalForNameBox)
+		msgbox(Battle02_ReddText_PostBattle)
+		closemessage
+		applymovement (REDD_BATTLE02, Common_Movement_WalkUp6)
+		waitmovement (0)
+		removeobject (REDD_BATTLE02)
+		fadedefaultbgm
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
+		setflag (FLAG_TEMP_2)
+		release
+	}
+}
+
+
 # Sakura
 
 const SAKURA_BATTLE02 = 3
@@ -51,7 +110,7 @@ script Sakura_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		playse (SE_PIN)
 		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
 		waitmovement (0)
-		delay (30)
+		delay (60)
 		applymovement (SAKURA_BATTLE02, Common_Movement_WalkUp4)
 		waitmovement (0)
 		playse (SE_LEDGE)

@@ -536,6 +536,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Cheater",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_REDD",
+      "x": 18,
+      "y": 55,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Redd_Battle02",
+      "flag": "FLAG_TEMP_2"
     }
   ],
   "warp_events": [
@@ -646,6 +659,51 @@
       "var": "VAR_SLATEPORT_CITY_STATE",
       "var_value": "0",
       "script": "SlateportCity_EventScript_Looker"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 58,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var_value": "0",
+      "script": "Redd_Battle02"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 58,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var_value": "0",
+      "script": "Redd_Battle02"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 58,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var_value": "0",
+      "script": "Redd_Battle02"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 53,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var_value": "0",
+      "script": "Redd_Battle02"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 52,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var_value": "0",
+      "script": "Redd_Battle02"
     }
   ],
   "bg_events": [

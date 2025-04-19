@@ -369,15 +369,31 @@ text Scene03_SakuraText {
 # Battle02
 
 text Battle02_HarperText_PreBattle {
-	""
+	"Intro text"
 }
 
 text Battle02_HarperText_BattleVictory {
-	""
+	"You won"
 }
 
 text Battle02_HarperText_PostBattle {
-	""
+	"I lost"
+}
+
+text Battle02_ReddText_PreBattle {
+	"Normal intro text"
+}
+
+text Battle02_ReddText_PreBattleAlt {
+	"Side intro text"
+}
+
+text Battle02_ReddText_BattleVictory {
+	"You won"
+}
+
+text Battle02_ReddText_PostBattle {
+	"I lost"
 }
 
 text Battle02_SakuraText_PreBattle {

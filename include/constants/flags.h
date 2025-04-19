@@ -139,7 +139,7 @@
 #define FLAG_CANCEL_BATTLE_ROOM_CHALLENGE    0x77
 
 #define FLAG_LANDMARK_MIRAGE_TOWER           0x78
-#define FLAG_RECEIVED_TM_BRICK_BREAK         0x79
+#define FLAG_UNUSED_0x79                     0x79 // Was for TM Brick Break
 #define FLAG_RECEIVED_HM_SURF                0x7A
 #define FLAG_RECEIVED_HM_DIVE                0x7B
 #define FLAG_REGISTER_RIVAL_POKENAV          0x7C
@@ -252,7 +252,7 @@
 #define FLAG_RECEIVED_BOTTLE_CAP_COZMOS      0xE5
 #define FLAG_DEFEATED_RIVAL_SKY_PILLAR       0xE6 // Was used when receiving Sludge Bomb TM gift
 #define FLAG_RECEIVED_RARE_CANDY_ROAR        0xE7
-#define FLAG_RECEIVED_TM_BIG_ROOT            0xE8 // Was TM Giga Drain
+#define FLAG_RECEIVED_BIG_ROOT            0xE8 // Was TM Giga Drain
 
 #define FLAG_CAUGHT_MANAPHY                  0xE9 // Was unused
 

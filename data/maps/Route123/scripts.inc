@@ -23,7 +23,7 @@ Route123_EventScript_GigaDrainGirl::
 # 12 "data/maps/Route123/scripts.pory"
 	faceplayer
 # 13 "data/maps/Route123/scripts.pory"
-	goto_if_set FLAG_RECEIVED_TM_BIG_ROOT, Route123_EventScript_ReceivedBigRoot
+	goto_if_set FLAG_RECEIVED_BIG_ROOT, Route123_EventScript_ReceivedBigRoot
 # 14 "data/maps/Route123/scripts.pory"
 	msgbox Route123_Text_LoveGrassMonsHaveAny, MSGBOX_DEFAULT
 # 15 "data/maps/Route123/scripts.pory"
@@ -37,7 +37,7 @@ Route123_EventScript_GigaDrainGirl::
 # 19 "data/maps/Route123/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 20 "data/maps/Route123/scripts.pory"
-	setflag FLAG_RECEIVED_TM_BIG_ROOT
+	setflag FLAG_RECEIVED_BIG_ROOT
 # 21 "data/maps/Route123/scripts.pory"
 	msgbox Route123_Text_CheckTreesWithMyGrassMon, MSGBOX_DEFAULT
 # 22 "data/maps/Route123/scripts.pory"

@@ -29,9 +29,11 @@ SlateportCity_MapScripts::
 
 SlateportCity_OnTransition:
 	setvar VAR_SLATEPORT_MUSEUM_1F_STATE, 0
+	setflag FLAG_TEMP_2
 	call SlateportCity_EventScript_EnterSlateport
 	call_if_eq VAR_SLATEPORT_CITY_STATE, 2, SlateportCity_EventScript_MovePeopleForSternInterview
 	call_if_eq VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 1, SlateportCity_EventScript_SetReadyForScottScene
+	call_if_eq VAR_EMERALBODY_RIVAL, 3, SlateportCity_EventScript_ReddCheck
 	end
 
 SlateportCity_EventScript_EnterSlateport::
@@ -68,6 +70,14 @@ SlateportCity_EventScript_SetReadyForScottScene::
 SlateportCity_EventScript_MoveScottLeft::
 	setobjectxyperm LOCALID_SCOTT, 22, 27
 	setobjectmovementtype LOCALID_SCOTT, MOVEMENT_TYPE_FACE_RIGHT
+	return
+
+SlateportCity_EventScript_ReddCheck::
+	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 0, SlateportCity_EventScript_ReddSet
+	return
+
+SlateportCity_EventScript_ReddSet::
+	clearflag FLAG_TEMP_2
 	return
 
 SlateportCity_OnFrame:

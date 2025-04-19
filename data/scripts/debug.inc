@@ -141,8 +141,8 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	setvar VAR_EMERALBODY_RIVAL, 1
-	warp MAP_GRANITE_CAVE_1F, 0
+	setvar VAR_EMERALBODY_RIVAL, 4
+	warp MAP_GRANITE_CAVE_1F, 1
 	release
 	end
 

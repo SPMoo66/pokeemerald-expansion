@@ -92,32 +92,42 @@ Sakura_Battle02_1:
 # 54 "data/rival_battles.pory"
 	delay 30
 # 55 "data/rival_battles.pory"
-	applymovement 3, Common_Movement_WalkUp5
+	applymovement 3, Common_Movement_WalkUp4
 # 56 "data/rival_battles.pory"
 	waitmovement 0
 # 57 "data/rival_battles.pory"
-	call GetRivalForNameBox
+	playse SE_LEDGE
 # 58 "data/rival_battles.pory"
-	msgbox Battle02_SakuraText_PreBattle, MSGBOX_DEFAULT
+	applymovement 3, Common_Movement_JumpUp
 # 59 "data/rival_battles.pory"
-	trainerbattle_no_intro TRAINER_SAKURA_2, Battle02_SakuraText_BattleVictory
-# 60 "data/rival_battles.pory"
-	call GetRivalForNameBox
-# 61 "data/rival_battles.pory"
-	msgbox Battle02_SakuraText_PostBattle
-# 62 "data/rival_battles.pory"
-	closemessage
-# 63 "data/rival_battles.pory"
-	applymovement 3, Common_Movement_WalkDown5
-# 64 "data/rival_battles.pory"
 	waitmovement 0
+# 60 "data/rival_battles.pory"
+	playse SE_M_CUT
+# 61 "data/rival_battles.pory"
+	waitse
+# 62 "data/rival_battles.pory"
+	call GetRivalForNameBox
+# 63 "data/rival_battles.pory"
+	msgbox Battle02_SakuraText_PreBattle, MSGBOX_DEFAULT
+# 64 "data/rival_battles.pory"
+	trainerbattle_no_intro TRAINER_SAKURA_2, Battle02_SakuraText_BattleVictory
 # 65 "data/rival_battles.pory"
-	removeobject 3
+	call GetRivalForNameBox
 # 66 "data/rival_battles.pory"
-	fadedefaultbgm
+	msgbox Battle02_SakuraText_PostBattle
 # 67 "data/rival_battles.pory"
-	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
+	closemessage
 # 68 "data/rival_battles.pory"
+	applymovement 3, Common_Movement_WalkDown5
+# 69 "data/rival_battles.pory"
+	waitmovement 0
+# 70 "data/rival_battles.pory"
+	removeobject 3
+# 71 "data/rival_battles.pory"
+	fadedefaultbgm
+# 72 "data/rival_battles.pory"
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
+# 73 "data/rival_battles.pory"
 	release
 	return
 

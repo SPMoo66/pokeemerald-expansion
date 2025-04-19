@@ -403,6 +403,10 @@ Common_Movement_WalkFastDown6:
 	walk_fast_down
 	step_end
 
+Common_Movement_JumpUp:
+	jump_up
+	step_end
+
 Common_Movement_EnterHouse:
 	walk_up
 	set_invisible

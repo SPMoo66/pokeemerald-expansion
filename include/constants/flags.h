@@ -101,7 +101,7 @@
 #define FLAG_CAUGHT_HEATRAN                  0x54
 #define FLAG_CAUGHT_DARKRAI                  0x55
 
-#define FLAG_HIDE_CONTEST_POKE_BALL          0x56 // Always set after new game, object it hides is added directly
+#define FLAG_ALWAYS_SET                      0x56 // Always set after new game, objects that it hide are added directly (Was for a singular Pokéball in the Contest Hall dynamic map)
 #define FLAG_MET_RIVAL_MOM                   0x57
 #define FLAG_BIRCH_AIDE_MET                  0x58
 #define FLAG_DECLINED_BIKE                   0x59
@@ -985,7 +985,7 @@
 #define FLAG_HIDE_REGIROCK                                          0x3A7
 #define FLAG_HIDE_REGICE                                            0x3A8
 #define FLAG_HIDE_REGISTEEL                                         0x3A9
-#define FLAG_HIDE_METEOR_FALLS_TEAM_AQUA                            0x3AA
+#define FLAG_UNUSED_0x3AA                                           0x3AA // Unused, was for hiding Team Aqua in Meteor Falls but replaced by FLAG_ALWAYS_SET
 #define FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA                           0x3AB
 #define FLAG_UNUSED_0x3AC                                           0x3AC // Unused, was for a man in Dewford Hall who gave the Sludge Bomb TM
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT               0x3AD

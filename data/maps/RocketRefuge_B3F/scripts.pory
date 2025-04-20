@@ -1,11 +1,7 @@
 const GIOVANNI_ROCKETREFUGE_B3F = 3
 const LOOKER_ROCKETREFUGE_B3F = 4
 
-mapscripts RocketRefuge_B3F_MapScripts {
-	MAP_SCRIPT_ON_TRANSITION {
-		setflag (FLAG_TEMP_1)
-	}
-}
+mapscripts RocketRefuge_B3F_MapScripts {}
 
 script RocketRefuge_B3F_EventScript_Grunt1 {
 	trainerbattle_single (TRAINER_ROCKET_GRUNT_REFUGE_9, "Oh, not you again!", "A repeat defeat!")

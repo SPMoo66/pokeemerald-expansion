@@ -2,11 +2,7 @@ const STEVEN = 1
 const MAGMA_F = 2
 const MAGMA_M = 3
 
-mapscripts GraniteCave_StevensRoom_MapScripts {
-	MAP_SCRIPT_ON_TRANSITION {
-		setflag (FLAG_TEMP_1)
-	}
-}
+mapscripts GraniteCave_StevensRoom_MapScripts {}
 
 script GraniteCave_StevensRoom_EventScript_Steven {
 	lock

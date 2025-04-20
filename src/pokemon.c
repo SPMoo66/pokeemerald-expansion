@@ -5897,8 +5897,20 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_RIVAL:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return MUS_VS_RIVAL;
-            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleWallyName))
-                return MUS_VS_TRAINER;
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Wally")) && (FlagGet(FLAG_BADGE08_GET)))
+                return MUS_HG_VS_GYM_LEADER;
+            else if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Wally")))
+                return MUS_HG_VS_WILD;
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Jakson")))
+                return MUS_DP_VS_ELITE_FOUR;
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Harper")))
+                return MUS_HG_VS_TRAINER;
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Redd")))
+                return MUS_HG_VS_WILD_KANTO;
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Sakura")))
+                return MUS_PL_VS_FRONTIER_BRAIN;
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Baron")))
+                return MUS_DP_VS_RIVAL;
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
             switch (musicRegion)

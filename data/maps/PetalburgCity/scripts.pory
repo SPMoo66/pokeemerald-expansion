@@ -734,6 +734,7 @@ script PetalburgCity_EventScript_WallyBattle {
 	speakername(CommonText_Q)
 	msgbox("{PLAYER}! Please wait!")
 	closemessage
+	playbgm (MUS_DP_RIVAL, FALSE)
 	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
 	waitmovement (0)
 	addobject (LOCALID_WALLY)
@@ -776,5 +777,6 @@ script PetalburgCity_EventScript_WallyBattle {
 	fadescreen (FADE_FROM_BLACK)
 	setvar (VAR_PETALBURG_CITY_STATE, 6)
 	clearflag (FLAG_CHALLENGING_TRAINER)
+	fadedefaultbgm
 	release
 }

@@ -2239,6 +2239,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_MaxRepel,
     },
 
+    [ITEM_INFINIREPEL] =
+    {
+        .name = _("InfiniRepel"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Repels wild\n"
+            "Pokémon until\n"
+            "used again."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_InfiniRepel,
+        .iconPic = gItemIcon_Repel,
+        .iconPalette = gItemIconPalette_InfiniRepel,
+    },
+
     [ITEM_LURE] =
     {
         .name = _("Lure"),

@@ -64,6 +64,7 @@ static void Task_AccessPokemonBoxLink(u8);
 static void ItemUseOnFieldCB_Bike(u8);
 static void ItemUseOnFieldCB_Rod(u8);
 static void ItemUseOnFieldCB_Itemfinder(u8);
+static void ItemUseOnFieldCB_InfiniRepel(u8);
 static void ItemUseOnFieldCB_Berry(u8);
 static void ItemUseOnFieldCB_WailmerPailBerry(u8);
 static void ItemUseOnFieldCB_WailmerPailSudowoodo(u8);
@@ -1095,6 +1096,27 @@ void ItemUseOutOfBattle_ShinyLure(u8 taskId)
     }
     gTasks[taskId].data[8] = 0;
     gTasks[taskId].func = Task_UsedBlackWhiteFlute;
+}
+
+void ItemUseOutOfBattle_InfiniRepel(u8 taskId)
+{
+    sItemUseOnFieldCB = ItemUseOnFieldCB_InfiniRepel;
+    SetUpItemUseOnFieldCallback(taskId);
+}
+
+static void ItemUseOnFieldCB_InfiniRepel(u8 taskId)
+{
+    if (!FlagGet(FLAG_NO_WILD_ENCOUNTER))
+    {
+        PlaySE(SE_REPEL);
+        FlagSet(FLAG_NO_WILD_ENCOUNTER);
+        DisplayItemMessageOnField(taskId, COMPOUND_STRING("Wild Pokémon are now being repelled.{PAUSE_UNTIL_PRESS}"), Task_CloseItemfinderMessage);
+    }
+    else
+    {
+        FlagClear(FLAG_NO_WILD_ENCOUNTER);
+        DisplayItemMessageOnField(taskId, COMPOUND_STRING("The InfiniRepel was deactivated.{PAUSE_UNTIL_PRESS}"), Task_CloseItemfinderMessage);
+    }
 }
 
 void Task_UseDigEscapeRopeOnField(u8 taskId)

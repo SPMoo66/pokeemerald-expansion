@@ -120,7 +120,7 @@ script Aide_SetTeraType {
 				if (var(VAR_TEMP_2) != SPECIES_EGG) {
 					bufferspeciesname (STR_VAR_1, VAR_TEMP_2)
 					msgbox(	"Your {STR_VAR_1}?\n"
-							"Ok, which type?")
+							"Okay, which type?")
 					dynmultipush (CommonText_NormalType,    0)
 					dynmultipush (CommonText_FightingType,  1)
 					dynmultipush (CommonText_FlyingType,    2)

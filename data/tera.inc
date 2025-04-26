@@ -639,7 +639,7 @@ Aide_SetTeraType_Text_5:
 Aide_SetTeraType_Text_6:
 # 122 "data/tera.pory"
 	.string "Your {STR_VAR_1}?\n"
-	.string "Ok, which type?$"
+	.string "Okay, which type?$"
 
 Aide_SetTeraType_Text_7:
 # 208 "data/tera.pory"

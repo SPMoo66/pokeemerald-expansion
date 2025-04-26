@@ -575,7 +575,14 @@ static void BuyMenuBuildListMenuTemplate(void)
 static void BuyMenuSetListEntry(struct ListMenuItem *menuItem, u16 item, u8 *name)
 {
     if (sMartInfo.martType == MART_TYPE_NORMAL)
+    {
         CopyItemName(item, name);
+        if (ItemId_GetPocket(item) == POCKET_TM_HM)
+        {
+            const u8 space[] = _(" ");
+            StringAppend(StringAppend(name, space), gMovesInfo[ItemIdToBattleMoveId(item)].name);
+        }
+    }
     else
         StringCopy(name, gDecorations[item].name);
 
@@ -636,11 +643,17 @@ static void BuyMenuPrintPriceInList(u8 windowId, u32 itemId, u8 y)
         }
 
         if (ItemId_GetImportance(itemId) && (CheckBagHasItem(itemId, 1) || CheckPCHasItem(itemId, 1)))
+        {
             StringCopy(gStringVar4, gText_SoldOut);
+            x = GetStringRightAlignXOffset(FONT_SMALL_NARROWER, gStringVar4, 120);
+            AddTextPrinterParameterized4(windowId, FONT_SMALL_NARROWER, x, y, 0, 0, sShopBuyMenuTextColors[COLORID_ITEM_LIST], TEXT_SKIP_DRAW, gStringVar4);
+        }
         else
+        {
             StringExpandPlaceholders(gStringVar4, gText_PokedollarVar1);
-        x = GetStringRightAlignXOffset(FONT_NARROW, gStringVar4, 120);
-        AddTextPrinterParameterized4(windowId, FONT_NARROW, x, y, 0, 0, sShopBuyMenuTextColors[COLORID_ITEM_LIST], TEXT_SKIP_DRAW, gStringVar4);
+            x = GetStringRightAlignXOffset(FONT_NARROW, gStringVar4, 120);
+            AddTextPrinterParameterized4(windowId, FONT_NARROW, x, y, 0, 0, sShopBuyMenuTextColors[COLORID_ITEM_LIST], TEXT_SKIP_DRAW, gStringVar4);
+        }
     }
 }
 

@@ -19,7 +19,9 @@ Route104_EventScript_StartSailToDewford::
 
 Route104_OnTransition:
 	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 2, EventScript_Clear_FlagTemp1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 4, EventScript_Clear_FlagTemp2
 	call Common_EventScript_SetupRivalGfxId
 	call Route104_EventScript_TrySetRivalPos
 	call Route104_EventScript_ShowOrHideWhiteHerbFlorist

@@ -1,6 +1,12 @@
 raw `
 Route106_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route106_OnTransition
 	.byte 0
+
+Route106_OnTransition:
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 4, EventScript_Clear_FlagTemp1
+	end
 
 Route106_EventScript_TrainerTipsSign::
 	msgbox Route106_Text_TrainerTips, MSGBOX_SIGN

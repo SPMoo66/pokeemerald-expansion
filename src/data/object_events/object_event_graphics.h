@@ -442,6 +442,29 @@ const u32 gObjectEventPic_Galactic_Grunt_M[] = INCBIN_U32("graphics/object_event
 const u16 gObjectEventPal_Galactic_Grunt[] = INCBIN_U16("graphics/object_events/palettes/galactic_grunt.gbapal");
 const u32 gObjectEventPic_Galactic_Grunt_F[] = INCBIN_U32("graphics/object_events/pics/people/galactic_grunt_f.4bpp");
 
+//EeveeExpo Overworld Trainers
+const u32 gObjectEventPic_Kindler[] = INCBIN_U32("graphics/object_events/pics/people/custom/kindler.4bpp");
+const u32 gObjectEventPic_BirdKeeper[] = INCBIN_U32("graphics/object_events/pics/people/custom/bird_keeper.4bpp");
+const u32 gObjectEventPic_Guitarist[] = INCBIN_U32("graphics/object_events/pics/people/custom/guitarist.4bpp");
+const u32 gObjectEventPic_BugManiac[] = INCBIN_U32("graphics/object_events/pics/people/custom/bug_maniac.4bpp");
+const u32 gObjectEventPic_DragonTamer[] = INCBIN_U32("graphics/object_events/pics/people/custom/dragon_tamer.4bpp");
+const u32 gObjectEventPic_RuinManiac[] = INCBIN_U32("graphics/object_events/pics/people/custom/ruin_maniac.4bpp");
+const u32 gObjectEventPic_PkmnBreederM[] = INCBIN_U32("graphics/object_events/pics/people/custom/pkmn_breeder_m.4bpp");
+const u32 gObjectEventPic_PkmnBreederF[] = INCBIN_U32("graphics/object_events/pics/people/custom/pkmn_breeder_f.4bpp");
+const u32 gObjectEventPic_AromaLady[] = INCBIN_U32("graphics/object_events/pics/people/custom/aroma_lady.4bpp");
+const u32 gObjectEventPic_Pokemaniac[] = INCBIN_U32("graphics/object_events/pics/people/custom/pokemaniac.4bpp");
+const u32 gObjectEventPic_PkmnRangerM[] = INCBIN_U32("graphics/object_events/pics/people/custom/pkmn_ranger_m.4bpp");
+const u32 gObjectEventPic_PkmnRangerF[] = INCBIN_U32("graphics/object_events/pics/people/custom/pkmn_ranger_f.4bpp");
+
+const u16 gObjectEventPal_BirdKeeper[] = INCBIN_U16("graphics/object_events/palettes/bird_keeper.gbapal");
+const u16 gObjectEventPal_BugManiac[] = INCBIN_U16("graphics/object_events/palettes/bug_maniac.gbapal");
+const u16 gObjectEventPal_DragonTamer[] = INCBIN_U16("graphics/object_events/palettes/dragon_tamer.gbapal");
+const u16 gObjectEventPal_RuinManiac[] = INCBIN_U16("graphics/object_events/palettes/ruin_maniac.gbapal");
+const u16 gObjectEventPal_PkmnBreeder[] = INCBIN_U16("graphics/object_events/palettes/pkmn_breeder.gbapal");
+const u16 gObjectEventPal_AromaLady[] = INCBIN_U16("graphics/object_events/palettes/aroma_lady.gbapal");
+const u16 gObjectEventPal_Pokemaniac[] = INCBIN_U16("graphics/object_events/palettes/pokemaniac.gbapal");
+const u16 gObjectEventPal_PkmnRanger[] = INCBIN_U16("graphics/object_events/palettes/pkmn_ranger.gbapal");
+
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 
 const u16 gObjectEventPal_Substitute[] = INCBIN_U16("graphics/pokemon/question_mark/overworld.gbapal");

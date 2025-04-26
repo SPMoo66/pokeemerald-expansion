@@ -1134,7 +1134,7 @@ static const union AnimCmd *const sAnimTable_Inanimate[] = {
     [ANIM_STAY_STILL] = sAnim_StayStill,
 };
 
-static const union AnimCmd *const sAnimTable_QuintyPlump[] = {
+static const union AnimCmd *const sAnimTable_StandardFlip[] = {
     [ANIM_STD_FACE_SOUTH] = sAnim_QuintyPlumpFaceSouth,
     [ANIM_STD_FACE_NORTH] = sAnim_QuintyPlumpFaceNorth,
     [ANIM_STD_FACE_WEST] = sAnim_QuintyPlumpFaceWest,
@@ -1543,7 +1543,7 @@ static const union AffineAnimCmd *const sAffineAnimTable_KyogreGroudon[] = {
 // For animations with alternating steps
 static const struct StepAnimTable sStepAnimTables[] = {
     {
-        .anims = sAnimTable_QuintyPlump,
+        .anims = sAnimTable_StandardFlip,
         .animPos = {1, 3, 0, 2},
     },
     {

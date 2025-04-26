@@ -103,6 +103,16 @@ static const u8 sText_LastHalfWallace[] = _("And now, the final step!{PAUSE_UNTI
 static const u8 sText_LastHalfMaxieMossdeep[] = _("Hah… Is this… the end?{PAUSE_UNTIL_PRESS}");
 static const u8 sText_LastHalfArchie[] = _("Hah…\nIt's looking pretty grim now.{PAUSE_UNTIL_PRESS}");
 static const u8 sText_BeforeFirstTurnWallace[] = _("I know your strength, but now is your\nchance to show the world!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_Brendan[] = _("Ack!\nYou know about type matchups already?{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Brendan[] = _("Let's do this, {PLAYER}!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_Brendan[] = _("Pressed to the very end!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_Mega_Brendan[] = _("Mega evolution!\nIt's just what I need to beat you!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastHalf_Brendan[] = _("Wow, {PLAYER}…\nYou really are…{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_May[] = _("Oh no!\nDon't use that move against me!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_May[] = _("Let's both do our best, {PLAYER}!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_May[] = _("My last…\nI'm counting on you!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_Mega_May[] = _("{PLAYER}, can you keep up with this?{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastHalf_May[] = _("{PLAYER}…\nYou could just be able…{PAUSE_UNTIL_PRESS}");
 
 
 static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_SLIDE_COUNT] =
@@ -216,6 +226,198 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("You're about to learn why you\nshouldn't have interfered!{PAUSE_UNTIL_PRESS}"),
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("More power! Obey me!!{PAUSE_UNTIL_PRESS}"),
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Arrgh!! This isn't over!!{PAUSE_UNTIL_PRESS}")
+        },
+        [TRAINER_BRENDAN_ROUTE_103_MUDKIP] = 
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Brendan,
+        },
+        [TRAINER_BRENDAN_ROUTE_103_TORCHIC] = 
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Brendan,
+        },
+        [TRAINER_BRENDAN_ROUTE_103_TREECKO] = 
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Brendan,
+        },
+        [TRAINER_MAY_ROUTE_103_MUDKIP] = 
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_May,
+        },
+        [TRAINER_MAY_ROUTE_103_TORCHIC] = 
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_May,
+        },
+        [TRAINER_MAY_ROUTE_103_TREECKO] = 
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_May,
+        },
+        [TRAINER_BRENDAN_RUSTBORO_MUDKIP] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+        },
+        [TRAINER_BRENDAN_RUSTBORO_TORCHIC] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+        },
+        [TRAINER_BRENDAN_RUSTBORO_TREECKO] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+        },
+        [TRAINER_MAY_RUSTBORO_MUDKIP] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+        },
+        [TRAINER_MAY_RUSTBORO_TORCHIC] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+        },
+        [TRAINER_MAY_RUSTBORO_TREECKO] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+        },
+        [TRAINER_BRENDAN_ROUTE_110_MUDKIP] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+        },
+        [TRAINER_BRENDAN_ROUTE_110_TORCHIC] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+        },
+        [TRAINER_BRENDAN_ROUTE_110_TREECKO] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+        },
+        [TRAINER_MAY_ROUTE_110_MUDKIP] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+        },
+        [TRAINER_MAY_ROUTE_110_TORCHIC] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+        },
+        [TRAINER_MAY_ROUTE_110_TREECKO] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+        },
+        [TRAINER_BRENDAN_ROUTE_119_MUDKIP] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+        },
+        [TRAINER_BRENDAN_ROUTE_119_TORCHIC] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+        },
+        [TRAINER_BRENDAN_ROUTE_119_TREECKO] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+        },
+        [TRAINER_MAY_ROUTE_119_MUDKIP] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+        },
+        [TRAINER_MAY_ROUTE_119_TORCHIC] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+        },
+        [TRAINER_MAY_ROUTE_119_TREECKO] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+        },
+        [TRAINER_BRENDAN_LILYCOVE_MUDKIP] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_Brendan,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+        },
+        [TRAINER_BRENDAN_LILYCOVE_TORCHIC] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_Brendan,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+        },
+        [TRAINER_BRENDAN_LILYCOVE_TREECKO] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_Brendan,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+        },
+        [TRAINER_MAY_LILYCOVE_MUDKIP] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_May,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+        },
+        [TRAINER_MAY_LILYCOVE_TORCHIC] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_May,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+        },
+        [TRAINER_MAY_LILYCOVE_TREECKO] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_May,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+        },
+        [TRAINER_BRENDAN_SKY_PILLAR_MUDKIP] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_Brendan,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalf_Brendan,
+        },
+        [TRAINER_BRENDAN_SKY_PILLAR_TORCHIC] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_Brendan,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalf_Brendan,
+        },
+        [TRAINER_BRENDAN_SKY_PILLAR_TREECKO] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_Brendan,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalf_Brendan,
+        },
+        [TRAINER_MAY_SKY_PILLAR_MUDKIP] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_May,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalf_May,
+        },
+        [TRAINER_MAY_SKY_PILLAR_TORCHIC] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_May,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalf_May,
+        },
+        [TRAINER_MAY_SKY_PILLAR_TREECKO] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_May,
+            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalf_May,
         }
     },
 };

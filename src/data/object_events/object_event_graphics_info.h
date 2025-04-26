@@ -5035,7 +5035,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Galactic_Grunt_F =
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kindler = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .paletteTag = OBJ_EVENT_PAL_TAG_KINDLER,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,

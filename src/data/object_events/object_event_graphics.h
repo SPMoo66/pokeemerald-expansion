@@ -464,6 +464,7 @@ const u16 gObjectEventPal_PkmnBreeder[] = INCBIN_U16("graphics/object_events/pal
 const u16 gObjectEventPal_AromaLady[] = INCBIN_U16("graphics/object_events/palettes/aroma_lady.gbapal");
 const u16 gObjectEventPal_Pokemaniac[] = INCBIN_U16("graphics/object_events/palettes/pokemaniac.gbapal");
 const u16 gObjectEventPal_PkmnRanger[] = INCBIN_U16("graphics/object_events/palettes/pkmn_ranger.gbapal");
+const u16 gObjectEventPal_Kindler[] = INCBIN_U16("graphics/object_events/palettes/kindler.gbapal");
 
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 

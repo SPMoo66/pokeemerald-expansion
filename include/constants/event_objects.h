@@ -452,6 +452,7 @@
 #define OBJ_EVENT_PAL_TAG_AROMA_LADY              0x1144
 #define OBJ_EVENT_PAL_TAG_POKEMANIAC              0x1145
 #define OBJ_EVENT_PAL_TAG_PKMN_RANGER             0x1146
+#define OBJ_EVENT_PAL_TAG_KINDLER                 0x1147
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

@@ -3,6 +3,11 @@ script EventScript_Clear_FlagTemp1 {
 	return
 }
 
+script EventScript_HideMapNamePopup {
+	setflag (FLAG_HIDE_MAP_NAME_POPUP)
+	return
+}
+
 script Mart_EventScript_Clerk{
 	lock
 	faceplayer

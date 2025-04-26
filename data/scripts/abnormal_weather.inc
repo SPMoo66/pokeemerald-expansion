@@ -158,10 +158,6 @@ AbnormalWeather_EventScript_PlaceTilesRoute129East::
 	setmetatile 43, 22, METATILE_General_RoughWater, FALSE
 	return
 
-AbnormalWeather_EventScript_HideMapNamePopup::
-	setflag FLAG_HIDE_MAP_NAME_POPUP
-	return
-
 AbnormalWeather_StartKyogreWeather::
 	setweather WEATHER_DOWNPOUR
 	return

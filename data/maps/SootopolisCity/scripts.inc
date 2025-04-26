@@ -2442,7 +2442,7 @@ SootopolisCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_56:
 
 SootopolisCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 # 1193 "data/maps/SootopolisCity/scripts.pory"
-	setflag FLAG_HIDE_MAP_NAME_POPUP
+	call EventScript_HideMapNamePopup
 	goto SootopolisCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
 SootopolisCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:

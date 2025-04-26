@@ -13,7 +13,7 @@ LavaridgeTown_OnTransition:
 	call Common_EventScript_SetupRivalGfxId
 	call Common_EventScript_SetupRivalOnBikeGfxId
 	call_if_eq VAR_LAVARIDGE_TOWN_STATE, 1, LavaridgeTown_EventScript_CheckSetRivalPos
-	call_if_eq VAR_LAVARIDGE_TOWN_STATE, 1, LavaridgeTown_EventScript_HideMapNamePopup
+	call_if_eq VAR_LAVARIDGE_TOWN_STATE, 1, EventScript_HideMapNamePopup
 	end
 
 LavaridgeTown_EventScript_ClearLavaridgeWhiteOut::
@@ -34,10 +34,6 @@ LavaridgeTown_EventScript_SetRivalPos::
 
 LavaridgeTown_EventScript_ShowMtChimneyTrainers::
 	clearflag FLAG_HIDE_MT_CHIMNEY_TRAINERS
-	return
-
-LavaridgeTown_EventScript_HideMapNamePopup::
-	setflag FLAG_HIDE_MAP_NAME_POPUP
 	return
 
 LavaridgeTown_OnFrame:

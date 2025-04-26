@@ -24,7 +24,7 @@ RustboroCity_OnTransition:
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 3, EventScript_Clear_FlagTemp1
 	call Common_EventScript_SetupEmRivalGfxId
 	call Common_EventScript_SetupRivalGfxId
-	call_if_eq VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_HideMapNamePopup
+	call_if_eq VAR_RUSTBORO_CITY_STATE, 6, EventScript_HideMapNamePopup
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 	goto_if_eq VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_PositionScientistForExit
 	end
@@ -41,10 +41,6 @@ RustboroCity_EventScript_PositionScientistForExit::
 RustboroCity_EventScript_PositionScientistLeftExit::
 	setobjectxyperm LOCALID_SCIENTIST, 11, 15
 	end
-
-RustboroCity_EventScript_HideMapNamePopup::
-	setflag FLAG_HIDE_MAP_NAME_POPUP
-	return
 
 RustboroCity_OnFrame:
 	map_script_2 VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_ScientistAddMatchCall

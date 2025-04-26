@@ -15,7 +15,7 @@ Route114_MapScripts::
 # 8 "data/maps/Route114/scripts.pory"
 Route114_OnTransition:
 # 9 "data/maps/Route114/scripts.pory"
-	call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_HideMapNamePopup
+	call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, EventScript_HideMapNamePopup
 # 10 "data/maps/Route114/scripts.pory"
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_114_NORTH, AbnormalWeather_StartGroudonWeather
 # 11 "data/maps/Route114/scripts.pory"

@@ -1190,7 +1190,7 @@ mapscripts SootopolisCity_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag (FLAG_VISITED_SOOTOPOLIS_CITY)
 		if (var(VAR_SOOTOPOLIS_CITY_STATE) == 1 || var(VAR_SKY_PILLAR_STATE) == 1) {
-			setflag (FLAG_HIDE_MAP_NAME_POPUP)
+			call (EventScript_HideMapNamePopup)
 		}
 		if (var(VAR_SOOTOPOLIS_CITY_STATE) == 0 || var(VAR_SOOTOPOLIS_CITY_STATE) == 6) {}
 		elif (var(VAR_SOOTOPOLIS_CITY_STATE) == 1 || var(VAR_SKY_PILLAR_STATE) == 1) {

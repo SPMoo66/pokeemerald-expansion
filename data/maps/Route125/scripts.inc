@@ -17,7 +17,7 @@ Route125_OnTransition:
 # 9 "data/maps/Route125/scripts.pory"
 	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
 # 10 "data/maps/Route125/scripts.pory"
-	call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_HideMapNamePopup
+	call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, EventScript_HideMapNamePopup
 # 11 "data/maps/Route125/scripts.pory"
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_125_WEST, AbnormalWeather_StartKyogreWeather
 # 12 "data/maps/Route125/scripts.pory"

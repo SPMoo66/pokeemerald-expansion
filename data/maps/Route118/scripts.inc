@@ -21,7 +21,7 @@ Route118_OnTransition:
 # 11 "data/maps/Route118/scripts.pory"
 	call GabbyAndTy_EventScript_UpdateLocation
 # 12 "data/maps/Route118/scripts.pory"
-	call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_HideMapNamePopup
+	call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, EventScript_HideMapNamePopup
 # 13 "data/maps/Route118/scripts.pory"
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_118_EAST, AbnormalWeather_StartGroudonWeather
 # 14 "data/maps/Route118/scripts.pory"

@@ -418,6 +418,20 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
             [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_May,
             [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
             [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalf_May,
+        },
+        [TRAINER_WALLY_MAUVILLE] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Go…! Pokémon?"),
+        },
+        [TRAINER_WALLY_PETALBURG] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Go! Pokémon!"),
+        },
+        [TRAINER_WALLY_VR_1] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Let's go, team!"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Come on, Gallade!"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Not so fast, {PLAYER}!\nIt's not over yet!"),
         }
     },
 };

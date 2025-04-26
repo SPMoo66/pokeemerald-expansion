@@ -33,20 +33,12 @@ LittlerootTown_ProfessorBirchsLab_OnTransition:
 	setflag FLAG_TEMP_3
 	call Common_EventScript_SetupRivalGfxId
 	call ProfBirch_EventScript_UpdateLocation
-	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 1, LittlerootTown_ProfessorBirchsLab_EventScript_ShowSakura
-	call_if_set FLAG_TERA_ENABLED, LittlerootTown_ProfessorBirchsLab_EventScript_ShowRowanAide
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 1, EventScript_Clear_FlagTemp1 @ Show Sakura
+	call_if_set FLAG_TERA_ENABLED, EventScript_Clear_FlagTemp2 @ Show Rowan Aide
 	call_if_ge VAR_SKY_PILLAR_STATE, 2, LittlerootTown_ProfessorBirchsLab_EventScript_ShowBianca
 	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6, LittlerootTown_ProfessorBirchsLab_EventScript_SetAfterJohtoStarterLayout
 	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 4, LittlerootTown_ProfessorBirchsLab_EventScript_SetJohtoStarterLayout
 	goto_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 3, LittlerootTown_ProfessorBirchsLab_EventScript_CheckReadyForJohtoStarter
-	end
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ShowSakura::
-	clearflag FLAG_TEMP_1
-	end
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ShowRowanAide::
-	clearflag FLAG_TEMP_2
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_CheckReadyForJohtoStarter::

@@ -19,18 +19,10 @@ PetalburgCity_OnTransition:
 	call_if_eq VAR_PETALBURG_CITY_STATE, 2, PetalburgCity_EventScript_DisableMapNameAndMusic
 	call_if_eq VAR_PETALBURG_CITY_STATE, 4, PetalburgCity_EventScript_DisableMapNameAndMusic
 	call_if_eq VAR_PETALBURG_GYM_STATE, 8, PetalburgCity_EventScript_SetGymDoorsUnlocked
-	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 1, PetalburgCity_EventScript_ShowRival
-	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 2, PetalburgCity_EventScript_ShowRivals
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 1, EventScript_Clear_FlagTemp1 @ Show Rival
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 2, EventScript_Clear_FlagTemp2 @ Show Rivals
 	call Common_EventScript_SetupEmRivalGfxId
 	end
-
-PetalburgCity_EventScript_ShowRival:
-	clearflag FLAG_TEMP_1
-	return
-
-PetalburgCity_EventScript_ShowRivals:
-	clearflag FLAG_TEMP_2
-	return
 
 PetalburgCity_EventScript_MoveGymBoyToWestEntrance::
 	setobjectxyperm LOCALID_GYM_BOY, 5, 11

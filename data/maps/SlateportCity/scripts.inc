@@ -73,11 +73,7 @@ SlateportCity_EventScript_MoveScottLeft::
 	return
 
 SlateportCity_EventScript_ReddCheck::
-	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 0, SlateportCity_EventScript_ReddSet
-	return
-
-SlateportCity_EventScript_ReddSet::
-	clearflag FLAG_TEMP_2
+	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 0, EventScript_Clear_FlagTemp2 @ Show Redd
 	return
 
 SlateportCity_OnFrame:

@@ -423,21 +423,58 @@ text Battle02_SakuraText_PostBattle {
 
 # Town04
 text Town04_BaronText {
-	format(	"")
+	format(	"Oh, um, hi {PLAYER}.\p"
+			"Sorry, I'm just having a lot of trouble\n"
+			"talking to this Mr. Briney person.\p"
+			"He just… moves so fast, right?\p"
+			"The battles were challenging enough\n"
+			"already…\p"
+			"Y- You go on ahead, okay?")
 }
 
 text Town04_HarperText {
-	format(	"")
+	format(	"It's actually not that bad in here.\p"
+			"One of the earlier trainers mentioned\n"
+			"that this cave was super dark before…\p"
+			"Wait, it was in the original? …What\n"
+			"would that even look like to us?\p"
+			"I guess we can thank Jakson a\n"
+			"little bit for what we have now.")
 }
 
 text Town04_JaksonText {
-	format(	"")
+	format(	"{PLAYER}, how's it going?\p"
+			"It's been going pretty smoothly so far.\n"
+			"This mod, I mean.\p"
+			"But what I'm looking forward to is the\n"
+			"custom content that's coming up.\p"
+			"There's so many little mods I added\n"
+			"that let you customize the experience.\p"
+			"Big props to the community that\n"
+			"develop them.\p"
+			"…even if they're not always the\n"
+			"easiest to implement every time\l"
+			"an update comes out…")
 }
 
 text Town04_ReddText {
-	format(	"")
+	format(	"An island town in the southwest\n"
+			"corner of the region…\p"
+			"Water routes connecting to it at the\n"
+			"north and eastern sides…\p"
+			"You know, they could have tried a little\n"
+			"harder to make this place stand out\l"
+			"from Cinnabar Island.\p"
+			"Though… a volcano sounds pretty\n"
+			"cool right now… Hmmm…")
 }
 
 text Town04_SakuraText {
-	format(	"")
+	format(	"Hey, {PLAYER}{EMOJI_TILDE}\p"
+			"I'm still out here recruiting for my\n"
+			"team, of course.\p"
+			"Out here on the beach there's gotta\n"
+			"be some cuties!\p"
+			"You better find some good ones, too!\n"
+			"You must be this cute to proceed{EMOJI_TILDE}")
 }

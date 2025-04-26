@@ -419,3 +419,25 @@ text Battle02_SakuraText_PostBattle {
 			"And I'm lookng forward to crushing\l"
 			"him at the end of this too{EMOJI_TILDE}")
 }
+
+
+# Town04
+text Town04_BaronText {
+	format(	"")
+}
+
+text Town04_HarperText {
+	format(	"")
+}
+
+text Town04_JaksonText {
+	format(	"")
+}
+
+text Town04_ReddText {
+	format(	"")
+}
+
+text Town04_SakuraText {
+	format(	"")
+}

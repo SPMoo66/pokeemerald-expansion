@@ -549,3 +549,23 @@ Battle02_SakuraText_PostBattle::
 	.string "He's a cutie…\n"
 	.string "And I'm lookng forward to crushing\l"
 	.string "him at the end of this too{EMOJI_TILDE}$"
+
+Town04_BaronText::
+# 425 "data/rival_text.pory"
+	.string "$"
+
+Town04_HarperText::
+# 429 "data/rival_text.pory"
+	.string "$"
+
+Town04_JaksonText::
+# 433 "data/rival_text.pory"
+	.string "$"
+
+Town04_ReddText::
+# 437 "data/rival_text.pory"
+	.string "$"
+
+Town04_SakuraText::
+# 441 "data/rival_text.pory"
+	.string "$"

@@ -21,7 +21,7 @@ RustboroCity_OnTransition:
 	setflag FLAG_VISITED_RUSTBORO_CITY
 	setflag FLAG_TEMP_1
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 2, RustboroCity_EventScript_UpdateRivalState
-	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 3, RustboroCity_EventScript_ShowRivals
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 3, EventScript_Clear_FlagTemp1
 	call Common_EventScript_SetupEmRivalGfxId
 	call Common_EventScript_SetupRivalGfxId
 	call_if_eq VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_HideMapNamePopup
@@ -31,10 +31,6 @@ RustboroCity_OnTransition:
 
 RustboroCity_EventScript_UpdateRivalState::
 	setvar VAR_EMERALBODY_RIVAL_STATE, 3
-	return
-
-RustboroCity_EventScript_ShowRivals::
-	clearflag FLAG_TEMP_1
 	return
 
 RustboroCity_EventScript_PositionScientistForExit::

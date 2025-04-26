@@ -331,3 +331,30 @@ script Rival_Scene03 {
 	setflag (FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL)
 	release
 }
+
+
+#Town04
+script Sakura_Town04 {
+	speakername (CommonText_Sakura)
+	msgbox(Town04_SakuraText, MSGBOX_NPC)
+}
+
+script Harper_Town04 {
+	speakername (CommonText_Harper)
+	msgbox(Town04_HarperText, MSGBOX_NPC)
+}
+
+script Redd_Town04 {
+	speakername (CommonText_Redd)
+	msgbox(Town04_ReddText, MSGBOX_NPC)
+}
+
+script Jakson_Town04 {
+	speakername (CommonText_Jakson)
+	msgbox(Town04_JaksonText, MSGBOX_NPC)
+}
+
+script Baron_Town04 {
+	speakername (CommonText_Baron)
+	msgbox(Town04_BaronText, MSGBOX_NPC)
+}

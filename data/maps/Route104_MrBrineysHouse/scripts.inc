@@ -7,6 +7,8 @@ Route104_MrBrineysHouse_MapScripts::
 
 Route104_MrBrineysHouse_OnTransition:
 	setflag FLAG_LANDMARK_MR_BRINEY_HOUSE
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 4, EventScript_Clear_FlagTemp1
 	call_if_eq VAR_BRINEY_HOUSE_STATE, 1, Route104_MrBrineysHouse_EventScript_SetBrineyPeekoPos
 	call_if_set FLAG_RECEIVED_POKENAV, Route104_MrBrineysHouse_EventScript_HideRustboroRival
 	end

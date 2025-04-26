@@ -9,16 +9,12 @@ Route116_MapScripts::
 
 Route116_OnTransition:
 	setflag FLAG_TEMP_1
-	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 3, Route116_EventScript_ShowRivals
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 3, EventScript_Clear_FlagTemp1
 	call_if_set FLAG_RECOVERED_DEVON_GOODS, Route116_EventScript_SetWandasBoyfriendPos
 	call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_HideMapNamePopup
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_116_NORTH, AbnormalWeather_StartGroudonWeather
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_116_SOUTH, AbnormalWeather_StartGroudonWeather
 	end
-
-Route116_EventScript_ShowRivals::
-	clearflag FLAG_TEMP_1
-	return
 
 Route116_EventScript_SetWandasBoyfriendPos::
 	setobjectxyperm LOCALID_WANDAS_BF_OUTSIDE, 38, 10

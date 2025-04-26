@@ -1,4 +1,13 @@
 raw `
+Route102_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route102_OnTransition
+	.byte 0
+
+Route102_OnTransition:
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 2, EventScript_Clear_FlagTemp1
+	end
+
 Route102_EventScript_LittleBoy::
 	msgbox Route102_Text_ImNotVeryTall, MSGBOX_NPC
 	end
@@ -106,12 +115,3 @@ Route102_Text_RouteSignPetalburg:
 	.string "Route 102\n"
 	.string "{LEFT_ARROW} Petalburg City$"
 `
-
-mapscripts Route102_MapScripts {
-	MAP_SCRIPT_ON_TRANSITION {
-		setflag (FLAG_TEMP_1)
-		if (var(VAR_EMERALBODY_RIVAL_STATE) == 2) {
-			clearflag (FLAG_TEMP_1)
-		}
-	}
-}

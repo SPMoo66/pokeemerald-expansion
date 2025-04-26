@@ -19,15 +19,11 @@ Route104_EventScript_StartSailToDewford::
 
 Route104_OnTransition:
 	setflag FLAG_TEMP_1
-	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 2, Route104_EventScript_ShowRivals
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 2, EventScript_Clear_FlagTemp1
 	call Common_EventScript_SetupRivalGfxId
 	call Route104_EventScript_TrySetRivalPos
 	call Route104_EventScript_ShowOrHideWhiteHerbFlorist
 	end
-
-Route104_EventScript_ShowRivals:
-	clearflag FLAG_TEMP_1
-	return
 
 Route104_EventScript_ShowOrHideWhiteHerbFlorist::
 	goto_if_unset FLAG_MET_PRETTY_PETAL_SHOP_OWNER, Route104_EventScript_HideWhiteHerbFlorist

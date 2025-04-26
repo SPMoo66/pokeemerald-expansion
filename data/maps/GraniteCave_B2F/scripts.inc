@@ -86,3 +86,27 @@ GraniteCave_B2F_Sign:
 	.string "Warning!\p"
 # 44 "data/maps/GraniteCave_B2F/scripts.pory"
 	.string "Freezing temperatures below!$"
+# 45 "data/maps/GraniteCave_B2F/scripts.pory"
+
+# 46 "data/maps/GraniteCave_B2F/scripts.pory"
+GraniteCave_B2F_Braille_Loss:
+# 47 "data/maps/GraniteCave_B2F/scripts.pory"
+	brailleformat 4, 6, 26, 13, 7, 9
+# 48 "data/maps/GraniteCave_B2F/scripts.pory"
+	.braille "L LL\nLL V$"
+
+GraniteCave_B2F_EventScript_Braille::
+# 52 "data/maps/GraniteCave_B2F/scripts.pory"
+	lock
+# 53 "data/maps/GraniteCave_B2F/scripts.pory"
+	msgbox GraniteCave_B2F_EventScript_Braille_Text_0
+# 54 "data/maps/GraniteCave_B2F/scripts.pory"
+	braillemsgbox GraniteCave_B2F_Braille_Loss
+# 55 "data/maps/GraniteCave_B2F/scripts.pory"
+	release
+	return
+
+
+GraniteCave_B2F_EventScript_Braille_Text_0:
+# 53 "data/maps/GraniteCave_B2F/scripts.pory"
+	.string "Ancient text is inscribed on the wall…$"

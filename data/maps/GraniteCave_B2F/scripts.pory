@@ -42,5 +42,15 @@ GraniteCave_B2F_EventScript_Sign::
 GraniteCave_B2F_Sign:
 	.string "Warning!\p"
 	.string "Freezing temperatures below!$"
+
+GraniteCave_B2F_Braille_Loss:
+	brailleformat 4, 6, 26, 13, 7, 9
+	.braille "L LL\nLL V$"
 `
 
+script GraniteCave_B2F_EventScript_Braille {
+	lock
+	msgbox ("Ancient text is inscribed on the wall…")
+	braillemsgbox (GraniteCave_B2F_Braille_Loss)
+	release
+}

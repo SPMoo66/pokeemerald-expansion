@@ -242,7 +242,7 @@ text Scene02_SakuraText_PostBattle {
 			"Seeing your face when you weren't sure about the permadeath was great!\p"
 			"Plus, there's always next time.\p"
 			"We've got all game, so…\p"
-			"You're destined to let your guard down eventually{EMOJI_TILDE}")
+			"You're destined to let your guard down eventually{EMOJI_TILDE}{UNK_SPACER}")
 }
 
 # Town02
@@ -278,7 +278,7 @@ text Town02_SakuraText {
 	format(	"Have you done the Wally tutorial fight yet? Where he gets a Ralts?\p"
 			"I wonder if he'll evolve it into a Gardevoir or Gallade in this mod?\p"
 			"Oh, or maybe Iron Valiant somehow!\n"
-			"Best of both worlds{EMOJI_TILDE}")
+			"Best of both worlds{EMOJI_TILDE}{UNK_SPACER}")
 }
 
 # Town03
@@ -362,7 +362,7 @@ text Scene03_SakuraText {
 			"Samesies for me.\p"
 			"I wonder if they let you customize it at all?\p"
 			"It is a bit… super retro flip phone style. That was so many decades ago.\p"
-			"Well, if not. Then I'll have to deck out my profile to be cool as can be{EMOJI_TILDE}")
+			"Well, if not. Then I'll have to deck out my profile to be cool as can be{EMOJI_TILDE}{UNK_SPACER}")
 }
 
 
@@ -417,7 +417,7 @@ text Battle02_SakuraText_PostBattle {
 			"Deliver your Letter to Steven.\p"
 			"He's a cutie…\n"
 			"And I'm lookng forward to crushing\l"
-			"him at the end of this too{EMOJI_TILDE}")
+			"him at the end of this too{EMOJI_TILDE}{UNK_SPACER}")
 }
 
 
@@ -476,5 +476,5 @@ text Town04_SakuraText {
 			"Out here on the beach there's gotta\n"
 			"be some cuties!\p"
 			"You better find some good ones, too!\n"
-			"You must be this cute to proceed{EMOJI_TILDE}")
+			"You must be this cute to proceed{EMOJI_TILDE}{UNK_SPACER}")
 }

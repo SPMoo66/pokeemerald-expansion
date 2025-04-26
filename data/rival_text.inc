@@ -348,7 +348,7 @@ Scene02_SakuraText_PostBattle::
 	.string "Plus, there's always next time.\p"
 	.string "We've got all game, so…\p"
 	.string "You're destined to let your guard down\n"
-	.string "eventually{EMOJI_TILDE}$"
+	.string "eventually{EMOJI_TILDE}{UNK_SPACER}$"
 
 Town02_BaronText::
 # 249 "data/rival_text.pory"
@@ -397,7 +397,7 @@ Town02_SakuraText::
 	.string "I wonder if he'll evolve it into a\n"
 	.string "Gardevoir or Gallade in this mod?\p"
 	.string "Oh, or maybe Iron Valiant somehow!\n"
-	.string "Best of both worlds{EMOJI_TILDE}$"
+	.string "Best of both worlds{EMOJI_TILDE}{UNK_SPACER}$"
 
 Town03_BaronText1::
 # 285 "data/rival_text.pory"
@@ -496,7 +496,7 @@ Scene03_SakuraText::
 	.string "It is a bit… super retro flip phone\n"
 	.string "style. That was so many decades ago.\p"
 	.string "Well, if not. Then I'll have to deck out\n"
-	.string "my profile to be cool as can be{EMOJI_TILDE}$"
+	.string "my profile to be cool as can be{EMOJI_TILDE}{UNK_SPACER}$"
 
 Battle02_HarperText_PreBattle::
 # 371 "data/rival_text.pory"
@@ -548,7 +548,7 @@ Battle02_SakuraText_PostBattle::
 	.string "Deliver your Letter to Steven.\p"
 	.string "He's a cutie…\n"
 	.string "And I'm lookng forward to crushing\l"
-	.string "him at the end of this too{EMOJI_TILDE}$"
+	.string "him at the end of this too{EMOJI_TILDE}{UNK_SPACER}$"
 
 Town04_BaronText::
 # 425 "data/rival_text.pory"
@@ -605,4 +605,4 @@ Town04_SakuraText::
 	.string "Out here on the beach there's gotta\n"
 	.string "be some cuties!\p"
 	.string "You better find some good ones, too!\n"
-	.string "You must be this cute to proceed{EMOJI_TILDE}$"
+	.string "You must be this cute to proceed{EMOJI_TILDE}{UNK_SPACER}$"

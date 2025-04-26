@@ -453,6 +453,8 @@
 #define OBJ_EVENT_PAL_TAG_POKEMANIAC              0x1145
 #define OBJ_EVENT_PAL_TAG_PKMN_RANGER             0x1146
 #define OBJ_EVENT_PAL_TAG_KINDLER                 0x1147
+#define OBJ_EVENT_PAL_TAG_WALLACE                 0x1148
+#define OBJ_EVENT_PAL_TAG_WALLY                   0x1149
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

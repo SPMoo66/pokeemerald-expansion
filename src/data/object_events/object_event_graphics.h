@@ -456,6 +456,7 @@ const u32 gObjectEventPic_Pokemaniac[] = INCBIN_U32("graphics/object_events/pics
 const u32 gObjectEventPic_PkmnRangerM[] = INCBIN_U32("graphics/object_events/pics/people/custom/pkmn_ranger_m.4bpp");
 const u32 gObjectEventPic_PkmnRangerF[] = INCBIN_U32("graphics/object_events/pics/people/custom/pkmn_ranger_f.4bpp");
 
+const u16 gObjectEventPal_Kindler[] = INCBIN_U16("graphics/object_events/palettes/kindler.gbapal");
 const u16 gObjectEventPal_BirdKeeper[] = INCBIN_U16("graphics/object_events/palettes/bird_keeper.gbapal");
 const u16 gObjectEventPal_BugManiac[] = INCBIN_U16("graphics/object_events/palettes/bug_maniac.gbapal");
 const u16 gObjectEventPal_DragonTamer[] = INCBIN_U16("graphics/object_events/palettes/dragon_tamer.gbapal");
@@ -464,7 +465,9 @@ const u16 gObjectEventPal_PkmnBreeder[] = INCBIN_U16("graphics/object_events/pal
 const u16 gObjectEventPal_AromaLady[] = INCBIN_U16("graphics/object_events/palettes/aroma_lady.gbapal");
 const u16 gObjectEventPal_Pokemaniac[] = INCBIN_U16("graphics/object_events/palettes/pokemaniac.gbapal");
 const u16 gObjectEventPal_PkmnRanger[] = INCBIN_U16("graphics/object_events/palettes/pkmn_ranger.gbapal");
-const u16 gObjectEventPal_Kindler[] = INCBIN_U16("graphics/object_events/palettes/kindler.gbapal");
+
+const u16 gObjectEventPal_Wallace[] = INCBIN_U16("graphics/object_events/palettes/wallace.gbapal");
+const u16 gObjectEventPal_Wally[] = INCBIN_U16("graphics/object_events/palettes/wally.gbapal");
 
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 

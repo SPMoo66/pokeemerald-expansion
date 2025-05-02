@@ -5071,7 +5071,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BirdKeeper = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Guitarist = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_BIRD_KEEPER,
+    .paletteTag = OBJ_EVENT_PAL_TAG_BEAUTY,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,

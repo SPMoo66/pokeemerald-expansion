@@ -478,3 +478,72 @@ text Town04_SakuraText {
 			"You better find some good ones, too!\n"
 			"You must be this cute to proceed{EMOJI_TILDE}{UNK_SPACER}")
 }
+
+
+# Town05
+text Town05_BaronText {
+	format(	"Oh, hello there.\p"
+			"{EMOJI_BIGWHEEL}Bows politely{EMOJI_BIGWHEEL}\p"
+			"I wanted to thank you for your\n"
+			"patience with me learning the controls.\p"
+			"…\p"
+			"I am… not… just trying to put off\n"
+			"the ‘bike’ event I was told about.\p"
+			"…\p"
+			"Please tell me it doesn't hurt when\n"
+			"you fall off one of them…")
+}
+
+text Town05_HarperText {
+	format(	"The beaches here are pretty nice,\n"
+			"I suppose.\p"
+			"Just overrun by all the mindless\n"
+			"drones around us.\p"
+			"…and pixelated to hell and back…\p"
+			"Is the charming or…\n"
+			"Stockholm Syndrome?\p"
+			"But hey, at least we all run into each\n"
+			"other now and then.\p"
+			"Not sure I'd get through this if I\n"
+			"didn't have any real people to talk to.")
+}
+
+text Town05_JaksonText {
+	format(	"Good to see you made it here,\n"
+			"{PLAYER}.\p"
+			"I've always liked Slateport City.\n"
+			"The beach, the market, the harbor…\p"
+			"It's got such a cozy feel to it.\p"
+			"And then you've got that long\n"
+			"Route 110 to go through.\p"
+			"Who knows what other surprises you'll\n"
+			"find?\p"
+			"Well, who knows other than me!")
+}
+
+text Town05_ReddText {
+	format(	"Hey, {PLAYER}…\p"
+			"Nothing wrong with me. Maybe a little\n"
+			"overwhelmed here and there…\p"
+			"But mainly I'm just taking a break.\p"
+			"Even now I'm starting to think on some\n"
+			"neat strategies you won't see coming.\p"
+			"This city's pretty neat at least.\p"
+			"Looking at the harbor, it might be cool\n"
+			"if they made Vermillion more detailed.")
+}
+
+text Town05_SakuraText {
+	format(	"Howdy, {PLAYER}!\p"
+			"You run into that creepy guy back\n"
+			"in the city too?\p"
+			"‘Looker’? Like is that a Freudian slip\n"
+			"of a name?\p"
+			"I can't say I'm a fan of the police,\n"
+			"but nobody would add them in just\l"
+			"for them to be jerks, right?\p"
+			"I still hope I get a chance to kick\n"
+			"his butt!\p"
+			"And if not…\n"
+			"Jakson's will do.")
+}

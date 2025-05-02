@@ -29,10 +29,12 @@ SlateportCity_MapScripts::
 
 SlateportCity_OnTransition:
 	setvar VAR_SLATEPORT_MUSEUM_1F_STATE, 0
+	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
 	call SlateportCity_EventScript_EnterSlateport
 	call_if_eq VAR_SLATEPORT_CITY_STATE, 2, SlateportCity_EventScript_MovePeopleForSternInterview
 	call_if_eq VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 1, SlateportCity_EventScript_SetReadyForScottScene
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 5, EventScript_Clear_FlagTemp1
 	call_if_eq VAR_EMERALBODY_RIVAL, 3, SlateportCity_EventScript_ReddCheck
 	end
 

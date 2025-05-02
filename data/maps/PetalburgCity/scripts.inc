@@ -1484,24 +1484,28 @@ PetalburgCity_EventScript_WallyBattle_1:
 # 753 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_WallyBattle_Text_1
 # 760 "data/maps/PetalburgCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_WALLY_PETALBURG, PetalburgCity_EventScript_WallyBattle_Text_2
+	setflag FLAG_SYS_SET_BATTLE_BGM
 # 761 "data/maps/PetalburgCity/scripts.pory"
+	setvar VAR_BATTLE_BGM, MUS_HG_VS_WILD
+# 762 "data/maps/PetalburgCity/scripts.pory"
+	trainerbattle_no_intro TRAINER_WALLY_PETALBURG, PetalburgCity_EventScript_WallyBattle_Text_2
+# 763 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_WallyBattle_Text_3
-# 766 "data/maps/PetalburgCity/scripts.pory"
-	closemessage
-# 767 "data/maps/PetalburgCity/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 768 "data/maps/PetalburgCity/scripts.pory"
-	removeobject LOCALID_WALLY
+	closemessage
 # 769 "data/maps/PetalburgCity/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreen FADE_TO_BLACK
 # 770 "data/maps/PetalburgCity/scripts.pory"
-	setvar VAR_PETALBURG_CITY_STATE, 6
+	removeobject LOCALID_WALLY
 # 771 "data/maps/PetalburgCity/scripts.pory"
-	clearflag FLAG_CHALLENGING_TRAINER
+	fadescreen FADE_FROM_BLACK
 # 772 "data/maps/PetalburgCity/scripts.pory"
-	fadedefaultbgm
+	setvar VAR_PETALBURG_CITY_STATE, 6
 # 773 "data/maps/PetalburgCity/scripts.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 774 "data/maps/PetalburgCity/scripts.pory"
+	fadedefaultbgm
+# 775 "data/maps/PetalburgCity/scripts.pory"
 	release
 	return
 
@@ -1554,11 +1558,11 @@ PetalburgCity_EventScript_WallyBattle_Text_1:
 	.string "I'll sit at home no longer!$"
 
 PetalburgCity_EventScript_WallyBattle_Text_2:
-# 760 "data/maps/PetalburgCity/scripts.pory"
+# 762 "data/maps/PetalburgCity/scripts.pory"
 	.string "Ah…\nI think I see now…$"
 
 PetalburgCity_EventScript_WallyBattle_Text_3:
-# 761 "data/maps/PetalburgCity/scripts.pory"
+# 763 "data/maps/PetalburgCity/scripts.pory"
 	.string "{PLAYER}, you're strong.\p"
 	.string "You're really strong.\p"
 	.string "Thank you for the battle.\n"

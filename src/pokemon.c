@@ -5821,6 +5821,11 @@ bool32 IsSpeciesInHoennDex(u16 species)
 
 u16 GetBattleBGM(void)
 {
+    if (FlagGet(FLAG_SYS_SET_BATTLE_BGM)) // This is custom code to override battle music when FLAG_SYS_SET_BATTLE_BGM is set. The BGM used is stored in VAR_TEMP_F
+    {
+        FlagClear(FLAG_SYS_SET_BATTLE_BGM);
+        return VarGet(VAR_TEMP_F);
+    }
     if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
     {
         switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
@@ -5894,7 +5899,8 @@ u16 GetBattleBGM(void)
             default:
                 return MUS_VS_CHAMPION;
             }
-        case TRAINER_CLASS_RIVAL:
+        case TRAINER_CLASS_RIVAL: // Below is old code that is replaced by FLAG_SYS_SET_BATTLE_BGM
+/*
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return MUS_VS_RIVAL;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Wally")) && (FlagGet(FLAG_BADGE08_GET)))
@@ -5911,6 +5917,7 @@ u16 GetBattleBGM(void)
                 return MUS_PL_VS_FRONTIER_BRAIN;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Baron")))
                 return MUS_DP_VS_RIVAL;
+*/
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
             switch (musicRegion)

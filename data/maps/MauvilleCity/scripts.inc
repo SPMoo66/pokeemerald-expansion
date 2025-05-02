@@ -213,6 +213,8 @@ MauvilleCity_EventScript_BattleWally::
 	speakername (CommonText_Wally)
 	msgbox MauvilleCity_Text_WallyHereICome, MSGBOX_DEFAULT
 	setflag FLAG_CHALLENGING_TRAINER
+	setflag FLAG_SYS_SET_BATTLE_BGM
+	setvar VAR_BATTLE_BGM, MUS_HG_VS_WILD
 	trainerbattle_no_intro TRAINER_WALLY_MAUVILLE, MauvilleCity_Text_WallyDefeat
 	clearflag FLAG_CHALLENGING_TRAINER
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight

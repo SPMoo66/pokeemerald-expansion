@@ -757,6 +757,8 @@ script PetalburgCity_EventScript_WallyBattle {
 					"I don't want to be overshadowed any longer!\p"
 					"{PLAYER}, please battle me now and see how far I've come.\p"
 					"I'll sit at home no longer!"))
+	setflag (FLAG_SYS_SET_BATTLE_BGM)
+	setvar (VAR_BATTLE_BGM, MUS_HG_VS_WILD)
 	trainerbattle_no_intro (TRAINER_WALLY_PETALBURG, "Ah…\nI think I see now…")
 	msgbox( format( "{PLAYER}, you're strong.\p"
 					"You're really strong.\p"

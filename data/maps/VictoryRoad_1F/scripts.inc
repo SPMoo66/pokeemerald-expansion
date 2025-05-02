@@ -44,6 +44,8 @@ VictoryRoad_1F_EventScript_WallyEntranceBattle::
 	speakername (CommonText_Wally)
 	msgbox VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore, MSGBOX_DEFAULT
 	setflag FLAG_CHALLENGING_TRAINER
+	setflag FLAG_SYS_SET_BATTLE_BGM
+	setvar VAR_BATTLE_BGM, MUS_HG_VS_GYM_LEADER
 	trainerbattle_no_intro TRAINER_WALLY_VR_1, VictoryRoad_1F_Text_WallyEntranceDefeat
 	clearflag FLAG_CHALLENGING_TRAINER
 	speakername (CommonText_Wally)
@@ -92,9 +94,12 @@ VictoryRoad_1F_EventScript_EntranceWally::
 @ This Wally appears and remains at the exit after the Hall of Fame is entered
 VictoryRoad_1F_EventScript_ExitWally::
 	speakername (CommonText_Wally)
+	setflag FLAG_SYS_SET_BATTLE_BGM
+	setvar VAR_BATTLE_BGM, MUS_HG_VS_GYM_LEADER
 	trainerbattle_single TRAINER_WALLY_VR_2, VictoryRoad_1F_Text_WallyIntro, VictoryRoad_1F_Text_WallyDefeat
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, VictoryRoad_1F_EventScript_RematchWally
+	clearflag FLAG_SYS_SET_BATTLE_BGM
 	speakername (CommonText_Wally)
 	msgbox VictoryRoad_1F_Text_WallyPostBattle, MSGBOX_AUTOCLOSE
 	end

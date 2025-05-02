@@ -21,6 +21,7 @@ script Harper_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		waitmovement (0)
 		call (GetRivalForNameBox)
 		msgbox (Battle02_HarperText_PreBattle, MSGBOX_DEFAULT)
+		call (GetRivalMusic)
 		trainerbattle_no_intro (TRAINER_HARPER_2, Battle02_HarperText_BattleVictory)
 		call (GetRivalForNameBox)
 		msgbox(Battle02_HarperText_PostBattle)
@@ -87,6 +88,7 @@ script Redd_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 			waitmovement (0)
 			msgbox (Battle02_ReddText_PreBattleAlt, MSGBOX_DEFAULT)
 		}
+		call (GetRivalMusic)
 		trainerbattle_no_intro (TRAINER_REDD_2, Battle02_ReddText_BattleVictory)
 		call (GetRivalForNameBox)
 		msgbox(Battle02_ReddText_PostBattle)
@@ -126,6 +128,7 @@ script Sakura_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		waitse
 		call (GetRivalForNameBox)
 		msgbox (Battle02_SakuraText_PreBattle, MSGBOX_DEFAULT)
+		call (GetRivalMusic)
 		trainerbattle_no_intro (TRAINER_SAKURA_2, Battle02_SakuraText_BattleVictory)
 		call (GetRivalForNameBox)
 		msgbox(Battle02_SakuraText_PostBattle)

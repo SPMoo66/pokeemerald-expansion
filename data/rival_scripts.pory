@@ -149,6 +149,7 @@ script Rival_Scene02 {
 		applymovement (RIVAL_PETALBURG, Common_Movement_WalkRight2)
 		waitmovement (0)
 		call (GetRivalForNameBox)
+		call (GetRivalMusic)
 		switch (var(VAR_EMERALBODY_RIVAL)) {
 			case 1:
 				msgbox(Scene02_HarperText_PreBattle)

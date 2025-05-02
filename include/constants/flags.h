@@ -292,7 +292,7 @@
 #define FLAG_RECEIVED_REVIVED_FOSSIL_MON     0x10B
 #define FLAG_SECRET_BASE_REGISTRY_ENABLED    0x10C
 #define FLAG_RECEIVED_BOTTLE_CAP_OCEANIC     0x10D // Was Thief TM
-#define FLAG_CAUGHT_HOOPA                    0x10E // Unused Flag
+#define FLAG_CAUGHT_HOOPA                    0x10E // Was unused
 #define FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE   0x10F
 #define FLAG_RECEIVED_EXP_SHARE              0x110
 #define FLAG_POKERUS_EXPLAINED               0x111
@@ -1510,8 +1510,8 @@
 #define FLAG_LEVEL_SYNC                             (SYSTEM_FLAGS + 0x87) // Was unused
 #define FLAG_CHALLENGING_TRAINER                    (SYSTEM_FLAGS + 0x88) // Set for challenging trainers so level sync does not scale them two levels lower like standard trainers
 #define FLAG_PREVENT_OVERWORLD_SPEEDUP              (SYSTEM_FLAGS + 0x89) // Was unused
+#define FLAG_SYS_SET_BATTLE_BGM                     (SYSTEM_FLAGS + 0x8A) // Was unused, set this flag when overriding battle BGM, store BGM in VAR_TEMP_F
 
-#define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
 #define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
 #define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
 #define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag

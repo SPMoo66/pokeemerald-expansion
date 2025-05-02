@@ -133,7 +133,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NinjaBoy = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Twin = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,
+    .paletteTag = OBJ_EVENT_PAL_TAG_TWIN,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -285,7 +285,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Boy3 = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Girl3 = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,
+    .paletteTag = OBJ_EVENT_PAL_TAG_BATTLE_GIRL,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -304,7 +304,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Girl3 = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RichBoy = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
+    .paletteTag = OBJ_EVENT_PAL_TAG_RICH_BOY,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -361,7 +361,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FatMan = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokefanF = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,
+    .paletteTag = OBJ_EVENT_PAL_TAG_POKEFAN_F,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -494,7 +494,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Woman3 = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokefanM = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,
+    .paletteTag = OBJ_EVENT_PAL_TAG_POKEFAN_M,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -646,7 +646,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Picnicker = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Man3 = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ACE_TRAINER,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -665,7 +665,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Man3 = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Woman5 = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ACE_TRAINER,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -874,7 +874,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BlackBelt = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Beauty = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
+    .paletteTag = OBJ_EVENT_PAL_TAG_BEAUTY,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -988,7 +988,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Fisherman = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RunningTriathleteM = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,
+    .paletteTag = OBJ_EVENT_PAL_TAG_RUNNING_TRIATHLETE,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -1007,7 +1007,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RunningTriathleteM
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RunningTriathleteF = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,
+    .paletteTag = OBJ_EVENT_PAL_TAG_RUNNING_TRIATHLETE,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -1064,7 +1064,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TuberM = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hiker = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .paletteTag = OBJ_EVENT_PAL_TAG_HIKER,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,

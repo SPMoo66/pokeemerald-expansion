@@ -455,6 +455,12 @@
 #define OBJ_EVENT_PAL_TAG_KINDLER                 0x1147
 #define OBJ_EVENT_PAL_TAG_WALLACE                 0x1148
 #define OBJ_EVENT_PAL_TAG_WALLY                   0x1149
+#define OBJ_EVENT_PAL_TAG_ACE_TRAINER             0x114A
+#define OBJ_EVENT_PAL_TAG_BATTLE_GIRL             0x114B
+#define OBJ_EVENT_PAL_TAG_BEAUTY                  0x114C
+#define OBJ_EVENT_PAL_TAG_HIKER                   0x114D
+#define OBJ_EVENT_PAL_TAG_POKEFAN_M               0x114E
+#define OBJ_EVENT_PAL_TAG_POKEFAN_F               0x114F
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla
@@ -491,6 +497,11 @@
 // Gen VIII
 #define OBJ_EVENT_PAL_TAG_BALL_STRANGE            0x116A
 #endif //OW_FOLLOWERS_POKEBALLS
+
+#define OBJ_EVENT_PAL_TAG_RICH_BOY                0x116C
+#define OBJ_EVENT_PAL_TAG_RUNNING_TRIATHLETE      0x116D
+#define OBJ_EVENT_PAL_TAG_TWIN                    0x116E
+
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_EMOTES                  0x8002

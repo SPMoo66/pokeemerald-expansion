@@ -465,6 +465,15 @@ const u16 gObjectEventPal_PkmnBreeder[] = INCBIN_U16("graphics/object_events/pal
 const u16 gObjectEventPal_AromaLady[] = INCBIN_U16("graphics/object_events/palettes/aroma_lady.gbapal");
 const u16 gObjectEventPal_Pokemaniac[] = INCBIN_U16("graphics/object_events/palettes/pokemaniac.gbapal");
 const u16 gObjectEventPal_PkmnRanger[] = INCBIN_U16("graphics/object_events/palettes/pkmn_ranger.gbapal");
+const u16 gObjectEventPal_AceTrainer[] = INCBIN_U16("graphics/object_events/palettes/ace_trainer.gbapal");
+const u16 gObjectEventPal_BattleGirl[] = INCBIN_U16("graphics/object_events/palettes/battle_girl.gbapal");
+const u16 gObjectEventPal_Beauty[] = INCBIN_U16("graphics/object_events/palettes/beauty.gbapal");
+const u16 gObjectEventPal_Hiker[] = INCBIN_U16("graphics/object_events/palettes/hiker.gbapal");
+const u16 gObjectEventPal_PokefanM[] = INCBIN_U16("graphics/object_events/palettes/pokefan_m.gbapal");
+const u16 gObjectEventPal_PokefanF[] = INCBIN_U16("graphics/object_events/palettes/pokefan_f.gbapal");
+const u16 gObjectEventPal_RichBoy[] = INCBIN_U16("graphics/object_events/palettes/rich_boy.gbapal");
+const u16 gObjectEventPal_RunningTriathlete[] = INCBIN_U16("graphics/object_events/palettes/running_triathlete.gbapal");
+const u16 gObjectEventPal_Twin[] = INCBIN_U16("graphics/object_events/palettes/twin.gbapal");
 
 const u16 gObjectEventPal_Wallace[] = INCBIN_U16("graphics/object_events/palettes/wallace.gbapal");
 const u16 gObjectEventPal_Wally[] = INCBIN_U16("graphics/object_events/palettes/wally.gbapal");

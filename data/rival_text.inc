@@ -627,7 +627,7 @@ Town05_HarperText::
 	.string "Just overrun by all the mindless\n"
 	.string "drones around us.\p"
 	.string "…and pixelated to hell and back…\p"
-	.string "Is the charming or…\n"
+	.string "Is this charming or…\n"
 	.string "Stockholm Syndrome?\p"
 	.string "But hey, at least we all run into each\n"
 	.string "other now and then.\p"

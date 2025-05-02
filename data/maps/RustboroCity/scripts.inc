@@ -875,7 +875,7 @@ RustboroCity_Text_GymLeaderIsntEasyWithFire:
 	.string "It's not going to be easy winning with\n"
 	.string "my Fire-type Pokémon…\p"
 	.string "Fire-type Pokémon match up well\n"
-	.string "against Ice-type Pokémon, but\n"
+	.string "against Ice-type Pokémon, but\l"
 	.string "not Ground-type Pokémon…$"
 
 RustboroCity_Text_MrBrineyWalksInTheTunnel:

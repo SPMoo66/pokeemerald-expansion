@@ -673,3 +673,58 @@ Town05_SakuraText::
 	.string "his butt!\p"
 	.string "And if not…\n"
 	.string "Jakson's will do.$"
+
+Town06_BaronText::
+# 553 "data/rival_text.pory"
+	.string "Hi… {PLAYER}.\p"
+	.string "Is it just me or is there no way to\n"
+	.string "move these rocks?\p"
+	.string "Can you break them? Or do we need to\n"
+	.string "wait for the authorities to do that?\p"
+	.string "I guess… I'll head back and see if\n"
+	.string "there was something I missed.$"
+
+Town06_HarperText::
+# 563 "data/rival_text.pory"
+	.string "Hey, is it just me or…\p"
+	.string "Or is this route just oddly straight?\p"
+	.string "Like a straight line you could just run\n"
+	.string "down without thought?\p"
+	.string "Was this intentional or something?$"
+
+Town06_JaksonText::
+# 571 "data/rival_text.pory"
+	.string "You know, Wally is supposed to be\n"
+	.string "really weak, but what's the fun in that?\p"
+	.string "If there's a character who's supposed\n"
+	.string "to\n"
+	.string "be your rival, shouldn't they be strong?\p"
+	.string "Especially when you only abttle him\n"
+	.string "twice\n"
+	.string "in the original. What a joke that is!$"
+
+Town06_ReddText1::
+# 580 "data/rival_text.pory"
+	.string "This place does have a really unique\n"
+	.string "vibe to it.\p"
+	.string "Like imagine the power plant if they\n"
+	.string "expanded it to…$"
+
+Town06_ReddText2::
+# 587 "data/rival_text.pory"
+	.string "Hm? What's that look? What, are you\n"
+	.string "worried about me or something?\p"
+	.string "Nothing to worry about this.\p"
+	.string "Just make sure you keep up{EMOJI_TILDE}{UNK_SPACER}$"
+
+Town06_SakuraText::
+# 594 "data/rival_text.pory"
+	.string "{PLAYER}!\n"
+	.string "You made it!\p"
+	.string "Was a long walk to get here, but I'm\n"
+	.string "ready to shred up the road with my bike!\p"
+	.string "I'll leave you in the dust while I'm\n"
+	.string "at it{EMOJI_TILDE}\p"
+	.string "Actually… hey {PLAYER}, stand there.\p"
+	.string "If I do it fast enough, maybe I can\n"
+	.string "make a picture with the dust clouds?$"

@@ -141,8 +141,8 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	setvar VAR_EMERALBODY_RIVAL_STATE, 5
-	warp MAP_SLATEPORT_CITY, 0
+	setvar VAR_EMERALBODY_RIVAL_STATE, 6
+	warp MAP_MAUVILLE_CITY, 0
 	release
 	end
 

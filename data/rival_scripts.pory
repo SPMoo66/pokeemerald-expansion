@@ -386,3 +386,33 @@ script Baron_Town05 {
 	speakername (CommonText_Baron)
 	msgbox(Town05_BaronText, MSGBOX_NPC)
 }
+
+
+#Town06
+script Sakura_Town06 {
+	speakername (CommonText_Sakura)
+	msgbox(Town06_SakuraText, MSGBOX_NPC)
+}
+
+script Harper_Town06 {
+	speakername (CommonText_Harper)
+	msgbox(Town06_HarperText, MSGBOX_NPC)
+}
+
+script Redd_Town06 {
+	speakername (CommonText_Redd)
+	msgbox(Town06_ReddText1, MSGBOX_NPC)
+	applymovement (5, Common_Movement_QuestionMark)
+	speakername (CommonText_Redd)
+	msgbox(Town06_ReddText2, MSGBOX_NPC)
+}
+
+script Jakson_Town06 {
+	speakername (CommonText_Jakson)
+	msgbox(Town06_JaksonText, MSGBOX_NPC)
+}
+
+script Baron_Town06 {
+	speakername (CommonText_Baron)
+	msgbox(Town06_BaronText, MSGBOX_NPC)
+}

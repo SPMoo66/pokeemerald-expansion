@@ -547,3 +547,58 @@ text Town05_SakuraText {
 			"And if not…\n"
 			"Jakson's will do.")
 }
+
+
+# Town06
+text Town06_BaronText {
+	format(	"Hi… {PLAYER}.\p"
+			"Is it just me or is there no way to\n"
+			"move these rocks?\p"
+			"Can you break them? Or do we need to\n"
+			"wait for the authorities to do that?\p"
+			"I guess… I'll head back and see if\n"
+			"there was something I missed.")
+}
+
+text Town06_HarperText {
+	format(	"Hey, is it just me or…\p"
+			"Or is this route just oddly straight?\p"
+			"Like a straight line you could just run\n"
+			"down without thought?\p"
+			"Was this intentional or something?")
+}
+
+text Town06_JaksonText {
+	format(	"You know, Wally is supposed to be\n"
+			"really weak, but what's the fun in that?\p"
+			"If there's a character who's supposed to\n"
+			"be your rival, shouldn't they be strong?\p"
+			"Especially when you only abttle him twice\n"
+			"in the original. What a joke that is!")
+}
+
+text Town06_ReddText1 {
+	format(	"This place does have a really unique\n"
+			"vibe to it.\p"
+			"Like imagine the power plant if they\n"
+			"expanded it to…")
+}
+
+text Town06_ReddText2 {
+	format(	"Hm? What's that look? What, are you\n"
+			"worried about me or something?\p"
+			"Nothing to worry about this.\p"
+			"Just make sure you keep up{EMOJI_TILDE}{UNK_SPACER}")
+}
+
+text Town06_SakuraText {
+	format(	"{PLAYER}!\n"
+			"You made it!\p"
+			"Was a long walk to get here, but I'm\n"
+			"ready to shred up the road with my bike!\p"
+			"I'll leave you in the dust while I'm\n"
+			"at it{EMOJI_TILDE}\p"
+			"Actually… hey {PLAYER}, stand there.\p"
+			"If I do it fast enough, maybe I can\n"
+			"make a picture with the dust clouds?")
+}

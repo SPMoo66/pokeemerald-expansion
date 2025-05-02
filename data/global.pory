@@ -8,6 +8,11 @@ script EventScript_Clear_FlagTemp2 {
 	return
 }
 
+script EventScript_Clear_FlagTemp3 {
+	clearflag (FLAG_TEMP_3)
+	return
+}
+
 script EventScript_HideMapNamePopup {
 	setflag (FLAG_HIDE_MAP_NAME_POPUP)
 	return

@@ -46,6 +46,8 @@ Route111_EventScript_ShowTemporaryMirageTower::
 	return
 
 Route111_OnTransition:
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 6, EventScript_Clear_FlagTemp1
 	setvar VAR_TRAINER_HILL_IS_ACTIVE, 0
 	special SetMirageTowerVisibility
 	call_if_unset FLAG_MIRAGE_TOWER_VISIBLE, Route111_EventScript_SetLayoutNoMirageTower

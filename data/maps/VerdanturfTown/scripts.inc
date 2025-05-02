@@ -6,6 +6,8 @@ VerdanturfTown_MapScripts::
 
 VerdanturfTown_OnTransition:
 	setflag FLAG_VISITED_VERDANTURF_TOWN
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 6, EventScript_Clear_FlagTemp1
 	setvar VAR_CONTEST_HALL_STATE, 0
 	end
 

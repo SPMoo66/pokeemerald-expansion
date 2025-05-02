@@ -627,6 +627,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route111_EventScript_RockSmashTipFatMan",
       "flag": "FLAG_RECEIVED_HM_ROCK_SMASH"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BARON",
+      "x": 19,
+      "y": 104,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Baron_Town06",
+      "flag": "FLAG_TEMP_1"
     }
   ],
   "warp_events": [

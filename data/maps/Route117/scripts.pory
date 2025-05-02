@@ -9,6 +9,8 @@ Route117_MapScripts::
 
 Route117_OnTransition:
 	call Route117_EventScript_TryMoveDayCareMan
+	setflag FLAG_TEMP_3
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 6, EventScript_Clear_FlagTemp3
 	@ set flags for OW daycare mons
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2

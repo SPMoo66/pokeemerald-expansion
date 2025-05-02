@@ -8,11 +8,13 @@ MauvilleCity_MapScripts::
 
 MauvilleCity_OnTransition:
 	setflag FLAG_VISITED_MAUVILLE_CITY
+	setflag FLAG_TEMP_1
 	clearflag FLAG_FORCE_MIRAGE_TOWER_VISIBLE
 	clearflag FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION
 	setflag FLAG_SYS_TV_START
 	clearflag FLAG_MAUVILLE_GYM_BARRIERS_STATE
 	setvar VAR_MAUVILLE_GYM_STATE, 0
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 6, EventScript_Clear_FlagTemp1
 	call_if_set FLAG_GOT_REWARD_FROM_WATTSON, MauvilleCity_EventScript_MoveWattsonBackToGym
 	end
 

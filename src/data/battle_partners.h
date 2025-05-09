@@ -54,3 +54,4 @@
         .trainerPic = TRAINER_BACK_PIC_STEVEN,
         .trainerName = _("Steven"),
     },
+

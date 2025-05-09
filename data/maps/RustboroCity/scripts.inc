@@ -15,14 +15,22 @@
 RustboroCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, RustboroCity_OnFrame
+	map_script MAP_SCRIPT_ON_RESUME, RustboroCity_OnResume
 	.byte 0
 
 RustboroCity_OnTransition:
 	setflag FLAG_VISITED_RUSTBORO_CITY
 	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	setflag FLAG_TEMP_3
+	setflag FLAG_TEMP_4
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 2, RustboroCity_EventScript_UpdateRivalState
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 3, EventScript_Clear_FlagTemp1
+	call_if_eq VAR_MAGEARNA_STATE, 2, EventScript_Clear_FlagTemp2
+	call_if_eq VAR_MAGEARNA_STATE, 3, EventScript_Clear_FlagTemp3
+	call_if_eq VAR_MAGEARNA_STATE, 4, EventScript_Clear_FlagTemp4
 	call Common_EventScript_SetupEmRivalGfxId
+	call_if_set FLAG_CAUGHT_MAGEARNA, RustboroCity_EventScript_HideMagearna
 	call Common_EventScript_SetupRivalGfxId
 	call_if_eq VAR_RUSTBORO_CITY_STATE, 6, EventScript_HideMapNamePopup
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
@@ -31,6 +39,11 @@ RustboroCity_OnTransition:
 
 RustboroCity_EventScript_UpdateRivalState::
 	setvar VAR_EMERALBODY_RIVAL_STATE, 3
+	return
+
+RustboroCity_EventScript_HideMagearna::
+	setflag FLAG_TEMP_4
+	removeobject 27
 	return
 
 RustboroCity_EventScript_PositionScientistForExit::
@@ -45,6 +58,10 @@ RustboroCity_EventScript_PositionScientistLeftExit::
 RustboroCity_OnFrame:
 	map_script_2 VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_ScientistAddMatchCall
 	.2byte 0
+
+RustboroCity_OnResume:
+	removeobject VAR_LAST_TALKED
+	end
 
 RustboroCity_EventScript_ScientistAddMatchCall::
 	lockall
@@ -689,6 +706,7 @@ RustboroCity_EventScript_MayBrineyHint::
 	msgbox RustboroCity_Text_MayMrBrineyHint, MSGBOX_DEFAULT
 	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
 	clearflag FLAG_CHALLENGING_TRAINER
+	setvar VAR_RUSTBORO_CITY_STATE, 9
 	releaseall
 	end
 
@@ -765,6 +783,7 @@ RustboroCity_EventScript_BrendanBrineyHint::
 	msgbox RustboroCity_Text_BrendanMrBrineyHint, MSGBOX_DEFAULT
 	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
 	clearflag FLAG_CHALLENGING_TRAINER
+	setvar VAR_RUSTBORO_CITY_STATE, 9
 	releaseall
 	end
 

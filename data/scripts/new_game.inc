@@ -292,5 +292,6 @@ EventScript_ResetAllMapFlags::
 	special EnableNationalPokedex
 	setflag FLAG_SYS_DEXNAV_GET
 	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
+	setflag FLAG_HIDE_MAGEARNA_SCIENTIST
 	call EventScript_ResetAllBerries
 	end

@@ -139,7 +139,7 @@
 #define FLAG_CANCEL_BATTLE_ROOM_CHALLENGE    0x77
 
 #define FLAG_LANDMARK_MIRAGE_TOWER           0x78
-#define FLAG_UNUSED_0x79                     0x79 // Was for TM Brick Break
+#define FLAG_CAUGHT_MAGEARNA                 0x79 // Was for TM Brick Break
 #define FLAG_RECEIVED_HM_SURF                0x7A
 #define FLAG_RECEIVED_HM_DIVE                0x7B
 #define FLAG_REGISTER_RIVAL_POKENAV          0x7C
@@ -985,7 +985,7 @@
 #define FLAG_HIDE_REGIROCK                                          0x3A7
 #define FLAG_HIDE_REGICE                                            0x3A8
 #define FLAG_HIDE_REGISTEEL                                         0x3A9
-#define FLAG_UNUSED_0x3AA                                           0x3AA // Unused, was for hiding Team Aqua in Meteor Falls but replaced by FLAG_ALWAYS_SET
+#define FLAG_HIDE_MAGEARNA_SCIENTIST                                0x3AA // Was for hiding Team Aqua in Meteor Falls but replaced by FLAG_ALWAYS_SET
 #define FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA                           0x3AB
 #define FLAG_UNUSED_0x3AC                                           0x3AC // Unused, was for a man in Dewford Hall who gave the Sludge Bomb TM
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT               0x3AD

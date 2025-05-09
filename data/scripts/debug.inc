@@ -170,8 +170,8 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	setvar VAR_LOOKER_ROCKET, 13
-	warp MAP_ROCKET_REFUGE_B3F, 14, 6
+	setvar VAR_MAGEARNA_STATE, 1
+	warp MAP_RUSTBORO_CITY, 12, 19
 	release
 	end
 

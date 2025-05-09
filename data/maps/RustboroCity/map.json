@@ -222,7 +222,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
+      "script": "Magearna_ScientistHelpMe",
       "flag": "FLAG_HIDE_RUSTBORO_CITY_SCIENTIST"
     },
     {
@@ -328,6 +328,97 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Cheater",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGEARNA)",
+      "x": 11,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGEARNA)",
+      "x": 30,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGEARNA)",
+      "x": 35,
+      "y": 51,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGEARNA)",
+      "x": 3,
+      "y": 41,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BattleMagearna",
+      "flag": "FLAG_TEMP_4"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 21,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Magearna_ScientistDontLeave",
+      "flag": "FLAG_HIDE_MAGEARNA_SCIENTIST"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 36,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Magearna_ScientistDontLeave",
+      "flag": "FLAG_HIDE_MAGEARNA_SCIENTIST"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 16,
+      "y": 57,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Magearna_ScientistDontLeave",
+      "flag": "FLAG_HIDE_MAGEARNA_SCIENTIST"
     }
   ],
   "warp_events": [
@@ -641,6 +732,177 @@
       "var": "VAR_LOOKER_ROCKET",
       "var_value": "7",
       "script": "RustboroCity_EventScript_Looker_2"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_MAGEARNA_STATE",
+      "var_value": "1",
+      "script": "Magearna_Escape"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_MAGEARNA_STATE",
+      "var_value": "1",
+      "script": "Magearna_Escape"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 2,
+      "elevation": 0,
+      "var": "FLAG_HIDE_MAGEARNA_SCIENTIST",
+      "var_value": "0",
+      "script": "Magearna_ScientistDontLeaveNorth"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 2,
+      "elevation": 0,
+      "var": "FLAG_HIDE_MAGEARNA_SCIENTIST",
+      "var_value": "0",
+      "script": "Magearna_ScientistDontLeaveNorth"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 2,
+      "elevation": 0,
+      "var": "FLAG_HIDE_MAGEARNA_SCIENTIST",
+      "var_value": "0",
+      "script": "Magearna_ScientistDontLeaveNorth"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 2,
+      "elevation": 0,
+      "var": "FLAG_HIDE_MAGEARNA_SCIENTIST",
+      "var_value": "0",
+      "script": "Magearna_ScientistDontLeaveNorth"
+    },
+    {
+      "type": "trigger",
+      "x": 36,
+      "y": 8,
+      "elevation": 0,
+      "var": "FLAG_HIDE_MAGEARNA_SCIENTIST",
+      "var_value": "0",
+      "script": "Magearna_ScientistDontLeaveEast"
+    },
+    {
+      "type": "trigger",
+      "x": 36,
+      "y": 9,
+      "elevation": 0,
+      "var": "FLAG_HIDE_MAGEARNA_SCIENTIST",
+      "var_value": "0",
+      "script": "Magearna_ScientistDontLeaveEast"
+    },
+    {
+      "type": "trigger",
+      "x": 36,
+      "y": 11,
+      "elevation": 0,
+      "var": "FLAG_HIDE_MAGEARNA_SCIENTIST",
+      "var_value": "0",
+      "script": "Magearna_ScientistDontLeaveEast"
+    },
+    {
+      "type": "trigger",
+      "x": 36,
+      "y": 12,
+      "elevation": 0,
+      "var": "FLAG_HIDE_MAGEARNA_SCIENTIST",
+      "var_value": "0",
+      "script": "Magearna_ScientistDontLeaveEast"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 57,
+      "elevation": 0,
+      "var": "FLAG_HIDE_MAGEARNA_SCIENTIST",
+      "var_value": "0",
+      "script": "Magearna_ScientistDontLeaveSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 57,
+      "elevation": 0,
+      "var": "FLAG_HIDE_MAGEARNA_SCIENTIST",
+      "var_value": "0",
+      "script": "Magearna_ScientistDontLeaveSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 57,
+      "elevation": 0,
+      "var": "FLAG_HIDE_MAGEARNA_SCIENTIST",
+      "var_value": "0",
+      "script": "Magearna_ScientistDontLeaveSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 57,
+      "elevation": 0,
+      "var": "FLAG_HIDE_MAGEARNA_SCIENTIST",
+      "var_value": "0",
+      "script": "Magearna_ScientistDontLeaveSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 57,
+      "elevation": 0,
+      "var": "FLAG_HIDE_MAGEARNA_SCIENTIST",
+      "var_value": "0",
+      "script": "Magearna_ScientistDontLeaveSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 57,
+      "elevation": 0,
+      "var": "FLAG_HIDE_MAGEARNA_SCIENTIST",
+      "var_value": "0",
+      "script": "Magearna_ScientistDontLeaveSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 57,
+      "elevation": 0,
+      "var": "FLAG_HIDE_MAGEARNA_SCIENTIST",
+      "var_value": "0",
+      "script": "Magearna_ScientistDontLeaveSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_MAGEARNA_STATE",
+      "var_value": "2",
+      "script": "Magearna_Escape2"
+    },
+    {
+      "type": "trigger",
+      "x": 35,
+      "y": 49,
+      "elevation": 0,
+      "var": "VAR_MAGEARNA_STATE",
+      "var_value": "3",
+      "script": "Magearna_Escape3"
     }
   ],
   "bg_events": [

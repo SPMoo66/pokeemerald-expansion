@@ -394,6 +394,12 @@ Common_Movement_WalkFastDown:
 	walk_fast_down
 	step_end
 	
+Common_Movement_WalkFastDown3:
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	step_end
+	
 Common_Movement_WalkFastDown6:
 	walk_fast_down
 	walk_fast_down
@@ -402,9 +408,47 @@ Common_Movement_WalkFastDown6:
 	walk_fast_down
 	walk_fast_down
 	step_end
+	
+Common_Movement_WalkFastRight9:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+	
+Common_Movement_WalkFastLeft3:
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	step_end
+	
+Common_Movement_WalkFastLeft9:
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	step_end
 
 Common_Movement_JumpUp:
 	jump_up
+	step_end
+
+Common_Movement_JumpDown2:
+	jump_2_down
+	step_end
+
+Common_Movement_JumpLeft2:
+	jump_2_left
 	step_end
 
 Common_Movement_EnterHouse:

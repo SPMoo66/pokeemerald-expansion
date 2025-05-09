@@ -1,0 +1,221 @@
+script Magearna_Escape {
+	lock
+	playbgm (MUS_HG_RADIO_BUENA, FALSE)
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	addobject (24) // 24 is Magearna here
+	playse (SE_EXIT)
+	delay (10)
+	if (var(VAR_TEMP_0) == 11) {
+		applymovement (OBJ_EVENT_ID_PLAYER, Magearna_PushPlayerRight)
+	}
+	else {
+		applymovement (OBJ_EVENT_ID_PLAYER, Magearna_Face)
+	}
+	applymovement (24, Common_Movement_WalkFastDown6)
+	waitmovement (0)
+	addobject (15) // Scientist
+	playse (SE_EXIT)
+	delay (10)
+	applymovement (15, Common_Movement_WalkDown)
+	applymovement (24, Common_Movement_WalkFastRight9)
+	waitmovement (0)
+	removeobject (24)
+	msgbox (format ("No!\n"
+					"Come back here!"))
+	closemessage
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+	applymovement (15, Common_Movement_WalkInPlaceRight)
+	waitmovement (0)
+	msgbox (format ("Ah, you saw that display…\p"
+					"Our latest experiment has escaped!\n"
+					"Please help us chase it down!\p"
+					"Surely you can tell that I am in no\nshape to catch it…\p"
+					"… … …\n"
+					"Here, this will probably help you."))
+	giveitem (ITEM_QUICK_BALL, 3)
+	setvar (VAR_MAGEARNA_STATE, 2)
+	clearflag (FLAG_HIDE_MAGEARNA_SCIENTIST) // lock player in town
+	clearflag (FLAG_TEMP_2)
+	setflag (FLAG_TEMP_5) // this means the music is playing
+	release
+}
+
+script Magearna_Escape2 {
+	lock
+	if (!flag(FLAG_TEMP_5)) { // don't replay music if already playing
+		playbgm (MUS_HG_RADIO_BUENA, FALSE)
+	}
+	applymovement (25, Common_Movement_FaceDown) // 25 is Magearna here
+	playse (SE_PIN)
+	applymovement (25, Common_Movement_ExclamationMark)
+	delay (30)
+	applymovement (25, Common_Movement_WalkFastDown)
+	waitmovement (0)
+	playse (SE_LEDGE)
+	applymovement (25, Common_Movement_JumpDown2)
+	waitmovement (0)
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+	applymovement (25, Common_Movement_WalkFastDown3)
+	waitmovement (0)
+	applymovement (25, Common_Movement_WalkFastLeft9)
+	waitmovement (0)
+	delay (10)
+	removeobject (25)
+	setvar (VAR_MAGEARNA_STATE, 3)
+	clearflag (FLAG_TEMP_3)
+	setflag (FLAG_TEMP_2)
+	release
+}
+
+script Magearna_Escape3 {
+	lock
+	if (!flag(FLAG_TEMP_5)) {
+		playbgm (MUS_HG_RADIO_BUENA, FALSE)
+	}
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+	applymovement (26, Common_Movement_FaceUp) // 26 is Magearna here
+	playse (SE_PIN)
+	applymovement (26, Common_Movement_ExclamationMark)
+	delay (30)
+	applymovement (26, Common_Movement_WalkFastLeft3)
+	waitmovement (0)
+	playse (SE_LEDGE)
+	applymovement (26, Common_Movement_JumpLeft2)
+	waitmovement (0)
+	applymovement (26, Common_Movement_WalkFastLeft3)
+	waitmovement (0)
+	delay (10)
+	removeobject (26)
+	addobject (30)
+	setobjectxy (30, 27, 48)
+	applymovement (30, Common_Movement_WalkRight8)
+	waitmovement (0)
+	applymovement (30, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	msgbox (format ("Agh, I'm giving up…\p"
+					"Thanks for you help, but I'll be\nchalking this one up as a loss."))
+	closemessage
+	applymovement (30, Common_Movement_WalkLeft8)
+	waitmovement (0)
+	removeobject (30)
+	delay (20)
+	msgbox ("The ‘experiment’ is likely still nearby…")
+	setvar (VAR_MAGEARNA_STATE, 4)
+	setflag (FLAG_HIDE_MAGEARNA_SCIENTIST) // allow player out of town
+	clearflag (FLAG_TEMP_4)
+	setflag (FLAG_TEMP_3)
+	fadedefaultbgm
+	release
+}
+
+script Magearna_ScientistHelpMe {
+	msgbox ("Please…\nHelp me out…", MSGBOX_NPC)
+}
+
+script Magearna_ScientistDontLeave {
+	msgbox (Magearna_Text_ScientistDontLeave, MSGBOX_NPC)
+}
+
+script Magearna_CheckActive {
+	if (var(VAR_MAGEARNA_STATE) == 5) {
+		release
+	}
+}
+
+script Magearna_ScientistDontLeaveNorth {
+	call (Magearna_CheckActive)
+	lock
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	if (var(VAR_TEMP_0) < 21) {
+		applymovement (28, Common_Movement_WalkInPlaceLeft)
+	}
+	else  {
+		applymovement (28, Common_Movement_WalkInPlaceRight)
+	}
+	waitmovement (0)
+	call (Magearna_ScientistDontLeave)
+	closemessage
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+	waitmovement (0)
+	release
+}
+
+script Magearna_ScientistDontLeaveEast {
+	call (Magearna_CheckActive)
+	lock
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	if (var(VAR_TEMP_1) < 10) {
+		applymovement (29, Common_Movement_WalkInPlaceUp)
+	}
+	else  {
+		applymovement (29, Common_Movement_WalkInPlaceDown)
+	}
+	waitmovement (0)
+	call (Magearna_ScientistDontLeave)
+	closemessage
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft)
+	waitmovement (0)
+	release
+}
+
+script Magearna_ScientistDontLeaveSouth {
+	call (Magearna_CheckActive)
+	lock
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	if (var(VAR_TEMP_0) < 16) {
+		applymovement (30, Common_Movement_WalkInPlaceLeft)
+	}
+	else  {
+		applymovement (30, Common_Movement_WalkInPlaceRight)
+	}
+	waitmovement (0)
+	call (Magearna_ScientistDontLeave)
+	closemessage
+	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+	waitmovement (0)
+	release
+}
+
+movement Magearna_PushPlayerRight {
+	delay_4
+	face_left
+	lock_facing_direction
+	walk_right
+	unlock_facing_direction
+	delay_16
+	walk_in_place_faster_down
+}
+
+movement Magearna_Face {
+	delay_4
+	walk_in_place_faster_left
+	delay_16
+	delay_16
+	walk_in_place_faster_down
+}
+
+text Magearna_Text_ScientistDontLeave {
+	"Please, don't leave!\p"
+	"We need to find my experiment!"
+}
+
+
+script BattleMagearna {
+	lock
+	faceplayer
+	setvar (VAR_LAST_TALKED, 27)
+	playmoncry(SPECIES_MAGEARNA, CRY_MODE_ENCOUNTER)
+	msgbox("Rii-wa-iii!")
+	waitmoncry
+	seteventmon(SPECIES_MAGEARNA, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_MAGEARNA)
+	}
+	release
+	end
+}

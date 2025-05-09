@@ -141,8 +141,9 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	setvar VAR_EMERALBODY_RIVAL_STATE, 6
+	setvar VAR_EMERALBODY_RIVAL_STATE, 7
 	warp MAP_MAUVILLE_CITY, 0
+	setflag FLAG_NO_COLLISION
 	release
 	end
 

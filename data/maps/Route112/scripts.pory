@@ -7,6 +7,8 @@ Route112_MapScripts::
 	.byte 0
 
 Route112_OnTransition:
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 7, EventScript_Clear_FlagTemp1
 	clearflag FLAG_FORCE_MIRAGE_TOWER_VISIBLE
 	setvar VAR_JAGGED_PASS_ASH_WEATHER, 0
 	end

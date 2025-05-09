@@ -602,3 +602,78 @@ text Town06_SakuraText {
 			"If I do it fast enough, maybe I can\n"
 			"make a picture with the dust clouds?")
 }
+
+
+# Town07
+text Town07_BaronText {
+	format(	"Are you having money troubles too,\n"
+			"{PLAYER}?\p"
+			"I pick up any items I see, but it\n"
+			"never feels like it's enough.\p"
+			"The potions are so expensive…\p"
+			"The medical industry here must be\n"
+			"making hand over dollar.\p"
+			"Maybe I should take out a loan for\n"
+			"my medical bill here?\p"
+			"Do they even have banks here?\n"
+			"Ones that offer loans…?\p"
+			"Hmm… Maybe I should ask Jakson?")
+}
+
+text Town07_HarperText {
+	format(	"This route is confusing the hell out of\n"
+			"me.\p"
+			"I was on Route 111, then I went in a\n"
+			"cave and I'm back out on Route 111?\p"
+			"And there's a desert nearby and it's\n"
+			"also Route 111?\p"
+			"Redd said the routes were simple.\n"
+			"“Just walk forward”, he said.\p"
+			"Oh, I'll have him just walk forward…\n"
+			"into my fist next time I see him.")
+}
+
+text Town07_JaksonText {
+	format(	"There you are, {PLAYER}.\p"
+			"I'm really looking forward to getting to\n"
+			"Route 113.\p"
+			"Oh, and the desert after that, too!\p"
+			"There are some really memorable routes\n"
+			"in Hoenn.\p"
+			"Just because a bunch of it got modified\n"
+			"doesn't mean the foundation's bad.\p"
+			"There's a reason people love modding\n"
+			"Hoenn even today.")
+}
+
+text Town07_ReddText {
+	format(	"Yo!\p"
+			"Did you see that one Pokémon here?\n"
+			"It was on fire!\p"
+			"No, I mean it was like a floating\n"
+			"balloon thing and it was on fire!\p"
+			"And last route I thought I saw a\n"
+			"Growlithe but it was rock type!\p"
+			"I also caught this Voltorb, so…\n"
+			"Wait, is this guy made of wood?\p"
+			"Uh… Wait, really? That's a fun take\n"
+			"on Voltorb. Like an old version of-\p"
+			"Ah… Ignore me.\n"
+			"… {EMOJI_BIGWHEEL}Clears throat{EMOJI_BIGWHEEL}{UNK_SPACER}")
+}
+
+text Town07_SakuraText {
+	format(	"Oh, are you finally catching up,\n"
+			"{PLAYER}?\p"
+			"No?\p"
+			"I've already finished up with Meteor\n"
+			"Falls, and I'm about to go kick some\l"
+			"Magma butt.\p"
+			"After that, it's off to crush Flannery.\p"
+			"I hate to do it to a fellow woman…\p"
+			"Well, actually, no! I don't!\n"
+			"No matter who it is, they'll be put down!\p"
+			"What's the point of fabulous shoes if\n"
+			"not to trample over the competition?\p"
+			"Heheh{EMOJI_TILDE}{UNK_SPACER}")
+}

@@ -305,6 +305,53 @@ script MoveTutor_EventScript_RecoilMoveDeclined {
 }
 
 
+script EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor {
+	lock
+	faceplayer
+	msgbox (MoveTutor_Text_LeagueMoveTeach, MSGBOX_YESNO)
+	if (var(VAR_RESULT) == NO) {
+		goto (MoveTutor_EventScript_LeagueMoveDeclined)
+	}
+	msgbox(MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT)
+	dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Temper Flare", "Grassy Glide", "Supercell Slam", "Coaching", "Upper Hand", "Psychic Noise", "Triple Axel", "Skitter Smack", "Dragon Cheer", "Lash Out", "Steel Beam", "Alluring Voice")
+	switch (var(VAR_RESULT)) {
+		case 0:
+			setvar (VAR_0x8005, MOVE_TEMPER_FLARE)
+		case 1:
+			setvar (VAR_0x8005, MOVE_GRASSY_GLIDE)
+		case 2:
+			setvar (VAR_0x8005, MOVE_SUPERCELL_SLAM)
+		case 3:
+			setvar (VAR_0x8005, MOVE_COACHING)
+		case 4:
+			setvar (VAR_0x8005, MOVE_UPPER_HAND)
+		case 5:
+			setvar (VAR_0x8005, MOVE_PSYCHIC_NOISE)
+		case 6:
+			setvar (VAR_0x8005, MOVE_TRIPLE_AXEL)
+		case 7:
+			setvar (VAR_0x8005, MOVE_SKITTER_SMACK)
+		case 8:
+			setvar (VAR_0x8005, MOVE_DRAGON_CHEER)
+		case 9:
+			setvar (VAR_0x8005, MOVE_LASH_OUT)
+		case 10:
+			setvar (VAR_0x8005, MOVE_STEEL_BEAM)
+		case 11:
+			setvar (VAR_0x8005, MOVE_ALLURING_VOICE)
+		case 127:
+			goto (MoveTutor_EventScript_LeagueMoveDeclined)
+	}
+	msgbox (MoveTutor_Text_LeagueMoveWhichMon, MSGBOX_DEFAULT)
+	call (MoveTutor_EventScript_OpenPartyMenu)
+	if (var(VAR_RESULT) == NO) {
+		goto (MoveTutor_EventScript_LeagueMoveDeclined)
+	}
+	msgbox (MoveTutor_Text_LeagueMoveTaught, MSGBOX_DEFAULT)
+	release
+}
+
+
 script EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor {
 	lock
 	faceplayer

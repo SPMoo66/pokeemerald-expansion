@@ -671,7 +671,7 @@ MoveTutor_EventScript_RecoilMoveDeclined::
 	return
 
 
-EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor::
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor::
 # 309 "data/scripts/move_tutors.pory"
 	lock
 # 310 "data/scripts/move_tutors.pory"
@@ -680,100 +680,234 @@ EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor::
 	msgbox MoveTutor_Text_LeagueMoveTeach, MSGBOX_YESNO
 # 312 "data/scripts/move_tutors.pory"
 	compare VAR_RESULT, NO
-	goto_if_eq EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_2
-EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_1:
+	goto_if_eq EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_2
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_1:
 # 315 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT
 # 316 "data/scripts/move_tutors.pory"
-	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_0, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_1, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_2, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_3, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_4
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_0, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_1, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_2, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_3, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_4, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_5, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_6, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_7, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_8, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_9, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_10, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_11
 # 317 "data/scripts/move_tutors.pory"
 	switch VAR_RESULT
 # 318 "data/scripts/move_tutors.pory"
-	case 0, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_6
+	case 0, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_6
 # 320 "data/scripts/move_tutors.pory"
-	case 1, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_7
+	case 1, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_7
 # 322 "data/scripts/move_tutors.pory"
-	case 2, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_8
+	case 2, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_8
 # 324 "data/scripts/move_tutors.pory"
-	case 3, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_9
+	case 3, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_9
 # 326 "data/scripts/move_tutors.pory"
-	case 4, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_10
+	case 4, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_10
 # 328 "data/scripts/move_tutors.pory"
+	case 5, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_11
+# 330 "data/scripts/move_tutors.pory"
+	case 6, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_12
+# 332 "data/scripts/move_tutors.pory"
+	case 7, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_13
+# 334 "data/scripts/move_tutors.pory"
+	case 8, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_14
+# 336 "data/scripts/move_tutors.pory"
+	case 9, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_15
+# 338 "data/scripts/move_tutors.pory"
+	case 10, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_16
+# 340 "data/scripts/move_tutors.pory"
+	case 11, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_17
+# 342 "data/scripts/move_tutors.pory"
+	case 127, EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_18
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_4:
+# 345 "data/scripts/move_tutors.pory"
+	msgbox MoveTutor_Text_LeagueMoveWhichMon, MSGBOX_DEFAULT
+# 346 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 347 "data/scripts/move_tutors.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_20
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_19:
+# 350 "data/scripts/move_tutors.pory"
+	msgbox MoveTutor_Text_LeagueMoveTaught, MSGBOX_DEFAULT
+# 351 "data/scripts/move_tutors.pory"
+	release
+	return
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_2:
+# 313 "data/scripts/move_tutors.pory"
+	goto MoveTutor_EventScript_LeagueMoveDeclined
+	goto EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_1
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_6:
+# 319 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_TEMPER_FLARE
+	goto EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_4
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_7:
+# 321 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_GRASSY_GLIDE
+	goto EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_4
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_8:
+# 323 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_SUPERCELL_SLAM
+	goto EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_4
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_9:
+# 325 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_COACHING
+	goto EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_4
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_10:
+# 327 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_UPPER_HAND
+	goto EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_4
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_11:
+# 329 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_PSYCHIC_NOISE
+	goto EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_4
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_12:
+# 331 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_TRIPLE_AXEL
+	goto EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_4
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_13:
+# 333 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_SKITTER_SMACK
+	goto EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_4
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_14:
+# 335 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_DRAGON_CHEER
+	goto EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_4
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_15:
+# 337 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_LASH_OUT
+	goto EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_4
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_16:
+# 339 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_STEEL_BEAM
+	goto EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_4
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_17:
+# 341 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_ALLURING_VOICE
+	goto EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_4
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_18:
+# 343 "data/scripts/move_tutors.pory"
+	goto MoveTutor_EventScript_LeagueMoveDeclined
+	goto EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_4
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_20:
+# 348 "data/scripts/move_tutors.pory"
+	goto MoveTutor_EventScript_LeagueMoveDeclined
+	goto EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_19
+
+
+EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor::
+# 356 "data/scripts/move_tutors.pory"
+	lock
+# 357 "data/scripts/move_tutors.pory"
+	faceplayer
+# 358 "data/scripts/move_tutors.pory"
+	msgbox MoveTutor_Text_LeagueMoveTeach, MSGBOX_YESNO
+# 359 "data/scripts/move_tutors.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_2
+EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_1:
+# 362 "data/scripts/move_tutors.pory"
+	msgbox MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT
+# 363 "data/scripts/move_tutors.pory"
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_0, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_1, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_2, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_3, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_4
+# 364 "data/scripts/move_tutors.pory"
+	switch VAR_RESULT
+# 365 "data/scripts/move_tutors.pory"
+	case 0, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_6
+# 367 "data/scripts/move_tutors.pory"
+	case 1, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_7
+# 369 "data/scripts/move_tutors.pory"
+	case 2, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_8
+# 371 "data/scripts/move_tutors.pory"
+	case 3, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_9
+# 373 "data/scripts/move_tutors.pory"
+	case 4, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_10
+# 375 "data/scripts/move_tutors.pory"
 	case 127, EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_11
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_4:
-# 331 "data/scripts/move_tutors.pory"
+# 378 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_LeagueMoveWhichMon, MSGBOX_DEFAULT
-# 332 "data/scripts/move_tutors.pory"
+# 379 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 333 "data/scripts/move_tutors.pory"
+# 380 "data/scripts/move_tutors.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_13
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_12:
-# 336 "data/scripts/move_tutors.pory"
+# 383 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_LeagueMoveTaught, MSGBOX_DEFAULT
-# 337 "data/scripts/move_tutors.pory"
+# 384 "data/scripts/move_tutors.pory"
 	release
 	return
 
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_2:
-# 313 "data/scripts/move_tutors.pory"
+# 360 "data/scripts/move_tutors.pory"
 	goto MoveTutor_EventScript_LeagueMoveDeclined
 	goto EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_1
 
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_6:
-# 319 "data/scripts/move_tutors.pory"
+# 366 "data/scripts/move_tutors.pory"
 	setvar VAR_0x8005, MOVE_FRENZY_PLANT
 	goto EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_4
 
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_7:
-# 321 "data/scripts/move_tutors.pory"
+# 368 "data/scripts/move_tutors.pory"
 	setvar VAR_0x8005, MOVE_BLAST_BURN
 	goto EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_4
 
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_8:
-# 323 "data/scripts/move_tutors.pory"
+# 370 "data/scripts/move_tutors.pory"
 	setvar VAR_0x8005, MOVE_HYDRO_CANNON
 	goto EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_4
 
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_9:
-# 325 "data/scripts/move_tutors.pory"
+# 372 "data/scripts/move_tutors.pory"
 	setvar VAR_0x8005, MOVE_ROCK_WRECKER
 	goto EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_4
 
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_10:
-# 327 "data/scripts/move_tutors.pory"
+# 374 "data/scripts/move_tutors.pory"
 	setvar VAR_0x8005, MOVE_ROAR_OF_TIME
 	goto EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_4
 
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_11:
-# 329 "data/scripts/move_tutors.pory"
+# 376 "data/scripts/move_tutors.pory"
 	goto MoveTutor_EventScript_LeagueMoveDeclined
 	goto EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_4
 
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_13:
-# 334 "data/scripts/move_tutors.pory"
+# 381 "data/scripts/move_tutors.pory"
 	goto MoveTutor_EventScript_LeagueMoveDeclined
 	goto EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_12
 
 
 MoveTutor_EventScript_LeagueMoveDeclined::
-# 341 "data/scripts/move_tutors.pory"
+# 388 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_LeagueMoveDeclined, MSGBOX_DEFAULT
-# 342 "data/scripts/move_tutors.pory"
+# 389 "data/scripts/move_tutors.pory"
 	release
 	return
 
 
 MoveTutor_EventScript_OpenPartyMenu::
-# 348 "data/scripts/move_tutors.pory"
+# 395 "data/scripts/move_tutors.pory"
 	special ChooseMonForMoveTutor
-# 349 "data/scripts/move_tutors.pory"
+# 396 "data/scripts/move_tutors.pory"
 	waitstate
-# 350 "data/scripts/move_tutors.pory"
+# 397 "data/scripts/move_tutors.pory"
 	lock
-# 351 "data/scripts/move_tutors.pory"
+# 398 "data/scripts/move_tutors.pory"
 	faceplayer
-# 352 "data/scripts/move_tutors.pory"
+# 399 "data/scripts/move_tutors.pory"
 	release
 	return
 
@@ -846,22 +980,70 @@ PacifidlogTown_PokemonCenter_1F_EventScript_RecoilMoveTutor_Text_5:
 # 276 "data/scripts/move_tutors.pory"
 	.string "Wild Charge$"
 
-EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_0:
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_0:
 # 316 "data/scripts/move_tutors.pory"
+	.string "Temper Flare$"
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_1:
+# 316 "data/scripts/move_tutors.pory"
+	.string "Grassy Glide$"
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_2:
+# 316 "data/scripts/move_tutors.pory"
+	.string "Supercell Slam$"
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_3:
+# 316 "data/scripts/move_tutors.pory"
+	.string "Coaching$"
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_4:
+# 316 "data/scripts/move_tutors.pory"
+	.string "Upper Hand$"
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_5:
+# 316 "data/scripts/move_tutors.pory"
+	.string "Psychic Noise$"
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_6:
+# 316 "data/scripts/move_tutors.pory"
+	.string "Triple Axel$"
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_7:
+# 316 "data/scripts/move_tutors.pory"
+	.string "Skitter Smack$"
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_8:
+# 316 "data/scripts/move_tutors.pory"
+	.string "Dragon Cheer$"
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_9:
+# 316 "data/scripts/move_tutors.pory"
+	.string "Lash Out$"
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_10:
+# 316 "data/scripts/move_tutors.pory"
+	.string "Steel Beam$"
+
+EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_Text_11:
+# 316 "data/scripts/move_tutors.pory"
+	.string "Alluring Voice$"
+
+EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_0:
+# 363 "data/scripts/move_tutors.pory"
 	.string "Frenzy Plant$"
 
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_1:
-# 316 "data/scripts/move_tutors.pory"
+# 363 "data/scripts/move_tutors.pory"
 	.string "Blast Burn$"
 
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_2:
-# 316 "data/scripts/move_tutors.pory"
+# 363 "data/scripts/move_tutors.pory"
 	.string "Hydro Cannon$"
 
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_3:
-# 316 "data/scripts/move_tutors.pory"
+# 363 "data/scripts/move_tutors.pory"
 	.string "Rock Wrecker$"
 
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_4:
-# 316 "data/scripts/move_tutors.pory"
+# 363 "data/scripts/move_tutors.pory"
 	.string "Roar of Time$"

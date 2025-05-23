@@ -130,7 +130,7 @@ Magearna_Escape3_1:
 # 75 "data/magearna_encounter.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 # 76 "data/magearna_encounter.pory"
-	applymovement 26, Common_Movement_FaceDown
+	applymovement 26, Common_Movement_FaceUp
 # 77 "data/magearna_encounter.pory"
 	playse SE_PIN
 # 78 "data/magearna_encounter.pory"

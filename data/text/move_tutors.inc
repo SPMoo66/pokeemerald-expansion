@@ -272,3 +272,78 @@ MoveTutor_Text_BattleFrontierFreeMoveWhichMon:
 MoveTutor_Text_BattleFrontierFreeMoveTaught:
 	.string "There, now your Pokémon are ready to\n"
 	.string "face the Battle Frontier with style!$"
+
+
+
+BattleFrontier_Lounge7_Text_LeftTutorIntro:
+	.string "Buhahaha!\p"
+	.string "You couldn't tell it from looking now,\n"
+	.string "but I used to be one tough Trainer.\p"
+	.string "I had a reputation as the toughest\n"
+	.string "Beauty around, I tell you!\p"
+	.string "… … … … … …\p"
+	.string "What is it now?\n"
+	.string "You don't believe me.\p"
+	.string "I'm not like that blowhard woman over\n"
+	.string "there. I'm actually talented!\p"
+	.string "Let me prove it to you.\n"
+	.string "I can teach your Pokémon special and\l"
+	.string "yet cute moves.\p"
+	.string "But my lessons don't come free.\n"
+	.string "How about paying for the moves I teach\l"
+	.string "with a wee bit of Battle Points?$"
+
+BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack:
+	.string "Buhahaha!\p"
+	.string "Are you back to learn special and\n"
+	.string "yet cute Pokémon moves?$"
+
+BattleFrontier_Lounge7_Text_TeachWhichMove:
+	.string "Fine, fine, look here!\n"
+	.string "Which move should I teach?\l"
+	.string "All of them will run you 4BP.$"
+
+BattleFrontier_Lounge7_Text_MoveWillBe4BattlePoints:
+	.string "The move {STR_VAR_1}, is it?\n"
+	.string "That will be 4 Battle Points, okay?$"
+
+BattleFrontier_Lounge7_Text_TeachMoveToWhichMon:
+	.string "Fine, fine, now pick the Pokémon\n"
+	.string "I should teach the move to.$"
+
+BattleFrontier_Lounge7_Text_HaventGotEnoughPoints:
+	.string "What the…\n"
+	.string "You haven't got enough Battle Points!$"
+
+BattleFrontier_Lounge7_Text_IllTakeBattlePoints:
+	.string "Do you see how skilled I am now?\n"
+	.string "I'll take your Battle Points, thanks!$"
+
+BattleFrontier_Lounge7_Text_YouDontWantTo:
+	.string "What's that?\n"
+	.string "You don't want to…\p"
+	.string "If you want to see how skilled I am,\n"
+	.string "you come see me anytime!$"
+
+BattleFrontier_Lounge7_Text_RightTutorIntro:
+	.string "Ihihihi!\p"
+	.string "I know it's hard to see now, but I used\n"
+	.string "to be one fantastic Trainer.\p"
+	.string "I had a reputation as the most\n"
+	.string "invincible Swimmer around, I tell you!\p"
+	.string "… … … … … …\p"
+	.string "What's wrong?\n"
+	.string "You don't believe me.\p"
+	.string "I'm not like that buffoonish woman over\n"
+	.string "there. I'm actually experienced!\p"
+	.string "I can prove it to you.\n"
+	.string "I can teach your Pokémon hard and\l"
+	.string "yet pretty moves.\p"
+	.string "But my lessons don't come free.\n"
+	.string "How about paying for the moves I teach\l"
+	.string "with a wee bit of Battle Points?$"
+
+BattleFrontier_Lounge7_Text_RightTutorWelcomeBack:
+	.string "Ihihihi!\p"
+	.string "Have you come to learn hard and\n"
+	.string "yet pretty Pokémon moves?$"

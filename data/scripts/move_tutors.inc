@@ -991,16 +991,285 @@ MoveTutor_EventScript_BattleFrontierFreeMoveDeclined::
 	return
 
 
-MoveTutor_EventScript_OpenPartyMenu::
-# 435 "data/scripts/move_tutors.pory"
-	special ChooseMonForMoveTutor
-# 436 "data/scripts/move_tutors.pory"
-	waitstate
-# 437 "data/scripts/move_tutors.pory"
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor::
+# 432 "data/scripts/move_tutors.pory"
 	lock
-# 438 "data/scripts/move_tutors.pory"
+# 433 "data/scripts/move_tutors.pory"
 	faceplayer
+# 434 "data/scripts/move_tutors.pory"
+	setvar VAR_TEMP_FRONTIER_TUTOR_ID, 0
+# 435 "data/scripts/move_tutors.pory"
+	goto_if_set FLAG_MET_FRONTIER_BEAUTY_MOVE_TUTOR, BattleFrontier_Lounge7_EventScript_LeftMoveTutor_2
 # 439 "data/scripts/move_tutors.pory"
+	msgbox BattleFrontier_Lounge7_Text_LeftTutorIntro, MSGBOX_DEFAULT
+# 440 "data/scripts/move_tutors.pory"
+	setflag FLAG_MET_FRONTIER_BEAUTY_MOVE_TUTOR
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor_1:
+# 442 "data/scripts/move_tutors.pory"
+	goto BattleFrontier_Lounge7_EventScript_LeftMoveTutor2
+	return
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor_2:
+# 436 "data/scripts/move_tutors.pory"
+	msgbox BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack, MSGBOX_DEFAULT
+	goto BattleFrontier_Lounge7_EventScript_LeftMoveTutor_1
+
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2::
+# 446 "data/scripts/move_tutors.pory"
+	msgbox BattleFrontier_Lounge7_Text_TeachWhichMove, MSGBOX_DEFAULT
+# 447 "data/scripts/move_tutors.pory"
+	special ShowBattlePointsWindow
+# 448 "data/scripts/move_tutors.pory"
+	dynmultichoice 16, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_0, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_1, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_2, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_3, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_4, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_5, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_6, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_7
+# 449 "data/scripts/move_tutors.pory"
+	switch VAR_RESULT
+# 450 "data/scripts/move_tutors.pory"
+	case 0, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_3
+# 452 "data/scripts/move_tutors.pory"
+	case 1, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_4
+# 454 "data/scripts/move_tutors.pory"
+	case 2, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_5
+# 456 "data/scripts/move_tutors.pory"
+	case 3, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_6
+# 458 "data/scripts/move_tutors.pory"
+	case 4, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_7
+# 460 "data/scripts/move_tutors.pory"
+	case 5, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_8
+# 462 "data/scripts/move_tutors.pory"
+	case 6, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_9
+# 464 "data/scripts/move_tutors.pory"
+	case 7, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_10
+# 466 "data/scripts/move_tutors.pory"
+	case 127, BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_11
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_1:
+# 469 "data/scripts/move_tutors.pory"
+	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
+	return
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_3:
+# 451 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_AEROBLAST
+	goto BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_1
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_4:
+# 453 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_DOOM_DESIRE
+	goto BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_1
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_5:
+# 455 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_PSYCHO_BOOST
+	goto BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_1
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_6:
+# 457 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_GLACIATE
+	goto BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_1
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_7:
+# 459 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_STEAM_ERUPTION
+	goto BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_1
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_8:
+# 461 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_FLEUR_CANNON
+	goto BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_1
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_9:
+# 463 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_MALIGNANT_CHAIN
+	goto BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_1
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_10:
+# 465 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_FIERY_WRATH
+	goto BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_1
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_11:
+# 467 "data/scripts/move_tutors.pory"
+	goto BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
+	goto BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_1
+
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor::
+# 473 "data/scripts/move_tutors.pory"
+	lock
+# 474 "data/scripts/move_tutors.pory"
+	faceplayer
+# 475 "data/scripts/move_tutors.pory"
+	setvar VAR_TEMP_FRONTIER_TUTOR_ID, 1
+# 476 "data/scripts/move_tutors.pory"
+	goto_if_set FLAG_MET_FRONTIER_SWIMMER_MOVE_TUTOR, BattleFrontier_Lounge7_EventScript_RightMoveTutor_2
+# 480 "data/scripts/move_tutors.pory"
+	msgbox BattleFrontier_Lounge7_Text_RightTutorIntro, MSGBOX_DEFAULT
+# 481 "data/scripts/move_tutors.pory"
+	setflag FLAG_MET_FRONTIER_SWIMMER_MOVE_TUTOR
+BattleFrontier_Lounge7_EventScript_RightMoveTutor_1:
+# 483 "data/scripts/move_tutors.pory"
+	goto BattleFrontier_Lounge7_EventScript_RightMoveTutor2
+	return
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor_2:
+# 477 "data/scripts/move_tutors.pory"
+	msgbox BattleFrontier_Lounge7_Text_RightTutorWelcomeBack, MSGBOX_DEFAULT
+	goto BattleFrontier_Lounge7_EventScript_RightMoveTutor_1
+
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor2::
+# 487 "data/scripts/move_tutors.pory"
+	msgbox BattleFrontier_Lounge7_Text_TeachWhichMove, MSGBOX_DEFAULT
+# 488 "data/scripts/move_tutors.pory"
+	special ShowBattlePointsWindow
+# 489 "data/scripts/move_tutors.pory"
+	dynmultichoice 16, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, BattleFrontier_Lounge7_EventScript_RightMoveTutor2_Text_0, BattleFrontier_Lounge7_EventScript_RightMoveTutor2_Text_1, BattleFrontier_Lounge7_EventScript_RightMoveTutor2_Text_2, BattleFrontier_Lounge7_EventScript_RightMoveTutor2_Text_3, BattleFrontier_Lounge7_EventScript_RightMoveTutor2_Text_4, BattleFrontier_Lounge7_EventScript_RightMoveTutor2_Text_5
+# 490 "data/scripts/move_tutors.pory"
+	switch VAR_RESULT
+# 491 "data/scripts/move_tutors.pory"
+	case 0, BattleFrontier_Lounge7_EventScript_RightMoveTutor2_3
+# 493 "data/scripts/move_tutors.pory"
+	case 1, BattleFrontier_Lounge7_EventScript_RightMoveTutor2_4
+# 495 "data/scripts/move_tutors.pory"
+	case 2, BattleFrontier_Lounge7_EventScript_RightMoveTutor2_5
+# 497 "data/scripts/move_tutors.pory"
+	case 3, BattleFrontier_Lounge7_EventScript_RightMoveTutor2_6
+# 499 "data/scripts/move_tutors.pory"
+	case 4, BattleFrontier_Lounge7_EventScript_RightMoveTutor2_7
+# 501 "data/scripts/move_tutors.pory"
+	case 5, BattleFrontier_Lounge7_EventScript_RightMoveTutor2_8
+# 503 "data/scripts/move_tutors.pory"
+	case 127, BattleFrontier_Lounge7_EventScript_RightMoveTutor2_9
+BattleFrontier_Lounge7_EventScript_RightMoveTutor2_1:
+# 506 "data/scripts/move_tutors.pory"
+	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
+	return
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor2_3:
+# 492 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_TAIL_GLOW
+	goto BattleFrontier_Lounge7_EventScript_RightMoveTutor2_1
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor2_4:
+# 494 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_SACRED_FIRE
+	goto BattleFrontier_Lounge7_EventScript_RightMoveTutor2_1
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor2_5:
+# 496 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_SHADOW_FORCE
+	goto BattleFrontier_Lounge7_EventScript_RightMoveTutor2_1
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor2_6:
+# 498 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_DIAMOND_STORM
+	goto BattleFrontier_Lounge7_EventScript_RightMoveTutor2_1
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor2_7:
+# 500 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_BEHEMOTH_BLADE
+	goto BattleFrontier_Lounge7_EventScript_RightMoveTutor2_1
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor2_8:
+# 502 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_BEHEMOTH_BASH
+	goto BattleFrontier_Lounge7_EventScript_RightMoveTutor2_1
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor2_9:
+# 504 "data/scripts/move_tutors.pory"
+	goto BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
+	goto BattleFrontier_Lounge7_EventScript_RightMoveTutor2_1
+
+
+BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection::
+# 510 "data/scripts/move_tutors.pory"
+	special BufferBattleFrontierTutorMoveName
+# 511 "data/scripts/move_tutors.pory"
+	msgbox BattleFrontier_Lounge7_Text_MoveWillBe4BattlePoints, MSGBOX_YESNO
+# 512 "data/scripts/move_tutors.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_2
+BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_1:
+# 520 "data/scripts/move_tutors.pory"
+	specialvar VAR_TEMP_1, GetFrontierBattlePoints
+# 521 "data/scripts/move_tutors.pory"
+	compare VAR_TEMP_1, 4
+	goto_if_ge BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_5
+BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_4:
+# 524 "data/scripts/move_tutors.pory"
+	msgbox BattleFrontier_Lounge7_Text_HaventGotEnoughPoints, MSGBOX_DEFAULT
+# 525 "data/scripts/move_tutors.pory"
+	special CloseBattlePointsWindow
+# 526 "data/scripts/move_tutors.pory"
+	release
+	return
+
+BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_2:
+# 513 "data/scripts/move_tutors.pory"
+	compare VAR_TEMP_FRONTIER_TUTOR_ID, 0
+	goto_if_eq BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_7
+# 517 "data/scripts/move_tutors.pory"
+	goto BattleFrontier_Lounge7_EventScript_RightMoveTutor2
+	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_1
+
+BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_5:
+# 522 "data/scripts/move_tutors.pory"
+	goto BattleFrontier_Lounge7_EventScript_TeachTutorMove
+	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_4
+
+BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_7:
+# 514 "data/scripts/move_tutors.pory"
+	goto BattleFrontier_Lounge7_EventScript_LeftMoveTutor2
+	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_1
+
+
+BattleFrontier_Lounge7_EventScript_TeachTutorMove::
+# 530 "data/scripts/move_tutors.pory"
+	msgbox BattleFrontier_Lounge7_Text_TeachMoveToWhichMon, MSGBOX_DEFAULT
+# 531 "data/scripts/move_tutors.pory"
+	special CloseBattlePointsWindow
+# 532 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 533 "data/scripts/move_tutors.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq BattleFrontier_Lounge7_EventScript_TeachTutorMove_2
+BattleFrontier_Lounge7_EventScript_TeachTutorMove_1:
+# 536 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8004, 4
+# 537 "data/scripts/move_tutors.pory"
+	msgbox BattleFrontier_Lounge7_Text_IllTakeBattlePoints, MSGBOX_DEFAULT
+# 538 "data/scripts/move_tutors.pory"
+	special TakeFrontierBattlePoints
+# 539 "data/scripts/move_tutors.pory"
+	release
+	return
+
+BattleFrontier_Lounge7_EventScript_TeachTutorMove_2:
+# 534 "data/scripts/move_tutors.pory"
+	goto BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
+	goto BattleFrontier_Lounge7_EventScript_TeachTutorMove_1
+
+
+BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect::
+# 543 "data/scripts/move_tutors.pory"
+	special CloseBattlePointsWindow
+# 544 "data/scripts/move_tutors.pory"
+	msgbox BattleFrontier_Lounge7_Text_YouDontWantTo, MSGBOX_DEFAULT
+# 545 "data/scripts/move_tutors.pory"
+	release
+	return
+
+
+MoveTutor_EventScript_OpenPartyMenu::
+# 552 "data/scripts/move_tutors.pory"
+	special ChooseMonForMoveTutor
+# 553 "data/scripts/move_tutors.pory"
+	waitstate
+# 554 "data/scripts/move_tutors.pory"
+	lock
+# 555 "data/scripts/move_tutors.pory"
+	faceplayer
+# 556 "data/scripts/move_tutors.pory"
 	release
 	return
 
@@ -1160,3 +1429,59 @@ BattleFrontier_Lounge4_EventScript_MoveTutor_Text_3:
 BattleFrontier_Lounge4_EventScript_MoveTutor_Text_4:
 # 401 "data/scripts/move_tutors.pory"
 	.string "Meteor Beam$"
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_0:
+# 448 "data/scripts/move_tutors.pory"
+	.string "Aeroblast$"
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_1:
+# 448 "data/scripts/move_tutors.pory"
+	.string "Doom Desire$"
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_2:
+# 448 "data/scripts/move_tutors.pory"
+	.string "Psycho Boost$"
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_3:
+# 448 "data/scripts/move_tutors.pory"
+	.string "Glaciate$"
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_4:
+# 448 "data/scripts/move_tutors.pory"
+	.string "Steam Eruption$"
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_5:
+# 448 "data/scripts/move_tutors.pory"
+	.string "Fleur Cannon$"
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_6:
+# 448 "data/scripts/move_tutors.pory"
+	.string "Malignant Chain$"
+
+BattleFrontier_Lounge7_EventScript_LeftMoveTutor2_Text_7:
+# 448 "data/scripts/move_tutors.pory"
+	.string "Fiery Wrath$"
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor2_Text_0:
+# 489 "data/scripts/move_tutors.pory"
+	.string "Tail Glow$"
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor2_Text_1:
+# 489 "data/scripts/move_tutors.pory"
+	.string "Sacred Fire$"
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor2_Text_2:
+# 489 "data/scripts/move_tutors.pory"
+	.string "Shadow Force$"
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor2_Text_3:
+# 489 "data/scripts/move_tutors.pory"
+	.string "Diamond Storm$"
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor2_Text_4:
+# 489 "data/scripts/move_tutors.pory"
+	.string "Behemoth Blade$"
+
+BattleFrontier_Lounge7_EventScript_RightMoveTutor2_Text_5:
+# 489 "data/scripts/move_tutors.pory"
+	.string "Behemoth Bash$"

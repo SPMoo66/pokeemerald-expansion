@@ -3135,31 +3135,31 @@ static void ShowBattleFrontierTutorMoveDescription(u8 menu, u16 selection)
 {
     static const u8 *const sBattleFrontier_TutorMoveDescriptions1[] =
     {
-        BattleFrontier_Lounge7_Text_SoftboiledDesc,
-        BattleFrontier_Lounge7_Text_SeismicTossDesc,
-        BattleFrontier_Lounge7_Text_DreamEaterDesc,
-        BattleFrontier_Lounge7_Text_MegaPunchDesc,
-        BattleFrontier_Lounge7_Text_MegaKickDesc,
-        BattleFrontier_Lounge7_Text_BodySlamDesc,
-        BattleFrontier_Lounge7_Text_RockSlideDesc,
-        BattleFrontier_Lounge7_Text_CounterDesc,
-        BattleFrontier_Lounge7_Text_ThunderWaveDesc,
-        BattleFrontier_Lounge7_Text_SwordsDanceDesc,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
         gText_Exit,
     };
 
     static const u8 *const sBattleFrontier_TutorMoveDescriptions2[] =
     {
-        BattleFrontier_Lounge7_Text_DefenseCurlDesc,
-        BattleFrontier_Lounge7_Text_SnoreDesc,
-        BattleFrontier_Lounge7_Text_MudSlapDesc,
-        BattleFrontier_Lounge7_Text_SwiftDesc,
-        BattleFrontier_Lounge7_Text_IcyWindDesc,
-        BattleFrontier_Lounge7_Text_EndureDesc,
-        BattleFrontier_Lounge7_Text_PsychUpDesc,
-        BattleFrontier_Lounge7_Text_IcePunchDesc,
-        BattleFrontier_Lounge7_Text_ThunderPunchDesc,
-        BattleFrontier_Lounge7_Text_FirePunchDesc,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
+        gText_Blank,
         gText_Exit,
     };
 

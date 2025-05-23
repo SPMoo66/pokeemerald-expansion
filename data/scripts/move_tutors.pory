@@ -428,6 +428,123 @@ script MoveTutor_EventScript_BattleFrontierFreeMoveDeclined {
 }
 
 
+script BattleFrontier_Lounge7_EventScript_LeftMoveTutor {
+	lock
+	faceplayer
+	setvar (VAR_TEMP_FRONTIER_TUTOR_ID, 0)
+	if (flag(FLAG_MET_FRONTIER_BEAUTY_MOVE_TUTOR)) {
+		msgbox (BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack, MSGBOX_DEFAULT)
+	}
+	else {
+		msgbox (BattleFrontier_Lounge7_Text_LeftTutorIntro, MSGBOX_DEFAULT)
+		setflag (FLAG_MET_FRONTIER_BEAUTY_MOVE_TUTOR)
+	}
+	goto (BattleFrontier_Lounge7_EventScript_LeftMoveTutor2)
+}
+
+script BattleFrontier_Lounge7_EventScript_LeftMoveTutor2 {
+	msgbox (BattleFrontier_Lounge7_Text_TeachWhichMove, MSGBOX_DEFAULT)
+	special (ShowBattlePointsWindow)
+	dynmultichoice(16, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Aeroblast", "Doom Desire", "Psycho Boost", "Glaciate", "Steam Eruption", "Fleur Cannon", "Malignant Chain", "Fiery Wrath")
+	switch (var(VAR_RESULT)) {
+		case 0:
+			setvar (VAR_0x8005, MOVE_AEROBLAST)
+		case 1:
+			setvar (VAR_0x8005, MOVE_DOOM_DESIRE)
+		case 2:
+			setvar (VAR_0x8005, MOVE_PSYCHO_BOOST)
+		case 3:
+			setvar (VAR_0x8005, MOVE_GLACIATE)
+		case 4:
+			setvar (VAR_0x8005, MOVE_STEAM_ERUPTION)
+		case 5:
+			setvar (VAR_0x8005, MOVE_FLEUR_CANNON)
+		case 6:
+			setvar (VAR_0x8005, MOVE_MALIGNANT_CHAIN)
+		case 7:
+			setvar (VAR_0x8005, MOVE_FIERY_WRATH)
+		case 127:
+			goto (BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect)
+	}
+	goto (BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection)
+}
+
+script BattleFrontier_Lounge7_EventScript_RightMoveTutor {
+	lock
+	faceplayer
+	setvar (VAR_TEMP_FRONTIER_TUTOR_ID, 1)
+	if (flag(FLAG_MET_FRONTIER_SWIMMER_MOVE_TUTOR)) {
+		msgbox (BattleFrontier_Lounge7_Text_RightTutorWelcomeBack, MSGBOX_DEFAULT)
+	}
+	else {
+		msgbox (BattleFrontier_Lounge7_Text_RightTutorIntro, MSGBOX_DEFAULT)
+		setflag (FLAG_MET_FRONTIER_SWIMMER_MOVE_TUTOR)
+	}
+	goto (BattleFrontier_Lounge7_EventScript_RightMoveTutor2)
+}
+
+script BattleFrontier_Lounge7_EventScript_RightMoveTutor2 {
+	msgbox (BattleFrontier_Lounge7_Text_TeachWhichMove, MSGBOX_DEFAULT)
+	special (ShowBattlePointsWindow)
+	dynmultichoice(16, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Tail Glow", "Sacred Fire", "Shadow Force", "Diamond Storm", "Behemoth Blade", "Behemoth Bash")
+	switch (var(VAR_RESULT)) {
+		case 0:
+			setvar (VAR_0x8005, MOVE_TAIL_GLOW)
+		case 1:
+			setvar (VAR_0x8005, MOVE_SACRED_FIRE)
+		case 2:
+			setvar (VAR_0x8005, MOVE_SHADOW_FORCE)
+		case 3:
+			setvar (VAR_0x8005, MOVE_DIAMOND_STORM)
+		case 4:
+			setvar (VAR_0x8005, MOVE_BEHEMOTH_BLADE)
+		case 5:
+			setvar (VAR_0x8005, MOVE_BEHEMOTH_BASH)
+		case 127:
+			goto (BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect)
+	}
+	goto (BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection)
+}
+
+script BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection {
+	special (BufferBattleFrontierTutorMoveName) # Despite the extremely specific name, this special buffers any move name in VAR_0x8005 into STR_VAR_1
+	msgbox (BattleFrontier_Lounge7_Text_MoveWillBe4BattlePoints, MSGBOX_YESNO)
+	if (var(VAR_RESULT) == NO) {
+		if (var(VAR_TEMP_FRONTIER_TUTOR_ID) == 0) {
+			goto (BattleFrontier_Lounge7_EventScript_LeftMoveTutor2)
+		}
+		else {
+			goto (BattleFrontier_Lounge7_EventScript_RightMoveTutor2)
+		}
+	}
+	specialvar (VAR_TEMP_1, GetFrontierBattlePoints)
+	if (var(VAR_TEMP_1) >= 4) {
+		goto (BattleFrontier_Lounge7_EventScript_TeachTutorMove)
+	}
+	msgbox (BattleFrontier_Lounge7_Text_HaventGotEnoughPoints, MSGBOX_DEFAULT)
+	special (CloseBattlePointsWindow)
+	release
+}
+
+script BattleFrontier_Lounge7_EventScript_TeachTutorMove {
+	msgbox (BattleFrontier_Lounge7_Text_TeachMoveToWhichMon, MSGBOX_DEFAULT)
+	special (CloseBattlePointsWindow)
+	call (MoveTutor_EventScript_OpenPartyMenu)
+	if (var(VAR_RESULT) == NO) {
+		goto (BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect)
+	}
+	setvar (VAR_0x8004, 4)
+	msgbox (BattleFrontier_Lounge7_Text_IllTakeBattlePoints, MSGBOX_DEFAULT)
+	special (TakeFrontierBattlePoints)
+	release
+}
+
+script BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect {
+	special (CloseBattlePointsWindow)
+	msgbox (BattleFrontier_Lounge7_Text_YouDontWantTo, MSGBOX_DEFAULT)
+	release
+}
+
 
 
 

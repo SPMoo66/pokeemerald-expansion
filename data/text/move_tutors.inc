@@ -1,7 +1,3 @@
-MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce:
-	.string "This move can be learned only\n"
-	.string "once. Is that okay?$"
-
 MoveTutor_Text_WhichMoveToTeach:
 	.string "Which move would you like me to teach?$"
 
@@ -257,3 +253,22 @@ MoveTutor_Text_LeagueMoveTaught:
 	.string "Now you're ready.\p"
 	.string "Go!\n"
 	.string "Conquer the Pokémon League!$"
+
+MoveTutor_Text_BattleFrontierFreeMoveTeach:
+	.string "There's some old women here who will\n"
+	.string "teach you moves, but at a cost.\p"
+	.string "I'm willing to show you a few moves\n"
+	.string "of true artistry for free.\p"
+	.string "What do you say?$"
+
+MoveTutor_Text_BattleFrontierFreeMoveDeclined:
+	.string "Oh?\n"
+	.string "You must be planning on spending some\l"
+	.string "of your BP with those old women.$"
+
+MoveTutor_Text_BattleFrontierFreeMoveWhichMon:
+	.string "Which Pokémon will I be teaching?$"
+
+MoveTutor_Text_BattleFrontierFreeMoveTaught:
+	.string "There, now your Pokémon are ready to\n"
+	.string "face the Battle Frontier with style!$"

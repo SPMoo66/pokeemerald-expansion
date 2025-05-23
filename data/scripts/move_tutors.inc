@@ -898,16 +898,109 @@ MoveTutor_EventScript_LeagueMoveDeclined::
 	return
 
 
-MoveTutor_EventScript_OpenPartyMenu::
-# 395 "data/scripts/move_tutors.pory"
-	special ChooseMonForMoveTutor
-# 396 "data/scripts/move_tutors.pory"
-	waitstate
-# 397 "data/scripts/move_tutors.pory"
+BattleFrontier_Lounge4_EventScript_MoveTutor::
+# 394 "data/scripts/move_tutors.pory"
 	lock
-# 398 "data/scripts/move_tutors.pory"
+# 395 "data/scripts/move_tutors.pory"
 	faceplayer
-# 399 "data/scripts/move_tutors.pory"
+# 396 "data/scripts/move_tutors.pory"
+	msgbox MoveTutor_Text_BattleFrontierFreeMoveTeach, MSGBOX_YESNO
+# 397 "data/scripts/move_tutors.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq BattleFrontier_Lounge4_EventScript_MoveTutor_2
+BattleFrontier_Lounge4_EventScript_MoveTutor_1:
+# 400 "data/scripts/move_tutors.pory"
+	msgbox MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT
+# 401 "data/scripts/move_tutors.pory"
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, BattleFrontier_Lounge4_EventScript_MoveTutor_Text_0, BattleFrontier_Lounge4_EventScript_MoveTutor_Text_1, BattleFrontier_Lounge4_EventScript_MoveTutor_Text_2, BattleFrontier_Lounge4_EventScript_MoveTutor_Text_3, BattleFrontier_Lounge4_EventScript_MoveTutor_Text_4
+# 402 "data/scripts/move_tutors.pory"
+	switch VAR_RESULT
+# 403 "data/scripts/move_tutors.pory"
+	case 0, BattleFrontier_Lounge4_EventScript_MoveTutor_6
+# 405 "data/scripts/move_tutors.pory"
+	case 1, BattleFrontier_Lounge4_EventScript_MoveTutor_7
+# 407 "data/scripts/move_tutors.pory"
+	case 2, BattleFrontier_Lounge4_EventScript_MoveTutor_8
+# 409 "data/scripts/move_tutors.pory"
+	case 3, BattleFrontier_Lounge4_EventScript_MoveTutor_9
+# 411 "data/scripts/move_tutors.pory"
+	case 4, BattleFrontier_Lounge4_EventScript_MoveTutor_10
+# 413 "data/scripts/move_tutors.pory"
+	case 127, BattleFrontier_Lounge4_EventScript_MoveTutor_11
+BattleFrontier_Lounge4_EventScript_MoveTutor_4:
+# 416 "data/scripts/move_tutors.pory"
+	msgbox MoveTutor_Text_BattleFrontierFreeMoveWhichMon, MSGBOX_DEFAULT
+# 417 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 418 "data/scripts/move_tutors.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq BattleFrontier_Lounge4_EventScript_MoveTutor_13
+BattleFrontier_Lounge4_EventScript_MoveTutor_12:
+# 421 "data/scripts/move_tutors.pory"
+	msgbox MoveTutor_Text_BattleFrontierFreeMoveTaught, MSGBOX_DEFAULT
+# 422 "data/scripts/move_tutors.pory"
+	release
+	return
+
+BattleFrontier_Lounge4_EventScript_MoveTutor_2:
+# 398 "data/scripts/move_tutors.pory"
+	goto MoveTutor_EventScript_BattleFrontierFreeMoveDeclined
+	goto BattleFrontier_Lounge4_EventScript_MoveTutor_1
+
+BattleFrontier_Lounge4_EventScript_MoveTutor_6:
+# 404 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_SPRINGTIDE_STORM
+	goto BattleFrontier_Lounge4_EventScript_MoveTutor_4
+
+BattleFrontier_Lounge4_EventScript_MoveTutor_7:
+# 406 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_BLEAKWIND_STORM
+	goto BattleFrontier_Lounge4_EventScript_MoveTutor_4
+
+BattleFrontier_Lounge4_EventScript_MoveTutor_8:
+# 408 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_WILDBOLT_STORM
+	goto BattleFrontier_Lounge4_EventScript_MoveTutor_4
+
+BattleFrontier_Lounge4_EventScript_MoveTutor_9:
+# 410 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_SANDSEAR_STORM
+	goto BattleFrontier_Lounge4_EventScript_MoveTutor_4
+
+BattleFrontier_Lounge4_EventScript_MoveTutor_10:
+# 412 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_METEOR_BEAM
+	goto BattleFrontier_Lounge4_EventScript_MoveTutor_4
+
+BattleFrontier_Lounge4_EventScript_MoveTutor_11:
+# 414 "data/scripts/move_tutors.pory"
+	goto MoveTutor_EventScript_BattleFrontierFreeMoveDeclined
+	goto BattleFrontier_Lounge4_EventScript_MoveTutor_4
+
+BattleFrontier_Lounge4_EventScript_MoveTutor_13:
+# 419 "data/scripts/move_tutors.pory"
+	goto MoveTutor_EventScript_BattleFrontierFreeMoveDeclined
+	goto BattleFrontier_Lounge4_EventScript_MoveTutor_12
+
+
+MoveTutor_EventScript_BattleFrontierFreeMoveDeclined::
+# 426 "data/scripts/move_tutors.pory"
+	msgbox MoveTutor_Text_BattleFrontierFreeMoveDeclined, MSGBOX_DEFAULT
+# 427 "data/scripts/move_tutors.pory"
+	release
+	return
+
+
+MoveTutor_EventScript_OpenPartyMenu::
+# 435 "data/scripts/move_tutors.pory"
+	special ChooseMonForMoveTutor
+# 436 "data/scripts/move_tutors.pory"
+	waitstate
+# 437 "data/scripts/move_tutors.pory"
+	lock
+# 438 "data/scripts/move_tutors.pory"
+	faceplayer
+# 439 "data/scripts/move_tutors.pory"
 	release
 	return
 
@@ -1047,3 +1140,23 @@ EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_3:
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_Text_4:
 # 363 "data/scripts/move_tutors.pory"
 	.string "Roar of Time$"
+
+BattleFrontier_Lounge4_EventScript_MoveTutor_Text_0:
+# 401 "data/scripts/move_tutors.pory"
+	.string "Springtide Storm$"
+
+BattleFrontier_Lounge4_EventScript_MoveTutor_Text_1:
+# 401 "data/scripts/move_tutors.pory"
+	.string "Bleakwind Storm$"
+
+BattleFrontier_Lounge4_EventScript_MoveTutor_Text_2:
+# 401 "data/scripts/move_tutors.pory"
+	.string "Wildbolt Storm$"
+
+BattleFrontier_Lounge4_EventScript_MoveTutor_Text_3:
+# 401 "data/scripts/move_tutors.pory"
+	.string "Sandsear Storm$"
+
+BattleFrontier_Lounge4_EventScript_MoveTutor_Text_4:
+# 401 "data/scripts/move_tutors.pory"
+	.string "Meteor Beam$"

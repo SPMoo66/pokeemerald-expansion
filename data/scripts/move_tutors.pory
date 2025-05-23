@@ -390,6 +390,46 @@ script MoveTutor_EventScript_LeagueMoveDeclined {
 }
 
 
+script BattleFrontier_Lounge4_EventScript_MoveTutor {
+	lock
+	faceplayer
+	msgbox (MoveTutor_Text_BattleFrontierFreeMoveTeach, MSGBOX_YESNO)
+	if (var(VAR_RESULT) == NO) {
+		goto (MoveTutor_EventScript_BattleFrontierFreeMoveDeclined)
+	}
+	msgbox(MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT)
+	dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Springtide Storm", "Bleakwind Storm", "Wildbolt Storm", "Sandsear Storm", "Meteor Beam")
+	switch (var(VAR_RESULT)) {
+		case 0:
+			setvar (VAR_0x8005, MOVE_SPRINGTIDE_STORM)
+		case 1:
+			setvar (VAR_0x8005, MOVE_BLEAKWIND_STORM)
+		case 2:
+			setvar (VAR_0x8005, MOVE_WILDBOLT_STORM)
+		case 3:
+			setvar (VAR_0x8005, MOVE_SANDSEAR_STORM)
+		case 4:
+			setvar (VAR_0x8005, MOVE_METEOR_BEAM)
+		case 127:
+			goto (MoveTutor_EventScript_BattleFrontierFreeMoveDeclined)
+	}
+	msgbox (MoveTutor_Text_BattleFrontierFreeMoveWhichMon, MSGBOX_DEFAULT)
+	call (MoveTutor_EventScript_OpenPartyMenu)
+	if (var(VAR_RESULT) == NO) {
+		goto (MoveTutor_EventScript_BattleFrontierFreeMoveDeclined)
+	}
+	msgbox (MoveTutor_Text_BattleFrontierFreeMoveTaught, MSGBOX_DEFAULT)
+	release
+}
+
+script MoveTutor_EventScript_BattleFrontierFreeMoveDeclined {
+	msgbox (MoveTutor_Text_BattleFrontierFreeMoveDeclined, MSGBOX_DEFAULT)
+	release
+}
+
+
+
+
 
 script MoveTutor_EventScript_OpenPartyMenu {
 	special (ChooseMonForMoveTutor)

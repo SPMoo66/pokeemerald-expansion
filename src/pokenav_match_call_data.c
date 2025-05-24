@@ -317,12 +317,12 @@ static const struct MatchCallRival sBrendanMatchCallHeader =
 
 static const match_call_text_data_t sJaksonTextScripts[] = {
     { MatchCall_Text_Jakson1,  0xFFFF,                              0xFFFF },
-    { MatchCall_Text_Jakson2,  FLAG_DEFEATED_DEWFORD_GYM,           0xFFFF },
-    { MatchCall_Text_Jakson3,  FLAG_DELIVERED_DEVON_GOODS,          0xFFFF },
-    { MatchCall_Text_Jakson4,  FLAG_HIDE_MAUVILLE_CITY_WALLY,       0xFFFF },
-    { MatchCall_Text_Jakson5,  FLAG_RECEIVED_HM_STRENGTH,           0xFFFF },
-    { MatchCall_Text_Jakson6,  FLAG_DEFEATED_LAVARIDGE_GYM,         0xFFFF },
-    { NULL,                     0xFFFF,                              0xFFFF }
+    { MatchCall_Text_Jakson2,  FLAG_VISITED_MAUVILLE_CITY,          0xFFFF },
+    { MatchCall_Text_Jakson3,  FLAG_BADGE05_GET,                    0xFFFF },
+    { MatchCall_Text_Jakson4,  FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
+    { MatchCall_Text_Jakson5,  FLAG_IS_CHAMPION,                    0xFFFF },
+    { MatchCall_Text_Jakson6,  FLAG_EXPANSION_1,                    0xFFFF },
+    { NULL,                    0xFFFF,                              0xFFFF }
 };
 
 static const struct MatchCallRival sJaksonMatchCallHeader =
@@ -336,12 +336,12 @@ static const struct MatchCallRival sJaksonMatchCallHeader =
 
 static const match_call_text_data_t sHarperTextScripts[] = {
     { MatchCall_Text_Harper1,  0xFFFF,                              0xFFFF },
-    { MatchCall_Text_Harper2,  FLAG_DEFEATED_DEWFORD_GYM,           0xFFFF },
-    { MatchCall_Text_Harper3,  FLAG_DELIVERED_DEVON_GOODS,          0xFFFF },
-    { MatchCall_Text_Harper4,  FLAG_HIDE_MAUVILLE_CITY_WALLY,       0xFFFF },
-    { MatchCall_Text_Harper5,  FLAG_RECEIVED_HM_STRENGTH,           0xFFFF },
-    { MatchCall_Text_Harper6,  FLAG_DEFEATED_LAVARIDGE_GYM,         0xFFFF },
-    { NULL,                     0xFFFF,                              0xFFFF }
+    { MatchCall_Text_Harper2,  FLAG_VISITED_MAUVILLE_CITY,          0xFFFF },
+    { MatchCall_Text_Harper3,  FLAG_BADGE05_GET,                    0xFFFF },
+    { MatchCall_Text_Harper4,  FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
+    { MatchCall_Text_Harper5,  FLAG_IS_CHAMPION,                    0xFFFF },
+    { MatchCall_Text_Harper6,  FLAG_EXPANSION_1,                    0xFFFF },
+    { NULL,                    0xFFFF,                              0xFFFF }
 };
 
 static const struct MatchCallRival sHarperMatchCallHeader =
@@ -355,12 +355,12 @@ static const struct MatchCallRival sHarperMatchCallHeader =
 
 static const match_call_text_data_t sReddTextScripts[] = {
     { MatchCall_Text_Redd1,  0xFFFF,                              0xFFFF },
-    { MatchCall_Text_Redd2,  FLAG_DEFEATED_DEWFORD_GYM,           0xFFFF },
-    { MatchCall_Text_Redd3,  FLAG_DELIVERED_DEVON_GOODS,          0xFFFF },
-    { MatchCall_Text_Redd4,  FLAG_HIDE_MAUVILLE_CITY_WALLY,       0xFFFF },
-    { MatchCall_Text_Redd5,  FLAG_RECEIVED_HM_STRENGTH,           0xFFFF },
-    { MatchCall_Text_Redd6,  FLAG_DEFEATED_LAVARIDGE_GYM,         0xFFFF },
-    { NULL,                     0xFFFF,                              0xFFFF }
+    { MatchCall_Text_Redd2,  FLAG_VISITED_MAUVILLE_CITY,          0xFFFF },
+    { MatchCall_Text_Redd3,  FLAG_BADGE05_GET,                    0xFFFF },
+    { MatchCall_Text_Redd4,  FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
+    { MatchCall_Text_Redd5,  FLAG_IS_CHAMPION,                    0xFFFF },
+    { MatchCall_Text_Redd6,  FLAG_EXPANSION_1,                    0xFFFF },
+    { NULL,                  0xFFFF,                              0xFFFF }
 };
 
 static const struct MatchCallRival sReddMatchCallHeader =
@@ -374,12 +374,12 @@ static const struct MatchCallRival sReddMatchCallHeader =
 
 static const match_call_text_data_t sSakuraTextScripts[] = {
     { MatchCall_Text_Sakura1,  0xFFFF,                              0xFFFF },
-    { MatchCall_Text_Sakura2,  FLAG_DEFEATED_DEWFORD_GYM,           0xFFFF },
-    { MatchCall_Text_Sakura3,  FLAG_DELIVERED_DEVON_GOODS,          0xFFFF },
-    { MatchCall_Text_Sakura4,  FLAG_HIDE_MAUVILLE_CITY_WALLY,       0xFFFF },
-    { MatchCall_Text_Sakura5,  FLAG_RECEIVED_HM_STRENGTH,           0xFFFF },
-    { MatchCall_Text_Sakura6,  FLAG_DEFEATED_LAVARIDGE_GYM,         0xFFFF },
-    { NULL,                     0xFFFF,                              0xFFFF }
+    { MatchCall_Text_Sakura2,  FLAG_VISITED_MAUVILLE_CITY,          0xFFFF },
+    { MatchCall_Text_Sakura3,  FLAG_BADGE05_GET,                    0xFFFF },
+    { MatchCall_Text_Sakura4,  FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
+    { MatchCall_Text_Sakura5,  FLAG_IS_CHAMPION,                    0xFFFF },
+    { MatchCall_Text_Sakura6,  FLAG_EXPANSION_1,                    0xFFFF },
+    { NULL,                    0xFFFF,                              0xFFFF }
 };
 
 static const struct MatchCallRival sSakuraMatchCallHeader =
@@ -393,12 +393,12 @@ static const struct MatchCallRival sSakuraMatchCallHeader =
 
 static const match_call_text_data_t sBaronTextScripts[] = {
     { MatchCall_Text_Baron1,  0xFFFF,                              0xFFFF },
-    { MatchCall_Text_Baron2,  FLAG_DEFEATED_DEWFORD_GYM,           0xFFFF },
-    { MatchCall_Text_Baron3,  FLAG_DELIVERED_DEVON_GOODS,          0xFFFF },
-    { MatchCall_Text_Baron4,  FLAG_HIDE_MAUVILLE_CITY_WALLY,       0xFFFF },
-    { MatchCall_Text_Baron5,  FLAG_RECEIVED_HM_STRENGTH,           0xFFFF },
-    { MatchCall_Text_Baron6,  FLAG_DEFEATED_LAVARIDGE_GYM,         0xFFFF },
-    { NULL,                     0xFFFF,                              0xFFFF }
+    { MatchCall_Text_Baron2,  FLAG_VISITED_MAUVILLE_CITY,          0xFFFF },
+    { MatchCall_Text_Baron3,  FLAG_BADGE05_GET,                    0xFFFF },
+    { MatchCall_Text_Baron4,  FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
+    { MatchCall_Text_Baron5,  FLAG_IS_CHAMPION,                    0xFFFF },
+    { MatchCall_Text_Baron6,  FLAG_EXPANSION_1,                    0xFFFF },
+    { NULL,                   0xFFFF,                              0xFFFF }
 };
 
 static const struct MatchCallRival sBaronMatchCallHeader =
@@ -467,7 +467,7 @@ static const match_call_text_data_t sLookerTextScripts[] = {
     { MatchCall_Text_Looker3, FLAG_RECEIVED_CASTFORM,              0xFFFF },
     { MatchCall_Text_Looker4, FLAG_RECEIVED_RED_OR_BLUE_ORB,       0xFFFF },
     { MatchCall_Text_Looker5, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
-    { NULL,                  0xFFFF,                              0xFFFF }
+    { NULL,                  0xFFFF,                               0xFFFF }
 };
 
 

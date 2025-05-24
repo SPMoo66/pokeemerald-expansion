@@ -1,0 +1,64 @@
+const MELMETAL = 1
+const MELTAN = 2
+
+mapscripts AbandonedShip_HiddenFloor_B1F_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if(flag(FLAG_CAUGHT_MELMETAL)) {
+			setflag (FLAG_TEMP_2)
+			removeobject(MELMETAL)
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(VAR_LAST_TALKED)
+		}
+	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_TEMP_0, 0: AbandonedShip_HiddenFloor_B1F_Meltan
+	]
+}
+
+script AbandonedShip_HiddenFloor_B1F_Meltan {
+	if (!flag(FLAG_ABANDONEDSHIP_SEEN_MELTAN)) {
+		lockall
+		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+		waitmovement (0)
+		delay (60)
+		applymovement (MELTAN, Common_Movement_WalkInPlaceLeft)
+		waitmovement (0)
+		delay (40)
+		applymovement (MELTAN, Common_Movement_WalkInPlaceUp)
+		waitmovement (0)
+		delay (40)
+		playse (SE_PIN)
+		applymovement (MELTAN, Common_Movement_ExclamationMark)
+		waitmovement (0)
+		delay (60)
+		applymovement (MELTAN, Common_Movement_WalkFastLeft9)
+		waitmovement (0)
+		delay (20)
+		setflag (FLAG_ABANDONEDSHIP_SEEN_MELTAN)
+		removeobject (MELTAN)
+		releaseall
+	}
+	setvar (VAR_TEMP_0, 1)
+}
+
+script BattleMelmetal {
+	lock
+	faceplayer
+	setvar (VAR_LAST_TALKED, MELMETAL)
+	playmoncry(SPECIES_MELMETAL, CRY_MODE_ENCOUNTER)
+	msgbox("Grii-oo-rii!")
+	waitmoncry
+	seteventmon(SPECIES_MELMETAL, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_MELMETAL)
+	}
+	release
+}

@@ -4730,6 +4730,16 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/MagmaHideout_PortalRoom/border.bin",
       "blockdata_filepath": "data/layouts/MagmaHideout_PortalRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_ABANDONED_SHIP_HIDDEN_FLOOR_B1F",
+      "name": "AbandonedShip_HiddenFloor_B1F_Layout",
+      "width": 13,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/AbandonedShip_HiddenFloor_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/AbandonedShip_HiddenFloor_B1F/map.bin"
     }
   ]
 }

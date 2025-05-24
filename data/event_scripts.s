@@ -1169,3 +1169,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RocketRefuge_B2F/scripts.inc"
 	.include "data/maps/RocketRefuge_B3F/scripts.inc"
 	.include "data/maps/MagmaHideout_PortalRoom/scripts.inc"
+
+	.include "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.inc"

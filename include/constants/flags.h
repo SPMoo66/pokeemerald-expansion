@@ -78,7 +78,7 @@
 #define FLAG_CAUGHT_SHAYMIN      0x40
 #define FLAG_CAUGHT_DIANCIE      0x41
 #define FLAG_CAUGHT_MARSHADOW    0x42
-#define FLAG_UNUSED_0x043        0x43 // Unused Flag
+#define FLAG_CAUGHT_MELMETAL     0x43
 #define FLAG_UNUSED_0x044        0x44 // Unused Flag
 #define FLAG_UNUSED_0x045        0x45 // Unused Flag
 #define FLAG_UNUSED_0x046        0x46 // Unused Flag
@@ -170,7 +170,7 @@
 #define FLAG_DELIVERED_DEVON_GOODS           0x95
 #define FLAG_TERA_ENABLED                    0x96 // Was leftover from R/S
 #define FLAG_RECEIVED_CASTFORM               0x97
-#define FLAG_UNUSED_0x98                     0x98 // Was for Super Rod
+#define FLAG_ABANDONEDSHIP_SEEN_MELTAN       0x98 // Was for Super Rod
 #define FLAG_RUSTBORO_NPC_TRADE_COMPLETED    0x99
 #define FLAG_PACIFIDLOG_NPC_TRADE_COMPLETED  0x9A
 #define FLAG_FORTREE_NPC_TRADE_COMPLETED     0x9B

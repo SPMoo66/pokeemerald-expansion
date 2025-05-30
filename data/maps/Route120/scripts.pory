@@ -39,6 +39,7 @@ Route120_OnLoad:
 	call_if_unset FLAG_REGI_DOORS_OPENED, Route120_EventScript_CloseAncientTomb
 	call_if_set FLAG_RECEIVED_DEVON_SCOPE, Route120_EventScript_SetBridgeClearMetatiles
 	call_if_unset FLAG_RECEIVED_DEVON_SCOPE, Route120_EventScript_SetBridgeKecleonMovement
+	call_if_set FLAG_BADGE08_GET, Route120_EventScript_OpenZarudeArea
 	end
 
 Route120_EventScript_CloseAncientTomb::
@@ -55,6 +56,13 @@ Route120_EventScript_SetBridgeClearMetatiles::
 
 Route120_EventScript_SetBridgeKecleonMovement::
 	setobjectmovementtype LOCALID_BRIDGE_KECLEON_SHADOW, MOVEMENT_TYPE_FACE_RIGHT
+	return
+
+Route120_EventScript_OpenZarudeArea::
+	setmetatile 30, 2, 0x305, FALSE
+	setmetatile 31, 2, 0x305, FALSE
+	setmetatile 30, 1, 0x2FD, FALSE
+	setmetatile 31, 1, 0x2FD, FALSE
 	return
 
 Route120_OnTransition:

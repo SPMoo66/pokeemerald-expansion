@@ -255,8 +255,8 @@
 #define FLAG_RECEIVED_BIG_ROOT               0xE8 // Was TM Giga Drain
 
 #define FLAG_CAUGHT_MANAPHY                  0xE9 // Was unused
+#define FLAG_CAUGHT_ZARUDE                   0xEA // Was for TM Rest
 
-#define FLAG_UNUSED_0xEA                     0xEA // Was for TM Rest
 #define FLAG_RECEIVED_RARE_CANDY_ATTRACT     0xEB
 #define FLAG_RECEIVED_GLASS_ORNAMENT         0xEC
 #define FLAG_RECEIVED_SILVER_SHIELD          0xED

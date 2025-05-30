@@ -617,7 +617,8 @@
     "RocketRefuge_B2F",
     "RocketRefuge_B3F",
     "MagmaHideout_PortalRoom",
-    "AbandonedShip_HiddenFloor_B1F"
+    "AbandonedShip_HiddenFloor_B1F",
+    "OvergrownJungle"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

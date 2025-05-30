@@ -645,6 +645,20 @@
       "elevation": 0,
       "dest_map": "MAP_REALMS_FRAY",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 30,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_OVERGROWN_JUNGLE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_OVERGROWN_JUNGLE",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

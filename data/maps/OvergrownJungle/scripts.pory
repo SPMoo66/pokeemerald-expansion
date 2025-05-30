@@ -1,0 +1,35 @@
+const ZARUDE = 1
+
+mapscripts OvergrownJungle_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if(flag(FLAG_CAUGHT_ZARUDE)) {
+			setflag (FLAG_TEMP_2)
+			removeobject(ZARUDE)
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(VAR_LAST_TALKED)
+		}
+	}
+}
+
+script BattleZarude {
+	lock
+	faceplayer
+	setvar (VAR_LAST_TALKED, ZARUDE)
+	playmoncry(SPECIES_ZARUDE, CRY_MODE_ENCOUNTER)
+	msgbox("Guu-guuhuhuhu!!")
+	waitmoncry
+	seteventmon(SPECIES_ZARUDE, 50)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	waitstate
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_ZARUDE)
+	}
+	release
+	end
+}

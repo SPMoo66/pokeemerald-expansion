@@ -245,47 +245,48 @@
 #define OBJ_EVENT_GFX_HOOH                       238
 #define OBJ_EVENT_GFX_POKE_BALL                  239
 #define OBJ_EVENT_GFX_OW_MON                     240
+#define OBJ_EVENT_GFX_LIGHT_SPRITE               241
 
-#define OBJ_EVENT_GFX_MATT                       241
-#define OBJ_EVENT_GFX_SHELLY                     242
-#define OBJ_EVENT_GFX_COURTNEY                   243
-#define OBJ_EVENT_GFX_TABITHA                    244
-#define OBJ_EVENT_GFX_PICHUSPIKYEARED            245
-#define OBJ_EVENT_GFX_BARON                      246
-#define OBJ_EVENT_GFX_HARPER                     247
-#define OBJ_EVENT_GFX_JAKSON                     248
-#define OBJ_EVENT_GFX_REDD                       249
-#define OBJ_EVENT_GFX_SAKURA                     250
-#define OBJ_EVENT_GFX_ITEM_BALL_BLUE             251
-#define OBJ_EVENT_GFX_PORTAL                     252
-#define OBJ_EVENT_GFX_SKIER_M                    253
-#define OBJ_EVENT_GFX_SKIER_F                    254
-#define OBJ_EVENT_GFX_ROCKET_M                   255
-#define OBJ_EVENT_GFX_ROCKET_F                   256
-#define OBJ_EVENT_GFX_GIOVANNI                   257
-#define OBJ_EVENT_GFX_LOOKER                     258
-#define OBJ_EVENT_GFX_BIANCA                     259
-#define OBJ_EVENT_GFX_PROF_ROWAN                 260
-#define OBJ_EVENT_GFX_GALACTIC_GRUNT_M           261
-#define OBJ_EVENT_GFX_GALACTIC_GRUNT_F           262
-#define OBJ_EVENT_GFX_KINDLER                    263
-#define OBJ_EVENT_GFX_BIRD_KEEPER                264
-#define OBJ_EVENT_GFX_GUITARIST                  265
-#define OBJ_EVENT_GFX_BUG_MANIAC                 266
-#define OBJ_EVENT_GFX_DRAGON_TAMER               267
-#define OBJ_EVENT_GFX_RUIN_MANIAC                268
-#define OBJ_EVENT_GFX_PKMN_BREEDER_M             269
-#define OBJ_EVENT_GFX_PKMN_BREEDER_F             270
-#define OBJ_EVENT_GFX_AROMA_LADY                 271
-#define OBJ_EVENT_GFX_POKEMANIAC                 272
-#define OBJ_EVENT_GFX_PKMN_RANGER_M              273
-#define OBJ_EVENT_GFX_PKMN_RANGER_F              274
+#define OBJ_EVENT_GFX_MATT                       242
+#define OBJ_EVENT_GFX_SHELLY                     243
+#define OBJ_EVENT_GFX_COURTNEY                   244
+#define OBJ_EVENT_GFX_TABITHA                    245
+#define OBJ_EVENT_GFX_PICHUSPIKYEARED            246
+#define OBJ_EVENT_GFX_BARON                      247
+#define OBJ_EVENT_GFX_HARPER                     248
+#define OBJ_EVENT_GFX_JAKSON                     249
+#define OBJ_EVENT_GFX_REDD                       250
+#define OBJ_EVENT_GFX_SAKURA                     251
+#define OBJ_EVENT_GFX_ITEM_BALL_BLUE             252
+#define OBJ_EVENT_GFX_PORTAL                     253
+#define OBJ_EVENT_GFX_SKIER_M                    254
+#define OBJ_EVENT_GFX_SKIER_F                    255
+#define OBJ_EVENT_GFX_ROCKET_M                   256
+#define OBJ_EVENT_GFX_ROCKET_F                   257
+#define OBJ_EVENT_GFX_GIOVANNI                   258
+#define OBJ_EVENT_GFX_LOOKER                     259
+#define OBJ_EVENT_GFX_BIANCA                     260
+#define OBJ_EVENT_GFX_PROF_ROWAN                 261
+#define OBJ_EVENT_GFX_GALACTIC_GRUNT_M           262
+#define OBJ_EVENT_GFX_GALACTIC_GRUNT_F           263
+#define OBJ_EVENT_GFX_KINDLER                    264
+#define OBJ_EVENT_GFX_BIRD_KEEPER                265
+#define OBJ_EVENT_GFX_GUITARIST                  266
+#define OBJ_EVENT_GFX_BUG_MANIAC                 267
+#define OBJ_EVENT_GFX_DRAGON_TAMER               268
+#define OBJ_EVENT_GFX_RUIN_MANIAC                269
+#define OBJ_EVENT_GFX_PKMN_BREEDER_M             270
+#define OBJ_EVENT_GFX_PKMN_BREEDER_F             271
+#define OBJ_EVENT_GFX_AROMA_LADY                 272
+#define OBJ_EVENT_GFX_POKEMANIAC                 273
+#define OBJ_EVENT_GFX_PKMN_RANGER_M              274
+#define OBJ_EVENT_GFX_PKMN_RANGER_F              275
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        275
 
+#define NUM_OBJ_EVENT_GFX                        276
 
 // These are dynamic object gfx ids.
 // They correspond with the values of the VAR_OBJ_GFX_ID_X vars.
@@ -308,6 +309,7 @@
 #define OBJ_EVENT_GFX_VAR_E  (OBJ_EVENT_GFX_VARS + 0xE)
 #define OBJ_EVENT_GFX_VAR_F  (OBJ_EVENT_GFX_VARS + 0xF)
 
+// Don't use (1u << 15) to avoid conflict with BLEND_IMMUNE_FLAG.
 #define OBJ_EVENT_MON               (1u << 14)
 #define OBJ_EVENT_MON_SHINY         (1u << 13)
 #define OBJ_EVENT_MON_FEMALE        (1u << 12)
@@ -343,10 +345,18 @@
 #define TRACKS_SPOT       4
 #define TRACKS_BUG        5
 
+#define LIGHT_TYPE_BALL             0
+#define LIGHT_TYPE_PKMN_CENTER_SIGN 1
+#define LIGHT_TYPE_POKE_MART_SIGN   2
+
 #define FIRST_DECORATION_SPRITE_GFX OBJ_EVENT_GFX_PICHU_DOLL
 
 #define OBJ_KIND_NORMAL 0
 #define OBJ_KIND_CLONE  255 // Exclusive to FRLG
+
+// Special object event local ids
+// Used for link player OWs in CreateLinkPlayerSprite
+#define OBJ_EVENT_ID_DYNAMIC_BASE 0xF0
 
 // Each object event template gets an ID that can be used to refer to it in scripts and elsewhere.
 // This is referred to as the "local id" (and it's really just 1 + its index in the templates array).
@@ -358,6 +368,7 @@
 #define LOCALID_BERRY_BLENDER_PLAYER_END   240 // This will use 5 (MAX_RFU_PLAYERS) IDs ending at 240, i.e. 236-240
 #define LOCALID_PLAYER                     255
 #define OBJ_EVENT_ID_FOLLOWER 0xFE
+#define OBJ_EVENT_ID_NPC_FOLLOWER 0xFD
 
 // Aliases for old names. "object event id" normally refers to an index into gObjectEvents, which these are not.
 #define OBJ_EVENT_ID_CAMERA LOCALID_CAMERA
@@ -487,7 +498,10 @@
 
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
-#define OBJ_EVENT_PAL_TAG_EMOTES                  0x8002
+#define OBJ_EVENT_PAL_TAG_LIGHT                   0x8001
+#define OBJ_EVENT_PAL_TAG_LIGHT_2                 0x8002
+#define OBJ_EVENT_PAL_TAG_EMOTES                  0x8003
+#define OBJ_EVENT_PAL_TAG_NEON_LIGHT              0x8004
 // Not a real OW palette tag; used for the white flash applied to followers
 #define OBJ_EVENT_PAL_TAG_WHITE                   (OBJ_EVENT_PAL_TAG_NONE - 1)
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF

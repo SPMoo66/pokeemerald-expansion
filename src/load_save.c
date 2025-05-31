@@ -1,6 +1,8 @@
 #include "global.h"
 #include "malloc.h"
 #include "berry_powder.h"
+#include "fake_rtc.h"
+#include "follower_npc.h"
 #include "item.h"
 #include "load_save.h"
 #include "main.h"
@@ -9,6 +11,7 @@
 #include "pokemon_storage_system.h"
 #include "random.h"
 #include "save_location.h"
+#include "script_pokemon_util.h"
 #include "trainer_hill.h"
 #include "gba/flash_internal.h"
 #include "decoration_inventory.h"
@@ -61,6 +64,7 @@ void CheckForFlashMemory(void)
 void ClearSav2(void)
 {
     CpuFill16(0, &gSaveblock2, sizeof(struct SaveBlock2ASLR));
+    FakeRtc_Reset;
 }
 
 void ClearSav1(void)

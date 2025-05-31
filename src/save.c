@@ -843,7 +843,7 @@ u8 LoadGameSave(u8 saveType)
 
 u16 GetSaveBlocksPointersBaseOffset(void)
 {
-    u16 i, slotOffset;
+    u16 i;
     struct SaveSector* sector;
 
     sector = gReadWriteSector = &gSaveDataBuffer;

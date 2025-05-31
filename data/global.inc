@@ -2263,3 +2263,27 @@ Text_TrickMasterIsBlank::
 	.string "“Trick Master is {STR_VAR_1}.”\n"
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
+
+Text_2nd::
+# 1195 "data/global.pory"
+	.string "2nd$"
+
+Text_3rd::
+# 1199 "data/global.pory"
+	.string "3rd$"
+
+Text_4th::
+# 1203 "data/global.pory"
+	.string "4th$"
+
+Text_5th::
+# 1207 "data/global.pory"
+	.string "5th$"
+
+Text_6th::
+# 1211 "data/global.pory"
+	.string "6th$"
+
+Text_7th::
+# 1215 "data/global.pory"
+	.string "7th$"

@@ -62,6 +62,8 @@ SlateportCity_BattleTentCorridor_EventScript_AskReadyForOpponent::
 	frontier_get FRONTIER_DATA_BATTLE_NUM
 	call_if_eq VAR_RESULT, 1, SlateportCity_BattleTentCorridor_EventScript_ReadyFor2ndOpponent
 	call_if_eq VAR_RESULT, 2, SlateportCity_BattleTentCorridor_EventScript_ReadyFor3rdOpponent
+	message BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyForNextOpponent
+	waitmessage
 	multichoice 20, 6, MULTI_GO_ON_REST_RETIRE, TRUE
 	switch VAR_RESULT
 	case 0, SlateportCity_BattleTentCorridor_EventScript_AskSwapMon
@@ -101,13 +103,11 @@ SlateportCity_BattleTentCorridor_EventScript_SwapMons::
 	goto SlateportCity_BattleTentCorridor_EventScript_EnterBattleRoom
 
 SlateportCity_BattleTentCorridor_EventScript_ReadyFor2ndOpponent::
-	message BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor2ndOpponent
-	waitmessage
+	bufferstring STR_VAR_1, Text_2nd
 	return
 
 SlateportCity_BattleTentCorridor_EventScript_ReadyFor3rdOpponent::
-	message BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor3rdOpponent
-	waitmessage
+	bufferstring STR_VAR_1, Text_3rd
 	return
 
 SlateportCity_BattleTentCorridor_EventScript_PauseChallenge::

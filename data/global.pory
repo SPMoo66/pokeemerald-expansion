@@ -1191,3 +1191,27 @@ text Text_TrickMasterIsBlank {
 	"… … … … … … … …\p"
 	"The lock clicked open!"
 }
+
+text Text_2nd {
+	"2nd"
+}
+
+text Text_3rd {
+	"3rd"
+}
+
+text Text_4th {
+	"4th"
+}
+
+text Text_5th {
+	"5th"
+}
+
+text Text_6th {
+	"6th"
+}
+
+text Text_7th {
+	"7th"
+}

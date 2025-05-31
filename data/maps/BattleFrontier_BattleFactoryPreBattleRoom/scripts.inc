@@ -158,31 +158,37 @@ BattleFrontier_BattleFactoryPreBattleRoom_EventScript_SwapMons::
 	goto BattleFrontier_BattleFactoryPreBattleRoom_EventScript_EnterBattleRoom
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_ReadyFor2ndOpponent::
-	message BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor2ndOpponent
+	bufferstring STR_VAR_1, Text_2nd
+	message BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyForNextOpponent
 	waitmessage
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_ReadyFor3rdOpponent::
-	message BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor3rdOpponent
+	bufferstring STR_VAR_1, Text_3rd
+	message BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyForNextOpponent
 	waitmessage
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_ReadyFor4thOpponent::
-	message BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor4thOpponent
+	bufferstring STR_VAR_1, Text_4th
+	message BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyForNextOpponent
 	waitmessage
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_ReadyFor5thOpponent::
-	message BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor5thOpponent
+	bufferstring STR_VAR_1, Text_5th
+	message BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyForNextOpponent
 	waitmessage
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_ReadyFor6thOpponent::
-	message BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor6thOpponent
+	bufferstring STR_VAR_1, Text_6th
+	message BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyForNextOpponent
 	waitmessage
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_ReadyFor7thOpponent::
+	bufferstring STR_VAR_1, Text_7th
 	message BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor7thOpponent
 	waitmessage
 	return
@@ -448,28 +454,12 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_LetUsRestoreMons:
 	.string "Thank you for competing!\n"
 	.string "Let us restore your Pokémon!$"
 
-BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor2ndOpponent:
-	.string "The 2nd match is next!\n"
-	.string "Are you ready?$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor3rdOpponent:
-	.string "The 3rd match is next!\n"
-	.string "Are you ready?$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor4thOpponent:
-	.string "The 4th match is next!\n"
-	.string "Are you ready?$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor5thOpponent:
-	.string "The 5th match is next!\n"
-	.string "Are you ready?$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor6thOpponent:
-	.string "The 6th match is next!\n"
+BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyForNextOpponent:
+	.string "The {STR_VAR_1} match is next!\n"
 	.string "Are you ready?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor7thOpponent:
-	.string "Finally, the 7th match is next!\n"
+	.string "Finally, the {STR_VAR_1} match is next!\n"
 	.string "Are you ready?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_SaveAndQuitGame:

@@ -225,79 +225,43 @@ BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyForNextOpponentSet::
 	case 4, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor5thOpponentSet
 	case 5, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor6thOpponentSet
 	case 6, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor7thOpponentSet
+	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyForNextOpponentSet
+	waitmessage
 
 BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor2ndOpponentSet::
-	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor2ndOpponentSet
-	waitmessage
+	bufferstring STR_VAR_1, Text_2nd
 	return
 
 BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor3rdOpponentSet::
-	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor3rdOpponentSet
-	waitmessage
+	bufferstring STR_VAR_1, Text_3rd
 	return
 
 BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor4thOpponentSet::
-	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor4thOpponentSet
-	waitmessage
+	bufferstring STR_VAR_1, Text_4th
 	return
 
 BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor5thOpponentSet::
-	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor5thOpponentSet
-	waitmessage
+	bufferstring STR_VAR_1, Text_5th
 	return
 
 BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor6thOpponentSet::
-	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor6thOpponentSet
-	waitmessage
+	bufferstring STR_VAR_1, Text_6th
 	return
 
 BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor7thOpponentSet::
-	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor7thOpponentSet
-	waitmessage
+	bufferstring STR_VAR_1, Text_7th
 	return
 
 BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyForNextOpponentSetLink::
 	copyvar VAR_TEMP_F, VAR_RESULT
 	switch VAR_TEMP_F
-	case 1, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor2ndOpponentSetLink
-	case 2, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor3rdOpponentSetLink
-	case 3, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor4thOpponentSetLink
-	case 4, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor5thOpponentSetLink
-	case 5, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor6thOpponentSetLink
-	case 6, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor7thOpponentSetLink
-
-BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor2ndOpponentSetLink::
-	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor2ndOpponentSet
-	waitmessage
-	goto BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponentsLink
-	end
-
-BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor3rdOpponentSetLink::
-	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor3rdOpponentSet
-	waitmessage
-	goto BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponentsLink
-	end
-
-BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor4thOpponentSetLink::
-	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor4thOpponentSet
-	waitmessage
-	goto BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponentsLink
-	end
-
-BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor5thOpponentSetLink::
-	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor5thOpponentSet
-	waitmessage
-	goto BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponentsLink
-	end
-
-BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor6thOpponentSetLink::
-	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor6thOpponentSet
-	waitmessage
-	goto BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponentsLink
-	end
-
-BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor7thOpponentSetLink::
-	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor7thOpponentSet
+	case 1, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor2ndOpponentSet
+	case 2, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor3rdOpponentSet
+	case 3, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor4thOpponentSet
+	case 4, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor5thOpponentSet
+	case 5, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor6thOpponentSet
+	case 6, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ReadyFor7thOpponentSet
+	message BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyForNextOpponentSet
 	waitmessage
 	goto BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponentsLink
 	end
@@ -408,28 +372,8 @@ BattleFrontier_BattleTowerMultiBattleRoom_Movement_AttendantReturnToPos:
 	walk_in_place_faster_right
 	step_end
 
-BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor2ndOpponentSet:
-	.string "The 2nd set of opponents is next.\n"
-	.string "Are you ready?$"
-
-BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor3rdOpponentSet:
-	.string "The 3rd set of opponents is next.\n"
-	.string "Are you ready?$"
-
-BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor4thOpponentSet:
-	.string "The 4th set of opponents is next.\n"
-	.string "Are you ready?$"
-
-BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor5thOpponentSet:
-	.string "The 5th set of opponents is next.\n"
-	.string "Are you ready?$"
-
-BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor6thOpponentSet:
-	.string "The 6th set of opponents is next.\n"
-	.string "Are you ready?$"
-
-BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor7thOpponentSet:
-	.string "The 7th set of opponents is next.\n"
+BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyForNextOpponentSet:
+	.string "The {STR_VAR_1} set of opponents is next.\n"
 	.string "Are you ready?$"
 
 gText_LinkStandby3::

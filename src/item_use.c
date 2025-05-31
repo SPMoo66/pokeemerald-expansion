@@ -1665,6 +1665,7 @@ static void UsePokevialFieldNo(u8 taskId)
 {
     ClearDialogWindowAndFrame(0, FALSE);
     DestroyTask(taskId);
+    ScriptUnfreezeObjectEvents();
     ScriptContext_Enable();
 }
 

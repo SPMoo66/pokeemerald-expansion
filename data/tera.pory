@@ -7,7 +7,7 @@ script Route104_EventScript_RowanTera {
 					"Hold on, if you could!"))
 	closemessage
 	playbgm (MUS_DP_ROWAN, FALSE)
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceRight)
 	applymovement (ROWAN_ROUTE104, Common_Movement_WalkUp4)
 	waitmovement (0)
 	delay (20)

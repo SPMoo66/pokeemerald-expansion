@@ -1,6 +1,6 @@
-const STEVEN = 1
-const MAGMA_F = 2
-const MAGMA_M = 3
+const LOCALID_GRANITE_CAVE_STEVEN = 1
+const GRANITE_CAVE_MAGMA_F = 2
+const GRANITE_CAVE_MAGMA_M = 3
 
 mapscripts GraniteCave_StevensRoom_MapScripts {}
 
@@ -29,24 +29,24 @@ script GraniteCave_StevensRoom_EventScript_Steven {
 		waitmovement (0)
 	}
 	playse (SE_PIN)
-	applymovement (STEVEN, Common_Movement_ExclamationMark)
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+	applymovement (LOCALID_GRANITE_CAVE_STEVEN, Common_Movement_ExclamationMark)
+	applymovement (LOCALID_PLAYER, Common_Movement_ExclamationMark)
 	delay (30)
 	playbgm (MUS_ENCOUNTER_MAGMA, FALSE)
 	playse (SE_EXIT)
-	addobject (MAGMA_F)
+	addobject (GRANITE_CAVE_MAGMA_F)
 	if (var(VAR_FACING) != DIR_SOUTH) {
-		applymovement (STEVEN, Common_Movement_WalkInPlaceFasterUp)
+		applymovement (LOCALID_GRANITE_CAVE_STEVEN, Common_Movement_WalkInPlaceFasterUp)
 	}
 	if (var(VAR_FACING) != DIR_NORTH) {
-		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
 	}
-	applymovement (MAGMA_F, Common_Movement_WalkDown2)
+	applymovement (GRANITE_CAVE_MAGMA_F, Common_Movement_WalkDown2)
 	waitmovement (0)
 	playse (SE_EXIT)
-	addobject (MAGMA_M)
-	applymovement (MAGMA_F, GraniteCave_MagmaF_Enter)
-	applymovement (MAGMA_M, Common_Movement_WalkDown2)
+	addobject (GRANITE_CAVE_MAGMA_M)
+	applymovement (GRANITE_CAVE_MAGMA_F, GraniteCave_MagmaF_Enter)
+	applymovement (GRANITE_CAVE_MAGMA_M, Common_Movement_WalkDown2)
 	waitmovement (0)
 	speakername (CommonText_MagmaGrunt)
 	msgbox("Hand over those Devon Goods, now!")
@@ -56,26 +56,26 @@ script GraniteCave_StevensRoom_EventScript_Steven {
 			"Unless…")
 	switch (var(VAR_TEMP_1)) {
 		case 7:
-			applymovement (STEVEN, Common_Movement_WalkInPlaceFasterUp)
+			applymovement (LOCALID_GRANITE_CAVE_STEVEN, Common_Movement_WalkInPlaceFasterUp)
 		case 8:
 			if (var(VAR_TEMP_0) == 5) {
-				applymovement (STEVEN, Common_Movement_WalkInPlaceFasterLeft)
+				applymovement (LOCALID_GRANITE_CAVE_STEVEN, Common_Movement_WalkInPlaceFasterLeft)
 			}
 			else {
-				applymovement (STEVEN, Common_Movement_WalkInPlaceFasterRight)
+				applymovement (LOCALID_GRANITE_CAVE_STEVEN, Common_Movement_WalkInPlaceFasterRight)
 			}
 		case 9:
-			applymovement (STEVEN, Common_Movement_WalkInPlaceFasterDown)
+			applymovement (LOCALID_GRANITE_CAVE_STEVEN, Common_Movement_WalkInPlaceFasterDown)
 		default:
 	}
 	waitmovement (0)
 	delay (30)
 	playse (SE_PIN)
-	applymovement (STEVEN, Common_Movement_ExclamationMark)
+	applymovement (LOCALID_GRANITE_CAVE_STEVEN, Common_Movement_ExclamationMark)
 	delay (30)
-	applymovement (STEVEN, Common_Movement_WalkFastUp)
+	applymovement (LOCALID_GRANITE_CAVE_STEVEN, Common_Movement_WalkFastUp)
 	if (var(VAR_TEMP_1) == 7) {
-		applymovement (OBJ_EVENT_ID_PLAYER, GraniteCave_PlayerPushed)
+		applymovement (LOCALID_PLAYER, GraniteCave_PlayerPushed)
 		applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft)
 	}
 	waitmovement (0)
@@ -84,10 +84,10 @@ script GraniteCave_StevensRoom_EventScript_Steven {
 			"Let me take care of-!!\p"
 			"No, help me with this!")
 	if (var(VAR_TEMP_1) == 8) {
-		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkFastUp)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkFastUp)
 	}
 	elif (var(VAR_TEMP_1) == 9) {
-		applymovement (OBJ_EVENT_ID_PLAYER, GraniteCave_PlayerRunUp)
+		applymovement (LOCALID_PLAYER, GraniteCave_PlayerRunUp)
 		applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft)
 	}
 	waitmovement (0)
@@ -99,53 +99,53 @@ script GraniteCave_StevensRoom_EventScript_Steven {
 	multi_2_vs_2 (TRAINER_MAGMA_GRUNT_F_GRANITE_CAVE, "Wh-what??", TRAINER_MAGMA_GRUNT_M_GRANITE_CAVE, "Tch…\nYou told me we could handle this!", PARTNER_STEVEN_GRANITE_CAVE)
 
 	if (var(VAR_RESULT) == 1) {
-		applymovement (MAGMA_F, Common_Movement_FaceRight)
-		applymovement (MAGMA_M, Common_Movement_WalkInPlaceFasterLeft)
+		applymovement (GRANITE_CAVE_MAGMA_F, Common_Movement_FaceRight)
+		applymovement (GRANITE_CAVE_MAGMA_M, Common_Movement_WalkInPlaceFasterLeft)
 		waitmovement (0)
 		speakername (CommonText_MagmaGrunt)
 		msgbox (format("You never told me HE would be here!"))
-		applymovement (MAGMA_F, Common_Movement_WalkInPlaceFasterRight)
+		applymovement (GRANITE_CAVE_MAGMA_F, Common_Movement_WalkInPlaceFasterRight)
 		waitmovement (0)
 		msgbox (format("I-I didn't know either!\pWe were just following the kid, right?"))
-		applymovement (MAGMA_M, Common_Movement_WalkInPlaceFasterLeft)
+		applymovement (GRANITE_CAVE_MAGMA_M, Common_Movement_WalkInPlaceFasterLeft)
 		waitmovement (0)
 		msgbox (format(	"Well, you know what to do in this situation…\p"
 						"… … …\n"
 						"Run!"))
 		closemessage
 		delay (20)
-		applymovement (MAGMA_M, Common_Movement_WalkFastUp2)
+		applymovement (GRANITE_CAVE_MAGMA_M, Common_Movement_WalkFastUp2)
 		waitmovement (0)
 		playse (SE_EXIT)
-		removeobject (MAGMA_M)
+		removeobject (GRANITE_CAVE_MAGMA_M)
 		delay (30)
-		applymovement (MAGMA_F, Common_Movement_WalkInPlaceDown)
+		applymovement (GRANITE_CAVE_MAGMA_F, Common_Movement_WalkInPlaceDown)
 		waitmovement (0)
 		delay (30)
 		playse (SE_PIN)
-		applymovement (MAGMA_F, Common_Movement_ExclamationMark)
+		applymovement (GRANITE_CAVE_MAGMA_F, Common_Movement_ExclamationMark)
 		delay (30)
-		applymovement (MAGMA_F, Common_Movement_WalkInPlaceFasterUp)
+		applymovement (GRANITE_CAVE_MAGMA_F, Common_Movement_WalkInPlaceFasterUp)
 		waitmovement (0)
 		speakername (CommonText_MagmaGrunt)
 		msgbox ("Ah-ahh!\nWait for me!")
 		closemessage
-		applymovement (MAGMA_F, GraniteCave_MagmaF_Exit)
+		applymovement (GRANITE_CAVE_MAGMA_F, GraniteCave_MagmaF_Exit)
 		waitmovement (0)
 		playse (SE_EXIT)
-		removeobject (MAGMA_F)
+		removeobject (GRANITE_CAVE_MAGMA_F)
 		delay (30)
 		speakername (CommonText_Steven)
 		msgbox ("… … …")
 		closemessage
 		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
 		if (var(VAR_TEMP_0) == 5) {
-			applymovement (STEVEN, Common_Movement_WalkInPlaceFasterLeft)
-			applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
+			applymovement (LOCALID_GRANITE_CAVE_STEVEN, Common_Movement_WalkInPlaceFasterLeft)
+			applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
 		}
 		else {
-			applymovement (STEVEN, Common_Movement_WalkInPlaceFasterRight)
-			applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
+			applymovement (LOCALID_GRANITE_CAVE_STEVEN, Common_Movement_WalkInPlaceFasterRight)
+			applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
 		}
 		speakername (CommonText_Steven)
 		msgbox (format(	"Well then.\p"
@@ -174,10 +174,10 @@ script GraniteCave_StevensRoom_EventScript_Steven {
 		speakername (CommonText_Steven)
 		msgbox (GraniteCave_StevensRoom_Text_IveGotToHurryAlong)
 		closemessage
-		applymovement (STEVEN, GraniteCave_StevensRoom_Movement_StevenExit)
+		applymovement (LOCALID_GRANITE_CAVE_STEVEN, GraniteCave_StevensRoom_Movement_StevenExit)
 		waitmovement (0)
 		playse (SE_EXIT)
-		removeobject (STEVEN)
+		removeobject (LOCALID_GRANITE_CAVE_STEVEN)
 		release
 	}
 	else {

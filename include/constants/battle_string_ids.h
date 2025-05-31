@@ -729,59 +729,12 @@
 #define STRINGID_ITDOESNTAFFECTTWOFOES                727
 #define STRINGID_SENDCAUGHTMONPARTYORBOX              728
 #define STRINGID_PKMNSENTTOPCAFTERCATCH               729
+#define STRINGID_TOXICSPIKESBADLYPOISONED             730
 
-#define STRINGID_NORUNNINGFROMTHISBATTLE              730
-#define STRINGID_FIRSTDOWNROXANNE                     731
-#define STRINGID_FIRSTDOWNBRAWLY                      732
-#define STRINGID_FIRSTDOWNWATTSON                     733
-#define STRINGID_FIRSTDOWNFLANNERY                    734
-#define STRINGID_FIRSTDOWNNORMAN                      735
-#define STRINGID_FIRSTDOWNWINONA                      736
-#define STRINGID_FIRSTDOWNLIZATATE                    737
-#define STRINGID_FIRSTDOWNJUAN                        738
-#define STRINGID_LASTSWITCHROXANNE                    739
-#define STRINGID_LASTSWITCHBRAWLY                     740
-#define STRINGID_LASTSWITCHWATTSON                    741
-#define STRINGID_LASTSWITCHFLANNERY                   742
-#define STRINGID_LASTSWITCHNORMAN                     743
-#define STRINGID_LASTSWITCHWINONA                     744
-#define STRINGID_LASTSWITCHLIZATATE                   745
-#define STRINGID_LASTSWITCHJUAN                       746
-#define STRINGID_MEGALIZATATE                         747
-#define STRINGID_MEGAJUAN                             748
-#define STRINGID_LASTSWITCHMAXIEMTCHIMNEY             749
-#define STRINGID_LASTSWITCHMAXIEMAGMAHIDEOUT          750
-#define STRINGID_LASTSWITCHMAXIEMOSSDEEP              751
-#define STRINGID_LASTSWITCHARCHIE                     752
-#define STRINGID_MEGAMAXIEMAGMAHIDEOUT                753
-#define STRINGID_MEGAARCHIE                           754
-#define STRINGID_MEGACRITICALHITMAXIE                 755
-#define STRINGID_MEGACRITICALHITARCHIE                756
-#define STRINGID_LASTHALFMAXIEMOSSDEEP                757
-#define STRINGID_LASTHALFARCHIE                       758
-#define STRINGID_FIRSTDOWNSIDNEY                      759
-#define STRINGID_FIRSTDOWNPHOEBE                      760
-#define STRINGID_FIRSTDOWNGLACIA                      761
-#define STRINGID_FIRSTDOWNDRAKE                       762
-#define STRINGID_FIRSTDOWNWALLACE                     763
-#define STRINGID_LASTSWITCHSIDNEY                     764
-#define STRINGID_LASTSWITCHPHOEBE                     765
-#define STRINGID_LASTSWITCHGLACIA                     766
-#define STRINGID_LASTSWITCHDRAKE                      767
-#define STRINGID_LASTSWITCHWALLACE                    768
-#define STRINGID_MEGASIDNEY                           769
-#define STRINGID_MEGAPHOEBE                           770
-#define STRINGID_MEGAGLACIA                           771
-#define STRINGID_MEGADRAKE                            772
-#define STRINGID_MEGAWALLACE                          773
-#define STRINGID_LASTHALFSIDNEY                       774
-#define STRINGID_LASTHALFPHOEBE                       775
-#define STRINGID_LASTHALFGLACIA                       776
-#define STRINGID_LASTHALFDRAKE                        777
-#define STRINGID_LASTHALFWALLACE                      778
-#define STRINGID_BEFOREFIRSTTURNWALLACE               779
+//Custom strings below
+#define STRINGID_NORUNNINGFROMTHISBATTLE              731
 
-#define BATTLESTRINGS_COUNT                           780
+#define BATTLESTRINGS_COUNT                           732
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

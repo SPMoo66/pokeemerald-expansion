@@ -628,7 +628,7 @@ script PetalburgCity_Gym_EventScript_NormanBattle {
 	delay (30)
 	playse (SE_DOOR)
 	delay (10)
-	addobject (LOCALID_WALLYS_DAD)
+	addobject (LOCALID_PETALBURG_GYM_WALLYS_DAD)
 	switch (var(VAR_FACING)) {
 		case DIR_NORTH:
 			goto (PetalburgCity_Gym_EventScript_WallysDadArrivesNorth)

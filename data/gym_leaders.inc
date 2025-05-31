@@ -500,7 +500,7 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 # 630 "data/gym_leaders.pory"
 	delay 10
 # 631 "data/gym_leaders.pory"
-	addobject LOCALID_WALLYS_DAD
+	addobject LOCALID_PETALBURG_GYM_WALLYS_DAD
 # 632 "data/gym_leaders.pory"
 	switch VAR_FACING
 # 633 "data/gym_leaders.pory"

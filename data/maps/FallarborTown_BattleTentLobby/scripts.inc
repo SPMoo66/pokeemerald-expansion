@@ -1,5 +1,3 @@
-.set LOCALID_ATTENDANT, 1
-
 FallarborTown_BattleTentLobby_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, FallarborTown_BattleTentLobby_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, FallarborTown_BattleTentLobby_OnWarp
@@ -11,7 +9,7 @@ FallarborTown_BattleTentLobby_OnWarp:
 
 FallarborTown_BattleTentLobby_EventScript_TurnPlayerNorth::
 	setvar VAR_TEMP_1, 1
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 
 FallarborTown_BattleTentLobby_OnFrame:
@@ -191,13 +189,13 @@ FallarborTown_BattleTentLobby_EventScript_EndCancelChallenge::
 	end
 
 FallarborTown_BattleTentLobby_EventScript_WalkToDoor::
-	applymovement LOCALID_ATTENDANT, Common_Movement_WalkUp3
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp3
+	applymovement LOCALID_FALLARBOR_TENT_ATTENDANT, Common_Movement_WalkUp3
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp3
 	waitmovement 0
 	opendoor 6, 1
 	waitdooranim
-	applymovement LOCALID_ATTENDANT, Common_Movement_EnterHouse
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2Invis
+	applymovement LOCALID_FALLARBOR_TENT_ATTENDANT, Common_Movement_EnterHouse
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp2Invis
 	waitmovement 0
 	closedoor 6, 1
 	waitdooranim

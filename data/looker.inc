@@ -10,7 +10,7 @@ RustboroCity_EventScript_Looker::
 # 6 "data/looker.pory"
 	special SpawnCameraObject
 # 7 "data/looker.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight2
+	applymovement LOCALID_CAMERA, Common_Movement_WalkRight2
 # 8 "data/looker.pory"
 	waitmovement 0
 # 9 "data/looker.pory"
@@ -24,7 +24,7 @@ RustboroCity_EventScript_Looker::
 # 13 "data/looker.pory"
 	setvar VAR_RUSTBORO_CITY_STATE, 8
 # 14 "data/looker.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft2
+	applymovement LOCALID_CAMERA, Common_Movement_WalkLeft2
 # 15 "data/looker.pory"
 	waitmovement 0
 # 16 "data/looker.pory"
@@ -152,7 +152,7 @@ SlateportCity_EventScript_Looker::
 # 52 "data/looker.pory"
 	waitmovement 0
 # 53 "data/looker.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
 # 54 "data/looker.pory"
 	waitmovement 0
 # 55 "data/looker.pory"
@@ -345,23 +345,23 @@ TrainerHill_Looker1::
 # 216 "data/looker.pory"
 	closemessage
 # 217 "data/looker.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
 # 218 "data/looker.pory"
 	waitmovement 0
 # 219 "data/looker.pory"
 	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkLeft
 # 220 "data/looker.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
 # 221 "data/looker.pory"
 	waitmovement 0
 # 222 "data/looker.pory"
 	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkLeft6
 # 223 "data/looker.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft6
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft6
 # 224 "data/looker.pory"
 	waitmovement 0
 # 225 "data/looker.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
 # 226 "data/looker.pory"
 	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkUp
 # 227 "data/looker.pory"
@@ -541,11 +541,11 @@ RocketRefuge_B1F_Looker::
 # 329 "data/looker.pory"
 	lock
 # 330 "data/looker.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRight
 # 331 "data/looker.pory"
 	waitmovement 0
 # 332 "data/looker.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 333 "data/looker.pory"
 	waitmovement 0
 # 334 "data/looker.pory"
@@ -597,7 +597,7 @@ RocketRefuge_B1F_Looker::
 # 360 "data/looker.pory"
 	delay 40
 # 361 "data/looker.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
 # 362 "data/looker.pory"
 	applymovement 8, Common_Movement_WalkFastDown6
 # 363 "data/looker.pory"
@@ -769,7 +769,7 @@ RocketRefuge_B3F_Looker::
 # 490 "data/looker.pory"
 	waitmovement 0
 # 491 "data/looker.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
 # 492 "data/looker.pory"
 	applymovement 4, Common_Movement_WalkInPlaceUp
 RocketRefuge_B3F_Looker_1:
@@ -882,7 +882,7 @@ RocketRefuge_B3F_Looker_2:
 # 468 "data/looker.pory"
 	waitmovement 0
 # 469 "data/looker.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 470 "data/looker.pory"
 	applymovement 4, Common_Movement_WalkRight
 	goto RocketRefuge_B3F_Looker_1
@@ -896,7 +896,7 @@ RocketRefuge_B3F_Looker_3:
 # 481 "data/looker.pory"
 	waitmovement 0
 # 482 "data/looker.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 483 "data/looker.pory"
 	applymovement 4, Common_Movement_WalkRight2
 	goto RocketRefuge_B3F_Looker_1
@@ -914,7 +914,7 @@ RocketRefuge_B3F_Looker_10:
 # 475 "data/looker.pory"
 	waitmovement 0
 # 476 "data/looker.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 477 "data/looker.pory"
 	applymovement 4, Common_Movement_WalkRight2
 	goto RocketRefuge_B3F_Looker_1

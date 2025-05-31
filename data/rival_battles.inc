@@ -38,7 +38,7 @@ Harper_Battle02_1:
 # 28 "data/rival_battles.pory"
 	closemessage
 # 29 "data/rival_battles.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Harper_PlayerMoves
+	applymovement LOCALID_PLAYER, Harper_PlayerMoves
 # 30 "data/rival_battles.pory"
 	waitmovement 0
 # 31 "data/rival_battles.pory"
@@ -191,13 +191,13 @@ Sakura_Battle02_1:
 # 115 "data/rival_battles.pory"
 	addobject 3
 # 116 "data/rival_battles.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
 # 117 "data/rival_battles.pory"
 	waitmovement 0
 # 118 "data/rival_battles.pory"
 	playse SE_PIN
 # 119 "data/rival_battles.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
 # 120 "data/rival_battles.pory"
 	waitmovement 0
 # 121 "data/rival_battles.pory"

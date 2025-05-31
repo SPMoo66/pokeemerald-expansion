@@ -42,9 +42,9 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 # 28 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	special SpawnCameraObject
 # 29 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkDown2
+	applymovement LOCALID_CAMERA, Common_Movement_WalkDown2
 # 30 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
 # 31 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	waitmovement 0
 # 32 "data/maps/MeteorFalls_1F_1R/scripts.pory"
@@ -197,7 +197,7 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene_10:
 # 111 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	closemessage
 # 112 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 # 113 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	applymovement 5, Common_Movement_WalkInPlaceFasterLeft
 # 114 "data/maps/MeteorFalls_1F_1R/scripts.pory"
@@ -235,9 +235,9 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene_10:
 # 138 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	closemessage
 # 139 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay
+	applymovement LOCALID_PLAYER, MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay
 # 140 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay
+	applymovement LOCALID_CAMERA, MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay
 # 141 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	applymovement 11, MeteorFalls_1F_1R_Movement_PushRivalOutOfWay
 # 142 "data/maps/MeteorFalls_1F_1R/scripts.pory"
@@ -317,7 +317,7 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene_10:
 # 197 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	setvar VAR_METEOR_FALLS_STATE, 1
 # 198 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp2
+	applymovement LOCALID_CAMERA, Common_Movement_WalkUp2
 # 199 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	waitmovement 0
 # 200 "data/maps/MeteorFalls_1F_1R/scripts.pory"

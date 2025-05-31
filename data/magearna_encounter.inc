@@ -15,7 +15,7 @@ Magearna_Escape::
 	compare VAR_TEMP_0, 11
 	goto_if_eq Magearna_Escape_2
 # 12 "data/magearna_encounter.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Magearna_Face
+	applymovement LOCALID_PLAYER, Magearna_Face
 Magearna_Escape_1:
 # 14 "data/magearna_encounter.pory"
 	applymovement 24, Common_Movement_WalkFastDown6
@@ -40,7 +40,7 @@ Magearna_Escape_1:
 # 25 "data/magearna_encounter.pory"
 	closemessage
 # 26 "data/magearna_encounter.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 27 "data/magearna_encounter.pory"
 	applymovement 15, Common_Movement_WalkInPlaceRight
 # 28 "data/magearna_encounter.pory"
@@ -63,7 +63,7 @@ Magearna_Escape_1:
 
 Magearna_Escape_2:
 # 9 "data/magearna_encounter.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Magearna_PushPlayerRight
+	applymovement LOCALID_PLAYER, Magearna_PushPlayerRight
 	goto Magearna_Escape_1
 
 
@@ -92,7 +92,7 @@ Magearna_Escape2_1:
 # 56 "data/magearna_encounter.pory"
 	waitmovement 0
 # 57 "data/magearna_encounter.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 # 58 "data/magearna_encounter.pory"
 	applymovement 25, Common_Movement_WalkFastDown3
 # 59 "data/magearna_encounter.pory"
@@ -128,7 +128,7 @@ Magearna_Escape3::
 	goto_if_unset FLAG_TEMP_5, Magearna_Escape3_2
 Magearna_Escape3_1:
 # 75 "data/magearna_encounter.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
 # 76 "data/magearna_encounter.pory"
 	applymovement 26, Common_Movement_FaceUp
 # 77 "data/magearna_encounter.pory"
@@ -245,7 +245,7 @@ Magearna_ScientistDontLeaveNorth_1:
 # 137 "data/magearna_encounter.pory"
 	closemessage
 # 138 "data/magearna_encounter.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDown
 # 139 "data/magearna_encounter.pory"
 	waitmovement 0
 # 140 "data/magearna_encounter.pory"
@@ -278,7 +278,7 @@ Magearna_ScientistDontLeaveEast_1:
 # 155 "data/magearna_encounter.pory"
 	closemessage
 # 156 "data/magearna_encounter.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
 # 157 "data/magearna_encounter.pory"
 	waitmovement 0
 # 158 "data/magearna_encounter.pory"
@@ -311,7 +311,7 @@ Magearna_ScientistDontLeaveSouth_1:
 # 173 "data/magearna_encounter.pory"
 	closemessage
 # 174 "data/magearna_encounter.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
 # 175 "data/magearna_encounter.pory"
 	waitmovement 0
 # 176 "data/magearna_encounter.pory"

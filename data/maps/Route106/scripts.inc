@@ -121,7 +121,7 @@ Route106_ChallengeBallTutorial::
 # 65 "data/maps/Route106/scripts.pory"
 	closemessage
 # 66 "data/maps/Route106/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceRight
 # 67 "data/maps/Route106/scripts.pory"
 	applymovement 7, Route106_BiancaEnter
 # 68 "data/maps/Route106/scripts.pory"
@@ -131,7 +131,7 @@ Route106_ChallengeBallTutorial::
 # 70 "data/maps/Route106/scripts.pory"
 	msgbox Route106_ChallengeBallTutorial_Text_1
 # 73 "data/maps/Route106/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 74 "data/maps/Route106/scripts.pory"
 	applymovement 7, Common_Movement_WalkInPlaceLeft
 # 75 "data/maps/Route106/scripts.pory"
@@ -139,7 +139,7 @@ Route106_ChallengeBallTutorial::
 # 76 "data/maps/Route106/scripts.pory"
 	msgbox Route106_ChallengeBallTutorial_Text_2
 # 78 "data/maps/Route106/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceRight
 # 79 "data/maps/Route106/scripts.pory"
 	waitmovement 0
 # 80 "data/maps/Route106/scripts.pory"

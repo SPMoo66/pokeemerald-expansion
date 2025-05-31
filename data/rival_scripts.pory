@@ -284,7 +284,7 @@ script Rival_Scene03 {
 	}
 	closemessage
 	fadescreen (FADE_TO_BLACK)
-	setobjectxy (OBJ_EVENT_ID_PLAYER, 11, 19)
+	setobjectxy (LOCALID_PLAYER, 11, 19)
 	setvar (VAR_0x8004, 11)
 	setvar (VAR_0x8005, 19)
 	special (TeleportCamera)
@@ -303,7 +303,7 @@ script Rival_Scene03 {
 	setobjectxy (HARPER_RUSTBORO, 13, 18)
 	setobjectxy (JAKSON_RUSTBORO, 12, 19)
 	setobjectxy (RIVAL_RUSTBORO, 0, 6)
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+	applymovement (LOCALID_PLAYER, Common_Movement_FaceUp)
 	fadescreen (FADE_FROM_BLACK)
 	message (format ("You exchanged PokéNav info with your friends."))
 	applymovement (JAKSON_RUSTBORO, Common_Movement_WalkInPlaceLeft)

@@ -11,7 +11,7 @@ script SkyPillar_Rival_Battle {
 	lock
 	addobject (RIVAL)
 	setobjectxy (RIVAL, 6, 16)
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
 	applymovement (RIVAL, Common_Movement_FaceUp)
 	checkplayergender
 	if (var(VAR_RESULT) == MALE) {

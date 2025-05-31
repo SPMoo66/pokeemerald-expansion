@@ -47,7 +47,7 @@ AbandonedShip_HiddenFloor_B1F_Meltan_2:
 # 23 "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.pory"
 	lockall
 # 24 "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
 # 25 "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.pory"
 	waitmovement 0
 # 26 "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.pory"

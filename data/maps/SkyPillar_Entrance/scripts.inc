@@ -19,7 +19,7 @@ SkyPillar_Rival_Battle::
 # 13 "data/maps/SkyPillar_Entrance/scripts.pory"
 	setobjectxy 1, 6, 16
 # 14 "data/maps/SkyPillar_Entrance/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
 # 15 "data/maps/SkyPillar_Entrance/scripts.pory"
 	applymovement 1, Common_Movement_FaceUp
 # 16 "data/maps/SkyPillar_Entrance/scripts.pory"

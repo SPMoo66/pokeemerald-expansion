@@ -14,7 +14,7 @@ Route104_EventScript_RowanTera::
 # 9 "data/tera.pory"
 	playbgm MUS_DP_ROWAN, FALSE
 # 10 "data/tera.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceRight
 # 11 "data/tera.pory"
 	applymovement ROWAN_ROUTE104, Common_Movement_WalkUp4
 # 12 "data/tera.pory"

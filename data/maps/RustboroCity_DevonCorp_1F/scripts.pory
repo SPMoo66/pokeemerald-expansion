@@ -72,24 +72,24 @@ RustboroCity_DevonCorp_1F_Text_ProductDisplay:
 	.string "Poké Balls and Pokénav systems.”$"
 `
 
-const EMPLOYEE = 1
-const STAIR_GUARD = 2
-const GREETER = 3
+const LOCALID_DEVON_CORP_EMPLOYEE = 1
+const LOCALID_DEVON_CORP_STAIR_GUARD = 2
+const LOCALID_DEVON_CORP_GREETER = 3
 const LOOKER_DEVONCORP_1F = 5
 
 mapscripts RustboroCity_DevonCorp_1F_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
 		if (!flag(FLAG_RETURNED_DEVON_GOODS)) {
-			setobjectxyperm (STAIR_GUARD, 21, 2)
-			setobjectmovementtype (STAIR_GUARD, MOVEMENT_TYPE_FACE_DOWN)
+			setobjectxyperm (LOCALID_DEVON_CORP_STAIR_GUARD, 21, 2)
+			setobjectmovementtype (LOCALID_DEVON_CORP_STAIR_GUARD, MOVEMENT_TYPE_FACE_DOWN)
 			setflag(FLAG_TEMP_1)
 		}
 		elif (var(VAR_LOOKER_ROCKET) >= 3 && var(VAR_LOOKER_ROCKET) <= 5) {
-			setobjectxyperm (STAIR_GUARD, 6, 5)
-			setobjectmovementtype (STAIR_GUARD, MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT)
-			setobjectxyperm (EMPLOYEE, 0, 7)
-			setobjectmovementtype (EMPLOYEE, MOVEMENT_TYPE_FACE_RIGHT)
-			setobjectxyperm (GREETER, 1, 5)
+			setobjectxyperm (LOCALID_DEVON_CORP_STAIR_GUARD, 6, 5)
+			setobjectmovementtype (LOCALID_DEVON_CORP_STAIR_GUARD, MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT)
+			setobjectxyperm (LOCALID_DEVON_CORP_EMPLOYEE, 0, 7)
+			setobjectmovementtype (LOCALID_DEVON_CORP_EMPLOYEE, MOVEMENT_TYPE_FACE_RIGHT)
+			setobjectxyperm (LOCALID_DEVON_CORP_GREETER, 1, 5)
 		}
 		else {
 			setflag(FLAG_TEMP_1)
@@ -97,10 +97,10 @@ mapscripts RustboroCity_DevonCorp_1F_MapScripts {
 		if (var(VAR_LOOKER_ROCKET) == 3) {
 			getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
 			if (var(VAR_TEMP_0) == 13) {
-				setobjectxyperm (GREETER, 21, 6)
+				setobjectxyperm (LOCALID_DEVON_CORP_GREETER, 21, 6)
 			}
 			else {
-				setobjectxyperm (GREETER, 20, 6)
+				setobjectxyperm (LOCALID_DEVON_CORP_GREETER, 20, 6)
 			}
 			savebgm (MUS_HG_ROCKET_TAKEOVER)
 		}
@@ -135,22 +135,22 @@ mapscripts RustboroCity_DevonCorp_1F_MapScripts {
 
 script Devoncorp_RocketEntrance {
 	msgbox("Iyaaaaa!!")
-	applymovement (GREETER, GreeterRun)
+	applymovement (LOCALID_DEVON_CORP_GREETER, GreeterRun)
 	waitmovement (0)
 	closemessage
-	applymovement (GREETER, Common_Movement_WalkInPlaceFasterDown)
+	applymovement (LOCALID_DEVON_CORP_GREETER, Common_Movement_WalkInPlaceFasterDown)
 	waitmovement (0)
 	playse (SE_PIN)
-	applymovement (GREETER, Common_Movement_ExclamationMark)
+	applymovement (LOCALID_DEVON_CORP_GREETER, Common_Movement_ExclamationMark)
 	waitmovement (0)
 	delay (60)
-	applymovement (GREETER, Common_Movement_WalkDown)
+	applymovement (LOCALID_DEVON_CORP_GREETER, Common_Movement_WalkDown)
 	waitmovement (0)
 	msgbox(format("Oh! Please, you've got to help!\pA group of jackbooted thugs stormed in\nand went upstairs!\pI've got friends up there in other\ndepartments!\lOh no…"), MSGBOX_AUTOCLOSE)
-	applymovement (GREETER, GreeterRun)
+	applymovement (LOCALID_DEVON_CORP_GREETER, GreeterRun)
 	waitmovement (0)
-	setobjectxy (GREETER, 1, 5)
-	applymovement (GREETER, Common_Movement_WalkInPlaceFasterDown)
+	setobjectxy (LOCALID_DEVON_CORP_GREETER, 1, 5)
+	applymovement (LOCALID_DEVON_CORP_GREETER, Common_Movement_WalkInPlaceFasterDown)
 	waitmovement (0)
 	addobject (LOOKER_DEVONCORP_1F)
 	switch (var(VAR_TEMP_0)) {

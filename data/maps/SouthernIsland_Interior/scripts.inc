@@ -90,7 +90,7 @@ SouthernIsland_Interior_EventScript_TryLatiEncounter::
 # 58 "data/maps/SouthernIsland_Interior/scripts.pory"
 	special SpawnCameraObject
 # 59 "data/maps/SouthernIsland_Interior/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp3
+	applymovement LOCALID_CAMERA, Common_Movement_WalkUp3
 # 60 "data/maps/SouthernIsland_Interior/scripts.pory"
 	waitmovement 0
 # 61 "data/maps/SouthernIsland_Interior/scripts.pory"
@@ -108,7 +108,7 @@ SouthernIsland_Interior_EventScript_TryLatiEncounter::
 # 67 "data/maps/SouthernIsland_Interior/scripts.pory"
 	delay 30
 # 68 "data/maps/SouthernIsland_Interior/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, SouthernIsland_Interior_Movement_CameraPanDown
+	applymovement LOCALID_CAMERA, SouthernIsland_Interior_Movement_CameraPanDown
 # 69 "data/maps/SouthernIsland_Interior/scripts.pory"
 	applymovement 2, SouthernIsland_Interior_Movement_LatiApproach
 # 70 "data/maps/SouthernIsland_Interior/scripts.pory"

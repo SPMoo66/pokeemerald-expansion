@@ -1,9 +1,9 @@
-const LOCALID_MAGMA_GRUNT_1 = 5
-const LOCALID_COURTNEY = 6
-const LOCALID_ARCHIE = 7
-const LOCALID_AQUA_GRUNT_1 = 8
-const LOCALID_AQUA_GRUNT_2 = 9
-const LOCALID_RIVAL = 11
+const LOCALID_METEOR_FALLS_MAGMA_GRUNT_1 = 5
+const LOCALID_METEOR_FALLS_COURTNEY = 6
+const LOCALID_METEOR_FALLS_ARCHIE = 7
+const LOCALID_METEOR_FALLS_AQUA_GRUNT_1 = 8
+const LOCALID_METEOR_FALLS_AQUA_GRUNT_2 = 9
+const LOCALID_METEOR_FALLS_RIVAL = 11
 
 mapscripts MeteorFalls_1F_1R_MapScripts {
 	MAP_SCRIPT_ON_LOAD {
@@ -26,24 +26,24 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 	lockall
 	playbgm (MUS_ENCOUNTER_MAGMA, FALSE)
 	special (SpawnCameraObject)
-	applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkDown2)
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+	applymovement (LOCALID_CAMERA, Common_Movement_WalkDown2)
+	applymovement (LOCALID_PLAYER, Common_Movement_FaceDown)
 	waitmovement (0)
 	delay (30)
-	applymovement (LOCALID_AQUA_GRUNT_1, Common_Movement_WalkInPlaceDown)
+	applymovement (LOCALID_METEOR_FALLS_AQUA_GRUNT_1, Common_Movement_WalkInPlaceDown)
 	waitmovement (0)
 	speakername (CommonText_MagmaGrunt)
 	msgbox ("Hehehe!\p"
 			"With this Meteorite, that thing in\n"
 			"Mt. Chimney will…")
 	closemessage
-	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterUp)
-	applymovement (LOCALID_COURTNEY, Common_Movement_WalkInPlaceFasterUp)
+	applymovement (LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterUp)
+	applymovement (LOCALID_METEOR_FALLS_COURTNEY, Common_Movement_WalkInPlaceFasterUp)
 	waitmovement (0)
 	playse (SE_PIN)
-	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_ExclamationMark)
+	applymovement (LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_ExclamationMark)
 	waitmovement (0)
-	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_Delay48)
+	applymovement (LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_Delay48)
 	waitmovement (0)
 	speakername (CommonText_MagmaGrunt)
 	msgbox ("Heh?\p"
@@ -51,24 +51,24 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 			"in the way of Team Magma, don't\l"
 			"expect any mercy!")
 	closemessage
-	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkRight)
+	applymovement (LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkRight)
 	waitmovement (0)
-	applymovement (LOCALID_COURTNEY, Common_Movement_WalkInPlaceUp)
+	applymovement (LOCALID_METEOR_FALLS_COURTNEY, Common_Movement_WalkInPlaceUp)
 	waitmovement (0)
 	speakername (CommonText_Courtney)
 	msgbox ("Hold on…")
-	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceDown)
+	applymovement (LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceDown)
 	speakername (CommonText_Courtney)
 	msgbox ("I think you're going to need my help.")
 	closemessage
 	speakername (CommonText_MagmaGrunt)
 	msgbox ("Tch… fine.")
-	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceRight)
+	applymovement (LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceRight)
 	waitmovement (0)
 	closemessage
 	call (Common_EventScript_SetupRivalGfxId)
-	addobject (LOCALID_RIVAL)
-	applymovement (LOCALID_RIVAL, MeteorFalls_1F_1R_Movement_RivalRunsIn)
+	addobject (LOCALID_METEOR_FALLS_RIVAL)
+	applymovement (LOCALID_METEOR_FALLS_RIVAL, MeteorFalls_1F_1R_Movement_RivalRunsIn)
 	waitmovement (0)
 	checkplayergender
 	if (var(VAR_RESULT) == MALE ) {
@@ -81,14 +81,14 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 		msgbox ("{PLAYER}!\n"
 				"I'm with you!")
 	}
-	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceRight)
+	applymovement (LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceRight)
 	waitmovement (0)
 	speakername (CommonText_MagmaGrunt)
 	msgbox ("Courtney! Help me here!")
 	closemessage
-	applymovement (LOCALID_RIVAL, MeteorFalls_1F_1R_Movement_RivalBeforeBattle)
-	applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceUp)
-	applymovement (LOCALID_COURTNEY, Common_Movement_WalkUp2)
+	applymovement (LOCALID_METEOR_FALLS_RIVAL, MeteorFalls_1F_1R_Movement_RivalBeforeBattle)
+	applymovement (LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceUp)
+	applymovement (LOCALID_METEOR_FALLS_COURTNEY, Common_Movement_WalkUp2)
 	waitmovement (0)
 	special (RemoveCameraObject)
 	special (SavePlayerParty)
@@ -109,20 +109,20 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 				"You're badly mistaken if you think you\n"
 				"can have your way with the world!")
 			closemessage
-			applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
-			applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterLeft)
-			applymovement (LOCALID_COURTNEY, Common_Movement_WalkInPlaceFasterLeft)
-			applymovement (LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterLeft)
+			applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
+			applymovement (LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterLeft)
+			applymovement (LOCALID_METEOR_FALLS_COURTNEY, Common_Movement_WalkInPlaceFasterLeft)
+			applymovement (LOCALID_METEOR_FALLS_RIVAL, Common_Movement_WalkInPlaceFasterLeft)
 			waitmovement (0)
-			addobject (LOCALID_ARCHIE)
-			addobject (LOCALID_AQUA_GRUNT_1)
-			addobject (LOCALID_AQUA_GRUNT_2)
+			addobject (LOCALID_METEOR_FALLS_ARCHIE)
+			addobject (LOCALID_METEOR_FALLS_AQUA_GRUNT_1)
+			addobject (LOCALID_METEOR_FALLS_AQUA_GRUNT_2)
 			playbgm (MUS_ENCOUNTER_AQUA, FALSE)
-			applymovement (LOCALID_ARCHIE, Common_Movement_WalkRight6)
-			applymovement (LOCALID_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGruntArrive)
-			applymovement (LOCALID_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGruntArrive)
+			applymovement (LOCALID_METEOR_FALLS_ARCHIE, Common_Movement_WalkRight6)
+			applymovement (LOCALID_METEOR_FALLS_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGruntArrive)
+			applymovement (LOCALID_METEOR_FALLS_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGruntArrive)
 			waitmovement (0)
-			applymovement (LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterLeft)
+			applymovement (LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterLeft)
 			waitmovement (0)
 			special (SpawnCameraObject)
 			speakername (CommonText_MagmaGrunt)
@@ -136,16 +136,16 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 					"Hehehe! Be seeing you, you Team\n"
 					"Aqua dingbats!")
 			closemessage
-			applymovement (OBJ_EVENT_ID_PLAYER, MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay)
-			applymovement (OBJ_EVENT_ID_CAMERA, MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay)
-			applymovement (LOCALID_RIVAL, MeteorFalls_1F_1R_Movement_PushRivalOutOfWay)
-			applymovement (LOCALID_MAGMA_GRUNT_1, MeteorFalls_1F_1R_Movement_MagmaGrunt1Exit)
-			applymovement (LOCALID_COURTNEY, MeteorFalls_1F_1R_Movement_CourtneyExit)
+			applymovement (LOCALID_PLAYER, MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay)
+			applymovement (LOCALID_CAMERA, MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay)
+			applymovement (LOCALID_METEOR_FALLS_RIVAL, MeteorFalls_1F_1R_Movement_PushRivalOutOfWay)
+			applymovement (LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, MeteorFalls_1F_1R_Movement_MagmaGrunt1Exit)
+			applymovement (LOCALID_METEOR_FALLS_COURTNEY, MeteorFalls_1F_1R_Movement_CourtneyExit)
 			waitmovement (0)
-			removeobject (LOCALID_MAGMA_GRUNT_1)
-			removeobject (LOCALID_COURTNEY)
-			applymovement (LOCALID_RIVAL, Common_Movement_FaceDown)
-			applymovement (LOCALID_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieApproachPlayer)
+			removeobject (LOCALID_METEOR_FALLS_MAGMA_GRUNT_1)
+			removeobject (LOCALID_METEOR_FALLS_COURTNEY)
+			applymovement (LOCALID_METEOR_FALLS_RIVAL, Common_Movement_FaceDown)
+			applymovement (LOCALID_METEOR_FALLS_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieApproachPlayer)
 			waitmovement (0)
 			speakername (CommonText_Archie)
 			msgbox ("Didn't I see you before?\n"
@@ -162,43 +162,43 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 					"They are the rivals to us,\n"
 					"the sea-loving Team Aqua!")
 			closemessage
-			applymovement (LOCALID_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1ApproachArchie)
-			applymovement (LOCALID_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2ApproachArchie)
+			applymovement (LOCALID_METEOR_FALLS_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1ApproachArchie)
+			applymovement (LOCALID_METEOR_FALLS_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2ApproachArchie)
 			waitmovement (0)
 			speakername (CommonText_AquaGrunt)
 			msgbox ("Boss, we should give chase to\n"
 					"Team Magma…")
-			applymovement (LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterDown)
+			applymovement (LOCALID_METEOR_FALLS_ARCHIE, Common_Movement_WalkInPlaceFasterDown)
 			waitmovement (0)
 			speakername (CommonText_Archie)
 			msgbox ("Yes, yes, we must!\n"
 					"We've got to hurry.\p"
 					"There's no telling what Team Magma\n"
 					"will do at Mt. Chimney!")
-			applymovement (LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterLeft)
+			applymovement (LOCALID_METEOR_FALLS_ARCHIE, Common_Movement_WalkInPlaceFasterLeft)
 			waitmovement (0)
 			speakername (CommonText_Archie)
 			msgbox ("{PLAYER}, you should keep\n"
 					"an eye out for Team Magma, too.\p"
 					"Farewell!")
 			closemessage
-			applymovement (LOCALID_ARCHIE, Common_Movement_WalkRight7)
-			applymovement (LOCALID_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1Exit)
-			applymovement (LOCALID_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2Exit)
+			applymovement (LOCALID_METEOR_FALLS_ARCHIE, Common_Movement_WalkRight7)
+			applymovement (LOCALID_METEOR_FALLS_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1Exit)
+			applymovement (LOCALID_METEOR_FALLS_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2Exit)
 			waitmovement (0)
 			fadedefaultbgm
-			removeobject (LOCALID_ARCHIE)
-			removeobject (LOCALID_AQUA_GRUNT_1)
-			removeobject (LOCALID_AQUA_GRUNT_2)
+			removeobject (LOCALID_METEOR_FALLS_ARCHIE)
+			removeobject (LOCALID_METEOR_FALLS_AQUA_GRUNT_1)
+			removeobject (LOCALID_METEOR_FALLS_AQUA_GRUNT_2)
 			setflag (FLAG_HIDE_ROUTE_112_TEAM_MAGMA)
 			setflag (FLAG_MET_ARCHIE_METEOR_FALLS)
 			setflag (FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT)
 			setflag (FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA)
 			setvar (VAR_METEOR_FALLS_STATE, 1)
-			applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp2)
+			applymovement (LOCALID_CAMERA, Common_Movement_WalkUp2)
 			waitmovement (0)
 			special (RemoveCameraObject)
-			applymovement (LOCALID_RIVAL, MeteorFalls_1F_1R_Movement_RivalApproach)
+			applymovement (LOCALID_METEOR_FALLS_RIVAL, MeteorFalls_1F_1R_Movement_RivalApproach)
 			waitmovement (0)
 			checkplayergender
 			if (var(VAR_RESULT) == MALE ) {
@@ -222,9 +222,9 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 			closemessage
 			giveitem (ITEM_BOTTLE_CAP)
 			closemessage
-			applymovement (LOCALID_RIVAL, Common_Movement_WalkRight7)
+			applymovement (LOCALID_METEOR_FALLS_RIVAL, Common_Movement_WalkRight7)
 			waitmovement (0)
-			removeobject (LOCALID_RIVAL)
+			removeobject (LOCALID_METEOR_FALLS_RIVAL)
 			releaseall
 			end
 		default:

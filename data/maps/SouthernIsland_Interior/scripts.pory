@@ -1,4 +1,4 @@
-const LOCALID_LATI = 2
+const LOCALID_SOUTHERN_ISLAND_LATI = 2
 
 mapscripts SouthernIsland_Interior_MapScripts {
 	MAP_SCRIPT_ON_RESUME: SouthernIsland_OnResume
@@ -9,7 +9,7 @@ script SouthernIsland_OnResume {
 	if (flag(FLAG_SYS_CTRL_OBJ_DELETE) == true) {
 		specialvar (VAR_RESULT, GetBattleOutcome)
 		if (var(VAR_RESULT) != B_OUTCOME_CAUGHT) {
-			removeobject (LOCALID_LATI)
+			removeobject (LOCALID_SOUTHERN_ISLAND_LATI)
 		}
 	}
 }
@@ -56,21 +56,21 @@ script SouthernIsland_Interior_EventScript_TryLatiEncounter {
 	else {
 		setflag (FLAG_TEMP_2)
 		special (SpawnCameraObject)
-		applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkUp3)
+		applymovement (LOCALID_CAMERA, Common_Movement_WalkUp3)
 		waitmovement (0)
 		delay (50)
 		waitse
 		playmoncry (VAR_TEMP_4, CRY_MODE_NORMAL)
 		delay (30)
 		waitmoncry
-		addobject (LOCALID_LATI)
+		addobject (LOCALID_SOUTHERN_ISLAND_LATI)
 		delay (30)
-		applymovement (OBJ_EVENT_ID_CAMERA, SouthernIsland_Interior_Movement_CameraPanDown)
-		applymovement (LOCALID_LATI, SouthernIsland_Interior_Movement_LatiApproach)
+		applymovement (LOCALID_CAMERA, SouthernIsland_Interior_Movement_CameraPanDown)
+		applymovement (LOCALID_SOUTHERN_ISLAND_LATI, SouthernIsland_Interior_Movement_LatiApproach)
 		waitmovement (0)
 		delay (50)
 		special (RemoveCameraObject)
-		setvar(VAR_LAST_TALKED, LOCALID_LATI)
+		setvar(VAR_LAST_TALKED, LOCALID_SOUTHERN_ISLAND_LATI)
 		if (flag(FLAG_TEMP_3) == true) {
 			seteventmon (SPECIES_LATIAS, 60, ITEM_SOUL_DEW)
 		}

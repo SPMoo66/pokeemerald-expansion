@@ -1,6 +1,3 @@
-.set LOCALID_ATTENDANT, 1
-.set LOCALID_HINT_GIVER, 2
-
 BattleFrontier_BattlePyramidLobby_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattlePyramidLobby_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, BattleFrontier_BattleDomeLobby_OnWarp
@@ -198,7 +195,7 @@ BattleFrontier_BattlePyramidLobby_EventScript_EndCancelChallenge::
 
 BattleFrontier_BattlePyramidLobby_EventScript_HintGiver::
 	lockall
-	applymovement LOCALID_HINT_GIVER, Common_Movement_FacePlayer
+	applymovement LOCALID_PYRAMID_LOBBY_HINT_GIVER, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox BattleFrontier_BattlePyramidLobby_Text_TellYouWhatMisfortunesAwait, MSGBOX_DEFAULT
 	call BattleFrontier_BattlePyramidLobby_EventScript_GiveHint
@@ -360,8 +357,8 @@ BattleFrontier_BattlePyramidLobby_EventScript_ShowResults::
 	end
 
 BattleFrontier_BattlePyramidLobby_EventScript_WalkToPanelAndReceiveBag::
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePyramidLobby_Movement_AttendantWalkToPanel
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp7
+	applymovement LOCALID_PYRAMID_LOBBY_ATTENDANT, BattleFrontier_BattlePyramidLobby_Movement_AttendantWalkToPanel
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp7
 	waitmovement 0
 	msgbox BattleFrontier_BattlePyramidLobby_Text_WeWillHoldBagForSafekeeping, MSGBOX_DEFAULT
 	pyramid_get PYRAMID_DATA_WIN_STREAK
@@ -378,9 +375,9 @@ BattleFrontier_BattlePyramidLobby_EventScript_ReceiveBattleBag::
 	waitse
 	msgbox BattleFrontier_BattlePyramidLobby_Text_StepOnFloorPanel, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePyramidLobby_Movement_AttendantMoveAside
+	applymovement LOCALID_PYRAMID_LOBBY_ATTENDANT, BattleFrontier_BattlePyramidLobby_Movement_AttendantMoveAside
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp2
 	waitmovement 0
 	return
 

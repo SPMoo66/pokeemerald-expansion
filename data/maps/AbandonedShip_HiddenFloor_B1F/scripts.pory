@@ -21,7 +21,7 @@ mapscripts AbandonedShip_HiddenFloor_B1F_MapScripts {
 script AbandonedShip_HiddenFloor_B1F_Meltan {
 	if (!flag(FLAG_ABANDONEDSHIP_SEEN_MELTAN)) {
 		lockall
-		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
 		waitmovement (0)
 		delay (60)
 		applymovement (MELTAN, Common_Movement_WalkInPlaceLeft)

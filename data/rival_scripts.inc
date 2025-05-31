@@ -503,7 +503,7 @@ Rival_Scene03_5:
 # 286 "data/rival_scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 287 "data/rival_scripts.pory"
-	setobjectxy OBJ_EVENT_ID_PLAYER, 11, 19
+	setobjectxy LOCALID_PLAYER, 11, 19
 # 288 "data/rival_scripts.pory"
 	setvar VAR_0x8004, 11
 # 289 "data/rival_scripts.pory"
@@ -541,7 +541,7 @@ Rival_Scene03_5:
 # 305 "data/rival_scripts.pory"
 	setobjectxy RIVAL_RUSTBORO, 0, 6
 # 306 "data/rival_scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
 # 307 "data/rival_scripts.pory"
 	fadescreen FADE_FROM_BLACK
 # 308 "data/rival_scripts.pory"

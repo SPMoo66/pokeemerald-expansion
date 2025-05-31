@@ -127,7 +127,7 @@ CableClub_EventScript_CloseLinkAndExitLinkRoom::
 	goto_if_eq VAR_0x8007, 0, CableClub_EventScript_PlayerExitLinkRoom
 	applymovement VAR_0x8007, Common_Movement_FaceLeft
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown2
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDown2
 	waitmovement 0
 	applymovement VAR_0x8007, Common_Movement_FaceDown
 	waitmovement 0
@@ -147,7 +147,7 @@ CableClub_EventScript_PlayerExitTradeCenter::
 	special CloseLink
 	setvar VAR_CABLE_CLUB_STATE, 0
 	goto_if_eq VAR_0x8007, 0, CableClub_EventScript_PlayerExitLinkRoom
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
 	waitmovement 0
 	applymovement VAR_0x8007, Common_Movement_FaceLeft
 	waitmovement 0
@@ -167,7 +167,7 @@ CableClub_EventScript_ExitRecordCorner::
 CableClub_EventScript_PlayerExitRecordCorner::
 	special CloseLink
 	setvar VAR_CABLE_CLUB_STATE, 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown2
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDown2
 	waitmovement 0
 	goto_if_eq VAR_0x8007, 0, CableClub_EventScript_ExitRecordCornerRet
 	applymovement VAR_0x8007, Common_Movement_FaceDown
@@ -188,7 +188,7 @@ CableClub_EventScript_ExitUnionRoom::
 CableClub_EventScript_PlayerExitUnionRoom::
 	setvar VAR_CABLE_CLUB_STATE, 0
 	goto_if_eq VAR_0x8007, 0, CableClub_EventScript_PlayerExitLinkRoom
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
 	waitmovement 0
 	applymovement VAR_0x8007, Common_Movement_FaceLeft
 	waitmovement 0
@@ -202,24 +202,24 @@ CableClub_EventScript_TrainerCardDataOverwritten::
 	delay 60
 	message CableClub_Text_HopeToSeeYouAgain
 	waitmessage
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown2
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDown2
 	waitmovement 0
 	applymovement VAR_0x8007, Common_Movement_FaceDown
 	waitmovement 0
 	return
 
 CableClub_EventScript_PlayerExitLinkRoom::
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown2
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDown2
 	waitmovement 0
 	return
 
 CableClub_EventScript_Tutorial::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox CableClub_Text_FirstTimeRightThisWay, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp2
 	waitmovement 0
 	delay 30
 	msgbox CableClub_Text_ExplainWirelessClubFirstTime, MSGBOX_DEFAULT
@@ -329,13 +329,13 @@ CableClub_EventScript_EnterColosseum::
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceLeft
 	waitmovement 0
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerApproachLinkRoomLeft
+	applymovement LOCALID_PLAYER, Movement_PlayerApproachLinkRoomLeft
 	waitmovement 0
 	opendoor 9, 1
 	waitdooranim
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat LOCALID_PLAYER, 0
 	closedoor 9, 1
 	waitdooranim
 	release
@@ -417,13 +417,13 @@ CableClub_EventScript_EnterTradeCenter::
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceLeft
 	waitmovement 0
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerApproachLinkRoomLeft
+	applymovement LOCALID_PLAYER, Movement_PlayerApproachLinkRoomLeft
 	waitmovement 0
 	opendoor 9, 1
 	waitdooranim
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat LOCALID_PLAYER, 0
 	closedoor 9, 1
 	waitdooranim
 	release
@@ -482,13 +482,13 @@ CableClub_EventScript_EnterRecordCorner::
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceLeft
 	waitmovement 0
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerApproachLinkRoomLeft
+	applymovement LOCALID_PLAYER, Movement_PlayerApproachLinkRoomLeft
 	waitmovement 0
 	opendoor 9, 1
 	waitdooranim
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat LOCALID_PLAYER, 0
 	closedoor 9, 1
 	waitdooranim
 	release
@@ -824,13 +824,13 @@ CableClub_EventScript_EnterUnionRoom::
 	delay 60
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceLeft
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerApproachLinkRoomLeft
+	applymovement LOCALID_PLAYER, Movement_PlayerApproachLinkRoomLeft
 	waitmovement 0
 	opendoor 5, 1
 	waitdooranim
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat LOCALID_PLAYER, 0
 	closedoor 5, 1
 	waitdooranim
 	special Script_ResetUnionRoomTrade
@@ -1124,13 +1124,13 @@ CableClub_EventScript_EnterWirelessLinkRoom::
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceLeft
 	waitmovement 0
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerApproachLinkRoomLeft
+	applymovement LOCALID_PLAYER, Movement_PlayerApproachLinkRoomLeft
 	waitmovement 0
 	opendoor 9, 1
 	waitdooranim
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat LOCALID_PLAYER, 0
 	closedoor 9, 1
 	waitdooranim
 	release
@@ -1310,9 +1310,9 @@ MossdeepCity_GameCorner_1F_EventScript_EnterMinigameRoom::
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceLeft
 	waitmovement 0
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerEnterMinigameRoom
+	applymovement LOCALID_PLAYER, Movement_PlayerEnterMinigameRoom
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat LOCALID_PLAYER, 0
 	release
 	waitstate
 	end

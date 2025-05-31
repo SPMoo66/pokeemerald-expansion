@@ -45,7 +45,7 @@ GraniteCave_StevensRoom_EventScript_Steven_1:
 # 32 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	applymovement 1, Common_Movement_ExclamationMark
 # 33 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
 # 34 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	delay 30
 # 35 "data/maps/GraniteCave_StevensRoom/scripts.pory"
@@ -168,7 +168,7 @@ GraniteCave_StevensRoom_EventScript_Steven_7:
 
 GraniteCave_StevensRoom_EventScript_Steven_10:
 # 42 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	goto GraniteCave_StevensRoom_EventScript_Steven_9
 
 GraniteCave_StevensRoom_EventScript_Steven_14:
@@ -191,7 +191,7 @@ GraniteCave_StevensRoom_EventScript_Steven_16:
 
 GraniteCave_StevensRoom_EventScript_Steven_18:
 # 78 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, GraniteCave_PlayerPushed
+	applymovement LOCALID_PLAYER, GraniteCave_PlayerPushed
 # 79 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft
 	goto GraniteCave_StevensRoom_EventScript_Steven_17
@@ -203,12 +203,12 @@ GraniteCave_StevensRoom_EventScript_Steven_20:
 
 GraniteCave_StevensRoom_EventScript_Steven_24:
 # 87 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkFastUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkFastUp
 	goto GraniteCave_StevensRoom_EventScript_Steven_23
 
 GraniteCave_StevensRoom_EventScript_Steven_25:
 # 90 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, GraniteCave_PlayerRunUp
+	applymovement LOCALID_PLAYER, GraniteCave_PlayerRunUp
 # 91 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft
 	goto GraniteCave_StevensRoom_EventScript_Steven_23
@@ -296,7 +296,7 @@ GraniteCave_StevensRoom_EventScript_Steven_28:
 # 147 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	applymovement 1, Common_Movement_WalkInPlaceFasterRight
 # 148 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 GraniteCave_StevensRoom_EventScript_Steven_31:
 # 150 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	speakername CommonText_Steven
@@ -344,7 +344,7 @@ GraniteCave_StevensRoom_EventScript_Steven_32:
 # 143 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	applymovement 1, Common_Movement_WalkInPlaceFasterLeft
 # 144 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	goto GraniteCave_StevensRoom_EventScript_Steven_31
 
 

@@ -4,14 +4,14 @@ script RustboroCity_EventScript_Looker {
 	addobject (LOOKER_RUSTBORO)
 	setobjectxy (LOOKER_RUSTBORO, 21, 15)
 	special (SpawnCameraObject)
-	applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight2)
+	applymovement (LOCALID_CAMERA, Common_Movement_WalkRight2)
 	waitmovement (0)
 	playbgm (MUS_PL_LOOKER, FALSE)
 	applymovement (LOOKER_RUSTBORO, RustboroCity_LookerMove)
 	waitmovement (0)
 	removeobject (LOOKER_RUSTBORO)
 	setvar (VAR_RUSTBORO_CITY_STATE, 8)
-	applymovement (OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft2)
+	applymovement (LOCALID_CAMERA, Common_Movement_WalkLeft2)
 	waitmovement (0)
 	special (RemoveCameraObject)
 	clearflag (FLAG_SAFE_FOLLOWER_MOVEMENT)
@@ -50,7 +50,7 @@ script SlateportCity_EventScript_Looker {
 	playse (SE_SUPER_EFFECTIVE)
 	applymovement (LOOKER_SLATEPORT, SlateportCity_LookerMove2)
 	waitmovement (0)
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
 	waitmovement (0)
 	speakername (CommonText_Q)
 	msgbox (format ("Ah!\n"
@@ -214,15 +214,15 @@ script TrainerHill_Looker1 {
 	msgbox (format ("It is good that you are here.\p"
 					"Follow me. We cannot squander any time."))
 	closemessage
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkUp)
 	waitmovement (0)
 	applymovement (LOOKER_TRAINERHILL, Common_Movement_WalkLeft)
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkUp)
 	waitmovement (0)
 	applymovement (LOOKER_TRAINERHILL, Common_Movement_WalkLeft6)
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft6)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkLeft6)
 	waitmovement (0)
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkLeft)
 	applymovement (LOOKER_TRAINERHILL, Common_Movement_WalkUp)
 	waitmovement (0)
 	applymovement (LOOKER_TRAINERHILL, Common_Movement_WalkLeft)
@@ -327,9 +327,9 @@ const LOOKER_ROCKETREFUGE_B1F = 8
 
 script RocketRefuge_B1F_Looker {
 	lock
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight)
 	waitmovement (0)
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft)
 	waitmovement (0)
 	delay (10)
 	playse (SE_EXIT)
@@ -358,7 +358,7 @@ script RocketRefuge_B1F_Looker {
 	waitmovement (0)
 	playbgm (MUS_PL_LOOKER, FALSE)
 	delay (40)
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
 	applymovement (LOOKER_ROCKETREFUGE_B1F, Common_Movement_WalkFastDown6)
 	waitmovement (0)
 	speakername (CommonText_Looker)
@@ -466,20 +466,20 @@ script RocketRefuge_B3F_Looker {
 	if (var(VAR_TEMP_0) == 12) {
 		applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkUp4)
 		waitmovement (0)
-		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft)
 		applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkRight)
 	}
 	elif (var(VAR_TEMP_0) == 13) {
 		if (var(VAR_TEMP_1) == 5) {
 			applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkUp5)
 			waitmovement (0)
-		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft)
 			applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkRight2)
 		}
 		else {
 			applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkUp3)
 			waitmovement (0)
-		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft)
 			applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkRight2)
 		}
 	}
@@ -488,7 +488,7 @@ script RocketRefuge_B3F_Looker {
 		waitmovement (0)
 		applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkRight4)
 		waitmovement (0)
-		applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
 		applymovement (LOOKER_ROCKETREFUGE_B3F, Common_Movement_WalkInPlaceUp)
 	}
 	waitmovement (0)

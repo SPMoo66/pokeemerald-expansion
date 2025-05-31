@@ -1,6 +1,6 @@
 PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles::
 # 2 "data/scripts/elite_four.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_Delay32
+	applymovement LOCALID_PLAYER, Common_Movement_Delay32
 # 3 "data/scripts/elite_four.pory"
 	waitmovement 0
 # 4 "data/scripts/elite_four.pory"
@@ -36,7 +36,7 @@ PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles::
 
 PokemonLeague_EliteFour_EventScript_WalkInCloseDoor::
 # 22 "data/scripts/elite_four.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp6
 # 23 "data/scripts/elite_four.pory"
 	waitmovement 0
 # 24 "data/scripts/elite_four.pory"

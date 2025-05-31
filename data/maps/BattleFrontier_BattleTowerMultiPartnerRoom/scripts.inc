@@ -1,5 +1,3 @@
-.set LOCALID_ATTENDANT, 1
-
 BattleFrontier_BattleTowerMultiPartnerRoom_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, BattleFrontier_BattleTowerMultiPartnerRoom_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, BattleFrontier_BattleTowerMultiPartnerRoom_OnTransition
@@ -35,7 +33,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_ChosePartner::
 	setvar VAR_OBJ_GFX_ID_7, OBJ_EVENT_GFX_BOY_1
 	setvar VAR_TEMP_1, 1
 	setvar VAR_TEMP_3, 1
-	setobjectxyperm LOCALID_ATTENDANT, 10, 2
+	setobjectxyperm LOCALID_TOWER_PARTNER_ROOM_ATTENDANT, 10, 2
 	end
 
 BattleFrontier_BattleTowerMultiPartnerRoom_OnWarp:
@@ -43,7 +41,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_OnWarp:
 	.2byte 0
 
 BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_TurnPlayerNorth::
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 
 BattleFrontier_BattleTowerMultiPartnerRoom_OnFrame:
@@ -59,12 +57,12 @@ BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_ExitRoom::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_EnterRoom::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDown
 	waitmovement 0
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleTowerMultiPartnerRoom_Movement_AttendantBlockExit
+	applymovement LOCALID_TOWER_PARTNER_ROOM_ATTENDANT, BattleFrontier_BattleTowerMultiPartnerRoom_Movement_AttendantBlockExit
 	waitmovement 0
-	copyobjectxytoperm LOCALID_ATTENDANT
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	copyobjectxytoperm LOCALID_TOWER_PARTNER_ROOM_ATTENDANT
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox BattleFrontier_BattleTowerMultiPartnerRoom_Text_PleaseFindPartner, MSGBOX_DEFAULT
 	special HealPlayerParty
@@ -96,7 +94,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_QuitChallenge::
 BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_EnterElevator::
 	msgbox BattleFrontier_BattleTowerMultiPartnerRoom_Text_ThankYouForChoosingPartner, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_ATTENDANT, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_TOWER_PARTNER_ROOM_ATTENDANT, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	opendoor 10, 1
 	waitdooranim
@@ -109,8 +107,8 @@ BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_EnterElevator::
 	end
 
 BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_MoveToElevator::
-	applymovement LOCALID_ATTENDANT, Common_Movement_EnterHouse
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2Invis
+	applymovement LOCALID_TOWER_PARTNER_ROOM_ATTENDANT, Common_Movement_EnterHouse
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp2Invis
 	waitmovement 0
 	return
 

@@ -1,26 +1,24 @@
 raw `
-.set LOCALID_DEVON_EMPLOYEE, 2
-
 RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 	lockall
 	msgbox RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_DEVON_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeWalkOffscreen
+	applymovement LOCALID_DEVON_CORP_3F_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeWalkOffscreen
 	waitmovement 0
 	delay 80
-	applymovement LOCALID_DEVON_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeReturnToPlayer
+	applymovement LOCALID_DEVON_CORP_3F_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeReturnToPlayer
 	waitmovement 0
 	msgbox RustboroCity_DevonCorp_3F_Text_WordWithPresidentComeWithMe, MSGBOX_DEFAULT
 	closemessage
 	playbgm MUS_FOLLOW_ME, FALSE
-	applymovement LOCALID_DEVON_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_LeadPlayerToPresident
-	applymovement OBJ_EVENT_ID_PLAYER, RustboroCity_DevonCorp_3F_Movement_PlayerFollowToPresident
+	applymovement LOCALID_DEVON_CORP_3F_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_LeadPlayerToPresident
+	applymovement LOCALID_PLAYER, RustboroCity_DevonCorp_3F_Movement_PlayerFollowToPresident
 	waitmovement 0
 	msgbox RustboroCity_DevonCorp_3F_Text_PleaseGoAhead, MSGBOX_DEFAULT
 	closemessage
 	fadedefaultbgm
-	applymovement LOCALID_DEVON_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeFaceDesk
-	applymovement OBJ_EVENT_ID_PLAYER, RustboroCity_DevonCorp_3F_Movement_PlayerApproachDesk
+	applymovement LOCALID_DEVON_CORP_3F_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeFaceDesk
+	applymovement LOCALID_PLAYER, RustboroCity_DevonCorp_3F_Movement_PlayerApproachDesk
 	waitmovement 0
 	speakername (CommonText_MrStone)
 	msgbox RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor, MSGBOX_DEFAULT
@@ -234,29 +232,25 @@ RustboroCity_DevonCorp_3F_Text_RareRocksDisplay:
 	.string "stones assembled by the President.$"
 `
 
-const LOCALID_DEVON_EMPLOYEE = 2
-const GIOVANNI = 4
-const LOOKER = 5
-
 mapscripts RustboroCity_DevonCorp_3F_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
 		if (var(VAR_DEVON_CORP_3F_STATE) == 0) {
-			setobjectxyperm (LOCALID_DEVON_EMPLOYEE, 3, 2)
-			setobjectmovementtype (LOCALID_DEVON_EMPLOYEE, MOVEMENT_TYPE_FACE_LEFT)
+			setobjectxyperm (LOCALID_DEVON_CORP_3F_EMPLOYEE, 3, 2)
+			setobjectmovementtype (LOCALID_DEVON_CORP_3F_EMPLOYEE, MOVEMENT_TYPE_FACE_LEFT)
 		}
 		clearflag (FLAG_DONT_TRANSITION_MUSIC)
 		if (var(VAR_LOOKER_ROCKET) != 5) {
 			setflag (FLAG_TEMP_1)
 		}
 		else {
-			setobjectxyperm (LOCALID_DEVON_EMPLOYEE, 2, 2)
+			setobjectxyperm (LOCALID_DEVON_CORP_3F_EMPLOYEE, 2, 2)
 			savebgm (MUS_HG_ROCKET_TAKEOVER)
 		}
 		setflag (FLAG_TEMP_2)
 	}
 	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
 		VAR_DEVON_CORP_3F_STATE, 0 {
-			turnobject (OBJ_EVENT_ID_PLAYER, DIR_EAST)
+			turnobject (LOCALID_PLAYER, DIR_EAST)
 		}
 	]
 	MAP_SCRIPT_ON_FRAME_TABLE [
@@ -335,14 +329,14 @@ script RustboroCity_DevonCorp_3F_EventScript_Giovanni {
 script RustboroCity_DevonCorp_3F_GiovanniDefeated {
 	clearflag (FLAG_TEMP_2)
 	clearflag (FLAG_CHALLENGING_TRAINER)
-	addobject (LOOKER)
+	addobject (LOOKER_DEVON_CORP_3F)
 	speakername (CommonText_Looker)
 	msgbox ("Not so fast!")
-	applymovement (LOOKER, Movement_LookerRun)
+	applymovement (LOOKER_DEVON_CORP_3F, Movement_LookerRun)
 	waitmovement (0)
-	applymovement (LOOKER, Common_Movement_WalkInPlaceFasterDown)
-	applymovement (GIOVANNI, Common_Movement_WalkInPlaceFasterUp)
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
+	applymovement (LOOKER_DEVON_CORP_3F, Common_Movement_WalkInPlaceFasterDown)
+	applymovement (GIOVANNI_DEVON_CORP_3F, Common_Movement_WalkInPlaceFasterUp)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
 	waitmovement (0)
 	speakername (CommonText_Giovanni)
 	msgbox( format( "Tch…\nThe police already?"))
@@ -360,7 +354,7 @@ script RustboroCity_DevonCorp_3F_GiovanniDefeated {
 }
 
 script RustboroCity_DevonCorp_3F_PresidentSaved {
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+	applymovement (LOCALID_PLAYER, Common_Movement_FaceRight)
 	waitmovement(0)
 	speakername (CommonText_MrStone)
 	msgbox( format( "{PLAYER}, I must thank you once again.\pYou've done a great deal for me and this company, no, the city of Rustboro itself.\pPlease, take this as a note of my appreciation, though small it may be."))

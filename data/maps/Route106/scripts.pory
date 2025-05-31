@@ -63,19 +63,19 @@ script Route106_ChallengeBallTutorial {
 	speakername (CommonText_Q)
 	msgbox ("Heeey!")
 	closemessage
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceRight)
 	applymovement (BIANCA, Route106_BiancaEnter)
 	waitmovement (0)
 	speakername (CommonText_Bianca)
 	msgbox (format ("{PLAYER}, it's good to see you again!\p"
 					"Oh! You've gotten a Badge! Wow! Amazing!\p"
 					"And that thing over there…"))
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft)
 	applymovement (BIANCA, Common_Movement_WalkInPlaceLeft)
 	waitmovement (0)
 	msgbox (format ("Those blue Pokéball looking things are actually really good items, but there just always seem to be really strong Pokémon nearby protecting them.\p"
 					"Most people just call them Challenge Balls!"))
-	applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceRight)
 	waitmovement (0)
 	msgbox (format ("They're usually super dangerous, but you're starting to look like you can handle yourself, {PLAYER}!\p"
 					"Give it a shot if you've got some time!\p"

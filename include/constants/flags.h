@@ -318,7 +318,7 @@
 #define FLAG_MET_RIVAL_IN_HOUSE_AFTER_LILYCOVE 0x125
 #define FLAG_EXCHANGED_SCANNER               0x126
 #define FLAG_KECLEON_FLED_FORTREE            0x127
-#define FLAG_UNUSED_0x128                    0x128 // Was for Petalburg City expanded Pokemart
+#define FLAG_CAUGHT_ZERAORA                  0x128 // Was for Petalburg City expanded Pokemart
 #define FLAG_RECEIVED_SITRUS_BERRY           0x129
 #define FLAG_RECEIVED_BELDUM                 0x12A
 #define FLAG_RECEIVED_FANCLUB_TM_THIS_WEEK   0x12B

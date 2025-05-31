@@ -1,6 +1,7 @@
 .set LOCALID_RIVAL, 16
 .set LOCALID_RIVAL_ON_BIKE, 25
 .set LOCALID_SCOTT, 43
+.set ZERAORA, 44
 
 Route119_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route119_OnResume
@@ -22,12 +23,22 @@ Route119_OnTransition:
 	call Common_EventScript_SetupRivalOnBikeGfxId
 	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 1, Route119_EventScript_MoveInstituteWorkersDownstairs
 	special SetRoute119Weather
+	setflag FLAG_TEMP_2
+	call_if_set FLAG_BADGE08_GET, Route119_EventScript_ZeraoraCaughtCheck
 	end
 
 Route119_EventScript_MoveInstituteWorkersDownstairs::
 	setflag FLAG_HIDE_WEATHER_INSTITUTE_2F_WORKERS
 	clearflag FLAG_HIDE_WEATHER_INSTITUTE_1F_WORKERS
 	setvar VAR_WEATHER_INSTITUTE_STATE, 2
+	return
+
+Route119_EventScript_ZeraoraCaughtCheck::
+	call_if_unset FLAG_CAUGHT_ZERAORA, Route119_EventScript_ShowZeraora
+	return
+
+Route119_EventScript_ShowZeraora::
+	clearflag FLAG_TEMP_2
 	return
 
 Route119_EventScript_RivalTrigger1::
@@ -623,3 +634,27 @@ Route119_Text_TrainerTipsDecoration:
 	.string "Pick your favorite items and create\n"
 	.string "your very own Secret Base exactly the\l"
 	.string "way you want.$"
+
+BattleZeraora::
+	lock
+	faceplayer
+	setvar VAR_LAST_TALKED, ZERAORA
+	playmoncry SPECIES_ZERAORA, CRY_MODE_ENCOUNTER
+	msgbox Text_ZeraoraCry, MSGBOX_DEFAULT
+	waitmoncry
+	seteventmon SPECIES_ZERAORA, 50
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	call_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, Zeraora_SetCaughtFlag
+	release
+	end
+
+Zeraora_SetCaughtFlag::
+	setflag FLAG_CAUGHT_ZERAORA
+	return
+
+Text_ZeraoraCry:
+	.string "Zaaawaiiii!$"

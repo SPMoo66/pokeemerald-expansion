@@ -234,75 +234,93 @@ BattleFrontier_BattleFactoryPreBattleRoom_EventScript_CommentOnOpponentType::
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesNormal::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInNormalType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_NormalType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFighting::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFightingType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_FightingType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFlying::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFlyingType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_FlyingType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesPoison::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPoisonType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_PoisonType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGround::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGroundType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_GroundType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesRock::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInRockType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_RockType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesBug::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInBugType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_BugType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGhost::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGhostType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_GhostType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesSteel::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSteelType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_SteelType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFire::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFireType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_FireType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesWater::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInWaterType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_WaterType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGrass::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGrassType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_GrassType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesElectric::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInElectricType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_ElectricType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesPsychic::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPsychicType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_PsychicType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesIce::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInIceType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_IceType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDragon::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDragonType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_DragonType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDark::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDarkType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_DarkType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFairy::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFairyType, MSGBOX_DEFAULT
+	bufferstring STR_VAR_1, CommonText_FairyType
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentHasNoMostCommonType::
@@ -474,77 +492,9 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_InvestigatedUpcomingOpponent:
 	.string "I've conducted a little investigation\n"
 	.string "about your upcoming opponent.$"
 
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInNormalType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSingleType:
 	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Normal type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFireType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Fire type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInWaterType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Water type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInElectricType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Electric type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGrassType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Grass type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInIceType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Ice type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFightingType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Fighting type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPoisonType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Poison type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGroundType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Ground type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFlyingType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Flying type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPsychicType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Psychic type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInBugType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Bug type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInRockType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Rock type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGhostType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Ghost type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDragonType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Dragon type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDarkType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Dark type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFairyType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the FAIRY type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSteelType:
-	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the Steel type.$"
+	.string "in the handling of the {STR_VAR_1} type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerHasNoClearFavorite:
 	.string "The Trainer appears to have no clear\n"

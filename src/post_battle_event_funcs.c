@@ -28,6 +28,7 @@ int GameClear(void)
     {
         gHasHallOfFameRecords = FALSE;
         FlagSet(FLAG_SYS_GAME_CLEAR);
+        FlagSet(FLAG_NEW_GAME_PLUS);
     }
 
     if (GetGameStat(GAME_STAT_FIRST_HOF_PLAY_TIME) == 0)

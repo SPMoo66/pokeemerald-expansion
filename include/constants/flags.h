@@ -1511,8 +1511,8 @@
 #define FLAG_CHALLENGING_TRAINER                    (SYSTEM_FLAGS + 0x88) // Set for challenging trainers so level sync does not scale them two levels lower like standard trainers
 #define FLAG_PREVENT_OVERWORLD_SPEEDUP              (SYSTEM_FLAGS + 0x89) // Was unused
 #define FLAG_SYS_SET_BATTLE_BGM                     (SYSTEM_FLAGS + 0x8A) // Was unused, set this flag when overriding battle BGM, store BGM in VAR_TEMP_F
+#define FLAG_NEW_GAME_PLUS                          (SYSTEM_FLAGS + 0x8B) // Set upon beating the Champion for the first time, carries with new games
 
-#define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
 #define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
 #define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
 #define FLAG_UNUSED_0x8EE                           (SYSTEM_FLAGS + 0x8E) // Unused Flag

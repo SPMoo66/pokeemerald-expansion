@@ -176,14 +176,14 @@ Debug_EventScript_Script_6::
 	end
 
 Debug_EventScript_Script_7::
-    cleartrainerflag TRAINER_CINDY_1
-    trainerbattle_single TRAINER_CINDY_1, gText_Blank, gText_Blank
+    cleartrainerflag TRAINER_MAY_ROUTE_119_MUDKIP
+    trainerbattle_single TRAINER_MAY_ROUTE_119_MUDKIP, gText_Blank, gText_Blank
 	release
 	end
 
 Debug_EventScript_Script_8::
-    cleartrainerflag TRAINER_WATTSON_1
-    trainerbattle_single TRAINER_WATTSON_1, gText_Blank, gText_Blank
+    cleartrainerflag TRAINER_BRENDAN_ROUTE_119_MUDKIP
+    trainerbattle_single TRAINER_BRENDAN_ROUTE_119_MUDKIP, gText_Blank, gText_Blank
 	release
 	end
 

@@ -52,27 +52,40 @@ void InitEventData(void)
 {
     s32 i = 0;
     s32 j = 0;
-    s32 k = 0;
+
+    // Save flags that carry over
     if (FlagGet(FLAG_EMIB_DEMO_1)) {
         i = 1;
     }
     if (FlagGet(FLAG_EMIB_DEMO_2)) {
-        j = 1;
+        i = 2;
     }
     if (FlagGet(FLAG_EMIB_DEMO_3)) {
-        k = 1;
+        i = 3;
     }
+    if (FlagGet(FLAG_NEW_GAME_PLUS)) {
+        j = 1;
+    }
+
     memset(gSaveBlock1Ptr->flags, 0, sizeof(gSaveBlock1Ptr->flags));
     memset(gSaveBlock1Ptr->vars, 0, sizeof(gSaveBlock1Ptr->vars));
     memset(sSpecialFlags, 0, sizeof(sSpecialFlags));
-    if (i == 1) {
+
+    // Enable flags that carry over
+    if (i == 3) {
+        FlagSet(FLAG_EMIB_DEMO_3);
+        FlagSet(FLAG_EMIB_DEMO_2);
+        FlagSet(FLAG_EMIB_DEMO_1);
+    }
+    else if (i == 2) {
+        FlagSet(FLAG_EMIB_DEMO_2);
+        FlagSet(FLAG_EMIB_DEMO_1);
+    }
+    else if (i == 1) {
         FlagSet(FLAG_EMIB_DEMO_1);
     }
     if (j == 1) {
-        FlagSet(FLAG_EMIB_DEMO_2);
-    }
-    if (k == 1) {
-        FlagSet(FLAG_EMIB_DEMO_3);
+        FlagSet(FLAG_NEW_GAME_PLUS);
     }
 }
 

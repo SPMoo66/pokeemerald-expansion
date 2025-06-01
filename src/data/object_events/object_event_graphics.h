@@ -479,6 +479,10 @@ const u16 gObjectEventPal_Twin[] = INCBIN_U16("graphics/object_events/palettes/t
 
 const u16 gObjectEventPal_Wallace[] = INCBIN_U16("graphics/object_events/palettes/wallace.gbapal");
 const u16 gObjectEventPal_Wally[] = INCBIN_U16("graphics/object_events/palettes/wally.gbapal");
+const u16 gObjectEventPal_Brawly[] = INCBIN_U16("graphics/object_events/palettes/brawly.gbapal");
+const u16 gObjectEventPal_Flannery[] = INCBIN_U16("graphics/object_events/palettes/flannery.gbapal");
+const u16 gObjectEventPal_Norman[] = INCBIN_U16("graphics/object_events/palettes/norman.gbapal");
+const u16 gObjectEventPal_Steven[] = INCBIN_U16("graphics/object_events/palettes/steven.gbapal");
 
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 

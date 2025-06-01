@@ -495,6 +495,10 @@
 #define OBJ_EVENT_PAL_TAG_RICH_BOY                0x116C
 #define OBJ_EVENT_PAL_TAG_RUNNING_TRIATHLETE      0x116D
 #define OBJ_EVENT_PAL_TAG_TWIN                    0x116E
+#define OBJ_EVENT_PAL_TAG_BRAWLY                  0x116F
+#define OBJ_EVENT_PAL_TAG_FLANNERY                0x1170
+#define OBJ_EVENT_PAL_TAG_NORMAN                  0x1171
+#define OBJ_EVENT_PAL_TAG_STEVEN                  0x1172
 
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611

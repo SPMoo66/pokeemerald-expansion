@@ -57,7 +57,6 @@ script Mart_EventScript_Clerk{
 	}
 	msgbox(gText_PleaseComeAgain)
 	release
-	end
 }
 
 mart BadgedPokemart0 {
@@ -304,7 +303,6 @@ script Mart_EventScript_TMClerk{
 		msgbox(gText_PleaseComeAgain)
 	}
 	release
-	end
 }
 
 mart TMMart1 {
@@ -544,7 +542,6 @@ script Mart_EventScript_EvoClerk {
 		msgbox(gText_PleaseComeAgain)
 	}
 	release
-	end
 }
 
 mart EvoStonesPokemart3 {
@@ -747,7 +744,6 @@ script EventScript_CapCollector {
 	msgbox(gText_PleaseComeAgain)
 	special (CloseBattlePointsWindow)
 	release
-	end
 }
 
 
@@ -767,7 +763,6 @@ script Mart_EventScript_AbilityNatureClerk {
 	pokemart(AbilityNaturePokemart)
 	msgbox(gText_PleaseComeAgain)
 	release
-	end
 }
 
 mart AbilityNaturePokemart {
@@ -804,7 +799,6 @@ script Mart_EventScript_TypeEnhancingHeldItems {
 	pokemart(TypeEnhancingHeldItemsPokemart)
 	msgbox(gText_PleaseComeAgain)
 	release
-	end
 }
 
 mart TypeEnhancingHeldItemsPokemart {

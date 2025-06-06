@@ -104,15 +104,15 @@ static const u8 sText_LastHalfMaxieMossdeep[] = _("Hah… Is this… the end?{PA
 static const u8 sText_LastHalfArchie[] = _("Hah…\nIt's looking pretty grim now.{PAUSE_UNTIL_PRESS}");
 static const u8 sText_BeforeFirstTurnWallace[] = _("I know your strength, but now is your\nchance to show the world!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_FirstSuperEffectiveHit_Brendan[] = _("Ack!\nYou know about type matchups already?{PAUSE_UNTIL_PRESS}");
-static const u8 sText_BeforeFirstTurn_Brendan[] = _("Let's do this, {PLAYER}!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Brendan[] = _("Let's do this, {B_PLAYER_NAME}!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_LastSwitch_Brendan[] = _("Pressed to the very end!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_Mega_Brendan[] = _("Mega evolution!\nIt's just what I need to beat you!{PAUSE_UNTIL_PRESS}");
-static const u8 sText_LastHalf_Brendan[] = _("Wow, {PLAYER}…\nYou really are…{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastHalf_Brendan[] = _("Wow, {B_PLAYER_NAME}…\nYou really are…{PAUSE_UNTIL_PRESS}");
 static const u8 sText_FirstSuperEffectiveHit_May[] = _("Oh no!\nDon't use that move against me!{PAUSE_UNTIL_PRESS}");
-static const u8 sText_BeforeFirstTurn_May[] = _("Let's both do our best, {PLAYER}!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_May[] = _("Let's both do our best, {B_PLAYER_NAME}!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_LastSwitch_May[] = _("My last…\nI'm counting on you!{PAUSE_UNTIL_PRESS}");
-static const u8 sText_Mega_May[] = _("{PLAYER}, can you keep up with this?{PAUSE_UNTIL_PRESS}");
-static const u8 sText_LastHalf_May[] = _("{PLAYER}…\nYou could just be able…{PAUSE_UNTIL_PRESS}");
+static const u8 sText_Mega_May[] = _("{B_PLAYER_NAME}, can you keep up with this?{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastHalf_May[] = _("{B_PLAYER_NAME}…\nYou could just be able…{PAUSE_UNTIL_PRESS}");
 
 
 static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_SLIDE_COUNT] =
@@ -431,7 +431,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Let's go, team!"),
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Come on, Gallade!"),
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Not so fast, {PLAYER}!\nIt's not over yet!"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Not so fast, {B_PLAYER_NAME}!\nIt's not over yet!"),
         }
     },
 };

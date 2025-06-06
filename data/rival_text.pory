@@ -573,7 +573,7 @@ text Town06_JaksonText {
 			"really weak, but what's the fun in that?\p"
 			"If there's a character who's supposed to\n"
 			"be your rival, shouldn't they be strong?\p"
-			"Especially when you only abttle him twice\n"
+			"Especially when you only battle him twice\n"
 			"in the original. What a joke that is!")
 }
 
@@ -676,4 +676,454 @@ text Town07_SakuraText {
 			"What's the point of fabulous shoes if\n"
 			"not to trample over the competition?\p"
 			"Heheh{EMOJI_TILDE}{UNK_SPACER}")
+}
+
+
+# Town08
+text Town08_BaronText {
+	format(	"Oh… {PLAYER}.\p"
+			"Wait, if you're here then did you\n"
+			"already beat the fourth gym?\p"
+			"I should try harder to keep up with\n"
+			"you all.\p"
+			"The last thing I'd want is for one of\n"
+			"the friend group to get left behind.")
+}
+
+text Town08_HarperText {
+	format(	"Huh.\p"
+			"Yeah, I don't feel anything in this hot\n"
+			"spring.\p"
+			"I guess it's not… surprising…\p"
+			"But if you're gonna mod a game,\n"
+			"why not make that work?!\p"
+			"Hmph!")
+}
+
+text Town08_JaksonText {
+	format(	"Hey, {PLAYER}.\p"
+			"What's been your favorite route so far?\p"
+			"I thinkk the cacti in the desert on\n"
+			"Route 111 look even better than\l"
+			"I had expected.\p"
+			"And Route 113's always a blast.\p"
+			"Though maybe you like the coastal\n"
+			"routes more? Gotta love that signature\l"
+			"Hoenn water.\p"
+			"Good thing the mods adjust it so there's\n"
+			"one percent less of it.\p"
+			"Perfection.")
+}
+
+text Town08_ReddText {
+	format(	"Hey, did you finally get these\n"
+			"goggles?\p"
+			"It's cool how the sandstorm just\n"
+			"disappears in our vision when\l"
+			"putting them on.\p"
+			"Maybe I'll even try to catch some\n"
+			"new Pokémon here or something.\p"
+			"{EMOJI_BIGWHEEL}Adjusts goggles{EMOJI_BIGWHEEL}\p"
+			"Might even be an Agumon to catch{EMOJI_TILDE}{UNK_SPACER}")
+}
+
+text Town08_SakuraText {
+	format(	"This is such a cute little town,\n"
+			"don't you think?\p"
+			"When we're done with this I think I'd\n"
+			"like to visit a hot springs in real life.\p"
+			"Though, if it's mixed bathing,\n"
+			"that'd be bad, so… Hmm…\p"
+			"Then it's settled.\p"
+			"{PLAYER}, when this is over we\n"
+			"shall build our own hot springs!\p"
+			"It's the perfect plan!")
+}
+
+
+# Town09
+text Town09_BaronText {
+	format(	"So… {PLAYER}, one of the others told\n"
+			"me that I need to… ‘surf’.\p"
+			"Like, the water? In it? On it?\p"
+			"Where do I get a board?\n"
+			"Is there a place to practice?\p"
+			"I haven't surfed for… oh, it feels like\n"
+			"it's going on decades at this point.\p"
+			"… … …\p"
+			"Oh… it's that simple?")
+}
+
+text Town09_HarperText {
+	format(	"Wow.\p"
+			"You know, I've made tons of comments\n"
+			"about how NPC everyon acts.\p"
+			"But this really takes the cake, no?\p"
+			"A group of people that move like literal\n"
+			"robots, who will stay still forever if\l"
+			"you do…\p"
+			"Could… Could Jakson program in like\n"
+			"automated movement routes for player\l"
+			"characters?\p"
+			"Scary.")
+}
+
+text Town09_JaksonText {
+	format(	"Hey there.\p"
+			"Are you about to go for Fortree's Gym?\p"
+			"The type changes for the gyms are quite\n"
+			"the shakeup.\p"
+			"Don't worry, I didn't add any custom\n"
+			"types like Crab, Gun, or Furry.\p"
+			"Not that I wasn't tempted.\p"
+			"Maybe for next time if you still need a\n"
+			"challenge after taking us all out, haha.")
+}
+
+text Town09_ReddText {
+	format(	"This Route sure is crazy, isn't it?\p"
+			"All the winding turns, zigzags, and\n"
+			"so few straight paths.\p"
+			"I'm not gonna lie. I sort of prefer the\n"
+			"simpler routes.\p"
+			"Like I'm not playing Pokémon for a\n"
+			"platforming challenge.\p"
+			"… … …\p"
+			"Wait, that later generation game\n"
+			"did simpler routes, too?\p"
+			"I guess… Hmmm…\p"
+			"Sigh… I guess they both have their\n"
+			"place… if I'm in the mood for it.")
+}
+
+text Town09_SakuraText {
+	format(	"{PLAYER}!\p"
+			"Have you seen any Feebas around?\p"
+			"It's imperative as a cuteness fanatic.\n"
+			"I must witness the perfect beauty of a\l"
+			"Milotic with my own eyes at least\l"
+			"once!"
+			"I'll trade you for it if you find one!\n"
+			"I'll give you like… 30 gym badges?\p"
+			"Sure, there are some duplicates that\n"
+			"I stole in there, but…\p"
+			"They gotta be worth something on\n"
+			"the black market, right?")
+}
+
+
+# Town10
+text Town10_BaronText {
+	format(	"Finally… some sunshine…\p"
+			"Did you have trouble in that rain,\n"
+			"{PLAYER}?\p"
+			"The sandstorm in the desert had some\n"
+			"sort of effect in battle, so did the\l"
+			"rain also have one?\p"
+			"Oh?\p"
+			"It makes water stronger and fire\n"
+			"weaker?\p"
+			"Not ground? Imagine all the mud…")
+}
+
+text Town10_HarperText {
+	format(	"Hey, {PLAYER}.\p"
+			"Did you just see Jakson…\n"
+			"Or maybe Baron?\p"
+			"I could have sworn I just saw someone,\n"
+			"then they just disappeared…\p"
+			"Oh, come on…\n"
+			"Don't look at me like I'm crazy.\p"
+			"Must be the water effect blurring\n"
+			"my vision…\p"
+			"Must be…")
+}
+
+text Town10_JaksonText {
+	format(	"Oh, hey, {PLAYER}.\p"
+			"You heading to Lilycove before\n"
+			"tackling Mt. Pyre?\p"
+			"Or did you already forget about them?\p"
+			"Don't worry if you did. I think everyone\n"
+			"forgets about them at least once.\p"
+			"After those two long routes it's\n"
+			"natural to want to rest up.\p"
+			"Weird how they design it like that, isn't\n"
+			"it?\p"
+			"A dire situation plays out up the\n"
+			"mountain… So that means there's\l"
+			"plenty of time to hang out at the mall.")
+}
+
+text Town10_ReddText {
+	format(	"That last gym was a rough one…\p"
+			"Jakson said those teams weren't\n"
+			"the original ones, right?\p"
+			"I could've sworn they always did\n"
+			"single type before.\p"
+			"It really forces you to think…\p"
+			"… … …\p"
+			"Yes, I was thinking before this all!\p"
+			"It's just… like a good learning\n"
+			"experience and stuff.\p"
+			"The next one won't catch me\n"
+			"off-guard!")
+}
+
+text Town10_SakuraText {
+	format(	"There's something off about this big\n"
+			"old rock here.\p"
+			"Don't worry, {PLAYER}.\n"
+			"I'll bust our way in with a strike!\l"
+			"Wa-cha!\p"
+			"You don't think I could?\p"
+			"You never know{EMOJI_TILDE}\p"
+			"I've got thighs of ‘steel’, after all.")
+}
+
+
+# Town11
+text Town11_BaronText {
+	format(	"… … …\p"
+			"… Oh, {PLAYER}. I didn't see you there.\p"
+			"I've been working on this puzzle for\n"
+			"a while.\p"
+			"Look at the building layout, it's probably\n"
+			"an ‘optional’ dead end.\p"
+			"But… I sort of want to see what's at\n"
+			"the end. It could even be a bunch of\l"
+			"potions!\p"
+			"If it helps at all, I think the goal\n"
+			"might be getting to the bottom row.\p"
+			"I'm going to take a break for a minute,\n"
+			"but give it a try yourself.")
+}
+
+text Town11_HarperText {
+	format(	"Oh my fucking goodness…\p"
+			"WHOSE IDEA WAS IT TO SIMULATE\n"
+			"THE ACTUAL HEAT OF THIS PLACE?!\p"
+			"Uuuuggghhhhhhhhhhhhhh……………\p"
+			"Just gotta hurry up and beat these…\n"
+			"Team Magma people, right?\p"
+			"…Who on earth thought this was\n"
+			"a good idea?\p"
+			"Wait, you think my headset could be\n"
+			"overheating?\p"
+			"Yeah, better check.")
+}
+
+text Town11_JaksonText {
+	format(	"Good to see you pulling through,\n"
+			"{PLAYER}.\p"
+			"I hope Maxie wasn't too much of a\n"
+			"challenge, but I know you're strong.\p"
+			"I'm a little more worried about Baron\n"
+			"or Harper when it comes to that…\p"
+			"If you see them struggling, give them\n"
+			"a little push onwards. Redd too.\p"
+			"As for Sakura… she might do a hostile\n"
+			"takeover of Team Magma and Aqua\l"
+			"before we need to worry about her.\p"
+			"That, or she'd be the one dragging\n"
+			"us both along behind her.\p"
+			"Anyway, don't forget to drop by\n"
+			"Slateport before moving back to\l"
+			"Lilycove. It's something I always\l"
+			"forget about too.")
+}
+
+text Town11_ReddText {
+	format(	"You know, there hasn't been a single\n"
+			"dark cave yet.\p"
+			"There were some in Gen 1 and…\p"
+			"Well, no, I actually don't miss them.\p"
+			"That's one thing that I don't think\n"
+			"anybody liked.\p"
+			"Why DID they do that anyways?\p"
+			"Sure, it was sort of fun to try and\n"
+			"“game the system” by not even using\l"
+			"flash as an early shortcut, but…\p"
+			"Not all those early ideas really\n"
+			"worked out for the best. Learn and\l"
+			"let live, I guess?")
+}
+
+text Town11_SakuraText {
+	format(	"Heheh{EMOJI_TILDE}\p"
+			"I've got my Master Ball, now.\p"
+			"Any shiny cutie that crosses my path\n"
+			"is mine.\p"
+			"No more risk-taking when I see\n"
+			"a cool one.\p"
+			"I've got to dial it in if I want my\n"
+			"Pokéstar Studio career with them\l"
+			"to take off.\p"
+			"Oh, but I mean with the maximally\n"
+			"cute Pokémon, not you, {PLAYER}{EMOJI_TILDE}{UNK_SPACER}")
+}
+
+
+# Town12
+text Town12_BaronText {
+	format(	"Hi, {PLAYER}.\p"
+			"I'm just doing my shopping before\n"
+			"heading out.\p"
+			"I looked at the map, and it's a\n"
+			"long sea route next, right?\p"
+			"I figure I'll need a lot of supplies to\n"
+			"make it to the next city.\p"
+			"Though it's a bit of a shame that the\n"
+			"last outing didn't end up having a lot\l"
+			"of potions in it.\p"
+			"It took me a while, but I did find one\n"
+			"vendor that bought that ‘Master Ball’\l"
+			"item for a lot.\p"
+			"That should cover the trip nicely.\n"
+			"Maybe we can even have a picnic?\p"
+			"… Huh?\p"
+			"Are you okay, {PLAYER}?\n"
+			"You've gone silent.\p"
+			"Well, I'll see you out there!")
+}
+
+text Town12_HarperTextQ {
+	format(	"The old guy in the cave said he could\n"
+			"make me a ‘Shell Bell’ if I gathered\l"
+			"a bunch of materials for him.\p"
+			"Think it's worth the effort, {PLAYER}?")
+}
+
+text Town12_HarperTextYes {
+	format(	"Huh, well if you think it's any good\n"
+			"I might spend some time trying.\p"
+			"But I swear, if it turns out to be like…\n"
+			"I don't know, a swimsuit mod…\p"
+			"Then someone's getting smacked.\n"
+			"You and Jakson can draw lots.")
+}
+
+text Town12_HarperTextNo {
+	format(	"Oh? So the old man just exists to\n"
+			"waste a bunch of your time?\p"
+			"Figures…")
+}
+
+text Town12_JaksonText {
+	format(	"Hey, {PLAYER}.\p"
+			"I always loved the concept of the\n"
+			"space center as a kid.\p"
+			"The whole weather theming never really\n"
+			"grabbed me, but who can resist space?\p"
+			"And all those goofy rumors you'd hear\n"
+			"about being able to see the rocket\l"
+			"launching?\p"
+			"Wouldn't it be cool?\p"
+			"… … …\p"
+			"Haha… No, I can't promise anything\n"
+			"mod wise.")
+}
+
+text Town12_ReddText {
+	format(	"Wait, this is where that whole\n"
+			"‘Too much water’ thing kicks in,\l"
+			"isn't it?\p"
+			"Oh…\n"
+			"… … …\l"
+			"Oh no…\p"
+			"Please. Anything to get back\n"
+			"Cinnabar Island's routes.\p"
+			"Get Jakson over here now!\n"
+			"It's not too late to switch games!")
+}
+
+text Town12_SakuraText {
+	format(	"{PLAYER}!\p"
+			"You and I have had like a whole\n"
+			"twin thing going on since we started\l"
+			"yeah?\p"
+			"Here, let me read your mind.\p"
+			"… … …\p"
+			"“Sakura is the best Pokémon trainer\n"
+			"that there is!”\p"
+			"“…and… and…!”\p"
+			"“…I will give her twenty bucks\n"
+			"just for being so cute and cool.”\p"
+			"Wow, what an astute thought,\n"
+			"{PLAYER}!")
+}
+
+
+# Town13
+text Town13_BaronText {
+	format(	"Ah!\p"
+			"Oh, you scared me, {PLAYER}.\p"
+			"I was traveling and the very first time\n"
+			"I tried to use Dive I found this cave.\p"
+			"…You know, Jakson also looked at\n"
+			"me weird when I told him that.\p"
+			"But thank the Pokémon gods that he\n"
+			"was around to heal. I'd be in trouble\l"
+			"otherwise.\p"
+			"I'll need to thank him again later…\p"
+			"Go on ahead. I need a moment to get\n"
+			"my heart rate under control.")
+}
+
+text Town13_HarperText {
+	format(	"Wow, this route is absolutely massive.\p"
+			"I've come from the north, and I saw\n"
+			"that big white rock out west…\p"
+			"What was it we were supposed to be\n"
+			"doing out here? The ‘dive’ mechanic\l"
+			"thing?\p"
+			"It… won't get my hair wet or anything.\n"
+			"Of course it won't, Harper… it's a game.\p"
+			"Argh! Head first then!\p"
+			"I'll just dive in somewhere along that\n"
+			"long stretch and see if I can find any\l"
+			"of that Team Aqua lot.\p"
+			"Wish me luck, {PLAYER}.")
+}
+
+text Town13_JaksonText {
+	format(	"If it isn't {PLAYER}? There are less fun\n"
+			"places to meet up, at least.\p"
+			"They really upped their A-game when\n"
+			"trying to make this place difficult to find.\p"
+			"You wouldn't happen to know about\n"
+			"the dungeon ahead? It isn't trivial.\p"
+			"Actually, you know what? I'll heal your\n"
+			"Pokémon for you. Here.")
+}
+
+text Town13_JaksonTextAfter {
+	format(	"Alright, good luck out there.\n"
+			"Return here if you need to rest again.")
+}
+
+text Town13_ReddText {
+	format(	"Huh, this ring of shallow water\n"
+			"sure looks suspicious, doesn't it?\p"
+			"The center looks almost like a\n"
+			"target, right. But I tried it and only\l"
+			"got an item.\p"
+			"This diving thing sure is a unique\n"
+			"new mechanic.\p"
+			"… … …\p"
+			"Honestly, the more I think on it, maybe\n"
+			"I should be looking for where ‘{BIG_MULT_X}’\l"
+			"marks the spot?")
+}
+
+text Town13_SakuraText {
+	format(	"Ah! You caught me, {PLAYER}{EMOJI_TILDE}\p"
+			"The schoolyard rumors tell of a fun\n"
+			"lil something being on Mirage Island.\p"
+			"And… that's here!\p"
+			"Oh, don't worry. I'll be back to the\n"
+			"Seafloor Cavern in a jiffy.\p"
+			"Were you able to find it yet?\p"
+			"Heheh. If you haven't, I'm keeping\n"
+			"that secret to myself{EMOJI_TILDE}{UNK_SPACER}")
 }

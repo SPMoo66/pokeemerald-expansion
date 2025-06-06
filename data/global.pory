@@ -23,10 +23,10 @@ script EventScript_HideMapNamePopup {
 	return
 }
 
-script Mart_EventScript_Clerk{
+script Mart_EventScript_Clerk {
 	lock
 	faceplayer
-	msgbox(gText_HowMayIServeYou)
+	msgbox (gText_HowMayIServeYou)
 	waitmessage
 	if (flag(FLAG_SYS_GAME_CLEAR)) {
 		pokemart(BadgedPokemartClear)

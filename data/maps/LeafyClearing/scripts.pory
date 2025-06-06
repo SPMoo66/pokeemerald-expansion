@@ -1,13 +1,13 @@
 mapscripts LeafyClearing_MapScripts {}
 
 script TrainerTipsClock {
-	msgbox(format("Trainer Tips\pWhen viewing a clock, press the R button to set the time."), MSGBOX_SIGN)
+	msgbox(format("Trainer Tips\pWhen viewing a clock, press {R_BUTTON} to set the time."), MSGBOX_SIGN)
 }
 
 script TrainerTipsBRun {
-	msgbox(format("Trainer Tips\pIn battle, press the B button to center the cursor on Run."), MSGBOX_SIGN)
+	msgbox(format("Trainer Tips\pIn battle, press {B_BUTTON} to center the cursor on Run."), MSGBOX_SIGN)
 }
 
 script TrainerTipsPartySelectMove {
-	msgbox(format("Trainer Tips\pIn the party screen, press the Select button to move Pokémon."), MSGBOX_SIGN)
+	msgbox(format("Trainer Tips\pIn the party screen, press {SELECT_BUTTON} to move Pokémon."), MSGBOX_SIGN)
 }

@@ -23,17 +23,17 @@ TrainerTipsPartySelectMove::
 TrainerTipsClock_Text_0:
 # 4 "data/maps/LeafyClearing/scripts.pory"
 	.string "Trainer Tips\p"
-	.string "When viewing a clock, press the R\n"
-	.string "button to set the time.$"
+	.string "When viewing a clock, press {R_BUTTON} to set the\n"
+	.string "time.$"
 
 TrainerTipsBRun_Text_0:
 # 8 "data/maps/LeafyClearing/scripts.pory"
 	.string "Trainer Tips\p"
-	.string "In battle, press the B button to center\n"
-	.string "the cursor on Run.$"
+	.string "In battle, press {B_BUTTON} to center the cursor\n"
+	.string "on Run.$"
 
 TrainerTipsPartySelectMove_Text_0:
 # 12 "data/maps/LeafyClearing/scripts.pory"
 	.string "Trainer Tips\p"
-	.string "In the party screen, press the Select\n"
-	.string "button to move Pokémon.$"
+	.string "In the party screen, press {SELECT_BUTTON} to move\n"
+	.string "Pokémon.$"

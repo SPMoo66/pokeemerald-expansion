@@ -438,5 +438,4 @@ TrainerTipsSurfSprinting::
 TrainerTipsSurfSprinting_Text_0:
 # 220 "data/maps/Route118/scripts.pory"
 	.string "Trainer Tips\p"
-	.string "While surfing, hold the B button to move\n"
-	.string "faster.$"
+	.string "While surfing, hold {B_BUTTON} to move faster.$"

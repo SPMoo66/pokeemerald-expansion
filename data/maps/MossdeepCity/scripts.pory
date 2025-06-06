@@ -457,5 +457,5 @@ script MossdeepCity_EventScript_WhiteRock {
 }
 
 script TrainerTipsDiveSprinting {
-	msgbox(format("Trainer Tips\pWhile diving, hold the A or B buttons to move faster."), MSGBOX_SIGN)
+	msgbox(format("Trainer Tips\pWhile diving, hold {A_BUTTON} or {B_BUTTON} to move faster."), MSGBOX_SIGN)
 }

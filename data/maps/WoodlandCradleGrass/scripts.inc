@@ -66,22 +66,20 @@ TrainerTipsMoveInfo_Text_0:
 # 5 "data/maps/WoodlandCradleGrass/scripts.pory"
 	.string "Trainer Tips\p"
 	.string "When choosing a move to use in battle,\n"
-	.string "press the L button to view move\l"
-	.string "information.$"
+	.string "press {L_BUTTON} to view move information.$"
 
 TrainerTipsBallCycle_Text_0:
 # 12 "data/maps/WoodlandCradleGrass/scripts.pory"
 	.string "Trainer Tips\p"
-	.string "In wild battles, hold the R button and\n"
-	.string "press the Left or Right buttons to\l"
-	.string "cycle between available Pokéballs.$"
+	.string "In wild battles, hold {R_BUTTON} and press {DPAD_LEFT} and\n"
+	.string "{DPAD_RIGHT} to cycle between available Pokéballs.$"
 
 TrainerTipsStatusIVsEVs_Text_0:
 # 19 "data/maps/WoodlandCradleGrass/scripts.pory"
 	.string "Trainer Tips\p"
 	.string "When viewing stats in the Pokémon\n"
-	.string "status screen, press the A button to\l"
-	.string "cycle between stats, IVs, and EVs.$"
+	.string "status screen, press {A_BUTTON} to cycle between\l"
+	.string "stats, IVs, and EVs.$"
 
 TrainerTipsIVsNoEffect_Text_0:
 # 26 "data/maps/WoodlandCradleGrass/scripts.pory"

@@ -358,5 +358,5 @@ Route103_Text_RouteSign:
 
 
 script TrainerTipsBattleSpeed {
-	msgbox(format("Trainer Tips\pIf battle speed is set higher than 1x, hold the L button in battle to temporarily slow the battle down to normal speed."), MSGBOX_SIGN)
+	msgbox(format("Trainer Tips\pIf battle speed is set higher than 1x, hold {L_BUTTON} in battle to temporarily slow the battle down to normal speed."), MSGBOX_SIGN)
 }

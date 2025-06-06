@@ -217,5 +217,5 @@ Route118_Text_RouteSign119:
 
 
 script TrainerTipsSurfSprinting {
-	msgbox(format("Trainer Tips\pWhile surfing, hold the B button to move faster."), MSGBOX_SIGN)
+	msgbox(format("Trainer Tips\pWhile surfing, hold {B_BUTTON} to move faster."), MSGBOX_SIGN)
 }

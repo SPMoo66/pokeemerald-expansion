@@ -721,6 +721,5 @@ TrainerTipsBattleSpeed_Text_0:
 # 361 "data/maps/Route103/scripts.pory"
 	.string "Trainer Tips\p"
 	.string "If battle speed is set higher than 1x,\n"
-	.string "hold the L button in battle to\l"
-	.string "temporarily slow the battle down to\l"
-	.string "normal speed.$"
+	.string "hold {L_BUTTON} in battle to temporarily slow the\l"
+	.string "battle down to normal speed.$"

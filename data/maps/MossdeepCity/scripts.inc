@@ -944,5 +944,4 @@ MossdeepCity_EventScript_WhiteRock_Text_2:
 TrainerTipsDiveSprinting_Text_0:
 # 460 "data/maps/MossdeepCity/scripts.pory"
 	.string "Trainer Tips\p"
-	.string "While diving, hold the A or B buttons to\n"
-	.string "move faster.$"
+	.string "While diving, hold {A_BUTTON} or {B_BUTTON} to move faster.$"

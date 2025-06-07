@@ -3159,6 +3159,9 @@ static void AnimateMonAfterKnockout(u32 battler)
 {
     if (B_ANIMATE_MON_AFTER_KO == FALSE)
         return;
+    u8 animateAfterKOOption = gSaveBlock2Ptr->optionsAnimateAfterKO;
+    if (animateAfterKOOption != 0)
+        return;
 
     u32 oppositeBattler = BATTLE_OPPOSITE(battler);
     u32 partnerBattler = BATTLE_PARTNER(oppositeBattler);

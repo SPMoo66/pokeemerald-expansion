@@ -581,7 +581,8 @@ struct SaveBlock2
              u16 optionsLevelCaps:1;        //tx_optionsPlus
              u16 optionsOverworldSpeed:3;   //tx_optionsPlus
 			 u8 optionsSurfMusic:1;         //tx_optionsPlus
-             u8 padding[0x5];          //Will save 8 bytes for later, likely for options
+			 u8 optionsAnimateAfterKO:1;    //tx_optionsPlus
+             u8 padding[0x4];          //Will save 8 bytes for later, likely for options
 
      /*notes on padding*/
              //u8 padding1:4;     :4 here represents 4 bits, so 4/16 for 0x17

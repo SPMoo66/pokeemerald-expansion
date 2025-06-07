@@ -393,11 +393,11 @@ static const struct MatchCallRival sSakuraMatchCallHeader =
 
 static const match_call_text_data_t sBaronTextScripts[] = {
     { MatchCall_Text_Baron1,  0xFFFF,                              0xFFFF },
-    { MatchCall_Text_Baron2,  FLAG_VISITED_MAUVILLE_CITY,          0xFFFF },
-    { MatchCall_Text_Baron3,  FLAG_BADGE05_GET,                    0xFFFF },
-    { MatchCall_Text_Baron4,  FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
-    { MatchCall_Text_Baron5,  FLAG_IS_CHAMPION,                    0xFFFF },
-    { MatchCall_Text_Baron6,  FLAG_EXPANSION_1,                    0xFFFF },
+    { MatchCall_Text_Baron1,  FLAG_VISITED_MAUVILLE_CITY,          0xFFFF },
+    { MatchCall_Text_Baron1,  FLAG_BADGE05_GET,                    0xFFFF },
+    { MatchCall_Text_Baron1,  FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
+    { MatchCall_Text_Baron1,  FLAG_IS_CHAMPION,                    0xFFFF },
+    { MatchCall_Text_Baron1,  FLAG_EXPANSION_1,                    0xFFFF },
     { NULL,                   0xFFFF,                              0xFFFF }
 };
 

@@ -1227,9 +1227,6 @@ mapscripts SootopolisCity_MapScripts {
 		if (var(VAR_SOOTOPOLIS_CITY_STATE) == 6) {
 			setobjectxyperm (LOCALID_SOOTOPOLIS_EXPERT, 31, 18)
 		}
-		if ((flag(FLAG_BADGE08_GET)) && (var(VAR_LOOKER_ROCKET) == 8)) {
-			call (SootopolisCity_EventScript_Looker)
-		}
 	}
 	MAP_SCRIPT_ON_RESUME {
 		setdivewarp (MAP_UNDERWATER_SOOTOPOLIS_CITY, 9, 6)
@@ -1240,6 +1237,7 @@ mapscripts SootopolisCity_MapScripts {
 	MAP_SCRIPT_ON_FRAME_TABLE [
 		VAR_SOOTOPOLIS_CITY_STATE, 1: SootopolisCity_EventScript_StartLegendariesScene
 		VAR_SKY_PILLAR_STATE, 1: SootopolisCity_EventScript_StartRayquazaScene
+		VAR_LOOKER_ROCKET, 8: SootopolisCity_EventScript_Looker
 	]
 	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
 		VAR_SOOTOPOLIS_CITY_STATE, 5: SootopolisCity_EventScript_PlayerFaceLegendaries

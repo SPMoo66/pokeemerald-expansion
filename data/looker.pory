@@ -186,14 +186,16 @@ script FortreeCity_EventScript_Looker {
 }
 
 script SootopolisCity_EventScript_Looker {
-	lock
-	playbgm (MUS_PL_LOOKER, FALSE)
-	pokenavcall (SootopolisCity_Text_Looker_Call)
-	waitmessage
-	closemessage
-	setvar (VAR_LOOKER_ROCKET, 9)
-	fadedefaultbgm
-	release
+	if (flag(FLAG_BADGE08_GET)) {
+		lock
+		playbgm (MUS_PL_LOOKER, FALSE)
+		pokenavcall (SootopolisCity_Text_Looker_Call)
+		waitmessage
+		closemessage
+		setvar (VAR_LOOKER_ROCKET, 9)
+		fadedefaultbgm
+		release
+	}
 }
 
 text SootopolisCity_Text_Looker_Call {

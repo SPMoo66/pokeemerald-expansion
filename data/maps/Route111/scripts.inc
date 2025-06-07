@@ -670,3 +670,9 @@ Route111_Text_TrainerHillSign:
 	.string "“Scale the heights, you hot-blooded\n"
 	.string "Trainers!”$"
 
+
+EventScript_UpdateEmeralbodyRivalStateRoute111::
+	setvar VAR_EMERALBODY_RIVAL_STATE, 7
+	setflag FLAG_TEMP_1
+	clearflag FLAG_TEMP_2
+	end

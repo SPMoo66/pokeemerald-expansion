@@ -10,9 +10,14 @@ MauvilleCity_OnTransition:
 	setflag FLAG_SYS_TV_START
 	clearflag FLAG_MAUVILLE_GYM_BARRIERS_STATE
 	setvar VAR_MAUVILLE_GYM_STATE, 0
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 5, MauvilleCity_EventScript_UpdateEmeralbodyRivalState
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 6, EventScript_Clear_FlagTemp1
 	call_if_set FLAG_GOT_REWARD_FROM_WATTSON, MauvilleCity_EventScript_MoveWattsonBackToGym
 	end
+
+MauvilleCity_EventScript_UpdateEmeralbodyRivalState::
+	setvar VAR_EMERALBODY_RIVAL_STATE, 6
+	return
 
 MauvilleCity_EventScript_MoveWattsonBackToGym::
 	clearflag FLAG_HIDE_MAUVILLE_GYM_WATTSON

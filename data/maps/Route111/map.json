@@ -1010,6 +1010,15 @@
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
       "script": "Route111_EventScript_SandstormTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 99,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "6",
+      "script": "EventScript_UpdateEmeralbodyRivalStateRoute111"
     }
   ],
   "bg_events": [

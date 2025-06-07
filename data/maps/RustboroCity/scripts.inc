@@ -693,6 +693,7 @@ RustboroCity_EventScript_MayBrineyHint::
 	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
 	clearflag FLAG_CHALLENGING_TRAINER
 	setvar VAR_RUSTBORO_CITY_STATE, 9
+	setvar VAR_EMERALBODY_RIVAL_STATE, 4
 	releaseall
 	end
 
@@ -770,6 +771,7 @@ RustboroCity_EventScript_BrendanBrineyHint::
 	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
 	clearflag FLAG_CHALLENGING_TRAINER
 	setvar VAR_RUSTBORO_CITY_STATE, 9
+	setvar VAR_EMERALBODY_RIVAL_STATE, 4
 	releaseall
 	end
 

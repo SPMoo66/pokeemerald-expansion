@@ -77,6 +77,7 @@ MtChimney_EventScript_Maxie::
 	setflag FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO
 	clearflag FLAG_HIDE_MT_CHIMNEY_LAVA_COOKIE_LADY
 	clearflag FLAG_CHALLENGING_TRAINER
+	setvar VAR_EMERALBODY_RIVAL_STATE, 8
 	releaseall
 	end
 

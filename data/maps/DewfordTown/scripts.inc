@@ -171,8 +171,13 @@ DewfordTown_EventScript_SailToSlateport::
 	resetobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN
 	resetobjectsubpriority LOCALID_ROUTE109_BRINEY, MAP_ROUTE109
 	copyobjectxytoperm LOCALID_ROUTE109_BRINEY
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 4, DewfordTown_EventScript_UpdateEmeralbodyRivalStateForSlateport
 	release
 	end
+
+DewfordTown_EventScript_UpdateEmeralbodyRivalStateForSlateport::
+	setvar VAR_EMERALBODY_RIVAL_STATE, 5
+	return
 
 DewfordTown_EventScript_LandedSlateportDeliverGoods::
 	speakername (CommonText_MrBriney)

@@ -8,7 +8,7 @@
 #define INGAME_TRADE_FRIGIBAX   0
 #define INGAME_TRADE_BOMBIRDIER 1
 #define INGAME_TRADE_SKARMORY_F 2
-#define INGAME_TRADE_MEOWTH     3
+#define INGAME_TRADE_FLOETTE    3
 
 // Return values for CanTradeSelectedMon and CanSpinTradeMon
 #define CAN_TRADE_MON              0

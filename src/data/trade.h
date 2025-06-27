@@ -1032,21 +1032,21 @@ static const struct InGameTrade sIngameTrades[] =
         .sheen = 10,
         .requestedSpecies = SPECIES_WOBBUFFET
     },
-    [INGAME_TRADE_MEOWTH] =
+    [INGAME_TRADE_FLOETTE] =
     {
-        .nickname = _("Meowow"),
-        .species = SPECIES_MEOWTH,
+        .nickname = _("Flowey"),
+        .species = SPECIES_FLOETTE,
         .ivs = {4, 5, 4, 5, 4, 4},
-        .abilityNum = 0,
+        .abilityNum = 1,
         .otId = 91481,
         .conditions = {5, 5, 5, 30, 5},
         .personality = 0x8B,
-        .heldItem = ITEM_RETRO_MAIL,
+        .heldItem = ITEM_BOTTLE_CAP,
         .mailNum = 2,
         .otName = _("Erika"),
         .otGender = FEMALE, 
         .sheen = 10,
-        .requestedSpecies = SPECIES_SKITTY
+        .requestedSpecies = SPECIES_SMEARGLE
     }
 };
 

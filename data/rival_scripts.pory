@@ -549,3 +549,39 @@ script Baron_Town11 {
 	speakername (CommonText_Baron)
 	msgbox(Town11_BaronText, MSGBOX_NPC)
 }
+
+
+#Town12
+script Sakura_Town12 {
+	speakername (CommonText_Sakura)
+	msgbox(Town12_SakuraText, MSGBOX_NPC)
+}
+
+script Harper_Town12 {
+	lock
+	faceplayer
+	speakername (CommonText_Harper)
+	msgbox(Town12_HarperTextQ, MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) { // Yes
+		msgbox (Town12_HarperTextYes, MSGBOX_NPC)
+	}
+	else {
+		msgbox (Town12_HarperTextNo, MSGBOX_NPC)
+	}
+	release
+}
+
+script Redd_Town12 {
+	speakername (CommonText_Redd)
+	msgbox(Town12_ReddText, MSGBOX_NPC)
+}
+
+script Jakson_Town12 {
+	speakername (CommonText_Jakson)
+	msgbox(Town12_JaksonText, MSGBOX_NPC)
+}
+
+script Baron_Town12 {
+	speakername (CommonText_Baron)
+	msgbox(Town12_BaronText, MSGBOX_NPC)
+}

@@ -812,7 +812,7 @@ MossdeepCity_Movement_JirachiAppearance:
 MossdeepCity_MapScripts::
 # 412 "data/maps/MossdeepCity/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION
-# 418 "data/maps/MossdeepCity/scripts.pory"
+# 422 "data/maps/MossdeepCity/scripts.pory"
 	map_script MAP_SCRIPT_ON_RESUME, MossdeepCity_MapScripts_MAP_SCRIPT_ON_RESUME
 	.byte 0
 
@@ -821,7 +821,12 @@ MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	goto_if_set FLAG_SYS_WEATHER_CTRL, MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 416 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_TEMP_1
+# 417 "data/maps/MossdeepCity/scripts.pory"
 	setflag FLAG_TEMP_2
+# 418 "data/maps/MossdeepCity/scripts.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 12
+	goto_if_eq MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
 	return
 
 MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
@@ -829,119 +834,124 @@ MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 	call Common_EventScript_SetAbnormalWeather
 	goto MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
-MossdeepCity_MapScripts_MAP_SCRIPT_ON_RESUME:
+MossdeepCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 419 "data/maps/MossdeepCity/scripts.pory"
+	call EventScript_Clear_FlagTemp1
+	return
+
+MossdeepCity_MapScripts_MAP_SCRIPT_ON_RESUME:
+# 423 "data/maps/MossdeepCity/scripts.pory"
 	goto_if_set FLAG_SYS_CTRL_OBJ_DELETE, MossdeepCity_MapScripts_MAP_SCRIPT_ON_RESUME_1
 	return
 
 MossdeepCity_MapScripts_MAP_SCRIPT_ON_RESUME_1:
-# 420 "data/maps/MossdeepCity/scripts.pory"
+# 424 "data/maps/MossdeepCity/scripts.pory"
 	removeobject 18
 	return
 
 
 MossdeepCity_EventScript_WhiteRock::
-# 426 "data/maps/MossdeepCity/scripts.pory"
+# 430 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_WhiteRock_Text_0, MSGBOX_SIGN
-# 427 "data/maps/MossdeepCity/scripts.pory"
+# 431 "data/maps/MossdeepCity/scripts.pory"
 	checkitem ITEM_WISH_TAG
-# 428 "data/maps/MossdeepCity/scripts.pory"
+# 432 "data/maps/MossdeepCity/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq MossdeepCity_EventScript_WhiteRock_3
 	return
 
 MossdeepCity_EventScript_WhiteRock_1:
-# 429 "data/maps/MossdeepCity/scripts.pory"
+# 433 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_WhiteRock_Text_1, MSGBOX_YESNO
-# 430 "data/maps/MossdeepCity/scripts.pory"
+# 434 "data/maps/MossdeepCity/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq MossdeepCity_EventScript_WhiteRock_7
 	return
 
 MossdeepCity_EventScript_WhiteRock_2:
-# 428 "data/maps/MossdeepCity/scripts.pory"
+# 432 "data/maps/MossdeepCity/scripts.pory"
 	goto_if_unset FLAG_CAUGHT_JIRACHI, MossdeepCity_EventScript_WhiteRock_1
 	return
 
 MossdeepCity_EventScript_WhiteRock_3:
-# 428 "data/maps/MossdeepCity/scripts.pory"
+# 432 "data/maps/MossdeepCity/scripts.pory"
 	goto_if_unset FLAG_TEMP_3, MossdeepCity_EventScript_WhiteRock_2
 	return
 
 MossdeepCity_EventScript_WhiteRock_7:
-# 431 "data/maps/MossdeepCity/scripts.pory"
-	closemessage
-# 432 "data/maps/MossdeepCity/scripts.pory"
-	clearflag FLAG_TEMP_2
-# 433 "data/maps/MossdeepCity/scripts.pory"
-	applymovement 8, Common_Movement_FaceUp
-# 434 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 0
 # 435 "data/maps/MossdeepCity/scripts.pory"
-	playse SE_PIN
+	closemessage
 # 436 "data/maps/MossdeepCity/scripts.pory"
-	applymovement 8, Common_Movement_ExclamationMark
+	clearflag FLAG_TEMP_2
 # 437 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 0
+	applymovement 8, Common_Movement_FaceUp
 # 438 "data/maps/MossdeepCity/scripts.pory"
-	addobject 18
-# 439 "data/maps/MossdeepCity/scripts.pory"
-	applymovement 18, MossdeepCity_Movement_JirachiAppearance
-# 440 "data/maps/MossdeepCity/scripts.pory"
 	waitmovement 0
+# 439 "data/maps/MossdeepCity/scripts.pory"
+	playse SE_PIN
+# 440 "data/maps/MossdeepCity/scripts.pory"
+	applymovement 8, Common_Movement_ExclamationMark
 # 441 "data/maps/MossdeepCity/scripts.pory"
-	setvar VAR_LAST_TALKED, 18
+	waitmovement 0
 # 442 "data/maps/MossdeepCity/scripts.pory"
-	playmoncry SPECIES_JIRACHI, CRY_MODE_ENCOUNTER
+	addobject 18
 # 443 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_WhiteRock_Text_2
+	applymovement 18, MossdeepCity_Movement_JirachiAppearance
 # 444 "data/maps/MossdeepCity/scripts.pory"
-	waitmoncry
+	waitmovement 0
 # 445 "data/maps/MossdeepCity/scripts.pory"
-	seteventmon SPECIES_JIRACHI, 50
+	setvar VAR_LAST_TALKED, 18
 # 446 "data/maps/MossdeepCity/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	playmoncry SPECIES_JIRACHI, CRY_MODE_ENCOUNTER
 # 447 "data/maps/MossdeepCity/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	msgbox MossdeepCity_EventScript_WhiteRock_Text_2
 # 448 "data/maps/MossdeepCity/scripts.pory"
-	waitstate
+	waitmoncry
 # 449 "data/maps/MossdeepCity/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_JIRACHI, 50
 # 450 "data/maps/MossdeepCity/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 451 "data/maps/MossdeepCity/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 452 "data/maps/MossdeepCity/scripts.pory"
+	waitstate
+# 453 "data/maps/MossdeepCity/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 454 "data/maps/MossdeepCity/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 455 "data/maps/MossdeepCity/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq MossdeepCity_EventScript_WhiteRock_10
 MossdeepCity_EventScript_WhiteRock_9:
-# 454 "data/maps/MossdeepCity/scripts.pory"
+# 458 "data/maps/MossdeepCity/scripts.pory"
 	setflag FLAG_TEMP_3
 	return
 
 MossdeepCity_EventScript_WhiteRock_10:
-# 452 "data/maps/MossdeepCity/scripts.pory"
+# 456 "data/maps/MossdeepCity/scripts.pory"
 	setflag FLAG_CAUGHT_JIRACHI
 	goto MossdeepCity_EventScript_WhiteRock_9
 
 
 TrainerTipsDiveSprinting::
-# 460 "data/maps/MossdeepCity/scripts.pory"
+# 464 "data/maps/MossdeepCity/scripts.pory"
 	msgbox TrainerTipsDiveSprinting_Text_0, MSGBOX_SIGN
 	return
 
 
 MossdeepCity_EventScript_WhiteRock_Text_0:
-# 426 "data/maps/MossdeepCity/scripts.pory"
+# 430 "data/maps/MossdeepCity/scripts.pory"
 	.string "It's a white rock.$"
 
 MossdeepCity_EventScript_WhiteRock_Text_1:
-# 429 "data/maps/MossdeepCity/scripts.pory"
+# 433 "data/maps/MossdeepCity/scripts.pory"
 	.string "Use the Wish Tag to make a wish?$"
 
 MossdeepCity_EventScript_WhiteRock_Text_2:
-# 443 "data/maps/MossdeepCity/scripts.pory"
+# 447 "data/maps/MossdeepCity/scripts.pory"
 	.string "Shii?$"
 
 TrainerTipsDiveSprinting_Text_0:
-# 460 "data/maps/MossdeepCity/scripts.pory"
+# 464 "data/maps/MossdeepCity/scripts.pory"
 	.string "Trainer Tips\p"
 	.string "While diving, hold {A_BUTTON} or {B_BUTTON} to move faster.$"

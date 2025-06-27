@@ -948,6 +948,63 @@ Baron_Town11::
 	return
 
 
+Sakura_Town12::
+# 556 "data/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 557 "data/rival_scripts.pory"
+	msgbox Town12_SakuraText, MSGBOX_NPC
+	return
+
+
+Harper_Town12::
+# 561 "data/rival_scripts.pory"
+	lock
+# 562 "data/rival_scripts.pory"
+	faceplayer
+# 563 "data/rival_scripts.pory"
+	speakername CommonText_Harper
+# 564 "data/rival_scripts.pory"
+	msgbox Town12_HarperTextQ, MSGBOX_YESNO
+# 565 "data/rival_scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Harper_Town12_2
+# 569 "data/rival_scripts.pory"
+	msgbox Town12_HarperTextNo, MSGBOX_NPC
+Harper_Town12_1:
+# 571 "data/rival_scripts.pory"
+	release
+	return
+
+Harper_Town12_2:
+# 566 "data/rival_scripts.pory"
+	msgbox Town12_HarperTextYes, MSGBOX_NPC
+	goto Harper_Town12_1
+
+
+Redd_Town12::
+# 575 "data/rival_scripts.pory"
+	speakername CommonText_Redd
+# 576 "data/rival_scripts.pory"
+	msgbox Town12_ReddText, MSGBOX_NPC
+	return
+
+
+Jakson_Town12::
+# 580 "data/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 581 "data/rival_scripts.pory"
+	msgbox Town12_JaksonText, MSGBOX_NPC
+	return
+
+
+Baron_Town12::
+# 585 "data/rival_scripts.pory"
+	speakername CommonText_Baron
+# 586 "data/rival_scripts.pory"
+	msgbox Town12_BaronText, MSGBOX_NPC
+	return
+
+
 Baron_Town01_Text_0:
 # 102 "data/rival_scripts.pory"
 	.string "Left foot… Right foot…\nLeft foot… Right foot…$"

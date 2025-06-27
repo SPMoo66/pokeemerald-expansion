@@ -770,6 +770,7 @@ mapscripts LilycoveCity_MapScripts {
 
 script LilycoveCity_OnTransition {
 	setflag (FLAG_VISITED_LILYCOVE_CITY)
+	setflag (FLAG_TEMP_1)
 	setvar (VAR_CONTEST_HALL_STATE, 0)
 	if (flag(FLAG_CAUGHT_VICTINI) || !flag(FLAG_VICTINI_READY)) {
 		setflag (FLAG_TEMP_2)
@@ -779,6 +780,9 @@ script LilycoveCity_OnTransition {
 		call (Common_EventScript_SetAbnormalWeather)
 	}
 	call (Common_EventScript_SetupRivalGfxId)
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 12) {
+		call (EventScript_Clear_FlagTemp1)
+	}
 }
 
 script LilycoveCity_OnLoad {

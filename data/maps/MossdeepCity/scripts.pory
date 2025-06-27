@@ -413,7 +413,11 @@ mapscripts MossdeepCity_MapScripts {
 		if (flag(FLAG_SYS_WEATHER_CTRL)) {
 			call (Common_EventScript_SetAbnormalWeather)
 		}
+		setflag (FLAG_TEMP_1)
 		setflag (FLAG_TEMP_2)
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 12) {
+			call (EventScript_Clear_FlagTemp1)
+		}
 	}
 	MAP_SCRIPT_ON_RESUME {
 		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {

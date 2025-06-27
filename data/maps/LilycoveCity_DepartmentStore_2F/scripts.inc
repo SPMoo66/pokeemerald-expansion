@@ -1,5 +1,11 @@
 LilycoveCity_DepartmentStore_2F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, LilycoveCity_DepartmentStore_2F_OnTransition
 	.byte 0
+
+LilycoveCity_DepartmentStore_2F_OnTransition:
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 12, EventScript_Clear_FlagTemp1
+	end
 
 LilycoveCity_DepartmentStore_2F_EventScript_Cook::
 	msgbox LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly, MSGBOX_NPC

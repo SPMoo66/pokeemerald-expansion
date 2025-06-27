@@ -1535,82 +1535,92 @@ LilycoveCity_OnTransition::
 # 772 "data/maps/LilycoveCity/scripts.pory"
 	setflag FLAG_VISITED_LILYCOVE_CITY
 # 773 "data/maps/LilycoveCity/scripts.pory"
+	setflag FLAG_TEMP_1
+# 774 "data/maps/LilycoveCity/scripts.pory"
 	setvar VAR_CONTEST_HALL_STATE, 0
-# 774 "data/maps/LilycoveCity/scripts.pory"
+# 775 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_set FLAG_CAUGHT_VICTINI, LilycoveCity_OnTransition_2
-# 774 "data/maps/LilycoveCity/scripts.pory"
+# 775 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_unset FLAG_VICTINI_READY, LilycoveCity_OnTransition_2
 LilycoveCity_OnTransition_1:
-# 777 "data/maps/LilycoveCity/scripts.pory"
-	setflag FLAG_HIDE_LILYCOVE_CONTEST_HALL_REPORTER
 # 778 "data/maps/LilycoveCity/scripts.pory"
+	setflag FLAG_HIDE_LILYCOVE_CONTEST_HALL_REPORTER
+# 779 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_set FLAG_SYS_WEATHER_CTRL, LilycoveCity_OnTransition_7
 LilycoveCity_OnTransition_6:
-# 781 "data/maps/LilycoveCity/scripts.pory"
+# 782 "data/maps/LilycoveCity/scripts.pory"
 	call Common_EventScript_SetupRivalGfxId
+# 783 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 12
+	goto_if_eq LilycoveCity_OnTransition_9
 	return
 
 LilycoveCity_OnTransition_2:
-# 775 "data/maps/LilycoveCity/scripts.pory"
+# 776 "data/maps/LilycoveCity/scripts.pory"
 	setflag FLAG_TEMP_2
 	goto LilycoveCity_OnTransition_1
 
 LilycoveCity_OnTransition_7:
-# 779 "data/maps/LilycoveCity/scripts.pory"
+# 780 "data/maps/LilycoveCity/scripts.pory"
 	call Common_EventScript_SetAbnormalWeather
 	goto LilycoveCity_OnTransition_6
 
+LilycoveCity_OnTransition_9:
+# 784 "data/maps/LilycoveCity/scripts.pory"
+	call EventScript_Clear_FlagTemp1
+	return
+
 
 LilycoveCity_OnLoad::
-# 785 "data/maps/LilycoveCity/scripts.pory"
+# 789 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_unset FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_OnLoad_1
 	return
 
 LilycoveCity_OnLoad_1:
-# 786 "data/maps/LilycoveCity/scripts.pory"
+# 790 "data/maps/LilycoveCity/scripts.pory"
 	call LilycoveCity_EventScript_SetWailmerMetatiles
 	return
 
 
 BattleVictini::
-# 791 "data/maps/LilycoveCity/scripts.pory"
-	lock
-# 792 "data/maps/LilycoveCity/scripts.pory"
-	faceplayer
-# 793 "data/maps/LilycoveCity/scripts.pory"
-	setvar VAR_LAST_TALKED, 23
-# 794 "data/maps/LilycoveCity/scripts.pory"
-	playmoncry SPECIES_VICTINI, CRY_MODE_ENCOUNTER
 # 795 "data/maps/LilycoveCity/scripts.pory"
-	msgbox BattleVictini_Text_0
+	lock
 # 796 "data/maps/LilycoveCity/scripts.pory"
-	waitmoncry
+	faceplayer
 # 797 "data/maps/LilycoveCity/scripts.pory"
-	seteventmon SPECIES_VICTINI, 50
+	setvar VAR_LAST_TALKED, 23
 # 798 "data/maps/LilycoveCity/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	playmoncry SPECIES_VICTINI, CRY_MODE_ENCOUNTER
 # 799 "data/maps/LilycoveCity/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	msgbox BattleVictini_Text_0
 # 800 "data/maps/LilycoveCity/scripts.pory"
-	waitstate
+	waitmoncry
 # 801 "data/maps/LilycoveCity/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_VICTINI, 50
 # 802 "data/maps/LilycoveCity/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 803 "data/maps/LilycoveCity/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 804 "data/maps/LilycoveCity/scripts.pory"
+	waitstate
+# 805 "data/maps/LilycoveCity/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 806 "data/maps/LilycoveCity/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 807 "data/maps/LilycoveCity/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleVictini_2
 BattleVictini_1:
-# 806 "data/maps/LilycoveCity/scripts.pory"
+# 810 "data/maps/LilycoveCity/scripts.pory"
 	release
 	return
 
 BattleVictini_2:
-# 804 "data/maps/LilycoveCity/scripts.pory"
+# 808 "data/maps/LilycoveCity/scripts.pory"
 	setflag FLAG_CAUGHT_VICTINI
 	goto BattleVictini_1
 
 
 BattleVictini_Text_0:
-# 795 "data/maps/LilycoveCity/scripts.pory"
+# 799 "data/maps/LilycoveCity/scripts.pory"
 	.string "Ta-ta-ta-tah!$"

@@ -4,6 +4,8 @@ MossdeepCity_Gym_MapScripts::
 
 MossdeepCity_Gym_OnTransition:
 	setflag FLAG_TEMP_HIDE_FOLLOWER @ Hide follower since it can collide with moving statues
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 12, EventScript_Clear_FlagTemp1
 	end
 
 MossdeepCity_Gym_EventScript_WarpToEntrance::

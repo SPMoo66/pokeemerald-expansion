@@ -703,15 +703,15 @@ text Town08_HarperText {
 text Town08_JaksonText {
 	format(	"Hey, {PLAYER}.\p"
 			"What's been your favorite route so far?\p"
-			"I thinkk the cacti in the desert on\n"
+			"I think the cacti in the desert on\n"
 			"Route 111 look even better than\l"
 			"I had expected.\p"
 			"And Route 113's always a blast.\p"
 			"Though maybe you like the coastal\n"
 			"routes more? Gotta love that signature\l"
 			"Hoenn water.\p"
-			"Good thing the mods adjust it so there's\n"
-			"one percent less of it.\p"
+			"Good thing the mods adjust it so\n"
+			"there's one percent less of it.\p"
 			"Perfection.")
 }
 

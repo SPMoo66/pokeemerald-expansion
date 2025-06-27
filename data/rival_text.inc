@@ -826,7 +826,7 @@ Town08_JaksonText::
 # 703 "data/rival_text.pory"
 	.string "Hey, {PLAYER}.\p"
 	.string "What's been your favorite route so far?\p"
-	.string "I thinkk the cacti in the desert on\n"
+	.string "I think the cacti in the desert on\n"
 	.string "Route 111 look even better than\l"
 	.string "I had expected.\p"
 	.string "And Route 113's always a blast.\p"
@@ -834,8 +834,7 @@ Town08_JaksonText::
 	.string "routes more? Gotta love that signature\l"
 	.string "Hoenn water.\p"
 	.string "Good thing the mods adjust it so\n"
-	.string "there's\n"
-	.string "one percent less of it.\p"
+	.string "there's one percent less of it.\p"
 	.string "Perfection.$"
 
 Town08_ReddText::

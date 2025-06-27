@@ -368,32 +368,143 @@ text Scene03_SakuraText {
 
 # Battle02
 
+text Battle02_BaronText_PreBattle {
+	"Ah!\p"
+	"Oh, it's just you, {PLAYER}\p"
+	"This is the boss room place, right?\p"
+	"That Jakson said I should try these\n"
+	"to test if I am getting any better.\p"
+	"… … …\p"
+	"Oh!\p"
+	"How about we do the thing?\n"
+	"You'd tell me what I'm doing wrong."
+}
+
+text Battle02_BaronText_BattleVictory {
+	"Oh no… Does that mean I need to\n"
+	"go back to the cave?"
+}
+
+text Battle02_BaronText_PostBattle {
+	"You won again. So what did I do\n"
+	"wrong this time?\p"
+	"… … …\p"
+	"Is it that obvious? So much so that\n"
+	"you're unwilling to say anything?\p"
+	"I was hoping to learn that the gym\n"
+	"would be a smooth experience for me.\p"
+	"Well, if it's that obvious then I'll do\n"
+	"my best to figure it out by trying!\p"
+	"The last one had a lovely girl who was\n"
+	"very welcoming and educational.\p"
+	"I look forward to learning from this\n"
+	"sweet ‘leader’ as well.\p"
+	"Thank you for the battle, {PLAYER}.\p"
+	"It puts a lot of this into perspective\n"
+	"for me."
+}
+
 text Battle02_HarperText_PreBattle {
-	"Intro text"
+	"Oh, hey there.\p"
+	"I was just heading out to get some\n"
+	"more Pokéballs…\p"
+	"Who'd have thought that they run\n"
+	"out at a point?\p"
+	"Actually, maybe this wouldn't be a bad\n"
+	"time to try that battling thing again?\p"
+	"So, I just press… what button?\n"
+	"What does ‘duel’ mea-"
 }
 
 text Battle02_HarperText_BattleVictory {
-	"You won"
+	"Ach… Dang, you got me again."
 }
 
 text Battle02_HarperText_PostBattle {
-	"I lost"
+	"Well, I did a little better that time, right?\p"
+	"I haven't been avoiding the NPCs.\n"
+	"…as much as before.\p"
+	"Though, I can't tell if it's experience or\n"
+	"natural talent that differentiates us.\p"
+	"I sort of wanna give you a real\n"
+	"challenge at some point.\p"
+	"See what your face looks like when I've\n"
+	"got you beneath my heel for once, haha.\p"
+	"Better yet, I can go and-\p"
+	"Oh, wait. I need to heal. See ya!"
+}
+
+text Battle02_JaksonText_PreBattle {
+	"Hey, {PLAYER}.\p"
+	"It's a really long walk all the way from\n"
+	"Mauville to here in Fallarbor, isn't it?\p"
+	"One could say the journey is the trial of\n"
+	"any adventure. The struggle, the loss…\p"
+	"… … …\p"
+	"Heh.\p"
+	"Yeah, of course we're going to\n"
+	"battle!\p"
+	"Consider me generous. You had lots of\n"
+	"time to build a team since last time.\p"
+	"Plus, I even gave you the chance to\n"
+	"stop by the Pokémon Center, didn't I?"
+}
+
+text Battle02_JaksonText_BattleVictory {
+	"Hah, and I thought I could get you this\n"
+	"time!"
+}
+
+text Battle02_JaksonText_PostBattle {
+	"One wrong move and it would've\n"
+	"gone the other way, I think.\p"
+	"You're doing well so far, {PLAYER}!\p"
+	"I hope the updated gyms haven't been\n"
+	"too challenging for you so far.\p"
+	"But you did welle nough now that I\n"
+	"have confidence in you.\p"
+	"See you again, {PLAYER}.\n"
+	"I'm not stopping either!"
 }
 
 text Battle02_ReddText_PreBattle {
-	"Normal intro text"
+	"Yo! {PLAYER}! Finally caught up?\p"
+	"Gotta say, not the worst selection of\n"
+	"Pokémon I've seen before.\p"
+	"Enough that I can be sure to only\n"
+	"get the best of the best.\p"
+	"How about we put your batch to\n"
+	"the test!?"
 }
 
 text Battle02_ReddText_PreBattleAlt {
-	"Side intro text"
+	"Yo! {PLAYER}! Finally caught up?\p"
+	"Don't tell me that you're trying to\n"
+	"avoid me now.\p"
+	"Gotta say, not the worst selection of\n"
+	"Pokémon I've seen before.\p"
+	"Enough that I can be sure to only\n"
+	"get the best of the best.\p"
+	"How about we put your batch to\n"
+	"the test!?"
 }
 
 text Battle02_ReddText_BattleVictory {
-	"You won"
+	"Woah, take it easy {PLAYER}…"
 }
 
 text Battle02_ReddText_PostBattle {
-	"I lost"
+	"Sheesh, you didn't need to…\p"
+	"…\p"
+	"Hmm… What was that move you used?\n"
+	"It sort of flipped the battle.\p"
+	"Tsk, you know waht, never mind. Not\n"
+	"like it's worth trying to keep up with.\p"
+	"I just need to buckle down and do my\n"
+	"Pokémon proud. No excuses for me.\p"
+	"Especially if you all are going to be\n"
+	"in this for the long run.\p"
+	"See ya around, {PLAYER}."
 }
 
 text Battle02_SakuraText_PreBattle {
@@ -406,18 +517,21 @@ text Battle02_SakuraText_PreBattle {
 }
 
 text Battle02_SakuraText_BattleVictory {
-	format(	"Oh darn, you've survived.")
+	format(	"Darn, you've survived. So much for that life insurance I took out…")
 }
 
 text Battle02_SakuraText_PostBattle {
-	format(	"One one hand I wish you were easy to\n"
-			"beat down, but prey that puts up a\l"
-			"fight is more interesting.\p"
+	format(	"Oh well{EMOJI_TILDE}\p"
+			"On one hand, it would be fun if you\n"
+			"were easy to beat, but…\p"
+			"A cat CAN be at their cutest when\n"
+			"they get to play with their food, too.\p"
 			"Go on then, I suppose.\n"
-			"Deliver your Letter to Steven.\p"
-			"He's a cutie…\n"
-			"And I'm lookng forward to crushing\l"
-			"him at the end of this too{EMOJI_TILDE}{UNK_SPACER}")
+			"Deliver your ‘Letter to Steven’.\p"
+			"Watch out, though. He's so cool that\n"
+			"it starts to veer into cute territory.\p"
+			"If you aren't careful you might get\n"
+			"lost in his eyes. And you're MY rival.")
 }
 
 
@@ -738,6 +852,69 @@ text Town08_SakuraText {
 			"{PLAYER}, when this is over we\n"
 			"shall build our own hot springs!\p"
 			"It's the perfect plan!")
+}
+
+
+# Battle03
+
+text Battle03_BaronText_PreBattle {
+	""
+}
+
+text Battle03_BaronText_BattleVictory {
+	""
+}
+
+text Battle03_BaronText_PostBattle {
+	""
+}
+
+text Battle03_HarperText_PreBattle {
+	""
+}
+
+text Battle03_HarperText_BattleVictory {
+	""
+}
+
+text Battle03_HarperText_PostBattle {
+	""
+}
+
+text Battle03_JaksonText_PreBattle {
+	""
+}
+
+text Battle03_JaksonText_BattleVictory {
+	""
+}
+
+text Battle03_JaksonText_PostBattle {
+	""
+}
+
+text Battle03_ReddText_PreBattle {
+	""
+}
+
+text Battle03_ReddText_BattleVictory {
+	""
+}
+
+text Battle03_ReddText_PostBattle {
+	""
+}
+
+text Battle03_SakuraText_PreBattle {
+	""
+}
+
+text Battle03_SakuraText_BattleVictory {
+	""
+}
+
+text Battle03_SakuraText_PostBattle {
+	""
 }
 
 

@@ -7,8 +7,8 @@ MtPyre_Summit_OnTransition:
 	end
 
 MtPyre_Summit_EventScript_SetArchieMaxiePositions::
-	setobjectxyperm LOCALID_MT_PYRE_SUMMIT_MAXIE, 23, 6
-	setobjectxyperm LOCALID_MT_PYRE_SUMMIT_ARCHIE, 22, 6
+	setobjectxyperm LOCALID_MT_PYRE_SUMMIT_MAXIE, 22, 6
+	setobjectxyperm LOCALID_MT_PYRE_SUMMIT_ARCHIE, 21, 6
 	end
 
 MtPyre_Summit_EventScript_TeamAquaTrigger0::

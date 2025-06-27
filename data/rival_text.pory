@@ -370,7 +370,7 @@ text Scene03_SakuraText {
 
 text Battle02_BaronText_PreBattle {
 	"Ah!\p"
-	"Oh, it's just you, {PLAYER}\p"
+	"Oh, it's just you, {PLAYER}.\p"
 	"This is the boss room place, right?\p"
 	"That Jakson said I should try these\n"
 	"to test if I am getting any better.\p"

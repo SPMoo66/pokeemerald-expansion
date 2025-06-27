@@ -763,9 +763,9 @@ script PetalburgCity_EventScript_WallyBattle {
 					"I have a long way to go, but I hope I can be up there on the stage with you some day.\p"
 					"I'll be back, and I'll give you a challenge you won't forget!"))
 	closemessage
-	fadescreen (FADE_TO_BLACK)
+	fadescreenswapbuffers (FADE_TO_BLACK)
 	removeobject (LOCALID_PETALBURG_WALLY)
-	fadescreen (FADE_FROM_BLACK)
+	fadescreenswapbuffers (FADE_FROM_BLACK)
 	setvar (VAR_PETALBURG_CITY_STATE, 6)
 	clearflag (FLAG_CHALLENGING_TRAINER)
 	fadedefaultbgm

@@ -104,6 +104,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Redd_Town04",
       "flag": "FLAG_TEMP_1"
+    },
+    {
+      "local_id": "BARON_BATTLE02",
+      "graphics_id": "OBJ_EVENT_GFX_BARON",
+      "x": 9,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Baron_Battle02",
+      "flag": "FLAG_TEMP_2"
     }
   ],
   "warp_events": [
@@ -144,7 +158,15 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var_value": "0",
+      "script": "Baron_Battle02"
+    }
   ],
   "bg_events": [
     {

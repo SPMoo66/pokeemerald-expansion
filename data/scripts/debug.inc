@@ -164,8 +164,10 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
-	warp MAP_PETALBURG_CITY, 1
-	setvar VAR_PETALBURG_CITY_STATE, 5
+	warp MAP_DEWFORD_TOWN, 1
+	setvar VAR_EMERALBODY_RIVAL, 0
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 0
+	setflag FLAG_BADGE02_GET
 	release
 	end
 

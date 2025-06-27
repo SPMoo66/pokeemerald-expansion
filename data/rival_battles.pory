@@ -45,6 +45,45 @@ movement Harper_PlayerMoves {
 }
 
 
+# Sakura
+
+const SAKURA_BATTLE02 = 3
+
+script Sakura_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
+	if (var(VAR_EMERALBODY_RIVAL) == 4) { // Check if Sakura is your rival
+		lock
+		call (Common_EventScript_PlayEmRivalBgm)
+		addobject (SAKURA_BATTLE02)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
+		waitmovement (0)
+		playse (SE_PIN)
+		applymovement (LOCALID_PLAYER, Common_Movement_ExclamationMark)
+		waitmovement (0)
+		delay (60)
+		applymovement (SAKURA_BATTLE02, Common_Movement_WalkUp4)
+		waitmovement (0)
+		playse (SE_LEDGE)
+		applymovement (SAKURA_BATTLE02, Common_Movement_JumpUp)
+		waitmovement (0)
+		playse (SE_M_CUT)
+		waitse
+		call (GetRivalForNameBox)
+		msgbox (Battle02_SakuraText_PreBattle, MSGBOX_DEFAULT)
+		call (GetRivalMusic)
+		trainerbattle_no_intro (TRAINER_SAKURA_2, Battle02_SakuraText_BattleVictory)
+		call (GetRivalForNameBox)
+		msgbox(Battle02_SakuraText_PostBattle)
+		closemessage
+		applymovement (SAKURA_BATTLE02, Common_Movement_WalkDown5)
+		waitmovement (0)
+		removeobject (SAKURA_BATTLE02)
+		fadedefaultbgm
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
+		release
+	}
+}
+
+
 # Redd
 
 const REDD_BATTLE02 = 40
@@ -91,7 +130,7 @@ script Redd_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		call (GetRivalMusic)
 		trainerbattle_no_intro (TRAINER_REDD_2, Battle02_ReddText_BattleVictory)
 		call (GetRivalForNameBox)
-		msgbox(Battle02_ReddText_PostBattle)
+		msgbox (Battle02_ReddText_PostBattle)
 		closemessage
 		applymovement (REDD_BATTLE02, Common_Movement_WalkUp6)
 		waitmovement (0)
@@ -104,40 +143,39 @@ script Redd_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 }
 
 
-# Sakura
+# Baron
 
-const SAKURA_BATTLE02 = 3
+const BARON_BATTLE02 = 7
 
-script Sakura_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
-	if (var(VAR_EMERALBODY_RIVAL) == 4) { // Check if Sakura is your rival
+script Baron_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
+	if (var(VAR_EMERALBODY_RIVAL) == 0) { // Check if Baron is your rival
 		lock
 		call (Common_EventScript_PlayEmRivalBgm)
-		addobject (SAKURA_BATTLE02)
-		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
-		waitmovement (0)
-		playse (SE_PIN)
-		applymovement (LOCALID_PLAYER, Common_Movement_ExclamationMark)
-		waitmovement (0)
-		delay (60)
-		applymovement (SAKURA_BATTLE02, Common_Movement_WalkUp4)
-		waitmovement (0)
-		playse (SE_LEDGE)
-		applymovement (SAKURA_BATTLE02, Common_Movement_JumpUp)
-		waitmovement (0)
-		playse (SE_M_CUT)
-		waitse
 		call (GetRivalForNameBox)
-		msgbox (Battle02_SakuraText_PreBattle, MSGBOX_DEFAULT)
+		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+		if (var(VAR_TEMP_1) == 9) { // Trigger spot
+			applymovement (BARON_BATTLE02, Common_Movement_WalkInPlaceUp)
+			waitmovement (0)
+			delay (50)
+			applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
+			applymovement (BARON_BATTLE02, Common_Movement_WalkUp)
+			waitmovement (0)
+		}
+		else {
+			faceplayer
+		}
+		msgbox (Battle02_BaronText_PreBattle, MSGBOX_DEFAULT)
 		call (GetRivalMusic)
-		trainerbattle_no_intro (TRAINER_SAKURA_2, Battle02_SakuraText_BattleVictory)
+		trainerbattle_no_intro (TRAINER_BARON_2, Battle02_BaronText_BattleVictory)
 		call (GetRivalForNameBox)
-		msgbox(Battle02_SakuraText_PostBattle)
+		msgbox (Battle02_BaronText_PostBattle)
 		closemessage
-		applymovement (SAKURA_BATTLE02, Common_Movement_WalkDown5)
-		waitmovement (0)
-		removeobject (SAKURA_BATTLE02)
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
+		setflag (FLAG_TEMP_2)
+		fadescreenswapbuffers (FADE_TO_BLACK)
+		removeobject (BARON_BATTLE02)
+		fadescreenswapbuffers (FADE_FROM_BLACK)
 		release
 	}
 }

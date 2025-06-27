@@ -501,7 +501,7 @@ Scene03_SakuraText::
 Battle02_BaronText_PreBattle::
 # 371 "data/rival_text.pory"
 	.string "Ah!\p"
-	.string "Oh, it's just you, {PLAYER}\p"
+	.string "Oh, it's just you, {PLAYER}.\p"
 	.string "This is the boss room place, right?\p"
 	.string "That Jakson said I should try these\n"
 	.string "to test if I am getting any better.\p"

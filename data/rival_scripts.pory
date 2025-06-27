@@ -48,14 +48,12 @@ script Rival_Scene01 {
 		}
 		closemessage
 		setvar (VAR_EMERALBODY_RIVAL_STATE, 1)
-		fadescreen (FADE_TO_BLACK)
+		fadescreenswapbuffers (FADE_TO_BLACK)
 		fadedefaultbgm
-		applymovement (RIVAL_LITTLEROOT, Rival_Scene01_Move2)
-		waitmovement (0)
 		removeobject (RIVAL_LITTLEROOT)
 		clearflag (FLAG_TEMP_1)
 		addobject (BARON_LITTLEROOT)
-		fadescreen (FADE_FROM_BLACK)
+		fadescreenswapbuffers (FADE_FROM_BLACK)
 	}
 	release
 }
@@ -283,7 +281,7 @@ script Rival_Scene03 {
 			msgbox(Scene03_BaronText)
 	}
 	closemessage
-	fadescreen (FADE_TO_BLACK)
+	fadescreenswapbuffers (FADE_TO_BLACK)
 	setobjectxy (LOCALID_PLAYER, 11, 19)
 	setvar (VAR_0x8004, 11)
 	setvar (VAR_0x8005, 19)
@@ -304,7 +302,7 @@ script Rival_Scene03 {
 	setobjectxy (JAKSON_RUSTBORO, 12, 19)
 	setobjectxy (RIVAL_RUSTBORO, 0, 6)
 	applymovement (LOCALID_PLAYER, Common_Movement_FaceUp)
-	fadescreen (FADE_FROM_BLACK)
+	fadescreenswapbuffers (FADE_FROM_BLACK)
 	message (format ("You exchanged PokéNav info with your friends."))
 	applymovement (JAKSON_RUSTBORO, Common_Movement_WalkInPlaceLeft)
 	waitmovement (0)
@@ -321,13 +319,13 @@ script Rival_Scene03 {
 	waitmovement (0)
 	delay (50)
 	closemessage
-	fadescreen (FADE_TO_BLACK)
+	fadescreenswapbuffers (FADE_TO_BLACK)
 	removeobject (REDD_RUSTBORO)
 	removeobject (SAKURA_RUSTBORO)
 	removeobject (BARON_RUSTBORO)
 	removeobject (HARPER_RUSTBORO)
 	removeobject (JAKSON_RUSTBORO)
-	fadescreen (FADE_FROM_BLACK)
+	fadescreenswapbuffers (FADE_FROM_BLACK)
 	fadedefaultbgm
 	setflag (FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL)
 	release

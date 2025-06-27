@@ -62,10 +62,12 @@ Route120_EventScript_OpenZarudeArea::
 	return
 
 Route120_OnTransition:
+	setflag FLAG_TEMP_1
 	call GabbyAndTy_EventScript_UpdateLocation
 	call Route120_EventScript_SetWeather
 	call Common_EventScript_SetupEmRivalGfxId
 	call_if_eq VAR_ROUTE120_STATE, 1, Route120_EventScript_HideRival
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 10, EventScript_Clear_FlagTemp1 @ Show Rivals
 	end
 
 Route120_EventScript_SetWeather::

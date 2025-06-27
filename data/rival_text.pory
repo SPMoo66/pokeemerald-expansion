@@ -757,7 +757,7 @@ text Town09_BaronText {
 text Town09_HarperText {
 	format(	"Wow.\p"
 			"You know, I've made tons of comments\n"
-			"about how NPC everyon acts.\p"
+			"about how NPC everyone acts.\p"
 			"But this really takes the cake, no?\p"
 			"A group of people that move like literal\n"
 			"robots, who will stay still forever if\l"
@@ -771,8 +771,8 @@ text Town09_HarperText {
 text Town09_JaksonText {
 	format(	"Hey there.\p"
 			"Are you about to go for Fortree's Gym?\p"
-			"The type changes for the gyms are quite\n"
-			"the shakeup.\p"
+			"The type changes for the gyms are\n"
+			"quite the shakeup.\p"
 			"Don't worry, I didn't add any custom\n"
 			"types like Crab, Gun, or Furry.\p"
 			"Not that I wasn't tempted.\p"

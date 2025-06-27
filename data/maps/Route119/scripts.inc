@@ -16,11 +16,13 @@ Route119_EventScript_TryRemoveKecleon::
 	return
 
 Route119_OnTransition:
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
 	call Common_EventScript_SetupRivalGfxId
 	call Common_EventScript_SetupRivalOnBikeGfxId
 	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 1, Route119_EventScript_MoveInstituteWorkersDownstairs
 	special SetRoute119Weather
-	setflag FLAG_TEMP_2
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 9, EventScript_Clear_FlagTemp1 @ Show Rivals
 	call_if_set FLAG_BADGE08_GET, Route119_EventScript_ZeraoraCaughtCheck
 	end
 

@@ -6,16 +6,13 @@ FortreeCity_MapScripts::
 FortreeCity_OnTransition:
 	setflag FLAG_VISITED_FORTREE_CITY
 	setflag FLAG_TEMP_1
-	call_if_unset FLAG_BADGE06_GET, FortreeCity_ShowLooker1
+	setflag FLAG_TEMP_2
+	call_if_unset FLAG_BADGE06_GET, FortreeCity_ShowLooker
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 9, EventScript_Clear_FlagTemp2 @ Show Rivals
 	end
 
-FortreeCity_ShowLooker1:
-	compare VAR_LOOKER_ROCKET, 8
-	goto_if_eq FortreeCity_ShowLooker2
-	return
-	
-FortreeCity_ShowLooker2:
-	clearflag FLAG_TEMP_1
+FortreeCity_ShowLooker:
+	call_if_eq VAR_LOOKER_ROCKET, 8, EventScript_Clear_FlagTemp1 @ Show Looker
 	return
 
 FortreeCity_OnResume:

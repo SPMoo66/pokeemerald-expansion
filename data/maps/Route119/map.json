@@ -638,6 +638,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Sakura_Town09",
       "flag": "FLAG_TEMP_1"
+    },
+    {
+      "local_id": "JAKSON_BATTLE03",
+      "graphics_id": "OBJ_EVENT_GFX_JAKSON",
+      "x": 30,
+      "y": 103,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
     }
   ],
   "warp_events": [
@@ -821,6 +835,24 @@
       "y": 13,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_ROUTE119_CYCLE"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 97,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var_value": "1",
+      "script": "Jakson_Battle03"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 97,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var_value": "1",
+      "script": "Jakson_Battle03"
     }
   ],
   "bg_events": [

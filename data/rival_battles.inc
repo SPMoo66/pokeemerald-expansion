@@ -380,128 +380,200 @@ Baron_Battle02_4:
 
 
 Jakson_Battle02::
-# 225 "data/rival_battles.pory"
+# 226 "data/rival_battles.pory"
 	compare VAR_EMERALBODY_RIVAL, 2
 	goto_if_eq Jakson_Battle02_1
 	return
 
 Jakson_Battle02_1:
-# 226 "data/rival_battles.pory"
-	lock
 # 227 "data/rival_battles.pory"
-	call Common_EventScript_PlayEmRivalBgm
+	lock
 # 228 "data/rival_battles.pory"
-	delay 30
+	call Common_EventScript_PlayEmRivalBgm
 # 229 "data/rival_battles.pory"
-	call GetRivalForNameBox
+	delay 30
 # 230 "data/rival_battles.pory"
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	call GetRivalForNameBox
 # 231 "data/rival_battles.pory"
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 232 "data/rival_battles.pory"
 	compare VAR_TEMP_0, 5
 	goto_if_eq Jakson_Battle02_4
 Jakson_Battle02_3:
-# 253 "data/rival_battles.pory"
-	msgbox Battle02_JaksonText_PreBattle, MSGBOX_DEFAULT
 # 254 "data/rival_battles.pory"
-	call GetRivalMusic
+	msgbox Battle02_JaksonText_PreBattle, MSGBOX_DEFAULT
 # 255 "data/rival_battles.pory"
-	trainerbattle_no_intro TRAINER_JAKSON_2, Battle02_JaksonText_BattleVictory
+	call GetRivalMusic
 # 256 "data/rival_battles.pory"
-	call GetRivalForNameBox
+	trainerbattle_no_intro TRAINER_JAKSON_2, Battle02_JaksonText_BattleVictory
 # 257 "data/rival_battles.pory"
-	msgbox Battle02_JaksonText_PostBattle
+	call GetRivalForNameBox
 # 258 "data/rival_battles.pory"
-	closemessage
+	msgbox Battle02_JaksonText_PostBattle
 # 259 "data/rival_battles.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	closemessage
 # 260 "data/rival_battles.pory"
-	removeobject 7
+	fadescreenswapbuffers FADE_TO_BLACK
 # 261 "data/rival_battles.pory"
-	removeobject 6
+	removeobject 7
 # 262 "data/rival_battles.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	removeobject 6
 # 263 "data/rival_battles.pory"
-	fadedefaultbgm
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 264 "data/rival_battles.pory"
-	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
+	fadedefaultbgm
 # 265 "data/rival_battles.pory"
-	setflag FLAG_TEMP_2
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
 # 266 "data/rival_battles.pory"
+	setflag FLAG_TEMP_2
+# 267 "data/rival_battles.pory"
 	release
 	return
 
 Jakson_Battle02_4:
-# 232 "data/rival_battles.pory"
-	switch VAR_TEMP_1
 # 233 "data/rival_battles.pory"
+	switch VAR_TEMP_1
+# 234 "data/rival_battles.pory"
 	case 9, Jakson_Battle02_8
-# 236 "data/rival_battles.pory"
+# 237 "data/rival_battles.pory"
 	case 11, Jakson_Battle02_9
-# 239 "data/rival_battles.pory"
+# 240 "data/rival_battles.pory"
 	case 12, Jakson_Battle02_10
-# 242 "data/rival_battles.pory"
+# 243 "data/rival_battles.pory"
 	case 13, Jakson_Battle02_11
-# 245 "data/rival_battles.pory"
+# 246 "data/rival_battles.pory"
 	case 14, Jakson_Battle02_12
 Jakson_Battle02_6:
-# 250 "data/rival_battles.pory"
-	applymovement 7, Common_Movement_WalkRight2
 # 251 "data/rival_battles.pory"
+	applymovement 7, Common_Movement_WalkRight2
+# 252 "data/rival_battles.pory"
 	waitmovement 0
 	goto Jakson_Battle02_3
 
 Jakson_Battle02_8:
-# 234 "data/rival_battles.pory"
-	applymovement 7, Common_Movement_WalkUp
 # 235 "data/rival_battles.pory"
+	applymovement 7, Common_Movement_WalkUp
+# 236 "data/rival_battles.pory"
 	waitmovement 0
 	goto Jakson_Battle02_6
 
 Jakson_Battle02_9:
-# 237 "data/rival_battles.pory"
-	applymovement 7, Common_Movement_WalkDown
 # 238 "data/rival_battles.pory"
+	applymovement 7, Common_Movement_WalkDown
+# 239 "data/rival_battles.pory"
 	waitmovement 0
 	goto Jakson_Battle02_6
 
 Jakson_Battle02_10:
-# 240 "data/rival_battles.pory"
-	applymovement 7, Common_Movement_WalkDown2
 # 241 "data/rival_battles.pory"
+	applymovement 7, Common_Movement_WalkDown2
+# 242 "data/rival_battles.pory"
 	waitmovement 0
 	goto Jakson_Battle02_6
 
 Jakson_Battle02_11:
-# 243 "data/rival_battles.pory"
-	applymovement 7, Common_Movement_WalkDown3
 # 244 "data/rival_battles.pory"
+	applymovement 7, Common_Movement_WalkDown3
+# 245 "data/rival_battles.pory"
 	waitmovement 0
 	goto Jakson_Battle02_6
 
 Jakson_Battle02_12:
-# 246 "data/rival_battles.pory"
-	applymovement 7, Common_Movement_WalkDown4
 # 247 "data/rival_battles.pory"
+	applymovement 7, Common_Movement_WalkDown4
+# 248 "data/rival_battles.pory"
 	waitmovement 0
 	goto Jakson_Battle02_6
 
 
 Jakson_Battle02_Block::
-# 271 "data/rival_battles.pory"
-	lock
 # 272 "data/rival_battles.pory"
-	faceplayer
+	lock
 # 273 "data/rival_battles.pory"
-	msgbox Jakson_Battle02_Block_Text_0
+	faceplayer
 # 274 "data/rival_battles.pory"
-	playmoncry SPECIES_MURKROW, CRY_MODE_NORMAL
+	msgbox Jakson_Battle02_Block_Text_0
 # 275 "data/rival_battles.pory"
-	waitmoncry
+	playmoncry SPECIES_MURKROW, CRY_MODE_NORMAL
 # 276 "data/rival_battles.pory"
+	waitmoncry
+# 277 "data/rival_battles.pory"
 	release
 	return
 
 
+Jakson_Battle03::
+# 281 "data/rival_battles.pory"
+	compare VAR_EMERALBODY_RIVAL, 2
+	goto_if_eq Jakson_Battle03_1
+	return
+
+Jakson_Battle03_1:
+# 282 "data/rival_battles.pory"
+	lock
+# 283 "data/rival_battles.pory"
+	call Common_EventScript_PlayEmRivalBgm
+# 284 "data/rival_battles.pory"
+	call GetRivalForNameBox
+# 285 "data/rival_battles.pory"
+	addobject 48
+# 286 "data/rival_battles.pory"
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 287 "data/rival_battles.pory"
+	compare VAR_TEMP_0, 31
+	goto_if_eq Jakson_Battle03_4
+Jakson_Battle03_3:
+# 290 "data/rival_battles.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
+# 291 "data/rival_battles.pory"
+	applymovement 48, Common_Movement_WalkUp5
+# 292 "data/rival_battles.pory"
+	waitmovement 0
+# 293 "data/rival_battles.pory"
+	msgbox Battle03_JaksonText_PreBattle, MSGBOX_DEFAULT
+# 294 "data/rival_battles.pory"
+	call GetRivalMusic
+# 296 "data/rival_battles.pory"
+	call GetRivalForNameBox
+# 297 "data/rival_battles.pory"
+	msgbox Battle03_JaksonText_PostBattle
+# 298 "data/rival_battles.pory"
+	closemessage
+# 299 "data/rival_battles.pory"
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2
+# 300 "data/rival_battles.pory"
+	compare VAR_TEMP_0, 31
+	goto_if_eq Jakson_Battle03_7
+# 305 "data/rival_battles.pory"
+	applymovement 48, Common_Movement_WalkRight
+# 306 "data/rival_battles.pory"
+	waitmovement 0
+Jakson_Battle03_6:
+# 308 "data/rival_battles.pory"
+	applymovement 48, Common_Movement_WalkUp7
+# 309 "data/rival_battles.pory"
+	waitmovement 0
+# 310 "data/rival_battles.pory"
+	removeobject 48
+# 311 "data/rival_battles.pory"
+	fadedefaultbgm
+# 312 "data/rival_battles.pory"
+	release
+	return
+
+Jakson_Battle03_4:
+# 288 "data/rival_battles.pory"
+	setobjectxy 48, 31, 103
+	goto Jakson_Battle03_3
+
+Jakson_Battle03_7:
+# 301 "data/rival_battles.pory"
+	applymovement 48, Common_Movement_WalkLeft
+# 302 "data/rival_battles.pory"
+	waitmovement 0
+	goto Jakson_Battle03_6
+
+
 Jakson_Battle02_Block_Text_0:
-# 273 "data/rival_battles.pory"
+# 274 "data/rival_battles.pory"
 	.string "The Murkrow sees you trying to sneak\naround and actively blocks your\lefforts.$"

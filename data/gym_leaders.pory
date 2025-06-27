@@ -587,6 +587,7 @@ text LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons {
 	"see me, bring at least two Pokémon.$"
 }
 
+
 # PETALBURG CITY (GYM #5)
 
 script PetalburgCity_Gym_EventScript_NormanBattle {
@@ -601,6 +602,7 @@ script PetalburgCity_Gym_EventScript_NormanBattle {
 	setflag (FLAG_DEFEATED_PETALBURG_GYM)
 	setvar (VAR_PETALBURG_GYM_STATE, 7)
 	setflag (FLAG_BADGE05_GET)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 9)
 	special (ResetHealLocationFromDewford)
 	call (EventScript_HideMrBriney)
 	setflag (FLAG_HIDE_MAUVILLE_GYM_WATTSON)
@@ -804,6 +806,7 @@ script FortreeCity_Gym_EventScript_WinonaDefeated {
 	msgbox (FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis, MSGBOX_DEFAULT)
 	setflag (FLAG_DEFEATED_FORTREE_GYM)
 	setflag (FLAG_BADGE06_GET)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 10)
 	setvar (VAR_0x8008, 6)
 	call (Common_EventScript_SetGymTrainers)
 	giveitem (ITEM_TM_DUAL_WINGBEAT)

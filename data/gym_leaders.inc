@@ -423,448 +423,452 @@ LavaridgeTown_Gym_1F_EventScript_FlanneryRematch::
 
 
 PetalburgCity_Gym_EventScript_NormanBattle::
-# 593 "data/gym_leaders.pory"
-	setflag FLAG_CHALLENGING_TRAINER
 # 594 "data/gym_leaders.pory"
-	msgbox PetalburgCity_Gym_Text_NormanIntro, MSGBOX_DEFAULT
+	setflag FLAG_CHALLENGING_TRAINER
 # 595 "data/gym_leaders.pory"
-	trainerbattle_no_intro TRAINER_NORMAN_1, PetalburgCity_Gym_Text_NormanDefeat
+	msgbox PetalburgCity_Gym_Text_NormanIntro, MSGBOX_DEFAULT
 # 596 "data/gym_leaders.pory"
-	clearflag FLAG_CHALLENGING_TRAINER
+	trainerbattle_no_intro TRAINER_NORMAN_1, PetalburgCity_Gym_Text_NormanDefeat
 # 597 "data/gym_leaders.pory"
-	message PetalburgCity_Gym_Text_ReceivedBalanceBadge
+	clearflag FLAG_CHALLENGING_TRAINER
 # 598 "data/gym_leaders.pory"
-	waitmessage
+	message PetalburgCity_Gym_Text_ReceivedBalanceBadge
 # 599 "data/gym_leaders.pory"
-	call Common_EventScript_PlayGymBadgeFanfare
+	waitmessage
 # 600 "data/gym_leaders.pory"
-	msgbox PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis, MSGBOX_DEFAULT
+	call Common_EventScript_PlayGymBadgeFanfare
 # 601 "data/gym_leaders.pory"
-	setflag FLAG_DEFEATED_PETALBURG_GYM
+	msgbox PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis, MSGBOX_DEFAULT
 # 602 "data/gym_leaders.pory"
-	setvar VAR_PETALBURG_GYM_STATE, 7
+	setflag FLAG_DEFEATED_PETALBURG_GYM
 # 603 "data/gym_leaders.pory"
-	setflag FLAG_BADGE05_GET
+	setvar VAR_PETALBURG_GYM_STATE, 7
 # 604 "data/gym_leaders.pory"
-	special ResetHealLocationFromDewford
+	setflag FLAG_BADGE05_GET
 # 605 "data/gym_leaders.pory"
-	call EventScript_HideMrBriney
+	setvar VAR_EMERALBODY_RIVAL_STATE, 9
 # 606 "data/gym_leaders.pory"
-	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
+	special ResetHealLocationFromDewford
 # 607 "data/gym_leaders.pory"
-	clearflag FLAG_HIDE_MAUVILLE_CITY_WATTSON
+	call EventScript_HideMrBriney
 # 608 "data/gym_leaders.pory"
-	setvar VAR_0x8008, 5
+	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
 # 609 "data/gym_leaders.pory"
-	call Common_EventScript_SetGymTrainers
+	clearflag FLAG_HIDE_MAUVILLE_CITY_WATTSON
 # 610 "data/gym_leaders.pory"
-	call PetalburgCity_Gym_EventScript_UnlockAllDoors
+	setvar VAR_0x8008, 5
 # 611 "data/gym_leaders.pory"
-	special DrawWholeMapView
+	call Common_EventScript_SetGymTrainers
 # 612 "data/gym_leaders.pory"
-	giveitem ITEM_TM_FACADE
+	call PetalburgCity_Gym_EventScript_UnlockAllDoors
 # 613 "data/gym_leaders.pory"
-	speakername CommonText_Dad
+	special DrawWholeMapView
 # 614 "data/gym_leaders.pory"
-	msgbox PetalburgCity_Gym_Text_ExplainFacade, MSGBOX_DEFAULT
+	giveitem ITEM_TM_FACADE
 # 615 "data/gym_leaders.pory"
-	delay 10
+	speakername CommonText_Dad
 # 616 "data/gym_leaders.pory"
-	speakername CommonText_Dad
+	msgbox PetalburgCity_Gym_Text_ExplainFacade, MSGBOX_DEFAULT
 # 617 "data/gym_leaders.pory"
-	msgbox PetalburgCity_Gym_Text_DadPokevial2, MSGBOX_DEFAULT
-# 618 "data/gym_leaders.pory"
-	closemessage
-# 619 "data/gym_leaders.pory"
-	pokevialincreasesize
-# 620 "data/gym_leaders.pory"
-	msgbox Text_PokevialSizeIncrease, MSGBOX_DEFAULT
-# 621 "data/gym_leaders.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 622 "data/gym_leaders.pory"
-	waitfanfare
-# 623 "data/gym_leaders.pory"
-	closemessage
-# 624 "data/gym_leaders.pory"
-	delay 20
-# 625 "data/gym_leaders.pory"
-	speakername CommonText_Dad
-# 626 "data/gym_leaders.pory"
-	msgbox PetalburgCity_Gym_Text_DadHappyAndSad, MSGBOX_DEFAULT
-# 627 "data/gym_leaders.pory"
-	closemessage
-# 628 "data/gym_leaders.pory"
-	delay 30
-# 629 "data/gym_leaders.pory"
-	playse SE_DOOR
-# 630 "data/gym_leaders.pory"
 	delay 10
+# 618 "data/gym_leaders.pory"
+	speakername CommonText_Dad
+# 619 "data/gym_leaders.pory"
+	msgbox PetalburgCity_Gym_Text_DadPokevial2, MSGBOX_DEFAULT
+# 620 "data/gym_leaders.pory"
+	closemessage
+# 621 "data/gym_leaders.pory"
+	pokevialincreasesize
+# 622 "data/gym_leaders.pory"
+	msgbox Text_PokevialSizeIncrease, MSGBOX_DEFAULT
+# 623 "data/gym_leaders.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 624 "data/gym_leaders.pory"
+	waitfanfare
+# 625 "data/gym_leaders.pory"
+	closemessage
+# 626 "data/gym_leaders.pory"
+	delay 20
+# 627 "data/gym_leaders.pory"
+	speakername CommonText_Dad
+# 628 "data/gym_leaders.pory"
+	msgbox PetalburgCity_Gym_Text_DadHappyAndSad, MSGBOX_DEFAULT
+# 629 "data/gym_leaders.pory"
+	closemessage
+# 630 "data/gym_leaders.pory"
+	delay 30
 # 631 "data/gym_leaders.pory"
-	addobject LOCALID_PETALBURG_GYM_WALLYS_DAD
+	playse SE_DOOR
 # 632 "data/gym_leaders.pory"
-	switch VAR_FACING
+	delay 10
 # 633 "data/gym_leaders.pory"
-	case DIR_NORTH, PetalburgCity_Gym_EventScript_NormanBattle_2
+	addobject LOCALID_PETALBURG_GYM_WALLYS_DAD
+# 634 "data/gym_leaders.pory"
+	switch VAR_FACING
 # 635 "data/gym_leaders.pory"
-	case DIR_WEST, PetalburgCity_Gym_EventScript_NormanBattle_3
+	case DIR_NORTH, PetalburgCity_Gym_EventScript_NormanBattle_2
 # 637 "data/gym_leaders.pory"
+	case DIR_WEST, PetalburgCity_Gym_EventScript_NormanBattle_3
+# 639 "data/gym_leaders.pory"
 	case DIR_EAST, PetalburgCity_Gym_EventScript_NormanBattle_4
 	return
 
 PetalburgCity_Gym_EventScript_NormanBattle_2:
-# 634 "data/gym_leaders.pory"
+# 636 "data/gym_leaders.pory"
 	goto PetalburgCity_Gym_EventScript_WallysDadArrivesNorth
 	return
 
 PetalburgCity_Gym_EventScript_NormanBattle_3:
-# 636 "data/gym_leaders.pory"
+# 638 "data/gym_leaders.pory"
 	goto PetalburgCity_Gym_EventScript_WallysDadArrivesWest
 	return
 
 PetalburgCity_Gym_EventScript_NormanBattle_4:
-# 638 "data/gym_leaders.pory"
+# 640 "data/gym_leaders.pory"
 	goto PetalburgCity_Gym_EventScript_WallysDadArrivesEast
 	return
 
 
 PetalburgCity_Gym_EventScript_NormanPostBattle::
-# 643 "data/gym_leaders.pory"
+# 645 "data/gym_leaders.pory"
 	call PetalburgCity_Gym_EventScript_ShouldGiveEnigmaBerry
-# 644 "data/gym_leaders.pory"
+# 646 "data/gym_leaders.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq PetalburgCity_Gym_EventScript_NormanPostBattle_2
 PetalburgCity_Gym_EventScript_NormanPostBattle_1:
-# 647 "data/gym_leaders.pory"
+# 649 "data/gym_leaders.pory"
 	goto_if_set FLAG_SYS_GAME_CLEAR, PetalburgCity_Gym_EventScript_NormanPostBattle_5
 PetalburgCity_Gym_EventScript_NormanPostBattle_4:
-# 650 "data/gym_leaders.pory"
+# 652 "data/gym_leaders.pory"
 	msgbox PetalburgCity_Gym_Text_DadGoingToKeepTraining, MSGBOX_DEFAULT
-# 651 "data/gym_leaders.pory"
+# 653 "data/gym_leaders.pory"
 	release
 	return
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_2:
-# 645 "data/gym_leaders.pory"
+# 647 "data/gym_leaders.pory"
 	goto PetalburgCity_Gym_EventScript_GiveEnigmaBerry
 	goto PetalburgCity_Gym_EventScript_NormanPostBattle_1
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_5:
-# 648 "data/gym_leaders.pory"
+# 650 "data/gym_leaders.pory"
 	goto PetalburgCity_Gym_EventScript_NoAmountOfTrainingIsEnough
 	goto PetalburgCity_Gym_EventScript_NormanPostBattle_4
 
 
 PetalburgCity_Gym_EventScript_NormanRematch::
-# 655 "data/gym_leaders.pory"
-	setflag FLAG_CHALLENGING_TRAINER
-# 656 "data/gym_leaders.pory"
-	trainerbattle_rematch_double TRAINER_NORMAN_1, PetalburgCity_Gym_Text_NormanPreRematch, PetalburgCity_Gym_Text_NormanRematchDefeat, PetalburgCity_Gym_Text_NormanRematchNeedTwoMons
 # 657 "data/gym_leaders.pory"
-	msgbox PetalburgCity_Gym_Text_NormanPostRematch, MSGBOX_AUTOCLOSE
+	setflag FLAG_CHALLENGING_TRAINER
 # 658 "data/gym_leaders.pory"
+	trainerbattle_rematch_double TRAINER_NORMAN_1, PetalburgCity_Gym_Text_NormanPreRematch, PetalburgCity_Gym_Text_NormanRematchDefeat, PetalburgCity_Gym_Text_NormanRematchNeedTwoMons
+# 659 "data/gym_leaders.pory"
+	msgbox PetalburgCity_Gym_Text_NormanPostRematch, MSGBOX_AUTOCLOSE
+# 660 "data/gym_leaders.pory"
 	setflag FLAG_CHALLENGING_TRAINER
 	return
 
 
 PetalburgCity_Gym_EventScript_NoAmountOfTrainingIsEnough::
-# 662 "data/gym_leaders.pory"
+# 664 "data/gym_leaders.pory"
 	msgbox PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough, MSGBOX_DEFAULT
-# 663 "data/gym_leaders.pory"
+# 665 "data/gym_leaders.pory"
 	release
 	return
 
 
 FortreeCity_Gym_EventScript_Winona::
-# 789 "data/gym_leaders.pory"
-	setflag FLAG_CHALLENGING_TRAINER
-# 790 "data/gym_leaders.pory"
-	trainerbattle_single TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaIntro, FortreeCity_Gym_Text_WinonaDefeat, FortreeCity_Gym_EventScript_WinonaDefeated, NO_MUSIC
 # 791 "data/gym_leaders.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	setflag FLAG_CHALLENGING_TRAINER
 # 792 "data/gym_leaders.pory"
+	trainerbattle_single TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaIntro, FortreeCity_Gym_Text_WinonaDefeat, FortreeCity_Gym_EventScript_WinonaDefeated, NO_MUSIC
+# 793 "data/gym_leaders.pory"
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+# 794 "data/gym_leaders.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq FortreeCity_Gym_EventScript_Winona_2
 FortreeCity_Gym_EventScript_Winona_1:
-# 795 "data/gym_leaders.pory"
-	msgbox FortreeCity_Gym_Text_WinonaPostBattle, MSGBOX_DEFAULT
-# 796 "data/gym_leaders.pory"
-	clearflag FLAG_CHALLENGING_TRAINER
 # 797 "data/gym_leaders.pory"
+	msgbox FortreeCity_Gym_Text_WinonaPostBattle, MSGBOX_DEFAULT
+# 798 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 799 "data/gym_leaders.pory"
 	release
 	return
 
 FortreeCity_Gym_EventScript_Winona_2:
-# 793 "data/gym_leaders.pory"
+# 795 "data/gym_leaders.pory"
 	goto FortreeCity_Gym_EventScript_WinonaRematch
 	goto FortreeCity_Gym_EventScript_Winona_1
 
 
 FortreeCity_Gym_EventScript_WinonaDefeated::
-# 801 "data/gym_leaders.pory"
-	message FortreeCity_Gym_Text_ReceivedFeatherBadge
-# 802 "data/gym_leaders.pory"
-	waitmessage
 # 803 "data/gym_leaders.pory"
-	call Common_EventScript_PlayGymBadgeFanfare
+	message FortreeCity_Gym_Text_ReceivedFeatherBadge
 # 804 "data/gym_leaders.pory"
-	msgbox FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis, MSGBOX_DEFAULT
+	waitmessage
 # 805 "data/gym_leaders.pory"
-	setflag FLAG_DEFEATED_FORTREE_GYM
+	call Common_EventScript_PlayGymBadgeFanfare
 # 806 "data/gym_leaders.pory"
-	setflag FLAG_BADGE06_GET
+	msgbox FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis, MSGBOX_DEFAULT
 # 807 "data/gym_leaders.pory"
-	setvar VAR_0x8008, 6
+	setflag FLAG_DEFEATED_FORTREE_GYM
 # 808 "data/gym_leaders.pory"
-	call Common_EventScript_SetGymTrainers
+	setflag FLAG_BADGE06_GET
 # 809 "data/gym_leaders.pory"
-	giveitem ITEM_TM_DUAL_WINGBEAT
+	setvar VAR_EMERALBODY_RIVAL_STATE, 10
 # 810 "data/gym_leaders.pory"
-	msgbox FortreeCity_Gym_Text_ExplainDualWingbeat, MSGBOX_DEFAULT
+	setvar VAR_0x8008, 6
 # 811 "data/gym_leaders.pory"
-	closemessage
+	call Common_EventScript_SetGymTrainers
 # 812 "data/gym_leaders.pory"
-	delay 30
+	giveitem ITEM_TM_DUAL_WINGBEAT
 # 813 "data/gym_leaders.pory"
-	playfanfare MUS_REGISTER_MATCH_CALL
+	msgbox FortreeCity_Gym_Text_ExplainDualWingbeat, MSGBOX_DEFAULT
 # 814 "data/gym_leaders.pory"
-	bufferstring STR_VAR_1, Text_GymLeader
-# 815 "data/gym_leaders.pory"
-	bufferstring STR_VAR_2, CommonText_Winona
-# 816 "data/gym_leaders.pory"
-	msgbox Text_RegisteredInPokenav_TwoInputs, MSGBOX_DEFAULT
-# 817 "data/gym_leaders.pory"
-	waitfanfare
-# 818 "data/gym_leaders.pory"
 	closemessage
-# 819 "data/gym_leaders.pory"
+# 815 "data/gym_leaders.pory"
 	delay 30
+# 816 "data/gym_leaders.pory"
+	playfanfare MUS_REGISTER_MATCH_CALL
+# 817 "data/gym_leaders.pory"
+	bufferstring STR_VAR_1, Text_GymLeader
+# 818 "data/gym_leaders.pory"
+	bufferstring STR_VAR_2, CommonText_Winona
+# 819 "data/gym_leaders.pory"
+	msgbox Text_RegisteredInPokenav_TwoInputs, MSGBOX_DEFAULT
 # 820 "data/gym_leaders.pory"
-	setflag FLAG_ENABLE_WINONA_MATCH_CALL
+	waitfanfare
 # 821 "data/gym_leaders.pory"
-	setvar VAR_SCOTT_FORTREE_CALL_STEP_COUNTER, 0
+	closemessage
 # 822 "data/gym_leaders.pory"
-	setflag FLAG_SCOTT_CALL_FORTREE_GYM
+	delay 30
 # 823 "data/gym_leaders.pory"
-	clearflag FLAG_CHALLENGING_TRAINER
+	setflag FLAG_ENABLE_WINONA_MATCH_CALL
 # 824 "data/gym_leaders.pory"
+	setvar VAR_SCOTT_FORTREE_CALL_STEP_COUNTER, 0
+# 825 "data/gym_leaders.pory"
+	setflag FLAG_SCOTT_CALL_FORTREE_GYM
+# 826 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 827 "data/gym_leaders.pory"
 	release
 	return
 
 
 FortreeCity_Gym_EventScript_WinonaRematch::
-# 828 "data/gym_leaders.pory"
+# 831 "data/gym_leaders.pory"
 	trainerbattle_rematch_double TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaPreRematch, FortreeCity_Gym_Text_WinonaRematchDefeat, FortreeCity_Gym_Text_WinonaRematchNeedTwoMons
-# 829 "data/gym_leaders.pory"
+# 832 "data/gym_leaders.pory"
 	msgbox FortreeCity_Gym_Text_WinonaPostRematch, MSGBOX_AUTOCLOSE
-# 830 "data/gym_leaders.pory"
+# 833 "data/gym_leaders.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
 	return
 
 
 MossdeepCity_Gym_EventScript_TateAndLiza::
-# 922 "data/gym_leaders.pory"
-	setflag FLAG_CHALLENGING_TRAINER
-# 923 "data/gym_leaders.pory"
-	trainerbattle_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaIntro, MossdeepCity_Gym_Text_TateAndLizaDefeat, MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons, MossdeepCity_Gym_EventScript_TateAndLizaDefeated, NO_MUSIC
-# 924 "data/gym_leaders.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 925 "data/gym_leaders.pory"
+	setflag FLAG_CHALLENGING_TRAINER
+# 926 "data/gym_leaders.pory"
+	trainerbattle_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaIntro, MossdeepCity_Gym_Text_TateAndLizaDefeat, MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons, MossdeepCity_Gym_EventScript_TateAndLizaDefeated, NO_MUSIC
+# 927 "data/gym_leaders.pory"
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+# 928 "data/gym_leaders.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq MossdeepCity_Gym_EventScript_TateAndLiza_2
 MossdeepCity_Gym_EventScript_TateAndLiza_1:
-# 928 "data/gym_leaders.pory"
+# 931 "data/gym_leaders.pory"
 	msgbox MossdeepCity_Gym_Text_TateAndLizaPostBattle, MSGBOX_DEFAULT
-# 929 "data/gym_leaders.pory"
+# 932 "data/gym_leaders.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
-# 930 "data/gym_leaders.pory"
+# 933 "data/gym_leaders.pory"
 	release
 	return
 
 MossdeepCity_Gym_EventScript_TateAndLiza_2:
-# 926 "data/gym_leaders.pory"
+# 929 "data/gym_leaders.pory"
 	goto MossdeepCity_Gym_EventScript_TateAndLizaRematch
 	goto MossdeepCity_Gym_EventScript_TateAndLiza_1
 
 
 MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
-# 934 "data/gym_leaders.pory"
-	message MossdeepCity_Gym_Text_ReceivedMindBadge
-# 935 "data/gym_leaders.pory"
-	waitmessage
-# 936 "data/gym_leaders.pory"
-	call Common_EventScript_PlayGymBadgeFanfare
 # 937 "data/gym_leaders.pory"
-	msgbox MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis, MSGBOX_DEFAULT
+	message MossdeepCity_Gym_Text_ReceivedMindBadge
 # 938 "data/gym_leaders.pory"
-	setflag FLAG_DEFEATED_MOSSDEEP_GYM
+	waitmessage
 # 939 "data/gym_leaders.pory"
-	setflag FLAG_BADGE07_GET
+	call Common_EventScript_PlayGymBadgeFanfare
 # 940 "data/gym_leaders.pory"
-	setflag FLAG_HIDE_AQUA_HIDEOUT_GRUNTS
+	msgbox MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis, MSGBOX_DEFAULT
 # 941 "data/gym_leaders.pory"
-	clearflag FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY
+	setflag FLAG_DEFEATED_MOSSDEEP_GYM
 # 942 "data/gym_leaders.pory"
-	setvar VAR_0x8008, 7
+	setflag FLAG_BADGE07_GET
 # 943 "data/gym_leaders.pory"
-	call Common_EventScript_SetGymTrainers
+	setflag FLAG_HIDE_AQUA_HIDEOUT_GRUNTS
 # 944 "data/gym_leaders.pory"
-	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS
+	clearflag FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY
 # 945 "data/gym_leaders.pory"
-	clearflag FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA
+	setvar VAR_0x8008, 7
 # 946 "data/gym_leaders.pory"
-	clearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA
+	call Common_EventScript_SetGymTrainers
 # 947 "data/gym_leaders.pory"
-	clearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA
+	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS
 # 948 "data/gym_leaders.pory"
-	clearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_STEVEN
+	clearflag FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA
 # 949 "data/gym_leaders.pory"
-	setvar VAR_MOSSDEEP_CITY_STATE, 1
+	clearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA
 # 950 "data/gym_leaders.pory"
-	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN
+	clearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA
 # 951 "data/gym_leaders.pory"
-	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 1
+	clearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_STEVEN
 # 952 "data/gym_leaders.pory"
-	giveitem ITEM_TM_TRICK_ROOM
+	setvar VAR_MOSSDEEP_CITY_STATE, 1
 # 953 "data/gym_leaders.pory"
-	msgbox MossdeepCity_Gym_Text_ExplainTrickRoom, MSGBOX_DEFAULT
+	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN
 # 954 "data/gym_leaders.pory"
-	closemessage
+	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 1
 # 955 "data/gym_leaders.pory"
-	delay 30
+	giveitem ITEM_TM_TRICK_ROOM
 # 956 "data/gym_leaders.pory"
-	playfanfare MUS_REGISTER_MATCH_CALL
+	msgbox MossdeepCity_Gym_Text_ExplainTrickRoom, MSGBOX_DEFAULT
 # 957 "data/gym_leaders.pory"
-	bufferstring STR_VAR_1, Text_GymLeaders
-# 958 "data/gym_leaders.pory"
-	bufferstring STR_VAR_2, CommonText_LizaAndTate
-# 959 "data/gym_leaders.pory"
-	msgbox Text_RegisteredInPokenav_TwoInputs, MSGBOX_DEFAULT
-# 960 "data/gym_leaders.pory"
-	waitfanfare
-# 961 "data/gym_leaders.pory"
 	closemessage
-# 962 "data/gym_leaders.pory"
+# 958 "data/gym_leaders.pory"
 	delay 30
+# 959 "data/gym_leaders.pory"
+	playfanfare MUS_REGISTER_MATCH_CALL
+# 960 "data/gym_leaders.pory"
+	bufferstring STR_VAR_1, Text_GymLeaders
+# 961 "data/gym_leaders.pory"
+	bufferstring STR_VAR_2, CommonText_LizaAndTate
+# 962 "data/gym_leaders.pory"
+	msgbox Text_RegisteredInPokenav_TwoInputs, MSGBOX_DEFAULT
 # 963 "data/gym_leaders.pory"
-	setflag FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL
+	waitfanfare
 # 964 "data/gym_leaders.pory"
-	clearflag FLAG_CHALLENGING_TRAINER
+	closemessage
 # 965 "data/gym_leaders.pory"
+	delay 30
+# 966 "data/gym_leaders.pory"
+	setflag FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL
+# 967 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 968 "data/gym_leaders.pory"
 	release
 	return
 
 
 MossdeepCity_Gym_EventScript_TateAndLizaRematch::
-# 969 "data/gym_leaders.pory"
+# 972 "data/gym_leaders.pory"
 	trainerbattle_rematch_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaPreRematch, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat, MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons
-# 970 "data/gym_leaders.pory"
+# 973 "data/gym_leaders.pory"
 	msgbox MossdeepCity_Gym_Text_TateAndLizaPostRematch, MSGBOX_AUTOCLOSE
-# 971 "data/gym_leaders.pory"
+# 974 "data/gym_leaders.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
 	return
 
 
 SootopolisCity_Gym_1F_EventScript_Juan::
-# 1078 "data/gym_leaders.pory"
-	setflag FLAG_CHALLENGING_TRAINER
-# 1079 "data/gym_leaders.pory"
-	trainerbattle_single TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanIntro, SootopolisCity_Gym_1F_Text_JuanDefeat, SootopolisCity_Gym_1F_EventScript_JuanDefeated, NO_MUSIC
-# 1080 "data/gym_leaders.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 1081 "data/gym_leaders.pory"
+	setflag FLAG_CHALLENGING_TRAINER
+# 1082 "data/gym_leaders.pory"
+	trainerbattle_single TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanIntro, SootopolisCity_Gym_1F_Text_JuanDefeat, SootopolisCity_Gym_1F_EventScript_JuanDefeated, NO_MUSIC
+# 1083 "data/gym_leaders.pory"
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+# 1084 "data/gym_leaders.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq SootopolisCity_Gym_1F_EventScript_Juan_2
 SootopolisCity_Gym_1F_EventScript_Juan_1:
-# 1084 "data/gym_leaders.pory"
+# 1087 "data/gym_leaders.pory"
 	goto_if_unset FLAG_BADGE06_GET, SootopolisCity_Gym_1F_EventScript_Juan_5
 SootopolisCity_Gym_1F_EventScript_Juan_4:
-# 1087 "data/gym_leaders.pory"
+# 1090 "data/gym_leaders.pory"
 	msgbox SootopolisCity_Gym_1F_Text_JuanPostBattle, MSGBOX_DEFAULT
-# 1088 "data/gym_leaders.pory"
+# 1091 "data/gym_leaders.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
-# 1089 "data/gym_leaders.pory"
+# 1092 "data/gym_leaders.pory"
 	release
 	return
 
 SootopolisCity_Gym_1F_EventScript_Juan_2:
-# 1082 "data/gym_leaders.pory"
+# 1085 "data/gym_leaders.pory"
 	goto SootopolisCity_Gym_1F_EventScript_JuanRematch
 	goto SootopolisCity_Gym_1F_EventScript_Juan_1
 
 SootopolisCity_Gym_1F_EventScript_Juan_5:
-# 1085 "data/gym_leaders.pory"
+# 1088 "data/gym_leaders.pory"
 	goto SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge
 	goto SootopolisCity_Gym_1F_EventScript_Juan_4
 
 
 SootopolisCity_Gym_1F_EventScript_JuanDefeated::
-# 1093 "data/gym_leaders.pory"
-	message SootopolisCity_Gym_1F_Text_ReceivedRainBadge
-# 1094 "data/gym_leaders.pory"
-	waitmessage
-# 1095 "data/gym_leaders.pory"
-	call Common_EventScript_PlayGymBadgeFanfare
 # 1096 "data/gym_leaders.pory"
-	msgbox SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
+	message SootopolisCity_Gym_1F_Text_ReceivedRainBadge
 # 1097 "data/gym_leaders.pory"
-	setflag FLAG_DEFEATED_SOOTOPOLIS_GYM
+	waitmessage
 # 1098 "data/gym_leaders.pory"
-	setflag FLAG_BADGE08_GET
+	call Common_EventScript_PlayGymBadgeFanfare
 # 1099 "data/gym_leaders.pory"
-	setflag FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS
+	msgbox SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
 # 1100 "data/gym_leaders.pory"
-	setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
+	setflag FLAG_DEFEATED_SOOTOPOLIS_GYM
 # 1101 "data/gym_leaders.pory"
-	setflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
+	setflag FLAG_BADGE08_GET
 # 1102 "data/gym_leaders.pory"
-	setvar VAR_SOOTOPOLIS_CITY_STATE, 6
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS
 # 1103 "data/gym_leaders.pory"
-	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_MAN_1
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
 # 1104 "data/gym_leaders.pory"
-	setvar VAR_0x8008, 8
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
 # 1105 "data/gym_leaders.pory"
-	call Common_EventScript_SetGymTrainers
+	setvar VAR_SOOTOPOLIS_CITY_STATE, 6
 # 1106 "data/gym_leaders.pory"
-	giveitem ITEM_TM_HYDRO_PUMP
+	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_MAN_1
 # 1107 "data/gym_leaders.pory"
-	msgbox SootopolisCity_Gym_1F_Text_ExplainHydroPump, MSGBOX_DEFAULT
+	setvar VAR_0x8008, 8
 # 1108 "data/gym_leaders.pory"
-	closemessage
+	call Common_EventScript_SetGymTrainers
 # 1109 "data/gym_leaders.pory"
-	delay 30
+	giveitem ITEM_TM_HYDRO_PUMP
 # 1110 "data/gym_leaders.pory"
-	playfanfare MUS_REGISTER_MATCH_CALL
+	msgbox SootopolisCity_Gym_1F_Text_ExplainHydroPump, MSGBOX_DEFAULT
 # 1111 "data/gym_leaders.pory"
-	bufferstring STR_VAR_1, Text_GymLeader
-# 1112 "data/gym_leaders.pory"
-	bufferstring STR_VAR_2, CommonText_Juan
-# 1113 "data/gym_leaders.pory"
-	msgbox Text_RegisteredInPokenav_TwoInputs, MSGBOX_DEFAULT
-# 1114 "data/gym_leaders.pory"
-	waitfanfare
-# 1115 "data/gym_leaders.pory"
 	closemessage
-# 1116 "data/gym_leaders.pory"
+# 1112 "data/gym_leaders.pory"
 	delay 30
+# 1113 "data/gym_leaders.pory"
+	playfanfare MUS_REGISTER_MATCH_CALL
+# 1114 "data/gym_leaders.pory"
+	bufferstring STR_VAR_1, Text_GymLeader
+# 1115 "data/gym_leaders.pory"
+	bufferstring STR_VAR_2, CommonText_Juan
+# 1116 "data/gym_leaders.pory"
+	msgbox Text_RegisteredInPokenav_TwoInputs, MSGBOX_DEFAULT
 # 1117 "data/gym_leaders.pory"
-	setflag FLAG_ENABLE_JUAN_MATCH_CALL
+	waitfanfare
 # 1118 "data/gym_leaders.pory"
+	closemessage
+# 1119 "data/gym_leaders.pory"
+	delay 30
+# 1120 "data/gym_leaders.pory"
+	setflag FLAG_ENABLE_JUAN_MATCH_CALL
+# 1121 "data/gym_leaders.pory"
 	release
 	return
 
 
 SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge::
-# 1122 "data/gym_leaders.pory"
+# 1125 "data/gym_leaders.pory"
 	msgbox SootopolisCity_Gym_1F_Text_GoGetFortreeBadge, MSGBOX_DEFAULT
-# 1123 "data/gym_leaders.pory"
+# 1126 "data/gym_leaders.pory"
 	release
 	return
 
 
 SootopolisCity_Gym_1F_EventScript_JuanRematch::
-# 1127 "data/gym_leaders.pory"
+# 1130 "data/gym_leaders.pory"
 	trainerbattle_rematch_double TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanPreRematch, SootopolisCity_Gym_1F_Text_JuanRematchDefeat, SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons
-# 1128 "data/gym_leaders.pory"
+# 1131 "data/gym_leaders.pory"
 	msgbox SootopolisCity_Gym_1F_Text_JuanPostRematch, MSGBOX_AUTOCLOSE
 	return
 
@@ -1229,7 +1233,7 @@ LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons::
 	.string "see me, bring at least two Pokémon.$"
 
 PetalburgCity_Gym_Text_NormanIntro::
-# 667 "data/gym_leaders.pory"
+# 669 "data/gym_leaders.pory"
 	.string "Hm…\n"
 	.string "So, you did get four Gym Badges.\p"
 	.string "Fine, as I promised, we will have\n"
@@ -1244,7 +1248,7 @@ PetalburgCity_Gym_Text_NormanIntro::
 	.string "best shot, too!$"
 
 PetalburgCity_Gym_Text_NormanDefeat::
-# 682 "data/gym_leaders.pory"
+# 684 "data/gym_leaders.pory"
 	.string "…\p"
 	.string "I… I can't…\p"
 	.string "I can't believe it. {PLAYER}…\p"
@@ -1253,19 +1257,19 @@ PetalburgCity_Gym_Text_NormanDefeat::
 	.string "Here, take this.$"
 
 PetalburgCity_Gym_Text_ReceivedBalanceBadge::
-# 691 "data/gym_leaders.pory"
+# 693 "data/gym_leaders.pory"
 	.string "{PLAYER} received the Balance Badge\n"
 	.string "from Dad!$"
 
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis::
-# 696 "data/gym_leaders.pory"
+# 698 "data/gym_leaders.pory"
 	.string "With that Badge, you will be able\n"
 	.string "to use Surf to travel over water\p"
 	.string "This is my gift to you. {PLAYER}, I'm\n"
 	.string "sure you can use it correctly.$"
 
 PetalburgCity_Gym_Text_ExplainFacade::
-# 703 "data/gym_leaders.pory"
+# 705 "data/gym_leaders.pory"
 	.string "TM42 contains Facade.\p"
 	.string "It doubles the power of moves if\n"
 	.string "the Pokémon is poisoned, paralyzed,\l"
@@ -1274,7 +1278,7 @@ PetalburgCity_Gym_Text_ExplainFacade::
 	.string "situation into an advantage.$"
 
 PetalburgCity_Gym_Text_DadPokevial2::
-# 712 "data/gym_leaders.pory"
+# 714 "data/gym_leaders.pory"
 	.string "Wait, what's this?\p"
 	.string "You still haven't gotten any\n"
 	.string "additional doses for your Pokevial\l"
@@ -1283,14 +1287,14 @@ PetalburgCity_Gym_Text_DadPokevial2::
 	.string "should award another to you.$"
 
 PetalburgCity_Gym_Text_DadHappyAndSad::
-# 721 "data/gym_leaders.pory"
+# 723 "data/gym_leaders.pory"
 	.string "As the Gym Leader, I can't\n"
 	.string "express how upset I am…\p"
 	.string "But as a father, it makes me both\n"
 	.string "happy and a little sad. It's odd…$"
 
 PetalburgCity_Gym_Text_DadGoingToKeepTraining::
-# 728 "data/gym_leaders.pory"
+# 730 "data/gym_leaders.pory"
 	.string "{PLAYER}, you should go visit your\n"
 	.string "mother every so often.\p"
 	.string "I'm going to stay here and redouble\n"
@@ -1299,14 +1303,14 @@ PetalburgCity_Gym_Text_DadGoingToKeepTraining::
 	.string "not avenge my loss to you, {PLAYER}!$"
 
 PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough::
-# 737 "data/gym_leaders.pory"
+# 739 "data/gym_leaders.pory"
 	.string "{PLAYER}, how are things going?\p"
 	.string "The world of Pokémon is deep.\p"
 	.string "I honestly think that no amount of\n"
 	.string "training would ever be enough.$"
 
 PetalburgCity_Gym_Text_NormanPreRematch::
-# 744 "data/gym_leaders.pory"
+# 746 "data/gym_leaders.pory"
 	.string "{PLAYER}…\n"
 	.string "I had a feeling that you would come.\p"
 	.string "I would never refuse to accept\n"
@@ -1319,12 +1323,12 @@ PetalburgCity_Gym_Text_NormanPreRematch::
 	.string "we can. Isn't that right, {PLAYER}?$"
 
 PetalburgCity_Gym_Text_NormanRematchDefeat::
-# 757 "data/gym_leaders.pory"
+# 759 "data/gym_leaders.pory"
 	.string "Uh… Haha…\n"
 	.string "Maybe that was going too hard…$"
 
 PetalburgCity_Gym_Text_NormanPostRematch::
-# 762 "data/gym_leaders.pory"
+# 764 "data/gym_leaders.pory"
 	.string "{PLAYER}…\n"
 	.string "What is your dream?\p"
 	.string "My dream…\n"
@@ -1332,7 +1336,7 @@ PetalburgCity_Gym_Text_NormanPostRematch::
 	.string "It has already come true, actually.$"
 
 PetalburgCity_Gym_Text_NormanRematchNeedTwoMons::
-# 770 "data/gym_leaders.pory"
+# 772 "data/gym_leaders.pory"
 	.string "{PLAYER}…\n"
 	.string "I had a feeling that you would come.\p"
 	.string "I would never refuse to accept\n"
@@ -1347,7 +1351,7 @@ PetalburgCity_Gym_Text_NormanRematchNeedTwoMons::
 	.string "with at least two Pokémon.$"
 
 FortreeCity_Gym_Text_WinonaIntro::
-# 834 "data/gym_leaders.pory"
+# 837 "data/gym_leaders.pory"
 	.string "I am Winona. I am the Leader of\n"
 	.string "the Fortree Pokémon Gym.\p"
 	.string "I have become one with Bird Pokémon\n"
@@ -1358,7 +1362,7 @@ FortreeCity_Gym_Text_WinonaIntro::
 	.string "of Bird Pokémon and I!$"
 
 FortreeCity_Gym_Text_WinonaDefeat::
-# 845 "data/gym_leaders.pory"
+# 848 "data/gym_leaders.pory"
 	.string "Never before have I seen a Trainer\n"
 	.string "command Pokémon with more grace\l"
 	.string "than I…\p"
@@ -1366,12 +1370,12 @@ FortreeCity_Gym_Text_WinonaDefeat::
 	.string "I present to you this Gym Badge.$"
 
 FortreeCity_Gym_Text_ReceivedFeatherBadge::
-# 853 "data/gym_leaders.pory"
+# 856 "data/gym_leaders.pory"
 	.string "{PLAYER} received the Feather Badge\n"
 	.string "from Winona.$"
 
 FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis::
-# 858 "data/gym_leaders.pory"
+# 861 "data/gym_leaders.pory"
 	.string "With the Feather Badge, all Pokémon up\n"
 	.string "to Lv 70, even those received through\l"
 	.string "trades, will obey your every command.\p"
@@ -1381,19 +1385,19 @@ FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis::
 	.string "This is a gift from me.$"
 
 FortreeCity_Gym_Text_ExplainDualWingbeat::
-# 868 "data/gym_leaders.pory"
+# 871 "data/gym_leaders.pory"
 	.string "TM80 contains Dual Wingbeat.\p"
 	.string "Its speed…\n"
 	.string "Two wings strike at blinding speed.\p"
 	.string "… … … … … …$"
 
 FortreeCity_Gym_Text_WinonaPostBattle::
-# 875 "data/gym_leaders.pory"
+# 878 "data/gym_leaders.pory"
 	.string "Though I fell to you, I will remain\n"
 	.string "devoted to Bird Pokémon.$"
 
 FortreeCity_Gym_Text_WinonaPreRematch::
-# 880 "data/gym_leaders.pory"
+# 883 "data/gym_leaders.pory"
 	.string "Winona: We humans can never escape\n"
 	.string "gravity's pull on the ground.\p"
 	.string "But by striving for excellence,\n"
@@ -1404,11 +1408,11 @@ FortreeCity_Gym_Text_WinonaPreRematch::
 	.string "at full flight!$"
 
 FortreeCity_Gym_Text_WinonaRematchDefeat::
-# 891 "data/gym_leaders.pory"
+# 894 "data/gym_leaders.pory"
 	.string "I failed to reach your height again…$"
 
 FortreeCity_Gym_Text_WinonaPostRematch::
-# 895 "data/gym_leaders.pory"
+# 898 "data/gym_leaders.pory"
 	.string "Winona: Even though I have lost,\n"
 	.string "the wings of my heart remain unbroken.\p"
 	.string "I can rise and soar again and\n"
@@ -1416,7 +1420,7 @@ FortreeCity_Gym_Text_WinonaPostRematch::
 	.string "I am convinced of it!$"
 
 FortreeCity_Gym_Text_WinonaRematchNeedTwoMons::
-# 903 "data/gym_leaders.pory"
+# 906 "data/gym_leaders.pory"
 	.string "Winona: We humans can never escape\n"
 	.string "gravity's pull on the ground.\p"
 	.string "But by striving for excellence,\n"
@@ -1431,7 +1435,7 @@ FortreeCity_Gym_Text_WinonaRematchNeedTwoMons::
 	.string "at the very least.$"
 
 MossdeepCity_Gym_Text_TateAndLizaIntro::
-# 975 "data/gym_leaders.pory"
+# 978 "data/gym_leaders.pory"
 	.string "Tate: Hehehe… Were you surprised?\p"
 	.string "Liza: Fufufu… Were you surprised?\p"
 	.string "Tate: That there are two Gym Leaders?\n"
@@ -1446,25 +1450,25 @@ MossdeepCity_Gym_Text_TateAndLizaIntro::
 	.string "Liza: Can you beat it?$"
 
 MossdeepCity_Gym_Text_TateAndLizaDefeat::
-# 990 "data/gym_leaders.pory"
+# 993 "data/gym_leaders.pory"
 	.string "Tate: What?! Our combination…\n"
 	.string "Liza: Was shattered!\p"
 	.string "Tate: It can't be helped. You've won…\n"
 	.string "Liza: So, in recognition, take this.$"
 
 MossdeepCity_Gym_Text_ReceivedMindBadge::
-# 997 "data/gym_leaders.pory"
+# 1000 "data/gym_leaders.pory"
 	.string "{PLAYER} received the Mind Badge\n"
 	.string "from Tate and Liza.$"
 
 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis::
-# 1002 "data/gym_leaders.pory"
+# 1005 "data/gym_leaders.pory"
 	.string "Liza: The Mind Badge lets you use\n"
 	.string "Dive outside of battle.\p"
 	.string "Tate: You should also take this, too.$"
 
 MossdeepCity_Gym_Text_ExplainTrickRoom::
-# 1008 "data/gym_leaders.pory"
+# 1011 "data/gym_leaders.pory"
 	.string "Tate: That TM04 contains…\n"
 	.string "Liza: Trick Room!\p"
 	.string "Tate: It creates a bizarre area…\n"
@@ -1474,7 +1478,7 @@ MossdeepCity_Gym_Text_ExplainTrickRoom::
 	.string "… … … … … …$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostBattle::
-# 1018 "data/gym_leaders.pory"
+# 1021 "data/gym_leaders.pory"
 	.string "Tate: Looks like the bond between you\n"
 	.string "and your Pokémon is far stronger than\l"
 	.string "the bond that we share as twins.\p"
@@ -1482,7 +1486,7 @@ MossdeepCity_Gym_Text_TateAndLizaPostBattle::
 	.string "We've battled you, so we know.$"
 
 MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons::
-# 1026 "data/gym_leaders.pory"
+# 1029 "data/gym_leaders.pory"
 	.string "Tate: Hehehe… Were you surprised?\p"
 	.string "Liza: That there are two Gym Leaders?\p"
 	.string "Tate: Oops, you have only one…\n"
@@ -1492,7 +1496,7 @@ MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons::
 	.string "bring some more Pokémon.$"
 
 MossdeepCity_Gym_Text_TateAndLizaPreRematch::
-# 1036 "data/gym_leaders.pory"
+# 1039 "data/gym_leaders.pory"
 	.string "Tate: Pokémon…\n"
 	.string "Liza: Pokémon…\p"
 	.string "Tate: By changing the party's mix…\n"
@@ -1505,19 +1509,19 @@ MossdeepCity_Gym_Text_TateAndLizaPreRematch::
 	.string "Liza: We'll show you again and again!$"
 
 MossdeepCity_Gym_Text_TateAndLizaRematchDefeat::
-# 1049 "data/gym_leaders.pory"
+# 1052 "data/gym_leaders.pory"
 	.string "Tate: You and your Pokémon…\n"
 	.string "Liza: It's as if you were siblings!$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostRematch::
-# 1054 "data/gym_leaders.pory"
+# 1057 "data/gym_leaders.pory"
 	.string "Tate: You can knock us down,\n"
 	.string "but we'll never stay down!\p"
 	.string "Liza: Because the two of us,\n"
 	.string "we always support each other!$"
 
 MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons::
-# 1061 "data/gym_leaders.pory"
+# 1064 "data/gym_leaders.pory"
 	.string "Tate: You're back again…\n"
 	.string "Liza: You're back again…\p"
 	.string "Tate: To give us a rematch.\n"
@@ -1530,7 +1534,7 @@ MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons::
 	.string "Liza: Two Pokémon when you come back.$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro::
-# 1132 "data/gym_leaders.pory"
+# 1135 "data/gym_leaders.pory"
 	.string "Let me ask you.\n"
 	.string "Did you know?\l"
 	.string "Ah, I should not be so coy.\p"
@@ -1550,7 +1554,7 @@ SootopolisCity_Gym_1F_Text_JuanIntro::
 	.string "by Pokémon and myself!$"
 
 SootopolisCity_Gym_1F_Text_JuanDefeat::
-# 1156 "data/gym_leaders.pory"
+# 1159 "data/gym_leaders.pory"
 	.string "Ahahaha, excellent!\n"
 	.string "Very well, you are the winner.\p"
 	.string "From you, I sense the brilliant shine\n"
@@ -1566,12 +1570,12 @@ SootopolisCity_Gym_1F_Text_JuanDefeat::
 	.string "you with this, the Rain Badge!$"
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge::
-# 1172 "data/gym_leaders.pory"
+# 1175 "data/gym_leaders.pory"
 	.string "{PLAYER} received the Rain Badge\n"
 	.string "from Juan.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis::
-# 1177 "data/gym_leaders.pory"
+# 1180 "data/gym_leaders.pory"
 	.string "Having the Rain Badge shall assure you\n"
 	.string "the full obedience of all your Pokémon\l"
 	.string "to your every command.\p"
@@ -1582,7 +1586,7 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis::
 	.string "battle we shared, take this…$"
 
 SootopolisCity_Gym_1F_Text_ExplainHydroPump::
-# 1188 "data/gym_leaders.pory"
+# 1191 "data/gym_leaders.pory"
 	.string "The Technical Machine I handed you\n"
 	.string "contains Hydro Pump.\p"
 	.string "In use, it will strike twice with\n"
@@ -1590,7 +1594,7 @@ SootopolisCity_Gym_1F_Text_ExplainHydroPump::
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle::
-# 1196 "data/gym_leaders.pory"
+# 1199 "data/gym_leaders.pory"
 	.string "The Trainers who have gathered all\n"
 	.string "the Gym Badges of Hoenn should make\l"
 	.string "way to the ultimate destination.\p"
@@ -1601,7 +1605,7 @@ SootopolisCity_Gym_1F_Text_JuanPostBattle::
 	.string "League.$"
 
 SootopolisCity_Gym_1F_Text_GoGetFortreeBadge::
-# 1207 "data/gym_leaders.pory"
+# 1210 "data/gym_leaders.pory"
 	.string "There remains but one Badge to\n"
 	.string "obtain in Hoenn.\p"
 	.string "If you wish to challenge the Pokémon\n"
@@ -1609,7 +1613,7 @@ SootopolisCity_Gym_1F_Text_GoGetFortreeBadge::
 	.string "Badge from the Gym in Fortree.$"
 
 SootopolisCity_Gym_1F_Text_JuanPreRematch::
-# 1215 "data/gym_leaders.pory"
+# 1218 "data/gym_leaders.pory"
 	.string "Juan: Ah, this Gym had returned to its\n"
 	.string "usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"
@@ -1619,12 +1623,12 @@ SootopolisCity_Gym_1F_Text_JuanPreRematch::
 	.string "as often as you wish!$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchDefeat::
-# 1225 "data/gym_leaders.pory"
+# 1228 "data/gym_leaders.pory"
 	.string "Ahahaha, you are the winner!\n"
 	.string "You have defeated me again!$"
 
 SootopolisCity_Gym_1F_Text_JuanPostRematch::
-# 1230 "data/gym_leaders.pory"
+# 1233 "data/gym_leaders.pory"
 	.string "Juan: If I told you to become my\n"
 	.string "apprentice, you will refuse, I am sure.\p"
 	.string "I would like to make a gift of my coat\n"
@@ -1635,7 +1639,7 @@ SootopolisCity_Gym_1F_Text_JuanPostRematch::
 	.string "of nobility!$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons::
-# 1241 "data/gym_leaders.pory"
+# 1244 "data/gym_leaders.pory"
 	.string "Juan: Ah, this Gym had returned to its\n"
 	.string "usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"

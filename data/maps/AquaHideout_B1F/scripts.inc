@@ -14,8 +14,10 @@ AquaHideout_B1F_EventScript_TryRemoveElectrode::
 	return
 
 AquaHideout_B1F_OnTransition:
+	setflag FLAG_TEMP_1
 	call_if_unset FLAG_DEFEATED_ELECTRODE_1_AQUA_HIDEOUT, AquaHideout_B1F_EventScript_ShowElectrode1
 	call_if_unset FLAG_DEFEATED_ELECTRODE_2_AQUA_HIDEOUT, AquaHideout_B1F_EventScript_ShowElectrode2
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 11, EventScript_Clear_FlagTemp1 @ Show Rivals
 	end
 
 AquaHideout_B1F_EventScript_ShowElectrode1::

@@ -5,8 +5,10 @@ MagmaHideout_1F_MapScripts::
 MagmaHideout_1F_OnTransition:
 	setvar VAR_JAGGED_PASS_ASH_WEATHER, 0
 	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
 	call_if_set FLAG_DEFEATED_SOOTOPOLIS_GYM, MagmaHideout_1F_EventScript_ShowPortal
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 10, MagmaHideout_1F_EventScript_UpdateRivalState
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 11, EventScript_Clear_FlagTemp2 @ Show Rivals
 	end
 
 MagmaHideout_1F_EventScript_ShowPortal:

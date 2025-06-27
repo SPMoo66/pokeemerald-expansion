@@ -12,7 +12,7 @@
   "allow_running": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
@@ -65,6 +65,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BattleMarshadow",
       "flag": "FLAG_TEMP_2"
+    },
+    {
+      "local_id": "REDD_BATTLE03",
+      "graphics_id": "OBJ_EVENT_GFX_REDD",
+      "x": 8,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Redd_Battle03",
+      "flag": "FLAG_ALWAYS_SET"
     }
   ],
   "warp_events": [
@@ -112,9 +126,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var_value": "1",
+      "script": "Redd_Battle03"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var_value": "1",
+      "script": "Redd_Battle03"
+    }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": []
 }

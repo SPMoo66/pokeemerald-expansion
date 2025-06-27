@@ -48,6 +48,7 @@ movement Harper_PlayerMoves {
 # Sakura
 
 const SAKURA_BATTLE02 = 3
+const SAKURA_BATTLE03 = 8
 
 script Sakura_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 	if (var(VAR_EMERALBODY_RIVAL) == 4) { // Check if Sakura is your rival
@@ -81,6 +82,40 @@ script Sakura_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
 		release
 	}
+}
+
+script Sakura_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
+	lock
+	call (Common_EventScript_PlayEmRivalBgm)
+	call (GetRivalForNameBox)
+	msgbox (Battle03_SakuraText_PreBattle, MSGBOX_DEFAULT)
+	call (GetRivalMusic)
+	trainerbattle_no_intro (TRAINER_SAKURA_3, Battle03_SakuraText_BattleVictory)
+	call (GetRivalForNameBox)
+	msgbox(Battle03_SakuraText_PostBattle)
+	closemessage
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	if (var(VAR_TEMP_1) == 12) { // Standard bottom entrance
+		applymovement (SAKURA_BATTLE03, Common_Movement_WalkRight)
+		waitmovement (0)
+	}
+	applymovement (SAKURA_BATTLE03, Common_Movement_WalkDown)
+	waitmovement (0)
+	playse (SE_LEDGE)
+	applymovement (SAKURA_BATTLE03, Common_Movement_JumpDown2)
+	waitmovement (0)
+	applymovement (SAKURA_BATTLE03, Common_Movement_WalkDown4)
+	waitmovement (0)
+	removeobject (SAKURA_BATTLE03)
+	setflag (FLAG_TEMP_2)
+	fadedefaultbgm
+	setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
+	delay (30)
+	playse (SE_EFFECTIVE)
+	setmetatile (13, 11, 0x208, FALSE)
+	special (DrawWholeMapView)
+	delay (30)
+	release
 }
 
 
@@ -178,4 +213,65 @@ script Baron_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		fadescreenswapbuffers (FADE_FROM_BLACK)
 		release
 	}
+}
+
+
+# Jakson
+
+const JAKSON_BATTLE02 = 7
+const JAKSON_BATTLE02_MURKROW = 6
+
+script Jakson_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
+	if (var(VAR_EMERALBODY_RIVAL) == 2) { // Check if Jakson is your rival
+		lock
+		call (Common_EventScript_PlayEmRivalBgm)
+		delay (30)
+		call (GetRivalForNameBox)
+		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+		if (var(VAR_TEMP_0) == 5) {
+			switch (var(VAR_TEMP_1)) {
+				case 9: // top
+					applymovement (JAKSON_BATTLE02, Common_Movement_WalkUp)
+					waitmovement (0)
+				case 11:
+					applymovement (JAKSON_BATTLE02, Common_Movement_WalkDown)
+					waitmovement (0)
+				case 12:
+					applymovement (JAKSON_BATTLE02, Common_Movement_WalkDown2)
+					waitmovement (0)
+				case 13:
+					applymovement (JAKSON_BATTLE02, Common_Movement_WalkDown3)
+					waitmovement (0)
+				case 14: // bottom
+					applymovement (JAKSON_BATTLE02, Common_Movement_WalkDown4)
+					waitmovement (0)
+				default: // Center (10), no side movement
+			}
+			applymovement (JAKSON_BATTLE02, Common_Movement_WalkRight2)
+			waitmovement (0)
+		}
+		msgbox (Battle02_JaksonText_PreBattle, MSGBOX_DEFAULT)
+		call (GetRivalMusic)
+		trainerbattle_no_intro (TRAINER_JAKSON_2, Battle02_JaksonText_BattleVictory)
+		call (GetRivalForNameBox)
+		msgbox (Battle02_JaksonText_PostBattle)
+		closemessage
+		fadescreenswapbuffers (FADE_TO_BLACK)
+		removeobject (JAKSON_BATTLE02)
+		removeobject (JAKSON_BATTLE02_MURKROW)
+		fadescreenswapbuffers (FADE_FROM_BLACK)
+		fadedefaultbgm
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
+		setflag (FLAG_TEMP_2)
+		release
+	}
+}
+
+script Jakson_Battle02_Block {
+	lock
+	faceplayer
+	msgbox ("The Murkrow sees you trying to sneak\naround and actively blocks your\lefforts.")
+	playmoncry (SPECIES_MURKROW, CRY_MODE_NORMAL)
+	waitmoncry
+	release
 }

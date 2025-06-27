@@ -1,11 +1,31 @@
 LavaridgeTown_Gym_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, LavaridgeTown_Gym_1F_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, LavaridgeTown_Gym_1F_OnTransition
 	.byte 0
 
+LavaridgeTown_Gym_1F_OnLoad:
+	goto_if_eq VAR_EMERALBODY_RIVAL, 4, LavaridgeTown_Gym_1F_AddSakuraPit
+	return
+
+LavaridgeTown_Gym_1F_AddSakuraPit:
+	goto_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1, LavaridgeTown_Gym_1F_AddSakuraPit2
+	return
+
+LavaridgeTown_Gym_1F_AddSakuraPit2:
+	setmetatile 13, 11, 0x212, FALSE
+	return
+
 LavaridgeTown_Gym_1F_OnTransition:
+	setflag FLAG_TEMP_1
 	call LavaridgeTown_Gym_1F_EventScript_SetTrainerTempVars
 	call LavaridgeTown_Gym_1F_EventScript_CheckBuryTrainers
+	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1, LavaridgeTown_Gym_1F_CheckSakura
 	end
+
+LavaridgeTown_Gym_1F_CheckSakura:
+	call_if_eq VAR_EMERALBODY_RIVAL, 4, EventScript_Clear_FlagTemp1
+	setobjectmovementtype SAKURA_BATTLE03, MOVEMENT_TYPE_BURIED
+	return
 
 @ Unclear where/if these temp vars are getting checked
 LavaridgeTown_Gym_1F_EventScript_SetTrainerTempVars::

@@ -461,7 +461,7 @@ text Battle02_JaksonText_PostBattle {
 	"You're doing well so far, {PLAYER}!\p"
 	"I hope the updated gyms haven't been\n"
 	"too challenging for you so far.\p"
-	"But you did welle nough now that I\n"
+	"But you did well enough now that I\n"
 	"have confidence in you.\p"
 	"See you again, {PLAYER}.\n"
 	"I'm not stopping either!"
@@ -882,39 +882,104 @@ text Battle03_HarperText_PostBattle {
 }
 
 text Battle03_JaksonText_PreBattle {
-	""
+	"Hey, {PLAYER}.\p"
+	"I spy, with my little eye…\n"
+	"The Heat and Balance Badge?\p"
+	"That's a nice little gauntlet. Good to\n"
+	"see you get over that barrier.\p"
+	"But you know what they say?\p"
+	"Everything comes in threes!"
 }
 
 text Battle03_JaksonText_BattleVictory {
-	""
+	"Well done, {PLAYER}.\n"
+	"You earned that one."
 }
 
 text Battle03_JaksonText_PostBattle {
-	""
+	"You're doing really well, I'd say.\p"
+	"Knowing Harper and Redd, I was\n"
+	"a bit quick to assume everyone\l"
+	"would be amateurs.\p"
+	"My excuses don't matter though.\p"
+	"It reflects poorly on me as the\n"
+	"orchestrator of this adventure to\l"
+	"get beat so consistently.\p"
+	"I'll just have to be more diligent on\n"
+	"experimenting for where your own\l"
+	"weaknesses lie, then.\p"
+	"So don't slack on your team building!\p"
+	"I want to be really tested once I get\n"
+	"to my perfect endgame team.\p"
+	"Oh, and you might want to go heal up.\n"
+	"This route is going to be a long one.\p"
+	"Bye!"
 }
 
 text Battle03_ReddText_PreBattle {
-	""
+	"Hey, {PLAYER}!\n"
+	"What brings you here?\p"
+	"The story?\n"
+	"That whole thing?\p"
+	"Aw, come on. You know why you\n"
+	"stopped by here of all places.\p"
+	"I was even waiting for you here.\p"
+	"In this… you know, this ghostly\n"
+	"graveyard backdrop…\p"
+	"Your Pokémon aren't even dead!\p"
+	"Well, I can at least make them faint.\p"
+	"Let's go, pal!"
 }
 
 text Battle03_ReddText_BattleVictory {
-	""
+	"I can't be going easy on you now, can I?"
 }
 
 text Battle03_ReddText_PostBattle {
-	""
+	"I hate to admit it, but you're really good.\p"
+	"But, I'm not gonna hold back either,\n"
+	"no matter the challenge.\p"
+	"You filling out your Pokédex, too?\n"
+	"How's that coming along?\p"
+	"See? It's not always about getting\n"
+	"ahead in battling every time.\p"
+	"Go try to catch a Marowak around here\n"
+	"faster than I did.\p"
+	"Who knows, maybe I caught the\n"
+	"last one?\p"
+	"Well, I beter get going. I've still got a\n"
+	"lot more to accomplish.\p"
+	"See ya!"
 }
 
 text Battle03_SakuraText_PreBattle {
-	""
+	"Wa-cha!\p"
+	"Flannery has already fallen to me!\p"
+	"And via it, I have acquired ALL of\n"
+	"the Lavaridge Gym badges!\p"
+	"Why yes, that means you must go\n"
+	"through me to acquire your trophy!\p"
+	"{PLAYER}, struggle with all your\n"
+	"might!"
 }
 
 text Battle03_SakuraText_BattleVictory {
-	""
+	"Put me down like a dog…\n"
+	"How dare you."
 }
 
 text Battle03_SakuraText_PostBattle {
-	""
+	"Well, fine.\p"
+	"I didn't really have the entire supply\n"
+	"of gym badges anyways.\p"
+	"Oh, do trust me. I TRIED.\p"
+	"But turns out it's infinite.\n"
+	"Or I hit the inventory limit?\p"
+	"After that showing, though, you've\n"
+	"definitely got this in the bag, {PLAYER}.\p"
+	"Get in there and prove my confidence\n"
+	"to be infallible, won't ya?\p"
+	"Good luck!"
 }
 
 
@@ -1168,104 +1233,39 @@ text Battle04_HarperText_PostBattle {
 }
 
 text Battle04_JaksonText_PreBattle {
-	"Hey, {PLAYER}.\p"
-	"I spy, with my little eye…\n"
-	"The Heat and Balance Badge?\p"
-	"That's a nice little gauntlet. Good to\n"
-	"see you get over that barrier.\p"
-	"But you know what they say?\p"
-	"Everything comes in threes!"
+	""
 }
 
 text Battle04_JaksonText_BattleVictory {
-	"Well done, {PLAYER}.\n"
-	"You earned that one."
+	""
 }
 
 text Battle04_JaksonText_PostBattle {
-	"You're doing really well, I'd say.\p"
-	"Knowing Harper and Redd, I was\n"
-	"a bit quick to assume everyone\l"
-	"would be amateurs.\p"
-	"My excuses don't matter though.\p"
-	"It reflects poorly on me as the\n"
-	"orchestrator of this adventure to\l"
-	"get beat so consistently.\p"
-	"I'll just have to be more diligent on\n"
-	"experimenting for where your own\l"
-	"weaknesses lie, then.\p"
-	"So don't slack on your team building!\p"
-	"I want to be really tested once I get\n"
-	"to my perfect endgame team.\p"
-	"Oh, and you might want to go heal up.\n"
-	"This route is going to be a long one.\p"
-	"Bye!"
+	""
 }
 
 text Battle04_ReddText_PreBattle {
-	"Hey, {PLAYER}!\n"
-	"What brings you here?\p"
-	"The story?\n"
-	"That whole thing?\p"
-	"Aw, come on. You know why you\n"
-	"stopped by here of all places.\p"
-	"I was even waiting for you here.\p"
-	"In this… you know, this ghostly\n"
-	"graveyard backdrop…\p"
-	"Your Pokémon aren't even dead!\p"
-	"Well, I can at least make them faint.\p"
-	"Let's go, pal!"
+	""
 }
 
 text Battle04_ReddText_BattleVictory {
-	"I can't be going easy on you now, can I?"
+	""
 }
 
 text Battle04_ReddText_PostBattle {
-	"I hate to admit it, but you're really good.\p"
-	"But, I'm not gonna hold back either,\n"
-	"no matter the challenge.\p"
-	"You filling out your Pokédex, too?\n"
-	"How's that coming along?\p"
-	"See? It's not always about getting\n"
-	"ahead in battling every time.\p"
-	"Go try to catch a Marowak around here\n"
-	"faster than I did.\p"
-	"Who knows, maybe I caught the\n"
-	"last one?\p"
-	"Well, I beter get going. I've still got a\n"
-	"lot more to accomplish.\p"
-	"See ya!"
+	""
 }
 
 text Battle04_SakuraText_PreBattle {
-	"Wa-cha!\p"
-	"Flannery has already fallen to me!\p"
-	"And via it, I have acquired ALL of\n"
-	"the Lavaridge Gym badges!\p"
-	"Why yes, that means you must go\n"
-	"through me to acquire your trophy!\p"
-	"{PLAYER}, struggle with all your\n"
-	"might!"
+	""
 }
 
 text Battle04_SakuraText_BattleVictory {
-	"Put me down like a dog…\n"
-	"How dare you."
+	""
 }
 
 text Battle04_SakuraText_PostBattle {
-	"Well, fine.\p"
-	"I didn't really have the entire supply\n"
-	"of gym badges anyways.\p"
-	"Oh, do trust me. I TRIED.\p"
-	"But turns out it's infinite.\n"
-	"Or I hit the inventory limit?\p"
-	"After that showing, though, you've\n"
-	"definitely got this in the bad, {PLAYER}.\p"
-	"Get in there and prove my confidence\n"
-	"to be infallible, won't ya?\p"
-	"Good luck!"
+	""
 }
 
 

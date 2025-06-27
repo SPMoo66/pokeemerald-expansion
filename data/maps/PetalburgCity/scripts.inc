@@ -1488,11 +1488,11 @@ PetalburgCity_EventScript_WallyBattle_1:
 # 765 "data/maps/PetalburgCity/scripts.pory"
 	closemessage
 # 766 "data/maps/PetalburgCity/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 767 "data/maps/PetalburgCity/scripts.pory"
 	removeobject LOCALID_PETALBURG_WALLY
 # 768 "data/maps/PetalburgCity/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 769 "data/maps/PetalburgCity/scripts.pory"
 	setvar VAR_PETALBURG_CITY_STATE, 6
 # 770 "data/maps/PetalburgCity/scripts.pory"

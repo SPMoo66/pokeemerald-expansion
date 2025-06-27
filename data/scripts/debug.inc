@@ -164,10 +164,9 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
-	warp MAP_DEWFORD_TOWN, 1
-	setvar VAR_EMERALBODY_RIVAL, 0
-	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 0
-	setflag FLAG_BADGE02_GET
+	warp MAP_LAVARIDGE_TOWN_GYM_1F, 25
+	setvar VAR_EMERALBODY_RIVAL, 4
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
 	release
 	end
 

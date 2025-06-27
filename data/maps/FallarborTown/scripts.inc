@@ -4,10 +4,16 @@ FallarborTown_MapScripts::
 
 FallarborTown_OnTransition:
 	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 7, EventScript_Clear_FlagTemp1
+	call_if_set FLAG_BADGE05_GET, FallarborTown_EventScript_CheckJakson
 	setflag FLAG_VISITED_FALLARBOR_TOWN
 	setvar VAR_CONTEST_HALL_STATE, 0
 	end
+
+FallarborTown_EventScript_CheckJakson:
+	call_if_eq VAR_EMERALBODY_RIVAL, 2, DewfordTown_EventScript_CheckBaron2 // Reuse the baron script
+	return
 
 FallarborTown_EventScript_ExpertM::
 	lock

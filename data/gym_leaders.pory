@@ -87,7 +87,7 @@ text RustboroCity_Gym_Text_ReceivedStoneBadge {
 text RustboroCity_Gym_Text_StoneBadgeInfoTakeThis {
 	"The Stone Badge enables the use of\n"
 	"Cut outside of battle.\p"
-	"Please take this with you, too.$"
+	"Please take this with you, too."
 }
 
 text RustboroCity_Gym_Text_ExplainSmackDown {
@@ -448,7 +448,14 @@ script LavaridgeTown_Gym_1F_EventScript_Flannery {
 	if (var(VAR_RESULT) == TRUE) {
 		goto (LavaridgeTown_Gym_1F_EventScript_FlanneryRematch)
 	}
-	msgbox (LavaridgeTown_Gym_1F_Text_FlanneryPostBattle, MSGBOX_DEFAULT)
+	if (!flag(FLAG_TEMP_5)) {
+		msgbox (LavaridgeTown_Gym_1F_Text_FlanneryPostBattle, MSGBOX_DEFAULT)
+		setflag (FLAG_TEMP_5)
+	}
+	else {
+		msgbox (LavaridgeTown_Gym_1F_Text_FlanneryPostBattle2, MSGBOX_DEFAULT)
+		clearflag (FLAG_TEMP_5)
+	}
 	clearflag (FLAG_CHALLENGING_TRAINER)
 	release
 }
@@ -505,7 +512,7 @@ text LavaridgeTown_Gym_1F_Text_FlanneryIntro {
 	"I have been Leader only a short time!\p"
 	"With skills inherited from my grand-\n"
 	"father, I shall, uh…demonstrate the\l"
-	"hot moves we have honed on this land!$"
+	"hot moves we have honed on this land!"
 }
 
 text LavaridgeTown_Gym_1F_Text_FlanneryDefeat {
@@ -518,12 +525,12 @@ text LavaridgeTown_Gym_1F_Text_FlanneryDefeat {
 	"I have to do things my natural way. If\n"
 	"I don't, my Pokémon will be confused.\p"
 	"Thanks for teaching me that.\n"
-	"For that, you deserve this.$"
+	"For that, you deserve this."
 }
 
 text LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge {
 	"{PLAYER} received the Heat Badge\n"
-	"from Flannery.$"
+	"from Flannery."
 }
 
 text LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis {
@@ -534,20 +541,34 @@ text LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis {
 	"And, it lets you use the HM move\n"
 	"Strength outside of battle.\p"
 	"This is a token of my appreciation.\n"
-	"Don't be shy about taking it!$"
+	"Don't be shy about taking it!"
 }
 
 text LavaridgeTown_Gym_1F_Text_ExplainBlazeKick {
 	"That TM40 contains Blaze Kick.\p"
 	"That move inflicts serious damage on\n"
 	"the opponent and has a high chance\l"
-	"to deal a critical hit.$"
+	"to deal a critical hit."
 }
 
 text LavaridgeTown_Gym_1F_Text_FlanneryPostBattle {
 	"Your power reminds me of someone…\p"
 	"Oh! I know! You battle like Norman,\n"
-	"the Gym Leader of Petalburg.$"
+	"the Gym Leader of Petalburg.\p"
+	"… … …\n"
+	"Wait, you're his kid!\p"
+	"I remember now!\n"
+	"You were so cute back then, haha!"
+}
+
+text LavaridgeTown_Gym_1F_Text_FlanneryPostBattle2 {
+	"You must not remember.\p"
+	"I've known your dad since I was a kid\n"
+	"myself.\p"
+	"I visited you all in Johto once with\n"
+	"my grandfather.\p"
+	"Norman's helped me out a lot in getting\n"
+	"me to where I am now."
 }
 
 text LavaridgeTown_Gym_1F_Text_FlanneryPreRematch {
@@ -557,12 +578,12 @@ text LavaridgeTown_Gym_1F_Text_FlanneryPreRematch {
 	"I love to battle.\l"
 	"And… I love this Gym!\p"
 	"Let's exchange superhot moves\n"
-	"in another battle!$"
+	"in another battle!"
 }
 
 text LavaridgeTown_Gym_1F_Text_FlanneryRematchDefeat {
 	"Whew!\n"
-	"On the verge of eruption!$"
+	"On the verge of eruption!"
 }
 
 text LavaridgeTown_Gym_1F_Text_FlanneryPostRematch {
@@ -571,7 +592,7 @@ text LavaridgeTown_Gym_1F_Text_FlanneryPostRematch {
 	"It's not often I get to enjoy a battle\n"
 	"this heated.\p"
 	"Let's have another one like this\n"
-	"again sometime!$"
+	"again sometime!"
 }
 
 text LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons {
@@ -585,7 +606,7 @@ text LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons {
 	"Oh, wait. Do you only have one Pokémon\n"
 	"that can battle?\p"
 	"I hate to say this, but when you come\n"
-	"see me, bring at least two Pokémon.$"
+	"see me, bring at least two Pokémon."
 }
 
 

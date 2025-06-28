@@ -455,7 +455,7 @@ Intro_EmibOpening_Text_1:
 
 Intro_EmibOpening_Text_2:
 # 24 "data/emib_opening.pory"
-	.string "Scientists disucss whether 2104 will be\n"
+	.string "Scientists discuss whether 2104 will be\n"
 	.string "the year that manned flights to the\l"
 	.string "Mars colony start, and about the\l"
 	.string "tourism industry.$"

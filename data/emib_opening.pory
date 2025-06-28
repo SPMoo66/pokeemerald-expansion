@@ -21,7 +21,7 @@ script Intro_EmibOpening {
 					"Welcome to ENCORE, the world's foremost chat system!\p"
 					"Your ENCORE server, FRIENDSCROPOLIS, has updates."))
 	speakername (CommonText_Feed)
-	msgbox( format(	"Scientists disucss whether 2104 will be the year that manned flights to the Mars colony start, and about the tourism industry."))
+	msgbox( format(	"Scientists discuss whether 2104 will be the year that manned flights to the Mars colony start, and about the tourism industry."))
 	closemessage
 	delay (16)
 	speakername (CommonText_Feed)

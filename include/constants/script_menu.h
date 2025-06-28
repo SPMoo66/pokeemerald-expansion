@@ -33,21 +33,21 @@
 #define MULTI_UNUSED_22                    22
 #define MULTI_CHALLENGEINFO                23
 #define MULTI_LEVEL_MODE                   24
-#define MULTI_MECHADOLL1_Q1                25
-#define MULTI_MECHADOLL1_Q2                26
-#define MULTI_MECHADOLL1_Q3                27
-#define MULTI_MECHADOLL2_Q1                28
-#define MULTI_MECHADOLL2_Q2                29
-#define MULTI_MECHADOLL2_Q3                30
-#define MULTI_MECHADOLL3_Q1                31
-#define MULTI_MECHADOLL3_Q2                32
-#define MULTI_MECHADOLL3_Q3                33
-#define MULTI_MECHADOLL4_Q1                34
-#define MULTI_MECHADOLL4_Q2                35
-#define MULTI_MECHADOLL4_Q3                36
-#define MULTI_MECHADOLL5_Q1                37
-#define MULTI_MECHADOLL5_Q2                38
-#define MULTI_MECHADOLL5_Q3                39
+#define MULTI_UNUSED_25                    25 // Was for Trick House 5 Quizzes
+#define MULTI_UNUSED_26                    26 //
+#define MULTI_UNUSED_27                    27 //
+#define MULTI_UNUSED_28                    28 //
+#define MULTI_UNUSED_29                    29 //
+#define MULTI_UNUSED_30                    30 //
+#define MULTI_UNUSED_31                    31 //
+#define MULTI_UNUSED_32                    32 //
+#define MULTI_UNUSED_33                    33 //
+#define MULTI_UNUSED_34                    34 //
+#define MULTI_UNUSED_35                    35 //
+#define MULTI_UNUSED_36                    36 //
+#define MULTI_UNUSED_37                    37 //
+#define MULTI_UNUSED_38                    38 //
+#define MULTI_UNUSED_39                    39 //
 #define MULTI_UNUSED_40                    40
 #define MULTI_UNUSED_41                    41
 #define MULTI_VENDING_MACHINE              42

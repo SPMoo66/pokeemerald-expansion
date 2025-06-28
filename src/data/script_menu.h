@@ -103,111 +103,6 @@ static const struct MenuAction MultichoiceList_LevelMode[] =
     {gText_Exit},
 };
 
-static const struct MenuAction MultichoiceList_Mechadoll1_Q1[] =
-{
-    {COMPOUND_STRING("ODDISH")},
-    {COMPOUND_STRING("POOCHYENA")},
-    {COMPOUND_STRING("TAILLOW")},
-};
-
-static const struct MenuAction MultichoiceList_Mechadoll1_Q2[] =
-{
-    {COMPOUND_STRING("AZURILL")},
-    {COMPOUND_STRING("LOTAD")},
-    {COMPOUND_STRING("WINGULL")},
-};
-
-static const struct MenuAction MultichoiceList_Mechadoll1_Q3[] =
-{
-    {COMPOUND_STRING("DUSTOX")},
-    {COMPOUND_STRING("ZUBAT")},
-    {COMPOUND_STRING("NINCADA")},
-};
-
-static const struct MenuAction MultichoiceList_Mechadoll2_Q1[] =
-{
-    {COMPOUND_STRING("RALTS")},
-    {COMPOUND_STRING("ZIGZAGOON")},
-    {COMPOUND_STRING("SLAKOTH")},
-};
-
-static const struct MenuAction MultichoiceList_Mechadoll2_Q2[] =
-{
-    {COMPOUND_STRING("POOCHYENA")},
-    {COMPOUND_STRING("SHROOMISH")},
-    {COMPOUND_STRING("ZIGZAGOON")},
-};
-
-static const struct MenuAction MultichoiceList_Mechadoll2_Q3[] =
-{
-    {COMPOUND_STRING("POOCHYENA")},
-    {COMPOUND_STRING("ZUBAT")},
-    {COMPOUND_STRING("CARVANHA")},
-};
-
-static const struct MenuAction MultichoiceList_Mechadoll3_Q1[] =
-{
-    {COMPOUND_STRING("Burn Heal")},
-    {COMPOUND_STRING("Harbor Mail")},
-    {COMPOUND_STRING("Same price")},
-};
-
-static const struct MenuAction MultichoiceList_Mechadoll3_Q2[] =
-{
-    {COMPOUND_STRING("¥60")},
-    {COMPOUND_STRING("¥55")},
-    {COMPOUND_STRING("Nothing")},
-};
-
-static const struct MenuAction MultichoiceList_Mechadoll3_Q3[] =
-{
-    {COMPOUND_STRING("They will cost more.")},
-    {COMPOUND_STRING("They will cost less.")},
-    {COMPOUND_STRING("Same price")},
-};
-
-static const struct MenuAction MultichoiceList_Mechadoll4_Q1[] =
-{
-    {COMPOUND_STRING("Male")},
-    {COMPOUND_STRING("Female")},
-    {COMPOUND_STRING("Neither")},
-};
-
-static const struct MenuAction MultichoiceList_Mechadoll4_Q2[] =
-{
-    {COMPOUND_STRING("Elderly men")},
-    {COMPOUND_STRING("Elderly ladies")},
-    {COMPOUND_STRING("Same number")},
-};
-
-static const struct MenuAction MultichoiceList_Mechadoll4_Q3[] =
-{
-    {COMPOUND_STRING("None")},
-    {COMPOUND_STRING("1")},
-    {COMPOUND_STRING("2")},
-};
-
-static const struct MenuAction MultichoiceList_Mechadoll5_Q1[] =
-{
-    {COMPOUND_STRING("2")},
-    {COMPOUND_STRING("3")},
-    {COMPOUND_STRING("4")},
-};
-
-static const struct MenuAction MultichoiceList_Mechadoll5_Q2[] =
-{
-    {COMPOUND_STRING("6")},
-    {COMPOUND_STRING("7")},
-    {COMPOUND_STRING("8")},
-};
-
-static const struct MenuAction MultichoiceList_Mechadoll5_Q3[] =
-{
-    {COMPOUND_STRING("6")},
-    {COMPOUND_STRING("7")},
-    {COMPOUND_STRING("8")},
-};
-
 static const struct MenuAction MultichoiceList_VendingMachine[] =
 {
     {COMPOUND_STRING("Fresh Water{CLEAR_TO 0x48}¥200")},
@@ -816,21 +711,21 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_UNUSED_22]                  = MULTICHOICE(MultichoiceList_Exit),
     [MULTI_CHALLENGEINFO]              = MULTICHOICE(MultichoiceList_ChallengeInfo),
     [MULTI_LEVEL_MODE]                 = MULTICHOICE(MultichoiceList_LevelMode),
-    [MULTI_MECHADOLL1_Q1]              = MULTICHOICE(MultichoiceList_Mechadoll1_Q1),
-    [MULTI_MECHADOLL1_Q2]              = MULTICHOICE(MultichoiceList_Mechadoll1_Q2),
-    [MULTI_MECHADOLL1_Q3]              = MULTICHOICE(MultichoiceList_Mechadoll1_Q3),
-    [MULTI_MECHADOLL2_Q1]              = MULTICHOICE(MultichoiceList_Mechadoll2_Q1),
-    [MULTI_MECHADOLL2_Q2]              = MULTICHOICE(MultichoiceList_Mechadoll2_Q2),
-    [MULTI_MECHADOLL2_Q3]              = MULTICHOICE(MultichoiceList_Mechadoll2_Q3),
-    [MULTI_MECHADOLL3_Q1]              = MULTICHOICE(MultichoiceList_Mechadoll3_Q1),
-    [MULTI_MECHADOLL3_Q2]              = MULTICHOICE(MultichoiceList_Mechadoll3_Q2),
-    [MULTI_MECHADOLL3_Q3]              = MULTICHOICE(MultichoiceList_Mechadoll3_Q3),
-    [MULTI_MECHADOLL4_Q1]              = MULTICHOICE(MultichoiceList_Mechadoll4_Q1),
-    [MULTI_MECHADOLL4_Q2]              = MULTICHOICE(MultichoiceList_Mechadoll4_Q2),
-    [MULTI_MECHADOLL4_Q3]              = MULTICHOICE(MultichoiceList_Mechadoll4_Q3),
-    [MULTI_MECHADOLL5_Q1]              = MULTICHOICE(MultichoiceList_Mechadoll5_Q1),
-    [MULTI_MECHADOLL5_Q2]              = MULTICHOICE(MultichoiceList_Mechadoll5_Q2),
-    [MULTI_MECHADOLL5_Q3]              = MULTICHOICE(MultichoiceList_Mechadoll5_Q3),
+    [MULTI_UNUSED_25]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_UNUSED_26]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_UNUSED_27]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_UNUSED_28]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_UNUSED_29]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_UNUSED_30]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_UNUSED_31]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_UNUSED_32]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_UNUSED_33]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_UNUSED_34]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_UNUSED_35]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_UNUSED_36]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_UNUSED_37]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_UNUSED_38]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_UNUSED_39]                  = MULTICHOICE(MultichoiceList_Exit),
     [MULTI_UNUSED_40]                  = MULTICHOICE(MultichoiceList_Exit),
     [MULTI_UNUSED_41]                  = MULTICHOICE(MultichoiceList_Exit),
     [MULTI_VENDING_MACHINE]            = MULTICHOICE(MultichoiceList_VendingMachine),

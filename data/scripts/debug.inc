@@ -137,14 +137,7 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
-	setvar VAR_0x8000, MUGSHOT_JIGGLYPUFF_1
-	callnative DrawMugshot
-	delay 100
-	callnative ClearMugshot
-	setvar VAR_0x8000, MUGSHOT_JIGGLYPUFF_2
-	callnative DrawMugshot
-	delay 100
-	callnative ClearMugshot
+	warp MAP_ROUTE110_TRICK_HOUSE_PUZZLE5, 11, 6
 	release
 	end
 

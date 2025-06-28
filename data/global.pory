@@ -712,6 +712,7 @@ script EventScript_CapCollector {
 	dynmultipush("Ability Shield", ITEM_ABILITY_SHIELD)
 	dynmultipush("Punching Glove", ITEM_PUNCHING_GLOVE)
 	dynmultipush("Covert Cloak", ITEM_COVERT_CLOAK)
+	dynmultipush("Blunder Policy", ITEM_BLUNDER_POLICY)
 	special(GetNumberOfBadges)
 	if (var(VAR_RESULT) >= 5) {
 		dynmultipush("Booster Energy", ITEM_BOOSTER_ENERGY)

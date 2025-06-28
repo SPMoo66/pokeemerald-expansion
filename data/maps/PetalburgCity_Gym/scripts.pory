@@ -99,9 +99,24 @@ PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial::
 	waitfanfare
 	speakername (CommonText_Dad)
 	msgbox PetalburgCity_Gym_Text_DadPokevial, MSGBOX_DEFAULT
+	closemessage
+	call_if_set FLAG_EMIB_DEMO_2, PetalburgCity_Gym_EventScript_BonusDose
 	setvar VAR_PETALBURG_GYM_STATE, 2
 	releaseall
 	end
+
+PetalburgCity_Gym_EventScript_BonusDose::
+	delay 30
+	speakername (CommonText_Dad)
+	msgbox PetalburgCity_Gym_Text_DadBonusDose, MSGBOX_DEFAULT
+	closemessage
+	pokevialincreasesize
+	msgbox Text_PokevialSizeIncrease, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+	closemessage
+	delay 20
+	return
 
 PetalburgCity_Gym_Movement_WallyExitGym:
 	walk_down
@@ -1145,6 +1160,14 @@ PetalburgCity_Gym_Text_DadPokevial:
 	.string "for you. It only holds one dose\l"
 	.string "for now, but I'm sure you'll find\l"
 	.string "ways to expand it on your journey.$"
+
+PetalburgCity_Gym_Text_DadBonusDose:
+	.string "Oh?\p"
+	.string "You've got a look in your eye.\n"
+	.string "Like that wasn't enough for you.\p"
+	.string "It seems like you might have a bit more\n"
+	.string "experience than I thought, so here, I'll\l"
+	.string "give you another dose right away.$"
 
 PetalburgCity_Gym_Text_NormanGoToRustboro:
 	.string "Hm? Aren't you going to the\n"

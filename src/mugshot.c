@@ -24,8 +24,14 @@ void ClearMugshot(void);
 static const u32 sMugshotImg_Test[] = INCBIN_U32("graphics/mugshots/test.4bpp.lz");
 static const u16 sMugshotPal_Test[] = INCBIN_U16("graphics/mugshots/test.gbapal");
 
+static const u32 sMugshotImg_Jigglypuff1[] = INCBIN_U32("graphics/mugshots/jigglypuff1.4bpp.lz");
+static const u32 sMugshotImg_Jigglypuff2[] = INCBIN_U32("graphics/mugshots/jigglypuff2.4bpp.lz");
+static const u16 sMugshotPal_Jigglypuff[] = INCBIN_U16("graphics/mugshots/jigglypuff2.gbapal");
+
 static const struct Mugshot sMugshots[] = {
     [MUGSHOT_TEST] = {.x = 0, .y = 1, .width = 240, .height = 96, .image = sMugshotImg_Test, .palette = sMugshotPal_Test},
+    [MUGSHOT_JIGGLYPUFF_1] = {.x = 0, .y = 1, .width = 96, .height = 96, .image = sMugshotImg_Jigglypuff1, .palette = sMugshotPal_Jigglypuff},
+    [MUGSHOT_JIGGLYPUFF_2] = {.x = 0, .y = 1, .width = 96, .height = 96, .image = sMugshotImg_Jigglypuff2, .palette = sMugshotPal_Jigglypuff},
 };
 
 
@@ -48,12 +54,12 @@ static void DrawMugshotCore(const struct Mugshot* const mugshot, int x, int y){
     if(sMugshotWindow != 0){
         ClearMugshot();
     }
-    
-    #if GAME_VERSION==VERSION_EMERALD
-    SetWindowTemplateFields(&t, 1, x, y, mugshot->width/8, mugshot->height/8, MUGSHOT_PALETTE_NUM, 0x40);
-    #else
-    t = SetWindowTemplateFields(0, x, y, mugshot->width/8, mugshot->height/8, MUGSHOT_PALETTE_NUM, 0x40);
-    #endif
+    if (VarGet(VAR_0x8000) == MUGSHOT_TEST) {
+        SetWindowTemplateFields(&t, 1, x, y, mugshot->width/8, mugshot->height/8, MUGSHOT_PALETTE_NUM, 0x40);
+    }
+    else {
+        SetWindowTemplateFields(&t, 0, x, y, mugshot->width/8, mugshot->height/8, MUGSHOT_PALETTE_NUM, 0x40);
+    }
     windowId = AddWindow(&t);
     sMugshotWindow = windowId + 1;
     

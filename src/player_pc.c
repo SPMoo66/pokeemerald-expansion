@@ -29,6 +29,7 @@
 #include "task.h"
 #include "window.h"
 #include "menu_specialized.h"
+#include "event_data.h"
 
 // Top level PC menu options
 enum {
@@ -378,6 +379,13 @@ void NewGameInitPCItems(void)
         if (AddPCItem(sNewGamePCItems[i][0], sNewGamePCItems[i][1]) != TRUE)
             break;
         i++;
+    }
+
+    if (FlagGet(FLAG_EMIB_DEMO_1)) {
+        AddPCItem(ITEM_BIG_NUGGET, 1);
+    }
+    if (FlagGet(FLAG_EMIB_DEMO_3)) {
+        AddPCItem(ITEM_SHINY_LURE, 1);
     }
 }
 

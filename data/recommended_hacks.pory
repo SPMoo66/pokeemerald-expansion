@@ -1,0 +1,41 @@
+script RecommendedHacks {
+	lock
+	msgbox (format("Check out these other romhacks!"))
+	dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, "Pokémon Unbound", "Pokémon R.O.W.E.", "Pokémon Emerald Rogue", "The Pit", "Pokémon Voyager (Demo)", "Pokémon Darkfire (Demo)", "Celia's Stupid Romhack (Demo)", "Sovereign of the Skies (Demo)", "Pokémon Peach and Lime (indev)", "Pokémon Samiya (indev)", "Legends Arise - Trinity Aenigma (indev)")
+		switch (var(VAR_RESULT)) {
+			case 0:
+				speakername ("Unbound")
+				msgbox (format ("Pokémon Unbound is a new region hack of FireRed, built on an incredibly ambitious custom engine, injecting code straight into the ROM, and subsequently released to the public as the Complete Fire Red Upgrade.\pThis is an incredible, complete hack."))
+			case 1:
+				speakername ("R.O.W.E")
+				msgbox (format ("Pokémon R.O.W.E., short for Rioluwott's Open World Emerald, is an open world hack of Emerald with tons of customizations available. On top of Hoenn, the Sevii Islands are included and Kanto is promised in future updates.\pThis hack is complete!"))
+			case 2:
+				speakername ("Emerald Rogue")
+				msgbox (format ("Pokémon Emerald Rogue is a great romhack built around shorter roguelike runs of Emerald. The player runs around in randomized individual routes, catching Pokémon and then fighting battles and bosses."))
+			case 3:
+				speakername ("The Pit")
+				msgbox (format ("The Pit is a hack of Emerald that is inspired by the Pit of 100 Trials from Paper Mario: The Thousand Year Door. The player goes through randomized floors, fighting battles along the way."))
+			case 4:
+				speakername ("Voyager")
+				msgbox (format ("Pokémon Voyager is an upcoming new region hack featuring fakemon, triple battles, rotation battles, a casino with custom games, and many other ambitious features.\pDemos are currently available."))
+			case 5:
+				speakername ("Darkfire")
+				msgbox (format ("Pokémon Darkfire is an upcoming new region hack featuring great custom art, focused on Generation 1-3 Pokémon.\pDemos are currently available."))
+			case 6:
+				speakername ("Celia's")
+				msgbox (format ("Celia's Stupid Romhack is a self described ‘comedy and puzzle romhack’ that…\pWell, it's incredibly creative.\pDemos are currently available."))
+			case 7:
+				speakername ("SotS")
+				msgbox (format ("Sovereign of the Skies is an upcoming new region romhack featuring incredible custom art, creative puzzles, amazing maps, and more.\pDemos are currently available."))
+			case 8:
+				speakername ("Peach and Lime")
+				msgbox (format ("Pokémon Peach and Lime are a pair of romhacks in development that feature great custom art.\pBoth are currently in development with nothing released."))
+			case 9:
+				speakername ("Samiya")
+				msgbox (format ("Pokémon Samiya is an upcoming action-based romhack of Emerald based around The Legend of Zelda.\pIt is currently in development with nothing released."))
+			case 10:
+				speakername ("LA - TA")
+				msgbox (format ("Legends Arise - Trinity Aenigma is an incredibly ambitious upcoming romhack of Platinum. If it ever releases, this will be a must-play.\pIt is currently in development with nothing released."))
+		}
+	release
+}

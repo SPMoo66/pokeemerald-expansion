@@ -581,13 +581,6 @@ gStdScripts_End::
 	.include "data/maps/Route119_WeatherInstitute_2F/scripts.inc"
 	.include "data/maps/Route119_House/scripts.inc"
 	.include "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc"
-	.include "data/maps/LeafyClearing/scripts.inc"
-	.include "data/maps/CaveOfDreams/scripts.inc"
-	.include "data/maps/GraniteCave_B3F/scripts.inc"
-	.include "data/maps/CaveOfDreamsChamber/scripts.inc"
-	.include "data/maps/WoodlandCradleGrass/scripts.inc"
-	.include "data/maps/WoodlandCradleFire/scripts.inc"
-	.include "data/maps/WoodlandCradleWater/scripts.inc"
 
 	.include "data/scripts/std_msgbox.inc"
 	.include "data/scripts/trainer_battle.inc"
@@ -1145,7 +1138,15 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/weather.inc"
 	.include "data/register_pokenav.inc"
 	.include "data/magearna_encounter.inc"
+	.include "data/recommended_hacks.inc"
 
+	.include "data/maps/LeafyClearing/scripts.inc"
+	.include "data/maps/CaveOfDreams/scripts.inc"
+	.include "data/maps/GraniteCave_B3F/scripts.inc"
+	.include "data/maps/CaveOfDreamsChamber/scripts.inc"
+	.include "data/maps/WoodlandCradleGrass/scripts.inc"
+	.include "data/maps/WoodlandCradleFire/scripts.inc"
+	.include "data/maps/WoodlandCradleWater/scripts.inc"
 	.include "data/maps/ScorchedSlabB1F/scripts.inc"
 	.include "data/maps/SeasideGrotto/scripts.inc"
 	.include "data/maps/Underwater_SubmergedCavern/scripts.inc"
@@ -1172,7 +1173,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RocketRefuge_B2F/scripts.inc"
 	.include "data/maps/RocketRefuge_B3F/scripts.inc"
 	.include "data/maps/MagmaHideout_PortalRoom/scripts.inc"
-
 	.include "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.inc"
-
 	.include "data/maps/OvergrownJungle/scripts.inc"

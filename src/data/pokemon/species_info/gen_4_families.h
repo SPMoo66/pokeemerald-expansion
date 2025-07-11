@@ -4323,6 +4323,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
+        .frontPic = gMonFrontPic_LopunnyEmeribian,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 2,
         .frontAnimFrames = ANIM_FRAMES(

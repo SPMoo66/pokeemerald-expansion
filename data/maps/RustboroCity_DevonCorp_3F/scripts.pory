@@ -365,6 +365,7 @@ script RustboroCity_DevonCorp_3F_PresidentSaved {
 	msgbox( format( "It looks like that man…\nLooker, was it?\pHe took the intruder away, if you're looking for him."))
 	closemessage
 	setvar (VAR_LOOKER_ROCKET, 7)
+	setflag (FLAG_LOOKER_CLEARED_DEVONCORP)
 	release
 }
 

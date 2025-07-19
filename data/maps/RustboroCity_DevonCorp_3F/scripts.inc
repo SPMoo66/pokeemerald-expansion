@@ -730,27 +730,29 @@ RustboroCity_DevonCorp_3F_PresidentSaved::
 # 367 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	setvar VAR_LOOKER_ROCKET, 7
 # 368 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
+	setflag FLAG_LOOKER_CLEARED_DEVONCORP
+# 369 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	release
 	return
 
 
-# 380 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
+# 381 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 Movement_LookerRun:
-# 381 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
+# 382 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	walk_fast_right
-# 381 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
+# 382 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	walk_fast_right
-# 381 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
+# 382 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	walk_fast_right
-# 381 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
+# 382 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	walk_fast_right
-# 381 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
+# 382 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	walk_fast_right
-# 381 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
+# 382 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	walk_fast_right
-# 381 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
+# 382 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	walk_fast_right
-# 381 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
+# 382 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	walk_fast_right
 	step_end
 
@@ -801,9 +803,9 @@ RustboroCity_DevonCorp_3F_PresidentSaved_Text_1:
 	.string "looking for him.$"
 
 RustboroCity_DevonCorp_3F_Text_GiovanniIntro::
-# 372 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
+# 373 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	.string "We arrived on boat, set for Kanto!\pHow did we end up here in Hoenn!?\nWe decided to come here, taking the\lopportunity, and you won't be stopping\lus!$"
 
 RustboroCity_DevonCorp_3F_Text_GiovanniDefeat::
-# 376 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
+# 377 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	.string "I'll sue that boat captain into the\nground!$"

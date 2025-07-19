@@ -1178,13 +1178,17 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
             if (gDexNavSpecies)
                 totalRerolls += CalculateDexNavShinyRolls();
 
-            while (GET_SHINY_VALUE(value, personality) >= SHINY_ODDS && totalRerolls > 0)
+            u32 shinyOddsTotal = SHINY_ODDS;
+            if (gSpeciesInfo[species].isLegendary || gSpeciesInfo[species].isMythical || gSpeciesInfo[species].isUltraBeast) // If the species is a Legendary, multiply total odds by 2
+                shinyOddsTotal *= 4;
+
+            while (GET_SHINY_VALUE(value, personality) >= shinyOddsTotal && totalRerolls > 0)
             {
                 personality = Random32();
                 totalRerolls--;
             }
 
-            isShiny = GET_SHINY_VALUE(value, personality) < SHINY_ODDS;
+            isShiny = GET_SHINY_VALUE(value, personality) < shinyOddsTotal;
         }
     }
 

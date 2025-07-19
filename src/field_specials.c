@@ -4381,9 +4381,12 @@ void EnterCode(void)
 
 void GetCodeFeedback(void)
 {
-    static const u8 sText_SampleCode[] = _("SampleCode");
-    if (!StringCompare(gStringVar2, sText_SampleCode))
+    static const u8 sText_DemoSave[] = _("DemoSave");
+    static const u8 sText_NewGamePlus[] = _("Zelda");
+    if (!StringCompare(gStringVar2, sText_DemoSave))
         gSpecialVar_Result = 1;
+    else if (!StringCompare(gStringVar2, sText_NewGamePlus))
+        gSpecialVar_Result = 2;
     else
         gSpecialVar_Result = 0;
 }

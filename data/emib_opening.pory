@@ -230,3 +230,39 @@ text CommonText_Quiz {
 	"Quiz"
 }
 
+
+script InsideOfTruck_EventScript_MovingBox2 {
+	if (flag(FLAG_TEMP_5)) {
+		msgbox ("Enter a code.")
+		special (EnterCode)
+		waitstate
+		special (GetCodeFeedback)
+		if (var(VAR_RESULT) == 1) {
+			setflag (FLAG_EMIB_DEMO_1)
+			setflag (FLAG_EMIB_DEMO_2)
+			setflag (FLAG_EMIB_DEMO_3)
+			msgbox (Text_CodeEntrySuccess, MSGBOX_DEFAULT)
+		}
+		elif (var(VAR_RESULT) == 2) {
+			setflag (FLAG_NEW_GAME_PLUS)
+			setflag (FLAG_EMIB_DEMO_1)
+			setflag (FLAG_EMIB_DEMO_2)
+			setflag (FLAG_EMIB_DEMO_3)
+			msgbox (Text_CodeEntrySuccess, MSGBOX_DEFAULT)
+		}
+		else {
+			msgbox ("Valid code not entered.")
+		}
+	}
+	else {
+		msgbox (InsideOfTruck_Text_BoxPrintedWithMonLogo, MSGBOX_SIGN)
+		setflag (FLAG_TEMP_5)
+	}
+	setvar (VAR_RESULT, 0)
+	release
+}
+
+text Text_CodeEntrySuccess {
+	"Code entry successful."
+}
+

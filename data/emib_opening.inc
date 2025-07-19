@@ -431,6 +431,64 @@ Intro_DetermineRival_41:
 	return
 
 
+InsideOfTruck_EventScript_MovingBox2::
+# 235 "data/emib_opening.pory"
+	goto_if_set FLAG_TEMP_5, InsideOfTruck_EventScript_MovingBox2_2
+# 258 "data/emib_opening.pory"
+	msgbox InsideOfTruck_Text_BoxPrintedWithMonLogo, MSGBOX_SIGN
+# 259 "data/emib_opening.pory"
+	setflag FLAG_TEMP_5
+InsideOfTruck_EventScript_MovingBox2_1:
+# 261 "data/emib_opening.pory"
+	setvar VAR_RESULT, 0
+# 262 "data/emib_opening.pory"
+	release
+	return
+
+InsideOfTruck_EventScript_MovingBox2_2:
+# 236 "data/emib_opening.pory"
+	msgbox InsideOfTruck_EventScript_MovingBox2_Text_0
+# 237 "data/emib_opening.pory"
+	special EnterCode
+# 238 "data/emib_opening.pory"
+	waitstate
+# 239 "data/emib_opening.pory"
+	special GetCodeFeedback
+# 240 "data/emib_opening.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq InsideOfTruck_EventScript_MovingBox2_5
+# 246 "data/emib_opening.pory"
+	compare VAR_RESULT, 2
+	goto_if_eq InsideOfTruck_EventScript_MovingBox2_6
+# 254 "data/emib_opening.pory"
+	msgbox InsideOfTruck_EventScript_MovingBox2_Text_1
+	goto InsideOfTruck_EventScript_MovingBox2_1
+
+InsideOfTruck_EventScript_MovingBox2_5:
+# 241 "data/emib_opening.pory"
+	setflag FLAG_EMIB_DEMO_1
+# 242 "data/emib_opening.pory"
+	setflag FLAG_EMIB_DEMO_2
+# 243 "data/emib_opening.pory"
+	setflag FLAG_EMIB_DEMO_3
+# 244 "data/emib_opening.pory"
+	msgbox Text_CodeEntrySuccess, MSGBOX_DEFAULT
+	goto InsideOfTruck_EventScript_MovingBox2_1
+
+InsideOfTruck_EventScript_MovingBox2_6:
+# 247 "data/emib_opening.pory"
+	setflag FLAG_NEW_GAME_PLUS
+# 248 "data/emib_opening.pory"
+	setflag FLAG_EMIB_DEMO_1
+# 249 "data/emib_opening.pory"
+	setflag FLAG_EMIB_DEMO_2
+# 250 "data/emib_opening.pory"
+	setflag FLAG_EMIB_DEMO_3
+# 251 "data/emib_opening.pory"
+	msgbox Text_CodeEntrySuccess, MSGBOX_DEFAULT
+	goto InsideOfTruck_EventScript_MovingBox2_1
+
+
 Intro_EmibOpening_Text_0:
 # 2 "data/emib_opening.pory"
 	.string "Earlier…$"
@@ -667,6 +725,14 @@ Intro_EmibOpening_Text_43:
 	.string "… … …\l"
 	.string "Connecting to server…$"
 
+InsideOfTruck_EventScript_MovingBox2_Text_0:
+# 236 "data/emib_opening.pory"
+	.string "Enter a code.$"
+
+InsideOfTruck_EventScript_MovingBox2_Text_1:
+# 254 "data/emib_opening.pory"
+	.string "Valid code not entered.$"
+
 CommonText_Feed::
 # 225 "data/emib_opening.pory"
 	.string "Feed$"
@@ -674,3 +740,7 @@ CommonText_Feed::
 CommonText_Quiz::
 # 229 "data/emib_opening.pory"
 	.string "Quiz$"
+
+Text_CodeEntrySuccess::
+# 265 "data/emib_opening.pory"
+	.string "Code entry successful.$"

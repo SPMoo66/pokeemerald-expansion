@@ -12,7 +12,7 @@
   "allow_running": false,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "local_id": "LOCALID_TRUCK_BOX_TOP",
@@ -116,7 +116,7 @@
       "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "InsideOfTruck_EventScript_MovingBox"
+      "script": "InsideOfTruck_EventScript_MovingBox2"
     },
     {
       "type": "sign",

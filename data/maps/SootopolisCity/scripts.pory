@@ -1469,14 +1469,12 @@ script SootopolisCity_EventScript_Kiri {
 	lock
 	faceplayer
 	if (var(VAR_SOOTOPOLIS_CITY_STATE) <= 1 || var(VAR_SOOTOPOLIS_CITY_STATE) >= 6) {
-		if (var(VAR_SOOTOPOLIS_CITY_STATE) >= 6) {
-			checkitem (ITEM_WISH_TAG)
-			if (var(VAR_RESULT) == FALSE) {
-				msgbox(	"{PLAYER}!\nYou stopped the big Pokémon from\lfighting!\pKiri is happy…\p"
-						"Since you helped Kiri's wishes come\ntrue, Kiri will give you this!")
-				giveitem (ITEM_WISH_TAG)
-				msgbox(	"Kiri hopes that you can use her Wish\nTag to make your own wish come true.")
-			}
+		checkitem (ITEM_WISH_TAG)
+		if (var(VAR_SOOTOPOLIS_CITY_STATE) >= 6 && var(VAR_RESULT) == FALSE) {
+			msgbox(	"{PLAYER}!\nYou stopped the big Pokémon from\lfighting!\pKiri is happy…\p"
+					"Since you helped Kiri's wishes come\ntrue, Kiri will give you this!")
+			giveitem (ITEM_WISH_TAG)
+			msgbox(	"Kiri hopes that you can use her Wish\nTag to make your own wish come true.")
 		}
 		else {
 			dotimebasedevents

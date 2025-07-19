@@ -2997,129 +2997,130 @@ SootopolisCity_EventScript_Kiri::
 # 1471 "data/maps/SootopolisCity/scripts.pory"
 	compare VAR_SOOTOPOLIS_CITY_STATE, 6
 	goto_if_ge SootopolisCity_EventScript_Kiri_2
-# 1523 "data/maps/SootopolisCity/scripts.pory"
+# 1521 "data/maps/SootopolisCity/scripts.pory"
 	compare VAR_SOOTOPOLIS_CITY_STATE, 5
 	goto_if_eq SootopolisCity_EventScript_Kiri_3
-# 1528 "data/maps/SootopolisCity/scripts.pory"
+# 1526 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_Text_BigPokemonFighting, MSGBOX_DEFAULT
-# 1529 "data/maps/SootopolisCity/scripts.pory"
+# 1527 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
-# 1530 "data/maps/SootopolisCity/scripts.pory"
+# 1528 "data/maps/SootopolisCity/scripts.pory"
 	applymovement 3, Common_Movement_FaceOriginalDirection
-# 1531 "data/maps/SootopolisCity/scripts.pory"
+# 1529 "data/maps/SootopolisCity/scripts.pory"
 	waitmovement 0
 SootopolisCity_EventScript_Kiri_1:
-# 1533 "data/maps/SootopolisCity/scripts.pory"
+# 1531 "data/maps/SootopolisCity/scripts.pory"
 	release
 	return
 
 SootopolisCity_EventScript_Kiri_2:
 # 1472 "data/maps/SootopolisCity/scripts.pory"
+	checkitem ITEM_WISH_TAG
+# 1473 "data/maps/SootopolisCity/scripts.pory"
 	compare VAR_SOOTOPOLIS_CITY_STATE, 6
-	goto_if_ge SootopolisCity_EventScript_Kiri_9
-# 1482 "data/maps/SootopolisCity/scripts.pory"
+	goto_if_ge SootopolisCity_EventScript_Kiri_11
+SootopolisCity_EventScript_Kiri_10:
+# 1480 "data/maps/SootopolisCity/scripts.pory"
 	dotimebasedevents
-# 1483 "data/maps/SootopolisCity/scripts.pory"
+# 1481 "data/maps/SootopolisCity/scripts.pory"
 	special GetPlayerBigGuyGirlString
-# 1484 "data/maps/SootopolisCity/scripts.pory"
+# 1482 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_set FLAG_DAILY_SOOTOPOLIS_RECEIVED_BERRY, SootopolisCity_EventScript_Kiri_14
-# 1494 "data/maps/SootopolisCity/scripts.pory"
+# 1492 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_Text_NameIsKiriHaveOneOfThese, MSGBOX_DEFAULT
-# 1495 "data/maps/SootopolisCity/scripts.pory"
+# 1493 "data/maps/SootopolisCity/scripts.pory"
 	random NUM_KIRI_BERRIES
-# 1496 "data/maps/SootopolisCity/scripts.pory"
+# 1494 "data/maps/SootopolisCity/scripts.pory"
 	addvar VAR_RESULT, NUM_KIRI_BERRIES_SKIPPED
-# 1497 "data/maps/SootopolisCity/scripts.pory"
+# 1495 "data/maps/SootopolisCity/scripts.pory"
 	addvar VAR_RESULT, FIRST_BERRY_INDEX
-# 1498 "data/maps/SootopolisCity/scripts.pory"
+# 1496 "data/maps/SootopolisCity/scripts.pory"
 	giveitem VAR_RESULT
-# 1499 "data/maps/SootopolisCity/scripts.pory"
+# 1497 "data/maps/SootopolisCity/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq SootopolisCity_EventScript_Kiri_20
-# 1503 "data/maps/SootopolisCity/scripts.pory"
+# 1501 "data/maps/SootopolisCity/scripts.pory"
 	setflag FLAG_DAILY_SOOTOPOLIS_RECEIVED_BERRY
-# 1504 "data/maps/SootopolisCity/scripts.pory"
+# 1502 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_Text_GiveYouThisBerryToo, MSGBOX_DEFAULT
-# 1505 "data/maps/SootopolisCity/scripts.pory"
+# 1503 "data/maps/SootopolisCity/scripts.pory"
 	random 2
-# 1506 "data/maps/SootopolisCity/scripts.pory"
+# 1504 "data/maps/SootopolisCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq SootopolisCity_EventScript_Kiri_24
-# 1512 "data/maps/SootopolisCity/scripts.pory"
+# 1510 "data/maps/SootopolisCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SootopolisCity_EventScript_Kiri_25
 SootopolisCity_EventScript_Kiri_23:
-# 1518 "data/maps/SootopolisCity/scripts.pory"
+# 1516 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_Text_WhatKindOfWishInYourName, MSGBOX_DEFAULT
 	goto SootopolisCity_EventScript_Kiri_1
 
 SootopolisCity_EventScript_Kiri_3:
-# 1524 "data/maps/SootopolisCity/scripts.pory"
+# 1522 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_Text_PrettyMonCameFromSky, MSGBOX_DEFAULT
-# 1525 "data/maps/SootopolisCity/scripts.pory"
+# 1523 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 	goto SootopolisCity_EventScript_Kiri_1
 
 SootopolisCity_EventScript_Kiri_9:
-# 1473 "data/maps/SootopolisCity/scripts.pory"
-	checkitem ITEM_WISH_TAG
 # 1474 "data/maps/SootopolisCity/scripts.pory"
-	compare VAR_RESULT, FALSE
-	goto_if_eq SootopolisCity_EventScript_Kiri_12
-	goto SootopolisCity_EventScript_Kiri_1
-
-SootopolisCity_EventScript_Kiri_12:
-# 1475 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_EventScript_Kiri_Text_0
-# 1477 "data/maps/SootopolisCity/scripts.pory"
+# 1476 "data/maps/SootopolisCity/scripts.pory"
 	giveitem ITEM_WISH_TAG
-# 1478 "data/maps/SootopolisCity/scripts.pory"
+# 1477 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_EventScript_Kiri_Text_1
 	goto SootopolisCity_EventScript_Kiri_1
 
+SootopolisCity_EventScript_Kiri_11:
+# 1473 "data/maps/SootopolisCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq SootopolisCity_EventScript_Kiri_9
+	goto SootopolisCity_EventScript_Kiri_10
+
 SootopolisCity_EventScript_Kiri_14:
-# 1485 "data/maps/SootopolisCity/scripts.pory"
+# 1483 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_Text_LikeSeasonBornIn, MSGBOX_YESNO
-# 1486 "data/maps/SootopolisCity/scripts.pory"
+# 1484 "data/maps/SootopolisCity/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq SootopolisCity_EventScript_Kiri_17
-# 1490 "data/maps/SootopolisCity/scripts.pory"
+# 1488 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_Text_OhDoesntMatter, MSGBOX_DEFAULT
 	goto SootopolisCity_EventScript_Kiri_1
 
 SootopolisCity_EventScript_Kiri_17:
-# 1487 "data/maps/SootopolisCity/scripts.pory"
+# 1485 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_Text_ThenILoveAutumn, MSGBOX_DEFAULT
 	goto SootopolisCity_EventScript_Kiri_1
 
 SootopolisCity_EventScript_Kiri_20:
-# 1500 "data/maps/SootopolisCity/scripts.pory"
+# 1498 "data/maps/SootopolisCity/scripts.pory"
 	goto Common_EventScript_ShowBagIsFull
 	goto SootopolisCity_EventScript_Kiri_1
 
 SootopolisCity_EventScript_Kiri_24:
-# 1507 "data/maps/SootopolisCity/scripts.pory"
+# 1505 "data/maps/SootopolisCity/scripts.pory"
 	giveitem ITEM_FIGY_BERRY
-# 1508 "data/maps/SootopolisCity/scripts.pory"
+# 1506 "data/maps/SootopolisCity/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq SootopolisCity_EventScript_Kiri_28
 	goto SootopolisCity_EventScript_Kiri_23
 
 SootopolisCity_EventScript_Kiri_25:
-# 1513 "data/maps/SootopolisCity/scripts.pory"
+# 1511 "data/maps/SootopolisCity/scripts.pory"
 	giveitem ITEM_IAPAPA_BERRY
-# 1514 "data/maps/SootopolisCity/scripts.pory"
+# 1512 "data/maps/SootopolisCity/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq SootopolisCity_EventScript_Kiri_30
 	goto SootopolisCity_EventScript_Kiri_23
 
 SootopolisCity_EventScript_Kiri_28:
-# 1509 "data/maps/SootopolisCity/scripts.pory"
+# 1507 "data/maps/SootopolisCity/scripts.pory"
 	goto Common_EventScript_ShowBagIsFull
 	goto SootopolisCity_EventScript_Kiri_23
 
 SootopolisCity_EventScript_Kiri_30:
-# 1515 "data/maps/SootopolisCity/scripts.pory"
+# 1513 "data/maps/SootopolisCity/scripts.pory"
 	goto Common_EventScript_ShowBagIsFull
 	goto SootopolisCity_EventScript_Kiri_23
 
@@ -3129,10 +3130,10 @@ SootopolisCity_EventScript_StartRayquazaScene_Text_0:
 	.string "But Rayquaza alone cannot quell them!$"
 
 SootopolisCity_EventScript_Kiri_Text_0:
-# 1475 "data/maps/SootopolisCity/scripts.pory"
+# 1474 "data/maps/SootopolisCity/scripts.pory"
 	.string "{PLAYER}!\nYou stopped the big Pokémon from\lfighting!\pKiri is happy…\p"
 	.string "Since you helped Kiri's wishes come\ntrue, Kiri will give you this!$"
 
 SootopolisCity_EventScript_Kiri_Text_1:
-# 1478 "data/maps/SootopolisCity/scripts.pory"
+# 1477 "data/maps/SootopolisCity/scripts.pory"
 	.string "Kiri hopes that you can use her Wish\nTag to make your own wish come true.$"

@@ -2990,16 +2990,19 @@ MatchCall_Text_Looker3::
 	.string "the Pokénav's service area…$"
 
 MatchCall_Text_Looker4::
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "Looker appears to be out of\n"
-	.string "the Pokénav's service area…$"
+	.string "Looker: {PLAYER}!\n"
+	.string "What can you be calling me for?\p"
+	.string "Hurry! We must storm Trainer Hill\n"
+	.string "as soon as possible!$"
 
 MatchCall_Text_Looker5::
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "Looker appears to be out of\n"
-	.string "the Pokénav's service area…$"
+	.string "Looker: Ah, {PLAYER}, it is you.\p"
+	.string "I must thank you once again.\p"
+	.string "Your help in our dealings with Team\n"
+	.string "Rocket was invaluable.\p"
+	.string "I trust that I can count on you if\n"
+	.string "tensions escalate in the region\l"
+	.string "once more.$"
 
 MatchCall_Text_Norman1:: @ 82B5719
 	.string "Dad: In Rustboro, there's a man\n"

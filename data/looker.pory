@@ -193,6 +193,7 @@ script SootopolisCity_EventScript_Looker {
 		waitmessage
 		closemessage
 		setvar (VAR_LOOKER_ROCKET, 9)
+		setflag (FLAG_LOOKER_SOOTOPOLIS_CALL)
 		fadedefaultbgm
 		release
 	}

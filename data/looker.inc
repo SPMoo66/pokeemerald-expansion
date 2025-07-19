@@ -334,623 +334,625 @@ SootopolisCity_EventScript_Looker_1:
 # 195 "data/looker.pory"
 	setvar VAR_LOOKER_ROCKET, 9
 # 196 "data/looker.pory"
-	fadedefaultbgm
+	setflag FLAG_LOOKER_SOOTOPOLIS_CALL
 # 197 "data/looker.pory"
+	fadedefaultbgm
+# 198 "data/looker.pory"
 	release
 	return
 
 
 TrainerHill_Looker1::
-# 214 "data/looker.pory"
-	lock
 # 215 "data/looker.pory"
-	speakername CommonText_Looker
+	lock
 # 216 "data/looker.pory"
-	msgbox TrainerHill_Looker1_Text_0
-# 218 "data/looker.pory"
-	closemessage
-# 219 "data/looker.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
-# 220 "data/looker.pory"
-	waitmovement 0
-# 221 "data/looker.pory"
-	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkLeft
-# 222 "data/looker.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
-# 223 "data/looker.pory"
-	waitmovement 0
-# 224 "data/looker.pory"
-	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkLeft6
-# 225 "data/looker.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft6
-# 226 "data/looker.pory"
-	waitmovement 0
-# 227 "data/looker.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
-# 228 "data/looker.pory"
-	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkUp
-# 229 "data/looker.pory"
-	waitmovement 0
-# 230 "data/looker.pory"
-	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkLeft
-# 231 "data/looker.pory"
-	waitmovement 0
-# 232 "data/looker.pory"
-	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkInPlaceDown
-# 233 "data/looker.pory"
-	waitmovement 0
-# 234 "data/looker.pory"
 	speakername CommonText_Looker
-# 235 "data/looker.pory"
-	msgbox TrainerHill_Looker1_Text_1
-# 241 "data/looker.pory"
+# 217 "data/looker.pory"
+	msgbox TrainerHill_Looker1_Text_0
+# 219 "data/looker.pory"
 	closemessage
+# 220 "data/looker.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
+# 221 "data/looker.pory"
+	waitmovement 0
+# 222 "data/looker.pory"
+	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkLeft
+# 223 "data/looker.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
+# 224 "data/looker.pory"
+	waitmovement 0
+# 225 "data/looker.pory"
+	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkLeft6
+# 226 "data/looker.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft6
+# 227 "data/looker.pory"
+	waitmovement 0
+# 228 "data/looker.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
+# 229 "data/looker.pory"
+	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkUp
+# 230 "data/looker.pory"
+	waitmovement 0
+# 231 "data/looker.pory"
+	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkLeft
+# 232 "data/looker.pory"
+	waitmovement 0
+# 233 "data/looker.pory"
+	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkInPlaceDown
+# 234 "data/looker.pory"
+	waitmovement 0
+# 235 "data/looker.pory"
+	speakername CommonText_Looker
+# 236 "data/looker.pory"
+	msgbox TrainerHill_Looker1_Text_1
 # 242 "data/looker.pory"
-	setvar VAR_LOOKER_ROCKET, 10
+	closemessage
 # 243 "data/looker.pory"
+	setvar VAR_LOOKER_ROCKET, 10
+# 244 "data/looker.pory"
 	release
 	return
 
 
 TrainerHill_SetLooker::
-# 247 "data/looker.pory"
+# 248 "data/looker.pory"
 	compare VAR_LOOKER_ROCKET, 11
 	goto_if_le TrainerHill_SetLooker_4
 TrainerHill_SetLooker_3:
-# 252 "data/looker.pory"
+# 253 "data/looker.pory"
 	compare VAR_LOOKER_ROCKET, 9
 	goto_if_eq TrainerHill_SetLooker_2
 	return
 
 TrainerHill_SetLooker_1:
-# 248 "data/looker.pory"
-	clearflag FLAG_TEMP_1
 # 249 "data/looker.pory"
-	addobject LOOKER_TRAINERHILL
+	clearflag FLAG_TEMP_1
 # 250 "data/looker.pory"
+	addobject LOOKER_TRAINERHILL
+# 251 "data/looker.pory"
 	setobjectxyperm LOOKER_TRAINERHILL, 1, 13
 	return
 
 TrainerHill_SetLooker_2:
-# 253 "data/looker.pory"
+# 254 "data/looker.pory"
 	clearflag FLAG_TEMP_1
 	return
 
 TrainerHill_SetLooker_4:
-# 247 "data/looker.pory"
+# 248 "data/looker.pory"
 	compare VAR_LOOKER_ROCKET, 10
 	goto_if_ge TrainerHill_SetLooker_1
 	goto TrainerHill_SetLooker_3
 
 
 TrainerHill_LookerSwitch::
-# 259 "data/looker.pory"
+# 260 "data/looker.pory"
 	compare VAR_LOOKER_ROCKET, 10
 	goto_if_eq TrainerHill_LookerSwitch_1
 	return
 
 TrainerHill_LookerSwitch_1:
-# 260 "data/looker.pory"
-	lock
 # 261 "data/looker.pory"
-	playse SE_SWITCH
+	lock
 # 262 "data/looker.pory"
-	delay 20
+	playse SE_SWITCH
 # 263 "data/looker.pory"
-	playse SE_UNLOCK
+	delay 20
 # 264 "data/looker.pory"
-	call TrainerHill_SetRocketRefuge
+	playse SE_UNLOCK
 # 265 "data/looker.pory"
-	delay 30
+	call TrainerHill_SetRocketRefuge
 # 266 "data/looker.pory"
-	playse SE_PIN
+	delay 30
 # 267 "data/looker.pory"
-	applymovement LOOKER_TRAINERHILL, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 268 "data/looker.pory"
-	waitmovement 0
+	applymovement LOOKER_TRAINERHILL, Common_Movement_ExclamationMark
 # 269 "data/looker.pory"
-	delay 60
+	waitmovement 0
 # 270 "data/looker.pory"
-	speakername CommonText_Looker
+	delay 60
 # 271 "data/looker.pory"
+	speakername CommonText_Looker
+# 272 "data/looker.pory"
 	msgbox TrainerHill_LookerSwitch_Text_0
-# 273 "data/looker.pory"
-	msgbox TrainerHill_Text_LookerGoIn, MSGBOX_DEFAULT
 # 274 "data/looker.pory"
-	setvar VAR_LOOKER_ROCKET, 11
+	msgbox TrainerHill_Text_LookerGoIn, MSGBOX_DEFAULT
 # 275 "data/looker.pory"
+	setvar VAR_LOOKER_ROCKET, 11
+# 276 "data/looker.pory"
 	release
 	return
 
 
 TrainerHill_SetRocketRefuge::
-# 280 "data/looker.pory"
-	setmetatile 0, 14, 0x3D0, TRUE
 # 281 "data/looker.pory"
-	setmetatile 1, 14, 0x3D1, TRUE
+	setmetatile 0, 14, 0x3D0, TRUE
 # 282 "data/looker.pory"
-	setmetatile 2, 14, 0x3D2, FALSE
+	setmetatile 1, 14, 0x3D1, TRUE
 # 283 "data/looker.pory"
-	setmetatile 0, 15, 0x3D8, TRUE
+	setmetatile 2, 14, 0x3D2, FALSE
 # 284 "data/looker.pory"
-	setmetatile 1, 15, 0x3D9, TRUE
+	setmetatile 0, 15, 0x3D8, TRUE
 # 285 "data/looker.pory"
-	setmetatile 2, 15, 0x3DA, FALSE
+	setmetatile 1, 15, 0x3D9, TRUE
 # 286 "data/looker.pory"
-	setmetatile 0, 16, 0x3E0, TRUE
+	setmetatile 2, 15, 0x3DA, FALSE
 # 287 "data/looker.pory"
-	setmetatile 1, 16, 0x3E1, TRUE
+	setmetatile 0, 16, 0x3E0, TRUE
 # 288 "data/looker.pory"
-	setmetatile 2, 16, 0x3E2, FALSE
+	setmetatile 1, 16, 0x3E1, TRUE
 # 289 "data/looker.pory"
+	setmetatile 2, 16, 0x3E2, FALSE
+# 290 "data/looker.pory"
 	special DrawWholeMapView
 	return
 
 
 TrainerHill_LookerTalk::
-# 294 "data/looker.pory"
+# 295 "data/looker.pory"
 	compare VAR_LOOKER_ROCKET, 10
 	goto_if_eq TrainerHill_LookerTalk_2
 TrainerHill_LookerTalk_1:
-# 297 "data/looker.pory"
+# 298 "data/looker.pory"
 	compare VAR_LOOKER_ROCKET, 11
 	goto_if_eq TrainerHill_LookerTalk_4
 	return
 
 TrainerHill_LookerTalk_2:
-# 295 "data/looker.pory"
+# 296 "data/looker.pory"
 	goto TrainerHill_Looker2
 	goto TrainerHill_LookerTalk_1
 
 TrainerHill_LookerTalk_4:
-# 298 "data/looker.pory"
+# 299 "data/looker.pory"
 	goto TrainerHill_Looker3
 	return
 
 
 TrainerHill_Looker2::
-# 304 "data/looker.pory"
-	lock
 # 305 "data/looker.pory"
-	faceplayer
+	lock
 # 306 "data/looker.pory"
-	speakername CommonText_Looker
+	faceplayer
 # 307 "data/looker.pory"
+	speakername CommonText_Looker
+# 308 "data/looker.pory"
 	msgbox TrainerHill_Looker2_Text_0
-# 309 "data/looker.pory"
-	closemessage
 # 310 "data/looker.pory"
-	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkInPlaceDown
+	closemessage
 # 311 "data/looker.pory"
-	waitmovement 0
+	applymovement LOOKER_TRAINERHILL, Common_Movement_WalkInPlaceDown
 # 312 "data/looker.pory"
+	waitmovement 0
+# 313 "data/looker.pory"
 	release
 	return
 
 
 TrainerHill_Looker3::
-# 316 "data/looker.pory"
-	lock
 # 317 "data/looker.pory"
-	faceplayer
+	lock
 # 318 "data/looker.pory"
-	speakername CommonText_Looker
+	faceplayer
 # 319 "data/looker.pory"
-	msgbox TrainerHill_Text_LookerGoIn, MSGBOX_DEFAULT
+	speakername CommonText_Looker
 # 320 "data/looker.pory"
+	msgbox TrainerHill_Text_LookerGoIn, MSGBOX_DEFAULT
+# 321 "data/looker.pory"
 	release
 	return
 
 
 RocketRefuge_B1F_Looker::
-# 331 "data/looker.pory"
-	lock
 # 332 "data/looker.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkRight
+	lock
 # 333 "data/looker.pory"
-	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRight
 # 334 "data/looker.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft
+	waitmovement 0
 # 335 "data/looker.pory"
-	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 336 "data/looker.pory"
-	delay 10
+	waitmovement 0
 # 337 "data/looker.pory"
-	playse SE_EXIT
+	delay 10
 # 338 "data/looker.pory"
-	addobject 8
+	playse SE_EXIT
 # 339 "data/looker.pory"
-	applymovement 8, Common_Movement_FaceRight
+	addobject 8
 # 340 "data/looker.pory"
-	waitmovement 0
+	applymovement 8, Common_Movement_FaceRight
 # 341 "data/looker.pory"
-	setobjectxy 8, 2, 2
+	waitmovement 0
 # 342 "data/looker.pory"
-	speakername CommonText_Looker
+	setobjectxy 8, 2, 2
 # 343 "data/looker.pory"
-	msgbox RocketRefuge_B1F_Looker_Text_0
+	speakername CommonText_Looker
 # 344 "data/looker.pory"
-	closemessage
+	msgbox RocketRefuge_B1F_Looker_Text_0
 # 345 "data/looker.pory"
-	applymovement 8, Common_Movement_WalkInPlaceDown
+	closemessage
 # 346 "data/looker.pory"
-	waitmovement 0
-# 347 "data/looker.pory"
-	delay 30
-# 348 "data/looker.pory"
-	applymovement 8, Common_Movement_WalkInPlaceLeft
-# 349 "data/looker.pory"
-	waitmovement 0
-# 350 "data/looker.pory"
-	delay 30
-# 351 "data/looker.pory"
-	applymovement 8, Common_Movement_WalkInPlaceRight
-# 352 "data/looker.pory"
-	waitmovement 0
-# 353 "data/looker.pory"
-	speakername CommonText_Looker
-# 354 "data/looker.pory"
-	msgbox RocketRefuge_B1F_Looker_Text_1
-# 358 "data/looker.pory"
-	closemessage
-# 359 "data/looker.pory"
 	applymovement 8, Common_Movement_WalkInPlaceDown
-# 360 "data/looker.pory"
+# 347 "data/looker.pory"
 	waitmovement 0
-# 361 "data/looker.pory"
-	playbgm MUS_PL_LOOKER, FALSE
-# 362 "data/looker.pory"
-	delay 40
-# 363 "data/looker.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
-# 364 "data/looker.pory"
-	applymovement 8, Common_Movement_WalkFastDown6
-# 365 "data/looker.pory"
+# 348 "data/looker.pory"
+	delay 30
+# 349 "data/looker.pory"
+	applymovement 8, Common_Movement_WalkInPlaceLeft
+# 350 "data/looker.pory"
 	waitmovement 0
-# 366 "data/looker.pory"
+# 351 "data/looker.pory"
+	delay 30
+# 352 "data/looker.pory"
+	applymovement 8, Common_Movement_WalkInPlaceRight
+# 353 "data/looker.pory"
+	waitmovement 0
+# 354 "data/looker.pory"
 	speakername CommonText_Looker
-# 367 "data/looker.pory"
-	playse SE_M_RAZOR_WIND2
-# 368 "data/looker.pory"
-	delay 6
-# 369 "data/looker.pory"
-	playse SE_M_RAZOR_WIND2
-# 370 "data/looker.pory"
-	delay 6
-# 371 "data/looker.pory"
-	playse SE_M_RAZOR_WIND2
-# 372 "data/looker.pory"
-	delay 6
-# 373 "data/looker.pory"
-	playse SE_M_RAZOR_WIND2
-# 374 "data/looker.pory"
-	delay 6
-# 375 "data/looker.pory"
-	playse SE_M_RAZOR_WIND2
-# 376 "data/looker.pory"
-	delay 6
-# 377 "data/looker.pory"
-	playse SE_M_RAZOR_WIND2
-# 378 "data/looker.pory"
-	delay 6
-# 379 "data/looker.pory"
-	playse SE_M_RAZOR_WIND2
-# 380 "data/looker.pory"
-	msgbox RocketRefuge_B1F_Looker_Text_2
-# 381 "data/looker.pory"
+# 355 "data/looker.pory"
+	msgbox RocketRefuge_B1F_Looker_Text_1
+# 359 "data/looker.pory"
 	closemessage
+# 360 "data/looker.pory"
+	applymovement 8, Common_Movement_WalkInPlaceDown
+# 361 "data/looker.pory"
+	waitmovement 0
+# 362 "data/looker.pory"
+	playbgm MUS_PL_LOOKER, FALSE
+# 363 "data/looker.pory"
+	delay 40
+# 364 "data/looker.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
+# 365 "data/looker.pory"
+	applymovement 8, Common_Movement_WalkFastDown6
+# 366 "data/looker.pory"
+	waitmovement 0
+# 367 "data/looker.pory"
+	speakername CommonText_Looker
+# 368 "data/looker.pory"
+	playse SE_M_RAZOR_WIND2
+# 369 "data/looker.pory"
+	delay 6
+# 370 "data/looker.pory"
+	playse SE_M_RAZOR_WIND2
+# 371 "data/looker.pory"
+	delay 6
+# 372 "data/looker.pory"
+	playse SE_M_RAZOR_WIND2
+# 373 "data/looker.pory"
+	delay 6
+# 374 "data/looker.pory"
+	playse SE_M_RAZOR_WIND2
+# 375 "data/looker.pory"
+	delay 6
+# 376 "data/looker.pory"
+	playse SE_M_RAZOR_WIND2
+# 377 "data/looker.pory"
+	delay 6
+# 378 "data/looker.pory"
+	playse SE_M_RAZOR_WIND2
+# 379 "data/looker.pory"
+	delay 6
+# 380 "data/looker.pory"
+	playse SE_M_RAZOR_WIND2
+# 381 "data/looker.pory"
+	msgbox RocketRefuge_B1F_Looker_Text_2
 # 382 "data/looker.pory"
-	fadedefaultbgm
+	closemessage
 # 383 "data/looker.pory"
-	delay 20
+	fadedefaultbgm
 # 384 "data/looker.pory"
-	removeobject 8
+	delay 20
 # 385 "data/looker.pory"
-	setvar VAR_LOOKER_ROCKET, 12
+	removeobject 8
 # 386 "data/looker.pory"
+	setvar VAR_LOOKER_ROCKET, 12
+# 387 "data/looker.pory"
 	release
 	return
 
 
 RocketRefuge_B2F_Looker::
-# 393 "data/looker.pory"
-	lock
 # 394 "data/looker.pory"
-	playbgm MUS_DP_ENCOUNTER_GALACTIC, FALSE
+	lock
 # 395 "data/looker.pory"
-	applymovement 6, Common_Movement_ExclamationMark
+	playbgm MUS_DP_ENCOUNTER_GALACTIC, FALSE
 # 396 "data/looker.pory"
-	waitmovement 0
+	applymovement 6, Common_Movement_ExclamationMark
 # 397 "data/looker.pory"
-	delay 60
-# 398 "data/looker.pory"
-	applymovement 6, Common_Movement_WalkLeft4
-# 399 "data/looker.pory"
 	waitmovement 0
+# 398 "data/looker.pory"
+	delay 60
+# 399 "data/looker.pory"
+	applymovement 6, Common_Movement_WalkLeft4
 # 400 "data/looker.pory"
-	speakername CommonText_Q
+	waitmovement 0
 # 401 "data/looker.pory"
+	speakername CommonText_Q
+# 402 "data/looker.pory"
 	msgbox RocketRefuge_B2F_Looker_Text_0
-# 406 "data/looker.pory"
-	playbgm MUS_PL_LOOKER, FALSE
 # 407 "data/looker.pory"
-	speakername CommonText_Looker
+	playbgm MUS_PL_LOOKER, FALSE
 # 408 "data/looker.pory"
+	speakername CommonText_Looker
+# 409 "data/looker.pory"
 	msgbox RocketRefuge_B2F_Looker_Text_1
-# 411 "data/looker.pory"
-	msgbox RocketRefuge_B2F_LookerText, MSGBOX_DEFAULT
 # 412 "data/looker.pory"
-	closemessage
+	msgbox RocketRefuge_B2F_LookerText, MSGBOX_DEFAULT
 # 413 "data/looker.pory"
-	fadedefaultbgm
+	closemessage
 # 414 "data/looker.pory"
-	setvar VAR_LOOKER_ROCKET, 13
+	fadedefaultbgm
 # 415 "data/looker.pory"
+	setvar VAR_LOOKER_ROCKET, 13
+# 416 "data/looker.pory"
 	release
 	return
 
 
 RocketRefuge_B2F_LookerTalk::
-# 419 "data/looker.pory"
-	lock
 # 420 "data/looker.pory"
-	faceplayer
+	lock
 # 421 "data/looker.pory"
-	speakername CommonText_Looker
+	faceplayer
 # 422 "data/looker.pory"
-	msgbox RocketRefuge_B2F_LookerText, MSGBOX_DEFAULT
+	speakername CommonText_Looker
 # 423 "data/looker.pory"
+	msgbox RocketRefuge_B2F_LookerText, MSGBOX_DEFAULT
+# 424 "data/looker.pory"
 	release
 	return
 
 
 RocketRefuge_B3F_Giovanni::
-# 436 "data/looker.pory"
-	faceplayer
 # 437 "data/looker.pory"
-	setflag FLAG_CHALLENGING_TRAINER
+	faceplayer
 # 438 "data/looker.pory"
-	speakername CommonText_Giovanni
+	setflag FLAG_CHALLENGING_TRAINER
 # 439 "data/looker.pory"
+	speakername CommonText_Giovanni
+# 440 "data/looker.pory"
 	trainerbattle_single TRAINER_GIOVANNI_REFUGE, RocketRefuge_B3F_Giovanni_Text_0, RocketRefuge_B3F_Giovanni_Text_1, RocketRefuge_B3F_Looker, NO_MUSIC
 	return
 
 
 RocketRefuge_B3F_Looker::
-# 443 "data/looker.pory"
-	clearflag FLAG_CHALLENGING_TRAINER
 # 444 "data/looker.pory"
-	speakername CommonText_Giovanni
+	clearflag FLAG_CHALLENGING_TRAINER
 # 445 "data/looker.pory"
+	speakername CommonText_Giovanni
+# 446 "data/looker.pory"
 	msgbox RocketRefuge_B3F_Looker_Text_0
-# 450 "data/looker.pory"
-	closemessage
 # 451 "data/looker.pory"
-	fadescreen FADE_TO_BLACK
-# 452 "data/looker.pory"
-	removeobject 3
-# 453 "data/looker.pory"
-	playse SE_EXIT
-# 454 "data/looker.pory"
-	delay 30
-# 455 "data/looker.pory"
-	fadescreen FADE_FROM_BLACK
-# 456 "data/looker.pory"
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-# 457 "data/looker.pory"
-	setvar VAR_OBJ_GFX_ID_A, OBJ_EVENT_GFX_ROCKET_M
-# 458 "data/looker.pory"
-	addobject 4
-# 459 "data/looker.pory"
-	setobjectxy 4, 13, 13
-# 460 "data/looker.pory"
-	playbgm MUS_HG_ENCOUNTER_ROCKET, FALSE
-# 461 "data/looker.pory"
-	speakername CommonText_Q
-# 462 "data/looker.pory"
-	msgbox RocketRefuge_B3F_Looker_Text_1
-# 463 "data/looker.pory"
 	closemessage
+# 452 "data/looker.pory"
+	fadescreen FADE_TO_BLACK
+# 453 "data/looker.pory"
+	removeobject 3
+# 454 "data/looker.pory"
+	playse SE_EXIT
+# 455 "data/looker.pory"
+	delay 30
+# 456 "data/looker.pory"
+	fadescreen FADE_FROM_BLACK
+# 457 "data/looker.pory"
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 458 "data/looker.pory"
+	setvar VAR_OBJ_GFX_ID_A, OBJ_EVENT_GFX_ROCKET_M
+# 459 "data/looker.pory"
+	addobject 4
+# 460 "data/looker.pory"
+	setobjectxy 4, 13, 13
+# 461 "data/looker.pory"
+	playbgm MUS_HG_ENCOUNTER_ROCKET, FALSE
+# 462 "data/looker.pory"
+	speakername CommonText_Q
+# 463 "data/looker.pory"
+	msgbox RocketRefuge_B3F_Looker_Text_1
 # 464 "data/looker.pory"
-	applymovement 4, Common_Movement_WalkUp3
+	closemessage
 # 465 "data/looker.pory"
-	waitmovement 0
+	applymovement 4, Common_Movement_WalkUp3
 # 466 "data/looker.pory"
-	applymovement 4, Common_Movement_WalkLeft3
-# 467 "data/looker.pory"
 	waitmovement 0
+# 467 "data/looker.pory"
+	applymovement 4, Common_Movement_WalkLeft3
 # 468 "data/looker.pory"
+	waitmovement 0
+# 469 "data/looker.pory"
 	compare VAR_TEMP_0, 12
 	goto_if_eq RocketRefuge_B3F_Looker_2
-# 474 "data/looker.pory"
+# 475 "data/looker.pory"
 	compare VAR_TEMP_0, 13
 	goto_if_eq RocketRefuge_B3F_Looker_3
-# 489 "data/looker.pory"
-	applymovement 4, Common_Movement_WalkUp3
 # 490 "data/looker.pory"
-	waitmovement 0
+	applymovement 4, Common_Movement_WalkUp3
 # 491 "data/looker.pory"
-	applymovement 4, Common_Movement_WalkRight4
-# 492 "data/looker.pory"
 	waitmovement 0
+# 492 "data/looker.pory"
+	applymovement 4, Common_Movement_WalkRight4
 # 493 "data/looker.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
+	waitmovement 0
 # 494 "data/looker.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
+# 495 "data/looker.pory"
 	applymovement 4, Common_Movement_WalkInPlaceUp
 RocketRefuge_B3F_Looker_1:
-# 496 "data/looker.pory"
-	waitmovement 0
 # 497 "data/looker.pory"
-	speakername CommonText_Q
+	waitmovement 0
 # 498 "data/looker.pory"
+	speakername CommonText_Q
+# 499 "data/looker.pory"
 	msgbox RocketRefuge_B3F_Looker_Text_2
-# 501 "data/looker.pory"
-	closemessage
 # 502 "data/looker.pory"
+	closemessage
+# 503 "data/looker.pory"
 	compare VAR_TEMP_0, 14
 	goto_if_ne RocketRefuge_B3F_Looker_8
 RocketRefuge_B3F_Looker_7:
-# 506 "data/looker.pory"
-	applymovement 4, Common_Movement_FaceLeft
 # 507 "data/looker.pory"
-	waitmovement 0
+	applymovement 4, Common_Movement_FaceLeft
 # 508 "data/looker.pory"
-	applymovement 4, Common_Movement_FaceDown
+	waitmovement 0
 # 509 "data/looker.pory"
-	waitmovement 0
+	applymovement 4, Common_Movement_FaceDown
 # 510 "data/looker.pory"
-	applymovement 4, Common_Movement_FaceRight
-# 511 "data/looker.pory"
 	waitmovement 0
+# 511 "data/looker.pory"
+	applymovement 4, Common_Movement_FaceRight
 # 512 "data/looker.pory"
+	waitmovement 0
+# 513 "data/looker.pory"
 	compare VAR_TEMP_0, 14
 	goto_if_eq RocketRefuge_B3F_Looker_14
 RocketRefuge_B3F_Looker_13:
-# 516 "data/looker.pory"
-	removeobject 4
 # 517 "data/looker.pory"
-	setvar VAR_OBJ_GFX_ID_A, OBJ_EVENT_GFX_LOOKER
+	removeobject 4
 # 518 "data/looker.pory"
-	addobject 4
+	setvar VAR_OBJ_GFX_ID_A, OBJ_EVENT_GFX_LOOKER
 # 519 "data/looker.pory"
+	addobject 4
+# 520 "data/looker.pory"
 	compare VAR_TEMP_0, 14
 	goto_if_eq RocketRefuge_B3F_Looker_17
-# 523 "data/looker.pory"
+# 524 "data/looker.pory"
 	applymovement 4, Common_Movement_FaceRight
 RocketRefuge_B3F_Looker_16:
-# 525 "data/looker.pory"
+# 526 "data/looker.pory"
 	compare VAR_TEMP_0, 12
 	goto_if_eq RocketRefuge_B3F_Looker_21
-# 528 "data/looker.pory"
+# 529 "data/looker.pory"
 	compare VAR_TEMP_0, 13
 	goto_if_eq RocketRefuge_B3F_Looker_22
-# 537 "data/looker.pory"
+# 538 "data/looker.pory"
 	setobjectxy 4, 14, 7
 RocketRefuge_B3F_Looker_20:
-# 539 "data/looker.pory"
-	playbgm MUS_PL_LOOKER, FALSE
 # 540 "data/looker.pory"
-	speakername CommonText_Looker
+	playbgm MUS_PL_LOOKER, FALSE
 # 541 "data/looker.pory"
+	speakername CommonText_Looker
+# 542 "data/looker.pory"
 	msgbox RocketRefuge_B3F_Looker_Text_3
-# 549 "data/looker.pory"
-	closemessage
 # 550 "data/looker.pory"
-	giveitem ITEM_STELLAR_TERA_SHARD, 3
+	closemessage
 # 551 "data/looker.pory"
-	giveitem ITEM_BOTTLE_CAP, 1
+	giveitem ITEM_STELLAR_TERA_SHARD, 3
 # 552 "data/looker.pory"
-	speakername CommonText_Looker
+	giveitem ITEM_BOTTLE_CAP, 1
 # 553 "data/looker.pory"
-	msgbox RocketRefuge_B3F_Looker_Text_4
-# 555 "data/looker.pory"
-	closemessage
-# 556 "data/looker.pory"
-	pokevialincreasesize
-# 557 "data/looker.pory"
-	msgbox Text_PokevialSizeIncrease, MSGBOX_DEFAULT
-# 558 "data/looker.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 559 "data/looker.pory"
-	waitfanfare
-# 560 "data/looker.pory"
-	closemessage
-# 561 "data/looker.pory"
 	speakername CommonText_Looker
-# 562 "data/looker.pory"
-	msgbox RocketRefuge_B3F_Looker_Text_5
-# 567 "data/looker.pory"
+# 554 "data/looker.pory"
+	msgbox RocketRefuge_B3F_Looker_Text_4
+# 556 "data/looker.pory"
 	closemessage
+# 557 "data/looker.pory"
+	pokevialincreasesize
+# 558 "data/looker.pory"
+	msgbox Text_PokevialSizeIncrease, MSGBOX_DEFAULT
+# 559 "data/looker.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 560 "data/looker.pory"
+	waitfanfare
+# 561 "data/looker.pory"
+	closemessage
+# 562 "data/looker.pory"
+	speakername CommonText_Looker
+# 563 "data/looker.pory"
+	msgbox RocketRefuge_B3F_Looker_Text_5
 # 568 "data/looker.pory"
-	fadescreen FADE_TO_BLACK
+	closemessage
 # 569 "data/looker.pory"
-	removeobject 4
+	fadescreen FADE_TO_BLACK
 # 570 "data/looker.pory"
-	playse SE_EXIT
+	removeobject 4
 # 571 "data/looker.pory"
-	delay 30
+	playse SE_EXIT
 # 572 "data/looker.pory"
-	fadescreen FADE_FROM_BLACK
+	delay 30
 # 573 "data/looker.pory"
-	setvar VAR_LOOKER_ROCKET, 14
+	fadescreen FADE_FROM_BLACK
 # 574 "data/looker.pory"
-	setflag FLAG_HIDE_ROCKETS_IN_REFUGE
+	setvar VAR_LOOKER_ROCKET, 14
 # 575 "data/looker.pory"
-	fadedefaultbgm
+	setflag FLAG_HIDE_ROCKETS_IN_REFUGE
 # 576 "data/looker.pory"
+	fadedefaultbgm
+# 577 "data/looker.pory"
 	release
 	return
 
 RocketRefuge_B3F_Looker_2:
-# 469 "data/looker.pory"
-	applymovement 4, Common_Movement_WalkUp4
 # 470 "data/looker.pory"
-	waitmovement 0
+	applymovement 4, Common_Movement_WalkUp4
 # 471 "data/looker.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft
+	waitmovement 0
 # 472 "data/looker.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft
+# 473 "data/looker.pory"
 	applymovement 4, Common_Movement_WalkRight
 	goto RocketRefuge_B3F_Looker_1
 
 RocketRefuge_B3F_Looker_3:
-# 475 "data/looker.pory"
+# 476 "data/looker.pory"
 	compare VAR_TEMP_1, 5
 	goto_if_eq RocketRefuge_B3F_Looker_10
-# 482 "data/looker.pory"
-	applymovement 4, Common_Movement_WalkUp3
 # 483 "data/looker.pory"
-	waitmovement 0
+	applymovement 4, Common_Movement_WalkUp3
 # 484 "data/looker.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft
+	waitmovement 0
 # 485 "data/looker.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft
+# 486 "data/looker.pory"
 	applymovement 4, Common_Movement_WalkRight2
 	goto RocketRefuge_B3F_Looker_1
 
 RocketRefuge_B3F_Looker_8:
-# 503 "data/looker.pory"
-	applymovement 4, Common_Movement_FaceUp
 # 504 "data/looker.pory"
+	applymovement 4, Common_Movement_FaceUp
+# 505 "data/looker.pory"
 	waitmovement 0
 	goto RocketRefuge_B3F_Looker_7
 
 RocketRefuge_B3F_Looker_10:
-# 476 "data/looker.pory"
-	applymovement 4, Common_Movement_WalkUp5
 # 477 "data/looker.pory"
-	waitmovement 0
+	applymovement 4, Common_Movement_WalkUp5
 # 478 "data/looker.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft
+	waitmovement 0
 # 479 "data/looker.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft
+# 480 "data/looker.pory"
 	applymovement 4, Common_Movement_WalkRight2
 	goto RocketRefuge_B3F_Looker_1
 
 RocketRefuge_B3F_Looker_14:
-# 513 "data/looker.pory"
-	applymovement 4, Common_Movement_FaceUp
 # 514 "data/looker.pory"
+	applymovement 4, Common_Movement_FaceUp
+# 515 "data/looker.pory"
 	waitmovement 0
 	goto RocketRefuge_B3F_Looker_13
 
 RocketRefuge_B3F_Looker_17:
-# 520 "data/looker.pory"
+# 521 "data/looker.pory"
 	applymovement 4, Common_Movement_FaceUp
 	goto RocketRefuge_B3F_Looker_16
 
 RocketRefuge_B3F_Looker_21:
-# 526 "data/looker.pory"
+# 527 "data/looker.pory"
 	setobjectxy 4, 11, 6
 	goto RocketRefuge_B3F_Looker_20
 
 RocketRefuge_B3F_Looker_22:
-# 529 "data/looker.pory"
+# 530 "data/looker.pory"
 	compare VAR_TEMP_1, 5
 	goto_if_eq RocketRefuge_B3F_Looker_26
-# 533 "data/looker.pory"
+# 534 "data/looker.pory"
 	setobjectxy 4, 12, 7
 	goto RocketRefuge_B3F_Looker_20
 
 RocketRefuge_B3F_Looker_26:
-# 530 "data/looker.pory"
+# 531 "data/looker.pory"
 	setobjectxy 4, 12, 5
 	goto RocketRefuge_B3F_Looker_20
 
@@ -1005,12 +1007,12 @@ FortreeCity_EventScript_Looker_Text_0:
 	.string "I get a lead on them.$"
 
 TrainerHill_Looker1_Text_0:
-# 216 "data/looker.pory"
+# 217 "data/looker.pory"
 	.string "It is good that you are here.\p"
 	.string "Follow me. We cannot squander any time.$"
 
 TrainerHill_Looker1_Text_1:
-# 235 "data/looker.pory"
+# 236 "data/looker.pory"
 	.string "Feast your eyes on this!\p"
 	.string "… … …\n"
 	.string "No, this is not just a bollard, but one\l"
@@ -1019,21 +1021,21 @@ TrainerHill_Looker1_Text_1:
 	.string "yourself!$"
 
 TrainerHill_LookerSwitch_Text_0:
-# 271 "data/looker.pory"
+# 272 "data/looker.pory"
 	.string "Yes!\n"
 	.string "Just as I suspected!$"
 
 TrainerHill_Looker2_Text_0:
-# 307 "data/looker.pory"
+# 308 "data/looker.pory"
 	.string "What are you waiting for?\p"
 	.string "Go ahead and press the switch.$"
 
 RocketRefuge_B1F_Looker_Text_0:
-# 343 "data/looker.pory"
+# 344 "data/looker.pory"
 	.string "Yes. Here we are.$"
 
 RocketRefuge_B1F_Looker_Text_1:
-# 354 "data/looker.pory"
+# 355 "data/looker.pory"
 	.string "Now. I will go on ahead, clearing a path\n"
 	.string "for us both.\p"
 	.string "Follow after me, but do be careful.\p"
@@ -1043,11 +1045,11 @@ RocketRefuge_B1F_Looker_Text_1:
 	.string "That is one of my strengths, after all.$"
 
 RocketRefuge_B1F_Looker_Text_2:
-# 380 "data/looker.pory"
+# 381 "data/looker.pory"
 	.string "Ahhhh!$"
 
 RocketRefuge_B2F_Looker_Text_0:
-# 401 "data/looker.pory"
+# 402 "data/looker.pory"
 	.string "Ah!\n"
 	.string "Here you finally are.\p"
 	.string "I've been waiting for your return.\p"
@@ -1057,7 +1059,7 @@ RocketRefuge_B2F_Looker_Text_0:
 	.string "{PLAYER}?$"
 
 RocketRefuge_B2F_Looker_Text_1:
-# 408 "data/looker.pory"
+# 409 "data/looker.pory"
 	.string "It is I, Looker, of course!\p"
 	.string "From the look on your face, it seems\n"
 	.string "that I was able to fool you at least.\p"
@@ -1066,15 +1068,15 @@ RocketRefuge_B2F_Looker_Text_1:
 	.string "grunts in this hideaway.$"
 
 RocketRefuge_B3F_Giovanni_Text_0:
-# 439 "data/looker.pory"
+# 440 "data/looker.pory"
 	.string "So this is what it's come to.\pAll of my men, put down like dogs before\nme.\pAwfully weak, I must think… but no,\nany failures lie at my feet alone.\pNo, I cannot allow the great Team\nRocket's operations in Hoenn to be\lput to an end by a mere child!$"
 
 RocketRefuge_B3F_Giovanni_Text_1:
-# 439 "data/looker.pory"
+# 440 "data/looker.pory"
 	.string "What is it about this region that makes\nexpansion so difficult?$"
 
 RocketRefuge_B3F_Looker_Text_0:
-# 445 "data/looker.pory"
+# 446 "data/looker.pory"
 	.string "… … … … …\p"
 	.string "My anger is burning ever so strongly\n"
 	.string "right now, but my eyes remain on our\l"
@@ -1089,11 +1091,11 @@ RocketRefuge_B3F_Looker_Text_0:
 	.string "but may us never meet again!$"
 
 RocketRefuge_B3F_Looker_Text_1:
-# 462 "data/looker.pory"
+# 463 "data/looker.pory"
 	.string "{PLAYER}!$"
 
 RocketRefuge_B3F_Looker_Text_2:
-# 498 "data/looker.pory"
+# 499 "data/looker.pory"
 	.string "Giovanni, have you defeated him\n"
 	.string "already?\p"
 	.string "Oh, my apologies.\n"
@@ -1102,7 +1104,7 @@ RocketRefuge_B3F_Looker_Text_2:
 	.string "presume?$"
 
 RocketRefuge_B3F_Looker_Text_3:
-# 541 "data/looker.pory"
+# 542 "data/looker.pory"
 	.string "It is I, Looker, of course!\p"
 	.string "Giovanni has already escaped you,\n"
 	.string "I presume.\p"
@@ -1124,13 +1126,13 @@ RocketRefuge_B3F_Looker_Text_3:
 	.string "Please, take these, {PLAYER}.$"
 
 RocketRefuge_B3F_Looker_Text_4:
-# 553 "data/looker.pory"
+# 554 "data/looker.pory"
 	.string "And you have a Pokévial, yes?\p"
 	.string "Allow me to increase its maximum\n"
 	.string "capacity for you.$"
 
 RocketRefuge_B3F_Looker_Text_5:
-# 562 "data/looker.pory"
+# 563 "data/looker.pory"
 	.string "That may seem like a great reward to\n"
 	.string "you, but the help you have given us is\l"
 	.string "invaluable.\p"
@@ -1179,7 +1181,7 @@ RustboroCity_Text_Looker_Call::
 	.string "… … … … … Click!$"
 
 SootopolisCity_Text_Looker_Call::
-# 201 "data/looker.pory"
+# 202 "data/looker.pory"
 	.string "… … … … … Beep!\p"
 	.string "Looker: I have discerned the\n"
 	.string "current location of Team Rocket!\p"
@@ -1190,12 +1192,12 @@ SootopolisCity_Text_Looker_Call::
 	.string "Rocket!$"
 
 TrainerHill_Text_LookerGoIn::
-# 323 "data/looker.pory"
+# 324 "data/looker.pory"
 	.string "Go on inside.\n"
 	.string "I will be right behind you.$"
 
 RocketRefuge_B2F_LookerText::
-# 426 "data/looker.pory"
+# 427 "data/looker.pory"
 	.string "Anyway, go on ahead.\n"
 	.string "I will return to you once I am able.\p"
 	.string "This uniform would be a dead giveaway.$"

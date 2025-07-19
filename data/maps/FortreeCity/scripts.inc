@@ -7,15 +7,9 @@ FortreeCity_OnTransition:
 	setflag FLAG_VISITED_FORTREE_CITY
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
-	setflag FLAG_TEMP_3
-	call_if_unset FLAG_BADGE06_GET, FortreeCity_ShowLooker
-	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 9, EventScript_Clear_FlagTemp2 @ Show Rivals
-	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 10, EventScript_Clear_FlagTemp3 @ Show Rivals
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 9, EventScript_Clear_FlagTemp1 @ Show Rivals
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 10, EventScript_Clear_FlagTemp2 @ Show Rivals
 	end
-
-FortreeCity_ShowLooker:
-	call_if_eq VAR_LOOKER_ROCKET, 8, EventScript_Clear_FlagTemp1 @ Show Looker
-	return
 
 FortreeCity_OnResume:
 	setstepcallback STEP_CB_FORTREE_BRIDGE

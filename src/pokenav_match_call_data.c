@@ -464,10 +464,10 @@ static const struct MatchCallStructNPC sScottMatchCallHeader =
 static const match_call_text_data_t sLookerTextScripts[] = {
     { MatchCall_Text_Looker1, 0xFFFF,                              0xFFFF },
     { MatchCall_Text_Looker2, FLAG_LOOKER_CLEARED_DEVONCORP,       0xFFFF },
-    { MatchCall_Text_Looker3, FLAG_RECEIVED_CASTFORM,              0xFFFF },
-    { MatchCall_Text_Looker4, FLAG_RECEIVED_RED_OR_BLUE_ORB,       0xFFFF },
-    { MatchCall_Text_Looker5, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
-    { NULL,                  0xFFFF,                               0xFFFF }
+    { MatchCall_Text_Looker3, FLAG_BADGE06_GET,                    0xFFFF },
+    { MatchCall_Text_Looker4, FLAG_LOOKER_SOOTOPOLIS_CALL,         0xFFFF },
+    { MatchCall_Text_Looker5, FLAG_HIDE_ROCKETS_IN_REFUGE,         0xFFFF },
+    { NULL,                   0xFFFF,                               0xFFFF }
 };
 
 

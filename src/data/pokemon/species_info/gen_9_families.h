@@ -7148,6 +7148,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gOverworldPalette_WalkingWake,
             gShinyOverworldPalette_WalkingWake
         )
+        .isLegendary = TRUE,
         .isParadox = TRUE,
         .levelUpLearnset = sWalkingWakeLevelUpLearnset,
         .teachableLearnset = sWalkingWakeTeachableLearnset,
@@ -7214,6 +7215,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gOverworldPalette_IronLeaves,
             gShinyOverworldPalette_IronLeaves
         )
+        .isLegendary = TRUE,
         .isParadox = TRUE,
         .levelUpLearnset = sIronLeavesLevelUpLearnset,
         .teachableLearnset = sIronLeavesTeachableLearnset,
@@ -7823,6 +7825,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gOverworldPalette_GougingFire,
             gShinyOverworldPalette_GougingFire
         )
+        .isLegendary = TRUE,
         .isParadox = TRUE,
         .levelUpLearnset = sGougingFireLevelUpLearnset,
         .teachableLearnset = sGougingFireTeachableLearnset,
@@ -7890,6 +7893,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gOverworldPalette_RagingBolt,
             gShinyOverworldPalette_RagingBolt
         )
+        .isLegendary = TRUE,
         .isParadox = TRUE,
         .levelUpLearnset = sRagingBoltLevelUpLearnset,
         .teachableLearnset = sRagingBoltTeachableLearnset,
@@ -7956,6 +7960,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gOverworldPalette_IronBoulder,
             gShinyOverworldPalette_IronBoulder
         )
+        .isLegendary = TRUE,
         .isParadox = TRUE,
         .levelUpLearnset = sIronBoulderLevelUpLearnset,
         .teachableLearnset = sIronBoulderTeachableLearnset,
@@ -8023,6 +8028,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gOverworldPalette_IronCrown,
             gShinyOverworldPalette_IronCrown
         )
+        .isLegendary = TRUE,
         .isParadox = TRUE,
         .levelUpLearnset = sIronCrownLevelUpLearnset,
         .teachableLearnset = sIronCrownTeachableLearnset,

@@ -3,6 +3,8 @@ Route130_MapScripts::
 	.byte 0
 
 Route130_OnTransition:
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 13, EventScript_Clear_FlagTemp1 @ Show Rivals
 	call_if_ge VAR_SOOTOPOLIS_CITY_STATE, 4, Route130_EventScript_CheckSetAbnormalWeather
 	setmaplayoutindex LAYOUT_ROUTE130
 	end

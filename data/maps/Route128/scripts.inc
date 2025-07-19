@@ -4,6 +4,8 @@ Route128_MapScripts::
 	.byte 0
 
 Route128_OnTransition:
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 13, EventScript_Clear_FlagTemp1 @ Show Rivals
 	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
 	end
 

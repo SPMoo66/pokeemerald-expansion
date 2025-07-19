@@ -1,6 +1,12 @@
 SeafloorCavern_Entrance_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, SeafloorCavern_Entrance_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, SeafloorCavern_Entrance_OnResume
 	.byte 0
+
+SeafloorCavern_Entrance_OnTransition:
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 13, EventScript_Clear_FlagTemp1 @ Show Rivals
+	end
 
 SeafloorCavern_Entrance_OnResume:
 	setdivewarp MAP_UNDERWATER_SEAFLOOR_CAVERN, 6, 5

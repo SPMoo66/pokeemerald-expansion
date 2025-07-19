@@ -5,6 +5,8 @@ Route127_MapScripts::
 	.byte 0
 
 Route127_OnTransition:
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 13, EventScript_Clear_FlagTemp1 @ Show Rivals
 	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
 	call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, EventScript_HideMapNamePopup
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_127_NORTH, AbnormalWeather_StartKyogreWeather

@@ -1392,8 +1392,8 @@ text Town13_HarperText {
 }
 
 text Town13_JaksonText {
-	format(	"If it isn't {PLAYER}? There are less fun\n"
-			"places to meet up, at least.\p"
+	format(	"If it isn't {PLAYER}? There are less\n"
+			"fun places to meet up, at least.\p"
 			"They really upped their A-game when\n"
 			"trying to make this place difficult to find.\p"
 			"You wouldn't happen to know about\n"

@@ -585,3 +585,34 @@ script Baron_Town12 {
 	speakername (CommonText_Baron)
 	msgbox(Town12_BaronText, MSGBOX_NPC)
 }
+
+
+#Town13
+script Sakura_Town13 {
+	speakername (CommonText_Sakura)
+	msgbox(Town13_SakuraText, MSGBOX_NPC)
+}
+
+script Harper_Town13 {
+	speakername (CommonText_Harper)
+	msgbox(Town13_HarperText, MSGBOX_NPC)
+}
+
+script Redd_Town13 {
+	speakername (CommonText_Redd)
+	msgbox(Town13_ReddText, MSGBOX_NPC)
+}
+
+script Jakson_Town13 {
+	speakername (CommonText_Jakson)
+	msgbox(Town13_JaksonText, MSGBOX_NPC)
+	closemessage
+	call (Common_EventScript_OutOfCenterPartyHeal)
+	speakername (CommonText_Jakson)
+	msgbox(Town13_JaksonTextAfter, MSGBOX_NPC)
+}
+
+script Baron_Town13 {
+	speakername (CommonText_Baron)
+	msgbox(Town13_BaronText, MSGBOX_NPC)
+}

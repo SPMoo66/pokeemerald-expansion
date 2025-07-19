@@ -1503,8 +1503,7 @@ Town13_HarperText::
 Town13_JaksonText::
 # 1394 "data/rival_text.pory"
 	.string "If it isn't {PLAYER}? There are less\n"
-	.string "fun\n"
-	.string "places to meet up, at least.\p"
+	.string "fun places to meet up, at least.\p"
 	.string "They really upped their A-game when\n"
 	.string "trying to make this place difficult to\l"
 	.string "find.\p"

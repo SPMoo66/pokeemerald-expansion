@@ -1005,6 +1005,54 @@ Baron_Town12::
 	return
 
 
+Sakura_Town13::
+# 592 "data/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 593 "data/rival_scripts.pory"
+	msgbox Town13_SakuraText, MSGBOX_NPC
+	return
+
+
+Harper_Town13::
+# 597 "data/rival_scripts.pory"
+	speakername CommonText_Harper
+# 598 "data/rival_scripts.pory"
+	msgbox Town13_HarperText, MSGBOX_NPC
+	return
+
+
+Redd_Town13::
+# 602 "data/rival_scripts.pory"
+	speakername CommonText_Redd
+# 603 "data/rival_scripts.pory"
+	msgbox Town13_ReddText, MSGBOX_NPC
+	return
+
+
+Jakson_Town13::
+# 607 "data/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 608 "data/rival_scripts.pory"
+	msgbox Town13_JaksonText, MSGBOX_NPC
+# 609 "data/rival_scripts.pory"
+	closemessage
+# 610 "data/rival_scripts.pory"
+	call Common_EventScript_OutOfCenterPartyHeal
+# 611 "data/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 612 "data/rival_scripts.pory"
+	msgbox Town13_JaksonTextAfter, MSGBOX_NPC
+	return
+
+
+Baron_Town13::
+# 616 "data/rival_scripts.pory"
+	speakername CommonText_Baron
+# 617 "data/rival_scripts.pory"
+	msgbox Town13_BaronText, MSGBOX_NPC
+	return
+
+
 Baron_Town01_Text_0:
 # 102 "data/rival_scripts.pory"
 	.string "Left foot… Right foot…\nLeft foot… Right foot…$"

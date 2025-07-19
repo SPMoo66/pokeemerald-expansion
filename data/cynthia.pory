@@ -1,0 +1,92 @@
+script LilycoveCity_EventScript_CynthiaAppears {
+	opendoor (24, 14)
+	waitdooranim
+	addobject (CYNTHIA_LILYCOVE)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
+	applymovement (CYNTHIA_LILYCOVE, Common_Movement_WalkDown)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_ExclamationMark)
+	playse (SE_PIN)
+	playbgm (MUS_DP_ENCOUNTER_CHAMPION, FALSE)
+	closedoor (24, 14)
+	waitdooranim
+	delay (20)
+	applymovement (CYNTHIA_LILYCOVE, Common_Movement_WalkDown2)
+	waitmovement (0)
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	switch (var(VAR_TEMP_1)) {
+		case 15:
+			applymovement (LOCALID_PLAYER, Cynthia_PlayerBacksAway1)
+		case 16:
+			applymovement (LOCALID_PLAYER, Cynthia_PlayerBacksAway2)
+		case 17:
+			applymovement (LOCALID_PLAYER, Cynthia_PlayerBacksAway3)
+		case 18:
+			applymovement (LOCALID_PLAYER, Cynthia_PlayerBacksAway4)
+	}
+	applymovement (CYNTHIA_LILYCOVE, Common_Movement_WalkRight7)
+	waitmovement (0)
+	delay (20)
+	special (SpawnCameraObject)
+	applymovement (LOCALID_PLAYER, Cynthia_PlayerWatches)
+	applymovement (LOCALID_CAMERA, Common_Movement_WalkDown7)
+	applymovement (CYNTHIA_LILYCOVE, Cynthia_CynthiaWalksToMotel)
+	waitmovement (0)
+	opendoor (37, 24)
+	waitdooranim
+	applymovement (CYNTHIA_LILYCOVE, Common_Movement_WalkUp)
+	waitmovement (0)
+	removeobject (CYNTHIA_LILYCOVE)
+	closedoor (37, 24)
+	waitdooranim
+	fadedefaultbgm
+	delay (30)
+	applymovement (LOCALID_CAMERA, Common_Movement_WalkUp7)
+	waitmovement (0)
+	special (RemoveCameraObject)
+	delay (20)
+	setvar (VAR_CYNTHIA_MOTEL, 1)
+	release
+}
+
+movement Cynthia_PlayerBacksAway1 {
+	delay_16 * 2
+	lock_facing_direction
+	walk_diag_southeast
+	walk_right * 2
+	unlock_facing_direction
+}
+
+movement Cynthia_PlayerBacksAway2 {
+	delay_16 * 2
+	lock_facing_direction
+	walk_right * 3
+	unlock_facing_direction
+}
+
+movement Cynthia_PlayerBacksAway3 {
+	delay_16 * 2
+	lock_facing_direction
+	walk_diag_northeast
+	walk_right * 2
+	unlock_facing_direction
+}
+
+movement Cynthia_PlayerBacksAway4 {
+	delay_16 * 2
+	lock_facing_direction
+	walk_diag_northeast * 2
+	walk_right * 1
+	unlock_facing_direction
+}
+
+movement Cynthia_PlayerWatches {
+	delay_16
+	walk_in_place_faster_down
+}
+
+movement Cynthia_CynthiaWalksToMotel {
+	walk_down * 8
+	walk_right * 6
+	walk_in_place_up
+}

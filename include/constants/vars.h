@@ -80,7 +80,7 @@
 #define VAR_REGICE_STEPS_2                               0x403C
 #define VAR_REGICE_STEPS_3                               0x403D
 #define VAR_ALTERING_CAVE_WILD_SET                       0x403E
-#define VAR_UNUSED_0x403F                                0x403F // Unused, was for eon ticket code (which may have also been unused)
+#define VAR_CYNTHIA_MOTEL                                0x403F // Was for eon ticket code (which may have also been unused)
 #define VAR_DAYS                                         0x4040
 #define VAR_FANCLUB_FAN_COUNTER                          0x4041
 #define VAR_FANCLUB_LOSE_FAN_TIMER                       0x4042

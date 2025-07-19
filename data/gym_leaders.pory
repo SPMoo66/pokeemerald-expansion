@@ -987,6 +987,7 @@ script MossdeepCity_Gym_EventScript_TateAndLizaDefeated {
 	delay (30)
 	setflag (FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL)
 	clearflag (FLAG_CHALLENGING_TRAINER)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 13)
 	release
 }
 
@@ -1140,6 +1141,7 @@ script SootopolisCity_Gym_1F_EventScript_JuanDefeated {
 	closemessage
 	delay (30)
 	setflag (FLAG_ENABLE_JUAN_MATCH_CALL)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 15)
 	release
 }
 

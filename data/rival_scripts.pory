@@ -16,7 +16,8 @@
 	# 13: Set after beating Mossdeep Gym
 	# 14: Set after clearing Seafloor Cavern
 	# 15: Set after beating Sootopolis Gym
-	# 16: Set after beating the Pokémon League
+	# 16: Set after reaching the Pokémon League building
+	# 17: Set after beating the Pokémon League
 
 #Scene01
 script Rival_Scene01 {

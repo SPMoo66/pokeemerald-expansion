@@ -858,27 +858,79 @@ text Town08_SakuraText {
 # Battle03
 
 text Battle03_BaronText_PreBattle {
-	""
+	"W- Wait, {PLAYER}!\p"
+	"If you're heading this way, then…\p"
+	"Gosh, are you already leaving for the\n"
+	"next area?\p"
+	"I- I haven't even beat the gym yet…\p"
+	"You're my life preserver, don't head\n"
+	"out and leave me to my fate…!\p"
+	"Can you help me by… uh… maybe…\n"
+	"higher levels?\p"
+	"I'm pretty sure higher levels mean\n"
+	"that the critters do better.\p"
+	"Where's that button…? Here.\p"
+	"Okay… So please… just don't…\n"
+	"fight… back…!"
 }
 
 text Battle03_BaronText_BattleVictory {
-	""
+	"Ah… I don't know if that's going to be\n"
+	"enough…"
 }
 
 text Battle03_BaronText_PostBattle {
-	""
+	"A- A rematch!\p"
+	"No… that's rude of me. This has all\n"
+	"been rude of me. I'm sorry…\p"
+	"I…I will make this work\n"
+	"or else my name isn't-\p"
+	"…isn't… B- Baron.\p"
+	"{EMOJI_BIGWHEEL}Clears throat{EMOJI_BIGWHEEL}\p"
+	"You are a good friend to me, Baron.\p"
+	"I'll head off to that Petalburg\n"
+	"town now.\p"
+	"Please don't wait up for my slowness.\n"
+	"But… please don't get too far ahead.\p"
+	"W- Wish me luck, please!"
 }
 
 text Battle03_HarperText_PreBattle {
-	""
+	"Where am I?\p"
+	"…Petalburg? Am I supposed to be\n"
+	"here?\p"
+	"There was the waterfall cave, and\n"
+	"the motherfreakin' volcano\p"
+	"And all those ledges! Why are those\n"
+	"there? To trap you into a restart?\p"
+	"Stupid ledges! Yes, they're annoying!\n"
+	"I don't have depth perception. This is\l"
+	"a 2D world we're walking through!\p"
+	"Whoever designed this is gonna have\n"
+	"a nice peanut butter and knuckle\l"
+	"sandwich to wake up to…\p"
+	"Maybe Jakson, too…\n"
+	"Argh! So confusing…\p"
+	"Screw it. Fight me.\n"
+	"Think of saying no and I'll bite you!"
 }
 
 text Battle03_HarperText_BattleVictory {
-	""
+	"Hah… Okay, I think that's it."
 }
 
 text Battle03_HarperText_PostBattle {
-	""
+	"So one more loss on the books for\n"
+	"me, then?\p"
+	"That's fine. I've worked through my\n"
+	"anger at least.\p"
+	"I'm gonna go heal up my Pokémon at\n"
+	"the red building.\p"
+	"Maybe Jakson will be there to…\n"
+	"help me rethink my gym strategy.\p"
+	"I've got a second stomach for\n"
+	"second helpings on that dish.\p"
+	"Alright, good luck {PLAYER}."
 }
 
 text Battle03_JaksonText_PreBattle {

@@ -156,13 +156,7 @@
       "flag": "FLAG_ITEM_ROUTE_132_BOTTLE_CAP"
     }
   ],
-  "warp_events": [
-
-  ],
-  "coord_events": [
-
-  ],
-  "bg_events": [
-
-  ]
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
 }

@@ -1171,6 +1171,10 @@ mapscripts SootopolisCity_MapScripts {
 	}
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag (FLAG_VISITED_SOOTOPOLIS_CITY)
+		setflag (FLAG_TEMP_2)
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 14) {
+			call (EventScript_Clear_FlagTemp2) # Show Rivals
+		}
 		if (var(VAR_SOOTOPOLIS_CITY_STATE) == 1 || var(VAR_SKY_PILLAR_STATE) == 1) {
 			call (EventScript_HideMapNamePopup)
 		}

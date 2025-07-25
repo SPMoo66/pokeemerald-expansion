@@ -1053,6 +1053,46 @@ Baron_Town13::
 	return
 
 
+Sakura_Town14::
+# 624 "data/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 625 "data/rival_scripts.pory"
+	msgbox Town14_SakuraText, MSGBOX_NPC
+	return
+
+
+Harper_Town14::
+# 629 "data/rival_scripts.pory"
+	speakername CommonText_Harper
+# 630 "data/rival_scripts.pory"
+	msgbox Town14_HarperText, MSGBOX_NPC
+	return
+
+
+Redd_Town14::
+# 634 "data/rival_scripts.pory"
+	speakername CommonText_Redd
+# 635 "data/rival_scripts.pory"
+	msgbox Town14_ReddText, MSGBOX_NPC
+	return
+
+
+Jakson_Town14::
+# 639 "data/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 640 "data/rival_scripts.pory"
+	msgbox Town14_JaksonText, MSGBOX_NPC
+	return
+
+
+Baron_Town14::
+# 644 "data/rival_scripts.pory"
+	speakername CommonText_Baron
+# 645 "data/rival_scripts.pory"
+	msgbox Town14_BaronText, MSGBOX_NPC
+	return
+
+
 Baron_Town01_Text_0:
 # 103 "data/rival_scripts.pory"
 	.string "Left foot… Right foot…\nLeft foot… Right foot…$"

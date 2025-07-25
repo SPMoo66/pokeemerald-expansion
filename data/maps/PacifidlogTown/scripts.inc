@@ -5,6 +5,8 @@ PacifidlogTown_MapScripts::
 
 PacifidlogTown_OnTransition:
 	setflag FLAG_VISITED_PACIFIDLOG_TOWN
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 14, EventScript_Clear_FlagTemp1 @ Show Rivals
 	end
 
 PacifidlogTown_OnResume:

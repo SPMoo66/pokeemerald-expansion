@@ -185,7 +185,8 @@ text Scene02_BaronText_BattleVictory {
 }
 
 text Scene02_HarperText_BattleVictory {
-	format(	"So next I'll send out…!\nWait, am I out of them?!")
+	format(	"So next I'll send out…!\n"
+			"Wait, am I out of them?!")
 }
 
 text Scene02_JaksonText_BattleVictory {
@@ -1261,63 +1262,213 @@ text Town11_SakuraText {
 # Battle04
 
 text Battle04_BaronText_PreBattle {
-	""
+	"Ah, {PLAYER}! It's a pleasure to see\n"
+	"you again.\p"
+	"{EMOJI_BIGWHEEL}Does a slight bow.{EMOJI_BIGWHEEL}\p"
+	"Where are you now? In this story,\n"
+	"I mean.\p"
+	"…Ah. Does that mean…\n"
+	"I've caught up?\p"
+	"Those routes were really long and it\n"
+	"gave me a lot of time to practice, train\l"
+	"and strategize.\p"
+	"… … …\p"
+	"You'll be kind enough to let me know if\n"
+	"I've improved, right?"
 }
 
 text Battle04_BaronText_BattleVictory {
-	""
+	"Ah…! I was close, I feel. If I just…"
 }
 
 text Battle04_BaronText_PostBattle {
-	""
+	"No, no excuses. I came into this\n"
+	"expecting to lose. No surprises here.\p"
+	"But I have improved, right?\p"
+	"If I just keep going like this I'll be\n"
+	"able to stay closely behind you all.\p"
+	"Thank you for your help.\p"
+	"You've been nothing but helpful.\n"
+	"You really are a great friend.\p"
+	"I appreciate you being there for\n"
+	"h- …for the whole group here.\p"
+	"I'll see you soon, okay?"
 }
 
 text Battle04_HarperText_PreBattle {
-	""
+	"Yo, {PLAYER}.\p"
+	"Heading in to take on this gym, too?\n"
+	"I'm giving it a 2nd try myself.\p"
+	"Maybe… I think some moves let me\n"
+	"move first. I could try that?\p"
+	"Ugh…Maybe not though. I could just\n"
+	"go get a few more levels first.\p"
+	"Which… Hmm…\p"
+	"Hey, {PLAYER}. You got those good\n"
+	"Pokemans, yeah?\p"
+	"Give me a few levels.\n"
+	"Don't resist."
 }
 
 text Battle04_HarperText_BattleVictory {
-	""
+	"Shoot, that wasn't nearly enough."
 }
 
 text Battle04_HarperText_PostBattle {
-	""
+	"Why do you have to be so good at\n"
+	"this, {PLAYER}?\p"
+	"Oh well, if only I  used that one\n"
+	"move instead of the other… That\l"
+	"could've turned the tide, maybe.\p"
+	"If I got another one of those Choice\n"
+	"items, it'd have been enough to take\l"
+	"out your guy, though.\p"
+	"It's like a multiplier thing.\n"
+	"Or am I forgetting how that works?\p"
+	"Argh! I'm just gonna go shake down\n"
+	"Jakson for a few more exp.\p"
+	"Go on ahead. You've definitely got\n"
+	"this one, {PLAYER}."
 }
 
 text Battle04_JaksonText_PreBattle {
-	""
+	"Hey, {PLAYER}.\p"
+	"So I assume you just wrapped up the\n"
+	"weather trio arc?\p"
+	"Can't imagine you expected to get\n"
+	"Rayquaza of all partners for that one.\p"
+	"Now that one took quite a few nights\n"
+	"to get right. Yup that one's fully\l"
+	"custom by yours truly, haha.\p"
+	"“Now all that's left is the falling\n"
+	"action.” I assume that's what you're\l"
+	"thinking right around now.\p"
+	"I won't say I'm fully out of surprises.\n"
+	"There may ve a few more arcs to hit\l"
+	"their peak, even still.\p"
+	"For example… {EMOJI_BIGWHEEL}Clears throat{EMOJI_BIGWHEEL}\p"
+	"You don't think you'll get past\n"
+	"here so easily, do you?"
 }
 
 text Battle04_JaksonText_BattleVictory {
-	""
+	"Truly, was this the peak, or…"
 }
 
 text Battle04_JaksonText_PostBattle {
-	""
+	"Well done, {PLAYER}.\n"
+	"Haha, a very good job even.\p"
+	"Every time we square up it feels like\n"
+	"I'm hitting a wall. You manage to both\l"
+	"surprise and be predictable.\p"
+	"What can I say? It's fun seeing how\n"
+	"you manage to counter whatever\l"
+	"new team I throw your way.\p"
+	"Makes me want to try harder.\n"
+	"To make sure I stay ahead enough\l"
+	"to be a good guide to you all.\p"
+	"Though, I'm not sure you were ever\n"
+	"the one that I needed to worry about\l"
+	"on that.\p"
+	"Some of the others… yeah.\p"
+	"But everyone's doing well now!\p"
+	"It's a bit like watching your kids grow\n"
+	"up.\p"
+	"Or at least, that's what I imagine, haha.\p"
+	"Take care, {PLAYER}!"
 }
 
 text Battle04_ReddText_PreBattle {
-	""
+	"What are ya, {PLAYER}. A Slowpoke?\p"
+	"When I saw you head into the gym,\n"
+	"I figured that you hanging around here\l"
+	"would lead you right to me!\p"
+	"I knew reading a guide on the game's\n"
+	"progression would come in handy.\p"
+	"But you did take while.\p"
+	"Did that Magma grunts downstairs hold\n"
+	"you up?\p"
+	"Well, I hope you haven't been falling\n"
+	"behind already. All that work I've been\l"
+	"doing to refine my team needs a test.\p"
+	"I guess there's no time like the\n"
+	"present. Let me check if you're up\l"
+	"to snuff!"
 }
 
 text Battle04_ReddText_BattleVictory {
-	""
+	"Agh! But my Aerodactyl had priority…"
 }
 
-text Battle04_ReddText_PostBattle {
-	""
+text Battle04_ReddText_PostBattle1 {
+	"That thing was a powerhouse… Mmm…\p"
+	"Damn, then. Good work, {PLAYER}.\n"
+	"I picked a good rival to push me.\p"
+	"I've really started to fall back to\n"
+	"my most trusted skill from when I\l"
+	"played Gen 1 as a kid…\p"
+	"Catching them all. It's a ‘research’\n"
+	"mission we're on, after all. Might as\l"
+	"well make use of it myself.\p"
+}
+
+text Battle04_ReddText_PostBattle2a {
+	"So don't be surprised if I win next\n"
+	"time, now that I've seen your team.\l"
+	"I'll have the research advantage!"
+}
+
+text Battle04_ReddText_PostBattle2b {
+	"We're… not so far off in terms of\n"
+	"our research… But! But I've seen\n"
+	"your team now. So be prepared."
+}
+
+text Battle04_ReddText_PostBattle3 {
+	"I better get going. See you at the\n"
+	"Pokémon League for our final showdown!"
 }
 
 text Battle04_SakuraText_PreBattle {
-	""
+	"Stop right there, criminal scum!\n"
+	"You violated the law.\p"
+	"Break the law on my watch, hm?\n"
+	"Your spree is at an end.\p"
+	"I'll be confiscating your stolen\n"
+	"goods.\p"
+	"Oh, and no gold to pay your fine, hm?\p"
+	"Very well, scum.\p"
+	"Steel thyself, strength previously\n"
+	"unknown to mankind is about to be\l"
+	"unleashed upon ye!"
 }
 
 text Battle04_SakuraText_BattleVictory {
-	""
+	"Ah, be still my heart!\n"
+	"The battle has ended!"
 }
 
 text Battle04_SakuraText_PostBattle {
-	""
+	"Good, {PLAYER}! Very good!\n"
+	"A worthy battle for our age.\p"
+	"Now, we shall drink, and be merry!\n"
+	"Off to the halls of Valhalla with us!\p"
+	"…There's no way Jakson actually\n"
+	"modded in alcohol into this, yeah?\p"
+	"Eh, it's fine. I sort of went from the\n"
+	"oblivion to the snow tipped rims of\l"
+	"the sky in that one.\p"
+	"More importantly! Did you like my\n"
+	"disguise? I spent a while making it.\p"
+	"Not one of the others saw through\n"
+	"it when they passed by, even.\p"
+	"It took Baron a few attempts to beat\n"
+	"me, hehe{EMOJI_TILDE}\p"
+	"But anyway, go on ahead. The world is\n"
+	"waiting for you to save it!\p"
+	"Alternatively… Valhalla is still on\n"
+	"the table, maybe?\p"
+	"…Nah, go beat their butts."
 }
 
 
@@ -1483,4 +1634,650 @@ text Town13_SakuraText {
 			"Were you able to find it yet?\p"
 			"Heheh. If you haven't, I'm keeping\n"
 			"that secret to myself{EMOJI_TILDE}{UNK_SPACER}")
+}
+
+
+# Town14
+text Town14_BaronText {
+	format(	"Ah! {PLAYER}!\p"
+			"H- Hey… You wouldn't happen to have\n"
+			"any useful advice for this…?\p"
+			"I dropped down from the ceiling through\n"
+			"one of those cracked floors, but\l"
+			"somehow I landed on this rock wall!\p"
+			"I've been trying to get out for a while\n"
+			"and… oh no… that center pit sure looks\l"
+			"unstable.\p"
+			"… … …\n"
+			"No luck?\p"
+			"I'll… I'll keep wiggling around more, and\n"
+			"hopefully I can get myself free.\p"
+			"Just try not to do the same thing,\n"
+			"{PLAYER}.")
+}
+
+text Town14_HarperText {
+	format(	"Woah…\p"
+			"Watching all that from here…\n"
+			"Wow, that was some crazy stuff.\p"
+			"For everything else that has happened\n"
+			"in this game, that one managed to really\l"
+			"be impressive and exciting.\p"
+			"We all need to do that? If I stick\n"
+			"around will I see it more times?\p"
+			"I wonder if it's because of this\n"
+			"system that it looks good, or if it\l"
+			"looked cool when it first came out?\p"
+			"You played this when you were young,\n"
+			"right, {PLAYER}?\p"
+			"W're all younger that this game, so did\n"
+			"it hold up when you first tried it?")
+}
+
+text Town14_JaksonText {
+	format(	"Even with all the chaos going on, isn't\n"
+			"Pacifidlog peaceful, {PLAYER}?\p"
+			"The log bridges and unique buildings\n"
+			"are such a nice touch to the\l"
+			"atmosphere.\p"
+			"All without the downside of a constant\n"
+			"fear of it sinking in the dephs, like\l"
+			"you'd have for a place like this IRL.\p"
+			"It's a shame that the town is sort of\n"
+			"forgettable overall.\p"
+			"It's easy to just pass over this place\n"
+			"when playing the game.\p"
+			"But that'd be a shame. It's nice to\n"
+			"spend a few minutes here.\p"
+			"When you're feeling refreshed, get back\n"
+			"to saving Hoenn!")
+}
+
+text Town14_ReddText {
+	format(	"Yo, {PLAYER}.\p"
+			"You doing okay? No headaches?\p"
+			"Two  giant monsters causing chaos\n"
+			"with the weather…\p"
+			"I've been trying to search for Pokémon\n"
+			"for my team, but the weather effects\l"
+			"are making that sort of hard at times.\p"
+			"Maybe I should just get this part\n"
+			"of the game over with right away…?\p"
+			"Argh… But Jakson said what I was\n"
+			"looking for was over here and…\p"
+			"He wouldn't… lie? Would he?")
+}
+
+text Town14_SakuraText {
+	format(	"Ah…\n"
+			"It's a real shame you can't catch this\l"
+			"guy yet.\p"
+			"I'd love to ride into battle on him.\p"
+			"Add a nice bow over at a Pokémon\n"
+			"contest and he'd be a frontrunner\l"
+			"in the cool and cute contests.\p"
+			"I mean, that's not the only reason I'd\n"
+			"like to have him.\p"
+			"Dominion over the skies is often\n"
+			"vital step in any quest for world\l"
+			"domination, after all.")
+}
+
+
+# Town15
+text Town15_BaronText {
+	format(	"O- Oh, you scared me, {PLAYER}.\p"
+			"Have you completed any of the levels of\n"
+			"this Trick House yet?\p"
+			"I've done a few. The early ones took me\n"
+			"a long time, especially the trivia one,\l"
+			"but I'm getting better.\p"
+			"The rewards are… well, they're no\n"
+			"potions, but anything with a dollar\l"
+			"value helps with that.\p"
+			"Those bigger potions sure are\n"
+			"expensive…")
+}
+
+text Town15_HarperText {
+	format(	"Hi, {PLAYER}.\p"
+			"I'm just taking a break here.\p"
+			"You know, I didn't know if I'd finish\n"
+			"this when we started. Getting this\l"
+			"far is… yeah. Not bad, right?\p"
+			"Not that I wouldn't prefer something\n"
+			"a notch more modern, but it ain't half\l"
+			"bad.\p"
+			"Now, we're all close to the end.\p"
+			"For the last location to be this flower\n"
+			"place… it's actually sort of nice.\l"
+			"Very relaxing.\p"
+			"Oh, I know about the cave up there.\n"
+			"I already peeked in.\p"
+			"That's why I had to come out here and\n"
+			"relax.")
+}
+
+text Town15_JaksonText {
+	format(	"It's the final stretch now.\p"
+			"I've made a bunch of changes to the\n"
+			"game, and I hope you've enjoyed them.\p"
+			"But there's one thing I've been\n"
+			"thinking for a little bit.\p"
+			"Maybe I should have made Victory Road\n"
+			"twice as long?\p"
+			"Maybe made some hybrid HM puzzles?\n"
+			"Waterfall and Strength needed. Or like\l"
+			"needing Rock Smash after Diving.\p"
+			"What do you think?")
+}
+
+text Town15_ReddText {
+	format(	"Ah… Victory Road!\p"
+			"The hellish gauntlet to test your\n"
+			"resilience entering the final\l"
+			"stretch of the game…\p"
+			"I've been training on Kanto Victory\n"
+			"Road all my life.\p"
+			"This will be nothing to me!\p"
+			"…is what I'd like to say.\p"
+			"I… may be getting distracted with\n"
+			"the new encounter table here.\p"
+			"They're endgame Pokémon! They've\n"
+			"gotta be the best of the best.")
+}
+
+text Town15_SakuraText {
+	format(	"Come on, {PLAYER}, don't give up yet!\p"
+			"…What, you think I'm gonna unleash a\n"
+			"surprise attack on you now?\p"
+			"I'm not that cruel, {PLAYER} come now.\p"
+			"That's Wally's job, after all! You don't\n"
+			"need me!")
+}
+
+
+# Town16
+text Town16_BaronText {
+	format(	"{PLAYER}, you're here.\p"
+			"I'm just trying to finalize my\n"
+			"preparations for the battles.\p"
+			"I know that I've become more competent\n"
+			"in the gameplay for this, but… I'm\l"
+			"still inclined to stock up on potions.\p"
+			"Jakson was kind enough to let me\n"
+			"take out a loan for the prep, too.\p"
+			"The limit is 999… 20HP per potion\n"
+			"means… Hmm…\p"
+			"I'm thinking that should be enough to\n"
+			"get me through the Elite Four.\p"
+			"It's sort of like doing math when\n"
+			"buying groceries, to be honest, haha.\p"
+			"… … …\n"
+			"Huh…?\p"
+			"Pokévial…?\p"
+			"What's that?")
+}
+
+text Town16_HarperText {
+	format(	"Heyo. We're all here now, then.\p"
+			"Good to see you get through alright.\n"
+			"I managed… with some directions from\l"
+			"Sakura… but I am here now.\p"
+			"I'm sort of surprised they made that\n"
+			"thinking kids would get through.\p"
+			"Maybe they just used to make things\n"
+			"expecting players to run their head\l"
+			"into the wall until something worked?\p"
+			"Oh, right. You played this as a kid.\n"
+			"No slight meant towards you. You seem\l"
+			"like you were the patient sort of kid?\p"
+			"… … …\p"
+			"Have I gotten less patient… or do I\n"
+			"just know what I like better…?\p"
+			"Ah, screw it. We've got a job to finish\n"
+			"here. Let's both clean up.")
+}
+
+text Town16_JaksonText {
+	format(	"Hey, {PLAYER}.\p"
+			"You're doing your last preparations\n"
+			"now, right?\p"
+			"There's the reminder and a move tutor\n"
+			"over there.\p"
+			"Oh, and don't forget to stock up on\n"
+			"potions, too.\p"
+			"They shouldn't run out, unless Baron\n"
+			"manages to break the game over there.\p"
+			"I don't think there's a way to overflow\n"
+			"the money value…?\p"
+			"Nah, it should be fine.\p"
+			"It's not a small challenge, so be ready\n"
+			"to be at your best!")
+}
+
+text Town16_ReddText {
+	format(	"{PLAYER}, there you are.\p"
+			"Me and the others were comparing\n"
+			"teams.\p"
+			"Even had a couple practice battles\n"
+			"to get a feel for all that, too.\p"
+			"Jakson has a strategy for sure, even\n"
+			"if I'm not entirely sure what it is.\p"
+			"Baron is… well, more like what I\n"
+			"expected of him when this all started.\l"
+			"Quite good, despite the slow start.\p"
+			"For Harper, it seems good. I think\n"
+			"she finally ditched the Furret.\l"
+			"I know she likes it, but… a Furret…\p"
+			"And Sakure's is… well…\p"
+			"Sorry, I'm still trying to come to terms\n"
+			"with what a ‘Ceruledge’ is.\p"
+			"I've been to each corner of this\n"
+			"region now and some of them are just\l"
+			"hard to wrap my head around.\p"
+			"And that's WITH just the first\n"
+			"nine gens in play…\p"
+			"Well, unless Jakson throws some crazy\n"
+			"custom thing at us, I think we're all\l"
+			"ready for the Elite Four.")
+}
+
+text Town16_SakuraText {
+	format(	"{PLAYER}!\p"
+			"I've got a devious plan for beating the\n"
+			"Elite Four.\p"
+			"I'll be doing them in reverse order!\p"
+			"You know those hallways between the rooms?\p"
+			"You just need to use surf over that\n"
+			"void, then dive down and swim your\l"
+			"way to the end.\p"
+			"Just make sure not to save while you're\n"
+			"underwater there! You mgith surface in\l"
+			"the Mystery Zone if you do.\p"
+			"Heheh{EMOJI_TILDE}\p"
+			"Cuteness Inspector Sakura has all\n"
+			"the secrets fingered.")
+}
+
+
+# Battle05
+
+text Battle05_BaronText_PreBattle {
+	"{PLAYER}. It appears I arrived here\n"
+	"before you did."
+}
+
+text Battle05_BaronText_PreBattle2 {
+	"… … …\p"
+	"It seems like we're reaching the end.\p"
+	"You'll be headed into the final\n"
+	"gauntlet soon, I imagine.\p"
+	"Before you go… I… I need to…\p"
+	"… … …\p"
+	"Well, how about this. If you beat me\n"
+	"here, then we'll talk.\p"
+	"After all, if I can beat you, maybe it\n"
+	"isn't even needed.\p"
+	"So… Shall we have one last practice\n"
+	"round? A dance to a finale."
+}
+
+text Battle05_BaronText_BattleVictory {
+	"So close…! No…No. I'm happy about\n"
+	"this. This is what I wanted, in the end."
+}
+
+text Battle05_BaronText_PostBattle {
+	"{PLAYER}, you are very skilled at this\n"
+	"game. It helped me realize what I\l"
+	"could be when playing it…\p"
+	"Playing it for… my son."
+}
+
+text Battle05_BaronText_PostBattle2 {
+	"I hope it hasn't been too obvious,\n"
+	"but Baron wasn't able to join.\p"
+	"He came down with a sickness that\n"
+	"has left him bedridden this week.\p"
+	"Oh, don't worry! I've been taking good\n"
+	"care of my son. We went to the doctor\l"
+	"early on and he just needs bedrest.\p"
+	"He was just… so excited to play with\n"
+	"you all. I was hoping I could hand the\l"
+	"game back to him when he got better.\p"
+	"I'm sorry I didn't tell you sooner.\p"
+	"But that was something I'll cherish\n"
+	"myself. I'm so happy that my Baron\l"
+	"has such kind friends. To see it myself.\p"
+	"I'll be sure to give him the account\n"
+	"back when he does recover, of course.\l"
+	"Hopefully I'm not a burden until then.\p"
+	"But… whenever that is. Thank you.\n"
+	"Thank you for being you. All of you."
+}
+
+text Battle05_HarperText_PreBattle {
+	"{PLAYER}! Before you go…\p"
+	"It makes sense to have a warm up\n"
+	"battle between us, yeah? I thought\l"
+	"about asking one of the others…\p"
+	"But it has to be you.\p"
+	"I can't let this end without getting\n"
+	"at least one win over you.\p"
+	"I know I didn't take it that seriously\n"
+	"at the start, but with every time you've\l"
+	"kicked my butt it sort of fired me up.\p"
+	"I've learned a lot from you, and from\n"
+	"battling against everyone else.\p"
+	"Baron… Sakura… Redd… Jakson.\n"
+	"I've beaten them all at this point.\p"
+	"So if this is the game's end…\n"
+	"You're next.\p"
+	"Let's battle, {PLAYER}, and don't\n"
+	"hold anything back!"
+}
+
+text Battle05_HarperText_BattleVictory {
+	"What's your secret!? I just can't\n"
+	"quite get there…"
+}
+
+text Battle05_HarperText_PostBattle {
+	"No, no… I know how this went down.\n"
+	"I know why I lost to your secret skill.\p"
+	"Ha… Because there is no secret."
+}
+
+text Battle05_HarperText_PostBattle2 {
+	"Jakson just has an encylopedia.\n"
+	"Sakura doesn't give you a second\l"
+	"to breathe.\p"
+	"Redd feels like he knows half the\n"
+	"Pokédex now. Baron sees through\l"
+	"my strategies so quickly now.\p"
+	"You… feel like you got all of that.\p"
+	"I originally came along just to play\n"
+	"a game with some friends. And maybe\l"
+	"I regretted it at first.\p"
+	"Now I got this stupid tick in my head\n"
+	"that says “win win win”. I've got you\l"
+	"guys to blame for that.\p"
+	"Haha… It's been fun.\p"
+	"So don't go losing until I get a chance\n"
+	"to knock you down a peg or two.\p"
+	"Go out there and win, {PLAYER}.\n"
+	"You've got this."
+}
+
+text Battle05_JaksonText_PreBattle {
+	"{PLAYER}.\p"
+	"So. Here we are. The precipice.\p"
+	"Safe to assume you'd be up for one\n"
+	"more battle before we crown the\l"
+	"‘King’ or ‘Queen of the Hill’ here?\p"
+	"I know how strong you are. I even\n"
+	"prepared for this with that in mind.\p"
+	"My team is amazing. I spent the last\n"
+	"couple days assembling it.\p"
+	"Been a long time since I fell asleep\n"
+	"thinking about what ability I\l"
+	"preferred on a Pokémon.\p"
+	"I am proud of it. Rightfully.\p"
+	"But… I don't know if I'll win.\n"
+	"Whether I am really and truly ready.\p"
+	"Strange, no?"
+}
+
+text Battle05_JaksonText_PreBattle2 {
+	"Do not hold anything back.\p"
+	"Don't even consider it for a second.\p"
+	"When we are done… there will be\n"
+	"nothing left to prove.\p"
+	"{PLAYER}. I challenge you."
+}
+
+text Battle05_JaksonText_BattleVictory {
+	"And there it is… “The End.”"
+}
+
+text Battle05_JaksonText_PostBattle {
+	"Haha… You know… This IS just for\n"
+	"fun, technically, right?\p"
+	"I feel very ready for the Elite Four\n"
+	"after that.\p"
+	"You, of course, have got it in the bag.\p"
+	"It's just a fun race, after all. Who\n"
+	"knows who'll get to the finish line\l"
+	"first now?\p"
+	"… … …\p"
+	"I wonder if this is what it feels\n"
+	"like to be in a “rivalry”?\p"
+	"Honestly, I sort of get why the rivals\n"
+	"end up being nice instead of assholes.\p"
+	"I'm proud of myself.\n"
+	"I'm proud of you, too, {PLAYER}.\l"
+	"I'm proud of all of you.\p"
+	"Let's keep having fun, all the way\n"
+	"to that finish line.\p"
+	"And, after that? Who knows?\p"
+	"Maybe I'll listen to the ideas of\n"
+	"whoever beats the game first, haha.\p"
+	"Don't slack now, {PLAYER}{EMOJI_TILDE}{UNK_SPACER}"
+}
+
+text Battle05_ReddText_PreBattle {
+	"Hey, {PLAYER}! I was looking forward\n"
+	"to seeing you here.\p"
+	"For all of us to be here, it's great.\p"
+	"And you…\p"
+	"You are my rival. So of course we\n"
+	"meet again here of all places."
+}
+
+text Battle05_ReddText_PreBattle2a {
+	"I've already won the research\n"
+	"battle, so let's see if I can make\l"
+	"it 2-0 in the ring."
+}
+
+text Battle05_ReddText_PreBattle2b {
+	"It seems you've caught up to me in\n"
+	"the research battle… Well that just\l"
+	"means we'll have to battle."
+}
+
+text Battle05_ReddText_PreBattle3 {
+	"I sort of wanted to do this after\n"
+	"the Elite 4… but…I don't think\l"
+	"I can go and replace the champ.\p"
+	"A shame, but this setting is good too.\n"
+	"Here, at the top of this hill\p"
+	"Because, do you know what that'll\n"
+	"mean about the winner of this fight?\p"
+	"I'll tell you!\p"
+	"They will be the most powerful\n"
+	"trainer in the world!"
+}
+
+text Battle05_ReddText_BattleVictory {
+	"No! That can't be!\n"
+	"You beat my best!?"
+}
+
+text Battle05_ReddText_PostBattle {
+	"After all that work to study even the\n"
+	"new ones and be a Pokémon Master…"
+}
+
+text Battle05_ReddText_PostBattle2 {
+	"Why? Why did I lose?\p"
+	"I put in all that work to research\n"
+	"and raise my Pokémon for this very\l"
+	"day.\p"
+	"I really thought I hadn't made any\n"
+	"mistakes in raising my Pokémon here.\p"
+	"It stings, of course, always being one\n"
+	"step behind you.\p"
+	"… … …"
+}
+
+text Battle05_ReddText_PostBattle3 {
+	"We're not done with either race\n"
+	"yet, are we? To the end of the\l"
+	"Pokédex and the Pokémon League.\p"
+	"Add one to my loss column, and prepare\n"
+	"to add one to your own, {PLAYER}!\p"
+	"Let the best Pokémon Master win.\p"
+	"Good luck, {PLAYER}. You're going to\n"
+	"need it!"
+}
+
+text Battle05_SakuraText_PreBattle {
+	"Poof!\p"
+	"And suddenly, the final boss appears!\n"
+	"The Cuteness Inspector takes her\l"
+	"place across from a hopeful challenger.\p"
+	"She is that which calls for all those\n"
+	"before her to bow and plead for\l"
+	"relief from famine and drought.\p"
+	"She is the infectious aura that\n"
+	"soothes and placates the masses\l"
+	"to make their will bend to her whim.\p"
+	"She is the reaper's blade that curves\n"
+	"itself around the neck of the scared\l"
+	"sheep sleeping under the barren\l"
+	"moonlight\p"
+	"She…\n"
+	"is…\l"
+	"SAKURA!!!\p"
+	"Her opponent: The weakling little\n"
+	"{PLAYER}, always lagging one step\l"
+	"behind her throughout their journey!\p"
+	"Can {PLAYER} overcome their greatest\n"
+	"challenge yet, or will Sakura reign\l"
+	"supreme{EMOJI_TILDE}\p"
+	"In order to have a chance, {PLAYER}\n"
+	"must give it their all!"
+}
+
+text Battle05_SakuraText_BattleVictory {
+	"And so, the beloved Cuteness Inspector\n"
+	"Sakura falls once again! Ah!"
+}
+
+text Battle05_SakuraText_PostBattle {
+	"… … …\p"
+	"…Hah.\p"
+	"Hahahah!\p"
+	"{PLAYER}, going through this with you\n"
+	"all has been a blast. Especially with\l"
+	"you there as my indomitable foe.\p"
+	"No matter how much I train up, you've\n"
+	"always kept me on my toes.\p"
+	"To put my serious face on for just a\n"
+	"moment… thank you for playing along\l"
+	"with us and putting up with my antics.\p"
+	"This is all the more electrifying when\n"
+	"I get an audience. We should… Maybe\l"
+	"we should do this more often…\p"
+	"This, truly, has been fun.\p"
+	"… … … Ah!\p"
+	"Alright, we're not done yet{EMOJI_TILDE}\p"
+	"Race ya to be Champion! Don't you\n"
+	"drown in my wake!"
+}
+
+
+# Town17
+text Town17_BaronText {
+	format(	"Hi, {PLAYER}!\p"
+			"I think I've managed to find something\n"
+			"I'm really good at.\p"
+			"I never thought gambling on matches\n"
+			"would be my calling!\p"
+			"I've been racking up BP like you\n"
+			"wouldn't believe here!\p"
+			"I might be making more betting on\n"
+			"Sakura's battles than she is doing\l"
+			"them.\p"
+			"It doesn't seem like you can trade them\n"
+			"in for potions, but I think I saw\l"
+			"Leftovers as a reward.\p"
+			"Anything that can help heal is just as\n"
+			"good.")
+}
+
+text Town17_HarperText {
+	format(	"My goodness this building is CRAZY.\p"
+			"Like… in a cool way. I think?\p"
+			"Like needing to enter through the\n"
+			"mouth of a snake? It makes me realize\l"
+			"how real some of this feels now.\p"
+			"Legitimately, it gave me goosebumps.\n"
+			"How did a buncha VR pixels manage that?\p"
+			"Is everything gonna feel super real\n"
+			"at a point? Will the real world start\l"
+			"to feel weird in comparison?\p"
+			"… … …\p"
+			"Maybe I should try to find something a\n"
+			"little more relaxing.\p"
+			"Evergrande City was nice… Maybe I'll\n"
+			"visit again.")
+}
+
+text Town17_JaksonText {
+	format(	"Oh, hey {PLAYER}!\p"
+			"You've beaten the game now, right?\p"
+			"You should go check out the Battle\n"
+			"Frontier if you haven't yet.\p"
+			"Sorry if there's a few things that are\n"
+			"broken.\p"
+			"Hopefully those can be patched up.\p"
+			"And if you're still interested, I'm\n"
+			"always looking for new mods to add to\l"
+			"the game!\p"
+			"If I find anything, I'll let you know!")
+}
+
+text Town17_ReddText {
+	format(	"Oh, hey, you showed up!\p"
+			"You're not just taking it easy now,\n"
+			"right?\p"
+			"You, I bet you're racing Jakson through\n"
+			"levels at the Battle Tower.\p"
+			"I feel like I never see him anywhere\n"
+			"else.\p"
+			"I've been making attempts here at the\n"
+			"Battle Factory.\p"
+			"I've seen a lot of the Pokémon now, so\n"
+			"my handle on the game is getting better\l"
+			"by the day.\p"
+			"I do sort of wish there was some kind\n"
+			"of… Gen 1 only pool, or something.\p"
+			"I mean, yeah, the others were good too,\n"
+			"but comfrot food is always nice.")
+}
+
+text Town17_SakuraText {
+	format(	"Hmm…\p"
+			"I don't think I can get Scott to leave,\n"
+			"but do you think I can get Jakson to\l"
+			"put a throne in here for me?\p"
+			"I'm only a few Symbols away, then this\n"
+			"house should be mine.\p"
+			"That's how I assume it works anyway.\n"
+			"All this furniture I've been getting\l"
+			"must go somewhere.\p"
+			"This Battle Frontier's just been too\n"
+			"easy for me.\p"
+			"Jakson needs to hurry up and add some\n"
+			"more stuff… and make it more difficult\l"
+			"too!\p"
+			"Oh, maybe we could get a second floor\n"
+			"on this place!\p"
+			"I just need to get Scott to move!\p"
+			"I mean…\n"
+			"If Scott refuses to leave…\l"
+			"I could just burn it down and rebuild.")
 }

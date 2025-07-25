@@ -278,19 +278,19 @@ Scene02_HarperText_BattleVictory::
 	.string "Wait, am I out of them?!$"
 
 Scene02_JaksonText_BattleVictory::
-# 191 "data/rival_text.pory"
+# 192 "data/rival_text.pory"
 	.string "I… lost? Huh…$"
 
 Scene02_ReddText_BattleVictory::
-# 195 "data/rival_text.pory"
+# 196 "data/rival_text.pory"
 	.string "…?!$"
 
 Scene02_SakuraText_BattleVictory::
-# 199 "data/rival_text.pory"
+# 200 "data/rival_text.pory"
 	.string "Aww{EMOJI_TILDE} I couldn't end your run.$"
 
 Scene02_BaronText_PostBattle::
-# 203 "data/rival_text.pory"
+# 204 "data/rival_text.pory"
 	.string "I'm sorry, I thought that I pressed\n"
 	.string "something else.\p"
 	.string "Then the “run” button thing stopped\n"
@@ -304,7 +304,7 @@ Scene02_BaronText_PostBattle::
 	.string "Cookies? Maybe cookies…$"
 
 Scene02_HarperText_PostBattle::
-# 213 "data/rival_text.pory"
+# 214 "data/rival_text.pory"
 	.string "Sigh… I knew there was a reason I was\n"
 	.string "dodging those trainers.\p"
 	.string "Maybe I really should've sat this one\n"
@@ -318,7 +318,7 @@ Scene02_HarperText_PostBattle::
 	.string "I'm just tired.$"
 
 Scene02_JaksonText_PostBattle::
-# 223 "data/rival_text.pory"
+# 224 "data/rival_text.pory"
 	.string "Haha… I don't know what I expected, but\n"
 	.string "that was exhilarating.\p"
 	.string "I get a feeling this is gonna be a lot of\n"
@@ -328,7 +328,7 @@ Scene02_JaksonText_PostBattle::
 	.string "me for long, {PLAYER}.$"
 
 Scene02_ReddText_PostBattle::
-# 230 "data/rival_text.pory"
+# 231 "data/rival_text.pory"
 	.string "Ack. What are you, Route 22 Blue?!\p"
 	.string "I knew I should've grinded more…\p"
 	.string "… … …\p"
@@ -338,7 +338,7 @@ Scene02_ReddText_PostBattle::
 	.string "S- Smell ya later!$"
 
 Scene02_SakuraText_PostBattle::
-# 239 "data/rival_text.pory"
+# 240 "data/rival_text.pory"
 	.string "Huh? I thought my team would fare\n"
 	.string "better in that battle.\p"
 	.string "It's okay. At least I got to see how\n"
@@ -351,7 +351,7 @@ Scene02_SakuraText_PostBattle::
 	.string "eventually{EMOJI_TILDE}{UNK_SPACER}$"
 
 Town02_BaronText::
-# 249 "data/rival_text.pory"
+# 250 "data/rival_text.pory"
 	.string "Ugh… no one told me that the game could\n"
 	.string "take control of your body.\p"
 	.string "I was so scared for a moment in that\n"
@@ -362,7 +362,7 @@ Town02_BaronText::
 	.string "public servers in the future.$"
 
 Town02_HarperText::
-# 256 "data/rival_text.pory"
+# 257 "data/rival_text.pory"
 	.string "I sort of wish you could talk more to\n"
 	.string "the NPCs.\p"
 	.string "This place is trippy, but immersive in a\n"
@@ -373,7 +373,7 @@ Town02_HarperText::
 	.string "character just repeat themself?$"
 
 Town02_JaksonText::
-# 263 "data/rival_text.pory"
+# 264 "data/rival_text.pory"
 	.string "You know, I actually used an algorithm\n"
 	.string "to decide Pokémon spots.\p"
 	.string "I've started to think about team\n"
@@ -382,7 +382,7 @@ Town02_JaksonText::
 	.string "surprise though?$"
 
 Town02_ReddText::
-# 269 "data/rival_text.pory"
+# 270 "data/rival_text.pory"
 	.string "Don't bother with the gym now.\n"
 	.string "It's locked for story reasons.\p"
 	.string "Well you don't need to fight it right now\n"
@@ -391,7 +391,7 @@ Town02_ReddText::
 	.string "Or maybe it's just nostalgia bait?$"
 
 Town02_SakuraText::
-# 277 "data/rival_text.pory"
+# 278 "data/rival_text.pory"
 	.string "Have you done the Wally tutorial fight\n"
 	.string "yet? Where he gets a Ralts?\p"
 	.string "I wonder if he'll evolve it into a\n"
@@ -400,12 +400,12 @@ Town02_SakuraText::
 	.string "Best of both worlds{EMOJI_TILDE}{UNK_SPACER}$"
 
 Town03_BaronText1::
-# 285 "data/rival_text.pory"
+# 286 "data/rival_text.pory"
 	.string "One step… two step… three step… four\n"
 	.string "step…?$"
 
 Town03_BaronText2::
-# 289 "data/rival_text.pory"
+# 290 "data/rival_text.pory"
 	.string "Oh, sorry. I didn't mean to bother you.\p"
 	.string "I'm actually starting to get used to\n"
 	.string "walking through this world.\p"
@@ -415,7 +415,7 @@ Town03_BaronText2::
 	.string "Wait, would it be muscle memory here?$"
 
 Town03_HarperText::
-# 297 "data/rival_text.pory"
+# 298 "data/rival_text.pory"
 	.string "Cool, an actual city. Wonder if they\n"
 	.string "have much of a night life?\p"
 	.string "… … … What?\p"
@@ -423,7 +423,7 @@ Town03_HarperText::
 	.string "Sigh…$"
 
 Town03_JaksonText::
-# 304 "data/rival_text.pory"
+# 305 "data/rival_text.pory"
 	.string "Hmm… I wonder if there could be like 5\n"
 	.string "of them at once…?\p"
 	.string "Oh, hey {PLAYER}. I was just\n"
@@ -436,7 +436,7 @@ Town03_JaksonText::
 	.string "Things that cross one's mind, ya know?$"
 
 Town03_ReddText::
-# 313 "data/rival_text.pory"
+# 314 "data/rival_text.pory"
 	.string "I wonder if there are any trade Pokémon\n"
 	.string "in this city?\p"
 	.string "They do like to hide secrets on NPCs.\n"
@@ -445,7 +445,7 @@ Town03_ReddText::
 	.string "trade evolution an everstone…$"
 
 Town03_SakuraText::
-# 320 "data/rival_text.pory"
+# 321 "data/rival_text.pory"
 	.string "Badge numero uno is mine{EMOJI_TILDE}\p"
 	.string "Did you see her Nosepass?\n"
 	.string "It's so…!\l"
@@ -456,7 +456,7 @@ Town03_SakuraText::
 	.string "more derp and splendor.$"
 
 Scene03_BaronText::
-# 330 "data/rival_text.pory"
+# 331 "data/rival_text.pory"
 	.string "Hey uh… {PLAYER}, right?\n"
 	.string "Mind if I ask a question?\p"
 	.string "Is it just me or did they give me a flip\n"
@@ -466,11 +466,11 @@ Scene03_BaronText::
 	.string "Thank you. Now, how to… uh… work… this…$"
 
 Scene03_HarperText::
-# 340 "data/rival_text.pory"
+# 341 "data/rival_text.pory"
 	.string "$"
 
 Scene03_JaksonText::
-# 344 "data/rival_text.pory"
+# 345 "data/rival_text.pory"
 	.string "{PLAYER}, you got a PokéNav too?\p"
 	.string "I guess it's not too surprising, but…\p"
 	.string "You up for a challenge?\p"
@@ -478,7 +478,7 @@ Scene03_JaksonText::
 	.string "board just follow my lead.$"
 
 Scene03_ReddText::
-# 351 "data/rival_text.pory"
+# 352 "data/rival_text.pory"
 	.string "{PLAYER}. Sup.\p"
 	.string "Get one of those PokéNav things too?\p"
 	.string "They had something similar in a dozen or\n"
@@ -487,7 +487,7 @@ Scene03_ReddText::
 	.string "So much for being rivals, heheh.$"
 
 Scene03_SakuraText::
-# 359 "data/rival_text.pory"
+# 360 "data/rival_text.pory"
 	.string "Cute! We match!\p"
 	.string "Did you just get that PokéNav?\n"
 	.string "Samesies for me.\p"
@@ -499,7 +499,7 @@ Scene03_SakuraText::
 	.string "my profile to be cool as can be{EMOJI_TILDE}{UNK_SPACER}$"
 
 Battle02_BaronText_PreBattle::
-# 371 "data/rival_text.pory"
+# 372 "data/rival_text.pory"
 	.string "Ah!\p"
 	.string "Oh, it's just you, {PLAYER}.\p"
 	.string "This is the boss room place, right?\p"
@@ -511,12 +511,12 @@ Battle02_BaronText_PreBattle::
 	.string "You'd tell me what I'm doing wrong.$"
 
 Battle02_BaronText_BattleVictory::
-# 383 "data/rival_text.pory"
+# 384 "data/rival_text.pory"
 	.string "Oh no… Does that mean I need to\n"
 	.string "go back to the cave?$"
 
 Battle02_BaronText_PostBattle::
-# 388 "data/rival_text.pory"
+# 389 "data/rival_text.pory"
 	.string "You won again. So what did I do\n"
 	.string "wrong this time?\p"
 	.string "… … …\p"
@@ -535,7 +535,7 @@ Battle02_BaronText_PostBattle::
 	.string "for me.$"
 
 Battle02_HarperText_PreBattle::
-# 407 "data/rival_text.pory"
+# 408 "data/rival_text.pory"
 	.string "Oh, hey there.\p"
 	.string "I was just heading out to get some\n"
 	.string "more Pokéballs…\p"
@@ -547,11 +547,11 @@ Battle02_HarperText_PreBattle::
 	.string "What does ‘duel’ mea-$"
 
 Battle02_HarperText_BattleVictory::
-# 419 "data/rival_text.pory"
+# 420 "data/rival_text.pory"
 	.string "Ach… Dang, you got me again.$"
 
 Battle02_HarperText_PostBattle::
-# 423 "data/rival_text.pory"
+# 424 "data/rival_text.pory"
 	.string "Well, I did a little better that time, right?\p"
 	.string "I haven't been avoiding the NPCs.\n"
 	.string "…as much as before.\p"
@@ -565,7 +565,7 @@ Battle02_HarperText_PostBattle::
 	.string "Oh, wait. I need to heal. See ya!$"
 
 Battle02_JaksonText_PreBattle::
-# 437 "data/rival_text.pory"
+# 438 "data/rival_text.pory"
 	.string "Hey, {PLAYER}.\p"
 	.string "It's a really long walk all the way from\n"
 	.string "Mauville to here in Fallarbor, isn't it?\p"
@@ -581,12 +581,12 @@ Battle02_JaksonText_PreBattle::
 	.string "stop by the Pokémon Center, didn't I?$"
 
 Battle02_JaksonText_BattleVictory::
-# 453 "data/rival_text.pory"
+# 454 "data/rival_text.pory"
 	.string "Hah, and I thought I could get you this\n"
 	.string "time!$"
 
 Battle02_JaksonText_PostBattle::
-# 458 "data/rival_text.pory"
+# 459 "data/rival_text.pory"
 	.string "One wrong move and it would've\n"
 	.string "gone the other way, I think.\p"
 	.string "You're doing well so far, {PLAYER}!\p"
@@ -598,7 +598,7 @@ Battle02_JaksonText_PostBattle::
 	.string "I'm not stopping either!$"
 
 Battle02_ReddText_PreBattle::
-# 470 "data/rival_text.pory"
+# 471 "data/rival_text.pory"
 	.string "Yo! {PLAYER}! Finally caught up?\p"
 	.string "Gotta say, not the worst selection of\n"
 	.string "Pokémon I've seen before.\p"
@@ -608,7 +608,7 @@ Battle02_ReddText_PreBattle::
 	.string "the test!?$"
 
 Battle02_ReddText_PreBattleAlt::
-# 480 "data/rival_text.pory"
+# 481 "data/rival_text.pory"
 	.string "Yo! {PLAYER}! Finally caught up?\p"
 	.string "Don't tell me that you're trying to\n"
 	.string "avoid me now.\p"
@@ -620,11 +620,11 @@ Battle02_ReddText_PreBattleAlt::
 	.string "the test!?$"
 
 Battle02_ReddText_BattleVictory::
-# 492 "data/rival_text.pory"
+# 493 "data/rival_text.pory"
 	.string "Woah, take it easy {PLAYER}…$"
 
 Battle02_ReddText_PostBattle::
-# 496 "data/rival_text.pory"
+# 497 "data/rival_text.pory"
 	.string "Sheesh, you didn't need to…\p"
 	.string "…\p"
 	.string "Hmm… What was that move you used?\n"
@@ -638,7 +638,7 @@ Battle02_ReddText_PostBattle::
 	.string "See ya around, {PLAYER}.$"
 
 Battle02_SakuraText_PreBattle::
-# 510 "data/rival_text.pory"
+# 511 "data/rival_text.pory"
 	.string "Hii-yah! Sakura Strike!\p"
 	.string "You think you can just waltz on through\n"
 	.string "the cave without difficulty?\p"
@@ -647,12 +647,12 @@ Battle02_SakuraText_PreBattle::
 	.string "vaporized!$"
 
 Battle02_SakuraText_BattleVictory::
-# 519 "data/rival_text.pory"
+# 520 "data/rival_text.pory"
 	.string "Darn, you've survived. So much for that\n"
 	.string "life insurance I took out…$"
 
 Battle02_SakuraText_PostBattle::
-# 523 "data/rival_text.pory"
+# 524 "data/rival_text.pory"
 	.string "Oh well{EMOJI_TILDE}\p"
 	.string "On one hand, it would be fun if you\n"
 	.string "were easy to beat, but…\p"
@@ -666,7 +666,7 @@ Battle02_SakuraText_PostBattle::
 	.string "lost in his eyes. And you're MY rival.$"
 
 Town04_BaronText::
-# 539 "data/rival_text.pory"
+# 540 "data/rival_text.pory"
 	.string "Oh, um, hi {PLAYER}.\p"
 	.string "Sorry, I'm just having a lot of trouble\n"
 	.string "talking to this Mr. Briney person.\p"
@@ -676,7 +676,7 @@ Town04_BaronText::
 	.string "Y- You go on ahead, okay?$"
 
 Town04_HarperText::
-# 549 "data/rival_text.pory"
+# 550 "data/rival_text.pory"
 	.string "It's actually not that bad in here.\p"
 	.string "One of the earlier trainers mentioned\n"
 	.string "that this cave was super dark before…\p"
@@ -686,7 +686,7 @@ Town04_HarperText::
 	.string "little bit for what we have now.$"
 
 Town04_JaksonText::
-# 559 "data/rival_text.pory"
+# 560 "data/rival_text.pory"
 	.string "{PLAYER}, how's it going?\p"
 	.string "It's been going pretty smoothly so far.\n"
 	.string "This mod, I mean.\p"
@@ -701,7 +701,7 @@ Town04_JaksonText::
 	.string "an update comes out…$"
 
 Town04_ReddText::
-# 574 "data/rival_text.pory"
+# 575 "data/rival_text.pory"
 	.string "An island town in the southwest\n"
 	.string "corner of the region…\p"
 	.string "Water routes connecting to it at the\n"
@@ -713,7 +713,7 @@ Town04_ReddText::
 	.string "cool right now… Hmmm…$"
 
 Town04_SakuraText::
-# 586 "data/rival_text.pory"
+# 587 "data/rival_text.pory"
 	.string "Hey, {PLAYER}{EMOJI_TILDE}\p"
 	.string "I'm still out here recruiting for my\n"
 	.string "team, of course.\p"
@@ -723,7 +723,7 @@ Town04_SakuraText::
 	.string "You must be this cute to proceed{EMOJI_TILDE}{UNK_SPACER}$"
 
 Town05_BaronText::
-# 598 "data/rival_text.pory"
+# 599 "data/rival_text.pory"
 	.string "Oh, hello there.\p"
 	.string "{EMOJI_BIGWHEEL}Bows politely{EMOJI_BIGWHEEL}\p"
 	.string "I wanted to thank you for your\n"
@@ -736,7 +736,7 @@ Town05_BaronText::
 	.string "you fall off one of them…$"
 
 Town05_HarperText::
-# 611 "data/rival_text.pory"
+# 612 "data/rival_text.pory"
 	.string "The beaches here are pretty nice,\n"
 	.string "I suppose.\p"
 	.string "Just overrun by all the mindless\n"
@@ -750,7 +750,7 @@ Town05_HarperText::
 	.string "didn't have any real people to talk to.$"
 
 Town05_JaksonText::
-# 625 "data/rival_text.pory"
+# 626 "data/rival_text.pory"
 	.string "Good to see you made it here,\n"
 	.string "{PLAYER}.\p"
 	.string "I've always liked Slateport City.\n"
@@ -763,7 +763,7 @@ Town05_JaksonText::
 	.string "Well, who knows other than me!$"
 
 Town05_ReddText::
-# 638 "data/rival_text.pory"
+# 639 "data/rival_text.pory"
 	.string "Hey, {PLAYER}…\p"
 	.string "Nothing wrong with me. Maybe a little\n"
 	.string "overwhelmed here and there…\p"
@@ -775,7 +775,7 @@ Town05_ReddText::
 	.string "if they made Vermillion more detailed.$"
 
 Town05_SakuraText::
-# 650 "data/rival_text.pory"
+# 651 "data/rival_text.pory"
 	.string "Howdy, {PLAYER}!\p"
 	.string "You run into that creepy guy back\n"
 	.string "in the city too?\p"
@@ -790,7 +790,7 @@ Town05_SakuraText::
 	.string "Jakson's will do.$"
 
 Town06_BaronText::
-# 667 "data/rival_text.pory"
+# 668 "data/rival_text.pory"
 	.string "Hi… {PLAYER}.\p"
 	.string "Is it just me or is there no way to\n"
 	.string "move these rocks?\p"
@@ -800,7 +800,7 @@ Town06_BaronText::
 	.string "there was something I missed.$"
 
 Town06_HarperText::
-# 677 "data/rival_text.pory"
+# 678 "data/rival_text.pory"
 	.string "Hey, is it just me or…\p"
 	.string "Or is this route just oddly straight?\p"
 	.string "Like a straight line you could just run\n"
@@ -808,7 +808,7 @@ Town06_HarperText::
 	.string "Was this intentional or something?$"
 
 Town06_JaksonText::
-# 685 "data/rival_text.pory"
+# 686 "data/rival_text.pory"
 	.string "You know, Wally is supposed to be\n"
 	.string "really weak, but what's the fun in that?\p"
 	.string "If there's a character who's supposed\n"
@@ -819,21 +819,21 @@ Town06_JaksonText::
 	.string "in the original. What a joke that is!$"
 
 Town06_ReddText1::
-# 694 "data/rival_text.pory"
+# 695 "data/rival_text.pory"
 	.string "This place does have a really unique\n"
 	.string "vibe to it.\p"
 	.string "Like imagine the power plant if they\n"
 	.string "expanded it to…$"
 
 Town06_ReddText2::
-# 701 "data/rival_text.pory"
+# 702 "data/rival_text.pory"
 	.string "Hm? What's that look? What, are you\n"
 	.string "worried about me or something?\p"
 	.string "Nothing to worry about this.\p"
 	.string "Just make sure you keep up{EMOJI_TILDE}{UNK_SPACER}$"
 
 Town06_SakuraText::
-# 708 "data/rival_text.pory"
+# 709 "data/rival_text.pory"
 	.string "{PLAYER}!\n"
 	.string "You made it!\p"
 	.string "Was a long walk to get here, but I'm\n"
@@ -845,7 +845,7 @@ Town06_SakuraText::
 	.string "make a picture with the dust clouds?$"
 
 Town07_BaronText::
-# 722 "data/rival_text.pory"
+# 723 "data/rival_text.pory"
 	.string "Are you having money troubles too,\n"
 	.string "{PLAYER}?\p"
 	.string "I pick up any items I see, but it\n"
@@ -860,7 +860,7 @@ Town07_BaronText::
 	.string "Hmm… Maybe I should ask Jakson?$"
 
 Town07_HarperText::
-# 737 "data/rival_text.pory"
+# 738 "data/rival_text.pory"
 	.string "This route is confusing the hell out of\n"
 	.string "me.\p"
 	.string "I was on Route 111, then I went in a\n"
@@ -873,7 +873,7 @@ Town07_HarperText::
 	.string "into my fist next time I see him.$"
 
 Town07_JaksonText::
-# 750 "data/rival_text.pory"
+# 751 "data/rival_text.pory"
 	.string "There you are, {PLAYER}.\p"
 	.string "I'm really looking forward to getting to\n"
 	.string "Route 113.\p"
@@ -886,7 +886,7 @@ Town07_JaksonText::
 	.string "Hoenn even today.$"
 
 Town07_ReddText::
-# 763 "data/rival_text.pory"
+# 764 "data/rival_text.pory"
 	.string "Yo!\p"
 	.string "Did you see that one Pokémon here?\n"
 	.string "It was on fire!\p"
@@ -902,7 +902,7 @@ Town07_ReddText::
 	.string "… {EMOJI_BIGWHEEL}Clears throat{EMOJI_BIGWHEEL}{UNK_SPACER}$"
 
 Town07_SakuraText::
-# 779 "data/rival_text.pory"
+# 780 "data/rival_text.pory"
 	.string "Oh, are you finally catching up,\n"
 	.string "{PLAYER}?\p"
 	.string "No?\p"
@@ -918,7 +918,7 @@ Town07_SakuraText::
 	.string "Heheh{EMOJI_TILDE}{UNK_SPACER}$"
 
 Town08_BaronText::
-# 797 "data/rival_text.pory"
+# 798 "data/rival_text.pory"
 	.string "Oh… {PLAYER}.\p"
 	.string "Wait, if you're here then did you\n"
 	.string "already beat the fourth gym?\p"
@@ -928,7 +928,7 @@ Town08_BaronText::
 	.string "the friend group to get left behind.$"
 
 Town08_HarperText::
-# 807 "data/rival_text.pory"
+# 808 "data/rival_text.pory"
 	.string "Huh.\p"
 	.string "Yeah, I don't feel anything in this hot\n"
 	.string "spring.\p"
@@ -938,7 +938,7 @@ Town08_HarperText::
 	.string "Hmph!$"
 
 Town08_JaksonText::
-# 817 "data/rival_text.pory"
+# 818 "data/rival_text.pory"
 	.string "Hey, {PLAYER}.\p"
 	.string "What's been your favorite route so far?\p"
 	.string "I think the cacti in the desert on\n"
@@ -953,7 +953,7 @@ Town08_JaksonText::
 	.string "Perfection.$"
 
 Town08_ReddText::
-# 832 "data/rival_text.pory"
+# 833 "data/rival_text.pory"
 	.string "Hey, did you finally get these\n"
 	.string "goggles?\p"
 	.string "It's cool how the sandstorm just\n"
@@ -965,7 +965,7 @@ Town08_ReddText::
 	.string "Might even be an Agumon to catch{EMOJI_TILDE}{UNK_SPACER}$"
 
 Town08_SakuraText::
-# 844 "data/rival_text.pory"
+# 845 "data/rival_text.pory"
 	.string "This is such a cute little town,\n"
 	.string "don't you think?\p"
 	.string "When we're done with this I think I'd\n"
@@ -978,7 +978,7 @@ Town08_SakuraText::
 	.string "It's the perfect plan!$"
 
 Battle03_BaronText_PreBattle::
-# 860 "data/rival_text.pory"
+# 861 "data/rival_text.pory"
 	.string "W- Wait, {PLAYER}!\p"
 	.string "If you're heading this way, then…\p"
 	.string "Gosh, are you already leaving for the\n"
@@ -995,12 +995,12 @@ Battle03_BaronText_PreBattle::
 	.string "fight… back…!$"
 
 Battle03_BaronText_BattleVictory::
-# 877 "data/rival_text.pory"
+# 878 "data/rival_text.pory"
 	.string "Ah… I don't know if that's going to be\n"
 	.string "enough…$"
 
 Battle03_BaronText_PostBattle::
-# 882 "data/rival_text.pory"
+# 883 "data/rival_text.pory"
 	.string "A- A rematch!\p"
 	.string "No… that's rude of me. This has all\n"
 	.string "been rude of me. I'm sorry…\p"
@@ -1016,7 +1016,7 @@ Battle03_BaronText_PostBattle::
 	.string "W- Wish me luck, please!$"
 
 Battle03_HarperText_PreBattle::
-# 898 "data/rival_text.pory"
+# 899 "data/rival_text.pory"
 	.string "Where am I?\p"
 	.string "…Petalburg? Am I supposed to be\n"
 	.string "here?\p"
@@ -1036,11 +1036,11 @@ Battle03_HarperText_PreBattle::
 	.string "Think of saying no and I'll bite you!$"
 
 Battle03_HarperText_BattleVictory::
-# 918 "data/rival_text.pory"
+# 919 "data/rival_text.pory"
 	.string "Hah… Okay, I think that's it.$"
 
 Battle03_HarperText_PostBattle::
-# 922 "data/rival_text.pory"
+# 923 "data/rival_text.pory"
 	.string "So one more loss on the books for\n"
 	.string "me, then?\p"
 	.string "That's fine. I've worked through my\n"
@@ -1054,7 +1054,7 @@ Battle03_HarperText_PostBattle::
 	.string "Alright, good luck {PLAYER}.$"
 
 Battle03_JaksonText_PreBattle::
-# 936 "data/rival_text.pory"
+# 937 "data/rival_text.pory"
 	.string "Hey, {PLAYER}.\p"
 	.string "I spy, with my little eye…\n"
 	.string "The Heat and Balance Badge?\p"
@@ -1064,12 +1064,12 @@ Battle03_JaksonText_PreBattle::
 	.string "Everything comes in threes!$"
 
 Battle03_JaksonText_BattleVictory::
-# 946 "data/rival_text.pory"
+# 947 "data/rival_text.pory"
 	.string "Well done, {PLAYER}.\n"
 	.string "You earned that one.$"
 
 Battle03_JaksonText_PostBattle::
-# 951 "data/rival_text.pory"
+# 952 "data/rival_text.pory"
 	.string "You're doing really well, I'd say.\p"
 	.string "Knowing Harper and Redd, I was\n"
 	.string "a bit quick to assume everyone\l"
@@ -1089,7 +1089,7 @@ Battle03_JaksonText_PostBattle::
 	.string "Bye!$"
 
 Battle03_ReddText_PreBattle::
-# 971 "data/rival_text.pory"
+# 972 "data/rival_text.pory"
 	.string "Hey, {PLAYER}!\n"
 	.string "What brings you here?\p"
 	.string "The story?\n"
@@ -1104,11 +1104,11 @@ Battle03_ReddText_PreBattle::
 	.string "Let's go, pal!$"
 
 Battle03_ReddText_BattleVictory::
-# 986 "data/rival_text.pory"
+# 987 "data/rival_text.pory"
 	.string "I can't be going easy on you now, can I?$"
 
 Battle03_ReddText_PostBattle::
-# 990 "data/rival_text.pory"
+# 991 "data/rival_text.pory"
 	.string "I hate to admit it, but you're really good.\p"
 	.string "But, I'm not gonna hold back either,\n"
 	.string "no matter the challenge.\p"
@@ -1125,7 +1125,7 @@ Battle03_ReddText_PostBattle::
 	.string "See ya!$"
 
 Battle03_SakuraText_PreBattle::
-# 1007 "data/rival_text.pory"
+# 1008 "data/rival_text.pory"
 	.string "Wa-cha!\p"
 	.string "Flannery has already fallen to me!\p"
 	.string "And via it, I have acquired ALL of\n"
@@ -1136,12 +1136,12 @@ Battle03_SakuraText_PreBattle::
 	.string "might!$"
 
 Battle03_SakuraText_BattleVictory::
-# 1018 "data/rival_text.pory"
+# 1019 "data/rival_text.pory"
 	.string "Put me down like a dog…\n"
 	.string "How dare you.$"
 
 Battle03_SakuraText_PostBattle::
-# 1023 "data/rival_text.pory"
+# 1024 "data/rival_text.pory"
 	.string "Well, fine.\p"
 	.string "I didn't really have the entire supply\n"
 	.string "of gym badges anyways.\p"
@@ -1155,7 +1155,7 @@ Battle03_SakuraText_PostBattle::
 	.string "Good luck!$"
 
 Town09_BaronText::
-# 1039 "data/rival_text.pory"
+# 1040 "data/rival_text.pory"
 	.string "So… {PLAYER}, one of the others told\n"
 	.string "me that I need to… ‘surf’.\p"
 	.string "Like, the water? In it? On it?\p"
@@ -1167,7 +1167,7 @@ Town09_BaronText::
 	.string "Oh… it's that simple?$"
 
 Town09_HarperText::
-# 1051 "data/rival_text.pory"
+# 1052 "data/rival_text.pory"
 	.string "Wow.\p"
 	.string "You know, I've made tons of comments\n"
 	.string "about how NPC everyone acts.\p"
@@ -1181,7 +1181,7 @@ Town09_HarperText::
 	.string "Scary.$"
 
 Town09_JaksonText::
-# 1065 "data/rival_text.pory"
+# 1066 "data/rival_text.pory"
 	.string "Hey there.\p"
 	.string "Are you about to go for Fortree's Gym?\p"
 	.string "The type changes for the gyms are\n"
@@ -1193,7 +1193,7 @@ Town09_JaksonText::
 	.string "challenge after taking us all out, haha.$"
 
 Town09_ReddText::
-# 1077 "data/rival_text.pory"
+# 1078 "data/rival_text.pory"
 	.string "This Route sure is crazy, isn't it?\p"
 	.string "All the winding turns, zigzags, and\n"
 	.string "so few straight paths.\p"
@@ -1209,7 +1209,7 @@ Town09_ReddText::
 	.string "place… if I'm in the mood for it.$"
 
 Town09_SakuraText::
-# 1093 "data/rival_text.pory"
+# 1094 "data/rival_text.pory"
 	.string "{PLAYER}!\p"
 	.string "Have you seen any Feebas around?\p"
 	.string "It's imperative as a cuteness fanatic.\n"
@@ -1224,7 +1224,7 @@ Town09_SakuraText::
 	.string "the black market, right?$"
 
 Town10_BaronText::
-# 1110 "data/rival_text.pory"
+# 1111 "data/rival_text.pory"
 	.string "Finally… some sunshine…\p"
 	.string "Did you have trouble in that rain,\n"
 	.string "{PLAYER}?\p"
@@ -1237,7 +1237,7 @@ Town10_BaronText::
 	.string "Not ground? Imagine all the mud…$"
 
 Town10_HarperText::
-# 1123 "data/rival_text.pory"
+# 1124 "data/rival_text.pory"
 	.string "Hey, {PLAYER}.\p"
 	.string "Did you just see Jakson…\n"
 	.string "Or maybe Baron?\p"
@@ -1250,7 +1250,7 @@ Town10_HarperText::
 	.string "Must be…$"
 
 Town10_JaksonText::
-# 1136 "data/rival_text.pory"
+# 1137 "data/rival_text.pory"
 	.string "Oh, hey, {PLAYER}.\p"
 	.string "You heading to Lilycove before\n"
 	.string "tackling Mt. Pyre?\p"
@@ -1266,7 +1266,7 @@ Town10_JaksonText::
 	.string "plenty of time to hang out at the mall.$"
 
 Town10_ReddText::
-# 1152 "data/rival_text.pory"
+# 1153 "data/rival_text.pory"
 	.string "That last gym was a rough one…\p"
 	.string "Jakson said those teams weren't\n"
 	.string "the original ones, right?\p"
@@ -1281,7 +1281,7 @@ Town10_ReddText::
 	.string "off-guard!$"
 
 Town10_SakuraText::
-# 1167 "data/rival_text.pory"
+# 1168 "data/rival_text.pory"
 	.string "There's something off about this big\n"
 	.string "old rock here.\p"
 	.string "Don't worry, {PLAYER}.\n"
@@ -1292,7 +1292,7 @@ Town10_SakuraText::
 	.string "I've got thighs of ‘steel’, after all.$"
 
 Town11_BaronText::
-# 1180 "data/rival_text.pory"
+# 1181 "data/rival_text.pory"
 	.string "… … …\p"
 	.string "… Oh, {PLAYER}. I didn't see you there.\p"
 	.string "I've been working on this puzzle for\n"
@@ -1309,7 +1309,7 @@ Town11_BaronText::
 	.string "but give it a try yourself.$"
 
 Town11_HarperText::
-# 1196 "data/rival_text.pory"
+# 1197 "data/rival_text.pory"
 	.string "Oh my fucking goodness…\p"
 	.string "WHOSE IDEA WAS IT TO SIMULATE\n"
 	.string "THE ACTUAL HEAT OF THIS PLACE?!\p"
@@ -1323,7 +1323,7 @@ Town11_HarperText::
 	.string "Yeah, better check.$"
 
 Town11_JaksonText::
-# 1210 "data/rival_text.pory"
+# 1211 "data/rival_text.pory"
 	.string "Good to see you pulling through,\n"
 	.string "{PLAYER}.\p"
 	.string "I hope Maxie wasn't too much of a\n"
@@ -1343,7 +1343,7 @@ Town11_JaksonText::
 	.string "forget about too.$"
 
 Town11_ReddText::
-# 1230 "data/rival_text.pory"
+# 1231 "data/rival_text.pory"
 	.string "You know, there hasn't been a single\n"
 	.string "dark cave yet.\p"
 	.string "There were some in Gen 1 and…\p"
@@ -1359,7 +1359,7 @@ Town11_ReddText::
 	.string "let live, I guess?$"
 
 Town11_SakuraText::
-# 1246 "data/rival_text.pory"
+# 1247 "data/rival_text.pory"
 	.string "Heheh{EMOJI_TILDE}\p"
 	.string "I've got my Master Ball, now.\p"
 	.string "Any shiny cutie that crosses my path\n"
@@ -1373,67 +1373,217 @@ Town11_SakuraText::
 	.string "cute Pokémon, not you, {PLAYER}{EMOJI_TILDE}{UNK_SPACER}$"
 
 Battle04_BaronText_PreBattle::
-# 1263 "data/rival_text.pory"
-	.string "$"
+# 1264 "data/rival_text.pory"
+	.string "Ah, {PLAYER}! It's a pleasure to see\n"
+	.string "you again.\p"
+	.string "{EMOJI_BIGWHEEL}Does a slight bow.{EMOJI_BIGWHEEL}\p"
+	.string "Where are you now? In this story,\n"
+	.string "I mean.\p"
+	.string "…Ah. Does that mean…\n"
+	.string "I've caught up?\p"
+	.string "Those routes were really long and it\n"
+	.string "gave me a lot of time to practice, train\l"
+	.string "and strategize.\p"
+	.string "… … …\p"
+	.string "You'll be kind enough to let me know if\n"
+	.string "I've improved, right?$"
 
 Battle04_BaronText_BattleVictory::
-# 1267 "data/rival_text.pory"
-	.string "$"
+# 1280 "data/rival_text.pory"
+	.string "Ah…! I was close, I feel. If I just…$"
 
 Battle04_BaronText_PostBattle::
-# 1271 "data/rival_text.pory"
-	.string "$"
+# 1284 "data/rival_text.pory"
+	.string "No, no excuses. I came into this\n"
+	.string "expecting to lose. No surprises here.\p"
+	.string "But I have improved, right?\p"
+	.string "If I just keep going like this I'll be\n"
+	.string "able to stay closely behind you all.\p"
+	.string "Thank you for your help.\p"
+	.string "You've been nothing but helpful.\n"
+	.string "You really are a great friend.\p"
+	.string "I appreciate you being there for\n"
+	.string "h- …for the whole group here.\p"
+	.string "I'll see you soon, okay?$"
 
 Battle04_HarperText_PreBattle::
-# 1275 "data/rival_text.pory"
-	.string "$"
+# 1298 "data/rival_text.pory"
+	.string "Yo, {PLAYER}.\p"
+	.string "Heading in to take on this gym, too?\n"
+	.string "I'm giving it a 2nd try myself.\p"
+	.string "Maybe… I think some moves let me\n"
+	.string "move first. I could try that?\p"
+	.string "Ugh…Maybe not though. I could just\n"
+	.string "go get a few more levels first.\p"
+	.string "Which… Hmm…\p"
+	.string "Hey, {PLAYER}. You got those good\n"
+	.string "Pokemans, yeah?\p"
+	.string "Give me a few levels.\n"
+	.string "Don't resist.$"
 
 Battle04_HarperText_BattleVictory::
-# 1279 "data/rival_text.pory"
-	.string "$"
+# 1313 "data/rival_text.pory"
+	.string "Shoot, that wasn't nearly enough.$"
 
 Battle04_HarperText_PostBattle::
-# 1283 "data/rival_text.pory"
-	.string "$"
+# 1317 "data/rival_text.pory"
+	.string "Why do you have to be so good at\n"
+	.string "this, {PLAYER}?\p"
+	.string "Oh well, if only I  used that one\n"
+	.string "move instead of the other… That\l"
+	.string "could've turned the tide, maybe.\p"
+	.string "If I got another one of those Choice\n"
+	.string "items, it'd have been enough to take\l"
+	.string "out your guy, though.\p"
+	.string "It's like a multiplier thing.\n"
+	.string "Or am I forgetting how that works?\p"
+	.string "Argh! I'm just gonna go shake down\n"
+	.string "Jakson for a few more exp.\p"
+	.string "Go on ahead. You've definitely got\n"
+	.string "this one, {PLAYER}.$"
 
 Battle04_JaksonText_PreBattle::
-# 1287 "data/rival_text.pory"
-	.string "$"
+# 1334 "data/rival_text.pory"
+	.string "Hey, {PLAYER}.\p"
+	.string "So I assume you just wrapped up the\n"
+	.string "weather trio arc?\p"
+	.string "Can't imagine you expected to get\n"
+	.string "Rayquaza of all partners for that one.\p"
+	.string "Now that one took quite a few nights\n"
+	.string "to get right. Yup that one's fully\l"
+	.string "custom by yours truly, haha.\p"
+	.string "“Now all that's left is the falling\n"
+	.string "action.” I assume that's what you're\l"
+	.string "thinking right around now.\p"
+	.string "I won't say I'm fully out of surprises.\n"
+	.string "There may ve a few more arcs to hit\l"
+	.string "their peak, even still.\p"
+	.string "For example… {EMOJI_BIGWHEEL}Clears throat{EMOJI_BIGWHEEL}\p"
+	.string "You don't think you'll get past\n"
+	.string "here so easily, do you?$"
 
 Battle04_JaksonText_BattleVictory::
-# 1291 "data/rival_text.pory"
-	.string "$"
+# 1354 "data/rival_text.pory"
+	.string "Truly, was this the peak, or…$"
 
 Battle04_JaksonText_PostBattle::
-# 1295 "data/rival_text.pory"
-	.string "$"
+# 1358 "data/rival_text.pory"
+	.string "Well done, {PLAYER}.\n"
+	.string "Haha, a very good job even.\p"
+	.string "Every time we square up it feels like\n"
+	.string "I'm hitting a wall. You manage to both\l"
+	.string "surprise and be predictable.\p"
+	.string "What can I say? It's fun seeing how\n"
+	.string "you manage to counter whatever\l"
+	.string "new team I throw your way.\p"
+	.string "Makes me want to try harder.\n"
+	.string "To make sure I stay ahead enough\l"
+	.string "to be a good guide to you all.\p"
+	.string "Though, I'm not sure you were ever\n"
+	.string "the one that I needed to worry about\l"
+	.string "on that.\p"
+	.string "Some of the others… yeah.\p"
+	.string "But everyone's doing well now!\p"
+	.string "It's a bit like watching your kids grow\n"
+	.string "up.\p"
+	.string "Or at least, that's what I imagine, haha.\p"
+	.string "Take care, {PLAYER}!$"
 
 Battle04_ReddText_PreBattle::
-# 1299 "data/rival_text.pory"
-	.string "$"
+# 1381 "data/rival_text.pory"
+	.string "What are ya, {PLAYER}. A Slowpoke?\p"
+	.string "When I saw you head into the gym,\n"
+	.string "I figured that you hanging around here\l"
+	.string "would lead you right to me!\p"
+	.string "I knew reading a guide on the game's\n"
+	.string "progression would come in handy.\p"
+	.string "But you did take while.\p"
+	.string "Did that Magma grunts downstairs hold\n"
+	.string "you up?\p"
+	.string "Well, I hope you haven't been falling\n"
+	.string "behind already. All that work I've been\l"
+	.string "doing to refine my team needs a test.\p"
+	.string "I guess there's no time like the\n"
+	.string "present. Let me check if you're up\l"
+	.string "to snuff!$"
 
 Battle04_ReddText_BattleVictory::
-# 1303 "data/rival_text.pory"
-	.string "$"
+# 1399 "data/rival_text.pory"
+	.string "Agh! But my Aerodactyl had priority…$"
 
-Battle04_ReddText_PostBattle::
-# 1307 "data/rival_text.pory"
-	.string "$"
+Battle04_ReddText_PostBattle1::
+# 1403 "data/rival_text.pory"
+	.string "That thing was a powerhouse… Mmm…\p"
+	.string "Damn, then. Good work, {PLAYER}.\n"
+	.string "I picked a good rival to push me.\p"
+	.string "I've really started to fall back to\n"
+	.string "my most trusted skill from when I\l"
+	.string "played Gen 1 as a kid…\p"
+	.string "Catching them all. It's a ‘research’\n"
+	.string "mission we're on, after all. Might as\l"
+	.string "well make use of it myself.\p$"
+
+Battle04_ReddText_PostBattle2a::
+# 1415 "data/rival_text.pory"
+	.string "So don't be surprised if I win next\n"
+	.string "time, now that I've seen your team.\l"
+	.string "I'll have the research advantage!$"
+
+Battle04_ReddText_PostBattle2b::
+# 1421 "data/rival_text.pory"
+	.string "We're… not so far off in terms of\n"
+	.string "our research… But! But I've seen\n"
+	.string "your team now. So be prepared.$"
+
+Battle04_ReddText_PostBattle3::
+# 1427 "data/rival_text.pory"
+	.string "I better get going. See you at the\n"
+	.string "Pokémon League for our final showdown!$"
 
 Battle04_SakuraText_PreBattle::
-# 1311 "data/rival_text.pory"
-	.string "$"
+# 1432 "data/rival_text.pory"
+	.string "Stop right there, criminal scum!\n"
+	.string "You violated the law.\p"
+	.string "Break the law on my watch, hm?\n"
+	.string "Your spree is at an end.\p"
+	.string "I'll be confiscating your stolen\n"
+	.string "goods.\p"
+	.string "Oh, and no gold to pay your fine, hm?\p"
+	.string "Very well, scum.\p"
+	.string "Steel thyself, strength previously\n"
+	.string "unknown to mankind is about to be\l"
+	.string "unleashed upon ye!$"
 
 Battle04_SakuraText_BattleVictory::
-# 1315 "data/rival_text.pory"
-	.string "$"
+# 1446 "data/rival_text.pory"
+	.string "Ah, be still my heart!\n"
+	.string "The battle has ended!$"
 
 Battle04_SakuraText_PostBattle::
-# 1319 "data/rival_text.pory"
-	.string "$"
+# 1451 "data/rival_text.pory"
+	.string "Good, {PLAYER}! Very good!\n"
+	.string "A worthy battle for our age.\p"
+	.string "Now, we shall drink, and be merry!\n"
+	.string "Off to the halls of Valhalla with us!\p"
+	.string "…There's no way Jakson actually\n"
+	.string "modded in alcohol into this, yeah?\p"
+	.string "Eh, it's fine. I sort of went from the\n"
+	.string "oblivion to the snow tipped rims of\l"
+	.string "the sky in that one.\p"
+	.string "More importantly! Did you like my\n"
+	.string "disguise? I spent a while making it.\p"
+	.string "Not one of the others saw through\n"
+	.string "it when they passed by, even.\p"
+	.string "It took Baron a few attempts to beat\n"
+	.string "me, hehe{EMOJI_TILDE}\p"
+	.string "But anyway, go on ahead. The world is\n"
+	.string "waiting for you to save it!\p"
+	.string "Alternatively… Valhalla is still on\n"
+	.string "the table, maybe?\p"
+	.string "…Nah, go beat their butts.$"
 
 Town12_BaronText::
-# 1325 "data/rival_text.pory"
+# 1476 "data/rival_text.pory"
 	.string "Hi, {PLAYER}.\p"
 	.string "I'm just doing my shopping before\n"
 	.string "heading out.\p"
@@ -1455,7 +1605,7 @@ Town12_BaronText::
 	.string "Well, I'll see you out there!$"
 
 Town12_HarperTextQ::
-# 1347 "data/rival_text.pory"
+# 1498 "data/rival_text.pory"
 	.string "The old guy in the cave said he could\n"
 	.string "make me a ‘Shell Bell’ if I gathered\l"
 	.string "a bunch of materials for him.\p"
@@ -1463,7 +1613,7 @@ Town12_HarperTextQ::
 	.string "{PLAYER}?$"
 
 Town12_HarperTextYes::
-# 1354 "data/rival_text.pory"
+# 1505 "data/rival_text.pory"
 	.string "Huh, well if you think it's any good\n"
 	.string "I might spend some time trying.\p"
 	.string "But I swear, if it turns out to be like…\n"
@@ -1472,13 +1622,13 @@ Town12_HarperTextYes::
 	.string "You and Jakson can draw lots.$"
 
 Town12_HarperTextNo::
-# 1363 "data/rival_text.pory"
+# 1514 "data/rival_text.pory"
 	.string "Oh? So the old man just exists to\n"
 	.string "waste a bunch of your time?\p"
 	.string "Figures…$"
 
 Town12_JaksonText::
-# 1369 "data/rival_text.pory"
+# 1520 "data/rival_text.pory"
 	.string "Hey, {PLAYER}.\p"
 	.string "I always loved the concept of the\n"
 	.string "space center as a kid.\p"
@@ -1493,7 +1643,7 @@ Town12_JaksonText::
 	.string "mod wise.$"
 
 Town12_ReddText::
-# 1384 "data/rival_text.pory"
+# 1535 "data/rival_text.pory"
 	.string "Wait, this is where that whole\n"
 	.string "‘Too much water’ thing kicks in,\l"
 	.string "isn't it?\p"
@@ -1506,7 +1656,7 @@ Town12_ReddText::
 	.string "It's not too late to switch games!$"
 
 Town12_SakuraText::
-# 1397 "data/rival_text.pory"
+# 1548 "data/rival_text.pory"
 	.string "{PLAYER}!\p"
 	.string "You and I have had like a whole\n"
 	.string "twin thing going on since we started\l"
@@ -1522,7 +1672,7 @@ Town12_SakuraText::
 	.string "{PLAYER}!$"
 
 Town13_BaronText::
-# 1415 "data/rival_text.pory"
+# 1566 "data/rival_text.pory"
 	.string "Ah!\p"
 	.string "Oh, you scared me, {PLAYER}.\p"
 	.string "I was traveling and the very first time\n"
@@ -1537,7 +1687,7 @@ Town13_BaronText::
 	.string "my heart rate under control.$"
 
 Town13_HarperText::
-# 1430 "data/rival_text.pory"
+# 1581 "data/rival_text.pory"
 	.string "Wow, this route is absolutely massive.\p"
 	.string "I've come from the north, and I saw\n"
 	.string "that big white rock out west…\p"
@@ -1553,7 +1703,7 @@ Town13_HarperText::
 	.string "Wish me luck, {PLAYER}.$"
 
 Town13_JaksonText::
-# 1446 "data/rival_text.pory"
+# 1597 "data/rival_text.pory"
 	.string "If it isn't {PLAYER}? There are less\n"
 	.string "fun places to meet up, at least.\p"
 	.string "They really upped their A-game when\n"
@@ -1565,12 +1715,12 @@ Town13_JaksonText::
 	.string "Pokémon for you. Here.$"
 
 Town13_JaksonTextAfter::
-# 1457 "data/rival_text.pory"
+# 1608 "data/rival_text.pory"
 	.string "Alright, good luck out there.\n"
 	.string "Return here if you need to rest again.$"
 
 Town13_ReddText::
-# 1462 "data/rival_text.pory"
+# 1613 "data/rival_text.pory"
 	.string "Huh, this ring of shallow water\n"
 	.string "sure looks suspicious, doesn't it?\p"
 	.string "The center looks almost like a\n"
@@ -1584,7 +1734,7 @@ Town13_ReddText::
 	.string "marks the spot?$"
 
 Town13_SakuraText::
-# 1476 "data/rival_text.pory"
+# 1627 "data/rival_text.pory"
 	.string "Ah! You caught me, {PLAYER}{EMOJI_TILDE}\p"
 	.string "The schoolyard rumors tell of a fun\n"
 	.string "lil something being on Mirage Island.\p"
@@ -1594,3 +1744,639 @@ Town13_SakuraText::
 	.string "Were you able to find it yet?\p"
 	.string "Heheh. If you haven't, I'm keeping\n"
 	.string "that secret to myself{EMOJI_TILDE}{UNK_SPACER}$"
+
+Town14_BaronText::
+# 1641 "data/rival_text.pory"
+	.string "Ah! {PLAYER}!\p"
+	.string "H- Hey… You wouldn't happen to have\n"
+	.string "any useful advice for this…?\p"
+	.string "I dropped down from the ceiling through\n"
+	.string "one of those cracked floors, but\l"
+	.string "somehow I landed on this rock wall!\p"
+	.string "I've been trying to get out for a while\n"
+	.string "and… oh no… that center pit sure looks\l"
+	.string "unstable.\p"
+	.string "… … …\n"
+	.string "No luck?\p"
+	.string "I'll… I'll keep wiggling around more, and\n"
+	.string "hopefully I can get myself free.\p"
+	.string "Just try not to do the same thing,\n"
+	.string "{PLAYER}.$"
+
+Town14_HarperText::
+# 1659 "data/rival_text.pory"
+	.string "Woah…\p"
+	.string "Watching all that from here…\n"
+	.string "Wow, that was some crazy stuff.\p"
+	.string "For everything else that has happened\n"
+	.string "in this game, that one managed to really\l"
+	.string "be impressive and exciting.\p"
+	.string "We all need to do that? If I stick\n"
+	.string "around will I see it more times?\p"
+	.string "I wonder if it's because of this\n"
+	.string "system that it looks good, or if it\l"
+	.string "looked cool when it first came out?\p"
+	.string "You played this when you were young,\n"
+	.string "right, {PLAYER}?\p"
+	.string "W're all younger that this game, so did\n"
+	.string "it hold up when you first tried it?$"
+
+Town14_JaksonText::
+# 1677 "data/rival_text.pory"
+	.string "Even with all the chaos going on, isn't\n"
+	.string "Pacifidlog peaceful, {PLAYER}?\p"
+	.string "The log bridges and unique buildings\n"
+	.string "are such a nice touch to the\l"
+	.string "atmosphere.\p"
+	.string "All without the downside of a constant\n"
+	.string "fear of it sinking in the dephs, like\l"
+	.string "you'd have for a place like this IRL.\p"
+	.string "It's a shame that the town is sort of\n"
+	.string "forgettable overall.\p"
+	.string "It's easy to just pass over this place\n"
+	.string "when playing the game.\p"
+	.string "But that'd be a shame. It's nice to\n"
+	.string "spend a few minutes here.\p"
+	.string "When you're feeling refreshed, get back\n"
+	.string "to saving Hoenn!$"
+
+Town14_ReddText::
+# 1696 "data/rival_text.pory"
+	.string "Yo, {PLAYER}.\p"
+	.string "You doing okay? No headaches?\p"
+	.string "Two giant monsters causing chaos\n"
+	.string "with the weather…\p"
+	.string "I've been trying to search for Pokémon\n"
+	.string "for my team, but the weather effects\l"
+	.string "are making that sort of hard at times.\p"
+	.string "Maybe I should just get this part\n"
+	.string "of the game over with right away…?\p"
+	.string "Argh… But Jakson said what I was\n"
+	.string "looking for was over here and…\p"
+	.string "He wouldn't… lie? Would he?$"
+
+Town14_SakuraText::
+# 1711 "data/rival_text.pory"
+	.string "Ah…\n"
+	.string "It's a real shame you can't catch this\l"
+	.string "guy yet.\p"
+	.string "I'd love to ride into battle on him.\p"
+	.string "Add a nice bow over at a Pokémon\n"
+	.string "contest and he'd be a frontrunner\l"
+	.string "in the cool and cute contests.\p"
+	.string "I mean, that's not the only reason I'd\n"
+	.string "like to have him.\p"
+	.string "Dominion over the skies is often\n"
+	.string "vital step in any quest for world\l"
+	.string "domination, after all.$"
+
+Town15_BaronText::
+# 1728 "data/rival_text.pory"
+	.string "O- Oh, you scared me, {PLAYER}.\p"
+	.string "Have you completed any of the levels of\n"
+	.string "this Trick House yet?\p"
+	.string "I've done a few. The early ones took me\n"
+	.string "a long time, especially the trivia one,\l"
+	.string "but I'm getting better.\p"
+	.string "The rewards are… well, they're no\n"
+	.string "potions, but anything with a dollar\l"
+	.string "value helps with that.\p"
+	.string "Those bigger potions sure are\n"
+	.string "expensive…$"
+
+Town15_HarperText::
+# 1742 "data/rival_text.pory"
+	.string "Hi, {PLAYER}.\p"
+	.string "I'm just taking a break here.\p"
+	.string "You know, I didn't know if I'd finish\n"
+	.string "this when we started. Getting this\l"
+	.string "far is… yeah. Not bad, right?\p"
+	.string "Not that I wouldn't prefer something\n"
+	.string "a notch more modern, but it ain't half\l"
+	.string "bad.\p"
+	.string "Now, we're all close to the end.\p"
+	.string "For the last location to be this flower\n"
+	.string "place… it's actually sort of nice.\l"
+	.string "Very relaxing.\p"
+	.string "Oh, I know about the cave up there.\n"
+	.string "I already peeked in.\p"
+	.string "That's why I had to come out here and\n"
+	.string "relax.$"
+
+Town15_JaksonText::
+# 1761 "data/rival_text.pory"
+	.string "It's the final stretch now.\p"
+	.string "I've made a bunch of changes to the\n"
+	.string "game, and I hope you've enjoyed them.\p"
+	.string "But there's one thing I've been\n"
+	.string "thinking for a little bit.\p"
+	.string "Maybe I should have made Victory Road\n"
+	.string "twice as long?\p"
+	.string "Maybe made some hybrid HM puzzles?\n"
+	.string "Waterfall and Strength needed. Or like\l"
+	.string "needing Rock Smash after Diving.\p"
+	.string "What do you think?$"
+
+Town15_ReddText::
+# 1775 "data/rival_text.pory"
+	.string "Ah… Victory Road!\p"
+	.string "The hellish gauntlet to test your\n"
+	.string "resilience entering the final\l"
+	.string "stretch of the game…\p"
+	.string "I've been training on Kanto Victory\n"
+	.string "Road all my life.\p"
+	.string "This will be nothing to me!\p"
+	.string "…is what I'd like to say.\p"
+	.string "I… may be getting distracted with\n"
+	.string "the new encounter table here.\p"
+	.string "They're endgame Pokémon! They've\n"
+	.string "gotta be the best of the best.$"
+
+Town15_SakuraText::
+# 1790 "data/rival_text.pory"
+	.string "Come on, {PLAYER}, don't give up yet!\p"
+	.string "…What, you think I'm gonna unleash a\n"
+	.string "surprise attack on you now?\p"
+	.string "I'm not that cruel, {PLAYER} come now.\p"
+	.string "That's Wally's job, after all! You don't\n"
+	.string "need me!$"
+
+Town16_BaronText::
+# 1801 "data/rival_text.pory"
+	.string "{PLAYER}, you're here.\p"
+	.string "I'm just trying to finalize my\n"
+	.string "preparations for the battles.\p"
+	.string "I know that I've become more competent\n"
+	.string "in the gameplay for this, but… I'm\l"
+	.string "still inclined to stock up on potions.\p"
+	.string "Jakson was kind enough to let me\n"
+	.string "take out a loan for the prep, too.\p"
+	.string "The limit is 999… 20HP per potion\n"
+	.string "means… Hmm…\p"
+	.string "I'm thinking that should be enough to\n"
+	.string "get me through the Elite Four.\p"
+	.string "It's sort of like doing math when\n"
+	.string "buying groceries, to be honest, haha.\p"
+	.string "… … …\n"
+	.string "Huh…?\p"
+	.string "Pokévial…?\p"
+	.string "What's that?$"
+
+Town16_HarperText::
+# 1822 "data/rival_text.pory"
+	.string "Heyo. We're all here now, then.\p"
+	.string "Good to see you get through alright.\n"
+	.string "I managed… with some directions from\l"
+	.string "Sakura… but I am here now.\p"
+	.string "I'm sort of surprised they made that\n"
+	.string "thinking kids would get through.\p"
+	.string "Maybe they just used to make things\n"
+	.string "expecting players to run their head\l"
+	.string "into the wall until something worked?\p"
+	.string "Oh, right. You played this as a kid.\n"
+	.string "No slight meant towards you. You seem\l"
+	.string "like you were the patient sort of kid?\p"
+	.string "… … …\p"
+	.string "Have I gotten less patient… or do I\n"
+	.string "just know what I like better…?\p"
+	.string "Ah, screw it. We've got a job to finish\n"
+	.string "here. Let's both clean up.$"
+
+Town16_JaksonText::
+# 1842 "data/rival_text.pory"
+	.string "Hey, {PLAYER}.\p"
+	.string "You're doing your last preparations\n"
+	.string "now, right?\p"
+	.string "There's the reminder and a move tutor\n"
+	.string "over there.\p"
+	.string "Oh, and don't forget to stock up on\n"
+	.string "potions, too.\p"
+	.string "They shouldn't run out, unless Baron\n"
+	.string "manages to break the game over there.\p"
+	.string "I don't think there's a way to overflow\n"
+	.string "the money value…?\p"
+	.string "Nah, it should be fine.\p"
+	.string "It's not a small challenge, so be ready\n"
+	.string "to be at your best!$"
+
+Town16_ReddText::
+# 1859 "data/rival_text.pory"
+	.string "{PLAYER}, there you are.\p"
+	.string "Me and the others were comparing\n"
+	.string "teams.\p"
+	.string "Even had a couple practice battles\n"
+	.string "to get a feel for all that, too.\p"
+	.string "Jakson has a strategy for sure, even\n"
+	.string "if I'm not entirely sure what it is.\p"
+	.string "Baron is… well, more like what I\n"
+	.string "expected of him when this all started.\l"
+	.string "Quite good, despite the slow start.\p"
+	.string "For Harper, it seems good. I think\n"
+	.string "she finally ditched the Furret.\l"
+	.string "I know she likes it, but… a Furret…\p"
+	.string "And Sakure's is… well…\p"
+	.string "Sorry, I'm still trying to come to terms\n"
+	.string "with what a ‘Ceruledge’ is.\p"
+	.string "I've been to each corner of this\n"
+	.string "region now and some of them are just\l"
+	.string "hard to wrap my head around.\p"
+	.string "And that's WITH just the first\n"
+	.string "nine gens in play…\p"
+	.string "Well, unless Jakson throws some crazy\n"
+	.string "custom thing at us, I think we're all\l"
+	.string "ready for the Elite Four.$"
+
+Town16_SakuraText::
+# 1886 "data/rival_text.pory"
+	.string "{PLAYER}!\p"
+	.string "I've got a devious plan for beating the\n"
+	.string "Elite Four.\p"
+	.string "I'll be doing them in reverse order!\p"
+	.string "You know those hallways between the\n"
+	.string "rooms?\p"
+	.string "You just need to use surf over that\n"
+	.string "void, then dive down and swim your\l"
+	.string "way to the end.\p"
+	.string "Just make sure not to save while you're\n"
+	.string "underwater there! You mgith surface in\l"
+	.string "the Mystery Zone if you do.\p"
+	.string "Heheh{EMOJI_TILDE}\p"
+	.string "Cuteness Inspector Sakura has all\n"
+	.string "the secrets fingered.$"
+
+Battle05_BaronText_PreBattle::
+# 1906 "data/rival_text.pory"
+	.string "{PLAYER}. It appears I arrived here\n"
+	.string "before you did.$"
+
+Battle05_BaronText_PreBattle2::
+# 1911 "data/rival_text.pory"
+	.string "… … …\p"
+	.string "It seems like we're reaching the end.\p"
+	.string "You'll be headed into the final\n"
+	.string "gauntlet soon, I imagine.\p"
+	.string "Before you go… I… I need to…\p"
+	.string "… … …\p"
+	.string "Well, how about this. If you beat me\n"
+	.string "here, then we'll talk.\p"
+	.string "After all, if I can beat you, maybe it\n"
+	.string "isn't even needed.\p"
+	.string "So… Shall we have one last practice\n"
+	.string "round? A dance to a finale.$"
+
+Battle05_BaronText_BattleVictory::
+# 1926 "data/rival_text.pory"
+	.string "So close…! No…No. I'm happy about\n"
+	.string "this. This is what I wanted, in the end.$"
+
+Battle05_BaronText_PostBattle::
+# 1931 "data/rival_text.pory"
+	.string "{PLAYER}, you are very skilled at this\n"
+	.string "game. It helped me realize what I\l"
+	.string "could be when playing it…\p"
+	.string "Playing it for… my son.$"
+
+Battle05_BaronText_PostBattle2::
+# 1938 "data/rival_text.pory"
+	.string "I hope it hasn't been too obvious,\n"
+	.string "but Baron wasn't able to join.\p"
+	.string "He came down with a sickness that\n"
+	.string "has left him bedridden this week.\p"
+	.string "Oh, don't worry! I've been taking good\n"
+	.string "care of my son. We went to the doctor\l"
+	.string "early on and he just needs bedrest.\p"
+	.string "He was just… so excited to play with\n"
+	.string "you all. I was hoping I could hand the\l"
+	.string "game back to him when he got better.\p"
+	.string "I'm sorry I didn't tell you sooner.\p"
+	.string "But that was something I'll cherish\n"
+	.string "myself. I'm so happy that my Baron\l"
+	.string "has such kind friends. To see it myself.\p"
+	.string "I'll be sure to give him the account\n"
+	.string "back when he does recover, of course.\l"
+	.string "Hopefully I'm not a burden until then.\p"
+	.string "But… whenever that is. Thank you.\n"
+	.string "Thank you for being you. All of you.$"
+
+Battle05_HarperText_PreBattle::
+# 1960 "data/rival_text.pory"
+	.string "{PLAYER}! Before you go…\p"
+	.string "It makes sense to have a warm up\n"
+	.string "battle between us, yeah? I thought\l"
+	.string "about asking one of the others…\p"
+	.string "But it has to be you.\p"
+	.string "I can't let this end without getting\n"
+	.string "at least one win over you.\p"
+	.string "I know I didn't take it that seriously\n"
+	.string "at the start, but with every time you've\l"
+	.string "kicked my butt it sort of fired me up.\p"
+	.string "I've learned a lot from you, and from\n"
+	.string "battling against everyone else.\p"
+	.string "Baron… Sakura… Redd… Jakson.\n"
+	.string "I've beaten them all at this point.\p"
+	.string "So if this is the game's end…\n"
+	.string "You're next.\p"
+	.string "Let's battle, {PLAYER}, and don't\n"
+	.string "hold anything back!$"
+
+Battle05_HarperText_BattleVictory::
+# 1981 "data/rival_text.pory"
+	.string "What's your secret!? I just can't\n"
+	.string "quite get there…$"
+
+Battle05_HarperText_PostBattle::
+# 1986 "data/rival_text.pory"
+	.string "No, no… I know how this went down.\n"
+	.string "I know why I lost to your secret skill.\p"
+	.string "Ha… Because there is no secret.$"
+
+Battle05_HarperText_PostBattle2::
+# 1992 "data/rival_text.pory"
+	.string "Jakson just has an encylopedia.\n"
+	.string "Sakura doesn't give you a second\l"
+	.string "to breathe.\p"
+	.string "Redd feels like he knows half the\n"
+	.string "Pokédex now. Baron sees through\l"
+	.string "my strategies so quickly now.\p"
+	.string "You… feel like you got all of that.\p"
+	.string "I originally came along just to play\n"
+	.string "a game with some friends. And maybe\l"
+	.string "I regretted it at first.\p"
+	.string "Now I got this stupid tick in my head\n"
+	.string "that says “win win win”. I've got you\l"
+	.string "guys to blame for that.\p"
+	.string "Haha… It's been fun.\p"
+	.string "So don't go losing until I get a chance\n"
+	.string "to knock you down a peg or two.\p"
+	.string "Go out there and win, {PLAYER}.\n"
+	.string "You've got this.$"
+
+Battle05_JaksonText_PreBattle::
+# 2013 "data/rival_text.pory"
+	.string "{PLAYER}.\p"
+	.string "So. Here we are. The precipice.\p"
+	.string "Safe to assume you'd be up for one\n"
+	.string "more battle before we crown the\l"
+	.string "‘King’ or ‘Queen of the Hill’ here?\p"
+	.string "I know how strong you are. I even\n"
+	.string "prepared for this with that in mind.\p"
+	.string "My team is amazing. I spent the last\n"
+	.string "couple days assembling it.\p"
+	.string "Been a long time since I fell asleep\n"
+	.string "thinking about what ability I\l"
+	.string "preferred on a Pokémon.\p"
+	.string "I am proud of it. Rightfully.\p"
+	.string "But… I don't know if I'll win.\n"
+	.string "Whether I am really and truly ready.\p"
+	.string "Strange, no?$"
+
+Battle05_JaksonText_PreBattle2::
+# 2032 "data/rival_text.pory"
+	.string "Do not hold anything back.\p"
+	.string "Don't even consider it for a second.\p"
+	.string "When we are done… there will be\n"
+	.string "nothing left to prove.\p"
+	.string "{PLAYER}. I challenge you.$"
+
+Battle05_JaksonText_BattleVictory::
+# 2040 "data/rival_text.pory"
+	.string "And there it is… “The End.”$"
+
+Battle05_JaksonText_PostBattle::
+# 2044 "data/rival_text.pory"
+	.string "Haha… You know… This IS just for\n"
+	.string "fun, technically, right?\p"
+	.string "I feel very ready for the Elite Four\n"
+	.string "after that.\p"
+	.string "You, of course, have got it in the bag.\p"
+	.string "It's just a fun race, after all. Who\n"
+	.string "knows who'll get to the finish line\l"
+	.string "first now?\p"
+	.string "… … …\p"
+	.string "I wonder if this is what it feels\n"
+	.string "like to be in a “rivalry”?\p"
+	.string "Honestly, I sort of get why the rivals\n"
+	.string "end up being nice instead of assholes.\p"
+	.string "I'm proud of myself.\n"
+	.string "I'm proud of you, too, {PLAYER}.\l"
+	.string "I'm proud of all of you.\p"
+	.string "Let's keep having fun, all the way\n"
+	.string "to that finish line.\p"
+	.string "And, after that? Who knows?\p"
+	.string "Maybe I'll listen to the ideas of\n"
+	.string "whoever beats the game first, haha.\p"
+	.string "Don't slack now, {PLAYER}{EMOJI_TILDE}{UNK_SPACER}$"
+
+Battle05_ReddText_PreBattle::
+# 2069 "data/rival_text.pory"
+	.string "Hey, {PLAYER}! I was looking forward\n"
+	.string "to seeing you here.\p"
+	.string "For all of us to be here, it's great.\p"
+	.string "And you…\p"
+	.string "You are my rival. So of course we\n"
+	.string "meet again here of all places.$"
+
+Battle05_ReddText_PreBattle2a::
+# 2078 "data/rival_text.pory"
+	.string "I've already won the research\n"
+	.string "battle, so let's see if I can make\l"
+	.string "it 2-0 in the ring.$"
+
+Battle05_ReddText_PreBattle2b::
+# 2084 "data/rival_text.pory"
+	.string "It seems you've caught up to me in\n"
+	.string "the research battle… Well that just\l"
+	.string "means we'll have to battle.$"
+
+Battle05_ReddText_PreBattle3::
+# 2090 "data/rival_text.pory"
+	.string "I sort of wanted to do this after\n"
+	.string "the Elite 4… but…I don't think\l"
+	.string "I can go and replace the champ.\p"
+	.string "A shame, but this setting is good too.\n"
+	.string "Here, at the top of this hill\p"
+	.string "Because, do you know what that'll\n"
+	.string "mean about the winner of this fight?\p"
+	.string "I'll tell you!\p"
+	.string "They will be the most powerful\n"
+	.string "trainer in the world!$"
+
+Battle05_ReddText_BattleVictory::
+# 2103 "data/rival_text.pory"
+	.string "No! That can't be!\n"
+	.string "You beat my best!?$"
+
+Battle05_ReddText_PostBattle::
+# 2108 "data/rival_text.pory"
+	.string "After all that work to study even the\n"
+	.string "new ones and be a Pokémon Master…$"
+
+Battle05_ReddText_PostBattle2::
+# 2113 "data/rival_text.pory"
+	.string "Why? Why did I lose?\p"
+	.string "I put in all that work to research\n"
+	.string "and raise my Pokémon for this very\l"
+	.string "day.\p"
+	.string "I really thought I hadn't made any\n"
+	.string "mistakes in raising my Pokémon here.\p"
+	.string "It stings, of course, always being one\n"
+	.string "step behind you.\p"
+	.string "… … …$"
+
+Battle05_ReddText_PostBattle3::
+# 2125 "data/rival_text.pory"
+	.string "We're not done with either race\n"
+	.string "yet, are we? To the end of the\l"
+	.string "Pokédex and the Pokémon League.\p"
+	.string "Add one to my loss column, and prepare\n"
+	.string "to add one to your own, {PLAYER}!\p"
+	.string "Let the best Pokémon Master win.\p"
+	.string "Good luck, {PLAYER}. You're going to\n"
+	.string "need it!$"
+
+Battle05_SakuraText_PreBattle::
+# 2136 "data/rival_text.pory"
+	.string "Poof!\p"
+	.string "And suddenly, the final boss appears!\n"
+	.string "The Cuteness Inspector takes her\l"
+	.string "place across from a hopeful challenger.\p"
+	.string "She is that which calls for all those\n"
+	.string "before her to bow and plead for\l"
+	.string "relief from famine and drought.\p"
+	.string "She is the infectious aura that\n"
+	.string "soothes and placates the masses\l"
+	.string "to make their will bend to her whim.\p"
+	.string "She is the reaper's blade that curves\n"
+	.string "itself around the neck of the scared\l"
+	.string "sheep sleeping under the barren\l"
+	.string "moonlight\p"
+	.string "She…\n"
+	.string "is…\l"
+	.string "SAKURA!!!\p"
+	.string "Her opponent: The weakling little\n"
+	.string "{PLAYER}, always lagging one step\l"
+	.string "behind her throughout their journey!\p"
+	.string "Can {PLAYER} overcome their greatest\n"
+	.string "challenge yet, or will Sakura reign\l"
+	.string "supreme{EMOJI_TILDE}\p"
+	.string "In order to have a chance, {PLAYER}\n"
+	.string "must give it their all!$"
+
+Battle05_SakuraText_BattleVictory::
+# 2164 "data/rival_text.pory"
+	.string "And so, the beloved Cuteness Inspector\n"
+	.string "Sakura falls once again! Ah!$"
+
+Battle05_SakuraText_PostBattle::
+# 2169 "data/rival_text.pory"
+	.string "… … …\p"
+	.string "…Hah.\p"
+	.string "Hahahah!\p"
+	.string "{PLAYER}, going through this with you\n"
+	.string "all has been a blast. Especially with\l"
+	.string "you there as my indomitable foe.\p"
+	.string "No matter how much I train up, you've\n"
+	.string "always kept me on my toes.\p"
+	.string "To put my serious face on for just a\n"
+	.string "moment… thank you for playing along\l"
+	.string "with us and putting up with my antics.\p"
+	.string "This is all the more electrifying when\n"
+	.string "I get an audience. We should… Maybe\l"
+	.string "we should do this more often…\p"
+	.string "This, truly, has been fun.\p"
+	.string "… … … Ah!\p"
+	.string "Alright, we're not done yet{EMOJI_TILDE}\p"
+	.string "Race ya to be Champion! Don't you\n"
+	.string "drown in my wake!$"
+
+Town17_BaronText::
+# 2193 "data/rival_text.pory"
+	.string "Hi, {PLAYER}!\p"
+	.string "I think I've managed to find something\n"
+	.string "I'm really good at.\p"
+	.string "I never thought gambling on matches\n"
+	.string "would be my calling!\p"
+	.string "I've been racking up BP like you\n"
+	.string "wouldn't believe here!\p"
+	.string "I might be making more betting on\n"
+	.string "Sakura's battles than she is doing\l"
+	.string "them.\p"
+	.string "It doesn't seem like you can trade them\n"
+	.string "in for potions, but I think I saw\l"
+	.string "Leftovers as a reward.\p"
+	.string "Anything that can help heal is just as\n"
+	.string "good.$"
+
+Town17_HarperText::
+# 2211 "data/rival_text.pory"
+	.string "My goodness this building is CRAZY.\p"
+	.string "Like… in a cool way. I think?\p"
+	.string "Like needing to enter through the\n"
+	.string "mouth of a snake? It makes me realize\l"
+	.string "how real some of this feels now.\p"
+	.string "Legitimately, it gave me goosebumps.\n"
+	.string "How did a buncha VR pixels manage that?\p"
+	.string "Is everything gonna feel super real\n"
+	.string "at a point? Will the real world start\l"
+	.string "to feel weird in comparison?\p"
+	.string "… … …\p"
+	.string "Maybe I should try to find something a\n"
+	.string "little more relaxing.\p"
+	.string "Evergrande City was nice… Maybe I'll\n"
+	.string "visit again.$"
+
+Town17_JaksonText::
+# 2229 "data/rival_text.pory"
+	.string "Oh, hey {PLAYER}!\p"
+	.string "You've beaten the game now, right?\p"
+	.string "You should go check out the Battle\n"
+	.string "Frontier if you haven't yet.\p"
+	.string "Sorry if there's a few things that are\n"
+	.string "broken.\p"
+	.string "Hopefully those can be patched up.\p"
+	.string "And if you're still interested, I'm\n"
+	.string "always looking for new mods to add to\l"
+	.string "the game!\p"
+	.string "If I find anything, I'll let you know!$"
+
+Town17_ReddText::
+# 2243 "data/rival_text.pory"
+	.string "Oh, hey, you showed up!\p"
+	.string "You're not just taking it easy now,\n"
+	.string "right?\p"
+	.string "You, I bet you're racing Jakson through\n"
+	.string "levels at the Battle Tower.\p"
+	.string "I feel like I never see him anywhere\n"
+	.string "else.\p"
+	.string "I've been making attempts here at the\n"
+	.string "Battle Factory.\p"
+	.string "I've seen a lot of the Pokémon now, so\n"
+	.string "my handle on the game is getting better\l"
+	.string "by the day.\p"
+	.string "I do sort of wish there was some kind\n"
+	.string "of… Gen 1 only pool, or something.\p"
+	.string "I mean, yeah, the others were good too,\n"
+	.string "but comfrot food is always nice.$"
+
+Town17_SakuraText::
+# 2262 "data/rival_text.pory"
+	.string "Hmm…\p"
+	.string "I don't think I can get Scott to leave,\n"
+	.string "but do you think I can get Jakson to\l"
+	.string "put a throne in here for me?\p"
+	.string "I'm only a few Symbols away, then this\n"
+	.string "house should be mine.\p"
+	.string "That's how I assume it works anyway.\n"
+	.string "All this furniture I've been getting\l"
+	.string "must go somewhere.\p"
+	.string "This Battle Frontier's just been too\n"
+	.string "easy for me.\p"
+	.string "Jakson needs to hurry up and add some\n"
+	.string "more stuff… and make it more difficult\l"
+	.string "too!\p"
+	.string "Oh, maybe we could get a second floor\n"
+	.string "on this place!\p"
+	.string "I just need to get Scott to move!\p"
+	.string "I mean…\n"
+	.string "If Scott refuses to leave…\l"
+	.string "I could just burn it down and rebuild.$"

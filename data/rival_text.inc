@@ -1021,7 +1021,7 @@ Battle03_HarperText_PreBattle::
 	.string "…Petalburg? Am I supposed to be\n"
 	.string "here?\p"
 	.string "There was the waterfall cave, and\n"
-	.string "the motherfreakin' volcano\p"
+	.string "the motherfreakin' volcano…\p"
 	.string "And all those ledges! Why are those\n"
 	.string "there? To trap you into a restart?\p"
 	.string "Stupid ledges! Yes, they're annoying!\n"

@@ -7,6 +7,7 @@
 # Harper
 
 const HARPER_BATTLE02 = 4
+const HARPER_BATTLE03 = 15
 
 script Harper_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 	if (var(VAR_EMERALBODY_RIVAL) == 1) { // Check if Harper is your rival
@@ -42,6 +43,34 @@ movement Harper_PlayerMoves {
 	lock_facing_direction
 	walk_down
 	unlock_facing_direction
+}
+
+script Harper_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
+	if (var(VAR_EMERALBODY_RIVAL) == 1) { // Check if Harper is your rival
+		lock
+		call (Common_EventScript_PlayEmRivalBgm)
+		addobject (HARPER_BATTLE03)
+		applymovement (HARPER_BATTLE03, Common_Movement_WalkUp3)
+		waitmovement (0)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
+		waitmovement (0)
+		delay (40)
+		applymovement (HARPER_BATTLE03, Common_Movement_WalkUp2)
+		waitmovement (0)
+		call (GetRivalForNameBox)
+		msgbox (Battle03_HarperText_PreBattle, MSGBOX_DEFAULT)
+		call (GetRivalMusic)
+		trainerbattle_no_intro (TRAINER_HARPER_3, Battle03_HarperText_BattleVictory)
+		call (GetRivalForNameBox)
+		msgbox (Battle03_HarperText_PostBattle)
+		closemessage
+		applymovement (HARPER_BATTLE03, Common_Movement_WalkDown5)
+		waitmovement (0)
+		removeobject (HARPER_BATTLE03)
+		fadedefaultbgm
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
+		release
+	}
 }
 
 

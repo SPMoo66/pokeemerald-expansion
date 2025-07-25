@@ -211,6 +211,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Jakson_Town08",
       "flag": "FLAG_TEMP_3"
+    },
+    {
+      "local_id": "HARPER_BATTLE03",
+      "graphics_id": "OBJ_EVENT_GFX_HARPER",
+      "x": 15,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
     }
   ],
   "warp_events": [
@@ -401,6 +415,15 @@
       "var": "VAR_PETALBURG_CITY_STATE",
       "var_value": "5",
       "script": "PetalburgCity_EventScript_WallyBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var_value": "1",
+      "script": "Harper_Battle03"
     }
   ],
   "bg_events": [

@@ -1,692 +1,748 @@
 Harper_Battle02::
-# 12 "data/rival_battles.pory"
+# 13 "data/rival_battles.pory"
 	compare VAR_EMERALBODY_RIVAL, 1
 	goto_if_eq Harper_Battle02_1
 	return
 
 Harper_Battle02_1:
-# 13 "data/rival_battles.pory"
-	lock
 # 14 "data/rival_battles.pory"
-	call Common_EventScript_PlayEmRivalBgm
+	lock
 # 15 "data/rival_battles.pory"
-	addobject 4
+	call Common_EventScript_PlayEmRivalBgm
 # 16 "data/rival_battles.pory"
-	playse SE_EXIT
+	addobject 4
 # 17 "data/rival_battles.pory"
-	waitse
+	playse SE_EXIT
 # 18 "data/rival_battles.pory"
-	applymovement 4, Common_Movement_WalkUp4
+	waitse
 # 19 "data/rival_battles.pory"
-	waitmovement 0
+	applymovement 4, Common_Movement_WalkUp4
 # 20 "data/rival_battles.pory"
-	applymovement 4, Common_Movement_WalkRight4
+	waitmovement 0
 # 21 "data/rival_battles.pory"
-	waitmovement 0
+	applymovement 4, Common_Movement_WalkRight4
 # 22 "data/rival_battles.pory"
-	call GetRivalForNameBox
+	waitmovement 0
 # 23 "data/rival_battles.pory"
-	msgbox Battle02_HarperText_PreBattle, MSGBOX_DEFAULT
-# 24 "data/rival_battles.pory"
-	call GetRivalMusic
-# 25 "data/rival_battles.pory"
-	trainerbattle_no_intro TRAINER_HARPER_2, Battle02_HarperText_BattleVictory
-# 26 "data/rival_battles.pory"
 	call GetRivalForNameBox
+# 24 "data/rival_battles.pory"
+	msgbox Battle02_HarperText_PreBattle, MSGBOX_DEFAULT
+# 25 "data/rival_battles.pory"
+	call GetRivalMusic
+# 26 "data/rival_battles.pory"
+	trainerbattle_no_intro TRAINER_HARPER_2, Battle02_HarperText_BattleVictory
 # 27 "data/rival_battles.pory"
-	msgbox Battle02_HarperText_PostBattle
+	call GetRivalForNameBox
 # 28 "data/rival_battles.pory"
-	closemessage
+	msgbox Battle02_HarperText_PostBattle
 # 29 "data/rival_battles.pory"
-	applymovement LOCALID_PLAYER, Harper_PlayerMoves
+	closemessage
 # 30 "data/rival_battles.pory"
-	waitmovement 0
+	applymovement LOCALID_PLAYER, Harper_PlayerMoves
 # 31 "data/rival_battles.pory"
-	applymovement 4, Common_Movement_WalkRight9
-# 32 "data/rival_battles.pory"
 	waitmovement 0
+# 32 "data/rival_battles.pory"
+	applymovement 4, Common_Movement_WalkRight9
 # 33 "data/rival_battles.pory"
-	removeobject 4
+	waitmovement 0
 # 34 "data/rival_battles.pory"
-	fadedefaultbgm
+	removeobject 4
 # 35 "data/rival_battles.pory"
-	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
+	fadedefaultbgm
 # 36 "data/rival_battles.pory"
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
+# 37 "data/rival_battles.pory"
 	release
 	return
 
 
-# 40 "data/rival_battles.pory"
-Harper_PlayerMoves:
 # 41 "data/rival_battles.pory"
-	face_up
+Harper_PlayerMoves:
 # 42 "data/rival_battles.pory"
-	lock_facing_direction
+	face_up
 # 43 "data/rival_battles.pory"
-	walk_down
+	lock_facing_direction
 # 44 "data/rival_battles.pory"
+	walk_down
+# 45 "data/rival_battles.pory"
 	unlock_facing_direction
 	step_end
 
-Sakura_Battle02::
+Harper_Battle03::
+# 49 "data/rival_battles.pory"
+	compare VAR_EMERALBODY_RIVAL, 1
+	goto_if_eq Harper_Battle03_1
+	return
+
+Harper_Battle03_1:
+# 50 "data/rival_battles.pory"
+	lock
+# 51 "data/rival_battles.pory"
+	call Common_EventScript_PlayEmRivalBgm
+# 52 "data/rival_battles.pory"
+	addobject 15
+# 53 "data/rival_battles.pory"
+	applymovement 15, Common_Movement_WalkUp3
 # 54 "data/rival_battles.pory"
+	waitmovement 0
+# 55 "data/rival_battles.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
+# 56 "data/rival_battles.pory"
+	waitmovement 0
+# 57 "data/rival_battles.pory"
+	delay 40
+# 58 "data/rival_battles.pory"
+	applymovement 15, Common_Movement_WalkUp2
+# 59 "data/rival_battles.pory"
+	waitmovement 0
+# 60 "data/rival_battles.pory"
+	call GetRivalForNameBox
+# 61 "data/rival_battles.pory"
+	msgbox Battle03_HarperText_PreBattle, MSGBOX_DEFAULT
+# 62 "data/rival_battles.pory"
+	call GetRivalMusic
+# 63 "data/rival_battles.pory"
+	trainerbattle_no_intro TRAINER_HARPER_3, Battle03_HarperText_BattleVictory
+# 64 "data/rival_battles.pory"
+	call GetRivalForNameBox
+# 65 "data/rival_battles.pory"
+	msgbox Battle03_HarperText_PostBattle
+# 66 "data/rival_battles.pory"
+	closemessage
+# 67 "data/rival_battles.pory"
+	applymovement 15, Common_Movement_WalkDown5
+# 68 "data/rival_battles.pory"
+	waitmovement 0
+# 69 "data/rival_battles.pory"
+	removeobject 15
+# 70 "data/rival_battles.pory"
+	fadedefaultbgm
+# 71 "data/rival_battles.pory"
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2
+# 72 "data/rival_battles.pory"
+	release
+	return
+
+
+Sakura_Battle02::
+# 83 "data/rival_battles.pory"
 	compare VAR_EMERALBODY_RIVAL, 4
 	goto_if_eq Sakura_Battle02_1
 	return
 
 Sakura_Battle02_1:
-# 55 "data/rival_battles.pory"
+# 84 "data/rival_battles.pory"
 	lock
-# 56 "data/rival_battles.pory"
+# 85 "data/rival_battles.pory"
 	call Common_EventScript_PlayEmRivalBgm
-# 57 "data/rival_battles.pory"
+# 86 "data/rival_battles.pory"
 	addobject 3
-# 58 "data/rival_battles.pory"
+# 87 "data/rival_battles.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
-# 59 "data/rival_battles.pory"
+# 88 "data/rival_battles.pory"
 	waitmovement 0
-# 60 "data/rival_battles.pory"
+# 89 "data/rival_battles.pory"
 	playse SE_PIN
-# 61 "data/rival_battles.pory"
+# 90 "data/rival_battles.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
-# 62 "data/rival_battles.pory"
+# 91 "data/rival_battles.pory"
 	waitmovement 0
-# 63 "data/rival_battles.pory"
+# 92 "data/rival_battles.pory"
 	delay 60
-# 64 "data/rival_battles.pory"
+# 93 "data/rival_battles.pory"
 	applymovement 3, Common_Movement_WalkUp4
-# 65 "data/rival_battles.pory"
+# 94 "data/rival_battles.pory"
 	waitmovement 0
-# 66 "data/rival_battles.pory"
+# 95 "data/rival_battles.pory"
 	playse SE_LEDGE
-# 67 "data/rival_battles.pory"
+# 96 "data/rival_battles.pory"
 	applymovement 3, Common_Movement_JumpUp
-# 68 "data/rival_battles.pory"
+# 97 "data/rival_battles.pory"
 	waitmovement 0
-# 69 "data/rival_battles.pory"
+# 98 "data/rival_battles.pory"
 	playse SE_M_CUT
-# 70 "data/rival_battles.pory"
+# 99 "data/rival_battles.pory"
 	waitse
-# 71 "data/rival_battles.pory"
+# 100 "data/rival_battles.pory"
 	call GetRivalForNameBox
-# 72 "data/rival_battles.pory"
+# 101 "data/rival_battles.pory"
 	msgbox Battle02_SakuraText_PreBattle, MSGBOX_DEFAULT
-# 73 "data/rival_battles.pory"
+# 102 "data/rival_battles.pory"
 	call GetRivalMusic
-# 74 "data/rival_battles.pory"
+# 103 "data/rival_battles.pory"
 	trainerbattle_no_intro TRAINER_SAKURA_2, Battle02_SakuraText_BattleVictory
-# 75 "data/rival_battles.pory"
+# 104 "data/rival_battles.pory"
 	call GetRivalForNameBox
-# 76 "data/rival_battles.pory"
+# 105 "data/rival_battles.pory"
 	msgbox Battle02_SakuraText_PostBattle
-# 77 "data/rival_battles.pory"
+# 106 "data/rival_battles.pory"
 	closemessage
-# 78 "data/rival_battles.pory"
+# 107 "data/rival_battles.pory"
 	applymovement 3, Common_Movement_WalkDown5
-# 79 "data/rival_battles.pory"
+# 108 "data/rival_battles.pory"
 	waitmovement 0
-# 80 "data/rival_battles.pory"
+# 109 "data/rival_battles.pory"
 	removeobject 3
-# 81 "data/rival_battles.pory"
+# 110 "data/rival_battles.pory"
 	fadedefaultbgm
-# 82 "data/rival_battles.pory"
+# 111 "data/rival_battles.pory"
 	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
-# 83 "data/rival_battles.pory"
+# 112 "data/rival_battles.pory"
 	release
 	return
 
 
 Sakura_Battle03::
-# 88 "data/rival_battles.pory"
+# 117 "data/rival_battles.pory"
 	lock
-# 89 "data/rival_battles.pory"
+# 118 "data/rival_battles.pory"
 	call Common_EventScript_PlayEmRivalBgm
-# 90 "data/rival_battles.pory"
+# 119 "data/rival_battles.pory"
 	call GetRivalForNameBox
-# 91 "data/rival_battles.pory"
+# 120 "data/rival_battles.pory"
 	msgbox Battle03_SakuraText_PreBattle, MSGBOX_DEFAULT
-# 92 "data/rival_battles.pory"
+# 121 "data/rival_battles.pory"
 	call GetRivalMusic
-# 93 "data/rival_battles.pory"
+# 122 "data/rival_battles.pory"
 	trainerbattle_no_intro TRAINER_SAKURA_3, Battle03_SakuraText_BattleVictory
-# 94 "data/rival_battles.pory"
+# 123 "data/rival_battles.pory"
 	call GetRivalForNameBox
-# 95 "data/rival_battles.pory"
+# 124 "data/rival_battles.pory"
 	msgbox Battle03_SakuraText_PostBattle
-# 96 "data/rival_battles.pory"
+# 125 "data/rival_battles.pory"
 	closemessage
-# 97 "data/rival_battles.pory"
+# 126 "data/rival_battles.pory"
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-# 98 "data/rival_battles.pory"
+# 127 "data/rival_battles.pory"
 	compare VAR_TEMP_1, 12
 	goto_if_eq Sakura_Battle03_2
 Sakura_Battle03_1:
-# 102 "data/rival_battles.pory"
+# 131 "data/rival_battles.pory"
 	applymovement 8, Common_Movement_WalkDown
-# 103 "data/rival_battles.pory"
+# 132 "data/rival_battles.pory"
 	waitmovement 0
-# 104 "data/rival_battles.pory"
+# 133 "data/rival_battles.pory"
 	playse SE_LEDGE
-# 105 "data/rival_battles.pory"
+# 134 "data/rival_battles.pory"
 	applymovement 8, Common_Movement_JumpDown2
-# 106 "data/rival_battles.pory"
+# 135 "data/rival_battles.pory"
 	waitmovement 0
-# 107 "data/rival_battles.pory"
+# 136 "data/rival_battles.pory"
 	applymovement 8, Common_Movement_WalkDown4
-# 108 "data/rival_battles.pory"
+# 137 "data/rival_battles.pory"
 	waitmovement 0
-# 109 "data/rival_battles.pory"
+# 138 "data/rival_battles.pory"
 	removeobject 8
-# 110 "data/rival_battles.pory"
+# 139 "data/rival_battles.pory"
 	setflag FLAG_TEMP_2
-# 111 "data/rival_battles.pory"
+# 140 "data/rival_battles.pory"
 	fadedefaultbgm
-# 112 "data/rival_battles.pory"
+# 141 "data/rival_battles.pory"
 	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2
-# 113 "data/rival_battles.pory"
+# 142 "data/rival_battles.pory"
 	delay 30
-# 114 "data/rival_battles.pory"
+# 143 "data/rival_battles.pory"
 	playse SE_EFFECTIVE
-# 115 "data/rival_battles.pory"
+# 144 "data/rival_battles.pory"
 	setmetatile 13, 11, 0x208, FALSE
-# 116 "data/rival_battles.pory"
+# 145 "data/rival_battles.pory"
 	special DrawWholeMapView
-# 117 "data/rival_battles.pory"
+# 146 "data/rival_battles.pory"
 	delay 30
-# 118 "data/rival_battles.pory"
+# 147 "data/rival_battles.pory"
 	release
 	return
 
 Sakura_Battle03_2:
-# 99 "data/rival_battles.pory"
+# 128 "data/rival_battles.pory"
 	applymovement 8, Common_Movement_WalkRight
-# 100 "data/rival_battles.pory"
+# 129 "data/rival_battles.pory"
 	waitmovement 0
 	goto Sakura_Battle03_1
 
 
 Redd_Battle02::
-# 128 "data/rival_battles.pory"
+# 157 "data/rival_battles.pory"
 	compare VAR_EMERALBODY_RIVAL, 3
 	goto_if_eq Redd_Battle02_1
 	return
 
 Redd_Battle02_1:
-# 129 "data/rival_battles.pory"
+# 158 "data/rival_battles.pory"
 	lock
-# 130 "data/rival_battles.pory"
+# 159 "data/rival_battles.pory"
 	call Common_EventScript_PlayEmRivalBgm
-# 131 "data/rival_battles.pory"
+# 160 "data/rival_battles.pory"
 	call GetRivalForNameBox
-# 132 "data/rival_battles.pory"
+# 161 "data/rival_battles.pory"
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-# 133 "data/rival_battles.pory"
+# 162 "data/rival_battles.pory"
 	compare VAR_TEMP_1, 58
 	goto_if_eq Redd_Battle02_4
-# 148 "data/rival_battles.pory"
+# 177 "data/rival_battles.pory"
 	applymovement 40, Common_Movement_FaceUp
-# 149 "data/rival_battles.pory"
+# 178 "data/rival_battles.pory"
 	waitmovement 0
-# 150 "data/rival_battles.pory"
+# 179 "data/rival_battles.pory"
 	playse SE_PIN
-# 151 "data/rival_battles.pory"
+# 180 "data/rival_battles.pory"
 	applymovement 40, Common_Movement_ExclamationMark
-# 152 "data/rival_battles.pory"
+# 181 "data/rival_battles.pory"
 	waitmovement 0
-# 153 "data/rival_battles.pory"
+# 182 "data/rival_battles.pory"
 	delay 60
-# 154 "data/rival_battles.pory"
+# 183 "data/rival_battles.pory"
 	compare VAR_TEMP_1, 52
 	goto_if_eq Redd_Battle02_12
-# 159 "data/rival_battles.pory"
+# 188 "data/rival_battles.pory"
 	applymovement 40, Common_Movement_WalkUp2
-# 160 "data/rival_battles.pory"
+# 189 "data/rival_battles.pory"
 	waitmovement 0
 Redd_Battle02_11:
-# 162 "data/rival_battles.pory"
+# 191 "data/rival_battles.pory"
 	applymovement 40, Common_Movement_WalkRight
-# 163 "data/rival_battles.pory"
+# 192 "data/rival_battles.pory"
 	waitmovement 0
-# 164 "data/rival_battles.pory"
+# 193 "data/rival_battles.pory"
 	msgbox Battle02_ReddText_PreBattleAlt, MSGBOX_DEFAULT
 Redd_Battle02_3:
-# 166 "data/rival_battles.pory"
+# 195 "data/rival_battles.pory"
 	call GetRivalMusic
-# 167 "data/rival_battles.pory"
+# 196 "data/rival_battles.pory"
 	trainerbattle_no_intro TRAINER_REDD_2, Battle02_ReddText_BattleVictory
-# 168 "data/rival_battles.pory"
+# 197 "data/rival_battles.pory"
 	call GetRivalForNameBox
-# 169 "data/rival_battles.pory"
+# 198 "data/rival_battles.pory"
 	msgbox Battle02_ReddText_PostBattle
-# 170 "data/rival_battles.pory"
+# 199 "data/rival_battles.pory"
 	closemessage
-# 171 "data/rival_battles.pory"
+# 200 "data/rival_battles.pory"
 	applymovement 40, Common_Movement_WalkUp6
-# 172 "data/rival_battles.pory"
+# 201 "data/rival_battles.pory"
 	waitmovement 0
-# 173 "data/rival_battles.pory"
+# 202 "data/rival_battles.pory"
 	removeobject 40
-# 174 "data/rival_battles.pory"
+# 203 "data/rival_battles.pory"
 	fadedefaultbgm
-# 175 "data/rival_battles.pory"
+# 204 "data/rival_battles.pory"
 	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
-# 176 "data/rival_battles.pory"
+# 205 "data/rival_battles.pory"
 	setflag FLAG_TEMP_2
-# 177 "data/rival_battles.pory"
+# 206 "data/rival_battles.pory"
 	release
 	return
 
 Redd_Battle02_4:
-# 134 "data/rival_battles.pory"
+# 163 "data/rival_battles.pory"
 	switch VAR_TEMP_0
-# 135 "data/rival_battles.pory"
+# 164 "data/rival_battles.pory"
 	case 17, Redd_Battle02_9
-# 138 "data/rival_battles.pory"
+# 167 "data/rival_battles.pory"
 	case 19, Redd_Battle02_10
 Redd_Battle02_7:
-# 143 "data/rival_battles.pory"
+# 172 "data/rival_battles.pory"
 	applymovement 40, Common_Movement_WalkDown2
-# 144 "data/rival_battles.pory"
+# 173 "data/rival_battles.pory"
 	waitmovement 0
-# 145 "data/rival_battles.pory"
+# 174 "data/rival_battles.pory"
 	msgbox Battle02_ReddText_PreBattle, MSGBOX_DEFAULT
 	goto Redd_Battle02_3
 
 Redd_Battle02_9:
-# 136 "data/rival_battles.pory"
+# 165 "data/rival_battles.pory"
 	applymovement 40, Common_Movement_WalkLeft
-# 137 "data/rival_battles.pory"
+# 166 "data/rival_battles.pory"
 	waitmovement 0
 	goto Redd_Battle02_7
 
 Redd_Battle02_10:
-# 139 "data/rival_battles.pory"
+# 168 "data/rival_battles.pory"
 	applymovement 40, Common_Movement_WalkRight
-# 140 "data/rival_battles.pory"
+# 169 "data/rival_battles.pory"
 	waitmovement 0
 	goto Redd_Battle02_7
 
 Redd_Battle02_12:
-# 155 "data/rival_battles.pory"
+# 184 "data/rival_battles.pory"
 	applymovement 40, Common_Movement_WalkUp3
-# 156 "data/rival_battles.pory"
+# 185 "data/rival_battles.pory"
 	waitmovement 0
 	goto Redd_Battle02_11
 
 
 Redd_Battle03::
-# 182 "data/rival_battles.pory"
+# 211 "data/rival_battles.pory"
 	compare VAR_EMERALBODY_RIVAL, 3
 	goto_if_eq Redd_Battle03_1
 	return
 
 Redd_Battle03_1:
-# 183 "data/rival_battles.pory"
+# 212 "data/rival_battles.pory"
 	lock
-# 184 "data/rival_battles.pory"
+# 213 "data/rival_battles.pory"
 	call Common_EventScript_PlayEmRivalBgm
-# 185 "data/rival_battles.pory"
+# 214 "data/rival_battles.pory"
 	call GetRivalForNameBox
-# 186 "data/rival_battles.pory"
+# 215 "data/rival_battles.pory"
 	addobject 5
-# 187 "data/rival_battles.pory"
+# 216 "data/rival_battles.pory"
 	playse SE_EXIT
-# 188 "data/rival_battles.pory"
+# 217 "data/rival_battles.pory"
 	waitse
-# 189 "data/rival_battles.pory"
+# 218 "data/rival_battles.pory"
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-# 190 "data/rival_battles.pory"
+# 219 "data/rival_battles.pory"
 	compare VAR_TEMP_1, 7
 	goto_if_eq Redd_Battle03_4
-# 196 "data/rival_battles.pory"
+# 225 "data/rival_battles.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceRight
-# 197 "data/rival_battles.pory"
-	applymovement 5, Common_Movement_WalkDown3
-# 198 "data/rival_battles.pory"
-	waitmovement 0
-Redd_Battle03_3:
-# 200 "data/rival_battles.pory"
-	applymovement 5, Common_Movement_WalkLeft3
-# 201 "data/rival_battles.pory"
-	waitmovement 0
-# 202 "data/rival_battles.pory"
-	compare VAR_TEMP_1, 7
-	goto_if_eq Redd_Battle03_8
-# 208 "data/rival_battles.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceUp
-# 209 "data/rival_battles.pory"
-	applymovement 5, Common_Movement_WalkInPlaceDown
-# 210 "data/rival_battles.pory"
-	waitmovement 0
-Redd_Battle03_7:
-# 212 "data/rival_battles.pory"
-	waitmovement 0
-# 213 "data/rival_battles.pory"
-	msgbox Battle03_ReddText_PreBattle, MSGBOX_DEFAULT
-# 214 "data/rival_battles.pory"
-	call GetRivalMusic
-# 215 "data/rival_battles.pory"
-	trainerbattle_no_intro TRAINER_REDD_3, Battle03_ReddText_BattleVictory
-# 216 "data/rival_battles.pory"
-	call GetRivalForNameBox
-# 217 "data/rival_battles.pory"
-	msgbox Battle03_ReddText_PostBattle
-# 218 "data/rival_battles.pory"
-	closemessage
-# 219 "data/rival_battles.pory"
-	applymovement 5, Common_Movement_WalkLeft4
-# 220 "data/rival_battles.pory"
-	waitmovement 0
-# 221 "data/rival_battles.pory"
-	compare VAR_TEMP_1, 7
-	goto_if_eq Redd_Battle03_12
 # 226 "data/rival_battles.pory"
-	applymovement 5, Common_Movement_WalkDown
+	applymovement 5, Common_Movement_WalkDown3
 # 227 "data/rival_battles.pory"
 	waitmovement 0
-Redd_Battle03_11:
+Redd_Battle03_3:
 # 229 "data/rival_battles.pory"
-	removeobject 5
+	applymovement 5, Common_Movement_WalkLeft3
 # 230 "data/rival_battles.pory"
-	playse SE_EXIT
+	waitmovement 0
 # 231 "data/rival_battles.pory"
+	compare VAR_TEMP_1, 7
+	goto_if_eq Redd_Battle03_8
+# 237 "data/rival_battles.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceUp
+# 238 "data/rival_battles.pory"
+	applymovement 5, Common_Movement_WalkInPlaceDown
+# 239 "data/rival_battles.pory"
+	waitmovement 0
+Redd_Battle03_7:
+# 241 "data/rival_battles.pory"
+	waitmovement 0
+# 242 "data/rival_battles.pory"
+	msgbox Battle03_ReddText_PreBattle, MSGBOX_DEFAULT
+# 243 "data/rival_battles.pory"
+	call GetRivalMusic
+# 244 "data/rival_battles.pory"
+	trainerbattle_no_intro TRAINER_REDD_3, Battle03_ReddText_BattleVictory
+# 245 "data/rival_battles.pory"
+	call GetRivalForNameBox
+# 246 "data/rival_battles.pory"
+	msgbox Battle03_ReddText_PostBattle
+# 247 "data/rival_battles.pory"
+	closemessage
+# 248 "data/rival_battles.pory"
+	applymovement 5, Common_Movement_WalkLeft4
+# 249 "data/rival_battles.pory"
+	waitmovement 0
+# 250 "data/rival_battles.pory"
+	compare VAR_TEMP_1, 7
+	goto_if_eq Redd_Battle03_12
+# 255 "data/rival_battles.pory"
+	applymovement 5, Common_Movement_WalkDown
+# 256 "data/rival_battles.pory"
+	waitmovement 0
+Redd_Battle03_11:
+# 258 "data/rival_battles.pory"
+	removeobject 5
+# 259 "data/rival_battles.pory"
+	playse SE_EXIT
+# 260 "data/rival_battles.pory"
 	waitse
-# 232 "data/rival_battles.pory"
+# 261 "data/rival_battles.pory"
 	fadedefaultbgm
-# 233 "data/rival_battles.pory"
+# 262 "data/rival_battles.pory"
 	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2
-# 234 "data/rival_battles.pory"
+# 263 "data/rival_battles.pory"
 	release
 	return
 
 Redd_Battle03_4:
-# 191 "data/rival_battles.pory"
+# 220 "data/rival_battles.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceRight
-# 192 "data/rival_battles.pory"
+# 221 "data/rival_battles.pory"
 	applymovement 5, Common_Movement_WalkDown4
-# 193 "data/rival_battles.pory"
+# 222 "data/rival_battles.pory"
 	waitmovement 0
 	goto Redd_Battle03_3
 
 Redd_Battle03_8:
-# 203 "data/rival_battles.pory"
+# 232 "data/rival_battles.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
-# 204 "data/rival_battles.pory"
+# 233 "data/rival_battles.pory"
 	applymovement 5, Common_Movement_WalkInPlaceUp
-# 205 "data/rival_battles.pory"
+# 234 "data/rival_battles.pory"
 	waitmovement 0
 	goto Redd_Battle03_7
 
 Redd_Battle03_12:
-# 222 "data/rival_battles.pory"
+# 251 "data/rival_battles.pory"
 	applymovement 5, Common_Movement_WalkInPlaceDown
-# 223 "data/rival_battles.pory"
+# 252 "data/rival_battles.pory"
 	waitmovement 0
 	goto Redd_Battle03_11
 
 
 Baron_Battle02::
-# 244 "data/rival_battles.pory"
+# 273 "data/rival_battles.pory"
 	compare VAR_EMERALBODY_RIVAL, 0
 	goto_if_eq Baron_Battle02_1
 	return
 
 Baron_Battle02_1:
-# 245 "data/rival_battles.pory"
+# 274 "data/rival_battles.pory"
 	lock
-# 246 "data/rival_battles.pory"
+# 275 "data/rival_battles.pory"
 	call Common_EventScript_PlayEmRivalBgm
-# 247 "data/rival_battles.pory"
+# 276 "data/rival_battles.pory"
 	call GetRivalForNameBox
-# 248 "data/rival_battles.pory"
+# 277 "data/rival_battles.pory"
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-# 249 "data/rival_battles.pory"
+# 278 "data/rival_battles.pory"
 	compare VAR_TEMP_1, 9
 	goto_if_eq Baron_Battle02_4
-# 258 "data/rival_battles.pory"
+# 287 "data/rival_battles.pory"
 	faceplayer
 Baron_Battle02_3:
-# 260 "data/rival_battles.pory"
+# 289 "data/rival_battles.pory"
 	msgbox Battle02_BaronText_PreBattle, MSGBOX_DEFAULT
-# 261 "data/rival_battles.pory"
+# 290 "data/rival_battles.pory"
 	call GetRivalMusic
-# 262 "data/rival_battles.pory"
+# 291 "data/rival_battles.pory"
 	trainerbattle_no_intro TRAINER_BARON_2, Battle02_BaronText_BattleVictory
-# 263 "data/rival_battles.pory"
+# 292 "data/rival_battles.pory"
 	call GetRivalForNameBox
-# 264 "data/rival_battles.pory"
+# 293 "data/rival_battles.pory"
 	msgbox Battle02_BaronText_PostBattle
-# 265 "data/rival_battles.pory"
+# 294 "data/rival_battles.pory"
 	closemessage
-# 266 "data/rival_battles.pory"
+# 295 "data/rival_battles.pory"
 	fadedefaultbgm
-# 267 "data/rival_battles.pory"
+# 296 "data/rival_battles.pory"
 	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
-# 268 "data/rival_battles.pory"
+# 297 "data/rival_battles.pory"
 	setflag FLAG_TEMP_2
-# 269 "data/rival_battles.pory"
+# 298 "data/rival_battles.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 270 "data/rival_battles.pory"
+# 299 "data/rival_battles.pory"
 	removeobject 7
-# 271 "data/rival_battles.pory"
+# 300 "data/rival_battles.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
-# 272 "data/rival_battles.pory"
+# 301 "data/rival_battles.pory"
 	release
 	return
 
 Baron_Battle02_4:
-# 250 "data/rival_battles.pory"
+# 279 "data/rival_battles.pory"
 	applymovement 7, Common_Movement_WalkInPlaceUp
-# 251 "data/rival_battles.pory"
+# 280 "data/rival_battles.pory"
 	waitmovement 0
-# 252 "data/rival_battles.pory"
+# 281 "data/rival_battles.pory"
 	delay 50
-# 253 "data/rival_battles.pory"
+# 282 "data/rival_battles.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
-# 254 "data/rival_battles.pory"
+# 283 "data/rival_battles.pory"
 	applymovement 7, Common_Movement_WalkUp
-# 255 "data/rival_battles.pory"
+# 284 "data/rival_battles.pory"
 	waitmovement 0
 	goto Baron_Battle02_3
 
 
 Jakson_Battle02::
-# 284 "data/rival_battles.pory"
+# 313 "data/rival_battles.pory"
 	compare VAR_EMERALBODY_RIVAL, 2
 	goto_if_eq Jakson_Battle02_1
 	return
 
 Jakson_Battle02_1:
-# 285 "data/rival_battles.pory"
+# 314 "data/rival_battles.pory"
 	lock
-# 286 "data/rival_battles.pory"
+# 315 "data/rival_battles.pory"
 	call Common_EventScript_PlayEmRivalBgm
-# 287 "data/rival_battles.pory"
+# 316 "data/rival_battles.pory"
 	delay 30
-# 288 "data/rival_battles.pory"
+# 317 "data/rival_battles.pory"
 	call GetRivalForNameBox
-# 289 "data/rival_battles.pory"
+# 318 "data/rival_battles.pory"
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-# 290 "data/rival_battles.pory"
+# 319 "data/rival_battles.pory"
 	compare VAR_TEMP_0, 5
 	goto_if_eq Jakson_Battle02_4
 Jakson_Battle02_3:
-# 312 "data/rival_battles.pory"
+# 341 "data/rival_battles.pory"
 	msgbox Battle02_JaksonText_PreBattle, MSGBOX_DEFAULT
-# 313 "data/rival_battles.pory"
+# 342 "data/rival_battles.pory"
 	call GetRivalMusic
-# 314 "data/rival_battles.pory"
+# 343 "data/rival_battles.pory"
 	trainerbattle_no_intro TRAINER_JAKSON_2, Battle02_JaksonText_BattleVictory
-# 315 "data/rival_battles.pory"
+# 344 "data/rival_battles.pory"
 	call GetRivalForNameBox
-# 316 "data/rival_battles.pory"
+# 345 "data/rival_battles.pory"
 	msgbox Battle02_JaksonText_PostBattle
-# 317 "data/rival_battles.pory"
+# 346 "data/rival_battles.pory"
 	closemessage
-# 318 "data/rival_battles.pory"
+# 347 "data/rival_battles.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 319 "data/rival_battles.pory"
+# 348 "data/rival_battles.pory"
 	removeobject 7
-# 320 "data/rival_battles.pory"
+# 349 "data/rival_battles.pory"
 	removeobject 6
-# 321 "data/rival_battles.pory"
+# 350 "data/rival_battles.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
-# 322 "data/rival_battles.pory"
+# 351 "data/rival_battles.pory"
 	fadedefaultbgm
-# 323 "data/rival_battles.pory"
+# 352 "data/rival_battles.pory"
 	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
-# 324 "data/rival_battles.pory"
+# 353 "data/rival_battles.pory"
 	setflag FLAG_TEMP_2
-# 325 "data/rival_battles.pory"
+# 354 "data/rival_battles.pory"
 	release
 	return
 
 Jakson_Battle02_4:
-# 291 "data/rival_battles.pory"
+# 320 "data/rival_battles.pory"
 	switch VAR_TEMP_1
-# 292 "data/rival_battles.pory"
+# 321 "data/rival_battles.pory"
 	case 9, Jakson_Battle02_8
-# 295 "data/rival_battles.pory"
+# 324 "data/rival_battles.pory"
 	case 11, Jakson_Battle02_9
-# 298 "data/rival_battles.pory"
+# 327 "data/rival_battles.pory"
 	case 12, Jakson_Battle02_10
-# 301 "data/rival_battles.pory"
+# 330 "data/rival_battles.pory"
 	case 13, Jakson_Battle02_11
-# 304 "data/rival_battles.pory"
+# 333 "data/rival_battles.pory"
 	case 14, Jakson_Battle02_12
 Jakson_Battle02_6:
-# 309 "data/rival_battles.pory"
+# 338 "data/rival_battles.pory"
 	applymovement 7, Common_Movement_WalkRight2
-# 310 "data/rival_battles.pory"
+# 339 "data/rival_battles.pory"
 	waitmovement 0
 	goto Jakson_Battle02_3
 
 Jakson_Battle02_8:
-# 293 "data/rival_battles.pory"
+# 322 "data/rival_battles.pory"
 	applymovement 7, Common_Movement_WalkUp
-# 294 "data/rival_battles.pory"
+# 323 "data/rival_battles.pory"
 	waitmovement 0
 	goto Jakson_Battle02_6
 
 Jakson_Battle02_9:
-# 296 "data/rival_battles.pory"
+# 325 "data/rival_battles.pory"
 	applymovement 7, Common_Movement_WalkDown
-# 297 "data/rival_battles.pory"
+# 326 "data/rival_battles.pory"
 	waitmovement 0
 	goto Jakson_Battle02_6
 
 Jakson_Battle02_10:
-# 299 "data/rival_battles.pory"
+# 328 "data/rival_battles.pory"
 	applymovement 7, Common_Movement_WalkDown2
-# 300 "data/rival_battles.pory"
+# 329 "data/rival_battles.pory"
 	waitmovement 0
 	goto Jakson_Battle02_6
 
 Jakson_Battle02_11:
-# 302 "data/rival_battles.pory"
+# 331 "data/rival_battles.pory"
 	applymovement 7, Common_Movement_WalkDown3
-# 303 "data/rival_battles.pory"
+# 332 "data/rival_battles.pory"
 	waitmovement 0
 	goto Jakson_Battle02_6
 
 Jakson_Battle02_12:
-# 305 "data/rival_battles.pory"
+# 334 "data/rival_battles.pory"
 	applymovement 7, Common_Movement_WalkDown4
-# 306 "data/rival_battles.pory"
+# 335 "data/rival_battles.pory"
 	waitmovement 0
 	goto Jakson_Battle02_6
 
 
 Jakson_Battle02_Block::
-# 330 "data/rival_battles.pory"
+# 359 "data/rival_battles.pory"
 	lock
-# 331 "data/rival_battles.pory"
+# 360 "data/rival_battles.pory"
 	faceplayer
-# 332 "data/rival_battles.pory"
+# 361 "data/rival_battles.pory"
 	msgbox Jakson_Battle02_Block_Text_0
-# 333 "data/rival_battles.pory"
+# 362 "data/rival_battles.pory"
 	playmoncry SPECIES_MURKROW, CRY_MODE_NORMAL
-# 334 "data/rival_battles.pory"
+# 363 "data/rival_battles.pory"
 	waitmoncry
-# 335 "data/rival_battles.pory"
+# 364 "data/rival_battles.pory"
 	release
 	return
 
 
 Jakson_Battle03::
-# 339 "data/rival_battles.pory"
+# 368 "data/rival_battles.pory"
 	compare VAR_EMERALBODY_RIVAL, 2
 	goto_if_eq Jakson_Battle03_1
 	return
 
 Jakson_Battle03_1:
-# 340 "data/rival_battles.pory"
+# 369 "data/rival_battles.pory"
 	lock
-# 341 "data/rival_battles.pory"
+# 370 "data/rival_battles.pory"
 	call Common_EventScript_PlayEmRivalBgm
-# 342 "data/rival_battles.pory"
+# 371 "data/rival_battles.pory"
 	call GetRivalForNameBox
-# 343 "data/rival_battles.pory"
+# 372 "data/rival_battles.pory"
 	addobject 48
-# 344 "data/rival_battles.pory"
+# 373 "data/rival_battles.pory"
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-# 345 "data/rival_battles.pory"
+# 374 "data/rival_battles.pory"
 	compare VAR_TEMP_0, 31
 	goto_if_eq Jakson_Battle03_4
 Jakson_Battle03_3:
-# 348 "data/rival_battles.pory"
+# 377 "data/rival_battles.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
-# 349 "data/rival_battles.pory"
+# 378 "data/rival_battles.pory"
 	applymovement 48, Common_Movement_WalkUp5
-# 350 "data/rival_battles.pory"
+# 379 "data/rival_battles.pory"
 	waitmovement 0
-# 351 "data/rival_battles.pory"
+# 380 "data/rival_battles.pory"
 	msgbox Battle03_JaksonText_PreBattle, MSGBOX_DEFAULT
-# 352 "data/rival_battles.pory"
+# 381 "data/rival_battles.pory"
 	call GetRivalMusic
-# 353 "data/rival_battles.pory"
+# 382 "data/rival_battles.pory"
 	trainerbattle_no_intro TRAINER_JAKSON_3, Battle03_JaksonText_BattleVictory
-# 354 "data/rival_battles.pory"
+# 383 "data/rival_battles.pory"
 	call GetRivalForNameBox
-# 355 "data/rival_battles.pory"
+# 384 "data/rival_battles.pory"
 	msgbox Battle03_JaksonText_PostBattle
-# 356 "data/rival_battles.pory"
+# 385 "data/rival_battles.pory"
 	closemessage
-# 357 "data/rival_battles.pory"
+# 386 "data/rival_battles.pory"
 	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2
-# 358 "data/rival_battles.pory"
+# 387 "data/rival_battles.pory"
 	compare VAR_TEMP_0, 31
 	goto_if_eq Jakson_Battle03_7
-# 363 "data/rival_battles.pory"
+# 392 "data/rival_battles.pory"
 	applymovement 48, Common_Movement_WalkRight
-# 364 "data/rival_battles.pory"
+# 393 "data/rival_battles.pory"
 	waitmovement 0
 Jakson_Battle03_6:
-# 366 "data/rival_battles.pory"
+# 395 "data/rival_battles.pory"
 	applymovement 48, Common_Movement_WalkUp7
-# 367 "data/rival_battles.pory"
+# 396 "data/rival_battles.pory"
 	waitmovement 0
-# 368 "data/rival_battles.pory"
+# 397 "data/rival_battles.pory"
 	removeobject 48
-# 369 "data/rival_battles.pory"
+# 398 "data/rival_battles.pory"
 	fadedefaultbgm
-# 370 "data/rival_battles.pory"
+# 399 "data/rival_battles.pory"
 	release
 	return
 
 Jakson_Battle03_4:
-# 346 "data/rival_battles.pory"
+# 375 "data/rival_battles.pory"
 	setobjectxy 48, 31, 103
 	goto Jakson_Battle03_3
 
 Jakson_Battle03_7:
-# 359 "data/rival_battles.pory"
+# 388 "data/rival_battles.pory"
 	applymovement 48, Common_Movement_WalkLeft
-# 360 "data/rival_battles.pory"
+# 389 "data/rival_battles.pory"
 	waitmovement 0
 	goto Jakson_Battle03_6
 
 
 Jakson_Battle02_Block_Text_0:
-# 332 "data/rival_battles.pory"
+# 361 "data/rival_battles.pory"
 	.string "The Murkrow sees you trying to sneak\naround and actively blocks your\lefforts.$"

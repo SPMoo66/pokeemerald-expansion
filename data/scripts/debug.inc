@@ -165,8 +165,8 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
-	warp MAP_MT_PYRE_SUMMIT, 1
-	setvar VAR_EMERALBODY_RIVAL, 3
+	warp MAP_PETALBURG_CITY, 3
+	setvar VAR_EMERALBODY_RIVAL, 1
 	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
 	release
 	end

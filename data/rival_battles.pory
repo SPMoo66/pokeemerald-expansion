@@ -268,6 +268,7 @@ script Redd_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 # Baron
 
 const BARON_BATTLE02 = 7
+const BARON_BATTLE03 = 27
 
 script Baron_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 	if (var(VAR_EMERALBODY_RIVAL) == 0) { // Check if Baron is your rival
@@ -297,6 +298,37 @@ script Baron_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		setflag (FLAG_TEMP_2)
 		fadescreenswapbuffers (FADE_TO_BLACK)
 		removeobject (BARON_BATTLE02)
+		fadescreenswapbuffers (FADE_FROM_BLACK)
+		release
+	}
+}
+
+script Baron_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
+	if (var(VAR_EMERALBODY_RIVAL) == 0) { // Check if Baron is your rival
+		lock
+		call (Common_EventScript_PlayEmRivalBgm)
+		call (GetRivalForNameBox)
+		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+		if (var(VAR_TEMP_0) == 55) { // Trigger spot
+			applymovement (BARON_BATTLE03, Common_Movement_WalkLeft9)
+			waitmovement (0)
+		}
+		else {
+			applymovement (BARON_BATTLE03, Common_Movement_WalkLeft8)
+			waitmovement (0)
+		}
+		applymovement (BARON_BATTLE03, Common_Movement_WalkInPlaceUp)
+		waitmovement (0)
+		msgbox (Battle03_BaronText_PreBattle, MSGBOX_DEFAULT)
+		call (GetRivalMusic)
+		trainerbattle_no_intro (TRAINER_BARON_3, Battle03_BaronText_BattleVictory)
+		call (GetRivalForNameBox)
+		msgbox (Battle03_BaronText_PostBattle)
+		closemessage
+		fadedefaultbgm
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
+		fadescreenswapbuffers (FADE_TO_BLACK)
+		removeobject (BARON_BATTLE03)
 		fadescreenswapbuffers (FADE_FROM_BLACK)
 		release
 	}

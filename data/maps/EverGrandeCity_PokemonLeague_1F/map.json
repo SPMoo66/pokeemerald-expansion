@@ -12,7 +12,7 @@
   "allow_running": false,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "local_id": "LOCALID_LEAGUE_NURSE",
@@ -107,6 +107,76 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor",
       "flag": "0"
+    },
+    {
+      "local_id": "JAKSON_SCENE04",
+      "graphics_id": "OBJ_EVENT_GFX_JAKSON",
+      "x": 4,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Jakson_Town16",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "local_id": "HARPER_SCENE04",
+      "graphics_id": "OBJ_EVENT_GFX_HARPER",
+      "x": 5,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Harper_Town16",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "local_id": "REDD_SCENE04",
+      "graphics_id": "OBJ_EVENT_GFX_REDD",
+      "x": 3,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Redd_Town16",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "local_id": "SAKURA_SCENE04",
+      "graphics_id": "OBJ_EVENT_GFX_SAKURA",
+      "x": 5,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Sakura_Town16",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "local_id": "BARON_SCENE04",
+      "graphics_id": "OBJ_EVENT_GFX_BARON",
+      "x": 15,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Baron_Town16",
+      "flag": "FLAG_TEMP_1"
     }
   ],
   "warp_events": [
@@ -146,10 +216,6 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-
-  ],
-  "bg_events": [
-
-  ]
+  "coord_events": [],
+  "bg_events": []
 }

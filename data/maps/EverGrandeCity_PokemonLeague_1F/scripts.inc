@@ -1,4 +1,5 @@
 EverGrandeCity_PokemonLeague_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, EverGrandeCity_PokemonLeague_1F_OnFrame
 	map_script MAP_SCRIPT_ON_TRANSITION, EverGrandeCity_PokemonLeague_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
 	.byte 0
@@ -6,8 +7,15 @@ EverGrandeCity_PokemonLeague_1F_MapScripts::
 EverGrandeCity_PokemonLeague_1F_OnTransition:
 	setrespawn HEAL_LOCATION_EVER_GRANDE_CITY_POKEMON_LEAGUE
 	setflag FLAG_LANDMARK_POKEMON_LEAGUE
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 15, Rival_Scene04_SetRivalPositions @ Moves all Rivals into position for Scene04
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 16, EventScript_Clear_FlagTemp1 @ Show Rivals
 	call_if_unset FLAG_ENTERED_ELITE_FOUR, EverGrandeCity_PokemonLeague_1F_EventScript_GuardsBlockDoor
 	end
+
+EverGrandeCity_PokemonLeague_1F_OnFrame:
+	map_script_2 VAR_EMERALBODY_RIVAL_STATE, 15, Rival_Scene04
+	.2byte 0
 
 EverGrandeCity_PokemonLeague_1F_EventScript_GuardsBlockDoor::
 	setobjectxyperm LOCALID_LEAGUE_GUARD_1, 9, 2

@@ -446,6 +446,14 @@ Common_Movement_WalkFastLeft9:
 	walk_fast_left
 	step_end
 
+Common_Movement_JumpInPlaceDown:
+	jump_in_place_down
+	step_end
+
+Common_Movement_JumpInPlaceRight:
+	jump_in_place_right
+	step_end
+
 Common_Movement_JumpUp:
 	jump_up
 	step_end

@@ -293,10 +293,10 @@ script Route101_PichuGift {
 					"I still remember when I…"))
 	closemessage
 	playse (SE_LEDGE)
-	applymovement (PICHU, PichuJump)
+	applymovement (PICHU, Common_Movement_JumpInPlaceRight)
 	waitmovement (0)
 	playse (SE_LEDGE)
-	applymovement (PICHU, PichuJump)
+	applymovement (PICHU, Common_Movement_JumpInPlaceRight)
 	waitmovement (0)
 	if (var(VAR_TEMP_1) == 5) {
 		applymovement (BIANCA, Common_Movement_WalkInPlaceUp)
@@ -383,10 +383,6 @@ movement PichuMoveRight2 {
 	face_right
 	delay_16
 	walk_right * 4
-}
-
-movement PichuJump {
-	jump_in_place_right
 }
 
 movement PichuDisappear {

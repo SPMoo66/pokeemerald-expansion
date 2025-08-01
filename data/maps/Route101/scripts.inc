@@ -554,13 +554,13 @@ Route101_PichuGift_1:
 # 295 "data/maps/Route101/scripts.pory"
 	playse SE_LEDGE
 # 296 "data/maps/Route101/scripts.pory"
-	applymovement 8, PichuJump
+	applymovement 8, Common_Movement_JumpInPlaceRight
 # 297 "data/maps/Route101/scripts.pory"
 	waitmovement 0
 # 298 "data/maps/Route101/scripts.pory"
 	playse SE_LEDGE
 # 299 "data/maps/Route101/scripts.pory"
-	applymovement 8, PichuJump
+	applymovement 8, Common_Movement_JumpInPlaceRight
 # 300 "data/maps/Route101/scripts.pory"
 	waitmovement 0
 # 301 "data/maps/Route101/scripts.pory"
@@ -790,71 +790,65 @@ PichuMoveRight2:
 	step_end
 
 # 388 "data/maps/Route101/scripts.pory"
-PichuJump:
+PichuDisappear:
 # 389 "data/maps/Route101/scripts.pory"
 	jump_in_place_right
-	step_end
-
-# 392 "data/maps/Route101/scripts.pory"
-PichuDisappear:
-# 393 "data/maps/Route101/scripts.pory"
-	jump_in_place_right
-# 394 "data/maps/Route101/scripts.pory"
+# 390 "data/maps/Route101/scripts.pory"
 	delay_16
-# 395 "data/maps/Route101/scripts.pory"
+# 391 "data/maps/Route101/scripts.pory"
 	delay_8
-# 396 "data/maps/Route101/scripts.pory"
+# 392 "data/maps/Route101/scripts.pory"
 	set_invisible
 	step_end
 
-# 399 "data/maps/Route101/scripts.pory"
+# 395 "data/maps/Route101/scripts.pory"
 BiancaLedgeLeave:
-# 400 "data/maps/Route101/scripts.pory"
+# 396 "data/maps/Route101/scripts.pory"
 	jump_2_down
-# 401 "data/maps/Route101/scripts.pory"
+# 397 "data/maps/Route101/scripts.pory"
 	walk_down
-# 401 "data/maps/Route101/scripts.pory"
+# 397 "data/maps/Route101/scripts.pory"
 	walk_down
-# 401 "data/maps/Route101/scripts.pory"
+# 397 "data/maps/Route101/scripts.pory"
 	walk_down
-# 401 "data/maps/Route101/scripts.pory"
+# 397 "data/maps/Route101/scripts.pory"
 	walk_down
-# 402 "data/maps/Route101/scripts.pory"
+# 398 "data/maps/Route101/scripts.pory"
 	set_invisible
 	step_end
 
 Route101_MapScripts::
-# 406 "data/maps/Route101/scripts.pory"
+# 402 "data/maps/Route101/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION
-# 414 "data/maps/Route101/scripts.pory"
+# 410 "data/maps/Route101/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route101_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
 Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION:
-# 407 "data/maps/Route101/scripts.pory"
+# 403 "data/maps/Route101/scripts.pory"
 	setflag FLAG_TEMP_1
-# 408 "data/maps/Route101/scripts.pory"
+# 404 "data/maps/Route101/scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 1
 	goto_if_eq Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
-# 411 "data/maps/Route101/scripts.pory"
+# 407 "data/maps/Route101/scripts.pory"
 	call ProfBirch_EventScript_UpdateLocation
 	return
 
 Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
-# 409 "data/maps/Route101/scripts.pory"
+# 405 "data/maps/Route101/scripts.pory"
 	clearflag FLAG_TEMP_1
 	goto Route101_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
 Route101_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-# 415 "data/maps/Route101/scripts.pory"
+# 411 "data/maps/Route101/scripts.pory"
 	map_script_2 VAR_ROUTE101_STATE, 0, Route101_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0
 	.2byte 0
 
 Route101_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0:
-# 416 "data/maps/Route101/scripts.pory"
+# 412 "data/maps/Route101/scripts.pory"
 	setflag FLAG_HIDE_MAP_NAME_POPUP
-# 417 "data/maps/Route101/scripts.pory"
+# 413 "data/maps/Route101/scripts.pory"
 	setvar VAR_ROUTE101_STATE, 1
 	return
 

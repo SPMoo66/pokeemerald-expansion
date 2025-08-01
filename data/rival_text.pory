@@ -1301,7 +1301,7 @@ text Battle04_HarperText_PreBattle {
 	"I'm giving it a 2nd try myself.\p"
 	"Maybe… I think some moves let me\n"
 	"move first. I could try that?\p"
-	"Ugh…Maybe not though. I could just\n"
+	"Ugh… Maybe not though. I could just\n"
 	"go get a few more levels first.\p"
 	"Which… Hmm…\p"
 	"Hey, {PLAYER}. You got those good\n"
@@ -1317,7 +1317,7 @@ text Battle04_HarperText_BattleVictory {
 text Battle04_HarperText_PostBattle {
 	"Why do you have to be so good at\n"
 	"this, {PLAYER}?\p"
-	"Oh well, if only I  used that one\n"
+	"Oh well, if only I used that one\n"
 	"move instead of the other… That\l"
 	"could've turned the tide, maybe.\p"
 	"If I got another one of those Choice\n"

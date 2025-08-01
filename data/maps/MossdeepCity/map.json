@@ -35,7 +35,7 @@
       "x": 38,
       "y": 12,
       "elevation": 5,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -61,7 +61,7 @@
       "x": 32,
       "y": 12,
       "elevation": 5,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -282,6 +282,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Jakson_Town12",
       "flag": "FLAG_TEMP_1"
+    },
+    {
+      "local_id": "HARPER_BATTLE04",
+      "graphics_id": "OBJ_EVENT_GFX_HARPER",
+      "x": 33,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
     }
   ],
   "warp_events": [
@@ -446,6 +460,15 @@
       "var": "VAR_MOSSDEEP_CITY_STATE",
       "var_value": "1",
       "script": "MossdeepCity_EventScript_TeamMagmaEnterSpaceCenter"
+    },
+    {
+      "type": "trigger",
+      "x": 38,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var_value": "2",
+      "script": "Harper_Battle04"
     }
   ],
   "bg_events": [

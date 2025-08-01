@@ -298,8 +298,10 @@ text Town03_BaronText2 {
 text Town03_HarperText {
 	format(	"Cool, an actual city. Wonder if they have much of a night life?\p"
 			"… … … What?\p"
-			"There's no… night in this game?\p"
-			"Sigh…")
+			"There's no… night in this game's base\n"
+			"version?\p"
+			"So… it wouldn't have that in the\n"
+			"game…?")
 }
 
 text Town03_JaksonText {

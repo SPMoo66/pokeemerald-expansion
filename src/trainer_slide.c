@@ -114,6 +114,71 @@ static const u8 sText_LastSwitch_May[] = _("My last…\nI'm counting on you!{PAU
 static const u8 sText_Mega_May[] = _("{B_PLAYER_NAME}, can you keep up with this?{PAUSE_UNTIL_PRESS}");
 static const u8 sText_LastHalf_May[] = _("{B_PLAYER_NAME}…\nYou could just be able…{PAUSE_UNTIL_PRESS}");
 
+static const u8 sText_BeforeFirstTurn_Jakson1[] = _("Alright now, show me what you've got\nso far!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Jakson2[] = _("Don't think you'll recognize anything.\nMy team won't make it that easy on\lyou.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Jakson3[] = _("{B_PLAYER_NAME}… One final battle.\nLet's get this started.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Harper1[] = _("So… I select attacks…?{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Harper2[] = _("Another fight, then? Well, feel free\nto throw it if you don't care.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Harper3[] = _("No more confusion. No more questions.\nI'm ready for this, {B_PLAYER_NAME}.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Redd1[] = _("Heh. Like riding a bike.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Redd2[] = _("Rival {B_PLAYER_NAME} challenges me to a\nbattle! Let's see if you're keeping up.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Redd3[] = _("Nowhere to go but to victory or defeat.\nLet's do this, {B_PLAYER_NAME}.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Sakura1[] = _("It's time to crush you just like the\nrest{EMOJI_TILDE}{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Sakura2[] = _("Cuteness Inspector Sakura, reporting\nfor duty!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Sakura3[] = _("Now, {B_PLAYER_NAME}, judgment comes for\nyour final team.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Baron1[] = _("Wait, what's going on?{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Baron2[] = _("Yes. A battle. I've got this. I indeed\ndo have this handled. Buttons and all.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BeforeFirstTurn_Baron3[] = _("Please do try your best. I'll face your\ntest of me just as you face mine.{PAUSE_UNTIL_PRESS}");
+
+static const u8 sText_FirstSuperEffectiveHit_Jakson1[] = _("Ah, so you do know your type matchups!\nGood! You're not completely new to this.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_Jakson2[] = _("Ah… I was hoping you wouldn't see\nthat opening.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_Jakson3[] = _("Just a necessary sacrifice!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_Harper1[] = _("Woah?! That did SO much more!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_Harper2[] = _("I knew I should've switched…{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_Harper3[] = _("Agh. Do you know my critters better\nthan I do, maybe?{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_Redd1[] = _("Shoot, I forgot about that matchup!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_Redd2[] = _("Ah… Right. That's a weakness now,\nisn't it?{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_Redd3[] = _("Damn, you remembered that one. I'll\njust have to strike back even harder!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_Sakura1[] = _("Good one!\nBut don't forget I can do that too!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_Sakura2[] = _("All punishment will be paid back\ntwofold!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_Sakura3[] = _("Hmph! Tis just a scratch.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_Baron1[] = _("Why did the gauge thing go down that\nmuch?! Did I do something wrong?{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_Baron2[] = _("So that's a weakness… I'll try to\nremember that one for next time!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_FirstSuperEffectiveHit_Baron3[] = _("That's okay. We won't be able to get\nthrough a battle without some of\lour weaknesses getting hit.{PAUSE_UNTIL_PRESS}");
+
+static const u8 sText_MegaEvolution_Jakson[] = _("Watch this comeback! Tyranitar!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_MegaEvolution_Harper[] = _("Time to get BIG! Corviknight!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_MegaEvolution_Redd[] = _("Charizard… mega evolve to…!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_MegaEvolution_Sakura[] = _("Haxorus, bring down the blade of\njudment on your foe!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_MegaEvolution_Baron[] = _("Alright, just press {START_BUTTON} and…{PAUSE_UNTIL_PRESS}");
+
+static const u8 sText_LastSwitch_Jakson1[] = _("You've got me on the ropes. Nice\nstrategizing!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_Jakson2[] = _("You keep pushing me to last resorts.\nDon't think this is over yet!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_Jakson3[] = _("Do you think I haven't planned for\nthis? Time for the turnabout!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_Harper1[] = _("Uh… Just the one left? Shoot.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_Harper2[] = _("Hey! You don't need to fight back\nTHAT enthusiastically.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_Harper3[] = _("…Just the one left? Okay.\nWe can do this. I can do this.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_Redd1[] = _("Tsk. And that was a top percentage\nRattata you took out.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_Redd2[] = _("I choose you, Pikachu!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_Redd3[] = _("It's now that I need my research to\nall pay off. Here goes nothing!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_Sakura1[] = _("You pushed me to use all of my\nPokémon? What a twist…!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_Sakura2[] = _("I saved the best for last!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_Sakura3[] = _("The ultimate finale is here!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_Baron1[] = _("Oh, I had more? I think this is my last?{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_Baron2[] = _("Uh… last one. I'll do my best to give\nyou a challenge to the end.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastSwitch_Baron3[] = _("Just calm down… think…\nI can do this. I can.{PAUSE_UNTIL_PRESS}");
+
+static const u8 sText_LastHalf_Jakson2[] = _("One last play. I need to see how\nyou handle this strategy.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastHalf_Jakson3[] = _("We're here again… Alright. One last\ntry. One last strategy. Face it like\lyou have so well before.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastHalf_Harper2[] = _("Hey, would it be okay if I grabbed\nanother from the box real quick…\lNo?{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastHalf_Harper3[] = _("What left to do…? Is this the\nextent of what I can achieve?{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastHalf_Redd2[] = _("In cases like this… what to do…?{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastHalf_Redd3[] = _("Right at the finish line! Come on!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastHalf_Sakura2[] = _("Hah… You've… uh… activated my\ntrap card? What else is there left\lto try…?{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastHalf_Sakura3[] = _("Even on the edge of defeat, Sakura\nshall find a way to win! That is the\lfate of such things!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastHalf_Baron2[] = _("Well, this doesn't look good.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_LastHalf_Baron3[] = _("This is okay. It is. I'll go to the very\nend, but perhaps this is for the best.{PAUSE_UNTIL_PRESS}");
+
 
 static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_SLIDE_COUNT] =
 {
@@ -432,7 +497,187 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Let's go, team!"),
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Come on, Gallade!"),
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Not so fast, {B_PLAYER_NAME}!\nIt's not over yet!"),
-        }
+        },
+
+        [TRAINER_JAKSON_1] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Jakson1,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Jakson1,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Jakson1,
+        },
+        [TRAINER_HARPER_1] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Harper1,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Harper1,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Harper1,
+        },
+        [TRAINER_REDD_1] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Redd1,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Redd1,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Redd1,
+        },
+        [TRAINER_SAKURA_1] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Sakura1,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Sakura1,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Sakura1,
+        },
+        [TRAINER_BARON_1] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Baron1,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Baron1,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Baron1,
+        },
+
+        [TRAINER_JAKSON_2] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Jakson2,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Jakson2,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Jakson2,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Jakson2,
+        },
+        [TRAINER_HARPER_2] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Harper2,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Harper2,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Harper2,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Harper2,
+        },
+        [TRAINER_REDD_2] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Redd2,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Redd2,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Redd2,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Redd2,
+        },
+        [TRAINER_SAKURA_2] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Sakura2,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Sakura2,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Sakura2,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Sakura2,
+        },
+        [TRAINER_BARON_2] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Baron2,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Baron2,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Baron2,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Baron2,
+        },
+
+        [TRAINER_JAKSON_3] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Jakson2,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Jakson2,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Jakson2,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Jakson2,
+        },
+        [TRAINER_HARPER_3] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Harper2,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Harper2,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Harper2,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Harper2,
+        },
+        [TRAINER_REDD_3] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Redd2,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Redd2,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Redd2,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Redd2,
+        },
+        [TRAINER_SAKURA_3] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Sakura2,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Sakura2,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Sakura2,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Sakura2,
+        },
+        [TRAINER_BARON_3] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Baron2,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Baron2,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Baron2,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Baron2,
+        },
+
+        [TRAINER_JAKSON_4] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Jakson2,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Jakson2,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Jakson2,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Jakson2,
+        },
+        [TRAINER_HARPER_4] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Harper2,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Harper2,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Harper2,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Harper2,
+        },
+        [TRAINER_REDD_4] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Redd2,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Redd2,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Redd2,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Redd2,
+        },
+        [TRAINER_SAKURA_4] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Sakura2,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Sakura2,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Sakura2,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Sakura2,
+        },
+        [TRAINER_BARON_4] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Baron2,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Baron2,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Baron2,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Baron2,
+        },
+
+        [TRAINER_JAKSON_5] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Jakson3,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Jakson3,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] =                         sText_MegaEvolution_Jakson,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Jakson3,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Jakson3,
+        },
+        [TRAINER_HARPER_5] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Harper3,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Harper3,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] =                         sText_MegaEvolution_Harper,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Harper3,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Harper3,
+        },
+        [TRAINER_REDD_5] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Redd3,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Redd3,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] =                         sText_MegaEvolution_Redd,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Redd3,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Redd3,
+        },
+        [TRAINER_SAKURA_5] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Sakura3,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Sakura3,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] =                         sText_MegaEvolution_Sakura,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Sakura3,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Sakura3,
+        },
+        [TRAINER_BARON_5] =
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Baron3,
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Baron3,
+            [TRAINER_SLIDE_MEGA_EVOLUTION] =                         sText_MegaEvolution_Baron,
+            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Baron3,
+            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Baron3,
+        },
     },
 };
 

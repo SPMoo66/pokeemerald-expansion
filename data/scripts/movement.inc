@@ -496,6 +496,10 @@ Common_Movement_SetVisible:
 Common_Movement_WalkUpSlow::
     walk_slow_up
     step_end
+Common_Movement_WalkUpSlow2::
+    walk_slow_up
+    walk_slow_up
+    step_end
 
 Common_Movement_WalkDownSlow::
     walk_slow_down

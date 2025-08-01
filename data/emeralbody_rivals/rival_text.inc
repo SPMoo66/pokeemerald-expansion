@@ -2000,7 +2000,7 @@ Town16_SakuraText::
 	.string "void, then dive down and swim your\l"
 	.string "way to the end.\p"
 	.string "Just make sure not to save while you're\n"
-	.string "underwater there! You mgith surface in\l"
+	.string "underwater there! You might surface in\l"
 	.string "the Mystery Zone if you do.\p"
 	.string "Heheh{EMOJI_TILDE}\p"
 	.string "Cuteness Inspector Sakura has all\n"

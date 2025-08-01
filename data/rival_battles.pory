@@ -576,7 +576,7 @@ script Jakson_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2,  There are c
 	waitmovement (0)
 	msgbox (Battle04_JaksonText_PreBattle, MSGBOX_DEFAULT)
 	call (GetRivalMusic)
-	//trainerbattle_no_intro (TRAINER_JAKSON_4, Battle04_JaksonText_BattleVictory)
+	trainerbattle_no_intro (TRAINER_JAKSON_4, Battle04_JaksonText_BattleVictory)
 	call (GetRivalForNameBox)
 	msgbox (Battle04_JaksonText_PostBattle)
 	closemessage

@@ -1104,6 +1104,8 @@ Jakson_Battle04::
 	msgbox Battle04_JaksonText_PreBattle, MSGBOX_DEFAULT
 # 578 "data/rival_battles.pory"
 	call GetRivalMusic
+# 579 "data/rival_battles.pory"
+	trainerbattle_no_intro TRAINER_JAKSON_4, Battle04_JaksonText_BattleVictory
 # 580 "data/rival_battles.pory"
 	call GetRivalForNameBox
 # 581 "data/rival_battles.pory"

@@ -167,7 +167,7 @@ Debug_EventScript_Script_4::
 Debug_EventScript_Script_5::
 	warp MAP_LILYCOVE_CITY, 9
 	setvar VAR_EMERALBODY_RIVAL, 0
-	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2
 	release
 	end
 

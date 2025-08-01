@@ -367,7 +367,7 @@
       "flag": "FLAG_ALWAYS_SET"
     },
     {
-      "local_id": "BARON_BATTLE03",
+      "local_id": "BARON_BATTLE04",
       "graphics_id": "OBJ_EVENT_GFX_BARON",
       "x": 64,
       "y": 23,
@@ -524,8 +524,8 @@
       "y": 22,
       "elevation": 0,
       "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
-      "var_value": "1",
-      "script": "Baron_Battle03"
+      "var_value": "2",
+      "script": "Baron_Battle04"
     },
     {
       "type": "trigger",
@@ -533,8 +533,8 @@
       "y": 22,
       "elevation": 0,
       "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
-      "var_value": "1",
-      "script": "Baron_Battle03"
+      "var_value": "2",
+      "script": "Baron_Battle04"
     }
   ],
   "bg_events": [

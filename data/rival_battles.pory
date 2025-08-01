@@ -318,7 +318,7 @@ script Redd_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 		msgbox (Battle04_ReddText_PostBattle1)
 		setvar (VAR_0x8004, 1) // This forces the result of the following specialvar to return numbers from the National Dex
 		specialvar (VAR_RESULT, ScriptGetPokedexInfo) // VAR_0x8005 is seen, VAR_0x8006 is caught
-		if (var(VAR_0x8006) >= 50) { // If caught "more than Redd"
+		if (var(VAR_0x8006) >= 75) { // If caught "more than Redd"
 			msgbox (Battle04_ReddText_PostBattle2b)
 		}
 		else { // If caught "less than Redd"

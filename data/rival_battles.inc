@@ -569,7 +569,7 @@ Redd_Battle04_5:
 # 320 "data/rival_battles.pory"
 	specialvar VAR_RESULT, ScriptGetPokedexInfo
 # 321 "data/rival_battles.pory"
-	compare VAR_0x8006, 50
+	compare VAR_0x8006, 75
 	goto_if_ge Redd_Battle04_10
 # 325 "data/rival_battles.pory"
 	msgbox Battle04_ReddText_PostBattle2a

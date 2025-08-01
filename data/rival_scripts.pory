@@ -30,9 +30,12 @@ script Rival_Scene01 {
 		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
 		switch (var(VAR_TEMP_1)) {
 			case 17:
-				applymovement (RIVAL_LITTLEROOT, Common_Movement_FaceUp)
+				applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
+				applymovement (RIVAL_LITTLEROOT, Common_Movement_WalkInPlaceUp)
 				waitmovement (0)
 			default:
+				applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceRight)
+				waitmovement (0)
 		}
 		call (GetRivalForNameBox)
 		switch (var(VAR_EMERALBODY_RIVAL)) {

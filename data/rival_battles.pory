@@ -474,6 +474,7 @@ script Baron_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 const JAKSON_BATTLE02 = 7
 const JAKSON_BATTLE02_MURKROW = 6
 const JAKSON_BATTLE03 = 48
+const JAKSON_BATTLE04 = 4
 
 script Jakson_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 	if (var(VAR_EMERALBODY_RIVAL) == 2) { // Check if Jakson is your rival
@@ -564,4 +565,30 @@ script Jakson_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 		fadedefaultbgm
 		release
 	}
+}
+
+script Jakson_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2,  There are checks on the map to see if Jakson is your rival
+	lock
+	call (Common_EventScript_PlayEmRivalBgm)
+	call (GetRivalForNameBox)
+	delay (30)
+	applymovement (JAKSON_BATTLE04, Common_Movement_WalkDown2)
+	waitmovement (0)
+	msgbox (Battle04_JaksonText_PreBattle, MSGBOX_DEFAULT)
+	call (GetRivalMusic)
+	//trainerbattle_no_intro (TRAINER_JAKSON_4, Battle04_JaksonText_BattleVictory)
+	call (GetRivalForNameBox)
+	msgbox (Battle04_JaksonText_PostBattle)
+	closemessage
+	setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft)
+	applymovement (JAKSON_BATTLE04, Common_Movement_WalkDown)
+	waitmovement (0)
+	delay (10)
+	removeobject (JAKSON_BATTLE04)
+	playse (SE_EXIT)
+	waitse
+	release
 }

@@ -165,8 +165,8 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
-	warp MAP_CAVE_OF_ORIGIN_1F, 0
-	setvar VAR_EMERALBODY_RIVAL, 4
+	warp MAP_SOOTOPOLIS_CITY, 2
+	setvar VAR_EMERALBODY_RIVAL, 2
 	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2
 	release
 	end

@@ -1458,7 +1458,7 @@ Battle04_JaksonText_PreBattle::
 	.string "action.” I assume that's what you're\l"
 	.string "thinking right around now.\p"
 	.string "I won't say I'm fully out of surprises.\n"
-	.string "There may ve a few more arcs to hit\l"
+	.string "There may be a few more arcs to hit\l"
 	.string "their peak, even still.\p"
 	.string "For example… {EMOJI_BIGWHEEL}Clears throat{EMOJI_BIGWHEEL}\p"
 	.string "You don't think you'll get past\n"

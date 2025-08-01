@@ -165,8 +165,8 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
-	warp MAP_PETALBURG_CITY, 3
-	setvar VAR_EMERALBODY_RIVAL, 1
+	warp MAP_LILYCOVE_CITY, 9
+	setvar VAR_EMERALBODY_RIVAL, 0
 	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
 	release
 	end

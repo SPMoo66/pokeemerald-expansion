@@ -165,8 +165,8 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
-	warp MAP_MOSSDEEP_CITY, 2
-	setvar VAR_EMERALBODY_RIVAL, 1
+	warp MAP_MOSSDEEP_CITY_SPACE_CENTER_2F, 0
+	setvar VAR_EMERALBODY_RIVAL, 3
 	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2
 	release
 	end

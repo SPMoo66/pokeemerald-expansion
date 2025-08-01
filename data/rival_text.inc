@@ -1532,7 +1532,7 @@ Battle04_ReddText_PostBattle2a::
 Battle04_ReddText_PostBattle2b::
 # 1421 "data/rival_text.pory"
 	.string "We're… not so far off in terms of\n"
-	.string "our research… But! But I've seen\n"
+	.string "our research… But! But I've seen\l"
 	.string "your team now. So be prepared.$"
 
 Battle04_ReddText_PostBattle3::

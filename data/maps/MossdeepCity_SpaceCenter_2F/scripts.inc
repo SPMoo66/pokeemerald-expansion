@@ -4,8 +4,10 @@ MossdeepCity_SpaceCenter_2F_MapScripts::
 	.byte 0
 
 MossdeepCity_SpaceCenter_2F_OnTransition:
+	setflag FLAG_TEMP_1
 	call_if_eq VAR_MOSSDEEP_CITY_STATE, 2, MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians
 	call_if_eq VAR_MOSSDEEP_SPACE_CENTER_STATE, 2, MossdeepCity_SpaceCenter_2F_EventScript_MoveDefeatedGrunts
+	call_if_eq VAR_EMERALBODY_RIVAL, 3, MossdeepCity_SpaceCenter_2F_EventScript_CheckIfReddAvailable
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians::
@@ -22,6 +24,10 @@ MossdeepCity_SpaceCenter_2F_EventScript_MoveDefeatedGrunts::
 	setobjectxyperm LOCALID_SPACE_CENTER_GRUNT_6, 11, 2
 	setobjectxyperm LOCALID_SPACE_CENTER_COURTNEY, 15, 2
 	setobjectxyperm LOCALID_SPACE_CENTER_GRUNT_5, 13, 4
+	return
+
+MossdeepCity_SpaceCenter_2F_EventScript_CheckIfReddAvailable::
+	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2, EventScript_Clear_FlagTemp1 @ Show Redd
 	return
 
 MossdeepCity_SpaceCenter_2F_OnFrame:

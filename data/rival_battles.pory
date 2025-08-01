@@ -179,6 +179,7 @@ script Sakura_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 
 const REDD_BATTLE02 = 40
 const REDD_BATTLE03 = 5
+const REDD_BATTLE04 = 10
 
 script Redd_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 	if (var(VAR_EMERALBODY_RIVAL) == 3) { // Check if Redd is your rival
@@ -287,6 +288,50 @@ script Redd_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 		waitse
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
+		release
+	}
+}
+
+script Redd_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
+	if (var(VAR_EMERALBODY_RIVAL) == 3 && flag(FLAG_BADGE07_GET)) { // Check if Redd is your rival and if beaten Mossdeep gym
+		lock
+		call (Common_EventScript_PlayEmRivalBgm)
+		call (GetRivalForNameBox)
+		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+		if (var(VAR_TEMP_1) == 5) { // Walked in front of Redd
+			applymovement (REDD_BATTLE04, Common_Movement_ExclamationMark)
+			playse (SE_PIN)
+			delay (60)
+			applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceRight)
+			if (var(VAR_TEMP_0) == 13) { // Further from Redd
+				applymovement (REDD_BATTLE04, Common_Movement_WalkLeft)
+			} // else next to Redd
+			waitmovement (0)
+		}
+		else { // Spoken to Redd
+			faceplayer
+		}
+		msgbox (Battle04_ReddText_PreBattle, MSGBOX_DEFAULT)
+		call (GetRivalMusic)
+		trainerbattle_no_intro (TRAINER_REDD_4, Battle04_ReddText_BattleVictory)
+		call (GetRivalForNameBox)
+		msgbox (Battle04_ReddText_PostBattle1)
+		setvar (VAR_0x8004, 1) // This forces the result of the following specialvar to return numbers from the National Dex
+		specialvar (VAR_RESULT, ScriptGetPokedexInfo) // VAR_0x8005 is seen, VAR_0x8006 is caught
+		if (var(VAR_0x8006) >= 50) { // If caught "more than Redd"
+			msgbox (Battle04_ReddText_PostBattle2b)
+		}
+		else { // If caught "less than Redd"
+			msgbox (Battle04_ReddText_PostBattle2a)
+		}
+		msgbox (Battle04_ReddText_PostBattle3)
+		closemessage
+		fadescreenswapbuffers (FADE_TO_BLACK)
+		removeobject (REDD_BATTLE04)
+		fadescreenswapbuffers (FADE_FROM_BLACK)
+		fadedefaultbgm
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3)
+		setflag (FLAG_TEMP_1)
 		release
 	}
 }

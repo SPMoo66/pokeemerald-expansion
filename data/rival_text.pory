@@ -1420,7 +1420,7 @@ text Battle04_ReddText_PostBattle2a {
 
 text Battle04_ReddText_PostBattle2b {
 	"We're… not so far off in terms of\n"
-	"our research… But! But I've seen\n"
+	"our research… But! But I've seen\l"
 	"your team now. So be prepared."
 }
 

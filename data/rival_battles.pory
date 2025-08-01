@@ -105,6 +105,7 @@ script Harper_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 
 const SAKURA_BATTLE02 = 3
 const SAKURA_BATTLE03 = 8
+const SAKURA_BATTLE04 = 1
 
 script Sakura_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 	if (var(VAR_EMERALBODY_RIVAL) == 4) { // Check if Sakura is your rival
@@ -171,6 +172,26 @@ script Sakura_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 	setmetatile (13, 11, 0x208, FALSE)
 	special (DrawWholeMapView)
 	delay (30)
+	release
+}
+
+script Sakura_Battle04 {
+	lock
+	call (Common_EventScript_PlayEmRivalBgm)
+	call (GetRivalForNameBox)
+	msgbox (Battle04_SakuraText_PreBattle, MSGBOX_DEFAULT)
+	call (GetRivalMusic)
+	trainerbattle_no_intro (TRAINER_SAKURA_4, Battle04_SakuraText_BattleVictory)
+	call (GetRivalForNameBox)
+	msgbox(Battle04_SakuraText_PostBattle)
+	closemessage
+	setfieldeffectargument (0, 1)
+	dofieldeffect (FLDEFF_NPCFLY_OUT)
+	delay (15)
+	removeobject (SAKURA_BATTLE04)
+	waitfieldeffect (FLDEFF_NPCFLY_OUT)
+	setflag (FLAG_TEMP_1)
+	setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3)
 	release
 }
 

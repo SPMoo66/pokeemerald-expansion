@@ -13357,37 +13357,44 @@ static const struct TrainerMon sParty_Steven[] = {
     {
     .lvl = 75,
     .species = SPECIES_KORAIDON,
+	.ability = ABILITY_ORICHALCUM_PULSE,
     .heldItem = ITEM_CHOICE_SCARF,
     .moves = {MOVE_FLARE_BLITZ, MOVE_COLLISION_COURSE, MOVE_OUTRAGE, MOVE_U_TURN}
     },
     {
     .lvl = 75,
     .species = SPECIES_MIRAIDON,
+	.ability = ABILITY_HADRON_ENGINE,
     .heldItem = ITEM_GRASS_GEM,
     .moves = {MOVE_DRACO_METEOR, MOVE_ELECTRO_DRIFT, MOVE_TAUNT, MOVE_SOLAR_BEAM}
     },
     {
     .lvl = 76,
     .species = SPECIES_CRADILY,
+	.ability = ABILITY_STORM_DRAIN,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_PROTECT, MOVE_CONFUSE_RAY}
     },
     {
     .lvl = 77,
     .species = SPECIES_EXCADRILL,
+	.ability = ABILITY_MOLD_BREAKER,
     .heldItem = ITEM_ASSAULT_VEST,
     .moves = {MOVE_HYPER_DRILL, MOVE_EARTHQUAKE, MOVE_RAPID_SPIN, MOVE_ROCK_SLIDE}
     },
     {
     .lvl = 78,
     .species = SPECIES_SKARMORY_FRIBIAN,
+	.ability = ABILITY_SPEED_BOOST,
     .heldItem = ITEM_LIFE_ORB,
     .moves = {MOVE_SACRED_FIRE, MOVE_EXTREME_SPEED, MOVE_BRAVE_BIRD, MOVE_BURNING_BULWARK}
     },
     {
     .lvl = 78,
     .species = SPECIES_METAGROSS,
+	.ability = ABILITY_CLEAR_BODY,
     .heldItem = ITEM_MEGA_STONE_X,
+	.isShiny = TRUE,
     .moves = {MOVE_METEOR_MASH, MOVE_ZEN_HEADBUTT, MOVE_SHIFT_GEAR, MOVE_PURSUIT}
     }
 };
@@ -15382,6 +15389,7 @@ static const struct TrainerMon sParty_Sakura4[] = {
     .species = SPECIES_ABSOL,
     .ability = ABILITY_SUPER_LUCK,
     .heldItem = ITEM_CHOICE_BAND,
+	.isShiny = TRUE,
     .moves = {MOVE_SUCKER_PUNCH, MOVE_KNOCK_OFF, MOVE_IRON_TAIL, MOVE_PSYCHO_CUT}
     }
 };

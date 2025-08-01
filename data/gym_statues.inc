@@ -119,7 +119,7 @@ LavaridgeTown_Gym_1F_EventScript_GymStatue::
 # 138 "data/gym_statues.pory"
 	goto_if_set FLAG_RECEIVED_RED_OR_BLUE_ORB, LavaridgeTown_Gym_1F_EventScript_GymStatue_2
 # 141 "data/gym_statues.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 7
+	compare VAR_EMERALBODY_RIVAL_STATE, 8
 	goto_if_ge LavaridgeTown_Gym_1F_EventScript_GymStatue_3
 # 144 "data/gym_statues.pory"
 	goto_if_set FLAG_BADGE04_GET, LavaridgeTown_Gym_1F_EventScript_GymStatue_4
@@ -156,7 +156,7 @@ PetalburgCity_Gym_EventScript_GymStatue::
 # 157 "data/gym_statues.pory"
 	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, PetalburgCity_Gym_EventScript_GymStatue_2
 # 160 "data/gym_statues.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 7
+	compare VAR_EMERALBODY_RIVAL_STATE, 9
 	goto_if_ge PetalburgCity_Gym_EventScript_GymStatue_3
 # 163 "data/gym_statues.pory"
 	goto_if_set FLAG_BADGE05_GET, PetalburgCity_Gym_EventScript_GymStatue_4
@@ -193,7 +193,7 @@ FortreeCity_Gym_EventScript_GymStatue::
 # 176 "data/gym_statues.pory"
 	goto_if_set FLAG_BADGE07_GET, FortreeCity_Gym_EventScript_GymStatue_2
 # 179 "data/gym_statues.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 7
+	compare VAR_EMERALBODY_RIVAL_STATE, 11
 	goto_if_ge FortreeCity_Gym_EventScript_GymStatue_3
 # 182 "data/gym_statues.pory"
 	goto_if_set FLAG_BADGE06_GET, FortreeCity_Gym_EventScript_GymStatue_4
@@ -230,7 +230,7 @@ MossdeepCity_Gym_EventScript_GymStatue::
 # 195 "data/gym_statues.pory"
 	goto_if_set FLAG_VISITED_SOOTOPOLIS_CITY, MossdeepCity_Gym_EventScript_GymStatue_2
 # 198 "data/gym_statues.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 7
+	compare VAR_EMERALBODY_RIVAL_STATE, 13
 	goto_if_ge MossdeepCity_Gym_EventScript_GymStatue_3
 # 201 "data/gym_statues.pory"
 	goto_if_set FLAG_BADGE07_GET, MossdeepCity_Gym_EventScript_GymStatue_4
@@ -265,7 +265,7 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 # 213 "data/gym_statues.pory"
 	bufferstring STR_VAR_2, CommonText_Juan
 # 214 "data/gym_statues.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 7
+	compare VAR_EMERALBODY_RIVAL_STATE, 16
 	goto_if_ge SootopolisCity_Gym_1F_EventScript_GymStatue_2
 # 217 "data/gym_statues.pory"
 	goto_if_set FLAG_BADGE08_GET, SootopolisCity_Gym_1F_EventScript_GymStatue_3

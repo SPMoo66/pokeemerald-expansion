@@ -138,7 +138,7 @@ script LavaridgeTown_Gym_1F_EventScript_GymStatue {
 	if (flag(FLAG_RECEIVED_RED_OR_BLUE_ORB)) {
 		msgbox (Text_GymStatue_Sakura_Jakson_Player_Redd_Harper_Baron_Wally, MSGBOX_DEFAULT)
 	}
-	elif (var(VAR_EMERALBODY_RIVAL_STATE) >= 7) {
+	elif (var(VAR_EMERALBODY_RIVAL_STATE) >= 8) {
 		msgbox (Text_GymStatue_Sakura_Jakson_Player_Redd_Harper_Baron, MSGBOX_DEFAULT)
 	}
 	elif (flag(FLAG_BADGE04_GET)) {
@@ -157,7 +157,7 @@ script PetalburgCity_Gym_EventScript_GymStatue {
 	if (flag(FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE)) {
 		msgbox (Text_GymStatue_Sakura_Jakson_Player_Redd_Harper_Baron_Wally, MSGBOX_DEFAULT)
 	}
-	elif (var(VAR_EMERALBODY_RIVAL_STATE) >= 7) {
+	elif (var(VAR_EMERALBODY_RIVAL_STATE) >= 9) {
 		msgbox (Text_GymStatue_Sakura_Jakson_Player_Redd_Harper_Baron, MSGBOX_DEFAULT)
 	}
 	elif (flag(FLAG_BADGE05_GET)) {
@@ -176,7 +176,7 @@ script FortreeCity_Gym_EventScript_GymStatue {
 	if (flag(FLAG_BADGE07_GET)) {
 		msgbox (Text_GymStatue_Sakura_Jakson_Redd_Player_Harper_Baron_Wally, MSGBOX_DEFAULT)
 	}
-	elif (var(VAR_EMERALBODY_RIVAL_STATE) >= 7) {
+	elif (var(VAR_EMERALBODY_RIVAL_STATE) >= 11) {
 		msgbox (Text_GymStatue_Sakura_Jakson_Redd_Player_Harper_Baron, MSGBOX_DEFAULT)
 	}
 	elif (flag(FLAG_BADGE06_GET)) {
@@ -195,7 +195,7 @@ script MossdeepCity_Gym_EventScript_GymStatue {
 	if (flag(FLAG_VISITED_SOOTOPOLIS_CITY)) {
 		msgbox (Text_GymStatue_Sakura_Jakson_Redd_Player_Harper_Baron_Wally, MSGBOX_DEFAULT)
 	}
-	elif (var(VAR_EMERALBODY_RIVAL_STATE) >= 7) {
+	elif (var(VAR_EMERALBODY_RIVAL_STATE) >= 13) {
 		msgbox (Text_GymStatue_Sakura_Jakson_Redd_Player_Harper_Baron, MSGBOX_DEFAULT)
 	}
 	elif (flag(FLAG_BADGE07_GET)) {
@@ -211,7 +211,7 @@ script SootopolisCity_Gym_1F_EventScript_GymStatue {
 	lockall
 	bufferstring (STR_VAR_1, CommonText_SootopolisCity)
 	bufferstring (STR_VAR_2, CommonText_Juan)
-	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 7) {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 16) {
 		msgbox (Text_GymStatue_Wally_Sakura_Jakson_Redd_Player_Harper_Baron, MSGBOX_DEFAULT)
 	}
 	elif (flag(FLAG_BADGE08_GET)) {

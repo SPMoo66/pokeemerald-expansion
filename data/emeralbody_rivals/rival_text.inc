@@ -2251,7 +2251,7 @@ Battle05_SakuraText_PreBattle::
 	.string "She is the reaper's blade that curves\n"
 	.string "itself around the neck of the scared\l"
 	.string "sheep sleeping under the barren\l"
-	.string "moonlight\p"
+	.string "moonlight.\p"
 	.string "She…\n"
 	.string "is…\l"
 	.string "SAKURA!!!\p"

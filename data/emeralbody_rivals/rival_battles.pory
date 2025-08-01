@@ -592,3 +592,183 @@ script Jakson_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2,  There are c
 	waitse
 	release
 }
+
+
+# Battle05
+
+const JAKSON_BATTLE05 = 8
+const HARPER_BATTLE05 = 9
+const REDD_BATTLE05 = 10
+const SAKURA_BATTLE05 = 11
+const BARON_BATTLE05 = 12
+
+script Rival_Battle05 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 3
+	lock
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	call (Common_EventScript_PlayEmRivalBgm)
+	call (GetRivalForNameBox)
+	call (GetRivalMusic)
+	hidefollower
+	delay (10)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
+	switch (var(VAR_EMERALBODY_RIVAL)) {
+		case 1:
+			call (Harper_Battle05)
+		case 2:
+			call (Jakson_Battle05)
+		case 3:
+			call (Redd_Battle05)
+		case 4:
+			call (Sakura_Battle05)
+		default:
+			call (Baron_Battle05)
+		}
+	fadescreenswapbuffers (FADE_TO_BLACK)
+	warpsilent (MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F, 9, 4)
+	release
+}
+
+script Jakson_Battle05 {
+	if (var(VAR_TEMP_0) == 9) {
+		applymovement (JAKSON_BATTLE05, Common_Movement_WalkRight5)
+	}
+	else {
+		applymovement (JAKSON_BATTLE05, Common_Movement_WalkRight6)
+	}
+	waitmovement (0)
+	applymovement (JAKSON_BATTLE05, Common_Movement_WalkUp)
+	waitmovement (0)
+	msgbox (Battle05_JaksonText_PreBattle, MSGBOX_DEFAULT)
+	closemessage
+	applymovement (JAKSON_BATTLE05, Common_Movement_WalkInPlaceLeft)
+	waitmovement (0)
+	delay (60)
+	applymovement (JAKSON_BATTLE05, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+	call (GetRivalForNameBox)
+	msgbox (Battle05_JaksonText_PreBattle2, MSGBOX_DEFAULT)
+	trainerbattle_no_intro (TRAINER_JAKSON_5, Battle05_JaksonText_BattleVictory)
+	call (GetRivalForNameBox)
+	msgbox (Battle05_JaksonText_PostBattle)
+	closemessage
+	applymovement (JAKSON_BATTLE05, Common_Movement_WalkDown)
+	waitmovement (0)
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	if (var(VAR_TEMP_0) == 9) {
+		applymovement (JAKSON_BATTLE05, Common_Movement_WalkLeft5)
+	}
+	else {
+		applymovement (JAKSON_BATTLE05, Common_Movement_WalkLeft6)
+	}
+	waitmovement (0)
+	applymovement (JAKSON_BATTLE05, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+}
+
+script Harper_Battle05 {
+	if (var(VAR_TEMP_0) == 9) {
+		setobjectxy (HARPER_BATTLE05, 9, 8)
+	}
+	else {
+		setobjectxy (HARPER_BATTLE05, 10, 8)
+	}
+	applymovement (HARPER_BATTLE05, Common_Movement_WalkUp5)
+	waitmovement (0)
+	msgbox (Battle05_HarperText_PreBattle, MSGBOX_DEFAULT)
+	trainerbattle_no_intro (TRAINER_HARPER_5, Battle05_HarperText_BattleVictory)
+	call (GetRivalForNameBox)
+	msgbox (Battle05_HarperText_PostBattle)
+	closemessage
+	applymovement (HARPER_BATTLE05, Common_Movement_WalkDown5)
+	waitmovement (0)
+}
+
+script Redd_Battle05 {
+	if (var(VAR_TEMP_0) == 9) {
+		setobjectxy (REDD_BATTLE05, 9, 8)
+	}
+	else {
+		setobjectxy (REDD_BATTLE05, 10, 8)
+	}
+	applymovement (REDD_BATTLE05, Common_Movement_WalkUp5)
+	waitmovement (0)
+	msgbox (Battle05_ReddText_PreBattle, MSGBOX_DEFAULT)
+	setvar (VAR_0x8004, 1) // This forces the result of the following specialvar to return numbers from the National Dex
+	specialvar (VAR_RESULT, ScriptGetPokedexInfo) // VAR_0x8005 is seen, VAR_0x8006 is caught
+	if (var(VAR_0x8006) >= 100) { // If caught "more than Redd"
+		msgbox (Battle05_ReddText_PreBattle2b)
+	}
+	else { // If caught "less than Redd"
+		msgbox (Battle05_ReddText_PreBattle2a)
+	}
+	msgbox (Battle05_ReddText_PreBattle3)
+	trainerbattle_no_intro (TRAINER_REDD_5, Battle05_ReddText_BattleVictory)
+	call (GetRivalForNameBox)
+	msgbox (Battle05_ReddText_PostBattle)
+	closemessage
+	applymovement (REDD_BATTLE05, Common_Movement_WalkDown5)
+	waitmovement (0)
+}
+
+script Sakura_Battle05 {
+	if (var(VAR_TEMP_0) == 9) {
+		setobjectxy (SAKURA_BATTLE05, 9, 3)
+	}
+	else {
+		setobjectxy (SAKURA_BATTLE05, 10, 3)
+	}
+	setfieldeffectargument (0, 1)
+	dofieldeffect (FLDEFF_NPCFLY_OUT)
+	waitfieldeffect (FLDEFF_NPCFLY_OUT)
+	addobject (SAKURA_BATTLE05)
+	applymovement (SAKURA_BATTLE05, Common_Movement_FaceUp)
+	delay (30)
+	msgbox (Battle05_SakuraText_PreBattle, MSGBOX_DEFAULT)
+	trainerbattle_no_intro (TRAINER_SAKURA_5, Battle05_SakuraText_BattleVictory)
+	call (GetRivalForNameBox)
+	msgbox (Battle05_SakuraText_PostBattle)
+	closemessage
+	applymovement (SAKURA_BATTLE05, Common_Movement_WalkDown5)
+	waitmovement (0)
+}
+
+script Baron_Battle05 {
+	if (var(VAR_TEMP_0) == 9) {
+		applymovement (BARON_BATTLE05, Common_Movement_WalkLeft6)
+	}
+	else {
+		applymovement (BARON_BATTLE05, Common_Movement_WalkLeft5)
+	}
+	waitmovement (0)
+	applymovement (BARON_BATTLE05, Common_Movement_WalkUp)
+	waitmovement (0)
+	msgbox (Battle05_BaronText_PreBattle, MSGBOX_DEFAULT)
+	closemessage
+	applymovement (BARON_BATTLE05, Common_Movement_WalkInPlaceLeft)
+	waitmovement (0)
+	delay (20)
+	applymovement (BARON_BATTLE05, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	delay (40)
+	applymovement (BARON_BATTLE05, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+	delay (20)
+	call (GetRivalForNameBox)
+	msgbox (Battle05_BaronText_PreBattle2, MSGBOX_DEFAULT)
+	trainerbattle_no_intro (TRAINER_BARON_5, Battle05_BaronText_BattleVictory)
+	call (GetRivalForNameBox)
+	msgbox (Battle05_BaronText_PostBattle)
+	closemessage
+	applymovement (BARON_BATTLE05, Common_Movement_WalkDown)
+	waitmovement (0)
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	if (var(VAR_TEMP_0) == 9) {
+		applymovement (BARON_BATTLE05, Common_Movement_WalkRight6)
+	}
+	else {
+		applymovement (BARON_BATTLE05, Common_Movement_WalkRight5)
+	}
+	waitmovement (0)
+	applymovement (BARON_BATTLE05, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+}

@@ -142,8 +142,8 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	setvar VAR_EMERALBODY_RIVAL_STATE, 14
-	warp MAP_SKY_PILLAR_TOP, 0
+	setvar VAR_EMERALBODY_RIVAL_STATE, 15
+	warp MAP_EVER_GRANDE_CITY, 0
 	setflag FLAG_NO_COLLISION
 	release
 	end

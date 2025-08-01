@@ -1,5 +1,11 @@
 VictoryRoad_B2F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, VictoryRoad_B2F_OnTransition
 	.byte 0
+
+VictoryRoad_B2F_OnTransition:
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 15, EventScript_Clear_FlagTemp1 @ Show Rivals
+	end
 
 VictoryRoad_B2F_EventScript_Vito::
 	trainerbattle_single TRAINER_VITO, VictoryRoad_B2F_Text_VitoIntro, VictoryRoad_B2F_Text_VitoDefeat

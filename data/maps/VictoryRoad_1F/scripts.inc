@@ -3,8 +3,10 @@ VictoryRoad_1F_MapScripts::
 	.byte 0
 
 VictoryRoad_1F_OnTransition:
+	setflag FLAG_TEMP_1
 	call_if_eq VAR_VICTORY_ROAD_1F_STATE, 1, VictoryRoad_1F_EventScript_SetEntranceWallyPos1
 	call_if_eq VAR_VICTORY_ROAD_1F_STATE, 2, VictoryRoad_1F_EventScript_SetEntranceWallyPos2
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 15, EventScript_Clear_FlagTemp1 @ Show Rivals
 	end
 
 VictoryRoad_1F_EventScript_SetEntranceWallyPos1::

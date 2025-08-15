@@ -18,6 +18,7 @@
 	# 15: Set after beating Sootopolis Gym
 	# 16: Set after reaching the Pokémon League building
 	# 17: Set after beating the Pokémon League
+	# 18: Set after Littleroot postgame event
 
 #Scene01
 script Rival_Scene01 {

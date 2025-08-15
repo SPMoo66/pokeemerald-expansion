@@ -2191,8 +2191,8 @@ text Battle05_SakuraText_PostBattle {
 }
 
 
-# Town17
-text Town17_BaronText {
+# Town18
+text Town18_BaronText {
 	format(	"Hi, {PLAYER}!\p"
 			"I think I've managed to find something\n"
 			"I'm really good at.\p"
@@ -2210,7 +2210,7 @@ text Town17_BaronText {
 			"good.")
 }
 
-text Town17_HarperText {
+text Town18_HarperText {
 	format(	"My goodness this building is CRAZY.\p"
 			"Like… in a cool way. I think?\p"
 			"Like needing to enter through the\n"
@@ -2228,7 +2228,7 @@ text Town17_HarperText {
 			"visit again.")
 }
 
-text Town17_JaksonText {
+text Town18_JaksonText {
 	format(	"Oh, hey {PLAYER}!\p"
 			"You've beaten the game now, right?\p"
 			"You should go check out the Battle\n"
@@ -2242,7 +2242,7 @@ text Town17_JaksonText {
 			"If I find anything, I'll let you know!")
 }
 
-text Town17_ReddText {
+text Town18_ReddText {
 	format(	"Oh, hey, you showed up!\p"
 			"You're not just taking it easy now,\n"
 			"right?\p"
@@ -2261,7 +2261,7 @@ text Town17_ReddText {
 			"but comfrot food is always nice.")
 }
 
-text Town17_SakuraText {
+text Town18_SakuraText {
 	format(	"Hmm…\p"
 			"I don't think I can get Scott to leave,\n"
 			"but do you think I can get Jakson to\l"

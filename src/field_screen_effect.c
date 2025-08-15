@@ -271,10 +271,16 @@ static void SetUpWarpExitTask(void)
     s16 x, y;
     u8 behavior;
     TaskFunc func;
+    u8 doNotDoor = 0;
+
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_LITTLEROOT_TOWN) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_LITTLEROOT_TOWN) && VarGet(VAR_EMERALBODY_RIVAL_STATE) == 17)
+    {
+        doNotDoor = 1;
+    }
 
     PlayerGetDestCoords(&x, &y);
     behavior = MapGridGetMetatileBehaviorAt(x, y);
-    if (MetatileBehavior_IsDoor(behavior) == TRUE)
+    if (MetatileBehavior_IsDoor(behavior) == TRUE && doNotDoor == 0)
         func = Task_ExitDoor;
     else if (MetatileBehavior_IsDirectionalStairWarp(behavior) == TRUE && !gExitStairsMovementDisabled)
         func = Task_ExitStairs;

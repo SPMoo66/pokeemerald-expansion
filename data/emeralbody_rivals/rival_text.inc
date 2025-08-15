@@ -2291,7 +2291,7 @@ Battle05_SakuraText_PostBattle::
 	.string "Race ya to be Champion! Don't you\n"
 	.string "drown in my wake!$"
 
-Town17_BaronText::
+Town18_BaronText::
 # 2195 "data/emeralbody_rivals/rival_text.pory"
 	.string "Hi, {PLAYER}!\p"
 	.string "I think I've managed to find something\n"
@@ -2309,7 +2309,7 @@ Town17_BaronText::
 	.string "Anything that can help heal is just as\n"
 	.string "good.$"
 
-Town17_HarperText::
+Town18_HarperText::
 # 2213 "data/emeralbody_rivals/rival_text.pory"
 	.string "My goodness this building is CRAZY.\p"
 	.string "Like… in a cool way. I think?\p"
@@ -2327,7 +2327,7 @@ Town17_HarperText::
 	.string "Evergrande City was nice… Maybe I'll\n"
 	.string "visit again.$"
 
-Town17_JaksonText::
+Town18_JaksonText::
 # 2231 "data/emeralbody_rivals/rival_text.pory"
 	.string "Oh, hey {PLAYER}!\p"
 	.string "You've beaten the game now, right?\p"
@@ -2341,7 +2341,7 @@ Town17_JaksonText::
 	.string "the game!\p"
 	.string "If I find anything, I'll let you know!$"
 
-Town17_ReddText::
+Town18_ReddText::
 # 2245 "data/emeralbody_rivals/rival_text.pory"
 	.string "Oh, hey, you showed up!\p"
 	.string "You're not just taking it easy now,\n"
@@ -2360,7 +2360,7 @@ Town17_ReddText::
 	.string "I mean, yeah, the others were good too,\n"
 	.string "but comfrot food is always nice.$"
 
-Town17_SakuraText::
+Town18_SakuraText::
 # 2264 "data/emeralbody_rivals/rival_text.pory"
 	.string "Hmm…\p"
 	.string "I don't think I can get Scott to leave,\n"

@@ -567,12 +567,6 @@ static const struct MenuAction MultichoiceList_GoOnRetire[] =
     {gText_Retire},
 };
 
-static const struct MenuAction MultichoiceList_TVLati[] =
-{
-    {COMPOUND_STRING("Red")},
-    {COMPOUND_STRING("Blue")},
-};
-
 static const struct MenuAction MultichoiceList_BattleTowerFeelings[] =
 {
     {COMPOUND_STRING("I'll battle now!")},
@@ -746,7 +740,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_GO_ON_RECORD_RETIRE]        = MULTICHOICE(MultichoiceList_GoOnRecordRetire),
     [MULTI_GO_ON_RETIRE]               = MULTICHOICE(MultichoiceList_GoOnRetire),
     [MULTI_TOURNEY_NO_RECORD]          = MULTICHOICE(MultichoiceList_TourneyNoRecord),
-    [MULTI_TV_LATI]                    = MULTICHOICE(MultichoiceList_TVLati),
+    [MULTI_UNUSED_108]                 = MULTICHOICE(MultichoiceList_Exit),
     [MULTI_BATTLE_TOWER_FEELINGS]      = MULTICHOICE(MultichoiceList_BattleTowerFeelings),
     [MULTI_WHERES_RAYQUAZA]            = MULTICHOICE(MultichoiceList_WheresRayquaza),
     [MULTI_SLATEPORT_TENT_RULES]       = MULTICHOICE(MultichoiceList_SlateportTentRules),

@@ -470,8 +470,9 @@ PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	call_if_eq VAR_0x8008, FEMALE, PlayersHouse_1F_EventScript_MomApproachPlayerAfterTVFemale
 	speakername CommonText_Mom
 	msgbox PlayersHouse_1F_Text_WhatColorDidTheySay, MSGBOX_DEFAULT
-	multichoice 22, 8, MULTI_TV_LATI, TRUE
-	copyvar VAR_ROAMER_POKEMON, VAR_RESULT
+	dynmultichoice 18, 2, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, PlayersHouse_1F_Text_Lati1, PlayersHouse_1F_Text_Lati2, PlayersHouse_1F_Text_Lati3, PlayersHouse_1F_Text_Lati4, PlayersHouse_1F_Text_Lati5, PlayersHouse_1F_Text_Lati6, PlayersHouse_1F_Text_Lati7, PlayersHouse_1F_Text_Lati8, PlayersHouse_1F_Text_Lati9, PlayersHouse_1F_Text_Lati10
+	checkplayergender
+	call_if_eq VAR_RESULT, MALE, PlayersHouse_1F_EventScript_SetLatios
 	speakername CommonText_Mom
 	msgbox PlayersHouse_1F_Text_StillUnknownPokemon, MSGBOX_DEFAULT
 	closemessage
@@ -479,6 +480,40 @@ PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 4
 	releaseall
 	end
+
+PlayersHouse_1F_EventScript_SetLatios::
+	copyvar VAR_ROAMER_POKEMON, 1
+	return
+
+PlayersHouse_1F_Text_Lati1:
+	.string "Red$"
+
+PlayersHouse_1F_Text_Lati2:
+	.string "Blue$"
+
+PlayersHouse_1F_Text_Lati3:
+	.string "Green$"
+
+PlayersHouse_1F_Text_Lati4:
+	.string "Amber$"
+
+PlayersHouse_1F_Text_Lati5:
+	.string "Vantablack$"
+
+PlayersHouse_1F_Text_Lati6:
+	.string "Ash gray$"
+
+PlayersHouse_1F_Text_Lati7:
+	.string "Bronze$"
+
+PlayersHouse_1F_Text_Lati8:
+	.string "Cameo pink$"
+
+PlayersHouse_1F_Text_Lati9:
+	.string "Tangerine$"
+
+PlayersHouse_1F_Text_Lati10:
+	.string "White$"
 
 PlayersHouse_1F_EventScript_SetUpObjectEventVarsMale::
 	setvar VAR_0x8008, MALE

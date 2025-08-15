@@ -273,9 +273,10 @@ static void SetUpWarpExitTask(void)
     TaskFunc func;
     u8 doNotDoor = 0;
 
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_LITTLEROOT_TOWN) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_LITTLEROOT_TOWN) && VarGet(VAR_EMERALBODY_RIVAL_STATE) == 17)
+    if (FlagGet(FLAG_SYS_DO_NOT_DOOR))
     {
         doNotDoor = 1;
+        FlagClear(FLAG_SYS_DO_NOT_DOOR);
     }
 
     PlayerGetDestCoords(&x, &y);

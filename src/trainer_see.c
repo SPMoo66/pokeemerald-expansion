@@ -66,6 +66,11 @@ static const u8 sEmotion_QuestionMarkGfx[] = INCBIN_U8("graphics/field_effects/p
 static const u8 sEmotion_HeartGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_heart.4bpp");
 static const u8 sEmotion_DoubleExclamationMarkGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_double_exclamation.4bpp");
 static const u8 sEmotion_XGfx[] = INCBIN_U8("graphics/field_effects/pics/emote_x.4bpp");
+static const u8 sEmotion_MusicNoteGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_music_note.4bpp");
+static const u8 sEmotion_SmileGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_smile.4bpp");
+static const u8 sEmotion_SweatDropGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_sweat_drop.4bpp");
+static const u8 sEmotion_TalkingGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_talking.4bpp");
+static const u8 sEmotion_ThinkingGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_thinking.4bpp");
 // HGSS emote graphics ripped by Lemon on The Spriters Resource: https://www.spriters-resource.com/ds_dsi/pokemonheartgoldsoulsilver/sheet/30497/
 static const u8 sEmotion_Gfx[] = INCBIN_U8("graphics/misc/emotes.4bpp");
 
@@ -158,6 +163,46 @@ static const struct SpriteFrameImage sSpriteImageTable_HeartIcon[] =
     {
         .data = sEmotion_HeartGfx,
         .size = sizeof(sEmotion_HeartGfx)
+    }
+};
+
+static const struct SpriteFrameImage sSpriteImageTable_MusicNoteIcon[] =
+{
+    {
+        .data = sEmotion_MusicNoteGfx,
+        .size = sizeof(sEmotion_MusicNoteGfx)
+    }
+};
+
+static const struct SpriteFrameImage sSpriteImageTable_SmileIcon[] =
+{
+    {
+        .data = sEmotion_SmileGfx,
+        .size = sizeof(sEmotion_SmileGfx)
+    }
+};
+
+static const struct SpriteFrameImage sSpriteImageTable_SweatDropIcon[] =
+{
+    {
+        .data = sEmotion_SweatDropGfx,
+        .size = sizeof(sEmotion_SweatDropGfx)
+    }
+};
+
+static const struct SpriteFrameImage sSpriteImageTable_TalkingIcon[] =
+{
+    {
+        .data = sEmotion_TalkingGfx,
+        .size = sizeof(sEmotion_TalkingGfx)
+    }
+};
+
+static const struct SpriteFrameImage sSpriteImageTable_ThinkingIcon[] =
+{
+    {
+        .data = sEmotion_ThinkingGfx,
+        .size = sizeof(sEmotion_ThinkingGfx)
     }
 };
 
@@ -341,6 +386,61 @@ static const struct SpriteTemplate sSpriteTemplate_HeartIcon =
     .oam = &sOamData_Icons,
     .anims = sSpriteAnimTable_Icons,
     .images = sSpriteImageTable_HeartIcon,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_TrainerIcons
+};
+
+static const struct SpriteTemplate sSpriteTemplate_MusicNoteIcon =
+{
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .oam = &sOamData_Icons,
+    .anims = sSpriteAnimTable_Icons,
+    .images = sSpriteImageTable_MusicNoteIcon,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_TrainerIcons
+};
+
+static const struct SpriteTemplate sSpriteTemplate_SmileIcon =
+{
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .oam = &sOamData_Icons,
+    .anims = sSpriteAnimTable_Icons,
+    .images = sSpriteImageTable_SmileIcon,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_TrainerIcons
+};
+
+static const struct SpriteTemplate sSpriteTemplate_SweatDropIcon =
+{
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .oam = &sOamData_Icons,
+    .anims = sSpriteAnimTable_Icons,
+    .images = sSpriteImageTable_SweatDropIcon,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_TrainerIcons
+};
+
+static const struct SpriteTemplate sSpriteTemplate_TalkingIcon =
+{
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .oam = &sOamData_Icons,
+    .anims = sSpriteAnimTable_Icons,
+    .images = sSpriteImageTable_TalkingIcon,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_TrainerIcons
+};
+
+static const struct SpriteTemplate sSpriteTemplate_ThinkingIcon =
+{
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .oam = &sOamData_Icons,
+    .anims = sSpriteAnimTable_Icons,
+    .images = sSpriteImageTable_ThinkingIcon,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_TrainerIcons
 };
@@ -968,6 +1068,56 @@ u8 FldEff_XIcon(void)
 
     if (spriteId != MAX_SPRITES)
         SetIconSpriteData(&gSprites[spriteId], FLDEFF_EXCLAMATION_MARK_ICON, 3);
+
+    return 0;
+}
+
+u8 FldEff_MusicNoteIcon(void)
+{
+    u8 spriteId = CreateSpriteAtEnd(&sSpriteTemplate_MusicNoteIcon, 0, 0, 0x52);
+
+    if (spriteId != MAX_SPRITES)
+        SetIconSpriteData(&gSprites[spriteId], FLDEFF_MUSIC_NOTE_ICON, 0);
+
+    return 0;
+}
+
+u8 FldEff_SmileIcon(void)
+{
+    u8 spriteId = CreateSpriteAtEnd(&sSpriteTemplate_SmileIcon, 0, 0, 0x52);
+
+    if (spriteId != MAX_SPRITES)
+        SetIconSpriteData(&gSprites[spriteId], FLDEFF_SMILE_ICON, 0);
+
+    return 0;
+}
+
+u8 FldEff_SweatDropIcon(void)
+{
+    u8 spriteId = CreateSpriteAtEnd(&sSpriteTemplate_SweatDropIcon, 0, 0, 0x52);
+
+    if (spriteId != MAX_SPRITES)
+        SetIconSpriteData(&gSprites[spriteId], FLDEFF_SWEAT_DROP_ICON, 0);
+
+    return 0;
+}
+
+u8 FldEff_TalkingIcon(void)
+{
+    u8 spriteId = CreateSpriteAtEnd(&sSpriteTemplate_TalkingIcon, 0, 0, 0x52);
+
+    if (spriteId != MAX_SPRITES)
+        SetIconSpriteData(&gSprites[spriteId], FLDEFF_TALKING_ICON, 0);
+
+    return 0;
+}
+
+u8 FldEff_ThinkingIcon(void)
+{
+    u8 spriteId = CreateSpriteAtEnd(&sSpriteTemplate_ThinkingIcon, 0, 0, 0x52);
+
+    if (spriteId != MAX_SPRITES)
+        SetIconSpriteData(&gSprites[spriteId], FLDEFF_THINKING_ICON, 0);
 
     return 0;
 }

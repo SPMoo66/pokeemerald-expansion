@@ -77,8 +77,13 @@
 #define FLDEFF_TRACKS_BUG                72
 #define FLDEFF_CAVE_DUST                 73
 #define FLDEFF_DEFOG                     74
-#define FLDEFF_USE_ROCK_CLIMB            76 // Custom
-#define FLDEFF_ROCK_CLIMB_DUST           77 // Custom
+#define FLDEFF_USE_ROCK_CLIMB            75 // Custom
+#define FLDEFF_ROCK_CLIMB_DUST           76 // Custom
+#define FLDEFF_MUSIC_NOTE_ICON           77 // new emote
+#define FLDEFF_SMILE_ICON                78 // new emote
+#define FLDEFF_SWEAT_DROP_ICON           79 // new emote
+#define FLDEFF_TALKING_ICON              80 // new emote
+#define FLDEFF_THINKING_ICON             81 // new emote
 
 #define FLDEFFOBJ_SHADOW_S              0
 #define FLDEFFOBJ_SHADOW_M              1

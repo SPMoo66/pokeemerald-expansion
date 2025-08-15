@@ -269,6 +269,12 @@
 #define MOVEMENT_ACTION_SPIN_UP                         0xB3
 #define MOVEMENT_ACTION_SPIN_LEFT                       0xB4
 #define MOVEMENT_ACTION_SPIN_RIGHT                      0xB5
+// new emotes
+#define MOVEMENT_ACTION_EMOTE_MUSIC_NOTE                0xB6
+#define MOVEMENT_ACTION_EMOTE_SMILE                     0xB7
+#define MOVEMENT_ACTION_EMOTE_SWEAT_DROP                0xB8
+#define MOVEMENT_ACTION_EMOTE_TALKING                   0xB9
+#define MOVEMENT_ACTION_EMOTE_THINKING                  0xBA
 
 #define MOVEMENT_ACTION_STEP_END 0xFE
 #define MOVEMENT_ACTION_NONE     0xFF

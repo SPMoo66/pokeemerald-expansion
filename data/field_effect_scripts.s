@@ -83,6 +83,12 @@ gFieldEffectScriptPointers::
 	.4byte gFieldEffectScript_RockClimbDust             @ FLDEFF_ROCK_CLIMB_DUST
 	.4byte gFieldEffectScript_CaveDust                  @ FLDEFF_CAVE_DUST
 	.4byte gFieldEffectScript_Defog                     @ FLDEFF_DEFOG
+	.4byte gFieldEffectScript_MusicNoteIcon             @ FLDEFF_MUSIC_NOTE_ICON
+	.4byte gFieldEffectScript_SmileIcon                 @ FLDEFF_SMILE_ICON
+	.4byte gFieldEffectScript_SweatDropIcon             @ FLDEFF_SWEAT_DROP_ICON
+	.4byte gFieldEffectScript_TalkingIcon               @ FLDEFF_TALKING_ICON
+	.4byte gFieldEffectScript_ThinkingIcon              @ FLDEFF_THINKING_ICON
+
 
 gFieldEffectScript_ExclamationMarkIcon1::
 	field_eff_callnative FldEff_ExclamationMarkIcon
@@ -395,3 +401,23 @@ gFieldEffectScript_CaveDust::
 gFieldEffectScript_Defog::
     field_eff_callnative FldEff_Defog
     field_eff_end
+
+gFieldEffectScript_MusicNoteIcon::
+	field_eff_callnative FldEff_MusicNoteIcon
+	field_eff_end
+
+gFieldEffectScript_SmileIcon::
+	field_eff_callnative FldEff_SmileIcon
+	field_eff_end
+
+gFieldEffectScript_SweatDropIcon::
+	field_eff_callnative FldEff_SweatDropIcon
+	field_eff_end
+
+gFieldEffectScript_TalkingIcon::
+	field_eff_callnative FldEff_TalkingIcon
+	field_eff_end
+
+gFieldEffectScript_ThinkingIcon::
+	field_eff_callnative FldEff_ThinkingIcon
+	field_eff_end

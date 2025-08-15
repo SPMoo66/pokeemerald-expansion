@@ -1210,3 +1210,18 @@ text Text_6th {
 text Text_7th {
 	"7th"
 }
+
+script Emote_Test {
+	lock
+	applymovement (11, Common_Movement_MusicNote)
+	delay (70)
+	applymovement (11, Common_Movement_Smile)
+	delay (70)
+	applymovement (11, Common_Movement_SweatDrop)
+	delay (70)
+	applymovement (11, Common_Movement_Talking)
+	delay (70)
+	applymovement (11, Common_Movement_Thinking)
+	delay (70)
+	release
+}

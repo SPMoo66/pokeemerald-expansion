@@ -1703,6 +1703,34 @@ GetRivalMusic_5:
 	return
 
 
+Emote_Test::
+# 1215 "data/global.pory"
+	lock
+# 1216 "data/global.pory"
+	applymovement 11, Common_Movement_MusicNote
+# 1217 "data/global.pory"
+	delay 70
+# 1218 "data/global.pory"
+	applymovement 11, Common_Movement_Smile
+# 1219 "data/global.pory"
+	delay 70
+# 1220 "data/global.pory"
+	applymovement 11, Common_Movement_SweatDrop
+# 1221 "data/global.pory"
+	delay 70
+# 1222 "data/global.pory"
+	applymovement 11, Common_Movement_Talking
+# 1223 "data/global.pory"
+	delay 70
+# 1224 "data/global.pory"
+	applymovement 11, Common_Movement_Thinking
+# 1225 "data/global.pory"
+	delay 70
+# 1226 "data/global.pory"
+	release
+	return
+
+
 Mart_EventScript_TMClerk_Text_0:
 # 254 "data/global.pory"
 	.string "Sorry, I can only sell to trainers who\n"

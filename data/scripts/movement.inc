@@ -9,6 +9,26 @@ Common_Movement_ExclamationMark:
 	emote_exclamation_mark
 	step_end
 
+Common_Movement_MusicNote:
+	emote_music_note
+	step_end
+
+Common_Movement_Smile:
+	emote_smile
+	step_end
+
+Common_Movement_SweatDrop:
+	emote_sweat_drop
+	step_end
+
+Common_Movement_Talking:
+	emote_talking
+	step_end
+
+Common_Movement_Thinking:
+	emote_thinking
+	step_end
+
 Common_Movement_Delay32:
 	delay_16
 	delay_16

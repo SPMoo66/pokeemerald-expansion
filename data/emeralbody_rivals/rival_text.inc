@@ -2358,7 +2358,7 @@ Town18_ReddText::
 	.string "I do sort of wish there was some kind\n"
 	.string "of… Gen 1 only pool, or something.\p"
 	.string "I mean, yeah, the others were good too,\n"
-	.string "but comfrot food is always nice.$"
+	.string "but comfort food is always nice.$"
 
 Town18_SakuraText::
 # 2264 "data/emeralbody_rivals/rival_text.pory"

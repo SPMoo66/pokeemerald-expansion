@@ -1,6 +1,7 @@
 BattleFrontier_BattlePikeLobby_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattlePikeLobby_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, BattleFrontier_BattlePikeLobby_OnWarp
+	map_script MAP_SCRIPT_ON_TRANSITION, BattleFrontier_BattlePikeLobby_OnTransition
 	.byte 0
 
 BattleFrontier_BattlePikeLobby_OnFrame:
@@ -13,6 +14,11 @@ BattleFrontier_BattlePikeLobby_OnFrame:
 BattleFrontier_BattlePikeLobby_OnWarp:
 	map_script_2 VAR_TEMP_1, 0, BattleFrontier_BattlePikeLobby_EventScript_TurnPlayerNorth
 	.2byte 0
+
+BattleFrontier_BattlePikeLobby_OnTransition:
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 18, EventScript_Clear_FlagTemp1
+	end
 
 BattleFrontier_BattlePikeLobby_EventScript_TurnPlayerNorth::
 	setvar VAR_TEMP_1, 1

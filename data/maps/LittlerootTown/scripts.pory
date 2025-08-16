@@ -60,10 +60,12 @@ LittlerootTown_OnTransition:
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
 	setflag FLAG_TEMP_3
+	setflag FLAG_TEMP_4
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 1, EventScript_Clear_FlagTemp1
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 0, LittlerootTown_EventScript_ShowRivalCheck
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 17, EventScript_Clear_FlagTemp3
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 17, Rival_Scene05_MapOnTransition
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 18, EventScript_Clear_FlagTemp4
 	end
 
 LittlerootTown_EventScript_ShowRivalCheck::

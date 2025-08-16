@@ -225,6 +225,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Emote_Test",
       "flag": "FLAG_ALWAYS_SET"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_JAKSON",
+      "x": 10,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Jakson_Town18",
+      "flag": "FLAG_TEMP_4"
     }
   ],
   "warp_events": [

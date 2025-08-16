@@ -1,5 +1,11 @@
 BattleFrontier_ScottsHouse_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, BattleFrontier_ScottsHouse_OnTransition
 	.byte 0
+
+BattleFrontier_ScottsHouse_OnTransition:
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 18, EventScript_Clear_FlagTemp1
+	end
 
 BattleFrontier_ScottsHouse_EventScript_Scott::
 	lock
@@ -154,10 +160,12 @@ BattleFrontier_ScottsHouse_EventScript_WelcomeToFrontier::
 	call_if_eq VAR_FACING, DIR_SOUTH, BattleFrontier_ScottsHouse_EventScript_ScottFaceAwaySouth
 	call_if_eq VAR_FACING, DIR_EAST, BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayEast
 	call_if_eq VAR_FACING, DIR_WEST, BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayWest
+	speakername (CommonText_Scott)
 	msgbox BattleFrontier_ScottsHouse_Text_HowMuchEffortItTookToMakeReal, MSGBOX_DEFAULT
 	applymovement LOCALID_SCOTTS_HOUSE_SCOTT, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox BattleFrontier_ScottsHouse_Text_HaveThisAsMementoOfOurPathsCrossing, MSGBOX_DEFAULT
+	closemessage
 	goto_if_eq VAR_SCOTT_STATE, 13, BattleFrontier_ScottsHouse_EventScript_Give4BattlePoints
 	goto_if_ge VAR_SCOTT_STATE, 9, BattleFrontier_ScottsHouse_EventScript_Give3BattlePoints
 	goto_if_ge VAR_SCOTT_STATE, 6, BattleFrontier_ScottsHouse_EventScript_Give2BattlePoints
@@ -191,6 +199,7 @@ BattleFrontier_ScottsHouse_EventScript_Give1BattlePoint::
 BattleFrontier_ScottsHouse_EventScript_GiveBattlePoints::
 	special GiveFrontierBattlePoints
 	msgbox BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
+	speakername (CommonText_Scott)
 	msgbox BattleFrontier_ScottsHouse_Text_ExplainBattlePoints, MSGBOX_DEFAULT
 	setflag FLAG_SCOTT_GIVES_BATTLE_POINTS
 	setflag FLAG_TEMP_2

@@ -702,3 +702,30 @@ script Baron_Town16 {
 	speakername (CommonText_Baron)
 	msgbox(Town16_BaronText, MSGBOX_NPC)
 }
+
+
+#Town18
+script Sakura_Town18 {
+	speakername (CommonText_Sakura)
+	msgbox(Town18_SakuraText, MSGBOX_NPC)
+}
+
+script Harper_Town18 {
+	speakername (CommonText_Harper)
+	msgbox(Town18_HarperText, MSGBOX_NPC)
+}
+
+script Redd_Town18 {
+	speakername (CommonText_Redd)
+	msgbox(Town18_ReddText, MSGBOX_NPC)
+}
+
+script Jakson_Town18 {
+	speakername (CommonText_Jakson)
+	msgbox(Town18_JaksonText, MSGBOX_NPC)
+}
+
+script Baron_Town18 {
+	speakername (CommonText_Baron)
+	msgbox(Town18_BaronText, MSGBOX_NPC)
+}

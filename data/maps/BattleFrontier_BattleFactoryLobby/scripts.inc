@@ -1,6 +1,7 @@
 BattleFrontier_BattleFactoryLobby_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattleFactoryLobby_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, BattleFrontier_BattleFactoryLobby_OnWarp
+	map_script MAP_SCRIPT_ON_TRANSITION, BattleFrontier_BattleFactoryLobby_OnTransition
 	.byte 0
 
 BattleFrontier_BattleFactoryLobby_OnWarp:
@@ -19,6 +20,11 @@ BattleFrontier_BattleFactoryLobby_OnFrame:
 	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_WON, BattleFrontier_BattleFactoryLobby_EventScript_WonChallenge
 	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST, BattleFrontier_BattleFactoryLobby_EventScript_LostChallenge
 	.2byte 0
+
+BattleFrontier_BattleFactoryLobby_OnTransition:
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 18, EventScript_Clear_FlagTemp1
+	end
 
 BattleFrontier_BattleFactoryLobby_EventScript_GetChallengeStatus::
 	frontier_getstatus

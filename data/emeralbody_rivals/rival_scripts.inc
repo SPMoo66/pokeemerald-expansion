@@ -1179,6 +1179,46 @@ Baron_Town16::
 	return
 
 
+Sakura_Town18::
+# 709 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 710 "data/emeralbody_rivals/rival_scripts.pory"
+	msgbox Town18_SakuraText, MSGBOX_NPC
+	return
+
+
+Harper_Town18::
+# 714 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Harper
+# 715 "data/emeralbody_rivals/rival_scripts.pory"
+	msgbox Town18_HarperText, MSGBOX_NPC
+	return
+
+
+Redd_Town18::
+# 719 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Redd
+# 720 "data/emeralbody_rivals/rival_scripts.pory"
+	msgbox Town18_ReddText, MSGBOX_NPC
+	return
+
+
+Jakson_Town18::
+# 724 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 725 "data/emeralbody_rivals/rival_scripts.pory"
+	msgbox Town18_JaksonText, MSGBOX_NPC
+	return
+
+
+Baron_Town18::
+# 729 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Baron
+# 730 "data/emeralbody_rivals/rival_scripts.pory"
+	msgbox Town18_BaronText, MSGBOX_NPC
+	return
+
+
 Baron_Town01_Text_0:
 # 107 "data/emeralbody_rivals/rival_scripts.pory"
 	.string "Left foot… Right foot…\nLeft foot… Right foot…$"

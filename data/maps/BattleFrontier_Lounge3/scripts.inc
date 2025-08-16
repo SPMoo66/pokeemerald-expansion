@@ -1,5 +1,11 @@
 BattleFrontier_Lounge3_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, BattleFrontier_Lounge3_OnTransition
 	.byte 0
+
+BattleFrontier_Lounge3_OnTransition:
+	setflag FLAG_TEMP_1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 18, EventScript_Clear_FlagTemp1
+	end
 
 	.set BET_AMOUNT_5,  5
 	.set BET_AMOUNT_10, 10

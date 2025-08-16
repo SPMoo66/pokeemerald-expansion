@@ -1,0 +1,504 @@
+const JAKSON_SCENE05 = 11
+const HARPER_SCENE05 = 12
+const REDD_SCENE05 = 13
+const SAKURA_SCENE05 = 14
+const BARON_SCENE05 = 15
+
+
+script Rival_Scene05_MapOnTransition {
+	savebgm (MUS_DP_HALL_OF_FAME_ROOM)
+}
+
+script Rival_Scene05 {
+	lock
+	special (SpawnCameraObject)
+	checkplayergender
+	if (var(VAR_RESULT) == MALE) {
+		applymovement (LOCALID_CAMERA, Scene05_Move_CameraMale)
+	}
+	else {
+		applymovement(LOCALID_CAMERA, Scene05_Move_CameraFemale)
+	}
+	waitmovement (0)
+	delay (10)
+// Animations before player enters
+	applymovement (SAKURA_SCENE05, Common_Movement_Talking)
+	delay (80)
+	applymovement (REDD_SCENE05, Common_Movement_SweatDrop)
+	playse (SE_M_METRONOME)
+	applymovement (JAKSON_SCENE05, Common_Movement_Thinking)
+	delay (40)
+	applymovement (SAKURA_SCENE05, Common_Movement_Smile)
+	playse (SE_M_MORNING_SUN)
+	delay (60)
+// Player entering
+	if (var(VAR_RESULT) == MALE) {
+		opendoor (5, 8)
+	}
+	else {
+		opendoor (14, 8)
+	}
+	waitdooranim
+	applymovement (LOCALID_PLAYER, Common_Movement_SetVisible)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkDown)
+	waitmovement (0)
+	if (var(VAR_RESULT) == MALE) {
+		closedoor (5, 8)
+	}
+	else {
+		closedoor (14, 8)
+	}
+	waitdooranim
+// Player moving in
+	if (var(VAR_RESULT) == MALE) {
+		applymovement (SAKURA_SCENE05, Common_Movement_WalkInPlaceFasterLeft)
+		waitmovement (0)
+		playse (SE_PIN)
+		applymovement (SAKURA_SCENE05, Common_Movement_ExclamationMark)
+		delay (40)
+		applymovement (SAKURA_SCENE05, Common_Movement_JumpInPlaceLeft)
+		waitmovement (0)
+		applymovement (JAKSON_SCENE05, Common_Movement_WalkInPlaceLeft)
+		applymovement (REDD_SCENE05, Common_Movement_WalkInPlaceLeft)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceRight)
+		speakername (CommonText_Sakura)
+		msgbox (Scene05_Text_Sakura1)
+		closemessage
+		applymovement (SAKURA_SCENE05, Scene05_Move_SakuraMove1Male)
+		applymovement (JAKSON_SCENE05, Scene05_Move_JaksonFacingMale)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkRight3)
+		waitmovement (0)
+		applymovement (JAKSON_SCENE05, Common_Movement_WalkInPlaceRight)
+		applymovement (REDD_SCENE05, Common_Movement_WalkInPlaceUp)
+		waitmovement (0)
+	}
+	else {
+		applymovement (SAKURA_SCENE05, Common_Movement_WalkInPlaceFasterRight)
+		waitmovement (0)
+		playse (SE_PIN)
+		applymovement (SAKURA_SCENE05, Common_Movement_ExclamationMark)
+		delay (40)
+		applymovement (SAKURA_SCENE05, Common_Movement_JumpInPlaceRight)
+		waitmovement (0)
+		applymovement (REDD_SCENE05, Common_Movement_WalkInPlaceRight)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft)
+		speakername (CommonText_Sakura)
+		msgbox (Scene05_Text_Sakura1)
+		closemessage
+		applymovement (SAKURA_SCENE05, Scene05_Move_SakuraMove1Female)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkLeft4)
+		waitmovement (0)
+		applymovement (REDD_SCENE05, Common_Movement_WalkInPlaceUp)
+		waitmovement (0)
+	}
+// Discussion before Harper arrives
+	speakername (CommonText_Redd)
+	msgbox ("Oh, come on, you know I was right on\nyour heels, Sakura! If only they didn't\lput you on rails in the Hall of Fame!")
+	speakername (CommonText_Jakson)
+	msgbox ("Then she would've been able to sprint\nthrough it too. We both lost fair and\lsquare, Redd.")
+	speakername (CommonText_Redd)
+	applymovement (REDD_SCENE05, Common_Movement_SweatDrop)
+	playse (SE_M_METRONOME)
+	msgbox ("Yeah, I know… I just thought I might\nhave a chance after all that research\land training…")
+	speakername (CommonText_Sakura)
+	applymovement (SAKURA_SCENE05, Common_Movement_WalkInPlaceDown)
+	msgbox ("Don't sell yourself short. You did\nimprove! A whole lot, Redd.")
+	speakername (CommonText_Redd)
+	applymovement (REDD_SCENE05, Common_Movement_WalkInPlaceLeft)
+	msgbox ("Yeah, but- …But I didn't need to\nimprove! This was but a new horizon\lto conquer!")
+	closemessage
+// Harper arrives
+	opendoor (14, 8)
+	waitdooranim
+	addobject (HARPER_SCENE05)
+	applymovement (HARPER_SCENE05, Common_Movement_WalkDown)
+	waitmovement (0)
+	closedoor (14, 8)
+	waitdooranim
+	applymovement (REDD_SCENE05, Common_Movement_WalkInPlaceRight)
+	if (var(VAR_RESULT) == FEMALE) {
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceRight)
+	}
+	applymovement (SAKURA_SCENE05, Common_Movement_WalkInPlaceRight)
+	waitmovement (0)
+	delay (10)
+	applymovement (SAKURA_SCENE05, Common_Movement_Smile)
+	playse (SE_M_MORNING_SUN)
+	delay (10)
+	applymovement (HARPER_SCENE05, Common_Movement_WalkInPlaceLeft)
+	waitmovement (0)
+	delay (40)
+	applymovement (HARPER_SCENE05, Common_Movement_WalkDown)
+	waitmovement (0)
+	applymovement (REDD_SCENE05, Scene05_Move_ReddFacing)
+	if (var(VAR_RESULT) == MALE) {
+		applymovement (SAKURA_SCENE05, Scene05_Move_SakuraOrPlayerFacing)
+	}
+	else {
+		applymovement (LOCALID_PLAYER, Scene05_Move_SakuraOrPlayerFacing)
+	}
+	applymovement (HARPER_SCENE05, Common_Movement_WalkLeft4)
+	waitmovement (0)
+// Discussion before Baron arrives
+	speakername (CommonText_Sakura)
+	msgbox ("I win! See, Redd, I told you Harper\nwould be next! Pay up{EMOJI_TILDE}{UNK_SPACER}")
+	speakername (CommonText_Harper)
+	applymovement (HARPER_SCENE05, Common_Movement_QuestionMark)
+	delay (10)
+	msgbox ("Ah… now they're making bets? I don't\nrecall giving you all permission to bet\lon me.\p"
+			"Get your rowdy bunch of ne'er-do-wells\nunder control, why don't you, Jakson?")
+	speakername (CommonText_Jakson)
+	applymovement (JAKSON_SCENE05, Common_Movement_SweatDrop)
+	playse (SE_M_METRONOME)
+	msgbox ("Haha… for what it's worth, I did have my\nmoney on you next…")
+	speakername (CommonText_Redd)
+	applymovement (REDD_SCENE05, Common_Movement_WalkInPlaceRight)
+	waitmovement (0)
+	applymovement (REDD_SCENE05, Common_Movement_Thinking)
+	delay (50)
+	msgbox ("Damn, I really thought Baron would\ncome through in the end.\p"
+			"He was my dark horse for being awesome\nat this before we started. Didn't you\lthink so, too, {PLAYER}?")
+	speakername (CommonText_Harper)
+	applymovement (HARPER_SCENE05, Common_Movement_WalkInPlaceDown)
+	msgbox ("Well, he should be here any-")
+	closemessage
+// Baron arrives
+	opendoor (14, 8)
+	waitdooranim
+	addobject (BARON_SCENE05)
+	applymovement (BARON_SCENE05, Common_Movement_WalkDown)
+	waitmovement (0)
+	closedoor (14, 8)
+	waitdooranim
+	if (var(VAR_RESULT) == MALE) {
+		applymovement (SAKURA_SCENE05, Common_Movement_WalkInPlaceRight)
+	}
+	else {
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceRight)
+	}
+	applymovement (HARPER_SCENE05, Common_Movement_WalkInPlaceRight)
+	applymovement (REDD_SCENE05, Common_Movement_WalkInPlaceRight)
+	waitmovement (0)
+	delay (20)
+	applymovement (BARON_SCENE05, Common_Movement_WalkInPlaceLeft)
+	waitmovement (0)
+	delay (10)
+	playse (SE_PIN)
+	applymovement (BARON_SCENE05, Common_Movement_ExclamationMark)
+	delay (30)
+	applymovement (BARON_SCENE05, Scene05_Move_BaronRun)
+	waitmovement (0)
+	speakername (CommonText_Baron)
+	msgbox ("Oh! You're all here. Does that mean\nyou've all finished before me?")
+	speakername (CommonText_Jakson)
+	msgbox ("Indeed. We've all completed it\nsuccessfully now.")
+	playse (SE_THUNDER)
+	speakername (CommonText_Baron)
+	applymovement (BARON_SCENE05, Common_Movement_XMark)
+	delay (10)
+	applymovement (BARON_SCENE05, Common_Movement_WalkInPlaceRight)
+	msgbox ("And I'm last to complete it… Agh!\nI thought I'd gotten better.")
+	speakername (CommonText_Harper)
+	msgbox ("Of course you did. We all did.")
+	speakername (CommonText_Sakura)
+	applymovement (SAKURA_SCENE05, Common_Movement_Smile)
+	playse (SE_M_MORNING_SUN)
+	msgbox ("Aw, you did great, my cute ol' friendo.\nCome over here{EMOJI_TILDE}{UNK_SPACER}")
+	closemessage
+	delay (10)
+	applymovement (BARON_SCENE05, Common_Movement_WalkInPlaceLeft)
+	waitmovement (0)
+	delay (30)
+	if (var(VAR_RESULT) == MALE) {
+		applymovement (SAKURA_SCENE05, Scene05_Move_SakuraOrPlayerFacing)
+	}
+	else {
+		applymovement (LOCALID_PLAYER, Scene05_Move_SakuraOrPlayerFacing)
+	}
+	applymovement (BARON_SCENE05, Common_Movement_WalkLeft3)
+	applymovement (HARPER_SCENE05, Scene05_Move_HarperMove)
+	applymovement (REDD_SCENE05, Scene05_Move_ReddMove)
+	waitmovement (0)
+// Final group discussion
+	delay (20)
+	speakername (CommonText_Harper)
+	applymovement (HARPER_SCENE05, Common_Movement_WalkInPlaceUp)
+	msgbox ("Eh? Be careful who you trust, Baron…")
+	speakername (CommonText_Baron)
+	applymovement (BARON_SCENE05, Common_Movement_WalkInPlaceDown)
+	msgbox ("…Huh? What do you mean?")
+	speakername (CommonText_Sakura)
+	applymovement (SAKURA_SCENE05, Common_Movement_WalkInPlaceUp)
+	msgbox ("{EMOJI_BIGWHEEL}Whistles nonchalantly{EMOJI_BIGWHEEL}{UNK_SPACER}")
+	speakername (CommonText_Jakson)
+	applymovement (HARPER_SCENE05, Common_Movement_WalkInPlaceLeft)
+	if (var(VAR_RESULT) == MALE) {
+		applymovement (SAKURA_SCENE05, Common_Movement_WalkInPlaceLeft)
+	}
+	else {
+		applymovement (SAKURA_SCENE05, Common_Movement_WalkInPlaceRight)
+	}
+	waitmovement (0)
+	msgbox ("Pay them no mind, Baron. You and Harper\nwere neck and neck. It makes me wish I\lcould've seen the battles.")
+	speakername (CommonText_Baron)
+	applymovement (BARON_SCENE05, Common_Movement_WalkInPlaceRight)
+	msgbox ("Trust me, you didn't want to see…\p"
+			"… … …")
+	applymovement (BARON_SCENE05, Common_Movement_WalkInPlaceLeft)
+	msgbox ("Well, maybe it would've been nice to\nhave you all watching.\p"
+			"Maybe you could work on that next,\nJakson?")
+	speakername (CommonText_Sakura)
+	if (var(VAR_RESULT) == MALE) {
+		applymovement (SAKURA_SCENE05, Common_Movement_JumpInPlaceLeft)
+	}
+	else {
+		applymovement (SAKURA_SCENE05, Common_Movement_JumpInPlaceRight)
+	}
+	waitmovement (0)
+	msgbox ("Ooh, yeah! What did you have planned\nnext, Jakson?")
+	speakername (CommonText_Redd)
+	applymovement (REDD_SCENE05, Common_Movement_WalkInPlaceUp)
+	msgbox ("Yeah, I was wondering about that, too.\nBeen thinking about trying Gen 20.\lAny plans to mod that?")
+	speakername (CommonText_Sakura)
+	msgbox ("After we spent all this time building\nup our teams here? Nah, it's gotta be\llike story DLC adventures.")
+	speakername (CommonText_Jakson)
+	applymovement (JAKSON_SCENE05, Common_Movement_SweatDrop)
+	playse (SE_M_METRONOME)
+	msgbox ("Haha… Well… This is pretty much it for\nnow. As much as I wish there were more,\lthis is all I've gotten done so far.")
+	speakername (CommonText_Sakura)
+	msgbox ("Aww, phooie{EMOJI_TILDE}{UNK_SPACER}")
+	speakername (CommonText_Harper)
+	msgbox ("How are you all so up for the next\nround already? Give Jakson a break.\lSheesh. Give me a break, too.")
+	speakername (CommonText_Baron)
+	applymovement (REDD_SCENE05, Common_Movement_WalkInPlaceRight)
+	msgbox ("I suppose a break is warranted. Even if\nit felt like I was just getting into the\lswing of things.")
+	speakername (CommonText_Redd)
+	applymovement (REDD_SCENE05, Common_Movement_WalkInPlaceDown)
+	msgbox ("Alright, if Jakson says we can't play\nanymore…")
+	speakername (CommonText_Jakson)
+	playse (SE_PIN)
+	applymovement (JAKSON_SCENE05, Common_Movement_ExclamationMark)
+	delay (10)
+	applymovement (JAKSON_SCENE05, Common_Movement_WalkInPlaceDown)
+	msgbox ("Hold on! I didn't say I was done!")
+	applymovement (JAKSON_SCENE05, Common_Movement_WalkInPlaceRight)
+	msgbox ("I've got a few ideas left, and Emerald\nhas a decent post-game to it!")
+	applymovement (JAKSON_SCENE05, Common_Movement_WalkInPlaceUp)
+	msgbox ("There's the Battle Frontier for you\nall to challenge, plus some post-game\lfights.")
+	applymovement (JAKSON_SCENE05, Common_Movement_WalkInPlaceRight)
+	msgbox ("Maybe I even snuck in one or two more\nsurprises!")
+	speakername (CommonText_Redd)
+	applymovement (REDD_SCENE05, Common_Movement_WalkInPlaceRight)
+	msgbox ("That sounds a little better!")
+	speakername (CommonText_Sakura)
+	msgbox ("Something more? That's what I would\nexpect from Jakson{EMOJI_TILDE}{UNK_SPACER}")
+	speakername (CommonText_Harper)
+	msgbox ("Wow, you really went hard on this\nmod-pack over like… a week, was it?")
+	speakername (CommonText_Jakson)
+	applymovement (JAKSON_SCENE05, Common_Movement_WalkInPlaceLeft)
+	msgbox ("I… may have started on it a while\nbefore I asked if you all were in\lor not.")
+	speakername (CommonText_Baron)
+	applymovement (BARON_SCENE05, Common_Movement_Smile)
+	playse (SE_M_MORNING_SUN)
+	msgbox ("Haha, an understandable insecurity.\nYou did a good job!")
+	speakername (CommonText_Jakson)
+	applymovement (JAKSON_SCENE05, Common_Movement_WalkInPlaceRight)
+	msgbox ("I- Well… {EMOJI_BIGWHEEL}Clears throat{EMOJI_BIGWHEEL}\nI'm happy you all enjoyed it.\p"
+			"And I hope that continues for the\nendgame content I managed to do.\p"
+			"I hope you all… Baron, Sakura, Redd,\nHarper… and {PLAYER}. I hope you\lgive it a shot.")
+	speakername (CommonText_Harper)
+	msgbox ("Well after that sap show, how could\nwe say no?")
+	speakername (CommonText_Redd)
+	applymovement (REDD_SCENE05, Common_Movement_WalkInPlaceFasterRight)
+	msgbox ("Ah, don't be like that. It does sound fun.")
+	speakername (CommonText_Harper)
+	msgbox ("Heh, I didn't say it didn't.")
+	speakername (CommonText_Baron)
+	msgbox ("I suppose you didn't. I for one\nthink it sounds lovely.")
+	closemessage
+// Wrapping up...
+	delay (10)
+	playse (SE_PIN)
+	applymovement (SAKURA_SCENE05, Common_Movement_ExclamationMark)
+	delay (20)
+	speakername (CommonText_Sakura)
+	msgbox ("First post game challenge?\nRace to the Battle Frontier!\lGo go go!")
+	delay (10)
+	applymovement (LOCALID_PLAYER, Common_Movement_SweatDrop)
+	applymovement (JAKSON_SCENE05, Common_Movement_SweatDrop)
+	applymovement (REDD_SCENE05, Common_Movement_SweatDrop)
+	applymovement (BARON_SCENE05, Common_Movement_SweatDrop)
+	applymovement (HARPER_SCENE05, Common_Movement_SweatDrop)
+	playse (SE_M_METRONOME)
+	delay (80)
+	closemessage
+	applymovement (JAKSON_SCENE05, Common_Movement_WalkInPlaceUp)
+	delay (60)
+	applymovement (JAKSON_SCENE05, Common_Movement_WalkInPlaceDown)
+	delay (60)
+	applymovement (JAKSON_SCENE05, Common_Movement_WalkInPlaceRight)
+	delay (60)
+	speakername (CommonText_Jakson)
+	msgbox ("Alright then… Shall we begin?\nOne more time.")
+	closemessage
+	delay (20)
+	applymovement (BARON_SCENE05, Common_Movement_Smile)
+	playse (SE_M_MORNING_SUN)
+	delay (20)
+	applymovement (REDD_SCENE05, Common_Movement_MusicNote)
+	delay (20)
+	if (var(VAR_RESULT) == MALE) {
+		applymovement (SAKURA_SCENE05, Common_Movement_JumpInPlaceLeft)
+	}
+	else {
+		applymovement (SAKURA_SCENE05, Common_Movement_JumpInPlaceRight)
+	}
+	waitmovement (0)
+	delay (10)
+	applymovement (BARON_SCENE05, Scene05_Move_BaronFacing)
+	applymovement (JAKSON_SCENE05, Scene05_Move_JaksonEndAnim)
+	applymovement (SAKURA_SCENE05, Common_Movement_WalkFastUp7)
+	waitmovement (0)
+	applymovement (HARPER_SCENE05, Common_Movement_WalkInPlaceUp)
+	applymovement (REDD_SCENE05, Common_Movement_Thinking)
+	delay (60)
+	applymovement (HARPER_SCENE05, Common_Movement_Talking)
+	applymovement (BARON_SCENE05, Common_Movement_WalkInPlaceDown)
+	applymovement (JAKSON_SCENE05, Scene05_Move_JaksonEndMove)
+	applymovement (REDD_SCENE05, Scene05_Move_ReddLeaves)
+	waitmovement (0)
+	applymovement (BARON_SCENE05, Common_Movement_MusicNote)
+	if (var(VAR_RESULT) == MALE) {
+		applymovement (JAKSON_SCENE05, Common_Movement_WalkInPlaceLeft)
+	}
+	else {
+		applymovement (JAKSON_SCENE05, Common_Movement_WalkInPlaceRight)
+	}
+	waitmovement (0)
+	delay (10)
+	applymovement (JAKSON_SCENE05, Common_Movement_Talking)
+	delay (40)
+	applymovement (LOCALID_PLAYER, Common_Movement_Smile)
+	delay (30)
+	applymovement (JAKSON_SCENE05, Common_Movement_WalkUp5)
+	waitmovement (0)
+// End of script
+	fadedefaultbgm
+	fadescreenswapbuffers (FADE_TO_BLACK)
+	removeobject (JAKSON_SCENE05)
+	removeobject (REDD_SCENE05)
+	removeobject (SAKURA_SCENE05)
+	removeobject (HARPER_SCENE05)
+	removeobject (BARON_SCENE05)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 18)
+	fadescreenswapbuffers (FADE_FROM_BLACK)
+	if (var(VAR_RESULT) == MALE) {
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkRight)
+	}
+	else {
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkLeft)
+	}
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkDown)
+	waitmovement (0)
+	special (RemoveCameraObject)
+	release
+}
+
+movement Scene05_Move_CameraMale {
+	walk_slow_diag_southeast * 2
+	walk_slow_right * 2
+}
+
+movement Scene05_Move_CameraFemale {
+	walk_slow_diag_southwest * 2
+	walk_slow_left * 3
+}
+
+movement Scene05_Move_JaksonFacingMale {
+	delay_16 * 2
+	walk_in_place_up
+	walk_in_place_right
+}
+
+movement Scene05_Move_SakuraMove1Male {
+	lock_facing_direction
+	delay_16
+	delay_8
+	walk_right
+	unlock_facing_direction
+}
+
+movement Scene05_Move_SakuraMove1Female {
+	lock_facing_direction
+	delay_16 * 2
+	delay_8
+	walk_left
+	unlock_facing_direction
+}
+
+movement Scene05_Move_ReddFacing {
+	delay_16 * 4
+	walk_in_place_up
+}
+
+movement Scene05_Move_SakuraOrPlayerFacing {
+	delay_16 * 3
+	walk_in_place_down
+	walk_in_place_left
+}
+
+movement Scene05_Move_BaronRun {
+	walk_fast_down
+	walk_fast_left
+}
+
+movement Scene05_Move_HarperMove {
+	delay_8
+	lock_facing_direction
+	walk_down
+	unlock_facing_direction
+	walk_in_place_up
+	delay_8
+	delay_16 * 2
+	walk_in_place_left
+}
+
+movement Scene05_Move_ReddMove {
+	delay_16 * 8
+	face_left
+	delay_8
+	face_right
+	delay_8
+	lock_facing_direction
+	jump_left
+	unlock_facing_direction
+}
+
+movement Scene05_Move_BaronFacing {
+	delay_16
+	walk_in_place_up
+}
+
+movement Scene05_Move_JaksonEndAnim {
+	delay_16
+	delay_8
+	walk_in_place_up
+	emote_sweat_drop
+}
+
+movement Scene05_Move_JaksonEndMove {
+	delay_16 * 6
+	walk_right
+	walk_up
+}
+
+movement Scene05_Move_ReddLeaves {
+	walk_right
+	walk_up * 7
+}
+
+text Scene05_Text_Sakura1 {
+	"{PLAYER}! You'll never guess who won{EMOJI_TILDE}{UNK_SPACER}"
+}

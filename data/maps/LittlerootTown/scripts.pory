@@ -1,5 +1,6 @@
 raw `
 LittlerootTown_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, LittlerootTown_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, LittlerootTown_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, LittlerootTown_OnWarp
@@ -38,6 +39,11 @@ LittlerootTown_MapScripts::
 	@ 1: Set after scene outside Birch's Lab
 	@ 2: Set after rival fight in Petalburg City
 
+LittlerootTown_OnLoad:
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 17, EventScript_DoNotDoor
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 17, EventScript_SpawnInvisible
+	end
+
 LittlerootTown_OnTransition:
 	setflag FLAG_VISITED_LITTLEROOT_TOWN
 	call Common_EventScript_SetupRivalGfxId
@@ -53,13 +59,12 @@ LittlerootTown_OnTransition:
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_EventScript_LeftLabAfterDexUpgrade
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
-	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 1, LittlerootTown_EventScript_ShowBaron
+	setflag FLAG_TEMP_3
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 1, EventScript_Clear_FlagTemp1
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 0, LittlerootTown_EventScript_ShowRivalCheck
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 17, EventScript_Clear_FlagTemp3
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 17, Rival_Scene05_MapOnTransition
 	end
-
-LittlerootTown_EventScript_ShowBaron::
-	clearflag FLAG_TEMP_1
-	return
 
 LittlerootTown_EventScript_ShowRivalCheck::
 	call_if_eq VAR_BIRCH_LAB_STATE, 3, EventScript_Clear_FlagTemp2
@@ -118,6 +123,7 @@ LittlerootTown_OnFrame:
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 1, LittlerootTown_EventScript_StepOffTruckMale
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 2, LittlerootTown_EventScript_StepOffTruckFemale
 	map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_BeginDexUpgradeScene
+	map_script_2 VAR_EMERALBODY_RIVAL_STATE, 17, Rival_Scene05
 	.2byte 0
 
 LittlerootTown_EventScript_StepOffTruckMale::

@@ -9,6 +9,14 @@ Common_Movement_ExclamationMark:
 	emote_exclamation_mark
 	step_end
 
+Common_Movement_DoubleExclamationMark:
+	emote_double_exclamation_mark
+	step_end
+
+Common_Movement_XMark:
+	emote_x
+	step_end
+
 Common_Movement_MusicNote:
 	emote_music_note
 	step_end
@@ -472,6 +480,10 @@ Common_Movement_JumpInPlaceDown:
 
 Common_Movement_JumpInPlaceRight:
 	jump_in_place_right
+	step_end
+
+Common_Movement_JumpInPlaceLeft:
+	jump_in_place_left
 	step_end
 
 Common_Movement_JumpUp:

@@ -173,8 +173,8 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	setvar VAR_MAGEARNA_STATE, 1
-	warp MAP_RUSTBORO_CITY, 12, 19
+	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 4
+	setvar VAR_EMERALBODY_RIVAL_STATE, 17
 	release
 	end
 

@@ -23,6 +23,16 @@ script EventScript_HideMapNamePopup {
 	return
 }
 
+script EventScript_DoNotDoor {
+	setflag (FLAG_SYS_DO_NOT_DOOR)
+	return
+}
+
+script EventScript_SpawnInvisible {
+	setflag (FLAG_SYS_SPAWN_INVISIBLE)
+	return
+}
+
 script Mart_EventScript_Clerk {
 	lock
 	faceplayer

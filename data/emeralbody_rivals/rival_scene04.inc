@@ -106,98 +106,128 @@ Rival_Scene04::
 # 62 "data/emeralbody_rivals/rival_scene04.pory"
 	waitmovement 0
 # 63 "data/emeralbody_rivals/rival_scene04.pory"
-	applymovement 11, Common_Movement_WalkInPlaceUp
+	applymovement 12, Common_Movement_SweatDrop
 # 64 "data/emeralbody_rivals/rival_scene04.pory"
-	speakername CommonText_Baron
-# 65 "data/emeralbody_rivals/rival_scene04.pory"
-	msgbox Rival_Scene04_Text_3
-# 66 "data/emeralbody_rivals/rival_scene04.pory"
-	applymovement 8, Common_Movement_WalkInPlaceRight
-# 67 "data/emeralbody_rivals/rival_scene04.pory"
-	speakername CommonText_Jakson
-# 68 "data/emeralbody_rivals/rival_scene04.pory"
-	msgbox Rival_Scene04_Text_4
-# 69 "data/emeralbody_rivals/rival_scene04.pory"
-	applymovement 10, Common_Movement_WalkInPlaceRight
-# 70 "data/emeralbody_rivals/rival_scene04.pory"
-	applymovement 12, Common_Movement_WalkInPlaceLeft
-# 71 "data/emeralbody_rivals/rival_scene04.pory"
-	waitmovement 0
-# 72 "data/emeralbody_rivals/rival_scene04.pory"
-	applymovement 8, Common_Movement_WalkInPlaceLeft
-# 73 "data/emeralbody_rivals/rival_scene04.pory"
-	speakername CommonText_Redd
-# 74 "data/emeralbody_rivals/rival_scene04.pory"
-	msgbox Rival_Scene04_Text_5
-# 75 "data/emeralbody_rivals/rival_scene04.pory"
-	speakername CommonText_Harper
-# 76 "data/emeralbody_rivals/rival_scene04.pory"
-	msgbox Rival_Scene04_Text_6
-# 77 "data/emeralbody_rivals/rival_scene04.pory"
-	applymovement 10, Common_Movement_WalkInPlaceDown
-# 78 "data/emeralbody_rivals/rival_scene04.pory"
-	applymovement 8, Common_Movement_WalkInPlaceDown
-# 79 "data/emeralbody_rivals/rival_scene04.pory"
-	waitmovement 0
-# 80 "data/emeralbody_rivals/rival_scene04.pory"
-	applymovement 11, Common_Movement_WalkInPlaceDown
-# 81 "data/emeralbody_rivals/rival_scene04.pory"
-	speakername CommonText_Sakura
-# 82 "data/emeralbody_rivals/rival_scene04.pory"
-	msgbox Rival_Scene04_Text_7
-# 83 "data/emeralbody_rivals/rival_scene04.pory"
-	speakername CommonText_Redd
-# 84 "data/emeralbody_rivals/rival_scene04.pory"
-	msgbox Rival_Scene04_Text_8
-# 85 "data/emeralbody_rivals/rival_scene04.pory"
 	applymovement 11, Common_Movement_WalkInPlaceUp
-# 86 "data/emeralbody_rivals/rival_scene04.pory"
-	waitmovement 0
-# 87 "data/emeralbody_rivals/rival_scene04.pory"
+# 65 "data/emeralbody_rivals/rival_scene04.pory"
+	playse SE_M_METRONOME
+# 66 "data/emeralbody_rivals/rival_scene04.pory"
 	speakername CommonText_Baron
-# 88 "data/emeralbody_rivals/rival_scene04.pory"
-	msgbox Rival_Scene04_Text_9
-# 89 "data/emeralbody_rivals/rival_scene04.pory"
-	speakername CommonText_Harper
-# 90 "data/emeralbody_rivals/rival_scene04.pory"
-	msgbox Rival_Scene04_Text_10
-# 91 "data/emeralbody_rivals/rival_scene04.pory"
-	speakername CommonText_Baron
-# 92 "data/emeralbody_rivals/rival_scene04.pory"
-	msgbox Rival_Scene04_Text_11
-# 93 "data/emeralbody_rivals/rival_scene04.pory"
-	playse SE_LEDGE
-# 94 "data/emeralbody_rivals/rival_scene04.pory"
-	applymovement 10, Common_Movement_JumpInPlaceDown
-# 95 "data/emeralbody_rivals/rival_scene04.pory"
-	waitmovement 0
-# 96 "data/emeralbody_rivals/rival_scene04.pory"
-	speakername CommonText_Redd
-# 97 "data/emeralbody_rivals/rival_scene04.pory"
-	msgbox Rival_Scene04_Text_12
-# 98 "data/emeralbody_rivals/rival_scene04.pory"
-	speakername CommonText_Sakura
-# 99 "data/emeralbody_rivals/rival_scene04.pory"
-	msgbox Rival_Scene04_Text_13
-# 100 "data/emeralbody_rivals/rival_scene04.pory"
-	speakername CommonText_Harper
-# 101 "data/emeralbody_rivals/rival_scene04.pory"
-	msgbox Rival_Scene04_Text_14
-# 102 "data/emeralbody_rivals/rival_scene04.pory"
+# 67 "data/emeralbody_rivals/rival_scene04.pory"
+	msgbox Rival_Scene04_Text_3
+# 68 "data/emeralbody_rivals/rival_scene04.pory"
+	applymovement 8, Common_Movement_WalkInPlaceRight
+# 69 "data/emeralbody_rivals/rival_scene04.pory"
 	speakername CommonText_Jakson
-# 103 "data/emeralbody_rivals/rival_scene04.pory"
-	msgbox Rival_Scene04_Text_15
-# 104 "data/emeralbody_rivals/rival_scene04.pory"
+# 70 "data/emeralbody_rivals/rival_scene04.pory"
+	msgbox Rival_Scene04_Text_4
+# 71 "data/emeralbody_rivals/rival_scene04.pory"
 	closemessage
+# 72 "data/emeralbody_rivals/rival_scene04.pory"
+	applymovement 12, Common_Movement_WalkInPlaceLeft
+# 73 "data/emeralbody_rivals/rival_scene04.pory"
+	waitmovement 0
+# 74 "data/emeralbody_rivals/rival_scene04.pory"
+	applymovement 10, Common_Movement_WalkInPlaceRight
+# 75 "data/emeralbody_rivals/rival_scene04.pory"
+	speakername CommonText_Redd
+# 76 "data/emeralbody_rivals/rival_scene04.pory"
+	msgbox Rival_Scene04_Text_5
+# 77 "data/emeralbody_rivals/rival_scene04.pory"
+	closemessage
+# 78 "data/emeralbody_rivals/rival_scene04.pory"
+	delay 20
+# 79 "data/emeralbody_rivals/rival_scene04.pory"
+	speakername CommonText_Harper
+# 80 "data/emeralbody_rivals/rival_scene04.pory"
+	msgbox Rival_Scene04_Text_6
+# 81 "data/emeralbody_rivals/rival_scene04.pory"
+	applymovement 10, Common_Movement_WalkInPlaceDown
+# 82 "data/emeralbody_rivals/rival_scene04.pory"
+	applymovement 8, Common_Movement_WalkInPlaceDown
+# 83 "data/emeralbody_rivals/rival_scene04.pory"
+	waitmovement 0
+# 84 "data/emeralbody_rivals/rival_scene04.pory"
+	applymovement 11, Common_Movement_WalkInPlaceDown
+# 85 "data/emeralbody_rivals/rival_scene04.pory"
+	waitmovement 0
+# 86 "data/emeralbody_rivals/rival_scene04.pory"
+	speakername CommonText_Sakura
+# 87 "data/emeralbody_rivals/rival_scene04.pory"
+	applymovement 11, Common_Movement_MusicNote
+# 88 "data/emeralbody_rivals/rival_scene04.pory"
+	playse SE_RG_HELP_OPEN
+# 89 "data/emeralbody_rivals/rival_scene04.pory"
+	msgbox Rival_Scene04_Text_7
+# 90 "data/emeralbody_rivals/rival_scene04.pory"
+	speakername CommonText_Redd
+# 91 "data/emeralbody_rivals/rival_scene04.pory"
+	msgbox Rival_Scene04_Text_8
+# 92 "data/emeralbody_rivals/rival_scene04.pory"
+	closemessage
+# 93 "data/emeralbody_rivals/rival_scene04.pory"
+	applymovement 11, Common_Movement_WalkInPlaceUp
+# 94 "data/emeralbody_rivals/rival_scene04.pory"
+	waitmovement 0
+# 95 "data/emeralbody_rivals/rival_scene04.pory"
+	speakername CommonText_Baron
+# 96 "data/emeralbody_rivals/rival_scene04.pory"
+	applymovement 12, Common_Movement_Smile
+# 97 "data/emeralbody_rivals/rival_scene04.pory"
+	playse SE_M_MORNING_SUN
+# 98 "data/emeralbody_rivals/rival_scene04.pory"
+	msgbox Rival_Scene04_Text_9
+# 99 "data/emeralbody_rivals/rival_scene04.pory"
+	speakername CommonText_Harper
+# 100 "data/emeralbody_rivals/rival_scene04.pory"
+	msgbox Rival_Scene04_Text_10
+# 101 "data/emeralbody_rivals/rival_scene04.pory"
+	speakername CommonText_Baron
+# 102 "data/emeralbody_rivals/rival_scene04.pory"
+	msgbox Rival_Scene04_Text_11
+# 103 "data/emeralbody_rivals/rival_scene04.pory"
+	playse SE_LEDGE
+# 104 "data/emeralbody_rivals/rival_scene04.pory"
+	applymovement 10, Common_Movement_JumpInPlaceDown
 # 105 "data/emeralbody_rivals/rival_scene04.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 16
+	waitmovement 0
 # 106 "data/emeralbody_rivals/rival_scene04.pory"
-	fadedefaultbgm
+	speakername CommonText_Redd
 # 107 "data/emeralbody_rivals/rival_scene04.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	msgbox Rival_Scene04_Text_12
 # 108 "data/emeralbody_rivals/rival_scene04.pory"
-	warpsilent MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F, 9, 8
+	speakername CommonText_Sakura
 # 109 "data/emeralbody_rivals/rival_scene04.pory"
+	applymovement 11, Common_Movement_MusicNote
+# 110 "data/emeralbody_rivals/rival_scene04.pory"
+	playse SE_RG_HELP_OPEN
+# 111 "data/emeralbody_rivals/rival_scene04.pory"
+	msgbox Rival_Scene04_Text_13
+# 112 "data/emeralbody_rivals/rival_scene04.pory"
+	speakername CommonText_Harper
+# 113 "data/emeralbody_rivals/rival_scene04.pory"
+	applymovement 9, Common_Movement_SweatDrop
+# 114 "data/emeralbody_rivals/rival_scene04.pory"
+	playse SE_M_METRONOME
+# 115 "data/emeralbody_rivals/rival_scene04.pory"
+	msgbox Rival_Scene04_Text_14
+# 116 "data/emeralbody_rivals/rival_scene04.pory"
+	speakername CommonText_Jakson
+# 117 "data/emeralbody_rivals/rival_scene04.pory"
+	msgbox Rival_Scene04_Text_15
+# 118 "data/emeralbody_rivals/rival_scene04.pory"
+	closemessage
+# 119 "data/emeralbody_rivals/rival_scene04.pory"
+	delay 10
+# 120 "data/emeralbody_rivals/rival_scene04.pory"
+	setvar VAR_EMERALBODY_RIVAL_STATE, 16
+# 121 "data/emeralbody_rivals/rival_scene04.pory"
+	fadedefaultbgm
+# 122 "data/emeralbody_rivals/rival_scene04.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 123 "data/emeralbody_rivals/rival_scene04.pory"
+	warpsilent MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F, 9, 8
+# 124 "data/emeralbody_rivals/rival_scene04.pory"
 	release
 	return
 
@@ -215,53 +245,53 @@ Rival_Scene04_Text_2:
 	.string "Yeah, even Baron was here before you!$"
 
 Rival_Scene04_Text_3:
-# 65 "data/emeralbody_rivals/rival_scene04.pory"
+# 67 "data/emeralbody_rivals/rival_scene04.pory"
 	.string "W- Well… I'm not as slow as I was\nbefore…$"
 
 Rival_Scene04_Text_4:
-# 68 "data/emeralbody_rivals/rival_scene04.pory"
+# 70 "data/emeralbody_rivals/rival_scene04.pory"
 	.string "That's true. You, Redd, and Harper have\nimproved a lot.$"
 
 Rival_Scene04_Text_5:
-# 74 "data/emeralbody_rivals/rival_scene04.pory"
+# 76 "data/emeralbody_rivals/rival_scene04.pory"
 	.string "Hey now. I was good from the start.\nPlus, I wasn't about to be left behind\lby the likes of all you.$"
 
 Rival_Scene04_Text_6:
-# 76 "data/emeralbody_rivals/rival_scene04.pory"
+# 80 "data/emeralbody_rivals/rival_scene04.pory"
 	.string "Doesn't that mean you started towards\nthe back if you could be “left behind”?$"
 
 Rival_Scene04_Text_7:
-# 82 "data/emeralbody_rivals/rival_scene04.pory"
+# 89 "data/emeralbody_rivals/rival_scene04.pory"
 	.string "Maybe he did! I wouldn't know. I never\nbothered to look back, heheh{EMOJI_TILDE}{UNK_SPACER}$"
 
 Rival_Scene04_Text_8:
-# 84 "data/emeralbody_rivals/rival_scene04.pory"
+# 91 "data/emeralbody_rivals/rival_scene04.pory"
 	.string "W- What are you implying?$"
 
 Rival_Scene04_Text_9:
-# 88 "data/emeralbody_rivals/rival_scene04.pory"
+# 98 "data/emeralbody_rivals/rival_scene04.pory"
 	.string "It's quite the bundle of personality\nwe've got here, haha.$"
 
 Rival_Scene04_Text_10:
-# 90 "data/emeralbody_rivals/rival_scene04.pory"
+# 100 "data/emeralbody_rivals/rival_scene04.pory"
 	.string "Well, for my part, I don't think I'd have\ngotten this far or improved this much\lif I was all on my own.$"
 
 Rival_Scene04_Text_11:
-# 92 "data/emeralbody_rivals/rival_scene04.pory"
+# 102 "data/emeralbody_rivals/rival_scene04.pory"
 	.string "I think I'm in the same position.\nI'll have to thank you all later.$"
 
 Rival_Scene04_Text_12:
-# 97 "data/emeralbody_rivals/rival_scene04.pory"
+# 107 "data/emeralbody_rivals/rival_scene04.pory"
 	.string "Emphasis on “later”! First things first.\nWe're all going to crush the Pokémon\lLeague in six fell swoops, me being 1st!$"
 
 Rival_Scene04_Text_13:
-# 99 "data/emeralbody_rivals/rival_scene04.pory"
+# 111 "data/emeralbody_rivals/rival_scene04.pory"
 	.string "Oh, narrow-minded Redd. You can't be\nfirst if I've already completed it{EMOJI_TILDE}{UNK_SPACER}$"
 
 Rival_Scene04_Text_14:
-# 101 "data/emeralbody_rivals/rival_scene04.pory"
+# 115 "data/emeralbody_rivals/rival_scene04.pory"
 	.string "You definitely just got here like\nthe rest of us…$"
 
 Rival_Scene04_Text_15:
-# 103 "data/emeralbody_rivals/rival_scene04.pory"
+# 117 "data/emeralbody_rivals/rival_scene04.pory"
 	.string "Easy now, everyone. Let's all prep, then\nwe can start.$"

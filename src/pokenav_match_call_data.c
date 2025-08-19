@@ -325,9 +325,9 @@ static const match_call_text_data_t sJaksonTextScripts[] = {
     { NULL,                    0xFFFF,                              0xFFFF }
 };
 
-static const struct MatchCallRival sJaksonMatchCallHeader =
+static const struct MatchCallStructNPC sJaksonMatchCallHeader =
 {
-    .type = MC_TYPE_RIVAL,
+    .type = MC_TYPE_NPC,
     .flag = FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL,
     .desc = COMPOUND_STRING("555-555-5555"),
     .name = COMPOUND_STRING("Jakson"),
@@ -344,9 +344,9 @@ static const match_call_text_data_t sHarperTextScripts[] = {
     { NULL,                    0xFFFF,                              0xFFFF }
 };
 
-static const struct MatchCallRival sHarperMatchCallHeader =
+static const struct MatchCallStructNPC sHarperMatchCallHeader =
 {
-    .type = MC_TYPE_RIVAL,
+    .type = MC_TYPE_NPC,
     .flag = FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL,
     .desc = COMPOUND_STRING("555-118-4517"),
     .name = COMPOUND_STRING("Harper"),
@@ -363,9 +363,9 @@ static const match_call_text_data_t sReddTextScripts[] = {
     { NULL,                  0xFFFF,                              0xFFFF }
 };
 
-static const struct MatchCallRival sReddMatchCallHeader =
+static const struct MatchCallStructNPC sReddMatchCallHeader =
 {
-    .type = MC_TYPE_RIVAL,
+    .type = MC_TYPE_NPC,
     .flag = FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL,
     .desc = COMPOUND_STRING("555-000-0000"),
     .name = COMPOUND_STRING("Redd"),
@@ -382,9 +382,9 @@ static const match_call_text_data_t sSakuraTextScripts[] = {
     { NULL,                    0xFFFF,                              0xFFFF }
 };
 
-static const struct MatchCallRival sSakuraMatchCallHeader =
+static const struct MatchCallStructNPC sSakuraMatchCallHeader =
 {
-    .type = MC_TYPE_RIVAL,
+    .type = MC_TYPE_NPC,
     .flag = FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL,
     .desc = COMPOUND_STRING("555-123-1053"),
     .name = COMPOUND_STRING("Sakura"),
@@ -401,9 +401,9 @@ static const match_call_text_data_t sBaronTextScripts[] = {
     { NULL,                   0xFFFF,                              0xFFFF }
 };
 
-static const struct MatchCallRival sBaronMatchCallHeader =
+static const struct MatchCallStructNPC sBaronMatchCallHeader =
 {
-    .type = MC_TYPE_RIVAL,
+    .type = MC_TYPE_NPC,
     .flag = FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL,
     .desc = COMPOUND_STRING("555-800-8135"),
     .name = COMPOUND_STRING("Baron"),
@@ -701,11 +701,11 @@ static const match_call_t sMatchCallHeaders[] = {
     [MC_HEADER_PROF_BIRCH] = {.birch  = &sProfBirchMatchCallHeader},
     [MC_HEADER_BRENDAN]    = {.rival  = &sBrendanMatchCallHeader},
     [MC_HEADER_MAY]        = {.rival  = &sMayMatchCallHeader},
-    [MC_HEADER_JAKSON]     = {.rival  = &sJaksonMatchCallHeader},
-    [MC_HEADER_HARPER]     = {.rival  = &sHarperMatchCallHeader},
-    [MC_HEADER_REDD]       = {.rival  = &sReddMatchCallHeader},
-    [MC_HEADER_SAKURA]     = {.rival  = &sSakuraMatchCallHeader},
-    [MC_HEADER_BARON]      = {.rival  = &sBaronMatchCallHeader},
+    [MC_HEADER_JAKSON]     = {.npc    = &sJaksonMatchCallHeader},
+    [MC_HEADER_HARPER]     = {.npc    = &sHarperMatchCallHeader},
+    [MC_HEADER_REDD]       = {.npc    = &sReddMatchCallHeader},
+    [MC_HEADER_SAKURA]     = {.npc    = &sSakuraMatchCallHeader},
+    [MC_HEADER_BARON]      = {.npc    = &sBaronMatchCallHeader},
     [MC_HEADER_WALLY]      = {.wally  = &sWallyMatchCallHeader},
     [MC_HEADER_NORMAN]     = {.leader = &sNormanMatchCallHeader},
     [MC_HEADER_MOM]        = {.npc    = &sMomMatchCallHeader},

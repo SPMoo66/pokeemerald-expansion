@@ -328,6 +328,7 @@ static const match_call_text_data_t sJaksonTextScripts[] = {
 static const struct MatchCallStructNPC sJaksonMatchCallHeader =
 {
     .type = MC_TYPE_NPC,
+    .mapSec = MAPSEC_NONE,
     .flag = FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL,
     .desc = COMPOUND_STRING("555-555-5555"),
     .name = COMPOUND_STRING("Jakson"),
@@ -347,6 +348,7 @@ static const match_call_text_data_t sHarperTextScripts[] = {
 static const struct MatchCallStructNPC sHarperMatchCallHeader =
 {
     .type = MC_TYPE_NPC,
+    .mapSec = MAPSEC_NONE,
     .flag = FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL,
     .desc = COMPOUND_STRING("555-118-4517"),
     .name = COMPOUND_STRING("Harper"),
@@ -366,6 +368,7 @@ static const match_call_text_data_t sReddTextScripts[] = {
 static const struct MatchCallStructNPC sReddMatchCallHeader =
 {
     .type = MC_TYPE_NPC,
+    .mapSec = MAPSEC_NONE,
     .flag = FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL,
     .desc = COMPOUND_STRING("555-000-0000"),
     .name = COMPOUND_STRING("Redd"),
@@ -385,6 +388,7 @@ static const match_call_text_data_t sSakuraTextScripts[] = {
 static const struct MatchCallStructNPC sSakuraMatchCallHeader =
 {
     .type = MC_TYPE_NPC,
+    .mapSec = MAPSEC_NONE,
     .flag = FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL,
     .desc = COMPOUND_STRING("555-123-1053"),
     .name = COMPOUND_STRING("Sakura"),
@@ -404,6 +408,7 @@ static const match_call_text_data_t sBaronTextScripts[] = {
 static const struct MatchCallStructNPC sBaronMatchCallHeader =
 {
     .type = MC_TYPE_NPC,
+    .mapSec = MAPSEC_NONE,
     .flag = FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL,
     .desc = COMPOUND_STRING("555-800-8135"),
     .name = COMPOUND_STRING("Baron"),

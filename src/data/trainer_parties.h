@@ -15869,3 +15869,33 @@ static const struct TrainerMon sParty_GiovanniRefuge[] = {
     .moves = {MOVE_DRACO_METEOR, MOVE_SLUDGE_BOMB, MOVE_FIRE_BLAST, MOVE_TAILWIND}
     }
 };
+
+static const struct TrainerMon sParty_Lexie[] = {
+    {
+    .lvl = 12,
+    .species = SPECIES_DELIBIRD,
+    },
+    {
+    .lvl = 12,
+    .species = SPECIES_VULPIX_ALOLA,
+    },
+    {
+    .lvl = 12,
+    .species = SPECIES_SNOM,
+    }
+};
+
+static const struct TrainerMon sParty_Bjorn[] = {
+    {
+    .lvl = 12,
+    .species = SPECIES_HOPPIP_EMERIBIAN,
+    },
+    {
+    .lvl = 12,
+    .species = SPECIES_SMOOCHUM,
+    },
+    {
+    .lvl = 12,
+    .species = SPECIES_SNOVER,
+    }
+};

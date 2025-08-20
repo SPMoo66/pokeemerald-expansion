@@ -1,0 +1,11 @@
+mapscripts GraniteCave_B3F_MapScripts {}
+
+script GraniteCave_B3F_EventScript_Lexie {
+	trainerbattle_single (TRAINER_LEXIE, "It turns out there's not enough snow in\nhere to ski, so let's battle instead!", "And now I don't have enough Pokémon to\nbattle!")
+	msgbox ("Whoever recommended this place to me\nis a big liar!", MSGBOX_AUTOCLOSE)
+}
+
+script GraniteCave_B3F_EventScript_Bjorn {
+	trainerbattle_single (TRAINER_BJORN, "How in the world did I even get down\nhere?", "Another crushing blow?")
+	msgbox ("Well, I slipped across the ice, of\ncourse.\pHow else would I get here?", MSGBOX_AUTOCLOSE)
+}

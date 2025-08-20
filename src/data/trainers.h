@@ -10869,3 +10869,27 @@
         .party = TRAINER_PARTY(sParty_GiovanniRefuge),
     },
 
+    [DIFFICULTY_NORMAL][TRAINER_LEXIE] =
+    {
+        .trainerClass = TRAINER_CLASS_SKIER,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_SKIER_F,
+        .trainerName = _("Lexie"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_Lexie),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_BJORN] =
+    {
+        .trainerClass = TRAINER_CLASS_SKIER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_SKIER_M,
+        .trainerName = _("Bjorn"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .party = TRAINER_PARTY(sParty_Bjorn),
+    },
+

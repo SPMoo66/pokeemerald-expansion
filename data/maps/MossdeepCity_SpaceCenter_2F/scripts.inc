@@ -161,6 +161,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Grunt6::
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_Courtney::
+	speakername (CommonText_Courtney)
 	msgbox MossdeepCity_SpaceCenter_2F_Text_CourtneyPostBattle, MSGBOX_NPC
 	end
 

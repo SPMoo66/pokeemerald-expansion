@@ -22,6 +22,7 @@ DewfordTown_EventScript_Briney::
 	lock
 	faceplayer
 	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, DewfordTown_EventScript_ReturnToPetalburgPrompt
+	goto_if_unset FLAG_BADGE02_GET, DewfordTown_EventScript_ReturnToPetalburgPrompt_NoBadge02
 	speakername (CommonText_MrBriney)
 	message DewfordTown_Text_WhereAreWeBound
 	waitmessage
@@ -62,6 +63,15 @@ DewfordTown_EventScript_ReturnToPetalburgPrompt::
 	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_SailBackToPetalburg
 	speakername (CommonText_MrBriney)
 	msgbox DewfordTown_Text_GoDeliverIllBeWaiting, MSGBOX_DEFAULT
+	release
+	end
+
+DewfordTown_EventScript_ReturnToPetalburgPrompt_NoBadge02::
+	speakername (CommonText_MrBriney)
+	msgbox DewfordTown_Text_SetSailBackToPetalburg2, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_SailBackToPetalburg
+	speakername (CommonText_MrBriney)
+	msgbox DewfordTown_Text_GoGetBadgeIllBeWaiting, MSGBOX_DEFAULT
 	release
 	end
 
@@ -652,6 +662,13 @@ DewfordTown_Text_SetSailBackToPetalburg:
 	.string "Or were you meaning to sail back to\n"
 	.string "Petalburg?$"
 
+DewfordTown_Text_SetSailBackToPetalburg2:
+	.string "You've delivered that Letter, but you\n"
+	.string "ought to visit the local gym before\l"
+	.string "moving on to Slateport.\p"
+	.string "Or were you meaning to sail back to\n"
+	.string "Petalburg?$"
+
 DewfordTown_Text_PetalburgWereSettingSail2:
 	.string "Petalburg it is, then!\p"
 	.string "Anchors aweigh!\n"
@@ -659,6 +676,10 @@ DewfordTown_Text_PetalburgWereSettingSail2:
 
 DewfordTown_Text_GoDeliverIllBeWaiting:
 	.string "Then you go on and deliver the Letter.\n"
+	.string "I'll be waiting.$"
+
+DewfordTown_Text_GoGetBadgeIllBeWaiting:
+	.string "Then you go on and get that Gym Badge.\n"
 	.string "I'll be waiting.$"
 
 DewfordTown_Text_BrineyLandedInDewford:

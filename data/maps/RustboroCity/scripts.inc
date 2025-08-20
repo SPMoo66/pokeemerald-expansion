@@ -46,7 +46,6 @@ RustboroCity_OnFrame:
 	.2byte 0
 
 RustboroCity_OnResume:
-	removeobject VAR_LAST_TALKED
 	end
 
 RustboroCity_EventScript_ScientistAddMatchCall::
@@ -549,7 +548,9 @@ RustboroCity_EventScript_Rival::
 	call_if_unset FLAG_MET_RIVAL_RUSTBORO, RustboroCity_EventScript_PlayRivalMusic
 	applymovement LOCALID_RUSTBORO_RIVAL, Common_Movement_FacePlayer
 	waitmovement 0
-	goto RustboroCity_EventScript_RivalEncounter
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, RustboroCity_EventScript_MayEncounter
+	goto_if_eq VAR_RESULT, FEMALE, RustboroCity_EventScript_BrendanEncounter
 
 RustboroCity_EventScript_PlayRivalMusic::
 	checkplayergender

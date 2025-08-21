@@ -2196,7 +2196,7 @@ Battle05_ReddText_PreBattle3::
 	.string "the Elite 4… but…I don't think\l"
 	.string "I can go and replace the champ.\p"
 	.string "A shame, but this setting is good too.\n"
-	.string "Here, at the top of this hill\p"
+	.string "Here, at the top of this hill.\p"
 	.string "Because, do you know what that'll\n"
 	.string "mean about the winner of this fight?\p"
 	.string "I'll tell you!\p"

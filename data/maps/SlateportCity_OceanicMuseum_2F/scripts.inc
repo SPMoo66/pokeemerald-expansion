@@ -72,6 +72,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	waitmovement 0
 	speakername (CommonText_CaptStern)
 	msgbox SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs, MSGBOX_DEFAULT
+	closemessage
 	setvar VAR_0x8004, ITEM_DEVON_PARTS
 	call Common_EventScript_PlayerHandedOverTheItem
 	speakername (CommonText_CaptStern)

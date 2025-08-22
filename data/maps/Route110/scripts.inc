@@ -1719,11 +1719,11 @@ Route110_Text_TrainerTipsRegisterItems:
 # 860 "data/maps/Route110/scripts.pory"
 	.string "The items in the Bag can be reorganized\n"
 # 861 "data/maps/Route110/scripts.pory"
-	.string "by pressing Select.\p"
+	.string "by pressing {SELECT_BUTTON}.\p"
 # 862 "data/maps/Route110/scripts.pory"
 	.string "It can also be automatically sorted by\n"
 # 863 "data/maps/Route110/scripts.pory"
-	.string "by pressing Start.$"
+	.string "by pressing {START_BUTTON}.$"
 # 864 "data/maps/Route110/scripts.pory"
 
 # 865 "data/maps/Route110/scripts.pory"

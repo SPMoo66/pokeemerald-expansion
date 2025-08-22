@@ -230,11 +230,13 @@ Route111_EventScript_Victor::
 	end
 
 Route111_EventScript_BattleWinstrates::
+	speakername (CommonText_Victor)
 	msgbox Route111_Text_VictorIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_VICTOR, Route111_Text_VictorDefeat
 	applymovement LOCALID_ROUTE111_VICTOR, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
+	speakername (CommonText_Victor)
 	msgbox Route111_Text_VictorPostBattle, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ROUTE111_VICTOR, Route111_Movement_WinstrateEnterHouse
@@ -248,11 +250,13 @@ Route111_EventScript_BattleWinstrates::
 	applymovement LOCALID_ROUTE111_VICTORIA, Common_Movement_WalkDown
 	waitmovement 0
 	call Route111_EventScript_CloseWinstrateDoor
+	speakername (CommonText_Victoria)
 	msgbox Route111_Text_VictoriaIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_VICTORIA, Route111_Text_VictoriaDefeat
 	applymovement LOCALID_ROUTE111_VICTORIA, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
+	speakername (CommonText_Victoria)
 	msgbox Route111_Text_VictoriaPostBattle, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ROUTE111_VICTORIA, Route111_Movement_WinstrateEnterHouse
@@ -266,11 +270,13 @@ Route111_EventScript_BattleWinstrates::
 	applymovement LOCALID_ROUTE111_VIVI, Common_Movement_WalkDown
 	waitmovement 0
 	call Route111_EventScript_CloseWinstrateDoor
+	speakername (CommonText_Vivi)
 	msgbox Route111_Text_ViviIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_VIVI, Route111_Text_ViviDefeat
 	applymovement LOCALID_ROUTE111_VIVI, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
+	speakername (CommonText_Vivi)
 	msgbox Route111_Text_ViviPostBattle, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ROUTE111_VIVI, Route111_Movement_WinstrateEnterHouse
@@ -284,8 +290,10 @@ Route111_EventScript_BattleWinstrates::
 	applymovement LOCALID_ROUTE111_VICKY, Common_Movement_WalkDown
 	waitmovement 0
 	call Route111_EventScript_CloseWinstrateDoor
+	speakername (CommonText_Vicky)
 	msgbox Route111_Text_VickyIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_VICKY, Route111_Text_VickyDefeat
+	speakername (CommonText_Vicky)
 	msgbox Route111_Text_VickyPostBattle, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ROUTE111_VICKY, Common_Movement_WalkInPlaceFasterUp

@@ -961,6 +961,22 @@ text CommonText_AquaGrunt {
 	"Aqua Grunt"
 }
 
+text CommonText_Victor {
+	"Victor"
+}
+
+text CommonText_Victoria {
+	"Victoria"
+}
+
+text CommonText_Vivi {
+	"Vivi"
+}
+
+text CommonText_Vicky {
+	"Vicky"
+}
+
 
 script GetRivalForNameBox {
 	switch (var(VAR_EMERALBODY_RIVAL)) {

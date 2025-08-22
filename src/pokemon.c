@@ -5932,7 +5932,17 @@ u16 GetBattleBGM(void)
         u32 musicRegion = gSaveBlock2Ptr->optionsMusicRegion; //0 - 3 = Kanto - Sinnoh
 
         if(JOY_HELD(R_BUTTON)) //Randomizes music region if R Button is held
+        {
             musicRegion = Random() % 4; // Modulo is not base zero, so this sets 0 - 3
+            if(JOY_HELD(DPAD_UP))
+               musicRegion = 0;
+            if(JOY_HELD(DPAD_LEFT))
+               musicRegion = 1;
+            if(JOY_HELD(DPAD_RIGHT))
+               musicRegion = 2;
+            if(JOY_HELD(DPAD_DOWN))
+               musicRegion = 3;
+		}
 
         if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
             trainerClass = GetFrontierOpponentClass(TRAINER_BATTLE_PARAM.opponentA);

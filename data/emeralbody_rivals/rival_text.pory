@@ -688,10 +688,12 @@ text Town06_HarperText {
 text Town06_JaksonText {
 	format(	"You know, Wally is supposed to be\n"
 			"really weak, but what's the fun in that?\p"
-			"If there's a character who's supposed to\n"
-			"be your rival, shouldn't they be strong?\p"
-			"Especially when you only battle him twice\n"
-			"in the original. What a joke that is!")
+			"If there's a character who's supposed\n"
+			"to be your rival, shouldn't they be\l"
+			"strong?\p"
+			"Especially when you only battle him\n"
+			"twice in the original. What a joke\l"
+			"that is!")
 }
 
 text Town06_ReddText1 {

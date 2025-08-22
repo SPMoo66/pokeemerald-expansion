@@ -217,7 +217,7 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 						"Team Magma… What do they want?\n"
 						"They said, Mt. Chimney…\l"
 						"If you're heading there, be safe.\l"
-						"I think you'll be needing this")
+						"I think you'll be needing this.")
 			}
 			closemessage
 			giveitem (ITEM_BOTTLE_CAP)

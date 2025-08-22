@@ -715,7 +715,7 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene_Text_17:
 	.string "Team Magma… What do they want?\n"
 	.string "They said, Mt. Chimney…\l"
 	.string "If you're heading there, be safe.\l"
-	.string "I think you'll be needing this$"
+	.string "I think you'll be needing this.$"
 
 MeteorFalls_1F_1R_EventScript_ProfCozmo_Text_0:
 # 317 "data/maps/MeteorFalls_1F_1R/scripts.pory"

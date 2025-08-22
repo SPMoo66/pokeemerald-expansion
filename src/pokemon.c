@@ -5902,7 +5902,7 @@ u16 GetBattleBGM(void)
         FlagClear(FLAG_SYS_SET_BATTLE_BGM);
         return VarGet(VAR_TEMP_F);
     }
-    if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
+    else if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
     {
         switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
         {
@@ -6029,7 +6029,6 @@ u16 GetBattleBGM(void)
             }
             else
             {
-                //u32 musicRegion = gSaveBlock2Ptr->optionsMusicRegion; //0 - 3 = Kanto - Sinnoh
                 switch (musicRegion)
                 {
                 case 0:
@@ -6212,6 +6211,9 @@ u16 GetBattleBGM(void)
                 return MUS_DP_VS_GALACTIC_COMMANDER;
             default:
                 u32 musicRegion = gSaveBlock2Ptr->optionsMusicRegion; // 0 - 3 = Kanto - Sinnoh
+                if(JOY_HELD(R_BUTTON)) //Randomizes music region if R Button is held
+                    musicRegion = Random() % 4; // Modulo is not base zero, so this sets 0 - 3
+
                 switch (musicRegion)
                 {
                     case 0:

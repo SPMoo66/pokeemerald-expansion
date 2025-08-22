@@ -5931,6 +5931,9 @@ u16 GetBattleBGM(void)
         u8 trainerClass;
         u32 musicRegion = gSaveBlock2Ptr->optionsMusicRegion; //0 - 3 = Kanto - Sinnoh
 
+        if(JOY_HELD(R_BUTTON)) //Randomizes music region if R Button is held
+            musicRegion = Random() % 4; // Modulo is not base zero, so this sets 0 - 3
+
         if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
             trainerClass = GetFrontierOpponentClass(TRAINER_BATTLE_PARAM.opponentA);
         else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
@@ -5975,25 +5978,7 @@ u16 GetBattleBGM(void)
             default:
                 return MUS_VS_CHAMPION;
             }
-        case TRAINER_CLASS_RIVAL: // Below is old code that is replaced by FLAG_SYS_SET_BATTLE_BGM
-/*
-            if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
-                return MUS_VS_RIVAL;
-            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Wally")) && (FlagGet(FLAG_BADGE08_GET)))
-                return MUS_HG_VS_GYM_LEADER;
-            else if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Wally")))
-                return MUS_HG_VS_WILD;
-            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Jakson")))
-                return MUS_DP_VS_ELITE_FOUR;
-            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Harper")))
-                return MUS_HG_VS_TRAINER;
-            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Redd")))
-                return MUS_HG_VS_WILD_KANTO;
-            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Sakura")))
-                return MUS_PL_VS_FRONTIER_BRAIN;
-            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("Baron")))
-                return MUS_DP_VS_RIVAL;
-*/
+        case TRAINER_CLASS_RIVAL:
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
             switch (musicRegion)
@@ -6044,7 +6029,7 @@ u16 GetBattleBGM(void)
             }
             else
             {
-                u32 musicRegion = gSaveBlock2Ptr->optionsMusicRegion; //0 - 3 = Kanto - Sinnoh
+                //u32 musicRegion = gSaveBlock2Ptr->optionsMusicRegion; //0 - 3 = Kanto - Sinnoh
                 switch (musicRegion)
                 {
                 case 0:

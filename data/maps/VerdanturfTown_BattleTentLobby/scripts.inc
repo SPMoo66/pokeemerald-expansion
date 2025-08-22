@@ -334,7 +334,7 @@ VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep:
 	.string "The attraction runs deep…\p"
 	.string "Oh, hi, you didn't see that, did you?\n"
 	.string "Well, it doesn't matter.\p"
-	.string "How would you like this TM for\n"
+	.string "How would you like this for\n"
 	.string "your Pokémon?$"
 
 VerdanturfTown_BattleTentLobby_Text_AttractionMutual:

@@ -71,7 +71,7 @@ MoveTutor_SleepTalkDeclined:
 	.string "wouldn't need your Pokémon anyway!$"
 
 MoveTutor_Text_SleepTalkWhichMon:
-	.string "Let me see the Pokémon\l"
+	.string "Let me see the Pokémon\n"
 	.string "you want me to teach.$"
 
 MoveTutor_Text_SleepTalkTaught:

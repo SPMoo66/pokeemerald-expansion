@@ -14671,35 +14671,35 @@ static const struct TrainerMon sParty_Jakson1[] = {
 
 static const struct TrainerMon sParty_Jakson2[] = {
     {
-    .lvl = 26,
+    .lvl = 28,
     .species = SPECIES_GLIMMET,
     .ability = ABILITY_TOXIC_DEBRIS,
     .heldItem = ITEM_FOCUS_SASH,
     .moves = {MOVE_STEALTH_ROCK, MOVE_ANCIENT_POWER, MOVE_VENOSHOCK, MOVE_MEMENTO}
     },
     {
-    .lvl = 26,
+    .lvl = 28,
     .species = SPECIES_EEVEE,
     .ability = ABILITY_ADAPTABILITY,
     .heldItem = ITEM_SILK_SCARF,
     .moves = {MOVE_CALM_MIND, MOVE_SWIFT, MOVE_REFRESH, MOVE_YAWN}
     },
     {
-    .lvl = 27,
+    .lvl = 29,
     .species = SPECIES_LICKITUNG,
     .ability = ABILITY_OBLIVIOUS,
     .heldItem = ITEM_NORMAL_GEM,
     .moves = {MOVE_DRAGON_TAIL, MOVE_STOMP, MOVE_ROCK_TOMB, MOVE_NONE}
     },
     {
-    .lvl = 27,
+    .lvl = 29,
     .species = SPECIES_SPIDOPS,
     .ability = ABILITY_STAKEOUT,
     .heldItem = ITEM_QUICK_CLAW,
     .moves = {MOVE_CIRCLE_THROW, MOVE_STICKY_WEB, MOVE_SILK_TRAP, MOVE_BUG_BITE}
     },
     {
-    .lvl = 28,
+    .lvl = 30,
     .species = SPECIES_THROH,
     .ability = ABILITY_GUTS,
     .heldItem = ITEM_TOXIC_ORB,

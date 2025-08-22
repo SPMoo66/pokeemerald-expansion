@@ -525,15 +525,15 @@ RustboroCity_DevonCorp_3F_MapScripts_MAP_SCRIPT_ON_LOAD_1:
 # 267 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	setmetatile 10, 2, 0x381, FALSE
 # 268 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	setmetatile 1, 1, 0x349, TRUE
+	setmetatile 1, 1, 0x3E7, TRUE
 # 269 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	setmetatile 1, 2, 0x351, FALSE
 # 270 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	setmetatile 2, 1, 0x34A, TRUE
+	setmetatile 2, 1, 0x3EF, TRUE
 # 271 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	setmetatile 2, 2, 0x352, FALSE
 # 272 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	setmetatile 3, 1, 0x34B, TRUE
+	setmetatile 3, 1, 0x3F7, TRUE
 # 273 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	setmetatile 3, 2, 0x353, FALSE
 	return

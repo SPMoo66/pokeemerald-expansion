@@ -3732,7 +3732,7 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                 {
                     i = BATTLE_PARTNER(gBattlerTarget);
                     gBattleScripting.savedBattler = i;
-                    gBattleStruct->moveDamage[i] = gMovesInfo[gCurrentMove].power / 2;
+                    gBattleStruct->moveDamage[i] = gBattleMons[i].maxHP / 12;
                     if (gBattleStruct->moveDamage[i] == 0)
                         gBattleStruct->moveDamage[i] = 1;
                     gBattlescriptCurrInstr = BattleScript_MoveEffectFlameBurst;

@@ -1020,3 +1020,15 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox {
 	closemessage
 	release
 }
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_Sparkle {
+	checkitem (ITEM_EXP_CHARM)
+	if (!var(VAR_RESULT)) {
+		setvar (VAR_0x8004, 8)  // x
+		setvar (VAR_0x8005, 11) // y
+		setvar (VAR_0x8006, 0)
+		dofieldeffectsparkle (VAR_0x8004, VAR_0x8005, VAR_0x8006)
+		//waitfieldeffect (FLDEFF_SPARKLE)
+		setvar (VAR_TEMP_0, 1)
+	}
+}

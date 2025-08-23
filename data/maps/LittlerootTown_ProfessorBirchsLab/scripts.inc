@@ -2025,6 +2025,28 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_7:
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ExpCharmBox_1
 
 
+LittlerootTown_ProfessorBirchsLab_EventScript_Sparkle::
+# 1025 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	checkitem ITEM_EXP_CHARM
+# 1026 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_Sparkle_1
+	return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Sparkle_1:
+# 1027 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setvar VAR_0x8004, 8
+# 1028 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setvar VAR_0x8005, 11
+# 1029 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setvar VAR_0x8006, 0
+# 1030 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	dofieldeffectsparkle VAR_0x8004, VAR_0x8005, VAR_0x8006
+# 1032 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setvar VAR_TEMP_0, 1
+	return
+
+
 LittlerootTown_ProfessorBirchsLab_EventScript_Bianca_Text_0:
 # 975 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Oh, hi {PLAYER}!$"

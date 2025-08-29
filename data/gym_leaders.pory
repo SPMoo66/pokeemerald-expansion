@@ -630,6 +630,7 @@ text LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons {
 
 script PetalburgCity_Gym_EventScript_NormanBattle {
 	setflag (FLAG_CHALLENGING_TRAINER)
+	speakername (CommonText_Dad)
 	msgbox (PetalburgCity_Gym_Text_NormanIntro, MSGBOX_DEFAULT)
 	trainerbattle_no_intro (TRAINER_NORMAN_1, PetalburgCity_Gym_Text_NormanDefeat)
 	clearflag (FLAG_CHALLENGING_TRAINER)

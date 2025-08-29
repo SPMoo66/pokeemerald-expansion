@@ -2011,7 +2011,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 otIdType = OT_ID_PRESET;
                 fixedOtId = HIHALF(personalityValue) ^ LOHALF(personalityValue);
             }
-            if (FlagGet(FLAG_LEVEL_SYNC)) {
+            if (gSaveBlock2Ptr->optionsLevelSync) {
                 u8 lvl = 1;
                 lvl = GetMaxLevel(0);
                 if (FlagGet(FLAG_CHALLENGING_TRAINER))

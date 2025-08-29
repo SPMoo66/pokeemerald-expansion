@@ -48,6 +48,7 @@ enum
     MENUITEM_CUSTOM_MUSIC_REGION,
     MENUITEM_CUSTOM_SURF_MUSIC,
     MENUITEM_CUSTOM_LEVEL_CAPS,
+    MENUITEM_CUSTOM_LEVEL_SYNC,
     MENUITEM_CUSTOM_ANIMATE_AFTER_KO,
     MENUITEM_CUSTOM_CANCEL,
     MENUITEM_CUSTOM_COUNT,
@@ -175,6 +176,7 @@ static void DrawChoices_BattleSpeed(int selection, int y);
 static void DrawChoices_OverworldSpeed(int selection, int y);
 static void DrawChoices_SurfMusic(int selection, int y);
 static void DrawChoices_LevelCaps(int selection, int y);
+static void DrawChoices_LevelSync(int selection, int y);
 static void DrawChoices_AnimateAfterKO(int selection, int y);
 static void DrawBgWindowFrames(void);
 
@@ -232,6 +234,7 @@ struct // MENU_CUSTOM
     [MENUITEM_CUSTOM_MUSIC_REGION]      = {DrawChoices_MusicRegion,    ProcessInput_Options_Four},
     [MENUITEM_CUSTOM_SURF_MUSIC]        = {DrawChoices_SurfMusic,      ProcessInput_Options_Two},
     [MENUITEM_CUSTOM_LEVEL_CAPS]        = {DrawChoices_LevelCaps,      ProcessInput_Options_Two},
+    [MENUITEM_CUSTOM_LEVEL_SYNC]        = {DrawChoices_LevelSync,      ProcessInput_Options_Two},
     [MENUITEM_CUSTOM_ANIMATE_AFTER_KO]  = {DrawChoices_AnimateAfterKO, ProcessInput_Options_Two},
     [MENUITEM_CUSTOM_CANCEL]            = {NULL, NULL},
 };
@@ -244,6 +247,7 @@ static const u8 sText_UnitSystem[]     = _("Unit System");
 static const u8 gText_MusicRegion[]    = _("Battle music");
 static const u8 gText_SurfMusic[]      = _("Surf music");
 static const u8 gText_LevelCaps[]      = _("Level caps");
+static const u8 gText_LevelSync[]      = _("Level sync");
 static const u8 gText_AnimateAfterKO[] = _("KO animation");
 static const u8 *const sOptionMenuItemsNamesMain[MENUITEM_MAIN_COUNT] =
 {
@@ -267,6 +271,7 @@ static const u8 *const sOptionMenuItemsNamesCustom[MENUITEM_CUSTOM_COUNT] =
     [MENUITEM_CUSTOM_MUSIC_REGION]     = gText_MusicRegion,
     [MENUITEM_CUSTOM_SURF_MUSIC]       = gText_SurfMusic,
     [MENUITEM_CUSTOM_LEVEL_CAPS]       = gText_LevelCaps,
+    [MENUITEM_CUSTOM_LEVEL_SYNC]       = gText_LevelSync,
     [MENUITEM_CUSTOM_ANIMATE_AFTER_KO] = gText_AnimateAfterKO,
     [MENUITEM_CUSTOM_CANCEL]           = gText_OptionMenuSave,
 };
@@ -309,6 +314,7 @@ static bool8 CheckConditions(int selection)
         case MENUITEM_CUSTOM_MUSIC_REGION:     return TRUE;
         case MENUITEM_CUSTOM_SURF_MUSIC:       return TRUE;
         case MENUITEM_CUSTOM_LEVEL_CAPS:       return TRUE;
+        case MENUITEM_CUSTOM_LEVEL_SYNC:       return TRUE;
         case MENUITEM_CUSTOM_ANIMATE_AFTER_KO: return TRUE;
         case MENUITEM_CUSTOM_CANCEL:           return TRUE;
         case MENUITEM_CUSTOM_COUNT:            return TRUE;
@@ -356,6 +362,7 @@ static const u8 sText_Desc_MusicRegion[]        = _("Choose battle music from an
 static const u8 sText_Desc_SurfMusic[]          = _("Choose whether music changes\nwhile surfing.");
 static const u8 sText_Desc_LevelCapsOn[]        = _("Level caps are enabled.\nCaps increase after major events.");
 static const u8 sText_Desc_LevelCapsOff[]       = _("Level caps are disabled.");
+static const u8 sText_Desc_LevelSync[]          = _("Choose whether trainer Pokémon\nlevels are synced to you.");
 static const u8 sText_Desc_AnimateAfterKO[]     = _("Choose whether Pokémon animate\nafter getting a knockout.");
 static const u8 *const sOptionMenuItemDescriptionsCustom[MENUITEM_CUSTOM_COUNT][2] =
 {
@@ -367,6 +374,7 @@ static const u8 *const sOptionMenuItemDescriptionsCustom[MENUITEM_CUSTOM_COUNT][
     [MENUITEM_CUSTOM_MUSIC_REGION]     = {sText_Desc_MusicRegion,        sText_Empty},
     [MENUITEM_CUSTOM_SURF_MUSIC]       = {sText_Desc_SurfMusic,          sText_Desc_SurfMusic},
     [MENUITEM_CUSTOM_LEVEL_CAPS]       = {sText_Desc_LevelCapsOn,        sText_Desc_LevelCapsOff},
+    [MENUITEM_CUSTOM_LEVEL_SYNC]       = {sText_Desc_LevelSync,          sText_Desc_LevelSync},
     [MENUITEM_CUSTOM_ANIMATE_AFTER_KO] = {sText_Desc_AnimateAfterKO,     sText_Desc_AnimateAfterKO},
     [MENUITEM_CUSTOM_CANCEL]           = {sText_Desc_Save,               sText_Empty},
 };
@@ -397,6 +405,7 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledCustom[MENUITEM_CUSTOM
     [MENUITEM_CUSTOM_MUSIC_REGION]     = sText_Empty,
     [MENUITEM_CUSTOM_SURF_MUSIC]       = sText_Empty,
     [MENUITEM_CUSTOM_LEVEL_CAPS]       = sText_Empty,
+    [MENUITEM_CUSTOM_LEVEL_SYNC]       = sText_Empty,
     [MENUITEM_CUSTOM_ANIMATE_AFTER_KO] = sText_Empty,
     [MENUITEM_CUSTOM_CANCEL]           = sText_Empty,
 };
@@ -650,6 +659,7 @@ void CB2_InitOptionPlusMenu(void)
         sOptions->sel_custom[MENUITEM_CUSTOM_MUSIC_REGION]     = gSaveBlock2Ptr->optionsMusicRegion;
         sOptions->sel_custom[MENUITEM_CUSTOM_SURF_MUSIC]       = gSaveBlock2Ptr->optionsSurfMusic;
         sOptions->sel_custom[MENUITEM_CUSTOM_LEVEL_CAPS]       = gSaveBlock2Ptr->optionsLevelCaps;
+        sOptions->sel_custom[MENUITEM_CUSTOM_LEVEL_SYNC]       = gSaveBlock2Ptr->optionsLevelSync;
         sOptions->sel_custom[MENUITEM_CUSTOM_ANIMATE_AFTER_KO] = gSaveBlock2Ptr->optionsAnimateAfterKO;
 
         sOptions->submenu = MENU_MAIN;
@@ -842,6 +852,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsMusicRegion      = sOptions->sel_custom[MENUITEM_CUSTOM_MUSIC_REGION];
     gSaveBlock2Ptr->optionsSurfMusic        = sOptions->sel_custom[MENUITEM_CUSTOM_SURF_MUSIC];
     gSaveBlock2Ptr->optionsLevelCaps        = sOptions->sel_custom[MENUITEM_CUSTOM_LEVEL_CAPS];
+    gSaveBlock2Ptr->optionsLevelSync        = sOptions->sel_custom[MENUITEM_CUSTOM_LEVEL_SYNC];
     gSaveBlock2Ptr->optionsAnimateAfterKO   = sOptions->sel_custom[MENUITEM_CUSTOM_ANIMATE_AFTER_KO];
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
@@ -1234,6 +1245,16 @@ static void DrawChoices_LevelCaps(int selection, int y)
 
     DrawOptionMenuChoice(gText_BattleSceneOn, 104, y, styles[0], active);
     DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), y, styles[1], active);
+}
+
+static void DrawChoices_LevelSync(int selection, int y)
+{
+    bool8 active = CheckConditions(MENUITEM_CUSTOM_LEVEL_SYNC);
+    u8 styles[2] = {0};
+    styles[selection] = 1;
+
+    DrawOptionMenuChoice(gText_BattleSceneOff, 104, y, styles[0], active);
+    DrawOptionMenuChoice(gText_BattleSceneOn, GetStringRightAlignXOffset(1, gText_BattleSceneOn, 198), y, styles[1], active);
 }
 
 static void DrawChoices_AnimateAfterKO(int selection, int y)

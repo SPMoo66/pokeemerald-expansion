@@ -1515,8 +1515,8 @@
 #define FLAG_NEW_GAME_PLUS                          (SYSTEM_FLAGS + 0x8B) // Set upon beating the Champion for the first time, carries with new games
 #define FLAG_SYS_DO_NOT_DOOR                        (SYSTEM_FLAGS + 0x8C) // Was unused, set this flag to spawn the player without a door animation on next warp, can be set via On Load map scripts. This spawns the player on the closed door tile, so it should be used with FLAG_SYS_SPAWN_INVISIBLE. 
 #define FLAG_SYS_SPAWN_INVISIBLE                    (SYSTEM_FLAGS + 0x8D) // Was unused, set this flag to spawn the player invisible on next warp. Use a set_visible with applymovement to show the player.
+#define FLAG_CANT_USE_FLY                           (SYSTEM_FLAGS + 0x8E) // Was unused, set to disable fly
 
-#define FLAG_UNUSED_0x8EE                           (SYSTEM_FLAGS + 0x8E) // Unused Flag
 #define FLAG_UNUSED_0x8EF                           (SYSTEM_FLAGS + 0x8F) // Unused Flag
 #define FLAG_UNUSED_0x8F0                           (SYSTEM_FLAGS + 0x90) // Unused Flag
 #define FLAG_UNUSED_0x8F1                           (SYSTEM_FLAGS + 0x91) // Unused Flag

@@ -221,6 +221,8 @@ static const u8 sCreditsText_MotoyasuTojima[]                 = _("Motoyasu Toji
 static const u8 sCreditsText_NicolaPrattBarlow[]              = _("Nicola Pratt-Barlow");
 static const u8 sCreditsText_ShellieDow[]                     = _("Shellie Dow");
 static const u8 sCreditsText_ErikJohnson[]                    = _("Erik Johnson");
+static const u8 sCreditsText_Moo[]                            = _("Moo");
+static const u8 sCreditsText_Roku[]                           = _("Roku");
 static const struct CreditsEntry sCreditsEntry_EmptyString                      = { 0, FALSE, sCreditsText_EmptyString};
 static const struct CreditsEntry sCreditsEntry_PkmnEmeraldVersion               = { 7,  TRUE, sCreditsText_PkmnEmeraldVersion};
 static const struct CreditsEntry sCreditsEntry_Credits                          = {11,  TRUE, sCreditsText_Credits};
@@ -380,6 +382,8 @@ static const struct CreditsEntry sCreditsEntry_MotoyasuTojima                   
 static const struct CreditsEntry sCreditsEntry_NicolaPrattBarlow                = { 0, FALSE, sCreditsText_NicolaPrattBarlow};
 static const struct CreditsEntry sCreditsEntry_ShellieDow                       = { 0, FALSE, sCreditsText_ShellieDow};
 static const struct CreditsEntry sCreditsEntry_ErikJohnson                      = { 0, FALSE, sCreditsText_ErikJohnson};
+static const struct CreditsEntry sCreditsEntry_Moo                              = { 0, FALSE, sCreditsText_Moo};
+static const struct CreditsEntry sCreditsEntry_Roku                             = { 0, FALSE, sCreditsText_Roku};
 
 #define _ &sCreditsEntry_EmptyString
 static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][ENTRIES_PER_PAGE] =
@@ -424,7 +428,7 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         &sCreditsEntry_HisashiSogabe,
         &sCreditsEntry_TomomichiOhta,
         &sCreditsEntry_NozomuSaito,
-        _,
+        &sCreditsEntry_Moo,
     },
     [PAGE_PROGRAMMERS_2] = {
         &sCreditsEntry_Programmers,
@@ -515,14 +519,14 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         &sCreditsEntry_AkihitoTomisawa,
         &sCreditsEntry_HitomiSato,
         &sCreditsEntry_ToshinobuMatsumiya,
-        _,
+        &sCreditsEntry_Roku,
     },
     [PAGE_SCRIPT_DESIGNERS] = {
         &sCreditsEntry_ScriptDesigners,
         &sCreditsEntry_TomomichiOhta,
         &sCreditsEntry_SatoshiNohara,
-        _,
-        _,
+        &sCreditsEntry_Moo,
+        &sCreditsEntry_Roku,
     },
     [PAGE_MAP_DESIGNERS] = {
         &sCreditsEntry_MapDesigners,
@@ -535,7 +539,7 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         _,
         &sCreditsEntry_BattleFrontierData,
         &sCreditsEntry_TetsujiOhta,
-        _,
+        &sCreditsEntry_Moo,
         _,
     },
     [PAGE_PARAMETRIC_DESIGNERS] = {
@@ -549,7 +553,7 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         _,
         &sCreditsEntry_PokedexText,
         &sCreditsEntry_KenjiMatsushima,
-        _,
+        &sCreditsEntry_Roku,
         _,
     },
     [PAGE_ENVIRONMENT_AND_TOOL_PROGRAMS_1] = {
@@ -609,10 +613,10 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         _,
     },
     [PAGE_SPECIAL_THANKS_1] = {
-        _,
         &sCreditsEntry_SpecialThanks,
         &sCreditsEntry_KenjiTominaga,
         &sCreditsEntry_HirokiEnomoto,
+        &sCreditsEntry_Roku,
         _,
     },
     [PAGE_SPECIAL_THANKS_2] = {
@@ -689,7 +693,7 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         _,
         &sCreditsEntry_TextEditor,
         &sCreditsEntry_TeresaLillygren,
-        _,
+        &sCreditsEntry_Roku,
         _,
     },
     [PAGE_NCL_COORDINATOR] = {

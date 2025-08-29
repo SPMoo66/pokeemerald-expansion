@@ -153,6 +153,7 @@ script Rival_Scene02 {
 		waitmovement (0)
 		call (GetRivalForNameBox)
 		call (GetRivalMusic)
+		setflag (FLAG_CHALLENGING_TRAINER)
 		switch (var(VAR_EMERALBODY_RIVAL)) {
 			case 1:
 				msgbox(Scene02_HarperText_PreBattle)
@@ -182,6 +183,7 @@ script Rival_Scene02 {
 		}
 		closemessage
 		setvar (VAR_EMERALBODY_RIVAL_STATE, 2)
+		clearflag (FLAG_CHALLENGING_TRAINER)
 		clearflag (FLAG_TEMP_2)
 		fadedefaultbgm
 		if (var(VAR_TEMP_1) == 16) {

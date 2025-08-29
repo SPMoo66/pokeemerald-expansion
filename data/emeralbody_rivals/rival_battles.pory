@@ -24,6 +24,7 @@ script Harper_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		call (GetRivalForNameBox)
 		msgbox (Battle02_HarperText_PreBattle, MSGBOX_DEFAULT)
 		call (GetRivalMusic)
+		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_HARPER_2, Battle02_HarperText_BattleVictory)
 		call (GetRivalForNameBox)
 		msgbox(Battle02_HarperText_PostBattle)
@@ -35,6 +36,7 @@ script Harper_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		removeobject (HARPER_BATTLE02)
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
+		clearflag (FLAG_CHALLENGING_TRAINER)
 		release
 	}
 }
@@ -61,6 +63,7 @@ script Harper_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 		call (GetRivalForNameBox)
 		msgbox (Battle03_HarperText_PreBattle, MSGBOX_DEFAULT)
 		call (GetRivalMusic)
+		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_HARPER_3, Battle03_HarperText_BattleVictory)
 		call (GetRivalForNameBox)
 		msgbox (Battle03_HarperText_PostBattle)
@@ -70,6 +73,7 @@ script Harper_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 		removeobject (HARPER_BATTLE03)
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
+		clearflag (FLAG_CHALLENGING_TRAINER)
 		release
 	}
 }
@@ -87,6 +91,7 @@ script Harper_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 		call (GetRivalForNameBox)
 		msgbox (Battle04_HarperText_PreBattle, MSGBOX_DEFAULT)
 		call (GetRivalMusic)
+		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_HARPER_4, Battle04_HarperText_BattleVictory)
 		call (GetRivalForNameBox)
 		msgbox (Battle04_HarperText_PostBattle)
@@ -96,6 +101,7 @@ script Harper_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 		removeobject (HARPER_BATTLE04)
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3)
+		clearflag (FLAG_CHALLENGING_TRAINER)
 		release
 	}
 }
@@ -128,6 +134,7 @@ script Sakura_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		call (GetRivalForNameBox)
 		msgbox (Battle02_SakuraText_PreBattle, MSGBOX_DEFAULT)
 		call (GetRivalMusic)
+		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_SAKURA_2, Battle02_SakuraText_BattleVictory)
 		call (GetRivalForNameBox)
 		msgbox(Battle02_SakuraText_PostBattle)
@@ -137,6 +144,7 @@ script Sakura_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		removeobject (SAKURA_BATTLE02)
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
+		clearflag (FLAG_CHALLENGING_TRAINER)
 		release
 	}
 }
@@ -147,6 +155,7 @@ script Sakura_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 	call (GetRivalForNameBox)
 	msgbox (Battle03_SakuraText_PreBattle, MSGBOX_DEFAULT)
 	call (GetRivalMusic)
+	setflag (FLAG_CHALLENGING_TRAINER)
 	trainerbattle_no_intro (TRAINER_SAKURA_3, Battle03_SakuraText_BattleVictory)
 	call (GetRivalForNameBox)
 	msgbox(Battle03_SakuraText_PostBattle)
@@ -167,6 +176,7 @@ script Sakura_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 	setflag (FLAG_TEMP_2)
 	fadedefaultbgm
 	setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
+	clearflag (FLAG_CHALLENGING_TRAINER)
 	delay (30)
 	playse (SE_EFFECTIVE)
 	setmetatile (13, 11, 0x208, FALSE)
@@ -181,6 +191,7 @@ script Sakura_Battle04 {
 	call (GetRivalForNameBox)
 	msgbox (Battle04_SakuraText_PreBattle, MSGBOX_DEFAULT)
 	call (GetRivalMusic)
+	setflag (FLAG_CHALLENGING_TRAINER)
 	trainerbattle_no_intro (TRAINER_SAKURA_4, Battle04_SakuraText_BattleVictory)
 	call (GetRivalForNameBox)
 	msgbox(Battle04_SakuraText_PostBattle)
@@ -192,6 +203,7 @@ script Sakura_Battle04 {
 	waitfieldeffect (FLDEFF_NPCFLY_OUT)
 	setflag (FLAG_TEMP_1)
 	setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3)
+	clearflag (FLAG_CHALLENGING_TRAINER)
 	release
 }
 
@@ -242,6 +254,7 @@ script Redd_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 			msgbox (Battle02_ReddText_PreBattleAlt, MSGBOX_DEFAULT)
 		}
 		call (GetRivalMusic)
+		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_REDD_2, Battle02_ReddText_BattleVictory)
 		call (GetRivalForNameBox)
 		msgbox (Battle02_ReddText_PostBattle)
@@ -251,6 +264,7 @@ script Redd_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		removeobject (REDD_BATTLE02)
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
+		clearflag (FLAG_CHALLENGING_TRAINER)
 		setflag (FLAG_TEMP_2)
 		release
 	}
@@ -290,6 +304,7 @@ script Redd_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 		waitmovement (0)
 		msgbox (Battle03_ReddText_PreBattle, MSGBOX_DEFAULT)
 		call (GetRivalMusic)
+		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_REDD_3, Battle03_ReddText_BattleVictory)
 		call (GetRivalForNameBox)
 		msgbox (Battle03_ReddText_PostBattle)
@@ -309,6 +324,7 @@ script Redd_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 		waitse
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
+		clearflag (FLAG_CHALLENGING_TRAINER)
 		release
 	}
 }
@@ -334,6 +350,7 @@ script Redd_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 		}
 		msgbox (Battle04_ReddText_PreBattle, MSGBOX_DEFAULT)
 		call (GetRivalMusic)
+		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_REDD_4, Battle04_ReddText_BattleVictory)
 		call (GetRivalForNameBox)
 		msgbox (Battle04_ReddText_PostBattle1)
@@ -352,6 +369,7 @@ script Redd_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 		fadescreenswapbuffers (FADE_FROM_BLACK)
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3)
+		clearflag (FLAG_CHALLENGING_TRAINER)
 		setflag (FLAG_TEMP_1)
 		release
 	}
@@ -383,12 +401,14 @@ script Baron_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		}
 		msgbox (Battle02_BaronText_PreBattle, MSGBOX_DEFAULT)
 		call (GetRivalMusic)
+		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_BARON_2, Battle02_BaronText_BattleVictory)
 		call (GetRivalForNameBox)
 		msgbox (Battle02_BaronText_PostBattle)
 		closemessage
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
+		clearflag (FLAG_CHALLENGING_TRAINER)
 		setflag (FLAG_TEMP_2)
 		fadescreenswapbuffers (FADE_TO_BLACK)
 		removeobject (BARON_BATTLE02)
@@ -423,12 +443,14 @@ script Baron_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 		waitmovement (0)
 		msgbox (Battle03_BaronText_PreBattle, MSGBOX_DEFAULT)
 		call (GetRivalMusic)
+		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_BARON_3, Battle03_BaronText_BattleVictory)
 		call (GetRivalForNameBox)
 		msgbox (Battle03_BaronText_PostBattle)
 		closemessage
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
+		clearflag (FLAG_CHALLENGING_TRAINER)
 		applymovement (BARON_BATTLE03, Common_Movement_WalkLeft7)
 		waitmovement (0)
 		removeobject (BARON_BATTLE03)
@@ -455,12 +477,14 @@ script Baron_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 		waitmovement (0)
 		msgbox (Battle04_BaronText_PreBattle, MSGBOX_DEFAULT)
 		call (GetRivalMusic)
+		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_BARON_4, Battle04_BaronText_BattleVictory)
 		call (GetRivalForNameBox)
 		msgbox (Battle04_BaronText_PostBattle)
 		closemessage
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3)
+		clearflag (FLAG_CHALLENGING_TRAINER)
 		fadescreenswapbuffers (FADE_TO_BLACK)
 		removeobject (BARON_BATTLE04)
 		fadescreenswapbuffers (FADE_FROM_BLACK)
@@ -507,6 +531,7 @@ script Jakson_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		}
 		msgbox (Battle02_JaksonText_PreBattle, MSGBOX_DEFAULT)
 		call (GetRivalMusic)
+		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_JAKSON_2, Battle02_JaksonText_BattleVictory)
 		call (GetRivalForNameBox)
 		msgbox (Battle02_JaksonText_PostBattle)
@@ -517,6 +542,7 @@ script Jakson_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		fadescreenswapbuffers (FADE_FROM_BLACK)
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
+		clearflag (FLAG_CHALLENGING_TRAINER)
 		setflag (FLAG_TEMP_2)
 		release
 	}
@@ -546,11 +572,13 @@ script Jakson_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 		waitmovement (0)
 		msgbox (Battle03_JaksonText_PreBattle, MSGBOX_DEFAULT)
 		call (GetRivalMusic)
+		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_JAKSON_3, Battle03_JaksonText_BattleVictory)
 		call (GetRivalForNameBox)
 		msgbox (Battle03_JaksonText_PostBattle)
 		closemessage
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
+		clearflag (FLAG_CHALLENGING_TRAINER)
 		if (var(VAR_TEMP_0) == 31) {
 			applymovement (JAKSON_BATTLE03, Common_Movement_WalkLeft)
 			waitmovement (0)
@@ -576,11 +604,13 @@ script Jakson_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2,  There are c
 	waitmovement (0)
 	msgbox (Battle04_JaksonText_PreBattle, MSGBOX_DEFAULT)
 	call (GetRivalMusic)
+	setflag (FLAG_CHALLENGING_TRAINER)
 	trainerbattle_no_intro (TRAINER_JAKSON_4, Battle04_JaksonText_BattleVictory)
 	call (GetRivalForNameBox)
 	msgbox (Battle04_JaksonText_PostBattle)
 	closemessage
 	setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3)
+	clearflag (FLAG_CHALLENGING_TRAINER)
 	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight)
 	waitmovement (0)
 	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft)
@@ -610,6 +640,7 @@ script Rival_Battle05 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 3
 	call (GetRivalMusic)
 	hidefollower
 	delay (10)
+	setflag (FLAG_CHALLENGING_TRAINER)
 	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
 	switch (var(VAR_EMERALBODY_RIVAL)) {
 		case 1:
@@ -623,6 +654,8 @@ script Rival_Battle05 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 3
 		default:
 			call (Baron_Battle05)
 		}
+	setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 4)
+	clearflag (FLAG_CHALLENGING_TRAINER)
 	fadescreenswapbuffers (FADE_TO_BLACK)
 	warpsilent (MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F, 9, 4)
 	release

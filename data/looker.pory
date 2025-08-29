@@ -149,6 +149,7 @@ script RustboroCity_EventScript_Looker_2 {
 	closemessage
 	setvar (VAR_LOOKER_ROCKET, 8)
 	fadedefaultbgm
+	clearflag (FLAG_CANT_USE_FLY)
 	release
 }
 

@@ -499,3 +499,4 @@ void ply_xcmd_0C(struct MusicPlayerInfo *, struct MusicPlayerTrack *);
 void ply_xcmd_0D(struct MusicPlayerInfo *, struct MusicPlayerTrack *);
 
 #endif // GUARD_GBA_M4A_INTERNAL_H
+

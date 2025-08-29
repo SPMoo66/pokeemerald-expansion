@@ -861,6 +861,10 @@ text CommonText_Giovanni {
 	"Giovanni"
 }
 
+text CommonText_Shelly {
+	"Shelly"
+}
+
 text CommonText_Courtney {
 	"Courtney"
 }

@@ -142,51 +142,30 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	setvar VAR_EMERALBODY_RIVAL_STATE, 18
-	warp MAP_BATTLE_FRONTIER_OUTSIDE_WEST, 0
-	setflag FLAG_NO_COLLISION
 	release
 	end
 
 Debug_EventScript_Script_3::
-	givemon SPECIES_VENUSAUR, 100, ITEM_NONE
-	givemon SPECIES_BLASTOISE, 100, ITEM_NONE
-	call Debug_CheatStart
 	release
 	end
 
 Debug_EventScript_Script_4::
-	setvar VAR_ROUTE104_STATE, 3
-	additem ITEM_TERA_ORB
-	setflag FLAG_TERA_ENABLED
-	givemon SPECIES_BRAMBLEGHAST, 5, ITEM_NONE
-	warp MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB, 0
 	release
 	end
 
 Debug_EventScript_Script_5::
-	warp MAP_EVER_GRANDE_CITY, 0
-	setvar VAR_EMERALBODY_RIVAL, 4
-	setvar VAR_EMERALBODY_RIVAL_STATE, 16
-	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3
 	release
 	end
 
 Debug_EventScript_Script_6::
-	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 4
-	setvar VAR_EMERALBODY_RIVAL_STATE, 17
 	release
 	end
 
 Debug_EventScript_Script_7::
-    cleartrainerflag TRAINER_JUAN_1
-    trainerbattle_single TRAINER_JUAN_1, gText_Blank, gText_Blank
 	release
 	end
 
 Debug_EventScript_Script_8::
-    cleartrainerflag TRAINER_STEVEN
-    trainerbattle_single TRAINER_STEVEN, gText_Blank, gText_Blank
 	release
 	end
 

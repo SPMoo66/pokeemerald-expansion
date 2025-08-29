@@ -286,8 +286,17 @@ Debug_ShowExpansionVersion::
 	release
 	end
 
+Debug_ShowEmeralbodyVersion::
+	callnative BufferEmeralbodyVersion
+	msgbox Debug_EmeralbodyVersion, MSGBOX_DEFAULT
+	release
+	end
+
 Debug_ExpansionVersion:
 	.string "pokeemerald-expansion {STR_VAR_1}$"
+
+Debug_EmeralbodyVersion:
+	.string "Pokémon Emeralbody {STR_VAR_1}$"
 
 Debug_EventScript_Steven_Multi::
 	call MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle

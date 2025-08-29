@@ -279,6 +279,7 @@ enum ROMInfoDebugMenu
     DEBUG_ROM_INFO_MENU_ITEM_SAVEBLOCK,
     DEBUG_ROM_INFO_MENU_ITEM_ROM_SPACE,
     DEBUG_ROM_INFO_MENU_ITEM_EXPANSION_VER,
+    DEBUG_ROM_INFO_MENU_ITEM_EMERALBODY_VER,
 };
 
 // *******************************
@@ -502,6 +503,7 @@ static void DebugAction_Player_Id(u8 taskId);
 static void DebugAction_ROMInfo_CheckSaveBlock(u8 taskId);
 static void DebugAction_ROMInfo_CheckROMSpace(u8 taskId);
 static void DebugAction_ROMInfo_ExpansionVersion(u8 taskId);
+static void DebugAction_ROMInfo_EmeralbodyVersion(u8 taskId);
 
 extern const u8 Debug_FlagsNotSetOverworldConfigMessage[];
 extern const u8 Debug_FlagsNotSetBattleConfigMessage[];
@@ -531,6 +533,7 @@ extern const u8 Debug_CheckSaveBlock[];
 extern const u8 Debug_CheckROMSpace[];
 extern const u8 Debug_BoxFilledMessage[];
 extern const u8 Debug_ShowExpansionVersion[];
+extern const u8 Debug_ShowEmeralbodyVersion[];
 extern const u8 Debug_EventScript_EWRAMCounters[];
 extern const u8 Debug_EventScript_Steven_Multi[];
 extern const u8 Debug_EventScript_PrintTimeOfDay[];
@@ -832,9 +835,10 @@ static const struct ListMenuItem sDebugMenu_Items_Player[] =
 
 static const struct ListMenuItem sDebugMenu_Items_ROMInfo[] =
 {
-    [DEBUG_ROM_INFO_MENU_ITEM_SAVEBLOCK]     = {COMPOUND_STRING("Save Block space"),  DEBUG_ROM_INFO_MENU_ITEM_SAVEBLOCK},
-    [DEBUG_ROM_INFO_MENU_ITEM_ROM_SPACE]     = {COMPOUND_STRING("ROM space"),         DEBUG_ROM_INFO_MENU_ITEM_ROM_SPACE},
-    [DEBUG_ROM_INFO_MENU_ITEM_EXPANSION_VER] = {COMPOUND_STRING("Expansion Version"), DEBUG_ROM_INFO_MENU_ITEM_EXPANSION_VER},
+    [DEBUG_ROM_INFO_MENU_ITEM_SAVEBLOCK]      = {COMPOUND_STRING("Save Block space"),   DEBUG_ROM_INFO_MENU_ITEM_SAVEBLOCK},
+    [DEBUG_ROM_INFO_MENU_ITEM_ROM_SPACE]      = {COMPOUND_STRING("ROM space"),          DEBUG_ROM_INFO_MENU_ITEM_ROM_SPACE},
+    [DEBUG_ROM_INFO_MENU_ITEM_EXPANSION_VER]  = {COMPOUND_STRING("Expansion Version"),  DEBUG_ROM_INFO_MENU_ITEM_EXPANSION_VER},
+    [DEBUG_ROM_INFO_MENU_ITEM_EMERALBODY_VER] = {COMPOUND_STRING("Emeralbody Version"), DEBUG_ROM_INFO_MENU_ITEM_EMERALBODY_VER},
 };
 
 // *******************************
@@ -996,9 +1000,10 @@ static void (*const sDebugMenu_Actions_Player[])(u8) =
 
 static void (*const sDebugMenu_Actions_ROMInfo[])(u8) =
 {
-    [DEBUG_ROM_INFO_MENU_ITEM_SAVEBLOCK]     = DebugAction_ROMInfo_CheckSaveBlock,
-    [DEBUG_ROM_INFO_MENU_ITEM_ROM_SPACE]     = DebugAction_ROMInfo_CheckROMSpace,
-    [DEBUG_ROM_INFO_MENU_ITEM_EXPANSION_VER] = DebugAction_ROMInfo_ExpansionVersion,
+    [DEBUG_ROM_INFO_MENU_ITEM_SAVEBLOCK]      = DebugAction_ROMInfo_CheckSaveBlock,
+    [DEBUG_ROM_INFO_MENU_ITEM_ROM_SPACE]      = DebugAction_ROMInfo_CheckROMSpace,
+    [DEBUG_ROM_INFO_MENU_ITEM_EXPANSION_VER]  = DebugAction_ROMInfo_ExpansionVersion,
+    [DEBUG_ROM_INFO_MENU_ITEM_EMERALBODY_VER] = DebugAction_ROMInfo_EmeralbodyVersion,
 };
 
 // *******************************
@@ -2358,6 +2363,13 @@ static void DebugAction_ROMInfo_ExpansionVersion(u8 taskId)
     ScriptContext_SetupScript(Debug_ShowExpansionVersion);
 }
 
+static void DebugAction_ROMInfo_EmeralbodyVersion(u8 taskId)
+{
+    Debug_DestroyMenu_Full(taskId);
+    LockPlayerFieldControls();
+    ScriptContext_SetupScript(Debug_ShowEmeralbodyVersion);
+}
+
 static void DebugAction_Util_Steven_Multi(u8 taskId)
 {
     Debug_DestroyMenu_Full_Script(taskId, Debug_EventScript_Steven_Multi);
@@ -2378,6 +2390,17 @@ void BufferExpansionVersion(struct ScriptContext *ctx)
         string = StringCopy(string, sText_Released);
     else
         string = StringCopy(string, sText_Unreleased);
+}
+
+void BufferEmeralbodyVersion(struct ScriptContext *ctx)
+{
+    u8 *string = gStringVar1;
+    *string++ = CHAR_v;
+    string = ConvertIntToDecimalStringN(string, EMERALBODY_VERSION_MAJOR, STR_CONV_MODE_LEFT_ALIGN, 3);
+    *string++ = CHAR_PERIOD;
+    string = ConvertIntToDecimalStringN(string, EMERALBODY_VERSION_MINOR, STR_CONV_MODE_LEFT_ALIGN, 3);
+    *string++ = CHAR_PERIOD;
+    string = ConvertIntToDecimalStringN(string, EMERALBODY_VERSION_PATCH, STR_CONV_MODE_LEFT_ALIGN, 3);
 }
 
 static void DebugAction_TimeMenu_PrintTime(u8 taskId)

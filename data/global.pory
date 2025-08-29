@@ -1266,4 +1266,5 @@ script IncreasePokevialSize {
 	message (Text_PokevialSizeIncrease)
 	playfanfare (MUS_OBTAIN_ITEM)
 	waitmessage
+	delay (60)
 }

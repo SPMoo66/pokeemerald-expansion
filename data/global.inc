@@ -1754,6 +1754,8 @@ IncreasePokevialSize::
 	playfanfare MUS_OBTAIN_ITEM
 # 1268 "data/global.pory"
 	waitmessage
+# 1269 "data/global.pory"
+	delay 60
 	return
 
 

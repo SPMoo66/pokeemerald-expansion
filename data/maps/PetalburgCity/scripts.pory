@@ -720,32 +720,55 @@ script PetalburgCity_EventScript_Simulation {
 script PetalburgCity_EventScript_WallyBattle {
 	lock
 	setflag (FLAG_CHALLENGING_TRAINER)
-	speakername(CommonText_Q)
-	msgbox("{PLAYER}! Please wait!")
-	closemessage
-	playbgm (MUS_DP_RIVAL, FALSE)
-	applymovement (LOCALID_PLAYER, Common_Movement_FaceDown)
-	waitmovement (0)
-	addobject (LOCALID_PETALBURG_WALLY)
-	setobjectxy (LOCALID_PETALBURG_WALLY, 15, 12)
 	getplayerxy  (VAR_TEMP_0, VAR_TEMP_1)
-	switch (var(VAR_TEMP_0)) {
-		case 4:
-			applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkLeft11)
-		case 5:
-			applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkLeft10)
-		case 6:
-			applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkLeft9)
-		case 7:
-			applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkLeft8)
-		default:
+	if (var(VAR_TEMP_0) < 15) { // Location: Outside of Wally's house
+		speakername(CommonText_Q)
+		msgbox("{PLAYER}! Please wait!")
+		closemessage
+		playbgm (MUS_DP_RIVAL, FALSE)
+		applymovement (LOCALID_PLAYER, Common_Movement_FaceDown)
+		waitmovement (0)
+		addobject (LOCALID_PETALBURG_WALLY)
+		setobjectxy (LOCALID_PETALBURG_WALLY, 15, 12)
+		switch (var(VAR_TEMP_0)) {
+			case 4:
+				applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkLeft11)
+			case 5:
+				applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkLeft10)
+			case 6:
+				applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkLeft9)
+			case 7:
+				applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkLeft8)
+			default:
+		}
+		waitmovement (0)
+		applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkInPlaceUp)
+		waitmovement (0)
+		delay (50)
+		applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkUp3)
+		waitmovement (0)
 	}
-	waitmovement (0)
-	applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkInPlaceUp)
-	waitmovement (0)
-	delay (50)
-	applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkUp3)
-	waitmovement (0)
+	else { // Location: Outside of Pokecenter (Whiteout)
+		addobject (LOCALID_PETALBURG_WALLY)
+		playbgm (MUS_DP_RIVAL, FALSE)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft)
+		if (var(VAR_TEMP_1) == 17) { // Walked left/right
+			applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkDown7)
+		}
+		else { // Walked down
+			applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkDown8)
+		}
+		waitmovement (0)
+		switch (var(VAR_TEMP_0)) {
+			case 19: // Walked left
+				applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkRight3)
+			case 20: // Walked down
+				applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkRight4)
+			case 21: // Walked right
+				applymovement (LOCALID_PETALBURG_WALLY, Common_Movement_WalkRight5)
+		}
+		waitmovement (0)
+	}
 	speakername (CommonText_Wally)
 	msgbox( format( "I… … … … …\p"
 					"I've heard about the things you've done.\p"
@@ -768,6 +791,7 @@ script PetalburgCity_EventScript_WallyBattle {
 	fadescreenswapbuffers (FADE_FROM_BLACK)
 	setvar (VAR_PETALBURG_CITY_STATE, 6)
 	clearflag (FLAG_CHALLENGING_TRAINER)
+	clearflag (FLAG_CANT_USE_FLY) // Allow player to fly
 	fadedefaultbgm
 	release
 }

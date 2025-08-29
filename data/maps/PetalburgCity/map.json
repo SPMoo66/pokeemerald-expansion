@@ -424,6 +424,33 @@
       "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
       "var_value": "1",
       "script": "Harper_Battle03"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_PETALBURG_CITY_STATE",
+      "var_value": "5",
+      "script": "PetalburgCity_EventScript_WallyBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_PETALBURG_CITY_STATE",
+      "var_value": "5",
+      "script": "PetalburgCity_EventScript_WallyBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_PETALBURG_CITY_STATE",
+      "var_value": "5",
+      "script": "PetalburgCity_EventScript_WallyBattle"
     }
   ],
   "bg_events": [

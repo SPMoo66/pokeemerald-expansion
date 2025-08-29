@@ -23,6 +23,8 @@ PetalburgCity_WallysHouse_EventScript_GiveHMSurf::
 	setflag FLAG_RECEIVED_HM_SURF
 	msgbox PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces, MSGBOX_DEFAULT
 	setvar VAR_PETALBURG_CITY_STATE, 5
+	special HealPlayerParty @ Heal the player's party after the gym so that Wally doesn't surprise
+	setflag FLAG_CANT_USE_FLY @ Block player from flying away from Wally
 	releaseall
 	end
 

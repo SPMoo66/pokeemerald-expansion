@@ -553,12 +553,7 @@ script RocketRefuge_B3F_Looker {
 	speakername (CommonText_Looker)
 	msgbox (format ("And you have a Pokévial, yes?\p"
 					"Allow me to increase its maximum\ncapacity for you."))
-	closemessage
-	pokevialincreasesize
-	msgbox (Text_PokevialSizeIncrease, MSGBOX_DEFAULT)
-	playfanfare (MUS_OBTAIN_ITEM)
-	waitfanfare
-	closemessage
+	call (IncreasePokevialSize)
 	speakername (CommonText_Looker)
 	msgbox (format ("That may seem like a great reward to\nyou, but the help you have given us is\linvaluable.\p"
 					"Now, hopefully Mr. Rocket remains in\nour custody.\p"

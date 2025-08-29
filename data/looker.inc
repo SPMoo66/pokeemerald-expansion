@@ -846,40 +846,30 @@ RocketRefuge_B3F_Looker_20:
 # 554 "data/looker.pory"
 	msgbox RocketRefuge_B3F_Looker_Text_4
 # 556 "data/looker.pory"
-	closemessage
+	call IncreasePokevialSize
 # 557 "data/looker.pory"
-	pokevialincreasesize
-# 558 "data/looker.pory"
-	msgbox Text_PokevialSizeIncrease, MSGBOX_DEFAULT
-# 559 "data/looker.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 560 "data/looker.pory"
-	waitfanfare
-# 561 "data/looker.pory"
-	closemessage
-# 562 "data/looker.pory"
 	speakername CommonText_Looker
-# 563 "data/looker.pory"
+# 558 "data/looker.pory"
 	msgbox RocketRefuge_B3F_Looker_Text_5
-# 568 "data/looker.pory"
+# 563 "data/looker.pory"
 	closemessage
-# 569 "data/looker.pory"
+# 564 "data/looker.pory"
 	fadescreen FADE_TO_BLACK
-# 570 "data/looker.pory"
+# 565 "data/looker.pory"
 	removeobject 4
-# 571 "data/looker.pory"
+# 566 "data/looker.pory"
 	playse SE_EXIT
-# 572 "data/looker.pory"
+# 567 "data/looker.pory"
 	delay 30
-# 573 "data/looker.pory"
+# 568 "data/looker.pory"
 	fadescreen FADE_FROM_BLACK
-# 574 "data/looker.pory"
+# 569 "data/looker.pory"
 	setvar VAR_LOOKER_ROCKET, 14
-# 575 "data/looker.pory"
+# 570 "data/looker.pory"
 	setflag FLAG_HIDE_ROCKETS_IN_REFUGE
-# 576 "data/looker.pory"
+# 571 "data/looker.pory"
 	fadedefaultbgm
-# 577 "data/looker.pory"
+# 572 "data/looker.pory"
 	release
 	return
 
@@ -1132,7 +1122,7 @@ RocketRefuge_B3F_Looker_Text_4:
 	.string "capacity for you.$"
 
 RocketRefuge_B3F_Looker_Text_5:
-# 563 "data/looker.pory"
+# 558 "data/looker.pory"
 	.string "That may seem like a great reward to\n"
 	.string "you, but the help you have given us is\l"
 	.string "invaluable.\p"

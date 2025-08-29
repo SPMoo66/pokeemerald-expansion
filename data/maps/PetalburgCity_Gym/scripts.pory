@@ -109,13 +109,7 @@ PetalburgCity_Gym_EventScript_BonusDose::
 	delay 30
 	speakername (CommonText_Dad)
 	msgbox PetalburgCity_Gym_Text_DadBonusDose, MSGBOX_DEFAULT
-	closemessage
-	pokevialincreasesize
-	msgbox Text_PokevialSizeIncrease, MSGBOX_DEFAULT
-	playfanfare MUS_OBTAIN_ITEM
-	waitfanfare
-	closemessage
-	delay 20
+	call IncreasePokevialSize
 	return
 
 PetalburgCity_Gym_Movement_WallyExitGym:

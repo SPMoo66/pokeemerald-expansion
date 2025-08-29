@@ -15,9 +15,9 @@ script RustboroCity_Gym_EventScript_Roxanne {
 script RustboroCity_Gym_EventScript_RoxanneDefeated {
 	speakername (NULL)
 	message (RustboroCity_Gym_Text_ReceivedStoneBadge)
-	speakername (CommonText_Roxanne)
 	waitmessage
 	call (Common_EventScript_PlayGymBadgeFanfare)
+	speakername (CommonText_Roxanne)
 	msgbox (RustboroCity_Gym_Text_StoneBadgeInfoTakeThis, MSGBOX_DEFAULT)
 	setflag (FLAG_DEFEATED_RUSTBORO_GYM)
 	setflag (FLAG_BADGE01_GET)
@@ -183,9 +183,9 @@ script DewfordTown_Gym_EventScript_BrawlyDefeated {
 	call (DewfordTown_Gym_EventScript_AnimateFlashFullBrightness)
 	speakername (NULL)
 	message (DewfordTown_Gym_Text_ReceivedKnuckleBadge)
-	speakername (CommonText_Brawly)
 	waitmessage
 	call (Common_EventScript_PlayGymBadgeFanfare)
+	speakername (CommonText_Brawly)
 	msgbox (DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis, MSGBOX_DEFAULT)
 	setflag (FLAG_DEFEATED_DEWFORD_GYM)
 	setflag (FLAG_BADGE02_GET)
@@ -318,9 +318,9 @@ script MauvilleCity_Gym_EventScript_Wattson {
 script MauvilleCity_Gym_EventScript_WattsonDefeated {
 	speakername (NULL)
 	message (MauvilleCity_Gym_Text_ReceivedDynamoBadge)
-	speakername (CommonText_Wattson)
 	waitmessage
 	call (Common_EventScript_PlayGymBadgeFanfare)
+	speakername (CommonText_Wattson)
 	msgbox (MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis, MSGBOX_DEFAULT)
 	setvar (VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 3)
 	clearflag (FLAG_HIDE_VERDANTURF_TOWN_SCOTT)
@@ -475,9 +475,9 @@ script LavaridgeTown_Gym_1F_EventScript_Flannery {
 script LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated {
 	speakername (NULL)
 	message (LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge)
-	speakername (CommonText_Flannery)
 	waitmessage
 	call (Common_EventScript_PlayGymBadgeFanfare)
+	speakername (CommonText_Flannery)
 	msgbox (LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis, MSGBOX_DEFAULT)
 	setflag (FLAG_WHITEOUT_TO_LAVARIDGE)
 	setflag (FLAG_DEFEATED_LAVARIDGE_GYM)
@@ -636,9 +636,9 @@ script PetalburgCity_Gym_EventScript_NormanBattle {
 	clearflag (FLAG_CHALLENGING_TRAINER)
 	speakername (NULL)
 	message (PetalburgCity_Gym_Text_ReceivedBalanceBadge)
-	speakername (CommonText_Dad)
 	waitmessage
 	call (Common_EventScript_PlayGymBadgeFanfare)
+	speakername (CommonText_Dad)
 	msgbox (PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis, MSGBOX_DEFAULT)
 	setflag (FLAG_DEFEATED_PETALBURG_GYM)
 	setvar (VAR_PETALBURG_GYM_STATE, 7)
@@ -659,13 +659,7 @@ script PetalburgCity_Gym_EventScript_NormanBattle {
 	delay (10)
 	speakername (CommonText_Dad)
 	msgbox (PetalburgCity_Gym_Text_DadPokevial2, MSGBOX_DEFAULT)
-	closemessage
-	pokevialincreasesize
-	msgbox (Text_PokevialSizeIncrease, MSGBOX_DEFAULT)
-	playfanfare (MUS_OBTAIN_ITEM)
-	waitfanfare
-	closemessage
-	delay (20)
+	call (IncreasePokevialSize)
 	speakername (CommonText_Dad)
 	msgbox (PetalburgCity_Gym_Text_DadHappyAndSad, MSGBOX_DEFAULT)
 	closemessage
@@ -844,9 +838,9 @@ script FortreeCity_Gym_EventScript_Winona {
 script FortreeCity_Gym_EventScript_WinonaDefeated {
 	speakername (NULL)
 	message (FortreeCity_Gym_Text_ReceivedFeatherBadge)
-	speakername (CommonText_Winona)
 	waitmessage
 	call (Common_EventScript_PlayGymBadgeFanfare)
+	speakername (CommonText_Winona)
 	msgbox (FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis, MSGBOX_DEFAULT)
 	setflag (FLAG_DEFEATED_FORTREE_GYM)
 	setflag (FLAG_BADGE06_GET)
@@ -982,9 +976,9 @@ script MossdeepCity_Gym_EventScript_TateAndLiza {
 script MossdeepCity_Gym_EventScript_TateAndLizaDefeated {
 	speakername (NULL)
 	message (MossdeepCity_Gym_Text_ReceivedMindBadge)
-	speakername (CommonText_LizaAndTate)
 	waitmessage
 	call (Common_EventScript_PlayGymBadgeFanfare)
+	speakername (CommonText_LizaAndTate)
 	msgbox (MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis, MSGBOX_DEFAULT)
 	setflag (FLAG_DEFEATED_MOSSDEEP_GYM)
 	setflag (FLAG_BADGE07_GET)
@@ -1146,9 +1140,9 @@ script SootopolisCity_Gym_1F_EventScript_Juan {
 script SootopolisCity_Gym_1F_EventScript_JuanDefeated {
 	speakername (NULL)
 	message (SootopolisCity_Gym_1F_Text_ReceivedRainBadge)
-	speakername (CommonText_Juan)
 	waitmessage
 	call (Common_EventScript_PlayGymBadgeFanfare)
+	speakername (CommonText_Juan)
 	msgbox (SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT)
 	setflag (FLAG_DEFEATED_SOOTOPOLIS_GYM)
 	setflag (FLAG_BADGE08_GET)

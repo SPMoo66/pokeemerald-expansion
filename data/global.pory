@@ -1251,3 +1251,11 @@ script Emote_Test {
 	delay (70)
 	release
 }
+
+script IncreasePokevialSize {
+	speakername (NULL)
+	pokevialincreasesize
+	message (Text_PokevialSizeIncrease)
+	playfanfare (MUS_OBTAIN_ITEM)
+	waitmessage
+}

@@ -1743,6 +1743,20 @@ Emote_Test::
 	return
 
 
+IncreasePokevialSize::
+# 1256 "data/global.pory"
+	speakername NULL
+# 1257 "data/global.pory"
+	pokevialincreasesize
+# 1258 "data/global.pory"
+	message Text_PokevialSizeIncrease
+# 1259 "data/global.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 1260 "data/global.pory"
+	waitmessage
+	return
+
+
 Mart_EventScript_TMClerk_Text_0:
 # 264 "data/global.pory"
 	.string "Sorry, I can only sell to trainers who\n"

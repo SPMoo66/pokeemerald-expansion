@@ -27,6 +27,7 @@ AquaHideout_B2F_EventScript_SubmarineEscape::
 	delay 20
 	applymovement VAR_0x8008, Common_Movement_FacePlayer
 	waitmovement 0
+	speakername CommonText_Matt
 	msgbox AquaHideout_B2F_Text_OurBossGotThroughHisPreparations, MSGBOX_DEFAULT
 	closemessage
 	applymovement VAR_0x8008, Common_Movement_WalkInPlaceFasterLeft
@@ -36,6 +37,7 @@ AquaHideout_B2F_EventScript_SubmarineEscape::
 	delay 20
 	applymovement VAR_0x8008, Common_Movement_FacePlayer
 	waitmovement 0
+	speakername CommonText_Matt
 	msgbox AquaHideout_B2F_Text_MattPostBattle, MSGBOX_DEFAULT
 	setflag FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE
 	setflag FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS

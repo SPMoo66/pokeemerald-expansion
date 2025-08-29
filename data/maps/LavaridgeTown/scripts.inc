@@ -69,6 +69,7 @@ LavaridgeTown_EventScript_MayGiveGoGoggles::
 LavaridgeTown_EventScript_BrendanGiveGoGoggles::
 	speakername (CommonText_Brendan)
 	msgbox LavaridgeTown_Text_BrendanNiceBadgesTakeThis, MSGBOX_DEFAULT
+	closemessage
 	giveitem ITEM_GO_GOGGLES
 	setflag FLAG_RECEIVED_GO_GOGGLES
 	speakername (CommonText_Brendan)

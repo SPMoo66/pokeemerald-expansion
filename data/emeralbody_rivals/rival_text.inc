@@ -1779,7 +1779,7 @@ Town14_HarperText::
 	.string "looked cool when it first came out?\p"
 	.string "You played this when you were young,\n"
 	.string "right, {PLAYER}?\p"
-	.string "W're all younger that this game, so did\n"
+	.string "We're all younger than this game, so did\n"
 	.string "it hold up when you first tried it?$"
 
 Town14_JaksonText::

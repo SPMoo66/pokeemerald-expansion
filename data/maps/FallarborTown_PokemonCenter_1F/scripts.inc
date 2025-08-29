@@ -28,6 +28,8 @@ FallarborTown_PokemonCenter_1F_EventScript_Lanette::
 	lock
 	faceplayer
 	msgbox FallarborTown_PokemonCenter_1F_Text_LanetteGreeting, MSGBOX_DEFAULT
+	speakername CommonText_Lanette
+	msgbox FallarborTown_PokemonCenter_1F_Text_LanetteGreeting2, MSGBOX_DEFAULT
 	closemessage
 	switch VAR_FACING
 	case DIR_NORTH, FallarborTown_PokemonCenter_1F_EventScript_LanetteExitNorth
@@ -91,7 +93,9 @@ FallarborTown_PokemonCenter_1F_Text_LanetteGreeting:
 	.string "How I arrived at that conclusion is\n"
 	.string "a simple deductive process.\p"
 	.string "You spoke to me because you wanted\n"
-	.string "to access something on this PC.\p"
+	.string "to access something on this PC.$"
+
+FallarborTown_PokemonCenter_1F_Text_LanetteGreeting2:
 	.string "Oh, I'm sorry. I'm Lanette.\p"
 	.string "Honestly, I'm glad to meet you--it's\n"
 	.string "great you're using the Storage System.\p"

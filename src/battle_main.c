@@ -2025,7 +2025,10 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             }
             else if (FlagGet(FLAG_ELITE_FOUR_CHALLENGE))
             {
-                CreateMon(&party[i], partyData[monIndex].species, 55 + i + VarGet(VAR_ELITE_4_STATE), 0, TRUE, personalityValue, otIdType, fixedOtId);
+                u8 gameClearLevelBoost = 0;
+                if (FlagGet(FLAG_SYS_GAME_CLEAR))
+                    gameClearLevelBoost = 9; // mons are gameClearLevelBoost levels higher when rematching
+                CreateMon(&party[i], partyData[monIndex].species, 55 + i + VarGet(VAR_ELITE_4_STATE) + gameClearLevelBoost, 0, TRUE, personalityValue, otIdType, fixedOtId);
             }
             else
             {

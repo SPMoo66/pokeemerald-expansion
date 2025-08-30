@@ -5014,7 +5014,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .baseSpAttack  = 40,
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_GROUND),
-        .catchRate = 45,
+        .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 67,
         .evYield_Attack = 1,
 		.itemRare = ITEM_HABAN_BERRY,

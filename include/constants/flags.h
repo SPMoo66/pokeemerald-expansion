@@ -1508,7 +1508,9 @@
 
 #define FLAG_MET_INVESTOR                           (SYSTEM_FLAGS + 0x85) // Met the Investor NPC
 #define FLAG_INVESTMENT_MADE                        (SYSTEM_FLAGS + 0x86) // Made an investment with the Investor NPC
-#define FLAG_LEVEL_SYNC                             (SYSTEM_FLAGS + 0x87) // Was unused
+
+#define FLAG_UNUSED_0x8E7                           (SYSTEM_FLAGS + 0x87) // Unused
+
 #define FLAG_CHALLENGING_TRAINER                    (SYSTEM_FLAGS + 0x88) // Set for challenging trainers so level sync does not scale them two levels lower like standard trainers
 #define FLAG_PREVENT_OVERWORLD_SPEEDUP              (SYSTEM_FLAGS + 0x89) // Was unused
 #define FLAG_SYS_SET_BATTLE_BGM                     (SYSTEM_FLAGS + 0x8A) // Was unused, set this flag when overriding battle BGM, store BGM in VAR_TEMP_F

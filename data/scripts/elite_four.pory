@@ -48,6 +48,7 @@ script EverGrandeCity_SidneysRoom_EventScript_Sidney {
 	lock
 	faceplayer
 	setflag (FLAG_CHALLENGING_TRAINER)
+	speakername (CommonText_Sidney)
 	if (!flag(FLAG_DEFEATED_ELITE_4_SIDNEY)) {
 		playbgm (MUS_ENCOUNTER_ELITE_FOUR, FALSE)
 		msgbox (EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT)
@@ -55,6 +56,7 @@ script EverGrandeCity_SidneysRoom_EventScript_Sidney {
 		setflag (FLAG_DEFEATED_ELITE_4_SIDNEY)
 		call (PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
 	}
+	speakername (CommonText_Sidney)
 	msgbox (EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT)
 	release
 }
@@ -88,6 +90,7 @@ text EverGrandeCity_SidneysRoom_Text_PostBattleSpeech {
 script EverGrandeCity_PhoebesRoom_EventScript_Phoebe {
 	lock
 	faceplayer
+	speakername (CommonText_Phoebe)
 	if (!flag(FLAG_DEFEATED_ELITE_4_PHOEBE)) {
 		playbgm (MUS_ENCOUNTER_ELITE_FOUR, FALSE)
 		msgbox (EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT)
@@ -95,6 +98,7 @@ script EverGrandeCity_PhoebesRoom_EventScript_Phoebe {
 		setflag (FLAG_DEFEATED_ELITE_4_PHOEBE)
 		call (PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
 	}
+	speakername (CommonText_Phoebe)
 	msgbox (EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT)
 	release
 }
@@ -131,6 +135,7 @@ text EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech {
 script EverGrandeCity_GlaciasRoom_EventScript_Glacia {
 	lock
 	faceplayer
+	speakername (CommonText_Glacia)
 	if (!flag(FLAG_DEFEATED_ELITE_4_GLACIA)) {
 		playbgm (MUS_ENCOUNTER_ELITE_FOUR, FALSE)
 		msgbox (EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT)
@@ -138,6 +143,7 @@ script EverGrandeCity_GlaciasRoom_EventScript_Glacia {
 		setflag (FLAG_DEFEATED_ELITE_4_GLACIA)
 		call (PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
 	}
+	speakername (CommonText_Glacia)
 	msgbox (EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT)
 	release
 }
@@ -173,6 +179,7 @@ text EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech {
 script EverGrandeCity_DrakesRoom_EventScript_Drake {
 	lock
 	faceplayer
+	speakername (CommonText_Drake)
 	if (!flag(FLAG_DEFEATED_ELITE_4_DRAKE)) {
 		playbgm (MUS_ENCOUNTER_ELITE_FOUR, FALSE)
 		msgbox (EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT)
@@ -182,6 +189,7 @@ script EverGrandeCity_DrakesRoom_EventScript_Drake {
 		setflag (FLAG_DEFEATED_ELITE_4_DRAKE)
 		call (PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
 	}
+	speakername (CommonText_Drake)
 	msgbox (EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT)
 	release
 }

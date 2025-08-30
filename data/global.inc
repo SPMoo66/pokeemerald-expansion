@@ -1716,45 +1716,45 @@ GetRivalMusic_5:
 
 
 Emote_Test::
-# 1249 "data/global.pory"
+# 1265 "data/global.pory"
 	lock
-# 1250 "data/global.pory"
+# 1266 "data/global.pory"
 	applymovement 11, Common_Movement_MusicNote
-# 1251 "data/global.pory"
+# 1267 "data/global.pory"
 	delay 70
-# 1252 "data/global.pory"
+# 1268 "data/global.pory"
 	applymovement 11, Common_Movement_Smile
-# 1253 "data/global.pory"
+# 1269 "data/global.pory"
 	delay 70
-# 1254 "data/global.pory"
+# 1270 "data/global.pory"
 	applymovement 11, Common_Movement_SweatDrop
-# 1255 "data/global.pory"
+# 1271 "data/global.pory"
 	delay 70
-# 1256 "data/global.pory"
+# 1272 "data/global.pory"
 	applymovement 11, Common_Movement_Talking
-# 1257 "data/global.pory"
+# 1273 "data/global.pory"
 	delay 70
-# 1258 "data/global.pory"
+# 1274 "data/global.pory"
 	applymovement 11, Common_Movement_Thinking
-# 1259 "data/global.pory"
+# 1275 "data/global.pory"
 	delay 70
-# 1260 "data/global.pory"
+# 1276 "data/global.pory"
 	release
 	return
 
 
 IncreasePokevialSize::
-# 1264 "data/global.pory"
+# 1280 "data/global.pory"
 	speakername NULL
-# 1265 "data/global.pory"
+# 1281 "data/global.pory"
 	pokevialincreasesize
-# 1266 "data/global.pory"
+# 1282 "data/global.pory"
 	message Text_PokevialSizeIncrease
-# 1267 "data/global.pory"
+# 1283 "data/global.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 1268 "data/global.pory"
+# 1284 "data/global.pory"
 	waitmessage
-# 1269 "data/global.pory"
+# 1285 "data/global.pory"
 	delay 60
 	return
 
@@ -2310,40 +2310,56 @@ CommonText_Juan::
 # 1180 "data/global.pory"
 	.string "Juan$"
 
-Text_TrickMasterIs_Puzzle1::
+CommonText_Sidney::
 # 1184 "data/global.pory"
+	.string "Sidney$"
+
+CommonText_Phoebe::
+# 1188 "data/global.pory"
+	.string "Phoebe$"
+
+CommonText_Glacia::
+# 1192 "data/global.pory"
+	.string "Glacia$"
+
+CommonText_Drake::
+# 1196 "data/global.pory"
+	.string "Drake$"
+
+Text_TrickMasterIs_Puzzle1::
+# 1200 "data/global.pory"
 	.string "fabulous$"
 
 Text_TrickMasterIs_Puzzle2::
-# 1188 "data/global.pory"
+# 1204 "data/global.pory"
 	.string "based$"
 
 Text_TrickMasterIs_Puzzle3::
-# 1192 "data/global.pory"
+# 1208 "data/global.pory"
 	.string "coveted$"
 
 Text_TrickMasterIs_Puzzle4::
-# 1196 "data/global.pory"
+# 1212 "data/global.pory"
 	.string "cool$"
 
 Text_TrickMasterIs_Puzzle5::
-# 1200 "data/global.pory"
+# 1216 "data/global.pory"
 	.string "a genius$"
 
 Text_TrickMasterIs_Puzzle6::
-# 1204 "data/global.pory"
+# 1220 "data/global.pory"
 	.string "my life$"
 
 Text_TrickMasterIs_Puzzle7::
-# 1208 "data/global.pory"
+# 1224 "data/global.pory"
 	.string "huggable$"
 
 Text_TrickMasterIs_Puzzle8::
-# 1212 "data/global.pory"
+# 1228 "data/global.pory"
 	.string "my love$"
 
 Text_TrickMasterIsBlank::
-# 1216 "data/global.pory"
+# 1232 "data/global.pory"
 	.string "{PLAYER} wrote down the secret code\n"
 	.string "on the door.\p"
 	.string "“Trick Master is {STR_VAR_1}.”\n"
@@ -2351,25 +2367,25 @@ Text_TrickMasterIsBlank::
 	.string "The lock clicked open!$"
 
 Text_2nd::
-# 1224 "data/global.pory"
+# 1240 "data/global.pory"
 	.string "2nd$"
 
 Text_3rd::
-# 1228 "data/global.pory"
+# 1244 "data/global.pory"
 	.string "3rd$"
 
 Text_4th::
-# 1232 "data/global.pory"
+# 1248 "data/global.pory"
 	.string "4th$"
 
 Text_5th::
-# 1236 "data/global.pory"
+# 1252 "data/global.pory"
 	.string "5th$"
 
 Text_6th::
-# 1240 "data/global.pory"
+# 1256 "data/global.pory"
 	.string "6th$"
 
 Text_7th::
-# 1244 "data/global.pory"
+# 1260 "data/global.pory"
 	.string "7th$"

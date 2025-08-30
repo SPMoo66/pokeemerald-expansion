@@ -1181,6 +1181,22 @@ text CommonText_Juan {
 	"Juan"
 }
 
+text CommonText_Sidney {
+	"Sidney"
+}
+
+text CommonText_Phoebe {
+	"Phoebe"
+}
+
+text CommonText_Glacia {
+	"Glacia"
+}
+
+text CommonText_Drake {
+	"Drake"
+}
+
 text Text_TrickMasterIs_Puzzle1 {
 	"fabulous"
 }

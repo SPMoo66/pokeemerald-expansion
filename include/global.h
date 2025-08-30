@@ -558,6 +558,26 @@ struct RankingHall2P
     //u8 padding;
 };
 
+struct EliteFourOrder
+{
+	u8 eliteFourFirst;
+	u8 eliteFourSecond;
+	u8 eliteFourThird;
+	u8 eliteFourFourth;
+};
+
+struct GymLeaderOrder
+{
+	u8 gymLeaderFirst;
+	u8 gymLeaderSecond;
+	u8 gymLeaderThird;
+	u8 gymLeaderFourth;
+	u8 gymLeaderFifth;
+	u8 gymLeaderSixth;
+	u8 gymLeaderSeventh;
+	u8 gymLeaderEighth;
+};
+
 struct SaveBlock2
 {
     /*0x00*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
@@ -613,6 +633,8 @@ struct SaveBlock2
 #endif //FREE_RECORD_MIXING_HALL_RECORDS
     /*0x624*/ u16 contestLinkResults[CONTEST_CATEGORIES_COUNT][CONTESTANT_COUNT];
     /*0x64C*/ struct BattleFrontier frontier;
+              struct EliteFourOrder eliteFourOrder;
+              struct GymLeaderOrder gymLeaderOrder;
 }; // sizeof=0xF2C
 
 

@@ -6,17 +6,20 @@ EverGrandeCity_SidneysRoom_MapScripts::
 	.byte 0
 
 EverGrandeCity_SidneysRoom_OnTransition:
+	setvar VAR_ELITE_4_STATE_2, 1
 	setflag FLAG_MET_SCOTT_IN_EVERGRANDE
 	setflag FLAG_HIDE_EVER_GRANDE_POKEMON_CENTER_1F_SCOTT
+	call_if_set FLAG_SYS_GAME_CLEAR, PokemonLeague_EliteFour_EventScript_GetCurrentMemberGraphics
+	call_if_unset FLAG_SYS_GAME_CLEAR, EverGrandeCity_SidneysRoom_EventScript_SetSidney
 	end
+
+EverGrandeCity_SidneysRoom_EventScript_SetSidney:
+	setvar VAR_OBJ_GFX_ID_B, OBJ_EVENT_GFX_SIDNEY
+	return
 
 EverGrandeCity_SidneysRoom_OnLoad:
-	call_if_eq VAR_ELITE_4_STATE, 1, EverGrandeCity_SidneysRoom_EventScript_CloseDoor
+	call_if_eq VAR_ELITE_4_STATE, 1, PokemonLeague_EliteFour_EventScript_CloseDoor
 	end
-
-EverGrandeCity_SidneysRoom_EventScript_CloseDoor::
-	call PokemonLeague_EliteFour_EventScript_CloseDoor
-	return
 
 EverGrandeCity_SidneysRoom_OnWarp:
 	map_script_2 VAR_TEMP_1, 0, EverGrandeCity_SidneysRoom_EventScript_PlayerTurnNorth

@@ -3314,3 +3314,61 @@ void Script_EndTrainerCanSeeIf(struct ScriptContext *ctx)
     if (ctx->breakOnTrainerBattle && sScriptConditionTable[condition][ctx->comparisonResult] == 1)
         StopScript(ctx);
 }
+
+bool8 ScrCmd_readelitefour(struct ScriptContext *ctx)
+{
+    Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE);
+
+    gSpecialVar_0x8000 = gSaveBlock2Ptr->eliteFourOrder.eliteFourFirst;  // Elite Four #1
+    gSpecialVar_0x8001 = gSaveBlock2Ptr->eliteFourOrder.eliteFourSecond; // Elite Four #2
+    gSpecialVar_0x8002 = gSaveBlock2Ptr->eliteFourOrder.eliteFourThird;  // Elite Four #3
+    gSpecialVar_0x8003 = gSaveBlock2Ptr->eliteFourOrder.eliteFourFourth; // Elite Four #4
+    return FALSE;
+}
+
+bool8 ScrCmd_shuffleelitefour(struct ScriptContext *ctx)
+{
+    Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE | SCREFF_SAVE);
+
+    u8 eliteFour[4] = {1,2,3,4};
+    Shuffle8(eliteFour, 4);
+
+    gSaveBlock2Ptr->eliteFourOrder.eliteFourFirst = eliteFour[0];  // Elite Four #1
+    gSaveBlock2Ptr->eliteFourOrder.eliteFourSecond = eliteFour[1]; // Elite Four #2
+    gSaveBlock2Ptr->eliteFourOrder.eliteFourThird = eliteFour[2];  // Elite Four #3
+    gSaveBlock2Ptr->eliteFourOrder.eliteFourFourth = eliteFour[3]; // Elite Four #4
+    return FALSE;
+}
+
+bool8 ScrCmd_readgymleader(struct ScriptContext *ctx)
+{
+    Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE);
+
+    gSpecialVar_0x8000 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderFirst;  // Gym Leader #1
+    gSpecialVar_0x8001 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderSecond; // Gym Leader #2
+    gSpecialVar_0x8002 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderThird;  // Gym Leader #3
+    gSpecialVar_0x8003 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderFourth; // Gym Leader #4
+    gSpecialVar_0x8004 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderFirst;  // Gym Leader #5
+    gSpecialVar_0x8005 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderSecond; // Gym Leader #6
+    gSpecialVar_0x8006 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderThird;  // Gym Leader #7
+    gSpecialVar_0x8007 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderFourth; // Gym Leader #8
+    return FALSE;
+}
+
+bool8 ScrCmd_shufflegymleader(struct ScriptContext *ctx)
+{
+    Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE | SCREFF_SAVE);
+
+    u8 gymLeader[8] = {1,2,3,4,5,6,7,8};
+    Shuffle8(gymLeader, 4);
+
+    gSaveBlock2Ptr->gymLeaderOrder.gymLeaderFirst = gymLeader[0];   // Gym Leader #1
+    gSaveBlock2Ptr->gymLeaderOrder.gymLeaderSecond = gymLeader[1];  // Gym Leader #2
+    gSaveBlock2Ptr->gymLeaderOrder.gymLeaderThird = gymLeader[2];   // Gym Leader #3
+    gSaveBlock2Ptr->gymLeaderOrder.gymLeaderFourth = gymLeader[3];  // Gym Leader #4
+    gSaveBlock2Ptr->gymLeaderOrder.gymLeaderFifth = gymLeader[4];   // Gym Leader #5
+    gSaveBlock2Ptr->gymLeaderOrder.gymLeaderSixth = gymLeader[5];   // Gym Leader #6
+    gSaveBlock2Ptr->gymLeaderOrder.gymLeaderSeventh = gymLeader[6]; // Gym Leader #7
+    gSaveBlock2Ptr->gymLeaderOrder.gymLeaderEighth = gymLeader[7];  // Gym Leader #8
+    return FALSE;
+}

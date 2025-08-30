@@ -2571,6 +2571,26 @@
 	.4byte \text
 	.endm
 
+	@ Reads the save block values for the randomized elite four and prints to 0x8000 to 0x8003
+	.macro readelitefour
+	callnative ScrCmd_readelitefour, requests_effects=1
+	.endm
+
+	@ Shuffles the order of the elite four and writes to save
+	.macro shuffleelitefour
+	callnative ScrCmd_shuffleelitefour, requests_effects=1
+	.endm
+
+	@ Reads the save block values for the randomized elite four and prints to 0x8000 to 0x8003
+	.macro readgymleader
+	callnative ScrCmd_readgymleader, requests_effects=1
+	.endm
+
+	@ Shuffles the order of the elite four and writes to save
+	.macro shufflegymleader
+	callnative ScrCmd_shufflegymleader, requests_effects=1
+	.endm
+
 	@ Hides any follower Pokémon if present, putting them into their Poké Ball; by default waits for their movement to finish.
 	.macro hidefollower wait=1
 	callnative ScrFunc_hidefollower

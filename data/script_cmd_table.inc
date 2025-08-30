@@ -253,6 +253,10 @@ gScriptCmdTable::
 	script_cmd_table_entry SCR_OP_DYNMULTICHOICE                ScrCmd_dynmultichoice               requests_effects=1  @ 0xe4
 	script_cmd_table_entry SCR_OP_DYNMULTIPUSH                  ScrCmd_dynmultipush                 requests_effects=1  @ 0xe5
 	script_cmd_table_entry SCR_OP_SETSPEAKER                    ScrCmd_setspeaker                   requests_effects=1  @ 0xe6
+	script_cmd_table_entry SCR_OP_READELITEFOUR                 ScrCmd_readelitefour                requests_effects=1  @ 0xe7
+	script_cmd_table_entry SCR_OP_SHUFFLEELITEFOUR              ScrCmd_shuffleelitefour             requests_effects=1  @ 0xe8
+	script_cmd_table_entry SCR_OP_READGYMLEADER                 ScrCmd_readgymleader                requests_effects=1  @ 0xe9
+	script_cmd_table_entry SCR_OP_SHUFFLEGYMLEADER              ScrCmd_shufflegymleader             requests_effects=1  @ 0xea
 
 	.if ALLOCATE_SCRIPT_CMD_TABLE
 gScriptCmdTableEnd::

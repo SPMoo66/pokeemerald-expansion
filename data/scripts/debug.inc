@@ -142,10 +142,16 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
+	readelitefour
+	copyvar VAR_TEMP_0, VAR_0x8000
 	release
 	end
 
 Debug_EventScript_Script_3::
+	shuffleelitefour
+	readelitefour
+	buffernumberstring 0, VAR_0x8000
+	msgbox Debug_PrintRivalVar, MSGBOX_DEFAULT
 	release
 	end
 

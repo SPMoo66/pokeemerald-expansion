@@ -1,8 +1,19 @@
 EverGrandeCity_PhoebesRoom_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, EverGrandeCity_PhoebesRoom_OnLoad
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_PhoebesRoom_OnWarp
+	map_script MAP_SCRIPT_ON_TRANSITION, EverGrandeCity_PhoebesRoom_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, EverGrandeCity_PhoebesRoom_OnFrame
 	.byte 0
+
+EverGrandeCity_PhoebesRoom_OnTransition:
+	setvar VAR_ELITE_4_STATE_2, 2
+	call_if_set FLAG_SYS_GAME_CLEAR, PokemonLeague_EliteFour_EventScript_GetCurrentMemberGraphics
+	call_if_unset FLAG_SYS_GAME_CLEAR, EverGrandeCity_PhoebesRoom_EventScript_SetPhoebe
+	end
+
+EverGrandeCity_PhoebesRoom_EventScript_SetPhoebe:
+	setvar VAR_OBJ_GFX_ID_B, OBJ_EVENT_GFX_PHOEBE
+	return
 
 EverGrandeCity_PhoebesRoom_OnWarp:
 	map_script_2 VAR_TEMP_1, 0, EverGrandeCity_PhoebesRoom_EventScript_PlayerTurnNorth

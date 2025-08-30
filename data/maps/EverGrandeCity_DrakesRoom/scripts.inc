@@ -2,7 +2,18 @@ EverGrandeCity_DrakesRoom_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, EverGrandeCity_DrakesRoom_OnFrame
 	map_script MAP_SCRIPT_ON_LOAD, EverGrandeCity_DrakesRoom_OnLoad
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_SidneysRoom_OnWarp
+	map_script MAP_SCRIPT_ON_TRANSITION, EverGrandeCity_DrakesRoom_OnTransition
 	.byte 0
+
+EverGrandeCity_DrakesRoom_OnTransition:
+	setvar VAR_ELITE_4_STATE_2, 4
+	call_if_set FLAG_SYS_GAME_CLEAR, PokemonLeague_EliteFour_EventScript_GetCurrentMemberGraphics
+	call_if_unset FLAG_SYS_GAME_CLEAR, EverGrandeCity_DrakesRoom_EventScript_SetDrake
+	end
+
+EverGrandeCity_DrakesRoom_EventScript_SetDrake:
+	setvar VAR_OBJ_GFX_ID_B, OBJ_EVENT_GFX_DRAKE
+	return
 
 EverGrandeCity_DrakesRoom_OnFrame:
 	map_script_2 VAR_ELITE_4_STATE, 3, EverGrandeCity_DrakesRoom_EventScript_WalkInCloseDoor

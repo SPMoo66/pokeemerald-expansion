@@ -3360,7 +3360,7 @@ bool8 ScrCmd_shufflegymleader(struct ScriptContext *ctx)
     Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE | SCREFF_SAVE);
 
     u8 gymLeader[8] = {1,2,3,4,5,6,7,8};
-    Shuffle8(gymLeader, 4);
+    Shuffle8(gymLeader, 8);
 
     gSaveBlock2Ptr->gymLeaderOrder.gymLeaderFirst = gymLeader[0];   // Gym Leader #1
     gSaveBlock2Ptr->gymLeaderOrder.gymLeaderSecond = gymLeader[1];  // Gym Leader #2

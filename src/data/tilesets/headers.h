@@ -841,3 +841,14 @@ const struct Tileset gTileset_Snow =
     .metatileAttributes = gMetatileAttributes_Snow,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Beach =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Beach,
+    .palettes = gTilesetPalettes_Beach,
+    .metatiles = gMetatiles_Beach,
+    .metatileAttributes = gMetatileAttributes_Beach,
+    .callback = InitTilesetAnim_Beach,
+};

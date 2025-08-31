@@ -1186,3 +1186,46 @@ static void BlendAnimPalette_BattleDome_FloorLightsNoBlend(u16 timer)
             sSecondaryTilesetAnimCallback = NULL;
     }
 }
+
+// ### src/tileset_anims.c ###
+// Our custom animation code:
+
+const u16 gTilesetAnims_Beach_Water_Frame0[] = INCBIN_U16("data/tilesets/primary/beach/anim/water/0.4bpp");
+const u16 gTilesetAnims_Beach_Water_Frame1[] = INCBIN_U16("data/tilesets/primary/beach/anim/water/1.4bpp");
+const u16 gTilesetAnims_Beach_Water_Frame2[] = INCBIN_U16("data/tilesets/primary/beach/anim/water/2.4bpp");
+const u16 gTilesetAnims_Beach_Water_Frame3[] = INCBIN_U16("data/tilesets/primary/beach/anim/water/3.4bpp");
+const u16 gTilesetAnims_Beach_Water_Frame4[] = INCBIN_U16("data/tilesets/primary/beach/anim/water/4.4bpp");
+const u16 gTilesetAnims_Beach_Water_Frame5[] = INCBIN_U16("data/tilesets/primary/beach/anim/water/5.4bpp");
+const u16 gTilesetAnims_Beach_Water_Frame6[] = INCBIN_U16("data/tilesets/primary/beach/anim/water/6.4bpp");
+const u16 gTilesetAnims_Beach_Water_Frame7[] = INCBIN_U16("data/tilesets/primary/beach/anim/water/7.4bpp");
+
+const u16 *const gTilesetAnims_Beach_Water[] = {
+    gTilesetAnims_Beach_Water_Frame0,
+    gTilesetAnims_Beach_Water_Frame1,
+    gTilesetAnims_Beach_Water_Frame2,
+    gTilesetAnims_Beach_Water_Frame3,
+    gTilesetAnims_Beach_Water_Frame4,
+    gTilesetAnims_Beach_Water_Frame5,
+    gTilesetAnims_Beach_Water_Frame6,
+    gTilesetAnims_Beach_Water_Frame7
+};
+
+static void QueueAnimTiles_Beach_Water(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Beach_Water);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Beach_Water[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(1)), 2 * TILE_SIZE_4BPP);
+}
+
+static void TilesetAnim_Beach(u16 timer)
+{
+    if (timer % 16 == 1) {
+        QueueAnimTiles_Beach_Water(timer / 16);
+    }
+}
+
+void InitTilesetAnim_Beach(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_Beach;
+}

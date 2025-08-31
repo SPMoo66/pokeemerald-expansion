@@ -45,22 +45,6 @@ script PokemonLeague_EliteFour_EventScript_CloseDoor {
 script PokemonLeague_EliteFour_EventScript_ShuffleEliteFour {
 	if (flag(FLAG_SYS_GAME_CLEAR)) {
 		shuffleelitefour
-		readelitefour
-		buffernumberstring (0, VAR_0x8000)
-		msgbox (Debug_PrintRivalVar)
-		closemessage
-		delay (10)
-		buffernumberstring (0, VAR_0x8001)
-		msgbox (Debug_PrintRivalVar)
-		closemessage
-		delay (10)
-		buffernumberstring (0, VAR_0x8002)
-		msgbox (Debug_PrintRivalVar)
-		closemessage
-		delay (10)
-		buffernumberstring (0, VAR_0x8003)
-		msgbox (Debug_PrintRivalVar)
-		closemessage
 		setvar (VAR_TEMP_5, 1)
 	}
 }

@@ -38,6 +38,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Wallace::
 	msgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_WALLACE, EverGrandeCity_ChampionsRoom_Text_Defeat
 	clearflag FLAG_CHALLENGING_TRAINER
+	clearflag FLAG_ELITE_FOUR_CHALLENGE
 	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
 	end
 

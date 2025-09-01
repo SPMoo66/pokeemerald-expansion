@@ -1213,7 +1213,7 @@ const u16 *const gTilesetAnims_Beach_Water[] = {
 static void QueueAnimTiles_Beach_Water(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_Beach_Water);
-    AppendTilesetAnimToBuffer(gTilesetAnims_Beach_Water[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(1)), 2 * TILE_SIZE_4BPP);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Beach_Water[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(1)), 6 * TILE_SIZE_4BPP);
 }
 
 static void TilesetAnim_Beach(u16 timer)

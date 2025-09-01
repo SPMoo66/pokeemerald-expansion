@@ -428,12 +428,20 @@ static const struct SpritePalette sFlyTargetIconsSpritePalette =
     .tag = TAG_FLY_ICON
 };
 
-static const u16 sRedOutlineFlyDestinations[][2] =
+static const u16 sRedOutlineFlyDestinationsHoenn[][2] =
 {
     {
         FLAG_LANDMARK_BATTLE_FRONTIER,
         MAPSEC_BATTLE_FRONTIER
     },
+    {
+        -1,
+        MAPSEC_NONE
+    }
+};
+
+static const u16 sRedOutlineFlyDestinationsExpansion1[][2] =
+{
     {
         -1,
         MAPSEC_NONE
@@ -1213,48 +1221,62 @@ static void RegionMap_InitializeStateBasedOnSSTidalLocation(void)
 
 static u8 GetMapsecType(u16 mapSecId)
 {
-    switch (mapSecId)
+    if (gMapHeader.region == 3) // 3 is REGION_IS_EXPANSION_1
     {
-    case MAPSEC_NONE:
-        return MAPSECTYPE_NONE;
-    case MAPSEC_LITTLEROOT_TOWN:
-        return FlagGet(FLAG_VISITED_LITTLEROOT_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_OLDALE_TOWN:
-        return FlagGet(FLAG_VISITED_OLDALE_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_DEWFORD_TOWN:
-        return FlagGet(FLAG_VISITED_DEWFORD_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_LAVARIDGE_TOWN:
-        return FlagGet(FLAG_VISITED_LAVARIDGE_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_FALLARBOR_TOWN:
-        return FlagGet(FLAG_VISITED_FALLARBOR_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_VERDANTURF_TOWN:
-        return FlagGet(FLAG_VISITED_VERDANTURF_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_PACIFIDLOG_TOWN:
-        return FlagGet(FLAG_VISITED_PACIFIDLOG_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_PETALBURG_CITY:
-        return FlagGet(FLAG_VISITED_PETALBURG_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_SLATEPORT_CITY:
-        return FlagGet(FLAG_VISITED_SLATEPORT_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_MAUVILLE_CITY:
-        return FlagGet(FLAG_VISITED_MAUVILLE_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_RUSTBORO_CITY:
-        return FlagGet(FLAG_VISITED_RUSTBORO_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_FORTREE_CITY:
-        return FlagGet(FLAG_VISITED_FORTREE_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_LILYCOVE_CITY:
-        return FlagGet(FLAG_VISITED_LILYCOVE_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_MOSSDEEP_CITY:
-        return FlagGet(FLAG_VISITED_MOSSDEEP_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_SOOTOPOLIS_CITY:
-        return FlagGet(FLAG_VISITED_SOOTOPOLIS_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_EVER_GRANDE_CITY:
-        return FlagGet(FLAG_VISITED_EVER_GRANDE_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_BATTLE_FRONTIER:
-        return FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER) ? MAPSECTYPE_BATTLE_FRONTIER : MAPSECTYPE_NONE;
-    case MAPSEC_SOUTHERN_ISLAND:
-        return FlagGet(FLAG_LANDMARK_SOUTHERN_ISLAND) ? MAPSECTYPE_ROUTE : MAPSECTYPE_NONE;
-    default:
-        return MAPSECTYPE_ROUTE;
+        switch (mapSecId) // Update this switch table with any flyable maps for Expansion 1
+        {
+        case MAPSEC_NONE:
+            return MAPSECTYPE_NONE;
+        default:
+            return MAPSECTYPE_ROUTE;
+        }
+        
+    }
+    else
+    {
+        switch (mapSecId)
+        {
+        case MAPSEC_NONE:
+            return MAPSECTYPE_NONE;
+        case MAPSEC_LITTLEROOT_TOWN:
+            return FlagGet(FLAG_VISITED_LITTLEROOT_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_OLDALE_TOWN:
+            return FlagGet(FLAG_VISITED_OLDALE_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_DEWFORD_TOWN:
+            return FlagGet(FLAG_VISITED_DEWFORD_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_LAVARIDGE_TOWN:
+            return FlagGet(FLAG_VISITED_LAVARIDGE_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_FALLARBOR_TOWN:
+            return FlagGet(FLAG_VISITED_FALLARBOR_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_VERDANTURF_TOWN:
+            return FlagGet(FLAG_VISITED_VERDANTURF_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_PACIFIDLOG_TOWN:
+            return FlagGet(FLAG_VISITED_PACIFIDLOG_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_PETALBURG_CITY:
+            return FlagGet(FLAG_VISITED_PETALBURG_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_SLATEPORT_CITY:
+            return FlagGet(FLAG_VISITED_SLATEPORT_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_MAUVILLE_CITY:
+            return FlagGet(FLAG_VISITED_MAUVILLE_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_RUSTBORO_CITY:
+            return FlagGet(FLAG_VISITED_RUSTBORO_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_FORTREE_CITY:
+            return FlagGet(FLAG_VISITED_FORTREE_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_LILYCOVE_CITY:
+            return FlagGet(FLAG_VISITED_LILYCOVE_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_MOSSDEEP_CITY:
+            return FlagGet(FLAG_VISITED_MOSSDEEP_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_SOOTOPOLIS_CITY:
+            return FlagGet(FLAG_VISITED_SOOTOPOLIS_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_EVER_GRANDE_CITY:
+            return FlagGet(FLAG_VISITED_EVER_GRANDE_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_BATTLE_FRONTIER:
+            return FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER) ? MAPSECTYPE_BATTLE_FRONTIER : MAPSECTYPE_NONE;
+        case MAPSEC_SOUTHERN_ISLAND:
+            return FlagGet(FLAG_LANDMARK_SOUTHERN_ISLAND) ? MAPSECTYPE_ROUTE : MAPSECTYPE_NONE;
+        default:
+            return MAPSECTYPE_ROUTE;
+        }
     }
 }
 
@@ -1875,9 +1897,11 @@ static void LoadFlyDestIcons(void)
 #define sIconMapSec   data[0]
 #define sFlickerTimer data[1]
 
+// The function below only affects what is DRAWN to the fly map. It does not affect what locations can actually be flown to.
+// When creating and updating new region maps, change mapSecIdStart and mapSecIdEnd for the appropriate gMapHeader.region
 static void CreateFlyDestIcons(void)
 {
-    u16 canFlyFlag;
+    u16 canFlyFlag = FLAG_VISITED_LITTLEROOT_TOWN;
     u16 mapSecId;
     u16 x;
     u16 y;
@@ -1885,9 +1909,16 @@ static void CreateFlyDestIcons(void)
     u16 height;
     u16 shape;
     u8 spriteId;
+    u16 mapSecIdStart = MAPSEC_LITTLEROOT_TOWN;
+    u16 mapSecIdEnd = MAPSEC_EVER_GRANDE_CITY;
 
-    canFlyFlag = FLAG_VISITED_LITTLEROOT_TOWN;
-    for (mapSecId = MAPSEC_LITTLEROOT_TOWN; mapSecId <= MAPSEC_EVER_GRANDE_CITY; mapSecId++)
+    if (gMapHeader.region == 3) // 3 is REGION_IS_EXPANSION_1
+    {
+        canFlyFlag = FLAG_VISITED_OLDALE_TOWN;   // I believe this is used so that the player can fly to at least one map
+        mapSecIdStart = MAPSEC_FORTREE_CITY;     // Set this to the first mapsec to be checked for the region
+        mapSecIdEnd = MAPSEC_EVER_GRANDE_CITY;   // Set this to the last mapsec to be checked for the region
+    }
+    for (mapSecId = mapSecIdStart; mapSecId <= mapSecIdEnd; mapSecId++)
     {
         GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
         x = (x + MAPCURSOR_X_MIN) * 8 + 4;
@@ -1929,23 +1960,47 @@ static void TryCreateRedOutlineFlyDestIcons(void)
     u16 mapSecId;
     u8 spriteId;
 
-    for (i = 0; sRedOutlineFlyDestinations[i][1] != MAPSEC_NONE; i++)
+    if (gMapHeader.region == 3)
     {
-        if (FlagGet(sRedOutlineFlyDestinations[i][0]))
+        for (i = 0; sRedOutlineFlyDestinationsExpansion1[i][1] != MAPSEC_NONE; i++)
         {
-            mapSecId = sRedOutlineFlyDestinations[i][1];
-            GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
-            x = (x + MAPCURSOR_X_MIN) * 8;
-            y = (y + MAPCURSOR_Y_MIN) * 8;
-            spriteId = CreateSprite(&sFlyDestIconSpriteTemplate, x, y, 10);
-            if (spriteId != MAX_SPRITES)
+            if (FlagGet(sRedOutlineFlyDestinationsExpansion1[i][0]))
             {
-                gSprites[spriteId].oam.size = SPRITE_SIZE(16x16);
-                gSprites[spriteId].callback = SpriteCB_FlyDestIcon;
-                StartSpriteAnim(&gSprites[spriteId], FLYDESTICON_RED_OUTLINE);
-                gSprites[spriteId].sIconMapSec = mapSecId;
+                mapSecId = sRedOutlineFlyDestinationsExpansion1[i][1];
+                GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
+                x = (x + MAPCURSOR_X_MIN) * 8;
+                y = (y + MAPCURSOR_Y_MIN) * 8;
+                spriteId = CreateSprite(&sFlyDestIconSpriteTemplate, x, y, 10);
+                if (spriteId != MAX_SPRITES)
+                {
+                    gSprites[spriteId].oam.size = SPRITE_SIZE(16x16);
+                    gSprites[spriteId].callback = SpriteCB_FlyDestIcon;
+                    StartSpriteAnim(&gSprites[spriteId], FLYDESTICON_RED_OUTLINE);
+                    gSprites[spriteId].sIconMapSec = mapSecId;
+                }
             }
         }
+    }
+    else
+    {
+	    for (i = 0; sRedOutlineFlyDestinationsHoenn[i][1] != MAPSEC_NONE; i++)
+	    {
+		    if (FlagGet(sRedOutlineFlyDestinationsHoenn[i][0]))
+		    {
+			    mapSecId = sRedOutlineFlyDestinationsHoenn[i][1];
+			    GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
+			    x = (x + MAPCURSOR_X_MIN) * 8;
+			    y = (y + MAPCURSOR_Y_MIN) * 8;
+			    spriteId = CreateSprite(&sFlyDestIconSpriteTemplate, x, y, 10);
+			    if (spriteId != MAX_SPRITES)
+			    {
+				    gSprites[spriteId].oam.size = SPRITE_SIZE(16x16);
+				    gSprites[spriteId].callback = SpriteCB_FlyDestIcon;
+				    StartSpriteAnim(&gSprites[spriteId], FLYDESTICON_RED_OUTLINE);
+				    gSprites[spriteId].sIconMapSec = mapSecId;
+			    }
+		    }
+	    }
     }
 }
 

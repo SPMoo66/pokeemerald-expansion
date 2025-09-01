@@ -1672,3 +1672,22 @@ const u16 gTilesetPalettes_Beach[][16] =
 };
 
 const u32 gTilesetTiles_Beach[] = INCBIN_U32("data/tilesets/primary/beach/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Camp[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/camp/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/camp/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/camp/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/camp/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/camp/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/camp/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/camp/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/camp/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/camp/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/camp/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/camp/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/camp/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/camp/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Camp[] = INCBIN_U32("data/tilesets/secondary/camp/tiles.4bpp.lz");

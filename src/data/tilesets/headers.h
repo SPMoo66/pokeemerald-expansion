@@ -852,3 +852,14 @@ const struct Tileset gTileset_Beach =
     .metatileAttributes = gMetatileAttributes_Beach,
     .callback = InitTilesetAnim_Beach,
 };
+
+const struct Tileset gTileset_Camp =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Camp,
+    .palettes = gTilesetPalettes_Camp,
+    .metatiles = gMetatiles_Camp,
+    .metatileAttributes = gMetatileAttributes_Camp,
+    .callback = NULL,
+};

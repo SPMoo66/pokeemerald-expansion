@@ -3425,11 +3425,11 @@
       "id": "LAYOUT_ROUTE104_PROTOTYPE",
       "name": "Route104_Prototype_Layout",
       "width": 22,
-      "height": 12,
+      "height": 20,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Beach",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Camp",
       "border_filepath": "data/layouts/Route104_Prototype/border.bin",
       "blockdata_filepath": "data/layouts/Route104_Prototype/map.bin"
     },

@@ -877,7 +877,11 @@
     },
     {
       "id": "MAPSEC_ROUTE_10",
-      "name": "Route 10"
+      "name": "Route 10",
+      "x": 13,
+      "y": 0,
+      "width": 3,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_11",

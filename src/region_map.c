@@ -132,6 +132,7 @@ static const u32 sRegionMapExpansion1Bg_GfxLZ[] = INCBIN_U32("graphics/pokenav/r
 static const u32 sRegionMapExpansion1Bg_TilemapLZ[] = INCBIN_U32("graphics/pokenav/region_map/expansion_1/map.bin.lz");
 
 #include "data/region_map/region_map_layout.h"
+#include "data/region_map/region_map_layout_expansion_1.h"
 #include "data/region_map/region_map_entries.h"
 
 static const u16 sRegionMap_SpecialPlaceLocations[][2] =
@@ -1009,7 +1010,10 @@ static u16 GetMapSecIdAt(u16 x, u16 y)
     }
     y -= MAPCURSOR_Y_MIN;
     x -= MAPCURSOR_X_MIN;
-    return sRegionMap_MapSectionLayout[y][x];
+    if (gMapHeader.region == 3)
+        return sRegionMapExpansion1_MapSectionLayout[y][x];
+    else
+        return sRegionMap_MapSectionLayout[y][x];
 }
 
 static void InitMapBasedOnPlayerLocation(void)

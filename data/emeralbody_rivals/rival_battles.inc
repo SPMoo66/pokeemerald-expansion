@@ -75,7 +75,7 @@ Harper_PlayerMoves:
 Harper_Battle03::
 # 52 "data/emeralbody_rivals/rival_battles.pory"
 	compare VAR_EMERALBODY_RIVAL, 1
-	goto_if_eq Harper_Battle03_1
+	goto_if_eq Harper_Battle03_2
 	return
 
 Harper_Battle03_1:
@@ -129,6 +129,12 @@ Harper_Battle03_1:
 	clearflag FLAG_CHALLENGING_TRAINER
 # 77 "data/emeralbody_rivals/rival_battles.pory"
 	release
+	return
+
+Harper_Battle03_2:
+# 52 "data/emeralbody_rivals/rival_battles.pory"
+	compare VAR_PETALBURG_GYM_STATE, 6
+	goto_if_ge Harper_Battle03_1
 	return
 
 

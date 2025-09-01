@@ -127,6 +127,10 @@ static const u8 sRegionMapPlayerIcon_BrendanGfx[] = INCBIN_U8("graphics/pokenav/
 static const u16 sRegionMapPlayerIcon_MayPal[] = INCBIN_U16("graphics/pokenav/region_map/may_icon.gbapal");
 static const u8 sRegionMapPlayerIcon_MayGfx[] = INCBIN_U8("graphics/pokenav/region_map/may_icon.4bpp");
 
+static const u16 sRegionMapExpansion1Bg_Pal[] = INCBIN_U16("graphics/pokenav/region_map/expansion_1/map.gbapal");
+static const u32 sRegionMapExpansion1Bg_GfxLZ[] = INCBIN_U32("graphics/pokenav/region_map/expansion_1/map.8bpp.lz");
+static const u32 sRegionMapExpansion1Bg_TilemapLZ[] = INCBIN_U32("graphics/pokenav/region_map/expansion_1/map.bin.lz");
+
 #include "data/region_map/region_map_layout.h"
 #include "data/region_map/region_map_entries.h"
 
@@ -546,28 +550,52 @@ void ShowRegionMapForPokedexAreaScreen(struct RegionMap *regionMap)
 
 bool8 LoadRegionMapGfx(void)
 {
+    //MgbaPrintf(MGBA_LOG_WARN, "region %u", gMapHeader.region); // Prints the current region (it's a number!) See include/overworld.h for regions, see src/overworld.c for mappings to mapsecs
     switch (sRegionMap->initStep)
     {
     case 0:
         if (sRegionMap->bgManaged)
-            DecompressAndCopyTileDataToVram(sRegionMap->bgNum, sRegionMapBg_GfxLZ, 0, 0, 0);
+        {
+            if (gMapHeader.region == 3) // 3 is REGION_IS_EXPANSION_1
+                DecompressAndCopyTileDataToVram(sRegionMap->bgNum, sRegionMapExpansion1Bg_GfxLZ, 0, 0, 0);
+            else
+                DecompressAndCopyTileDataToVram(sRegionMap->bgNum, sRegionMapBg_GfxLZ, 0, 0, 0);
+        }
         else
-            LZ77UnCompVram(sRegionMapBg_GfxLZ, (u16 *)BG_CHAR_ADDR(2));
+        {
+            if (gMapHeader.region == 3)
+			    LZ77UnCompVram(sRegionMapExpansion1Bg_GfxLZ, (u16 *)BG_CHAR_ADDR(2));
+            else
+			    LZ77UnCompVram(sRegionMapBg_GfxLZ, (u16 *)BG_CHAR_ADDR(2));
+        }
         break;
     case 1:
         if (sRegionMap->bgManaged)
         {
             if (!FreeTempTileDataBuffersIfPossible())
-                DecompressAndCopyTileDataToVram(sRegionMap->bgNum, sRegionMapBg_TilemapLZ, 0, 0, 1);
+            {
+                if (gMapHeader.region == 3)
+                        DecompressAndCopyTileDataToVram(sRegionMap->bgNum, sRegionMapExpansion1Bg_TilemapLZ, 0, 0, 1);
+                else
+                        DecompressAndCopyTileDataToVram(sRegionMap->bgNum, sRegionMapBg_TilemapLZ, 0, 0, 1);
+            }
         }
         else
         {
-            LZ77UnCompVram(sRegionMapBg_TilemapLZ, (u16 *)BG_SCREEN_ADDR(28));
+            if (gMapHeader.region == 3)
+                LZ77UnCompVram(sRegionMapExpansion1Bg_TilemapLZ, (u16 *)BG_SCREEN_ADDR(28));
+            else
+                LZ77UnCompVram(sRegionMapBg_TilemapLZ, (u16 *)BG_SCREEN_ADDR(28));
         }
         break;
     case 2:
         if (!FreeTempTileDataBuffersIfPossible())
-            LoadPalette(sRegionMapBg_Pal, BG_PLTT_ID(7), 3 * PLTT_SIZE_4BPP);
+        {
+            if (gMapHeader.region == 3)
+                LoadPalette(sRegionMapExpansion1Bg_Pal, BG_PLTT_ID(7), 3 * PLTT_SIZE_4BPP);
+            else
+                LoadPalette(sRegionMapBg_Pal, BG_PLTT_ID(7), 3 * PLTT_SIZE_4BPP);
+        }
         break;
     case 3:
         LZ77UnCompWram(sRegionMapCursorSmallGfxLZ, sRegionMap->cursorSmallImage);

@@ -173,7 +173,7 @@ bool32 IsSendingKeysOverCable(void);
 void ClearLinkPlayerObjectEvents(void);
 bool16 SetTimeOfDay(u16 hours);
 u8 OverworldSpeedup_AdditionalIterations(u16 speed, bool32 overworld);
-
+void LoadCurrentMapData(void);
 
 // Item Description Headers
 enum ItemObtainFlags
@@ -182,12 +182,12 @@ enum ItemObtainFlags
     FLAG_SET_ITEM_OBTAINED,
 };
 bool8 GetSetItemObtained(u16 item, enum ItemObtainFlags caseId);
-/*
+
 enum {
-    REGION_HOENN,
-    REGION_KANTO,
-    REGION_SEVII,
-    REGION_EXPANSION_1
+    REGION_IS_HOENN,            // 0
+    REGION_IS_KANTO,            // 1
+    REGION_IS_SEVII,            // 2
+    REGION_IS_EXPANSION_1       // 3
 };
-*/
+
 #endif // GUARD_OVERWORLD_H

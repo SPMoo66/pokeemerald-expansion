@@ -559,20 +559,21 @@ void ShowRegionMapForPokedexAreaScreen(struct RegionMap *regionMap)
 
 bool8 LoadRegionMapGfx(void)
 {
+    u8 currentMap = gMapHeader.region;
     //MgbaPrintf(MGBA_LOG_WARN, "region %u", gMapHeader.region); // Prints the current region (it's a number!) See include/overworld.h for regions, see src/overworld.c for mappings to mapsecs
     switch (sRegionMap->initStep)
     {
     case 0:
         if (sRegionMap->bgManaged)
         {
-            if (gMapHeader.region == 3) // 3 is REGION_IS_EXPANSION_1
+            if (currentMap == 3) // 3 is REGION_IS_EXPANSION_1
                 DecompressAndCopyTileDataToVram(sRegionMap->bgNum, sRegionMapExpansion1Bg_GfxLZ, 0, 0, 0);
             else
                 DecompressAndCopyTileDataToVram(sRegionMap->bgNum, sRegionMapBg_GfxLZ, 0, 0, 0);
         }
         else
         {
-            if (gMapHeader.region == 3)
+            if (currentMap == 3)
 			    LZ77UnCompVram(sRegionMapExpansion1Bg_GfxLZ, (u16 *)BG_CHAR_ADDR(2));
             else
 			    LZ77UnCompVram(sRegionMapBg_GfxLZ, (u16 *)BG_CHAR_ADDR(2));
@@ -583,7 +584,7 @@ bool8 LoadRegionMapGfx(void)
         {
             if (!FreeTempTileDataBuffersIfPossible())
             {
-                if (gMapHeader.region == 3)
+                if (currentMap == 3)
                         DecompressAndCopyTileDataToVram(sRegionMap->bgNum, sRegionMapExpansion1Bg_TilemapLZ, 0, 0, 1);
                 else
                         DecompressAndCopyTileDataToVram(sRegionMap->bgNum, sRegionMapBg_TilemapLZ, 0, 0, 1);
@@ -591,7 +592,7 @@ bool8 LoadRegionMapGfx(void)
         }
         else
         {
-            if (gMapHeader.region == 3)
+            if (currentMap == 3)
                 LZ77UnCompVram(sRegionMapExpansion1Bg_TilemapLZ, (u16 *)BG_SCREEN_ADDR(28));
             else
                 LZ77UnCompVram(sRegionMapBg_TilemapLZ, (u16 *)BG_SCREEN_ADDR(28));
@@ -600,7 +601,7 @@ bool8 LoadRegionMapGfx(void)
     case 2:
         if (!FreeTempTileDataBuffersIfPossible())
         {
-            if (gMapHeader.region == 3)
+            if (currentMap == 3)
                 LoadPalette(sRegionMapExpansion1Bg_Pal, BG_PLTT_ID(7), 3 * PLTT_SIZE_4BPP);
             else
                 LoadPalette(sRegionMapBg_Pal, BG_PLTT_ID(7), 3 * PLTT_SIZE_4BPP);
@@ -1004,13 +1005,15 @@ void PokedexAreaScreen_UpdateRegionMapVariablesAndVideoRegs(s16 x, s16 y)
 
 static u16 GetMapSecIdAt(u16 x, u16 y)
 {
+    u8 currentMap = gMapHeader.region;
+
     if (y < MAPCURSOR_Y_MIN || y > MAPCURSOR_Y_MAX || x < MAPCURSOR_X_MIN || x > MAPCURSOR_X_MAX)
     {
         return MAPSEC_NONE;
     }
     y -= MAPCURSOR_Y_MIN;
     x -= MAPCURSOR_X_MIN;
-    if (gMapHeader.region == 3)
+    if (currentMap == 3)
         return sRegionMapExpansion1_MapSectionLayout[y][x];
     else
         return sRegionMap_MapSectionLayout[y][x];
@@ -1225,7 +1228,9 @@ static void RegionMap_InitializeStateBasedOnSSTidalLocation(void)
 
 static u8 GetMapsecType(u16 mapSecId)
 {
-    if (gMapHeader.region == 3) // 3 is REGION_IS_EXPANSION_1
+    u8 currentMap = gMapHeader.region;
+
+    if (currentMap == 3) // 3 is REGION_IS_EXPANSION_1
     {
         switch (mapSecId) // Update this switch table with any flyable maps for Expansion 1
         {
@@ -1915,8 +1920,9 @@ static void CreateFlyDestIcons(void)
     u8 spriteId;
     u16 mapSecIdStart = MAPSEC_LITTLEROOT_TOWN;
     u16 mapSecIdEnd = MAPSEC_EVER_GRANDE_CITY;
+    u8 currentMap = gMapHeader.region;
 
-    if (gMapHeader.region == 3) // 3 is REGION_IS_EXPANSION_1
+    if (currentMap == 3) // 3 is REGION_IS_EXPANSION_1
     {
         canFlyFlag = FLAG_VISITED_OLDALE_TOWN;   // I believe this is used so that the player can fly to at least one map
         mapSecIdStart = MAPSEC_FORTREE_CITY;     // Set this to the first mapsec to be checked for the region
@@ -1963,8 +1969,9 @@ static void TryCreateRedOutlineFlyDestIcons(void)
     u16 height;
     u16 mapSecId;
     u8 spriteId;
+    u8 currentMap = gMapHeader.region;
 
-    if (gMapHeader.region == 3)
+    if (currentMap == 3)
     {
         for (i = 0; sRedOutlineFlyDestinationsExpansion1[i][1] != MAPSEC_NONE; i++)
         {

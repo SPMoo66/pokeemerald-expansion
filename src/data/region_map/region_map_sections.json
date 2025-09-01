@@ -879,8 +879,8 @@
       "id": "MAPSEC_ROUTE_10",
       "name": "Route 10",
       "x": 13,
-      "y": 0,
-      "width": 3,
+      "y": 5,
+      "width": 1,
       "height": 1
     },
     {

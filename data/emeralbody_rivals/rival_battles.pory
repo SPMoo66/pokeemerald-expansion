@@ -49,7 +49,7 @@ movement Harper_PlayerMoves {
 }
 
 script Harper_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
-	if (var(VAR_EMERALBODY_RIVAL) == 1) { // Check if Harper is your rival
+	if (var(VAR_EMERALBODY_RIVAL) == 1 && var(VAR_PETALBURG_GYM_STATE) >= 6) { // Check if Harper is your rival. Also check if beaten Gyms 1-4
 		lock
 		call (Common_EventScript_PlayEmRivalBgm)
 		addobject (HARPER_BATTLE03)

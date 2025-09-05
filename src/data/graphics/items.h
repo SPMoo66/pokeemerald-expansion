@@ -2078,7 +2078,7 @@ const u32 gItemIcon_Pokevial6[] = INCBIN_U32("graphics/items/icons/pokevial6.4bp
 const u32 gItemIcon_Pokevial7[] = INCBIN_U32("graphics/items/icons/pokevial7.4bpp.smol");
 const u32 gItemIcon_Pokevial8[] = INCBIN_U32("graphics/items/icons/pokevial8.4bpp.smol");
 const u32 gItemIcon_Pokevial9[] = INCBIN_U32("graphics/items/icons/pokevial9.4bpp.smol");
-const u32 gItemIcon_Pokevial[] = INCBIN_U32("graphics/items/icons/pokevial.4bpp.lz");
+const u32 gItemIcon_Pokevial[] = INCBIN_U32("graphics/items/icons/pokevial.4bpp.smol");
 
 const u16 gItemIconPalette_Pokevial[] = INCBIN_U16("graphics/items/icon_palettes/pokevial.gbapal");
 //End Pokevial Branch

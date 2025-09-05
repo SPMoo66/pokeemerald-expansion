@@ -2922,6 +2922,8 @@ void AnimateMonAfterPokeBallFail(u32 battler)
 {
     if (B_ANIMATE_MON_AFTER_FAILED_POKEBALL == FALSE)
         return;
+    if (gSaveBlock2Ptr->optionsAnimateAfterKO != 0)
+        return;
     
     LaunchKOAnimation(battler, ReturnAnimIdForBattler(TRUE, battler), TRUE);
     TryShinyAnimation(gBattlerTarget, GetBattlerMon(gBattlerTarget));
@@ -2931,8 +2933,7 @@ static void AnimateMonAfterKnockout(u32 battler)
 {
     if (B_ANIMATE_MON_AFTER_KO == FALSE)
         return;
-    u8 animateAfterKOOption = gSaveBlock2Ptr->optionsAnimateAfterKO;
-    if (animateAfterKOOption != 0)
+    if (gSaveBlock2Ptr->optionsAnimateAfterKO != 0)
         return;
 
     u32 oppositeBattler = BATTLE_OPPOSITE(battler);

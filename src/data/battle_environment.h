@@ -38,6 +38,10 @@ const u32 gBattleEnvironmentTiles_Building[] = INCBIN_U32("graphics/battle_envir
 const u16 gBattleEnvironmentPalette_Frontier[] = INCBIN_U16("graphics/battle_environment/building/battle_frontier.gbapal"); // this is also used for link battles
 const u32 gBattleEnvironmentTilemap_Building[] = INCBIN_U32("graphics/battle_environment/building/map.bin.smolTM");
 
+const u32 gBattleEnvironmentTiles_Snow[] = INCBIN_U32("graphics/battle_environment/snow/tiles.4bpp.smol");
+const u16 gBattleEnvironmentPalette_Snow[] = INCBIN_U16("graphics/battle_environment/snow/palette.gbapal");
+const u32 gBattleEnvironmentTilemap_Snow[] = INCBIN_U32("graphics/battle_environment/snow/map.bin.smolTM");
+
 #define ENVIRONMENT_BACKGROUND(background)                      \
 {                                                               \
     .tileset = gBattleEnvironmentTiles_##background,            \
@@ -383,6 +387,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
     #endif
         .secretPowerEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
         .camouflageType = TYPE_ICE,
+        .background = ENVIRONMENT_BACKGROUND(Snow),
     },
 
     [BATTLE_ENVIRONMENT_ICE] =

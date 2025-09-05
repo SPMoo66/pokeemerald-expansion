@@ -6789,12 +6789,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 4,
         SHADOW(-3, 1, SHADOW_SIZE_S)
         FOOTPRINT(Gloom)
-        OVERWORLD_FEMALE(
-            sPicTable_GloomF,
+        OVERWORLD(
+            sPicTable_Gloom,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following
+            sAnimTable_Following,
+            gOverworldPalette_Gloom,
+            gShinyOverworldPalette_Gloom
         )
         .levelUpLearnset = sGloomEmeribianLevelUpLearnset,
         .teachableLearnset = sGloomEmeribianTeachableLearnset,
@@ -6862,12 +6864,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         SHADOW(-3, 7, SHADOW_SIZE_M)
         FOOTPRINT(Vileplume)
-        OVERWORLD_FEMALE(
-            sPicTable_VileplumeF,
+        OVERWORLD(
+            sPicTable_Vileplume,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following
+            sAnimTable_Following,
+            gOverworldPalette_Vileplume,
+            gShinyOverworldPalette_Vileplume
         )
         .levelUpLearnset = sVileplumeEmeribianLevelUpLearnset,
         .teachableLearnset = sVileplumeEmeribianTeachableLearnset,

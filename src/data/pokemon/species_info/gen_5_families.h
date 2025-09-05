@@ -2606,6 +2606,15 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .iconPalIndex = 0,
         SHADOW(0, 8, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Gigalith)
+        OVERWORLD(
+            sPicTable_Gigalith,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Gigalith,
+            gShinyOverworldPalette_Gigalith
+        )
         .levelUpLearnset = sGigalithFribianLevelUpLearnset,
         .teachableLearnset = sGigalithFribianTeachableLearnset,
         .isFribianForm = TRUE,

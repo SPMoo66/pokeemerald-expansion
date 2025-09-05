@@ -834,6 +834,15 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         SHADOW(0, 15, SHADOW_SIZE_M)
         FOOTPRINT(Charizard)
+        OVERWORLD(
+            sPicTable_Charizard,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Charizard,
+            gShinyOverworldPalette_Charizard
+        )
         .levelUpLearnset = sCharizardEmeribianLevelUpLearnset,
         .teachableLearnset = sCharizardEmeribianTeachableLearnset,
         .isEmeribianForm = TRUE,
@@ -5695,6 +5704,15 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 3,
         SHADOW(-1, 10, SHADOW_SIZE_M)
         FOOTPRINT(Ninetales)
+        OVERWORLD(
+            sPicTable_Ninetales,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Ninetales,
+            gShinyOverworldPalette_Ninetales
+        )
         .levelUpLearnset = sNinetalesEmeribianLevelUpLearnset,
         .teachableLearnset = sNinetalesEmeribianTeachableLearnset,
         .isEmeribianForm = TRUE,
@@ -6704,6 +6722,15 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 4,
         SHADOW(0, -1, SHADOW_SIZE_S)
         FOOTPRINT(Oddish)
+        OVERWORLD(
+            sPicTable_Oddish,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Oddish,
+            gShinyOverworldPalette_Oddish
+        )
         .levelUpLearnset = sOddishEmeribianLevelUpLearnset,
         .teachableLearnset = sOddishEmeribianTeachableLearnset,
         .isEmeribianForm = TRUE,
@@ -6762,6 +6789,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 4,
         SHADOW(-3, 1, SHADOW_SIZE_S)
         FOOTPRINT(Gloom)
+        OVERWORLD_FEMALE(
+            sPicTable_GloomF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following
+        )
         .levelUpLearnset = sGloomEmeribianLevelUpLearnset,
         .teachableLearnset = sGloomEmeribianTeachableLearnset,
         .isEmeribianForm = TRUE,
@@ -6828,6 +6862,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         SHADOW(-3, 7, SHADOW_SIZE_M)
         FOOTPRINT(Vileplume)
+        OVERWORLD_FEMALE(
+            sPicTable_VileplumeF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following
+        )
         .levelUpLearnset = sVileplumeEmeribianLevelUpLearnset,
         .teachableLearnset = sVileplumeEmeribianTeachableLearnset,
         .isEmeribianForm = TRUE,
@@ -6893,6 +6934,15 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 4,
         SHADOW(0, 2, SHADOW_SIZE_M)
         FOOTPRINT(Bellossom)
+        OVERWORLD(
+            sPicTable_Bellossom,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Bellossom,
+            gShinyOverworldPalette_Bellossom
+        )
         .levelUpLearnset = sBellossomEmeribianLevelUpLearnset,
         .teachableLearnset = sBellossomEmeribianTeachableLearnset,
         .isEmeribianForm = TRUE,
@@ -10517,6 +10567,15 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         SHADOW(0, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Golem)
+        OVERWORLD(
+            sPicTable_Golem,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Golem,
+            gShinyOverworldPalette_Golem
+        )
         .isFribianForm = TRUE,
         .levelUpLearnset = sGolemFribianLevelUpLearnset,
         .teachableLearnset = sGolemFribianTeachableLearnset,
@@ -12038,6 +12097,15 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         SHADOW(6, 8, SHADOW_SIZE_M)
         FOOTPRINT(Doduo)
+        OVERWORLD(
+            sPicTable_Doduo,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Doduo,
+            gShinyOverworldPalette_Doduo
+        )
         .levelUpLearnset = sDoduoEmeribianLevelUpLearnset,
         .teachableLearnset = sDoduoEmeribianTeachableLearnset,
         .isEmeribianForm = TRUE,
@@ -12103,6 +12171,15 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 3,
         SHADOW(0, 11, SHADOW_SIZE_M)
         FOOTPRINT(Dodrio)
+        OVERWORLD(
+            sPicTable_Dodrio,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Dodrio,
+            gShinyOverworldPalette_Dodrio
+        )
         .levelUpLearnset = sDodrioEmeribianLevelUpLearnset,
         .teachableLearnset = sDodrioEmeribianTeachableLearnset,
         .isEmeribianForm = TRUE,
@@ -12752,6 +12829,15 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_CloysterFribian,
         SHADOW(0, 10, SHADOW_SIZE_L)
         FOOTPRINT(Cloyster)
+        OVERWORLD(
+            sPicTable_Cloyster,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Cloyster,
+            gShinyOverworldPalette_Cloyster
+        )
         .isFribianForm = TRUE,
         .formSpeciesIdTable = sCloysterFormSpeciesIdTable,
         .levelUpLearnset = sCloysterFribianLevelUpLearnset,

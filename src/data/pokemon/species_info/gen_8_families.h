@@ -1899,6 +1899,15 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sWoolooFribianLevelUpLearnset,
         .teachableLearnset = sWoolooFribianTeachableLearnset,
         .isFribianForm = TRUE,
+        OVERWORLD(
+            sPicTable_Wooloo,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Wooloo,
+            gShinyOverworldPalette_Wooloo
+        )
         .formSpeciesIdTable = sWoolooFormSpeciesIdTable,
         .eggMoveLearnset = sWoolooFribianEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_DUBWOOL_FRIBIAN}),
@@ -1956,6 +1965,15 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .iconPalIndex = 2,
         SHADOW(-2, 10, SHADOW_SIZE_L)
         FOOTPRINT(Dubwool)
+        OVERWORLD(
+            sPicTable_Dubwool,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Dubwool,
+            gShinyOverworldPalette_Dubwool
+        )
         .levelUpLearnset = sDubwoolFribianLevelUpLearnset,
         .teachableLearnset = sDubwoolFribianTeachableLearnset,
         .isFribianForm = TRUE,
@@ -5525,6 +5543,15 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .iconPalIndex = 2,
         SHADOW(0, 1, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Falinks)
+        OVERWORLD(
+            sPicTable_Falinks,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Falinks,
+            gShinyOverworldPalette_Falinks
+        )
         .levelUpLearnset = sFalinksEmeribianLevelUpLearnset,
         .teachableLearnset = sFalinksEmeribianTeachableLearnset,
         .isEmeribianForm = TRUE,

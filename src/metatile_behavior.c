@@ -1411,14 +1411,6 @@ bool8 MetatileBehavior_IsTrainerHillTimer(u8 metatileBehavior)
         return FALSE;
 }
 
-bool8 MetatileBehavior_IsRockClimbable(u8 metatileBehavior)
-{
-    if (metatileBehavior == MB_ROCK_CLIMB)
-        return TRUE;
-    else
-        return FALSE;
-}
-
 bool8 MetatileBehavior_IsDirectionalUpRightStairWarp(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_UP_RIGHT_STAIR_WARP)
@@ -1599,6 +1591,14 @@ bool8 MetatileBehavior_IsSidewaysStairsLeftSideAny(u8 metatileBehavior)
 bool8 MetatileBehavior_IsRockStairs(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_ROCK_STAIRS)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsRockClimbable(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_ROCK_CLIMB)
         return TRUE;
     else
         return FALSE;

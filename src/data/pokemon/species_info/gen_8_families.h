@@ -2626,8 +2626,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .teachableLearnset = sApplinTeachableLearnset,
         .eggMoveLearnset = sApplinEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_TART_APPLE, SPECIES_FLAPPLE},
-                                {EVO_ITEM, ITEM_SWEET_APPLE, SPECIES_APPLETUN},
-                                {EVO_ITEM, ITEM_SYRUPY_APPLE, SPECIES_DIPPLIN}),
+                                {EVO_ITEM, ITEM_SWEET_APPLE, SPECIES_APPLETUN}
+                            #if P_GEN_9_CROSS_EVOS
+                                ,{EVO_ITEM, ITEM_SYRUPY_APPLE, SPECIES_DIPPLIN}
+                            #endif
+                            ),
     },
 
     [SPECIES_FLAPPLE] =
@@ -6709,7 +6712,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sDuraludonLevelUpLearnset,
         .teachableLearnset = sDuraludonTeachableLearnset,
         .eggMoveLearnset = sDuraludonEggMoveLearnset,
+    #if P_GEN_9_CROSS_EVOS
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_METAL_ALLOY, SPECIES_ARCHALUDON}),
+    #endif
     },
 
 #if P_GIGANTAMAX_FORMS

@@ -18,14 +18,12 @@ const u8 gText_ExpandedPlaceholder_Kyogre[] = _("Kyogre");
 const u8 gText_ExpandedPlaceholder_Groudon[] = _("Groudon");
 const u8 gText_ExpandedPlaceholder_Brendan[] = _("Brendan");
 const u8 gText_ExpandedPlaceholder_May[] = _("May");
-const u8 gText_EggNickname[] = _("Egg");
-const u8 gText_Pokemon[] = _("Pokémon");
+const u8 gText_EggNickname[POKEMON_NAME_LENGTH + 1] = _("Egg");
+const u8 gText_Pokemon[POKEMON_NAME_LENGTH + 1] = _("Pokémon");
 const u8 gText_Time[] = _("Time");
 ALIGNED(4) const u8 gText_PickNextCancel[] = _("{DPAD_UPDOWN}Pick {A_BUTTON}Next {B_BUTTON}Cancel");
 ALIGNED(4) const u8 gText_PickCancel[] = _("{DPAD_UPDOWN}Pick {A_BUTTON}{B_BUTTON}Cancel");
 ALIGNED(4) const u8 gText_AButtonExit[] = _("{A_BUTTON}Exit");
-const u8 gText_BirchBoy[] = _("Boy");
-const u8 gText_BirchGirl[] = _("Girl");
 const u8 gText_ThisIsAPokemon[] = _("This is what we call a “Pokémon.”{PAUSE 96}\p");
 const u8 gText_5MarksPokemon[] = _("????? Pokémon");
 const u8 gText_UnkHeight[] = _("{CLEAR_TO 0x0C}??'??”");
@@ -178,11 +176,11 @@ const u8 gText_ReturnToVar1[] = _("Return to\n{STR_VAR_1}.");
 
 const u8 *const gPocketNamesStringsTable[] =
 {
-    [ITEMS_POCKET] = gText_Items,
-    [BALLS_POCKET] = gText_PokeBalls,
-    [TMHM_POCKET]  = gText_TMs_Hms,
-    [BERRIES_POCKET] = gText_Berries,
-    [KEYITEMS_POCKET] = gText_Key_Items
+    [POCKET_ITEMS] =        COMPOUND_STRING("Items"),
+    [POCKET_POKE_BALLS] =   COMPOUND_STRING("Poké Balls"),
+    [POCKET_TM_HM]  =       COMPOUND_STRING("TMs & HMs"),
+    [POCKET_BERRIES] =      COMPOUND_STRING("Berries"),
+    [POCKET_KEY_ITEMS] =    COMPOUND_STRING("Key Items")
 };
 
 const u8 gText_NumberItem_TMBerry[] = _("{NO}{STR_VAR_1}{CLEAR 0x07}{STR_VAR_2}");
@@ -742,9 +740,9 @@ const u8 gText_YaySmileEmoji[] = _("Yay{EMOJI_BIGSMILE}");
 const u8 gText_ThankYou[] = _("Thank you");
 const u8 gText_ByeBye[] = _("Bye-bye!");
 const u8 gText_PlayerScurriedToCenter[] = _("{PLAYER} scurried to a Pokémon Center,\nprotecting the exhausted and fainted\nPokémon from further harm…\p");
-const u8 gText_PlayerScurriedBackHome[] = _("{PLAYER} scurried back home, protecting\nthe exhausted and fainted nPokémon from\nfurther harm…\p");
-const u8 gText_PlayerRegroupCenter[] = _("{PLAYER} went running back to a Pokémon Center\nto regroup and reconsider their battle\lstrategy…\p");
-const u8 gText_PlayerRegroupHome[] = _("{PLAYER} went running back home to regroup\nand reconsider their battle strategy…\p");
+const u8 gText_PlayerScurriedBackHome[] = _("{PLAYER} scurried back home, protecting\nthe exhausted and fainted Pokémon from\nfurther harm…\p");
+const u8 gText_PlayerRegroupCenter[] = _("{PLAYER} scurried to a Pokémon Center,\nto regroup and reconsider the battle\nstrategy…\p");
+const u8 gText_PlayerRegroupHome[] = _("{PLAYER} scurried back home, to regroup\nand reconsider the battle strategy…\p");
 const u8 gText_HatchedFromEgg[] = _("{STR_VAR_1} hatched from the Egg!");
 const u8 gText_NicknameHatchPrompt[] = _("Would you like to nickname the newly\nhatched {STR_VAR_1}?");
 ALIGNED(4) const u8 gText_ReadyPickBerry[] = _("Are you ready to Berry-Crush?\nPlease pick a Berry for use.\p");

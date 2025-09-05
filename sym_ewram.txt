@@ -152,7 +152,6 @@
 	.include "src/debug.o"
 	.include "src/battle_controller_player.o"
 	.include "src/pokedex_plus_hgss.o"
-	.include "src/sound_check_menu.o"
 	.include "src/dexnav.o"
 	.include "src/option_plus_menu.o"
 	.include "src/mugshot.o"

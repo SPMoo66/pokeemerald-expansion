@@ -719,6 +719,8 @@ enum BattleEnvironments BattleSetup_GetEnvironmentId(void)
 
     tileBehavior = MapGridGetMetatileBehaviorAt(x, y);
 
+    if (gMapHeader.regionMapSectionId == MAPSEC_FLURRY_PEAK)
+        return BATTLE_ENVIRONMENT_SNOW;
     if (MetatileBehavior_IsTallGrass(tileBehavior))
         return BATTLE_ENVIRONMENT_GRASS;
     if (MetatileBehavior_IsLongGrass(tileBehavior))

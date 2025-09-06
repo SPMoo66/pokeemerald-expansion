@@ -282,6 +282,11 @@ extern const u16 gBattleEnvironmentPalette_StadiumPhoebe[];
 extern const u16 gBattleEnvironmentPalette_StadiumGlacia[];
 extern const u16 gBattleEnvironmentPalette_StadiumDrake[];
 extern const u16 gBattleEnvironmentPalette_StadiumWallace[];
+extern const u32 gBattleEnvironmentTiles_Snow[];
+extern const u32 gBattleEnvironmentTilemap_Snow[];
+extern const u32 gBattleEnvironmentAnimTiles_Snow[];
+extern const u32 gBattleEnvironmentAnimTilemap_Snow[];
+extern const u16 gBattleEnvironmentPalette_Snow[];
 
 // Pokédex
 extern const u32 gPokedexInterface_Gfx[];
@@ -2721,6 +2726,8 @@ extern const u32 gBattleAnimSpriteGfx_MegaParticles[];
 extern const u16 gBattleAnimSpritePal_MegaParticles[];
 extern const u32 gBattleAnimSpriteGfx_MegaSymbol[];
 extern const u16 gBattleAnimSpritePal_MegaSymbol[];
+extern const u32 gBattleAnimSpriteGfx_TeraSymbol[];
+extern const u16 gBattleAnimSpritePal_TeraSymbol[];
 extern const u32 gBattleAnimSpriteGfx_FlashCannonBall[];
 extern const u16 gBattleAnimSpritePal_FlashCannonBall[];
 extern const u32 gBattleAnimSpriteGfx_WaterGun[];
@@ -2733,6 +2740,12 @@ extern const u32 gBattleAnimSpriteGfx_TeraCrystal[];
 extern const u16 gBattleAnimSpritePal_TeraCrystal[];
 extern const u32 gBattleAnimSpriteGfx_TeraShatter[];
 extern const u16 gBattleAnimSpritePal_TeraShatter[];
+extern const u32 gBattleAnimSpriteGfx_TatsugiriCurly[];
+extern const u16 gBattleAnimSpritePal_TatsugiriCurly[];
+extern const u32 gBattleAnimSpriteGfx_TatsugiriDroopy[];
+extern const u16 gBattleAnimSpritePal_TatsugiriDroopy[];
+extern const u32 gBattleAnimSpriteGfx_TatsugiriStretchy[];
+extern const u16 gBattleAnimSpritePal_TatsugiriStretchy[];
 
 // New Battle Anim Particles
 extern const u32 gBattleAnimSpriteGfx_AlphaStone[];

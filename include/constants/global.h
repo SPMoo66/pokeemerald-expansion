@@ -63,11 +63,6 @@
 #define SECRET_BASES_COUNT 4
 #define POKE_NEWS_COUNT 8
 #define PC_ITEMS_COUNT 40
-#define BAG_ITEMS_COUNT 70
-#define BAG_KEYITEMS_COUNT 38
-#define BAG_POKEBALLS_COUNT 28
-#define BAG_TMHM_COUNT 128
-#define BAG_BERRIES_COUNT 68
 #define OBJECT_EVENT_TEMPLATES_COUNT 64
 #define DECOR_MAX_SECRET_BASE 16
 #define DECOR_MAX_PLAYERS_HOUSE 10
@@ -81,6 +76,13 @@
 #define PYRAMID_BAG_ITEMS_COUNT 10
 #define MAX_REGISTERED_ITEMS 4
 #define ROAMER_COUNT 1 // Number of maximum concurrent active roamers
+
+// Bag constants
+#define BAG_ITEMS_COUNT 70
+#define BAG_KEYITEMS_COUNT 38
+#define BAG_POKEBALLS_COUNT 28
+#define BAG_TMHM_COUNT 128
+#define BAG_BERRIES_COUNT 68
 
 // Number of facilities for Ranking Hall.
 // 7 facilities for single mode + tower double mode + tower multi mode.
@@ -202,9 +204,6 @@
 #define CONNECTION_EAST     4
 #define CONNECTION_DIVE     5
 #define CONNECTION_EMERGE   6
-
-#define SLOW_MOVEMENT_ON_STAIRS         FALSE
-#define FOLLOW_ME_IMPLEMENTED           FALSE    //for stairs movement. see ObjectMovingOnRockStairs in src/field_player_avatar.c
 
 #if TESTING
 #include "config/test.h"

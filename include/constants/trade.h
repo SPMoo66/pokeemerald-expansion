@@ -5,10 +5,13 @@
 #define TRADE_PARTNER 1
 
 // In-game Trade IDs
-#define INGAME_TRADE_FRIGIBAX   0
-#define INGAME_TRADE_BOMBIRDIER 1
-#define INGAME_TRADE_SKARMORY_F 2
-#define INGAME_TRADE_FLOETTE    3
+enum InGameTradeID
+{
+    INGAME_TRADE_FRIGIBAX,
+    INGAME_TRADE_BOMBIRDIER,
+    INGAME_TRADE_SKARMORY_F,
+    INGAME_TRADE_FLOETTE,
+};
 
 // Return values for CanTradeSelectedMon and CanSpinTradeMon
 #define CAN_TRADE_MON              0

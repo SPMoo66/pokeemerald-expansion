@@ -5215,6 +5215,15 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .iconPalIndex = 2,
         SHADOW(-2, 10, SHADOW_SIZE_L)
         FOOTPRINT(Mimikyu)
+        OVERWORLD(
+            sPicTable_MimikyuDisguised,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_MimikyuDisguised,
+            gShinyOverworldPalette_MimikyuDisguised
+        )
         .levelUpLearnset = sMimikyuEmeribianLevelUpLearnset,
         .teachableLearnset = sMimikyuEmeribianTeachableLearnset,
         .isEmeribianForm = TRUE,

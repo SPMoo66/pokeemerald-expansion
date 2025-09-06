@@ -1889,6 +1889,15 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconPalIndex = 0,
         SHADOW(2, -1, SHADOW_SIZE_S)
         FOOTPRINT(Shinx)
+        OVERWORLD(
+            sPicTable_Shinx,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Shinx,
+            gShinyOverworldPalette_Shinx
+        )
         .levelUpLearnset = sShinxEmeribianLevelUpLearnset,
         .teachableLearnset = sShinxEmeribianTeachableLearnset,
         .eggMoveLearnset = sShinxEmeribianEggMoveLearnset,
@@ -1949,6 +1958,15 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconPalIndex = 0,
         SHADOW(-2, 7, SHADOW_SIZE_M)
         FOOTPRINT(Luxio)
+        OVERWORLD(
+            sPicTable_Luxio,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Luxio,
+            gShinyOverworldPalette_Luxio
+        )
         .levelUpLearnset = sLuxioEmeribianLevelUpLearnset,
         .teachableLearnset = sLuxioEmeribianTeachableLearnset,
         .formSpeciesIdTable = sLuxioFormSpeciesIdTable,
@@ -2018,6 +2036,15 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconPalIndex = 0,
         SHADOW(0, 8, SHADOW_SIZE_L)
         FOOTPRINT(Luxray)
+        OVERWORLD(
+            sPicTable_Luxray,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Luxray,
+            gShinyOverworldPalette_Luxray
+        )
         .levelUpLearnset = sLuxrayEmeribianLevelUpLearnset,
         .teachableLearnset = sLuxrayEmeribianTeachableLearnset,
         .formSpeciesIdTable = sLuxrayFormSpeciesIdTable,
@@ -3946,6 +3973,15 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconPalIndex = 2,
         SHADOW(2, 13, SHADOW_SIZE_S)
         FOOTPRINT(Drifloon)
+        OVERWORLD(
+            sPicTable_Drifloon,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Drifloon,
+            gShinyOverworldPalette_Drifloon
+        )
         .levelUpLearnset = sDrifloonEmeribianLevelUpLearnset,
         .teachableLearnset = sDrifloonEmeribianTeachableLearnset,
         .isEmeribianForm = TRUE,
@@ -4006,6 +4042,15 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconPalIndex = 2,
         SHADOW(-2, 9, SHADOW_SIZE_L)
         FOOTPRINT(Drifblim)
+        OVERWORLD(
+            sPicTable_Drifblim,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Drifblim,
+            gShinyOverworldPalette_Drifblim
+        )
         .levelUpLearnset = sDrifblimEmeribianLevelUpLearnset,
         .teachableLearnset = sDrifblimEmeribianTeachableLearnset,
         .isEmeribianForm = TRUE,
@@ -4280,6 +4325,15 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconPalIndex = 2,
         SHADOW(-1, 9, SHADOW_SIZE_S)
         FOOTPRINT(Buneary)
+        OVERWORLD(
+            sPicTable_Buneary,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Buneary,
+            gShinyOverworldPalette_Buneary
+        )
         .levelUpLearnset = sBunearyEmeribianLevelUpLearnset,
         .teachableLearnset = sBunearyEmeribianTeachableLearnset,
         .isEmeribianForm = TRUE,
@@ -4342,6 +4396,15 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconPalIndex = 2,
         SHADOW(1, 12, SHADOW_SIZE_M)
         FOOTPRINT(Lopunny)
+        OVERWORLD(
+            sPicTable_Lopunny,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Lopunny,
+            gShinyOverworldPalette_Lopunny
+        )
         .levelUpLearnset = sLopunnyEmeribianLevelUpLearnset,
         .teachableLearnset = sLopunnyEmeribianTeachableLearnset,
         .isEmeribianForm = TRUE,

@@ -872,5 +872,5 @@ const struct Tileset gTileset_CaveExp1 =
     .palettes = gTilesetPalettes_CaveExp1,
     .metatiles = gMetatiles_CaveExp1,
     .metatileAttributes = gMetatileAttributes_CaveExp1,
-    .callback = NULL,
+    .callback = InitTilesetAnim_CaveExp1,
 };

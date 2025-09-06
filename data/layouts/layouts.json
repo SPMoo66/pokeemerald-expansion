@@ -1888,11 +1888,11 @@
     {
       "id": "LAYOUT_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP1",
       "name": "CaveOfOrigin_UnusedRubySapphireMap1_Layout",
-      "width": 1,
-      "height": 1,
+      "width": 14,
+      "height": 10,
       "border_width": 2,
       "border_height": 2,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_CaveExp1",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/CaveOfOrigin_UnusedRubySapphireMap1/border.bin",
       "blockdata_filepath": "data/layouts/CaveOfOrigin_UnusedRubySapphireMap1/map.bin"

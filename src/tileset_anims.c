@@ -1229,3 +1229,40 @@ void InitTilesetAnim_Beach(void)
     sPrimaryTilesetAnimCounterMax = 256;
     sPrimaryTilesetAnimCallback = TilesetAnim_Beach;
 }
+
+const u16 gTilesetAnims_CaveExp1_Water_Frame0[] = INCBIN_U16("data/tilesets/primary/cave_exp_1/anim/water/0.4bpp");
+const u16 gTilesetAnims_CaveExp1_Water_Frame1[] = INCBIN_U16("data/tilesets/primary/cave_exp_1/anim/water/1.4bpp");
+const u16 gTilesetAnims_CaveExp1_Water_Frame2[] = INCBIN_U16("data/tilesets/primary/cave_exp_1/anim/water/2.4bpp");
+const u16 gTilesetAnims_CaveExp1_Water_Frame3[] = INCBIN_U16("data/tilesets/primary/cave_exp_1/anim/water/3.4bpp");
+const u16 gTilesetAnims_CaveExp1_Water_Frame4[] = INCBIN_U16("data/tilesets/primary/cave_exp_1/anim/water/4.4bpp");
+
+const u16 *const gTilesetAnims_CaveExp1_Water[] = {
+    gTilesetAnims_CaveExp1_Water_Frame0,
+    gTilesetAnims_CaveExp1_Water_Frame1,
+    gTilesetAnims_CaveExp1_Water_Frame2,
+    gTilesetAnims_CaveExp1_Water_Frame3,
+    gTilesetAnims_CaveExp1_Water_Frame4,
+    gTilesetAnims_CaveExp1_Water_Frame3,
+    gTilesetAnims_CaveExp1_Water_Frame2,
+    gTilesetAnims_CaveExp1_Water_Frame1
+};
+
+static void QueueAnimTiles_CaveExp1_Water(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_CaveExp1_Water);
+    AppendTilesetAnimToBuffer(gTilesetAnims_CaveExp1_Water[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(1)), 24 * TILE_SIZE_4BPP);
+}
+
+static void TilesetAnim_CaveExp1(u16 timer)
+{
+    if (timer % 16 == 1) {
+        QueueAnimTiles_CaveExp1_Water(timer / 16);
+    }
+}
+
+void InitTilesetAnim_CaveExp1(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_CaveExp1;
+}

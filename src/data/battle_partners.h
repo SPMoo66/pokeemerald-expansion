@@ -17,6 +17,7 @@
         .trainerBackPic = TRAINER_BACK_PIC_STEVEN,
         .trainerName = _("Steven"),
         .items = {ITEM_MEGA_RING},
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING,
     },
 
     [DIFFICULTY_NORMAL][PARTNER_MAY_METEOR_FALLS] =
@@ -26,6 +27,7 @@
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerBackPic = TRAINER_BACK_PIC_MAY,
         .trainerName = _("May"),
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     },
 
     [DIFFICULTY_NORMAL][PARTNER_BRENDAN_METEOR_FALLS] =
@@ -35,6 +37,7 @@
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerBackPic = TRAINER_BACK_PIC_BRENDAN,
         .trainerName = _("Brendan"),
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     },
 
     [DIFFICULTY_NORMAL][PARTNER_RAYQUAZA] =
@@ -44,6 +47,7 @@
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerBackPic = TRAINER_BACK_PIC_BLANK,
         .trainerName = _("Rayquaza"),
+        .aiFlags = AI_FLAG_SMART_TRAINER,
     },
 
     [DIFFICULTY_NORMAL][PARTNER_STEVEN_GRANITE_CAVE] =
@@ -53,5 +57,6 @@
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerBackPic = TRAINER_BACK_PIC_STEVEN,
         .trainerName = _("Steven"),
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     },
 

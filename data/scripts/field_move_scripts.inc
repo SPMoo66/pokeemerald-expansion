@@ -378,9 +378,8 @@ Text_FailSweetScent:
 
 EventScript_UseRockClimb::
 	lockall
-	checkitem ITEM_HM08
-	compare VAR_RESULT, FALSE
-	goto_if_eq EventScript_CantRockClimb
+	checkitem ITEM_HM05
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CantRockClimb
 	bufferpartymonnick 0, VAR_RESULT
 	setfieldeffectargument 0, VAR_RESULT
 	dofieldeffect FLDEFF_USE_ROCK_CLIMB
@@ -389,6 +388,8 @@ EventScript_UseRockClimb::
 	
 EventScript_CantRockClimb::
 	msgbox Text_CantRockClimb, MSGBOX_DEFAULT
+	releaseall
+	end
 	
 EventScript_EndRockClimb::
 	releaseall

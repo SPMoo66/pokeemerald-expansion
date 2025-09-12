@@ -632,6 +632,9 @@
 
 // gMapGroup_Exp1Interiors
 
-#define MAP_GROUPS_COUNT 35
+// gMapGroup_Exp1Exteriors
+#define MAP_MAUVE_CAMP (0 | (35 << 8))
+
+#define MAP_GROUPS_COUNT 36
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

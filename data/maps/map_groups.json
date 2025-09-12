@@ -34,7 +34,8 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
-    "gMapGroup_Exp1Interiors"
+    "gMapGroup_Exp1Interiors",
+    "gMapGroup_Exp1Exteriors"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -657,5 +658,8 @@
   "gMapGroup_IndoorRoute124": [
     "Route124_DivingTreasureHuntersHouse"
   ],
-  "gMapGroup_Exp1Interiors": []
+  "gMapGroup_Exp1Interiors": [],
+  "gMapGroup_Exp1Exteriors": [
+    "MauveCamp"
+  ]
 }

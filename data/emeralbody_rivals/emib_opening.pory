@@ -27,13 +27,8 @@ script Intro_EmibOpening {
 	speakername (CommonText_Feed)
 	msgbox( format(	"Harper posted a meme.\p"
 					"“New job, who this”\p"
-					"An image of a dog wearing sunglasses is affixed.\p"
-					"EMOTE: Cheering skeleton\n"
-					"EMOTE: Praying for good fortune."))
-	closemessage
-	delay (16)
-	msgbox(	"Keep scrolling?", MSGBOX_YESNO)
-	speakername (CommonText_Feed)
+					"An image of a dog wearing sunglasses is affixed."))
+	dynmultichoice(0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "EMOTE: Cheering skeleton", "EMOTE: Praying for good fortune", "Ignore and keep scrolling")
 	msgbox( format(	"Baron posted\n"
 					"“Nostalgic Pokémon Personality Quiz for the Soul”"))
 	closemessage
@@ -253,12 +248,13 @@ script InsideOfTruck_EventScript_MovingBox2 {
 		else {
 			msgbox ("Valid code not entered.")
 		}
+		setvar (VAR_RESULT, 0)
+		warpsilent (MAP_INSIDE_OF_TRUCK, 2, 2)
 	}
 	else {
 		msgbox (InsideOfTruck_Text_BoxPrintedWithMonLogo, MSGBOX_SIGN)
 		setflag (FLAG_TEMP_5)
 	}
-	setvar (VAR_RESULT, 0)
 	release
 }
 

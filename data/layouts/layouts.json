@@ -5712,6 +5712,18 @@
       "secondary_tileset": "gTileset_Camp",
       "border_filepath": "data/layouts/MauveCamp/border.bin",
       "blockdata_filepath": "data/layouts/MauveCamp/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAUVE_ISLAND_SOUTH",
+      "name": "MauveIslandSouth_Layout",
+      "width": 40,
+      "height": 35,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Beach",
+      "secondary_tileset": "gTileset_Camp",
+      "border_filepath": "data/layouts/MauveIslandSouth/border.bin",
+      "blockdata_filepath": "data/layouts/MauveIslandSouth/map.bin"
     }
   ]
 }

@@ -635,6 +635,7 @@
 // gMapGroup_Exp1Exteriors
 #define MAP_MAUVE_CAMP         (0 | (35 << 8))
 #define MAP_MAUVE_ISLAND_SOUTH (1 | (35 << 8))
+#define MAP_MAUVE_ISLAND_WEST  (2 | (35 << 8))
 
 #define MAP_GROUPS_COUNT 36
 

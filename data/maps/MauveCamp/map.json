@@ -3,7 +3,7 @@
   "name": "MauveCamp",
   "layout": "LAYOUT_MAUVE_CAMP",
   "music": "MUS_DP_CREDITS",
-  "region_map_section": "MAPSEC_ROUTE_10",
+  "region_map_section": "MAPSEC_MAUVE_CAMP",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_TOWN",

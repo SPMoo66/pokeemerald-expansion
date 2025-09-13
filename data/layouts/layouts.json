@@ -5716,8 +5716,8 @@
     {
       "id": "LAYOUT_MAUVE_ISLAND_SOUTH",
       "name": "MauveIslandSouth_Layout",
-      "width": 40,
-      "height": 35,
+      "width": 46,
+      "height": 37,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Beach",
@@ -5728,7 +5728,7 @@
     {
       "id": "LAYOUT_MAUVE_ISLAND_WEST",
       "name": "MauveIslandWest_Layout",
-      "width": 32,
+      "width": 34,
       "height": 34,
       "border_width": 2,
       "border_height": 2,

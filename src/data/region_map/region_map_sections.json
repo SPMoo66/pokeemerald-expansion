@@ -876,24 +876,24 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_ROUTE_10",
-      "name": "Route 10",
+      "id": "MAPSEC_MAUVE_CAMP",
+      "name": "Mauve Island Camp",
       "x": 13,
       "y": 5,
       "width": 2,
       "height": 2
     },
     {
-      "id": "MAPSEC_ROUTE_11",
-      "name": "Route 11",
+      "id": "MAPSEC_MAUVE_ISLAND_SOUTH",
+      "name": "Mauve Island",
       "x": 13,
       "y": 7,
-      "width": 2,
-      "height": 1
+      "width": 3,
+      "height": 2
     },
     {
-      "id": "MAPSEC_ROUTE_12",
-      "name": "Route 12",
+      "id": "MAPSEC_MAUVE_ISLAND_WEST",
+      "name": "Mauve Island",
       "x": 11,
       "y": 5,
       "width": 2,

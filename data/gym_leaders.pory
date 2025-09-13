@@ -693,7 +693,7 @@ script PetalburgCity_Gym_EventScript_NormanRematch {
 	setflag (FLAG_CHALLENGING_TRAINER)
 	trainerbattle_rematch_double (TRAINER_NORMAN_1, PetalburgCity_Gym_Text_NormanPreRematch, PetalburgCity_Gym_Text_NormanRematchDefeat, PetalburgCity_Gym_Text_NormanRematchNeedTwoMons)
 	msgbox (PetalburgCity_Gym_Text_NormanPostRematch, MSGBOX_AUTOCLOSE)
-	setflag (FLAG_CHALLENGING_TRAINER)
+	clearflag (FLAG_CHALLENGING_TRAINER)
 }
 
 script PetalburgCity_Gym_EventScript_NoAmountOfTrainingIsEnough {
@@ -1168,6 +1168,7 @@ script SootopolisCity_Gym_1F_EventScript_JuanDefeated {
 	delay (30)
 	setflag (FLAG_ENABLE_JUAN_MATCH_CALL)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 15)
+	clearflag (FLAG_CHALLENGING_TRAINER)
 	release
 }
 

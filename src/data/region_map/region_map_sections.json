@@ -880,16 +880,24 @@
       "name": "Route 10",
       "x": 13,
       "y": 5,
-      "width": 1,
-      "height": 1
+      "width": 2,
+      "height": 2
     },
     {
       "id": "MAPSEC_ROUTE_11",
-      "name": "Route 11"
+      "name": "Route 11",
+      "x": 13,
+      "y": 7,
+      "width": 2,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_12",
-      "name": "Route 12"
+      "name": "Route 12",
+      "x": 11,
+      "y": 5,
+      "width": 2,
+      "height": 2
     },
     {
       "id": "MAPSEC_ROUTE_13",

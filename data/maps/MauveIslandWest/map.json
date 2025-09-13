@@ -3,7 +3,7 @@
   "name": "MauveIslandWest",
   "layout": "LAYOUT_MAUVE_ISLAND_WEST",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ROUTE_11",
+  "region_map_section": "MAPSEC_ROUTE_12",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",

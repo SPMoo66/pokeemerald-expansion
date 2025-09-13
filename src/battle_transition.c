@@ -1511,7 +1511,7 @@ static bool8 Rocket_SetGfx(struct Task *task)
     u16 *tilemap, *tileset;
 
     GetBg0TilesDst(&tilemap, &tileset);
-    LZ77UnCompVram(sTeamRocket_Tilemap, tilemap);
+    DecompressDataWithHeaderVram(sTeamRocket_Tilemap, tilemap);
     SetSinWave((s16*)gScanlineEffectRegBuffers[0], 0, task->tSinIndex, 132, task->tAmplitude, DISPLAY_HEIGHT);
 
     task->tState++;

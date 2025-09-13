@@ -277,7 +277,7 @@ static const u32 sTeamMagma_Tileset[] = INCBIN_U32("graphics/battle_transitions/
 static const u32 sTeamMagma_Tilemap[] = INCBIN_U32("graphics/battle_transitions/team_magma.bin.smolTM");
 static const u16 sTeamRocket_Palette[] = INCBIN_U16("graphics/battle_transitions/team_rocket.gbapal");
 static const u32 sTeamRocket_Tileset[] = INCBIN_U32("graphics/battle_transitions/team_rocket.4bpp.smol");
-static const u32 sTeamRocket_Tilemap[] = INCBIN_U32("graphics/battle_transitions/team_rocket.bin.smol");
+static const u32 sTeamRocket_Tilemap[] = INCBIN_U32("graphics/battle_transitions/team_rocket.bin.smolTM");
 static const u32 sRegis_Tileset[] = INCBIN_U32("graphics/battle_transitions/regis.4bpp");
 static const u16 sRegice_Palette[] = INCBIN_U16("graphics/battle_transitions/regice.gbapal");
 static const u16 sRegisteel_Palette[] = INCBIN_U16("graphics/battle_transitions/registeel.gbapal");
@@ -1499,7 +1499,7 @@ static bool8 Rocket_Init(struct Task *task)
     InitPatternWeaveTransition(task);
     GetBg0TilesDst(&tilemap, &tileset);
     CpuFill16(0, tilemap, BG_SCREEN_SIZE);
-    LZ77UnCompVram(sTeamRocket_Tileset, tileset);
+    DecompressDataWithHeaderVram(sTeamRocket_Tileset, tileset);
     LoadPalette(sTeamRocket_Palette, BG_PLTT_ID(15), sizeof(sTeamRocket_Palette));
 
     task->tState++;

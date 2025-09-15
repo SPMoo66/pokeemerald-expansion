@@ -16795,8 +16795,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sMimeJrLevelUpLearnset,
         .teachableLearnset = sMimeJrTeachableLearnset,
         .eggMoveLearnset = sMimeJrEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_MR_MIME},
-                                {EVO_LEVEL, 20, SPECIES_MR_MIME_GALAR, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_ICE})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_MR_MIME_GALAR, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_ICE})},
+                                {EVO_LEVEL, 20, SPECIES_MR_MIME}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 

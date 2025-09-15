@@ -139,8 +139,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sBayleefLevelUpLearnset,
         .teachableLearnset = sBayleefTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_MEGANIUM},
-                                {EVO_LEVEL, 32, SPECIES_MEGANIUM_EMERIBIAN, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_DRAGON})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_MEGANIUM_EMERIBIAN, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_DRAGON})},
+                                {EVO_LEVEL, 32, SPECIES_MEGANIUM}),
     },
 
     [SPECIES_MEGANIUM] =
@@ -501,9 +501,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sQuilavaLevelUpLearnset,
         .teachableLearnset = sQuilavaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION},
-                                {EVO_LEVEL, 36, SPECIES_TYPHLOSION_HISUI, CONDITIONS({IF_KNOWS_MOVE, MOVE_HEX})},
-                                {EVO_LEVEL, 36, SPECIES_TYPHLOSION_EMERIBIAN, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_ELECTRIC})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION_HISUI, CONDITIONS({IF_KNOWS_MOVE, MOVE_HEX})},
+                                {EVO_LEVEL, 36, SPECIES_TYPHLOSION_EMERIBIAN, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_ELECTRIC})},
+                                {EVO_LEVEL, 36, SPECIES_TYPHLOSION}),
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -916,8 +916,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sCroconawLevelUpLearnset,
         .teachableLearnset = sCroconawTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_FERALIGATR},
-                                {EVO_LEVEL, 30, SPECIES_FERALIGATR_EMERIBIAN, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_STEEL})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_FERALIGATR_EMERIBIAN, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_STEEL})},
+                                {EVO_LEVEL, 30, SPECIES_FERALIGATR}),
     },
 
     [SPECIES_FERALIGATR] =
@@ -1292,8 +1292,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sHoothootLevelUpLearnset,
         .teachableLearnset = sHoothootTeachableLearnset,
         .eggMoveLearnset = sHoothootEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_NOCTOWL},
-                                {EVO_LEVEL, 22, SPECIES_NOCTOWL_EMERIBIAN, CONDITIONS({IF_KNOWS_MOVE, MOVE_TORMENT})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_NOCTOWL_EMERIBIAN, CONDITIONS({IF_KNOWS_MOVE, MOVE_TORMENT})},
+                                {EVO_LEVEL, 22, SPECIES_NOCTOWL}),
     },
 
     [SPECIES_NOCTOWL] =

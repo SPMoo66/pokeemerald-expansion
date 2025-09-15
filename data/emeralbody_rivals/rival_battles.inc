@@ -36,7 +36,7 @@ Harper_Battle02_1:
 # 29 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 30 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle02_HarperText_PostBattle
+	msgbox Battle02_HarperText_PostBattle, MSGBOX_DEFAULT
 # 31 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 32 "data/emeralbody_rivals/rival_battles.pory"
@@ -112,7 +112,7 @@ Harper_Battle03_1:
 # 68 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 69 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle03_HarperText_PostBattle
+	msgbox Battle03_HarperText_PostBattle, MSGBOX_DEFAULT
 # 70 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 71 "data/emeralbody_rivals/rival_battles.pory"
@@ -174,7 +174,7 @@ Harper_Battle04_1:
 # 96 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 97 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle04_HarperText_PostBattle
+	msgbox Battle04_HarperText_PostBattle, MSGBOX_DEFAULT
 # 98 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 99 "data/emeralbody_rivals/rival_battles.pory"
@@ -246,7 +246,7 @@ Sakura_Battle02_1:
 # 139 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 140 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle02_SakuraText_PostBattle
+	msgbox Battle02_SakuraText_PostBattle, MSGBOX_DEFAULT
 # 141 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 142 "data/emeralbody_rivals/rival_battles.pory"
@@ -284,7 +284,7 @@ Sakura_Battle03::
 # 160 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 161 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle03_SakuraText_PostBattle
+	msgbox Battle03_SakuraText_PostBattle, MSGBOX_DEFAULT
 # 162 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 163 "data/emeralbody_rivals/rival_battles.pory"
@@ -357,7 +357,7 @@ Sakura_Battle04::
 # 196 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 197 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle04_SakuraText_PostBattle
+	msgbox Battle04_SakuraText_PostBattle, MSGBOX_DEFAULT
 # 198 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 199 "data/emeralbody_rivals/rival_battles.pory"
@@ -435,7 +435,7 @@ Redd_Battle02_3:
 # 259 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 260 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle02_ReddText_PostBattle
+	msgbox Battle02_ReddText_PostBattle, MSGBOX_DEFAULT
 # 261 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 262 "data/emeralbody_rivals/rival_battles.pory"
@@ -552,7 +552,7 @@ Redd_Battle03_7:
 # 309 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 310 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle03_ReddText_PostBattle
+	msgbox Battle03_ReddText_PostBattle, MSGBOX_DEFAULT
 # 311 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 312 "data/emeralbody_rivals/rival_battles.pory"
@@ -641,7 +641,7 @@ Redd_Battle04_5:
 # 355 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 356 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle04_ReddText_PostBattle1
+	msgbox Battle04_ReddText_PostBattle1, MSGBOX_DEFAULT
 # 357 "data/emeralbody_rivals/rival_battles.pory"
 	setvar VAR_0x8004, 1
 # 358 "data/emeralbody_rivals/rival_battles.pory"
@@ -650,10 +650,10 @@ Redd_Battle04_5:
 	compare VAR_0x8006, 75
 	goto_if_ge Redd_Battle04_10
 # 363 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle04_ReddText_PostBattle2a
+	msgbox Battle04_ReddText_PostBattle2a, MSGBOX_DEFAULT
 Redd_Battle04_9:
 # 365 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle04_ReddText_PostBattle3
+	msgbox Battle04_ReddText_PostBattle3, MSGBOX_DEFAULT
 # 366 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 367 "data/emeralbody_rivals/rival_battles.pory"
@@ -739,7 +739,7 @@ Baron_Battle02_3:
 # 406 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 407 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle02_BaronText_PostBattle
+	msgbox Battle02_BaronText_PostBattle, MSGBOX_DEFAULT
 # 408 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 409 "data/emeralbody_rivals/rival_battles.pory"
@@ -823,7 +823,7 @@ Baron_Battle03_5:
 # 448 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 449 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle03_BaronText_PostBattle
+	msgbox Battle03_BaronText_PostBattle, MSGBOX_DEFAULT
 # 450 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 451 "data/emeralbody_rivals/rival_battles.pory"
@@ -912,7 +912,7 @@ Baron_Battle04_5:
 # 482 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 483 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle04_BaronText_PostBattle
+	msgbox Battle04_BaronText_PostBattle, MSGBOX_DEFAULT
 # 484 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 485 "data/emeralbody_rivals/rival_battles.pory"
@@ -976,7 +976,7 @@ Jakson_Battle02_3:
 # 536 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 537 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle02_JaksonText_PostBattle
+	msgbox Battle02_JaksonText_PostBattle, MSGBOX_DEFAULT
 # 538 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 539 "data/emeralbody_rivals/rival_battles.pory"
@@ -1109,7 +1109,7 @@ Jakson_Battle03_3:
 # 577 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 578 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle03_JaksonText_PostBattle
+	msgbox Battle03_JaksonText_PostBattle, MSGBOX_DEFAULT
 # 579 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 580 "data/emeralbody_rivals/rival_battles.pory"
@@ -1173,7 +1173,7 @@ Jakson_Battle04::
 # 609 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 610 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle04_JaksonText_PostBattle
+	msgbox Battle04_JaksonText_PostBattle, MSGBOX_DEFAULT
 # 611 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 612 "data/emeralbody_rivals/rival_battles.pory"
@@ -1304,7 +1304,7 @@ Jakson_Battle05_1:
 # 684 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalForNameBox
 # 685 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle05_JaksonText_PostBattle
+	msgbox Battle05_JaksonText_PostBattle, MSGBOX_DEFAULT
 # 686 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 687 "data/emeralbody_rivals/rival_battles.pory"
@@ -1354,14 +1354,26 @@ Harper_Battle05_1:
 # 711 "data/emeralbody_rivals/rival_battles.pory"
 	trainerbattle_no_intro TRAINER_HARPER_5, Battle05_HarperText_BattleVictory
 # 712 "data/emeralbody_rivals/rival_battles.pory"
-	call GetRivalForNameBox
+	applymovement 9, Common_Movement_WalkInPlaceLeft
 # 713 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle05_HarperText_PostBattle
+	waitmovement 0
 # 714 "data/emeralbody_rivals/rival_battles.pory"
-	closemessage
+	call GetRivalForNameBox
 # 715 "data/emeralbody_rivals/rival_battles.pory"
-	applymovement 9, Common_Movement_WalkDown5
+	msgbox Battle05_HarperText_PostBattle, MSGBOX_DEFAULT
 # 716 "data/emeralbody_rivals/rival_battles.pory"
+	closemessage
+# 717 "data/emeralbody_rivals/rival_battles.pory"
+	applymovement 9, Common_Movement_WalkInPlaceUp
+# 718 "data/emeralbody_rivals/rival_battles.pory"
+	waitmovement 0
+# 719 "data/emeralbody_rivals/rival_battles.pory"
+	msgbox Battle05_HarperText_PostBattle2, MSGBOX_DEFAULT
+# 720 "data/emeralbody_rivals/rival_battles.pory"
+	closemessage
+# 721 "data/emeralbody_rivals/rival_battles.pory"
+	applymovement 9, Common_Movement_WalkDown5
+# 722 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
 	return
 
@@ -1372,170 +1384,170 @@ Harper_Battle05_2:
 
 
 Redd_Battle05::
-# 720 "data/emeralbody_rivals/rival_battles.pory"
+# 726 "data/emeralbody_rivals/rival_battles.pory"
 	compare VAR_TEMP_0, 9
 	goto_if_eq Redd_Battle05_2
-# 724 "data/emeralbody_rivals/rival_battles.pory"
+# 730 "data/emeralbody_rivals/rival_battles.pory"
 	setobjectxy 10, 10, 8
 Redd_Battle05_1:
-# 726 "data/emeralbody_rivals/rival_battles.pory"
+# 732 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 10, Common_Movement_WalkUp5
-# 727 "data/emeralbody_rivals/rival_battles.pory"
+# 733 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
-# 728 "data/emeralbody_rivals/rival_battles.pory"
+# 734 "data/emeralbody_rivals/rival_battles.pory"
 	msgbox Battle05_ReddText_PreBattle, MSGBOX_DEFAULT
-# 729 "data/emeralbody_rivals/rival_battles.pory"
+# 735 "data/emeralbody_rivals/rival_battles.pory"
 	setvar VAR_0x8004, 1
-# 730 "data/emeralbody_rivals/rival_battles.pory"
+# 736 "data/emeralbody_rivals/rival_battles.pory"
 	specialvar VAR_RESULT, ScriptGetPokedexInfo
-# 731 "data/emeralbody_rivals/rival_battles.pory"
+# 737 "data/emeralbody_rivals/rival_battles.pory"
 	compare VAR_0x8006, 100
 	goto_if_ge Redd_Battle05_6
-# 735 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle05_ReddText_PreBattle2a
-Redd_Battle05_5:
-# 737 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle05_ReddText_PreBattle3
-# 738 "data/emeralbody_rivals/rival_battles.pory"
-	trainerbattle_no_intro TRAINER_REDD_5, Battle05_ReddText_BattleVictory
-# 739 "data/emeralbody_rivals/rival_battles.pory"
-	call GetRivalForNameBox
-# 740 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle05_ReddText_PostBattle
 # 741 "data/emeralbody_rivals/rival_battles.pory"
-	closemessage
-# 742 "data/emeralbody_rivals/rival_battles.pory"
-	applymovement 10, Common_Movement_WalkDown5
+	msgbox Battle05_ReddText_PreBattle2a, MSGBOX_DEFAULT
+Redd_Battle05_5:
 # 743 "data/emeralbody_rivals/rival_battles.pory"
+	msgbox Battle05_ReddText_PreBattle3, MSGBOX_DEFAULT
+# 744 "data/emeralbody_rivals/rival_battles.pory"
+	trainerbattle_no_intro TRAINER_REDD_5, Battle05_ReddText_BattleVictory
+# 745 "data/emeralbody_rivals/rival_battles.pory"
+	call GetRivalForNameBox
+# 746 "data/emeralbody_rivals/rival_battles.pory"
+	msgbox Battle05_ReddText_PostBattle, MSGBOX_DEFAULT
+# 747 "data/emeralbody_rivals/rival_battles.pory"
+	closemessage
+# 748 "data/emeralbody_rivals/rival_battles.pory"
+	applymovement 10, Common_Movement_WalkDown5
+# 749 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
 	return
 
 Redd_Battle05_2:
-# 721 "data/emeralbody_rivals/rival_battles.pory"
+# 727 "data/emeralbody_rivals/rival_battles.pory"
 	setobjectxy 10, 9, 8
 	goto Redd_Battle05_1
 
 Redd_Battle05_6:
-# 732 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle05_ReddText_PreBattle2b
+# 738 "data/emeralbody_rivals/rival_battles.pory"
+	msgbox Battle05_ReddText_PreBattle2b, MSGBOX_DEFAULT
 	goto Redd_Battle05_5
 
 
 Sakura_Battle05::
-# 747 "data/emeralbody_rivals/rival_battles.pory"
+# 753 "data/emeralbody_rivals/rival_battles.pory"
 	compare VAR_TEMP_0, 9
 	goto_if_eq Sakura_Battle05_2
-# 751 "data/emeralbody_rivals/rival_battles.pory"
+# 757 "data/emeralbody_rivals/rival_battles.pory"
 	setobjectxy 11, 10, 3
 Sakura_Battle05_1:
-# 753 "data/emeralbody_rivals/rival_battles.pory"
-	setfieldeffectargument 0, 1
-# 754 "data/emeralbody_rivals/rival_battles.pory"
-	dofieldeffect FLDEFF_NPCFLY_OUT
-# 755 "data/emeralbody_rivals/rival_battles.pory"
-	waitfieldeffect FLDEFF_NPCFLY_OUT
-# 756 "data/emeralbody_rivals/rival_battles.pory"
-	addobject 11
-# 757 "data/emeralbody_rivals/rival_battles.pory"
-	applymovement 11, Common_Movement_FaceUp
-# 758 "data/emeralbody_rivals/rival_battles.pory"
-	delay 30
 # 759 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle05_SakuraText_PreBattle, MSGBOX_DEFAULT
+	setfieldeffectargument 0, 1
 # 760 "data/emeralbody_rivals/rival_battles.pory"
-	trainerbattle_no_intro TRAINER_SAKURA_5, Battle05_SakuraText_BattleVictory
+	dofieldeffect FLDEFF_NPCFLY_OUT
 # 761 "data/emeralbody_rivals/rival_battles.pory"
-	call GetRivalForNameBox
+	waitfieldeffect FLDEFF_NPCFLY_OUT
 # 762 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle05_SakuraText_PostBattle
+	addobject 11
 # 763 "data/emeralbody_rivals/rival_battles.pory"
-	closemessage
+	applymovement 11, Common_Movement_FaceUp
 # 764 "data/emeralbody_rivals/rival_battles.pory"
-	applymovement 11, Common_Movement_WalkDown5
+	delay 30
 # 765 "data/emeralbody_rivals/rival_battles.pory"
+	msgbox Battle05_SakuraText_PreBattle, MSGBOX_DEFAULT
+# 766 "data/emeralbody_rivals/rival_battles.pory"
+	trainerbattle_no_intro TRAINER_SAKURA_5, Battle05_SakuraText_BattleVictory
+# 767 "data/emeralbody_rivals/rival_battles.pory"
+	call GetRivalForNameBox
+# 768 "data/emeralbody_rivals/rival_battles.pory"
+	msgbox Battle05_SakuraText_PostBattle, MSGBOX_DEFAULT
+# 769 "data/emeralbody_rivals/rival_battles.pory"
+	closemessage
+# 770 "data/emeralbody_rivals/rival_battles.pory"
+	applymovement 11, Common_Movement_WalkDown5
+# 771 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
 	return
 
 Sakura_Battle05_2:
-# 748 "data/emeralbody_rivals/rival_battles.pory"
+# 754 "data/emeralbody_rivals/rival_battles.pory"
 	setobjectxy 11, 9, 3
 	goto Sakura_Battle05_1
 
 
 Baron_Battle05::
-# 769 "data/emeralbody_rivals/rival_battles.pory"
+# 775 "data/emeralbody_rivals/rival_battles.pory"
 	compare VAR_TEMP_0, 9
 	goto_if_eq Baron_Battle05_2
-# 773 "data/emeralbody_rivals/rival_battles.pory"
+# 779 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 12, Common_Movement_WalkLeft5
 Baron_Battle05_1:
-# 775 "data/emeralbody_rivals/rival_battles.pory"
-	waitmovement 0
-# 776 "data/emeralbody_rivals/rival_battles.pory"
-	applymovement 12, Common_Movement_WalkUp
-# 777 "data/emeralbody_rivals/rival_battles.pory"
-	waitmovement 0
-# 778 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle05_BaronText_PreBattle, MSGBOX_DEFAULT
-# 779 "data/emeralbody_rivals/rival_battles.pory"
-	closemessage
-# 780 "data/emeralbody_rivals/rival_battles.pory"
-	applymovement 12, Common_Movement_WalkInPlaceLeft
 # 781 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
 # 782 "data/emeralbody_rivals/rival_battles.pory"
-	delay 20
+	applymovement 12, Common_Movement_WalkUp
 # 783 "data/emeralbody_rivals/rival_battles.pory"
-	applymovement 12, Common_Movement_WalkInPlaceDown
-# 784 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
+# 784 "data/emeralbody_rivals/rival_battles.pory"
+	msgbox Battle05_BaronText_PreBattle, MSGBOX_DEFAULT
 # 785 "data/emeralbody_rivals/rival_battles.pory"
-	delay 40
+	closemessage
 # 786 "data/emeralbody_rivals/rival_battles.pory"
-	applymovement 12, Common_Movement_WalkInPlaceUp
+	applymovement 12, Common_Movement_WalkInPlaceLeft
 # 787 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
 # 788 "data/emeralbody_rivals/rival_battles.pory"
 	delay 20
 # 789 "data/emeralbody_rivals/rival_battles.pory"
-	call GetRivalForNameBox
+	applymovement 12, Common_Movement_WalkInPlaceDown
 # 790 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle05_BaronText_PreBattle2, MSGBOX_DEFAULT
-# 791 "data/emeralbody_rivals/rival_battles.pory"
-	trainerbattle_no_intro TRAINER_BARON_5, Battle05_BaronText_BattleVictory
-# 792 "data/emeralbody_rivals/rival_battles.pory"
-	call GetRivalForNameBox
-# 793 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle05_BaronText_PostBattle
-# 794 "data/emeralbody_rivals/rival_battles.pory"
-	closemessage
-# 795 "data/emeralbody_rivals/rival_battles.pory"
-	applymovement 12, Common_Movement_WalkDown
-# 796 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
+# 791 "data/emeralbody_rivals/rival_battles.pory"
+	delay 40
+# 792 "data/emeralbody_rivals/rival_battles.pory"
+	applymovement 12, Common_Movement_WalkInPlaceUp
+# 793 "data/emeralbody_rivals/rival_battles.pory"
+	waitmovement 0
+# 794 "data/emeralbody_rivals/rival_battles.pory"
+	delay 20
+# 795 "data/emeralbody_rivals/rival_battles.pory"
+	call GetRivalForNameBox
+# 796 "data/emeralbody_rivals/rival_battles.pory"
+	msgbox Battle05_BaronText_PreBattle2, MSGBOX_DEFAULT
 # 797 "data/emeralbody_rivals/rival_battles.pory"
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	trainerbattle_no_intro TRAINER_BARON_5, Battle05_BaronText_BattleVictory
 # 798 "data/emeralbody_rivals/rival_battles.pory"
+	call GetRivalForNameBox
+# 799 "data/emeralbody_rivals/rival_battles.pory"
+	msgbox Battle05_BaronText_PostBattle, MSGBOX_DEFAULT
+# 800 "data/emeralbody_rivals/rival_battles.pory"
+	closemessage
+# 801 "data/emeralbody_rivals/rival_battles.pory"
+	applymovement 12, Common_Movement_WalkDown
+# 802 "data/emeralbody_rivals/rival_battles.pory"
+	waitmovement 0
+# 803 "data/emeralbody_rivals/rival_battles.pory"
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 804 "data/emeralbody_rivals/rival_battles.pory"
 	compare VAR_TEMP_0, 9
 	goto_if_eq Baron_Battle05_6
-# 802 "data/emeralbody_rivals/rival_battles.pory"
+# 808 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 12, Common_Movement_WalkRight5
 Baron_Battle05_5:
-# 804 "data/emeralbody_rivals/rival_battles.pory"
+# 810 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
-# 805 "data/emeralbody_rivals/rival_battles.pory"
+# 811 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 12, Common_Movement_WalkInPlaceUp
-# 806 "data/emeralbody_rivals/rival_battles.pory"
+# 812 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
 	return
 
 Baron_Battle05_2:
-# 770 "data/emeralbody_rivals/rival_battles.pory"
+# 776 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 12, Common_Movement_WalkLeft6
 	goto Baron_Battle05_1
 
 Baron_Battle05_6:
-# 799 "data/emeralbody_rivals/rival_battles.pory"
+# 805 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 12, Common_Movement_WalkRight6
 	goto Baron_Battle05_5
 

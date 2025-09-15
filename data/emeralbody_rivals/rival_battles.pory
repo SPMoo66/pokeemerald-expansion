@@ -27,7 +27,7 @@ script Harper_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_HARPER_2, Battle02_HarperText_BattleVictory)
 		call (GetRivalForNameBox)
-		msgbox(Battle02_HarperText_PostBattle)
+		msgbox(Battle02_HarperText_PostBattle, MSGBOX_DEFAULT)
 		closemessage
 		applymovement (LOCALID_PLAYER, Harper_PlayerMoves)
 		waitmovement (0)
@@ -66,7 +66,7 @@ script Harper_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_HARPER_3, Battle03_HarperText_BattleVictory)
 		call (GetRivalForNameBox)
-		msgbox (Battle03_HarperText_PostBattle)
+		msgbox (Battle03_HarperText_PostBattle, MSGBOX_DEFAULT)
 		closemessage
 		applymovement (HARPER_BATTLE03, Common_Movement_WalkDown5)
 		waitmovement (0)
@@ -94,7 +94,7 @@ script Harper_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_HARPER_4, Battle04_HarperText_BattleVictory)
 		call (GetRivalForNameBox)
-		msgbox (Battle04_HarperText_PostBattle)
+		msgbox (Battle04_HarperText_PostBattle, MSGBOX_DEFAULT)
 		closemessage
 		applymovement (HARPER_BATTLE04, Common_Movement_WalkLeft7)
 		waitmovement (0)
@@ -137,7 +137,7 @@ script Sakura_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_SAKURA_2, Battle02_SakuraText_BattleVictory)
 		call (GetRivalForNameBox)
-		msgbox(Battle02_SakuraText_PostBattle)
+		msgbox(Battle02_SakuraText_PostBattle, MSGBOX_DEFAULT)
 		closemessage
 		applymovement (SAKURA_BATTLE02, Common_Movement_WalkDown5)
 		waitmovement (0)
@@ -158,7 +158,7 @@ script Sakura_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 	setflag (FLAG_CHALLENGING_TRAINER)
 	trainerbattle_no_intro (TRAINER_SAKURA_3, Battle03_SakuraText_BattleVictory)
 	call (GetRivalForNameBox)
-	msgbox(Battle03_SakuraText_PostBattle)
+	msgbox(Battle03_SakuraText_PostBattle, MSGBOX_DEFAULT)
 	closemessage
 	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
 	if (var(VAR_TEMP_1) == 12) { // Standard bottom entrance
@@ -194,7 +194,7 @@ script Sakura_Battle04 {
 	setflag (FLAG_CHALLENGING_TRAINER)
 	trainerbattle_no_intro (TRAINER_SAKURA_4, Battle04_SakuraText_BattleVictory)
 	call (GetRivalForNameBox)
-	msgbox(Battle04_SakuraText_PostBattle)
+	msgbox(Battle04_SakuraText_PostBattle, MSGBOX_DEFAULT)
 	closemessage
 	setfieldeffectargument (0, 1)
 	dofieldeffect (FLDEFF_NPCFLY_OUT)
@@ -257,7 +257,7 @@ script Redd_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_REDD_2, Battle02_ReddText_BattleVictory)
 		call (GetRivalForNameBox)
-		msgbox (Battle02_ReddText_PostBattle)
+		msgbox (Battle02_ReddText_PostBattle, MSGBOX_DEFAULT)
 		closemessage
 		applymovement (REDD_BATTLE02, Common_Movement_WalkUp6)
 		waitmovement (0)
@@ -307,7 +307,7 @@ script Redd_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_REDD_3, Battle03_ReddText_BattleVictory)
 		call (GetRivalForNameBox)
-		msgbox (Battle03_ReddText_PostBattle)
+		msgbox (Battle03_ReddText_PostBattle, MSGBOX_DEFAULT)
 		closemessage
 		applymovement (REDD_BATTLE03, Common_Movement_WalkLeft4)
 		waitmovement (0)
@@ -353,16 +353,16 @@ script Redd_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_REDD_4, Battle04_ReddText_BattleVictory)
 		call (GetRivalForNameBox)
-		msgbox (Battle04_ReddText_PostBattle1)
+		msgbox (Battle04_ReddText_PostBattle1, MSGBOX_DEFAULT)
 		setvar (VAR_0x8004, 1) // This forces the result of the following specialvar to return numbers from the National Dex
 		specialvar (VAR_RESULT, ScriptGetPokedexInfo) // VAR_0x8005 is seen, VAR_0x8006 is caught
 		if (var(VAR_0x8006) >= 75) { // If caught "more than Redd"
 			msgbox (Battle04_ReddText_PostBattle2b)
 		}
 		else { // If caught "less than Redd"
-			msgbox (Battle04_ReddText_PostBattle2a)
+			msgbox (Battle04_ReddText_PostBattle2a, MSGBOX_DEFAULT)
 		}
-		msgbox (Battle04_ReddText_PostBattle3)
+		msgbox (Battle04_ReddText_PostBattle3, MSGBOX_DEFAULT)
 		closemessage
 		fadescreenswapbuffers (FADE_TO_BLACK)
 		removeobject (REDD_BATTLE04)
@@ -404,7 +404,7 @@ script Baron_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_BARON_2, Battle02_BaronText_BattleVictory)
 		call (GetRivalForNameBox)
-		msgbox (Battle02_BaronText_PostBattle)
+		msgbox (Battle02_BaronText_PostBattle, MSGBOX_DEFAULT)
 		closemessage
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
@@ -446,7 +446,7 @@ script Baron_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_BARON_3, Battle03_BaronText_BattleVictory)
 		call (GetRivalForNameBox)
-		msgbox (Battle03_BaronText_PostBattle)
+		msgbox (Battle03_BaronText_PostBattle, MSGBOX_DEFAULT)
 		closemessage
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
@@ -480,7 +480,7 @@ script Baron_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_BARON_4, Battle04_BaronText_BattleVictory)
 		call (GetRivalForNameBox)
-		msgbox (Battle04_BaronText_PostBattle)
+		msgbox (Battle04_BaronText_PostBattle, MSGBOX_DEFAULT)
 		closemessage
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3)
@@ -534,7 +534,7 @@ script Jakson_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_JAKSON_2, Battle02_JaksonText_BattleVictory)
 		call (GetRivalForNameBox)
-		msgbox (Battle02_JaksonText_PostBattle)
+		msgbox (Battle02_JaksonText_PostBattle, MSGBOX_DEFAULT)
 		closemessage
 		fadescreenswapbuffers (FADE_TO_BLACK)
 		removeobject (JAKSON_BATTLE02)
@@ -575,7 +575,7 @@ script Jakson_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 		setflag (FLAG_CHALLENGING_TRAINER)
 		trainerbattle_no_intro (TRAINER_JAKSON_3, Battle03_JaksonText_BattleVictory)
 		call (GetRivalForNameBox)
-		msgbox (Battle03_JaksonText_PostBattle)
+		msgbox (Battle03_JaksonText_PostBattle, MSGBOX_DEFAULT)
 		closemessage
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
 		clearflag (FLAG_CHALLENGING_TRAINER)
@@ -607,7 +607,7 @@ script Jakson_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2,  There are c
 	setflag (FLAG_CHALLENGING_TRAINER)
 	trainerbattle_no_intro (TRAINER_JAKSON_4, Battle04_JaksonText_BattleVictory)
 	call (GetRivalForNameBox)
-	msgbox (Battle04_JaksonText_PostBattle)
+	msgbox (Battle04_JaksonText_PostBattle, MSGBOX_DEFAULT)
 	closemessage
 	setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3)
 	clearflag (FLAG_CHALLENGING_TRAINER)
@@ -682,7 +682,7 @@ script Jakson_Battle05 {
 	msgbox (Battle05_JaksonText_PreBattle2, MSGBOX_DEFAULT)
 	trainerbattle_no_intro (TRAINER_JAKSON_5, Battle05_JaksonText_BattleVictory)
 	call (GetRivalForNameBox)
-	msgbox (Battle05_JaksonText_PostBattle)
+	msgbox (Battle05_JaksonText_PostBattle, MSGBOX_DEFAULT)
 	closemessage
 	applymovement (JAKSON_BATTLE05, Common_Movement_WalkDown)
 	waitmovement (0)
@@ -709,8 +709,14 @@ script Harper_Battle05 {
 	waitmovement (0)
 	msgbox (Battle05_HarperText_PreBattle, MSGBOX_DEFAULT)
 	trainerbattle_no_intro (TRAINER_HARPER_5, Battle05_HarperText_BattleVictory)
+	applymovement (HARPER_BATTLE05, Common_Movement_WalkInPlaceLeft)
+	waitmovement (0)
 	call (GetRivalForNameBox)
-	msgbox (Battle05_HarperText_PostBattle)
+	msgbox (Battle05_HarperText_PostBattle, MSGBOX_DEFAULT)
+	closemessage
+	applymovement (HARPER_BATTLE05, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+	msgbox (Battle05_HarperText_PostBattle2, MSGBOX_DEFAULT)
 	closemessage
 	applymovement (HARPER_BATTLE05, Common_Movement_WalkDown5)
 	waitmovement (0)
@@ -729,15 +735,15 @@ script Redd_Battle05 {
 	setvar (VAR_0x8004, 1) // This forces the result of the following specialvar to return numbers from the National Dex
 	specialvar (VAR_RESULT, ScriptGetPokedexInfo) // VAR_0x8005 is seen, VAR_0x8006 is caught
 	if (var(VAR_0x8006) >= 100) { // If caught "more than Redd"
-		msgbox (Battle05_ReddText_PreBattle2b)
+		msgbox (Battle05_ReddText_PreBattle2b, MSGBOX_DEFAULT)
 	}
 	else { // If caught "less than Redd"
-		msgbox (Battle05_ReddText_PreBattle2a)
+		msgbox (Battle05_ReddText_PreBattle2a, MSGBOX_DEFAULT)
 	}
-	msgbox (Battle05_ReddText_PreBattle3)
+	msgbox (Battle05_ReddText_PreBattle3, MSGBOX_DEFAULT)
 	trainerbattle_no_intro (TRAINER_REDD_5, Battle05_ReddText_BattleVictory)
 	call (GetRivalForNameBox)
-	msgbox (Battle05_ReddText_PostBattle)
+	msgbox (Battle05_ReddText_PostBattle, MSGBOX_DEFAULT)
 	closemessage
 	applymovement (REDD_BATTLE05, Common_Movement_WalkDown5)
 	waitmovement (0)
@@ -759,7 +765,7 @@ script Sakura_Battle05 {
 	msgbox (Battle05_SakuraText_PreBattle, MSGBOX_DEFAULT)
 	trainerbattle_no_intro (TRAINER_SAKURA_5, Battle05_SakuraText_BattleVictory)
 	call (GetRivalForNameBox)
-	msgbox (Battle05_SakuraText_PostBattle)
+	msgbox (Battle05_SakuraText_PostBattle, MSGBOX_DEFAULT)
 	closemessage
 	applymovement (SAKURA_BATTLE05, Common_Movement_WalkDown5)
 	waitmovement (0)
@@ -790,7 +796,7 @@ script Baron_Battle05 {
 	msgbox (Battle05_BaronText_PreBattle2, MSGBOX_DEFAULT)
 	trainerbattle_no_intro (TRAINER_BARON_5, Battle05_BaronText_BattleVictory)
 	call (GetRivalForNameBox)
-	msgbox (Battle05_BaronText_PostBattle)
+	msgbox (Battle05_BaronText_PostBattle, MSGBOX_DEFAULT)
 	closemessage
 	applymovement (BARON_BATTLE05, Common_Movement_WalkDown)
 	waitmovement (0)

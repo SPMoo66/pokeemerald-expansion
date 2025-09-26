@@ -5736,6 +5736,18 @@
       "secondary_tileset": "gTileset_Camp",
       "border_filepath": "data/layouts/MauveIslandWest/border.bin",
       "blockdata_filepath": "data/layouts/MauveIslandWest/map.bin"
+    },
+    {
+      "id": "LAYOUT_FAR_OFF_SEA_WEST",
+      "name": "FarOffSeaWest_Layout",
+      "width": 80,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Beach",
+      "secondary_tileset": "gTileset_OceanExp1",
+      "border_filepath": "data/layouts/FarOffSeaWest/border.bin",
+      "blockdata_filepath": "data/layouts/FarOffSeaWest/map.bin"
     }
   ]
 }

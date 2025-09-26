@@ -17,6 +17,11 @@
       "map": "MAP_MAUVE_CAMP",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_FAR_OFF_SEA_WEST",
+      "offset": 0,
+      "direction": "left"
     }
   ],
   "object_events": [],

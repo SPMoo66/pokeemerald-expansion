@@ -874,3 +874,14 @@ const struct Tileset gTileset_CaveExp1 =
     .metatileAttributes = gMetatileAttributes_CaveExp1,
     .callback = InitTilesetAnim_CaveExp1,
 };
+
+const struct Tileset gTileset_OceanExp1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_OceanExp1,
+    .palettes = gTilesetPalettes_OceanExp1,
+    .metatiles = gMetatiles_OceanExp1,
+    .metatileAttributes = gMetatileAttributes_OceanExp1,
+    .callback = InitTilesetAnim_OceanExp1,
+};

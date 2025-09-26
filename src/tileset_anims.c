@@ -1266,3 +1266,43 @@ void InitTilesetAnim_CaveExp1(void)
     sPrimaryTilesetAnimCounterMax = 256;
     sPrimaryTilesetAnimCallback = TilesetAnim_CaveExp1;
 }
+
+const u16 gTilesetAnims_OceanExp1_WaterCurrents_Frame0[] = INCBIN_U16("data/tilesets/secondary/ocean_exp_1/anim/water_currents/0.4bpp");
+const u16 gTilesetAnims_OceanExp1_WaterCurrents_Frame1[] = INCBIN_U16("data/tilesets/secondary/ocean_exp_1/anim/water_currents/1.4bpp");
+const u16 gTilesetAnims_OceanExp1_WaterCurrents_Frame2[] = INCBIN_U16("data/tilesets/secondary/ocean_exp_1/anim/water_currents/2.4bpp");
+const u16 gTilesetAnims_OceanExp1_WaterCurrents_Frame3[] = INCBIN_U16("data/tilesets/secondary/ocean_exp_1/anim/water_currents/3.4bpp");
+const u16 gTilesetAnims_OceanExp1_WaterCurrents_Frame4[] = INCBIN_U16("data/tilesets/secondary/ocean_exp_1/anim/water_currents/4.4bpp");
+const u16 gTilesetAnims_OceanExp1_WaterCurrents_Frame5[] = INCBIN_U16("data/tilesets/secondary/ocean_exp_1/anim/water_currents/5.4bpp");
+const u16 gTilesetAnims_OceanExp1_WaterCurrents_Frame6[] = INCBIN_U16("data/tilesets/secondary/ocean_exp_1/anim/water_currents/6.4bpp");
+const u16 gTilesetAnims_OceanExp1_WaterCurrents_Frame7[] = INCBIN_U16("data/tilesets/secondary/ocean_exp_1/anim/water_currents/7.4bpp");
+
+const u16 *const gTilesetAnims_OceanExp1_WaterCurrents[] = {
+    gTilesetAnims_OceanExp1_WaterCurrents_Frame0,
+    gTilesetAnims_OceanExp1_WaterCurrents_Frame1,
+    gTilesetAnims_OceanExp1_WaterCurrents_Frame2,
+    gTilesetAnims_OceanExp1_WaterCurrents_Frame3,
+    gTilesetAnims_OceanExp1_WaterCurrents_Frame4,
+    gTilesetAnims_OceanExp1_WaterCurrents_Frame5,
+    gTilesetAnims_OceanExp1_WaterCurrents_Frame6,
+    gTilesetAnims_OceanExp1_WaterCurrents_Frame7
+};
+
+static void QueueAnimTiles_OceanExp1_WaterCurrents(u8 timer)
+{
+    u8 i = timer % ARRAY_COUNT(gTilesetAnims_OceanExp1_WaterCurrents);
+    AppendTilesetAnimToBuffer(gTilesetAnims_OceanExp1_WaterCurrents[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 0)), 8 * TILE_SIZE_4BPP);
+}
+
+static void TilesetAnim_OceanExp1(u16 timer)
+{
+    if (timer % 16 == 1) {
+        QueueAnimTiles_OceanExp1_WaterCurrents(timer / 16);
+    }
+}
+
+void InitTilesetAnim_OceanExp1(void)
+{
+    sSecondaryTilesetAnimCounter = sPrimaryTilesetAnimCounter;
+    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCallback = TilesetAnim_OceanExp1;
+}

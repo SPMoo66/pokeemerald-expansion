@@ -1185,3 +1185,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MauveIslandSouth/scripts.inc"
 
 	.include "data/maps/MauveIslandWest/scripts.inc"
+
+	.include "data/maps/FarOffSeaWest/scripts.inc"

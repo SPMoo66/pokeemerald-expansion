@@ -901,6 +901,14 @@
     },
     {
       "id": "MAPSEC_FAR_OFF_SEA_WEST",
+      "name": "Far-Off Sea",
+      "x": 6,
+      "y": 5,
+      "width": 5,
+      "height": 3
+    },
+    {
+      "id": "MAPSEC_FAR_OFF_SEA_WEST_2",
       "name": "Far-Off Sea"
     },
     {
@@ -908,12 +916,8 @@
       "name": "Far-Off Sea"
     },
     {
-      "id": "MAPSEC_ROUTE_15",
-      "name": "Route 15"
-    },
-    {
-      "id": "MAPSEC_ROUTE_16",
-      "name": "Route 16"
+      "id": "MAPSEC_ILLUSORY_GROTTO",
+      "name": "Illusory Grotto"
     },
     {
       "id": "MAPSEC_ROUTE_17",

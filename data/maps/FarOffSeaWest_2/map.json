@@ -1,9 +1,9 @@
 {
-  "id": "MAP_FAR_OFF_SEA_WEST",
-  "name": "FarOffSeaWest",
-  "layout": "LAYOUT_FAR_OFF_SEA_WEST",
-  "music": "MUS_DP_VS_UXIE_MESPRIT_AZELF",
-  "region_map_section": "MAPSEC_FAR_OFF_SEA_WEST",
+  "id": "MAP_FAR_OFF_SEA_WEST_2",
+  "name": "FarOffSeaWest_2",
+  "layout": "LAYOUT_FAR_OFF_SEA_WEST_2",
+  "music": "MUS_DP_VS_GALACTIC_COMMANDER",
+  "region_map_section": "MAPSEC_FAR_OFF_SEA_WEST_2",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -14,13 +14,13 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_MAUVE_ISLAND_WEST",
+      "map": "MAP_FAR_OFF_SEA_WEST",
       "offset": 0,
       "direction": "right"
     },
     {
-      "map": "MAP_FAR_OFF_SEA_WEST_2",
-      "offset": 0,
+      "map": "MAP_ILLUSORY_GROTTO_EXTERIOR",
+      "offset": 3,
       "direction": "left"
     }
   ],

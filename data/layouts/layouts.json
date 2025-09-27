@@ -5740,14 +5740,38 @@
     {
       "id": "LAYOUT_FAR_OFF_SEA_WEST",
       "name": "FarOffSeaWest_Layout",
-      "width": 80,
-      "height": 40,
+      "width": 90,
+      "height": 60,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Beach",
       "secondary_tileset": "gTileset_OceanExp1",
       "border_filepath": "data/layouts/FarOffSeaWest/border.bin",
       "blockdata_filepath": "data/layouts/FarOffSeaWest/map.bin"
+    },
+    {
+      "id": "LAYOUT_FAR_OFF_SEA_WEST_2",
+      "name": "FarOffSeaWest_2_Layout",
+      "width": 80,
+      "height": 80,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Beach",
+      "secondary_tileset": "gTileset_OceanExp1",
+      "border_filepath": "data/layouts/FarOffSeaWest_2/border.bin",
+      "blockdata_filepath": "data/layouts/FarOffSeaWest_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ILLUSORY_GROTTO_EXTERIOR",
+      "name": "IllusoryGrottoExterior_Layout",
+      "width": 24,
+      "height": 21,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Beach",
+      "secondary_tileset": "gTileset_OceanExp1",
+      "border_filepath": "data/layouts/IllusoryGrottoExterior/border.bin",
+      "blockdata_filepath": "data/layouts/IllusoryGrottoExterior/map.bin"
     }
   ]
 }

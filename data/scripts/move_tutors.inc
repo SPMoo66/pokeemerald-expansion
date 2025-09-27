@@ -268,7 +268,7 @@ FortreeCity_House2_EventScript_BodySlamTutor_1:
 # 132 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_BodySlamWhichMon, MSGBOX_DEFAULT
 # 133 "data/scripts/move_tutors.pory"
-	setvar VAR_0x8005, MOVE_SLEEP_TALK
+	setvar VAR_0x8005, MOVE_BODY_SLAM
 # 134 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 135 "data/scripts/move_tutors.pory"

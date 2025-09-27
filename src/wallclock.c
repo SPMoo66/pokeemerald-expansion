@@ -887,7 +887,7 @@ static void Task_ViewClock_HandleInput(u8 taskId)
         gTasks[taskId].func = Task_ViewClock_FadeOut;
     if (JOY_NEW(R_BUTTON)){
         PlaySE(SE_SELECT);
-        LZ77UnCompVram(gWallClockStart_Tilemap, (u16 *)BG_SCREEN_ADDR(7));
+        DecompressDataWithHeaderVram(gWallClockStart_Tilemap, (u16 *)BG_SCREEN_ADDR(7));
         AddTextPrinterParameterized(1, FONT_NORMAL, gMenuText_Confirm, 0, 1, 0, NULL);
         PutWindowTilemap(1);
         ScheduleBgCopyTilemapToVram(2);

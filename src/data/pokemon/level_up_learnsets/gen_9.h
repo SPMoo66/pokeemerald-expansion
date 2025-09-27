@@ -25700,12 +25700,17 @@ static const struct LevelUpMove sBaxcaliburLevelUpLearnset[] = {
 static const struct LevelUpMove sGimmighoulLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE(10, MOVE_LICK),
+    LEVEL_UP_MOVE(15, MOVE_PAY_DAY),
+    LEVEL_UP_MOVE(39, MOVE_SPLASH),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sGholdengoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_PAY_DAY),
+    LEVEL_UP_MOVE( 1, MOVE_LICK),
     LEVEL_UP_MOVE( 6, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE(12, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE(18, MOVE_SUBSTITUTE),

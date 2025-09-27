@@ -606,7 +606,7 @@ PetalburgCity_Gym_EventScript_NormanRematch::
 # 695 "data/gym_leaders.pory"
 	msgbox PetalburgCity_Gym_Text_NormanPostRematch, MSGBOX_AUTOCLOSE
 # 696 "data/gym_leaders.pory"
-	setflag FLAG_CHALLENGING_TRAINER
+	clearflag FLAG_CHALLENGING_TRAINER
 	return
 
 
@@ -923,22 +923,24 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 # 1170 "data/gym_leaders.pory"
 	setvar VAR_EMERALBODY_RIVAL_STATE, 15
 # 1171 "data/gym_leaders.pory"
+	clearflag FLAG_CHALLENGING_TRAINER
+# 1172 "data/gym_leaders.pory"
 	release
 	return
 
 
 SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge::
-# 1175 "data/gym_leaders.pory"
-	msgbox SootopolisCity_Gym_1F_Text_GoGetFortreeBadge, MSGBOX_DEFAULT
 # 1176 "data/gym_leaders.pory"
+	msgbox SootopolisCity_Gym_1F_Text_GoGetFortreeBadge, MSGBOX_DEFAULT
+# 1177 "data/gym_leaders.pory"
 	release
 	return
 
 
 SootopolisCity_Gym_1F_EventScript_JuanRematch::
-# 1180 "data/gym_leaders.pory"
-	trainerbattle_rematch_double TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanPreRematch, SootopolisCity_Gym_1F_Text_JuanRematchDefeat, SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons
 # 1181 "data/gym_leaders.pory"
+	trainerbattle_rematch_double TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanPreRematch, SootopolisCity_Gym_1F_Text_JuanRematchDefeat, SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons
+# 1182 "data/gym_leaders.pory"
 	msgbox SootopolisCity_Gym_1F_Text_JuanPostRematch, MSGBOX_AUTOCLOSE
 	return
 
@@ -1618,7 +1620,7 @@ MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons::
 	.string "Liza: Two Pokémon when you come back.$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro::
-# 1185 "data/gym_leaders.pory"
+# 1186 "data/gym_leaders.pory"
 	.string "Let me ask you.\n"
 	.string "Did you know?\l"
 	.string "Ah, I should not be so coy.\p"
@@ -1638,7 +1640,7 @@ SootopolisCity_Gym_1F_Text_JuanIntro::
 	.string "by Pokémon and myself!$"
 
 SootopolisCity_Gym_1F_Text_JuanDefeat::
-# 1209 "data/gym_leaders.pory"
+# 1210 "data/gym_leaders.pory"
 	.string "Ahahaha, excellent!\n"
 	.string "Very well, you are the winner.\p"
 	.string "From you, I sense the brilliant shine\n"
@@ -1654,12 +1656,12 @@ SootopolisCity_Gym_1F_Text_JuanDefeat::
 	.string "you with this, the Rain Badge!$"
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge::
-# 1225 "data/gym_leaders.pory"
+# 1226 "data/gym_leaders.pory"
 	.string "{PLAYER} received the Rain Badge\n"
 	.string "from Juan.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis::
-# 1230 "data/gym_leaders.pory"
+# 1231 "data/gym_leaders.pory"
 	.string "Having the Rain Badge shall assure you\n"
 	.string "the full obedience of all your Pokémon\l"
 	.string "to your every command.\p"
@@ -1670,7 +1672,7 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis::
 	.string "battle we shared, take this…$"
 
 SootopolisCity_Gym_1F_Text_ExplainHydroPump::
-# 1241 "data/gym_leaders.pory"
+# 1242 "data/gym_leaders.pory"
 	.string "The Technical Machine I handed you\n"
 	.string "contains Hydro Pump.\p"
 	.string "In use, it will strike twice with\n"
@@ -1678,7 +1680,7 @@ SootopolisCity_Gym_1F_Text_ExplainHydroPump::
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle::
-# 1249 "data/gym_leaders.pory"
+# 1250 "data/gym_leaders.pory"
 	.string "The Trainers who have gathered all\n"
 	.string "the Gym Badges of Hoenn should make\l"
 	.string "way to the ultimate destination.\p"
@@ -1689,7 +1691,7 @@ SootopolisCity_Gym_1F_Text_JuanPostBattle::
 	.string "League.$"
 
 SootopolisCity_Gym_1F_Text_GoGetFortreeBadge::
-# 1260 "data/gym_leaders.pory"
+# 1261 "data/gym_leaders.pory"
 	.string "There remains but one Badge to\n"
 	.string "obtain in Hoenn.\p"
 	.string "If you wish to challenge the Pokémon\n"
@@ -1697,7 +1699,7 @@ SootopolisCity_Gym_1F_Text_GoGetFortreeBadge::
 	.string "Badge from the Gym in Fortree.$"
 
 SootopolisCity_Gym_1F_Text_JuanPreRematch::
-# 1268 "data/gym_leaders.pory"
+# 1269 "data/gym_leaders.pory"
 	.string "Juan: Ah, this Gym had returned to its\n"
 	.string "usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"
@@ -1707,12 +1709,12 @@ SootopolisCity_Gym_1F_Text_JuanPreRematch::
 	.string "as often as you wish!$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchDefeat::
-# 1278 "data/gym_leaders.pory"
+# 1279 "data/gym_leaders.pory"
 	.string "Ahahaha, you are the winner!\n"
 	.string "You have defeated me again!$"
 
 SootopolisCity_Gym_1F_Text_JuanPostRematch::
-# 1283 "data/gym_leaders.pory"
+# 1284 "data/gym_leaders.pory"
 	.string "Juan: If I told you to become my\n"
 	.string "apprentice, you will refuse, I am sure.\p"
 	.string "I would like to make a gift of my coat\n"
@@ -1723,7 +1725,7 @@ SootopolisCity_Gym_1F_Text_JuanPostRematch::
 	.string "of nobility!$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons::
-# 1294 "data/gym_leaders.pory"
+# 1295 "data/gym_leaders.pory"
 	.string "Juan: Ah, this Gym had returned to its\n"
 	.string "usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"

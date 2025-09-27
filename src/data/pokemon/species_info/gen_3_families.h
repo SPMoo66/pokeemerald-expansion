@@ -3819,8 +3819,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sShroomishLevelUpLearnset,
         .teachableLearnset = sShroomishTeachableLearnset,
         .eggMoveLearnset = sShroomishEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_BRELOOM},
-                                {EVO_LEVEL, 23, SPECIES_BRELOOM_FRIBIAN, CONDITIONS({IF_KNOWS_MOVE, MOVE_DIG})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_BRELOOM_FRIBIAN, CONDITIONS({IF_KNOWS_MOVE, MOVE_DIG})},
+                                {EVO_LEVEL, 23, SPECIES_BRELOOM}),
     },
 
     [SPECIES_BRELOOM] =

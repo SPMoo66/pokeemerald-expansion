@@ -130,7 +130,7 @@ script FortreeCity_House2_EventScript_BodySlamTutor {
 		goto (MoveTutor_EventScript_BodySlamDeclined)
 	}
 	msgbox (MoveTutor_Text_BodySlamWhichMon, MSGBOX_DEFAULT)
-	setvar (VAR_0x8005, MOVE_SLEEP_TALK)
+	setvar (VAR_0x8005, MOVE_BODY_SLAM)
 	call (MoveTutor_EventScript_OpenPartyMenu)
 	if (var(VAR_RESULT) == NO) {
 		goto (MoveTutor_EventScript_BodySlamDeclined)

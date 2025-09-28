@@ -633,12 +633,13 @@
 // gMapGroup_Exp1Interiors
 
 // gMapGroup_Exp1Exteriors
-#define MAP_MAUVE_CAMP               (0 | (35 << 8))
-#define MAP_MAUVE_ISLAND_SOUTH       (1 | (35 << 8))
-#define MAP_MAUVE_ISLAND_WEST        (2 | (35 << 8))
-#define MAP_FAR_OFF_SEA_WEST         (3 | (35 << 8))
-#define MAP_FAR_OFF_SEA_WEST_2       (4 | (35 << 8))
-#define MAP_ILLUSORY_GROTTO_EXTERIOR (5 | (35 << 8))
+#define MAP_MAUVE_CAMP                      (0 | (35 << 8))
+#define MAP_MAUVE_ISLAND_SOUTH              (1 | (35 << 8))
+#define MAP_MAUVE_ISLAND_WEST               (2 | (35 << 8))
+#define MAP_FAR_OFF_SEA_WEST                (3 | (35 << 8))
+#define MAP_FAR_OFF_SEA_WEST_2              (4 | (35 << 8))
+#define MAP_ILLUSORY_GROTTO_EXTERIOR        (5 | (35 << 8))
+#define MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_1 (6 | (35 << 8))
 
 #define MAP_GROUPS_COUNT 36
 

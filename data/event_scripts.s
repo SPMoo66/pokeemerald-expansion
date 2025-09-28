@@ -1191,3 +1191,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FarOffSeaWest_2/scripts.inc"
 
 	.include "data/maps/IllusoryGrottoExterior/scripts.inc"
+
+	.include "data/maps/FarOffSeaWest_2_Underwater_1/scripts.inc"

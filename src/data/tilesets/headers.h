@@ -885,3 +885,14 @@ const struct Tileset gTileset_OceanExp1 =
     .metatileAttributes = gMetatileAttributes_OceanExp1,
     .callback = InitTilesetAnim_OceanExp1,
 };
+
+const struct Tileset gTileset_UnderwaterExp1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_UnderwaterExp1,
+    .palettes = gTilesetPalettes_UnderwaterExp1,
+    .metatiles = gMetatiles_UnderwaterExp1,
+    .metatileAttributes = gMetatileAttributes_UnderwaterExp1,
+    .callback = NULL,
+};

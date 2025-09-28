@@ -70,6 +70,7 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_WESTWARD_CURRENT]                   = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
     [MB_NORTHWARD_CURRENT]                  = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
     [MB_SOUTHWARD_CURRENT]                  = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
+    [MB_UNDERWATER_DEEP_WATER]              = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
     [MB_NON_ANIMATED_DOOR]                  = TILE_FLAG_UNUSED,
     [MB_LADDER]                             = TILE_FLAG_UNUSED,
     [MB_EAST_ARROW_WARP]                    = TILE_FLAG_UNUSED,
@@ -864,7 +865,8 @@ bool8 MetatileBehavior_IsDiveable(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_INTERIOR_DEEP_WATER
      || metatileBehavior == MB_DEEP_WATER
-     || metatileBehavior == MB_SOOTOPOLIS_DEEP_WATER)
+     || metatileBehavior == MB_SOOTOPOLIS_DEEP_WATER
+     || metatileBehavior == MB_UNDERWATER_DEEP_WATER)
         return TRUE;
     else
         return FALSE;
@@ -880,6 +882,7 @@ bool8 MetatileBehavior_IsUnableToEmerge(u8 metatileBehavior)
      #ifdef BUGFIX
      || metatileBehavior == MB_WATER_DOOR
      #endif
+     || metatileBehavior == MB_UNDERWATER_DEEP_WATER
      )
         return TRUE;
     else
@@ -916,7 +919,8 @@ bool8 MetatileBehavior_IsDeepOrOceanWater(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_OCEAN_WATER
      || metatileBehavior == MB_INTERIOR_DEEP_WATER
-     || metatileBehavior == MB_DEEP_WATER)
+     || metatileBehavior == MB_DEEP_WATER
+     || metatileBehavior == MB_UNDERWATER_DEEP_WATER)
         return TRUE;
     else
         return FALSE;
@@ -1179,7 +1183,8 @@ bool8 MetatileBehavior_IsSurfableFishableWater(u8 metatileBehavior)
      || (metatileBehavior == MB_EASTWARD_CURRENT
       || metatileBehavior == MB_WESTWARD_CURRENT
       || metatileBehavior == MB_NORTHWARD_CURRENT
-      || metatileBehavior == MB_SOUTHWARD_CURRENT))
+      || metatileBehavior == MB_SOUTHWARD_CURRENT)
+     || metatileBehavior == MB_UNDERWATER_DEEP_WATER)
         return TRUE;
     else
         return FALSE;

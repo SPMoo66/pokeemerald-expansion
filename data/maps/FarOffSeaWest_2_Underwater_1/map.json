@@ -2,7 +2,7 @@
   "id": "MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_1",
   "name": "FarOffSeaWest_2_Underwater_1",
   "layout": "LAYOUT_FAR_OFF_SEA_WEST_2_UNDERWATER_1",
-  "music": "MUS_DUMMY",
+  "music": "MUS_DP_VS_RIVAL",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

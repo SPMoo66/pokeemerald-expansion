@@ -640,6 +640,7 @@
 #define MAP_FAR_OFF_SEA_WEST_2              (4 | (35 << 8))
 #define MAP_ILLUSORY_GROTTO_EXTERIOR        (5 | (35 << 8))
 #define MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_1 (6 | (35 << 8))
+#define MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_2 (7 | (35 << 8))
 
 #define MAP_GROUPS_COUNT 36
 

@@ -658,7 +658,9 @@
   "gMapGroup_IndoorRoute124": [
     "Route124_DivingTreasureHuntersHouse"
   ],
-  "gMapGroup_Exp1Interiors": [],
+  "gMapGroup_Exp1Interiors": [
+    "IllusoryGrotto_1F_1R"
+  ],
   "gMapGroup_Exp1Exteriors": [
     "MauveCamp",
     "MauveIslandSouth",

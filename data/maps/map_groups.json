@@ -659,7 +659,8 @@
     "Route124_DivingTreasureHuntersHouse"
   ],
   "gMapGroup_Exp1Interiors": [
-    "IllusoryGrotto_1F_1R"
+    "IllusoryGrotto_1F_1R",
+    "SubmergedCave_1F_1R"
   ],
   "gMapGroup_Exp1Exteriors": [
     "MauveCamp",

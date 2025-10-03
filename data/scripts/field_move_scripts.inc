@@ -4,7 +4,7 @@ EventScript_CutTree::
 	goto_if_unset FLAG_BADGE01_GET, EventScript_CheckTreeCantCut
 	checkitem ITEM_HM01
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CheckTreeCantCut
-	setfieldeffectargument 0, VAR_RESULT
+	setfieldeffectargument 0, 0
 	dofieldeffect FLDEFF_USE_CUT_ON_TREE
 	waitstate
 	goto EventScript_CutTreeDown
@@ -47,7 +47,7 @@ EventScript_RockSmash::
 	goto_if_unset FLAG_BADGE03_GET, EventScript_CantSmashRock
 	checkitem ITEM_HM06
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CantSmashRock
-	setfieldeffectargument 0, VAR_RESULT
+	setfieldeffectargument 0, 0
 	msgbox Text_WantToSmash, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_CancelSmash
 	dofieldeffect FLDEFF_USE_ROCK_SMASH
@@ -209,7 +209,7 @@ EventScript_StrengthBoulder::
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_CheckActivatedBoulder
 	checkitem ITEM_HM04
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CantStrength
-	setfieldeffectargument 0, VAR_RESULT
+	setfieldeffectargument 0, 0
 	dofieldeffect FLDEFF_USE_STRENGTH
 	waitstate
 	goto EventScript_ActivateStrength
@@ -255,7 +255,7 @@ EventScript_UseWaterfall::
 	checkitem ITEM_HM07
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CantWaterfall
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
-	setfieldeffectargument 0, VAR_RESULT
+	setfieldeffectargument 0, 0
 	hidefollowernpc
 	dofieldeffect FLDEFF_USE_WATERFALL
 	callnative FollowerNPC_WarpSetEnd
@@ -280,7 +280,7 @@ EventScript_UseDive::
 	checkitem ITEM_HM08
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CantDive
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
-	setfieldeffectargument 0, VAR_RESULT
+	setfieldeffectargument 0, 0
 	setfieldeffectargument 1, 1
 	msgbox Text_WantToDive, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_EndDive
@@ -303,7 +303,7 @@ EventScript_UseDiveUnderwater::
 	checkitem ITEM_HM08
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CantSurface
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
-	setfieldeffectargument 0, VAR_RESULT
+	setfieldeffectargument 0, 0
 	setfieldeffectargument 1, 1
 	msgbox Text_WantToSurface, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_NoSurface
@@ -381,7 +381,7 @@ EventScript_UseRockClimb::
 	checkitem ITEM_HM05
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CantRockClimb
 	bufferpartymonnick 0, VAR_RESULT
-	setfieldeffectargument 0, VAR_RESULT
+	setfieldeffectargument 0, 0
 	dofieldeffect FLDEFF_USE_ROCK_CLIMB
 	waitstate
 	goto EventScript_EndRockClimb
@@ -410,7 +410,7 @@ EventScript_UseDefog::
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
 	waitmovement 0
-	setfieldeffectargument 0, VAR_RESULT
+	setfieldeffectargument 0, 0
 	dofieldeffect FLDEFF_DEFOG
 	waitstate
 	releaseall

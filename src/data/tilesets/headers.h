@@ -896,3 +896,14 @@ const struct Tileset gTileset_UnderwaterExp1 =
     .metatileAttributes = gMetatileAttributes_UnderwaterExp1,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Cave2_Exp_1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Cave2_Exp_1,
+    .palettes = gTilesetPalettes_Cave2_Exp_1,
+    .metatiles = gMetatiles_Cave2_Exp_1,
+    .metatileAttributes = gMetatileAttributes_Cave2_Exp_1,
+    .callback = NULL,
+};

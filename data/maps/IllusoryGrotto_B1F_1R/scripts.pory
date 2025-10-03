@@ -7,7 +7,6 @@ mapscripts IllusoryGrotto_B1F_1R_MapScripts {
 	}
 }
 
-
 script IllusoryGrotto_B1F_1R_Rock {
 	if (!flag(FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK_IN_PLACE)) {
 		call (IllusoryGrottoMovableRock_Exp1)

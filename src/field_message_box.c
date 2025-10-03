@@ -41,7 +41,7 @@ static void Task_DrawFieldMessage(u8 taskId)
             task->tState++;
             break;
         case 1:
-           if (gSpeakerName != NULL && !FlagGet(FLAG_SUPPRESS_SPEAKER_NAME)) {
+            if (gSpeakerName != NULL && !FlagGet(FLAG_SUPPRESS_SPEAKER_NAME)) {
                 DrawDialogueFrameWithNameplate(0, TRUE);
                 PutWindowTilemap(1);
                 CopyWindowToVram(1, COPYWIN_FULL);
@@ -50,7 +50,7 @@ static void Task_DrawFieldMessage(u8 taskId)
                 DrawDialogueFrame(0, TRUE);
             } 
             task->tState++;
-           break;
+            break;
         case 2:
             if (RunTextPrintersAndIsPrinter0Active() != TRUE)
             {

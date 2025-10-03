@@ -14,7 +14,36 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 12,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_ILLUSORY_GROTTO_B4F_1R",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_ILLUSORY_GROTTO_B2F_1R",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_ILLUSORY_GROTTO_B2F_1R",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 16,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_ILLUSORY_GROTTO_B2F_1R",
+      "dest_warp_id": "4"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

@@ -655,10 +655,12 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_STARDUST                  (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264    0x264 // Unused Flag
-#define FLAG_UNUSED_0x265    0x265 // Unused Flag
-#define FLAG_UNUSED_0x266    0x266 // Unused Flag
-#define FLAG_UNUSED_0x267    0x267 // Unused Flag
+// Expansion 1 Flags
+#define FLAG_EXP_1_ILLUSORY_GROTTO_B4F_1R_ROCK               0x264 // Was unused
+#define FLAG_EXP_1_ILLUSORY_GROTTO_B3F_1R_ROCK               0x265 // Was unused
+#define FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK_IN_PLACE      0x266 // Was unused
+#define FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK               0x267 // Was unused
+
 #define FLAG_UNUSED_0x268    0x268 // Unused Flag
 #define FLAG_UNUSED_0x269    0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A    0x26A // Unused Flag

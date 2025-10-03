@@ -5844,6 +5844,42 @@
       "secondary_tileset": "gTileset_OceanExp1",
       "border_filepath": "data/layouts/IllusoryGrotto_B1F_1R/border.bin",
       "blockdata_filepath": "data/layouts/IllusoryGrotto_B1F_1R/map.bin"
+    },
+    {
+      "id": "LAYOUT_ILLUSORY_GROTTO_B2F_1R",
+      "name": "IllusoryGrotto_B2F_1R_Layout",
+      "width": 32,
+      "height": 19,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Cave2_Exp_1",
+      "secondary_tileset": "gTileset_OceanExp1",
+      "border_filepath": "data/layouts/IllusoryGrotto_B2F_1R/border.bin",
+      "blockdata_filepath": "data/layouts/IllusoryGrotto_B2F_1R/map.bin"
+    },
+    {
+      "id": "LAYOUT_ILLUSORY_GROTTO_B3F_1R",
+      "name": "IllusoryGrotto_B3F_1R_Layout",
+      "width": 32,
+      "height": 31,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Cave2_Exp_1",
+      "secondary_tileset": "gTileset_OceanExp1",
+      "border_filepath": "data/layouts/IllusoryGrotto_B3F_1R/border.bin",
+      "blockdata_filepath": "data/layouts/IllusoryGrotto_B3F_1R/map.bin"
+    },
+    {
+      "id": "LAYOUT_ILLUSORY_GROTTO_B4F_1R",
+      "name": "IllusoryGrotto_B4F_1R_Layout",
+      "width": 32,
+      "height": 28,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Cave2_Exp_1",
+      "secondary_tileset": "gTileset_OceanExp1",
+      "border_filepath": "data/layouts/IllusoryGrotto_B4F_1R/border.bin",
+      "blockdata_filepath": "data/layouts/IllusoryGrotto_B4F_1R/map.bin"
     }
   ]
 }

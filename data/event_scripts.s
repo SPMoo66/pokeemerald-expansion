@@ -1210,3 +1210,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/IllusoryGrotto_B3F_1R/scripts.inc"
 
 	.include "data/maps/IllusoryGrotto_B4F_1R/scripts.inc"
+
+	.include "data/maps/IllusoryGrotto_B4F_2R/scripts.inc"
+
+	.include "data/maps/IllusoryGrotto_B4F_2R_Underwater/scripts.inc"

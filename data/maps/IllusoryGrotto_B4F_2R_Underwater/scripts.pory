@@ -1,0 +1,40 @@
+mapscripts IllusoryGrotto_B4F_2R_Underwater_MapScripts {}
+
+script IllusoryGrotto_B4F_2R_Underwater_MonsterShadow1 {
+	if (!var(VAR_TEMP_0)) {
+		setmetatile (6, 6, 0x12D, TRUE)
+		special (DrawWholeMapView)
+		setvar (VAR_TEMP_0, 1)
+	}
+	else {
+		setmetatile (6, 6, 0x042, TRUE)
+		special (DrawWholeMapView)
+		setvar (VAR_TEMP_0, 0)
+	}
+}
+
+script IllusoryGrotto_B4F_2R_Underwater_MonsterShadow2 {
+	if (!var(VAR_TEMP_1)) {
+		setmetatile (28, 4, 0x125, TRUE)
+		special (DrawWholeMapView)
+		setvar (VAR_TEMP_1, 1)
+	}
+	else {
+		setmetatile (28, 4, 0x040, TRUE)
+		special (DrawWholeMapView)
+		setvar (VAR_TEMP_1, 0)
+	}
+}
+
+script IllusoryGrotto_B4F_2R_Underwater_MonsterShadow3 {
+	if (!var(VAR_TEMP_2)) {
+		setmetatile (18, 15, 0x135, TRUE)
+		special (DrawWholeMapView)
+		setvar (VAR_TEMP_2, 1)
+	}
+	else {
+		setmetatile (18, 15, 0x043, TRUE)
+		special (DrawWholeMapView)
+		setvar (VAR_TEMP_2, 0)
+	}
+}

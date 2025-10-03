@@ -1,1 +1,56 @@
-mapscripts IllusoryGrotto_B4F_1R_MapScripts {}
+mapscripts IllusoryGrotto_B4F_1R_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (flag(FLAG_EXP_1_ILLUSORY_GROTTO_B4F_1R_ROCK)) {
+			setmetatile (13, 12, 0x011, FALSE)
+			setmetatile (13, 14, 0x023, TRUE)
+		}
+	}
+	MAP_SCRIPT_ON_TRANSITION {
+		if (flag(FLAG_EXP_1_ILLUSORY_GROTTO_B4F_1R_ROCK)) {
+			setvar (VAR_TEMP_3, 1)
+		}
+	}
+}
+
+script IllusoryGrotto_B4F_1R_Rock {
+	if (!flag(FLAG_EXP_1_ILLUSORY_GROTTO_B4F_1R_ROCK)) {
+		call (IllusoryGrottoMovableRock_Exp1)
+		setmetatile (13, 12, 0x011, FALSE)
+		setmetatile (13, 13, 0x023, TRUE)
+		special (DrawWholeMapView)
+		delay (10)
+		setmetatile (13, 13, 0x019, TRUE)
+		setmetatile (13, 14, 0x023, TRUE)
+		special (DrawWholeMapView)
+		playse (SE_M_STRENGTH)
+		delay (10)
+		setflag (FLAG_EXP_1_ILLUSORY_GROTTO_B4F_1R_ROCK)
+		setvar (VAR_TEMP_3, 1)
+	}
+	release
+}
+
+script IllusoryGrotto_B4F_1R_Monster {
+	call (IllusoryGrotto_MonsterCommon1_Exp1)
+	setmetatile (13, 14, 0x025, TRUE)
+	special (DrawWholeMapView)
+	delay (10)
+	setmetatile (13, 14, 0x026, TRUE)
+	special (DrawWholeMapView)
+	delay (10)
+	setmetatile (13, 14, 0x027, TRUE)
+	call (IllusoryGrotto_MonsterCommon2_Exp1)
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	if (var(VAR_TEMP_1) == 15) {
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkFastDown5)
+	}
+	else {
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkFastDown4)
+	}
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_UnlockFacingDirection)
+	waitmovement (0)
+	setmetatile (13, 14, 0x01D, TRUE)
+	special (DrawWholeMapView)
+	release
+}

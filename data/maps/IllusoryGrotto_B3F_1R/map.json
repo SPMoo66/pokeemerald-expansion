@@ -2,7 +2,7 @@
   "id": "MAP_ILLUSORY_GROTTO_B3F_1R",
   "name": "IllusoryGrotto_B3F_1R",
   "layout": "LAYOUT_ILLUSORY_GROTTO_B3F_1R",
-  "music": "MUS_VICTORY_ROAD",
+  "music": "MUS_DP_VICTORY_ROAD",
   "region_map_section": "MAPSEC_ILLUSORY_GROTTO",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -44,6 +44,43 @@
       "dest_warp_id": "4"
     }
   ],
-  "coord_events": [],
-  "bg_events": []
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_TEMP_3",
+      "var_value": "0",
+      "script": "IllusoryGrotto_B3F_1R_Monster1"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "IllusoryGrotto_B3F_1R_Monster2"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "IllusoryGrotto_B3F_1R_Monster3"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 17,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "IllusoryGrotto_B3F_1R_Rock"
+    }
+  ]
 }

@@ -1143,6 +1143,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/magearna_encounter.inc"
 	.include "data/recommended_hacks.inc"
 	.include "data/cynthia.inc"
+	.include "data/expansion_1/global.inc"
 
 	.include "data/maps/LeafyClearing/scripts.inc"
 	.include "data/maps/CaveOfDreams/scripts.inc"

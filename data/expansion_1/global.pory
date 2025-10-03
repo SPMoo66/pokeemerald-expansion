@@ -1,0 +1,42 @@
+script HealingSpring_Exp1 {
+	msgbox( format( "It's a restorative spring."))
+	closemessage
+	call (Common_EventScript_OutOfCenterPartyHeal)
+}
+
+script IllusoryGrottoMovableRock_Exp1 {
+	getobjectfacingdirection (LOCALID_PLAYER, VAR_RESULT)
+	if (var(VAR_RESULT) == DIR_SOUTH) {
+		msgbox( format( "Oh! Your Pokémon may be able to push this boulder aside!"))
+		closemessage
+		setfieldeffectargument (0, VAR_RESULT)
+		dofieldeffect (FLDEFF_USE_STRENGTH)
+		waitstate
+		playse (SE_M_STRENGTH)
+		delay (20)
+		playse (SE_FALL)
+	}
+	else {
+		msgbox (format( "Dad's Advice…\n… … …\p… … …\p… … …\p{PLAYER}! Try a different side!"))
+		closemessage
+		release
+		end
+	}
+}
+
+script IllusoryGrotto_MonsterCommon1_Exp1 {
+	delay (10)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+	delay (10)
+}
+
+script IllusoryGrotto_MonsterCommon2_Exp1 {
+	special (DrawWholeMapView)
+	delay (10)
+	playse (SE_M_SNORE)          // 197
+	delay (20)
+	playse (SE_M_HYDRO_PUMP)     // 164
+	applymovement (LOCALID_PLAYER, Common_Movement_LockFacingDirection)
+	waitmovement (0)
+}

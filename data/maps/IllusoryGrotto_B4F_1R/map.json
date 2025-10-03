@@ -2,7 +2,7 @@
   "id": "MAP_ILLUSORY_GROTTO_B4F_1R",
   "name": "IllusoryGrotto_B4F_1R",
   "layout": "LAYOUT_ILLUSORY_GROTTO_B4F_1R",
-  "music": "MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES",
+  "music": "MUS_DP_VICTORY_ROAD",
   "region_map_section": "MAPSEC_ILLUSORY_GROTTO",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -23,6 +23,42 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
-  "bg_events": []
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_3",
+      "var_value": "0",
+      "script": "IllusoryGrotto_B4F_1R_Monster"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_TEMP_3",
+      "var_value": "0",
+      "script": "IllusoryGrotto_B4F_1R_Monster"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 28,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_SOUTH",
+      "script": "HealingSpring_Exp1"
+    },
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 12,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "IllusoryGrotto_B4F_1R_Rock"
+    }
+  ]
 }

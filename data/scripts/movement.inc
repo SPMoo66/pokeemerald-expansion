@@ -429,11 +429,31 @@ Common_Movement_WalkFastDown:
 	walk_fast_down
 	step_end
 	
+Common_Movement_WalkFastDown2:
+	walk_fast_down
+	walk_fast_down
+	step_end
+	
 Common_Movement_WalkFastDown3:
 	walk_fast_down
 	walk_fast_down
 	walk_fast_down
 	step_end
+
+Common_Movement_WalkFastDown4::
+    walk_faster_down
+    walk_faster_down
+    walk_faster_down
+    walk_faster_down
+    step_end
+
+Common_Movement_WalkFastDown5::
+    walk_faster_down
+    walk_faster_down
+    walk_faster_down
+    walk_faster_down
+    walk_faster_down
+    step_end
 	
 Common_Movement_WalkFastDown6:
 	walk_fast_down
@@ -522,6 +542,14 @@ Common_Movement_SetInvisible:
 
 Common_Movement_SetVisible:
 	set_visible
+	step_end
+
+Common_Movement_LockFacingDirection:
+	lock_facing_direction
+	step_end
+
+Common_Movement_UnlockFacingDirection:
+	unlock_facing_direction
 	step_end
 
 @ Follower NPC

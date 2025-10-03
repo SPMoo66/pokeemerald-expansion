@@ -2,7 +2,7 @@
   "id": "MAP_ILLUSORY_GROTTO_B1F_1R",
   "name": "IllusoryGrotto_B1F_1R",
   "layout": "LAYOUT_ILLUSORY_GROTTO_B1F_1R",
-  "music": "MUS_HG_VICTORY_ROAD",
+  "music": "MUS_DP_VICTORY_ROAD",
   "region_map_section": "MAPSEC_ILLUSORY_GROTTO",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -35,8 +35,24 @@
       "elevation": 0,
       "dest_map": "MAP_ILLUSORY_GROTTO_1F_1R",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 24,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_ILLUSORY_GROTTO_B2F_1R",
+      "dest_warp_id": "5"
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 24,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "IllusoryGrotto_B1F_1R_Rock"
+    }
+  ]
 }

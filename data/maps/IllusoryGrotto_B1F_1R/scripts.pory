@@ -1,1 +1,37 @@
-mapscripts IllusoryGrotto_B1F_1R_MapScripts {}
+mapscripts IllusoryGrotto_B1F_1R_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (flag(FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK_IN_PLACE)) {
+			setmetatile (24, 10, 0x011, FALSE)
+			setmetatile (24, 13, 0x002, FALSE)
+		}
+	}
+}
+
+
+script IllusoryGrotto_B1F_1R_Rock {
+	if (!flag(FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK_IN_PLACE)) {
+		call (IllusoryGrottoMovableRock_Exp1)
+		setmetatile (24, 10, 0x011, FALSE)
+		setmetatile (24, 11, 0x023, TRUE)
+		special (DrawWholeMapView)
+		delay (10)
+		setmetatile (24, 11, 0x019, TRUE)
+		setmetatile (24, 12, 0x023, TRUE)
+		special (DrawWholeMapView)
+		delay (10)
+		setmetatile (24, 12, 0x019, TRUE)
+		setmetatile (24, 13, 0x02E, TRUE)
+		special (DrawWholeMapView)
+		playse (SE_M_SWAGGER)
+		delay (60)
+		playse (SE_M_EXPLOSION)
+		delay (10)
+		setmetatile (24, 13, 0x002, FALSE)
+		special (DrawWholeMapView)
+		delay (10)
+		playse (SE_FALL)
+		delay (20)
+		setflag (FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK_IN_PLACE)
+	}
+	release
+}

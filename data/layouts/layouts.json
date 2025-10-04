@@ -5904,6 +5904,18 @@
       "secondary_tileset": "gTileset_OceanExp1",
       "border_filepath": "data/layouts/IllusoryGrotto_B4F_2R_Underwater/border.bin",
       "blockdata_filepath": "data/layouts/IllusoryGrotto_B4F_2R_Underwater/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAUVE_ISLAND_SOUTHEAST",
+      "name": "MauveIslandSoutheast_Layout",
+      "width": 60,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Beach",
+      "secondary_tileset": "gTileset_Camp",
+      "border_filepath": "data/layouts/MauveIslandSoutheast/border.bin",
+      "blockdata_filepath": "data/layouts/MauveIslandSoutheast/map.bin"
     }
   ]
 }

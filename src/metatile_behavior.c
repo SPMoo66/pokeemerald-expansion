@@ -72,6 +72,8 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_NORTHWARD_CURRENT]                  = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
     [MB_SOUTHWARD_CURRENT]                  = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
     [MB_UNDERWATER_DEEP_WATER]              = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
+    [MB_WATER_DOOR_EAST]                    = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
+    [MB_WATER_DOOR_WEST]                    = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
     [MB_NON_ANIMATED_DOOR]                  = TILE_FLAG_UNUSED,
     [MB_LADDER]                             = TILE_FLAG_UNUSED,
     [MB_EAST_ARROW_WARP]                    = TILE_FLAG_UNUSED,
@@ -274,7 +276,8 @@ bool8 MetatileBehavior_IsNonAnimDoor(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsNonAnimDoorEast(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_NON_ANIMATED_DOOR_EAST)
+    if (metatileBehavior == MB_NON_ANIMATED_DOOR_EAST
+     || metatileBehavior == MB_WATER_DOOR_EAST)
         return TRUE;
     else
         return FALSE;
@@ -282,7 +285,8 @@ bool8 MetatileBehavior_IsNonAnimDoorEast(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsNonAnimDoorWest(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_NON_ANIMATED_DOOR_WEST)
+    if (metatileBehavior == MB_NON_ANIMATED_DOOR_WEST
+     || metatileBehavior == MB_WATER_DOOR_WEST)
         return TRUE;
     else
         return FALSE;
@@ -883,6 +887,8 @@ bool8 MetatileBehavior_IsUnableToEmerge(u8 metatileBehavior)
      #ifdef BUGFIX
      || metatileBehavior == MB_WATER_DOOR
      #endif
+     || metatileBehavior == MB_WATER_DOOR_EAST
+     || metatileBehavior == MB_WATER_DOOR_WEST
      || metatileBehavior == MB_UNDERWATER_DEEP_WATER
      )
         return TRUE;

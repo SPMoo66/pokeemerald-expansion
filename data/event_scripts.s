@@ -1216,3 +1216,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/IllusoryGrotto_B4F_2R_Underwater/scripts.inc"
 
 	.include "data/maps/MauveIslandSoutheast/scripts.inc"
+
+	.include "data/maps/FarOffSeaSouth/scripts.inc"

@@ -22,6 +22,11 @@
       "map": "MAP_MAUVE_ISLAND_SOUTHEAST",
       "offset": -3,
       "direction": "right"
+    },
+    {
+      "map": "MAP_FAR_OFF_SEA_SOUTH",
+      "offset": 6,
+      "direction": "down"
     }
   ],
   "object_events": [],

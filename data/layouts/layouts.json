@@ -5928,6 +5928,18 @@
       "secondary_tileset": "gTileset_Camp",
       "border_filepath": "data/layouts/FarOffSeaSouth/border.bin",
       "blockdata_filepath": "data/layouts/FarOffSeaSouth/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAUVE_ISLAND_SOUTH_UNDERWATER",
+      "name": "MauveIslandSouth_Underwater_Layout",
+      "width": 46,
+      "height": 37,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_UnderwaterExp1",
+      "secondary_tileset": "gTileset_OceanExp1",
+      "border_filepath": "data/layouts/MauveIslandSouth_Underwater/border.bin",
+      "blockdata_filepath": "data/layouts/MauveIslandSouth_Underwater/map.bin"
     }
   ]
 }

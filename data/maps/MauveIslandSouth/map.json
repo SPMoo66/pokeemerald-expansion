@@ -27,6 +27,11 @@
       "map": "MAP_FAR_OFF_SEA_SOUTH",
       "offset": 6,
       "direction": "down"
+    },
+    {
+      "map": "MAP_MAUVE_ISLAND_SOUTH_UNDERWATER",
+      "offset": 0,
+      "direction": "dive"
     }
   ],
   "object_events": [],

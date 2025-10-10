@@ -1023,9 +1023,9 @@ static u8 GetAdjustedInitialDirection(struct InitialPlayerAvatarState *playerStr
         return DIR_NORTH;
     else if (MetatileBehavior_IsNorthArrowWarp(metatileBehavior) == TRUE)
         return DIR_SOUTH;
-    else if (MetatileBehavior_IsWestArrowWarp(metatileBehavior) == TRUE)
+    else if (MetatileBehavior_IsWestArrowWarp(metatileBehavior) == TRUE || MetatileBehavior_IsNonAnimDoorWest(metatileBehavior) == TRUE)
         return DIR_EAST;
-    else if (MetatileBehavior_IsEastArrowWarp(metatileBehavior) == TRUE)
+    else if (MetatileBehavior_IsEastArrowWarp(metatileBehavior) == TRUE || MetatileBehavior_IsNonAnimDoorEast(metatileBehavior) == TRUE)
         return DIR_WEST;
     else if (MetatileBehavior_IsDirectionalUpRightStairWarp(metatileBehavior) == TRUE || MetatileBehavior_IsDirectionalDownRightStairWarp(metatileBehavior) == TRUE)
         return DIR_WEST;

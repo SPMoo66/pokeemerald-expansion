@@ -25,6 +25,8 @@ bool8 MetatileBehavior_IsDoor(u8 metatileBehavior);
 bool8 MetatileBehavior_IsEscalator(u8 metatileBehavior);
 bool8 MetatileBehavior_IsLadder(u8 metatileBehavior);
 bool8 MetatileBehavior_IsNonAnimDoor(u8 metatileBehavior);
+bool8 MetatileBehavior_IsNonAnimDoorEast(u8 metatileBehavior);
+bool8 MetatileBehavior_IsNonAnimDoorWest(u8 metatileBehavior);
 bool8 MetatileBehavior_IsDeepSouthWarp(u8 metatileBehavior);
 bool8 MetatileBehavior_IsSurfableWaterOrUnderwater(u8 metatileBehavior);
 bool8 MetatileBehavior_IsEastArrowWarp(u8 metatileBehavior);

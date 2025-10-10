@@ -653,6 +653,7 @@
 #define MAP_MAUVE_ISLAND_SOUTHEAST          (9 | (35 << 8))
 #define MAP_FAR_OFF_SEA_SOUTH               (10 | (35 << 8))
 #define MAP_MAUVE_ISLAND_SOUTH_UNDERWATER   (11 | (35 << 8))
+#define MAP_FAR_OFF_SEA_SOUTH_UNDERWATER    (12 | (35 << 8))
 
 #define MAP_GROUPS_COUNT 36
 

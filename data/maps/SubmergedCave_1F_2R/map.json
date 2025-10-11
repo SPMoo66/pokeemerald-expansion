@@ -61,6 +61,13 @@
       "elevation": 0,
       "dest_map": "MAP_SUBMERGED_CAVE_1F_1R",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 8,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_SUBMERGED_CAVE_1F_3R",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

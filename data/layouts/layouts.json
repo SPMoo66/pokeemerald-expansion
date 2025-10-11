@@ -5964,6 +5964,30 @@
       "secondary_tileset": "gTileset_OceanExp1",
       "border_filepath": "data/layouts/SubmergedCave_1F_2R/border.bin",
       "blockdata_filepath": "data/layouts/SubmergedCave_1F_2R/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUBMERGED_CAVE_1F_3R",
+      "name": "SubmergedCave_1F_3R_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_CaveExp1",
+      "secondary_tileset": "gTileset_OceanExp1",
+      "border_filepath": "data/layouts/SubmergedCave_1F_3R/border.bin",
+      "blockdata_filepath": "data/layouts/SubmergedCave_1F_3R/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUBMERGED_CAVE_2F_1R",
+      "name": "SubmergedCave_2F_1R_Layout",
+      "width": 48,
+      "height": 27,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_CaveExp1",
+      "secondary_tileset": "gTileset_OceanExp1",
+      "border_filepath": "data/layouts/SubmergedCave_2F_1R/border.bin",
+      "blockdata_filepath": "data/layouts/SubmergedCave_2F_1R/map.bin"
     }
   ]
 }

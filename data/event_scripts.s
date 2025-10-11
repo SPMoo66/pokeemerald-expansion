@@ -1224,3 +1224,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FarOffSeaSouth_Underwater/scripts.inc"
 
 	.include "data/maps/SubmergedCave_1F_2R/scripts.inc"
+
+	.include "data/maps/SubmergedCave_1F_3R/scripts.inc"
+
+	.include "data/maps/SubmergedCave_2F_1R/scripts.inc"

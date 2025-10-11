@@ -639,6 +639,7 @@
 #define MAP_ILLUSORY_GROTTO_B4F_1R            (5 | (34 << 8))
 #define MAP_ILLUSORY_GROTTO_B4F_2R            (6 | (34 << 8))
 #define MAP_ILLUSORY_GROTTO_B4F_2R_UNDERWATER (7 | (34 << 8))
+#define MAP_SUBMERGED_CAVE_1F_2R              (8 | (34 << 8))
 
 // gMapGroup_Exp1Exteriors
 #define MAP_MAUVE_CAMP                      (0 | (35 << 8))

@@ -5952,6 +5952,18 @@
       "secondary_tileset": "gTileset_OceanExp1",
       "border_filepath": "data/layouts/FarOffSeaSouth_Underwater/border.bin",
       "blockdata_filepath": "data/layouts/FarOffSeaSouth_Underwater/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUBMERGED_CAVE_1F_2R",
+      "name": "SubmergedCave_1F_2R_Layout",
+      "width": 30,
+      "height": 18,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_CaveExp1",
+      "secondary_tileset": "gTileset_OceanExp1",
+      "border_filepath": "data/layouts/SubmergedCave_1F_2R/border.bin",
+      "blockdata_filepath": "data/layouts/SubmergedCave_1F_2R/map.bin"
     }
   ]
 }

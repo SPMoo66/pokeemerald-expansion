@@ -108,6 +108,9 @@ void SetFollowerNPCData(enum FollowerNPCDataTypes type, u32 value)
     case FNPC_DATA_BATTLE_PARTNER:
         gSaveBlock1Ptr->NPCfollower.battlePartner = value;
         break;
+    case FNPC_DATA_COME_OUT_DOOR_DIRECTION:
+        gSaveBlock1Ptr->NPCfollower.comeOutDoorStairsDir = value;
+        break;
     }
 #endif
 }
@@ -166,6 +169,8 @@ u32 GetFollowerNPCData(enum FollowerNPCDataTypes type)
         return gSaveBlock1Ptr->NPCfollower.flags;
     case FNPC_DATA_BATTLE_PARTNER:
         return gSaveBlock1Ptr->NPCfollower.battlePartner;
+    case FNPC_DATA_COME_OUT_DOOR_DIRECTION:
+        return gSaveBlock1Ptr->NPCfollower.comeOutDoorStairsDir;
     }
 #endif
     return 0;
@@ -549,9 +554,25 @@ static void Task_FollowerNPCOutOfDoor(u8 taskId)
                 SetSurfBlob_BobState(follower->fieldEffectSpriteId, 1);
             }
             ObjectEventTurn(follower, DIR_SOUTH);
+            if (GetFollowerNPCData(FNPC_DATA_COME_OUT_DOOR_DIRECTION) == FNPC_DIR_EAST)
+                ObjectEventTurn(follower, DIR_WEST);
+            if (GetFollowerNPCData(FNPC_DATA_COME_OUT_DOOR_DIRECTION) == FNPC_DIR_WEST)
+                ObjectEventTurn(follower, DIR_EAST);
             follower->singleMovementActive = FALSE;
             follower->heldMovementActive = FALSE;
-            ObjectEventSetHeldMovement(follower, MOVEMENT_ACTION_WALK_NORMAL_DOWN);
+            switch (GetFollowerNPCData(FNPC_DATA_COME_OUT_DOOR_DIRECTION))
+            {
+            case FNPC_DIR_EAST:
+                ObjectEventSetHeldMovement(follower, MOVEMENT_ACTION_WALK_NORMAL_LEFT);
+                break;
+            case FNPC_DIR_WEST:
+                ObjectEventSetHeldMovement(follower, MOVEMENT_ACTION_WALK_NORMAL_RIGHT);
+                break;
+            default:
+                ObjectEventSetHeldMovement(follower, MOVEMENT_ACTION_WALK_NORMAL_DOWN);
+                break;
+            }
+            SetFollowerNPCData(FNPC_DATA_COME_OUT_DOOR_DIRECTION, FNPC_DIR_SOUTH);
             task->tState = CLOSE_DOOR;
         }
         break;
@@ -1310,7 +1331,15 @@ void FollowerNPC_WarpSetEnd(void)
     else
     {
         u32 toY = GetFollowerNPCData(FNPC_DATA_COME_OUT_DOOR) == FNPC_DOOR_NEEDS_TO_EXIT ? (player->currentCoords.y - 1) : player->currentCoords.y;
-        MoveObjectEventToMapCoords(follower, player->currentCoords.x, toY);
+        if (GetFollowerNPCData(FNPC_DATA_COME_OUT_DOOR_DIRECTION) != FNPC_DIR_SOUTH)
+            toY = player->currentCoords.y;
+
+        u32 toX = player->currentCoords.x;
+        if (GetFollowerNPCData(FNPC_DATA_COME_OUT_DOOR_DIRECTION) == FNPC_DIR_EAST)
+            toX = (player->currentCoords.x + 1);
+        if (GetFollowerNPCData(FNPC_DATA_COME_OUT_DOOR_DIRECTION) == FNPC_DIR_WEST)
+            toX = (player->currentCoords.x - 1);
+        MoveObjectEventToMapCoords(follower, toX, toY);
         SetFollowerNPCData(FNPC_DATA_WARP_END, FNPC_WARP_REAPPEAR);
     }
 
@@ -1427,6 +1456,18 @@ void FollowerNPC_SetIndicatorToComeOutDoor(void)
 {
     if (PlayerHasFollowerNPC())
         SetFollowerNPCData(FNPC_DATA_COME_OUT_DOOR, FNPC_DOOR_NEEDS_TO_EXIT);
+}
+
+void FollowerNPC_SetComeOutDoorDirEast(void)
+{
+    if (PlayerHasFollowerNPC())
+        SetFollowerNPCData(FNPC_DATA_COME_OUT_DOOR_DIRECTION, FNPC_DIR_EAST);
+}
+
+void FollowerNPC_SetComeOutDoorDirWest(void)
+{
+    if (PlayerHasFollowerNPC())
+        SetFollowerNPCData(FNPC_DATA_COME_OUT_DOOR_DIRECTION, FNPC_DIR_WEST);
 }
 
 void EscalatorMoveFollowerNPC(u32 movementType)

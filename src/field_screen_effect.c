@@ -425,6 +425,10 @@ static void Task_ExitNonAnimDoor(u8 taskId)
             if (!MetatileBehavior_IsDeepSouthWarp(MapGridGetMetatileBehaviorAt(x, y + 1)))
                 FollowerNPC_SetIndicatorToComeOutDoor();
             // TODO: Add specific follower door warp behavior for MB_DEEP_SOUTH_WARP.
+            if (MetatileBehavior_IsNonAnimDoorEast(MapGridGetMetatileBehaviorAt(x + 1, y)))
+                FollowerNPC_SetComeOutDoorDirEast();
+            if (MetatileBehavior_IsNonAnimDoorWest(MapGridGetMetatileBehaviorAt(x - 1, y)))
+                FollowerNPC_SetComeOutDoorDirWest();
 
             FollowerNPC_WarpSetEnd();
             UnfreezeObjectEvents();

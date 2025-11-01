@@ -231,6 +231,7 @@ struct NPCFollower
     u16 graphicsId;
     u16 flags;
     u8 battlePartner; // If you have more than 255 total battle partners defined, change this to a u16
+	u8 comeOutDoorStairsDir:3;
 };
 
 #include "constants/items.h"

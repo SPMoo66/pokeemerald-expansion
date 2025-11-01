@@ -28,7 +28,8 @@ enum FollowerNPCDataTypes
     FNPC_DATA_EVENT_FLAG,
     FNPC_DATA_GFX_ID,
     FNPC_DATA_FOLLOWER_FLAGS,
-    FNPC_DATA_BATTLE_PARTNER
+    FNPC_DATA_BATTLE_PARTNER,
+	FNPC_DATA_COME_OUT_DOOR_DIRECTION
 };
 
 enum FollowerNPCSpriteTypes
@@ -45,6 +46,14 @@ enum FollowerNPCDoorStairsStates
     FNPC_DOOR_NONE,
     FNPC_DOOR_NEEDS_TO_EXIT,
     FNPC_DOOR_NO_POS_SET
+};
+
+enum FollowerNPCDoorStairsDirs
+{
+    FNPC_DIR_SOUTH,
+    FNPC_DIR_EAST,
+	FNPC_DIR_WEST,
+	FNPC_DIR_NORTH
 };
 
 enum FollowerNPCWarpEndStates
@@ -117,6 +126,8 @@ void PrepareFollowerNPCDismountSurf(void);
 
 bool32 FollowerNPCComingThroughDoor(void);
 void FollowerNPC_SetIndicatorToComeOutDoor(void);
+void FollowerNPC_SetComeOutDoorDirEast(void);
+void FollowerNPC_SetComeOutDoorDirWest(void);
 
 void EscalatorMoveFollowerNPC(u32 movementType);
 void EscalatorMoveFollowerNPCFinish(void);

@@ -1,4 +1,4 @@
-const HARPER_SUBMERGED_CAVERN = 1
+const HARPER_SUBMERGED_CAVE = 1
 
 mapscripts SubmergedCave_1F_3R_MapScripts {}
 
@@ -6,7 +6,7 @@ script SubmergedCave_1F_3R_StartHarperFollower {
 	faceplayer
 	msgbox ("Follower start")
 	closemessage
-	setfollowernpc (HARPER_SUBMERGED_CAVERN, 0, Expansion1_Follower_Harper1, PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVERN)
+	setfollowernpc (HARPER_SUBMERGED_CAVE, 0, Expansion1_Follower_Harper1, PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVE)
 	hidefollowernpc
 	setflag (FLAG_SYS_HIDE_FOLLOWERS)
 	setvar (VAR_TEMP_5, 0)
@@ -22,38 +22,38 @@ script SubmergedCave_1F_3R_ClearHarperFollower {
 		if (var(VAR_RESULT) == 1) { // Yes
 			clearflag (FLAG_SYS_HIDE_FOLLOWERS)
 			if (var(VAR_TEMP_0) == DIR_SOUTH) {
-				setobjectxyperm (HARPER_SUBMERGED_CAVERN, 8, 3)
-				setobjectmovementtype (HARPER_SUBMERGED_CAVERN, MOVEMENT_TYPE_FACE_DOWN)
+				setobjectxyperm (HARPER_SUBMERGED_CAVE, 8, 3)
+				setobjectmovementtype (HARPER_SUBMERGED_CAVE, MOVEMENT_TYPE_FACE_DOWN)
 			}
 			elif (var(VAR_TEMP_0) == DIR_EAST) {
-				setobjectxyperm (HARPER_SUBMERGED_CAVERN, 7, 4)
-				setobjectmovementtype (HARPER_SUBMERGED_CAVERN, MOVEMENT_TYPE_FACE_RIGHT)
+				setobjectxyperm (HARPER_SUBMERGED_CAVE, 7, 4)
+				setobjectmovementtype (HARPER_SUBMERGED_CAVE, MOVEMENT_TYPE_FACE_RIGHT)
 			}
 			elif (var(VAR_TEMP_0) == DIR_NORTH) {
-				setobjectxyperm (HARPER_SUBMERGED_CAVERN, 8, 5)
-				setobjectmovementtype (HARPER_SUBMERGED_CAVERN, MOVEMENT_TYPE_FACE_UP)
+				setobjectxyperm (HARPER_SUBMERGED_CAVE, 8, 5)
+				setobjectmovementtype (HARPER_SUBMERGED_CAVE, MOVEMENT_TYPE_FACE_UP)
 			}
 			msgbox ("I'll stay here.")
 			closemessage
-			addobject (HARPER_SUBMERGED_CAVERN)
+			addobject (HARPER_SUBMERGED_CAVE)
 			destroyfollowernpc // We keep the follower on screen until the original object appears so there's no frame without the sprite. Also, if there's no delay between setobjectmovementtype and addobject, the object will appear, then turn.
 
 			if (var(VAR_TEMP_0) == DIR_SOUTH) {
-				applymovement (HARPER_SUBMERGED_CAVERN, Common_Movement_WalkLeft3)
+				applymovement (HARPER_SUBMERGED_CAVE, Common_Movement_WalkLeft3)
 				waitmovement (0)
-				applymovement (HARPER_SUBMERGED_CAVERN, Common_Movement_WalkDown)
+				applymovement (HARPER_SUBMERGED_CAVE, Common_Movement_WalkDown)
 			}
 			elif (var(VAR_TEMP_0) == DIR_EAST) {
-				applymovement (HARPER_SUBMERGED_CAVERN, Common_Movement_WalkLeft2)
+				applymovement (HARPER_SUBMERGED_CAVE, Common_Movement_WalkLeft2)
 			}
 			elif (var(VAR_TEMP_0) == DIR_NORTH) {
-				applymovement (HARPER_SUBMERGED_CAVERN, Common_Movement_WalkLeft3)
+				applymovement (HARPER_SUBMERGED_CAVE, Common_Movement_WalkLeft3)
 				waitmovement (0)
-				applymovement (HARPER_SUBMERGED_CAVERN, Common_Movement_WalkUp)
+				applymovement (HARPER_SUBMERGED_CAVE, Common_Movement_WalkUp)
 				
 			}
 			waitmovement (0)
-			setobjectmovementtype (HARPER_SUBMERGED_CAVERN, MOVEMENT_TYPE_LOOK_AROUND)
+			setobjectmovementtype (HARPER_SUBMERGED_CAVE, MOVEMENT_TYPE_LOOK_AROUND)
 
 			setvar (VAR_TEMP_5, 1)
 		}

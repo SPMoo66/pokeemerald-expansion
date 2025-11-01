@@ -10,7 +10,7 @@ SubmergedCave_1F_3R_StartHarperFollower::
 # 8 "data/maps/SubmergedCave_1F_3R/scripts.pory"
 	closemessage
 # 9 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	setfollowernpc 1, 0, Expansion1_Follower_Harper1, PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVERN
+	setfollowernpc 1, 0, Expansion1_Follower_Harper1, PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVE
 # 10 "data/maps/SubmergedCave_1F_3R/scripts.pory"
 	hidefollowernpc
 # 11 "data/maps/SubmergedCave_1F_3R/scripts.pory"

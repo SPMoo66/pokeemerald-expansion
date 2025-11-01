@@ -126,7 +126,7 @@ static const struct TrainerMon sParty_StevenPartnerGraniteCave[] = {
     }
 };
 
-static const struct TrainerMon sParty_HarperFollowerSubmergedCavern[] = {
+static const struct TrainerMon sParty_HarperFollowerSubmergedCave[] = {
     {
         .species = SPECIES_MIMIKYU,
         .lvl = 65,

@@ -60,9 +60,9 @@
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     },
 
-    [DIFFICULTY_NORMAL][PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVERN] =
+    [DIFFICULTY_NORMAL][PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVE] =
     {
-        .party = TRAINER_PARTY(sParty_HarperFollowerSubmergedCavern),
+        .party = TRAINER_PARTY(sParty_HarperFollowerSubmergedCave),
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerBackPic = TRAINER_BACK_PIC_WALLY,

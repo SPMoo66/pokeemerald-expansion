@@ -1,1 +1,109 @@
 mapscripts SubmergedCave_2F_1R_MapScripts {}
+
+script SubmergedCave_2F_1R_CommonEnterNonAnimDoor {
+	lock
+	applymovement (LOCALID_PLAYER, Common_Movement_SetInvisible)
+	playse (SE_EXIT)
+	delay (20)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkUp)
+	waitmovement (0)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_SetInvisible)
+	playse (SE_EXIT)
+	delay (20)
+	special (SpawnCameraObject)
+}
+
+script SubmergedCave_2F_1R_CommonEnterNonAnimDoorWest {
+	lock
+	applymovement (LOCALID_PLAYER, Common_Movement_SetInvisible)
+	playse (SE_EXIT)
+	delay (20)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkLeft)
+	waitmovement (0)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_SetInvisible)
+	playse (SE_EXIT)
+	delay (20)
+	special (SpawnCameraObject)
+}
+
+script SubmergedCave_2F_1R_CommonEnterNonAnimDoorEast {
+	lock
+	applymovement (LOCALID_PLAYER, Common_Movement_SetInvisible)
+	playse (SE_EXIT)
+	delay (20)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkRight)
+	waitmovement (0)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_SetInvisible)
+	playse (SE_EXIT)
+	delay (20)
+	special (SpawnCameraObject)
+}
+
+script SubmergedCave_2F_1R_CommonExitNonAnimDoor {
+	applymovement (LOCALID_PLAYER, Common_Movement_FaceDown)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_FaceDown)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_SetVisible)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkDown)
+	waitmovement (0)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_SetVisible)
+	waitmovement (0)
+}
+
+script SubmergedCave_2F_1R_CommonExitNonAnimDoorWest {
+	applymovement (LOCALID_PLAYER, Common_Movement_FaceRight)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_FaceRight)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_SetVisible)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight)
+	waitmovement (0)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_SetVisible)
+	waitmovement (0)
+}
+
+script SubmergedCave_2F_1R_CommonExitNonAnimDoorEast {
+	applymovement (LOCALID_PLAYER, Common_Movement_FaceLeft)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_FaceLeft)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_SetVisible)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkLeft)
+	waitmovement (0)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_SetVisible)
+	waitmovement (0)
+}
+
+
+script SubmergedCave_2F_1R_Warp1To2 {
+	call (SubmergedCave_2F_1R_CommonEnterNonAnimDoor)
+	applymovement (LOCALID_CAMERA, SubmergedCave_2F_1R_Movement1To2)
+	waitmovement (0)
+	special (RemoveCameraObject)
+	setobjectxy (LOCALID_PLAYER, 0, 12)
+	setobjectxy (OBJ_EVENT_ID_NPC_FOLLOWER, 0, 12)
+	call (SubmergedCave_2F_1R_CommonExitNonAnimDoorWest)
+	release
+}
+
+script SubmergedCave_2F_1R_Warp2To1 {
+	call (SubmergedCave_2F_1R_CommonEnterNonAnimDoorWest)
+	applymovement (LOCALID_CAMERA, SubmergedCave_2F_1R_Movement2To1)
+	waitmovement (0)
+	special (RemoveCameraObject)
+	setobjectxy (LOCALID_PLAYER, 35, 15)
+	setobjectxy (OBJ_EVENT_ID_NPC_FOLLOWER, 35, 15)
+	call (SubmergedCave_2F_1R_CommonExitNonAnimDoor)
+	release
+}
+
+movement SubmergedCave_2F_1R_Movement1To2 {
+	walk_diag_northwest * 3
+	walk_faster_left * 32
+}
+
+movement SubmergedCave_2F_1R_Movement2To1 {
+	walk_faster_right * 32
+	walk_diag_southeast * 3
+}

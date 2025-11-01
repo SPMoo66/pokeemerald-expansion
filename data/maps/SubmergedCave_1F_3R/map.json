@@ -15,7 +15,7 @@
   "connections": null,
   "object_events": [
     {
-      "local_id": "HARPER_SUBMERGED_CAVERN",
+      "local_id": "HARPER_SUBMERGED_CAVE",
       "graphics_id": "OBJ_EVENT_GFX_HARPER",
       "x": 5,
       "y": 4,

@@ -156,6 +156,7 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
+	warp MAP_SUBMERGED_CAVE_1F_3R, 0
 	release
 	end
 

@@ -2,13 +2,13 @@
 #ifndef GUARD_CONSTANTS_BATTLE_PARTNERS_H
 #define GUARD_CONSTANTS_BATTLE_PARTNERS_H
 
-#define PARTNER_NONE                             0
-#define PARTNER_STEVEN_MOSSDEEP                  1
-#define PARTNER_MAY_METEOR_FALLS                 2
-#define PARTNER_BRENDAN_METEOR_FALLS             3
-#define PARTNER_RAYQUAZA                         4
-#define PARTNER_STEVEN_GRANITE_CAVE              5
-#define PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVERN 6
-#define PARTNER_COUNT                            7
+#define PARTNER_NONE                           0
+#define PARTNER_STEVEN_MOSSDEEP                1
+#define PARTNER_MAY_METEOR_FALLS               2
+#define PARTNER_BRENDAN_METEOR_FALLS           3
+#define PARTNER_RAYQUAZA                       4
+#define PARTNER_STEVEN_GRANITE_CAVE            5
+#define PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVE 6
+#define PARTNER_COUNT                          7
 
 #endif  // GUARD_CONSTANTS_BATTLE_PARTNERS_H

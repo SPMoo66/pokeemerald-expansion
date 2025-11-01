@@ -30,6 +30,25 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 35,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SubmergedCave_2F_1R_Warp1To2"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SubmergedCave_2F_1R_Warp2To1"
+    }
+  ],
   "bg_events": []
 }

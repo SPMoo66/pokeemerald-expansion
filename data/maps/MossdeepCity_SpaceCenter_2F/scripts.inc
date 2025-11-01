@@ -7,7 +7,6 @@ MossdeepCity_SpaceCenter_2F_OnTransition:
 	setflag FLAG_TEMP_1
 	call_if_eq VAR_MOSSDEEP_CITY_STATE, 2, MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians
 	call_if_eq VAR_MOSSDEEP_SPACE_CENTER_STATE, 2, MossdeepCity_SpaceCenter_2F_EventScript_MoveDefeatedGrunts
-	call_if_eq VAR_EMERALBODY_RIVAL, 3, MossdeepCity_SpaceCenter_2F_EventScript_CheckIfReddAvailable
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians::
@@ -18,6 +17,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians::
 	setobjectmovementtype LOCALID_SPACE_CENTER_2F_RICH_BOY, MOVEMENT_TYPE_FACE_RIGHT
 	setobjectxyperm LOCALID_SPACE_CENTER_2F_GENTLEMAN, 1, 3
 	setobjectmovementtype LOCALID_SPACE_CENTER_2F_GENTLEMAN, MOVEMENT_TYPE_FACE_RIGHT
+	call_if_eq VAR_EMERALBODY_RIVAL, 3, MossdeepCity_SpaceCenter_2F_EventScript_CheckIfReddAvailable
 	return
 
 MossdeepCity_SpaceCenter_2F_EventScript_MoveDefeatedGrunts::

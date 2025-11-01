@@ -303,7 +303,7 @@ u8 MovementAction_SurfStillLeft_Step0(struct ObjectEvent *objectEvent, struct Sp
 u8 MovementAction_SurfStillLeft_Step1(struct ObjectEvent *objectEvent, struct Sprite *sprite);
 u8 MovementAction_SurfStillRight_Step0(struct ObjectEvent *objectEvent, struct Sprite *sprite);
 u8 MovementAction_SurfStillRight_Step1(struct ObjectEvent *objectEvent, struct Sprite *sprite);
-//fast diagonal
+// fast diagonal
 u8 MovementAction_WalkFastDiagonalUpLeft_Step0(struct ObjectEvent *, struct Sprite *);
 u8 MovementAction_WalkFastDiagonalUpRight_Step0(struct ObjectEvent *, struct Sprite *);
 u8 MovementAction_WalkFastDiagonalDownLeft_Step0(struct ObjectEvent *, struct Sprite *);

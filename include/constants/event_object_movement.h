@@ -260,7 +260,7 @@
 #define MOVEMENT_ACTION_SURF_STILL_UP                   0xAB
 #define MOVEMENT_ACTION_SURF_STILL_LEFT                 0xAC
 #define MOVEMENT_ACTION_SURF_STILL_RIGHT                0xAD
-//fast diagonal movement
+// fast diagonal movement
 #define MOVEMENT_ACTION_WALK_FAST_DIAGONAL_UP_LEFT      0xAE
 #define MOVEMENT_ACTION_WALK_FAST_DIAGONAL_UP_RIGHT     0xAF
 #define MOVEMENT_ACTION_WALK_FAST_DIAGONAL_DOWN_LEFT    0xB0

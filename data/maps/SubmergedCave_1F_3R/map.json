@@ -15,6 +15,7 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "HARPER_SUBMERGED_CAVERN",
       "graphics_id": "OBJ_EVENT_GFX_HARPER",
       "x": 5,
       "y": 4,
@@ -24,8 +25,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "SubmergedCave_1F_3R_StartHarperFollower",
+      "flag": "FLAG_SYS_HIDE_FOLLOWERS"
     }
   ],
   "warp_events": [
@@ -44,6 +45,16 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_TEMP_5",
+      "var_value": "0",
+      "script": "SubmergedCave_1F_3R_ClearHarperFollower"
+    }
+  ],
   "bg_events": []
 }

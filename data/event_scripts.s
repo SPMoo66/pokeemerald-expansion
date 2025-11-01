@@ -1144,6 +1144,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/recommended_hacks.inc"
 	.include "data/cynthia.inc"
 	.include "data/expansion_1/global.inc"
+	.include "data/expansion_1/follower_npc.inc"
 
 	.include "data/maps/LeafyClearing/scripts.inc"
 	.include "data/maps/CaveOfDreams/scripts.inc"

@@ -125,3 +125,36 @@ static const struct TrainerMon sParty_StevenPartnerGraniteCave[] = {
         .moves = {MOVE_ROCK_TOMB, MOVE_METAL_CLAW, MOVE_ENDEAVOR, MOVE_CURSE},
     }
 };
+
+static const struct TrainerMon sParty_HarperFollowerSubmergedCavern[] = {
+    {
+        .species = SPECIES_MIMIKYU,
+        .lvl = 65,
+		.ability = ABILITY_DISGUISE,
+        .nature = NATURE_ADAMANT,
+        .heldItem = ITEM_RED_CARD,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(4, 128, 0, 128, 0, 0),
+        .moves = {MOVE_SWORDS_DANCE, MOVE_SHADOW_CLAW, MOVE_PLAY_ROUGH, MOVE_SHADOW_SNEAK},
+    },
+    {
+        .species = SPECIES_CONTAGEON,
+        .lvl = 65,
+		.ability = ABILITY_CORROSION,
+        .nature = NATURE_MODEST,
+        .heldItem = ITEM_BLACK_SLUDGE,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(128, 0, 128, 0, 0, 4),
+        .moves = {MOVE_TOXIC, MOVE_PROTECT, MOVE_ACID_ARMOR, MOVE_VENOSHOCK},
+    },
+    {
+        .species = SPECIES_CORVIKNIGHT,
+        .lvl = 65,
+		.ability = ABILITY_MIRROR_ARMOR,
+        .nature = NATURE_ADAMANT,
+        .heldItem = ITEM_MEGA_STONE_G,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(128, 0, 4, 0, 0, 128),
+        .moves = {MOVE_ROOST, MOVE_BRAVE_BIRD, MOVE_IRON_HEAD, MOVE_SWAGGER},
+    }
+};

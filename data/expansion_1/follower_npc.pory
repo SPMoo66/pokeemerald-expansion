@@ -1,0 +1,6 @@
+script Expansion1_Follower_Harper1 {
+	faceplayer
+	msgbox ("Follower script")
+	closemessage
+	release
+}

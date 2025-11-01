@@ -1284,3 +1284,10 @@ script IncreasePokevialSize {
 	waitmessage
 	delay (60)
 }
+
+// This is mainly a debugging function to figure out what's in VAR_TEMP_0. Copy another Var into VAR_TEMP_0 if needed.
+script BufferNumberSring0 {
+	buffernumberstring (0, VAR_TEMP_0)
+	msgbox ("{STR_VAR_1}")
+	closemessage
+}

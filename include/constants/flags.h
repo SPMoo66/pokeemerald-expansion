@@ -1511,7 +1511,7 @@
 #define FLAG_MET_INVESTOR                           (SYSTEM_FLAGS + 0x85) // Met the Investor NPC
 #define FLAG_INVESTMENT_MADE                        (SYSTEM_FLAGS + 0x86) // Made an investment with the Investor NPC
 
-#define FLAG_UNUSED_0x8E7                           (SYSTEM_FLAGS + 0x87) // Unused
+#define FLAG_SYS_HIDE_FOLLOWERS                     (SYSTEM_FLAGS + 0x87) // Was unused. When set, this flag hides all NPCs that can become followers. Should be cleared when followers are cleared.
 
 #define FLAG_CHALLENGING_TRAINER                    (SYSTEM_FLAGS + 0x88) // Set for challenging trainers so level sync does not scale them two levels lower like standard trainers
 #define FLAG_PREVENT_OVERWORLD_SPEEDUP              (SYSTEM_FLAGS + 0x89) // Was unused

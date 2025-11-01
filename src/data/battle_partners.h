@@ -34,7 +34,7 @@
     {
         .party = TRAINER_PARTY(sParty_BrendanPartnerMeteorFalls),
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerBackPic = TRAINER_BACK_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -57,6 +57,16 @@
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerBackPic = TRAINER_BACK_PIC_STEVEN,
         .trainerName = _("Steven"),
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    },
+
+    [DIFFICULTY_NORMAL][PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVERN] =
+    {
+        .party = TRAINER_PARTY(sParty_HarperFollowerSubmergedCavern),
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerBackPic = TRAINER_BACK_PIC_WALLY,
+        .trainerName = _("Harper"),
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     },
 

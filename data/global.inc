@@ -1759,6 +1759,16 @@ IncreasePokevialSize::
 	return
 
 
+BufferNumberSring0::
+# 1290 "data/global.pory"
+	buffernumberstring 0, VAR_TEMP_0
+# 1291 "data/global.pory"
+	msgbox BufferNumberSring0_Text_0
+# 1292 "data/global.pory"
+	closemessage
+	return
+
+
 Mart_EventScript_TMClerk_Text_0:
 # 264 "data/global.pory"
 	.string "Sorry, I can only sell to trainers who\n"
@@ -1981,6 +1991,10 @@ EventScript_CapCollector_Text_29:
 # 745 "data/global.pory"
 	.string "You don't have any room in your Bag for\n"
 	.string "this item.$"
+
+BufferNumberSring0_Text_0:
+# 1291 "data/global.pory"
+	.string "{STR_VAR_1}$"
 
 BottleCapCollectorIntro::
 # 761 "data/global.pory"

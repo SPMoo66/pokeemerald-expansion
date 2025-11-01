@@ -5,11 +5,13 @@ script SubmergedCave_2F_1R_CommonEnterNonAnimDoor {
 	applymovement (LOCALID_PLAYER, Common_Movement_SetInvisible)
 	playse (SE_EXIT)
 	delay (20)
-	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkUp)
-	waitmovement (0)
-	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_SetInvisible)
-	playse (SE_EXIT)
-	delay (20)
+	if (flag(FLAG_SYS_HIDE_FOLLOWERS)) {
+		applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkUp)
+		waitmovement (0)
+		applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_SetInvisible)
+		playse (SE_EXIT)
+		delay (20)
+	}
 	special (SpawnCameraObject)
 }
 
@@ -18,11 +20,13 @@ script SubmergedCave_2F_1R_CommonEnterNonAnimDoorWest {
 	applymovement (LOCALID_PLAYER, Common_Movement_SetInvisible)
 	playse (SE_EXIT)
 	delay (20)
-	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkLeft)
-	waitmovement (0)
-	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_SetInvisible)
-	playse (SE_EXIT)
-	delay (20)
+	if (flag(FLAG_SYS_HIDE_FOLLOWERS)) {
+		applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkLeft)
+		waitmovement (0)
+		applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_SetInvisible)
+		playse (SE_EXIT)
+		delay (20)
+	}
 	special (SpawnCameraObject)
 }
 
@@ -31,11 +35,13 @@ script SubmergedCave_2F_1R_CommonEnterNonAnimDoorEast {
 	applymovement (LOCALID_PLAYER, Common_Movement_SetInvisible)
 	playse (SE_EXIT)
 	delay (20)
-	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkRight)
-	waitmovement (0)
-	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_SetInvisible)
-	playse (SE_EXIT)
-	delay (20)
+	if (flag(FLAG_SYS_HIDE_FOLLOWERS)) {
+		applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkRight)
+		waitmovement (0)
+		applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_SetInvisible)
+		playse (SE_EXIT)
+		delay (20)
+	}
 	special (SpawnCameraObject)
 }
 

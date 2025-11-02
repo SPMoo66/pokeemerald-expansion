@@ -258,6 +258,7 @@ gScriptCmdTable::
 	script_cmd_table_entry SCR_OP_SHUFFLEELITEFOUR              ScrCmd_shuffleelitefour,            requests_effects=1  @ 0xe8
 	script_cmd_table_entry SCR_OP_READGYMLEADER                 ScrCmd_readgymleader,               requests_effects=1  @ 0xe9
 	script_cmd_table_entry SCR_OP_SHUFFLEGYMLEADER              ScrCmd_shufflegymleader,            requests_effects=1  @ 0xea
+	script_cmd_table_entry SCR_OP_HIDEFOLLOWER                  ScrCmd_hidefollower,                requests_effects=1  @ 0xeb
 
 	.if ALLOCATE_SCRIPT_CMD_TABLE
 gScriptCmdTableEnd::

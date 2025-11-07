@@ -29,6 +29,43 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "21",
+      "script": "EventScript_MoveToEndlessFarOffSea"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "21",
+      "script": "EventScript_MoveToEndlessFarOffSea"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "21",
+      "script": "EventScript_MoveToEndlessFarOffSea"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "21",
+      "script": "EventScript_MoveToEndlessFarOffSea"
+    }
+  ],
   "bg_events": []
 }

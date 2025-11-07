@@ -6036,6 +6036,18 @@
       "secondary_tileset": "gTileset_HoennRegionMap",
       "border_filepath": "data/layouts/SlateportRegionMap/border.bin",
       "blockdata_filepath": "data/layouts/SlateportRegionMap/map.bin"
+    },
+    {
+      "id": "LAYOUT_FAR_OFF_SEA_ENDLESS",
+      "name": "FarOffSeaEndless_Layout",
+      "width": 25,
+      "height": 25,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Beach",
+      "secondary_tileset": "gTileset_OceanExp1",
+      "border_filepath": "data/layouts/FarOffSeaEndless/border.bin",
+      "blockdata_filepath": "data/layouts/FarOffSeaEndless/map.bin"
     }
   ]
 }

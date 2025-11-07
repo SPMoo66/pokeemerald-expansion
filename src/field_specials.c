@@ -521,7 +521,7 @@ bool32 ShoulDoJaksonExpansion1Call(void)
 
 bool32 ShouldEndEndlessFarOffSea(void)
 {
-    if (VarGet(VAR_EMERALBODY_RIVAL_STATE) == 21 && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_DEWFORD_TOWN))
+    if (VarGet(VAR_EMERALBODY_RIVAL_STATE) == 21 && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_FAR_OFF_SEA_ENDLESS))
     {
         if (++(*GetVarPointer(VAR_FAR_OFF_SEA_ENDLESS_STEP_COUNTER)) < 250)
             return FALSE;

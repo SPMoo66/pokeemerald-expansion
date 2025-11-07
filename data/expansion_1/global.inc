@@ -72,14 +72,6 @@ IllusoryGrotto_MonsterCommon2_Exp1::
 	return
 
 
-EventScript_EndEndlessFarOffSea::
-# 45 "data/expansion_1/global.pory"
-	msgbox EventScript_EndEndlessFarOffSea_Text_0, MSGBOX_AUTOCLOSE
-# 46 "data/expansion_1/global.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 22
-	return
-
-
 HealingSpring_Exp1_Text_0:
 # 2 "data/expansion_1/global.pory"
 	.string "It's a restorative spring.$"
@@ -96,7 +88,3 @@ IllusoryGrottoMovableRock_Exp1_Text_1:
 	.string "… … …\p"
 	.string "… … …\p"
 	.string "{PLAYER}! Try a different side!$"
-
-EventScript_EndEndlessFarOffSea_Text_0:
-# 45 "data/expansion_1/global.pory"
-	.string "Hello$"

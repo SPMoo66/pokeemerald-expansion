@@ -9,6 +9,7 @@ script SlateportRegionMap_BoatSceneInit {
 	lock
 	setflag (FLAG_SYS_SPAWN_INVISIBLE)
 	warp (MAP_SLATEPORT_REGION_MAP, 10, 8)
+	waitstate
 }
 
 script SlateportRegionMap_BoatScene {
@@ -24,6 +25,7 @@ script SlateportRegionMap_BoatScene {
 	setflag (FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY) // temporarily hides Mr Briney and Peeko, re-clears later
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 20) // temporary until the rest of the script is created, this should be much earlier
 	warp (MAP_SS_TIDAL_CORRIDOR, 11, 3)
+	waitstate
 }
 
 movement SlateportRegionMap_Movement {
@@ -49,4 +51,5 @@ script SSTidal_Scene01_OnFrame {
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 21)
 	clearflag (FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY)
 	warpsilent (MAP_ILLUSORY_GROTTO_B4F_1R, 26, 7)
+	waitstate
 }

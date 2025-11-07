@@ -1235,3 +1235,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SS_Tidal_Dungeon_B1F_1R/scripts.inc"
 
 	.include "data/maps/SS_Tidal_Dungeon_1F_2R/scripts.inc"
+
+	.include "data/maps/SlateportRegionMap/scripts.inc"

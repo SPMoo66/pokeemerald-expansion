@@ -6024,6 +6024,18 @@
       "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/SS_Tidal_Dungeon_1F_2R/border.bin",
       "blockdata_filepath": "data/layouts/SS_Tidal_Dungeon_1F_2R/map.bin"
+    },
+    {
+      "id": "LAYOUT_SLATEPORT_REGION_MAP",
+      "name": "SlateportRegionMap_Layout",
+      "width": 22,
+      "height": 26,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Beach",
+      "secondary_tileset": "gTileset_HoennRegionMap",
+      "border_filepath": "data/layouts/SlateportRegionMap/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportRegionMap/map.bin"
     }
   ]
 }

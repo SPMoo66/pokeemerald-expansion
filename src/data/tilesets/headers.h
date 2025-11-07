@@ -907,3 +907,14 @@ const struct Tileset gTileset_Cave2_Exp_1 =
     .metatileAttributes = gMetatileAttributes_Cave2_Exp_1,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_HoennRegionMap =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_HoennRegionMap,
+    .palettes = gTilesetPalettes_HoennRegionMap,
+    .metatiles = gMetatiles_HoennRegionMap,
+    .metatileAttributes = gMetatileAttributes_HoennRegionMap,
+    .callback = NULL,
+};

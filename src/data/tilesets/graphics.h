@@ -1767,3 +1767,22 @@ const u16 gTilesetPalettes_Cave2_Exp_1[][16] =
 };
 
 const u32 gTilesetTiles_Cave2_Exp_1[] = INCBIN_U32("data/tilesets/primary/cave_2_exp_1/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_HoennRegionMap[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/hoenn_region_map/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hoenn_region_map/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hoenn_region_map/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hoenn_region_map/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hoenn_region_map/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hoenn_region_map/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hoenn_region_map/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hoenn_region_map/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hoenn_region_map/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hoenn_region_map/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hoenn_region_map/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hoenn_region_map/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hoenn_region_map/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_HoennRegionMap[] = INCBIN_U32("data/tilesets/secondary/hoenn_region_map/tiles.4bpp.lz");

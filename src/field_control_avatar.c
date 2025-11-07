@@ -731,6 +731,16 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
             ScriptContext_SetupScript(EventScript_VsSeekerChargingDone);
             return TRUE;
         }
+        if (ShoulDoJaksonExpansion1Call())
+        {
+            ScriptContext_SetupScript(EventScript_JaksonExpansion1Call);
+            return TRUE;
+        }
+        if (ShouldEndEndlessFarOffSea())
+        {
+            ScriptContext_SetupScript(EventScript_EndEndlessFarOffSea);
+            return TRUE;
+        }
     }
 
     if (SafariZoneTakeStep() == TRUE)

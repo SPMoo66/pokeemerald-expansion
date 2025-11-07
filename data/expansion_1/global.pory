@@ -40,3 +40,8 @@ script IllusoryGrotto_MonsterCommon2_Exp1 {
 	applymovement (LOCALID_PLAYER, Common_Movement_LockFacingDirection)
 	waitmovement (0)
 }
+
+script EventScript_EndEndlessFarOffSea {
+	msgbox ("Hello", MSGBOX_AUTOCLOSE)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 22)
+}

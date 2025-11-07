@@ -7,3 +7,11 @@
 	# 20: Set when meeting with the rivals group in Slateport Harbor
 	# 21: Set after waking up in Illusory Grotto
 	# 22: tbd
+
+script EventScript_JaksonExpansion1Call {
+	lockall
+	pokenavcall ("it's jakson lmao")
+	waitmessage
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 19)
+	releaseall
+}

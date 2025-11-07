@@ -199,9 +199,9 @@
 #define VAR_WEATHER_INSTITUTE_STATE                      0x40B3
 #define VAR_SS_TIDAL_STATE                               0x40B4
 #define VAR_TRICK_HOUSE_ENTER_FROM_CORRIDOR              0x40B5
-#define VAR_UNUSED_0x40B6                                0x40B6 // Unused Var
+#define VAR_FAR_OFF_SEA_ENDLESS_STEP_COUNTER             0x40B6 // Was unused
 #define VAR_SLATEPORT_FAN_CLUB_STATE                     0x40B7
-#define VAR_UNUSED_0x40B8                                0x40B8 // Unused Var
+#define VAR_JAKSON_EXPANSION1_CALL_STEP_COUNTER          0x40B8 // Was unused
 #define VAR_MT_PYRE_STATE                                0x40B9
 #define VAR_NEW_MAUVILLE_STATE                           0x40BA
 #define VAR_UNUSED_0x40BB                                0x40BB // Unused Var

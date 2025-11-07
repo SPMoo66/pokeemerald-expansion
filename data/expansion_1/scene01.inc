@@ -100,8 +100,10 @@ SSTidal_Scene01_OnFrame::
 # 47 "data/expansion_1/scene01.pory"
 	msgbox SSTidal_Scene01_OnFrame_Text_0, MSGBOX_DEFAULT
 # 49 "data/expansion_1/scene01.pory"
-	clearflag FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY
+	setvar VAR_EMERALBODY_RIVAL_STATE, 21
 # 50 "data/expansion_1/scene01.pory"
+	clearflag FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY
+# 51 "data/expansion_1/scene01.pory"
 	warpsilent MAP_ILLUSORY_GROTTO_B4F_1R, 26, 7
 	return
 

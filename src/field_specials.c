@@ -496,6 +496,42 @@ bool32 ShouldDoRivalRayquazaCall(void)
     return TRUE;
 }
 
+bool32 ShoulDoJaksonExpansion1Call(void)
+{
+    if (VarGet(VAR_EMERALBODY_RIVAL_STATE) == 18)
+    {
+        switch (gMapHeader.mapType)
+        {
+        case MAP_TYPE_TOWN:
+        case MAP_TYPE_CITY:
+        case MAP_TYPE_ROUTE:
+        case MAP_TYPE_OCEAN_ROUTE:
+            if (++(*GetVarPointer(VAR_JAKSON_EXPANSION1_CALL_STEP_COUNTER)) < 250)
+                return FALSE;
+            break;
+        default:
+            return FALSE;
+        }
+    }
+    else
+        return FALSE;
+
+    return TRUE;
+}
+
+bool32 ShouldEndEndlessFarOffSea(void)
+{
+    if (VarGet(VAR_EMERALBODY_RIVAL_STATE) == 21 && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_DEWFORD_TOWN))
+    {
+        if (++(*GetVarPointer(VAR_FAR_OFF_SEA_ENDLESS_STEP_COUNTER)) < 250)
+            return FALSE;
+    }
+    else
+        return FALSE;
+
+    return TRUE;
+}
+
 u8 GetLinkPartnerNames(void)
 {
     u8 i;

@@ -46,6 +46,7 @@ script SSTidal_Scene01_OnFrame {
 	
 	msgbox ("Scene01", MSGBOX_DEFAULT)
 	
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 21)
 	clearflag (FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY)
 	warpsilent (MAP_ILLUSORY_GROTTO_B4F_1R, 26, 7)
 }

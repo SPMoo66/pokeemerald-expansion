@@ -1229,3 +1229,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SubmergedCave_1F_3R/scripts.inc"
 
 	.include "data/maps/SubmergedCave_2F_1R/scripts.inc"
+
+	.include "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.inc"
+
+	.include "data/maps/SS_Tidal_Dungeon_B1F_1R/scripts.inc"
+
+	.include "data/maps/SS_Tidal_Dungeon_1F_2R/scripts.inc"

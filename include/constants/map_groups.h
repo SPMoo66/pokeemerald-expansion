@@ -642,6 +642,9 @@
 #define MAP_SUBMERGED_CAVE_1F_2R              (8 | (34 << 8))
 #define MAP_SUBMERGED_CAVE_1F_3R              (9 | (34 << 8))
 #define MAP_SUBMERGED_CAVE_2F_1R              (10 | (34 << 8))
+#define MAP_SS_TIDAL_DUNGEON_1F_1R            (11 | (34 << 8))
+#define MAP_SS_TIDAL_DUNGEON_B1F_1R           (12 | (34 << 8))
+#define MAP_SS_TIDAL_DUNGEON_1F_2R            (13 | (34 << 8))
 
 // gMapGroup_Exp1Exteriors
 #define MAP_MAUVE_CAMP                      (0 | (35 << 8))

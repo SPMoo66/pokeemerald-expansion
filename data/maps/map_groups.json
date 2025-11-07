@@ -669,7 +669,10 @@
     "IllusoryGrotto_B4F_2R_Underwater",
     "SubmergedCave_1F_2R",
     "SubmergedCave_1F_3R",
-    "SubmergedCave_2F_1R"
+    "SubmergedCave_2F_1R",
+    "SS_Tidal_Dungeon_1F_1R",
+    "SS_Tidal_Dungeon_B1F_1R",
+    "SS_Tidal_Dungeon_1F_2R"
   ],
   "gMapGroup_Exp1Exteriors": [
     "MauveCamp",

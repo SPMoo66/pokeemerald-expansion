@@ -1145,6 +1145,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/cynthia.inc"
 	.include "data/expansion_1/global.inc"
 	.include "data/expansion_1/follower_npc.inc"
+	.include "data/expansion_1/scene01.inc"
 
 	.include "data/maps/LeafyClearing/scripts.inc"
 	.include "data/maps/CaveOfDreams/scripts.inc"
@@ -1181,59 +1182,31 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MagmaHideout_PortalRoom/scripts.inc"
 	.include "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.inc"
 	.include "data/maps/OvergrownJungle/scripts.inc"
-
 	.include "data/maps/MauveCamp/scripts.inc"
-
 	.include "data/maps/MauveIslandSouth/scripts.inc"
-
 	.include "data/maps/MauveIslandWest/scripts.inc"
-
 	.include "data/maps/FarOffSeaWest/scripts.inc"
-
 	.include "data/maps/FarOffSeaWest_2/scripts.inc"
-
 	.include "data/maps/IllusoryGrottoExterior/scripts.inc"
-
 	.include "data/maps/FarOffSeaWest_2_Underwater_1/scripts.inc"
-
 	.include "data/maps/FarOffSeaWest_2_Underwater_2/scripts.inc"
-
 	.include "data/maps/FarOffSeaWest_Underwater_1/scripts.inc"
-
 	.include "data/maps/IllusoryGrotto_1F_1R/scripts.inc"
-
 	.include "data/maps/SubmergedCave_1F_1R/scripts.inc"
-
 	.include "data/maps/IllusoryGrotto_B1F_1R/scripts.inc"
-
 	.include "data/maps/IllusoryGrotto_B2F_1R/scripts.inc"
-
 	.include "data/maps/IllusoryGrotto_B3F_1R/scripts.inc"
-
 	.include "data/maps/IllusoryGrotto_B4F_1R/scripts.inc"
-
 	.include "data/maps/IllusoryGrotto_B4F_2R/scripts.inc"
-
 	.include "data/maps/IllusoryGrotto_B4F_2R_Underwater/scripts.inc"
-
 	.include "data/maps/MauveIslandSoutheast/scripts.inc"
-
 	.include "data/maps/FarOffSeaSouth/scripts.inc"
-
 	.include "data/maps/MauveIslandSouth_Underwater/scripts.inc"
-
 	.include "data/maps/FarOffSeaSouth_Underwater/scripts.inc"
-
 	.include "data/maps/SubmergedCave_1F_2R/scripts.inc"
-
 	.include "data/maps/SubmergedCave_1F_3R/scripts.inc"
-
 	.include "data/maps/SubmergedCave_2F_1R/scripts.inc"
-
 	.include "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.inc"
-
 	.include "data/maps/SS_Tidal_Dungeon_B1F_1R/scripts.inc"
-
 	.include "data/maps/SS_Tidal_Dungeon_1F_2R/scripts.inc"
-
 	.include "data/maps/SlateportRegionMap/scripts.inc"

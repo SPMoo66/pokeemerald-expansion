@@ -1,0 +1,9 @@
+#This file contains generic scripts without movements
+
+	# State descriptions for VAR_EMERALBODY_RIVAL_STATE
+	#17-: For everything before, see data/emeralbody_rivals/rival_scripts.pory
+	# 18: Set after Littleroot postgame event
+	# 19: Set after receiving Expansion 1, Call1, from Jakson
+	# 20: Set when meeting with the rivals group in Slateport Harbor
+	# 21: Set after waking up in Illusory Grotto
+	# 22: tbd

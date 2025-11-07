@@ -1,8 +1,20 @@
 SSTidalCorridor_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, SSTidalCorridor_OnTransition
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, SSTidalCorridor_OnWarp
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, SSTidalCorridor_OnFrame
 	.byte 0
 
+SSTidalCorridor_OnTransition:
+	setflag (FLAG_TEMP_4)
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 20, SSTidal_Scene01_OnTransition
+	end
+
+SSTidalCorridor_OnWarp:
+	map_script_2 VAR_EMERALBODY_RIVAL_STATE, 20, SSTidal_Scene01_OnWarp
+	.2byte 0
+
 SSTidalCorridor_OnFrame:
+	map_script_2 VAR_EMERALBODY_RIVAL_STATE, 20, SSTidal_Scene01_OnFrame
 	map_script_2 VAR_SS_TIDAL_SCOTT_STATE, 0, SSTidalCorridor_EventScript_ScottScene
 	map_script_2 VAR_SS_TIDAL_STATE, SS_TIDAL_BOARD_SLATEPORT, SSTidalCorridor_EventScript_DepartSlateportForLilycove
 	map_script_2 VAR_SS_TIDAL_STATE, SS_TIDAL_BOARD_LILYCOVE, SSTidalCorridor_EventScript_DepartLilycoveForSlateport

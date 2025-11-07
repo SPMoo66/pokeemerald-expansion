@@ -6029,7 +6029,7 @@
       "id": "LAYOUT_SLATEPORT_REGION_MAP",
       "name": "SlateportRegionMap_Layout",
       "width": 22,
-      "height": 26,
+      "height": 28,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Beach",

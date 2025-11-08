@@ -1,0 +1,63 @@
+{
+  "id": "MAP_SS_TIDAL_DUNGEON_1F_2R_ROOMS",
+  "name": "SS_Tidal_Dungeon_1F_2R_Rooms",
+  "layout": "LAYOUT_SS_TIDAL_DUNGEON_1F_2R_ROOMS",
+  "music": "MUS_DP_VS_ARCEUS",
+  "region_map_section": "MAPSEC_SS_TIDAL_DUNGEON",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TIDAL_DUNGEON_1F_2R",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 4,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TIDAL_DUNGEON_1F_2R",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 13,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TIDAL_DUNGEON_1F_2R",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 14,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TIDAL_DUNGEON_1F_2R",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TIDAL_DUNGEON_1F_2R",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 13,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TIDAL_DUNGEON_1F_2R",
+      "dest_warp_id": "4"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

@@ -1,0 +1,3 @@
+SS_Tidal_Dungeon_1F_2R_Rooms_MapScripts::
+	.byte 0
+

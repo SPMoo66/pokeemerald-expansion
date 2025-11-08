@@ -672,7 +672,10 @@
     "SubmergedCave_2F_1R",
     "SS_Tidal_Dungeon_1F_1R",
     "SS_Tidal_Dungeon_B1F_1R",
-    "SS_Tidal_Dungeon_1F_2R"
+    "SS_Tidal_Dungeon_1F_2R",
+    "SS_Tidal_Dungeon_1F_1R_Room1",
+    "SS_Tidal_Dungeon_1F_1R_Room2",
+    "SS_Tidal_Dungeon_1F_2R_Rooms"
   ],
   "gMapGroup_Exp1Exteriors": [
     "MauveCamp",

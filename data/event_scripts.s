@@ -1213,3 +1213,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SlateportRegionMap/scripts.inc"
 
 	.include "data/maps/FarOffSeaEndless/scripts.inc"
+
+	.include "data/maps/SS_Tidal_Dungeon_1F_1R_Room1/scripts.inc"
+
+	.include "data/maps/SS_Tidal_Dungeon_1F_1R_Room2/scripts.inc"
+
+	.include "data/maps/SS_Tidal_Dungeon_1F_2R_Rooms/scripts.inc"

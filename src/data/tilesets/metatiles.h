@@ -231,3 +231,6 @@ const u16 gMetatileAttributes_Cave2_Exp_1[] = INCBIN_U16("data/tilesets/primary/
 
 const u16 gMetatiles_HoennRegionMap[] = INCBIN_U16("data/tilesets/secondary/hoenn_region_map/metatiles.bin");
 const u16 gMetatileAttributes_HoennRegionMap[] = INCBIN_U16("data/tilesets/secondary/hoenn_region_map/metatile_attributes.bin");
+
+const u16 gMetatiles_Cave2_Sub1_Exp_1[] = INCBIN_U16("data/tilesets/secondary/cave_2_sub_1_exp_1/metatiles.bin");
+const u16 gMetatileAttributes_Cave2_Sub1_Exp_1[] = INCBIN_U16("data/tilesets/secondary/cave_2_sub_1_exp_1/metatile_attributes.bin");

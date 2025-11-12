@@ -918,3 +918,14 @@ const struct Tileset gTileset_HoennRegionMap =
     .metatileAttributes = gMetatileAttributes_HoennRegionMap,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Cave2_Sub1_Exp_1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Cave2_Sub1_Exp_1,
+    .palettes = gTilesetPalettes_Cave2_Sub1_Exp_1,
+    .metatiles = gMetatiles_Cave2_Sub1_Exp_1,
+    .metatileAttributes = gMetatileAttributes_Cave2_Sub1_Exp_1,
+    .callback = NULL,
+};

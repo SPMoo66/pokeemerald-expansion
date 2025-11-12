@@ -1219,3 +1219,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SS_Tidal_Dungeon_1F_1R_Room2/scripts.inc"
 
 	.include "data/maps/SS_Tidal_Dungeon_1F_2R_Rooms/scripts.inc"
+
+	.include "data/maps/FarOffSeaWest_2_Underwater_1_BlanchedDepths_Entrance/scripts.inc"
+
+	.include "data/maps/BlanchedDepths_1F_1R/scripts.inc"

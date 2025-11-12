@@ -675,7 +675,8 @@
     "SS_Tidal_Dungeon_1F_2R",
     "SS_Tidal_Dungeon_1F_1R_Room1",
     "SS_Tidal_Dungeon_1F_1R_Room2",
-    "SS_Tidal_Dungeon_1F_2R_Rooms"
+    "SS_Tidal_Dungeon_1F_2R_Rooms",
+    "BlanchedDepths_1F_1R"
   ],
   "gMapGroup_Exp1Exteriors": [
     "MauveCamp",
@@ -692,6 +693,7 @@
     "MauveIslandSouth_Underwater",
     "FarOffSeaSouth_Underwater",
     "SlateportRegionMap",
-    "FarOffSeaEndless"
+    "FarOffSeaEndless",
+    "FarOffSeaWest_2_Underwater_1_BlanchedDepths_Entrance"
   ]
 }

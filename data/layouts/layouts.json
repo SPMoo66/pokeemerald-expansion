@@ -6084,6 +6084,30 @@
       "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/SS_Tidal_Dungeon_1F_2R_Rooms/border.bin",
       "blockdata_filepath": "data/layouts/SS_Tidal_Dungeon_1F_2R_Rooms/map.bin"
+    },
+    {
+      "id": "LAYOUT_FAR_OFF_SEA_WEST_2_UNDERWATER_1_BLANCHED_DEPTHS_ENTRANCE",
+      "name": "FarOffSeaWest_2_Underwater_1_BlanchedDepths_Entrance_Layout",
+      "width": 8,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_UnderwaterExp1",
+      "secondary_tileset": "gTileset_OceanExp1",
+      "border_filepath": "data/layouts/FarOffSeaWest_2_Underwater_1_BlanchedDepths_Entrance/border.bin",
+      "blockdata_filepath": "data/layouts/FarOffSeaWest_2_Underwater_1_BlanchedDepths_Entrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_BLANCHED_DEPTHS_1F_1R",
+      "name": "BlanchedDepths_1F_1R_Layout",
+      "width": 35,
+      "height": 25,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Cave2_Exp_1",
+      "secondary_tileset": "gTileset_Cave2_Sub1_Exp_1",
+      "border_filepath": "data/layouts/BlanchedDepths_1F_1R/border.bin",
+      "blockdata_filepath": "data/layouts/BlanchedDepths_1F_1R/map.bin"
     }
   ]
 }

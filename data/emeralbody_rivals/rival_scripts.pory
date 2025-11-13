@@ -334,6 +334,7 @@ script Rival_Scene03 {
 	removeobject (JAKSON_RUSTBORO)
 	fadescreenswapbuffers (FADE_FROM_BLACK)
 	fadedefaultbgm
+	special (RemoveCameraObject)
 	setflag (FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL)
 	release
 }

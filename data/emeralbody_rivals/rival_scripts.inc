@@ -599,8 +599,10 @@ Rival_Scene03_5:
 # 336 "data/emeralbody_rivals/rival_scripts.pory"
 	fadedefaultbgm
 # 337 "data/emeralbody_rivals/rival_scripts.pory"
-	setflag FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL
+	special RemoveCameraObject
 # 338 "data/emeralbody_rivals/rival_scripts.pory"
+	setflag FLAG_ENABLE_EMIB_RIVAL_MATCH_CALL
+# 339 "data/emeralbody_rivals/rival_scripts.pory"
 	release
 	return
 
@@ -633,592 +635,592 @@ Rival_Scene03_10:
 
 
 Sakura_Town04::
-# 344 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 345 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 346 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town04_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town04::
-# 349 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Harper
 # 350 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Harper
+# 351 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town04_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town04::
-# 354 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Redd
 # 355 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Redd
+# 356 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town04_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town04::
-# 359 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 360 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 361 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town04_JaksonText, MSGBOX_NPC
 	return
 
 
 Baron_Town04::
-# 364 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
 # 365 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Baron
+# 366 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town04_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town05::
-# 371 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 372 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 373 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town05_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town05::
-# 376 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Harper
 # 377 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Harper
+# 378 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town05_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town05::
-# 381 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Redd
 # 382 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Redd
+# 383 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town05_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town05::
-# 386 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 387 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 388 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town05_JaksonText, MSGBOX_NPC
 	return
 
 
 Baron_Town05::
-# 391 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
 # 392 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Baron
+# 393 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town05_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town06::
-# 398 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 399 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 400 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town06_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town06::
-# 403 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Harper
 # 404 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Harper
+# 405 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town06_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town06::
-# 408 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Redd
 # 409 "data/emeralbody_rivals/rival_scripts.pory"
-	msgbox Town06_ReddText1, MSGBOX_NPC
-# 410 "data/emeralbody_rivals/rival_scripts.pory"
-	applymovement 5, Common_Movement_QuestionMark
-# 411 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Redd
+# 410 "data/emeralbody_rivals/rival_scripts.pory"
+	msgbox Town06_ReddText1, MSGBOX_NPC
+# 411 "data/emeralbody_rivals/rival_scripts.pory"
+	applymovement 5, Common_Movement_QuestionMark
 # 412 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Redd
+# 413 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town06_ReddText2, MSGBOX_NPC
 	return
 
 
 Jakson_Town06::
-# 416 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 417 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 418 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town06_JaksonText, MSGBOX_NPC
 	return
 
 
 Baron_Town06::
-# 421 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
 # 422 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Baron
+# 423 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town06_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town07::
-# 428 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 429 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 430 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town07_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town07::
-# 433 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Harper
 # 434 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Harper
+# 435 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town07_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town07::
-# 438 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Redd
 # 439 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Redd
+# 440 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town07_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town07::
-# 443 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 444 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 445 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town07_JaksonText, MSGBOX_NPC
 	return
 
 
 Baron_Town07::
-# 448 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
 # 449 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Baron
+# 450 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town07_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town08::
-# 455 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 456 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 457 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town08_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town08::
-# 460 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Harper
 # 461 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Harper
+# 462 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town08_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town08::
-# 465 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Redd
 # 466 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Redd
+# 467 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town08_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town08::
-# 470 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 471 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 472 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town08_JaksonText, MSGBOX_NPC
 	return
 
 
 Baron_Town08::
-# 475 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
 # 476 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Baron
+# 477 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town08_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town09::
-# 482 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 483 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 484 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town09_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town09::
-# 487 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Harper
 # 488 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Harper
+# 489 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town09_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town09::
-# 492 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Redd
 # 493 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Redd
+# 494 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town09_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town09::
-# 497 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 498 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 499 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town09_JaksonText, MSGBOX_NPC
 	return
 
 
 Baron_Town09::
-# 502 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
 # 503 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Baron
+# 504 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town09_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town10::
-# 509 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 510 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 511 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town10_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town10::
-# 514 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Harper
 # 515 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Harper
+# 516 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town10_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town10::
-# 519 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Redd
 # 520 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Redd
+# 521 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town10_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town10::
-# 524 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 525 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 526 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town10_JaksonText, MSGBOX_NPC
 	return
 
 
 Baron_Town10::
-# 529 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
 # 530 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Baron
+# 531 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town10_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town11::
-# 536 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 537 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 538 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town11_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town11::
-# 541 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Harper
 # 542 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Harper
+# 543 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town11_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town11::
-# 546 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Redd
 # 547 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Redd
+# 548 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town11_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town11::
-# 551 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 552 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 553 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town11_JaksonText, MSGBOX_NPC
 	return
 
 
 Baron_Town11::
-# 556 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
 # 557 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Baron
+# 558 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town11_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town12::
-# 563 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 564 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 565 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town12_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town12::
-# 568 "data/emeralbody_rivals/rival_scripts.pory"
-	lock
 # 569 "data/emeralbody_rivals/rival_scripts.pory"
-	faceplayer
+	lock
 # 570 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Harper
+	faceplayer
 # 571 "data/emeralbody_rivals/rival_scripts.pory"
-	msgbox Town12_HarperTextQ, MSGBOX_YESNO
+	speakername CommonText_Harper
 # 572 "data/emeralbody_rivals/rival_scripts.pory"
+	msgbox Town12_HarperTextQ, MSGBOX_YESNO
+# 573 "data/emeralbody_rivals/rival_scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Harper_Town12_2
-# 576 "data/emeralbody_rivals/rival_scripts.pory"
+# 577 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town12_HarperTextNo, MSGBOX_NPC
 Harper_Town12_1:
-# 578 "data/emeralbody_rivals/rival_scripts.pory"
+# 579 "data/emeralbody_rivals/rival_scripts.pory"
 	release
 	return
 
 Harper_Town12_2:
-# 573 "data/emeralbody_rivals/rival_scripts.pory"
+# 574 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town12_HarperTextYes, MSGBOX_NPC
 	goto Harper_Town12_1
 
 
 Redd_Town12::
-# 582 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Redd
 # 583 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Redd
+# 584 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town12_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town12::
-# 587 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 588 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 589 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town12_JaksonText, MSGBOX_NPC
 	return
 
 
 Baron_Town12::
-# 592 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
 # 593 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Baron
+# 594 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town12_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town13::
-# 599 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 600 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 601 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town13_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town13::
-# 604 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Harper
 # 605 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Harper
+# 606 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town13_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town13::
-# 609 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Redd
 # 610 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Redd
+# 611 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town13_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town13::
-# 614 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 615 "data/emeralbody_rivals/rival_scripts.pory"
-	msgbox Town13_JaksonText, MSGBOX_NPC
-# 616 "data/emeralbody_rivals/rival_scripts.pory"
-	closemessage
-# 617 "data/emeralbody_rivals/rival_scripts.pory"
-	call Common_EventScript_OutOfCenterPartyHeal
-# 618 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Jakson
+# 616 "data/emeralbody_rivals/rival_scripts.pory"
+	msgbox Town13_JaksonText, MSGBOX_NPC
+# 617 "data/emeralbody_rivals/rival_scripts.pory"
+	closemessage
+# 618 "data/emeralbody_rivals/rival_scripts.pory"
+	call Common_EventScript_OutOfCenterPartyHeal
 # 619 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 620 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town13_JaksonTextAfter, MSGBOX_NPC
 	return
 
 
 Baron_Town13::
-# 623 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
 # 624 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Baron
+# 625 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town13_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town14::
-# 630 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 631 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 632 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town14_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town14::
-# 635 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Harper
 # 636 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Harper
+# 637 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town14_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town14::
-# 640 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Redd
 # 641 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Redd
+# 642 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town14_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town14::
-# 645 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 646 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 647 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town14_JaksonText, MSGBOX_NPC
 	return
 
 
 Baron_Town14::
-# 650 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
 # 651 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Baron
+# 652 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town14_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town15::
-# 657 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 658 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 659 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town15_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town15::
-# 662 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Harper
 # 663 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Harper
+# 664 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town15_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town15::
-# 667 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Redd
 # 668 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Redd
+# 669 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town15_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town15::
-# 672 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 673 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 674 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town15_JaksonText, MSGBOX_NPC
 	return
 
 
 Baron_Town15::
-# 677 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
 # 678 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Baron
+# 679 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town15_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town16::
-# 684 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 685 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 686 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town16_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town16::
-# 689 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Harper
 # 690 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Harper
+# 691 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town16_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town16::
-# 694 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Redd
 # 695 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Redd
+# 696 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town16_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town16::
-# 699 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 700 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 701 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town16_JaksonText, MSGBOX_NPC
 	return
 
 
 Baron_Town16::
-# 704 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
 # 705 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Baron
+# 706 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town16_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town18::
-# 711 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 712 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 713 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town18_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town18::
-# 716 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Harper
 # 717 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Harper
+# 718 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town18_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town18::
-# 721 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Redd
 # 722 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Redd
+# 723 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town18_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town18::
-# 726 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 727 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 728 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town18_JaksonText, MSGBOX_NPC
 	return
 
 
 Baron_Town18::
-# 731 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
 # 732 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Baron
+# 733 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town18_BaronText, MSGBOX_NPC
 	return
 

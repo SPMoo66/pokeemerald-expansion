@@ -1178,6 +1178,8 @@ u16 GetLocationMusic(struct WarpData *warp)
         return MUS_ENCOUNTER_MAGMA;
     else if (IsInfiltratedWeatherInstitute(warp) == TRUE)
         return MUS_MT_CHIMNEY;
+    else if (VarGet(VAR_EMERALBODY_RIVAL_STATE) == 20 && warp->mapNum == MAP_NUM(MAP_SS_TIDAL_CORRIDOR))
+        return MUS_HG_SS_AQUA;
     else
         return Overworld_GetMapHeaderByGroupAndId(warp->mapGroup, warp->mapNum)->music;
 }

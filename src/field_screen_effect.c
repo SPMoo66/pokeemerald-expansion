@@ -91,24 +91,29 @@ void WarpFadeInScreen(void)
     {
     case 0:
         FillPalBufferBlack();
-        FadeScreen(FADE_FROM_BLACK, 0);
+        if (!FlagGet(FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER))
+            FadeScreen(FADE_FROM_BLACK, 0);
         break;
     case 1:
         FillPalBufferWhite();
-        FadeScreen(FADE_FROM_WHITE, 0);
+        if (!FlagGet(FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER))
+            FadeScreen(FADE_FROM_WHITE, 0);
     }
 }
 
 void FadeInFromWhite(void)
 {
     FillPalBufferWhite();
-    FadeScreen(FADE_FROM_WHITE, 8);
+    if (!FlagGet(FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER))
+        FadeScreen(FADE_FROM_WHITE, 8);
+	
 }
 
 void FadeInFromBlack(void)
 {
     FillPalBufferBlack();
-    FadeScreen(FADE_FROM_BLACK, 0);
+    if (!FlagGet(FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER))
+        FadeScreen(FADE_FROM_BLACK, 0);
 }
 
 void WarpFadeOutScreen(void)

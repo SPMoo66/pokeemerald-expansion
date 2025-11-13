@@ -50,6 +50,8 @@ script SSTidal_Scene01_OnFrame {
 	
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 21)
 	clearflag (FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY)
-	warpsilent (MAP_ILLUSORY_GROTTO_B4F_1R, 26, 7)
+	setflag (FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER)
+	setflag (FLAG_DONT_START_MUSIC_ON_WARP)
+	warp (MAP_ILLUSORY_GROTTO_B4F_1R, 26, 7)
 	waitstate
 }

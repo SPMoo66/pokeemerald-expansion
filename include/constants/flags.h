@@ -1654,9 +1654,11 @@
 #define FLAG_STORING_ITEMS_IN_PYRAMID_BAG       (SPECIAL_FLAGS_START + 0x4)
 #define FLAG_SAFE_FOLLOWER_MOVEMENT             (SPECIAL_FLAGS_START + 0x5) // When set, applymovement does not put the follower inside a pokeball
                                                                             // Also, scripted movements on the player will move follower(s), too
-#define FLAG_SYS_DO_NOT_DOOR                    (SPECIAL_FLAGS_START + 0x6) // Was unused, set this flag to spawn the player without a door animation on next warp, can be set via On Load map scripts.
+#define FLAG_SYS_DO_NOT_DOOR                    (SPECIAL_FLAGS_START + 0x6) // Set this flag to spawn the player without a door animation on next warp, can be set via On Load map scripts.
                                                                             // This spawns the player on the closed door tile, so it should be used with FLAG_SYS_SPAWN_INVISIBLE.
-#define FLAG_SYS_SPAWN_INVISIBLE                (SPECIAL_FLAGS_START + 0x7) // Was unused, set this flag to spawn the player invisible on next warp. Use a set_visible with applymovement to show the player.
+#define FLAG_SYS_SPAWN_INVISIBLE                (SPECIAL_FLAGS_START + 0x7) // Set this flag to spawn the player invisible on next warp. Use a set_visible with applymovement to show the player.
+#define FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER        (SPECIAL_FLAGS_START + 0x8) // Set this flag to suppress the game from loading in from black/white on warp. Needs to be manually reset.
+#define FLAG_DONT_START_MUSIC_ON_WARP           (SPECIAL_FLAGS_START + 0x9) // Set this flag to prevent music from starting on transition. Needs to be manually reset.
 // FLAG_SPECIAL_FLAG_0x4005 - 0x407F also exist and are unused
 #define SPECIAL_FLAGS_END                       (SPECIAL_FLAGS_START + 0x7F)
 #define NUM_SPECIAL_FLAGS                       (SPECIAL_FLAGS_END - SPECIAL_FLAGS_START + 1)

@@ -108,8 +108,12 @@ SSTidal_Scene01_OnFrame::
 # 52 "data/expansion_1/scene01.pory"
 	clearflag FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY
 # 53 "data/expansion_1/scene01.pory"
-	warpsilent MAP_ILLUSORY_GROTTO_B4F_1R, 26, 7
+	setflag FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER
 # 54 "data/expansion_1/scene01.pory"
+	setflag FLAG_DONT_START_MUSIC_ON_WARP
+# 55 "data/expansion_1/scene01.pory"
+	warp MAP_ILLUSORY_GROTTO_B4F_1R, 26, 7
+# 56 "data/expansion_1/scene01.pory"
 	waitstate
 	return
 

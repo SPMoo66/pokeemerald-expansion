@@ -1750,6 +1750,7 @@ void TeleportCamera(void)
 {
     MoveCameraAndRedrawMap(gSpecialVar_0x8004 - gSaveBlock1Ptr->pos.x,
                            gSpecialVar_0x8005 - gSaveBlock1Ptr->pos.y);
+    SpawnCameraObject();
 }
 
 static const struct WindowTemplate sWindowTemplate_ElevatorFloor =

@@ -2,4 +2,31 @@ mapscripts BlanchedDepths_1F_1R_MapScripts {
 	MAP_SCRIPT_ON_RESUME {
 		setdivewarp (MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_1_BLANCHED_DEPTHS_ENTRANCE, 4, 3)
 	}
+	MAP_SCRIPT_ON_LOAD {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 18) {
+			setflag (FLAG_SYS_SPAWN_INVISIBLE)
+			setflag (FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER)
+		}
+	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_EMERALBODY_RIVAL_STATE, 18 {
+			clearflag (FLAG_SYS_SPAWN_INVISIBLE)
+			clearflag (FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER)
+			setvar (VAR_0x8004, 28)
+			setvar (VAR_0x8005, 19)
+			special (TeleportCamera)
+			fadescreen (FADE_FROM_BLACK)
+			applymovement (LOCALID_PLAYER, Common_Movement_SetVisible)
+			applymovement (LOCALID_CAMERA, BlanchedDepths_1F_1R_IntroCameraMovements)
+			waitmovement (0)
+			special (RemoveCameraObject)
+			setvar (VAR_EMERALBODY_RIVAL_STATE, 19)
+		}
+	]
+}
+
+movement BlanchedDepths_1F_1R_IntroCameraMovements {
+	walk_diag_northwest * 8
+	walk_left * 7
+	walk_diag_southwest * 8
 }

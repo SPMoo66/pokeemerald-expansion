@@ -1,1 +1,5 @@
-mapscripts FarOffSeaWest_2_Underwater_1_BlanchedDepths_Entrance_MapScripts {}
+mapscripts FarOffSeaWest_2_Underwater_1_BlanchedDepths_Entrance_MapScripts {
+	MAP_SCRIPT_ON_RESUME {
+		setdivewarp (MAP_BLANCHED_DEPTHS_1F_1R, 5, 19)
+	}
+}

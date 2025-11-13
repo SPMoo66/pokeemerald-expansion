@@ -6108,6 +6108,18 @@
       "secondary_tileset": "gTileset_Cave2_Sub1_Exp_1",
       "border_filepath": "data/layouts/BlanchedDepths_1F_1R/border.bin",
       "blockdata_filepath": "data/layouts/BlanchedDepths_1F_1R/map.bin"
+    },
+    {
+      "id": "LAYOUT_BLANCHED_DEPTHS_2F_1R",
+      "name": "BlanchedDepths_2F_1R_Layout",
+      "width": 45,
+      "height": 35,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Cave2_Exp_1",
+      "secondary_tileset": "gTileset_Cave2_Sub1_Exp_1",
+      "border_filepath": "data/layouts/BlanchedDepths_2F_1R/border.bin",
+      "blockdata_filepath": "data/layouts/BlanchedDepths_2F_1R/map.bin"
     }
   ]
 }

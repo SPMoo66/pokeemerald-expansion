@@ -2,7 +2,7 @@
   "id": "MAP_SS_TIDAL_DUNGEON_1F_1R_ROOM1",
   "name": "SS_Tidal_Dungeon_1F_1R_Room1",
   "layout": "LAYOUT_SS_TIDAL_DUNGEON_1F_1R_ROOM1",
-  "music": "MUS_DP_VS_ARCEUS",
+  "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_SS_TIDAL_DUNGEON",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

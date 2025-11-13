@@ -2,7 +2,7 @@
   "id": "MAP_ILLUSORY_GROTTO_B4F_2R_UNDERWATER",
   "name": "IllusoryGrotto_B4F_2R_Underwater",
   "layout": "LAYOUT_ILLUSORY_GROTTO_B4F_2R_UNDERWATER",
-  "music": "MUS_DUMMY",
+  "music": "MUS_DP_VICTORY_ROAD",
   "region_map_section": "MAPSEC_ILLUSORY_GROTTO",
   "requires_flash": false,
   "weather": "WEATHER_UNDERWATER",

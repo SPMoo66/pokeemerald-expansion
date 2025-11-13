@@ -2,7 +2,7 @@
   "id": "MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_1_BLANCHED_DEPTHS_ENTRANCE",
   "name": "FarOffSeaWest_2_Underwater_1_BlanchedDepths_Entrance",
   "layout": "LAYOUT_FAR_OFF_SEA_WEST_2_UNDERWATER_1_BLANCHED_DEPTHS_ENTRANCE",
-  "music": "MUS_DUMMY",
+  "music": "MUS_DP_SURF",
   "region_map_section": "MAPSEC_FAR_OFF_SEA_WEST_2_UNDERWATER_1",
   "requires_flash": false,
   "weather": "WEATHER_UNDERWATER_BUBBLES",

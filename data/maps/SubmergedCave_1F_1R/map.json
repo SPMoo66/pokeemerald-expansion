@@ -2,7 +2,7 @@
   "id": "MAP_SUBMERGED_CAVE_1F_1R",
   "name": "SubmergedCave_1F_1R",
   "layout": "LAYOUT_SUBMERGED_CAVE_1F_1R",
-  "music": "MUS_DP_SUNYSHORE_DAY",
+  "music": "MUS_DP_STARK_MOUNTAIN",
   "region_map_section": "MAPSEC_SUBMERGED_CAVERN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

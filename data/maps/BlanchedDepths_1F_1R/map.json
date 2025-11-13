@@ -2,7 +2,7 @@
   "id": "MAP_BLANCHED_DEPTHS_1F_1R",
   "name": "BlanchedDepths_1F_1R",
   "layout": "LAYOUT_BLANCHED_DEPTHS_1F_1R",
-  "music": "MUS_DUMMY",
+  "music": "MUS_DP_OREBURGH_MINE",
   "region_map_section": "MAPSEC_BLANCHED_DEPTHS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

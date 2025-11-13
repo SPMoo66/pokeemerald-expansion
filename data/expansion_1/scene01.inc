@@ -104,17 +104,35 @@ SSTidal_Scene01_OnFrame::
 # 49 "data/expansion_1/scene01.pory"
 	msgbox SSTidal_Scene01_OnFrame_Text_0, MSGBOX_DEFAULT
 # 51 "data/expansion_1/scene01.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 21
-# 52 "data/expansion_1/scene01.pory"
 	clearflag FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY
-# 53 "data/expansion_1/scene01.pory"
-	setflag FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER
-# 54 "data/expansion_1/scene01.pory"
+# 52 "data/expansion_1/scene01.pory"
 	setflag FLAG_DONT_START_MUSIC_ON_WARP
-# 55 "data/expansion_1/scene01.pory"
+# 53 "data/expansion_1/scene01.pory"
 	warp MAP_ILLUSORY_GROTTO_B4F_1R, 26, 7
-# 56 "data/expansion_1/scene01.pory"
+# 54 "data/expansion_1/scene01.pory"
 	waitstate
+	return
+
+
+IllusoryGrotto_B4F_1R_Scene01_OnFrame::
+# 58 "data/expansion_1/scene01.pory"
+	lock
+# 59 "data/expansion_1/scene01.pory"
+	delay 20
+# 61 "data/expansion_1/scene01.pory"
+	setflashlevel 8
+# 62 "data/expansion_1/scene01.pory"
+	animateflash 0
+# 63 "data/expansion_1/scene01.pory"
+	setflashlevel 0
+# 65 "data/expansion_1/scene01.pory"
+	playbgm MUS_DP_VICTORY_ROAD, FALSE
+# 66 "data/expansion_1/scene01.pory"
+	setvar VAR_EMERALBODY_RIVAL_STATE, 21
+# 67 "data/expansion_1/scene01.pory"
+	clearflag FLAG_DONT_START_MUSIC_ON_WARP
+# 68 "data/expansion_1/scene01.pory"
+	release
 	return
 
 

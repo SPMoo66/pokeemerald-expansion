@@ -48,10 +48,22 @@ script SSTidal_Scene01_OnFrame {
 	
 	msgbox ("Scene01", MSGBOX_DEFAULT)
 	
-	setvar (VAR_EMERALBODY_RIVAL_STATE, 21)
 	clearflag (FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY)
-	setflag (FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER)
 	setflag (FLAG_DONT_START_MUSIC_ON_WARP)
 	warp (MAP_ILLUSORY_GROTTO_B4F_1R, 26, 7)
 	waitstate
+}
+
+script IllusoryGrotto_B4F_1R_Scene01_OnFrame {
+	lock
+	delay (20)
+	
+	setflashlevel (8)
+	animateflash (0)
+	setflashlevel (0)
+
+	playbgm (MUS_DP_VICTORY_ROAD, FALSE)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 21)
+	clearflag (FLAG_DONT_START_MUSIC_ON_WARP)
+	release
 }

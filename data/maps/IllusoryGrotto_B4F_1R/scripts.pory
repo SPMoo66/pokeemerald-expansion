@@ -9,7 +9,13 @@ mapscripts IllusoryGrotto_B4F_1R_MapScripts {
 		if (flag(FLAG_EXP_1_ILLUSORY_GROTTO_B4F_1R_ROCK)) {
 			setvar (VAR_TEMP_3, 1)
 		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 20) {
+			setflashlevel (8)
+		}
 	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_EMERALBODY_RIVAL_STATE, 20: IllusoryGrotto_B4F_1R_Scene01_OnFrame
+	]
 }
 
 script IllusoryGrotto_B4F_1R_Rock {

@@ -17,42 +17,42 @@
   "warp_events": [
     {
       "x": 21,
-      "y": 7,
+      "y": 9,
       "elevation": 0,
       "dest_map": "MAP_ILLUSORY_GROTTO_B3F_1R",
       "dest_warp_id": "1"
     },
     {
       "x": 7,
-      "y": 14,
+      "y": 16,
       "elevation": 0,
       "dest_map": "MAP_ILLUSORY_GROTTO_B3F_1R",
       "dest_warp_id": "2"
     },
     {
       "x": 24,
-      "y": 4,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_ILLUSORY_GROTTO_B1F_1R",
       "dest_warp_id": "0"
     },
     {
       "x": 8,
-      "y": 4,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_ILLUSORY_GROTTO_B1F_1R",
       "dest_warp_id": "1"
     },
     {
       "x": 15,
-      "y": 12,
+      "y": 14,
       "elevation": 0,
       "dest_map": "MAP_ILLUSORY_GROTTO_B3F_1R",
       "dest_warp_id": "3"
     },
     {
       "x": 18,
-      "y": 4,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_ILLUSORY_GROTTO_B1F_1R",
       "dest_warp_id": "3"
@@ -62,7 +62,7 @@
     {
       "type": "trigger",
       "x": 18,
-      "y": 8,
+      "y": 10,
       "elevation": 0,
       "var": "VAR_TEMP_3",
       "var_value": "0",
@@ -71,7 +71,7 @@
     {
       "type": "trigger",
       "x": 18,
-      "y": 9,
+      "y": 11,
       "elevation": 0,
       "var": "VAR_TEMP_3",
       "var_value": "0",
@@ -82,7 +82,7 @@
     {
       "type": "sign",
       "x": 18,
-      "y": 5,
+      "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "IllusoryGrotto_B2F_1R_Rock"

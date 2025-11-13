@@ -569,3 +569,6 @@ const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/object_events/pic
 
 const u32 gFieldEffectObjectPic_CaveDust[] = INCBIN_U32("graphics/field_effects/pics/cave_dust.4bpp");
 const u16 gFieldEffectObjectPalette_CaveDust[] = INCBIN_U16("graphics/field_effects/palettes/cave_dust.gbapal");
+
+// This is a palette with all slots filled (0,0,0), used to alter objects to be all black
+const u16 gObjectEventPal_AllBlack[] = INCBIN_U16("graphics/object_events/palettes/all_black.gbapal");

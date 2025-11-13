@@ -282,12 +282,13 @@
 #define OBJ_EVENT_GFX_PKMN_RANGER_M              274
 #define OBJ_EVENT_GFX_PKMN_RANGER_F              275
 #define OBJ_EVENT_GFX_CYNTHIA                    276
+#define OBJ_EVENT_GFX_SHADOW_BARON               277
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
 
-#define NUM_OBJ_EVENT_GFX                        277
+#define NUM_OBJ_EVENT_GFX                        278
 
 // These are dynamic object gfx ids.
 // They correspond with the values of the VAR_OBJ_GFX_ID_X vars.
@@ -405,7 +406,7 @@
 #define OBJ_EVENT_PAL_TAG_KYOGRE_REFLECTION       0x1117
 #define OBJ_EVENT_PAL_TAG_GROUDON                 0x1118
 #define OBJ_EVENT_PAL_TAG_GROUDON_REFLECTION      0x1119
-#define OBJ_EVENT_PAL_TAG_UNUSED                  0x111A
+#define OBJ_EVENT_PAL_TAG_ALL_BLACK               0x111A
 #define OBJ_EVENT_PAL_TAG_SUBMARINE_SHADOW        0x111B
 #define OBJ_EVENT_PAL_TAG_POOCHYENA               0x111C
 #define OBJ_EVENT_PAL_TAG_RED_LEAF                0x111D

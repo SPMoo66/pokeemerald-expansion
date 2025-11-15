@@ -16,10 +16,10 @@ script SkyPillar_Rival_Battle {
 		applymovement (RIVAL, Common_Movement_FaceUp)
 		checkplayergender
 		if (var(VAR_RESULT) == MALE) {
-			call(Route119_EventScript_PlayMayMusic)
+			playbgm (MUS_ENCOUNTER_MAY, FALSE)
 		}
 		else {
-			call(Route119_EventScript_PlayBrendanMusic)
+			playbgm (MUS_ENCOUNTER_BRENDAN, FALSE)
 		}
 		playse (SE_EXIT)
 		delay (30)

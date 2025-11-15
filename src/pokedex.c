@@ -4558,6 +4558,13 @@ bool16 HasAllMons(void)
     return TRUE;
 }
 
+bool16 SeenThousandMons (void)
+{
+    if (GetNationalPokedexCount(FLAG_GET_SEEN) >= 1000)
+        return TRUE;
+    return FALSE;
+}
+
 static void ResetOtherVideoRegisters(u16 regBits)
 {
     if (!(regBits & DISPCNT_BG0_ON))

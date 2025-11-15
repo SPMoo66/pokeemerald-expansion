@@ -69,7 +69,7 @@ struct TrainerCardData
     u8 textNumTrades[140];
     u8 textBerryCrushPts[140];
     u8 textUnionRoomStats[70];
-    u8 textNumLinkPokeblocks[70];
+    u8 textNumCompleteChallengeBalls[70];
     u8 textNumLinkContests[70];
     u8 textBattleFacilityStat[70];
     u16 monIconPal[16 * PARTY_SIZE];
@@ -115,6 +115,8 @@ static bool8 LoadCardGfx(void);
 static void CB2_InitTrainerCard(void);
 static u32 GetCappedGameStat(u8 statId, u32 maxValue);
 static bool8 HasAllFrontierSymbols(void);
+static bool8 HasCompletedAllBaseGameChallengeBalls(void);
+static u8 CountCompleteChallengeBalls(void);
 static u8 GetRubyTrainerStars(struct TrainerCard *);
 static u16 GetCaughtMonsCount(void);
 static void SetPlayerCardData(struct TrainerCard *, u8);
@@ -139,7 +141,7 @@ static void PrintHofDebutTimeOnCard(void);
 static void PrintLinkBattleResultsOnCard(void);
 static void PrintTradesStringOnCard(void);
 static void PrintBerryCrushStringOnCard(void);
-static void PrintPokeblockStringOnCard(void);
+static void PrintCompletedChallengeBallsStringOnCard(void);
 static void PrintUnionStringOnCard(void);
 static void PrintContestStringOnCard(void);
 static void PrintPokemonIconsOnCard(void);
@@ -152,7 +154,7 @@ static void BufferLinkBattleResults(void);
 static void BufferNumTrades(void);
 static void BufferBerryCrushPoints(void);
 static void BufferUnionRoomStats(void);
-static void BufferLinkPokeblocksNum(void);
+static void BufferCompletedChallengeBallsNum(void);
 static void BufferLinkContestNum(void);
 static void BufferBattleFacilityStats(void);
 static void PrintStatOnBackOfCard(u8 top, const u8 *str1, u8 *str2, const u8 *color);
@@ -275,9 +277,6 @@ static const u16 *const sHoennTrainerCardPals[] =
     sHoennTrainerCardSilver_Pal, // 3 stars
     sHoennTrainerCardGold_Pal,   // 4 stars
     sHoennTrainerCardGold_Pal,   // 5 stars
-    sHoennTrainerCardGold_Pal,   // 6 stars
-    sHoennTrainerCardGold_Pal,   // 7 stars
-    sHoennTrainerCardGold_Pal,   // 8 stars
 };
 
 static const u16 *const sKantoTrainerCardPals[] =
@@ -676,17 +675,89 @@ static bool8 HasAllFrontierSymbols(void)
     return TRUE;
 }
 
+static bool8 HasCompletedAllBaseGameChallengeBalls(void)
+{
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_110_1) && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_113_1) && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_113_2)
+     && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_114) && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_117) && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_119)
+     && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_127) && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_132) && FlagGet(FLAG_CHALLENGE_BALL_LILYCOVE_CITY)
+     && FlagGet(FLAG_CHALLENGE_BALL_MOSSDEEP_CITY) && FlagGet(FLAG_CHALLENGE_BALL_METEOR_FALLS) && FlagGet(FLAG_CHALLENGE_BALL_GRANITE_CAVE_1)
+     && FlagGet(FLAG_CHALLENGE_BALL_GRANITE_CAVE_2) && FlagGet(FLAG_CHALLENGE_BALL_MT_PYRE) && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_123)
+     && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_120) && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_103) && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_118)
+     && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_109) && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_106) && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_110_2)
+     && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_112) && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_133) && FlagGet(FLAG_CHALLENGE_BALL_ROUTE_134))
+        return TRUE;
+    return FALSE;
+}
+
+static u8 CountCompleteChallengeBalls(void)
+{
+    u8 challengeBallCount = 0;
+
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_110_1))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_113_1))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_113_2))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_114))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_117))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_119))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_127))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_132))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_LILYCOVE_CITY))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_MOSSDEEP_CITY))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_METEOR_FALLS))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_GRANITE_CAVE_1))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_GRANITE_CAVE_2))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_MT_PYRE))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_123))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_120))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_103))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_118))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_109))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_106))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_110_2))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_112))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_133))
+        challengeBallCount++;
+    if (FlagGet(FLAG_CHALLENGE_BALL_ROUTE_134))
+        challengeBallCount++;
+
+    return challengeBallCount;
+}
+
 u32 CountPlayerTrainerStars(void)
 {
     u8 stars = 0;
 
     if (GetGameStat(GAME_STAT_ENTERED_HOF))
         stars++;
-    if (HasAllHoennMons())
+    if (SeenThousandMons())
         stars++;
     if (CountPlayerMuseumPaintings() >= CONTEST_CATEGORIES_COUNT)
         stars++;
-    if (HasAllFrontierSymbols())
+    if (FlagGet(FLAG_SYS_FACTORY_GOLD))
+        stars++;
+    if (HasCompletedAllBaseGameChallengeBalls())
         stars++;
 
     return stars;
@@ -698,11 +769,13 @@ static u8 GetRubyTrainerStars(struct TrainerCard *trainerCard)
 
     if (trainerCard->hofDebutHours || trainerCard->hofDebutMinutes || trainerCard->hofDebutSeconds)
         stars++;
-    if (trainerCard->caughtAllHoenn)
-        stars++;
-    if (trainerCard->battleTowerStraightWins > 49)
+    if (SeenThousandMons())
         stars++;
     if (trainerCard->hasAllPaintings)
+        stars++;
+    if (FlagGet(FLAG_SYS_FACTORY_GOLD))
+        stars++;
+    if (HasCompletedAllBaseGameChallengeBalls())
         stars++;
 
     return stars;
@@ -778,7 +851,7 @@ static void SetPlayerCardData(struct TrainerCard *trainerCard, u8 cardType)
     // Seems like GF got CARD_TYPE_FRLG and CARD_TYPE_RS wrong.
     case CARD_TYPE_FRLG:
         trainerCard->contestsWithFriends = GetCappedGameStat(GAME_STAT_WON_LINK_CONTEST, 999);
-        trainerCard->pokeblocksWithFriends = GetCappedGameStat(GAME_STAT_POKEBLOCKS_WITH_FRIENDS, 0xFFFF);
+        trainerCard->completedChallengeBalls = CountCompleteChallengeBalls();
         if (CountPlayerMuseumPaintings() >= CONTEST_CATEGORIES_COUNT)
             trainerCard->hasAllPaintings = TRUE;
         trainerCard->stars = GetRubyTrainerStars(trainerCard);
@@ -787,7 +860,7 @@ static void SetPlayerCardData(struct TrainerCard *trainerCard, u8 cardType)
         trainerCard->battleTowerWins = 0;
         trainerCard->battleTowerStraightWins = 0;
         trainerCard->contestsWithFriends = 0;
-        trainerCard->pokeblocksWithFriends = 0;
+        trainerCard->completedChallengeBalls = 0;
         trainerCard->hasAllPaintings = 0;
         trainerCard->stars = 0;
         break;
@@ -1003,7 +1076,7 @@ static bool8 PrintAllOnCardBack(void)
         break;
     case 4:
         PrintBerryCrushStringOnCard();
-        PrintPokeblockStringOnCard();
+        PrintCompletedChallengeBallsStringOnCard();
         break;
     case 5:
         PrintUnionStringOnCard();
@@ -1032,7 +1105,7 @@ static void BufferTextsVarsForCardPage2(void)
     BufferNumTrades();
     BufferBerryCrushPoints();
     BufferUnionRoomStats();
-    BufferLinkPokeblocksNum();
+    BufferCompletedChallengeBallsNum();
     BufferLinkContestNum();
     BufferBattleFacilityStats();
 }
@@ -1316,19 +1389,19 @@ static void PrintUnionStringOnCard(void)
         PrintStatOnBackOfCard(3, gText_UnionTradesAndBattles, sData->textUnionRoomStats, sTrainerCardStatColors);
 }
 
-static void BufferLinkPokeblocksNum(void)
+static void BufferCompletedChallengeBallsNum(void)
 {
-    if (sData->cardType != CARD_TYPE_FRLG && sData->trainerCard.pokeblocksWithFriends)
+    if (sData->cardType != CARD_TYPE_FRLG && CountCompleteChallengeBalls())
     {
-        ConvertIntToDecimalStringN(gStringVar1, sData->trainerCard.pokeblocksWithFriends, STR_CONV_MODE_RIGHT_ALIGN, 5);
-        StringExpandPlaceholders(sData->textNumLinkPokeblocks, gText_NumPokeblocks);
+        ConvertIntToDecimalStringN(gStringVar1, sData->trainerCard.completedChallengeBalls, STR_CONV_MODE_RIGHT_ALIGN, 5);
+        StringExpandPlaceholders(sData->textNumCompleteChallengeBalls, gText_NumPokeblocks);
     }
 }
 
-static void PrintPokeblockStringOnCard(void)
+static void PrintCompletedChallengeBallsStringOnCard(void)
 {
-    if (sData->cardType != CARD_TYPE_FRLG && sData->trainerCard.pokeblocksWithFriends)
-        PrintStatOnBackOfCard(3, gText_PokeblocksWithFriends, sData->textNumLinkPokeblocks, sTrainerCardStatColors);
+    if (sData->cardType != CARD_TYPE_FRLG && CountCompleteChallengeBalls())
+        PrintStatOnBackOfCard(3, gText_CountChallengeBalls, sData->textNumCompleteChallengeBalls, sTrainerCardStatColors);
 }
 
 static void BufferLinkContestNum(void)
@@ -1540,6 +1613,8 @@ static void DrawCardFrontOrBack(u16 *ptr)
     CopyBgTilemapBufferToVram(0);
 }
 
+#define TrainerCardTotalAvailableStars  5  // Change this whenever the available number of stars will increase, also must match number of pals in sHoennTrainerCardPals
+
 static void DrawStarsAndBadgesOnCard(void)
 {
     static const u8 yOffsets[] = {7, 7};
@@ -1548,8 +1623,8 @@ static void DrawStarsAndBadgesOnCard(void)
     u16 tileNum = 192;
     u8 palNum = 3;
 
-    FillBgTilemapBufferRect(3, TILE_UNFILLED_STAR, 3, yOffsets[sData->isHoenn],                        8, 1, 0);
-    FillBgTilemapBufferRect(3,   TILE_FILLED_STAR, 3, yOffsets[sData->isHoenn], sData->trainerCard.stars, 1, 4);
+    FillBgTilemapBufferRect(3, TILE_UNFILLED_STAR, 3, yOffsets[sData->isHoenn], TrainerCardTotalAvailableStars, 1, 0);
+    FillBgTilemapBufferRect(3,   TILE_FILLED_STAR, 3, yOffsets[sData->isHoenn],       sData->trainerCard.stars, 1, 4);
     if (!sData->isLink)
     {
         x = 4;

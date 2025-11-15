@@ -745,6 +745,16 @@ script Redd_Battle05 {
 	call (GetRivalForNameBox)
 	msgbox (Battle05_ReddText_PostBattle, MSGBOX_DEFAULT)
 	closemessage
+	applymovement (REDD_BATTLE05, Common_Movement_WalkInPlaceLeft)
+	waitmovement (0)
+	call (GetRivalForNameBox)
+	msgbox (Battle05_ReddText_PostBattle2, MSGBOX_DEFAULT)
+	closemessage
+	applymovement (REDD_BATTLE05, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+	call (GetRivalForNameBox)
+	msgbox (Battle05_ReddText_PostBattle3, MSGBOX_DEFAULT)
+	closemessage
 	applymovement (REDD_BATTLE05, Common_Movement_WalkDown5)
 	waitmovement (0)
 }
@@ -797,6 +807,14 @@ script Baron_Battle05 {
 	trainerbattle_no_intro (TRAINER_BARON_5, Battle05_BaronText_BattleVictory)
 	call (GetRivalForNameBox)
 	msgbox (Battle05_BaronText_PostBattle, MSGBOX_DEFAULT)
+	closemessage
+	applymovement (BARON_BATTLE05, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	delay (40)
+	applymovement (BARON_BATTLE05, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+	call (GetRivalForNameBox)
+	msgbox (Battle05_BaronText_PostBattle2, MSGBOX_DEFAULT)
 	closemessage
 	applymovement (BARON_BATTLE05, Common_Movement_WalkDown)
 	waitmovement (0)

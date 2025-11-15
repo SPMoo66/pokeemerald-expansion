@@ -1394,7 +1394,7 @@ static const struct SpriteFrameImage sPicTable_CaveDust[] =
     overworld_frame(gFieldEffectObjectPic_CaveDust, 2, 2, 3),
 };
 const struct SpriteTemplate gFieldEffectObjectTemplate_CaveDust = {
-    .tileTag = 0xFFFF,
+    .tileTag = TAG_NONE,
     .paletteTag = FLDEFF_PAL_TAG_CAVE_DUST,
     .oam = &gObjectEventBaseOam_16x16,
     .anims = sAnimTable_WaterSurfacing,
@@ -1412,8 +1412,8 @@ static const struct SpriteFrameImage sPicTable_RockClimbBlob[] = {
 };
 
 const struct SpriteTemplate gFieldEffectObjectTemplate_RockClimbBlob = {
-    .tileTag = 0xFFFF,
-    .paletteTag = 0xFFFF,
+    .tileTag = TAG_NONE,
+    .paletteTag = TAG_NONE,
     .oam = &gObjectEventBaseOam_32x32,
     .anims = sAnimTable_SurfBlob,
     .images = sPicTable_RockClimbBlob,
@@ -1439,7 +1439,7 @@ static const struct SpriteFrameImage sPicTable_RockClimbDust[] = {
     overworld_frame(gFieldEffectObjectPic_RockClimbDust, 4, 4, 2),
 };
 const struct SpriteTemplate gFieldEffectObjectTemplate_RockClimbDust = {
-    .tileTag = 0xFFFF,
+    .tileTag = TAG_NONE,
     .paletteTag = FLDEFF_PAL_TAG_DUST_CLOUD,
     .oam = &gObjectEventBaseOam_32x32,
     .anims = sAnimTable_RockClimbDust,

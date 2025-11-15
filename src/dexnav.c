@@ -737,7 +737,7 @@ static bool8 TryStartHiddenMonFieldEffect(enum EncounterType environment, u8 xSi
         case ENCOUNTER_TYPE_LAND:
             if (currMapType == MAP_TYPE_UNDERGROUND)
             {
-                fldEffId = FLDEFF_CAVE_DUST;
+                fldEffId = FLDEFF_BERRY_TREE_GROWTH_SPARKLE;
             }
             else if (IsMapTypeIndoors(currMapType))
             {
@@ -748,7 +748,7 @@ static bool8 TryStartHiddenMonFieldEffect(enum EncounterType environment, u8 xSi
                 else if (MetatileBehavior_IsSandOrDeepSand(metatileBehaviour))
                     fldEffId = FLDEFF_SAND_HOLE;
                 else
-                    fldEffId = FLDEFF_CAVE_DUST;
+                    fldEffId = FLDEFF_BERRY_TREE_GROWTH_SPARKLE;
             }
             else //outdoor, underwater
             {
@@ -759,7 +759,7 @@ static bool8 TryStartHiddenMonFieldEffect(enum EncounterType environment, u8 xSi
                 else if (MetatileBehavior_IsSandOrDeepSand(metatileBehaviour)) //Desert Sand
                     fldEffId = FLDEFF_SAND_HOLE;
                 else if (MetatileBehavior_IsMountain(metatileBehaviour)) //Rough Terrain
-                    fldEffId = FLDEFF_CAVE_DUST;
+                    fldEffId = FLDEFF_BERRY_TREE_GROWTH_SPARKLE;
                 else
                     fldEffId = FLDEFF_BERRY_TREE_GROWTH_SPARKLE; //default
             }
@@ -1010,7 +1010,7 @@ static void EndDexNavSearchSetupScript(const u8 *script, u8 taskId)
     ScriptContext_SetupScript(script);
 }
 
-static u8 GetMovementProximityBySearchLevel(void)
+static u8 UNUSED GetMovementProximityBySearchLevel(void)
 {
     if (sDexNavSearchDataPtr->searchLevel < 20)
         return 2;
@@ -1134,7 +1134,7 @@ static void Task_DexNavSearch(u8 taskId)
         task->func = Task_RevealHiddenMon;
         return;
     }
-
+/*
     //Caves and water the pokemon moves around
     if ((sDexNavSearchDataPtr->environment == ENCOUNTER_TYPE_WATER || GetCurrentMapType() == MAP_TYPE_UNDERGROUND)
         && sDexNavSearchDataPtr->proximity < GetMovementProximityBySearchLevel() && sDexNavSearchDataPtr->movementCount < 1
@@ -1150,7 +1150,7 @@ static void Task_DexNavSearch(u8 taskId)
 
         sDexNavSearchDataPtr->movementCount++;
     }
-
+*/
     DexNavProximityUpdate();
     if (task->tProximity != sDexNavSearchDataPtr->proximity)
     {

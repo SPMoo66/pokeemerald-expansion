@@ -380,7 +380,6 @@ EventScript_UseRockClimb::
 	lockall
 	checkitem ITEM_HM05
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CantRockClimb
-	bufferpartymonnick 0, VAR_RESULT
 	setfieldeffectargument 0, 0
 	dofieldeffect FLDEFF_USE_ROCK_CLIMB
 	waitstate

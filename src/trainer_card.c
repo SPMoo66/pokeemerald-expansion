@@ -181,6 +181,10 @@ static const u16 sHoennTrainerCardSilver_Pal[]   = INCBIN_U16("graphics/trainer_
 static const u16 sKantoTrainerCardSilver_Pal[]   = INCBIN_U16("graphics/trainer_card/frlg/silver.gbapal");
 static const u16 sHoennTrainerCardGold_Pal[]     = INCBIN_U16("graphics/trainer_card/gold.gbapal");
 static const u16 sKantoTrainerCardGold_Pal[]     = INCBIN_U16("graphics/trainer_card/frlg/gold.gbapal");
+static const u16 sHoennTrainerCardPurple_Pal[]   = INCBIN_U16("graphics/trainer_card/purple.gbapal");
+static const u16 sHoennTrainerCardBlue_Pal[]     = INCBIN_U16("graphics/trainer_card/blue.gbapal");
+static const u16 sHoennTrainerCardRed_Pal[]      = INCBIN_U16("graphics/trainer_card/red.gbapal");
+static const u16 sHoennTrainerCardBlack_Pal[]    = INCBIN_U16("graphics/trainer_card/black.gbapal");
 static const u16 sHoennTrainerCardFemaleBg_Pal[] = INCBIN_U16("graphics/trainer_card/female_bg.gbapal");
 static const u16 sKantoTrainerCardFemaleBg_Pal[] = INCBIN_U16("graphics/trainer_card/frlg/female_bg.gbapal");
 static const u16 sHoennTrainerCardBadges_Pal[]   = INCBIN_U16("graphics/trainer_card/badges.gbapal");
@@ -276,7 +280,10 @@ static const u16 *const sHoennTrainerCardPals[] =
     sHoennTrainerCardCopper_Pal, // 2 stars
     sHoennTrainerCardSilver_Pal, // 3 stars
     sHoennTrainerCardGold_Pal,   // 4 stars
-    sHoennTrainerCardGold_Pal,   // 5 stars
+    sHoennTrainerCardBlue_Pal,   // 5 stars
+    sHoennTrainerCardRed_Pal,    // 6 stars
+    sHoennTrainerCardPurple_Pal, // 7 stars
+    sHoennTrainerCardBlack_Pal,  // 8 stars
 };
 
 static const u16 *const sKantoTrainerCardPals[] =
@@ -289,11 +296,11 @@ static const u16 *const sKantoTrainerCardPals[] =
 };
 
 static const u8 sTrainerCardTextColors[] = {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_LIGHT_GRAY};
-static const u8 sTrainerCardWhiteTextColors[] = {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY};
+static const u8 sTrainerCardWhiteTextColors[] = {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY};
 static const u8 sTrainerCardFontColorTable[][3] =
 {
     {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_LIGHT_GRAY},  // Standard dark text colors
-    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY},      // White text colors for darker backgrounds
+    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY},      // White text colors for darker backgrounds
 };
 
 static const u8 sTrainerCardStatColors[] = {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_RED, TEXT_COLOR_LIGHT_RED};

@@ -598,6 +598,7 @@ EventScript_WhiteOut::
 
 EventScript_AfterWhiteOutHeal::
 	lockall
+	speakername NULL
 	msgbox gText_FirstShouldRestoreMonsHealth
 	call EventScript_PkmnCenterNurse_TakeAndHealPkmn
 	call_if_unset FLAG_DEFEATED_RUSTBORO_GYM, EventScript_AfterWhiteOutHealMsgPreRoxanne

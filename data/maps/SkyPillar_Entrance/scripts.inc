@@ -166,7 +166,7 @@ SkyPillar_Rival_Battle_Text_0:
 SkyPillar_Rival_Battle_Text_1:
 # 35 "data/maps/SkyPillar_Entrance/scripts.pory"
 	.string "I had asked my dad, and he said that\n"
-	.string "this kind of thing was just to\l"
+	.string "this kind of thing was just too\l"
 	.string "dangerous for kids to be involved in.$"
 
 SkyPillar_Rival_Battle_Text_2:

@@ -32,7 +32,7 @@ script SkyPillar_Rival_Battle {
 							"This is really bad, isn't it?"))
 			applymovement (RIVAL, Common_Movement_WalkInPlaceDown)
 			waitmovement (0)
-			msgbox( format( "I had asked my dad, and he said that this kind of thing was just to dangerous for kids to be involved in."))
+			msgbox( format( "I had asked my dad, and he said that this kind of thing was just too dangerous for kids to be involved in."))
 			applymovement (RIVAL, Common_Movement_WalkInPlaceUp)
 			waitmovement (0)
 			msgbox( format( "But you're here, aren't you {PLAYER}?\p"

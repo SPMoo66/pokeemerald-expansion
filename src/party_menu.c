@@ -497,7 +497,6 @@ static void Task_HideFollowerNPCForTeleport(u8);
 static void FieldCallback_RockClimb(void);
 
 // Custom below
-bool32 SetUpFieldMove_RockClimb(void);
 void UsePokevial(u8); //Start Pokevial Branch
 static void Task_PokevialLoop(u8); //End Pokevial Branch
 static void PokevialStartVariablesAndRun(u8 taskId, TaskFunc task);

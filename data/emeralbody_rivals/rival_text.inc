@@ -1975,7 +1975,7 @@ Town16_ReddText::
 	.string "For Harper, it seems good. I think\n"
 	.string "she finally ditched the Furret.\l"
 	.string "I know she likes it, but… a Furret…\p"
-	.string "And Sakure's is… well…\p"
+	.string "And Sakura's is… well…\p"
 	.string "Sorry, I'm still trying to come to terms\n"
 	.string "with what a ‘Ceruledge’ is.\p"
 	.string "I've been to each corner of this\n"

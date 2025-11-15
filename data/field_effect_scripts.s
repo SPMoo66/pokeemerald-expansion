@@ -384,6 +384,14 @@ gFieldEffectScript_TracksSpot::
 gFieldEffectScript_TracksSlither::
 	field_eff_loadfadedpal_callnative gSpritePalette_GeneralFieldEffect0, FldEff_TracksSlither
 	field_eff_end
+    
+gFieldEffectScript_CaveDust::
+    field_eff_loadfadedpal_callnative gSpritePalette_CaveDust FldEff_CaveDust
+    field_eff_end
+
+gFieldEffectScript_Defog::
+    field_eff_callnative FldEff_Defog
+    field_eff_end
 	
 gFieldEffectScript_UseRockClimb:: @ 82DBC3F
 	field_eff_callnative FldEff_UseRockClimb
@@ -392,15 +400,6 @@ gFieldEffectScript_UseRockClimb:: @ 82DBC3F
 gFieldEffectScript_RockClimbDust:: @ 82DBB28
 	field_eff_loadfadedpal_callnative gSpritePalette_BigDust, FldEff_RockClimbDust
 	field_eff_end
-    
-@ NEW
-gFieldEffectScript_CaveDust::
-    field_eff_loadfadedpal_callnative gSpritePalette_CaveDust FldEff_CaveDust
-    field_eff_end
-
-gFieldEffectScript_Defog::
-    field_eff_callnative FldEff_Defog
-    field_eff_end
 
 gFieldEffectScript_MusicNoteIcon::
 	field_eff_callnative FldEff_MusicNoteIcon

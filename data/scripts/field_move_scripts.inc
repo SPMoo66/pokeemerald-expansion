@@ -385,6 +385,7 @@ EventScript_UseRockClimb::
 	dofieldeffect FLDEFF_USE_ROCK_CLIMB
 	waitstate
 	goto EventScript_EndRockClimb
+	end
 	
 EventScript_CantRockClimb::
 	msgbox Text_CantRockClimb, MSGBOX_DEFAULT

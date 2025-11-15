@@ -737,7 +737,7 @@ static bool8 TryStartHiddenMonFieldEffect(enum EncounterType environment, u8 xSi
         case ENCOUNTER_TYPE_LAND:
             if (currMapType == MAP_TYPE_UNDERGROUND)
             {
-                fldEffId = FLDEFF_BERRY_TREE_GROWTH_SPARKLE;
+                fldEffId = FLDEFF_CAVE_DUST;
             }
             else if (IsMapTypeIndoors(currMapType))
             {
@@ -748,7 +748,7 @@ static bool8 TryStartHiddenMonFieldEffect(enum EncounterType environment, u8 xSi
                 else if (MetatileBehavior_IsSandOrDeepSand(metatileBehaviour))
                     fldEffId = FLDEFF_SAND_HOLE;
                 else
-                    fldEffId = FLDEFF_BERRY_TREE_GROWTH_SPARKLE;
+                    fldEffId = FLDEFF_CAVE_DUST;
             }
             else //outdoor, underwater
             {
@@ -759,7 +759,7 @@ static bool8 TryStartHiddenMonFieldEffect(enum EncounterType environment, u8 xSi
                 else if (MetatileBehavior_IsSandOrDeepSand(metatileBehaviour)) //Desert Sand
                     fldEffId = FLDEFF_SAND_HOLE;
                 else if (MetatileBehavior_IsMountain(metatileBehaviour)) //Rough Terrain
-                    fldEffId = FLDEFF_BERRY_TREE_GROWTH_SPARKLE;
+                    fldEffId = FLDEFF_CAVE_DUST;
                 else
                     fldEffId = FLDEFF_BERRY_TREE_GROWTH_SPARKLE; //default
             }

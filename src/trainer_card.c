@@ -70,7 +70,7 @@ struct TrainerCardData
     u8 textBerryCrushPts[140];
     u8 textUnionRoomStats[70];
     u8 textNumCompleteChallengeBalls[70];
-    u8 textNumLinkContests[70];
+    u8 textNumPokemonHeals[70];
     u8 textBattleFacilityStat[70];
     u16 monIconPal[16 * PARTY_SIZE];
     s8 flipBlendY;
@@ -143,7 +143,7 @@ static void PrintTradesStringOnCard(void);
 static void PrintBerryCrushStringOnCard(void);
 static void PrintCompletedChallengeBallsStringOnCard(void);
 static void PrintUnionStringOnCard(void);
-static void PrintContestStringOnCard(void);
+static void PrintPokemonHealsStringOnCard(void);
 static void PrintPokemonIconsOnCard(void);
 static void PrintBattleFacilityStringOnCard(void);
 static void PrintStickersOnCard(void);
@@ -155,7 +155,7 @@ static void BufferNumTrades(void);
 static void BufferBerryCrushPoints(void);
 static void BufferUnionRoomStats(void);
 static void BufferCompletedChallengeBallsNum(void);
-static void BufferLinkContestNum(void);
+static void BufferPokemonHealsNum(void);
 static void BufferBattleFacilityStats(void);
 static void PrintStatOnBackOfCard(u8 top, const u8 *str1, u8 *str2, const u8 *color);
 static void LoadStickerGfx(void);
@@ -857,7 +857,7 @@ static void SetPlayerCardData(struct TrainerCard *trainerCard, u8 cardType)
         trainerCard->battleTowerStraightWins = 0;
     // Seems like GF got CARD_TYPE_FRLG and CARD_TYPE_RS wrong.
     case CARD_TYPE_FRLG:
-        trainerCard->contestsWithFriends = GetCappedGameStat(GAME_STAT_WON_LINK_CONTEST, 999);
+        trainerCard->pokemonHeals = (GetCappedGameStat(GAME_STAT_USED_POKECENTER, 499) + GetCappedGameStat(GAME_STAT_RESTED_AT_HOME, 499));
         trainerCard->completedChallengeBalls = CountCompleteChallengeBalls();
         if (CountPlayerMuseumPaintings() >= CONTEST_CATEGORIES_COUNT)
             trainerCard->hasAllPaintings = TRUE;
@@ -866,7 +866,7 @@ static void SetPlayerCardData(struct TrainerCard *trainerCard, u8 cardType)
     case CARD_TYPE_RS:
         trainerCard->battleTowerWins = 0;
         trainerCard->battleTowerStraightWins = 0;
-        trainerCard->contestsWithFriends = 0;
+        trainerCard->pokemonHeals = 0;
         trainerCard->completedChallengeBalls = 0;
         trainerCard->hasAllPaintings = 0;
         trainerCard->stars = 0;
@@ -1087,7 +1087,7 @@ static bool8 PrintAllOnCardBack(void)
         break;
     case 5:
         PrintUnionStringOnCard();
-        PrintContestStringOnCard();
+        PrintPokemonHealsStringOnCard();
         break;
     case 6:
         PrintPokemonIconsOnCard();
@@ -1113,7 +1113,7 @@ static void BufferTextsVarsForCardPage2(void)
     BufferBerryCrushPoints();
     BufferUnionRoomStats();
     BufferCompletedChallengeBallsNum();
-    BufferLinkContestNum();
+    BufferPokemonHealsNum();
     BufferBattleFacilityStats();
 }
 
@@ -1411,16 +1411,16 @@ static void PrintCompletedChallengeBallsStringOnCard(void)
         PrintStatOnBackOfCard(3, gText_CountChallengeBalls, sData->textNumCompleteChallengeBalls, sTrainerCardStatColors);
 }
 
-static void BufferLinkContestNum(void)
+static void BufferPokemonHealsNum(void)
 {
-    if (sData->cardType != CARD_TYPE_FRLG && sData->trainerCard.contestsWithFriends)
-        ConvertIntToDecimalStringN(sData->textNumLinkContests, sData->trainerCard.contestsWithFriends, STR_CONV_MODE_RIGHT_ALIGN, 5);
+    if (GetGameStat(GAME_STAT_USED_POKECENTER) || GetGameStat(GAME_STAT_RESTED_AT_HOME))
+        ConvertIntToDecimalStringN(sData->textNumPokemonHeals, sData->trainerCard.pokemonHeals, STR_CONV_MODE_RIGHT_ALIGN, 5);
 }
 
-static void PrintContestStringOnCard(void)
+static void PrintPokemonHealsStringOnCard(void)
 {
-    if (sData->cardType != CARD_TYPE_FRLG && sData->trainerCard.contestsWithFriends)
-        PrintStatOnBackOfCard(4, gText_WonContestsWFriends, sData->textNumLinkContests, sTrainerCardStatColors);
+    if (sData->cardType != CARD_TYPE_FRLG && sData->trainerCard.pokemonHeals)
+        PrintStatOnBackOfCard(4, gText_PokemonHeals, sData->textNumPokemonHeals, sTrainerCardStatColors);
 }
 
 static void BufferBattleFacilityStats(void)
@@ -1676,7 +1676,7 @@ static void DrawCardBackStats(void)
             FillBgTilemapBufferRect(3, 141, 27, 9, 1, 1, 0);
             FillBgTilemapBufferRect(3, 157, 27, 10, 1, 1, 0);
         }
-        if (sData->trainerCard.contestsWithFriends)
+        if (sData->trainerCard.pokemonHeals)
         {
             FillBgTilemapBufferRect(3, 141, 27, 13, 1, 1, 0);
             FillBgTilemapBufferRect(3, 157, 27, 14, 1, 1, 0);

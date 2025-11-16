@@ -37,7 +37,7 @@ struct TrainerCard
     /*0x16*/ u16 linkBattleLosses;
     /*0x18*/ u16 battleTowerWins;
     /*0x1A*/ u16 battleTowerStraightWins;
-    /*0x1C*/ u16 contestsWithFriends;
+    /*0x1C*/ u16 pokemonHeals;
     /*0x1E*/ u16 completedChallengeBalls;
     /*0x20*/ u16 pokemonTrades;
     /*0x24*/ u32 money;

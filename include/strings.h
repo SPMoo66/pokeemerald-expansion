@@ -2092,7 +2092,7 @@ extern const u8 gText_BerryCrush[];
 extern const u8 gText_UnionTradesAndBattles[];
 extern const u8 gText_NumPokeblocks[];
 extern const u8 gText_CountChallengeBalls[];
-extern const u8 gText_WonContestsWFriends[];
+extern const u8 gText_PokemonHeals[];
 extern const u8 gText_WinsStraight[];
 extern const u8 gText_NumBP[];
 extern const u8 gText_BattleTower[];

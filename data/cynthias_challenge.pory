@@ -1,0 +1,4 @@
+script Gamecube_CynthiasChallenge {
+	msgbox ("Test")
+	closemessage
+}

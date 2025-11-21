@@ -15899,3 +15899,601 @@ static const struct TrainerMon sParty_Bjorn[] = {
     .species = SPECIES_SNOVER,
     }
 };
+
+static const struct TrainerMon sParty_RoarkLilycoveMotel[] = {
+    {
+    .lvl = 75,
+    .species = SPECIES_STONJOURNER,
+    .ability = ABILITY_POWER_SPOT,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_PROTECT, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE, MOVE_BULLDOZE}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_ARCANINE_HISUI,
+    .ability = ABILITY_INTIMIDATE,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_EXTREME_SPEED, MOVE_FLARE_BLITZ, MOVE_ROCK_SLIDE, MOVE_THUNDER_FANG}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_TYRANITAR,
+    .ability = ABILITY_SAND_STREAM,
+    .heldItem = ITEM_EXPERT_BELT,
+    .teraType = TYPE_ELECTRIC,
+    .moves = {MOVE_THUNDER_FANG, MOVE_FIRE_FANG, MOVE_DRAGON_DANCE, MOVE_CEASELESS_EDGE}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_HOUNDSTONE,
+    .ability = ABILITY_SAND_RUSH,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_LAST_RESPECTS, MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_BULLDOZE}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_DRACOVISH,
+    .ability = ABILITY_SAND_RUSH,
+    .heldItem = ITEM_CHOICE_SCARF,
+    .moves = {MOVE_DRAGON_RUSH, MOVE_FISHIOUS_REND, MOVE_CRUNCH, MOVE_IRON_HEAD}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_COALOSSAL,
+    .ability = ABILITY_STEAM_ENGINE,
+    .heldItem = ITEM_MEGA_STONE_G,
+    .moves = {MOVE_HEAT_CRASH, MOVE_BODY_PRESS, MOVE_PROTECT, MOVE_ROCK_SLIDE}
+    }
+};
+
+static const struct TrainerMon sParty_GardeniaLilycoveMotel[] = {
+    {
+    .lvl = 75,
+    .species = SPECIES_BRELOOM_FRIBIAN,
+    .ability = ABILITY_DROUGHT,
+    .heldItem = ITEM_CHOICE_BAND,
+    .teraType = TYPE_GRASS,
+    .moves = {MOVE_MACH_PUNCH, MOVE_BULLDOZE, MOVE_STRENGTH_SAP, MOVE_DRAIN_PUNCH}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_BRUTE_BONNET,
+    .ability = ABILITY_PROTOSYNTHESIS,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_SEED_BOMB, MOVE_SUCKER_PUNCH, MOVE_TRAILBLAZE, MOVE_ZEN_HEADBUTT}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_LILLIGANT,
+    .ability = ABILITY_CHLOROPHYLL,
+    .heldItem = ITEM_CHOICE_SPECS,
+    .moves = {MOVE_SOLAR_BEAM, MOVE_ALLURING_VOICE, MOVE_GIGA_DRAIN, MOVE_WEATHER_BALL}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_HYDRAPPLE,
+    .ability = ABILITY_REGENERATOR,
+    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_NASTY_PLOT, MOVE_DRACO_METEOR, MOVE_GIGA_DRAIN, MOVE_EARTH_POWER}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_FERROTHORN,
+    .ability = ABILITY_SEED_SOWER,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_SPIKY_SHIELD, MOVE_IRON_DEFENSE, MOVE_BULLDOZE, MOVE_INGRAIN}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_TSAREENA,
+    .ability = ABILITY_QUEENLY_MAJESTY,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_TROP_KICK, MOVE_PLAY_ROUGH, MOVE_GRASSY_GLIDE, MOVE_TRIPLE_AXEL}
+    }
+};
+
+static const struct TrainerMon sParty_MayleneLilycoveMotel[] = {
+    {
+    .lvl = 75,
+    .species = SPECIES_IRON_HANDS,
+    .ability = ABILITY_QUARK_DRIVE,
+    .heldItem = ITEM_BOOSTER_ENERGY,
+    .teraType = TYPE_ROCK,
+    .moves = {MOVE_PLASMA_FISTS, MOVE_CLOSE_COMBAT, MOVE_DETECT, MOVE_ROCK_SLIDE}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_ANNIHILAPE,
+    .ability = ABILITY_DEFIANT,
+    .heldItem = ITEM_PUNCHING_GLOVE,
+    .moves = {MOVE_RAGE_FIST, MOVE_CLOSE_COMBAT, MOVE_BULK_UP, MOVE_THUNDER_PUNCH}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_MEDICHAM,
+    .ability = ABILITY_PSYCHIC_SURGE,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_PSYSHIELD_BASH, MOVE_AXE_KICK, MOVE_ICE_PUNCH, MOVE_DRAIN_PUNCH}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_ARMAROUGE,
+    .ability = ABILITY_COMPETITIVE,
+    .heldItem = ITEM_FIGHTING_GEM,
+    .moves = {MOVE_EXPANDING_FORCE, MOVE_AURA_SPHERE, MOVE_ARMOR_CANNON, MOVE_PROTECT}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_QUAQUAVAL,
+    .ability = ABILITY_MOXIE,
+    .heldItem = ITEM_CHOICE_SCARF,
+    .moves = {MOVE_AQUA_STEP, MOVE_AQUA_JET, MOVE_CLOSE_COMBAT, MOVE_U_TURN}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_BUZZWOLE,
+    .ability = ABILITY_BEAST_BOOST,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_SUPERPOWER, MOVE_POISON_JAB, MOVE_ICE_PUNCH, MOVE_PROTECT}
+    }
+};
+
+static const struct TrainerMon sParty_WakeLilycoveMotel[] = {
+    {
+    .lvl = 75,
+    .species = SPECIES_SHIBIREFUGU,
+    .ability = ABILITY_INTIMIDATE,
+    .heldItem = ITEM_POISON_GEM,
+    .moves = {MOVE_BANEFUL_BUNKER, MOVE_TOXIC_SPIKES, MOVE_WAVE_CRASH, MOVE_BARB_BARRAGE}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_PALAFIN,
+    .ability = ABILITY_ZERO_TO_HERO,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_BULK_UP, MOVE_JET_PUNCH, MOVE_DRAIN_PUNCH, MOVE_PROTECT}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_BELLOSSOM_EMERIBIAN,
+    .ability = ABILITY_DRIZZLE,
+    .heldItem = ITEM_DAMP_ROCK,
+    .teraType = TYPE_FAIRY,
+    .moves = {MOVE_TRAILBLAZE, MOVE_GIGA_DRAIN, MOVE_JUNGLE_HEALING, MOVE_SCALD}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_SEISMITOAD,
+    .ability = ABILITY_SWIFT_SWIM,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = {MOVE_DRAIN_PUNCH, MOVE_HEADLONG_RUSH, MOVE_WAVE_CRASH, MOVE_POISON_JAB}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_DREDNAW,
+    .ability = ABILITY_STRONG_JAW,
+    .heldItem = ITEM_MEGA_STONE_G,
+    .moves = {MOVE_ROCK_SLIDE, MOVE_ICE_FANG, MOVE_CRUNCH, MOVE_LIQUIDATION}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_DRAGALGE_EMERIBIAN,
+    .ability = ABILITY_SKILL_LINK,
+    .heldItem = ITEM_CHOICE_SCARF,
+    .moves = {MOVE_WATER_SHURIKEN, MOVE_SCALE_SHOT, MOVE_BULLET_SEED, MOVE_SPIKE_CANNON}
+    }
+};
+
+static const struct TrainerMon sParty_FantinaLilycoveMotel[] = {
+    {
+    .lvl = 75,
+    .species = SPECIES_TREVENANT_EMERIBIAN,
+    .ability = ABILITY_ROUGH_SKIN,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_INGRAIN, MOVE_DECORATE, MOVE_PLAY_ROUGH, MOVE_HORN_LEECH}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_GHOLDENGO,
+    .ability = ABILITY_GOOD_AS_GOLD,
+    .heldItem = ITEM_METAL_COAT,
+    .teraType = TYPE_STEEL,
+    .moves = {MOVE_PROTECT, MOVE_NASTY_PLOT, MOVE_MAKE_IT_RAIN, MOVE_SHADOW_BALL}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_DRAGAPULT,
+    .ability = ABILITY_CURSED_BODY,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_DRAGON_DARTS, MOVE_U_TURN, MOVE_DRAGON_DANCE, MOVE_SHADOW_SNEAK}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_DUSKNOIR,
+    .ability = ABILITY_FRISK,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_SHADOW_SNEAK, MOVE_POWER_UP_PUNCH, MOVE_PURSUIT, MOVE_BULLDOZE}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_SINISTCHA,
+    .ability = ABILITY_HOSPITALITY,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_MATCHA_GOTCHA, MOVE_SHADOW_BALL, MOVE_RAGE_POWDER, MOVE_LIFE_DEW}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_BLACEPHALON,
+    .ability = ABILITY_BEAST_BOOST,
+    .heldItem = ITEM_CHOICE_SCARF,
+    .moves = {MOVE_HEAT_WAVE, MOVE_SHADOW_BALL, MOVE_FLAMETHROWER, MOVE_PSYCHIC}
+    }
+};
+
+static const struct TrainerMon sParty_ByronLilycoveMotel[] = {
+    {
+    .lvl = 75,
+    .species = SPECIES_SKARMORY,
+    .ability = ABILITY_STURDY,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_SPIKES, MOVE_STEALTH_ROCK, MOVE_BRAVE_BIRD, MOVE_ROOST}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_FERALIGATR_EMERIBIAN,
+    .ability = ABILITY_STRONG_JAW,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_JAW_LOCK, MOVE_ICE_FANG, MOVE_AQUA_TAIL, MOVE_METEOR_MASH}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_TITANEON,
+    .ability = ABILITY_TRIAGE,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_REVIVAL_BLESSING, MOVE_HEAL_ORDER, MOVE_PARABOLIC_CHARGE, MOVE_LEECH_LIFE}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_TINKATON,
+    .ability = ABILITY_PICKPOCKET,
+    .heldItem = ITEM_AIR_BALLOON,
+    .moves = {MOVE_THUNDER_WAVE, MOVE_GIGATON_HAMMER, MOVE_KNOCK_OFF, MOVE_ENCORE}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_KINGAMBIT,
+    .ability = ABILITY_SUPREME_OVERLORD,
+    .heldItem = ITEM_DREAD_PLATE,
+    .teraType = TYPE_DARK,
+    .moves = {MOVE_SWORDS_DANCE, MOVE_KOWTOW_CLEAVE, MOVE_SUCKER_PUNCH, MOVE_PROTECT}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_ARCHALUDON,
+    .ability = ABILITY_STAMINA,
+    .heldItem = ITEM_MEGA_STONE_G,
+    .moves = {MOVE_FLASH_CANNON, MOVE_DRAGON_PULSE, MOVE_BODY_PRESS, MOVE_ELECTRO_SHOT}
+    }
+};
+
+static const struct TrainerMon sParty_CandiceLilycoveMotel[] = {
+    {
+    .lvl = 75,
+    .species = SPECIES_NINETALES_ALOLA,
+    .ability = ABILITY_SNOW_WARNING,
+    .heldItem = ITEM_LIGHT_CLAY,
+    .moves = {MOVE_AURORA_VEIL, MOVE_FREEZE_DRY, MOVE_BLIZZARD, MOVE_MOONBLAST}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_BAXCALIBUR,
+    .ability = ABILITY_ICE_BODY,
+    .heldItem = ITEM_CLEAR_AMULET,
+    .teraType = TYPE_POISON,
+    .moves = {MOVE_ICICLE_CRASH, MOVE_GLAIVE_RUSH, MOVE_DRAGON_DANCE, MOVE_PROTECT}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_JUMPLUFF_EMERIBIAN,
+    .ability = ABILITY_SLUSH_RUSH,
+    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_GLACIATE, MOVE_DAZZLING_GLEAM, MOVE_DECORATE, MOVE_ENCORE}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_DARMANITAN_GALAR,
+    .ability = ABILITY_GORILLA_TACTICS,
+    .heldItem = ITEM_CHOICE_SCARF,
+    .moves = {MOVE_U_TURN, MOVE_ICICLE_CRASH, MOVE_FLARE_BLITZ, MOVE_ROCK_SLIDE}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_LAPRAS,
+    .ability = ABILITY_WATER_ABSORB,
+    .heldItem = ITEM_KEE_BERRY,
+    .moves = {MOVE_FREEZE_DRY, MOVE_HYDRO_PUMP, MOVE_ALLURING_VOICE, MOVE_CHILLING_WATER}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_CRABOMINABLE,
+    .ability = ABILITY_IRON_FIST,
+    .heldItem = ITEM_PUNCHING_GLOVE,
+    .moves = {MOVE_ICE_HAMMER, MOVE_DRAIN_PUNCH, MOVE_POWER_UP_PUNCH, MOVE_THUNDER_PUNCH}
+    }
+};
+
+static const struct TrainerMon sParty_VolknerLilycoveMotel[] = {
+    {
+    .lvl = 75,
+    .species = SPECIES_TORKOAL,
+    .ability = ABILITY_DROUGHT,
+    .heldItem = ITEM_CHARCOAL,
+    .moves = {MOVE_ERUPTION, MOVE_HEAT_WAVE, MOVE_EARTH_POWER, MOVE_PROTECT}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_RAGING_BOLT,
+    .ability = ABILITY_PROTOSYNTHESIS,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_THUNDERCLAP, MOVE_DRACO_METEOR, MOVE_THUNDERBOLT, MOVE_VOLT_SWITCH}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_SANDY_SHOCKS,
+    .ability = ABILITY_PROTOSYNTHESIS,
+    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .teraType = TYPE_FAIRY,
+    .moves = {MOVE_EARTH_POWER, MOVE_VOLT_SWITCH, MOVE_STEALTH_ROCK, MOVE_TERA_BLAST}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_TYPHLOSION_EMERIBIAN,
+    .ability = ABILITY_ELECTROMORPHOSIS,
+    .heldItem = ITEM_CHOICE_SCARF,
+    .moves = {MOVE_THUNDERCLAP, MOVE_ERUPTION, MOVE_OVERDRIVE, MOVE_VOLT_SWITCH}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_ORICORIO_POM_POM,
+    .ability = ABILITY_DANCER,
+    .heldItem = ITEM_KEE_BERRY,
+    .moves = {MOVE_QUIVER_DANCE, MOVE_REVELATION_DANCE, MOVE_AIR_SLASH, MOVE_ROOST}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_ELECTIVIRE,
+    .ability = ABILITY_TERAVOLT,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_PLASMA_FISTS, MOVE_FLAMETHROWER, MOVE_DARKEST_LARIAT, MOVE_EARTHQUAKE}
+    }
+};
+
+static const struct TrainerMon sParty_AaronLilycoveMotel[] = {
+    {
+    .lvl = 75,
+    .species = SPECIES_SLITHER_WING,
+    .ability = ABILITY_PROTOSYNTHESIS,
+    .heldItem = ITEM_BOOSTER_ENERGY,
+    .teraType = TYPE_FIRE,
+    .moves = {MOVE_FIRST_IMPRESSION, MOVE_FLAME_CHARGE, MOVE_CLOSE_COMBAT, MOVE_FLARE_BLITZ}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_RIBOMBEE,
+    .ability = ABILITY_SHIELD_DUST,
+    .heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_STICKY_WEB, MOVE_DAZZLING_GLEAM, MOVE_AURA_SPHERE, MOVE_BUG_BUZZ}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_ARMALDO,
+    .ability = ABILITY_SHARPNESS,
+    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_AQUA_CUTTER, MOVE_X_SCISSOR, MOVE_PROTECT, MOVE_STEALTH_ROCK}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_SCIZOR,
+    .ability = ABILITY_LIGHT_METAL,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_BULLET_PUNCH, MOVE_KNOCK_OFF, MOVE_SWORDS_DANCE, MOVE_ROOST}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_DRAPION,
+    .ability = ABILITY_BATTLE_ARMOR,
+    .heldItem = ITEM_BLACK_SLUDGE,
+    .moves = {MOVE_SWORDS_DANCE, MOVE_KNOCK_OFF, MOVE_POISON_JAB, MOVE_SPIKY_SHIELD}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_PHEROMOSA,
+    .ability = ABILITY_BEAST_BOOST,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_ICE_BEAM, MOVE_PROTECT, MOVE_SKITTER_SMACK}
+    }
+};
+
+static const struct TrainerMon sParty_BerthaLilycoveMotel[] = {
+    {
+    .lvl = 75,
+    .species = SPECIES_FLYGON,
+    .ability = ABILITY_LEVITATE,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_TAILWIND, MOVE_U_TURN}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_ORTHWORM,
+    .ability = ABILITY_EARTH_EATER,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_STEALTH_ROCK, MOVE_HEAVY_SLAM, MOVE_BODY_PRESS, MOVE_PROTECT}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_HIPPOWDON,
+    .ability = ABILITY_SAND_STREAM,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_EARTHQUAKE, MOVE_WHIRLWIND, MOVE_SLACK_OFF, MOVE_STONE_EDGE}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_CACTURNE,
+    .ability = ABILITY_SAND_VEIL,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_SPIKY_SHIELD, MOVE_KNOCK_OFF, MOVE_LEAF_STORM, MOVE_SUCKER_PUNCH}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_GARCHOMP,
+    .ability = ABILITY_SAND_SPIT,
+    .heldItem = ITEM_GROUND_GEM,
+    .moves = {MOVE_EARTHQUAKE, MOVE_DRAGON_TAIL, MOVE_POISON_JAB, MOVE_PROTECT}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_CLODSIRE,
+    .ability = ABILITY_UNAWARE,
+    .heldItem = ITEM_LEFTOVERS,
+    .teraType = TYPE_FLYING,
+    .moves = {MOVE_EARTHQUAKE, MOVE_RECOVER, MOVE_POISON_JAB, MOVE_TOXIC}
+    }
+};
+
+static const struct TrainerMon sParty_FlintLilycoveMotel[] = {
+    {
+    .lvl = 75,
+    .species = SPECIES_SOLFLORA,
+    .ability = ABILITY_CHLOROPHYLL,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_SOLAR_BEAM, MOVE_EARTH_POWER, MOVE_SLUDGE_BOMB, MOVE_TORCH_SONG}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_TYPHLOSION,
+    .ability = ABILITY_BLAZE,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_ERUPTION, MOVE_FOCUS_BLAST, MOVE_SCORCHING_SANDS, MOVE_BURNING_BULWARK}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_CERULEDGE,
+    .ability = ABILITY_DEFIANT,
+    .heldItem = ITEM_FOCUS_SASH,
+    .teraType = TYPE_FIGHTING,
+    .moves = {MOVE_SWORDS_DANCE, MOVE_BITTER_BLADE, MOVE_SHADOW_SNEAK, MOVE_CLOSE_COMBAT}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_BLAZIKEN,
+    .ability = ABILITY_SPEED_BOOST,
+    .heldItem = ITEM_AIR_BALLOON,
+    .moves = {MOVE_PROTECT, MOVE_SWORDS_DANCE, MOVE_CLOSE_COMBAT, MOVE_FLARE_BLITZ}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_IRON_MOTH,
+    .ability = ABILITY_QUARK_DRIVE,
+    .heldItem = ITEM_BOOSTER_ENERGY,
+    .moves = {MOVE_FIERY_DANCE, MOVE_SLUDGE_WAVE, MOVE_DAZZLING_GLEAM, MOVE_SUBSTITUTE}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_CINDERACE,
+    .ability = ABILITY_LIBERO,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_BOUNCE, MOVE_HIGH_JUMP_KICK, MOVE_IRON_HEAD, MOVE_PYRO_BALL}
+    }
+};
+
+static const struct TrainerMon sParty_LucianLilycoveMotel[] = {
+    {
+    .lvl = 75,
+    .species = SPECIES_METAGROSS,
+    .ability = ABILITY_CLEAR_BODY,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_HEAVY_SLAM, MOVE_PSYCHIC_FANGS, MOVE_BULLET_PUNCH, MOVE_STOMPING_TANTRUM}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_BUTTERFREE,
+    .ability = ABILITY_COMPOUND_EYES,
+    .heldItem = ITEM_MEGA_STONE_G,
+    .moves = {MOVE_QUIVER_DANCE, MOVE_AEROBLAST, MOVE_POLLEN_PUFF, MOVE_PSYCHIC}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_IRON_CROWN,
+    .ability = ABILITY_QUARK_DRIVE,
+    .heldItem = ITEM_BOOSTER_ENERGY,
+    .moves = {MOVE_TACHYON_CUTTER, MOVE_EXPANDING_FORCE, MOVE_CALM_MIND, MOVE_PROTECT}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_RABSCA,
+    .ability = ABILITY_PSYCHIC_SURGE,
+    .heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_REVIVAL_BLESSING, MOVE_AURA_SPHERE, MOVE_BUG_BUZZ, MOVE_PSYCHIC}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_HATTERENE,
+    .ability = ABILITY_MAGIC_BOUNCE,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_EXPANDING_FORCE, MOVE_DAZZLING_GLEAM, MOVE_PROTECT, MOVE_SHADOW_BALL}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_MALAMAR,
+    .ability = ABILITY_SIMPLE,
+    .heldItem = ITEM_CHOICE_SCARF,
+    .teraType = TYPE_STELLAR,
+    .moves = {MOVE_KNOCK_OFF, MOVE_SUPERPOWER, MOVE_TERA_BLAST, MOVE_PSYCHO_CUT}
+    }
+};
+
+static const struct TrainerMon sParty_CynthiaLilycoveMotel[] = {
+    {
+    .lvl = 75,
+    .species = SPECIES_TOGEKISS,
+    .ability = ABILITY_SUPER_LUCK,
+    .heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_AIR_SLASH, MOVE_DAZZLING_GLEAM, MOVE_FOLLOW_ME, MOVE_PROTECT}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_LUCARIO,
+    .ability = ABILITY_JUSTIFIED,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_SWORDS_DANCE, MOVE_METEOR_MASH, MOVE_CLOSE_COMBAT, MOVE_BULLET_PUNCH}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_ROSERADE,
+    .ability = ABILITY_POISON_POINT,
+    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_TOXIC_SPIKES, MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_SYNTHESIS}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_SYLVEON,
+    .ability = ABILITY_PIXILATE,
+    .heldItem = ITEM_THROAT_SPRAY,
+    .teraType = TYPE_FIRE,
+    .moves = {MOVE_HYPER_VOICE, MOVE_CALM_MIND, MOVE_PROTECT, MOVE_TERA_BLAST}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_GASTRODON,
+    .ability = ABILITY_STORM_DRAIN,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_SLUDGE_BOMB, MOVE_EARTH_POWER, MOVE_ICE_BEAM, MOVE_RECOVER}
+    },
+    {
+    .lvl = 75,
+    .species = SPECIES_GARCHOMP,
+    .ability = ABILITY_ROUGH_SKIN,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_STOMPING_TANTRUM, MOVE_ROCK_SLIDE, MOVE_DRAGON_CLAW, MOVE_PROTECT}
+    }
+};

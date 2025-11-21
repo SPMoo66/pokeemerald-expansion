@@ -1509,9 +1509,8 @@
 #define FLAG_MET_INVESTOR                           (SYSTEM_FLAGS + 0x85) // Met the Investor NPC
 #define FLAG_INVESTMENT_MADE                        (SYSTEM_FLAGS + 0x86) // Made an investment with the Investor NPC
 
-#define FLAG_UNUSED_0x8E7                           (SYSTEM_FLAGS + 0x87) // Unused
-
-#define FLAG_CHALLENGING_TRAINER                    (SYSTEM_FLAGS + 0x88) // Set for challenging trainers so level sync does not scale them two levels lower like standard trainers
+#define FLAG_SUPERBOSS_TRAINER                      (SYSTEM_FLAGS + 0x87) // Set for superboss-type trainers so that level sync scales them *three levels higher than max party level*, intead of two levels lower like standard trainers
+#define FLAG_CHALLENGING_TRAINER                    (SYSTEM_FLAGS + 0x88) // Set for challenging trainers so that level sync scales *to max party level*, instead of two levels lower like standard trainers
 #define FLAG_PREVENT_OVERWORLD_SPEEDUP              (SYSTEM_FLAGS + 0x89) // Was unused
 #define FLAG_SYS_SET_BATTLE_BGM                     (SYSTEM_FLAGS + 0x8A) // Was unused, set this flag when overriding battle BGM, store BGM in VAR_TEMP_F
 #define FLAG_NEW_GAME_PLUS                          (SYSTEM_FLAGS + 0x8B) // Set upon beating the Champion for the first time, carries with new games

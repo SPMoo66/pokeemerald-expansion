@@ -2009,20 +2009,24 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 otIdType = OT_ID_PRESET;
                 fixedOtId = HIHALF(personalityValue) ^ LOHALF(personalityValue);
             }
-            if (gSaveBlock2Ptr->optionsLevelSync) {
+            if (gSaveBlock2Ptr->optionsLevelSync) { // Checks if the level sync option is set
                 u8 lvl = 1;
                 lvl = GetMaxLevel(0);
-                if (FlagGet(FLAG_CHALLENGING_TRAINER))
+                if (FlagGet(FLAG_CHALLENGING_TRAINER)) // Checks if the Challenging Trainer flag is set, scales to level if so
                 {
                     CreateMon(&party[i], partyData[monIndex].species, lvl, 0, TRUE, personalityValue, otIdType, fixedOtId);
                 }
-                else
+                else if (FlagGet(FLAG_SUPERBOSS_TRAINER)) // Checks if the Superboss Trainer flag is set, scales to level + 3 if so
+                {
+                    CreateMon(&party[i], partyData[monIndex].species, lvl + 3, 0, TRUE, personalityValue, otIdType, fixedOtId);
+                }
+                else // If no trainer level flag is set, scales to level - 2
                 {
                     CreateMon(&party[i], partyData[monIndex].species, lvl - 2, 0, TRUE, personalityValue, otIdType, fixedOtId);
                 }
             }
-            else if (FlagGet(FLAG_ELITE_FOUR_CHALLENGE))
-            {
+            else if (FlagGet(FLAG_ELITE_FOUR_CHALLENGE)) // This is active at all times during the Elite Four + Champion, cleared after whiteout or completion of Elite Four + Champion
+            {                                            // It sets levels to the normally assigned trainer levels during first run, then +10 after completing the game once
                 u8 gameClearLevelBoost = 0;
                 if (FlagGet(FLAG_SYS_GAME_CLEAR))
                     gameClearLevelBoost = 10; // mons are gameClearLevelBoost levels higher when rematching

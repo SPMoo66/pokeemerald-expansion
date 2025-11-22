@@ -28,10 +28,14 @@ static const u32 sMugshotImg_Jigglypuff1[] = INCBIN_U32("graphics/mugshots/jiggl
 static const u32 sMugshotImg_Jigglypuff2[] = INCBIN_U32("graphics/mugshots/jigglypuff2.4bpp.smol");
 static const u16 sMugshotPal_Jigglypuff[] = INCBIN_U16("graphics/mugshots/jigglypuff2.gbapal");
 
+static const u32 sMugshotImg_CynthiasChallenge[] = INCBIN_U32("graphics/mugshots/cynthias_challenge.4bpp.smol");
+static const u16 sMugshotPal_CynthiasChallenge[] = INCBIN_U16("graphics/mugshots/cynthias_challenge.gbapal");
+
 static const struct Mugshot sMugshots[] = {
     [MUGSHOT_TEST] = {.x = 0, .y = 1, .width = 240, .height = 96, .image = sMugshotImg_Test, .palette = sMugshotPal_Test},
     [MUGSHOT_JIGGLYPUFF_1] = {.x = 0, .y = 1, .width = 96, .height = 96, .image = sMugshotImg_Jigglypuff1, .palette = sMugshotPal_Jigglypuff},
     [MUGSHOT_JIGGLYPUFF_2] = {.x = 0, .y = 1, .width = 96, .height = 96, .image = sMugshotImg_Jigglypuff2, .palette = sMugshotPal_Jigglypuff},
+    [MUGSHOT_CYNTHIAS_CHALLENGE] = {.x = 8, .y = 1, .width = 128, .height = 32, .image = sMugshotImg_CynthiasChallenge, .palette = sMugshotPal_CynthiasChallenge},
 };
 
 

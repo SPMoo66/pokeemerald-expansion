@@ -1,4 +1,7 @@
 script Gamecube_CynthiasChallenge {
+	setvar (VAR_0x8000, MUGSHOT_CYNTHIAS_CHALLENGE)
+	callnative (DrawMugshot)
 	msgbox ("Test")
+	callnative (ClearMugshot)
 	closemessage
 }

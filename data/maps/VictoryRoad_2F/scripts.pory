@@ -1,10 +1,12 @@
 const MELOETTA = 1
+const MELOETTA_SCRIPT_OBJECT = 2
 
 mapscripts VictoryRoad_2F_MapScripts {
 	MAP_SCRIPT_ON_RESUME {
 		setobjectxy (MELOETTA, 9, 0)
 		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
 			removeobject(MELOETTA)
+			removeobject(MELOETTA_SCRIPT_OBJECT)
 		}
 	}
 	MAP_SCRIPT_ON_TRANSITION {
@@ -37,6 +39,4 @@ script BattleMeloetta {
 		msgbox(format("You can see the Pokémon League building in the distance."))
 	}
 	release
-	end
 }
-

@@ -2,6 +2,14 @@ script Gamecube_CynthiasChallenge {
 	setvar (VAR_0x8000, MUGSHOT_CYNTHIAS_CHALLENGE)
 	callnative (DrawMugshot)
 	msgbox ("Test")
+	dynmultipush ("Gym Leaders Part 1", 0)
+	dynmultipush ("Gym Leaders Part 2", 1)
+	dynmultipush ("Sinnoh League", 2)
+	dynmultistack (0, 6, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+	switch (var(VAR_RESULT)) {
+		default:
+			break
+	}
 	callnative (ClearMugshot)
 	closemessage
 }

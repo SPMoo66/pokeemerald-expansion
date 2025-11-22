@@ -15,6 +15,7 @@ struct Mugshot{
     u8 height;
     const u32* image;
     const u16* palette;
+    u16 baseBlock;
 };
 
 void DrawMugshot(void); //VAR_0x8000 = mugshot id
@@ -31,11 +32,28 @@ static const u16 sMugshotPal_Jigglypuff[] = INCBIN_U16("graphics/mugshots/jiggly
 static const u32 sMugshotImg_CynthiasChallenge[] = INCBIN_U32("graphics/mugshots/cynthias_challenge.4bpp.smol");
 static const u16 sMugshotPal_CynthiasChallenge[] = INCBIN_U16("graphics/mugshots/cynthias_challenge.gbapal");
 
+
+// !!!!! IMPORTANT !!!!!
+// .baseBlock determines which range in tile memory that the mugshot is drawn.
+// 0x00 is not good, the transparency layer will be overwritten
+// 0x64 is where dynmultichoice starts to draw and multichoices take more memory depending on number of options and length...
+// For example, a dynmultichoice with 3 options and text length "Gym Leaders Part 1" occupies roughly 0x64-0xB7
+// 0x194 is where the msgbox window starts to draw and occupies more memory than most multichoices will.
+// Thus, 0x01 - 0x63 is a relatively safe range... but larger mugshots will still not fit there well.
+//
+// .baseBlock needs to be determined individually for each mugshot added !!!
+// You can manually check memory in mGBA's tiles window when everything required is drawn.
+//
+// For a smallish mugshot like Cynthia's Challenge, drawing between 0x00 and 0x64 is suitable.
+// For a larger mugshot, drawing between the end of the dynmultichoice and 0x194 may be good.
+// For an even larger mugshot or if a large dynmultichoice is present, drawing after the msgbox may be good?
+// For a larger mugshot than that, figure out a custom solution, like hiding all dynmultichoice/msgbox windows around it or drawing to another layer like the intro cutscene (MUGSHOT_TEST) does.
+
 static const struct Mugshot sMugshots[] = {
-    [MUGSHOT_TEST] = {.x = 0, .y = 1, .width = 240, .height = 96, .image = sMugshotImg_Test, .palette = sMugshotPal_Test},
-    [MUGSHOT_JIGGLYPUFF_1] = {.x = 0, .y = 1, .width = 96, .height = 96, .image = sMugshotImg_Jigglypuff1, .palette = sMugshotPal_Jigglypuff},
-    [MUGSHOT_JIGGLYPUFF_2] = {.x = 0, .y = 1, .width = 96, .height = 96, .image = sMugshotImg_Jigglypuff2, .palette = sMugshotPal_Jigglypuff},
-    [MUGSHOT_CYNTHIAS_CHALLENGE] = {.x = 8, .y = 1, .width = 128, .height = 32, .image = sMugshotImg_CynthiasChallenge, .palette = sMugshotPal_CynthiasChallenge},
+    [MUGSHOT_TEST] = {.x = 0, .y = 1, .width = 240, .height = 96, .image = sMugshotImg_Test, .palette = sMugshotPal_Test, .baseBlock = 0x40},
+    [MUGSHOT_JIGGLYPUFF_1] = {.x = 0, .y = 1, .width = 96, .height = 96, .image = sMugshotImg_Jigglypuff1, .palette = sMugshotPal_Jigglypuff, .baseBlock = 0x40},
+    [MUGSHOT_JIGGLYPUFF_2] = {.x = 0, .y = 1, .width = 96, .height = 96, .image = sMugshotImg_Jigglypuff2, .palette = sMugshotPal_Jigglypuff, .baseBlock = 0x40},
+    [MUGSHOT_CYNTHIAS_CHALLENGE] = {.x = 8, .y = 1, .width = 128, .height = 32, .image = sMugshotImg_CynthiasChallenge, .palette = sMugshotPal_CynthiasChallenge, .baseBlock = 0x10},
 };
 
 
@@ -59,10 +77,10 @@ static void DrawMugshotCore(const struct Mugshot* const mugshot, int x, int y){
         ClearMugshot();
     }
     if (VarGet(VAR_0x8000) == MUGSHOT_TEST) {
-        SetWindowTemplateFields(&t, 1, x, y, mugshot->width/8, mugshot->height/8, MUGSHOT_PALETTE_NUM, 0x40);
+        SetWindowTemplateFields(&t, 1, x, y, mugshot->width/8, mugshot->height/8, MUGSHOT_PALETTE_NUM, mugshot->baseBlock);
     }
     else {
-        SetWindowTemplateFields(&t, 0, x, y, mugshot->width/8, mugshot->height/8, MUGSHOT_PALETTE_NUM, 0x40);
+        SetWindowTemplateFields(&t, 0, x, y, mugshot->width/8, mugshot->height/8, MUGSHOT_PALETTE_NUM, mugshot->baseBlock);
     }
     windowId = AddWindow(&t);
     sMugshotWindow = windowId + 1;

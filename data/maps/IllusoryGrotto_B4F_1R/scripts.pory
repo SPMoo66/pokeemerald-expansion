@@ -1,3 +1,5 @@
+const ROCK_OBJECT_SCRIPT_B4F = 2
+
 mapscripts IllusoryGrotto_B4F_1R_MapScripts {
 	MAP_SCRIPT_ON_LOAD {
 		if (flag(FLAG_EXP_1_ILLUSORY_GROTTO_B4F_1R_ROCK)) {
@@ -32,6 +34,7 @@ script IllusoryGrotto_B4F_1R_Rock {
 		delay (10)
 		setflag (FLAG_EXP_1_ILLUSORY_GROTTO_B4F_1R_ROCK)
 		setvar (VAR_TEMP_3, 1)
+		removeobject (ROCK_OBJECT_SCRIPT_B4F)
 	}
 	release
 }

@@ -3,50 +3,64 @@ script Gamecube_CynthiasChallenge {
 			"Want to use it?", MSGBOX_DEFAULT)
 	dynmultichoice (0, 6, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, gText_Yes, gText_Info, gText_No)
 	if (var(VAR_RESULT) == 0) {
-		setflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
-		setflag (FLAG_CHALLENGING_TRAINER)
-		setvar (VAR_0x8000, MUGSHOT_CYNTHIAS_CHALLENGE)
-		callnative (DrawMugshot)
-		msgbox ("Test")
-		if (!flag(FLAG_BATTLESIM_DISC_1_1)) {
-			dynmultipush ("Gym Leaders Part 1", 0)
-		}
-		else {
-			dynmultipush ("Gym Leaders Part 1 - Complete!", 0)
-		}
-		if (!flag(FLAG_BATTLESIM_DISC_1_2)) {
-			dynmultipush ("Gym Leaders Part 2", 1)
-		}
-		else {
-			dynmultipush ("Gym Leaders Part 2 - Complete!", 1)
-		}
-		if (flag(FLAG_BATTLESIM_DISC_1_1) && flag(FLAG_BATTLESIM_DISC_1_2)) {
-			if (!flag(FLAG_BATTLESIM_DISC_1_3)) {
-				dynmultipush ("Sinnoh League", 2) // requires completion of the previous two series
-			}
-			else {
-				dynmultipush ("Sinnoh League - Complete!", 2) // requires completion of the previous two series
-			}
-		}
-		dynmultistack (0, 6, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
-		callnative (ClearMugshot)
-		switch (var(VAR_RESULT)) {
-			case 0:
-				call (CynthiasChallenge_Series1)
-			case 1:
-				call (CynthiasChallenge_Series2)
-			case 2:
-				call (CynthiasChallenge_Series3)
-			default:
-				break
-		}
-		clearflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
-		clearflag (FLAG_CHALLENGING_TRAINER)
+		call (CynthiasChallenge_Main)
 	}
 	elif (var(VAR_RESULT) == 1) {
 		call (Gamecube_Info)
 	}
+	clearflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
+	clearflag (FLAG_CHALLENGING_TRAINER)
 	closemessage
+}
+
+//script Gamecube_ChooseDisc {
+//	msgbox ("Which disc will you insert?", MSGBOX_DEFAULT)
+//	dynmultipush ("Cynthia's Challenge!", 0)
+//	if (!flag(FLAG_TEMP_5)) {
+//		dynmultipush ("Disc 2", 1)
+//	}
+//	dynmultistack (0, 6, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+//}
+
+script CynthiasChallenge_Main {
+	setflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
+	setflag (FLAG_CHALLENGING_TRAINER)
+	setvar (VAR_0x8000, MUGSHOT_CYNTHIAS_CHALLENGE)
+	callnative (DrawMugshot)
+	msgbox ("Welcome to Cynthia's Challenge!\n"
+			"Please select a battle series.")
+	if (!flag(FLAG_BATTLESIM_DISC_1_1)) {
+		dynmultipush ("Gym Leaders Part 1", 0)
+	}
+	else {
+		dynmultipush ("Gym Leaders Part 1 - Complete!", 0)
+	}
+	if (!flag(FLAG_BATTLESIM_DISC_1_2)) {
+		dynmultipush ("Gym Leaders Part 2", 1)
+	}
+	else {
+		dynmultipush ("Gym Leaders Part 2 - Complete!", 1)
+	}
+	if (flag(FLAG_BATTLESIM_DISC_1_1) && flag(FLAG_BATTLESIM_DISC_1_2)) {
+		if (!flag(FLAG_BATTLESIM_DISC_1_3)) {
+			dynmultipush ("Sinnoh League", 2) // requires completion of the previous two series
+		}
+		else {
+			dynmultipush ("Sinnoh League - Complete!", 2) // requires completion of the previous two series
+		}
+	}
+	dynmultistack (0, 6, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+	callnative (ClearMugshot)
+	switch (var(VAR_RESULT)) {
+		case 0:
+			call (CynthiasChallenge_Series1)
+		case 1:
+			call (CynthiasChallenge_Series2)
+		case 2:
+			call (CynthiasChallenge_Series3)
+		default:
+			break
+	}
 }
 
 script CynthiasChallenge_Series1 {

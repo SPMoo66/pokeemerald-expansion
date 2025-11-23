@@ -10912,3 +10912,159 @@
         .party = TRAINER_PARTY(sParty_Bjorn),
     },
 
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_ROARK] =
+    {
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_LEADER_ROARK,
+        .trainerName = _("Roark"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_RoarkSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_GARDENIA] =
+    {
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_LEADER_GARDENIA,
+        .trainerName = _("Gardenia"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_GardeniaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_MAYLENE] =
+    {
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_LEADER_MAYLENE,
+        .trainerName = _("Maylene"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_MayleneSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_WAKE] =
+    {
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_LEADER_WAKE,
+        .trainerName = _("Wake"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_WakeSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_FANTINA] =
+    {
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_LEADER_FANTINA,
+        .trainerName = _("Fantina"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_FantinaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_BYRON] =
+    {
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_LEADER_BYRON,
+        .trainerName = _("Byron"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_ByronSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_CANDICE] =
+    {
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_LEADER_CANDICE,
+        .trainerName = _("Candice"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_CandiceSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_VOLKNER] =
+    {
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_LEADER_VOLKNER,
+        .trainerName = _("Volkner"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_VolknerSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_AARON] =
+    {
+        .trainerClass = TRAINER_CLASS_ELITE_FOUR,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_AARON,
+        .trainerName = _("Aaron"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_AaronSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_BERTHA] =
+    {
+        .trainerClass = TRAINER_CLASS_ELITE_FOUR,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_BERTHA,
+        .trainerName = _("Bertha"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_BerthaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_FLINT] =
+    {
+        .trainerClass = TRAINER_CLASS_ELITE_FOUR,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_FLINT,
+        .trainerName = _("Flint"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_FlintSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_LUCIAN] =
+    {
+        .trainerClass = TRAINER_CLASS_ELITE_FOUR,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_LUCIAN,
+        .trainerName = _("Lucian"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_LucianSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_CYNTHIA] =
+    {
+        .trainerClass = TRAINER_CLASS_CHAMPION,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_CYNTHIA,
+        .trainerName = _("Cynthia"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+

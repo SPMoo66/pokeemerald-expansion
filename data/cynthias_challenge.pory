@@ -4,6 +4,7 @@ script Gamecube_CynthiasChallenge {
 	dynmultichoice (0, 6, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, gText_Yes, gText_Info, gText_No)
 	if (var(VAR_RESULT) == 0) {
 		setflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
+		setflag (FLAG_CHALLENGING_TRAINER)
 		setvar (VAR_0x8000, MUGSHOT_CYNTHIAS_CHALLENGE)
 		callnative (DrawMugshot)
 		msgbox ("Test")
@@ -40,6 +41,7 @@ script Gamecube_CynthiasChallenge {
 				break
 		}
 		clearflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
+		clearflag (FLAG_CHALLENGING_TRAINER)
 	}
 	elif (var(VAR_RESULT) == 1) {
 		call (Gamecube_Info)
@@ -48,10 +50,14 @@ script Gamecube_CynthiasChallenge {
 }
 
 script CynthiasChallenge_Series1 {
-	trainerbattle_no_intro (TRAINER_HARPER_1, "W-what? That can't be!\nMy buffed-up Pokémon!") // Roark
-	trainerbattle_no_intro (TRAINER_HARPER_2, "Amazing!\nYou're very good, aren't you?") // Gardenia
-	trainerbattle_no_intro (TRAINER_HARPER_3, "I shall admit defeat…\nYou are much too strong.") // Maylene
-	trainerbattle_no_intro (TRAINER_HARPER_4, "Hunwah! It's gone and ended!\nHow will I say this… I want more!\lI wanted to battle a lot more!") // Wake
+	trainerbattle_no_intro (TRAINER_SIMULATOR_ROARK, "W-what? That can't be!\nMy buffed-up Pokémon!") // Roark
+	special (HealPlayerParty)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_GARDENIA, "Amazing!\nYou're very good, aren't you?") // Gardenia
+	special (HealPlayerParty)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_MAYLENE, "I shall admit defeat…\nYou are much too strong.") // Maylene
+	special (HealPlayerParty)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_WAKE, "Hunwah! It's gone and ended!\nHow will I say this… I want more!\lI wanted to battle a lot more!") // Wake
+	special (HealPlayerParty)
 	msgbox (Gamecube_Text_Congratulations, MSGBOX_DEFAULT)
 	if (!flag(FLAG_BATTLESIM_DISC_1_1)) {
 		giveitem (ITEM_STELLAR_TERA_SHARD, 2)
@@ -64,10 +70,14 @@ script CynthiasChallenge_Series1 {
 }
 
 script CynthiasChallenge_Series2 {
-	//trainerbattle_no_intro (TRAINER_HARPER_1, "You are so fantastically strong.\nI know now why I have lost.") // Fantina
-	//trainerbattle_no_intro (TRAINER_HARPER_2, "Hmm! My sturdy Pokémon, defeated!") // Byron
-	//trainerbattle_no_intro (TRAINER_HARPER_3, "I must say, I'm warmed up to you!\nI might even admire you a little.") // Candice
-	//trainerbattle_no_intro (TRAINER_HARPER_4, "You've got me beat…\nYour desire and the noble way your\lPokémon battled for you…\lI even felt thrilled during our match.\lThat was a very good battle.") // Volkner
+	trainerbattle_no_intro (TRAINER_SIMULATOR_FANTINA, "You are so fantastically strong.\nI know now why I have lost.") // Fantina
+	special (HealPlayerParty)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_BYRON, "Hmm! My sturdy Pokémon, defeated!") // Byron
+	special (HealPlayerParty)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_CANDICE, "I must say, I'm warmed up to you!\nI might even admire you a little.") // Candice
+	special (HealPlayerParty)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_VOLKNER, "You've got me beat…\nYour desire and the noble way your\lPokémon battled for you…\lI even felt thrilled during our match.\lThat was a very good battle.") // Volkner
+	special (HealPlayerParty)
 	msgbox (Gamecube_Text_Congratulations, MSGBOX_DEFAULT)
 	if (!flag(FLAG_BATTLESIM_DISC_1_2)) {
 		giveitem (ITEM_STELLAR_TERA_SHARD, 2)
@@ -80,16 +90,21 @@ script CynthiasChallenge_Series2 {
 }
 
 script CynthiasChallenge_Series3 {
-	//trainerbattle_no_intro (TRAINER_HARPER_1, "I will now concede defeat. But I think\nyou came to see how great Bug-type\lPokémon can be. Battling is a deep and\lcomplex affair…") // Aaron
-	//trainerbattle_no_intro (TRAINER_HARPER_2, "Well! Dear child, I must say, that was\nmost impressive. Your Pokémon believed\lin you and did their best to earn you\lthe win.") // Bertha
-	//trainerbattle_no_intro (TRAINER_HARPER_3, "…! I wasn't expecting this! I wasn't\nlooking down on you… But I didn't think\lfor one second that I'd lose!") // Flint
-	//trainerbattle_no_intro (TRAINER_HARPER_4, "I see… You getting past the three\nbefore me was no fluke. Your power\lis real.") // Lucian
-	//trainerbattle_no_intro (TRAINER_HARPER_5, "…Just a few moments ago, you were the\nmost powerful challenger. And just now,\lyou became the most powerful of all the\lTrainers.") // Cynthia
+	trainerbattle_no_intro (TRAINER_SIMULATOR_AARON, "I will now concede defeat. But I think\nyou came to see how great Bug-type\lPokémon can be. Battling is a deep and\lcomplex affair…") // Aaron
+	special (HealPlayerParty)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_BERTHA, "Well! Dear child, I must say, that was\nmost impressive. Your Pokémon believed\lin you and did their best to earn you\lthe win.") // Bertha
+	special (HealPlayerParty)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_FLINT, "…! I wasn't expecting this! I wasn't\nlooking down on you… But I didn't think\lfor one second that I'd lose!") // Flint
+	special (HealPlayerParty)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_LUCIAN, "I see… You getting past the three\nbefore me was no fluke. Your power\lis real.") // Lucian
+	special (HealPlayerParty)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_CYNTHIA, "…Just a few moments ago, you were the\nmost powerful challenger. And just now,\lyou became the most powerful of all the\lTrainers.") // Cynthia
+	special (HealPlayerParty)
 	msgbox (Gamecube_Text_Congratulations, MSGBOX_DEFAULT)
 	if (!flag(FLAG_BATTLESIM_DISC_1_3)) {
 		giveitem (ITEM_SHINY_LURE, 1)
 		giveitem (ITEM_EXP_CANDY_XL, 2)
-		setvar (VAR_0x8004, 3)
+		setvar (VAR_0x8004, 5)
 		special (GiveFrontierBattlePoints)
 		msgbox ("{PLAYER} obtained\n3 Battle Points.", MSGBOX_GETPOINTS)
 		setflag (FLAG_BATTLESIM_DISC_1_3)

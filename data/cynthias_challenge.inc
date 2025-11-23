@@ -1,15 +1,15 @@
-Gamecube_CynthiasChallenge::
+Motel_BattleSimulator::
 # 2 "data/cynthias_challenge.pory"
-	msgbox Gamecube_CynthiasChallenge_Text_0, MSGBOX_DEFAULT
+	msgbox Motel_BattleSimulator_Text_0, MSGBOX_DEFAULT
 # 4 "data/cynthias_challenge.pory"
 	dynmultichoice 0, 6, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, gText_Yes, gText_Info, gText_No
 # 5 "data/cynthias_challenge.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq Gamecube_CynthiasChallenge_2
+	goto_if_eq Motel_BattleSimulator_2
 # 8 "data/cynthias_challenge.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq Gamecube_CynthiasChallenge_3
-Gamecube_CynthiasChallenge_1:
+	goto_if_eq Motel_BattleSimulator_3
+Motel_BattleSimulator_1:
 # 11 "data/cynthias_challenge.pory"
 	clearflag FLAG_NO_MONEY_LOSS_ON_DEFEAT
 # 12 "data/cynthias_challenge.pory"
@@ -18,15 +18,15 @@ Gamecube_CynthiasChallenge_1:
 	closemessage
 	return
 
-Gamecube_CynthiasChallenge_2:
+Motel_BattleSimulator_2:
 # 6 "data/cynthias_challenge.pory"
 	call CynthiasChallenge_Main
-	goto Gamecube_CynthiasChallenge_1
+	goto Motel_BattleSimulator_1
 
-Gamecube_CynthiasChallenge_3:
+Motel_BattleSimulator_3:
 # 9 "data/cynthias_challenge.pory"
 	call Gamecube_Info
-	goto Gamecube_CynthiasChallenge_1
+	goto Motel_BattleSimulator_1
 
 
 CynthiasChallenge_Main::
@@ -229,11 +229,11 @@ Gamecube_Info::
 # 132 "data/cynthias_challenge.pory"
 	msgbox Gamecube_Info_Text_0
 # 138 "data/cynthias_challenge.pory"
-	goto Gamecube_CynthiasChallenge
+	goto Motel_BattleSimulator
 	return
 
 
-Gamecube_CynthiasChallenge_Text_0:
+Motel_BattleSimulator_Text_0:
 # 2 "data/cynthias_challenge.pory"
 	.string "It's a battle simulator!\n"
 	.string "Want to use it?$"

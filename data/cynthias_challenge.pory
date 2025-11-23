@@ -1,4 +1,4 @@
-script Gamecube_CynthiasChallenge {
+script Motel_BattleSimulator {
 	msgbox ("It's a battle simulator!\n"
 			"Want to use it?", MSGBOX_DEFAULT)
 	dynmultichoice (0, 6, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, gText_Yes, gText_Info, gText_No)
@@ -135,7 +135,7 @@ script Gamecube_Info {
 					"Money will not be lost if you are defeated within the battle simulator.\p"
 					"Some discs will require a series to be completed before more within it are unlocked.\p"
 					"Find more discs out in the world to be faced with more battles and further rewards!"))
-	goto (Gamecube_CynthiasChallenge)
+	goto (Motel_BattleSimulator)
 }
 
 text Gamecube_Text_Congratulations {

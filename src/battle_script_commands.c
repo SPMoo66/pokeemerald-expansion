@@ -8387,6 +8387,8 @@ static void Cmd_getmoneyreward(void)
                     ++count;
             }
             money = sWhiteOutBadgeMoney[count] * sPartyLevel;
+            if (FlagGet(FLAG_NO_MONEY_LOSS_ON_DEFEAT))
+                money = 0;
         }
         RemoveMoney(&gSaveBlock1Ptr->money, money);
     }

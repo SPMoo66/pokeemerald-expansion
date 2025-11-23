@@ -1851,6 +1851,15 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "GLACEON": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_GLACIATE"
+	]
+  },
   "GLISCOR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -2296,7 +2305,9 @@
         "MOVE_POWER_GEM"
 	],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_GLACIATE"
+	]
   },
   "EMOLGA": {
     "LevelMoves": [],
@@ -2394,6 +2405,15 @@
 	],
     "EggMoves": [],
     "TutorMoves": []
+  },
+  "CRYOGONAL": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_GLACIATE"
+	]
   },
   "MIENFOO": {
     "LevelMoves": [],

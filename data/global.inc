@@ -2389,3 +2389,7 @@ Text_6th::
 Text_7th::
 # 1260 "data/global.pory"
 	.string "7th$"
+
+Text_System::
+# 1288 "data/global.pory"
+	.string "System$"

@@ -228,6 +228,7 @@ enum
     MAP_LILYCOVE_CITY_DEPARTMENT_STORE_5F       = (20 | (13 << 8)),
     MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP  = (21 | (13 << 8)),
     MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ELEVATOR = (22 | (13 << 8)),
+    MAP_LILYCOVE_CITY_BATTLE_SIMULATOR          = (23 | (13 << 8)),
 
     // gMapGroup_IndoorMossdeep
     MAP_MOSSDEEP_CITY_GYM               = (0 | (14 << 8)),

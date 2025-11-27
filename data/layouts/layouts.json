@@ -5700,6 +5700,18 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/OvergrownJungle/border.bin",
       "blockdata_filepath": "data/layouts/OvergrownJungle/map.bin"
+    },
+    {
+      "id": "LAYOUT_LILYCOVE_CITY_BATTLE_SIMULATOR",
+      "name": "LilycoveCity_BattleSimulator_Layout",
+      "width": 6,
+      "height": 5,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/LilycoveCity_BattleSimulator/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_BattleSimulator/map.bin"
     }
   ]
 }

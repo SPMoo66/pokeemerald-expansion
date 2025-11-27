@@ -1284,3 +1284,7 @@ script IncreasePokevialSize {
 	waitmessage
 	delay (60)
 }
+
+text Text_System {
+	"System"
+}

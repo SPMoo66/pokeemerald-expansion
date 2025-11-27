@@ -1087,7 +1087,12 @@ u8 FldEff_MusicNoteIcon(void)
     u8 spriteId = CreateSpriteAtEnd(&sSpriteTemplate_MusicNoteIcon, 0, 0, 0x52);
 
     if (spriteId != MAX_SPRITES)
-        SetIconSpriteData(&gSprites[spriteId], FLDEFF_MUSIC_NOTE_ICON, 0);
+    {
+        struct Sprite *sprite = &gSprites[spriteId];
+
+        SetIconSpriteData(sprite, FLDEFF_MUSIC_NOTE_ICON, 0);
+        UpdateSpritePaletteByTemplate(&sSpriteTemplate_MusicNoteIcon, sprite);
+    }
 
     return 0;
 }
@@ -1097,7 +1102,12 @@ u8 FldEff_SmileIcon(void)
     u8 spriteId = CreateSpriteAtEnd(&sSpriteTemplate_SmileIcon, 0, 0, 0x52);
 
     if (spriteId != MAX_SPRITES)
-        SetIconSpriteData(&gSprites[spriteId], FLDEFF_SMILE_ICON, 0);
+    {
+        struct Sprite *sprite = &gSprites[spriteId];
+
+        SetIconSpriteData(sprite, FLDEFF_SMILE_ICON, 0);
+        UpdateSpritePaletteByTemplate(&sSpriteTemplate_SmileIcon, sprite);
+    }
 
     return 0;
 }
@@ -1107,7 +1117,12 @@ u8 FldEff_SweatDropIcon(void)
     u8 spriteId = CreateSpriteAtEnd(&sSpriteTemplate_SweatDropIcon, 0, 0, 0x52);
 
     if (spriteId != MAX_SPRITES)
-        SetIconSpriteData(&gSprites[spriteId], FLDEFF_SWEAT_DROP_ICON, 0);
+    {
+        struct Sprite *sprite = &gSprites[spriteId];
+
+        SetIconSpriteData(sprite, FLDEFF_SWEAT_DROP_ICON, 0);
+        UpdateSpritePaletteByTemplate(&sSpriteTemplate_SweatDropIcon, sprite);
+    }
 
     return 0;
 }
@@ -1117,7 +1132,12 @@ u8 FldEff_TalkingIcon(void)
     u8 spriteId = CreateSpriteAtEnd(&sSpriteTemplate_TalkingIcon, 0, 0, 0x52);
 
     if (spriteId != MAX_SPRITES)
-        SetIconSpriteData(&gSprites[spriteId], FLDEFF_TALKING_ICON, 0);
+    {
+        struct Sprite *sprite = &gSprites[spriteId];
+
+        SetIconSpriteData(sprite, FLDEFF_TALKING_ICON, 0);
+        UpdateSpritePaletteByTemplate(&sSpriteTemplate_TalkingIcon, sprite);
+    }
 
     return 0;
 }
@@ -1127,7 +1147,12 @@ u8 FldEff_ThinkingIcon(void)
     u8 spriteId = CreateSpriteAtEnd(&sSpriteTemplate_ThinkingIcon, 0, 0, 0x52);
 
     if (spriteId != MAX_SPRITES)
-        SetIconSpriteData(&gSprites[spriteId], FLDEFF_THINKING_ICON, 0);
+    {
+        struct Sprite *sprite = &gSprites[spriteId];
+
+        SetIconSpriteData(sprite, FLDEFF_THINKING_ICON, 0);
+        UpdateSpritePaletteByTemplate(&sSpriteTemplate_ThinkingIcon, sprite);
+    }
 
     return 0;
 }

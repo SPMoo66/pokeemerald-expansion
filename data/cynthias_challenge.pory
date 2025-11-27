@@ -1,3 +1,41 @@
+script Motel_BattleSimulator_Intro {
+	special (SpawnCameraObject)
+	applymovement (LOCALID_CAMERA, Common_Movement_WalkUp3)
+	waitmovement (0)
+	applymovement (1, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	msgbox ("Oh, hey!\nAre you {PLAYER}?", MSGBOX_DEFAULT)
+	closemessage
+	delay (10)
+	applymovement (LOCALID_PLAYER, Common_Movement_Smile)
+	playse (SE_M_MORNING_SUN)
+	delay (60)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkUp3)
+	waitmovement (0)
+	special (RemoveCameraObject)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkUp2)
+	waitmovement (0)
+	applymovement (1, Common_Movement_WalkInPlaceLeft)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight4)
+	waitmovement (0)
+	msgbox ("The group that checked in this morning\nleft this thing here for someone named\l{PLAYER}. That must be you then.", MSGBOX_DEFAULT)
+	closemessage
+	applymovement (1, Common_Movement_WalkInPlaceUp)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+	msgbox ("They said it's a battle simulator.\pComes with its own instructions and\neverything!\pI'd love to use that sort of thing,\nbut we've got no Pokémon here.", MSGBOX_DEFAULT)
+	closemessage
+	applymovement (1, Common_Movement_WalkInPlaceLeft)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceRight)
+	waitmovement (0)
+	msgbox ("Feel free to use it whenever you're\nhere…\pJust try not to interrupt my TV time!", MSGBOX_DEFAULT)
+	closemessage
+	applymovement (1, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)	
+	setflag (FLAG_INTRODUCED_BATTLESIM)
+	setvar (VAR_TEMP_5, 0)
+}
+
 script Motel_BattleSimulator {
 	msgbox ("It's a battle simulator!\n"
 			"Want to use it?", MSGBOX_DEFAULT)

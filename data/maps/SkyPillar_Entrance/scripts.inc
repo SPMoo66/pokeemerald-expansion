@@ -37,7 +37,7 @@ SkyPillar_Rival_Battle_2:
 	compare VAR_RESULT, MALE
 	goto_if_eq SkyPillar_Rival_Battle_5
 # 22 "data/maps/SkyPillar_Entrance/scripts.pory"
-	call Route119_EventScript_PlayBrendanMusic
+	playbgm MUS_ENCOUNTER_BRENDAN, FALSE
 SkyPillar_Rival_Battle_4:
 # 24 "data/maps/SkyPillar_Entrance/scripts.pory"
 	playse SE_EXIT
@@ -92,7 +92,7 @@ SkyPillar_Rival_Battle_8:
 
 SkyPillar_Rival_Battle_5:
 # 19 "data/maps/SkyPillar_Entrance/scripts.pory"
-	call Route119_EventScript_PlayMayMusic
+	playbgm MUS_ENCOUNTER_MAY, FALSE
 	goto SkyPillar_Rival_Battle_4
 
 SkyPillar_Rival_Battle_9:
@@ -166,7 +166,7 @@ SkyPillar_Rival_Battle_Text_0:
 SkyPillar_Rival_Battle_Text_1:
 # 35 "data/maps/SkyPillar_Entrance/scripts.pory"
 	.string "I had asked my dad, and he said that\n"
-	.string "this kind of thing was just to\l"
+	.string "this kind of thing was just too\l"
 	.string "dangerous for kids to be involved in.$"
 
 SkyPillar_Rival_Battle_Text_2:

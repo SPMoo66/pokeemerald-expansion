@@ -598,6 +598,7 @@ EventScript_WhiteOut::
 
 EventScript_AfterWhiteOutHeal::
 	lockall
+	speakername NULL
 	msgbox gText_FirstShouldRestoreMonsHealth
 	call EventScript_PkmnCenterNurse_TakeAndHealPkmn
 	call_if_unset FLAG_DEFEATED_RUSTBORO_GYM, EventScript_AfterWhiteOutHealMsgPreRoxanne
@@ -838,7 +839,7 @@ Common_EventScript_FerryDepartIsland::
 	call_if_eq VAR_FACING, DIR_SOUTH, Ferry_EventScript_DepartIslandSouth
 	call_if_eq VAR_FACING, DIR_WEST, Ferry_EventScript_DepartIslandWest
 	delay 30
-	hideobjectat LOCALID_PLAYER, 0
+	hideplayer
 	call Common_EventScript_FerryDepart
 	return
 
@@ -1143,6 +1144,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/magearna_encounter.inc"
 	.include "data/recommended_hacks.inc"
 	.include "data/cynthia.inc"
+	.include "data/cynthias_challenge.inc"
 	.include "data/expansion_1/global.inc"
 	.include "data/expansion_1/rival_scripts.inc"
 	.include "data/expansion_1/follower_npc.inc"
@@ -1183,6 +1185,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MagmaHideout_PortalRoom/scripts.inc"
 	.include "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.inc"
 	.include "data/maps/OvergrownJungle/scripts.inc"
+	.include "data/maps/LilycoveCity_BattleSimulator/scripts.inc"
 	.include "data/maps/MauveCamp/scripts.inc"
 	.include "data/maps/MauveIslandSouth/scripts.inc"
 	.include "data/maps/MauveIslandWest/scripts.inc"
@@ -1211,17 +1214,10 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SS_Tidal_Dungeon_B1F_1R/scripts.inc"
 	.include "data/maps/SS_Tidal_Dungeon_1F_2R/scripts.inc"
 	.include "data/maps/SlateportRegionMap/scripts.inc"
-
 	.include "data/maps/FarOffSeaEndless/scripts.inc"
-
 	.include "data/maps/SS_Tidal_Dungeon_1F_1R_Room1/scripts.inc"
-
 	.include "data/maps/SS_Tidal_Dungeon_1F_1R_Room2/scripts.inc"
-
 	.include "data/maps/SS_Tidal_Dungeon_1F_2R_Rooms/scripts.inc"
-
 	.include "data/maps/FarOffSeaWest_2_Underwater_1_BlanchedDepths_Entrance/scripts.inc"
-
 	.include "data/maps/BlanchedDepths_1F_1R/scripts.inc"
-
 	.include "data/maps/BlanchedDepths_2F_1R/scripts.inc"

@@ -1760,11 +1760,11 @@ IncreasePokevialSize::
 
 
 BufferNumberSring0::
-# 1290 "data/global.pory"
+# 1294 "data/global.pory"
 	buffernumberstring 0, VAR_TEMP_0
-# 1291 "data/global.pory"
+# 1295 "data/global.pory"
 	msgbox BufferNumberSring0_Text_0
-# 1292 "data/global.pory"
+# 1296 "data/global.pory"
 	closemessage
 	return
 
@@ -1993,7 +1993,7 @@ EventScript_CapCollector_Text_29:
 	.string "this item.$"
 
 BufferNumberSring0_Text_0:
-# 1291 "data/global.pory"
+# 1295 "data/global.pory"
 	.string "{STR_VAR_1}$"
 
 BottleCapCollectorIntro::
@@ -2403,3 +2403,7 @@ Text_6th::
 Text_7th::
 # 1260 "data/global.pory"
 	.string "7th$"
+
+Text_System::
+# 1288 "data/global.pory"
+	.string "System$"

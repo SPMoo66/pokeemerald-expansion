@@ -183,10 +183,10 @@
 #define FLAG_CUTE_PAINTING_MADE              0xA2
 #define FLAG_SMART_PAINTING_MADE             0xA3
 #define FLAG_TOUGH_PAINTING_MADE             0xA4
-#define FLAG_UNUSED_0xA5                     0xA5 // Was for Gym 1 TM
-#define FLAG_UNUSED_0xA6                     0xA6 // Was for Gym 2 TM
-#define FLAG_UNUSED_0xA7                     0xA7 // Was for Gym 3 TM
-#define FLAG_UNUSED_0xA8                     0xA8 // Was for Gym 4 TM
+#define FLAG_BATTLESIM_DISC_1_1              0xA5 // Was for Gym 1 TM
+#define FLAG_BATTLESIM_DISC_1_2              0xA6 // Was for Gym 2 TM
+#define FLAG_BATTLESIM_DISC_1_3              0xA7 // Was for Gym 3 TM
+#define FLAG_INTRODUCED_BATTLESIM            0xA8 // Was for Gym 4 TM
 #define FLAG_UNUSED_0xA9                     0xA9 // Was for Gym 5 TM
 #define FLAG_UNUSED_0xAA                     0xAA // Was for Gym 6 TM
 #define FLAG_UNUSED_0xAB                     0xAB // Was for Gym 7 TM
@@ -1513,13 +1513,13 @@
 
 #define FLAG_SYS_HIDE_FOLLOWERS                     (SYSTEM_FLAGS + 0x87) // Was unused. When set, this flag hides all NPCs that can become followers. Should be cleared when followers are cleared.
 
-#define FLAG_CHALLENGING_TRAINER                    (SYSTEM_FLAGS + 0x88) // Set for challenging trainers so level sync does not scale them two levels lower like standard trainers
+#define FLAG_CHALLENGING_TRAINER                    (SYSTEM_FLAGS + 0x88) // Set for challenging trainers so that level sync scales *to max party level*, instead of two levels lower like standard trainers
 #define FLAG_PREVENT_OVERWORLD_SPEEDUP              (SYSTEM_FLAGS + 0x89) // Was unused
 #define FLAG_SYS_SET_BATTLE_BGM                     (SYSTEM_FLAGS + 0x8A) // Was unused, set this flag when overriding battle BGM, store BGM in VAR_TEMP_F
 #define FLAG_NEW_GAME_PLUS                          (SYSTEM_FLAGS + 0x8B) // Set upon beating the Champion for the first time, carries with new games
 #define FLAG_CANT_USE_FLY                           (SYSTEM_FLAGS + 0x8C) // Was unused, set to disable fly
+#define FLAG_SUPERBOSS_TRAINER                      (SYSTEM_FLAGS + 0x8D) // Set for superboss-type trainers so that level sync scales them *three levels higher than max party level*, intead of two levels lower like standard trainers
 
-#define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
 #define FLAG_UNUSED_0x8EE                           (SYSTEM_FLAGS + 0x8E) // Unused Flag
 #define FLAG_UNUSED_0x8EF                           (SYSTEM_FLAGS + 0x8F) // Unused Flag
 #define FLAG_UNUSED_0x8F0                           (SYSTEM_FLAGS + 0x90) // Unused Flag
@@ -1659,6 +1659,7 @@
 #define FLAG_SYS_SPAWN_INVISIBLE                (SPECIAL_FLAGS_START + 0x7) // Set this flag to spawn the player invisible on next warp. Use a set_visible with applymovement to show the player.
 #define FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER        (SPECIAL_FLAGS_START + 0x8) // Set this flag to suppress the game from loading in from black/white on warp. Needs to be manually reset.
 #define FLAG_DONT_START_MUSIC_ON_WARP           (SPECIAL_FLAGS_START + 0x9) // Set this flag to prevent music from starting on transition. Needs to be manually reset.
+#define FLAG_NO_MONEY_LOSS_ON_DEFEAT            (SPECIAL_FLAGS_START + 0xA) // Set this flag to prevent money from being lost on trainer battle loss, must be reset after battle, otherwise at whiteout
 // FLAG_SPECIAL_FLAG_0x4005 - 0x407F also exist and are unused
 #define SPECIAL_FLAGS_END                       (SPECIAL_FLAGS_START + 0x7F)
 #define NUM_SPECIAL_FLAGS                       (SPECIAL_FLAGS_END - SPECIAL_FLAGS_START + 1)

@@ -120,7 +120,20 @@
 #define TRAINER_PIC_ROCKET_M              102
 #define TRAINER_PIC_ROCKET_F              103
 #define TRAINER_PIC_GIOVANNI              104
-#define TRAINER_PIC_COUNT                 105
+#define TRAINER_PIC_LEADER_ROARK          105
+#define TRAINER_PIC_LEADER_GARDENIA       106
+#define TRAINER_PIC_LEADER_MAYLENE        107
+#define TRAINER_PIC_LEADER_WAKE           108
+#define TRAINER_PIC_LEADER_FANTINA        109
+#define TRAINER_PIC_LEADER_BYRON          110
+#define TRAINER_PIC_LEADER_CANDICE        111
+#define TRAINER_PIC_LEADER_VOLKNER        112
+#define TRAINER_PIC_ELITE_FOUR_AARON      113
+#define TRAINER_PIC_ELITE_FOUR_BERTHA     114
+#define TRAINER_PIC_ELITE_FOUR_FLINT      115
+#define TRAINER_PIC_ELITE_FOUR_LUCIAN     116
+#define TRAINER_PIC_CYNTHIA               117
+#define TRAINER_PIC_COUNT                 118
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

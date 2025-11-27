@@ -911,12 +911,25 @@
 #define TRAINER_GIOVANNI_REFUGE             905
 #define TRAINER_LEXIE                       906
 #define TRAINER_BJORN                       907
+#define TRAINER_SIMULATOR_ROARK             908
+#define TRAINER_SIMULATOR_GARDENIA          909
+#define TRAINER_SIMULATOR_MAYLENE           910
+#define TRAINER_SIMULATOR_WAKE              911
+#define TRAINER_SIMULATOR_FANTINA           912
+#define TRAINER_SIMULATOR_BYRON             913
+#define TRAINER_SIMULATOR_CANDICE           914
+#define TRAINER_SIMULATOR_VOLKNER           915
+#define TRAINER_SIMULATOR_AARON             916
+#define TRAINER_SIMULATOR_BERTHA            917
+#define TRAINER_SIMULATOR_FLINT             918
+#define TRAINER_SIMULATOR_LUCIAN            919
+#define TRAINER_SIMULATOR_CYNTHIA           920
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                      908
+#define TRAINERS_COUNT                      921
 #define MAX_TRAINERS_COUNT                  1280
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 

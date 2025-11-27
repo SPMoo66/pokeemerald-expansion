@@ -2091,8 +2091,8 @@ extern const u8 gText_PokemonTrades[];
 extern const u8 gText_BerryCrush[];
 extern const u8 gText_UnionTradesAndBattles[];
 extern const u8 gText_NumPokeblocks[];
-extern const u8 gText_PokeblocksWithFriends[];
-extern const u8 gText_WonContestsWFriends[];
+extern const u8 gText_CountChallengeBalls[];
+extern const u8 gText_PokemonHeals[];
 extern const u8 gText_WinsStraight[];
 extern const u8 gText_NumBP[];
 extern const u8 gText_BattleTower[];
@@ -2539,5 +2539,7 @@ extern const u8 gText_Rename[]; // change nickname from summary screen
 
 // Switch Caught Mon into Party
 extern const u8 gText_CannotSendMonToBoxHM[];
+extern const u8 gText_CannotSendMonToBoxActive[];
+extern const u8 gText_CannotSendMonToBoxPartner[];
 
 #endif // GUARD_STRINGS_H

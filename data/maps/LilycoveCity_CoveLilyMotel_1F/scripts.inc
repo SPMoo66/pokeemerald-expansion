@@ -1,5 +1,35 @@
 LilycoveCity_CoveLilyMotel_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, LilycoveCity_CoveLilyMotel_1F_OnLoad
+	map_script MAP_SCRIPT_ON_TRANSITION, LilycoveCity_CoveLilyMotel_1F_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, LilycoveCity_CoveLilyMotel_1F_OnFrame
 	.byte 0
+
+LilycoveCity_CoveLilyMotel_1F_OnLoad:
+	call_if_set FLAG_SYS_GAME_CLEAR, LilycoveCity_CoveLilyMotel_1F_SetGamecube
+	end
+
+LilycoveCity_CoveLilyMotel_1F_OnTransition:
+	setflag FLAG_TEMP_1
+	call_if_set FLAG_SYS_GAME_CLEAR, LilycoveCity_CoveLilyMotel_1F_SetUpGamecubeScript
+	end
+
+LilycoveCity_CoveLilyMotel_1F_OnFrame:
+	map_script_2 VAR_TEMP_5, 1, Motel_BattleSimulator_Intro
+	.2byte 0
+
+LilycoveCity_CoveLilyMotel_1F_SetGamecube::
+	setmetatile 9, 1, 0x25D, TRUE
+	setmetatile 9, 2, 0x265, FALSE
+	end
+
+LilycoveCity_CoveLilyMotel_1F_SetUpGamecubeScript::
+	clearflag FLAG_TEMP_1
+	call_if_unset FLAG_INTRODUCED_BATTLESIM, LilycoveCity_CoveLilyMotel_1F_RunSimulatorIntro
+	end
+
+LilycoveCity_CoveLilyMotel_1F_RunSimulatorIntro::
+	setvar VAR_TEMP_5, 1
+	end
 
 LilycoveCity_CoveLilyMotel_1F_EventScript_MotelOwner::
 	lockall

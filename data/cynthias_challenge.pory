@@ -1,0 +1,246 @@
+script Motel_BattleSimulator_Intro {
+	special (SpawnCameraObject)
+	applymovement (LOCALID_CAMERA, Common_Movement_WalkUp3)
+	waitmovement (0)
+	applymovement (1, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	msgbox ("Oh, hey!\nAre you {PLAYER}?", MSGBOX_DEFAULT)
+	closemessage
+	delay (10)
+	applymovement (LOCALID_PLAYER, Common_Movement_Smile)
+	playse (SE_M_MORNING_SUN)
+	delay (60)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkUp3)
+	waitmovement (0)
+	special (RemoveCameraObject)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkUp2)
+	waitmovement (0)
+	applymovement (1, Common_Movement_WalkInPlaceLeft)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight4)
+	waitmovement (0)
+	msgbox ("The group that checked in this morning\nleft this thing here for someone named\l{PLAYER}. That must be you then.", MSGBOX_DEFAULT)
+	closemessage
+	applymovement (1, Common_Movement_WalkInPlaceUp)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+	msgbox ("They said it's a battle simulator.\pComes with its own instructions and\neverything!\pI'd love to use that sort of thing,\nbut we've got no Pokémon here.", MSGBOX_DEFAULT)
+	closemessage
+	applymovement (1, Common_Movement_WalkInPlaceLeft)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceRight)
+	waitmovement (0)
+	msgbox ("Feel free to use it whenever you're\nhere…\pJust try not to interrupt my TV time!", MSGBOX_DEFAULT)
+	closemessage
+	applymovement (1, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)	
+	setflag (FLAG_INTRODUCED_BATTLESIM)
+	setvar (VAR_TEMP_5, 0)
+}
+
+script Motel_BattleSimulator {
+	msgbox ("It's a battle simulator!\n"
+			"Want to use it?", MSGBOX_DEFAULT)
+	dynmultichoice (0, 6, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, gText_Yes, gText_Info, gText_No)
+	if (var(VAR_RESULT) == 0) {
+		call (CynthiasChallenge_Main)
+	}
+	elif (var(VAR_RESULT) == 1) {
+		call (Gamecube_Info)
+	}
+	clearflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
+	clearflag (FLAG_CHALLENGING_TRAINER)
+	closemessage
+}
+
+//script Gamecube_ChooseDisc {
+//	msgbox ("Which disc will you insert?", MSGBOX_DEFAULT)
+//	dynmultipush ("Cynthia's Challenge!", 0)
+//	if (!flag(FLAG_TEMP_5)) {
+//		dynmultipush ("Disc 2", 1)
+//	}
+//	dynmultistack (0, 6, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+//}
+
+script CynthiasChallenge_Main {
+	setflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
+	setflag (FLAG_CHALLENGING_TRAINER)
+	setvar (VAR_0x8000, MUGSHOT_CYNTHIAS_CHALLENGE)
+	callnative (DrawMugshot)
+	msgbox ("Welcome to Cynthia's Challenge!\n"
+			"Please select a battle series.")
+	if (!flag(FLAG_BATTLESIM_DISC_1_1)) {
+		dynmultipush ("Gym Leaders Part 1", 0)
+	}
+	else {
+		dynmultipush ("Gym Leaders Part 1 - Complete!", 0)
+	}
+	if (!flag(FLAG_BATTLESIM_DISC_1_2)) {
+		dynmultipush ("Gym Leaders Part 2", 1)
+	}
+	else {
+		dynmultipush ("Gym Leaders Part 2 - Complete!", 1)
+	}
+	if (flag(FLAG_BATTLESIM_DISC_1_1) && flag(FLAG_BATTLESIM_DISC_1_2)) {
+		if (!flag(FLAG_BATTLESIM_DISC_1_3)) {
+			dynmultipush ("Sinnoh League", 2) // requires completion of the previous two series
+		}
+		else {
+			dynmultipush ("Sinnoh League - Complete!", 2) // requires completion of the previous two series
+		}
+	}
+	dynmultistack (0, 6, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+	callnative (ClearMugshot)
+	switch (var(VAR_RESULT)) {
+		case 0:
+			fadeoutbgm (0)
+			fadescreen (FADE_TO_BLACK)
+			warpcontinuescript (MAP_LILYCOVE_CITY_BATTLE_SIMULATOR, 1, 2, CynthiasChallenge_Series1)
+		case 1:
+			fadeoutbgm (0)
+			fadescreen (FADE_TO_BLACK)
+			warpcontinuescript (MAP_LILYCOVE_CITY_BATTLE_SIMULATOR, 1, 2, CynthiasChallenge_Series2)
+		case 2:
+			fadeoutbgm (0)
+			fadescreen (FADE_TO_BLACK)
+			warpcontinuescript (MAP_LILYCOVE_CITY_BATTLE_SIMULATOR, 1, 2, CynthiasChallenge_Series3)
+		default:
+			break
+	}
+}
+
+
+script Gamecube_Info {
+	msgbox (format ("In the battle simulator you will use your own party to face a series of consecutive battles.\p"
+					"After each battle your party will be healed, but you will have no opportunity to reorganize it.\p"
+					"A reward will be given for the completion of each series in a disc.\p"
+					"Money will not be lost if you are defeated within the battle simulator.\p"
+					"Some discs will require a series to be completed before more within it are unlocked.\p"
+					"Find more discs out in the world to be faced with more battles and further rewards!"))
+	goto (Motel_BattleSimulator)
+}
+
+text Gamecube_Text_Congratulations {
+	"Congratulations. You have completed\n"
+	"the current series of battles."
+}
+
+text PlayerObtained5BattlePoints {
+	"{PLAYER} obtained\n5 Battle Points."
+}
+
+text Gamecube_Text_ExitingSim {
+	"Closing simulation…\n"
+	"Don't turn off the power…"
+}
+
+script Motel_BattleSimulator_FirstTrainer {
+	fadescreen (FADE_FROM_BLACK)
+	delay (20)
+	special (HealPlayerParty)
+	speakername (Text_System)
+	msgbox ("First trainer.\nInitializing…\l… … …", MSGBOX_AUTOCLOSE)
+}
+
+script Motel_BattleSimulator_SecondTrainer {
+	special (HealPlayerParty)
+	speakername (Text_System)
+	msgbox ("Second trainer.\nInitializing…\l… … …", MSGBOX_AUTOCLOSE)
+}
+
+script Motel_BattleSimulator_ThirdTrainer {
+	special (HealPlayerParty)
+	speakername (Text_System)
+	msgbox ("Third trainer.\nInitializing…\l… … …", MSGBOX_AUTOCLOSE)
+}
+
+script Motel_BattleSimulator_FourthTrainer {
+	special (HealPlayerParty)
+	speakername (Text_System)
+	msgbox ("Fourth trainer.\nInitializing…\l… … …", MSGBOX_AUTOCLOSE)
+}
+
+script Motel_BattleSimulator_FinalTrainer {
+	special (HealPlayerParty)
+	speakername (Text_System)
+	msgbox ("Final trainer.\nInitializing…\l… … …", MSGBOX_AUTOCLOSE)
+}
+
+script Motel_BattleSimulator_Congratulations {
+	special (HealPlayerParty)
+	speakername (Text_System)
+	msgbox (Gamecube_Text_Congratulations, MSGBOX_AUTOCLOSE)
+}
+
+script Motel_BattleSimulator_ExitSimulation {
+	speakername (Text_System)
+	msgbox (Gamecube_Text_ExitingSim, MSGBOX_AUTOCLOSE)
+	warp (MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_1F, 9, 2)
+}
+
+
+script CynthiasChallenge_Series1 {
+	call (Motel_BattleSimulator_FirstTrainer)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_ROARK, "W-what? That can't be!\nMy buffed-up Pokémon!") // Roark
+	call (Motel_BattleSimulator_SecondTrainer)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_GARDENIA, "Amazing!\nYou're very good, aren't you?") // Gardenia
+	call (Motel_BattleSimulator_ThirdTrainer)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_MAYLENE, "I shall admit defeat…\nYou are much too strong.") // Maylene
+	call (Motel_BattleSimulator_FinalTrainer)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_WAKE, "Hunwah! It's gone and ended!\nHow will I say this… I want more!\lI wanted to battle a lot more!") // Wake
+	call (Motel_BattleSimulator_Congratulations)
+	if (!flag(FLAG_BATTLESIM_DISC_1_1)) {
+		giveitem (ITEM_STELLAR_TERA_SHARD, 2)
+		giveitem (ITEM_EXP_CANDY_L, 2)
+		setflag (FLAG_BATTLESIM_DISC_1_1)
+	}
+	else {
+		giveitem (ITEM_BALM_MUSHROOM, 1)
+	}
+	goto (Motel_BattleSimulator_ExitSimulation)
+}
+
+script CynthiasChallenge_Series2 {
+	call (Motel_BattleSimulator_FirstTrainer)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_FANTINA, "You are so fantastically strong.\nI know now why I have lost.") // Fantina
+	call (Motel_BattleSimulator_SecondTrainer)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_BYRON, "Hmm! My sturdy Pokémon, defeated!") // Byron
+	call (Motel_BattleSimulator_ThirdTrainer)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_CANDICE, "I must say, I'm warmed up to you!\nI might even admire you a little.") // Candice
+	call (Motel_BattleSimulator_FinalTrainer)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_VOLKNER, "You've got me beat…\nYour desire and the noble way your\lPokémon battled for you…\lI even felt thrilled during our match.\lThat was a very good battle.") // Volkner
+	call (Motel_BattleSimulator_Congratulations)
+	if (!flag(FLAG_BATTLESIM_DISC_1_2)) {
+		giveitem (ITEM_STELLAR_TERA_SHARD, 2)
+		giveitem (ITEM_EXP_CANDY_L, 2)
+		setflag (FLAG_BATTLESIM_DISC_1_2)
+	}
+	else {
+		giveitem (ITEM_BALM_MUSHROOM, 1)
+	}
+	goto (Motel_BattleSimulator_ExitSimulation)
+}
+
+script CynthiasChallenge_Series3 {
+	call (Motel_BattleSimulator_FirstTrainer)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_AARON, "I will now concede defeat. But I think\nyou came to see how great Bug-type\lPokémon can be. Battling is a deep and\lcomplex affair…") // Aaron
+	call (Motel_BattleSimulator_SecondTrainer)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_BERTHA, "Well! Dear child, I must say, that was\nmost impressive. Your Pokémon believed\lin you and did their best to earn you\lthe win.") // Bertha
+	call (Motel_BattleSimulator_ThirdTrainer)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_FLINT, "…! I wasn't expecting this! I wasn't\nlooking down on you… But I didn't think\lfor one second that I'd lose!") // Flint
+	call (Motel_BattleSimulator_FourthTrainer)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_LUCIAN, "I see… You getting past the three\nbefore me was no fluke. Your power\lis real.") // Lucian
+	call (Motel_BattleSimulator_FinalTrainer)
+	trainerbattle_no_intro (TRAINER_SIMULATOR_CYNTHIA, "…Just a few moments ago, you were the\nmost powerful challenger. And just now,\lyou became the most powerful of all the\lTrainers.") // Cynthia
+	call (Motel_BattleSimulator_Congratulations)
+	if (!flag(FLAG_BATTLESIM_DISC_1_3)) {
+		giveitem (ITEM_SHINY_LURE, 1)
+		giveitem (ITEM_EXP_CANDY_XL, 2)
+		setvar (VAR_0x8004, 5)
+		special (GiveFrontierBattlePoints)
+		msgbox (PlayerObtained5BattlePoints, MSGBOX_GETPOINTS)
+		setflag (FLAG_BATTLESIM_DISC_1_3)
+	}
+	else {
+		giveitem (ITEM_PEARL_STRING, 1)
+	}
+	goto (Motel_BattleSimulator_ExitSimulation)
+}

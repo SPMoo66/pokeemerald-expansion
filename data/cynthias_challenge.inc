@@ -396,7 +396,7 @@ CynthiasChallenge_Series3_2:
 # 238 "data/cynthias_challenge.pory"
 	special GiveFrontierBattlePoints
 # 239 "data/cynthias_challenge.pory"
-	msgbox PlayerObtained3BattlePoints, MSGBOX_GETPOINTS
+	msgbox PlayerObtained5BattlePoints, MSGBOX_GETPOINTS
 # 240 "data/cynthias_challenge.pory"
 	setflag FLAG_BATTLESIM_DISC_1_3
 	goto CynthiasChallenge_Series3_1
@@ -548,9 +548,9 @@ Gamecube_Text_Congratulations::
 	.string "Congratulations. You have completed\n"
 	.string "the current series of battles.$"
 
-PlayerObtained3BattlePoints::
+PlayerObtained5BattlePoints::
 # 126 "data/cynthias_challenge.pory"
-	.string "{PLAYER} obtained\n3 Battle Points.$"
+	.string "{PLAYER} obtained\n5 Battle Points.$"
 
 Gamecube_Text_ExitingSim::
 # 130 "data/cynthias_challenge.pory"

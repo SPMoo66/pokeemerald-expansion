@@ -10212,133 +10212,181 @@ static const struct TrainerMon sParty_WallyMauville[] = {
 
 static const struct TrainerMon sParty_WallyVR2[] = {
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 47,
-    .species = SPECIES_ALTARIA,
-    .moves = {MOVE_AERIAL_ACE, MOVE_SAFEGUARD, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE}
+    .lvl = 63,
+    .species = SPECIES_GYARADOS,
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_DRAGON_DANCE, MOVE_DRAGON_RUSH, MOVE_WATERFALL, MOVE_ICE_FANG}
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 46,
-    .species = SPECIES_DELCATTY,
-    .moves = {MOVE_SING, MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK}
+    .lvl = 63,
+    .species = SPECIES_KROOKODILE,
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_PASSHO_BERRY,
+    .moves = {MOVE_SUCKER_PUNCH, MOVE_TAUNT, MOVE_EARTHQUAKE, MOVE_STEALTH_ROCK}
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 47,
-    .species = SPECIES_ROSELIA,
-    .moves = {MOVE_MAGICAL_LEAF, MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_TOXIC}
+    .lvl = 64,
+    .species = SPECIES_GOLISOPOD,
+    .ability = ABILITY_EMERGENCY_EXIT,
+	.heldItem = ITEM_WATER_GEM,
+    .moves = {MOVE_FIRST_IMPRESSION, MOVE_LIQUIDATION, MOVE_POISON_JAB, MOVE_ROCK_TOMB}
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 44,
-    .species = SPECIES_MAGNETON,
-    .moves = {MOVE_SUPERSONIC, MOVE_THUNDERBOLT, MOVE_TRI_ATTACK, MOVE_SCREECH}
+    .lvl = 64,
+    .species = SPECIES_VOLCARONA,
+    .ability = ABILITY_COSTAR,
+	.heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_QUIVER_DANCE, MOVE_FIERY_DANCE, MOVE_HEAT_WAVE, MOVE_BURNING_BULWARK}
     },
     {
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 48,
-    .species = SPECIES_GARDEVOIR,
-    .moves = {MOVE_DOUBLE_TEAM, MOVE_CALM_MIND, MOVE_PSYCHIC, MOVE_FUTURE_SIGHT}
+    .lvl = 66,
+    .species = SPECIES_SOLGALEO,
+    .ability = ABILITY_FULL_METAL_BODY,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_SUNSTEEL_STRIKE, MOVE_PSYCHIC_FANGS, MOVE_WILD_CHARGE, MOVE_MORNING_SUN}
+    },
+    {
+    .lvl = 66,
+    .species = SPECIES_GALLADE,
+    .ability = ABILITY_SHARPNESS,
+	.heldItem = ITEM_MEGA_STONE_Y,
+    .moves = {MOVE_AQUA_CUTTER, MOVE_SACRED_SWORD, MOVE_PSYBLADE, MOVE_SWORDS_DANCE}
     }
 };
 
 static const struct TrainerMon sParty_WallyVR3[] = {
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 50,
-    .species = SPECIES_ALTARIA,
-    .moves = {MOVE_AERIAL_ACE, MOVE_SAFEGUARD, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE}
+    .lvl = 65,
+    .species = SPECIES_GYARADOS,
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_DRAGON_DANCE, MOVE_DRAGON_RUSH, MOVE_WATERFALL, MOVE_ICE_FANG}
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 49,
-    .species = SPECIES_DELCATTY,
-    .moves = {MOVE_SING, MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK}
+    .lvl = 65,
+    .species = SPECIES_KROOKODILE,
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_PASSHO_BERRY,
+    .moves = {MOVE_SUCKER_PUNCH, MOVE_TAUNT, MOVE_EARTHQUAKE, MOVE_STEALTH_ROCK}
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 50,
-    .species = SPECIES_ROSELIA,
-    .moves = {MOVE_MAGICAL_LEAF, MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_TOXIC}
+    .lvl = 66,
+    .species = SPECIES_GOLISOPOD,
+    .ability = ABILITY_EMERGENCY_EXIT,
+	.heldItem = ITEM_WATER_GEM,
+    .moves = {MOVE_FIRST_IMPRESSION, MOVE_LIQUIDATION, MOVE_POISON_JAB, MOVE_ROCK_TOMB}
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 47,
-    .species = SPECIES_MAGNETON,
-    .moves = {MOVE_SUPERSONIC, MOVE_THUNDERBOLT, MOVE_TRI_ATTACK, MOVE_SCREECH}
+    .lvl = 66,
+    .species = SPECIES_VOLCARONA,
+    .ability = ABILITY_COSTAR,
+	.heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_QUIVER_DANCE, MOVE_FIERY_DANCE, MOVE_HEAT_WAVE, MOVE_BURNING_BULWARK}
     },
     {
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 51,
-    .species = SPECIES_GARDEVOIR,
-    .moves = {MOVE_DOUBLE_TEAM, MOVE_CALM_MIND, MOVE_PSYCHIC, MOVE_FUTURE_SIGHT}
+    .lvl = 68,
+    .species = SPECIES_SOLGALEO,
+    .ability = ABILITY_FULL_METAL_BODY,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_SUNSTEEL_STRIKE, MOVE_PSYCHIC_FANGS, MOVE_WILD_CHARGE, MOVE_MORNING_SUN}
+    },
+    {
+    .lvl = 68,
+    .species = SPECIES_GALLADE,
+    .ability = ABILITY_SHARPNESS,
+	.heldItem = ITEM_MEGA_STONE_Y,
+    .moves = {MOVE_AQUA_CUTTER, MOVE_SACRED_SWORD, MOVE_PSYBLADE, MOVE_SWORDS_DANCE}
     }
 };
 
 static const struct TrainerMon sParty_WallyVR4[] = {
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 53,
-    .species = SPECIES_ALTARIA,
-    .moves = {MOVE_AERIAL_ACE, MOVE_SAFEGUARD, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE}
+    .lvl = 67,
+    .species = SPECIES_GYARADOS,
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_DRAGON_DANCE, MOVE_DRAGON_RUSH, MOVE_WATERFALL, MOVE_ICE_FANG}
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 52,
-    .species = SPECIES_DELCATTY,
-    .moves = {MOVE_SING, MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK}
+    .lvl = 67,
+    .species = SPECIES_KROOKODILE,
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_PASSHO_BERRY,
+    .moves = {MOVE_SUCKER_PUNCH, MOVE_TAUNT, MOVE_EARTHQUAKE, MOVE_STEALTH_ROCK}
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 53,
-    .species = SPECIES_ROSELIA,
-    .moves = {MOVE_MAGICAL_LEAF, MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_TOXIC}
+    .lvl = 68,
+    .species = SPECIES_GOLISOPOD,
+    .ability = ABILITY_EMERGENCY_EXIT,
+	.heldItem = ITEM_WATER_GEM,
+    .moves = {MOVE_FIRST_IMPRESSION, MOVE_LIQUIDATION, MOVE_POISON_JAB, MOVE_ROCK_TOMB}
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 50,
-    .species = SPECIES_MAGNETON,
-    .moves = {MOVE_SUPERSONIC, MOVE_THUNDERBOLT, MOVE_TRI_ATTACK, MOVE_SCREECH}
+    .lvl = 68,
+    .species = SPECIES_VOLCARONA,
+    .ability = ABILITY_COSTAR,
+	.heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_QUIVER_DANCE, MOVE_FIERY_DANCE, MOVE_HEAT_WAVE, MOVE_BURNING_BULWARK}
     },
     {
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 54,
-    .species = SPECIES_GARDEVOIR,
-    .moves = {MOVE_DOUBLE_TEAM, MOVE_CALM_MIND, MOVE_PSYCHIC, MOVE_FUTURE_SIGHT}
+    .lvl = 70,
+    .species = SPECIES_SOLGALEO,
+    .ability = ABILITY_FULL_METAL_BODY,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_SUNSTEEL_STRIKE, MOVE_PSYCHIC_FANGS, MOVE_WILD_CHARGE, MOVE_MORNING_SUN}
+    },
+    {
+    .lvl = 70,
+    .species = SPECIES_GALLADE,
+    .ability = ABILITY_SHARPNESS,
+	.heldItem = ITEM_MEGA_STONE_Y,
+    .moves = {MOVE_AQUA_CUTTER, MOVE_SACRED_SWORD, MOVE_PSYBLADE, MOVE_SWORDS_DANCE}
     }
 };
 
 static const struct TrainerMon sParty_WallyVR5[] = {
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 56,
-    .species = SPECIES_ALTARIA,
-    .moves = {MOVE_AERIAL_ACE, MOVE_SAFEGUARD, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE}
+    .lvl = 69,
+    .species = SPECIES_GYARADOS,
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_DRAGON_DANCE, MOVE_DRAGON_RUSH, MOVE_WATERFALL, MOVE_ICE_FANG}
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 55,
-    .species = SPECIES_DELCATTY,
-    .moves = {MOVE_SING, MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK}
+    .lvl = 69,
+    .species = SPECIES_KROOKODILE,
+    .ability = ABILITY_INTIMIDATE,
+	.heldItem = ITEM_PASSHO_BERRY,
+    .moves = {MOVE_SUCKER_PUNCH, MOVE_TAUNT, MOVE_EARTHQUAKE, MOVE_STEALTH_ROCK}
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 56,
-    .species = SPECIES_ROSELIA,
-    .moves = {MOVE_MAGICAL_LEAF, MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_TOXIC}
+    .lvl = 70,
+    .species = SPECIES_GOLISOPOD,
+    .ability = ABILITY_EMERGENCY_EXIT,
+	.heldItem = ITEM_WATER_GEM,
+    .moves = {MOVE_FIRST_IMPRESSION, MOVE_LIQUIDATION, MOVE_POISON_JAB, MOVE_ROCK_TOMB}
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 53,
-    .species = SPECIES_MAGNETON,
-    .moves = {MOVE_SUPERSONIC, MOVE_THUNDERBOLT, MOVE_TRI_ATTACK, MOVE_SCREECH}
+    .lvl = 70,
+    .species = SPECIES_VOLCARONA,
+    .ability = ABILITY_COSTAR,
+	.heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_QUIVER_DANCE, MOVE_FIERY_DANCE, MOVE_HEAT_WAVE, MOVE_BURNING_BULWARK}
     },
     {
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 57,
-    .species = SPECIES_GARDEVOIR,
-    .moves = {MOVE_DOUBLE_TEAM, MOVE_CALM_MIND, MOVE_PSYCHIC, MOVE_FUTURE_SIGHT}
+    .lvl = 72,
+    .species = SPECIES_SOLGALEO,
+    .ability = ABILITY_FULL_METAL_BODY,
+	.heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_SUNSTEEL_STRIKE, MOVE_PSYCHIC_FANGS, MOVE_WILD_CHARGE, MOVE_MORNING_SUN}
+    },
+    {
+    .lvl = 72,
+    .species = SPECIES_GALLADE,
+    .ability = ABILITY_SHARPNESS,
+	.heldItem = ITEM_MEGA_STONE_Y,
+    .moves = {MOVE_AQUA_CUTTER, MOVE_SACRED_SWORD, MOVE_PSYBLADE, MOVE_SWORDS_DANCE}
     }
 };
 

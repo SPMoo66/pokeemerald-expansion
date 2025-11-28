@@ -1223,3 +1223,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/BlanchedDepths_2F_1R/scripts.inc"
 
 	.include "data/maps/MauveHollow_1/scripts.inc"
+
+	.include "data/maps/WellspringChasm_1/scripts.inc"
+
+	.include "data/maps/WellspringChasm_2/scripts.inc"

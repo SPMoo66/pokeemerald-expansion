@@ -679,7 +679,9 @@
     "SS_Tidal_Dungeon_1F_2R_Rooms",
     "BlanchedDepths_1F_1R",
     "BlanchedDepths_2F_1R",
-    "MauveHollow_1"
+    "MauveHollow_1",
+    "WellspringChasm_1",
+    "WellspringChasm_2"
   ],
   "gMapGroup_Exp1Exteriors": [
     "MauveCamp",

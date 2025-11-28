@@ -1,0 +1,42 @@
+{
+  "id": "MAP_WELLSPRING_CHASM_1",
+  "name": "WellspringChasm_1",
+  "layout": "LAYOUT_WELLSPRING_CHASM_1",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_WELLSPRING_CHASM",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_FAR_OFF_SEA_SOUTH",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_WELLSPRING_CHASM_2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_WELLSPRING_CHASM_2",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

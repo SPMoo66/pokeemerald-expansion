@@ -6144,6 +6144,30 @@
       "secondary_tileset": "gTileset_Cave2_Sub1_Exp_1",
       "border_filepath": "data/layouts/MauveHollow_1/border.bin",
       "blockdata_filepath": "data/layouts/MauveHollow_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_WELLSPRING_CHASM_1",
+      "name": "WellspringChasm_1_Layout",
+      "width": 35,
+      "height": 21,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Cave2_Exp_1",
+      "secondary_tileset": "gTileset_Cave2_Sub1_Exp_1",
+      "border_filepath": "data/layouts/WellspringChasm_1/border.bin",
+      "blockdata_filepath": "data/layouts/WellspringChasm_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_WELLSPRING_CHASM_2",
+      "name": "WellspringChasm_2_Layout",
+      "width": 29,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Cave2_Exp_1",
+      "secondary_tileset": "gTileset_Cave2_Sub1_Exp_1",
+      "border_filepath": "data/layouts/WellspringChasm_2/border.bin",
+      "blockdata_filepath": "data/layouts/WellspringChasm_2/map.bin"
     }
   ]
 }

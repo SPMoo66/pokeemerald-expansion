@@ -653,6 +653,7 @@ enum
     MAP_SS_TIDAL_DUNGEON_1F_2R_ROOMS      = (16 | (34 << 8)),
     MAP_BLANCHED_DEPTHS_1F_1R             = (17 | (34 << 8)),
     MAP_BLANCHED_DEPTHS_2F_1R             = (18 | (34 << 8)),
+    MAP_MAUVE_HOLLOW_1                    = (19 | (34 << 8)),
 
     // gMapGroup_Exp1Exteriors
     MAP_MAUVE_CAMP                                               = (0 | (35 << 8)),

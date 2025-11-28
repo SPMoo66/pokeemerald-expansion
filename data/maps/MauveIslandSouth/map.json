@@ -42,6 +42,13 @@
       "elevation": 0,
       "dest_map": "MAP_SS_TIDAL_DUNGEON_1F_1R",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_MAUVE_HOLLOW_1",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],

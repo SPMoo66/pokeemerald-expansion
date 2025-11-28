@@ -52,7 +52,7 @@ script IllusoryGrotto_B2F_1R_Monster {
 	setmetatile (18, 8, 0x04F, TRUE)
 	call (IllusoryGrotto_MonsterCommon2_Exp1)
 	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
-	if (var(VAR_TEMP_1) == 8) {
+	if (var(VAR_TEMP_1) == 9) {
 		applymovement (LOCALID_PLAYER, Common_Movement_WalkFastDown3)
 	}
 	else {

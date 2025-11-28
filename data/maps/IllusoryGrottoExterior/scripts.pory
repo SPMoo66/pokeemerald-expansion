@@ -1,1 +1,15 @@
 mapscripts IllusoryGrottoExterior_MapScripts {}
+
+script EventScript_MoveToEndlessFarOffSea {
+	lock
+	warp (MAP_FAR_OFF_SEA_ENDLESS, 12, 2)
+	waitstate
+}
+
+script EventScript_EndEndlessFarOffSea {
+	lock
+	msgbox ("Hello", MSGBOX_AUTOCLOSE)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 22)
+	warp (MAP_FAR_OFF_SEA_WEST_2, 5, 5)
+	waitstate
+}

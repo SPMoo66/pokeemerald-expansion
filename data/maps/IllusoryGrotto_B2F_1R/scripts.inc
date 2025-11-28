@@ -118,7 +118,7 @@ IllusoryGrotto_B2F_1R_Monster::
 # 54 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 # 55 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
-	compare VAR_TEMP_1, 8
+	compare VAR_TEMP_1, 9
 	goto_if_eq IllusoryGrotto_B2F_1R_Monster_2
 # 59 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkFastDown2

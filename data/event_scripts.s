@@ -1227,3 +1227,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/WellspringChasm_1/scripts.inc"
 
 	.include "data/maps/WellspringChasm_2/scripts.inc"
+
+	.include "data/maps/BygoneVault_1/scripts.inc"

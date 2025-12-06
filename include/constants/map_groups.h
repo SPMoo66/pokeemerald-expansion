@@ -656,6 +656,7 @@ enum
     MAP_MAUVE_HOLLOW_1                    = (19 | (34 << 8)),
     MAP_WELLSPRING_CHASM_1                = (20 | (34 << 8)),
     MAP_WELLSPRING_CHASM_2                = (21 | (34 << 8)),
+    MAP_BYGONE_VAULT_1                    = (22 | (34 << 8)),
 
     // gMapGroup_Exp1Exteriors
     MAP_MAUVE_CAMP                                               = (0 | (35 << 8)),

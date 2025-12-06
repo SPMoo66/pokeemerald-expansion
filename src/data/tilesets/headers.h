@@ -929,3 +929,14 @@ const struct Tileset gTileset_Cave2_Sub1_Exp_1 =
     .metatileAttributes = gMetatileAttributes_Cave2_Sub1_Exp_1,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Dungeon_Exp_1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Dungeon_Exp_1,
+    .palettes = gTilesetPalettes_Dungeon_Exp_1,
+    .metatiles = gMetatiles_Dungeon_Exp_1,
+    .metatileAttributes = gMetatileAttributes_Dungeon_Exp_1,
+    .callback = NULL,
+};

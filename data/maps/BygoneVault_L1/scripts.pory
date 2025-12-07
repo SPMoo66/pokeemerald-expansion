@@ -1,4 +1,10 @@
-mapscripts BygoneVault_L1_MapScripts {}
+mapscripts BygoneVault_L1_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH)) {
+			setmaplayoutindex (LAYOUT_BYGONE_VAULT_L1_DRAINED)
+		}
+	}
+}
 
 script HopDownLedge {
 	msgbox ("Hop down the ledge?", MSGBOX_YESNO)

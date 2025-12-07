@@ -660,9 +660,9 @@
 #define FLAG_EXP_1_ILLUSORY_GROTTO_B3F_1R_ROCK               0x265 // Was unused
 #define FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK_IN_PLACE      0x266 // Was unused
 #define FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK               0x267 // Was unused
+#define FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH                  0x268 // Was unused
+#define FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH                 0x269 // Was unused
 
-#define FLAG_UNUSED_0x268    0x268 // Unused Flag
-#define FLAG_UNUSED_0x269    0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A    0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B    0x26B // Unused Flag
 #define FLAG_UNUSED_0x26C    0x26C // Unused Flag

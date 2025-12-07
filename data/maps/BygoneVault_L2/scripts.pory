@@ -1,1 +1,36 @@
-mapscripts BygoneVault_L2_MapScripts {}
+mapscripts BygoneVault_L2_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH)) {
+			setmetatile (3, 2, 0x241, TRUE)
+		}
+	}
+}
+
+script BygoneVault_LeftSwitch {
+	if (!flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH)) {
+		msgbox (Text_FlipSwitch, MSGBOX_YESNO)
+		if (var(VAR_RESULT)) {
+			closemessage
+			setmetatile (3, 2, 0x241, TRUE)
+			special (DrawWholeMapView)
+			playse (SE_SWITCH)
+			waitse
+			playse (SE_DOWNPOUR)
+			delay (100)
+			playse (SE_DOWNPOUR_STOP)
+			waitse
+			setflag (FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH)
+		}
+	}
+	else {
+		msgbox (Text_FlippedSwitch, MSGBOX_AUTOCLOSE)
+	}
+}
+
+text Text_FlipSwitch {
+	"Flip the switch?"
+}
+
+text Text_FlippedSwitch {
+	"The switch has been flipped."
+}

@@ -6204,6 +6204,18 @@
       "secondary_tileset": "gTileset_Dungeon_Sub_1_Exp_1",
       "border_filepath": "data/layouts/BygoneVault_L1_Drained/border.bin",
       "blockdata_filepath": "data/layouts/BygoneVault_L1_Drained/map.bin"
+    },
+    {
+      "id": "LAYOUT_BYGONE_VAULT_L2",
+      "name": "BygoneVault_L2_Layout",
+      "width": 19,
+      "height": 26,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Dungeon_Exp_1",
+      "secondary_tileset": "gTileset_Dungeon_Sub_1_Exp_1",
+      "border_filepath": "data/layouts/BygoneVault_L2/border.bin",
+      "blockdata_filepath": "data/layouts/BygoneVault_L2/map.bin"
     }
   ]
 }

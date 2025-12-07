@@ -658,6 +658,7 @@ enum
     MAP_WELLSPRING_CHASM_2                = (21 | (34 << 8)),
     MAP_BYGONE_VAULT_1                    = (22 | (34 << 8)),
     MAP_BYGONE_VAULT_L1                   = (23 | (34 << 8)),
+    MAP_BYGONE_VAULT_L2                   = (24 | (34 << 8)),
 
     // gMapGroup_Exp1Exteriors
     MAP_MAUVE_CAMP                                               = (0 | (35 << 8)),

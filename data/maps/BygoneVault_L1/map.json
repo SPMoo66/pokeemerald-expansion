@@ -12,7 +12,13 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": [
+    {
+      "map": "MAP_BYGONE_VAULT_LU",
+      "offset": 0,
+      "direction": "dive"
+    }
+  ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
@@ -86,8 +92,8 @@
       "x": 9,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_BYGONE_VAULT_L1",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_BYGONE_VAULT_L2",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],

@@ -1,1 +1,11 @@
 mapscripts BygoneVault_L1_MapScripts {}
+
+script HopDownLedge {
+	msgbox ("Hop down the ledge?", MSGBOX_YESNO)
+	closemessage
+	if (var(VAR_RESULT)) {
+		hidefollower
+		applymovement (LOCALID_PLAYER, Common_Movement_JumpDown2)
+		waitmovement (0)
+	}
+}

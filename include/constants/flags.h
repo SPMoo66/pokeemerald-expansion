@@ -1519,8 +1519,8 @@
 #define FLAG_NEW_GAME_PLUS                          (SYSTEM_FLAGS + 0x8B) // Set upon beating the Champion for the first time, carries with new games
 #define FLAG_CANT_USE_FLY                           (SYSTEM_FLAGS + 0x8C) // Was unused, set to disable fly
 #define FLAG_SUPERBOSS_TRAINER                      (SYSTEM_FLAGS + 0x8D) // Set for superboss-type trainers so that level sync scales them *three levels higher than max party level*, intead of two levels lower like standard trainers
+#define FLAG_DONT_TRANSIITON_BATTLE_MUSIC           (SYSTEM_FLAGS + 0x8E) // Set to prevent battles from changing the music, takes map music or music from playbgm. Clear after use.
 
-#define FLAG_UNUSED_0x8EE                           (SYSTEM_FLAGS + 0x8E) // Unused Flag
 #define FLAG_UNUSED_0x8EF                           (SYSTEM_FLAGS + 0x8F) // Unused Flag
 #define FLAG_UNUSED_0x8F0                           (SYSTEM_FLAGS + 0x90) // Unused Flag
 #define FLAG_UNUSED_0x8F1                           (SYSTEM_FLAGS + 0x91) // Unused Flag

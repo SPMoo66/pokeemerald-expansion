@@ -1,1 +1,24 @@
-mapscripts BygoneVault_1_MapScripts {}
+mapscripts BygoneVault_1_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH)) {
+			setmetatile (3, 8, 0x0C6, TRUE)
+		}
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
+			setmetatile (13, 8, 0x0C6, TRUE)
+		}
+	}
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_1)
+		setflag (FLAG_TEMP_2)
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH)) {
+			clearflag (FLAG_TEMP_1)
+		}
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
+			clearflag (FLAG_TEMP_2)
+		}
+	}
+}
+
+script BygoneVault_FullBowl {
+	msgbox ("The bowl has filled with water.", MSGBOX_AUTOCLOSE)
+}

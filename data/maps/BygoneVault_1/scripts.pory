@@ -10,15 +10,27 @@ mapscripts BygoneVault_1_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag (FLAG_TEMP_1)
 		setflag (FLAG_TEMP_2)
+		setflag (FLAG_TEMP_3)
 		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH)) {
 			clearflag (FLAG_TEMP_1)
 		}
 		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
 			clearflag (FLAG_TEMP_2)
 		}
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH) && flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
+			setflag (FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN)
+		}
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN)) {
+			clearflag (FLAG_TEMP_3)
+			setflag (FLAG_TEMP_4)
+		}
 	}
 }
 
 script BygoneVault_FullBowl {
 	msgbox ("The bowl has filled with water.", MSGBOX_AUTOCLOSE)
+}
+
+script BygoneVault_DoorShut {
+	msgbox ("The door is firmly sealed shut.", MSGBOX_AUTOCLOSE)
 }

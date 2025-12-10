@@ -662,8 +662,8 @@
 #define FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK               0x267 // Was unused
 #define FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH                  0x268 // Was unused
 #define FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH                 0x269 // Was unused
+#define FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN               0x26A // Was unused
 
-#define FLAG_UNUSED_0x26A    0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B    0x26B // Unused Flag
 #define FLAG_UNUSED_0x26C    0x26C // Unused Flag
 #define FLAG_UNUSED_0x26D    0x26D // Unused Flag

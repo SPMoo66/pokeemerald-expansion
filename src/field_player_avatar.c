@@ -937,7 +937,7 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
         return;
     }
 
-    if (!(gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_UNDERWATER) && (heldKeys & B_BUTTON)
+    if (!(gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_UNDERWATER) && (heldKeys & B_BUTTON) && !FlagGet(FLAG_BLOCK_PLAYER_ACTIONS)
      && IsRunningDisallowed(gObjectEvents[gPlayerAvatar.objectEventId].currentMetatileBehavior) == 0 && !FollowerNPCComingThroughDoor())
     {
         if (ObjectMovingOnRockStairs(&gObjectEvents[gPlayerAvatar.objectEventId], direction))
@@ -1609,7 +1609,7 @@ u16 GetRSAvatarGraphicsIdByGender(u8 gender)
 
 u16 GetPlayerAvatarGraphicsIdByStateId(u8 state)
 {
-    return GetPlayerAvatarGraphicsIdByStateIdAndGender(state, gPlayerAvatar.gender);
+    return GetPlayerAvatarGraphicsIdByStateIdAndGender(state, gPlayerAvatar.gender); // This function generates the sprite for the player
 }
 
 u8 GetPlayerAvatarGenderByGraphicsId(u16 gfxId)

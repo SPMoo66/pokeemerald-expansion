@@ -14,7 +14,7 @@
 #define FLAG_TEMP_3      (TEMP_FLAGS_START + 0x3)
 #define FLAG_TEMP_4      (TEMP_FLAGS_START + 0x4)
 #define FLAG_TEMP_5      (TEMP_FLAGS_START + 0x5)
-#define FLAG_TEMP_6      (TEMP_FLAGS_START + 0x6)  // Unused Flag
+#define FLAG_TEMP_6      (TEMP_FLAGS_START + 0x6)  // Used only for some tera scripts
 #define FLAG_TEMP_7      (TEMP_FLAGS_START + 0x7)  // Unused Flag
 #define FLAG_TEMP_8      (TEMP_FLAGS_START + 0x8)  // Unused Flag
 #define FLAG_TEMP_9      (TEMP_FLAGS_START + 0x9)  // Unused Flag
@@ -24,7 +24,7 @@
 #define FLAG_TEMP_D      (TEMP_FLAGS_START + 0xD)  // Unused Flag
 #define FLAG_TEMP_E      (TEMP_FLAGS_START + 0xE)  // When set, follower pokemon won't be spawned
 #define FLAG_TEMP_F      (TEMP_FLAGS_START + 0xF)  // Unused Flag
-#define FLAG_TEMP_10     (TEMP_FLAGS_START + 0x10) // Unused Flag
+#define FLAG_TEMP_10     (TEMP_FLAGS_START + 0x10) // Used for some rival scripts?
 #define FLAG_TEMP_11     (TEMP_FLAGS_START + 0x11)
 #define FLAG_TEMP_12     (TEMP_FLAGS_START + 0x12)
 #define FLAG_TEMP_13     (TEMP_FLAGS_START + 0x13)
@@ -1660,7 +1660,10 @@
 #define FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER        (SPECIAL_FLAGS_START + 0x8) // Set this flag to suppress the game from loading in from black/white on warp. Needs to be manually reset.
 #define FLAG_DONT_START_MUSIC_ON_WARP           (SPECIAL_FLAGS_START + 0x9) // Set this flag to prevent music from starting on transition. Needs to be manually reset.
 #define FLAG_NO_MONEY_LOSS_ON_DEFEAT            (SPECIAL_FLAGS_START + 0xA) // Set this flag to prevent money from being lost on trainer battle loss, must be reset after battle, otherwise at whiteout
-// FLAG_SPECIAL_FLAG_0x4005 - 0x407F also exist and are unused
+#define FLAG_BLOCK_PLAYER_ACTIONS               (SPECIAL_FLAGS_START + 0xB) // Set this flag to block the player from taking most actions. This includes...
+																			// Running, opening the pause menu, activating a registered item through Select, running DexNav...
+																			// This does not prevent opening the debug menu
+// FLAG_SPECIAL_FLAG_0x400C - 0x407F also exist and are unused
 #define SPECIAL_FLAGS_END                       (SPECIAL_FLAGS_START + 0x7F)
 #define NUM_SPECIAL_FLAGS                       (SPECIAL_FLAGS_END - SPECIAL_FLAGS_START + 1)
 

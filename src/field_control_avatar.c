@@ -221,7 +221,7 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
     }
     if (input->pressedAButton && TrySetupDiveDownScript() == TRUE)
         return TRUE;
-    if (input->pressedStartButton)
+    if (input->pressedStartButton && !FlagGet(FLAG_BLOCK_PLAYER_ACTIONS))
     {
         PlaySE(SE_WIN_OPEN);
         ShowStartMenu();
@@ -231,10 +231,10 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
     if (input->tookStep && TryFindHiddenPokemon())
         return TRUE;
 
-    if (input->pressedSelectButton && UseRegisteredKeyItemOnField() == TRUE)
+    if (input->pressedSelectButton && !FlagGet(FLAG_BLOCK_PLAYER_ACTIONS) && UseRegisteredKeyItemOnField() == TRUE)
         return TRUE;
 
-    if (input->pressedRButton && TryStartDexNavSearch())
+    if (input->pressedRButton && !FlagGet(FLAG_BLOCK_PLAYER_ACTIONS) && TryStartDexNavSearch())
         return TRUE;
 
     if(input->input_field_1_2 && DEBUG_OVERWORLD_MENU && !DEBUG_OVERWORLD_IN_MENU)

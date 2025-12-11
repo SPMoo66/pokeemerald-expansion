@@ -17,10 +17,24 @@
   "warp_events": [
     {
       "x": 1,
-      "y": 15,
+      "y": 12,
       "elevation": 0,
       "dest_map": "MAP_BYGONE_VAULT_1",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 18,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_BYGONE_VAULT_R1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_BYGONE_VAULT_R1",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

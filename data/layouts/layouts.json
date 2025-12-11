@@ -6232,8 +6232,8 @@
     {
       "id": "LAYOUT_BYGONE_VAULT_R1",
       "name": "BygoneVault_R1_Layout",
-      "width": 30,
-      "height": 21,
+      "width": 28,
+      "height": 18,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Dungeon_Exp_1",

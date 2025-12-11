@@ -34,3 +34,11 @@ script BygoneVault_FullBowl {
 script BygoneVault_DoorShut {
 	msgbox ("The door is firmly sealed shut.", MSGBOX_AUTOCLOSE)
 }
+
+script CreatePokemonSprite {
+	msgbox ("You are now a Pokemon.", MSGBOX_AUTOCLOSE)
+	setflag (FLAG_BLOCK_PLAYER_ACTIONS)
+	setflag (FLAG_PLAY_AS_FIRST_MON_IN_PARTY)
+	setflag (FLAG_SEMI_PERM_HIDE_FOLLOWER)
+	warpsilent (MAP_BYGONE_VAULT_1, 8, 11)
+}

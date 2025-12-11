@@ -167,10 +167,13 @@ Debug_EventScript_Script_5::
 
 Debug_EventScript_Script_6::
 	setflag FLAG_BLOCK_PLAYER_ACTIONS
+	setflag FLAG_PLAY_AS_FIRST_MON_IN_PARTY
 	release
 	end
 
 Debug_EventScript_Script_7::
+	clearflag FLAG_BLOCK_PLAYER_ACTIONS
+	clearflag FLAG_PLAY_AS_FIRST_MON_IN_PARTY
 	release
 	end
 

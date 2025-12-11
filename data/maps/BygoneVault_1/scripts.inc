@@ -83,6 +83,20 @@ BygoneVault_DoorShut::
 	return
 
 
+CreatePokemonSprite::
+# 39 "data/maps/BygoneVault_1/scripts.pory"
+	msgbox CreatePokemonSprite_Text_0, MSGBOX_AUTOCLOSE
+# 40 "data/maps/BygoneVault_1/scripts.pory"
+	setflag FLAG_BLOCK_PLAYER_ACTIONS
+# 41 "data/maps/BygoneVault_1/scripts.pory"
+	setflag FLAG_PLAY_AS_FIRST_MON_IN_PARTY
+# 42 "data/maps/BygoneVault_1/scripts.pory"
+	setflag FLAG_SEMI_PERM_HIDE_FOLLOWER
+# 43 "data/maps/BygoneVault_1/scripts.pory"
+	warpsilent MAP_BYGONE_VAULT_1, 8, 11
+	return
+
+
 BygoneVault_FullBowl_Text_0:
 # 31 "data/maps/BygoneVault_1/scripts.pory"
 	.string "The bowl has filled with water.$"
@@ -90,3 +104,7 @@ BygoneVault_FullBowl_Text_0:
 BygoneVault_DoorShut_Text_0:
 # 35 "data/maps/BygoneVault_1/scripts.pory"
 	.string "The door is firmly sealed shut.$"
+
+CreatePokemonSprite_Text_0:
+# 39 "data/maps/BygoneVault_1/scripts.pory"
+	.string "You are now a Pokemon.$"

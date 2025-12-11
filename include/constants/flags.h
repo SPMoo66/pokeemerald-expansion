@@ -1520,8 +1520,8 @@
 #define FLAG_CANT_USE_FLY                           (SYSTEM_FLAGS + 0x8C) // Was unused, set to disable fly
 #define FLAG_SUPERBOSS_TRAINER                      (SYSTEM_FLAGS + 0x8D) // Set for superboss-type trainers so that level sync scales them *three levels higher than max party level*, intead of two levels lower like standard trainers
 #define FLAG_DONT_TRANSIITON_BATTLE_MUSIC           (SYSTEM_FLAGS + 0x8E) // Set to prevent battles from changing the music, takes map music or music from playbgm. Clear after use.
+#define FLAG_PERM_HIDE_FOLLOWER                     (SYSTEM_FLAGS + 0x8F) // Set to permanently hide following Pokémon
 
-#define FLAG_UNUSED_0x8EF                           (SYSTEM_FLAGS + 0x8F) // Unused Flag
 #define FLAG_UNUSED_0x8F0                           (SYSTEM_FLAGS + 0x90) // Unused Flag
 #define FLAG_UNUSED_0x8F1                           (SYSTEM_FLAGS + 0x91) // Unused Flag
 #define FLAG_UNUSED_0x8F2                           (SYSTEM_FLAGS + 0x92) // Unused Flag
@@ -1663,7 +1663,9 @@
 #define FLAG_BLOCK_PLAYER_ACTIONS               (SPECIAL_FLAGS_START + 0xB) // Set this flag to block the player from taking most actions. This includes...
 																			// Running, opening the pause menu, activating a registered item through Select, running DexNav...
 																			// This does not prevent opening the debug menu
-// FLAG_SPECIAL_FLAG_0x400C - 0x407F also exist and are unused
+#define FLAG_PLAY_AS_FIRST_MON_IN_PARTY         (SPECIAL_FLAGS_START + 0xC) // Set this flag to have the player sprite be changed to the first pokemon in party
+#define FLAG_SEMI_PERM_HIDE_FOLLOWER            (SPECIAL_FLAGS_START + 0xD) // Set this flag to hide all following Pokémon until the game is reset
+// FLAG_SPECIAL_FLAG_0x400E - 0x407F also exist and are unused
 #define SPECIAL_FLAGS_END                       (SPECIAL_FLAGS_START + 0x7F)
 #define NUM_SPECIAL_FLAGS                       (SPECIAL_FLAGS_END - SPECIAL_FLAGS_START + 1)
 

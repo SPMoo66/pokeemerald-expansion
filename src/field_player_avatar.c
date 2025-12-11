@@ -1594,6 +1594,8 @@ u16 GetRivalAvatarGraphicsIdByStateIdAndGender(u8 state, u8 gender)
 
 u16 GetPlayerAvatarGraphicsIdByStateIdAndGender(u8 state, u8 gender)
 {
+    if (FlagGet(FLAG_PLAY_AS_FIRST_MON_IN_PARTY))
+        return (GetMonData(GetFirstLiveMon(), MON_DATA_SPECIES) + OBJ_EVENT_MON);
     return sPlayerAvatarGfxIds[state][gender];
 }
 
@@ -1609,6 +1611,7 @@ u16 GetRSAvatarGraphicsIdByGender(u8 gender)
 
 u16 GetPlayerAvatarGraphicsIdByStateId(u8 state)
 {
+//  return (GetMonData(GetFirstLiveMon(), MON_DATA_SPECIES)
     return GetPlayerAvatarGraphicsIdByStateIdAndGender(state, gPlayerAvatar.gender); // This function generates the sprite for the player
 }
 

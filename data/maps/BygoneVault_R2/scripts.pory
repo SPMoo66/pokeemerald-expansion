@@ -56,15 +56,88 @@ mapscripts BygoneVault_R2_MapScripts {
 		}
 	}
 	MAP_SCRIPT_ON_TRANSITION {
-	
+		setflag (FLAG_TEMP_8)
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
+			setflag (FLAG_TEMP_1)
+		}
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN)) {
+			setflag (FLAG_TEMP_5)
+		}
+		if (flag(FLAG_PLAY_AS_FIRST_MON_IN_PARTY)) {
+			clearflag (FLAG_TEMP_8)
+			setobjectmovementtype (2, MOVEMENT_TYPE_FACE_UP)
+		}
 	}
+	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+		VAR_TEMP_0, 0 {
+			setvar (VAR_TEMP_0, 1)
+			checkplayergender
+			if (var(VAR_RESULT)) {
+				setvar (VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_MAY_NORMAL)
+			}
+			if (flag(FLAG_PLAY_AS_FIRST_MON_IN_PARTY)) {
+				turnobject (2, DIR_NORTH)
+			}
+		}
+	]
+}
+
+
+script BygoneVault_R2_Redd {
+	faceplayer
+	if (flag(FLAG_TEMP_6)) {
+		goto (BygoneVault_R2_Redd2)
+	}
+	speakername (CommonText_Redd)
+	msgbox ("Yo, {PLAYER}!\p"
+			"This room seems weird, and I bet that we\n"
+			"aren't going to get through this\l"
+			"without figuring out its secrets.\p"
+			"Or at least, that's the feel I get\n"
+			"from the inscription over there.", MSGBOX_DEFAULT)
+	applymovement (2, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+	msgbox ("The little entrance here seems like\n"
+			"its key.\p"
+			"It's too small for one of us to fit\n"
+			"through, but I bet a Pokémon could\l"
+			"fit in there.", MSGBOX_DEFAULT)
+	if (flag(FLAG_TEMP_7)) {
+		applymovement (2, Common_Movement_WalkInPlaceRight)
+		clearflag (FLAG_TEMP_7)
+	}
+	else {
+		faceplayer
+	}
+	setflag (FLAG_TEMP_6)
+	goto (BygoneVault_R2_Redd2)
+}
+
+script BygoneVault_R2_Redd2 {
+	speakername (CommonText_Redd)
+	msgbox ("Want to give it a try?", MSGBOX_YESNO)
+	if (var(VAR_RESULT)) {
+		msgbox ("Alright! Give it a shot!", MSGBOX_DEFAULT)
+		closemessage
+		setflag (FLAG_BLOCK_PLAYER_ACTIONS)
+		setflag (FLAG_PLAY_AS_FIRST_MON_IN_PARTY)
+		setflag (FLAG_SEMI_PERM_HIDE_FOLLOWER)
+		warpsilent (MAP_BYGONE_VAULT_R2, 9, 10)
+	}
+	closemessage
 }
 
 script BygoneVault_R2_StartPuzzle {
-	setflag (FLAG_BLOCK_PLAYER_ACTIONS)
-	setflag (FLAG_PLAY_AS_FIRST_MON_IN_PARTY)
-	setflag (FLAG_SEMI_PERM_HIDE_FOLLOWER)
-	warpsilent (MAP_BYGONE_VAULT_R2, 9, 10)
+		applymovement (2, Common_Movement_FaceRight)
+		applymovement (LOCALID_PLAYER, Common_Movement_FaceLeft)
+		waitmovement (0)
+	if (flag(FLAG_TEMP_6)) {
+		goto (BygoneVault_R2_Redd2)
+	}
+	else {
+		setflag (FLAG_TEMP_7)
+		goto (BygoneVault_R2_Redd)
+	}
 }
 
 script BygoneVault_R2_AbandonPuzzle {
@@ -73,8 +146,10 @@ script BygoneVault_R2_AbandonPuzzle {
 		clearflag (FLAG_BLOCK_PLAYER_ACTIONS)
 		clearflag (FLAG_PLAY_AS_FIRST_MON_IN_PARTY)
 		clearflag (FLAG_SEMI_PERM_HIDE_FOLLOWER)
+		closemessage
 		warpsilent (MAP_BYGONE_VAULT_R2, 9, 13)
 	}
+	closemessage
 }
 
 script BygoneVault_R2_FinishPuzzle {
@@ -141,6 +216,7 @@ script BygoneVault_R2_Lever1 {
 	else {
 		msgbox (Text_FlippedSwitch, MSGBOX_AUTOCLOSE)
 	}
+	closemessage
 }
 
 script BygoneVault_R2_Lever2 {
@@ -182,6 +258,7 @@ script BygoneVault_R2_Lever2 {
 	else {
 		msgbox (Text_FlippedSwitch, MSGBOX_AUTOCLOSE)
 	}
+	closemessage
 }
 
 script BygoneVault_R2_Lever3 {
@@ -218,4 +295,5 @@ script BygoneVault_R2_Lever3 {
 	else {
 		msgbox (Text_FlippedSwitch, MSGBOX_AUTOCLOSE)
 	}
+	closemessage
 }

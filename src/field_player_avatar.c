@@ -2907,3 +2907,8 @@ bool8 ObjectMovingOnRockStairs(struct ObjectEvent *objectEvent, u8 direction)
         return FALSE;
     #endif
 }
+
+void SaveFirstLiveMonToVar(void)
+{
+    gSpecialVar_Result = (GetMonData(GetFirstLiveMon(), MON_DATA_SPECIES) + OBJ_EVENT_MON);
+}

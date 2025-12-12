@@ -1,7 +1,7 @@
 mapscripts BygoneVault_R2_MapScripts {
 	MAP_SCRIPT_ON_LOAD {
 		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
-			  #cracked tiles
+			  # cracked tiles
 			setmetatile (2, 2, 0x06B, FALSE)
 			setmetatile (3, 3, 0x06B, FALSE)
 			setmetatile (10, 3, 0x06B, FALSE)
@@ -17,7 +17,7 @@ mapscripts BygoneVault_R2_MapScripts {
 			setmetatile (3, 9, 0x06B, FALSE)
 			setmetatile (7, 10, 0x06B, FALSE)
 
-			  #broken tiles
+			  # broken tiles
 			setmetatile (4, 2, 0x06B, FALSE)
 			setmetatile (8, 2, 0x06B, FALSE)
 			setmetatile (11, 2, 0x06B, FALSE)
@@ -34,7 +34,7 @@ mapscripts BygoneVault_R2_MapScripts {
 			setmetatile (12, 9, 0x06B, FALSE)
 			setmetatile (8, 10, 0x06B, FALSE)
 
-			  #heavily broken tiles
+			  # heavily broken tiles
 			setmetatile (14, 3, 0x06B, FALSE)
 			setmetatile (5, 4, 0x06B, FALSE)
 			setmetatile (3, 5, 0x06B, FALSE)
@@ -45,14 +45,25 @@ mapscripts BygoneVault_R2_MapScripts {
 			setmetatile (13, 2, 0x241, TRUE)
 			setmetatile (1, 3, 0x241, TRUE)
 			setmetatile (6, 6, 0x241, TRUE)
-			setmetatile (5, 13, 0x241, TRUE)
-			  #fallen pillar
+			  # fallen pillar
 			setmetatile (2, 8, 0x001, FALSE)
 			setmetatile (2, 9, 0x001, FALSE)
 			setmetatile (2, 10, 0x001, FALSE)
 			setmetatile (3, 10, 0x080, TRUE)
 			setmetatile (4, 10, 0x081, TRUE)
 			setmetatile (5, 10, 0x082, TRUE)
+		}
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_PUZZLE_COMPLETE)) {
+			  # bottom left lever
+			setmetatile (5, 13, 0x241, TRUE)
+			
+			  # wall divider
+			setmetatile (6, 11, 0x01B, TRUE)
+			setmetatile (6, 12, 0x03A, TRUE)
+			setmetatile (6, 13, 0x001, FALSE)
+			setmetatile (6, 14, 0x001, FALSE)
+			setmetatile (6, 15, 0x001, FALSE)
+			setmetatile (6, 16, 0x01B, TRUE)
 		}
 	}
 	MAP_SCRIPT_ON_TRANSITION {
@@ -67,6 +78,9 @@ mapscripts BygoneVault_R2_MapScripts {
 			clearflag (FLAG_TEMP_8)
 			setobjectmovementtype (2, MOVEMENT_TYPE_FACE_UP)
 		}
+		if (!flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_PUZZLE_COMPLETE) && flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
+			setobjectmovementtype (2, MOVEMENT_TYPE_FACE_RIGHT)
+		}
 	}
 	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
 		VAR_TEMP_0, 0 {
@@ -78,6 +92,20 @@ mapscripts BygoneVault_R2_MapScripts {
 			if (flag(FLAG_PLAY_AS_FIRST_MON_IN_PARTY)) {
 				turnobject (2, DIR_NORTH)
 			}
+			if (!flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_PUZZLE_COMPLETE) && flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
+				callnative (SaveFirstLiveMonToVar)
+				copyvar (VAR_OBJ_GFX_ID_1, VAR_RESULT)
+				turnobject (2, DIR_EAST)
+				turnobject (LOCALID_PLAYER, DIR_WEST)
+			}
+		}
+	]
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_TEMP_1, 0 {
+			setvar (VAR_TEMP_1, 1)
+			if (!flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_PUZZLE_COMPLETE) && flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
+				goto (BygoneVault_R2_PuzzlePostScript)
+			}
 		}
 	]
 }
@@ -87,6 +115,11 @@ script BygoneVault_R2_Redd {
 	faceplayer
 	if (flag(FLAG_TEMP_6)) {
 		goto (BygoneVault_R2_Redd2)
+	}
+	if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_PUZZLE_COMPLETE)) {
+		speakername (CommonText_Redd)
+		msgbox ("Back to the main chamber now, right?", MSGBOX_AUTOCLOSE)
+		end
 	}
 	speakername (CommonText_Redd)
 	msgbox ("Yo, {PLAYER}!\p"
@@ -141,13 +174,19 @@ script BygoneVault_R2_StartPuzzle {
 }
 
 script BygoneVault_R2_AbandonPuzzle {
-	msgbox ("Do you want to abandon the puzzle?", MSGBOX_YESNO)
-	if (var(VAR_RESULT)) { // yes
-		clearflag (FLAG_BLOCK_PLAYER_ACTIONS)
-		clearflag (FLAG_PLAY_AS_FIRST_MON_IN_PARTY)
-		clearflag (FLAG_SEMI_PERM_HIDE_FOLLOWER)
-		closemessage
-		warpsilent (MAP_BYGONE_VAULT_R2, 9, 13)
+	if (!flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_PUZZLE_COMPLETE) && flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
+		msgbox ("It seems as though your Pokémon\n"
+				"doesn't want to return yet.", MSGBOX_AUTOCLOSE)
+	}
+	else {
+		msgbox ("Do you want to abandon the puzzle?", MSGBOX_YESNO)
+		if (var(VAR_RESULT)) { // yes
+			clearflag (FLAG_BLOCK_PLAYER_ACTIONS)
+			clearflag (FLAG_PLAY_AS_FIRST_MON_IN_PARTY)
+			clearflag (FLAG_SEMI_PERM_HIDE_FOLLOWER)
+			closemessage
+			warpsilent (MAP_BYGONE_VAULT_R2, 9, 13)
+		}
 	}
 	closemessage
 }
@@ -156,7 +195,54 @@ script BygoneVault_R2_FinishPuzzle {
 	clearflag (FLAG_BLOCK_PLAYER_ACTIONS)
 	clearflag (FLAG_PLAY_AS_FIRST_MON_IN_PARTY)
 	clearflag (FLAG_SEMI_PERM_HIDE_FOLLOWER)
+	warpsilent (MAP_BYGONE_VAULT_R2, 9, 13)
 }
+
+script BygoneVault_R2_PuzzlePostScript {
+	speakername (CommonText_Redd)
+	msgbox ("Huh. I guess that does it?\p"
+			"But your Pokémon, where did it get\noff to?\p"
+			"You lost track of it too, right?", MSGBOX_AUTOCLOSE)
+	addobject (4)
+	delay (30)
+	applymovement (4, Common_Movement_WalkRight2)
+	waitmovement (0)
+	delay (20)
+	setmetatile (5, 13, 0x241, TRUE)
+	special (DrawWholeMapView)
+	playse (SE_SWITCH)
+	waitse
+	speakername (CommonText_Redd)
+	msgbox ("What was that?", MSGBOX_AUTOCLOSE)
+	setmetatile (6, 11, 0x01B, TRUE)
+	setmetatile (6, 12, 0x03A, TRUE)
+	setmetatile (6, 13, 0x001, FALSE)
+	setmetatile (6, 14, 0x001, FALSE)
+	setmetatile (6, 15, 0x001, FALSE)
+	setmetatile (6, 16, 0x01B, TRUE)
+	special (DrawWholeMapView)
+	playse (SE_LAVARIDGE_FALL_WARP)
+	waitse
+	applymovement (2, Common_Movement_FaceLeft)
+	waitmovement (0)
+	playse (SE_PIN)
+	applymovement (2, Common_Movement_ExclamationMark)
+	applymovement (LOCALID_PLAYER, Common_Movement_ExclamationMark)
+	delay (60)
+	speakername (CommonText_Redd)
+	msgbox ("Attaboy!\p"
+			"You really are raising your Pokémon\n"
+			"well if they can do that on their\l"
+			"own, {PLAYER}!", MSGBOX_AUTOCLOSE)
+	applymovement (2, Common_Movement_WalkInPlaceRight)
+	speakername (CommonText_Redd)
+	msgbox ("That's gotta be what we needed.\p"
+			"This dungeon won't last long\n"
+			"against us!", MSGBOX_AUTOCLOSE)
+	setflag (FLAG_EXP_1_BYGONE_VAULT_RIGHT_PUZZLE_COMPLETE)
+	warpsilent (MAP_BYGONE_VAULT_R2, 9, 13)
+}
+
 
 script BygoneVault_R2_Sign {
 	msgbox ("When the floor has been restored\nThy path shall be revealed", MSGBOX_SIGN)
@@ -290,10 +376,15 @@ script BygoneVault_R2_Lever3 {
 			waitse
 			delay (10)
 			setflag (FLAG_TEMP_4)
+			setflag (FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)
 		}
 	}
 	else {
 		msgbox (Text_FlippedSwitch, MSGBOX_AUTOCLOSE)
 	}
 	closemessage
+}
+
+script BygoneVault_R2_Lever4 {
+	msgbox (Text_FlippedSwitch, MSGBOX_AUTOCLOSE)
 }

@@ -1230,26 +1230,28 @@
 #define FLAG_ITEM_ROCKET_REFUGE_B2F_NUGGET                          0x498
 #define FLAG_ITEM_ROCKET_REFUGE_B2F_PEARL_STRING                    0x499
 
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
-#define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
-#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
-#define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
-#define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
-#define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
-#define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
-#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
-#define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
-#define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
-#define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
-#define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
+// Exp 1 Item Ball & Hidden Item Flags
+#define FLAG_ITEM_ILLUSORY_GROTTO_B4F_2R_ITEM                       0x49A // Needs item
+#define FLAG_ITEM_ILLUSORY_GROTTO_1F_1R_ITEM                        0x49B // Needs item
+#define FLAG_ITEM_ILLUSORY_GROTTO_EXTERIOR_ITEM                     0x49C // Needs item
+#define FLAG_ITEM_FAR_OFF_SEA_WEST_2_ITEM                           0x49D // Needs item
+#define FLAG_ITEM_FAR_OFF_SEA_WEST_ITEM                             0x49E // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_1     0x49F // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_2     0x4A0 // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_3     0x4A1 // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_4     0x4A2 // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_5     0x4A3 // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_6     0x4A4 // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_7     0x4A5 // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_2_ITEM_1     0x4A6 // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_2_ITEM_2     0x4A7 // Needs item
+#define FLAG_ITEM_MAUVE_ISLAND_SOUTHEAST_ITEM                       0x4A8 // Needs item
+#define FLAG_ITEM_BLANCHED_DEPTHS_1F_1R_ITEM                        0x4A9 // Needs item
+#define FLAG_ITEM_BLANCHED_DEPTHS_2F_1R_ITEM                        0x4AA // Needs item
+#define FLAG_HIDDEN_ITEM_MAUVE_HOLLOW_ITEM                          0x4AB // Needs item
+#define FLAG_HIDDEN_ITEM_WELLSPRING_CHASM_2_ITEM                    0x4AC // Needs item
+#define FLAG_ITEM_MAUVE_ISLAND_WEST_ITEM                            0x4AD // Needs item
+
 #define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
 #define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
 #define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag

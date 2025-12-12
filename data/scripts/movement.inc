@@ -405,7 +405,31 @@ Common_Movement_WalkLeft11:
 	walk_left
 	walk_left
 	step_end
-	
+
+Common_Movement_WalkDiagNE3:
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	step_end
+
+Common_Movement_WalkDiagNW3:
+	walk_diag_northwest
+	walk_diag_northwest
+	walk_diag_northwest
+	step_end
+
+Common_Movement_WalkDiagSE3:
+	walk_diag_southeast
+	walk_diag_southeast
+	walk_diag_southeast
+	step_end
+
+Common_Movement_WalkDiagSW3:
+	walk_diag_southwest
+	walk_diag_southwest
+	walk_diag_southwest
+	step_end
+
 Common_Movement_WalkFastUp:
 	walk_fast_up
 	step_end

@@ -166,8 +166,8 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	setflag FLAG_BLOCK_PLAYER_ACTIONS
-	setflag FLAG_PLAY_AS_FIRST_MON_IN_PARTY
+	setflag FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH
+	setflag FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH
 	release
 	end
 

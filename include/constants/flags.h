@@ -1251,8 +1251,8 @@
 #define FLAG_HIDDEN_ITEM_MAUVE_HOLLOW_ITEM                          0x4AB // Needs item
 #define FLAG_HIDDEN_ITEM_WELLSPRING_CHASM_2_ITEM                    0x4AC // Needs item
 #define FLAG_ITEM_MAUVE_ISLAND_WEST_ITEM                            0x4AD // Needs item
+#define FLAG_ITEM_BYGONE_VAULT_L1_ITEM                              0x4AE // Needs item
 
-#define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
 #define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
 #define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
 #define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag

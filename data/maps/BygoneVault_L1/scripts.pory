@@ -5,6 +5,9 @@ mapscripts BygoneVault_L1_MapScripts {
 			setmaplayoutindex (LAYOUT_BYGONE_VAULT_L1_DRAINED)
 			clearflag (FLAG_TEMP_1)
 		}
+		if (!flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH) || flag(FLAG_ITEM_BYGONE_VAULT_L1_ITEM)) {
+			setflag (FLAG_TEMP_2)
+		}
 	}
 }
 
@@ -20,4 +23,9 @@ script HopDownLedge {
 
 script BygoneVault_L1_Sign {
 	msgbox ("When the water has gone,\nthe water will appear.", MSGBOX_SIGN)
+}
+
+script BygoneVault_L1_ItemBall {
+	setflag (FLAG_ITEM_BYGONE_VAULT_L1_ITEM)
+	call (Common_EventScript_FindItem)
 }

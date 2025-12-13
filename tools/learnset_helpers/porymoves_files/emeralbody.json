@@ -607,7 +607,9 @@
   "GYARADOS": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+        "MOVE_IRON_HEAD"
+    ],
     "EggMoves": [],
     "TutorMoves": [
         "MOVE_WAVE_CRASH",

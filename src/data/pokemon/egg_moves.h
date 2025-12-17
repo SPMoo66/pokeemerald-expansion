@@ -1392,6 +1392,7 @@ static const u16 sEeveeEggMoveLearnset[] = {
     MOVE_SYNCHRONOISE,
     MOVE_CAPTIVATE,
     MOVE_MUD_SLAP,
+    MOVE_DISARMING_VOICE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_EEVEE
@@ -1519,6 +1520,7 @@ static const u16 sChikoritaEggMoveLearnset[] = {
     MOVE_REFRESH,
     MOVE_HEAL_PULSE,
     MOVE_GRASSY_TERRAIN,
+    MOVE_DISARMING_VOICE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CHIKORITA
@@ -3312,6 +3314,7 @@ static const u16 sKecleonEggMoveLearnset[] = {
     MOVE_FOUL_PLAY,
     MOVE_CAMOUFLAGE,
     MOVE_POWER_UP_PUNCH,
+    MOVE_KNOCK_OFF,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_KECLEON
@@ -3329,6 +3332,7 @@ static const u16 sShuppetEggMoveLearnset[] = {
     MOVE_OMINOUS_WIND,
     MOVE_GUNK_SHOT,
     MOVE_PHANTOM_FORCE,
+    MOVE_HEAL_BLOCK,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SHUPPET
@@ -3380,6 +3384,9 @@ static const u16 sChinglingEggMoveLearnset[] = {
     MOVE_STORED_POWER,
     MOVE_SKILL_SWAP,
     MOVE_COSMIC_POWER,
+    MOVE_CRAFTY_SHIELD,
+    MOVE_PERISH_SONG,
+    MOVE_AMNESIA,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS

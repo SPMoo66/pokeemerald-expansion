@@ -228,6 +228,15 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "CROBAT": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_BRAVE_BIRD"
+	]
+  },
   "GOLDUCK": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -1239,7 +1248,8 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
-        "MOVE_VACUUM_WAVE"
+        "MOVE_VACUUM_WAVE",
+        "MOVE_SLUDGE_BOMB"
 	],
     "EggMoves": [],
     "TutorMoves": [
@@ -1542,6 +1552,15 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "KECLEON": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_SCALE_SHOT"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "BANETTE": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -1569,6 +1588,15 @@
     "EggMoves": [],
     "TutorMoves": [
         "MOVE_PSYCHO_BOOST"
+	]
+  },
+  "ABSOL": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_SHADOW_FORCE"
 	]
   },
   "SNORUNT": {
@@ -4013,7 +4041,9 @@
         "MOVE_VACUUM_WAVE"
 	],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+        "MOVE_SHADOW_FORCE"
+	]
   },
   "FARIGIRAF": {
     "LevelMoves": [],

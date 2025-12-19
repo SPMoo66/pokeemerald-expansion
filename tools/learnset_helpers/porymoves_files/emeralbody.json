@@ -3068,8 +3068,8 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-		"MOVE_DIAMOND_STORM"
-	]
+        "MOVE_DIAMOND_STORM"
+    ]
   },
   "GOODRA": {
     "LevelMoves": [],
@@ -3080,15 +3080,15 @@
 	],
     "EggMoves": [],
     "TutorMoves": [
-		"MOVE_STEAM_ERUPTION"
-	]
+        "MOVE_STEAM_ERUPTION"
+    ]
   },
   "GOODRA_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
         "MOVE_VACUUM_WAVE"
-	],
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -3098,8 +3098,8 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-		"MOVE_BEHEMOTH_BLADE"
-	]
+        "MOVE_BEHEMOTH_BLADE"
+    ]
   },
   "TREVENANT": {
     "LevelMoves": [],
@@ -3124,7 +3124,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
         "MOVE_ICICLE_CRASH"
-	],
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -3135,7 +3135,7 @@
         "MOVE_SMART_STRIKE",
         "MOVE_POWER_GEM",
         "MOVE_ICICLE_CRASH"
-	],
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -3146,13 +3146,15 @@
     "EggMoves": [],
     "TutorMoves": [
         "MOVE_BLEAKWIND_STORM",
-		"MOVE_AEROBLAST"
+        "MOVE_AEROBLAST"
     ]
   },
   "YVELTAL": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+        "MOVE_VACUUM_WAVE"
+    ],
     "EggMoves": [],
     "TutorMoves": [
         "MOVE_SHADOW_FORCE"

@@ -5397,6 +5397,7 @@ static const u16 sGoomyEggMoveLearnset[] = {
     MOVE_POISON_TAIL,
     MOVE_COUNTER,
     MOVE_ENDURE,
+    MOVE_MUD_SHOT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_GOOMY
@@ -5430,6 +5431,7 @@ static const u16 sPumpkabooEggMoveLearnset[] = {
     MOVE_BESTOW,
     MOVE_DESTINY_BOND,
     MOVE_CURSE,
+    MOVE_HYPNOSIS,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PUMPKABOO
@@ -5450,6 +5452,7 @@ static const u16 sNoibatEggMoveLearnset[] = {
     MOVE_SNATCH,
     MOVE_OUTRAGE,
     MOVE_TAILWIND,
+    MOVE_SCREECH,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_NOIBAT

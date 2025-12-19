@@ -32537,6 +32537,7 @@ static const u16 sYveltalTeachableLearnset[] = {
     MOVE_TORMENT,
     MOVE_TOXIC,
     MOVE_U_TURN,
+    MOVE_VACUUM_WAVE,
     MOVE_ZEN_HEADBUTT,
     MOVE_UNAVAILABLE,
 };

@@ -3964,6 +3964,7 @@ static const u16 sRioluEggMoveLearnset[] = {
     MOVE_FOLLOW_ME,
     MOVE_CIRCLE_THROW,
     MOVE_METEOR_MASH,
+    MOVE_WORK_UP,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_RIOLU
@@ -3980,6 +3981,7 @@ static const u16 sHippopotasEggMoveLearnset[] = {
     MOVE_REVENGE,
     MOVE_SLEEP_TALK,
     MOVE_WHIRLWIND,
+    MOVE_AMNESIA,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_HIPPOPOTAS
@@ -4788,6 +4790,7 @@ static const u16 sFoongusEggMoveLearnset[] = {
     MOVE_DEFENSE_CURL,
     MOVE_ENDURE,
     MOVE_BODY_SLAM,
+    MOVE_TOXIC_SPIKES,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FOONGUS

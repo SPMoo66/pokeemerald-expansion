@@ -1744,6 +1744,26 @@
 		"MOVE_BEHEMOTH_BLADE"
     ]
   },
+  "STARAVIA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_VACUUM_WAVE",
+        "MOVE_BLAZE_KICK"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "STARAPTOR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_VACUUM_WAVE",
+        "MOVE_BLAZE_KICK"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "SHINX": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -2167,7 +2187,8 @@
 	],
     "EggMoves": [],
     "TutorMoves": [
-        "MOVE_ROAR_OF_TIME"
+        "MOVE_ROAR_OF_TIME",
+        "MOVE_SHADOW_FORCE"
     ]
   },
   "ARCEUS": {
@@ -2485,7 +2506,9 @@
         "MOVE_POWER_GEM"
 	],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+        "MOVE_SHADOW_FORCE"
+    ]
   },
   "CARRACOSTA": {
     "LevelMoves": [],
@@ -2805,7 +2828,8 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
-        "MOVE_BLAZE_KICK"
+        "MOVE_BLAZE_KICK",
+        "MOVE_IRON_HEAD"
 	],
     "EggMoves": [],
     "TutorMoves": []
@@ -3641,7 +3665,9 @@
         "MOVE_HONE_CLAWS"
 	],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+        "MOVE_SHADOW_FORCE"
+    ]
   },
   "PINCURCHIN": {
     "LevelMoves": [],

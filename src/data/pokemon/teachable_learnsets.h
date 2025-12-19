@@ -20594,6 +20594,7 @@ static const u16 sStaraviaTeachableLearnset[] = {
     MOVE_ACROBATICS,
     MOVE_AERIAL_ACE,
     MOVE_AIR_SLASH,
+    MOVE_BLAZE_KICK,
     MOVE_BRAVE_BIRD,
     MOVE_DEFOG,
     MOVE_DOUBLE_EDGE,
@@ -20614,6 +20615,7 @@ static const u16 sStaraviaTeachableLearnset[] = {
     MOVE_THIEF,
     MOVE_TOXIC,
     MOVE_U_TURN,
+    MOVE_VACUUM_WAVE,
     MOVE_UNAVAILABLE,
 };
 
@@ -20621,6 +20623,7 @@ static const u16 sStaraptorTeachableLearnset[] = {
     MOVE_ACROBATICS,
     MOVE_AERIAL_ACE,
     MOVE_AIR_SLASH,
+    MOVE_BLAZE_KICK,
     MOVE_BRAVE_BIRD,
     MOVE_DEFOG,
     MOVE_DOUBLE_EDGE,
@@ -20643,6 +20646,7 @@ static const u16 sStaraptorTeachableLearnset[] = {
     MOVE_THIEF,
     MOVE_TOXIC,
     MOVE_U_TURN,
+    MOVE_VACUUM_WAVE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_STARLY
@@ -23241,6 +23245,7 @@ static const u16 sDarkraiTeachableLearnset[] = {
     MOVE_ROCK_SMASH,
     MOVE_SHADOW_BALL,
     MOVE_SHADOW_CLAW,
+    MOVE_SHADOW_FORCE,
     MOVE_SLEEP_TALK,
     MOVE_SLUDGE_BOMB,
     MOVE_SNARL,
@@ -26178,6 +26183,7 @@ static const u16 sCofagrigusTeachableLearnset[] = {
     MOVE_REST,
     MOVE_SHADOW_BALL,
     MOVE_SHADOW_CLAW,
+    MOVE_SHADOW_FORCE,
     MOVE_SKILL_SWAP,
     MOVE_SLEEP_TALK,
     MOVE_SWAGGER,
@@ -26243,6 +26249,7 @@ static const u16 sRunerigusTeachableLearnset[] = {
     MOVE_SANDSTORM,
     MOVE_SHADOW_BALL,
     MOVE_SHADOW_CLAW,
+    MOVE_SHADOW_FORCE,
     MOVE_SKILL_SWAP,
     MOVE_SLEEP_TALK,
     MOVE_STEALTH_ROCK,

@@ -2888,6 +2888,33 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "FLETCHINDER": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_VACUUM_WAVE"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "TALONFLAME": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_VACUUM_WAVE"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "PYROAR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_EARTH_POWER"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "FLORGES": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -6659,7 +6686,8 @@
         "MOVE_SMART_STRIKE",
         "MOVE_FLASH_CANNON",
         "MOVE_STRENGTH",
-        "MOVE_ROCK_SMASH"
+        "MOVE_ROCK_SMASH",
+        "MOVE_ZEN_HEADBUTT"
       ],
       "EggMoves": [],
       "TutorMoves": [
@@ -6696,14 +6724,15 @@
         "MOVE_SMART_STRIKE",
         "MOVE_FLASH_CANNON",
         "MOVE_STRENGTH",
-        "MOVE_ROCK_SMASH"
+        "MOVE_ROCK_SMASH",
+        "MOVE_ZEN_HEADBUTT"
       ],
       "EggMoves": [],
       "TutorMoves": [
         "MOVE_TEMPER_FLARE",
         "MOVE_SKITTER_SMACK",
         "MOVE_STEEL_BEAM",
-		"MOVE_BEHEMOTH_BASH"
+        "MOVE_BEHEMOTH_BASH"
       ]
     },
     "TREVENANT_EMERIBIAN": {

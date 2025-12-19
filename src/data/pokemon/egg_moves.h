@@ -5256,6 +5256,7 @@ static const u16 sSpritzeeEggMoveLearnset[] = {
     MOVE_CAPTIVATE,
     MOVE_REFRESH,
     MOVE_NASTY_PLOT,
+    MOVE_HYPNOSIS,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SPRITZEE
@@ -5267,6 +5268,7 @@ static const u16 sSwirlixEggMoveLearnset[] = {
     MOVE_BELLY_DRUM,
     MOVE_COPYCAT,
     MOVE_STICKY_WEB,
+    MOVE_AMNESIA,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SWIRLIX
@@ -5300,17 +5302,19 @@ static const u16 sSkrelpEggMoveLearnset[] = {
     MOVE_HAZE,
     MOVE_ACID_ARMOR,
     MOVE_VENOM_DRENCH,
+    MOVE_MUD_SHOT,
     MOVE_UNAVAILABLE,
 };
 
 static const u16 sSkrelpEmeribianEggMoveLearnset[] = {
-        MOVE_TOXIC_SPIKES,
-        MOVE_SWITCHEROO,
-        MOVE_HELPING_HAND,
-        MOVE_WATER_SPORT,
-        MOVE_NASTY_PLOT,
-        MOVE_DRAGON_TAIL,
-        MOVE_SPIKE_CANNON,
+    MOVE_TOXIC_SPIKES,
+    MOVE_SWITCHEROO,
+    MOVE_HELPING_HAND,
+    MOVE_WATER_SPORT,
+    MOVE_NASTY_PLOT,
+    MOVE_DRAGON_TAIL,
+    MOVE_SPIKE_CANNON,
+    MOVE_MUD_SHOT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SKRELP

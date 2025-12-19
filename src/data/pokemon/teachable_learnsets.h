@@ -30307,6 +30307,7 @@ static const u16 sFletchinderTeachableLearnset[] = {
     MOVE_THIEF,
     MOVE_TOXIC,
     MOVE_U_TURN,
+    MOVE_VACUUM_WAVE,
     MOVE_WILL_O_WISP,
     MOVE_UNAVAILABLE,
 };
@@ -30348,6 +30349,7 @@ static const u16 sTalonflameTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UPPER_HAND,
     MOVE_U_TURN,
+    MOVE_VACUUM_WAVE,
     MOVE_WILL_O_WISP,
     MOVE_UNAVAILABLE,
 };
@@ -30444,6 +30446,7 @@ static const u16 sPyroarTeachableLearnset[] = {
     MOVE_DARK_PULSE,
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
+    MOVE_EARTH_POWER,
     MOVE_FACADE,
     MOVE_FIRE_BLAST,
     MOVE_FLAMETHROWER,
@@ -43467,6 +43470,7 @@ static const u16 sDoubladeEmeribianTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_WILL_O_WISP,
     MOVE_X_SCISSOR,
+    MOVE_ZEN_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
 
@@ -43500,6 +43504,7 @@ static const u16 sAegislashEmeribianTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_WILL_O_WISP,
     MOVE_X_SCISSOR,
+    MOVE_ZEN_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
 

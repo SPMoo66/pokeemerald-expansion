@@ -15337,6 +15337,7 @@ static const u16 sMasquerainTeachableLearnset[] = {
 static const u16 sShroomishTeachableLearnset[] = {
     MOVE_BODY_SLAM,
     MOVE_BULLET_SEED,
+    MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DRAIN_PUNCH,
     MOVE_ENERGY_BALL,

@@ -1263,6 +1263,24 @@
 		"MOVE_FLEUR_CANNON"
     ]
   },
+  "SHROOMISH": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_DIG"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "BRELOOM": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_DIG"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "NINJASK": {
     "LevelMoves": [],
     "PreEvoMoves": [],

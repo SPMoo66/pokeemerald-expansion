@@ -662,6 +662,7 @@ enum
     MAP_BYGONE_VAULT_LU                   = (25 | (34 << 8)),
     MAP_BYGONE_VAULT_R1                   = (26 | (34 << 8)),
     MAP_BYGONE_VAULT_R2                   = (27 | (34 << 8)),
+    MAP_BYGONE_VAULT_TREASURE_ROOM        = (28 | (34 << 8)),
 
     // gMapGroup_Exp1Exteriors
     MAP_MAUVE_CAMP                                               = (0 | (35 << 8)),

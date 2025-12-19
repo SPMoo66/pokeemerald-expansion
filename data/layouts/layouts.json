@@ -6252,6 +6252,18 @@
       "secondary_tileset": "gTileset_Dungeon_Sub_1_Exp_1",
       "border_filepath": "data/layouts/BygoneVault_R2/border.bin",
       "blockdata_filepath": "data/layouts/BygoneVault_R2/map.bin"
+    },
+    {
+      "id": "LAYOUT_BYGONE_VAULT_TREASURE_ROOM",
+      "name": "BygoneVault_TreasureRoom_Layout",
+      "width": 17,
+      "height": 14,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Dungeon_Exp_1",
+      "secondary_tileset": "gTileset_Dungeon_Sub_1_Exp_1",
+      "border_filepath": "data/layouts/BygoneVault_TreasureRoom/border.bin",
+      "blockdata_filepath": "data/layouts/BygoneVault_TreasureRoom/map.bin"
     }
   ]
 }

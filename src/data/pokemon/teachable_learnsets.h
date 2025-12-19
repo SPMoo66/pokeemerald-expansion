@@ -18691,6 +18691,7 @@ static const u16 sChimechoTeachableLearnset[] = {
     MOVE_HYPER_VOICE,
     MOVE_ICY_WIND,
     MOVE_LIGHT_SCREEN,
+    MOVE_METEOR_BEAM,
     MOVE_PROTECT,
     MOVE_PSYCHIC,
     MOVE_PSYCHIC_NOISE,
@@ -34880,6 +34881,7 @@ static const u16 sMimikyuTeachableLearnset[] = {
     MOVE_REST,
     MOVE_SHADOW_BALL,
     MOVE_SHADOW_CLAW,
+    MOVE_SHADOW_FORCE,
     MOVE_SLEEP_TALK,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
@@ -35812,6 +35814,7 @@ static const u16 sMarshadowTeachableLearnset[] = {
     MOVE_ROCK_SLIDE,
     MOVE_SHADOW_BALL,
     MOVE_SHADOW_CLAW,
+    MOVE_SHADOW_FORCE,
     MOVE_SKITTER_SMACK,
     MOVE_SLEEP_TALK,
     MOVE_SMACK_DOWN,
@@ -36539,6 +36542,7 @@ static const u16 sOrbeetleTeachableLearnset[] = {
 
 #if P_FAMILY_NICKIT
 static const u16 sNickitTeachableLearnset[] = {
+    MOVE_DARK_PULSE,
     MOVE_DIG,
     MOVE_FACADE,
     MOVE_HONE_CLAWS,
@@ -39632,6 +39636,7 @@ static const u16 sCeruledgeTeachableLearnset[] = {
     MOVE_REST,
     MOVE_SHADOW_BALL,
     MOVE_SHADOW_CLAW,
+    MOVE_SHADOW_FORCE,
     MOVE_SLEEP_TALK,
     MOVE_STORED_POWER,
     MOVE_SUNNY_DAY,

@@ -1587,7 +1587,8 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-        "MOVE_PSYCHO_BOOST"
+        "MOVE_PSYCHO_BOOST",
+        "MOVE_METEOR_BEAM"
 	]
   },
   "ABSOL": {
@@ -3301,6 +3302,15 @@
 		"MOVE_FLEUR_CANNON"
 	]
   },
+  "GOLISOPOD": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_IRON_HEAD"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "TURTONATOR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -3318,6 +3328,15 @@
 	],
     "EggMoves": [],
     "TutorMoves": []
+  },
+  "MIMIKYU": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_SHADOW_FORCE"
+    ]
   },
   "DHELMISE": {
     "LevelMoves": [],
@@ -3428,7 +3447,9 @@
         "MOVE_BLAZE_KICK"
 	],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+        "MOVE_SHADOW_FORCE"
+    ]
   },
   "STAKATAKA": {
     "LevelMoves": [],
@@ -3538,12 +3559,21 @@
         "MOVE_PSYCHO_BOOST"
     ]
   },
+  "NICKIT": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_DARK_PULSE"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "YAMPER": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
         "MOVE_ZING_ZAP"
-	],
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -3697,6 +3727,15 @@
     "TutorMoves": [
         "MOVE_SHADOW_FORCE"
     ]
+  },
+  "FALINKS": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_IRON_HEAD"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
   },
   "PINCURCHIN": {
     "LevelMoves": [],
@@ -3962,7 +4001,8 @@
 	],
     "EggMoves": [],
     "TutorMoves": [
-		"MOVE_BEHEMOTH_BLADE"
+		"MOVE_BEHEMOTH_BLADE",
+		"MOVE_SHADOW_FORCE"
 	]
   },
   "BELLIBOLT": {

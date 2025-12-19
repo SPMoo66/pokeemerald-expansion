@@ -5532,6 +5532,7 @@ static const u16 sCrabrawlerEggMoveLearnset[] = {
     MOVE_SUPERPOWER,
     MOVE_ENDEAVOR,
     MOVE_AMNESIA,
+    MOVE_MACH_PUNCH,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CRABRAWLER
@@ -5808,6 +5809,7 @@ static const u16 sDrampaEggMoveLearnset[] = {
     MOVE_RAZOR_WIND,
     MOVE_MIST,
     MOVE_PLAY_ROUGH,
+    MOVE_AMNESIA,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_DRAMPA
@@ -6276,6 +6278,7 @@ static const u16 sSquawkabillyEggMoveLearnset[] = {
     MOVE_FINAL_GAMBIT,
     MOVE_FLATTER,
     MOVE_PARTING_SHOT,
+    MOVE_FEATHER_DANCE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SQUAWKABILLY
@@ -6503,6 +6506,7 @@ static const u16 sFlamigoEggMoveLearnset[] = {
     MOVE_DOUBLE_TEAM,
     MOVE_QUICK_GUARD,
     MOVE_SKY_ATTACK,
+    MOVE_FEATHER_DANCE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FLAMIGO
@@ -6541,6 +6545,7 @@ static const u16 sTatsugiriEggMoveLearnset[] = {
     MOVE_BATON_PASS,
     MOVE_COUNTER,
     MOVE_RAPID_SPIN,
+    MOVE_RAZOR_WIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TATSUGIRI

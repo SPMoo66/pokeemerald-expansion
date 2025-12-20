@@ -1,7 +1,7 @@
 {
-  "id": "MAP_BYGON_VAULT_2R1",
-  "name": "BygonVault_2R1",
-  "layout": "LAYOUT_BYGON_VAULT_2R1",
+  "id": "MAP_BYGONE_VAULT_2R1",
+  "name": "BygoneVault_2R1",
+  "layout": "LAYOUT_BYGONE_VAULT_2R1",
   "music": "MUS_HG_DRAGONS_DEN",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,

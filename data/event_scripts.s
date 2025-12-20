@@ -1221,29 +1221,16 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FarOffSeaWest_2_Underwater_1_BlanchedDepths_Entrance/scripts.inc"
 	.include "data/maps/BlanchedDepths_1F_1R/scripts.inc"
 	.include "data/maps/BlanchedDepths_2F_1R/scripts.inc"
-
 	.include "data/maps/MauveHollow_1/scripts.inc"
-
 	.include "data/maps/WellspringChasm_1/scripts.inc"
-
 	.include "data/maps/WellspringChasm_2/scripts.inc"
-
 	.include "data/maps/BygoneVault_1/scripts.inc"
-
 	.include "data/maps/BygoneVault_L1/scripts.inc"
-
 	.include "data/maps/BygoneVault_L2/scripts.inc"
-
 	.include "data/maps/BygoneVault_LU/scripts.inc"
-
 	.include "data/maps/BygoneVault_R1/scripts.inc"
-
 	.include "data/maps/BygoneVault_R2/scripts.inc"
-
 	.include "data/maps/BygoneVault_TreasureRoom/scripts.inc"
-
 	.include "data/maps/BygoneVault_2/scripts.inc"
-
 	.include "data/maps/BygoneVault_2L1/scripts.inc"
-
-	.include "data/maps/BygonVault_2R1/scripts.inc"
+	.include "data/maps/BygoneVault_2R1/scripts.inc"

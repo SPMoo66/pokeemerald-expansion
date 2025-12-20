@@ -1241,3 +1241,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/BygoneVault_R2/scripts.inc"
 
 	.include "data/maps/BygoneVault_TreasureRoom/scripts.inc"
+
+	.include "data/maps/BygoneVault_2/scripts.inc"

@@ -1,7 +1,7 @@
 {
-  "id": "MAP_BYGONE_VAULT_1",
-  "name": "BygoneVault_1",
-  "layout": "LAYOUT_BYGONE_VAULT_1",
+  "id": "MAP_BYGONE_VAULT_2",
+  "name": "BygoneVault_2",
+  "layout": "LAYOUT_BYGONE_VAULT_2",
   "music": "MUS_HG_DRAGONS_DEN",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
@@ -16,20 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
-      "x": 3,
-      "y": 9,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "BygoneVault_FullBowl",
-      "flag": "FLAG_TEMP_1"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
-      "x": 3,
+      "x": 1,
       "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
@@ -42,8 +29,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
-      "x": 13,
-      "y": 9,
+      "x": 1,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 0,
@@ -51,11 +38,11 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BygoneVault_FullBowl",
-      "flag": "FLAG_TEMP_2"
+      "flag": "FLAG_TEMP_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
-      "x": 13,
+      "x": 9,
       "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
@@ -68,20 +55,20 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
-      "x": 8,
-      "y": 1,
+      "x": 9,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "BygoneVault_DoorShut",
-      "flag": "FLAG_TEMP_4"
+      "script": "BygoneVault_FullBowl",
+      "flag": "FLAG_TEMP_2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
-      "x": 5,
+      "x": 3,
       "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
@@ -94,8 +81,47 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
-      "x": 5,
+      "x": 3,
       "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BygoneVault_FullBowl",
+      "flag": "FLAG_TEMP_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "x": 4,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BygoneVault_FullBowl",
+      "flag": "FLAG_TEMP_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "x": 4,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BygoneVault_FullBowl",
+      "flag": "FLAG_TEMP_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "x": 6,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 0,
@@ -120,33 +146,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
-      "x": 6,
-      "y": 5,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "BygoneVault_FullBowl",
-      "flag": "FLAG_TEMP_3"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
-      "x": 10,
-      "y": 5,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "BygoneVault_FullBowl",
-      "flag": "FLAG_TEMP_3"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
-      "x": 10,
+      "x": 7,
       "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
@@ -159,20 +159,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
-      "x": 11,
-      "y": 4,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "BygoneVault_FullBowl",
-      "flag": "FLAG_TEMP_3"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
-      "x": 11,
+      "x": 7,
       "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
@@ -182,48 +169,35 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BygoneVault_FullBowl",
       "flag": "FLAG_TEMP_3"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SAKURA",
-      "x": 8,
-      "y": 10,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "CreatePokemonSprite",
-      "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 8,
-      "y": 16,
+      "x": 5,
+      "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_FAR_OFF_SEA_WEST",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_BYGONE_VAULT_1",
+      "dest_warp_id": "3"
     },
     {
       "x": 1,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_BYGONE_VAULT_L1",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 15,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_BYGONE_VAULT_R1",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 8,
-      "y": 1,
+      "y": 5,
       "elevation": 0,
       "dest_map": "MAP_BYGONE_VAULT_2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_BYGONE_VAULT_2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_BYGONE_VAULT_TREASURE_ROOM",
       "dest_warp_id": "0"
     }
   ],

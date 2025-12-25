@@ -17,7 +17,7 @@ BygoneVault_2R1_MapScripts_MAP_SCRIPT_ON_LOAD_1:
 BygoneVault_RightSwitch2::
 # 10 "data/maps/BygoneVault_2R1/scripts.pory"
 	goto_if_unset FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2, BygoneVault_RightSwitch2_1
-# 22 "data/maps/BygoneVault_2R1/scripts.pory"
+# 29 "data/maps/BygoneVault_2R1/scripts.pory"
 	msgbox Text_FlippedSwitch, MSGBOX_AUTOCLOSE
 	return
 
@@ -41,6 +41,20 @@ BygoneVault_RightSwitch2_4:
 # 17 "data/maps/BygoneVault_2R1/scripts.pory"
 	waitse
 # 18 "data/maps/BygoneVault_2R1/scripts.pory"
+	delay 10
+# 19 "data/maps/BygoneVault_2R1/scripts.pory"
+	setvar VAR_0x8004, 1
+# 20 "data/maps/BygoneVault_2R1/scripts.pory"
+	setvar VAR_0x8005, 1
+# 21 "data/maps/BygoneVault_2R1/scripts.pory"
+	setvar VAR_0x8006, 8
+# 22 "data/maps/BygoneVault_2R1/scripts.pory"
+	setvar VAR_0x8007, 2
+# 23 "data/maps/BygoneVault_2R1/scripts.pory"
+	special ShakeCamera
+# 24 "data/maps/BygoneVault_2R1/scripts.pory"
+	waitstate
+# 25 "data/maps/BygoneVault_2R1/scripts.pory"
 	setflag FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2
 	return
 

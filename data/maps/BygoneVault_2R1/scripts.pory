@@ -15,6 +15,13 @@ script BygoneVault_RightSwitch2 {
 			special (DrawWholeMapView)
 			playse (SE_SWITCH)
 			waitse
+			delay (10)
+			setvar (VAR_0x8004, 1)  # vertical pan
+			setvar (VAR_0x8005, 1)  # horizontal pan
+			setvar (VAR_0x8006, 8) # num shakes
+			setvar (VAR_0x8007, 2)  # shake delay
+			special (ShakeCamera)
+			waitstate
 			setflag (FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2)
 		}
 	}

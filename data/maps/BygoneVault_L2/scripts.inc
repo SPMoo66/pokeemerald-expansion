@@ -17,7 +17,7 @@ BygoneVault_L2_MapScripts_MAP_SCRIPT_ON_LOAD_1:
 BygoneVault_LeftSwitch::
 # 10 "data/maps/BygoneVault_L2/scripts.pory"
 	goto_if_unset FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH, BygoneVault_LeftSwitch_1
-# 26 "data/maps/BygoneVault_L2/scripts.pory"
+# 33 "data/maps/BygoneVault_L2/scripts.pory"
 	msgbox Text_FlippedSwitch, MSGBOX_AUTOCLOSE
 	return
 
@@ -41,22 +41,36 @@ BygoneVault_LeftSwitch_4:
 # 17 "data/maps/BygoneVault_L2/scripts.pory"
 	waitse
 # 18 "data/maps/BygoneVault_L2/scripts.pory"
-	playse SE_DOWNPOUR
+	delay 10
 # 19 "data/maps/BygoneVault_L2/scripts.pory"
-	delay 100
+	setvar VAR_0x8004, 1
 # 20 "data/maps/BygoneVault_L2/scripts.pory"
-	playse SE_DOWNPOUR_STOP
+	setvar VAR_0x8005, 1
 # 21 "data/maps/BygoneVault_L2/scripts.pory"
-	waitse
+	setvar VAR_0x8006, 8
 # 22 "data/maps/BygoneVault_L2/scripts.pory"
+	setvar VAR_0x8007, 2
+# 23 "data/maps/BygoneVault_L2/scripts.pory"
+	special ShakeCamera
+# 24 "data/maps/BygoneVault_L2/scripts.pory"
+	waitstate
+# 25 "data/maps/BygoneVault_L2/scripts.pory"
+	playse SE_DOWNPOUR
+# 26 "data/maps/BygoneVault_L2/scripts.pory"
+	delay 100
+# 27 "data/maps/BygoneVault_L2/scripts.pory"
+	playse SE_DOWNPOUR_STOP
+# 28 "data/maps/BygoneVault_L2/scripts.pory"
+	waitse
+# 29 "data/maps/BygoneVault_L2/scripts.pory"
 	setflag FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH
 	return
 
 
 Text_FlipSwitch::
-# 30 "data/maps/BygoneVault_L2/scripts.pory"
+# 37 "data/maps/BygoneVault_L2/scripts.pory"
 	.string "Flip the switch?$"
 
 Text_FlippedSwitch::
-# 34 "data/maps/BygoneVault_L2/scripts.pory"
+# 41 "data/maps/BygoneVault_L2/scripts.pory"
 	.string "The switch has been flipped.$"

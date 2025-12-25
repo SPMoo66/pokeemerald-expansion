@@ -57,7 +57,7 @@ BygoneVault_2_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 29 "data/maps/BygoneVault_2/scripts.pory"
 	goto_if_set FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH_2, BygoneVault_2_MapScripts_MAP_SCRIPT_ON_TRANSITION_10
 BygoneVault_2_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
-# 32 "data/maps/BygoneVault_2/scripts.pory"
+# 33 "data/maps/BygoneVault_2/scripts.pory"
 	goto_if_set FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_2_OPEN, BygoneVault_2_MapScripts_MAP_SCRIPT_ON_TRANSITION_14
 	return
 
@@ -74,6 +74,8 @@ BygoneVault_2_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
 BygoneVault_2_MapScripts_MAP_SCRIPT_ON_TRANSITION_8:
 # 30 "data/maps/BygoneVault_2/scripts.pory"
 	setvar VAR_TEMP_2, 1
+# 31 "data/maps/BygoneVault_2/scripts.pory"
+	clearflag FLAG_TEMP_3
 	goto BygoneVault_2_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 
 BygoneVault_2_MapScripts_MAP_SCRIPT_ON_TRANSITION_9:
@@ -87,10 +89,8 @@ BygoneVault_2_MapScripts_MAP_SCRIPT_ON_TRANSITION_10:
 	goto BygoneVault_2_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 
 BygoneVault_2_MapScripts_MAP_SCRIPT_ON_TRANSITION_14:
-# 33 "data/maps/BygoneVault_2/scripts.pory"
-	clearflag FLAG_TEMP_3
 # 34 "data/maps/BygoneVault_2/scripts.pory"
-	setflag FLAG_TEMP_4
+	clearflag FLAG_TEMP_3
 	return
 
 BygoneVault_2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
@@ -177,6 +177,8 @@ BygoneVault_2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_5:
 	special RemoveCameraObject
 # 86 "data/maps/BygoneVault_2/scripts.pory"
 	setflag FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_2_OPEN
+# 87 "data/maps/BygoneVault_2/scripts.pory"
+	removeobject 13
 	return
 
 BygoneVault_2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_3:

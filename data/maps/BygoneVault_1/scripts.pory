@@ -28,10 +28,10 @@ mapscripts BygoneVault_1_MapScripts {
 		}
 		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH) && flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH) && !flag(FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN)) {
 			setvar (VAR_TEMP_2, 1)
+			clearflag (FLAG_TEMP_3)
 		}
 		if (flag(FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN)) {
 			clearflag (FLAG_TEMP_3)
-			setflag (FLAG_TEMP_4)
 		}
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [
@@ -84,6 +84,7 @@ mapscripts BygoneVault_1_MapScripts {
 			waitmovement (0)
 			special (RemoveCameraObject)
 			setflag (FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN)
+			removeobject (5)
 		}
 	]
 }
@@ -102,4 +103,12 @@ script CreatePokemonSprite {
 	setflag (FLAG_PLAY_AS_FIRST_MON_IN_PARTY)
 	setflag (FLAG_SEMI_PERM_HIDE_FOLLOWER)
 	warpsilent (MAP_BYGONE_VAULT_1, 8, 11)
+}
+
+script Script_RedrawBygoneVault1Map {
+	if (!flag(FLAG_TEMP_6) && flag(FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN)) {
+		setmetatile (8, 1, 0x0DD, FALSE)
+		special (DrawWholeMapView)
+		setflag (FLAG_TEMP_6)
+	}
 }

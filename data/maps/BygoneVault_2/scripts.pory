@@ -28,10 +28,10 @@ mapscripts BygoneVault_2_MapScripts {
 		}
 		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH_2) && flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2) && !flag(FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_2_OPEN)) {
 			setvar (VAR_TEMP_2, 1)
+			clearflag (FLAG_TEMP_3)
 		}
 		if (flag(FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_2_OPEN)) {
 			clearflag (FLAG_TEMP_3)
-			setflag (FLAG_TEMP_4)
 		}
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [
@@ -84,6 +84,7 @@ mapscripts BygoneVault_2_MapScripts {
 			waitmovement (0)
 			special (RemoveCameraObject)
 			setflag (FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_2_OPEN)
+			removeobject (13)
 		}
 	]
 }

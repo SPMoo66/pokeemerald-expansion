@@ -57,7 +57,7 @@ BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 29 "data/maps/BygoneVault_1/scripts.pory"
 	goto_if_set FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH, BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_10
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
-# 32 "data/maps/BygoneVault_1/scripts.pory"
+# 33 "data/maps/BygoneVault_1/scripts.pory"
 	goto_if_set FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN, BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_14
 	return
 
@@ -74,6 +74,8 @@ BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_8:
 # 30 "data/maps/BygoneVault_1/scripts.pory"
 	setvar VAR_TEMP_2, 1
+# 31 "data/maps/BygoneVault_1/scripts.pory"
+	clearflag FLAG_TEMP_3
 	goto BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_9:
@@ -87,10 +89,8 @@ BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_10:
 	goto BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_14:
-# 33 "data/maps/BygoneVault_1/scripts.pory"
-	clearflag FLAG_TEMP_3
 # 34 "data/maps/BygoneVault_1/scripts.pory"
-	setflag FLAG_TEMP_4
+	clearflag FLAG_TEMP_3
 	return
 
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
@@ -177,6 +177,8 @@ BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_5:
 	special RemoveCameraObject
 # 86 "data/maps/BygoneVault_1/scripts.pory"
 	setflag FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN
+# 87 "data/maps/BygoneVault_1/scripts.pory"
+	removeobject 5
 	return
 
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_3:
@@ -199,39 +201,59 @@ BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_7:
 
 
 BygoneVault_FullBowl::
-# 92 "data/maps/BygoneVault_1/scripts.pory"
+# 93 "data/maps/BygoneVault_1/scripts.pory"
 	msgbox BygoneVault_FullBowl_Text_0, MSGBOX_AUTOCLOSE
 	return
 
 
 BygoneVault_DoorShut::
-# 96 "data/maps/BygoneVault_1/scripts.pory"
+# 97 "data/maps/BygoneVault_1/scripts.pory"
 	msgbox BygoneVault_DoorShut_Text_0, MSGBOX_AUTOCLOSE
 	return
 
 
 CreatePokemonSprite::
-# 100 "data/maps/BygoneVault_1/scripts.pory"
-	msgbox CreatePokemonSprite_Text_0, MSGBOX_AUTOCLOSE
 # 101 "data/maps/BygoneVault_1/scripts.pory"
-	setflag FLAG_BLOCK_PLAYER_ACTIONS
+	msgbox CreatePokemonSprite_Text_0, MSGBOX_AUTOCLOSE
 # 102 "data/maps/BygoneVault_1/scripts.pory"
-	setflag FLAG_PLAY_AS_FIRST_MON_IN_PARTY
+	setflag FLAG_BLOCK_PLAYER_ACTIONS
 # 103 "data/maps/BygoneVault_1/scripts.pory"
-	setflag FLAG_SEMI_PERM_HIDE_FOLLOWER
+	setflag FLAG_PLAY_AS_FIRST_MON_IN_PARTY
 # 104 "data/maps/BygoneVault_1/scripts.pory"
+	setflag FLAG_SEMI_PERM_HIDE_FOLLOWER
+# 105 "data/maps/BygoneVault_1/scripts.pory"
 	warpsilent MAP_BYGONE_VAULT_1, 8, 11
 	return
 
 
+Script_RedrawBygoneVault1Map::
+# 109 "data/maps/BygoneVault_1/scripts.pory"
+	goto_if_unset FLAG_TEMP_6, Script_RedrawBygoneVault1Map_2
+	return
+
+Script_RedrawBygoneVault1Map_1:
+# 110 "data/maps/BygoneVault_1/scripts.pory"
+	setmetatile 8, 1, 0x0DD, FALSE
+# 111 "data/maps/BygoneVault_1/scripts.pory"
+	special DrawWholeMapView
+# 112 "data/maps/BygoneVault_1/scripts.pory"
+	setflag FLAG_TEMP_6
+	return
+
+Script_RedrawBygoneVault1Map_2:
+# 109 "data/maps/BygoneVault_1/scripts.pory"
+	goto_if_set FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN, Script_RedrawBygoneVault1Map_1
+	return
+
+
 BygoneVault_FullBowl_Text_0:
-# 92 "data/maps/BygoneVault_1/scripts.pory"
+# 93 "data/maps/BygoneVault_1/scripts.pory"
 	.string "The bowl has filled with water.$"
 
 BygoneVault_DoorShut_Text_0:
-# 96 "data/maps/BygoneVault_1/scripts.pory"
+# 97 "data/maps/BygoneVault_1/scripts.pory"
 	.string "The door is firmly sealed shut.$"
 
 CreatePokemonSprite_Text_0:
-# 100 "data/maps/BygoneVault_1/scripts.pory"
+# 101 "data/maps/BygoneVault_1/scripts.pory"
 	.string "You are now a Pokemon.$"

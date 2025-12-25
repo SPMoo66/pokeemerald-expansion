@@ -169,6 +169,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BygoneVault_FullBowl",
       "flag": "FLAG_TEMP_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "x": 5,
+      "y": 1,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BygoneVault_DoorShut",
+      "flag": "FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_2_OPEN"
     }
   ],
   "warp_events": [

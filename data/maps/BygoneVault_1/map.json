@@ -77,7 +77,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BygoneVault_DoorShut",
-      "flag": "FLAG_TEMP_4"
+      "flag": "FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
@@ -227,6 +227,16 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 2,
+      "elevation": 0,
+      "var": "FLAG_TEMP_6",
+      "var_value": "0",
+      "script": "Script_RedrawBygoneVault1Map"
+    }
+  ],
   "bg_events": []
 }

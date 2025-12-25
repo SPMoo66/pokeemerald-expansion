@@ -1,1 +1,89 @@
-mapscripts BygoneVault_2_MapScripts {}
+mapscripts BygoneVault_2_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH_2)) {
+			setmetatile (1, 7, 0x0C6, TRUE)
+		}
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2)) {
+			setmetatile (9, 7, 0x0C6, TRUE)
+		}
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_2_OPEN)) {
+			  # door
+			setmetatile (5, 1, 0x0DD, FALSE)
+			  # big fountains
+			setmetatile (3, 4, 0x0D2, TRUE)
+			setmetatile (4, 4, 0x0D3, TRUE)
+			setmetatile (6, 4, 0x0D2, TRUE)
+			setmetatile (7, 4, 0x0D3, TRUE)
+		}
+	}
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_1)
+		setflag (FLAG_TEMP_2)
+		setflag (FLAG_TEMP_3)
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH_2)) {
+			clearflag (FLAG_TEMP_1)
+		}
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2)) {
+			clearflag (FLAG_TEMP_2)
+		}
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH_2) && flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2) && !flag(FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_2_OPEN)) {
+			setvar (VAR_TEMP_2, 1)
+		}
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_2_OPEN)) {
+			clearflag (FLAG_TEMP_3)
+			setflag (FLAG_TEMP_4)
+		}
+	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_TEMP_2, 1 {
+			setvar (VAR_TEMP_2, 0)
+			special (SpawnCameraObject)
+			getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+			switch (var(VAR_TEMP_0)) {
+				case 1:   # left side
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkRight3)
+					waitmovement (0)
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkDiagNE)
+				default:  # right side
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkLeft3)
+					waitmovement (0)
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkDiagNW)
+			}
+			waitmovement (0)
+			playse (SE_DOWNPOUR)
+			delay (30)
+			playse (SE_DOWNPOUR_STOP)
+			waitse
+			setmetatile (3, 4, 0x0D2, TRUE)
+			setmetatile (4, 4, 0x0D3, TRUE)
+			setmetatile (6, 4, 0x0D2, TRUE)
+			setmetatile (7, 4, 0x0D3, TRUE)
+			special (DrawWholeMapView)
+			delay (70)
+			setvar (VAR_0x8004, 1)  # vertical pan
+			setvar (VAR_0x8005, 1)  # horizontal pan
+			setvar (VAR_0x8006, 12) # num shakes
+			setvar (VAR_0x8007, 2)  # shake delay
+			special (ShakeCamera)
+			waitstate
+			setmetatile (5, 1, 0x0DD, FALSE)
+			special (DrawWholeMapView)
+			delay (10)
+			playfanfare (MUS_DP_TV_END)
+			waitfanfare
+			switch (var(VAR_TEMP_0)) {
+				case 1:   # left side
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkDiagSW)
+					waitmovement (0)
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkLeft3)
+				default:  # right side
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkDiagSE)
+					waitmovement (0)
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkRight3)
+			}
+			waitmovement (0)
+			special (RemoveCameraObject)
+			setflag (FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_2_OPEN)
+		}
+	]
+}

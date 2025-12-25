@@ -80,6 +80,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_SOUTH",
       "script": "HopDownLedge"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 14,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "BygoneVault_LeftSwitch2"
     }
   ]
 }

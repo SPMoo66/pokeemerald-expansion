@@ -1,1 +1,24 @@
-mapscripts BygoneVault_2R1_MapScripts {}
+mapscripts BygoneVault_2R1_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2)) {
+			setmetatile (6, 2, 0x2A9, TRUE)
+		}
+	}
+}
+
+script BygoneVault_RightSwitch2 {
+	if (!flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2)) {
+		msgbox (Text_FlipSwitch, MSGBOX_YESNO)
+		if (var(VAR_RESULT)) {
+			closemessage
+			setmetatile (6, 2, 0x2A9, TRUE)
+			special (DrawWholeMapView)
+			playse (SE_SWITCH)
+			waitse
+			setflag (FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2)
+		}
+	}
+	else {
+		msgbox (Text_FlippedSwitch, MSGBOX_AUTOCLOSE)
+	}
+}

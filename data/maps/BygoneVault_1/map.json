@@ -3,7 +3,7 @@
   "name": "BygoneVault_1",
   "layout": "LAYOUT_BYGONE_VAULT_1",
   "music": "MUS_HG_DRAGONS_DEN",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_BYGONE_VAULT",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

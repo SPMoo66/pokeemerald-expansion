@@ -40,3 +40,11 @@ script IllusoryGrotto_MonsterCommon2_Exp1 {
 	applymovement (LOCALID_PLAYER, Common_Movement_LockFacingDirection)
 	waitmovement (0)
 }
+
+text Text_TooDarkLetsTurnBack {
+	"…\n"
+	"…\l"
+	"…\l"
+	"It appears to be too dark to continue…\l"
+	"Let's turn back."
+}

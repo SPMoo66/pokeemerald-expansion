@@ -88,3 +88,11 @@ IllusoryGrottoMovableRock_Exp1_Text_1:
 	.string "… … …\p"
 	.string "… … …\p"
 	.string "{PLAYER}! Try a different side!$"
+
+Text_TooDarkLetsTurnBack::
+# 44 "data/expansion_1/global.pory"
+	.string "…\n"
+	.string "…\l"
+	.string "…\l"
+	.string "It appears to be too dark to continue…\l"
+	.string "Let's turn back.$"

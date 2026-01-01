@@ -20,7 +20,22 @@
     }
   ],
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 54,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_SUBMERGED_CAVE_1F_1R",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 71,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_SUBMERGED_CAVE_2F_1R",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": [
     {

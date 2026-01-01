@@ -92,8 +92,8 @@
       "x": 7,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_SUBMERGED_CAVE_2F_1R",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_2",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

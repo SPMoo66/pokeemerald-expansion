@@ -8,11 +8,14 @@
 #include "task.h"
 #include "malloc.h"
 #include "bg.h"
+#include "caps.h"
+#include "event_data.h"
 #include "gpu_regs.h"
 #include "window.h"
 #include "text.h"
 #include "text_window.h"
 #include "international_string_util.h"
+#include "string_util.h"
 #include "strings.h"
 #include "gba/m4a_internal.h"
 #include "constants/rgb.h"
@@ -329,7 +332,7 @@ static const u8 sText_Desc_Save[]               = _("Save your settings.");
 static const u8 sText_Desc_TextSpeed[]          = _("Choose one of the four text-display\nspeeds.");
 static const u8 sText_Desc_BattleScene_On[]     = _("Show the Pokémon battle animations.");
 static const u8 sText_Desc_BattleScene_Off[]    = _("Skip the Pokémon battle animations.");
-static const u8 sText_Desc_BattleStyle_Shift[]  = _("Get the option to switch your\nPOKéMON after the enemies faints.");
+static const u8 sText_Desc_BattleStyle_Shift[]  = _("Get the option to switch your\nPokémon after the enemies faints.");
 static const u8 sText_Desc_BattleStyle_Set[]    = _("No free switch after fainting the\nenemies Pokémon.");
 static const u8 sText_Desc_SoundMono[]          = _("Sound is the same in all speakers.\nRecommended for original hardware.");
 static const u8 sText_Desc_SoundStereo[]        = _("Play the left and right audio channel\nseperatly. Great with headphones.");
@@ -360,7 +363,7 @@ static const u8 sText_Desc_OverworldCallsOn[]   = _("Trainers will be able to ca
 static const u8 sText_Desc_OverworldCallsOff[]  = _("You will not receive calls.\nSpecial events will still occur.");
 static const u8 sText_Desc_MusicRegion[]        = _("Choose battle music from any\nlisted region.");
 static const u8 sText_Desc_SurfMusic[]          = _("Choose whether music changes\nwhile surfing.");
-static const u8 sText_Desc_LevelCapsOn[]        = _("Level caps are enabled.\nCaps increase after major events.");
+static const u8 sText_Desc_LevelCapsOn[]        = _("Level caps are enabled.\nCurrent level cap: {STR_VAR_1}.");
 static const u8 sText_Desc_LevelCapsOff[]       = _("Level caps are disabled.");
 static const u8 sText_Desc_LevelSync[]          = _("Choose whether trainer Pokémon\nlevels are synced to you.");
 static const u8 sText_Desc_AnimateAfterKO[]     = _("Choose whether Pokémon animate\nafter getting a knockout.");
@@ -410,6 +413,7 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledCustom[MENUITEM_CUSTOM
     [MENUITEM_CUSTOM_CANCEL]           = sText_Empty,
 };
 
+
 static const u8 *const OptionTextDescription(void)
 {
     u8 menuItem = sOptions->menuCursor[sOptions->submenu];
@@ -430,6 +434,18 @@ static const u8 *const OptionTextDescription(void)
         selection = sOptions->sel_custom[menuItem];
         if (menuItem == MENUITEM_CUSTOM_HP_BAR || menuItem == MENUITEM_CUSTOM_BATTLE_SPEED || menuItem == MENUITEM_CUSTOM_OVERWORLD_SPEED || menuItem == MENUITEM_CUSTOM_MUSIC_REGION)
             selection = 0;
+        if (menuItem == MENUITEM_CUSTOM_LEVEL_CAPS)
+        {
+            if (selection == 1)
+                return sText_Desc_LevelCapsOff;
+            else
+		    {
+                u8 currentLevelCap = GetCurrentLevelCap();
+                ConvertIntToDecimalStringN(gStringVar1, currentLevelCap, STR_CONV_MODE_LEFT_ALIGN, 2);
+                StringExpandPlaceholders(gStringVar4, sText_Desc_LevelCapsOn);
+                return gStringVar4;
+            }
+        }
         return sOptionMenuItemDescriptionsCustom[menuItem][selection];
     }
 	return FALSE;
@@ -475,7 +491,6 @@ static const u8 sText_TopBar_Main[]          = _("General");
 static const u8 sText_TopBar_Main_Right[]    = _("{R_BUTTON}Custom");
 static const u8 sText_TopBar_Custom[]        = _("Custom");
 static const u8 sText_TopBar_Custom_Left[]   = _("{L_BUTTON}General");
-static const u8 sText_TopBar_VersionNumber[] = _("1.2.0");
 static void DrawTopBarText(void)
 {
     const u8 color[3] = { TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_WHITE, TEXT_COLOR_OPTIONS_GRAY_FG };
@@ -486,12 +501,12 @@ static void DrawTopBarText(void)
         case MENU_MAIN:
             AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 105, 1, color, 0, sText_TopBar_Main);
             AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 190, 1, color, 0, sText_TopBar_Main_Right);
-            AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 12, 1, color, 0, sText_TopBar_VersionNumber);
+            AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 12, 1, color, 0, gText_EmeralbodyVersionNumber);
             break;
         case MENU_CUSTOM:
             AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 105, 1, color, 0, sText_TopBar_Custom);
             AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 2, 1, color, 0, sText_TopBar_Custom_Left);
-            AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 200, 1, color, 0, sText_TopBar_VersionNumber);
+            AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 200, 1, color, 0, gText_EmeralbodyVersionNumber);
             break;
     }
     PutWindowTilemap(WIN_TOPBAR);

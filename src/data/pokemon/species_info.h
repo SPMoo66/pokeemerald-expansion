@@ -681,6 +681,15 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconPalIndex = 0,
         SHADOW(0, 1, SHADOW_SIZE_S)
         FOOTPRINT(Slugma)
+        OVERWORLD(
+            sPicTable_Slugma,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SLITHER,
+            sAnimTable_Following,
+            gOverworldPalette_Slugma,
+            gShinyOverworldPalette_Slugma
+        )
         .levelUpLearnset = sSludgmaLevelUpLearnset,
         .teachableLearnset = sSludgmaTeachableLearnset,
         .eggMoveLearnset = sSludgmaEggMoveLearnset,
@@ -751,6 +760,15 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconPalIndex = 0,
         SHADOW(-1, 8, SHADOW_SIZE_L)
         FOOTPRINT(Magcargo)
+        OVERWORLD(
+            sPicTable_Magcargo,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SLITHER,
+            sAnimTable_Following,
+            gOverworldPalette_Magcargo,
+            gShinyOverworldPalette_Magcargo
+        )
         .levelUpLearnset = sMudcargoLevelUpLearnset,
         .teachableLearnset = sMudcargoTeachableLearnset,
     },

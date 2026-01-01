@@ -2542,4 +2542,7 @@ extern const u8 gText_CannotSendMonToBoxHM[];
 extern const u8 gText_CannotSendMonToBoxActive[];
 extern const u8 gText_CannotSendMonToBoxPartner[];
 
+// Emeralbody Version
+extern const u8 gText_EmeralbodyVersionNumber[];
+
 #endif // GUARD_STRINGS_H

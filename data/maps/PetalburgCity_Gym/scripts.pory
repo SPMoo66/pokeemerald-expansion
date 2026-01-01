@@ -110,6 +110,7 @@ PetalburgCity_Gym_EventScript_BonusDose::
 	speakername (CommonText_Dad)
 	msgbox PetalburgCity_Gym_Text_DadBonusDose, MSGBOX_DEFAULT
 	call IncreasePokevialSize
+	pokevialrefill
 	return
 
 PetalburgCity_Gym_Movement_WallyExitGym:

@@ -228,6 +228,15 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "CROBAT": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_BRAVE_BIRD"
+	]
+  },
   "GOLDUCK": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -607,7 +616,9 @@
   "GYARADOS": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+        "MOVE_IRON_HEAD"
+    ],
     "EggMoves": [],
     "TutorMoves": [
         "MOVE_WAVE_CRASH",
@@ -1237,7 +1248,8 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
-        "MOVE_VACUUM_WAVE"
+        "MOVE_VACUUM_WAVE",
+        "MOVE_SLUDGE_BOMB"
 	],
     "EggMoves": [],
     "TutorMoves": [
@@ -1262,6 +1274,24 @@
         "MOVE_PSYCHO_BOOST",
 		"MOVE_FLEUR_CANNON"
     ]
+  },
+  "SHROOMISH": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_DIG"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "BRELOOM": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_DIG"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
   },
   "NINJASK": {
     "LevelMoves": [],
@@ -1540,6 +1570,15 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "KECLEON": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_SCALE_SHOT"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "BANETTE": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -1566,7 +1605,17 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-        "MOVE_PSYCHO_BOOST"
+        "MOVE_PSYCHO_BOOST",
+        "MOVE_METEOR_BEAM"
+	]
+  },
+  "ABSOL": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_SHADOW_FORCE"
 	]
   },
   "SNORUNT": {
@@ -1713,6 +1762,26 @@
 		"MOVE_BEHEMOTH_BASH",
 		"MOVE_BEHEMOTH_BLADE"
     ]
+  },
+  "STARAVIA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_VACUUM_WAVE",
+        "MOVE_BLAZE_KICK"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "STARAPTOR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_VACUUM_WAVE",
+        "MOVE_BLAZE_KICK"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
   },
   "SHINX": {
     "LevelMoves": [],
@@ -2137,7 +2206,8 @@
 	],
     "EggMoves": [],
     "TutorMoves": [
-        "MOVE_ROAR_OF_TIME"
+        "MOVE_ROAR_OF_TIME",
+        "MOVE_SHADOW_FORCE"
     ]
   },
   "ARCEUS": {
@@ -2455,7 +2525,9 @@
         "MOVE_POWER_GEM"
 	],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+        "MOVE_SHADOW_FORCE"
+    ]
   },
   "CARRACOSTA": {
     "LevelMoves": [],
@@ -2775,7 +2847,8 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
-        "MOVE_BLAZE_KICK"
+        "MOVE_BLAZE_KICK",
+        "MOVE_IRON_HEAD"
 	],
     "EggMoves": [],
     "TutorMoves": []
@@ -2830,6 +2903,33 @@
     "PreEvoMoves": [],
     "TMMoves": [
         "MOVE_VACUUM_WAVE"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "FLETCHINDER": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_VACUUM_WAVE"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "TALONFLAME": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_VACUUM_WAVE"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "PYROAR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_EARTH_POWER"
 	],
     "EggMoves": [],
     "TutorMoves": []
@@ -2987,8 +3087,8 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-		"MOVE_DIAMOND_STORM"
-	]
+        "MOVE_DIAMOND_STORM"
+    ]
   },
   "GOODRA": {
     "LevelMoves": [],
@@ -2999,15 +3099,15 @@
 	],
     "EggMoves": [],
     "TutorMoves": [
-		"MOVE_STEAM_ERUPTION"
-	]
+        "MOVE_STEAM_ERUPTION"
+    ]
   },
   "GOODRA_HISUI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
         "MOVE_VACUUM_WAVE"
-	],
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -3017,8 +3117,8 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-		"MOVE_BEHEMOTH_BLADE"
-	]
+        "MOVE_BEHEMOTH_BLADE"
+    ]
   },
   "TREVENANT": {
     "LevelMoves": [],
@@ -3043,7 +3143,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
         "MOVE_ICICLE_CRASH"
-	],
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -3054,7 +3154,7 @@
         "MOVE_SMART_STRIKE",
         "MOVE_POWER_GEM",
         "MOVE_ICICLE_CRASH"
-	],
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -3065,13 +3165,15 @@
     "EggMoves": [],
     "TutorMoves": [
         "MOVE_BLEAKWIND_STORM",
-		"MOVE_AEROBLAST"
+        "MOVE_AEROBLAST"
     ]
   },
   "YVELTAL": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+        "MOVE_VACUUM_WAVE"
+    ],
     "EggMoves": [],
     "TutorMoves": [
         "MOVE_SHADOW_FORCE"
@@ -3218,6 +3320,15 @@
 		"MOVE_FLEUR_CANNON"
 	]
   },
+  "GOLISOPOD": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_IRON_HEAD"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "TURTONATOR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -3235,6 +3346,15 @@
 	],
     "EggMoves": [],
     "TutorMoves": []
+  },
+  "MIMIKYU": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_SHADOW_FORCE"
+    ]
   },
   "DHELMISE": {
     "LevelMoves": [],
@@ -3345,7 +3465,9 @@
         "MOVE_BLAZE_KICK"
 	],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+        "MOVE_SHADOW_FORCE"
+    ]
   },
   "STAKATAKA": {
     "LevelMoves": [],
@@ -3455,12 +3577,21 @@
         "MOVE_PSYCHO_BOOST"
     ]
   },
+  "NICKIT": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_DARK_PULSE"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "YAMPER": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
         "MOVE_ZING_ZAP"
-	],
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -3610,6 +3741,17 @@
         "MOVE_POWER_GEM",
         "MOVE_HONE_CLAWS"
 	],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_SHADOW_FORCE"
+    ]
+  },
+  "FALINKS": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_IRON_HEAD"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -3877,7 +4019,8 @@
 	],
     "EggMoves": [],
     "TutorMoves": [
-		"MOVE_BEHEMOTH_BLADE"
+		"MOVE_BEHEMOTH_BLADE",
+		"MOVE_SHADOW_FORCE"
 	]
   },
   "BELLIBOLT": {
@@ -4011,7 +4154,9 @@
         "MOVE_VACUUM_WAVE"
 	],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+        "MOVE_SHADOW_FORCE"
+	]
   },
   "FARIGIRAF": {
     "LevelMoves": [],
@@ -4176,10 +4321,12 @@
   "GHOLDENGO": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+        "MOVE_SURF"
+    ],
     "EggMoves": [],
     "TutorMoves": [
-		"MOVE_DIAMOND_STORM"
+        "MOVE_DIAMOND_STORM"
 	]
   },
   "ROARING_MOON": {
@@ -6601,7 +6748,8 @@
         "MOVE_SMART_STRIKE",
         "MOVE_FLASH_CANNON",
         "MOVE_STRENGTH",
-        "MOVE_ROCK_SMASH"
+        "MOVE_ROCK_SMASH",
+        "MOVE_ZEN_HEADBUTT"
       ],
       "EggMoves": [],
       "TutorMoves": [
@@ -6638,14 +6786,15 @@
         "MOVE_SMART_STRIKE",
         "MOVE_FLASH_CANNON",
         "MOVE_STRENGTH",
-        "MOVE_ROCK_SMASH"
+        "MOVE_ROCK_SMASH",
+        "MOVE_ZEN_HEADBUTT"
       ],
       "EggMoves": [],
       "TutorMoves": [
         "MOVE_TEMPER_FLARE",
         "MOVE_SKITTER_SMACK",
         "MOVE_STEEL_BEAM",
-		"MOVE_BEHEMOTH_BASH"
+        "MOVE_BEHEMOTH_BASH"
       ]
     },
     "TREVENANT_EMERIBIAN": {

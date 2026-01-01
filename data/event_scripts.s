@@ -892,7 +892,7 @@ gText_SandstormIsVicious::
 	.string "It's impossible to keep going.$"
 
 gText_SelectWithoutRegisteredItem::
-	.string "Up to four items in the BAG can be\n"
+	.string "Up to four items in the Bag can be\n"
 	.string "registered to Select for easy use.$"
 
 gText_PokemonTrainerSchoolEmail::
@@ -924,8 +924,8 @@ gText_MonsHealedShouldBuyPotions::
 	.string "If your Pokémon's energy, HP,\n"
 	.string "is down, please come see us.\p"
 	.string "If you're planning to go far in the\n"
-	.string "field, you should buy some POTIONS\l"
-	.string "at the Pokémon MART.\p"
+	.string "field, you should buy some Potions\l"
+	.string "at the Pokémon Mart.\p"
 	.string "We hope you excel!$"
 
 gText_MonsHealed::

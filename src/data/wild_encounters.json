@@ -12326,7 +12326,7 @@
           "map": "MAP_INFERNAL_DRYLANDS",
           "base_label": "gInfernalDrylands0",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 5,

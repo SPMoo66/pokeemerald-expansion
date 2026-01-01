@@ -491,7 +491,6 @@ static const u8 sText_TopBar_Main[]          = _("General");
 static const u8 sText_TopBar_Main_Right[]    = _("{R_BUTTON}Custom");
 static const u8 sText_TopBar_Custom[]        = _("Custom");
 static const u8 sText_TopBar_Custom_Left[]   = _("{L_BUTTON}General");
-static const u8 sText_TopBar_VersionNumber[] = _("1.3.0");
 static void DrawTopBarText(void)
 {
     const u8 color[3] = { TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_WHITE, TEXT_COLOR_OPTIONS_GRAY_FG };
@@ -502,12 +501,12 @@ static void DrawTopBarText(void)
         case MENU_MAIN:
             AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 105, 1, color, 0, sText_TopBar_Main);
             AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 190, 1, color, 0, sText_TopBar_Main_Right);
-            AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 12, 1, color, 0, sText_TopBar_VersionNumber);
+            AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 12, 1, color, 0, gText_EmeralbodyVersionNumber);
             break;
         case MENU_CUSTOM:
             AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 105, 1, color, 0, sText_TopBar_Custom);
             AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 2, 1, color, 0, sText_TopBar_Custom_Left);
-            AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 200, 1, color, 0, sText_TopBar_VersionNumber);
+            AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 200, 1, color, 0, gText_EmeralbodyVersionNumber);
             break;
     }
     PutWindowTilemap(WIN_TOPBAR);

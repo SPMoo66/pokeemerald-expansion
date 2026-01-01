@@ -815,6 +815,7 @@ static void Task_DisplayMainMenu(u8 taskId)
                 FillWindowPixelBuffer(1, PIXEL_FILL(0xA));
                 AddTextPrinterParameterized3(0, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuNewGame);
                 AddTextPrinterParameterized3(1, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuOption);
+                AddTextPrinterParameterized3(4, FONT_NORMAL, GetStringRightAlignXOffset(FONT_NORMAL, gText_EmeralbodyVersionNumber, 0xD0), 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_EmeralbodyVersionNumber);
                 PutWindowTilemap(0);
                 PutWindowTilemap(1);
                 CopyWindowToVram(0, COPYWIN_GFX);
@@ -829,6 +830,7 @@ static void Task_DisplayMainMenu(u8 taskId)
                 AddTextPrinterParameterized3(2, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuContinue);
                 AddTextPrinterParameterized3(3, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuNewGame);
                 AddTextPrinterParameterized3(4, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuOption);
+                AddTextPrinterParameterized3(4, FONT_NORMAL, GetStringRightAlignXOffset(FONT_NORMAL, gText_EmeralbodyVersionNumber, 0xD0), 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_EmeralbodyVersionNumber);
                 MainMenu_FormatSavegameText();
                 PutWindowTilemap(2);
                 PutWindowTilemap(3);
@@ -849,6 +851,7 @@ static void Task_DisplayMainMenu(u8 taskId)
                 AddTextPrinterParameterized3(3, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuNewGame);
                 AddTextPrinterParameterized3(4, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuMysteryGift);
                 AddTextPrinterParameterized3(5, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuOption);
+                AddTextPrinterParameterized3(4, FONT_NORMAL, GetStringRightAlignXOffset(FONT_NORMAL, gText_EmeralbodyVersionNumber, 0xD0), 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_EmeralbodyVersionNumber);
                 MainMenu_FormatSavegameText();
                 PutWindowTilemap(2);
                 PutWindowTilemap(3);
@@ -874,6 +877,7 @@ static void Task_DisplayMainMenu(u8 taskId)
                 AddTextPrinterParameterized3(4, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuMysteryGift);
                 AddTextPrinterParameterized3(5, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuMysteryEvents);
                 AddTextPrinterParameterized3(6, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuOption);
+                AddTextPrinterParameterized3(4, FONT_NORMAL, GetStringRightAlignXOffset(FONT_NORMAL, gText_EmeralbodyVersionNumber, 0xD0), 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_EmeralbodyVersionNumber);
                 MainMenu_FormatSavegameText();
                 PutWindowTilemap(2);
                 PutWindowTilemap(3);

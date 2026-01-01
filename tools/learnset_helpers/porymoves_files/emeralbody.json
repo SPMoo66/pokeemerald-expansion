@@ -4303,10 +4303,12 @@
   "GHOLDENGO": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+        "MOVE_SURF"
+    ],
     "EggMoves": [],
     "TutorMoves": [
-		"MOVE_DIAMOND_STORM"
+        "MOVE_DIAMOND_STORM"
 	]
   },
   "ROARING_MOON": {

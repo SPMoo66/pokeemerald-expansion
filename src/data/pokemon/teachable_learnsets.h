@@ -41367,6 +41367,7 @@ static const u16 sGholdengoTeachableLearnset[] = {
     MOVE_SHADOW_BALL,
     MOVE_SLEEP_TALK,
     MOVE_STEEL_BEAM,
+    MOVE_SURF,
     MOVE_THIEF,
     MOVE_THUNDER,
     MOVE_THUNDERBOLT,

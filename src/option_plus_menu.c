@@ -8,11 +8,14 @@
 #include "task.h"
 #include "malloc.h"
 #include "bg.h"
+#include "caps.h"
+#include "event_data.h"
 #include "gpu_regs.h"
 #include "window.h"
 #include "text.h"
 #include "text_window.h"
 #include "international_string_util.h"
+#include "string_util.h"
 #include "strings.h"
 #include "gba/m4a_internal.h"
 #include "constants/rgb.h"
@@ -360,7 +363,7 @@ static const u8 sText_Desc_OverworldCallsOn[]   = _("Trainers will be able to ca
 static const u8 sText_Desc_OverworldCallsOff[]  = _("You will not receive calls.\nSpecial events will still occur.");
 static const u8 sText_Desc_MusicRegion[]        = _("Choose battle music from any\nlisted region.");
 static const u8 sText_Desc_SurfMusic[]          = _("Choose whether music changes\nwhile surfing.");
-static const u8 sText_Desc_LevelCapsOn[]        = _("Level caps are enabled.\nCaps increase after major events.");
+static const u8 sText_Desc_LevelCapsOn[]        = _("Level caps are enabled.\nCurrent level cap: {STR_VAR_1}.");
 static const u8 sText_Desc_LevelCapsOff[]       = _("Level caps are disabled.");
 static const u8 sText_Desc_LevelSync[]          = _("Choose whether trainer Pokémon\nlevels are synced to you.");
 static const u8 sText_Desc_AnimateAfterKO[]     = _("Choose whether Pokémon animate\nafter getting a knockout.");
@@ -410,6 +413,7 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledCustom[MENUITEM_CUSTOM
     [MENUITEM_CUSTOM_CANCEL]           = sText_Empty,
 };
 
+
 static const u8 *const OptionTextDescription(void)
 {
     u8 menuItem = sOptions->menuCursor[sOptions->submenu];
@@ -430,6 +434,18 @@ static const u8 *const OptionTextDescription(void)
         selection = sOptions->sel_custom[menuItem];
         if (menuItem == MENUITEM_CUSTOM_HP_BAR || menuItem == MENUITEM_CUSTOM_BATTLE_SPEED || menuItem == MENUITEM_CUSTOM_OVERWORLD_SPEED || menuItem == MENUITEM_CUSTOM_MUSIC_REGION)
             selection = 0;
+        if (menuItem == MENUITEM_CUSTOM_LEVEL_CAPS)
+        {
+            if (selection == 1)
+                return sText_Desc_LevelCapsOff;
+            else
+		    {
+                u8 currentLevelCap = GetCurrentLevelCap();
+                ConvertIntToDecimalStringN(gStringVar1, currentLevelCap, STR_CONV_MODE_LEFT_ALIGN, 2);
+                StringExpandPlaceholders(gStringVar4, sText_Desc_LevelCapsOn);
+                return gStringVar4;
+            }
+        }
         return sOptionMenuItemDescriptionsCustom[menuItem][selection];
     }
 	return FALSE;

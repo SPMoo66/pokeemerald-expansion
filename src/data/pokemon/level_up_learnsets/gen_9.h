@@ -13047,11 +13047,11 @@ static const struct LevelUpMove sSalamenceLevelUpLearnset[] = {
 static const struct LevelUpMove sBeldumLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_TACKLE),
 	LEVEL_UP_MOVE( 1, MOVE_TAKE_DOWN),
+	LEVEL_UP_MOVE(10, MOVE_CONFUSION),
 	LEVEL_UP_END
 };
 
 static const struct LevelUpMove sMetangLevelUpLearnset[] = {
-	LEVEL_UP_MOVE( 0, MOVE_CONFUSION),
 	LEVEL_UP_MOVE( 0, MOVE_METAL_CLAW),
 	LEVEL_UP_MOVE( 0, MOVE_MAGNET_RISE),
 	LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
@@ -13689,6 +13689,7 @@ static const struct LevelUpMove sKricketotLevelUpLearnset[] = {
 	LEVEL_UP_MOVE(13, MOVE_ABSORB),
 	LEVEL_UP_MOVE(16, MOVE_BUG_BITE),
 	LEVEL_UP_MOVE(19, MOVE_SING),
+	LEVEL_UP_MOVE(31, MOVE_SCREECH),
 	LEVEL_UP_END
 };
 
@@ -13939,7 +13940,7 @@ static const struct LevelUpMove sBastiodonLevelUpLearnset[] = {
 #if P_FAMILY_BURMY
 static const struct LevelUpMove sBurmyLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_PROTECT),
-	LEVEL_UP_MOVE(5, MOVE_TACKLE),
+	LEVEL_UP_MOVE( 5, MOVE_TACKLE),
 	LEVEL_UP_MOVE(12, MOVE_BUG_BITE),
 	LEVEL_UP_MOVE(20, MOVE_HIDDEN_POWER),
 	LEVEL_UP_END
@@ -14087,6 +14088,7 @@ static const struct LevelUpMove sPachirisuLevelUpLearnset[] = {
 	LEVEL_UP_MOVE(45, MOVE_HYPER_FANG),
 	LEVEL_UP_MOVE(49, MOVE_THUNDER),
 	LEVEL_UP_MOVE(53, MOVE_LAST_RESORT),
+	LEVEL_UP_MOVE(65, MOVE_REVIVAL_BLESSING),
 	LEVEL_UP_END
 };
 #endif //P_FAMILY_PACHIRISU
@@ -25157,8 +25159,8 @@ static const struct LevelUpMove sDreepyLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_BITE),
 	LEVEL_UP_MOVE( 1, MOVE_INFESTATION),
 	LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
-	LEVEL_UP_MOVE(20, MOVE_TWISTER),
-	LEVEL_UP_MOVE(25, MOVE_SHADOW_SNEAK),
+	LEVEL_UP_MOVE(15, MOVE_TWISTER),
+	LEVEL_UP_MOVE(20, MOVE_SHADOW_SNEAK),
 	LEVEL_UP_END
 };
 

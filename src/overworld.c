@@ -862,8 +862,8 @@ void LoadMapFromCameraTransition(u8 mapGroup, u8 mapNum)
     TryUpdateRandomTrainerRematches(mapGroup, mapNum);
 #endif //FREE_MATCH_CALL
 
-if (I_VS_SEEKER_CHARGING != 0)
-    MapResetTrainerRematches(mapGroup, mapNum);
+    if (I_VS_SEEKER_CHARGING != 0)
+        MapResetTrainerRematches(mapGroup, mapNum);
 
     DoTimeBasedEvents();
     SetSavedWeatherFromCurrMapHeader();
@@ -928,8 +928,8 @@ static void LoadMapFromWarp(bool32 a1)
     TryUpdateRandomTrainerRematches(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
 #endif //FREE_MATCH_CALL
 
-if (I_VS_SEEKER_CHARGING != 0)
-     MapResetTrainerRematches(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
+    if (I_VS_SEEKER_CHARGING != 0)
+         MapResetTrainerRematches(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
 
     if (a1 != TRUE)
         DoTimeBasedEvents();

@@ -175,27 +175,6 @@ void DrawNamebox(u32 windowId, u32 tileNum, bool32 copyToVram)
     struct WindowTemplate *w = &gWindows[windowId].window;
     u32 size = TILE_OFFSET_4BPP(NAME_BOX_BASE_TILES_TOTAL);
 
-    if (!StringCompare(gSpeakerName, gText_Jakson)) {
-        LoadPalette(gNameboxJakson_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
-        w->paletteNum = 12;
-    }
-    else if (!StringCompare(gSpeakerName, gText_Harper)) {
-        LoadPalette(gNameboxHarper_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
-        w->paletteNum = 12;
-    }
-    else if (!StringCompare(gSpeakerName, gText_Redd)) {
-        LoadPalette(gNameboxRedd_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
-        w->paletteNum = 12;
-    }
-    else if (!StringCompare(gSpeakerName, gText_Sakura)) {
-        LoadPalette(gNameboxSakura_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
-        w->paletteNum = 12;
-    }
-    else if (!StringCompare(gSpeakerName, gText_Baron)) {
-        LoadPalette(gNameboxBaron_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
-        w->paletteNum = 12;
-    }
-
     LoadBgTiles(GetWindowAttribute(sNameboxWindowId, WINDOW_BG), GetNameboxGraphics(), size, tileNum);
     WindowFunc_DrawNamebox(w->bg, w->tilemapLeft, w->tilemapTop, w->width, w->height, w->paletteNum, tileNum);
     PutWindowTilemap(windowId);

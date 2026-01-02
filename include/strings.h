@@ -2556,4 +2556,10 @@ extern const u8 gText_CannotSendMonToBoxPartner[];
 // Emeralbody Version
 extern const u8 gText_EmeralbodyVersionNumber[];
 
+extern const u8 gText_Jakson[];
+extern const u8 gText_Harper[];
+extern const u8 gText_Redd[];
+extern const u8 gText_Sakura[];
+extern const u8 gText_Baron[];
+
 #endif // GUARD_STRINGS_H

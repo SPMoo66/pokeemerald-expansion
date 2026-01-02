@@ -16,6 +16,8 @@
 #include "malloc.h"
 #include "constants/speaker_names.h"
 #include "data/speaker_names.h"
+#include "palette.h"
+#include "strings.h"
 
 static EWRAM_INIT u8 sNameboxWindowId = WINDOW_NONE;
 EWRAM_DATA const u8 *gSpeakerName = NULL;
@@ -26,8 +28,15 @@ static const u32 sNameBoxPokenavGfx[] = INCBIN_U32("graphics/pokenav/name_box.4b
 static void WindowFunc_DrawNamebox(u32, u32, u32, u32, u32, u32, u32);
 static void WindowFunc_ClearNamebox(u8, u8, u8, u8, u8, u8);
 
+static const u16 gNameboxJakson_Pal[] = INCBIN_U16("graphics/text_window/namebox/jakson.gbapal");
+static const u16 gNameboxHarper_Pal[] = INCBIN_U16("graphics/text_window/namebox/harper.gbapal");
+static const u16 gNameboxRedd_Pal[] = INCBIN_U16("graphics/text_window/namebox/redd.gbapal");
+static const u16 gNameboxSakura_Pal[] = INCBIN_U16("graphics/text_window/namebox/sakura.gbapal");
+static const u16 gNameboxBaron_Pal[] = INCBIN_U16("graphics/text_window/namebox/baron.gbapal");
+
 void TrySpawnNamebox(u32 tileNum)
 {
+    u8 windowPal = DLG_WINDOW_PALETTE_NUM;
     u8 *strbuf = AllocZeroed(32 * sizeof(u8));
     if ((OW_FLAG_SUPPRESS_NAME_BOX != 0 && FlagGet(OW_FLAG_SUPPRESS_NAME_BOX)) || gSpeakerName == NULL || !strbuf)
     {
@@ -57,6 +66,27 @@ void TrySpawnNamebox(u32 tileNum)
         RedrawDialogueFrame();
     }
 
+    if (!StringCompare(strbuf, gText_Jakson)) {
+        LoadPalette(gNameboxJakson_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
+        windowPal = 12;
+    }
+    else if (!StringCompare(strbuf, gText_Harper)) {
+        LoadPalette(gNameboxHarper_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
+        windowPal = 12;
+    }
+    else if (!StringCompare(strbuf, gText_Redd)) {
+        LoadPalette(gNameboxRedd_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
+        windowPal = 12;
+    }
+    else if (!StringCompare(strbuf, gText_Sakura)) {
+        LoadPalette(gNameboxSakura_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
+        windowPal = 12;
+    }
+    else if (!StringCompare(strbuf, gText_Baron)) {
+        LoadPalette(gNameboxBaron_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
+        windowPal = 12;
+    }
+
     bool32 matchCall = IsMatchCallTaskActive();
 
     struct WindowTemplate template =
@@ -66,7 +96,7 @@ void TrySpawnNamebox(u32 tileNum)
         .tilemapTop = 13,
         .width = winWidth,
         .height = OW_NAME_BOX_DEFAULT_HEIGHT,
-        .paletteNum = matchCall ? 14 : DLG_WINDOW_PALETTE_NUM,
+        .paletteNum = matchCall ? 14 : windowPal,
         .baseBlock = tileNum,
     };
 
@@ -144,6 +174,27 @@ void DrawNamebox(u32 windowId, u32 tileNum, bool32 copyToVram)
     // manual instead of using CallWindowFunction for extra tileNum param
     struct WindowTemplate *w = &gWindows[windowId].window;
     u32 size = TILE_OFFSET_4BPP(NAME_BOX_BASE_TILES_TOTAL);
+
+    if (!StringCompare(gSpeakerName, gText_Jakson)) {
+        LoadPalette(gNameboxJakson_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
+        w->paletteNum = 12;
+    }
+    else if (!StringCompare(gSpeakerName, gText_Harper)) {
+        LoadPalette(gNameboxHarper_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
+        w->paletteNum = 12;
+    }
+    else if (!StringCompare(gSpeakerName, gText_Redd)) {
+        LoadPalette(gNameboxRedd_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
+        w->paletteNum = 12;
+    }
+    else if (!StringCompare(gSpeakerName, gText_Sakura)) {
+        LoadPalette(gNameboxSakura_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
+        w->paletteNum = 12;
+    }
+    else if (!StringCompare(gSpeakerName, gText_Baron)) {
+        LoadPalette(gNameboxBaron_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
+        w->paletteNum = 12;
+    }
 
     LoadBgTiles(GetWindowAttribute(sNameboxWindowId, WINDOW_BG), GetNameboxGraphics(), size, tileNum);
     WindowFunc_DrawNamebox(w->bg, w->tilemapLeft, w->tilemapTop, w->width, w->height, w->paletteNum, tileNum);

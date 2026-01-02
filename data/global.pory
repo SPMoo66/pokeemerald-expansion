@@ -657,7 +657,7 @@ script Common_EventScript_MoveReminder {
 	}
 	else {
 		if (var(VAR_RESULT) == 1) {
-			setflag (FLAG_EGG_MOVE_TUTOR)
+			setmoverelearnerstate (MOVE_RELEARNER_EGG_MOVES)
 		}
 		while {
 			msgbox(format("Which Pokémon needs tutoring?"))
@@ -685,7 +685,7 @@ script Common_EventScript_MoveReminder {
 			}
 		}
 	}
-	clearflag (FLAG_EGG_MOVE_TUTOR)
+	setmoverelearnerstate (MOVE_RELEARNER_LEVEL_UP_MOVES)
 	release
 }
 

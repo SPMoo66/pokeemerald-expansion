@@ -246,49 +246,50 @@
 #define OBJ_EVENT_GFX_POKE_BALL                  239
 #define OBJ_EVENT_GFX_OW_MON                     240
 #define OBJ_EVENT_GFX_LIGHT_SPRITE               241
+#define OBJ_EVENT_GFX_APRICORN_TREE              242
 
-#define OBJ_EVENT_GFX_MATT                       242
-#define OBJ_EVENT_GFX_SHELLY                     243
-#define OBJ_EVENT_GFX_COURTNEY                   244
-#define OBJ_EVENT_GFX_TABITHA                    245
-#define OBJ_EVENT_GFX_PICHUSPIKYEARED            246
-#define OBJ_EVENT_GFX_BARON                      247
-#define OBJ_EVENT_GFX_HARPER                     248
-#define OBJ_EVENT_GFX_JAKSON                     249
-#define OBJ_EVENT_GFX_REDD                       250
-#define OBJ_EVENT_GFX_SAKURA                     251
-#define OBJ_EVENT_GFX_ITEM_BALL_BLUE             252
-#define OBJ_EVENT_GFX_PORTAL                     253
-#define OBJ_EVENT_GFX_SKIER_M                    254
-#define OBJ_EVENT_GFX_SKIER_F                    255
-#define OBJ_EVENT_GFX_ROCKET_M                   256
-#define OBJ_EVENT_GFX_ROCKET_F                   257
-#define OBJ_EVENT_GFX_GIOVANNI                   258
-#define OBJ_EVENT_GFX_LOOKER                     259
-#define OBJ_EVENT_GFX_BIANCA                     260
-#define OBJ_EVENT_GFX_PROF_ROWAN                 261
-#define OBJ_EVENT_GFX_GALACTIC_GRUNT_M           262
-#define OBJ_EVENT_GFX_GALACTIC_GRUNT_F           263
-#define OBJ_EVENT_GFX_KINDLER                    264
-#define OBJ_EVENT_GFX_BIRD_KEEPER                265
-#define OBJ_EVENT_GFX_GUITARIST                  266
-#define OBJ_EVENT_GFX_BUG_MANIAC                 267
-#define OBJ_EVENT_GFX_DRAGON_TAMER               268
-#define OBJ_EVENT_GFX_RUIN_MANIAC                269
-#define OBJ_EVENT_GFX_PKMN_BREEDER_M             270
-#define OBJ_EVENT_GFX_PKMN_BREEDER_F             271
-#define OBJ_EVENT_GFX_AROMA_LADY                 272
-#define OBJ_EVENT_GFX_POKEMANIAC                 273
-#define OBJ_EVENT_GFX_PKMN_RANGER_M              274
-#define OBJ_EVENT_GFX_PKMN_RANGER_F              275
-#define OBJ_EVENT_GFX_CYNTHIA                    276
-#define OBJ_EVENT_GFX_SHADOW_BARON               277
+#define OBJ_EVENT_GFX_MATT                       243
+#define OBJ_EVENT_GFX_SHELLY                     244
+#define OBJ_EVENT_GFX_COURTNEY                   245
+#define OBJ_EVENT_GFX_TABITHA                    246
+#define OBJ_EVENT_GFX_PICHUSPIKYEARED            247
+#define OBJ_EVENT_GFX_BARON                      248
+#define OBJ_EVENT_GFX_HARPER                     249
+#define OBJ_EVENT_GFX_JAKSON                     250
+#define OBJ_EVENT_GFX_REDD                       251
+#define OBJ_EVENT_GFX_SAKURA                     252
+#define OBJ_EVENT_GFX_ITEM_BALL_BLUE             253
+#define OBJ_EVENT_GFX_PORTAL                     254
+#define OBJ_EVENT_GFX_SKIER_M                    255
+#define OBJ_EVENT_GFX_SKIER_F                    256
+#define OBJ_EVENT_GFX_ROCKET_M                   257
+#define OBJ_EVENT_GFX_ROCKET_F                   258
+#define OBJ_EVENT_GFX_GIOVANNI                   259
+#define OBJ_EVENT_GFX_LOOKER                     260
+#define OBJ_EVENT_GFX_BIANCA                     261
+#define OBJ_EVENT_GFX_PROF_ROWAN                 262
+#define OBJ_EVENT_GFX_GALACTIC_GRUNT_M           263
+#define OBJ_EVENT_GFX_GALACTIC_GRUNT_F           264
+#define OBJ_EVENT_GFX_KINDLER                    265
+#define OBJ_EVENT_GFX_BIRD_KEEPER                266
+#define OBJ_EVENT_GFX_GUITARIST                  267
+#define OBJ_EVENT_GFX_BUG_MANIAC                 268
+#define OBJ_EVENT_GFX_DRAGON_TAMER               269
+#define OBJ_EVENT_GFX_RUIN_MANIAC                270
+#define OBJ_EVENT_GFX_PKMN_BREEDER_M             271
+#define OBJ_EVENT_GFX_PKMN_BREEDER_F             272
+#define OBJ_EVENT_GFX_AROMA_LADY                 273
+#define OBJ_EVENT_GFX_POKEMANIAC                 274
+#define OBJ_EVENT_GFX_PKMN_RANGER_M              275
+#define OBJ_EVENT_GFX_PKMN_RANGER_F              276
+#define OBJ_EVENT_GFX_CYNTHIA                    277
+#define OBJ_EVENT_GFX_SHADOW_BARON               278
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
 
-#define NUM_OBJ_EVENT_GFX                        278
+#define NUM_OBJ_EVENT_GFX                        279
 
 // These are dynamic object gfx ids.
 // They correspond with the values of the VAR_OBJ_GFX_ID_X vars.

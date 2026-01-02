@@ -1485,10 +1485,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_Clefable[] = INCBIN_U16("graphics/pokemon/clefable/shiny_gba.gbapal");
 #endif //P_GBA_STYLE_SPECIES_GFX
 
-    const u32 gMonFrontPic_ClefableMega[] = INCBIN_U32("graphics/pokemon/clefable/mega/front.4bpp.smol");
-    const u16 gMonPalette_ClefableMega[] = INCBIN_U16("graphics/pokemon/clefable/mega/normal.gbapal");
-    const u32 gMonBackPic_ClefableMega[] = INCBIN_U32("graphics/pokemon/clefable/mega/back.4bpp.smol");
-    const u16 gMonShinyPalette_ClefableMega[] = INCBIN_U16("graphics/pokemon/clefable/mega/shiny.gbapal");
+    const u32 gMonFrontPic_ClefableMegaE[] = INCBIN_U32("graphics/pokemon/clefable/mega_e/front.4bpp.smol");
+    const u16 gMonPalette_ClefableMegaE[] = INCBIN_U16("graphics/pokemon/clefable/mega_e/normal.gbapal");
+    const u32 gMonBackPic_ClefableMegaE[] = INCBIN_U32("graphics/pokemon/clefable/mega_e/back.4bpp.smol");
+    const u16 gMonShinyPalette_ClefableMegaE[] = INCBIN_U16("graphics/pokemon/clefable/mega_e/shiny.gbapal");
 #if !P_GBA_STYLE_SPECIES_ICONS
     const u8 gMonIcon_Clefable[] = INCBIN_U8("graphics/pokemon/clefable/icon.4bpp");
 #else
@@ -4994,10 +4994,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_Starmie[] = INCBIN_U16("graphics/pokemon/starmie/shiny_gba.gbapal");
 #endif //P_GBA_STYLE_SPECIES_GFX
 
-    const u32 gMonFrontPic_StarmieMega[] = INCBIN_U32("graphics/pokemon/starmie/mega/front.4bpp.smol");
-    const u16 gMonPalette_StarmieMega[] = INCBIN_U16("graphics/pokemon/starmie/mega/normal.gbapal");
-    const u32 gMonBackPic_StarmieMega[] = INCBIN_U32("graphics/pokemon/starmie/mega/back.4bpp.smol");
-    const u16 gMonShinyPalette_StarmieMega[] = INCBIN_U16("graphics/pokemon/starmie/mega/shiny.gbapal");
+    const u32 gMonFrontPic_StarmieMegaF[] = INCBIN_U32("graphics/pokemon/starmie/mega_f/front.4bpp.smol");
+    const u16 gMonPalette_StarmieMegaF[] = INCBIN_U16("graphics/pokemon/starmie/mega_f/normal.gbapal");
+    const u32 gMonBackPic_StarmieMegaF[] = INCBIN_U32("graphics/pokemon/starmie/mega_f/back.4bpp.smol");
+    const u16 gMonShinyPalette_StarmieMegaF[] = INCBIN_U16("graphics/pokemon/starmie/mega_f/shiny.gbapal");
 #if !P_GBA_STYLE_SPECIES_ICONS
     const u8 gMonIcon_Starmie[] = INCBIN_U8("graphics/pokemon/starmie/icon.4bpp");
 #else
@@ -6608,10 +6608,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_MeganiumMega[] = INCBIN_U32("graphics/pokemon/meganium/mega/front.4bpp.smol");
-    const u16 gMonPalette_MeganiumMega[] = INCBIN_U16("graphics/pokemon/meganium/mega/normal.gbapal");
-    const u32 gMonBackPic_MeganiumMega[] = INCBIN_U32("graphics/pokemon/meganium/mega/back.4bpp.smol");
-    const u16 gMonShinyPalette_MeganiumMega[] = INCBIN_U16("graphics/pokemon/meganium/mega/shiny.gbapal");
+    const u32 gMonFrontPic_MeganiumMegaF[] = INCBIN_U32("graphics/pokemon/meganium/mega_f/front.4bpp.smol");
+    const u16 gMonPalette_MeganiumMegaF[] = INCBIN_U16("graphics/pokemon/meganium/mega_f/normal.gbapal");
+    const u32 gMonBackPic_MeganiumMegaF[] = INCBIN_U32("graphics/pokemon/meganium/mega_f/back.4bpp.smol");
+    const u16 gMonShinyPalette_MeganiumMegaF[] = INCBIN_U16("graphics/pokemon/meganium/mega_f/shiny.gbapal");
 
     const u32 gMonFrontPic_MeganiumEmeribian[] = INCBIN_U32("graphics/pokemon/meganium/em/anim_front.4bpp.smol");
     const u16 gMonPalette_MeganiumEmeribian[] = INCBIN_U16("graphics/pokemon/meganium/em/normal.gbapal");
@@ -13312,10 +13312,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_Chimecho[] = INCBIN_U16("graphics/pokemon/chimecho/shiny_gba.gbapal");
 #endif //P_GBA_STYLE_SPECIES_GFX
 
-    const u32 gMonFrontPic_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chimecho/mega/front.4bpp.smol");
-    const u16 gMonPalette_ChimechoMega[] = INCBIN_U16("graphics/pokemon/chimecho/mega/normal.gbapal");
-    const u32 gMonBackPic_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chimecho/mega/back.4bpp.smol");
-    const u16 gMonShinyPalette_ChimechoMega[] = INCBIN_U16("graphics/pokemon/chimecho/mega/shiny.gbapal");
+    const u32 gMonFrontPic_ChimechoMegaF[] = INCBIN_U32("graphics/pokemon/chimecho/mega_f/front.4bpp.smol");
+    const u16 gMonPalette_ChimechoMegaF[] = INCBIN_U16("graphics/pokemon/chimecho/mega_f/normal.gbapal");
+    const u32 gMonBackPic_ChimechoMegaF[] = INCBIN_U32("graphics/pokemon/chimecho/mega_f/back.4bpp.smol");
+    const u16 gMonShinyPalette_ChimechoMegaF[] = INCBIN_U16("graphics/pokemon/chimecho/mega_f/shiny.gbapal");
 #if !P_GBA_STYLE_SPECIES_ICONS
     const u8 gMonIcon_Chimecho[] = INCBIN_U8("graphics/pokemon/chimecho/icon.4bpp");
 #else
@@ -13454,10 +13454,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_Froslass[] = INCBIN_U16("graphics/pokemon/froslass/shiny.gbapal");
     const u8 gMonIcon_Froslass[] = INCBIN_U8("graphics/pokemon/froslass/icon.4bpp");
 
-    const u32 gMonFrontPic_FroslassMega[] = INCBIN_U32("graphics/pokemon/froslass/mega/front.4bpp.smol");
-    const u16 gMonPalette_FroslassMega[] = INCBIN_U16("graphics/pokemon/froslass/mega/normal.gbapal");
-    const u32 gMonBackPic_FroslassMega[] = INCBIN_U32("graphics/pokemon/froslass/mega/back.4bpp.smol");
-    const u16 gMonShinyPalette_FroslassMega[] = INCBIN_U16("graphics/pokemon/froslass/mega/shiny.gbapal");
+    const u32 gMonFrontPic_FroslassMegaF[] = INCBIN_U32("graphics/pokemon/froslass/mega_f/front.4bpp.smol");
+    const u16 gMonPalette_FroslassMegaF[] = INCBIN_U16("graphics/pokemon/froslass/mega_f/normal.gbapal");
+    const u32 gMonBackPic_FroslassMegaF[] = INCBIN_U32("graphics/pokemon/froslass/mega_f/back.4bpp.smol");
+    const u16 gMonShinyPalette_FroslassMegaF[] = INCBIN_U16("graphics/pokemon/froslass/mega_f/shiny.gbapal");
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Froslass[] = INCBIN_U8("graphics/pokemon/froslass/footprint.1bpp");
 #endif //P_FOOTPRINTS
@@ -14522,10 +14522,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_StaraptorMega[] = INCBIN_U32("graphics/pokemon/staraptor/mega/front.4bpp.smol");
-    const u16 gMonPalette_StaraptorMega[] = INCBIN_U16("graphics/pokemon/staraptor/mega/normal.gbapal");
-    const u32 gMonBackPic_StaraptorMega[] = INCBIN_U32("graphics/pokemon/staraptor/mega/back.4bpp.smol");
-    const u16 gMonShinyPalette_StaraptorMega[] = INCBIN_U16("graphics/pokemon/staraptor/mega/shiny.gbapal");
+    const u32 gMonFrontPic_StaraptorMegaE[] = INCBIN_U32("graphics/pokemon/staraptor/mega_e/front.4bpp.smol");
+    const u16 gMonPalette_StaraptorMegaE[] = INCBIN_U16("graphics/pokemon/staraptor/mega_e/normal.gbapal");
+    const u32 gMonBackPic_StaraptorMegaE[] = INCBIN_U32("graphics/pokemon/staraptor/mega_e/back.4bpp.smol");
+    const u16 gMonShinyPalette_StaraptorMegaE[] = INCBIN_U16("graphics/pokemon/staraptor/mega_e/shiny.gbapal");
 
 #if P_GENDER_DIFFERENCES
     const u32 gMonFrontPic_StaraptorF[] = INCBIN_U32("graphics/pokemon/staraptor/anim_frontf.4bpp.smol");
@@ -19544,10 +19544,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_Delphox[] = INCBIN_U16("graphics/pokemon/delphox/shiny.gbapal");
     const u8 gMonIcon_Delphox[] = INCBIN_U8("graphics/pokemon/delphox/icon.4bpp");
 
-    const u32 gMonFrontPic_DelphoxMega[] = INCBIN_U32("graphics/pokemon/delphox/mega/front.4bpp.smol");
-    const u16 gMonPalette_DelphoxMega[] = INCBIN_U16("graphics/pokemon/delphox/mega/normal.gbapal");
-    const u32 gMonBackPic_DelphoxMega[] = INCBIN_U32("graphics/pokemon/delphox/mega/back.4bpp.smol");
-    const u16 gMonShinyPalette_DelphoxMega[] = INCBIN_U16("graphics/pokemon/delphox/mega/shiny.gbapal");
+    const u32 gMonFrontPic_DelphoxMegaF[] = INCBIN_U32("graphics/pokemon/delphox/mega_f/front.4bpp.smol");
+    const u16 gMonPalette_DelphoxMegaF[] = INCBIN_U16("graphics/pokemon/delphox/mega_f/normal.gbapal");
+    const u32 gMonBackPic_DelphoxMegaF[] = INCBIN_U32("graphics/pokemon/delphox/mega_f/back.4bpp.smol");
+    const u16 gMonShinyPalette_DelphoxMegaF[] = INCBIN_U16("graphics/pokemon/delphox/mega_f/shiny.gbapal");
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Delphox[] = INCBIN_U8("graphics/pokemon/delphox/footprint.1bpp");
 #endif //P_FOOTPRINTS

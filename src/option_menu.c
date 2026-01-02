@@ -75,19 +75,21 @@ static void DrawBgWindowFrames(void);
 
 EWRAM_DATA static bool8 sArrowPressed = FALSE;
 
+static const u8 gText_Option[]             = _("Option");
+
 static const u16 sOptionMenuText_Pal[] = INCBIN_U16("graphics/interface/option_menu_text.gbapal");
 // note: this is only used in the Japanese release
 static const u8 sEqualSignGfx[] = INCBIN_U8("graphics/interface/option_menu_equals_sign.4bpp");
 
 static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
 {
-    [MENUITEM_TEXTSPEED]   = gText_TextSpeed,
-    [MENUITEM_BATTLESCENE] = gText_BattleScene,
-    [MENUITEM_BATTLESTYLE] = gText_BattleStyle,
-    [MENUITEM_SOUND]       = gText_Sound,
-    [MENUITEM_BUTTONMODE]  = gText_ButtonMode,
-    [MENUITEM_FRAMETYPE]   = gText_Frame,
-    [MENUITEM_CANCEL]      = gText_OptionMenuCancel,
+    [MENUITEM_TEXTSPEED]   = COMPOUND_STRING("TEXT SPEED"),
+    [MENUITEM_BATTLESCENE] = COMPOUND_STRING("BATTLE SCENE"),
+    [MENUITEM_BATTLESTYLE] = COMPOUND_STRING("BATTLE STYLE"),
+    [MENUITEM_SOUND]       = COMPOUND_STRING("SOUND"),
+    [MENUITEM_BUTTONMODE]  = COMPOUND_STRING("BUTTON MODE"),
+    [MENUITEM_FRAMETYPE]   = COMPOUND_STRING("FRAME"),
+    [MENUITEM_CANCEL]      = COMPOUND_STRING("CANCEL"),
 };
 
 static const struct WindowTemplate sOptionMenuWinTemplates[] =

@@ -1105,7 +1105,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .formChangeTable = sStaraptorFormChangeTable,
     },
 
-    [SPECIES_STARAPTOR_MEGA] =
+    [SPECIES_STARAPTOR_MEGA_E] =
     {
         .baseHP        = 85,
         .baseAttack    = 145,
@@ -1140,25 +1140,25 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_StaraptorMega,
+        .frontPic = gMonFrontPic_StaraptorMegaE,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_V_SHAKE,
         .enemyMonElevation = 6,
-        .backPic = gMonBackPic_StaraptorMega,
+        .backPic = gMonBackPic_StaraptorMegaE,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_StaraptorMega,
-        .shinyPalette = gMonShinyPalette_StaraptorMega,
+        .palette = gMonPalette_StaraptorMegaE,
+        .shinyPalette = gMonShinyPalette_StaraptorMegaE,
         .iconSprite = gMonIcon_Staraptor,
         .iconPalIndex = 0,
         SHADOW(-10, 18, SHADOW_SIZE_M)
         FOOTPRINT(Staraptor)
+        .isMegaEvolution = TRUE,
         .levelUpLearnset = sStaraptorLevelUpLearnset,
         .teachableLearnset = sStaraptorTeachableLearnset,
-        .isMegaEvolution = TRUE,
         .formSpeciesIdTable = sStaraptorFormSpeciesIdTable,
         .formChangeTable = sStaraptorFormChangeTable,
     },

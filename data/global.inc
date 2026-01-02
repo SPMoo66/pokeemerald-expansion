@@ -1330,7 +1330,7 @@ Common_EventScript_MoveReminder_14:
 	msgbox Common_EventScript_MoveReminder_Text_5
 Common_EventScript_MoveReminder_7:
 # 688 "data/global.pory"
-	clearflag FLAG_EGG_MOVE_TUTOR
+	setmoverelearnerstate MOVE_RELEARNER_LEVEL_UP_MOVES
 # 689 "data/global.pory"
 	release
 	return
@@ -1352,7 +1352,7 @@ Common_EventScript_MoveReminder_8:
 
 Common_EventScript_MoveReminder_12:
 # 660 "data/global.pory"
-	setflag FLAG_EGG_MOVE_TUTOR
+	setmoverelearnerstate MOVE_RELEARNER_EGG_MOVES
 	goto Common_EventScript_MoveReminder_11
 
 Common_EventScript_MoveReminder_16:

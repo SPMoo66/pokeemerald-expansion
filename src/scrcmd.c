@@ -34,6 +34,7 @@
 #include "menu.h"
 #include "money.h"
 #include "move.h"
+#include "move_relearner.h"
 #include "mystery_event_script.h"
 #include "palette.h"
 #include "party_menu.h"
@@ -1675,13 +1676,6 @@ bool8 ScrCmd_release(struct ScriptContext *ctx)
     ScriptMovement_UnfreezeObjectEvents();
     UnfreezeObjectEvents();
     gMsgBoxIsCancelable = FALSE;
-    return FALSE;
-}
-
-bool8 ScrCmd_setspeaker(struct ScriptContext *ctx)
-{
-    const u8 *name = (const u8 *)ScriptReadWord(ctx);
-    SetSpeakerName(name);
     return FALSE;
 }
 
@@ -3358,10 +3352,10 @@ bool8 ScrCmd_readgymleader(struct ScriptContext *ctx)
     gSpecialVar_0x8001 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderSecond; // Gym Leader #2
     gSpecialVar_0x8002 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderThird;  // Gym Leader #3
     gSpecialVar_0x8003 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderFourth; // Gym Leader #4
-    gSpecialVar_0x8004 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderFirst;  // Gym Leader #5
-    gSpecialVar_0x8005 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderSecond; // Gym Leader #6
-    gSpecialVar_0x8006 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderThird;  // Gym Leader #7
-    gSpecialVar_0x8007 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderFourth; // Gym Leader #8
+    gSpecialVar_0x8004 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderFifth;  // Gym Leader #5
+    gSpecialVar_0x8005 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderSixth; // Gym Leader #6
+    gSpecialVar_0x8006 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderSeventh;  // Gym Leader #7
+    gSpecialVar_0x8007 = gSaveBlock2Ptr->gymLeaderOrder.gymLeaderEighth; // Gym Leader #8
     return FALSE;
 }
 
@@ -3409,4 +3403,39 @@ bool8 ScrCmd_warpcontinuescript(struct ScriptContext *ctx)
     WarpIntoMap();
     SetMainCallback2(CB2_LoadMap);
     return TRUE;
+}
+
+bool8 ScrCmd_setmoverelearnerstate(struct ScriptContext *ctx)
+{
+    enum MoveRelearnerStates state = VarGet(ScriptReadHalfword(ctx));
+
+    Script_RequestEffects(SCREFF_V1);
+
+    gMoveRelearnerState = state;
+    return FALSE;
+}
+
+bool8 ScrCmd_getmoverelearnerstate(struct ScriptContext *ctx)
+{
+    u32 varId = ScriptReadHalfword(ctx);
+
+    Script_RequestEffects(SCREFF_V1);
+    Script_RequestWriteVar(varId);
+
+    u16 *varPointer = GetVarPointer(varId);
+    *varPointer = gMoveRelearnerState;
+    return FALSE;
+}
+
+bool8 ScrCmd_istmrelearneractive(struct ScriptContext *ctx)
+{
+    const u8 *ptr = (const u8 *)ScriptReadWord(ctx);
+
+    Script_RequestEffects(SCREFF_V1);
+
+    if ((P_TM_MOVES_RELEARNER || P_ENABLE_MOVE_RELEARNERS)
+     && (P_ENABLE_ALL_TM_MOVES || IsBagPocketNonEmpty(POCKET_TM_HM)))
+        ScriptCall(ctx, ptr);
+
+    return FALSE;
 }

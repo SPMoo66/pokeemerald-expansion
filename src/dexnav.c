@@ -2126,7 +2126,7 @@ static void PrintCurrentSpeciesInfo(void)
 {
     u16 species = DexNavGetSpecies();
     enum NationalDexOrder dexNum = SpeciesToNationalPokedexNum(species);
-    u8 type1, type2;
+    enum Type type1, type2;
 
 /*
     if (!GetSetPokedexFlag(dexNum, FLAG_GET_SEEN))

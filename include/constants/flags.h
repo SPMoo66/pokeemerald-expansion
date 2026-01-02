@@ -43,7 +43,7 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#define FLAG_EGG_MOVE_TUTOR      0x20 // Active if move tutor menu should pull egg moves
+#define FLAG_EGG_MOVE_TUTOR      0x20 // Unused?
 #define FLAG_CAUGHT_CHIEN_PAO    0x21
 #define FLAG_CAUGHT_CHI_YU       0x22
 #define FLAG_CAUGHT_TING_LU      0x23
@@ -1353,7 +1353,7 @@
 #define FLAG_SYS_POKEMON_GET                         (SYSTEM_FLAGS + 0x0) // FLAG_0xA00
 #define FLAG_SYS_POKEDEX_GET                         (SYSTEM_FLAGS + 0x1)
 #define FLAG_SYS_POKENAV_GET                         (SYSTEM_FLAGS + 0x2)
-#define FLAG_NO_BAG                                  (SYSTEM_FLAGS + 0x3) // No Bag use allowed in battle
+#define FLAG_UNUSED_0XA03                            (SYSTEM_FLAGS + 0x3) // Unused
 #define FLAG_SYS_GAME_CLEAR                          (SYSTEM_FLAGS + 0x4)
 #define FLAG_SYS_CHAT_USED                           (SYSTEM_FLAGS + 0x5)
 #define FLAG_UNLOCKED_TRENDY_SAYINGS                 (SYSTEM_FLAGS + 0x6)
@@ -1417,7 +1417,7 @@
 #define FLAG_SYS_CLOCK_SET                          (SYSTEM_FLAGS + 0x35)
 #define FLAG_SYS_NATIONAL_DEX                       (SYSTEM_FLAGS + 0x36)
 #define FLAG_WILD_PARTNER                           (SYSTEM_FLAGS + 0x37) // Set when multi partner is a wild Pokémon
-#define FLAG_SUPPRESS_SPEAKER_NAME                  (SYSTEM_FLAGS + 0x38) // Suppresses the speaker on text box
+#define FLAG_UNUSED_0xA37                           (SYSTEM_FLAGS + 0x38) // Unused
 #define FLAG_ELITE_FOUR_CHALLENGE                   (SYSTEM_FLAGS + 0x39) // Set when the player starts against the Elite 4, is used to dynamically set the levels of their Pokémon
 #define FLAG_SYS_SHOAL_TIDE                         (SYSTEM_FLAGS + 0x3A)
 #define FLAG_SYS_RIBBON_GET                         (SYSTEM_FLAGS + 0x3B)

@@ -2,7 +2,7 @@
 #define GUARD_CONSTANTS_SPECIES_H
 
 // NOTE: The defines here are named in order to match Pokémon Showdown's naming conventions. This is done to avoid issues with trainerproc parsing species names. If a Pokémon does not have an entry on Showdown, use your best judgement.
-// Additionally, we have tried to reduce down to as few defines as possible, because programs like porymap does not always properly handle having multiple defines.
+// Additionally, we have tried to reduce down to as few defines as possible, because programs like porymap do not always properly handle having multiple defines.
 // Discussion: https://github.com/rh-hideout/pokeemerald-expansion/pull/5075#issuecomment-2384088602
 // Showdown: https://github.com/smogon/Pokemon-Showdown/blob/master/data/pokedex.ts
 
@@ -1712,30 +1712,30 @@
 #define SPECIES_MIMIKYU_EMERIBIAN                       FAKE_START + 65
 #define SPECIES_FALINKS_EMERIBIAN                       FAKE_START + 66
 
-#define FAKE_MEGA_START                                 SPECIES_FALINKS_EMERIBIAN
+#define FAKE_MEGA_START                                 SPECIES_FALINKS_EMERIBIAN  // 1589
 // Fribian Megas
 #define SPECIES_WIGGLYTUFF_MEGA                         FAKE_MEGA_START + 1 
-#define SPECIES_STARMIE_MEGA                            FAKE_MEGA_START + 2 
-#define SPECIES_MEGANIUM_MEGA                           FAKE_MEGA_START + 3 
+#define SPECIES_STARMIE_MEGA_F                          FAKE_MEGA_START + 2 
+#define SPECIES_MEGANIUM_MEGA_F                         FAKE_MEGA_START + 3 
 #define SPECIES_FLYGON_MEGA                             FAKE_MEGA_START + 4 
 #define SPECIES_MILOTIC_MEGA                            FAKE_MEGA_START + 5 
-#define SPECIES_CHIMECHO_MEGA                           FAKE_MEGA_START + 6 
+#define SPECIES_CHIMECHO_MEGA_F                         FAKE_MEGA_START + 6 
 #define SPECIES_TORTERRA_MEGA                           FAKE_MEGA_START + 7 
 #define SPECIES_EMPOLEON_MEGA                           FAKE_MEGA_START + 8 
 #define SPECIES_VESPIQUEN_MEGA                          FAKE_MEGA_START + 9 
 #define SPECIES_DUSKNOIR_MEGA                           FAKE_MEGA_START + 10
-#define SPECIES_FROSLASS_MEGA                           FAKE_MEGA_START + 11
+#define SPECIES_FROSLASS_MEGA_F                         FAKE_MEGA_START + 11
 #define SPECIES_KLINKLANG_MEGA                          FAKE_MEGA_START + 12
 #define SPECIES_HAXORUS_MEGA                            FAKE_MEGA_START + 13
 #define SPECIES_HYDREIGON_MEGA                          FAKE_MEGA_START + 14
-#define SPECIES_DELPHOX_MEGA                            FAKE_MEGA_START + 15
+#define SPECIES_DELPHOX_MEGA_F                          FAKE_MEGA_START + 15
 #define SPECIES_AURORUS_MEGA                            FAKE_MEGA_START + 16
 #define SPECIES_DUDUNSPARCE_MEGA                        FAKE_MEGA_START + 17
 // Emeribian Megas
 #define SPECIES_FEAROW_MEGA                             FAKE_MEGA_START + 18
 #define SPECIES_NIDOQUEEN_MEGA                          FAKE_MEGA_START + 19
 #define SPECIES_NIDOKING_MEGA                           FAKE_MEGA_START + 20
-#define SPECIES_CLEFABLE_MEGA                           FAKE_MEGA_START + 21
+#define SPECIES_CLEFABLE_MEGA_E                         FAKE_MEGA_START + 21
 #define SPECIES_RAPIDASH_MEGA                           FAKE_MEGA_START + 22
 #define SPECIES_TYPHLOSION_MEGA                         FAKE_MEGA_START + 23
 #define SPECIES_LUGIA_MEGA                              FAKE_MEGA_START + 24
@@ -1746,7 +1746,7 @@
 #define SPECIES_CRAWDAUNT_MEGA                          FAKE_MEGA_START + 29
 #define SPECIES_MILOTIC_MEGA_E                          FAKE_MEGA_START + 30
 #define SPECIES_INFERNAPE_MEGA                          FAKE_MEGA_START + 31
-#define SPECIES_STARAPTOR_MEGA                          FAKE_MEGA_START + 32
+#define SPECIES_STARAPTOR_MEGA_E                        FAKE_MEGA_START + 32
 #define SPECIES_LUXRAY_MEGA                             FAKE_MEGA_START + 33
 #define SPECIES_LOPUNNY_EMERIBIAN_MEGA                  FAKE_MEGA_START + 34
 #define SPECIES_LUMINEON_MEGA                           FAKE_MEGA_START + 35
@@ -1755,11 +1755,39 @@
 #define SPECIES_GALLADE_MEGA_Q                          FAKE_MEGA_START + 38
 #define SPECIES_SERPERIOR_MEGA                          FAKE_MEGA_START + 39
 #define SPECIES_SLURPUFF_MEGA                           FAKE_MEGA_START + 40
-#define SPECIES_TSAREENA_MEGA                           FAKE_MEGA_START + 41
+#define SPECIES_TSAREENA_MEGA                           FAKE_MEGA_START + 41  // 1630
 //52+37=89
 //66+41=105
 
-#define SPECIES_EGG                                     (SPECIES_TSAREENA_MEGA + 1)
+// Legends Z-A
+#define SPECIES_CLEFABLE_MEGA                           1631
+#define SPECIES_VICTREEBEL_MEGA                         1632
+#define SPECIES_STARMIE_MEGA                            1633
+#define SPECIES_DRAGONITE_MEGA                          1634
+#define SPECIES_MEGANIUM_MEGA                           1635
+#define SPECIES_FERALIGATR_MEGA                         1636
+#define SPECIES_SKARMORY_MEGA                           1637
+#define SPECIES_FROSLASS_MEGA                           1638
+#define SPECIES_EMBOAR_MEGA                             1639
+#define SPECIES_EXCADRILL_MEGA                          1640
+#define SPECIES_SCOLIPEDE_MEGA                          1641
+#define SPECIES_SCRAFTY_MEGA                            1642
+#define SPECIES_EELEKTROSS_MEGA                         1643
+#define SPECIES_CHANDELURE_MEGA                         1644
+#define SPECIES_CHESNAUGHT_MEGA                         1645
+#define SPECIES_DELPHOX_MEGA                            1646
+#define SPECIES_GRENINJA_MEGA                           1647
+#define SPECIES_PYROAR_MEGA                             1648
+#define SPECIES_MALAMAR_MEGA                            1649
+#define SPECIES_DRAGALGE_MEGA                           1650
+#define SPECIES_HAWLUCHA_MEGA                           1651
+#define SPECIES_FLOETTE_MEGA                            1652
+#define SPECIES_BARBARACLE_MEGA                         1653
+#define SPECIES_ZYGARDE_MEGA                            1654
+#define SPECIES_DRAMPA_MEGA                             1655
+#define SPECIES_FALINKS_MEGA                            1656
+
+#define SPECIES_EGG                                     (SPECIES_FALINKS_MEGA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

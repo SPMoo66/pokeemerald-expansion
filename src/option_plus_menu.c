@@ -1095,9 +1095,8 @@ static void ReDrawAll(void)
 }
 
 // Process Input functions ****SPECIFIC****
-static const u8 sText_Faster[] = _("Faster");
-static const u8 sText_Instant[] = _("Instant");
-static const u8 *const sTextSpeedStrings[] = {gText_TextSpeedSlow, gText_TextSpeedMid, gText_TextSpeedFast, sText_Faster};
+static const u8 sText_TextSpeedFaster[] = _("Faster");
+static const u8 *const sTextSpeedStrings[] = {gText_TextSpeedSlow, gText_TextSpeedMid, gText_TextSpeedFast, sText_TextSpeedFaster};
 static void DrawChoices_TextSpeed(int selection, int y)
 {
     bool8 active = CheckConditions(MENUITEM_MAIN_TEXTSPEED);
@@ -1160,7 +1159,7 @@ static void DrawChoices_BarSpeed(int selection, int y) //HP and EXP
         DrawOptionMenuChoice(textPlus, 104, y, 1, active);
     }
     else
-        DrawOptionMenuChoice(sText_Instant, 104, y, 1, active);
+        DrawOptionMenuChoice(sText_TextSpeedFaster, 104, y, 1, active);
 }
 
 static void DrawChoices_UnitSystem(int selection, int y)

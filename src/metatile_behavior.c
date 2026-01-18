@@ -75,6 +75,7 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_WATER_DOOR_EAST]                    = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
     [MB_WATER_DOOR_WEST]                    = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
     [MB_OCEAN_GRASS]                        = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE | TILE_FLAG_HAS_ENCOUNTERS,
+    [MB_SAND_GRASS]                         = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
     [MB_NON_ANIMATED_DOOR]                  = TILE_FLAG_UNUSED,
     [MB_LADDER]                             = TILE_FLAG_UNUSED,
     [MB_EAST_ARROW_WARP]                    = TILE_FLAG_UNUSED,
@@ -754,6 +755,14 @@ bool8 MetatileBehavior_IsTallGrass(u8 metatileBehavior)
 bool8 MetatileBehavior_IsLongGrass(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_LONG_GRASS)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsSandGrass(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_SAND_GRASS)
         return TRUE;
     else
         return FALSE;

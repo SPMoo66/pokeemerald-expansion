@@ -476,7 +476,8 @@ void UpdateTallGrassFieldEffect(struct Sprite *sprite)
 
     if (TryGetObjectEventIdByLocalIdAndMap(localId, mapNum, mapGroup, &objectEventId)
      || (!MetatileBehavior_IsTallGrass(metatileBehavior)
-         && !MetatileBehavior_IsOceanGrass(metatileBehavior))
+         && !MetatileBehavior_IsOceanGrass(metatileBehavior)
+         && !MetatileBehavior_IsSandGrass(metatileBehavior))
      || (sprite->sObjectMoved && sprite->animEnded))
     {
         FieldEffectStop(sprite, FLDEFF_TALL_GRASS);

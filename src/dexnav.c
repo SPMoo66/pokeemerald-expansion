@@ -745,7 +745,8 @@ static bool8 TryStartHiddenMonFieldEffect(enum EncounterType environment, u8 xSi
                     fldEffId = FLDEFF_SHAKING_GRASS;
                 else if (MetatileBehavior_IsLongGrass(metatileBehaviour)) //Really tall grass
                     fldEffId = FLDEFF_SHAKING_LONG_GRASS;
-                else if (MetatileBehavior_IsSandOrDeepSand(metatileBehaviour))
+                else if (MetatileBehavior_IsSandOrDeepSand(metatileBehaviour)
+                         || MetatileBehavior_IsSandGrass(metatileBehaviour))
                     fldEffId = FLDEFF_SAND_HOLE;
                 else
                     fldEffId = FLDEFF_CAVE_DUST;
@@ -756,7 +757,8 @@ static bool8 TryStartHiddenMonFieldEffect(enum EncounterType environment, u8 xSi
                     fldEffId = FLDEFF_SHAKING_GRASS;
                 else if (MetatileBehavior_IsLongGrass(metatileBehaviour)) //Really tall grass
                     fldEffId = FLDEFF_SHAKING_LONG_GRASS;
-                else if (MetatileBehavior_IsSandOrDeepSand(metatileBehaviour)) //Desert Sand
+                else if (MetatileBehavior_IsSandOrDeepSand(metatileBehaviour) //Desert Sand
+                         || MetatileBehavior_IsSandGrass(metatileBehaviour))
                     fldEffId = FLDEFF_SAND_HOLE;
                 else if (MetatileBehavior_IsMountain(metatileBehaviour)) //Rough Terrain
                     fldEffId = FLDEFF_CAVE_DUST;

@@ -728,7 +728,8 @@ enum BattleEnvironments BattleSetup_GetEnvironmentId(void)
         return BATTLE_ENVIRONMENT_GRASS;
     if (MetatileBehavior_IsLongGrass(tileBehavior))
         return BATTLE_ENVIRONMENT_LONG_GRASS;
-    if (MetatileBehavior_IsSandOrDeepSand(tileBehavior))
+    if (MetatileBehavior_IsSandOrDeepSand(tileBehavior)
+         || MetatileBehavior_IsSandGrass(tileBehavior))
         return BATTLE_ENVIRONMENT_SAND;
 
     switch (gMapHeader.mapType)
@@ -753,10 +754,10 @@ enum BattleEnvironments BattleSetup_GetEnvironmentId(void)
             return BATTLE_ENVIRONMENT_WATER;
         return BATTLE_ENVIRONMENT_PLAIN;
     }
-    if (MetatileBehavior_IsDeepOrOceanWater(tileBehavior)
-         || MetatileBehavior_IsOceanGrass(tileBehavior))
+    if (MetatileBehavior_IsDeepOrOceanWater(tileBehavior))
         return BATTLE_ENVIRONMENT_WATER;
-    if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
+    if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior)
+         || MetatileBehavior_IsOceanGrass(tileBehavior))
         return BATTLE_ENVIRONMENT_POND;
     if (MetatileBehavior_IsMountain(tileBehavior))
         return BATTLE_ENVIRONMENT_MOUNTAIN;

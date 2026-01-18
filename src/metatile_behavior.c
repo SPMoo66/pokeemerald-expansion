@@ -759,6 +759,14 @@ bool8 MetatileBehavior_IsLongGrass(u8 metatileBehavior)
         return FALSE;
 }
 
+bool8 MetatileBehavior_IsOceanGrass(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_OCEAN_GRASS)
+        return TRUE;
+    else
+        return FALSE;
+}
+
 bool8 MetatileBehavior_IsBerryTreeSoil(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_BERRY_TREE_SOIL)
@@ -835,10 +843,9 @@ bool8 MetatileBehavior_IsBridgeOverWaterNoEdge(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsLandWildEncounter(u8 metatileBehavior)
 {
-    if (MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior) == FALSE
+    if ((MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior) == FALSE
+         || MetatileBehavior_IsOceanGrass(metatileBehavior) == TRUE)
      && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE)
-        return TRUE;
-    else if (metatileBehavior == MB_OCEAN_GRASS)
         return TRUE;
     else
         return FALSE;

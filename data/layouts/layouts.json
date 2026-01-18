@@ -5968,8 +5968,8 @@
     {
       "id": "LAYOUT_SUBMERGED_CAVE_1F_2R",
       "name": "SubmergedCave_1F_2R_Layout",
-      "width": 30,
-      "height": 18,
+      "width": 32,
+      "height": 19,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_CaveExp1",
@@ -6136,8 +6136,8 @@
     {
       "id": "LAYOUT_MAUVE_HOLLOW_1",
       "name": "MauveHollow_1_Layout",
-      "width": 29,
-      "height": 21,
+      "width": 30,
+      "height": 23,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Cave2_Exp_1",

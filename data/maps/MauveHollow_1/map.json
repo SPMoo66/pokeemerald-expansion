@@ -16,10 +16,10 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
-      "x": 13,
-      "y": 10,
+      "x": 14,
+      "y": 11,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -29,8 +29,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
-      "x": 18,
-      "y": 6,
+      "x": 19,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -42,10 +42,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
-      "x": 11,
-      "y": 3,
+      "x": 12,
+      "y": 4,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -55,8 +55,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_BLUE",
-      "x": 24,
-      "y": 2,
+      "x": 25,
+      "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -69,15 +69,15 @@
   ],
   "warp_events": [
     {
-      "x": 24,
-      "y": 16,
+      "x": 25,
+      "y": 17,
       "elevation": 0,
       "dest_map": "MAP_MAUVE_ISLAND_SOUTHEAST",
       "dest_warp_id": "0"
     },
     {
-      "x": 4,
-      "y": 3,
+      "x": 5,
+      "y": 4,
       "elevation": 0,
       "dest_map": "MAP_MAUVE_ISLAND_SOUTH",
       "dest_warp_id": "1"
@@ -87,8 +87,8 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 1,
-      "y": 5,
+      "x": 2,
+      "y": 6,
       "elevation": 0,
       "item": "ITEM_NONE",
       "flag": "FLAG_TEMP_1"

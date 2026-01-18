@@ -750,11 +750,14 @@ enum BattleEnvironments BattleSetup_GetEnvironmentId(void)
     case MAP_TYPE_UNDERWATER:
         return BATTLE_ENVIRONMENT_UNDERWATER;
     case MAP_TYPE_OCEAN_ROUTE:
+        if (MetatileBehavior_IsOceanGrass(tileBehavior))
+            return BATTLE_ENVIRONMENT_POND;
         if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
             return BATTLE_ENVIRONMENT_WATER;
         return BATTLE_ENVIRONMENT_PLAIN;
     }
-    if (MetatileBehavior_IsDeepOrOceanWater(tileBehavior))
+    if (MetatileBehavior_IsDeepOrOceanWater(tileBehavior)
+         && !MetatileBehavior_IsOceanGrass(tileBehavior))
         return BATTLE_ENVIRONMENT_WATER;
     if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior)
          || MetatileBehavior_IsOceanGrass(tileBehavior))

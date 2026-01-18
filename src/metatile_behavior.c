@@ -74,6 +74,7 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_UNDERWATER_DEEP_WATER]              = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
     [MB_WATER_DOOR_EAST]                    = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
     [MB_WATER_DOOR_WEST]                    = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
+    [MB_OCEAN_GRASS]                        = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE | TILE_FLAG_HAS_ENCOUNTERS,
     [MB_NON_ANIMATED_DOOR]                  = TILE_FLAG_UNUSED,
     [MB_LADDER]                             = TILE_FLAG_UNUSED,
     [MB_EAST_ARROW_WARP]                    = TILE_FLAG_UNUSED,
@@ -837,13 +838,17 @@ bool8 MetatileBehavior_IsLandWildEncounter(u8 metatileBehavior)
     if (MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior) == FALSE
      && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE)
         return TRUE;
+    else if (metatileBehavior == MB_OCEAN_GRASS)
+        return TRUE;
     else
         return FALSE;
 }
 
 bool8 MetatileBehavior_IsWaterWildEncounter(u8 metatileBehavior)
 {
-    if (MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior) == TRUE
+    if (metatileBehavior == MB_OCEAN_GRASS)
+        return FALSE;
+    else if (MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior) == TRUE
      && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE)
         return TRUE;
     else
@@ -927,7 +932,8 @@ bool8 MetatileBehavior_IsDeepOrOceanWater(u8 metatileBehavior)
     if (metatileBehavior == MB_OCEAN_WATER
      || metatileBehavior == MB_INTERIOR_DEEP_WATER
      || metatileBehavior == MB_DEEP_WATER
-     || metatileBehavior == MB_UNDERWATER_DEEP_WATER)
+     || metatileBehavior == MB_UNDERWATER_DEEP_WATER
+     || metatileBehavior == MB_OCEAN_GRASS)
         return TRUE;
     else
         return FALSE;
@@ -1191,7 +1197,8 @@ bool8 MetatileBehavior_IsSurfableFishableWater(u8 metatileBehavior)
       || metatileBehavior == MB_WESTWARD_CURRENT
       || metatileBehavior == MB_NORTHWARD_CURRENT
       || metatileBehavior == MB_SOUTHWARD_CURRENT)
-     || metatileBehavior == MB_UNDERWATER_DEEP_WATER)
+     || metatileBehavior == MB_UNDERWATER_DEEP_WATER
+     || metatileBehavior == MB_OCEAN_GRASS)
         return TRUE;
     else
         return FALSE;

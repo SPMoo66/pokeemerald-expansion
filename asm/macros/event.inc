@@ -2516,7 +2516,7 @@
 	.2byte \dest
 	.endm
 
-	@ Start Pokevial Branch
+@ Start Pokevial Branch
 
 	@ Checks or manipulates the size or dose of the Pokevial.
 	@ When parameter is empty, it assumes VIAL_SIZE.
@@ -2573,7 +2573,7 @@
 	specialvar VAR_RESULT,PokevialRefill
 	.endm
 
-	@ End Pokevial Branch
+@ End Pokevial Branch
 	
 	@ Adds unit system string to the respective stringvar.
 	@ texttype values:
@@ -2585,6 +2585,8 @@
 	setvar VAR_0x8001, \stringvarnumber
 	special BufferUnitSystemText
 	.endm
+
+@ Custom functions
 
 	.macro getnumbadges
 	specialvar VAR_RESULT,GetNumberOfBadges
@@ -2609,6 +2611,8 @@
 	.macro shufflegymleader
 	callnative ScrCmd_shufflegymleader, requests_effects=1
 	.endm
+
+@ End Custom Functions
 
 	@ Hides any follower Pokémon if present, putting them into their Poké Ball; by default waits for their movement to finish.
 	.macro hidefollower wait=1

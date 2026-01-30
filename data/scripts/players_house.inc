@@ -482,7 +482,7 @@ PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	end
 
 PlayersHouse_1F_EventScript_SetLatios::
-	copyvar VAR_ROAMER_POKEMON, 1
+	setvar VAR_ROAMER_POKEMON, 1
 	return
 
 PlayersHouse_1F_Text_Lati1:

@@ -1,1 +1,66 @@
 mapscripts MauveCamp_MapScripts {}
+
+script MauveCamp_Sailor1 {
+	msgbox ("Aye, trainer.\n"
+			"We're here on Mauve Island.\l"
+			"Be off on your treasure hunt.\l"
+			"The sooner you finish, the sooner we\l"
+			"can all leave this blasted land.", MSGBOX_NPC)
+	turnobject (2, DIR_WEST)
+}
+
+script MauveCamp_Sailor2 {
+	msgbox ("It seems like we have enough supplies\n"
+			"to last us for a long time.", MSGBOX_NPC)
+}
+
+script MauveCamp_Sailor3 {
+	msgbox ("This island gives me the spooks.\p"
+			"No signs of civilization, yet there's a\n"
+			"treasure buried somewhere in these\l"
+			"lands?", MSGBOX_NPC)
+}
+
+script MauveCamp_Sailor4 {
+	faceplayer
+	msgbox ("Ahoy, trainer!\n"
+			"Do ye require rest?", MSGBOX_YESNO)
+	if (var(VAR_RESULT)) {
+		closemessage
+		call (Common_EventScript_OutOfCenterPartyHeal)
+	}
+	msgbox ("Stay safe out in the wilds.")
+	closemessage
+}
+
+script MauveCamp_Sign {
+	msgbox ("Mauve Island Base Camp", MSGBOX_SIGN)
+}
+
+script MauveCamp_SandCastle {
+	msgbox ("Did Sakura make this sand castle?")
+	closemessage
+}
+
+script MauveCamp_Pokeball {
+	msgbox ("This must be a Pokémon owned by\none of the sailors.")
+	closemessage
+}
+
+script MauveCamp_Boxes {
+	msgbox ("The boxes are loaded with supplies.")
+	closemessage
+}
+
+script MauveCamp_Rowboat {
+	msgbox ("It's a rowboat!\n"
+			"Use it to return to Hoenn?", MSGBOX_YESNO)
+	closemessage
+}
+
+script MauveCamp_Pot {
+	msgbox ("{PLAYER} found one Leftovers!\n"
+			"… … …\l"
+			"Just kidding!")
+	closemessage
+}

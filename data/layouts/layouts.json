@@ -5716,8 +5716,8 @@
     {
       "id": "LAYOUT_MAUVE_CAMP",
       "name": "MauveCamp_Layout",
-      "width": 37,
-      "height": 34,
+      "width": 40,
+      "height": 37,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Beach",

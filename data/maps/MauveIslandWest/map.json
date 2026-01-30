@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_MAUVE_CAMP",
-      "offset": 0,
+      "offset": -3,
       "direction": "right"
     },
     {

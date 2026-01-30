@@ -1769,6 +1769,75 @@ BufferNumberSring0::
 	return
 
 
+PlayersHouse_2F_EventScript_Notebook::
+# 1300 "data/global.pory"
+	msgbox PlayersHouse_2F_EventScript_Notebook_Text_0
+# 1302 "data/global.pory"
+	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_1, 0
+# 1303 "data/global.pory"
+	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_2, 1
+# 1304 "data/global.pory"
+	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_3, 2
+# 1305 "data/global.pory"
+	goto_if_set FLAG_TERA_ENABLED, PlayersHouse_2F_EventScript_Notebook_2
+PlayersHouse_2F_EventScript_Notebook_1:
+# 1308 "data/global.pory"
+	goto_if_set FLAG_ITEM_REALMS_FRAY_MEGA_RING, PlayersHouse_2F_EventScript_Notebook_5
+PlayersHouse_2F_EventScript_Notebook_4:
+# 1311 "data/global.pory"
+	dynmultistack 0, 0, FALSE, 6, FALSE, VAR_0x800A, DYN_MULTICHOICE_CB_NONE
+# 1312 "data/global.pory"
+	closemessage
+# 1313 "data/global.pory"
+	switch VAR_RESULT
+# 1314 "data/global.pory"
+	case 0, PlayersHouse_2F_EventScript_Notebook_8
+# 1316 "data/global.pory"
+	case 1, PlayersHouse_2F_EventScript_Notebook_9
+# 1318 "data/global.pory"
+	case 2, PlayersHouse_2F_EventScript_Notebook_10
+# 1320 "data/global.pory"
+	case 3, PlayersHouse_2F_EventScript_Notebook_11
+# 1322 "data/global.pory"
+	case 4, PlayersHouse_2F_EventScript_Notebook_12
+	return
+
+PlayersHouse_2F_EventScript_Notebook_2:
+# 1306 "data/global.pory"
+	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_4, 3
+	goto PlayersHouse_2F_EventScript_Notebook_1
+
+PlayersHouse_2F_EventScript_Notebook_5:
+# 1309 "data/global.pory"
+	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_5, 4
+	goto PlayersHouse_2F_EventScript_Notebook_4
+
+PlayersHouse_2F_EventScript_Notebook_8:
+# 1315 "data/global.pory"
+	helpwindow HELP_POKEDEX
+	return
+
+PlayersHouse_2F_EventScript_Notebook_9:
+# 1317 "data/global.pory"
+	helpwindow HELP_SHOP_INVENTORY
+	return
+
+PlayersHouse_2F_EventScript_Notebook_10:
+# 1319 "data/global.pory"
+	helpwindow HELP_FLYING
+	return
+
+PlayersHouse_2F_EventScript_Notebook_11:
+# 1321 "data/global.pory"
+	helpwindow HELP_TERASTALLIZATION
+	return
+
+PlayersHouse_2F_EventScript_Notebook_12:
+# 1323 "data/global.pory"
+	helpwindow HELP_MEGA_EVOLUTION
+	return
+
+
 Mart_EventScript_TMClerk_Text_0:
 # 264 "data/global.pory"
 	.string "Sorry, I can only sell to trainers who\n"
@@ -1995,6 +2064,31 @@ EventScript_CapCollector_Text_29:
 BufferNumberSring0_Text_0:
 # 1295 "data/global.pory"
 	.string "{STR_VAR_1}$"
+
+PlayersHouse_2F_EventScript_Notebook_Text_0:
+# 1300 "data/global.pory"
+	.string "{PLAYER} flipped open the notebook.\n"
+	.string "Which section would you like to view?$"
+
+PlayersHouse_2F_EventScript_Notebook_Text_1:
+# 1302 "data/global.pory"
+	.string "Pokédex$"
+
+PlayersHouse_2F_EventScript_Notebook_Text_2:
+# 1303 "data/global.pory"
+	.string "Shop Inventory$"
+
+PlayersHouse_2F_EventScript_Notebook_Text_3:
+# 1304 "data/global.pory"
+	.string "Flying$"
+
+PlayersHouse_2F_EventScript_Notebook_Text_4:
+# 1306 "data/global.pory"
+	.string "Terastallization$"
+
+PlayersHouse_2F_EventScript_Notebook_Text_5:
+# 1309 "data/global.pory"
+	.string "Mega Evolution$"
 
 BottleCapCollectorIntro::
 # 761 "data/global.pory"

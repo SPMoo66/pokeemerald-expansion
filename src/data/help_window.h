@@ -3,11 +3,11 @@
 // Remember to modify include/constants/help_window.h to include identifiers so they can be used in event scripts.
 const struct HelpWindow gHelpWindowInfo[] =
 {
-/*    [HELP_START_MENU] =
+/*    [HELP_EXPANSION_1_START] =
     {
-        .header = COMPOUND_STRING("Information: Pokédex"),
-        .desc = COMPOUND_STRING("To access the Pokédex, press {START_BUTTON}\n"
-                                "while you're in the overworld!"
+        .header = COMPOUND_STRING("A New Adventure Begins!"),
+        .desc = COMPOUND_STRING("Travel to Slateport Harbor and meet\n"
+                                "up with your friends to begin!"
                             ),
         .headerFont = FONT_NORMAL,
         .descFont = FONT_NORMAL

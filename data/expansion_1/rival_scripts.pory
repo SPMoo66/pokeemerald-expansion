@@ -10,8 +10,10 @@
 
 script EventScript_JaksonExpansion1Call {
 	lockall
-	pokenavcall ("it's jakson lmao")
+	pokenavcall (Call1_JaksonText)
 	waitmessage
+	playfanfare (MUS_HG_POKEGEAR_REGISTERED)
+	waitfanfare
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 19)
 	releaseall
 }

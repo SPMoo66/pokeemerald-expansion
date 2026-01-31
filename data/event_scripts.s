@@ -1152,6 +1152,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/cynthia.inc"
 	.include "data/cynthias_challenge.inc"
 	.include "data/expansion_1/global.inc"
+	.include "data/expansion_1/rival_text.inc"
 	.include "data/expansion_1/rival_scripts.inc"
 	.include "data/expansion_1/follower_npc.inc"
 	.include "data/expansion_1/scene01.inc"

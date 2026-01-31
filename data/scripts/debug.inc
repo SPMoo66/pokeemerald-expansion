@@ -187,6 +187,7 @@ Debug_EventScript_Script_7::
 	end
 
 Debug_EventScript_Script_8::
+	call EventScript_JaksonExpansion1Call
 	release
 	end
 

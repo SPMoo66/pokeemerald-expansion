@@ -1,0 +1,18 @@
+#Call1
+text Call1_JaksonText {
+	format(	"Jakson: Yo, {PLAYER}!\n"
+			"I'm glad I caught you!\p"
+			"If I didn't see you online, I was\n"
+			"going to message you on ENCORE.\p"
+			"I can't believe you're all still\n"
+			"playing enough to contact you\l"
+			"in-game…\p"
+			"A- Anyway, to the point.\p"
+			"It was… a bit of a rush job… but…\n"
+			"I was able to put together a nice\l"
+			"surprise for the whole group.\p"
+			"Drop by Slateport City when you're\n"
+			"next free. Specifically the Harbor.\p"
+			"I'll assemble the others, too.\n"
+			"See you soon!")
+}

@@ -1667,9 +1667,13 @@
 																			// This does not prevent opening the debug menu
 #define FLAG_PLAY_AS_FIRST_MON_IN_PARTY         (SPECIAL_FLAGS_START + 0xC) // Set this flag to have the player sprite be changed to the first pokemon in party
 #define FLAG_SEMI_PERM_HIDE_FOLLOWER            (SPECIAL_FLAGS_START + 0xD) // Set this flag to hide all following Pokémon until the game is reset
+#define FLAG_SEMI_TEMP_1                        (SPECIAL_FLAGS_START + 0xE) // Used for various things?
 // FLAG_SPECIAL_FLAG_0x400E - 0x407F also exist and are unused
 #define SPECIAL_FLAGS_END                       (SPECIAL_FLAGS_START + 0x7F)
 #define NUM_SPECIAL_FLAGS                       (SPECIAL_FLAGS_END - SPECIAL_FLAGS_START + 1)
+
+// Special Flag aliases
+#define FLAG_REVERSE_SLATEPORT_BOAT_SCENE       FLAG_SEMI_TEMP_1
 
 // Temp flag aliases
 #define FLAG_TEMP_SKIP_GABBY_INTERVIEW          FLAG_TEMP_1

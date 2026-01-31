@@ -5,36 +5,6 @@ const SSTIDAL_REDD = 8
 const SSTIDAL_SAKURA = 9
 const SSTIDAL_BARON = 10
 
-script SlateportRegionMap_BoatSceneInit {
-	lock
-	setflag (FLAG_SYS_SPAWN_INVISIBLE)
-	warp (MAP_SLATEPORT_REGION_MAP, 10, 8)
-	waitstate
-}
-
-script SlateportRegionMap_BoatScene {
-	lock
-	playse (SE_RG_SS_ANNE_HORN)
-	delay (50)
-	special (SpawnCameraObject)
-	applymovement (LOCALID_CAMERA, SlateportRegionMap_Movement)
-	applymovement (SLATEPORTREGIONMAP_BOAT, SlateportRegionMap_Movement)
-	waitmovement (0)
-	special (RemoveCameraObject)
-	setvar (VAR_TEMP_0, 1)
-	setflag (FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY) // temporarily hides Mr Briney and Peeko, re-clears later
-	setvar (VAR_EMERALBODY_RIVAL_STATE, 20) // temporary until the rest of the script is created, this should be much earlier
-	warp (MAP_SS_TIDAL_CORRIDOR, 11, 3)
-	waitstate
-}
-
-movement SlateportRegionMap_Movement {
-	walk_right * 2
-	walk_down
-	walk_right * 2
-	walk_down * 16
-}
-
 script SSTidal_Scene01_OnTransition {
 	clearflag (FLAG_TEMP_4)
 }

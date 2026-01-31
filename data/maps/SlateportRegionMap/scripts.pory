@@ -1,5 +1,78 @@
+const SLATEPORTREGIONMAP_BOAT = 1
+
 mapscripts SlateportRegionMap_MapScripts {
 	MAP_SCRIPT_ON_FRAME_TABLE [
 		VAR_TEMP_0, 0: SlateportRegionMap_BoatScene
 	]
+	MAP_SCRIPT_ON_TRANSITION {
+		if (flag(FLAG_REVERSE_SLATEPORT_BOAT_SCENE)) {
+			setobjectxyperm (SLATEPORTREGIONMAP_BOAT, 14, 26)
+			setvar (VAR_TEMP_1, 1)			
+		}
+	}
+	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+		VAR_TEMP_1, 1 {
+			turnobject (SLATEPORTREGIONMAP_BOAT, DIR_NORTH)
+			setvar (VAR_TEMP_1, 0)
+		}
+	]
+}
+
+script SlateportRegionMap_BoatSceneInit {
+	lock
+	setflag (FLAG_SYS_SPAWN_INVISIBLE)
+	if (!flag(FLAG_REVERSE_SLATEPORT_BOAT_SCENE)) {
+		warp (MAP_SLATEPORT_REGION_MAP, 10, 8)
+	}
+	else {
+		warp (MAP_SLATEPORT_REGION_MAP, 14, 26)
+	}
+	waitstate
+}
+
+script SlateportRegionMap_BoatScene {
+	lock
+	playse (SE_RG_SS_ANNE_HORN)
+	if (!flag(FLAG_REVERSE_SLATEPORT_BOAT_SCENE)) {
+		delay (50)
+	}
+	special (SpawnCameraObject)
+	if (!flag(FLAG_REVERSE_SLATEPORT_BOAT_SCENE)) {
+		applymovement (LOCALID_CAMERA, SlateportRegionMap_Movement)
+		applymovement (SLATEPORTREGIONMAP_BOAT, SlateportRegionMap_Movement)
+	}
+	else {
+		applymovement (LOCALID_CAMERA, SlateportRegionMap_MovementReturn)
+		applymovement (SLATEPORTREGIONMAP_BOAT, SlateportRegionMap_MovementReturn)
+	}
+	waitmovement (0)
+	special (RemoveCameraObject)
+	setvar (VAR_TEMP_0, 1)
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 19) {
+		setflag (FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY) // temporarily hides Mr Briney and Peeko, re-clears later
+		setvar (VAR_EMERALBODY_RIVAL_STATE, 20) // temporary until the rest of the script is created, this should be much earlier
+		warp (MAP_SS_TIDAL_CORRIDOR, 11, 3)
+	}
+	elif (flag(FLAG_REVERSE_SLATEPORT_BOAT_SCENE)) {
+		clearflag (FLAG_REVERSE_SLATEPORT_BOAT_SCENE)
+		warp (MAP_SLATEPORT_CITY_HARBOR, 8, 11)
+	}
+	else {
+		warp (MAP_MAUVE_CAMP, 0)
+	}
+	waitstate
+}
+
+movement SlateportRegionMap_Movement {
+	walk_right * 2
+	walk_down
+	walk_right * 2
+	walk_down * 17
+}
+
+movement SlateportRegionMap_MovementReturn {
+	walk_up * 17
+	walk_left * 2
+	walk_up
+	walk_left * 2
 }

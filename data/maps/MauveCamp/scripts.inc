@@ -80,13 +80,25 @@ MauveCamp_Rowboat::
 	msgbox MauveCamp_Rowboat_Text_0, MSGBOX_YESNO
 # 58 "data/maps/MauveCamp/scripts.pory"
 	closemessage
+# 59 "data/maps/MauveCamp/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_ne MauveCamp_Rowboat_1
+	return
+
+MauveCamp_Rowboat_1:
+# 60 "data/maps/MauveCamp/scripts.pory"
+	setvar VAR_EMERALBODY_RIVAL_STATE, 20
+# 61 "data/maps/MauveCamp/scripts.pory"
+	setflag FLAG_REVERSE_SLATEPORT_BOAT_SCENE
+# 62 "data/maps/MauveCamp/scripts.pory"
+	goto SlateportRegionMap_BoatSceneInit
 	return
 
 
 MauveCamp_Pot::
-# 62 "data/maps/MauveCamp/scripts.pory"
+# 67 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Pot_Text_0
-# 65 "data/maps/MauveCamp/scripts.pory"
+# 70 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
@@ -142,7 +154,7 @@ MauveCamp_Rowboat_Text_0:
 	.string "Use it to return to Hoenn?$"
 
 MauveCamp_Pot_Text_0:
-# 62 "data/maps/MauveCamp/scripts.pory"
+# 67 "data/maps/MauveCamp/scripts.pory"
 	.string "{PLAYER} found one Leftovers!\n"
 	.string "… … …\l"
 	.string "Just kidding!$"

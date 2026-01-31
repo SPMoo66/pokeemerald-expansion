@@ -170,6 +170,7 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
+	setvar VAR_EMERALBODY_RIVAL_STATE, 19
 	call SlateportRegionMap_BoatSceneInit
 	release
 	end

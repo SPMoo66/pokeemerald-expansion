@@ -80,8 +80,8 @@
   ],
   "warp_events": [
     {
-      "x": 20,
-      "y": 18,
+      "x": 16,
+      "y": 16,
       "elevation": 0,
       "dest_map": "MAP_MAUVE_CAMP",
       "dest_warp_id": "0"

@@ -1,1 +1,27 @@
-mapscripts FarOffSeaWest_MapScripts {}
+mapscripts FarOffSeaWest_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (!flag(FLAG_SHOW_FAR_OFF_SEA_WEST_BOATS)) {
+			setmetatile(54, 8, 0x07E, FALSE)
+			setmetatile(55, 8, 0x07E, FALSE)
+			setmetatile(56, 8, 0x07E, FALSE)
+			setmetatile(57, 8, 0x205, FALSE)
+			setmetatile(54, 9, 0x07E, FALSE)
+			setmetatile(55, 9, 0x07E, FALSE)
+			setmetatile(56, 9, 0x07E, FALSE)
+			setmetatile(57, 9, 0x07E, FALSE)
+			setmetatile(53, 10, 0x07E, FALSE)
+			setmetatile(54, 10, 0x07E, FALSE)
+			setmetatile(55, 10, 0x07E, FALSE)
+			setmetatile(56, 10, 0x07E, FALSE)
+			setmetatile(57, 10, 0x07E, FALSE)
+			setmetatile(53, 11, 0x07E, FALSE)
+			setmetatile(54, 11, 0x07E, FALSE)
+			setmetatile(55, 11, 0x07E, FALSE)
+			setmetatile(56, 11, 0x07E, FALSE)
+			setmetatile(53, 12, 0x07E, FALSE)
+			setmetatile(54, 12, 0x07E, FALSE)
+			setmetatile(55, 12, 0x07E, FALSE)
+			setmetatile(56, 12, 0x07E, FALSE)
+		}
+	}
+}

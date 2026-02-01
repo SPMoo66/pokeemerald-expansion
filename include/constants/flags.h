@@ -1674,6 +1674,7 @@
 
 // Special Flag aliases
 #define FLAG_REVERSE_SLATEPORT_BOAT_SCENE       FLAG_SEMI_TEMP_1
+#define FLAG_SHOW_FAR_OFF_SEA_WEST_BOATS        FLAG_SEMI_TEMP_1
 
 // Temp flag aliases
 #define FLAG_TEMP_SKIP_GABBY_INTERVIEW          FLAG_TEMP_1

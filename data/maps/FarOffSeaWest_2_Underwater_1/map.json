@@ -78,14 +78,6 @@
     },
     {
       "type": "hidden_item",
-      "x": 62,
-      "y": 72,
-      "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_TEMP_1"
-    },
-    {
-      "type": "hidden_item",
       "x": 61,
       "y": 2,
       "elevation": 0,

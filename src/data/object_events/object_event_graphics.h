@@ -447,6 +447,11 @@ const u32 gObjectEventPic_Galactic_Grunt_M[] = INCBIN_U32("graphics/object_event
 const u16 gObjectEventPal_Galactic_Grunt[] = INCBIN_U16("graphics/object_events/palettes/galactic_grunt.gbapal");
 const u32 gObjectEventPic_Galactic_Grunt_F[] = INCBIN_U32("graphics/object_events/pics/people/galactic_grunt_f.4bpp");
 
+const u32 gObjectEventPic_FishBowl[] = INCBIN_U32("graphics/object_events/pics/misc/fish_bowl.4bpp");
+const u16 gObjectEventPal_FishBowl[] = INCBIN_U16("graphics/object_events/palettes/fish_bowl.gbapal");
+const u32 gObjectEventPic_Dynamite[] = INCBIN_U32("graphics/object_events/pics/misc/dynamite.4bpp");
+const u16 gObjectEventPal_Dynamite[] = INCBIN_U16("graphics/object_events/palettes/dynamite.gbapal");
+
 //EeveeExpo Overworld Trainers
 const u32 gObjectEventPic_Kindler[] = INCBIN_U32("graphics/object_events/pics/people/custom/kindler.4bpp");
 const u32 gObjectEventPic_BirdKeeper[] = INCBIN_U32("graphics/object_events/pics/people/custom/bird_keeper.4bpp");

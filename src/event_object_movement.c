@@ -551,6 +551,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Cynthia,               OBJ_EVENT_PAL_TAG_CYNTHIA},
     {gObjectEventPal_Galactic_Grunt,        OBJ_EVENT_PAL_TAG_GALACTIC_GRUNT},
     {gObjectEventPal_AllBlack,              OBJ_EVENT_PAL_TAG_ALL_BLACK},
+    {gObjectEventPal_FishBowl,              OBJ_EVENT_PAL_TAG_FISH_BOWL},
+    {gObjectEventPal_Dynamite,              OBJ_EVENT_PAL_TAG_DYNAMITE},
 
     {gObjectEventPal_Wally,                 OBJ_EVENT_PAL_TAG_WALLY},
     {gObjectEventPal_Wallace,               OBJ_EVENT_PAL_TAG_WALLACE},

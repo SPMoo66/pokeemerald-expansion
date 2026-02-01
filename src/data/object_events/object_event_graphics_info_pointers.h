@@ -273,6 +273,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cynthia;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Galactic_Grunt_M;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Galactic_Grunt_F;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShadowBaron;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FishBowl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dynamite;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kindler;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BirdKeeper;
@@ -551,6 +553,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_GALACTIC_GRUNT_M] =         &gObjectEventGraphicsInfo_Galactic_Grunt_M,
     [OBJ_EVENT_GFX_GALACTIC_GRUNT_F] =         &gObjectEventGraphicsInfo_Galactic_Grunt_F,
     [OBJ_EVENT_GFX_SHADOW_BARON] =             &gObjectEventGraphicsInfo_ShadowBaron,
+    [OBJ_EVENT_GFX_FISH_BOWL] =                &gObjectEventGraphicsInfo_FishBowl,
+    [OBJ_EVENT_GFX_DYNAMITE] =                 &gObjectEventGraphicsInfo_Dynamite,
     [OBJ_EVENT_GFX_KINDLER] =                  &gObjectEventGraphicsInfo_Kindler,
     [OBJ_EVENT_GFX_BIRD_KEEPER] =              &gObjectEventGraphicsInfo_BirdKeeper,
     [OBJ_EVENT_GFX_GUITARIST] =                &gObjectEventGraphicsInfo_Guitarist,

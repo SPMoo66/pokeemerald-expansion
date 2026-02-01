@@ -1441,6 +1441,14 @@ static const struct SpriteFrameImage sPicTable_Galactic_Grunt_F[] = {
     overworld_ascending_frames(gObjectEventPic_Galactic_Grunt_F, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_FishBowl[] = {
+    overworld_ascending_frames(gObjectEventPic_FishBowl, 2, 2),
+};
+
+static const struct SpriteFrameImage sPicTable_Dynamite[] = {
+    overworld_ascending_frames(gObjectEventPic_Dynamite, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_Kindler[] = {
     overworld_ascending_frames(gObjectEventPic_Kindler, 2, 4),
 };

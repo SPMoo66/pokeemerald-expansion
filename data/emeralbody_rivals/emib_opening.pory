@@ -103,8 +103,8 @@ script Intro_EmibOpening {
 		closemessage
 		delay (16)
 	}
-	else { //no
-		random (4) //0-4
+	else { // no
+		random (5) // 0-4
 		copyvar (VAR_EMERALBODY_RIVAL, VAR_RESULT)
 	}
 

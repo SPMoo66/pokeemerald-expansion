@@ -39,7 +39,10 @@ script Rival_Scene01 {
 				waitmovement (0)
 		}
 		call (GetRivalForNameBox)
-		switch (var(VAR_EMERALBODY_RIVAL)) {
+		if (!var(VAR_TEMP_A)) { // Fill VAR_TEMP_A with the desired rival to overwrite the default
+			copyvar (VAR_TEMP_A, VAR_EMERALBODY_RIVAL)
+		}
+		switch (var(VAR_TEMP_A)) {
 			case 1:
 				msgbox(Scene01_HarperText)
 			case 2:
@@ -125,7 +128,7 @@ movement Baron_Town01_Move {
 
 
 #Scene02
-script Rival_Scene02 {
+script Rival_Scene02 { // (Battle01)
 	if (var(VAR_EMERALBODY_RIVAL_STATE) == 1) {
 		lock
 		setflag (FLAG_CHALLENGING_TRAINER)
@@ -154,7 +157,10 @@ script Rival_Scene02 {
 		call (GetRivalForNameBox)
 		call (GetRivalMusic)
 		setflag (FLAG_CHALLENGING_TRAINER)
-		switch (var(VAR_EMERALBODY_RIVAL)) {
+		if (!var(VAR_TEMP_A)) { // Fill VAR_TEMP_A with the desired rival to overwrite the default
+			copyvar (VAR_TEMP_A, VAR_EMERALBODY_RIVAL)
+		}
+		switch (var(VAR_TEMP_A)) {
 			case 1:
 				msgbox(Scene02_HarperText_PreBattle)
 				trainerbattle_no_intro (TRAINER_HARPER_1, Scene02_HarperText_BattleVictory)
@@ -275,7 +281,10 @@ script Rival_Scene03 {
 	applymovement (RIVAL_RUSTBORO, Common_Movement_WalkLeft2)
 	waitmovement (0)
 	call (GetRivalForNameBox)
-	switch (var(VAR_EMERALBODY_RIVAL)) {
+	if (!var(VAR_TEMP_A)) { // Fill VAR_TEMP_A with the desired rival to overwrite the default
+		copyvar (VAR_TEMP_A, VAR_EMERALBODY_RIVAL)
+	}
+	switch (var(VAR_TEMP_A)) {
 		case 1:
 			msgbox(Scene03_HarperText)
 		case 2:

@@ -1,0 +1,6 @@
+script AllRivalsGraphicsMusicRandomize {
+	if (var(VAR_EMERALBODY_RIVAL) == 5) {
+		random (5) // 0-4
+		copyvar (VAR_TEMP_A, VAR_RESULT)
+	}
+}

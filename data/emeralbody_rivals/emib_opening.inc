@@ -41,7 +41,7 @@ Intro_EmibOpening::
 	compare VAR_RESULT, 1
 	goto_if_eq Intro_EmibOpening_2
 # 107 "data/emeralbody_rivals/emib_opening.pory"
-	random 4
+	random 5
 # 108 "data/emeralbody_rivals/emib_opening.pory"
 	copyvar VAR_EMERALBODY_RIVAL, VAR_RESULT
 Intro_EmibOpening_1:

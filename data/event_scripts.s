@@ -1126,6 +1126,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/birch_speech.inc"
     .include "data/scripts/dexnav.inc"
 	.include "data/global.inc"
+	.include "data/emeralbody_rivals/all_rivals.inc"
 	.include "data/emeralbody_rivals/emib_opening.inc"
 	.include "data/emeralbody_rivals/rival_battles.inc"
 	.include "data/emeralbody_rivals/rival_scene04.inc"
@@ -1145,6 +1146,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/recommended_hacks.inc"
 	.include "data/cynthia.inc"
 	.include "data/cynthias_challenge.inc"
+	.include "data/conversion_scripts.inc"
 
 	.include "data/maps/LeafyClearing/scripts.inc"
 	.include "data/maps/CaveOfDreams/scripts.inc"
@@ -1181,5 +1183,4 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MagmaHideout_PortalRoom/scripts.inc"
 	.include "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.inc"
 	.include "data/maps/OvergrownJungle/scripts.inc"
-
 	.include "data/maps/LilycoveCity_BattleSimulator/scripts.inc"

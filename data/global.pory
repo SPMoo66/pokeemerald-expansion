@@ -452,7 +452,10 @@ mart TMMart8 {
 
 // Plays Encounter BGM for Emeralbody Rival
 script Common_EventScript_PlayEmRivalBgm {
-	switch (var(VAR_EMERALBODY_RIVAL)) {
+	if (!var(VAR_TEMP_A)) { // Fill VAR_TEMP_A with the desired rival to overwrite the default
+		copyvar (VAR_TEMP_A, VAR_EMERALBODY_RIVAL)
+	}
+	switch (var(VAR_TEMP_A)) {
 		case 1:
 			playbgm (MUS_DP_DAWN, FALSE)
 		case 2:
@@ -987,7 +990,10 @@ text CommonText_Vicky {
 
 
 script GetRivalForNameBox {
-	switch (var(VAR_EMERALBODY_RIVAL)) {
+	if (!var(VAR_TEMP_A)) { // Fill VAR_TEMP_A with the desired rival to overwrite the default
+		copyvar (VAR_TEMP_A, VAR_EMERALBODY_RIVAL)
+	}
+	switch (var(VAR_TEMP_A)) {
 		case 1:
 			speakername (CommonText_Harper)
 		case 2:
@@ -1003,7 +1009,10 @@ script GetRivalForNameBox {
 
 script GetRivalMusic {
 	setflag (FLAG_SYS_SET_BATTLE_BGM)
-	switch (var(VAR_EMERALBODY_RIVAL)) {
+	if (!var(VAR_TEMP_A)) { // Fill VAR_TEMP_A with the desired rival to overwrite the default
+		copyvar (VAR_TEMP_A, VAR_EMERALBODY_RIVAL)
+	}
+	switch (var(VAR_TEMP_A)) {
 		case 1:
 			setvar (VAR_BATTLE_BGM, MUS_HG_VS_TRAINER)
 		case 2:

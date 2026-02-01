@@ -18,6 +18,7 @@ PetalburgCity_OnTransition:
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 1, EventScript_Clear_FlagTemp1 @ Show Rival
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 2, EventScript_Clear_FlagTemp2 @ Show Rivals
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 8, EventScript_Clear_FlagTemp3 @ Show Rivals
+	call AllRivalsGraphicsMusicRandomize
 	call Common_EventScript_SetupEmRivalGfxId
 	end
 

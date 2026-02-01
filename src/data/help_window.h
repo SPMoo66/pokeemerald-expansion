@@ -12,6 +12,18 @@ const struct HelpWindow gHelpWindowInfo[] =
         .headerFont = FONT_NORMAL,
         .descFont = FONT_NORMAL
     },*/
+    [HELP_BATTLE_CONTROLS] =
+    {
+        .header = COMPOUND_STRING("Information: Battle Controls"),
+        .desc = COMPOUND_STRING("More actions have been added to battles!\n\n"
+                                "Press {R_BUTTON} to throw the selected Pokéball\n"
+                                "Hold {R_BUTTON} and press {DPAD_LEFTRIGHT} to cycle Pokéballs\n"
+                                "Press {L_BUTTON} for Move Information\n"
+                                "Hold {L_BUTTON} to force Battle Speed 1x\n"
+                                "Press {START_BUTTON} to Mega Evolve or Terastallize\n"
+                                "Press {SELECT_BUTTON} for the Battle Debug Menu"
+                            ),
+    },
     [HELP_POKEDEX] =
     {
         .header = COMPOUND_STRING("Information: Pokédex"),

@@ -1299,27 +1299,30 @@ script BufferNumberSring0 {
 script PlayersHouse_2F_EventScript_Notebook {
 	msgbox (format ("{PLAYER} flipped open the notebook.\n"
 					"Which section would you like to view?"))
-	dynmultipush("Pokédex", 0)
-	dynmultipush("Shop Inventory", 1)
-	dynmultipush("Flying", 2)
+	dynmultipush("Battle Controls", 0)
+	dynmultipush("Pokédex", 1)
+	dynmultipush("Shop Inventory", 2)
+	dynmultipush("Flying", 3)
 	if (flag(FLAG_TERA_ENABLED)) {
-		dynmultipush("Terastallization", 3)
+		dynmultipush("Terastallization", 4)
 	}
 	if (flag(FLAG_ITEM_REALMS_FRAY_MEGA_RING)) {
-		dynmultipush("Mega Evolution", 4)
+		dynmultipush("Mega Evolution", 5)
 	}
 	dynmultistack(0, 0, FALSE, 6, FALSE, VAR_0x800A, DYN_MULTICHOICE_CB_NONE)
 	closemessage
 	switch (var(VAR_RESULT)) {
 		case 0:
-			helpwindow(HELP_POKEDEX)
+			helpwindow(HELP_BATTLE_CONTROLS)
 		case 1:
-			helpwindow(HELP_SHOP_INVENTORY)
+			helpwindow(HELP_POKEDEX)
 		case 2:
-			helpwindow(HELP_FLYING)
+			helpwindow(HELP_SHOP_INVENTORY)
 		case 3:
-			helpwindow(HELP_TERASTALLIZATION)
+			helpwindow(HELP_FLYING)
 		case 4:
+			helpwindow(HELP_TERASTALLIZATION)
+		case 5:
 			helpwindow(HELP_MEGA_EVOLUTION)
 	}
 }

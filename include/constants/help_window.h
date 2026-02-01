@@ -1,5 +1,6 @@
 // Add new IDs here
 enum {
+    HELP_BATTLE_CONTROLS,
     HELP_POKEDEX,
     HELP_SHOP_INVENTORY,
     HELP_FLYING,

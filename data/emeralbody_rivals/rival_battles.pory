@@ -418,7 +418,7 @@ const BARON_BATTLE03 = 14
 const BARON_BATTLE04 = 27
 
 script Baron_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
-	if (var(VAR_EMERALBODY_RIVAL) == 0) { // Check if Baron is your rival
+	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && var(VAR_EMERALBODY_RIVAL) == 0) || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 7 && var(VAR_EMERALBODY_RIVAL) == 5)) { // Check if Baron is your rival
 		lock
 		setvar (VAR_TEMP_A, 0)
 		call (Common_EventScript_PlayEmRivalBgm)
@@ -443,7 +443,7 @@ script Baron_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		msgbox (Battle02_BaronText_PostBattle, MSGBOX_DEFAULT)
 		closemessage
 		fadedefaultbgm
-		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 8)
 		clearflag (FLAG_CHALLENGING_TRAINER)
 		setflag (FLAG_TEMP_2)
 		fadescreenswapbuffers (FADE_TO_BLACK)
@@ -451,6 +451,7 @@ script Baron_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		fadescreenswapbuffers (FADE_FROM_BLACK)
 		release
 	}
+	setflag (FLAG_TEMP_6)
 }
 
 script Baron_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1

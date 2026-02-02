@@ -12,10 +12,15 @@ DewfordTown_OnTransition:
 
 DewfordTown_EventScript_CheckBaron:
 	call_if_eq VAR_EMERALBODY_RIVAL, 0, DewfordTown_EventScript_CheckBaron2
+	call_if_eq VAR_EMERALBODY_RIVAL, 5, DewfordTown_EventScript_CheckBaron3
 	return
 
 DewfordTown_EventScript_CheckBaron2:
 	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 0, EventScript_Clear_FlagTemp2
+	return
+
+DewfordTown_EventScript_CheckBaron3:
+	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 7, EventScript_Clear_FlagTemp2
 	return
 
 DewfordTown_EventScript_Briney::

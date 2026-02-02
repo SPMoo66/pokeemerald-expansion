@@ -60,7 +60,7 @@ script Harper_Battle02 {
 		waitmovement (0)
 		removeobject (HARPER_BATTLE02)
 		fadedefaultbgm
-		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 6)
 		clearflag (FLAG_CHALLENGING_TRAINER)
 		release
 	}
@@ -142,7 +142,7 @@ const SAKURA_BATTLE03 = 8
 const SAKURA_BATTLE04 = 1
 
 script Sakura_Battle02 {
-	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && var(VAR_EMERALBODY_RIVAL) == 4) || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 1 && var(VAR_EMERALBODY_RIVAL) == 5)) {
+	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && var(VAR_EMERALBODY_RIVAL) == 4) || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 6 && var(VAR_EMERALBODY_RIVAL) == 5)) {
 		lock
 		setvar (VAR_TEMP_A, 4)
 		call (Common_EventScript_PlayEmRivalBgm)
@@ -172,7 +172,7 @@ script Sakura_Battle02 {
 		waitmovement (0)
 		removeobject (SAKURA_BATTLE02)
 		fadedefaultbgm
-		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 7)
 		clearflag (FLAG_CHALLENGING_TRAINER)
 		release
 	}

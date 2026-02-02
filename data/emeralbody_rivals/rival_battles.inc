@@ -57,7 +57,7 @@ Harper_Battle02_2:
 # 62 "data/emeralbody_rivals/rival_battles.pory"
 	fadedefaultbgm
 # 63 "data/emeralbody_rivals/rival_battles.pory"
-	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 6
 # 64 "data/emeralbody_rivals/rival_battles.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
 # 65 "data/emeralbody_rivals/rival_battles.pory"
@@ -218,7 +218,7 @@ Sakura_Battle02::
 	goto_if_eq Sakura_Battle02_4
 Sakura_Battle02_3:
 # 145 "data/emeralbody_rivals/rival_battles.pory"
-	compare VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
+	compare VAR_EMERALBODY_RIVAL_BATTLE_STATE, 6
 	goto_if_eq Sakura_Battle02_7
 Sakura_Battle02_1:
 # 179 "data/emeralbody_rivals/rival_battles.pory"
@@ -285,7 +285,7 @@ Sakura_Battle02_2:
 # 174 "data/emeralbody_rivals/rival_battles.pory"
 	fadedefaultbgm
 # 175 "data/emeralbody_rivals/rival_battles.pory"
-	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 7
 # 176 "data/emeralbody_rivals/rival_battles.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
 # 177 "data/emeralbody_rivals/rival_battles.pory"

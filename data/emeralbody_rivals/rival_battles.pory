@@ -1,8 +1,32 @@
-	# State descriptions for VAR_EMERALBODY_RIVAL_BATTLE_STATE
-	#  1: Set after winning Battle02
-	#  2: Set after winning Battle03
-	#  3: Set after winning Battle04
-	#  4: Set after winning Battle05
+	# Old state descriptions for VAR_EMERALBODY_RIVAL_BATTLE_STATE
+	#   1: Set after winning Battle02
+	#   2: Set after winning Battle03
+	#   3: Set after winning Battle04
+	#   4: Set after winning Battle05
+
+
+	# New state descriptions for VAR_EMERALBODY_RIVAL_BATTLE_STATE
+	#   6: Set after defeating Harper 2
+	#   7: Set after defeating Sakura 2
+	#   8: Set after defeating Baron 2
+	#   9: Set after defeating Redd 2
+	#  10: Set after defeating Jakson 2
+	#  11: Set after defeating Sakura 3
+	#  12: Set after defeating Harper 3
+	#  13: Set after defeating Baron 3
+	#  14: Set after defeating Jakson 3
+	#  15: Set after defeating Redd 3
+	#  16: Set after defeating Baron 4
+	#  17: Set after defeating Harper 4
+	#  18: Set after defeating Redd 4
+	#  19: Set after defeating Sakura 4
+	#  20: Set after defeating Jakson 4
+	#  21: Set after defeating Jakson 5
+	#  22: Set after defeating Harper 5
+	#  23: Set after defeating Redd 5
+	#  24: Set after defeating Sakura 5
+	#  25: Set after defeating Baron 5 OR any other rival if not playing "All Rivals" mode
+
 
 # Harper
 
@@ -10,9 +34,10 @@ const HARPER_BATTLE02 = 4
 const HARPER_BATTLE03 = 15
 const HARPER_BATTLE04 = 20
 
-script Harper_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
-	if (var(VAR_EMERALBODY_RIVAL) == 1) { // Check if Harper is your rival
+script Harper_Battle02 {
+	if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && (var(VAR_EMERALBODY_RIVAL) == 1 || var(VAR_EMERALBODY_RIVAL) == 5)) {
 		lock
+		setvar (VAR_TEMP_A, 1)
 		call (Common_EventScript_PlayEmRivalBgm)
 		addobject (HARPER_BATTLE02)
 		playse (SE_EXIT)
@@ -39,6 +64,7 @@ script Harper_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		clearflag (FLAG_CHALLENGING_TRAINER)
 		release
 	}
+	setflag (FLAG_TEMP_6)
 }
 
 movement Harper_PlayerMoves {
@@ -48,9 +74,10 @@ movement Harper_PlayerMoves {
 	unlock_facing_direction
 }
 
-script Harper_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
+script Harper_Battle03 {
 	if (var(VAR_EMERALBODY_RIVAL) == 1 && var(VAR_PETALBURG_GYM_STATE) >= 6) { // Check if Harper is your rival. Also check if beaten Gyms 1-4
 		lock
+		setvar (VAR_TEMP_A, 1)
 		call (Common_EventScript_PlayEmRivalBgm)
 		addobject (HARPER_BATTLE03)
 		applymovement (HARPER_BATTLE03, Common_Movement_WalkUp3)
@@ -81,6 +108,7 @@ script Harper_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 script Harper_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 	if (var(VAR_EMERALBODY_RIVAL) == 1) { // Check if Harper is your rival
 		lock
+		setvar (VAR_TEMP_A, 1)
 		call (Common_EventScript_PlayEmRivalBgm)
 		addobject (HARPER_BATTLE04)
 		applymovement (HARPER_BATTLE04, Common_Movement_WalkUp6)
@@ -113,9 +141,10 @@ const SAKURA_BATTLE02 = 3
 const SAKURA_BATTLE03 = 8
 const SAKURA_BATTLE04 = 1
 
-script Sakura_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
-	if (var(VAR_EMERALBODY_RIVAL) == 4) { // Check if Sakura is your rival
+script Sakura_Battle02 {
+	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && var(VAR_EMERALBODY_RIVAL) == 4) || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 1 && var(VAR_EMERALBODY_RIVAL) == 5)) {
 		lock
+		setvar (VAR_TEMP_A, 4)
 		call (Common_EventScript_PlayEmRivalBgm)
 		addobject (SAKURA_BATTLE02)
 		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
@@ -147,10 +176,12 @@ script Sakura_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		clearflag (FLAG_CHALLENGING_TRAINER)
 		release
 	}
+	setflag (FLAG_TEMP_6)
 }
 
 script Sakura_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 	lock
+	setvar (VAR_TEMP_A, 4)
 	call (Common_EventScript_PlayEmRivalBgm)
 	call (GetRivalForNameBox)
 	msgbox (Battle03_SakuraText_PreBattle, MSGBOX_DEFAULT)
@@ -187,6 +218,7 @@ script Sakura_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 
 script Sakura_Battle04 {
 	lock
+	setvar (VAR_TEMP_A, 4)
 	call (Common_EventScript_PlayEmRivalBgm)
 	call (GetRivalForNameBox)
 	msgbox (Battle04_SakuraText_PreBattle, MSGBOX_DEFAULT)
@@ -217,6 +249,7 @@ const REDD_BATTLE04 = 10
 script Redd_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 	if (var(VAR_EMERALBODY_RIVAL) == 3) { // Check if Redd is your rival
 		lock
+		setvar (VAR_TEMP_A, 3)
 		call (Common_EventScript_PlayEmRivalBgm)
 		call (GetRivalForNameBox)
 		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
@@ -273,6 +306,7 @@ script Redd_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 script Redd_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 	if (var(VAR_EMERALBODY_RIVAL) == 3) { // Check if Redd is your rival
 		lock
+		setvar (VAR_TEMP_A, 3)
 		call (Common_EventScript_PlayEmRivalBgm)
 		call (GetRivalForNameBox)
 		addobject (REDD_BATTLE03)
@@ -332,6 +366,7 @@ script Redd_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 script Redd_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 	if (var(VAR_EMERALBODY_RIVAL) == 3 && flag(FLAG_BADGE07_GET)) { // Check if Redd is your rival and if beaten Mossdeep gym
 		lock
+		setvar (VAR_TEMP_A, 3)
 		call (Common_EventScript_PlayEmRivalBgm)
 		call (GetRivalForNameBox)
 		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
@@ -385,6 +420,7 @@ const BARON_BATTLE04 = 27
 script Baron_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 	if (var(VAR_EMERALBODY_RIVAL) == 0) { // Check if Baron is your rival
 		lock
+		setvar (VAR_TEMP_A, 0)
 		call (Common_EventScript_PlayEmRivalBgm)
 		call (GetRivalForNameBox)
 		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
@@ -420,6 +456,7 @@ script Baron_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 script Baron_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 	if (var(VAR_EMERALBODY_RIVAL) == 0 && flag(FLAG_BADGE05_GET)) { // Check if Baron is your rival and if beaten Petalburg gym
 		lock
+		setvar (VAR_TEMP_A, 0)
 		call (Common_EventScript_PlayEmRivalBgm)
 		call (GetRivalForNameBox)
 		addobject (BARON_BATTLE03)
@@ -461,6 +498,7 @@ script Baron_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 script Baron_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 	if (var(VAR_EMERALBODY_RIVAL) == 0 && flag(FLAG_MET_TEAM_AQUA_HARBOR)) { // Check if Baron is your rival and if ready for Aqua Hideout
 		lock
+		setvar (VAR_TEMP_A, 0)
 		call (Common_EventScript_PlayEmRivalBgm)
 		call (GetRivalForNameBox)
 		addobject (BARON_BATTLE04)
@@ -503,6 +541,7 @@ const JAKSON_BATTLE04 = 4
 script Jakson_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 	if (var(VAR_EMERALBODY_RIVAL) == 2) { // Check if Jakson is your rival
 		lock
+		setvar (VAR_TEMP_A, 2)
 		call (Common_EventScript_PlayEmRivalBgm)
 		delay (30)
 		call (GetRivalForNameBox)
@@ -560,6 +599,7 @@ script Jakson_Battle02_Block {
 script Jakson_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 	if (var(VAR_EMERALBODY_RIVAL) == 2) { // Check if Jakson is your rival
 		lock
+		setvar (VAR_TEMP_A, 2)
 		call (Common_EventScript_PlayEmRivalBgm)
 		call (GetRivalForNameBox)
 		addobject (JAKSON_BATTLE03)
@@ -597,6 +637,7 @@ script Jakson_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 
 script Jakson_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2,  There are checks on the map to see if Jakson is your rival
 	lock
+	setvar (VAR_TEMP_A, 2)
 	call (Common_EventScript_PlayEmRivalBgm)
 	call (GetRivalForNameBox)
 	delay (30)

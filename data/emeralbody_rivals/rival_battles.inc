@@ -1575,27 +1575,27 @@ Rival_Battle05_14:
 
 Rival_Battle05_16:
 # 709 "data/emeralbody_rivals/rival_battles.pory"
-	setvar VAR_TEMP_A, 2
+	setvar VAR_TEMP_A, 1
 	goto Rival_Battle05_4
 
 Rival_Battle05_17:
 # 711 "data/emeralbody_rivals/rival_battles.pory"
-	setvar VAR_TEMP_A, 1
+	setvar VAR_TEMP_A, 3
 	goto Rival_Battle05_4
 
 Rival_Battle05_18:
 # 713 "data/emeralbody_rivals/rival_battles.pory"
-	setvar VAR_TEMP_A, 3
+	setvar VAR_TEMP_A, 4
 	goto Rival_Battle05_4
 
 Rival_Battle05_19:
 # 715 "data/emeralbody_rivals/rival_battles.pory"
-	setvar VAR_TEMP_A, 4
+	setvar VAR_TEMP_A, 5
 	goto Rival_Battle05_4
 
 Rival_Battle05_20:
 # 717 "data/emeralbody_rivals/rival_battles.pory"
-	setvar VAR_TEMP_A, 5
+	setvar VAR_TEMP_A, 2
 	goto Rival_Battle05_4
 
 Rival_Battle05_22:
@@ -1605,27 +1605,27 @@ Rival_Battle05_22:
 
 Rival_Battle05_26:
 # 741 "data/emeralbody_rivals/rival_battles.pory"
-	call Jakson_Battle05
+	call Harper_Battle05
 	goto Rival_Battle05_7
 
 Rival_Battle05_27:
 # 743 "data/emeralbody_rivals/rival_battles.pory"
-	call Harper_Battle05
+	call Redd_Battle05
 	goto Rival_Battle05_7
 
 Rival_Battle05_28:
 # 745 "data/emeralbody_rivals/rival_battles.pory"
-	call Redd_Battle05
+	call Sakura_Battle05
 	goto Rival_Battle05_7
 
 Rival_Battle05_29:
 # 747 "data/emeralbody_rivals/rival_battles.pory"
-	call Sakura_Battle05
+	call Baron_Battle05
 	goto Rival_Battle05_7
 
 Rival_Battle05_30:
 # 749 "data/emeralbody_rivals/rival_battles.pory"
-	call Baron_Battle05
+	call Jakson_Battle05
 	goto Rival_Battle05_7
 
 

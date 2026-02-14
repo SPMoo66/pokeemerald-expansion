@@ -705,16 +705,16 @@ script Rival_Battle05 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 3
 		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
 		if (var(VAR_EMERALBODY_RIVAL) == 5) {
 			switch (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE)) {
-				case 20: // about to battle Jakson  --- Don't have to account for whether doing all rivals here or not because Jakson 4 and Jakson 5 are fought back to back
-					setvar (VAR_TEMP_A, 2)
-				case 21: // about to battle Harper
+				case 20: // about to battle Harper
 					setvar (VAR_TEMP_A, 1)
-				case 22: // about to battle Redd
+				case 21: // about to battle Redd
 					setvar (VAR_TEMP_A, 3)
-				case 23: // about to battle Sakura
+				case 22: // about to battle Sakura
 					setvar (VAR_TEMP_A, 4)
-				case 24: // about to battle Baron
+				case 23: // about to battle Baron
 					setvar (VAR_TEMP_A, 5)
+				case 24: // about to battle Jakson
+					setvar (VAR_TEMP_A, 2)
 				}
 		}
 		call (Common_EventScript_PlayEmRivalBgm)
@@ -738,15 +738,15 @@ script Rival_Battle05 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 3
 			case 5:
 				switch (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE)) {
 					case 20:
-						call (Jakson_Battle05)
-					case 21:
 						call (Harper_Battle05)
-					case 22:
+					case 21:
 						call (Redd_Battle05)
-					case 23:
+					case 22:
 						call (Sakura_Battle05)
-					case 24:
+					case 23:
 						call (Baron_Battle05)
+					case 24:
+						call (Jakson_Battle05)
 					}
 			}
 		if (var(VAR_EMERALBODY_RIVAL) == 5) {

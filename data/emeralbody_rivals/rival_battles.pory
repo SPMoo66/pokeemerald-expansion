@@ -310,7 +310,8 @@ script Redd_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 }
 
 script Redd_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
-	if (var(VAR_EMERALBODY_RIVAL) == 3) { // Check if Redd is your rival
+	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 9 && var(VAR_EMERALBODY_RIVAL) == 3)
+	 || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 14 && var(VAR_EMERALBODY_RIVAL) == 5)) { // Check if Redd is your rival
 		lock
 		setvar (VAR_TEMP_A, 3)
 		call (Common_EventScript_PlayEmRivalBgm)
@@ -363,10 +364,11 @@ script Redd_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 		playse (SE_EXIT)
 		waitse
 		fadedefaultbgm
-		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 15)
 		clearflag (FLAG_CHALLENGING_TRAINER)
 		release
 	}
+	setflag (FLAG_TEMP_6)
 }
 
 script Redd_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
@@ -632,7 +634,7 @@ script Jakson_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 		call (GetRivalForNameBox)
 		msgbox (Battle03_JaksonText_PostBattle, MSGBOX_DEFAULT)
 		closemessage
-		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 14)
 		clearflag (FLAG_CHALLENGING_TRAINER)
 		if (var(VAR_TEMP_0) == 31) {
 			applymovement (JAKSON_BATTLE03, Common_Movement_WalkLeft)

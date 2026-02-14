@@ -1204,7 +1204,7 @@ Jakson_Town16::
 
 Baron_Town16::
 # 713 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 714 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town16_BaronText, MSGBOX_NPC
 	return
@@ -1244,7 +1244,7 @@ Jakson_Town18::
 
 Baron_Town18::
 # 740 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 741 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town18_BaronText, MSGBOX_NPC
 	return

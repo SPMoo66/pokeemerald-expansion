@@ -989,6 +989,13 @@ text CommonText_Vicky {
 }
 
 
+script GetBaronsName {
+	speakername (CommonText_Baron)
+	if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) >= 24 && (var(VAR_EMERALBODY_RIVAL) == 0 || var(VAR_EMERALBODY_RIVAL) == 5)) {
+		speakername (CommonText_BaronsMom)
+	}
+}
+
 script GetRivalForNameBox {
 	if (!var(VAR_TEMP_A)) { // Fill VAR_TEMP_A with the desired rival to overwrite the default, 5 or more for Baron
 		copyvar (VAR_TEMP_A, VAR_EMERALBODY_RIVAL)
@@ -1003,7 +1010,12 @@ script GetRivalForNameBox {
 		case 4:
 			speakername (CommonText_Sakura)
 		default:
-			speakername (CommonText_Baron)
+			if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) < 24) {
+				speakername (CommonText_Baron)
+			}
+			else {
+				speakername (CommonText_BaronsMom)
+			}
 	}
 }
 
@@ -1044,6 +1056,10 @@ text CommonText_Redd {
 
 text CommonText_Sakura {
 	"Sakura"
+}
+
+text CommonText_BaronsMom {
+	"Baron's Mom"
 }
 
 text Text_PokevialSizeIncrease {

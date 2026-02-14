@@ -710,7 +710,7 @@ script Jakson_Town16 {
 }
 
 script Baron_Town16 {
-	speakername (CommonText_Baron)
+	call (GetBaronsName)
 	msgbox(Town16_BaronText, MSGBOX_NPC)
 }
 
@@ -737,6 +737,6 @@ script Jakson_Town18 {
 }
 
 script Baron_Town18 {
-	speakername (CommonText_Baron)
+	call (GetBaronsName)
 	msgbox(Town18_BaronText, MSGBOX_NPC)
 }

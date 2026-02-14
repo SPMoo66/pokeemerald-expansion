@@ -676,7 +676,7 @@ script Jakson_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2,  There are c
 	call (GetRivalForNameBox)
 	msgbox (Battle04_JaksonText_PostBattle, MSGBOX_DEFAULT)
 	closemessage
-	setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3)
+	setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 20)
 	clearflag (FLAG_CHALLENGING_TRAINER)
 	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight)
 	waitmovement (0)

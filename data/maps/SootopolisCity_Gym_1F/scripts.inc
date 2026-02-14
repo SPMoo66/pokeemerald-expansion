@@ -9,10 +9,12 @@ SootopolisCity_Gym_1F_OnTransition:
 	setflag FLAG_TEMP_1
 	setvar VAR_ICE_STEP_COUNT, 1
 	call_if_eq VAR_EMERALBODY_RIVAL, 2, SootopolisCity_Gym_1F_EventScript_CheckIfJaksonAvailable1
+	call_if_eq VAR_EMERALBODY_RIVAL, 5, SootopolisCity_Gym_1F_EventScript_CheckIfJaksonAvailable1
 	end
 
 SootopolisCity_Gym_1F_EventScript_CheckIfJaksonAvailable1:
-	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2, EventScript_Clear_FlagTemp1 @ Show Jakson for Battle04
+	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 14, EventScript_Clear_FlagTemp1 @ Show Jakson for Battle04
+	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 19, EventScript_Clear_FlagTemp1 @ Show Jakson for Battle04
 	end
 
 SootopolisCity_Gym_1F_OnResume:
@@ -45,6 +47,7 @@ SootopolisCity_Gym_1F_OnFrame:
 	map_script_2 VAR_ICE_STEP_COUNT, 67, SootopolisCity_Gym_1F_EventScript_UnlockStairs
 	map_script_2 VAR_ICE_STEP_COUNT, 0, SootopolisCity_Gym_1F_EventScript_FallThroughIce
 	map_script_2 VAR_EMERALBODY_RIVAL, 2, SootopolisCity_Gym_1F_EventScript_CheckIfJaksonAvailable2
+	map_script_2 VAR_EMERALBODY_RIVAL, 5, SootopolisCity_Gym_1F_EventScript_CheckIfJaksonAvailable2
 	.2byte 0
 
 SootopolisCity_Gym_1F_EventScript_UnlockStairs::
@@ -67,7 +70,8 @@ SootopolisCity_Gym_1F_EventScript_FallThroughIce::
 	end
 
 SootopolisCity_Gym_1F_EventScript_CheckIfJaksonAvailable2::
-	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2, Jakson_Battle04
+	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 14, Jakson_Battle04
+	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 19, Jakson_Battle04
 	end
 
 SootopolisCity_Gym_1F_EventScript_GymGuide::

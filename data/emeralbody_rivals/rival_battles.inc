@@ -1430,7 +1430,7 @@ Jakson_Battle04::
 # 678 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 679 "data/emeralbody_rivals/rival_battles.pory"
-	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 20
 # 680 "data/emeralbody_rivals/rival_battles.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
 # 681 "data/emeralbody_rivals/rival_battles.pory"

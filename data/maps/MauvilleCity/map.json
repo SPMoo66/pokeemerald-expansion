@@ -279,8 +279,8 @@
       "x": 38,
       "y": 7,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
-      "var_value": "1",
+      "var": "FLAG_TEMP_6",
+      "var_value": "0",
       "script": "Baron_Battle03"
     },
     {
@@ -288,8 +288,8 @@
       "x": 38,
       "y": 8,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
-      "var_value": "1",
+      "var": "FLAG_TEMP_6",
+      "var_value": "0",
       "script": "Baron_Battle03"
     },
     {
@@ -297,8 +297,8 @@
       "x": 38,
       "y": 9,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
-      "var_value": "1",
+      "var": "FLAG_TEMP_6",
+      "var_value": "0",
       "script": "Baron_Battle03"
     },
     {
@@ -306,8 +306,8 @@
       "x": 38,
       "y": 10,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
-      "var_value": "1",
+      "var": "FLAG_TEMP_6",
+      "var_value": "0",
       "script": "Baron_Battle03"
     },
     {
@@ -315,8 +315,8 @@
       "x": 38,
       "y": 11,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
-      "var_value": "1",
+      "var": "FLAG_TEMP_6",
+      "var_value": "0",
       "script": "Baron_Battle03"
     }
   ],

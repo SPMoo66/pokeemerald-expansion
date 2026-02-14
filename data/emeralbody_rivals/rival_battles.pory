@@ -105,6 +105,7 @@ script Harper_Battle03 {
 		clearflag (FLAG_CHALLENGING_TRAINER)
 		release
 	}
+	setflag (FLAG_TEMP_6)
 }
 
 script Harper_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
@@ -461,7 +462,9 @@ script Baron_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 }
 
 script Baron_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
-	if (var(VAR_EMERALBODY_RIVAL) == 0 && flag(FLAG_BADGE05_GET)) { // Check if Baron is your rival and if beaten Petalburg gym
+	if (flag(FLAG_BADGE05_GET)
+	 && ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 8 && var(VAR_EMERALBODY_RIVAL) == 0)
+	 || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 12 && var(VAR_EMERALBODY_RIVAL) == 5))) { // Check if Baron is your rival and if beaten Petalburg gym
 		lock
 		setvar (VAR_TEMP_A, 0)
 		call (Common_EventScript_PlayEmRivalBgm)
@@ -493,13 +496,14 @@ script Baron_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 		msgbox (Battle03_BaronText_PostBattle, MSGBOX_DEFAULT)
 		closemessage
 		fadedefaultbgm
-		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 13)
 		clearflag (FLAG_CHALLENGING_TRAINER)
 		applymovement (BARON_BATTLE03, Common_Movement_WalkLeft7)
 		waitmovement (0)
 		removeobject (BARON_BATTLE03)
 		release
 	}
+	setflag (FLAG_TEMP_6)
 }
 
 script Baron_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2

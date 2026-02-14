@@ -206,7 +206,7 @@ script Sakura_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 	removeobject (SAKURA_BATTLE03)
 	setflag (FLAG_TEMP_2)
 	fadedefaultbgm
-	setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
+	setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 11)
 	clearflag (FLAG_CHALLENGING_TRAINER)
 	delay (30)
 	playse (SE_EFFECTIVE)

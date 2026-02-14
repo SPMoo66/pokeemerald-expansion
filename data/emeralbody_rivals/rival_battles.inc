@@ -355,7 +355,7 @@ Sakura_Battle03_1:
 # 208 "data/emeralbody_rivals/rival_battles.pory"
 	fadedefaultbgm
 # 209 "data/emeralbody_rivals/rival_battles.pory"
-	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 11
 # 210 "data/emeralbody_rivals/rival_battles.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
 # 211 "data/emeralbody_rivals/rival_battles.pory"

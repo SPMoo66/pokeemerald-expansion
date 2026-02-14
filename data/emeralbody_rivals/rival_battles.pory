@@ -374,7 +374,9 @@ script Redd_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
 }
 
 script Redd_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
-	if (var(VAR_EMERALBODY_RIVAL) == 3 && flag(FLAG_BADGE07_GET)) { // Check if Redd is your rival and if beaten Mossdeep gym
+	if (flag(FLAG_BADGE07_GET)
+	 && ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 15 && var(VAR_EMERALBODY_RIVAL) == 3)
+	 || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 17 && var(VAR_EMERALBODY_RIVAL) == 5))) { // Check if Redd is your rival and if beaten Mossdeep gym
 		lock
 		setvar (VAR_TEMP_A, 3)
 		call (Common_EventScript_PlayEmRivalBgm)
@@ -413,11 +415,12 @@ script Redd_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 		removeobject (REDD_BATTLE04)
 		fadescreenswapbuffers (FADE_FROM_BLACK)
 		fadedefaultbgm
-		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3)
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 18)
 		clearflag (FLAG_CHALLENGING_TRAINER)
 		setflag (FLAG_TEMP_1)
 		release
 	}
+	setflag (FLAG_TEMP_6)
 }
 
 

@@ -170,8 +170,8 @@
       "x": 13,
       "y": 5,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
-      "var_value": "2",
+      "var": "FLAG_TEMP_6",
+      "var_value": "0",
       "script": "Redd_Battle04"
     },
     {
@@ -179,8 +179,8 @@
       "x": 14,
       "y": 5,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
-      "var_value": "2",
+      "var": "FLAG_TEMP_6",
+      "var_value": "0",
       "script": "Redd_Battle04"
     }
   ],

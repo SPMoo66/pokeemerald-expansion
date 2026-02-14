@@ -18,6 +18,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians::
 	setobjectxyperm LOCALID_SPACE_CENTER_2F_GENTLEMAN, 1, 3
 	setobjectmovementtype LOCALID_SPACE_CENTER_2F_GENTLEMAN, MOVEMENT_TYPE_FACE_RIGHT
 	call_if_eq VAR_EMERALBODY_RIVAL, 3, MossdeepCity_SpaceCenter_2F_EventScript_CheckIfReddAvailable
+	call_if_eq VAR_EMERALBODY_RIVAL, 5, MossdeepCity_SpaceCenter_2F_EventScript_CheckIfReddAvailable
 	return
 
 MossdeepCity_SpaceCenter_2F_EventScript_MoveDefeatedGrunts::
@@ -27,7 +28,8 @@ MossdeepCity_SpaceCenter_2F_EventScript_MoveDefeatedGrunts::
 	return
 
 MossdeepCity_SpaceCenter_2F_EventScript_CheckIfReddAvailable::
-	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2, EventScript_Clear_FlagTemp1 @ Show Redd
+	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 15, EventScript_Clear_FlagTemp1 @ Show Redd
+	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 17, EventScript_Clear_FlagTemp1 @ Show Redd
 	return
 
 MossdeepCity_SpaceCenter_2F_OnFrame:

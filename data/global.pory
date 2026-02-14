@@ -452,19 +452,19 @@ mart TMMart8 {
 
 // Plays Encounter BGM for Emeralbody Rival
 script Common_EventScript_PlayEmRivalBgm {
-	if (!var(VAR_TEMP_A)) { // Fill VAR_TEMP_A with the desired rival to overwrite the default
+	if (!var(VAR_TEMP_A)) { // Fill VAR_TEMP_A with the desired rival to overwrite the default, 5 or more for Baron
 		copyvar (VAR_TEMP_A, VAR_EMERALBODY_RIVAL)
 	}
 	switch (var(VAR_TEMP_A)) {
-		case 1:
+		case 1: // Harper
 			playbgm (MUS_DP_DAWN, FALSE)
-		case 2:
+		case 2: // Jakson
 			playbgm (MUS_HG_EUSINE, FALSE)
-		case 3:
+		case 3: // Redd
 			playbgm (MUS_HG_ETHAN, FALSE)
-		case 4:
+		case 4: // Sakura
 			playbgm (MUS_HG_ENCOUNTER_GIRL_1, FALSE)
-		default:
+		default: // Baron
 			playbgm (MUS_PL_B_HALL, FALSE)
 	}
 }
@@ -990,7 +990,7 @@ text CommonText_Vicky {
 
 
 script GetRivalForNameBox {
-	if (!var(VAR_TEMP_A)) { // Fill VAR_TEMP_A with the desired rival to overwrite the default
+	if (!var(VAR_TEMP_A)) { // Fill VAR_TEMP_A with the desired rival to overwrite the default, 5 or more for Baron
 		copyvar (VAR_TEMP_A, VAR_EMERALBODY_RIVAL)
 	}
 	switch (var(VAR_TEMP_A)) {
@@ -1009,19 +1009,19 @@ script GetRivalForNameBox {
 
 script GetRivalMusic {
 	setflag (FLAG_SYS_SET_BATTLE_BGM)
-	if (!var(VAR_TEMP_A)) { // Fill VAR_TEMP_A with the desired rival to overwrite the default
+	if (!var(VAR_TEMP_A)) { // Fill VAR_TEMP_A with the desired rival to overwrite the default, 5 or more for Baron
 		copyvar (VAR_TEMP_A, VAR_EMERALBODY_RIVAL)
 	}
 	switch (var(VAR_TEMP_A)) {
-		case 1:
+		case 1: // Harper
 			setvar (VAR_BATTLE_BGM, MUS_HG_VS_TRAINER)
-		case 2:
+		case 2: // Jakson
 			setvar (VAR_BATTLE_BGM, MUS_DP_VS_ELITE_FOUR)
-		case 3:
+		case 3: // Redd
 			setvar (VAR_BATTLE_BGM, MUS_HG_VS_WILD_KANTO)
-		case 4:
+		case 4: // Sakura
 			setvar (VAR_BATTLE_BGM, MUS_PL_VS_FRONTIER_BRAIN)
-		default:
+		default: // Baron
 			setvar (VAR_BATTLE_BGM, MUS_DP_VS_RIVAL)
 	}
 }

@@ -700,32 +700,67 @@ const SAKURA_BATTLE05 = 11
 const BARON_BATTLE05 = 12
 
 script Rival_Battle05 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 3
-	lock
-	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
-	call (Common_EventScript_PlayEmRivalBgm)
-	call (GetRivalForNameBox)
-	call (GetRivalMusic)
-	hidefollower
-	delay (10)
-	setflag (FLAG_CHALLENGING_TRAINER)
-	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
-	switch (var(VAR_EMERALBODY_RIVAL)) {
-		case 1:
-			call (Harper_Battle05)
-		case 2:
-			call (Jakson_Battle05)
-		case 3:
-			call (Redd_Battle05)
-		case 4:
-			call (Sakura_Battle05)
-		default:
-			call (Baron_Battle05)
+	if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) < 25) {
+		lock
+		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+		switch (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE)) {
+			case 20: // about to battle Jakson  --- Don't have to account for whether doing all rivals here or not because Jakson 4 and Jakson 5 are fought back to back
+				setvar (VAR_TEMP_A, 2)
+			case 21: // about to battle Harper
+				setvar (VAR_TEMP_A, 1)
+			case 22: // about to battle Redd
+				setvar (VAR_TEMP_A, 3)
+			case 23: // about to battle Sakura
+				setvar (VAR_TEMP_A, 4)
+			case 24: // about to battle Baron
+				setvar (VAR_TEMP_A, 5)
+			}
+		call (Common_EventScript_PlayEmRivalBgm)
+		call (GetRivalForNameBox)
+		call (GetRivalMusic)
+		hidefollower
+		delay (10)
+		setflag (FLAG_CHALLENGING_TRAINER)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
+		switch (var(VAR_EMERALBODY_RIVAL)) {
+			case 0:
+				call (Baron_Battle05)
+			case 1:
+				call (Harper_Battle05)
+			case 2:
+				call (Jakson_Battle05)
+			case 3:
+				call (Redd_Battle05)
+			case 4:
+				call (Sakura_Battle05)
+			case 5:
+				switch (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE)) {
+					case 20:
+						call (Jakson_Battle05)
+					case 21:
+						call (Harper_Battle05)
+					case 22:
+						call (Redd_Battle05)
+					case 23:
+						call (Sakura_Battle05)
+					case 24:
+						call (Baron_Battle05)
+					}
+			}
+		if (var(VAR_EMERALBODY_RIVAL) == 5) {
+			addvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
 		}
-	setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 4)
-	clearflag (FLAG_CHALLENGING_TRAINER)
-	fadescreenswapbuffers (FADE_TO_BLACK)
-	warpsilent (MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F, 9, 4)
-	release
+		else {
+			setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 25)
+		}
+		clearflag (FLAG_CHALLENGING_TRAINER)
+		fadescreenswapbuffers (FADE_TO_BLACK)
+		warpsilent (MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F, 9, 4)
+		release
+	}
+	else {
+		setflag (FLAG_TEMP_6)
+	}
 }
 
 script Jakson_Battle05 {
@@ -783,6 +818,7 @@ script Harper_Battle05 {
 	closemessage
 	applymovement (HARPER_BATTLE05, Common_Movement_WalkInPlaceUp)
 	waitmovement (0)
+	call (GetRivalForNameBox)
 	msgbox (Battle05_HarperText_PostBattle2, MSGBOX_DEFAULT)
 	closemessage
 	applymovement (HARPER_BATTLE05, Common_Movement_WalkDown5)

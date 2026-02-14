@@ -466,8 +466,8 @@
       "x": 38,
       "y": 10,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
-      "var_value": "2",
+      "var": "FLAG_TEMP_6",
+      "var_value": "0",
       "script": "Harper_Battle04"
     }
   ],

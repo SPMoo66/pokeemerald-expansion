@@ -109,7 +109,8 @@ script Harper_Battle03 {
 }
 
 script Harper_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
-	if (var(VAR_EMERALBODY_RIVAL) == 1) { // Check if Harper is your rival
+	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 12 && var(VAR_EMERALBODY_RIVAL) == 1)
+	 || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 16 && var(VAR_EMERALBODY_RIVAL) == 5)) { // Check if Harper is your rival
 		lock
 		setvar (VAR_TEMP_A, 1)
 		call (Common_EventScript_PlayEmRivalBgm)
@@ -131,10 +132,11 @@ script Harper_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 		waitmovement (0)
 		removeobject (HARPER_BATTLE04)
 		fadedefaultbgm
-		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3)
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 17)
 		clearflag (FLAG_CHALLENGING_TRAINER)
 		release
 	}
+	setflag (FLAG_TEMP_6)
 }
 
 

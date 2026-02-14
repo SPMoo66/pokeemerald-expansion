@@ -240,7 +240,7 @@ script Sakura_Battle04 {
 	removeobject (SAKURA_BATTLE04)
 	waitfieldeffect (FLDEFF_NPCFLY_OUT)
 	setflag (FLAG_TEMP_1)
-	setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3)
+	setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 19)
 	clearflag (FLAG_CHALLENGING_TRAINER)
 	release
 }

@@ -454,7 +454,7 @@ Sakura_Battle04::
 # 242 "data/emeralbody_rivals/rival_battles.pory"
 	setflag FLAG_TEMP_1
 # 243 "data/emeralbody_rivals/rival_battles.pory"
-	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 3
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 19
 # 244 "data/emeralbody_rivals/rival_battles.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
 # 245 "data/emeralbody_rivals/rival_battles.pory"

@@ -75,7 +75,7 @@ movement Harper_PlayerMoves {
 }
 
 script Harper_Battle03 {
-	if (var(VAR_EMERALBODY_RIVAL) == 1 && var(VAR_PETALBURG_GYM_STATE) >= 6) { // Check if Harper is your rival. Also check if beaten Gyms 1-4
+	if (var(VAR_PETALBURG_GYM_STATE) >= 6 && ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 6 && var(VAR_EMERALBODY_RIVAL) == 1) || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 11 && var(VAR_EMERALBODY_RIVAL) == 5))) { // Check if Harper is your rival. Also check if beaten Gyms 1-4
 		lock
 		setvar (VAR_TEMP_A, 1)
 		call (Common_EventScript_PlayEmRivalBgm)
@@ -99,7 +99,7 @@ script Harper_Battle03 {
 		waitmovement (0)
 		removeobject (HARPER_BATTLE03)
 		fadedefaultbgm
-		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2)
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 12)
 		clearflag (FLAG_CHALLENGING_TRAINER)
 		release
 	}

@@ -88,8 +88,8 @@ Harper_PlayerMoves:
 
 Harper_Battle03::
 # 78 "data/emeralbody_rivals/rival_battles.pory"
-	compare VAR_EMERALBODY_RIVAL, 1
-	goto_if_eq Harper_Battle03_2
+	compare VAR_PETALBURG_GYM_STATE, 6
+	goto_if_ge Harper_Battle03_2
 	return
 
 Harper_Battle03_1:
@@ -140,7 +140,7 @@ Harper_Battle03_1:
 # 101 "data/emeralbody_rivals/rival_battles.pory"
 	fadedefaultbgm
 # 102 "data/emeralbody_rivals/rival_battles.pory"
-	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 2
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 12
 # 103 "data/emeralbody_rivals/rival_battles.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
 # 104 "data/emeralbody_rivals/rival_battles.pory"
@@ -149,8 +149,24 @@ Harper_Battle03_1:
 
 Harper_Battle03_2:
 # 78 "data/emeralbody_rivals/rival_battles.pory"
-	compare VAR_PETALBURG_GYM_STATE, 6
-	goto_if_ge Harper_Battle03_1
+	compare VAR_EMERALBODY_RIVAL_BATTLE_STATE, 6
+	goto_if_eq Harper_Battle03_5
+Harper_Battle03_4:
+# 78 "data/emeralbody_rivals/rival_battles.pory"
+	compare VAR_EMERALBODY_RIVAL_BATTLE_STATE, 11
+	goto_if_eq Harper_Battle03_8
+	return
+
+Harper_Battle03_5:
+# 78 "data/emeralbody_rivals/rival_battles.pory"
+	compare VAR_EMERALBODY_RIVAL, 1
+	goto_if_eq Harper_Battle03_1
+	goto Harper_Battle03_4
+
+Harper_Battle03_8:
+# 78 "data/emeralbody_rivals/rival_battles.pory"
+	compare VAR_EMERALBODY_RIVAL, 5
+	goto_if_eq Harper_Battle03_1
 	return
 
 

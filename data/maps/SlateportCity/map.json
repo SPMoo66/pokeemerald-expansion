@@ -712,7 +712,7 @@
       "x": 17,
       "y": 58,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Redd_Battle02"
     },
@@ -721,7 +721,7 @@
       "x": 18,
       "y": 58,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Redd_Battle02"
     },
@@ -730,7 +730,7 @@
       "x": 19,
       "y": 58,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Redd_Battle02"
     },
@@ -739,7 +739,7 @@
       "x": 20,
       "y": 53,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Redd_Battle02"
     },
@@ -748,7 +748,7 @@
       "x": 20,
       "y": 52,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Redd_Battle02"
     }

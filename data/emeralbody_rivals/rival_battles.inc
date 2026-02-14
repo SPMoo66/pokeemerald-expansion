@@ -426,8 +426,12 @@ Sakura_Battle04::
 
 Redd_Battle02::
 # 250 "data/emeralbody_rivals/rival_battles.pory"
-	compare VAR_EMERALBODY_RIVAL, 3
-	goto_if_eq Redd_Battle02_1
+	compare VAR_EMERALBODY_RIVAL_BATTLE_STATE, 0
+	goto_if_eq Redd_Battle02_3
+Redd_Battle02_2:
+# 250 "data/emeralbody_rivals/rival_battles.pory"
+	compare VAR_EMERALBODY_RIVAL_BATTLE_STATE, 8
+	goto_if_eq Redd_Battle02_6
 	return
 
 Redd_Battle02_1:
@@ -443,7 +447,7 @@ Redd_Battle02_1:
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 # 256 "data/emeralbody_rivals/rival_battles.pory"
 	compare VAR_TEMP_1, 58
-	goto_if_eq Redd_Battle02_4
+	goto_if_eq Redd_Battle02_10
 # 271 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 40, Common_Movement_FaceUp
 # 272 "data/emeralbody_rivals/rival_battles.pory"
@@ -458,19 +462,19 @@ Redd_Battle02_1:
 	delay 60
 # 277 "data/emeralbody_rivals/rival_battles.pory"
 	compare VAR_TEMP_1, 52
-	goto_if_eq Redd_Battle02_12
+	goto_if_eq Redd_Battle02_18
 # 282 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 40, Common_Movement_WalkUp2
 # 283 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
-Redd_Battle02_11:
+Redd_Battle02_17:
 # 285 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 40, Common_Movement_WalkRight
 # 286 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
 # 287 "data/emeralbody_rivals/rival_battles.pory"
 	msgbox Battle02_ReddText_PreBattleAlt, MSGBOX_DEFAULT
-Redd_Battle02_3:
+Redd_Battle02_9:
 # 289 "data/emeralbody_rivals/rival_battles.pory"
 	call GetRivalMusic
 # 290 "data/emeralbody_rivals/rival_battles.pory"
@@ -492,7 +496,7 @@ Redd_Battle02_3:
 # 298 "data/emeralbody_rivals/rival_battles.pory"
 	fadedefaultbgm
 # 299 "data/emeralbody_rivals/rival_battles.pory"
-	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 9
 # 300 "data/emeralbody_rivals/rival_battles.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
 # 301 "data/emeralbody_rivals/rival_battles.pory"
@@ -501,42 +505,54 @@ Redd_Battle02_3:
 	release
 	return
 
-Redd_Battle02_4:
+Redd_Battle02_3:
+# 250 "data/emeralbody_rivals/rival_battles.pory"
+	compare VAR_EMERALBODY_RIVAL, 3
+	goto_if_eq Redd_Battle02_1
+	goto Redd_Battle02_2
+
+Redd_Battle02_6:
+# 250 "data/emeralbody_rivals/rival_battles.pory"
+	compare VAR_EMERALBODY_RIVAL, 5
+	goto_if_eq Redd_Battle02_1
+	return
+
+Redd_Battle02_10:
 # 257 "data/emeralbody_rivals/rival_battles.pory"
 	switch VAR_TEMP_0
 # 258 "data/emeralbody_rivals/rival_battles.pory"
-	case 17, Redd_Battle02_9
+	case 17, Redd_Battle02_15
 # 261 "data/emeralbody_rivals/rival_battles.pory"
-	case 19, Redd_Battle02_10
-Redd_Battle02_7:
+	case 19, Redd_Battle02_16
+Redd_Battle02_13:
 # 266 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 40, Common_Movement_WalkDown2
 # 267 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
 # 268 "data/emeralbody_rivals/rival_battles.pory"
 	msgbox Battle02_ReddText_PreBattle, MSGBOX_DEFAULT
-	goto Redd_Battle02_3
+	goto Redd_Battle02_9
 
-Redd_Battle02_9:
+Redd_Battle02_15:
 # 259 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 40, Common_Movement_WalkLeft
 # 260 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
-	goto Redd_Battle02_7
+	goto Redd_Battle02_13
 
-Redd_Battle02_10:
+Redd_Battle02_16:
 # 262 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 40, Common_Movement_WalkRight
 # 263 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
-	goto Redd_Battle02_7
+	goto Redd_Battle02_13
 
-Redd_Battle02_12:
+Redd_Battle02_18:
 # 278 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 40, Common_Movement_WalkUp3
 # 279 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
-	goto Redd_Battle02_11
+	goto Redd_Battle02_17
 
 
 Redd_Battle03::

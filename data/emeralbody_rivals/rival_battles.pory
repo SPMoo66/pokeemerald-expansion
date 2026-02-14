@@ -301,6 +301,7 @@ script Redd_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		setflag (FLAG_TEMP_2)
 		release
 	}
+	setflag (FLAG_TEMP_6)
 }
 
 script Redd_Battle03 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 1
@@ -540,7 +541,7 @@ const JAKSON_BATTLE03 = 48
 const JAKSON_BATTLE04 = 4
 
 script Jakson_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
-	if (var(VAR_EMERALBODY_RIVAL) == 2) { // Check if Jakson is your rival
+	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && var(VAR_EMERALBODY_RIVAL) == 2) || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 9 && var(VAR_EMERALBODY_RIVAL) == 5)) { // Check if Jakson is your rival
 		lock
 		setvar (VAR_TEMP_A, 2)
 		call (Common_EventScript_PlayEmRivalBgm)
@@ -581,11 +582,12 @@ script Jakson_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 		removeobject (JAKSON_BATTLE02_MURKROW)
 		fadescreenswapbuffers (FADE_FROM_BLACK)
 		fadedefaultbgm
-		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1)
+		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 10)
 		clearflag (FLAG_CHALLENGING_TRAINER)
 		setflag (FLAG_TEMP_2)
 		release
 	}
+	setflag (FLAG_TEMP_6)
 }
 
 script Jakson_Battle02_Block {

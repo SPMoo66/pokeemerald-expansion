@@ -75,7 +75,9 @@ movement Harper_PlayerMoves {
 }
 
 script Harper_Battle03 {
-	if (var(VAR_PETALBURG_GYM_STATE) >= 6 && ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 6 && var(VAR_EMERALBODY_RIVAL) == 1) || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 11 && var(VAR_EMERALBODY_RIVAL) == 5))) { // Check if Harper is your rival. Also check if beaten Gyms 1-4
+	if (var(VAR_PETALBURG_GYM_STATE) >= 6
+	 && ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 6 && var(VAR_EMERALBODY_RIVAL) == 1)
+	 || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 11 && var(VAR_EMERALBODY_RIVAL) == 5))) { // Check if Harper is your rival. Also check if beaten Gyms 1-4
 		lock
 		setvar (VAR_TEMP_A, 1)
 		call (Common_EventScript_PlayEmRivalBgm)
@@ -142,7 +144,8 @@ const SAKURA_BATTLE03 = 8
 const SAKURA_BATTLE04 = 1
 
 script Sakura_Battle02 {
-	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && var(VAR_EMERALBODY_RIVAL) == 4) || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 6 && var(VAR_EMERALBODY_RIVAL) == 5)) {
+	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && var(VAR_EMERALBODY_RIVAL) == 4)
+	 || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 6 && var(VAR_EMERALBODY_RIVAL) == 5)) {
 		lock
 		setvar (VAR_TEMP_A, 4)
 		call (Common_EventScript_PlayEmRivalBgm)
@@ -247,7 +250,8 @@ const REDD_BATTLE03 = 5
 const REDD_BATTLE04 = 10
 
 script Redd_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
-	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && var(VAR_EMERALBODY_RIVAL) == 3) || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 8 && var(VAR_EMERALBODY_RIVAL) == 5)) { // Check if Redd is your rival
+	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && var(VAR_EMERALBODY_RIVAL) == 3)
+	 || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 8 && var(VAR_EMERALBODY_RIVAL) == 5)) { // Check if Redd is your rival
 		lock
 		setvar (VAR_TEMP_A, 3)
 		call (Common_EventScript_PlayEmRivalBgm)
@@ -419,7 +423,8 @@ const BARON_BATTLE03 = 14
 const BARON_BATTLE04 = 27
 
 script Baron_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
-	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && var(VAR_EMERALBODY_RIVAL) == 0) || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 7 && var(VAR_EMERALBODY_RIVAL) == 5)) { // Check if Baron is your rival
+	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && var(VAR_EMERALBODY_RIVAL) == 0)
+	 || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 7 && var(VAR_EMERALBODY_RIVAL) == 5)) { // Check if Baron is your rival
 		lock
 		setvar (VAR_TEMP_A, 0)
 		call (Common_EventScript_PlayEmRivalBgm)
@@ -541,7 +546,8 @@ const JAKSON_BATTLE03 = 48
 const JAKSON_BATTLE04 = 4
 
 script Jakson_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
-	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && var(VAR_EMERALBODY_RIVAL) == 2) || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 9 && var(VAR_EMERALBODY_RIVAL) == 5)) { // Check if Jakson is your rival
+	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && var(VAR_EMERALBODY_RIVAL) == 2)
+	 || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 9 && var(VAR_EMERALBODY_RIVAL) == 5)) { // Check if Jakson is your rival
 		lock
 		setvar (VAR_TEMP_A, 2)
 		call (Common_EventScript_PlayEmRivalBgm)

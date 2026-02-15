@@ -40,82 +40,82 @@ Intro_EmibOpening::
 # 36 "data/emeralbody_rivals/emib_opening.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Intro_EmibOpening_2
-# 107 "data/emeralbody_rivals/emib_opening.pory"
+# 126 "data/emeralbody_rivals/emib_opening.pory"
 	random 5
-# 108 "data/emeralbody_rivals/emib_opening.pory"
+# 127 "data/emeralbody_rivals/emib_opening.pory"
 	copyvar VAR_EMERALBODY_RIVAL, VAR_RESULT
 Intro_EmibOpening_1:
-# 111 "data/emeralbody_rivals/emib_opening.pory"
-	speakername CommonText_Feed
-# 112 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_31
-# 114 "data/emeralbody_rivals/emib_opening.pory"
-	closemessage
-# 115 "data/emeralbody_rivals/emib_opening.pory"
-	delay 16
-# 117 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_32
-# 118 "data/emeralbody_rivals/emib_opening.pory"
-	speakername CommonText_Jakson
-# 119 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_33
-# 120 "data/emeralbody_rivals/emib_opening.pory"
-	speakername CommonText_Sakura
-# 121 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_34
-# 122 "data/emeralbody_rivals/emib_opening.pory"
-	speakername CommonText_Harper
-# 123 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_35
-# 124 "data/emeralbody_rivals/emib_opening.pory"
-	speakername CommonText_Redd
-# 125 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_36
-# 127 "data/emeralbody_rivals/emib_opening.pory"
-	speakername CommonText_Baron
-# 128 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_37
-# 129 "data/emeralbody_rivals/emib_opening.pory"
-	speakername CommonText_Jakson
 # 130 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_38
-# 132 "data/emeralbody_rivals/emib_opening.pory"
-	speakername CommonText_Sakura
+	speakername CommonText_Feed
+# 131 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_37
 # 133 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_39
+	closemessage
 # 134 "data/emeralbody_rivals/emib_opening.pory"
-	speakername CommonText_Harper
-# 135 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_40
-# 136 "data/emeralbody_rivals/emib_opening.pory"
-	speakername CommonText_Redd
-# 137 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_41
-# 138 "data/emeralbody_rivals/emib_opening.pory"
-	speakername CommonText_Harper
-# 139 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_42
-# 140 "data/emeralbody_rivals/emib_opening.pory"
-	speakername CommonText_Baron
-# 141 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_43
-# 142 "data/emeralbody_rivals/emib_opening.pory"
-	speakername CommonText_Jakson
-# 143 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_44
-# 144 "data/emeralbody_rivals/emib_opening.pory"
-	closemessage
-# 146 "data/emeralbody_rivals/emib_opening.pory"
 	delay 16
+# 136 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_38
+# 137 "data/emeralbody_rivals/emib_opening.pory"
+	speakername CommonText_Jakson
+# 138 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_39
+# 139 "data/emeralbody_rivals/emib_opening.pory"
+	speakername CommonText_Sakura
+# 140 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_40
+# 141 "data/emeralbody_rivals/emib_opening.pory"
+	speakername CommonText_Harper
+# 142 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_41
+# 143 "data/emeralbody_rivals/emib_opening.pory"
+	speakername CommonText_Redd
+# 144 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_42
+# 146 "data/emeralbody_rivals/emib_opening.pory"
+	speakername CommonText_Baron
 # 147 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_43
+# 148 "data/emeralbody_rivals/emib_opening.pory"
+	speakername CommonText_Jakson
+# 149 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_44
+# 151 "data/emeralbody_rivals/emib_opening.pory"
+	speakername CommonText_Sakura
+# 152 "data/emeralbody_rivals/emib_opening.pory"
 	msgbox Intro_EmibOpening_Text_45
+# 153 "data/emeralbody_rivals/emib_opening.pory"
+	speakername CommonText_Harper
+# 154 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_46
+# 155 "data/emeralbody_rivals/emib_opening.pory"
+	speakername CommonText_Redd
 # 156 "data/emeralbody_rivals/emib_opening.pory"
-	closemessage
+	msgbox Intro_EmibOpening_Text_47
 # 157 "data/emeralbody_rivals/emib_opening.pory"
-	delay 40
+	speakername CommonText_Harper
 # 158 "data/emeralbody_rivals/emib_opening.pory"
-	callnative ClearMugshot
+	msgbox Intro_EmibOpening_Text_48
 # 159 "data/emeralbody_rivals/emib_opening.pory"
+	speakername CommonText_Baron
+# 160 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_49
+# 161 "data/emeralbody_rivals/emib_opening.pory"
+	speakername CommonText_Jakson
+# 162 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_50
+# 163 "data/emeralbody_rivals/emib_opening.pory"
+	closemessage
+# 165 "data/emeralbody_rivals/emib_opening.pory"
+	delay 16
+# 166 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_51
+# 175 "data/emeralbody_rivals/emib_opening.pory"
+	closemessage
+# 176 "data/emeralbody_rivals/emib_opening.pory"
+	delay 40
+# 177 "data/emeralbody_rivals/emib_opening.pory"
+	callnative ClearMugshot
+# 178 "data/emeralbody_rivals/emib_opening.pory"
 	fadedefaultbgm
 	return
 
@@ -195,23 +195,28 @@ Intro_EmibOpening_20:
 # 89 "data/emeralbody_rivals/emib_opening.pory"
 	case 2, Intro_EmibOpening_29
 Intro_EmibOpening_25:
-# 92 "data/emeralbody_rivals/emib_opening.pory"
+# 93 "data/emeralbody_rivals/emib_opening.pory"
+	goto_if_set FLAG_NEW_GAME_PLUS, Intro_EmibOpening_31
+Intro_EmibOpening_30:
+# 109 "data/emeralbody_rivals/emib_opening.pory"
 	closemessage
-# 94 "data/emeralbody_rivals/emib_opening.pory"
-	call Intro_DetermineRival
-# 96 "data/emeralbody_rivals/emib_opening.pory"
+# 111 "data/emeralbody_rivals/emib_opening.pory"
+	compare VAR_EMERALBODY_RIVAL, 5
+	goto_if_ne Intro_EmibOpening_34
+Intro_EmibOpening_33:
+# 115 "data/emeralbody_rivals/emib_opening.pory"
 	delay 16
-# 97 "data/emeralbody_rivals/emib_opening.pory"
+# 116 "data/emeralbody_rivals/emib_opening.pory"
 	speakername CommonText_Quiz
-# 98 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_29
-# 99 "data/emeralbody_rivals/emib_opening.pory"
+# 117 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_35
+# 118 "data/emeralbody_rivals/emib_opening.pory"
 	closemessage
-# 100 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox Intro_EmibOpening_Text_30
-# 103 "data/emeralbody_rivals/emib_opening.pory"
+# 119 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_36
+# 122 "data/emeralbody_rivals/emib_opening.pory"
 	closemessage
-# 104 "data/emeralbody_rivals/emib_opening.pory"
+# 123 "data/emeralbody_rivals/emib_opening.pory"
 	delay 16
 	goto Intro_EmibOpening_1
 
@@ -290,198 +295,233 @@ Intro_EmibOpening_29:
 	addvar VAR_TEMP_1, 1
 	goto Intro_EmibOpening_25
 
+Intro_EmibOpening_31:
+# 94 "data/emeralbody_rivals/emib_opening.pory"
+	speakername CommonText_Quiz
+# 95 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_29
+# 96 "data/emeralbody_rivals/emib_opening.pory"
+	dynmultichoice 0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, Intro_EmibOpening_Text_30, Intro_EmibOpening_Text_31
+# 97 "data/emeralbody_rivals/emib_opening.pory"
+	switch VAR_RESULT
+# 98 "data/emeralbody_rivals/emib_opening.pory"
+	case 1, Intro_EmibOpening_37
+	goto Intro_EmibOpening_30
+
+Intro_EmibOpening_34:
+# 112 "data/emeralbody_rivals/emib_opening.pory"
+	call Intro_DetermineRival
+	goto Intro_EmibOpening_33
+
+Intro_EmibOpening_37:
+# 99 "data/emeralbody_rivals/emib_opening.pory"
+	speakername CommonText_Quiz
+# 100 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox Intro_EmibOpening_Text_32
+# 101 "data/emeralbody_rivals/emib_opening.pory"
+	dynmultichoice 0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, Intro_EmibOpening_Text_33, Intro_EmibOpening_Text_34
+# 102 "data/emeralbody_rivals/emib_opening.pory"
+	compare VAR_RESULT, 0
+	goto_if_ne Intro_EmibOpening_38
+	goto Intro_EmibOpening_30
+
+Intro_EmibOpening_38:
+# 103 "data/emeralbody_rivals/emib_opening.pory"
+	setvar VAR_EMERALBODY_RIVAL, 5
+	goto Intro_EmibOpening_30
+
 
 Intro_DetermineRival::
-# 164 "data/emeralbody_rivals/emib_opening.pory"
+# 183 "data/emeralbody_rivals/emib_opening.pory"
 	compare VAR_TEMP_0, 3
 	goto_if_eq Intro_DetermineRival_2
-# 168 "data/emeralbody_rivals/emib_opening.pory"
+# 187 "data/emeralbody_rivals/emib_opening.pory"
 	compare VAR_TEMP_0, 2
 	goto_if_eq Intro_DetermineRival_3
 Intro_DetermineRival_1:
-# 172 "data/emeralbody_rivals/emib_opening.pory"
+# 191 "data/emeralbody_rivals/emib_opening.pory"
 	compare VAR_TEMP_1, 3
 	goto_if_eq Intro_DetermineRival_7
-# 176 "data/emeralbody_rivals/emib_opening.pory"
+# 195 "data/emeralbody_rivals/emib_opening.pory"
 	compare VAR_TEMP_1, 2
 	goto_if_eq Intro_DetermineRival_8
 Intro_DetermineRival_6:
-# 180 "data/emeralbody_rivals/emib_opening.pory"
+# 199 "data/emeralbody_rivals/emib_opening.pory"
 	compare VAR_TEMP_2, 3
 	goto_if_eq Intro_DetermineRival_12
-# 185 "data/emeralbody_rivals/emib_opening.pory"
+# 204 "data/emeralbody_rivals/emib_opening.pory"
 	compare VAR_TEMP_3, 3
 	goto_if_eq Intro_DetermineRival_15
-# 189 "data/emeralbody_rivals/emib_opening.pory"
+# 208 "data/emeralbody_rivals/emib_opening.pory"
 	compare VAR_TEMP_3, 2
 	goto_if_eq Intro_DetermineRival_16
 Intro_DetermineRival_14:
-# 193 "data/emeralbody_rivals/emib_opening.pory"
+# 212 "data/emeralbody_rivals/emib_opening.pory"
 	compare VAR_TEMP_4, 3
 	goto_if_eq Intro_DetermineRival_20
-# 197 "data/emeralbody_rivals/emib_opening.pory"
+# 216 "data/emeralbody_rivals/emib_opening.pory"
 	compare VAR_TEMP_4, 2
 	goto_if_eq Intro_DetermineRival_21
 Intro_DetermineRival_19:
-# 202 "data/emeralbody_rivals/emib_opening.pory"
+# 221 "data/emeralbody_rivals/emib_opening.pory"
 	goto_if_set FLAG_TEMP_10, Intro_DetermineRival_25
 Intro_DetermineRival_24:
-# 205 "data/emeralbody_rivals/emib_opening.pory"
+# 224 "data/emeralbody_rivals/emib_opening.pory"
 	goto_if_set FLAG_TEMP_4, Intro_DetermineRival_28
 Intro_DetermineRival_27:
-# 208 "data/emeralbody_rivals/emib_opening.pory"
+# 227 "data/emeralbody_rivals/emib_opening.pory"
 	goto_if_set FLAG_TEMP_3, Intro_DetermineRival_31
 Intro_DetermineRival_30:
-# 211 "data/emeralbody_rivals/emib_opening.pory"
+# 230 "data/emeralbody_rivals/emib_opening.pory"
 	goto_if_set FLAG_TEMP_1, Intro_DetermineRival_34
 Intro_DetermineRival_33:
-# 214 "data/emeralbody_rivals/emib_opening.pory"
+# 233 "data/emeralbody_rivals/emib_opening.pory"
 	goto_if_unset FLAG_TEMP_10, Intro_DetermineRival_38
 	return
 
 Intro_DetermineRival_2:
-# 165 "data/emeralbody_rivals/emib_opening.pory"
+# 184 "data/emeralbody_rivals/emib_opening.pory"
 	setvar VAR_EMERALBODY_RIVAL, 0
 	return
 
 Intro_DetermineRival_3:
-# 169 "data/emeralbody_rivals/emib_opening.pory"
+# 188 "data/emeralbody_rivals/emib_opening.pory"
 	setflag FLAG_TEMP_10
 	goto Intro_DetermineRival_1
 
 Intro_DetermineRival_7:
-# 173 "data/emeralbody_rivals/emib_opening.pory"
+# 192 "data/emeralbody_rivals/emib_opening.pory"
 	setvar VAR_EMERALBODY_RIVAL, 1
 	return
 
 Intro_DetermineRival_8:
-# 177 "data/emeralbody_rivals/emib_opening.pory"
+# 196 "data/emeralbody_rivals/emib_opening.pory"
 	setflag FLAG_TEMP_1
 	goto Intro_DetermineRival_6
 
 Intro_DetermineRival_12:
-# 181 "data/emeralbody_rivals/emib_opening.pory"
+# 200 "data/emeralbody_rivals/emib_opening.pory"
 	setvar VAR_EMERALBODY_RIVAL, 2
 	return
 
 Intro_DetermineRival_15:
-# 186 "data/emeralbody_rivals/emib_opening.pory"
+# 205 "data/emeralbody_rivals/emib_opening.pory"
 	setvar VAR_EMERALBODY_RIVAL, 3
 	return
 
 Intro_DetermineRival_16:
-# 190 "data/emeralbody_rivals/emib_opening.pory"
+# 209 "data/emeralbody_rivals/emib_opening.pory"
 	setflag FLAG_TEMP_3
 	goto Intro_DetermineRival_14
 
 Intro_DetermineRival_20:
-# 194 "data/emeralbody_rivals/emib_opening.pory"
+# 213 "data/emeralbody_rivals/emib_opening.pory"
 	setvar VAR_EMERALBODY_RIVAL, 4
 	return
 
 Intro_DetermineRival_21:
-# 198 "data/emeralbody_rivals/emib_opening.pory"
+# 217 "data/emeralbody_rivals/emib_opening.pory"
 	setflag FLAG_TEMP_4
 	goto Intro_DetermineRival_19
 
 Intro_DetermineRival_25:
-# 203 "data/emeralbody_rivals/emib_opening.pory"
+# 222 "data/emeralbody_rivals/emib_opening.pory"
 	setvar VAR_EMERALBODY_RIVAL, 0
 	goto Intro_DetermineRival_24
 
 Intro_DetermineRival_28:
-# 206 "data/emeralbody_rivals/emib_opening.pory"
+# 225 "data/emeralbody_rivals/emib_opening.pory"
 	setvar VAR_EMERALBODY_RIVAL, 4
 	goto Intro_DetermineRival_27
 
 Intro_DetermineRival_31:
-# 209 "data/emeralbody_rivals/emib_opening.pory"
+# 228 "data/emeralbody_rivals/emib_opening.pory"
 	setvar VAR_EMERALBODY_RIVAL, 3
 	goto Intro_DetermineRival_30
 
 Intro_DetermineRival_34:
-# 212 "data/emeralbody_rivals/emib_opening.pory"
+# 231 "data/emeralbody_rivals/emib_opening.pory"
 	setvar VAR_EMERALBODY_RIVAL, 1
 	goto Intro_DetermineRival_33
 
 Intro_DetermineRival_36:
-# 215 "data/emeralbody_rivals/emib_opening.pory"
+# 234 "data/emeralbody_rivals/emib_opening.pory"
 	setvar VAR_EMERALBODY_RIVAL, 2
 	return
 
 Intro_DetermineRival_37:
-# 214 "data/emeralbody_rivals/emib_opening.pory"
+# 233 "data/emeralbody_rivals/emib_opening.pory"
 	goto_if_unset FLAG_TEMP_3, Intro_DetermineRival_41
 	return
 
 Intro_DetermineRival_38:
-# 214 "data/emeralbody_rivals/emib_opening.pory"
+# 233 "data/emeralbody_rivals/emib_opening.pory"
 	goto_if_unset FLAG_TEMP_1, Intro_DetermineRival_37
 	return
 
 Intro_DetermineRival_41:
-# 214 "data/emeralbody_rivals/emib_opening.pory"
+# 233 "data/emeralbody_rivals/emib_opening.pory"
 	goto_if_unset FLAG_TEMP_4, Intro_DetermineRival_36
 	return
 
 
 InsideOfTruck_EventScript_MovingBox2::
-# 230 "data/emeralbody_rivals/emib_opening.pory"
+# 249 "data/emeralbody_rivals/emib_opening.pory"
 	goto_if_set FLAG_TEMP_5, InsideOfTruck_EventScript_MovingBox2_2
-# 255 "data/emeralbody_rivals/emib_opening.pory"
+# 274 "data/emeralbody_rivals/emib_opening.pory"
 	msgbox InsideOfTruck_Text_BoxPrintedWithMonLogo, MSGBOX_SIGN
-# 256 "data/emeralbody_rivals/emib_opening.pory"
+# 275 "data/emeralbody_rivals/emib_opening.pory"
 	setflag FLAG_TEMP_5
 InsideOfTruck_EventScript_MovingBox2_1:
-# 258 "data/emeralbody_rivals/emib_opening.pory"
+# 277 "data/emeralbody_rivals/emib_opening.pory"
 	release
 	return
 
 InsideOfTruck_EventScript_MovingBox2_2:
-# 231 "data/emeralbody_rivals/emib_opening.pory"
+# 250 "data/emeralbody_rivals/emib_opening.pory"
 	msgbox InsideOfTruck_EventScript_MovingBox2_Text_0
-# 232 "data/emeralbody_rivals/emib_opening.pory"
+# 251 "data/emeralbody_rivals/emib_opening.pory"
 	special EnterCode
-# 233 "data/emeralbody_rivals/emib_opening.pory"
+# 252 "data/emeralbody_rivals/emib_opening.pory"
 	waitstate
-# 234 "data/emeralbody_rivals/emib_opening.pory"
+# 253 "data/emeralbody_rivals/emib_opening.pory"
 	special GetCodeFeedback
-# 235 "data/emeralbody_rivals/emib_opening.pory"
+# 254 "data/emeralbody_rivals/emib_opening.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq InsideOfTruck_EventScript_MovingBox2_6
-# 241 "data/emeralbody_rivals/emib_opening.pory"
+# 260 "data/emeralbody_rivals/emib_opening.pory"
 	compare VAR_RESULT, 2
 	goto_if_eq InsideOfTruck_EventScript_MovingBox2_7
-# 249 "data/emeralbody_rivals/emib_opening.pory"
+# 268 "data/emeralbody_rivals/emib_opening.pory"
 	msgbox InsideOfTruck_EventScript_MovingBox2_Text_1
 InsideOfTruck_EventScript_MovingBox2_5:
-# 251 "data/emeralbody_rivals/emib_opening.pory"
+# 270 "data/emeralbody_rivals/emib_opening.pory"
 	setvar VAR_RESULT, 0
-# 252 "data/emeralbody_rivals/emib_opening.pory"
+# 271 "data/emeralbody_rivals/emib_opening.pory"
 	warpsilent MAP_INSIDE_OF_TRUCK, 2, 2
 	goto InsideOfTruck_EventScript_MovingBox2_1
 
 InsideOfTruck_EventScript_MovingBox2_6:
-# 236 "data/emeralbody_rivals/emib_opening.pory"
+# 255 "data/emeralbody_rivals/emib_opening.pory"
 	setflag FLAG_EMIB_DEMO_1
-# 237 "data/emeralbody_rivals/emib_opening.pory"
+# 256 "data/emeralbody_rivals/emib_opening.pory"
 	setflag FLAG_EMIB_DEMO_2
-# 238 "data/emeralbody_rivals/emib_opening.pory"
+# 257 "data/emeralbody_rivals/emib_opening.pory"
 	setflag FLAG_EMIB_DEMO_3
-# 239 "data/emeralbody_rivals/emib_opening.pory"
+# 258 "data/emeralbody_rivals/emib_opening.pory"
 	msgbox Text_CodeEntrySuccess, MSGBOX_DEFAULT
 	goto InsideOfTruck_EventScript_MovingBox2_5
 
 InsideOfTruck_EventScript_MovingBox2_7:
-# 242 "data/emeralbody_rivals/emib_opening.pory"
+# 261 "data/emeralbody_rivals/emib_opening.pory"
 	setflag FLAG_NEW_GAME_PLUS
-# 243 "data/emeralbody_rivals/emib_opening.pory"
+# 262 "data/emeralbody_rivals/emib_opening.pory"
 	setflag FLAG_EMIB_DEMO_1
-# 244 "data/emeralbody_rivals/emib_opening.pory"
+# 263 "data/emeralbody_rivals/emib_opening.pory"
 	setflag FLAG_EMIB_DEMO_2
-# 245 "data/emeralbody_rivals/emib_opening.pory"
+# 264 "data/emeralbody_rivals/emib_opening.pory"
 	setflag FLAG_EMIB_DEMO_3
-# 246 "data/emeralbody_rivals/emib_opening.pory"
+# 265 "data/emeralbody_rivals/emib_opening.pory"
 	msgbox Text_CodeEntrySuccess, MSGBOX_DEFAULT
 	goto InsideOfTruck_EventScript_MovingBox2_5
 
@@ -629,12 +669,36 @@ Intro_EmibOpening_Text_28:
 	.string "Flip a coin$"
 
 Intro_EmibOpening_Text_29:
-# 98 "data/emeralbody_rivals/emib_opening.pory"
+# 95 "data/emeralbody_rivals/emib_opening.pory"
+	.string "Q??/?/????/ Can you say that you\nlike all of your friends equally?$"
+
+Intro_EmibOpening_Text_30:
+# 96 "data/emeralbody_rivals/emib_opening.pory"
+	.string "Don't think I could$"
+
+Intro_EmibOpening_Text_31:
+# 96 "data/emeralbody_rivals/emib_opening.pory"
+	.string "…Yes?$"
+
+Intro_EmibOpening_Text_32:
+# 100 "data/emeralbody_rivals/emib_opening.pory"
+	.string "DANGER\nIncreased strife to follow.\lProceed with caution.$"
+
+Intro_EmibOpening_Text_33:
+# 101 "data/emeralbody_rivals/emib_opening.pory"
+	.string "Wait, I changed my mind!$"
+
+Intro_EmibOpening_Text_34:
+# 101 "data/emeralbody_rivals/emib_opening.pory"
+	.string "Proceed$"
+
+Intro_EmibOpening_Text_35:
+# 117 "data/emeralbody_rivals/emib_opening.pory"
 	.string "Congrats! Your answers have been\n"
 	.string "transmitted and recorded.$"
 
-Intro_EmibOpening_Text_30:
-# 100 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_36:
+# 119 "data/emeralbody_rivals/emib_opening.pory"
 	.string "… … …\p"
 	.string "The browser closed on its own, cleared\n"
 	.string "itself from my internet history, and\l"
@@ -642,82 +706,82 @@ Intro_EmibOpening_Text_30:
 	.string "again.\p"
 	.string "… … …$"
 
-Intro_EmibOpening_Text_31:
-# 112 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_37:
+# 131 "data/emeralbody_rivals/emib_opening.pory"
 	.string "Jakson posted a link to a video game\n"
 	.string "modding webiste.\p"
 	.string "Pokémon Emerald remake in the Pokémon\n"
 	.string "Anniversary Experience v1.0$"
 
-Intro_EmibOpening_Text_32:
-# 117 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_38:
+# 136 "data/emeralbody_rivals/emib_opening.pory"
 	.string "A chat log branched off from the\n"
 	.string "article headline.$"
 
-Intro_EmibOpening_Text_33:
-# 119 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_39:
+# 138 "data/emeralbody_rivals/emib_opening.pory"
 	.string "Remember that Spatial Reality game\n"
 	.string "they made for Pokémon's anniversary a\l"
 	.string "few years back? Some people made a\l"
 	.string "port of Emerald in it.$"
 
-Intro_EmibOpening_Text_34:
-# 121 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_40:
+# 140 "data/emeralbody_rivals/emib_opening.pory"
 	.string "That's awesome!!! I didn't think they'd\n"
 	.string "crack the code so easily.$"
 
-Intro_EmibOpening_Text_35:
-# 123 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_41:
+# 142 "data/emeralbody_rivals/emib_opening.pory"
 	.string "Neat.$"
 
-Intro_EmibOpening_Text_36:
-# 125 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_42:
+# 144 "data/emeralbody_rivals/emib_opening.pory"
 	.string "Will have to try it sometime.\n"
 	.string "Gen1 in the original was fun.$"
 
-Intro_EmibOpening_Text_37:
-# 128 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_43:
+# 147 "data/emeralbody_rivals/emib_opening.pory"
 	.string "Is this the one that got the\n"
 	.string "multiplayer mod last year?$"
 
-Intro_EmibOpening_Text_38:
-# 130 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_44:
+# 149 "data/emeralbody_rivals/emib_opening.pory"
 	.string "That's actually where I was going with\n"
 	.string "it. I can put together a modpack if\l"
 	.string "anyone is interested.\l"
 	.string "Any takers?$"
 
-Intro_EmibOpening_Text_39:
-# 133 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_45:
+# 152 "data/emeralbody_rivals/emib_opening.pory"
 	.string "Day one, I'm in.$"
 
-Intro_EmibOpening_Text_40:
-# 135 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_46:
+# 154 "data/emeralbody_rivals/emib_opening.pory"
 	.string "How much is the base game to purchase?$"
 
-Intro_EmibOpening_Text_41:
-# 137 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_47:
+# 156 "data/emeralbody_rivals/emib_opening.pory"
 	.string "No need. I've got like a dozen extra\n"
 	.string "redemption codes for it.$"
 
-Intro_EmibOpening_Text_42:
-# 139 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_48:
+# 158 "data/emeralbody_rivals/emib_opening.pory"
 	.string "… … … Why do you have a bunch of extra\n"
 	.string "copies?$"
 
-Intro_EmibOpening_Text_43:
-# 141 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_49:
+# 160 "data/emeralbody_rivals/emib_opening.pory"
 	.string "I'm in, too. Feels like forever since we\n"
 	.string "all last got together and hung out or\l"
 	.string "played a game together.$"
 
-Intro_EmibOpening_Text_44:
-# 143 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_50:
+# 162 "data/emeralbody_rivals/emib_opening.pory"
 	.string "{EMOJI_BIGSMILE}{EMOJI_RIGHT_THUMBS} Give me a few days and I'll set up the\n"
 	.string "mods and a server.$"
 
-Intro_EmibOpening_Text_45:
-# 147 "data/emeralbody_rivals/emib_opening.pory"
+Intro_EmibOpening_Text_51:
+# 166 "data/emeralbody_rivals/emib_opening.pory"
 	.string "Initializing scripts…\n"
 	.string "Initializing textures…\l"
 	.string "Initializing mods…\l"
@@ -729,21 +793,21 @@ Intro_EmibOpening_Text_45:
 	.string "Connecting to server…$"
 
 InsideOfTruck_EventScript_MovingBox2_Text_0:
-# 231 "data/emeralbody_rivals/emib_opening.pory"
+# 250 "data/emeralbody_rivals/emib_opening.pory"
 	.string "Enter a code.$"
 
 InsideOfTruck_EventScript_MovingBox2_Text_1:
-# 249 "data/emeralbody_rivals/emib_opening.pory"
+# 268 "data/emeralbody_rivals/emib_opening.pory"
 	.string "Valid code not entered.$"
 
 CommonText_Feed::
-# 220 "data/emeralbody_rivals/emib_opening.pory"
+# 239 "data/emeralbody_rivals/emib_opening.pory"
 	.string "Feed$"
 
 CommonText_Quiz::
-# 224 "data/emeralbody_rivals/emib_opening.pory"
+# 243 "data/emeralbody_rivals/emib_opening.pory"
 	.string "Quiz$"
 
 Text_CodeEntrySuccess::
-# 261 "data/emeralbody_rivals/emib_opening.pory"
+# 280 "data/emeralbody_rivals/emib_opening.pory"
 	.string "Code entry successful.$"

@@ -347,6 +347,8 @@ extern const u8 Debug_EventScript_CheckEVs[];
 extern const u8 Debug_EventScript_CheckIVs[];
 extern const u8 Debug_EventScript_InflictStatus1[];
 extern const u8 Debug_EventScript_SetHiddenNature[];
+
+extern const u8 Upgrade_EmeralbodyRivalBattleState_Var[];
 extern const u8 Debug_EventScript_Script_1[];
 extern const u8 Debug_EventScript_Script_2[];
 extern const u8 Debug_EventScript_Script_3[];
@@ -607,6 +609,7 @@ static const struct DebugMenuOption sDebugMenu_Actions_Player[] =
 
 static const struct DebugMenuOption sDebugMenu_Actions_Scripts[] =
 {
+    { COMPOUND_STRING("Upgrade save - 1.4.0"), DebugAction_ExecuteScript, Upgrade_EmeralbodyRivalBattleState_Var },
     { COMPOUND_STRING("Script 1"), DebugAction_ExecuteScript, Debug_EventScript_Script_1 },
     { COMPOUND_STRING("Script 2"), DebugAction_ExecuteScript, Debug_EventScript_Script_2 },
     { COMPOUND_STRING("Script 3"), DebugAction_ExecuteScript, Debug_EventScript_Script_3 },

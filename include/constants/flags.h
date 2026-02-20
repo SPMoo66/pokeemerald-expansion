@@ -1524,9 +1524,9 @@
 #define FLAG_DONT_TRANSIITON_BATTLE_MUSIC           (SYSTEM_FLAGS + 0x8E) // Set to prevent battles from changing the music, takes map music or music from playbgm. Clear after use.
 #define FLAG_PERM_HIDE_FOLLOWER                     (SYSTEM_FLAGS + 0x8F) // Set to permanently hide following Pokémon
 
-#define FLAG_UNUSED_0x8F0                           (SYSTEM_FLAGS + 0x90) // Unused Flag
-#define FLAG_UNUSED_0x8F1                           (SYSTEM_FLAGS + 0x91) // Unused Flag
-#define FLAG_UNUSED_0x8F2                           (SYSTEM_FLAGS + 0x92) // Unused Flag
+#define FLAG_LANDMARK_MAUVE_HOLLOW                  (SYSTEM_FLAGS + 0x90) // Unused Flag
+#define FLAG_LANDMARK_WELLSPRING_CHASM              (SYSTEM_FLAGS + 0x91) // Unused Flag
+#define FLAG_LANDMARK_BLANCHED_DEPTHS               (SYSTEM_FLAGS + 0x92) // Unused Flag
 #define FLAG_UNUSED_0x8F3                           (SYSTEM_FLAGS + 0x93) // Unused Flag
 #define FLAG_UNUSED_0x8F4                           (SYSTEM_FLAGS + 0x94) // Unused Flag
 #define FLAG_UNUSED_0x8F5                           (SYSTEM_FLAGS + 0x95) // Unused Flag

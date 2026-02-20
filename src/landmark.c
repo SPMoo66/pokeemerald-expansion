@@ -293,7 +293,38 @@ static const struct Landmark *const Landmarks_MtChimney_2[]  =
     NULL,
 };
 
-static const struct LandmarkList sLandmarkLists[] =
+
+static const struct Landmark Landmark_BlanchedDepths = {COMPOUND_STRING("Blanched Depths"), FLAG_LANDMARK_BLANCHED_DEPTHS};
+static const struct Landmark Landmark_SSTidalDungeon = {COMPOUND_STRING("S.S. Tidal"), -1};
+static const struct Landmark Landmark_MauveHollow = {COMPOUND_STRING("Mauve Hollow"), FLAG_LANDMARK_MAUVE_HOLLOW};
+static const struct Landmark Landmark_WellspringChasm = {COMPOUND_STRING("Wellspring Chasm"), FLAG_LANDMARK_WELLSPRING_CHASM};
+
+static const struct Landmark *const Landmarks_FarOffSeaWest2[]  =
+{
+    &Landmark_BlanchedDepths,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_MauveIslandSouth[]  =
+{
+    &Landmark_SSTidalDungeon,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_MauveIslandSoutheast[]  =
+{
+    &Landmark_MauveHollow,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_FarOffSeaSouth[]  =
+{
+    &Landmark_WellspringChasm,
+    NULL,
+};
+
+
+static const struct LandmarkList sLandmarkLists[] = // THESE MUST BE IN THE EXACT ORDER THEY APPEAR IN OVERWORLD.C!!!!!!!!! (sMapsecToRegion)
 {
     {MAPSEC_ROUTE_103, 2, Landmarks_Route103_2},
     {MAPSEC_ROUTE_104, 0, Landmarks_Route104_0},
@@ -346,6 +377,10 @@ static const struct LandmarkList sLandmarkLists[] =
     {MAPSEC_ROUTE_134, 1, Landmarks_OceanCurrent},
     {MAPSEC_ROUTE_134, 2, Landmarks_Route134_2},
     {MAPSEC_MT_CHIMNEY, 2, Landmarks_MtChimney_2},
+    {MAPSEC_MAUVE_ISLAND_SOUTH, 2, Landmarks_MauveIslandSouth},
+    {MAPSEC_FAR_OFF_SEA_WEST_2, 15, Landmarks_FarOffSeaWest2},
+    {MAPSEC_FAR_OFF_SEA_SOUTH, 2, Landmarks_FarOffSeaSouth},
+    {MAPSEC_MAUVE_ISLAND_SOUTHEAST, 0, Landmarks_MauveIslandSoutheast},
     {MAPSEC_NONE, 0, NULL},
 };
 

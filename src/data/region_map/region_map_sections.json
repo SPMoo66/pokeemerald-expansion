@@ -929,15 +929,27 @@
     },
     {
       "id": "MAPSEC_FAR_OFF_SEA_WEST_2_UNDERWATER_1",
-      "name": "Underwater"
+      "name": "Underwater",
+      "x": 3,
+      "y": 4,
+      "width": 5,
+      "height": 5
     },
     {
       "id": "MAPSEC_FAR_OFF_SEA_WEST_2_UNDERWATER_2",
-      "name": "Underwater"
+      "name": "Underwater",
+      "x": 3,
+      "y": 4,
+      "width": 5,
+      "height": 5
     },
     {
       "id": "MAPSEC_FAR_OFF_SEA_WEST_UNDERWATER_1",
-      "name": "Underwater"
+      "name": "Underwater",
+      "x": 8,
+      "y": 4,
+      "width": 6,
+      "height": 4
     },
     {
       "id": "MAPSEC_MAUVE_ISLAND_SOUTHEAST",
@@ -949,36 +961,56 @@
     },
     {
       "id": "MAPSEC_MAUVE_ISLAND_SOUTH_UNDERWATER",
-      "name": "Underwater"
+      "name": "Underwater",
+      "x": 16,
+      "y": 7,
+      "width": 2,
+      "height": 1
     },
     {
       "id": "MAPSEC_FAR_OFF_SEA_SOUTH_UNDERWATER",
-      "name": "Underwater"
+      "name": "Underwater",
+      "x": 17,
+      "y": 8,
+      "width": 1,
+      "height": 3
     },
     {
       "id": "MAPSEC_SS_TIDAL_DUNGEON",
-      "name": "S.S. Tidal"
+      "name": "S.S. Tidal",
+      "x": 16,
+      "y": 7,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_BLANCHED_DEPTHS",
-      "name": "Blanched Depths"
+      "name": "Blanched Depths",
+      "x": 3,
+      "y": 7,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_MAUVE_HOLLOW",
       "name": "Mauve Hollow",
       "x": 18,
-      "y": 5,
+      "y": 6,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_WELLSPRING_CHASM",
-      "name": "Wellspring Chasm"
+      "name": "Wellspring Chasm",
+      "x": 17,
+      "y": 10,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_BYGONE_VAULT",
       "name": "Bygone Vault",
-      "x": 12,
+      "x": 11,
       "y": 4,
       "width": 1,
       "height": 1

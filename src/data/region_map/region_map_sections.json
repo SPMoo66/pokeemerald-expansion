@@ -874,52 +874,56 @@
     {
       "id": "MAPSEC_MAUVE_CAMP",
       "name": "Mauve Island Camp",
-      "x": 13,
-      "y": 5,
+      "x": 16,
+      "y": 4,
       "width": 2,
       "height": 2
     },
     {
       "id": "MAPSEC_MAUVE_ISLAND_SOUTH",
       "name": "Mauve Island",
-      "x": 13,
-      "y": 7,
-      "width": 3,
+      "x": 16,
+      "y": 6,
+      "width": 2,
       "height": 2
     },
     {
       "id": "MAPSEC_MAUVE_ISLAND_WEST",
       "name": "Mauve Island",
-      "x": 11,
-      "y": 5,
+      "x": 14,
+      "y": 4,
       "width": 2,
       "height": 2
     },
     {
       "id": "MAPSEC_FAR_OFF_SEA_WEST",
       "name": "Far-Off Sea",
-      "x": 6,
-      "y": 5,
-      "width": 5,
-      "height": 3
+      "x": 8,
+      "y": 4,
+      "width": 6,
+      "height": 4
     },
     {
       "id": "MAPSEC_FAR_OFF_SEA_WEST_2",
       "name": "Far-Off Sea",
-      "x": 2,
-      "y": 5,
-      "width": 4,
-      "height": 4
+      "x": 3,
+      "y": 4,
+      "width": 5,
+      "height": 5
     },
     {
       "id": "MAPSEC_FAR_OFF_SEA_SOUTH",
-      "name": "Far-Off Sea"
+      "name": "Far-Off Sea",
+      "x": 17,
+      "y": 8,
+      "width": 1,
+      "height": 3
     },
     {
       "id": "MAPSEC_ILLUSORY_GROTTO",
       "name": "Illusory Grotto",
-      "x": 1,
-      "y": 5,
+      "x": 2,
+      "y": 4,
       "width": 1,
       "height": 1
     },
@@ -937,7 +941,11 @@
     },
     {
       "id": "MAPSEC_MAUVE_ISLAND_SOUTHEAST",
-      "name": "Mauve Island"
+      "name": "Mauve Island",
+      "x": 18,
+      "y": 6,
+      "width": 3,
+      "height": 2
     },
     {
       "id": "MAPSEC_MAUVE_ISLAND_SOUTH_UNDERWATER",
@@ -957,7 +965,11 @@
     },
     {
       "id": "MAPSEC_MAUVE_HOLLOW",
-      "name": "Mauve Hollow"
+      "name": "Mauve Hollow",
+      "x": 18,
+      "y": 5,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_WELLSPRING_CHASM",
@@ -965,7 +977,11 @@
     },
     {
       "id": "MAPSEC_BYGONE_VAULT",
-      "name": "Bygone Vault"
+      "name": "Bygone Vault",
+      "x": 12,
+      "y": 4,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_S_S_ANNE",

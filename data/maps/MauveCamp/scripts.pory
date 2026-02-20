@@ -1,4 +1,11 @@
-mapscripts MauveCamp_MapScripts {}
+const LOCALID_MAUVE_CAMP_HEAL_SAILOR = 3
+
+mapscripts MauveCamp_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setrespawn (HEAL_LOCATION_MAUVE_CAMP)
+		setflag (FLAG_LANDMARK_MAUVE_CAMP)
+	}
+}
 
 script MauveCamp_Sailor1 {
 	msgbox ("Aye, trainer.\n"

@@ -1529,7 +1529,7 @@
 #define FLAG_LANDMARK_BLANCHED_DEPTHS               (SYSTEM_FLAGS + 0x92) // Unused Flag
 #define FLAG_LANDMARK_SUBMERGED_CAVE                (SYSTEM_FLAGS + 0x93) // Unused Flag
 #define FLAG_LANDMARK_BYGONE_VAULT                  (SYSTEM_FLAGS + 0x94) // Unused Flag
-#define FLAG_UNUSED_0x8F5                           (SYSTEM_FLAGS + 0x95) // Unused Flag
+#define FLAG_LANDMARK_MAUVE_CAMP                    (SYSTEM_FLAGS + 0x95) // Unused Flag
 #define FLAG_UNUSED_0x8F6                           (SYSTEM_FLAGS + 0x96) // Unused Flag
 #define FLAG_UNUSED_0x8F7                           (SYSTEM_FLAGS + 0x97) // Unused Flag
 #define FLAG_UNUSED_0x8F8                           (SYSTEM_FLAGS + 0x98) // Unused Flag

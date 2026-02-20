@@ -451,6 +451,10 @@ static const mapsec_u16_t sRedOutlineFlyDestinationsHoenn[][2] =
 static const u16 sRedOutlineFlyDestinationsExpansion1[][2] =
 {
     {
+        FLAG_LANDMARK_MAUVE_CAMP,
+        MAPSEC_MAUVE_CAMP
+    },
+    {
         -1,
         MAPSEC_NONE
     }
@@ -1243,6 +1247,8 @@ static u8 GetMapsecType(mapsec_u16_t mapSecId)
         {
         case MAPSEC_NONE:
             return MAPSECTYPE_NONE;
+        case MAPSEC_MAUVE_CAMP:
+            return FlagGet(FLAG_LANDMARK_MAUVE_CAMP) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
         default:
             return MAPSECTYPE_ROUTE;
         }
@@ -1928,40 +1934,44 @@ static void CreateFlyDestIcons(void)
     u16 mapSecIdStart = MAPSEC_LITTLEROOT_TOWN;
     u16 mapSecIdEnd = MAPSEC_EVER_GRANDE_CITY;
     u8 currentMap = gMapHeader.region;
-
-    if (currentMap == 3) // 3 is REGION_IS_EXPANSION_1
+/*
+    if (currentMap == X)
     {
-        canFlyFlag = FLAG_VISITED_OLDALE_TOWN;   // I believe this is used so that the player can fly to at least one map
-        mapSecIdStart = MAPSEC_FORTREE_CITY;     // Set this to the first mapsec to be checked for the region
-        mapSecIdEnd = MAPSEC_EVER_GRANDE_CITY;   // Set this to the last mapsec to be checked for the region
+        canFlyFlag = FLAG_VISITED_LITTLEROOT_TOWN;  // I think this is just the iteration loop, ref GetMapsecType
+        mapSecIdStart = MAPSEC_NONE;                // Set this to the first mapsec to be checked for the region
+        mapSecIdEnd = MAPSEC_NONE;                  // Set this to the last mapsec to be checked for the region
     }
-    for (mapSecId = mapSecIdStart; mapSecId <= mapSecIdEnd; mapSecId++)
+*/
+    if (currentMap != 3) // Don't want to generate city icons for Mauve map, just a red square for the camp
     {
-        GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
-        x = (x + MAPCURSOR_X_MIN) * 8 + 4;
-        y = (y + MAPCURSOR_Y_MIN) * 8 + 4;
-
-        if (width == 2)
-            shape = SPRITE_SHAPE(16x8);
-        else if (height == 2)
-            shape = SPRITE_SHAPE(8x16);
-        else
-            shape = SPRITE_SHAPE(8x8);
-
-        spriteId = CreateSprite(&sFlyDestIconSpriteTemplate, x, y, 10);
-        if (spriteId != MAX_SPRITES)
+        for (mapSecId = mapSecIdStart; mapSecId <= mapSecIdEnd; mapSecId++)
         {
-            gSprites[spriteId].oam.shape = shape;
-
-            if (FlagGet(canFlyFlag))
-                gSprites[spriteId].callback = SpriteCB_FlyDestIcon;
+            GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
+            x = (x + MAPCURSOR_X_MIN) * 8 + 4;
+            y = (y + MAPCURSOR_Y_MIN) * 8 + 4;
+	    
+            if (width == 2)
+                shape = SPRITE_SHAPE(16x8);
+            else if (height == 2)
+                shape = SPRITE_SHAPE(8x16);
             else
-                shape += 3;
-
-            StartSpriteAnim(&gSprites[spriteId], shape);
-            gSprites[spriteId].sIconMapSec = mapSecId;
+                shape = SPRITE_SHAPE(8x8);
+	    
+            spriteId = CreateSprite(&sFlyDestIconSpriteTemplate, x, y, 10);
+            if (spriteId != MAX_SPRITES)
+            {
+                gSprites[spriteId].oam.shape = shape;
+	    
+                if (FlagGet(canFlyFlag))
+                    gSprites[spriteId].callback = SpriteCB_FlyDestIcon;
+                else
+                    shape += 3;
+	    
+                StartSpriteAnim(&gSprites[spriteId], shape);
+                gSprites[spriteId].sIconMapSec = mapSecId;
+            }
+            canFlyFlag++;
         }
-        canFlyFlag++;
     }
 }
 
@@ -1988,6 +1998,11 @@ static void TryCreateRedOutlineFlyDestIcons(void)
                 GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
                 x = (x + MAPCURSOR_X_MIN) * 8;
                 y = (y + MAPCURSOR_Y_MIN) * 8;
+
+                if (mapSecId == MAPSEC_MAUVE_CAMP)
+                    x = x + 8;    // Offset the red box for Mauve Camp, since the area is 2x2 and the desired location is in the top right.
+								  // This could be recreated relatively easily with other x/y modifications
+
                 spriteId = CreateSprite(&sFlyDestIconSpriteTemplate, x, y, 10);
                 if (spriteId != MAX_SPRITES)
                 {
@@ -2132,6 +2147,8 @@ u32 FilterFlyDestination(struct RegionMap* regionMap)
         return (gSaveBlock2Ptr->playerGender == MALE ? HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE : HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE);
     case MAPSEC_EVER_GRANDE_CITY:
         return (FlagGet(FLAG_LANDMARK_POKEMON_LEAGUE) && regionMap->posWithinMapSec == 0 ? HEAL_LOCATION_EVER_GRANDE_CITY_POKEMON_LEAGUE : HEAL_LOCATION_EVER_GRANDE_CITY);
+    case MAPSEC_MAUVE_CAMP:
+        return HEAL_LOCATION_MAUVE_CAMP;
     default:
         if (sMapHealLocations[regionMap->mapSecId][2] != HEAL_LOCATION_NONE)
             return sMapHealLocations[regionMap->mapSecId][2];

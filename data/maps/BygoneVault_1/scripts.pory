@@ -17,6 +17,7 @@ mapscripts BygoneVault_1_MapScripts {
 		}
 	}
 	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_LANDMARK_BYGONE_VAULT)
 		setflag (FLAG_TEMP_1)
 		setflag (FLAG_TEMP_2)
 		setflag (FLAG_TEMP_3)

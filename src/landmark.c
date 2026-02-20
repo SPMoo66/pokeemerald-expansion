@@ -294,16 +294,14 @@ static const struct Landmark *const Landmarks_MtChimney_2[]  =
 };
 
 
-static const struct Landmark Landmark_BlanchedDepths = {COMPOUND_STRING("Blanched Depths"), FLAG_LANDMARK_BLANCHED_DEPTHS};
+// Expansion 1 Landmarks
+
 static const struct Landmark Landmark_SSTidalDungeon = {COMPOUND_STRING("S.S. Tidal"), -1};
+static const struct Landmark Landmark_BygoneVault = {COMPOUND_STRING("Bygone Vault"), FLAG_LANDMARK_BYGONE_VAULT};
+static const struct Landmark Landmark_BlanchedDepths = {COMPOUND_STRING("Blanched Depths"), FLAG_LANDMARK_BLANCHED_DEPTHS};
+static const struct Landmark Landmark_SubmergedCave = {COMPOUND_STRING("Submerged Cave"), FLAG_LANDMARK_SUBMERGED_CAVE};
 static const struct Landmark Landmark_MauveHollow = {COMPOUND_STRING("Mauve Hollow"), FLAG_LANDMARK_MAUVE_HOLLOW};
 static const struct Landmark Landmark_WellspringChasm = {COMPOUND_STRING("Wellspring Chasm"), FLAG_LANDMARK_WELLSPRING_CHASM};
-
-static const struct Landmark *const Landmarks_FarOffSeaWest2[]  =
-{
-    &Landmark_BlanchedDepths,
-    NULL,
-};
 
 static const struct Landmark *const Landmarks_MauveIslandSouth[]  =
 {
@@ -311,9 +309,21 @@ static const struct Landmark *const Landmarks_MauveIslandSouth[]  =
     NULL,
 };
 
-static const struct Landmark *const Landmarks_MauveIslandSoutheast[]  =
+static const struct Landmark *const Landmarks_FarOffSeaWest[]  =
 {
-    &Landmark_MauveHollow,
+    &Landmark_BygoneVault,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_FarOffSeaWest2[]  =
+{
+    &Landmark_BlanchedDepths,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_FarOffSeaWest2_2[]  =
+{
+    &Landmark_SubmergedCave,
     NULL,
 };
 
@@ -323,8 +333,16 @@ static const struct Landmark *const Landmarks_FarOffSeaSouth[]  =
     NULL,
 };
 
+static const struct Landmark *const Landmarks_MauveIslandSoutheast[]  =
+{
+    &Landmark_MauveHollow,
+    NULL,
+};
 
-static const struct LandmarkList sLandmarkLists[] = // THESE MUST BE IN THE EXACT ORDER THEY APPEAR IN OVERWORLD.C!!!!!!!!! (sMapsecToRegion)
+
+// THESE MUST BE IN THE EXACT ORDER THEY APPEAR IN include/constants/region_map_sections.h enum!!!!!!!!! (see src/overworld.c - sMapsecToRegion or include/constants/region_map_sections.h for order)
+
+static const struct LandmarkList sLandmarkLists[] =
 {
     {MAPSEC_ROUTE_103, 2, Landmarks_Route103_2},
     {MAPSEC_ROUTE_104, 0, Landmarks_Route104_0},
@@ -378,6 +396,8 @@ static const struct LandmarkList sLandmarkLists[] = // THESE MUST BE IN THE EXAC
     {MAPSEC_ROUTE_134, 2, Landmarks_Route134_2},
     {MAPSEC_MT_CHIMNEY, 2, Landmarks_MtChimney_2},
     {MAPSEC_MAUVE_ISLAND_SOUTH, 2, Landmarks_MauveIslandSouth},
+    {MAPSEC_FAR_OFF_SEA_WEST, 3, Landmarks_FarOffSeaWest},
+    {MAPSEC_FAR_OFF_SEA_WEST_2, 8, Landmarks_FarOffSeaWest2_2},
     {MAPSEC_FAR_OFF_SEA_WEST_2, 15, Landmarks_FarOffSeaWest2},
     {MAPSEC_FAR_OFF_SEA_SOUTH, 2, Landmarks_FarOffSeaSouth},
     {MAPSEC_MAUVE_ISLAND_SOUTHEAST, 0, Landmarks_MauveIslandSoutheast},

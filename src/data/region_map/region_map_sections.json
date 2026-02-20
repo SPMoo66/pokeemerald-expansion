@@ -1016,8 +1016,12 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_S_S_ANNE",
-      "name": "S.S. ANNE"
+      "id": "MAPSEC_SUBMERGED_CAVE",
+      "name": "Submerged Cave",
+      "x": 6,
+      "y": 5,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_UNDERGROUND_PATH",

@@ -84,6 +84,8 @@ IllusoryGrotto_B4F_1R_Scene01_OnFrame::
 # 59 "data/expansion_1/scene01.pory"
 	clearflag FLAG_DONT_START_MUSIC_ON_WARP
 # 60 "data/expansion_1/scene01.pory"
+	setflag FLAG_CANT_USE_ESCAPE_ROPE
+# 61 "data/expansion_1/scene01.pory"
 	release
 	return
 

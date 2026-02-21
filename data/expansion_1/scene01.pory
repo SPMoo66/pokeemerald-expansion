@@ -57,5 +57,6 @@ script IllusoryGrotto_B4F_1R_Scene01_OnFrame {
 	playbgm (MUS_DP_VICTORY_ROAD, FALSE)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 21)
 	clearflag (FLAG_DONT_START_MUSIC_ON_WARP)
+	setflag (FLAG_CANT_USE_ESCAPE_ROPE)
 	release
 }

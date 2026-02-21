@@ -1182,6 +1182,9 @@ bool8 CanUseDigOrEscapeRopeOnCurMap(void)
     if (!CheckFollowerNPCFlag(FOLLOWER_NPC_FLAG_CAN_LEAVE_ROUTE))
         return FALSE;
 
+    if (FlagGet(FLAG_CANT_USE_ESCAPE_ROPE))
+        return FALSE;
+
     if (gMapHeader.allowEscaping)
         return TRUE;
     else

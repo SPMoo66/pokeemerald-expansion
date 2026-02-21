@@ -112,6 +112,14 @@ MauveCamp_Pot::
 	return
 
 
+MauveCamp_Shell::
+# 81 "data/maps/MauveCamp/scripts.pory"
+	msgbox MauveCamp_Shell_Text_0
+# 84 "data/maps/MauveCamp/scripts.pory"
+	closemessage
+	return
+
+
 MauveCamp_Sailor1_Text_0:
 # 11 "data/maps/MauveCamp/scripts.pory"
 	.string "Aye, trainer.\n"
@@ -167,3 +175,9 @@ MauveCamp_Pot_Text_0:
 	.string "{PLAYER} found one Leftovers!\n"
 	.string "… … …\l"
 	.string "Just kidding!$"
+
+MauveCamp_Shell_Text_0:
+# 81 "data/maps/MauveCamp/scripts.pory"
+	.string "Wow!\p"
+	.string "When you get close you can hear\n"
+	.string "the ocean!$"

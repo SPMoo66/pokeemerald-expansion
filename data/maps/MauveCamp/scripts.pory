@@ -76,3 +76,10 @@ script MauveCamp_Pot {
 			"Just kidding!")
 	closemessage
 }
+
+script MauveCamp_Shell {
+	msgbox ("Wow!\p"
+			"When you get close you can hear\n"
+			"the ocean!")
+	closemessage
+}

@@ -195,6 +195,24 @@
       "respawn_map": "MAP_MAUVE_CAMP",
       "respawn_x": 23,
       "respawn_y": 12
+    },
+    {
+      "id": "HEAL_LOCATION_ILLUSORY_GROTTO_LOWER",
+      "map": "MAP_ILLUSORY_GROTTO_B4F_1R",
+      "x": 28,
+      "y": 15,
+      "respawn_map": "MAP_ILLUSORY_GROTTO_B4F_1R",
+      "respawn_x": 28,
+      "respawn_y": 15
+    },
+    {
+      "id": "HEAL_LOCATION_ILLUSORY_GROTTO_UPPER",
+      "map": "MAP_ILLUSORY_GROTTO_1F_1R",
+      "x": 11,
+      "y": 15,
+      "respawn_map": "MAP_ILLUSORY_GROTTO_1F_1R",
+      "respawn_x": 11,
+      "respawn_y": 15
     }
   ]
 }

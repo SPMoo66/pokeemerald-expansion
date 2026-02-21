@@ -1,4 +1,8 @@
-mapscripts IllusoryGrottoExterior_MapScripts {}
+mapscripts IllusoryGrottoExterior_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setrespawn (HEAL_LOCATION_ILLUSORY_GROTTO_UPPER)
+	}
+}
 
 script EventScript_MoveToEndlessFarOffSea {
 	lock

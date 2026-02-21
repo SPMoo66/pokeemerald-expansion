@@ -1,1 +1,5 @@
-mapscripts IllusoryGrotto_1F_1R_MapScripts {}
+mapscripts IllusoryGrotto_1F_1R_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setrespawn (HEAL_LOCATION_ILLUSORY_GROTTO_UPPER)
+	}
+}

@@ -1,5 +1,5 @@
 	.align 2
-voicegroup_custom_1::                            @ this is a game-ready copy of the voicegroup_test (which is for poryaaaa usage)
+voicegroup276::                            @ this is a game-ready copy of the voicegroup_test (which is for poryaaaa usage)
 	voice_keysplit_all voicegroup002
 	voice_keysplit voicegroup005, KeySplitTable1 @ piano
 	voice_keysplit voicegroup204, KeySplitTable15 @ trinity piano

@@ -949,10 +949,13 @@
 #define MUS_HG_OBTAIN_B_POINTS            897 // Received Battle Points!
 #define MUS_HG_WIN_MINIGAME               898 // Cleared Wobbuffet Pop!
 #define MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES 899 // Victory is Right Before Your Eyes (BW)
+#define MUS_BSB_EVERYBODY                 900 // Everybody (Backstreet Boys)
+#define MUS_BW_ABYSSAL_RUINS              901 // Abyssal Ruins (BW)
+#define MUS_B2W2_VS_GHETSIS               902 // Vs. Ghetsis (B2W2)
 
 #define HG_MUSIC_END                      MUS_HG_WIN_MINIGAME
-#define END_MUS                           MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES
-#define SONGS_END                         MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES
+#define END_MUS                           MUS_B2W2_VS_GHETSIS
+#define SONGS_END                         MUS_B2W2_VS_GHETSIS
 
 #define MUS_ROUTE118                      0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

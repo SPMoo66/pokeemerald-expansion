@@ -4019,7 +4019,10 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_HG_OBTAIN_CASTLE_POINTS)           \
     X(MUS_HG_OBTAIN_B_POINTS)                \
     X(MUS_HG_WIN_MINIGAME)                   \
-    X(MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES)
+    X(MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES) \
+    X(MUS_BSB_EVERYBODY)                     \
+    X(MUS_BW_ABYSSAL_RUINS)                  \
+    X(MUS_B2W2_VS_GHETSIS)
 
 #define SOUND_LIST_SE               \
     X(SE_USE_ITEM)                  \

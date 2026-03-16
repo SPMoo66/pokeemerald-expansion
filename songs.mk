@@ -2342,3 +2342,12 @@ $(MID_SUBDIR)/mus_hg_win_minigame.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_victory_is_right_before_your_eyes.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G274 -V076 -P2
+
+$(MID_SUBDIR)/mus_bsb_everybody.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G276 -V076 -P2
+
+$(MID_SUBDIR)/mus_bw_abyssal_ruins.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G276 -V076 -P2
+
+$(MID_SUBDIR)/mus_b2w2_vs_ghetsis.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G276 -V076 -P2

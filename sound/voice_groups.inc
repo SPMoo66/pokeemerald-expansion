@@ -275,4 +275,4 @@
 .include "sound/voicegroups/voicegroup273.inc"
 .include "sound/voicegroups/voicegroup274.inc" @ Victory is right before your eyes
 .include "sound/voicegroups/voicegroup_DP_Drums.inc" @ DP Drums req for above
-.include "sound/voicegroups/voicegroup_custom_1.inc" @ Used for custom songs
+.include "sound/voicegroups/voicegroup276.inc" @ Used for custom songs

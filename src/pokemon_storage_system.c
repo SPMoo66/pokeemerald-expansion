@@ -841,7 +841,8 @@ void UpdateSpeciesSpritePSS(struct BoxPokemon *boxmon);
 
 static const u8 gText_JustOnePkmn[] = _("There is just one Pokémon with you.");
 static const u8 gText_PartyFull[] = _("Your party is full!");
-static const u8 gText_Box[] = _("BOX");
+static const u8 gText_Box[] = _("Box ");
+static const u8 gText_LastBox[] = _("The Farm");
 
 struct {
     const u8 *text;
@@ -1738,7 +1739,14 @@ void ResetPokemonStorageSystem(void)
     for (boxId = 0; boxId < TOTAL_BOXES_COUNT; boxId++)
     {
         u8 *dest = StringCopy(GetBoxNamePtr(boxId), gText_Box);
-        ConvertIntToDecimalStringN(dest, boxId + 1, STR_CONV_MODE_LEFT_ALIGN, 2);
+        if (boxId != (TOTAL_BOXES_COUNT - 1))
+        {
+            ConvertIntToDecimalStringN(dest, boxId + 1, STR_CONV_MODE_LEFT_ALIGN, 2);
+        }
+        else
+        {
+            dest = StringCopy(GetBoxNamePtr(boxId), gText_LastBox);
+        }
     }
 
     for (boxId = 0; boxId < TOTAL_BOXES_COUNT; boxId++)

@@ -1198,4 +1198,4 @@ const u8 gText_CannotSendMonToBoxHM[] = _("Cannot send that mon to the box,\nbec
 const u8 gText_CannotSendMonToBoxActive[] = _("Cannot send an active battler\nto the box.{PAUSE_UNTIL_PRESS}");
 const u8 gText_CannotSendMonToBoxPartner[] = _("Cannot send a mon that doesn't,\nbelong to you to the box.{PAUSE_UNTIL_PRESS}");
 
-const u8 gText_EmeralbodyVersionNumber[] = _("1.3.1");
+const u8 gText_EmeralbodyVersionNumber[] = _("1.4.0");

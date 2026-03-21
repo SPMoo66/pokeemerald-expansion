@@ -1759,33 +1759,35 @@
 //52+37=89
 //66+41=105
 
+#define FAKE_SPECIES_END                                SPECIES_TSAREENA_MEGA
+
 // Legends Z-A
-#define SPECIES_CLEFABLE_MEGA                           1631
-#define SPECIES_VICTREEBEL_MEGA                         1632
-#define SPECIES_STARMIE_MEGA                            1633
-#define SPECIES_DRAGONITE_MEGA                          1634
-#define SPECIES_MEGANIUM_MEGA                           1635
-#define SPECIES_FERALIGATR_MEGA                         1636
-#define SPECIES_SKARMORY_MEGA                           1637
-#define SPECIES_FROSLASS_MEGA                           1638
-#define SPECIES_EMBOAR_MEGA                             1639
-#define SPECIES_EXCADRILL_MEGA                          1640
-#define SPECIES_SCOLIPEDE_MEGA                          1641
-#define SPECIES_SCRAFTY_MEGA                            1642
-#define SPECIES_EELEKTROSS_MEGA                         1643
-#define SPECIES_CHANDELURE_MEGA                         1644
-#define SPECIES_CHESNAUGHT_MEGA                         1645
-#define SPECIES_DELPHOX_MEGA                            1646
-#define SPECIES_GRENINJA_MEGA                           1647
-#define SPECIES_PYROAR_MEGA                             1648
-#define SPECIES_MALAMAR_MEGA                            1649
-#define SPECIES_DRAGALGE_MEGA                           1650
-#define SPECIES_HAWLUCHA_MEGA                           1651
-#define SPECIES_FLOETTE_MEGA                            1652
-#define SPECIES_BARBARACLE_MEGA                         1653
-#define SPECIES_ZYGARDE_MEGA                            1654
-#define SPECIES_DRAMPA_MEGA                             1655
-#define SPECIES_FALINKS_MEGA                            1656
+#define SPECIES_CLEFABLE_MEGA                           FAKE_SPECIES_END + 1 
+#define SPECIES_VICTREEBEL_MEGA                         FAKE_SPECIES_END + 2 
+#define SPECIES_STARMIE_MEGA                            FAKE_SPECIES_END + 3 
+#define SPECIES_DRAGONITE_MEGA                          FAKE_SPECIES_END + 4 
+#define SPECIES_MEGANIUM_MEGA                           FAKE_SPECIES_END + 5 
+#define SPECIES_FERALIGATR_MEGA                         FAKE_SPECIES_END + 6 
+#define SPECIES_SKARMORY_MEGA                           FAKE_SPECIES_END + 7 
+#define SPECIES_FROSLASS_MEGA                           FAKE_SPECIES_END + 8 
+#define SPECIES_EMBOAR_MEGA                             FAKE_SPECIES_END + 9 
+#define SPECIES_EXCADRILL_MEGA                          FAKE_SPECIES_END + 10
+#define SPECIES_SCOLIPEDE_MEGA                          FAKE_SPECIES_END + 11
+#define SPECIES_SCRAFTY_MEGA                            FAKE_SPECIES_END + 12
+#define SPECIES_EELEKTROSS_MEGA                         FAKE_SPECIES_END + 13
+#define SPECIES_CHANDELURE_MEGA                         FAKE_SPECIES_END + 14
+#define SPECIES_CHESNAUGHT_MEGA                         FAKE_SPECIES_END + 15
+#define SPECIES_DELPHOX_MEGA                            FAKE_SPECIES_END + 16
+#define SPECIES_GRENINJA_MEGA                           FAKE_SPECIES_END + 17
+#define SPECIES_PYROAR_MEGA                             FAKE_SPECIES_END + 18
+#define SPECIES_MALAMAR_MEGA                            FAKE_SPECIES_END + 19
+#define SPECIES_DRAGALGE_MEGA                           FAKE_SPECIES_END + 20
+#define SPECIES_HAWLUCHA_MEGA                           FAKE_SPECIES_END + 21
+#define SPECIES_FLOETTE_MEGA                            FAKE_SPECIES_END + 22
+#define SPECIES_BARBARACLE_MEGA                         FAKE_SPECIES_END + 23
+#define SPECIES_ZYGARDE_MEGA                            FAKE_SPECIES_END + 24
+#define SPECIES_DRAMPA_MEGA                             FAKE_SPECIES_END + 25
+#define SPECIES_FALINKS_MEGA                            FAKE_SPECIES_END + 26
 
 #define SPECIES_EGG                                     (SPECIES_FALINKS_MEGA + 1)
 

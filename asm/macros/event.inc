@@ -2965,24 +2965,27 @@
 	.2byte \move
 	.endm
 
-	.macro jumponrightbird species:req
+	@ Play the beginning of the fly-out animation and turn the player avatar into graphicsId at the end (also moves player one tile to the right)
+	.macro jumponrightbird graphicsId:req
 	callnative Script_JumpOnBird
 	.byte TRUE
-	.2byte \species
+	.2byte \graphicsId
 	waitstate
 	applymovement LOCALID_PLAYER, Common_Movement_WalkRightFast
 	waitmovement
 	.endm
 
-	.macro jumponleftbird species:req
+	@ Play the beginning of the fly-out animation and turn the player avatar into graphicsId at the end (also moves player one tile to the left)
+	.macro jumponleftbird graphicsId:req
 	callnative Script_JumpOnBird
 	.byte FALSE
-	.2byte \species
+	.2byte \graphicsId
 	waitstate
 	applymovement LOCALID_PLAYER, Common_Movement_WalkLeftFast
 	waitmovement
 	.endm
 
+	@ Play the end of the fly-in animation and turn the player avatar back to normal
 	.macro jumpoffbird
 	callnative Script_JumpOffBird
 	.endm

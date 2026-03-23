@@ -3422,3 +3422,51 @@ bool8 ScrCmd_getbraillestringwidth(struct ScriptContext * ctx)
     gSpecialVar_0x8004 = GetStringWidth(FONT_BRAILLE, msg, -1);
     return FALSE;
 }
+
+void Script_SetMonCanLearnMove(struct ScriptContext *ctx)
+{
+    u16 var = ScriptReadHalfword(ctx);
+    u16 move = ScriptReadHalfword(ctx);
+
+    u16 graphicsId = 0;
+    for (u32 i = 0; i < gPlayerPartyCount; i++)
+    {
+        u32 species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG);
+        if (species == SPECIES_NONE || species == SPECIES_EGG)
+            continue;
+        if (CanLearnTeachableMove(species, move))
+        {
+            graphicsId = species | OBJ_EVENT_MON;
+            if (GetMonData(&gPlayerParty[i], MON_DATA_IS_SHINY))
+                graphicsId |= OBJ_EVENT_MON_SHINY;
+            if (GetMonGender(&gPlayerParty[i]))
+                graphicsId |= OBJ_EVENT_MON_FEMALE;
+            break;
+        }
+    }
+    VarSet(var, graphicsId);
+}
+
+void Script_SetMonKnowsMove(struct ScriptContext *ctx)
+{
+    u16 var = ScriptReadHalfword(ctx);
+    u16 move = ScriptReadHalfword(ctx);
+
+    u16 graphicsId = 0;
+    for (u32 i = 0; i < gPlayerPartyCount; i++)
+    {
+        u32 species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG);
+        if (species == SPECIES_NONE || species == SPECIES_EGG)
+            continue;
+        if (MonKnowsMove(&gPlayerParty[i], move))
+        {
+            graphicsId = species | OBJ_EVENT_MON;
+            if (GetMonData(&gPlayerParty[i], MON_DATA_IS_SHINY))
+                 graphicsId |= OBJ_EVENT_MON_SHINY;
+            if (GetMonGender(&gPlayerParty[i]))
+                graphicsId |= OBJ_EVENT_MON_FEMALE;
+            break;
+        }
+    }
+    VarSet(var, graphicsId);
+}

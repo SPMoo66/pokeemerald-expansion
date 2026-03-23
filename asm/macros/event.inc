@@ -2949,3 +2949,40 @@
 	getbraillestringwidth \text
 	call EventScript_BrailleCursorWaitButton
 	.endm
+
+@ Jamie's movement pack
+	@ Stores graphicsId (species, shinyness, gender) about the first pokemon in party that can learn 'move' in 'var'
+	.macro setmon_canlearnmove var:req move:req
+	callnative Script_SetMonCanLearnMove
+	.2byte \var
+	.2byte \move
+	.endm
+
+	@ Stores graphicsId (species, shinyness, gender) about the first pokemon in party that knows 'move' in 'var'
+	.macro setmon_knowsmove var:req move:req
+	callnative Script_SetMonKnowsMove
+	.2byte \var
+	.2byte \move
+	.endm
+
+	.macro jumponrightbird species:req
+	callnative Script_JumpOnBird
+	.byte TRUE
+	.2byte \species
+	waitstate
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRightFast
+	waitmovement
+	.endm
+
+	.macro jumponleftbird species:req
+	callnative Script_JumpOnBird
+	.byte FALSE
+	.2byte \species
+	waitstate
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeftFast
+	waitmovement
+	.endm
+
+	.macro jumpoffbird
+	callnative Script_JumpOffBird
+	.endm

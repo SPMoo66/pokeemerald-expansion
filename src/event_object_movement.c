@@ -2180,6 +2180,13 @@ const struct ObjectEventGraphicsInfo *SpeciesToGraphicsInfo(enum Species species
 }
 
 // Find, or load, the palette for the specified Pokémon info
+u32 LoadDynamicMonPalette(u32 objectEventId)
+{
+    struct ObjectEvent *objectEvent = &gObjectEvents[objectEventId];
+    return LoadDynamicFollowerPalette(OW_SPECIES(objectEvent), OW_SHINY(objectEvent), OW_FEMALE(objectEvent));
+}
+
+// Find, or load, the palette for the specified pokemon info
 static u32 LoadDynamicFollowerPalette(enum Species species, bool32 shiny, bool32 female)
 {
     u32 paletteNum;
@@ -7095,10 +7102,30 @@ static void InitMovementNormal(struct ObjectEvent *objectEvent, struct Sprite *s
     SetStepAnimHandleAlternation(objectEvent, sprite, functions[speed](objectEvent->facingDirection));
 }
 
+static bool32 HasRunningAnimation(u16 graphicsId)
+{
+    switch (graphicsId)
+    {
+        case OBJ_EVENT_GFX_RED_NORMAL:
+        case OBJ_EVENT_GFX_BRENDAN_NORMAL:
+        case OBJ_EVENT_GFX_GREEN_NORMAL:
+        case OBJ_EVENT_GFX_MAY_NORMAL:
+            return TRUE;
+        default:
+            return FALSE;
+    }
+}
+
 static void StartRunningAnim(struct ObjectEvent *objectEvent, struct Sprite *sprite, enum Direction direction)
 {
+    if (!HasRunningAnimation(objectEvent->graphicsId))
+    {
+        InitMovementNormal(objectEvent, sprite, direction, MOVE_SPEED_FAST_1);
+        return;
+    }
     InitNpcForMovement(objectEvent, sprite, direction, MOVE_SPEED_FAST_1);
     SetStepAnimHandleAlternation(objectEvent, sprite, GetRunningDirectionAnimNum(objectEvent->facingDirection));
+
 }
 
 static bool8 UpdateMovementNormal(struct ObjectEvent *objectEvent, struct Sprite *sprite)
@@ -11518,6 +11545,11 @@ void GetDaycareGraphics(struct ScriptContext *ctx)
 // running slow
 static void StartSlowRunningAnim(struct ObjectEvent *objectEvent, struct Sprite *sprite, enum Direction direction)
 {
+    if (!HasRunningAnimation(objectEvent->graphicsId))
+    {
+        InitWalkSlow(objectEvent, sprite, direction);
+        return;
+    }
     InitNpcForWalkSlow(objectEvent, sprite, direction);
     SetStepAnimHandleAlternation(objectEvent, sprite, GetRunningDirectionAnimNum(objectEvent->facingDirection));
 }

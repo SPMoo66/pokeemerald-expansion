@@ -462,12 +462,6 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .teachableLearnset = sLaneonTeachableLearnset,
     },
 
-// -------------------------------------------------------------------------------------
-// -------------------------------------------------------------------------------------
-// ---------------------------------------- EmB ----------------------------------------
-// -------------------------------------------------------------------------------------
-// -------------------------------------------------------------------------------------
-
     [SPECIES_SCALEON] =
     {
         .baseHP        = 115,
@@ -522,6 +516,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .levelUpLearnset = sScaleonLevelUpLearnset,
         .teachableLearnset = sScaleonTeachableLearnset,
     },
+
+// -------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------
+// ---------------------------------------- EmB ----------------------------------------
+// -------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------
 
     [SPECIES_TITANEON] =
     {
@@ -665,10 +665,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .height = 7,
         .weight = 350,
         .description = COMPOUND_STRING(
-            "It is a species of Pokémon that lives in\n"
-            "volcanic areas. If its body cools, its skin\n"
-            "hardens and immobilizes it. To avoid that,\n"
-            "it sleeps near magma."),
+            "This species of Pokémon is a living mud.\n"
+            "It is observed that even mud falls from\n"
+            "its body, it never runs out, making some\n"
+            "wonder what part of it is the Pokémon."),
         .pokemonScale = 329,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -745,9 +745,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .weight = 550,
         .description = COMPOUND_STRING(
             "The shell on its back is made of hardened\n"
-            "magma. Tens of thousands of years spent\n"
-            "living in volcanic craters have turned\n"
-            "Magcargo's bodies into magma."),
+            "mud. The patterns on it have inspired\n"
+            "generations of artists' pottery."),
         .pokemonScale = 332,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -812,10 +811,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .height = 5,
         .weight = 55,
         .description = COMPOUND_STRING(
-            "\n"
-            "\n"
-            "\n"
-            ""),
+            "A species of Pokémon once thought to\n"
+            "be extinct. Its cute appearance quickly\n"
+            "increased awareness of the need for its\n"
+            "conservation."),
         .pokemonScale = 329,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -873,10 +872,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .height = 9,
         .weight = 550,
         .description = COMPOUND_STRING(
-            "\n"
-            "\n"
-            "\n"
-            ""),
+            "It was once thought that this\n"
+            "Pokémon could evolve further,\n"
+            "but that theory has seen no\n"
+            "new evidence for many years."),
         .pokemonScale = 332,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -926,10 +925,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .height = 12,
         .weight = 305,
         .description = COMPOUND_STRING(
-            "It is always seen with a stick from a plant.\n"
-            "Apparently, there are good sticks and bad\n"
-            "sticks. This Pokémon occasionally fights\n"
-            "with others over choice sticks."),
+            "Even after a Farfetch'd has evolved,\n"
+            "it never gives up its beloved stick.\n"
+            "Its evolution only serves to allow\n"
+            "its better usage."),
         .pokemonScale = 330,
         .pokemonOffset = 2,
         .trainerScale = 293,
@@ -983,10 +982,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .height = 7,
         .weight = 356,
         .description = COMPOUND_STRING(
-            "Placeholder\n"
-            "Placeholder\n"
-            "Placeholder\n"
-            "Placeholder"),
+            "An offshoot of Marill brought about\n"
+            "by exposure to metallic materials.\n"
+            "Its spiked tail is actually best\n"
+            "used defensively."),
         .pokemonScale = 448,
         .pokemonOffset = 16,
         .trainerScale = 256,
@@ -1038,10 +1037,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .height = 12,
         .weight = 190,
         .description = COMPOUND_STRING(
-            "Placeholder\n"
-            "Placeholder\n"
-            "Placeholder\n"
-            "Placeholder"),
+            "When Sunflora is forcibly exposed to\n"
+            "certain materials, it can become a\n"
+            "Solflora, gaining the power of fire\n"
+            "that it desperately needs."),
         .pokemonScale = 444,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -1093,10 +1092,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .height = 12,
         .weight = 325,
         .description = COMPOUND_STRING(
-            "A Qwilfish uses the pressure of water\n"
-            "it swallows to shoot toxic quills all at\n"
-            "once from all over its body. It finds\n"
-            "swimming to be somewhat challenging."),
+            "This Pokémon has had its body expanded\n"
+            "further than normal. The high pressure\n"
+            "allows it higher capabilities in combat."),
         .pokemonScale = 430,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1151,10 +1149,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .height = 9,
         .weight = 163,
         .description = COMPOUND_STRING(
-            "Placeholder\n"
-            "Placeholder\n"
-            "Placeholder\n"
-            "Placeholder"),
+            "On holiday evenings, rare reports of\n"
+            "Delijoy appearing in the dark skies,\n"
+            "their icy wings sparkling, have been\n"
+            "made."),
         .pokemonScale = 293,
         .pokemonOffset = 11,
         .trainerScale = 256,
@@ -1208,10 +1206,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .height = 3,
         .weight = 350,
         .description = COMPOUND_STRING(
-            "Placeholder\n"
-            "Placeholder\n"
-            "Placeholder\n"
-            "Placeholder"),
+            "When a space Pokémon is exposed to\n"
+            "rare materials only found on the\n"
+            "surface of Earth, evolutions into\n"
+            "new species may occur."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,

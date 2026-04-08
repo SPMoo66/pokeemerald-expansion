@@ -7,10 +7,10 @@ voicegroup_test::
 	voice_keysplit voicegroup005, KeySplitTable1 @ piano
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_keysplit voicegroup199, KeySplitTable10 @ clavi
+	voice_keysplit voicegroup243, KeySplitTable38 @ music box (hgss)
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_glockenspiel, 255, 165, 51, 235
-	voice_keysplit voicegroup227, KeySplitTable25
+	voice_keysplit voicegroup227, KeySplitTable25 @ music box (platinum only)
 	voice_keysplit voicegroup200, KeySplitTable11 @ vibraphone
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_xylophone, 255, 235, 0, 204
@@ -25,7 +25,7 @@ voicegroup_test::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_dp_eternaguitar36, 255, 50, 90, 127
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_nylon_str_guitar, 255, 249, 25, 149
 	voice_directsound 60, 0, DirectSoundWaveData_dp_disgt_e3_16, 255, 253, 0, 171
 	voice_directsound 60, 0, DirectSoundWaveData_unused_guitar_separates_power_chord, 255, 165, 206, 127
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
@@ -41,8 +41,8 @@ voicegroup_test::
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_synth_bass, 255, 252, 0, 115
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_keysplit voicegroup213, KeySplitTable24
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_keysplit voicegroup256, KeySplitTable46 @ violin
+	voice_keysplit voicegroup257, KeySplitTable47 @ cello
 	voice_keysplit voicegroup217, KeySplitTable28
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_pizzicato_strings, 255, 216, 0, 16
@@ -55,7 +55,7 @@ voicegroup_test::
 	voice_directsound 60, 0, DirectSoundWaveData_classical_choir_voice_ahhs, 255, 0, 255, 0
 	voice_directsound 60, 0, DirectSoundWaveData_dp_tenorchoir48, 255, 200, 255, 171
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_directsound 60, 0, DirectSoundWaveData_hg_087orchitc5, 255, 248, 25, 205
+	voice_keysplit voicegroup269, KeySplitTable55 @ orchestra hit
 	voice_keysplit voicegroup007, KeySplitTable3 @ trumpet
 	voice_keysplit voicegroup220, KeySplitTable30 @ trombone
 	voice_keysplit voicegroup008, KeySplitTable4 @ tuba
@@ -68,7 +68,7 @@ voicegroup_test::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_keysplit voicegroup265, KeySplitTable51 @ oboe
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_dp_sy_clarinet_c3_16, 255, 243, 159, 216
 	voice_directsound 60, 0, DirectSoundWaveData_dp_sy_clarinet_c3_16, 255, 243, 159, 216
@@ -96,7 +96,7 @@ voicegroup_test::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_keysplit voicegroup257, KeySplitTable47 @ cello
 	voice_directsound 60, 0, DirectSoundWaveData_classical_choir_voice_ahhs, 255, 0, 255, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_puresquare_50, 255, 242, 25, 30
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0

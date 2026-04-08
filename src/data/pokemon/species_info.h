@@ -175,6 +175,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconPalIndex = 1,
     },
 
+
+// -------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------
+// --------------------------------------- FRiB ----------------------------------------
+// -------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------
+
     [SPECIES_ARSELLOSKY] =
     {
         .baseHP        = 30,
@@ -454,6 +461,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .levelUpLearnset = sLaneonLevelUpLearnset,
         .teachableLearnset = sLaneonTeachableLearnset,
     },
+
+// -------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------
+// ---------------------------------------- EmB ----------------------------------------
+// -------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------
 
     [SPECIES_SCALEON] =
     {
@@ -1221,6 +1234,607 @@ const struct SpeciesInfo gSpeciesInfo[] =
         //.footprint = gMonFootprint_None,
         .levelUpLearnset = sCogmentLevelUpLearnset,
         .teachableLearnset = sCogmentTeachableLearnset,
+    },
+
+// -------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------
+// ------------------------------------ Expansion 1 ------------------------------------
+// -------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------
+
+    [SPECIES_MAGNEMELT] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 70,
+        .baseDefense   = 65,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 125,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_ELECTRIC),
+        .catchRate = 30,
+        .expYield = 268,
+        .evYield_SpDefense = 3,
+        .itemCommon = ITEM_MAGNET,
+        .itemRare = ITEM_METAL_COAT,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_MAGNET_PULL, ABILITY_FLAME_BODY, ABILITY_STEELWORKER },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Magnemelt"),
+        .cryId = CRY_MAGNEZONE,
+        .natDexNum = NATIONAL_DEX_MAGNEMELT,
+        .categoryName = _("Magnet Forms"),
+        .height = 11,
+        .weight = 1800,
+        .description = COMPOUND_STRING(
+            "It has full control over the heat its\n"
+            "lava core emanates. The minerals within\n"
+            "can be manipulated to create magnetic\n"
+            "attraction and temporary steel limbs."),
+        .pokemonScale = 282,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Magnemelt,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 10,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_H_SLIDE_WOBBLE,
+        .enemyMonElevation = 0,
+        .backPic = gMonBackPic_Magnemelt,
+        .backPicSize = MON_COORDS_SIZE(64, 40),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_Magnemelt,
+        .shinyPalette = gMonShinyPalette_Magnemelt,
+        .iconSprite = gMonIcon_Magnemelt,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(2, 2, SHADOW_SIZE_M)
+        FOOTPRINT(Magnezone)
+        .levelUpLearnset = sMagnemeltLevelUpLearnset,
+        .teachableLearnset = sMagnemeltTeachableLearnset,
+    },
+
+    [SPECIES_CHOUTEI] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 40,
+        .baseDefense   = 65,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_ROCK),
+        .catchRate = 190,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 90,
+        .evYield_HP = 1,
+        .itemRare = ITEM_DEEP_SEA_SCALE,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
+        .abilities = { ABILITY_OVERGROW, ABILITY_LIMBER, ABILITY_DAMP},
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Choutei"),
+        .cryId = CRY_CHINCHOU,
+        .natDexNum = NATIONAL_DEX_CHOUTEI,
+        .categoryName = _("Bedrock"),
+        .height = 5,
+        .weight = 120,
+        .description = COMPOUND_STRING(
+            "Choutei are born from their spores falling\n"
+            "to the ocean floor. The many roots form\n"
+            "and coalesce in a shared journey to\n"
+            "connect within the bedrock of the sea."),
+        .pokemonScale = 424,
+        .pokemonOffset = -2,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Choutei,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 40) : MON_COORDS_SIZE(64, 48),
+        .frontPicYOffset = 11,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
+        .backPic = gMonBackPic_Choutei,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 2,
+        .backAnimId = BACK_ANIM_V_STRETCH,
+        .palette = gMonPalette_Choutei,
+        .shinyPalette = gMonShinyPalette_Choutei,
+        .iconSprite = gMonIcon_Choutei,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 2, SHADOW_SIZE_M)
+        FOOTPRINT(Chinchou)
+        OVERWORLD(
+            sPicTable_Chinchou,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SPOT,
+            sAnimTable_Following,
+            gOverworldPalette_Chinchou,
+            gShinyOverworldPalette_Chinchou
+        )
+        .levelUpLearnset = sChouteiLevelUpLearnset,
+        .teachableLearnset = sChouteiTeachableLearnset,
+        .eggMoveLearnset = sChouteiEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_KAILANT}),
+    },
+
+    [SPECIES_KAILANT] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 40,
+        .baseDefense   = 64,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_ROCK),
+        .catchRate = 75,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 161 : 156,
+        .evYield_HP = 2,
+        .itemRare = ITEM_DEEP_SEA_SCALE,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
+        .abilities = { ABILITY_TRANSISTOR, ABILITY_ILLUMINATE, ABILITY_LIGHTNING_ROD },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Kailant"),
+        .cryId = CRY_LANTURN,
+        .natDexNum = NATIONAL_DEX_KAILANT,
+        .categoryName = _("Bedrock"),
+        .height = 12,
+        .weight = 225,
+        .description = COMPOUND_STRING(
+            "Kailant seek out electric currents. They\n"
+            "grow indefinitely, trying to reach high\n"
+            "enough in the ocean to draw lightning strikes\n"
+            "that can travel and turbocharge their roots."),
+        .pokemonScale = 269,
+        .pokemonOffset = 6,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Kailant,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 48),
+        .frontPicYOffset = 4,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
+        .backPic = gMonBackPic_Kailant,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 48) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
+        .palette = gMonPalette_Kailant,
+        .shinyPalette = gMonShinyPalette_Kailant,
+        .iconSprite = gMonIcon_Kailant,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(13, 10, SHADOW_SIZE_M)
+        FOOTPRINT(Lanturn)
+        OVERWORLD(
+            sPicTable_Lanturn,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SPOT,
+            sAnimTable_Following,
+            gOverworldPalette_Lanturn,
+            gShinyOverworldPalette_Lanturn
+        )
+        .levelUpLearnset = sKailantLevelUpLearnset,
+        .teachableLearnset = sKailantTeachableLearnset,
+    },
+
+    [SPECIES_CORPELLA] =
+    {
+        .baseHP        = 75,
+        .baseAttack    = 55,
+        .baseDefense   = 85,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 115,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_WATER, TYPE_FAIRY),
+        .catchRate = 30,
+        .expYield = CORSOLA_EXP_YIELD,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_LUMINOUS_MOSS,
+        .genderRatio = PERCENT_FEMALE(75),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_PIXILATE, ABILITY_SOUNDPROOF, ABILITY_REGENERATOR },
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("Corpella"),
+        .cryId = CRY_CORSOLA,
+        .natDexNum = NATIONAL_DEX_CORPELLA,
+        .categoryName = _("Coral"),
+        .height = 10,
+        .weight = 173,
+        .description = COMPOUND_STRING(
+            "Corpella has become attuned to the\n"
+            "rhythm of the ocean waves. They share\n"
+            "a song beneath the waves that resonates\n"
+            "and fills them with harmonic radiance."),
+        .pokemonScale = 410,
+        .pokemonOffset = 15,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Corpella,
+        .frontPicSize = MON_COORDS_SIZE(48, 40),
+        .frontPicYOffset = 7,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_H_SLIDE,
+        .backPic = gMonBackPic_Corpella,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 40) : MON_COORDS_SIZE(56, 48),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_Corpella,
+        .shinyPalette = gMonShinyPalette_Corpella,
+        .iconSprite = gMonIcon_Corpella,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, 6, SHADOW_SIZE_S)
+        FOOTPRINT(Corsola)
+        OVERWORLD(
+            sPicTable_Corsola,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Corsola,
+            gShinyOverworldPalette_Corsola
+        )
+        .levelUpLearnset = sCorpellaLevelUpLearnset,
+        .teachableLearnset = sCorpellaTeachableLearnset,
+    },
+
+    [SPECIES_CALAMITY_MAW] =
+    {
+        .baseHP        = 85,
+        .baseAttack    = 140,
+        .baseDefense   = 105,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
+        .catchRate = 30,
+        .expYield = 285,
+        .evYield_Attack = 3,
+        .itemRare = ITEM_BOOSTER_ENERGY,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 50,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_PROTOSYNTHESIS, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Calamity Maw"),
+        .cryId = CRY_GYARADOS,
+        .natDexNum = NATIONAL_DEX_CALAMITY_MAW,
+        .categoryName = _("Paradox"),
+        .height = 22,
+        .weight = 3200,
+        .description = COMPOUND_STRING(
+            "Sightings of this myth have often\n"
+            "been mistakenly identified as\n"
+            "Gyarados after they appeared in\n"
+            "certain paranormal magazines."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CalamityMaw,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CalamityMaw,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_CalamityMaw,
+        .shinyPalette = gMonShinyPalette_CalamityMaw,
+        .iconSprite = gMonIcon_CalamityMaw,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(8, 12, SHADOW_SIZE_L)
+        FOOTPRINT(Gyarados)
+        .isParadox = TRUE,
+        .levelUpLearnset = sCalamityMawLevelUpLearnset,
+        .teachableLearnset = sCalamityMawTeachableLearnset,
+    },
+
+    [SPECIES_CALAMITY_MAW_BOSS] =
+    {
+        .baseHP        = 255,
+        .baseAttack    = 140,
+        .baseDefense   = 185,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 175,
+        .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
+        .catchRate = 30,
+        .expYield = 285,
+        .evYield_HP = 3,
+        .evYield_Attack = 2,
+        .evYield_Defense = 2,
+        .evYield_SpDefense = 2,
+        .itemRare = ITEM_BOOSTER_ENERGY,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 50,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_PROTOSYNTHESIS, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Calamity Maw"),
+        .cryId = CRY_GYARADOS,
+        .natDexNum = NATIONAL_DEX_CALAMITY_MAW,
+        .categoryName = _("Paradox"),
+        .height = 22,
+        .weight = 3200,
+        .description = COMPOUND_STRING(
+            "Sightings of this myth have often\n"
+            "been mistakenly identified as\n"
+            "Gyarados after they appeared in\n"
+            "certain paranormal magazines."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CalamityMaw,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CalamityMaw,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_CalamityMaw,
+        .shinyPalette = gMonShinyPalette_CalamityMaw,
+        .iconSprite = gMonIcon_CalamityMaw,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(8, 12, SHADOW_SIZE_L)
+        FOOTPRINT(Gyarados)
+        .isParadox = TRUE,
+        .levelUpLearnset = sCalamityMawLevelUpLearnset,
+        .teachableLearnset = sCalamityMawTeachableLearnset,
+    },
+
+    [SPECIES_OCEAN_GLEAM] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 70,
+        .baseDefense   = 144,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 126,
+        .types = MON_TYPES(TYPE_ROCK, TYPE_FAIRY),
+        .catchRate = 30,
+        .expYield = 285,
+        .evYield_Defense = 2,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_BOOSTER_ENERGY,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 50,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_PROTOSYNTHESIS, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Ocean Gleam"),
+        .cryId = CRY_LAPRAS,
+        .natDexNum = NATIONAL_DEX_OCEAN_GLEAM,
+        .categoryName = _("Paradox"),
+        .height = 25,
+        .weight = 2528,
+        .description = COMPOUND_STRING(
+            "Some paranormal magazines have claimed\n"
+            "sightings of the creature during wondrous\n"
+            "sunset events on the ocean, where those\n"
+            "who saw it claimed it was responsible."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_OceanGleam,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 7,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_OceanGleam,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_OceanGleam,
+        .shinyPalette = gMonShinyPalette_OceanGleam,
+        .iconSprite = gMonIcon_OceanGleam,
+        .iconPalIndex = 5,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(3, 5, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Lapras)
+        .isParadox = TRUE,
+        .levelUpLearnset = sOceanGleamLevelUpLearnset,
+        .teachableLearnset = sOceanGleamTeachableLearnset,
+    },
+
+    [SPECIES_REND_ECLIPSE] =
+    {
+        .baseHP        = 230,
+        .baseAttack    = 100,
+        .baseDefense   = 60,
+        .baseSpeed     = 20,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_FLYING),
+        .catchRate = 30,
+        .expYield = 285,
+        .evYield_HP = 3,
+        .itemRare = ITEM_BOOSTER_ENERGY,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 50,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_PROTOSYNTHESIS, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Rend Eclipse"),
+        .cryId = CRY_WAILORD,
+        .natDexNum = NATIONAL_DEX_REND_ECLIPSE,
+        .categoryName = _("Paradox"),
+        .height = 22,
+        .weight = 3200,
+        .description = COMPOUND_STRING(
+            "Paranormal magazines claim sightings of\n"
+            "these creature blotting out the sun.\n"
+            "Those who see it are left blinded by the\n"
+            "dangerous sight of an unfiltered eclipse."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_RendEclipse,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .enemyMonElevation = 5,
+        .backPic = gMonBackPic_RendEclipse,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_RendEclipse,
+        .shinyPalette = gMonShinyPalette_RendEclipse,
+        .iconSprite = gMonIcon_RendEclipse,
+        .iconPalIndex = 5,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(1, 17, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Wailord)
+        .isParadox = TRUE,
+        .levelUpLearnset = sRendEclipseLevelUpLearnset,
+        .teachableLearnset = sRendEclipseTeachableLearnset,
+    },
+
+    [SPECIES_TUNDRA_HUSK] =
+    {
+        .baseHP        = 120,
+        .baseAttack    = 110,
+        .baseDefense   = 110,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_ROCK),
+        .catchRate = 30,
+        .expYield = 285,
+        .evYield_HP = 2,
+        .evYield_Attack = 1,
+        .itemRare = ITEM_BOOSTER_ENERGY,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 50,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_PROTOSYNTHESIS, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Tundra Husk"),
+        .cryId = CRY_GLALIE,
+        .natDexNum = NATIONAL_DEX_TUNDRA_HUSK,
+        .categoryName = _("Paradox"),
+        .height = 16,
+        .weight = 2565,
+        .description = COMPOUND_STRING(
+            "Sightings of this creature are unreliable.\n"
+            "It can come in many shapes and sizes, and\n"
+            "paranormal magazines are quick to claim\n"
+            "any familiar shaped rock may be one."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_TundraHusk,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .enemyMonElevation = 8,
+        .backPic = gMonBackPic_TundraHusk,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_TundraHusk,
+        .shinyPalette = gMonShinyPalette_TundraHusk,
+        .iconSprite = gMonIcon_TundraHusk,
+        .iconPalIndex = 5,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-2, 20, SHADOW_SIZE_L)
+        FOOTPRINT(Glalie)
+        .isParadox = TRUE,
+        .levelUpLearnset = sTundraHuskLevelUpLearnset,
+        .teachableLearnset = sTundraHuskTeachableLearnset,
+    },
+
+    [SPECIES_REGIAGUA] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 80,
+        .baseDefense   = 100,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 120,
+        .types = MON_TYPES(TYPE_WATER),
+        .catchRate = 3,
+        .expYield = 290,
+        .evYield_SpDefense = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 80,
+        .friendship = 35,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_WATER_BUBBLE, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Regiagua"),
+        .cryId = CRY_REGICE,
+        .natDexNum = NATIONAL_DEX_REGIAGUA,
+        .categoryName = _("Bottle Ship"),
+        .height = 18,
+        .weight = 1480,
+        .description = COMPOUND_STRING(
+            "It is rumored that the core of Regiagua\n"
+            "is a fabled water creating jewel, and\n"
+            "that it was once used as a mechanism\n"
+            "in the mythical fountain of youth."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 301,
+        .trainerOffset = 2,
+        .frontPic = gMonFrontPic_Regiagua,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 2,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_FOUR_PETAL : ANIM_H_SLIDE_SLOW,
+        .backPic = gMonBackPic_Regiagua,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 40) : MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_Regiagua,
+        .shinyPalette = gMonShinyPalette_Regiagua,
+        .iconSprite = gMonIcon_Regiagua,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(1, 11, SHADOW_SIZE_S)
+        FOOTPRINT(Regice)
+        .isLegendary = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sRegiaguaLevelUpLearnset,
+        .teachableLearnset = sRegiaguaTeachableLearnset,
     },
 
 };

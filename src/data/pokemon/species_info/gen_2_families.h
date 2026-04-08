@@ -2664,6 +2664,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sMareepLevelUpLearnset,
         .teachableLearnset = sMareepTeachableLearnset,
         .eggMoveLearnset = sMareepEggMoveLearnset,
+        .formSpeciesIdTable = sMareepFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_FLAAFFY}),
     },
 
@@ -2736,6 +2737,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sFlaaffyLevelUpLearnset,
         .teachableLearnset = sFlaaffyTeachableLearnset,
+        .formSpeciesIdTable = sFlaaffyFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_AMPHAROS}),
     },
 
@@ -2892,6 +2894,208 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .formChangeTable = sAmpharosFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
+
+    [SPECIES_MAREEP_EXP_1] =
+    {
+        .baseHP        = 42,
+        .baseAttack    = 40,
+        .baseDefense   = 55,
+        .baseSpeed     = 48,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 45,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_ROCK),
+        .catchRate = 235,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 56 : 59,
+        .evYield_HP = 1,
+        .itemRare = ITEM_ELECTRIC_SEED,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
+        .abilities = { ABILITY_WATER_COMPACTION, ABILITY_STAMINA, ABILITY_FLUFFY },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Mareep"),
+        .cryId = CRY_MAREEP,
+        .natDexNum = NATIONAL_DEX_MAREEP,
+        .categoryName = _("Rockwool"),
+        .height = 6,
+        .weight = 78,
+        .description = COMPOUND_STRING(
+            "Generations of living in caves and rocky\n"
+            "terrain have heavily compacted Mareep's\n"
+            "wool. It is lined with minerals and\n"
+            "gemstones."),
+        .pokemonScale = 379,
+        .pokemonOffset = 18,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MareepExp1,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 40) : MON_COORDS_SIZE(40, 48),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 16 : 12,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimDelay = 50,
+        .backPic = gMonBackPic_MareepExp1,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 40),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
+        .palette = gMonPalette_MareepExp1,
+        .shinyPalette = gMonShinyPalette_MareepExp1,
+        .iconSprite = gMonIcon_MareepExp1,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
+        SHADOW(1, 2, SHADOW_SIZE_M)
+        FOOTPRINT(Mareep)
+        OVERWORLD(
+            sPicTable_Mareep,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Mareep,
+            gShinyOverworldPalette_Mareep
+        )
+        .levelUpLearnset = sMareepExp1LevelUpLearnset,
+        .teachableLearnset = sMareepExp1TeachableLearnset,
+        .eggMoveLearnset = sMareepExp1EggMoveLearnset,
+        .formSpeciesIdTable = sMareepFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_FLAAFFY_EXP_1}),
+    },
+
+    [SPECIES_FLAAFFY_EXP_1] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 55,
+        .baseDefense   = 70,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_ROCK),
+        .catchRate = 120,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 128 : 117,
+        .evYield_HP = 2,
+        .itemCommon = ITEM_ELECTRIC_SEED,
+        .itemRare = ITEM_MAGNET,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
+        .abilities = { ABILITY_WATER_COMPACTION, ABILITY_STAMINA, ABILITY_FLUFFY },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Flaaffy"),
+        .cryId = CRY_FLAAFFY,
+        .natDexNum = NATIONAL_DEX_FLAAFFY,
+        .categoryName = _("Rockwool"),
+        .height = 8,
+        .weight = 133,
+        .description = COMPOUND_STRING(
+            "Some say that the gemstones in its wool\n"
+            "grow along with the wool itself, creating\n"
+            "complex crystalline patterns beloved by\n"
+            "collectors the world over."),
+        .pokemonScale = 372,
+        .pokemonOffset = 15,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_FlaaffyExp1,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 48) : MON_COORDS_SIZE(48, 48),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_JUMPS_BIG : ANIM_V_STRETCH,
+        .backPic = gMonBackPic_FlaaffyExp1,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(48, 56),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_FlaaffyExp1,
+        .shinyPalette = gMonShinyPalette_FlaaffyExp1,
+        .iconSprite = gMonIcon_FlaaffyExp1,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, 7, SHADOW_SIZE_S)
+        FOOTPRINT(Flaaffy)
+        OVERWORLD(
+            sPicTable_Flaaffy,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Flaaffy,
+            gShinyOverworldPalette_Flaaffy
+        )
+        .levelUpLearnset = sFlaaffyLevelUpLearnset,
+        .teachableLearnset = sFlaaffyTeachableLearnset,
+        .formSpeciesIdTable = sFlaaffyFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_AMPHAROS_EXP_1}),
+    },
+
+    [SPECIES_AMPHAROS_EXP_1] =
+    {
+        .baseHP        = 150,
+        .baseAttack    = 55,
+        .baseDefense   = 80,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_ROCK),
+        .catchRate = 45,
+        .expYield = 255,
+        .evYield_HP = 3,
+        .itemCommon = ITEM_ELECTRIC_SEED,
+        .itemRare = ITEM_MAGNET,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
+        .abilities = { ABILITY_WATER_COMPACTION, ABILITY_STAMINA, ABILITY_FLUFFY },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Ampharos"),
+        .cryId = CRY_AMPHAROS,
+        .natDexNum = NATIONAL_DEX_AMPHAROS,
+        .categoryName = _("Rockwool"),
+        .height = 14,
+        .weight = 615,
+        .description = COMPOUND_STRING(
+            "When it discharges electricity,\n"
+            "Ampharos's wool hardens into elaborate\n"
+            "patterns reminiscent of bulletproof\n"
+            "vest weaves."),
+        .pokemonScale = 256,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_AmpharosExp1,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(56, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_FLASH_YELLOW,
+        .frontAnimDelay = 10,
+        .backPic = gMonBackPic_AmpharosExp1,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 64) : MON_COORDS_SIZE(56, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
+        .palette = gMonPalette_AmpharosExp1,
+        .shinyPalette = gMonShinyPalette_AmpharosExp1,
+        .iconSprite = gMonIcon_AmpharosExp1,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(3, 11, SHADOW_SIZE_M)
+        FOOTPRINT(Ampharos)
+        OVERWORLD(
+            sPicTable_Ampharos,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Ampharos,
+            gShinyOverworldPalette_Ampharos
+        )
+        .levelUpLearnset = sAmpharosExp1LevelUpLearnset,
+        .teachableLearnset = sAmpharosExp1TeachableLearnset,
+        .formSpeciesIdTable = sAmpharosFormSpeciesIdTable,
+    },
 #endif //P_FAMILY_MAREEP
 
 #if P_FAMILY_MARILL
@@ -4259,6 +4463,66 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sYanmegaLevelUpLearnset,
         .teachableLearnset = sYanmegaTeachableLearnset,
+        .formSpeciesIdTable = sYanmegaFormSpeciesIdTable,
+        .formChangeTable = sYanmegaFormChangeTable,
+    },
+	
+    [SPECIES_YANMEGA_MEGA] =
+    {
+        .baseHP        = 91,
+        .baseAttack    = 86,
+        .baseDefense   = 96,
+        .baseSpeed     = 140,
+        .baseSpAttack  = 141,
+        .baseSpDefense = 76,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
+        .catchRate = 30,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 230 : 248,
+        .evYield_Attack = 2,
+        .itemCommon = ITEM_CHARTI_BERRY,
+        .itemRare = ITEM_WIDE_LENS,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_SPEED_BOOST, ABILITY_TINTED_LENS, ABILITY_FRISK },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Yanmega"),
+        .cryId = CRY_YANMEGA,
+        .natDexNum = NATIONAL_DEX_YANMEGA,
+        .categoryName = _("Ogre Darner"),
+        .height = 19,
+        .weight = 515,
+        .description = COMPOUND_STRING(
+            "This six-legged Pokémon is easily capable\n"
+            "of transporting an adult in flight. It is\n"
+            "adept at biting apart foes while flying\n"
+            "by at high speed."),
+        .pokemonScale = 256,
+        .pokemonOffset = 1,
+        .trainerScale = 326,
+        .trainerOffset = 4,
+        .frontPic = gMonFrontPic_YanmegaMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 5,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_H_VIBRATE,
+        .enemyMonElevation = 6,
+        .backPic = gMonBackPic_YanmegaMega,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_YanmegaMega,
+        .shinyPalette = gMonShinyPalette_YanmegaMega,
+        .iconSprite = gMonIcon_Yanmega,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, 12, SHADOW_SIZE_M)
+        FOOTPRINT(Yanmega)
+        .levelUpLearnset = sYanmegaLevelUpLearnset,
+        .teachableLearnset = sYanmegaTeachableLearnset,
+        .formSpeciesIdTable = sYanmegaFormSpeciesIdTable,
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_YANMA
@@ -7745,6 +8009,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sCorsolaTeachableLearnset,
         .eggMoveLearnset = sCorsolaEggMoveLearnset,
         .formSpeciesIdTable = sCorsolaFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_CORPELLA}),
     },
 
 #if P_GALARIAN_FORMS

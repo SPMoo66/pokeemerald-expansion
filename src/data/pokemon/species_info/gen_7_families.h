@@ -4112,6 +4112,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sWimpodLevelUpLearnset,
         .teachableLearnset = sWimpodTeachableLearnset,
         .eggMoveLearnset = sWimpodEggMoveLearnset,
+        .formSpeciesIdTable = sWimpodFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GOLISOPOD}),
     },
 
@@ -4182,6 +4183,140 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         )
         .levelUpLearnset = sGolisopodLevelUpLearnset,
         .teachableLearnset = sGolisopodTeachableLearnset,
+        .formSpeciesIdTable = sGolisopodFormSpeciesIdTable,
+    },
+
+    [SPECIES_WIMPOD_EXP_1] =
+    {
+        .baseHP        = 115,
+        .baseAttack    = 20,
+        .baseDefense   = 30,
+        .baseSpeed     = 15,
+        .baseSpAttack  = 20,
+        .baseSpDefense = 30,
+        .types = MON_TYPES(TYPE_BUG, TYPE_DARK),
+        .catchRate = 90,
+        .expYield = 46,
+        .evYield_Speed = 1,
+        .itemRare = ITEM_RAWST_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_MOODY, ABILITY_WIMP_OUT },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Wimpod"),
+        .cryId = CRY_WIMPOD,
+        .natDexNum = NATIONAL_DEX_WIMPOD,
+        .categoryName = _("Turn Tail"),
+        .height = 5,
+        .weight = 120,
+        .description = COMPOUND_STRING(
+            "Many an old coot would tell you tales of\n"
+            "how courageous the Wimpod population was\n"
+            "back in their day. In the days of\n"
+            "pirates, there was truth to that."),
+        .pokemonScale = 432,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_WimpodExp1,
+        .frontPicSize = MON_COORDS_SIZE(40, 40),
+        .frontPicYOffset = 14,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_SHAKE_H_SLIDE_FAST,
+        .backPic = gMonBackPic_WimpodExp1,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_WimpodExp1,
+        .shinyPalette = gMonShinyPalette_WimpodExp1,
+        .iconSprite = gMonIcon_WimpodExp1,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
+        SHADOW(-2, -1, SHADOW_SIZE_S)
+        FOOTPRINT(Wimpod)
+        OVERWORLD(
+            sPicTable_Wimpod,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Wimpod,
+            gShinyOverworldPalette_Wimpod
+        )
+        .levelUpLearnset = sWimpodExp1LevelUpLearnset,
+        .teachableLearnset = sWimpodExp1TeachableLearnset,
+        .eggMoveLearnset = sWimpodExp1EggMoveLearnset,
+        .formSpeciesIdTable = sWimpodFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GOLISOPOD_EXP_1}),
+    },
+
+    [SPECIES_GOLISOPOD_EXP_1] =
+    {
+        .baseHP        = 85,
+        .baseAttack    = 135,
+        .baseDefense   = 95,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_BUG, TYPE_DARK),
+        .catchRate = 45,
+        .expYield = 186,
+        .evYield_Defense = 2,
+        .itemCommon = ITEM_RAWST_BERRY,
+        .itemRare = ITEM_EJECT_BUTTON,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_MOODY, ABILITY_EMERGENCY_EXIT },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Golisopod"),
+        .cryId = CRY_GOLISOPOD,
+        .natDexNum = NATIONAL_DEX_GOLISOPOD,
+        .categoryName = _("Hard Scale"),
+        .height = 20,
+        .weight = 1080,
+        .description = COMPOUND_STRING(
+            "It battles skillfully with its six arms,\n"
+            "with a flashing slash of its giant sharp\n"
+            "claws, it cleaves seawater--or even\n"
+            "air--right in two."),
+        .pokemonScale = 261,
+        .pokemonOffset = 1,
+        .trainerScale = 334,
+        .trainerOffset = 4,
+        .frontPic = gMonFrontPic_GolisopodExp1,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE_FAST,
+        .backPic = gMonBackPic_GolisopodExp1,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_GolisopodExp1,
+        .shinyPalette = gMonShinyPalette_GolisopodExp1,
+        .iconSprite = gMonIcon_GolisopodExp1,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(2, 13, SHADOW_SIZE_L)
+        FOOTPRINT(Golisopod)
+        OVERWORLD(
+            sPicTable_Golisopod,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Golisopod,
+            gShinyOverworldPalette_Golisopod
+        )
+        .levelUpLearnset = sGolisopodExp1LevelUpLearnset,
+        .teachableLearnset = sGolisopodExp1TeachableLearnset,
+        .formSpeciesIdTable = sGolisopodFormSpeciesIdTable,
     },
 #endif //P_FAMILY_WIMPOD
 

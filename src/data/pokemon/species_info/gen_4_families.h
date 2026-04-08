@@ -4836,6 +4836,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sBronzorLevelUpLearnset,
         .teachableLearnset = sBronzorTeachableLearnset,
+        .formSpeciesIdTable = sBronzorFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_BRONZONG}),
     },
 
@@ -4909,6 +4910,141 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sBronzongLevelUpLearnset,
         .teachableLearnset = sBronzongTeachableLearnset,
+        .formSpeciesIdTable = sBronzongFormSpeciesIdTable,
+    },
+
+    [SPECIES_BRONZOR_EXP_1] =
+    {
+        .baseHP        = 55,
+        .baseAttack    = 40,
+        .baseDefense   = 30,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_STEEL),
+        .catchRate = 255,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 72,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_METAL_COAT,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_LEVITATE, ABILITY_HEATPROOF, ABILITY_ILLUSION },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Bronzor"),
+        .cryId = CRY_BRONZOR,
+        .natDexNum = NATIONAL_DEX_BRONZOR,
+        .categoryName = _("Bronze"),
+        .height = 5,
+        .weight = 605,
+        .description = COMPOUND_STRING(
+            "This Bronzor has managed to avoid\n"
+            "aging effects. It has mirror-like\n"
+            "properties only theorized before\n"
+            "its discovery."),
+        .pokemonScale = 432,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_BronzorExp1,
+        .frontPicSize = MON_COORDS_SIZE(32, 40),
+        .frontPicYOffset = 14,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_H_SLIDE_WOBBLE,
+        .enemyMonElevation = 9,
+        .backPic = gMonBackPic_BronzorExp1,
+        .backPicSize = MON_COORDS_SIZE(40, 48),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_BronzorExp1,
+        .shinyPalette = gMonShinyPalette_BronzorExp1,
+        .iconSprite = gMonIcon_BronzorExp1,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 6, SHADOW_SIZE_S)
+        FOOTPRINT(Bronzor)
+        OVERWORLD(
+            sPicTable_Bronzor,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Bronzor,
+            gShinyOverworldPalette_Bronzor
+        )
+        .levelUpLearnset = sBronzorExp1LevelUpLearnset,
+        .teachableLearnset = sBronzorExp1TeachableLearnset,
+        .formSpeciesIdTable = sBronzorFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_BRONZONG_EXP_1}),
+    },
+
+    [SPECIES_BRONZONG_EXP_1] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 70,
+        .baseDefense   = 40,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 130,
+        .baseSpDefense = 120,
+        .types = MON_TYPES(TYPE_STEEL),
+        .catchRate = 90,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 175 : 188,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_METAL_COAT,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_LEVITATE, ABILITY_HEATPROOF, ABILITY_ILLUSION },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Bronzong"),
+        .cryId = CRY_BRONZONG,
+        .natDexNum = NATIONAL_DEX_BRONZONG,
+        .categoryName = _("Bronze Bell"),
+        .height = 13,
+        .weight = 1870,
+        .description = COMPOUND_STRING(
+            "They acted as mirrors for royals of\n"
+            "early history before being lost at sea\n"
+            "in shipwrecks. They can create any\n"
+            "image the viewer wishes to see."),
+        .pokemonScale = 272,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_BronzongExp1,
+        .frontPicSize = MON_COORDS_SIZE(56, 56),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
+        .enemyMonElevation = 7,
+        .backPic = gMonBackPic_BronzongExp1,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
+        .palette = gMonPalette_BronzongExp1,
+        .shinyPalette = gMonShinyPalette_BronzongExp1,
+        .iconSprite = gMonIcon_BronzongExp1,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(1, 15, SHADOW_SIZE_M)
+        FOOTPRINT(Bronzong)
+        OVERWORLD(
+            sPicTable_Bronzong,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Bronzong,
+            gShinyOverworldPalette_Bronzong
+        )
+        .levelUpLearnset = sBronzongExp1LevelUpLearnset,
+        .teachableLearnset = sBronzongExp1TeachableLearnset,
+        .formSpeciesIdTable = sBronzongFormSpeciesIdTable,
     },
 #endif //P_FAMILY_BRONZOR
 

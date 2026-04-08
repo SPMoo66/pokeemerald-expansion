@@ -3819,6 +3819,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sShroomishLevelUpLearnset,
         .teachableLearnset = sShroomishTeachableLearnset,
         .eggMoveLearnset = sShroomishEggMoveLearnset,
+        .formSpeciesIdTable = sShroomishFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_BRELOOM_FRIBIAN, CONDITIONS({IF_KNOWS_MOVE, MOVE_DIG})},
                                 {EVO_LEVEL, 23, SPECIES_BRELOOM}),
     },
@@ -3962,6 +3963,140 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formSpeciesIdTable = sBreloomFormSpeciesIdTable,
         .levelUpLearnset = sBreloomFribianLevelUpLearnset,
         .teachableLearnset = sBreloomFribianTeachableLearnset,
+    },
+
+    [SPECIES_SHROOMISH_EXP_1] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 20,
+        .baseDefense   = 45,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 45,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DARK),
+        .catchRate = 255,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 59 : 65,
+        .evYield_HP = 1,
+        .itemCommon = ITEM_TINY_MUSHROOM,
+        .itemRare = ITEM_BIG_MUSHROOM,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FLUCTUATING,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_ELECTROMORPHOSIS, ABILITY_SAP_SIPPER, ABILITY_PROTEAN },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Shroomish"),
+        .cryId = CRY_SHROOMISH,
+        .natDexNum = NATIONAL_DEX_SHROOMISH,
+        .categoryName = _("Mushroom"),
+        .height = 4,
+        .weight = 45,
+        .description = COMPOUND_STRING(
+            "This version of Shroomish has only\n"
+            "been reported once before. The shipwreck\n"
+            "tale said they were revived by spirits\n"
+            "after being drowned at sea."),
+        .pokemonScale = 513,
+        .pokemonOffset = 22,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ShroomishExp1,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 32) : MON_COORDS_SIZE(40, 40),
+        .frontPicYOffset = 9,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_ShroomishExp1,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 40) : MON_COORDS_SIZE(56, 48),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_ShroomishExp1,
+        .shinyPalette = gMonShinyPalette_ShroomishExp1,
+        .iconSprite = gMonIcon_ShroomishExp1,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
+        SHADOW(-1, 5, SHADOW_SIZE_S)
+        FOOTPRINT(Shroomish)
+        OVERWORLD(
+            sPicTable_Shroomish,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Shroomish,
+            gShinyOverworldPalette_Shroomish
+        )
+        .levelUpLearnset = sShroomishExp1LevelUpLearnset,
+        .teachableLearnset = sShroomishExp1TeachableLearnset,
+        .eggMoveLearnset = sShroomishExp1EggMoveLearnset,
+        .formSpeciesIdTable = sShroomishFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_BRELOOM_EXP_1}),
+    },
+
+    [SPECIES_BRELOOM_EXP_1] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 140,
+        .baseDefense   = 55,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DARK),
+        .catchRate = 90,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 161 : 165,
+        .evYield_Attack = 2,
+        .itemCommon = ITEM_TINY_MUSHROOM,
+        .itemRare = ITEM_BIG_MUSHROOM,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FLUCTUATING,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_ELECTROMORPHOSIS, ABILITY_SAP_SIPPER, ABILITY_PROTEAN },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Breloom"),
+        .cryId = CRY_BRELOOM,
+        .natDexNum = NATIONAL_DEX_BRELOOM,
+        .categoryName = _("Mushroom"),
+        .height = 12,
+        .weight = 392,
+        .description = COMPOUND_STRING(
+            "Breloom's body is a reanimated plant from\n"
+            "underseas caves. The electricity running\n"
+            "through it allows it to move and creates\n"
+            "luminescence."),
+        .pokemonScale = 324,
+        .pokemonOffset = 6,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_BreloomExp1,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(48, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 3,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_BreloomExp1,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_BreloomExp1,
+        .shinyPalette = gMonShinyPalette_BreloomExp1,
+        .iconSprite = gMonIcon_BreloomExp1,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-5, 10, SHADOW_SIZE_M)
+        FOOTPRINT(Breloom)
+        OVERWORLD(
+            sPicTable_Breloom,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Breloom,
+            gShinyOverworldPalette_Breloom
+        )
+        .levelUpLearnset = sBreloomExp1LevelUpLearnset,
+        .teachableLearnset = sBreloomExp1TeachableLearnset,
+        .formSpeciesIdTable = sBreloomFormSpeciesIdTable,
     },
 #endif //P_FAMILY_SHROOMISH
 
@@ -5290,7 +5425,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_SableyeMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 13,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_SableyeMega,
         .shinyPalette = gMonShinyPalette_SableyeMega,
@@ -5316,6 +5451,146 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggMoveLearnset = sSableyeEggMoveLearnset,
         .formSpeciesIdTable = sSableyeFormSpeciesIdTable,
         .formChangeTable = sSableyeFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
+
+    [SPECIES_SABLEYE_EXP_1] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 50,
+        .baseDefense   = 65,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_FIRE),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 133 : 98,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_WIDE_LENS,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 25,
+        .friendship = 35,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
+        .abilities = { ABILITY_FLAME_BODY, ABILITY_MAGMA_ARMOR, ABILITY_EARTH_EATER },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Sableye"),
+        .cryId = CRY_SABLEYE,
+        .natDexNum = NATIONAL_DEX_SABLEYE,
+        .categoryName = _("Darkness"),
+        .height = 5,
+        .weight = 110,
+        .description = COMPOUND_STRING(
+            "A diet of minerals in undersea\n"
+            "volcanoes has left Sableye's body fiery\n"
+            "to the touch. As it adapted, the\n"
+            "illuminance of lava became appetizing."),
+        .pokemonScale = 451,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_SableyeExp1,
+        .frontPicSize = MON_COORDS_SIZE(48, 48),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 9 : 10,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_GLOW_BLACK,
+        .backPic = gMonBackPic_SableyeExp1,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(48, 48),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_SableyeExp1,
+        .shinyPalette = gMonShinyPalette_SableyeExp1,
+        .iconSprite = gMonIcon_SableyeExp1,
+        .iconPalIndex = 5,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
+        SHADOW(2, 3, SHADOW_SIZE_S)
+        FOOTPRINT(Sableye)
+        OVERWORLD(
+            sPicTable_Sableye,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Sableye,
+            gShinyOverworldPalette_Sableye
+        )
+        .levelUpLearnset = sSableyeExp1LevelUpLearnset,
+        .teachableLearnset = sSableyeExp1TeachableLearnset,
+        .eggMoveLearnset = sSableyeExp1EggMoveLearnset,
+        .formSpeciesIdTable = sSableyeFormSpeciesIdTable,
+        .formChangeTable = sSableyeExp1FormChangeTable,
+    },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_SABLEYE_EXP_1_MEGA] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 75,
+        .baseDefense   = 100,
+        .baseSpeed     = 20,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 140,
+        .types = MON_TYPES(TYPE_FIRE),
+        .catchRate = 45,
+        .expYield = 168,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 25,
+        .friendship = 35,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
+        .abilities = { ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Sableye"),
+        .cryId = CRY_SABLEYE_MEGA,
+        .natDexNum = NATIONAL_DEX_SABLEYE,
+        .categoryName = _("Darkness"),
+        .height = 5,
+        .weight = 1610,
+        .description = COMPOUND_STRING(
+            "A diet of minerals in undersea\n"
+            "volcanoes has left Sableye's body fiery\n"
+            "to the touch. As it adapted, the\n"
+            "illuminance of lava became appetizing."),
+        .pokemonScale = 451,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_SableyeExp1Mega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 5,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_SableyeExp1Mega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_SableyeExp1Mega,
+        .shinyPalette = gMonShinyPalette_SableyeExp1Mega,
+        .iconSprite = gMonIcon_SableyeExp1,
+        .iconPalIndex = 5,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
+        SHADOW(2, 10, SHADOW_SIZE_S)
+        FOOTPRINT(Sableye)
+    #if OW_BATTLE_ONLY_FORMS
+        OVERWORLD(
+            sPicTable_SableyeMega,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_SableyeMega,
+            gShinyOverworldPalette_SableyeMega
+        )
+    #endif //OW_BATTLE_ONLY_FORMS
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sSableyeExp1LevelUpLearnset,
+        .teachableLearnset = sSableyeExp1TeachableLearnset,
+        .eggMoveLearnset = sSableyeExp1EggMoveLearnset,
+        .formSpeciesIdTable = sSableyeFormSpeciesIdTable,
+        .formChangeTable = sSableyeExp1FormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SABLEYE
@@ -6603,6 +6878,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sBudewLevelUpLearnset,
         .teachableLearnset = sBudewTeachableLearnset,
         .eggMoveLearnset = sBudewEggMoveLearnset,
+        .formSpeciesIdTable = sBudewFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_ROSELIA}),
     },
 #endif //P_GEN_4_CROSS_EVOS
@@ -6688,6 +6964,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sRoseliaLevelUpLearnset,
         .teachableLearnset = sRoseliaTeachableLearnset,
         .eggMoveLearnset = sRoseliaEggMoveLearnset,
+        .formSpeciesIdTable = sRoseliaFormSpeciesIdTable,
     #if P_GEN_4_CROSS_EVOS
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SHINY_STONE, SPECIES_ROSERADE}),
     #endif
@@ -6782,6 +7059,216 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sRoseradeLevelUpLearnset,
         .teachableLearnset = sRoseradeTeachableLearnset,
+        .formSpeciesIdTable = sRoseradeFormSpeciesIdTable,
+    },
+#endif //P_GEN_4_CROSS_EVOS
+
+#if P_GEN_4_CROSS_EVOS
+    [SPECIES_BUDEW_EXP_1] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 50,
+        .baseDefense   = 60,
+        .baseSpeed     = 20,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_GROUND),
+        .catchRate = 255,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 56 : 68,
+        .evYield_Attack = 1,
+        .itemRare = ITEM_POISON_BARB,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_OVERCOAT, ABILITY_SHIELD_DUST, ABILITY_DRY_SKIN },
+        .bodyColor = BODY_COLOR_BROWN,
+        .noFlip = TRUE,
+        .speciesName = _("Budew"),
+        .cryId = CRY_BUDEW,
+        .natDexNum = NATIONAL_DEX_BUDEW,
+        .categoryName = _("Bud"),
+        .height = 2,
+        .weight = 12,
+        .description = COMPOUND_STRING(
+            "Over the winter, it closes its bud and\n"
+            "endures the cold. Sensitive to changing\n"
+            "temperature, the bud is said to bloom\n"
+            "when it feels the sun's warm touch."),
+        .pokemonScale = 682,
+        .pokemonOffset = 24,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_BudewExp1,
+        .frontPicSize = MON_COORDS_SIZE(32, 40),
+        .frontPicYOffset = 13,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
+        .backPic = gMonBackPic_BudewExp1,
+        .backPicSize = MON_COORDS_SIZE(40, 56),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
+        .palette = gMonPalette_BudewExp1,
+        .shinyPalette = gMonShinyPalette_BudewExp1,
+        .iconSprite = gMonIcon_BudewExp1,
+        .iconPalIndex = 4,
+        .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
+        SHADOW(0, 1, SHADOW_SIZE_S)
+        FOOTPRINT(Budew)
+        OVERWORLD(
+            sPicTable_Budew,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Budew,
+            gShinyOverworldPalette_Budew
+        )
+        .levelUpLearnset = sBudewExp1LevelUpLearnset,
+        .teachableLearnset = sBudewExp1TeachableLearnset,
+        .eggMoveLearnset = sBudewExp1EggMoveLearnset,
+        .formSpeciesIdTable = sBudewFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_ROSELIA_EXP_1}),
+    },
+#endif //P_GEN_4_CROSS_EVOS
+
+    [SPECIES_ROSELIA_EXP_1] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 90,
+        .baseDefense   = 50,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_GROUND),
+        .catchRate = 150,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 140 : 152,
+        .evYield_SpAttack = (P_UPDATED_EVS >= GEN_4) ? 2 : 1,
+        .itemRare = ITEM_POISON_BARB,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_OVERCOAT, ABILITY_SHIELD_DUST, ABILITY_DRY_SKIN },
+        .bodyColor = BODY_COLOR_BROWN,
+        .noFlip = TRUE,
+        .speciesName = _("Roselia"),
+        .cryId = CRY_ROSELIA,
+        .natDexNum = NATIONAL_DEX_ROSELIA,
+        .categoryName = _("Thorn"),
+        .height = 3,
+        .weight = 20,
+        .description = COMPOUND_STRING(
+            "A Roselia that drinks nutritionally rich\n"
+            "springwater blooms with lovely flowers.\n"
+            "The fragrance of its flowers has the\n"
+            "effect of making its foes careless."),
+        .pokemonScale = 677,
+        .pokemonOffset = 20,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_RoseliaExp1,
+        .frontPicSize = MON_COORDS_SIZE(56, 48),
+        .frontPicYOffset = 5,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
+        .backPic = gMonBackPic_RoseliaExp1,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 48) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
+        .palette = gMonPalette_RoseliaExp1,
+        .shinyPalette = gMonShinyPalette_RoseliaExp1,
+        .iconSprite = gMonIcon_RoseliaExp1,
+        .iconPalIndex = 4,
+        .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
+        SHADOW(-1, 9, SHADOW_SIZE_S)
+        FOOTPRINT(Roselia)
+        OVERWORLD(
+            sPicTable_Roselia,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Roselia,
+            gShinyOverworldPalette_Roselia
+        )
+        .levelUpLearnset = sRoseliaExp1LevelUpLearnset,
+        .teachableLearnset = sRoseliaExp1TeachableLearnset,
+        .eggMoveLearnset = sBudewExp1EggMoveLearnset,
+        .formSpeciesIdTable = sRoseliaFormSpeciesIdTable,
+    #if P_GEN_4_CROSS_EVOS
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_ROSERADE_EXP_1}),
+    #endif
+    },
+
+#if P_GEN_4_CROSS_EVOS
+    [SPECIES_ROSERADE_EXP_1] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 120,
+        .baseDefense   = 60,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_GROUND, TYPE_DARK),
+        .catchRate = 75,
+        .expYield = 258,
+        .evYield_SpAttack = 3,
+        .itemCommon = ITEM_POISON_BARB,
+        .itemRare = ITEM_ROSE_INCENSE,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_OVERCOAT, ABILITY_SHIELD_DUST, ABILITY_DARK_AURA },
+        .bodyColor = BODY_COLOR_BROWN,
+        .noFlip = TRUE,
+        .speciesName = _("Roserade"),
+        .cryId = CRY_ROSERADE,
+        .natDexNum = NATIONAL_DEX_ROSERADE,
+        .categoryName = _("Bouquet"),
+        .height = 9,
+        .weight = 145,
+        .description = COMPOUND_STRING(
+            "Its sweet aroma attracts prey.\n"
+            "With the movements of a dancer,\n"
+            "it strikes with whips that are densely\n"
+            "lined with poison thorns."),
+        .pokemonScale = 338,
+        .pokemonOffset = 10,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_RoseradeExp1,
+        .frontPicSize = MON_COORDS_SIZE(48, 56),
+        .frontPicYOffset = 4,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_H_VIBRATE,
+        .backPic = gMonBackPic_RoseradeExp1,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        .palette = gMonPalette_RoseradeExp1,
+        .shinyPalette = gMonShinyPalette_RoseradeExp1,
+        .iconSprite = gMonIcon_RoseradeExp1,
+        .iconPalIndex = 4,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 10, SHADOW_SIZE_S)
+        FOOTPRINT(Roserade)
+        OVERWORLD(
+            sPicTable_Roserade,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Roserade,
+            gShinyOverworldPalette_Roserade
+        )
+        .levelUpLearnset = sRoseradeExp1LevelUpLearnset,
+        .teachableLearnset = sRoseradeExp1TeachableLearnset,
+        .formSpeciesIdTable = sRoseradeFormSpeciesIdTable,
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_ROSELIA
@@ -8439,6 +8926,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sSwabluLevelUpLearnset,
         .teachableLearnset = sSwabluTeachableLearnset,
         .eggMoveLearnset = sSwabluEggMoveLearnset,
+        .formSpeciesIdTable = sSwabluFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_ALTARIA}),
     },
 
@@ -8588,6 +9076,141 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formChangeTable = sAltariaFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
+
+    [SPECIES_SWABLU_EXP_1] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 40,
+        .baseDefense   = 70,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_WATER),
+        .catchRate = 255,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 62 : 74,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_YACHE_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_ERRATIC,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_DRIZZLE, ABILITY_LEVITATE },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Swablu"),
+        .cryId = CRY_SWABLU,
+        .natDexNum = NATIONAL_DEX_SWABLU,
+        .categoryName = _("Cloud Bird"),
+        .height = 4,
+        .weight = 12,
+        .description = COMPOUND_STRING(
+            "A Pokémon that has wings like cottony\n"
+            "clouds. After enduring winter, in which\n"
+            "little food is available, Swablu flocks\n"
+            "move closer to towns in the spring."),
+        .pokemonScale = 422,
+        .pokemonOffset = -8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_SwabluExp1,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(48, 40),
+        .frontPicYOffset = 10,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_SLIDE : ANIM_GROW_VIBRATE,
+        .enemyMonElevation = P_GBA_STYLE_SPECIES_GFX ? 12 : 0,
+        .backPic = gMonBackPic_SwabluExp1,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 15,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = gMonPalette_SwabluExp1,
+        .shinyPalette = gMonShinyPalette_SwabluExp1,
+        .iconSprite = gMonIcon_SwabluExp1,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-3, 4, SHADOW_SIZE_S)
+        FOOTPRINT(Swablu)
+        OVERWORLD(
+            sPicTable_Swablu,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Swablu,
+            gShinyOverworldPalette_Swablu
+        )
+        .levelUpLearnset = sSwabluExp1LevelUpLearnset,
+        .teachableLearnset = sSwabluExp1TeachableLearnset,
+        .eggMoveLearnset = sSwabluExp1EggMoveLearnset,
+        .formSpeciesIdTable = sSwabluFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_ALTARIA_EXP_1}),
+    },
+
+    [SPECIES_ALTARIA_EXP_1] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 55,
+        .baseDefense   = 105,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 135,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_WATER),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 188,
+        .evYield_SpDefense = 2,
+        .itemCommon = ITEM_YACHE_BERRY,
+        .itemRare = ITEM_HABAN_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_ERRATIC,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_DRIZZLE, ABILITY_LEVITATE },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Altaria"),
+        .cryId = CRY_ALTARIA,
+        .natDexNum = NATIONAL_DEX_ALTARIA,
+        .categoryName = _("Fizzling"),
+        .height = 11,
+        .weight = 206,
+        .description = COMPOUND_STRING(
+            "It hums in a beautiful soprano voice.\n"
+            "It flies among white clouds in the blue\n"
+            "sky. It launches intensely hot fireballs\n"
+            "from its mouth."),
+        .pokemonScale = 327,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_AltariaExp1,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_H_STRETCH : ANIM_V_STRETCH,
+        .enemyMonElevation = P_GBA_STYLE_SPECIES_GFX ? 8 : 0,
+        .backPic = gMonBackPic_AltariaExp1,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = gMonPalette_AltariaExp1,
+        .shinyPalette = gMonShinyPalette_AltariaExp1,
+        .iconSprite = gMonIcon_AltariaExp1,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, 15, SHADOW_SIZE_L)
+        FOOTPRINT(Altaria)
+        OVERWORLD(
+            sPicTable_Altaria,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Altaria,
+            gShinyOverworldPalette_Altaria
+        )
+        .levelUpLearnset = sAltariaExp1LevelUpLearnset,
+        .teachableLearnset = sAltariaExp1TeachableLearnset,
+        .formSpeciesIdTable = sAltariaFormSpeciesIdTable,
+    },
 #endif //P_FAMILY_SWABLU
 
 #if P_FAMILY_ZANGOOSE
@@ -11016,6 +11639,70 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sTropiusLevelUpLearnset,
         .teachableLearnset = sTropiusTeachableLearnset,
         .eggMoveLearnset = sTropiusEggMoveLearnset,
+        .formSpeciesIdTable = sTropiusFormSpeciesIdTable,
+        .formChangeTable = sTropiusFormChangeTable,
+    },
+
+    [SPECIES_TROPIUS_MEGA] =
+    {
+        .baseHP        = 104,
+        .baseAttack    = 98,
+        .baseDefense   = 93,
+        .baseSpeed     = 91,
+        .baseSpAttack  = 82,
+        .baseSpDefense = 97,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_DRAGON),
+        .catchRate = 200,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 211 : 219,
+        .evYield_HP = 2,
+        .itemCommon = ITEM_KEE_BERRY,
+        .itemRare = ITEM_CUSTAP_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
+    #if P_UPDATED_ABILITIES >= GEN_4
+        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_SOLAR_POWER, ABILITY_HARVEST },
+    #else
+        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_HARVEST },
+    #endif
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Tropius"),
+        .cryId = CRY_TROPIUS,
+        .natDexNum = NATIONAL_DEX_TROPIUS,
+        .categoryName = _("Fruit"),
+        .height = 20,
+        .weight = 1000,
+        .description = COMPOUND_STRING(
+            "It flies by flapping its broad leaves.\n"
+            "The bunch of fruit that grows around its\n"
+            "neck is deliciously sweet. In the spring,\n"
+            "it scatters pollen from its neck."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 344,
+        .trainerOffset = 7,
+        .frontPic = gMonFrontPic_TropiusMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_SHAKE,
+        .backPic = gMonBackPic_TropiusMega,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(56, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 7 : 0,
+        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
+        .palette = gMonPalette_TropiusMega,
+        .shinyPalette = gMonShinyPalette_TropiusMega,
+        .iconSprite = gMonIcon_Tropius,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-6, 13, SHADOW_SIZE_L)
+        FOOTPRINT(Tropius)
+        .levelUpLearnset = sTropiusLevelUpLearnset,
+        .teachableLearnset = sTropiusTeachableLearnset,
+        .eggMoveLearnset = sTropiusEggMoveLearnset,
+        .formSpeciesIdTable = sTropiusFormSpeciesIdTable,
     },
 #endif //P_FAMILY_TROPIUS
 

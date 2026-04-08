@@ -1759,7 +1759,48 @@
 //52+37=89
 //66+41=105
 
-#define FAKE_SPECIES_END                                SPECIES_TSAREENA_MEGA
+#define FAKE_EXP_1_START                                SPECIES_TSAREENA_MEGA
+// Expansion 1
+#define SPECIES_MAGNEMELT                               FAKE_EXP_1_START + 1
+#define SPECIES_CHOUTEI                                 FAKE_EXP_1_START + 2
+#define SPECIES_KAILANT                                 FAKE_EXP_1_START + 3
+#define SPECIES_CORPELLA                                FAKE_EXP_1_START + 4
+#define SPECIES_OCEAN_GLEAM                             FAKE_EXP_1_START + 5
+#define SPECIES_REND_ECLIPSE                            FAKE_EXP_1_START + 6
+#define SPECIES_TUNDRA_HUSK                             FAKE_EXP_1_START + 7
+#define SPECIES_CALAMITY_MAW                            FAKE_EXP_1_START + 8
+#define SPECIES_REGIAGUA                                FAKE_EXP_1_START + 9
+#define SPECIES_CALAMITY_MAW_BOSS                       FAKE_EXP_1_START + 10
+// Expansion 1 Forms
+#define SPECIES_EKANS_EXP_1                             FAKE_EXP_1_START + 11
+#define SPECIES_ARBOK_EXP_1                             FAKE_EXP_1_START + 12
+#define SPECIES_MAGNEMITE_EXP_1                         FAKE_EXP_1_START + 13
+#define SPECIES_MAGNETON_EXP_1                          FAKE_EXP_1_START + 14
+#define SPECIES_GRIMER_EXP_1                            FAKE_EXP_1_START + 15
+#define SPECIES_MUK_EXP_1                               FAKE_EXP_1_START + 16
+#define SPECIES_MAREEP_EXP_1                            FAKE_EXP_1_START + 17
+#define SPECIES_FLAAFFY_EXP_1                           FAKE_EXP_1_START + 18
+#define SPECIES_AMPHAROS_EXP_1                          FAKE_EXP_1_START + 19
+#define SPECIES_SHROOMISH_EXP_1                         FAKE_EXP_1_START + 20
+#define SPECIES_BRELOOM_EXP_1                           FAKE_EXP_1_START + 21
+#define SPECIES_SABLEYE_EXP_1                           FAKE_EXP_1_START + 22
+#define SPECIES_BUDEW_EXP_1                             FAKE_EXP_1_START + 23
+#define SPECIES_ROSELIA_EXP_1                           FAKE_EXP_1_START + 24
+#define SPECIES_ROSERADE_EXP_1                          FAKE_EXP_1_START + 25
+#define SPECIES_SWABLU_EXP_1                            FAKE_EXP_1_START + 26
+#define SPECIES_ALTARIA_EXP_1                           FAKE_EXP_1_START + 27
+#define SPECIES_BRONZOR_EXP_1                           FAKE_EXP_1_START + 28
+#define SPECIES_BRONZONG_EXP_1                          FAKE_EXP_1_START + 29
+#define SPECIES_WIMPOD_EXP_1                            FAKE_EXP_1_START + 30
+#define SPECIES_GOLISOPOD_EXP_1                         FAKE_EXP_1_START + 31
+
+#define SPECIES_SABLEYE_EXP_1_MEGA                      FAKE_EXP_1_START + 32
+#define SPECIES_TROPIUS_MEGA                            FAKE_EXP_1_START + 33
+#define SPECIES_TENTACRUEL_MEGA                         FAKE_EXP_1_START + 34
+#define SPECIES_YANMEGA_MEGA                            FAKE_EXP_1_START + 35
+
+
+#define FAKE_SPECIES_END                                SPECIES_YANMEGA_MEGA
 
 // Legends Z-A
 #define SPECIES_CLEFABLE_MEGA                           FAKE_SPECIES_END + 1 

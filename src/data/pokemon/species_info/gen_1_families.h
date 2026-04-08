@@ -2793,6 +2793,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sEkansLevelUpLearnset,
         .teachableLearnset = sEkansTeachableLearnset,
         .eggMoveLearnset = sEkansEggMoveLearnset,
+        .formSpeciesIdTable = sEkansFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_ARBOK}),
     },
 
@@ -2869,6 +2870,141 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sArbokLevelUpLearnset,
         .teachableLearnset = sArbokTeachableLearnset,
+        .formSpeciesIdTable = sArbokFormSpeciesIdTable,
+    },
+
+    [SPECIES_EKANS_EXP_1] =
+    {
+        .baseHP        = 40,
+        .baseAttack    = 65,
+        .baseDefense   = 49,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 49,
+        .types = MON_TYPES(TYPE_DARK, TYPE_STEEL),
+        .catchRate = 255,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 58 : 62,
+        .evYield_Attack = 1,
+        .itemCommon = ITEM_PECHA_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_MIRROR_ARMOR, ABILITY_ADAPTABILITY },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Ekans"),
+        .cryId = CRY_EKANS,
+        .natDexNum = NATIONAL_DEX_EKANS,
+        .categoryName = _("Snake"),
+        .height = 20,
+        .weight = 69,
+        .description = COMPOUND_STRING(
+            "The unique minerals of ocean caves made\n"
+            "its way into Ekans' diet, eventually\n"
+            "creating metallic bands within its\n"
+            "snakeskin."),
+        .pokemonScale = 298,
+        .pokemonOffset = 12,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_EkansExp1,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 40) : MON_COORDS_SIZE(48, 48),
+        .frontPicYOffset = 7,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_H_STRETCH : ANIM_V_STRETCH,
+        .frontAnimDelay = 30,
+        .backPic = gMonBackPic_EkansExp1,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 48),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_EkansExp1,
+        .shinyPalette = gMonShinyPalette_EkansExp1,
+        .iconSprite = gMonIcon_EkansExp1,
+        .iconPalIndex = 5,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-3, 6, SHADOW_SIZE_M)
+        FOOTPRINT(Ekans)
+        OVERWORLD(
+            sPicTable_Ekans,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SLITHER,
+            sAnimTable_Following,
+            gOverworldPalette_Ekans,
+            gShinyOverworldPalette_Ekans
+        )
+        .levelUpLearnset = sEkansExp1LevelUpLearnset,
+        .teachableLearnset = sEkansExp1TeachableLearnset,
+        .eggMoveLearnset = sEkansExp1EggMoveLearnset,
+        .formSpeciesIdTable = sEkansFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_ARBOK_EXP_1}),
+    },
+
+    [SPECIES_ARBOK_EXP_1] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 105,
+        .baseDefense   = 79,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 79,
+        .types = MON_TYPES(TYPE_DARK, TYPE_STEEL),
+        .catchRate = 90,
+        .expYield = 157,
+        .evYield_Attack = 2,
+        .itemCommon = ITEM_PECHA_BERRY,
+        .itemRare = ITEM_POISON_BARB,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_MIRROR_ARMOR, ABILITY_ADAPTABILITY },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Arbok"),
+        .cryId = CRY_ARBOK,
+        .natDexNum = NATIONAL_DEX_ARBOK,
+        .categoryName = _("Cobra"),
+        .height = 35,
+        .weight = 650,
+        .description = COMPOUND_STRING(
+            "The metal sheen of its snakeskin\n"
+            "createsdazzling lightshows in gem-\n"
+            "laden underwater caves, enhancing\n"
+            "its intimidation factor"),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 296,
+        .trainerOffset = 2,
+        .frontPic = gMonFrontPic_ArbokExp1,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 2 : 1,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_ArbokExp1,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_ArbokExp1,
+        .shinyPalette = gMonShinyPalette_ArbokExp1,
+        .iconSprite = gMonIcon_ArbokExp1,
+        .iconPalIndex = 5,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(1, 11, SHADOW_SIZE_L)
+        FOOTPRINT(Arbok)
+        OVERWORLD(
+            sPicTable_Arbok,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SLITHER,
+            sAnimTable_Following,
+            gOverworldPalette_Arbok,
+            gShinyOverworldPalette_Arbok
+        )
+        .levelUpLearnset = sArbokExp1LevelUpLearnset,
+        .teachableLearnset = sArbokExp1TeachableLearnset,
+        .formSpeciesIdTable = sArbokFormSpeciesIdTable,
     },
 #endif //P_FAMILY_EKANS
 
@@ -10254,6 +10390,64 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sTentacruelLevelUpLearnset,
         .teachableLearnset = sTentacruelTeachableLearnset,
+        .formSpeciesIdTable = sTentacruelFormSpeciesIdTable,
+        .formChangeTable = sTentacruelFormChangeTable,
+    },
+
+    [SPECIES_TENTACRUEL_MEGA] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 75,
+        .baseDefense   = 85,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 145,
+        .types = MON_TYPES(TYPE_WATER, TYPE_POISON),
+        .catchRate = 60,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 230 : 255,
+        .evYield_SpDefense = 2,
+        .itemRare = ITEM_POISON_BARB,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_CLEAR_BODY, ABILITY_LIQUID_OOZE, ABILITY_RAIN_DISH },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Tentacruel"),
+        .cryId = CRY_TENTACRUEL,
+        .natDexNum = NATIONAL_DEX_TENTACRUEL,
+        .categoryName = _("Jellyfish"),
+        .height = 16,
+        .weight = 550,
+        .description = COMPOUND_STRING(
+            "It lives in complex rock formations on\n"
+            "the ocean floor and traps prey using its\n"
+            "80 tentacles. Its red orbs glow when it\n"
+            "grows excited or agitated."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 312,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_TentacruelMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 4,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_SQUISH_AND_BOUNCE : ANIM_V_SLIDE_WOBBLE,
+        .backPic = gMonBackPic_TentacruelMega,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_TentacruelMega,
+        .shinyPalette = gMonShinyPalette_TentacruelMega,
+        .iconSprite = gMonIcon_Tentacruel,
+        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 2 : 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, 8, SHADOW_SIZE_L)
+        FOOTPRINT(Tentacruel)
+        .levelUpLearnset = sTentacruelLevelUpLearnset,
+        .teachableLearnset = sTentacruelTeachableLearnset,
+        .formSpeciesIdTable = sTentacruelFormSpeciesIdTable,
     },
 #endif //P_FAMILY_TENTACOOL
 
@@ -11657,6 +11851,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sMagnemiteLevelUpLearnset,
         .teachableLearnset = sMagnemiteTeachableLearnset,
+        .formSpeciesIdTable = sMagnemiteFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAGNETON}),
     },
 
@@ -11732,6 +11927,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sMagnetonLevelUpLearnset,
         .teachableLearnset = sMagnetonTeachableLearnset,
+        .formSpeciesIdTable = sMagnetonFormSpeciesIdTable,
     #if P_GEN_4_CROSS_EVOS
         .evolutions = EVOLUTION({EVO_LEVEL, 44, SPECIES_MAGNEZONE}),
     #endif
@@ -11816,6 +12012,141 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sMagnezoneTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
+
+    [SPECIES_MAGNEMITE_EXP_1] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 30,
+        .baseDefense   = 55,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_ELECTRIC),
+        .catchRate = 190,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 65 : 89,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_MAGNET,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_MAGNET_PULL, ABILITY_FLAME_BODY, ABILITY_STEELWORKER },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Magnemite"),
+        .cryId = CRY_MAGNEMITE,
+        .natDexNum = NATIONAL_DEX_MAGNEMITE,
+        .categoryName = _("Magnet"),
+        .height = 3,
+        .weight = 60,
+        .description = COMPOUND_STRING(
+            "The metal forming Magnemite is sourced\n"
+            "from ocean floor volcanoes. Its metal\n"
+            "body is pliable and lacking a sturdy\n"
+            "nature."),
+        .pokemonScale = 288,
+        .pokemonOffset = -9,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MagnemiteExp1,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(32, 24) : MON_COORDS_SIZE(48, 32),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 21 : 20,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_TUMBLING_FRONT_FLIP_TWICE,
+        .enemyMonElevation = 20,
+        .backPic = gMonBackPic_MagnemiteExp1,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(32, 24) : MON_COORDS_SIZE(48, 40),
+        .backPicYOffset = 19,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_MagnemiteExp1,
+        .shinyPalette = gMonShinyPalette_MagnemiteExp1,
+        .iconSprite = gMonIcon_MagnemiteExp1,
+        .iconPalIndex = 3,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-5, 12, SHADOW_SIZE_S)
+        FOOTPRINT(Magnemite)
+        OVERWORLD(
+            sPicTable_Magnemite,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Magnemite,
+            gShinyOverworldPalette_Magnemite
+        )
+        .levelUpLearnset = sMagnemiteExp1LevelUpLearnset,
+        .teachableLearnset = sMagnemiteExp1TeachableLearnset,
+        .formSpeciesIdTable = sMagnemiteFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAGNETON_EXP_1}),
+    },
+
+    [SPECIES_MAGNETON_EXP_1] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 65,
+        .baseDefense   = 60,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_STEEL),
+        .catchRate = 60,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 163 : 161,
+        .evYield_SpAttack = 2,
+        .itemCommon = ITEM_MAGNET,
+        .itemRare = ITEM_METAL_COAT,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_MAGNET_PULL, ABILITY_FLAME_BODY, ABILITY_STEELWORKER },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Magneton"),
+        .cryId = CRY_MAGNETON,
+        .natDexNum = NATIONAL_DEX_MAGNETON,
+        .categoryName = _("Magnet"),
+        .height = 10,
+        .weight = 600,
+        .description = COMPOUND_STRING(
+            "The body of Magneton is unstable and\n"
+            "regularly reforms as it melts and\n"
+            "solidifies. Its magnets often are the\n"
+            "source of this push and pull."),
+        .pokemonScale = 292,
+        .pokemonOffset = 1,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MagnetonExp1,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_FLASH_YELLOW,
+        .enemyMonElevation = 9,
+        .backPic = gMonBackPic_MagnetonExp1,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 16,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_MagnetonExp1,
+        .shinyPalette = gMonShinyPalette_MagnetonExp1,
+        .iconSprite = gMonIcon_MagnetonExp1,
+        .iconPalIndex = 3,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(1, 18, SHADOW_SIZE_M)
+        FOOTPRINT(Magneton)
+        OVERWORLD(
+            sPicTable_Magneton,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Magneton,
+            gShinyOverworldPalette_Magneton
+        )
+        .levelUpLearnset = sMagnetonExp1LevelUpLearnset,
+        .teachableLearnset = sMagnetonExp1TeachableLearnset,
+        .formSpeciesIdTable = sMagnetonFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MAGMARIZER, SPECIES_MAGNEMELT}),
+    },
 #endif //P_FAMILY_MAGNEMITE
 
 #if P_FAMILY_FARFETCHD
@@ -12799,6 +13130,141 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sMukFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
+
+    [SPECIES_GRIMER_EXP_1] =
+    {
+        .baseHP        = 90,
+        .baseAttack    = 50,
+        .baseDefense   = 80,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 40,
+        .types = MON_TYPES(TYPE_GROUND, TYPE_FIRE),
+        .catchRate = 190,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 65 : 90,
+        .evYield_HP = 1,
+        .itemCommon = ITEM_PECHA_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_HEATPROOF, ABILITY_ARENA_TRAP, ABILITY_WELL_BAKED_BODY },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Grimer"),
+        .cryId = CRY_GRIMER,
+        .natDexNum = NATIONAL_DEX_GRIMER,
+        .categoryName = _("Sludge"),
+        .height = 9,
+        .weight = 300,
+        .description = COMPOUND_STRING(
+            "They are born from waste disposal at sea.\n"
+            "Years of processing in ocean volcanoes\n"
+            "has replaced its body's content with\n"
+            "volcanic matter."),
+        .pokemonScale = 258,
+        .pokemonOffset = 10,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_GrimerExp1,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 40) : MON_COORDS_SIZE(48, 48),
+        .frontPicYOffset = 5,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_H_SLIDE_SLOW,
+        .backPic = gMonBackPic_GrimerExp1,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 40) : MON_COORDS_SIZE(64, 40),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_V_STRETCH,
+        .palette = gMonPalette_GrimerExp1,
+        .shinyPalette = gMonShinyPalette_GrimerExp1,
+        .iconSprite = gMonIcon_GrimerExp1,
+        .iconPalIndex = 5,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(3, 7, SHADOW_SIZE_M)
+        FOOTPRINT(Grimer)
+        OVERWORLD(
+            sPicTable_Grimer,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SLITHER,
+            sAnimTable_Following,
+            gOverworldPalette_Grimer,
+            gShinyOverworldPalette_Grimer
+        )
+        .levelUpLearnset = sGrimerExp1LevelUpLearnset,
+        .teachableLearnset = sGrimerExp1TeachableLearnset,
+        .eggMoveLearnset = sGrimerExp1EggMoveLearnset,
+        .formSpeciesIdTable = sGrimerFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_MUK_EXP_1}),
+    },
+
+    [SPECIES_MUK_EXP_1] =
+    {
+        .baseHP        = 110,
+        .baseAttack    = 75,
+        .baseDefense   = 105,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_GROUND, TYPE_FIRE),
+        .catchRate = 75,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 175 : 157,
+        .evYield_HP = 1,
+        .evYield_Defense = 1,
+        .itemCommon = ITEM_PECHA_BERRY,
+        .itemRare = ITEM_BLACK_SLUDGE,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_STENCH, ABILITY_STICKY_HOLD, ABILITY_POISON_TOUCH },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Muk"),
+        .cryId = CRY_MUK,
+        .natDexNum = NATIONAL_DEX_MUK,
+        .categoryName = _("Sludge"),
+        .height = 12,
+        .weight = 300,
+        .description = COMPOUND_STRING(
+            "They sleep in the lava of volcanoes.\n"
+            "Desperate travelers have told tales of\n"
+            "them ferrying people to safety across\n"
+            "the magma."),
+        .pokemonScale = 256,
+        .pokemonOffset = 2,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MukExp1,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
+        .frontAnimDelay = 45,
+        .backPic = gMonBackPic_MukExp1,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_H_STRETCH,
+        .palette = gMonPalette_MukExp1,
+        .shinyPalette = gMonShinyPalette_MukExp1,
+        .iconSprite = gMonIcon_MukExp1,
+        .iconPalIndex = 5,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-2, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Muk)
+        OVERWORLD(
+            sPicTable_Muk,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SLITHER,
+            sAnimTable_Following,
+            gOverworldPalette_Muk,
+            gShinyOverworldPalette_Muk
+        )
+        .levelUpLearnset = sMukExp1LevelUpLearnset,
+        .teachableLearnset = sMukExp1TeachableLearnset,
+        .formSpeciesIdTable = sMukFormSpeciesIdTable,
+    },
 #endif //P_FAMILY_GRIMER
 
 #if P_FAMILY_SHELLDER

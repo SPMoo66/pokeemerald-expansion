@@ -279,6 +279,11 @@
 // shaking
 #define MOVEMENT_ACTION_SHAKE_HORIZONTAL                0xBB
 #define MOVEMENT_ACTION_SHAKE_VERTICAL                  0xBC
+// quarter steps
+#define MOVEMENT_ACTION_QUARTER_STEP_LEFT               0xBD
+#define MOVEMENT_ACTION_QUARTER_STEP_RIGHT              0xBE
+#define MOVEMENT_ACTION_QUARTER_STEP_UP                 0xBF
+#define MOVEMENT_ACTION_QUARTER_STEP_DOWN               0xC0
 
 #define MOVEMENT_ACTION_STEP_END 0xFE
 #define MOVEMENT_ACTION_NONE     0xFF

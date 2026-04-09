@@ -97,7 +97,7 @@ voicegroup_test::
 	voice_keysplit voicegroup257, KeySplitTable47 @ cello
 	voice_directsound 60, 0, DirectSoundWaveData_classical_choir_voice_ahhs, 255, 0, 255, 0
 	voice_directsound 60, 0, DirectSoundWaveData_puresquare_50, 255, 242, 25, 30
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_puresquare_12, 255, 242, 100, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0

@@ -356,6 +356,9 @@ const u32 gTrainerFrontPic_EliteFourLucian[] = INCBIN_U32("graphics/trainers/fro
 const u16 gTrainerPalette_EliteFourLucian[] = INCBIN_U16("graphics/trainers/front_pics/g4/lucian.gbapal");
 const u32 gTrainerFrontPic_Cynthia[] = INCBIN_U32("graphics/trainers/front_pics/g4/cynthia.4bpp.smol");
 const u16 gTrainerPalette_Cynthia[] = INCBIN_U16("graphics/trainers/front_pics/g4/cynthia.gbapal");
+const u32 gTrainerFrontPic_ShadowedLucario[] = INCBIN_U32("graphics/pokemon/lucario/anim_front.4bpp.smol");
+// This is a palette with all slots filled (0,0,0), used to alter objects to be all black
+const u16 gTrainerPalette_AllBlack[] = INCBIN_U16("graphics/object_events/palettes/all_black.gbapal");
 
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
@@ -491,6 +494,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_ELITE_FOUR_FLINT, gTrainerFrontPic_EliteFourFlint, gTrainerPalette_EliteFourFlint),
     TRAINER_SPRITE(TRAINER_PIC_ELITE_FOUR_LUCIAN, gTrainerFrontPic_EliteFourLucian, gTrainerPalette_EliteFourLucian),
     TRAINER_SPRITE(TRAINER_PIC_CYNTHIA, gTrainerFrontPic_Cynthia, gTrainerPalette_Cynthia),
+    TRAINER_SPRITE(TRAINER_PIC_SHADOWED_LUCARIO, gTrainerFrontPic_ShadowedLucario, gTrainerPalette_AllBlack),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

@@ -133,7 +133,8 @@
 #define TRAINER_PIC_ELITE_FOUR_FLINT      115
 #define TRAINER_PIC_ELITE_FOUR_LUCIAN     116
 #define TRAINER_PIC_CYNTHIA               117
-#define TRAINER_PIC_COUNT                 118
+#define TRAINER_PIC_SHADOWED_LUCARIO      118
+#define TRAINER_PIC_COUNT                 119
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

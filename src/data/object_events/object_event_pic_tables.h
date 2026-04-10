@@ -1496,3 +1496,7 @@ static const struct SpriteFrameImage sPicTable_PkmnRangerM[] = {
 static const struct SpriteFrameImage sPicTable_PkmnRangerF[] = {
     overworld_ascending_frames(gObjectEventPic_PkmnRangerF, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_ShadowedLucario[] = {
+    overworld_ascending_frames(gObjectEventPic_ShadowedLucario, 4, 4),
+};

@@ -288,6 +288,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AromaLady;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pokemaniac;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PkmnRangerM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PkmnRangerF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShadowedLucario;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -567,6 +568,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_POKEMANIAC] =               &gObjectEventGraphicsInfo_Pokemaniac,
     [OBJ_EVENT_GFX_PKMN_RANGER_M] =            &gObjectEventGraphicsInfo_PkmnRangerM,
     [OBJ_EVENT_GFX_PKMN_RANGER_F] =            &gObjectEventGraphicsInfo_PkmnRangerF,
+    [OBJ_EVENT_GFX_SHADOWED_LUCARIO] =         &gObjectEventGraphicsInfo_ShadowedLucario,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
     [OBJ_EVENT_GFX_LIGHT_SPRITE] =             &gObjectEventGraphicsInfo_BallLight,
     [OBJ_EVENT_GFX_APRICORN_TREE] =            &gObjectEventGraphicsInfo_ApricornTree,

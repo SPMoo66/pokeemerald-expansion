@@ -286,12 +286,13 @@
 #define OBJ_EVENT_GFX_SHADOW_BARON               278
 #define OBJ_EVENT_GFX_FISH_BOWL                  279
 #define OBJ_EVENT_GFX_DYNAMITE                   280
+#define OBJ_EVENT_GFX_SHADOWED_LUCARIO           281
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
 
-#define NUM_OBJ_EVENT_GFX                        281
+#define NUM_OBJ_EVENT_GFX                        282
 
 // These are dynamic object gfx ids.
 // They correspond with the values of the VAR_OBJ_GFX_ID_X vars.

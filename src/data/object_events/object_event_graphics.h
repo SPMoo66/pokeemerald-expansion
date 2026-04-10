@@ -578,3 +578,5 @@ const u32 gObjectEventPic_ApricornTree[] = INCBIN_U32("graphics/object_events/pi
 
 // This is a palette with all slots filled (0,0,0), used to alter objects to be all black
 const u16 gObjectEventPal_AllBlack[] = INCBIN_U16("graphics/object_events/palettes/all_black.gbapal");
+
+const u32 gObjectEventPic_ShadowedLucario[] = INCBIN_U32("graphics/pokemon/lucario/overworld.4bpp");

@@ -176,8 +176,8 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	setflag FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH
-	setflag FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH
+	setflag FLAG_WILD_OPPONENT
+	trainerbattle_no_intro TRAINER_LEXIE, Battle02_HarperText_BattleVictory
 	release
 	end
 

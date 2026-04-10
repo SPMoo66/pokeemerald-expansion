@@ -132,6 +132,12 @@ static const u8 sText_SpDefense[] = _("Sp. Def");
 static const u8 sText_Accuracy[] = _("accuracy");
 static const u8 sText_Evasiveness[] = _("evasiveness");
 
+static const u8 sText_WildOpponentWantsToBattle[] = _("You are attacked by a Wild Pokémon!\p");
+static const u8 sText_WildOpponentSentOutTwoPkmn[] = _("The Wild Pokémon calls forth {B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME}!");
+static const u8 sText_WildOpponentSentOutPkmn[] = _("The Wild Pokémon calls forth {B_BUFF1}!");
+static const u8 sText_PlayerDefeatedWildOpponent[] = _("You drove off the Wild Pokémon!\p");
+static const u8 sText_WildOpponentWithdrewPkmn[] = _("{B_BUFF1} withdraws!");
+
 const u8 *const gStatNamesTable[NUM_BATTLE_STATS] =
 {
     [STAT_HP]      = sText_HP,
@@ -464,7 +470,6 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PKMNSPRANGUP]                         = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} sprang up!"),
     [STRINGID_HMMOVESCANTBEFORGOTTEN]               = COMPOUND_STRING("HM moves can't be forgotten now.\p"),
     [STRINGID_XFOUNDONEY]                           = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} found one {B_LAST_ITEM}!"),
-    [STRINGID_PLAYERDEFEATEDTRAINER1]               = sText_PlayerDefeatedLinkTrainerTrainer1,
     [STRINGID_SOOTHINGAROMA]                        = COMPOUND_STRING("A soothing aroma wafted through the area!"),
     [STRINGID_ITEMSCANTBEUSEDNOW]                   = COMPOUND_STRING("Items can't be used now.{PAUSE 64}"), //not in gen 5+, i think
     [STRINGID_USINGITEMSTATOFPKMNROSE]              = COMPOUND_STRING("Using {B_LAST_ITEM}, the {B_BUFF1} of {B_SCR_NAME_WITH_PREFIX2} {B_BUFF2}rose!"), //todo: update this, will require code changes
@@ -2097,6 +2102,8 @@ void BufferStringBattle(enum StringID stringID, u32 battler)
                     stringPtr = sText_TwoTrainersWantToBattle;
                 else if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
                     stringPtr = sText_TwoTrainersWantToBattle;
+                else if (FlagGet(FLAG_WILD_OPPONENT))
+                    stringPtr = sText_WildOpponentWantsToBattle;
                 else
                     stringPtr = sText_Trainer1WantsToBattle;
             }
@@ -2149,6 +2156,8 @@ void BufferStringBattle(enum StringID stringID, u32 battler)
                     stringPtr = sText_TwoLinkTrainersSentOutPkmn;
                 else if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK))
                     stringPtr = sText_LinkTrainerSentOutTwoPkmn;
+                else if (FlagGet(FLAG_WILD_OPPONENT))
+                    stringPtr = sText_WildOpponentSentOutTwoPkmn;
                 else
                     stringPtr = sText_Trainer1SentOutTwoPkmn;
             }
@@ -2196,6 +2205,8 @@ void BufferStringBattle(enum StringID stringID, u32 battler)
                         stringPtr = sText_Trainer2WithdrewPkmn;
 
                 }
+                else if (FlagGet(FLAG_WILD_OPPONENT))
+                    stringPtr = sText_WildOpponentWithdrewPkmn;
                 else
                 {
                     stringPtr = sText_Trainer1WithdrewPkmn;
@@ -2274,6 +2285,8 @@ void BufferStringBattle(enum StringID stringID, u32 battler)
                     else
                         stringPtr = sText_Trainer2SentOutPkmn;
                 }
+                else if (FlagGet(FLAG_WILD_OPPONENT))
+                    stringPtr = sText_WildOpponentSentOutPkmn;
                 else
                 {
                     stringPtr = sText_Trainer1SentOutPkmn2;
@@ -2362,6 +2375,12 @@ void BufferStringBattle(enum StringID stringID, u32 battler)
     case STRINGID_TRAINERSLIDE:
         stringPtr = gBattleStruct->trainerSlideMsg;
         break;
+    case STRINGID_PLAYERDEFEATEDTRAINER1:
+        if (FlagGet(FLAG_WILD_OPPONENT))
+            stringPtr = sText_PlayerDefeatedWildOpponent;
+        else
+            stringPtr = sText_PlayerDefeatedLinkTrainerTrainer1;
+	    break;
     default: // load a string from the table
         if (stringID >= STRINGID_COUNT)
         {

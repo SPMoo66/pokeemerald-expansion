@@ -10890,7 +10890,7 @@
 
     [DIFFICULTY_NORMAL][TRAINER_LEXIE] =
     {
-        .trainerClass = TRAINER_CLASS_WILD,
+        .trainerClass = TRAINER_CLASS_SKIER,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_HIKER,
         .trainerPic = TRAINER_PIC_SKIER_F,
         .trainerName = _("Lexie"),

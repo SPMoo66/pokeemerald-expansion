@@ -2351,3 +2351,6 @@ $(MID_SUBDIR)/mus_bw_abyssal_ruins.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_b2w2_vs_ghetsis.s: %.s: %.mid
 	$(MID) $< $@ -E -R0 -G276 -V076 -P2
+
+$(MID_SUBDIR)/mus_p2is_battle.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G276 -V076 -P2

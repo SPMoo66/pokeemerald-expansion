@@ -1404,6 +1404,7 @@ MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES = 83 03
 MUS_BSB_EVERYBODY                     = 84 03
 MUS_BW_ABYSSAL_RUINS                  = 85 03
 MUS_B2W2_VS_GHETSIS                   = 86 03
+MUS_P2IS_BATTLE                       = 87 03
 
 A_BUTTON = F8 00
 B_BUTTON = F8 01

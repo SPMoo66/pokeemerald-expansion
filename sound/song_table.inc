@@ -909,6 +909,7 @@ gSongTable::
 	song mus_bsb_everybody, MUSIC_PLAYER_BGM, 0
 	song mus_bw_abyssal_ruins, MUSIC_PLAYER_BGM, 0
 	song mus_b2w2_vs_ghetsis, MUSIC_PLAYER_BGM, 0
+	song mus_p2is_battle, MUSIC_PLAYER_BGM, 0
 
 	.align 2
 dummy_song_header:

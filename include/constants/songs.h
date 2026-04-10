@@ -952,10 +952,11 @@
 #define MUS_BSB_EVERYBODY                 900 // Everybody (Backstreet Boys)
 #define MUS_BW_ABYSSAL_RUINS              901 // Abyssal Ruins (BW)
 #define MUS_B2W2_VS_GHETSIS               902 // Vs. Ghetsis (B2W2)
+#define MUS_P2IS_BATTLE                   903 // Battle Theme (Persona 2: Innocent Sin)
 
 #define HG_MUSIC_END                      MUS_HG_WIN_MINIGAME
-#define END_MUS                           MUS_B2W2_VS_GHETSIS
-#define SONGS_END                         MUS_B2W2_VS_GHETSIS
+#define END_MUS                           MUS_P2IS_BATTLE
+#define SONGS_END                         MUS_P2IS_BATTLE
 
 #define MUS_ROUTE118                      0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

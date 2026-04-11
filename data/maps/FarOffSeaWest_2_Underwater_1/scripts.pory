@@ -1,1 +1,9 @@
 mapscripts FarOffSeaWest_2_Underwater_1_MapScripts {}
+
+script BlanchedDepthsBlocker {
+	msgbox (format ("Dad's advice…\n{PLAYER}, you should go find your\lfriends first!"))
+	closemessage
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkDown)
+	waitmovement (0)
+	release
+}

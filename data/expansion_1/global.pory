@@ -17,7 +17,7 @@ script IllusoryGrottoMovableRock_Exp1 {
 		playse (SE_FALL)
 	}
 	else {
-		msgbox (format( "Dad's Advice…\n… … …\p… … …\p… … …\p{PLAYER}! Try a different side!"))
+		msgbox (format( "Dad's advice…\n… … …\p… … …\p… … …\p{PLAYER}! Try a different side!"))
 		closemessage
 		release
 		end

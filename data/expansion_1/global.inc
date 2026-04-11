@@ -83,7 +83,7 @@ IllusoryGrottoMovableRock_Exp1_Text_0:
 
 IllusoryGrottoMovableRock_Exp1_Text_1:
 # 20 "data/expansion_1/global.pory"
-	.string "Dad's Advice…\n"
+	.string "Dad's advice…\n"
 	.string "… … …\p"
 	.string "… … …\p"
 	.string "… … …\p"

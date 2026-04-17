@@ -132,6 +132,14 @@ SubmergedCave_1F_3R_ClearHarperFollower_17:
 	goto SubmergedCave_1F_3R_ClearHarperFollower_14
 
 
+SubmergedCave_1F_3R_Crystal::
+# 69 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	msgbox SubmergedCave_1F_3R_Crystal_Text_0
+# 70 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	closemessage
+	return
+
+
 SubmergedCave_1F_3R_StartHarperFollower_Text_0:
 # 7 "data/maps/SubmergedCave_1F_3R/scripts.pory"
 	.string "Follower start$"
@@ -143,3 +151,10 @@ SubmergedCave_1F_3R_ClearHarperFollower_Text_0:
 SubmergedCave_1F_3R_ClearHarperFollower_Text_1:
 # 36 "data/maps/SubmergedCave_1F_3R/scripts.pory"
 	.string "I'll stay here.$"
+
+SubmergedCave_1F_3R_Crystal_Text_0:
+# 69 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	.string "It appears that a chunk of the crystal\n"
+	.string "was broken off recently. Shards of\l"
+	.string "crystal are scattered across the\l"
+	.string "ground nearby.$"

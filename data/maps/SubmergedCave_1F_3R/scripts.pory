@@ -64,3 +64,8 @@ script SubmergedCave_1F_3R_ClearHarperFollower {
 		release
 	}
 }
+
+script SubmergedCave_1F_3R_Crystal {
+	msgbox (format ("It appears that a chunk of the crystal was broken off recently. Shards of crystal are scattered across the ground nearby."))
+	closemessage
+}

@@ -1,3 +1,4 @@
+const LOCALID_MAUVE_CAMP_SEA_FACING_SAILOR = 2
 const LOCALID_MAUVE_CAMP_HEAL_SAILOR = 3
 
 mapscripts MauveCamp_MapScripts {
@@ -13,7 +14,7 @@ script MauveCamp_Sailor1 {
 			"Be off on your treasure hunt.\l"
 			"The sooner you finish, the sooner we\l"
 			"can all leave this blasted land.", MSGBOX_NPC)
-	turnobject (2, DIR_WEST)
+	turnobject (LOCALID_MAUVE_CAMP_SEA_FACING_SAILOR, DIR_WEST)
 }
 
 script MauveCamp_Sailor2 {
@@ -39,6 +40,14 @@ script MauveCamp_Sailor4 {
 	msgbox ("Stay safe out in the wilds.")
 	closemessage
 }
+
+script MauveCamp_Ranger {
+	msgbox ("A couple of us rangers joined the\n"
+			"expedition to help set up camp.\p"
+			"My partner already left to scout\n"
+			"out the area on her own.", MSGBOX_NPC)
+}
+
 
 script MauveCamp_Sign {
 	msgbox ("Mauve Island Base Camp", MSGBOX_SIGN)

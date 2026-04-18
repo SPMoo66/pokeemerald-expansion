@@ -25,3 +25,33 @@ mapscripts FarOffSeaWest_MapScripts {
 		}
 	}
 }
+
+script FarOffSeaWest_EventScript_Selina {
+	trainerbattle_single (TRAINER_SAWYER_1, "These beautiful waters are the perfect\nbackdrop for a battle!", "Aww…")
+	msgbox ("At least our battle looked pretty!", MSGBOX_AUTOCLOSE)
+}
+
+script FarOffSeaWest_EventScript_Cody {
+	trainerbattle_single (TRAINER_SAWYER_1, "Let's cook up a great battle!", "I'm burned!")
+	msgbox ("These beaches are the perfect\nbackdrop for a barbecue.", MSGBOX_AUTOCLOSE)
+}
+
+script FarOffSeaWest_EventScript_Darren {
+	trainerbattle_single (TRAINER_SAWYER_1, "Ahoy, trainer!", "You've drowned me!")
+	msgbox ("Enjoy your visit!", MSGBOX_AUTOCLOSE)
+}
+
+script FarOffSeaWest_EventScript_Jakob {
+	trainerbattle_single (TRAINER_SAWYER_1, "Stop! It's time to battle!", "I'm going down!")
+	msgbox ("It's a struggle to stay afloat and\nbattle at the same time.", MSGBOX_AUTOCLOSE)
+}
+
+script FarOffSeaWest_EventScript_Milo {
+	trainerbattle_single (TRAINER_SAWYER_1, "Go, Pokémon! Use Dive!", "We've been sent to a watery grave!")
+	msgbox ("Phew! I could barely hold my breath long\nenough to cross over here!", MSGBOX_AUTOCLOSE)
+}
+
+script FarOffSeaWest_EventScript_Mira {
+	trainerbattle_single (TRAINER_SAWYER_1, "If I win, let me on your Pokémon!", "Aww, I'm tired…")
+	msgbox ("I sure hope there's a sandbar to rest\nat up ahead.", MSGBOX_AUTOCLOSE)
+}

@@ -48,7 +48,7 @@ script FarOffSeaWest_EventScript_Jakob {
 
 script FarOffSeaWest_EventScript_Milo {
 	trainerbattle_single (TRAINER_SAWYER_1, "Go, Pokémon! Use Dive!", "We've been sent to a watery grave!")
-	msgbox ("Phew! I could barely hold my breath long\nenough to cross over here!", MSGBOX_AUTOCLOSE)
+	msgbox ("Phew! I could barely hold my breath\nlong enough to cross over here!", MSGBOX_AUTOCLOSE)
 }
 
 script FarOffSeaWest_EventScript_Mira {

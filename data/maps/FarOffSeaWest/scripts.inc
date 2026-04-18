@@ -160,7 +160,7 @@ FarOffSeaWest_EventScript_Milo_Text_1:
 
 FarOffSeaWest_EventScript_Milo_Text_2:
 # 51 "data/maps/FarOffSeaWest/scripts.pory"
-	.string "Phew! I could barely hold my breath long\nenough to cross over here!$"
+	.string "Phew! I could barely hold my breath\nlong enough to cross over here!$"
 
 FarOffSeaWest_EventScript_Mira_Text_0:
 # 55 "data/maps/FarOffSeaWest/scripts.pory"

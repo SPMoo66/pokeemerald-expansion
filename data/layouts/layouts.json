@@ -5741,7 +5741,7 @@
       "id": "LAYOUT_MAUVE_ISLAND_WEST",
       "name": "MauveIslandWest_Layout",
       "width": 34,
-      "height": 34,
+      "height": 36,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Beach",

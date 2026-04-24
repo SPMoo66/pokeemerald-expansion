@@ -9,3 +9,34 @@ script MauveIslandWest_EventScript_Eryk {
 	trainerbattle_single (TRAINER_SAWYER_1, "New lands, new Pokémon! Help me get\nready to catch some with a battle!", "Blast!")
 	msgbox ("I need to hurry up and catch something\ngood!", MSGBOX_AUTOCLOSE)
 }
+
+script MauveIslandWest_EventScript_HeadbuttTree {
+	msgbox ("A Pokémon could be in this tree.\nWant to Headbutt it?", MSGBOX_YESNO)
+	if (var(VAR_RESULT)) {
+		msgbox ("{PLAYER} used Headbutt!")
+		closemessage
+		applymovement (LOCALID_PLAYER, Movement_PlayerHeadbutt)
+		waitmovement (0)
+		playse (SE_SUPER_EFFECTIVE)
+		setvar (VAR_0x8004, 1)  # vertical pan
+		setvar (VAR_0x8005, 1)  # horizontal pan
+		setvar (VAR_0x8006, 6) # num shakes
+		setvar (VAR_0x8007, 2)  # shake delay
+		special (ShakeCamera)
+		waitstate
+		setflag (FLAG_SYS_SPAWN_INVISIBLE)
+		setflag (FLAG_MAUVE_CAMP_HEADBUTT_SCENE)
+		fadescreenswapbuffers (FADE_TO_BLACK)
+		delay (40)
+		warpsilent (MAP_MAUVE_CAMP, 23, 10)
+	}
+	closemessage
+}
+
+movement Movement_PlayerHeadbutt {
+	lock_facing_direction
+	walk_down * 3
+	delay_16 * 3
+	walk_in_place_fast_up * 4
+	walk_faster_up * 3
+}

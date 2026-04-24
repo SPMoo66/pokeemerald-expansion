@@ -1649,26 +1649,30 @@
 
 // Special Flags (Stored in EWRAM (sSpecialFlags), not in the SaveBlock)
 #define SPECIAL_FLAGS_START                     0x4000
-#define FLAG_HIDE_MAP_NAME_POPUP                (SPECIAL_FLAGS_START + 0x0)
-#define FLAG_DONT_TRANSITION_MUSIC              (SPECIAL_FLAGS_START + 0x1)
-#define FLAG_ENABLE_MULTI_CORRIDOR_DOOR         (SPECIAL_FLAGS_START + 0x2)
-#define FLAG_SPECIAL_FLAG_UNUSED_0x4003         (SPECIAL_FLAGS_START + 0x3) // Unused Flag
-#define FLAG_STORING_ITEMS_IN_PYRAMID_BAG       (SPECIAL_FLAGS_START + 0x4)
-#define FLAG_SAFE_FOLLOWER_MOVEMENT             (SPECIAL_FLAGS_START + 0x5) // When set, applymovement does not put the follower inside a pokeball
-                                                                            // Also, scripted movements on the player will move follower(s), too
-#define FLAG_SYS_DO_NOT_DOOR                    (SPECIAL_FLAGS_START + 0x6) // Set this flag to spawn the player without a door animation on next warp, can be set via On Load map scripts.
-                                                                            // This spawns the player on the closed door tile, so it should be used with FLAG_SYS_SPAWN_INVISIBLE.
-#define FLAG_SYS_SPAWN_INVISIBLE                (SPECIAL_FLAGS_START + 0x7) // Set this flag to spawn the player invisible on next warp. Use a set_visible with applymovement to show the player.
-#define FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER        (SPECIAL_FLAGS_START + 0x8) // Set this flag to suppress the game from loading in from black/white on warp. Needs to be manually reset.
-#define FLAG_DONT_START_MUSIC_ON_WARP           (SPECIAL_FLAGS_START + 0x9) // Set this flag to prevent music from starting on transition. Needs to be manually reset.
-#define FLAG_NO_MONEY_LOSS_ON_DEFEAT            (SPECIAL_FLAGS_START + 0xA) // Set this flag to prevent money from being lost on trainer battle loss, must be reset after battle, otherwise at whiteout
-#define FLAG_BLOCK_PLAYER_ACTIONS               (SPECIAL_FLAGS_START + 0xB) // Set this flag to block the player from taking most actions. This includes...
-																			// Running, opening the pause menu, activating a registered item through Select, running DexNav...
-																			// This does not prevent opening the debug menu
-#define FLAG_PLAY_AS_FIRST_MON_IN_PARTY         (SPECIAL_FLAGS_START + 0xC) // Set this flag to have the player sprite be changed to the first pokemon in party
-#define FLAG_SEMI_PERM_HIDE_FOLLOWER            (SPECIAL_FLAGS_START + 0xD) // Set this flag to hide all following Pokémon until the game is reset
-#define FLAG_SEMI_TEMP_1                        (SPECIAL_FLAGS_START + 0xE) // Used for various things?
-#define FLAG_WILD_OPPONENT                      (SPECIAL_FLAGS_START + 0xF) // Set when the opponent trainer is a wild Pokemon
+#define FLAG_HIDE_MAP_NAME_POPUP                (SPECIAL_FLAGS_START + 0x0)  
+#define FLAG_DONT_TRANSITION_MUSIC              (SPECIAL_FLAGS_START + 0x1)  
+#define FLAG_ENABLE_MULTI_CORRIDOR_DOOR         (SPECIAL_FLAGS_START + 0x2)  
+#define FLAG_SPECIAL_FLAG_UNUSED_0x4003         (SPECIAL_FLAGS_START + 0x3)  // Unused Flag
+#define FLAG_STORING_ITEMS_IN_PYRAMID_BAG       (SPECIAL_FLAGS_START + 0x4)  
+#define FLAG_SAFE_FOLLOWER_MOVEMENT             (SPECIAL_FLAGS_START + 0x5)  // When set, applymovement does not put the follower inside a pokeball
+                                                                             // Also, scripted movements on the player will move follower(s), too
+#define FLAG_SYS_DO_NOT_DOOR                    (SPECIAL_FLAGS_START + 0x6)  // Set this flag to spawn the player without a door animation on next warp, can be set via On Load map scripts.
+                                                                             // This spawns the player on the closed door tile, so it should be used with FLAG_SYS_SPAWN_INVISIBLE.
+#define FLAG_SYS_SPAWN_INVISIBLE                (SPECIAL_FLAGS_START + 0x7)  // Set this flag to spawn the player invisible on next warp. Use a set_visible with applymovement to show the player.
+#define FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER        (SPECIAL_FLAGS_START + 0x8)  // Set this flag to suppress the game from loading in from black/white on warp. Needs to be manually reset.
+#define FLAG_DONT_START_MUSIC_ON_WARP           (SPECIAL_FLAGS_START + 0x9)  // Set this flag to prevent music from starting on transition. Needs to be manually reset.
+#define FLAG_NO_MONEY_LOSS_ON_DEFEAT            (SPECIAL_FLAGS_START + 0xA)  // Set this flag to prevent money from being lost on trainer battle loss, must be reset after battle, otherwise at whiteout
+#define FLAG_BLOCK_PLAYER_ACTIONS               (SPECIAL_FLAGS_START + 0xB)  // Set this flag to block the player from taking most actions. This includes...
+																			 // Running, opening the pause menu, activating a registered item through Select, running DexNav...
+																			 // This does not prevent opening the debug menu
+#define FLAG_PLAY_AS_FIRST_MON_IN_PARTY         (SPECIAL_FLAGS_START + 0xC)  // Set this flag to have the player sprite be changed to the first pokemon in party
+#define FLAG_SEMI_PERM_HIDE_FOLLOWER            (SPECIAL_FLAGS_START + 0xD)  // Set this flag to hide all following Pokémon until the game is reset
+#define FLAG_SEMI_TEMP_1                        (SPECIAL_FLAGS_START + 0xE)  // See 'Special Flag aliases' for uses
+#define FLAG_SEMI_TEMP_2                        (SPECIAL_FLAGS_START + 0xF)  //
+#define FLAG_SEMI_TEMP_3                        (SPECIAL_FLAGS_START + 0x10) //
+#define FLAG_SEMI_TEMP_4                        (SPECIAL_FLAGS_START + 0x11) //
+#define FLAG_SEMI_TEMP_5                        (SPECIAL_FLAGS_START + 0x12) //
+#define FLAG_WILD_OPPONENT                      (SPECIAL_FLAGS_START + 0x13) // Set when the opponent trainer is a wild Pokemon
 // FLAG_SPECIAL_FLAG_0x400F - 0x407F also exist and are unused
 #define SPECIAL_FLAGS_END                       (SPECIAL_FLAGS_START + 0x7F)
 #define NUM_SPECIAL_FLAGS                       (SPECIAL_FLAGS_END - SPECIAL_FLAGS_START + 1)
@@ -1676,6 +1680,7 @@
 // Special Flag aliases
 #define FLAG_REVERSE_SLATEPORT_BOAT_SCENE       FLAG_SEMI_TEMP_1
 #define FLAG_SHOW_FAR_OFF_SEA_WEST_BOATS        FLAG_SEMI_TEMP_1
+#define FLAG_MAUVE_CAMP_HEADBUTT_SCENE          FLAG_SEMI_TEMP_2
 
 // Temp flag aliases
 #define FLAG_TEMP_SKIP_GABBY_INTERVIEW          FLAG_TEMP_1

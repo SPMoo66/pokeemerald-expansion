@@ -240,3 +240,6 @@ const u16 gMetatileAttributes_Dungeon_Exp_1[] = INCBIN_U16("data/tilesets/primar
 
 const u16 gMetatiles_Dungeon_Sub_1_Exp_1[] = INCBIN_U16("data/tilesets/secondary/dungeon_sub_1_exp_1/metatiles.bin");
 const u16 gMetatileAttributes_Dungeon_Sub_1_Exp_1[] = INCBIN_U16("data/tilesets/secondary/dungeon_sub_1_exp_1/metatile_attributes.bin");
+
+const u16 gMetatiles_Underwater_Sub1_Exp1[] = INCBIN_U16("data/tilesets/secondary/underwater_sub_1_exp_1/metatiles.bin");
+const u16 gMetatileAttributes_Underwater_Sub1_Exp1[] = INCBIN_U16("data/tilesets/secondary/underwater_sub_1_exp_1/metatile_attributes.bin");

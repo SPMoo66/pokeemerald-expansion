@@ -5805,7 +5805,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_UnderwaterExp1",
-      "secondary_tileset": "gTileset_OceanExp1",
+      "secondary_tileset": "gTileset_Underwater_Sub1_Exp1",
       "border_filepath": "data/layouts/FarOffSeaWest_2_Underwater_2/border.bin",
       "blockdata_filepath": "data/layouts/FarOffSeaWest_2_Underwater_2/map.bin"
     },
@@ -6100,12 +6100,12 @@
     {
       "id": "LAYOUT_FAR_OFF_SEA_WEST_2_UNDERWATER_1_BLANCHED_DEPTHS_ENTRANCE",
       "name": "FarOffSeaWest_2_Underwater_1_BlanchedDepths_Entrance_Layout",
-      "width": 8,
-      "height": 8,
+      "width": 9,
+      "height": 9,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_UnderwaterExp1",
-      "secondary_tileset": "gTileset_OceanExp1",
+      "secondary_tileset": "gTileset_Underwater_Sub1_Exp1",
       "border_filepath": "data/layouts/FarOffSeaWest_2_Underwater_1_BlanchedDepths_Entrance/border.bin",
       "blockdata_filepath": "data/layouts/FarOffSeaWest_2_Underwater_1_BlanchedDepths_Entrance/map.bin"
     },

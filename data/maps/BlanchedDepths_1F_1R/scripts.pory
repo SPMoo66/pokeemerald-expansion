@@ -33,3 +33,24 @@ movement BlanchedDepths_1F_1R_IntroCameraMovements {
 	walk_left * 7
 	walk_diag_southwest * 8
 }
+
+script BlanchedDepths_1F_1R_EventScript_DefeatedAquaGrunt {
+	faceplayer
+	if (!flag(FLAG_TEMP_1)) {
+		setflag (FLAG_TEMP_1)
+		msgbox ("Ack, another kid?!\pNo!\nLeave me alone!\pMuh- my Pokémon are already all fainted!", MSGBOX_AUTOCLOSE)
+	}
+	else {
+		msgbox ("Look… just leave me alone… please?", MSGBOX_AUTOCLOSE)
+	}
+}
+
+script BlanchedDepths_1F_1R_EventScript_AquaGrunt1 {
+	trainerbattle_single (TRAINER_SAWYER_1, "Wait, I know you!", "I would've beaten you if I'd been\nprepared!")
+	msgbox ("Hey kid, tell me. Where are we?", MSGBOX_AUTOCLOSE)
+}
+
+script BlanchedDepths_1F_1R_EventScript_AquaGrunt2 {
+	trainerbattle_single (TRAINER_SAWYER_1, "Ack, get back!", "First, the submarine gasses out,\nthen I was next!")
+	msgbox ("I'll tell you if you let me go.\pWe came out here in the old sub on the\nhunt for a treasure the boss heard\labout, but we ran out of fuel near\lthis cave.", MSGBOX_AUTOCLOSE)
+}

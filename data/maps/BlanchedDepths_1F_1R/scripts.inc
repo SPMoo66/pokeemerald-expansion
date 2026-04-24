@@ -112,3 +112,68 @@ BlanchedDepths_1F_1R_IntroCameraMovements:
 # 34 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
 	walk_diag_southwest
 	step_end
+
+BlanchedDepths_1F_1R_EventScript_DefeatedAquaGrunt::
+# 38 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	faceplayer
+# 39 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	goto_if_unset FLAG_TEMP_1, BlanchedDepths_1F_1R_EventScript_DefeatedAquaGrunt_1
+# 44 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	msgbox BlanchedDepths_1F_1R_EventScript_DefeatedAquaGrunt_Text_1, MSGBOX_AUTOCLOSE
+	return
+
+BlanchedDepths_1F_1R_EventScript_DefeatedAquaGrunt_1:
+# 40 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	setflag FLAG_TEMP_1
+# 41 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	msgbox BlanchedDepths_1F_1R_EventScript_DefeatedAquaGrunt_Text_0, MSGBOX_AUTOCLOSE
+	return
+
+
+BlanchedDepths_1F_1R_EventScript_AquaGrunt1::
+# 49 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	trainerbattle_single TRAINER_SAWYER_1, BlanchedDepths_1F_1R_EventScript_AquaGrunt1_Text_0, BlanchedDepths_1F_1R_EventScript_AquaGrunt1_Text_1
+# 50 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	msgbox BlanchedDepths_1F_1R_EventScript_AquaGrunt1_Text_2, MSGBOX_AUTOCLOSE
+	return
+
+
+BlanchedDepths_1F_1R_EventScript_AquaGrunt2::
+# 54 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	trainerbattle_single TRAINER_SAWYER_1, BlanchedDepths_1F_1R_EventScript_AquaGrunt2_Text_0, BlanchedDepths_1F_1R_EventScript_AquaGrunt2_Text_1
+# 55 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	msgbox BlanchedDepths_1F_1R_EventScript_AquaGrunt2_Text_2, MSGBOX_AUTOCLOSE
+	return
+
+
+BlanchedDepths_1F_1R_EventScript_DefeatedAquaGrunt_Text_0:
+# 41 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	.string "Ack, another kid?!\pNo!\nLeave me alone!\pMuh- my Pokémon are already all fainted!$"
+
+BlanchedDepths_1F_1R_EventScript_DefeatedAquaGrunt_Text_1:
+# 44 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	.string "Look… just leave me alone… please?$"
+
+BlanchedDepths_1F_1R_EventScript_AquaGrunt1_Text_0:
+# 49 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	.string "Wait, I know you!$"
+
+BlanchedDepths_1F_1R_EventScript_AquaGrunt1_Text_1:
+# 49 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	.string "I would've beaten you if I'd been\nprepared!$"
+
+BlanchedDepths_1F_1R_EventScript_AquaGrunt1_Text_2:
+# 50 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	.string "Hey kid, tell me. Where are we?$"
+
+BlanchedDepths_1F_1R_EventScript_AquaGrunt2_Text_0:
+# 54 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	.string "Ack, get back!$"
+
+BlanchedDepths_1F_1R_EventScript_AquaGrunt2_Text_1:
+# 54 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	.string "First, the submarine gasses out,\nthen I was next!$"
+
+BlanchedDepths_1F_1R_EventScript_AquaGrunt2_Text_2:
+# 55 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
+	.string "I'll tell you if you let me go.\pWe came out here in the old sub on the\nhunt for a treasure the boss heard\labout, but we ran out of fuel near\lthis cave.$"

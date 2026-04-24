@@ -1,1 +1,42 @@
 mapscripts BlanchedDepths_2F_1R_MapScripts {}
+
+
+script BlanchedDepths_2F_1R_EventScript_AquaGrunt3 {
+	trainerbattle_single (TRAINER_SAWYER_1, "Boss, we've got an intruder!", "Shoot!")
+	msgbox ("Archie?\nNah, he's not leading us here.", MSGBOX_AUTOCLOSE)
+}
+
+script BlanchedDepths_2F_1R_EventScript_AquaGrunt4 {
+	trainerbattle_single (TRAINER_SAWYER_1, "Back, you monster!", "Wait, a human?")
+	msgbox ("The wild Pokémon in this place are\nmonsters.\pWe've been holding them off for days\nnow.\p…I want to go home.", MSGBOX_AUTOCLOSE)
+}
+
+script BlanchedDepths_2F_1R_EventScript_AquaGrunt5 {
+	trainerbattle_single (TRAINER_SAWYER_1, "Don't worry, boss, I'll protect you!", "Nooooo!")
+	msgbox ("My squadron calls me the weakest grunt.\pDid I just prove them right…?", MSGBOX_AUTOCLOSE)
+}
+
+script BlanchedDepths_2F_1R_EventScript_AquaGrunt6 {
+	trainerbattle_single (TRAINER_SAWYER_1, "I'll put you down, whelp!", "Euthanized!")
+	msgbox ("I'm sorry…\pMatt…", MSGBOX_AUTOCLOSE)
+}
+
+script BlanchedDepths_2F_1R_EventScript_Matt {
+	trainerbattle_single (TRAINER_SAWYER_1, "You! Again!\pI remember what you've done!\pArchie's gone because of you!", "Agh, you brat!", BlanchedDepths_2F_1R_EventScript_MattPostBattle)
+	msgbox ("Get out of my sight, child.", MSGBOX_AUTOCLOSE)
+}
+
+script BlanchedDepths_2F_1R_EventScript_MattPostBattle {
+	msgbox ("Blast you!\pIf it weren't for you, we would have\nbeaten that Team Magma.\pArchie would still…\nHe wouldn't have left Team Aqua!\pKids like you are just too meddlesome.\p… … …\pRun along then. Do what you wish. We'll\nhave to turn back and lick our wounds.", MSGBOX_AUTOCLOSE)
+}
+
+script BlanchedDepths_2F_1R_EventScript_Sailor {
+	lock
+	faceplayer
+	if (!var(VAR_TEMP_0)) {
+		msgbox ("Ahoy!\nIt doesn't seem like your treasure is\lhere.\p… … …\pOh, the LIGHT?\pYes, I suppose I did bring it with me.\pHere, go ahead and take it with you.", MSGBOX_AUTOCLOSE)
+		setvar (VAR_TEMP_0, 1)
+	}
+	msgbox ("Don't worry about me, my Pokémon will\nhelp me return to land.", MSGBOX_AUTOCLOSE)
+	release
+}

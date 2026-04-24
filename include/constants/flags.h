@@ -894,10 +894,10 @@
 #define FLAG_HIDE_BATTLE_FRONTIER_SUDOWOODO                         0x34A
 #define FLAG_UNUSED_0x34B                                           0x34B // Unused, was a duplicate for Rock Smash scripting
 #define FLAG_HIDE_RUSTBORO_CITY_SCIENTIST                           0x34C
-#define FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_GRUNT                  0x34D
-#define FLAG_HIDE_SLATEPORT_CITY_HARBOR_ARCHIE                      0x34E
+#define FLAG_UNUSED_0x34D                                           0x34D // Was used to hide Aqua Grunt in Slateport Harbor - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 1 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 1, SCENE 01
+#define FLAG_UNUSED_0x34E                                           0x34E // Was used to hide Archie in Slateport Harbor     - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 1 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 1, SCENE 01
 #define FLAG_HIDE_JAGGED_PASS_MAGMA_GUARD                           0x34F
-#define FLAG_HIDE_SLATEPORT_CITY_HARBOR_SUBMARINE_SHADOW            0x350
+#define FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_ELEMENTS               0x350 // Controls Submarine, Aqua Grunt, and Archie
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_PICHU_DOLL          0x351
 #define FLAG_HIDE_MAGMA_HIDEOUT_4F_GROUDON_ASLEEP                   0x352
 #define FLAG_HIDE_ROUTE_119_RIVAL                                   0x353

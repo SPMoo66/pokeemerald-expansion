@@ -12,7 +12,7 @@
   "allow_running": false,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
@@ -93,7 +93,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_GRUNT"
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_ELEMENTS"
     },
     {
       "local_id": "LOCALID_SLATEPORT_HARBOR_ARCHIE",
@@ -107,7 +107,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_HARBOR_ARCHIE"
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_ELEMENTS"
     },
     {
       "local_id": "LOCALID_SLATEPORT_HARBOR_SUBMARINE",
@@ -121,7 +121,77 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_HARBOR_SUBMARINE_SHADOW"
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_ELEMENTS"
+    },
+    {
+      "local_id": "SLATEPORT_HARBOR_JAKSON",
+      "graphics_id": "OBJ_EVENT_GFX_JAKSON",
+      "x": 13,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "local_id": "SLATEPORT_HARBOR_BARON",
+      "graphics_id": "OBJ_EVENT_GFX_BARON",
+      "x": 14,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "local_id": "SLATEPORT_HARBOR_SAKURA",
+      "graphics_id": "OBJ_EVENT_GFX_SAKURA",
+      "x": 15,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "local_id": "SLATEPORT_HARBOR_HARPER",
+      "graphics_id": "OBJ_EVENT_GFX_HARPER",
+      "x": 16,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "local_id": "SLATEPORT_HARBOR_REDD",
+      "graphics_id": "OBJ_EVENT_GFX_REDD",
+      "x": 16,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -178,7 +248,5 @@
       "script": "SlateportCity_Harbor_EventScript_AquaEscapeTrigger3"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": []
 }

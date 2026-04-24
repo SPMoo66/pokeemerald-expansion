@@ -1,9 +1,21 @@
+const SLATEPORT_HARBOR_JAKSON = 9
+const SLATEPORT_HARBOR_BARON = 10
+const SLATEPORT_HARBOR_SAKURA = 11
+const SLATEPORT_HARBOR_HARPER = 12
+const SLATEPORT_HARBOR_REDD = 13
 const SLATEPORTREGIONMAP_BOAT = 1
 const SSTIDAL_JAKSON = 6
 const SSTIDAL_HARPER = 7
 const SSTIDAL_REDD = 8
 const SSTIDAL_SAKURA = 9
 const SSTIDAL_BARON = 10
+
+
+script Scene01 {
+	clearflag (FLAG_UNUSED_0x34D)
+	clearflag (FLAG_UNUSED_0x34E)
+}
+
 
 script SSTidal_Scene01_OnTransition {
 	clearflag (FLAG_TEMP_4)

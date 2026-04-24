@@ -7743,3 +7743,7 @@ DirectSoundWaveData_hg_hoohclap::
 	.align 2
 DirectSoundWaveData_hg_choirc5::
 	.incbin "sound/direct_sound_samples/hg_choirc5.bin"
+
+	.align 2
+DirectSoundWaveData_drill_dozer_orchestra_hit::
+	.incbin "sound/direct_sound_samples/drill_dozer_orchestra_hit.bin"

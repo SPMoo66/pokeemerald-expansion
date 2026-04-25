@@ -176,8 +176,7 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	setflag FLAG_WILD_OPPONENT
-	trainerbattle_no_intro TRAINER_LEXIE, Battle02_HarperText_BattleVictory
+	call Expansion1_Rival_Scene01
 	release
 	end
 

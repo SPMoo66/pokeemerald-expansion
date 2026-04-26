@@ -17,3 +17,35 @@ script EventScript_JaksonExpansion1Call {
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 19)
 	releaseall
 }
+
+script Sakura_Exp1_Town01 {
+	speakername (CommonText_Sakura)
+	msgbox(Exp1_Town01_SakuraText, MSGBOX_NPC)
+}
+
+script Harper_Exp1_Town01 {
+	speakername (CommonText_Harper)
+	msgbox(Exp1_Town01_HarperText, MSGBOX_NPC)
+}
+
+script Redd_Exp1_Town01 {
+	speakername (CommonText_Redd)
+	msgbox(Exp1_Town01_ReddText, MSGBOX_NPC)
+}
+
+script Baron_Exp1_Town01 {
+	speakername (CommonText_Baron)
+	msgbox(Exp1_Town01_BaronText, MSGBOX_NPC)
+}
+
+script Jakson_Exp1_Town01 {
+	speakername (CommonText_Jakson)
+	msgbox(Exp1_Town01_JaksonText, MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		msgbox(Exp1_Town01_JaksonTextAccept, MSGBOX_AUTOCLOSE)
+		goto (SlateportRegionMap_BoatSceneInit)
+	}
+	else {
+		msgbox(Exp1_Town01_JaksonTextDecline, MSGBOX_AUTOCLOSE)
+	}
+}

@@ -81,7 +81,7 @@ SlateportRegionMap_BoatScene_4:
 # 50 "data/maps/SlateportRegionMap/scripts.pory"
 	setvar VAR_TEMP_0, 1
 # 51 "data/maps/SlateportRegionMap/scripts.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 19
+	compare VAR_EMERALBODY_RIVAL_STATE, 20
 	goto_if_eq SlateportRegionMap_BoatScene_9
 # 56 "data/maps/SlateportRegionMap/scripts.pory"
 	goto_if_set FLAG_REVERSE_SLATEPORT_BOAT_SCENE, SlateportRegionMap_BoatScene_10

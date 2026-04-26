@@ -15,3 +15,31 @@ Call1_JaksonText::
 	.string "next free. Specifically the Harbor.\p"
 	.string "I'll assemble the others, too.\n"
 	.string "See you soon!$"
+
+Exp1_Town01_SakuraText::
+# 21 "data/expansion_1/rival_text.pory"
+	.string "PLACEHOLDER$"
+
+Exp1_Town01_HarperText::
+# 25 "data/expansion_1/rival_text.pory"
+	.string "PLACEHOLDER$"
+
+Exp1_Town01_ReddText::
+# 29 "data/expansion_1/rival_text.pory"
+	.string "PLACEHOLDER$"
+
+Exp1_Town01_BaronText::
+# 33 "data/expansion_1/rival_text.pory"
+	.string "PLACEHOLDER$"
+
+Exp1_Town01_JaksonText::
+# 37 "data/expansion_1/rival_text.pory"
+	.string "PLACEHOLDER$"
+
+Exp1_Town01_JaksonTextAccept::
+# 41 "data/expansion_1/rival_text.pory"
+	.string "PLACEHOLDER$"
+
+Exp1_Town01_JaksonTextDecline::
+# 45 "data/expansion_1/rival_text.pory"
+	.string "PLACEHOLDER$"

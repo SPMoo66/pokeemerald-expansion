@@ -346,94 +346,88 @@ SlateportHarbor_PostScene01_SetPositions::
 	return
 
 
-SSTidal_Scene01_OnTransition::
-# 203 "data/expansion_1/scene01.pory"
-	clearflag FLAG_TEMP_4
-	return
-
-
 SSTidal_Scene01_OnWarp::
-# 207 "data/expansion_1/scene01.pory"
+# 203 "data/expansion_1/scene01.pory"
 	turnobject LOCALID_PLAYER, DIR_NORTH
 	return
 
 
 SSTidal_Scene01_OnFrame::
-# 211 "data/expansion_1/scene01.pory"
+# 207 "data/expansion_1/scene01.pory"
 	lock
-# 213 "data/expansion_1/scene01.pory"
+# 209 "data/expansion_1/scene01.pory"
 	msgbox SSTidal_Scene01_OnFrame_Text_0, MSGBOX_DEFAULT
-# 215 "data/expansion_1/scene01.pory"
+# 211 "data/expansion_1/scene01.pory"
 	clearflag FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY
-# 216 "data/expansion_1/scene01.pory"
+# 212 "data/expansion_1/scene01.pory"
 	setflag FLAG_DONT_START_MUSIC_ON_WARP
-# 217 "data/expansion_1/scene01.pory"
+# 213 "data/expansion_1/scene01.pory"
 	warp MAP_ILLUSORY_GROTTO_B4F_1R, 26, 7
-# 218 "data/expansion_1/scene01.pory"
+# 214 "data/expansion_1/scene01.pory"
 	waitstate
 	return
 
 
 IllusoryGrotto_B4F_1R_Scene01_OnFrame::
-# 222 "data/expansion_1/scene01.pory"
+# 218 "data/expansion_1/scene01.pory"
 	lock
-# 223 "data/expansion_1/scene01.pory"
+# 219 "data/expansion_1/scene01.pory"
 	delay 30
+# 220 "data/expansion_1/scene01.pory"
+	playse SE_M_BUBBLE3
+# 221 "data/expansion_1/scene01.pory"
+	delay 40
+# 222 "data/expansion_1/scene01.pory"
+	playse SE_M_BUBBLE3
+# 223 "data/expansion_1/scene01.pory"
+	delay 60
 # 224 "data/expansion_1/scene01.pory"
 	playse SE_M_BUBBLE3
 # 225 "data/expansion_1/scene01.pory"
 	delay 40
-# 226 "data/expansion_1/scene01.pory"
-	playse SE_M_BUBBLE3
 # 227 "data/expansion_1/scene01.pory"
-	delay 60
-# 228 "data/expansion_1/scene01.pory"
-	playse SE_M_BUBBLE3
-# 229 "data/expansion_1/scene01.pory"
-	delay 40
-# 231 "data/expansion_1/scene01.pory"
 	setflashlevel 8
-# 232 "data/expansion_1/scene01.pory"
+# 228 "data/expansion_1/scene01.pory"
 	animateflash 4
-# 233 "data/expansion_1/scene01.pory"
+# 229 "data/expansion_1/scene01.pory"
 	setflashlevel 4
+# 230 "data/expansion_1/scene01.pory"
+	delay 20
+# 232 "data/expansion_1/scene01.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceUp
+# 233 "data/expansion_1/scene01.pory"
+	waitmovement 0
 # 234 "data/expansion_1/scene01.pory"
 	delay 20
-# 236 "data/expansion_1/scene01.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceUp
-# 237 "data/expansion_1/scene01.pory"
-	waitmovement 0
-# 238 "data/expansion_1/scene01.pory"
-	delay 20
-# 239 "data/expansion_1/scene01.pory"
+# 235 "data/expansion_1/scene01.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceRight
-# 240 "data/expansion_1/scene01.pory"
+# 236 "data/expansion_1/scene01.pory"
 	waitmovement 0
-# 241 "data/expansion_1/scene01.pory"
+# 237 "data/expansion_1/scene01.pory"
 	delay 20
-# 242 "data/expansion_1/scene01.pory"
+# 238 "data/expansion_1/scene01.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft
-# 243 "data/expansion_1/scene01.pory"
+# 239 "data/expansion_1/scene01.pory"
+	waitmovement 0
+# 240 "data/expansion_1/scene01.pory"
+	delay 20
+# 241 "data/expansion_1/scene01.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
+# 242 "data/expansion_1/scene01.pory"
 	waitmovement 0
 # 244 "data/expansion_1/scene01.pory"
-	delay 20
-# 245 "data/expansion_1/scene01.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
-# 246 "data/expansion_1/scene01.pory"
-	waitmovement 0
-# 248 "data/expansion_1/scene01.pory"
 	animateflash 0
-# 249 "data/expansion_1/scene01.pory"
+# 245 "data/expansion_1/scene01.pory"
 	setflashlevel 0
-# 251 "data/expansion_1/scene01.pory"
+# 247 "data/expansion_1/scene01.pory"
 	playbgm MUS_DP_VICTORY_ROAD, FALSE
-# 252 "data/expansion_1/scene01.pory"
+# 248 "data/expansion_1/scene01.pory"
 	setvar VAR_EMERALBODY_RIVAL_STATE, 21
-# 253 "data/expansion_1/scene01.pory"
+# 249 "data/expansion_1/scene01.pory"
 	clearflag FLAG_DONT_START_MUSIC_ON_WARP
-# 254 "data/expansion_1/scene01.pory"
+# 250 "data/expansion_1/scene01.pory"
 	setflag FLAG_CANT_USE_ESCAPE_ROPE
-# 255 "data/expansion_1/scene01.pory"
+# 251 "data/expansion_1/scene01.pory"
 	release
 	return
 
@@ -606,5 +600,5 @@ Expansion1_Rival_Scene01_Text_38:
 	.string "Aye aye, Captain!$"
 
 SSTidal_Scene01_OnFrame_Text_0:
-# 213 "data/expansion_1/scene01.pory"
+# 209 "data/expansion_1/scene01.pory"
 	.string "Scene01$"

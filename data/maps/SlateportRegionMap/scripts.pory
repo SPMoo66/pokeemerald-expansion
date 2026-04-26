@@ -48,7 +48,7 @@ script SlateportRegionMap_BoatScene {
 	waitmovement (0)
 	special (RemoveCameraObject)
 	setvar (VAR_TEMP_0, 1)
-	if (var(VAR_EMERALBODY_RIVAL_STATE) == 19) {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 20) {
 		setflag (FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY) // temporarily hides Mr Briney and Peeko, re-clears later
 		setvar (VAR_EMERALBODY_RIVAL_STATE, 20) // temporary until the rest of the script is created, this should be much earlier
 		warp (MAP_SS_TIDAL_CORRIDOR, 11, 3)

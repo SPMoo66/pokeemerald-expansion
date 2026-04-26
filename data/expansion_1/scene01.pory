@@ -199,10 +199,6 @@ script SlateportHarbor_PostScene01_SetPositions {
 }
 
 
-script SSTidal_Scene01_OnTransition {
-	clearflag (FLAG_TEMP_4)
-}
-
 script SSTidal_Scene01_OnWarp {
 	turnobject (LOCALID_PLAYER, DIR_NORTH)
 }

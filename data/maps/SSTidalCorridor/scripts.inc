@@ -6,7 +6,7 @@ SSTidalCorridor_MapScripts::
 
 SSTidalCorridor_OnTransition:
 	setflag (FLAG_TEMP_4)
-	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 20, SSTidal_Scene01_OnTransition
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 20, EventScript_Clear_FlagTemp4
 	end
 
 SSTidalCorridor_OnWarp:

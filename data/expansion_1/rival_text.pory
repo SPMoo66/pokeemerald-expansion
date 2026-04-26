@@ -16,3 +16,32 @@ text Call1_JaksonText {
 			"I'll assemble the others, too.\n"
 			"See you soon!")
 }
+
+#Town01
+text Exp1_Town01_SakuraText {
+	format( "PLACEHOLDER")
+}
+
+text Exp1_Town01_HarperText {
+	format( "PLACEHOLDER")
+}
+
+text Exp1_Town01_ReddText {
+	format( "PLACEHOLDER")
+}
+
+text Exp1_Town01_BaronText {
+	format( "PLACEHOLDER")
+}
+
+text Exp1_Town01_JaksonText {
+	format( "PLACEHOLDER")
+}
+
+text Exp1_Town01_JaksonTextAccept {
+	format( "PLACEHOLDER")
+}
+
+text Exp1_Town01_JaksonTextDecline {
+	format( "PLACEHOLDER")
+}

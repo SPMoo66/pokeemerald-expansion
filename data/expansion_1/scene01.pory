@@ -183,6 +183,19 @@ script Expansion1_Rival_Scene01 {
 			"When you're all ready to go, come see\nme and we'll get started!")
 	speakername (CommonText_Sakura)
 	msgbox ("Aye aye, Captain!", MSGBOX_AUTOCLOSE)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 20)
+	warpsilent (MAP_SLATEPORT_CITY_HARBOR, 14, 13)
+}
+
+script SlateportHarbor_PostScene01_SetPositions {
+	setobjectxyperm (SLATEPORT_HARBOR_JAKSON, 10, 11)
+	setobjectxyperm (SLATEPORT_HARBOR_BARON, 1, 10)
+	setobjectxyperm (SLATEPORT_HARBOR_SAKURA, 2, 6)
+	setobjectxyperm (SLATEPORT_HARBOR_REDD, 13, 12)
+	setobjectmovementtype (SLATEPORT_HARBOR_JAKSON, MOVEMENT_TYPE_FACE_DOWN)
+	setobjectmovementtype (SLATEPORT_HARBOR_BARON, MOVEMENT_TYPE_WANDER_AROUND)
+	setobjectmovementtype (SLATEPORT_HARBOR_SAKURA, MOVEMENT_TYPE_FACE_RIGHT)
+	setobjectmovementtype (SLATEPORT_HARBOR_REDD, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT)
 }
 
 

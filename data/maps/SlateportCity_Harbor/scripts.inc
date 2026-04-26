@@ -1,13 +1,22 @@
 SlateportCity_Harbor_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, SlateportCity_Harbor_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, SlateportCity_Harbor_OnFrame
 	.byte 0
 
 SlateportCity_Harbor_OnTransition:
+	setflag FLAG_TEMP_1
 	setescapewarp MAP_SLATEPORT_CITY, 28, 13
 	setvar VAR_TEMP_1, 0
 	call_if_eq VAR_SLATEPORT_HARBOR_STATE, 1, SlateportCity_Harbor_EventScript_ReadyAquaEscapeScene
 	call_if_ge VAR_SKY_PILLAR_STATE, 2, SlateportCity_Harbor_EventScript_ShowSSTidal
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 19, EventScript_Clear_FlagTemp1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 20, EventScript_Clear_FlagTemp1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 20, SlateportHarbor_PostScene01_SetPositions
 	end
+
+SlateportCity_Harbor_OnFrame:
+	map_script_2 VAR_EMERALBODY_RIVAL_STATE, 19, Expansion1_Rival_Scene01
+	.2byte 0
 
 SlateportCity_Harbor_EventScript_ShowSSTidal::
 	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_SS_TIDAL

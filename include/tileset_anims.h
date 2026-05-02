@@ -35,6 +35,7 @@ void InitTilesetAnim_BattlePyramid(void);
 // Custom tilesets
 void InitTilesetAnim_Beach(void);
 void InitTilesetAnim_CaveExp1(void);
+void InitTilesetAnim_Cave2_Exp_1(void);
 void InitTilesetAnim_OceanExp1(void);
 
 #endif // GUARD_TILESET_ANIMS_H

@@ -1267,6 +1267,38 @@ void InitTilesetAnim_CaveExp1(void)
     sPrimaryTilesetAnimCallback = TilesetAnim_CaveExp1;
 }
 
+const u16 gTilesetAnims_Cave2_Exp_1_Waterfall_Frame0[] = INCBIN_U16("data/tilesets/primary/cave_2_exp_1/anim/waterfall/0.4bpp");
+const u16 gTilesetAnims_Cave2_Exp_1_Waterfall_Frame1[] = INCBIN_U16("data/tilesets/primary/cave_2_exp_1/anim/waterfall/1.4bpp");
+const u16 gTilesetAnims_Cave2_Exp_1_Waterfall_Frame2[] = INCBIN_U16("data/tilesets/primary/cave_2_exp_1/anim/waterfall/2.4bpp");
+const u16 gTilesetAnims_Cave2_Exp_1_Waterfall_Frame3[] = INCBIN_U16("data/tilesets/primary/cave_2_exp_1/anim/waterfall/3.4bpp");
+
+const u16 *const gTilesetAnims_Cave2_Exp_1_Waterfall[] = {
+    gTilesetAnims_Cave2_Exp_1_Waterfall_Frame0,
+    gTilesetAnims_Cave2_Exp_1_Waterfall_Frame1,
+    gTilesetAnims_Cave2_Exp_1_Waterfall_Frame2,
+    gTilesetAnims_Cave2_Exp_1_Waterfall_Frame3
+};
+
+static void QueueAnimTiles_Cave2_Exp_1_Waterfall(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Cave2_Exp_1_Waterfall);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Cave2_Exp_1_Waterfall[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(1)), 3 * TILE_SIZE_4BPP);
+}
+
+static void TilesetAnim_Cave2_Exp_1(u16 timer)
+{
+    if (timer % 8 == 0) {
+        QueueAnimTiles_Cave2_Exp_1_Waterfall(timer / 8);
+    }
+}
+
+void InitTilesetAnim_Cave2_Exp_1(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_Cave2_Exp_1;
+}
+
 const u16 gTilesetAnims_OceanExp1_WaterCurrents_Frame0[] = INCBIN_U16("data/tilesets/secondary/ocean_exp_1/anim/water_currents/0.4bpp");
 const u16 gTilesetAnims_OceanExp1_WaterCurrents_Frame1[] = INCBIN_U16("data/tilesets/secondary/ocean_exp_1/anim/water_currents/1.4bpp");
 const u16 gTilesetAnims_OceanExp1_WaterCurrents_Frame2[] = INCBIN_U16("data/tilesets/secondary/ocean_exp_1/anim/water_currents/2.4bpp");

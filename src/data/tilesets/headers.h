@@ -905,7 +905,7 @@ const struct Tileset gTileset_Cave2_Exp_1 =
     .palettes = gTilesetPalettes_Cave2_Exp_1,
     .metatiles = gMetatiles_Cave2_Exp_1,
     .metatileAttributes = gMetatileAttributes_Cave2_Exp_1,
-    .callback = NULL,
+    .callback = InitTilesetAnim_Cave2_Exp_1,
 };
 
 const struct Tileset gTileset_HoennRegionMap =

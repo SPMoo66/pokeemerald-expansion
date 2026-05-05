@@ -16,7 +16,7 @@ TITLESCREENGFXDIR := graphics/title_screen
 types := normal fight flying poison ground rock bug ghost steel mystery fire water grass electric psychic ice dragon dark
 contest_types := cool beauty cute smart tough
 
-BUILDBATTRANSGFXDIR := build/$(BATTRANSGFXDIR)
+BUILDBATTRANSGFXDIR := $(ASSETS_DIR_NAME)/$(BATTRANSGFXDIR)
 
 
 ### Castform ###

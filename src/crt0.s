@@ -14,10 +14,6 @@ Init::
 	mov r0, #PSR_SYS_MODE
 	msr cpsr_cf, r0
 	ldr sp, sp_sys
-@ Prepare for interrupt handling
-	ldr r1, =INTR_VECTOR
-	adr r0, IntrMain
-	str r0, [r1]
 @ Dispatch memory reset request to hardware
 	mov r0, #255 @ RESET_ALL
 	svc #1 << 16
@@ -41,6 +37,7 @@ sp_irq: .word IWRAM_END - 0x60
 	.pool
 
 	.arm
+	.section .iwram.code, "ax", %progbits
 	.align 2, 0
 IntrMain::
 	mov r3, #REG_BASE
@@ -133,6 +130,7 @@ IntrMain_RetAddr:
 
 	.pool
 
+	.text
 	.align 2, 0 @ Don't pad with nop.
 
 @ Fills initialized IWRAM and EWRAM sections in RAM from LMA areas in ROM

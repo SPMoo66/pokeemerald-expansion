@@ -52,7 +52,7 @@
       "y": 3,
       "elevation": 0,
       "item": "ITEM_NONE",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_BIG_PEARL"
     },
     {
       "type": "hidden_item",
@@ -60,7 +60,7 @@
       "y": 68,
       "elevation": 0,
       "item": "ITEM_NONE",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_BIG_PEARL"
     },
     {
       "type": "hidden_item",
@@ -68,7 +68,7 @@
       "y": 72,
       "elevation": 0,
       "item": "ITEM_NONE",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_BIG_PEARL"
     },
     {
       "type": "hidden_item",
@@ -76,7 +76,7 @@
       "y": 70,
       "elevation": 0,
       "item": "ITEM_NONE",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_BIG_PEARL"
     },
     {
       "type": "hidden_item",
@@ -84,7 +84,7 @@
       "y": 75,
       "elevation": 0,
       "item": "ITEM_NONE",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_BIG_PEARL"
     },
     {
       "type": "hidden_item",
@@ -92,7 +92,7 @@
       "y": 2,
       "elevation": 0,
       "item": "ITEM_NONE",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_BIG_PEARL"
     }
   ]
 }

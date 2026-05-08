@@ -295,7 +295,11 @@ static const u16 sRSAvatarGfxIds[GENDER_COUNT] =
     [FEMALE] = OBJ_EVENT_GFX_LINK_RS_MAY
 };
 
-static const u16 sPlayerAvatarGfxToStateFlag[GENDER_COUNT][5][2] =
+static const struct __attribute__((packed))
+{
+    u8 graphicsId;
+    u8 playerFlag;
+} sPlayerAvatarGfxToStateFlag[GENDER_COUNT][5] =
 {
     [MALE] =
     {
@@ -909,7 +913,6 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
             PlayerWalkFast(direction);
         return;
     }
-
     if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_UNDERWATER)
     {
         if (heldKeys & B_BUTTON || heldKeys & A_BUTTON)
@@ -918,9 +921,10 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
             PlayerWalkNormal(direction);
         return;
     }
-
-    if (!(gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_UNDERWATER) && (heldKeys & B_BUTTON) && !FlagGet(FLAG_BLOCK_PLAYER_ACTIONS)
-     && IsRunningDisallowed(gObjectEvents[gPlayerAvatar.objectEventId].currentMetatileBehavior) == 0 && !FollowerNPCComingThroughDoor()
+    if (!(gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_UNDERWATER)
+     && (heldKeys & B_BUTTON)
+     && IsRunningDisallowed(gObjectEvents[gPlayerAvatar.objectEventId].currentMetatileBehavior) == 0
+     && !FollowerNPCComingThroughDoor()
      && (I_ORAS_DOWSING_FLAG == 0 || (I_ORAS_DOWSING_FLAG != 0 && !FlagGet(I_ORAS_DOWSING_FLAG))))
     {
         if (ObjectMovingOnRockStairs(&gObjectEvents[gPlayerAvatar.objectEventId], direction))
@@ -1673,8 +1677,8 @@ static u8 GetPlayerAvatarStateTransitionByGraphicsId(u16 graphicsId, u8 gender)
 
     for (i = 0; i < ARRAY_COUNT(sPlayerAvatarGfxToStateFlag[0]); i++)
     {
-        if (sPlayerAvatarGfxToStateFlag[gender][i][0] == graphicsId)
-            return sPlayerAvatarGfxToStateFlag[gender][i][1];
+        if (sPlayerAvatarGfxToStateFlag[gender][i].graphicsId == graphicsId)
+            return sPlayerAvatarGfxToStateFlag[gender][i].playerFlag;
     }
     return PLAYER_AVATAR_FLAG_ON_FOOT;
 }
@@ -1686,8 +1690,8 @@ u16 GetPlayerAvatarGraphicsIdByCurrentState(void)
 
     for (i = 0; i < ARRAY_COUNT(sPlayerAvatarGfxToStateFlag[0]); i++)
     {
-        if (sPlayerAvatarGfxToStateFlag[gPlayerAvatar.gender][i][1] & flags)
-            return sPlayerAvatarGfxToStateFlag[gPlayerAvatar.gender][i][0];
+        if (sPlayerAvatarGfxToStateFlag[gPlayerAvatar.gender][i].playerFlag & flags)
+            return sPlayerAvatarGfxToStateFlag[gPlayerAvatar.gender][i].graphicsId;
     }
     return 0;
 }

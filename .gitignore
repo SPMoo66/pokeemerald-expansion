@@ -55,6 +55,7 @@ include/constants/script_commands.h
 tools/trainerproc/trainerproc
 tools/compresSmol/compresSmol
 tools/compresSmol/compresSmolTilemap
+tools/aif2pcm/aif2pcm
 *.Identifier
 *.smol
 *.fastSmol

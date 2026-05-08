@@ -69,4 +69,11 @@ void ItemUseOutOfBattle_Pokevial(u8 taskId); //Pokevial Branch
 void ItemUseOutOfBattle_PokeBall(u8 taskId);
 bool32 CannotUseItemsInBattle(u16 itemId, struct Pokemon *mon);
 
+enum ItemTMHMOrEvolutionStone
+{
+    ITEM_IS_OTHER,
+    ITEM_IS_TM_HM,
+    ITEM_IS_EVOLUTION_STONE,
+};
+
 #endif // GUARD_ITEM_USE_H

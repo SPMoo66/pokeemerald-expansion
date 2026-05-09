@@ -1,4 +1,5 @@
 #include "constants/abilities.h"
+#include "constants/teaching_types.h"
 #include "species_info/shared_dex_text.h"
 #include "species_info/shared_front_pic_anims.h"
 
@@ -63,7 +64,6 @@
     .subspriteTables = (_size == SIZE_32x32 ? sOamTables_32x32 : sOamTables_64x64),                                                     \
     .anims = _anims,                                                                                                                    \
     .images = picTable,                                                                                                                 \
-    .affineAnims = gDummySpriteAffineAnimTable,                                                                                         \
 }
 
 #define OVERWORLD(objEventPic, _size, shadow, _tracks, _anims, ...)                                 \
@@ -100,7 +100,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_NONE] =
     {
         .speciesName = _("??????????"),
-        .cryId = CRY_NONE,
+        .cryId = CRY_PORYGON,
         .natDexNum = NATIONAL_DEX_NONE,
         .categoryName = _("Unknown"),
         .height = 0,
@@ -143,7 +143,6 @@ const struct SpeciesInfo gSpeciesInfo[] =
             .subspriteTables = sOamTables_32x32,
             .anims = sAnimTable_Following,
             .images = sPicTable_Substitute,
-            .affineAnims = gDummySpriteAffineAnimTable,
         },
     #endif
         .levelUpLearnset = sNoneLevelUpLearnset,
@@ -1829,7 +1828,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 11, SHADOW_SIZE_S)
         FOOTPRINT(Regice)
-        .isLegendary = TRUE,
+        .isSubLegendary = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sRegiaguaLevelUpLearnset,
         .teachableLearnset = sRegiaguaTeachableLearnset,
@@ -1908,3 +1907,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         //.perfectIVCount = NUM_STATS,
     },
     */
+
+const struct EggData gEggDatas[EGG_ID_COUNT] =
+{
+#include "egg_data.h"
+};

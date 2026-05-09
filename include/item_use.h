@@ -45,7 +45,7 @@ void ItemUseInBattle_PartyMenu(u8 taskId);
 void ItemUseInBattle_PartyMenuChooseMove(u8 taskId);
 void Task_UseDigEscapeRopeOnField(u8 taskId);
 bool8 CanUseDigOrEscapeRopeOnCurMap(void);
-u8 CheckIfItemIsTMHMOrEvolutionStone(u16 itemId);
+u8 CheckIfItemIsTMHMOrEvolutionStone(enum Item itemId);
 void FieldUseFunc_VsSeeker(u8 taskId);
 void Task_ItemUse_CloseMessageBoxAndReturnToField_VsSeeker(u8 taskId);
 void ItemUseOutOfBattle_SootSack(u8);
@@ -54,7 +54,7 @@ void DisplayDadsAdviceCannotUseItemMessage(u8 taskId, bool8 isUsingRegisteredKey
 void ItemUseOutOfBattle_PokeFlute(u8 taskId);
 void ItemUseOutOfBattle_TownMap(u8 taskId);
 bool8 ItemfinderCheckForHiddenItems(const struct MapEvents *, u8);
-u8 GetDirectionToHiddenItem(s16, s16);
+enum Direction GetDirectionToHiddenItem(s16, s16);
 
 enum {
     BALL_THROW_UNABLE_TWO_MONS,
@@ -67,7 +67,7 @@ enum {
 bool32 CanThrowBall(void);
 void ItemUseOutOfBattle_Pokevial(u8 taskId); //Pokevial Branch
 void ItemUseOutOfBattle_PokeBall(u8 taskId);
-bool32 CannotUseItemsInBattle(u16 itemId, struct Pokemon *mon);
+bool32 CannotUseItemsInBattle(enum Item itemId, struct Pokemon *mon);
 
 enum ItemTMHMOrEvolutionStone
 {

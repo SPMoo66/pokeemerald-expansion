@@ -688,6 +688,8 @@ extern const u8 EventScript_LostSignal[];
 extern const u8 EventScript_TooDark[];
 extern const u8 EventScript_MovedTooFast[];
 
+extern const u8 MoveTutor_AfterChooseBoxMon[];
+
 extern const u8 Common_Movement_FollowerSafeStart[];
 extern const u8 Common_Movement_FollowerSafeEnd[];
 
@@ -695,4 +697,5 @@ extern const u8 EventScript_CancelMessageBox[];
 extern const u8 Common_EventScript_ShowPokemonCenterSign[];
 extern const u8 Common_EventScript_ShowPokemartSign[];
 
+extern const u8 MoveTutor_AfterChooseBoxMon[];
 #endif // GUARD_EVENT_SCRIPTS_H

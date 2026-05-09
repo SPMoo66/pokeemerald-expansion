@@ -2,13 +2,13 @@ script SlateportCity_PokemonFanClub_EventScript_SwaggerTutor {
 	lock
 	faceplayer
 	msgbox (MoveTutor_Text_SwaggerTeach, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_SwaggerDeclined)
 	}
 	msgbox (MoveTutor_Text_SwaggerWhichMon, MSGBOX_DEFAULT)
 	setvar (VAR_0x8005, MOVE_SWAGGER)
 	call (MoveTutor_EventScript_OpenPartyMenu)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_SwaggerDeclined)
 	}
 	msgbox (MoveTutor_Text_SwaggerTaught, MSGBOX_DEFAULT)
@@ -25,7 +25,7 @@ script MauvilleCity_EventScript_TricksTutor {
 	lock
 	faceplayer
 	msgbox (MoveTutor_Text_TricksTeach, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_TricksDeclined)
 	}
 	msgbox(MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT)
@@ -40,7 +40,7 @@ script MauvilleCity_EventScript_TricksTutor {
 	}
 	msgbox (MoveTutor_Text_TricksWhichMon, MSGBOX_DEFAULT)
 	call (MoveTutor_EventScript_OpenPartyMenu)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_TricksDeclined)
 	}
 	msgbox (MoveTutor_Text_TricksTaught, MSGBOX_DEFAULT)
@@ -57,13 +57,13 @@ script VerdanturfTown_PokemonCenter_1F_EventScript_IcyWindTutor {
 	lock
 	faceplayer
 	msgbox (MoveTutor_Text_IcyWindTeach, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_IcyWindDeclined)
 	}
 	msgbox (MoveTutor_Text_IcyWindWhichMon, MSGBOX_DEFAULT)
 	setvar (VAR_0x8005, MOVE_ICY_WIND)
 	call (MoveTutor_EventScript_OpenPartyMenu)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_IcyWindDeclined)
 	}
 	msgbox (MoveTutor_Text_IcyWindTaught, MSGBOX_DEFAULT)
@@ -80,13 +80,13 @@ script FallarborTown_Mart_EventScript_SignalBeamTutor {
 	lock
 	faceplayer
 	msgbox (MoveTutor_Text_SignalBeamTeach, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_SignalBeamDeclined)
 	}
 	msgbox (MoveTutor_Text_SignalBeamWhichMon, MSGBOX_DEFAULT)
 	setvar (VAR_0x8005, MOVE_SIGNAL_BEAM)
 	call (MoveTutor_EventScript_OpenPartyMenu)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_SignalBeamDeclined)
 	}
 	msgbox (MoveTutor_Text_SignalBeamTaught, MSGBOX_DEFAULT)
@@ -103,13 +103,13 @@ script LavaridgeTown_House_EventScript_SleepTalkTutor {
 	lock
 	faceplayer
 	msgbox (MoveTutor_SleepTalkTeach, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_SleepTalkDeclined)
 	}
 	msgbox (MoveTutor_Text_SleepTalkWhichMon, MSGBOX_DEFAULT)
 	setvar (VAR_0x8005, MOVE_SLEEP_TALK)
 	call (MoveTutor_EventScript_OpenPartyMenu)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_SleepTalkDeclined)
 	}
 	msgbox (MoveTutor_Text_SleepTalkTaught, MSGBOX_DEFAULT)
@@ -126,13 +126,13 @@ script FortreeCity_House2_EventScript_BodySlamTutor {
 	lock
 	faceplayer
 	msgbox (MoveTutor_Text_BodySlamTeach, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_BodySlamDeclined)
 	}
 	msgbox (MoveTutor_Text_BodySlamWhichMon, MSGBOX_DEFAULT)
 	setvar (VAR_0x8005, MOVE_BODY_SLAM)
 	call (MoveTutor_EventScript_OpenPartyMenu)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_BodySlamDeclined)
 	}
 	msgbox (MoveTutor_Text_BodySlamTaught, MSGBOX_DEFAULT)
@@ -149,13 +149,13 @@ script LilycoveCity_DepartmentStoreRooftop_EventScript_HyperVoiceTutor {
 	lock
 	faceplayer
 	msgbox (MoveTutor_Text_HyperVoiceTeach, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_HyperVoiceDeclined)
 	}
 	msgbox (MoveTutor_Text_HyperVoiceWhichMon, MSGBOX_DEFAULT)
 	setvar (VAR_0x8005, MOVE_HYPER_VOICE)
 	call (MoveTutor_EventScript_OpenPartyMenu)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_HyperVoiceDeclined)
 	}
 	msgbox (MoveTutor_Text_HyperVoiceTaught, MSGBOX_DEFAULT)
@@ -172,7 +172,7 @@ script LilycoveCity_EventScript_CombatMoveTutor {
 	lock
 	faceplayer
 	msgbox (MoveTutor_Text_CombatMoveTeach, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_CombatMoveDeclined)
 	}
 	msgbox(MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT)
@@ -195,7 +195,7 @@ script LilycoveCity_EventScript_CombatMoveTutor {
 	}
 	msgbox (MoveTutor_Text_CombatMoveWhichMon, MSGBOX_DEFAULT)
 	call (MoveTutor_EventScript_OpenPartyMenu)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_CombatMoveDeclined)
 	}
 	msgbox (MoveTutor_Text_CombatMoveTaught, MSGBOX_DEFAULT)
@@ -212,7 +212,7 @@ script MossdeepCity_EventScript_PledgeMoveTutor {
 	lock
 	faceplayer
 	msgbox (MoveTutor_Text_PledgeMoveTeach, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_PledgeMoveDeclined)
 	}
 	msgbox(MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT)
@@ -229,7 +229,7 @@ script MossdeepCity_EventScript_PledgeMoveTutor {
 	}
 	msgbox (MoveTutor_Text_PledgeMoveWhichMon, MSGBOX_DEFAULT)
 	call (MoveTutor_EventScript_OpenPartyMenu)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_PledgeMoveDeclined)
 	}
 	msgbox (MoveTutor_Text_PledgeMoveTaught, MSGBOX_DEFAULT)
@@ -246,13 +246,13 @@ script SootopolisCity_PokemonCenter_1F_EventScript_DynamicPunchTutor {
 	lock
 	faceplayer
 	msgbox (MoveTutor_Text_DynamicPunchTeach, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_DynamicPunchDeclined)
 	}
 	msgbox (MoveTutor_Text_DynamicPunchWhichMon, MSGBOX_DEFAULT)
 	setvar (VAR_0x8005, MOVE_DYNAMIC_PUNCH)
 	call (MoveTutor_EventScript_OpenPartyMenu)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_DynamicPunchDeclined)
 	}
 	msgbox (MoveTutor_Text_DynamicPunchTaught, MSGBOX_DEFAULT)
@@ -269,7 +269,7 @@ script PacifidlogTown_PokemonCenter_1F_EventScript_RecoilMoveTutor {
 	lock
 	faceplayer
 	msgbox (MoveTutor_Text_RecoilMoveTeach, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_RecoilMoveDeclined)
 	}
 	msgbox(MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT)
@@ -292,7 +292,7 @@ script PacifidlogTown_PokemonCenter_1F_EventScript_RecoilMoveTutor {
 	}
 	msgbox (MoveTutor_Text_RecoilMoveWhichMon, MSGBOX_DEFAULT)
 	call (MoveTutor_EventScript_OpenPartyMenu)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_RecoilMoveDeclined)
 	}
 	msgbox (MoveTutor_Text_RecoilMoveTaught, MSGBOX_DEFAULT)
@@ -309,7 +309,7 @@ script EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor {
 	lock
 	faceplayer
 	msgbox (MoveTutor_Text_LeagueMoveTeach, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_LeagueMoveDeclined)
 	}
 	msgbox(MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT)
@@ -344,7 +344,7 @@ script EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor {
 	}
 	msgbox (MoveTutor_Text_LeagueMoveWhichMon, MSGBOX_DEFAULT)
 	call (MoveTutor_EventScript_OpenPartyMenu)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_LeagueMoveDeclined)
 	}
 	msgbox (MoveTutor_Text_LeagueMoveTaught, MSGBOX_DEFAULT)
@@ -356,7 +356,7 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor {
 	lock
 	faceplayer
 	msgbox (MoveTutor_Text_LeagueMoveTeach, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_LeagueMoveDeclined)
 	}
 	msgbox(MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT)
@@ -377,7 +377,7 @@ script EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor {
 	}
 	msgbox (MoveTutor_Text_LeagueMoveWhichMon, MSGBOX_DEFAULT)
 	call (MoveTutor_EventScript_OpenPartyMenu)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_LeagueMoveDeclined)
 	}
 	msgbox (MoveTutor_Text_LeagueMoveTaught, MSGBOX_DEFAULT)
@@ -394,7 +394,7 @@ script BattleFrontier_Lounge4_EventScript_MoveTutor {
 	lock
 	faceplayer
 	msgbox (MoveTutor_Text_BattleFrontierFreeMoveTeach, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_BattleFrontierFreeMoveDeclined)
 	}
 	msgbox(MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT)
@@ -415,7 +415,7 @@ script BattleFrontier_Lounge4_EventScript_MoveTutor {
 	}
 	msgbox (MoveTutor_Text_BattleFrontierFreeMoveWhichMon, MSGBOX_DEFAULT)
 	call (MoveTutor_EventScript_OpenPartyMenu)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (MoveTutor_EventScript_BattleFrontierFreeMoveDeclined)
 	}
 	msgbox (MoveTutor_Text_BattleFrontierFreeMoveTaught, MSGBOX_DEFAULT)
@@ -509,7 +509,7 @@ script BattleFrontier_Lounge7_EventScript_RightMoveTutor2 {
 script BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection {
 	special (BufferBattleFrontierTutorMoveName) # Despite the extremely specific name, this special buffers any move name in VAR_0x8005 into STR_VAR_1
 	msgbox (BattleFrontier_Lounge7_Text_MoveWillBe4BattlePoints, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		if (var(VAR_TEMP_FRONTIER_TUTOR_ID) == 0) {
 			goto (BattleFrontier_Lounge7_EventScript_LeftMoveTutor2)
 		}
@@ -530,7 +530,7 @@ script BattleFrontier_Lounge7_EventScript_TeachTutorMove {
 	msgbox (BattleFrontier_Lounge7_Text_TeachMoveToWhichMon, MSGBOX_DEFAULT)
 	special (CloseBattlePointsWindow)
 	call (MoveTutor_EventScript_OpenPartyMenu)
-	if (var(VAR_RESULT) == NO) {
+	if (var(VAR_RESULT) == FALSE) {
 		goto (BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect)
 	}
 	setvar (VAR_0x8004, 4)
@@ -547,11 +547,17 @@ script BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect {
 
 
 
-
 script MoveTutor_EventScript_OpenPartyMenu {
-	special (ChooseMonForMoveTutor)
+	chooseboxmon (SELECT_PC_MON_MOVE_TUTOR)
 	waitstate
 	lock
 	faceplayer
 	release
+}
+
+script MoveTutor_AfterChooseBoxMon {
+	waitstate
+	special (CanTeachMoveBoxMon)
+	waitstate
+	return
 }

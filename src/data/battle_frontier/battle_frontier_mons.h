@@ -6,7 +6,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_CHLOROPHYLL
+		.ability = ABILITY_CHLOROPHYLL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CHARIZARD] = {
         .species = SPECIES_CHARIZARD,
@@ -14,7 +15,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SPECS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_BLAZE
+		.ability = ABILITY_BLAZE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CHARIZARD_EMERIBIAN] = {
         .species = SPECIES_CHARIZARD_EMERIBIAN,
@@ -22,7 +24,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WHITE_HERB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_BLAZE
+		.ability = ABILITY_BLAZE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BLASTOISE] = {
         .species = SPECIES_BLASTOISE,
@@ -30,7 +33,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_TORRENT
+		.ability = ABILITY_TORRENT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BUTTERFREE] = {
         .species = SPECIES_BUTTERFREE,
@@ -38,7 +42,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 170, 170, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_COMPOUND_EYES
+		.ability = ABILITY_COMPOUND_EYES,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BEEDRILL] = {
         .species = SPECIES_BEEDRILL,
@@ -46,7 +51,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SWARM
+		.ability = ABILITY_SWARM,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PIDGEOT] = {
         .species = SPECIES_PIDGEOT,
@@ -54,7 +60,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SHARP_BEAK,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_BIG_PECKS
+		.ability = ABILITY_BIG_PECKS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_RATICATE] = {
         .species = SPECIES_RATICATE,
@@ -62,7 +69,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FLAME_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_GUTS
+		.ability = ABILITY_GUTS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_RATICATE_ALOLA] = {
         .species = SPECIES_RATICATE_ALOLA,
@@ -70,7 +78,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOPLE_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_HUSTLE
+		.ability = ABILITY_HUSTLE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FEAROW] = {
         .species = SPECIES_FEAROW,
@@ -78,7 +87,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SCOPE_LENS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SNIPER
+		.ability = ABILITY_SNIPER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ARBOK] = {
         .species = SPECIES_ARBOK,
@@ -86,7 +96,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WIDE_LENS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_RAICHU] = {
         .species = SPECIES_RAICHU,
@@ -94,7 +105,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_STATIC
+		.ability = ABILITY_STATIC,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_RAICHU_ALOLA] = {
         .species = SPECIES_RAICHU_ALOLA,
@@ -102,7 +114,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_SURGE_SURFER
+		.ability = ABILITY_SURGE_SURFER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SANDSLASH] = {
         .species = SPECIES_SANDSLASH,
@@ -110,7 +123,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_TOUGH_CLAWS
+		.ability = ABILITY_TOUGH_CLAWS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SANDSLASH_ALOLA] = {
         .species = SPECIES_SANDSLASH_ALOLA,
@@ -118,7 +132,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WIDE_LENS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_TOUGH_CLAWS
+		.ability = ABILITY_TOUGH_CLAWS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_NIDOQUEEN] = {
         .species = SPECIES_NIDOQUEEN,
@@ -126,7 +141,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_SHEER_FORCE
+		.ability = ABILITY_SHEER_FORCE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_NIDOKING] = {
         .species = SPECIES_NIDOKING,
@@ -134,7 +150,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_SHEER_FORCE
+		.ability = ABILITY_SHEER_FORCE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CLEFABLE] = {
         .species = SPECIES_CLEFABLE,
@@ -142,7 +159,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_CALM,
-		.ability = ABILITY_MAGIC_GUARD
+		.ability = ABILITY_MAGIC_GUARD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_NINETALES] = {
         .species = SPECIES_NINETALES,
@@ -150,7 +168,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAT_ROCK,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_DROUGHT
+		.ability = ABILITY_DROUGHT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_NINETALES_ALOLA] = {
         .species = SPECIES_NINETALES_ALOLA,
@@ -158,7 +177,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIGHT_CLAY,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 170, 170, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_SNOW_WARNING
+		.ability = ABILITY_SNOW_WARNING,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_NINETALES_EMERIBIAN] = {
         .species = SPECIES_NINETALES_EMERIBIAN,
@@ -166,7 +186,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHARCOAL,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_PURIFYING_SALT
+		.ability = ABILITY_PURIFYING_SALT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WIGGLYTUFF] = {
         .species = SPECIES_WIGGLYTUFF,
@@ -174,7 +195,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_COMPETITIVE
+		.ability = ABILITY_COMPETITIVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_VILEPLUME] = {
         .species = SPECIES_VILEPLUME,
@@ -182,7 +204,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BLACK_SLUDGE,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_EFFECT_SPORE
+		.ability = ABILITY_EFFECT_SPORE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_VILEPLUME_EMERIBIAN] = {
         .species = SPECIES_VILEPLUME_EMERIBIAN,
@@ -190,7 +213,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ABSORB_BULB,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_SEED_SOWER
+		.ability = ABILITY_SEED_SOWER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PARASECT] = {
         .species = SPECIES_PARASECT,
@@ -198,7 +222,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_EFFECT_SPORE
+		.ability = ABILITY_EFFECT_SPORE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_VENOMOTH] = {
         .species = SPECIES_VENOMOTH,
@@ -206,7 +231,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_OCCA_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_TINTED_LENS
+		.ability = ABILITY_TINTED_LENS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DUGTRIO] = {
         .species = SPECIES_DUGTRIO,
@@ -214,7 +240,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_ARENA_TRAP
+		.ability = ABILITY_ARENA_TRAP,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DUGTRIO_ALOLA] = {
         .species = SPECIES_DUGTRIO_ALOLA,
@@ -222,7 +249,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 0, 252),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_TANGLING_HAIR
+		.ability = ABILITY_TANGLING_HAIR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PERSIAN] = {
         .species = SPECIES_PERSIAN,
@@ -230,7 +258,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_NONE,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_TECHNICIAN
+		.ability = ABILITY_TECHNICIAN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PERSIAN_ALOLA] = {
         .species = SPECIES_PERSIAN_ALOLA,
@@ -238,7 +267,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_FUR_COAT
+		.ability = ABILITY_FUR_COAT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GOLDUCK] = {
         .species = SPECIES_GOLDUCK,
@@ -246,7 +276,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_MYSTIC_WATER,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_SWIFT_SWIM
+		.ability = ABILITY_SWIFT_SWIM,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ARCANINE] = {
         .species = SPECIES_ARCANINE,
@@ -254,7 +285,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ARCANINE_HISUI] = {
         .species = SPECIES_ARCANINE_HISUI,
@@ -262,7 +294,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_POLIWRATH] = {
         .species = SPECIES_POLIWRATH,
@@ -270,7 +303,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_WATER_ABSORB
+		.ability = ABILITY_WATER_ABSORB,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ALAKAZAM] = {
         .species = SPECIES_ALAKAZAM,
@@ -278,7 +312,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_MAGIC_GUARD
+		.ability = ABILITY_MAGIC_GUARD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MACHAMP] = {
         .species = SPECIES_MACHAMP,
@@ -286,7 +321,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FLAME_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_GUTS
+		.ability = ABILITY_GUTS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_VICTREEBEL] = {
         .species = SPECIES_VICTREEBEL,
@@ -294,7 +330,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LUM_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_STENCH
+		.ability = ABILITY_STENCH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TENTACRUEL] = {
         .species = SPECIES_TENTACRUEL,
@@ -302,7 +339,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BLACK_SLUDGE,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 170, 170, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_LIQUID_OOZE
+		.ability = ABILITY_LIQUID_OOZE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GOLEM] = {
         .species = SPECIES_GOLEM,
@@ -310,7 +348,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CUSTAP_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_STURDY
+		.ability = ABILITY_STURDY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GOLEM_ALOLA] = {
         .species = SPECIES_GOLEM_ALOLA,
@@ -318,7 +357,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_MAGNET_PULL
+		.ability = ABILITY_MAGNET_PULL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GOLEM_FRIBIAN] = {
         .species = SPECIES_GOLEM_FRIBIAN,
@@ -326,7 +366,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_ADAPTABILITY
+		.ability = ABILITY_ADAPTABILITY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_RAPIDASH] = {
         .species = SPECIES_RAPIDASH,
@@ -334,7 +375,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_FLASH_FIRE
+		.ability = ABILITY_FLASH_FIRE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_RAPIDASH_GALAR] = {
         .species = SPECIES_RAPIDASH_GALAR,
@@ -342,7 +384,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WHITE_HERB,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_PASTEL_VEIL
+		.ability = ABILITY_PASTEL_VEIL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SLOWBRO] = {
         .species = SPECIES_SLOWBRO,
@@ -350,7 +393,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_REGENERATOR
+		.ability = ABILITY_REGENERATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SLOWBRO_GALAR] = {
         .species = SPECIES_SLOWBRO_GALAR,
@@ -358,7 +402,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SHUCA_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_REGENERATOR
+		.ability = ABILITY_REGENERATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DODRIO] = {
         .species = SPECIES_DODRIO,
@@ -366,7 +411,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_FLUFFY
+		.ability = ABILITY_FLUFFY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DODRIO_EMERIBIAN] = {
         .species = SPECIES_DODRIO_EMERIBIAN,
@@ -374,7 +420,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_EARLY_BIRD
+		.ability = ABILITY_EARLY_BIRD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DEWGONG] = {
         .species = SPECIES_DEWGONG,
@@ -382,7 +429,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CALM,
-		.ability = ABILITY_HYDRATION
+		.ability = ABILITY_HYDRATION,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MUK] = {
         .species = SPECIES_MUK,
@@ -390,7 +438,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BLACK_SLUDGE,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_POISON_TOUCH
+		.ability = ABILITY_POISON_TOUCH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MUK_ALOLA] = {
         .species = SPECIES_MUK_ALOLA,
@@ -398,7 +447,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_POISON_TOUCH
+		.ability = ABILITY_POISON_TOUCH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CLOYSTER] = {
         .species = SPECIES_CLOYSTER,
@@ -406,7 +456,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WHITE_HERB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_SKILL_LINK
+		.ability = ABILITY_SKILL_LINK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CLOYSTER_FRIBIAN] = {
         .species = SPECIES_CLOYSTER_FRIBIAN,
@@ -414,7 +465,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SHUCA_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 252, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_WATER_ABSORB
+		.ability = ABILITY_WATER_ABSORB,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GENGAR] = {
         .species = SPECIES_GENGAR,
@@ -422,7 +474,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_TELEPATHY
+		.ability = ABILITY_TELEPATHY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HYPNO] = {
         .species = SPECIES_HYPNO,
@@ -430,7 +483,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WIDE_LENS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_INSOMNIA
+		.ability = ABILITY_INSOMNIA,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KINGLER] = {
         .species = SPECIES_KINGLER,
@@ -438,7 +492,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_SHEER_FORCE
+		.ability = ABILITY_SHEER_FORCE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ELECTRODE] = {
         .species = SPECIES_ELECTRODE,
@@ -446,7 +501,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_DAMP_ROCK,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_AFTERMATH
+		.ability = ABILITY_AFTERMATH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ELECTRODE_HISUI] = {
         .species = SPECIES_ELECTRODE_HISUI,
@@ -454,7 +510,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_AFTERMATH
+		.ability = ABILITY_AFTERMATH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_EXEGGUTOR] = {
         .species = SPECIES_EXEGGUTOR,
@@ -462,7 +519,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SPECS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_SEED_SOWER
+		.ability = ABILITY_SEED_SOWER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_EXEGGUTOR_ALOLA] = {
         .species = SPECIES_EXEGGUTOR_ALOLA,
@@ -470,7 +528,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_HARVEST
+		.ability = ABILITY_HARVEST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MAROWAK] = {
         .species = SPECIES_MAROWAK,
@@ -478,7 +537,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_THICK_CLUB,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_BATTLE_ARMOR
+		.ability = ABILITY_BATTLE_ARMOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MAROWAK_ALOLA] = {
         .species = SPECIES_MAROWAK_ALOLA,
@@ -486,7 +546,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_THICK_CLUB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_LIGHTNING_ROD
+		.ability = ABILITY_LIGHTNING_ROD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HITMONLEE] = {
         .species = SPECIES_HITMONLEE,
@@ -494,7 +555,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_KEE_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_UNBURDEN
+		.ability = ABILITY_UNBURDEN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HITMONCHAN] = {
         .species = SPECIES_HITMONCHAN,
@@ -502,7 +564,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 170, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_IRON_FIST
+		.ability = ABILITY_IRON_FIST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WEEZING] = {
         .species = SPECIES_WEEZING,
@@ -510,7 +573,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BLACK_SLUDGE,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_NEUTRALIZING_GAS
+		.ability = ABILITY_NEUTRALIZING_GAS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WEEZING_GALAR] = {
         .species = SPECIES_WEEZING_GALAR,
@@ -518,7 +582,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BLACK_SLUDGE,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KANGASKHAN] = {
         .species = SPECIES_KANGASKHAN,
@@ -526,7 +591,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SILK_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SCRAPPY
+		.ability = ABILITY_SCRAPPY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SEAKING] = {
         .species = SPECIES_SEAKING,
@@ -534,7 +600,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_LIGHTNING_ROD
+		.ability = ABILITY_LIGHTNING_ROD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_STARMIE] = {
         .species = SPECIES_STARMIE,
@@ -542,7 +609,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_ANALYTIC
+		.ability = ABILITY_ANALYTIC,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MR_MIME] = {
         .species = SPECIES_MR_MIME,
@@ -550,7 +618,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_FILTER
+		.ability = ABILITY_FILTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_JYNX] = {
         .species = SPECIES_JYNX,
@@ -558,7 +627,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_FOREWARN
+		.ability = ABILITY_FOREWARN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PINSIR] = {
         .species = SPECIES_PINSIR,
@@ -566,7 +636,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_HYPER_CUTTER
+		.ability = ABILITY_HYPER_CUTTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TAUROS] = {
         .species = SPECIES_TAUROS,
@@ -574,7 +645,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SHEER_FORCE
+		.ability = ABILITY_SHEER_FORCE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TAUROS_PALDEA_COMBAT] = {
         .species = SPECIES_TAUROS_PALDEA_COMBAT,
@@ -582,7 +654,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LUM_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TAUROS_PALDEA_BLAZE] = {
         .species = SPECIES_TAUROS_PALDEA_BLAZE,
@@ -590,7 +663,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TAUROS_PALDEA_AQUA] = {
         .species = SPECIES_TAUROS_PALDEA_AQUA,
@@ -598,7 +672,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GYARADOS] = {
         .species = SPECIES_GYARADOS,
@@ -606,7 +681,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LAPRAS] = {
         .species = SPECIES_LAPRAS,
@@ -614,7 +690,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_WATER_ABSORB
+		.ability = ABILITY_WATER_ABSORB,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DITTO] = {
         .species = SPECIES_DITTO,
@@ -622,7 +699,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_RELAXED,
-		.ability = ABILITY_IMPOSTER
+		.ability = ABILITY_IMPOSTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_VAPOREON] = {
         .species = SPECIES_VAPOREON,
@@ -630,7 +708,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_WATER_ABSORB
+		.ability = ABILITY_WATER_ABSORB,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_JOLTEON] = {
         .species = SPECIES_JOLTEON,
@@ -638,7 +717,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_VOLT_ABSORB
+		.ability = ABILITY_VOLT_ABSORB,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FLAREON] = {
         .species = SPECIES_FLAREON,
@@ -646,7 +726,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_TOXIC_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_GUTS
+		.ability = ABILITY_GUTS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_OMASTAR] = {
         .species = SPECIES_OMASTAR,
@@ -654,7 +735,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_POWER_HERB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_WEAK_ARMOR
+		.ability = ABILITY_WEAK_ARMOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KABUTOPS] = {
         .species = SPECIES_KABUTOPS,
@@ -662,7 +744,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_BATTLE_ARMOR
+		.ability = ABILITY_BATTLE_ARMOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_AERODACTYL] = {
         .species = SPECIES_AERODACTYL,
@@ -670,7 +753,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_PRESSURE
+		.ability = ABILITY_PRESSURE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SNORLAX] = {
         .species = SPECIES_SNORLAX,
@@ -678,7 +762,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 0, 252, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_THICK_FAT
+		.ability = ABILITY_THICK_FAT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ARTICUNO] = {
         .species = SPECIES_ARTICUNO,
@@ -686,7 +771,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 170, 0, 170),
         .nature = NATURE_CALM,
-		.ability = ABILITY_PRESSURE
+		.ability = ABILITY_PRESSURE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ARTICUNO_GALAR] = {
         .species = SPECIES_ARTICUNO_GALAR,
@@ -694,7 +780,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_COMPETITIVE
+		.ability = ABILITY_COMPETITIVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ZAPDOS] = {
         .species = SPECIES_ZAPDOS,
@@ -702,7 +789,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_STATIC
+		.ability = ABILITY_STATIC,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ZAPDOS_GALAR] = {
         .species = SPECIES_ZAPDOS_GALAR,
@@ -710,7 +798,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_DEFIANT
+		.ability = ABILITY_DEFIANT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MOLTRES] = {
         .species = SPECIES_MOLTRES,
@@ -718,7 +807,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_FLAME_BODY
+		.ability = ABILITY_FLAME_BODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MOLTRES_GALAR] = {
         .species = SPECIES_MOLTRES_GALAR,
@@ -726,7 +816,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WEAKNESS_POLICY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_BERSERK
+		.ability = ABILITY_BERSERK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DRAGONITE] = {
         .species = SPECIES_DRAGONITE,
@@ -734,7 +825,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_MULTISCALE
+		.ability = ABILITY_MULTISCALE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MEGANIUM] = {
         .species = SPECIES_MEGANIUM,
@@ -742,7 +834,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CALM,
-		.ability = ABILITY_OVERGROW
+		.ability = ABILITY_OVERGROW,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MEGANIUM_EMERIBIAN] = {
         .species = SPECIES_MEGANIUM_EMERIBIAN,
@@ -750,7 +843,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CALM,
-		.ability = ABILITY_DRAGONS_MAW
+		.ability = ABILITY_DRAGONS_MAW,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TYPHLOSION] = {
         .species = SPECIES_TYPHLOSION,
@@ -758,7 +852,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SPECS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_BLAZE
+		.ability = ABILITY_BLAZE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TYPHLOSION_HISUI] = {
         .species = SPECIES_TYPHLOSION_HISUI,
@@ -766,7 +861,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_PRANKSTER
+		.ability = ABILITY_PRANKSTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TYPHLOSION_EMERIBIAN] = {
         .species = SPECIES_TYPHLOSION_EMERIBIAN,
@@ -774,7 +870,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SPECS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_ELECTRIC_SURGE
+		.ability = ABILITY_ELECTRIC_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FERALIGATR] = {
         .species = SPECIES_FERALIGATR,
@@ -782,7 +879,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SHEER_FORCE
+		.ability = ABILITY_SHEER_FORCE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FERALIGATR_EMERIBIAN] = {
         .species = SPECIES_FERALIGATR_EMERIBIAN,
@@ -790,7 +888,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_EARTH_EATER
+		.ability = ABILITY_EARTH_EATER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FURRET] = {
         .species = SPECIES_FURRET,
@@ -798,7 +897,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_FRISK
+		.ability = ABILITY_FRISK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_NOCTOWL] = {
         .species = SPECIES_NOCTOWL,
@@ -806,7 +906,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BLUNDER_POLICY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_TINTED_LENS
+		.ability = ABILITY_TINTED_LENS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_NOCTOWL_EMERIBIAN] = {
         .species = SPECIES_NOCTOWL_EMERIBIAN,
@@ -814,7 +915,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_COMPOUND_EYES
+		.ability = ABILITY_COMPOUND_EYES,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LEDIAN] = {
         .species = SPECIES_LEDIAN,
@@ -822,7 +924,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_IRON_FIST
+		.ability = ABILITY_IRON_FIST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ARIADOS] = {
         .species = SPECIES_ARIADOS,
@@ -830,7 +933,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SWARM
+		.ability = ABILITY_SWARM,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ARIADOS_EMERIBIAN] = {
         .species = SPECIES_ARIADOS_EMERIBIAN,
@@ -838,7 +942,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_MAGNET,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_TRANSISTOR
+		.ability = ABILITY_TRANSISTOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CROBAT] = {
         .species = SPECIES_CROBAT,
@@ -846,7 +951,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_INFILTRATOR
+		.ability = ABILITY_INFILTRATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LANTURN] = {
         .species = SPECIES_LANTURN,
@@ -854,7 +960,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_CALM,
-		.ability = ABILITY_ELECTRIC_SURGE
+		.ability = ABILITY_ELECTRIC_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_XATU] = {
         .species = SPECIES_XATU,
@@ -862,7 +969,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_MAGIC_BOUNCE
+		.ability = ABILITY_MAGIC_BOUNCE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_AMPHAROS] = {
         .species = SPECIES_AMPHAROS,
@@ -870,7 +978,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 0, 170, 170),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_STATIC
+		.ability = ABILITY_STATIC,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BELLOSSOM] = {
         .species = SPECIES_BELLOSSOM,
@@ -878,7 +987,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_KEE_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_HEALER
+		.ability = ABILITY_HEALER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BELLOSSOM_EMERIBIAN] = {
         .species = SPECIES_BELLOSSOM_EMERIBIAN,
@@ -886,7 +996,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_HOSPITALITY
+		.ability = ABILITY_HOSPITALITY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_AZUMARILL] = {
         .species = SPECIES_AZUMARILL,
@@ -894,7 +1005,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_HUGE_POWER
+		.ability = ABILITY_HUGE_POWER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SUDOWOODO] = {
         .species = SPECIES_SUDOWOODO,
@@ -902,7 +1014,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_ROCK_HEAD
+		.ability = ABILITY_ROCK_HEAD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_POLITOED] = {
         .species = SPECIES_POLITOED,
@@ -910,7 +1023,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_DAMP_ROCK,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_DRIZZLE
+		.ability = ABILITY_DRIZZLE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_JUMPLUFF] = {
         .species = SPECIES_JUMPLUFF,
@@ -918,7 +1032,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_NONE,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_INFILTRATOR
+		.ability = ABILITY_INFILTRATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_JUMPLUFF_EMERIBIAN] = {
         .species = SPECIES_JUMPLUFF_EMERIBIAN,
@@ -926,7 +1041,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BABIRI_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SNOW_WARNING
+		.ability = ABILITY_SNOW_WARNING,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_QUAGSIRE] = {
         .species = SPECIES_QUAGSIRE,
@@ -934,7 +1050,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_UNAWARE
+		.ability = ABILITY_UNAWARE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ESPEON] = {
         .species = SPECIES_ESPEON,
@@ -942,7 +1059,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_EXPERT_BELT,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_MAGIC_BOUNCE
+		.ability = ABILITY_MAGIC_BOUNCE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_UMBREON] = {
         .species = SPECIES_UMBREON,
@@ -950,7 +1068,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CALM,
-		.ability = ABILITY_OPPORTUNIST
+		.ability = ABILITY_OPPORTUNIST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SLOWKING] = {
         .species = SPECIES_SLOWKING,
@@ -958,7 +1077,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_SASSY,
-		.ability = ABILITY_REGENERATOR
+		.ability = ABILITY_REGENERATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SLOWKING_GALAR] = {
         .species = SPECIES_SLOWKING_GALAR,
@@ -966,7 +1086,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_CALM,
-		.ability = ABILITY_REGENERATOR
+		.ability = ABILITY_REGENERATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WOBBUFFET] = {
         .species = SPECIES_WOBBUFFET,
@@ -974,7 +1095,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CALM,
-		.ability = ABILITY_SHADOW_TAG
+		.ability = ABILITY_SHADOW_TAG,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FORRETRESS] = {
         .species = SPECIES_FORRETRESS,
@@ -982,7 +1104,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_RED_CARD,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_RELAXED,
-		.ability = ABILITY_STURDY
+		.ability = ABILITY_STURDY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_STEELIX] = {
         .species = SPECIES_STEELIX,
@@ -990,7 +1113,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_STURDY
+		.ability = ABILITY_STURDY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GRANBULL] = {
         .species = SPECIES_GRANBULL,
@@ -998,7 +1122,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SCIZOR] = {
         .species = SPECIES_SCIZOR,
@@ -1006,7 +1131,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_PROTECTIVE_PADS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_TECHNICIAN
+		.ability = ABILITY_TECHNICIAN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SHUCKLE] = {
         .species = SPECIES_SHUCKLE,
@@ -1014,7 +1140,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_RED_CARD,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_STURDY
+		.ability = ABILITY_STURDY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SHUCKLE_FRIBIAN] = {
         .species = SPECIES_SHUCKLE_FRIBIAN,
@@ -1022,7 +1149,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 0, 252, 0, 0, 252),
         .nature = NATURE_SASSY,
-		.ability = ABILITY_HEATPROOF
+		.ability = ABILITY_HEATPROOF,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HERACROSS] = {
         .species = SPECIES_HERACROSS,
@@ -1030,7 +1158,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FLAME_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_GUTS
+		.ability = ABILITY_GUTS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MAGCARGO] = {
         .species = SPECIES_MAGCARGO,
@@ -1038,7 +1167,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CALM,
-		.ability = ABILITY_FLAME_BODY
+		.ability = ABILITY_FLAME_BODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MAGCARGO_EMERIBIAN] = {
         .species = SPECIES_MAGCARGO_EMERIBIAN,
@@ -1046,7 +1176,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SHUCA_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_BATTLE_ARMOR
+		.ability = ABILITY_BATTLE_ARMOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CORSOLA] = {
         .species = SPECIES_CORSOLA,
@@ -1054,7 +1185,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_REGENERATOR
+		.ability = ABILITY_REGENERATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_OCTILLERY] = {
         .species = SPECIES_OCTILLERY,
@@ -1062,7 +1194,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_SUCTION_CUPS
+		.ability = ABILITY_SUCTION_CUPS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_OCTILLERY_FRIBIAN] = {
         .species = SPECIES_OCTILLERY_FRIBIAN,
@@ -1070,7 +1203,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SCOPE_LENS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_SNIPER
+		.ability = ABILITY_SNIPER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MANTINE] = {
         .species = SPECIES_MANTINE,
@@ -1078,7 +1212,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_WATER_ABSORB
+		.ability = ABILITY_WATER_ABSORB,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SKARMORY] = {
         .species = SPECIES_SKARMORY,
@@ -1086,7 +1221,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_STURDY
+		.ability = ABILITY_STURDY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SKARMORY_FRIBIAN] = {
         .species = SPECIES_SKARMORY_FRIBIAN,
@@ -1094,7 +1230,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_AIR_BALLOON,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SPEED_BOOST
+		.ability = ABILITY_SPEED_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HOUNDOOM] = {
         .species = SPECIES_HOUNDOOM,
@@ -1102,7 +1239,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_FLASH_FIRE
+		.ability = ABILITY_FLASH_FIRE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KINGDRA] = {
         .species = SPECIES_KINGDRA,
@@ -1110,7 +1248,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SCOPE_LENS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_SNIPER
+		.ability = ABILITY_SNIPER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DONPHAN] = {
         .species = SPECIES_DONPHAN,
@@ -1118,7 +1257,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_STURDY
+		.ability = ABILITY_STURDY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SMEARGLE] = {
         .species = SPECIES_SMEARGLE,
@@ -1126,7 +1266,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 252, 252, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_TECHNICIAN
+		.ability = ABILITY_TECHNICIAN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HITMONTOP] = {
         .species = SPECIES_HITMONTOP,
@@ -1134,7 +1275,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_TECHNICIAN
+		.ability = ABILITY_TECHNICIAN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MILTANK] = {
         .species = SPECIES_MILTANK,
@@ -1142,7 +1284,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_THICK_FAT
+		.ability = ABILITY_THICK_FAT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BLISSEY] = {
         .species = SPECIES_BLISSEY,
@@ -1150,7 +1293,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_NATURAL_CURE
+		.ability = ABILITY_NATURAL_CURE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_RAIKOU] = {
         .species = SPECIES_RAIKOU,
@@ -1158,7 +1302,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_INNER_FOCUS
+		.ability = ABILITY_INNER_FOCUS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ENTEI] = {
         .species = SPECIES_ENTEI,
@@ -1166,7 +1311,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_INNER_FOCUS
+		.ability = ABILITY_INNER_FOCUS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SUICUNE] = {
         .species = SPECIES_SUICUNE,
@@ -1174,7 +1320,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_PRESSURE
+		.ability = ABILITY_PRESSURE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TYRANITAR] = {
         .species = SPECIES_TYRANITAR,
@@ -1182,7 +1329,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SAND_STREAM
+		.ability = ABILITY_SAND_STREAM,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SCEPTILE] = {
         .species = SPECIES_SCEPTILE,
@@ -1190,7 +1338,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_OCCA_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_OVERGROW
+		.ability = ABILITY_OVERGROW,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BLAZIKEN] = {
         .species = SPECIES_BLAZIKEN,
@@ -1198,7 +1347,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SPEED_BOOST
+		.ability = ABILITY_SPEED_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SWAMPERT] = {
         .species = SPECIES_SWAMPERT,
@@ -1206,7 +1356,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_SASSY,
-		.ability = ABILITY_TORRENT
+		.ability = ABILITY_TORRENT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MIGHTYENA] = {
         .species = SPECIES_MIGHTYENA,
@@ -1214,7 +1365,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_MOXIE
+		.ability = ABILITY_MOXIE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MIGHTYENA_EMERIBIAN] = {
         .species = SPECIES_MIGHTYENA_EMERIBIAN,
@@ -1222,7 +1374,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_STRONG_JAW
+		.ability = ABILITY_STRONG_JAW,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LINOONE] = {
         .species = SPECIES_LINOONE,
@@ -1230,7 +1383,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FIGY_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 170, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_GLUTTONY
+		.ability = ABILITY_GLUTTONY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BEAUTIFLY] = {
         .species = SPECIES_BEAUTIFLY,
@@ -1238,7 +1392,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_AERILATE
+		.ability = ABILITY_AERILATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DUSTOX] = {
         .species = SPECIES_DUSTOX,
@@ -1246,7 +1401,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BLACK_SLUDGE,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_SHIELD_DUST
+		.ability = ABILITY_SHIELD_DUST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LUDICOLO] = {
         .species = SPECIES_LUDICOLO,
@@ -1254,7 +1410,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 252, 252, 0, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_SWIFT_SWIM
+		.ability = ABILITY_SWIFT_SWIM,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SHIFTRY] = {
         .species = SPECIES_SHIFTRY,
@@ -1262,7 +1419,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_CHLOROPHYLL
+		.ability = ABILITY_CHLOROPHYLL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SWELLOW] = {
         .species = SPECIES_SWELLOW,
@@ -1270,7 +1428,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FLAME_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_GUTS
+		.ability = ABILITY_GUTS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PELIPPER] = {
         .species = SPECIES_PELIPPER,
@@ -1278,7 +1437,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_DAMP_ROCK,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_DRIZZLE
+		.ability = ABILITY_DRIZZLE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GARDEVOIR] = {
         .species = SPECIES_GARDEVOIR,
@@ -1286,7 +1446,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_TRACE
+		.ability = ABILITY_TRACE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GARDEVOIR_EMERIBIAN] = {
         .species = SPECIES_GARDEVOIR_EMERIBIAN,
@@ -1294,7 +1455,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_MAGIC_GUARD
+		.ability = ABILITY_MAGIC_GUARD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MASQUERAIN] = {
         .species = SPECIES_MASQUERAIN,
@@ -1302,7 +1464,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BRELOOM] = {
         .species = SPECIES_BRELOOM,
@@ -1310,7 +1473,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_TECHNICIAN
+		.ability = ABILITY_TECHNICIAN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BRELOOM_FRIBIAN] = {
         .species = SPECIES_BRELOOM_FRIBIAN,
@@ -1318,7 +1482,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAT_ROCK,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_DROUGHT
+		.ability = ABILITY_DROUGHT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SLAKING] = {
         .species = SPECIES_SLAKING,
@@ -1326,7 +1491,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_TRUANT
+		.ability = ABILITY_TRUANT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_NINJASK] = {
         .species = SPECIES_NINJASK,
@@ -1334,7 +1500,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_NONE,
         .ev = TRAINER_PARTY_EVS(0, 170, 170, 170, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_SPEED_BOOST
+		.ability = ABILITY_SPEED_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SHEDINJA] = {
         .species = SPECIES_SHEDINJA,
@@ -1342,7 +1509,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_HASTY,
-		.ability = ABILITY_WONDER_GUARD
+		.ability = ABILITY_WONDER_GUARD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_EXPLOUD] = {
         .species = SPECIES_EXPLOUD,
@@ -1350,7 +1518,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SPECS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_SCRAPPY
+		.ability = ABILITY_SCRAPPY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HARIYAMA] = {
         .species = SPECIES_HARIYAMA,
@@ -1358,7 +1527,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 0, 252),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_THICK_FAT
+		.ability = ABILITY_THICK_FAT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DELCATTY] = {
         .species = SPECIES_DELCATTY,
@@ -1366,7 +1536,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_NORMALIZE
+		.ability = ABILITY_NORMALIZE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SABLEYE] = {
         .species = SPECIES_SABLEYE,
@@ -1374,7 +1545,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_PRANKSTER
+		.ability = ABILITY_PRANKSTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MAWILE] = {
         .species = SPECIES_MAWILE,
@@ -1382,7 +1554,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_AGGRON] = {
         .species = SPECIES_AGGRON,
@@ -1390,7 +1563,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_ROCK_HEAD
+		.ability = ABILITY_ROCK_HEAD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MEDICHAM] = {
         .species = SPECIES_MEDICHAM,
@@ -1398,7 +1572,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_PURE_POWER
+		.ability = ABILITY_PURE_POWER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MANECTRIC] = {
         .species = SPECIES_MANECTRIC,
@@ -1406,7 +1581,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SPECS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_LIGHTNING_ROD
+		.ability = ABILITY_LIGHTNING_ROD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PLUSLE] = {
         .species = SPECIES_PLUSLE,
@@ -1414,7 +1590,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_ELECTRIC_SURGE
+		.ability = ABILITY_ELECTRIC_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MINUN] = {
         .species = SPECIES_MINUN,
@@ -1422,7 +1599,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ELECTRIC_SEED,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_ELECTRIC_SURGE
+		.ability = ABILITY_ELECTRIC_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_VOLBEAT] = {
         .species = SPECIES_VOLBEAT,
@@ -1430,7 +1608,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_DAMP_ROCK,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_RELAXED,
-		.ability = ABILITY_PRANKSTER
+		.ability = ABILITY_PRANKSTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ILLUMISE] = {
         .species = SPECIES_ILLUMISE,
@@ -1438,7 +1617,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAT_ROCK,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_RELAXED,
-		.ability = ABILITY_PRANKSTER
+		.ability = ABILITY_PRANKSTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SWALOT] = {
         .species = SPECIES_SWALOT,
@@ -1446,7 +1626,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BLACK_SLUDGE,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_LIQUID_OOZE
+		.ability = ABILITY_LIQUID_OOZE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SHARPEDO] = {
         .species = SPECIES_SHARPEDO,
@@ -1454,7 +1635,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_SPEED_BOOST
+		.ability = ABILITY_SPEED_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WAILORD] = {
         .species = SPECIES_WAILORD,
@@ -1462,7 +1644,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 0, 252, 0, 0, 252),
         .nature = NATURE_CALM,
-		.ability = ABILITY_PRESSURE
+		.ability = ABILITY_PRESSURE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CAMERUPT] = {
         .species = SPECIES_CAMERUPT,
@@ -1470,7 +1653,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CALM,
-		.ability = ABILITY_SOLID_ROCK
+		.ability = ABILITY_SOLID_ROCK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TORKOAL] = {
         .species = SPECIES_TORKOAL,
@@ -1478,7 +1662,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAT_ROCK,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_DROUGHT
+		.ability = ABILITY_DROUGHT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GRUMPIG] = {
         .species = SPECIES_GRUMPIG,
@@ -1486,7 +1671,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_THICK_FAT
+		.ability = ABILITY_THICK_FAT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SPINDA] = {
         .species = SPECIES_SPINDA,
@@ -1494,7 +1680,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_BRAVE,
-		.ability = ABILITY_CONTRARY
+		.ability = ABILITY_CONTRARY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FLYGON] = {
         .species = SPECIES_FLYGON,
@@ -1502,7 +1689,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LUM_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_BRAVE,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CACTURNE] = {
         .species = SPECIES_CACTURNE,
@@ -1510,7 +1698,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_ROUGH_SKIN
+		.ability = ABILITY_ROUGH_SKIN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ALTARIA] = {
         .species = SPECIES_ALTARIA,
@@ -1518,7 +1707,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_FLUFFY
+		.ability = ABILITY_FLUFFY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ZANGOOSE] = {
         .species = SPECIES_ZANGOOSE,
@@ -1526,7 +1716,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_TOXIC_ORB,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_TOXIC_BOOST
+		.ability = ABILITY_TOXIC_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SEVIPER] = {
         .species = SPECIES_SEVIPER,
@@ -1534,7 +1725,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_RASH,
-		.ability = ABILITY_MERCILESS
+		.ability = ABILITY_MERCILESS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LUNATONE] = {
         .species = SPECIES_LUNATONE,
@@ -1542,7 +1734,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_POWER_HERB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SOLROCK] = {
         .species = SPECIES_SOLROCK,
@@ -1550,7 +1743,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WHISCASH] = {
         .species = SPECIES_WHISCASH,
@@ -1558,7 +1752,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CALM,
-		.ability = ABILITY_OBLIVIOUS
+		.ability = ABILITY_OBLIVIOUS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CRAWDAUNT] = {
         .species = SPECIES_CRAWDAUNT,
@@ -1566,7 +1761,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_ADAPTABILITY
+		.ability = ABILITY_ADAPTABILITY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CLAYDOL] = {
         .species = SPECIES_CLAYDOL,
@@ -1574,7 +1770,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_COLBUR_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CRADILY] = {
         .species = SPECIES_CRADILY,
@@ -1582,7 +1779,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_SAP_SIPPER
+		.ability = ABILITY_SAP_SIPPER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ARMALDO] = {
         .species = SPECIES_ARMALDO,
@@ -1590,7 +1788,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_SHARPNESS
+		.ability = ABILITY_SHARPNESS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MILOTIC] = {
         .species = SPECIES_MILOTIC,
@@ -1598,7 +1797,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_MARVEL_SCALE
+		.ability = ABILITY_MARVEL_SCALE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CASTFORM] = {
         .species = SPECIES_CASTFORM,
@@ -1606,7 +1806,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WATER_GEM,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_FORECAST
+		.ability = ABILITY_FORECAST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KECLEON] = {
         .species = SPECIES_KECLEON,
@@ -1614,7 +1815,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 170, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_MOODY
+		.ability = ABILITY_MOODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BANETTE] = {
         .species = SPECIES_BANETTE,
@@ -1622,7 +1824,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_FRISK
+		.ability = ABILITY_FRISK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TROPIUS] = {
         .species = SPECIES_TROPIUS,
@@ -1630,7 +1833,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LUM_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_HARVEST
+		.ability = ABILITY_HARVEST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CHIMECHO] = {
         .species = SPECIES_CHIMECHO,
@@ -1638,7 +1842,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_COLBUR_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 0, 252),
         .nature = NATURE_CALM,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ABSOL] = {
         .species = SPECIES_ABSOL,
@@ -1646,7 +1851,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BLACK_GLASSES,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_JUSTIFIED
+		.ability = ABILITY_JUSTIFIED,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GLALIE] = {
         .species = SPECIES_GLALIE,
@@ -1654,7 +1860,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_MOODY
+		.ability = ABILITY_MOODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WALREIN] = {
         .species = SPECIES_WALREIN,
@@ -1662,7 +1869,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_THICK_FAT
+		.ability = ABILITY_THICK_FAT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HUNTAIL] = {
         .species = SPECIES_HUNTAIL,
@@ -1670,7 +1878,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WHITE_HERB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_WATER_VEIL
+		.ability = ABILITY_WATER_VEIL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GOREBYSS] = {
         .species = SPECIES_GOREBYSS,
@@ -1678,7 +1887,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WHITE_HERB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_STORM_DRAIN
+		.ability = ABILITY_STORM_DRAIN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_RELICANTH] = {
         .species = SPECIES_RELICANTH,
@@ -1686,7 +1896,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_ROCK_HEAD
+		.ability = ABILITY_ROCK_HEAD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LUVDISC] = {
         .species = SPECIES_LUVDISC,
@@ -1694,7 +1905,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_DAMP_ROCK,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_DRIZZLE
+		.ability = ABILITY_DRIZZLE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SALAMENCE] = {
         .species = SPECIES_SALAMENCE,
@@ -1702,7 +1914,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_METAGROSS] = {
         .species = SPECIES_METAGROSS,
@@ -1710,7 +1923,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WEAKNESS_POLICY,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_CLEAR_BODY
+		.ability = ABILITY_CLEAR_BODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_REGIROCK] = {
         .species = SPECIES_REGIROCK,
@@ -1718,7 +1932,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_CLEAR_BODY
+		.ability = ABILITY_CLEAR_BODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_REGICE] = {
         .species = SPECIES_REGICE,
@@ -1726,7 +1941,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_CLEAR_BODY
+		.ability = ABILITY_CLEAR_BODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_REGISTEEL] = {
         .species = SPECIES_REGISTEEL,
@@ -1734,7 +1950,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_CLEAR_BODY
+		.ability = ABILITY_CLEAR_BODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LATIAS] = {
         .species = SPECIES_LATIAS,
@@ -1742,7 +1959,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SOUL_DEW,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LATIOS] = {
         .species = SPECIES_LATIOS,
@@ -1750,7 +1968,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SOUL_DEW,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TORTERRA] = {
         .species = SPECIES_TORTERRA,
@@ -1758,7 +1977,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_MOLD_BREAKER
+		.ability = ABILITY_MOLD_BREAKER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_INFERNAPE] = {
         .species = SPECIES_INFERNAPE,
@@ -1766,7 +1986,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_HASTY,
-		.ability = ABILITY_BLAZE
+		.ability = ABILITY_BLAZE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_EMPOLEON] = {
         .species = SPECIES_EMPOLEON,
@@ -1774,7 +1995,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SHUCA_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CALM,
-		.ability = ABILITY_TORRENT
+		.ability = ABILITY_TORRENT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_STARAPTOR] = {
         .species = SPECIES_STARAPTOR,
@@ -1782,7 +2004,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_RECKLESS
+		.ability = ABILITY_RECKLESS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BIBAREL] = {
         .species = SPECIES_BIBAREL,
@@ -1790,7 +2013,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_MOODY
+		.ability = ABILITY_MOODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KRICKETUNE] = {
         .species = SPECIES_KRICKETUNE,
@@ -1798,7 +2022,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_TECHNICIAN
+		.ability = ABILITY_TECHNICIAN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LUXRAY] = {
         .species = SPECIES_LUXRAY,
@@ -1806,7 +2031,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FLAME_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_GUTS
+		.ability = ABILITY_GUTS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LUXRAY_EMERIBIAN] = {
         .species = SPECIES_LUXRAY_EMERIBIAN,
@@ -1814,7 +2040,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_TWISTED_SPOON,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_PRANKSTER
+		.ability = ABILITY_PRANKSTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ROSERADE] = {
         .species = SPECIES_ROSERADE,
@@ -1822,7 +2049,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BLACK_SLUDGE,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_NATURAL_CURE
+		.ability = ABILITY_NATURAL_CURE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_RAMPARDOS] = {
         .species = SPECIES_RAMPARDOS,
@@ -1830,7 +2058,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_WEAK_ARMOR
+		.ability = ABILITY_WEAK_ARMOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BASTIODON] = {
         .species = SPECIES_BASTIODON,
@@ -1838,7 +2067,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_STURDY
+		.ability = ABILITY_STURDY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WORMADAM] = {
         .species = SPECIES_WORMADAM,
@@ -1846,7 +2076,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_SEED_SOWER
+		.ability = ABILITY_SEED_SOWER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MOTHIM] = {
         .species = SPECIES_MOTHIM,
@@ -1854,7 +2085,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SPECS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_RASH,
-		.ability = ABILITY_TINTED_LENS
+		.ability = ABILITY_TINTED_LENS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_VESPIQUEN] = {
         .species = SPECIES_VESPIQUEN,
@@ -1862,7 +2094,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_RELAXED,
-		.ability = ABILITY_PRESSURE
+		.ability = ABILITY_PRESSURE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PACHIRISU] = {
         .species = SPECIES_PACHIRISU,
@@ -1870,7 +2103,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 170, 0, 170),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_VOLT_ABSORB
+		.ability = ABILITY_VOLT_ABSORB,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FLOATZEL] = {
         .species = SPECIES_FLOATZEL,
@@ -1878,7 +2112,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CHERRIM] = {
         .species = SPECIES_CHERRIM,
@@ -1886,7 +2121,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_NAIVE,
-		.ability = ABILITY_FLOWER_GIFT
+		.ability = ABILITY_FLOWER_GIFT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GASTRODON] = {
         .species = SPECIES_GASTRODON,
@@ -1894,7 +2130,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_CALM,
-		.ability = ABILITY_STORM_DRAIN
+		.ability = ABILITY_STORM_DRAIN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_AMBIPOM] = {
         .species = SPECIES_AMBIPOM,
@@ -1902,7 +2139,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_TECHNICIAN
+		.ability = ABILITY_TECHNICIAN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DRIFBLIM] = {
         .species = SPECIES_DRIFBLIM,
@@ -1910,7 +2148,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_AFTERMATH
+		.ability = ABILITY_AFTERMATH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DRIFBLIM_EMERIBIAN] = {
         .species = SPECIES_DRIFBLIM_EMERIBIAN,
@@ -1918,7 +2157,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHARCOAL,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_MOODY
+		.ability = ABILITY_MOODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LOPUNNY] = {
         .species = SPECIES_LOPUNNY,
@@ -1926,7 +2166,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_KLUTZ
+		.ability = ABILITY_KLUTZ,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LOPUNNY_EMERIBIAN] = {
         .species = SPECIES_LOPUNNY_EMERIBIAN,
@@ -1934,7 +2175,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_CONTRARY
+		.ability = ABILITY_CONTRARY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MISMAGIUS] = {
         .species = SPECIES_MISMAGIUS,
@@ -1942,7 +2184,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_COLBUR_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HONCHKROW] = {
         .species = SPECIES_HONCHKROW,
@@ -1950,7 +2193,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_MOXIE
+		.ability = ABILITY_MOXIE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PURUGLY] = {
         .species = SPECIES_PURUGLY,
@@ -1958,7 +2202,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SILK_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_DEFIANT
+		.ability = ABILITY_DEFIANT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SKUNTANK] = {
         .species = SPECIES_SKUNTANK,
@@ -1966,7 +2211,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_AFTERMATH
+		.ability = ABILITY_AFTERMATH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BRONZONG] = {
         .species = SPECIES_BRONZONG,
@@ -1974,7 +2220,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CHATOT] = {
         .species = SPECIES_CHATOT,
@@ -1982,7 +2229,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_TANGLED_FEET
+		.ability = ABILITY_TANGLED_FEET,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SPIRITOMB] = {
         .species = SPECIES_SPIRITOMB,
@@ -1990,7 +2238,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_CALM,
-		.ability = ABILITY_PRESSURE
+		.ability = ABILITY_PRESSURE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GARCHOMP] = {
         .species = SPECIES_GARCHOMP,
@@ -1998,7 +2247,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CLEAR_AMULET,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_ROUGH_SKIN
+		.ability = ABILITY_ROUGH_SKIN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LUCARIO] = {
         .species = SPECIES_LUCARIO,
@@ -2006,7 +2256,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_JUSTIFIED
+		.ability = ABILITY_JUSTIFIED,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HIPPOWDON] = {
         .species = SPECIES_HIPPOWDON,
@@ -2014,7 +2265,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_SAND_STREAM
+		.ability = ABILITY_SAND_STREAM,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DRAPION] = {
         .species = SPECIES_DRAPION,
@@ -2022,7 +2274,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SHUCA_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_BATTLE_ARMOR
+		.ability = ABILITY_BATTLE_ARMOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TOXICROAK] = {
         .species = SPECIES_TOXICROAK,
@@ -2030,7 +2283,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BLACK_SLUDGE,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_POISON_TOUCH
+		.ability = ABILITY_POISON_TOUCH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CARNIVINE] = {
         .species = SPECIES_CARNIVINE,
@@ -2038,7 +2292,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 170, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LUMINEON] = {
         .species = SPECIES_LUMINEON,
@@ -2046,7 +2301,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_STORM_DRAIN
+		.ability = ABILITY_STORM_DRAIN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ABOMASNOW] = {
         .species = SPECIES_ABOMASNOW,
@@ -2054,7 +2310,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BABIRI_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_SNOW_WARNING
+		.ability = ABILITY_SNOW_WARNING,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WEAVILE] = {
         .species = SPECIES_WEAVILE,
@@ -2062,7 +2319,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_DARK_AURA
+		.ability = ABILITY_DARK_AURA,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MAGNEZONE] = {
         .species = SPECIES_MAGNEZONE,
@@ -2070,7 +2328,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_MAGNET_PULL
+		.ability = ABILITY_MAGNET_PULL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LICKILICKY] = {
         .species = SPECIES_LICKILICKY,
@@ -2078,7 +2337,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_OBLIVIOUS
+		.ability = ABILITY_OBLIVIOUS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_RHYPERIOR] = {
         .species = SPECIES_RHYPERIOR,
@@ -2086,7 +2346,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WEAKNESS_POLICY,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_SOLID_ROCK
+		.ability = ABILITY_SOLID_ROCK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TANGROWTH] = {
         .species = SPECIES_TANGROWTH,
@@ -2094,7 +2355,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_RELAXED,
-		.ability = ABILITY_REGENERATOR
+		.ability = ABILITY_REGENERATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ELECTIVIRE] = {
         .species = SPECIES_ELECTIVIRE,
@@ -2102,7 +2364,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_NAIVE,
-		.ability = ABILITY_TERAVOLT
+		.ability = ABILITY_TERAVOLT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MAGMORTAR] = {
         .species = SPECIES_MAGMORTAR,
@@ -2110,7 +2373,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_TURBOBLAZE
+		.ability = ABILITY_TURBOBLAZE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TOGEKISS] = {
         .species = SPECIES_TOGEKISS,
@@ -2118,7 +2382,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SCOPE_LENS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_SUPER_LUCK
+		.ability = ABILITY_SUPER_LUCK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_YANMEGA] = {
         .species = SPECIES_YANMEGA,
@@ -2126,7 +2391,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SCOPE_LENS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_TINTED_LENS
+		.ability = ABILITY_TINTED_LENS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LEAFEON] = {
         .species = SPECIES_LEAFEON,
@@ -2134,7 +2400,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_SAP_SIPPER
+		.ability = ABILITY_SAP_SIPPER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GLACEON] = {
         .species = SPECIES_GLACEON,
@@ -2142,7 +2409,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_TRIAGE
+		.ability = ABILITY_TRIAGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GLISCOR] = {
         .species = SPECIES_GLISCOR,
@@ -2150,7 +2418,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_TOXIC_ORB,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_POISON_HEAL
+		.ability = ABILITY_POISON_HEAL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MAMOSWINE] = {
         .species = SPECIES_MAMOSWINE,
@@ -2158,7 +2427,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_OBLIVIOUS
+		.ability = ABILITY_OBLIVIOUS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PORYGON_Z] = {
         .species = SPECIES_PORYGON_Z,
@@ -2166,7 +2436,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_ADAPTABILITY
+		.ability = ABILITY_ADAPTABILITY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GALLADE] = {
         .species = SPECIES_GALLADE,
@@ -2174,7 +2445,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SHARPNESS
+		.ability = ABILITY_SHARPNESS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PROBOPASS] = {
         .species = SPECIES_PROBOPASS,
@@ -2182,7 +2454,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_AIR_BALLOON,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 170, 170, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_MAGNET_PULL
+		.ability = ABILITY_MAGNET_PULL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DUSKNOIR] = {
         .species = SPECIES_DUSKNOIR,
@@ -2190,7 +2463,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 170, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_PRESSURE
+		.ability = ABILITY_PRESSURE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FROSLASS] = {
         .species = SPECIES_FROSLASS,
@@ -2198,7 +2472,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_CURSED_BODY
+		.ability = ABILITY_CURSED_BODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ROTOM] = {
         .species = SPECIES_ROTOM,
@@ -2206,7 +2481,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ROTOM_FAN] = {
         .species = SPECIES_ROTOM_FAN,
@@ -2214,7 +2490,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_WIND_POWER
+		.ability = ABILITY_WIND_POWER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ROTOM_FROST] = {
         .species = SPECIES_ROTOM_FROST,
@@ -2222,7 +2499,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ROTOM_HEAT] = {
         .species = SPECIES_ROTOM_HEAT,
@@ -2230,7 +2508,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SAFETY_GOGGLES,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ROTOM_MOW] = {
         .species = SPECIES_ROTOM_MOW,
@@ -2238,7 +2517,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_SEED_SOWER
+		.ability = ABILITY_SEED_SOWER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ROTOM_WASH] = {
         .species = SPECIES_ROTOM_WASH,
@@ -2246,7 +2526,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_UXIE] = {
         .species = SPECIES_UXIE,
@@ -2254,7 +2535,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_MENTAL_HERB,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_RELAXED,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MESPRIT] = {
         .species = SPECIES_MESPRIT,
@@ -2262,7 +2544,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_COLBUR_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_AZELF] = {
         .species = SPECIES_AZELF,
@@ -2270,7 +2553,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_EXPERT_BELT,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HEATRAN] = {
         .species = SPECIES_HEATRAN,
@@ -2278,7 +2562,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 170, 170, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_FLASH_FIRE
+		.ability = ABILITY_FLASH_FIRE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CRESSELIA] = {
         .species = SPECIES_CRESSELIA,
@@ -2286,7 +2571,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SAFETY_GOGGLES,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_SASSY,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PHIONE] = {
         .species = SPECIES_PHIONE,
@@ -2294,7 +2580,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_DAMP_ROCK,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_RELAXED,
-		.ability = ABILITY_HYDRATION
+		.ability = ABILITY_HYDRATION,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SERPERIOR] = {
         .species = SPECIES_SERPERIOR,
@@ -2302,7 +2589,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_CONTRARY
+		.ability = ABILITY_CONTRARY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_EMBOAR] = {
         .species = SPECIES_EMBOAR,
@@ -2310,7 +2598,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_RECKLESS
+		.ability = ABILITY_RECKLESS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SAMUROTT] = {
         .species = SPECIES_SAMUROTT,
@@ -2318,7 +2607,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_QUICK_DRAW
+		.ability = ABILITY_QUICK_DRAW,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SAMUROTT_HISUI] = {
         .species = SPECIES_SAMUROTT_HISUI,
@@ -2326,7 +2616,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_MYSTIC_WATER,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SHARPNESS
+		.ability = ABILITY_SHARPNESS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WATCHOG] = {
         .species = SPECIES_WATCHOG,
@@ -2334,7 +2625,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_ANALYTIC
+		.ability = ABILITY_ANALYTIC,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_STOUTLAND] = {
         .species = SPECIES_STOUTLAND,
@@ -2342,7 +2634,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SILK_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 0, 252),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_SCRAPPY
+		.ability = ABILITY_SCRAPPY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LIEPARD] = {
         .species = SPECIES_LIEPARD,
@@ -2350,7 +2643,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_PRANKSTER
+		.ability = ABILITY_PRANKSTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SIMISAGE] = {
         .species = SPECIES_SIMISAGE,
@@ -2358,7 +2652,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_NAIVE,
-		.ability = ABILITY_OVERGROW
+		.ability = ABILITY_OVERGROW,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SIMISEAR] = {
         .species = SPECIES_SIMISEAR,
@@ -2366,7 +2661,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHARCOAL,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_BLAZE
+		.ability = ABILITY_BLAZE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SIMIPOUR] = {
         .species = SPECIES_SIMIPOUR,
@@ -2374,7 +2670,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_MYSTIC_WATER,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_TORRENT
+		.ability = ABILITY_TORRENT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MUSHARNA] = {
         .species = SPECIES_MUSHARNA,
@@ -2382,7 +2679,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_KEE_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_SYNCHRONIZE
+		.ability = ABILITY_SYNCHRONIZE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_UNFEZANT] = {
         .species = SPECIES_UNFEZANT,
@@ -2390,7 +2688,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SUPER_LUCK
+		.ability = ABILITY_SUPER_LUCK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ZEBSTRIKA] = {
         .species = SPECIES_ZEBSTRIKA,
@@ -2398,7 +2697,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_SAP_SIPPER
+		.ability = ABILITY_SAP_SIPPER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GIGALITH] = {
         .species = SPECIES_GIGALITH,
@@ -2406,7 +2706,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_SAND_STREAM
+		.ability = ABILITY_SAND_STREAM,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GIGALITH_FRIBIAN] = {
         .species = SPECIES_GIGALITH_FRIBIAN,
@@ -2414,7 +2715,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ZOOM_LENS,
         .ev = TRAINER_PARTY_EVS(0, 252, 252, 0, 0, 0),
         .nature = NATURE_RELAXED,
-		.ability = ABILITY_STURDY
+		.ability = ABILITY_STURDY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SWOOBAT] = {
         .species = SPECIES_SWOOBAT,
@@ -2422,7 +2724,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_KEE_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 252, 252, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_SIMPLE
+		.ability = ABILITY_SIMPLE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_EXCADRILL] = {
         .species = SPECIES_EXCADRILL,
@@ -2430,7 +2733,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_MOLD_BREAKER
+		.ability = ABILITY_MOLD_BREAKER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_AUDINO] = {
         .species = SPECIES_AUDINO,
@@ -2438,7 +2742,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_REGENERATOR
+		.ability = ABILITY_REGENERATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CONKELDURR] = {
         .species = SPECIES_CONKELDURR,
@@ -2446,7 +2751,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FLAME_ORB,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_GUTS
+		.ability = ABILITY_GUTS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SEISMITOAD] = {
         .species = SPECIES_SEISMITOAD,
@@ -2454,7 +2760,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_POISON_TOUCH
+		.ability = ABILITY_POISON_TOUCH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_THROH] = {
         .species = SPECIES_THROH,
@@ -2462,7 +2769,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_GUTS
+		.ability = ABILITY_GUTS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SAWK] = {
         .species = SPECIES_SAWK,
@@ -2470,7 +2778,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_MOLD_BREAKER
+		.ability = ABILITY_MOLD_BREAKER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LEAVANNY] = {
         .species = SPECIES_LEAVANNY,
@@ -2478,7 +2787,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SWARM
+		.ability = ABILITY_SWARM,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SCOLIPEDE] = {
         .species = SPECIES_SCOLIPEDE,
@@ -2486,7 +2796,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SPEED_BOOST
+		.ability = ABILITY_SPEED_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WHIMSICOTT] = {
         .species = SPECIES_WHIMSICOTT,
@@ -2494,7 +2805,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_PRANKSTER
+		.ability = ABILITY_PRANKSTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LILLIGANT] = {
         .species = SPECIES_LILLIGANT,
@@ -2502,7 +2814,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_CHLOROPHYLL
+		.ability = ABILITY_CHLOROPHYLL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LILLIGANT_HISUI] = {
         .species = SPECIES_LILLIGANT_HISUI,
@@ -2510,7 +2823,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_CHLOROPHYLL
+		.ability = ABILITY_CHLOROPHYLL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KROOKODILE] = {
         .species = SPECIES_KROOKODILE,
@@ -2518,7 +2832,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOPLE_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DARMANITAN] = {
         .species = SPECIES_DARMANITAN,
@@ -2526,7 +2841,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SHEER_FORCE
+		.ability = ABILITY_SHEER_FORCE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DARMANITAN_GALAR] = {
         .species = SPECIES_DARMANITAN_GALAR,
@@ -2534,7 +2850,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_GORILLA_TACTICS
+		.ability = ABILITY_GORILLA_TACTICS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MARACTUS] = {
         .species = SPECIES_MARACTUS,
@@ -2542,7 +2859,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 170, 0, 170),
         .nature = NATURE_CALM,
-		.ability = ABILITY_WATER_ABSORB
+		.ability = ABILITY_WATER_ABSORB,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CRUSTLE] = {
         .species = SPECIES_CRUSTLE,
@@ -2550,7 +2868,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_STURDY
+		.ability = ABILITY_STURDY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SCRAFTY] = {
         .species = SPECIES_SCRAFTY,
@@ -2558,7 +2877,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_BRAVE,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SIGILYPH] = {
         .species = SPECIES_SIGILYPH,
@@ -2566,7 +2886,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_MAGIC_GUARD
+		.ability = ABILITY_MAGIC_GUARD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_COFAGRIGUS] = {
         .species = SPECIES_COFAGRIGUS,
@@ -2574,7 +2895,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHESTO_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_MUMMY
+		.ability = ABILITY_MUMMY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CARRACOSTA] = {
         .species = SPECIES_CARRACOSTA,
@@ -2582,7 +2904,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WHITE_HERB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_NAIVE,
-		.ability = ABILITY_SOLID_ROCK
+		.ability = ABILITY_SOLID_ROCK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ARCHEOPS] = {
         .species = SPECIES_ARCHEOPS,
@@ -2590,7 +2913,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_POWER_HERB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_DEFEATIST
+		.ability = ABILITY_DEFEATIST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GARBODOR] = {
         .species = SPECIES_GARBODOR,
@@ -2598,7 +2922,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_AFTERMATH
+		.ability = ABILITY_AFTERMATH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ZOROARK] = {
         .species = SPECIES_ZOROARK,
@@ -2606,7 +2931,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_NAIVE,
-		.ability = ABILITY_ILLUSION
+		.ability = ABILITY_ILLUSION,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ZOROARK_HISUI] = {
         .species = SPECIES_ZOROARK_HISUI,
@@ -2614,7 +2940,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_ILLUSION
+		.ability = ABILITY_ILLUSION,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CINCCINO] = {
         .species = SPECIES_CINCCINO,
@@ -2622,7 +2949,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SKILL_LINK
+		.ability = ABILITY_SKILL_LINK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GOTHITELLE] = {
         .species = SPECIES_GOTHITELLE,
@@ -2630,7 +2958,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WIKI_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_CALM,
-		.ability = ABILITY_SHADOW_TAG
+		.ability = ABILITY_SHADOW_TAG,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_REUNICLUS] = {
         .species = SPECIES_REUNICLUS,
@@ -2638,7 +2967,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_MAGIC_GUARD
+		.ability = ABILITY_MAGIC_GUARD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SWANNA] = {
         .species = SPECIES_SWANNA,
@@ -2646,7 +2976,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_HYDRATION
+		.ability = ABILITY_HYDRATION,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_VANILLUXE] = {
         .species = SPECIES_VANILLUXE,
@@ -2654,7 +2985,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ICY_ROCK,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_SNOW_WARNING
+		.ability = ABILITY_SNOW_WARNING,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SAWSBUCK] = {
         .species = SPECIES_SAWSBUCK,
@@ -2662,7 +2994,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SERENE_GRACE
+		.ability = ABILITY_SERENE_GRACE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_EMOLGA] = {
         .species = SPECIES_EMOLGA,
@@ -2670,7 +3003,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ELECTRIC_SEED,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_ELECTRIC_SURGE
+		.ability = ABILITY_ELECTRIC_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ESCAVALIER] = {
         .species = SPECIES_ESCAVALIER,
@@ -2678,7 +3012,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_OVERCOAT
+		.ability = ABILITY_OVERCOAT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_AMOONGUSS] = {
         .species = SPECIES_AMOONGUSS,
@@ -2686,7 +3021,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_REGENERATOR
+		.ability = ABILITY_REGENERATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_JELLICENT] = {
         .species = SPECIES_JELLICENT,
@@ -2694,7 +3030,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_COLBUR_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_CURSED_BODY
+		.ability = ABILITY_CURSED_BODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ALOMOMOLA] = {
         .species = SPECIES_ALOMOMOLA,
@@ -2702,7 +3039,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_RELAXED,
-		.ability = ABILITY_REGENERATOR
+		.ability = ABILITY_REGENERATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GALVANTULA] = {
         .species = SPECIES_GALVANTULA,
@@ -2710,7 +3048,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_COMPOUND_EYES
+		.ability = ABILITY_COMPOUND_EYES,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FERROTHORN] = {
         .species = SPECIES_FERROTHORN,
@@ -2718,7 +3057,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_IRON_BARBS
+		.ability = ABILITY_IRON_BARBS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KLINKLANG] = {
         .species = SPECIES_KLINKLANG,
@@ -2726,7 +3066,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 170, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_CLEAR_BODY
+		.ability = ABILITY_CLEAR_BODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_EELEKTROSS] = {
         .species = SPECIES_EELEKTROSS,
@@ -2734,7 +3075,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ELECTRIC_SEED,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_ELECTRIC_SURGE
+		.ability = ABILITY_ELECTRIC_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BEHEEYEM] = {
         .species = SPECIES_BEHEEYEM,
@@ -2742,7 +3084,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_COLBUR_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_ANALYTIC
+		.ability = ABILITY_ANALYTIC,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CHANDELURE] = {
         .species = SPECIES_CHANDELURE,
@@ -2750,7 +3093,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_FLAME_BODY
+		.ability = ABILITY_FLAME_BODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HAXORUS] = {
         .species = SPECIES_HAXORUS,
@@ -2758,7 +3102,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LUM_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_MOLD_BREAKER
+		.ability = ABILITY_MOLD_BREAKER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BEARTIC] = {
         .species = SPECIES_BEARTIC,
@@ -2766,7 +3111,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_SWIFT_SWIM
+		.ability = ABILITY_SWIFT_SWIM,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CRYOGONAL] = {
         .species = SPECIES_CRYOGONAL,
@@ -2774,7 +3120,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ACCELGOR] = {
         .species = SPECIES_ACCELGOR,
@@ -2782,7 +3129,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_STICKY_HOLD
+		.ability = ABILITY_STICKY_HOLD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_STUNFISK] = {
         .species = SPECIES_STUNFISK,
@@ -2790,7 +3138,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CALM,
-		.ability = ABILITY_STATIC
+		.ability = ABILITY_STATIC,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_STUNFISK_GALAR] = {
         .species = SPECIES_STUNFISK_GALAR,
@@ -2798,7 +3147,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_MIMICRY
+		.ability = ABILITY_MIMICRY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MIENSHAO] = {
         .species = SPECIES_MIENSHAO,
@@ -2806,7 +3156,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 170, 0, 170),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_REGENERATOR
+		.ability = ABILITY_REGENERATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DRUDDIGON] = {
         .species = SPECIES_DRUDDIGON,
@@ -2814,7 +3165,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_ROUGH_SKIN
+		.ability = ABILITY_ROUGH_SKIN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GOLURK] = {
         .species = SPECIES_GOLURK,
@@ -2822,7 +3174,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_STICKY_BARB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_KLUTZ
+		.ability = ABILITY_KLUTZ,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BOUFFALANT] = {
         .species = SPECIES_BOUFFALANT,
@@ -2830,7 +3183,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 170, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_SAP_SIPPER
+		.ability = ABILITY_SAP_SIPPER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BRAVIARY] = {
         .species = SPECIES_BRAVIARY,
@@ -2838,7 +3192,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_DEFIANT
+		.ability = ABILITY_DEFIANT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BRAVIARY_HISUI] = {
         .species = SPECIES_BRAVIARY_HISUI,
@@ -2846,7 +3201,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_TINTED_LENS
+		.ability = ABILITY_TINTED_LENS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MANDIBUZZ] = {
         .species = SPECIES_MANDIBUZZ,
@@ -2854,7 +3210,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_OVERCOAT
+		.ability = ABILITY_OVERCOAT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HEATMOR] = {
         .species = SPECIES_HEATMOR,
@@ -2862,7 +3219,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_FLASH_FIRE
+		.ability = ABILITY_FLASH_FIRE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DURANT] = {
         .species = SPECIES_DURANT,
@@ -2870,7 +3228,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_HUSTLE
+		.ability = ABILITY_HUSTLE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HYDREIGON] = {
         .species = SPECIES_HYDREIGON,
@@ -2878,7 +3237,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_VOLCARONA] = {
         .species = SPECIES_VOLCARONA,
@@ -2886,7 +3246,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_FLAME_BODY
+		.ability = ABILITY_FLAME_BODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_COBALION] = {
         .species = SPECIES_COBALION,
@@ -2894,7 +3255,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SHUCA_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_JUSTIFIED
+		.ability = ABILITY_JUSTIFIED,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TERRAKION] = {
         .species = SPECIES_TERRAKION,
@@ -2902,7 +3264,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_JUSTIFIED
+		.ability = ABILITY_JUSTIFIED,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_VIRIZION] = {
         .species = SPECIES_VIRIZION,
@@ -2910,7 +3273,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LUM_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_JUSTIFIED
+		.ability = ABILITY_JUSTIFIED,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TORNADUS] = {
         .species = SPECIES_TORNADUS,
@@ -2918,7 +3282,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_COVERT_CLOAK,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_PRANKSTER
+		.ability = ABILITY_PRANKSTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TORNADUS_THERIAN] = {
         .species = SPECIES_TORNADUS_THERIAN,
@@ -2926,7 +3291,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_REGENERATOR
+		.ability = ABILITY_REGENERATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_THUNDURUS] = {
         .species = SPECIES_THUNDURUS,
@@ -2934,7 +3300,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_COVERT_CLOAK,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CALM,
-		.ability = ABILITY_PRANKSTER
+		.ability = ABILITY_PRANKSTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_THUNDURUS_THERIAN] = {
         .species = SPECIES_THUNDURUS_THERIAN,
@@ -2942,7 +3309,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_VOLT_ABSORB
+		.ability = ABILITY_VOLT_ABSORB,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KELDEO] = {
         .species = SPECIES_KELDEO,
@@ -2950,7 +3318,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SPECS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_JUSTIFIED
+		.ability = ABILITY_JUSTIFIED,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CHESNAUGHT] = {
         .species = SPECIES_CHESNAUGHT,
@@ -2958,7 +3327,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_BULLETPROOF
+		.ability = ABILITY_BULLETPROOF,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DELPHOX] = {
         .species = SPECIES_DELPHOX,
@@ -2966,7 +3336,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_COLBUR_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_BLAZE
+		.ability = ABILITY_BLAZE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GRENINJA] = {
         .species = SPECIES_GRENINJA,
@@ -2974,7 +3345,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SPECS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_PROTEAN
+		.ability = ABILITY_PROTEAN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GRENINJA_2] = {
         .species = SPECIES_GRENINJA,
@@ -2982,7 +3354,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_BATTLE_BOND
+		.ability = ABILITY_BATTLE_BOND,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DIGGERSBY] = {
         .species = SPECIES_DIGGERSBY,
@@ -2990,7 +3363,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SILK_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_HUGE_POWER
+		.ability = ABILITY_HUGE_POWER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TALONFLAME] = {
         .species = SPECIES_TALONFLAME,
@@ -2998,7 +3372,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WIDE_LENS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_GALE_WINGS
+		.ability = ABILITY_GALE_WINGS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_VIVILLON] = {
         .species = SPECIES_VIVILLON,
@@ -3006,7 +3381,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_COMPOUND_EYES
+		.ability = ABILITY_COMPOUND_EYES,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PYROAR] = {
         .species = SPECIES_PYROAR,
@@ -3014,7 +3390,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_UNNERVE
+		.ability = ABILITY_UNNERVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FLORGES] = {
         .species = SPECIES_FLORGES,
@@ -3022,7 +3399,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_MISTY_SURGE
+		.ability = ABILITY_MISTY_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GOGOAT] = {
         .species = SPECIES_GOGOAT,
@@ -3030,7 +3408,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_GRASSY_SURGE
+		.ability = ABILITY_GRASSY_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GOGOAT_EMERIBIAN] = {
         .species = SPECIES_GOGOAT_EMERIBIAN,
@@ -3038,7 +3417,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_OCCA_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_STAMINA
+		.ability = ABILITY_STAMINA,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PANGORO] = {
         .species = SPECIES_PANGORO,
@@ -3046,7 +3426,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_IRON_FIST
+		.ability = ABILITY_IRON_FIST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FURFROU] = {
         .species = SPECIES_FURFROU,
@@ -3054,7 +3435,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_FUR_COAT
+		.ability = ABILITY_FUR_COAT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MEOWSTIC_M] = {
         .species = SPECIES_MEOWSTIC_M,
@@ -3062,7 +3444,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_EJECT_BUTTON,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_PRANKSTER
+		.ability = ABILITY_PRANKSTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MEOWSTIC_F] = {
         .species = SPECIES_MEOWSTIC_F,
@@ -3070,7 +3453,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_EJECT_BUTTON,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_COMPETITIVE
+		.ability = ABILITY_COMPETITIVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_AEGISLASH] = {
         .species = SPECIES_AEGISLASH,
@@ -3078,7 +3462,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_STANCE_CHANGE
+		.ability = ABILITY_STANCE_CHANGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_AEGISLASH_EMERIBIAN] = {
         .species = SPECIES_AEGISLASH_EMERIBIAN,
@@ -3086,7 +3471,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_STEELY_SPIRIT
+		.ability = ABILITY_STEELY_SPIRIT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_AROMATISSE] = {
         .species = SPECIES_AROMATISSE,
@@ -3094,7 +3480,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_AROMA_VEIL
+		.ability = ABILITY_AROMA_VEIL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SLURPUFF] = {
         .species = SPECIES_SLURPUFF,
@@ -3102,7 +3489,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_NAIVE,
-		.ability = ABILITY_UNBURDEN
+		.ability = ABILITY_UNBURDEN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MALAMAR] = {
         .species = SPECIES_MALAMAR,
@@ -3110,7 +3498,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_CONTRARY
+		.ability = ABILITY_CONTRARY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BARBARACLE] = {
         .species = SPECIES_BARBARACLE,
@@ -3118,7 +3507,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WHITE_HERB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_TOUGH_CLAWS
+		.ability = ABILITY_TOUGH_CLAWS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DRAGALGE] = {
         .species = SPECIES_DRAGALGE,
@@ -3126,7 +3516,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SPECS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_ADAPTABILITY
+		.ability = ABILITY_ADAPTABILITY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DRAGALGE_EMERIBIAN] = {
         .species = SPECIES_DRAGALGE_EMERIBIAN,
@@ -3134,7 +3525,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(0, 170, 0, 170, 170, 0),
         .nature = NATURE_NAIVE,
-		.ability = ABILITY_SKILL_LINK
+		.ability = ABILITY_SKILL_LINK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CLAWITZER] = {
         .species = SPECIES_CLAWITZER,
@@ -3142,7 +3534,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SPECS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_MEGA_LAUNCHER
+		.ability = ABILITY_MEGA_LAUNCHER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HELIOLISK] = {
         .species = SPECIES_HELIOLISK,
@@ -3150,7 +3543,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_DRY_SKIN
+		.ability = ABILITY_DRY_SKIN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TYRANTRUM] = {
         .species = SPECIES_TYRANTRUM,
@@ -3158,7 +3552,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LUM_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_ROCK_HEAD
+		.ability = ABILITY_ROCK_HEAD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_AURORUS] = {
         .species = SPECIES_AURORUS,
@@ -3166,7 +3561,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_COSTAR
+		.ability = ABILITY_COSTAR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SYLVEON] = {
         .species = SPECIES_SYLVEON,
@@ -3174,7 +3570,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_PIXILATE
+		.ability = ABILITY_PIXILATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HAWLUCHA] = {
         .species = SPECIES_HAWLUCHA,
@@ -3182,7 +3579,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_LIMBER
+		.ability = ABILITY_LIMBER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DEDENNE] = {
         .species = SPECIES_DEDENNE,
@@ -3190,7 +3588,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_PETAYA_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_CHEEK_POUCH
+		.ability = ABILITY_CHEEK_POUCH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CARBINK] = {
         .species = SPECIES_CARBINK,
@@ -3198,7 +3597,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CALM,
-		.ability = ABILITY_EARTH_EATER
+		.ability = ABILITY_EARTH_EATER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GOODRA] = {
         .species = SPECIES_GOODRA,
@@ -3206,7 +3606,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_EXPERT_BELT,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CALM,
-		.ability = ABILITY_SAP_SIPPER
+		.ability = ABILITY_SAP_SIPPER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GOODRA_HISUI] = {
         .species = SPECIES_GOODRA_HISUI,
@@ -3214,7 +3615,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_CALM,
-		.ability = ABILITY_SAP_SIPPER
+		.ability = ABILITY_SAP_SIPPER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KLEFKI] = {
         .species = SPECIES_KLEFKI,
@@ -3222,7 +3624,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIGHT_CLAY,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_RELAXED,
-		.ability = ABILITY_PRANKSTER
+		.ability = ABILITY_PRANKSTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TREVENANT] = {
         .species = SPECIES_TREVENANT,
@@ -3230,7 +3633,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_HARVEST
+		.ability = ABILITY_HARVEST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TREVENANT_EMERIBIAN] = {
         .species = SPECIES_TREVENANT_EMERIBIAN,
@@ -3238,7 +3642,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_KASIB_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_FLUFFY
+		.ability = ABILITY_FLUFFY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GOURGEIST] = {
         .species = SPECIES_GOURGEIST,
@@ -3246,7 +3651,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WEAKNESS_POLICY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_FRISK
+		.ability = ABILITY_FRISK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_AVALUGG] = {
         .species = SPECIES_AVALUGG,
@@ -3254,7 +3660,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_STURDY
+		.ability = ABILITY_STURDY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_AVALUGG_HISUI] = {
         .species = SPECIES_AVALUGG_HISUI,
@@ -3262,7 +3669,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_STURDY
+		.ability = ABILITY_STURDY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_NOIVERN] = {
         .species = SPECIES_NOIVERN,
@@ -3270,7 +3678,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_INFILTRATOR
+		.ability = ABILITY_INFILTRATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DECIDUEYE] = {
         .species = SPECIES_DECIDUEYE,
@@ -3278,7 +3687,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SPELL_TAG,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_LONG_REACH
+		.ability = ABILITY_LONG_REACH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DECIDUEYE_HISUI] = {
         .species = SPECIES_DECIDUEYE_HISUI,
@@ -3286,7 +3696,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_SCRAPPY
+		.ability = ABILITY_SCRAPPY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_INCINEROAR] = {
         .species = SPECIES_INCINEROAR,
@@ -3294,7 +3705,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PRIMARINA] = {
         .species = SPECIES_PRIMARINA,
@@ -3302,7 +3714,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_LIQUID_VOICE
+		.ability = ABILITY_LIQUID_VOICE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TOUCANNON] = {
         .species = SPECIES_TOUCANNON,
@@ -3310,7 +3723,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_NAIVE,
-		.ability = ABILITY_SKILL_LINK
+		.ability = ABILITY_SKILL_LINK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GUMSHOOS] = {
         .species = SPECIES_GUMSHOOS,
@@ -3318,7 +3732,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_ADAPTABILITY
+		.ability = ABILITY_ADAPTABILITY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_VIKAVOLT] = {
         .species = SPECIES_VIKAVOLT,
@@ -3326,7 +3741,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CRABOMINABLE] = {
         .species = SPECIES_CRABOMINABLE,
@@ -3334,7 +3750,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_IRON_FIST
+		.ability = ABILITY_IRON_FIST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ORICORIO] = {
         .species = SPECIES_ORICORIO,
@@ -3342,7 +3759,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SHARP_BEAK,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_DANCER
+		.ability = ABILITY_DANCER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_RIBOMBEE] = {
         .species = SPECIES_RIBOMBEE,
@@ -3350,7 +3768,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_SHIELD_DUST
+		.ability = ABILITY_SHIELD_DUST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LYCANROC] = {
         .species = SPECIES_LYCANROC,
@@ -3358,7 +3777,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SAND_RUSH
+		.ability = ABILITY_SAND_RUSH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LYCANROC_MIDNIGHT] = {
         .species = SPECIES_LYCANROC_MIDNIGHT,
@@ -3366,7 +3786,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_NO_GUARD
+		.ability = ABILITY_NO_GUARD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LYCANROC_DUSK] = {
         .species = SPECIES_LYCANROC_DUSK,
@@ -3374,7 +3795,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_TOUGH_CLAWS
+		.ability = ABILITY_TOUGH_CLAWS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WISHIWASHI] = {
         .species = SPECIES_WISHIWASHI,
@@ -3382,7 +3804,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_RELAXED,
-		.ability = ABILITY_SCHOOLING
+		.ability = ABILITY_SCHOOLING,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TOXAPEX] = {
         .species = SPECIES_TOXAPEX,
@@ -3390,7 +3813,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_COVERT_CLOAK,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_REGENERATOR
+		.ability = ABILITY_REGENERATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MUDSDALE] = {
         .species = SPECIES_MUDSDALE,
@@ -3398,7 +3822,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_STAMINA
+		.ability = ABILITY_STAMINA,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ARAQUANID] = {
         .species = SPECIES_ARAQUANID,
@@ -3406,7 +3831,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_BRAVE,
-		.ability = ABILITY_DRIZZLE
+		.ability = ABILITY_DRIZZLE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LURANTIS] = {
         .species = SPECIES_LURANTIS,
@@ -3414,7 +3840,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_BRAVE,
-		.ability = ABILITY_CONTRARY
+		.ability = ABILITY_CONTRARY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SHIINOTIC] = {
         .species = SPECIES_SHIINOTIC,
@@ -3422,7 +3849,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_MAGIC_BOUNCE
+		.ability = ABILITY_MAGIC_BOUNCE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SALAZZLE] = {
         .species = SPECIES_SALAZZLE,
@@ -3430,7 +3858,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_CORROSION
+		.ability = ABILITY_CORROSION,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BEWEAR] = {
         .species = SPECIES_BEWEAR,
@@ -3438,7 +3867,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOPLE_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_FLUFFY
+		.ability = ABILITY_FLUFFY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TSAREENA] = {
         .species = SPECIES_TSAREENA,
@@ -3446,7 +3876,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_QUEENLY_MAJESTY
+		.ability = ABILITY_QUEENLY_MAJESTY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_COMFEY] = {
         .species = SPECIES_COMFEY,
@@ -3454,7 +3885,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHILAN_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_TRIAGE
+		.ability = ABILITY_TRIAGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ORANGURU] = {
         .species = SPECIES_ORANGURU,
@@ -3462,7 +3894,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_TELEPATHY
+		.ability = ABILITY_TELEPATHY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PASSIMIAN] = {
         .species = SPECIES_PASSIMIAN,
@@ -3470,7 +3903,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_DEFIANT
+		.ability = ABILITY_DEFIANT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GOLISOPOD] = {
         .species = SPECIES_GOLISOPOD,
@@ -3478,7 +3912,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 170, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_EMERGENCY_EXIT
+		.ability = ABILITY_EMERGENCY_EXIT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PALOSSAND] = {
         .species = SPECIES_PALOSSAND,
@@ -3486,7 +3921,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_COLBUR_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_WATER_COMPACTION
+		.ability = ABILITY_WATER_COMPACTION,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PYUKUMUKU] = {
         .species = SPECIES_PYUKUMUKU,
@@ -3494,7 +3930,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_UNAWARE
+		.ability = ABILITY_UNAWARE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SILVALLY] = {
         .species = SPECIES_SILVALLY,
@@ -3502,7 +3939,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_RKS_SYSTEM
+		.ability = ABILITY_RKS_SYSTEM,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MINIOR] = {
         .species = SPECIES_MINIOR,
@@ -3510,7 +3948,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WHITE_HERB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_NAUGHTY,
-		.ability = ABILITY_SHIELDS_DOWN
+		.ability = ABILITY_SHIELDS_DOWN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KOMALA] = {
         .species = SPECIES_KOMALA,
@@ -3518,7 +3957,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_COMATOSE
+		.ability = ABILITY_COMATOSE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TURTONATOR] = {
         .species = SPECIES_TURTONATOR,
@@ -3526,7 +3966,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WHITE_HERB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_SHELL_ARMOR
+		.ability = ABILITY_SHELL_ARMOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TOGEDEMARU] = {
         .species = SPECIES_TOGEDEMARU,
@@ -3534,7 +3975,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_LIGHTNING_ROD
+		.ability = ABILITY_LIGHTNING_ROD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MIMIKYU] = {
         .species = SPECIES_MIMIKYU,
@@ -3542,7 +3984,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_DISGUISE
+		.ability = ABILITY_DISGUISE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MIMIKYU_EMERIBIAN] = {
         .species = SPECIES_MIMIKYU_EMERIBIAN,
@@ -3550,7 +3993,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SOLID_ROCK
+		.ability = ABILITY_SOLID_ROCK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BRUXISH] = {
         .species = SPECIES_BRUXISH,
@@ -3558,7 +4002,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_MYSTIC_WATER,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_STRONG_JAW
+		.ability = ABILITY_STRONG_JAW,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DRAMPA] = {
         .species = SPECIES_DRAMPA,
@@ -3566,7 +4011,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_BERSERK
+		.ability = ABILITY_BERSERK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DHELMISE] = {
         .species = SPECIES_DHELMISE,
@@ -3574,7 +4020,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_BRAVE,
-		.ability = ABILITY_STEELWORKER
+		.ability = ABILITY_STEELWORKER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KOMMO_O] = {
         .species = SPECIES_KOMMO_O,
@@ -3582,7 +4029,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_SOUNDPROOF
+		.ability = ABILITY_SOUNDPROOF,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TAPU_KOKO] = {
         .species = SPECIES_TAPU_KOKO,
@@ -3590,7 +4038,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_ELECTRIC_SURGE
+		.ability = ABILITY_ELECTRIC_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TAPU_LELE] = {
         .species = SPECIES_TAPU_LELE,
@@ -3598,7 +4047,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_PSYCHIC_SURGE
+		.ability = ABILITY_PSYCHIC_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TAPU_BULU] = {
         .species = SPECIES_TAPU_BULU,
@@ -3606,7 +4056,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_GRASSY_SURGE
+		.ability = ABILITY_GRASSY_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TAPU_FINI] = {
         .species = SPECIES_TAPU_FINI,
@@ -3614,7 +4065,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 170, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_MISTY_SURGE
+		.ability = ABILITY_MISTY_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_NIHILEGO] = {
         .species = SPECIES_NIHILEGO,
@@ -3622,7 +4074,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_POWER_HERB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_BEAST_BOOST
+		.ability = ABILITY_BEAST_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BUZZWOLE] = {
         .species = SPECIES_BUZZWOLE,
@@ -3630,7 +4083,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(0, 170, 0, 170, 0, 170),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_BEAST_BOOST
+		.ability = ABILITY_BEAST_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PHEROMOSA] = {
         .species = SPECIES_PHEROMOSA,
@@ -3638,7 +4092,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_NAIVE,
-		.ability = ABILITY_BEAST_BOOST
+		.ability = ABILITY_BEAST_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_XURKITREE] = {
         .species = SPECIES_XURKITREE,
@@ -3646,7 +4101,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_BEAST_BOOST
+		.ability = ABILITY_BEAST_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CELESTEELA] = {
         .species = SPECIES_CELESTEELA,
@@ -3654,7 +4110,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_POWER_HERB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_BEAST_BOOST
+		.ability = ABILITY_BEAST_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KARTANA] = {
         .species = SPECIES_KARTANA,
@@ -3662,7 +4119,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_BEAST_BOOST
+		.ability = ABILITY_BEAST_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GUZZLORD] = {
         .species = SPECIES_GUZZLORD,
@@ -3670,7 +4128,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 170, 170, 0, 0, 170),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_BEAST_BOOST
+		.ability = ABILITY_BEAST_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_NAGANADEL] = {
         .species = SPECIES_NAGANADEL,
@@ -3678,7 +4137,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_BEAST_BOOST
+		.ability = ABILITY_BEAST_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_STAKATAKA] = {
         .species = SPECIES_STAKATAKA,
@@ -3686,7 +4146,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_LONELY,
-		.ability = ABILITY_BEAST_BOOST
+		.ability = ABILITY_BEAST_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BLACEPHALON] = {
         .species = SPECIES_BLACEPHALON,
@@ -3694,7 +4155,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_BEAST_BOOST
+		.ability = ABILITY_BEAST_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_RILLABOOM] = {
         .species = SPECIES_RILLABOOM,
@@ -3702,7 +4164,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 0, 0, 170),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_GRASSY_SURGE
+		.ability = ABILITY_GRASSY_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CINDERACE] = {
         .species = SPECIES_CINDERACE,
@@ -3710,7 +4173,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WIDE_LENS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_LIBERO
+		.ability = ABILITY_LIBERO,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_INTELEON] = {
         .species = SPECIES_INTELEON,
@@ -3718,7 +4182,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SPECS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_TINTED_LENS
+		.ability = ABILITY_TINTED_LENS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GREEDENT] = {
         .species = SPECIES_GREEDENT,
@@ -3726,7 +4191,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_CHEEK_POUCH
+		.ability = ABILITY_CHEEK_POUCH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CORVIKNIGHT] = {
         .species = SPECIES_CORVIKNIGHT,
@@ -3734,7 +4200,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 0, 0, 170),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_MIRROR_ARMOR
+		.ability = ABILITY_MIRROR_ARMOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ORBEETLE] = {
         .species = SPECIES_ORBEETLE,
@@ -3742,7 +4209,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIGHT_CLAY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_FRISK
+		.ability = ABILITY_FRISK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_THIEVUL] = {
         .species = SPECIES_THIEVUL,
@@ -3750,7 +4218,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_UNBURDEN
+		.ability = ABILITY_UNBURDEN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ELDEGOSS] = {
         .species = SPECIES_ELDEGOSS,
@@ -3758,7 +4227,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_REGENERATOR
+		.ability = ABILITY_REGENERATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DUBWOOL] = {
         .species = SPECIES_DUBWOOL,
@@ -3766,7 +4236,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_FLUFFY
+		.ability = ABILITY_FLUFFY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DUBWOOL_FRIBIAN] = {
         .species = SPECIES_DUBWOOL_FRIBIAN,
@@ -3774,7 +4245,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_GORILLA_TACTICS
+		.ability = ABILITY_GORILLA_TACTICS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DREDNAW] = {
         .species = SPECIES_DREDNAW,
@@ -3782,7 +4254,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SHUCA_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_SHELL_ARMOR
+		.ability = ABILITY_SHELL_ARMOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BOLTUND] = {
         .species = SPECIES_BOLTUND,
@@ -3790,7 +4263,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_STRONG_JAW
+		.ability = ABILITY_STRONG_JAW,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_COALOSSAL] = {
         .species = SPECIES_COALOSSAL,
@@ -3798,7 +4272,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WEAKNESS_POLICY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_STEAM_ENGINE
+		.ability = ABILITY_STEAM_ENGINE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FLAPPLE] = {
         .species = SPECIES_FLAPPLE,
@@ -3806,7 +4281,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WIDE_LENS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_NAIVE,
-		.ability = ABILITY_HUSTLE
+		.ability = ABILITY_HUSTLE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_APPLETUN] = {
         .species = SPECIES_APPLETUN,
@@ -3814,7 +4290,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SPECS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_THICK_FAT
+		.ability = ABILITY_THICK_FAT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SANDACONDA] = {
         .species = SPECIES_SANDACONDA,
@@ -3822,7 +4299,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_SHED_SKIN
+		.ability = ABILITY_SHED_SKIN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CRAMORANT] = {
         .species = SPECIES_CRAMORANT,
@@ -3830,7 +4308,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_GULP_MISSILE
+		.ability = ABILITY_GULP_MISSILE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BARRASKEWDA] = {
         .species = SPECIES_BARRASKEWDA,
@@ -3838,7 +4317,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_DRIZZLE
+		.ability = ABILITY_DRIZZLE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TOXTRICITY] = {
         .species = SPECIES_TOXTRICITY,
@@ -3846,7 +4326,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_PUNK_ROCK
+		.ability = ABILITY_PUNK_ROCK,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CENTISKORCH] = {
         .species = SPECIES_CENTISKORCH,
@@ -3854,7 +4335,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_FLASH_FIRE
+		.ability = ABILITY_FLASH_FIRE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GRAPPLOCT] = {
         .species = SPECIES_GRAPPLOCT,
@@ -3862,7 +4344,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_WATER_COMPACTION
+		.ability = ABILITY_WATER_COMPACTION,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_POLTEAGEIST] = {
         .species = SPECIES_POLTEAGEIST,
@@ -3870,7 +4353,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_WEAK_ARMOR
+		.ability = ABILITY_WEAK_ARMOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HATTERENE] = {
         .species = SPECIES_HATTERENE,
@@ -3878,7 +4362,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WISE_GLASSES,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_QUIET,
-		.ability = ABILITY_MAGIC_BOUNCE
+		.ability = ABILITY_MAGIC_BOUNCE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GRIMMSNARL] = {
         .species = SPECIES_GRIMMSNARL,
@@ -3886,7 +4371,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIGHT_CLAY,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_PRANKSTER
+		.ability = ABILITY_PRANKSTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_OBSTAGOON] = {
         .species = SPECIES_OBSTAGOON,
@@ -3894,7 +4380,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FLAME_ORB,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_GUTS
+		.ability = ABILITY_GUTS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PERRSERKER] = {
         .species = SPECIES_PERRSERKER,
@@ -3902,7 +4389,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_TOUGH_CLAWS
+		.ability = ABILITY_TOUGH_CLAWS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CURSOLA] = {
         .species = SPECIES_CURSOLA,
@@ -3910,7 +4398,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SPECS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_WEAK_ARMOR
+		.ability = ABILITY_WEAK_ARMOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SIRFETCHD] = {
         .species = SPECIES_SIRFETCHD,
@@ -3918,7 +4407,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_JUSTIFIED
+		.ability = ABILITY_JUSTIFIED,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MR_RIME] = {
         .species = SPECIES_MR_RIME,
@@ -3926,7 +4416,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_SCREEN_CLEANER
+		.ability = ABILITY_SCREEN_CLEANER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_RUNERIGUS] = {
         .species = SPECIES_RUNERIGUS,
@@ -3934,7 +4425,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_COLBUR_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_WANDERING_SPIRIT
+		.ability = ABILITY_WANDERING_SPIRIT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ALCREMIE] = {
         .species = SPECIES_ALCREMIE,
@@ -3942,7 +4434,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_AROMA_VEIL
+		.ability = ABILITY_AROMA_VEIL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FALINKS] = {
         .species = SPECIES_FALINKS,
@@ -3950,7 +4443,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LUM_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_VICTORY_STAR
+		.ability = ABILITY_VICTORY_STAR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FALINKS_EMERIBIAN] = {
         .species = SPECIES_FALINKS_EMERIBIAN,
@@ -3958,7 +4452,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WIDE_LENS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SPEED_BOOST
+		.ability = ABILITY_SPEED_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PINCURCHIN] = {
         .species = SPECIES_PINCURCHIN,
@@ -3966,7 +4461,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_TERRAIN_EXTENDER,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_ELECTRIC_SURGE
+		.ability = ABILITY_ELECTRIC_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FROSMOTH] = {
         .species = SPECIES_FROSMOTH,
@@ -3974,7 +4470,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_ICE_SCALES
+		.ability = ABILITY_ICE_SCALES,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_STONJOURNER] = {
         .species = SPECIES_STONJOURNER,
@@ -3982,7 +4479,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_POWER_SPOT
+		.ability = ABILITY_POWER_SPOT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_EISCUE] = {
         .species = SPECIES_EISCUE,
@@ -3990,7 +4488,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SALAC_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_ICE_FACE
+		.ability = ABILITY_ICE_FACE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_INDEEDEE] = {
         .species = SPECIES_INDEEDEE,
@@ -3998,7 +4497,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_TERRAIN_EXTENDER,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_PSYCHIC_SURGE
+		.ability = ABILITY_PSYCHIC_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MORPEKO] = {
         .species = SPECIES_MORPEKO,
@@ -4006,7 +4506,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_HUNGER_SWITCH
+		.ability = ABILITY_HUNGER_SWITCH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_COPPERAJAH] = {
         .species = SPECIES_COPPERAJAH,
@@ -4014,7 +4515,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_HEAVY_METAL
+		.ability = ABILITY_HEAVY_METAL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DRACOZOLT] = {
         .species = SPECIES_DRACOZOLT,
@@ -4022,7 +4524,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_NAUGHTY,
-		.ability = ABILITY_SAND_RUSH
+		.ability = ABILITY_SAND_RUSH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ARCTOZOLT] = {
         .species = SPECIES_ARCTOZOLT,
@@ -4030,7 +4533,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_NAIVE,
-		.ability = ABILITY_STATIC
+		.ability = ABILITY_STATIC,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DRACOVISH] = {
         .species = SPECIES_DRACOVISH,
@@ -4038,7 +4542,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_SAND_RUSH
+		.ability = ABILITY_SAND_RUSH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ARCTOVISH] = {
         .species = SPECIES_ARCTOVISH,
@@ -4046,7 +4551,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_NAIVE,
-		.ability = ABILITY_WATER_ABSORB
+		.ability = ABILITY_WATER_ABSORB,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DRAGAPULT] = {
         .species = SPECIES_DRAGAPULT,
@@ -4054,7 +4560,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_INFILTRATOR
+		.ability = ABILITY_INFILTRATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_URSHIFU_RAPID_STRIKE] = {
         .species = SPECIES_URSHIFU_RAPID_STRIKE,
@@ -4062,7 +4569,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_MYSTIC_WATER,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 0, 252),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_UNSEEN_FIST
+		.ability = ABILITY_UNSEEN_FIST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_URSHIFU] = {
         .species = SPECIES_URSHIFU,
@@ -4070,7 +4578,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BLACK_GLASSES,
         .ev = TRAINER_PARTY_EVS(0, 170, 0, 170, 0, 170),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_UNSEEN_FIST
+		.ability = ABILITY_UNSEEN_FIST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_REGIELEKI] = {
         .species = SPECIES_REGIELEKI,
@@ -4078,7 +4587,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_TRANSISTOR
+		.ability = ABILITY_TRANSISTOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_REGIDRAGO] = {
         .species = SPECIES_REGIDRAGO,
@@ -4086,7 +4596,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_DRAGON_FANG,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_DRAGONS_MAW
+		.ability = ABILITY_DRAGONS_MAW,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GLASTRIER] = {
         .species = SPECIES_GLASTRIER,
@@ -4094,7 +4605,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CLEAR_AMULET,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_BRAVE,
-		.ability = ABILITY_CHILLING_NEIGH
+		.ability = ABILITY_CHILLING_NEIGH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SPECTRIER] = {
         .species = SPECIES_SPECTRIER,
@@ -4102,7 +4614,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_GRIM_NEIGH
+		.ability = ABILITY_GRIM_NEIGH,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CALYREX] = {
         .species = SPECIES_CALYREX,
@@ -4110,7 +4623,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WEAKNESS_POLICY,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_UNNERVE
+		.ability = ABILITY_UNNERVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WYRDEER] = {
         .species = SPECIES_WYRDEER,
@@ -4118,7 +4632,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 170, 0, 170, 170, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KLEAVOR] = {
         .species = SPECIES_KLEAVOR,
@@ -4126,7 +4641,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(170, 170, 170, 0, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SHARPNESS
+		.ability = ABILITY_SHARPNESS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_URSALUNA] = {
         .species = SPECIES_URSALUNA,
@@ -4134,7 +4650,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FLAME_ORB,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_BRAVE,
-		.ability = ABILITY_GUTS
+		.ability = ABILITY_GUTS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_URSALUNA_BLOODMOON] = {
         .species = SPECIES_URSALUNA_BLOODMOON,
@@ -4142,7 +4659,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_PASSHO_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_MINDS_EYE
+		.ability = ABILITY_MINDS_EYE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BASCULEGION] = {
         .species = SPECIES_BASCULEGION,
@@ -4150,7 +4668,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_ADAPTABILITY
+		.ability = ABILITY_ADAPTABILITY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SNEASLER] = {
         .species = SPECIES_SNEASLER,
@@ -4158,7 +4677,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_NORMAL_GEM,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 170, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_UNBURDEN
+		.ability = ABILITY_UNBURDEN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_OVERQWIL] = {
         .species = SPECIES_OVERQWIL,
@@ -4166,7 +4686,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_INTIMIDATE
+		.ability = ABILITY_INTIMIDATE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ENAMORUS] = {
         .species = SPECIES_ENAMORUS,
@@ -4174,7 +4695,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_CONTRARY
+		.ability = ABILITY_CONTRARY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ENAMORUS_THERIAN] = {
         .species = SPECIES_ENAMORUS_THERIAN,
@@ -4182,7 +4704,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_OVERCOAT
+		.ability = ABILITY_OVERCOAT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MEOWSCARADA] = {
         .species = SPECIES_MEOWSCARADA,
@@ -4190,7 +4713,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_OVERGROW
+		.ability = ABILITY_OVERGROW,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SKELEDIRGE] = {
         .species = SPECIES_SKELEDIRGE,
@@ -4198,7 +4722,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_UNAWARE
+		.ability = ABILITY_UNAWARE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_QUAQUAVAL] = {
         .species = SPECIES_QUAQUAVAL,
@@ -4206,7 +4731,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_MUSCLE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_MOXIE
+		.ability = ABILITY_MOXIE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_OINKOLOGNE] = {
         .species = SPECIES_OINKOLOGNE,
@@ -4214,7 +4740,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(0, 170, 170, 170, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_THICK_FAT
+		.ability = ABILITY_THICK_FAT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SPIDOPS] = {
         .species = SPECIES_SPIDOPS,
@@ -4222,7 +4749,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_STAKEOUT
+		.ability = ABILITY_STAKEOUT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_LOKIX] = {
         .species = SPECIES_LOKIX,
@@ -4230,7 +4758,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_TINTED_LENS
+		.ability = ABILITY_TINTED_LENS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PAWMOT] = {
         .species = SPECIES_PAWMOT,
@@ -4238,7 +4767,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_NATURAL_CURE
+		.ability = ABILITY_NATURAL_CURE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MAUSHOLD] = {
         .species = SPECIES_MAUSHOLD,
@@ -4246,7 +4776,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_WIDE_LENS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_TECHNICIAN
+		.ability = ABILITY_TECHNICIAN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DACHSBUN] = {
         .species = SPECIES_DACHSBUN,
@@ -4254,7 +4785,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_WELL_BAKED_BODY
+		.ability = ABILITY_WELL_BAKED_BODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ARBOLIVA] = {
         .species = SPECIES_ARBOLIVA,
@@ -4262,7 +4794,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SPECS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_SEED_SOWER
+		.ability = ABILITY_SEED_SOWER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SQUAWKABILLY] = {
         .species = SPECIES_SQUAWKABILLY,
@@ -4270,7 +4803,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FLAME_ORB,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_GUTS
+		.ability = ABILITY_GUTS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GARGANACL] = {
         .species = SPECIES_GARGANACL,
@@ -4278,7 +4812,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_PURIFYING_SALT
+		.ability = ABILITY_PURIFYING_SALT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ARMAROUGE] = {
         .species = SPECIES_ARMAROUGE,
@@ -4286,7 +4821,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SAFETY_GOGGLES,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_COMPETITIVE
+		.ability = ABILITY_COMPETITIVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CERULEDGE] = {
         .species = SPECIES_CERULEDGE,
@@ -4294,7 +4830,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CLEAR_AMULET,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_DEFIANT
+		.ability = ABILITY_DEFIANT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BELLIBOLT] = {
         .species = SPECIES_BELLIBOLT,
@@ -4302,7 +4839,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_ELECTROMORPHOSIS
+		.ability = ABILITY_ELECTROMORPHOSIS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KILOWATTREL] = {
         .species = SPECIES_KILOWATTREL,
@@ -4310,7 +4848,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_WIND_POWER
+		.ability = ABILITY_WIND_POWER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MABOSSTIFF] = {
         .species = SPECIES_MABOSSTIFF,
@@ -4318,7 +4857,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_SCARF,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_STAKEOUT
+		.ability = ABILITY_STAKEOUT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GRAFAIAI] = {
         .species = SPECIES_GRAFAIAI,
@@ -4326,7 +4866,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_PRANKSTER
+		.ability = ABILITY_PRANKSTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BRAMBLEGHAST] = {
         .species = SPECIES_BRAMBLEGHAST,
@@ -4334,7 +4875,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_WIND_RIDER
+		.ability = ABILITY_WIND_RIDER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TOEDSCRUEL] = {
         .species = SPECIES_TOEDSCRUEL,
@@ -4342,7 +4884,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_TOXIC_ORB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_POISON_HEAL
+		.ability = ABILITY_POISON_HEAL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KLAWF] = {
         .species = SPECIES_KLAWF,
@@ -4350,7 +4893,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_REGENERATOR
+		.ability = ABILITY_REGENERATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SCOVILLAIN] = {
         .species = SPECIES_SCOVILLAIN,
@@ -4358,7 +4902,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_MOODY
+		.ability = ABILITY_MOODY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_RABSCA] = {
         .species = SPECIES_RABSCA,
@@ -4366,7 +4911,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_PSYCHIC_SEED,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_RELAXED,
-		.ability = ABILITY_PSYCHIC_SURGE
+		.ability = ABILITY_PSYCHIC_SURGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ESPATHRA] = {
         .species = SPECIES_ESPATHRA,
@@ -4374,7 +4920,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_SPEED_BOOST
+		.ability = ABILITY_SPEED_BOOST,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TINKATON] = {
         .species = SPECIES_TINKATON,
@@ -4382,7 +4929,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_MOLD_BREAKER
+		.ability = ABILITY_MOLD_BREAKER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WUGTRIO] = {
         .species = SPECIES_WUGTRIO,
@@ -4390,7 +4938,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHOICE_BAND,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_GOOEY
+		.ability = ABILITY_GOOEY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BOMBIRDIER] = {
         .species = SPECIES_BOMBIRDIER,
@@ -4398,7 +4947,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_BIG_PECKS
+		.ability = ABILITY_BIG_PECKS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_PALAFIN] = {
         .species = SPECIES_PALAFIN,
@@ -4406,7 +4956,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_ZERO_TO_HERO
+		.ability = ABILITY_ZERO_TO_HERO,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_REVAVROOM] = {
         .species = SPECIES_REVAVROOM,
@@ -4414,7 +4965,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_AIR_BALLOON,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_FILTER
+		.ability = ABILITY_FILTER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CYCLIZAR] = {
         .species = SPECIES_CYCLIZAR,
@@ -4422,7 +4974,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 170, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_REGENERATOR
+		.ability = ABILITY_REGENERATOR,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ORTHWORM] = {
         .species = SPECIES_ORTHWORM,
@@ -4430,7 +4983,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_EARTH_EATER
+		.ability = ABILITY_EARTH_EATER,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GLIMMORA] = {
         .species = SPECIES_GLIMMORA,
@@ -4438,7 +4992,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_TOXIC_DEBRIS
+		.ability = ABILITY_TOXIC_DEBRIS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HOUNDSTONE] = {
         .species = SPECIES_HOUNDSTONE,
@@ -4446,7 +5001,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SPELL_TAG,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_GUARD_DOG
+		.ability = ABILITY_GUARD_DOG,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FLAMIGO] = {
         .species = SPECIES_FLAMIGO,
@@ -4454,7 +5010,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_HEAVY_DUTY_BOOTS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SCRAPPY
+		.ability = ABILITY_SCRAPPY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CETITAN] = {
         .species = SPECIES_CETITAN,
@@ -4462,7 +5019,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_THICK_FAT
+		.ability = ABILITY_THICK_FAT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_VELUZA] = {
         .species = SPECIES_VELUZA,
@@ -4470,7 +5028,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SHARPNESS
+		.ability = ABILITY_SHARPNESS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DONDOZO] = {
         .species = SPECIES_DONDOZO,
@@ -4478,7 +5037,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHESTO_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 170, 0, 170, 0, 170),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_UNAWARE
+		.ability = ABILITY_UNAWARE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TATSUGIRI] = {
         .species = SPECIES_TATSUGIRI,
@@ -4486,7 +5046,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_STORM_DRAIN
+		.ability = ABILITY_STORM_DRAIN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ANNIHILAPE] = {
         .species = SPECIES_ANNIHILAPE,
@@ -4494,7 +5055,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_DEFIANT
+		.ability = ABILITY_DEFIANT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CLODSIRE] = {
         .species = SPECIES_CLODSIRE,
@@ -4502,7 +5064,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_WATER_ABSORB
+		.ability = ABILITY_WATER_ABSORB,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FARIGIRAF] = {
         .species = SPECIES_FARIGIRAF,
@@ -4510,7 +5073,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_COLBUR_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_QUIET,
-		.ability = ABILITY_ARMOR_TAIL
+		.ability = ABILITY_ARMOR_TAIL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_DUDUNSPARCE] = {
         .species = SPECIES_DUDUNSPARCE,
@@ -4518,7 +5082,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_SERENE_GRACE
+		.ability = ABILITY_SERENE_GRACE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_KINGAMBIT] = {
         .species = SPECIES_KINGAMBIT,
@@ -4526,7 +5091,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BLACK_GLASSES,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_SUPREME_OVERLORD
+		.ability = ABILITY_SUPREME_OVERLORD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GREAT_TUSK] = {
         .species = SPECIES_GREAT_TUSK,
@@ -4534,7 +5100,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 0, 252),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_PROTOSYNTHESIS
+		.ability = ABILITY_PROTOSYNTHESIS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SCREAM_TAIL] = {
         .species = SPECIES_SCREAM_TAIL,
@@ -4542,7 +5109,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_PROTOSYNTHESIS
+		.ability = ABILITY_PROTOSYNTHESIS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BRUTE_BONNET] = {
         .species = SPECIES_BRUTE_BONNET,
@@ -4550,7 +5118,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_PROTOSYNTHESIS
+		.ability = ABILITY_PROTOSYNTHESIS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FLUTTER_MANE] = {
         .species = SPECIES_FLUTTER_MANE,
@@ -4558,7 +5127,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_PROTOSYNTHESIS
+		.ability = ABILITY_PROTOSYNTHESIS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SLITHER_WING] = {
         .species = SPECIES_SLITHER_WING,
@@ -4566,7 +5136,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 170, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_PROTOSYNTHESIS
+		.ability = ABILITY_PROTOSYNTHESIS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SANDY_SHOCKS] = {
         .species = SPECIES_SANDY_SHOCKS,
@@ -4574,7 +5145,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_PROTOSYNTHESIS
+		.ability = ABILITY_PROTOSYNTHESIS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_IRON_TREADS] = {
         .species = SPECIES_IRON_TREADS,
@@ -4582,7 +5154,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_QUARK_DRIVE
+		.ability = ABILITY_QUARK_DRIVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_IRON_BUNDLE] = {
         .species = SPECIES_IRON_BUNDLE,
@@ -4590,7 +5163,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_QUARK_DRIVE
+		.ability = ABILITY_QUARK_DRIVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_IRON_HANDS] = {
         .species = SPECIES_IRON_HANDS,
@@ -4598,7 +5172,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 0, 252),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_QUARK_DRIVE
+		.ability = ABILITY_QUARK_DRIVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_IRON_JUGULIS] = {
         .species = SPECIES_IRON_JUGULIS,
@@ -4606,7 +5181,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_QUARK_DRIVE
+		.ability = ABILITY_QUARK_DRIVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_IRON_MOTH] = {
         .species = SPECIES_IRON_MOTH,
@@ -4614,7 +5190,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 170, 170, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_QUARK_DRIVE
+		.ability = ABILITY_QUARK_DRIVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_IRON_THORNS] = {
         .species = SPECIES_IRON_THORNS,
@@ -4622,7 +5199,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_QUARK_DRIVE
+		.ability = ABILITY_QUARK_DRIVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_BAXCALIBUR] = {
         .species = SPECIES_BAXCALIBUR,
@@ -4630,7 +5208,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LOADED_DICE,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_THERMAL_EXCHANGE
+		.ability = ABILITY_THERMAL_EXCHANGE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GHOLDENGO] = {
         .species = SPECIES_GHOLDENGO,
@@ -4638,7 +5217,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_GOOD_AS_GOLD
+		.ability = ABILITY_GOOD_AS_GOLD,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WO_CHIEN] = {
         .species = SPECIES_WO_CHIEN,
@@ -4646,7 +5226,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_CALM,
-		.ability = ABILITY_TABLETS_OF_RUIN
+		.ability = ABILITY_TABLETS_OF_RUIN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CHIEN_PAO] = {
         .species = SPECIES_CHIEN_PAO,
@@ -4654,7 +5235,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_SWORD_OF_RUIN
+		.ability = ABILITY_SWORD_OF_RUIN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_TING_LU] = {
         .species = SPECIES_TING_LU,
@@ -4662,7 +5244,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 0, 0, 170),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_VESSEL_OF_RUIN
+		.ability = ABILITY_VESSEL_OF_RUIN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_CHI_YU] = {
         .species = SPECIES_CHI_YU,
@@ -4670,7 +5253,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_AIR_BALLOON,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_BEADS_OF_RUIN
+		.ability = ABILITY_BEADS_OF_RUIN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ROARING_MOON] = {
         .species = SPECIES_ROARING_MOON,
@@ -4678,7 +5262,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_PROTOSYNTHESIS
+		.ability = ABILITY_PROTOSYNTHESIS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_IRON_VALIANT] = {
         .species = SPECIES_IRON_VALIANT,
@@ -4686,7 +5271,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_QUARK_DRIVE
+		.ability = ABILITY_QUARK_DRIVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_WALKING_WAKE] = {
         .species = SPECIES_WALKING_WAKE,
@@ -4694,7 +5280,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_PROTOSYNTHESIS
+		.ability = ABILITY_PROTOSYNTHESIS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_IRON_LEAVES] = {
         .species = SPECIES_IRON_LEAVES,
@@ -4702,7 +5289,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_QUARK_DRIVE
+		.ability = ABILITY_QUARK_DRIVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_SINISTCHA] = {
         .species = SPECIES_SINISTCHA,
@@ -4710,7 +5298,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_COLBUR_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_HOSPITALITY
+		.ability = ABILITY_HOSPITALITY,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_OKIDOGI] = {
         .species = SPECIES_OKIDOGI,
@@ -4718,7 +5307,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_GUARD_DOG
+		.ability = ABILITY_GUARD_DOG,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_MUNKIDORI] = {
         .species = SPECIES_MUNKIDORI,
@@ -4726,7 +5316,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_TOXIC_CHAIN
+		.ability = ABILITY_TOXIC_CHAIN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_FEZANDIPITI] = {
         .species = SPECIES_FEZANDIPITI,
@@ -4734,7 +5325,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LUM_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_BOLD,
-		.ability = ABILITY_TOXIC_CHAIN
+		.ability = ABILITY_TOXIC_CHAIN,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_OGERPON] = {
         .species = SPECIES_OGERPON,
@@ -4742,7 +5334,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_MIRACLE_SEED,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_DEFIANT
+		.ability = ABILITY_DEFIANT,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_ARCHALUDON] = {
         .species = SPECIES_ARCHALUDON,
@@ -4750,7 +5343,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_EXPERT_BELT,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_LIGHT_METAL
+		.ability = ABILITY_LIGHT_METAL,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_HYDRAPPLE] = {
         .species = SPECIES_HYDRAPPLE,
@@ -4758,7 +5352,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_YACHE_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_CAREFUL,
-		.ability = ABILITY_SUPERSWEET_SYRUP
+		.ability = ABILITY_SUPERSWEET_SYRUP,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_GOUGING_FIRE] = {
         .species = SPECIES_GOUGING_FIRE,
@@ -4766,7 +5361,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_PROTOSYNTHESIS
+		.ability = ABILITY_PROTOSYNTHESIS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_RAGING_BOLT] = {
         .species = SPECIES_RAGING_BOLT,
@@ -4774,7 +5370,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_PROTOSYNTHESIS
+		.ability = ABILITY_PROTOSYNTHESIS,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_IRON_BOULDER] = {
         .species = SPECIES_IRON_BOULDER,
@@ -4782,7 +5379,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-		.ability = ABILITY_QUARK_DRIVE
+		.ability = ABILITY_QUARK_DRIVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_IRON_CROWN] = {
         .species = SPECIES_IRON_CROWN,
@@ -4790,7 +5388,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BOOSTER_ENERGY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_QUARK_DRIVE
+		.ability = ABILITY_QUARK_DRIVE,
+        .ball = BALL_POKE
     },
     [FRONTIER_MON_EVALEON] = {
         .species = SPECIES_EVALEON,
@@ -4798,7 +5397,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 170, 0, 170, 170, 0),
         .nature = NATURE_HARDY,
-		.ability = ABILITY_FUR_COAT
+		.ability = ABILITY_FUR_COAT,
+        .ball = BALL_PREMIER
     },
     [FRONTIER_MON_AEREON] = {
         .species = SPECIES_AEREON,
@@ -4806,7 +5406,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_SHARP_BEAK,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_BRAVE,
-		.ability = ABILITY_GALE_WINGS
+		.ability = ABILITY_GALE_WINGS,
+        .ball = BALL_PREMIER
     },
     [FRONTIER_MON_CONTAGEON] = {
         .species = SPECIES_CONTAGEON,
@@ -4814,7 +5415,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BLACK_SLUDGE,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_CORROSION
+		.ability = ABILITY_CORROSION,
+        .ball = BALL_PREMIER
     },
     [FRONTIER_MON_LANEON] = {
         .species = SPECIES_LANEON,
@@ -4822,7 +5424,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_GROUND_GEM,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 0, 170, 170),
         .nature = NATURE_CALM,
-		.ability = ABILITY_SOUL_HEART
+		.ability = ABILITY_SOUL_HEART,
+        .ball = BALL_PREMIER
     },
     [FRONTIER_MON_SCALEON] = {
         .species = SPECIES_SCALEON,
@@ -4830,7 +5433,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LOADED_DICE,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_PROTEAN
+		.ability = ABILITY_PROTEAN,
+        .ball = BALL_PREMIER
     },
     [FRONTIER_MON_TITANEON] = {
         .species = SPECIES_TITANEON,
@@ -4838,7 +5442,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 252),
         .nature = NATURE_BRAVE,
-		.ability = ABILITY_TRIAGE
+		.ability = ABILITY_TRIAGE,
+        .ball = BALL_PREMIER
     },
     [FRONTIER_MON_MUDCARGO] = {
         .species = SPECIES_MUDCARGO,
@@ -4846,7 +5451,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(0, 0, 252, 0, 0, 252),
         .nature = NATURE_SASSY,
-		.ability = ABILITY_MOLD_BREAKER
+		.ability = ABILITY_MOLD_BREAKER,
+        .ball = BALL_PREMIER
     },
     [FRONTIER_MON_RAITORA] = {
         .species = SPECIES_RAITORA,
@@ -4854,7 +5460,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_POWER_HERB,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_BEAST_BOOST
+		.ability = ABILITY_BEAST_BOOST,
+        .ball = BALL_PREMIER
     },
     [FRONTIER_MON_MADAME] = {
         .species = SPECIES_MADAME,
@@ -4862,7 +5469,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEEK,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
-		.ability = ABILITY_SUPER_LUCK
+		.ability = ABILITY_SUPER_LUCK,
+        .ball = BALL_PREMIER
     },
     [FRONTIER_MON_APIMARILL] = {
         .species = SPECIES_APIMARILL,
@@ -4870,7 +5478,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_STEELY_SPIRIT
+		.ability = ABILITY_STEELY_SPIRIT,
+        .ball = BALL_PREMIER
     },
     [FRONTIER_MON_SOLFLORA] = {
         .species = SPECIES_SOLFLORA,
@@ -4878,7 +5487,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_LIFE_ORB,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 170, 170, 0),
         .nature = NATURE_MODEST,
-		.ability = ABILITY_DRY_SKIN
+		.ability = ABILITY_DRY_SKIN,
+        .ball = BALL_PREMIER
     },
     [FRONTIER_MON_SHIBIREFUGU] = {
         .species = SPECIES_SHIBIREFUGU,
@@ -4886,7 +5496,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_ROCKY_HELMET,
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
-		.ability = ABILITY_POISON_POINT
+		.ability = ABILITY_POISON_POINT,
+        .ball = BALL_PREMIER
     },
     [FRONTIER_MON_DELIJOY] = {
         .species = SPECIES_DELIJOY,
@@ -4894,7 +5505,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_FOCUS_SASH,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_SNOW_WARNING
+		.ability = ABILITY_SNOW_WARNING,
+        .ball = BALL_PREMIER
     },
     [FRONTIER_MON_COGMENT] = {
         .species = SPECIES_COGMENT,
@@ -4902,6 +5514,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_BABIRI_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-		.ability = ABILITY_LEVITATE
+		.ability = ABILITY_LEVITATE,
+        .ball = BALL_PREMIER
     },
 };

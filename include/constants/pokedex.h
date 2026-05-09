@@ -1089,7 +1089,7 @@ enum NationalDexOrder
     #define NATIONAL_DEX_COUNT  NATIONAL_DEX_DEOXYS
 #endif
 
-#define POKEMON_SLOTS_NUMBER (NATIONAL_DEX_COUNT + 401)
+#define POKEMON_SLOTS_NUMBER (NATIONAL_DEX_COUNT + 392)
 
 // Hoenn Pokédex order
 enum HoennDexOrder

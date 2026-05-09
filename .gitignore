@@ -53,6 +53,10 @@ agbcc/
 include/constants/heal_locations.h
 include/constants/script_commands.h
 tools/trainerproc/trainerproc
+src/data/pokemon/teachable_learnsets.h
+src/data/tutor_moves.h
+test/battle/trainer_control.h
+>>>>>>> e80ae569039786564381723fca22aac07afc3503
 tools/compresSmol/compresSmol
 tools/compresSmol/compresSmolTilemap
 tools/aif2pcm/aif2pcm

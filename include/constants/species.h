@@ -1829,8 +1829,31 @@
 #define SPECIES_ZYGARDE_MEGA                            FAKE_SPECIES_END + 24
 #define SPECIES_DRAMPA_MEGA                             FAKE_SPECIES_END + 25
 #define SPECIES_FALINKS_MEGA                            FAKE_SPECIES_END + 26
+#define SPECIES_HEATRAN_MEGA                            FAKE_SPECIES_END + 27
+#define SPECIES_DARKRAI_MEGA                            FAKE_SPECIES_END + 28
+#define SPECIES_ZERAORA_MEGA                            FAKE_SPECIES_END + 29
+#define SPECIES_RAICHU_MEGA_X                           FAKE_SPECIES_END + 30
+#define SPECIES_RAICHU_MEGA_Y                           FAKE_SPECIES_END + 31
+#define SPECIES_CHIMECHO_MEGA                           FAKE_SPECIES_END + 32
+#define SPECIES_ABSOL_MEGA_Z                            FAKE_SPECIES_END + 33
+#define SPECIES_STARAPTOR_MEGA                          FAKE_SPECIES_END + 34
+#define SPECIES_GARCHOMP_MEGA_Z                         FAKE_SPECIES_END + 35
+#define SPECIES_LUCARIO_MEGA_Z                          FAKE_SPECIES_END + 36
+#define SPECIES_GOLURK_MEGA                             FAKE_SPECIES_END + 37
+#define SPECIES_MEOWSTIC_M_MEGA                         FAKE_SPECIES_END + 38
+#define SPECIES_MEOWSTIC_F_MEGA                         FAKE_SPECIES_END + 39
+#define SPECIES_CRABOMINABLE_MEGA                       FAKE_SPECIES_END + 40
+#define SPECIES_GOLISOPOD_MEGA                          FAKE_SPECIES_END + 41
+#define SPECIES_MAGEARNA_MEGA                           FAKE_SPECIES_END + 42
+#define SPECIES_MAGEARNA_ORIGINAL_MEGA                  FAKE_SPECIES_END + 43
+#define SPECIES_SCOVILLAIN_MEGA                         FAKE_SPECIES_END + 44
+#define SPECIES_BAXCALIBUR_MEGA                         FAKE_SPECIES_END + 45
+#define SPECIES_TATSUGIRI_CURLY_MEGA                    FAKE_SPECIES_END + 46
+#define SPECIES_TATSUGIRI_DROOPY_MEGA                   FAKE_SPECIES_END + 47
+#define SPECIES_TATSUGIRI_STRETCHY_MEGA                 FAKE_SPECIES_END + 48
+#define SPECIES_GLIMMORA_MEGA                           FAKE_SPECIES_END + 49
 
-#define SPECIES_EGG                                     (SPECIES_FALINKS_MEGA + 1)
+#define SPECIES_EGG                                     (SPECIES_GLIMMORA_MEGA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

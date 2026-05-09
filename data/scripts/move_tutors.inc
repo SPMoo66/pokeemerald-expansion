@@ -6,7 +6,7 @@ SlateportCity_PokemonFanClub_EventScript_SwaggerTutor::
 # 4 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_SwaggerTeach, MSGBOX_YESNO
 # 5 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq SlateportCity_PokemonFanClub_EventScript_SwaggerTutor_2
 SlateportCity_PokemonFanClub_EventScript_SwaggerTutor_1:
 # 8 "data/scripts/move_tutors.pory"
@@ -16,7 +16,7 @@ SlateportCity_PokemonFanClub_EventScript_SwaggerTutor_1:
 # 10 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 11 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq SlateportCity_PokemonFanClub_EventScript_SwaggerTutor_5
 SlateportCity_PokemonFanClub_EventScript_SwaggerTutor_4:
 # 14 "data/scripts/move_tutors.pory"
@@ -52,7 +52,7 @@ MauvilleCity_EventScript_TricksTutor::
 # 27 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_TricksTeach, MSGBOX_YESNO
 # 28 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq MauvilleCity_EventScript_TricksTutor_2
 MauvilleCity_EventScript_TricksTutor_1:
 # 31 "data/scripts/move_tutors.pory"
@@ -73,7 +73,7 @@ MauvilleCity_EventScript_TricksTutor_4:
 # 42 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 43 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq MauvilleCity_EventScript_TricksTutor_10
 MauvilleCity_EventScript_TricksTutor_9:
 # 46 "data/scripts/move_tutors.pory"
@@ -124,7 +124,7 @@ VerdanturfTown_PokemonCenter_1F_EventScript_IcyWindTutor::
 # 59 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_IcyWindTeach, MSGBOX_YESNO
 # 60 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq VerdanturfTown_PokemonCenter_1F_EventScript_IcyWindTutor_2
 VerdanturfTown_PokemonCenter_1F_EventScript_IcyWindTutor_1:
 # 63 "data/scripts/move_tutors.pory"
@@ -134,7 +134,7 @@ VerdanturfTown_PokemonCenter_1F_EventScript_IcyWindTutor_1:
 # 65 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 66 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq VerdanturfTown_PokemonCenter_1F_EventScript_IcyWindTutor_5
 VerdanturfTown_PokemonCenter_1F_EventScript_IcyWindTutor_4:
 # 69 "data/scripts/move_tutors.pory"
@@ -170,7 +170,7 @@ FallarborTown_Mart_EventScript_SignalBeamTutor::
 # 82 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_SignalBeamTeach, MSGBOX_YESNO
 # 83 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq FallarborTown_Mart_EventScript_SignalBeamTutor_2
 FallarborTown_Mart_EventScript_SignalBeamTutor_1:
 # 86 "data/scripts/move_tutors.pory"
@@ -180,7 +180,7 @@ FallarborTown_Mart_EventScript_SignalBeamTutor_1:
 # 88 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 89 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq FallarborTown_Mart_EventScript_SignalBeamTutor_5
 FallarborTown_Mart_EventScript_SignalBeamTutor_4:
 # 92 "data/scripts/move_tutors.pory"
@@ -216,7 +216,7 @@ LavaridgeTown_House_EventScript_SleepTalkTutor::
 # 105 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_SleepTalkTeach, MSGBOX_YESNO
 # 106 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq LavaridgeTown_House_EventScript_SleepTalkTutor_2
 LavaridgeTown_House_EventScript_SleepTalkTutor_1:
 # 109 "data/scripts/move_tutors.pory"
@@ -226,7 +226,7 @@ LavaridgeTown_House_EventScript_SleepTalkTutor_1:
 # 111 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 112 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq LavaridgeTown_House_EventScript_SleepTalkTutor_5
 LavaridgeTown_House_EventScript_SleepTalkTutor_4:
 # 115 "data/scripts/move_tutors.pory"
@@ -262,7 +262,7 @@ FortreeCity_House2_EventScript_BodySlamTutor::
 # 128 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_BodySlamTeach, MSGBOX_YESNO
 # 129 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq FortreeCity_House2_EventScript_BodySlamTutor_2
 FortreeCity_House2_EventScript_BodySlamTutor_1:
 # 132 "data/scripts/move_tutors.pory"
@@ -272,7 +272,7 @@ FortreeCity_House2_EventScript_BodySlamTutor_1:
 # 134 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 135 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq FortreeCity_House2_EventScript_BodySlamTutor_5
 FortreeCity_House2_EventScript_BodySlamTutor_4:
 # 138 "data/scripts/move_tutors.pory"
@@ -308,7 +308,7 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_HyperVoiceTutor::
 # 151 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_HyperVoiceTeach, MSGBOX_YESNO
 # 152 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq LilycoveCity_DepartmentStoreRooftop_EventScript_HyperVoiceTutor_2
 LilycoveCity_DepartmentStoreRooftop_EventScript_HyperVoiceTutor_1:
 # 155 "data/scripts/move_tutors.pory"
@@ -318,7 +318,7 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_HyperVoiceTutor_1:
 # 157 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 158 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq LilycoveCity_DepartmentStoreRooftop_EventScript_HyperVoiceTutor_5
 LilycoveCity_DepartmentStoreRooftop_EventScript_HyperVoiceTutor_4:
 # 161 "data/scripts/move_tutors.pory"
@@ -354,7 +354,7 @@ LilycoveCity_EventScript_CombatMoveTutor::
 # 174 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_CombatMoveTeach, MSGBOX_YESNO
 # 175 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq LilycoveCity_EventScript_CombatMoveTutor_2
 LilycoveCity_EventScript_CombatMoveTutor_1:
 # 178 "data/scripts/move_tutors.pory"
@@ -383,7 +383,7 @@ LilycoveCity_EventScript_CombatMoveTutor_4:
 # 197 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 198 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq LilycoveCity_EventScript_CombatMoveTutor_14
 LilycoveCity_EventScript_CombatMoveTutor_13:
 # 201 "data/scripts/move_tutors.pory"
@@ -454,7 +454,7 @@ MossdeepCity_EventScript_PledgeMoveTutor::
 # 214 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_PledgeMoveTeach, MSGBOX_YESNO
 # 215 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq MossdeepCity_EventScript_PledgeMoveTutor_2
 MossdeepCity_EventScript_PledgeMoveTutor_1:
 # 218 "data/scripts/move_tutors.pory"
@@ -477,7 +477,7 @@ MossdeepCity_EventScript_PledgeMoveTutor_4:
 # 231 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 232 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq MossdeepCity_EventScript_PledgeMoveTutor_11
 MossdeepCity_EventScript_PledgeMoveTutor_10:
 # 235 "data/scripts/move_tutors.pory"
@@ -533,7 +533,7 @@ SootopolisCity_PokemonCenter_1F_EventScript_DynamicPunchTutor::
 # 248 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_DynamicPunchTeach, MSGBOX_YESNO
 # 249 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq SootopolisCity_PokemonCenter_1F_EventScript_DynamicPunchTutor_2
 SootopolisCity_PokemonCenter_1F_EventScript_DynamicPunchTutor_1:
 # 252 "data/scripts/move_tutors.pory"
@@ -543,7 +543,7 @@ SootopolisCity_PokemonCenter_1F_EventScript_DynamicPunchTutor_1:
 # 254 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 255 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq SootopolisCity_PokemonCenter_1F_EventScript_DynamicPunchTutor_5
 SootopolisCity_PokemonCenter_1F_EventScript_DynamicPunchTutor_4:
 # 258 "data/scripts/move_tutors.pory"
@@ -579,7 +579,7 @@ PacifidlogTown_PokemonCenter_1F_EventScript_RecoilMoveTutor::
 # 271 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_RecoilMoveTeach, MSGBOX_YESNO
 # 272 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq PacifidlogTown_PokemonCenter_1F_EventScript_RecoilMoveTutor_2
 PacifidlogTown_PokemonCenter_1F_EventScript_RecoilMoveTutor_1:
 # 275 "data/scripts/move_tutors.pory"
@@ -608,7 +608,7 @@ PacifidlogTown_PokemonCenter_1F_EventScript_RecoilMoveTutor_4:
 # 294 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 295 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq PacifidlogTown_PokemonCenter_1F_EventScript_RecoilMoveTutor_14
 PacifidlogTown_PokemonCenter_1F_EventScript_RecoilMoveTutor_13:
 # 298 "data/scripts/move_tutors.pory"
@@ -679,7 +679,7 @@ EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor::
 # 311 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_LeagueMoveTeach, MSGBOX_YESNO
 # 312 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_2
 EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_1:
 # 315 "data/scripts/move_tutors.pory"
@@ -720,7 +720,7 @@ EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_4:
 # 346 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 347 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_20
 EverGrandeCity_PokemonCenter_1F_EventScript_MoveTutor_19:
 # 350 "data/scripts/move_tutors.pory"
@@ -813,7 +813,7 @@ EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor::
 # 358 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_LeagueMoveTeach, MSGBOX_YESNO
 # 359 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_2
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_1:
 # 362 "data/scripts/move_tutors.pory"
@@ -840,7 +840,7 @@ EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_4:
 # 379 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 380 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_13
 EverGrandeCity_PokemonLeague_1F_EventScript_MoveTutor_12:
 # 383 "data/scripts/move_tutors.pory"
@@ -906,7 +906,7 @@ BattleFrontier_Lounge4_EventScript_MoveTutor::
 # 396 "data/scripts/move_tutors.pory"
 	msgbox MoveTutor_Text_BattleFrontierFreeMoveTeach, MSGBOX_YESNO
 # 397 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq BattleFrontier_Lounge4_EventScript_MoveTutor_2
 BattleFrontier_Lounge4_EventScript_MoveTutor_1:
 # 400 "data/scripts/move_tutors.pory"
@@ -933,7 +933,7 @@ BattleFrontier_Lounge4_EventScript_MoveTutor_4:
 # 417 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 418 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq BattleFrontier_Lounge4_EventScript_MoveTutor_13
 BattleFrontier_Lounge4_EventScript_MoveTutor_12:
 # 421 "data/scripts/move_tutors.pory"
@@ -1187,7 +1187,7 @@ BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection::
 # 511 "data/scripts/move_tutors.pory"
 	msgbox BattleFrontier_Lounge7_Text_MoveWillBe4BattlePoints, MSGBOX_YESNO
 # 512 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_2
 BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_1:
 # 520 "data/scripts/move_tutors.pory"
@@ -1231,7 +1231,7 @@ BattleFrontier_Lounge7_EventScript_TeachTutorMove::
 # 532 "data/scripts/move_tutors.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
 # 533 "data/scripts/move_tutors.pory"
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, FALSE
 	goto_if_eq BattleFrontier_Lounge7_EventScript_TeachTutorMove_2
 BattleFrontier_Lounge7_EventScript_TeachTutorMove_1:
 # 536 "data/scripts/move_tutors.pory"
@@ -1261,16 +1261,26 @@ BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect::
 
 
 MoveTutor_EventScript_OpenPartyMenu::
+# 551 "data/scripts/move_tutors.pory"
+	chooseboxmon SELECT_PC_MON_MOVE_TUTOR
 # 552 "data/scripts/move_tutors.pory"
-	special ChooseMonForMoveTutor
-# 553 "data/scripts/move_tutors.pory"
 	waitstate
-# 554 "data/scripts/move_tutors.pory"
+# 553 "data/scripts/move_tutors.pory"
 	lock
-# 555 "data/scripts/move_tutors.pory"
+# 554 "data/scripts/move_tutors.pory"
 	faceplayer
-# 556 "data/scripts/move_tutors.pory"
+# 555 "data/scripts/move_tutors.pory"
 	release
+	return
+
+
+MoveTutor_AfterChooseBoxMon::
+# 559 "data/scripts/move_tutors.pory"
+	waitstate
+# 560 "data/scripts/move_tutors.pory"
+	special CanTeachMoveBoxMon
+# 561 "data/scripts/move_tutors.pory"
+	waitstate
 	return
 
 

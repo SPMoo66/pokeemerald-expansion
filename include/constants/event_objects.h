@@ -651,50 +651,50 @@
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla
-#define OBJ_EVENT_PAL_TAG_BALL_MASTER             0x1150
-#define OBJ_EVENT_PAL_TAG_BALL_ULTRA              0x1151
-#define OBJ_EVENT_PAL_TAG_BALL_GREAT              0x1152
-#define OBJ_EVENT_PAL_TAG_BALL_SAFARI             0x1153
-#define OBJ_EVENT_PAL_TAG_BALL_NET                0x1154
-#define OBJ_EVENT_PAL_TAG_BALL_DIVE               0x1155
-#define OBJ_EVENT_PAL_TAG_BALL_NEST               0x1156
-#define OBJ_EVENT_PAL_TAG_BALL_REPEAT             0x1157
-#define OBJ_EVENT_PAL_TAG_BALL_TIMER              0x1158
-#define OBJ_EVENT_PAL_TAG_BALL_LUXURY             0x1159
-#define OBJ_EVENT_PAL_TAG_BALL_PREMIER            0x115A
+#define OBJ_EVENT_PAL_TAG_BALL_MASTER             0x1160
+#define OBJ_EVENT_PAL_TAG_BALL_ULTRA              0x1161
+#define OBJ_EVENT_PAL_TAG_BALL_GREAT              0x1162
+#define OBJ_EVENT_PAL_TAG_BALL_SAFARI             0x1163
+#define OBJ_EVENT_PAL_TAG_BALL_NET                0x1164
+#define OBJ_EVENT_PAL_TAG_BALL_DIVE               0x1165
+#define OBJ_EVENT_PAL_TAG_BALL_NEST               0x1166
+#define OBJ_EVENT_PAL_TAG_BALL_REPEAT             0x1167
+#define OBJ_EVENT_PAL_TAG_BALL_TIMER              0x1168
+#define OBJ_EVENT_PAL_TAG_BALL_LUXURY             0x1169
+#define OBJ_EVENT_PAL_TAG_BALL_PREMIER            0x116A
 // Gen IV/Sinnoh
-#define OBJ_EVENT_PAL_TAG_BALL_DUSK               0x115B
-#define OBJ_EVENT_PAL_TAG_BALL_HEAL               0x115C
-#define OBJ_EVENT_PAL_TAG_BALL_QUICK              0x115D
-#define OBJ_EVENT_PAL_TAG_BALL_CHERISH            0x115E
-#define OBJ_EVENT_PAL_TAG_BALL_PARK               0x115F
+#define OBJ_EVENT_PAL_TAG_BALL_DUSK               0x116B
+#define OBJ_EVENT_PAL_TAG_BALL_HEAL               0x116C
+#define OBJ_EVENT_PAL_TAG_BALL_QUICK              0x116D
+#define OBJ_EVENT_PAL_TAG_BALL_CHERISH            0x116E
+#define OBJ_EVENT_PAL_TAG_BALL_PARK               0x116F
 // Gen II/Johto Apricorns
-#define OBJ_EVENT_PAL_TAG_BALL_FAST               0x1160
-#define OBJ_EVENT_PAL_TAG_BALL_LEVEL              0x1161
-#define OBJ_EVENT_PAL_TAG_BALL_LURE               0x1162
-#define OBJ_EVENT_PAL_TAG_BALL_HEAVY              0x1163
-#define OBJ_EVENT_PAL_TAG_BALL_LOVE               0x1164
-#define OBJ_EVENT_PAL_TAG_BALL_FRIEND             0x1165
-#define OBJ_EVENT_PAL_TAG_BALL_MOON               0x1166
-#define OBJ_EVENT_PAL_TAG_BALL_SPORT              0x1167
+#define OBJ_EVENT_PAL_TAG_BALL_FAST               0x1170
+#define OBJ_EVENT_PAL_TAG_BALL_LEVEL              0x1171
+#define OBJ_EVENT_PAL_TAG_BALL_LURE               0x1172
+#define OBJ_EVENT_PAL_TAG_BALL_HEAVY              0x1173
+#define OBJ_EVENT_PAL_TAG_BALL_LOVE               0x1174
+#define OBJ_EVENT_PAL_TAG_BALL_FRIEND             0x1175
+#define OBJ_EVENT_PAL_TAG_BALL_MOON               0x1176
+#define OBJ_EVENT_PAL_TAG_BALL_SPORT              0x1177
 // Gen V
-#define OBJ_EVENT_PAL_TAG_BALL_DREAM              0x1168
+#define OBJ_EVENT_PAL_TAG_BALL_DREAM              0x1178
 // Gen VII
-#define OBJ_EVENT_PAL_TAG_BALL_BEAST              0x1169
+#define OBJ_EVENT_PAL_TAG_BALL_BEAST              0x1179
 // Gen VIII
-#define OBJ_EVENT_PAL_TAG_BALL_STRANGE            0x116A
+#define OBJ_EVENT_PAL_TAG_BALL_STRANGE            0x117A
 #endif //OW_FOLLOWERS_POKEBALLS
 
-#define OBJ_EVENT_PAL_TAG_RICH_BOY                0x116C
-#define OBJ_EVENT_PAL_TAG_RUNNING_TRIATHLETE      0x116D
-#define OBJ_EVENT_PAL_TAG_TWIN                    0x116E
-#define OBJ_EVENT_PAL_TAG_BRAWLY                  0x116F
-#define OBJ_EVENT_PAL_TAG_FLANNERY                0x1170
-#define OBJ_EVENT_PAL_TAG_NORMAN                  0x1171
-#define OBJ_EVENT_PAL_TAG_STEVEN                  0x1172
-#define OBJ_EVENT_PAL_TAG_CYNTHIA                 0x1173
-#define OBJ_EVENT_PAL_TAG_FISH_BOWL               0x1174
-#define OBJ_EVENT_PAL_TAG_DYNAMITE                0x1175
+#define OBJ_EVENT_PAL_TAG_RICH_BOY                0x117B
+#define OBJ_EVENT_PAL_TAG_RUNNING_TRIATHLETE      0x117C
+#define OBJ_EVENT_PAL_TAG_TWIN                    0x117D
+#define OBJ_EVENT_PAL_TAG_BRAWLY                  0x117E
+#define OBJ_EVENT_PAL_TAG_FLANNERY                0x117F
+#define OBJ_EVENT_PAL_TAG_NORMAN                  0x1180
+#define OBJ_EVENT_PAL_TAG_STEVEN                  0x1181
+#define OBJ_EVENT_PAL_TAG_CYNTHIA                 0x1182
+#define OBJ_EVENT_PAL_TAG_FISH_BOWL               0x1183
+#define OBJ_EVENT_PAL_TAG_DYNAMITE                0x1184
 
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611

@@ -9,6 +9,8 @@
 #define PARTNER_RAYQUAZA                       4
 #define PARTNER_STEVEN_GRANITE_CAVE            5
 #define PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVE 6
-#define PARTNER_COUNT                          7
+#define PARTNER_DUMMY                          7
+#define PARTNER_COUNT                          8
+//Tests need PARTNER_COUNT to be at least 3 so we add a dummy partner
 
 #endif  // GUARD_CONSTANTS_BATTLE_PARTNERS_H

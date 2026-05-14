@@ -3331,7 +3331,7 @@ u8 FldEff_UseSurf(void)
     u16 surfMusicOption = gSaveBlock2Ptr->optionsSurfMusic;
     if (surfMusicOption == 0) {
         Overworld_ClearSavedMusic();
-        Overworld_ChangeMusicTo(MUS_SURF);
+        Overworld_ChangeMusicTo(IS_FRLG ? MUS_RG_SURF : MUS_SURF);
     }
     return FALSE;
 }

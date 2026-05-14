@@ -177,7 +177,7 @@ def make_move_tutors(build_dir, special_movesets):
     with open(SOURCE_TUTORS_JSON, "r") as fp:
         repo_tutors = json.load(fp)
 
-    repo_tutors = sorted(repo_tutors + special_movesets["extraTutors"])
+    repo_tutors = sorted(list(set(repo_tutors + special_movesets["extraTutors"])))
     create_tutor_moves_array(repo_tutors)
 
     return repo_tutors
@@ -192,14 +192,13 @@ def main():
         print(__doc__, file=sys.stderr)
         quit(1)
 
-    if len(sys.argv) == 2:
-        SOURCE_DIR = pathlib.Path(sys.argv[1])
-    elif len(sys.argv) == 3:
+    if len(sys.argv) == 3:
         if sys.argv[1] != "--tutors":
             print("Unknown make_teachables mode", file=sys.stderr)
             quit(1)
         tutor_mode = True
-        SOURCE_DIR = pathlib.Path(sys.argv[2])
+
+    SOURCE_DIR = pathlib.Path(sys.argv[-1])
 
     with open("src/data/pokemon/special_movesets.json", "r") as file:
         special_movesets = json.load(file)

@@ -600,51 +600,52 @@ Common_Movement_UnlockFacingDirection:
 Common_Movement_WalkUpSlow::
     walk_slow_up
     step_end
+
 Common_Movement_WalkUpSlow2::
     walk_slow_up
     walk_slow_up
     step_end
 
 Common_Movement_WalkDownSlow::
-    walk_slow_down
-    step_end
+	walk_slow_down
+	step_end
 
 Common_Movement_WalkRightSlow::
-    walk_slow_right
-    step_end
+	walk_slow_right
+	step_end
 
 Common_Movement_WalkLeftSlow::
-    walk_slow_left
-    step_end
+	walk_slow_left
+	step_end
 
 Common_Movement_WalkUpFast::
-    walk_fast_up
-    step_end
+	walk_fast_up
+	step_end
 
 Common_Movement_WalkDownFast::
-    walk_fast_down
-    step_end
+	walk_fast_down
+	step_end
 
 Common_Movement_WalkRightFast::
-    walk_fast_right
-    step_end
+	walk_fast_right
+	step_end
 
 Common_Movement_WalkLeftFast::
-    walk_fast_left
-    step_end
+	walk_fast_left
+	step_end
 
 Common_Movement_WalkUpFaster::
-    walk_faster_up
-    step_end
+	walk_faster_up
+	step_end
 
 Common_Movement_WalkDownFaster::
-    walk_faster_down
-    step_end
+	walk_faster_down
+	step_end
 
 Common_Movement_WalkRightFaster::
-    walk_faster_right
-    step_end
+	walk_faster_right
+	step_end
 
 Common_Movement_WalkLeftFaster::
-    walk_faster_left
-    step_end
+	walk_faster_left
+	step_end

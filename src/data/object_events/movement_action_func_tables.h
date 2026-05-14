@@ -272,15 +272,6 @@ u8 MovementAction_Fly_Finish(struct ObjectEvent *, struct Sprite *);
 u8 MovementAction_FlyDown_Step0(struct ObjectEvent *, struct Sprite *);
 u8 MovementAction_FlyDown_Step1(struct ObjectEvent *, struct Sprite *);
 
-u8 MovementAction_SpinDown_Step0(struct ObjectEvent *, struct Sprite *);
-u8 MovementAction_SpinDown_Step1(struct ObjectEvent *, struct Sprite *);
-u8 MovementAction_SpinUp_Step0(struct ObjectEvent *, struct Sprite *);
-u8 MovementAction_SpinUp_Step1(struct ObjectEvent *, struct Sprite *);
-u8 MovementAction_SpinLeft_Step0(struct ObjectEvent *, struct Sprite *);
-u8 MovementAction_SpinLeft_Step1(struct ObjectEvent *, struct Sprite *);
-u8 MovementAction_SpinRight_Step0(struct ObjectEvent *, struct Sprite *);
-u8 MovementAction_SpinRight_Step1(struct ObjectEvent *, struct Sprite *);
-
 // slow running
 u8 MovementActionFunc_RunSlowDown_Step0(struct ObjectEvent *objectEvent, struct Sprite *sprite);
 u8 MovementActionFunc_RunSlowUp_Step0(struct ObjectEvent *objectEvent, struct Sprite *sprite);
@@ -320,6 +311,16 @@ u8 MovementAction_QuarterStepRight_Step0(struct ObjectEvent *objectEvent, struct
 u8 MovementAction_QuarterStepUp_Step0(struct ObjectEvent *objectEvent, struct Sprite *sprite);
 u8 MovementAction_QuarterStepDown_Step0(struct ObjectEvent *objectEvent, struct Sprite *sprite);
 u8 MovementAction_QuarterStep_Step1(struct ObjectEvent *objectEvent, struct Sprite *sprite);
+
+u8 MovementAction_SpinDown_Step0(struct ObjectEvent *, struct Sprite *);
+u8 MovementAction_SpinDown_Step1(struct ObjectEvent *, struct Sprite *);
+u8 MovementAction_SpinUp_Step0(struct ObjectEvent *, struct Sprite *);
+u8 MovementAction_SpinUp_Step1(struct ObjectEvent *, struct Sprite *);
+u8 MovementAction_SpinLeft_Step0(struct ObjectEvent *, struct Sprite *);
+u8 MovementAction_SpinLeft_Step1(struct ObjectEvent *, struct Sprite *);
+u8 MovementAction_SpinRight_Step0(struct ObjectEvent *, struct Sprite *);
+u8 MovementAction_SpinRight_Step1(struct ObjectEvent *, struct Sprite *);
+
 
 u8 (*const gMovementActionFuncs_FaceDown[])(struct ObjectEvent *, struct Sprite *);
 u8 (*const gMovementActionFuncs_FaceUp[])(struct ObjectEvent *, struct Sprite *);
@@ -489,11 +490,6 @@ u8 (*const gMovementActionFuncs_FlyDown[])(struct ObjectEvent *, struct Sprite *
 u8 (*const gMovementActionFuncs_EmoteX[])(struct ObjectEvent *, struct Sprite *);
 u8 (*const gMovementActionFuncs_EmoteDoubleExclMark[])(struct ObjectEvent *, struct Sprite *);
 
-u8 (*const sMovementActionFuncs_SpinDown[])(struct ObjectEvent *, struct Sprite *);
-u8 (*const sMovementActionFuncs_SpinUp[])(struct ObjectEvent *, struct Sprite *);
-u8 (*const sMovementActionFuncs_SpinLeft[])(struct ObjectEvent *, struct Sprite *);
-u8 (*const sMovementActionFuncs_SpinRight[])(struct ObjectEvent *, struct Sprite *);
-
 // run slow
 u8 (*const gMovementActionFuncs_RunDownSlow[])(struct ObjectEvent *, struct Sprite *);
 u8 (*const gMovementActionFuncs_RunUpSlow[])(struct ObjectEvent *, struct Sprite *);
@@ -523,6 +519,11 @@ u8 (*const gMovementActionFuncs_QuarterStepUp[])(struct ObjectEvent *, struct Sp
 u8 (*const gMovementActionFuncs_QuarterStepDown[])(struct ObjectEvent *, struct Sprite *);
 u8 (*const gMovementActionFuncs_QuarterStepLeft[])(struct ObjectEvent *, struct Sprite *);
 u8 (*const gMovementActionFuncs_QuarterStepRight[])(struct ObjectEvent *, struct Sprite *);
+
+u8 (*const gMovementActionFuncs_SpinDown[])(struct ObjectEvent *, struct Sprite *);
+u8 (*const gMovementActionFuncs_SpinUp[])(struct ObjectEvent *, struct Sprite *);
+u8 (*const gMovementActionFuncs_SpinLeft[])(struct ObjectEvent *, struct Sprite *);
+u8 (*const gMovementActionFuncs_SpinRight[])(struct ObjectEvent *, struct Sprite *);
 
 u8 (*const *const gMovementActionFuncs[])(struct ObjectEvent *, struct Sprite *) = {
     [MOVEMENT_ACTION_FACE_DOWN] = gMovementActionFuncs_FaceDown,
@@ -690,10 +691,6 @@ u8 (*const *const gMovementActionFuncs[])(struct ObjectEvent *, struct Sprite *)
     [MOVEMENT_ACTION_FLY_DOWN] = gMovementActionFuncs_FlyDown,
     [MOVEMENT_ACTION_EMOTE_X] = gMovementActionFuncs_EmoteX,
     [MOVEMENT_ACTION_EMOTE_DOUBLE_EXCL_MARK] = gMovementActionFuncs_EmoteDoubleExclMark,
-    [MOVEMENT_ACTION_SPIN_DOWN] = sMovementActionFuncs_SpinDown,
-    [MOVEMENT_ACTION_SPIN_UP] = sMovementActionFuncs_SpinUp,
-    [MOVEMENT_ACTION_SPIN_LEFT] = sMovementActionFuncs_SpinLeft,
-    [MOVEMENT_ACTION_SPIN_RIGHT] = sMovementActionFuncs_SpinRight,
     [MOVEMENT_ACTION_EXIT_POKEBALL] = gMovementActionFuncs_ExitPokeball,
     [MOVEMENT_ACTION_ENTER_POKEBALL] = gMovementActionFuncs_EnterPokeball,
 
@@ -718,12 +715,16 @@ u8 (*const *const gMovementActionFuncs[])(struct ObjectEvent *, struct Sprite *)
     // shaking
     [MOVEMENT_ACTION_SHAKE_HORIZONTAL] = gMovementActionFuncs_ShakeHorizontal,
     [MOVEMENT_ACTION_SHAKE_VERTICAL] = gMovementActionFuncs_ShakeVertical,
-
     // quarter steps
     [MOVEMENT_ACTION_QUARTER_STEP_LEFT] = gMovementActionFuncs_QuarterStepLeft,
     [MOVEMENT_ACTION_QUARTER_STEP_RIGHT] = gMovementActionFuncs_QuarterStepRight,
     [MOVEMENT_ACTION_QUARTER_STEP_UP] = gMovementActionFuncs_QuarterStepUp,
     [MOVEMENT_ACTION_QUARTER_STEP_DOWN] = gMovementActionFuncs_QuarterStepDown,
+
+    [MOVEMENT_ACTION_SPIN_DOWN]        = gMovementActionFuncs_SpinDown,
+    [MOVEMENT_ACTION_SPIN_UP]          = gMovementActionFuncs_SpinUp,
+    [MOVEMENT_ACTION_SPIN_LEFT]        = gMovementActionFuncs_SpinLeft,
+    [MOVEMENT_ACTION_SPIN_RIGHT]       = gMovementActionFuncs_SpinRight,
 };
 
 u8 (*const gMovementActionFuncs_FaceDown[])(struct ObjectEvent *, struct Sprite *) = {
@@ -1711,30 +1712,6 @@ u8 (*const gMovementActionFuncs_EmoteDoubleExclMark[])(struct ObjectEvent *, str
     MovementAction_Finish,
 };
 
-u8 (*const sMovementActionFuncs_SpinDown[])(struct ObjectEvent *, struct Sprite *) = {
-    MovementAction_SpinDown_Step0,
-    MovementAction_SpinDown_Step1,
-    MovementAction_PauseSpriteAnim,
-};
-
-u8 (*const sMovementActionFuncs_SpinUp[])(struct ObjectEvent *, struct Sprite *) = {
-    MovementAction_SpinUp_Step0,
-    MovementAction_SpinUp_Step1,
-    MovementAction_PauseSpriteAnim,
-};
-
-u8 (*const sMovementActionFuncs_SpinLeft[])(struct ObjectEvent *, struct Sprite *) = {
-    MovementAction_SpinLeft_Step0,
-    MovementAction_SpinLeft_Step1,
-    MovementAction_PauseSpriteAnim,
-};
-
-u8 (*const sMovementActionFuncs_SpinRight[])(struct ObjectEvent *, struct Sprite *) = {
-    MovementAction_SpinRight_Step0,
-    MovementAction_SpinRight_Step1,
-    MovementAction_PauseSpriteAnim,
-};
-
 // slow running
 u8 (*const gMovementActionFuncs_RunDownSlow[])(struct ObjectEvent *, struct Sprite *) = {
     MovementActionFunc_RunSlowDown_Step0,
@@ -1872,4 +1849,28 @@ u8 (*const gMovementActionFuncs_QuarterStepDown[])(struct ObjectEvent *, struct 
     MovementAction_QuarterStepDown_Step0,
     MovementAction_QuarterStep_Step1,
     MovementAction_Finish,
+};
+
+u8 (*const gMovementActionFuncs_SpinDown[])(struct ObjectEvent *, struct Sprite *) = {
+    MovementAction_SpinDown_Step0,
+    MovementAction_SpinDown_Step1,
+    MovementAction_PauseSpriteAnim,
+};
+
+u8 (*const gMovementActionFuncs_SpinUp[])(struct ObjectEvent *, struct Sprite *) = {
+    MovementAction_SpinUp_Step0,
+    MovementAction_SpinUp_Step1,
+    MovementAction_PauseSpriteAnim,
+};
+
+u8 (*const gMovementActionFuncs_SpinLeft[])(struct ObjectEvent *, struct Sprite *) = {
+    MovementAction_SpinLeft_Step0,
+    MovementAction_SpinLeft_Step1,
+    MovementAction_PauseSpriteAnim,
+};
+
+u8 (*const gMovementActionFuncs_SpinRight[])(struct ObjectEvent *, struct Sprite *) = {
+    MovementAction_SpinRight_Step0,
+    MovementAction_SpinRight_Step1,
+    MovementAction_PauseSpriteAnim,
 };

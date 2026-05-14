@@ -80,12 +80,15 @@
 #define FLDEFF_USE_ROCK_CLIMB            75
 #define FLDEFF_ROCK_CLIMB_DUST           76
 #define FLDEFF_ORAS_DOWSE                77
+#define FLDEFF_SMILEY_FACE_ICON          78
+#define FLDEFF_HALL_OF_FAME_RECORD_FRLG  79
+#define FLDEFF_PHOTO_FLASH               80
 
-#define FLDEFF_MUSIC_NOTE_ICON           78 // new emote
-#define FLDEFF_SMILE_ICON                79 // new emote
-#define FLDEFF_SWEAT_DROP_ICON           80 // new emote
-#define FLDEFF_TALKING_ICON              81 // new emote
-#define FLDEFF_THINKING_ICON             82 // new emote
+#define FLDEFF_MUSIC_NOTE_ICON           81 // new emote
+#define FLDEFF_SMILE_ICON                82 // new emote
+#define FLDEFF_SWEAT_DROP_ICON           83 // new emote
+#define FLDEFF_TALKING_ICON              84 // new emote
+#define FLDEFF_THINKING_ICON             85 // new emote
 
 #define FLDEFFOBJ_SHADOW_S              0
 #define FLDEFFOBJ_SHADOW_M              1

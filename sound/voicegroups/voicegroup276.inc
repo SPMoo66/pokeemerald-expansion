@@ -51,7 +51,7 @@ voicegroup276::
 	voice_keysplit voicegroup006, KeySplitTable2 @ string ensemble
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_dp_sopranochoir60, 255, 200, 255, 171
 	voice_directsound 60, 0, DirectSoundWaveData_classical_choir_voice_ahhs, 255, 0, 255, 0
 	voice_directsound 60, 0, DirectSoundWaveData_dp_tenorchoir48, 255, 200, 255, 171
 	voice_directsound 60, 0, DirectSoundWaveData_drill_dozer_orchestra_hit, 255, 165, 180, 241

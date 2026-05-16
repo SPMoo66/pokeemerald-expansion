@@ -925,12 +925,70 @@
 #define TRAINER_SIMULATOR_FLINT             918
 #define TRAINER_SIMULATOR_LUCIAN            919
 #define TRAINER_SIMULATOR_CYNTHIA           920
+#define TRAINER_WILD_POKEMON_IG_1           921
+#define TRAINER_WILD_POKEMON_IG_2           922
+#define TRAINER_WILD_POKEMON_IG_3           923
+#define TRAINER_WILD_POKEMON_IG_4           924
+#define TRAINER_LEO                         925
+#define TRAINER_ERYK                        926
+#define TRAINER_SELINA                      927
+#define TRAINER_CODY                        928
+#define TRAINER_DARREN                      929
+#define TRAINER_JAKOB                       930
+#define TRAINER_MILO                        931
+#define TRAINER_MIRA                        932
+#define TRAINER_DELLA                       933
+#define TRAINER_DARIO                       934
+#define TRAINER_GRUNT_BLANCHED_DEPTHS_1     935
+#define TRAINER_GRUNT_BLANCHED_DEPTHS_2     936
+#define TRAINER_GRUNT_BLANCHED_DEPTHS_3     937
+#define TRAINER_GRUNT_BLANCHED_DEPTHS_4     938
+#define TRAINER_GRUNT_BLANCHED_DEPTHS_5     939
+#define TRAINER_GRUNT_BLANCHED_DEPTHS_6     940
+#define TRAINER_MATT_BLANCHED_DEPTHS        941
+#define TRAINER_MAX                         942
+#define TRAINER_WILLOW                      943
+#define TRAINER_VANCE                       944
+#define TRAINER_AVELINE                     945
+#define TRAINER_GRUNT_SUBMERGED_CAVE        946
+#define TRAINER_ZADEN                       947
+#define TRAINER_CORVIN                      948
+#define TRAINER_SABLE                       949
+#define TRAINER_RENZO                       950
+#define TRAINER_THEO                        951
+#define TRAINER_GAVIN                       952
+#define TRAINER_FINN                        953
+#define TRAINER_BRIAN                       954
+#define TRAINER_OTIS                        955
+#define TRAINER_LARS                        956
+#define TRAINER_KEELA                       957
+#define TRAINER_GORDON                      958
+#define TRAINER_VERNON                      959
+#define TRAINER_HUMPHREY                    960
+#define TRAINER_FRED                        961
+#define TRAINER_DIO                         962
+#define TRAINER_SERAPHINA                   963
+#define TRAINER_ELARA                       964
+#define TRAINER_JON                         965
+#define TRAINER_ELMER                       966
+#define TRAINER_DEWEY                       967
+#define TRAINER_HAROLD                      968
+#define TRAINER_AURORA                      969
+#define TRAINER_TOBY                        970
+#define TRAINER_MARVIN                      971
+#define TRAINER_LUTHOR                      972
+#define TRAINER_ZED                         973
+#define TRAINER_TESSA                       974
+#define TRAINER_LEX                         975
+#define TRAINER_WILD_POKEMON_BV_1           976
+#define TRAINER_WILD_POKEMON_BV_2           977
+#define TRAINER_STEVEN_EXP_1                978
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_EMERALD              921
+#define TRAINERS_COUNT_EMERALD              979
 #define MAX_TRAINERS_COUNT_EMERALD          1280
 
 #if IS_FRLG

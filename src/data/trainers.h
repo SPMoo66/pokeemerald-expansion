@@ -11068,3 +11068,712 @@
         .party = TRAINER_PARTY(sParty_CynthiaSimulator),
     },
 
+    [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_IG_1] =
+    {
+        .trainerClass = TRAINER_CLASS_WILD,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_FRONT_SHADOWED_LUCARIO,
+        .trainerName = _("Pokémon"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_WildPokemonIG1),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_IG_2] =
+    {
+        .trainerClass = TRAINER_CLASS_WILD,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_FRONT_SHADOWED_LUCARIO,
+        .trainerName = _("Pokémon"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_WildPokemonIG2),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_IG_3] =
+    {
+        .trainerClass = TRAINER_CLASS_WILD,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_FRONT_SHADOWED_LUCARIO,
+        .trainerName = _("Pokémon"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_WildPokemonIG3),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_IG_4] =
+    {
+        .trainerClass = TRAINER_CLASS_WILD,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_FRONT_SHADOWED_LUCARIO,
+        .trainerName = _("Pokémon"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_WildPokemonIG4),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_LEO] =
+    {
+        .trainerClass = TRAINER_CLASS_TRIATHLETE,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_M,
+        .trainerName = _("Leo"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Leo),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_ERYK] =
+    {
+        .trainerClass = TRAINER_CLASS_FISHERMAN,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerName = _("Eryk"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Eryk),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SELINA] =
+    {
+        .trainerClass = TRAINER_CLASS_SWIMMER_F,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerName = _("Selina"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Selina),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_CODY] =
+    {
+        .trainerClass = TRAINER_CLASS_KINDLER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_FRONT_KINDLER,
+        .trainerName = _("Cody"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Cody),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_DARREN] =
+    {
+        .trainerClass = TRAINER_CLASS_SAILOR,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerName = _("Darren"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Darren),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_JAKOB] =
+    {
+        .trainerClass = TRAINER_CLASS_SWIMMER_M,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerName = _("Jakob"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Jakob),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_MILO] =
+    {
+        .trainerClass = TRAINER_CLASS_SWIMMER_M,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerName = _("Milo"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Milo),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_MIRA] =
+    {
+        .trainerClass = TRAINER_CLASS_SWIMMER_F,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerName = _("Mira"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Mira),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_DELLA] =
+    {
+        .trainerClass = TRAINER_CLASS_SWIMMER_F,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerName = _("Della"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Della),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_DARIO] =
+    {
+        .trainerClass = TRAINER_CLASS_SWIMMER_M,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerName = _("Dario"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Dario),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_BLANCHED_DEPTHS_1] =
+    {
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_GruntBlanchedDepths1),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_BLANCHED_DEPTHS_2] =
+    {
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerName = _(""),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_GruntBlanchedDepths2),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_BLANCHED_DEPTHS_3] =
+    {
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerName = _(""),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_GruntBlanchedDepths3),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_BLANCHED_DEPTHS_4] =
+    {
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,
+        .trainerName = _(""),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_GruntBlanchedDepths4),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_BLANCHED_DEPTHS_5] =
+    {
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerName = _(""),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_GruntBlanchedDepths5),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_BLANCHED_DEPTHS_6] =
+    {
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,
+        .trainerName = _(""),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_GruntBlanchedDepths6),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_MATT_BLANCHED_DEPTHS] =
+    {
+        .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = TRAINER_PIC_FRONT_AQUA_ADMIN_MATT,
+        .trainerName = _("Matt"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_MattBlanchedDepths),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_MAX] =
+    {
+        .trainerClass = TRAINER_CLASS_COLLECTOR,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = TRAINER_PIC_FRONT_COLLECTOR,
+        .trainerName = _("Max"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Max),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_WILLOW] =
+    {
+        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F,
+        .trainerName = _("Willow"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Willow),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_VANCE] =
+    {
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerName = _("Vance"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Vance),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_AVELINE] =
+    {
+        .trainerClass = TRAINER_CLASS_TRIATHLETE,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_F,
+        .trainerName = _("Aveline"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Aveline),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_SUBMERGED_CAVE] =
+    {
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,
+        .trainerName = _("Grunt"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_GruntSubmergedCave),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_ZADEN] =
+    {
+        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerName = _("Zaden"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Zaden),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_CORVIN] =
+    {
+        .trainerClass = TRAINER_CLASS_SAILOR,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerName = _("Corvin"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Corvin),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SABLE] =
+    {
+        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerName = _("Sable"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Sable),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_RENZO] =
+    {
+        .trainerClass = TRAINER_CLASS_FISHERMAN,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerName = _("Renzo"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Renzo),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_THEO] =
+    {
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerName = _("Theo"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Theo),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_GAVIN] =
+    {
+        .trainerClass = TRAINER_CLASS_RICH_BOY,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = TRAINER_PIC_FRONT_RICH_BOY,
+        .trainerName = _("Gavin"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Gavin),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_FINN] =
+    {
+        .trainerClass = TRAINER_CLASS_SAILOR,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerName = _("Finn"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Finn),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_BRIAN] =
+    {
+        .trainerClass = TRAINER_CLASS_SAILOR,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerName = _("Brian"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Brian),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_OTIS] =
+    {
+        .trainerClass = TRAINER_CLASS_SAILOR,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerName = _("Otis"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Otis),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_LARS] =
+    {
+        .trainerClass = TRAINER_CLASS_HIKER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerName = _("Lars"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Lars),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_KEELA] =
+    {
+        .trainerClass = TRAINER_CLASS_TUBER_F,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = TRAINER_PIC_FRONT_TUBER_F,
+        .trainerName = _("Keela"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Keela),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_GORDON] =
+    {
+        .trainerClass = TRAINER_CLASS_TUBER_M,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = TRAINER_PIC_FRONT_TUBER_M,
+        .trainerName = _("Gordon"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Gordon),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_VERNON] =
+    {
+        .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerName = _("Vernon"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Vernon),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_HUMPHREY] =
+    {
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerName = _("Humphrey"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_FRED] =
+    {
+        .trainerClass = TRAINER_CLASS_CAMPER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerName = _("Fred"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_DIO] =
+    {
+        .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerName = _("Dio"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SERAPHINA] =
+    {
+        .trainerClass = TRAINER_CLASS_SWIMMER_F,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerName = _("Seraphina"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_ELARA] =
+    {
+        .trainerClass = TRAINER_CLASS_SWIMMER_F,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerName = _("Elara"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_JON] =
+    {
+        .trainerClass = TRAINER_CLASS_SWIMMER_M,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerName = _("Jon"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_ELMER] =
+    {
+        .trainerClass = TRAINER_CLASS_FISHERMAN,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerName = _("Elmer"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_DEWEY] =
+    {
+        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerName = _("Dewey"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_HAROLD] =
+    {
+        .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerName = _("Harold"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_AURORA] =
+    {
+        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerName = _("Aurora"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_TOBY] =
+    {
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerName = _("Toby"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_MARVIN] =
+    {
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerName = _("Marvin"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_LUTHOR] =
+    {
+        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerName = _("Luthor"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_ZED] =
+    {
+        .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerName = _("Zed"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_TESSA] =
+    {
+        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerName = _("Tessa"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_LEX] =
+    {
+        .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerName = _("Lex"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_BV_1] =
+    {
+        .trainerClass = TRAINER_CLASS_WILD,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_FRONT_SHADOWED_LUCARIO,
+        .trainerName = _("Pokémon"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_BV_2] =
+    {
+        .trainerClass = TRAINER_CLASS_WILD,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_FRONT_SHADOWED_LUCARIO,
+        .trainerName = _("Pokémon"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_STEVEN_EXP_1] =
+    {
+        .trainerClass = TRAINER_CLASS_CHAMPION,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_FRONT_STEVEN,
+        .trainerName = _("Steven"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+/*
+
+    [DIFFICULTY_NORMAL][TRAINER_] =
+    {
+        .trainerClass = TRAINER_CLASS_,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_,
+        .trainerPic = TRAINER_PIC_FRONT_,
+        .trainerName = _(""),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+    },
+*/

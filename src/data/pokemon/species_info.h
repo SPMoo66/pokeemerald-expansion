@@ -608,10 +608,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .height = 4,
         .weight = 55,
         .description = COMPOUND_STRING(
-            "Its vines snap off easily and painlessly\n"
-            "if they are grabbed, allowing it to make a\n"
-            "quick getaway. The lost vines are replaced\n"
-            "by new growth the very next day."),
+            "Some may try to keep Tangtrip as pets,\n"
+            "but their evolution into viney monsters\n"
+            "lead many to regret."),
         .pokemonScale = 304,
         .pokemonOffset = 1,
         .trainerScale = 256,

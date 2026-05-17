@@ -1,1 +1,16 @@
 mapscripts SubmergedCave_1F_2R_MapScripts {}
+
+script SubmergedCave_1F_2R_EventScript_Vance {
+	trainerbattle_single (TRAINER_VANCE, "My, these crystals are fascinating!", "Hold on, please!")
+	msgbox ("This deep purple…\pPerhaps this is the island's namesake.", MSGBOX_AUTOCLOSE)
+}
+
+script SubmergedCave_1F_2R_EventScript_Aveline {
+	trainerbattle_single (TRAINER_AVELINE, "First, a swim down here.\nNext, a battle!", "Hah… I was winded…")
+	msgbox ("Battles?\pNo, they actually aren't a part of\ntriathlons.", MSGBOX_AUTOCLOSE)
+}
+
+script SubmergedCave_1F_2R_EventScript_AquaGrunt {
+	trainerbattle_single (TRAINER_GRUNT_SUBMERGED_CAVE, "Wha?! No, leave me alone!", "Dang!")
+	msgbox ("I just recovered after the last kid…", MSGBOX_AUTOCLOSE)
+}

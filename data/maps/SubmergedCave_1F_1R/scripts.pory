@@ -23,3 +23,13 @@ mapscripts SubmergedCave_1F_1R_MapScripts {
 		}
 	]
 }
+
+script SubmergedCave_1F_1R_EventScript_Max {
+	trainerbattle_single (TRAINER_MAX, "I'm down here to collect everything\nrare!", "Oh, no!")
+	msgbox ("I'm already beaten down, and I only\nmade it to the entrance…", MSGBOX_AUTOCLOSE)
+}
+
+script SubmergedCave_1F_1R_EventScript_Willow {
+	trainerbattle_single (TRAINER_WILLOW, "What a dark cave!\nThank goodness I brought my flashlight!", "Wait, I think my flashlight just\nflickered!")
+	msgbox ("Hey, do you have any extra batteries?\pMy partner must have the others we\nbrought…", MSGBOX_AUTOCLOSE)
+}

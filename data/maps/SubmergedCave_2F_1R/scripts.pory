@@ -24,6 +24,31 @@ mapscripts SubmergedCave_2F_1R_MapScripts {
 	]
 }
 
+script SubmergedCave_2F_1R_EventScript_Zaden {
+	trainerbattle_single (TRAINER_ZADEN, "Two of you, huh?\pI can take this challenge!", "Well… uh… of course I'd lose in this\nsituation…")
+	msgbox ("I guess I should have stuck to just\none opponent.", MSGBOX_AUTOCLOSE)
+}
+
+script SubmergedCave_2F_1R_EventScript_Corvin {
+	trainerbattle_single (TRAINER_CORVIN, "Join me for an oceanic battle!", "I concede!")
+	msgbox ("Even the bottom of the ocean is no\nmatch for a true sailor!", MSGBOX_AUTOCLOSE)
+}
+
+script SubmergedCave_2F_1R_EventScript_Sable {
+	trainerbattle_single (TRAINER_SABLE, "Help me test out a new strategy with\nthis new species!", "I see…")
+	msgbox ("These new Pokémon open up so many\nnew strategies for us.", MSGBOX_AUTOCLOSE)
+}
+
+script SubmergedCave_2F_1R_EventScript_Renzo {
+	trainerbattle_single (TRAINER_RENZO, "I'm still looking for a new catch,\nbut I'll test out my team on you!", "Oh, I definitely need a new addition\nto compete!")
+	msgbox ("Do you think I could cast my line out\nof the exit and catch something?", MSGBOX_AUTOCLOSE)
+}
+
+script SubmergedCave_2F_1R_EventScript_Theo {
+	trainerbattle_single (TRAINER_THEO, "A battle would give me an excellent break from my research.", "Time to get back to work!")
+	msgbox ("I believe the crystals on the surface\nmay be related to those down here.", MSGBOX_AUTOCLOSE)
+}
+
 script SubmergedCave_2F_1R_CommonEnterNonAnimDoor {
 	lock
 	applymovement (LOCALID_PLAYER, Common_Movement_SetInvisible)

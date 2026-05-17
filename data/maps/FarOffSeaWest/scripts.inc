@@ -56,7 +56,7 @@ FarOffSeaWest_MapScripts_MAP_SCRIPT_ON_LOAD_1:
 
 FarOffSeaWest_EventScript_Selina::
 # 30 "data/maps/FarOffSeaWest/scripts.pory"
-	trainerbattle_single TRAINER_SAWYER_1, FarOffSeaWest_EventScript_Selina_Text_0, FarOffSeaWest_EventScript_Selina_Text_1
+	trainerbattle_single TRAINER_SELINA, FarOffSeaWest_EventScript_Selina_Text_0, FarOffSeaWest_EventScript_Selina_Text_1
 # 31 "data/maps/FarOffSeaWest/scripts.pory"
 	msgbox FarOffSeaWest_EventScript_Selina_Text_2, MSGBOX_AUTOCLOSE
 	return
@@ -64,7 +64,7 @@ FarOffSeaWest_EventScript_Selina::
 
 FarOffSeaWest_EventScript_Cody::
 # 35 "data/maps/FarOffSeaWest/scripts.pory"
-	trainerbattle_single TRAINER_SAWYER_1, FarOffSeaWest_EventScript_Cody_Text_0, FarOffSeaWest_EventScript_Cody_Text_1
+	trainerbattle_single TRAINER_CODY, FarOffSeaWest_EventScript_Cody_Text_0, FarOffSeaWest_EventScript_Cody_Text_1
 # 36 "data/maps/FarOffSeaWest/scripts.pory"
 	msgbox FarOffSeaWest_EventScript_Cody_Text_2, MSGBOX_AUTOCLOSE
 	return
@@ -72,7 +72,7 @@ FarOffSeaWest_EventScript_Cody::
 
 FarOffSeaWest_EventScript_Darren::
 # 40 "data/maps/FarOffSeaWest/scripts.pory"
-	trainerbattle_single TRAINER_SAWYER_1, FarOffSeaWest_EventScript_Darren_Text_0, FarOffSeaWest_EventScript_Darren_Text_1
+	trainerbattle_single TRAINER_DARREN, FarOffSeaWest_EventScript_Darren_Text_0, FarOffSeaWest_EventScript_Darren_Text_1
 # 41 "data/maps/FarOffSeaWest/scripts.pory"
 	msgbox FarOffSeaWest_EventScript_Darren_Text_2, MSGBOX_AUTOCLOSE
 	return
@@ -80,7 +80,7 @@ FarOffSeaWest_EventScript_Darren::
 
 FarOffSeaWest_EventScript_Jakob::
 # 45 "data/maps/FarOffSeaWest/scripts.pory"
-	trainerbattle_single TRAINER_SAWYER_1, FarOffSeaWest_EventScript_Jakob_Text_0, FarOffSeaWest_EventScript_Jakob_Text_1
+	trainerbattle_single TRAINER_JAKOB, FarOffSeaWest_EventScript_Jakob_Text_0, FarOffSeaWest_EventScript_Jakob_Text_1
 # 46 "data/maps/FarOffSeaWest/scripts.pory"
 	msgbox FarOffSeaWest_EventScript_Jakob_Text_2, MSGBOX_AUTOCLOSE
 	return
@@ -88,7 +88,7 @@ FarOffSeaWest_EventScript_Jakob::
 
 FarOffSeaWest_EventScript_Milo::
 # 50 "data/maps/FarOffSeaWest/scripts.pory"
-	trainerbattle_single TRAINER_SAWYER_1, FarOffSeaWest_EventScript_Milo_Text_0, FarOffSeaWest_EventScript_Milo_Text_1
+	trainerbattle_single TRAINER_MILO, FarOffSeaWest_EventScript_Milo_Text_0, FarOffSeaWest_EventScript_Milo_Text_1
 # 51 "data/maps/FarOffSeaWest/scripts.pory"
 	msgbox FarOffSeaWest_EventScript_Milo_Text_2, MSGBOX_AUTOCLOSE
 	return
@@ -96,7 +96,7 @@ FarOffSeaWest_EventScript_Milo::
 
 FarOffSeaWest_EventScript_Mira::
 # 55 "data/maps/FarOffSeaWest/scripts.pory"
-	trainerbattle_single TRAINER_SAWYER_1, FarOffSeaWest_EventScript_Mira_Text_0, FarOffSeaWest_EventScript_Mira_Text_1
+	trainerbattle_single TRAINER_MIRA, FarOffSeaWest_EventScript_Mira_Text_0, FarOffSeaWest_EventScript_Mira_Text_1
 # 56 "data/maps/FarOffSeaWest/scripts.pory"
 	msgbox FarOffSeaWest_EventScript_Mira_Text_2, MSGBOX_AUTOCLOSE
 	return

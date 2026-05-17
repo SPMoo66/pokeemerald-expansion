@@ -4,7 +4,7 @@ FarOffSeaWest_2_MapScripts::
 
 FarOffSeaWest_2_EventScript_Della::
 # 4 "data/maps/FarOffSeaWest_2/scripts.pory"
-	trainerbattle_single TRAINER_SAWYER_1, FarOffSeaWest_2_EventScript_Della_Text_0, FarOffSeaWest_2_EventScript_Della_Text_1
+	trainerbattle_single TRAINER_DELLA, FarOffSeaWest_2_EventScript_Della_Text_0, FarOffSeaWest_2_EventScript_Della_Text_1
 # 5 "data/maps/FarOffSeaWest_2/scripts.pory"
 	msgbox FarOffSeaWest_2_EventScript_Della_Text_2, MSGBOX_AUTOCLOSE
 	return
@@ -12,7 +12,7 @@ FarOffSeaWest_2_EventScript_Della::
 
 FarOffSeaWest_2_EventScript_Dario::
 # 9 "data/maps/FarOffSeaWest_2/scripts.pory"
-	trainerbattle_single TRAINER_SAWYER_1, FarOffSeaWest_2_EventScript_Dario_Text_0, FarOffSeaWest_2_EventScript_Dario_Text_1
+	trainerbattle_single TRAINER_DARIO, FarOffSeaWest_2_EventScript_Dario_Text_0, FarOffSeaWest_2_EventScript_Dario_Text_1
 # 10 "data/maps/FarOffSeaWest_2/scripts.pory"
 	msgbox FarOffSeaWest_2_EventScript_Dario_Text_2, MSGBOX_AUTOCLOSE
 	return

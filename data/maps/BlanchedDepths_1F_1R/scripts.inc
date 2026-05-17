@@ -132,7 +132,7 @@ BlanchedDepths_1F_1R_EventScript_DefeatedAquaGrunt_1:
 
 BlanchedDepths_1F_1R_EventScript_AquaGrunt1::
 # 49 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
-	trainerbattle_single TRAINER_SAWYER_1, BlanchedDepths_1F_1R_EventScript_AquaGrunt1_Text_0, BlanchedDepths_1F_1R_EventScript_AquaGrunt1_Text_1
+	trainerbattle_single TRAINER_GRUNT_BLANCHED_DEPTHS_1, BlanchedDepths_1F_1R_EventScript_AquaGrunt1_Text_0, BlanchedDepths_1F_1R_EventScript_AquaGrunt1_Text_1
 # 50 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
 	msgbox BlanchedDepths_1F_1R_EventScript_AquaGrunt1_Text_2, MSGBOX_AUTOCLOSE
 	return
@@ -140,7 +140,7 @@ BlanchedDepths_1F_1R_EventScript_AquaGrunt1::
 
 BlanchedDepths_1F_1R_EventScript_AquaGrunt2::
 # 54 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
-	trainerbattle_single TRAINER_SAWYER_1, BlanchedDepths_1F_1R_EventScript_AquaGrunt2_Text_0, BlanchedDepths_1F_1R_EventScript_AquaGrunt2_Text_1
+	trainerbattle_single TRAINER_GRUNT_BLANCHED_DEPTHS_2, BlanchedDepths_1F_1R_EventScript_AquaGrunt2_Text_0, BlanchedDepths_1F_1R_EventScript_AquaGrunt2_Text_1
 # 55 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
 	msgbox BlanchedDepths_1F_1R_EventScript_AquaGrunt2_Text_2, MSGBOX_AUTOCLOSE
 	return

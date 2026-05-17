@@ -46,11 +46,11 @@ script BlanchedDepths_1F_1R_EventScript_DefeatedAquaGrunt {
 }
 
 script BlanchedDepths_1F_1R_EventScript_AquaGrunt1 {
-	trainerbattle_single (TRAINER_SAWYER_1, "Wait, I know you!", "I would've beaten you if I'd been\nprepared!")
+	trainerbattle_single (TRAINER_GRUNT_BLANCHED_DEPTHS_1, "Wait, I know you!", "I would've beaten you if I'd been\nprepared!")
 	msgbox ("Hey kid, tell me. Where are we?", MSGBOX_AUTOCLOSE)
 }
 
 script BlanchedDepths_1F_1R_EventScript_AquaGrunt2 {
-	trainerbattle_single (TRAINER_SAWYER_1, "Ack, get back!", "First, the submarine gasses out,\nthen I was next!")
+	trainerbattle_single (TRAINER_GRUNT_BLANCHED_DEPTHS_2, "Ack, get back!", "First, the submarine gasses out,\nthen I was next!")
 	msgbox ("I'll tell you if you let me go.\pWe came out here in the old sub on the\nhunt for a treasure the boss heard\labout, but we ran out of fuel near\lthis cave.", MSGBOX_AUTOCLOSE)
 }

@@ -4,7 +4,7 @@ MauveIslandWest_MapScripts::
 
 MauveIslandWest_EventScript_Leo::
 # 4 "data/maps/MauveIslandWest/scripts.pory"
-	trainerbattle_single TRAINER_SAWYER_1, MauveIslandWest_EventScript_Leo_Text_0, MauveIslandWest_EventScript_Leo_Text_1
+	trainerbattle_single TRAINER_LEO, MauveIslandWest_EventScript_Leo_Text_0, MauveIslandWest_EventScript_Leo_Text_1
 # 5 "data/maps/MauveIslandWest/scripts.pory"
 	msgbox MauveIslandWest_EventScript_Leo_Text_2, MSGBOX_AUTOCLOSE
 	return
@@ -12,7 +12,7 @@ MauveIslandWest_EventScript_Leo::
 
 MauveIslandWest_EventScript_Eryk::
 # 9 "data/maps/MauveIslandWest/scripts.pory"
-	trainerbattle_single TRAINER_SAWYER_1, MauveIslandWest_EventScript_Eryk_Text_0, MauveIslandWest_EventScript_Eryk_Text_1
+	trainerbattle_single TRAINER_ERYK, MauveIslandWest_EventScript_Eryk_Text_0, MauveIslandWest_EventScript_Eryk_Text_1
 # 10 "data/maps/MauveIslandWest/scripts.pory"
 	msgbox MauveIslandWest_EventScript_Eryk_Text_2, MSGBOX_AUTOCLOSE
 	return

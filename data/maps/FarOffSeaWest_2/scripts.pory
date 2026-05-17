@@ -1,12 +1,12 @@
 mapscripts FarOffSeaWest_2_MapScripts {}
 
 script FarOffSeaWest_2_EventScript_Della {
-	trainerbattle_single (TRAINER_SAWYER_1, "I'm lost, but I'm still ready to battle!", "Phooey!")
+	trainerbattle_single (TRAINER_DELLA, "I'm lost, but I'm still ready to battle!", "Phooey!")
 	msgbox ("Hey, do you have any idea where we are?", MSGBOX_AUTOCLOSE)
 }
 
 script FarOffSeaWest_2_EventScript_Dario {
-	trainerbattle_single (TRAINER_SAWYER_1, "I've been waiting for you!", "Agh!")
+	trainerbattle_single (TRAINER_DARIO, "I've been waiting for you!", "Agh!")
 	msgbox ("This was the perfect place to ambush\nsomeone, no?", MSGBOX_AUTOCLOSE)
 }
 

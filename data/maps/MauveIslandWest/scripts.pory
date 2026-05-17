@@ -1,12 +1,12 @@
 mapscripts MauveIslandWest_MapScripts {}
 
 script MauveIslandWest_EventScript_Leo {
-	trainerbattle_single (TRAINER_SAWYER_1, "I came here to train for my next\ntriathlon!\pI'll use you to train my Pokémon too!", "All I have left is myself!")
+	trainerbattle_single (TRAINER_LEO, "I came here to train for my next\ntriathlon!\pI'll use you to train my Pokémon too!", "All I have left is myself!")
 	msgbox ("It seems like I was too focused on\ntraining my own body.", MSGBOX_AUTOCLOSE)
 }
 
 script MauveIslandWest_EventScript_Eryk {
-	trainerbattle_single (TRAINER_SAWYER_1, "New lands, new Pokémon! Help me get\nready to catch some with a battle!", "Blast!")
+	trainerbattle_single (TRAINER_ERYK, "New lands, new Pokémon! Help me get\nready to catch some with a battle!", "Blast!")
 	msgbox ("I need to hurry up and catch something\ngood!", MSGBOX_AUTOCLOSE)
 }
 

@@ -11545,7 +11545,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Humphrey),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FRED] =
@@ -11557,7 +11557,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Fred),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DIO] =
@@ -11569,7 +11569,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Dio),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SERAPHINA] =
@@ -11581,7 +11581,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Seraphina),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ELARA] =
@@ -11593,7 +11593,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Elara),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JON] =
@@ -11605,7 +11605,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Jon),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ELMER] =
@@ -11617,7 +11617,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Elmer),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DEWEY] =

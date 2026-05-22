@@ -17849,6 +17849,378 @@ static const struct TrainerMon sParty_Elmer[] = {
     }
 };
 
+static const struct TrainerMon sParty_Dewey[] = {
+    {
+    .lvl = 69,
+    .species = SPECIES_DURANT,
+    .ability = ABILITY_HUSTLE,
+    .heldItem = ITEM_WIDE_LENS,
+    .moves = {MOVE_HONE_CLAWS, MOVE_IRON_HEAD, MOVE_SUPERPOWER, MOVE_ROCK_SLIDE}
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_DEDENNE,
+    .ability = ABILITY_CHEEK_POUCH,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_VOLT_SWITCH, MOVE_DAZZLING_GLEAM, MOVE_GRASS_KNOT, MOVE_SUPER_FANG}
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_HYDRAPPLE,
+    .ability = ABILITY_SUPERSWEET_SYRUP,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_NASTY_PLOT, MOVE_FICKLE_BEAM, MOVE_SYRUP_BOMB, MOVE_EARTH_POWER}
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_CENTISKORCH,
+    .ability = ABILITY_FLAME_BODY,
+    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_FIRE_LASH, MOVE_LEECH_LIFE, MOVE_KNOCK_OFF, MOVE_COIL}
+    }
+};
+
+static const struct TrainerMon sParty_Harold[] = {
+    {
+    .lvl = 68,
+    .species = SPECIES_ALTARIA,
+    .ability = ABILITY_FLUFFY,
+    .heldItem = ITEM_MEGA_STONE_X,
+    },
+    {
+    .lvl = 68,
+    .species = SPECIES_KOMMO_O,
+    .ability = ABILITY_SOUNDPROOF,
+    .heldItem = ITEM_THROAT_SPRAY,
+    },
+    {
+    .lvl = 68,
+    .species = SPECIES_SCEPTILE,
+    .ability = ABILITY_UNBURDEN,
+    .heldItem = ITEM_GRASS_GEM,
+    },
+    {
+    .lvl = 68,
+    .species = SPECIES_FLYGON,
+    .ability = ABILITY_LEVITATE,
+    .heldItem = ITEM_YACHE_BERRY,
+    },
+    {
+    .lvl = 68,
+    .species = SPECIES_TURTONATOR,
+    .ability = ABILITY_IRON_BARBS,
+    .heldItem = ITEM_ROCKY_HELMET,
+    }
+};
+
+static const struct TrainerMon sParty_Aurora[] = {
+    {
+    .lvl = 68,
+    .species = SPECIES_DACHSBUN,
+    .ability = ABILITY_WELL_BAKED_BODY,
+    .heldItem = ITEM_FAIRY_GEM,
+    .moves = {MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_LAST_RESORT, MOVE_NONE}
+    },
+    {
+    .lvl = 68,
+    .species = SPECIES_ARCHALUDON,
+    .ability = ABILITY_STAMINA,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_DRACO_METEOR, MOVE_FLASH_CANNON, MOVE_ELECTRO_SHOT, MOVE_DRAGON_TAIL}
+    },
+    {
+    .lvl = 68,
+    .species = SPECIES_METAGROSS,
+    .ability = ABILITY_HEAVY_METAL,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = {MOVE_HEAVY_SLAM, MOVE_THUNDER_PUNCH, MOVE_BULLET_PUNCH, MOVE_PSYCHIC_FANGS}
+    },
+    {
+    .lvl = 68,
+    .species = SPECIES_CLEFABLE,
+    .ability = ABILITY_MAGIC_GUARD,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_MOONBLAST, MOVE_SOFT_BOILED, MOVE_MYSTICAL_FIRE, MOVE_HYPER_VOICE}
+    },
+    {
+    .lvl = 68,
+    .species = SPECIES_HOUNDSTONE,
+    .ability = ABILITY_FLUFFY,
+    .heldItem = ITEM_ROCKY_HELMET,
+    }
+};
+
+static const struct TrainerMon sParty_Toby[] = {
+    {
+    .lvl = 70,
+    .species = SPECIES_RUNERIGUS,
+    .ability = ABILITY_WANDERING_SPIRIT,
+    .heldItem = ITEM_SPELL_TAG,
+    },
+    {
+    .lvl = 70,
+    .species = SPECIES_KLEFKI,
+    .ability = ABILITY_PRANKSTER,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_MAGIC_ROOM, MOVE_SPIKES, MOVE_HEAL_BLOCK, MOVE_PROTECT}
+    },
+    {
+    .lvl = 70,
+    .species = SPECIES_TYRANTRUM,
+    .ability = ABILITY_ROCKY_PAYLOAD,
+    .heldItem = ITEM_WIDE_LENS,
+    },
+    {
+    .lvl = 70,
+    .species = SPECIES_CRUSTLE,
+    .ability = ABILITY_WEAK_ARMOR,
+    .heldItem = ITEM_FOCUS_SASH,
+    }
+};
+
+static const struct TrainerMon sParty_Marvin[] = {
+    {
+    .lvl = 69,
+    .species = SPECIES_LANEON,
+    .ability = ABILITY_SOUL_HEART,
+    .heldItem = ITEM_GROUND_GEM,
+    .teraType = TYPE_FAIRY,
+    .moves = {MOVE_PROTECT, MOVE_SCORCHING_SANDS, MOVE_AURA_SPHERE, MOVE_ALLURING_VOICE}
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_COGMENT,
+    .ability = ABILITY_LEVITATE,
+    .heldItem = ITEM_WHITE_HERB,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_GOLURK,
+    .ability = ABILITY_IRON_FIST,
+    .heldItem = ITEM_MEGA_STONE_X,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_POLTEAGEIST,
+    .ability = ABILITY_SHADOW_SHIELD,
+    .heldItem = ITEM_GHOST_GEM,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_STONJOURNER,
+    .ability = ABILITY_POWER_SPOT,
+    .heldItem = ITEM_WIDE_LENS,
+    }
+};
+
+static const struct TrainerMon sParty_Luthor[] = {
+    {
+    .lvl = 69,
+    .species = SPECIES_NAGANADEL,
+    .ability = ABILITY_BEAST_BOOST,
+    .heldItem = ITEM_WISE_GLASSES,
+    .moves = {MOVE_NASTY_PLOT, MOVE_SLUDGE_BOMB, MOVE_SIGNAL_BEAM, MOVE_DRAGON_PULSE}
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_MANDIBUZZ,
+    .ability = ABILITY_BIG_PECKS,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_PROTECT, MOVE_BRAVE_BIRD, MOVE_KNOCK_OFF, MOVE_ROOST}
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_FALINKS_EMERIBIAN,
+    .ability = ABILITY_VICTORY_STAR,
+    .heldItem = ITEM_SHUCA_BERRY,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_COALOSSAL,
+    .ability = ABILITY_STEAM_ENGINE,
+    .heldItem = ITEM_PASSHO_BERRY,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_HYDREIGON,
+    .ability = ABILITY_LEVITATE,
+    .heldItem = ITEM_CHOICE_SCARF,
+    }
+};
+
+static const struct TrainerMon sParty_Zed[] = {
+    {
+    .lvl = 69,
+    .species = SPECIES_SALAMENCE,
+    .ability = ABILITY_INTIMIDATE,
+    .heldItem = ITEM_MEGA_STONE_X,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_HAXORUS,
+    .ability = ABILITY_MOLD_BREAKER,
+    .heldItem = ITEM_CHOICE_BAND,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_KINGDRA,
+    .ability = ABILITY_SNIPER,
+    .heldItem = ITEM_WATER_GEM,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_DRAGONITE,
+    .ability = ABILITY_MULTISCALE,
+    .heldItem = ITEM_ROCKY_HELMET,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_NOIVERN,
+    .ability = ABILITY_INFILTRATOR,
+    .heldItem = ITEM_LEFTOVERS,
+    }
+};
+
+static const struct TrainerMon sParty_Tessa[] = {
+    {
+    .lvl = 69,
+    .species = SPECIES_DHELMISE,
+    .ability = ABILITY_STEELWORKER,
+    .heldItem = ITEM_CHOICE_SCARF,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_MADAME,
+    .ability = ABILITY_SUPER_LUCK,
+    .heldItem = ITEM_LEEK,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_REVAVROOM,
+    .ability = ABILITY_MOTOR_DRIVE,
+    .heldItem = ITEM_ASSAULT_VEST,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_PROBOPASS,
+    .ability = ABILITY_STURDY,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_DISCHARGE, MOVE_BODY_PRESS, MOVE_POWER_GEM, MOVE_TRI_ATTACK}
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_PORYGON_Z,
+    .ability = ABILITY_ADAPTABILITY,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_TRI_ATTACK, MOVE_DISCHARGE, MOVE_RECOVER, MOVE_PROTECT}
+    }
+};
+
+static const struct TrainerMon sParty_Lex[] = {
+    {
+    .lvl = 69,
+    .species = SPECIES_BAXCALIBUR,
+    .ability = ABILITY_THERMAL_EXCHANGE,
+    .heldItem = ITEM_ICE_GEM,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_HELIOLISK,
+    .ability = ABILITY_SOLAR_POWER,
+    .heldItem = ITEM_ELECTRIC_GEM,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_DRUDDIGON,
+    .ability = ABILITY_ROUGH_SKIN,
+    .heldItem = ITEM_ROCKY_HELMET,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_SCALEON,
+    .ability = ABILITY_HYPER_CUTTER,
+    .heldItem = ITEM_ROSELI_BERRY,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_ROARING_MOON,
+    .ability = ABILITY_PROTOSYNTHESIS,
+    .heldItem = ITEM_BOOSTER_ENERGY,
+    }
+};
+
+static const struct TrainerMon sParty_WildPokemonBV1[] = {
+    {
+    .lvl = 69,
+    .species = SPECIES_EMBOAR,
+    .ability = ABILITY_FRIEND_GUARD,
+    .heldItem = ITEM_MEGA_STONE_X,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_CORVIKNIGHT,
+    .ability = ABILITY_PRESSURE,
+    .heldItem = ITEM_STEEL_GEM,
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_SPIRITOMB,
+    .ability = ABILITY_BAD_DREAMS,
+    .heldItem = ITEM_WIDE_LENS,
+    .moves = {MOVE_HYPNOSIS, MOVE_DARK_PULSE, MOVE_DREAM_EATER, MOVE_SHADOW_SNEAK}
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_BEHEEYEM,
+    .ability = ABILITY_ANALYTIC,
+    .heldItem = ITEM_CHOICE_SPECS,
+    .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_SIGNAL_BEAM, MOVE_TRICK}
+    },
+    {
+    .lvl = 69,
+    .species = SPECIES_LUMINEON,
+    .ability = ABILITY_STORM_DRAIN,
+    .heldItem = ITEM_RINDO_BERRY,
+    .moves = {MOVE_AQUA_TAIL, MOVE_ATTRACT, MOVE_SIGNAL_BEAM, MOVE_AQUA_RING}
+    }
+};
+
+static const struct TrainerMon sParty_WildPokemonBV2[] = {
+    {
+    .lvl = 70,
+    .species = SPECIES_ORBEETLE,
+    .ability = ABILITY_FRISK,
+    .heldItem = ITEM_MEGA_STONE_G,
+    .moves = {MOVE_QUIVER_DANCE, MOVE_PSYCHIC, MOVE_BUG_BUZZ, MOVE_LIGHT_SCREEN}
+    },
+    {
+    .lvl = 70,
+    .species = SPECIES_NINETALES,
+    .ability = ABILITY_SERENE_GRACE,
+    .heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_INFERNAL_PARADE, MOVE_FLAMETHROWER, MOVE_EXTRASENSORY, MOVE_CONFUSE_RAY}
+    },
+    {
+    .lvl = 70,
+    .species = SPECIES_FROSLASS,
+    .ability = ABILITY_SUPER_LUCK,
+    .heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_INFERNAL_PARADE, MOVE_ICE_BEAM, MOVE_WILL_O_WISP, MOVE_CONFUSE_RAY}
+    },
+    {
+    .lvl = 70,
+    .species = SPECIES_DRAGALGE,
+    .ability = ABILITY_POISON_TOUCH,
+    .heldItem = ITEM_CHOICE_SCARF,
+    },
+    {
+    .lvl = 70,
+    .species = SPECIES_VOLCARONA,
+    .ability = ABILITY_FLAME_BODY,
+    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    }
+};
+
 /*
 
 static const struct TrainerMon sParty_[] = {

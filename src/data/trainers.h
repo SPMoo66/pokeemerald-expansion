@@ -11629,7 +11629,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Dewey),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HAROLD] =
@@ -11641,7 +11641,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Harold),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AURORA] =
@@ -11653,7 +11653,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Aurora),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TOBY] =
@@ -11665,7 +11665,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Toby),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARVIN] =
@@ -11677,7 +11677,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Marvin),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LUTHOR] =
@@ -11689,7 +11689,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Luthor),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ZED] =
@@ -11701,7 +11701,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Zed),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TESSA] =
@@ -11713,7 +11713,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Tessa),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LEX] =
@@ -11725,7 +11725,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_Lex),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_BV_1] =
@@ -11737,7 +11737,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_WildPokemonBV1),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_BV_2] =
@@ -11749,7 +11749,7 @@
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .party = TRAINER_PARTY(sParty_WildPokemonBV2),
     },
 
     [DIFFICULTY_NORMAL][TRAINER_STEVEN_EXP_1] =

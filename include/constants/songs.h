@@ -948,13 +948,18 @@
 #define MUS_HG_OBTAIN_CASTLE_POINTS       896 // Received Castle Points!
 #define MUS_HG_OBTAIN_B_POINTS            897 // Received Battle Points!
 #define MUS_HG_WIN_MINIGAME               898 // Cleared Wobbuffet Pop!
+
+#define HG_MUSIC_END                      MUS_HG_WIN_MINIGAME
+
 #define MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES 899 // Victory is Right Before Your Eyes (BW)
 #define MUS_BSB_EVERYBODY                 900 // Everybody (Backstreet Boys)
 #define MUS_BW_ABYSSAL_RUINS              901 // Abyssal Ruins (BW)
-#define MUS_B2W2_VS_GHETSIS               902 // Vs. Ghetsis (B2W2)
-#define MUS_XD_VS_CIPHER_PEON             903 // Battle! (Cipher Peon) (Pokémon XD: Gale of Darkness)
+#define MUS_BW_VS_TRAINER                 902 // Vs. Trainer (BW)
+#define MUS_BW_VS_WILD                    903 // Vs. Wild Pokémon (BW)
+#define MUS_B2W2_VS_GHETSIS               904 // Vs. Ghetsis (B2W2)
+#define MUS_FF4_FIGHT_2                   905 // Fight 2 (Final Fantasy IV)
+#define MUS_XD_VS_CIPHER_PEON             906 // Battle! (Cipher Peon) (Pokémon XD: Gale of Darkness)
 
-#define HG_MUSIC_END                      MUS_HG_WIN_MINIGAME
 #define END_MUS                           MUS_XD_VS_CIPHER_PEON
 #define SONGS_END                         MUS_XD_VS_CIPHER_PEON
 

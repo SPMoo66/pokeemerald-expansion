@@ -908,7 +908,10 @@ gSongTable::
 	song mus_victory_is_right_before_your_eyes, MUSIC_PLAYER_BGM, 0
 	song mus_bsb_everybody, MUSIC_PLAYER_BGM, 0
 	song mus_bw_abyssal_ruins, MUSIC_PLAYER_BGM, 0
+	song mus_bw_vs_trainer, MUSIC_PLAYER_BGM, 0
+	song mus_bw_vs_wild, MUSIC_PLAYER_BGM, 0
 	song mus_b2w2_vs_ghetsis, MUSIC_PLAYER_BGM, 0
+	song mus_ff4_fight_2, MUSIC_PLAYER_BGM, 0
 	song mus_xd_vs_cipher_peon, MUSIC_PLAYER_BGM, 0
 
 	.align 2

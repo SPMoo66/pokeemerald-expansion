@@ -5917,6 +5917,8 @@ u16 GetBattleBGM(void)
                     return MUS_VS_TRAINER;
                 }
             }
+            else if (GetCurrentRegion() == REGION_EXPANSION_1)
+                return MUS_BW_VS_TRAINER;
             else if (GetCurrentRegion() == REGION_KANTO)
                 return MUS_RG_VS_TRAINER;
             else
@@ -6102,7 +6104,9 @@ u16 GetBattleBGM(void)
             case SPECIES_PECHARUNT:
                 return MUS_DP_VS_GALACTIC_COMMANDER;
             default:
-                if (GetCurrentRegion() == REGION_KANTO)
+                if (GetCurrentRegion() == REGION_EXPANSION_1)
+                    return MUS_BW_VS_WILD;
+                else if (GetCurrentRegion() == REGION_KANTO)
                     return MUS_RG_VS_WILD;
 
                 u32 musicRegion = gSaveBlock2Ptr->optionsMusicRegion; // 0 - 3 = Kanto - Sinnoh

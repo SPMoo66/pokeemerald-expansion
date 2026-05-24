@@ -20,7 +20,7 @@ script MauveIslandWest_EventScript_HeadbuttTree {
 		playse (SE_SUPER_EFFECTIVE)
 		setvar (VAR_0x8004, 1)  # vertical pan
 		setvar (VAR_0x8005, 1)  # horizontal pan
-		setvar (VAR_0x8006, 6) # num shakes
+		setvar (VAR_0x8006, 6)  # num shakes
 		setvar (VAR_0x8007, 2)  # shake delay
 		special (ShakeCamera)
 		waitstate
@@ -39,4 +39,8 @@ movement Movement_PlayerHeadbutt {
 	delay_16 * 3
 	walk_in_place_fast_up * 4
 	walk_faster_up * 3
+}
+
+script TrainerTipsOceanGrass {
+	msgbox ("Trainer Tips\pGrassy areas in the ocean are home\nto different pools of Pokémon than\lthe open oceans.", MSGBOX_SIGN)
 }

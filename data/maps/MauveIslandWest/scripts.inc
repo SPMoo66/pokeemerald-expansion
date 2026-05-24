@@ -97,6 +97,12 @@ Movement_PlayerHeadbutt:
 	walk_faster_up
 	step_end
 
+TrainerTipsOceanGrass::
+# 45 "data/maps/MauveIslandWest/scripts.pory"
+	msgbox TrainerTipsOceanGrass_Text_0, MSGBOX_SIGN
+	return
+
+
 MauveIslandWest_EventScript_Leo_Text_0:
 # 4 "data/maps/MauveIslandWest/scripts.pory"
 	.string "I came here to train for my next\ntriathlon!\pI'll use you to train my Pokémon too!$"
@@ -128,3 +134,7 @@ MauveIslandWest_EventScript_HeadbuttTree_Text_0:
 MauveIslandWest_EventScript_HeadbuttTree_Text_1:
 # 16 "data/maps/MauveIslandWest/scripts.pory"
 	.string "{PLAYER} used Headbutt!$"
+
+TrainerTipsOceanGrass_Text_0:
+# 45 "data/maps/MauveIslandWest/scripts.pory"
+	.string "Trainer Tips\pGrassy areas in the ocean are home\nto different pools of Pokémon than\lthe open oceans.$"

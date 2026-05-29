@@ -132,7 +132,6 @@ script MauveCamp_Rowboat {
 			"Use it to return to Hoenn?", MSGBOX_YESNO)
 	closemessage
 	if (var(VAR_RESULT)) {
-		setvar (VAR_EMERALBODY_RIVAL_STATE, 20)
 		setflag (FLAG_REVERSE_SLATEPORT_BOAT_SCENE)
 		goto (SlateportRegionMap_BoatSceneInit)
 	}

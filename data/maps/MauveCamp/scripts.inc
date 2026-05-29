@@ -226,26 +226,24 @@ MauveCamp_Rowboat::
 
 MauveCamp_Rowboat_1:
 # 135 "data/maps/MauveCamp/scripts.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 20
-# 136 "data/maps/MauveCamp/scripts.pory"
 	setflag FLAG_REVERSE_SLATEPORT_BOAT_SCENE
-# 137 "data/maps/MauveCamp/scripts.pory"
+# 136 "data/maps/MauveCamp/scripts.pory"
 	goto SlateportRegionMap_BoatSceneInit
 	return
 
 
 MauveCamp_Pot::
-# 142 "data/maps/MauveCamp/scripts.pory"
+# 141 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Pot_Text_0
-# 145 "data/maps/MauveCamp/scripts.pory"
+# 144 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 
 MauveCamp_Shell::
-# 149 "data/maps/MauveCamp/scripts.pory"
+# 148 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Shell_Text_0
-# 152 "data/maps/MauveCamp/scripts.pory"
+# 151 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
@@ -320,13 +318,13 @@ MauveCamp_Rowboat_Text_0:
 	.string "Use it to return to Hoenn?$"
 
 MauveCamp_Pot_Text_0:
-# 142 "data/maps/MauveCamp/scripts.pory"
+# 141 "data/maps/MauveCamp/scripts.pory"
 	.string "{PLAYER} found one Leftovers!\n"
 	.string "… … …\l"
 	.string "Just kidding!$"
 
 MauveCamp_Shell_Text_0:
-# 149 "data/maps/MauveCamp/scripts.pory"
+# 148 "data/maps/MauveCamp/scripts.pory"
 	.string "Wow!\p"
 	.string "When you get close you can hear\n"
 	.string "the ocean!$"

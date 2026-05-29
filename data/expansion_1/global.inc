@@ -72,6 +72,25 @@ IllusoryGrotto_MonsterCommon2_Exp1::
 	return
 
 
+SlateportCity_Harbor_MauveIslandSailor::
+# 53 "data/expansion_1/global.pory"
+	faceplayer
+# 54 "data/expansion_1/global.pory"
+	msgbox SlateportCity_Harbor_MauveIslandSailor_Text_0, MSGBOX_YESNO
+# 55 "data/expansion_1/global.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq SlateportCity_Harbor_MauveIslandSailor_2
+SlateportCity_Harbor_MauveIslandSailor_1:
+# 58 "data/expansion_1/global.pory"
+	closemessage
+	return
+
+SlateportCity_Harbor_MauveIslandSailor_2:
+# 56 "data/expansion_1/global.pory"
+	goto SlateportRegionMap_BoatSceneInit
+	goto SlateportCity_Harbor_MauveIslandSailor_1
+
+
 HealingSpring_Exp1_Text_0:
 # 2 "data/expansion_1/global.pory"
 	.string "It's a restorative spring.$"
@@ -88,6 +107,10 @@ IllusoryGrottoMovableRock_Exp1_Text_1:
 	.string "… … …\p"
 	.string "… … …\p"
 	.string "{PLAYER}! Try a different side!$"
+
+SlateportCity_Harbor_MauveIslandSailor_Text_0:
+# 54 "data/expansion_1/global.pory"
+	.string "Ahoy!\nAre you looking to return to Mauve\lIsland?$"
 
 Text_TooDarkLetsTurnBack::
 # 44 "data/expansion_1/global.pory"

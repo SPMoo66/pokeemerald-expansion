@@ -73,9 +73,10 @@ script Expansion1_Rival_Scene02 {
 	msgbox ("God damn you all to hell!", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_SAKURA, Common_Movement_ShakeHorizontal)
 	waitmovement (0)
-	delay (20)
-	applymovement (MAUVECAMP_BARON, Common_Movement_Smile)
-	delay (30)
+	delay (10)
+	applymovement (MAUVECAMP_BARON, Common_Movement_Thinking)
+	delay (70)
+	applymovement (MAUVECAMP_BARON, Common_Movement_SweatDrop)
 	speakername (CommonText_Jakson)
 	msgbox ("… … …\n"
 			"… … …\l"
@@ -171,6 +172,7 @@ script Expansion1_Rival_Scene02b {
 
 script Expansion1_Rival_Scene02c {
 	fadescreen (FADE_FROM_BLACK)
+	addobject (MAUVEISLANDSOUTH_FAKEPLAYER)
 	applymovement (MAUVEISLANDSOUTH_FAKEPLAYER, Common_Movement_WalkDown4)
 	waitmovement (0)
 	applymovement (MAUVEISLANDSOUTH_FAKEPLAYER, Common_Movement_Talking)
@@ -339,12 +341,13 @@ script Expansion1_Rival_Scene02d {
 
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 24)
 	savebgm (MUS_DP_CREDITS)
-	fadescreenswapbuffers (FADE_FROM_BLACK)
+	fadescreenswapbuffers (FADE_TO_BLACK)
 	warpcontinuescript (MAP_MAUVE_CAMP, 16, 16, Expansion1_Rival_Scene02e)	
 }
 
 script Expansion1_Rival_Scene02e {
 	fadescreen (FADE_FROM_BLACK)
 	delay (10)
+	clearflag (FLAG_HIDE_MAP_NAME_POPUP)
 	helpwindow (HELP_EXPANSION_1_BOAT_EXPLANATION)
 }

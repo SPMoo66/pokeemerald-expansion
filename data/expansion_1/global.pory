@@ -48,3 +48,12 @@ text Text_TooDarkLetsTurnBack {
 	"It appears to be too dark to continue…\l"
 	"Let's turn back."
 }
+
+script SlateportCity_Harbor_MauveIslandSailor {
+	faceplayer
+	msgbox ("Ahoy!\nAre you looking to return to Mauve\lIsland?", MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		goto (SlateportRegionMap_BoatSceneInit)
+	}
+	closemessage
+}

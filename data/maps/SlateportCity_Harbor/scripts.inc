@@ -5,6 +5,7 @@ SlateportCity_Harbor_MapScripts::
 
 SlateportCity_Harbor_OnTransition:
 	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
 	setescapewarp MAP_SLATEPORT_CITY, 28, 13
 	setvar VAR_TEMP_1, 0
 	call_if_eq VAR_SLATEPORT_HARBOR_STATE, 1, SlateportCity_Harbor_EventScript_ReadyAquaEscapeScene
@@ -12,6 +13,7 @@ SlateportCity_Harbor_OnTransition:
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 19, EventScript_Clear_FlagTemp1
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 20, EventScript_Clear_FlagTemp1
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 20, SlateportHarbor_PostScene01_SetPositions
+	call_if_ge VAR_EMERALBODY_RIVAL_STATE, 24, EventScript_Clear_FlagTemp2
 	end
 
 SlateportCity_Harbor_OnFrame:

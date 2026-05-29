@@ -6,7 +6,9 @@
 	# 19: Set after receiving Expansion 1, Call1, from Jakson
 	# 20: Set when meeting with the rivals group in Slateport Harbor
 	# 21: Set after waking up in Illusory Grotto
-	# 22: tbd
+	# 22: Set after the infinite water map
+	# 23: Set after reaching Mauve Island
+	# 24: tbd
 
 script EventScript_JaksonExpansion1Call {
 	lockall

@@ -24,6 +24,11 @@ mapscripts FarOffSeaWest_MapScripts {
 			setmetatile(56, 12, 0x07E, FALSE)
 		}
 	}
+	MAP_SCRIPT_ON_TRANSITION {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) < 23) {
+			setflag (FLAG_TEMP_6) // to hide the trainers
+		}
+	}
 }
 
 script FarOffSeaWest_EventScript_Selina {

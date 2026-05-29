@@ -206,8 +206,6 @@ script SSTidal_Scene01_OnWarp {
 
 script SSTidal_Scene01_OnFrame {
 	lock
-	
-	msgbox ("Scene01", MSGBOX_AUTOCLOSE)
 
 	playse (SE_LEDGE)
 	applymovement (SSTIDAL_SAKURA, Common_Movement_JumpInPlaceLeft)

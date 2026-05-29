@@ -39,8 +39,6 @@
 #define NUM_FORCED_MOVEMENTS 22
 #define NUM_ACRO_BIKE_COLLISIONS 5
 
-static EWRAM_DATA struct ObjectEvent * sPlayerObjectPtr = NULL;
-
 enum SpinDirection
 {
     SPIN_DIRECTION_NONE,

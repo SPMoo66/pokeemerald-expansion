@@ -1,4 +1,10 @@
-mapscripts FarOffSeaWest_2_MapScripts {}
+mapscripts FarOffSeaWest_2_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) < 23) {
+			setflag (FLAG_TEMP_6) // to hide the trainers
+		}
+	}
+}
 
 script FarOffSeaWest_2_EventScript_Della {
 	trainerbattle_single (TRAINER_DELLA, "I'm lost, but I'm still ready to battle!", "Phooey!")

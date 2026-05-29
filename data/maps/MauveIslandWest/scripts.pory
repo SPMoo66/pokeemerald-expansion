@@ -1,4 +1,10 @@
-mapscripts MauveIslandWest_MapScripts {}
+mapscripts MauveIslandWest_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) < 23) {
+			setflag (FLAG_TEMP_6) // to hide the trainers
+		}
+	}
+}
 
 script MauveIslandWest_EventScript_Leo {
 	trainerbattle_single (TRAINER_LEO, "I came here to train for my next\ntriathlon!\pI'll use you to train my Pokémon too!", "All I have left is myself!")

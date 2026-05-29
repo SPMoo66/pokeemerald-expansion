@@ -34,12 +34,16 @@ Exp1_Town01_BaronText::
 
 Exp1_Town01_JaksonText::
 # 37 "data/expansion_1/rival_text.pory"
-	.string "PLACEHOLDER$"
+	.string "Hey, {PLAYER}. You ready to go?\n"
+	.string "Got your team together?$"
 
 Exp1_Town01_JaksonTextAccept::
-# 41 "data/expansion_1/rival_text.pory"
-	.string "PLACEHOLDER$"
+# 42 "data/expansion_1/rival_text.pory"
+	.string "Good, good!\p"
+	.string "Alright everyone, time to board!\n"
+	.string "Adventure awaits!$"
 
 Exp1_Town01_JaksonTextDecline::
-# 45 "data/expansion_1/rival_text.pory"
-	.string "PLACEHOLDER$"
+# 48 "data/expansion_1/rival_text.pory"
+	.string "Then hurry up and get ready!\n"
+	.string "The others are waiting!$"

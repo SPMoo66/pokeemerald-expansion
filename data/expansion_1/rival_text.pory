@@ -35,13 +35,17 @@ text Exp1_Town01_BaronText {
 }
 
 text Exp1_Town01_JaksonText {
-	format( "PLACEHOLDER")
+	format( "Hey, {PLAYER}. You ready to go?\n"
+			"Got your team together?")
 }
 
 text Exp1_Town01_JaksonTextAccept {
-	format( "PLACEHOLDER")
+	format( "Good, good!\p"
+			"Alright everyone, time to board!\n"
+			"Adventure awaits!")
 }
 
 text Exp1_Town01_JaksonTextDecline {
-	format( "PLACEHOLDER")
+	format( "Then hurry up and get ready!\n"
+			"The others are waiting!")
 }

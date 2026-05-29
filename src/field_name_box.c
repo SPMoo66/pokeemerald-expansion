@@ -67,24 +67,24 @@ void TrySpawnNamebox(u32 tileNum)
     }
 
     if (!StringCompare(strbuf, gText_Jakson)) {
-        LoadPalette(gNameboxJakson_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
-        windowPal = 12;
+        LoadPalette(gNameboxJakson_Pal, BG_PLTT_ID(13), PLTT_SIZE_4BPP);
+        windowPal = 13;
     }
     else if (!StringCompare(strbuf, gText_Harper)) {
-        LoadPalette(gNameboxHarper_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
-        windowPal = 12;
+        LoadPalette(gNameboxHarper_Pal, BG_PLTT_ID(13), PLTT_SIZE_4BPP);
+        windowPal = 13;
     }
     else if (!StringCompare(strbuf, gText_Redd)) {
-        LoadPalette(gNameboxRedd_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
-        windowPal = 12;
+        LoadPalette(gNameboxRedd_Pal, BG_PLTT_ID(13), PLTT_SIZE_4BPP);
+        windowPal = 13;
     }
     else if (!StringCompare(strbuf, gText_Sakura)) {
-        LoadPalette(gNameboxSakura_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
-        windowPal = 12;
+        LoadPalette(gNameboxSakura_Pal, BG_PLTT_ID(13), PLTT_SIZE_4BPP);
+        windowPal = 13;
     }
     else if (!StringCompare(strbuf, gText_Baron)) {
-        LoadPalette(gNameboxBaron_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
-        windowPal = 12;
+        LoadPalette(gNameboxBaron_Pal, BG_PLTT_ID(13), PLTT_SIZE_4BPP);
+        windowPal = 13;
     }
 
     bool32 matchCall = IsMatchCallTaskActive();

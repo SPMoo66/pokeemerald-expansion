@@ -1,0 +1,108 @@
+const MAUVECAMP_JAKSON = 6
+const MAUVECAMP_BARON = 7
+const MAUVECAMP_SAKURA = 8
+const MAUVECAMP_REDD = 9
+const MAUVECAMP_HARPER = 10
+
+// dots…
+
+script Expansion1_Rival_Scene02_Setup {
+	lock
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 23)
+	setflag (FLAG_HIDE_MAP_NAME_POPUP)
+	fadeoutbgm (0)
+	fadescreen (FADE_TO_BLACK)
+	warpcontinuescript (MAP_MAUVE_CAMP, 0, 13, Expansion1_Rival_Scene02)
+}
+
+script Expansion1_Rival_Scene02 {
+	setflag (FLAG_TEMP_2)
+	setflag (FLAG_TEMP_6)
+	playbgm (MUS_DP_SUNYSHORE_DAY, FALSE)
+	turnobject (LOCALID_PLAYER, DIR_EAST)
+	fadescreen (FADE_FROM_BLACK)
+	delay (20)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkRightSlow4)
+	waitmovement (0)
+	delay (20)
+	applymovement (LOCALID_PLAYER, Common_Movement_Talking)
+	delay (40)
+	applymovement (MAUVECAMP_JAKSON, Common_Movement_WalkInPlaceFasterLeft)
+	waitmovement (0)
+	playse (SE_PIN)
+	applymovement (MAUVECAMP_JAKSON, Common_Movement_ExclamationMark)
+	delay (40)
+	speakername (CommonText_Jakson)
+	msgbox ("Oh, {PLAYER}, it's you. Thank goodness.", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_JAKSON, Common_Movement_WalkLeft2)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight3)
+	waitmovement (0)
+	speakername (CommonText_Jakson)
+	msgbox ("Sorry, but it seems like something's\ngone horribly wrong.\p"
+			"I'd say we should exchange info,\nbut I JUST heard Sakura's voice.\p"
+			"She's around here somewhere, so we\nshould probably find her first.", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_JAKSON, Common_Movement_WalkRight11)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight11)
+	waitmovement (0)
+	applymovement (MAUVECAMP_JAKSON, Common_Movement_WalkDown)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight)
+	waitmovement (0)
+	applymovement (MAUVECAMP_JAKSON, Common_Movement_WalkDown)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkDown)
+	waitmovement (0)
+	applymovement (MAUVECAMP_JAKSON, Common_Movement_WalkRight)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkDown)
+	waitmovement (0)
+	applymovement (MAUVECAMP_JAKSON, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement (0)
+	delay (10)
+	special (SpawnCameraObject)
+	applymovement (LOCALID_CAMERA, Common_Movement_WalkDownSlow3)
+	waitmovement (0)
+	fadeoutbgm (0)
+	speakername (CommonText_Sakura)
+	msgbox ("You maniac!\p"
+			"You blew it up!\p"
+			"Agh, damn you!", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_SAKURA, Common_Movement_ShakeHorizontal)
+	waitmovement (0)
+	speakername (CommonText_Sakura)
+	msgbox ("God damn you all to hell!", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_SAKURA, Common_Movement_ShakeHorizontal)
+	waitmovement (0)
+	delay (20)
+	applymovement (MAUVECAMP_BARON, Common_Movement_Smile)
+	delay (30)
+	speakername (CommonText_Jakson)
+	msgbox ("… … …\n"
+			"… … …\l"
+			"… … …\l"
+			"Ah, well there's Baron too.", MSGBOX_AUTOCLOSE)
+	fadeinbgm (0)
+	applymovement (MAUVECAMP_BARON, Common_Movement_WalkInPlaceFasterUp)
+	waitmovement (0)
+	delay (20)
+	speakername (CommonText_Baron)
+	msgbox ("Oh, hey guys. It's good to see\nsomeone sa-\l"
+			"I mean…\p"
+			"Well, it's good to be together again!", MSGBOX_AUTOCLOSE)
+	
+
+
+
+	speakername (CommonText_Jakson)
+	msgbox ("Oh, {PLAYER}?\nOver here.", MSGBOX_AUTOCLOSE)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight3)
+	waitmovement (0)
+}
+
+#script SlateportHarbor_PostScene01_SetPositions {
+#	setobjectxyperm (SLATEPORT_HARBOR_JAKSON, 10, 11)
+#	setobjectxyperm (SLATEPORT_HARBOR_BARON, 1, 10)
+#	setobjectxyperm (SLATEPORT_HARBOR_SAKURA, 2, 6)
+#	setobjectxyperm (SLATEPORT_HARBOR_REDD, 13, 12)
+#	setobjectmovementtype (SLATEPORT_HARBOR_JAKSON, MOVEMENT_TYPE_FACE_DOWN)
+#	setobjectmovementtype (SLATEPORT_HARBOR_BARON, MOVEMENT_TYPE_WANDER_AROUND)
+#	setobjectmovementtype (SLATEPORT_HARBOR_SAKURA, MOVEMENT_TYPE_FACE_RIGHT)
+#	setobjectmovementtype (SLATEPORT_HARBOR_REDD, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT)
+#}

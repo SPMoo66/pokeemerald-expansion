@@ -37,6 +37,10 @@ Common_Movement_Thinking:
 	emote_thinking
 	step_end
 
+Common_Movement_ShakeHorizontal:
+	shake_horizontal
+	step_end
+
 Common_Movement_Delay32:
 	delay_16
 	delay_16
@@ -295,6 +299,20 @@ Common_Movement_WalkRight9:
 	step_end
 
 Common_Movement_WalkRight10:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+Common_Movement_WalkRight11:
+	walk_right
 	walk_right
 	walk_right
 	walk_right
@@ -610,7 +628,20 @@ Common_Movement_WalkDownSlow::
 	walk_slow_down
 	step_end
 
+Common_Movement_WalkDownSlow3::
+	walk_slow_down
+	walk_slow_down
+	walk_slow_down
+	step_end
+
 Common_Movement_WalkRightSlow::
+	walk_slow_right
+	step_end
+
+Common_Movement_WalkRightSlow4::
+	walk_slow_right
+	walk_slow_right
+	walk_slow_right
 	walk_slow_right
 	step_end
 

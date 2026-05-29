@@ -234,7 +234,7 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	call Expansion1_Rival_Scene01
+	call Expansion1_Rival_Scene02e
 	release
 	end
 

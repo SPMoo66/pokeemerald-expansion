@@ -3,15 +3,18 @@
 // Remember to modify include/constants/help_window.h to include identifiers so they can be used in event scripts.
 const struct HelpWindow gHelpWindowInfo[] =
 {
-/*    [HELP_EXPANSION_1_START] =
+    [HELP_EXPANSION_1_BOAT_EXPLANATION] =
     {
         .header = COMPOUND_STRING("A New Adventure Begins!"),
-        .desc = COMPOUND_STRING("Travel to Slateport Harbor and meet\n"
-                                "up with your friends to begin!"
+        .desc = COMPOUND_STRING("Travel through the uncharted waters\n"
+                                "and solve the mystery of the island's\n"
+                                "treasure!\n\n"
+                                "You can now use the boat at the camp to\n"
+                                "return to Slateport Harbor."
                             ),
         .headerFont = FONT_NORMAL,
         .descFont = FONT_NORMAL
-    },*/
+    },
     [HELP_BATTLE_CONTROLS] =
     {
         .header = COMPOUND_STRING("Information: Battle Controls"),

@@ -1,1 +1,8 @@
-mapscripts MauveIslandSouth_MapScripts {}
+mapscripts MauveIslandSouth_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		call (GetPlayerGfxNormal)
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 23) {
+			savebgm (MUS_DP_SUNYSHORE_DAY)
+		}
+	}
+}

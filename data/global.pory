@@ -33,6 +33,16 @@ script EventScript_SpawnInvisible {
 	return
 }
 
+script GetPlayerGfxNormal {
+	checkplayergender
+	if (var(VAR_RESULT) == 0) { // male
+		setvar (VAR_OBJ_GFX_ID_9, OBJ_EVENT_GFX_BRENDAN_NORMAL)
+	}
+	else {
+		setvar (VAR_OBJ_GFX_ID_9, OBJ_EVENT_GFX_MAY_NORMAL)
+	}
+}
+
 script Mart_EventScript_Clerk {
 	lock
 	faceplayer

@@ -34,14 +34,14 @@
 #define VAR_OBJ_GFX_ID_0           0x4010
 #define VAR_OBJ_GFX_ID_1           0x4011
 #define VAR_OBJ_GFX_ID_2           0x4012
-#define VAR_OBJ_GFX_ID_3           0x4013
+#define VAR_OBJ_GFX_ID_3           0x4013    // Used for RSE Rival
 #define VAR_OBJ_GFX_ID_4           0x4014
 #define VAR_OBJ_GFX_ID_5           0x4015
 #define VAR_OBJ_GFX_ID_6           0x4016
 #define VAR_OBJ_GFX_ID_7           0x4017
-#define VAR_OBJ_GFX_ID_8           0x4018
-#define VAR_OBJ_GFX_ID_9           0x4019
-#define VAR_OBJ_GFX_ID_A           0x401A
+#define VAR_OBJ_GFX_ID_8           0x4018    // Only used in contests
+#define VAR_OBJ_GFX_ID_9           0x4019    // Used for fake players
+#define VAR_OBJ_GFX_ID_A           0x401A    // Used for Looker
 #define VAR_OBJ_GFX_ID_B           0x401B    // Used for Emeralbody Rival
 #define VAR_OBJ_GFX_ID_C           0x401C    // Unused
 #define VAR_OBJ_GFX_ID_D           0x401D    // Unused

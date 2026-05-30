@@ -1082,7 +1082,7 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis::
 
 DewfordTown_Gym_Text_ExplainBulkUp::
 # 256 "data/gym_leaders.pory"
-	.string "That TM08 contains Bulk Up.\p"
+	.string "That TM27 contains Bulk Up.\p"
 	.string "It's a move that raises both Attack\n"
 	.string "and Defense stats.\p"
 	.string "… … … … … …$"
@@ -1356,7 +1356,7 @@ PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis::
 
 PetalburgCity_Gym_Text_ExplainFacade::
 # 741 "data/gym_leaders.pory"
-	.string "TM42 contains Facade.\p"
+	.string "TM35 contains Facade.\p"
 	.string "It doubles the power of moves if\n"
 	.string "the Pokémon is poisoned, paralyzed,\l"
 	.string "or burned.\p"
@@ -1555,7 +1555,7 @@ MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis::
 
 MossdeepCity_Gym_Text_ExplainTrickRoom::
 # 1056 "data/gym_leaders.pory"
-	.string "Tate: That TM04 contains…\n"
+	.string "Tate: That TM14 contains…\n"
 	.string "Liza: Trick Room!\p"
 	.string "Tate: It creates a bizarre area…\n"
 	.string "Liza: That inverts speed!\p"

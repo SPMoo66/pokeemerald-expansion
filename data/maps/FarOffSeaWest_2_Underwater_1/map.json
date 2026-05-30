@@ -41,7 +41,7 @@
       "y": 59,
       "elevation": 0,
       "var": "VAR_EMERALBODY_RIVAL_STATE",
-      "var_value": "18",
+      "var_value": "22",
       "script": "BlanchedDepthsBlocker"
     }
   ],

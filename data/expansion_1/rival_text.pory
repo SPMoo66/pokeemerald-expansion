@@ -1,3 +1,5 @@
+// dots…
+
 #Call1
 text Call1_JaksonText {
 	format(	"Jakson: Yo, {PLAYER}!\n"
@@ -19,19 +21,68 @@ text Call1_JaksonText {
 
 #Town01
 text Exp1_Town01_SakuraText {
-	format( "PLACEHOLDER")
+	format( "Ooh!\p"
+			"I really wonder if we'll run into\n"
+			"any pirates out there!\p"
+			"If I don't get a chance to fight any,\n"
+			"I'll just have to take up the mantle\l"
+			"myself{EMOJI_TILDE}{UNK_SPACER}\p"
+			"Long Sakura Silver{EMOJI_TILDE}{UNK_SPACER}\p"
+			"Fun fact!\n"
+			"She's “long” because her neck grows\l"
+			"just a little longer every day!")
 }
 
 text Exp1_Town01_HarperText {
-	format( "PLACEHOLDER")
+	format( "Hey, {PLAYER}.\n"
+			"Good to see you.\p"
+			"It's kind of a coincidence that I\n"
+			"logged in today. I wanted to check\l"
+			"something I had seen online, and…\p"
+			"Well, Jakson would've IM'd me if I\n"
+			"hadn't, anyways.\p"
+			"Sakura's just as hyper as ever.\n"
+			"Baron's still a hopeless worrywart.\p"
+			"Even if we don't get as many chances to\n"
+			"get together IRL anymore, doing this in\l"
+			"VR makes it feel so much more…\l"
+			"personal, doesn't it?\p"
+			"Well, I don't remember Barono being as\n"
+			"anxious as he is now.\l"
+			"I wonder if something happened…")
 }
 
 text Exp1_Town01_ReddText {
-	format( "PLACEHOLDER")
+	format( "Yo.\p"
+			"I was born and raised on Kanto, then I\n"
+			"stepped up for Hoenn.\p"
+			"And now I head to…\n"
+			"Well shoot, Jakson didn't mention a\n"
+			"name, did he?\p"
+			"Either way, this is pretty adventurous\n"
+			"for me, right?\p"
+			"It shows some real character growth!\p"
+			"If I truly want to do right by the\n"
+			"legacy of my passions, I just need\l"
+			"to conquer each region that comes\l"
+			"after.")
 }
 
 text Exp1_Town01_BaronText {
-	format( "PLACEHOLDER")
+	format( "Hi, {PLAYER}.\p"
+			"This ‘expansion’ has me worried. It took\n"
+			"me a lot of money to get through the\l"
+			"game in the first place, so I'm\l"
+			"wondering what I should sell so I can\l"
+			"stock up.\p"
+			"Oh, that ‘Pokévial’ thing that you\n"
+			"mentioned before.\p"
+			"Do you think you could show me how to\n"
+			"use that? Maybe that will save me.\p"
+			"We should have some time on the boat,\n"
+			"right?\p"
+			"I'd appreiciate it if you could spare\n"
+			"me a moment. later.")
 }
 
 text Exp1_Town01_JaksonText {
@@ -48,4 +99,97 @@ text Exp1_Town01_JaksonTextAccept {
 text Exp1_Town01_JaksonTextDecline {
 	format( "Then hurry up and get ready!\n"
 			"The others are waiting!")
+}
+
+
+#Town02
+text Exp1_Town02_SakuraText {
+	format( "Ahoy, {PLAYER}!\p"
+			"Do you see that sealed off cave there?\p"
+			"I'm wondering if there's a way to open\n"
+			"it again.\p"
+			"Who knows? Maybe Harper slipped in\n"
+			"through the cracks around the rubble.\p"
+			"If not, then maybe some loot hides\n"
+			"behind it? Wouldn't that be fun!\p"
+			"I'd get it open right now, but that\n"
+			"crash has seriously weakened my\l"
+			"Sakura Strength{EMOJI_TILDE}{UNK_SPACER}")
+}
+
+text Exp1_Town02_ReddText {
+	format( "Hey.\p"
+			"I'm pretty sure Harper's not here on\n"
+			"the main island, but I'm giving it one\l"
+			"last thorough search before calling it.\p"
+			"Hah…\p"
+			"You know, that crash seriously had\n"
+			"me scared.\p"
+			"That roar must have been a monster,\n"
+			"right?\p"
+			"That and the… surreal experience\n"
+			"through the VR system…\p"
+			"Well, I had to take a break for a minute\n"
+			"after that.\p"
+			"I'm good now, so let's get back to it!")
+}
+
+text Exp1_Town02_BaronText {
+	format( "Oh! {PLAYER}! You gave me a fright.\p"
+			"Right after that…\p"
+			"Oh, right! The person with the light\n"
+			"is here!\p"
+			"I was going to go after them, but I keep\n"
+			"thinking I'll get some tropical disease\l"
+			"if I make the wrong step…\p"
+			"I- I know it's just digital…\n"
+			"Still…\p"
+			"Would you go on ahead and search for\n"
+			"me?")
+}
+
+text Exp1_Town02b_BaronText {
+	format( "Oh! You found it!\p"
+			"Can you go head and start the search\n"
+			"for her?\p"
+			"I'll go back to the island and tell\n"
+			"the others.\p"
+			"Hold on just a little longer, Harper…")
+}
+
+text Exp1_Town02_JaksonText {
+	format( "I took a peek down South.\p"
+			"Since it's blocked, I'll start looking\n"
+			"for a way to move those Shuckle.\p"
+			"In these games, it's usually something\n"
+			"goofy like needing medicine to cure a\l"
+			"headache.\p"
+			"It's a post game mod, so I doubt they'd\n"
+			"want us to use HMs anyways…\p"
+			"Oh, and Baron went to go search for\n"
+			"that light the sailor was mentioning.\p"
+			"If you haven't, maybe you should check\n"
+			"in on him.")
+}
+
+
+#Town03
+text Exp1_Town03_SakuraText {
+	format( "")
+}
+
+text Exp1_Town03_HarperText {
+	format( "")
+}
+
+text Exp1_Town03_ReddText {
+	format( "")
+}
+
+text Exp1_Town03_BaronText {
+	format( "")
+}
+
+text Exp1_Town03_JaksonText {
+	format( "")
 }

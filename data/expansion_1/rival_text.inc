@@ -168,20 +168,144 @@ Exp1_Town02_JaksonText::
 
 Exp1_Town03_SakuraText::
 # 177 "data/expansion_1/rival_text.pory"
-	.string "$"
-
-Exp1_Town03_HarperText::
-# 181 "data/expansion_1/rival_text.pory"
-	.string "$"
+	.string "Let me guess what you're thinking-\p"
+	.string "“Why didn't we cut this short and\n"
+	.string "message Harper straight away?\p"
+	.string "“It's not like Jakson was the only one\n"
+	.string "who could've remembered…!”\p"
+	.string "To that I say{EMOJI_TILDE}{UNK_SPACER}\p"
+	.string "Well, where's your sense of adventure,\n"
+	.string "{PLAYER}?\p"
+	.string "Isn't it more fun with a damsel in\n"
+	.string "mysterious, unknown distress?\p"
+	.string "Besides, would you really have known\n"
+	.string "where to find her?\p"
+	.string "Would SHE have known where she was?$"
 
 Exp1_Town03_ReddText::
-# 185 "data/expansion_1/rival_text.pory"
-	.string "$"
+# 193 "data/expansion_1/rival_text.pory"
+	.string "It's good to have the whole crew back\n"
+	.string "together.\p"
+	.string "I was wondering what ‘excitement level’\n"
+	.string "this little mod was going to have, but\l"
+	.string "this is pretty fun on its own.\p"
+	.string "Sakura hasn't really gotten the\n"
+	.string "swashbuckling she wanted but that\l"
+	.string "hasn't seemed to slow her down.\p"
+	.string "You think they coded new Pokémon\n"
+	.string "types to show up on the ship?\p"
+	.string "I mean, it… probably wasn't supposed\n"
+	.string "to crash in the first place, right?\l"
+	.string "…Right?$"
 
 Exp1_Town03_BaronText::
-# 189 "data/expansion_1/rival_text.pory"
-	.string "$"
+# 209 "data/expansion_1/rival_text.pory"
+	.string "Oh, thank you so much for bringing back\n"
+	.string "Harper, {PLAYER}.\p"
+	.string "Maybe she wasn't in real danger, but\n"
+	.string "this entire ‘Virtual Reality’ thing\l"
+	.string "makes it feel too realistic at times.\p"
+	.string "I wouldn't want to be trapped with\n"
+	.string "a blindfold over my eyes!\p"
+	.string "I'm so happy that she's back, and\n"
+	.string "that the group is safe and sound.$"
 
 Exp1_Town03_JaksonText::
-# 193 "data/expansion_1/rival_text.pory"
+# 221 "data/expansion_1/rival_text.pory"
+	.string "Hey, {PLAYER}.\p"
+	.string "Harper's already gone off to the ship.\p"
+	.string "…Yeah, she really gave me an earful…\n"
+	.string "…in a couple ways…\l"
+	.string "But, I get it. I understand where she's\l"
+	.string "coming from.\p"
+	.string "I should've put a little more time into\n"
+	.string "vetting this mod. I was too quick to\l"
+	.string "incorporate it in.\p"
+	.string "Maybe I merged it into our pack wrong,\n"
+	.string "or maybe it was made for an earlier\l"
+	.string "version?\p"
+	.string "It's not bad enough that we can't keep\n"
+	.string "going, but I'll- well, maybe Harper and I\l"
+	.string "both will try to handle any issues.\p"
+	.string "Either way, let's join her once we're\n"
+	.string "ready.$"
+
+Exp1_Town04_SakuraText::
+# 243 "data/expansion_1/rival_text.pory"
+	.string "You ready to watch this, {PLAYER}?\p"
+	.string "Let's get started{EMOJI_TILDE}{UNK_SPACER}$"
+
+Exp1_Town04_HarperText::
+# 248 "data/expansion_1/rival_text.pory"
+	.string "Ahh… …\p"
+	.string "I'm just taking a breather, {PLAYER}.\p"
+	.string "Trapped in one dungeon, then shipped\n"
+	.string "off to another straight away.\p"
+	.string "… … …\p"
+	.string "I guess I could've let you drag one of\n"
+	.string "the others along with you…\l"
+	.string "but would it have gone right without me\l"
+	.string "there?\p"
+	.string "Oh, if it was still you… probably?\p"
+	.string "Wait… no. Maybe not. A memory just\n"
+	.string "popped into my head.\p"
+	.string "We need to stop trauma-bonding one\n"
+	.string "of these days.$"
+
+Exp1_Town04_ReddText::
+# 265 "data/expansion_1/rival_text.pory"
+	.string "Did you miss me, {PLAYER}?\p"
+	.string "If you had just asked, I would've gone\n"
+	.string "along into the ship with you.\p"
+	.string "It would have been cool to see that…\n"
+	.string "what did you say it was, a water Regi?\p"
+	.string "You should've caught it to show me!\p"
+	.string "Dang, one of these days it'll have to be\n"
+	.string "my turn in the spotlight. Then I won't\l"
+	.string "miss out on these things!$"
+
+Exp1_Town04_BaronText::
+# 277 "data/expansion_1/rival_text.pory"
+	.string "{PLAYER}, how's Harper holding up?\p"
+	.string "Oh, I worry about that girl.\p"
+	.string "Trapped in that dark cave for so long,\n"
+	.string "then going through another dungeon\l"
+	.string "for us straight away.\p"
+	.string "I imagine if it had been one of my own…$"
+
+Exp1_Town04b_BaronText::
+# 286 "data/expansion_1/rival_text.pory"
+	.string "…one of my own friends! Of course!\n"
+	.string "All of you are my very own friends.$"
+
+Exp1_Town04_JaksonText::
+# 291 "data/expansion_1/rival_text.pory"
+	.string "Maybe Harper deserves more credit\n"
+	.string "than I give her. She knows more about\l"
+	.string "game design than I thought she did.\p"
+	.string "It certainly helped us get back on\n"
+	.string "track… I'll have to thank her.\p"
+	.string "O- Oh! No, I haven't forgotten you.\p"
+	.string "Thank you for going with her to\n"
+	.string "retrieve the explosives key item.\p"
+	.string "I'm glad our intuition was correct.$"
+
+Exp1_Town05_SakuraText::
+# 305 "data/expansion_1/rival_text.pory"
+	.string "$"
+
+Exp1_Town05_HarperText::
+# 309 "data/expansion_1/rival_text.pory"
+	.string "$"
+
+Exp1_Town05_ReddText::
+# 313 "data/expansion_1/rival_text.pory"
+	.string "$"
+
+Exp1_Town05_BaronText::
+# 317 "data/expansion_1/rival_text.pory"
+	.string "$"
+
+Exp1_Town05_JaksonText::
+# 321 "data/expansion_1/rival_text.pory"
 	.string "$"

@@ -175,21 +175,149 @@ text Exp1_Town02_JaksonText {
 
 #Town03
 text Exp1_Town03_SakuraText {
-	format( "")
-}
-
-text Exp1_Town03_HarperText {
-	format( "")
+	format( "Let me guess what you're thinking-\p"
+			"“Why didn't we cut this short and\n"
+			"message Harper straight away?\p"
+			"“It's not like Jakson was the only one\n"
+			"who could've remembered…!”\p"
+			"To that I say{EMOJI_TILDE}{UNK_SPACER}\p"
+			"Well, where's your sense of adventure,\n"
+			"{PLAYER}?\p"
+			"Isn't it more fun with a damsel in\n"
+			"mysterious, unknown distress?\p"
+			"Besides, would you really have known\n"
+			"where to find her?\p"
+			"Would SHE have known where she was?")
 }
 
 text Exp1_Town03_ReddText {
-	format( "")
+	format( "It's good to have the whole crew back\n"
+			"together.\p"
+			"I was wondering what ‘excitement level’\n"
+			"this little mod was going to have, but\l"
+			"this is pretty fun on its own.\p"
+			"Sakura hasn't really gotten the\n"
+			"swashbuckling she wanted but that\l"
+			"hasn't seemed to slow her down.\p"
+			"You think they coded new Pokémon\n"
+			"types to show up on the ship?\p"
+			"I mean, it… probably wasn't supposed\n"
+			"to crash in the first place, right?\l"
+			"…Right?")
 }
 
 text Exp1_Town03_BaronText {
-	format( "")
+	format( "Oh, thank you so much for bringing back\n"
+			"Harper, {PLAYER}.\p"
+			"Maybe she wasn't in real danger, but\n"
+			"this entire ‘Virtual Reality’ thing\l"
+			"makes it feel too realistic at times.\p"
+			"I wouldn't want to be trapped with\n"
+			"a blindfold over my eyes!\p"
+			"I'm so happy that she's back, and\n"
+			"that the group is safe and sound.")
 }
 
 text Exp1_Town03_JaksonText {
+	format( "Hey, {PLAYER}.\p"
+			"Harper's already gone off to the ship.\p"
+			"…Yeah, she really gave me an earful…\n"
+			"…in a couple ways…\l"
+			"But, I get it. I understand where she's\l"
+			"coming from.\p"
+			"I should've put a little more time into\n"
+			"vetting this mod. I was too quick to\l"
+			"incorporate it in.\p"
+			"Maybe I merged it into our pack wrong,\n"
+			"or maybe it was made for an earlier\l"
+			"version?\p"
+			"It's not bad enough that we can't keep\n"
+			"going, but I'll- well, maybe Harper and I\l"
+			"both will try to handle any issues.\p"
+			"Either way, let's join her once we're\n"
+			"ready.")
+}
+
+
+#Town04
+text Exp1_Town04_SakuraText {
+	format( "You ready to watch this, {PLAYER}?\p"
+			"Let's get started{EMOJI_TILDE}{UNK_SPACER}")
+}
+
+text Exp1_Town04_HarperText {
+	format( "Ahh… …\p"
+			"I'm just taking a breather, {PLAYER}.\p"
+			"Trapped in one dungeon, then shipped\n"
+			"off to another straight away.\p"
+			"… … …\p"
+			"I guess I could've let you drag one of\n"
+			"the others along with you…\l"
+			"but would it have gone right without me\l"
+			"there?\p"
+			"Oh, if it was still you… probably?\p"
+			"Wait… no. Maybe not. A memory just\n"
+			"popped into my head.\p"
+			"We need to stop trauma-bonding one\n"
+			"of these days.")
+}
+
+text Exp1_Town04_ReddText {
+	format( "Did you miss me, {PLAYER}?\p"
+			"If you had just asked, I would've gone\n"
+			"along into the ship with you.\p"
+			"It would have been cool to see that…\n"
+			"what did you say it was, a water Regi?\p"
+			"You should've caught it to show me!\p"
+			"Dang, one of these days it'll have to be\n"
+			"my turn in the spotlight. Then I won't\l"
+			"miss out on these things!")
+}
+
+text Exp1_Town04_BaronText {
+	format( "{PLAYER}, how's Harper holding up?\p"
+			"Oh, I worry about that girl.\p"
+			"Trapped in that dark cave for so long,\n"
+			"then going through another dungeon\l"
+			"for us straight away.\p"
+			"I imagine if it had been one of my own…")
+}
+
+text Exp1_Town04b_BaronText {
+	format( "…one of my own friends! Of course!\n"
+			"All of you are my very own friends.")
+}
+
+text Exp1_Town04_JaksonText {
+	format( "Maybe Harper deserves more credit\n"
+			"than I give her. She knows more about\l"
+			"game design than I thought she did.\p"
+			"It certainly helped us get back on\n"
+			"track… I'll have to thank her.\p"
+			"O- Oh! No, I haven't forgotten you.\p"
+			"Thank you for going with her to\n"
+			"retrieve the explosives key item.\p"
+			"I'm glad our intuition was correct.")
+}
+
+
+#Town05
+text Exp1_Town05_SakuraText {
+	format( "")
+}
+
+text Exp1_Town05_HarperText {
+	format( "")
+}
+
+text Exp1_Town05_ReddText {
+	format( "")
+}
+
+text Exp1_Town05_BaronText {
+	format( "")
+}
+
+text Exp1_Town05_JaksonText {
 	format( "")
 }

@@ -168,6 +168,42 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "SubmergedCave_2F_1R_Warp5To4"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "26",
+      "script": "Expansion1_Follower_Harper1_Talking1"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "27",
+      "script": "Expansion1_Follower_Harper1_Talking2"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "28",
+      "script": "Expansion1_Follower_Harper1_Talking3"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "29",
+      "script": "Expansion1_Rival_Scene04"
     }
   ],
   "bg_events": []

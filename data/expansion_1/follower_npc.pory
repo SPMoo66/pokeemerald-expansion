@@ -1,6 +1,9 @@
 script Expansion1_Follower_Harper1 {
 	faceplayer
-	msgbox ("Follower script")
-	closemessage
+	speakername (CommonText_Harper)
+	msgbox ("I'll admit it's an interesting little\n"
+			"dungeon we have here… thankfully\l"
+			"a bit linear too. We can just keep\l"
+			"moving forward.", MSGBOX_AUTOCLOSE)
 	release
 }

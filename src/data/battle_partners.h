@@ -65,6 +65,7 @@
         .party = TRAINER_PARTY(sParty_HarperFollowerSubmergedCave),
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_FRONT_HARPER,
         .trainerBackPic = TRAINER_PIC_BACK_WALLY,
         .trainerName = _("Harper"),
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,

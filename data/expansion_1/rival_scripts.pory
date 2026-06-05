@@ -8,8 +8,13 @@
 	# 21: Set after waking up in Illusory Grotto
 	# 22: Set after the infinite water map
 	# 23: Set after reaching Mauve Island
-	# 24: Set after Scene02
-	# 25: tbd
+	# 24: Set after Scene02 (reaching Mauve Island)
+	# 25: Set after obtaining Lantern
+	# 26: Set after Scene03 (meeting Harper in Submerged Cave)
+	# 27: Set after talking 1
+	# 28: Set after talking 2
+	# 29: Set after talking 3
+	# 30: Set after Scene04 (finishing Submerged Cave with Harper)
 
 script EventScript_JaksonExpansion1Call {
 	lockall

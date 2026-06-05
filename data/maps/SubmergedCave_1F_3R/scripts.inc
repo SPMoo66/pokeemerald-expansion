@@ -1,159 +1,113 @@
 SubmergedCave_1F_3R_MapScripts::
+# 4 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	map_script MAP_SCRIPT_ON_TRANSITION, SubmergedCave_1F_3R_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
 
-
-SubmergedCave_1F_3R_StartHarperFollower::
-# 6 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	faceplayer
-# 7 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	msgbox SubmergedCave_1F_3R_StartHarperFollower_Text_0
+SubmergedCave_1F_3R_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+# 5 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	goto_if_set FLAG_SYS_HIDE_FOLLOWERS, SubmergedCave_1F_3R_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+SubmergedCave_1F_3R_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 8 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	closemessage
+	compare VAR_EMERALBODY_RIVAL_STATE, 30
+	goto_if_ge SubmergedCave_1F_3R_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
+	return
+
+SubmergedCave_1F_3R_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
+# 6 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	setflag FLAG_TEMP_1
+	goto SubmergedCave_1F_3R_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+
+SubmergedCave_1F_3R_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 9 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	setfollowernpc 1, 0, Expansion1_Follower_Harper1, PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVE
-# 10 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	hidefollowernpc
-# 11 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	setflag FLAG_SYS_HIDE_FOLLOWERS
-# 12 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	setvar VAR_TEMP_5, 0
-# 13 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	release
+	setflag FLAG_TEMP_1
 	return
-
-
-SubmergedCave_1F_3R_ClearHarperFollower::
-# 17 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	goto_if_set FLAG_SYS_HIDE_FOLLOWERS, SubmergedCave_1F_3R_ClearHarperFollower_1
-	return
-
-SubmergedCave_1F_3R_ClearHarperFollower_1:
-# 18 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	getobjectfacingdirection LOCALID_PLAYER, VAR_TEMP_0
-# 19 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	facefollowernpc
-# 20 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	msgbox SubmergedCave_1F_3R_ClearHarperFollower_Text_0, MSGBOX_YESNO
-# 21 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	closemessage
-# 22 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq SubmergedCave_1F_3R_ClearHarperFollower_4
-# 61 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
-# 62 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	waitmovement 0
-SubmergedCave_1F_3R_ClearHarperFollower_3:
-# 64 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	release
-	return
-
-SubmergedCave_1F_3R_ClearHarperFollower_4:
-# 23 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	clearflag FLAG_SYS_HIDE_FOLLOWERS
-# 24 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	compare VAR_TEMP_0, DIR_SOUTH
-	goto_if_eq SubmergedCave_1F_3R_ClearHarperFollower_8
-# 28 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	compare VAR_TEMP_0, DIR_EAST
-	goto_if_eq SubmergedCave_1F_3R_ClearHarperFollower_9
-# 32 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	compare VAR_TEMP_0, DIR_NORTH
-	goto_if_eq SubmergedCave_1F_3R_ClearHarperFollower_10
-SubmergedCave_1F_3R_ClearHarperFollower_7:
-# 36 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	msgbox SubmergedCave_1F_3R_ClearHarperFollower_Text_1
-# 37 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	closemessage
-# 38 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	addobject 1
-# 39 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	destroyfollowernpc
-# 41 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	compare VAR_TEMP_0, DIR_SOUTH
-	goto_if_eq SubmergedCave_1F_3R_ClearHarperFollower_15
-# 46 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	compare VAR_TEMP_0, DIR_EAST
-	goto_if_eq SubmergedCave_1F_3R_ClearHarperFollower_16
-# 49 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	compare VAR_TEMP_0, DIR_NORTH
-	goto_if_eq SubmergedCave_1F_3R_ClearHarperFollower_17
-SubmergedCave_1F_3R_ClearHarperFollower_14:
-# 55 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	waitmovement 0
-# 56 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	setobjectmovementtype 1, MOVEMENT_TYPE_LOOK_AROUND
-# 58 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	setvar VAR_TEMP_5, 1
-	goto SubmergedCave_1F_3R_ClearHarperFollower_3
-
-SubmergedCave_1F_3R_ClearHarperFollower_8:
-# 25 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	setobjectxyperm 1, 8, 3
-# 26 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
-	goto SubmergedCave_1F_3R_ClearHarperFollower_7
-
-SubmergedCave_1F_3R_ClearHarperFollower_9:
-# 29 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	setobjectxyperm 1, 7, 4
-# 30 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_RIGHT
-	goto SubmergedCave_1F_3R_ClearHarperFollower_7
-
-SubmergedCave_1F_3R_ClearHarperFollower_10:
-# 33 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	setobjectxyperm 1, 8, 5
-# 34 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_UP
-	goto SubmergedCave_1F_3R_ClearHarperFollower_7
-
-SubmergedCave_1F_3R_ClearHarperFollower_15:
-# 42 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	applymovement 1, Common_Movement_WalkLeft3
-# 43 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	waitmovement 0
-# 44 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	applymovement 1, Common_Movement_WalkDown
-	goto SubmergedCave_1F_3R_ClearHarperFollower_14
-
-SubmergedCave_1F_3R_ClearHarperFollower_16:
-# 47 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	applymovement 1, Common_Movement_WalkLeft2
-	goto SubmergedCave_1F_3R_ClearHarperFollower_14
-
-SubmergedCave_1F_3R_ClearHarperFollower_17:
-# 50 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	applymovement 1, Common_Movement_WalkLeft3
-# 51 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	waitmovement 0
-# 52 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	applymovement 1, Common_Movement_WalkUp
-	goto SubmergedCave_1F_3R_ClearHarperFollower_14
 
 
 SubmergedCave_1F_3R_Crystal::
-# 69 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+# 15 "data/maps/SubmergedCave_1F_3R/scripts.pory"
 	msgbox SubmergedCave_1F_3R_Crystal_Text_0
-# 70 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+# 16 "data/maps/SubmergedCave_1F_3R/scripts.pory"
 	closemessage
 	return
 
 
-SubmergedCave_1F_3R_StartHarperFollower_Text_0:
-# 7 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	.string "Follower start$"
-
-SubmergedCave_1F_3R_ClearHarperFollower_Text_0:
+SubmergedCave_1F_3R_HarperCheck::
 # 20 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	.string "Do you want to split up?$"
+	setvar VAR_TEMP_1, 1
+# 21 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 25
+	goto_if_le SubmergedCave_1F_3R_HarperCheck_1
+# 25 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 30
+	goto_if_lt SubmergedCave_1F_3R_HarperCheck_2
+	return
 
-SubmergedCave_1F_3R_ClearHarperFollower_Text_1:
+SubmergedCave_1F_3R_HarperCheck_1:
+# 22 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	call SubmergedCave_1F_3R_PosCheck
+# 23 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	goto Expansion1_Rival_Scene03
+	return
+
+SubmergedCave_1F_3R_HarperCheck_2:
+# 26 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	call SubmergedCave_1F_3R_PosCheck
+# 27 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	goto Expansion1_Follower1_Restart
+	return
+
+
+SubmergedCave_1F_3R_PosCheck::
+# 33 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	lock
+# 34 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	getplayerxy VAR_TEMP_2, VAR_TEMP_3
+# 35 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	compare VAR_TEMP_3, 3
+	goto_if_eq SubmergedCave_1F_3R_PosCheck_2
+# 39 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	compare VAR_TEMP_3, 5
+	goto_if_eq SubmergedCave_1F_3R_PosCheck_3
+# 43 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	compare VAR_TEMP_3, 6
+	goto_if_eq SubmergedCave_1F_3R_PosCheck_4
+SubmergedCave_1F_3R_PosCheck_1:
+# 48 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	compare VAR_TEMP_2, 6
+	goto_if_eq SubmergedCave_1F_3R_PosCheck_8
+	return
+
+SubmergedCave_1F_3R_PosCheck_2:
 # 36 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	.string "I'll stay here.$"
+	turnobject 1, DIR_NORTH
+# 37 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	turnobject LOCALID_PLAYER, DIR_SOUTH
+	goto SubmergedCave_1F_3R_PosCheck_1
+
+SubmergedCave_1F_3R_PosCheck_3:
+# 40 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	turnobject 1, DIR_SOUTH
+# 41 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	turnobject LOCALID_PLAYER, DIR_NORTH
+	goto SubmergedCave_1F_3R_PosCheck_1
+
+SubmergedCave_1F_3R_PosCheck_4:
+# 44 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	turnobject 1, DIR_SOUTH
+# 45 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
+# 46 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	waitmovement 0
+	goto SubmergedCave_1F_3R_PosCheck_1
+
+SubmergedCave_1F_3R_PosCheck_8:
+# 49 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+	faceplayer
+	return
+
 
 SubmergedCave_1F_3R_Crystal_Text_0:
-# 69 "data/maps/SubmergedCave_1F_3R/scripts.pory"
+# 15 "data/maps/SubmergedCave_1F_3R/scripts.pory"
 	.string "It appears that a chunk of the crystal\n"
 	.string "was broken off recently. Shards of\l"
 	.string "crystal are scattered across the\l"

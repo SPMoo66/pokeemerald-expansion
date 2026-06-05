@@ -234,7 +234,9 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	call Expansion1_Rival_Scene02e
+	setvar VAR_EMERALBODY_RIVAL_STATE, 29
+	setflag FLAG_NO_COLLISION
+	warp MAP_SUBMERGED_CAVE_1F_3R, 7, 4
 	release
 	end
 

@@ -133,6 +133,7 @@ script SubmergedCave_2F_1R_CommonExitNonAnimDoorEast {
 
 script SubmergedCave_2F_1R_Warp1To2 {
 	call (SubmergedCave_2F_1R_CommonEnterNonAnimDoor)
+	hidefollower
 	applymovement (LOCALID_CAMERA, SubmergedCave_2F_1R_Movement1To2)
 	waitmovement (0)
 	special (RemoveCameraObject)
@@ -176,6 +177,7 @@ script SubmergedCave_2F_1R_Warp2To3 {
 
 script SubmergedCave_2F_1R_Warp3To2 {
 	call (SubmergedCave_2F_1R_CommonEnterNonAnimDoorEast)
+	hidefollower
 	applymovement (LOCALID_CAMERA, SubmergedCave_2F_1R_Movement3To2)
 	waitmovement (0)
 	special (RemoveCameraObject)
@@ -208,6 +210,7 @@ script SubmergedCave_2F_1R_Warp3To4 {
 
 script SubmergedCave_2F_1R_Warp4To3 {
 	call (SubmergedCave_2F_1R_CommonEnterNonAnimDoorEast)
+	hidefollower
 	applymovement (LOCALID_CAMERA, SubmergedCave_2F_1R_Movement4To3)
 	waitmovement (0)
 	special (RemoveCameraObject)
@@ -229,6 +232,7 @@ movement SubmergedCave_2F_1R_Movement4To3 {
 
 script SubmergedCave_2F_1R_Warp4To5 {
 	call (SubmergedCave_2F_1R_CommonEnterNonAnimDoor)
+	hidefollower
 	applymovement (LOCALID_CAMERA, SubmergedCave_2F_1R_Movement4To5)
 	waitmovement (0)
 	special (RemoveCameraObject)
@@ -240,6 +244,7 @@ script SubmergedCave_2F_1R_Warp4To5 {
 
 script SubmergedCave_2F_1R_Warp5To4 {
 	call (SubmergedCave_2F_1R_CommonEnterNonAnimDoorEast)
+	hidefollower
 	applymovement (LOCALID_CAMERA, SubmergedCave_2F_1R_Movement5To4)
 	waitmovement (0)
 	special (RemoveCameraObject)

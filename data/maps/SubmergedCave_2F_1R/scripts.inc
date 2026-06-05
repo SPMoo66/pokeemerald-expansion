@@ -255,567 +255,577 @@ SubmergedCave_2F_1R_Warp1To2::
 # 135 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	call SubmergedCave_2F_1R_CommonEnterNonAnimDoor
 # 136 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement1To2
+	hidefollower
 # 137 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement1To2
 # 138 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	special RemoveCameraObject
+	waitmovement 0
 # 139 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy LOCALID_PLAYER, 0, 12
+	special RemoveCameraObject
 # 140 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 0, 12
+	setobjectxy LOCALID_PLAYER, 0, 12
 # 141 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	call SubmergedCave_2F_1R_CommonExitNonAnimDoorWest
+	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 0, 12
 # 142 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	call SubmergedCave_2F_1R_CommonExitNonAnimDoorWest
+# 143 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	release
 	return
 
 
 SubmergedCave_2F_1R_Warp2To1::
-# 146 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	call SubmergedCave_2F_1R_CommonEnterNonAnimDoorWest
 # 147 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement2To1
+	call SubmergedCave_2F_1R_CommonEnterNonAnimDoorWest
 # 148 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement2To1
 # 149 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	special RemoveCameraObject
+	waitmovement 0
 # 150 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy LOCALID_PLAYER, 35, 15
+	special RemoveCameraObject
 # 151 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 35, 15
+	setobjectxy LOCALID_PLAYER, 35, 15
 # 152 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	call SubmergedCave_2F_1R_CommonExitNonAnimDoor
+	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 35, 15
 # 153 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	call SubmergedCave_2F_1R_CommonExitNonAnimDoor
+# 154 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	release
 	return
 
 
-# 156 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 157 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 SubmergedCave_2F_1R_Movement1To2:
-# 157 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_fast_diag_northwest
-# 157 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_fast_diag_northwest
-# 157 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northwest
 # 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_left
+	walk_fast_diag_northwest
 # 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_fast_diag_northwest
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 158 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_left
+# 159 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
 	step_end
 
-# 161 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 SubmergedCave_2F_1R_Movement2To1:
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	walk_faster_right
-# 162 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
 # 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	walk_faster_right
+# 164 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southeast
-# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 164 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southeast
-# 163 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 164 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southeast
 	step_end
 
 SubmergedCave_2F_1R_Warp2To3::
-# 167 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	call SubmergedCave_2F_1R_CommonEnterNonAnimDoorWest
 # 168 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement2To3
+	call SubmergedCave_2F_1R_CommonEnterNonAnimDoorWest
 # 169 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement2To3
 # 170 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	special RemoveCameraObject
+	waitmovement 0
 # 171 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy LOCALID_PLAYER, 41, 10
+	special RemoveCameraObject
 # 172 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 41, 10
+	setobjectxy LOCALID_PLAYER, 41, 10
 # 173 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	call SubmergedCave_2F_1R_CommonExitNonAnimDoorEast
+	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 41, 10
 # 174 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	call SubmergedCave_2F_1R_CommonExitNonAnimDoorEast
+# 175 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	release
 	return
 
 
 SubmergedCave_2F_1R_Warp3To2::
-# 178 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	call SubmergedCave_2F_1R_CommonEnterNonAnimDoorEast
 # 179 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement3To2
+	call SubmergedCave_2F_1R_CommonEnterNonAnimDoorEast
 # 180 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	waitmovement 0
+	hidefollower
 # 181 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	special RemoveCameraObject
+	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement3To2
 # 182 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy LOCALID_PLAYER, 11, 21
+	waitmovement 0
 # 183 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 11, 21
+	special RemoveCameraObject
 # 184 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	call SubmergedCave_2F_1R_CommonExitNonAnimDoorWest
+	setobjectxy LOCALID_PLAYER, 11, 21
 # 185 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 11, 21
+# 186 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	call SubmergedCave_2F_1R_CommonExitNonAnimDoorWest
+# 187 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	release
 	return
 
 
-# 188 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 190 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 SubmergedCave_2F_1R_Movement2To3:
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 189 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 191 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 190 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 192 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 190 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 192 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 190 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 192 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 190 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 192 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 190 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 192 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 190 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 192 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 190 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 192 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 190 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 192 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 190 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 192 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 190 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 192 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 190 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 192 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
 	step_end
 
-# 193 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 SubmergedCave_2F_1R_Movement3To2:
-# 194 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 196 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 194 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 196 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 194 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 196 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 194 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 196 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 194 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 196 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 194 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 196 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 194 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 196 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 194 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 196 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 194 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 196 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 194 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 196 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 194 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 196 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 195 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 197 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
 	step_end
 
 SubmergedCave_2F_1R_Warp3To4::
-# 199 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	call SubmergedCave_2F_1R_CommonEnterNonAnimDoorWest
-# 200 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement3To4
 # 201 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	waitmovement 0
+	call SubmergedCave_2F_1R_CommonEnterNonAnimDoorWest
 # 202 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	special RemoveCameraObject
+	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement3To4
 # 203 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy LOCALID_PLAYER, 40, 20
+	waitmovement 0
 # 204 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 40, 20
+	special RemoveCameraObject
 # 205 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	call SubmergedCave_2F_1R_CommonExitNonAnimDoorEast
+	setobjectxy LOCALID_PLAYER, 40, 20
 # 206 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 40, 20
+# 207 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	call SubmergedCave_2F_1R_CommonExitNonAnimDoorEast
+# 208 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	release
 	return
 
 
 SubmergedCave_2F_1R_Warp4To3::
-# 210 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	call SubmergedCave_2F_1R_CommonEnterNonAnimDoorEast
-# 211 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement4To3
 # 212 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	waitmovement 0
+	call SubmergedCave_2F_1R_CommonEnterNonAnimDoorEast
 # 213 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	special RemoveCameraObject
+	hidefollower
 # 214 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy LOCALID_PLAYER, 20, 17
+	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement4To3
 # 215 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 20, 17
+	waitmovement 0
 # 216 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	call SubmergedCave_2F_1R_CommonExitNonAnimDoorWest
+	special RemoveCameraObject
 # 217 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	setobjectxy LOCALID_PLAYER, 20, 17
+# 218 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 20, 17
+# 219 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	call SubmergedCave_2F_1R_CommonExitNonAnimDoorWest
+# 220 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	release
 	return
 
 
-# 220 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 223 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 SubmergedCave_2F_1R_Movement3To4:
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 221 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 224 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_right
-# 222 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 225 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southeast
-# 222 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 225 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southeast
-# 222 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 225 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southeast
 	step_end
 
-# 225 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 228 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 SubmergedCave_2F_1R_Movement4To3:
-# 226 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 229 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northwest
-# 226 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 229 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northwest
-# 226 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 229 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northwest
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
-# 227 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 230 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_faster_left
 	step_end
 
 SubmergedCave_2F_1R_Warp4To5::
-# 231 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	call SubmergedCave_2F_1R_CommonEnterNonAnimDoor
-# 232 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement4To5
-# 233 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	waitmovement 0
 # 234 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	special RemoveCameraObject
+	call SubmergedCave_2F_1R_CommonEnterNonAnimDoor
 # 235 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy LOCALID_PLAYER, 24, 4
+	hidefollower
 # 236 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 24, 4
+	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement4To5
 # 237 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	call SubmergedCave_2F_1R_CommonExitNonAnimDoorEast
+	waitmovement 0
 # 238 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	special RemoveCameraObject
+# 239 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	setobjectxy LOCALID_PLAYER, 24, 4
+# 240 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 24, 4
+# 241 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	call SubmergedCave_2F_1R_CommonExitNonAnimDoorEast
+# 242 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	release
 	return
 
 
 SubmergedCave_2F_1R_Warp5To4::
-# 242 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	call SubmergedCave_2F_1R_CommonEnterNonAnimDoorEast
-# 243 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement5To4
-# 244 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	waitmovement 0
-# 245 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	special RemoveCameraObject
 # 246 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy LOCALID_PLAYER, 15, 13
+	call SubmergedCave_2F_1R_CommonEnterNonAnimDoorEast
 # 247 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 15, 13
+	hidefollower
 # 248 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	call SubmergedCave_2F_1R_CommonExitNonAnimDoor
+	applymovement LOCALID_CAMERA, SubmergedCave_2F_1R_Movement5To4
 # 249 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	waitmovement 0
+# 250 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	special RemoveCameraObject
+# 251 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	setobjectxy LOCALID_PLAYER, 15, 13
+# 252 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	setobjectxy OBJ_EVENT_ID_NPC_FOLLOWER, 15, 13
+# 253 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+	call SubmergedCave_2F_1R_CommonExitNonAnimDoor
+# 254 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	release
 	return
 
 
-# 252 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 257 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 SubmergedCave_2F_1R_Movement4To5:
-# 253 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 258 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 253 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 258 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 253 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 258 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 253 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 258 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 253 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 258 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 253 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 258 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 253 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 258 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 253 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 258 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
-# 253 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 258 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_northeast
 	step_end
 
-# 256 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 261 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 SubmergedCave_2F_1R_Movement5To4:
-# 257 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 262 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 257 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 262 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 257 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 262 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 257 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 262 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 257 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 262 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 257 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 262 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 257 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 262 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 257 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 262 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
-# 257 "data/maps/SubmergedCave_2F_1R/scripts.pory"
+# 262 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	walk_fast_diag_southwest
 	step_end
 

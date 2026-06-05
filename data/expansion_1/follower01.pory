@@ -1,4 +1,5 @@
 const HARPER_SUBMERGED_CAVE = 1
+const HARPER_SUBMERGED_CAVE_2 = 6
 
 // dots…
 
@@ -65,7 +66,7 @@ script SubmergedCave_1F_3R_StartHarperFollower {
 }
 
 script SubmergedCave_1F_3R_ClearHarperFollower {
-	if (flag(FLAG_SYS_HIDE_FOLLOWERS)) {
+	if (flag(FLAG_SYS_HIDE_FOLLOWERS) && var(VAR_EMERALBODY_RIVAL_STATE) < 30) {
 		getobjectfacingdirection (LOCALID_PLAYER, VAR_TEMP_0)
 		facefollowernpc
 		speakername (CommonText_Harper)
@@ -211,5 +212,26 @@ script Expansion1_Rival_Scene04 {
 			"{EMOJI_BIGWHEEL}Cracks knuckles{EMOJI_BIGWHEEL}\p"
 			"I'll meet back with you, and the others,\n"
 			"there!", MSGBOX_AUTOCLOSE)
+	applymovement (LOCALID_PLAYER, Common_Movement_LockFacingDirection)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkLeft)
+	waitmovement (0)
+	addobject (HARPER_SUBMERGED_CAVE_2)
+	destroyfollowernpc
+	applymovement (HARPER_SUBMERGED_CAVE_2, Common_Movement_WalkLeft)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_UnlockFacingDirection)
+	applymovement (HARPER_SUBMERGED_CAVE_2, Common_Movement_WalkDown)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
+	applymovement (HARPER_SUBMERGED_CAVE_2, Common_Movement_WalkLeft)
+	waitmovement (0)
+	applymovement (HARPER_SUBMERGED_CAVE_2, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	delay (10)
+	removeobject (HARPER_SUBMERGED_CAVE_2)
+	playse (SE_EXIT)
+	waitse
+	clearflag (FLAG_SYS_HIDE_FOLLOWERS)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 30)
 }

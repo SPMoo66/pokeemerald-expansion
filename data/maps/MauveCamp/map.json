@@ -95,8 +95,8 @@
     {
       "local_id": "MAUVECAMP_JAKSON",
       "graphics_id": "OBJ_EVENT_GFX_JAKSON",
-      "x": 10,
-      "y": 13,
+      "x": 39,
+      "y": 0,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -109,8 +109,8 @@
     {
       "local_id": "MAUVECAMP_BARON",
       "graphics_id": "OBJ_EVENT_GFX_BARON",
-      "x": 21,
-      "y": 19,
+      "x": 39,
+      "y": 0,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -123,8 +123,8 @@
     {
       "local_id": "MAUVECAMP_SAKURA",
       "graphics_id": "OBJ_EVENT_GFX_SAKURA",
-      "x": 19,
-      "y": 19,
+      "x": 39,
+      "y": 0,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -151,8 +151,8 @@
     {
       "local_id": "MAUVECAMP_REDD",
       "graphics_id": "OBJ_EVENT_GFX_REDD",
-      "x": 22,
-      "y": 19,
+      "x": 39,
+      "y": 0,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -161,6 +161,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_TEMP_3"
+    },
+    {
+      "local_id": "MAUVECAMP_HARPER",
+      "graphics_id": "OBJ_EVENT_GFX_HARPER",
+      "x": 11,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_4"
     }
   ],
   "warp_events": [

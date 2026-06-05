@@ -15,17 +15,24 @@ mapscripts MauveCamp_MapScripts {
 			setflag (FLAG_TEMP_6) // to hide the sailors
 			setflag (FLAG_TEMP_2) // to hide the sailors
 			setflag (FLAG_TEMP_3) // to hide Redd
+			setflag (FLAG_TEMP_4) // to hide Harper
 		}
-		if (var(VAR_EMERALBODY_RIVAL_STATE) == 23) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 23) { // Scene02
 			savebgm (MUS_DP_SUNYSHORE_DAY)
 		}
 		if (var(VAR_EMERALBODY_RIVAL_STATE) == 24) {
-			// set rival positions, etc. here
+			// set rival positions, etc. here for Town02
+			setflag (FLAG_TEMP_4) // to hide Harper
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 31 || var(VAR_EMERALBODY_RIVAL_STATE) == 30) { // Scene03
+			setflag (FLAG_TEMP_6)
+			
 		}
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [
 		VAR_TEMP_0, 1: MauveCamp_EventScript_HeadbuttTree
 		VAR_EMERALBODY_RIVAL_STATE, 22: Expansion1_Rival_Scene02_Setup
+		VAR_EMERALBODY_RIVAL_STATE, 30: Expansion1_Rival_Scene05_Setup
 	]
 }
 

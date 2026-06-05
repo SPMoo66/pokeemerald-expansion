@@ -33,9 +33,9 @@ script BlanchedDepths_2F_1R_EventScript_MattPostBattle {
 script BlanchedDepths_2F_1R_EventScript_Sailor {
 	lock
 	faceplayer
-	if (!var(VAR_TEMP_0)) {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) < 26) {
 		msgbox ("Ahoy!\nIt doesn't seem like your treasure is\lhere.\p… … …\pOh, the LIGHT?\pYes, I suppose I did bring it with me.\pHere, go ahead and take it with you.", MSGBOX_AUTOCLOSE)
-		setvar (VAR_TEMP_0, 1)
+		setvar (VAR_EMERALBODY_RIVAL_STATE, 26)
 	}
 	msgbox ("Don't worry about me, my Pokémon will\nhelp me return to land.", MSGBOX_AUTOCLOSE)
 	release

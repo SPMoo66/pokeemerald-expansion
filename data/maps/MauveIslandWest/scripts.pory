@@ -1,8 +1,20 @@
 mapscripts MauveIslandWest_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_1)
 		if (var(VAR_EMERALBODY_RIVAL_STATE) < 23) {
 			setflag (FLAG_TEMP_6) // to hide the trainers
 		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 24) {
+			if (var(VAR_EMERALBODY_RIVAL_STATE) < 31) {
+				clearflag (FLAG_TEMP_1)
+			}
+		}
+	}
+}
+
+script MauveIslandWest_Redd {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) < 31) {
+		goto (Redd_Exp1_Town02)
 	}
 }
 

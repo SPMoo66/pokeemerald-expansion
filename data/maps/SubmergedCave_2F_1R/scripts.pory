@@ -1,6 +1,6 @@
 mapscripts SubmergedCave_2F_1R_MapScripts {
 	MAP_SCRIPT_ON_LOAD {
-		if (var(VAR_EMERALBODY_RIVAL_STATE) == 18) { // if light is unobtained
+		if (var(VAR_EMERALBODY_RIVAL_STATE) < 26) { // if light is unobtained
 			setflag (FLAG_DONT_START_MUSIC_ON_WARP)
 			setflag (FLAG_SYS_SPAWN_INVISIBLE)
 			setflag (FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER)
@@ -10,15 +10,18 @@ mapscripts SubmergedCave_2F_1R_MapScripts {
 		setflag (FLAG_LANDMARK_SUBMERGED_CAVE)
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [
-		VAR_EMERALBODY_RIVAL_STATE, 18 {
-			clearflag (FLAG_DONT_START_MUSIC_ON_WARP)
-			clearflag (FLAG_SYS_SPAWN_INVISIBLE)
-			clearflag (FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER)
-			delay (40)
-			if (!flag(FLAG_TEMP_1)) {
-				msgbox (Text_TooDarkLetsTurnBack, MSGBOX_AUTOCLOSE)
-				setflag(FLAG_TEMP_1)
-				warp (MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_2, 1)
+		VAR_TEMP_0, 0 {
+			setvar (VAR_TEMP_0, 1)
+			if (var(VAR_EMERALBODY_RIVAL_STATE) < 26) {
+				clearflag (FLAG_DONT_START_MUSIC_ON_WARP)
+				clearflag (FLAG_SYS_SPAWN_INVISIBLE)
+				clearflag (FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER)
+				delay (40)
+				if (!flag(FLAG_TEMP_1)) {
+					msgbox (Text_TooDarkLetsTurnBack, MSGBOX_AUTOCLOSE)
+					setflag(FLAG_TEMP_1)
+					warp (MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_2, 1)
+				}
 			}
 		}
 	]

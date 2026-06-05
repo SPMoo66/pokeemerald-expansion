@@ -248,7 +248,9 @@ Debug_EventScript_Script_7::
 	end
 
 Debug_EventScript_Script_8::
-	call EventScript_JaksonExpansion1Call
+	setflag FLAG_LANDMARK_MAUVE_CAMP
+	setvar VAR_EMERALBODY_RIVAL_STATE, 24
+	warp MAP_MAUVE_ISLAND_WEST, 6, 10
 	release
 	end
 

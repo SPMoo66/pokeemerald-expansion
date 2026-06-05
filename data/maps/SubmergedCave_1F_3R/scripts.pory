@@ -5,7 +5,7 @@ mapscripts SubmergedCave_1F_3R_MapScripts {
 		if (flag(FLAG_SYS_HIDE_FOLLOWERS))  {
 			setflag (FLAG_TEMP_1)
 		}
-		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 30) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 31) {
 			setflag (FLAG_TEMP_1)
 		}
 	}
@@ -18,11 +18,11 @@ script SubmergedCave_1F_3R_Crystal {
 
 script SubmergedCave_1F_3R_HarperCheck {
 	setvar (VAR_TEMP_1, 1)
-	if (var(VAR_EMERALBODY_RIVAL_STATE) <= 25) { // first time
+	if (var(VAR_EMERALBODY_RIVAL_STATE) <= 26) { // first time
 		call (SubmergedCave_1F_3R_PosCheck)
 		goto (Expansion1_Rival_Scene03)
 	}
-	elif (var(VAR_EMERALBODY_RIVAL_STATE) < 30) { // before completion
+	elif (var(VAR_EMERALBODY_RIVAL_STATE) < 31) { // before completion
 		call (SubmergedCave_1F_3R_PosCheck)
 		goto (Expansion1_Follower1_Restart)
 	}

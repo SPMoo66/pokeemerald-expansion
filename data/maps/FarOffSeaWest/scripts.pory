@@ -1,3 +1,5 @@
+const FAROFFSEAWEST_SAKURA = 9
+
 mapscripts FarOffSeaWest_MapScripts {
 	MAP_SCRIPT_ON_LOAD {
 		if (!flag(FLAG_SHOW_FAR_OFF_SEA_WEST_BOATS)) {
@@ -25,11 +27,28 @@ mapscripts FarOffSeaWest_MapScripts {
 		}
 	}
 	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_1)
 		if (var(VAR_EMERALBODY_RIVAL_STATE) < 23) {
 			setflag (FLAG_TEMP_6) // to hide the trainers
 		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 24) { 
+			if (var(VAR_EMERALBODY_RIVAL_STATE) < 31) {
+				clearflag (FLAG_TEMP_1)
+			}
+		}
 	}
 }
+
+script FarOffSeaWest_Sakura_1 {
+	turnobject (FAROFFSEAWEST_SAKURA, DIR_SOUTH)
+	goto (Sakura_Exp1_Town02)
+}
+
+script FarOffSeaWest_Sakura_2 {
+	turnobject (FAROFFSEAWEST_SAKURA, DIR_EAST)
+	goto (Sakura_Exp1_Town02)
+}
+
 
 script FarOffSeaWest_EventScript_Selina {
 	trainerbattle_single (TRAINER_SELINA, "These beautiful waters are the perfect\nbackdrop for a battle!", "Aww…")

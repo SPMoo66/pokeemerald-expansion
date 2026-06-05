@@ -44,7 +44,7 @@ script Expansion1_Rival_Scene03 {
 			"Jakson right now!\p"
 			"That face is gonna get a piece of\n"
 			"my mind…!", MSGBOX_AUTOCLOSE)
-	setvar (VAR_EMERALBODY_RIVAL_STATE, 26)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 27)
 	goto (SubmergedCave_1F_3R_StartHarperFollower)
 }
 
@@ -66,7 +66,7 @@ script SubmergedCave_1F_3R_StartHarperFollower {
 }
 
 script SubmergedCave_1F_3R_ClearHarperFollower {
-	if (flag(FLAG_SYS_HIDE_FOLLOWERS) && var(VAR_EMERALBODY_RIVAL_STATE) < 30) {
+	if (flag(FLAG_SYS_HIDE_FOLLOWERS) && var(VAR_EMERALBODY_RIVAL_STATE) < 31) {
 		getobjectfacingdirection (LOCALID_PLAYER, VAR_TEMP_0)
 		facefollowernpc
 		speakername (CommonText_Harper)
@@ -149,7 +149,7 @@ script Expansion1_Follower_Harper1_Talking1 {
 			"Now the question is what did they\n"
 			"hide beyond the light at the end\l"
 			"of the tunnel…?", MSGBOX_AUTOCLOSE)
-	setvar (VAR_EMERALBODY_RIVAL_STATE, 27)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 28)
 }
 
 script Expansion1_Follower_Harper1_Talking2 {
@@ -174,7 +174,7 @@ script Expansion1_Follower_Harper1_Talking2 {
 			"{EMOJI_BIGWHEEL}Crosses fingers{EMOJI_BIGWHEEL}\n"
 			"Please use the VR headset's physics\l"
 			"engine…!", MSGBOX_AUTOCLOSE)
-	setvar (VAR_EMERALBODY_RIVAL_STATE, 28)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 29)
 }
 
 script Expansion1_Follower_Harper1_Talking3 {
@@ -193,7 +193,7 @@ script Expansion1_Follower_Harper1_Talking3 {
 			"this game.\p"
 			"I'll try to give you help, too.\n"
 			"At least, where I can.", MSGBOX_AUTOCLOSE)
-	setvar (VAR_EMERALBODY_RIVAL_STATE, 29)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 30)
 }
 
 script Expansion1_Rival_Scene04 {
@@ -233,5 +233,5 @@ script Expansion1_Rival_Scene04 {
 	playse (SE_EXIT)
 	waitse
 	clearflag (FLAG_SYS_HIDE_FOLLOWERS)
-	setvar (VAR_EMERALBODY_RIVAL_STATE, 30)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 31)
 }

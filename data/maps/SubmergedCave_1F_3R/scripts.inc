@@ -8,7 +8,7 @@ SubmergedCave_1F_3R_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	goto_if_set FLAG_SYS_HIDE_FOLLOWERS, SubmergedCave_1F_3R_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 SubmergedCave_1F_3R_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 8 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 30
+	compare VAR_EMERALBODY_RIVAL_STATE, 31
 	goto_if_ge SubmergedCave_1F_3R_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
 	return
 
@@ -35,10 +35,10 @@ SubmergedCave_1F_3R_HarperCheck::
 # 20 "data/maps/SubmergedCave_1F_3R/scripts.pory"
 	setvar VAR_TEMP_1, 1
 # 21 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 25
+	compare VAR_EMERALBODY_RIVAL_STATE, 26
 	goto_if_le SubmergedCave_1F_3R_HarperCheck_1
 # 25 "data/maps/SubmergedCave_1F_3R/scripts.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 30
+	compare VAR_EMERALBODY_RIVAL_STATE, 31
 	goto_if_lt SubmergedCave_1F_3R_HarperCheck_2
 	return
 

@@ -54,8 +54,8 @@ BlanchedDepths_2F_1R_EventScript_Sailor::
 # 35 "data/maps/BlanchedDepths_2F_1R/scripts.pory"
 	faceplayer
 # 36 "data/maps/BlanchedDepths_2F_1R/scripts.pory"
-	compare VAR_TEMP_0, 0
-	goto_if_eq BlanchedDepths_2F_1R_EventScript_Sailor_2
+	compare VAR_EMERALBODY_RIVAL_STATE, 26
+	goto_if_lt BlanchedDepths_2F_1R_EventScript_Sailor_2
 BlanchedDepths_2F_1R_EventScript_Sailor_1:
 # 40 "data/maps/BlanchedDepths_2F_1R/scripts.pory"
 	msgbox BlanchedDepths_2F_1R_EventScript_Sailor_Text_1, MSGBOX_AUTOCLOSE
@@ -67,7 +67,7 @@ BlanchedDepths_2F_1R_EventScript_Sailor_2:
 # 37 "data/maps/BlanchedDepths_2F_1R/scripts.pory"
 	msgbox BlanchedDepths_2F_1R_EventScript_Sailor_Text_0, MSGBOX_AUTOCLOSE
 # 38 "data/maps/BlanchedDepths_2F_1R/scripts.pory"
-	setvar VAR_TEMP_0, 1
+	setvar VAR_EMERALBODY_RIVAL_STATE, 26
 	goto BlanchedDepths_2F_1R_EventScript_Sailor_1
 
 

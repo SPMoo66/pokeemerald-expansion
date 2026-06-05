@@ -24,7 +24,7 @@ Expansion1_Rival_Scene03::
 # 40 "data/expansion_1/follower01.pory"
 	msgbox Expansion1_Rival_Scene03_Text_2, MSGBOX_AUTOCLOSE
 # 47 "data/expansion_1/follower01.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 26
+	setvar VAR_EMERALBODY_RIVAL_STATE, 27
 # 48 "data/expansion_1/follower01.pory"
 	goto SubmergedCave_1F_3R_StartHarperFollower
 	return
@@ -97,7 +97,7 @@ SubmergedCave_1F_3R_ClearHarperFollower_5:
 
 SubmergedCave_1F_3R_ClearHarperFollower_2:
 # 69 "data/expansion_1/follower01.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 30
+	compare VAR_EMERALBODY_RIVAL_STATE, 31
 	goto_if_lt SubmergedCave_1F_3R_ClearHarperFollower_1
 	return
 
@@ -205,7 +205,7 @@ Expansion1_Follower_Harper1_Talking1::
 # 136 "data/expansion_1/follower01.pory"
 	msgbox Expansion1_Follower_Harper1_Talking1_Text_0, MSGBOX_AUTOCLOSE
 # 152 "data/expansion_1/follower01.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 27
+	setvar VAR_EMERALBODY_RIVAL_STATE, 28
 	return
 
 
@@ -217,7 +217,7 @@ Expansion1_Follower_Harper1_Talking2::
 # 158 "data/expansion_1/follower01.pory"
 	msgbox Expansion1_Follower_Harper1_Talking2_Text_0, MSGBOX_AUTOCLOSE
 # 177 "data/expansion_1/follower01.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 28
+	setvar VAR_EMERALBODY_RIVAL_STATE, 29
 	return
 
 
@@ -229,7 +229,7 @@ Expansion1_Follower_Harper1_Talking3::
 # 183 "data/expansion_1/follower01.pory"
 	msgbox Expansion1_Follower_Harper1_Talking3_Text_0, MSGBOX_AUTOCLOSE
 # 196 "data/expansion_1/follower01.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 29
+	setvar VAR_EMERALBODY_RIVAL_STATE, 30
 	return
 
 
@@ -283,7 +283,7 @@ Expansion1_Rival_Scene04::
 # 235 "data/expansion_1/follower01.pory"
 	clearflag FLAG_SYS_HIDE_FOLLOWERS
 # 236 "data/expansion_1/follower01.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 30
+	setvar VAR_EMERALBODY_RIVAL_STATE, 31
 	return
 
 

@@ -1,6 +1,12 @@
 mapscripts BlanchedDepths_1F_1R_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_1)
 		setflag (FLAG_LANDMARK_BLANCHED_DEPTHS)
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 24) {
+			if (var(VAR_EMERALBODY_RIVAL_STATE) < 30) {
+				clearflag (FLAG_TEMP_1)
+			}
+		}
 	}
 	MAP_SCRIPT_ON_RESUME {
 		setdivewarp (MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_1_BLANCHED_DEPTHS_ENTRANCE, 4, 3)
@@ -12,7 +18,7 @@ mapscripts BlanchedDepths_1F_1R_MapScripts {
 		}
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [
-		VAR_EMERALBODY_RIVAL_STATE, 18 {
+		VAR_EMERALBODY_RIVAL_STATE, 24 {
 			clearflag (FLAG_SYS_SPAWN_INVISIBLE)
 			clearflag (FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER)
 			setvar (VAR_0x8004, 28)
@@ -23,7 +29,7 @@ mapscripts BlanchedDepths_1F_1R_MapScripts {
 			applymovement (LOCALID_CAMERA, BlanchedDepths_1F_1R_IntroCameraMovements)
 			waitmovement (0)
 			special (RemoveCameraObject)
-			setvar (VAR_EMERALBODY_RIVAL_STATE, 19)
+			setvar (VAR_EMERALBODY_RIVAL_STATE, 25)
 		}
 	]
 }
@@ -36,8 +42,8 @@ movement BlanchedDepths_1F_1R_IntroCameraMovements {
 
 script BlanchedDepths_1F_1R_EventScript_DefeatedAquaGrunt {
 	faceplayer
-	if (!flag(FLAG_TEMP_1)) {
-		setflag (FLAG_TEMP_1)
+	if (!flag(FLAG_TEMP_2)) {
+		setflag (FLAG_TEMP_2)
 		msgbox ("Ack, another kid?!\pNo!\nLeave me alone!\pMuh- my Pokémon are already all fainted!", MSGBOX_AUTOCLOSE)
 	}
 	else {

@@ -133,6 +133,20 @@
       "trainer_sight_or_berry_tree_id": "5",
       "script": "FarOffSeaWest_EventScript_Mira",
       "flag": "FLAG_TEMP_6"
+    },
+    {
+      "local_id": "FAROFFSEAWEST_SAKURA",
+      "graphics_id": "OBJ_EVENT_GFX_SAKURA",
+      "x": 50,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_1"
     }
   ],
   "warp_events": [
@@ -145,5 +159,22 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 50,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FarOffSeaWest_Sakura_1"
+    },
+    {
+      "type": "sign",
+      "x": 51,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FarOffSeaWest_Sakura_2"
+    }
+  ]
 }

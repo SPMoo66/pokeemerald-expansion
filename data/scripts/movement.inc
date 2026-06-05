@@ -522,6 +522,10 @@ Common_Movement_WalkFastDown6:
 	walk_fast_down
 	step_end
 	
+Common_Movement_WalkFastRight:
+	walk_fast_right
+	step_end
+	
 Common_Movement_WalkFastRight9:
 	walk_fast_right
 	walk_fast_right

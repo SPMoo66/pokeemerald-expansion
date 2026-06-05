@@ -16,7 +16,7 @@
 	# 29: Set after talking 3
 	# 30: Set after Scene04 (finishing Submerged Cave with Harper)
 	# 31: Set in preparation for Scene05
-	# 32: Set after Scene05?
+	# 32: Set after Scene05
 	# 33: tbd
 
 script EventScript_JaksonExpansion1Call {

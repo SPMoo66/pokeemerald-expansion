@@ -26,7 +26,10 @@ mapscripts MauveCamp_MapScripts {
 		}
 		if (var(VAR_EMERALBODY_RIVAL_STATE) == 31 || var(VAR_EMERALBODY_RIVAL_STATE) == 30) { // Scene03
 			setflag (FLAG_TEMP_6)
-			
+			savebgm (MUS_HG_POKEWALKER)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 32) {
+			// set rival positions, etc. here for Town03
 		}
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [

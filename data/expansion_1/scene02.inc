@@ -618,10 +618,16 @@ Expansion1_Rival_Scene02e::
 # 355 "data/expansion_1/scene02.pory"
 	fadescreen FADE_FROM_BLACK
 # 356 "data/expansion_1/scene02.pory"
-	delay 10
-# 357 "data/expansion_1/scene02.pory"
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
+# 357 "data/expansion_1/scene02.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 30
+	goto_if_lt Expansion1_Rival_Scene02e_1
+	return
+
+Expansion1_Rival_Scene02e_1:
 # 358 "data/expansion_1/scene02.pory"
+	delay 10
+# 359 "data/expansion_1/scene02.pory"
 	helpwindow HELP_EXPANSION_1_BOAT_EXPLANATION
 	return
 

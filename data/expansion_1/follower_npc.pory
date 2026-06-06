@@ -7,3 +7,23 @@ script Expansion1_Follower_Harper1 {
 			"moving forward.", MSGBOX_AUTOCLOSE)
 	release
 }
+
+script Expansion1_Follower_Harper2 {
+	faceplayer
+	speakername (CommonText_Harper)
+	if (var(VAR_EMERALBODY_RIVAL_STATE) < 37) {
+		msgbox ("Shit, something's gotta be in one of\n"
+				"these rooms, right?\p"
+				"I wonder if this place is even made\n"
+				"like a normal dungeon…\p"
+				"Like are we gonna find some loot at\n"
+				"the end or is the dynamite gonna be in\l"
+				"the first few rooms we come across?", MSGBOX_AUTOCLOSE)
+	}
+	else {
+		msgbox ("A key… a key…\p"
+				"Do you remember there being any\n"
+				"locked rooms, {PLAYER}?", MSGBOX_AUTOCLOSE)
+	}
+	release
+}

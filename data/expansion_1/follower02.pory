@@ -1,0 +1,173 @@
+const SSTIDALDUNGEON_HARPER = 1
+const SSTIDALDUNGEON_ROOMS_HARPER = 0
+
+// dots…
+
+script Expansion1_Rival_Scene06 {
+	speakername (CommonText_Harper)
+	msgbox ("It's about time you showed up,\n"
+			"{PLAYER}.\p"
+			"{EMOJI_BIGWHEEL}Cracks her neck{EMOJI_BIGWHEEL}\p"
+			"I'll let you take point again.\p"
+			"Just make sure we find some action.\n"
+			"I need to vent a bit.\p"
+			"So…\p"
+			"Let's get that dynamite and well…\n"
+			"…\l"
+			"…blow this popsicle stand… right?\p"
+			"Agh, sorry about that one.\p"
+			"Just do what you have to.", MSGBOX_AUTOCLOSE)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 34)
+	goto (SSTidalDungeon_StartHarperFollower)
+}
+
+script Expansion1_Follower2_Restart {
+	speakername (CommonText_Harper)
+	msgbox ("Yo, let's get a move on.\p"
+			"There's gotta be something in here.", MSGBOX_AUTOCLOSE)
+	goto (SSTidalDungeon_StartHarperFollower)
+}
+
+
+script SSTidalDungeon_StartHarperFollower {
+	applymovement (SSTIDALDUNGEON_HARPER, Common_Movement_WalkDown)
+	waitmovement (0)
+	setfollowernpc (HARPER_SUBMERGED_CAVE, 0, Expansion1_Follower_Harper2, PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVE)
+	hidefollowernpc
+	setflag (FLAG_SYS_HIDE_FOLLOWERS)
+	setflag (FLAG_TEMP_1)
+	setvar (VAR_TEMP_5, 0)
+	release
+}
+
+script SSTidalDungeon_ClearHarperFollower {
+	if (flag(FLAG_SYS_HIDE_FOLLOWERS) && var(VAR_EMERALBODY_RIVAL_STATE) < 38) {
+		facefollowernpc
+		speakername (CommonText_Harper)
+		msgbox ("What, are you calling it off for now?", MSGBOX_YESNO)
+		closemessage
+		speakername (CommonText_Harper)
+		if (var(VAR_RESULT) == 1) { // Yes
+			clearflag (FLAG_SYS_HIDE_FOLLOWERS)
+			msgbox ("Alright. I'll wait, then.")
+			closemessage
+			setvar (VAR_TEMP_5, 1)
+			fadescreen (FADE_TO_BLACK)
+			destroyfollowernpc // We keep the follower on screen until the original object appears so there's no frame without the sprite. Also, if there's no delay between setobjectmovementtype and addobject, the object will appear, then turn.
+			warp (MAP_MAUVE_ISLAND_SOUTH, 0)
+		}
+		else {
+			msgbox ("Good, let's hurry up and get that\n"
+					"dynamite.", MSGBOX_AUTOCLOSE)
+			applymovement (LOCALID_PLAYER, Common_Movement_WalkUp)
+			waitmovement (0)
+		}
+		release
+	}
+}
+
+#script Expansion1_Follower_Harper1_Talking1 {
+#	facefollowernpc
+#	speakername (CommonText_Harper)
+#	msgbox ("Heaven forbid the mod devs let you\n"
+#			"see in front of your face here…\l"
+#			"It… was… SO dark earlier!\p"
+#			"I sometimes wonder if mod creators\n"
+#			"do it on purpose. If they're trying\l"
+#			"to troll people.\p"
+#			"… … …\n"
+#			"… … …\l"
+#			"I know, you're right. They did make\l"
+#			"that “light” item… Even still.\p"
+#			"I've downloaded my share of add-ons\n"
+#			"to games, and it always feels like\l"
+#			"there's… something that happens.\p"
+#			"Now the question is what did they\n"
+#			"hide beyond the light at the end\l"
+#			"of the tunnel…?", MSGBOX_AUTOCLOSE)
+#	setvar (VAR_EMERALBODY_RIVAL_STATE, 28)
+#}
+#
+#script Expansion1_Follower_Harper1_Talking2 {
+#	facefollowernpc
+#	speakername (CommonText_Harper)
+#	msgbox ("Hey, about the boat crash.\p"
+#			"You don't think this game simulates\n"
+#			"injury to the characters or anything,\l"
+#			"right?\p"
+#			"It's kind of funny to imagine us all\n"
+#			"being thrown around violently, but\l"
+#			"completely safe at the same time.\p"
+#			"Ah… I remember when that trend came\n"
+#			"around again when we were kids.\l"
+#			"Physics games designed to play\l"
+#			"around with the ragdoll mechanics.\p"
+#			"You could just… torture the sillly\n"
+#			"goobers. No consequence. No pain.\p"
+#			"…Shit.\p"
+#			"If it works like that here, would my\n"
+#			"revenge really be satisfying here…?\p"
+#			"{EMOJI_BIGWHEEL}Crosses fingers{EMOJI_BIGWHEEL}\n"
+#			"Please use the VR headset's physics\l"
+#			"engine…!", MSGBOX_AUTOCLOSE)
+#	setvar (VAR_EMERALBODY_RIVAL_STATE, 29)
+#}
+#
+#script Expansion1_Follower_Harper1_Talking3 {
+#	facefollowernpc
+#	speakername (CommonText_Harper)
+#	msgbox ("Hey, {PLAYER}.\p"
+#			"I haven't said it yet, so…\p"
+#			"Thanks for coming to save me.\p"
+#			"I was really mad before, but working\n"
+#			"through this with you has helped me\l"
+#			"cool down.\p"
+#			"I mean, I'm still going to give Jakson\n"
+#			"what for, but…\p"
+#			"Anyway, I always have appreciated the\n"
+#			"help and support you've given me in\l"
+#			"this game.\p"
+#			"I'll try to give you help, too.\n"
+#			"At least, where I can.", MSGBOX_AUTOCLOSE)
+#	setvar (VAR_EMERALBODY_RIVAL_STATE, 30)
+#}
+#
+#script Expansion1_Rival_Scene04 {
+#	facefollowernpc
+#	speakername (CommonText_Harper)
+#	msgbox ("Looks like we're free at last!\p"
+#			"All that and we didn't even run into\n"
+#			"whatever story event is in there.\p"
+#			"Maybe the modder just forgot?\p"
+#			"Argh! Screw them, too!\p"
+#			"Point me to wherever Jakson is.\n"
+#			"He's got an appointment with a boot.\p"
+#			"…\p"
+#			"Just surface and head East, right?\p"
+#			"Perfect.\n"
+#			"{EMOJI_BIGWHEEL}Cracks knuckles{EMOJI_BIGWHEEL}\p"
+#			"I'll meet back with you, and the others,\n"
+#			"there!", MSGBOX_AUTOCLOSE)
+#	applymovement (LOCALID_PLAYER, Common_Movement_LockFacingDirection)
+#	waitmovement (0)
+#	applymovement (LOCALID_PLAYER, Common_Movement_WalkLeft)
+#	waitmovement (0)
+#	addobject (HARPER_SUBMERGED_CAVE_2)
+#	destroyfollowernpc
+#	applymovement (HARPER_SUBMERGED_CAVE_2, Common_Movement_WalkLeft)
+#	waitmovement (0)
+#	applymovement (LOCALID_PLAYER, Common_Movement_UnlockFacingDirection)
+#	applymovement (HARPER_SUBMERGED_CAVE_2, Common_Movement_WalkDown)
+#	waitmovement (0)
+#	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
+#	applymovement (HARPER_SUBMERGED_CAVE_2, Common_Movement_WalkLeft)
+#	waitmovement (0)
+#	applymovement (HARPER_SUBMERGED_CAVE_2, Common_Movement_WalkInPlaceDown)
+#	waitmovement (0)
+#	delay (10)
+#	removeobject (HARPER_SUBMERGED_CAVE_2)
+#	playse (SE_EXIT)
+#	waitse
+#	clearflag (FLAG_SYS_HIDE_FOLLOWERS)
+#	setvar (VAR_EMERALBODY_RIVAL_STATE, 31)
+#}

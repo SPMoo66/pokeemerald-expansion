@@ -1,1 +1,23 @@
-mapscripts SS_Tidal_Dungeon_1F_1R_MapScripts {}
+mapscripts SS_Tidal_Dungeon_1F_1R_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if (flag(FLAG_SYS_HIDE_FOLLOWERS))  {
+			setflag (FLAG_TEMP_1)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 38) {
+			setflag (FLAG_TEMP_1)
+		}
+	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_TEMP_0, 0 {
+			if (!flag(FLAG_SYS_HIDE_FOLLOWERS) && var(VAR_EMERALBODY_RIVAL_STATE) < 38) {
+				if (var(VAR_EMERALBODY_RIVAL_STATE) == 33) {
+					call (Expansion1_Rival_Scene06)
+				}
+				else {
+					call (Expansion1_Follower2_Restart)
+				}
+			}
+			setvar (VAR_TEMP_0, 1)
+		}
+	]
+}

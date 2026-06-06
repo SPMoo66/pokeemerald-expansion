@@ -1735,6 +1735,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/expansion_1/scene02.inc"
 	.include "data/expansion_1/follower01.inc"
 	.include "data/expansion_1/scene05.inc"
+	.include "data/expansion_1/follower02.inc"
 
 	.include "data/maps/LeafyClearing/scripts.inc"
 	.include "data/maps/CaveOfDreams/scripts.inc"

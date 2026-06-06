@@ -15,6 +15,7 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "SSTIDALDUNGEON_HARPER",
       "graphics_id": "OBJ_EVENT_GFX_HARPER",
       "x": 0,
       "y": 9,
@@ -25,7 +26,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_TEMP_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
@@ -85,6 +86,25 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_5",
+      "var_value": "0",
+      "script": "SSTidalDungeon_ClearHarperFollower"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_5",
+      "var_value": "0",
+      "script": "SSTidalDungeon_ClearHarperFollower"
+    }
+  ],
   "bg_events": []
 }

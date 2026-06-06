@@ -18,7 +18,11 @@
 	# 31: Set after Scene04 (finishing Submerged Cave with Harper)
 	# 32: Set in preparation for Scene05
 	# 33: Set after Scene05
-	# 34: tbd
+	# 34: Set after Scene06
+	# 35: Set after talking 1
+	# 36: Set after talking 2
+	# 37: Set after obtaining key in SS Tidal Dungeon
+	# 38: 
 
 script EventScript_JaksonExpansion1Call {
 	lockall

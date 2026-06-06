@@ -1,0 +1,128 @@
+Expansion1_Rival_Scene06::
+# 7 "data/expansion_1/follower02.pory"
+	speakername CommonText_Harper
+# 8 "data/expansion_1/follower02.pory"
+	msgbox Expansion1_Rival_Scene06_Text_0, MSGBOX_AUTOCLOSE
+# 20 "data/expansion_1/follower02.pory"
+	setvar VAR_EMERALBODY_RIVAL_STATE, 34
+# 21 "data/expansion_1/follower02.pory"
+	goto SSTidalDungeon_StartHarperFollower
+	return
+
+
+Expansion1_Follower2_Restart::
+# 25 "data/expansion_1/follower02.pory"
+	speakername CommonText_Harper
+# 26 "data/expansion_1/follower02.pory"
+	msgbox Expansion1_Follower2_Restart_Text_0, MSGBOX_AUTOCLOSE
+# 28 "data/expansion_1/follower02.pory"
+	goto SSTidalDungeon_StartHarperFollower
+	return
+
+
+SSTidalDungeon_StartHarperFollower::
+# 33 "data/expansion_1/follower02.pory"
+	applymovement 1, Common_Movement_WalkDown
+# 34 "data/expansion_1/follower02.pory"
+	waitmovement 0
+# 35 "data/expansion_1/follower02.pory"
+	setfollowernpc HARPER_SUBMERGED_CAVE, 0, Expansion1_Follower_Harper2, PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVE
+# 36 "data/expansion_1/follower02.pory"
+	hidefollowernpc
+# 37 "data/expansion_1/follower02.pory"
+	setflag FLAG_SYS_HIDE_FOLLOWERS
+# 38 "data/expansion_1/follower02.pory"
+	setflag FLAG_TEMP_1
+# 39 "data/expansion_1/follower02.pory"
+	setvar VAR_TEMP_5, 0
+# 40 "data/expansion_1/follower02.pory"
+	release
+	return
+
+
+SSTidalDungeon_ClearHarperFollower::
+# 44 "data/expansion_1/follower02.pory"
+	goto_if_set FLAG_SYS_HIDE_FOLLOWERS, SSTidalDungeon_ClearHarperFollower_2
+	return
+
+SSTidalDungeon_ClearHarperFollower_1:
+# 45 "data/expansion_1/follower02.pory"
+	facefollowernpc
+# 46 "data/expansion_1/follower02.pory"
+	speakername CommonText_Harper
+# 47 "data/expansion_1/follower02.pory"
+	msgbox SSTidalDungeon_ClearHarperFollower_Text_0, MSGBOX_YESNO
+# 48 "data/expansion_1/follower02.pory"
+	closemessage
+# 49 "data/expansion_1/follower02.pory"
+	speakername CommonText_Harper
+# 50 "data/expansion_1/follower02.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq SSTidalDungeon_ClearHarperFollower_6
+# 60 "data/expansion_1/follower02.pory"
+	msgbox SSTidalDungeon_ClearHarperFollower_Text_2, MSGBOX_AUTOCLOSE
+# 62 "data/expansion_1/follower02.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
+# 63 "data/expansion_1/follower02.pory"
+	waitmovement 0
+SSTidalDungeon_ClearHarperFollower_5:
+# 65 "data/expansion_1/follower02.pory"
+	release
+	return
+
+SSTidalDungeon_ClearHarperFollower_2:
+# 44 "data/expansion_1/follower02.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 38
+	goto_if_lt SSTidalDungeon_ClearHarperFollower_1
+	return
+
+SSTidalDungeon_ClearHarperFollower_6:
+# 51 "data/expansion_1/follower02.pory"
+	clearflag FLAG_SYS_HIDE_FOLLOWERS
+# 52 "data/expansion_1/follower02.pory"
+	msgbox SSTidalDungeon_ClearHarperFollower_Text_1
+# 53 "data/expansion_1/follower02.pory"
+	closemessage
+# 54 "data/expansion_1/follower02.pory"
+	setvar VAR_TEMP_5, 1
+# 55 "data/expansion_1/follower02.pory"
+	fadescreen FADE_TO_BLACK
+# 56 "data/expansion_1/follower02.pory"
+	destroyfollowernpc
+# 57 "data/expansion_1/follower02.pory"
+	warp MAP_MAUVE_ISLAND_SOUTH, 0
+	goto SSTidalDungeon_ClearHarperFollower_5
+
+
+Expansion1_Rival_Scene06_Text_0:
+# 8 "data/expansion_1/follower02.pory"
+	.string "It's about time you showed up,\n"
+	.string "{PLAYER}.\p"
+	.string "{EMOJI_BIGWHEEL}Cracks her neck{EMOJI_BIGWHEEL}\p"
+	.string "I'll let you take point again.\p"
+	.string "Just make sure we find some action.\n"
+	.string "I need to vent a bit.\p"
+	.string "So…\p"
+	.string "Let's get that dynamite and well…\n"
+	.string "…\l"
+	.string "…blow this popsicle stand… right?\p"
+	.string "Agh, sorry about that one.\p"
+	.string "Just do what you have to.$"
+
+Expansion1_Follower2_Restart_Text_0:
+# 26 "data/expansion_1/follower02.pory"
+	.string "Yo, let's get a move on.\p"
+	.string "There's gotta be something in here.$"
+
+SSTidalDungeon_ClearHarperFollower_Text_0:
+# 47 "data/expansion_1/follower02.pory"
+	.string "What, are you calling it off for now?$"
+
+SSTidalDungeon_ClearHarperFollower_Text_1:
+# 52 "data/expansion_1/follower02.pory"
+	.string "Alright. I'll wait, then.$"
+
+SSTidalDungeon_ClearHarperFollower_Text_2:
+# 60 "data/expansion_1/follower02.pory"
+	.string "Good, let's hurry up and get that\n"
+	.string "dynamite.$"

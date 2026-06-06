@@ -41,7 +41,8 @@ script SSTidalDungeon_StartHarperFollower {
 }
 
 script SSTidalDungeon_ClearHarperFollower {
-	if (flag(FLAG_SYS_HIDE_FOLLOWERS) && var(VAR_EMERALBODY_RIVAL_STATE) < 38) {
+	if (flag(FLAG_SYS_HIDE_FOLLOWERS) && var(VAR_EMERALBODY_RIVAL_STATE) < 39) {
+		getobjectfacingdirection (LOCALID_PLAYER, VAR_TEMP_0)
 		facefollowernpc
 		speakername (CommonText_Harper)
 		msgbox ("What, are you calling it off for now?", MSGBOX_YESNO)
@@ -59,7 +60,12 @@ script SSTidalDungeon_ClearHarperFollower {
 		else {
 			msgbox ("Good, let's hurry up and get that\n"
 					"dynamite.", MSGBOX_AUTOCLOSE)
-			applymovement (LOCALID_PLAYER, Common_Movement_WalkUp)
+			if (var(VAR_TEMP_0) == DIR_WEST) {
+				applymovement (LOCALID_PLAYER, Common_Movement_WalkRight)
+			}
+			else {
+				applymovement (LOCALID_PLAYER, Common_Movement_WalkUp)
+			}
 			waitmovement (0)
 		}
 		release

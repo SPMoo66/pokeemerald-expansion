@@ -47,28 +47,28 @@
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_SS_TIDAL_DUNGEON_1F_1R",
-      "dest_warp_id": "3"
+      "dest_warp_id": "2"
     },
     {
       "x": 4,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_SS_TIDAL_DUNGEON_1F_1R",
-      "dest_warp_id": "3"
+      "dest_warp_id": "2"
     },
     {
       "x": 11,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_SS_TIDAL_DUNGEON_1F_1R",
-      "dest_warp_id": "4"
+      "dest_warp_id": "3"
     },
     {
       "x": 12,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_SS_TIDAL_DUNGEON_1F_1R",
-      "dest_warp_id": "4"
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [],

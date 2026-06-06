@@ -51,13 +51,6 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 1,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_MAUVE_ISLAND_SOUTH",
-      "dest_warp_id": "0"
-    },
-    {
       "x": 4,
       "y": 9,
       "elevation": 0,
@@ -98,13 +91,22 @@
     },
     {
       "type": "trigger",
-      "x": 1,
-      "y": 11,
+      "x": 17,
+      "y": 5,
       "elevation": 0,
-      "var": "VAR_TEMP_5",
+      "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "SSTidalDungeon_ClearHarperFollower"
+      "script": "NULL"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 9,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SS_Tidal_Dungeon_1F_1R_LockedRoom"
+    }
+  ]
 }

@@ -3,13 +3,18 @@ mapscripts SS_Tidal_Dungeon_1F_1R_MapScripts {
 		if (flag(FLAG_SYS_HIDE_FOLLOWERS))  {
 			setflag (FLAG_TEMP_1)
 		}
-		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 38) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 39) {
 			setflag (FLAG_TEMP_1)
+		}
+	}
+	MAP_SCRIPT_ON_LOAD {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 39) {
+			setmetatile (4, 9, METATILE_InsideShip_IntactDoor_Bottom_Unlocked, TRUE)
 		}
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [
 		VAR_TEMP_0, 0 {
-			if (!flag(FLAG_SYS_HIDE_FOLLOWERS) && var(VAR_EMERALBODY_RIVAL_STATE) < 38) {
+			if (!flag(FLAG_SYS_HIDE_FOLLOWERS) && var(VAR_EMERALBODY_RIVAL_STATE) < 39) {
 				if (var(VAR_EMERALBODY_RIVAL_STATE) == 33) {
 					call (Expansion1_Rival_Scene06)
 				}
@@ -20,4 +25,21 @@ mapscripts SS_Tidal_Dungeon_1F_1R_MapScripts {
 			setvar (VAR_TEMP_0, 1)
 		}
 	]
+}
+
+script SS_Tidal_Dungeon_1F_1R_LockedRoom {
+	lockall
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 38) {
+		msgbox (AbandonedShip_Corridors_B1F_Text_InsertedStorageKey, MSGBOX_AUTOCLOSE)
+		setvar (VAR_EMERALBODY_RIVAL_STATE, 39)
+		setmetatile (4, 9, METATILE_InsideShip_IntactDoor_Bottom_Unlocked, TRUE)
+		special (DrawWholeMapView)
+	}
+	elif (var(VAR_EMERALBODY_RIVAL_STATE) < 38) {
+		msgbox ("The door is locked.", MSGBOX_AUTOCLOSE)
+	}
+	else {
+		msgbox (AbandonedShip_Text_TheDoorIsOpen, MSGBOX_AUTOCLOSE)
+	}
+	releaseall
 }

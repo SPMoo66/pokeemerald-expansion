@@ -22,7 +22,8 @@
 	# 35: Set after talking 1
 	# 36: Set after talking 2
 	# 37: Set after obtaining key in SS Tidal Dungeon
-	# 38: 
+	# 38: Set after using key in SS Tidal Dungeon
+	# 39: 
 
 script EventScript_JaksonExpansion1Call {
 	lockall

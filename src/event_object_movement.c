@@ -7040,7 +7040,7 @@ static void ObjectEventSetSingleMovement(struct ObjectEvent *objectEvent, struct
     sprite->sActionFuncId = 0;
 }
 
-static void FaceDirection(struct ObjectEvent *objectEvent, struct Sprite *sprite, enum Direction direction)
+void FaceDirection(struct ObjectEvent *objectEvent, struct Sprite *sprite, enum Direction direction)
 {
     SetObjectEventDirection(objectEvent, direction);
     ShiftStillObjectEventCoords(objectEvent);

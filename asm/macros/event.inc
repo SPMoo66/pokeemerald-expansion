@@ -3000,3 +3000,47 @@
 	.byte \localId
 	.2byte \graphicsId
 	.endm
+
+
+	@
+	.macro morphobject localId:req, type:req, graphicsId=NUM_OBJ_EVENT_GFX, map
+	.ifb \map
+		callnative Script_MorphObject
+		.byte \localId
+		.2byte \graphicsId
+		.byte \type
+	.else
+		callnative Script_MorphObjectAt
+		.byte \localId
+		.2byte \graphicsId
+		.byte \type
+		map \map
+	.endif
+	.endm
+
+	.macro instantmorph localId:req, graphicsId=NUM_OBJ_EVENT_GFX, map
+	playse SE_BALL_THROW
+	.ifb \map
+		morphobject \localId, INSTANT_MORPH, \graphicsId
+	.else
+		morphobject \localId, INSTANT_MORPH, \graphicsId. \map
+	.endif
+	.endm
+
+	.macro mosaicmorph localId:req, graphicsId=NUM_OBJ_EVENT_GFX, map
+	playse SE_M_TELEPORT
+	.ifb \map
+		morphobject \localId, MOSAIC_MORPH, \graphicsId
+	.else
+		morphobject \localId, MOSAIC_MORPH, \graphicsId. \map
+	.endif
+	.endm
+
+	.macro spinmorph localId:req, graphicsId=NUM_OBJ_EVENT_GFX, map
+	playse SE_RG_CARD_FLIPPING
+	.ifb \map
+		morphobject \localId, SPIN_MORPH, \graphicsId
+	.else
+		morphobject \localId, SPIN_MORPH, \graphicsId. \map
+	.endif
+	.endm

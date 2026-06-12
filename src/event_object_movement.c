@@ -216,7 +216,6 @@ static void DestroyLevitateMovementTask(u8);
 const struct ObjectEventGraphicsInfo *SpeciesToGraphicsInfo(enum Species species, bool32 shiny, bool32 female);
 static bool8 NpcTakeStep(struct Sprite *);
 static void CopyObjectGraphicsInfoToSpriteTemplate_WithMovementType(u16 graphicsId, u16 movementType, struct SpriteTemplate *spriteTemplate, const struct SubspriteTable **subspriteTables);
-
 static enum Species GetUnownSpecies(struct Pokemon *mon);
 
 static void StartSlowRunningAnim(struct ObjectEvent *objectEvent, struct Sprite *sprite, enum Direction direction);
@@ -3120,8 +3119,17 @@ static void ObjectEventSetGraphics(struct ObjectEvent *objectEvent, const struct
 {
     struct Sprite *sprite = &gSprites[objectEvent->spriteId];
     u32 i = FindObjectEventPaletteIndexByTag(graphicsInfo->paletteTag);
-    if (i != 0xFF)
+    if (graphicsInfo->paletteTag == OBJ_EVENT_PAL_TAG_DYNAMIC)
+    {
+        sprite->inUse = FALSE;
+        FieldEffectFreePaletteIfUnused(sprite->oam.paletteNum);
+        sprite->inUse = TRUE;
+        sprite->oam.paletteNum = LoadDynamicFollowerPalette(OW_SPECIES(objectEvent), OW_SHINY(objectEvent), OW_FEMALE(objectEvent));
+    }
+    else if (i != 0xFF)
+    {
         UpdateSpritePalette(&sObjectEventSpritePalettes[i], sprite);
+    }
 
     // If frame size changes, we need to reallocate tiles.
     if (OW_LARGE_OW_SUPPORT && !OW_GFX_COMPRESS && graphicsInfo->images->size != sprite->images->size)
@@ -3150,7 +3158,6 @@ void ObjectEventSetGraphicsId(struct ObjectEvent *objectEvent, u16 graphicsId)
 {
     objectEvent->graphicsId = graphicsId;
     ObjectEventSetGraphics(objectEvent, GetObjectEventGraphicsInfo(graphicsId));
-    objectEvent->graphicsId = graphicsId;
 }
 
 void ObjectEventSetGraphicsIdByLocalIdAndMap(u8 localId, u8 mapNum, u8 mapGroup, u16 graphicsId)

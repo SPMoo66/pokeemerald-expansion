@@ -2950,17 +2950,17 @@
 	call EventScript_BrailleCursorWaitButton
 	.endm
 
-@ Jamie's movement pack
+@ Jamie's transformation pack
 	@ Stores graphicsId (species, shinyness, gender) about the first pokemon in party that can learn 'move' in 'var'
-	.macro setmon_canlearnmove var:req move:req
-	callnative Script_SetMonCanLearnMove
+	.macro setvar_moncanlearnmove_gfx var:req move:req
+	callnative Script_SetVar_MonCanLearnMoveGfx
 	.2byte \var
 	.2byte \move
 	.endm
 
 	@ Stores graphicsId (species, shinyness, gender) about the first pokemon in party that knows 'move' in 'var'
-	.macro setmon_knowsmove var:req move:req
-	callnative Script_SetMonKnowsMove
+	.macro setvar_monknowsmove_gfx var:req move:req
+	callnative Script_SetVar_MonKnowsMoveGfx
 	.2byte \var
 	.2byte \move
 	.endm

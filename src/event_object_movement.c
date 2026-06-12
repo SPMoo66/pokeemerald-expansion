@@ -2178,13 +2178,6 @@ const struct ObjectEventGraphicsInfo *SpeciesToGraphicsInfo(enum Species species
     return graphicsInfo;
 }
 
-// Find, or load, the palette for the specified Pokémon info
-u32 LoadDynamicMonPalette(u32 objectEventId)
-{
-    struct ObjectEvent *objectEvent = &gObjectEvents[objectEventId];
-    return LoadDynamicFollowerPalette(OW_SPECIES(objectEvent), OW_SHINY(objectEvent), OW_FEMALE(objectEvent));
-}
-
 // Find, or load, the palette for the specified pokemon info
 static u32 LoadDynamicFollowerPalette(enum Species species, bool32 shiny, bool32 female)
 {

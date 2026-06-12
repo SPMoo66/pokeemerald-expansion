@@ -3423,48 +3423,51 @@ bool8 ScrCmd_getbraillestringwidth(struct ScriptContext * ctx)
     return FALSE;
 }
 
-void Script_SetMonCanLearnMove(struct ScriptContext *ctx)
+static u16 GetMonGraphicsId(struct Pokemon *mon)
+{
+    u32 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG);
+    if (species == SPECIES_NONE || species == SPECIES_EGG)
+        return OBJ_EVENT_MON;
+    u16 graphicsId = species | OBJ_EVENT_MON;
+    if (GetMonData(mon, MON_DATA_IS_SHINY))
+        graphicsId |= OBJ_EVENT_MON_SHINY;
+    if (GetMonGender(mon))
+        graphicsId |= OBJ_EVENT_MON_FEMALE;
+    return graphicsId;
+}
+
+void Script_SetVar_MonCanLearnMoveGfx(struct ScriptContext *ctx)
 {
     u16 var = ScriptReadHalfword(ctx);
     u16 move = ScriptReadHalfword(ctx);
 
-    u16 graphicsId = 0;
-    for (u32 i = 0; i < gPlayerPartyCount; i++)
+    u16 graphicsId = OBJ_EVENT_MON;
+    for (u32 i = 0; i < gPartiesCount[B_TRAINER_PLAYER]; i++)
     {
-        u32 species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG);
-        if (species == SPECIES_NONE || species == SPECIES_EGG)
-            continue;
+        u32 species = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES_OR_EGG);
         if (CanLearnTeachableMove(species, move))
         {
-            graphicsId = species | OBJ_EVENT_MON;
-            if (GetMonData(&gPlayerParty[i], MON_DATA_IS_SHINY))
-                graphicsId |= OBJ_EVENT_MON_SHINY;
-            if (GetMonGender(&gPlayerParty[i]))
-                graphicsId |= OBJ_EVENT_MON_FEMALE;
+            graphicsId = GetMonGraphicsId(&gParties[B_TRAINER_PLAYER][i]);
             break;
         }
     }
     VarSet(var, graphicsId);
 }
 
-void Script_SetMonKnowsMove(struct ScriptContext *ctx)
+void Script_SetVar_MonKnowsMoveGfx(struct ScriptContext *ctx)
 {
     u16 var = ScriptReadHalfword(ctx);
     u16 move = ScriptReadHalfword(ctx);
 
-    u16 graphicsId = 0;
-    for (u32 i = 0; i < gPlayerPartyCount; i++)
+    u16 graphicsId = OBJ_EVENT_MON;
+    for (u32 i = 0; i < gPartiesCount[B_TRAINER_PLAYER]; i++)
     {
-        u32 species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG);
+        u32 species = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES_OR_EGG);
         if (species == SPECIES_NONE || species == SPECIES_EGG)
             continue;
-        if (MonKnowsMove(&gPlayerParty[i], move))
+        if (MonKnowsMove(&gParties[B_TRAINER_PLAYER][i], move))
         {
-            graphicsId = species | OBJ_EVENT_MON;
-            if (GetMonData(&gPlayerParty[i], MON_DATA_IS_SHINY))
-                 graphicsId |= OBJ_EVENT_MON_SHINY;
-            if (GetMonGender(&gPlayerParty[i]))
-                graphicsId |= OBJ_EVENT_MON_FEMALE;
+            graphicsId = GetMonGraphicsId(&gParties[B_TRAINER_PLAYER][i]);
             break;
         }
     }

@@ -3473,3 +3473,31 @@ void Script_SetVar_MonKnowsMoveGfx(struct ScriptContext *ctx)
     }
     VarSet(var, graphicsId);
 }
+
+void Script_SetVar_PartyMonGfx(struct ScriptContext *ctx)
+{
+    u16 var = ScriptReadHalfword(ctx);
+    u8 partyId = ScriptReadByte(ctx);
+
+    u16 graphicsId = OBJ_EVENT_MON;
+    if (partyId < PARTY_SIZE)
+    {
+        graphicsId = GetMonGraphicsId(&gParties[B_TRAINER_PLAYER][partyId]);
+    }
+    else
+    {
+        u32 tmpGfxIds[PARTY_SIZE];
+        u32 validMonsCount = 0;
+        for (u32 i = 0; i < gPartiesCount[B_TRAINER_PLAYER]; i++)
+        {
+            u32 species = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES_OR_EGG);
+            if (species == SPECIES_NONE || species == SPECIES_EGG)
+                continue;
+            tmpGfxIds[validMonsCount++] = GetMonGraphicsId(&gParties[B_TRAINER_PLAYER][i]);
+        }
+        if (validMonsCount > 0)
+            graphicsId = tmpGfxIds[RandomUniform(RNG_NONE, 0, validMonsCount - 1)];
+    }
+
+    VarSet(var, graphicsId);
+}

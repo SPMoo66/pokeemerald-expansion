@@ -2965,6 +2965,13 @@
 	.2byte \move
 	.endm
 
+	@ Stores graphicsId (species, shinyness, gender) about a pokemon in party (random by default or a specific slot if partyId is set)
+	.macro setvar_partymongfx var:req partyId=PARTY_SIZE
+	callnative Script_SetVar_PartyMonGfx
+	.2byte \var
+	.byte \partyId
+	.endm
+
 	@ Play the beginning of the fly-out animation and turn the player avatar into graphicsId at the end (also moves player one tile to the right)
 	.macro jumponrightbird graphicsId:req localId=LOCALID_PLAYER
 	callnative Script_JumpOnBird

@@ -8561,10 +8561,10 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u32 gMonFrontPic_DudunsparceThreeSegment[] = INCGFX_U32("graphics/pokemon/dudunsparce/three_segment/front.png", ".4bpp.smol");
     const u32 gMonBackPic_DudunsparceThreeSegment[] = INCGFX_U32("graphics/pokemon/dudunsparce/three_segment/back.png", ".4bpp.smol");
 
-    const u32 gMonFrontPic_DudunsparceMega[] = INCBIN_U32("graphics/pokemon/dudunsparce/mega/front.png", ".4bpp.smol");
-    const u32 gMonBackPic_DudunsparceMega[] = INCBIN_U32("graphics/pokemon/dudunsparce/mega/back.png", ".4bpp.smol");
-    const u16 gMonPalette_DudunsparceMega[] = INCBIN_U16("graphics/pokemon/dudunsparce/mega/normal.pal", ".gbapal");
-    const u16 gMonShinyPalette_DudunsparceMega[] = INCBIN_U16("graphics/pokemon/dudunsparce/mega/shiny.pal", ".gbapal");
+    const u32 gMonFrontPic_DudunsparceMega[] = INCGFX_U32("graphics/pokemon/dudunsparce/mega/front.png", ".4bpp.smol");
+    const u32 gMonBackPic_DudunsparceMega[] = INCGFX_U32("graphics/pokemon/dudunsparce/mega/back.png", ".4bpp.smol");
+    const u16 gMonPalette_DudunsparceMega[] = INCGFX_U16("graphics/pokemon/dudunsparce/mega/normal.pal", ".gbapal");
+    const u16 gMonShinyPalette_DudunsparceMega[] = INCGFX_U16("graphics/pokemon/dudunsparce/mega/shiny.pal", ".gbapal");
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_DUNSPARCE
 

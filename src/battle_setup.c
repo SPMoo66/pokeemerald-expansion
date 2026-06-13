@@ -700,7 +700,7 @@ void StartRegiBattle(void)
     case SPECIES_IRON_LEAVES:
     case SPECIES_IRON_BOULDER:
     case SPECIES_IRON_CROWN:
-        transitionId = B_TRANSITION_SWORDS_OF_JUSTICE;
+        transitionId = B_TRANSITION_GRID_SQUARES;
         CreateBattleStartTask(transitionId, MUS_HG_VS_GYM_LEADER_KANTO);
         break;
     default:

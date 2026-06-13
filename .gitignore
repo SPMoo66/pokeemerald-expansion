@@ -23,7 +23,11 @@
 sound/**/*.bin
 sound/songs/midi/*.s
 tools/agbcc
+<<<<<<< HEAD
 tools/poryscript
+=======
+tools/compresSmol/
+>>>>>>> b669d9ccf9c148070b99eba11cd65f6071be0741
 *.map
 *.bat
 *.dump

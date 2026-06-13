@@ -62,5 +62,4 @@ Std_MsgboxGetPoints:
 
 Common_EventScript_SaveGame::
 	special SaveGame
-	waitstate
 	return

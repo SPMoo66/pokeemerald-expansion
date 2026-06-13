@@ -1270,7 +1270,6 @@ script SootopolisCity_EventScript_StartLegendariesScene {
 	call (WeatherScript_SetAndDo_Abnormal)
 	setvar (VAR_0x8004, FALSE) // Just do Groudon/Kyogre fight scene
 	special (Script_DoRayquazaScene)
-	waitstate
 	applymovement (LOCALID_SOOTOPOLIS_KYOGRE, Common_Movement_WalkInPlaceFasterLeft)
 	applymovement (LOCALID_SOOTOPOLIS_GROUDON, Common_Movement_WalkInPlaceFasterRight)
 	waitmovement (0)
@@ -1357,7 +1356,6 @@ script SootopolisCity_EventScript_StartRayquazaScene {
 	hideobjectat (LOCALID_SOOTOPOLIS_RAYQUAZA, MAP_SOOTOPOLIS_CITY)
 	setvar (VAR_0x8004, TRUE)
 	special (Script_DoRayquazaScene)
-	waitstate
 	delay (80)
 	msgbox ("But Rayquaza alone cannot quell them!")
 	closemessage
@@ -1437,7 +1435,6 @@ script SootopolisCity_EventScript_StartRayquazaScene {
 		waitmovement (0)
 		removeobject (LOCALID_SOOTOPOLIS_RAYQUAZA)
 		special (WaitWeather)
-		waitstate
 		clearflag (FLAG_SYS_WEATHER_CTRL)
 		setvar (VAR_SKY_PILLAR_STATE, 2)
 		clearflag (FLAG_LEGENDARIES_IN_SOOTOPOLIS)

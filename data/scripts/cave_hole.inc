@@ -29,5 +29,4 @@ EventScript_FallDownHoleMtPyre::
 	playse SE_FALL
 	delay 60
 	special DoFallWarp
-	waitstate
 	end

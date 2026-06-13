@@ -4,7 +4,6 @@ EventScript_StartTrainerApproach::
 EventScript_TrainerApproach::
 	call_if_unset FLAG_DONT_TRANSIITON_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
 	special DoTrainerApproach
-	waitstate
 	goto EventScript_ShowTrainerIntroMsg
 
 EventScript_TryDoNormalTrainerBattle::
@@ -64,7 +63,6 @@ EventScript_TryDoRematchBattle::
 	waitmessage
 	waitbuttonpress
 	special BattleSetup_StartRematchBattle
-	waitstate
 	releaseall
 	end
 
@@ -82,7 +80,6 @@ EventScript_TryDoDoubleRematchBattle::
 	waitmessage
 	waitbuttonpress
 	special BattleSetup_StartRematchBattle
-	waitstate
 	releaseall
 	end
 

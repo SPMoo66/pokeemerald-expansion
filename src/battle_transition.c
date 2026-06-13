@@ -55,8 +55,6 @@ struct RectangularSpiralLine
     bool8 outward;
 };
 
-typedef bool8 (*TransitionStateFunc)(struct Task *task);
-typedef bool8 (*TransitionSpriteCallback)(struct Sprite *sprite);
 typedef bool8 (*TransitionSpriteCallbackPartner)(struct Sprite *sprite);
 
 static bool8 Transition_StartIntro(struct Task *);

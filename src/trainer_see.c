@@ -63,19 +63,19 @@ COMMON_DATA bool8 gTrainerApproachedPlayer = 0;
 EWRAM_DATA u8 gApproachingTrainerId = 0;
 
 // const rom data
-static const u16 sGfx_Emoticons[] = INCBIN_U16("graphics/misc/emoticons.4bpp");
-static const u8 sEmotion_ExclamationMarkGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_exclamation.4bpp");
-static const u8 sEmotion_QuestionMarkGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_question.4bpp");
-static const u8 sEmotion_HeartGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_heart.4bpp");
-static const u8 sEmotion_DoubleExclamationMarkGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_double_exclamation.4bpp");
-static const u8 sEmotion_XGfx[] = INCBIN_U8("graphics/field_effects/pics/emote_x.4bpp");
-static const u8 sEmotion_MusicNoteGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_music_note.4bpp");
-static const u8 sEmotion_SmileGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_smile.4bpp");
-static const u8 sEmotion_SweatDropGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_sweat_drop.4bpp");
-static const u8 sEmotion_TalkingGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_talking.4bpp");
-static const u8 sEmotion_ThinkingGfx[] = INCBIN_U8("graphics/field_effects/pics/emotion_thinking.4bpp");
+static const u16 sGfx_Emoticons[] = INCGFX_U16("graphics/misc/emoticons.png", ".4bpp", "-mwidth 2 -mheight 2");
+static const u8 sEmotion_ExclamationMarkGfx[] = INCGFX_U8("graphics/field_effects/pics/emotion_exclamation.png", ".4bpp");
+static const u8 sEmotion_QuestionMarkGfx[] = INCGFX_U8("graphics/field_effects/pics/emotion_question.png", ".4bpp");
+static const u8 sEmotion_HeartGfx[] = INCGFX_U8("graphics/field_effects/pics/emotion_heart.png", ".4bpp");
+static const u8 sEmotion_DoubleExclamationMarkGfx[] = INCGFX_U8("graphics/field_effects/pics/emotion_double_exclamation.png", ".4bpp");
+static const u8 sEmotion_XGfx[] = INCGFX_U8("graphics/field_effects/pics/emote_x.png", ".4bpp");
+static const u8 sEmotion_MusicNoteGfx[] = INCGFX_U8("graphics/field_effects/pics/emotion_music_note.png", ".4bpp");
+static const u8 sEmotion_SmileGfx[] = INCGFX_U8("graphics/field_effects/pics/emotion_smile.png", ".4bpp");
+static const u8 sEmotion_SweatDropGfx[] = INCGFX_U8("graphics/field_effects/pics/emotion_sweat_drop.png", ".4bpp");
+static const u8 sEmotion_TalkingGfx[] = INCGFX_U8("graphics/field_effects/pics/emotion_talking.png", ".4bpp");
+static const u8 sEmotion_ThinkingGfx[] = INCGFX_U8("graphics/field_effects/pics/emotion_thinking.png", ".4bpp");
 // HGSS emote graphics ripped by Lemon on The Spriters Resource: https://www.spriters-resource.com/ds_dsi/pokemonheartgoldsoulsilver/sheet/30497/
-static const u8 sEmotion_Gfx[] = INCBIN_U8("graphics/misc/emotes.4bpp");
+static const u8 sEmotion_Gfx[] = INCGFX_U8("graphics/misc/emotes.png", ".4bpp", "-mwidth 2 -mheight 2");
 
 static u8 (*const sDirectionalApproachDistanceFuncs[])(struct ObjectEvent *trainerObj, s16 range, s16 x, s16 y) =
 {

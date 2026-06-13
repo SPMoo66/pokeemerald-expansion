@@ -22,15 +22,15 @@ void DrawMugshot(void); //VAR_0x8000 = mugshot id
 void DrawMugshotAtPos(void); //VAR_0x8000 = mugshot id, VAR_0x8001 = x, VAR_0x8002 = y
 void ClearMugshot(void);
 
-static const u32 sMugshotImg_Test[] = INCBIN_U32("graphics/mugshots/test.4bpp.smol");
-static const u16 sMugshotPal_Test[] = INCBIN_U16("graphics/mugshots/test.gbapal");
+static const u32 sMugshotImg_Test[] = INCGFX_U32("graphics/mugshots/test.png", ".4bpp.smol");
+static const u16 sMugshotPal_Test[] = INCGFX_U16("graphics/mugshots/test.png", ".gbapal");
 
-static const u32 sMugshotImg_Jigglypuff1[] = INCBIN_U32("graphics/mugshots/jigglypuff1.4bpp.smol");
-static const u32 sMugshotImg_Jigglypuff2[] = INCBIN_U32("graphics/mugshots/jigglypuff2.4bpp.smol");
-static const u16 sMugshotPal_Jigglypuff[] = INCBIN_U16("graphics/mugshots/jigglypuff2.gbapal");
+static const u32 sMugshotImg_Jigglypuff1[] = INCGFX_U32("graphics/mugshots/jigglypuff1.png", ".4bpp.smol");
+static const u32 sMugshotImg_Jigglypuff2[] = INCGFX_U32("graphics/mugshots/jigglypuff2.png", ".4bpp.smol");
+static const u16 sMugshotPal_Jigglypuff[] = INCGFX_U16("graphics/mugshots/jigglypuff2.png", ".gbapal");
 
-static const u32 sMugshotImg_CynthiasChallenge[] = INCBIN_U32("graphics/mugshots/cynthias_challenge.4bpp.smol");
-static const u16 sMugshotPal_CynthiasChallenge[] = INCBIN_U16("graphics/mugshots/cynthias_challenge.gbapal");
+static const u32 sMugshotImg_CynthiasChallenge[] = INCGFX_U32("graphics/mugshots/cynthias_challenge.png", ".4bpp.smol");
+static const u16 sMugshotPal_CynthiasChallenge[] = INCGFX_U16("graphics/mugshots/cynthias_challenge.png", ".gbapal");
 
 
 // !!!!! IMPORTANT !!!!!

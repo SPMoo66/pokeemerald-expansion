@@ -22,17 +22,17 @@
 static EWRAM_INIT u8 sNameboxWindowId = WINDOW_NONE;
 EWRAM_DATA const u8 *gSpeakerName = NULL;
 
-static const u32 sNameBoxDefaultGfx[] = INCBIN_U32("graphics/text_window/name_box.4bpp");
-static const u32 sNameBoxPokenavGfx[] = INCBIN_U32("graphics/pokenav/name_box.4bpp");
+static const u32 sNameBoxDefaultGfx[] = INCGFX_U32("graphics/text_window/name_box.png", ".4bpp");
+static const u32 sNameBoxPokenavGfx[] = INCGFX_U32("graphics/pokenav/name_box.png", ".4bpp");
 
 static void WindowFunc_DrawNamebox(u32, u32, u32, u32, u32, u32, u32);
 static void WindowFunc_ClearNamebox(u8, u8, u8, u8, u8, u8);
 
-static const u16 gNameboxJakson_Pal[] = INCBIN_U16("graphics/text_window/namebox/jakson.gbapal");
-static const u16 gNameboxHarper_Pal[] = INCBIN_U16("graphics/text_window/namebox/harper.gbapal");
-static const u16 gNameboxRedd_Pal[] = INCBIN_U16("graphics/text_window/namebox/redd.gbapal");
-static const u16 gNameboxSakura_Pal[] = INCBIN_U16("graphics/text_window/namebox/sakura.gbapal");
-static const u16 gNameboxBaron_Pal[] = INCBIN_U16("graphics/text_window/namebox/baron.gbapal");
+static const u16 gNameboxJakson_Pal[] = INCGFX_U16("graphics/text_window/namebox/jakson.pal", ".gbapal");
+static const u16 gNameboxHarper_Pal[] = INCGFX_U16("graphics/text_window/namebox/harper.pal", ".gbapal");
+static const u16 gNameboxRedd_Pal[] = INCGFX_U16("graphics/text_window/namebox/redd.pal", ".gbapal");
+static const u16 gNameboxSakura_Pal[] = INCGFX_U16("graphics/text_window/namebox/sakura.pal", ".gbapal");
+static const u16 gNameboxBaron_Pal[] = INCGFX_U16("graphics/text_window/namebox/baron.pal", ".gbapal");
 
 void TrySpawnNamebox(u32 tileNum)
 {

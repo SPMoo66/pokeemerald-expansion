@@ -2388,8 +2388,8 @@ static void PlayerHandleBattleDebug(enum BattlerId battler)
 /*
 static void MoveSelectionDisplaySplitIcon(u32 battler)
 {
-	static const u16 sSplitIcons_Pal[] = INCBIN_U16("graphics/interface/split_icons_battle.gbapal");
-	static const u8 sSplitIcons_Gfx[] = INCBIN_U8("graphics/interface/split_icons_battle.4bpp");
+	static const u16 sSplitIcons_Pal[] = INCGFX_U16("graphics/interface/split_icons_battle.png", ".gbapal");
+	static const u8 sSplitIcons_Gfx[] = INCGFX_U8("graphics/interface/split_icons_battle.png", ".4bpp");
 	struct ChooseMoveStruct *moveInfo;
 	int icon;
 

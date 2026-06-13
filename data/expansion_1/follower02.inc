@@ -105,6 +105,42 @@ SSTidalDungeon_ClearHarperFollower_10:
 	goto SSTidalDungeon_ClearHarperFollower_9
 
 
+Expansion1_Follower_Harper2_Talking1::
+# 76 "data/expansion_1/follower02.pory"
+	playse SE_CLICK
+# 77 "data/expansion_1/follower02.pory"
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_Talking
+# 78 "data/expansion_1/follower02.pory"
+	delay 60
+# 79 "data/expansion_1/follower02.pory"
+	facefollowernpc
+# 80 "data/expansion_1/follower02.pory"
+	speakername CommonText_Harper
+# 81 "data/expansion_1/follower02.pory"
+	msgbox Expansion1_Follower_Harper2_Talking1_Text_0, MSGBOX_AUTOCLOSE
+# 93 "data/expansion_1/follower02.pory"
+	setvar VAR_EMERALBODY_RIVAL_STATE, 35
+	return
+
+
+Expansion1_Follower_Harper2_Talking2::
+# 97 "data/expansion_1/follower02.pory"
+	playse SE_CLICK
+# 98 "data/expansion_1/follower02.pory"
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_Talking
+# 99 "data/expansion_1/follower02.pory"
+	delay 60
+# 100 "data/expansion_1/follower02.pory"
+	facefollowernpc
+# 101 "data/expansion_1/follower02.pory"
+	speakername CommonText_Harper
+# 102 "data/expansion_1/follower02.pory"
+	msgbox Expansion1_Follower_Harper2_Talking2_Text_0, MSGBOX_AUTOCLOSE
+# 112 "data/expansion_1/follower02.pory"
+	setvar VAR_EMERALBODY_RIVAL_STATE, 36
+	return
+
+
 Expansion1_Rival_Scene06_Text_0:
 # 8 "data/expansion_1/follower02.pory"
 	.string "It's about time you showed up,\n"
@@ -137,3 +173,31 @@ SSTidalDungeon_ClearHarperFollower_Text_2:
 # 61 "data/expansion_1/follower02.pory"
 	.string "Good, let's hurry up and get that\n"
 	.string "dynamite.$"
+
+Expansion1_Follower_Harper2_Talking1_Text_0:
+# 81 "data/expansion_1/follower02.pory"
+	.string "Well, it doesn't really seem like this is\n"
+	.string "much of a ‘shipwreck’, does it?\p"
+	.string "The environment just pulls graphics\n"
+	.string "from the other ships we've been on.\p"
+	.string "…I'm starting to think the monster\n"
+	.string "attack wasn't even a scripted event.\p"
+	.string "Not like it'd be the first thing to just\n"
+	.string "break outright in this mod.\p"
+	.string "Has me on my toes, at least?\n"
+	.string "There are less interesting journeys.\p"
+	.string "…better than getting stuck in a dark\n"
+	.string "cave for most of it, eh?$"
+
+Expansion1_Follower_Harper2_Talking2_Text_0:
+# 102 "data/expansion_1/follower02.pory"
+	.string "Well, through the basement and now\n"
+	.string "we're to… more cabins?\p"
+	.string "Imagine having to walk through storage\n"
+	.string "every time you go to your room.\p"
+	.string "I'd criticize Game Freak for the map\n"
+	.string "design like all the ones before it\l"
+	.string "but this is all custom, right?\p"
+	.string "Ah, Jakson…\n"
+	.string "Vet the mods a little more before you\l"
+	.string "add them, please.$"

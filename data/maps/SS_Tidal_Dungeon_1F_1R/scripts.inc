@@ -74,35 +74,42 @@ SS_Tidal_Dungeon_1F_1R_LockedRoom::
 # 31 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
 	lockall
 # 32 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 38
+	compare VAR_EMERALBODY_RIVAL_STATE, 37
 	goto_if_eq SS_Tidal_Dungeon_1F_1R_LockedRoom_2
-# 38 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 38
+# 41 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 37
 	goto_if_lt SS_Tidal_Dungeon_1F_1R_LockedRoom_3
-# 42 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
+# 45 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
 	msgbox AbandonedShip_Text_TheDoorIsOpen, MSGBOX_AUTOCLOSE
 SS_Tidal_Dungeon_1F_1R_LockedRoom_1:
-# 44 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
+# 47 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
 	releaseall
 	return
 
 SS_Tidal_Dungeon_1F_1R_LockedRoom_2:
 # 33 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
-	msgbox AbandonedShip_Corridors_B1F_Text_InsertedStorageKey, MSGBOX_AUTOCLOSE
-# 34 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 39
-# 35 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
+	msgbox SS_Tidal_Dungeon_1F_1R_LockedRoom_Text_0, MSGBOX_AUTOCLOSE
+# 37 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
+	setvar VAR_EMERALBODY_RIVAL_STATE, 38
+# 38 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
 	setmetatile 4, 9, METATILE_InsideShip_IntactDoor_Bottom_Unlocked, TRUE
-# 36 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
+# 39 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
 	special DrawWholeMapView
 	goto SS_Tidal_Dungeon_1F_1R_LockedRoom_1
 
 SS_Tidal_Dungeon_1F_1R_LockedRoom_3:
-# 39 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
-	msgbox SS_Tidal_Dungeon_1F_1R_LockedRoom_Text_0, MSGBOX_AUTOCLOSE
+# 42 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
+	msgbox SS_Tidal_Dungeon_1F_1R_LockedRoom_Text_1, MSGBOX_AUTOCLOSE
 	goto SS_Tidal_Dungeon_1F_1R_LockedRoom_1
 
 
 SS_Tidal_Dungeon_1F_1R_LockedRoom_Text_0:
-# 39 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
+# 33 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
+	.string "{PLAYER} inserted and turned the\n"
+	.string "Room Key.\p"
+	.string "The inserted Key stuck fast,\n"
+	.string "but the door opened.$"
+
+SS_Tidal_Dungeon_1F_1R_LockedRoom_Text_1:
+# 42 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
 	.string "The door is locked.$"

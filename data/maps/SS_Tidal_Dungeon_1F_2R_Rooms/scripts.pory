@@ -1,1 +1,25 @@
-mapscripts SS_Tidal_Dungeon_1F_2R_Rooms_MapScripts {}
+mapscripts SS_Tidal_Dungeon_1F_2R_Rooms_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 38) {
+			setflag (FLAG_TEMP_1)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 37) {
+			setflag (FLAG_TEMP_2)
+		}
+	}
+}
+
+script SS_Tidal_Dungeon_1F_2R_Rooms_Key {
+	removeobject (VAR_LAST_TALKED)
+	playfanfare (MUS_DP_OBTAIN_KEY_ITEM)
+	message ("{PLAYER} found a Room Key!")
+	waitfanfare
+	closemessage
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 37)
+}
+
+script SS_Tidal_Dungeon_1F_2R_Rooms_FishBowl {
+	msgbox ("It's a fishbowl!\p"
+			"There are some colorful fish swimming\n"
+			"around inside.", MSGBOX_AUTOCLOSE)
+}

@@ -88,15 +88,6 @@
       "var": "VAR_TEMP_5",
       "var_value": "0",
       "script": "SSTidalDungeon_ClearHarperFollower"
-    },
-    {
-      "type": "trigger",
-      "x": 17,
-      "y": 5,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
     }
   ],
   "bg_events": [

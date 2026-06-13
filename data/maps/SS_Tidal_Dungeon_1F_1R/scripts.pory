@@ -29,13 +29,16 @@ mapscripts SS_Tidal_Dungeon_1F_1R_MapScripts {
 
 script SS_Tidal_Dungeon_1F_1R_LockedRoom {
 	lockall
-	if (var(VAR_EMERALBODY_RIVAL_STATE) == 38) {
-		msgbox (AbandonedShip_Corridors_B1F_Text_InsertedStorageKey, MSGBOX_AUTOCLOSE)
-		setvar (VAR_EMERALBODY_RIVAL_STATE, 39)
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 37) {
+		msgbox ("{PLAYER} inserted and turned the\n"
+				"Room Key.\p"
+				"The inserted Key stuck fast,\n"
+				"but the door opened.", MSGBOX_AUTOCLOSE)
+		setvar (VAR_EMERALBODY_RIVAL_STATE, 38)
 		setmetatile (4, 9, METATILE_InsideShip_IntactDoor_Bottom_Unlocked, TRUE)
 		special (DrawWholeMapView)
 	}
-	elif (var(VAR_EMERALBODY_RIVAL_STATE) < 38) {
+	elif (var(VAR_EMERALBODY_RIVAL_STATE) < 37) {
 		msgbox ("The door is locked.", MSGBOX_AUTOCLOSE)
 	}
 	else {

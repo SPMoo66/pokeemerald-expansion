@@ -37,7 +37,7 @@ mapscripts MauveCamp_MapScripts {
 		}
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [
-		VAR_TEMP_0, 1: MauveCamp_EventScript_HeadbuttTree
+		VAR_TEMP_0, 1: MauveCamp_EventScript_FromHeadbuttTree
 		VAR_EMERALBODY_RIVAL_STATE, 22: Expansion1_Rival_Scene02_Setup
 		VAR_EMERALBODY_RIVAL_STATE, 31: Expansion1_Rival_Scene05_Setup
 	]
@@ -49,7 +49,7 @@ script MauveCamp_Jakson {
 	}
 }
 
-script MauveCamp_EventScript_HeadbuttTree {
+script MauveCamp_EventScript_FromHeadbuttTree {
 	setvar (VAR_TEMP_0, 0)
 	delay (20)
 	setobjectxyperm (LOCALID_MAUVE_CAMP_HEAL_SAILOR, 23, 10)
@@ -118,6 +118,8 @@ script MauveCamp_Sailor4 {
 	}
 	msgbox ("Stay safe out in the wilds.")
 	closemessage
+	release
+	releaseall
 }
 
 script MauveCamp_Ranger {

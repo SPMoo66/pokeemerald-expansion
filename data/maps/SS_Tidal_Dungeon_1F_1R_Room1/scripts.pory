@@ -1,1 +1,30 @@
-mapscripts SS_Tidal_Dungeon_1F_1R_Room1_MapScripts {}
+mapscripts SS_Tidal_Dungeon_1F_1R_Room1_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_1)
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 39) {
+			setflag (FLAG_TEMP_2)
+		}
+	}
+}
+
+script SS_Tidal_Dungeon_1F_1R_Room1_Steven {
+	faceplayer
+	speakername (CommonText_Steven)
+	msgbox ("Oh, hello, {PLAYER}.\p"
+			"Would you happen to be here on\n"
+			"vacation, or…?\p"
+			"Fufufu… The treasure hunt, of course.\n"
+			"It was silly of me to imagine anything\l"
+			"else.\p"
+			"Well, I'm here on vacation, but if you\n"
+			"need anything, you can come to me.", MSGBOX_NPC)
+	speakername (CommonText_Steven)
+	if (flag(FLAG_DEFEATED_METEOR_FALLS_STEVEN)) {
+		msgbox ("And once you're done, perhaps we could\n"
+				"partake in a rematch.", MSGBOX_NPC)
+	}
+	else {
+		msgbox ("And once you're done, perhaps we could\n"
+				"have a battle.", MSGBOX_NPC)
+	}
+}

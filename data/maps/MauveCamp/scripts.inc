@@ -79,7 +79,7 @@ MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_18:
 
 MauveCamp_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 40 "data/maps/MauveCamp/scripts.pory"
-	map_script_2 VAR_TEMP_0, 1, MauveCamp_EventScript_HeadbuttTree
+	map_script_2 VAR_TEMP_0, 1, MauveCamp_EventScript_FromHeadbuttTree
 # 41 "data/maps/MauveCamp/scripts.pory"
 	map_script_2 VAR_EMERALBODY_RIVAL_STATE, 22, Expansion1_Rival_Scene02_Setup
 # 42 "data/maps/MauveCamp/scripts.pory"
@@ -99,7 +99,7 @@ MauveCamp_Jakson_1:
 	return
 
 
-MauveCamp_EventScript_HeadbuttTree::
+MauveCamp_EventScript_FromHeadbuttTree::
 # 53 "data/maps/MauveCamp/scripts.pory"
 	setvar VAR_TEMP_0, 0
 # 54 "data/maps/MauveCamp/scripts.pory"
@@ -156,20 +156,20 @@ MauveCamp_EventScript_HeadbuttTree::
 	checkplayergender
 # 80 "data/maps/MauveCamp/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq MauveCamp_EventScript_HeadbuttTree_2
+	goto_if_eq MauveCamp_EventScript_FromHeadbuttTree_2
 # 84 "data/maps/MauveCamp/scripts.pory"
-	msgbox MauveCamp_EventScript_HeadbuttTree_Text_1
-MauveCamp_EventScript_HeadbuttTree_1:
+	msgbox MauveCamp_EventScript_FromHeadbuttTree_Text_1
+MauveCamp_EventScript_FromHeadbuttTree_1:
 # 86 "data/maps/MauveCamp/scripts.pory"
-	msgbox MauveCamp_EventScript_HeadbuttTree_Text_2
+	msgbox MauveCamp_EventScript_FromHeadbuttTree_Text_2
 # 87 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
-MauveCamp_EventScript_HeadbuttTree_2:
+MauveCamp_EventScript_FromHeadbuttTree_2:
 # 81 "data/maps/MauveCamp/scripts.pory"
-	msgbox MauveCamp_EventScript_HeadbuttTree_Text_0
-	goto MauveCamp_EventScript_HeadbuttTree_1
+	msgbox MauveCamp_EventScript_FromHeadbuttTree_Text_0
+	goto MauveCamp_EventScript_FromHeadbuttTree_1
 
 
 MauveCamp_Sailor1::
@@ -205,6 +205,10 @@ MauveCamp_Sailor4_1:
 	msgbox MauveCamp_Sailor4_Text_1
 # 120 "data/maps/MauveCamp/scripts.pory"
 	closemessage
+# 121 "data/maps/MauveCamp/scripts.pory"
+	release
+# 122 "data/maps/MauveCamp/scripts.pory"
+	releaseall
 	return
 
 MauveCamp_Sailor4_2:
@@ -216,84 +220,84 @@ MauveCamp_Sailor4_2:
 
 
 MauveCamp_Ranger::
-# 124 "data/maps/MauveCamp/scripts.pory"
+# 126 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Ranger_Text_0, MSGBOX_NPC
 	return
 
 
 MauveCamp_Sign::
-# 132 "data/maps/MauveCamp/scripts.pory"
+# 134 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Sign_Text_0, MSGBOX_SIGN
 	return
 
 
 MauveCamp_SandCastle::
-# 136 "data/maps/MauveCamp/scripts.pory"
+# 138 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_SandCastle_Text_0
-# 137 "data/maps/MauveCamp/scripts.pory"
+# 139 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 
 MauveCamp_Pokeball::
-# 141 "data/maps/MauveCamp/scripts.pory"
+# 143 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Pokeball_Text_0
-# 142 "data/maps/MauveCamp/scripts.pory"
+# 144 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 
 MauveCamp_Boxes::
-# 146 "data/maps/MauveCamp/scripts.pory"
+# 148 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Boxes_Text_0
-# 147 "data/maps/MauveCamp/scripts.pory"
+# 149 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 
 MauveCamp_Rowboat::
-# 151 "data/maps/MauveCamp/scripts.pory"
-	msgbox MauveCamp_Rowboat_Text_0, MSGBOX_YESNO
 # 153 "data/maps/MauveCamp/scripts.pory"
+	msgbox MauveCamp_Rowboat_Text_0, MSGBOX_YESNO
+# 155 "data/maps/MauveCamp/scripts.pory"
 	closemessage
-# 154 "data/maps/MauveCamp/scripts.pory"
+# 156 "data/maps/MauveCamp/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne MauveCamp_Rowboat_1
 	return
 
 MauveCamp_Rowboat_1:
-# 155 "data/maps/MauveCamp/scripts.pory"
+# 157 "data/maps/MauveCamp/scripts.pory"
 	setflag FLAG_REVERSE_SLATEPORT_BOAT_SCENE
-# 156 "data/maps/MauveCamp/scripts.pory"
+# 158 "data/maps/MauveCamp/scripts.pory"
 	goto SlateportRegionMap_BoatSceneInit
 	return
 
 
 MauveCamp_Pot::
-# 161 "data/maps/MauveCamp/scripts.pory"
+# 163 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Pot_Text_0
-# 164 "data/maps/MauveCamp/scripts.pory"
+# 166 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 
 MauveCamp_Shell::
-# 168 "data/maps/MauveCamp/scripts.pory"
+# 170 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Shell_Text_0
-# 171 "data/maps/MauveCamp/scripts.pory"
+# 173 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 
-MauveCamp_EventScript_HeadbuttTree_Text_0:
+MauveCamp_EventScript_FromHeadbuttTree_Text_0:
 # 81 "data/maps/MauveCamp/scripts.pory"
 	.string "Feeling better, lad?$"
 
-MauveCamp_EventScript_HeadbuttTree_Text_1:
+MauveCamp_EventScript_FromHeadbuttTree_Text_1:
 # 84 "data/maps/MauveCamp/scripts.pory"
 	.string "Feeling better, lass?$"
 
-MauveCamp_EventScript_HeadbuttTree_Text_2:
+MauveCamp_EventScript_FromHeadbuttTree_Text_2:
 # 86 "data/maps/MauveCamp/scripts.pory"
 	.string "If ye be feeling hungry, we have plenty\nof food at camp.\pThere's no need to bash down trees with\nyer head in hope of finding coconuts.\pIf ye keep knocking yerself out, we'll\nhave to start chargin' ye!$"
 
@@ -327,41 +331,41 @@ MauveCamp_Sailor4_Text_1:
 	.string "Stay safe out in the wilds.$"
 
 MauveCamp_Ranger_Text_0:
-# 124 "data/maps/MauveCamp/scripts.pory"
+# 126 "data/maps/MauveCamp/scripts.pory"
 	.string "A couple of us rangers joined the\n"
 	.string "expedition to help set up camp.\p"
 	.string "My partner already left to scout\n"
 	.string "out the area on her own.$"
 
 MauveCamp_Sign_Text_0:
-# 132 "data/maps/MauveCamp/scripts.pory"
+# 134 "data/maps/MauveCamp/scripts.pory"
 	.string "Mauve Island Base Camp$"
 
 MauveCamp_SandCastle_Text_0:
-# 136 "data/maps/MauveCamp/scripts.pory"
+# 138 "data/maps/MauveCamp/scripts.pory"
 	.string "Did Sakura make this sand castle?$"
 
 MauveCamp_Pokeball_Text_0:
-# 141 "data/maps/MauveCamp/scripts.pory"
+# 143 "data/maps/MauveCamp/scripts.pory"
 	.string "This must be a Pokémon owned by\none of the sailors.$"
 
 MauveCamp_Boxes_Text_0:
-# 146 "data/maps/MauveCamp/scripts.pory"
+# 148 "data/maps/MauveCamp/scripts.pory"
 	.string "The boxes are loaded with supplies.$"
 
 MauveCamp_Rowboat_Text_0:
-# 151 "data/maps/MauveCamp/scripts.pory"
+# 153 "data/maps/MauveCamp/scripts.pory"
 	.string "It's a rowboat!\n"
 	.string "Use it to return to Hoenn?$"
 
 MauveCamp_Pot_Text_0:
-# 161 "data/maps/MauveCamp/scripts.pory"
+# 163 "data/maps/MauveCamp/scripts.pory"
 	.string "{PLAYER} found one Leftovers!\n"
 	.string "… … …\l"
 	.string "Just kidding!$"
 
 MauveCamp_Shell_Text_0:
-# 168 "data/maps/MauveCamp/scripts.pory"
+# 170 "data/maps/MauveCamp/scripts.pory"
 	.string "Wow!\p"
 	.string "When you get close you can hear\n"
 	.string "the ocean!$"

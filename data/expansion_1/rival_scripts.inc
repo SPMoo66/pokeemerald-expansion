@@ -1,109 +1,109 @@
 EventScript_JaksonExpansion1Call::
-# 29 "data/expansion_1/rival_scripts.pory"
-	lockall
-# 30 "data/expansion_1/rival_scripts.pory"
-	pokenavcall Call1_JaksonText
 # 31 "data/expansion_1/rival_scripts.pory"
-	waitmessage
+	lockall
 # 32 "data/expansion_1/rival_scripts.pory"
-	playfanfare MUS_HG_POKEGEAR_REGISTERED
+	pokenavcall Call1_JaksonText
 # 33 "data/expansion_1/rival_scripts.pory"
-	waitfanfare
+	waitmessage
 # 34 "data/expansion_1/rival_scripts.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 19
+	playfanfare MUS_HG_POKEGEAR_REGISTERED
 # 35 "data/expansion_1/rival_scripts.pory"
+	waitfanfare
+# 36 "data/expansion_1/rival_scripts.pory"
+	setvar VAR_EMERALBODY_RIVAL_STATE, 19
+# 37 "data/expansion_1/rival_scripts.pory"
 	releaseall
 	return
 
 
 Sakura_Exp1_Town01::
-# 39 "data/expansion_1/rival_scripts.pory"
+# 41 "data/expansion_1/rival_scripts.pory"
 	speakername CommonText_Sakura
-# 40 "data/expansion_1/rival_scripts.pory"
+# 42 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town01_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Exp1_Town01::
-# 44 "data/expansion_1/rival_scripts.pory"
+# 46 "data/expansion_1/rival_scripts.pory"
 	speakername CommonText_Harper
-# 45 "data/expansion_1/rival_scripts.pory"
+# 47 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town01_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Exp1_Town01::
-# 49 "data/expansion_1/rival_scripts.pory"
+# 51 "data/expansion_1/rival_scripts.pory"
 	speakername CommonText_Redd
-# 50 "data/expansion_1/rival_scripts.pory"
+# 52 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town01_ReddText, MSGBOX_NPC
 	return
 
 
 Baron_Exp1_Town01::
-# 54 "data/expansion_1/rival_scripts.pory"
+# 56 "data/expansion_1/rival_scripts.pory"
 	speakername CommonText_Baron
-# 55 "data/expansion_1/rival_scripts.pory"
+# 57 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town01_BaronText, MSGBOX_NPC
 	return
 
 
 Jakson_Exp1_Town01::
-# 59 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Jakson
-# 60 "data/expansion_1/rival_scripts.pory"
-	msgbox Exp1_Town01_JaksonText, MSGBOX_YESNO
 # 61 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 62 "data/expansion_1/rival_scripts.pory"
+	msgbox Exp1_Town01_JaksonText, MSGBOX_YESNO
+# 63 "data/expansion_1/rival_scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Jakson_Exp1_Town01_1
-# 66 "data/expansion_1/rival_scripts.pory"
+# 68 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town01_JaksonTextDecline, MSGBOX_AUTOCLOSE
 	return
 
 Jakson_Exp1_Town01_1:
-# 62 "data/expansion_1/rival_scripts.pory"
+# 64 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town01_JaksonTextAccept, MSGBOX_AUTOCLOSE
-# 63 "data/expansion_1/rival_scripts.pory"
+# 65 "data/expansion_1/rival_scripts.pory"
 	goto SlateportRegionMap_BoatSceneInit
 	return
 
 
 Sakura_Exp1_Town02::
-# 71 "data/expansion_1/rival_scripts.pory"
+# 73 "data/expansion_1/rival_scripts.pory"
 	speakername CommonText_Sakura
-# 72 "data/expansion_1/rival_scripts.pory"
+# 74 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town02_SakuraText, MSGBOX_NPC
 	return
 
 
 Redd_Exp1_Town02::
-# 76 "data/expansion_1/rival_scripts.pory"
+# 78 "data/expansion_1/rival_scripts.pory"
 	speakername CommonText_Redd
-# 77 "data/expansion_1/rival_scripts.pory"
+# 79 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town02_ReddText, MSGBOX_NPC
 	return
 
 
 Baron_Exp1_Town02::
-# 81 "data/expansion_1/rival_scripts.pory"
+# 83 "data/expansion_1/rival_scripts.pory"
 	speakername CommonText_Baron
-# 82 "data/expansion_1/rival_scripts.pory"
+# 84 "data/expansion_1/rival_scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 26
 	goto_if_lt Baron_Exp1_Town02_1
-# 86 "data/expansion_1/rival_scripts.pory"
+# 88 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town02b_BaronText, MSGBOX_NPC
 	return
 
 Baron_Exp1_Town02_1:
-# 83 "data/expansion_1/rival_scripts.pory"
+# 85 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town02_BaronText, MSGBOX_NPC
 	return
 
 
 Jakson_Exp1_Town02::
-# 91 "data/expansion_1/rival_scripts.pory"
+# 93 "data/expansion_1/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 92 "data/expansion_1/rival_scripts.pory"
+# 94 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town02_JaksonText, MSGBOX_NPC
 	return
 

@@ -131,6 +131,9 @@ script SubmergedCave_1F_3R_ClearHarperFollower {
 }
 
 script Expansion1_Follower_Harper1_Talking1 {
+	playse (SE_CLICK)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_Talking)
+	delay (60)
 	facefollowernpc
 	speakername (CommonText_Harper)
 	msgbox ("Heaven forbid the mod devs let you\n"
@@ -153,6 +156,9 @@ script Expansion1_Follower_Harper1_Talking1 {
 }
 
 script Expansion1_Follower_Harper1_Talking2 {
+	playse (SE_CLICK)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_Talking)
+	delay (60)
 	facefollowernpc
 	speakername (CommonText_Harper)
 	msgbox ("Hey, about the boat crash.\p"
@@ -178,6 +184,9 @@ script Expansion1_Follower_Harper1_Talking2 {
 }
 
 script Expansion1_Follower_Harper1_Talking3 {
+	playse (SE_CLICK)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_Talking)
+	delay (60)
 	facefollowernpc
 	speakername (CommonText_Harper)
 	msgbox ("Hey, {PLAYER}.\p"

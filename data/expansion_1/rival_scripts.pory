@@ -23,7 +23,9 @@
 	# 36: Set after talking 2
 	# 37: Set after obtaining key in SS Tidal Dungeon
 	# 38: Set after using key in SS Tidal Dungeon
-	# 39: 
+	# 39: Set after obtaining dynamite
+	# 40: Set after Sceen07 is complete
+	# 41: tbd
 
 script EventScript_JaksonExpansion1Call {
 	lockall

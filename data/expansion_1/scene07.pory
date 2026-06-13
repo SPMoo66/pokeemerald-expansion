@@ -1,0 +1,204 @@
+const SSTIDALDUNGEON_ROOM_STEVEN = 1
+const SSTIDALDUNGEON_ROOM_DYNAMITE = 2
+const SSTIDALDUNGEON_ROOM_FISHBOWL = 3
+const SSTIDALDUNGEON_ROOM_HARPER = 4
+const MAUVECAMP_JAKSON = 6
+const MAUVECAMP_BARON = 7
+const MAUVECAMP_SAKURA = 8
+const MAUVECAMP_FAKEPLAYER = 9
+const MAUVECAMP_REDD = 10
+const MAUVECAMP_HARPER = 11
+
+script SS_Tidal_Dungeon_1F_1R_Room1_Dynamite {
+	addobject (SSTIDALDUNGEON_ROOM_HARPER)
+	destroyfollowernpc
+	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkRight)
+	waitmovement (0)
+	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkInPlaceFasterUp)
+	waitmovement (0)
+	speakername (CommonText_Harper)
+	msgbox ("Well, sure as shit, there it is.\p"
+			"Some genuine dynamite… yee haw?\p"
+			"Sorry, I'm already thinking of what\n"
+			"horrible line Sakura's going to throw\l"
+			"when she pulls the plunger on this.", MSGBOX_AUTOCLOSE)
+	fadescreen (FADE_TO_BLACK)
+	removeobject (SSTIDALDUNGEON_ROOM_DYNAMITE)
+	playfanfare (MUS_DP_OBTAIN_KEY_ITEM)
+	message ("{PLAYER} obtained dynamite!")
+	waitfanfare
+	closemessage
+	addobject (SSTIDALDUNGEON_ROOM_FISHBOWL)
+	fadescreen (FADE_FROM_BLACK)
+	delay (30)
+	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkInPlaceFasterLeft)
+	waitmovement (0)
+	speakername (CommonText_Harper)
+	msgbox ("And look at that sucker. Probably came\n"
+			"here on vacation, and now we've\l"
+			"sequence broken this thing so bad that\l"
+			"he's trapped in his cabin for eternity.\p"
+			"You know… Isn't his sprite a bit\n"
+			"familiar looking?\p"
+			"Eh, let's just grab this and-\p"
+			"… … …\n"
+			"… … …\l"
+			"Did you hear that?", MSGBOX_AUTOCLOSE)
+	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement (0)
+	delay (60)
+	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkInPlaceFasterLeft)
+	waitmovement (0)
+	delay (60)
+	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkInPlaceFasterUp)
+	waitmovement (0)
+	speakername (CommonText_Harper)
+	msgbox ("Was that fishbowl… always in that\n"
+			"position?", MSGBOX_AUTOCLOSE)
+	applymovement (SSTIDALDUNGEON_ROOM_FISHBOWL, Common_Movement_ShakeHorizontal)
+	waitmovement (0)
+	
+	msgbox ("there's a battle here", MSGBOX_AUTOCLOSE)
+	delay (40)
+	
+	speakername (CommonText_Harper)
+	msgbox ("Motherfu-\n"
+			"… … …\l"
+			"So we're getting mimics or something\l"
+			"now?\p"
+			"They'll make anything into a 'mon these\n"
+			"days, won't they? At least the design\l"
+			"was interesting.\p"
+			"Maybe it was supposed to be the guard\n"
+			"of the dynamite?\p"
+			"Or is that another mystery whose\n"
+			"answer is lost to the annals of\l"
+			"sequence breaks?", MSGBOX_AUTOCLOSE)
+	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_SweatDrop)
+	playse (SE_M_METRONOME)
+	delay (40)
+	speakername (CommonText_Harper)
+	msgbox ("Maybe we're back on the right track\n"
+			"then.\l"
+			"Or back on track at all, at least.\p"
+			"Anyway, I'll be taking that-", MSGBOX_AUTOCLOSE)
+	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkLeft)
+	waitmovement (0)
+	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkInPlaceFasterUp)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement (0)
+	delay (10)
+	playfanfare (MUS_TOO_BAD)
+	message ("Harper took the dynamite from\n"
+			"{PLAYER}…")
+	waitfanfare
+	closemessage
+	speakername (CommonText_Harper)
+	msgbox ("So let's hurry back to the others.\p"
+			"If the whole VR system here actually\n"
+			"let us see the twinkle in a person's\l"
+			"eyes…\p"
+			"Well, it'd be a sight to behold.", MSGBOX_AUTOCLOSE)
+	setflag (FLAG_HIDE_MAP_NAME_POPUP)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 39)
+	fadescreen (FADE_TO_BLACK)
+	warpcontinuescript(MAP_MAUVE_CAMP, 27, 13, Expansion1_Rival_Scene07b)
+}
+
+script Expansion1_Rival_Scene07b {
+	turnobject (LOCALID_PLAYER, DIR_WEST)
+	setobjectxyperm (MAUVECAMP_JAKSON, 27, 12)
+	setobjectxyperm (MAUVECAMP_BARON, 26, 14)
+	setobjectxyperm (MAUVECAMP_SAKURA, 25, 12)
+	setobjectxyperm (MAUVECAMP_REDD, 26, 11)
+	setobjectxyperm (MAUVECAMP_HARPER, 25, 13)
+	setobjectmovementtype (MAUVECAMP_JAKSON, MOVEMENT_TYPE_FACE_LEFT)
+	setobjectmovementtype (MAUVECAMP_REDD, MOVEMENT_TYPE_FACE_DOWN)
+	setobjectmovementtype (MAUVECAMP_SAKURA, MOVEMENT_TYPE_FACE_RIGHT)
+	setobjectmovementtype (MAUVECAMP_BARON, MOVEMENT_TYPE_FACE_UP)
+	setobjectmovementtype (MAUVECAMP_HARPER, MOVEMENT_TYPE_FACE_RIGHT)
+	addobject (MAUVECAMP_JAKSON)
+	addobject (MAUVECAMP_REDD)
+	addobject (MAUVECAMP_SAKURA)
+	addobject (MAUVECAMP_BARON)
+	addobject (MAUVECAMP_HARPER)
+	fadescreen (FADE_FROM_BLACK)
+
+	applymovement (MAUVECAMP_REDD, Common_Movement_MusicNote)
+	playse (SE_RG_HELP_OPEN)
+	delay (40)
+	speakername (CommonText_Redd)
+	msgbox ("Well, hot damn. You two really had that\n"
+			"handled after all.\p"
+			"I was all ready to jump in and help.", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_SAKURA, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement (0)
+	speakername (CommonText_Sakura)
+	msgbox ("So… you got it?")
+	speakername (CommonText_Harper)
+	msgbox ("Yup, despite the locals' misgivings.", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_SAKURA, Common_Movement_WalkInPlaceFasterRight)
+	waitmovement (0)
+	speakername (CommonText_Sakura)
+	msgbox ("Ooh baby, let's see what this explosion\n"
+			"looks like!", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_SAKURA, Common_Movement_ShakeHorizontal)
+	waitmovement (0)
+	speakername (CommonText_Jakson)
+	msgbox ("Phew, I'm glad my intuition was right.")
+	speakername (CommonText_Harper)
+	msgbox ("Yes, Jakson. Your sense of game design\n"
+			"isn't completely gone.")
+	speakername (CommonText_Jakson)
+	msgbox ("I was betting on the idea that the\n"
+			"ship was a place the party returns to.\p"
+			"But yeah, with it wrecked that wasn't\n"
+			"a sure thing.", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_BARON, Common_Movement_Thinking)
+	delay (60)
+	speakername (CommonText_Baron)
+	msgbox ("It didn't look wrecked on the inside,\n"
+			"though…?")
+	speakername (CommonText_Jakson)
+	msgbox ("More weird mod interactions?")
+	speakername (CommonText_Harper)
+	msgbox ("If anything, I'm glad you weren't\n"
+			"responsible for that unoriginal\l"
+			"dungeon.\p"
+			"But yes, we've retrieved your dynamite.\n"
+			"Praise be.")
+	speakername (CommonText_Baron)
+	msgbox ("So this is how we… as Sakura said…\n"
+			"go “boom”?")
+	speakername (CommonText_Harper)
+	msgbox ("Can't imagine another use for an\n"
+			"explosives key item other than a\l"
+			"progression event. So that's my bet.", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_REDD, Common_Movement_MusicNote)
+	playse (SE_RG_HELP_OPEN)
+	delay (40)
+	speakername (CommonText_Redd)
+	msgbox ("As they say, when in Rome, blow it up.")
+	speakername (CommonText_Sakura)
+	msgbox ("Completely, 100% accurate and wisdom\n"
+			"we should be following this moment.\p"
+			"Meaning… hand it over!\n"
+			"I'm ready to blow this joint{EMOJI_TILDE}{UNK_SPACER}")
+	speakername (CommonText_Jakson)
+	msgbox ("You said it's to the west, Sakura?")
+	speakername (CommonText_Sakura)
+	msgbox ("Yeah! Right out in the water to the\n"
+			"west. Hurry up, everyone!", MSGBOX_AUTOCLOSE)
+	playse (SE_LEDGE)
+	applymovement (MAUVECAMP_SAKURA, Common_Movement_JumpInPlaceRight)
+	waitmovement (0)
+	delay (20)
+	applymovement (MAUVECAMP_REDD, Common_Movement_WalkInPlaceLeft)
+	applymovement (MAUVECAMP_SAKURA, Common_Movement_WalkLeft6)
+	waitmovement (0)
+	applymovement (MAUVECAMP_HARPER, Common_Movement_WalkInPlaceLeft)
+	applymovement (MAUVECAMP_REDD, Common_Movement_SweatDrop)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 40)
+	fadescreenswapbuffers (FADE_TO_BLACK)
+	warpcontinuescript (MAP_MAUVE_CAMP, 16, 16, Expansion1_Rival_Scene02e)
+}

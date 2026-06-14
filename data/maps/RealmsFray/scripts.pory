@@ -19,3 +19,14 @@ mart MegaStonesMart {
 	ITEM_MEGA_STONE_G
 }
 
+script RealmsFray_BeastBall_Vending_Machine {
+	lock
+	msgbox(gText_HowMayIServeYou)
+	pokemart (BeastBallsMart)
+	msgbox(gText_PleaseComeAgain)
+	release
+}
+
+mart BeastBallsMart {
+	ITEM_BEAST_BALL
+}

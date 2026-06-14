@@ -22,6 +22,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Sawyer1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_1] =
@@ -34,6 +35,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntAquaHideout1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_2] =
@@ -46,6 +48,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntAquaHideout2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_3] =
@@ -58,6 +61,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntAquaHideout3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_4] =
@@ -70,6 +74,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntAquaHideout4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
@@ -82,6 +87,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntSeafloorCavern1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
@@ -94,6 +100,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntSeafloorCavern2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SEAFLOOR_CAVERN_3] =
@@ -106,6 +113,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntSeafloorCavern3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_1] =
@@ -118,6 +126,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Gabrielle1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_PETALBURG_WOODS] =
@@ -130,6 +139,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntPetalburgWoods),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARCEL] =
@@ -142,6 +152,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Marcel),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ALBERTO] =
@@ -154,6 +165,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Alberto),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ED] =
@@ -166,6 +178,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ed),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SEAFLOOR_CAVERN_4] =
@@ -178,6 +191,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntSeafloorCavern4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DECLAN] =
@@ -190,6 +204,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Declan),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_RUSTURF_TUNNEL] =
@@ -202,6 +217,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntRusturfTunnel),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_1] =
@@ -214,6 +230,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntWeatherInst1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_2] =
@@ -226,6 +243,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntWeatherInst2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_3] =
@@ -238,6 +256,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntWeatherInst3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MUSEUM_1] =
@@ -250,6 +269,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMuseum1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MUSEUM_2] =
@@ -262,6 +282,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMuseum2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_1] =
@@ -274,6 +295,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntSpaceCenter1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_PYRE_1] =
@@ -286,6 +308,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMtPyre1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_PYRE_2] =
@@ -298,6 +321,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMtPyre2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_PYRE_3] =
@@ -310,6 +334,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMtPyre3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_4] =
@@ -322,6 +347,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntWeatherInst4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_5] =
@@ -334,6 +360,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntAquaHideout5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_6] =
@@ -346,6 +373,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntAquaHideout6),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FREDRICK] =
@@ -358,6 +386,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Fredrick),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MATT] =
@@ -370,6 +399,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Matt),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ZANDER] =
@@ -382,6 +412,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Zander),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SHELLY_WEATHER_INSTITUTE] =
@@ -394,6 +425,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/,
         .party = TRAINER_PARTY(sParty_ShellyWeatherInstitute),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SHELLY_SEAFLOOR_CAVERN] =
@@ -406,6 +438,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_ShellySeafloorCavern),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ARCHIE] =
@@ -418,6 +451,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Archie),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LEAH] =
@@ -430,6 +464,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Leah),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DAISY] =
@@ -442,6 +477,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Daisy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROSE_1] =
@@ -454,6 +490,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Rose1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FELIX] =
@@ -466,6 +503,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Felix),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VIOLET] =
@@ -478,6 +516,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Violet),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROSE_2] =
@@ -490,6 +529,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Rose2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROSE_3] =
@@ -502,6 +542,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Rose3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROSE_4] =
@@ -514,6 +555,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Rose4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROSE_5] =
@@ -526,6 +568,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Rose5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DUSTY_1] =
@@ -538,6 +581,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dusty1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CHIP] =
@@ -550,6 +594,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Chip),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FOSTER] =
@@ -562,6 +607,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Foster),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DUSTY_2] =
@@ -574,6 +620,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dusty2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DUSTY_3] =
@@ -586,6 +633,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dusty3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DUSTY_4] =
@@ -598,6 +646,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dusty4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DUSTY_5] =
@@ -610,6 +659,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dusty5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_1] =
@@ -622,6 +672,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GabbyAndTy1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_2] =
@@ -634,6 +685,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GabbyAndTy2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_3] =
@@ -646,6 +698,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GabbyAndTy3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_4] =
@@ -658,6 +711,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GabbyAndTy4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_5] =
@@ -670,6 +724,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GabbyAndTy5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_6] =
@@ -682,6 +737,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GabbyAndTy6),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LOLA_1] =
@@ -694,6 +750,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lola1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AUSTINA] =
@@ -706,6 +763,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Austina),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GWEN] =
@@ -718,6 +776,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Gwen),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LOLA_2] =
@@ -730,6 +789,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lola2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LOLA_3] =
@@ -742,6 +802,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lola3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LOLA_4] =
@@ -754,6 +815,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lola4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LOLA_5] =
@@ -766,6 +828,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lola5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RICKY_1] =
@@ -778,6 +841,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ricky1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIMON] =
@@ -790,6 +854,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Simon),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CHARLIE] =
@@ -802,6 +867,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Charlie),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RICKY_2] =
@@ -814,6 +880,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ricky2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RICKY_3] =
@@ -826,6 +893,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ricky3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RICKY_4] =
@@ -838,6 +906,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ricky4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RICKY_5] =
@@ -850,6 +919,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ricky5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RANDALL] =
@@ -862,6 +932,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Randall),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PARKER] =
@@ -874,6 +945,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Parker),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GEORGE] =
@@ -886,6 +958,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_George),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BERKE] =
@@ -898,6 +971,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Berke),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRAXTON] =
@@ -910,6 +984,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Braxton),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VINCENT] =
@@ -922,6 +997,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Vincent),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LEROY] =
@@ -934,6 +1010,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Leroy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WILTON_1] =
@@ -946,6 +1023,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Wilton1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_EDGAR] =
@@ -958,6 +1036,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Edgar),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ALBERT] =
@@ -970,6 +1049,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Albert),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SAMUEL] =
@@ -982,6 +1062,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Samuel),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VITO] =
@@ -994,6 +1075,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Vito),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_OWEN] =
@@ -1006,6 +1088,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Owen),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WILTON_2] =
@@ -1018,6 +1101,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Wilton2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WILTON_3] =
@@ -1030,6 +1114,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Wilton3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WILTON_4] =
@@ -1042,6 +1127,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Wilton4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WILTON_5] =
@@ -1054,6 +1140,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Wilton5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WARREN] =
@@ -1066,6 +1153,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Warren),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARY] =
@@ -1078,6 +1166,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Mary),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ALEXIA] =
@@ -1090,6 +1179,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Alexia),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JODY] =
@@ -1102,6 +1192,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
         .party = TRAINER_PARTY(sParty_Jody),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WENDY] =
@@ -1114,6 +1205,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
         .party = TRAINER_PARTY(sParty_Wendy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KEIRA] =
@@ -1126,6 +1218,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
         .party = TRAINER_PARTY(sParty_Keira),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BROOKE_1] =
@@ -1138,6 +1231,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Brooke1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JENNIFER] =
@@ -1150,6 +1244,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Jennifer),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HOPE] =
@@ -1162,6 +1257,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Hope),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SHANNON] =
@@ -1174,6 +1270,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Shannon),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MICHELLE] =
@@ -1186,6 +1283,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Michelle),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CAROLINE] =
@@ -1198,6 +1296,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Caroline),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JULIE] =
@@ -1210,6 +1309,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Julie),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BROOKE_2] =
@@ -1222,6 +1322,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Brooke2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BROOKE_3] =
@@ -1234,6 +1335,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Brooke3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BROOKE_4] =
@@ -1246,6 +1348,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Brooke4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BROOKE_5] =
@@ -1258,6 +1361,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Brooke5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PATRICIA] =
@@ -1270,6 +1374,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Patricia),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KINDRA] =
@@ -1282,6 +1387,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Kindra),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TAMMY] =
@@ -1294,6 +1400,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Tammy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VALERIE_1] =
@@ -1306,6 +1413,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Valerie1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TASHA] =
@@ -1318,6 +1426,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Tasha),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VALERIE_2] =
@@ -1330,6 +1439,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Valerie2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VALERIE_3] =
@@ -1342,6 +1452,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Valerie3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VALERIE_4] =
@@ -1354,6 +1465,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Valerie4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VALERIE_5] =
@@ -1366,6 +1478,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Valerie5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CINDY_1] =
@@ -1378,6 +1491,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cindy1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DAPHNE] =
@@ -1390,6 +1504,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Daphne),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_2] =
@@ -1402,6 +1517,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntSpaceCenter2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_EVELYN] =
@@ -1414,6 +1530,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Evelyn),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRIANNA] =
@@ -1426,6 +1543,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Brianna),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NAOMI] =
@@ -1438,6 +1556,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Naomi),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CINDY_3] =
@@ -1450,6 +1569,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cindy3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CINDY_4] =
@@ -1462,6 +1582,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cindy4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CINDY_5] =
@@ -1474,6 +1595,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cindy5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CINDY_6] =
@@ -1486,6 +1608,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cindy6),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MELISSA] =
@@ -1498,6 +1621,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Melissa),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SHEILA] =
@@ -1510,6 +1634,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Sheila),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SHIRLEY] =
@@ -1522,6 +1647,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Shirley),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JESSICA_1] =
@@ -1534,6 +1660,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jessica1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CONNIE] =
@@ -1546,6 +1673,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Connie),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRIDGET] =
@@ -1558,6 +1686,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Bridget),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_OLIVIA] =
@@ -1570,6 +1699,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Olivia),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TIFFANY] =
@@ -1582,6 +1712,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Tiffany),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JESSICA_2] =
@@ -1594,6 +1725,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jessica2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JESSICA_3] =
@@ -1606,6 +1738,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jessica3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JESSICA_4] =
@@ -1618,6 +1751,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jessica4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JESSICA_5] =
@@ -1630,6 +1764,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jessica5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WINSTON_1] =
@@ -1642,6 +1777,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Winston1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MOLLIE] =
@@ -1654,6 +1790,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Mollie),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GARRET] =
@@ -1666,6 +1803,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Garret),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WINSTON_2] =
@@ -1678,6 +1816,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Winston2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WINSTON_3] =
@@ -1690,6 +1829,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Winston3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WINSTON_4] =
@@ -1702,6 +1842,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Winston4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WINSTON_5] =
@@ -1714,6 +1855,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Winston5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_STEVE_1] =
@@ -1726,6 +1868,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Steve1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_THALIA_1] =
@@ -1738,6 +1881,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Thalia1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARK] =
@@ -1750,6 +1894,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Mark),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_CHIMNEY_1] =
@@ -1762,6 +1907,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMtChimney1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_STEVE_2] =
@@ -1774,6 +1920,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Steve2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_STEVE_3] =
@@ -1786,6 +1933,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Steve3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_STEVE_4] =
@@ -1798,6 +1946,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Steve4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_STEVE_5] =
@@ -1810,6 +1959,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Steve5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LUIS] =
@@ -1822,6 +1972,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Luis),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DOMINIK] =
@@ -1834,6 +1985,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dominik),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DOUGLAS] =
@@ -1846,6 +1998,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Douglas),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DARRIN] =
@@ -1858,6 +2011,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Darrin),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TONY_1] =
@@ -1870,6 +2024,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Tony1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JEROME] =
@@ -1882,6 +2037,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jerome),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MATTHEW] =
@@ -1894,6 +2050,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Matthew),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DAVID] =
@@ -1906,6 +2063,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_David),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SPENCER] =
@@ -1918,6 +2076,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Spencer),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROLAND] =
@@ -1930,6 +2089,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Roland),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NOLEN] =
@@ -1942,6 +2102,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nolen),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_STAN] =
@@ -1954,6 +2115,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Stan),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BARRY] =
@@ -1966,6 +2128,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Barry),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DEAN] =
@@ -1978,6 +2141,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dean),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RODNEY] =
@@ -1990,6 +2154,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Rodney),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RICHARD] =
@@ -2002,6 +2167,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Richard),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HERMAN] =
@@ -2014,6 +2180,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Herman),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SANTIAGO] =
@@ -2026,6 +2193,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Santiago),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GILBERT] =
@@ -2038,6 +2206,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Gilbert),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FRANKLIN] =
@@ -2050,6 +2219,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Franklin),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KEVIN] =
@@ -2062,6 +2232,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Kevin),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JACK] =
@@ -2074,6 +2245,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jack),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LOGAN] =
@@ -2086,6 +2258,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Logan),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CHAD] =
@@ -2098,6 +2271,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Chad),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TONY_2] =
@@ -2110,6 +2284,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Tony2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TONY_3] =
@@ -2122,6 +2297,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Tony3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TONY_4] =
@@ -2134,6 +2310,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Tony4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TONY_5] =
@@ -2146,6 +2323,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Tony5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TAKAO] =
@@ -2158,6 +2336,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Takao),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HITOSHI] =
@@ -2170,6 +2349,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Hitoshi),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KIYO] =
@@ -2182,6 +2362,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Kiyo),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KOICHI] =
@@ -2194,6 +2375,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Koichi),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NOB_1] =
@@ -2206,6 +2388,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nob1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NOB_2] =
@@ -2218,6 +2401,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nob2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NOB_3] =
@@ -2230,6 +2414,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nob3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NOB_4] =
@@ -2242,6 +2427,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nob4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NOB_5] =
@@ -2254,6 +2440,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nob5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_YUJI] =
@@ -2266,6 +2453,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Yuji),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DAISUKE] =
@@ -2278,6 +2466,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Daisuke),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ATSUSHI] =
@@ -2290,6 +2479,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Atsushi),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KIRK] =
@@ -2302,6 +2492,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Kirk),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_7] =
@@ -2314,6 +2505,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntAquaHideout7),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_8] =
@@ -2326,6 +2518,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntAquaHideout8),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SHAWN] =
@@ -2338,6 +2531,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Shawn),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FERNANDO_1] =
@@ -2350,6 +2544,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Fernando1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DALTON_1] =
@@ -2362,6 +2557,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dalton1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DALTON_2] =
@@ -2374,6 +2570,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dalton2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DALTON_3] =
@@ -2386,6 +2583,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dalton3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DALTON_4] =
@@ -2398,6 +2596,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dalton4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DALTON_5] =
@@ -2410,6 +2609,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dalton5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_COLE] =
@@ -2422,6 +2622,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cole),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JEFF] =
@@ -2434,6 +2635,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jeff),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AXLE] =
@@ -2446,6 +2648,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Axle),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JACE] =
@@ -2458,6 +2661,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jace),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KEEGAN] =
@@ -2470,6 +2674,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Keegan),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BERNIE_1] =
@@ -2482,6 +2687,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Bernie1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BERNIE_2] =
@@ -2494,6 +2700,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Bernie2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BERNIE_3] =
@@ -2506,6 +2713,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Bernie3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BERNIE_4] =
@@ -2518,6 +2726,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Bernie4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BERNIE_5] =
@@ -2530,6 +2739,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Bernie5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DREW] =
@@ -2542,6 +2752,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Drew),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BEAU] =
@@ -2554,6 +2765,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Beau),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LARRY] =
@@ -2566,6 +2778,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Larry),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SHANE] =
@@ -2578,6 +2791,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Shane),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JUSTIN] =
@@ -2590,6 +2804,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Justin),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ETHAN_1] =
@@ -2602,6 +2817,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ethan1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AUTUMN] =
@@ -2614,6 +2830,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Autumn),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TRAVIS] =
@@ -2626,6 +2843,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Travis),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ETHAN_2] =
@@ -2638,6 +2856,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ethan2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ETHAN_3] =
@@ -2650,6 +2869,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ethan3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ETHAN_4] =
@@ -2662,6 +2882,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ethan4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ETHAN_5] =
@@ -2674,6 +2895,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ethan5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENT] =
@@ -2686,6 +2908,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Brent),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DONALD] =
@@ -2698,6 +2921,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Donald),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TAYLOR] =
@@ -2710,6 +2934,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Taylor),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JEFFREY_1] =
@@ -2722,6 +2947,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jeffrey1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DEREK] =
@@ -2734,6 +2960,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Derek),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JEFFREY_2] =
@@ -2746,6 +2973,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jeffrey2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JEFFREY_3] =
@@ -2758,6 +2986,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jeffrey3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JEFFREY_4] =
@@ -2770,6 +2999,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jeffrey4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JEFFREY_5] =
@@ -2782,6 +3012,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jeffrey5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_EDWARD] =
@@ -2794,6 +3025,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Edward),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PRESTON] =
@@ -2806,6 +3038,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Preston),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VIRGIL] =
@@ -2818,6 +3051,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Virgil),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BLAKE] =
@@ -2830,6 +3064,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Blake),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WILLIAM] =
@@ -2842,6 +3077,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_William),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JOSHUA] =
@@ -2854,6 +3090,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Joshua),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CAMERON_1] =
@@ -2866,6 +3103,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cameron1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CAMERON_2] =
@@ -2878,6 +3116,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cameron2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CAMERON_3] =
@@ -2890,6 +3129,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cameron3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CAMERON_4] =
@@ -2902,6 +3142,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cameron4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CAMERON_5] =
@@ -2914,6 +3155,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cameron5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JACLYN] =
@@ -2926,6 +3168,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jaclyn),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HANNAH] =
@@ -2938,6 +3181,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Hannah),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SAMANTHA] =
@@ -2950,6 +3194,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Samantha),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAURA] =
@@ -2962,6 +3207,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Maura),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KAYLA] =
@@ -2974,6 +3220,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Kayla),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ALEXIS] =
@@ -2986,6 +3233,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Alexis),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JACKI_1] =
@@ -2998,6 +3246,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jacki1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JACKI_2] =
@@ -3010,6 +3259,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jacki2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JACKI_3] =
@@ -3022,6 +3272,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jacki3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JACKI_4] =
@@ -3034,6 +3285,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jacki4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JACKI_5] =
@@ -3046,6 +3298,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jacki5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WALTER_1] =
@@ -3058,6 +3311,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Walter1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MICAH] =
@@ -3070,6 +3324,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Micah),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_THOMAS] =
@@ -3082,6 +3337,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Thomas),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WALTER_2] =
@@ -3094,6 +3350,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Walter2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WALTER_3] =
@@ -3106,6 +3363,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Walter3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WALTER_4] =
@@ -3118,6 +3376,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Walter4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WALTER_5] =
@@ -3130,6 +3389,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Walter5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIDNEY] =
@@ -3143,6 +3403,7 @@
         .mugshotColor = MUGSHOT_COLOR_PURPLE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Sidney),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PHOEBE] =
@@ -3156,6 +3417,7 @@
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Phoebe),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GLACIA] =
@@ -3169,6 +3431,7 @@
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Glacia),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DRAKE] =
@@ -3182,6 +3445,7 @@
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Drake),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROXANNE_1] =
@@ -3194,6 +3458,7 @@
         .mugshotColor = MUGSHOT_COLOR_ICE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE/* | AI_FLAG_ACE_POKEMON*/,
         .party = TRAINER_PARTY(sParty_Roxanne1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRAWLY_1] =
@@ -3206,6 +3471,7 @@
         .mugshotColor = MUGSHOT_COLOR_PURPLE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE/* | AI_FLAG_ACE_POKEMON*/,
         .party = TRAINER_PARTY(sParty_Brawly1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WATTSON_1] =
@@ -3218,6 +3484,7 @@
         .mugshotColor = MUGSHOT_COLOR_STEEL,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE/* | AI_FLAG_ACE_POKEMON*/,
         .party = TRAINER_PARTY(sParty_Wattson1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FLANNERY_1] =
@@ -3230,6 +3497,7 @@
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/,
         .party = TRAINER_PARTY(sParty_Flannery1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NORMAN_1] =
@@ -3242,6 +3510,7 @@
         .mugshotColor = MUGSHOT_COLOR_FIRE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING | AI_FLAG_CONSERVATIVE,
         .party = TRAINER_PARTY(sParty_Norman1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WINONA_1] =
@@ -3254,6 +3523,7 @@
         .mugshotColor = MUGSHOT_COLOR_GRASS,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Winona1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_1] =
@@ -3266,6 +3536,7 @@
         .mugshotColor = MUGSHOT_COLOR_ELECTRIC,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_TateAndLiza1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JUAN_1] =
@@ -3278,6 +3549,7 @@
         .mugshotColor = MUGSHOT_COLOR_DRAGON,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Juan1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JERRY_1] =
@@ -3290,6 +3562,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jerry1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TED] =
@@ -3302,6 +3575,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ted),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PAUL] =
@@ -3314,6 +3588,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Paul),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JERRY_2] =
@@ -3326,6 +3601,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jerry2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JERRY_3] =
@@ -3338,6 +3614,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jerry3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JERRY_4] =
@@ -3350,6 +3627,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jerry4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JERRY_5] =
@@ -3362,6 +3640,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jerry5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KAREN_1] =
@@ -3374,6 +3653,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Karen1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GEORGIA] =
@@ -3386,6 +3666,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Georgia),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KAREN_2] =
@@ -3398,6 +3679,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Karen2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KAREN_3] =
@@ -3410,6 +3692,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Karen3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KAREN_4] =
@@ -3422,6 +3705,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Karen4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KAREN_5] =
@@ -3434,6 +3718,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Karen5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KATE_AND_JOY] =
@@ -3446,6 +3731,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_KateAndJoy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_1] =
@@ -3458,6 +3744,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_AnnaAndMeg1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_2] =
@@ -3470,6 +3757,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_AnnaAndMeg2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_3] =
@@ -3482,6 +3770,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_AnnaAndMeg3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_4] =
@@ -3494,6 +3783,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_AnnaAndMeg4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_5] =
@@ -3506,6 +3796,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_AnnaAndMeg5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VICTOR] =
@@ -3518,6 +3809,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Victor),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MIGUEL_1] =
@@ -3530,6 +3822,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Miguel1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_COLTON] =
@@ -3542,6 +3835,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Colton),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MIGUEL_2] =
@@ -3554,6 +3848,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Miguel2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MIGUEL_3] =
@@ -3566,6 +3861,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Miguel3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MIGUEL_4] =
@@ -3578,6 +3874,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Miguel4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MIGUEL_5] =
@@ -3590,6 +3887,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Miguel5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VICTORIA] =
@@ -3602,6 +3900,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .party = TRAINER_PARTY(sParty_Victoria),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VANESSA] =
@@ -3614,6 +3913,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Vanessa),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BETHANY] =
@@ -3626,6 +3926,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Bethany),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISABEL_1] =
@@ -3638,6 +3939,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isabel1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISABEL_2] =
@@ -3650,6 +3952,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isabel2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISABEL_3] =
@@ -3662,6 +3965,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isabel3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISABEL_4] =
@@ -3674,6 +3978,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isabel4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISABEL_5] =
@@ -3686,6 +3991,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isabel5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_1] =
@@ -3698,6 +4004,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Timothy1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_2] =
@@ -3710,6 +4017,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Timothy2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_3] =
@@ -3722,6 +4030,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Timothy3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_4] =
@@ -3734,6 +4043,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Timothy4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_5] =
@@ -3746,6 +4056,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Timothy5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VICKY] =
@@ -3758,6 +4069,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Vicky),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SHELBY_1] =
@@ -3770,6 +4082,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Shelby1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SHELBY_2] =
@@ -3782,6 +4095,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Shelby2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SHELBY_3] =
@@ -3794,6 +4108,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Shelby3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SHELBY_4] =
@@ -3806,6 +4121,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Shelby4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SHELBY_5] =
@@ -3818,6 +4134,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Shelby5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CALVIN_1] =
@@ -3830,6 +4147,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Calvin1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BILLY] =
@@ -3842,6 +4160,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Billy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JOSH] =
@@ -3854,6 +4173,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Josh),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TOMMY] =
@@ -3866,6 +4186,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Tommy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JOEY] =
@@ -3878,6 +4199,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Joey),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BEN] =
@@ -3890,6 +4212,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ben),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_QUINCY] =
@@ -3902,6 +4225,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Quincy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KATELYNN] =
@@ -3914,6 +4238,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Katelynn),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAYLEN] =
@@ -3926,6 +4251,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jaylen),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DILLON] =
@@ -3938,6 +4264,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dillon),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CALVIN_2] =
@@ -3950,6 +4277,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Calvin2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CALVIN_3] =
@@ -3962,6 +4290,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Calvin3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CALVIN_4] =
@@ -3974,6 +4303,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Calvin4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CALVIN_5] =
@@ -3986,6 +4316,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Calvin5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_EDDIE] =
@@ -3998,6 +4329,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Eddie),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ALLEN] =
@@ -4010,6 +4342,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Allen),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TIMMY] =
@@ -4022,6 +4355,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Timmy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WALLACE] =
@@ -4035,6 +4369,7 @@
         .mugshotColor = MUGSHOT_COLOR_YELLOW,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Wallace),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANDREW] =
@@ -4047,6 +4382,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Andrew),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_IVAN] =
@@ -4059,6 +4395,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ivan),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CLAUDE] =
@@ -4071,6 +4408,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Claude),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ELLIOT_1] =
@@ -4083,6 +4421,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Elliot1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NED] =
@@ -4095,6 +4434,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ned),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DALE] =
@@ -4107,6 +4447,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dale),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NOLAN] =
@@ -4119,6 +4460,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nolan),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BARNY] =
@@ -4131,6 +4473,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Barny),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WADE] =
@@ -4143,6 +4486,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Wade),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CARTER] =
@@ -4155,6 +4499,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Carter),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ELLIOT_2] =
@@ -4167,6 +4512,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Elliot2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ELLIOT_3] =
@@ -4179,6 +4525,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Elliot3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ELLIOT_4] =
@@ -4191,6 +4538,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Elliot4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ELLIOT_5] =
@@ -4203,6 +4551,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .party = TRAINER_PARTY(sParty_Elliot5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RONALD] =
@@ -4215,6 +4564,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ronald),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JACOB] =
@@ -4227,6 +4577,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jacob),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANTHONY] =
@@ -4239,6 +4590,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Anthony),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_1] =
@@ -4251,6 +4603,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Benjamin1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_2] =
@@ -4263,6 +4616,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Benjamin2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_3] =
@@ -4275,6 +4629,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Benjamin3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_4] =
@@ -4287,6 +4642,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Benjamin4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_5] =
@@ -4299,6 +4655,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Benjamin5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ABIGAIL_1] =
@@ -4311,6 +4668,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Abigail1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JASMINE] =
@@ -4323,6 +4681,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jasmine),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ABIGAIL_2] =
@@ -4335,6 +4694,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Abigail2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ABIGAIL_3] =
@@ -4347,6 +4707,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Abigail3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ABIGAIL_4] =
@@ -4359,6 +4720,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Abigail4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ABIGAIL_5] =
@@ -4371,6 +4733,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Abigail5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DYLAN_1] =
@@ -4383,6 +4746,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dylan1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DYLAN_2] =
@@ -4395,6 +4759,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dylan2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DYLAN_3] =
@@ -4407,6 +4772,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dylan3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DYLAN_4] =
@@ -4419,6 +4785,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dylan4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DYLAN_5] =
@@ -4431,6 +4798,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dylan5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARIA_1] =
@@ -4443,6 +4811,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Maria1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARIA_2] =
@@ -4455,6 +4824,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Maria2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARIA_3] =
@@ -4467,6 +4837,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Maria3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARIA_4] =
@@ -4479,6 +4850,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Maria4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARIA_5] =
@@ -4491,6 +4863,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Maria5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CAMDEN] =
@@ -4503,6 +4876,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Camden),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DEMETRIUS] =
@@ -4515,6 +4889,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Demetrius),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISAIAH_1] =
@@ -4527,6 +4902,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isaiah1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PABLO_1] =
@@ -4539,6 +4915,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Pablo1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CHASE] =
@@ -4551,6 +4928,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Chase),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISAIAH_2] =
@@ -4563,6 +4941,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isaiah2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISAIAH_3] =
@@ -4575,6 +4954,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isaiah3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISAIAH_4] =
@@ -4587,6 +4967,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isaiah4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISAIAH_5] =
@@ -4599,6 +4980,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isaiah5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISOBEL] =
@@ -4611,6 +4993,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isobel),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DONNY] =
@@ -4623,6 +5006,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Donny),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TALIA] =
@@ -4635,6 +5019,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Talia),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KATELYN_1] =
@@ -4647,6 +5032,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Katelyn1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ALLISON] =
@@ -4659,6 +5045,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Allison),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KATELYN_2] =
@@ -4671,6 +5058,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Katelyn2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KATELYN_3] =
@@ -4683,6 +5071,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Katelyn3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KATELYN_4] =
@@ -4695,6 +5084,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Katelyn4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KATELYN_5] =
@@ -4707,6 +5097,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Katelyn5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NICOLAS_1] =
@@ -4719,6 +5110,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nicolas1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NICOLAS_2] =
@@ -4731,6 +5123,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nicolas2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NICOLAS_3] =
@@ -4743,6 +5136,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nicolas3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NICOLAS_4] =
@@ -4755,6 +5149,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nicolas4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NICOLAS_5] =
@@ -4767,6 +5162,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nicolas5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AARON] =
@@ -4779,6 +5175,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Aaron),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PERRY] =
@@ -4791,6 +5188,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Perry),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HUGH] =
@@ -4803,6 +5201,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Hugh),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PHIL] =
@@ -4815,6 +5214,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Phil),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JARED] =
@@ -4827,6 +5227,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jared),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HUMBERTO] =
@@ -4839,6 +5240,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Humberto),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PRESLEY] =
@@ -4851,6 +5253,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Presley),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_EDWARDO] =
@@ -4863,6 +5266,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Edwardo),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_COLIN] =
@@ -4875,6 +5279,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Colin),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROBERT_1] =
@@ -4887,6 +5292,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Robert1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BENNY] =
@@ -4899,6 +5305,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Benny),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CHESTER] =
@@ -4911,6 +5318,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Chester),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROBERT_2] =
@@ -4923,6 +5331,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Robert2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROBERT_3] =
@@ -4935,6 +5344,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Robert3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROBERT_4] =
@@ -4947,6 +5357,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Robert4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROBERT_5] =
@@ -4959,6 +5370,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Robert5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ALEX] =
@@ -4971,6 +5383,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Alex),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BECK] =
@@ -4983,6 +5396,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Beck),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_YASU] =
@@ -4995,6 +5409,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .party = TRAINER_PARTY(sParty_Yasu),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TAKASHI] =
@@ -5007,6 +5422,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .party = TRAINER_PARTY(sParty_Takashi),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DIANNE] =
@@ -5019,6 +5435,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_Dianne),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JANI] =
@@ -5031,6 +5448,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_Jani),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LAO_1] =
@@ -5043,6 +5461,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_Lao1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LUNG] =
@@ -5055,6 +5474,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_Lung),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LAO_2] =
@@ -5067,6 +5487,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_Lao2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LAO_3] =
@@ -5079,6 +5500,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_Lao3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LAO_4] =
@@ -5091,6 +5513,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_Lao4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LAO_5] =
@@ -5103,6 +5526,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_Lao5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JOCELYN] =
@@ -5115,6 +5539,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jocelyn),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LAURA] =
@@ -5127,6 +5552,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Laura),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CYNDY_1] =
@@ -5139,6 +5565,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cyndy1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CORA] =
@@ -5151,6 +5578,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cora),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PAULA] =
@@ -5163,6 +5591,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Paula),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CYNDY_2] =
@@ -5175,6 +5604,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cyndy2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CYNDY_3] =
@@ -5187,6 +5617,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cyndy3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CYNDY_4] =
@@ -5199,6 +5630,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cyndy4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CYNDY_5] =
@@ -5211,6 +5643,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cyndy5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MADELINE_1] =
@@ -5223,6 +5656,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Madeline1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CLARISSA] =
@@ -5235,6 +5669,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Clarissa),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANGELICA] =
@@ -5247,6 +5682,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Angelica),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MADELINE_2] =
@@ -5259,6 +5695,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Madeline2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MADELINE_3] =
@@ -5271,6 +5708,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Madeline3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MADELINE_4] =
@@ -5283,6 +5721,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Madeline4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MADELINE_5] =
@@ -5295,6 +5734,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Madeline5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BEVERLY] =
@@ -5307,6 +5747,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Beverly),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_IMANI] =
@@ -5319,6 +5760,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Imani),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KYLA] =
@@ -5331,6 +5773,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Kyla),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DENISE] =
@@ -5343,6 +5786,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Denise),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BETH] =
@@ -5355,6 +5799,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Beth),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TARA] =
@@ -5367,6 +5812,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Tara),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MISSY] =
@@ -5379,6 +5825,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Missy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ALICE] =
@@ -5391,6 +5838,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Alice),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JENNY_1] =
@@ -5403,6 +5851,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jenny1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRACE] =
@@ -5415,6 +5864,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Grace),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TANYA] =
@@ -5427,6 +5877,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Tanya),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SHARON] =
@@ -5439,6 +5890,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Sharon),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NIKKI] =
@@ -5451,6 +5903,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nikki),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDA] =
@@ -5463,6 +5916,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Brenda),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KATIE] =
@@ -5475,6 +5929,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Katie),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SUSIE] =
@@ -5487,6 +5942,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Susie),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KARA] =
@@ -5499,6 +5955,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Kara),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DANA] =
@@ -5511,6 +5968,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dana),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIENNA] =
@@ -5523,6 +5981,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Sienna),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DEBRA] =
@@ -5535,6 +5994,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Debra),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LINDA] =
@@ -5547,6 +6007,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Linda),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NOAH] =
@@ -5559,6 +6020,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Noah),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LAUREL] =
@@ -5571,6 +6033,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Laurel),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CARLEE] =
@@ -5583,6 +6046,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Carlee),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JENNY_2] =
@@ -5595,6 +6059,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jenny2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JENNY_3] =
@@ -5607,6 +6072,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jenny3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JENNY_4] =
@@ -5619,6 +6085,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jenny4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JENNY_5] =
@@ -5631,6 +6098,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jenny5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HEIDI] =
@@ -5643,6 +6111,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Heidi),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BECKY] =
@@ -5655,6 +6124,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Becky),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CAROL] =
@@ -5667,6 +6137,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Carol),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NANCY] =
@@ -5679,6 +6150,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nancy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARTHA] =
@@ -5691,6 +6163,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Martha),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DIANA_1] =
@@ -5703,6 +6176,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Diana1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CEDRIC] =
@@ -5715,6 +6189,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cedric),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_IRENE] =
@@ -5727,6 +6202,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Irene),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DIANA_2] =
@@ -5739,6 +6215,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Diana2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DIANA_3] =
@@ -5751,6 +6228,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Diana3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DIANA_4] =
@@ -5763,6 +6241,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Diana4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DIANA_5] =
@@ -5775,6 +6254,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Diana5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_1] =
@@ -5787,6 +6267,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_AmyAndLiv1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_2] =
@@ -5799,6 +6280,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_AmyAndLiv2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GINA_AND_MIA_1] =
@@ -5811,6 +6293,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GinaAndMia1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MIU_AND_YUKI] =
@@ -5823,6 +6306,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_MiuAndYuki),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAGMA_GRUNT_METEOR_FALLS] =
@@ -5835,6 +6319,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_MagmaGruntMeteorFalls),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_COURTNEY_METEOR_FALLS] =
@@ -5847,6 +6332,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .party = TRAINER_PARTY(sParty_CourtneyMeteorFalls),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_4] =
@@ -5859,6 +6345,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_AmyAndLiv4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_5] =
@@ -5871,6 +6358,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_AmyAndLiv5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_6] =
@@ -5883,6 +6371,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_AmyAndLiv6),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HUEY] =
@@ -5895,6 +6384,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Huey),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_EDMOND] =
@@ -5907,6 +6397,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Edmond),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ERNEST_1] =
@@ -5919,6 +6410,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ernest1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DWAYNE] =
@@ -5931,6 +6423,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dwayne),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PHILLIP] =
@@ -5943,6 +6436,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Phillip),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LEONARD] =
@@ -5955,6 +6449,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Leonard),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DUNCAN] =
@@ -5967,6 +6462,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Duncan),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ERNEST_2] =
@@ -5979,6 +6475,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ernest2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ERNEST_3] =
@@ -5991,6 +6488,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ernest3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ERNEST_4] =
@@ -6003,6 +6501,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ernest4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ERNEST_5] =
@@ -6015,6 +6514,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ernest5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ELI] =
@@ -6027,6 +6527,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Eli),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANNIKA] =
@@ -6039,6 +6540,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Annika),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAZMYN] =
@@ -6051,6 +6553,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Jazmyn),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JONAS] =
@@ -6063,6 +6566,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Jonas),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KAYLEY] =
@@ -6075,6 +6579,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Kayley),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AURON] =
@@ -6087,6 +6592,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Auron),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KELVIN] =
@@ -6099,6 +6605,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Kelvin),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARLEY] =
@@ -6111,6 +6618,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Marley),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_REYNA] =
@@ -6123,6 +6631,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Reyna),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HUDSON] =
@@ -6135,6 +6644,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Hudson),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CONOR] =
@@ -6147,6 +6657,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Conor),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_EDWIN_1] =
@@ -6159,6 +6670,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Edwin1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HECTOR] =
@@ -6171,6 +6683,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Hector),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TABITHA_MOSSDEEP] =
@@ -6183,6 +6696,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_TabithaMossdeep),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_EDWIN_2] =
@@ -6195,6 +6709,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Edwin2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_EDWIN_3] =
@@ -6207,6 +6722,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Edwin3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_EDWIN_4] =
@@ -6219,6 +6735,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Edwin4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_EDWIN_5] =
@@ -6231,6 +6748,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Edwin5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WALLY_VR_1] =
@@ -6244,6 +6762,7 @@
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING | AI_FLAG_CONSERVATIVE,
         .party = TRAINER_PARTY(sParty_WallyVR1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_103_MUDKIP] =
@@ -6256,6 +6775,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_BrendanRoute103Mudkip),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_110_MUDKIP] =
@@ -6268,6 +6788,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_BrendanRoute110Mudkip),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_119_MUDKIP] =
@@ -6280,6 +6801,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_BrendanRoute119Mudkip),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_103_TREECKO] =
@@ -6292,6 +6814,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
         .party = TRAINER_PARTY(sParty_BrendanRoute103Treecko),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_110_TREECKO] =
@@ -6304,6 +6827,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_BrendanRoute110Treecko),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_119_TREECKO] =
@@ -6316,6 +6840,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_BrendanRoute119Treecko),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_103_TORCHIC] =
@@ -6328,6 +6853,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_BrendanRoute103Torchic),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_110_TORCHIC] =
@@ -6340,6 +6866,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_BrendanRoute110Torchic),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_119_TORCHIC] =
@@ -6352,6 +6879,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_BrendanRoute119Torchic),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_103_MUDKIP] =
@@ -6364,6 +6892,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_MayRoute103Mudkip),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_110_MUDKIP] =
@@ -6376,6 +6905,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_MayRoute110Mudkip),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_119_MUDKIP] =
@@ -6388,6 +6918,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_MayRoute119Mudkip),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_103_TREECKO] =
@@ -6400,6 +6931,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_MayRoute103Treecko),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_110_TREECKO] =
@@ -6412,6 +6944,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_MayRoute110Treecko),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_119_TREECKO] =
@@ -6424,6 +6957,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_MayRoute119Treecko),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_103_TORCHIC] =
@@ -6436,6 +6970,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_MayRoute103Torchic),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_110_TORCHIC] =
@@ -6448,6 +6983,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_MayRoute110Torchic),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_119_TORCHIC] =
@@ -6460,6 +6996,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_MayRoute119Torchic),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISAAC_1] =
@@ -6472,6 +7009,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isaac1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DAVIS] =
@@ -6484,6 +7022,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Davis),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MITCHELL] =
@@ -6496,6 +7035,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Mitchell),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISAAC_2] =
@@ -6508,6 +7048,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isaac2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISAAC_3] =
@@ -6520,6 +7061,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isaac3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISAAC_4] =
@@ -6532,6 +7074,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isaac4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISAAC_5] =
@@ -6544,6 +7087,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isaac5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LYDIA_1] =
@@ -6556,6 +7100,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lydia1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HALLE] =
@@ -6568,6 +7113,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Halle),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GARRISON] =
@@ -6580,6 +7126,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Garrison),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LYDIA_2] =
@@ -6592,6 +7139,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lydia2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LYDIA_3] =
@@ -6604,6 +7152,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lydia3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LYDIA_4] =
@@ -6616,6 +7165,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lydia4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LYDIA_5] =
@@ -6628,6 +7178,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lydia5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JACKSON_1] =
@@ -6640,6 +7191,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Jackson1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LORENZO] =
@@ -6652,6 +7204,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Lorenzo),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SEBASTIAN] =
@@ -6664,6 +7217,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Sebastian),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JACKSON_2] =
@@ -6676,6 +7230,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
         .party = TRAINER_PARTY(sParty_Jackson2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JACKSON_3] =
@@ -6688,6 +7243,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Jackson3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JACKSON_4] =
@@ -6700,6 +7256,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
         .party = TRAINER_PARTY(sParty_Jackson4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JACKSON_5] =
@@ -6712,6 +7269,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Jackson5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CATHERINE_1] =
@@ -6724,6 +7282,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
         .party = TRAINER_PARTY(sParty_Catherine1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JENNA] =
@@ -6736,6 +7295,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
         .party = TRAINER_PARTY(sParty_Jenna),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SOPHIA] =
@@ -6748,6 +7308,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Sophia),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CATHERINE_2] =
@@ -6760,6 +7321,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
         .party = TRAINER_PARTY(sParty_Catherine2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CATHERINE_3] =
@@ -6772,6 +7334,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Catherine3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CATHERINE_4] =
@@ -6784,6 +7347,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
         .party = TRAINER_PARTY(sParty_Catherine4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CATHERINE_5] =
@@ -6796,6 +7360,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Catherine5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JULIO] =
@@ -6808,6 +7373,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Julio),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SEAFLOOR_CAVERN_5] =
@@ -6820,6 +7386,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntSeafloorCavern5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JOSEF] =
@@ -6832,6 +7399,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Josef),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_PYRE_4] =
@@ -6844,6 +7412,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMtPyre4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_JAGGED_PASS] =
@@ -6856,6 +7425,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntJaggedPass),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARC] =
@@ -6868,6 +7438,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Marc),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDEN] =
@@ -6880,6 +7451,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Brenden),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LILITH] =
@@ -6892,6 +7464,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lilith),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CRISTIAN] =
@@ -6904,6 +7477,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cristian),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SYLVIA] =
@@ -6916,6 +7490,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Sylvia),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LEONARDO] =
@@ -6928,6 +7503,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Leonardo),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ATHENA] =
@@ -6940,6 +7516,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Athena),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HARRISON] =
@@ -6952,6 +7529,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Harrison),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_CHIMNEY_2] =
@@ -6964,6 +7542,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMtChimney2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CLARENCE] =
@@ -6976,6 +7555,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Clarence),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CANDY] =
@@ -6988,6 +7568,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Candy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NATE] =
@@ -7000,6 +7581,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nate),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KATHLEEN] =
@@ -7012,6 +7594,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Kathleen),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CLIFFORD] =
@@ -7024,6 +7607,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Clifford),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NICHOLAS] =
@@ -7036,6 +7620,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Nicholas),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_3] =
@@ -7048,6 +7633,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntSpaceCenter3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_4] =
@@ -7060,6 +7646,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntSpaceCenter4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_5] =
@@ -7072,6 +7659,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntSpaceCenter5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_6] =
@@ -7084,6 +7672,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntSpaceCenter6),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_COURTNEY_MOSSDEEP] =
@@ -7096,6 +7685,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_CourtneyMossdeep),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MACEY] =
@@ -7108,6 +7698,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Macey),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_RUSTBORO_TREECKO] =
@@ -7120,6 +7711,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_BrendanRustboroTreecko),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_RUSTBORO_MUDKIP] =
@@ -7132,6 +7724,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_BrendanRustboroMudkip),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PAXTON] =
@@ -7144,6 +7737,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Paxton),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISABELLA] =
@@ -7156,6 +7750,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isabella),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_5] =
@@ -7168,6 +7763,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntWeatherInst5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TABITHA_MT_CHIMNEY] =
@@ -7180,6 +7776,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_TabithaMtChimney),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JONATHAN] =
@@ -7192,6 +7789,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
         .party = TRAINER_PARTY(sParty_Jonathan),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_RUSTBORO_TORCHIC] =
@@ -7204,6 +7802,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_BrendanRustboroTorchic),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_RUSTBORO_MUDKIP] =
@@ -7216,6 +7815,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
         .party = TRAINER_PARTY(sParty_MayRustboroMudkip),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAXIE_MAGMA_HIDEOUT] =
@@ -7228,6 +7828,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_MaxieMagmaHideout),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAXIE_MT_CHIMNEY] =
@@ -7240,6 +7841,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/,
         .party = TRAINER_PARTY(sParty_MaxieMtChimney),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TIANA] =
@@ -7252,6 +7854,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Tiana),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HALEY_1] =
@@ -7264,6 +7867,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Haley1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JANICE] =
@@ -7276,6 +7880,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Janice),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VIVI] =
@@ -7288,6 +7893,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Vivi),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HALEY_2] =
@@ -7300,6 +7906,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Haley2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HALEY_3] =
@@ -7312,6 +7919,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Haley3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HALEY_4] =
@@ -7324,6 +7932,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Haley4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HALEY_5] =
@@ -7336,6 +7945,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Haley5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SALLY] =
@@ -7348,6 +7958,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Sally),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROBIN] =
@@ -7360,6 +7971,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Robin),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANDREA] =
@@ -7372,6 +7984,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Andrea),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CRISSY] =
@@ -7384,6 +7997,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Crissy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RICK] =
@@ -7396,6 +8010,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Rick),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LYLE] =
@@ -7408,6 +8023,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lyle),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JOSE] =
@@ -7420,6 +8036,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jose),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DOUG] =
@@ -7432,6 +8049,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Doug),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GREG] =
@@ -7444,6 +8062,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Greg),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KENT] =
@@ -7456,6 +8075,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Kent),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAMES_1] =
@@ -7468,6 +8088,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_James1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAMES_2] =
@@ -7480,6 +8101,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_James2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAMES_3] =
@@ -7492,6 +8114,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_James3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAMES_4] =
@@ -7504,6 +8127,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_James4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAMES_5] =
@@ -7516,6 +8140,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_James5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRICE] =
@@ -7528,6 +8153,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Brice),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TRENT_1] =
@@ -7540,6 +8166,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Trent1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LENNY] =
@@ -7552,6 +8179,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lenny),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LUCAS_1] =
@@ -7564,6 +8192,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lucas1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ALAN] =
@@ -7576,6 +8205,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Alan),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CLARK] =
@@ -7588,6 +8218,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Clark),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ERIC] =
@@ -7600,6 +8231,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Eric),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GERARDO] =
@@ -7612,6 +8244,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Gerardo),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AURELIA] =
@@ -7624,6 +8257,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Aurelia),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MIKE_2] =
@@ -7636,6 +8270,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Mike2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TRENT_2] =
@@ -7648,6 +8283,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Trent2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TRENT_3] =
@@ -7660,6 +8296,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Trent3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TRENT_4] =
@@ -7672,6 +8309,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Trent4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TRENT_5] =
@@ -7684,6 +8322,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Trent5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DEZ_AND_LUKE] =
@@ -7696,6 +8335,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_DezAndLuke),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LEA_AND_JED] =
@@ -7708,6 +8348,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_LeaAndJed),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_1] =
@@ -7720,6 +8361,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_KiraAndDan1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_2] =
@@ -7732,6 +8374,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_KiraAndDan2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_3] =
@@ -7744,6 +8387,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_KiraAndDan3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_4] =
@@ -7756,6 +8400,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_KiraAndDan4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_5] =
@@ -7768,6 +8413,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_KiraAndDan5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JOHANNA] =
@@ -7780,6 +8426,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Johanna),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GERALD] =
@@ -7792,6 +8439,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Gerald),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VIVIAN] =
@@ -7804,6 +8452,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Vivian),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DANIELLE] =
@@ -7816,6 +8465,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Danielle),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HIDEO] =
@@ -7828,6 +8478,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .party = TRAINER_PARTY(sParty_Hideo),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KEIGO] =
@@ -7840,6 +8491,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .party = TRAINER_PARTY(sParty_Keigo),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RILEY] =
@@ -7852,6 +8504,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .party = TRAINER_PARTY(sParty_Riley),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FLINT] =
@@ -7864,6 +8517,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Flint),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ASHLEY] =
@@ -7876,6 +8530,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Ashley),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WALLY_MAUVILLE] =
@@ -7888,6 +8543,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_WallyMauville),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WALLY_VR_2] =
@@ -7901,6 +8557,7 @@
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_WallyVR2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WALLY_VR_3] =
@@ -7914,6 +8571,7 @@
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_WallyVR3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WALLY_VR_4] =
@@ -7927,6 +8585,7 @@
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_WallyVR4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WALLY_VR_5] =
@@ -7940,6 +8599,7 @@
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_WallyVR5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_LILYCOVE_MUDKIP] =
@@ -7952,6 +8612,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING ,
         .party = TRAINER_PARTY(sParty_BrendanLilycoveMudkip),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_LILYCOVE_TREECKO] =
@@ -7964,6 +8625,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING ,
         .party = TRAINER_PARTY(sParty_BrendanLilycoveTreecko),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_LILYCOVE_TORCHIC] =
@@ -7976,6 +8638,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING ,
         .party = TRAINER_PARTY(sParty_BrendanLilycoveTorchic),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_LILYCOVE_MUDKIP] =
@@ -7988,6 +8651,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING ,
         .party = TRAINER_PARTY(sParty_MayLilycoveMudkip),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_LILYCOVE_TREECKO] =
@@ -8000,6 +8664,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING ,
         .party = TRAINER_PARTY(sParty_MayLilycoveTreecko),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_LILYCOVE_TORCHIC] =
@@ -8012,6 +8677,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING ,
         .party = TRAINER_PARTY(sParty_MayLilycoveTorchic),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JONAH] =
@@ -8024,6 +8690,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jonah),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HENRY] =
@@ -8036,6 +8703,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Henry),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROGER] =
@@ -8048,6 +8716,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Roger),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ALEXA] =
@@ -8060,6 +8729,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Alexa),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RUBEN] =
@@ -8072,6 +8742,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Ruben),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KOJI_1] =
@@ -8084,6 +8755,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Koji1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WAYNE] =
@@ -8096,6 +8768,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Wayne),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AIDAN] =
@@ -8108,6 +8781,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Aidan),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_REED] =
@@ -8120,6 +8794,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Reed),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TISHA] =
@@ -8132,6 +8807,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Tisha),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TORI_AND_TIA] =
@@ -8144,6 +8820,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_ToriAndTia),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KIM_AND_IRIS] =
@@ -8156,6 +8833,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_KimAndIris),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TYRA_AND_IVY] =
@@ -8168,6 +8846,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_TyraAndIvy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MEL_AND_PAUL] =
@@ -8180,6 +8859,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_MelAndPaul),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_1] =
@@ -8192,6 +8872,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_JohnAndJay1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_2] =
@@ -8204,6 +8885,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_JohnAndJay2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_3] =
@@ -8216,6 +8898,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_JohnAndJay3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_4] =
@@ -8228,6 +8911,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
         .party = TRAINER_PARTY(sParty_JohnAndJay4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_5] =
@@ -8240,6 +8924,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_JohnAndJay5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RELI_AND_IAN] =
@@ -8252,6 +8937,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_ReliAndIan),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_1] =
@@ -8264,6 +8950,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_LilaAndRoy1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_2] =
@@ -8276,6 +8963,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_LilaAndRoy2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_3] =
@@ -8288,6 +8976,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_LilaAndRoy3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_4] =
@@ -8300,6 +8989,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_LilaAndRoy4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_5] =
@@ -8312,6 +9002,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_LilaAndRoy5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LISA_AND_RAY] =
@@ -8324,6 +9015,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_LisaAndRay),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CHRIS] =
@@ -8336,6 +9028,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Chris),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DAWSON] =
@@ -8348,6 +9041,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dawson),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SARAH] =
@@ -8360,6 +9054,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Sarah),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DARIAN] =
@@ -8372,6 +9067,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Darian),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HAILEY] =
@@ -8384,6 +9080,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Hailey),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CHANDLER] =
@@ -8396,6 +9093,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Chandler),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KALEB] =
@@ -8408,6 +9106,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Kaleb),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JOSEPH] =
@@ -8420,6 +9119,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Joseph),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ALYSSA] =
@@ -8432,6 +9132,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Alyssa),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARCOS] =
@@ -8444,6 +9145,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Marcos),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RHETT] =
@@ -8456,6 +9158,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Rhett),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TYRON] =
@@ -8468,6 +9171,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Tyron),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CELINA] =
@@ -8480,6 +9184,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Celina),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BIANCA] =
@@ -8492,6 +9197,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Bianca),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HAYDEN] =
@@ -8504,6 +9210,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Hayden),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SOPHIE] =
@@ -8516,6 +9223,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Sophie),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_COBY] =
@@ -8528,6 +9236,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Coby),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LAWRENCE] =
@@ -8540,6 +9249,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lawrence),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WYATT] =
@@ -8552,6 +9262,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Wyatt),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANGELINA] =
@@ -8564,6 +9275,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Angelina),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KAI] =
@@ -8576,6 +9288,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Kai),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CHARLOTTE] =
@@ -8588,6 +9301,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Charlotte),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DEANDRE] =
@@ -8600,6 +9314,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Deandre),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_1] =
@@ -8612,6 +9327,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_2] =
@@ -8624,6 +9340,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_3] =
@@ -8636,6 +9353,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_4] =
@@ -8648,6 +9366,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_5] =
@@ -8660,6 +9379,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_6] =
@@ -8672,6 +9392,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout6),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_7] =
@@ -8684,6 +9405,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout7),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_8] =
@@ -8696,6 +9418,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout8),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_9] =
@@ -8708,6 +9431,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout9),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_10] =
@@ -8720,6 +9444,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout10),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_11] =
@@ -8732,6 +9457,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout11),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_12] =
@@ -8744,6 +9470,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout12),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_13] =
@@ -8756,6 +9483,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout13),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_14] =
@@ -8768,6 +9496,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout14),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_15] =
@@ -8780,6 +9509,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout15),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_16] =
@@ -8792,6 +9522,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GruntMagmaHideout16),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TABITHA_MAGMA_HIDEOUT] =
@@ -8804,6 +9535,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/,
         .party = TRAINER_PARTY(sParty_TabithaMagmaHideout),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DARCY] =
@@ -8816,6 +9548,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Darcy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAXIE_MOSSDEEP] =
@@ -8828,6 +9561,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags =  AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_MaxieMossdeep),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PETE] =
@@ -8840,6 +9574,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Pete),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ISABELLE] =
@@ -8852,6 +9587,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Isabelle),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANDRES_1] =
@@ -8864,6 +9600,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Andres1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JOSUE] =
@@ -8876,6 +9613,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Josue),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CAMRON] =
@@ -8888,6 +9626,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Camron),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CORY_1] =
@@ -8900,6 +9639,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cory1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CAROLINA] =
@@ -8912,6 +9652,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Carolina),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ELIJAH] =
@@ -8924,6 +9665,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Elijah),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CELIA] =
@@ -8936,6 +9678,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Celia),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRYAN] =
@@ -8948,6 +9691,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Bryan),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRANDEN] =
@@ -8960,6 +9704,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Branden),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRYANT] =
@@ -8972,6 +9717,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Bryant),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SHAYLA] =
@@ -8984,6 +9730,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Shayla),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KYRA] =
@@ -8996,6 +9743,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Kyra),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAIDEN] =
@@ -9008,6 +9756,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Jaiden),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ALIX] =
@@ -9020,6 +9769,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Alix),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HELENE] =
@@ -9032,6 +9782,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Helene),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARLENE] =
@@ -9044,6 +9795,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Marlene),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DEVAN] =
@@ -9056,6 +9808,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Devan),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JOHNSON] =
@@ -9068,6 +9821,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Johnson),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MELINA] =
@@ -9080,6 +9834,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Melina),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRANDI] =
@@ -9092,6 +9847,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Brandi),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AISHA] =
@@ -9104,6 +9860,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Aisha),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAKAYLA] =
@@ -9116,6 +9873,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Makayla),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FABIAN] =
@@ -9128,6 +9886,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Fabian),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DAYTON] =
@@ -9140,6 +9899,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Dayton),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RACHEL] =
@@ -9152,6 +9912,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Rachel),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LEONEL] =
@@ -9164,6 +9925,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Leonel),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CALLIE] =
@@ -9176,6 +9938,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Callie),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CALE] =
@@ -9188,6 +9951,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cale),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MYLES] =
@@ -9200,6 +9964,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Myles),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PAT] =
@@ -9212,6 +9977,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Pat),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CRISTIN_1] =
@@ -9224,6 +9990,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Cristin1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_RUSTBORO_TREECKO] =
@@ -9236,6 +10003,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_MayRustboroTreecko),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_RUSTBORO_TORCHIC] =
@@ -9248,6 +10016,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_MayRustboroTorchic),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROXANNE_2] =
@@ -9260,6 +10029,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Roxanne2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROXANNE_3] =
@@ -9272,6 +10042,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Roxanne3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROXANNE_4] =
@@ -9284,6 +10055,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Roxanne4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROXANNE_5] =
@@ -9296,6 +10068,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Roxanne5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRAWLY_2] =
@@ -9308,6 +10081,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Brawly2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRAWLY_3] =
@@ -9320,6 +10094,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Brawly3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRAWLY_4] =
@@ -9332,6 +10107,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Brawly4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRAWLY_5] =
@@ -9344,6 +10120,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Brawly5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WATTSON_2] =
@@ -9356,6 +10133,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Wattson2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WATTSON_3] =
@@ -9368,6 +10146,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Wattson3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WATTSON_4] =
@@ -9380,6 +10159,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Wattson4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WATTSON_5] =
@@ -9392,6 +10172,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Wattson5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FLANNERY_2] =
@@ -9404,6 +10185,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Flannery2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FLANNERY_3] =
@@ -9416,6 +10198,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Flannery3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FLANNERY_4] =
@@ -9428,6 +10211,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Flannery4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FLANNERY_5] =
@@ -9440,6 +10224,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Flannery5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NORMAN_2] =
@@ -9452,6 +10237,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Norman2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NORMAN_3] =
@@ -9464,6 +10250,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Norman3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NORMAN_4] =
@@ -9476,6 +10263,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Norman4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NORMAN_5] =
@@ -9488,6 +10276,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Norman5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WINONA_2] =
@@ -9500,6 +10289,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
         .party = TRAINER_PARTY(sParty_Winona2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WINONA_3] =
@@ -9512,6 +10302,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
         .party = TRAINER_PARTY(sParty_Winona3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WINONA_4] =
@@ -9524,6 +10315,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
         .party = TRAINER_PARTY(sParty_Winona4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WINONA_5] =
@@ -9536,6 +10328,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
         .party = TRAINER_PARTY(sParty_Winona5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_2] =
@@ -9548,6 +10341,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_TateAndLiza2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_3] =
@@ -9560,6 +10354,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_TateAndLiza3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_4] =
@@ -9572,6 +10367,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_TateAndLiza4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_5] =
@@ -9584,6 +10380,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_TateAndLiza5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JUAN_2] =
@@ -9596,6 +10393,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Juan2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JUAN_3] =
@@ -9608,6 +10406,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Juan3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JUAN_4] =
@@ -9620,6 +10419,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Juan4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JUAN_5] =
@@ -9632,6 +10432,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Juan5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANGELO] =
@@ -9644,6 +10445,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Angelo),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DARIUS] =
@@ -9656,6 +10458,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Darius),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_STEVEN] =
@@ -9669,6 +10472,7 @@
         .mugshotColor = MUGSHOT_COLOR_STEVEN,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Steven),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANABEL] =
@@ -9681,6 +10485,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Anabel),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TUCKER] =
@@ -9693,6 +10498,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Tucker),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SPENSER] =
@@ -9705,6 +10511,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Spenser),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRETA] =
@@ -9717,6 +10524,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Greta),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_NOLAND] =
@@ -9729,6 +10537,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Noland),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LUCY] =
@@ -9741,6 +10550,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Lucy),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRANDON] =
@@ -9753,6 +10563,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Brandon),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANDRES_2] =
@@ -9765,6 +10576,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Andres2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANDRES_3] =
@@ -9777,6 +10589,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Andres3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANDRES_4] =
@@ -9789,6 +10602,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Andres4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ANDRES_5] =
@@ -9801,6 +10615,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Andres5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CORY_2] =
@@ -9813,6 +10628,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cory2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CORY_3] =
@@ -9825,6 +10641,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cory3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CORY_4] =
@@ -9837,6 +10654,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cory4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CORY_5] =
@@ -9849,6 +10667,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Cory5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PABLO_2] =
@@ -9861,6 +10680,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Pablo2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PABLO_3] =
@@ -9873,6 +10693,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Pablo3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PABLO_4] =
@@ -9885,6 +10706,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Pablo4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_PABLO_5] =
@@ -9897,6 +10719,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Pablo5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KOJI_2] =
@@ -9909,6 +10732,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Koji2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KOJI_3] =
@@ -9921,6 +10745,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Koji3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KOJI_4] =
@@ -9933,6 +10758,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Koji4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KOJI_5] =
@@ -9945,6 +10771,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Koji5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CRISTIN_2] =
@@ -9957,6 +10784,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Cristin2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CRISTIN_3] =
@@ -9969,6 +10797,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Cristin3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CRISTIN_4] =
@@ -9981,6 +10810,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Cristin4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CRISTIN_5] =
@@ -9993,6 +10823,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Cristin5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FERNANDO_2] =
@@ -10005,6 +10836,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Fernando2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FERNANDO_3] =
@@ -10017,6 +10849,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Fernando3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FERNANDO_4] =
@@ -10029,6 +10862,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Fernando4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FERNANDO_5] =
@@ -10041,6 +10875,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Fernando5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SAWYER_2] =
@@ -10053,6 +10888,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Sawyer2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SAWYER_3] =
@@ -10065,6 +10901,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Sawyer3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SAWYER_4] =
@@ -10077,6 +10914,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Sawyer4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SAWYER_5] =
@@ -10089,6 +10927,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Sawyer5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_2] =
@@ -10101,6 +10940,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Gabrielle2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_3] =
@@ -10113,6 +10953,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Gabrielle3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_4] =
@@ -10125,6 +10966,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Gabrielle4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_5] =
@@ -10137,6 +10979,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Gabrielle5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_THALIA_2] =
@@ -10149,6 +10992,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Thalia2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_THALIA_3] =
@@ -10161,6 +11005,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Thalia3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_THALIA_4] =
@@ -10173,6 +11018,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Thalia4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_THALIA_5] =
@@ -10185,6 +11031,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Thalia5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARIELA] =
@@ -10197,6 +11044,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_Mariela),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ALVARO] =
@@ -10209,6 +11057,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_Alvaro),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_EVERETT] =
@@ -10221,6 +11070,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_Everett),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RED] =
@@ -10233,6 +11083,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_Red),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LEAF] =
@@ -10245,6 +11096,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_Leaf),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_PLACEHOLDER] =
@@ -10257,6 +11109,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_BrendanLinkPlaceholder),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_PLACEHOLDER] =
@@ -10269,6 +11122,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_MayLinkPlaceholder),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_DEVONCORP_1] =
@@ -10281,6 +11135,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_RocketGruntDevoncorp1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_DEVONCORP_2] =
@@ -10293,6 +11148,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_RocketGruntDevoncorp2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_DEVONCORP_3] =
@@ -10305,6 +11161,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_RocketGruntDevoncorp3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_DEVONCORP_4] =
@@ -10317,6 +11174,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_RocketGruntDevoncorp4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_DEVONCORP_5] =
@@ -10329,6 +11187,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_RocketGruntDevoncorp5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GIOVANNI_DEVONCORP] =
@@ -10341,6 +11200,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GiovanniDevoncorp),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAGMA_GRUNT_F_GRANITE_CAVE] =
@@ -10353,6 +11213,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_MagmaGruntFGraniteCave),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAGMA_GRUNT_M_GRANITE_CAVE] =
@@ -10365,6 +11226,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_MagmaGruntMGraniteCave),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WALLY_PETALBURG] =
@@ -10377,6 +11239,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_CONSERVATIVE,
         .party = TRAINER_PARTY(sParty_WallyPetalburg),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_SKY_PILLAR_MUDKIP] =
@@ -10389,6 +11252,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING ,
         .party = TRAINER_PARTY(sParty_BrendanSkyPillarMudkip),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_SKY_PILLAR_TREECKO] =
@@ -10401,6 +11265,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING ,
         .party = TRAINER_PARTY(sParty_BrendanSkyPillarTreecko),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_SKY_PILLAR_TORCHIC] =
@@ -10413,6 +11278,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING ,
         .party = TRAINER_PARTY(sParty_BrendanSkyPillarTorchic),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_SKY_PILLAR_MUDKIP] =
@@ -10425,6 +11291,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING ,
         .party = TRAINER_PARTY(sParty_MaySkyPillarMudkip),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_SKY_PILLAR_TREECKO] =
@@ -10437,6 +11304,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING ,
         .party = TRAINER_PARTY(sParty_MaySkyPillarTreecko),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAY_SKY_PILLAR_TORCHIC] =
@@ -10449,6 +11317,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING ,
         .party = TRAINER_PARTY(sParty_MaySkyPillarTorchic),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAKSON_1] =
@@ -10461,6 +11330,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Jakson1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAKSON_2] =
@@ -10473,6 +11343,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Jakson2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAKSON_3] =
@@ -10485,6 +11356,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .party = TRAINER_PARTY(sParty_Jakson3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAKSON_4] =
@@ -10497,6 +11369,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Jakson4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAKSON_5] =
@@ -10510,6 +11383,7 @@
         .mugshotColor = MUGSHOT_COLOR_JAKSON,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING/* | AI_FLAG_ACE_POKEMON*/,
         .party = TRAINER_PARTY(sParty_Jakson5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HARPER_1] =
@@ -10522,6 +11396,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Harper1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HARPER_2] =
@@ -10534,6 +11409,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Harper2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HARPER_3] =
@@ -10546,6 +11422,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .party = TRAINER_PARTY(sParty_Harper3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HARPER_4] =
@@ -10558,6 +11435,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Harper4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HARPER_5] =
@@ -10571,6 +11449,7 @@
         .mugshotColor = MUGSHOT_COLOR_HARPER,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING/* | AI_FLAG_ACE_POKEMON*/,
         .party = TRAINER_PARTY(sParty_Harper5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_REDD_1] =
@@ -10583,6 +11462,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Redd1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_REDD_2] =
@@ -10595,6 +11475,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Redd2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_REDD_3] =
@@ -10607,6 +11488,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .party = TRAINER_PARTY(sParty_Redd3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_REDD_4] =
@@ -10619,6 +11501,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Redd4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_REDD_5] =
@@ -10632,6 +11515,7 @@
         .mugshotColor = MUGSHOT_COLOR_REDD,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING/* | AI_FLAG_ACE_POKEMON*/,
         .party = TRAINER_PARTY(sParty_Redd5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SAKURA_1] =
@@ -10644,6 +11528,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Sakura1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SAKURA_2] =
@@ -10656,6 +11541,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Sakura2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SAKURA_3] =
@@ -10668,6 +11554,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .party = TRAINER_PARTY(sParty_Sakura3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SAKURA_4] =
@@ -10680,6 +11567,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Sakura4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SAKURA_5] =
@@ -10693,6 +11581,7 @@
         .mugshotColor = MUGSHOT_COLOR_SAKURA,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING/* | AI_FLAG_ACE_POKEMON*/,
         .party = TRAINER_PARTY(sParty_Sakura5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BARON_1] =
@@ -10705,6 +11594,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Baron1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BARON_2] =
@@ -10717,6 +11607,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Baron2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BARON_3] =
@@ -10729,6 +11620,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .party = TRAINER_PARTY(sParty_Baron3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BARON_4] =
@@ -10741,6 +11633,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Baron4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BARON_5] =
@@ -10754,6 +11647,7 @@
         .mugshotColor = MUGSHOT_COLOR_BARON,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING/* | AI_FLAG_ACE_POKEMON*/,
         .party = TRAINER_PARTY(sParty_Baron5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_REFUGE_1] =
@@ -10766,6 +11660,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_RocketGruntRefuge1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_REFUGE_2] =
@@ -10778,6 +11673,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_RocketGruntRefuge2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_REFUGE_3] =
@@ -10790,6 +11686,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_RocketGruntRefuge3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_REFUGE_4] =
@@ -10802,6 +11699,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_RocketGruntRefuge4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_REFUGE_5] =
@@ -10814,6 +11712,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_RocketGruntRefuge5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_REFUGE_6] =
@@ -10826,6 +11725,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_RocketGruntRefuge6),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_REFUGE_7] =
@@ -10838,6 +11738,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_RocketGruntRefuge7),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_REFUGE_8] =
@@ -10850,6 +11751,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_RocketGruntRefuge8),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_REFUGE_9] =
@@ -10862,6 +11764,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_RocketGruntRefuge9),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ROCKET_GRUNT_REFUGE_10] =
@@ -10874,6 +11777,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_RocketGruntRefuge10),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GIOVANNI_REFUGE] =
@@ -10886,6 +11790,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_GiovanniRefuge),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LEXIE] =
@@ -10898,6 +11803,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Lexie),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BJORN] =
@@ -10910,6 +11816,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Bjorn),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_ROARK] =
@@ -10922,6 +11829,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_RoarkSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_GARDENIA] =
@@ -10934,6 +11842,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_GardeniaSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_MAYLENE] =
@@ -10946,6 +11855,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_MayleneSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_WAKE] =
@@ -10958,6 +11868,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_WakeSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_FANTINA] =
@@ -10970,6 +11881,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_FantinaSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_BYRON] =
@@ -10982,6 +11894,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_ByronSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_CANDICE] =
@@ -10994,6 +11907,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_CandiceSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_VOLKNER] =
@@ -11006,6 +11920,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_VolknerSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_AARON] =
@@ -11018,6 +11933,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_AaronSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_BERTHA] =
@@ -11030,6 +11946,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_BerthaSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_FLINT] =
@@ -11042,6 +11959,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_FlintSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_LUCIAN] =
@@ -11054,6 +11972,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_LucianSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_CYNTHIA] =
@@ -11066,6 +11985,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_IG_1] =
@@ -11078,6 +11998,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_WildPokemonIG1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_IG_2] =
@@ -11090,6 +12011,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_WildPokemonIG2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_IG_3] =
@@ -11102,6 +12024,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_WildPokemonIG3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_IG_4] =
@@ -11114,6 +12037,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_WildPokemonIG4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LEO] =
@@ -11126,6 +12050,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Leo),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ERYK] =
@@ -11138,6 +12063,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Eryk),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SELINA] =
@@ -11150,6 +12076,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Selina),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CODY] =
@@ -11162,6 +12089,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Cody),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DARREN] =
@@ -11174,6 +12102,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Darren),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JAKOB] =
@@ -11186,6 +12115,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Jakob),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MILO] =
@@ -11198,6 +12128,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Milo),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MIRA] =
@@ -11210,6 +12141,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Mira),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DELLA] =
@@ -11222,6 +12154,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Della),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DARIO] =
@@ -11234,6 +12167,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Dario),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_BLANCHED_DEPTHS_1] =
@@ -11246,6 +12180,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_GruntBlanchedDepths1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_BLANCHED_DEPTHS_2] =
@@ -11258,6 +12193,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_GruntBlanchedDepths2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_BLANCHED_DEPTHS_3] =
@@ -11270,6 +12206,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_GruntBlanchedDepths3),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_BLANCHED_DEPTHS_4] =
@@ -11282,6 +12219,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_GruntBlanchedDepths4),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_BLANCHED_DEPTHS_5] =
@@ -11294,6 +12232,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_GruntBlanchedDepths5),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_BLANCHED_DEPTHS_6] =
@@ -11306,6 +12245,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_GruntBlanchedDepths6),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MATT_BLANCHED_DEPTHS] =
@@ -11318,6 +12258,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_MattBlanchedDepths),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MAX] =
@@ -11330,6 +12271,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Max),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WILLOW] =
@@ -11342,6 +12284,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Willow),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VANCE] =
@@ -11354,6 +12297,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Vance),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AVELINE] =
@@ -11366,6 +12310,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Aveline),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SUBMERGED_CAVE] =
@@ -11378,6 +12323,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_GruntSubmergedCave),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ZADEN] =
@@ -11390,6 +12336,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Zaden),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_CORVIN] =
@@ -11402,6 +12349,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Corvin),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SABLE] =
@@ -11414,6 +12362,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Sable),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_RENZO] =
@@ -11426,6 +12375,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Renzo),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_THEO] =
@@ -11438,6 +12388,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Theo),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GAVIN] =
@@ -11450,6 +12401,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Gavin),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FINN] =
@@ -11462,6 +12414,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Finn),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_BRIAN] =
@@ -11474,6 +12427,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Brian),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_OTIS] =
@@ -11486,6 +12440,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Otis),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LARS] =
@@ -11498,6 +12453,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Lars),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_KEELA] =
@@ -11510,6 +12466,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Keela),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_GORDON] =
@@ -11522,6 +12479,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Gordon),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_VERNON] =
@@ -11534,6 +12492,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Vernon),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HUMPHREY] =
@@ -11546,6 +12505,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Humphrey),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_FRED] =
@@ -11558,6 +12518,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Fred),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DIO] =
@@ -11570,6 +12531,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Dio),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_SERAPHINA] =
@@ -11582,6 +12544,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Seraphina),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ELARA] =
@@ -11594,6 +12557,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Elara),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_JON] =
@@ -11606,6 +12570,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Jon),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ELMER] =
@@ -11618,6 +12583,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Elmer),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_DEWEY] =
@@ -11630,6 +12596,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Dewey),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_HAROLD] =
@@ -11642,6 +12609,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Harold),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_AURORA] =
@@ -11654,6 +12622,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Aurora),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TOBY] =
@@ -11666,6 +12635,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Toby),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_MARVIN] =
@@ -11678,6 +12648,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Marvin),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LUTHOR] =
@@ -11690,6 +12661,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Luthor),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_ZED] =
@@ -11702,6 +12674,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Zed),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_TESSA] =
@@ -11714,6 +12687,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Tessa),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_LEX] =
@@ -11726,6 +12700,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_Lex),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_BV_1] =
@@ -11738,6 +12713,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_WildPokemonBV1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_BV_2] =
@@ -11750,6 +12726,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_WildPokemonBV2),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
     [DIFFICULTY_NORMAL][TRAINER_STEVEN_EXP_1] =
@@ -11762,6 +12739,7 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 /*
 
@@ -11775,5 +12753,6 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 */

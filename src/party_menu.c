@@ -1566,23 +1566,22 @@ void Task_HandleChooseMonInput(u8 taskId)
             }
             break;
         case R_BUTTON: // Only used in full-team multis to cycle player/partner parties
-            u8 partyId = GetPartyIdFromBattleSlot((u8)*slotPtr);
-            if ((gBattleTypeFlags & BATTLE_TYPE_MULTI) && partyId >= (PARTY_SIZE / 2))
+            if ((gBattleTypeFlags & BATTLE_TYPE_MULTI) && AreMultiPartiesFullTeams())
             {
-            PlaySE(SE_M_HARDEN);
-            UpdatePartyToFieldOrder();
-
-            if (gPartyMenu.layout == PARTY_LAYOUT_MULTI_FULL)
-                gPartyMenu.layout = PARTY_LAYOUT_MULTI_FULL_PARTNER;
-            else
-                gPartyMenu.layout = PARTY_LAYOUT_MULTI_FULL;
-
-            gPartyMenu.slotId = 0;
-            sPartyMenuInternal->lastSelectedSlot = 0;
-
-            LoadBattlePartyCurrentOrderForLayout();
-            UpdatePartyToBattleOrder();
-            RefreshPartyMenu();
+                PlaySE(SE_M_HARDEN);
+                UpdatePartyToFieldOrder();
+			    
+                if (gPartyMenu.layout == PARTY_LAYOUT_MULTI_FULL)
+                    gPartyMenu.layout = PARTY_LAYOUT_MULTI_FULL_PARTNER;
+                else
+                    gPartyMenu.layout = PARTY_LAYOUT_MULTI_FULL;
+			    
+                gPartyMenu.slotId = 0;
+                sPartyMenuInternal->lastSelectedSlot = 0;
+			    
+                LoadBattlePartyCurrentOrderForLayout();
+                UpdatePartyToBattleOrder();
+                RefreshPartyMenu();
             }
             break;
         }

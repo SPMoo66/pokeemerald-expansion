@@ -85,11 +85,11 @@
 #define FLDEFF_PHOTO_FLASH               80
 #define FLDEFF_OW_ENCOUNTER_SPAWN_ANIM   81
 
-#define FLDEFF_MUSIC_NOTE_ICON           81 // new emote
-#define FLDEFF_SMILE_ICON                82 // new emote
-#define FLDEFF_SWEAT_DROP_ICON           83 // new emote
-#define FLDEFF_TALKING_ICON              84 // new emote
-#define FLDEFF_THINKING_ICON             85 // new emote
+#define FLDEFF_MUSIC_NOTE_ICON           82 // new emote
+#define FLDEFF_SMILE_ICON                83 // new emote
+#define FLDEFF_SWEAT_DROP_ICON           84 // new emote
+#define FLDEFF_TALKING_ICON              85 // new emote
+#define FLDEFF_THINKING_ICON             86 // new emote
 
 #define FLDEFFOBJ_SHADOW_S              0
 #define FLDEFFOBJ_SHADOW_M              1

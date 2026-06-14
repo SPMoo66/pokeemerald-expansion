@@ -424,6 +424,10 @@ gFldEffScript_PhotoFlash::
 	field_eff_callnative FldEff_PhotoFlash
 	field_eff_end
 
+gFieldEffectScript_OWE_SpawnAnim::
+	field_eff_callnative FldEff_OWE_SpawnAnim
+	field_eff_end
+
 gFieldEffectScript_MusicNoteIcon::
 	field_eff_callnative FldEff_MusicNoteIcon
 	field_eff_end
@@ -442,8 +446,4 @@ gFieldEffectScript_TalkingIcon::
 
 gFieldEffectScript_ThinkingIcon::
 	field_eff_callnative FldEff_ThinkingIcon
-	field_eff_end
-
-gFieldEffectScript_OWE_SpawnAnim::
-	field_eff_callnative FldEff_OWE_SpawnAnim
 	field_eff_end

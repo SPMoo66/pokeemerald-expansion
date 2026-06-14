@@ -77,15 +77,18 @@ static void DrawMugshotCore(const struct Mugshot* const mugshot, int x, int y){
         ClearMugshot();
     }
     if (VarGet(VAR_0x8000) == MUGSHOT_TEST) {
-        SetWindowTemplateFields(&t, 1, x, y, mugshot->width/8, mugshot->height/8, MUGSHOT_PALETTE_NUM, mugshot->baseBlock);
+        SetWindowTemplateFields(&t, 1, x, y, mugshot->width/8, mugshot->height/8, 12, mugshot->baseBlock);
     }
     else {
         SetWindowTemplateFields(&t, 0, x, y, mugshot->width/8, mugshot->height/8, MUGSHOT_PALETTE_NUM, mugshot->baseBlock);
     }
     windowId = AddWindow(&t);
     sMugshotWindow = windowId + 1;
-    
-    LoadPalette(mugshot->palette, 16 * MUGSHOT_PALETTE_NUM, 32);
+
+    if (VarGet(VAR_0x8000) == MUGSHOT_TEST)
+        LoadPalette(mugshot->palette, 16 * 12, 32);
+    else
+        LoadPalette(mugshot->palette, 16 * MUGSHOT_PALETTE_NUM, 32);
     CopyToWindowPixelBuffer(windowId, (const void*)mugshot->image, 0, 0);
     PutWindowRectTilemap(windowId, 0, 0, mugshot->width/8, mugshot->height/8);
     CopyWindowToVram(windowId, 3);

@@ -336,21 +336,19 @@ BattleGenesect::
 # 167 "data/maps/AquaHideout_B2F/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 168 "data/maps/AquaHideout_B2F/scripts.pory"
-	waitstate
-# 169 "data/maps/AquaHideout_B2F/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 170 "data/maps/AquaHideout_B2F/scripts.pory"
+# 169 "data/maps/AquaHideout_B2F/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 171 "data/maps/AquaHideout_B2F/scripts.pory"
+# 170 "data/maps/AquaHideout_B2F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleGenesect_2
 BattleGenesect_1:
-# 174 "data/maps/AquaHideout_B2F/scripts.pory"
+# 173 "data/maps/AquaHideout_B2F/scripts.pory"
 	release
 	end
 
 BattleGenesect_2:
-# 172 "data/maps/AquaHideout_B2F/scripts.pory"
+# 171 "data/maps/AquaHideout_B2F/scripts.pory"
 	setflag FLAG_CAUGHT_GENESECT
 	goto BattleGenesect_1
 

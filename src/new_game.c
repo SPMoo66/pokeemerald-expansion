@@ -1,4 +1,5 @@
 #include "global.h"
+#include "clock.h"
 #include "new_game.h"
 #include "random.h"
 #include "pokemon.h"
@@ -204,7 +205,7 @@ void NewGameInitData(void)
     ClearPlayerLinkBattleRecords();
     InitSeedotSizeRecord();
     InitLotadSizeRecord();
-    gPlayerPartyCount = 0;
+    gPartiesCount[B_TRAINER_PLAYER] = 0;
     ZeroPlayerPartyMons();
     ResetPokemonStorageSystem();
     DeactivateAllRoamers();
@@ -219,6 +220,7 @@ void NewGameInitData(void)
     InitDewfordTrend();
     ResetFanClub();
     ResetLotteryCorner();
+    UpdateDailySeed();
     WarpToTruck();
     if (IS_FRLG)
         RunScriptImmediately(EventScript_ResetAllMapFlagsFrlg);
@@ -289,7 +291,7 @@ void ClearSav1NotDex(void)
     TakePokemonFromDaycare();
     TakePokemonFromDaycare();
 
-	for (i = 0; i < GIFT_RIBBONS_COUNT; i++)
+	for (i = 0; i < NUM_GIFT_RIBBONS; i++)
     {
         gSaveBlock1Ptr->giftRibbons[i] = 0;
     }

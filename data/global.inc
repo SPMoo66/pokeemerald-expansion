@@ -1335,7 +1335,7 @@ Common_EventScript_MoveReminder_14:
 	goto_if_eq Common_EventScript_MoveReminder_20
 Common_EventScript_MoveReminder_19:
 # 685 "data/global.pory"
-	special HasMovesToRelearn
+	special Special_HasMoveToRelearn
 # 686 "data/global.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_MoveReminder_22
@@ -1344,13 +1344,11 @@ Common_EventScript_MoveReminder_19:
 # 691 "data/global.pory"
 	special TeachMoveRelearnerMove
 # 692 "data/global.pory"
-	waitstate
-# 693 "data/global.pory"
 	msgbox Common_EventScript_MoveReminder_Text_5
 Common_EventScript_MoveReminder_7:
-# 699 "data/global.pory"
+# 698 "data/global.pory"
 	setmoverelearnerstate MOVE_RELEARNER_LEVEL_UP_MOVES
-# 700 "data/global.pory"
+# 699 "data/global.pory"
 	release
 	return
 
@@ -1391,477 +1389,477 @@ Common_EventScript_MoveReminder_22:
 
 
 EventScript_CapCollector::
-# 704 "data/global.pory"
+# 703 "data/global.pory"
 	lock
-# 705 "data/global.pory"
+# 704 "data/global.pory"
 	faceplayer
-# 706 "data/global.pory"
+# 705 "data/global.pory"
 	goto_if_unset FLAG_TEMP_1, EventScript_CapCollector_2
 EventScript_CapCollector_1:
-# 710 "data/global.pory"
+# 709 "data/global.pory"
 	msgbox DoYouHaveAnyCaps
-# 711 "data/global.pory"
+# 710 "data/global.pory"
 	waitmessage
-# 712 "data/global.pory"
+# 711 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_0, ITEM_METRONOME
-# 713 "data/global.pory"
+# 712 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_1, ITEM_GRIP_CLAW
-# 714 "data/global.pory"
+# 713 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_2, ITEM_STICKY_BARB
-# 715 "data/global.pory"
+# 714 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_3, ITEM_SHED_SHELL
-# 716 "data/global.pory"
+# 715 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_4, ITEM_BIG_ROOT
-# 717 "data/global.pory"
+# 716 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_5, ITEM_LIGHT_CLAY
-# 718 "data/global.pory"
+# 717 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_6, ITEM_AIR_BALLOON
-# 719 "data/global.pory"
+# 718 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_7, ITEM_WHITE_HERB
-# 720 "data/global.pory"
+# 719 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_8, ITEM_RED_CARD
-# 721 "data/global.pory"
+# 720 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_9, ITEM_EJECT_BUTTON
-# 722 "data/global.pory"
+# 721 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_10, ITEM_SAFETY_GOGGLES
-# 723 "data/global.pory"
+# 722 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_11, ITEM_THROAT_SPRAY
-# 724 "data/global.pory"
+# 723 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_12, ITEM_MENTAL_HERB
-# 725 "data/global.pory"
+# 724 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_13, ITEM_NORMAL_GEM
-# 726 "data/global.pory"
+# 725 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_14, ITEM_FLAME_ORB
-# 727 "data/global.pory"
+# 726 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_15, ITEM_TOXIC_ORB
-# 728 "data/global.pory"
+# 727 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_16, ITEM_EVIOLITE
-# 729 "data/global.pory"
+# 728 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_17, ITEM_TERRAIN_EXTENDER
-# 730 "data/global.pory"
+# 729 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_18, ITEM_PROTECTIVE_PADS
-# 731 "data/global.pory"
+# 730 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_19, ITEM_BINDING_BAND
-# 732 "data/global.pory"
+# 731 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_20, ITEM_EJECT_PACK
-# 733 "data/global.pory"
+# 732 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_21, ITEM_ABILITY_SHIELD
-# 734 "data/global.pory"
+# 733 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_22, ITEM_PUNCHING_GLOVE
-# 735 "data/global.pory"
+# 734 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_23, ITEM_COVERT_CLOAK
-# 736 "data/global.pory"
+# 735 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_24, ITEM_BLUNDER_POLICY
-# 737 "data/global.pory"
+# 736 "data/global.pory"
 	special GetNumberOfBadges
-# 738 "data/global.pory"
+# 737 "data/global.pory"
 	compare VAR_RESULT, 5
 	goto_if_ge EventScript_CapCollector_5
 EventScript_CapCollector_4:
-# 743 "data/global.pory"
+# 742 "data/global.pory"
 	special ShowBottleCapsWindow
-# 744 "data/global.pory"
+# 743 "data/global.pory"
 	dynmultistack 17, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM
-# 745 "data/global.pory"
+# 744 "data/global.pory"
 	compare VAR_RESULT, 127
 	goto_if_ne EventScript_CapCollector_8
 EventScript_CapCollector_7:
-# 766 "data/global.pory"
+# 765 "data/global.pory"
 	msgbox gText_PleaseComeAgain
-# 767 "data/global.pory"
+# 766 "data/global.pory"
 	special CloseBattlePointsWindow
-# 768 "data/global.pory"
+# 767 "data/global.pory"
 	release
 	return
 
 EventScript_CapCollector_2:
-# 707 "data/global.pory"
+# 706 "data/global.pory"
 	msgbox BottleCapCollectorIntro
-# 708 "data/global.pory"
+# 707 "data/global.pory"
 	setflag FLAG_TEMP_1
 	goto EventScript_CapCollector_1
 
 EventScript_CapCollector_5:
-# 739 "data/global.pory"
+# 738 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_25, ITEM_BOOSTER_ENERGY
-# 740 "data/global.pory"
+# 739 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_26, ITEM_MIRROR_HERB
-# 741 "data/global.pory"
+# 740 "data/global.pory"
 	dynmultipush EventScript_CapCollector_Text_27, ITEM_POWER_HERB
 	goto EventScript_CapCollector_4
 
 EventScript_CapCollector_8:
-# 746 "data/global.pory"
+# 745 "data/global.pory"
 	copyvar VAR_0x8009, VAR_RESULT
-# 747 "data/global.pory"
+# 746 "data/global.pory"
 	checkitem ITEM_BOTTLE_CAP
-# 748 "data/global.pory"
+# 747 "data/global.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq EventScript_CapCollector_11
-# 754 "data/global.pory"
+# 753 "data/global.pory"
 	checkitemspace VAR_0x8009
-# 755 "data/global.pory"
+# 754 "data/global.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq EventScript_CapCollector_14
-# 761 "data/global.pory"
+# 760 "data/global.pory"
 	removeitem ITEM_BOTTLE_CAP
-# 762 "data/global.pory"
+# 761 "data/global.pory"
 	additem VAR_0x8009
-# 763 "data/global.pory"
+# 762 "data/global.pory"
 	special UpdateBottleCapsWindow
-# 764 "data/global.pory"
+# 763 "data/global.pory"
 	playse SE_SHOP
 	goto EventScript_CapCollector_7
 
 EventScript_CapCollector_11:
-# 749 "data/global.pory"
+# 748 "data/global.pory"
 	msgbox EventScript_CapCollector_Text_28
-# 750 "data/global.pory"
+# 749 "data/global.pory"
 	special CloseBattlePointsWindow
-# 751 "data/global.pory"
+# 750 "data/global.pory"
 	release
 	end
 
 EventScript_CapCollector_14:
-# 756 "data/global.pory"
+# 755 "data/global.pory"
 	msgbox EventScript_CapCollector_Text_29
-# 757 "data/global.pory"
+# 756 "data/global.pory"
 	special CloseBattlePointsWindow
-# 758 "data/global.pory"
+# 757 "data/global.pory"
 	release
 	end
 
 
 Mart_EventScript_AbilityNatureClerk::
-# 781 "data/global.pory"
+# 780 "data/global.pory"
 	lock
-# 782 "data/global.pory"
+# 781 "data/global.pory"
 	faceplayer
-# 783 "data/global.pory"
+# 782 "data/global.pory"
 	msgbox gText_HowMayIServeYou
-# 784 "data/global.pory"
+# 783 "data/global.pory"
 	waitmessage
-# 785 "data/global.pory"
+# 784 "data/global.pory"
 	pokemart AbilityNaturePokemart
-# 786 "data/global.pory"
+# 785 "data/global.pory"
 	msgbox gText_PleaseComeAgain
-# 787 "data/global.pory"
+# 786 "data/global.pory"
 	release
 	return
 
 
 	.align 2
-# 790 "data/global.pory"
+# 789 "data/global.pory"
 AbilityNaturePokemart:
-# 791 "data/global.pory"
+# 790 "data/global.pory"
 	.2byte ITEM_ABILITY_CAPSULE
-# 792 "data/global.pory"
+# 791 "data/global.pory"
 	.2byte ITEM_ABILITY_PATCH
-# 793 "data/global.pory"
+# 792 "data/global.pory"
 	.2byte ITEM_LONELY_MINT
-# 794 "data/global.pory"
+# 793 "data/global.pory"
 	.2byte ITEM_ADAMANT_MINT
-# 795 "data/global.pory"
+# 794 "data/global.pory"
 	.2byte ITEM_NAUGHTY_MINT
-# 796 "data/global.pory"
+# 795 "data/global.pory"
 	.2byte ITEM_BRAVE_MINT
-# 797 "data/global.pory"
+# 796 "data/global.pory"
 	.2byte ITEM_BOLD_MINT
-# 798 "data/global.pory"
+# 797 "data/global.pory"
 	.2byte ITEM_IMPISH_MINT
-# 799 "data/global.pory"
+# 798 "data/global.pory"
 	.2byte ITEM_LAX_MINT
-# 800 "data/global.pory"
+# 799 "data/global.pory"
 	.2byte ITEM_RELAXED_MINT
-# 801 "data/global.pory"
+# 800 "data/global.pory"
 	.2byte ITEM_MODEST_MINT
-# 802 "data/global.pory"
+# 801 "data/global.pory"
 	.2byte ITEM_MILD_MINT
-# 803 "data/global.pory"
+# 802 "data/global.pory"
 	.2byte ITEM_RASH_MINT
-# 804 "data/global.pory"
+# 803 "data/global.pory"
 	.2byte ITEM_QUIET_MINT
-# 805 "data/global.pory"
+# 804 "data/global.pory"
 	.2byte ITEM_CALM_MINT
-# 806 "data/global.pory"
+# 805 "data/global.pory"
 	.2byte ITEM_GENTLE_MINT
-# 807 "data/global.pory"
+# 806 "data/global.pory"
 	.2byte ITEM_CAREFUL_MINT
-# 808 "data/global.pory"
+# 807 "data/global.pory"
 	.2byte ITEM_SASSY_MINT
-# 809 "data/global.pory"
+# 808 "data/global.pory"
 	.2byte ITEM_TIMID_MINT
-# 810 "data/global.pory"
+# 809 "data/global.pory"
 	.2byte ITEM_HASTY_MINT
-# 811 "data/global.pory"
+# 810 "data/global.pory"
 	.2byte ITEM_JOLLY_MINT
-# 812 "data/global.pory"
+# 811 "data/global.pory"
 	.2byte ITEM_NAIVE_MINT
-# 813 "data/global.pory"
+# 812 "data/global.pory"
 	.2byte ITEM_SERIOUS_MINT
 	.2byte ITEM_NONE
 
 Mart_EventScript_TypeEnhancingHeldItems::
-# 817 "data/global.pory"
+# 816 "data/global.pory"
 	lock
-# 818 "data/global.pory"
+# 817 "data/global.pory"
 	faceplayer
-# 819 "data/global.pory"
+# 818 "data/global.pory"
 	msgbox gText_HowMayIServeYou
-# 820 "data/global.pory"
+# 819 "data/global.pory"
 	waitmessage
-# 821 "data/global.pory"
+# 820 "data/global.pory"
 	pokemart TypeEnhancingHeldItemsPokemart
-# 822 "data/global.pory"
+# 821 "data/global.pory"
 	msgbox gText_PleaseComeAgain
-# 823 "data/global.pory"
+# 822 "data/global.pory"
 	release
 	return
 
 
 	.align 2
-# 826 "data/global.pory"
+# 825 "data/global.pory"
 TypeEnhancingHeldItemsPokemart:
-# 827 "data/global.pory"
+# 826 "data/global.pory"
 	.2byte ITEM_SILK_SCARF
-# 828 "data/global.pory"
+# 827 "data/global.pory"
 	.2byte ITEM_CHARCOAL
-# 829 "data/global.pory"
+# 828 "data/global.pory"
 	.2byte ITEM_MYSTIC_WATER
-# 830 "data/global.pory"
+# 829 "data/global.pory"
 	.2byte ITEM_MAGNET
-# 831 "data/global.pory"
+# 830 "data/global.pory"
 	.2byte ITEM_MIRACLE_SEED
-# 832 "data/global.pory"
+# 831 "data/global.pory"
 	.2byte ITEM_NEVER_MELT_ICE
-# 833 "data/global.pory"
+# 832 "data/global.pory"
 	.2byte ITEM_BLACK_BELT
-# 834 "data/global.pory"
+# 833 "data/global.pory"
 	.2byte ITEM_POISON_BARB
-# 835 "data/global.pory"
+# 834 "data/global.pory"
 	.2byte ITEM_SOFT_SAND
-# 836 "data/global.pory"
+# 835 "data/global.pory"
 	.2byte ITEM_SHARP_BEAK
-# 837 "data/global.pory"
+# 836 "data/global.pory"
 	.2byte ITEM_TWISTED_SPOON
-# 838 "data/global.pory"
+# 837 "data/global.pory"
 	.2byte ITEM_SILVER_POWDER
-# 839 "data/global.pory"
+# 838 "data/global.pory"
 	.2byte ITEM_HARD_STONE
-# 840 "data/global.pory"
+# 839 "data/global.pory"
 	.2byte ITEM_SPELL_TAG
-# 841 "data/global.pory"
+# 840 "data/global.pory"
 	.2byte ITEM_DRAGON_FANG
-# 842 "data/global.pory"
+# 841 "data/global.pory"
 	.2byte ITEM_BLACK_GLASSES
-# 843 "data/global.pory"
+# 842 "data/global.pory"
 	.2byte ITEM_METAL_COAT
-# 844 "data/global.pory"
+# 843 "data/global.pory"
 	.2byte ITEM_FAIRY_FEATHER
 	.2byte ITEM_NONE
 
 GetRivalForNameBox::
-# 1001 "data/global.pory"
+# 1000 "data/global.pory"
 	switch VAR_EMERALBODY_RIVAL
-# 1002 "data/global.pory"
+# 1001 "data/global.pory"
 	case 1, GetRivalForNameBox_2
-# 1004 "data/global.pory"
+# 1003 "data/global.pory"
 	case 2, GetRivalForNameBox_3
-# 1006 "data/global.pory"
+# 1005 "data/global.pory"
 	case 3, GetRivalForNameBox_4
-# 1008 "data/global.pory"
+# 1007 "data/global.pory"
 	case 4, GetRivalForNameBox_5
-# 1011 "data/global.pory"
+# 1010 "data/global.pory"
 	speakername CommonText_Baron
 	return
 
 GetRivalForNameBox_2:
-# 1003 "data/global.pory"
+# 1002 "data/global.pory"
 	speakername CommonText_Harper
 	return
 
 GetRivalForNameBox_3:
-# 1005 "data/global.pory"
+# 1004 "data/global.pory"
 	speakername CommonText_Jakson
 	return
 
 GetRivalForNameBox_4:
-# 1007 "data/global.pory"
+# 1006 "data/global.pory"
 	speakername CommonText_Redd
 	return
 
 GetRivalForNameBox_5:
-# 1009 "data/global.pory"
+# 1008 "data/global.pory"
 	speakername CommonText_Sakura
 	return
 
 
 GetRivalMusic::
-# 1016 "data/global.pory"
+# 1015 "data/global.pory"
 	setflag FLAG_SYS_SET_BATTLE_BGM
-# 1017 "data/global.pory"
+# 1016 "data/global.pory"
 	switch VAR_EMERALBODY_RIVAL
-# 1018 "data/global.pory"
+# 1017 "data/global.pory"
 	case 1, GetRivalMusic_2
-# 1020 "data/global.pory"
+# 1019 "data/global.pory"
 	case 2, GetRivalMusic_3
-# 1022 "data/global.pory"
+# 1021 "data/global.pory"
 	case 3, GetRivalMusic_4
-# 1024 "data/global.pory"
+# 1023 "data/global.pory"
 	case 4, GetRivalMusic_5
-# 1027 "data/global.pory"
+# 1026 "data/global.pory"
 	setvar VAR_BATTLE_BGM, MUS_DP_VS_RIVAL
 	return
 
 GetRivalMusic_2:
-# 1019 "data/global.pory"
+# 1018 "data/global.pory"
 	setvar VAR_BATTLE_BGM, MUS_HG_VS_TRAINER
 	return
 
 GetRivalMusic_3:
-# 1021 "data/global.pory"
+# 1020 "data/global.pory"
 	setvar VAR_BATTLE_BGM, MUS_DP_VS_ELITE_FOUR
 	return
 
 GetRivalMusic_4:
-# 1023 "data/global.pory"
+# 1022 "data/global.pory"
 	setvar VAR_BATTLE_BGM, MUS_HG_VS_WILD_KANTO
 	return
 
 GetRivalMusic_5:
-# 1025 "data/global.pory"
+# 1024 "data/global.pory"
 	setvar VAR_BATTLE_BGM, MUS_PL_VS_FRONTIER_BRAIN
 	return
 
 
 Emote_Test::
-# 1276 "data/global.pory"
+# 1275 "data/global.pory"
 	lock
-# 1277 "data/global.pory"
+# 1276 "data/global.pory"
 	applymovement 11, Common_Movement_MusicNote
+# 1277 "data/global.pory"
+	delay 70
 # 1278 "data/global.pory"
-	delay 70
-# 1279 "data/global.pory"
 	applymovement 11, Common_Movement_Smile
+# 1279 "data/global.pory"
+	delay 70
 # 1280 "data/global.pory"
-	delay 70
-# 1281 "data/global.pory"
 	applymovement 11, Common_Movement_SweatDrop
+# 1281 "data/global.pory"
+	delay 70
 # 1282 "data/global.pory"
-	delay 70
-# 1283 "data/global.pory"
 	applymovement 11, Common_Movement_Talking
+# 1283 "data/global.pory"
+	delay 70
 # 1284 "data/global.pory"
-	delay 70
-# 1285 "data/global.pory"
 	applymovement 11, Common_Movement_Thinking
-# 1286 "data/global.pory"
+# 1285 "data/global.pory"
 	delay 70
-# 1287 "data/global.pory"
+# 1286 "data/global.pory"
 	release
 	return
 
 
 IncreasePokevialSize::
-# 1291 "data/global.pory"
+# 1290 "data/global.pory"
 	speakername NULL
-# 1292 "data/global.pory"
+# 1291 "data/global.pory"
 	pokevialincreasesize
-# 1293 "data/global.pory"
+# 1292 "data/global.pory"
 	message Text_PokevialSizeIncrease
-# 1294 "data/global.pory"
+# 1293 "data/global.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 1295 "data/global.pory"
+# 1294 "data/global.pory"
 	waitmessage
-# 1296 "data/global.pory"
+# 1295 "data/global.pory"
 	delay 60
 	return
 
 
 BufferNumberSring0::
-# 1305 "data/global.pory"
+# 1304 "data/global.pory"
 	buffernumberstring 0, VAR_TEMP_0
-# 1306 "data/global.pory"
+# 1305 "data/global.pory"
 	msgbox BufferNumberSring0_Text_0
-# 1307 "data/global.pory"
+# 1306 "data/global.pory"
 	closemessage
 	return
 
 
 PlayersHouse_2F_EventScript_Notebook::
-# 1311 "data/global.pory"
+# 1310 "data/global.pory"
 	msgbox PlayersHouse_2F_EventScript_Notebook_Text_0
-# 1313 "data/global.pory"
+# 1312 "data/global.pory"
 	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_1, 0
-# 1314 "data/global.pory"
+# 1313 "data/global.pory"
 	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_2, 1
-# 1315 "data/global.pory"
+# 1314 "data/global.pory"
 	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_3, 2
-# 1316 "data/global.pory"
+# 1315 "data/global.pory"
 	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_4, 3
-# 1317 "data/global.pory"
+# 1316 "data/global.pory"
 	goto_if_set FLAG_TERA_ENABLED, PlayersHouse_2F_EventScript_Notebook_2
 PlayersHouse_2F_EventScript_Notebook_1:
-# 1320 "data/global.pory"
+# 1319 "data/global.pory"
 	goto_if_set FLAG_ITEM_REALMS_FRAY_MEGA_RING, PlayersHouse_2F_EventScript_Notebook_5
 PlayersHouse_2F_EventScript_Notebook_4:
-# 1323 "data/global.pory"
+# 1322 "data/global.pory"
 	dynmultistack 0, 0, FALSE, 6, FALSE, VAR_0x800A, DYN_MULTICHOICE_CB_NONE
-# 1324 "data/global.pory"
+# 1323 "data/global.pory"
 	closemessage
-# 1325 "data/global.pory"
+# 1324 "data/global.pory"
 	switch VAR_RESULT
-# 1326 "data/global.pory"
+# 1325 "data/global.pory"
 	case 0, PlayersHouse_2F_EventScript_Notebook_8
-# 1328 "data/global.pory"
+# 1327 "data/global.pory"
 	case 1, PlayersHouse_2F_EventScript_Notebook_9
-# 1330 "data/global.pory"
+# 1329 "data/global.pory"
 	case 2, PlayersHouse_2F_EventScript_Notebook_10
-# 1332 "data/global.pory"
+# 1331 "data/global.pory"
 	case 3, PlayersHouse_2F_EventScript_Notebook_11
-# 1334 "data/global.pory"
+# 1333 "data/global.pory"
 	case 4, PlayersHouse_2F_EventScript_Notebook_12
-# 1336 "data/global.pory"
+# 1335 "data/global.pory"
 	case 5, PlayersHouse_2F_EventScript_Notebook_13
 	return
 
 PlayersHouse_2F_EventScript_Notebook_2:
-# 1318 "data/global.pory"
+# 1317 "data/global.pory"
 	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_5, 4
 	goto PlayersHouse_2F_EventScript_Notebook_1
 
 PlayersHouse_2F_EventScript_Notebook_5:
-# 1321 "data/global.pory"
+# 1320 "data/global.pory"
 	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_6, 5
 	goto PlayersHouse_2F_EventScript_Notebook_4
 
 PlayersHouse_2F_EventScript_Notebook_8:
-# 1327 "data/global.pory"
+# 1326 "data/global.pory"
 	helpwindow HELP_BATTLE_CONTROLS
 	return
 
 PlayersHouse_2F_EventScript_Notebook_9:
-# 1329 "data/global.pory"
+# 1328 "data/global.pory"
 	helpwindow HELP_POKEDEX
 	return
 
 PlayersHouse_2F_EventScript_Notebook_10:
-# 1331 "data/global.pory"
+# 1330 "data/global.pory"
 	helpwindow HELP_SHOP_INVENTORY
 	return
 
 PlayersHouse_2F_EventScript_Notebook_11:
-# 1333 "data/global.pory"
+# 1332 "data/global.pory"
 	helpwindow HELP_FLYING
 	return
 
 PlayersHouse_2F_EventScript_Notebook_12:
-# 1335 "data/global.pory"
+# 1334 "data/global.pory"
 	helpwindow HELP_TERASTALLIZATION
 	return
 
 PlayersHouse_2F_EventScript_Notebook_13:
-# 1337 "data/global.pory"
+# 1336 "data/global.pory"
 	helpwindow HELP_MEGA_EVOLUTION
 	return
 
@@ -1969,537 +1967,537 @@ Common_EventScript_MoveReminder_Text_9:
 	.string "Which move should I teach?$"
 
 EventScript_CapCollector_Text_0:
-# 712 "data/global.pory"
+# 711 "data/global.pory"
 	.string "Metronome$"
 
 EventScript_CapCollector_Text_1:
-# 713 "data/global.pory"
+# 712 "data/global.pory"
 	.string "Grip Claw$"
 
 EventScript_CapCollector_Text_2:
-# 714 "data/global.pory"
+# 713 "data/global.pory"
 	.string "Sticky Barb$"
 
 EventScript_CapCollector_Text_3:
-# 715 "data/global.pory"
+# 714 "data/global.pory"
 	.string "Shed Shell$"
 
 EventScript_CapCollector_Text_4:
-# 716 "data/global.pory"
+# 715 "data/global.pory"
 	.string "Big Root$"
 
 EventScript_CapCollector_Text_5:
-# 717 "data/global.pory"
+# 716 "data/global.pory"
 	.string "Light Clay$"
 
 EventScript_CapCollector_Text_6:
-# 718 "data/global.pory"
+# 717 "data/global.pory"
 	.string "Air Balloon$"
 
 EventScript_CapCollector_Text_7:
-# 719 "data/global.pory"
+# 718 "data/global.pory"
 	.string "White Herb$"
 
 EventScript_CapCollector_Text_8:
-# 720 "data/global.pory"
+# 719 "data/global.pory"
 	.string "Red Card$"
 
 EventScript_CapCollector_Text_9:
-# 721 "data/global.pory"
+# 720 "data/global.pory"
 	.string "Eject Button$"
 
 EventScript_CapCollector_Text_10:
-# 722 "data/global.pory"
+# 721 "data/global.pory"
 	.string "Safety Goggles$"
 
 EventScript_CapCollector_Text_11:
-# 723 "data/global.pory"
+# 722 "data/global.pory"
 	.string "Throat Spray$"
 
 EventScript_CapCollector_Text_12:
-# 724 "data/global.pory"
+# 723 "data/global.pory"
 	.string "Mental Herb$"
 
 EventScript_CapCollector_Text_13:
-# 725 "data/global.pory"
+# 724 "data/global.pory"
 	.string "Normal Gem$"
 
 EventScript_CapCollector_Text_14:
-# 726 "data/global.pory"
+# 725 "data/global.pory"
 	.string "Flame Orb$"
 
 EventScript_CapCollector_Text_15:
-# 727 "data/global.pory"
+# 726 "data/global.pory"
 	.string "Toxic Orb$"
 
 EventScript_CapCollector_Text_16:
-# 728 "data/global.pory"
+# 727 "data/global.pory"
 	.string "Eviolite$"
 
 EventScript_CapCollector_Text_17:
-# 729 "data/global.pory"
+# 728 "data/global.pory"
 	.string "Terrain Extender$"
 
 EventScript_CapCollector_Text_18:
-# 730 "data/global.pory"
+# 729 "data/global.pory"
 	.string "Protective Pads$"
 
 EventScript_CapCollector_Text_19:
-# 731 "data/global.pory"
+# 730 "data/global.pory"
 	.string "Binding Band$"
 
 EventScript_CapCollector_Text_20:
-# 732 "data/global.pory"
+# 731 "data/global.pory"
 	.string "Eject Pack$"
 
 EventScript_CapCollector_Text_21:
-# 733 "data/global.pory"
+# 732 "data/global.pory"
 	.string "Ability Shield$"
 
 EventScript_CapCollector_Text_22:
-# 734 "data/global.pory"
+# 733 "data/global.pory"
 	.string "Punching Glove$"
 
 EventScript_CapCollector_Text_23:
-# 735 "data/global.pory"
+# 734 "data/global.pory"
 	.string "Covert Cloak$"
 
 EventScript_CapCollector_Text_24:
-# 736 "data/global.pory"
+# 735 "data/global.pory"
 	.string "Blunder Policy$"
 
 EventScript_CapCollector_Text_25:
-# 739 "data/global.pory"
+# 738 "data/global.pory"
 	.string "Booster Energy$"
 
 EventScript_CapCollector_Text_26:
-# 740 "data/global.pory"
+# 739 "data/global.pory"
 	.string "Mirror Herb$"
 
 EventScript_CapCollector_Text_27:
-# 741 "data/global.pory"
+# 740 "data/global.pory"
 	.string "Power Herb$"
 
 EventScript_CapCollector_Text_28:
-# 749 "data/global.pory"
+# 748 "data/global.pory"
 	.string "You don't seem to have any Bottle Caps,\nthus I have nothing to give you.$"
 
 EventScript_CapCollector_Text_29:
-# 756 "data/global.pory"
+# 755 "data/global.pory"
 	.string "You don't have any room in your Bag for\n"
 	.string "this item.$"
 
 BufferNumberSring0_Text_0:
-# 1306 "data/global.pory"
+# 1305 "data/global.pory"
 	.string "{STR_VAR_1}$"
 
 PlayersHouse_2F_EventScript_Notebook_Text_0:
-# 1311 "data/global.pory"
+# 1310 "data/global.pory"
 	.string "{PLAYER} flipped open the notebook.\n"
 	.string "Which section would you like to view?$"
 
 PlayersHouse_2F_EventScript_Notebook_Text_1:
-# 1313 "data/global.pory"
+# 1312 "data/global.pory"
 	.string "Battle Controls$"
 
 PlayersHouse_2F_EventScript_Notebook_Text_2:
-# 1314 "data/global.pory"
+# 1313 "data/global.pory"
 	.string "Pokédex$"
 
 PlayersHouse_2F_EventScript_Notebook_Text_3:
-# 1315 "data/global.pory"
+# 1314 "data/global.pory"
 	.string "Shop Inventory$"
 
 PlayersHouse_2F_EventScript_Notebook_Text_4:
-# 1316 "data/global.pory"
+# 1315 "data/global.pory"
 	.string "Flying$"
 
 PlayersHouse_2F_EventScript_Notebook_Text_5:
-# 1318 "data/global.pory"
+# 1317 "data/global.pory"
 	.string "Terastallization$"
 
 PlayersHouse_2F_EventScript_Notebook_Text_6:
-# 1321 "data/global.pory"
+# 1320 "data/global.pory"
 	.string "Mega Evolution$"
 
 BottleCapCollectorIntro::
-# 772 "data/global.pory"
+# 771 "data/global.pory"
 	.string "I'm a collector of Bottle Caps.\n"
 	.string "If you happen to come across any, I'll\l"
 	.string "gladly trade you some rare items in\l"
 	.string "exchange for them.$"
 
 DoYouHaveAnyCaps::
-# 776 "data/global.pory"
+# 775 "data/global.pory"
 	.string "Do you have any Bottle Caps you'd like\n"
 	.string "to trade?$"
 
 CommonText_Mom::
-# 847 "data/global.pory"
+# 846 "data/global.pory"
 	.string "Mom$"
 
 CommonText_Dad::
-# 851 "data/global.pory"
+# 850 "data/global.pory"
 	.string "Dad$"
 
 CommonText_Birch::
-# 855 "data/global.pory"
+# 854 "data/global.pory"
 	.string "Prof. Birch$"
 
 CommonText_Rowan::
-# 859 "data/global.pory"
+# 858 "data/global.pory"
 	.string "Prof. Rowan$"
 
 CommonText_Archie::
-# 863 "data/global.pory"
+# 862 "data/global.pory"
 	.string "Archie$"
 
 CommonText_Maxie::
-# 867 "data/global.pory"
+# 866 "data/global.pory"
 	.string "Maxie$"
 
 CommonText_Giovanni::
-# 871 "data/global.pory"
+# 870 "data/global.pory"
 	.string "Giovanni$"
 
 CommonText_Shelly::
-# 875 "data/global.pory"
+# 874 "data/global.pory"
 	.string "Shelly$"
 
 CommonText_Matt::
-# 879 "data/global.pory"
+# 878 "data/global.pory"
 	.string "Matt$"
 
 CommonText_Courtney::
-# 883 "data/global.pory"
+# 882 "data/global.pory"
 	.string "Courtney$"
 
 CommonText_Tabitha::
-# 887 "data/global.pory"
+# 886 "data/global.pory"
 	.string "Tabitha$"
 
 CommonText_May::
-# 891 "data/global.pory"
+# 890 "data/global.pory"
 	.string "May$"
 
 CommonText_Brendan::
-# 895 "data/global.pory"
+# 894 "data/global.pory"
 	.string "Brendan$"
 
 CommonText_Wally::
-# 899 "data/global.pory"
+# 898 "data/global.pory"
 	.string "Wally$"
 
 CommonText_Uncle::
-# 903 "data/global.pory"
+# 902 "data/global.pory"
 	.string "Uncle$"
 
 CommonText_Wanda::
-# 907 "data/global.pory"
+# 906 "data/global.pory"
 	.string "Wanda$"
 
 CommonText_Steven::
-# 911 "data/global.pory"
+# 910 "data/global.pory"
 	.string "Steven$"
 
 CommonText_Scott::
-# 915 "data/global.pory"
+# 914 "data/global.pory"
 	.string "Scott$"
 
 CommonText_Q::
-# 919 "data/global.pory"
+# 918 "data/global.pory"
 	.string "?????$"
 
 CommonText_MrStone::
-# 923 "data/global.pory"
+# 922 "data/global.pory"
 	.string "Mr. Stone$"
 
 CommonText_MrBriney::
-# 927 "data/global.pory"
+# 926 "data/global.pory"
 	.string "Mr. Briney$"
 
 CommonText_Peeko::
-# 931 "data/global.pory"
+# 930 "data/global.pory"
 	.string "Peeko$"
 
 CommonText_CaptStern::
-# 935 "data/global.pory"
+# 934 "data/global.pory"
 	.string "Capt. Stern$"
 
 CommonText_Dock::
-# 939 "data/global.pory"
+# 938 "data/global.pory"
 	.string "Dock$"
 
 CommonText_Gabby::
-# 943 "data/global.pory"
+# 942 "data/global.pory"
 	.string "Gabby$"
 
 CommonText_Ty::
-# 947 "data/global.pory"
+# 946 "data/global.pory"
 	.string "Ty$"
 
 CommonText_Rydel::
-# 951 "data/global.pory"
+# 950 "data/global.pory"
 	.string "Rydel$"
 
 CommonText_Cozmo::
-# 955 "data/global.pory"
+# 954 "data/global.pory"
 	.string "Prof. Cozmo$"
 
 CommonText_Lanette::
-# 959 "data/global.pory"
+# 958 "data/global.pory"
 	.string "Lanette$"
 
 CommonText_Wallace::
-# 963 "data/global.pory"
+# 962 "data/global.pory"
 	.string "Wallace$"
 
 CommonText_Looker::
-# 967 "data/global.pory"
+# 966 "data/global.pory"
 	.string "Looker$"
 
 CommonText_Bianca::
-# 971 "data/global.pory"
+# 970 "data/global.pory"
 	.string "Bianca$"
 
 CommonText_MagmaGrunt::
-# 975 "data/global.pory"
+# 974 "data/global.pory"
 	.string "Magma Grunt$"
 
 CommonText_AquaGrunt::
-# 979 "data/global.pory"
+# 978 "data/global.pory"
 	.string "Aqua Grunt$"
 
 CommonText_Victor::
-# 983 "data/global.pory"
+# 982 "data/global.pory"
 	.string "Victor$"
 
 CommonText_Victoria::
-# 987 "data/global.pory"
+# 986 "data/global.pory"
 	.string "Victoria$"
 
 CommonText_Vivi::
-# 991 "data/global.pory"
+# 990 "data/global.pory"
 	.string "Vivi$"
 
 CommonText_Vicky::
-# 995 "data/global.pory"
+# 994 "data/global.pory"
 	.string "Vicky$"
 
 CommonText_Baron::
-# 1031 "data/global.pory"
+# 1030 "data/global.pory"
 	.string "Baron$"
 
 CommonText_Harper::
-# 1035 "data/global.pory"
+# 1034 "data/global.pory"
 	.string "Harper$"
 
 CommonText_Jakson::
-# 1039 "data/global.pory"
+# 1038 "data/global.pory"
 	.string "Jakson$"
 
 CommonText_Redd::
-# 1043 "data/global.pory"
+# 1042 "data/global.pory"
 	.string "Redd$"
 
 CommonText_Sakura::
-# 1047 "data/global.pory"
+# 1046 "data/global.pory"
 	.string "Sakura$"
 
 Text_PokevialSizeIncrease::
-# 1051 "data/global.pory"
+# 1050 "data/global.pory"
 	.string "The Pokévial's size was increased!$"
 
 CommonText_NormalType::
-# 1055 "data/global.pory"
+# 1054 "data/global.pory"
 	.string "Normal Type$"
 
 CommonText_FightingType::
-# 1059 "data/global.pory"
+# 1058 "data/global.pory"
 	.string "Fighting Type$"
 
 CommonText_FlyingType::
-# 1063 "data/global.pory"
+# 1062 "data/global.pory"
 	.string "Flying Type$"
 
 CommonText_PoisonType::
-# 1067 "data/global.pory"
+# 1066 "data/global.pory"
 	.string "Poison Type$"
 
 CommonText_GroundType::
-# 1071 "data/global.pory"
+# 1070 "data/global.pory"
 	.string "Ground Type$"
 
 CommonText_RockType::
-# 1075 "data/global.pory"
+# 1074 "data/global.pory"
 	.string "Rock Type$"
 
 CommonText_BugType::
-# 1079 "data/global.pory"
+# 1078 "data/global.pory"
 	.string "Bug Type$"
 
 CommonText_GhostType::
-# 1083 "data/global.pory"
+# 1082 "data/global.pory"
 	.string "Ghost Type$"
 
 CommonText_SteelType::
-# 1087 "data/global.pory"
+# 1086 "data/global.pory"
 	.string "Steel Type$"
 
 CommonText_FireType::
-# 1091 "data/global.pory"
+# 1090 "data/global.pory"
 	.string "Fire Type$"
 
 CommonText_WaterType::
-# 1095 "data/global.pory"
+# 1094 "data/global.pory"
 	.string "Water Type$"
 
 CommonText_GrassType::
-# 1099 "data/global.pory"
+# 1098 "data/global.pory"
 	.string "Grass Type$"
 
 CommonText_ElectricType::
-# 1103 "data/global.pory"
+# 1102 "data/global.pory"
 	.string "Electric Type$"
 
 CommonText_PsychicType::
-# 1107 "data/global.pory"
+# 1106 "data/global.pory"
 	.string "Psychic Type$"
 
 CommonText_IceType::
-# 1111 "data/global.pory"
+# 1110 "data/global.pory"
 	.string "Ice Type$"
 
 CommonText_DragonType::
-# 1115 "data/global.pory"
+# 1114 "data/global.pory"
 	.string "Dragon Type$"
 
 CommonText_DarkType::
-# 1119 "data/global.pory"
+# 1118 "data/global.pory"
 	.string "Dark Type$"
 
 CommonText_FairyType::
-# 1123 "data/global.pory"
+# 1122 "data/global.pory"
 	.string "Fairy Type$"
 
 CommonText_StellarType::
-# 1127 "data/global.pory"
+# 1126 "data/global.pory"
 	.string "Stellar Type$"
 
 CommonText_RustboroCity::
-# 1131 "data/global.pory"
+# 1130 "data/global.pory"
 	.string "Rustboro City$"
 
 CommonText_DewfordTown::
-# 1135 "data/global.pory"
+# 1134 "data/global.pory"
 	.string "Dewford Town$"
 
 CommonText_MauvilleCity::
-# 1139 "data/global.pory"
+# 1138 "data/global.pory"
 	.string "Mauville City$"
 
 CommonText_LavaridgeTown::
-# 1143 "data/global.pory"
+# 1142 "data/global.pory"
 	.string "Lavaridge Town$"
 
 CommonText_PetalburgCity::
-# 1147 "data/global.pory"
+# 1146 "data/global.pory"
 	.string "Petalburg City$"
 
 CommonText_FortreeCity::
-# 1151 "data/global.pory"
+# 1150 "data/global.pory"
 	.string "Fortree City$"
 
 CommonText_MossdeepCity::
-# 1155 "data/global.pory"
+# 1154 "data/global.pory"
 	.string "Mossdeep City$"
 
 CommonText_SootopolisCity::
-# 1159 "data/global.pory"
+# 1158 "data/global.pory"
 	.string "Sootopolis City$"
 
 CommonText_Roxanne::
-# 1163 "data/global.pory"
+# 1162 "data/global.pory"
 	.string "Roxanne$"
 
 CommonText_Brawly::
-# 1167 "data/global.pory"
+# 1166 "data/global.pory"
 	.string "Brawly$"
 
 CommonText_Wattson::
-# 1171 "data/global.pory"
+# 1170 "data/global.pory"
 	.string "Wattson$"
 
 CommonText_Flannery::
-# 1175 "data/global.pory"
+# 1174 "data/global.pory"
 	.string "Flannery$"
 
 CommonText_Norman::
-# 1179 "data/global.pory"
+# 1178 "data/global.pory"
 	.string "Norman$"
 
 CommonText_Winona::
-# 1183 "data/global.pory"
+# 1182 "data/global.pory"
 	.string "Winona$"
 
 CommonText_LizaAndTate::
-# 1187 "data/global.pory"
+# 1186 "data/global.pory"
 	.string "Liza & Tate$"
 
 CommonText_Juan::
-# 1191 "data/global.pory"
+# 1190 "data/global.pory"
 	.string "Juan$"
 
 CommonText_Sidney::
-# 1195 "data/global.pory"
+# 1194 "data/global.pory"
 	.string "Sidney$"
 
 CommonText_Phoebe::
-# 1199 "data/global.pory"
+# 1198 "data/global.pory"
 	.string "Phoebe$"
 
 CommonText_Glacia::
-# 1203 "data/global.pory"
+# 1202 "data/global.pory"
 	.string "Glacia$"
 
 CommonText_Drake::
-# 1207 "data/global.pory"
+# 1206 "data/global.pory"
 	.string "Drake$"
 
 Text_TrickMasterIs_Puzzle1::
-# 1211 "data/global.pory"
+# 1210 "data/global.pory"
 	.string "fabulous$"
 
 Text_TrickMasterIs_Puzzle2::
-# 1215 "data/global.pory"
+# 1214 "data/global.pory"
 	.string "based$"
 
 Text_TrickMasterIs_Puzzle3::
-# 1219 "data/global.pory"
+# 1218 "data/global.pory"
 	.string "coveted$"
 
 Text_TrickMasterIs_Puzzle4::
-# 1223 "data/global.pory"
+# 1222 "data/global.pory"
 	.string "cool$"
 
 Text_TrickMasterIs_Puzzle5::
-# 1227 "data/global.pory"
+# 1226 "data/global.pory"
 	.string "a genius$"
 
 Text_TrickMasterIs_Puzzle6::
-# 1231 "data/global.pory"
+# 1230 "data/global.pory"
 	.string "my life$"
 
 Text_TrickMasterIs_Puzzle7::
-# 1235 "data/global.pory"
+# 1234 "data/global.pory"
 	.string "huggable$"
 
 Text_TrickMasterIs_Puzzle8::
-# 1239 "data/global.pory"
+# 1238 "data/global.pory"
 	.string "my love$"
 
 Text_TrickMasterIsBlank::
-# 1243 "data/global.pory"
+# 1242 "data/global.pory"
 	.string "{PLAYER} wrote down the secret code\n"
 	.string "on the door.\p"
 	.string "“Trick Master is {STR_VAR_1}.”\n"
@@ -2507,29 +2505,29 @@ Text_TrickMasterIsBlank::
 	.string "The lock clicked open!$"
 
 Text_2nd::
-# 1251 "data/global.pory"
+# 1250 "data/global.pory"
 	.string "2nd$"
 
 Text_3rd::
-# 1255 "data/global.pory"
+# 1254 "data/global.pory"
 	.string "3rd$"
 
 Text_4th::
-# 1259 "data/global.pory"
+# 1258 "data/global.pory"
 	.string "4th$"
 
 Text_5th::
-# 1263 "data/global.pory"
+# 1262 "data/global.pory"
 	.string "5th$"
 
 Text_6th::
-# 1267 "data/global.pory"
+# 1266 "data/global.pory"
 	.string "6th$"
 
 Text_7th::
-# 1271 "data/global.pory"
+# 1270 "data/global.pory"
 	.string "7th$"
 
 Text_System::
-# 1299 "data/global.pory"
+# 1298 "data/global.pory"
 	.string "System$"

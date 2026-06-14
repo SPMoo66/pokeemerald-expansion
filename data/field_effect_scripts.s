@@ -88,6 +88,7 @@ gFieldEffectScriptPointers::
 	.4byte gFldEffScript_SmileyFaceIcon    		        @ FLDEFF_SMILEY_FACE_ICON
 	.4byte gFieldEffectScript_HallOfFameRecordFrlg      @ FLDEFF_HALL_OF_FAME_RECORD_FRLG
 	.4byte gFldEffScript_PhotoFlash      		        @ FLDEFF_PHOTO_FLASH
+	.4byte gFieldEffectScript_OWE_SpawnAnim				@ FLDEFF_OW_ENCOUNTER_SPAWN_ANIM
 
 	.4byte gFieldEffectScript_MusicNoteIcon             @ FLDEFF_MUSIC_NOTE_ICON
 	.4byte gFieldEffectScript_SmileIcon                 @ FLDEFF_SMILE_ICON
@@ -441,4 +442,8 @@ gFieldEffectScript_TalkingIcon::
 
 gFieldEffectScript_ThinkingIcon::
 	field_eff_callnative FldEff_ThinkingIcon
+	field_eff_end
+
+gFieldEffectScript_OWE_SpawnAnim::
+	field_eff_callnative FldEff_OWE_SpawnAnim
 	field_eff_end

@@ -376,21 +376,19 @@ BattleMagearna::
 # 212 "data/magearna_encounter.pory"
 	special BattleSetup_StartLegendaryBattle
 # 213 "data/magearna_encounter.pory"
-	waitstate
-# 214 "data/magearna_encounter.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 215 "data/magearna_encounter.pory"
+# 214 "data/magearna_encounter.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 216 "data/magearna_encounter.pory"
+# 215 "data/magearna_encounter.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleMagearna_2
 BattleMagearna_1:
-# 219 "data/magearna_encounter.pory"
+# 218 "data/magearna_encounter.pory"
 	release
 	end
 
 BattleMagearna_2:
-# 217 "data/magearna_encounter.pory"
+# 216 "data/magearna_encounter.pory"
 	setflag FLAG_CAUGHT_MAGEARNA
 	goto BattleMagearna_1
 

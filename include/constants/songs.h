@@ -278,7 +278,6 @@
 #define SE_PIKE_CURTAIN_CLOSE             267 // SE_CURTAIN
 #define SE_PIKE_CURTAIN_OPEN              268 // SE_CURTAIN1
 #define SE_SUDOWOODO_SHAKE                269 // SE_USSOKI
-#define END_SE                            SE_SUDOWOODO_SHAKE
 // Bard SFX
 // These PH_* constants are phoneme sounds used by the "bard" NPC (see src/bard_music.c and src/mauville_old_man.c).
 // Each comes in a triplet of PH_*_BLEND, PH_*_HELD, and PH_*_SOLO, and the name of each triplet incorporates the English phonetic sound it represents.
@@ -340,7 +339,6 @@
 // Ruby & Sapphire Music 
 #define RS_MUSIC_START                    SONGS_START
 
-#define START_MUS                         322
 #define MUS_LITTLEROOT_TEST               322 // MUS_TETSUJI
 #define MUS_GSC_ROUTE38                   323 // MUS_FIELD13
 #define MUS_CAUGHT                        324 // MUS_KACHI22
@@ -960,7 +958,6 @@
 #define MUS_FF4_FIGHT_2                   905 // Fight 2 (Final Fantasy IV)
 #define MUS_XD_VS_CIPHER_PEON             906 // Battle! (Cipher Peon) (Pokémon XD: Gale of Darkness)
 
-#define END_MUS                           MUS_XD_VS_CIPHER_PEON
 #define SONGS_END                         MUS_XD_VS_CIPHER_PEON
 
 #define MUS_ROUTE118                      0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().

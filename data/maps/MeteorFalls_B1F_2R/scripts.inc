@@ -48,21 +48,19 @@ BattleDiancie::
 # 26 "data/maps/MeteorFalls_B1F_2R/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 27 "data/maps/MeteorFalls_B1F_2R/scripts.pory"
-	waitstate
-# 28 "data/maps/MeteorFalls_B1F_2R/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 29 "data/maps/MeteorFalls_B1F_2R/scripts.pory"
+# 28 "data/maps/MeteorFalls_B1F_2R/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 30 "data/maps/MeteorFalls_B1F_2R/scripts.pory"
+# 29 "data/maps/MeteorFalls_B1F_2R/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleDiancie_2
 BattleDiancie_1:
-# 33 "data/maps/MeteorFalls_B1F_2R/scripts.pory"
+# 32 "data/maps/MeteorFalls_B1F_2R/scripts.pory"
 	release
 	end
 
 BattleDiancie_2:
-# 31 "data/maps/MeteorFalls_B1F_2R/scripts.pory"
+# 30 "data/maps/MeteorFalls_B1F_2R/scripts.pory"
 	setflag FLAG_CAUGHT_DIANCIE
 	goto BattleDiancie_1
 

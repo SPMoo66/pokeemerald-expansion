@@ -280,6 +280,19 @@ static void SpriteCB_SlideCaughtMonToCenter(struct Sprite *sprite);
 static void PrintMonInfo(u32 num, u32, u32 owned, u32 newEntry);
 static void PrintMonHeight(u16 height, u8 left, u8 top);
 static void PrintMonWeight(u16 weight, u8 left, u8 top);
+static u32 GetMeasurementTextPositions(u32 textElement);
+static void PrintUnknownMonMeasurements(void);
+static u8* GetUnknownMonHeightString(void);
+static u8* GetUnknownMonWeightString(void);
+static u8* ReplaceDecimalSeparator(const u8* originalString);
+static void PrintOwnedMonMeasurements(enum Species species);
+static void PrintOwnedMonHeight(enum Species species);
+static void PrintOwnedMonWeight(enum Species species);
+static u8* ConvertMonHeightToImperialString(u32 height);
+static u8* ConvertMonHeightToMetricString(u32 height);
+static u8* ConvertMonWeightToImperialString(u32 weight);
+static u8* ConvertMonWeightToMetricString(u32 weight);
+static u8* ConvertMeasurementToMetricString(u32 num, u32* index);
 static void ResetOtherVideoRegisters(u16);
 static u8 PrintCryScreenSpeciesName(u8, u16, u8, u8);
 static void PrintDecimalNum(u8 windowId, u16 num, u8 left, u8 top);
@@ -2743,12 +2756,12 @@ static u8 ClearMonSprites(void)
     return FALSE;
 }
 
-static u16 GetPokemonSpriteToDisplay(u16 species)
+static u16 GetPokemonSpriteToDisplay(u16 index)
 {
-    if (species >= NATIONAL_DEX_COUNT || sPokedexView->pokedexList[species].dexNum == 0xFFFF)
+    if (index >= NATIONAL_DEX_COUNT || sPokedexView->pokedexList[index].dexNum == 0xFFFF)
         return 0xFFFF;
-    else if (sPokedexView->pokedexList[species].seen)
-        return sPokedexView->pokedexList[species].dexNum;
+    else if (sPokedexView->pokedexList[index].seen)
+        return sPokedexView->pokedexList[index].dexNum;
     else
         return 0;
 }
@@ -3998,7 +4011,7 @@ static void HighlightSubmenuScreenSelectBarItem(u8 a, u16 b)
 #define tPersonalityLo 14
 #define tPersonalityHi 15
 
-u8 DisplayCaughtMonDexPage(u16 species, bool32 isShiny, u32 personality)
+u8 DisplayCaughtMonDexPage(enum Species species, bool32 isShiny, u32 personality)
 {
     u8 taskId = 0;
     if (POKEDEX_PLUS_HGSS)
@@ -4021,7 +4034,7 @@ static void LoadDexMonPalette(u32 taskId, bool32 isShiny)
     LoadPalette(paletteData, OBJ_PLTT_ID(paletteNum), PLTT_SIZE_4BPP);
 }
 
-u32 Pokedex_CreateCaughtMonSprite(u32 species, s32 x, s32 y)
+u32 Pokedex_CreateCaughtMonSprite(enum Species species, s32 x, s32 y)
 {
     u32 spriteId;
 
@@ -4035,7 +4048,7 @@ u32 Pokedex_CreateCaughtMonSprite(u32 species, s32 x, s32 y)
 static void Task_DisplayCaughtMonDexPage(u8 taskId)
 {
     u8 spriteId;
-    u16 species = gTasks[taskId].tSpecies;
+    enum Species species = gTasks[taskId].tSpecies;
     enum NationalDexOrder dexNum = SpeciesToNationalPokedexNum(species);
 
     switch (gTasks[taskId].tState)
@@ -4176,7 +4189,7 @@ static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
 {
     u8 str[0x10];
     u8 str2[0x30];
-    u16 species;
+    enum Species species;
     const u8 *name;
     const u8 *category;
     const u8 *description;
@@ -4403,6 +4416,291 @@ static void PrintMonWeight(u16 weight, u8 left, u8 top)
         buffer_metric[2] = offset;
         PrintInfoScreenText(buffer_metric, left, top);
     }
+}
+
+void PrintMonMeasurements(enum Species species, u32 owned)
+{
+    u32 x = GetMeasurementTextPositions(DEX_HEADER_X);
+    u32 yTop = GetMeasurementTextPositions(DEX_Y_TOP);
+    u32 yBottom = GetMeasurementTextPositions(DEX_Y_BOTTOM);
+
+    PrintInfoScreenText(gText_HTHeight, x, yTop);
+    PrintInfoScreenText(gText_WTWeight, x, yBottom);
+
+    if (owned)
+        PrintOwnedMonMeasurements(species);
+    else
+        PrintUnknownMonMeasurements();
+}
+
+static u32 GetMeasurementTextPositions(u32 textElement)
+{
+    if (!POKEDEX_PLUS_HGSS)
+        return textElement;
+
+    switch (textElement)
+    {
+    case DEX_HEADER_X:
+        return (DEX_HEADER_X + DEX_HGSS_HEADER_X_PADDING);
+    case DEX_Y_TOP:
+        return (DEX_Y_TOP + DEX_HGSS_Y_TOP_PADDING);
+    case DEX_Y_BOTTOM:
+        return (DEX_Y_BOTTOM + DEX_HGSS_Y_BOTTOM_PADDING);
+    default:
+    case DEX_MEASUREMENT_X:
+        return (DEX_MEASUREMENT_X + DEX_HGSS_MEASUREMENT_X_PADDING);
+    }
+}
+
+static void PrintUnknownMonMeasurements(void)
+{
+    u8* heightString = GetUnknownMonHeightString();
+    u8* weightString = GetUnknownMonWeightString();
+
+    u32 x = GetMeasurementTextPositions(DEX_MEASUREMENT_X);
+    u32 yTop = GetMeasurementTextPositions(DEX_Y_TOP);
+    u32 yBottom = GetMeasurementTextPositions(DEX_Y_BOTTOM);
+
+    PrintInfoScreenText(heightString, x, yTop);
+    PrintInfoScreenText(weightString, x, yBottom);
+
+    Free(heightString);
+    Free(weightString);
+}
+
+static u8* GetUnknownMonHeightString(void)
+{
+    if (UNITS == UNITS_IMPERIAL)
+        return ReplaceDecimalSeparator(gText_UnkHeight);
+    else
+        return ReplaceDecimalSeparator(gText_UnkHeightMetric);
+}
+
+static u8* GetUnknownMonWeightString(void)
+{
+    if (UNITS == UNITS_IMPERIAL)
+        return ReplaceDecimalSeparator(gText_UnkWeight);
+    else
+        return ReplaceDecimalSeparator(gText_UnkWeightMetric);
+}
+
+static u8* ReplaceDecimalSeparator(const u8* originalString)
+{
+    bool32 replaced = FALSE;
+    u32 length = StringLength(originalString), i;
+    u8* modifiedString = Alloc(WEIGHT_HEIGHT_STR_MEM);
+
+    for (i = 0; i < length; i++)
+    {
+        if ((originalString[i] != CHAR_PERIOD) || replaced)
+        {
+            modifiedString[i] = originalString[i];
+            continue;
+        }
+
+        modifiedString[i] = CHAR_DEC_SEPARATOR;
+        replaced = TRUE;
+    }
+    modifiedString[length] = EOS;
+    return modifiedString;
+}
+
+static void PrintOwnedMonMeasurements(enum Species species)
+{
+    PrintOwnedMonHeight(species);
+    PrintOwnedMonWeight(species);
+}
+
+static void PrintOwnedMonHeight(enum Species species)
+{
+    u32 height = GetSpeciesHeight(species);
+    u8* heightString;
+
+    u32 x = GetMeasurementTextPositions(DEX_MEASUREMENT_X);
+    u32 yTop = GetMeasurementTextPositions(DEX_Y_TOP);
+
+    heightString = ConvertMonHeightToString(height);
+
+    PrintInfoScreenText(heightString, x, yTop);
+    Free(heightString);
+}
+
+u8* ConvertMonHeightToString(u32 height)
+{
+    if (UNITS == UNITS_IMPERIAL)
+        return ConvertMonHeightToImperialString(height);
+    else
+        return ConvertMonHeightToMetricString(height);
+}
+
+static void PrintOwnedMonWeight(enum Species species)
+{
+    u32 weight = GetSpeciesWeight(species);
+    u8* weightString;
+    u32 x = GetMeasurementTextPositions(DEX_MEASUREMENT_X);
+    u32 yBottom = GetMeasurementTextPositions(DEX_Y_BOTTOM);
+
+    weightString = ConvertMonWeightToString(weight);
+
+    PrintInfoScreenText(weightString, x, yBottom);
+    Free(weightString);
+}
+
+u8* ConvertMonWeightToString(u32 weight)
+{
+    if (UNITS == UNITS_IMPERIAL)
+        return ConvertMonWeightToImperialString(weight);
+    else
+        return ConvertMonWeightToMetricString(weight);
+}
+
+static u8* ConvertMonHeightToImperialString(u32 height)
+{
+    u8* heightString = Alloc(WEIGHT_HEIGHT_STR_MEM);
+    u32 inches, feet, index = 0;
+
+    inches = (height * 10000) / CM_PER_INCH_FACTOR;
+    if (inches % 10 >= 5)
+        inches += 10;
+    feet = inches / INCHES_IN_FOOT_FACTOR;
+    inches = (inches - (feet * INCHES_IN_FOOT_FACTOR)) / 10;
+
+    heightString[index++] = EXT_CTRL_CODE_BEGIN;
+    heightString[index++] = EXT_CTRL_CODE_CLEAR_TO;
+    if (feet / 10 == 0)
+    {
+        heightString[index++] = INCHES_IN_ONE_AND_HALF_FOOT;
+        heightString[index++] = feet + CHAR_0;
+    }
+    else
+    {
+        heightString[index++] = INCHES_IN_FOOT;
+        heightString[index++] = feet / 10 + CHAR_0;
+        heightString[index++] = (feet % 10) + CHAR_0;
+    }
+    heightString[index++] = CHAR_SGL_QUOTE_RIGHT;
+    heightString[index++] = (inches / 10) + CHAR_0;
+    heightString[index++] = (inches % 10) + CHAR_0;
+    heightString[index++] = CHAR_DBL_QUOTE_RIGHT;
+    heightString[index++] = EOS;
+
+    return heightString;
+}
+
+static u8* ConvertMonHeightToMetricString(u32 height)
+{
+    u32 index = 0;
+    u8* heightString = ConvertMeasurementToMetricString(height, &index);
+
+    heightString[index++] = CHAR_m;
+    heightString[index++] = EOS;
+    return heightString;
+}
+
+static u8* ConvertMonWeightToImperialString(u32 weight)
+{
+    u8* weightString = Alloc(WEIGHT_HEIGHT_STR_MEM);
+    bool32 output = FALSE;
+    u32 index = 0, lbs = (u32)(((u64)weight * 10000000) / DECAGRAMS_IN_POUND);
+
+    if (lbs % 10u >= 5)
+        lbs += 10;
+
+    if ((weightString[index] = (lbs / 100000) + CHAR_0) == CHAR_0 && !output)
+    {
+        weightString[index++] = CHAR_SPACER;
+    }
+    else
+    {
+        output = TRUE;
+        index++;
+    }
+
+    lbs %= 100000;
+    if ((weightString[index] = (lbs / 10000) + CHAR_0) == CHAR_0 && !output)
+    {
+        weightString[index++] = CHAR_SPACER;
+    }
+    else
+    {
+        output = TRUE;
+        index++;
+    }
+
+    lbs %= 10000;
+    if ((weightString[index] = (lbs / 1000) + CHAR_0) == CHAR_0 && !output)
+    {
+        weightString[index++] = CHAR_SPACER;
+    }
+    else
+    {
+        output = TRUE;
+        index++;
+    }
+
+    lbs %= 1000;
+    weightString[index++] = (lbs / 100) + CHAR_0;
+    lbs %= 100;
+    weightString[index++] = CHAR_DEC_SEPARATOR;
+    weightString[index++] = (lbs / 10) + CHAR_0;
+    weightString[index++] = CHAR_SPACE;
+    weightString[index++] = CHAR_l;
+    weightString[index++] = CHAR_b;
+    weightString[index++] = CHAR_s;
+    weightString[index++] = CHAR_PERIOD;
+    weightString[index++] = EOS;
+
+    return weightString;
+}
+
+static u8* ConvertMonWeightToMetricString(u32 weight)
+{
+    u32 index = 0;
+    u8* weightString = ConvertMeasurementToMetricString(weight, &index);
+
+    weightString[index++] = CHAR_k;
+    weightString[index++] = CHAR_g;
+    weightString[index++] = CHAR_PERIOD;
+    weightString[index++] = EOS;
+    return weightString;
+}
+
+static u8* ConvertMeasurementToMetricString(u32 num, u32* index)
+{
+    u8* string = Alloc(WEIGHT_HEIGHT_STR_MEM);
+    bool32 outputted = FALSE;
+    u32 result;
+
+    result = num / 1000;
+    if (result == 0)
+    {
+        string[(*index)++] = CHAR_SPACER;
+        outputted = FALSE;
+    }
+    else
+    {
+        string[(*index)++] = CHAR_0 + result;
+        outputted = TRUE;
+    }
+
+    result = (num % 1000) / 100;
+    if (result == 0 && !outputted)
+    {
+        string[(*index)++] = CHAR_SPACER;
+        outputted = FALSE;
+    }
+    else
+    {
+        string[(*index)++] = CHAR_0 + result;
+        outputted = TRUE;
+    }
+
+    string[(*index)++] = CHAR_0 + ((num % 1000) % 100) / 10;
+    string[(*index)++] = CHAR_DEC_SEPARATOR;
+    string[(*index)++] = CHAR_0 + ((num % 1000) % 100) % 10;
+    string[(*index)++] = CHAR_SPACE;
+
+    return string;
 }
 
 s8 GetSetPokedexFlag(enum NationalDexOrder nationalDexNo, u8 caseID)
@@ -4710,7 +5008,7 @@ static void UNUSED PrintDecimalNum(u8 windowId, u16 num, u8 left, u8 top)
 
 #define NUM_FOOTPRINT_TILES  4
 
-void DrawFootprint(u8 windowId, u16 species)
+void DrawFootprint(u8 windowId, enum Species species)
 {
     u8 ALIGNED(4) footprint4bpp[TILE_SIZE_4BPP * NUM_FOOTPRINT_TILES];
     const u8 *footprintGfx = NULL;
@@ -4789,7 +5087,7 @@ static u16 GetNextPosition(u8 direction, u16 position, u16 min, u16 max)
 
 // Unown and Spinda use the personality of the first seen individual of that species
 // All others use personality 0
-static u32 GetPokedexMonPersonality(u16 species)
+static u32 GetPokedexMonPersonality(enum Species species)
 {
     if (species == SPECIES_UNOWN || species == SPECIES_SPINDA)
     {
@@ -4806,8 +5104,8 @@ static u32 GetPokedexMonPersonality(u16 species)
 
 u16 CreateMonSpriteFromNationalDexNumber(enum NationalDexOrder nationalNum, s16 x, s16 y, u16 paletteSlot)
 {
-    nationalNum = NationalPokedexNumToSpecies(nationalNum);
-    return CreateMonPicSprite(nationalNum, FALSE, GetPokedexMonPersonality(nationalNum), TRUE, x, y, paletteSlot, TAG_NONE);
+    enum Species species = NationalPokedexNumToSpecies(nationalNum);
+    return CreateMonPicSprite(species, FALSE, GetPokedexMonPersonality(species), TRUE, x, y, paletteSlot, TAG_NONE);
 }
 
 static u16 GetPokemonScaleFromNationalDexNumber(u16 nationalNum)
@@ -4841,7 +5139,7 @@ static u16 CreateSizeScreenTrainerPic(u16 species, s16 x, s16 y, s8 paletteSlot)
 
 static int DoPokedexSearch(u8 dexMode, u8 order, u8 abcGroup, enum BodyColor bodyColor, enum Type type1, enum Type type2)
 {
-    u16 species;
+    enum Species species;
     u16 i;
     u16 resultsCount;
     enum Type types[2];

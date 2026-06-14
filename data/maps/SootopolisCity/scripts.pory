@@ -1362,7 +1362,6 @@ script SootopolisCity_EventScript_StartRayquazaScene {
 	special (SavePlayerParty)
 	fadescreen (FADE_TO_BLACK)
 	special (ChooseHalfPartyForBattle)
-	waitstate
 	setflag (FLAG_WILD_PARTNER)
 	setflag (FLAG_NO_CATCHING)
 	setflag (FLAG_NO_RUNNING)
@@ -1372,7 +1371,6 @@ script SootopolisCity_EventScript_StartRayquazaScene {
 	if (var(VAR_RESULT) != 1) {
 		fadescreen (FADE_TO_BLACK)
 		special (SetCB2WhiteOut)
-		waitstate
 	}
 	else {
 		fadescreenspeed (FADE_TO_BLACK, 2)
@@ -1491,10 +1489,7 @@ script SootopolisCity_EventScript_Kiri {
 			}
 			else {
 				msgbox (SootopolisCity_Text_NameIsKiriHaveOneOfThese, MSGBOX_DEFAULT)
-				random (NUM_KIRI_BERRIES)
-				addvar (VAR_RESULT, NUM_KIRI_BERRIES_SKIPPED)
-				addvar (VAR_RESULT, FIRST_BERRY_INDEX)
-				giveitem (VAR_RESULT)
+				giverandomberry (BERRY_ID_POMEG, BERRY_ID_NOMEL)
 				if (var(VAR_RESULT) == FALSE) {
 					goto (Common_EventScript_ShowBagIsFull)
 				}

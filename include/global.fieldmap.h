@@ -234,7 +234,7 @@ struct MapHeader
     /* 0x15 */ u8 cave;
     /* 0x16 */ u8 weather;
     /* 0x17 */ u8 mapType;
-    /* 0x18 */ u8 filler_18;
+    /* 0x18 */ u8 floorNumber;
     /* 0x19 */ u8 region;
                // fields correspond to the arguments in the map_header_flags macro
     /* 0x1A */ bool8 allowCycling:1;

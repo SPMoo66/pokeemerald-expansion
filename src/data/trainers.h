@@ -3,7 +3,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _(""),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -16,7 +16,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Sawyer"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -28,7 +28,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -40,7 +40,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -52,7 +52,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -64,7 +64,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -76,7 +76,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -88,7 +88,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -100,7 +100,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -112,7 +112,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("Gabrielle"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -124,7 +124,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -136,7 +136,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Marcel"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -148,7 +148,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Alberto"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -160,7 +160,7 @@
     {
         .trainerClass = TRAINER_CLASS_COLLECTOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_COLLECTOR,
+        .trainerPic = TRAINER_PIC_COLLECTOR,
         .trainerName = _("Ed"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -172,7 +172,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -184,7 +184,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Declan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -196,7 +196,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -208,7 +208,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -220,7 +220,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -232,7 +232,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -244,7 +244,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -256,7 +256,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -268,7 +268,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -280,7 +280,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -292,7 +292,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -304,7 +304,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -316,7 +316,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -328,7 +328,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -340,7 +340,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -352,7 +352,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_M,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
         .trainerName = _("Fredrick"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -364,7 +364,7 @@
     {
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_ADMIN_MATT,
+        .trainerPic = TRAINER_PIC_AQUA_ADMIN_MATT,
         .trainerName = _("Matt"),
         .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -376,7 +376,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Zander"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -388,7 +388,7 @@
     {
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_ADMIN_SHELLY,
+        .trainerPic = TRAINER_PIC_AQUA_ADMIN_SHELLY,
         .trainerName = _("Shelly"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -400,7 +400,7 @@
     {
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_ADMIN_SHELLY,
+        .trainerPic = TRAINER_PIC_AQUA_ADMIN_SHELLY,
         .trainerName = _("Shelly"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -412,7 +412,7 @@
     {
         .trainerClass = TRAINER_CLASS_AQUA_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_LEADER_ARCHIE,
+        .trainerPic = TRAINER_PIC_AQUA_LEADER_ARCHIE,
         .trainerName = _("Archie"),
         .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -424,7 +424,7 @@
     {
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .trainerName = _("Leah"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -436,7 +436,7 @@
     {
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .trainerName = _("Daisy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -448,7 +448,7 @@
     {
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .trainerName = _("Rose"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -460,7 +460,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Felix"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -472,7 +472,7 @@
     {
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .trainerName = _("Violet"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -484,7 +484,7 @@
     {
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .trainerName = _("Rose"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -496,7 +496,7 @@
     {
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .trainerName = _("Rose"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -508,7 +508,7 @@
     {
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .trainerName = _("Rose"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -520,7 +520,7 @@
     {
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .trainerName = _("Rose"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -532,7 +532,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Dusty"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -544,7 +544,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Chip"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -556,7 +556,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Foster"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -568,7 +568,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Dusty"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -580,7 +580,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Dusty"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -592,7 +592,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Dusty"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -604,7 +604,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Dusty"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -616,7 +616,7 @@
     {
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_FRONT_INTERVIEWER,
+        .trainerPic = TRAINER_PIC_INTERVIEWER,
         .trainerName = _("Gabby & Ty"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -628,7 +628,7 @@
     {
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_FRONT_INTERVIEWER,
+        .trainerPic = TRAINER_PIC_INTERVIEWER,
         .trainerName = _("Gabby & Ty"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -640,7 +640,7 @@
     {
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_FRONT_INTERVIEWER,
+        .trainerPic = TRAINER_PIC_INTERVIEWER,
         .trainerName = _("Gabby & Ty"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -652,7 +652,7 @@
     {
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_FRONT_INTERVIEWER,
+        .trainerPic = TRAINER_PIC_INTERVIEWER,
         .trainerName = _("Gabby & Ty"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -664,7 +664,7 @@
     {
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_FRONT_INTERVIEWER,
+        .trainerPic = TRAINER_PIC_INTERVIEWER,
         .trainerName = _("Gabby & Ty"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -676,7 +676,7 @@
     {
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_FRONT_INTERVIEWER,
+        .trainerPic = TRAINER_PIC_INTERVIEWER,
         .trainerName = _("Gabby & Ty"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -688,7 +688,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_F,
+        .trainerPic = TRAINER_PIC_TUBER_F,
         .trainerName = _("Lola"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -700,7 +700,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_F,
+        .trainerPic = TRAINER_PIC_TUBER_F,
         .trainerName = _("Austina"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -712,7 +712,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_F,
+        .trainerPic = TRAINER_PIC_TUBER_F,
         .trainerName = _("Gwen"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -724,7 +724,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_F,
+        .trainerPic = TRAINER_PIC_TUBER_F,
         .trainerName = _("Lola"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -736,7 +736,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_F,
+        .trainerPic = TRAINER_PIC_TUBER_F,
         .trainerName = _("Lola"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -748,7 +748,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_F,
+        .trainerPic = TRAINER_PIC_TUBER_F,
         .trainerName = _("Lola"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -760,7 +760,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_F,
+        .trainerPic = TRAINER_PIC_TUBER_F,
         .trainerName = _("Lola"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -772,7 +772,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_M,
+        .trainerPic = TRAINER_PIC_TUBER_M,
         .trainerName = _("Ricky"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -784,7 +784,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_M,
+        .trainerPic = TRAINER_PIC_TUBER_M,
         .trainerName = _("Simon"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -796,7 +796,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_M,
+        .trainerPic = TRAINER_PIC_TUBER_M,
         .trainerName = _("Charlie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -808,7 +808,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_M,
+        .trainerPic = TRAINER_PIC_TUBER_M,
         .trainerName = _("Ricky"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -820,7 +820,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_M,
+        .trainerPic = TRAINER_PIC_TUBER_M,
         .trainerName = _("Ricky"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -832,7 +832,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_M,
+        .trainerPic = TRAINER_PIC_TUBER_M,
         .trainerName = _("Ricky"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -844,7 +844,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_M,
+        .trainerPic = TRAINER_PIC_TUBER_M,
         .trainerName = _("Ricky"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -856,7 +856,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Randall"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -868,7 +868,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Parker"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -880,7 +880,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("George"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -892,7 +892,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Berke"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -904,7 +904,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Braxton"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -916,7 +916,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Vincent"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -928,7 +928,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Leroy"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -940,7 +940,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Wilton"),
         .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -952,7 +952,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Edgar"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -964,7 +964,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Albert"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -976,7 +976,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Samuel"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -988,7 +988,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Vito"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1000,7 +1000,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Owen"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1012,7 +1012,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Wilton"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1024,7 +1024,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Wilton"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1036,7 +1036,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Wilton"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1048,7 +1048,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Wilton"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1060,7 +1060,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Warren"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1072,7 +1072,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Mary"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1084,7 +1084,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Alexia"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1096,7 +1096,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Jody"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1108,7 +1108,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Wendy"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1120,7 +1120,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Keira"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1132,7 +1132,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Brooke"),
         .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1144,7 +1144,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Jennifer"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1156,7 +1156,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Hope"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1168,7 +1168,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Shannon"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1180,7 +1180,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Michelle"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1192,7 +1192,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Caroline"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1204,7 +1204,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Julie"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1216,7 +1216,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Brooke"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1228,7 +1228,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Brooke"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1240,7 +1240,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Brooke"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1252,7 +1252,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Brooke"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1264,7 +1264,7 @@
     {
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .trainerName = _("Patricia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1276,7 +1276,7 @@
     {
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .trainerName = _("Kindra"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1288,7 +1288,7 @@
     {
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .trainerName = _("Tammy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1300,7 +1300,7 @@
     {
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .trainerName = _("Valerie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1312,7 +1312,7 @@
     {
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .trainerName = _("Tasha"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1324,7 +1324,7 @@
     {
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .trainerName = _("Valerie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1336,7 +1336,7 @@
     {
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .trainerName = _("Valerie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1348,7 +1348,7 @@
     {
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .trainerName = _("Valerie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1360,7 +1360,7 @@
     {
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .trainerName = _("Valerie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1372,7 +1372,7 @@
     {
         .trainerClass = TRAINER_CLASS_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LADY,
+        .trainerPic = TRAINER_PIC_LADY,
         .trainerName = _("Cindy"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1384,7 +1384,7 @@
     {
         .trainerClass = TRAINER_CLASS_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LADY,
+        .trainerPic = TRAINER_PIC_LADY,
         .trainerName = _("Daphne"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1396,7 +1396,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1408,7 +1408,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Evelyn"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1420,7 +1420,7 @@
     {
         .trainerClass = TRAINER_CLASS_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LADY,
+        .trainerPic = TRAINER_PIC_LADY,
         .trainerName = _("Brianna"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1432,7 +1432,7 @@
     {
         .trainerClass = TRAINER_CLASS_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LADY,
+        .trainerPic = TRAINER_PIC_LADY,
         .trainerName = _("Naomi"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1444,7 +1444,7 @@
     {
         .trainerClass = TRAINER_CLASS_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LADY,
+        .trainerPic = TRAINER_PIC_LADY,
         .trainerName = _("Cindy"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1456,7 +1456,7 @@
     {
         .trainerClass = TRAINER_CLASS_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LADY,
+        .trainerPic = TRAINER_PIC_LADY,
         .trainerName = _("Cindy"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1468,7 +1468,7 @@
     {
         .trainerClass = TRAINER_CLASS_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LADY,
+        .trainerPic = TRAINER_PIC_LADY,
         .trainerName = _("Cindy"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1480,7 +1480,7 @@
     {
         .trainerClass = TRAINER_CLASS_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LADY,
+        .trainerPic = TRAINER_PIC_LADY,
         .trainerName = _("Cindy"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1492,7 +1492,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Melissa"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1504,7 +1504,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Sheila"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1516,7 +1516,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Shirley"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1528,7 +1528,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Jessica"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1540,7 +1540,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Connie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1552,7 +1552,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Bridget"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1564,7 +1564,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Olivia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1576,7 +1576,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Tiffany"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1588,7 +1588,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Jessica"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1600,7 +1600,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Jessica"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1612,7 +1612,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Jessica"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1624,7 +1624,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Jessica"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1636,7 +1636,7 @@
     {
         .trainerClass = TRAINER_CLASS_RICH_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_RICH_BOY,
+        .trainerPic = TRAINER_PIC_RICH_BOY,
         .trainerName = _("Winston"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1648,7 +1648,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_F,
+        .trainerPic = TRAINER_PIC_EXPERT_F,
         .trainerName = _("Mollie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1660,7 +1660,7 @@
     {
         .trainerClass = TRAINER_CLASS_RICH_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_RICH_BOY,
+        .trainerPic = TRAINER_PIC_RICH_BOY,
         .trainerName = _("Garret"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1672,7 +1672,7 @@
     {
         .trainerClass = TRAINER_CLASS_RICH_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_RICH_BOY,
+        .trainerPic = TRAINER_PIC_RICH_BOY,
         .trainerName = _("Winston"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1684,7 +1684,7 @@
     {
         .trainerClass = TRAINER_CLASS_RICH_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_RICH_BOY,
+        .trainerPic = TRAINER_PIC_RICH_BOY,
         .trainerName = _("Winston"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1696,7 +1696,7 @@
     {
         .trainerClass = TRAINER_CLASS_RICH_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_RICH_BOY,
+        .trainerPic = TRAINER_PIC_RICH_BOY,
         .trainerName = _("Winston"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1708,7 +1708,7 @@
     {
         .trainerClass = TRAINER_CLASS_RICH_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_RICH_BOY,
+        .trainerPic = TRAINER_PIC_RICH_BOY,
         .trainerName = _("Winston"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1720,7 +1720,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC,
+        .trainerPic = TRAINER_PIC_POKEMANIAC,
         .trainerName = _("Steve"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1732,7 +1732,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Thalia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1744,7 +1744,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC,
+        .trainerPic = TRAINER_PIC_POKEMANIAC,
         .trainerName = _("Mark"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1756,7 +1756,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1768,7 +1768,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC,
+        .trainerPic = TRAINER_PIC_POKEMANIAC,
         .trainerName = _("Steve"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1780,7 +1780,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC,
+        .trainerPic = TRAINER_PIC_POKEMANIAC,
         .trainerName = _("Steve"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1792,7 +1792,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC,
+        .trainerPic = TRAINER_PIC_POKEMANIAC,
         .trainerName = _("Steve"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1804,7 +1804,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC,
+        .trainerPic = TRAINER_PIC_POKEMANIAC,
         .trainerName = _("Steve"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1816,7 +1816,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Luis"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1828,7 +1828,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Dominik"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1840,7 +1840,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Douglas"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1852,7 +1852,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Darrin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1864,7 +1864,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Tony"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1876,7 +1876,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Jerome"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1888,7 +1888,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Matthew"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1900,7 +1900,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("David"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1912,7 +1912,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Spencer"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1924,7 +1924,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Roland"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1936,7 +1936,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Nolen"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1948,7 +1948,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Stan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1960,7 +1960,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Barry"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1972,7 +1972,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Dean"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1984,7 +1984,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Rodney"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -1996,7 +1996,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Richard"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2008,7 +2008,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Herman"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2020,7 +2020,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Santiago"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2032,7 +2032,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Gilbert"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2044,7 +2044,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Franklin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2056,7 +2056,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Kevin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2068,7 +2068,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Jack"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2080,7 +2080,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Logan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2092,7 +2092,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Chad"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2104,7 +2104,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Tony"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2116,7 +2116,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Tony"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2128,7 +2128,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Tony"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2140,7 +2140,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Tony"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2152,7 +2152,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Takao"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2164,7 +2164,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Hitoshi"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2176,7 +2176,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Kiyo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2188,7 +2188,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Koichi"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2200,7 +2200,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Nob"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2212,7 +2212,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Nob"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2224,7 +2224,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Nob"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2236,7 +2236,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Nob"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2248,7 +2248,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Nob"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2260,7 +2260,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Yuji"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2272,7 +2272,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Daisuke"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2284,7 +2284,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Atsushi"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2296,7 +2296,7 @@
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST,
         .trainerName = _("Kirk"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2308,7 +2308,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2320,7 +2320,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2332,7 +2332,7 @@
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST,
         .trainerName = _("Shawn"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2344,7 +2344,7 @@
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST,
         .trainerName = _("Fernando"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2356,7 +2356,7 @@
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST,
         .trainerName = _("Dalton"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2368,7 +2368,7 @@
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST,
         .trainerName = _("Dalton"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2380,7 +2380,7 @@
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST,
         .trainerName = _("Dalton"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2392,7 +2392,7 @@
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST,
         .trainerName = _("Dalton"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2404,7 +2404,7 @@
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST,
         .trainerName = _("Dalton"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2416,7 +2416,7 @@
     {
         .trainerClass = TRAINER_CLASS_KINDLER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_KINDLER,
+        .trainerPic = TRAINER_PIC_KINDLER,
         .trainerName = _("Cole"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2428,7 +2428,7 @@
     {
         .trainerClass = TRAINER_CLASS_KINDLER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_KINDLER,
+        .trainerPic = TRAINER_PIC_KINDLER,
         .trainerName = _("Jeff"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2440,7 +2440,7 @@
     {
         .trainerClass = TRAINER_CLASS_KINDLER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_KINDLER,
+        .trainerPic = TRAINER_PIC_KINDLER,
         .trainerName = _("Axle"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2452,7 +2452,7 @@
     {
         .trainerClass = TRAINER_CLASS_KINDLER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_KINDLER,
+        .trainerPic = TRAINER_PIC_KINDLER,
         .trainerName = _("Jace"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2464,7 +2464,7 @@
     {
         .trainerClass = TRAINER_CLASS_KINDLER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_KINDLER,
+        .trainerPic = TRAINER_PIC_KINDLER,
         .trainerName = _("Keegan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2476,7 +2476,7 @@
     {
         .trainerClass = TRAINER_CLASS_KINDLER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_KINDLER,
+        .trainerPic = TRAINER_PIC_KINDLER,
         .trainerName = _("Bernie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2488,7 +2488,7 @@
     {
         .trainerClass = TRAINER_CLASS_KINDLER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_KINDLER,
+        .trainerPic = TRAINER_PIC_KINDLER,
         .trainerName = _("Bernie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2500,7 +2500,7 @@
     {
         .trainerClass = TRAINER_CLASS_KINDLER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_KINDLER,
+        .trainerPic = TRAINER_PIC_KINDLER,
         .trainerName = _("Bernie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2512,7 +2512,7 @@
     {
         .trainerClass = TRAINER_CLASS_KINDLER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_KINDLER,
+        .trainerPic = TRAINER_PIC_KINDLER,
         .trainerName = _("Bernie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2524,7 +2524,7 @@
     {
         .trainerClass = TRAINER_CLASS_KINDLER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_KINDLER,
+        .trainerPic = TRAINER_PIC_KINDLER,
         .trainerName = _("Bernie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2536,7 +2536,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Drew"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2548,7 +2548,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Beau"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2560,7 +2560,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Larry"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2572,7 +2572,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Shane"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2584,7 +2584,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Justin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2596,7 +2596,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Ethan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2608,7 +2608,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Autumn"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2620,7 +2620,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Travis"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2632,7 +2632,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Ethan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2644,7 +2644,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Ethan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2656,7 +2656,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Ethan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2668,7 +2668,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Ethan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2680,7 +2680,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_MANIAC,
+        .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .trainerName = _("Brent"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2692,7 +2692,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_MANIAC,
+        .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .trainerName = _("Donald"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2704,7 +2704,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_MANIAC,
+        .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .trainerName = _("Taylor"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2716,7 +2716,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_MANIAC,
+        .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .trainerName = _("Jeffrey"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2728,7 +2728,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_MANIAC,
+        .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .trainerName = _("Derek"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2740,7 +2740,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_MANIAC,
+        .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .trainerName = _("Jeffrey"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2752,7 +2752,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_MANIAC,
+        .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .trainerName = _("Jeffrey"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2764,7 +2764,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_MANIAC,
+        .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .trainerName = _("Jeffrey"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2776,7 +2776,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_MANIAC,
+        .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .trainerName = _("Jeffrey"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2788,7 +2788,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .trainerName = _("Edward"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2800,7 +2800,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .trainerName = _("Preston"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2812,7 +2812,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .trainerName = _("Virgil"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2824,7 +2824,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .trainerName = _("Blake"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2836,7 +2836,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .trainerName = _("William"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2848,7 +2848,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .trainerName = _("Joshua"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2860,7 +2860,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .trainerName = _("Cameron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2872,7 +2872,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .trainerName = _("Cameron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2884,7 +2884,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .trainerName = _("Cameron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2896,7 +2896,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .trainerName = _("Cameron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2908,7 +2908,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .trainerName = _("Cameron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2920,7 +2920,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Jaclyn"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2932,7 +2932,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Hannah"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2944,7 +2944,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Samantha"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2956,7 +2956,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Maura"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2968,7 +2968,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Kayla"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2980,7 +2980,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Alexis"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -2992,7 +2992,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Jacki"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3004,7 +3004,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Jacki"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3016,7 +3016,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Jacki"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3028,7 +3028,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Jacki"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3040,7 +3040,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Jacki"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3052,7 +3052,7 @@
     {
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
         .trainerName = _("Walter"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3064,7 +3064,7 @@
     {
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
         .trainerName = _("Micah"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3076,7 +3076,7 @@
     {
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
         .trainerName = _("Thomas"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3088,7 +3088,7 @@
     {
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
         .trainerName = _("Walter"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3100,7 +3100,7 @@
     {
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
         .trainerName = _("Walter"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3112,7 +3112,7 @@
     {
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
         .trainerName = _("Walter"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3124,7 +3124,7 @@
     {
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
         .trainerName = _("Walter"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3136,7 +3136,7 @@
     {
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_SIDNEY,
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_SIDNEY,
         .trainerName = _("Sidney"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3149,7 +3149,7 @@
     {
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_PHOEBE,
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_PHOEBE,
         .trainerName = _("Phoebe"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3162,7 +3162,7 @@
     {
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_GLACIA,
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_GLACIA,
         .trainerName = _("Glacia"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3175,7 +3175,7 @@
     {
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_DRAKE,
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_DRAKE,
         .trainerName = _("Drake"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3188,7 +3188,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_ROXANNE,
+        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
         .trainerName = _("Roxanne"),
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .mugshotColor = MUGSHOT_COLOR_ICE,
@@ -3200,7 +3200,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_BRAWLY,
+        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
         .trainerName = _("Brawly"),
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .mugshotColor = MUGSHOT_COLOR_PURPLE,
@@ -3212,7 +3212,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_WATTSON,
+        .trainerPic = TRAINER_PIC_LEADER_WATTSON,
         .trainerName = _("Wattson"),
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .mugshotColor = MUGSHOT_COLOR_STEEL,
@@ -3224,7 +3224,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_FLANNERY,
+        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
         .trainerName = _("Flannery"),
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .mugshotColor = MUGSHOT_COLOR_BLUE,
@@ -3236,7 +3236,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_NORMAN,
+        .trainerPic = TRAINER_PIC_LEADER_NORMAN,
         .trainerName = _("Norman"),
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .mugshotColor = MUGSHOT_COLOR_FIRE,
@@ -3248,7 +3248,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_WINONA,
+        .trainerPic = TRAINER_PIC_LEADER_WINONA,
         .trainerName = _("Winona"),
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .mugshotColor = MUGSHOT_COLOR_GRASS,
@@ -3260,7 +3260,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_TATE_AND_LIZA,
+        .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
         .trainerName = _("Tate&Liza"),
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .mugshotColor = MUGSHOT_COLOR_ELECTRIC,
@@ -3272,7 +3272,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_JUAN,
+        .trainerPic = TRAINER_PIC_LEADER_JUAN,
         .trainerName = _("Juan"),
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .mugshotColor = MUGSHOT_COLOR_DRAGON,
@@ -3284,7 +3284,7 @@
     {
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_M,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
         .trainerName = _("Jerry"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3296,7 +3296,7 @@
     {
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_M,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
         .trainerName = _("Ted"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3308,7 +3308,7 @@
     {
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_M,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
         .trainerName = _("Paul"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3320,7 +3320,7 @@
     {
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_M,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
         .trainerName = _("Jerry"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3332,7 +3332,7 @@
     {
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_M,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
         .trainerName = _("Jerry"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3344,7 +3344,7 @@
     {
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_M,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
         .trainerName = _("Jerry"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3356,7 +3356,7 @@
     {
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_M,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
         .trainerName = _("Jerry"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3368,7 +3368,7 @@
     {
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_F,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
         .trainerName = _("Karen"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3380,7 +3380,7 @@
     {
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_F,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
         .trainerName = _("Georgia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3392,7 +3392,7 @@
     {
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_F,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
         .trainerName = _("Karen"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3404,7 +3404,7 @@
     {
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_F,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
         .trainerName = _("Karen"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3416,7 +3416,7 @@
     {
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_F,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
         .trainerName = _("Karen"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3428,7 +3428,7 @@
     {
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_F,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
         .trainerName = _("Karen"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3440,7 +3440,7 @@
     {
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_SR_AND_JR,
+        .trainerPic = TRAINER_PIC_SR_AND_JR,
         .trainerName = _("Kate & Joy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3452,7 +3452,7 @@
     {
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_SR_AND_JR,
+        .trainerPic = TRAINER_PIC_SR_AND_JR,
         .trainerName = _("Anna & Meg"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3464,7 +3464,7 @@
     {
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_SR_AND_JR,
+        .trainerPic = TRAINER_PIC_SR_AND_JR,
         .trainerName = _("Anna & Meg"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3476,7 +3476,7 @@
     {
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_SR_AND_JR,
+        .trainerPic = TRAINER_PIC_SR_AND_JR,
         .trainerName = _("Anna & Meg"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3488,7 +3488,7 @@
     {
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_SR_AND_JR,
+        .trainerPic = TRAINER_PIC_SR_AND_JR,
         .trainerName = _("Anna & Meg"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3500,7 +3500,7 @@
     {
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_SR_AND_JR,
+        .trainerPic = TRAINER_PIC_SR_AND_JR,
         .trainerName = _("Anna & Meg"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3512,7 +3512,7 @@
     {
         .trainerClass = TRAINER_CLASS_WINSTRATE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_M,
+        .trainerPic = TRAINER_PIC_POKEFAN_M,
         .trainerName = _("Victor"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3524,7 +3524,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_M,
+        .trainerPic = TRAINER_PIC_POKEFAN_M,
         .trainerName = _("Miguel"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3536,7 +3536,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_M,
+        .trainerPic = TRAINER_PIC_POKEFAN_M,
         .trainerName = _("Colton"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3548,7 +3548,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_M,
+        .trainerPic = TRAINER_PIC_POKEFAN_M,
         .trainerName = _("Miguel"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3560,7 +3560,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_M,
+        .trainerPic = TRAINER_PIC_POKEFAN_M,
         .trainerName = _("Miguel"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3572,7 +3572,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_M,
+        .trainerPic = TRAINER_PIC_POKEFAN_M,
         .trainerName = _("Miguel"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3584,7 +3584,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_M,
+        .trainerPic = TRAINER_PIC_POKEFAN_M,
         .trainerName = _("Miguel"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3596,7 +3596,7 @@
     {
         .trainerClass = TRAINER_CLASS_WINSTRATE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_F,
+        .trainerPic = TRAINER_PIC_POKEFAN_F,
         .trainerName = _("Victoria"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3608,7 +3608,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_F,
+        .trainerPic = TRAINER_PIC_POKEFAN_F,
         .trainerName = _("Vanessa"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3620,7 +3620,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_F,
+        .trainerPic = TRAINER_PIC_POKEFAN_F,
         .trainerName = _("Bethany"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3632,7 +3632,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_F,
+        .trainerPic = TRAINER_PIC_POKEFAN_F,
         .trainerName = _("Isabel"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3644,7 +3644,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_F,
+        .trainerPic = TRAINER_PIC_POKEFAN_F,
         .trainerName = _("Isabel"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3656,7 +3656,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_F,
+        .trainerPic = TRAINER_PIC_POKEFAN_F,
         .trainerName = _("Isabel"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3668,7 +3668,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_F,
+        .trainerPic = TRAINER_PIC_POKEFAN_F,
         .trainerName = _("Isabel"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3680,7 +3680,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_F,
+        .trainerPic = TRAINER_PIC_POKEFAN_F,
         .trainerName = _("Isabel"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3692,7 +3692,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_M,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
         .trainerName = _("Timothy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3704,7 +3704,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_M,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
         .trainerName = _("Timothy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3716,7 +3716,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_M,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
         .trainerName = _("Timothy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3728,7 +3728,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_M,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
         .trainerName = _("Timothy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3740,7 +3740,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_M,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
         .trainerName = _("Timothy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3752,7 +3752,7 @@
     {
         .trainerClass = TRAINER_CLASS_WINSTRATE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_F,
+        .trainerPic = TRAINER_PIC_EXPERT_F,
         .trainerName = _("Vicky"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3764,7 +3764,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_F,
+        .trainerPic = TRAINER_PIC_EXPERT_F,
         .trainerName = _("Shelby"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3776,7 +3776,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_F,
+        .trainerPic = TRAINER_PIC_EXPERT_F,
         .trainerName = _("Shelby"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3788,7 +3788,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_F,
+        .trainerPic = TRAINER_PIC_EXPERT_F,
         .trainerName = _("Shelby"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3800,7 +3800,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_F,
+        .trainerPic = TRAINER_PIC_EXPERT_F,
         .trainerName = _("Shelby"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3812,7 +3812,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_F,
+        .trainerPic = TRAINER_PIC_EXPERT_F,
         .trainerName = _("Shelby"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3824,7 +3824,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Calvin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3836,7 +3836,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Billy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3848,7 +3848,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Josh"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3860,7 +3860,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Tommy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3872,7 +3872,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Joey"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3884,7 +3884,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Ben"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3896,7 +3896,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Quincy"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3908,7 +3908,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Katelynn"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3920,7 +3920,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Jaylen"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3932,7 +3932,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Dillon"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3944,7 +3944,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Calvin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3956,7 +3956,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Calvin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3968,7 +3968,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Calvin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3980,7 +3980,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Calvin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -3992,7 +3992,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Eddie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4004,7 +4004,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Allen"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4016,7 +4016,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Timmy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4028,7 +4028,7 @@
     {
         .trainerClass = TRAINER_CLASS_CHAMPION,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CHAMPION_WALLACE,
+        .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,
         .trainerName = _("Wallace"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4041,7 +4041,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Andrew"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4053,7 +4053,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Ivan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4065,7 +4065,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Claude"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4077,7 +4077,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Elliot"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4089,7 +4089,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Ned"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4101,7 +4101,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Dale"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4113,7 +4113,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Nolan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4125,7 +4125,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Barny"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4137,7 +4137,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Wade"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4149,7 +4149,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Carter"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4161,7 +4161,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Elliot"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4173,7 +4173,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Elliot"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4185,7 +4185,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Elliot"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4197,7 +4197,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Elliot"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4209,7 +4209,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Ronald"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4221,7 +4221,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("Jacob"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4233,7 +4233,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("Anthony"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4245,7 +4245,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("Benjamin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4257,7 +4257,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("Benjamin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4269,7 +4269,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("Benjamin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4281,7 +4281,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("Benjamin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4293,7 +4293,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("Benjamin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4305,7 +4305,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
         .trainerName = _("Abigail"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4317,7 +4317,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
         .trainerName = _("Jasmine"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4329,7 +4329,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
         .trainerName = _("Abigail"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4341,7 +4341,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
         .trainerName = _("Abigail"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4353,7 +4353,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
         .trainerName = _("Abigail"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4365,7 +4365,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
         .trainerName = _("Abigail"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4377,7 +4377,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
         .trainerName = _("Dylan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4389,7 +4389,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
         .trainerName = _("Dylan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4401,7 +4401,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
         .trainerName = _("Dylan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4413,7 +4413,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
         .trainerName = _("Dylan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4425,7 +4425,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
         .trainerName = _("Dylan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4437,7 +4437,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
         .trainerName = _("Maria"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4449,7 +4449,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
         .trainerName = _("Maria"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4461,7 +4461,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
         .trainerName = _("Maria"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4473,7 +4473,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
         .trainerName = _("Maria"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4485,7 +4485,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
         .trainerName = _("Maria"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4497,7 +4497,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("Camden"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4509,7 +4509,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Demetrius"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4521,7 +4521,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("Isaiah"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4533,7 +4533,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("Pablo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4545,7 +4545,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("Chase"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4557,7 +4557,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("Isaiah"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4569,7 +4569,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("Isaiah"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4581,7 +4581,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("Isaiah"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4593,7 +4593,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("Isaiah"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4605,7 +4605,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("Isobel"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4617,7 +4617,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("Donny"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4629,7 +4629,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("Talia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4641,7 +4641,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("Katelyn"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4653,7 +4653,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("Allison"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4665,7 +4665,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("Katelyn"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4677,7 +4677,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("Katelyn"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4689,7 +4689,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("Katelyn"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4701,7 +4701,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("Katelyn"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4713,7 +4713,7 @@
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("Nicolas"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4725,7 +4725,7 @@
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("Nicolas"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4737,7 +4737,7 @@
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("Nicolas"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4749,7 +4749,7 @@
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("Nicolas"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4761,7 +4761,7 @@
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("Nicolas"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4773,7 +4773,7 @@
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("Aaron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4785,7 +4785,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Perry"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4797,7 +4797,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Hugh"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4809,7 +4809,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Phil"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4821,7 +4821,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Jared"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4833,7 +4833,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Humberto"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4845,7 +4845,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Presley"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4857,7 +4857,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Edwardo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4869,7 +4869,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Colin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4881,7 +4881,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Robert"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4893,7 +4893,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Benny"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4905,7 +4905,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Chester"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4917,7 +4917,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Robert"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4929,7 +4929,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Robert"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4941,7 +4941,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Robert"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4953,7 +4953,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Robert"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4965,7 +4965,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Alex"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4977,7 +4977,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Beck"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -4989,7 +4989,7 @@
     {
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_NINJA_BOY,
+        .trainerPic = TRAINER_PIC_NINJA_BOY,
         .trainerName = _("Yasu"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5001,7 +5001,7 @@
     {
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_NINJA_BOY,
+        .trainerPic = TRAINER_PIC_NINJA_BOY,
         .trainerName = _("Takashi"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5013,7 +5013,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Dianne"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5025,7 +5025,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_F,
+        .trainerPic = TRAINER_PIC_TUBER_F,
         .trainerName = _("Jani"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5037,7 +5037,7 @@
     {
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_NINJA_BOY,
+        .trainerPic = TRAINER_PIC_NINJA_BOY,
         .trainerName = _("Lao"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5049,7 +5049,7 @@
     {
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_NINJA_BOY,
+        .trainerPic = TRAINER_PIC_NINJA_BOY,
         .trainerName = _("Lung"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5061,7 +5061,7 @@
     {
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_NINJA_BOY,
+        .trainerPic = TRAINER_PIC_NINJA_BOY,
         .trainerName = _("Lao"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5073,7 +5073,7 @@
     {
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_NINJA_BOY,
+        .trainerPic = TRAINER_PIC_NINJA_BOY,
         .trainerName = _("Lao"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5085,7 +5085,7 @@
     {
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_NINJA_BOY,
+        .trainerPic = TRAINER_PIC_NINJA_BOY,
         .trainerName = _("Lao"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5097,7 +5097,7 @@
     {
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_NINJA_BOY,
+        .trainerPic = TRAINER_PIC_NINJA_BOY,
         .trainerName = _("Lao"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5109,7 +5109,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Jocelyn"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5121,7 +5121,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Laura"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5133,7 +5133,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Cyndy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5145,7 +5145,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Cora"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5157,7 +5157,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Paula"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5169,7 +5169,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Cyndy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5181,7 +5181,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Cyndy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5193,7 +5193,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Cyndy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5205,7 +5205,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Cyndy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5217,7 +5217,7 @@
     {
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_PARASOL_LADY,
+        .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .trainerName = _("Madeline"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5229,7 +5229,7 @@
     {
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_PARASOL_LADY,
+        .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .trainerName = _("Clarissa"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5241,7 +5241,7 @@
     {
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_PARASOL_LADY,
+        .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .trainerName = _("Angelica"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5253,7 +5253,7 @@
     {
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_PARASOL_LADY,
+        .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .trainerName = _("Madeline"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5265,7 +5265,7 @@
     {
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_PARASOL_LADY,
+        .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .trainerName = _("Madeline"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5277,7 +5277,7 @@
     {
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_PARASOL_LADY,
+        .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .trainerName = _("Madeline"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5289,7 +5289,7 @@
     {
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_PARASOL_LADY,
+        .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .trainerName = _("Madeline"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5301,7 +5301,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Beverly"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5313,7 +5313,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Imani"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5325,7 +5325,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Kyla"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5337,7 +5337,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Denise"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5349,7 +5349,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Beth"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5361,7 +5361,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Tara"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5373,7 +5373,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Missy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5385,7 +5385,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Alice"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5397,7 +5397,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Jenny"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5409,7 +5409,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Grace"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5421,7 +5421,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Tanya"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5433,7 +5433,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Sharon"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5445,7 +5445,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Nikki"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5457,7 +5457,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Brenda"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5469,7 +5469,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Katie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5481,7 +5481,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Susie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5493,7 +5493,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Kara"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5505,7 +5505,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Dana"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5517,7 +5517,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Sienna"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5529,7 +5529,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Debra"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5541,7 +5541,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Linda"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5553,7 +5553,7 @@
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("Noah"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5565,7 +5565,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Laurel"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5577,7 +5577,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Carlee"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5589,7 +5589,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Jenny"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5601,7 +5601,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Jenny"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5613,7 +5613,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Jenny"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5625,7 +5625,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Jenny"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5637,7 +5637,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Heidi"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5649,7 +5649,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Becky"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5661,7 +5661,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Carol"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5673,7 +5673,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Nancy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5685,7 +5685,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Martha"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5697,7 +5697,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Diana"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5709,7 +5709,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .trainerName = _("Cedric"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5721,7 +5721,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Irene"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5733,7 +5733,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Diana"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5745,7 +5745,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Diana"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5757,7 +5757,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Diana"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5769,7 +5769,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Diana"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5781,7 +5781,7 @@
     {
         .trainerClass = TRAINER_CLASS_TWINS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_TWINS,
+        .trainerPic = TRAINER_PIC_TWINS,
         .trainerName = _("Amy & Liv"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5793,7 +5793,7 @@
     {
         .trainerClass = TRAINER_CLASS_TWINS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_TWINS,
+        .trainerPic = TRAINER_PIC_TWINS,
         .trainerName = _("Amy & Liv"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5805,7 +5805,7 @@
     {
         .trainerClass = TRAINER_CLASS_TWINS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_TWINS,
+        .trainerPic = TRAINER_PIC_TWINS,
         .trainerName = _("Gina & Mia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5817,7 +5817,7 @@
     {
         .trainerClass = TRAINER_CLASS_TWINS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_TWINS,
+        .trainerPic = TRAINER_PIC_TWINS,
         .trainerName = _("Miu & Yuki"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5829,7 +5829,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5841,7 +5841,7 @@
     {
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_ADMIN_COURTNEY,
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN_COURTNEY,
         .trainerName = _("Courtney"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5853,7 +5853,7 @@
     {
         .trainerClass = TRAINER_CLASS_TWINS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_TWINS,
+        .trainerPic = TRAINER_PIC_TWINS,
         .trainerName = _("Amy & Liv"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5865,7 +5865,7 @@
     {
         .trainerClass = TRAINER_CLASS_TWINS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_TWINS,
+        .trainerPic = TRAINER_PIC_TWINS,
         .trainerName = _("Amy & Liv"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5877,7 +5877,7 @@
     {
         .trainerClass = TRAINER_CLASS_TWINS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_TWINS,
+        .trainerPic = TRAINER_PIC_TWINS,
         .trainerName = _("Amy & Liv"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5889,7 +5889,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Huey"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5901,7 +5901,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Edmond"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5913,7 +5913,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Ernest"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5925,7 +5925,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Dwayne"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5937,7 +5937,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Phillip"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5949,7 +5949,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Leonard"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5961,7 +5961,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Duncan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5973,7 +5973,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Ernest"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5985,7 +5985,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Ernest"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -5997,7 +5997,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Ernest"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6009,7 +6009,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Ernest"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6021,7 +6021,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Eli"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6033,7 +6033,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_F,
+        .trainerPic = TRAINER_PIC_POKEFAN_F,
         .trainerName = _("Annika"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6045,7 +6045,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Jazmyn"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6057,7 +6057,7 @@
     {
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_NINJA_BOY,
+        .trainerPic = TRAINER_PIC_NINJA_BOY,
         .trainerName = _("Jonas"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6069,7 +6069,7 @@
     {
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_PARASOL_LADY,
+        .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .trainerName = _("Kayley"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6081,7 +6081,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_M,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
         .trainerName = _("Auron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6093,7 +6093,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Kelvin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6105,7 +6105,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Marley"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6117,7 +6117,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Reyna"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6129,7 +6129,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Hudson"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6141,7 +6141,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_M,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
         .trainerName = _("Conor"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6153,7 +6153,7 @@
     {
         .trainerClass = TRAINER_CLASS_COLLECTOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_COLLECTOR,
+        .trainerPic = TRAINER_PIC_COLLECTOR,
         .trainerName = _("Edwin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6165,7 +6165,7 @@
     {
         .trainerClass = TRAINER_CLASS_COLLECTOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_COLLECTOR,
+        .trainerPic = TRAINER_PIC_COLLECTOR,
         .trainerName = _("Hector"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6177,7 +6177,7 @@
     {
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_ADMIN_TABITHA,
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN_TABITHA,
         .trainerName = _("Tabitha"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6189,7 +6189,7 @@
     {
         .trainerClass = TRAINER_CLASS_COLLECTOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_COLLECTOR,
+        .trainerPic = TRAINER_PIC_COLLECTOR,
         .trainerName = _("Edwin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6201,7 +6201,7 @@
     {
         .trainerClass = TRAINER_CLASS_COLLECTOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_COLLECTOR,
+        .trainerPic = TRAINER_PIC_COLLECTOR,
         .trainerName = _("Edwin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6213,7 +6213,7 @@
     {
         .trainerClass = TRAINER_CLASS_COLLECTOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_COLLECTOR,
+        .trainerPic = TRAINER_PIC_COLLECTOR,
         .trainerName = _("Edwin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6225,7 +6225,7 @@
     {
         .trainerClass = TRAINER_CLASS_COLLECTOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_COLLECTOR,
+        .trainerPic = TRAINER_PIC_COLLECTOR,
         .trainerName = _("Edwin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6237,7 +6237,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_WALLY_CONFIDENT,
+        .trainerPic = TRAINER_PIC_WALLY_CONFIDENT,
         .trainerName = _("Wally"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6250,7 +6250,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6262,7 +6262,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6274,7 +6274,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6286,7 +6286,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6298,7 +6298,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6310,7 +6310,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6322,7 +6322,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6334,7 +6334,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6346,7 +6346,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6358,7 +6358,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6370,7 +6370,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6382,7 +6382,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6394,7 +6394,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6406,7 +6406,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6418,7 +6418,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6430,7 +6430,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6442,7 +6442,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6454,7 +6454,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6466,7 +6466,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_M,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
         .trainerName = _("Isaac"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6478,7 +6478,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = _("Davis"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6490,7 +6490,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Mitchell"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6502,7 +6502,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_M,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
         .trainerName = _("Isaac"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6514,7 +6514,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_M,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
         .trainerName = _("Isaac"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6526,7 +6526,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_M,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
         .trainerName = _("Isaac"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6538,7 +6538,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_M,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
         .trainerName = _("Isaac"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6550,7 +6550,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("Lydia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6562,7 +6562,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Halle"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6574,7 +6574,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Garrison"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6586,7 +6586,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("Lydia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6598,7 +6598,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("Lydia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6610,7 +6610,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("Lydia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6622,7 +6622,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("Lydia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6634,7 +6634,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .trainerName = _("Jackson"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6646,7 +6646,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .trainerName = _("Lorenzo"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6658,7 +6658,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .trainerName = _("Sebastian"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6670,7 +6670,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .trainerName = _("Jackson"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6682,7 +6682,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .trainerName = _("Jackson"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6694,7 +6694,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .trainerName = _("Jackson"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6706,7 +6706,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .trainerName = _("Jackson"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6718,7 +6718,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .trainerName = _("Catherine"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6730,7 +6730,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .trainerName = _("Jenna"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6742,7 +6742,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .trainerName = _("Sophia"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6754,7 +6754,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .trainerName = _("Catherine"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6766,7 +6766,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .trainerName = _("Catherine"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6778,7 +6778,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .trainerName = _("Catherine"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6790,7 +6790,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .trainerName = _("Catherine"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6802,7 +6802,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("Julio"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6814,7 +6814,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6826,7 +6826,7 @@
     {
         .trainerClass = TRAINER_CLASS_SKIER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_SKIER_M,
+        .trainerPic = TRAINER_PIC_SKIER_M,
         .trainerName = _("Josef"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6838,7 +6838,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6850,7 +6850,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6862,7 +6862,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Marc"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6874,7 +6874,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Brenden"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6886,7 +6886,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Lilith"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6898,7 +6898,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Cristian"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6910,7 +6910,7 @@
     {
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .trainerName = _("Sylvia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6922,7 +6922,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Leonardo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6934,7 +6934,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Athena"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6946,7 +6946,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Harrison"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6958,7 +6958,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6970,7 +6970,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Clarence"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6982,7 +6982,7 @@
     {
         .trainerClass = TRAINER_CLASS_SKIER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_SKIER_F,
+        .trainerPic = TRAINER_PIC_SKIER_F,
         .trainerName = _("Candy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -6994,7 +6994,7 @@
     {
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
         .trainerName = _("Nate"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7006,7 +7006,7 @@
     {
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .trainerName = _("Kathleen"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7018,7 +7018,7 @@
     {
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
         .trainerName = _("Clifford"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7030,7 +7030,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .trainerName = _("Nicholas"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7042,7 +7042,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7054,7 +7054,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7066,7 +7066,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7078,7 +7078,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7090,7 +7090,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_ADMIN_COURTNEY,
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN_COURTNEY,
         .trainerName = _("Courtney"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7102,7 +7102,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Macey"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7114,7 +7114,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7126,7 +7126,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7138,7 +7138,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_M,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
         .trainerName = _("Paxton"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7150,7 +7150,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("Isabella"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7162,7 +7162,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7174,7 +7174,7 @@
     {
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_ADMIN_TABITHA,
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN_TABITHA,
         .trainerName = _("Tabitha"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7186,7 +7186,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Jonathan"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7198,7 +7198,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7210,7 +7210,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7222,7 +7222,7 @@
     {
         .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_LEADER_MAXIE,
+        .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
         .trainerName = _("Maxie"),
         .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7234,7 +7234,7 @@
     {
         .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_LEADER_MAXIE,
+        .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
         .trainerName = _("Maxie"),
         .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7246,7 +7246,7 @@
     {
         .trainerClass = TRAINER_CLASS_LASS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LASS,
+        .trainerPic = TRAINER_PIC_LASS,
         .trainerName = _("Tiana"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7258,7 +7258,7 @@
     {
         .trainerClass = TRAINER_CLASS_LASS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LASS,
+        .trainerPic = TRAINER_PIC_LASS,
         .trainerName = _("Haley"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7270,7 +7270,7 @@
     {
         .trainerClass = TRAINER_CLASS_LASS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LASS,
+        .trainerPic = TRAINER_PIC_LASS,
         .trainerName = _("Janice"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7282,7 +7282,7 @@
     {
         .trainerClass = TRAINER_CLASS_WINSTRATE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LASS,
+        .trainerPic = TRAINER_PIC_LASS,
         .trainerName = _("Vivi"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7294,7 +7294,7 @@
     {
         .trainerClass = TRAINER_CLASS_LASS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LASS,
+        .trainerPic = TRAINER_PIC_LASS,
         .trainerName = _("Haley"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7306,7 +7306,7 @@
     {
         .trainerClass = TRAINER_CLASS_LASS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LASS,
+        .trainerPic = TRAINER_PIC_LASS,
         .trainerName = _("Haley"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7318,7 +7318,7 @@
     {
         .trainerClass = TRAINER_CLASS_LASS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LASS,
+        .trainerPic = TRAINER_PIC_LASS,
         .trainerName = _("Haley"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7330,7 +7330,7 @@
     {
         .trainerClass = TRAINER_CLASS_LASS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LASS,
+        .trainerPic = TRAINER_PIC_LASS,
         .trainerName = _("Haley"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7342,7 +7342,7 @@
     {
         .trainerClass = TRAINER_CLASS_LASS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LASS,
+        .trainerPic = TRAINER_PIC_LASS,
         .trainerName = _("Sally"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7354,7 +7354,7 @@
     {
         .trainerClass = TRAINER_CLASS_LASS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LASS,
+        .trainerPic = TRAINER_PIC_LASS,
         .trainerName = _("Robin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7366,7 +7366,7 @@
     {
         .trainerClass = TRAINER_CLASS_LASS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LASS,
+        .trainerPic = TRAINER_PIC_LASS,
         .trainerName = _("Andrea"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7378,7 +7378,7 @@
     {
         .trainerClass = TRAINER_CLASS_LASS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LASS,
+        .trainerPic = TRAINER_PIC_LASS,
         .trainerName = _("Crissy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7390,7 +7390,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = _("Rick"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7402,7 +7402,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = _("Lyle"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7414,7 +7414,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = _("Jose"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7426,7 +7426,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = _("Doug"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7438,7 +7438,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = _("Greg"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7450,7 +7450,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = _("Kent"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7462,7 +7462,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = _("James"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7474,7 +7474,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = _("James"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7486,7 +7486,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = _("James"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7498,7 +7498,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = _("James"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7510,7 +7510,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = _("James"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7522,7 +7522,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Brice"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7534,7 +7534,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Trent"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7546,7 +7546,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Lenny"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7558,7 +7558,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Lucas"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7570,7 +7570,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Alan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7582,7 +7582,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Clark"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7594,7 +7594,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Eric"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7606,7 +7606,7 @@
     {
         .trainerClass = TRAINER_CLASS_SKIER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_SKIER_M,
+        .trainerPic = TRAINER_PIC_SKIER_M,
         .trainerName = _("Gerardo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7618,7 +7618,7 @@
     {
         .trainerClass = TRAINER_CLASS_SKIER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_SKIER_F,
+        .trainerPic = TRAINER_PIC_SKIER_F,
         .trainerName = _("Aurelia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7630,7 +7630,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Mike"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7642,7 +7642,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Trent"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7654,7 +7654,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Trent"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7666,7 +7666,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Trent"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7678,7 +7678,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Trent"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7690,7 +7690,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNG_COUPLE,
+        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .trainerName = _("Dez & Luke"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7702,7 +7702,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNG_COUPLE,
+        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .trainerName = _("Lea & Jed"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7714,7 +7714,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNG_COUPLE,
+        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .trainerName = _("Kira & Dan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7726,7 +7726,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNG_COUPLE,
+        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .trainerName = _("Kira & Dan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7738,7 +7738,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNG_COUPLE,
+        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .trainerName = _("Kira & Dan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7750,7 +7750,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNG_COUPLE,
+        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .trainerName = _("Kira & Dan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7762,7 +7762,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNG_COUPLE,
+        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .trainerName = _("Kira & Dan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7774,7 +7774,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Johanna"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7786,7 +7786,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Gerald"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7798,7 +7798,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Vivian"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7810,7 +7810,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Danielle"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7822,7 +7822,7 @@
     {
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_NINJA_BOY,
+        .trainerPic = TRAINER_PIC_NINJA_BOY,
         .trainerName = _("Hideo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7834,7 +7834,7 @@
     {
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_NINJA_BOY,
+        .trainerPic = TRAINER_PIC_NINJA_BOY,
         .trainerName = _("Keigo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7846,7 +7846,7 @@
     {
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_NINJA_BOY,
+        .trainerPic = TRAINER_PIC_NINJA_BOY,
         .trainerName = _("Riley"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7858,7 +7858,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Flint"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7870,7 +7870,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Ashley"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7882,7 +7882,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_WALLY,
+        .trainerPic = TRAINER_PIC_WALLY,
         .trainerName = _("Wally"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7894,7 +7894,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_WALLY_CONFIDENT,
+        .trainerPic = TRAINER_PIC_WALLY_CONFIDENT,
         .trainerName = _("Wally"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7907,7 +7907,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_WALLY_CONFIDENT,
+        .trainerPic = TRAINER_PIC_WALLY_CONFIDENT,
         .trainerName = _("Wally"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7920,7 +7920,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_WALLY_CONFIDENT,
+        .trainerPic = TRAINER_PIC_WALLY_CONFIDENT,
         .trainerName = _("Wally"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7933,7 +7933,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_WALLY_CONFIDENT,
+        .trainerPic = TRAINER_PIC_WALLY_CONFIDENT,
         .trainerName = _("Wally"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7946,7 +7946,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7958,7 +7958,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7970,7 +7970,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7982,7 +7982,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -7994,7 +7994,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8006,7 +8006,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8018,7 +8018,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Jonah"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8030,7 +8030,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Henry"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8042,7 +8042,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Roger"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8054,7 +8054,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Alexa"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8066,7 +8066,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Ruben"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8078,7 +8078,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Koji"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8090,7 +8090,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Wayne"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8102,7 +8102,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Aidan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8114,7 +8114,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Reed"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8126,7 +8126,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Tisha"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8138,7 +8138,7 @@
     {
         .trainerClass = TRAINER_CLASS_TWINS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_TWINS,
+        .trainerPic = TRAINER_PIC_TWINS,
         .trainerName = _("Tori & Tia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8150,7 +8150,7 @@
     {
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_SR_AND_JR,
+        .trainerPic = TRAINER_PIC_SR_AND_JR,
         .trainerName = _("Kim & Iris"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8162,7 +8162,7 @@
     {
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_SR_AND_JR,
+        .trainerPic = TRAINER_PIC_SR_AND_JR,
         .trainerName = _("Tyra & Ivy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8174,7 +8174,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNG_COUPLE,
+        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .trainerName = _("Mel & Paul"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8186,7 +8186,7 @@
     {
         .trainerClass = TRAINER_CLASS_OLD_COUPLE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_OLD_COUPLE,
+        .trainerPic = TRAINER_PIC_OLD_COUPLE,
         .trainerName = _("John & Jay"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8198,7 +8198,7 @@
     {
         .trainerClass = TRAINER_CLASS_OLD_COUPLE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_OLD_COUPLE,
+        .trainerPic = TRAINER_PIC_OLD_COUPLE,
         .trainerName = _("John & Jay"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8210,7 +8210,7 @@
     {
         .trainerClass = TRAINER_CLASS_OLD_COUPLE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_OLD_COUPLE,
+        .trainerPic = TRAINER_PIC_OLD_COUPLE,
         .trainerName = _("John & Jay"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8222,7 +8222,7 @@
     {
         .trainerClass = TRAINER_CLASS_OLD_COUPLE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_OLD_COUPLE,
+        .trainerPic = TRAINER_PIC_OLD_COUPLE,
         .trainerName = _("John & Jay"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8234,7 +8234,7 @@
     {
         .trainerClass = TRAINER_CLASS_OLD_COUPLE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_OLD_COUPLE,
+        .trainerPic = TRAINER_PIC_OLD_COUPLE,
         .trainerName = _("John & Jay"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8246,7 +8246,7 @@
     {
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SIS_AND_BRO,
+        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
         .trainerName = _("Reli & Ian"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8258,7 +8258,7 @@
     {
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SIS_AND_BRO,
+        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
         .trainerName = _("Lila & Roy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8270,7 +8270,7 @@
     {
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SIS_AND_BRO,
+        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
         .trainerName = _("Lila & Roy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8282,7 +8282,7 @@
     {
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SIS_AND_BRO,
+        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
         .trainerName = _("Lila & Roy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8294,7 +8294,7 @@
     {
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SIS_AND_BRO,
+        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
         .trainerName = _("Lila & Roy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8306,7 +8306,7 @@
     {
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SIS_AND_BRO,
+        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
         .trainerName = _("Lila & Roy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8318,7 +8318,7 @@
     {
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SIS_AND_BRO,
+        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
         .trainerName = _("Lisa & Ray"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8330,7 +8330,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Chris"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8342,7 +8342,7 @@
     {
         .trainerClass = TRAINER_CLASS_RICH_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_RICH_BOY,
+        .trainerPic = TRAINER_PIC_RICH_BOY,
         .trainerName = _("Dawson"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8354,7 +8354,7 @@
     {
         .trainerClass = TRAINER_CLASS_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LADY,
+        .trainerPic = TRAINER_PIC_LADY,
         .trainerName = _("Sarah"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8366,7 +8366,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Darian"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8378,7 +8378,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_F,
+        .trainerPic = TRAINER_PIC_TUBER_F,
         .trainerName = _("Hailey"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8390,7 +8390,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_M,
+        .trainerPic = TRAINER_PIC_TUBER_M,
         .trainerName = _("Chandler"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8402,7 +8402,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEFAN_M,
+        .trainerPic = TRAINER_PIC_POKEFAN_M,
         .trainerName = _("Kaleb"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8414,7 +8414,7 @@
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST,
         .trainerName = _("Joseph"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8426,7 +8426,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
         .trainerName = _("Alyssa"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8438,7 +8438,7 @@
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST,
         .trainerName = _("Marcos"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8450,7 +8450,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Rhett"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8462,7 +8462,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Tyron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8474,7 +8474,7 @@
     {
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .trainerName = _("Celina"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8486,7 +8486,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Bianca"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8498,7 +8498,7 @@
     {
         .trainerClass = TRAINER_CLASS_KINDLER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_KINDLER,
+        .trainerPic = TRAINER_PIC_KINDLER,
         .trainerName = _("Hayden"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8510,7 +8510,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Sophie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8522,7 +8522,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Coby"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8534,7 +8534,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Lawrence"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8546,7 +8546,7 @@
     {
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC,
+        .trainerPic = TRAINER_PIC_POKEMANIAC,
         .trainerName = _("Wyatt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8558,7 +8558,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Angelina"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8570,7 +8570,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Kai"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8582,7 +8582,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Charlotte"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8594,7 +8594,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Deandre"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8606,7 +8606,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8618,7 +8618,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8630,7 +8630,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8642,7 +8642,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8654,7 +8654,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8666,7 +8666,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8678,7 +8678,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8690,7 +8690,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8702,7 +8702,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8714,7 +8714,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8726,7 +8726,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8738,7 +8738,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8750,7 +8750,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8762,7 +8762,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8774,7 +8774,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8786,7 +8786,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8798,7 +8798,7 @@
     {
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_ADMIN_TABITHA,
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN_TABITHA,
         .trainerName = _("Tabitha"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8810,7 +8810,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Darcy"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8822,7 +8822,7 @@
     {
         .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_LEADER_MAXIE,
+        .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
         .trainerName = _("Maxie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8834,7 +8834,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Pete"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8846,7 +8846,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Isabelle"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8858,7 +8858,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Andres"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8870,7 +8870,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Josue"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8882,7 +8882,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("Camron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8894,7 +8894,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Cory"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8906,7 +8906,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Carolina"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8918,7 +8918,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Elijah"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8930,7 +8930,7 @@
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_PICNICKER,
+        .trainerPic = TRAINER_PIC_PICNICKER,
         .trainerName = _("Celia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8942,7 +8942,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Bryan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8954,7 +8954,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Branden"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8966,7 +8966,7 @@
     {
         .trainerClass = TRAINER_CLASS_KINDLER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_KINDLER,
+        .trainerPic = TRAINER_PIC_KINDLER,
         .trainerName = _("Bryant"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8978,7 +8978,7 @@
     {
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .trainerName = _("Shayla"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -8990,7 +8990,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
         .trainerName = _("Kyra"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9002,7 +9002,7 @@
     {
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_NINJA_BOY,
+        .trainerPic = TRAINER_PIC_NINJA_BOY,
         .trainerName = _("Jaiden"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9014,7 +9014,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Alix"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9026,7 +9026,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Helene"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9038,7 +9038,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Marlene"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9050,7 +9050,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Devan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9062,7 +9062,7 @@
     {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = _("Johnson"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9074,7 +9074,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
         .trainerName = _("Melina"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9086,7 +9086,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Brandi"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9098,7 +9098,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Aisha"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9110,7 +9110,7 @@
     {
         .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_EXPERT_F,
+        .trainerPic = TRAINER_PIC_EXPERT_F,
         .trainerName = _("Makayla"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9122,7 +9122,7 @@
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST,
         .trainerName = _("Fabian"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9134,7 +9134,7 @@
     {
         .trainerClass = TRAINER_CLASS_KINDLER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_KINDLER,
+        .trainerPic = TRAINER_PIC_KINDLER,
         .trainerName = _("Dayton"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9146,7 +9146,7 @@
     {
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_PARASOL_LADY,
+        .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .trainerName = _("Rachel"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9158,7 +9158,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Leonel"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9170,7 +9170,7 @@
     {
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .trainerName = _("Callie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9182,7 +9182,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_MANIAC,
+        .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .trainerName = _("Cale"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9194,7 +9194,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_M,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
         .trainerName = _("Myles"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9206,7 +9206,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("Pat"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9218,7 +9218,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Cristin"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9230,7 +9230,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9242,7 +9242,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9254,7 +9254,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_ROXANNE,
+        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
         .trainerName = _("Roxanne"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9266,7 +9266,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_ROXANNE,
+        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
         .trainerName = _("Roxanne"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9278,7 +9278,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_ROXANNE,
+        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
         .trainerName = _("Roxanne"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9290,7 +9290,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_ROXANNE,
+        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
         .trainerName = _("Roxanne"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9302,7 +9302,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_BRAWLY,
+        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
         .trainerName = _("Brawly"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9314,7 +9314,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_BRAWLY,
+        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
         .trainerName = _("Brawly"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9326,7 +9326,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_BRAWLY,
+        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
         .trainerName = _("Brawly"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9338,7 +9338,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_BRAWLY,
+        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
         .trainerName = _("Brawly"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9350,7 +9350,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_WATTSON,
+        .trainerPic = TRAINER_PIC_LEADER_WATTSON,
         .trainerName = _("Wattson"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9362,7 +9362,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_WATTSON,
+        .trainerPic = TRAINER_PIC_LEADER_WATTSON,
         .trainerName = _("Wattson"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9374,7 +9374,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_WATTSON,
+        .trainerPic = TRAINER_PIC_LEADER_WATTSON,
         .trainerName = _("Wattson"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9386,7 +9386,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_WATTSON,
+        .trainerPic = TRAINER_PIC_LEADER_WATTSON,
         .trainerName = _("Wattson"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9398,7 +9398,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_FLANNERY,
+        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
         .trainerName = _("Flannery"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9410,7 +9410,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_FLANNERY,
+        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
         .trainerName = _("Flannery"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9422,7 +9422,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_FLANNERY,
+        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
         .trainerName = _("Flannery"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9434,7 +9434,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_FLANNERY,
+        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
         .trainerName = _("Flannery"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9446,7 +9446,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_NORMAN,
+        .trainerPic = TRAINER_PIC_LEADER_NORMAN,
         .trainerName = _("Norman"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9458,7 +9458,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_NORMAN,
+        .trainerPic = TRAINER_PIC_LEADER_NORMAN,
         .trainerName = _("Norman"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9470,7 +9470,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_NORMAN,
+        .trainerPic = TRAINER_PIC_LEADER_NORMAN,
         .trainerName = _("Norman"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9482,7 +9482,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_NORMAN,
+        .trainerPic = TRAINER_PIC_LEADER_NORMAN,
         .trainerName = _("Norman"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9494,7 +9494,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_WINONA,
+        .trainerPic = TRAINER_PIC_LEADER_WINONA,
         .trainerName = _("Winona"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9506,7 +9506,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_WINONA,
+        .trainerPic = TRAINER_PIC_LEADER_WINONA,
         .trainerName = _("Winona"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9518,7 +9518,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_WINONA,
+        .trainerPic = TRAINER_PIC_LEADER_WINONA,
         .trainerName = _("Winona"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9530,7 +9530,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_WINONA,
+        .trainerPic = TRAINER_PIC_LEADER_WINONA,
         .trainerName = _("Winona"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9542,7 +9542,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_TATE_AND_LIZA,
+        .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
         .trainerName = _("Tate&Liza"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9554,7 +9554,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_TATE_AND_LIZA,
+        .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
         .trainerName = _("Tate&Liza"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9566,7 +9566,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_TATE_AND_LIZA,
+        .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
         .trainerName = _("Tate&Liza"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9578,7 +9578,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_TATE_AND_LIZA,
+        .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
         .trainerName = _("Tate&Liza"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9590,7 +9590,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_JUAN,
+        .trainerPic = TRAINER_PIC_LEADER_JUAN,
         .trainerName = _("Juan"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9602,7 +9602,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_JUAN,
+        .trainerPic = TRAINER_PIC_LEADER_JUAN,
         .trainerName = _("Juan"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9614,7 +9614,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_JUAN,
+        .trainerPic = TRAINER_PIC_LEADER_JUAN,
         .trainerName = _("Juan"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9626,7 +9626,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_JUAN,
+        .trainerPic = TRAINER_PIC_LEADER_JUAN,
         .trainerName = _("Juan"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9638,7 +9638,7 @@
     {
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_BUG_MANIAC,
+        .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .trainerName = _("Angelo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9650,7 +9650,7 @@
     {
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .trainerName = _("Darius"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9662,7 +9662,7 @@
     {
         .trainerClass = TRAINER_CLASS_CHAMPION,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_STEVEN,
+        .trainerPic = TRAINER_PIC_STEVEN,
         .trainerName = _("Steven"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9675,7 +9675,7 @@
     {
         .trainerClass = TRAINER_CLASS_SALON_MAIDEN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SALON_MAIDEN_ANABEL,
+        .trainerPic = TRAINER_PIC_SALON_MAIDEN_ANABEL,
         .trainerName = _("Anabel"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9687,7 +9687,7 @@
     {
         .trainerClass = TRAINER_CLASS_DOME_ACE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_DOME_ACE_TUCKER,
+        .trainerPic = TRAINER_PIC_DOME_ACE_TUCKER,
         .trainerName = _("Tucker"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9699,7 +9699,7 @@
     {
         .trainerClass = TRAINER_CLASS_PALACE_MAVEN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_PALACE_MAVEN_SPENSER,
+        .trainerPic = TRAINER_PIC_PALACE_MAVEN_SPENSER,
         .trainerName = _("Spenser"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9711,7 +9711,7 @@
     {
         .trainerClass = TRAINER_CLASS_ARENA_TYCOON,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_ARENA_TYCOON_GRETA,
+        .trainerPic = TRAINER_PIC_ARENA_TYCOON_GRETA,
         .trainerName = _("Greta"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9723,7 +9723,7 @@
     {
         .trainerClass = TRAINER_CLASS_FACTORY_HEAD,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_FACTORY_HEAD_NOLAND,
+        .trainerPic = TRAINER_PIC_FACTORY_HEAD_NOLAND,
         .trainerName = _("Noland"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9735,7 +9735,7 @@
     {
         .trainerClass = TRAINER_CLASS_PIKE_QUEEN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_PIKE_QUEEN_LUCY,
+        .trainerPic = TRAINER_PIC_PIKE_QUEEN_LUCY,
         .trainerName = _("Lucy"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9747,7 +9747,7 @@
     {
         .trainerClass = TRAINER_CLASS_PYRAMID_KING,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_PYRAMID_KING_BRANDON,
+        .trainerPic = TRAINER_PIC_PYRAMID_KING_BRANDON,
         .trainerName = _("Brandon"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9759,7 +9759,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Andres"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9771,7 +9771,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Andres"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9783,7 +9783,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Andres"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9795,7 +9795,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Andres"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9807,7 +9807,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Cory"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9819,7 +9819,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Cory"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9831,7 +9831,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Cory"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9843,7 +9843,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Cory"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9855,7 +9855,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("Pablo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9867,7 +9867,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("Pablo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9879,7 +9879,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("Pablo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9891,7 +9891,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("Pablo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9903,7 +9903,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Koji"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9915,7 +9915,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Koji"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9927,7 +9927,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Koji"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9939,7 +9939,7 @@
     {
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("Koji"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9951,7 +9951,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Cristin"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9963,7 +9963,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Cristin"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9975,7 +9975,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Cristin"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9987,7 +9987,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Cristin"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -9999,7 +9999,7 @@
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST,
         .trainerName = _("Fernando"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10011,7 +10011,7 @@
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST,
         .trainerName = _("Fernando"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10023,7 +10023,7 @@
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST,
         .trainerName = _("Fernando"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10035,7 +10035,7 @@
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST,
         .trainerName = _("Fernando"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10047,7 +10047,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Sawyer"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10059,7 +10059,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Sawyer"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10071,7 +10071,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Sawyer"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10083,7 +10083,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Sawyer"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10095,7 +10095,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("Gabrielle"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10107,7 +10107,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("Gabrielle"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10119,7 +10119,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("Gabrielle"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10131,7 +10131,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("Gabrielle"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10143,7 +10143,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Thalia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10155,7 +10155,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Thalia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10167,7 +10167,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Thalia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10179,7 +10179,7 @@
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_BEAUTY,
+        .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("Thalia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10191,7 +10191,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .trainerName = _("Mariela"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10203,7 +10203,7 @@
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .trainerName = _("Alvaro"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10215,7 +10215,7 @@
     {
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
         .trainerName = _("Everett"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10227,7 +10227,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_RED,
+        .trainerPic = TRAINER_PIC_RED,
         .trainerName = _("Red"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10239,7 +10239,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEAF,
+        .trainerPic = TRAINER_PIC_LEAF,
         .trainerName = _("Leaf"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10251,7 +10251,7 @@
     {
         .trainerClass = TRAINER_CLASS_RS_PROTAG,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_RS_BRENDAN,
+        .trainerPic = TRAINER_PIC_RS_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10263,7 +10263,7 @@
     {
         .trainerClass = TRAINER_CLASS_RS_PROTAG,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_RS_MAY,
+        .trainerPic = TRAINER_PIC_RS_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10275,7 +10275,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_ROCKET_M,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10287,7 +10287,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_ROCKET_F,
+        .trainerPic = TRAINER_PIC_ROCKET_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10299,7 +10299,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_ROCKET_M,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10311,7 +10311,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_ROCKET_F,
+        .trainerPic = TRAINER_PIC_ROCKET_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10323,7 +10323,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_ROCKET_M,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10335,7 +10335,7 @@
     {
         .trainerClass = TRAINER_CLASS_BOSS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_GIOVANNI,
+        .trainerPic = TRAINER_PIC_GIOVANNI,
         .trainerName = _("Giovanni"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10347,7 +10347,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10359,7 +10359,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10371,7 +10371,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_WALLY,
+        .trainerPic = TRAINER_PIC_WALLY,
         .trainerName = _("Wally"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10383,7 +10383,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10395,7 +10395,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10407,7 +10407,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
         .trainerName = _("Brendan"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10419,7 +10419,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10431,7 +10431,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10443,7 +10443,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_MAY,
+        .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("May"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10455,7 +10455,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_JAKSON,
+        .trainerPic = TRAINER_PIC_JAKSON,
         .trainerName = _("Jakson"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10467,7 +10467,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_JAKSON,
+        .trainerPic = TRAINER_PIC_JAKSON,
         .trainerName = _("Jakson"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10479,7 +10479,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_JAKSON,
+        .trainerPic = TRAINER_PIC_JAKSON,
         .trainerName = _("Jakson"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10491,7 +10491,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_JAKSON,
+        .trainerPic = TRAINER_PIC_JAKSON,
         .trainerName = _("Jakson"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10503,7 +10503,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_JAKSON,
+        .trainerPic = TRAINER_PIC_JAKSON,
         .trainerName = _("Jakson"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10516,7 +10516,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_HARPER,
+        .trainerPic = TRAINER_PIC_HARPER,
         .trainerName = _("Harper"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10528,7 +10528,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_HARPER,
+        .trainerPic = TRAINER_PIC_HARPER,
         .trainerName = _("Harper"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10540,7 +10540,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_HARPER,
+        .trainerPic = TRAINER_PIC_HARPER,
         .trainerName = _("Harper"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10552,7 +10552,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_HARPER,
+        .trainerPic = TRAINER_PIC_HARPER,
         .trainerName = _("Harper"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10564,7 +10564,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_HARPER,
+        .trainerPic = TRAINER_PIC_HARPER,
         .trainerName = _("Harper"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10577,7 +10577,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_REDD,
+        .trainerPic = TRAINER_PIC_REDD,
         .trainerName = _("Redd"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10589,7 +10589,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_REDD,
+        .trainerPic = TRAINER_PIC_REDD,
         .trainerName = _("Redd"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10601,7 +10601,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_REDD,
+        .trainerPic = TRAINER_PIC_REDD,
         .trainerName = _("Redd"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10613,7 +10613,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_REDD,
+        .trainerPic = TRAINER_PIC_REDD,
         .trainerName = _("Redd"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10625,7 +10625,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_REDD,
+        .trainerPic = TRAINER_PIC_REDD,
         .trainerName = _("Redd"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10638,7 +10638,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAKURA,
+        .trainerPic = TRAINER_PIC_SAKURA,
         .trainerName = _("Sakura"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10650,7 +10650,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAKURA,
+        .trainerPic = TRAINER_PIC_SAKURA,
         .trainerName = _("Sakura"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10662,7 +10662,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAKURA,
+        .trainerPic = TRAINER_PIC_SAKURA,
         .trainerName = _("Sakura"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10674,7 +10674,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAKURA,
+        .trainerPic = TRAINER_PIC_SAKURA,
         .trainerName = _("Sakura"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10686,7 +10686,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAKURA,
+        .trainerPic = TRAINER_PIC_SAKURA,
         .trainerName = _("Sakura"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10699,7 +10699,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BARON,
+        .trainerPic = TRAINER_PIC_BARON,
         .trainerName = _("Baron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10711,7 +10711,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BARON,
+        .trainerPic = TRAINER_PIC_BARON,
         .trainerName = _("Baron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10723,7 +10723,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BARON,
+        .trainerPic = TRAINER_PIC_BARON,
         .trainerName = _("Baron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10735,7 +10735,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BARON,
+        .trainerPic = TRAINER_PIC_BARON,
         .trainerName = _("Baron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10747,7 +10747,7 @@
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_BARON,
+        .trainerPic = TRAINER_PIC_BARON,
         .trainerName = _("Baron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10760,7 +10760,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_ROCKET_M,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10772,7 +10772,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_ROCKET_M,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10784,7 +10784,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_ROCKET_F,
+        .trainerPic = TRAINER_PIC_ROCKET_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10796,7 +10796,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_ROCKET_F,
+        .trainerPic = TRAINER_PIC_ROCKET_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10808,7 +10808,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_ROCKET_M,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10820,7 +10820,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_ROCKET_M,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10832,7 +10832,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_ROCKET_F,
+        .trainerPic = TRAINER_PIC_ROCKET_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10844,7 +10844,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_ROCKET_F,
+        .trainerPic = TRAINER_PIC_ROCKET_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10856,7 +10856,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_ROCKET_M,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10868,7 +10868,7 @@
     {
         .trainerClass = TRAINER_CLASS_ROCKET,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_ROCKET_M,
+        .trainerPic = TRAINER_PIC_ROCKET_M,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10880,7 +10880,7 @@
     {
         .trainerClass = TRAINER_CLASS_BOSS,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_FRONT_GIOVANNI,
+        .trainerPic = TRAINER_PIC_GIOVANNI,
         .trainerName = _("Giovanni"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10892,7 +10892,7 @@
     {
         .trainerClass = TRAINER_CLASS_SKIER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_SKIER_F,
+        .trainerPic = TRAINER_PIC_SKIER_F,
         .trainerName = _("Lexie"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10904,7 +10904,7 @@
     {
         .trainerClass = TRAINER_CLASS_SKIER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_SKIER_M,
+        .trainerPic = TRAINER_PIC_SKIER_M,
         .trainerName = _("Bjorn"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10916,7 +10916,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_ROARK,
+        .trainerPic = TRAINER_PIC_LEADER_ROARK,
         .trainerName = _("Roark"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10928,7 +10928,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_GARDENIA,
+        .trainerPic = TRAINER_PIC_LEADER_GARDENIA,
         .trainerName = _("Gardenia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10940,7 +10940,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_MAYLENE,
+        .trainerPic = TRAINER_PIC_LEADER_MAYLENE,
         .trainerName = _("Maylene"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10952,7 +10952,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_WAKE,
+        .trainerPic = TRAINER_PIC_LEADER_WAKE,
         .trainerName = _("Wake"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10964,7 +10964,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_FANTINA,
+        .trainerPic = TRAINER_PIC_LEADER_FANTINA,
         .trainerName = _("Fantina"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10976,7 +10976,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_BYRON,
+        .trainerPic = TRAINER_PIC_LEADER_BYRON,
         .trainerName = _("Byron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -10988,7 +10988,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_CANDICE,
+        .trainerPic = TRAINER_PIC_LEADER_CANDICE,
         .trainerName = _("Candice"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11000,7 +11000,7 @@
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_LEADER_VOLKNER,
+        .trainerPic = TRAINER_PIC_LEADER_VOLKNER,
         .trainerName = _("Volkner"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11012,7 +11012,7 @@
     {
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_AARON,
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_AARON,
         .trainerName = _("Aaron"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11024,7 +11024,7 @@
     {
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_BERTHA,
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_BERTHA,
         .trainerName = _("Bertha"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11036,7 +11036,7 @@
     {
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_FLINT,
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_FLINT,
         .trainerName = _("Flint"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11048,7 +11048,7 @@
     {
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LUCIAN,
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_LUCIAN,
         .trainerName = _("Lucian"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11060,7 +11060,7 @@
     {
         .trainerClass = TRAINER_CLASS_CHAMPION,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_CYNTHIA,
+        .trainerPic = TRAINER_PIC_CYNTHIA,
         .trainerName = _("Cynthia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11072,7 +11072,7 @@
     {
         .trainerClass = TRAINER_CLASS_WILD,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_SHADOWED_LUCARIO,
+        .trainerPic = TRAINER_PIC_SHADOWED_LUCARIO,
         .trainerName = _("Pokémon"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11084,7 +11084,7 @@
     {
         .trainerClass = TRAINER_CLASS_WILD,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_SHADOWED_LUCARIO,
+        .trainerPic = TRAINER_PIC_SHADOWED_LUCARIO,
         .trainerName = _("Pokémon"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11096,7 +11096,7 @@
     {
         .trainerClass = TRAINER_CLASS_WILD,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_SHADOWED_LUCARIO,
+        .trainerPic = TRAINER_PIC_SHADOWED_LUCARIO,
         .trainerName = _("Pokémon"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11108,7 +11108,7 @@
     {
         .trainerClass = TRAINER_CLASS_WILD,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_SHADOWED_LUCARIO,
+        .trainerPic = TRAINER_PIC_SHADOWED_LUCARIO,
         .trainerName = _("Pokémon"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11120,7 +11120,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_M,
+        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
         .trainerName = _("Leo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11132,7 +11132,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Eryk"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11144,7 +11144,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Selina"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11156,7 +11156,7 @@
     {
         .trainerClass = TRAINER_CLASS_KINDLER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_KINDLER,
+        .trainerPic = TRAINER_PIC_KINDLER,
         .trainerName = _("Cody"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11168,7 +11168,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Darren"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11180,7 +11180,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Jakob"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11192,7 +11192,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Milo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11204,7 +11204,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Mira"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11216,7 +11216,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Della"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11228,7 +11228,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Dario"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11240,7 +11240,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11252,7 +11252,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _(""),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11264,7 +11264,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _(""),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11276,7 +11276,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .trainerName = _(""),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11288,7 +11288,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _(""),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11300,7 +11300,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .trainerName = _(""),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11312,7 +11312,7 @@
     {
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_ADMIN_MATT,
+        .trainerPic = TRAINER_PIC_AQUA_ADMIN_MATT,
         .trainerName = _("Matt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11324,7 +11324,7 @@
     {
         .trainerClass = TRAINER_CLASS_COLLECTOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_FRONT_COLLECTOR,
+        .trainerPic = TRAINER_PIC_COLLECTOR,
         .trainerName = _("Max"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11336,7 +11336,7 @@
     {
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .trainerName = _("Willow"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11348,7 +11348,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Vance"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11360,7 +11360,7 @@
     {
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_F,
+        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
         .trainerName = _("Aveline"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11372,7 +11372,7 @@
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .trainerName = _("Grunt"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11384,7 +11384,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Zaden"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11396,7 +11396,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Corvin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11408,7 +11408,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Sable"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11420,7 +11420,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Renzo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11432,7 +11432,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Theo"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11444,7 +11444,7 @@
     {
         .trainerClass = TRAINER_CLASS_RICH_BOY,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_FRONT_RICH_BOY,
+        .trainerPic = TRAINER_PIC_RICH_BOY,
         .trainerName = _("Gavin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11456,7 +11456,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Finn"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11468,7 +11468,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Brian"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11480,7 +11480,7 @@
     {
         .trainerClass = TRAINER_CLASS_SAILOR,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_SAILOR,
+        .trainerPic = TRAINER_PIC_SAILOR,
         .trainerName = _("Otis"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11492,7 +11492,7 @@
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("Lars"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11504,7 +11504,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_F,
+        .trainerPic = TRAINER_PIC_TUBER_F,
         .trainerName = _("Keela"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11516,7 +11516,7 @@
     {
         .trainerClass = TRAINER_CLASS_TUBER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_FRONT_TUBER_M,
+        .trainerPic = TRAINER_PIC_TUBER_M,
         .trainerName = _("Gordon"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11528,7 +11528,7 @@
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("Vernon"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11540,7 +11540,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Humphrey"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11552,7 +11552,7 @@
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_CAMPER,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = _("Fred"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11564,7 +11564,7 @@
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("Dio"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11576,7 +11576,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Seraphina"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11588,7 +11588,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .trainerName = _("Elara"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11600,7 +11600,7 @@
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("Jon"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11612,7 +11612,7 @@
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_FISHERMAN,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Elmer"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11624,7 +11624,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Dewey"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11636,7 +11636,7 @@
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("Harold"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11648,7 +11648,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Aurora"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11660,7 +11660,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Toby"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11672,7 +11672,7 @@
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .trainerName = _("Marvin"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11684,7 +11684,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Luthor"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11696,7 +11696,7 @@
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("Zed"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11708,7 +11708,7 @@
     {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Tessa"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11720,7 +11720,7 @@
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_DRAGON_TAMER,
+        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("Lex"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11732,7 +11732,7 @@
     {
         .trainerClass = TRAINER_CLASS_WILD,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_SHADOWED_LUCARIO,
+        .trainerPic = TRAINER_PIC_SHADOWED_LUCARIO,
         .trainerName = _("Pokémon"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11744,7 +11744,7 @@
     {
         .trainerClass = TRAINER_CLASS_WILD,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_FRONT_SHADOWED_LUCARIO,
+        .trainerPic = TRAINER_PIC_SHADOWED_LUCARIO,
         .trainerName = _("Pokémon"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11756,7 +11756,7 @@
     {
         .trainerClass = TRAINER_CLASS_CHAMPION,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FRONT_STEVEN,
+        .trainerPic = TRAINER_PIC_STEVEN,
         .trainerName = _("Steven"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -11769,7 +11769,7 @@
     {
         .trainerClass = TRAINER_CLASS_,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_,
-        .trainerPic = TRAINER_PIC_FRONT_,
+        .trainerPic = TRAINER_PIC_,
         .trainerName = _(""),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,

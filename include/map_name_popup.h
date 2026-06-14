@@ -9,7 +9,9 @@
 void HideMapNamePopUpWindow(void);
 void ShowMapNamePopup(void);
 
-#define MAPPOPUP_24_HOUR_TIME  FALSE
-#define MAPPOPUP_ALPHA_BLEND   TRUE
+u8 *GetPopUpMapName(u8 *dest, const struct MapHeader *mapHeader);
+
+#define MAP_POPUP_STRING_BUFFER_LENGTH 27
+#define MAP_POPUP_PREFIX_BUFFER_LENGTH 6
 
 #endif //GUARD_MAP_NAME_POPUP_H

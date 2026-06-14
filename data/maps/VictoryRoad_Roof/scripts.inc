@@ -35,10 +35,10 @@ VictoryRoad_Roof_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 BattleMeloetta::
 # 21 "data/maps/VictoryRoad_Roof/scripts.pory"
 	goto_if_unset FLAG_CAUGHT_MELOETTA, BattleMeloetta_2
-# 39 "data/maps/VictoryRoad_Roof/scripts.pory"
+# 38 "data/maps/VictoryRoad_Roof/scripts.pory"
 	msgbox BattleMeloetta_Text_1
 BattleMeloetta_1:
-# 41 "data/maps/VictoryRoad_Roof/scripts.pory"
+# 40 "data/maps/VictoryRoad_Roof/scripts.pory"
 	release
 	return
 
@@ -62,18 +62,16 @@ BattleMeloetta_2:
 # 30 "data/maps/VictoryRoad_Roof/scripts.pory"
 	special StartRegiBattle
 # 31 "data/maps/VictoryRoad_Roof/scripts.pory"
-	waitstate
-# 32 "data/maps/VictoryRoad_Roof/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 33 "data/maps/VictoryRoad_Roof/scripts.pory"
+# 32 "data/maps/VictoryRoad_Roof/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 34 "data/maps/VictoryRoad_Roof/scripts.pory"
+# 33 "data/maps/VictoryRoad_Roof/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleMeloetta_5
 	goto BattleMeloetta_1
 
 BattleMeloetta_5:
-# 35 "data/maps/VictoryRoad_Roof/scripts.pory"
+# 34 "data/maps/VictoryRoad_Roof/scripts.pory"
 	setflag FLAG_CAUGHT_MELOETTA
 	goto BattleMeloetta_1
 
@@ -83,6 +81,6 @@ BattleMeloetta_Text_0:
 	.string "Melote!$"
 
 BattleMeloetta_Text_1:
-# 39 "data/maps/VictoryRoad_Roof/scripts.pory"
+# 38 "data/maps/VictoryRoad_Roof/scripts.pory"
 	.string "You can see the Pokémon League\n"
 	.string "building in the distance.$"

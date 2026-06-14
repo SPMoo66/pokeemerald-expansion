@@ -94,7 +94,6 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 	special (SavePlayerParty)
 	fadescreen (FADE_TO_BLACK)
 	special (ChooseHalfPartyForBattle)
-	waitstate
 	checkplayergender
 	if (var(VAR_RESULT) == MALE ) {
 		multi_2_vs_2 (TRAINER_COURTNEY_METEOR_FALLS, "Funny… Just a kid…", TRAINER_MAGMA_GRUNT_METEOR_FALLS, "Ach!\nWe've got the Meteorite, let's just go!", PARTNER_MAY_METEOR_FALLS)
@@ -230,7 +229,6 @@ script MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene {
 		default:
 			fadescreen (FADE_TO_BLACK)
 			special (SetCB2WhiteOut)
-			waitstate
 	}
 }
 

@@ -682,14 +682,13 @@ script Common_EventScript_MoveReminder {
 				if (var(VAR_RESULT) == TRUE) {
 					msgbox(format("Hunh? There isn't a single move that I can teach an Egg."))
 				}
-				special (HasMovesToRelearn)
+				special (Special_HasMoveToRelearn)
 				if (var(VAR_RESULT) == FALSE) {
 					msgbox(format("Sorry, it doesn't appear as if I have any move I can teach that Pokémon."))
 				}
 				else {
 					msgbox(format("Which move should I teach?"))
 					special (TeachMoveRelearnerMove)
-					waitstate
 					msgbox(format("Come back if your Pokémon need to learn another move."))
 					break
 				}

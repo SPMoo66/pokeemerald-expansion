@@ -644,7 +644,6 @@ BattleZeraora::
 	seteventmon SPECIES_ZERAORA, 50
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
-	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
 	call_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, Zeraora_SetCaughtFlag

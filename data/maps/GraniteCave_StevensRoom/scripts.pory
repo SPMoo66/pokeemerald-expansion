@@ -95,7 +95,6 @@ script GraniteCave_StevensRoom_EventScript_Steven {
 	special (SavePlayerParty)
 	fadescreen (FADE_TO_BLACK)
 	special (ChooseHalfPartyForBattle)
-	waitstate
 	multi_2_vs_2 (TRAINER_MAGMA_GRUNT_F_GRANITE_CAVE, "Wh-what??", TRAINER_MAGMA_GRUNT_M_GRANITE_CAVE, "Tch…\nYou told me we could handle this!", PARTNER_STEVEN_GRANITE_CAVE)
 
 	if (var(VAR_RESULT) == 1) {
@@ -183,7 +182,6 @@ script GraniteCave_StevensRoom_EventScript_Steven {
 	else {
 		fadescreen (FADE_TO_BLACK)
 		special (SetCB2WhiteOut)
-		waitstate
 	}
 }
 

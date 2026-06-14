@@ -46,27 +46,25 @@ BattleDarkrai::
 # 25 "data/maps/CaveOfDreamsChamber/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 26 "data/maps/CaveOfDreamsChamber/scripts.pory"
-	waitstate
-# 27 "data/maps/CaveOfDreamsChamber/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 28 "data/maps/CaveOfDreamsChamber/scripts.pory"
+# 27 "data/maps/CaveOfDreamsChamber/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 29 "data/maps/CaveOfDreamsChamber/scripts.pory"
+# 28 "data/maps/CaveOfDreamsChamber/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleDarkrai_2
 BattleDarkrai_1:
-# 32 "data/maps/CaveOfDreamsChamber/scripts.pory"
+# 31 "data/maps/CaveOfDreamsChamber/scripts.pory"
 	release
 	end
 
 BattleDarkrai_2:
-# 30 "data/maps/CaveOfDreamsChamber/scripts.pory"
+# 29 "data/maps/CaveOfDreamsChamber/scripts.pory"
 	setflag FLAG_CAUGHT_DARKRAI
 	goto BattleDarkrai_1
 
 
 CaveofDreamsChamber_Portal::
-# 37 "data/maps/CaveOfDreamsChamber/scripts.pory"
+# 36 "data/maps/CaveOfDreamsChamber/scripts.pory"
 	warp MAP_CRESCENT_ISLE, 0
 	return
 

@@ -54,21 +54,19 @@ BattleHoopa::
 # 30 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 31 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
-	waitstate
-# 32 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 33 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
+# 32 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 34 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
+# 33 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleHoopa_2
 BattleHoopa_1:
-# 37 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
+# 36 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
 	release
 	end
 
 BattleHoopa_2:
-# 35 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
+# 34 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
 	setflag FLAG_CAUGHT_HOOPA
 	goto BattleHoopa_1
 

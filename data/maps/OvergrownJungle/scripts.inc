@@ -48,21 +48,19 @@ BattleZarude::
 # 26 "data/maps/OvergrownJungle/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 27 "data/maps/OvergrownJungle/scripts.pory"
-	waitstate
-# 28 "data/maps/OvergrownJungle/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 29 "data/maps/OvergrownJungle/scripts.pory"
+# 28 "data/maps/OvergrownJungle/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 30 "data/maps/OvergrownJungle/scripts.pory"
+# 29 "data/maps/OvergrownJungle/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleZarude_2
 BattleZarude_1:
-# 33 "data/maps/OvergrownJungle/scripts.pory"
+# 32 "data/maps/OvergrownJungle/scripts.pory"
 	release
 	end
 
 BattleZarude_2:
-# 31 "data/maps/OvergrownJungle/scripts.pory"
+# 30 "data/maps/OvergrownJungle/scripts.pory"
 	setflag FLAG_CAUGHT_ZARUDE
 	goto BattleZarude_1
 

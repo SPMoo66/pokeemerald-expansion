@@ -39,7 +39,6 @@ script BattleTapuBulu {
 	seteventmon(SPECIES_TAPU_BULU, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -59,7 +58,6 @@ script BattleTapuFini {
 	seteventmon(SPECIES_TAPU_FINI, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -79,7 +77,6 @@ script BattleTapuKoko {
 	seteventmon(SPECIES_TAPU_KOKO, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -99,7 +96,6 @@ script BattleTapuLele {
 	seteventmon(SPECIES_TAPU_LELE, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {

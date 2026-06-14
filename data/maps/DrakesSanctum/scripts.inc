@@ -46,21 +46,19 @@ BattleRegidrago::
 # 25 "data/maps/DrakesSanctum/scripts.pory"
 	special StartRegiBattle
 # 26 "data/maps/DrakesSanctum/scripts.pory"
-	waitstate
-# 27 "data/maps/DrakesSanctum/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 28 "data/maps/DrakesSanctum/scripts.pory"
+# 27 "data/maps/DrakesSanctum/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 29 "data/maps/DrakesSanctum/scripts.pory"
+# 28 "data/maps/DrakesSanctum/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleRegidrago_2
 BattleRegidrago_1:
-# 32 "data/maps/DrakesSanctum/scripts.pory"
+# 31 "data/maps/DrakesSanctum/scripts.pory"
 	release
 	end
 
 BattleRegidrago_2:
-# 30 "data/maps/DrakesSanctum/scripts.pory"
+# 29 "data/maps/DrakesSanctum/scripts.pory"
 	setflag FLAG_CAUGHT_REGIDRAGO
 	goto BattleRegidrago_1
 

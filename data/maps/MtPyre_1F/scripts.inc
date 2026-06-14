@@ -139,21 +139,19 @@ BattleMarshadow::
 # 72 "data/maps/MtPyre_1F/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 73 "data/maps/MtPyre_1F/scripts.pory"
-	waitstate
-# 74 "data/maps/MtPyre_1F/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 75 "data/maps/MtPyre_1F/scripts.pory"
+# 74 "data/maps/MtPyre_1F/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 76 "data/maps/MtPyre_1F/scripts.pory"
+# 75 "data/maps/MtPyre_1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleMarshadow_2
 BattleMarshadow_1:
-# 79 "data/maps/MtPyre_1F/scripts.pory"
+# 78 "data/maps/MtPyre_1F/scripts.pory"
 	release
 	end
 
 BattleMarshadow_2:
-# 77 "data/maps/MtPyre_1F/scripts.pory"
+# 76 "data/maps/MtPyre_1F/scripts.pory"
 	setflag FLAG_CAUGHT_MARSHADOW
 	goto BattleMarshadow_1
 

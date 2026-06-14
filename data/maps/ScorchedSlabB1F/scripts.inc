@@ -56,58 +56,54 @@ BattleHeatran::
 # 30 "data/maps/ScorchedSlabB1F/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 31 "data/maps/ScorchedSlabB1F/scripts.pory"
-	waitstate
-# 32 "data/maps/ScorchedSlabB1F/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 33 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 32 "data/maps/ScorchedSlabB1F/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 34 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 33 "data/maps/ScorchedSlabB1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleHeatran_2
 BattleHeatran_1:
-# 37 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 36 "data/maps/ScorchedSlabB1F/scripts.pory"
 	release
 	end
 
 BattleHeatran_2:
-# 35 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 34 "data/maps/ScorchedSlabB1F/scripts.pory"
 	setflag FLAG_CAUGHT_HEATRAN
 	goto BattleHeatran_1
 
 
 BattleVolcanion::
-# 42 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 41 "data/maps/ScorchedSlabB1F/scripts.pory"
 	lock
-# 43 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 42 "data/maps/ScorchedSlabB1F/scripts.pory"
 	faceplayer
-# 44 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 43 "data/maps/ScorchedSlabB1F/scripts.pory"
 	playmoncry SPECIES_VOLCANION, CRY_MODE_ENCOUNTER
-# 45 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 44 "data/maps/ScorchedSlabB1F/scripts.pory"
 	msgbox BattleVolcanion_Text_0
-# 46 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 45 "data/maps/ScorchedSlabB1F/scripts.pory"
 	waitmoncry
-# 47 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 46 "data/maps/ScorchedSlabB1F/scripts.pory"
 	seteventmon SPECIES_VOLCANION, 50
-# 48 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 47 "data/maps/ScorchedSlabB1F/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 49 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 48 "data/maps/ScorchedSlabB1F/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 50 "data/maps/ScorchedSlabB1F/scripts.pory"
-	waitstate
-# 51 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 49 "data/maps/ScorchedSlabB1F/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 52 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 50 "data/maps/ScorchedSlabB1F/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 53 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 51 "data/maps/ScorchedSlabB1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleVolcanion_2
 BattleVolcanion_1:
-# 56 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 54 "data/maps/ScorchedSlabB1F/scripts.pory"
 	release
 	end
 
 BattleVolcanion_2:
-# 54 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 52 "data/maps/ScorchedSlabB1F/scripts.pory"
 	setflag FLAG_CAUGHT_VOLCANION
 	goto BattleVolcanion_1
 
@@ -117,5 +113,5 @@ BattleHeatran_Text_0:
 	.string "Gwogobo gwobobobo!$"
 
 BattleVolcanion_Text_0:
-# 45 "data/maps/ScorchedSlabB1F/scripts.pory"
+# 44 "data/maps/ScorchedSlabB1F/scripts.pory"
 	.string "Waaoow!$"

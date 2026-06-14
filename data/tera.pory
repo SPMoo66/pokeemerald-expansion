@@ -86,7 +86,6 @@ script Aide_SetTeraType {
 			msgbox( format( "Great!\n"
 							"Go ahead for me and pick the Pokémon whose Tera Type you'd like changed to Stellar."))
 			special (ChoosePartyMon)
-			waitstate
 			if (var(VAR_0x8004) != PARTY_NOTHING_CHOSEN) {
 				specialvar (VAR_TEMP_2, ScriptGetPartyMonSpecies)
 				bufferspeciesname (STR_VAR_1, VAR_TEMP_2)
@@ -114,7 +113,6 @@ script Aide_SetTeraType {
 			msgbox( format( "Great!\n"
 							"Go ahead for me and pick the Pokémon whose Tera Type you'd like changed."))
 			special (ChoosePartyMon)
-			waitstate
 			if (var(VAR_0x8004) != PARTY_NOTHING_CHOSEN) {
 				specialvar (VAR_TEMP_2, ScriptGetPartyMonSpecies)
 				if (var(VAR_TEMP_2) != SPECIES_EGG) {

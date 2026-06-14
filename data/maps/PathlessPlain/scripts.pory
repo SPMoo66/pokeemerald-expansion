@@ -43,7 +43,6 @@ script BattleCobalion {
 	setwildbattle(SPECIES_COBALION, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(StartRegiBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -63,7 +62,6 @@ script BattleTerrakion {
 	setwildbattle(SPECIES_TERRAKION, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(StartRegiBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -83,7 +81,6 @@ script BattleVirizion {
 	setwildbattle(SPECIES_VIRIZION, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(StartRegiBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -103,7 +100,6 @@ script BattleKeldeo {
 	setwildbattle(SPECIES_KELDEO, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(StartRegiBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {

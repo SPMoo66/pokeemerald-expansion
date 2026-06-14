@@ -126,17 +126,17 @@ Aide_SetTeraType_1:
 	compare VAR_RESULT, 0
 	goto_if_ne Aide_SetTeraType_5
 Aide_SetTeraType_4:
-# 110 "data/tera.pory"
+# 109 "data/tera.pory"
 	checkitem ITEM_NORMAL_TERA_SHARD
-# 111 "data/tera.pory"
+# 110 "data/tera.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne Aide_SetTeraType_8
-# 218 "data/tera.pory"
+# 216 "data/tera.pory"
 	msgbox Aide_SetTeraType_Text_9
 Aide_SetTeraType_7:
-# 220 "data/tera.pory"
+# 218 "data/tera.pory"
 	closemessage
-# 221 "data/tera.pory"
+# 219 "data/tera.pory"
 	release
 	return
 
@@ -156,14 +156,14 @@ Aide_SetTeraType_5:
 	goto Aide_SetTeraType_4
 
 Aide_SetTeraType_8:
-# 112 "data/tera.pory"
+# 111 "data/tera.pory"
 	msgbox Aide_SetTeraType_Text_4, MSGBOX_YESNO
-# 113 "data/tera.pory"
+# 112 "data/tera.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne Aide_SetTeraType_13
-# 212 "data/tera.pory"
+# 210 "data/tera.pory"
 	msgbox Aide_SetTeraType_Text_8
-# 213 "data/tera.pory"
+# 211 "data/tera.pory"
 	closemessage
 	end
 
@@ -173,357 +173,353 @@ Aide_SetTeraType_11:
 # 88 "data/tera.pory"
 	special ChoosePartyMon
 # 89 "data/tera.pory"
-	waitstate
-# 90 "data/tera.pory"
 	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
 	goto_if_ne Aide_SetTeraType_16
 	goto Aide_SetTeraType_4
 
 Aide_SetTeraType_13:
-# 114 "data/tera.pory"
+# 113 "data/tera.pory"
 	msgbox Aide_SetTeraType_Text_5
-# 116 "data/tera.pory"
+# 115 "data/tera.pory"
 	special ChoosePartyMon
-# 117 "data/tera.pory"
-	waitstate
-# 118 "data/tera.pory"
+# 116 "data/tera.pory"
 	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
 	goto_if_ne Aide_SetTeraType_18
-# 208 "data/tera.pory"
+# 206 "data/tera.pory"
 	msgbox Aide_SetTeraType_Text_7
 	goto Aide_SetTeraType_7
 
 Aide_SetTeraType_16:
-# 91 "data/tera.pory"
+# 90 "data/tera.pory"
 	specialvar VAR_TEMP_2, ScriptGetPartyMonSpecies
-# 92 "data/tera.pory"
+# 91 "data/tera.pory"
 	bufferspeciesname STR_VAR_1, VAR_TEMP_2
-# 93 "data/tera.pory"
+# 92 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_StellarType
-# 94 "data/tera.pory"
+# 93 "data/tera.pory"
 	compare VAR_TEMP_2, SPECIES_EGG
 	goto_if_ne Aide_SetTeraType_26
 Aide_SetTeraType_25:
-# 99 "data/tera.pory"
+# 98 "data/tera.pory"
 	compare VAR_TEMP_2, SPECIES_OGERPON
 	goto_if_eq Aide_SetTeraType_23
-# 103 "data/tera.pory"
+# 102 "data/tera.pory"
 	msgbox Text_EggTeraType
 Aide_SetTeraType_21:
-# 105 "data/tera.pory"
+# 104 "data/tera.pory"
 	closemessage
 	end
 
 Aide_SetTeraType_18:
-# 119 "data/tera.pory"
+# 117 "data/tera.pory"
 	specialvar VAR_TEMP_2, ScriptGetPartyMonSpecies
-# 120 "data/tera.pory"
+# 118 "data/tera.pory"
 	compare VAR_TEMP_2, SPECIES_EGG
 	goto_if_ne Aide_SetTeraType_29
-# 204 "data/tera.pory"
+# 202 "data/tera.pory"
 	msgbox Text_EggTeraType
 	goto Aide_SetTeraType_7
 
 Aide_SetTeraType_22:
-# 95 "data/tera.pory"
+# 94 "data/tera.pory"
 	setteratype TYPE_STELLAR, VAR_0x8004
-# 96 "data/tera.pory"
+# 95 "data/tera.pory"
 	msgbox Text_ChangedTeraType
-# 97 "data/tera.pory"
+# 96 "data/tera.pory"
 	removeitem ITEM_STELLAR_TERA_SHARD
 	goto Aide_SetTeraType_21
 
 Aide_SetTeraType_23:
-# 100 "data/tera.pory"
+# 99 "data/tera.pory"
 	msgbox Aide_SetTeraType_Text_3
 	goto Aide_SetTeraType_21
 
 Aide_SetTeraType_26:
-# 94 "data/tera.pory"
+# 93 "data/tera.pory"
 	compare VAR_TEMP_2, SPECIES_OGERPON
 	goto_if_ne Aide_SetTeraType_22
 	goto Aide_SetTeraType_25
 
 Aide_SetTeraType_29:
-# 121 "data/tera.pory"
+# 119 "data/tera.pory"
 	bufferspeciesname STR_VAR_1, VAR_TEMP_2
-# 122 "data/tera.pory"
+# 120 "data/tera.pory"
 	msgbox Aide_SetTeraType_Text_6
-# 124 "data/tera.pory"
+# 122 "data/tera.pory"
 	dynmultipush CommonText_NormalType, 0
-# 125 "data/tera.pory"
+# 123 "data/tera.pory"
 	dynmultipush CommonText_FightingType, 1
-# 126 "data/tera.pory"
+# 124 "data/tera.pory"
 	dynmultipush CommonText_FlyingType, 2
-# 127 "data/tera.pory"
+# 125 "data/tera.pory"
 	dynmultipush CommonText_PoisonType, 3
-# 128 "data/tera.pory"
+# 126 "data/tera.pory"
 	dynmultipush CommonText_GroundType, 4
-# 129 "data/tera.pory"
+# 127 "data/tera.pory"
 	dynmultipush CommonText_RockType, 5
-# 130 "data/tera.pory"
+# 128 "data/tera.pory"
 	dynmultipush CommonText_BugType, 6
-# 131 "data/tera.pory"
+# 129 "data/tera.pory"
 	dynmultipush CommonText_GhostType, 7
-# 132 "data/tera.pory"
+# 130 "data/tera.pory"
 	dynmultipush CommonText_SteelType, 8
-# 133 "data/tera.pory"
+# 131 "data/tera.pory"
 	dynmultipush CommonText_FireType, 9
-# 134 "data/tera.pory"
+# 132 "data/tera.pory"
 	dynmultipush CommonText_WaterType, 10
-# 135 "data/tera.pory"
+# 133 "data/tera.pory"
 	dynmultipush CommonText_GrassType, 11
-# 136 "data/tera.pory"
+# 134 "data/tera.pory"
 	dynmultipush CommonText_ElectricType, 12
-# 137 "data/tera.pory"
+# 135 "data/tera.pory"
 	dynmultipush CommonText_PsychicType, 13
-# 138 "data/tera.pory"
+# 136 "data/tera.pory"
 	dynmultipush CommonText_IceType, 14
-# 139 "data/tera.pory"
+# 137 "data/tera.pory"
 	dynmultipush CommonText_DragonType, 15
-# 140 "data/tera.pory"
+# 138 "data/tera.pory"
 	dynmultipush CommonText_DarkType, 16
-# 141 "data/tera.pory"
+# 139 "data/tera.pory"
 	dynmultipush CommonText_FairyType, 17
-# 142 "data/tera.pory"
+# 140 "data/tera.pory"
 	dynmultistack 0, 0, FALSE, 6, FALSE, VAR_0x800A, DYN_MULTICHOICE_CB_NONE
-# 143 "data/tera.pory"
+# 141 "data/tera.pory"
 	switch VAR_RESULT
-# 144 "data/tera.pory"
+# 142 "data/tera.pory"
 	case 0, Aide_SetTeraType_34
-# 147 "data/tera.pory"
+# 145 "data/tera.pory"
 	case 1, Aide_SetTeraType_35
-# 150 "data/tera.pory"
+# 148 "data/tera.pory"
 	case 2, Aide_SetTeraType_36
-# 153 "data/tera.pory"
+# 151 "data/tera.pory"
 	case 3, Aide_SetTeraType_37
-# 156 "data/tera.pory"
+# 154 "data/tera.pory"
 	case 4, Aide_SetTeraType_38
-# 159 "data/tera.pory"
+# 157 "data/tera.pory"
 	case 5, Aide_SetTeraType_39
-# 162 "data/tera.pory"
+# 160 "data/tera.pory"
 	case 6, Aide_SetTeraType_40
-# 165 "data/tera.pory"
+# 163 "data/tera.pory"
 	case 7, Aide_SetTeraType_41
-# 168 "data/tera.pory"
+# 166 "data/tera.pory"
 	case 8, Aide_SetTeraType_42
-# 171 "data/tera.pory"
+# 169 "data/tera.pory"
 	case 9, Aide_SetTeraType_43
-# 174 "data/tera.pory"
+# 172 "data/tera.pory"
 	case 10, Aide_SetTeraType_44
-# 177 "data/tera.pory"
+# 175 "data/tera.pory"
 	case 11, Aide_SetTeraType_45
-# 180 "data/tera.pory"
+# 178 "data/tera.pory"
 	case 12, Aide_SetTeraType_46
-# 183 "data/tera.pory"
+# 181 "data/tera.pory"
 	case 13, Aide_SetTeraType_47
-# 186 "data/tera.pory"
+# 184 "data/tera.pory"
 	case 14, Aide_SetTeraType_48
-# 189 "data/tera.pory"
+# 187 "data/tera.pory"
 	case 15, Aide_SetTeraType_49
-# 192 "data/tera.pory"
+# 190 "data/tera.pory"
 	case 16, Aide_SetTeraType_50
-# 195 "data/tera.pory"
+# 193 "data/tera.pory"
 	case 17, Aide_SetTeraType_51
 Aide_SetTeraType_32:
-# 200 "data/tera.pory"
+# 198 "data/tera.pory"
 	msgbox Text_ChangedTeraType
-# 201 "data/tera.pory"
+# 199 "data/tera.pory"
 	removeitem ITEM_NORMAL_TERA_SHARD
 	goto Aide_SetTeraType_7
 
 Aide_SetTeraType_34:
-# 145 "data/tera.pory"
+# 143 "data/tera.pory"
 	setteratype TYPE_NORMAL, VAR_0x8004
-# 146 "data/tera.pory"
+# 144 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_NormalType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_35:
-# 148 "data/tera.pory"
+# 146 "data/tera.pory"
 	setteratype TYPE_FIGHTING, VAR_0x8004
-# 149 "data/tera.pory"
+# 147 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_FightingType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_36:
-# 151 "data/tera.pory"
+# 149 "data/tera.pory"
 	setteratype TYPE_FLYING, VAR_0x8004
-# 152 "data/tera.pory"
+# 150 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_FlyingType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_37:
-# 154 "data/tera.pory"
+# 152 "data/tera.pory"
 	setteratype TYPE_POISON, VAR_0x8004
-# 155 "data/tera.pory"
+# 153 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_PoisonType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_38:
-# 157 "data/tera.pory"
+# 155 "data/tera.pory"
 	setteratype TYPE_GROUND, VAR_0x8004
-# 158 "data/tera.pory"
+# 156 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_GroundType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_39:
-# 160 "data/tera.pory"
+# 158 "data/tera.pory"
 	setteratype TYPE_ROCK, VAR_0x8004
-# 161 "data/tera.pory"
+# 159 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_RockType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_40:
-# 163 "data/tera.pory"
+# 161 "data/tera.pory"
 	setteratype TYPE_BUG, VAR_0x8004
-# 164 "data/tera.pory"
+# 162 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_BugType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_41:
-# 166 "data/tera.pory"
+# 164 "data/tera.pory"
 	setteratype TYPE_GHOST, VAR_0x8004
-# 167 "data/tera.pory"
+# 165 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_GhostType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_42:
-# 169 "data/tera.pory"
+# 167 "data/tera.pory"
 	setteratype TYPE_STEEL, VAR_0x8004
-# 170 "data/tera.pory"
+# 168 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_SteelType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_43:
-# 172 "data/tera.pory"
+# 170 "data/tera.pory"
 	setteratype TYPE_FIRE, VAR_0x8004
-# 173 "data/tera.pory"
+# 171 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_FireType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_44:
-# 175 "data/tera.pory"
+# 173 "data/tera.pory"
 	setteratype TYPE_WATER, VAR_0x8004
-# 176 "data/tera.pory"
+# 174 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_WaterType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_45:
-# 178 "data/tera.pory"
+# 176 "data/tera.pory"
 	setteratype TYPE_GRASS, VAR_0x8004
-# 179 "data/tera.pory"
+# 177 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_GrassType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_46:
-# 181 "data/tera.pory"
+# 179 "data/tera.pory"
 	setteratype TYPE_ELECTRIC, VAR_0x8004
-# 182 "data/tera.pory"
+# 180 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_ElectricType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_47:
-# 184 "data/tera.pory"
+# 182 "data/tera.pory"
 	setteratype TYPE_PSYCHIC, VAR_0x8004
-# 185 "data/tera.pory"
+# 183 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_PsychicType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_48:
-# 187 "data/tera.pory"
+# 185 "data/tera.pory"
 	setteratype TYPE_ICE, VAR_0x8004
-# 188 "data/tera.pory"
+# 186 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_IceType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_49:
-# 190 "data/tera.pory"
+# 188 "data/tera.pory"
 	setteratype TYPE_DRAGON, VAR_0x8004
-# 191 "data/tera.pory"
+# 189 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_DragonType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_50:
-# 193 "data/tera.pory"
+# 191 "data/tera.pory"
 	setteratype TYPE_DARK, VAR_0x8004
-# 194 "data/tera.pory"
+# 192 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_DarkType
 	goto Aide_SetTeraType_32
 
 Aide_SetTeraType_51:
-# 196 "data/tera.pory"
+# 194 "data/tera.pory"
 	setteratype TYPE_FAIRY, VAR_0x8004
-# 197 "data/tera.pory"
+# 195 "data/tera.pory"
 	bufferstring STR_VAR_2, CommonText_FairyType
 	goto Aide_SetTeraType_32
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Rowan::
-# 237 "data/tera.pory"
+# 235 "data/tera.pory"
 	lock
-# 238 "data/tera.pory"
+# 236 "data/tera.pory"
 	faceplayer
-# 239 "data/tera.pory"
+# 237 "data/tera.pory"
 	speakername CommonText_Rowan
-# 240 "data/tera.pory"
+# 238 "data/tera.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_0
-# 241 "data/tera.pory"
+# 239 "data/tera.pory"
 	compare VAR_ROUTE104_STATE, 3
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_2
 LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_1:
-# 247 "data/tera.pory"
+# 245 "data/tera.pory"
 	goto_if_set FLAG_BADGE04_GET, LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_5
 LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_4:
-# 272 "data/tera.pory"
+# 270 "data/tera.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_5
-# 273 "data/tera.pory"
+# 271 "data/tera.pory"
 	closemessage
-# 274 "data/tera.pory"
+# 272 "data/tera.pory"
 	release
 	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_2:
-# 242 "data/tera.pory"
+# 240 "data/tera.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_1
-# 245 "data/tera.pory"
+# 243 "data/tera.pory"
 	setvar VAR_ROUTE104_STATE, 4
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_1
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_5:
-# 248 "data/tera.pory"
+# 246 "data/tera.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_2, MSGBOX_YESNO
-# 252 "data/tera.pory"
+# 250 "data/tera.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_7
-# 258 "data/tera.pory"
+# 256 "data/tera.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_3
-# 259 "data/tera.pory"
+# 257 "data/tera.pory"
 	setvar VAR_0x8005, MOVE_TERA_BLAST
-# 260 "data/tera.pory"
+# 258 "data/tera.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 261 "data/tera.pory"
+# 259 "data/tera.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_11
-# 267 "data/tera.pory"
+# 265 "data/tera.pory"
 	speakername CommonText_Rowan
-# 268 "data/tera.pory"
+# 266 "data/tera.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_4
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_7:
-# 253 "data/tera.pory"
+# 251 "data/tera.pory"
 	msgbox Text_Declined_TeraBlast, MSGBOX_DEFAULT
-# 254 "data/tera.pory"
+# 252 "data/tera.pory"
 	release
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_11:
-# 262 "data/tera.pory"
+# 260 "data/tera.pory"
 	speakername CommonText_Rowan
-# 263 "data/tera.pory"
+# 261 "data/tera.pory"
 	msgbox Text_Declined_TeraBlast, MSGBOX_DEFAULT
-# 264 "data/tera.pory"
+# 262 "data/tera.pory"
 	release
 	end
 
@@ -619,49 +615,49 @@ Aide_SetTeraType_Text_2:
 	.string "Stellar.$"
 
 Aide_SetTeraType_Text_3:
-# 100 "data/tera.pory"
+# 99 "data/tera.pory"
 	.string "I'm sorry, the Tera Type of your\n"
 	.string "{STR_VAR_1} can't be changed to the\l"
 	.string "{STR_VAR_2}.$"
 
 Aide_SetTeraType_Text_4:
-# 112 "data/tera.pory"
+# 111 "data/tera.pory"
 	.string "Do you want me to change the Tera Type\n"
 	.string "of one of your Pokémon in exchange for\l"
 	.string "a Normal Tera Shard?$"
 
 Aide_SetTeraType_Text_5:
-# 114 "data/tera.pory"
+# 113 "data/tera.pory"
 	.string "Great!\n"
 	.string "Go ahead for me and pick the Pokémon\l"
 	.string "whose Tera Type you'd like changed.$"
 
 Aide_SetTeraType_Text_6:
-# 122 "data/tera.pory"
+# 120 "data/tera.pory"
 	.string "Your {STR_VAR_1}?\n"
 	.string "Okay, which type?$"
 
 Aide_SetTeraType_Text_7:
-# 208 "data/tera.pory"
+# 206 "data/tera.pory"
 	.string "Nothing chosen.$"
 
 Aide_SetTeraType_Text_8:
-# 212 "data/tera.pory"
+# 210 "data/tera.pory"
 	.string "Do return to me if you change your mind.$"
 
 Aide_SetTeraType_Text_9:
-# 218 "data/tera.pory"
+# 216 "data/tera.pory"
 	.string "If you get some Tera Shards into your\n"
 	.string "hands, come back to me and I can change\l"
 	.string "the Tera Type of one of your Pokémon.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_0:
-# 240 "data/tera.pory"
+# 238 "data/tera.pory"
 	.string "Ah, {PLAYER}.\n"
 	.string "It's good to see you again.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_1:
-# 242 "data/tera.pory"
+# 240 "data/tera.pory"
 	.string "Professor Birch has been kind enough\n"
 	.string "to put up with me for the time being.\p"
 	.string "This isn't my first visit to Hoenn,\n"
@@ -671,7 +667,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_1:
 	.string "with Terastallization, aren't you?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_2:
-# 248 "data/tera.pory"
+# 246 "data/tera.pory"
 	.string "Thanks to your assistance so far,\n"
 	.string "I've come across a move which changes\l"
 	.string "type based upon the Tera Type of the\l"
@@ -681,37 +677,37 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_2:
 	.string "to one of your Pokémon?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_3:
-# 258 "data/tera.pory"
+# 256 "data/tera.pory"
 	.string "Great!\n"
 	.string "Now, which Pokémon will be learning\l"
 	.string "Tera Blast?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_4:
-# 268 "data/tera.pory"
+# 266 "data/tera.pory"
 	.string "Great, now go out and give Tera Blast\n"
 	.string "a shot.\p"
 	.string "I'm quite interested in hearing\n"
 	.string "about the results.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Rowan_Text_5:
-# 272 "data/tera.pory"
+# 270 "data/tera.pory"
 	.string "If you wish to change your Pokémon's\n"
 	.string "Tera Type, please speak with my Aide.$"
 
 Text_ChangedTeraType::
-# 224 "data/tera.pory"
+# 222 "data/tera.pory"
 	.string "The Tera Type of your {STR_VAR_1}\n"
 	.string "has been changed to {STR_VAR_2}.$"
 
 Text_EggTeraType::
-# 229 "data/tera.pory"
+# 227 "data/tera.pory"
 	.string "Umm…\n"
 	.string "That's a Pokémon Egg.\l"
 	.string "I'm not sure what you expect me to\l"
 	.string "do with that.$"
 
 Text_Declined_TeraBlast::
-# 277 "data/tera.pory"
+# 275 "data/tera.pory"
 	.string "Do return if you wish to teach\na Pokémon Tera Blast.\p"
 	.string "Or speak with my Aide if you wish to\nchange a Pokémon's Tera Type.\p"
 	.string "This is all very interesting.$"

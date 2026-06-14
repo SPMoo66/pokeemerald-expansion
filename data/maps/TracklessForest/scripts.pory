@@ -43,7 +43,6 @@ script BattleRaikou {
 	seteventmon(SPECIES_RAIKOU, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -63,7 +62,6 @@ script BattleEntei {
 	seteventmon(SPECIES_ENTEI, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -83,7 +81,6 @@ script BattleSuicune {
 	seteventmon(SPECIES_SUICUNE, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -103,7 +100,6 @@ script BattleCelebi {
 	seteventmon(SPECIES_CELEBI, 50)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {

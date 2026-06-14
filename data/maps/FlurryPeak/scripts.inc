@@ -130,60 +130,56 @@ BattleGlastrier::
 # 75 "data/maps/FlurryPeak/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 76 "data/maps/FlurryPeak/scripts.pory"
-	waitstate
-# 77 "data/maps/FlurryPeak/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 78 "data/maps/FlurryPeak/scripts.pory"
+# 77 "data/maps/FlurryPeak/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 79 "data/maps/FlurryPeak/scripts.pory"
+# 78 "data/maps/FlurryPeak/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleGlastrier_2
 BattleGlastrier_1:
-# 82 "data/maps/FlurryPeak/scripts.pory"
+# 81 "data/maps/FlurryPeak/scripts.pory"
 	release
 	return
 
 BattleGlastrier_2:
-# 80 "data/maps/FlurryPeak/scripts.pory"
+# 79 "data/maps/FlurryPeak/scripts.pory"
 	setflag FLAG_CAUGHT_GLASTRIER
 	goto BattleGlastrier_1
 
 
 BattleSpectrier::
-# 86 "data/maps/FlurryPeak/scripts.pory"
+# 85 "data/maps/FlurryPeak/scripts.pory"
 	lock
-# 87 "data/maps/FlurryPeak/scripts.pory"
+# 86 "data/maps/FlurryPeak/scripts.pory"
 	faceplayer
-# 88 "data/maps/FlurryPeak/scripts.pory"
+# 87 "data/maps/FlurryPeak/scripts.pory"
 	setvar VAR_LAST_TALKED, 10
-# 89 "data/maps/FlurryPeak/scripts.pory"
+# 88 "data/maps/FlurryPeak/scripts.pory"
 	playmoncry SPECIES_SPECTRIER, CRY_MODE_ENCOUNTER
-# 90 "data/maps/FlurryPeak/scripts.pory"
+# 89 "data/maps/FlurryPeak/scripts.pory"
 	msgbox BattleSpectrier_Text_0
-# 91 "data/maps/FlurryPeak/scripts.pory"
+# 90 "data/maps/FlurryPeak/scripts.pory"
 	waitmoncry
-# 92 "data/maps/FlurryPeak/scripts.pory"
+# 91 "data/maps/FlurryPeak/scripts.pory"
 	seteventmon SPECIES_SPECTRIER, 50
-# 93 "data/maps/FlurryPeak/scripts.pory"
+# 92 "data/maps/FlurryPeak/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 94 "data/maps/FlurryPeak/scripts.pory"
+# 93 "data/maps/FlurryPeak/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 95 "data/maps/FlurryPeak/scripts.pory"
-	waitstate
-# 96 "data/maps/FlurryPeak/scripts.pory"
+# 94 "data/maps/FlurryPeak/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 97 "data/maps/FlurryPeak/scripts.pory"
+# 95 "data/maps/FlurryPeak/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 98 "data/maps/FlurryPeak/scripts.pory"
+# 96 "data/maps/FlurryPeak/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleSpectrier_2
 BattleSpectrier_1:
-# 101 "data/maps/FlurryPeak/scripts.pory"
+# 99 "data/maps/FlurryPeak/scripts.pory"
 	release
 	return
 
 BattleSpectrier_2:
-# 99 "data/maps/FlurryPeak/scripts.pory"
+# 97 "data/maps/FlurryPeak/scripts.pory"
 	setflag FLAG_CAUGHT_SPECTRIER
 	goto BattleSpectrier_1
 
@@ -258,5 +254,5 @@ BattleGlastrier_Text_0:
 	.string "Brrrrrriiiiiice!$"
 
 BattleSpectrier_Text_0:
-# 90 "data/maps/FlurryPeak/scripts.pory"
+# 89 "data/maps/FlurryPeak/scripts.pory"
 	.string "Sheeeighhhhd!$"

@@ -38,7 +38,6 @@ script BattleRagingBolt {
 	seteventmon(SPECIES_RAGING_BOLT, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -58,7 +57,6 @@ script BattleGougingFire {
 	seteventmon(SPECIES_GOUGING_FIRE, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -78,7 +76,6 @@ script BattleWalkingWake {
 	seteventmon(SPECIES_WALKING_WAKE, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {

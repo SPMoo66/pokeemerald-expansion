@@ -46,21 +46,19 @@ BattleRegieleki::
 # 25 "data/maps/RetiredMechanism/scripts.pory"
 	special StartRegiBattle
 # 26 "data/maps/RetiredMechanism/scripts.pory"
-	waitstate
-# 27 "data/maps/RetiredMechanism/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 28 "data/maps/RetiredMechanism/scripts.pory"
+# 27 "data/maps/RetiredMechanism/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 29 "data/maps/RetiredMechanism/scripts.pory"
+# 28 "data/maps/RetiredMechanism/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleRegieleki_2
 BattleRegieleki_1:
-# 32 "data/maps/RetiredMechanism/scripts.pory"
+# 31 "data/maps/RetiredMechanism/scripts.pory"
 	release
 	end
 
 BattleRegieleki_2:
-# 30 "data/maps/RetiredMechanism/scripts.pory"
+# 29 "data/maps/RetiredMechanism/scripts.pory"
 	setflag FLAG_CAUGHT_REGIELEKI
 	goto BattleRegieleki_1
 

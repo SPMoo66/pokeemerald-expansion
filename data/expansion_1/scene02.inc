@@ -270,368 +270,374 @@ Expansion1_Rival_Scene02b::
 # 168 "data/expansion_1/scene02.pory"
 	msgbox Expansion1_Rival_Scene02b_Text_14, MSGBOX_AUTOCLOSE
 # 170 "data/expansion_1/scene02.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkRight2
+	applymovement LOCALID_PLAYER, Common_Movement_Smile
 # 171 "data/expansion_1/scene02.pory"
-	waitmovement 0
+	playse SE_M_MORNING_SUN
 # 172 "data/expansion_1/scene02.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkDown6
+	delay 40
 # 173 "data/expansion_1/scene02.pory"
-	delay 20
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRight2
 # 174 "data/expansion_1/scene02.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	waitmovement 0
 # 175 "data/expansion_1/scene02.pory"
-	setflag FLAG_SYS_SPAWN_INVISIBLE
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDown6
 # 176 "data/expansion_1/scene02.pory"
+	delay 20
+# 177 "data/expansion_1/scene02.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 178 "data/expansion_1/scene02.pory"
+	setflag FLAG_SYS_SPAWN_INVISIBLE
+# 179 "data/expansion_1/scene02.pory"
 	warpcontinuescript MAP_MAUVE_ISLAND_SOUTH, 17, 23, Expansion1_Rival_Scene02c
 	return
 
 
 Expansion1_Rival_Scene02c::
-# 180 "data/expansion_1/scene02.pory"
-	fadescreen FADE_FROM_BLACK
-# 181 "data/expansion_1/scene02.pory"
-	addobject 6
-# 182 "data/expansion_1/scene02.pory"
-	applymovement 6, Common_Movement_WalkDown4
 # 183 "data/expansion_1/scene02.pory"
-	waitmovement 0
+	fadescreen FADE_FROM_BLACK
 # 184 "data/expansion_1/scene02.pory"
-	applymovement 6, Common_Movement_Talking
+	addobject 6
 # 185 "data/expansion_1/scene02.pory"
-	delay 40
+	applymovement 6, Common_Movement_WalkDown4
 # 186 "data/expansion_1/scene02.pory"
-	applymovement 2, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
 # 187 "data/expansion_1/scene02.pory"
-	waitmovement 0
+	applymovement 6, Common_Movement_Talking
 # 188 "data/expansion_1/scene02.pory"
-	delay 10
+	delay 40
 # 189 "data/expansion_1/scene02.pory"
-	speakername CommonText_Redd
-# 190 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02c_Text_0, MSGBOX_AUTOCLOSE
-# 191 "data/expansion_1/scene02.pory"
-	applymovement 6, Common_Movement_WalkDown
-# 192 "data/expansion_1/scene02.pory"
-	waitmovement 0
-# 193 "data/expansion_1/scene02.pory"
-	speakername CommonText_Redd
-# 194 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02c_Text_1, MSGBOX_AUTOCLOSE
-# 197 "data/expansion_1/scene02.pory"
-	applymovement 2, Common_Movement_WalkInPlaceFasterDown
-# 198 "data/expansion_1/scene02.pory"
-	waitmovement 0
-# 199 "data/expansion_1/scene02.pory"
-	delay 20
-# 200 "data/expansion_1/scene02.pory"
-	speakername CommonText_Redd
-# 201 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02c_Text_2
-# 202 "data/expansion_1/scene02.pory"
-	applymovement 2, Common_Movement_WalkInPlaceFasterRight
-# 203 "data/expansion_1/scene02.pory"
-	waitmovement 0
-# 204 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02c_Text_3, MSGBOX_AUTOCLOSE
-# 205 "data/expansion_1/scene02.pory"
-	delay 20
-# 206 "data/expansion_1/scene02.pory"
-	applymovement 2, Common_Movement_WalkInPlaceFasterLeft
-# 207 "data/expansion_1/scene02.pory"
-	waitmovement 0
-# 208 "data/expansion_1/scene02.pory"
-	delay 30
-# 209 "data/expansion_1/scene02.pory"
-	speakername CommonText_Redd
-# 210 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02c_Text_4, MSGBOX_AUTOCLOSE
-# 213 "data/expansion_1/scene02.pory"
 	applymovement 2, Common_Movement_WalkInPlaceFasterUp
-# 214 "data/expansion_1/scene02.pory"
+# 190 "data/expansion_1/scene02.pory"
 	waitmovement 0
-# 215 "data/expansion_1/scene02.pory"
+# 191 "data/expansion_1/scene02.pory"
 	delay 10
-# 216 "data/expansion_1/scene02.pory"
-	applymovement 2, Common_Movement_Thinking
-# 217 "data/expansion_1/scene02.pory"
-	delay 60
-# 218 "data/expansion_1/scene02.pory"
+# 192 "data/expansion_1/scene02.pory"
 	speakername CommonText_Redd
-# 219 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02c_Text_5, MSGBOX_AUTOCLOSE
-# 220 "data/expansion_1/scene02.pory"
-	applymovement 6, Common_Movement_WalkRight
-# 221 "data/expansion_1/scene02.pory"
-	applymovement 2, Common_Movement_WalkUp
-# 222 "data/expansion_1/scene02.pory"
+# 193 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02c_Text_0, MSGBOX_AUTOCLOSE
+# 194 "data/expansion_1/scene02.pory"
+	applymovement 6, Common_Movement_WalkDown
+# 195 "data/expansion_1/scene02.pory"
 	waitmovement 0
-# 223 "data/expansion_1/scene02.pory"
-	applymovement 6, Common_Movement_WalkUp5
-# 224 "data/expansion_1/scene02.pory"
-	applymovement 2, Common_Movement_WalkUp5
-# 225 "data/expansion_1/scene02.pory"
+# 196 "data/expansion_1/scene02.pory"
+	speakername CommonText_Redd
+# 197 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02c_Text_1, MSGBOX_AUTOCLOSE
+# 200 "data/expansion_1/scene02.pory"
+	applymovement 2, Common_Movement_WalkInPlaceFasterDown
+# 201 "data/expansion_1/scene02.pory"
+	waitmovement 0
+# 202 "data/expansion_1/scene02.pory"
 	delay 20
+# 203 "data/expansion_1/scene02.pory"
+	speakername CommonText_Redd
+# 204 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02c_Text_2
+# 205 "data/expansion_1/scene02.pory"
+	applymovement 2, Common_Movement_WalkInPlaceFasterRight
+# 206 "data/expansion_1/scene02.pory"
+	waitmovement 0
+# 207 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02c_Text_3, MSGBOX_AUTOCLOSE
+# 208 "data/expansion_1/scene02.pory"
+	delay 20
+# 209 "data/expansion_1/scene02.pory"
+	applymovement 2, Common_Movement_WalkInPlaceFasterLeft
+# 210 "data/expansion_1/scene02.pory"
+	waitmovement 0
+# 211 "data/expansion_1/scene02.pory"
+	delay 30
+# 212 "data/expansion_1/scene02.pory"
+	speakername CommonText_Redd
+# 213 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02c_Text_4, MSGBOX_AUTOCLOSE
+# 216 "data/expansion_1/scene02.pory"
+	applymovement 2, Common_Movement_WalkInPlaceFasterUp
+# 217 "data/expansion_1/scene02.pory"
+	waitmovement 0
+# 218 "data/expansion_1/scene02.pory"
+	delay 10
+# 219 "data/expansion_1/scene02.pory"
+	applymovement 2, Common_Movement_Thinking
+# 220 "data/expansion_1/scene02.pory"
+	delay 60
+# 221 "data/expansion_1/scene02.pory"
+	speakername CommonText_Redd
+# 222 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02c_Text_5, MSGBOX_AUTOCLOSE
+# 223 "data/expansion_1/scene02.pory"
+	applymovement 6, Common_Movement_WalkRight
+# 224 "data/expansion_1/scene02.pory"
+	applymovement 2, Common_Movement_WalkUp
+# 225 "data/expansion_1/scene02.pory"
+	waitmovement 0
 # 226 "data/expansion_1/scene02.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	applymovement 6, Common_Movement_WalkUp5
 # 227 "data/expansion_1/scene02.pory"
-	setflag FLAG_SYS_SPAWN_INVISIBLE
+	applymovement 2, Common_Movement_WalkUp5
 # 228 "data/expansion_1/scene02.pory"
-	clearflag FLAG_MAUVE_CAMP_REMOVE_CAMP_TILES
+	delay 20
 # 229 "data/expansion_1/scene02.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 230 "data/expansion_1/scene02.pory"
+	setflag FLAG_SYS_SPAWN_INVISIBLE
+# 231 "data/expansion_1/scene02.pory"
+	clearflag FLAG_MAUVE_CAMP_REMOVE_CAMP_TILES
+# 232 "data/expansion_1/scene02.pory"
 	warpcontinuescript MAP_MAUVE_CAMP, 23, 12, Expansion1_Rival_Scene02d
 	return
 
 
 Expansion1_Rival_Scene02d::
-# 233 "data/expansion_1/scene02.pory"
-	removeobject 1
-# 234 "data/expansion_1/scene02.pory"
-	removeobject 3
-# 235 "data/expansion_1/scene02.pory"
-	removeobject 5
 # 236 "data/expansion_1/scene02.pory"
-	setobjectxyperm 6, 23, 11
+	removeobject 1
 # 237 "data/expansion_1/scene02.pory"
-	setobjectxyperm 7, 22, 12
+	removeobject 3
 # 238 "data/expansion_1/scene02.pory"
-	setobjectxyperm 8, 24, 12
+	removeobject 5
 # 239 "data/expansion_1/scene02.pory"
-	setobjectxyperm 10, 22, 19
+	setobjectxyperm 6, 23, 11
 # 240 "data/expansion_1/scene02.pory"
-	setobjectmovementtype 6, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 7, 22, 12
 # 241 "data/expansion_1/scene02.pory"
-	setobjectmovementtype 7, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm 8, 24, 12
 # 242 "data/expansion_1/scene02.pory"
-	setobjectmovementtype 8, MOVEMENT_TYPE_FACE_LEFT
+	setobjectxyperm 10, 22, 19
 # 243 "data/expansion_1/scene02.pory"
-	addobject 6
+	setobjectmovementtype 6, MOVEMENT_TYPE_FACE_DOWN
 # 244 "data/expansion_1/scene02.pory"
-	addobject 7
+	setobjectmovementtype 7, MOVEMENT_TYPE_FACE_RIGHT
 # 245 "data/expansion_1/scene02.pory"
-	addobject 8
+	setobjectmovementtype 8, MOVEMENT_TYPE_FACE_LEFT
 # 246 "data/expansion_1/scene02.pory"
-	addobject 9
+	addobject 6
 # 247 "data/expansion_1/scene02.pory"
-	addobject 10
+	addobject 7
 # 248 "data/expansion_1/scene02.pory"
-	fadescreen FADE_FROM_BLACK
+	addobject 8
 # 249 "data/expansion_1/scene02.pory"
-	applymovement 9, Common_Movement_WalkUp4
+	addobject 9
 # 250 "data/expansion_1/scene02.pory"
-	applymovement 10, Common_Movement_WalkUp4
+	addobject 10
 # 251 "data/expansion_1/scene02.pory"
-	waitmovement 0
+	fadescreen FADE_FROM_BLACK
 # 252 "data/expansion_1/scene02.pory"
-	applymovement 7, Common_Movement_WalkInPlaceFasterDown
+	applymovement 9, Common_Movement_WalkUp4
 # 253 "data/expansion_1/scene02.pory"
-	applymovement 9, Common_Movement_WalkRight
+	applymovement 10, Common_Movement_WalkUp4
 # 254 "data/expansion_1/scene02.pory"
-	applymovement 10, Common_Movement_WalkUp
+	waitmovement 0
 # 255 "data/expansion_1/scene02.pory"
-	waitmovement 0
+	applymovement 7, Common_Movement_WalkInPlaceFasterDown
 # 256 "data/expansion_1/scene02.pory"
-	applymovement 8, Common_Movement_WalkInPlaceFasterDown
+	applymovement 9, Common_Movement_WalkRight
 # 257 "data/expansion_1/scene02.pory"
-	applymovement 9, Common_Movement_WalkUp
-# 258 "data/expansion_1/scene02.pory"
 	applymovement 10, Common_Movement_WalkUp
+# 258 "data/expansion_1/scene02.pory"
+	waitmovement 0
 # 259 "data/expansion_1/scene02.pory"
-	waitmovement 0
+	applymovement 8, Common_Movement_WalkInPlaceFasterDown
 # 260 "data/expansion_1/scene02.pory"
-	applymovement 7, Common_Movement_LockFacingDirection
+	applymovement 9, Common_Movement_WalkUp
 # 261 "data/expansion_1/scene02.pory"
-	waitmovement 0
+	applymovement 10, Common_Movement_WalkUp
 # 262 "data/expansion_1/scene02.pory"
-	applymovement 7, Common_Movement_WalkUp
+	waitmovement 0
 # 263 "data/expansion_1/scene02.pory"
-	waitmovement 0
+	applymovement 7, Common_Movement_LockFacingDirection
 # 264 "data/expansion_1/scene02.pory"
-	applymovement 8, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
 # 265 "data/expansion_1/scene02.pory"
-	waitmovement 0
+	applymovement 7, Common_Movement_WalkUp
 # 266 "data/expansion_1/scene02.pory"
-	speakername CommonText_Jakson
-# 267 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_0
-# 268 "data/expansion_1/scene02.pory"
-	speakername CommonText_Baron
-# 269 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_1
-# 270 "data/expansion_1/scene02.pory"
-	speakername CommonText_Sakura
-# 271 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_2, MSGBOX_AUTOCLOSE
-# 272 "data/expansion_1/scene02.pory"
-	delay 10
-# 273 "data/expansion_1/scene02.pory"
-	applymovement 6, Common_Movement_WalkInPlaceFasterLeft
-# 274 "data/expansion_1/scene02.pory"
 	waitmovement 0
+# 267 "data/expansion_1/scene02.pory"
+	applymovement 8, Common_Movement_WalkInPlaceFasterLeft
+# 268 "data/expansion_1/scene02.pory"
+	waitmovement 0
+# 269 "data/expansion_1/scene02.pory"
+	speakername CommonText_Jakson
+# 270 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_0
+# 271 "data/expansion_1/scene02.pory"
+	speakername CommonText_Baron
+# 272 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_1
+# 273 "data/expansion_1/scene02.pory"
+	speakername CommonText_Sakura
+# 274 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_2, MSGBOX_AUTOCLOSE
 # 275 "data/expansion_1/scene02.pory"
-	delay 30
+	delay 10
 # 276 "data/expansion_1/scene02.pory"
-	applymovement 6, Common_Movement_WalkInPlaceFasterRight
+	applymovement 6, Common_Movement_WalkInPlaceFasterLeft
 # 277 "data/expansion_1/scene02.pory"
 	waitmovement 0
 # 278 "data/expansion_1/scene02.pory"
 	delay 30
 # 279 "data/expansion_1/scene02.pory"
-	applymovement 6, Common_Movement_WalkInPlaceFasterDown
+	applymovement 6, Common_Movement_WalkInPlaceFasterRight
 # 280 "data/expansion_1/scene02.pory"
 	waitmovement 0
 # 281 "data/expansion_1/scene02.pory"
-	speakername CommonText_Jakson
+	delay 30
 # 282 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_3
+	applymovement 6, Common_Movement_WalkInPlaceFasterDown
 # 283 "data/expansion_1/scene02.pory"
-	speakername CommonText_Redd
+	waitmovement 0
 # 284 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_4, MSGBOX_AUTOCLOSE
+	speakername CommonText_Jakson
+# 285 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_3
 # 286 "data/expansion_1/scene02.pory"
-	applymovement 6, Common_Movement_Thinking
+	speakername CommonText_Redd
 # 287 "data/expansion_1/scene02.pory"
-	delay 40
-# 288 "data/expansion_1/scene02.pory"
-	speakername CommonText_Jakson
+	msgbox Expansion1_Rival_Scene02d_Text_4, MSGBOX_AUTOCLOSE
 # 289 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_5
-# 290 "data/expansion_1/scene02.pory"
-	speakername CommonText_Redd
-# 291 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_6
-# 292 "data/expansion_1/scene02.pory"
-	speakername CommonText_Jakson
-# 293 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_7
-# 294 "data/expansion_1/scene02.pory"
-	speakername CommonText_Redd
-# 295 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_8, MSGBOX_AUTOCLOSE
-# 296 "data/expansion_1/scene02.pory"
-	applymovement 6, Common_Movement_SweatDrop
-# 297 "data/expansion_1/scene02.pory"
-	playse SE_M_METRONOME
-# 298 "data/expansion_1/scene02.pory"
-	delay 40
-# 299 "data/expansion_1/scene02.pory"
-	speakername CommonText_Jakson
-# 300 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_9, MSGBOX_AUTOCLOSE
-# 301 "data/expansion_1/scene02.pory"
-	applymovement 10, Common_Movement_SweatDrop
-# 302 "data/expansion_1/scene02.pory"
-	applymovement 8, Common_Movement_SweatDrop
-# 303 "data/expansion_1/scene02.pory"
-	applymovement 9, Common_Movement_SweatDrop
-# 304 "data/expansion_1/scene02.pory"
-	playse SE_M_METRONOME
-# 305 "data/expansion_1/scene02.pory"
-	delay 40
-# 306 "data/expansion_1/scene02.pory"
-	speakername CommonText_Redd
-# 307 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_10
-# 308 "data/expansion_1/scene02.pory"
-	speakername CommonText_Baron
-# 309 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_11, MSGBOX_AUTOCLOSE
-# 310 "data/expansion_1/scene02.pory"
 	applymovement 6, Common_Movement_Thinking
-# 311 "data/expansion_1/scene02.pory"
+# 290 "data/expansion_1/scene02.pory"
 	delay 40
-# 312 "data/expansion_1/scene02.pory"
+# 291 "data/expansion_1/scene02.pory"
 	speakername CommonText_Jakson
-# 313 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_12
-# 314 "data/expansion_1/scene02.pory"
-	speakername CommonText_Sakura
-# 315 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_13
-# 317 "data/expansion_1/scene02.pory"
-	speakername CommonText_Jakson
-# 318 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_14
-# 319 "data/expansion_1/scene02.pory"
+# 292 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_5
+# 293 "data/expansion_1/scene02.pory"
 	speakername CommonText_Redd
-# 320 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_15
-# 321 "data/expansion_1/scene02.pory"
+# 294 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_6
+# 295 "data/expansion_1/scene02.pory"
 	speakername CommonText_Jakson
-# 322 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_16, MSGBOX_AUTOCLOSE
-# 323 "data/expansion_1/scene02.pory"
-	playse SE_PIN
-# 324 "data/expansion_1/scene02.pory"
-	applymovement 7, Common_Movement_ExclamationMark
-# 325 "data/expansion_1/scene02.pory"
-	delay 40
-# 326 "data/expansion_1/scene02.pory"
-	speakername CommonText_Baron
-# 327 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_17
-# 328 "data/expansion_1/scene02.pory"
-	speakername CommonText_Jakson
-# 329 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_18
-# 330 "data/expansion_1/scene02.pory"
-	speakername CommonText_Sakura
-# 331 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_19
-# 332 "data/expansion_1/scene02.pory"
-	speakername CommonText_Baron
-# 333 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_20
-# 334 "data/expansion_1/scene02.pory"
+# 296 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_7
+# 297 "data/expansion_1/scene02.pory"
 	speakername CommonText_Redd
-# 335 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_21
-# 336 "data/expansion_1/scene02.pory"
-	speakername CommonText_Baron
-# 337 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_22, MSGBOX_AUTOCLOSE
-# 338 "data/expansion_1/scene02.pory"
-	applymovement 10, Common_Movement_SweatDrop
-# 339 "data/expansion_1/scene02.pory"
+# 298 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_8, MSGBOX_AUTOCLOSE
+# 299 "data/expansion_1/scene02.pory"
+	applymovement 6, Common_Movement_SweatDrop
+# 300 "data/expansion_1/scene02.pory"
 	playse SE_M_METRONOME
-# 340 "data/expansion_1/scene02.pory"
+# 301 "data/expansion_1/scene02.pory"
 	delay 40
-# 341 "data/expansion_1/scene02.pory"
-	speakername CommonText_Redd
-# 342 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_23
-# 343 "data/expansion_1/scene02.pory"
+# 302 "data/expansion_1/scene02.pory"
 	speakername CommonText_Jakson
-# 344 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_24
-# 346 "data/expansion_1/scene02.pory"
+# 303 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_9, MSGBOX_AUTOCLOSE
+# 304 "data/expansion_1/scene02.pory"
+	applymovement 10, Common_Movement_SweatDrop
+# 305 "data/expansion_1/scene02.pory"
+	applymovement 8, Common_Movement_SweatDrop
+# 306 "data/expansion_1/scene02.pory"
+	applymovement 9, Common_Movement_SweatDrop
+# 307 "data/expansion_1/scene02.pory"
+	playse SE_M_METRONOME
+# 308 "data/expansion_1/scene02.pory"
+	delay 40
+# 309 "data/expansion_1/scene02.pory"
+	speakername CommonText_Redd
+# 310 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_10
+# 311 "data/expansion_1/scene02.pory"
+	speakername CommonText_Baron
+# 312 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_11, MSGBOX_AUTOCLOSE
+# 313 "data/expansion_1/scene02.pory"
+	applymovement 6, Common_Movement_Thinking
+# 314 "data/expansion_1/scene02.pory"
+	delay 40
+# 315 "data/expansion_1/scene02.pory"
+	speakername CommonText_Jakson
+# 316 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_12
+# 317 "data/expansion_1/scene02.pory"
 	speakername CommonText_Sakura
+# 318 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_13
+# 320 "data/expansion_1/scene02.pory"
+	speakername CommonText_Jakson
+# 321 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_14
+# 322 "data/expansion_1/scene02.pory"
+	speakername CommonText_Redd
+# 323 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_15
+# 324 "data/expansion_1/scene02.pory"
+	speakername CommonText_Jakson
+# 325 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_16, MSGBOX_AUTOCLOSE
+# 326 "data/expansion_1/scene02.pory"
+	playse SE_PIN
+# 327 "data/expansion_1/scene02.pory"
+	applymovement 7, Common_Movement_ExclamationMark
+# 328 "data/expansion_1/scene02.pory"
+	delay 40
+# 329 "data/expansion_1/scene02.pory"
+	speakername CommonText_Baron
+# 330 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_17
+# 331 "data/expansion_1/scene02.pory"
+	speakername CommonText_Jakson
+# 332 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_18
+# 333 "data/expansion_1/scene02.pory"
+	speakername CommonText_Sakura
+# 334 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_19
+# 335 "data/expansion_1/scene02.pory"
+	speakername CommonText_Baron
+# 336 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_20
+# 337 "data/expansion_1/scene02.pory"
+	speakername CommonText_Redd
+# 338 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_21
+# 339 "data/expansion_1/scene02.pory"
+	speakername CommonText_Baron
+# 340 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_22, MSGBOX_AUTOCLOSE
+# 341 "data/expansion_1/scene02.pory"
+	applymovement 10, Common_Movement_SweatDrop
+# 342 "data/expansion_1/scene02.pory"
+	playse SE_M_METRONOME
+# 343 "data/expansion_1/scene02.pory"
+	delay 40
+# 344 "data/expansion_1/scene02.pory"
+	speakername CommonText_Redd
+# 345 "data/expansion_1/scene02.pory"
+	msgbox Expansion1_Rival_Scene02d_Text_23
+# 346 "data/expansion_1/scene02.pory"
+	speakername CommonText_Jakson
 # 347 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02d_Text_25, MSGBOX_AUTOCLOSE
+	msgbox Expansion1_Rival_Scene02d_Text_24
+# 349 "data/expansion_1/scene02.pory"
+	speakername CommonText_Sakura
 # 350 "data/expansion_1/scene02.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 24
-# 351 "data/expansion_1/scene02.pory"
-	savebgm MUS_DP_CREDITS
-# 352 "data/expansion_1/scene02.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	msgbox Expansion1_Rival_Scene02d_Text_25, MSGBOX_AUTOCLOSE
 # 353 "data/expansion_1/scene02.pory"
+	setvar VAR_EMERALBODY_RIVAL_STATE, 24
+# 354 "data/expansion_1/scene02.pory"
+	savebgm MUS_DP_CREDITS
+# 355 "data/expansion_1/scene02.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 356 "data/expansion_1/scene02.pory"
 	warpcontinuescript MAP_MAUVE_CAMP, 16, 16, Expansion1_Rival_Scene02e
 	return
 
 
 Expansion1_Rival_Scene02e::
-# 357 "data/expansion_1/scene02.pory"
+# 360 "data/expansion_1/scene02.pory"
 	fadescreen FADE_FROM_BLACK
-# 358 "data/expansion_1/scene02.pory"
+# 361 "data/expansion_1/scene02.pory"
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
-# 359 "data/expansion_1/scene02.pory"
+# 362 "data/expansion_1/scene02.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 31
 	goto_if_lt Expansion1_Rival_Scene02e_1
 	return
 
 Expansion1_Rival_Scene02e_1:
-# 360 "data/expansion_1/scene02.pory"
+# 363 "data/expansion_1/scene02.pory"
 	delay 10
-# 361 "data/expansion_1/scene02.pory"
+# 364 "data/expansion_1/scene02.pory"
 	helpwindow HELP_EXPANSION_1_BOAT_EXPLANATION
 	return
 
@@ -738,137 +744,137 @@ Expansion1_Rival_Scene02b_Text_14:
 	.string "I'll stay here with Baron and Sakura\nand see if we can set up a home base\lof sorts.$"
 
 Expansion1_Rival_Scene02c_Text_0:
-# 190 "data/expansion_1/scene02.pory"
+# 193 "data/expansion_1/scene02.pory"
 	.string "Oh, {PLAYER}!$"
 
 Expansion1_Rival_Scene02c_Text_1:
-# 194 "data/expansion_1/scene02.pory"
+# 197 "data/expansion_1/scene02.pory"
 	.string "You met with the other two already,\nright?\p"
 	.string "And Jakson's with you, too?\nPerfect, he can fix this mess.\p"
 	.string "But no Harper, huh?$"
 
 Expansion1_Rival_Scene02c_Text_2:
-# 201 "data/expansion_1/scene02.pory"
+# 204 "data/expansion_1/scene02.pory"
 	.string "I hope she's safe out there.$"
 
 Expansion1_Rival_Scene02c_Text_3:
-# 204 "data/expansion_1/scene02.pory"
+# 207 "data/expansion_1/scene02.pory"
 	.string "I was trying to see what was South\nof that cape up there…$"
 
 Expansion1_Rival_Scene02c_Text_4:
-# 210 "data/expansion_1/scene02.pory"
+# 213 "data/expansion_1/scene02.pory"
 	.string "I'm pretty sure that's supposed\nto be our ship, right?\p"
 	.string "It doesn't exactly look like it can\nget us home like that.\p"
 	.string "And I don't think this virtual body\nof mine can carry a boat from land\lto water.$"
 
 Expansion1_Rival_Scene02c_Text_5:
-# 219 "data/expansion_1/scene02.pory"
+# 222 "data/expansion_1/scene02.pory"
 	.string "Hmm… well, let's just report back\nto the others.$"
 
 Expansion1_Rival_Scene02d_Text_0:
-# 267 "data/expansion_1/scene02.pory"
+# 270 "data/expansion_1/scene02.pory"
 	.string "Welcome back.$"
 
 Expansion1_Rival_Scene02d_Text_1:
-# 269 "data/expansion_1/scene02.pory"
+# 272 "data/expansion_1/scene02.pory"
 	.string "We managed to set up a camp, somehow.$"
 
 Expansion1_Rival_Scene02d_Text_2:
-# 271 "data/expansion_1/scene02.pory"
+# 274 "data/expansion_1/scene02.pory"
 	.string "Everyone knows you just have to\nstart clicking around until the game\ladvances!$"
 
 Expansion1_Rival_Scene02d_Text_3:
-# 282 "data/expansion_1/scene02.pory"
+# 285 "data/expansion_1/scene02.pory"
 	.string "Oh… No sign of Harper from your side,\nhuh? Damn…$"
 
 Expansion1_Rival_Scene02d_Text_4:
-# 284 "data/expansion_1/scene02.pory"
+# 287 "data/expansion_1/scene02.pory"
 	.string "There was a wrecked boat out there,\nprobably ours, but we couldn't reach it.\p"
 	.string "There's a group of Pokémon blocking\nus from getting further.$"
 
 Expansion1_Rival_Scene02d_Text_5:
-# 289 "data/expansion_1/scene02.pory"
+# 292 "data/expansion_1/scene02.pory"
 	.string "That must be some sort of story blocker.$"
 
 Expansion1_Rival_Scene02d_Text_6:
-# 291 "data/expansion_1/scene02.pory"
+# 294 "data/expansion_1/scene02.pory"
 	.string "One where we have access to whatever\nflag progresses it…?$"
 
 Expansion1_Rival_Scene02d_Text_7:
-# 293 "data/expansion_1/scene02.pory"
+# 296 "data/expansion_1/scene02.pory"
 	.string "Well…$"
 
 Expansion1_Rival_Scene02d_Text_8:
-# 295 "data/expansion_1/scene02.pory"
+# 298 "data/expansion_1/scene02.pory"
 	.string "Okay, how about your debug menu?$"
 
 Expansion1_Rival_Scene02d_Text_9:
-# 300 "data/expansion_1/scene02.pory"
+# 303 "data/expansion_1/scene02.pory"
 	.string "…I forgot to turn it on.$"
 
 Expansion1_Rival_Scene02d_Text_10:
-# 307 "data/expansion_1/scene02.pory"
+# 310 "data/expansion_1/scene02.pory"
 	.string "Then… I guess we're betting that\nshe's not stuck over there.$"
 
 Expansion1_Rival_Scene02d_Text_11:
-# 309 "data/expansion_1/scene02.pory"
+# 312 "data/expansion_1/scene02.pory"
 	.string "I… I hope she's safe…$"
 
 Expansion1_Rival_Scene02d_Text_12:
-# 313 "data/expansion_1/scene02.pory"
+# 316 "data/expansion_1/scene02.pory"
 	.string "Hmm…$"
 
 Expansion1_Rival_Scene02d_Text_13:
-# 315 "data/expansion_1/scene02.pory"
+# 318 "data/expansion_1/scene02.pory"
 	.string "What are you all clammed up for?\p"
 	.string "We've got a job to do. Operation\n‘Save the Harpy’ is ready to start!$"
 
 Expansion1_Rival_Scene02d_Text_14:
-# 318 "data/expansion_1/scene02.pory"
+# 321 "data/expansion_1/scene02.pory"
 	.string "Right. Any idea where she could be?$"
 
 Expansion1_Rival_Scene02d_Text_15:
-# 320 "data/expansion_1/scene02.pory"
+# 323 "data/expansion_1/scene02.pory"
 	.string "I found a dark cave deep underwater\nthat I couldn't get through.\lAlmost like I needed Flash again.$"
 
 Expansion1_Rival_Scene02d_Text_16:
-# 322 "data/expansion_1/scene02.pory"
+# 325 "data/expansion_1/scene02.pory"
 	.string "Would a post-game dungeon be designed\naround HM Flash through?$"
 
 Expansion1_Rival_Scene02d_Text_17:
-# 327 "data/expansion_1/scene02.pory"
+# 330 "data/expansion_1/scene02.pory"
 	.string "O-Oh! One of the sailors here was\nsaying something about a “Light”.$"
 
 Expansion1_Rival_Scene02d_Text_18:
-# 329 "data/expansion_1/scene02.pory"
+# 332 "data/expansion_1/scene02.pory"
 	.string "As good a lead as any.$"
 
 Expansion1_Rival_Scene02d_Text_19:
-# 331 "data/expansion_1/scene02.pory"
+# 334 "data/expansion_1/scene02.pory"
 	.string "If Harper's lacking the unique key item,\nno way she'd get through the darkness.$"
 
 Expansion1_Rival_Scene02d_Text_20:
-# 333 "data/expansion_1/scene02.pory"
+# 336 "data/expansion_1/scene02.pory"
 	.string "That sounds like it'd be fightening\nfor her…$"
 
 Expansion1_Rival_Scene02d_Text_21:
-# 335 "data/expansion_1/scene02.pory"
+# 338 "data/expansion_1/scene02.pory"
 	.string "Good thing she doesn't have to eat.$"
 
 Expansion1_Rival_Scene02d_Text_22:
-# 337 "data/expansion_1/scene02.pory"
+# 340 "data/expansion_1/scene02.pory"
 	.string "Uh…$"
 
 Expansion1_Rival_Scene02d_Text_23:
-# 342 "data/expansion_1/scene02.pory"
+# 345 "data/expansion_1/scene02.pory"
 	.string "D- Don't worry. We'll get her out of\nthere.$"
 
 Expansion1_Rival_Scene02d_Text_24:
-# 344 "data/expansion_1/scene02.pory"
+# 347 "data/expansion_1/scene02.pory"
 	.string "Absolutely.\nAlright, let's split up.\p"
 	.string "We shouldn't count on her being stuck\nin that dark cave, but we've got to look\lthere too.$"
 
 Expansion1_Rival_Scene02d_Text_25:
-# 347 "data/expansion_1/scene02.pory"
+# 350 "data/expansion_1/scene02.pory"
 	.string "Move out, team!\p"
 	.string "Operation… START-O!!!$"

@@ -167,6 +167,9 @@ script Expansion1_Rival_Scene02b {
 	speakername (CommonText_Jakson)
 	msgbox ("{PLAYER}, do you mind walking down\nto go find him?\p"
 			"I'll stay here with Baron and Sakura\nand see if we can set up a home base\lof sorts.", MSGBOX_AUTOCLOSE)
+	applymovement (LOCALID_PLAYER, Common_Movement_Smile)
+	playse (SE_M_MORNING_SUN)
+	delay (40)
 	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight2)
 	waitmovement (0)
 	applymovement (LOCALID_PLAYER, Common_Movement_WalkDown6)

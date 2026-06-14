@@ -7,6 +7,11 @@ const MAUVECAMP_REDD = 10
 const MAUVECAMP_HARPER = 11
 
 mapscripts MauveCamp_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (flag(FLAG_MAUVE_CAMP_REMOVE_CAMP_TILES)) {
+			call (MauveCamp_RemoveCampTiles)
+		}
+	}
 	MAP_SCRIPT_ON_TRANSITION {
 		setrespawn (HEAL_LOCATION_MAUVE_CAMP)
 		setflag (FLAG_LANDMARK_MAUVE_CAMP)
@@ -41,6 +46,17 @@ mapscripts MauveCamp_MapScripts {
 		VAR_EMERALBODY_RIVAL_STATE, 22: Expansion1_Rival_Scene02_Setup
 		VAR_EMERALBODY_RIVAL_STATE, 31: Expansion1_Rival_Scene05_Setup
 	]
+}
+
+script MauveCamp_RemoveCampTiles {
+	setmetatileinrange (21, 8, 29, 18, 0x000)
+	setmetatileinrange (15, 14, 17, 16, 0x000)
+	setmetatileinrange (14, 13, 14, 14, 0x000)
+	setmetatileinrange (30, 17, 30, 18, 0x000)
+	setmetatileinrange (29, 20, 29, 21, 0x000)
+	setmetatileinrange (32, 10, 32, 12, 0x000)
+	setmetatile (28, 7, 0x000, FALSE)
+	setmetatile (30, 10, 0x000, FALSE)
 }
 
 script MauveCamp_Jakson {

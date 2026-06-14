@@ -223,6 +223,7 @@ Debug_EventScript_Script_4::
 	setflag FLAG_LANDMARK_MAUVE_CAMP
 	setvar VAR_EMERALBODY_RIVAL_STATE, 30
 	warp MAP_MAUVE_ISLAND_WEST, 23, 11
+	waitstate
 	release
 	end
 
@@ -236,6 +237,7 @@ Debug_EventScript_Script_6::
 	setvar VAR_EMERALBODY_RIVAL_STATE, 33
 	setflag FLAG_NO_COLLISION
 	warp MAP_MAUVE_ISLAND_SOUTH, 11, 26
+	waitstate
 	release
 	end
 
@@ -247,8 +249,9 @@ Debug_EventScript_Script_7::
 
 Debug_EventScript_Script_8::
 	setflag FLAG_LANDMARK_MAUVE_CAMP
-	setvar VAR_EMERALBODY_RIVAL_STATE, 24
+	setvar VAR_EMERALBODY_RIVAL_STATE, 22
 	warp MAP_MAUVE_ISLAND_WEST, 6, 10
+	waitstate
 	release
 	end
 

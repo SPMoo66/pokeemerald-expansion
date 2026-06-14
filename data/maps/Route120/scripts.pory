@@ -484,5 +484,6 @@ movement Rival_RealmsFray_Move1 {
 
 script Route120_Portal {
 	warp(MAP_REALMS_FRAY, 0)
+	waitstate
 }
 

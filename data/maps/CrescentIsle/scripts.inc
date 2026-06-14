@@ -68,6 +68,8 @@ BattleCresselia_2:
 CrescentIsle_Portal::
 # 37 "data/maps/CrescentIsle/scripts.pory"
 	warp MAP_CAVE_OF_DREAMS_CHAMBER, 1
+# 38 "data/maps/CrescentIsle/scripts.pory"
+	waitstate
 	return
 
 

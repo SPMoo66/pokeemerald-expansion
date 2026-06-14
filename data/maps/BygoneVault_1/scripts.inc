@@ -225,25 +225,27 @@ CreatePokemonSprite::
 	setflag FLAG_SEMI_PERM_HIDE_FOLLOWER
 # 106 "data/maps/BygoneVault_1/scripts.pory"
 	warpsilent MAP_BYGONE_VAULT_1, 8, 11
+# 107 "data/maps/BygoneVault_1/scripts.pory"
+	waitstate
 	return
 
 
 Script_RedrawBygoneVault1Map::
-# 110 "data/maps/BygoneVault_1/scripts.pory"
+# 111 "data/maps/BygoneVault_1/scripts.pory"
 	goto_if_unset FLAG_TEMP_6, Script_RedrawBygoneVault1Map_2
 	return
 
 Script_RedrawBygoneVault1Map_1:
-# 111 "data/maps/BygoneVault_1/scripts.pory"
-	setmetatile 8, 1, 0x0DD, FALSE
 # 112 "data/maps/BygoneVault_1/scripts.pory"
-	special DrawWholeMapView
+	setmetatile 8, 1, 0x0DD, FALSE
 # 113 "data/maps/BygoneVault_1/scripts.pory"
+	special DrawWholeMapView
+# 114 "data/maps/BygoneVault_1/scripts.pory"
 	setflag FLAG_TEMP_6
 	return
 
 Script_RedrawBygoneVault1Map_2:
-# 110 "data/maps/BygoneVault_1/scripts.pory"
+# 111 "data/maps/BygoneVault_1/scripts.pory"
 	goto_if_set FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN, Script_RedrawBygoneVault1Map_1
 	return
 

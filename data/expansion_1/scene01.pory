@@ -186,6 +186,7 @@ script Expansion1_Rival_Scene01 {
 	msgbox ("Aye aye, Captain!", MSGBOX_AUTOCLOSE)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 20)
 	warpsilent (MAP_SLATEPORT_CITY_HARBOR, 14, 13)
+	waitstate
 }
 
 script SlateportHarbor_PostScene01_SetPositions {

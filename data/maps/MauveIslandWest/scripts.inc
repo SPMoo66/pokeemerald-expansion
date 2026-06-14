@@ -67,7 +67,7 @@ MauveIslandWest_EventScript_HeadbuttTree::
 	compare VAR_RESULT, 0
 	goto_if_ne MauveIslandWest_EventScript_HeadbuttTree_2
 MauveIslandWest_EventScript_HeadbuttTree_1:
-# 51 "data/maps/MauveIslandWest/scripts.pory"
+# 52 "data/maps/MauveIslandWest/scripts.pory"
 	closemessage
 	return
 
@@ -104,43 +104,45 @@ MauveIslandWest_EventScript_HeadbuttTree_2:
 	delay 40
 # 49 "data/maps/MauveIslandWest/scripts.pory"
 	warpsilent MAP_MAUVE_CAMP, 23, 10
+# 50 "data/maps/MauveIslandWest/scripts.pory"
+	waitstate
 	goto MauveIslandWest_EventScript_HeadbuttTree_1
 
 
-# 54 "data/maps/MauveIslandWest/scripts.pory"
-Movement_PlayerHeadbutt:
 # 55 "data/maps/MauveIslandWest/scripts.pory"
+Movement_PlayerHeadbutt:
+# 56 "data/maps/MauveIslandWest/scripts.pory"
 	lock_facing_direction
-# 56 "data/maps/MauveIslandWest/scripts.pory"
-	walk_down
-# 56 "data/maps/MauveIslandWest/scripts.pory"
-	walk_down
-# 56 "data/maps/MauveIslandWest/scripts.pory"
+# 57 "data/maps/MauveIslandWest/scripts.pory"
 	walk_down
 # 57 "data/maps/MauveIslandWest/scripts.pory"
-	delay_16
+	walk_down
 # 57 "data/maps/MauveIslandWest/scripts.pory"
+	walk_down
+# 58 "data/maps/MauveIslandWest/scripts.pory"
 	delay_16
-# 57 "data/maps/MauveIslandWest/scripts.pory"
+# 58 "data/maps/MauveIslandWest/scripts.pory"
 	delay_16
 # 58 "data/maps/MauveIslandWest/scripts.pory"
-	walk_in_place_fast_up
-# 58 "data/maps/MauveIslandWest/scripts.pory"
-	walk_in_place_fast_up
-# 58 "data/maps/MauveIslandWest/scripts.pory"
-	walk_in_place_fast_up
-# 58 "data/maps/MauveIslandWest/scripts.pory"
+	delay_16
+# 59 "data/maps/MauveIslandWest/scripts.pory"
 	walk_in_place_fast_up
 # 59 "data/maps/MauveIslandWest/scripts.pory"
+	walk_in_place_fast_up
+# 59 "data/maps/MauveIslandWest/scripts.pory"
+	walk_in_place_fast_up
+# 59 "data/maps/MauveIslandWest/scripts.pory"
+	walk_in_place_fast_up
+# 60 "data/maps/MauveIslandWest/scripts.pory"
 	walk_faster_up
-# 59 "data/maps/MauveIslandWest/scripts.pory"
+# 60 "data/maps/MauveIslandWest/scripts.pory"
 	walk_faster_up
-# 59 "data/maps/MauveIslandWest/scripts.pory"
+# 60 "data/maps/MauveIslandWest/scripts.pory"
 	walk_faster_up
 	step_end
 
 TrainerTipsOceanGrass::
-# 63 "data/maps/MauveIslandWest/scripts.pory"
+# 64 "data/maps/MauveIslandWest/scripts.pory"
 	msgbox TrainerTipsOceanGrass_Text_0, MSGBOX_SIGN
 	return
 
@@ -178,5 +180,5 @@ MauveIslandWest_EventScript_HeadbuttTree_Text_1:
 	.string "{PLAYER} used Headbutt!$"
 
 TrainerTipsOceanGrass_Text_0:
-# 63 "data/maps/MauveIslandWest/scripts.pory"
+# 64 "data/maps/MauveIslandWest/scripts.pory"
 	.string "Trainer Tips\pGrassy areas in the ocean are home\nto different pools of Pokémon than\lthe open oceans.$"

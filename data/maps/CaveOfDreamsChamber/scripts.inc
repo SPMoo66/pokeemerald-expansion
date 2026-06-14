@@ -66,6 +66,8 @@ BattleDarkrai_2:
 CaveofDreamsChamber_Portal::
 # 36 "data/maps/CaveOfDreamsChamber/scripts.pory"
 	warp MAP_CRESCENT_ISLE, 0
+# 37 "data/maps/CaveOfDreamsChamber/scripts.pory"
+	waitstate
 	return
 
 

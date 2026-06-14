@@ -428,12 +428,12 @@ Intro_DetermineRival_41:
 InsideOfTruck_EventScript_MovingBox2::
 # 230 "data/emeralbody_rivals/emib_opening.pory"
 	goto_if_set FLAG_TEMP_5, InsideOfTruck_EventScript_MovingBox2_2
-# 255 "data/emeralbody_rivals/emib_opening.pory"
-	msgbox InsideOfTruck_Text_BoxPrintedWithMonLogo, MSGBOX_SIGN
 # 256 "data/emeralbody_rivals/emib_opening.pory"
+	msgbox InsideOfTruck_Text_BoxPrintedWithMonLogo, MSGBOX_SIGN
+# 257 "data/emeralbody_rivals/emib_opening.pory"
 	setflag FLAG_TEMP_5
 InsideOfTruck_EventScript_MovingBox2_1:
-# 258 "data/emeralbody_rivals/emib_opening.pory"
+# 259 "data/emeralbody_rivals/emib_opening.pory"
 	release
 	return
 
@@ -459,6 +459,8 @@ InsideOfTruck_EventScript_MovingBox2_5:
 	setvar VAR_RESULT, 0
 # 252 "data/emeralbody_rivals/emib_opening.pory"
 	warpsilent MAP_INSIDE_OF_TRUCK, 2, 2
+# 253 "data/emeralbody_rivals/emib_opening.pory"
+	waitstate
 	goto InsideOfTruck_EventScript_MovingBox2_1
 
 InsideOfTruck_EventScript_MovingBox2_6:
@@ -745,5 +747,5 @@ CommonText_Quiz::
 	.string "Quiz$"
 
 Text_CodeEntrySuccess::
-# 261 "data/emeralbody_rivals/emib_opening.pory"
+# 262 "data/emeralbody_rivals/emib_opening.pory"
 	.string "Code entry successful.$"

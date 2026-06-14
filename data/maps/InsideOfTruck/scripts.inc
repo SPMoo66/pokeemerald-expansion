@@ -32,6 +32,7 @@ InsideOfTruck_EventScript_SetIntroFlagsMale::
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 1
 	warpsilent MAP_INSIDE_OF_TRUCK, 3, 2
+	waitstate
 	setdynamicwarp MAP_LITTLEROOT_TOWN, 3, 10
 	releaseall
 	end
@@ -46,6 +47,7 @@ InsideOfTruck_EventScript_SetIntroFlagsFemale::
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 1
 	warpsilent MAP_INSIDE_OF_TRUCK, 3, 2
+	waitstate
 	setdynamicwarp MAP_LITTLEROOT_TOWN, 12, 10
 	releaseall
 	end

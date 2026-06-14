@@ -35,4 +35,5 @@ script BattleCresselia {
 
 script CrescentIsle_Portal {
 	warp(MAP_CAVE_OF_DREAMS_CHAMBER, 1)
+	waitstate
 }

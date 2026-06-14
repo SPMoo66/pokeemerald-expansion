@@ -250,6 +250,7 @@ script InsideOfTruck_EventScript_MovingBox2 {
 		}
 		setvar (VAR_RESULT, 0)
 		warpsilent (MAP_INSIDE_OF_TRUCK, 2, 2)
+		waitstate
 	}
 	else {
 		msgbox (InsideOfTruck_Text_BoxPrintedWithMonLogo, MSGBOX_SIGN)

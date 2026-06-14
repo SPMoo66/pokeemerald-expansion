@@ -61,214 +61,219 @@ TracklessForest_MapScripts_MAP_SCRIPT_ON_RESUME_1:
 TracklessForest_Portal::
 # 33 "data/maps/TracklessForest/scripts.pory"
 	warp MAP_TRACKLESS_FOREST_ALT, 0
+# 34 "data/maps/TracklessForest/scripts.pory"
+	waitstate
 	return
 
 
 BattleRaikou::
-# 37 "data/maps/TracklessForest/scripts.pory"
-	lock
 # 38 "data/maps/TracklessForest/scripts.pory"
-	faceplayer
+	lock
 # 39 "data/maps/TracklessForest/scripts.pory"
-	setvar VAR_LAST_TALKED, 1
+	faceplayer
 # 40 "data/maps/TracklessForest/scripts.pory"
-	playmoncry SPECIES_RAIKOU, CRY_MODE_ENCOUNTER
+	setvar VAR_LAST_TALKED, 1
 # 41 "data/maps/TracklessForest/scripts.pory"
-	msgbox BattleRaikou_Text_0
+	playmoncry SPECIES_RAIKOU, CRY_MODE_ENCOUNTER
 # 42 "data/maps/TracklessForest/scripts.pory"
-	waitmoncry
+	msgbox BattleRaikou_Text_0
 # 43 "data/maps/TracklessForest/scripts.pory"
-	seteventmon SPECIES_RAIKOU, 40
+	waitmoncry
 # 44 "data/maps/TracklessForest/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_RAIKOU, 40
 # 45 "data/maps/TracklessForest/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 46 "data/maps/TracklessForest/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
 # 47 "data/maps/TracklessForest/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 48 "data/maps/TracklessForest/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 49 "data/maps/TracklessForest/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleRaikou_2
 BattleRaikou_1:
-# 51 "data/maps/TracklessForest/scripts.pory"
+# 52 "data/maps/TracklessForest/scripts.pory"
 	release
 	end
 
 BattleRaikou_2:
-# 49 "data/maps/TracklessForest/scripts.pory"
+# 50 "data/maps/TracklessForest/scripts.pory"
 	setflag FLAG_CAUGHT_RAIKOU
 	goto BattleRaikou_1
 
 
 BattleEntei::
-# 56 "data/maps/TracklessForest/scripts.pory"
-	lock
 # 57 "data/maps/TracklessForest/scripts.pory"
-	faceplayer
+	lock
 # 58 "data/maps/TracklessForest/scripts.pory"
-	setvar VAR_LAST_TALKED, 2
+	faceplayer
 # 59 "data/maps/TracklessForest/scripts.pory"
-	playmoncry SPECIES_ENTEI, CRY_MODE_ENCOUNTER
+	setvar VAR_LAST_TALKED, 2
 # 60 "data/maps/TracklessForest/scripts.pory"
-	msgbox BattleEntei_Text_0
+	playmoncry SPECIES_ENTEI, CRY_MODE_ENCOUNTER
 # 61 "data/maps/TracklessForest/scripts.pory"
-	waitmoncry
+	msgbox BattleEntei_Text_0
 # 62 "data/maps/TracklessForest/scripts.pory"
-	seteventmon SPECIES_ENTEI, 40
+	waitmoncry
 # 63 "data/maps/TracklessForest/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_ENTEI, 40
 # 64 "data/maps/TracklessForest/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 65 "data/maps/TracklessForest/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
 # 66 "data/maps/TracklessForest/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 67 "data/maps/TracklessForest/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 68 "data/maps/TracklessForest/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleEntei_2
 BattleEntei_1:
-# 70 "data/maps/TracklessForest/scripts.pory"
+# 71 "data/maps/TracklessForest/scripts.pory"
 	release
 	end
 
 BattleEntei_2:
-# 68 "data/maps/TracklessForest/scripts.pory"
+# 69 "data/maps/TracklessForest/scripts.pory"
 	setflag FLAG_CAUGHT_ENTEI
 	goto BattleEntei_1
 
 
 BattleSuicune::
-# 75 "data/maps/TracklessForest/scripts.pory"
-	lock
 # 76 "data/maps/TracklessForest/scripts.pory"
-	faceplayer
+	lock
 # 77 "data/maps/TracklessForest/scripts.pory"
-	setvar VAR_LAST_TALKED, 3
+	faceplayer
 # 78 "data/maps/TracklessForest/scripts.pory"
-	playmoncry SPECIES_SUICUNE, CRY_MODE_ENCOUNTER
+	setvar VAR_LAST_TALKED, 3
 # 79 "data/maps/TracklessForest/scripts.pory"
-	msgbox BattleSuicune_Text_0
+	playmoncry SPECIES_SUICUNE, CRY_MODE_ENCOUNTER
 # 80 "data/maps/TracklessForest/scripts.pory"
-	waitmoncry
+	msgbox BattleSuicune_Text_0
 # 81 "data/maps/TracklessForest/scripts.pory"
-	seteventmon SPECIES_SUICUNE, 40
+	waitmoncry
 # 82 "data/maps/TracklessForest/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_SUICUNE, 40
 # 83 "data/maps/TracklessForest/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 84 "data/maps/TracklessForest/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
 # 85 "data/maps/TracklessForest/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 86 "data/maps/TracklessForest/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 87 "data/maps/TracklessForest/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleSuicune_2
 BattleSuicune_1:
-# 89 "data/maps/TracklessForest/scripts.pory"
+# 90 "data/maps/TracklessForest/scripts.pory"
 	release
 	end
 
 BattleSuicune_2:
-# 87 "data/maps/TracklessForest/scripts.pory"
+# 88 "data/maps/TracklessForest/scripts.pory"
 	setflag FLAG_CAUGHT_SUICUNE
 	goto BattleSuicune_1
 
 
 BattleCelebi::
-# 94 "data/maps/TracklessForest/scripts.pory"
-	lock
 # 95 "data/maps/TracklessForest/scripts.pory"
-	faceplayer
+	lock
 # 96 "data/maps/TracklessForest/scripts.pory"
-	setvar VAR_LAST_TALKED, 4
+	faceplayer
 # 97 "data/maps/TracklessForest/scripts.pory"
-	playmoncry SPECIES_CELEBI, CRY_MODE_ENCOUNTER
+	setvar VAR_LAST_TALKED, 4
 # 98 "data/maps/TracklessForest/scripts.pory"
-	msgbox BattleCelebi_Text_0
+	playmoncry SPECIES_CELEBI, CRY_MODE_ENCOUNTER
 # 99 "data/maps/TracklessForest/scripts.pory"
-	waitmoncry
+	msgbox BattleCelebi_Text_0
 # 100 "data/maps/TracklessForest/scripts.pory"
-	seteventmon SPECIES_CELEBI, 50
+	waitmoncry
 # 101 "data/maps/TracklessForest/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_CELEBI, 50
 # 102 "data/maps/TracklessForest/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 103 "data/maps/TracklessForest/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
 # 104 "data/maps/TracklessForest/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 105 "data/maps/TracklessForest/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 106 "data/maps/TracklessForest/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleCelebi_2
 BattleCelebi_1:
-# 108 "data/maps/TracklessForest/scripts.pory"
+# 109 "data/maps/TracklessForest/scripts.pory"
 	release
 	end
 
 BattleCelebi_2:
-# 106 "data/maps/TracklessForest/scripts.pory"
+# 107 "data/maps/TracklessForest/scripts.pory"
 	setflag FLAG_CAUGHT_CELEBI
 	goto BattleCelebi_1
 
 
 TracklessForest_Teleport::
-# 113 "data/maps/TracklessForest/scripts.pory"
-	lock
 # 114 "data/maps/TracklessForest/scripts.pory"
-	msgbox TracklessForest_Teleport_Text_0
+	lock
 # 115 "data/maps/TracklessForest/scripts.pory"
+	msgbox TracklessForest_Teleport_Text_0
+# 116 "data/maps/TracklessForest/scripts.pory"
 	compare VAR_SKY_PILLAR_STATE, 2
 	goto_if_ge TracklessForest_Teleport_2
 TracklessForest_Teleport_1:
-# 127 "data/maps/TracklessForest/scripts.pory"
+# 129 "data/maps/TracklessForest/scripts.pory"
 	release
 	end
 
 TracklessForest_Teleport_2:
-# 116 "data/maps/TracklessForest/scripts.pory"
-	msgbox TracklessForest_Teleport_Text_1, MSGBOX_YESNO
 # 117 "data/maps/TracklessForest/scripts.pory"
+	msgbox TracklessForest_Teleport_Text_1, MSGBOX_YESNO
+# 118 "data/maps/TracklessForest/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq TracklessForest_Teleport_4
 	goto TracklessForest_Teleport_1
 
 TracklessForest_Teleport_4:
-# 118 "data/maps/TracklessForest/scripts.pory"
-	special StorePlayerCoordsInVars
 # 119 "data/maps/TracklessForest/scripts.pory"
+	special StorePlayerCoordsInVars
+# 120 "data/maps/TracklessForest/scripts.pory"
 	compare VAR_0x8004, 16
-	goto_if_eq TracklessForest_Teleport_6
-# 123 "data/maps/TracklessForest/scripts.pory"
+	goto_if_eq TracklessForest_Teleport_7
+# 124 "data/maps/TracklessForest/scripts.pory"
 	warp MAP_TRACKLESS_FOREST, 0
+TracklessForest_Teleport_6:
+# 126 "data/maps/TracklessForest/scripts.pory"
+	waitstate
 	goto TracklessForest_Teleport_1
 
-TracklessForest_Teleport_6:
-# 120 "data/maps/TracklessForest/scripts.pory"
+TracklessForest_Teleport_7:
+# 121 "data/maps/TracklessForest/scripts.pory"
 	warp MAP_TRACKLESS_FOREST, 1
-	goto TracklessForest_Teleport_1
+	goto TracklessForest_Teleport_6
 
 
 BattleRaikou_Text_0:
-# 41 "data/maps/TracklessForest/scripts.pory"
+# 42 "data/maps/TracklessForest/scripts.pory"
 	.string "Rararaiiiii!$"
 
 BattleEntei_Text_0:
-# 60 "data/maps/TracklessForest/scripts.pory"
+# 61 "data/maps/TracklessForest/scripts.pory"
 	.string "Enteiiiii!$"
 
 BattleSuicune_Text_0:
-# 79 "data/maps/TracklessForest/scripts.pory"
+# 80 "data/maps/TracklessForest/scripts.pory"
 	.string "Susuiiiii!$"
 
 BattleCelebi_Text_0:
-# 98 "data/maps/TracklessForest/scripts.pory"
+# 99 "data/maps/TracklessForest/scripts.pory"
 	.string "Lululalala!$"
 
 TracklessForest_Teleport_Text_0:
-# 114 "data/maps/TracklessForest/scripts.pory"
+# 115 "data/maps/TracklessForest/scripts.pory"
 	.string "You feel a nostalgic air from the stone.$"
 
 TracklessForest_Teleport_Text_1:
-# 116 "data/maps/TracklessForest/scripts.pory"
+# 117 "data/maps/TracklessForest/scripts.pory"
 	.string "Touch the stone?$"

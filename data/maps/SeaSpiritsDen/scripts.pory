@@ -26,6 +26,7 @@ mapscripts SeaSpiritsDen_MapScripts {
 
 script SeaSpiritsDen_Portal {
 	warp(MAP_SEA_SPIRITS_DEN_ALT, 0)
+	waitstate
 }
 
 script BattleArticuno {

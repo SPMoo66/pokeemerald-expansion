@@ -34,4 +34,5 @@ script BattleDarkrai {
 
 script CaveofDreamsChamber_Portal {
 	warp(MAP_CRESCENT_ISLE, 0)
+	waitstate
 }

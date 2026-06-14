@@ -60,45 +60,47 @@ SubmergedCave_1F_1R_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_3:
 	setflag FLAG_TEMP_1
 # 23 "data/maps/SubmergedCave_1F_1R/scripts.pory"
 	warp MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_2, 0
+# 24 "data/maps/SubmergedCave_1F_1R/scripts.pory"
+	waitstate
 	return
 
 
 SubmergedCave_1F_1R_EventScript_Max::
-# 31 "data/maps/SubmergedCave_1F_1R/scripts.pory"
-	trainerbattle_single TRAINER_MAX, SubmergedCave_1F_1R_EventScript_Max_Text_0, SubmergedCave_1F_1R_EventScript_Max_Text_1
 # 32 "data/maps/SubmergedCave_1F_1R/scripts.pory"
+	trainerbattle_single TRAINER_MAX, SubmergedCave_1F_1R_EventScript_Max_Text_0, SubmergedCave_1F_1R_EventScript_Max_Text_1
+# 33 "data/maps/SubmergedCave_1F_1R/scripts.pory"
 	msgbox SubmergedCave_1F_1R_EventScript_Max_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 SubmergedCave_1F_1R_EventScript_Willow::
-# 36 "data/maps/SubmergedCave_1F_1R/scripts.pory"
-	trainerbattle_single TRAINER_WILLOW, SubmergedCave_1F_1R_EventScript_Willow_Text_0, SubmergedCave_1F_1R_EventScript_Willow_Text_1
 # 37 "data/maps/SubmergedCave_1F_1R/scripts.pory"
+	trainerbattle_single TRAINER_WILLOW, SubmergedCave_1F_1R_EventScript_Willow_Text_0, SubmergedCave_1F_1R_EventScript_Willow_Text_1
+# 38 "data/maps/SubmergedCave_1F_1R/scripts.pory"
 	msgbox SubmergedCave_1F_1R_EventScript_Willow_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 SubmergedCave_1F_1R_EventScript_Max_Text_0:
-# 31 "data/maps/SubmergedCave_1F_1R/scripts.pory"
+# 32 "data/maps/SubmergedCave_1F_1R/scripts.pory"
 	.string "I'm down here to collect everything\nrare!$"
 
 SubmergedCave_1F_1R_EventScript_Max_Text_1:
-# 31 "data/maps/SubmergedCave_1F_1R/scripts.pory"
+# 32 "data/maps/SubmergedCave_1F_1R/scripts.pory"
 	.string "Oh, no!$"
 
 SubmergedCave_1F_1R_EventScript_Max_Text_2:
-# 32 "data/maps/SubmergedCave_1F_1R/scripts.pory"
+# 33 "data/maps/SubmergedCave_1F_1R/scripts.pory"
 	.string "I'm already beaten down, and I only\nmade it to the entrance…$"
 
 SubmergedCave_1F_1R_EventScript_Willow_Text_0:
-# 36 "data/maps/SubmergedCave_1F_1R/scripts.pory"
+# 37 "data/maps/SubmergedCave_1F_1R/scripts.pory"
 	.string "What a dark cave!\nThank goodness I brought my flashlight!$"
 
 SubmergedCave_1F_1R_EventScript_Willow_Text_1:
-# 36 "data/maps/SubmergedCave_1F_1R/scripts.pory"
+# 37 "data/maps/SubmergedCave_1F_1R/scripts.pory"
 	.string "Wait, I think my flashlight just\nflickered!$"
 
 SubmergedCave_1F_1R_EventScript_Willow_Text_2:
-# 37 "data/maps/SubmergedCave_1F_1R/scripts.pory"
+# 38 "data/maps/SubmergedCave_1F_1R/scripts.pory"
 	.string "Hey, do you have any extra batteries?\pMy partner must have the others we\nbrought…$"

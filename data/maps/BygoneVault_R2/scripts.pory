@@ -156,6 +156,7 @@ script BygoneVault_R2_Redd2 {
 		setflag (FLAG_PLAY_AS_FIRST_MON_IN_PARTY)
 		setflag (FLAG_SEMI_PERM_HIDE_FOLLOWER)
 		warpsilent (MAP_BYGONE_VAULT_R2, 9, 10)
+		waitstate
 	}
 	closemessage
 }
@@ -196,6 +197,7 @@ script BygoneVault_R2_FinishPuzzle {
 	clearflag (FLAG_PLAY_AS_FIRST_MON_IN_PARTY)
 	clearflag (FLAG_SEMI_PERM_HIDE_FOLLOWER)
 	warpsilent (MAP_BYGONE_VAULT_R2, 9, 13)
+	waitstate
 }
 
 script BygoneVault_R2_PuzzlePostScript {
@@ -247,6 +249,7 @@ script BygoneVault_R2_PuzzlePostScript {
 			"against us!", MSGBOX_AUTOCLOSE)
 	setflag (FLAG_EXP_1_BYGONE_VAULT_RIGHT_PUZZLE_COMPLETE)
 	warpsilent (MAP_BYGONE_VAULT_R2, 9, 13)
+	waitstate
 }
 
 

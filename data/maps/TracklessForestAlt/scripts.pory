@@ -26,6 +26,7 @@ mapscripts TracklessForestAlt_MapScripts {
 
 script TracklessForestAlt_Portal {
 	warp(MAP_TRACKLESS_FOREST, 2)
+	waitstate
 }
 
 script BattleRagingBolt {

@@ -294,7 +294,7 @@ BygoneVault_R2_Redd2::
 	compare VAR_RESULT, 0
 	goto_if_ne BygoneVault_R2_Redd2_2
 BygoneVault_R2_Redd2_1:
-# 160 "data/maps/BygoneVault_R2/scripts.pory"
+# 161 "data/maps/BygoneVault_R2/scripts.pory"
 	closemessage
 	return
 
@@ -311,436 +311,442 @@ BygoneVault_R2_Redd2_2:
 	setflag FLAG_SEMI_PERM_HIDE_FOLLOWER
 # 158 "data/maps/BygoneVault_R2/scripts.pory"
 	warpsilent MAP_BYGONE_VAULT_R2, 9, 10
+# 159 "data/maps/BygoneVault_R2/scripts.pory"
+	waitstate
 	goto BygoneVault_R2_Redd2_1
 
 
 BygoneVault_R2_StartPuzzle::
-# 164 "data/maps/BygoneVault_R2/scripts.pory"
-	applymovement 2, Common_Movement_FaceRight
 # 165 "data/maps/BygoneVault_R2/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
+	applymovement 2, Common_Movement_FaceRight
 # 166 "data/maps/BygoneVault_R2/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
 # 167 "data/maps/BygoneVault_R2/scripts.pory"
+	waitmovement 0
+# 168 "data/maps/BygoneVault_R2/scripts.pory"
 	goto_if_set FLAG_TEMP_6, BygoneVault_R2_StartPuzzle_1
-# 171 "data/maps/BygoneVault_R2/scripts.pory"
-	setflag FLAG_TEMP_7
 # 172 "data/maps/BygoneVault_R2/scripts.pory"
+	setflag FLAG_TEMP_7
+# 173 "data/maps/BygoneVault_R2/scripts.pory"
 	goto BygoneVault_R2_Redd
 	return
 
 BygoneVault_R2_StartPuzzle_1:
-# 168 "data/maps/BygoneVault_R2/scripts.pory"
+# 169 "data/maps/BygoneVault_R2/scripts.pory"
 	goto BygoneVault_R2_Redd2
 	return
 
 
 BygoneVault_R2_AbandonPuzzle::
-# 177 "data/maps/BygoneVault_R2/scripts.pory"
+# 178 "data/maps/BygoneVault_R2/scripts.pory"
 	goto_if_unset FLAG_EXP_1_BYGONE_VAULT_RIGHT_PUZZLE_COMPLETE, BygoneVault_R2_AbandonPuzzle_4
 BygoneVault_R2_AbandonPuzzle_3:
-# 182 "data/maps/BygoneVault_R2/scripts.pory"
-	msgbox BygoneVault_R2_AbandonPuzzle_Text_1, MSGBOX_YESNO
 # 183 "data/maps/BygoneVault_R2/scripts.pory"
+	msgbox BygoneVault_R2_AbandonPuzzle_Text_1, MSGBOX_YESNO
+# 184 "data/maps/BygoneVault_R2/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne BygoneVault_R2_AbandonPuzzle_7
 BygoneVault_R2_AbandonPuzzle_1:
-# 191 "data/maps/BygoneVault_R2/scripts.pory"
+# 192 "data/maps/BygoneVault_R2/scripts.pory"
 	closemessage
 	return
 
 BygoneVault_R2_AbandonPuzzle_2:
-# 178 "data/maps/BygoneVault_R2/scripts.pory"
+# 179 "data/maps/BygoneVault_R2/scripts.pory"
 	msgbox BygoneVault_R2_AbandonPuzzle_Text_0, MSGBOX_AUTOCLOSE
 	goto BygoneVault_R2_AbandonPuzzle_1
 
 BygoneVault_R2_AbandonPuzzle_4:
-# 177 "data/maps/BygoneVault_R2/scripts.pory"
+# 178 "data/maps/BygoneVault_R2/scripts.pory"
 	goto_if_set FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH, BygoneVault_R2_AbandonPuzzle_2
 	goto BygoneVault_R2_AbandonPuzzle_3
 
 BygoneVault_R2_AbandonPuzzle_7:
-# 184 "data/maps/BygoneVault_R2/scripts.pory"
-	clearflag FLAG_BLOCK_PLAYER_ACTIONS
 # 185 "data/maps/BygoneVault_R2/scripts.pory"
-	clearflag FLAG_PLAY_AS_FIRST_MON_IN_PARTY
+	clearflag FLAG_BLOCK_PLAYER_ACTIONS
 # 186 "data/maps/BygoneVault_R2/scripts.pory"
-	clearflag FLAG_SEMI_PERM_HIDE_FOLLOWER
+	clearflag FLAG_PLAY_AS_FIRST_MON_IN_PARTY
 # 187 "data/maps/BygoneVault_R2/scripts.pory"
-	closemessage
+	clearflag FLAG_SEMI_PERM_HIDE_FOLLOWER
 # 188 "data/maps/BygoneVault_R2/scripts.pory"
+	closemessage
+# 189 "data/maps/BygoneVault_R2/scripts.pory"
 	warpsilent MAP_BYGONE_VAULT_R2, 9, 13
 	goto BygoneVault_R2_AbandonPuzzle_1
 
 
 BygoneVault_R2_FinishPuzzle::
-# 195 "data/maps/BygoneVault_R2/scripts.pory"
-	clearflag FLAG_BLOCK_PLAYER_ACTIONS
 # 196 "data/maps/BygoneVault_R2/scripts.pory"
-	clearflag FLAG_PLAY_AS_FIRST_MON_IN_PARTY
+	clearflag FLAG_BLOCK_PLAYER_ACTIONS
 # 197 "data/maps/BygoneVault_R2/scripts.pory"
-	clearflag FLAG_SEMI_PERM_HIDE_FOLLOWER
+	clearflag FLAG_PLAY_AS_FIRST_MON_IN_PARTY
 # 198 "data/maps/BygoneVault_R2/scripts.pory"
+	clearflag FLAG_SEMI_PERM_HIDE_FOLLOWER
+# 199 "data/maps/BygoneVault_R2/scripts.pory"
 	warpsilent MAP_BYGONE_VAULT_R2, 9, 13
+# 200 "data/maps/BygoneVault_R2/scripts.pory"
+	waitstate
 	return
 
 
 BygoneVault_R2_PuzzlePostScript::
-# 202 "data/maps/BygoneVault_R2/scripts.pory"
+# 204 "data/maps/BygoneVault_R2/scripts.pory"
 	speakername CommonText_Redd
-# 203 "data/maps/BygoneVault_R2/scripts.pory"
+# 205 "data/maps/BygoneVault_R2/scripts.pory"
 	msgbox BygoneVault_R2_PuzzlePostScript_Text_0, MSGBOX_AUTOCLOSE
-# 206 "data/maps/BygoneVault_R2/scripts.pory"
-	addobject 4
-# 207 "data/maps/BygoneVault_R2/scripts.pory"
-	delay 30
 # 208 "data/maps/BygoneVault_R2/scripts.pory"
-	applymovement 4, Common_Movement_WalkRight2
+	addobject 4
 # 209 "data/maps/BygoneVault_R2/scripts.pory"
-	waitmovement 0
+	delay 30
 # 210 "data/maps/BygoneVault_R2/scripts.pory"
-	delay 20
+	applymovement 4, Common_Movement_WalkRight2
 # 211 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 5, 13, 0x241, TRUE
-# 212 "data/maps/BygoneVault_R2/scripts.pory"
-	special DrawWholeMapView
-# 213 "data/maps/BygoneVault_R2/scripts.pory"
-	playse SE_SWITCH
-# 214 "data/maps/BygoneVault_R2/scripts.pory"
-	waitse
-# 215 "data/maps/BygoneVault_R2/scripts.pory"
-	speakername CommonText_Redd
-# 216 "data/maps/BygoneVault_R2/scripts.pory"
-	msgbox BygoneVault_R2_PuzzlePostScript_Text_1, MSGBOX_AUTOCLOSE
-# 217 "data/maps/BygoneVault_R2/scripts.pory"
-	setvar VAR_0x8004, 1
-# 218 "data/maps/BygoneVault_R2/scripts.pory"
-	setvar VAR_0x8005, 1
-# 219 "data/maps/BygoneVault_R2/scripts.pory"
-	setvar VAR_0x8006, 12
-# 220 "data/maps/BygoneVault_R2/scripts.pory"
-	setvar VAR_0x8007, 2
-# 221 "data/maps/BygoneVault_R2/scripts.pory"
-	special ShakeCamera
-# 222 "data/maps/BygoneVault_R2/scripts.pory"
-	waitstate
-# 223 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 6, 11, 0x01B, TRUE
-# 224 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 6, 12, 0x03A, TRUE
-# 225 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 6, 13, 0x001, FALSE
-# 226 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 6, 14, 0x001, FALSE
-# 227 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 6, 15, 0x001, FALSE
-# 228 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 6, 16, 0x01B, TRUE
-# 229 "data/maps/BygoneVault_R2/scripts.pory"
-	special DrawWholeMapView
-# 230 "data/maps/BygoneVault_R2/scripts.pory"
-	playse SE_LAVARIDGE_FALL_WARP
-# 231 "data/maps/BygoneVault_R2/scripts.pory"
-	waitse
-# 232 "data/maps/BygoneVault_R2/scripts.pory"
-	applymovement 2, Common_Movement_FaceLeft
-# 233 "data/maps/BygoneVault_R2/scripts.pory"
 	waitmovement 0
+# 212 "data/maps/BygoneVault_R2/scripts.pory"
+	delay 20
+# 213 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 5, 13, 0x241, TRUE
+# 214 "data/maps/BygoneVault_R2/scripts.pory"
+	special DrawWholeMapView
+# 215 "data/maps/BygoneVault_R2/scripts.pory"
+	playse SE_SWITCH
+# 216 "data/maps/BygoneVault_R2/scripts.pory"
+	waitse
+# 217 "data/maps/BygoneVault_R2/scripts.pory"
+	speakername CommonText_Redd
+# 218 "data/maps/BygoneVault_R2/scripts.pory"
+	msgbox BygoneVault_R2_PuzzlePostScript_Text_1, MSGBOX_AUTOCLOSE
+# 219 "data/maps/BygoneVault_R2/scripts.pory"
+	setvar VAR_0x8004, 1
+# 220 "data/maps/BygoneVault_R2/scripts.pory"
+	setvar VAR_0x8005, 1
+# 221 "data/maps/BygoneVault_R2/scripts.pory"
+	setvar VAR_0x8006, 12
+# 222 "data/maps/BygoneVault_R2/scripts.pory"
+	setvar VAR_0x8007, 2
+# 223 "data/maps/BygoneVault_R2/scripts.pory"
+	special ShakeCamera
+# 224 "data/maps/BygoneVault_R2/scripts.pory"
+	waitstate
+# 225 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 6, 11, 0x01B, TRUE
+# 226 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 6, 12, 0x03A, TRUE
+# 227 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 6, 13, 0x001, FALSE
+# 228 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 6, 14, 0x001, FALSE
+# 229 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 6, 15, 0x001, FALSE
+# 230 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 6, 16, 0x01B, TRUE
+# 231 "data/maps/BygoneVault_R2/scripts.pory"
+	special DrawWholeMapView
+# 232 "data/maps/BygoneVault_R2/scripts.pory"
+	playse SE_LAVARIDGE_FALL_WARP
+# 233 "data/maps/BygoneVault_R2/scripts.pory"
+	waitse
 # 234 "data/maps/BygoneVault_R2/scripts.pory"
-	playse SE_PIN
+	applymovement 2, Common_Movement_FaceLeft
 # 235 "data/maps/BygoneVault_R2/scripts.pory"
-	applymovement 2, Common_Movement_ExclamationMark
+	waitmovement 0
 # 236 "data/maps/BygoneVault_R2/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 237 "data/maps/BygoneVault_R2/scripts.pory"
-	delay 60
+	applymovement 2, Common_Movement_ExclamationMark
 # 238 "data/maps/BygoneVault_R2/scripts.pory"
-	speakername CommonText_Redd
+	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
 # 239 "data/maps/BygoneVault_R2/scripts.pory"
-	msgbox BygoneVault_R2_PuzzlePostScript_Text_2, MSGBOX_AUTOCLOSE
-# 243 "data/maps/BygoneVault_R2/scripts.pory"
-	applymovement 2, Common_Movement_WalkInPlaceRight
-# 244 "data/maps/BygoneVault_R2/scripts.pory"
+	delay 60
+# 240 "data/maps/BygoneVault_R2/scripts.pory"
 	speakername CommonText_Redd
+# 241 "data/maps/BygoneVault_R2/scripts.pory"
+	msgbox BygoneVault_R2_PuzzlePostScript_Text_2, MSGBOX_AUTOCLOSE
 # 245 "data/maps/BygoneVault_R2/scripts.pory"
+	applymovement 2, Common_Movement_WalkInPlaceRight
+# 246 "data/maps/BygoneVault_R2/scripts.pory"
+	speakername CommonText_Redd
+# 247 "data/maps/BygoneVault_R2/scripts.pory"
 	msgbox BygoneVault_R2_PuzzlePostScript_Text_3, MSGBOX_AUTOCLOSE
-# 248 "data/maps/BygoneVault_R2/scripts.pory"
+# 250 "data/maps/BygoneVault_R2/scripts.pory"
 	setflag FLAG_EXP_1_BYGONE_VAULT_RIGHT_PUZZLE_COMPLETE
-# 249 "data/maps/BygoneVault_R2/scripts.pory"
+# 251 "data/maps/BygoneVault_R2/scripts.pory"
 	warpsilent MAP_BYGONE_VAULT_R2, 9, 13
+# 252 "data/maps/BygoneVault_R2/scripts.pory"
+	waitstate
 	return
 
 
 BygoneVault_R2_Sign::
-# 254 "data/maps/BygoneVault_R2/scripts.pory"
+# 257 "data/maps/BygoneVault_R2/scripts.pory"
 	msgbox BygoneVault_R2_Sign_Text_0, MSGBOX_SIGN
 	return
 
 
 BygoneVault_R2_Lever1::
-# 258 "data/maps/BygoneVault_R2/scripts.pory"
+# 261 "data/maps/BygoneVault_R2/scripts.pory"
 	goto_if_unset FLAG_TEMP_2, BygoneVault_R2_Lever1_2
-# 309 "data/maps/BygoneVault_R2/scripts.pory"
+# 312 "data/maps/BygoneVault_R2/scripts.pory"
 	msgbox Text_FlippedSwitch, MSGBOX_AUTOCLOSE
 BygoneVault_R2_Lever1_1:
-# 311 "data/maps/BygoneVault_R2/scripts.pory"
+# 314 "data/maps/BygoneVault_R2/scripts.pory"
 	closemessage
 	return
 
 BygoneVault_R2_Lever1_2:
-# 259 "data/maps/BygoneVault_R2/scripts.pory"
+# 262 "data/maps/BygoneVault_R2/scripts.pory"
 	msgbox Text_FlipSwitch, MSGBOX_YESNO
-# 260 "data/maps/BygoneVault_R2/scripts.pory"
+# 263 "data/maps/BygoneVault_R2/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne BygoneVault_R2_Lever1_5
 	goto BygoneVault_R2_Lever1_1
 
 BygoneVault_R2_Lever1_5:
-# 261 "data/maps/BygoneVault_R2/scripts.pory"
-	closemessage
-# 262 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 13, 2, 0x241, TRUE
-# 263 "data/maps/BygoneVault_R2/scripts.pory"
-	special DrawWholeMapView
 # 264 "data/maps/BygoneVault_R2/scripts.pory"
-	playse SE_SWITCH
+	closemessage
 # 265 "data/maps/BygoneVault_R2/scripts.pory"
-	waitse
+	setmetatile 13, 2, 0x241, TRUE
 # 266 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 2, 2, 0x06B, FALSE
-# 267 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 3, 3, 0x06B, FALSE
-# 268 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 10, 3, 0x06B, FALSE
-# 269 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 12, 3, 0x06B, FALSE
-# 270 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 7, 4, 0x06B, FALSE
-# 271 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 5, 5, 0x06B, FALSE
-# 272 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 14, 5, 0x06B, FALSE
-# 273 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 4, 6, 0x06B, FALSE
-# 274 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 2, 7, 0x06B, FALSE
-# 275 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 9, 7, 0x06B, FALSE
-# 276 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 6, 8, 0x06B, FALSE
-# 277 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 13, 8, 0x06B, FALSE
-# 278 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 3, 9, 0x06B, FALSE
-# 279 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 7, 10, 0x06B, FALSE
-# 281 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 4, 2, 0x073, FALSE
-# 282 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 8, 2, 0x073, FALSE
-# 283 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 11, 2, 0x073, FALSE
-# 284 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 2, 3, 0x073, FALSE
-# 285 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 10, 4, 0x073, FALSE
-# 286 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 14, 4, 0x073, FALSE
-# 287 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 8, 5, 0x073, FALSE
-# 288 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 12, 5, 0x073, FALSE
-# 289 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 1, 6, 0x073, FALSE
-# 290 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 4, 7, 0x073, FALSE
-# 291 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 13, 7, 0x073, FALSE
-# 292 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 10, 8, 0x073, FALSE
-# 293 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 4, 9, 0x073, FALSE
-# 294 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 12, 9, 0x073, FALSE
-# 295 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 8, 10, 0x073, FALSE
-# 297 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 14, 3, 0x06C, TRUE
-# 298 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 5, 4, 0x06C, TRUE
-# 299 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 3, 5, 0x06C, TRUE
-# 300 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 6, 7, 0x06C, TRUE
-# 301 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 11, 7, 0x06C, TRUE
-# 302 "data/maps/BygoneVault_R2/scripts.pory"
 	special DrawWholeMapView
-# 303 "data/maps/BygoneVault_R2/scripts.pory"
-	playse SE_M_SELF_DESTRUCT
-# 304 "data/maps/BygoneVault_R2/scripts.pory"
+# 267 "data/maps/BygoneVault_R2/scripts.pory"
+	playse SE_SWITCH
+# 268 "data/maps/BygoneVault_R2/scripts.pory"
 	waitse
+# 269 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 2, 2, 0x06B, FALSE
+# 270 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 3, 3, 0x06B, FALSE
+# 271 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 10, 3, 0x06B, FALSE
+# 272 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 12, 3, 0x06B, FALSE
+# 273 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 7, 4, 0x06B, FALSE
+# 274 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 5, 5, 0x06B, FALSE
+# 275 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 14, 5, 0x06B, FALSE
+# 276 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 4, 6, 0x06B, FALSE
+# 277 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 2, 7, 0x06B, FALSE
+# 278 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 9, 7, 0x06B, FALSE
+# 279 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 6, 8, 0x06B, FALSE
+# 280 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 13, 8, 0x06B, FALSE
+# 281 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 3, 9, 0x06B, FALSE
+# 282 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 7, 10, 0x06B, FALSE
+# 284 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 4, 2, 0x073, FALSE
+# 285 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 8, 2, 0x073, FALSE
+# 286 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 11, 2, 0x073, FALSE
+# 287 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 2, 3, 0x073, FALSE
+# 288 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 10, 4, 0x073, FALSE
+# 289 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 14, 4, 0x073, FALSE
+# 290 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 8, 5, 0x073, FALSE
+# 291 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 12, 5, 0x073, FALSE
+# 292 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 1, 6, 0x073, FALSE
+# 293 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 4, 7, 0x073, FALSE
+# 294 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 13, 7, 0x073, FALSE
+# 295 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 10, 8, 0x073, FALSE
+# 296 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 4, 9, 0x073, FALSE
+# 297 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 12, 9, 0x073, FALSE
+# 298 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 8, 10, 0x073, FALSE
+# 300 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 14, 3, 0x06C, TRUE
+# 301 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 5, 4, 0x06C, TRUE
+# 302 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 3, 5, 0x06C, TRUE
+# 303 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 6, 7, 0x06C, TRUE
+# 304 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 11, 7, 0x06C, TRUE
 # 305 "data/maps/BygoneVault_R2/scripts.pory"
+	special DrawWholeMapView
+# 306 "data/maps/BygoneVault_R2/scripts.pory"
+	playse SE_M_SELF_DESTRUCT
+# 307 "data/maps/BygoneVault_R2/scripts.pory"
+	waitse
+# 308 "data/maps/BygoneVault_R2/scripts.pory"
 	setflag FLAG_TEMP_2
 	goto BygoneVault_R2_Lever1_1
 
 
 BygoneVault_R2_Lever2::
-# 315 "data/maps/BygoneVault_R2/scripts.pory"
+# 318 "data/maps/BygoneVault_R2/scripts.pory"
 	goto_if_unset FLAG_TEMP_3, BygoneVault_R2_Lever2_2
-# 351 "data/maps/BygoneVault_R2/scripts.pory"
+# 354 "data/maps/BygoneVault_R2/scripts.pory"
 	msgbox Text_FlippedSwitch, MSGBOX_AUTOCLOSE
 BygoneVault_R2_Lever2_1:
-# 353 "data/maps/BygoneVault_R2/scripts.pory"
+# 356 "data/maps/BygoneVault_R2/scripts.pory"
 	closemessage
 	return
 
 BygoneVault_R2_Lever2_2:
-# 316 "data/maps/BygoneVault_R2/scripts.pory"
+# 319 "data/maps/BygoneVault_R2/scripts.pory"
 	msgbox Text_FlipSwitch, MSGBOX_YESNO
-# 317 "data/maps/BygoneVault_R2/scripts.pory"
+# 320 "data/maps/BygoneVault_R2/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne BygoneVault_R2_Lever2_5
 	goto BygoneVault_R2_Lever2_1
 
 BygoneVault_R2_Lever2_5:
-# 318 "data/maps/BygoneVault_R2/scripts.pory"
-	closemessage
-# 319 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 1, 3, 0x241, TRUE
-# 320 "data/maps/BygoneVault_R2/scripts.pory"
-	special DrawWholeMapView
 # 321 "data/maps/BygoneVault_R2/scripts.pory"
-	playse SE_SWITCH
+	closemessage
 # 322 "data/maps/BygoneVault_R2/scripts.pory"
-	waitse
+	setmetatile 1, 3, 0x241, TRUE
 # 323 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 4, 2, 0x06B, FALSE
-# 324 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 8, 2, 0x06B, FALSE
-# 325 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 11, 2, 0x06B, FALSE
-# 326 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 2, 3, 0x06B, FALSE
-# 327 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 10, 4, 0x06B, FALSE
-# 328 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 14, 4, 0x06B, FALSE
-# 329 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 8, 5, 0x06B, FALSE
-# 330 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 12, 5, 0x06B, FALSE
-# 331 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 1, 6, 0x06B, FALSE
-# 332 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 4, 7, 0x06B, FALSE
-# 333 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 13, 7, 0x06B, FALSE
-# 334 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 10, 8, 0x06B, FALSE
-# 335 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 4, 9, 0x06B, FALSE
-# 336 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 12, 9, 0x06B, FALSE
-# 337 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 8, 10, 0x06B, FALSE
-# 339 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 14, 3, 0x073, FALSE
-# 340 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 5, 4, 0x073, FALSE
-# 341 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 3, 5, 0x073, FALSE
-# 342 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 6, 7, 0x073, FALSE
-# 343 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 11, 7, 0x073, FALSE
-# 344 "data/maps/BygoneVault_R2/scripts.pory"
 	special DrawWholeMapView
-# 345 "data/maps/BygoneVault_R2/scripts.pory"
-	playse SE_M_SELF_DESTRUCT
-# 346 "data/maps/BygoneVault_R2/scripts.pory"
+# 324 "data/maps/BygoneVault_R2/scripts.pory"
+	playse SE_SWITCH
+# 325 "data/maps/BygoneVault_R2/scripts.pory"
 	waitse
+# 326 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 4, 2, 0x06B, FALSE
+# 327 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 8, 2, 0x06B, FALSE
+# 328 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 11, 2, 0x06B, FALSE
+# 329 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 2, 3, 0x06B, FALSE
+# 330 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 10, 4, 0x06B, FALSE
+# 331 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 14, 4, 0x06B, FALSE
+# 332 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 8, 5, 0x06B, FALSE
+# 333 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 12, 5, 0x06B, FALSE
+# 334 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 1, 6, 0x06B, FALSE
+# 335 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 4, 7, 0x06B, FALSE
+# 336 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 13, 7, 0x06B, FALSE
+# 337 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 10, 8, 0x06B, FALSE
+# 338 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 4, 9, 0x06B, FALSE
+# 339 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 12, 9, 0x06B, FALSE
+# 340 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 8, 10, 0x06B, FALSE
+# 342 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 14, 3, 0x073, FALSE
+# 343 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 5, 4, 0x073, FALSE
+# 344 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 3, 5, 0x073, FALSE
+# 345 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 6, 7, 0x073, FALSE
+# 346 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 11, 7, 0x073, FALSE
 # 347 "data/maps/BygoneVault_R2/scripts.pory"
+	special DrawWholeMapView
+# 348 "data/maps/BygoneVault_R2/scripts.pory"
+	playse SE_M_SELF_DESTRUCT
+# 349 "data/maps/BygoneVault_R2/scripts.pory"
+	waitse
+# 350 "data/maps/BygoneVault_R2/scripts.pory"
 	setflag FLAG_TEMP_3
 	goto BygoneVault_R2_Lever2_1
 
 
 BygoneVault_R2_Lever3::
-# 357 "data/maps/BygoneVault_R2/scripts.pory"
+# 360 "data/maps/BygoneVault_R2/scripts.pory"
 	goto_if_unset FLAG_TEMP_4, BygoneVault_R2_Lever3_2
-# 389 "data/maps/BygoneVault_R2/scripts.pory"
+# 392 "data/maps/BygoneVault_R2/scripts.pory"
 	msgbox Text_FlippedSwitch, MSGBOX_AUTOCLOSE
 BygoneVault_R2_Lever3_1:
-# 391 "data/maps/BygoneVault_R2/scripts.pory"
+# 394 "data/maps/BygoneVault_R2/scripts.pory"
 	closemessage
 	return
 
 BygoneVault_R2_Lever3_2:
-# 358 "data/maps/BygoneVault_R2/scripts.pory"
+# 361 "data/maps/BygoneVault_R2/scripts.pory"
 	msgbox Text_FlipSwitch, MSGBOX_YESNO
-# 359 "data/maps/BygoneVault_R2/scripts.pory"
+# 362 "data/maps/BygoneVault_R2/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne BygoneVault_R2_Lever3_5
 	goto BygoneVault_R2_Lever3_1
 
 BygoneVault_R2_Lever3_5:
-# 360 "data/maps/BygoneVault_R2/scripts.pory"
-	closemessage
-# 361 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 6, 6, 0x241, TRUE
-# 362 "data/maps/BygoneVault_R2/scripts.pory"
-	special DrawWholeMapView
 # 363 "data/maps/BygoneVault_R2/scripts.pory"
-	playse SE_SWITCH
+	closemessage
 # 364 "data/maps/BygoneVault_R2/scripts.pory"
-	waitse
+	setmetatile 6, 6, 0x241, TRUE
 # 365 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 14, 3, 0x06B, FALSE
+	special DrawWholeMapView
 # 366 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 5, 4, 0x06B, FALSE
+	playse SE_SWITCH
 # 367 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 3, 5, 0x06B, FALSE
+	waitse
 # 368 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 6, 7, 0x06B, FALSE
+	setmetatile 14, 3, 0x06B, FALSE
 # 369 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 11, 7, 0x06B, FALSE
+	setmetatile 5, 4, 0x06B, FALSE
 # 370 "data/maps/BygoneVault_R2/scripts.pory"
-	special DrawWholeMapView
+	setmetatile 3, 5, 0x06B, FALSE
 # 371 "data/maps/BygoneVault_R2/scripts.pory"
-	playse SE_M_SELF_DESTRUCT
+	setmetatile 6, 7, 0x06B, FALSE
 # 372 "data/maps/BygoneVault_R2/scripts.pory"
-	waitse
+	setmetatile 11, 7, 0x06B, FALSE
 # 373 "data/maps/BygoneVault_R2/scripts.pory"
-	delay 20
-# 374 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 2, 8, 0x001, FALSE
-# 375 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 2, 9, 0x001, FALSE
-# 376 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 2, 10, 0x001, FALSE
-# 377 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 3, 10, 0x080, TRUE
-# 378 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 4, 10, 0x081, TRUE
-# 379 "data/maps/BygoneVault_R2/scripts.pory"
-	setmetatile 5, 10, 0x082, TRUE
-# 380 "data/maps/BygoneVault_R2/scripts.pory"
 	special DrawWholeMapView
-# 381 "data/maps/BygoneVault_R2/scripts.pory"
-	playse SE_M_EXPLOSION
-# 382 "data/maps/BygoneVault_R2/scripts.pory"
+# 374 "data/maps/BygoneVault_R2/scripts.pory"
+	playse SE_M_SELF_DESTRUCT
+# 375 "data/maps/BygoneVault_R2/scripts.pory"
 	waitse
+# 376 "data/maps/BygoneVault_R2/scripts.pory"
+	delay 20
+# 377 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 2, 8, 0x001, FALSE
+# 378 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 2, 9, 0x001, FALSE
+# 379 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 2, 10, 0x001, FALSE
+# 380 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 3, 10, 0x080, TRUE
+# 381 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 4, 10, 0x081, TRUE
+# 382 "data/maps/BygoneVault_R2/scripts.pory"
+	setmetatile 5, 10, 0x082, TRUE
 # 383 "data/maps/BygoneVault_R2/scripts.pory"
-	delay 10
+	special DrawWholeMapView
 # 384 "data/maps/BygoneVault_R2/scripts.pory"
-	setflag FLAG_TEMP_4
+	playse SE_M_EXPLOSION
 # 385 "data/maps/BygoneVault_R2/scripts.pory"
+	waitse
+# 386 "data/maps/BygoneVault_R2/scripts.pory"
+	delay 10
+# 387 "data/maps/BygoneVault_R2/scripts.pory"
+	setflag FLAG_TEMP_4
+# 388 "data/maps/BygoneVault_R2/scripts.pory"
 	setflag FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH
 	goto BygoneVault_R2_Lever3_1
 
 
 BygoneVault_R2_Lever4::
-# 395 "data/maps/BygoneVault_R2/scripts.pory"
+# 398 "data/maps/BygoneVault_R2/scripts.pory"
 	msgbox Text_FlippedSwitch, MSGBOX_AUTOCLOSE
 	return
 
@@ -775,37 +781,37 @@ BygoneVault_R2_Redd2_Text_1:
 	.string "Alright! Give it a shot!$"
 
 BygoneVault_R2_AbandonPuzzle_Text_0:
-# 178 "data/maps/BygoneVault_R2/scripts.pory"
+# 179 "data/maps/BygoneVault_R2/scripts.pory"
 	.string "It seems as though your Pokémon\n"
 	.string "doesn't want to return yet.$"
 
 BygoneVault_R2_AbandonPuzzle_Text_1:
-# 182 "data/maps/BygoneVault_R2/scripts.pory"
+# 183 "data/maps/BygoneVault_R2/scripts.pory"
 	.string "Do you want to abandon the puzzle?$"
 
 BygoneVault_R2_PuzzlePostScript_Text_0:
-# 203 "data/maps/BygoneVault_R2/scripts.pory"
+# 205 "data/maps/BygoneVault_R2/scripts.pory"
 	.string "Huh. I guess that does it?\p"
 	.string "But your Pokémon, where did it get\noff to?\p"
 	.string "You lost track of it too, right?$"
 
 BygoneVault_R2_PuzzlePostScript_Text_1:
-# 216 "data/maps/BygoneVault_R2/scripts.pory"
+# 218 "data/maps/BygoneVault_R2/scripts.pory"
 	.string "What was that?$"
 
 BygoneVault_R2_PuzzlePostScript_Text_2:
-# 239 "data/maps/BygoneVault_R2/scripts.pory"
+# 241 "data/maps/BygoneVault_R2/scripts.pory"
 	.string "Attaboy!\p"
 	.string "You really are raising your Pokémon\n"
 	.string "well if they can do that on their\l"
 	.string "own, {PLAYER}!$"
 
 BygoneVault_R2_PuzzlePostScript_Text_3:
-# 245 "data/maps/BygoneVault_R2/scripts.pory"
+# 247 "data/maps/BygoneVault_R2/scripts.pory"
 	.string "That's gotta be what we needed.\p"
 	.string "This dungeon won't last long\n"
 	.string "against us!$"
 
 BygoneVault_R2_Sign_Text_0:
-# 254 "data/maps/BygoneVault_R2/scripts.pory"
+# 257 "data/maps/BygoneVault_R2/scripts.pory"
 	.string "When the floor has been restored\nThy path shall be revealed$"

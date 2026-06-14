@@ -16,6 +16,7 @@ mapscripts MagmaHideout_PortalRoom_MapScripts {
 
 script MagmaHideout_PortalRoom_EventScript_PortalTeleport {
 	warp (MAP_MAGMA_HIDEOUT_1F, 4)
+	waitstate
 }
 
 script BattleHoopa {

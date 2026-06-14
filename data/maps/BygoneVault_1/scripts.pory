@@ -104,6 +104,7 @@ script CreatePokemonSprite {
 	setflag (FLAG_PLAY_AS_FIRST_MON_IN_PARTY)
 	setflag (FLAG_SEMI_PERM_HIDE_FOLLOWER)
 	warpsilent (MAP_BYGONE_VAULT_1, 8, 11)
+	waitstate
 }
 
 script Script_RedrawBygoneVault1Map {

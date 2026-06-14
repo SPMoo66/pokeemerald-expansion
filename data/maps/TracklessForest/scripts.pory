@@ -31,6 +31,7 @@ mapscripts TracklessForest_MapScripts {
 
 script TracklessForest_Portal {
 	warp(MAP_TRACKLESS_FOREST_ALT, 0)
+	waitstate
 }
 
 script BattleRaikou {
@@ -122,6 +123,7 @@ script TracklessForest_Teleport {
 			else {
 				warp(MAP_TRACKLESS_FOREST, 0)
 			}
+			waitstate
 		}
 	}
 	release

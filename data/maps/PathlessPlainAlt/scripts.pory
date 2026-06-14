@@ -26,6 +26,7 @@ mapscripts PathlessPlainAlt_MapScripts {
 
 script PathlessPlainAlt_Portal {
 	warp(MAP_PATHLESS_PLAIN, 0)
+	waitstate
 }
 
 script BattleIronCrown {

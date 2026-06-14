@@ -47,6 +47,7 @@ script MauveIslandWest_EventScript_HeadbuttTree {
 		fadescreenswapbuffers (FADE_TO_BLACK)
 		delay (40)
 		warpsilent (MAP_MAUVE_CAMP, 23, 10)
+		waitstate
 	}
 	closemessage
 }

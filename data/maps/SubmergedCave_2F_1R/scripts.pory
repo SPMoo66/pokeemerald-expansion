@@ -21,6 +21,7 @@ mapscripts SubmergedCave_2F_1R_MapScripts {
 					msgbox (Text_TooDarkLetsTurnBack, MSGBOX_AUTOCLOSE)
 					setflag(FLAG_TEMP_1)
 					warp (MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_2, 1)
+					waitstate
 				}
 			}
 		}

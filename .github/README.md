@@ -2,11 +2,8 @@ This is the README for Jamie's Transformation Pack feature branch, please refer 
 
 # Videos
 
-## `Instant Morph`
-
-https://github.com/user-attachments/assets/12f6b975-5f1d-468d-b385-c874f7344770
-***
-The video show the npc following this movement rountine:
+## Instant Morph
+https://github.com/user-attachments/assets/7ae1551f-83fc-4881-9c66-eff1aeadbcdf
 ```
 OldaleTown_EventScript_Gir::
 	instantmorph LOCALID_PLAYER, OBJ_EVENT_GFX_GIRL_3
@@ -16,10 +13,8 @@ OldaleTown_EventScript_MartEmployee::
 	instantmorph LOCALID_PLAYER
 	end
 ```
-## `Spin Morph`
-https://github.com/user-attachments/assets/64f90d2b-61de-42bf-a751-5c24c771c79c
-***
-The video show the npc following this movement rountine:
+## Spin Morph
+https://github.com/user-attachments/assets/37eb32d3-9bb1-485c-abea-2c224ea99e1f
 ```
 OldaleTown_EventScript_Zoroark::
 	setvar_randompartymon_gfx VAR_0x8005
@@ -27,8 +22,8 @@ OldaleTown_EventScript_Zoroark::
 	end
 ```
 
-## `Mosaic Morph`
-***
+## Mosaic Morph
+https://github.com/user-attachments/assets/06e45666-b5c8-442c-b3df-70ff4c317c72
 ```
 OldaleTown_EventScript_Ditto::
 	chooseboxmon SELECT_PC_MON_DAYCARE @ I call chooseboxmon with SELECT_PC_MON_DAYCARE insetad of no argument because it forbids picking an egg
@@ -38,8 +33,8 @@ OldaleTown_EventScript_Ditto::
 	end
 ```
 
-## `Bird Transform` (BETA)
-***
+## Bird Transform (BETA)
+https://github.com/user-attachments/assets/435edc97-62d7-4284-9266-5eca6c3e9556
 ```
 OldaleTown_EventScript_Girl::
 	setvar_moncanlearnmove_gfx VAR_0x8005, MOVE_FLY

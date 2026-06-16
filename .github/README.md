@@ -54,7 +54,20 @@ MovementStuff::
 
 ## Transformations
 
+A transformation needs 3 arguments: the object you want to transform, the graphics you want to change the object into and the type of effects you want to accompany the trasnformation (referred to as "morph/morphing" in the code to avoid search conflicts with the battle move Transform).
+This is why the main transformation command  has the following arguments.
+`.macro morphobject localId:req, type:req, graphicsId=NUM_OBJ_EVENT_GFX, map`
+- `localId` to represent the object you want to morph with an optional map argument at the end in case you want to refer to an object from a different map
+- `type` indicates the transformation effect you want to be applied. These are defined as `enum MorphType` and the possbile values are `INSTANT_MORPH`, `SPIN_MORPH` and `MOSAIC_MORPH`
+- `graphicsId` to represent the image you want to change the object into. Check the dedicated section to understand how graphicsId work. If the graphicsId argument is not present, the object will try to change into its "original" form. For Regular object events for example, it would be the graphicsId defined in their template.
 
+In addition to `morphobject`, we have three wrappers functions that take one less argument and include the morph type
+`instantmorph/spinmorph/mosaicmorph localId:req, graphicsId=NUM_OBJ_EVENT_GFX, map`
+These wrappers also play a sound effect to accompany the transformation. We recommand watching the videos examples to see how the different effects look like
+
+### Bird Transformations (BETA)
+
+This feature branch also contains three additional script commands: `jumponrightbird`, `jumponleftbird` and `jumpoffbird`. These commands are not fully polished. They only works with a centered player character and should be used with caution. I included them because they are somewhat similar and might be interested to some people but they are provided as is and you have to fix them yourself if you have issues.
 
 ## Graphics ID
 

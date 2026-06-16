@@ -76,6 +76,7 @@
 #include "constants/speaker_names.h"
 	.include "asm/macros.inc"
 	.include "asm/macros/event.inc"
+	.include "asm/macros/jamies_transformation_pack.inc"
 	.include "constants/constants.inc"
 
 	.section script_data, "aw", %progbits

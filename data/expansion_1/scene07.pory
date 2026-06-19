@@ -157,7 +157,7 @@ script Expansion1_Rival_Scene07b {
 			"a sure thing.", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_BARON, Common_Movement_Thinking)
 	delay (60)
-	speakername (CommonText_Baron)
+	call (GetBaronsName)
 	msgbox ("It didn't look wrecked on the inside,\n"
 			"though…?")
 	speakername (CommonText_Jakson)
@@ -168,7 +168,7 @@ script Expansion1_Rival_Scene07b {
 			"dungeon.\p"
 			"But yes, we've retrieved your dynamite.\n"
 			"Praise be.")
-	speakername (CommonText_Baron)
+	call (GetBaronsName)
 	msgbox ("So this is how we… as Sakura said…\n"
 			"go “boom”?")
 	speakername (CommonText_Harper)

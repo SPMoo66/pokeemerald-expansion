@@ -1000,9 +1000,11 @@ text CommonText_Vicky {
 
 
 script GetBaronsName {
-	speakername (CommonText_Baron)
 	if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) >= 24 && (var(VAR_EMERALBODY_RIVAL) == 0 || var(VAR_EMERALBODY_RIVAL) == 5)) {
 		speakername (CommonText_BaronsMom)
+	}
+	else {
+		speakername (CommonText_Baron)
 	}
 }
 

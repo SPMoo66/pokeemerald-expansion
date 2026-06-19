@@ -66,7 +66,7 @@ script Expansion1_Rival_Scene05 {
 	applymovement (MAUVECAMP_BARON, Common_Movement_Smile)
 	playse (SE_M_MORNING_SUN)
 	delay (40)
-	speakername (CommonText_Baron)
+	call (GetBaronsName)
 	msgbox ("What a relief.", MSGBOX_AUTOCLOSE)
 	delay (40)
 	speakername (CommonText_Harper)
@@ -115,7 +115,7 @@ script Expansion1_Rival_Scene05 {
 	waitmovement (0)
 	applymovement (MAUVECAMP_BARON, Common_Movement_QuestionMark)
 	delay (30)
-	speakername (CommonText_Baron)
+	call (GetBaronsName)
 	msgbox ("ENCORE?")
 	speakername (CommonText_Jakson)
 	msgbox ("I… have… notifications turned off\n"
@@ -152,7 +152,7 @@ script Expansion1_Rival_Scene05 {
 	applymovement (MAUVECAMP_JAKSON, Common_Movement_SweatDrop)
 	playse (SE_M_METRONOME)
 	delay (40)
-	speakername (CommonText_Baron)
+	call (GetBaronsName)
 	msgbox ("People can forget things in the heat\n"
 			"of the moment…")
 	speakername (CommonText_Sakura)
@@ -201,7 +201,7 @@ script Expansion1_Rival_Scene05b {
 	speakername (CommonText_Harper)
 	msgbox ("Yeah, and there were a bunch of boss\n"
 			"creatures mods, too.")
-	speakername (CommonText_Baron)
+	call (GetBaronsName)
 	msgbox ("You think that's what we saw when\n"
 			"we were on the boat?")
 	speakername (CommonText_Jakson)
@@ -235,7 +235,7 @@ script Expansion1_Rival_Scene05b {
 	speakername (CommonText_Sakura)
 	msgbox ("Which means my explosive discovery\n"
 			"is all the more useful!")
-	speakername (CommonText_Baron)
+	call (GetBaronsName)
 	msgbox ("Explosive?")
 	speakername (CommonText_Sakura)
 	msgbox ("Yep yep! So we just need to blow some\n"
@@ -247,7 +247,7 @@ script Expansion1_Rival_Scene05b {
 	msgbox ("Ah. Right. Need to refactor the pitch.\p"
 			"We can… blow things up.\n"
 			"Boom.")
-	speakername (CommonText_Baron)
+	call (GetBaronsName)
 	msgbox ("How… eloquent.", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_SAKURA, Common_Movement_Smile)
 	playse (SE_M_MORNING_SUN)

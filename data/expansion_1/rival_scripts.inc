@@ -42,7 +42,7 @@ Redd_Exp1_Town01::
 
 Baron_Exp1_Town01::
 # 57 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 58 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town01_BaronText, MSGBOX_NPC
 	return
@@ -86,7 +86,7 @@ Redd_Exp1_Town02::
 
 Baron_Exp1_Town02::
 # 85 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 86 "data/expansion_1/rival_scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 26
 	goto_if_lt Baron_Exp1_Town02_1
@@ -126,7 +126,7 @@ Redd_Exp1_Town03::
 
 Baron_Exp1_Town03::
 # 111 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 112 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town03_BaronText, MSGBOX_NPC
 	return
@@ -166,7 +166,7 @@ Redd_Exp1_Town04::
 
 Baron_Exp1_Town04::
 # 137 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 138 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town04_BaronText
 # 139 "data/expansion_1/rival_scripts.pory"

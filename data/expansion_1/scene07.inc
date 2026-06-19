@@ -206,7 +206,7 @@ Expansion1_Rival_Scene07b::
 # 159 "data/expansion_1/scene07.pory"
 	delay 60
 # 160 "data/expansion_1/scene07.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 161 "data/expansion_1/scene07.pory"
 	msgbox Expansion1_Rival_Scene07b_Text_7
 # 163 "data/expansion_1/scene07.pory"
@@ -218,7 +218,7 @@ Expansion1_Rival_Scene07b::
 # 166 "data/expansion_1/scene07.pory"
 	msgbox Expansion1_Rival_Scene07b_Text_9
 # 171 "data/expansion_1/scene07.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 172 "data/expansion_1/scene07.pory"
 	msgbox Expansion1_Rival_Scene07b_Text_10
 # 174 "data/expansion_1/scene07.pory"

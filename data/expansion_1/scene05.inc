@@ -110,7 +110,7 @@ Expansion1_Rival_Scene05::
 # 68 "data/expansion_1/scene05.pory"
 	delay 40
 # 69 "data/expansion_1/scene05.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 70 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05_Text_3, MSGBOX_AUTOCLOSE
 # 71 "data/expansion_1/scene05.pory"
@@ -200,7 +200,7 @@ Expansion1_Rival_Scene05::
 # 117 "data/expansion_1/scene05.pory"
 	delay 30
 # 118 "data/expansion_1/scene05.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 119 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05_Text_13
 # 120 "data/expansion_1/scene05.pory"
@@ -262,7 +262,7 @@ Expansion1_Rival_Scene05::
 # 154 "data/expansion_1/scene05.pory"
 	delay 40
 # 155 "data/expansion_1/scene05.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 156 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05_Text_21
 # 158 "data/expansion_1/scene05.pory"
@@ -342,7 +342,7 @@ Expansion1_Rival_Scene05b::
 # 202 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_3
 # 204 "data/expansion_1/scene05.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 205 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_4
 # 207 "data/expansion_1/scene05.pory"
@@ -376,7 +376,7 @@ Expansion1_Rival_Scene05b::
 # 236 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_10
 # 238 "data/expansion_1/scene05.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 239 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_11
 # 240 "data/expansion_1/scene05.pory"
@@ -392,7 +392,7 @@ Expansion1_Rival_Scene05b::
 # 247 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_14
 # 250 "data/expansion_1/scene05.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 251 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_15, MSGBOX_AUTOCLOSE
 # 252 "data/expansion_1/scene05.pory"

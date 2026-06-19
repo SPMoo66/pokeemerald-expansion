@@ -54,7 +54,7 @@ script Redd_Exp1_Town01 {
 }
 
 script Baron_Exp1_Town01 {
-	speakername (CommonText_Baron)
+	call (GetBaronsName)
 	msgbox(Exp1_Town01_BaronText, MSGBOX_NPC)
 }
 
@@ -82,7 +82,7 @@ script Redd_Exp1_Town02 {
 }
 
 script Baron_Exp1_Town02 {
-	speakername (CommonText_Baron)
+	call (GetBaronsName)
 	if (var(VAR_EMERALBODY_RIVAL_STATE) < 26) {
 		msgbox(Exp1_Town02_BaronText, MSGBOX_NPC)
 	}
@@ -108,7 +108,7 @@ script Redd_Exp1_Town03 {
 }
 
 script Baron_Exp1_Town03 {
-	speakername (CommonText_Baron)
+	call (GetBaronsName)
 	msgbox(Exp1_Town03_BaronText, MSGBOX_NPC)
 }
 
@@ -134,7 +134,7 @@ script Redd_Exp1_Town04 {
 }
 
 script Baron_Exp1_Town04 {
-	speakername (CommonText_Baron)
+	call (GetBaronsName)
 	msgbox(Exp1_Town04_BaronText)
 	if (var(VAR_EMERALBODY_RIVAL) != 0 || var(VAR_EMERALBODY_RIVAL) != 5) {
 		msgbox (Exp1_Town04b_BaronText)

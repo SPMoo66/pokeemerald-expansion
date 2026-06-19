@@ -40,7 +40,7 @@ Expansion1_Rival_Scene01::
 # 35 "data/expansion_1/scene01.pory"
 	delay 40
 # 36 "data/expansion_1/scene01.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 37 "data/expansion_1/scene01.pory"
 	msgbox Expansion1_Rival_Scene01_Text_1
 # 38 "data/expansion_1/scene01.pory"
@@ -116,7 +116,7 @@ Expansion1_Rival_Scene01::
 # 74 "data/expansion_1/scene01.pory"
 	delay 10
 # 75 "data/expansion_1/scene01.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 76 "data/expansion_1/scene01.pory"
 	msgbox Expansion1_Rival_Scene01_Text_12, MSGBOX_AUTOCLOSE
 # 77 "data/expansion_1/scene01.pory"
@@ -158,7 +158,7 @@ Expansion1_Rival_Scene01::
 # 96 "data/expansion_1/scene01.pory"
 	delay 40
 # 97 "data/expansion_1/scene01.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 98 "data/expansion_1/scene01.pory"
 	msgbox Expansion1_Rival_Scene01_Text_16
 # 99 "data/expansion_1/scene01.pory"
@@ -180,7 +180,7 @@ Expansion1_Rival_Scene01::
 # 110 "data/expansion_1/scene01.pory"
 	delay 40
 # 111 "data/expansion_1/scene01.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 112 "data/expansion_1/scene01.pory"
 	msgbox Expansion1_Rival_Scene01_Text_19
 # 114 "data/expansion_1/scene01.pory"
@@ -202,7 +202,7 @@ Expansion1_Rival_Scene01::
 # 122 "data/expansion_1/scene01.pory"
 	msgbox Expansion1_Rival_Scene01_Text_22
 # 123 "data/expansion_1/scene01.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 124 "data/expansion_1/scene01.pory"
 	msgbox Expansion1_Rival_Scene01_Text_23, MSGBOX_AUTOCLOSE
 # 125 "data/expansion_1/scene01.pory"
@@ -282,7 +282,7 @@ Expansion1_Rival_Scene01::
 # 165 "data/expansion_1/scene01.pory"
 	delay 20
 # 166 "data/expansion_1/scene01.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 167 "data/expansion_1/scene01.pory"
 	msgbox Expansion1_Rival_Scene01_Text_34, MSGBOX_AUTOCLOSE
 # 168 "data/expansion_1/scene01.pory"
@@ -436,7 +436,7 @@ SSTidal_Scene01_OnFrame::
 # 250 "data/expansion_1/scene01.pory"
 	delay 20
 # 251 "data/expansion_1/scene01.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 252 "data/expansion_1/scene01.pory"
 	msgbox SSTidal_Scene01_OnFrame_Text_5, MSGBOX_AUTOCLOSE
 # 253 "data/expansion_1/scene01.pory"
@@ -464,7 +464,7 @@ SSTidal_Scene01_OnFrame::
 # 264 "data/expansion_1/scene01.pory"
 	delay 40
 # 265 "data/expansion_1/scene01.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 266 "data/expansion_1/scene01.pory"
 	msgbox SSTidal_Scene01_OnFrame_Text_8, MSGBOX_AUTOCLOSE
 # 267 "data/expansion_1/scene01.pory"
@@ -472,7 +472,7 @@ SSTidal_Scene01_OnFrame::
 # 268 "data/expansion_1/scene01.pory"
 	waitmovement 0
 # 269 "data/expansion_1/scene01.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 270 "data/expansion_1/scene01.pory"
 	msgbox SSTidal_Scene01_OnFrame_Text_9, MSGBOX_AUTOCLOSE
 # 271 "data/expansion_1/scene01.pory"
@@ -534,7 +534,7 @@ SSTidal_Scene01_OnFrame::
 # 301 "data/expansion_1/scene01.pory"
 	waitmovement 0
 # 302 "data/expansion_1/scene01.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 303 "data/expansion_1/scene01.pory"
 	msgbox SSTidal_Scene01_OnFrame_Text_17, MSGBOX_AUTOCLOSE
 # 304 "data/expansion_1/scene01.pory"
@@ -550,7 +550,7 @@ SSTidal_Scene01_OnFrame::
 # 309 "data/expansion_1/scene01.pory"
 	waitmovement 0
 # 310 "data/expansion_1/scene01.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 311 "data/expansion_1/scene01.pory"
 	msgbox SSTidal_Scene01_OnFrame_Text_19
 # 312 "data/expansion_1/scene01.pory"
@@ -634,7 +634,7 @@ SSTidal_Scene01_OnFrame::
 # 356 "data/expansion_1/scene01.pory"
 	delay 20
 # 357 "data/expansion_1/scene01.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 358 "data/expansion_1/scene01.pory"
 	msgbox SSTidal_Scene01_OnFrame_Text_28, MSGBOX_AUTOCLOSE
 # 359 "data/expansion_1/scene01.pory"
@@ -704,7 +704,7 @@ SSTidal_Scene01_OnFrame::
 # 392 "data/expansion_1/scene01.pory"
 	waitse
 # 393 "data/expansion_1/scene01.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 394 "data/expansion_1/scene01.pory"
 	msgbox SSTidal_Scene01_OnFrame_Text_35, MSGBOX_AUTOCLOSE
 # 395 "data/expansion_1/scene01.pory"

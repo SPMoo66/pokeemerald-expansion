@@ -44,6 +44,7 @@ script SS_Tidal_Dungeon_1F_1R_Room1_Dynamite {
 			"… … …\n"
 			"… … …\l"
 			"Did you hear that?", MSGBOX_AUTOCLOSE)
+	fadenewbgm (MUS_HG_LUGIA_APPEARS)
 	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkInPlaceFasterDown)
 	waitmovement (0)
 	delay (60)

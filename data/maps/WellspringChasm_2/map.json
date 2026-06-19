@@ -2,7 +2,7 @@
   "id": "MAP_WELLSPRING_CHASM_2",
   "name": "WellspringChasm_2",
   "layout": "LAYOUT_WELLSPRING_CHASM_2",
-  "music": "MUS_DUMMY",
+  "music": "MUS_HG_LIGHTHOUSE",
   "region_map_section": "MAPSEC_WELLSPRING_CHASM",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

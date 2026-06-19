@@ -33,7 +33,7 @@ mapscripts MauveCamp_MapScripts {
 			setobjectxyperm (MAUVECAMP_JAKSON, 17, 11)
 			setobjectmovementtype (MAUVECAMP_JAKSON, MOVEMENT_TYPE_WANDER_AROUND)
 		}
-		if (var(VAR_EMERALBODY_RIVAL_STATE) == 31 || var(VAR_EMERALBODY_RIVAL_STATE) == 32) { // Scene03
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 31 || var(VAR_EMERALBODY_RIVAL_STATE) == 32) { // Scene05
 			setflag (FLAG_TEMP_6)
 			savebgm (MUS_HG_POKEWALKER)
 		}

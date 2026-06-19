@@ -5514,6 +5514,7 @@ u16 GetBattleBGM(void)
             case SPECIES_TAPU_FINI:
                 return MUS_DP_VS_UXIE_MESPRIT_AZELF;
             case SPECIES_DIALGA:
+                return MUS_MD2_DIALGAS_FIGHT_TO_THE_FINISH;
             case SPECIES_PALKIA:
             case SPECIES_TERAPAGOS:
                 return MUS_DP_VS_DIALGA_PALKIA;

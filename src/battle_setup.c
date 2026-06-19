@@ -627,6 +627,8 @@ void BattleSetup_StartLegendaryBattle(void)
         CreateBattleStartTask(B_TRANSITION_RECTANGULAR_SPIRAL, MUS_DP_VS_UXIE_MESPRIT_AZELF);
         break;
     case SPECIES_DIALGA:
+        CreateBattleStartTask(B_TRANSITION_ANGLED_WIPES, MUS_MD2_DIALGAS_FIGHT_TO_THE_FINISH);
+        break;
     case SPECIES_PALKIA:
         CreateBattleStartTask(B_TRANSITION_ANGLED_WIPES, MUS_DP_VS_DIALGA_PALKIA);
         break;

@@ -4630,6 +4630,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_BW_VS_WILD)                        \
     X(MUS_B2W2_VS_GHETSIS)                   \
     X(MUS_FF4_FIGHT_2)                       \
+    X(MUS_MD2_DIALGAS_FIGHT_TO_THE_FINISH)   \
     X(MUS_XD_VS_CIPHER_PEON)
 
 #define SOUND_LIST_SE               \

@@ -1414,7 +1414,8 @@ MUS_BW_VS_TRAINER                     = 86 03
 MUS_BW_VS_WILD                        = 87 03
 MUS_B2W2_VS_GHETSIS                   = 88 03
 MUS_FF4_FIGHT_2                       = 89 03
-MUS_XD_VS_CIPHER_PEON                 = 8A 03
+MUS_MD2_DIALGAS_FIGHT_TO_THE_FINISH   = 8A 03
+MUS_XD_VS_CIPHER_PEON                 = 8B 03
 
 A_BUTTON = F8 00
 B_BUTTON = F8 01

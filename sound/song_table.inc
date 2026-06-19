@@ -912,6 +912,7 @@ gSongTable::
 	song mus_bw_vs_wild, MUSIC_PLAYER_BGM, 0
 	song mus_b2w2_vs_ghetsis, MUSIC_PLAYER_BGM, 0
 	song mus_ff4_fight_2, MUSIC_PLAYER_BGM, 0
+	song mus_md2_dialgas_fight_to_the_finish, MUSIC_PLAYER_BGM, 0
 	song mus_xd_vs_cipher_peon, MUSIC_PLAYER_BGM, 0
 
 	.align 2

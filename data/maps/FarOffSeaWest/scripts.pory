@@ -36,16 +36,25 @@ mapscripts FarOffSeaWest_MapScripts {
 				clearflag (FLAG_TEMP_1)
 			}
 		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 40) {
+			clearflag (FLAG_TEMP_1)
+		}
 	}
 }
 
 script FarOffSeaWest_Sakura_1 {
 	turnobject (FAROFFSEAWEST_SAKURA, DIR_SOUTH)
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 40) {
+		goto (Sakura_Exp1_Town04)
+	}
 	goto (Sakura_Exp1_Town02)
 }
 
 script FarOffSeaWest_Sakura_2 {
 	turnobject (FAROFFSEAWEST_SAKURA, DIR_EAST)
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 40) {
+		goto (Sakura_Exp1_Town04)
+	}
 	goto (Sakura_Exp1_Town02)
 }
 

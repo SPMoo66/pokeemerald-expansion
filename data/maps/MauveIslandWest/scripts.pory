@@ -1,6 +1,7 @@
 mapscripts MauveIslandWest_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag (FLAG_TEMP_1)
+		setflag (FLAG_TEMP_2)
 		if (var(VAR_EMERALBODY_RIVAL_STATE) < 23) {
 			setflag (FLAG_TEMP_6) // to hide the trainers
 		}
@@ -8,6 +9,9 @@ mapscripts MauveIslandWest_MapScripts {
 			if (var(VAR_EMERALBODY_RIVAL_STATE) < 31) {
 				clearflag (FLAG_TEMP_1)
 			}
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 40) {
+			clearflag (FLAG_TEMP_2)
 		}
 	}
 }

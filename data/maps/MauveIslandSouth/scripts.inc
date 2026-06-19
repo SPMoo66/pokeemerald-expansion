@@ -28,7 +28,7 @@ MauveIslandSouth_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 10 "data/maps/MauveIslandSouth/scripts.pory"
 	setflag FLAG_TEMP_3
 # 11 "data/maps/MauveIslandSouth/scripts.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 39
+	compare VAR_EMERALBODY_RIVAL_STATE, 38
 	goto_if_le MauveIslandSouth_MapScripts_MAP_SCRIPT_ON_TRANSITION_6
 	return
 

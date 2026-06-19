@@ -8,7 +8,7 @@ mapscripts MauveIslandSouth_MapScripts {
 		}
 		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 33) {
 			setflag (FLAG_TEMP_3)
-			if (var(VAR_EMERALBODY_RIVAL_STATE) <= 39) {
+			if (var(VAR_EMERALBODY_RIVAL_STATE) <= 38) {
 				clearflag (FLAG_TEMP_1)
 				setobjectxyperm (MAUVEISLANDSOUTH_REDD, 29, 24)
 				setobjectmovementtype (MAUVEISLANDSOUTH_REDD, MOVEMENT_TYPE_WANDER_AROUND)

@@ -111,7 +111,7 @@ MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_21:
 
 MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_22:
 # 40 "data/maps/MauveCamp/scripts.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 39
+	compare VAR_EMERALBODY_RIVAL_STATE, 38
 	goto_if_le MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_21
 	goto MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_20
 
@@ -210,7 +210,7 @@ MauveCamp_Sakura::
 
 MauveCamp_Sakura_1:
 # 97 "data/maps/MauveCamp/scripts.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 39
+	compare VAR_EMERALBODY_RIVAL_STATE, 38
 	goto_if_le MauveCamp_Sakura_3
 	return
 

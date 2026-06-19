@@ -37,7 +37,7 @@ mapscripts MauveCamp_MapScripts {
 			setflag (FLAG_TEMP_6)
 			savebgm (MUS_HG_POKEWALKER)
 		}
-		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 33 && var(VAR_EMERALBODY_RIVAL_STATE) <= 39) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 33 && var(VAR_EMERALBODY_RIVAL_STATE) <= 38) {
 			// set rival positions, etc. here for Town03
 			setobjectxyperm (MAUVECAMP_JAKSON, 25, 18)
 			setobjectmovementtype (MAUVECAMP_JAKSON, MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT)
@@ -94,7 +94,7 @@ script MauveCamp_Baron {
 
 script MauveCamp_Sakura {
 	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 33) {
-		if (var(VAR_EMERALBODY_RIVAL_STATE) <= 39) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) <= 38) {
 			goto (Sakura_Exp1_Town03)
 		}
 	}

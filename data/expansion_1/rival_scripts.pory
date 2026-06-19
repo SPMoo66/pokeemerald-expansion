@@ -135,7 +135,11 @@ script Redd_Exp1_Town04 {
 
 script Baron_Exp1_Town04 {
 	speakername (CommonText_Baron)
-	msgbox(Exp1_Town04_BaronText, MSGBOX_NPC)
+	msgbox(Exp1_Town04_BaronText)
+	if (var(VAR_EMERALBODY_RIVAL) != 0 || var(VAR_EMERALBODY_RIVAL) != 5) {
+		msgbox (Exp1_Town04b_BaronText)
+	}
+	closemessage
 }
 
 script Jakson_Exp1_Town04 {

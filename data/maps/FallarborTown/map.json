@@ -163,7 +163,7 @@
       "x": 5,
       "y": 14,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Jakson_Battle02"
     },
@@ -172,7 +172,7 @@
       "x": 5,
       "y": 13,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Jakson_Battle02"
     },
@@ -181,7 +181,7 @@
       "x": 5,
       "y": 12,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Jakson_Battle02"
     },
@@ -190,7 +190,7 @@
       "x": 5,
       "y": 11,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Jakson_Battle02"
     },
@@ -199,7 +199,7 @@
       "x": 5,
       "y": 10,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Jakson_Battle02"
     },
@@ -208,7 +208,7 @@
       "x": 5,
       "y": 9,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Jakson_Battle02"
     }

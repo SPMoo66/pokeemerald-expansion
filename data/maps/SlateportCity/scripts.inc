@@ -14,6 +14,7 @@ SlateportCity_OnTransition:
 	call_if_eq VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 1, SlateportCity_EventScript_SetReadyForScottScene
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 5, EventScript_Clear_FlagTemp1
 	call_if_eq VAR_EMERALBODY_RIVAL, 3, SlateportCity_EventScript_ReddCheck
+	call_if_eq VAR_EMERALBODY_RIVAL, 5, SlateportCity_EventScript_ReddCheck
 	end
 
 SlateportCity_EventScript_EnterSlateport::
@@ -54,6 +55,7 @@ SlateportCity_EventScript_MoveScottLeft::
 
 SlateportCity_EventScript_ReddCheck::
 	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 0, EventScript_Clear_FlagTemp2 @ Show Redd
+	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 8, EventScript_Clear_FlagTemp2 @ Show Redd
 	return
 
 SlateportCity_OnFrame:

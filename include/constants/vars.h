@@ -42,7 +42,7 @@
 #define VAR_OBJ_GFX_ID_8           0x4018    // Only used in contests
 #define VAR_OBJ_GFX_ID_9           0x4019    // Used for fake players
 #define VAR_OBJ_GFX_ID_A           0x401A    // Used for Looker
-#define VAR_OBJ_GFX_ID_B           0x401B    // Used for Emeralbody Rival
+#define VAR_OBJ_GFX_ID_B           0x401B    // Used for Emeralbody Rival, Elite 4
 #define VAR_OBJ_GFX_ID_C           0x401C    // Unused
 #define VAR_OBJ_GFX_ID_D           0x401D    // Unused
 #define VAR_OBJ_GFX_ID_E           0x401E

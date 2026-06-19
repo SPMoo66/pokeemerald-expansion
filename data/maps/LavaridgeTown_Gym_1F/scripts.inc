@@ -5,10 +5,12 @@ LavaridgeTown_Gym_1F_MapScripts::
 
 LavaridgeTown_Gym_1F_OnLoad:
 	goto_if_eq VAR_EMERALBODY_RIVAL, 4, LavaridgeTown_Gym_1F_AddSakuraPit
+	goto_if_eq VAR_EMERALBODY_RIVAL, 5, LavaridgeTown_Gym_1F_AddSakuraPit
 	return
 
 LavaridgeTown_Gym_1F_AddSakuraPit:
-	goto_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1, LavaridgeTown_Gym_1F_AddSakuraPit2
+	goto_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 7, LavaridgeTown_Gym_1F_AddSakuraPit2
+	goto_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 10, LavaridgeTown_Gym_1F_AddSakuraPit2
 	return
 
 LavaridgeTown_Gym_1F_AddSakuraPit2:
@@ -19,11 +21,13 @@ LavaridgeTown_Gym_1F_OnTransition:
 	setflag FLAG_TEMP_1
 	call LavaridgeTown_Gym_1F_EventScript_SetTrainerTempVars
 	call LavaridgeTown_Gym_1F_EventScript_CheckBuryTrainers
-	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 1, LavaridgeTown_Gym_1F_CheckSakura
+	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 7, LavaridgeTown_Gym_1F_CheckSakura
+	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 10, LavaridgeTown_Gym_1F_CheckSakura
 	end
 
 LavaridgeTown_Gym_1F_CheckSakura:
 	call_if_eq VAR_EMERALBODY_RIVAL, 4, EventScript_Clear_FlagTemp1
+	call_if_eq VAR_EMERALBODY_RIVAL, 5, EventScript_Clear_FlagTemp1
 	setobjectmovementtype SAKURA_BATTLE03, MOVEMENT_TYPE_BURIED
 	return
 

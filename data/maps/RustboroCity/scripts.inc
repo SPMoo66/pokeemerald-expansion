@@ -15,6 +15,7 @@ RustboroCity_OnTransition:
 	call_if_eq VAR_MAGEARNA_STATE, 2, EventScript_Clear_FlagTemp2
 	call_if_eq VAR_MAGEARNA_STATE, 3, EventScript_Clear_FlagTemp3
 	call_if_eq VAR_MAGEARNA_STATE, 4, EventScript_Clear_FlagTemp4
+	call AllRivalsGraphicsMusicRandomize
 	call Common_EventScript_SetupEmRivalGfxId
 	call_if_set FLAG_CAUGHT_MAGEARNA, RustboroCity_EventScript_HideMagearna
 	call Common_EventScript_SetupRivalGfxId

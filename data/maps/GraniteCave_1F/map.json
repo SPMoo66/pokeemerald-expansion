@@ -104,7 +104,7 @@
       "x": 9,
       "y": 4,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Sakura_Battle02"
     },
@@ -113,7 +113,7 @@
       "x": 22,
       "y": 7,
       "elevation": 0,
-      "var": "VAR_EMERALBODY_RIVAL_BATTLE_STATE",
+      "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Harper_Battle02"
     }

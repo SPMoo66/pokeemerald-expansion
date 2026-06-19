@@ -7,15 +7,17 @@ DewfordTown_OnTransition:
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 4, EventScript_Clear_FlagTemp1
-	call_if_set FLAG_BADGE05_GET, DewfordTown_EventScript_CheckBaron
+	call_if_set FLAG_BADGE02_GET, DewfordTown_EventScript_CheckBaron
 	end
 
 DewfordTown_EventScript_CheckBaron:
 	call_if_eq VAR_EMERALBODY_RIVAL, 0, DewfordTown_EventScript_CheckBaron2
+	call_if_eq VAR_EMERALBODY_RIVAL, 5, DewfordTown_EventScript_CheckBaron2
 	return
 
 DewfordTown_EventScript_CheckBaron2:
 	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 0, EventScript_Clear_FlagTemp2
+	call_if_eq VAR_EMERALBODY_RIVAL_BATTLE_STATE, 7, EventScript_Clear_FlagTemp2
 	return
 
 DewfordTown_EventScript_Briney::

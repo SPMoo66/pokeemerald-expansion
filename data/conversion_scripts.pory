@@ -1,0 +1,61 @@
+script Upgrade_EmeralbodyRivalBattleState_Var {
+	if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) < 5 && var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) != 0) {
+		if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 4) {
+			setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 25)
+		}
+		switch (var(VAR_EMERALBODY_RIVAL)) {
+			case 0: // Baron
+				switch (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE)) {
+					case 1:
+						setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 8)
+					case 2:
+						setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 13)
+					case 3:
+						setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 16)
+				}
+			case 1: // Harper
+				switch (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE)) {
+					case 1:
+						setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 6)
+					case 2:
+						setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 12)
+					case 3:
+						setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 17)
+				}
+			case 2: // Jakson
+				switch (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE)) {
+					case 1:
+						setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 10)
+					case 2:
+						setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 14)
+					case 3:
+						setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 20)
+				}
+			case 3: // Redd
+				switch (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE)) {
+					case 1:
+						setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 9)
+					case 2:
+						setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 15)
+					case 3:
+						setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 18)
+				}
+			case 4: // Sakura
+				switch (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE)) {
+					case 1:
+						setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 7)
+					case 2:
+						setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 11)
+					case 3:
+						setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 19)
+				}
+		}
+		msgbox ("Your save has been successfully\n"
+				"updated.")
+	}
+	else {
+		msgbox ("Your save does not need to be updated.\n"
+				"Terminating script.")
+	}
+	closemessage
+}

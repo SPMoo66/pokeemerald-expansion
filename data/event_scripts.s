@@ -1707,6 +1707,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/wild_encounter.inc"
 
 	.include "data/global.inc"
+	.include "data/emeralbody_rivals/all_rivals.inc"
 	.include "data/emeralbody_rivals/emib_opening.inc"
 	.include "data/emeralbody_rivals/rival_battles.inc"
 	.include "data/emeralbody_rivals/rival_scene04.inc"
@@ -1726,6 +1727,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/recommended_hacks.inc"
 	.include "data/cynthia.inc"
 	.include "data/cynthias_challenge.inc"
+	.include "data/conversion_scripts.inc"
 	.include "data/expansion_1/global.inc"
 	.include "data/expansion_1/rival_text.inc"
 	.include "data/expansion_1/rival_scripts.inc"

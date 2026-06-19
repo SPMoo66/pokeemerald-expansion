@@ -28,7 +28,7 @@ mapscripts MauveCamp_MapScripts {
 		if (var(VAR_EMERALBODY_RIVAL_STATE) == 23) { // Scene02
 			savebgm (MUS_DP_SUNYSHORE_DAY)
 		}
-		if (var(VAR_EMERALBODY_RIVAL_STATE) == 24) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 24 && var(VAR_EMERALBODY_RIVAL_STATE) <= 32) {
 			// set rival positions, etc. here for Town02
 			setobjectxyperm (MAUVECAMP_JAKSON, 17, 11)
 			setobjectmovementtype (MAUVECAMP_JAKSON, MOVEMENT_TYPE_WANDER_AROUND)
@@ -37,8 +37,17 @@ mapscripts MauveCamp_MapScripts {
 			setflag (FLAG_TEMP_6)
 			savebgm (MUS_HG_POKEWALKER)
 		}
-		if (var(VAR_EMERALBODY_RIVAL_STATE) == 33) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 33 && var(VAR_EMERALBODY_RIVAL_STATE) <= 39) {
 			// set rival positions, etc. here for Town03
+			setobjectxyperm (MAUVECAMP_JAKSON, 25, 18)
+			setobjectmovementtype (MAUVECAMP_JAKSON, MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT)
+			setobjectxyperm (MAUVECAMP_BARON, 10, 12)
+			setobjectmovementtype (MAUVECAMP_BARON, MOVEMENT_TYPE_WANDER_AROUND)
+			setobjectxyperm (MAUVECAMP_SAKURA, 20, 29)
+			#setobjectmovementtype (MAUVECAMP_SAKURA, MOVEMENT_TYPE_FACE_LEFT)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 40) {
+			// set rival positions, etc. here for Town04
 		}
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [
@@ -60,8 +69,23 @@ script MauveCamp_RemoveCampTiles {
 }
 
 script MauveCamp_Jakson {
-	if (var(VAR_EMERALBODY_RIVAL_STATE) == 24) {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 33) {
+		goto (Jakson_Exp1_Town03)
+	}
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 24) {
 		goto (Jakson_Exp1_Town02)
+	}
+}
+
+script MauveCamp_Baron {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 33) {
+		goto (Baron_Exp1_Town03)
+	}
+}
+
+script MauveCamp_Sakura {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 33) {
+		goto (Sakura_Exp1_Town03)
 	}
 }
 

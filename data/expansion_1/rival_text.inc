@@ -225,8 +225,8 @@ Exp1_Town03_JaksonText::
 	.string "or maybe it was made for an earlier\l"
 	.string "version?\p"
 	.string "It's not bad enough that we can't keep\n"
-	.string "going, but I'll- well, maybe Harper and I\l"
-	.string "both will try to handle any issues.\p"
+	.string "going, but I'll- well, maybe Harper and\l"
+	.string "I both will try to handle any issues.\p"
 	.string "Either way, let's join her once we're\n"
 	.string "ready.$"
 

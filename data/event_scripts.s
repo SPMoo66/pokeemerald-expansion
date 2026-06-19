@@ -1823,3 +1823,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/BygoneVault_2L1/scripts.inc"
 	.include "data/maps/BygoneVault_2R1/scripts.inc"
 	.include "data/maps/BygoneVault_2RU/scripts.inc"
+
+	.include "data/maps/TemporalSpire/scripts.inc"

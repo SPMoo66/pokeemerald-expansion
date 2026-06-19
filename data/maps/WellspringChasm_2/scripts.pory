@@ -1,1 +1,6 @@
 mapscripts WellspringChasm_2_MapScripts {}
+
+script WellspringChasm_2_EventScript_PortalTeleport {
+	warp (MAP_TEMPORAL_SPIRE, 0)
+	waitstate
+}

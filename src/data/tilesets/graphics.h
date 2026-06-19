@@ -3276,3 +3276,22 @@ const u16 ALIGNED(4) gTilesetPalettes_General_Frlg[][16] =
 const u32 gTilesetTiles_General_Frlg[] = INCGFX_U32("data/tilesets/primary/general_frlg/tiles.png", ".4bpp.smol");
 
 #endif // IS_FRLG
+
+const u16 gTilesetPalettes_Temporal_Spire[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/temporal_spire/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/temporal_spire/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/temporal_spire/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/temporal_spire/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/temporal_spire/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/temporal_spire/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/temporal_spire/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/temporal_spire/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/temporal_spire/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/temporal_spire/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/temporal_spire/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/temporal_spire/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/temporal_spire/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Temporal_Spire[] = INCBIN_U32("data/tilesets/primary/temporal_spire/tiles.4bpp.lz");

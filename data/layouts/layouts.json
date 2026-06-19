@@ -11310,6 +11310,18 @@
       "border_filepath": "data/layouts/OneIsland_KindleRoad_EmberSpa_Frlg/border.bin",
       "blockdata_filepath": "data/layouts/OneIsland_KindleRoad_EmberSpa_Frlg/map.bin",
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_TEMPORAL_SPIRE",
+      "name": "TemporalSpire_Layout",
+      "width": 13,
+      "height": 13,
+      "border_width": 1,
+      "border_height": 1,
+      "primary_tileset": "gTileset_Temporal_Spire",
+      "secondary_tileset": "gTileset_Underwater_Sub1_Exp1",
+      "border_filepath": "data/layouts/TemporalSpire/border.bin",
+      "blockdata_filepath": "data/layouts/TemporalSpire/map.bin"
     }
   ]
 }

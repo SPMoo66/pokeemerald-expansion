@@ -1,0 +1,66 @@
+const DIALGA = 2
+const PALKIA = 3
+
+mapscripts TemporalSpire_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if(flag(FLAG_CAUGHT_DIALGA)) {
+			setflag (FLAG_TEMP_1)
+			removeobject(DIALGA)
+		}
+		if(flag(FLAG_CAUGHT_PALKIA)) {
+			setflag (FLAG_TEMP_2)
+			removeobject(PALKIA)
+		}
+		if (!flag(FLAG_TEMP_1) && !flag(FLAG_TEMP_2)) {
+			setflag (FLAG_TEMP_HIDE_FOLLOWER) // the two massive sprites (dialga and palkia) cause a memory overrun if a follower is also present
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject(VAR_LAST_TALKED)
+		}
+	}
+}
+
+script TemporalSpire_EventScript_PortalTeleport {
+	warp (MAP_WELLSPRING_CHASM_2, 2)
+	waitstate
+}
+
+script BattleDialga {
+	lock
+	faceplayer
+	setvar (VAR_LAST_TALKED, DIALGA)
+	playmoncry(SPECIES_DIALGA, CRY_MODE_ENCOUNTER)
+	msgbox("Gugyugubah!")
+	waitmoncry
+	setwildbattle(SPECIES_DIALGA, 70)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_DIALGA)
+	}
+	release
+	end
+}
+
+script BattlePalkia {
+	lock
+	faceplayer
+	setvar (VAR_LAST_TALKED, PALKIA)
+	playmoncry(SPECIES_PALKIA, CRY_MODE_ENCOUNTER)
+	msgbox("Gagyagyaah!")
+	waitmoncry
+	setwildbattle(SPECIES_PALKIA, 70)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	special(BattleSetup_StartLegendaryBattle)
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar (VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		setflag (FLAG_CAUGHT_PALKIA)
+	}
+	release
+	end
+}

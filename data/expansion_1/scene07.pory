@@ -10,11 +10,9 @@ const MAUVECAMP_REDD = 10
 const MAUVECAMP_HARPER = 11
 
 script SS_Tidal_Dungeon_1F_1R_Room1_Dynamite {
-	addobject (SSTIDALDUNGEON_ROOM_HARPER)
-	destroyfollowernpc
-	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkRight)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkRight)
 	waitmovement (0)
-	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkInPlaceFasterUp)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkInPlaceFasterUp)
 	waitmovement (0)
 	speakername (CommonText_Harper)
 	msgbox ("Well, sure as shit, there it is.\p"
@@ -31,7 +29,7 @@ script SS_Tidal_Dungeon_1F_1R_Room1_Dynamite {
 	addobject (SSTIDALDUNGEON_ROOM_FISHBOWL)
 	fadescreen (FADE_FROM_BLACK)
 	delay (30)
-	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkInPlaceFasterLeft)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkInPlaceFasterLeft)
 	waitmovement (0)
 	speakername (CommonText_Harper)
 	msgbox ("And look at that sucker. Probably came\n"
@@ -39,28 +37,48 @@ script SS_Tidal_Dungeon_1F_1R_Room1_Dynamite {
 			"sequence broken this thing so bad that\l"
 			"he's trapped in his cabin for eternity.\p"
 			"You know… Isn't his sprite a bit\n"
-			"familiar looking?\p"
-			"Eh, let's just grab this and-\p"
+			"familiar looking?", MSGBOX_AUTOCLOSE)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
+	waitmovement (0)
+	delay (20)
+	speakername (CommonText_Harper)
+	msgbox ("Eh, let's just grab this and-\p"
 			"… … …\n"
 			"… … …\l"
 			"Did you hear that?", MSGBOX_AUTOCLOSE)
 	fadenewbgm (MUS_HG_LUGIA_APPEARS)
-	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkInPlaceFasterDown)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement (0)
+	delay (40)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkInPlaceFasterDown)
 	waitmovement (0)
 	delay (60)
-	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkInPlaceFasterLeft)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkInPlaceFasterLeft)
 	waitmovement (0)
 	delay (60)
-	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkInPlaceFasterUp)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkInPlaceFasterUp)
 	waitmovement (0)
 	speakername (CommonText_Harper)
 	msgbox ("Was that fishbowl… always in that\n"
 			"position?", MSGBOX_AUTOCLOSE)
 	applymovement (SSTIDALDUNGEON_ROOM_FISHBOWL, Common_Movement_ShakeHorizontal)
 	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_ExclamationMark)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_ExclamationMark)
+	playse (SE_PIN)
+	delay (60)
 	
-	msgbox ("there's a battle here", MSGBOX_AUTOCLOSE)
-	delay (40)
+	setflag (FLAG_NO_CATCHING)
+	setflag (FLAG_NO_RUNNING)
+	setflag (FLAG_SMART_WILD_AI)
+	settotemboost (B_POSITION_OPPONENT_LEFT, 0, 3, 0, 0, 3)
+	setwilddoubleflag
+	createmon (1, 0, SPECIES_REGIAGUA, 85, ITEM_NONE, BALL_POKE, NATURE_HARDY, 0, MON_GENDER_RANDOM, 72, 72, 72, 72, 72, 72, 0, 0, 0, 0, 0, 0, MOVE_ORIGIN_PULSE, MOVE_TEETER_DANCE, MOVE_SURF, MOVE_WOOD_HAMMER)
+	dowildbattle
+	clearflag (FLAG_NO_CATCHING)
+	clearflag (FLAG_NO_RUNNING)
+	clearflag (FLAG_SMART_WILD_AI)
 	
 	speakername (CommonText_Harper)
 	msgbox ("Motherfu-\n"
@@ -75,7 +93,7 @@ script SS_Tidal_Dungeon_1F_1R_Room1_Dynamite {
 			"Or is that another mystery whose\n"
 			"answer is lost to the annals of\l"
 			"sequence breaks?", MSGBOX_AUTOCLOSE)
-	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_SweatDrop)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_SweatDrop)
 	playse (SE_M_METRONOME)
 	delay (40)
 	speakername (CommonText_Harper)
@@ -83,9 +101,9 @@ script SS_Tidal_Dungeon_1F_1R_Room1_Dynamite {
 			"then.\l"
 			"Or back on track at all, at least.\p"
 			"Anyway, I'll be taking that-", MSGBOX_AUTOCLOSE)
-	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkLeft)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkLeft)
 	waitmovement (0)
-	applymovement (SSTIDALDUNGEON_ROOM_HARPER, Common_Movement_WalkInPlaceFasterUp)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkInPlaceFasterUp)
 	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
 	waitmovement (0)
 	delay (10)
@@ -103,6 +121,7 @@ script SS_Tidal_Dungeon_1F_1R_Room1_Dynamite {
 	setflag (FLAG_HIDE_MAP_NAME_POPUP)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 39)
 	fadescreen (FADE_TO_BLACK)
+	destroyfollowernpc
 	warpcontinuescript(MAP_MAUVE_CAMP, 27, 13, Expansion1_Rival_Scene07b)
 }
 

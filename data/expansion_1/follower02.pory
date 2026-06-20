@@ -30,7 +30,7 @@ script Expansion1_Follower2_Restart {
 
 
 script SSTidalDungeon_StartHarperFollower {
-	applymovement (SSTIDALDUNGEON_HARPER, Common_Movement_WalkDown)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkUp)
 	waitmovement (0)
 	setfollowernpc (HARPER_SUBMERGED_CAVE, 0, Expansion1_Follower_Harper2, PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVE)
 	hidefollowernpc

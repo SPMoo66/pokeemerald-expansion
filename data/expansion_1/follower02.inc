@@ -22,7 +22,7 @@ Expansion1_Follower2_Restart::
 
 SSTidalDungeon_StartHarperFollower::
 # 33 "data/expansion_1/follower02.pory"
-	applymovement 1, Common_Movement_WalkDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
 # 34 "data/expansion_1/follower02.pory"
 	waitmovement 0
 # 35 "data/expansion_1/follower02.pory"

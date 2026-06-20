@@ -333,7 +333,7 @@ SS_Tidal_Dungeon_1F_1R_Room1_Dynamite_Text_2:
 	.string "sequence broken this thing so bad that\l"
 	.string "he's trapped in his cabin for eternity.\p"
 	.string "You know… Isn't his sprite a bit\n"
-	.string "familiar looking?\p$"
+	.string "familiar looking?$"
 
 SS_Tidal_Dungeon_1F_1R_Room1_Dynamite_Text_3:
 # 45 "data/expansion_1/scene07.pory"

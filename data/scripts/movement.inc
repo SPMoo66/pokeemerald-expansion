@@ -446,6 +446,17 @@ Common_Movement_WalkDiagNE3:
 	walk_diag_northeast
 	step_end
 
+Common_Movement_WalkDiagNE8:
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	step_end
+
 Common_Movement_WalkDiagNW3:
 	walk_diag_northwest
 	walk_diag_northwest

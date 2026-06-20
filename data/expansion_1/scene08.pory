@@ -5,11 +5,10 @@ const FAROFFSEAWEST_BARON = 14
 const FAROFFSEAWEST_HARPER = 15
 const FAROFFSEAWEST_FAKEPLAYER = 16
 const FAROFFSEAWEST_DYNAMITE = 17
+const SPIRITOMB = 5
 
 script Expansion1_Rival_Scene08 {
 	fadescreen (FADE_FROM_BLACK)
-	clearflag (FLAG_SYS_SPAWN_INVISIBLE)
-	
 	applymovement (FAROFFSEAWEST_JAKSON, Common_Movement_Thinking)
 	delay (60)
 	speakername (CommonText_Jakson)
@@ -23,6 +22,8 @@ script Expansion1_Rival_Scene08 {
 	speakername (CommonText_Sakura)
 	msgbox ("Haha{EMOJI_TILDE} Don't worry, I'm an expert\n"
 			"at these things.")
+	applymovement (FAROFFSEAWEST_JAKSON, Common_Movement_QuestionMark)
+	delay (40)
 	speakername (CommonText_Jakson)
 	msgbox ("What, a demolitions expert?", MSGBOX_AUTOCLOSE)
 	applymovement (FAROFFSEAWEST_SAKURA, Common_Movement_Smile)
@@ -102,6 +103,7 @@ script Expansion1_Rival_Scene08 {
 	speakername (CommonText_Sakura)
 	msgbox ("FIRE IN THE HOLE!", MSGBOX_AUTOCLOSE)
 	
+	fadenewbgm (MUS_DP_FLAG_CAPTURED)
 	applymovement (FAROFFSEAWEST_FAKEPLAYER, Common_Movement_ExclamationMark)
 	playse (SE_PIN)
 	delay (10)
@@ -165,10 +167,11 @@ script Expansion1_Rival_Scene08 {
 	playse (SE_M_EARTHQUAKE)
 	waitse
 	fadescreenswapbuffers (FADE_FROM_WHITE)
-
+	
 	applymovement (LOCALID_PLAYER, Common_Movement_WalkDown3)
 	waitmovement (0)
 	delay (20)
+	fadeoutbgm (1)
 	applymovement (FAROFFSEAWEST_REDD, Common_Movement_Thinking)
 	applymovement (FAROFFSEAWEST_BARON, Common_Movement_Thinking)
 	applymovement (FAROFFSEAWEST_HARPER, Common_Movement_Thinking)
@@ -197,7 +200,7 @@ script Expansion1_Rival_Scene08 {
 	applymovement (FAROFFSEAWEST_HARPER, Common_Movement_ExclamationMark)
 	applymovement (FAROFFSEAWEST_FAKEPLAYER, Common_Movement_ExclamationMark)
 	playse (SE_PIN)
-	delay (60)
+	fadeinbgm (1)
 	setobjectxyperm (FAROFFSEAWEST_SAKURA, 50, 8)
 	setobjectmovementtype (FAROFFSEAWEST_SAKURA, MOVEMENT_TYPE_FACE_UP)
 	addobject (FAROFFSEAWEST_SAKURA)
@@ -272,5 +275,60 @@ script Expansion1_Rival_Scene08 {
 	applymovement (FAROFFSEAWEST_FAKEPLAYER, Common_Movement_SweatDrop)
 	playse (SE_M_METRONOME)
 	delay (40)
+	fadescreenswapbuffers (FADE_TO_BLACK)
+
+	warpcontinuescript (MAP_BYGONE_VAULT_2L1, 19, 9, Expansion1_Rival_Scene08b)
+}
+
+script Expansion1_Rival_Scene08b {
+	fadescreen (FADE_FROM_BLACK)
+	delay (60)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkLeft10)
+	delay (140)
 	fadescreen (FADE_TO_BLACK)
+	setflag (FLAG_SYS_SPAWN_INVISIBLE)
+	warpcontinuescript (MAP_BYGONE_VAULT_2R1, 10, 15, Expansion1_Rival_Scene08c)
+}
+
+script Expansion1_Rival_Scene08c {
+	fadescreen (FADE_FROM_BLACK)
+	delay (40)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkDiagNE8)
+	delay (110)
+	fadescreen (FADE_TO_BLACK)
+	setflag (FLAG_SYS_SPAWN_INVISIBLE)
+	warpcontinuescript (MAP_BYGONE_VAULT_R2, 8, 6, Expansion1_Rival_Scene08d)
+}
+
+script Expansion1_Rival_Scene08d {
+	fadescreen (FADE_FROM_BLACK)
+	delay (20)
+	applymovement (SPIRITOMB, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+	delay (20)
+	applymovement (SPIRITOMB, Common_Movement_WalkUpSlow2)
+	waitmovement (0)
+	special (DoMirageTowerCeilingCrumble)
+	delay (20)
+	applymovement (SPIRITOMB, Common_Movement_QuestionMark)
+	delay (40)
+	applymovement (SPIRITOMB, Common_Movement_WalkInPlaceLeft)
+	waitmovement (0)
+	delay (20)
+	applymovement (SPIRITOMB, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	setmetatile (11, 7, 0x06C, TRUE)
+	special (DrawWholeMapView)
+	playse (SE_LAVARIDGE_FALL_WARP)
+	waitse
+	applymovement (SPIRITOMB, Common_Movement_ExclamationMark)
+	playse (SE_PIN)
+	delay (40)
+	removeobject (SPIRITOMB)
+	playse (SE_FALL)
+	waitse
+	delay (20)
+	fadescreen (FADE_TO_BLACK)
+	setflag (FLAG_SYS_SPAWN_INVISIBLE)
+	warpcontinuescript (MAP_BYGONE_VAULT_2L1, 19, 9, Expansion1_Rival_Scene08b)
 }

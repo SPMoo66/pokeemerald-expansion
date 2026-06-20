@@ -65,9 +65,13 @@ mapscripts BygoneVault_R2_MapScripts {
 			setmetatile (6, 15, 0x001, FALSE)
 			setmetatile (6, 16, 0x01B, TRUE)
 		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 41) {
+			setmetatile (11, 7, 0x073, FALSE)
+		}
 	}
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag (FLAG_TEMP_8)
+		setflag (FLAG_TEMP_9)
 		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
 			setflag (FLAG_TEMP_1)
 		}
@@ -80,6 +84,9 @@ mapscripts BygoneVault_R2_MapScripts {
 		}
 		if (!flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_PUZZLE_COMPLETE) && flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
 			setobjectmovementtype (2, MOVEMENT_TYPE_FACE_RIGHT)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 41) {
+			clearflag (FLAG_TEMP_9)
 		}
 	}
 	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [

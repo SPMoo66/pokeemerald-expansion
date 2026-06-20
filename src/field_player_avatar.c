@@ -1165,9 +1165,12 @@ static void PlayerAvatarTransition_Surfing(struct ObjectEvent *objEvent)
     gFieldEffectArguments[0] = objEvent->currentCoords.x;
     gFieldEffectArguments[1] = objEvent->currentCoords.y;
     gFieldEffectArguments[2] = gPlayerAvatar.objectEventId;
-    spriteId = FieldEffectStart(FLDEFF_SURF_BLOB);
-    objEvent->fieldEffectSpriteId = spriteId;
-    SetSurfBlob_BobState(spriteId, BOB_PLAYER_AND_MON);
+    if (!FlagGet(FLAG_SYS_SPAWN_INVISIBLE))
+    {
+        spriteId = FieldEffectStart(FLDEFF_SURF_BLOB);
+        objEvent->fieldEffectSpriteId = spriteId;
+        SetSurfBlob_BobState(spriteId, BOB_PLAYER_AND_MON);
+    }
 }
 
 static void PlayerAvatarTransition_Underwater(struct ObjectEvent *objEvent)
@@ -1742,10 +1745,7 @@ void InitPlayerAvatar(s16 x, s16 y, enum Direction direction, enum Gender gender
     SetPlayerAvatarStateMask(PLAYER_AVATAR_FLAG_CONTROLLABLE | PLAYER_AVATAR_FLAG_ON_FOOT);
 
     if (FlagGet(FLAG_SYS_SPAWN_INVISIBLE))
-    {
         objectEvent->invisible = TRUE;
-        FlagClear(FLAG_SYS_SPAWN_INVISIBLE);
-    }
 
     CreateFollowerNPCAvatar();
 }

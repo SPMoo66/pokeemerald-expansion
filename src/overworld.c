@@ -2632,6 +2632,7 @@ static void InitObjectEventsLocal(void)
     player = GetInitialPlayerAvatarState();
     InitPlayerAvatar(x, y, player->direction, gSaveBlock2Ptr->playerGender);
     SetPlayerAvatarTransitionFlags(player->transitionFlags);
+    FlagClear(FLAG_SYS_SPAWN_INVISIBLE);
     ResetInitialPlayerAvatarState();
     TrySpawnObjectEvents(0, 0);
     FollowerNPC_HandleSprite();

@@ -108,159 +108,161 @@ FarOffSeaWest_MapScripts_MAP_SCRIPT_ON_TRANSITION_12:
 	setobjectxyperm 9, 55, 3
 # 47 "data/maps/FarOffSeaWest/scripts.pory"
 	setobjectmovementtype 9, MOVEMENT_TYPE_FACE_DOWN
+# 48 "data/maps/FarOffSeaWest/scripts.pory"
+	savebgm MUS_DP_AMITY_SQUARE
 	return
 
 
 FarOffSeaWest_Sakura_1::
-# 53 "data/maps/FarOffSeaWest/scripts.pory"
-	turnobject 9, DIR_SOUTH
 # 54 "data/maps/FarOffSeaWest/scripts.pory"
+	turnobject 9, DIR_SOUTH
+# 55 "data/maps/FarOffSeaWest/scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 40
 	goto_if_eq FarOffSeaWest_Sakura_1_2
 FarOffSeaWest_Sakura_1_1:
-# 57 "data/maps/FarOffSeaWest/scripts.pory"
+# 58 "data/maps/FarOffSeaWest/scripts.pory"
 	goto Sakura_Exp1_Town02
 	return
 
 FarOffSeaWest_Sakura_1_2:
-# 55 "data/maps/FarOffSeaWest/scripts.pory"
+# 56 "data/maps/FarOffSeaWest/scripts.pory"
 	goto Sakura_Exp1_Town04
 	goto FarOffSeaWest_Sakura_1_1
 
 
 FarOffSeaWest_Sakura_2::
-# 61 "data/maps/FarOffSeaWest/scripts.pory"
-	turnobject 9, DIR_EAST
 # 62 "data/maps/FarOffSeaWest/scripts.pory"
+	turnobject 9, DIR_EAST
+# 63 "data/maps/FarOffSeaWest/scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 40
 	goto_if_eq FarOffSeaWest_Sakura_2_2
 FarOffSeaWest_Sakura_2_1:
-# 65 "data/maps/FarOffSeaWest/scripts.pory"
+# 66 "data/maps/FarOffSeaWest/scripts.pory"
 	goto Sakura_Exp1_Town02
 	return
 
 FarOffSeaWest_Sakura_2_2:
-# 63 "data/maps/FarOffSeaWest/scripts.pory"
+# 64 "data/maps/FarOffSeaWest/scripts.pory"
 	goto Sakura_Exp1_Town04
 	goto FarOffSeaWest_Sakura_2_1
 
 
 FarOffSeaWest_EventScript_Selina::
-# 70 "data/maps/FarOffSeaWest/scripts.pory"
-	trainerbattle_single TRAINER_SELINA, FarOffSeaWest_EventScript_Selina_Text_0, FarOffSeaWest_EventScript_Selina_Text_1
 # 71 "data/maps/FarOffSeaWest/scripts.pory"
+	trainerbattle_single TRAINER_SELINA, FarOffSeaWest_EventScript_Selina_Text_0, FarOffSeaWest_EventScript_Selina_Text_1
+# 72 "data/maps/FarOffSeaWest/scripts.pory"
 	msgbox FarOffSeaWest_EventScript_Selina_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 FarOffSeaWest_EventScript_Cody::
-# 75 "data/maps/FarOffSeaWest/scripts.pory"
-	trainerbattle_single TRAINER_CODY, FarOffSeaWest_EventScript_Cody_Text_0, FarOffSeaWest_EventScript_Cody_Text_1
 # 76 "data/maps/FarOffSeaWest/scripts.pory"
+	trainerbattle_single TRAINER_CODY, FarOffSeaWest_EventScript_Cody_Text_0, FarOffSeaWest_EventScript_Cody_Text_1
+# 77 "data/maps/FarOffSeaWest/scripts.pory"
 	msgbox FarOffSeaWest_EventScript_Cody_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 FarOffSeaWest_EventScript_Darren::
-# 80 "data/maps/FarOffSeaWest/scripts.pory"
-	trainerbattle_single TRAINER_DARREN, FarOffSeaWest_EventScript_Darren_Text_0, FarOffSeaWest_EventScript_Darren_Text_1
 # 81 "data/maps/FarOffSeaWest/scripts.pory"
+	trainerbattle_single TRAINER_DARREN, FarOffSeaWest_EventScript_Darren_Text_0, FarOffSeaWest_EventScript_Darren_Text_1
+# 82 "data/maps/FarOffSeaWest/scripts.pory"
 	msgbox FarOffSeaWest_EventScript_Darren_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 FarOffSeaWest_EventScript_Jakob::
-# 85 "data/maps/FarOffSeaWest/scripts.pory"
-	trainerbattle_single TRAINER_JAKOB, FarOffSeaWest_EventScript_Jakob_Text_0, FarOffSeaWest_EventScript_Jakob_Text_1
 # 86 "data/maps/FarOffSeaWest/scripts.pory"
+	trainerbattle_single TRAINER_JAKOB, FarOffSeaWest_EventScript_Jakob_Text_0, FarOffSeaWest_EventScript_Jakob_Text_1
+# 87 "data/maps/FarOffSeaWest/scripts.pory"
 	msgbox FarOffSeaWest_EventScript_Jakob_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 FarOffSeaWest_EventScript_Milo::
-# 90 "data/maps/FarOffSeaWest/scripts.pory"
-	trainerbattle_single TRAINER_MILO, FarOffSeaWest_EventScript_Milo_Text_0, FarOffSeaWest_EventScript_Milo_Text_1
 # 91 "data/maps/FarOffSeaWest/scripts.pory"
+	trainerbattle_single TRAINER_MILO, FarOffSeaWest_EventScript_Milo_Text_0, FarOffSeaWest_EventScript_Milo_Text_1
+# 92 "data/maps/FarOffSeaWest/scripts.pory"
 	msgbox FarOffSeaWest_EventScript_Milo_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 FarOffSeaWest_EventScript_Mira::
-# 95 "data/maps/FarOffSeaWest/scripts.pory"
-	trainerbattle_single TRAINER_MIRA, FarOffSeaWest_EventScript_Mira_Text_0, FarOffSeaWest_EventScript_Mira_Text_1
 # 96 "data/maps/FarOffSeaWest/scripts.pory"
+	trainerbattle_single TRAINER_MIRA, FarOffSeaWest_EventScript_Mira_Text_0, FarOffSeaWest_EventScript_Mira_Text_1
+# 97 "data/maps/FarOffSeaWest/scripts.pory"
 	msgbox FarOffSeaWest_EventScript_Mira_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 FarOffSeaWest_EventScript_Selina_Text_0:
-# 70 "data/maps/FarOffSeaWest/scripts.pory"
+# 71 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "These beautiful waters are the perfect\nbackdrop for a battle!$"
 
 FarOffSeaWest_EventScript_Selina_Text_1:
-# 70 "data/maps/FarOffSeaWest/scripts.pory"
+# 71 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "Aww…$"
 
 FarOffSeaWest_EventScript_Selina_Text_2:
-# 71 "data/maps/FarOffSeaWest/scripts.pory"
+# 72 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "At least our battle looked pretty!$"
 
 FarOffSeaWest_EventScript_Cody_Text_0:
-# 75 "data/maps/FarOffSeaWest/scripts.pory"
+# 76 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "Let's cook up a great battle!$"
 
 FarOffSeaWest_EventScript_Cody_Text_1:
-# 75 "data/maps/FarOffSeaWest/scripts.pory"
+# 76 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "I'm burned!$"
 
 FarOffSeaWest_EventScript_Cody_Text_2:
-# 76 "data/maps/FarOffSeaWest/scripts.pory"
+# 77 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "These beaches are the perfect\nbackdrop for a barbecue.$"
 
 FarOffSeaWest_EventScript_Darren_Text_0:
-# 80 "data/maps/FarOffSeaWest/scripts.pory"
+# 81 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "Ahoy, trainer!$"
 
 FarOffSeaWest_EventScript_Darren_Text_1:
-# 80 "data/maps/FarOffSeaWest/scripts.pory"
+# 81 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "You've drowned me!$"
 
 FarOffSeaWest_EventScript_Darren_Text_2:
-# 81 "data/maps/FarOffSeaWest/scripts.pory"
+# 82 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "Enjoy your visit!$"
 
 FarOffSeaWest_EventScript_Jakob_Text_0:
-# 85 "data/maps/FarOffSeaWest/scripts.pory"
+# 86 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "Stop! It's time to battle!$"
 
 FarOffSeaWest_EventScript_Jakob_Text_1:
-# 85 "data/maps/FarOffSeaWest/scripts.pory"
+# 86 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "I'm going down!$"
 
 FarOffSeaWest_EventScript_Jakob_Text_2:
-# 86 "data/maps/FarOffSeaWest/scripts.pory"
+# 87 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "It's a struggle to stay afloat and\nbattle at the same time.$"
 
 FarOffSeaWest_EventScript_Milo_Text_0:
-# 90 "data/maps/FarOffSeaWest/scripts.pory"
+# 91 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "Go, Pokémon! Use Dive!$"
 
 FarOffSeaWest_EventScript_Milo_Text_1:
-# 90 "data/maps/FarOffSeaWest/scripts.pory"
+# 91 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "We've been sent to a watery grave!$"
 
 FarOffSeaWest_EventScript_Milo_Text_2:
-# 91 "data/maps/FarOffSeaWest/scripts.pory"
+# 92 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "Phew! I could barely hold my breath\nlong enough to cross over here!$"
 
 FarOffSeaWest_EventScript_Mira_Text_0:
-# 95 "data/maps/FarOffSeaWest/scripts.pory"
+# 96 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "If I win, let me on your Pokémon!$"
 
 FarOffSeaWest_EventScript_Mira_Text_1:
-# 95 "data/maps/FarOffSeaWest/scripts.pory"
+# 96 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "Aww, I'm tired…$"
 
 FarOffSeaWest_EventScript_Mira_Text_2:
-# 96 "data/maps/FarOffSeaWest/scripts.pory"
+# 97 "data/maps/FarOffSeaWest/scripts.pory"
 	.string "I sure hope there's a sandbar to rest\nat up ahead.$"

@@ -40,11 +40,12 @@ mapscripts FarOffSeaWest_MapScripts {
 		if (var(VAR_EMERALBODY_RIVAL_STATE) == 40) {
 			clearflag (FLAG_TEMP_1)
 		}
-		if (var(VAR_EMERALBODY_RIVAL_STATE) == 41) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 41) { // Scene08
 			clearflag (FLAG_TEMP_1)
 			clearflag (FLAG_TEMP_2)
 			setobjectxyperm (FAROFFSEAWEST_SAKURA, 55, 3)
 			setobjectmovementtype (FAROFFSEAWEST_SAKURA, MOVEMENT_TYPE_FACE_DOWN)
+			savebgm (MUS_DP_AMITY_SQUARE)
 		}
 	}
 }

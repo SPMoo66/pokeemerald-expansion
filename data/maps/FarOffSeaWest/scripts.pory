@@ -2,7 +2,7 @@ const FAROFFSEAWEST_SAKURA = 9
 
 mapscripts FarOffSeaWest_MapScripts {
 	MAP_SCRIPT_ON_LOAD {
-		if (!flag(FLAG_SHOW_FAR_OFF_SEA_WEST_BOATS)) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) != 41) {
 			setmetatile(54, 8, 0x07E, FALSE)
 			setmetatile(55, 8, 0x07E, FALSE)
 			setmetatile(56, 8, 0x07E, FALSE)
@@ -28,6 +28,7 @@ mapscripts FarOffSeaWest_MapScripts {
 	}
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag (FLAG_TEMP_1)
+		setflag (FLAG_TEMP_2)
 		if (var(VAR_EMERALBODY_RIVAL_STATE) < 23) {
 			setflag (FLAG_TEMP_6) // to hide the trainers
 		}
@@ -38,6 +39,12 @@ mapscripts FarOffSeaWest_MapScripts {
 		}
 		if (var(VAR_EMERALBODY_RIVAL_STATE) == 40) {
 			clearflag (FLAG_TEMP_1)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 41) {
+			clearflag (FLAG_TEMP_1)
+			clearflag (FLAG_TEMP_2)
+			setobjectxyperm (FAROFFSEAWEST_SAKURA, 55, 3)
+			setobjectmovementtype (FAROFFSEAWEST_SAKURA, MOVEMENT_TYPE_FACE_DOWN)
 		}
 	}
 }

@@ -242,8 +242,10 @@ Debug_EventScript_Script_6::
 	end
 
 Debug_EventScript_Script_7::
-	clearflag FLAG_BLOCK_PLAYER_ACTIONS
-	clearflag FLAG_PLAY_AS_FIRST_MON_IN_PARTY
+	setflag FLAG_SYS_SPAWN_INVISIBLE
+	setflag FLAG_HIDE_MAP_NAME_POPUP
+	setvar VAR_EMERALBODY_RIVAL_STATE, 41
+	warpcontinuescript MAP_FAR_OFF_SEA_WEST, 55, 5, Expansion1_Rival_Scene08
 	release
 	end
 

@@ -526,6 +526,17 @@ Common_Movement_WalkFastRight:
 	walk_fast_right
 	step_end
 	
+Common_Movement_WalkFastRight2:
+	walk_fast_right
+	walk_fast_right
+	step_end
+	
+Common_Movement_WalkFastRight3:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+	
 Common_Movement_WalkFastRight9:
 	walk_fast_right
 	walk_fast_right
@@ -556,6 +567,12 @@ Common_Movement_WalkFastLeft9:
 	walk_fast_left
 	step_end
 
+Common_Movement_SlideRight3:
+	slide_right
+	slide_right
+	slide_right
+	step_end
+
 Common_Movement_JumpInPlaceUp:
 	jump_in_place_up
 	step_end
@@ -576,8 +593,20 @@ Common_Movement_JumpUp:
 	jump_up
 	step_end
 
+Common_Movement_JumpLeft:
+	jump_left
+	step_end
+
+Common_Movement_JumpUp2:
+	jump_2_up
+	step_end
+
 Common_Movement_JumpDown2:
 	jump_2_down
+	step_end
+
+Common_Movement_JumpRight2:
+	jump_2_right
 	step_end
 
 Common_Movement_JumpLeft2:
@@ -683,4 +712,8 @@ Common_Movement_WalkRightFaster::
 
 Common_Movement_WalkLeftFaster::
 	walk_faster_left
+	step_end
+
+Common_Movement_WalkQuarterLeft::
+	quarter_step_left
 	step_end

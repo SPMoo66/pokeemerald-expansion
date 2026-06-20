@@ -25,7 +25,9 @@
 	# 38: Set after using key in SS Tidal Dungeon                                    v
 	# 39: Set after obtaining dynamite                                               -
 	# 40: Set after Scene07 is complete                                           Town04
-	# 41: tbd
+	# 41: Set in preparation for Scene08
+	# 42: Set after Scene08
+	# 43: tbd
 
 script EventScript_JaksonExpansion1Call {
 	lockall
@@ -121,6 +123,11 @@ script Jakson_Exp1_Town03 {
 script Sakura_Exp1_Town04 {
 	speakername (CommonText_Sakura)
 	msgbox(Exp1_Town04_SakuraText, MSGBOX_NPC)
+	setflag (FLAG_SYS_SPAWN_INVISIBLE)
+	setflag (FLAG_HIDE_MAP_NAME_POPUP)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 41)
+	fadescreen (FADE_TO_BLACK)
+	warpcontinuescript (MAP_FAR_OFF_SEA_WEST, 55, 5, Expansion1_Rival_Scene08)
 }
 
 script Harper_Exp1_Town04 {

@@ -199,3 +199,15 @@ BygoneVault_2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_7:
 	applymovement LOCALID_CAMERA, Common_Movement_WalkLeft3
 	goto BygoneVault_2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_5
 
+
+BygoneVault_2_Sign::
+# 93 "data/maps/BygoneVault_2/scripts.pory"
+	msgbox BygoneVault_2_Sign_Text_0, MSGBOX_SIGN
+	return
+
+
+BygoneVault_2_Sign_Text_0:
+# 93 "data/maps/BygoneVault_2/scripts.pory"
+	.string "The drought persisted\n"
+	.string "Our prayers went unanswered\l"
+	.string "Calamity reigned$"

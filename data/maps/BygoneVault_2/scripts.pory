@@ -88,3 +88,9 @@ mapscripts BygoneVault_2_MapScripts {
 		}
 	]
 }
+
+script BygoneVault_2_Sign {
+	msgbox ("The drought persisted\n"
+			"Our prayers went unanswered\l"
+			"Calamity reigned", MSGBOX_SIGN)
+}

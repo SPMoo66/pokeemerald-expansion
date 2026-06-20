@@ -1165,12 +1165,11 @@ static void PlayerAvatarTransition_Surfing(struct ObjectEvent *objEvent)
     gFieldEffectArguments[0] = objEvent->currentCoords.x;
     gFieldEffectArguments[1] = objEvent->currentCoords.y;
     gFieldEffectArguments[2] = gPlayerAvatar.objectEventId;
-    if (!FlagGet(FLAG_SYS_SPAWN_INVISIBLE))
-    {
-        spriteId = FieldEffectStart(FLDEFF_SURF_BLOB);
-        objEvent->fieldEffectSpriteId = spriteId;
-        SetSurfBlob_BobState(spriteId, BOB_PLAYER_AND_MON);
-    }
+    spriteId = FieldEffectStart(FLDEFF_SURF_BLOB);
+    objEvent->fieldEffectSpriteId = spriteId;
+    SetSurfBlob_BobState(spriteId, BOB_PLAYER_AND_MON);
+    if (FlagGet(FLAG_SYS_SPAWN_INVISIBLE))
+        gSprites[gObjectEvents[gPlayerAvatar.objectEventId].fieldEffectSpriteId].invisible = TRUE;
 }
 
 static void PlayerAvatarTransition_Underwater(struct ObjectEvent *objEvent)

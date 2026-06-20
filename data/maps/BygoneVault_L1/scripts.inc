@@ -55,9 +55,9 @@ BygoneVault_L1_Sign::
 
 
 BygoneVault_L1_ItemBall::
-# 29 "data/maps/BygoneVault_L1/scripts.pory"
-	setflag FLAG_ITEM_BYGONE_VAULT_L1_ITEM
 # 30 "data/maps/BygoneVault_L1/scripts.pory"
+	setflag FLAG_ITEM_BYGONE_VAULT_L1_ITEM
+# 31 "data/maps/BygoneVault_L1/scripts.pory"
 	call Common_EventScript_FindItem
 	return
 
@@ -68,4 +68,5 @@ HopDownLedge_Text_0:
 
 BygoneVault_L1_Sign_Text_0:
 # 25 "data/maps/BygoneVault_L1/scripts.pory"
-	.string "When the water has gone,\nthe water will appear.$"
+	.string "When the water has gone,\n"
+	.string "the water will appear.$"

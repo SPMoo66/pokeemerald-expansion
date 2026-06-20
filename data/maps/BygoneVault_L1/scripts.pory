@@ -22,7 +22,8 @@ script HopDownLedge {
 }
 
 script BygoneVault_L1_Sign {
-	msgbox ("When the water has gone,\nthe water will appear.", MSGBOX_SIGN)
+	msgbox ("When the water has gone,\n"
+			"the water will appear.", MSGBOX_SIGN)
 }
 
 script BygoneVault_L1_ItemBall {

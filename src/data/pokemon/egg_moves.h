@@ -5266,6 +5266,7 @@ static const u16 sChespinEggMoveLearnset[] = {
     MOVE_DEFENSE_CURL,
     MOVE_ROLLOUT,
     MOVE_POWER_UP_PUNCH,
+    MOVE_IRON_DEFENSE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CHESPIN

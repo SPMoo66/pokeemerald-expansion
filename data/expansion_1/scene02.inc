@@ -664,7 +664,7 @@ Expansion1_Rival_Scene02_Text_3:
 
 Expansion1_Rival_Scene02_Text_4:
 # 85 "data/expansion_1/scene02.pory"
-	.string "… {PAUSE 30}… {PAUSE 30}…\n"
+	.string "… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
 	.string "… {PAUSE 30}… {PAUSE 30}…\l"
 	.string "… {PAUSE 30}… {PAUSE 30}…\l"
 	.string "Ah, {PAUSE 30}well there's Baron too.$"

@@ -34,7 +34,7 @@ Expansion1_Follower_Harper2_2:
 Expansion1_Follower_Harper1_Text_0:
 # 4 "data/expansion_1/follower_npc.pory"
 	.string "I'll admit it's an interesting little\n"
-	.string "dungeon we have here… thankfully\l"
+	.string "dungeon we have here… {PAUSE 100}thankfully\l"
 	.string "a bit linear too. We can just keep\l"
 	.string "moving forward.$"
 
@@ -50,6 +50,6 @@ Expansion1_Follower_Harper2_Text_0:
 
 Expansion1_Follower_Harper2_Text_1:
 # 24 "data/expansion_1/follower_npc.pory"
-	.string "A key… a key…\p"
+	.string "A key… {PAUSE 100}a key…\p"
 	.string "Do you remember there being any\n"
 	.string "locked rooms, {PLAYER}?$"

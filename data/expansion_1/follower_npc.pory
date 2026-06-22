@@ -2,7 +2,7 @@ script Expansion1_Follower_Harper1 {
 	faceplayer
 	speakername (CommonText_Harper)
 	msgbox ("I'll admit it's an interesting little\n"
-			"dungeon we have here… thankfully\l"
+			"dungeon we have here… {PAUSE 100}thankfully\l"
 			"a bit linear too. We can just keep\l"
 			"moving forward.", MSGBOX_AUTOCLOSE)
 	release
@@ -21,7 +21,7 @@ script Expansion1_Follower_Harper2 {
 				"the first few rooms we come across?", MSGBOX_AUTOCLOSE)
 	}
 	else {
-		msgbox ("A key… a key…\p"
+		msgbox ("A key… {PAUSE 100}a key…\p"
 				"Do you remember there being any\n"
 				"locked rooms, {PLAYER}?", MSGBOX_AUTOCLOSE)
 	}

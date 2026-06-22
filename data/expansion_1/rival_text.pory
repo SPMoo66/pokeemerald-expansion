@@ -7,6 +7,7 @@
 #	But … in sequence get {PAUSE 60}	Ex. "… {PAUSE 60}… {PAUSE 60}…"
 #	If there are a lot of them, use {PAUSE 30}s
 # Other pauses are subjective but keep to 30, 60, 100
+# Don't use any pauses directly before \l or \p
 
 #Call1
 text Call1_JaksonText {

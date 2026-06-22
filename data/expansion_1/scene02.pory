@@ -82,7 +82,7 @@ script Expansion1_Rival_Scene02 {
 	delay (70)
 	applymovement (MAUVECAMP_BARON, Common_Movement_SweatDrop)
 	speakername (CommonText_Jakson)
-	msgbox ("… {PAUSE 30}… {PAUSE 30}…\n"
+	msgbox ("… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
 			"… {PAUSE 30}… {PAUSE 30}…\l"
 			"… {PAUSE 30}… {PAUSE 30}…\l"
 			"Ah, {PAUSE 30}well there's Baron too.", MSGBOX_AUTOCLOSE)

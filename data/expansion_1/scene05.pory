@@ -24,7 +24,7 @@ script Expansion1_Rival_Scene05 {
 	setobjectxyperm (MAUVECAMP_SAKURA, 23, 11)
 	setobjectxyperm (MAUVECAMP_REDD, 22, 12)
 	setobjectxyperm (MAUVECAMP_HARPER, 11, 12)
-	#setobjectmovementtype (MAUVECAMP_JAKSON, MOVEMENT_TYPE_FACE_RIGHT)
+	setobjectmovementtype (MAUVECAMP_JAKSON, MOVEMENT_TYPE_FACE_RIGHT)
 	setobjectmovementtype (MAUVECAMP_REDD, MOVEMENT_TYPE_FACE_LEFT)
 	setobjectmovementtype (MAUVECAMP_SAKURA, MOVEMENT_TYPE_FACE_UP)
 	setobjectmovementtype (MAUVECAMP_BARON, MOVEMENT_TYPE_FACE_UP)
@@ -73,7 +73,7 @@ script Expansion1_Rival_Scene05 {
 	msgbox ("Jakson.", MSGBOX_AUTOCLOSE)
 	delay (20)
 	speakername (CommonText_Jakson)
-	msgbox ("Y- Yes?", MSGBOX_AUTOCLOSE)
+	msgbox ("Y- {PAUSE 30}Yes?", MSGBOX_AUTOCLOSE)
 	fadescreenswapbuffers (FADE_TO_BLACK)
 	playse (SE_M_MEGA_KICK)
 	waitse
@@ -86,15 +86,15 @@ script Expansion1_Rival_Scene05 {
 	fadescreenswapbuffers (FADE_FROM_BLACK)
 	msgbox ("Harper moves swiftly, beyond what one\n"
 			"may even think possible in the engine.\p"
-			"Her fingers pinch. Hard.\n"
+			"Her fingers pinch. {PAUSE 60}Hard.{PAUSE 60}\n"
 			"And Jakson's ear is in her grasp.", MSGBOX_AUTOCLOSE)
 	speakername (CommonText_Jakson)
-	msgbox ("O- O- OW!!!", MSGBOX_AUTOCLOSE)
+	msgbox ("O- {PAUSE 30}O- {PAUSE 30}OW!!!", MSGBOX_AUTOCLOSE)
 	speakername (CommonText_Harper)
 	msgbox ("Do I need to treat you like a child?!\n"
 			"I was in there for hours!")
 	speakername (CommonText_Jakson)
-	msgbox ("W- We were working on it!")
+	msgbox ("W- {PAUSE 30}We were working on it!")
 	speakername (CommonText_Harper)
 	msgbox ("You didn't reply to my messages!", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_REDD, Common_Movement_QuestionMark)
@@ -107,7 +107,7 @@ script Expansion1_Rival_Scene05 {
 	speakername (CommonText_Harper)
 	msgbox ("In ENCORE!!!")
 	speakername (CommonText_Jakson)
-	msgbox ("…shit.", MSGBOX_AUTOCLOSE)
+	msgbox ("…{PAUSE 100}shit.", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_HARPER, Common_Movement_XMark)
 	playse (SE_THUNDER)
 	delay (80)
@@ -118,7 +118,7 @@ script Expansion1_Rival_Scene05 {
 	call (GetBaronsName)
 	msgbox ("ENCORE?")
 	speakername (CommonText_Jakson)
-	msgbox ("I… have… notifications turned off\n"
+	msgbox ("I… {PAUSE 100}have… {PAUSE 100}notifications turned off\n"
 			"in that app when I play.", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_BARON, Common_Movement_WalkInPlaceFasterLeft)
 	applymovement (MAUVECAMP_HARPER, Common_Movement_XMark)
@@ -127,7 +127,7 @@ script Expansion1_Rival_Scene05 {
 	applymovement (MAUVECAMP_SAKURA, Common_Movement_WalkInPlaceDown)
 	delay (40)
 	speakername (CommonText_Jakson)
-	msgbox ("O- O- OW!!! We all play together,\n"
+	msgbox ("O- {PAUSE 30}O- {PAUSE 30}OW!!! We all play together,\n"
 			"we don't need a messaging app!", MSGBOX_AUTOCLOSE)
 	speakername (CommonText_Redd)
 	msgbox ("I'm guessing she'd disagree right\n"
@@ -158,8 +158,8 @@ script Expansion1_Rival_Scene05 {
 	speakername (CommonText_Sakura)
 	msgbox ("Ain't that the truth?")
 	speakername (CommonText_Harper)
-	msgbox ("… … …\n"
-			"… … …\l"
+	msgbox ("… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
+			"… {PAUSE 30}… {PAUSE 30}…\l"
 			"Okay, what's the situation?")
 	speakername (CommonText_Redd)
 	msgbox ("So quick to move on!", MSGBOX_AUTOCLOSE)
@@ -170,6 +170,7 @@ script Expansion1_Rival_Scene05 {
 
 script Expansion1_Rival_Scene05b {
 	turnobject (LOCALID_PLAYER, DIR_WEST)
+	removeobject (MAUVECAMP_JAKSON)
 	setobjectxyperm (MAUVECAMP_JAKSON, 20, 13)
 	setobjectxyperm (MAUVECAMP_BARON, 19, 15)
 	setobjectxyperm (MAUVECAMP_SAKURA, 21, 14)
@@ -189,7 +190,7 @@ script Expansion1_Rival_Scene05b {
 	applymovement (MAUVECAMP_JAKSON, Common_Movement_Talking)
 	delay (80)
 	speakername (CommonText_Jakson)
-	msgbox ("…and that's my running theory. Mods\n"
+	msgbox ("…{PAUSE 100}and that's my running theory. Mods\n"
 			"aren't playing nice with each other.", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_HARPER, Common_Movement_Thinking)
 	delay (60)
@@ -208,13 +209,13 @@ script Expansion1_Rival_Scene05b {
 	msgbox ("It'd fit, maybe? Not like anything else\n"
 			"has been outright broken since then.")
 	speakername (CommonText_Harper)
-	msgbox ("Hmm… what else did I see on those\n"
+	msgbox ("Hmm… {PAUSE 100}what else did I see on those\n"
 			"forums…?")
 	speakername (CommonText_Sakura)
 	msgbox ("Well, we'll find out if it even matters\n"
 			"if we keep moving forwards.\p"
 			"And your very own Sakura has some\n"
-			"good news on that front{EMOJI_TILDE}{UNK_SPACER}")
+			"good news {PAUSE 30}on {PAUSE 30}that {PAUSE 30}front{EMOJI_TILDE}{UNK_SPACER}")
 	speakername (CommonText_Redd)
 	msgbox ("You found a way to move the Pokémon\n"
 			"blockade down South?")
@@ -242,13 +243,13 @@ script Expansion1_Rival_Scene05b {
 			"shit up at a cave entrance, and then\l"
 			"we can swoop in to save Harper!")
 	speakername (CommonText_Harper)
-	msgbox ("…I'm right here.")
+	msgbox ("…{PAUSE 100}I'm right here.")
 	speakername (CommonText_Sakura)
-	msgbox ("Ah. Right. Need to refactor the pitch.\p"
-			"We can… blow things up.\n"
+	msgbox ("Ah. {PAUSE 30}Right. {PAUSE 30}Need to refactor the pitch.\p"
+			"We can… {PAUSE 100}blow things up.\n"
 			"Boom.")
 	call (GetBaronsName)
-	msgbox ("How… eloquent.", MSGBOX_AUTOCLOSE)
+	msgbox ("How… {PAUSE 100}eloquent.", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_SAKURA, Common_Movement_Smile)
 	playse (SE_M_MORNING_SUN)
 	delay (40)
@@ -256,14 +257,14 @@ script Expansion1_Rival_Scene05b {
 	msgbox ("I know, right?", MSGBOX_AUTOCLOSE)
 	speakername (CommonText_Redd)
 	msgbox ("Knowing Pokémon, it probably is a place\n"
-			"we need to go. Maybe rock smash? You\l"
+			"we need to go. Maybe Rock Smash? You\l"
 			"said it was at a cave entrance?")
 	speakername (CommonText_Jakson)
 	msgbox ("Would post game content be designed\n"
-			"to block the player with rock smash?\l"
-			"This is the flash situation again.")
+			"to block the player with Rock Smash?\l"
+			"This is the Flash situation again.")
 	speakername (CommonText_Sakura)
-	msgbox ("Boom?\n"
+	msgbox ("Boom?{PAUSE 60}\n"
 			"Boom.")
 	speakername (CommonText_Redd)
 	msgbox ("The one other place we haven't been\n"
@@ -271,7 +272,7 @@ script Expansion1_Rival_Scene05b {
 	speakername (CommonText_Jakson)
 	msgbox ("Yeah, we'll probably find some explosive\n"
 			"key item in the ship.\p"
-			"Or… shipwreck, I guess.")
+			"Or… {PAUSE 100}shipwreck, I guess.")
 	speakername (CommonText_Redd)
 	msgbox ("Sounds like a plan to me!")
 	speakername (CommonText_Harper)

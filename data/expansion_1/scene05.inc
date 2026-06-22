@@ -29,6 +29,8 @@ Expansion1_Rival_Scene05::
 	setobjectxyperm 10, 22, 12
 # 26 "data/expansion_1/scene05.pory"
 	setobjectxyperm 11, 11, 12
+# 27 "data/expansion_1/scene05.pory"
+	setobjectmovementtype 6, MOVEMENT_TYPE_FACE_RIGHT
 # 28 "data/expansion_1/scene05.pory"
 	setobjectmovementtype 10, MOVEMENT_TYPE_FACE_LEFT
 # 29 "data/expansion_1/scene05.pory"
@@ -288,158 +290,160 @@ Expansion1_Rival_Scene05b::
 # 172 "data/expansion_1/scene05.pory"
 	turnobject LOCALID_PLAYER, DIR_WEST
 # 173 "data/expansion_1/scene05.pory"
-	setobjectxyperm 6, 20, 13
+	removeobject 6
 # 174 "data/expansion_1/scene05.pory"
-	setobjectxyperm 7, 19, 15
+	setobjectxyperm 6, 20, 13
 # 175 "data/expansion_1/scene05.pory"
-	setobjectxyperm 8, 21, 14
+	setobjectxyperm 7, 19, 15
 # 176 "data/expansion_1/scene05.pory"
-	setobjectxyperm 10, 19, 14
+	setobjectxyperm 8, 21, 14
 # 177 "data/expansion_1/scene05.pory"
-	setobjectxyperm 11, 20, 16
+	setobjectxyperm 10, 19, 14
 # 178 "data/expansion_1/scene05.pory"
-	setobjectmovementtype 6, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 11, 20, 16
 # 179 "data/expansion_1/scene05.pory"
+	setobjectmovementtype 6, MOVEMENT_TYPE_FACE_DOWN
+# 180 "data/expansion_1/scene05.pory"
 	setobjectmovementtype 7, MOVEMENT_TYPE_FACE_RIGHT
-# 181 "data/expansion_1/scene05.pory"
-	setobjectmovementtype 10, MOVEMENT_TYPE_FACE_RIGHT
 # 182 "data/expansion_1/scene05.pory"
-	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype 10, MOVEMENT_TYPE_FACE_RIGHT
 # 183 "data/expansion_1/scene05.pory"
-	addobject 6
+	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_UP
 # 184 "data/expansion_1/scene05.pory"
-	addobject 7
+	addobject 6
 # 185 "data/expansion_1/scene05.pory"
-	addobject 8
+	addobject 7
 # 186 "data/expansion_1/scene05.pory"
-	addobject 10
+	addobject 8
 # 187 "data/expansion_1/scene05.pory"
-	addobject 11
+	addobject 10
 # 188 "data/expansion_1/scene05.pory"
-	fadescreen FADE_FROM_BLACK
+	addobject 11
 # 189 "data/expansion_1/scene05.pory"
-	applymovement 6, Common_Movement_Talking
+	fadescreen FADE_FROM_BLACK
 # 190 "data/expansion_1/scene05.pory"
-	delay 80
+	applymovement 6, Common_Movement_Talking
 # 191 "data/expansion_1/scene05.pory"
-	speakername CommonText_Jakson
+	delay 80
 # 192 "data/expansion_1/scene05.pory"
+	speakername CommonText_Jakson
+# 193 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_0, MSGBOX_AUTOCLOSE
-# 194 "data/expansion_1/scene05.pory"
-	applymovement 11, Common_Movement_Thinking
 # 195 "data/expansion_1/scene05.pory"
-	delay 60
+	applymovement 11, Common_Movement_Thinking
 # 196 "data/expansion_1/scene05.pory"
-	speakername CommonText_Harper
+	delay 60
 # 197 "data/expansion_1/scene05.pory"
+	speakername CommonText_Harper
+# 198 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_1
-# 199 "data/expansion_1/scene05.pory"
-	speakername CommonText_Redd
 # 200 "data/expansion_1/scene05.pory"
-	msgbox Expansion1_Rival_Scene05b_Text_2
+	speakername CommonText_Redd
 # 201 "data/expansion_1/scene05.pory"
-	speakername CommonText_Harper
+	msgbox Expansion1_Rival_Scene05b_Text_2
 # 202 "data/expansion_1/scene05.pory"
+	speakername CommonText_Harper
+# 203 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_3
-# 204 "data/expansion_1/scene05.pory"
-	call GetBaronsName
 # 205 "data/expansion_1/scene05.pory"
+	call GetBaronsName
+# 206 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_4
-# 207 "data/expansion_1/scene05.pory"
-	speakername CommonText_Jakson
 # 208 "data/expansion_1/scene05.pory"
+	speakername CommonText_Jakson
+# 209 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_5
-# 210 "data/expansion_1/scene05.pory"
-	speakername CommonText_Harper
 # 211 "data/expansion_1/scene05.pory"
+	speakername CommonText_Harper
+# 212 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_6
-# 213 "data/expansion_1/scene05.pory"
-	speakername CommonText_Sakura
 # 214 "data/expansion_1/scene05.pory"
+	speakername CommonText_Sakura
+# 215 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_7
-# 218 "data/expansion_1/scene05.pory"
-	speakername CommonText_Redd
 # 219 "data/expansion_1/scene05.pory"
+	speakername CommonText_Redd
+# 220 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_8
-# 221 "data/expansion_1/scene05.pory"
-	speakername CommonText_Jakson
 # 222 "data/expansion_1/scene05.pory"
+	speakername CommonText_Jakson
+# 223 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_9, MSGBOX_AUTOCLOSE
-# 232 "data/expansion_1/scene05.pory"
-	applymovement 8, Common_Movement_MusicNote
 # 233 "data/expansion_1/scene05.pory"
-	playse SE_RG_HELP_OPEN
+	applymovement 8, Common_Movement_MusicNote
 # 234 "data/expansion_1/scene05.pory"
-	delay 40
+	playse SE_RG_HELP_OPEN
 # 235 "data/expansion_1/scene05.pory"
-	speakername CommonText_Sakura
-# 236 "data/expansion_1/scene05.pory"
-	msgbox Expansion1_Rival_Scene05b_Text_10
-# 238 "data/expansion_1/scene05.pory"
-	call GetBaronsName
-# 239 "data/expansion_1/scene05.pory"
-	msgbox Expansion1_Rival_Scene05b_Text_11
-# 240 "data/expansion_1/scene05.pory"
-	speakername CommonText_Sakura
-# 241 "data/expansion_1/scene05.pory"
-	msgbox Expansion1_Rival_Scene05b_Text_12
-# 244 "data/expansion_1/scene05.pory"
-	speakername CommonText_Harper
-# 245 "data/expansion_1/scene05.pory"
-	msgbox Expansion1_Rival_Scene05b_Text_13
-# 246 "data/expansion_1/scene05.pory"
-	speakername CommonText_Sakura
-# 247 "data/expansion_1/scene05.pory"
-	msgbox Expansion1_Rival_Scene05b_Text_14
-# 250 "data/expansion_1/scene05.pory"
-	call GetBaronsName
-# 251 "data/expansion_1/scene05.pory"
-	msgbox Expansion1_Rival_Scene05b_Text_15, MSGBOX_AUTOCLOSE
-# 252 "data/expansion_1/scene05.pory"
-	applymovement 8, Common_Movement_Smile
-# 253 "data/expansion_1/scene05.pory"
-	playse SE_M_MORNING_SUN
-# 254 "data/expansion_1/scene05.pory"
 	delay 40
-# 255 "data/expansion_1/scene05.pory"
+# 236 "data/expansion_1/scene05.pory"
 	speakername CommonText_Sakura
-# 256 "data/expansion_1/scene05.pory"
-	msgbox Expansion1_Rival_Scene05b_Text_16, MSGBOX_AUTOCLOSE
-# 257 "data/expansion_1/scene05.pory"
-	speakername CommonText_Redd
-# 258 "data/expansion_1/scene05.pory"
-	msgbox Expansion1_Rival_Scene05b_Text_17
-# 261 "data/expansion_1/scene05.pory"
-	speakername CommonText_Jakson
-# 262 "data/expansion_1/scene05.pory"
-	msgbox Expansion1_Rival_Scene05b_Text_18
-# 265 "data/expansion_1/scene05.pory"
+# 237 "data/expansion_1/scene05.pory"
+	msgbox Expansion1_Rival_Scene05b_Text_10
+# 239 "data/expansion_1/scene05.pory"
+	call GetBaronsName
+# 240 "data/expansion_1/scene05.pory"
+	msgbox Expansion1_Rival_Scene05b_Text_11
+# 241 "data/expansion_1/scene05.pory"
 	speakername CommonText_Sakura
-# 266 "data/expansion_1/scene05.pory"
-	msgbox Expansion1_Rival_Scene05b_Text_19
-# 268 "data/expansion_1/scene05.pory"
-	speakername CommonText_Redd
-# 269 "data/expansion_1/scene05.pory"
-	msgbox Expansion1_Rival_Scene05b_Text_20
-# 271 "data/expansion_1/scene05.pory"
-	speakername CommonText_Jakson
-# 272 "data/expansion_1/scene05.pory"
-	msgbox Expansion1_Rival_Scene05b_Text_21
-# 275 "data/expansion_1/scene05.pory"
-	speakername CommonText_Redd
-# 276 "data/expansion_1/scene05.pory"
-	msgbox Expansion1_Rival_Scene05b_Text_22
-# 277 "data/expansion_1/scene05.pory"
+# 242 "data/expansion_1/scene05.pory"
+	msgbox Expansion1_Rival_Scene05b_Text_12
+# 245 "data/expansion_1/scene05.pory"
 	speakername CommonText_Harper
+# 246 "data/expansion_1/scene05.pory"
+	msgbox Expansion1_Rival_Scene05b_Text_13
+# 247 "data/expansion_1/scene05.pory"
+	speakername CommonText_Sakura
+# 248 "data/expansion_1/scene05.pory"
+	msgbox Expansion1_Rival_Scene05b_Text_14
+# 251 "data/expansion_1/scene05.pory"
+	call GetBaronsName
+# 252 "data/expansion_1/scene05.pory"
+	msgbox Expansion1_Rival_Scene05b_Text_15, MSGBOX_AUTOCLOSE
+# 253 "data/expansion_1/scene05.pory"
+	applymovement 8, Common_Movement_Smile
+# 254 "data/expansion_1/scene05.pory"
+	playse SE_M_MORNING_SUN
+# 255 "data/expansion_1/scene05.pory"
+	delay 40
+# 256 "data/expansion_1/scene05.pory"
+	speakername CommonText_Sakura
+# 257 "data/expansion_1/scene05.pory"
+	msgbox Expansion1_Rival_Scene05b_Text_16, MSGBOX_AUTOCLOSE
+# 258 "data/expansion_1/scene05.pory"
+	speakername CommonText_Redd
+# 259 "data/expansion_1/scene05.pory"
+	msgbox Expansion1_Rival_Scene05b_Text_17
+# 262 "data/expansion_1/scene05.pory"
+	speakername CommonText_Jakson
+# 263 "data/expansion_1/scene05.pory"
+	msgbox Expansion1_Rival_Scene05b_Text_18
+# 266 "data/expansion_1/scene05.pory"
+	speakername CommonText_Sakura
+# 267 "data/expansion_1/scene05.pory"
+	msgbox Expansion1_Rival_Scene05b_Text_19
+# 269 "data/expansion_1/scene05.pory"
+	speakername CommonText_Redd
+# 270 "data/expansion_1/scene05.pory"
+	msgbox Expansion1_Rival_Scene05b_Text_20
+# 272 "data/expansion_1/scene05.pory"
+	speakername CommonText_Jakson
+# 273 "data/expansion_1/scene05.pory"
+	msgbox Expansion1_Rival_Scene05b_Text_21
+# 276 "data/expansion_1/scene05.pory"
+	speakername CommonText_Redd
+# 277 "data/expansion_1/scene05.pory"
+	msgbox Expansion1_Rival_Scene05b_Text_22
 # 278 "data/expansion_1/scene05.pory"
+	speakername CommonText_Harper
+# 279 "data/expansion_1/scene05.pory"
 	msgbox Expansion1_Rival_Scene05b_Text_23, MSGBOX_AUTOCLOSE
-# 280 "data/expansion_1/scene05.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 33
 # 281 "data/expansion_1/scene05.pory"
-	savebgm MUS_DP_CREDITS
+	setvar VAR_EMERALBODY_RIVAL_STATE, 33
 # 282 "data/expansion_1/scene05.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	savebgm MUS_DP_CREDITS
 # 283 "data/expansion_1/scene05.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 284 "data/expansion_1/scene05.pory"
 	warpcontinuescript MAP_MAUVE_CAMP, 16, 16, Expansion1_Rival_Scene02e
 	return
 
@@ -462,18 +466,18 @@ Expansion1_Rival_Scene05_Text_3:
 
 Expansion1_Rival_Scene05_Text_4:
 # 76 "data/expansion_1/scene05.pory"
-	.string "Y- Yes?$"
+	.string "Y- {PAUSE 30}Yes?$"
 
 Expansion1_Rival_Scene05_Text_5:
 # 87 "data/expansion_1/scene05.pory"
 	.string "Harper moves swiftly, beyond what one\n"
 	.string "may even think possible in the engine.\p"
-	.string "Her fingers pinch. Hard.\n"
+	.string "Her fingers pinch. {PAUSE 60}Hard.{PAUSE 60}\n"
 	.string "And Jakson's ear is in her grasp.$"
 
 Expansion1_Rival_Scene05_Text_6:
 # 92 "data/expansion_1/scene05.pory"
-	.string "O- O- OW!!!$"
+	.string "O- {PAUSE 30}O- {PAUSE 30}OW!!!$"
 
 Expansion1_Rival_Scene05_Text_7:
 # 94 "data/expansion_1/scene05.pory"
@@ -482,7 +486,7 @@ Expansion1_Rival_Scene05_Text_7:
 
 Expansion1_Rival_Scene05_Text_8:
 # 97 "data/expansion_1/scene05.pory"
-	.string "W- We were working on it!$"
+	.string "W- {PAUSE 30}We were working on it!$"
 
 Expansion1_Rival_Scene05_Text_9:
 # 99 "data/expansion_1/scene05.pory"
@@ -498,7 +502,7 @@ Expansion1_Rival_Scene05_Text_11:
 
 Expansion1_Rival_Scene05_Text_12:
 # 110 "data/expansion_1/scene05.pory"
-	.string "…shit.$"
+	.string "…{PAUSE 100}shit.$"
 
 Expansion1_Rival_Scene05_Text_13:
 # 119 "data/expansion_1/scene05.pory"
@@ -506,12 +510,12 @@ Expansion1_Rival_Scene05_Text_13:
 
 Expansion1_Rival_Scene05_Text_14:
 # 121 "data/expansion_1/scene05.pory"
-	.string "I… have… notifications turned off\n"
+	.string "I… {PAUSE 100}have… {PAUSE 100}notifications turned off\n"
 	.string "in that app when I play.$"
 
 Expansion1_Rival_Scene05_Text_15:
 # 130 "data/expansion_1/scene05.pory"
-	.string "O- O- OW!!! We all play together,\n"
+	.string "O- {PAUSE 30}O- {PAUSE 30}OW!!! We all play together,\n"
 	.string "we don't need a messaging app!$"
 
 Expansion1_Rival_Scene05_Text_16:
@@ -549,8 +553,8 @@ Expansion1_Rival_Scene05_Text_22:
 
 Expansion1_Rival_Scene05_Text_23:
 # 161 "data/expansion_1/scene05.pory"
-	.string "… … …\n"
-	.string "… … …\l"
+	.string "… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
+	.string "… {PAUSE 30}… {PAUSE 30}…\l"
 	.string "Okay, what's the situation?$"
 
 Expansion1_Rival_Scene05_Text_24:
@@ -558,53 +562,53 @@ Expansion1_Rival_Scene05_Text_24:
 	.string "So quick to move on!$"
 
 Expansion1_Rival_Scene05b_Text_0:
-# 192 "data/expansion_1/scene05.pory"
-	.string "…and that's my running theory. Mods\n"
+# 193 "data/expansion_1/scene05.pory"
+	.string "…{PAUSE 100}and that's my running theory. Mods\n"
 	.string "aren't playing nice with each other.$"
 
 Expansion1_Rival_Scene05b_Text_1:
-# 197 "data/expansion_1/scene05.pory"
+# 198 "data/expansion_1/scene05.pory"
 	.string "I was looking up some mods the other\n"
 	.string "day and I did notice all sorts.$"
 
 Expansion1_Rival_Scene05b_Text_2:
-# 200 "data/expansion_1/scene05.pory"
+# 201 "data/expansion_1/scene05.pory"
 	.string "Pokémon is popular.$"
 
 Expansion1_Rival_Scene05b_Text_3:
-# 202 "data/expansion_1/scene05.pory"
+# 203 "data/expansion_1/scene05.pory"
 	.string "Yeah, and there were a bunch of boss\n"
 	.string "creatures mods, too.$"
 
 Expansion1_Rival_Scene05b_Text_4:
-# 205 "data/expansion_1/scene05.pory"
+# 206 "data/expansion_1/scene05.pory"
 	.string "You think that's what we saw when\n"
 	.string "we were on the boat?$"
 
 Expansion1_Rival_Scene05b_Text_5:
-# 208 "data/expansion_1/scene05.pory"
+# 209 "data/expansion_1/scene05.pory"
 	.string "It'd fit, maybe? Not like anything else\n"
 	.string "has been outright broken since then.$"
 
 Expansion1_Rival_Scene05b_Text_6:
-# 211 "data/expansion_1/scene05.pory"
-	.string "Hmm… what else did I see on those\n"
+# 212 "data/expansion_1/scene05.pory"
+	.string "Hmm… {PAUSE 100}what else did I see on those\n"
 	.string "forums…?$"
 
 Expansion1_Rival_Scene05b_Text_7:
-# 214 "data/expansion_1/scene05.pory"
+# 215 "data/expansion_1/scene05.pory"
 	.string "Well, we'll find out if it even matters\n"
 	.string "if we keep moving forwards.\p"
 	.string "And your very own Sakura has some\n"
-	.string "good news on that front{EMOJI_TILDE}{UNK_SPACER}$"
+	.string "good news {PAUSE 30}on {PAUSE 30}that {PAUSE 30}front{EMOJI_TILDE}{UNK_SPACER}$"
 
 Expansion1_Rival_Scene05b_Text_8:
-# 219 "data/expansion_1/scene05.pory"
+# 220 "data/expansion_1/scene05.pory"
 	.string "You found a way to move the Pokémon\n"
 	.string "blockade down South?$"
 
 Expansion1_Rival_Scene05b_Text_9:
-# 222 "data/expansion_1/scene05.pory"
+# 223 "data/expansion_1/scene05.pory"
 	.string "Yes, I did figure that out shortly\n"
 	.string "before this. That's what I was about\l"
 	.string "to announce before Harper returned\l"
@@ -617,70 +621,70 @@ Expansion1_Rival_Scene05b_Text_9:
 	.string "is actually the starting zone.$"
 
 Expansion1_Rival_Scene05b_Text_10:
-# 236 "data/expansion_1/scene05.pory"
+# 237 "data/expansion_1/scene05.pory"
 	.string "Which means my explosive discovery\n"
 	.string "is all the more useful!$"
 
 Expansion1_Rival_Scene05b_Text_11:
-# 239 "data/expansion_1/scene05.pory"
+# 240 "data/expansion_1/scene05.pory"
 	.string "Explosive?$"
 
 Expansion1_Rival_Scene05b_Text_12:
-# 241 "data/expansion_1/scene05.pory"
+# 242 "data/expansion_1/scene05.pory"
 	.string "Yep yep! So we just need to blow some\n"
 	.string "shit up at a cave entrance, and then\l"
 	.string "we can swoop in to save Harper!$"
 
 Expansion1_Rival_Scene05b_Text_13:
-# 245 "data/expansion_1/scene05.pory"
-	.string "…I'm right here.$"
+# 246 "data/expansion_1/scene05.pory"
+	.string "…{PAUSE 100}I'm right here.$"
 
 Expansion1_Rival_Scene05b_Text_14:
-# 247 "data/expansion_1/scene05.pory"
-	.string "Ah. Right. Need to refactor the pitch.\p"
-	.string "We can… blow things up.\n"
+# 248 "data/expansion_1/scene05.pory"
+	.string "Ah. {PAUSE 30}Right. {PAUSE 30}Need to refactor the pitch.\p"
+	.string "We can… {PAUSE 100}blow things up.\n"
 	.string "Boom.$"
 
 Expansion1_Rival_Scene05b_Text_15:
-# 251 "data/expansion_1/scene05.pory"
-	.string "How… eloquent.$"
+# 252 "data/expansion_1/scene05.pory"
+	.string "How… {PAUSE 100}eloquent.$"
 
 Expansion1_Rival_Scene05b_Text_16:
-# 256 "data/expansion_1/scene05.pory"
+# 257 "data/expansion_1/scene05.pory"
 	.string "I know, right?$"
 
 Expansion1_Rival_Scene05b_Text_17:
-# 258 "data/expansion_1/scene05.pory"
+# 259 "data/expansion_1/scene05.pory"
 	.string "Knowing Pokémon, it probably is a place\n"
-	.string "we need to go. Maybe rock smash? You\l"
+	.string "we need to go. Maybe Rock Smash? You\l"
 	.string "said it was at a cave entrance?$"
 
 Expansion1_Rival_Scene05b_Text_18:
-# 262 "data/expansion_1/scene05.pory"
+# 263 "data/expansion_1/scene05.pory"
 	.string "Would post game content be designed\n"
-	.string "to block the player with rock smash?\l"
-	.string "This is the flash situation again.$"
+	.string "to block the player with Rock Smash?\l"
+	.string "This is the Flash situation again.$"
 
 Expansion1_Rival_Scene05b_Text_19:
-# 266 "data/expansion_1/scene05.pory"
-	.string "Boom?\n"
+# 267 "data/expansion_1/scene05.pory"
+	.string "Boom?{PAUSE 60}\n"
 	.string "Boom.$"
 
 Expansion1_Rival_Scene05b_Text_20:
-# 269 "data/expansion_1/scene05.pory"
+# 270 "data/expansion_1/scene05.pory"
 	.string "The one other place we haven't been\n"
 	.string "is the ship. Maybe…$"
 
 Expansion1_Rival_Scene05b_Text_21:
-# 272 "data/expansion_1/scene05.pory"
+# 273 "data/expansion_1/scene05.pory"
 	.string "Yeah, we'll probably find some explosive\n"
 	.string "key item in the ship.\p"
-	.string "Or… shipwreck, I guess.$"
+	.string "Or… {PAUSE 100}shipwreck, I guess.$"
 
 Expansion1_Rival_Scene05b_Text_22:
-# 276 "data/expansion_1/scene05.pory"
+# 277 "data/expansion_1/scene05.pory"
 	.string "Sounds like a plan to me!$"
 
 Expansion1_Rival_Scene05b_Text_23:
-# 278 "data/expansion_1/scene05.pory"
+# 279 "data/expansion_1/scene05.pory"
 	.string "Hell yeah it does.$"

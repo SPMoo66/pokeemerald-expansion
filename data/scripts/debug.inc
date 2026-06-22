@@ -228,8 +228,11 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
-	setvar VAR_EMERALBODY_RIVAL_STATE, 20
-	call SlateportRegionMap_BoatSceneInit
+	setvar VAR_EMERALBODY_RIVAL_STATE, 19
+	warp MAP_SLATEPORT_CITY, 8
+	waitstate
+@	setvar VAR_EMERALBODY_RIVAL_STATE, 20
+@	call SlateportRegionMap_BoatSceneInit
 	release
 	end
 
@@ -245,7 +248,7 @@ Debug_EventScript_Script_7::
 	setflag FLAG_SYS_SPAWN_INVISIBLE
 	setflag FLAG_HIDE_MAP_NAME_POPUP
 	setvar VAR_EMERALBODY_RIVAL_STATE, 41
-	warpcontinuescript MAP_FAR_OFF_SEA_WEST, 55, 5, Expansion1_Rival_Scene08b
+	warpcontinuescript MAP_FAR_OFF_SEA_WEST, 55, 5, Expansion1_Rival_Scene08
 	release
 	end
 

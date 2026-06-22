@@ -1,5 +1,13 @@
 // dots…
 
+# PAUSE_XX Rules
+# Stutters - {PAUSE 30}					Ex. "W- {PAUSE 30}When?"
+# Emphasis - {PAUSE 30} XX {PAUSE 60}	Ex. "You took {PAUSE 30}forever {PAUSE 60)to log-on!"
+# …	- {PAUSE 100}						Ex. "…{PAUSE 100}When?"
+#	But … in sequence get {PAUSE 60}	Ex. "… {PAUSE 60}… {PAUSE 60}…"
+#	If there are a lot of them, use {PAUSE 30}s
+# Other pauses are subjective but keep to 30, 60, 100
+
 #Call1
 text Call1_JaksonText {
 	format(	"Jakson: Yo, {PLAYER}!\n"
@@ -9,12 +17,12 @@ text Call1_JaksonText {
 			"I can't believe you're all still\n"
 			"playing enough to contact you\l"
 			"in-game…\p"
-			"A- Anyway, to the point.\p"
-			"It was… a bit of a rush job… but…\n"
+			"A- {PAUSE 30}Anyway, to the point.\p"
+			"It was… {PAUSE 100}a bit of a rush job… {PAUSE 100}but…{PAUSE 100}\n"
 			"I was able to put together a nice\l"
 			"surprise for the whole group.\p"
 			"Drop by Slateport City when you're\n"
-			"next free. Specifically the Harbor.\p"
+			"next free. {PAUSE 60}Specifically the Harbor.\p"
 			"I'll assemble the others, too.\n"
 			"See you soon!")
 }
@@ -26,9 +34,9 @@ text Exp1_Town01_SakuraText {
 			"any pirates out there!\p"
 			"If I don't get a chance to fight any,\n"
 			"I'll just have to take up the mantle\l"
-			"myself{EMOJI_TILDE}{UNK_SPACER}\p"
-			"Long Sakura Silver{EMOJI_TILDE}{UNK_SPACER}\p"
-			"Fun fact!\n"
+			"myself{EMOJI_TILDE}\p"
+			"Long {PAUSE 30}Sakura {PAUSE 30}Silver{EMOJI_TILDE}\p"
+			"Fun fact!{PAUSE 30}\n"
 			"She's “long” because her neck grows\l"
 			"just a little longer every day!")
 }
@@ -41,13 +49,13 @@ text Exp1_Town01_HarperText {
 			"something I had seen online, and…\p"
 			"Well, Jakson would've IM'd me if I\n"
 			"hadn't, anyways.\p"
-			"Sakura's just as hyper as ever.\n"
+			"Sakura's just as hyper as ever.{PAUSE 60}\n"
 			"Baron's still a hopeless worrywart.\p"
 			"Even if we don't get as many chances to\n"
 			"get together IRL anymore, doing this in\l"
 			"VR makes it feel so much more…\l"
 			"personal, doesn't it?\p"
-			"Well, I don't remember Barono being as\n"
+			"Well, I don't remember Baron being as\n"
 			"anxious as he is now.\l"
 			"I wonder if something happened…")
 }
@@ -56,8 +64,8 @@ text Exp1_Town01_ReddText {
 	format( "Yo.\p"
 			"I was born and raised on Kanto, then I\n"
 			"stepped up for Hoenn.\p"
-			"And now I head to…\n"
-			"Well shoot, Jakson didn't mention a\n"
+			"And now I head to…{PAUSE 100}\n"
+			"Well shoot, Jakson didn't mention a\l"
 			"name, did he?\p"
 			"Either way, this is pretty adventurous\n"
 			"for me, right?\p"
@@ -75,14 +83,14 @@ text Exp1_Town01_BaronText {
 			"game in the first place, so I'm\l"
 			"wondering what I should sell so I can\l"
 			"stock up.\p"
-			"Oh, that ‘Pokévial’ thing that you\n"
+			"Oh, that {PAUSE 30}‘Pokévial’ {PAUSE 60}thing that you\n"
 			"mentioned before.\p"
 			"Do you think you could show me how to\n"
 			"use that? Maybe that will save me.\p"
 			"We should have some time on the boat,\n"
 			"right?\p"
 			"I'd appreiciate it if you could spare\n"
-			"me a moment. later.")
+			"me a moment later.")
 }
 
 text Exp1_Town01_JaksonText {
@@ -127,7 +135,7 @@ text Exp1_Town02_ReddText {
 			"me scared.\p"
 			"That roar must have been a monster,\n"
 			"right?\p"
-			"That and the… surreal experience\n"
+			"That and the… {PAUSE 100}surreal experience\n"
 			"through the VR system…\p"
 			"Well, I had to take a break for a minute\n"
 			"after that.\p"
@@ -142,7 +150,7 @@ text Exp1_Town02_BaronText {
 			"I was going to go after them, but I keep\n"
 			"thinking I'll get some tropical disease\l"
 			"if I make the wrong step…\p"
-			"I- I know it's just digital…\n"
+			"I- {PAUSE 30}I know it's just digital…{PAUSE 100}\n"
 			"Still…\p"
 			"Would you go on ahead and search for\n"
 			"me?")
@@ -180,14 +188,14 @@ text Exp1_Town03_SakuraText {
 			"message Harper straight away?\p"
 			"“It's not like Jakson was the only one\n"
 			"who could've remembered…!”\p"
-			"To that I say{EMOJI_TILDE}{UNK_SPACER}\p"
+			"To that I say{EMOJI_TILDE}\p"
 			"Well, where's your sense of adventure,\n"
 			"{PLAYER}?\p"
 			"Isn't it more fun with a damsel in\n"
 			"mysterious, unknown distress?\p"
 			"Besides, would you really have known\n"
 			"where to find her?\p"
-			"Would SHE have known where she was?")
+			"Would {PAUSE 30}SHE {PAUSE 60}have known where she was?")
 }
 
 text Exp1_Town03_ReddText {
@@ -201,9 +209,9 @@ text Exp1_Town03_ReddText {
 			"hasn't seemed to slow her down.\p"
 			"You think they coded new Pokémon\n"
 			"types to show up on the ship?\p"
-			"I mean, it… probably wasn't supposed\n"
+			"I mean, it… {PAUSE 100}probably wasn't supposed\n"
 			"to crash in the first place, right?\l"
-			"…Right?")
+			"…{PAUSE 100}Right?")
 }
 
 text Exp1_Town03_BaronText {
@@ -221,8 +229,8 @@ text Exp1_Town03_BaronText {
 text Exp1_Town03_JaksonText {
 	format( "Hey, {PLAYER}.\p"
 			"Harper's already gone off to the ship.\p"
-			"…Yeah, she really gave me an earful…\n"
-			"…in a couple ways…\l"
+			"…{PAUSE 100}Yeah, she really gave me an earful…\n"
+			"…{PAUSE 100}in a couple ways…\l"
 			"But, I get it. I understand where she's\l"
 			"coming from.\p"
 			"I should've put a little more time into\n"
@@ -232,7 +240,7 @@ text Exp1_Town03_JaksonText {
 			"or maybe it was made for an earlier\l"
 			"version?\p"
 			"It's not bad enough that we can't keep\n"
-			"going, but I'll- well, maybe Harper and\l"
+			"going, but I'll- {PAUSE 60}well, maybe Harper and\l"
 			"I both will try to handle any issues.\p"
 			"Either way, let's join her once we're\n"
 			"ready.")

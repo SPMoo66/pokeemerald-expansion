@@ -649,25 +649,25 @@ Expansion1_Rival_Scene02_Text_0:
 Expansion1_Rival_Scene02_Text_1:
 # 48 "data/expansion_1/scene02.pory"
 	.string "Sorry, but it seems like something's\ngone horribly wrong.\p"
-	.string "I'd say we should exchange info,\nbut I JUST heard Sakura's voice.\p"
+	.string "I'd say we should exchange info,\nbut I {PAUSE 30}JUST {PAUSE 60}heard Sakura's voice.\p"
 	.string "She's around here somewhere, so we\nshould probably find her first.$"
 
 Expansion1_Rival_Scene02_Text_2:
 # 71 "data/expansion_1/scene02.pory"
 	.string "You maniac!\p"
 	.string "You blew it up!\p"
-	.string "Agh, damn you!$"
+	.string "Agh, {PAUSE 60}damn you!$"
 
 Expansion1_Rival_Scene02_Text_3:
 # 77 "data/expansion_1/scene02.pory"
-	.string "God damn you all to hell!$"
+	.string "God {PAUSE 60}damn {PAUSE 30}you {PAUSE 30}all {PAUSE 30}to {PAUSE 30}hell!$"
 
 Expansion1_Rival_Scene02_Text_4:
 # 85 "data/expansion_1/scene02.pory"
-	.string "… … …\n"
-	.string "… … …\l"
-	.string "… … …\l"
-	.string "Ah, well there's Baron too.$"
+	.string "… {PAUSE 30}… {PAUSE 30}…\n"
+	.string "… {PAUSE 30}… {PAUSE 30}…\l"
+	.string "… {PAUSE 30}… {PAUSE 30}…\l"
+	.string "Ah, {PAUSE 30}well there's Baron too.$"
 
 Expansion1_Rival_Scene02_Text_5:
 # 94 "data/expansion_1/scene02.pory"
@@ -693,9 +693,9 @@ Expansion1_Rival_Scene02b_Text_3:
 
 Expansion1_Rival_Scene02b_Text_4:
 # 133 "data/expansion_1/scene02.pory"
-	.string "O- Oh!\p"
-	.string "W- Well, my mother always puts on old\nmovies. I… guess I've been paying more\lattention to them.\p"
-	.string "Since… whenever that was, at least.$"
+	.string "O- {PAUSE 30}Oh!\p"
+	.string "W- {PAUSE 30}Well, my mother always puts on old\nmovies. I… {PAUSE 100}guess I've been paying more\lattention to them.\p"
+	.string "Since… {PAUSE 100}whenever that was, at least.$"
 
 Expansion1_Rival_Scene02b_Text_5:
 # 137 "data/expansion_1/scene02.pory"
@@ -703,18 +703,18 @@ Expansion1_Rival_Scene02b_Text_5:
 
 Expansion1_Rival_Scene02b_Text_6:
 # 139 "data/expansion_1/scene02.pory"
-	.string "Anyways, Son of Jaks… What kind of\ncontent pack did you grab this from\lin the first place?\p"
+	.string "Anyways, Son of Jaks… {PAUSE 100}What kind of\ncontent pack did you grab this from\lin the first place?\p"
 	.string "That wasn't exactly a ‘whimsical\nadventure’ themed event.$"
 
 Expansion1_Rival_Scene02b_Text_7:
 # 144 "data/expansion_1/scene02.pory"
 	.string "Y-Yes! That was very scary…\p"
-	.string "…especially in this 2DVR type setting.$"
+	.string "…{PAUSE 100}especially in this 2DVR type setting.$"
 
 Expansion1_Rival_Scene02b_Text_8:
 # 150 "data/expansion_1/scene02.pory"
 	.string "I didn't see anything about horror, so\nI'm pretty sure something's gone wrong.\p"
-	.string "Maybe… some mods are conflicting?\nIntersecting with each other?\p"
+	.string "Maybe… {PAUSE 100}some mods are conflicting?\nIntersecting with each other?\p"
 	.string "Either way, setting it back up and\ntesting for all that would be a lengthy\lprocess.\p"
 	.string "I don't even know if it breaks\nprogression, so maybe we should try\lto just push forward?$"
 
@@ -728,7 +728,7 @@ Expansion1_Rival_Scene02b_Text_10:
 
 Expansion1_Rival_Scene02b_Text_11:
 # 162 "data/expansion_1/scene02.pory"
-	.string "Hey, I'm agreeing with you. Let's push\nforward. This sounds interesting{EMOJI_TILDE}{UNK_SPACER}$"
+	.string "Hey, I'm agreeing with you. Let's push\nforward. This {PAUSE 30}sounds {PAUSE 30}interesting{EMOJI_TILDE}{UNK_SPACER}$"
 
 Expansion1_Rival_Scene02b_Text_12:
 # 164 "data/expansion_1/scene02.pory"
@@ -764,12 +764,12 @@ Expansion1_Rival_Scene02c_Text_3:
 Expansion1_Rival_Scene02c_Text_4:
 # 213 "data/expansion_1/scene02.pory"
 	.string "I'm pretty sure that's supposed\nto be our ship, right?\p"
-	.string "It doesn't exactly look like it can\nget us home like that.\p"
+	.string "It {PAUSE 30}doesn't {PAUSE 60}exactly look like it can\nget us home like that.\p"
 	.string "And I don't think this virtual body\nof mine can carry a boat from land\lto water.$"
 
 Expansion1_Rival_Scene02c_Text_5:
 # 222 "data/expansion_1/scene02.pory"
-	.string "Hmm… well, let's just report back\nto the others.$"
+	.string "Hmm… {PAUSE 100}well, let's just report back\nto the others.$"
 
 Expansion1_Rival_Scene02d_Text_0:
 # 270 "data/expansion_1/scene02.pory"
@@ -785,7 +785,7 @@ Expansion1_Rival_Scene02d_Text_2:
 
 Expansion1_Rival_Scene02d_Text_3:
 # 285 "data/expansion_1/scene02.pory"
-	.string "Oh… No sign of Harper from your side,\nhuh? Damn…$"
+	.string "Oh… {PAUSE 100}No sign of Harper from your side,\nhuh? Damn…$"
 
 Expansion1_Rival_Scene02d_Text_4:
 # 287 "data/expansion_1/scene02.pory"
@@ -810,15 +810,15 @@ Expansion1_Rival_Scene02d_Text_8:
 
 Expansion1_Rival_Scene02d_Text_9:
 # 303 "data/expansion_1/scene02.pory"
-	.string "…I forgot to turn it on.$"
+	.string "…{PAUSE 100}I forgot to turn it on.$"
 
 Expansion1_Rival_Scene02d_Text_10:
 # 310 "data/expansion_1/scene02.pory"
-	.string "Then… I guess we're betting that\nshe's not stuck over there.$"
+	.string "Then… {PAUSE 100}I guess we're betting that\nshe's not stuck over there.$"
 
 Expansion1_Rival_Scene02d_Text_11:
 # 312 "data/expansion_1/scene02.pory"
-	.string "I… I hope she's safe…$"
+	.string "I… {PAUSE 100}I hope she's safe…$"
 
 Expansion1_Rival_Scene02d_Text_12:
 # 316 "data/expansion_1/scene02.pory"
@@ -843,7 +843,7 @@ Expansion1_Rival_Scene02d_Text_16:
 
 Expansion1_Rival_Scene02d_Text_17:
 # 330 "data/expansion_1/scene02.pory"
-	.string "O-Oh! One of the sailors here was\nsaying something about a “Light”.$"
+	.string "O- {PAUSE 30}Oh! One of the sailors here was\nsaying something about a “Light”.$"
 
 Expansion1_Rival_Scene02d_Text_18:
 # 332 "data/expansion_1/scene02.pory"
@@ -855,7 +855,7 @@ Expansion1_Rival_Scene02d_Text_19:
 
 Expansion1_Rival_Scene02d_Text_20:
 # 336 "data/expansion_1/scene02.pory"
-	.string "That sounds like it'd be fightening\nfor her…$"
+	.string "That sounds like it'd be frightening\nfor her…$"
 
 Expansion1_Rival_Scene02d_Text_21:
 # 338 "data/expansion_1/scene02.pory"
@@ -867,7 +867,7 @@ Expansion1_Rival_Scene02d_Text_22:
 
 Expansion1_Rival_Scene02d_Text_23:
 # 345 "data/expansion_1/scene02.pory"
-	.string "D- Don't worry. We'll get her out of\nthere.$"
+	.string "D- {PAUSE 30}Don't worry. We'll get her out of\nthere.$"
 
 Expansion1_Rival_Scene02d_Text_24:
 # 347 "data/expansion_1/scene02.pory"
@@ -877,4 +877,4 @@ Expansion1_Rival_Scene02d_Text_24:
 Expansion1_Rival_Scene02d_Text_25:
 # 350 "data/expansion_1/scene02.pory"
 	.string "Move out, team!\p"
-	.string "Operation… START-O!!!$"
+	.string "Operation… {PAUSE 100}START-O!!!$"

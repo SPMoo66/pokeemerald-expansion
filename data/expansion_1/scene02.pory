@@ -46,7 +46,7 @@ script Expansion1_Rival_Scene02 {
 	waitmovement (0)
 	speakername (CommonText_Jakson)
 	msgbox ("Sorry, but it seems like something's\ngone horribly wrong.\p"
-			"I'd say we should exchange info,\nbut I JUST heard Sakura's voice.\p"
+			"I'd say we should exchange info,\nbut I {PAUSE 30}JUST {PAUSE 60}heard Sakura's voice.\p"
 			"She's around here somewhere, so we\nshould probably find her first.", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_JAKSON, Common_Movement_WalkRight11)
 	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight11)
@@ -70,11 +70,11 @@ script Expansion1_Rival_Scene02 {
 	speakername (CommonText_Sakura)
 	msgbox ("You maniac!\p"
 			"You blew it up!\p"
-			"Agh, damn you!", MSGBOX_AUTOCLOSE)
+			"Agh, {PAUSE 60}damn you!", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_SAKURA, Common_Movement_ShakeHorizontal)
 	waitmovement (0)
 	speakername (CommonText_Sakura)
-	msgbox ("God damn you all to hell!", MSGBOX_AUTOCLOSE)
+	msgbox ("God {PAUSE 60}damn {PAUSE 30}you {PAUSE 30}all {PAUSE 30}to {PAUSE 30}hell!", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_SAKURA, Common_Movement_ShakeHorizontal)
 	waitmovement (0)
 	delay (10)
@@ -82,10 +82,10 @@ script Expansion1_Rival_Scene02 {
 	delay (70)
 	applymovement (MAUVECAMP_BARON, Common_Movement_SweatDrop)
 	speakername (CommonText_Jakson)
-	msgbox ("… … …\n"
-			"… … …\l"
-			"… … …\l"
-			"Ah, well there's Baron too.", MSGBOX_AUTOCLOSE)
+	msgbox ("… {PAUSE 30}… {PAUSE 30}…\n"
+			"… {PAUSE 30}… {PAUSE 30}…\l"
+			"… {PAUSE 30}… {PAUSE 30}…\l"
+			"Ah, {PAUSE 30}well there's Baron too.", MSGBOX_AUTOCLOSE)
 	fadeinbgm (0)
 	applymovement (MAUVECAMP_BARON, Common_Movement_WalkInPlaceFasterUp)
 	waitmovement (0)
@@ -130,25 +130,25 @@ script Expansion1_Rival_Scene02b {
 	applymovement (MAUVECAMP_BARON, Common_Movement_ExclamationMark)
 	delay (40)
 	call (GetBaronsName)
-	msgbox ("O- Oh!\p"
-			"W- Well, my mother always puts on old\nmovies. I… guess I've been paying more\lattention to them.\p"
-			"Since… whenever that was, at least.")
+	msgbox ("O- {PAUSE 30}Oh!\p"
+			"W- {PAUSE 30}Well, my mother always puts on old\nmovies. I… {PAUSE 100}guess I've been paying more\lattention to them.\p"
+			"Since… {PAUSE 100}whenever that was, at least.")
 	speakername (CommonText_Jakson)
 	msgbox ("That's cool.")
 	speakername (CommonText_Sakura)
-	msgbox ("Anyways, Son of Jaks… What kind of\ncontent pack did you grab this from\lin the first place?\p"
+	msgbox ("Anyways, Son of Jaks… {PAUSE 100}What kind of\ncontent pack did you grab this from\lin the first place?\p"
 			"That wasn't exactly a ‘whimsical\nadventure’ themed event.", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_BARON, Common_Movement_WalkInPlaceFasterLeft)
 	waitmovement (0)
 	call (GetBaronsName)
 	msgbox ("Y-Yes! That was very scary…\p"
-			"…especially in this 2DVR type setting.")
+			"…{PAUSE 100}especially in this 2DVR type setting.")
 	applymovement (MAUVECAMP_JAKSON, Common_Movement_SweatDrop)
 	playse (SE_M_METRONOME)
 	delay (40)
 	speakername (CommonText_Jakson)
 	msgbox ("I didn't see anything about horror, so\nI'm pretty sure something's gone wrong.\p"
-			"Maybe… some mods are conflicting?\nIntersecting with each other?\p"
+			"Maybe… {PAUSE 100}some mods are conflicting?\nIntersecting with each other?\p"
 			"Either way, setting it back up and\ntesting for all that would be a lengthy\lprocess.\p"
 			"I don't even know if it breaks\nprogression, so maybe we should try\lto just push forward?")
 	speakername (CommonText_Sakura)
@@ -159,7 +159,7 @@ script Expansion1_Rival_Scene02b {
 	playse (SE_RG_HELP_OPEN)
 	delay (40)
 	speakername (CommonText_Sakura)
-	msgbox ("Hey, I'm agreeing with you. Let's push\nforward. This sounds interesting{EMOJI_TILDE}{UNK_SPACER}")
+	msgbox ("Hey, I'm agreeing with you. Let's push\nforward. This {PAUSE 30}sounds {PAUSE 30}interesting{EMOJI_TILDE}{UNK_SPACER}")
 	call (GetBaronsName)
 	msgbox ("Oh! We should tell Redd, too!")
 	speakername (CommonText_Sakura)
@@ -211,7 +211,7 @@ script Expansion1_Rival_Scene02c {
 	delay (30)
 	speakername (CommonText_Redd)
 	msgbox ("I'm pretty sure that's supposed\nto be our ship, right?\p"
-			"It doesn't exactly look like it can\nget us home like that.\p"
+			"It {PAUSE 30}doesn't {PAUSE 60}exactly look like it can\nget us home like that.\p"
 			"And I don't think this virtual body\nof mine can carry a boat from land\lto water.", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVEISLANDSOUTH_REDD, Common_Movement_WalkInPlaceFasterUp)
 	waitmovement (0)
@@ -219,7 +219,7 @@ script Expansion1_Rival_Scene02c {
 	applymovement (MAUVEISLANDSOUTH_REDD, Common_Movement_Thinking)
 	delay (60)
 	speakername (CommonText_Redd)
-	msgbox ("Hmm… well, let's just report back\nto the others.", MSGBOX_AUTOCLOSE)
+	msgbox ("Hmm… {PAUSE 100}well, let's just report back\nto the others.", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVEISLANDSOUTH_FAKEPLAYER, Common_Movement_WalkRight)
 	applymovement (MAUVEISLANDSOUTH_REDD, Common_Movement_WalkUp)
 	waitmovement (0)
@@ -282,7 +282,7 @@ script Expansion1_Rival_Scene02d {
 	applymovement (MAUVECAMP_JAKSON, Common_Movement_WalkInPlaceFasterDown)
 	waitmovement (0)	
 	speakername (CommonText_Jakson)
-	msgbox ("Oh… No sign of Harper from your side,\nhuh? Damn…")
+	msgbox ("Oh… {PAUSE 100}No sign of Harper from your side,\nhuh? Damn…")
 	speakername (CommonText_Redd)
 	msgbox ("There was a wrecked boat out there,\nprobably ours, but we couldn't reach it.\p"
 			"There's a group of Pokémon blocking\nus from getting further.", MSGBOX_AUTOCLOSE)
@@ -300,16 +300,16 @@ script Expansion1_Rival_Scene02d {
 	playse (SE_M_METRONOME)
 	delay (40)
 	speakername (CommonText_Jakson)
-	msgbox ("…I forgot to turn it on.", MSGBOX_AUTOCLOSE)
+	msgbox ("…{PAUSE 100}I forgot to turn it on.", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_REDD, Common_Movement_SweatDrop)
 	applymovement (MAUVECAMP_SAKURA, Common_Movement_SweatDrop)
 	applymovement (MAUVECAMP_FAKEPLAYER, Common_Movement_SweatDrop)
 	playse (SE_M_METRONOME)
 	delay (40)
 	speakername (CommonText_Redd)
-	msgbox ("Then… I guess we're betting that\nshe's not stuck over there.")
+	msgbox ("Then… {PAUSE 100}I guess we're betting that\nshe's not stuck over there.")
 	call (GetBaronsName)
-	msgbox ("I… I hope she's safe…", MSGBOX_AUTOCLOSE)
+	msgbox ("I… {PAUSE 100}I hope she's safe…", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_JAKSON, Common_Movement_Thinking)
 	delay (40)
 	speakername (CommonText_Jakson)
@@ -327,13 +327,13 @@ script Expansion1_Rival_Scene02d {
 	applymovement (MAUVECAMP_BARON, Common_Movement_ExclamationMark)
 	delay (40)
 	call (GetBaronsName)
-	msgbox ("O-Oh! One of the sailors here was\nsaying something about a “Light”.")
+	msgbox ("O- {PAUSE 30}Oh! One of the sailors here was\nsaying something about a “Light”.")
 	speakername (CommonText_Jakson)
 	msgbox ("As good a lead as any.")
 	speakername (CommonText_Sakura)
 	msgbox ("If Harper's lacking the unique key item,\nno way she'd get through the darkness.")
 	call (GetBaronsName)
-	msgbox ("That sounds like it'd be fightening\nfor her…")
+	msgbox ("That sounds like it'd be frightening\nfor her…")
 	speakername (CommonText_Redd)
 	msgbox ("Good thing she doesn't have to eat.")
 	call (GetBaronsName)
@@ -342,13 +342,13 @@ script Expansion1_Rival_Scene02d {
 	playse (SE_M_METRONOME)
 	delay (40)
 	speakername (CommonText_Redd)
-	msgbox ("D- Don't worry. We'll get her out of\nthere.")
+	msgbox ("D- {PAUSE 30}Don't worry. We'll get her out of\nthere.")
 	speakername (CommonText_Jakson)
 	msgbox ("Absolutely.\nAlright, let's split up.\p"
 			"We shouldn't count on her being stuck\nin that dark cave, but we've got to look\lthere too.")
 	speakername (CommonText_Sakura)
 	msgbox ("Move out, team!\p"
-			"Operation… START-O!!!", MSGBOX_AUTOCLOSE)
+			"Operation… {PAUSE 100}START-O!!!", MSGBOX_AUTOCLOSE)
 
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 24)
 	savebgm (MUS_DP_CREDITS)

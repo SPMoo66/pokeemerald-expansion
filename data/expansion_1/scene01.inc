@@ -234,7 +234,7 @@ Expansion1_Rival_Scene01::
 # 139 "data/expansion_1/scene01.pory"
 	msgbox Expansion1_Rival_Scene01_Text_27, MSGBOX_AUTOCLOSE
 # 140 "data/expansion_1/scene01.pory"
-	delay 30
+	delay 40
 # 141 "data/expansion_1/scene01.pory"
 	speakername CommonText_Redd
 # 142 "data/expansion_1/scene01.pory"
@@ -258,7 +258,7 @@ Expansion1_Rival_Scene01::
 # 152 "data/expansion_1/scene01.pory"
 	speakername CommonText_Sakura
 # 153 "data/expansion_1/scene01.pory"
-	msgbox Expansion1_Rival_Scene01_Text_30, MSGBOX_AUTOCLOSE
+	msgbox Expansion1_Rival_Scene01_Text_30
 # 154 "data/expansion_1/scene01.pory"
 	speakername CommonText_Harper
 # 155 "data/expansion_1/scene01.pory"
@@ -836,11 +836,11 @@ Expansion1_Rival_Scene01_Text_0:
 
 Expansion1_Rival_Scene01_Text_1:
 # 37 "data/expansion_1/scene01.pory"
-	.string "H- Hello again, {PLAYER}.$"
+	.string "H- {PAUSE 30}Hello again, {PLAYER}.$"
 
 Expansion1_Rival_Scene01_Text_2:
 # 39 "data/expansion_1/scene01.pory"
-	.string "Alright, Jakson, let's get started!$"
+	.string "Alright, Jakson, {PAUSE 30}let's {PAUSE 30}get {PAUSE 30}started!$"
 
 Expansion1_Rival_Scene01_Text_3:
 # 42 "data/expansion_1/scene01.pory"
@@ -853,11 +853,11 @@ Expansion1_Rival_Scene01_Text_4:
 
 Expansion1_Rival_Scene01_Text_5:
 # 51 "data/expansion_1/scene01.pory"
-	.string "And you still took forever to log-on!$"
+	.string "And you still took {PAUSE 30}forever {PAUSE 60}to log-on!$"
 
 Expansion1_Rival_Scene01_Text_6:
 # 53 "data/expansion_1/scene01.pory"
-	.string "It spent forever “compiling shaders”!\nWhy did it take like an HOUR for that?!$"
+	.string "It spent forever {PAUSE 30}“compiling shaders”!{PAUSE 60}\nWhy did it take like {PAUSE 30}an HOUR for that?!$"
 
 Expansion1_Rival_Scene01_Text_7:
 # 55 "data/expansion_1/scene01.pory"
@@ -865,7 +865,7 @@ Expansion1_Rival_Scene01_Text_7:
 
 Expansion1_Rival_Scene01_Text_8:
 # 60 "data/expansion_1/scene01.pory"
-	.string "Haha… sorry about that, everyone.$"
+	.string "Haha… {PAUSE 100}sorry about that, everyone.$"
 
 Expansion1_Rival_Scene01_Text_9:
 # 62 "data/expansion_1/scene01.pory"
@@ -881,11 +881,11 @@ Expansion1_Rival_Scene01_Text_11:
 
 Expansion1_Rival_Scene01_Text_12:
 # 76 "data/expansion_1/scene01.pory"
-	.string "…this time?$"
+	.string "…{PAUSE 100}this time?$"
 
 Expansion1_Rival_Scene01_Text_13:
 # 81 "data/expansion_1/scene01.pory"
-	.string "A- Ahahaha… Just a… test thing I did\nwith a different game before.$"
+	.string "A- {PAUSE 30}Ahahaha… {PAUSE 100}Just a… {PAUSE 100}test thing I did\nwith a different game before.$"
 
 Expansion1_Rival_Scene01_Text_14:
 # 87 "data/expansion_1/scene01.pory"
@@ -894,26 +894,26 @@ Expansion1_Rival_Scene01_Text_14:
 Expansion1_Rival_Scene01_Text_15:
 # 93 "data/expansion_1/scene01.pory"
 	.string "What I do know is that we all made it.\nWe're all here and ready to go, yeah?\p"
-	.string "I'll just jump to the point…\nI made an “expansion”.$"
+	.string "I'll just jump to the point…{PAUSE 100}\nI made {PAUSE 60}an “expansion”.$"
 
 Expansion1_Rival_Scene01_Text_16:
 # 98 "data/expansion_1/scene01.pory"
-	.string "“Expansion”…?$"
+	.string "“Ex{PAUSE 30}pan{PAUSE 30}sion”…?$"
 
 Expansion1_Rival_Scene01_Text_17:
 # 100 "data/expansion_1/scene01.pory"
-	.string "Like… DLC? It's not gonna cost money\nor something, is it?$"
+	.string "Like… {PAUSE 100}DLC? It's not gonna cost money\nor something, is it?$"
 
 Expansion1_Rival_Scene01_Text_18:
 # 105 "data/expansion_1/scene01.pory"
 	.string "Ah, no! Nothing like that.\nJust more mods.\p"
-	.string "It IS sort of like a DLC expansion in\nflavor, though.\p"
+	.string "It {PAUSE 30}IS {PAUSE 60}sort of like a DLC expansion in\nflavor, though.\p"
 	.string "I found a premade content pack with a\nstory for us to jump into.\p"
 	.string "After some customizations, I think it's\nready to set sail. We can jump into\lanother adventure together.$"
 
 Expansion1_Rival_Scene01_Text_19:
 # 112 "data/expansion_1/scene01.pory"
-	.string "Wow… it's not been that long since we\nfinished up the main story.\p"
+	.string "Wow… {PAUSE 100}it's not been that long since we\nfinished up the main story.\p"
 	.string "I was sure there'd be more of a gap\nbefore the group started playing a\lbunch again.$"
 
 Expansion1_Rival_Scene01_Text_20:
@@ -947,7 +947,7 @@ Expansion1_Rival_Scene01_Text_26:
 
 Expansion1_Rival_Scene01_Text_27:
 # 139 "data/expansion_1/scene01.pory"
-	.string "So what's it gonna be this time? Are\nwe going to space? The Himalayas?\lThe fiery pits of hell?!$"
+	.string "So what's it gonna be this time? Are\nwe going to space? {PAUSE 30}The Himalayas?\lThe fiery pits of hell?!$"
 
 Expansion1_Rival_Scene01_Text_28:
 # 142 "data/expansion_1/scene01.pory"
@@ -965,11 +965,11 @@ Expansion1_Rival_Scene01_Text_30:
 Expansion1_Rival_Scene01_Text_31:
 # 155 "data/expansion_1/scene01.pory"
 	.string "Oh, please don't tell me you're going\nto keep that up…\p"
-	.string "A treasure hunt though…\nYeah, that sounds fun enough.$"
+	.string "A treasure hunt though…{PAUSE 100}\nYeah, that sounds fun enough.$"
 
 Expansion1_Rival_Scene01_Text_32:
 # 158 "data/expansion_1/scene01.pory"
-	.string "An island, huh?\nI could use a vacation.$"
+	.string "An island, huh?\nI {PAUSE 30}could {PAUSE 60}use a vacation.$"
 
 Expansion1_Rival_Scene01_Text_33:
 # 160 "data/expansion_1/scene01.pory"
@@ -999,16 +999,16 @@ Expansion1_Rival_Scene01_Text_38:
 
 SSTidal_Scene01_OnFrame_Text_0:
 # 221 "data/expansion_1/scene01.pory"
-	.string "Alright, alright, ALRIGHT!!!!!!\nOn our way to… ADVENTURE!!!!!!$"
+	.string "Alright, alright, ALRIGHT!!!!!!\nOn our way to… {PAUSE 100}ADVENTURE!!!!!!$"
 
 SSTidal_Scene01_OnFrame_Text_1:
 # 234 "data/expansion_1/scene01.pory"
-	.string "Huh? Isn't this the same boat sprite\nused in the base game?\p"
+	.string "Huh? {PAUSE 60}Isn't this the same boat sprite\nused in the base game?\p"
 	.string "Why are you so excited off the rip?$"
 
 SSTidal_Scene01_OnFrame_Text_2:
 # 237 "data/expansion_1/scene01.pory"
-	.string "Oh, the dearest and Reddest of my\nfriends… it is elementary.$"
+	.string "Oh, the dearest and Reddest of my\nfriends… {PAUSE 100}it is elementary.$"
 
 SSTidal_Scene01_OnFrame_Text_3:
 # 244 "data/expansion_1/scene01.pory"
@@ -1016,7 +1016,7 @@ SSTidal_Scene01_OnFrame_Text_3:
 
 SSTidal_Scene01_OnFrame_Text_4:
 # 247 "data/expansion_1/scene01.pory"
-	.string "Where “too much water” overflows\nback into the positives, and it\lbecomes “just the right amount”.$"
+	.string "Where “too much water” overflows\nback into the positives, and it\lbecomes {PAUSE 60}“just the right amount”.$"
 
 SSTidal_Scene01_OnFrame_Text_5:
 # 252 "data/expansion_1/scene01.pory"
@@ -1028,11 +1028,11 @@ SSTidal_Scene01_OnFrame_Text_6:
 
 SSTidal_Scene01_OnFrame_Text_7:
 # 261 "data/expansion_1/scene01.pory"
-	.string "It does NOT!$"
+	.string "It does {PAUSE 60}NOT!$"
 
 SSTidal_Scene01_OnFrame_Text_8:
 # 266 "data/expansion_1/scene01.pory"
-	.string "Haha… I see.$"
+	.string "Haha… {PAUSE 100}I see.$"
 
 SSTidal_Scene01_OnFrame_Text_9:
 # 270 "data/expansion_1/scene01.pory"
@@ -1040,24 +1040,24 @@ SSTidal_Scene01_OnFrame_Text_9:
 
 SSTidal_Scene01_OnFrame_Text_10:
 # 274 "data/expansion_1/scene01.pory"
-	.string "He did say we'd be away for a while…\nSo I can get that feeling, at least.$"
+	.string "He did say we'd be away for a while…{PAUSE 100}\nSo I can get that feeling, at least.$"
 
 SSTidal_Scene01_OnFrame_Text_11:
 # 277 "data/expansion_1/scene01.pory"
-	.string "Though I'm still thinking about that\nwarning message from before… I wonder\lif Jakson was trying to spook us.$"
+	.string "Though I'm still thinking about that\nwarning message from before… {PAUSE 100}I wonder\lif Jakson was trying to spook us.$"
 
 SSTidal_Scene01_OnFrame_Text_12:
 # 280 "data/expansion_1/scene01.pory"
-	.string "Ah… that. Well, there is an explanation\nbehind it.\p"
+	.string "Ah… {PAUSE 100}that. Well, there is an explanation\nbehind it.\p"
 	.string "Would you believe me if I said that I\nonly said it because I didn't\lmake the content pack myself?$"
 
 SSTidal_Scene01_OnFrame_Text_13:
 # 283 "data/expansion_1/scene01.pory"
-	.string "Ol’ Jakson buddy didn't play this\nbefore the rest of us… Isn't that\ldaring?$"
+	.string "Ol’ Jakson buddy didn't play this\nbefore the rest of us… {PAUSE 100}Isn't that\ldaring?$"
 
 SSTidal_Scene01_OnFrame_Text_14:
 # 287 "data/expansion_1/scene01.pory"
-	.string "…Wait. Doesn't that mean you didn't\ntest it before, either?$"
+	.string "…{PAUSE 100}Wait. Doesn't that mean you didn't\ntest it before, either?$"
 
 SSTidal_Scene01_OnFrame_Text_15:
 # 289 "data/expansion_1/scene01.pory"
@@ -1066,7 +1066,7 @@ SSTidal_Scene01_OnFrame_Text_15:
 
 SSTidal_Scene01_OnFrame_Text_16:
 # 295 "data/expansion_1/scene01.pory"
-	.string "Hmm… you've got my Sakura Senses\ntingling with that mention.$"
+	.string "Hmm… {PAUSE 100}you've got my Sakura Senses\ntingling with that mention.$"
 
 SSTidal_Scene01_OnFrame_Text_17:
 # 303 "data/expansion_1/scene01.pory"
@@ -1074,11 +1074,11 @@ SSTidal_Scene01_OnFrame_Text_17:
 
 SSTidal_Scene01_OnFrame_Text_18:
 # 307 "data/expansion_1/scene01.pory"
-	.string "Yup. Just keep an eye out for when\nyou have a “!” above your head.$"
+	.string "Yup. Just keep an eye out for when\nyou have a {PAUSE 30}“!” {PAUSE 60}above your head.$"
 
 SSTidal_Scene01_OnFrame_Text_19:
 # 311 "data/expansion_1/scene01.pory"
-	.string "Oh, I see… Though you don't…$"
+	.string "Oh, I see… {PAUSE 100}Though you don't…$"
 
 SSTidal_Scene01_OnFrame_Text_20:
 # 315 "data/expansion_1/scene01.pory"
@@ -1090,16 +1090,16 @@ SSTidal_Scene01_OnFrame_Text_21:
 
 SSTidal_Scene01_OnFrame_Text_22:
 # 319 "data/expansion_1/scene01.pory"
-	.string "…Well, I certainly don't have any\nspecial sensory powers, at least.$"
+	.string "…{PAUSE 100}Well, I certainly don't have any\nspecial sensory powers, at least.$"
 
 SSTidal_Scene01_OnFrame_Text_23:
 # 324 "data/expansion_1/scene01.pory"
-	.string "… … …\p"
-	.string "The hell is… that?$"
+	.string "…{PAUSE 60} …{PAUSE 60} …\p"
+	.string "The hell is… {PAUSE 100}that?$"
 
 SSTidal_Scene01_OnFrame_Text_24:
 # 330 "data/expansion_1/scene01.pory"
-	.string "The “hell” is what?$"
+	.string "The {PAUSE 30}“hell” {PAUSE 60}is what?$"
 
 SSTidal_Scene01_OnFrame_Text_25:
 # 334 "data/expansion_1/scene01.pory"
@@ -1108,12 +1108,12 @@ SSTidal_Scene01_OnFrame_Text_25:
 
 SSTidal_Scene01_OnFrame_Text_26:
 # 339 "data/expansion_1/scene01.pory"
-	.string "Huh. There is a blur.$"
+	.string "Huh. {PAUSE 60}There is a blur.$"
 
 SSTidal_Scene01_OnFrame_Text_27:
 # 349 "data/expansion_1/scene01.pory"
 	.string "I know I said I didn't test it, but\nI did test the opening sequence.\p"
-	.string "That… wasn't… there…$"
+	.string "That… {PAUSE 100}wasn't… {PAUSE 100}there…$"
 
 SSTidal_Scene01_OnFrame_Text_28:
 # 358 "data/expansion_1/scene01.pory"
@@ -1137,15 +1137,15 @@ SSTidal_Scene01_OnFrame_Text_32:
 
 SSTidal_Scene01_OnFrame_Text_33:
 # 386 "data/expansion_1/scene01.pory"
-	.string "W-Woah?! The boat…the floor?!$"
+	.string "W- {PAUSE 30}Woah?! The boat…{PAUSE 100}the floor?!$"
 
 SSTidal_Scene01_OnFrame_Text_34:
 # 390 "data/expansion_1/scene01.pory"
-	.string "I- I did enable the debug menu,\ndidn't I…?$"
+	.string "I- {PAUSE 30}I did enable the debug menu,\ndidn't I…?$"
 
 SSTidal_Scene01_OnFrame_Text_35:
 # 394 "data/expansion_1/scene01.pory"
-	.string "W- Water…!? Where… wait…!$"
+	.string "W- {PAUSE 30}Water…!? {PAUSE 100}Where… {PAUSE 100}wait…!$"
 
 SSTidal_Scene01_OnFrame_Text_36:
 # 398 "data/expansion_1/scene01.pory"
@@ -1153,10 +1153,10 @@ SSTidal_Scene01_OnFrame_Text_36:
 
 IllusoryGrotto_B4F_1R_Scene01_OnFrame_Text_0:
 # 431 "data/expansion_1/scene01.pory"
-	.string "… … …\p"
+	.string "… {PAUSE 60}… {PAUSE 60}…\p"
 	.string "You wake in a dark cave, the gentle\nsounds of waves crashing against a\lshoreline.$"
 
 IllusoryGrotto_B4F_1R_Scene01_OnFrame_Text_1:
 # 452 "data/expansion_1/scene01.pory"
-	.string "… … …\p"
+	.string "… {PAUSE 60}… {PAUSE 60}…\p"
 	.string "Where is everyone?$"

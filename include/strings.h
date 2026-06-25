@@ -1833,6 +1833,7 @@ extern const u8 gText_Harper[];
 extern const u8 gText_Redd[];
 extern const u8 gText_Sakura[];
 extern const u8 gText_Baron[];
+extern const u8 gText_BaronsMom[];
 extern const u8 gText_LookerMatchCallDesc[];
 extern const u8 gText_LookerMatchCallName[];
 extern const u8 gText_MatchCallJakson_Strategy[];
@@ -2324,11 +2325,5 @@ extern const u8 gText_Girl[];
 
 // Emeralbody Version
 extern const u8 gText_EmeralbodyVersionNumber[];
-
-extern const u8 gText_Jakson[];
-extern const u8 gText_Harper[];
-extern const u8 gText_Redd[];
-extern const u8 gText_Sakura[];
-extern const u8 gText_Baron[];
 
 #endif // GUARD_STRINGS_H

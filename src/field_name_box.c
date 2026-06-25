@@ -34,6 +34,7 @@ static const u16 gNameboxHarper_Pal[] = INCGFX_U16("graphics/text_window/namebox
 static const u16 gNameboxRedd_Pal[] = INCGFX_U16("graphics/text_window/namebox/redd.pal", ".gbapal");
 static const u16 gNameboxSakura_Pal[] = INCGFX_U16("graphics/text_window/namebox/sakura.pal", ".gbapal");
 static const u16 gNameboxBaron_Pal[] = INCGFX_U16("graphics/text_window/namebox/baron.pal", ".gbapal");
+static const u16 gNameboxBaronsMom_Pal[] = INCGFX_U16("graphics/text_window/namebox/baronsmom.pal", ".gbapal");
 
 void PrepareNamebox(u32 tileNum)
 {
@@ -86,6 +87,10 @@ void PrepareNamebox(u32 tileNum)
     }
     else if (!StringCompare(strbuf, gText_Baron)) {
         LoadPalette(gNameboxBaron_Pal, BG_PLTT_ID(13), PLTT_SIZE_4BPP);
+        windowPal = 13;
+    }
+    else if (!StringCompare(strbuf, gText_BaronsMom)) {
+        LoadPalette(gNameboxBaronsMom_Pal, BG_PLTT_ID(13), PLTT_SIZE_4BPP);
         windowPal = 13;
     }
 

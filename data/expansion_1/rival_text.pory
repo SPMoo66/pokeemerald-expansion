@@ -312,21 +312,49 @@ text Exp1_Town04_JaksonText {
 
 #Town05
 text Exp1_Town05_SakuraText {
-	format( "")
+	format( "Well, {PLAYER}?\n"
+			"Are you smelling the treasure yet?\p"
+			"… {PAUSE 30}… {PAUSE 30}…\p"
+			"Oh, me nether, but I'm hot on its trail{EMOJI_TILDE}\p"
+			"I heard once that treasure smells like\n"
+			"chocolate! Keep your nose locked and\l"
+			"loaded for the chocolate crusades!")
 }
 
 text Exp1_Town05_HarperText {
-	format( "")
-}
-
-text Exp1_Town05_ReddText {
-	format( "")
+	format( "Hm? Oh, yeah, I'm hanging back a\n"
+			"bit on purpose.\p"
+			"Jakson's a clever boy. He can solve\n"
+			"a puzzle or two while I take a break.\p"
+			"Though… {PAUSE 100}looking around here, there's\n"
+			"two small fountains and two large ones.\p"
+			"I'd guess you have to fill them for us\n"
+			"to move on, so look for a way to do that.")
 }
 
 text Exp1_Town05_BaronText {
-	format( "")
+	format( "Oh!\p"
+			"Gosh, {PLAYER}, you gave me a startle.\p"
+			"Whenever I have to go underwater like\n"
+			"that I always feel the urge to hold my\l"
+			"breath.\p"
+			"Y- {PAUSE 30}Yeah… {PAUSE 100}in real life.\p"
+			"It ends up making me feel a little dizzy.")
 }
 
 text Exp1_Town05_JaksonText {
-	format( "")
+	format( "Once the water's gone, it'll appear?\p"
+			"Well, there's water here in this room,\n"
+			"so we must need to drain it somehow.\p"
+			"Baron went on ahead.\n"
+			"Try and see if he's found anything.")
+}
+
+text Exp1_Town05b_JaksonText {
+	format( "That water sure cleared out fast!\p"
+			"It looks like you two did it!\n"
+			"Let's check out the main chamber\l"
+			"when we get a chance.\p"
+			"The odds are that we're one step\n"
+			"closer to completion.")
 }

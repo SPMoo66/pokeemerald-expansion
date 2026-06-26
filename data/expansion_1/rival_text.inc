@@ -292,20 +292,48 @@ Exp1_Town04_JaksonText::
 
 Exp1_Town05_SakuraText::
 # 314 "data/expansion_1/rival_text.pory"
-	.string "$"
+	.string "Well, {PLAYER}?\n"
+	.string "Are you smelling the treasure yet?\p"
+	.string "… {PAUSE 30}… {PAUSE 30}…\p"
+	.string "Oh, me nether, but I'm hot on its trail{EMOJI_TILDE}\p"
+	.string "I heard once that treasure smells like\n"
+	.string "chocolate! Keep your nose locked and\l"
+	.string "loaded for the chocolate crusades!$"
 
 Exp1_Town05_HarperText::
-# 318 "data/expansion_1/rival_text.pory"
-	.string "$"
-
-Exp1_Town05_ReddText::
-# 322 "data/expansion_1/rival_text.pory"
-	.string "$"
+# 324 "data/expansion_1/rival_text.pory"
+	.string "Hm? Oh, yeah, I'm hanging back a\n"
+	.string "bit on purpose.\p"
+	.string "Jakson's a clever boy. He can solve\n"
+	.string "a puzzle or two while I take a break.\p"
+	.string "Though… {PAUSE 100}looking around here, there's\n"
+	.string "two small fountains and two large ones.\p"
+	.string "I'd guess you have to fill them for us\n"
+	.string "to move on, so look for a way to do that.$"
 
 Exp1_Town05_BaronText::
-# 326 "data/expansion_1/rival_text.pory"
-	.string "$"
+# 335 "data/expansion_1/rival_text.pory"
+	.string "Oh!\p"
+	.string "Gosh, {PLAYER}, you gave me a startle.\p"
+	.string "Whenever I have to go underwater like\n"
+	.string "that I always feel the urge to hold my\l"
+	.string "breath.\p"
+	.string "Y- {PAUSE 30}Yeah… {PAUSE 100}in real life.\p"
+	.string "It ends up making me feel a little dizzy.$"
 
 Exp1_Town05_JaksonText::
-# 330 "data/expansion_1/rival_text.pory"
-	.string "$"
+# 345 "data/expansion_1/rival_text.pory"
+	.string "Once the water's gone, it'll appear?\p"
+	.string "Well, there's water here in this room,\n"
+	.string "so we must need to drain it somehow.\p"
+	.string "Baron went on ahead.\n"
+	.string "Try and see if he's found anything.$"
+
+Exp1_Town05b_JaksonText::
+# 353 "data/expansion_1/rival_text.pory"
+	.string "That water sure cleared out fast!\p"
+	.string "It looks like you two did it!\n"
+	.string "Let's check out the main chamber\l"
+	.string "when we get a chance.\p"
+	.string "The odds are that we're one step\n"
+	.string "closer to completion.$"

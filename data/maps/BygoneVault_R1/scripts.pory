@@ -1,1 +1,8 @@
-mapscripts BygoneVault_R1_MapScripts {}
+mapscripts BygoneVault_R1_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_1)
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 42) {
+			clearflag (FLAG_TEMP_1)
+		}
+	}
+}

@@ -75,7 +75,7 @@ mapscripts BygoneVault_R2_MapScripts {
 		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
 			setflag (FLAG_TEMP_1)
 		}
-		if (flag(FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN)) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) != 42) {
 			setflag (FLAG_TEMP_5)
 		}
 		if (flag(FLAG_PLAY_AS_FIRST_MON_IN_PARTY)) {

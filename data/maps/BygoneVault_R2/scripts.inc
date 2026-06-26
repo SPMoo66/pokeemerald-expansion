@@ -141,7 +141,8 @@ BygoneVault_R2_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	goto_if_set FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH, BygoneVault_R2_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 BygoneVault_R2_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 78 "data/maps/BygoneVault_R2/scripts.pory"
-	goto_if_set FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN, BygoneVault_R2_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
+	compare VAR_EMERALBODY_RIVAL_STATE, 42
+	goto_if_ne BygoneVault_R2_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
 BygoneVault_R2_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 81 "data/maps/BygoneVault_R2/scripts.pory"
 	goto_if_set FLAG_PLAY_AS_FIRST_MON_IN_PARTY, BygoneVault_R2_MapScripts_MAP_SCRIPT_ON_TRANSITION_8

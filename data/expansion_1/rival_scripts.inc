@@ -209,3 +209,45 @@ Jakson_Exp1_Town04::
 	msgbox Exp1_Town04_JaksonText, MSGBOX_NPC
 	return
 
+
+Sakura_Exp1_Town05::
+# 163 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 164 "data/expansion_1/rival_scripts.pory"
+	msgbox Exp1_Town05_SakuraText, MSGBOX_NPC
+	return
+
+
+Harper_Exp1_Town05::
+# 168 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Harper
+# 169 "data/expansion_1/rival_scripts.pory"
+	msgbox Exp1_Town05_HarperText, MSGBOX_NPC
+	return
+
+
+Baron_Exp1_Town05::
+# 173 "data/expansion_1/rival_scripts.pory"
+	call GetBaronsName
+# 174 "data/expansion_1/rival_scripts.pory"
+	msgbox Exp1_Town05_BaronText, MSGBOX_NPC
+	return
+
+
+Jakson_Exp1_Town05::
+# 178 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 179 "data/expansion_1/rival_scripts.pory"
+	goto_if_unset FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH, Jakson_Exp1_Town05_2
+# 183 "data/expansion_1/rival_scripts.pory"
+	msgbox Exp1_Town05b_JaksonText, MSGBOX_NPC
+Jakson_Exp1_Town05_1:
+# 185 "data/expansion_1/rival_scripts.pory"
+	release
+	return
+
+Jakson_Exp1_Town05_2:
+# 180 "data/expansion_1/rival_scripts.pory"
+	msgbox Exp1_Town05_JaksonText, MSGBOX_NPC
+	goto Jakson_Exp1_Town05_1
+

@@ -157,3 +157,30 @@ script Jakson_Exp1_Town04 {
 	speakername (CommonText_Jakson)
 	msgbox(Exp1_Town04_JaksonText, MSGBOX_NPC)
 }
+
+#Town05
+script Sakura_Exp1_Town05 {
+	speakername (CommonText_Sakura)
+	msgbox(Exp1_Town05_SakuraText, MSGBOX_NPC)
+}
+
+script Harper_Exp1_Town05 {
+	speakername (CommonText_Harper)
+	msgbox(Exp1_Town05_HarperText, MSGBOX_NPC)
+}
+
+script Baron_Exp1_Town05 {
+	call (GetBaronsName)
+	msgbox(Exp1_Town05_BaronText, MSGBOX_NPC)
+}
+
+script Jakson_Exp1_Town05 {
+	speakername (CommonText_Jakson)
+	if (!flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH)) {
+		msgbox(Exp1_Town05_JaksonText, MSGBOX_NPC)
+	}
+	else {
+		msgbox(Exp1_Town05b_JaksonText, MSGBOX_NPC)
+	}
+	release
+}

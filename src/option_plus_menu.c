@@ -886,6 +886,8 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsAnimateAfterKO   = sOptions->sel_custom[MENUITEM_CUSTOM_ANIMATE_AFTER_KO];
     gSaveBlock2Ptr->optionsWarnings         = sOptions->sel_custom[MENUITEM_CUSTOM_WARNINGS_SPOILERS];
 
+    VarSet (VAR_TEMP_6, 0);
+
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
 }

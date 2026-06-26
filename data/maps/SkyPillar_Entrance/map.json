@@ -3,7 +3,6 @@
   "name": "SkyPillar_Entrance",
   "layout": "LAYOUT_SKY_PILLAR_ENTRANCE",
   "music": "MUS_MT_CHIMNEY",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_SKY_PILLAR",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -13,7 +12,7 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
@@ -54,9 +53,35 @@
       "var": "FLAG_DEFEATED_RIVAL_SKY_PILLAR",
       "var_value": "0",
       "script": "SkyPillar_Rival_Battle"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningSkyPillarRival"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningSkyPillarRival"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningSkyPillarRival"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }

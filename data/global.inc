@@ -1791,169 +1791,108 @@ GetRivalMusic_8:
 	return
 
 
-Emote_Test::
-# 1302 "data/global.pory"
-	lock
-# 1303 "data/global.pory"
-	applymovement 11, Common_Movement_MusicNote
-# 1304 "data/global.pory"
-	delay 70
-# 1305 "data/global.pory"
-	applymovement 11, Common_Movement_Smile
-# 1306 "data/global.pory"
-	delay 70
-# 1307 "data/global.pory"
-	applymovement 11, Common_Movement_SweatDrop
-# 1308 "data/global.pory"
-	delay 70
-# 1309 "data/global.pory"
-	applymovement 11, Common_Movement_Talking
-# 1310 "data/global.pory"
-	delay 70
-# 1311 "data/global.pory"
-	applymovement 11, Common_Movement_Thinking
-# 1312 "data/global.pory"
-	delay 70
-# 1313 "data/global.pory"
-	release
-	return
-
-
 IncreasePokevialSize::
-# 1317 "data/global.pory"
+# 1302 "data/global.pory"
 	speakername NULL
-# 1318 "data/global.pory"
+# 1303 "data/global.pory"
 	pokevialincreasesize
-# 1319 "data/global.pory"
+# 1304 "data/global.pory"
 	message Text_PokevialSizeIncrease
-# 1320 "data/global.pory"
+# 1305 "data/global.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 1321 "data/global.pory"
+# 1306 "data/global.pory"
 	waitmessage
-# 1322 "data/global.pory"
+# 1307 "data/global.pory"
 	delay 60
 	return
 
 
 BufferNumberSring0::
-# 1331 "data/global.pory"
+# 1316 "data/global.pory"
 	buffernumberstring 0, VAR_TEMP_0
-# 1332 "data/global.pory"
+# 1317 "data/global.pory"
 	msgbox BufferNumberSring0_Text_0
-# 1333 "data/global.pory"
+# 1318 "data/global.pory"
 	closemessage
 	return
 
 
 PlayersHouse_2F_EventScript_Notebook::
-# 1337 "data/global.pory"
+# 1322 "data/global.pory"
 	msgbox PlayersHouse_2F_EventScript_Notebook_Text_0
-# 1339 "data/global.pory"
+# 1324 "data/global.pory"
 	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_1, 0
-# 1340 "data/global.pory"
+# 1325 "data/global.pory"
 	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_2, 1
-# 1341 "data/global.pory"
+# 1326 "data/global.pory"
 	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_3, 2
-# 1342 "data/global.pory"
+# 1327 "data/global.pory"
 	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_4, 3
-# 1343 "data/global.pory"
+# 1328 "data/global.pory"
 	goto_if_set FLAG_TERA_ENABLED, PlayersHouse_2F_EventScript_Notebook_2
 PlayersHouse_2F_EventScript_Notebook_1:
-# 1346 "data/global.pory"
+# 1331 "data/global.pory"
 	goto_if_set FLAG_ITEM_REALMS_FRAY_MEGA_RING, PlayersHouse_2F_EventScript_Notebook_5
 PlayersHouse_2F_EventScript_Notebook_4:
-# 1349 "data/global.pory"
+# 1334 "data/global.pory"
 	dynmultistack 0, 0, FALSE, 6, FALSE, VAR_0x800A, DYN_MULTICHOICE_CB_NONE
-# 1350 "data/global.pory"
+# 1335 "data/global.pory"
 	closemessage
-# 1351 "data/global.pory"
+# 1336 "data/global.pory"
 	switch VAR_RESULT
-# 1352 "data/global.pory"
+# 1337 "data/global.pory"
 	case 0, PlayersHouse_2F_EventScript_Notebook_8
-# 1354 "data/global.pory"
+# 1339 "data/global.pory"
 	case 1, PlayersHouse_2F_EventScript_Notebook_9
-# 1356 "data/global.pory"
+# 1341 "data/global.pory"
 	case 2, PlayersHouse_2F_EventScript_Notebook_10
-# 1358 "data/global.pory"
+# 1343 "data/global.pory"
 	case 3, PlayersHouse_2F_EventScript_Notebook_11
-# 1360 "data/global.pory"
+# 1345 "data/global.pory"
 	case 4, PlayersHouse_2F_EventScript_Notebook_12
-# 1362 "data/global.pory"
+# 1347 "data/global.pory"
 	case 5, PlayersHouse_2F_EventScript_Notebook_13
 	return
 
 PlayersHouse_2F_EventScript_Notebook_2:
-# 1344 "data/global.pory"
+# 1329 "data/global.pory"
 	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_5, 4
 	goto PlayersHouse_2F_EventScript_Notebook_1
 
 PlayersHouse_2F_EventScript_Notebook_5:
-# 1347 "data/global.pory"
+# 1332 "data/global.pory"
 	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_6, 5
 	goto PlayersHouse_2F_EventScript_Notebook_4
 
 PlayersHouse_2F_EventScript_Notebook_8:
-# 1353 "data/global.pory"
+# 1338 "data/global.pory"
 	helpwindow HELP_BATTLE_CONTROLS
 	return
 
 PlayersHouse_2F_EventScript_Notebook_9:
-# 1355 "data/global.pory"
+# 1340 "data/global.pory"
 	helpwindow HELP_POKEDEX
 	return
 
 PlayersHouse_2F_EventScript_Notebook_10:
-# 1357 "data/global.pory"
+# 1342 "data/global.pory"
 	helpwindow HELP_SHOP_INVENTORY
 	return
 
 PlayersHouse_2F_EventScript_Notebook_11:
-# 1359 "data/global.pory"
+# 1344 "data/global.pory"
 	helpwindow HELP_FLYING
 	return
 
 PlayersHouse_2F_EventScript_Notebook_12:
-# 1361 "data/global.pory"
+# 1346 "data/global.pory"
 	helpwindow HELP_TERASTALLIZATION
 	return
 
 PlayersHouse_2F_EventScript_Notebook_13:
-# 1363 "data/global.pory"
+# 1348 "data/global.pory"
 	helpwindow HELP_MEGA_EVOLUTION
 	return
-
-
-WarningOptionTest::
-# 1368 "data/global.pory"
-	checkwarningoption
-# 1369 "data/global.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq WarningOptionTest_2
-# 1372 "data/global.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq WarningOptionTest_3
-# 1375 "data/global.pory"
-	compare VAR_RESULT, 2
-	goto_if_eq WarningOptionTest_4
-WarningOptionTest_1:
-# 1378 "data/global.pory"
-	closemessage
-	return
-
-WarningOptionTest_2:
-# 1370 "data/global.pory"
-	msgbox WarningOptionTest_Text_0
-	goto WarningOptionTest_1
-
-WarningOptionTest_3:
-# 1373 "data/global.pory"
-	msgbox WarningOptionTest_Text_1
-	goto WarningOptionTest_1
-
-WarningOptionTest_4:
-# 1376 "data/global.pory"
-	msgbox WarningOptionTest_Text_2
-	goto WarningOptionTest_1
 
 
 Mart_EventScript_TMClerk_Text_0:
@@ -2180,49 +2119,37 @@ EventScript_CapCollector_Text_29:
 	.string "this item.$"
 
 BufferNumberSring0_Text_0:
-# 1332 "data/global.pory"
+# 1317 "data/global.pory"
 	.string "{STR_VAR_1}$"
 
 PlayersHouse_2F_EventScript_Notebook_Text_0:
-# 1337 "data/global.pory"
+# 1322 "data/global.pory"
 	.string "{PLAYER} flipped open the notebook.\n"
 	.string "Which section would you like to view?$"
 
 PlayersHouse_2F_EventScript_Notebook_Text_1:
-# 1339 "data/global.pory"
+# 1324 "data/global.pory"
 	.string "Battle Controls$"
 
 PlayersHouse_2F_EventScript_Notebook_Text_2:
-# 1340 "data/global.pory"
+# 1325 "data/global.pory"
 	.string "Pokédex$"
 
 PlayersHouse_2F_EventScript_Notebook_Text_3:
-# 1341 "data/global.pory"
+# 1326 "data/global.pory"
 	.string "Shop Inventory$"
 
 PlayersHouse_2F_EventScript_Notebook_Text_4:
-# 1342 "data/global.pory"
+# 1327 "data/global.pory"
 	.string "Flying$"
 
 PlayersHouse_2F_EventScript_Notebook_Text_5:
-# 1344 "data/global.pory"
+# 1329 "data/global.pory"
 	.string "Terastallization$"
 
 PlayersHouse_2F_EventScript_Notebook_Text_6:
-# 1347 "data/global.pory"
+# 1332 "data/global.pory"
 	.string "Mega Evolution$"
-
-WarningOptionTest_Text_0:
-# 1370 "data/global.pory"
-	.string "0$"
-
-WarningOptionTest_Text_1:
-# 1373 "data/global.pory"
-	.string "1$"
-
-WarningOptionTest_Text_2:
-# 1376 "data/global.pory"
-	.string "2$"
 
 BottleCapCollectorIntro::
 # 774 "data/global.pory"
@@ -2637,5 +2564,5 @@ Text_7th::
 	.string "7th$"
 
 Text_System::
-# 1325 "data/global.pory"
+# 1310 "data/global.pory"
 	.string "System$"

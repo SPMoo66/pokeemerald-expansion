@@ -1298,21 +1298,6 @@ text Text_7th {
 	"7th"
 }
 
-script Emote_Test {
-	lock
-	applymovement (11, Common_Movement_MusicNote)
-	delay (70)
-	applymovement (11, Common_Movement_Smile)
-	delay (70)
-	applymovement (11, Common_Movement_SweatDrop)
-	delay (70)
-	applymovement (11, Common_Movement_Talking)
-	delay (70)
-	applymovement (11, Common_Movement_Thinking)
-	delay (70)
-	release
-}
-
 script IncreasePokevialSize {
 	speakername (NULL)
 	pokevialincreasesize
@@ -1364,16 +1349,31 @@ script PlayersHouse_2F_EventScript_Notebook {
 	}
 }
 
-script WarningOptionTest {
-	checkwarningoption
-	if (var(VAR_RESULT) == 0) {
-		msgbox ("0")
-	}
-	elif (var(VAR_RESULT) == 1) {
-		msgbox ("1")
-	}
-	elif (var(VAR_RESULT) == 2) {
-		msgbox ("2")
-	}
-	closemessage
-}
+#script Emote_Test {
+#	lock
+#	applymovement (11, Common_Movement_MusicNote)
+#	delay (70)
+#	applymovement (11, Common_Movement_Smile)
+#	delay (70)
+#	applymovement (11, Common_Movement_SweatDrop)
+#	delay (70)
+#	applymovement (11, Common_Movement_Talking)
+#	delay (70)
+#	applymovement (11, Common_Movement_Thinking)
+#	delay (70)
+#	release
+#}
+
+#script WarningOptionTest {
+#	checkwarningoption
+#	if (var(VAR_RESULT) == 0) {
+#		msgbox ("0")
+#	}
+#	elif (var(VAR_RESULT) == 1) {
+#		msgbox ("1")
+#	}
+#	elif (var(VAR_RESULT) == 2) {
+#		msgbox ("2")
+#	}
+#	closemessage
+#}

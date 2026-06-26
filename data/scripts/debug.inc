@@ -206,7 +206,9 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	call WarningOptionTest
+	clearflag FLAG_DEFEATED_RIVAL_SKY_PILLAR
+	warp MAP_SKY_PILLAR_ENTRANCE, 0
+	waitstate
 	release
 	end
 

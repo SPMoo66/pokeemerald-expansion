@@ -8,14 +8,46 @@ script CheckBattleWarningLevel {
 		msgbox (ChallengingBattleImminent, MSGBOX_AUTOCLOSE)
 		end
 	}
+	msgbox (ChallengingBattleImminent)
 }
 
 text ChallengingBattleImminent {
 	"A challenging battle is imminent."
 }
 
-script BattleWarningRegiagua {
+
+# Brendan/May battles
+
+text OpponentBrendanMay {
+	"The opponent is Brendan/May."
+}
+
+script BattleWarningRoute119Rival {
+	if (var(VAR_ROUTE119_STATE) >= 1) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
 	call (CheckBattleWarningLevel)
-	msgbox (ChallengingBattleImminent)
+	msgbox (OpponentBrendanMay, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningSkyPillarRival {
+	if (flag(FLAG_DEFEATED_RIVAL_SKY_PILLAR)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	msgbox (OpponentBrendanMay, MSGBOX_AUTOCLOSE)
+}
+
+
+# Expansion 1
+
+script BattleWarningRegiagua {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 40) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
 	msgbox ("The opponent is Water Type.", MSGBOX_AUTOCLOSE)
 }

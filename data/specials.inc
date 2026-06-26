@@ -556,6 +556,7 @@ gSpecials::
 	def_special TeleportCamera
 	def_special BufferUnitSystemText
 	def_special GetNumberOfBadges
+	def_special CheckWarningOption
 	def_special PlayerHasMulch
 	def_special Bag_ChooseMulch
 	def_special ObjectEventInteractionApplyMulch

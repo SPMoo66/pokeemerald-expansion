@@ -206,8 +206,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	readelitefour
-	copyvar VAR_TEMP_0, VAR_0x8000
+	call WarningOptionTest
 	release
 	end
 

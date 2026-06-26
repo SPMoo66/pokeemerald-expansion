@@ -1363,3 +1363,17 @@ script PlayersHouse_2F_EventScript_Notebook {
 			helpwindow(HELP_MEGA_EVOLUTION)
 	}
 }
+
+script WarningOptionTest {
+	checkwarningoption
+	if (var(VAR_RESULT) == 0) {
+		msgbox ("0")
+	}
+	elif (var(VAR_RESULT) == 1) {
+		msgbox ("1")
+	}
+	elif (var(VAR_RESULT) == 2) {
+		msgbox ("2")
+	}
+	closemessage
+}

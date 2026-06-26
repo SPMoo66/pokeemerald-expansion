@@ -628,6 +628,7 @@ struct SaveBlock2
              u8 optionsSurfMusic:1;         //tx_optionsPlus
              u8 optionsAnimateAfterKO:1;    //tx_optionsPlus
              u8 optionsLevelSync:1;         //tx_optionsPlus
+             u8 optionsWarnings:2;          //tx_optionsPlus
              u8 padding[0x4];          //Will save 4 bytes for later, likely for options
 
      /*notes on padding*/

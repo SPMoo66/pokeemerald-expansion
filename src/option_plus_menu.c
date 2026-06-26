@@ -53,6 +53,7 @@ enum
     MENUITEM_CUSTOM_LEVEL_CAPS,
     MENUITEM_CUSTOM_LEVEL_SYNC,
     MENUITEM_CUSTOM_ANIMATE_AFTER_KO,
+    MENUITEM_CUSTOM_WARNINGS_SPOILERS,
     MENUITEM_CUSTOM_CANCEL,
     MENUITEM_CUSTOM_COUNT,
 };
@@ -181,6 +182,7 @@ static void DrawChoices_SurfMusic(int selection, int y);
 static void DrawChoices_LevelCaps(int selection, int y);
 static void DrawChoices_LevelSync(int selection, int y);
 static void DrawChoices_AnimateAfterKO(int selection, int y);
+static void DrawChoices_WarningsSpoilers(int selection, int y);
 static void DrawBgWindowFrames(void);
 
 // EWRAM vars
@@ -229,29 +231,31 @@ struct // MENU_CUSTOM
     int (*processInput)(int selection);
 } static const sItemFunctionsCustom[MENUITEM_CUSTOM_COUNT] =
 {
-    [MENUITEM_CUSTOM_HP_BAR]            = {DrawChoices_BarSpeed,       ProcessInput_Options_Eleven},
-    [MENUITEM_CUSTOM_BATTLE_SPEED]      = {DrawChoices_BattleSpeed,    ProcessInput_Options_Four},
-    [MENUITEM_CUSTOM_OVERWORLD_SPEED]   = {DrawChoices_OverworldSpeed, ProcessInput_Options_Four},
-    [MENUITEM_CUSTOM_FONT]              = {DrawChoices_Font,           ProcessInput_Options_Two}, 
-    [MENUITEM_CUSTOM_MATCHCALL]         = {DrawChoices_MatchCall,      ProcessInput_Options_Two},
-    [MENUITEM_CUSTOM_MUSIC_REGION]      = {DrawChoices_MusicRegion,    ProcessInput_Options_Four},
-    [MENUITEM_CUSTOM_SURF_MUSIC]        = {DrawChoices_SurfMusic,      ProcessInput_Options_Two},
-    [MENUITEM_CUSTOM_LEVEL_CAPS]        = {DrawChoices_LevelCaps,      ProcessInput_Options_Two},
-    [MENUITEM_CUSTOM_LEVEL_SYNC]        = {DrawChoices_LevelSync,      ProcessInput_Options_Two},
-    [MENUITEM_CUSTOM_ANIMATE_AFTER_KO]  = {DrawChoices_AnimateAfterKO, ProcessInput_Options_Two},
+    [MENUITEM_CUSTOM_HP_BAR]            = {DrawChoices_BarSpeed,         ProcessInput_Options_Eleven},
+    [MENUITEM_CUSTOM_BATTLE_SPEED]      = {DrawChoices_BattleSpeed,      ProcessInput_Options_Four},
+    [MENUITEM_CUSTOM_OVERWORLD_SPEED]   = {DrawChoices_OverworldSpeed,   ProcessInput_Options_Four},
+    [MENUITEM_CUSTOM_FONT]              = {DrawChoices_Font,             ProcessInput_Options_Two}, 
+    [MENUITEM_CUSTOM_MATCHCALL]         = {DrawChoices_MatchCall,        ProcessInput_Options_Two},
+    [MENUITEM_CUSTOM_MUSIC_REGION]      = {DrawChoices_MusicRegion,      ProcessInput_Options_Four},
+    [MENUITEM_CUSTOM_SURF_MUSIC]        = {DrawChoices_SurfMusic,        ProcessInput_Options_Two},
+    [MENUITEM_CUSTOM_LEVEL_CAPS]        = {DrawChoices_LevelCaps,        ProcessInput_Options_Two},
+    [MENUITEM_CUSTOM_LEVEL_SYNC]        = {DrawChoices_LevelSync,        ProcessInput_Options_Two},
+    [MENUITEM_CUSTOM_ANIMATE_AFTER_KO]  = {DrawChoices_AnimateAfterKO,   ProcessInput_Options_Two},
+    [MENUITEM_CUSTOM_WARNINGS_SPOILERS] = {DrawChoices_WarningsSpoilers, ProcessInput_Options_Three},
     [MENUITEM_CUSTOM_CANCEL]            = {NULL, NULL},
 };
 
 // Menu left side option names text
-static const u8 sText_HpBar[]          = _("HP bar");
-static const u8 sText_BattleSpeed[]    = _("Battle speed");
-static const u8 sText_OverworldSpeed[] = _("Overworld speed");
-static const u8 sText_UnitSystem[]     = _("Unit System");
-static const u8 gText_MusicRegion[]    = _("Battle music");
-static const u8 gText_SurfMusic[]      = _("Surf music");
-static const u8 gText_LevelCaps[]      = _("Level caps");
-static const u8 gText_LevelSync[]      = _("Level sync");
-static const u8 gText_AnimateAfterKO[] = _("KO animation");
+static const u8 sText_HpBar[]            = _("HP bar");
+static const u8 sText_BattleSpeed[]      = _("Battle speed");
+static const u8 sText_OverworldSpeed[]   = _("Overworld speed");
+static const u8 sText_UnitSystem[]       = _("Unit System");
+static const u8 gText_MusicRegion[]      = _("Battle music");
+static const u8 gText_SurfMusic[]        = _("Surf music");
+static const u8 gText_LevelCaps[]        = _("Level caps");
+static const u8 gText_LevelSync[]        = _("Level sync");
+static const u8 gText_AnimateAfterKO[]   = _("KO animation");
+static const u8 gText_WarningsSpoilers[] = _("Warnings/Spoilers");
 static const u8 *const sOptionMenuItemsNamesMain[MENUITEM_MAIN_COUNT] =
 {
     [MENUITEM_MAIN_TEXTSPEED]   = gText_TextSpeed,
@@ -266,17 +270,18 @@ static const u8 *const sOptionMenuItemsNamesMain[MENUITEM_MAIN_COUNT] =
 
 static const u8 *const sOptionMenuItemsNamesCustom[MENUITEM_CUSTOM_COUNT] =
 {
-    [MENUITEM_CUSTOM_HP_BAR]           = sText_HpBar,
-    [MENUITEM_CUSTOM_BATTLE_SPEED]     = sText_BattleSpeed,
-    [MENUITEM_CUSTOM_OVERWORLD_SPEED]  = sText_OverworldSpeed,
-    [MENUITEM_CUSTOM_FONT]             = gText_Font,
-    [MENUITEM_CUSTOM_MATCHCALL]        = gText_OptionMatchCalls,
-    [MENUITEM_CUSTOM_MUSIC_REGION]     = gText_MusicRegion,
-    [MENUITEM_CUSTOM_SURF_MUSIC]       = gText_SurfMusic,
-    [MENUITEM_CUSTOM_LEVEL_CAPS]       = gText_LevelCaps,
-    [MENUITEM_CUSTOM_LEVEL_SYNC]       = gText_LevelSync,
-    [MENUITEM_CUSTOM_ANIMATE_AFTER_KO] = gText_AnimateAfterKO,
-    [MENUITEM_CUSTOM_CANCEL]           = gText_OptionMenuSave,
+    [MENUITEM_CUSTOM_HP_BAR]            = sText_HpBar,
+    [MENUITEM_CUSTOM_BATTLE_SPEED]      = sText_BattleSpeed,
+    [MENUITEM_CUSTOM_OVERWORLD_SPEED]   = sText_OverworldSpeed,
+    [MENUITEM_CUSTOM_FONT]              = gText_Font,
+    [MENUITEM_CUSTOM_MATCHCALL]         = gText_OptionMatchCalls,
+    [MENUITEM_CUSTOM_MUSIC_REGION]      = gText_MusicRegion,
+    [MENUITEM_CUSTOM_SURF_MUSIC]        = gText_SurfMusic,
+    [MENUITEM_CUSTOM_LEVEL_CAPS]        = gText_LevelCaps,
+    [MENUITEM_CUSTOM_LEVEL_SYNC]        = gText_LevelSync,
+    [MENUITEM_CUSTOM_ANIMATE_AFTER_KO]  = gText_AnimateAfterKO,
+    [MENUITEM_CUSTOM_WARNINGS_SPOILERS] = gText_WarningsSpoilers,
+    [MENUITEM_CUSTOM_CANCEL]            = gText_OptionMenuSave,
 };
 
 static const u8 *const OptionTextRight(u8 menuItem)
@@ -310,17 +315,18 @@ static bool8 CheckConditions(int selection)
     case MENU_CUSTOM:
         switch(selection)
         {
-        case MENUITEM_CUSTOM_BATTLE_SPEED:     return TRUE;
-        case MENUITEM_CUSTOM_OVERWORLD_SPEED:  return TRUE;
-        case MENUITEM_CUSTOM_FONT:             return TRUE;
-        case MENUITEM_CUSTOM_MATCHCALL:        return TRUE;
-        case MENUITEM_CUSTOM_MUSIC_REGION:     return TRUE;
-        case MENUITEM_CUSTOM_SURF_MUSIC:       return TRUE;
-        case MENUITEM_CUSTOM_LEVEL_CAPS:       return TRUE;
-        case MENUITEM_CUSTOM_LEVEL_SYNC:       return TRUE;
-        case MENUITEM_CUSTOM_ANIMATE_AFTER_KO: return TRUE;
-        case MENUITEM_CUSTOM_CANCEL:           return TRUE;
-        case MENUITEM_CUSTOM_COUNT:            return TRUE;
+        case MENUITEM_CUSTOM_BATTLE_SPEED:      return TRUE;
+        case MENUITEM_CUSTOM_OVERWORLD_SPEED:   return TRUE;
+        case MENUITEM_CUSTOM_FONT:              return TRUE;
+        case MENUITEM_CUSTOM_MATCHCALL:         return TRUE;
+        case MENUITEM_CUSTOM_MUSIC_REGION:      return TRUE;
+        case MENUITEM_CUSTOM_SURF_MUSIC:        return TRUE;
+        case MENUITEM_CUSTOM_LEVEL_CAPS:        return TRUE;
+        case MENUITEM_CUSTOM_LEVEL_SYNC:        return TRUE;
+        case MENUITEM_CUSTOM_ANIMATE_AFTER_KO:  return TRUE;
+        case MENUITEM_CUSTOM_WARNINGS_SPOILERS: return TRUE;
+        case MENUITEM_CUSTOM_CANCEL:            return TRUE;
+        case MENUITEM_CUSTOM_COUNT:             return TRUE;
         }
     }
 	return FALSE;
@@ -355,31 +361,35 @@ static const u8 *const sOptionMenuItemDescriptionsMain[MENUITEM_MAIN_COUNT][3] =
 };
 
 // Custom
-static const u8 sText_Desc_BattleHPBar[]        = _("Choose how fast the HP BAR will get\ndrained in battles.");
-static const u8 sText_Desc_BattleSpeed[]        = _("Choose how quickly battles will take\nplace.");
-static const u8 sText_Desc_OverworldSpeed[]     = _("Choose how quickly the overworld\nmoves.        EXPERIMENTAL!");
-static const u8 sText_Desc_FontType[]           = _("Choose the font design.");
-static const u8 sText_Desc_OverworldCallsOn[]   = _("Trainers will be able to call you,\noffering rematches and info.");
-static const u8 sText_Desc_OverworldCallsOff[]  = _("You will not receive calls.\nSpecial events will still occur.");
-static const u8 sText_Desc_MusicRegion[]        = _("Choose battle music from any\nlisted region.");
-static const u8 sText_Desc_SurfMusic[]          = _("Choose whether music changes\nwhile surfing.");
-static const u8 sText_Desc_LevelCapsOn[]        = _("Level caps are enabled.\nCurrent level cap: {STR_VAR_1}.");
-static const u8 sText_Desc_LevelCapsOff[]       = _("Level caps are disabled.");
-static const u8 sText_Desc_LevelSync[]          = _("Choose whether trainer Pokémon\nlevels are synced to you.");
-static const u8 sText_Desc_AnimateAfterKO[]     = _("Choose whether Pokémon animate\nafter getting a knockout.");
-static const u8 *const sOptionMenuItemDescriptionsCustom[MENUITEM_CUSTOM_COUNT][2] =
+static const u8 sText_Desc_BattleHPBar[]         = _("Choose how fast the HP BAR will get\ndrained in battles.");
+static const u8 sText_Desc_BattleSpeed[]         = _("Choose how quickly battles will take\nplace.");
+static const u8 sText_Desc_OverworldSpeed[]      = _("Choose how quickly the overworld\nmoves.        EXPERIMENTAL!");
+static const u8 sText_Desc_FontType[]            = _("Choose the font design.");
+static const u8 sText_Desc_OverworldCallsOn[]    = _("Trainers will be able to call you,\noffering rematches and info.");
+static const u8 sText_Desc_OverworldCallsOff[]   = _("You will not receive calls.\nSpecial events will still occur.");
+static const u8 sText_Desc_MusicRegion[]         = _("Choose battle music from any\nlisted region.");
+static const u8 sText_Desc_SurfMusic[]           = _("Choose whether music changes\nwhile surfing.");
+static const u8 sText_Desc_LevelCapsOn[]         = _("Level caps are enabled.\nCurrent level cap: {STR_VAR_1}.");
+static const u8 sText_Desc_LevelCapsOff[]        = _("Level caps are disabled.");
+static const u8 sText_Desc_LevelSync[]           = _("Choose whether trainer Pokémon\nlevels are synced to you.");
+static const u8 sText_Desc_AnimateAfterKO[]      = _("Choose whether Pokémon animate\nafter getting a knockout.");
+static const u8 sText_Desc_WarningsSpoilersOff[] = _("Warnings for upcoming battles\nwill not be displayed.");
+static const u8 sText_Desc_WarningsSpoilersLv1[] = _("Simple warnings for upcoming\nbattles will be displayed.");
+static const u8 sText_Desc_WarningsSpoilersLv2[] = _("Detailed warnings for upcoming\nbattles will be displayed.");
+static const u8 *const sOptionMenuItemDescriptionsCustom[MENUITEM_CUSTOM_COUNT][3] =
 {
-    [MENUITEM_CUSTOM_HP_BAR]           = {sText_Desc_BattleHPBar,        sText_Empty},
-    [MENUITEM_CUSTOM_BATTLE_SPEED]     = {sText_Desc_BattleSpeed,        sText_Empty},
-    [MENUITEM_CUSTOM_OVERWORLD_SPEED]  = {sText_Desc_OverworldSpeed,     sText_Empty},
-    [MENUITEM_CUSTOM_FONT]             = {sText_Desc_FontType,           sText_Desc_FontType},
-    [MENUITEM_CUSTOM_MATCHCALL]        = {sText_Desc_OverworldCallsOn,   sText_Desc_OverworldCallsOff},
-    [MENUITEM_CUSTOM_MUSIC_REGION]     = {sText_Desc_MusicRegion,        sText_Empty},
-    [MENUITEM_CUSTOM_SURF_MUSIC]       = {sText_Desc_SurfMusic,          sText_Desc_SurfMusic},
-    [MENUITEM_CUSTOM_LEVEL_CAPS]       = {sText_Desc_LevelCapsOn,        sText_Desc_LevelCapsOff},
-    [MENUITEM_CUSTOM_LEVEL_SYNC]       = {sText_Desc_LevelSync,          sText_Desc_LevelSync},
-    [MENUITEM_CUSTOM_ANIMATE_AFTER_KO] = {sText_Desc_AnimateAfterKO,     sText_Desc_AnimateAfterKO},
-    [MENUITEM_CUSTOM_CANCEL]           = {sText_Desc_Save,               sText_Empty},
+    [MENUITEM_CUSTOM_HP_BAR]            = {sText_Desc_BattleHPBar,         sText_Empty,                    sText_Empty},
+    [MENUITEM_CUSTOM_BATTLE_SPEED]      = {sText_Desc_BattleSpeed,         sText_Empty,                    sText_Empty},
+    [MENUITEM_CUSTOM_OVERWORLD_SPEED]   = {sText_Desc_OverworldSpeed,      sText_Empty,                    sText_Empty},
+    [MENUITEM_CUSTOM_FONT]              = {sText_Desc_FontType,            sText_Desc_FontType,            sText_Empty},
+    [MENUITEM_CUSTOM_MATCHCALL]         = {sText_Desc_OverworldCallsOn,    sText_Desc_OverworldCallsOff,   sText_Empty},
+    [MENUITEM_CUSTOM_MUSIC_REGION]      = {sText_Desc_MusicRegion,         sText_Empty,                    sText_Empty},
+    [MENUITEM_CUSTOM_SURF_MUSIC]        = {sText_Desc_SurfMusic,           sText_Desc_SurfMusic,           sText_Empty},
+    [MENUITEM_CUSTOM_LEVEL_CAPS]        = {sText_Desc_LevelCapsOn,         sText_Desc_LevelCapsOff,        sText_Empty},
+    [MENUITEM_CUSTOM_LEVEL_SYNC]        = {sText_Desc_LevelSync,           sText_Desc_LevelSync,           sText_Empty},
+    [MENUITEM_CUSTOM_ANIMATE_AFTER_KO]  = {sText_Desc_AnimateAfterKO,      sText_Desc_AnimateAfterKO,      sText_Empty},
+    [MENUITEM_CUSTOM_WARNINGS_SPOILERS] = {sText_Desc_WarningsSpoilersOff, sText_Desc_WarningsSpoilersLv1, sText_Desc_WarningsSpoilersLv2},
+    [MENUITEM_CUSTOM_CANCEL]            = {sText_Desc_Save,                sText_Empty,                    sText_Empty},
 };
 
 // Disabled Descriptions
@@ -400,17 +410,18 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledMain[MENUITEM_MAIN_COU
 static const u8 sText_Desc_Disabled_BattleHPBar[]   = _("Only active if xyz.");
 static const u8 *const sOptionMenuItemDescriptionsDisabledCustom[MENUITEM_CUSTOM_COUNT] =
 {
-    [MENUITEM_CUSTOM_HP_BAR]           = sText_Desc_Disabled_BattleHPBar,
-    [MENUITEM_CUSTOM_BATTLE_SPEED]     = sText_Empty,
-    [MENUITEM_CUSTOM_OVERWORLD_SPEED]  = sText_Empty,
-    [MENUITEM_CUSTOM_FONT]             = sText_Empty,
-    [MENUITEM_CUSTOM_MATCHCALL]        = sText_Empty,
-    [MENUITEM_CUSTOM_MUSIC_REGION]     = sText_Empty,
-    [MENUITEM_CUSTOM_SURF_MUSIC]       = sText_Empty,
-    [MENUITEM_CUSTOM_LEVEL_CAPS]       = sText_Empty,
-    [MENUITEM_CUSTOM_LEVEL_SYNC]       = sText_Empty,
-    [MENUITEM_CUSTOM_ANIMATE_AFTER_KO] = sText_Empty,
-    [MENUITEM_CUSTOM_CANCEL]           = sText_Empty,
+    [MENUITEM_CUSTOM_HP_BAR]            = sText_Desc_Disabled_BattleHPBar,
+    [MENUITEM_CUSTOM_BATTLE_SPEED]      = sText_Empty,
+    [MENUITEM_CUSTOM_OVERWORLD_SPEED]   = sText_Empty,
+    [MENUITEM_CUSTOM_FONT]              = sText_Empty,
+    [MENUITEM_CUSTOM_MATCHCALL]         = sText_Empty,
+    [MENUITEM_CUSTOM_MUSIC_REGION]      = sText_Empty,
+    [MENUITEM_CUSTOM_SURF_MUSIC]        = sText_Empty,
+    [MENUITEM_CUSTOM_LEVEL_CAPS]        = sText_Empty,
+    [MENUITEM_CUSTOM_LEVEL_SYNC]        = sText_Empty,
+    [MENUITEM_CUSTOM_ANIMATE_AFTER_KO]  = sText_Empty,
+    [MENUITEM_CUSTOM_WARNINGS_SPOILERS] = sText_Empty,
+    [MENUITEM_CUSTOM_CANCEL]            = sText_Empty,
 };
 
 
@@ -669,16 +680,17 @@ void CB2_InitOptionPlusMenu(void)
         sOptions->sel[MENUITEM_MAIN_UNIT_SYSTEM] = gSaveBlock2Ptr->optionsUnitSystem;
         sOptions->sel[MENUITEM_MAIN_FRAMETYPE]   = gSaveBlock2Ptr->optionsWindowFrameType;
         
-        sOptions->sel_custom[MENUITEM_CUSTOM_HP_BAR]           = gSaveBlock2Ptr->optionsHpBarSpeed;
-        sOptions->sel_custom[MENUITEM_CUSTOM_BATTLE_SPEED]     = gSaveBlock2Ptr->optionsBattleSpeed;
-        sOptions->sel_custom[MENUITEM_CUSTOM_OVERWORLD_SPEED]  = gSaveBlock2Ptr->optionsOverworldSpeed;
-        sOptions->sel_custom[MENUITEM_CUSTOM_FONT]             = gSaveBlock2Ptr->optionsCurrentFont;
-        sOptions->sel_custom[MENUITEM_CUSTOM_MATCHCALL]        = gSaveBlock2Ptr->optionsDisableMatchCall;
-        sOptions->sel_custom[MENUITEM_CUSTOM_MUSIC_REGION]     = gSaveBlock2Ptr->optionsMusicRegion;
-        sOptions->sel_custom[MENUITEM_CUSTOM_SURF_MUSIC]       = gSaveBlock2Ptr->optionsSurfMusic;
-        sOptions->sel_custom[MENUITEM_CUSTOM_LEVEL_CAPS]       = gSaveBlock2Ptr->optionsLevelCaps;
-        sOptions->sel_custom[MENUITEM_CUSTOM_LEVEL_SYNC]       = gSaveBlock2Ptr->optionsLevelSync;
-        sOptions->sel_custom[MENUITEM_CUSTOM_ANIMATE_AFTER_KO] = gSaveBlock2Ptr->optionsAnimateAfterKO;
+        sOptions->sel_custom[MENUITEM_CUSTOM_HP_BAR]            = gSaveBlock2Ptr->optionsHpBarSpeed;
+        sOptions->sel_custom[MENUITEM_CUSTOM_BATTLE_SPEED]      = gSaveBlock2Ptr->optionsBattleSpeed;
+        sOptions->sel_custom[MENUITEM_CUSTOM_OVERWORLD_SPEED]   = gSaveBlock2Ptr->optionsOverworldSpeed;
+        sOptions->sel_custom[MENUITEM_CUSTOM_FONT]              = gSaveBlock2Ptr->optionsCurrentFont;
+        sOptions->sel_custom[MENUITEM_CUSTOM_MATCHCALL]         = gSaveBlock2Ptr->optionsDisableMatchCall;
+        sOptions->sel_custom[MENUITEM_CUSTOM_MUSIC_REGION]      = gSaveBlock2Ptr->optionsMusicRegion;
+        sOptions->sel_custom[MENUITEM_CUSTOM_SURF_MUSIC]        = gSaveBlock2Ptr->optionsSurfMusic;
+        sOptions->sel_custom[MENUITEM_CUSTOM_LEVEL_CAPS]        = gSaveBlock2Ptr->optionsLevelCaps;
+        sOptions->sel_custom[MENUITEM_CUSTOM_LEVEL_SYNC]        = gSaveBlock2Ptr->optionsLevelSync;
+        sOptions->sel_custom[MENUITEM_CUSTOM_ANIMATE_AFTER_KO]  = gSaveBlock2Ptr->optionsAnimateAfterKO;
+        sOptions->sel_custom[MENUITEM_CUSTOM_WARNINGS_SPOILERS] = gSaveBlock2Ptr->optionsWarnings;
 
         sOptions->submenu = MENU_MAIN;
 
@@ -872,6 +884,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsLevelCaps        = sOptions->sel_custom[MENUITEM_CUSTOM_LEVEL_CAPS];
     gSaveBlock2Ptr->optionsLevelSync        = sOptions->sel_custom[MENUITEM_CUSTOM_LEVEL_SYNC];
     gSaveBlock2Ptr->optionsAnimateAfterKO   = sOptions->sel_custom[MENUITEM_CUSTOM_ANIMATE_AFTER_KO];
+    gSaveBlock2Ptr->optionsWarnings         = sOptions->sel_custom[MENUITEM_CUSTOM_WARNINGS_SPOILERS];
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
@@ -1142,7 +1155,7 @@ static void DrawChoices_ButtonMode(int selection, int y)
 
     DrawOptionMenuChoice(gText_ButtonTypeNormal, 104, y, styles[0], active);
     DrawOptionMenuChoice(gText_ButtonTypeLR, xMid, y, styles[1], active);
-    DrawOptionMenuChoice(gText_ButtonTypeLEqualsA, GetStringRightAlignXOffset(1, gText_ButtonTypeLEqualsA, 198), y, styles[2], active);
+    DrawOptionMenuChoice(gText_ButtonTypeLEqualsA, GetStringRightAlignXOffset(FONT_NORMAL, gText_ButtonTypeLEqualsA, 198), y, styles[2], active);
 }
 
 static const u8 sText_Normal[] = _("Normal");
@@ -1169,7 +1182,7 @@ static void DrawChoices_UnitSystem(int selection, int y)
     styles[selection] = 1;
 
     DrawOptionMenuChoice(gText_UnitSystemImperial, 104, y, styles[0], active);
-    DrawOptionMenuChoice(gText_UnitSystemMetric, GetStringRightAlignXOffset(1, gText_UnitSystemMetric, 198), y, styles[1], active);
+    DrawOptionMenuChoice(gText_UnitSystemMetric, GetStringRightAlignXOffset(FONT_NORMAL, gText_UnitSystemMetric, 198), y, styles[1], active);
 }
 
 static void DrawChoices_FrameType(int selection, int y)
@@ -1211,7 +1224,7 @@ static void DrawChoices_Font(int selection, int y)
     styles[selection] = 1;
 
     DrawOptionMenuChoice(gText_ExpandedPlaceholder_Emerald, 104, y, styles[0], active);
-    DrawOptionMenuChoice(gText_OptionFontFireRed, GetStringRightAlignXOffset(1, gText_OptionFontFireRed, 198), y, styles[1], active);
+    DrawOptionMenuChoice(gText_OptionFontFireRed, GetStringRightAlignXOffset(FONT_NORMAL, gText_OptionFontFireRed, 198), y, styles[1], active);
 }
 
 static void DrawChoices_MatchCall(int selection, int y)
@@ -1221,7 +1234,7 @@ static void DrawChoices_MatchCall(int selection, int y)
     styles[selection] = 1;
 
     DrawOptionMenuChoice(gText_BattleSceneOn, 104, y, styles[0], active);
-    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), y, styles[1], active);
+    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(FONT_NORMAL, gText_BattleSceneOff, 198), y, styles[1], active);
 }
 
 static const u8 *const sTextMusicStrings[] = {gText_Kanto, gText_Johto, gText_Hoenn, gText_Sinnoh};
@@ -1251,7 +1264,7 @@ static void DrawChoices_SurfMusic(int selection, int y)
     styles[selection] = 1;
 
     DrawOptionMenuChoice(gText_BattleSceneOn, 104, y, styles[0], active);
-    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), y, styles[1], active);
+    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(FONT_NORMAL, gText_BattleSceneOff, 198), y, styles[1], active);
 }
 
 static void DrawChoices_LevelCaps(int selection, int y)
@@ -1261,7 +1274,7 @@ static void DrawChoices_LevelCaps(int selection, int y)
     styles[selection] = 1;
 
     DrawOptionMenuChoice(gText_BattleSceneOn, 104, y, styles[0], active);
-    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), y, styles[1], active);
+    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(FONT_NORMAL, gText_BattleSceneOff, 198), y, styles[1], active);
 }
 
 static void DrawChoices_LevelSync(int selection, int y)
@@ -1271,7 +1284,7 @@ static void DrawChoices_LevelSync(int selection, int y)
     styles[selection] = 1;
 
     DrawOptionMenuChoice(gText_BattleSceneOff, 104, y, styles[0], active);
-    DrawOptionMenuChoice(gText_BattleSceneOn, GetStringRightAlignXOffset(1, gText_BattleSceneOn, 198), y, styles[1], active);
+    DrawOptionMenuChoice(gText_BattleSceneOn, GetStringRightAlignXOffset(FONT_NORMAL, gText_BattleSceneOn, 198), y, styles[1], active);
 }
 
 static void DrawChoices_AnimateAfterKO(int selection, int y)
@@ -1281,7 +1294,19 @@ static void DrawChoices_AnimateAfterKO(int selection, int y)
     styles[selection] = 1;
 
     DrawOptionMenuChoice(gText_BattleSceneOn, 104, y, styles[0], active);
-    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), y, styles[1], active);
+    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(FONT_NORMAL, gText_BattleSceneOff, 198), y, styles[1], active);
+}
+
+static void DrawChoices_WarningsSpoilers(int selection, int y)
+{
+    bool8 active = CheckConditions(MENUITEM_CUSTOM_WARNINGS_SPOILERS);
+    u8 styles[3] = {0};
+    int xMid = GetMiddleX(gText_BattleSceneOff, COMPOUND_STRING("Simple"), COMPOUND_STRING("Detailed"));
+    styles[selection] = 1;
+
+    DrawOptionMenuChoice(gText_BattleSceneOff, 104, y, styles[0], active);
+    DrawOptionMenuChoice(COMPOUND_STRING("Simple"), xMid, y, styles[1], active);
+    DrawOptionMenuChoice(COMPOUND_STRING("Detailed"), GetStringRightAlignXOffset(FONT_NORMAL, COMPOUND_STRING("Detailed"), 198), y, styles[2], active);
 }
 
 // Background tilemap

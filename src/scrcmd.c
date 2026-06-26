@@ -3492,6 +3492,13 @@ bool8 ScrCmd_shufflegymleader(struct ScriptContext *ctx)
     return FALSE;
 }
 
+bool8 CheckWarningOption(void)
+{
+    u8 warningOptionResult = gSaveBlock2Ptr->optionsWarnings;
+	gSpecialVar_Result = warningOptionResult;
+	return warningOptionResult;
+}
+
 static void FieldCallback_SetupWarpScript(void)
 {
     if (gAfterWarpScript == NULL)

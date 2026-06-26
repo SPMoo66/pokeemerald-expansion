@@ -1923,6 +1923,39 @@ PlayersHouse_2F_EventScript_Notebook_13:
 	return
 
 
+WarningOptionTest::
+# 1368 "data/global.pory"
+	checkwarningoption
+# 1369 "data/global.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq WarningOptionTest_2
+# 1372 "data/global.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq WarningOptionTest_3
+# 1375 "data/global.pory"
+	compare VAR_RESULT, 2
+	goto_if_eq WarningOptionTest_4
+WarningOptionTest_1:
+# 1378 "data/global.pory"
+	closemessage
+	return
+
+WarningOptionTest_2:
+# 1370 "data/global.pory"
+	msgbox WarningOptionTest_Text_0
+	goto WarningOptionTest_1
+
+WarningOptionTest_3:
+# 1373 "data/global.pory"
+	msgbox WarningOptionTest_Text_1
+	goto WarningOptionTest_1
+
+WarningOptionTest_4:
+# 1376 "data/global.pory"
+	msgbox WarningOptionTest_Text_2
+	goto WarningOptionTest_1
+
+
 Mart_EventScript_TMClerk_Text_0:
 # 274 "data/global.pory"
 	.string "Sorry, I can only sell to trainers who\n"
@@ -2178,6 +2211,18 @@ PlayersHouse_2F_EventScript_Notebook_Text_5:
 PlayersHouse_2F_EventScript_Notebook_Text_6:
 # 1347 "data/global.pory"
 	.string "Mega Evolution$"
+
+WarningOptionTest_Text_0:
+# 1370 "data/global.pory"
+	.string "0$"
+
+WarningOptionTest_Text_1:
+# 1373 "data/global.pory"
+	.string "1$"
+
+WarningOptionTest_Text_2:
+# 1376 "data/global.pory"
+	.string "2$"
 
 BottleCapCollectorIntro::
 # 774 "data/global.pory"

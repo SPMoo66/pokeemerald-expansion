@@ -2691,6 +2691,11 @@
 	callnative ScrCmd_shufflegymleader, requests_effects=1
 	.endm
 
+	@ Reads the warning option and prints the result to VAR_RESULT.
+	.macro checkwarningoption
+	specialvar VAR_RESULT,CheckWarningOption
+	.endm
+
 @ End Custom Functions
 
 	@ Hides any follower Pokémon if present, putting them into their Poké Ball; by default waits for their movement to finish.

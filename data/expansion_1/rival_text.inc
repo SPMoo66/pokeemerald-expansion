@@ -237,17 +237,17 @@ Exp1_Town04_SakuraText::
 
 Exp1_Town04_HarperText::
 # 257 "data/expansion_1/rival_text.pory"
-	.string "Ahh… …\p"
+	.string "Ahh… {PAUSE 100}…\p"
 	.string "I'm just taking a breather, {PLAYER}.\p"
 	.string "Trapped in one dungeon, then shipped\n"
 	.string "off to another straight away.\p"
-	.string "… … …\p"
+	.string "… {PAUSE 30}… {PAUSE 30}…\p"
 	.string "I guess I could've let you drag one of\n"
 	.string "the others along with you…\l"
 	.string "but would it have gone right without me\l"
 	.string "there?\p"
 	.string "Oh, if it was still you… probably?\p"
-	.string "Wait… no. Maybe not. A memory just\n"
+	.string "Wait… {PAUSE 100}no. Maybe not. A memory just\n"
 	.string "popped into my head.\p"
 	.string "We need to stop trauma-bonding one\n"
 	.string "of these days.$"
@@ -257,7 +257,7 @@ Exp1_Town04_ReddText::
 	.string "Did you miss me, {PLAYER}?\p"
 	.string "If you had just asked, I would've gone\n"
 	.string "along into the ship with you.\p"
-	.string "It would have been cool to see that…\n"
+	.string "It would have been cool to see that…{PAUSE 100}\n"
 	.string "what did you say it was, a water Regi?\p"
 	.string "You should've caught it to show me!\p"
 	.string "Dang, one of these days it'll have to be\n"
@@ -275,7 +275,7 @@ Exp1_Town04_BaronText::
 
 Exp1_Town04b_BaronText::
 # 295 "data/expansion_1/rival_text.pory"
-	.string "…one of my own friends! Of course!\n"
+	.string "…{PAUSE 100}one of my own friends! Of course!\n"
 	.string "All of you are my very own friends.$"
 
 Exp1_Town04_JaksonText::
@@ -284,8 +284,8 @@ Exp1_Town04_JaksonText::
 	.string "than I give her. She knows more about\l"
 	.string "game design than I thought she did.\p"
 	.string "It certainly helped us get back on\n"
-	.string "track… I'll have to thank her.\p"
-	.string "O- Oh! No, I haven't forgotten you.\p"
+	.string "track… {PAUSE 100}I'll have to thank her.\p"
+	.string "O- {PAUSE 30}Oh! No, I haven't forgotten you.\p"
 	.string "Thank you for going with her to\n"
 	.string "retrieve the explosives key item.\p"
 	.string "I'm glad our intuition was correct.$"

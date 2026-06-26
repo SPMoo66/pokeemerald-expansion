@@ -255,17 +255,17 @@ text Exp1_Town04_SakuraText {
 }
 
 text Exp1_Town04_HarperText {
-	format( "Ahh… …\p"
+	format( "Ahh… {PAUSE 100}…\p"
 			"I'm just taking a breather, {PLAYER}.\p"
 			"Trapped in one dungeon, then shipped\n"
 			"off to another straight away.\p"
-			"… … …\p"
+			"… {PAUSE 30}… {PAUSE 30}…\p"
 			"I guess I could've let you drag one of\n"
 			"the others along with you…\l"
 			"but would it have gone right without me\l"
 			"there?\p"
 			"Oh, if it was still you… probably?\p"
-			"Wait… no. Maybe not. A memory just\n"
+			"Wait… {PAUSE 100}no. Maybe not. A memory just\n"
 			"popped into my head.\p"
 			"We need to stop trauma-bonding one\n"
 			"of these days.")
@@ -275,7 +275,7 @@ text Exp1_Town04_ReddText {
 	format( "Did you miss me, {PLAYER}?\p"
 			"If you had just asked, I would've gone\n"
 			"along into the ship with you.\p"
-			"It would have been cool to see that…\n"
+			"It would have been cool to see that…{PAUSE 100}\n"
 			"what did you say it was, a water Regi?\p"
 			"You should've caught it to show me!\p"
 			"Dang, one of these days it'll have to be\n"
@@ -293,7 +293,7 @@ text Exp1_Town04_BaronText {
 }
 
 text Exp1_Town04b_BaronText {
-	format( "…one of my own friends! Of course!\n"
+	format( "…{PAUSE 100}one of my own friends! Of course!\n"
 			"All of you are my very own friends.")
 }
 
@@ -302,8 +302,8 @@ text Exp1_Town04_JaksonText {
 			"than I give her. She knows more about\l"
 			"game design than I thought she did.\p"
 			"It certainly helped us get back on\n"
-			"track… I'll have to thank her.\p"
-			"O- Oh! No, I haven't forgotten you.\p"
+			"track… {PAUSE 100}I'll have to thank her.\p"
+			"O- {PAUSE 30}Oh! No, I haven't forgotten you.\p"
 			"Thank you for going with her to\n"
 			"retrieve the explosives key item.\p"
 			"I'm glad our intuition was correct.")

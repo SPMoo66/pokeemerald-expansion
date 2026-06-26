@@ -28,8 +28,8 @@ SS_Tidal_Dungeon_1F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 
 SS_Tidal_Dungeon_1F_1R_MapScripts_MAP_SCRIPT_ON_LOAD:
 # 11 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 39
-	goto_if_eq SS_Tidal_Dungeon_1F_1R_MapScripts_MAP_SCRIPT_ON_LOAD_1
+	compare VAR_EMERALBODY_RIVAL_STATE, 38
+	goto_if_ge SS_Tidal_Dungeon_1F_1R_MapScripts_MAP_SCRIPT_ON_LOAD_1
 	return
 
 SS_Tidal_Dungeon_1F_1R_MapScripts_MAP_SCRIPT_ON_LOAD_1:

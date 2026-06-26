@@ -8,7 +8,7 @@ mapscripts SS_Tidal_Dungeon_1F_1R_MapScripts {
 		}
 	}
 	MAP_SCRIPT_ON_LOAD {
-		if (var(VAR_EMERALBODY_RIVAL_STATE) == 39) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 38) {
 			setmetatile (4, 9, METATILE_InsideShip_IntactDoor_Bottom_Unlocked, TRUE)
 		}
 	}

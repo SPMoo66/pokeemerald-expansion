@@ -16,7 +16,7 @@ script SS_Tidal_Dungeon_1F_1R_Room1_Dynamite {
 	waitmovement (0)
 	speakername (CommonText_Harper)
 	msgbox ("Well, sure as shit, there it is.\p"
-			"Some genuine dynamite… yee haw?\p"
+			"Some genuine dynamite… {PAUSE 100}yee haw?\p"
 			"Sorry, I'm already thinking of what\n"
 			"horrible line Sakura's going to throw\l"
 			"when she pulls the plunger on this.", MSGBOX_AUTOCLOSE)
@@ -36,15 +36,15 @@ script SS_Tidal_Dungeon_1F_1R_Room1_Dynamite {
 			"here on vacation, and now we've\l"
 			"sequence broken this thing so bad that\l"
 			"he's trapped in his cabin for eternity.\p"
-			"You know… Isn't his sprite a bit\n"
+			"You know… {PAUSE 100}Isn't his sprite a bit\n"
 			"familiar looking?", MSGBOX_AUTOCLOSE)
 	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
 	waitmovement (0)
 	delay (20)
 	speakername (CommonText_Harper)
 	msgbox ("Eh, let's just grab this and-\p"
-			"… … …\n"
-			"… … …\l"
+			"… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
+			"… {PAUSE 30}… {PAUSE 30}…\l"
 			"Did you hear that?", MSGBOX_AUTOCLOSE)
 	fadenewbgm (MUS_HG_LUGIA_APPEARS)
 	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
@@ -60,7 +60,7 @@ script SS_Tidal_Dungeon_1F_1R_Room1_Dynamite {
 	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_WalkInPlaceFasterUp)
 	waitmovement (0)
 	speakername (CommonText_Harper)
-	msgbox ("Was that fishbowl… always in that\n"
+	msgbox ("Was that fishbowl… {PAUSE 100}always in that\n"
 			"position?", MSGBOX_AUTOCLOSE)
 	applymovement (SSTIDALDUNGEON_ROOM_FISHBOWL, Common_Movement_ShakeHorizontal)
 	waitmovement (0)
@@ -81,8 +81,8 @@ script SS_Tidal_Dungeon_1F_1R_Room1_Dynamite {
 	clearflag (FLAG_SMART_WILD_AI)
 	
 	speakername (CommonText_Harper)
-	msgbox ("Motherfu-\n"
-			"… … …\l"
+	msgbox ("Motherfu-{PAUSE 30}\n"
+			"… {PAUSE 30}… {PAUSE 30}…\l"
 			"So we're getting mimics or something\l"
 			"now?\p"
 			"They'll make anything into a 'mon these\n"
@@ -154,7 +154,7 @@ script Expansion1_Rival_Scene07b {
 	applymovement (MAUVECAMP_SAKURA, Common_Movement_WalkInPlaceFasterDown)
 	waitmovement (0)
 	speakername (CommonText_Sakura)
-	msgbox ("So… you got it?")
+	msgbox ("So… {PAUSE 100}you got it?")
 	speakername (CommonText_Harper)
 	msgbox ("Yup, despite the locals' misgivings.", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_SAKURA, Common_Movement_WalkInPlaceFasterRight)
@@ -168,7 +168,7 @@ script Expansion1_Rival_Scene07b {
 	msgbox ("Phew, I'm glad my intuition was right.")
 	speakername (CommonText_Harper)
 	msgbox ("Yes, Jakson. Your sense of game design\n"
-			"isn't completely gone.")
+			"isn't {PAUSE 30}completely {PAUSE 60}gone.")
 	speakername (CommonText_Jakson)
 	msgbox ("I was betting on the idea that the\n"
 			"ship was a place the party returns to.\p"
@@ -188,7 +188,7 @@ script Expansion1_Rival_Scene07b {
 			"But yes, we've retrieved your dynamite.\n"
 			"Praise be.")
 	call (GetBaronsName)
-	msgbox ("So this is how we… as Sakura said…\n"
+	msgbox ("So this is how we… {PAUSE 100}as Sakura said…{PAUSE 100}\n"
 			"go “boom”?")
 	speakername (CommonText_Harper)
 	msgbox ("Can't imagine another use for an\n"
@@ -202,7 +202,7 @@ script Expansion1_Rival_Scene07b {
 	speakername (CommonText_Sakura)
 	msgbox ("Completely, 100% accurate and wisdom\n"
 			"we should be following this moment.\p"
-			"Meaning… hand it over!\n"
+			"Meaning… {PAUSE 100}hand it over!\n"
 			"I'm ready to blow this joint{EMOJI_TILDE}{UNK_SPACER}")
 	speakername (CommonText_Jakson)
 	msgbox ("You said it's to the west, Sakura?")

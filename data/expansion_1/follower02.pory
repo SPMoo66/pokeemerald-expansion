@@ -12,9 +12,9 @@ script Expansion1_Rival_Scene06 {
 			"Just make sure we find some action.\n"
 			"I need to vent a bit.\p"
 			"So…\p"
-			"Let's get that dynamite and well…\n"
+			"Let's get that dynamite and well…{PAUSE 100}\n"
 			"…\l"
-			"…blow this popsicle stand… right?\p"
+			"…{PAUSE 100}blow this popsicle stand… {PAUSE 100}right?\p"
 			"Agh, sorry about that one.\p"
 			"Just do what you have to.", MSGBOX_AUTOCLOSE)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 34)
@@ -82,13 +82,13 @@ script Expansion1_Follower_Harper2_Talking1 {
 			"much of a ‘shipwreck’, does it?\p"
 			"The environment just pulls graphics\n"
 			"from the other ships we've been on.\p"
-			"…I'm starting to think the monster\n"
+			"…{PAUSE 100}I'm starting to think the monster\n"
 			"attack wasn't even a scripted event.\p"
 			"Not like it'd be the first thing to just\n"
 			"break outright in this mod.\p"
 			"Has me on my toes, at least?\n"
 			"There are less interesting journeys.\p"
-			"…better than getting stuck in a dark\n"
+			"…{PAUSE 100}better than getting stuck in a dark\n"
 			"cave for most of it, eh?", MSGBOX_AUTOCLOSE)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 35)
 }
@@ -100,13 +100,13 @@ script Expansion1_Follower_Harper2_Talking2 {
 	facefollowernpc
 	speakername (CommonText_Harper)
 	msgbox ("Well, through the basement and now\n"
-			"we're to… more cabins?\p"
+			"we're to… {PAUSE 100}more cabins?\p"
 			"Imagine having to walk through storage\n"
 			"every time you go to your room.\p"
 			"I'd criticize Game Freak for the map\n"
 			"design like all the ones before it\l"
 			"but this is all custom, right?\p"
-			"Ah, Jakson…\n"
+			"Ah, Jakson…{PAUSE 100}\n"
 			"Vet the mods a little more before you\l"
 			"add them, please.", MSGBOX_AUTOCLOSE)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 36)

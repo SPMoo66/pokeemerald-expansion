@@ -142,12 +142,15 @@ script Redd_Exp1_Town04 {
 }
 
 script Baron_Exp1_Town04 {
+	lock
+	faceplayer
 	call (GetBaronsName)
 	msgbox(Exp1_Town04_BaronText)
 	if (var(VAR_EMERALBODY_RIVAL) != 0 || var(VAR_EMERALBODY_RIVAL) != 5) {
 		msgbox (Exp1_Town04b_BaronText)
 	}
 	closemessage
+	release
 }
 
 script Jakson_Exp1_Town04 {

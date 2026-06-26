@@ -176,30 +176,36 @@ Redd_Exp1_Town04::
 
 Baron_Exp1_Town04::
 # 145 "data/expansion_1/rival_scripts.pory"
-	call GetBaronsName
+	lock
 # 146 "data/expansion_1/rival_scripts.pory"
-	msgbox Exp1_Town04_BaronText
+	faceplayer
 # 147 "data/expansion_1/rival_scripts.pory"
+	call GetBaronsName
+# 148 "data/expansion_1/rival_scripts.pory"
+	msgbox Exp1_Town04_BaronText
+# 149 "data/expansion_1/rival_scripts.pory"
 	compare VAR_EMERALBODY_RIVAL, 0
 	goto_if_ne Baron_Exp1_Town04_2
-# 147 "data/expansion_1/rival_scripts.pory"
+# 149 "data/expansion_1/rival_scripts.pory"
 	compare VAR_EMERALBODY_RIVAL, 5
 	goto_if_ne Baron_Exp1_Town04_2
 Baron_Exp1_Town04_1:
-# 150 "data/expansion_1/rival_scripts.pory"
+# 152 "data/expansion_1/rival_scripts.pory"
 	closemessage
+# 153 "data/expansion_1/rival_scripts.pory"
+	release
 	return
 
 Baron_Exp1_Town04_2:
-# 148 "data/expansion_1/rival_scripts.pory"
+# 150 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town04b_BaronText
 	goto Baron_Exp1_Town04_1
 
 
 Jakson_Exp1_Town04::
-# 154 "data/expansion_1/rival_scripts.pory"
+# 157 "data/expansion_1/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 155 "data/expansion_1/rival_scripts.pory"
+# 158 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town04_JaksonText, MSGBOX_NPC
 	return
 

@@ -237,7 +237,7 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	setvar VAR_EMERALBODY_RIVAL_STATE, 37
+	setvar VAR_EMERALBODY_RIVAL_STATE, 33
 	setflag FLAG_NO_COLLISION
 	warp MAP_MAUVE_ISLAND_SOUTH, 11, 26
 	waitstate

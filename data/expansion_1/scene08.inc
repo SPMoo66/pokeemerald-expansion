@@ -885,8 +885,8 @@ Expansion1_Rival_Scene08_Text_2:
 
 Expansion1_Rival_Scene08_Text_3:
 # 57 "data/expansion_1/scene08.pory"
-	.string "A- Are you all sure that this is safe?\n"
-	.string "It won't… like… break the game, right?$"
+	.string "A- {PAUSE 30}Are you all sure that this is safe?\n"
+	.string "It won't… {PAUSE 100}like… {PAUSE 100}break the game, right?$"
 
 Expansion1_Rival_Scene08_Text_4:
 # 64 "data/expansion_1/scene08.pory"
@@ -910,12 +910,12 @@ Expansion1_Rival_Scene08_Text_7:
 
 Expansion1_Rival_Scene08_Text_8:
 # 101 "data/expansion_1/scene08.pory"
-	.string "…unless they hooked the code into\n"
+	.string "…{PAUSE 100}unless they hooked the code into\n"
 	.string "the VR system instead of the game…$"
 
 Expansion1_Rival_Scene08_Text_9:
 # 109 "data/expansion_1/scene08.pory"
-	.string "W- Wait! Yeah, did anyone test for\n"
+	.string "W- {PAUSE 30}Wait! Yeah, did anyone test for\n"
 	.string "that? What if-$"
 
 Expansion1_Rival_Scene08_Text_10:
@@ -924,7 +924,7 @@ Expansion1_Rival_Scene08_Text_10:
 
 Expansion1_Rival_Scene08_Text_11:
 # 137 "data/expansion_1/scene08.pory"
-	.string "Wait! Wait, you've already lit it?!\n"
+	.string "Wait! {PAUSE 60}Wait, you've already lit it?!{PAUSE 60}\n"
 	.string "Sakura!$"
 
 Expansion1_Rival_Scene08_Text_12:
@@ -933,8 +933,8 @@ Expansion1_Rival_Scene08_Text_12:
 
 Expansion1_Rival_Scene08_Text_13:
 # 189 "data/expansion_1/scene08.pory"
-	.string "… … …\n"
-	.string "… … …\l"
+	.string "… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
+	.string "… {PAUSE 30}… {PAUSE 30}…\l"
 	.string "Well, the entryway is open now.\l"
 	.string "It worked.$"
 
@@ -948,7 +948,7 @@ Expansion1_Rival_Scene08_Text_15:
 
 Expansion1_Rival_Scene08_Text_16:
 # 203 "data/expansion_1/scene08.pory"
-	.string "W- What about Jakson and Sakura?!$"
+	.string "W- {PAUSE 30}What about Jakson and Sakura?!$"
 
 Expansion1_Rival_Scene08_Text_17:
 # 205 "data/expansion_1/scene08.pory"
@@ -957,8 +957,8 @@ Expansion1_Rival_Scene08_Text_17:
 Expansion1_Rival_Scene08_Text_18:
 # 250 "data/expansion_1/scene08.pory"
 	.string "{EMOJI_BIGWHEEL}GASP{EMOJI_BIGWHEEL}!!!\p"
-	.string "You were… {EMOJI_BIGWHEEL}Pant{EMOJI_BIGWHEEL}… supposed to warn\n"
-	.string "everyone… {EMOJI_BIGWHEEL}Pant{EMOJI_BIGWHEEL}… first!!!\l"
+	.string "You were… {PAUSE 60}{EMOJI_BIGWHEEL}Pant{EMOJI_BIGWHEEL}… {PAUSE 60}supposed to warn\n"
+	.string "everyone… {PAUSE 60}{EMOJI_BIGWHEEL}Pant{EMOJI_BIGWHEEL}… {PAUSE 60}first!!!\l"
 	.string "Sakura!$"
 
 Expansion1_Rival_Scene08_Text_19:

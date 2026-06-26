@@ -54,8 +54,8 @@ script Expansion1_Rival_Scene08 {
 	waitmovement (0)
 	delay (20)
 	call (GetBaronsName)
-	msgbox ("A- Are you all sure that this is safe?\n"
-			"It won't… like… break the game, right?", MSGBOX_AUTOCLOSE)
+	msgbox ("A- {PAUSE 30}Are you all sure that this is safe?\n"
+			"It won't… {PAUSE 100}like… {PAUSE 100}break the game, right?", MSGBOX_AUTOCLOSE)
 	applymovement (FAROFFSEAWEST_HARPER, Common_Movement_WalkInPlaceFasterLeft)
 	waitmovement (0)
 	playse (SE_SWITCH)
@@ -98,7 +98,7 @@ script Expansion1_Rival_Scene08 {
 	applymovement (FAROFFSEAWEST_REDD, Common_Movement_Thinking)
 	delay (60)
 	speakername (CommonText_Redd)
-	msgbox ("…unless they hooked the code into\n"
+	msgbox ("…{PAUSE 100}unless they hooked the code into\n"
 			"the VR system instead of the game…", MSGBOX_AUTOCLOSE)
 	applymovement (FAROFFSEAWEST_BARON, Common_Movement_ExclamationMark)
 	playse (SE_PIN)
@@ -106,7 +106,7 @@ script Expansion1_Rival_Scene08 {
 	applymovement (FAROFFSEAWEST_BARON, Common_Movement_WalkInPlaceFasterRight)
 	waitmovement (0)
 	call (GetBaronsName)
-	msgbox ("W- Wait! Yeah, did anyone test for\n"
+	msgbox ("W- {PAUSE 30}Wait! Yeah, did anyone test for\n"
 			"that? What if-")
 	speakername (CommonText_Sakura)
 	msgbox ("FIRE IN THE HOLE!", MSGBOX_AUTOCLOSE)
@@ -134,7 +134,7 @@ script Expansion1_Rival_Scene08 {
 	applymovement (FAROFFSEAWEST_SAKURA, Common_Movement_WalkFastRight3)
 	waitmovement (0)
 	speakername (CommonText_Jakson)
-	msgbox ("Wait! Wait, you've already lit it?!\n"
+	msgbox ("Wait! {PAUSE 60}Wait, you've already lit it?!{PAUSE 60}\n"
 			"Sakura!", MSGBOX_AUTOCLOSE)
 	applymovement (FAROFFSEAWEST_SAKURA, Common_Movement_WalkInPlaceFasterDown)
 	waitmovement (0)
@@ -186,8 +186,8 @@ script Expansion1_Rival_Scene08 {
 	applymovement (FAROFFSEAWEST_FAKEPLAYER, Common_Movement_Thinking)
 	delay (80)
 	speakername (CommonText_Redd)
-	msgbox ("… … …\n"
-			"… … …\l"
+	msgbox ("… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
+			"… {PAUSE 30}… {PAUSE 30}…\l"
 			"Well, the entryway is open now.\l"
 			"It worked.")
 	call (GetBaronsName)
@@ -200,7 +200,7 @@ script Expansion1_Rival_Scene08 {
 	delay (40)
 	applymovement (FAROFFSEAWEST_BARON, Common_Movement_WalkInPlaceFasterUp)
 	waitmovement (0)
-	msgbox ("W- What about Jakson and Sakura?!")
+	msgbox ("W- {PAUSE 30}What about Jakson and Sakura?!")
 	speakername (CommonText_Jakson)
 	msgbox ("{EMOJI_BIGWHEEL}Glug glug{EMOJI_BIGWHEEL} …!", MSGBOX_AUTOCLOSE)
 	applymovement (FAROFFSEAWEST_REDD, Common_Movement_ExclamationMark)
@@ -248,8 +248,8 @@ script Expansion1_Rival_Scene08 {
 	delay (20)
 	speakername (CommonText_Jakson)
 	msgbox ("{EMOJI_BIGWHEEL}GASP{EMOJI_BIGWHEEL}!!!\p"
-			"You were… {EMOJI_BIGWHEEL}Pant{EMOJI_BIGWHEEL}… supposed to warn\n"
-			"everyone… {EMOJI_BIGWHEEL}Pant{EMOJI_BIGWHEEL}… first!!!\l"
+			"You were… {PAUSE 60}{EMOJI_BIGWHEEL}Pant{EMOJI_BIGWHEEL}… {PAUSE 60}supposed to warn\n"
+			"everyone… {PAUSE 60}{EMOJI_BIGWHEEL}Pant{EMOJI_BIGWHEEL}… {PAUSE 60}first!!!\l"
 			"Sakura!", MSGBOX_AUTOCLOSE)
 	applymovement (FAROFFSEAWEST_BARON, Common_Movement_Smile)
 	playse (SE_M_MORNING_SUN)

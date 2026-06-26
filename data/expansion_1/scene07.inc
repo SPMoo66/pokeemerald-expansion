@@ -317,7 +317,7 @@ Expansion1_Rival_Scene07b::
 SS_Tidal_Dungeon_1F_1R_Room1_Dynamite_Text_0:
 # 18 "data/expansion_1/scene07.pory"
 	.string "Well, sure as shit, there it is.\p"
-	.string "Some genuine dynamite… yee haw?\p"
+	.string "Some genuine dynamite… {PAUSE 100}yee haw?\p"
 	.string "Sorry, I'm already thinking of what\n"
 	.string "horrible line Sakura's going to throw\l"
 	.string "when she pulls the plunger on this.$"
@@ -332,25 +332,25 @@ SS_Tidal_Dungeon_1F_1R_Room1_Dynamite_Text_2:
 	.string "here on vacation, and now we've\l"
 	.string "sequence broken this thing so bad that\l"
 	.string "he's trapped in his cabin for eternity.\p"
-	.string "You know… Isn't his sprite a bit\n"
+	.string "You know… {PAUSE 100}Isn't his sprite a bit\n"
 	.string "familiar looking?$"
 
 SS_Tidal_Dungeon_1F_1R_Room1_Dynamite_Text_3:
 # 45 "data/expansion_1/scene07.pory"
 	.string "Eh, let's just grab this and-\p"
-	.string "… … …\n"
-	.string "… … …\l"
+	.string "… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
+	.string "… {PAUSE 30}… {PAUSE 30}…\l"
 	.string "Did you hear that?$"
 
 SS_Tidal_Dungeon_1F_1R_Room1_Dynamite_Text_4:
 # 63 "data/expansion_1/scene07.pory"
-	.string "Was that fishbowl… always in that\n"
+	.string "Was that fishbowl… {PAUSE 100}always in that\n"
 	.string "position?$"
 
 SS_Tidal_Dungeon_1F_1R_Room1_Dynamite_Text_5:
 # 84 "data/expansion_1/scene07.pory"
-	.string "Motherfu-\n"
-	.string "… … …\l"
+	.string "Motherfu-{PAUSE 30}\n"
+	.string "… {PAUSE 30}… {PAUSE 30}…\l"
 	.string "So we're getting mimics or something\l"
 	.string "now?\p"
 	.string "They'll make anything into a 'mon these\n"
@@ -390,7 +390,7 @@ Expansion1_Rival_Scene07b_Text_0:
 
 Expansion1_Rival_Scene07b_Text_1:
 # 157 "data/expansion_1/scene07.pory"
-	.string "So… you got it?$"
+	.string "So… {PAUSE 100}you got it?$"
 
 Expansion1_Rival_Scene07b_Text_2:
 # 159 "data/expansion_1/scene07.pory"
@@ -408,7 +408,7 @@ Expansion1_Rival_Scene07b_Text_4:
 Expansion1_Rival_Scene07b_Text_5:
 # 170 "data/expansion_1/scene07.pory"
 	.string "Yes, Jakson. Your sense of game design\n"
-	.string "isn't completely gone.$"
+	.string "isn't {PAUSE 30}completely {PAUSE 60}gone.$"
 
 Expansion1_Rival_Scene07b_Text_6:
 # 173 "data/expansion_1/scene07.pory"
@@ -436,7 +436,7 @@ Expansion1_Rival_Scene07b_Text_9:
 
 Expansion1_Rival_Scene07b_Text_10:
 # 191 "data/expansion_1/scene07.pory"
-	.string "So this is how we… as Sakura said…\n"
+	.string "So this is how we… {PAUSE 100}as Sakura said…{PAUSE 100}\n"
 	.string "go “boom”?$"
 
 Expansion1_Rival_Scene07b_Text_11:
@@ -453,7 +453,7 @@ Expansion1_Rival_Scene07b_Text_13:
 # 203 "data/expansion_1/scene07.pory"
 	.string "Completely, 100% accurate and wisdom\n"
 	.string "we should be following this moment.\p"
-	.string "Meaning… hand it over!\n"
+	.string "Meaning… {PAUSE 100}hand it over!\n"
 	.string "I'm ready to blow this joint{EMOJI_TILDE}{UNK_SPACER}$"
 
 Expansion1_Rival_Scene07b_Text_14:

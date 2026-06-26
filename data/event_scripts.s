@@ -1721,6 +1721,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/tera.inc"
 	.include "data/gym_leaders.inc"
 	.include "data/gym_statues.inc"
+	.include "data/battle_warnings.inc"
 	.include "data/scripts/weather.inc"
 	.include "data/register_pokenav.inc"
 	.include "data/magearna_encounter.inc"

@@ -1,0 +1,21 @@
+script CheckBattleWarningLevel {
+	setvar (VAR_TEMP_6, 1)
+	checkwarningoption
+	if (var(VAR_RESULT) == 0) {
+		end
+	}
+	if (var(VAR_RESULT) == 1) {
+		msgbox (ChallengingBattleImminent, MSGBOX_AUTOCLOSE)
+		end
+	}
+}
+
+text ChallengingBattleImminent {
+	"A challenging battle is imminent."
+}
+
+script BattleWarningRegiagua {
+	call (CheckBattleWarningLevel)
+	msgbox (ChallengingBattleImminent)
+	msgbox ("The opponent is Water Type.", MSGBOX_AUTOCLOSE)
+}

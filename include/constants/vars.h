@@ -14,8 +14,8 @@
 #define VAR_TEMP_3                 (TEMP_VARS_START + 0x3) // Note: Used when the player checks a TV
 #define VAR_TEMP_4                 (TEMP_VARS_START + 0x4)
 #define VAR_TEMP_5                 (TEMP_VARS_START + 0x5)
-#define VAR_TEMP_6                 (TEMP_VARS_START + 0x6)
-#define VAR_TEMP_7                 (TEMP_VARS_START + 0x7)
+#define VAR_TEMP_6                 (TEMP_VARS_START + 0x6) // Only used for contests, battle warnings
+#define VAR_TEMP_7                 (TEMP_VARS_START + 0x7) // Only used for contests
 #define VAR_TEMP_8                 (TEMP_VARS_START + 0x8)
 #define VAR_TEMP_9                 (TEMP_VARS_START + 0x9)
 #define VAR_TEMP_A                 (TEMP_VARS_START + 0xA)

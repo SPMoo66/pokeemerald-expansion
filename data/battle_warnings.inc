@@ -23,54 +23,85 @@ CheckBattleWarningLevel_5:
 
 
 BattleWarningRoute119Rival::
-# 23 "data/battle_warnings.pory"
+# 26 "data/battle_warnings.pory"
 	compare VAR_ROUTE119_STATE, 1
 	goto_if_ge BattleWarningRoute119Rival_2
-# 27 "data/battle_warnings.pory"
+# 30 "data/battle_warnings.pory"
 	call CheckBattleWarningLevel
-# 28 "data/battle_warnings.pory"
+# 31 "data/battle_warnings.pory"
 	msgbox OpponentBrendanMay, MSGBOX_AUTOCLOSE
 	return
 
 BattleWarningRoute119Rival_2:
-# 24 "data/battle_warnings.pory"
+# 27 "data/battle_warnings.pory"
 	setvar VAR_TEMP_6, 1
 	end
 
 
 BattleWarningSkyPillarRival::
-# 32 "data/battle_warnings.pory"
+# 35 "data/battle_warnings.pory"
 	goto_if_set FLAG_DEFEATED_RIVAL_SKY_PILLAR, BattleWarningSkyPillarRival_2
-# 36 "data/battle_warnings.pory"
+# 39 "data/battle_warnings.pory"
 	call CheckBattleWarningLevel
-# 37 "data/battle_warnings.pory"
+# 40 "data/battle_warnings.pory"
 	msgbox OpponentBrendanMay, MSGBOX_AUTOCLOSE
 	return
 
 BattleWarningSkyPillarRival_2:
-# 33 "data/battle_warnings.pory"
+# 36 "data/battle_warnings.pory"
+	setvar VAR_TEMP_6, 1
+	end
+
+
+BattleWarningPetalburgWally::
+# 51 "data/battle_warnings.pory"
+	compare VAR_PETALBURG_CITY_STATE, 5
+	goto_if_ne BattleWarningPetalburgWally_2
+# 55 "data/battle_warnings.pory"
+	call CheckBattleWarningLevel
+# 56 "data/battle_warnings.pory"
+	msgbox OpponentWally, MSGBOX_AUTOCLOSE
+	return
+
+BattleWarningPetalburgWally_2:
+# 52 "data/battle_warnings.pory"
+	setvar VAR_TEMP_6, 1
+	end
+
+
+BattleWarningVRWally::
+# 60 "data/battle_warnings.pory"
+	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, BattleWarningVRWally_2
+# 64 "data/battle_warnings.pory"
+	call CheckBattleWarningLevel
+# 65 "data/battle_warnings.pory"
+	msgbox OpponentWally, MSGBOX_AUTOCLOSE
+	return
+
+BattleWarningVRWally_2:
+# 61 "data/battle_warnings.pory"
 	setvar VAR_TEMP_6, 1
 	end
 
 
 BattleWarningRegiagua::
-# 41 "data/battle_warnings.pory"
+# 72 "data/battle_warnings.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 40
 	goto_if_ge BattleWarningRegiagua_2
-# 45 "data/battle_warnings.pory"
+# 76 "data/battle_warnings.pory"
 	call CheckBattleWarningLevel
-# 46 "data/battle_warnings.pory"
+# 77 "data/battle_warnings.pory"
 	msgbox BattleWarningRegiagua_Text_0, MSGBOX_AUTOCLOSE
 	return
 
 BattleWarningRegiagua_2:
-# 42 "data/battle_warnings.pory"
+# 73 "data/battle_warnings.pory"
 	setvar VAR_TEMP_6, 1
 	end
 
 
 BattleWarningRegiagua_Text_0:
-# 46 "data/battle_warnings.pory"
+# 77 "data/battle_warnings.pory"
 	.string "The opponent is Water Type.$"
 
 ChallengingBattleImminent::
@@ -78,5 +109,9 @@ ChallengingBattleImminent::
 	.string "A challenging battle is imminent.$"
 
 OpponentBrendanMay::
-# 18 "data/battle_warnings.pory"
-	.string "The opponent is May/Brendan.$"
+# 21 "data/battle_warnings.pory"
+	.string "The opponent is Brendan/May.$"
+
+OpponentWally::
+# 46 "data/battle_warnings.pory"
+	.string "The opponent is Wally.$"

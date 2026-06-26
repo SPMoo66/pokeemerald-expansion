@@ -41,6 +41,31 @@ script BattleWarningSkyPillarRival {
 }
 
 
+# Wally battles
+
+text OpponentWally {
+	"The opponent is Wally."
+}
+
+script BattleWarningPetalburgWally {
+	if (var(VAR_PETALBURG_CITY_STATE) != 5) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	msgbox (OpponentWally, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningVRWally {
+	if (flag(FLAG_DEFEATED_WALLY_VICTORY_ROAD)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	msgbox (OpponentWally, MSGBOX_AUTOCLOSE)
+}
+
+
 # Expansion 1
 
 script BattleWarningRegiagua {

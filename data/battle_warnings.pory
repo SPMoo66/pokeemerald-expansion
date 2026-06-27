@@ -15,6 +15,10 @@ text ChallengingBattleImminent {
 	"A challenging battle is imminent."
 }
 
+text OpponentVar {
+	"The opponent is {STR_VAR_1}."
+}
+
 
 # Brendan/May battles
 
@@ -43,17 +47,14 @@ script BattleWarningSkyPillarRival {
 
 # Wally battles
 
-text OpponentWally {
-	"The opponent is Wally."
-}
-
 script BattleWarningPetalburgWally {
 	if (var(VAR_PETALBURG_CITY_STATE) != 5) {
 		setvar (VAR_TEMP_6, 1)
 		end
 	}
 	call (CheckBattleWarningLevel)
-	msgbox (OpponentWally, MSGBOX_AUTOCLOSE)
+	bufferstring (STR_VAR_1, CommonText_Wally)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
 }
 
 script BattleWarningVRWally {
@@ -62,8 +63,215 @@ script BattleWarningVRWally {
 		end
 	}
 	call (CheckBattleWarningLevel)
-	msgbox (OpponentWally, MSGBOX_AUTOCLOSE)
+	bufferstring (STR_VAR_1, CommonText_Wally)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
 }
+
+
+# Rival battles
+
+text OpponentAllRivals {
+	"The opponents will be all rivals in\n"
+	"sequence.\p"
+	"You will be healed between battles.\n"
+	"Victories are saved if a battle is lost."
+}
+
+script BattleWarningPetalburgRival {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) != 1) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	msgbox (ChallengingBattleImminent, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningPokemonLeagueRival {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 25) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	switch (var(VAR_EMERALBODY_RIVAL)) {
+		case 0:
+			bufferstring (STR_VAR_1, CommonText_Baron)
+		case 1:
+			bufferstring (STR_VAR_1, CommonText_Harper)
+		case 2:
+			bufferstring (STR_VAR_1, CommonText_Jakson)
+		case 3:
+			bufferstring (STR_VAR_1, CommonText_Redd)
+		case 4:
+			bufferstring (STR_VAR_1, CommonText_Sakura)
+		case 5:
+			msgbox (OpponentAllRivals, MSGBOX_AUTOCLOSE)
+			releaseall
+			end
+	}
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+	releaseall
+}
+
+script BattleWarningGraniteCaveHarper {
+	if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) >= 6 || (var(VAR_EMERALBODY_RIVAL) != 1 && var(VAR_EMERALBODY_RIVAL) != 5)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	bufferstring (STR_VAR_1, CommonText_Harper)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningGraniteCaveSakura {
+	if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) >= 7 || (var(VAR_EMERALBODY_RIVAL) != 4 && var(VAR_EMERALBODY_RIVAL) != 5)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	bufferstring (STR_VAR_1, CommonText_Sakura)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningDewfordBaron {
+	if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) >= 8 || (var(VAR_EMERALBODY_RIVAL) != 0 && var(VAR_EMERALBODY_RIVAL) != 5)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	bufferstring (STR_VAR_1, CommonText_Baron)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningSlateportRedd {
+	if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) >= 9 || (var(VAR_EMERALBODY_RIVAL) != 3 && var(VAR_EMERALBODY_RIVAL) != 5)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	bufferstring (STR_VAR_1, CommonText_Redd)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningFallarborJakson {
+	if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) >= 10 || (var(VAR_EMERALBODY_RIVAL) != 2 && var(VAR_EMERALBODY_RIVAL) != 5)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	bufferstring (STR_VAR_1, CommonText_Jakson)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningLavaridgeSakuraHelper {
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	if (var(VAR_TEMP_0) == 12 && var(VAR_TEMP_1) == 12) {
+		call (BattleWarningLavaridgeSakura)
+	}
+	else {
+		setvar (VAR_TEMP_6, 1)
+	}
+}
+
+script BattleWarningLavaridgeSakura {
+	if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) >= 11 || (var(VAR_EMERALBODY_RIVAL) != 4 && var(VAR_EMERALBODY_RIVAL) != 5)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	bufferstring (STR_VAR_1, CommonText_Sakura)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningPetalburgHarper {
+	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) != 11 && var(VAR_EMERALBODY_RIVAL) != 1) || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) != 6 && var(VAR_EMERALBODY_RIVAL) != 5)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	bufferstring (STR_VAR_1, CommonText_Harper)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningMauvilleBaron {
+	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) != 8 && var(VAR_EMERALBODY_RIVAL) != 0) || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) != 12 && var(VAR_EMERALBODY_RIVAL) != 5)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	bufferstring (STR_VAR_1, CommonText_Baron)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningRoute119Jakson {
+	if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) >= 14 || (var(VAR_EMERALBODY_RIVAL) != 2 && var(VAR_EMERALBODY_RIVAL) != 5)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	bufferstring (STR_VAR_1, CommonText_Jakson)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningMtPyreRedd {
+	if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) >= 15 || (var(VAR_EMERALBODY_RIVAL) != 3 && var(VAR_EMERALBODY_RIVAL) != 5)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	bufferstring (STR_VAR_1, CommonText_Redd)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningLilycoveBaron {
+	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) != 16 && var(VAR_EMERALBODY_RIVAL) != 0) || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) != 12 && var(VAR_EMERALBODY_RIVAL) != 5)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	bufferstring (STR_VAR_1, CommonText_Baron)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningMossdeepHarper {
+	if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) >= 17 || (var(VAR_EMERALBODY_RIVAL) != 1 && var(VAR_EMERALBODY_RIVAL) != 5)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	bufferstring (STR_VAR_1, CommonText_Harper)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningMossdeepRedd {
+	if (!flag(FLAG_BADGE07_GET) || var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) >= 18 || (var(VAR_EMERALBODY_RIVAL) != 3 && var(VAR_EMERALBODY_RIVAL) != 5)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	bufferstring (STR_VAR_1, CommonText_Redd)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningSootopolisSakura {
+	if (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) >= 19 || (var(VAR_EMERALBODY_RIVAL) != 4 && var(VAR_EMERALBODY_RIVAL) != 5)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	bufferstring (STR_VAR_1, CommonText_Sakura)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+}
+
+script BattleWarningSootopolisJakson {
+	if (var(VAR_SKY_PILLAR_STATE) < 2 || var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) >= 20 || (var(VAR_EMERALBODY_RIVAL) != 2 && var(VAR_EMERALBODY_RIVAL) != 5)) {
+		setvar (VAR_TEMP_6, 1)
+		end
+	}
+	call (CheckBattleWarningLevel)
+	bufferstring (STR_VAR_1, CommonText_Jakson)
+	msgbox (OpponentVar, MSGBOX_AUTOCLOSE)
+}
+
 
 
 # Expansion 1

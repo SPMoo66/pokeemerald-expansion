@@ -871,6 +871,24 @@
       "var": "VAR_TEMP_6",
       "var_value": "0",
       "script": "BattleWarningRoute119Rival"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 102,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningRoute119Jakson"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 102,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningRoute119Jakson"
     }
   ],
   "bg_events": [

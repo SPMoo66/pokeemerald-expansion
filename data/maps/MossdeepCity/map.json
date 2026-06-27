@@ -3,7 +3,6 @@
   "name": "MossdeepCity",
   "layout": "LAYOUT_MOSSDEEP_CITY",
   "music": "MUS_DP_CANALAVE_DAY",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_MOSSDEEP_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -470,6 +469,51 @@
       "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Harper_Battle04"
+    },
+    {
+      "type": "trigger",
+      "x": 36,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningMossdeepHarper"
+    },
+    {
+      "type": "trigger",
+      "x": 37,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningMossdeepHarper"
+    },
+    {
+      "type": "trigger",
+      "x": 38,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningMossdeepHarper"
+    },
+    {
+      "type": "trigger",
+      "x": 39,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningMossdeepHarper"
+    },
+    {
+      "type": "trigger",
+      "x": 40,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningMossdeepHarper"
     }
   ],
   "bg_events": [
@@ -545,5 +589,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "TrainerTipsDiveSprinting"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

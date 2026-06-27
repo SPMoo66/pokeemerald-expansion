@@ -3,7 +3,6 @@
   "name": "DewfordTown",
   "layout": "LAYOUT_DEWFORD_TOWN",
   "music": "MUS_DEWFORD",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_DEWFORD_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -167,6 +166,15 @@
       "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Baron_Battle02"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningDewfordBaron"
     }
   ],
   "bg_events": [
@@ -210,5 +218,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "DewfordTown_EventScript_HallSign"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

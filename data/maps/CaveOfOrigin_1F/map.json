@@ -3,7 +3,6 @@
   "name": "CaveOfOrigin_1F",
   "layout": "LAYOUT_CAVE_OF_ORIGIN_1F",
   "music": "MUS_CAVE_OF_ORIGIN",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_CAVE_OF_ORIGIN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -46,6 +45,35 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
-  "bg_events": []
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningSootopolisSakura"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningSootopolisSakura"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningSootopolisSakura"
+    }
+  ],
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }

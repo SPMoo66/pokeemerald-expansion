@@ -784,11 +784,11 @@ Redd_Battle04_16:
 # 413 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 414 "data/emeralbody_rivals/rival_battles.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 # 415 "data/emeralbody_rivals/rival_battles.pory"
 	removeobject 10
 # 416 "data/emeralbody_rivals/rival_battles.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	fadescreen FADE_FROM_BLACK
 # 417 "data/emeralbody_rivals/rival_battles.pory"
 	fadedefaultbgm
 # 418 "data/emeralbody_rivals/rival_battles.pory"
@@ -1511,7 +1511,7 @@ Rival_Battle05_21:
 # 758 "data/emeralbody_rivals/rival_battles.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
 # 759 "data/emeralbody_rivals/rival_battles.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 # 760 "data/emeralbody_rivals/rival_battles.pory"
 	warpsilent MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F, 9, 4
 # 761 "data/emeralbody_rivals/rival_battles.pory"

@@ -3,7 +3,6 @@
   "name": "MauvilleCity",
   "layout": "LAYOUT_MAUVILLE_CITY",
   "music": "MUS_DP_HEARTHOME_DAY",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_MAUVILLE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -319,6 +318,51 @@
       "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Baron_Battle03"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningMauvilleBaron"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningMauvilleBaron"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningMauvilleBaron"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningMauvilleBaron"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningMauvilleBaron"
     }
   ],
   "bg_events": [
@@ -386,5 +430,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MauvilleCity_EventScript_GameCornerSign"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

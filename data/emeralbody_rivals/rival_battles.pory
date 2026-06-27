@@ -411,9 +411,9 @@ script Redd_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 		}
 		msgbox (Battle04_ReddText_PostBattle3, MSGBOX_DEFAULT)
 		closemessage
-		fadescreenswapbuffers (FADE_TO_BLACK)
+		fadescreen (FADE_TO_BLACK)
 		removeobject (REDD_BATTLE04)
-		fadescreenswapbuffers (FADE_FROM_BLACK)
+		fadescreen (FADE_FROM_BLACK)
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 18)
 		clearflag (FLAG_CHALLENGING_TRAINER)
@@ -756,7 +756,7 @@ script Rival_Battle05 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 3
 			setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 25)
 		}
 		clearflag (FLAG_CHALLENGING_TRAINER)
-		fadescreenswapbuffers (FADE_TO_BLACK)
+		fadescreen (FADE_TO_BLACK)
 		warpsilent (MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F, 9, 4)
 		release
 	}

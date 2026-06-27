@@ -55,6 +55,7 @@ EverGrandeCity_PokemonLeague_1F_EventScript_DoorGuard::
 	copyobjectxytoperm LOCALID_LEAGUE_GUARD_1
 	copyobjectxytoperm LOCALID_LEAGUE_GUARD_2
 	setflag FLAG_ENTERED_ELITE_FOUR
+	call BattleWarningPokemonLeagueRival
 	releaseall
 	end
 

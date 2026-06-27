@@ -3,7 +3,6 @@
   "name": "GraniteCave_1F",
   "layout": "LAYOUT_GRANITE_CAVE_1F",
   "music": "MUS_HG_ICE_PATH",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GRANITE_CAVE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -116,6 +115,24 @@
       "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Harper_Battle02"
+    },
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningGraniteCaveHarper"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningGraniteCaveSakura"
     }
   ],
   "bg_events": [
@@ -127,5 +144,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "TrainerTipsEscapeRope"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

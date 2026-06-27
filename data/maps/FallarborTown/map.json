@@ -3,7 +3,6 @@
   "name": "FallarborTown",
   "layout": "LAYOUT_FALLARBOR_TOWN",
   "music": "MUS_FALLARBOR",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_FALLARBOR_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -211,6 +210,42 @@
       "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Jakson_Battle02"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningFallarborJakson"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningFallarborJakson"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningFallarborJakson"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningFallarborJakson"
     }
   ],
   "bg_events": [
@@ -278,5 +313,6 @@
       "item": "ITEM_NUGGET",
       "flag": "FLAG_HIDDEN_ITEM_FALLARBOR_TOWN_NUGGET"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

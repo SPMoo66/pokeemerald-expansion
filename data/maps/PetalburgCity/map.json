@@ -478,6 +478,87 @@
       "var": "VAR_TEMP_6",
       "var_value": "0",
       "script": "BattleWarningPetalburgWally"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningPetalburgRival"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningPetalburgRival"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningPetalburgRival"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningPetalburgRival"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningPetalburgHarper"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningPetalburgHarper"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningPetalburgHarper"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningPetalburgHarper"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningPetalburgHarper"
     }
   ],
   "bg_events": [

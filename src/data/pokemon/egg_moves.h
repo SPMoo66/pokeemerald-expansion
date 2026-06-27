@@ -764,6 +764,7 @@ static const u16 sSlowpokeEggMoveLearnset[] = {
     MOVE_ZEN_HEADBUTT,
     MOVE_WONDER_ROOM,
     MOVE_BELCH,
+    MOVE_TELEPORT,
     MOVE_UNAVAILABLE,
 };
 #if P_GALARIAN_FORMS
@@ -772,6 +773,8 @@ static const u16 sSlowpokeGalarEggMoveLearnset[] = {
     MOVE_BELLY_DRUM,
     MOVE_BLOCK,
     MOVE_STOMP,
+    MOVE_ME_FIRST,
+    MOVE_TELEPORT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS

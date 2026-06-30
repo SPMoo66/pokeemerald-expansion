@@ -20,7 +20,7 @@ script Expansion1_Rival_Scene03 {
 	playse (SE_M_METRONOME)
 	delay (40)
 	speakername (CommonText_Harper)
-	msgbox ("Let's just… forget that happened…\p"
+	msgbox ("Let's just… {PAUSE 100}forget that happened…\p"
 			"… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
 			"… {PAUSE 30}… {PAUSE 30}…\l"
 			"Oh, {PLAYER}, how wonderful it is to\l"
@@ -29,7 +29,7 @@ script Expansion1_Rival_Scene03 {
 			"… {PAUSE 30}… {PAUSE 30}…\l"
 			"Now that that's out of the way…\p"
 			"WHAT THE HELL IS GOING ON HERE?\p"
-			"I'VE BEEN STUCK IN THIS DARK CAVE FOR\n"
+			"I'VE BEEN STUCK IN THIS DARK CAVE {PAUSE 30}FOR{PAUSE 60}\n"
 			"HOURS!\p"
 			"NOBODY EVEN REPLIES TO MY MESSAGES\n"
 			"ON ENCORE ASKING FOR HELP!", MSGBOX_AUTOCLOSE)
@@ -172,12 +172,12 @@ script Expansion1_Follower_Harper1_Talking2 {
 			"around again when we were kids.\l"
 			"Physics games designed to play\l"
 			"around with the ragdoll mechanics.\p"
-			"You could just… torture the sillly\n"
+			"You could just… {PAUSE 100}torture the sillly\n"
 			"goobers. No consequence. No pain.\p"
 			"…{PAUSE 100}Shit.\p"
 			"If it works like that here, would my\n"
 			"revenge really be satisfying here…?\p"
-			"{EMOJI_BIGWHEEL}Crosses fingers{EMOJI_BIGWHEEL}\n"
+			"{EMOJI_BIGWHEEL}Crosses fingers{EMOJI_BIGWHEEL}{PAUSE 60}\n"
 			"Please use the VR headset's physics\l"
 			"engine…!", MSGBOX_AUTOCLOSE)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 29)
@@ -206,6 +206,9 @@ script Expansion1_Follower_Harper1_Talking3 {
 }
 
 script Expansion1_Rival_Scene04 {
+	playse (SE_CLICK)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_Talking)
+	delay (60)
 	facefollowernpc
 	speakername (CommonText_Harper)
 	msgbox ("Looks like we're free at last!\p"

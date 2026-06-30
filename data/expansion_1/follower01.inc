@@ -253,54 +253,60 @@ Expansion1_Follower_Harper1_Talking3::
 
 Expansion1_Rival_Scene04::
 # 209 "data/expansion_1/follower01.pory"
-	facefollowernpc
+	playse SE_CLICK
 # 210 "data/expansion_1/follower01.pory"
-	speakername CommonText_Harper
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_Talking
 # 211 "data/expansion_1/follower01.pory"
+	delay 60
+# 212 "data/expansion_1/follower01.pory"
+	facefollowernpc
+# 213 "data/expansion_1/follower01.pory"
+	speakername CommonText_Harper
+# 214 "data/expansion_1/follower01.pory"
 	msgbox Expansion1_Rival_Scene04_Text_0, MSGBOX_AUTOCLOSE
-# 224 "data/expansion_1/follower01.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_LockFacingDirection
-# 225 "data/expansion_1/follower01.pory"
-	waitmovement 0
-# 226 "data/expansion_1/follower01.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
 # 227 "data/expansion_1/follower01.pory"
-	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_LockFacingDirection
 # 228 "data/expansion_1/follower01.pory"
-	addobject 6
-# 229 "data/expansion_1/follower01.pory"
-	destroyfollowernpc
-# 230 "data/expansion_1/follower01.pory"
-	applymovement 6, Common_Movement_WalkLeft
-# 231 "data/expansion_1/follower01.pory"
 	waitmovement 0
+# 229 "data/expansion_1/follower01.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
+# 230 "data/expansion_1/follower01.pory"
+	waitmovement 0
+# 231 "data/expansion_1/follower01.pory"
+	addobject 6
 # 232 "data/expansion_1/follower01.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_UnlockFacingDirection
+	destroyfollowernpc
 # 233 "data/expansion_1/follower01.pory"
-	applymovement 6, Common_Movement_WalkDown
+	applymovement 6, Common_Movement_WalkLeft
 # 234 "data/expansion_1/follower01.pory"
 	waitmovement 0
 # 235 "data/expansion_1/follower01.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
+	applymovement LOCALID_PLAYER, Common_Movement_UnlockFacingDirection
 # 236 "data/expansion_1/follower01.pory"
-	applymovement 6, Common_Movement_WalkLeft
+	applymovement 6, Common_Movement_WalkDown
 # 237 "data/expansion_1/follower01.pory"
 	waitmovement 0
 # 238 "data/expansion_1/follower01.pory"
-	applymovement 6, Common_Movement_WalkInPlaceDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
 # 239 "data/expansion_1/follower01.pory"
-	waitmovement 0
+	applymovement 6, Common_Movement_WalkLeft
 # 240 "data/expansion_1/follower01.pory"
-	delay 10
+	waitmovement 0
 # 241 "data/expansion_1/follower01.pory"
-	removeobject 6
+	applymovement 6, Common_Movement_WalkInPlaceDown
 # 242 "data/expansion_1/follower01.pory"
-	playse SE_EXIT
+	waitmovement 0
 # 243 "data/expansion_1/follower01.pory"
-	waitse
+	delay 10
 # 244 "data/expansion_1/follower01.pory"
-	clearflag FLAG_SYS_HIDE_FOLLOWERS
+	removeobject 6
 # 245 "data/expansion_1/follower01.pory"
+	playse SE_EXIT
+# 246 "data/expansion_1/follower01.pory"
+	waitse
+# 247 "data/expansion_1/follower01.pory"
+	clearflag FLAG_SYS_HIDE_FOLLOWERS
+# 248 "data/expansion_1/follower01.pory"
 	setvar VAR_EMERALBODY_RIVAL_STATE, 31
 	return
 
@@ -321,7 +327,7 @@ Expansion1_Rival_Scene03_Text_0:
 
 Expansion1_Rival_Scene03_Text_1:
 # 23 "data/expansion_1/follower01.pory"
-	.string "Let's just… forget that happened…\p"
+	.string "Let's just… {PAUSE 100}forget that happened…\p"
 	.string "… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
 	.string "… {PAUSE 30}… {PAUSE 30}…\l"
 	.string "Oh, {PLAYER}, how wonderful it is to\l"
@@ -330,7 +336,7 @@ Expansion1_Rival_Scene03_Text_1:
 	.string "… {PAUSE 30}… {PAUSE 30}…\l"
 	.string "Now that that's out of the way…\p"
 	.string "WHAT THE HELL IS GOING ON HERE?\p"
-	.string "I'VE BEEN STUCK IN THIS DARK CAVE FOR\n"
+	.string "I'VE BEEN STUCK IN THIS DARK CAVE {PAUSE 30}FOR{PAUSE 60}\n"
 	.string "HOURS!\p"
 	.string "NOBODY EVEN REPLIES TO MY MESSAGES\n"
 	.string "ON ENCORE ASKING FOR HELP!$"
@@ -397,12 +403,12 @@ Expansion1_Follower_Harper1_Talking2_Text_0:
 	.string "around again when we were kids.\l"
 	.string "Physics games designed to play\l"
 	.string "around with the ragdoll mechanics.\p"
-	.string "You could just… torture the sillly\n"
+	.string "You could just… {PAUSE 100}torture the sillly\n"
 	.string "goobers. No consequence. No pain.\p"
 	.string "…{PAUSE 100}Shit.\p"
 	.string "If it works like that here, would my\n"
 	.string "revenge really be satisfying here…?\p"
-	.string "{EMOJI_BIGWHEEL}Crosses fingers{EMOJI_BIGWHEEL}\n"
+	.string "{EMOJI_BIGWHEEL}Crosses fingers{EMOJI_BIGWHEEL}{PAUSE 60}\n"
 	.string "Please use the VR headset's physics\l"
 	.string "engine…!$"
 
@@ -423,7 +429,7 @@ Expansion1_Follower_Harper1_Talking3_Text_0:
 	.string "At least, where I can.$"
 
 Expansion1_Rival_Scene04_Text_0:
-# 211 "data/expansion_1/follower01.pory"
+# 214 "data/expansion_1/follower01.pory"
 	.string "Looks like we're free at last!\p"
 	.string "All that and we didn't even run into\n"
 	.string "whatever story event is in there.\p"

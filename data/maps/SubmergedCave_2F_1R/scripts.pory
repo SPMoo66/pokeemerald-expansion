@@ -10,8 +10,8 @@ mapscripts SubmergedCave_2F_1R_MapScripts {
 		setflag (FLAG_LANDMARK_SUBMERGED_CAVE)
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [
-		VAR_TEMP_0, 0 {
-			setvar (VAR_TEMP_0, 1)
+		VAR_TEMP_1, 0 {
+			setvar (VAR_TEMP_1, 1)
 			if (var(VAR_EMERALBODY_RIVAL_STATE) < 26) {
 				clearflag (FLAG_DONT_START_MUSIC_ON_WARP)
 				clearflag (FLAG_SYS_SPAWN_INVISIBLE)
@@ -49,7 +49,7 @@ script SubmergedCave_2F_1R_EventScript_Renzo {
 }
 
 script SubmergedCave_2F_1R_EventScript_Theo {
-	trainerbattle_single (TRAINER_THEO, "A battle would give me an excellent break from my research.", "Time to get back to work!")
+	trainerbattle_single (TRAINER_THEO, "A battle would give me an excellent\nbreak from my research.", "Time to get back to work!")
 	msgbox ("I believe the crystals on the surface\nmay be related to those down here.", MSGBOX_AUTOCLOSE)
 }
 

@@ -29,12 +29,12 @@ SubmergedCave_2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 
 SubmergedCave_2F_1R_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 13 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	map_script_2 VAR_TEMP_0, 0, SubmergedCave_2F_1R_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0
+	map_script_2 VAR_TEMP_1, 0, SubmergedCave_2F_1R_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0
 	.2byte 0
 
 SubmergedCave_2F_1R_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0:
 # 14 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	setvar VAR_TEMP_0, 1
+	setvar VAR_TEMP_1, 1
 # 15 "data/maps/SubmergedCave_2F_1R/scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 26
 	goto_if_lt SubmergedCave_2F_1R_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_1
@@ -889,7 +889,7 @@ SubmergedCave_2F_1R_EventScript_Renzo_Text_2:
 
 SubmergedCave_2F_1R_EventScript_Theo_Text_0:
 # 52 "data/maps/SubmergedCave_2F_1R/scripts.pory"
-	.string "A battle would give me an excellent break from my research.$"
+	.string "A battle would give me an excellent\nbreak from my research.$"
 
 SubmergedCave_2F_1R_EventScript_Theo_Text_1:
 # 52 "data/maps/SubmergedCave_2F_1R/scripts.pory"

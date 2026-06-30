@@ -254,9 +254,8 @@ Debug_EventScript_Script_7::
 	end
 
 Debug_EventScript_Script_8::
-	setflag FLAG_LANDMARK_MAUVE_CAMP
-	setvar VAR_EMERALBODY_RIVAL_STATE, 22
-	warp MAP_MAUVE_ISLAND_WEST, 6, 10
+	setvar VAR_EMERALBODY_RIVAL_STATE, 26
+	warp MAP_SUBMERGED_CAVE_1F_2R, 11, 15
 	waitstate
 	release
 	end

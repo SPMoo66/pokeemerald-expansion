@@ -10,7 +10,7 @@ static inline enum Region GetRegionForSectionId(u32 sectionId)
 {
     if (sectionId >= KANTO_MAPSEC_START && sectionId < MAPSEC_SPECIAL_AREA)
         return REGION_KANTO;
-    else if (sectionId >= EXPANSION_1_MAPSEC_START && sectionId < EXPANSION_1_MAPSEC_END)
+    else if (sectionId >= EXPANSION_1_MAPSEC_START && sectionId <= EXPANSION_1_MAPSEC_END)
         return REGION_EXPANSION_1;
     return REGION_HOENN;
 }

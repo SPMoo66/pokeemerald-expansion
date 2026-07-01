@@ -1,1 +1,25 @@
 mapscripts MauveIslandSoutheast_MapScripts {}
+
+script MauveIslandSoutheast_EventScript_Lars {
+	trainerbattle_single (TRAINER_LARS, "I can't find a good start for my climb,\nso distract me with a battle!", "Urgh!")
+	msgbox ("Not even I can make it up these cliff\nwalls.", MSGBOX_AUTOCLOSE)
+}
+
+script MauveIslandSoutheast_EventScript_Keela {
+	trainerbattle_single (TRAINER_KEELA, "I'm borrowing daddy's Pokémon!\pMake them stronger for me!", "No!\nThat's not stronger!")
+	msgbox ("Daddy couldn't come, so he told us\nto bring his Pokémon with us!", MSGBOX_AUTOCLOSE)
+}
+
+script MauveIslandSoutheast_EventScript_Gordon {
+	trainerbattle_single (TRAINER_GORDON, "Fight my Pokémon, mister!", "Aww.")
+	msgbox ("Mommy said she's getting a dee-vorse.\nWhat's that?\lI hope it's something fun!", MSGBOX_AUTOCLOSE)
+}
+
+script MauveIslandSoutheast_EventScript_Vernon {
+	trainerbattle_single (TRAINER_VERNON, "Halt, villain!\pThis item is mine!", "And to the victor, the spoils…")
+	msgbox ("You overcame my strategy like nothing.", MSGBOX_AUTOCLOSE)
+}
+
+script MauveIslandSoutheast_EventScript_Woman {
+	msgbox ("A trip to the beach is a great way to\nrelieve some stress, isn't it?", MSGBOX_NPC)
+}

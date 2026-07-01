@@ -3,3 +3,18 @@ mapscripts MauveHollow_1_MapScripts {
 		setflag (FLAG_LANDMARK_MAUVE_HOLLOW)
 	}
 }
+
+script MauveHollow_1_EventScript_Humphrey {
+	trainerbattle_single (TRAINER_HUMPHREY, "The change in color is fascinating, no?", "Perhaps the Pokémon are more\nfascinating!")
+	msgbox ("How incredible it is to find stones of a\ndifferent color than the namesake of\lthe island?", MSGBOX_AUTOCLOSE)
+}
+
+script MauveHollow_1_EventScript_Fred {
+	trainerbattle_single (TRAINER_FRED, "This looks like a great place to try to\ncamp!", "Maybe I need to find some new Pokémon\nhere first…")
+	msgbox ("Sleeping here would be a test of\ncourage!", MSGBOX_AUTOCLOSE)
+}
+
+script MauveHollow_1_EventScript_Dio {
+	trainerbattle_single (TRAINER_DIO, "I have been training here since\narriving.", "What strength!")
+	msgbox ("You've shown me that I need to\nredouble my efforts in training.", MSGBOX_AUTOCLOSE)
+}

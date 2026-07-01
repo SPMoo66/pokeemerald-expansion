@@ -512,9 +512,11 @@ const u8 gTrainerBackPic_RubySapphireBrendan[] = INCGFX_U8("graphics/trainers/ba
 const u8 gTrainerBackPic_RubySapphireMay[] = INCGFX_U8("graphics/trainers/back_pics/may_rs.png", ".4bpp");
 const u8 gTrainerBackPic_Wally[] = INCGFX_U8("graphics/trainers/back_pics/wally.png", ".4bpp");
 const u8 gTrainerBackPic_Steven[] = INCGFX_U8("graphics/trainers/back_pics/steven.png", ".4bpp");
+const u16 gTrainerBackPicPalette_Steven[] = INCGFX_U16("graphics/trainers/back_pics/steven.png", ".gbapal");
 const u8 gTrainerBackPic_Blank[] = INCGFX_U8("graphics/trainers/back_pics/blank.png", ".4bpp");
 
-const u16 gTrainerBackPicPalette_Steven[] = INCGFX_U16("graphics/trainers/back_pics/steven.png", ".gbapal");
+const u8 gTrainerBackPic_Harper[] = INCGFX_U8("graphics/trainers/back_pics/harper.png", ".4bpp");
+const u16 gTrainerBackPicPalette_Harper[] = INCGFX_U16("graphics/trainers/back_pics/harper.png", ".gbapal");
 
 const u32 gTrainerFrontPic_WallyConfident[] = INCGFX_U32("graphics/trainers/front_pics/wally_confident.png", ".4bpp.smol");
 const u16 gTrainerPalette_WallyConfident[] = INCGFX_U16("graphics/trainers/front_pics/wally_confident.png", ".gbapal");
@@ -1064,6 +1066,7 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_HARPER] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Harper, gTrainerPalette_Harper),
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_Harper, gTrainerBackPicPalette_Harper, sBackAnims_Hoenn),
     },
     [TRAINER_PIC_JAKSON] =
     {

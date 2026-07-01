@@ -285,7 +285,7 @@
         .partySize = 3,
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerPic = TRAINER_PIC_HARPER,
         .trainerName = _("Harper"),
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_SMART_TERA,
         .party = (const struct TrainerMon[])

@@ -23,3 +23,16 @@ script SS_Tidal_Dungeon_1F_2R_Rooms_FishBowl {
 			"There are some colorful fish swimming\n"
 			"around inside.", MSGBOX_AUTOCLOSE)
 }
+
+script SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Otis {
+	trainerbattle_single (TRAINER_OTIS, "I don't remember you from before.\pShow your ticket, please!", "Drats!")
+	msgbox ("Please finish your business and return\nto your cabin.", MSGBOX_AUTOCLOSE)
+}
+
+script SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Woman {
+	msgbox ("What have you traveled here for?\pI'm here to view the trees of the\ntropics.", MSGBOX_NPC)
+}
+
+script SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Boy {
+	msgbox ("I'm here to find the treasure!\pJust leave it to me!", MSGBOX_NPC)
+}

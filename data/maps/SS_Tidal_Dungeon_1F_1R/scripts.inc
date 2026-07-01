@@ -103,6 +103,12 @@ SS_Tidal_Dungeon_1F_1R_LockedRoom_3:
 	goto SS_Tidal_Dungeon_1F_1R_LockedRoom_1
 
 
+SS_Tidal_Dungeon_1F_1R_EventScript_Woman::
+# 51 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
+	msgbox SS_Tidal_Dungeon_1F_1R_EventScript_Woman_Text_0, MSGBOX_NPC
+	return
+
+
 SS_Tidal_Dungeon_1F_1R_LockedRoom_Text_0:
 # 33 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
 	.string "{PLAYER} inserted and turned the\n"
@@ -113,3 +119,7 @@ SS_Tidal_Dungeon_1F_1R_LockedRoom_Text_0:
 SS_Tidal_Dungeon_1F_1R_LockedRoom_Text_1:
 # 42 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
 	.string "The door is locked.$"
+
+SS_Tidal_Dungeon_1F_1R_EventScript_Woman_Text_0:
+# 51 "data/maps/SS_Tidal_Dungeon_1F_1R/scripts.pory"
+	.string "The ocean view on the ride here has\nbeen gorgeous.\pI'd never seen anything like this\nbefore moving to Hoenn.$"

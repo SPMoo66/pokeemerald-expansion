@@ -1,1 +1,10 @@
 mapscripts SS_Tidal_Dungeon_1F_1R_Room2_MapScripts {}
+
+script SS_Tidal_Dungeon_1F_1R_Room2_EventScript_Gavin {
+	trainerbattle_single (TRAINER_GAVIN, "Waiter, a battle, before we land!", "You're no waitstaff!")
+	msgbox ("Surely you could at least tell me if\nwe've landed.", MSGBOX_AUTOCLOSE)
+}
+
+script SS_Tidal_Dungeon_1F_1R_Room2_EventScript_Girl {
+	msgbox ("I can't wait to go out and see the\npretty water!", MSGBOX_NPC)
+}

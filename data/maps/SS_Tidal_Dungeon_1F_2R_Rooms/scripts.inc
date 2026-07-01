@@ -46,6 +46,26 @@ SS_Tidal_Dungeon_1F_2R_Rooms_FishBowl::
 	return
 
 
+SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Otis::
+# 28 "data/maps/SS_Tidal_Dungeon_1F_2R_Rooms/scripts.pory"
+	trainerbattle_single TRAINER_OTIS, SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Otis_Text_0, SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Otis_Text_1
+# 29 "data/maps/SS_Tidal_Dungeon_1F_2R_Rooms/scripts.pory"
+	msgbox SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Otis_Text_2, MSGBOX_AUTOCLOSE
+	return
+
+
+SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Woman::
+# 33 "data/maps/SS_Tidal_Dungeon_1F_2R_Rooms/scripts.pory"
+	msgbox SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Woman_Text_0, MSGBOX_NPC
+	return
+
+
+SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Boy::
+# 37 "data/maps/SS_Tidal_Dungeon_1F_2R_Rooms/scripts.pory"
+	msgbox SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Boy_Text_0, MSGBOX_NPC
+	return
+
+
 SS_Tidal_Dungeon_1F_2R_Rooms_Key_Text_0:
 # 15 "data/maps/SS_Tidal_Dungeon_1F_2R_Rooms/scripts.pory"
 	.string "{PLAYER} found a Room Key!$"
@@ -55,3 +75,23 @@ SS_Tidal_Dungeon_1F_2R_Rooms_FishBowl_Text_0:
 	.string "It's a fishbowl!\p"
 	.string "There are some colorful fish swimming\n"
 	.string "around inside.$"
+
+SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Otis_Text_0:
+# 28 "data/maps/SS_Tidal_Dungeon_1F_2R_Rooms/scripts.pory"
+	.string "I don't remember you from before.\pShow your ticket, please!$"
+
+SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Otis_Text_1:
+# 28 "data/maps/SS_Tidal_Dungeon_1F_2R_Rooms/scripts.pory"
+	.string "Drats!$"
+
+SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Otis_Text_2:
+# 29 "data/maps/SS_Tidal_Dungeon_1F_2R_Rooms/scripts.pory"
+	.string "Please finish your business and return\nto your cabin.$"
+
+SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Woman_Text_0:
+# 33 "data/maps/SS_Tidal_Dungeon_1F_2R_Rooms/scripts.pory"
+	.string "What have you traveled here for?\pI'm here to view the trees of the\ntropics.$"
+
+SS_Tidal_Dungeon_1F_2R_Rooms_EventScript_Boy_Text_0:
+# 37 "data/maps/SS_Tidal_Dungeon_1F_2R_Rooms/scripts.pory"
+	.string "I'm here to find the treasure!\pJust leave it to me!$"

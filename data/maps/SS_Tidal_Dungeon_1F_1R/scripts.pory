@@ -46,3 +46,7 @@ script SS_Tidal_Dungeon_1F_1R_LockedRoom {
 	}
 	releaseall
 }
+
+script SS_Tidal_Dungeon_1F_1R_EventScript_Woman {
+	msgbox ("The ocean view on the ride here has\nbeen gorgeous.\pI'd never seen anything like this\nbefore moving to Hoenn.", MSGBOX_NPC)
+}

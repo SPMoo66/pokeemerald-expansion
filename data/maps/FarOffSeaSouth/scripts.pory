@@ -1,1 +1,25 @@
 mapscripts FarOffSeaSouth_MapScripts {}
+
+script FarOffSeaSouth_EventScript_Seraphina {
+	trainerbattle_single (TRAINER_SERAPHINA, "I'm tired!\pGive me a ride on your Pokémon if I win!", "Aww.")
+	msgbox ("If your Pokémon fainted, I couldn't\nget a ride anyway.", MSGBOX_AUTOCLOSE)
+}
+
+script FarOffSeaSouth_EventScript_Elara {
+	trainerbattle_single (TRAINER_ELARA, "This water is so much colder than I\nexpected!", "I'm heated now!")
+	msgbox ("The water is so clear around this\nisland.", MSGBOX_AUTOCLOSE)
+}
+
+script FarOffSeaSouth_EventScript_Jon {
+	trainerbattle_single (TRAINER_JON, "I swam here all the way from Hoenn!", "I was already tired!")
+	msgbox ("Okay, that was a lie.\pI rode the boat like everyone else.", MSGBOX_AUTOCLOSE)
+}
+
+script FarOffSeaSouth_EventScript_Elmer {
+	trainerbattle_single (TRAINER_ELMER, "Big catch!", "Hmm. Not fresh enough?")
+	msgbox ("I need a bigger catch.", MSGBOX_AUTOCLOSE)
+}
+
+script FarOffSeaSouth_EventScript_Sailor {
+	msgbox ("Urp.\nThere are a lot of shallows out here.", MSGBOX_NPC)
+}

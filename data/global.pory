@@ -1377,3 +1377,12 @@ script PlayersHouse_2F_EventScript_Notebook {
 #	}
 #	closemessage
 #}
+#
+#script DebugVarResult {
+#	if (var(VAR_RESULT) == TRUE) {
+#		msgbox ("TRUE", MSGBOX_AUTOCLOSE)
+#	}
+#	elif (var(VAR_RESULT) == FALSE) {
+#		msgbox ("FALSE", MSGBOX_AUTOCLOSE)
+#	}
+#}

@@ -1,1 +1,49 @@
-mapscripts IllusoryGrotto_B4F_2R_MapScripts {}
+mapscripts IllusoryGrotto_B4F_2R_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setvar (VAR_RESULT, 0)	// Be careful when using checktrainerflag, as it does not write FALSE to VAR_RESULT, only TRUE. If VAR_RESULT is already TRUE, it is not overwritten.
+		checktrainerflag (TRAINER_WILD_POKEMON_IG_1)
+		if (var(VAR_RESULT) == TRUE) {
+			setflag (FLAG_TEMP_1)
+		}
+	}
+}
+
+text Exp1_WildPokemonTrainerText_Intro {
+	"Grrrooo!!"
+}
+
+text Exp1_WildPokemonTrainerText_Defeat {
+	"Grooo."
+}
+
+script IllusoryGrotto_B4F_2R_EventScript_WildPokemon {
+	checktrainerflag (TRAINER_WILD_POKEMON_IG_1)
+	if (var(VAR_RESULT) == FALSE) {
+		lock
+		setflag (FLAG_WILD_OPPONENT)
+		playmoncry (SPECIES_LUCARIO, CRY_MODE_ENCOUNTER)
+		waitmoncry
+		special (SpawnCameraObject)
+		applymovement (LOCALID_CAMERA, Common_Movement_WalkUp2)
+		waitmovement (0)
+		special (RemoveCameraObject)
+		trainerbattle_single (TRAINER_WILD_POKEMON_IG_1, Exp1_WildPokemonTrainerText_Intro, Exp1_WildPokemonTrainerText_Defeat, IllusoryGrotto_B4F_2R_EventScript_WildPokemon_Victory)
+	}
+	setvar (VAR_TEMP_3, 1)
+}
+
+script IllusoryGrotto_B4F_2R_EventScript_WildPokemon_Victory {
+	playmoncry (SPECIES_LUCARIO, CRY_MODE_WEAK)
+	waitmoncry
+	applymovement (2, Common_Movement_WalkUpFast3)
+	waitmovement (0)
+	special (SpawnCameraObject)
+	delay (20)
+	applymovement (LOCALID_CAMERA, Common_Movement_WalkDown2)
+	waitmovement (0)
+	special (RemoveCameraObject)
+	setvar (VAR_TEMP_3, 1)
+	clearflag (FLAG_WILD_OPPONENT)
+	removeobject (2)
+	release
+}

@@ -1,8 +1,6 @@
 mapscripts IllusoryGrotto_B4F_2R_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
-		setvar (VAR_RESULT, 0)	// Be careful when using checktrainerflag, as it does not write FALSE to VAR_RESULT, only TRUE. If VAR_RESULT is already TRUE, it is not overwritten.
-		checktrainerflag (TRAINER_WILD_POKEMON_IG_1)
-		if (var(VAR_RESULT) == TRUE) {
+		if (defeated(TRAINER_WILD_POKEMON_IG_1)) {
 			setflag (FLAG_TEMP_1)
 		}
 	}
@@ -17,8 +15,7 @@ text Exp1_WildPokemonTrainerText_Defeat {
 }
 
 script IllusoryGrotto_B4F_2R_EventScript_WildPokemon {
-	checktrainerflag (TRAINER_WILD_POKEMON_IG_1)
-	if (var(VAR_RESULT) == FALSE) {
+	if (!defeated(TRAINER_WILD_POKEMON_IG_1)) {
 		lock
 		setflag (FLAG_WILD_OPPONENT)
 		playmoncry (SPECIES_LUCARIO, CRY_MODE_ENCOUNTER)

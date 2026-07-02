@@ -201,7 +201,9 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
-	call PlayersHouse_2F_EventScript_Notebook
+@	call PlayersHouse_2F_EventScript_Notebook
+	cleartrainerflag TRAINER_GRUNT_AQUA_HIDEOUT_3
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_3, CommonText_Mom, CommonText_Mom
 	release
 	end
 

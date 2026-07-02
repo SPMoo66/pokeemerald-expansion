@@ -723,6 +723,13 @@ Common_Movement_WalkLeftFast::
 	walk_fast_left
 	step_end
 
+Common_Movement_WalkLeftFast4::
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	step_end
+
 Common_Movement_WalkUpFaster::
 	walk_faster_up
 	step_end

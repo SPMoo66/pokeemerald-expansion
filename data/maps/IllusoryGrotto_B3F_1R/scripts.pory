@@ -11,7 +11,34 @@ mapscripts IllusoryGrotto_B3F_1R_MapScripts {
 		if (flag(FLAG_EXP_1_ILLUSORY_GROTTO_B3F_1R_ROCK)) {
 			setvar (VAR_TEMP_3, 1)
 		}
+		if (defeated(TRAINER_WILD_POKEMON_IG_2)) {
+			setflag (FLAG_TEMP_1)
+		}
 	}
+}
+
+script IllusoryGrotto_B3F_1R_EventScript_WildPokemon {
+	if (!defeated(TRAINER_WILD_POKEMON_IG_2)) {
+		lock
+		setflag (FLAG_WILD_OPPONENT)
+		playmoncry (SPECIES_LUCARIO, CRY_MODE_ENCOUNTER)
+		waitmoncry
+		trainerbattle_single (TRAINER_WILD_POKEMON_IG_2, Exp1_WildPokemonTrainerText_Intro, Exp1_WildPokemonTrainerText_Defeat, IllusoryGrotto_B3F_1R_EventScript_WildPokemon_Victory)
+	}
+	setvar (VAR_TEMP_0, 1)
+}
+
+script IllusoryGrotto_B3F_1R_EventScript_WildPokemon_Victory {
+	playmoncry (SPECIES_LUCARIO, CRY_MODE_WEAK)
+	waitmoncry
+	applymovement (2, Common_Movement_WalkLeftFast4)
+	waitmovement (0)
+	applymovement (2, Common_Movement_WalkUpFast3)
+	waitmovement (0)
+	setvar (VAR_TEMP_0, 1)
+	clearflag (FLAG_WILD_OPPONENT)
+	removeobject (2)
+	release
 }
 
 script IllusoryGrotto_B3F_1R_Rock {

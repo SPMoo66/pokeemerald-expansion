@@ -19329,7 +19329,7 @@ static const struct TrainerMon sParty_WildPokemonIG2[] = {
     .ball = POKEBALL_COUNT,
     .lvl = 63,
     .species = SPECIES_KAILANT,
-    .ability = ABILITY_SOUNDPROOF,
+    .ability = ABILITY_TRANSISTOR,
     },
     {
     .ball = POKEBALL_COUNT,

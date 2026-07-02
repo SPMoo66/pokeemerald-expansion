@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_TEMP_1"
     }
   ],
   "warp_events": [
@@ -98,6 +98,15 @@
       "var": "VAR_TEMP_2",
       "var_value": "0",
       "script": "IllusoryGrotto_B3F_1R_Monster3"
+    },
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "IllusoryGrotto_B3F_1R_EventScript_WildPokemon"
     }
   ],
   "bg_events": []

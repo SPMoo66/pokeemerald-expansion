@@ -4,3 +4,18 @@ script WellspringChasm_2_EventScript_PortalTeleport {
 	warp (MAP_TEMPORAL_SPIRE, 0)
 	waitstate
 }
+
+script WellspringChasm_2_EventScript_Dewey {
+	trainerbattle_single (TRAINER_DEWEY, "These wild Pokémon are strong, but\nI need a real Trainer to battle!", "Ooh, wow!")
+	msgbox ("Maybe I need to train some more first.", MSGBOX_AUTOCLOSE)
+}
+
+script WellspringChasm_2_EventScript_Harold {
+	trainerbattle_single (TRAINER_HAROLD, "Can you feel it?", "Hmm, it wasn't you.")
+	msgbox ("I haven't found a single Dragon\nPokémon here, but I can still feel\lthem nearby.", MSGBOX_AUTOCLOSE)
+}
+
+script WellspringChasm_2_EventScript_Aurora {
+	trainerbattle_single (TRAINER_AURORA, "I saw a creepy portal up ahead.\pIf I win, you go investigate it for me!", "Whatever!")
+	msgbox ("You go check it out anyway!", MSGBOX_AUTOCLOSE)
+}

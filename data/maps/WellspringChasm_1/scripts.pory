@@ -3,3 +3,7 @@ mapscripts WellspringChasm_1_MapScripts {
 		setflag (FLAG_LANDMARK_WELLSPRING_CHASM)
 	}
 }
+
+script WellspringChasm_1_EventScript_Sailor {
+	msgbox ("I heard a huge roar from deeper in!\pProbably one of the trainers letting\nloose…?\lAh, let's hope it was only that.", MSGBOX_NPC)
+}

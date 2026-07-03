@@ -1,6 +1,10 @@
 Expansion1_Rival_Scene09::
 # 13 "data/expansion_1/scene09.pory"
 	setvar VAR_TEMP_3, 1
+# 14 "data/expansion_1/scene09.pory"
+	checktrainerflag TRAINER_WILD_POKEMON_BV_2
+	goto_if 0, Expansion1_Rival_Scene09_2
+Expansion1_Rival_Scene09_1:
 # 27 "data/expansion_1/scene09.pory"
 	removeobject 1
 # 28 "data/expansion_1/scene09.pory"
@@ -588,6 +592,31 @@ Expansion1_Rival_Scene09::
 # 347 "data/expansion_1/scene09.pory"
 	msgbox Expansion1_Rival_Scene09_Text_31, MSGBOX_AUTOCLOSE
 	return
+
+Expansion1_Rival_Scene09_2:
+# 15 "data/expansion_1/scene09.pory"
+	lock
+# 16 "data/expansion_1/scene09.pory"
+	setflag FLAG_WILD_OPPONENT
+# 17 "data/expansion_1/scene09.pory"
+	setflag FLAG_SYS_SET_BATTLE_BGM
+# 18 "data/expansion_1/scene09.pory"
+	setvar VAR_BATTLE_BGM, MUS_XD_VS_CIPHER_PEON
+# 19 "data/expansion_1/scene09.pory"
+	playmoncry SPECIES_LUCARIO, CRY_MODE_ENCOUNTER
+# 20 "data/expansion_1/scene09.pory"
+	waitmoncry
+# 21 "data/expansion_1/scene09.pory"
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+# 22 "data/expansion_1/scene09.pory"
+	msgbox Exp1_WildPokemonTrainerText_Intro, MSGBOX_DEFAULT
+# 23 "data/expansion_1/scene09.pory"
+	trainerbattle_no_intro TRAINER_WILD_POKEMON_BV_2, Exp1_WildPokemonTrainerText_Defeat
+# 24 "data/expansion_1/scene09.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 25 "data/expansion_1/scene09.pory"
+	clearflag FLAG_WILD_OPPONENT
+	goto Expansion1_Rival_Scene09_1
 
 
 Expansion1_Rival_Scene09_Text_0:

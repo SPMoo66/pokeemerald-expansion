@@ -16,23 +16,21 @@ script IllusoryGrotto_B4F_2R_EventScript_WildPokemon {
 		applymovement (LOCALID_CAMERA, Common_Movement_WalkUp2)
 		waitmovement (0)
 		special (RemoveCameraObject)
-		trainerbattle_single (TRAINER_WILD_POKEMON_IG_1, Exp1_WildPokemonTrainerText_Intro, Exp1_WildPokemonTrainerText_Defeat, IllusoryGrotto_B4F_2R_EventScript_WildPokemon_Victory)
+		msgbox (Exp1_WildPokemonTrainerText_Intro, MSGBOX_DEFAULT)
+		trainerbattle_no_intro (TRAINER_WILD_POKEMON_IG_1, Exp1_WildPokemonTrainerText_Defeat)
+		playmoncry (SPECIES_LUCARIO, CRY_MODE_WEAK)
+		waitmoncry
+		applymovement (2, Common_Movement_WalkUpFast3)
+		waitmovement (0)
+		special (SpawnCameraObject)
+		delay (20)
+		applymovement (LOCALID_CAMERA, Common_Movement_WalkDown2)
+		waitmovement (0)
+		special (RemoveCameraObject)
+		setvar (VAR_TEMP_3, 1)
+		clearflag (FLAG_WILD_OPPONENT)
+		removeobject (2)
+		release
 	}
 	setvar (VAR_TEMP_3, 1)
-}
-
-script IllusoryGrotto_B4F_2R_EventScript_WildPokemon_Victory {
-	playmoncry (SPECIES_LUCARIO, CRY_MODE_WEAK)
-	waitmoncry
-	applymovement (2, Common_Movement_WalkUpFast3)
-	waitmovement (0)
-	special (SpawnCameraObject)
-	delay (20)
-	applymovement (LOCALID_CAMERA, Common_Movement_WalkDown2)
-	waitmovement (0)
-	special (RemoveCameraObject)
-	setvar (VAR_TEMP_3, 1)
-	clearflag (FLAG_WILD_OPPONENT)
-	removeobject (2)
-	release
 }

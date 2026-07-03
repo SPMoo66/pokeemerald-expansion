@@ -20,7 +20,7 @@ IllusoryGrotto_B4F_2R_EventScript_WildPokemon::
 	checktrainerflag TRAINER_WILD_POKEMON_IG_1
 	goto_if 0, IllusoryGrotto_B4F_2R_EventScript_WildPokemon_2
 IllusoryGrotto_B4F_2R_EventScript_WildPokemon_1:
-# 21 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+# 35 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
 	setvar VAR_TEMP_3, 1
 	return
 
@@ -42,36 +42,34 @@ IllusoryGrotto_B4F_2R_EventScript_WildPokemon_2:
 # 18 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
 	special RemoveCameraObject
 # 19 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
-	trainerbattle_single TRAINER_WILD_POKEMON_IG_1, Exp1_WildPokemonTrainerText_Intro, Exp1_WildPokemonTrainerText_Defeat, IllusoryGrotto_B4F_2R_EventScript_WildPokemon_Victory
-	goto IllusoryGrotto_B4F_2R_EventScript_WildPokemon_1
-
-
-IllusoryGrotto_B4F_2R_EventScript_WildPokemon_Victory::
-# 25 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+	msgbox Exp1_WildPokemonTrainerText_Intro, MSGBOX_DEFAULT
+# 20 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+	trainerbattle_no_intro TRAINER_WILD_POKEMON_IG_1, Exp1_WildPokemonTrainerText_Defeat
+# 21 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
 	playmoncry SPECIES_LUCARIO, CRY_MODE_WEAK
-# 26 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+# 22 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
 	waitmoncry
-# 27 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+# 23 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
 	applymovement 2, Common_Movement_WalkUpFast3
+# 24 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+	waitmovement 0
+# 25 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+	special SpawnCameraObject
+# 26 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+	delay 20
+# 27 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+	applymovement LOCALID_CAMERA, Common_Movement_WalkDown2
 # 28 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
 	waitmovement 0
 # 29 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
-	special SpawnCameraObject
-# 30 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
-	delay 20
-# 31 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
-	applymovement LOCALID_CAMERA, Common_Movement_WalkDown2
-# 32 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
-	waitmovement 0
-# 33 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
 	special RemoveCameraObject
-# 34 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+# 30 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
 	setvar VAR_TEMP_3, 1
-# 35 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+# 31 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
 	clearflag FLAG_WILD_OPPONENT
-# 36 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+# 32 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
 	removeobject 2
-# 37 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+# 33 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
 	release
-	return
+	goto IllusoryGrotto_B4F_2R_EventScript_WildPokemon_1
 

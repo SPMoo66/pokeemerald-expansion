@@ -42,7 +42,7 @@ IllusoryGrotto_B3F_1R_EventScript_WildPokemon::
 	checktrainerflag TRAINER_WILD_POKEMON_IG_2
 	goto_if 0, IllusoryGrotto_B3F_1R_EventScript_WildPokemon_2
 IllusoryGrotto_B3F_1R_EventScript_WildPokemon_1:
-# 28 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 39 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setvar VAR_TEMP_0, 1
 	return
 
@@ -56,212 +56,210 @@ IllusoryGrotto_B3F_1R_EventScript_WildPokemon_2:
 # 25 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	waitmoncry
 # 26 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	trainerbattle_single TRAINER_WILD_POKEMON_IG_2, Exp1_WildPokemonTrainerText_Intro, Exp1_WildPokemonTrainerText_Defeat, IllusoryGrotto_B3F_1R_EventScript_WildPokemon_Victory
+	msgbox Exp1_WildPokemonTrainerText_Intro, MSGBOX_DEFAULT
+# 27 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	trainerbattle_no_intro TRAINER_WILD_POKEMON_IG_2, Exp1_WildPokemonTrainerText_Defeat
+# 28 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	playmoncry SPECIES_LUCARIO, CRY_MODE_WEAK
+# 29 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	waitmoncry
+# 30 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	applymovement 2, Common_Movement_WalkLeftFast4
+# 31 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	waitmovement 0
+# 32 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	applymovement 2, Common_Movement_WalkUpFast3
+# 33 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	waitmovement 0
+# 34 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	setvar VAR_TEMP_0, 1
+# 35 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	clearflag FLAG_WILD_OPPONENT
+# 36 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	removeobject 2
+# 37 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	release
 	goto IllusoryGrotto_B3F_1R_EventScript_WildPokemon_1
 
 
-IllusoryGrotto_B3F_1R_EventScript_WildPokemon_Victory::
-# 32 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	playmoncry SPECIES_LUCARIO, CRY_MODE_WEAK
-# 33 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	waitmoncry
-# 34 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	applymovement 2, Common_Movement_WalkLeftFast4
-# 35 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	waitmovement 0
-# 36 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	applymovement 2, Common_Movement_WalkUpFast3
-# 37 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	waitmovement 0
-# 38 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	setvar VAR_TEMP_0, 1
-# 39 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	clearflag FLAG_WILD_OPPONENT
-# 40 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	removeobject 2
-# 41 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	release
-	return
-
-
 IllusoryGrotto_B3F_1R_Rock::
-# 45 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 44 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	goto_if_unset FLAG_EXP_1_ILLUSORY_GROTTO_B3F_1R_ROCK, IllusoryGrotto_B3F_1R_Rock_2
 IllusoryGrotto_B3F_1R_Rock_1:
-# 60 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 59 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	release
 	return
 
 IllusoryGrotto_B3F_1R_Rock_2:
-# 46 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 45 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	call IllusoryGrottoMovableRock_Exp1
-# 47 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 46 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 17, 16, 0x011, FALSE
-# 48 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 47 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 17, 17, 0x023, TRUE
+# 48 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	special DrawWholeMapView
 # 49 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	special DrawWholeMapView
+	delay 10
 # 50 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	delay 10
-# 51 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 17, 17, 0x019, TRUE
-# 52 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 51 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 17, 18, 0x023, TRUE
-# 53 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 52 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	special DrawWholeMapView
-# 54 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 53 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	playse SE_M_STRENGTH
-# 55 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 54 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	delay 10
-# 56 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 55 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setflag FLAG_EXP_1_ILLUSORY_GROTTO_B3F_1R_ROCK
-# 57 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 56 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setvar VAR_TEMP_3, 1
-# 58 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 57 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	removeobject 1
 	goto IllusoryGrotto_B3F_1R_Rock_1
 
 
 IllusoryGrotto_B3F_1R_Monster1::
-# 64 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 63 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	call IllusoryGrotto_MonsterCommon1_Exp1
+# 64 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	setmetatile 17, 18, 0x025, TRUE
 # 65 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	setmetatile 17, 18, 0x025, TRUE
+	special DrawWholeMapView
 # 66 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	special DrawWholeMapView
+	delay 10
 # 67 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	delay 10
+	setmetatile 17, 18, 0x026, TRUE
 # 68 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	setmetatile 17, 18, 0x026, TRUE
+	special DrawWholeMapView
 # 69 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	special DrawWholeMapView
+	delay 10
 # 70 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	delay 10
-# 71 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 17, 18, 0x027, TRUE
-# 72 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 71 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	call IllusoryGrotto_MonsterCommon2_Exp1
-# 73 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 72 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkFastDown4
+# 73 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	waitmovement 0
 # 74 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	waitmovement 0
-# 75 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_UnlockFacingDirection
-# 76 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 75 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	waitmovement 0
-# 77 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 76 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 17, 18, 0x026, TRUE
+# 77 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	special DrawWholeMapView
 # 78 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	special DrawWholeMapView
+	delay 10
 # 79 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	delay 10
-# 80 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 17, 18, 0x025, TRUE
+# 80 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	special DrawWholeMapView
 # 81 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	special DrawWholeMapView
-# 82 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	delay 10
-# 83 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 82 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 17, 18, 0x01D, TRUE
-# 84 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 83 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	special DrawWholeMapView
-# 85 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 84 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	release
 	return
 
 
 IllusoryGrotto_B3F_1R_Monster2::
-# 89 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 88 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	call IllusoryGrotto_MonsterCommon1_Exp1
+# 89 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	setmetatile 12, 12, 0x025, TRUE
 # 90 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	setmetatile 12, 12, 0x025, TRUE
+	special DrawWholeMapView
 # 91 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	special DrawWholeMapView
+	delay 10
 # 92 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	delay 10
+	setmetatile 12, 12, 0x026, TRUE
 # 93 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	setmetatile 12, 12, 0x026, TRUE
+	special DrawWholeMapView
 # 94 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	special DrawWholeMapView
+	delay 10
 # 95 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	delay 10
-# 96 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 12, 12, 0x027, TRUE
-# 97 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 96 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	call IllusoryGrotto_MonsterCommon2_Exp1
-# 98 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 97 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkFastDown2
+# 98 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	waitmovement 0
 # 99 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	waitmovement 0
-# 100 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_UnlockFacingDirection
-# 101 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 100 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	waitmovement 0
-# 102 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 101 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 12, 12, 0x026, TRUE
+# 102 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	special DrawWholeMapView
 # 103 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	special DrawWholeMapView
+	delay 10
 # 104 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	delay 10
-# 105 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 12, 12, 0x025, TRUE
+# 105 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	special DrawWholeMapView
 # 106 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	special DrawWholeMapView
-# 107 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	delay 10
-# 108 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 107 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 12, 12, 0x01D, TRUE
-# 109 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 108 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	special DrawWholeMapView
-# 110 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 109 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	release
 	return
 
 
 IllusoryGrotto_B3F_1R_Monster3::
-# 114 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 113 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	call IllusoryGrotto_MonsterCommon1_Exp1
+# 114 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	setmetatile 6, 20, 0x025, TRUE
 # 115 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	setmetatile 6, 20, 0x025, TRUE
+	special DrawWholeMapView
 # 116 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	special DrawWholeMapView
+	delay 10
 # 117 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	delay 10
+	setmetatile 6, 20, 0x026, TRUE
 # 118 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	setmetatile 6, 20, 0x026, TRUE
+	special DrawWholeMapView
 # 119 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	special DrawWholeMapView
+	delay 10
 # 120 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	delay 10
-# 121 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 6, 20, 0x027, TRUE
-# 122 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 121 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	call IllusoryGrotto_MonsterCommon2_Exp1
-# 123 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 122 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkFastDown
+# 123 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	waitmovement 0
 # 124 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	waitmovement 0
-# 125 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_UnlockFacingDirection
-# 126 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 125 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	waitmovement 0
-# 127 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 126 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 6, 20, 0x026, TRUE
+# 127 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	special DrawWholeMapView
 # 128 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	special DrawWholeMapView
+	delay 10
 # 129 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	delay 10
-# 130 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 6, 20, 0x025, TRUE
+# 130 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+	special DrawWholeMapView
 # 131 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
-	special DrawWholeMapView
-# 132 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	delay 10
-# 133 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 132 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	setmetatile 6, 20, 0x01D, TRUE
-# 134 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 133 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	special DrawWholeMapView
-# 135 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
+# 134 "data/maps/IllusoryGrotto_B3F_1R/scripts.pory"
 	release
 	return
 

@@ -119,3 +119,11 @@ Text_TooDarkLetsTurnBack::
 	.string "…\l"
 	.string "It appears to be too dark to continue…\l"
 	.string "Let's turn back.$"
+
+Exp1_WildPokemonTrainerText_Intro::
+# 61 "data/expansion_1/global.pory"
+	.string "Grrrooo!!$"
+
+Exp1_WildPokemonTrainerText_Defeat::
+# 65 "data/expansion_1/global.pory"
+	.string "Grooo.$"

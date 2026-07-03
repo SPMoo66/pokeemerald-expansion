@@ -612,6 +612,10 @@ Common_Movement_JumpUp:
 	jump_up
 	step_end
 
+Common_Movement_JumpDown:
+	jump_down
+	step_end
+
 Common_Movement_JumpLeft:
 	jump_left
 	step_end
@@ -715,11 +719,24 @@ Common_Movement_WalkDownFast::
 	walk_fast_down
 	step_end
 
+Common_Movement_WalkDownFast5::
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	step_end
+
 Common_Movement_WalkRightFast::
 	walk_fast_right
 	step_end
 
 Common_Movement_WalkLeftFast::
+	walk_fast_left
+	step_end
+
+Common_Movement_WalkLeftFast2::
+	walk_fast_left
 	walk_fast_left
 	step_end
 

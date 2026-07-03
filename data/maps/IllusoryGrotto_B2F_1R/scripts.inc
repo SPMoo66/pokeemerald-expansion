@@ -32,7 +32,15 @@ IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	goto_if_set FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK_IN_PLACE, IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_3
 IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 18 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
-	goto_if_set FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK, IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_6
+	goto_if_set FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK, IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
+IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_6:
+# 21 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	checktrainerflag TRAINER_WILD_POKEMON_IG_3
+	goto_if 1, IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_10
+IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_9:
+# 24 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	checktrainerflag TRAINER_WILD_POKEMON_IG_4
+	goto_if 1, IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_12
 	return
 
 IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
@@ -45,112 +53,232 @@ IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
 	goto_if_unset FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK, IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 	goto IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
-IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_6:
+IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
 # 19 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	setvar VAR_TEMP_3, 1
+	goto IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_6
+
+IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_10:
+# 22 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	setflag FLAG_TEMP_1
+	goto IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_9
+
+IllusoryGrotto_B2F_1R_MapScripts_MAP_SCRIPT_ON_TRANSITION_12:
+# 25 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	setflag FLAG_TEMP_2
+	return
+
+
+IllusoryGrotto_B2F_1R_EventScript_WildPokemon1::
+# 31 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	checktrainerflag TRAINER_WILD_POKEMON_IG_3
+	goto_if 0, IllusoryGrotto_B2F_1R_EventScript_WildPokemon1_2
+IllusoryGrotto_B2F_1R_EventScript_WildPokemon1_1:
+# 38 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	setvar VAR_TEMP_0, 1
+	return
+
+IllusoryGrotto_B2F_1R_EventScript_WildPokemon1_2:
+# 32 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	lock
+# 33 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	setflag FLAG_WILD_OPPONENT
+# 34 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	playmoncry SPECIES_LUCARIO, CRY_MODE_ENCOUNTER
+# 35 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	waitmoncry
+# 36 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	trainerbattle_single TRAINER_WILD_POKEMON_IG_3, Exp1_WildPokemonTrainerText_Intro, Exp1_WildPokemonTrainerText_Defeat, IllusoryGrotto_B2F_1R_EventScript_WildPokemon1_Victory
+	goto IllusoryGrotto_B2F_1R_EventScript_WildPokemon1_1
+
+
+IllusoryGrotto_B2F_1R_EventScript_WildPokemon1_Victory::
+# 42 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	playmoncry SPECIES_LUCARIO, CRY_MODE_WEAK
+# 43 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	waitmoncry
+# 44 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	applymovement 2, Common_Movement_WalkDownFast
+# 45 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	waitmovement 0
+# 46 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	playse SE_LEDGE
+# 47 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	applymovement 2, Common_Movement_JumpDown
+# 48 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	waitmovement 0
+# 49 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	applymovement 2, Common_Movement_WalkDownFast5
+# 50 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	waitmovement 0
+# 51 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	setvar VAR_TEMP_0, 1
+# 52 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	clearflag FLAG_WILD_OPPONENT
+# 53 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	removeobject 2
+# 54 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	release
+	return
+
+
+IllusoryGrotto_B2F_1R_EventScript_WildPokemon2::
+# 58 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	checktrainerflag TRAINER_WILD_POKEMON_IG_4
+	goto_if 0, IllusoryGrotto_B2F_1R_EventScript_WildPokemon2_2
+IllusoryGrotto_B2F_1R_EventScript_WildPokemon2_1:
+# 66 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	setvar VAR_TEMP_1, 1
+	return
+
+IllusoryGrotto_B2F_1R_EventScript_WildPokemon2_2:
+# 59 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	lock
+# 60 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	turnobject LOCALID_PLAYER, DIR_WEST
+# 61 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	setflag FLAG_WILD_OPPONENT
+# 62 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	playmoncry SPECIES_LUCARIO, CRY_MODE_ENCOUNTER
+# 63 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	waitmoncry
+# 64 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	trainerbattle_single TRAINER_WILD_POKEMON_IG_4, Exp1_WildPokemonTrainerText_Intro, Exp1_WildPokemonTrainerText_Defeat, IllusoryGrotto_B2F_1R_EventScript_WildPokemon2_Victory
+	goto IllusoryGrotto_B2F_1R_EventScript_WildPokemon2_1
+
+
+IllusoryGrotto_B2F_1R_EventScript_WildPokemon2_Victory::
+# 70 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	playmoncry SPECIES_LUCARIO, CRY_MODE_WEAK
+# 71 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	waitmoncry
+# 72 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	playse SE_LEDGE
+# 73 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	applymovement 3, Common_Movement_JumpLeft2
+# 74 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	waitmovement 0
+# 75 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	playse SE_LEDGE
+# 76 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	applymovement 3, Common_Movement_JumpLeft2
+# 77 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	waitmovement 0
+# 78 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	applymovement 3, Common_Movement_WalkLeftFast2
+# 79 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	waitmovement 0
+# 80 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	setvar VAR_TEMP_1, 1
+# 81 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	clearflag FLAG_WILD_OPPONENT
+# 82 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	removeobject 3
+# 83 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+	release
 	return
 
 
 IllusoryGrotto_B2F_1R_Rock::
-# 25 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 88 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	goto_if_set FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK_IN_PLACE, IllusoryGrotto_B2F_1R_Rock_3
 IllusoryGrotto_B2F_1R_Rock_1:
-# 41 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 104 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	release
 	return
 
 IllusoryGrotto_B2F_1R_Rock_2:
-# 26 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 89 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	call IllusoryGrottoMovableRock_Exp1
-# 27 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 90 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	setmetatile 18, 6, 0x011, FALSE
-# 28 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 91 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	setmetatile 18, 7, 0x023, TRUE
-# 29 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 92 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	special DrawWholeMapView
-# 30 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 93 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	delay 10
-# 31 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 94 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	setmetatile 18, 7, 0x019, TRUE
-# 32 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 95 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	setmetatile 18, 8, 0x053, TRUE
-# 33 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 96 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	special DrawWholeMapView
-# 34 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 97 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	playse SE_M_STRENGTH
-# 35 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 98 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	delay 10
-# 36 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 99 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	setflag FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK
-# 37 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 100 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	setvar VAR_TEMP_3, 1
-# 38 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 101 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	setflag FLAG_TEMP_3
-# 39 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 102 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	removeobject 1
 	goto IllusoryGrotto_B2F_1R_Rock_1
 
 IllusoryGrotto_B2F_1R_Rock_3:
-# 25 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 88 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	goto_if_unset FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK, IllusoryGrotto_B2F_1R_Rock_2
 	goto IllusoryGrotto_B2F_1R_Rock_1
 
 
 IllusoryGrotto_B2F_1R_Monster::
-# 45 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 108 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	call IllusoryGrotto_MonsterCommon1_Exp1
-# 46 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 109 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	setmetatile 18, 8, 0x04D, TRUE
-# 47 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 110 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	special DrawWholeMapView
-# 48 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 111 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	delay 10
-# 49 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 112 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	setmetatile 18, 8, 0x04E, TRUE
-# 50 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 113 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	special DrawWholeMapView
-# 51 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 114 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	delay 10
-# 52 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 115 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	setmetatile 18, 8, 0x04F, TRUE
-# 53 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 116 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	call IllusoryGrotto_MonsterCommon2_Exp1
-# 54 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 117 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-# 55 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 118 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	compare VAR_TEMP_1, 9
 	goto_if_eq IllusoryGrotto_B2F_1R_Monster_2
-# 59 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 122 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkFastDown2
 IllusoryGrotto_B2F_1R_Monster_1:
-# 61 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 124 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	waitmovement 0
-# 62 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 125 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_UnlockFacingDirection
-# 63 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 126 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	waitmovement 0
-# 64 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 127 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	setmetatile 18, 8, 0x04E, TRUE
-# 65 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 128 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	special DrawWholeMapView
-# 66 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 129 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	delay 10
-# 67 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 130 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	setmetatile 18, 8, 0x04D, TRUE
-# 68 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 131 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	special DrawWholeMapView
-# 69 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 132 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	delay 10
-# 70 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 133 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	setmetatile 18, 8, 0x04C, TRUE
-# 71 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 134 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	special DrawWholeMapView
-# 72 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 135 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	release
 	return
 
 IllusoryGrotto_B2F_1R_Monster_2:
-# 56 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
+# 119 "data/maps/IllusoryGrotto_B2F_1R/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkFastDown3
 	goto IllusoryGrotto_B2F_1R_Monster_1
 

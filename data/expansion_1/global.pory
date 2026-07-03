@@ -57,3 +57,11 @@ script SlateportCity_Harbor_MauveIslandSailor {
 	}
 	closemessage
 }
+
+text Exp1_WildPokemonTrainerText_Intro {
+	"Grrrooo!!"
+}
+
+text Exp1_WildPokemonTrainerText_Defeat {
+	"Grooo."
+}

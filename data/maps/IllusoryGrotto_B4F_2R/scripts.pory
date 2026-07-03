@@ -6,14 +6,6 @@ mapscripts IllusoryGrotto_B4F_2R_MapScripts {
 	}
 }
 
-text Exp1_WildPokemonTrainerText_Intro {
-	"Grrrooo!!"
-}
-
-text Exp1_WildPokemonTrainerText_Defeat {
-	"Grooo."
-}
-
 script IllusoryGrotto_B4F_2R_EventScript_WildPokemon {
 	if (!defeated(TRAINER_WILD_POKEMON_IG_1)) {
 		lock

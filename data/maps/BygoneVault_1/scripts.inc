@@ -196,8 +196,10 @@ BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_5:
 # 92 "data/maps/BygoneVault_1/scripts.pory"
 	special RemoveCameraObject
 # 93 "data/maps/BygoneVault_1/scripts.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 43
+	setflag FLAG_TEMP_5
 # 94 "data/maps/BygoneVault_1/scripts.pory"
+	setvar VAR_EMERALBODY_RIVAL_STATE, 43
+# 95 "data/maps/BygoneVault_1/scripts.pory"
 	removeobject 5
 	return
 
@@ -221,54 +223,54 @@ BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_7:
 
 
 BygoneVault_FullBowl::
-# 100 "data/maps/BygoneVault_1/scripts.pory"
+# 101 "data/maps/BygoneVault_1/scripts.pory"
 	msgbox BygoneVault_FullBowl_Text_0, MSGBOX_AUTOCLOSE
 	return
 
 
 BygoneVault_DoorShut::
-# 104 "data/maps/BygoneVault_1/scripts.pory"
+# 105 "data/maps/BygoneVault_1/scripts.pory"
 	msgbox BygoneVault_DoorShut_Text_0, MSGBOX_AUTOCLOSE
 	return
 
 
 BygoneVault_1_Sign::
-# 108 "data/maps/BygoneVault_1/scripts.pory"
+# 109 "data/maps/BygoneVault_1/scripts.pory"
 	msgbox BygoneVault_1_Sign_Text_0, MSGBOX_SIGN
 	return
 
 
 Script_RedrawBygoneVault1Map::
-# 123 "data/maps/BygoneVault_1/scripts.pory"
+# 124 "data/maps/BygoneVault_1/scripts.pory"
 	goto_if_unset FLAG_TEMP_6, Script_RedrawBygoneVault1Map_2
 	return
 
 Script_RedrawBygoneVault1Map_1:
-# 124 "data/maps/BygoneVault_1/scripts.pory"
-	setmetatile 8, 1, 0x0DD, FALSE
 # 125 "data/maps/BygoneVault_1/scripts.pory"
-	special DrawWholeMapView
+	setmetatile 8, 1, 0x0DD, FALSE
 # 126 "data/maps/BygoneVault_1/scripts.pory"
+	special DrawWholeMapView
+# 127 "data/maps/BygoneVault_1/scripts.pory"
 	setflag FLAG_TEMP_6
 	return
 
 Script_RedrawBygoneVault1Map_2:
-# 123 "data/maps/BygoneVault_1/scripts.pory"
+# 124 "data/maps/BygoneVault_1/scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 43
 	goto_if_ge Script_RedrawBygoneVault1Map_1
 	return
 
 
 BygoneVault_FullBowl_Text_0:
-# 100 "data/maps/BygoneVault_1/scripts.pory"
+# 101 "data/maps/BygoneVault_1/scripts.pory"
 	.string "The bowl has filled with water.$"
 
 BygoneVault_DoorShut_Text_0:
-# 104 "data/maps/BygoneVault_1/scripts.pory"
+# 105 "data/maps/BygoneVault_1/scripts.pory"
 	.string "The door is firmly sealed shut.$"
 
 BygoneVault_1_Sign_Text_0:
-# 108 "data/maps/BygoneVault_1/scripts.pory"
+# 109 "data/maps/BygoneVault_1/scripts.pory"
 	.string "And as they foretold\n"
 	.string "The doors were sealed firmly shut\l"
 	.string "'Til the drought had passed$"

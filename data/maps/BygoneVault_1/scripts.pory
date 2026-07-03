@@ -90,6 +90,7 @@ mapscripts BygoneVault_1_MapScripts {
 			}
 			waitmovement (0)
 			special (RemoveCameraObject)
+			setflag (FLAG_TEMP_5)
 			setvar (VAR_EMERALBODY_RIVAL_STATE, 43)
 			removeobject (5)
 		}

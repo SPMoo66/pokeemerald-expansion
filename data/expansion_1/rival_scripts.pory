@@ -28,7 +28,8 @@
 	# 41: Set in preparation for Scene08
 	# 42: Set after Scene08                                                       Town05
 	# 43: Set after clearing Bygone Vault 1                                       Town06
-	# 44: tbd
+	# 44: Set after clearing Bygone Vault 2
+	# 45: tbd
 
 script EventScript_JaksonExpansion1Call {
 	lockall

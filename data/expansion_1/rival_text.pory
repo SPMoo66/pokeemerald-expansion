@@ -1,10 +1,11 @@
 // dots…
 
-# PAUSE_XX Rules
+# PAUSE XX Rules
 # Stutters - {PAUSE 30}					Ex. "W- {PAUSE 30}When?"
 # Emphasis - {PAUSE 30} XX {PAUSE 60}	Ex. "You took {PAUSE 30}forever {PAUSE 60)to log-on!"
-# …	- {PAUSE 100}						Ex. "…{PAUSE 100}When?"
+# …	- {PAUSE 100}						Ex. "When… {PAUSE 100}are you?"
 #	But … in sequence get {PAUSE 60}	Ex. "… {PAUSE 60}… {PAUSE 60}…"
+#	And … at the start of lines get {PAUSE 60}
 #	If there are a lot of them, use {PAUSE 30}s
 # Other pauses are subjective but keep to 30, 60, 100
 # Don't use any pauses directly before \l or \p
@@ -212,7 +213,7 @@ text Exp1_Town03_ReddText {
 			"types to show up on the ship?\p"
 			"I mean, it… {PAUSE 100}probably wasn't supposed\n"
 			"to crash in the first place, right?\l"
-			"…{PAUSE 100}Right?")
+			"…{PAUSE 60}Right?")
 }
 
 text Exp1_Town03_BaronText {
@@ -230,8 +231,8 @@ text Exp1_Town03_BaronText {
 text Exp1_Town03_JaksonText {
 	format( "Hey, {PLAYER}.\p"
 			"Harper's already gone off to the ship.\p"
-			"…{PAUSE 100}Yeah, she really gave me an earful…\n"
-			"…{PAUSE 100}in a couple ways…\l"
+			"…{PAUSE 60}Yeah, she really gave me an earful…\n"
+			"…{PAUSE 60}in a couple ways…\l"
 			"But, I get it. I understand where she's\l"
 			"coming from.\p"
 			"I should've put a little more time into\n"
@@ -293,7 +294,7 @@ text Exp1_Town04_BaronText {
 }
 
 text Exp1_Town04b_BaronText {
-	format( "…{PAUSE 100}one of my own friends! Of course!\n"
+	format( "…{PAUSE 60}one of my own friends! Of course!\n"
 			"All of you are my very own friends.")
 }
 
@@ -357,4 +358,76 @@ text Exp1_Town05b_JaksonText {
 			"when we get a chance.\p"
 			"The odds are that we're one step\n"
 			"closer to completion.")
+}
+
+
+#Town06
+text Exp1_Town06_SakuraText {
+	format( "Come on, {PLAYER}{EMOJI_TILDE}\p"
+			"You have to go hurry up and finish the\n"
+			"puzzles for me!\p"
+			"My treasure senses are tingling, and I\n"
+			"want to get in there right away!")
+}
+
+text Exp1_Town06b_SakuraText {
+	format( "Agh, I want to get in there right now…{PAUSE 100}\n"
+			"but you did do all the work, right,\l"
+			"{PLAYER}?\p"
+			"Okay, you can have the honors of being\n"
+			"first in there, but I'll be right at your\l"
+			"heels!")
+}
+
+text Exp1_Town06_HarperText {
+	format( "Up, {PAUSE 60}down, {PAUSE 60}up, {PAUSE 60}down…\p"
+			"What sick, {PAUSE 30}twisted monster actually\n"
+			"likes these underwater puzzles,\l"
+			"{PLAYER}?\p"
+			"The experience through the headset\n"
+			"alone is… {PAUSE 100} Urk…")
+}
+
+text Exp1_Town06_ReddText {
+	format( "Phew…{PAUSE 100}\n"
+			"You wanna do the honors, {PLAYER}?\p"
+			"There sure are a lot of puzzles and\n"
+			"mazes here, so this has gotta be the\l"
+			"final dungeon, right?\p"
+			"Which means it'll be treasure time.\p"
+			"I wonder what that'll be… {PAUSE 100}what are you\n"
+			"thinking?\p"
+			"Maybe… {PAUSE 100}a masterball. {PAUSE 60}The classics\n"
+			"are the classics for a reason.")
+}
+
+text Exp1_Town06_BaronText {
+	format( "Uh… {PAUSE 100}are you lost too, {PLAYER}?\p"
+			"I've gotten better, definitely, but I'm\n"
+			"still going to struggle with something\l"
+			"like this!\p"
+			"Gosh, maybe we should just moves as\n"
+			"a group next time?\p"
+			"…{PAUSE 60}Oh?\p"
+			"Just use my Escape Rope if I get\n"
+			"stuck?\p"
+			"Thank you for the reminder, {PLAYER}!\n"
+			"You're a good bean.")
+}
+
+text Exp1_Town06_JaksonText {
+	format( "Well… {PAUSE 100}this must be a storage room, huh?\p"
+			"The original builders of this vault sure\n"
+			"didn't make it easy on themselves.\p"
+			"…{PAUSE 60}well, if that were the truth of its\n"
+			"construction, at least.\p"
+			"Whoever made this MOD designed this,\n"
+			"just so we could have had a long maze\l"
+			"to go through.\p"
+			"I'd call it padding, but let's not\n"
+			"pretend Game Freak has ever had\l"
+			"good dungeon designs.\p"
+			"…{PAUSE 60}no.{PAUSE 100}\n"
+			"No, I'm not trying to lower the\l"
+			"expectations for my own work later…")
 }

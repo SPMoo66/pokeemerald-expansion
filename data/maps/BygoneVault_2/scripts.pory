@@ -20,6 +20,9 @@ mapscripts BygoneVault_2_MapScripts {
 		setflag (FLAG_TEMP_1)
 		setflag (FLAG_TEMP_2)
 		setflag (FLAG_TEMP_3)
+		if (var(VAR_EMERALBODY_RIVAL_STATE) != 43) {
+			setflag (FLAG_TEMP_4)
+		}
 		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH_2)) {
 			clearflag (FLAG_TEMP_1)
 		}

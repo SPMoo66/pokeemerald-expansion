@@ -1,5 +1,5 @@
 Call1_JaksonText::
-# 13 "data/expansion_1/rival_text.pory"
+# 14 "data/expansion_1/rival_text.pory"
 	.string "Jakson: Yo, {PLAYER}!\n"
 	.string "I'm glad I caught you!\p"
 	.string "If I didn't see you online, I was\n"
@@ -17,7 +17,7 @@ Call1_JaksonText::
 	.string "See you soon!$"
 
 Exp1_Town01_SakuraText::
-# 32 "data/expansion_1/rival_text.pory"
+# 33 "data/expansion_1/rival_text.pory"
 	.string "Ooh!\p"
 	.string "I really wonder if we'll run into\n"
 	.string "any pirates out there!\p"
@@ -30,7 +30,7 @@ Exp1_Town01_SakuraText::
 	.string "just a little longer every day!$"
 
 Exp1_Town01_HarperText::
-# 45 "data/expansion_1/rival_text.pory"
+# 46 "data/expansion_1/rival_text.pory"
 	.string "Hey, {PLAYER}.\n"
 	.string "Good to see you.\p"
 	.string "It's kind of a coincidence that I\n"
@@ -49,7 +49,7 @@ Exp1_Town01_HarperText::
 	.string "I wonder if something happened…$"
 
 Exp1_Town01_ReddText::
-# 64 "data/expansion_1/rival_text.pory"
+# 65 "data/expansion_1/rival_text.pory"
 	.string "Yo.\p"
 	.string "I was born and raised on Kanto, then I\n"
 	.string "stepped up for Hoenn.\p"
@@ -65,7 +65,7 @@ Exp1_Town01_ReddText::
 	.string "after.$"
 
 Exp1_Town01_BaronText::
-# 80 "data/expansion_1/rival_text.pory"
+# 81 "data/expansion_1/rival_text.pory"
 	.string "Hi, {PLAYER}.\p"
 	.string "This ‘expansion’ has me worried. It took\n"
 	.string "me a lot of money to get through the\l"
@@ -82,23 +82,23 @@ Exp1_Town01_BaronText::
 	.string "me a moment later.$"
 
 Exp1_Town01_JaksonText::
-# 97 "data/expansion_1/rival_text.pory"
+# 98 "data/expansion_1/rival_text.pory"
 	.string "Hey, {PLAYER}. You ready to go?\n"
 	.string "Got your team together?$"
 
 Exp1_Town01_JaksonTextAccept::
-# 102 "data/expansion_1/rival_text.pory"
+# 103 "data/expansion_1/rival_text.pory"
 	.string "Good, good!\p"
 	.string "Alright everyone, time to board!\n"
 	.string "Adventure awaits!$"
 
 Exp1_Town01_JaksonTextDecline::
-# 108 "data/expansion_1/rival_text.pory"
+# 109 "data/expansion_1/rival_text.pory"
 	.string "Then hurry up and get ready!\n"
 	.string "The others are waiting!$"
 
 Exp1_Town02_SakuraText::
-# 115 "data/expansion_1/rival_text.pory"
+# 116 "data/expansion_1/rival_text.pory"
 	.string "Ahoy, {PLAYER}!\p"
 	.string "Do you see that sealed off cave there?\p"
 	.string "I'm wondering if there's a way to open\n"
@@ -112,7 +112,7 @@ Exp1_Town02_SakuraText::
 	.string "Sakura Strength{EMOJI_TILDE}{UNK_SPACER}$"
 
 Exp1_Town02_ReddText::
-# 129 "data/expansion_1/rival_text.pory"
+# 130 "data/expansion_1/rival_text.pory"
 	.string "Hey.\p"
 	.string "I'm pretty sure Harper's not here on\n"
 	.string "the main island, but I'm giving it one\l"
@@ -129,7 +129,7 @@ Exp1_Town02_ReddText::
 	.string "I'm good now, so let's get back to it!$"
 
 Exp1_Town02_BaronText::
-# 146 "data/expansion_1/rival_text.pory"
+# 147 "data/expansion_1/rival_text.pory"
 	.string "Oh! {PLAYER}! You gave me a fright.\p"
 	.string "Right after that…\p"
 	.string "Oh, right! The person with the light\n"
@@ -143,7 +143,7 @@ Exp1_Town02_BaronText::
 	.string "me?$"
 
 Exp1_Town02b_BaronText::
-# 160 "data/expansion_1/rival_text.pory"
+# 161 "data/expansion_1/rival_text.pory"
 	.string "Oh! You found it!\p"
 	.string "Can you go head and start the search\n"
 	.string "for her?\p"
@@ -152,7 +152,7 @@ Exp1_Town02b_BaronText::
 	.string "Hold on just a little longer, Harper…$"
 
 Exp1_Town02_JaksonText::
-# 169 "data/expansion_1/rival_text.pory"
+# 170 "data/expansion_1/rival_text.pory"
 	.string "I took a peek down South.\p"
 	.string "Since it's blocked, I'll start looking\n"
 	.string "for a way to move those Shuckle.\p"
@@ -167,7 +167,7 @@ Exp1_Town02_JaksonText::
 	.string "in on him.$"
 
 Exp1_Town03_SakuraText::
-# 186 "data/expansion_1/rival_text.pory"
+# 187 "data/expansion_1/rival_text.pory"
 	.string "Let me guess what you're thinking-\p"
 	.string "“Why didn't we cut this short and\n"
 	.string "message Harper straight away?\p"
@@ -183,7 +183,7 @@ Exp1_Town03_SakuraText::
 	.string "Would {PAUSE 30}SHE {PAUSE 60}have known where she was?$"
 
 Exp1_Town03_ReddText::
-# 202 "data/expansion_1/rival_text.pory"
+# 203 "data/expansion_1/rival_text.pory"
 	.string "It's good to have the whole crew back\n"
 	.string "together.\p"
 	.string "I was wondering what ‘excitement level’\n"
@@ -196,10 +196,10 @@ Exp1_Town03_ReddText::
 	.string "types to show up on the ship?\p"
 	.string "I mean, it… {PAUSE 100}probably wasn't supposed\n"
 	.string "to crash in the first place, right?\l"
-	.string "…{PAUSE 100}Right?$"
+	.string "…{PAUSE 60}Right?$"
 
 Exp1_Town03_BaronText::
-# 218 "data/expansion_1/rival_text.pory"
+# 219 "data/expansion_1/rival_text.pory"
 	.string "Oh, thank you so much for bringing back\n"
 	.string "Harper, {PLAYER}.\p"
 	.string "Maybe she wasn't in real danger, but\n"
@@ -211,11 +211,11 @@ Exp1_Town03_BaronText::
 	.string "that the group is safe and sound.$"
 
 Exp1_Town03_JaksonText::
-# 230 "data/expansion_1/rival_text.pory"
+# 231 "data/expansion_1/rival_text.pory"
 	.string "Hey, {PLAYER}.\p"
 	.string "Harper's already gone off to the ship.\p"
-	.string "…{PAUSE 100}Yeah, she really gave me an earful…\n"
-	.string "…{PAUSE 100}in a couple ways…\l"
+	.string "…{PAUSE 60}Yeah, she really gave me an earful…\n"
+	.string "…{PAUSE 60}in a couple ways…\l"
 	.string "But, I get it. I understand where she's\l"
 	.string "coming from.\p"
 	.string "I should've put a little more time into\n"
@@ -231,12 +231,12 @@ Exp1_Town03_JaksonText::
 	.string "ready.$"
 
 Exp1_Town04_SakuraText::
-# 252 "data/expansion_1/rival_text.pory"
+# 253 "data/expansion_1/rival_text.pory"
 	.string "You ready to watch this, {PLAYER}?\p"
 	.string "Let's get started{EMOJI_TILDE}{UNK_SPACER}$"
 
 Exp1_Town04_HarperText::
-# 257 "data/expansion_1/rival_text.pory"
+# 258 "data/expansion_1/rival_text.pory"
 	.string "Ahh… {PAUSE 100}…\p"
 	.string "I'm just taking a breather, {PLAYER}.\p"
 	.string "Trapped in one dungeon, then shipped\n"
@@ -253,7 +253,7 @@ Exp1_Town04_HarperText::
 	.string "of these days.$"
 
 Exp1_Town04_ReddText::
-# 274 "data/expansion_1/rival_text.pory"
+# 275 "data/expansion_1/rival_text.pory"
 	.string "Did you miss me, {PLAYER}?\p"
 	.string "If you had just asked, I would've gone\n"
 	.string "along into the ship with you.\p"
@@ -265,7 +265,7 @@ Exp1_Town04_ReddText::
 	.string "miss out on these things!$"
 
 Exp1_Town04_BaronText::
-# 286 "data/expansion_1/rival_text.pory"
+# 287 "data/expansion_1/rival_text.pory"
 	.string "{PLAYER}, how's Harper holding up?\p"
 	.string "Oh, I worry about that girl.\p"
 	.string "Trapped in that dark cave for so long,\n"
@@ -274,12 +274,12 @@ Exp1_Town04_BaronText::
 	.string "I imagine if it had been one of my own…$"
 
 Exp1_Town04b_BaronText::
-# 295 "data/expansion_1/rival_text.pory"
-	.string "…{PAUSE 100}one of my own friends! Of course!\n"
+# 296 "data/expansion_1/rival_text.pory"
+	.string "…{PAUSE 60}one of my own friends! Of course!\n"
 	.string "All of you are my very own friends.$"
 
 Exp1_Town04_JaksonText::
-# 300 "data/expansion_1/rival_text.pory"
+# 301 "data/expansion_1/rival_text.pory"
 	.string "Maybe Harper deserves more credit\n"
 	.string "than I give her. She knows more about\l"
 	.string "game design than I thought she did.\p"
@@ -291,7 +291,7 @@ Exp1_Town04_JaksonText::
 	.string "I'm glad our intuition was correct.$"
 
 Exp1_Town05_SakuraText::
-# 314 "data/expansion_1/rival_text.pory"
+# 315 "data/expansion_1/rival_text.pory"
 	.string "Well, {PLAYER}?\n"
 	.string "Are you smelling the treasure yet?\p"
 	.string "… {PAUSE 30}… {PAUSE 30}…\p"
@@ -301,7 +301,7 @@ Exp1_Town05_SakuraText::
 	.string "loaded for the chocolate crusades!$"
 
 Exp1_Town05_HarperText::
-# 324 "data/expansion_1/rival_text.pory"
+# 325 "data/expansion_1/rival_text.pory"
 	.string "Hm? Oh, yeah, I'm hanging back a\n"
 	.string "bit on purpose.\p"
 	.string "Jakson's a clever boy. He can solve\n"
@@ -312,7 +312,7 @@ Exp1_Town05_HarperText::
 	.string "to move on, so look for a way to do that.$"
 
 Exp1_Town05_BaronText::
-# 335 "data/expansion_1/rival_text.pory"
+# 336 "data/expansion_1/rival_text.pory"
 	.string "Oh!\p"
 	.string "Gosh, {PLAYER}, you gave me a startle.\p"
 	.string "Whenever I have to go underwater like\n"
@@ -322,7 +322,7 @@ Exp1_Town05_BaronText::
 	.string "It ends up making me feel a little dizzy.$"
 
 Exp1_Town05_JaksonText::
-# 345 "data/expansion_1/rival_text.pory"
+# 346 "data/expansion_1/rival_text.pory"
 	.string "Once the water's gone, it'll appear?\p"
 	.string "Well, there's water here in this room,\n"
 	.string "so we must need to drain it somehow.\p"
@@ -330,10 +330,80 @@ Exp1_Town05_JaksonText::
 	.string "Try and see if he's found anything.$"
 
 Exp1_Town05b_JaksonText::
-# 353 "data/expansion_1/rival_text.pory"
+# 354 "data/expansion_1/rival_text.pory"
 	.string "That water sure cleared out fast!\p"
 	.string "It looks like you two did it!\n"
 	.string "Let's check out the main chamber\l"
 	.string "when we get a chance.\p"
 	.string "The odds are that we're one step\n"
 	.string "closer to completion.$"
+
+Exp1_Town06_SakuraText::
+# 365 "data/expansion_1/rival_text.pory"
+	.string "Come on, {PLAYER}{EMOJI_TILDE}\p"
+	.string "You have to go hurry up and finish the\n"
+	.string "puzzles for me!\p"
+	.string "My treasure senses are tingling, and I\n"
+	.string "want to get in there right away!$"
+
+Exp1_Town06b_SakuraText::
+# 373 "data/expansion_1/rival_text.pory"
+	.string "Agh, I want to get in there right now…{PAUSE 100}\n"
+	.string "but you did do all the work, right,\l"
+	.string "{PLAYER}?\p"
+	.string "Okay, you can have the honors of being\n"
+	.string "first in there, but I'll be right at your\l"
+	.string "heels!$"
+
+Exp1_Town06_HarperText::
+# 382 "data/expansion_1/rival_text.pory"
+	.string "Up, {PAUSE 60}down, {PAUSE 60}up, {PAUSE 60}down…\p"
+	.string "What sick, {PAUSE 30}twisted monster actually\n"
+	.string "likes these underwater puzzles,\l"
+	.string "{PLAYER}?\p"
+	.string "The experience through the headset\n"
+	.string "alone is… {PAUSE 100} Urk…$"
+
+Exp1_Town06_ReddText::
+# 391 "data/expansion_1/rival_text.pory"
+	.string "Phew…{PAUSE 100}\n"
+	.string "You wanna do the honors, {PLAYER}?\p"
+	.string "There sure are a lot of puzzles and\n"
+	.string "mazes here, so this has gotta be the\l"
+	.string "final dungeon, right?\p"
+	.string "Which means it'll be treasure time.\p"
+	.string "I wonder what that'll be… {PAUSE 100}what are you\n"
+	.string "thinking?\p"
+	.string "Maybe… {PAUSE 100}a masterball. {PAUSE 60}The classics\n"
+	.string "are the classics for a reason.$"
+
+Exp1_Town06_BaronText::
+# 404 "data/expansion_1/rival_text.pory"
+	.string "Uh… {PAUSE 100}are you lost too, {PLAYER}?\p"
+	.string "I've gotten better, definitely, but I'm\n"
+	.string "still going to struggle with something\l"
+	.string "like this!\p"
+	.string "Gosh, maybe we should just moves as\n"
+	.string "a group next time?\p"
+	.string "…{PAUSE 60}Oh?\p"
+	.string "Just use my Escape Rope if I get\n"
+	.string "stuck?\p"
+	.string "Thank you for the reminder, {PLAYER}!\n"
+	.string "You're a good bean.$"
+
+Exp1_Town06_JaksonText::
+# 418 "data/expansion_1/rival_text.pory"
+	.string "Well… {PAUSE 100}this must be a storage room, huh?\p"
+	.string "The original builders of this vault sure\n"
+	.string "didn't make it easy on themselves.\p"
+	.string "…{PAUSE 60}well, if that were the truth of its\n"
+	.string "construction, at least.\p"
+	.string "Whoever made this MOD designed this,\n"
+	.string "just so we could have had a long maze\l"
+	.string "to go through.\p"
+	.string "I'd call it padding, but let's not\n"
+	.string "pretend Game Freak has ever had\l"
+	.string "good dungeon designs.\p"
+	.string "…{PAUSE 60}no.{PAUSE 100}\n"
+	.string "No, I'm not trying to lower the\l"
+	.string "expectations for my own work later…$"

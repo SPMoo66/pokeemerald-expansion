@@ -4,6 +4,11 @@ mapscripts BygoneVault_2R1_MapScripts {
 			setmetatile (6, 2, 0x2A9, TRUE)
 		}
 	}
+	MAP_SCRIPT_ON_TRANSITION {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) != 43) {
+			setflag (FLAG_TEMP_1)
+		}
+	}
 }
 
 script BygoneVault_RightSwitch2 {

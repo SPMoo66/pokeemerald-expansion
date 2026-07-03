@@ -248,10 +248,10 @@ Debug_EventScript_Script_6::
 	end
 
 Debug_EventScript_Script_7::
-	setflag FLAG_SYS_SPAWN_INVISIBLE
-	setflag FLAG_HIDE_MAP_NAME_POPUP
-	setvar VAR_EMERALBODY_RIVAL_STATE, 41
-	warpcontinuescript MAP_FAR_OFF_SEA_WEST, 55, 5, Expansion1_Rival_Scene08
+	setvar VAR_EMERALBODY_RIVAL_STATE, 42
+	setflag FLAG_NO_COLLISION
+	warp MAP_BYGONE_VAULT_1, 5, 7
+	waitstate
 	release
 	end
 

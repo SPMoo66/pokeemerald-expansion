@@ -586,6 +586,31 @@ Common_Movement_WalkFastLeft9:
 	walk_fast_left
 	step_end
 
+Common_Movement_SlideDown3:
+	slide_down
+	slide_down
+	slide_down
+	step_end
+
+Common_Movement_SlideDown6:
+	slide_down
+	slide_down
+	slide_down
+	slide_down
+	slide_down
+	slide_down
+	step_end
+
+Common_Movement_SlideDown7:
+	slide_down
+	slide_down
+	slide_down
+	slide_down
+	slide_down
+	slide_down
+	slide_down
+	step_end
+
 Common_Movement_SlideRight3:
 	slide_right
 	slide_right
@@ -736,6 +761,12 @@ Common_Movement_WalkLeftFast::
 	step_end
 
 Common_Movement_WalkLeftFast2::
+	walk_fast_left
+	walk_fast_left
+	step_end
+
+Common_Movement_WalkLeftFast3::
+	walk_fast_left
 	walk_fast_left
 	walk_fast_left
 	step_end

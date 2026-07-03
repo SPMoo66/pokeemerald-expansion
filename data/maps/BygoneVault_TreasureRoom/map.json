@@ -15,6 +15,7 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "BYGONEVAULTTREASURE_LUCARIO",
       "graphics_id": "OBJ_EVENT_GFX_SHADOWED_LUCARIO",
       "x": 8,
       "y": 6,
@@ -25,7 +26,133 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "local_id": "BYGONEVAULTTREASURE_SAKURA",
+      "graphics_id": "OBJ_EVENT_GFX_SAKURA",
+      "x": 8,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
+    },
+    {
+      "local_id": "BYGONEVAULTTREASURE_BARON",
+      "graphics_id": "OBJ_EVENT_GFX_BARON",
+      "x": 8,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
+    },
+    {
+      "local_id": "BYGONEVAULTTREASURE_HARPER",
+      "graphics_id": "OBJ_EVENT_GFX_HARPER",
+      "x": 8,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
+    },
+    {
+      "local_id": "BYGONEVAULTTREASURE_JAKSON",
+      "graphics_id": "OBJ_EVENT_GFX_JAKSON",
+      "x": 8,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
+    },
+    {
+      "local_id": "BYGONEVAULTTREASURE_REDD",
+      "graphics_id": "OBJ_EVENT_GFX_REDD",
+      "x": 8,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
+    },
+    {
+      "local_id": "BYGONEVAULTTREASURE_BAG",
+      "graphics_id": "OBJ_EVENT_GFX_BIRCHS_BAG",
+      "x": 7,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
+    },
+    {
+      "local_id": "BYGONEVAULTTREASURE_TREE",
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 9,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
+    },
+    {
+      "local_id": "BYGONEVAULTTREASURE_CUSHION",
+      "graphics_id": "OBJ_EVENT_GFX_KISS_CUSHION",
+      "x": 7,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
+    },
+    {
+      "local_id": "BYGONEVAULTTREASURE_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "x": 8,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
     }
   ],
   "warp_events": [
@@ -37,6 +164,34 @@
       "dest_warp_id": "3"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_3",
+      "var_value": "0",
+      "script": "Expansion1_Rival_Scene09"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_3",
+      "var_value": "0",
+      "script": "Expansion1_Rival_Scene09"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_3",
+      "var_value": "0",
+      "script": "Expansion1_Rival_Scene09"
+    }
+  ],
   "bg_events": []
 }

@@ -248,9 +248,11 @@ Debug_EventScript_Script_6::
 	end
 
 Debug_EventScript_Script_7::
-	setvar VAR_EMERALBODY_RIVAL_STATE, 42
+	setvar VAR_EMERALBODY_RIVAL_STATE, 44
+	setflag FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH_2
+	setflag FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2
 	setflag FLAG_NO_COLLISION
-	warp MAP_BYGONE_VAULT_1, 5, 7
+	warp MAP_BYGONE_VAULT_2, 5, 7
 	waitstate
 	release
 	end

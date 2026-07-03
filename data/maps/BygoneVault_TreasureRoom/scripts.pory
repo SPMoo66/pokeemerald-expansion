@@ -1,1 +1,24 @@
-mapscripts BygoneVault_TreasureRoom_MapScripts {}
+const BYGONEVAULTTREASURE_LUCARIO = 1
+const BYGONEVAULTTREASURE_BAG = 7
+const BYGONEVAULTTREASURE_TREE = 8
+const BYGONEVAULTTREASURE_CUSHION = 9
+const BYGONEVAULTTREASURE_BOY = 10
+
+mapscripts BygoneVault_TreasureRoom_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if (defeated(TRAINER_WILD_POKEMON_BV_2)) {
+			setflag (FLAG_TEMP_1)
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject (BYGONEVAULTTREASURE_LUCARIO)
+		}
+		if (flag(FLAG_SEMI_TEMP_1)) {
+			removeobject (BYGONEVAULTTREASURE_BAG)
+			removeobject (BYGONEVAULTTREASURE_TREE)
+			removeobject (BYGONEVAULTTREASURE_CUSHION)
+			removeobject (BYGONEVAULTTREASURE_BOY)
+		}
+	}
+}

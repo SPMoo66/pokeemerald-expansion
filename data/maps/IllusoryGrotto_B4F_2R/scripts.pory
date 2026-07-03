@@ -10,6 +10,8 @@ script IllusoryGrotto_B4F_2R_EventScript_WildPokemon {
 	if (!defeated(TRAINER_WILD_POKEMON_IG_1)) {
 		lock
 		setflag (FLAG_WILD_OPPONENT)
+		setflag (FLAG_SYS_SET_BATTLE_BGM)
+		setvar (VAR_BATTLE_BGM, MUS_XD_VS_CIPHER_PEON)
 		playmoncry (SPECIES_LUCARIO, CRY_MODE_ENCOUNTER)
 		waitmoncry
 		special (SpawnCameraObject)

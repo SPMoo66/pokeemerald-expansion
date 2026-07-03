@@ -15,6 +15,29 @@ const struct HelpWindow gHelpWindowInfo[] =
         .headerFont = FONT_NORMAL,
         .descFont = FONT_NORMAL
     },
+    [HELP_EXPANSION_1_NPC_FOLLOWERS] =
+    {
+        .header = COMPOUND_STRING("NPC Followers"),
+        .desc = COMPOUND_STRING("Harper joins you as your first\n"
+                                "NPC Follower!\n\n"
+                                "She will join you in trainer battles.\n\n"
+                                "Your first three Pokémon will be used."
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_NORMAL
+    },
+    [HELP_EXPANSION_1_NPC_FOLLOWERS_2] =
+    {
+        .header = COMPOUND_STRING("NPC Followers 2"),
+        .desc = COMPOUND_STRING("While Harper is following, you will\n"
+                                "respawn within the dungeon.\n\n"
+                                "You are free to back out at any time,\n"
+                                "but the dungeon must be\n"
+                                "completed to progress."
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_NORMAL
+    },
     [HELP_BATTLE_CONTROLS] =
     {
         .header = COMPOUND_STRING("Information: Battle Controls"),

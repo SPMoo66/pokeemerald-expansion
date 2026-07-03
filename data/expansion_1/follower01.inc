@@ -26,293 +26,305 @@ Expansion1_Rival_Scene03::
 # 47 "data/expansion_1/follower01.pory"
 	setvar VAR_EMERALBODY_RIVAL_STATE, 27
 # 48 "data/expansion_1/follower01.pory"
-	goto SubmergedCave_1F_3R_StartHarperFollower
+	playfanfare MUS_HG_LETS_GO_TOGETHER
+# 49 "data/expansion_1/follower01.pory"
+	delay 20
+# 50 "data/expansion_1/follower01.pory"
+	call SubmergedCave_1F_3R_StartHarperFollower
+# 51 "data/expansion_1/follower01.pory"
+	delay 20
+# 52 "data/expansion_1/follower01.pory"
+	helpwindow HELP_EXPANSION_1_NPC_FOLLOWERS
+# 53 "data/expansion_1/follower01.pory"
+	helpwindow HELP_EXPANSION_1_NPC_FOLLOWERS_2
+# 54 "data/expansion_1/follower01.pory"
+	release
 	return
 
 
 Expansion1_Follower1_Restart::
-# 52 "data/expansion_1/follower01.pory"
+# 58 "data/expansion_1/follower01.pory"
 	speakername CommonText_Harper
-# 53 "data/expansion_1/follower01.pory"
+# 59 "data/expansion_1/follower01.pory"
 	msgbox Expansion1_Follower1_Restart_Text_0, MSGBOX_AUTOCLOSE
-# 55 "data/expansion_1/follower01.pory"
-	goto SubmergedCave_1F_3R_StartHarperFollower
+# 61 "data/expansion_1/follower01.pory"
+	call SubmergedCave_1F_3R_StartHarperFollower
+# 62 "data/expansion_1/follower01.pory"
+	release
 	return
 
 
 SubmergedCave_1F_3R_StartHarperFollower::
-# 60 "data/expansion_1/follower01.pory"
+# 67 "data/expansion_1/follower01.pory"
 	setfollowernpc 1, 0, Expansion1_Follower_Harper1, PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVE
-# 61 "data/expansion_1/follower01.pory"
+# 68 "data/expansion_1/follower01.pory"
 	hidefollowernpc
-# 62 "data/expansion_1/follower01.pory"
+# 69 "data/expansion_1/follower01.pory"
 	setflag FLAG_SYS_HIDE_FOLLOWERS
-# 63 "data/expansion_1/follower01.pory"
+# 70 "data/expansion_1/follower01.pory"
 	setflag FLAG_TEMP_1
-# 64 "data/expansion_1/follower01.pory"
+# 71 "data/expansion_1/follower01.pory"
 	setvar VAR_TEMP_5, 0
-# 65 "data/expansion_1/follower01.pory"
+# 72 "data/expansion_1/follower01.pory"
 	setrespawn HEAL_LOCATION_SUBMERGED_CAVE_1F_3R
-# 66 "data/expansion_1/follower01.pory"
-	release
 	return
 
 
 SubmergedCave_1F_3R_ClearHarperFollower::
-# 70 "data/expansion_1/follower01.pory"
+# 76 "data/expansion_1/follower01.pory"
 	goto_if_set FLAG_SYS_HIDE_FOLLOWERS, SubmergedCave_1F_3R_ClearHarperFollower_2
 	return
 
 SubmergedCave_1F_3R_ClearHarperFollower_1:
-# 71 "data/expansion_1/follower01.pory"
-	getobjectfacingdirection LOCALID_PLAYER, VAR_TEMP_0
-# 72 "data/expansion_1/follower01.pory"
-	facefollowernpc
-# 73 "data/expansion_1/follower01.pory"
-	speakername CommonText_Harper
-# 74 "data/expansion_1/follower01.pory"
-	msgbox SubmergedCave_1F_3R_ClearHarperFollower_Text_0, MSGBOX_YESNO
 # 77 "data/expansion_1/follower01.pory"
-	closemessage
+	getobjectfacingdirection LOCALID_PLAYER, VAR_TEMP_0
 # 78 "data/expansion_1/follower01.pory"
-	speakername CommonText_Harper
+	facefollowernpc
 # 79 "data/expansion_1/follower01.pory"
+	speakername CommonText_Harper
+# 80 "data/expansion_1/follower01.pory"
+	msgbox SubmergedCave_1F_3R_ClearHarperFollower_Text_0, MSGBOX_YESNO
+# 83 "data/expansion_1/follower01.pory"
+	closemessage
+# 84 "data/expansion_1/follower01.pory"
+	speakername CommonText_Harper
+# 85 "data/expansion_1/follower01.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SubmergedCave_1F_3R_ClearHarperFollower_6
-# 119 "data/expansion_1/follower01.pory"
+# 125 "data/expansion_1/follower01.pory"
 	msgbox SubmergedCave_1F_3R_ClearHarperFollower_Text_2, MSGBOX_AUTOCLOSE
-# 120 "data/expansion_1/follower01.pory"
-	switch VAR_TEMP_0
-# 121 "data/expansion_1/follower01.pory"
-	case DIR_NORTH, SubmergedCave_1F_3R_ClearHarperFollower_18
-# 123 "data/expansion_1/follower01.pory"
-	case DIR_SOUTH, SubmergedCave_1F_3R_ClearHarperFollower_19
 # 126 "data/expansion_1/follower01.pory"
+	switch VAR_TEMP_0
+# 127 "data/expansion_1/follower01.pory"
+	case DIR_NORTH, SubmergedCave_1F_3R_ClearHarperFollower_18
+# 129 "data/expansion_1/follower01.pory"
+	case DIR_SOUTH, SubmergedCave_1F_3R_ClearHarperFollower_19
+# 132 "data/expansion_1/follower01.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
 SubmergedCave_1F_3R_ClearHarperFollower_16:
-# 128 "data/expansion_1/follower01.pory"
+# 134 "data/expansion_1/follower01.pory"
 	waitmovement 0
 SubmergedCave_1F_3R_ClearHarperFollower_5:
-# 130 "data/expansion_1/follower01.pory"
+# 136 "data/expansion_1/follower01.pory"
 	release
 	return
 
 SubmergedCave_1F_3R_ClearHarperFollower_2:
-# 70 "data/expansion_1/follower01.pory"
+# 76 "data/expansion_1/follower01.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 31
 	goto_if_lt SubmergedCave_1F_3R_ClearHarperFollower_1
 	return
 
 SubmergedCave_1F_3R_ClearHarperFollower_6:
-# 80 "data/expansion_1/follower01.pory"
+# 86 "data/expansion_1/follower01.pory"
 	clearflag FLAG_SYS_HIDE_FOLLOWERS
-# 81 "data/expansion_1/follower01.pory"
+# 87 "data/expansion_1/follower01.pory"
 	compare VAR_TEMP_0, DIR_SOUTH
 	goto_if_eq SubmergedCave_1F_3R_ClearHarperFollower_10
-# 85 "data/expansion_1/follower01.pory"
+# 91 "data/expansion_1/follower01.pory"
 	compare VAR_TEMP_0, DIR_EAST
 	goto_if_eq SubmergedCave_1F_3R_ClearHarperFollower_11
-# 89 "data/expansion_1/follower01.pory"
+# 95 "data/expansion_1/follower01.pory"
 	compare VAR_TEMP_0, DIR_NORTH
 	goto_if_eq SubmergedCave_1F_3R_ClearHarperFollower_12
 SubmergedCave_1F_3R_ClearHarperFollower_9:
-# 93 "data/expansion_1/follower01.pory"
+# 99 "data/expansion_1/follower01.pory"
 	msgbox SubmergedCave_1F_3R_ClearHarperFollower_Text_1, MSGBOX_AUTOCLOSE
-# 95 "data/expansion_1/follower01.pory"
+# 101 "data/expansion_1/follower01.pory"
 	addobject 1
-# 96 "data/expansion_1/follower01.pory"
+# 102 "data/expansion_1/follower01.pory"
 	destroyfollowernpc
-# 98 "data/expansion_1/follower01.pory"
+# 104 "data/expansion_1/follower01.pory"
 	compare VAR_TEMP_0, DIR_SOUTH
 	goto_if_eq SubmergedCave_1F_3R_ClearHarperFollower_22
-# 103 "data/expansion_1/follower01.pory"
+# 109 "data/expansion_1/follower01.pory"
 	compare VAR_TEMP_0, DIR_EAST
 	goto_if_eq SubmergedCave_1F_3R_ClearHarperFollower_23
-# 106 "data/expansion_1/follower01.pory"
+# 112 "data/expansion_1/follower01.pory"
 	compare VAR_TEMP_0, DIR_NORTH
 	goto_if_eq SubmergedCave_1F_3R_ClearHarperFollower_24
 SubmergedCave_1F_3R_ClearHarperFollower_21:
-# 111 "data/expansion_1/follower01.pory"
+# 117 "data/expansion_1/follower01.pory"
 	waitmovement 0
-# 112 "data/expansion_1/follower01.pory"
+# 118 "data/expansion_1/follower01.pory"
 	turnobject 1, DIR_EAST
-# 113 "data/expansion_1/follower01.pory"
+# 119 "data/expansion_1/follower01.pory"
 	setobjectmovementtype 1, MOVEMENT_TYPE_LOOK_AROUND
-# 114 "data/expansion_1/follower01.pory"
+# 120 "data/expansion_1/follower01.pory"
 	setvar VAR_TEMP_1, 0
-# 115 "data/expansion_1/follower01.pory"
+# 121 "data/expansion_1/follower01.pory"
 	setvar VAR_TEMP_5, 1
-# 116 "data/expansion_1/follower01.pory"
+# 122 "data/expansion_1/follower01.pory"
 	setrespawn HEAL_LOCATION_MAUVE_CAMP
 	goto SubmergedCave_1F_3R_ClearHarperFollower_5
 
 SubmergedCave_1F_3R_ClearHarperFollower_10:
-# 82 "data/expansion_1/follower01.pory"
+# 88 "data/expansion_1/follower01.pory"
 	setobjectxyperm 1, 8, 3
-# 83 "data/expansion_1/follower01.pory"
+# 89 "data/expansion_1/follower01.pory"
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
 	goto SubmergedCave_1F_3R_ClearHarperFollower_9
 
 SubmergedCave_1F_3R_ClearHarperFollower_11:
-# 86 "data/expansion_1/follower01.pory"
+# 92 "data/expansion_1/follower01.pory"
 	setobjectxyperm 1, 7, 4
-# 87 "data/expansion_1/follower01.pory"
+# 93 "data/expansion_1/follower01.pory"
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_RIGHT
 	goto SubmergedCave_1F_3R_ClearHarperFollower_9
 
 SubmergedCave_1F_3R_ClearHarperFollower_12:
-# 90 "data/expansion_1/follower01.pory"
+# 96 "data/expansion_1/follower01.pory"
 	setobjectxyperm 1, 8, 5
-# 91 "data/expansion_1/follower01.pory"
+# 97 "data/expansion_1/follower01.pory"
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_UP
 	goto SubmergedCave_1F_3R_ClearHarperFollower_9
 
 SubmergedCave_1F_3R_ClearHarperFollower_18:
-# 122 "data/expansion_1/follower01.pory"
+# 128 "data/expansion_1/follower01.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkDown
 	goto SubmergedCave_1F_3R_ClearHarperFollower_16
 
 SubmergedCave_1F_3R_ClearHarperFollower_19:
-# 124 "data/expansion_1/follower01.pory"
+# 130 "data/expansion_1/follower01.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
 	goto SubmergedCave_1F_3R_ClearHarperFollower_16
 
 SubmergedCave_1F_3R_ClearHarperFollower_22:
-# 99 "data/expansion_1/follower01.pory"
+# 105 "data/expansion_1/follower01.pory"
 	applymovement 1, Common_Movement_WalkLeft3
-# 100 "data/expansion_1/follower01.pory"
+# 106 "data/expansion_1/follower01.pory"
 	waitmovement 0
-# 101 "data/expansion_1/follower01.pory"
+# 107 "data/expansion_1/follower01.pory"
 	applymovement 1, Common_Movement_WalkDown
 	goto SubmergedCave_1F_3R_ClearHarperFollower_21
 
 SubmergedCave_1F_3R_ClearHarperFollower_23:
-# 104 "data/expansion_1/follower01.pory"
+# 110 "data/expansion_1/follower01.pory"
 	applymovement 1, Common_Movement_WalkLeft2
 	goto SubmergedCave_1F_3R_ClearHarperFollower_21
 
 SubmergedCave_1F_3R_ClearHarperFollower_24:
-# 107 "data/expansion_1/follower01.pory"
+# 113 "data/expansion_1/follower01.pory"
 	applymovement 1, Common_Movement_WalkLeft3
-# 108 "data/expansion_1/follower01.pory"
+# 114 "data/expansion_1/follower01.pory"
 	waitmovement 0
-# 109 "data/expansion_1/follower01.pory"
+# 115 "data/expansion_1/follower01.pory"
 	applymovement 1, Common_Movement_WalkUp
 	goto SubmergedCave_1F_3R_ClearHarperFollower_21
 
 
 Expansion1_Follower_Harper1_Talking1::
-# 135 "data/expansion_1/follower01.pory"
+# 141 "data/expansion_1/follower01.pory"
 	playse SE_CLICK
-# 136 "data/expansion_1/follower01.pory"
+# 142 "data/expansion_1/follower01.pory"
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_Talking
-# 137 "data/expansion_1/follower01.pory"
+# 143 "data/expansion_1/follower01.pory"
 	delay 60
-# 138 "data/expansion_1/follower01.pory"
+# 144 "data/expansion_1/follower01.pory"
 	facefollowernpc
-# 139 "data/expansion_1/follower01.pory"
+# 145 "data/expansion_1/follower01.pory"
 	speakername CommonText_Harper
-# 140 "data/expansion_1/follower01.pory"
+# 146 "data/expansion_1/follower01.pory"
 	msgbox Expansion1_Follower_Harper1_Talking1_Text_0, MSGBOX_AUTOCLOSE
-# 156 "data/expansion_1/follower01.pory"
+# 162 "data/expansion_1/follower01.pory"
 	setvar VAR_EMERALBODY_RIVAL_STATE, 28
 	return
 
 
 Expansion1_Follower_Harper1_Talking2::
-# 160 "data/expansion_1/follower01.pory"
+# 166 "data/expansion_1/follower01.pory"
 	playse SE_CLICK
-# 161 "data/expansion_1/follower01.pory"
+# 167 "data/expansion_1/follower01.pory"
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_Talking
-# 162 "data/expansion_1/follower01.pory"
+# 168 "data/expansion_1/follower01.pory"
 	delay 60
-# 163 "data/expansion_1/follower01.pory"
+# 169 "data/expansion_1/follower01.pory"
 	facefollowernpc
-# 164 "data/expansion_1/follower01.pory"
+# 170 "data/expansion_1/follower01.pory"
 	speakername CommonText_Harper
-# 165 "data/expansion_1/follower01.pory"
+# 171 "data/expansion_1/follower01.pory"
 	msgbox Expansion1_Follower_Harper1_Talking2_Text_0, MSGBOX_AUTOCLOSE
-# 184 "data/expansion_1/follower01.pory"
+# 190 "data/expansion_1/follower01.pory"
 	setvar VAR_EMERALBODY_RIVAL_STATE, 29
 	return
 
 
 Expansion1_Follower_Harper1_Talking3::
-# 188 "data/expansion_1/follower01.pory"
+# 194 "data/expansion_1/follower01.pory"
 	playse SE_CLICK
-# 189 "data/expansion_1/follower01.pory"
+# 195 "data/expansion_1/follower01.pory"
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_Talking
-# 190 "data/expansion_1/follower01.pory"
+# 196 "data/expansion_1/follower01.pory"
 	delay 60
-# 191 "data/expansion_1/follower01.pory"
+# 197 "data/expansion_1/follower01.pory"
 	facefollowernpc
-# 192 "data/expansion_1/follower01.pory"
+# 198 "data/expansion_1/follower01.pory"
 	speakername CommonText_Harper
-# 193 "data/expansion_1/follower01.pory"
+# 199 "data/expansion_1/follower01.pory"
 	msgbox Expansion1_Follower_Harper1_Talking3_Text_0, MSGBOX_AUTOCLOSE
-# 206 "data/expansion_1/follower01.pory"
+# 212 "data/expansion_1/follower01.pory"
 	setvar VAR_EMERALBODY_RIVAL_STATE, 30
 	return
 
 
 Expansion1_Rival_Scene04::
-# 210 "data/expansion_1/follower01.pory"
+# 216 "data/expansion_1/follower01.pory"
 	playse SE_CLICK
-# 211 "data/expansion_1/follower01.pory"
+# 217 "data/expansion_1/follower01.pory"
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_Talking
-# 212 "data/expansion_1/follower01.pory"
+# 218 "data/expansion_1/follower01.pory"
 	delay 60
-# 213 "data/expansion_1/follower01.pory"
+# 219 "data/expansion_1/follower01.pory"
 	facefollowernpc
-# 214 "data/expansion_1/follower01.pory"
+# 220 "data/expansion_1/follower01.pory"
 	speakername CommonText_Harper
-# 215 "data/expansion_1/follower01.pory"
+# 221 "data/expansion_1/follower01.pory"
 	msgbox Expansion1_Rival_Scene04_Text_0, MSGBOX_AUTOCLOSE
-# 228 "data/expansion_1/follower01.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_LockFacingDirection
-# 229 "data/expansion_1/follower01.pory"
-	waitmovement 0
-# 230 "data/expansion_1/follower01.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
-# 231 "data/expansion_1/follower01.pory"
-	waitmovement 0
-# 232 "data/expansion_1/follower01.pory"
-	addobject 6
-# 233 "data/expansion_1/follower01.pory"
-	destroyfollowernpc
 # 234 "data/expansion_1/follower01.pory"
-	applymovement 6, Common_Movement_WalkLeft
+	applymovement LOCALID_PLAYER, Common_Movement_LockFacingDirection
 # 235 "data/expansion_1/follower01.pory"
 	waitmovement 0
 # 236 "data/expansion_1/follower01.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_UnlockFacingDirection
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
 # 237 "data/expansion_1/follower01.pory"
-	applymovement 6, Common_Movement_WalkDown
-# 238 "data/expansion_1/follower01.pory"
 	waitmovement 0
+# 238 "data/expansion_1/follower01.pory"
+	addobject 6
 # 239 "data/expansion_1/follower01.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
+	destroyfollowernpc
 # 240 "data/expansion_1/follower01.pory"
 	applymovement 6, Common_Movement_WalkLeft
 # 241 "data/expansion_1/follower01.pory"
 	waitmovement 0
 # 242 "data/expansion_1/follower01.pory"
-	applymovement 6, Common_Movement_WalkInPlaceDown
+	applymovement LOCALID_PLAYER, Common_Movement_UnlockFacingDirection
 # 243 "data/expansion_1/follower01.pory"
-	waitmovement 0
+	applymovement 6, Common_Movement_WalkDown
 # 244 "data/expansion_1/follower01.pory"
-	delay 10
+	waitmovement 0
 # 245 "data/expansion_1/follower01.pory"
-	removeobject 6
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
 # 246 "data/expansion_1/follower01.pory"
-	playse SE_EXIT
+	applymovement 6, Common_Movement_WalkLeft
 # 247 "data/expansion_1/follower01.pory"
-	waitse
+	waitmovement 0
 # 248 "data/expansion_1/follower01.pory"
-	clearflag FLAG_SYS_HIDE_FOLLOWERS
+	applymovement 6, Common_Movement_WalkInPlaceDown
 # 249 "data/expansion_1/follower01.pory"
-	setrespawn HEAL_LOCATION_MAUVE_CAMP
+	waitmovement 0
 # 250 "data/expansion_1/follower01.pory"
+	delay 10
+# 251 "data/expansion_1/follower01.pory"
+	removeobject 6
+# 252 "data/expansion_1/follower01.pory"
+	playse SE_EXIT
+# 253 "data/expansion_1/follower01.pory"
+	waitse
+# 254 "data/expansion_1/follower01.pory"
+	clearflag FLAG_SYS_HIDE_FOLLOWERS
+# 255 "data/expansion_1/follower01.pory"
+	setrespawn HEAL_LOCATION_MAUVE_CAMP
+# 256 "data/expansion_1/follower01.pory"
 	setvar VAR_EMERALBODY_RIVAL_STATE, 31
 	return
 
@@ -358,27 +370,27 @@ Expansion1_Rival_Scene03_Text_2:
 	.string "my mind…!$"
 
 Expansion1_Follower1_Restart_Text_0:
-# 53 "data/expansion_1/follower01.pory"
+# 59 "data/expansion_1/follower01.pory"
 	.string "{PLAYER}, let's get moving.\p"
 	.string "I can taste my revenge already.$"
 
 SubmergedCave_1F_3R_ClearHarperFollower_Text_0:
-# 74 "data/expansion_1/follower01.pory"
+# 80 "data/expansion_1/follower01.pory"
 	.string "I want to get moving, but…\p"
 	.string "Do you really need to go back,\n"
 	.string "{PLAYER}?$"
 
 SubmergedCave_1F_3R_ClearHarperFollower_Text_1:
-# 93 "data/expansion_1/follower01.pory"
+# 99 "data/expansion_1/follower01.pory"
 	.string "Alright, fine… Just hurry up and get\n"
 	.string "back as soon as you can.$"
 
 SubmergedCave_1F_3R_ClearHarperFollower_Text_2:
-# 119 "data/expansion_1/follower01.pory"
+# 125 "data/expansion_1/follower01.pory"
 	.string "Good, let's get going.$"
 
 Expansion1_Follower_Harper1_Talking1_Text_0:
-# 140 "data/expansion_1/follower01.pory"
+# 146 "data/expansion_1/follower01.pory"
 	.string "Heaven forbid the mod devs let you\n"
 	.string "see in front of your face here…\l"
 	.string "It… {PAUSE 100}was… {PAUSE 100}SO dark earlier!\p"
@@ -397,7 +409,7 @@ Expansion1_Follower_Harper1_Talking1_Text_0:
 	.string "of the tunnel…?$"
 
 Expansion1_Follower_Harper1_Talking2_Text_0:
-# 165 "data/expansion_1/follower01.pory"
+# 171 "data/expansion_1/follower01.pory"
 	.string "Hey, about the boat crash.\p"
 	.string "You don't think this game simulates\n"
 	.string "injury to the characters or anything,\l"
@@ -419,7 +431,7 @@ Expansion1_Follower_Harper1_Talking2_Text_0:
 	.string "engine…!$"
 
 Expansion1_Follower_Harper1_Talking3_Text_0:
-# 193 "data/expansion_1/follower01.pory"
+# 199 "data/expansion_1/follower01.pory"
 	.string "Hey, {PLAYER}.\p"
 	.string "I haven't said it yet, so…\p"
 	.string "Thanks for coming to save me.\p"
@@ -435,7 +447,7 @@ Expansion1_Follower_Harper1_Talking3_Text_0:
 	.string "At least, where I can.$"
 
 Expansion1_Rival_Scene04_Text_0:
-# 215 "data/expansion_1/follower01.pory"
+# 221 "data/expansion_1/follower01.pory"
 	.string "Looks like we're free at last!\p"
 	.string "All that and we didn't even run into\n"
 	.string "whatever story event is in there.\p"

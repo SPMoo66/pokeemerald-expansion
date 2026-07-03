@@ -45,14 +45,21 @@ script Expansion1_Rival_Scene03 {
 			"That face is gonna get a piece of\n"
 			"my mind…!", MSGBOX_AUTOCLOSE)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 27)
-	goto (SubmergedCave_1F_3R_StartHarperFollower)
+	playfanfare (MUS_HG_LETS_GO_TOGETHER)
+	delay (20)
+	call (SubmergedCave_1F_3R_StartHarperFollower)
+	delay (20)
+	helpwindow (HELP_EXPANSION_1_NPC_FOLLOWERS)
+	helpwindow (HELP_EXPANSION_1_NPC_FOLLOWERS_2)
+	release
 }
 
 script Expansion1_Follower1_Restart {
 	speakername (CommonText_Harper)
 	msgbox ("{PLAYER}, let's get moving.\p"
 			"I can taste my revenge already.", MSGBOX_AUTOCLOSE)
-	goto (SubmergedCave_1F_3R_StartHarperFollower)
+	call (SubmergedCave_1F_3R_StartHarperFollower)
+	release
 }
 
 
@@ -63,7 +70,6 @@ script SubmergedCave_1F_3R_StartHarperFollower {
 	setflag (FLAG_TEMP_1)
 	setvar (VAR_TEMP_5, 0)
 	setrespawn (HEAL_LOCATION_SUBMERGED_CAVE_1F_3R)
-	release
 }
 
 script SubmergedCave_1F_3R_ClearHarperFollower {

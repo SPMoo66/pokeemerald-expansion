@@ -262,7 +262,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .entry = ENVIRONMENT_ENTRY(Ruins),
         .background = ENVIRONMENT_BACKGROUND(Ruins),
         .palette = gBattleEnvironmentPalette_Ruins,
-        .battleIntroSlide = CAVE_BATTLE_INTRO_SLIDE,
+        .battleIntroSlide = BUILDING_BATTLE_INTRO_SLIDE,
     },
 
     [BATTLE_ENVIRONMENT_FRONTIER] =

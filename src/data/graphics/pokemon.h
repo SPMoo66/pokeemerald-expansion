@@ -28315,3 +28315,6 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_Regiagua[] = INCGFX_U32("graphics/pokemon/regiagua/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Regiagua[] = INCGFX_U16("graphics/pokemon/regiagua/shiny.pal", ".gbapal");
     const u8 gMonIcon_Regiagua[] = INCGFX_U8("graphics/pokemon/regiagua/icon.png", ".4bpp");
+
+    const u32 gMonFrontPic_MissingnoYellow[] = INCGFX_U32("graphics/pokemon/missingno/yellow/front.png", ".4bpp.smol");
+    const u16 gMonPalette_MissingnoYellow[] = INCGFX_U16("graphics/pokemon/missingno/yellow/front.png", ".gbapal");

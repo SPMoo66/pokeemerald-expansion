@@ -1551,7 +1551,7 @@ void Task_HandleChooseMonInput(u8 taskId)
                 MoveCursorToConfirm();
             }
             break;
-        case L_BUTTON:
+        case R_BUTTON: // Only used in full-team multis to cycle player/partner parties
             if (gPartyMenu.action == PARTY_ACTION_CHOOSE_MON
                 && gPartyMenu.layout == PARTY_LAYOUT_SINGLE
                 && (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD
@@ -1564,8 +1564,6 @@ void Task_HandleChooseMonInput(u8 taskId)
                 PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[1]);
                 Task_ClosePartyMenu(taskId);
             }
-            break;
-        case R_BUTTON: // Only used in full-team multis to cycle player/partner parties
             if ((gBattleTypeFlags & BATTLE_TYPE_MULTI) && AreMultiPartiesFullTeams())
             {
                 PlaySE(SE_M_HARDEN);

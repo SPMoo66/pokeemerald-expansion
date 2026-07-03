@@ -382,6 +382,12 @@
       "map": "MAP_SS_TIDAL_DUNGEON_1F_1R",
       "x": 0,
       "y": 10
+    },
+    {
+      "id": "HEAL_LOCATION_SUBMERGED_CAVE_1F_3R",
+      "map": "MAP_SUBMERGED_CAVE_1F_3R",
+      "x": 5,
+      "y": 4
     }
   ]
 }

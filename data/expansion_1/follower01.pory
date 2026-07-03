@@ -62,6 +62,7 @@ script SubmergedCave_1F_3R_StartHarperFollower {
 	setflag (FLAG_SYS_HIDE_FOLLOWERS)
 	setflag (FLAG_TEMP_1)
 	setvar (VAR_TEMP_5, 0)
+	setrespawn (HEAL_LOCATION_SUBMERGED_CAVE_1F_3R)
 	release
 }
 
@@ -106,13 +107,13 @@ script SubmergedCave_1F_3R_ClearHarperFollower {
 				applymovement (HARPER_SUBMERGED_CAVE, Common_Movement_WalkLeft3)
 				waitmovement (0)
 				applymovement (HARPER_SUBMERGED_CAVE, Common_Movement_WalkUp)
-				
 			}
 			waitmovement (0)
 			turnobject (HARPER_SUBMERGED_CAVE, DIR_EAST)
 			setobjectmovementtype (HARPER_SUBMERGED_CAVE, MOVEMENT_TYPE_LOOK_AROUND)
 			setvar (VAR_TEMP_1, 0)
 			setvar (VAR_TEMP_5, 1)
+			setrespawn (HEAL_LOCATION_MAUVE_CAMP)
 		}
 		else {
 			msgbox ("Good, let's get going.", MSGBOX_AUTOCLOSE)
@@ -245,5 +246,6 @@ script Expansion1_Rival_Scene04 {
 	playse (SE_EXIT)
 	waitse
 	clearflag (FLAG_SYS_HIDE_FOLLOWERS)
+	setrespawn (HEAL_LOCATION_MAUVE_CAMP)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 31)
 }

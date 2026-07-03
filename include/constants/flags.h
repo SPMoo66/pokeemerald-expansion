@@ -1566,19 +1566,19 @@
 
 #define FLAG_CHALLENGING_TRAINER                    (SYSTEM_FLAGS + 0x88) // Set for challenging trainers so that level sync scales *to max party level*, instead of two levels lower like standard trainers
 #define FLAG_PREVENT_OVERWORLD_SPEEDUP              (SYSTEM_FLAGS + 0x89) // Was unused
-#define FLAG_SYS_SET_BATTLE_BGM                     (SYSTEM_FLAGS + 0x8A) // Was unused, set this flag when overriding battle BGM, store BGM in VAR_TEMP_F
+#define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
 #define FLAG_NEW_GAME_PLUS                          (SYSTEM_FLAGS + 0x8B) // Set upon beating the Champion for the first time, carries with new games
 #define FLAG_CANT_USE_FLY                           (SYSTEM_FLAGS + 0x8C) // Was unused, set to disable fly
 #define FLAG_SUPERBOSS_TRAINER                      (SYSTEM_FLAGS + 0x8D) // Set for superboss-type trainers so that level sync scales them *three levels higher than max party level*, intead of two levels lower like standard trainers
 #define FLAG_DONT_TRANSIITON_BATTLE_MUSIC           (SYSTEM_FLAGS + 0x8E) // Set to prevent battles from changing the music, takes map music or music from playbgm. Clear after use.
 #define FLAG_PERM_HIDE_FOLLOWER                     (SYSTEM_FLAGS + 0x8F) // Set to permanently hide following Pokémon
 
-#define FLAG_LANDMARK_MAUVE_HOLLOW                  (SYSTEM_FLAGS + 0x90) // Unused Flag
-#define FLAG_LANDMARK_WELLSPRING_CHASM              (SYSTEM_FLAGS + 0x91) // Unused Flag
-#define FLAG_LANDMARK_BLANCHED_DEPTHS               (SYSTEM_FLAGS + 0x92) // Unused Flag
-#define FLAG_LANDMARK_SUBMERGED_CAVE                (SYSTEM_FLAGS + 0x93) // Unused Flag
-#define FLAG_LANDMARK_BYGONE_VAULT                  (SYSTEM_FLAGS + 0x94) // Unused Flag
-#define FLAG_LANDMARK_MAUVE_CAMP                    (SYSTEM_FLAGS + 0x95) // Unused Flag
+#define FLAG_LANDMARK_MAUVE_HOLLOW                  (SYSTEM_FLAGS + 0x90)
+#define FLAG_LANDMARK_WELLSPRING_CHASM              (SYSTEM_FLAGS + 0x91)
+#define FLAG_LANDMARK_BLANCHED_DEPTHS               (SYSTEM_FLAGS + 0x92)
+#define FLAG_LANDMARK_SUBMERGED_CAVE                (SYSTEM_FLAGS + 0x93)
+#define FLAG_LANDMARK_BYGONE_VAULT                  (SYSTEM_FLAGS + 0x94)
+#define FLAG_LANDMARK_MAUVE_CAMP                    (SYSTEM_FLAGS + 0x95)
 #define FLAG_UNUSED_0x8F6                           (SYSTEM_FLAGS + 0x96) // Unused Flag
 #define FLAG_UNUSED_0x8F7                           (SYSTEM_FLAGS + 0x97) // Unused Flag
 #define FLAG_UNUSED_0x8F8                           (SYSTEM_FLAGS + 0x98) // Unused Flag
@@ -1716,13 +1716,14 @@
 																			 // This does not prevent opening the debug menu
 #define FLAG_PLAY_AS_FIRST_MON_IN_PARTY         (SPECIAL_FLAGS_START + 0xC)  // Set this flag to have the player sprite be changed to the first pokemon in party
 #define FLAG_SEMI_PERM_HIDE_FOLLOWER            (SPECIAL_FLAGS_START + 0xD)  // Set this flag to hide all following Pokémon until the game is reset
-#define FLAG_SEMI_TEMP_1                        (SPECIAL_FLAGS_START + 0xE)  // See 'Special Flag aliases' for uses
-#define FLAG_SEMI_TEMP_2                        (SPECIAL_FLAGS_START + 0xF)  //
-#define FLAG_SEMI_TEMP_3                        (SPECIAL_FLAGS_START + 0x10) //
-#define FLAG_SEMI_TEMP_4                        (SPECIAL_FLAGS_START + 0x11) //
-#define FLAG_SEMI_TEMP_5                        (SPECIAL_FLAGS_START + 0x12) //
-#define FLAG_WILD_OPPONENT                      (SPECIAL_FLAGS_START + 0x13) // Set when the opponent trainer is a wild Pokemon
-// FLAG_SPECIAL_FLAG_0x400F - 0x407F also exist and are unused
+#define FLAG_SYS_SET_BATTLE_BGM                 (SPECIAL_FLAGS_START + 0xF)  // Set this flag when overriding battle BGM, store BGM in VAR_BATTLE_BGM
+#define FLAG_WILD_OPPONENT                      (SPECIAL_FLAGS_START + 0xF)  // Set when the opponent trainer is a wild Pokemon
+#define FLAG_SEMI_TEMP_1                        (SPECIAL_FLAGS_START + 0x10) // See 'Special Flag aliases' for uses
+#define FLAG_SEMI_TEMP_2                        (SPECIAL_FLAGS_START + 0x11) //
+#define FLAG_SEMI_TEMP_3                        (SPECIAL_FLAGS_START + 0x12) //
+#define FLAG_SEMI_TEMP_4                        (SPECIAL_FLAGS_START + 0x13) //
+#define FLAG_SEMI_TEMP_5                        (SPECIAL_FLAGS_START + 0x14) //
+// FLAG_SPECIAL_FLAG_0x40XX - 0x407F also exist and are unused
 #define SPECIAL_FLAGS_END                       (SPECIAL_FLAGS_START + 0x7F)
 #define NUM_SPECIAL_FLAGS                       (SPECIAL_FLAGS_END - SPECIAL_FLAGS_START + 1)
 

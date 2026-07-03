@@ -57,6 +57,10 @@ const u32 gBattleEnvironmentTiles_Snow[] = INCGFX_U32("graphics/battle_environme
 const u16 gBattleEnvironmentPalette_Snow[] = INCGFX_U16("graphics/battle_environment/snow/palette.pal", ".gbapal");
 const u32 gBattleEnvironmentTilemap_Snow[] = INCGFX_U32("graphics/battle_environment/snow/map.bin", ".smolTM");
 
+const u32 gBattleEnvironmentTiles_Ruins[] = INCGFX_U32("graphics/battle_environment/ruins/tiles.png", ".4bpp.smol");
+const u16 gBattleEnvironmentPalette_Ruins[] = INCGFX_U16("graphics/battle_environment/ruins/palette.pal", ".gbapal");
+const u32 gBattleEnvironmentTilemap_Ruins[] = INCGFX_U32("graphics/battle_environment/ruins/map.bin", ".smolTM");
+
 const u16 gBattleEnvironmentPalette_Kyogre[] = INCGFX_U16("graphics/battle_environment/water/kyogre.pal", ".gbapal");
 const u16 gBattleEnvironmentPalette_Groudon[] = INCGFX_U16("graphics/battle_environment/cave/groudon.pal", ".gbapal");
 
@@ -96,3 +100,6 @@ const u32 gBattleEnvironmentAnimTilemap_Rayquaza[] = INCGFX_U32("graphics/battle
 
 const u32 gBattleEnvironmentAnimTiles_Snow[] = INCGFX_U32("graphics/battle_environment/snow/anim_tiles.png", ".4bpp.smol");
 const u32 gBattleEnvironmentAnimTilemap_Snow[] = INCGFX_U32("graphics/battle_environment/snow/anim_map.bin", ".smolTM");
+
+const u32 gBattleEnvironmentAnimTiles_Ruins[] = INCGFX_U32("graphics/battle_environment/ruins/anim_tiles.png", ".4bpp.smol");
+const u32 gBattleEnvironmentAnimTilemap_Ruins[] = INCGFX_U32("graphics/battle_environment/ruins/anim_map.bin", ".smolTM");

@@ -251,6 +251,20 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .battleIntroSlide = BattleIntroSlide1,
     },
 
+    [BATTLE_ENVIRONMENT_RUINS] =
+    {
+        .name = _("Ruins"),
+        .naturePower = CAVE_NATURE_POWER,
+        .secretPowerAnimation = CAVE_SECRET_POWER_ANIMATION,
+        .secretPowerEffect = CAVE_SECRET_POWER_EFFECT,
+        .camouflageType = CAVE_CAMOUFLAGE_TYPE,
+        .camouflageBlend = CAVE_CAMOUFLAGE_BLEND,
+        .entry = ENVIRONMENT_ENTRY(Ruins),
+        .background = ENVIRONMENT_BACKGROUND(Ruins),
+        .palette = gBattleEnvironmentPalette_Ruins,
+        .battleIntroSlide = CAVE_BATTLE_INTRO_SLIDE,
+    },
+
     [BATTLE_ENVIRONMENT_FRONTIER] =
     {
         .name = _("Frontier"),

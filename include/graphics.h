@@ -287,6 +287,11 @@ extern const u32 gBattleEnvironmentTilemap_Snow[];
 extern const u32 gBattleEnvironmentAnimTiles_Snow[];
 extern const u32 gBattleEnvironmentAnimTilemap_Snow[];
 extern const u16 gBattleEnvironmentPalette_Snow[];
+extern const u32 gBattleEnvironmentTiles_Ruins[];
+extern const u32 gBattleEnvironmentTilemap_Ruins[];
+extern const u32 gBattleEnvironmentAnimTiles_Ruins[];
+extern const u32 gBattleEnvironmentAnimTilemap_Ruins[];
+extern const u16 gBattleEnvironmentPalette_Ruins[];
 
 // Pokédex
 extern const u32 gPokedexInterface_Gfx[];

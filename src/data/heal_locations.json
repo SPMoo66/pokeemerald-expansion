@@ -376,6 +376,12 @@
       "y": 12,
       "respawn_map": "MAP_SIX_ISLAND_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_SIX_ISLAND_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_SS_TIDAL_DUNGEON_1F_1R",
+      "map": "MAP_SS_TIDAL_DUNGEON_1F_1R",
+      "x": 0,
+      "y": 10
     }
   ]
 }

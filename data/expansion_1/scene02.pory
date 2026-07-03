@@ -359,6 +359,7 @@ script Expansion1_Rival_Scene02d {
 script Expansion1_Rival_Scene02e {
 	fadescreen (FADE_FROM_BLACK)
 	clearflag (FLAG_HIDE_MAP_NAME_POPUP)
+	setrespawn (HEAL_LOCATION_MAUVE_CAMP)
 	if (var(VAR_EMERALBODY_RIVAL_STATE) < 31) {
 		delay (10)
 		helpwindow (HELP_EXPANSION_1_BOAT_EXPLANATION)

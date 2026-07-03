@@ -37,6 +37,7 @@ script SSTidalDungeon_StartHarperFollower {
 	setflag (FLAG_SYS_HIDE_FOLLOWERS)
 	setflag (FLAG_TEMP_1)
 	setvar (VAR_TEMP_5, 0)
+	setrespawn (HEAL_LOCATION_SS_TIDAL_DUNGEON_1F_1R)
 	release
 }
 
@@ -55,6 +56,7 @@ script SSTidalDungeon_ClearHarperFollower {
 			setvar (VAR_TEMP_5, 1)
 			fadescreen (FADE_TO_BLACK)
 			destroyfollowernpc // We keep the follower on screen until the original object appears so there's no frame without the sprite. Also, if there's no delay between setobjectmovementtype and addobject, the object will appear, then turn.
+			setrespawn (HEAL_LOCATION_MAUVE_CAMP)
 			warp (MAP_MAUVE_ISLAND_SOUTH, 0)
 		}
 		else {

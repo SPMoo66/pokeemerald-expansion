@@ -630,14 +630,16 @@ Expansion1_Rival_Scene02e::
 # 361 "data/expansion_1/scene02.pory"
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 # 362 "data/expansion_1/scene02.pory"
+	setrespawn HEAL_LOCATION_MAUVE_CAMP
+# 363 "data/expansion_1/scene02.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 31
 	goto_if_lt Expansion1_Rival_Scene02e_1
 	return
 
 Expansion1_Rival_Scene02e_1:
-# 363 "data/expansion_1/scene02.pory"
-	delay 10
 # 364 "data/expansion_1/scene02.pory"
+	delay 10
+# 365 "data/expansion_1/scene02.pory"
 	helpwindow HELP_EXPANSION_1_BOAT_EXPLANATION
 	return
 

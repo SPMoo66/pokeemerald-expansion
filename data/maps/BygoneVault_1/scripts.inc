@@ -3,7 +3,7 @@ BygoneVault_1_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, BygoneVault_1_MapScripts_MAP_SCRIPT_ON_LOAD
 # 19 "data/maps/BygoneVault_1/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION
-# 43 "data/maps/BygoneVault_1/scripts.pory"
+# 44 "data/maps/BygoneVault_1/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
@@ -15,7 +15,8 @@ BygoneVault_1_MapScripts_MAP_SCRIPT_ON_LOAD_1:
 	goto_if_set FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH, BygoneVault_1_MapScripts_MAP_SCRIPT_ON_LOAD_5
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_LOAD_4:
 # 9 "data/maps/BygoneVault_1/scripts.pory"
-	goto_if_set FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN, BygoneVault_1_MapScripts_MAP_SCRIPT_ON_LOAD_7
+	compare VAR_EMERALBODY_RIVAL_STATE, 43
+	goto_if_ge BygoneVault_1_MapScripts_MAP_SCRIPT_ON_LOAD_7
 	return
 
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_LOAD_2:
@@ -64,9 +65,10 @@ BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 	goto_if_set FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH, BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_10
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
 # 36 "data/maps/BygoneVault_1/scripts.pory"
-	goto_if_set FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN, BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_15
+	compare VAR_EMERALBODY_RIVAL_STATE, 43
+	goto_if_ge BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_15
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_14:
-# 39 "data/maps/BygoneVault_1/scripts.pory"
+# 40 "data/maps/BygoneVault_1/scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 42
 	goto_if_eq BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_17
 	return
@@ -90,7 +92,8 @@ BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_8:
 
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_9:
 # 32 "data/maps/BygoneVault_1/scripts.pory"
-	goto_if_unset FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN, BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_8
+	compare VAR_EMERALBODY_RIVAL_STATE, 43
+	goto_if_lt BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_8
 	goto BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_10:
@@ -101,168 +104,171 @@ BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_10:
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_15:
 # 37 "data/maps/BygoneVault_1/scripts.pory"
 	clearflag FLAG_TEMP_3
+# 38 "data/maps/BygoneVault_1/scripts.pory"
+	setflag FLAG_TEMP_5
 	goto BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_14
 
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_TRANSITION_17:
-# 40 "data/maps/BygoneVault_1/scripts.pory"
+# 41 "data/maps/BygoneVault_1/scripts.pory"
 	clearflag FLAG_TEMP_4
 	return
 
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-# 44 "data/maps/BygoneVault_1/scripts.pory"
+# 45 "data/maps/BygoneVault_1/scripts.pory"
 	map_script_2 VAR_TEMP_2, 1, BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0
 	.2byte 0
 
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0:
-# 45 "data/maps/BygoneVault_1/scripts.pory"
-	setvar VAR_TEMP_2, 0
 # 46 "data/maps/BygoneVault_1/scripts.pory"
-	special SpawnCameraObject
+	setvar VAR_TEMP_2, 0
 # 47 "data/maps/BygoneVault_1/scripts.pory"
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	special SpawnCameraObject
 # 48 "data/maps/BygoneVault_1/scripts.pory"
-	switch VAR_TEMP_0
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 # 49 "data/maps/BygoneVault_1/scripts.pory"
+	switch VAR_TEMP_0
+# 50 "data/maps/BygoneVault_1/scripts.pory"
 	case 1, BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_3
-# 54 "data/maps/BygoneVault_1/scripts.pory"
-	applymovement LOCALID_CAMERA, Common_Movement_WalkLeft4
 # 55 "data/maps/BygoneVault_1/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_CAMERA, Common_Movement_WalkLeft4
 # 56 "data/maps/BygoneVault_1/scripts.pory"
+	waitmovement 0
+# 57 "data/maps/BygoneVault_1/scripts.pory"
 	applymovement LOCALID_CAMERA, Common_Movement_WalkDiagNW3
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_1:
-# 58 "data/maps/BygoneVault_1/scripts.pory"
-	waitmovement 0
 # 59 "data/maps/BygoneVault_1/scripts.pory"
-	playse SE_DOWNPOUR
-# 60 "data/maps/BygoneVault_1/scripts.pory"
-	delay 30
-# 61 "data/maps/BygoneVault_1/scripts.pory"
-	playse SE_DOWNPOUR_STOP
-# 62 "data/maps/BygoneVault_1/scripts.pory"
-	waitse
-# 63 "data/maps/BygoneVault_1/scripts.pory"
-	setmetatile 5, 4, 0x0D2, TRUE
-# 64 "data/maps/BygoneVault_1/scripts.pory"
-	setmetatile 6, 4, 0x0D3, TRUE
-# 65 "data/maps/BygoneVault_1/scripts.pory"
-	setmetatile 10, 4, 0x0D2, TRUE
-# 66 "data/maps/BygoneVault_1/scripts.pory"
-	setmetatile 11, 4, 0x0D3, TRUE
-# 67 "data/maps/BygoneVault_1/scripts.pory"
-	special DrawWholeMapView
-# 68 "data/maps/BygoneVault_1/scripts.pory"
-	delay 70
-# 69 "data/maps/BygoneVault_1/scripts.pory"
-	setvar VAR_0x8004, 1
-# 70 "data/maps/BygoneVault_1/scripts.pory"
-	setvar VAR_0x8005, 1
-# 71 "data/maps/BygoneVault_1/scripts.pory"
-	setvar VAR_0x8006, 12
-# 72 "data/maps/BygoneVault_1/scripts.pory"
-	setvar VAR_0x8007, 2
-# 73 "data/maps/BygoneVault_1/scripts.pory"
-	special ShakeCamera
-# 74 "data/maps/BygoneVault_1/scripts.pory"
-	waitstate
-# 75 "data/maps/BygoneVault_1/scripts.pory"
-	setmetatile 8, 1, 0x0DD, FALSE
-# 76 "data/maps/BygoneVault_1/scripts.pory"
-	special DrawWholeMapView
-# 77 "data/maps/BygoneVault_1/scripts.pory"
-	delay 10
-# 78 "data/maps/BygoneVault_1/scripts.pory"
-	playfanfare MUS_DP_TV_END
-# 79 "data/maps/BygoneVault_1/scripts.pory"
-	waitfanfare
-# 80 "data/maps/BygoneVault_1/scripts.pory"
-	switch VAR_TEMP_0
-# 81 "data/maps/BygoneVault_1/scripts.pory"
-	case 1, BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_7
-# 86 "data/maps/BygoneVault_1/scripts.pory"
-	applymovement LOCALID_CAMERA, Common_Movement_WalkDiagSE3
-# 87 "data/maps/BygoneVault_1/scripts.pory"
 	waitmovement 0
+# 60 "data/maps/BygoneVault_1/scripts.pory"
+	playse SE_DOWNPOUR
+# 61 "data/maps/BygoneVault_1/scripts.pory"
+	delay 30
+# 62 "data/maps/BygoneVault_1/scripts.pory"
+	playse SE_DOWNPOUR_STOP
+# 63 "data/maps/BygoneVault_1/scripts.pory"
+	waitse
+# 64 "data/maps/BygoneVault_1/scripts.pory"
+	setmetatile 5, 4, 0x0D2, TRUE
+# 65 "data/maps/BygoneVault_1/scripts.pory"
+	setmetatile 6, 4, 0x0D3, TRUE
+# 66 "data/maps/BygoneVault_1/scripts.pory"
+	setmetatile 10, 4, 0x0D2, TRUE
+# 67 "data/maps/BygoneVault_1/scripts.pory"
+	setmetatile 11, 4, 0x0D3, TRUE
+# 68 "data/maps/BygoneVault_1/scripts.pory"
+	special DrawWholeMapView
+# 69 "data/maps/BygoneVault_1/scripts.pory"
+	delay 70
+# 70 "data/maps/BygoneVault_1/scripts.pory"
+	setvar VAR_0x8004, 1
+# 71 "data/maps/BygoneVault_1/scripts.pory"
+	setvar VAR_0x8005, 1
+# 72 "data/maps/BygoneVault_1/scripts.pory"
+	setvar VAR_0x8006, 12
+# 73 "data/maps/BygoneVault_1/scripts.pory"
+	setvar VAR_0x8007, 2
+# 74 "data/maps/BygoneVault_1/scripts.pory"
+	special ShakeCamera
+# 75 "data/maps/BygoneVault_1/scripts.pory"
+	waitstate
+# 76 "data/maps/BygoneVault_1/scripts.pory"
+	setmetatile 8, 1, 0x0DD, FALSE
+# 77 "data/maps/BygoneVault_1/scripts.pory"
+	special DrawWholeMapView
+# 78 "data/maps/BygoneVault_1/scripts.pory"
+	delay 10
+# 79 "data/maps/BygoneVault_1/scripts.pory"
+	playfanfare MUS_DP_TV_END
+# 80 "data/maps/BygoneVault_1/scripts.pory"
+	waitfanfare
+# 81 "data/maps/BygoneVault_1/scripts.pory"
+	switch VAR_TEMP_0
+# 82 "data/maps/BygoneVault_1/scripts.pory"
+	case 1, BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_7
+# 87 "data/maps/BygoneVault_1/scripts.pory"
+	applymovement LOCALID_CAMERA, Common_Movement_WalkDiagSE3
 # 88 "data/maps/BygoneVault_1/scripts.pory"
+	waitmovement 0
+# 89 "data/maps/BygoneVault_1/scripts.pory"
 	applymovement LOCALID_CAMERA, Common_Movement_WalkRight4
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_5:
-# 90 "data/maps/BygoneVault_1/scripts.pory"
-	waitmovement 0
 # 91 "data/maps/BygoneVault_1/scripts.pory"
-	special RemoveCameraObject
+	waitmovement 0
 # 92 "data/maps/BygoneVault_1/scripts.pory"
-	setflag FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN
+	special RemoveCameraObject
 # 93 "data/maps/BygoneVault_1/scripts.pory"
+	setvar VAR_EMERALBODY_RIVAL_STATE, 43
+# 94 "data/maps/BygoneVault_1/scripts.pory"
 	removeobject 5
 	return
 
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_3:
-# 50 "data/maps/BygoneVault_1/scripts.pory"
-	applymovement LOCALID_CAMERA, Common_Movement_WalkRight4
 # 51 "data/maps/BygoneVault_1/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_CAMERA, Common_Movement_WalkRight4
 # 52 "data/maps/BygoneVault_1/scripts.pory"
+	waitmovement 0
+# 53 "data/maps/BygoneVault_1/scripts.pory"
 	applymovement LOCALID_CAMERA, Common_Movement_WalkDiagNE3
 	goto BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_1
 
 BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_7:
-# 82 "data/maps/BygoneVault_1/scripts.pory"
-	applymovement LOCALID_CAMERA, Common_Movement_WalkDiagSW3
 # 83 "data/maps/BygoneVault_1/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_CAMERA, Common_Movement_WalkDiagSW3
 # 84 "data/maps/BygoneVault_1/scripts.pory"
+	waitmovement 0
+# 85 "data/maps/BygoneVault_1/scripts.pory"
 	applymovement LOCALID_CAMERA, Common_Movement_WalkLeft4
 	goto BygoneVault_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_5
 
 
 BygoneVault_FullBowl::
-# 99 "data/maps/BygoneVault_1/scripts.pory"
+# 100 "data/maps/BygoneVault_1/scripts.pory"
 	msgbox BygoneVault_FullBowl_Text_0, MSGBOX_AUTOCLOSE
 	return
 
 
 BygoneVault_DoorShut::
-# 103 "data/maps/BygoneVault_1/scripts.pory"
+# 104 "data/maps/BygoneVault_1/scripts.pory"
 	msgbox BygoneVault_DoorShut_Text_0, MSGBOX_AUTOCLOSE
 	return
 
 
 BygoneVault_1_Sign::
-# 107 "data/maps/BygoneVault_1/scripts.pory"
+# 108 "data/maps/BygoneVault_1/scripts.pory"
 	msgbox BygoneVault_1_Sign_Text_0, MSGBOX_SIGN
 	return
 
 
 Script_RedrawBygoneVault1Map::
-# 122 "data/maps/BygoneVault_1/scripts.pory"
+# 123 "data/maps/BygoneVault_1/scripts.pory"
 	goto_if_unset FLAG_TEMP_6, Script_RedrawBygoneVault1Map_2
 	return
 
 Script_RedrawBygoneVault1Map_1:
-# 123 "data/maps/BygoneVault_1/scripts.pory"
-	setmetatile 8, 1, 0x0DD, FALSE
 # 124 "data/maps/BygoneVault_1/scripts.pory"
-	special DrawWholeMapView
+	setmetatile 8, 1, 0x0DD, FALSE
 # 125 "data/maps/BygoneVault_1/scripts.pory"
+	special DrawWholeMapView
+# 126 "data/maps/BygoneVault_1/scripts.pory"
 	setflag FLAG_TEMP_6
 	return
 
 Script_RedrawBygoneVault1Map_2:
-# 122 "data/maps/BygoneVault_1/scripts.pory"
-	goto_if_set FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN, Script_RedrawBygoneVault1Map_1
+# 123 "data/maps/BygoneVault_1/scripts.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 43
+	goto_if_ge Script_RedrawBygoneVault1Map_1
 	return
 
 
 BygoneVault_FullBowl_Text_0:
-# 99 "data/maps/BygoneVault_1/scripts.pory"
+# 100 "data/maps/BygoneVault_1/scripts.pory"
 	.string "The bowl has filled with water.$"
 
 BygoneVault_DoorShut_Text_0:
-# 103 "data/maps/BygoneVault_1/scripts.pory"
+# 104 "data/maps/BygoneVault_1/scripts.pory"
 	.string "The door is firmly sealed shut.$"
 
 BygoneVault_1_Sign_Text_0:
-# 107 "data/maps/BygoneVault_1/scripts.pory"
+# 108 "data/maps/BygoneVault_1/scripts.pory"
 	.string "And as they foretold\n"
 	.string "The doors were sealed firmly shut\l"
 	.string "'Til the drought had passed$"

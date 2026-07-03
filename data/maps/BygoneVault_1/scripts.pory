@@ -6,7 +6,7 @@ mapscripts BygoneVault_1_MapScripts {
 		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
 			setmetatile (13, 8, 0x0C6, TRUE)
 		}
-		if (flag(FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN)) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 43) {
 			  # door
 			setmetatile (8, 1, 0x0DD, FALSE)
 			  # big fountains
@@ -29,12 +29,13 @@ mapscripts BygoneVault_1_MapScripts {
 		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
 			clearflag (FLAG_TEMP_2)
 		}
-		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH) && flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH) && !flag(FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN)) {
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH) && flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH) && var(VAR_EMERALBODY_RIVAL_STATE) < 43) {
 			setvar (VAR_TEMP_2, 1)
 			clearflag (FLAG_TEMP_3)
 		}
-		if (flag(FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN)) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 43) {
 			clearflag (FLAG_TEMP_3)
+			setflag (FLAG_TEMP_5)
 		}
 		if (var(VAR_EMERALBODY_RIVAL_STATE) == 42) {
 			clearflag (FLAG_TEMP_4)
@@ -89,7 +90,7 @@ mapscripts BygoneVault_1_MapScripts {
 			}
 			waitmovement (0)
 			special (RemoveCameraObject)
-			setflag (FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN)
+			setvar (VAR_EMERALBODY_RIVAL_STATE, 43)
 			removeobject (5)
 		}
 	]
@@ -119,7 +120,7 @@ script BygoneVault_1_Sign {
 #}
 
 script Script_RedrawBygoneVault1Map {
-	if (!flag(FLAG_TEMP_6) && flag(FLAG_EXP_1_BYGONE_VAULT_MAIN_DOOR_OPEN)) {
+	if (!flag(FLAG_TEMP_6) && var(VAR_EMERALBODY_RIVAL_STATE) >= 43) {
 		setmetatile (8, 1, 0x0DD, FALSE)
 		special (DrawWholeMapView)
 		setflag (FLAG_TEMP_6)

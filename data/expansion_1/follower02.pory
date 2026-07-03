@@ -18,6 +18,8 @@ script Expansion1_Rival_Scene06 {
 			"Agh, sorry about that one.\p"
 			"Just do what you have to.", MSGBOX_AUTOCLOSE)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 34)
+	playfanfare (MUS_HG_LETS_GO_TOGETHER)
+	delay (20)
 	goto (SSTidalDungeon_StartHarperFollower)
 }
 

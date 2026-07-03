@@ -1551,7 +1551,7 @@ void Task_HandleChooseMonInput(u8 taskId)
                 MoveCursorToConfirm();
             }
             break;
-        case R_BUTTON: // Only used in full-team multis to cycle player/partner parties
+        case R_BUTTON:
             if (gPartyMenu.action == PARTY_ACTION_CHOOSE_MON
                 && gPartyMenu.layout == PARTY_LAYOUT_SINGLE
                 && (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD

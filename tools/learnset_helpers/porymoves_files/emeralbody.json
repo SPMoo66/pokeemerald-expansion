@@ -1524,7 +1524,8 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
-        "MOVE_VACUUM_WAVE"
+        "MOVE_VACUUM_WAVE",
+        "MOVE_DRAGON_CLAW"
 	],
     "EggMoves": [],
     "TutorMoves": [

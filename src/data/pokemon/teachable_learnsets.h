@@ -17930,6 +17930,7 @@ static const u16 sCrawdauntTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DIVE,
     MOVE_DOUBLE_EDGE,
+    MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
     MOVE_FACADE,
     MOVE_FALSE_SWIPE,

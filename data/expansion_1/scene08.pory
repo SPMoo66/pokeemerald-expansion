@@ -408,7 +408,7 @@ script Expansion1_Rival_Scene08e {
 	applymovement (BYGONEVAULT1_JAKSON, Common_Movement_WalkLeft2)
 	waitmovement (0)
 	setobjectxyperm (BYGONEVAULT1_HARPER, 8, 16)
-	setobjectmovementtype (BYGONEVAULT1_HARPER MOVEMENT_TYPE_FACE_UP)
+	setobjectmovementtype (BYGONEVAULT1_HARPER, MOVEMENT_TYPE_FACE_UP)
 	addobject (BYGONEVAULT1_HARPER)
 	playse (SE_EXIT)
 	applymovement (BYGONEVAULT1_REDD, Common_Movement_WalkInPlaceFasterDown)

@@ -726,7 +726,7 @@ Expansion1_Rival_Scene08e::
 # 410 "data/expansion_1/scene08.pory"
 	setobjectxyperm 18, 8, 16
 # 411 "data/expansion_1/scene08.pory"
-	setobjectmovementtype 18 MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype 18, MOVEMENT_TYPE_FACE_UP
 # 412 "data/expansion_1/scene08.pory"
 	addobject 18
 # 413 "data/expansion_1/scene08.pory"

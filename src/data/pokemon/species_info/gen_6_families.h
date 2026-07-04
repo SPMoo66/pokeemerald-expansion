@@ -3749,7 +3749,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .teachableLearnset = sAegislashEmeribianTeachableLearnset,
         .isEmeribianForm = TRUE,
         .formSpeciesIdTable = sAegislashFormSpeciesIdTable,
-        .formChangeTable = sAegislashFormChangeTable,
     },
 #endif //P_FAMILY_HONEDGE
 

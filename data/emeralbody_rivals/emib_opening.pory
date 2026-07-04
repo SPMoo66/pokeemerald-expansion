@@ -89,6 +89,16 @@ script Intro_EmibOpening {
 			case 2:
 				addvar (VAR_TEMP_1, 1)
 		}
+		if (flag(FLAG_NEW_GAME_PLUS)) {
+			speakername (CommonText_Quiz)
+			msgbox( format( "Q??? Do you show favoritism amongst your friendships?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				msgbox( format ("Are you sure? That could lead to a dangerous journey."), MSGBOX_YESNO)
+				if (var(VAR_RESULT) == YES) {
+					setflag (FLAG_TEMP_6)
+				}
+			}
+		}
 		closemessage
 		
 		call (Intro_DetermineRival)
@@ -213,6 +223,9 @@ script Intro_DetermineRival {
 	}
 	if(!flag(FLAG_TEMP_10) && !flag(FLAG_TEMP_1) && !flag(FLAG_TEMP_3) && !flag(FLAG_TEMP_4)) {
 		setvar (VAR_EMERALBODY_RIVAL, 2)
+	}
+	if (flag(FLAG_TEMP_6)) {
+		setvar (VAR_EMERALBODY_RIVAL, 5)
 	}
 }
 

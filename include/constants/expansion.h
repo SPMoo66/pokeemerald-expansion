@@ -6,10 +6,10 @@
 #define EXPANSION_VERSION_MINOR 13
 #define EXPANSION_VERSION_PATCH 4
 
-// Last version: 1.2.1
+// Last version: 1.4.1
 #define EMERALBODY_VERSION_MAJOR 1
 #define EMERALBODY_VERSION_MINOR 4
-#define EMERALBODY_VERSION_PATCH 0
+#define EMERALBODY_VERSION_PATCH 1
 
 // FALSE if this this version of Expansion is not a tagged commit, i.e.
 // it contains unreleased changes.

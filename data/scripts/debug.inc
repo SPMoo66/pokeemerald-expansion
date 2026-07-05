@@ -142,28 +142,18 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	readelitefour
-	copyvar VAR_TEMP_0, VAR_0x8000
 	release
 	end
 
 Debug_EventScript_Script_3::
-	shuffleelitefour
-	readelitefour
-	buffernumberstring 0, VAR_0x8000
-	msgbox Debug_PrintRivalVar, MSGBOX_DEFAULT
 	release
 	end
 
 Debug_EventScript_Script_4::
-	call Motel_BattleSimulator
 	release
 	end
 
 Debug_EventScript_Script_5::
-	setvar VAR_EMERALBODY_RIVAL, 5
-	setvar VAR_EMERALBODY_RIVAL_STATE, 16
-	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 20
 	release
 	end
 

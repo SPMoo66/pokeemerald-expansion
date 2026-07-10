@@ -433,37 +433,39 @@ const BARON_BATTLE04 = 27
 script Baron_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && var(VAR_EMERALBODY_RIVAL) == 0)
 	 || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 7 && var(VAR_EMERALBODY_RIVAL) == 5)) { // Check if Baron is your rival
-		lock
-		setvar (VAR_TEMP_A, 0)
-		call (Common_EventScript_PlayEmRivalBgm)
-		call (GetRivalForNameBox)
-		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
-		if (var(VAR_TEMP_1) == 9) { // Trigger spot
-			applymovement (BARON_BATTLE02, Common_Movement_WalkInPlaceUp)
-			waitmovement (0)
-			delay (50)
-			applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
-			applymovement (BARON_BATTLE02, Common_Movement_WalkUp)
-			waitmovement (0)
+		if (flag(FLAG_BADGE02_GET)) { // Skip if Brawly not beaten
+			lock
+			setvar (VAR_TEMP_A, 0)
+			call (Common_EventScript_PlayEmRivalBgm)
+			call (GetRivalForNameBox)
+			getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+			if (var(VAR_TEMP_1) == 9) { // Trigger spot
+				applymovement (BARON_BATTLE02, Common_Movement_WalkInPlaceUp)
+				waitmovement (0)
+				delay (50)
+				applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
+				applymovement (BARON_BATTLE02, Common_Movement_WalkUp)
+				waitmovement (0)
+			}
+			else {
+				faceplayer
+			}
+			msgbox (Battle02_BaronText_PreBattle, MSGBOX_DEFAULT)
+			call (GetRivalMusic)
+			setflag (FLAG_CHALLENGING_TRAINER)
+			trainerbattle_no_intro (TRAINER_BARON_2, Battle02_BaronText_BattleVictory)
+			call (GetRivalForNameBox)
+			msgbox (Battle02_BaronText_PostBattle, MSGBOX_DEFAULT)
+			closemessage
+			fadedefaultbgm
+			setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 8)
+			clearflag (FLAG_CHALLENGING_TRAINER)
+			setflag (FLAG_TEMP_2)
+			fadescreenswapbuffers (FADE_TO_BLACK)
+			removeobject (BARON_BATTLE02)
+			fadescreenswapbuffers (FADE_FROM_BLACK)
+			release
 		}
-		else {
-			faceplayer
-		}
-		msgbox (Battle02_BaronText_PreBattle, MSGBOX_DEFAULT)
-		call (GetRivalMusic)
-		setflag (FLAG_CHALLENGING_TRAINER)
-		trainerbattle_no_intro (TRAINER_BARON_2, Battle02_BaronText_BattleVictory)
-		call (GetRivalForNameBox)
-		msgbox (Battle02_BaronText_PostBattle, MSGBOX_DEFAULT)
-		closemessage
-		fadedefaultbgm
-		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 8)
-		clearflag (FLAG_CHALLENGING_TRAINER)
-		setflag (FLAG_TEMP_2)
-		fadescreenswapbuffers (FADE_TO_BLACK)
-		removeobject (BARON_BATTLE02)
-		fadescreenswapbuffers (FADE_FROM_BLACK)
-		release
 	}
 	setflag (FLAG_TEMP_6)
 }

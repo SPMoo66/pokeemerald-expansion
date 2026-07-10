@@ -1230,27 +1230,27 @@ static void DexNavGenerateMoveset(enum Species species, u8 searchLevel, u8 encou
     u16 eggMoveBuffer[EGG_MOVES_ARRAY_COUNT];
 
     // see if first move slot should be an egg move
-    if (searchLevel < 5)
+    if (searchLevel < 3)
     {
         if (SEARCHLEVEL0_MOVECHANCE != 0 && randVal < SEARCHLEVEL0_MOVECHANCE)
             genMove = TRUE;
     }
-    else if (searchLevel < 10)
+    else if (searchLevel < 5)
     {
         if (SEARCHLEVEL5_MOVECHANCE != 0 && randVal < SEARCHLEVEL5_MOVECHANCE)
             genMove = TRUE;
     }
-    else if (searchLevel < 25)
+    else if (searchLevel < 10)
     {
         if (SEARCHLEVEL10_MOVECHANCE != 0 && randVal < SEARCHLEVEL10_MOVECHANCE)
             genMove = TRUE;
     }
-    else if (searchLevel < 50)
+    else if (searchLevel < 25)
     {
         if (SEARCHLEVEL25_MOVECHANCE != 0 && randVal < SEARCHLEVEL25_MOVECHANCE)
             genMove = TRUE;
     }
-    else if (searchLevel < 100)
+    else if (searchLevel < 50)
     {
         if (SEARCHLEVEL50_MOVECHANCE != 0 && randVal < SEARCHLEVEL50_MOVECHANCE)
             genMove = TRUE;
@@ -2683,8 +2683,8 @@ void TryIncrementSpeciesSearchLevel()
 
 void ResetDexNavSearch(void)
 {
-    gSaveBlock1Ptr->dexNavChain = 0;    //reset dex nav chaining on new map
-    VarSet(DN_VAR_STEP_COUNTER, 0); //reset hidden Pokémon step counter
+//    gSaveBlock1Ptr->dexNavChain = 0;    //reset dex nav chaining on new map
+    VarSet(DN_VAR_STEP_COUNTER, 0); //reset hidden pokemon step counter
     if (FlagGet(DN_FLAG_SEARCHING))
         EndDexNavSearch();   //moving to new map ends dexnav search
 }

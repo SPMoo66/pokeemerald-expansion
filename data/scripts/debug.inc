@@ -215,10 +215,6 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	shuffleelitefour
-	readelitefour
-	buffernumberstring 0, VAR_0x8000
-	msgbox Debug_PrintRivalVar, MSGBOX_DEFAULT
 	release
 	end
 

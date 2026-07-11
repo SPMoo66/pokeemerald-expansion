@@ -55,7 +55,7 @@ Expansion1_Rival_Scene10b_1:
 # 47 "data/expansion_1/scene10.pory"
 	special SpawnCameraObject
 # 48 "data/expansion_1/scene10.pory"
-	applymovement LOCALID_CAMERA, Common_Movement_WalkDiagNW
+	applymovement LOCALID_CAMERA, Common_Movement_WalkDiagNE
 # 49 "data/expansion_1/scene10.pory"
 	speakername CommonText_Jakson
 # 50 "data/expansion_1/scene10.pory"
@@ -92,8 +92,8 @@ Expansion1_Rival_Scene10b_1:
 	speakername CommonText_Harper
 # 75 "data/expansion_1/scene10.pory"
 	msgbox Expansion1_Rival_Scene10b_Text_6, MSGBOX_AUTOCLOSE
-# 79 "data/expansion_1/scene10.pory"
-	trainerbattle_no_intro TRAINER_WILD_POKEMON_IG_5, Exp1_WildPokemonTrainerText_Defeat
+# 80 "data/expansion_1/scene10.pory"
+	multi_2_vs_1 TRAINER_WILD_POKEMON_IG_5, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS
 # 83 "data/expansion_1/scene10.pory"
 	speakername CommonText_Redd
 # 84 "data/expansion_1/scene10.pory"

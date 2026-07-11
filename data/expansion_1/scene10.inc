@@ -163,13 +163,13 @@ Expansion1_Rival_Scene10b_Text_1:
 
 Expansion1_Rival_Scene10b_Text_2:
 # 51 "data/expansion_1/scene10.pory"
-	.string "Hah… with how everything else has\n"
+	.string "Hah… {PAUSE 100}with how everything else has\n"
 	.string "gone? Custom mechanics sound like a\l"
 	.string "perfectly chaotic climax.$"
 
 Expansion1_Rival_Scene10b_Text_3:
 # 57 "data/expansion_1/scene10.pory"
-	.string "What?! What do you mean ‘no telling’?!$"
+	.string "What?! {PAUSE 60}What do you mean ‘no telling’?!$"
 
 Expansion1_Rival_Scene10b_Text_4:
 # 59 "data/expansion_1/scene10.pory"
@@ -179,7 +179,7 @@ Expansion1_Rival_Scene10b_Text_4:
 
 Expansion1_Rival_Scene10b_Text_5:
 # 68 "data/expansion_1/scene10.pory"
-	.string "It-It looks almost dead…?\n"
+	.string "It-{PAUSE 30}It looks almost dead…{PAUSE 100}?\n"
 	.string "Did we beat it?$"
 
 Expansion1_Rival_Scene10b_Text_6:
@@ -196,13 +196,13 @@ Expansion1_Rival_Scene10b_Text_7:
 Expansion1_Rival_Scene10b_Text_8:
 # 81 "data/expansion_1/scene10.pory"
 	.string "HAHAHA!\n"
-	.string "Live up to your name, “Redd”!\l"
+	.string "Live up to your name, {PAUSE 60}“Redd”!\l"
 	.string "Let us BATHE IN THE BLOOD OF OUR\l"
 	.string "ENEMIES!!!$"
 
 Expansion1_Rival_Scene10b_Text_9:
 # 86 "data/expansion_1/scene10.pory"
-	.string "That's not-…! F-FINE!\n"
+	.string "That's not-…{PAUSE 100}! F-{PAUSE 30}FINE!\n"
 	.string "I can go another round!$"
 
 Expansion1_Rival_Scene10b_Text_10:
@@ -216,8 +216,8 @@ Expansion1_Rival_Scene10b_Text_11:
 
 Expansion1_Rival_Scene10b_Text_12:
 # 97 "data/expansion_1/scene10.pory"
-	.string "Is that…?!$"
+	.string "Is that…{PAUSE 100}?!$"
 
 Expansion1_Rival_Scene10b_Text_13:
 # 99 "data/expansion_1/scene10.pory"
-	.string "Did it… Did it actually…?$"
+	.string "Did it… {PAUSE 100}Did it actually…{PAUSE 100}?$"

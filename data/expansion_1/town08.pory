@@ -15,7 +15,7 @@ script Sakura_Exp1_Town08 {
 			"They won't know what hit them when we\n"
 			"use our sure-hit, double penetration\l"
 			"assault!\p"
-			"…What's that look? Aren't you also\n"
+			"…{PAUSE 60}What's that look? {PAUSE 100}Aren't you also\n"
 			"disappointed in the lack of treasure?\p"
 			"Wailing on a final boss sounds like a\n"
 			"perfect way to make up for it{EMOJI_TILDE}\p"
@@ -45,10 +45,10 @@ script Redd_Exp1_Town08 {
 	speakername (CommonText_Redd)
 	msgbox ("Oh, thank goodness it's you, {PLAYER}.\p"
 			"I appreciate that they're already\n"
-			"done, but… sometimes I wonder if I\l"
+			"done, but… {PAUSE 100}sometimes I wonder if I\l"
 			"get lost more easily when the puzzles\l"
 			"are already done.\p"
-			"{EMOJI_BIGWHEEL}Sigh{EMOJI_BIGWHEEL}… ‘Too much water’? What kind of\n"
+			"{EMOJI_BIGWHEEL}Sigh{EMOJI_BIGWHEEL}… {PAUSE 100}‘Too much water’? What kind of\n"
 			"damn sadist thought that adding more\l"
 			"was a good idea!\p"
 			"I feel like I'm channeling some of\n"
@@ -94,7 +94,7 @@ script Baron_Exp1_Town08 {
 	waitmovement (0)
 	
 	call (GetBaronsName)
-	msgbox ("Hah… hah…\p"
+	msgbox ("Hah… {PAUSE 100}hah…\p"
 			"I was trying to train my Pokémon up to\n"
 			"the very end.\p"
 			"I don't know how much help I'll be able\n"
@@ -133,7 +133,7 @@ script Jakson_Exp1_Town08 {
 	speakername (CommonText_Jakson)
 	msgbox ("Have you seen any of the others?\p"
 			"Yeah? Just not Harper?\p"
-			"Well… odds are that she'll be ahead of\n"
+			"Well… {PAUSE 100}odds are that she'll be ahead of\n"
 			"us here.\p"
 			"Good. You know, I do appreciate her\n"
 			"stepping up and helping out with my\l"
@@ -167,11 +167,11 @@ script Harper_Exp1_Town08 {
 			"waiting for you now.\p"
 			"This boss was the thing hunting you\n"
 			"down from the start, right? Any tips?\p"
-			"“Don't get hit”? What a sage you are,\n"
+			"“Don't get hit”? {PAUSE 60}What a sage you are,\n"
 			"haha…\p"
 			"Happy we still have our sense of humor\n"
 			"at this point in at all.\p"
-			"…though… you know…\p"
+			"…{PAUSE 60}though… {PAUSE 60}you know…\p"
 			"I'm glad I've been sticking around with\n"
 			"you all. This has been fun.\p"
 			"But it's not like there's any need for\n"

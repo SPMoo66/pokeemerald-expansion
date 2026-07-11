@@ -48,13 +48,13 @@ script Expansion1_Rival_Scene10b {
 	msgbox ("Everyone, get ready! This'll be custom,\n"
 			"so there's no telling how it will go!")
 	speakername (CommonText_Redd)
-	msgbox ("Hah… with how everything else has\n"
+	msgbox ("Hah… {PAUSE 100}with how everything else has\n"
 			"gone? Custom mechanics sound like a\l"
 			"perfectly chaotic climax.", MSGBOX_AUTOCLOSE)
 	applymovement (IG_BARON, Common_Movement_WalkInPlaceFasterLeft)
 	waitmovement (0)
 	call (GetBaronsName)
-	msgbox ("What?! What do you mean ‘no telling’?!")
+	msgbox ("What?! {PAUSE 60}What do you mean ‘no telling’?!")
 	speakername (CommonText_Sakura)
 	msgbox ("Baron, we can take it! Back to back.\n"
 			"Allies that fight until the final\l"
@@ -65,7 +65,7 @@ script Expansion1_Rival_Scene10b {
 
 
 	call (GetBaronsName)
-	msgbox ("It-It looks almost dead…?\n"
+	msgbox ("It-{PAUSE 30}It looks almost dead…{PAUSE 100}?\n"
 			"Did we beat it?")
 	speakername (CommonText_Harper)
 	msgbox ("Tsk. This is when they're at their\n"
@@ -79,11 +79,11 @@ script Expansion1_Rival_Scene10b {
 	msgbox ("Again? Jeez! This guy won't give up!")
 	speakername (CommonText_Sakura)
 	msgbox ("HAHAHA!\n"
-			"Live up to your name, “Redd”!\l"
+			"Live up to your name, {PAUSE 60}“Redd”!\l"
 			"Let us BATHE IN THE BLOOD OF OUR\l"
 			"ENEMIES!!!")
 	speakername (CommonText_Redd)
-	msgbox ("That's not-…! F-FINE!\n"
+	msgbox ("That's not-…{PAUSE 100}! F-{PAUSE 30}FINE!\n"
 			"I can go another round!")
 	speakername (CommonText_Jakson)
 	msgbox ("Everything comes in threes.\n"
@@ -94,7 +94,7 @@ script Expansion1_Rival_Scene10b {
 
 
 	speakername (CommonText_Redd)
-	msgbox ("Is that…?!")
+	msgbox ("Is that…{PAUSE 100}?!")
 	call (GetBaronsName)
-	msgbox ("Did it… Did it actually…?")
+	msgbox ("Did it… {PAUSE 100}Did it actually…{PAUSE 100}?")
 }

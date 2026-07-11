@@ -26,6 +26,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "IllusoryGrotto_B1F_1R_Rock",
       "flag": "FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK_IN_PLACE"
+    },
+    {
+      "local_id": "IGB1_REDD",
+      "graphics_id": "OBJ_EVENT_GFX_REDD",
+      "x": 11,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
     }
   ],
   "warp_events": [
@@ -58,6 +72,16 @@
       "dest_warp_id": "5"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "46",
+      "script": "Redd_Exp1_Town08"
+    }
+  ],
   "bg_events": []
 }

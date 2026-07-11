@@ -1,0 +1,187 @@
+const IG1_SAKURA = 2
+const IGB1_REDD = 2
+const IGB2_BARON = 4
+const IGB3_JAKSON = 3
+const IGB4_2R_HARPER = 3
+
+script Sakura_Exp1_Town08 {
+	playbgm (MUS_HG_ENCOUNTER_GIRL_1, FALSE)
+	faceplayer
+	speakername (CommonText_Sakura)
+	msgbox ("{PLAYER}!\p"
+			"Come on, hurry up already!\p"
+			"Let's tag team the monster. You take\n"
+			"one end and I'll take the other!\p"
+			"They won't know what hit them when we\n"
+			"use our sure-hit, double penetration\l"
+			"assault!\p"
+			"…What's that look? Aren't you also\n"
+			"disappointed in the lack of treasure?\p"
+			"Wailing on a final boss sounds like a\n"
+			"perfect way to make up for it{EMOJI_TILDE}\p"
+			"I'm gonna run ahead, but don't you take\n"
+			"too long! You'll miss the heated rivalry\l"
+			"see its conclusion!", MSGBOX_AUTOCLOSE)
+	applymovement (IG1_SAKURA, Common_Movement_WalkUp)
+	waitmovement (0)
+	playse (SE_EXIT)
+	removeobject (IG1_SAKURA)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 46)
+	fadedefaultbgm
+}
+
+script Redd_Exp1_Town08 {
+	addobject (IGB1_REDD)
+	playbgm (MUS_HG_ETHAN, FALSE)
+	speakername (CommonText_Redd)
+	msgbox ("Yo, wait up!", MSGBOX_AUTOCLOSE)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceUp)
+	applymovement (IGB1_REDD, Common_Movement_WalkDiagSW)
+	waitmovement (0)
+	applymovement (IGB1_REDD, Common_Movement_WalkLeft2)
+	waitmovement (0)
+	applymovement (IGB1_REDD, Common_Movement_WalkDown4)
+	waitmovement (0)
+	speakername (CommonText_Redd)
+	msgbox ("Oh, thank goodness it's you, {PLAYER}.\p"
+			"I appreciate that they're already\n"
+			"done, but… sometimes I wonder if I\l"
+			"get lost more easily when the puzzles\l"
+			"are already done.\p"
+			"{EMOJI_BIGWHEEL}Sigh{EMOJI_BIGWHEEL}… ‘Too much water’? What kind of\n"
+			"damn sadist thought that adding more\l"
+			"was a good idea!\p"
+			"I feel like I'm channeling some of\n"
+			"Harper's rage right now.\p"
+			"Hah…\p"
+			"Alright, let's see what kind of finale\n"
+			"they have in store for us.", MSGBOX_AUTOCLOSE)
+	turnobject (LOCALID_PLAYER, DIR_WEST)
+	applymovement (LOCALID_PLAYER, Common_Movement_LockFacingDirection)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_UnlockFacingDirection)
+	applymovement (IGB1_REDD, Common_Movement_WalkDown3)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
+	applymovement (IGB1_REDD, Common_Movement_WalkRight6)
+	waitmovement (0)
+	applymovement (IGB1_REDD, Common_Movement_WalkUp2)
+	waitmovement (0)
+	playse (SE_EXIT)
+	removeobject (IGB1_REDD)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 47)
+	fadedefaultbgm
+}
+
+script Baron_Exp1_Town08 {
+	playbgm (MUS_PL_B_HALL, FALSE)
+	addobject (IGB2_BARON)
+	playse (SE_EXIT)
+	delay (30)
+	applymovement (IGB2_BARON, Common_Movement_WalkDown)
+	waitmovement (0)
+	call (GetBaronsName)
+	msgbox ("W-wait, {PLAYER}!", MSGBOX_AUTOCLOSE)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceUp)
+	applymovement (IGB2_BARON, Common_Movement_WalkDown)
+	waitmovement (0)
+	applymovement (IGB2_BARON, Common_Movement_WalkRight3)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_LockFacingDirection)
+	applymovement (IGB2_BARON, Common_Movement_WalkDown)
+	waitmovement (0)
+	
+	call (GetBaronsName)
+	msgbox ("Hah… hah…\p"
+			"I was trying to train my Pokémon up to\n"
+			"the very end.\p"
+			"I don't know how much help I'll be able\n"
+			"to be, but I won't weigh you all down!\p"
+			"The others are on ahead, right?\p"
+			"I don't want to be the last one there!\p"
+			"Don't be too long, {PLAYER}!", MSGBOX_AUTOCLOSE)
+	
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkDown)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_UnlockFacingDirection)
+	applymovement (IGB2_BARON, Common_Movement_WalkDown)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceRight)
+	applymovement (IGB2_BARON, Common_Movement_WalkRight3)
+	waitmovement (0)
+	applymovement (IGB2_BARON, Common_Movement_WalkDiagSE)
+	waitmovement (0)
+	applymovement (IGB2_BARON, Common_Movement_WalkRight4)
+	waitmovement (0)
+	removeobject (IGB2_BARON)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 48)
+	fadedefaultbgm
+}
+
+script Jakson_Exp1_Town08 {
+	playbgm (MUS_HG_EUSINE, FALSE)
+	addobject (IGB3_JAKSON)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceUp)
+	applymovement (IGB3_JAKSON, Common_Movement_WalkDown3)
+	waitmovement (0)
+	speakername (CommonText_Jakson)
+	msgbox ("Hold on, {PLAYER}!", MSGBOX_AUTOCLOSE)
+	applymovement (IGB3_JAKSON, Common_Movement_WalkDown2)
+	waitmovement (0)
+	speakername (CommonText_Jakson)
+	msgbox ("Have you seen any of the others?\p"
+			"Yeah? Just not Harper?\p"
+			"Well… odds are that she'll be ahead of\n"
+			"us here.\p"
+			"Good. You know, I do appreciate her\n"
+			"stepping up and helping out with my\l"
+			"failings.\p"
+			"If she doesn't mind, maybe I could get\n"
+			"some of her input for next time around.\p"
+			"Haha, don't you worry about it.\p"
+			"Keep your mind on whatever challenge\n"
+			"lays ahead of us.\p"
+			"Let's get a move on.", MSGBOX_AUTOCLOSE)
+	turnobject (LOCALID_PLAYER, DIR_WEST)
+	applymovement (LOCALID_PLAYER, Common_Movement_LockFacingDirection)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight)
+	waitmovement (0)
+	applymovement (IGB3_JAKSON, Common_Movement_WalkDown3)
+	waitmovement (0)
+	applymovement (IGB3_JAKSON, Common_Movement_WalkLeft8)
+	waitmovement (0)
+	removeobject (IGB3_JAKSON)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 49)
+	fadedefaultbgm
+}
+
+script Harper_Exp1_Town08 {
+	playbgm (MUS_DP_DAWN, FALSE)
+	faceplayer
+	speakername (CommonText_Harper)
+	msgbox ("Ooh, took you long enough, {PLAYER}.\p"
+			"Yeah, everyone's already in there\n"
+			"waiting for you now.\p"
+			"This boss was the thing hunting you\n"
+			"down from the start, right? Any tips?\p"
+			"“Don't get hit”? What a sage you are,\n"
+			"haha…\p"
+			"Happy we still have our sense of humor\n"
+			"at this point in at all.\p"
+			"…though… you know…\p"
+			"I'm glad I've been sticking around with\n"
+			"you all. This has been fun.\p"
+			"But it's not like there's any need for\n"
+			"sappy stuff.\p"
+			"Come on, let's get in there and take\n"
+			"this thing down.", MSGBOX_AUTOCLOSE)
+	applymovement (IGB4_2R_HARPER, Common_Movement_WalkUp)
+	waitmovement (0)
+	playse (SE_EXIT)
+	removeobject (IGB4_2R_HARPER)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 50)
+	fadedefaultbgm
+}

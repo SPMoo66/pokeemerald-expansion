@@ -1,7 +1,11 @@
 mapscripts IllusoryGrotto_B4F_2R_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_2)
 		if (defeated(TRAINER_WILD_POKEMON_IG_1)) {
 			setflag (FLAG_TEMP_1)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 49) {
+			clearflag (FLAG_TEMP_2)
 		}
 	}
 }

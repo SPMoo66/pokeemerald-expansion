@@ -431,3 +431,94 @@ text Exp1_Town06_JaksonText {
 			"No, I'm not trying to lower the\l"
 			"expectations for my own work later…")
 }
+
+
+#Town07
+text Exp1_Town07_SakuraText {
+	format( "You know, this place is pretty nice.\p"
+			"Maybe once the treasure hunt winds\n"
+			"down I'll spend some time relaxing here.\p"
+			"A nice heat lamp next to my setup,\n"
+			"find a swanky lounge chair in game…\p"
+			"Yeah, it'll be time to chill{EMOJI_TILDE}\p"
+			"…\p"
+			"Come on, you know I don't mean ‘chill’\n"
+			"literally!")
+}
+
+text Exp1_Town07_HarperText {
+	format( "Well, this is it, right?\p"
+			"The actual ‘final’ dungeon.\n"
+			"The design-intent final dungeon.\p"
+			"I did my best at making it workable\n"
+			"all the way through…\p"
+			"For once I've got a good feeling that I\n"
+			"did a half decent job at it.\p"
+			"Heh. I wonder if Jakson would've even\n"
+			"considered taking that route?\p"
+			"Fuck… {PAUSE 100}gonna start making me think\n"
+			"this was actually fun. Maybe it was…\l"
+			"…{PAUSE 60}a little bit.\p"
+			"I'm not sure what the final boss will be\n"
+			"like, but I sure hope it's an interesting\l"
+			"cap to our adventure.\p"
+			"Let's go, {PLAYER}!")
+}
+
+text Exp1_Town07_ReddText {
+	format( "Yo, {PLAYER}!\p"
+		"I'm glad I caught you.\p"
+		"This dungeon we're headed to is as\n"
+		"far west as you can go, right?\p"
+		"I know you've been there before, but I\n"
+		"haven't been further than the vault\l"
+		"dungeon so far.\p"
+		"Damn, it's like I've let you do it all\n"
+		"yourselves.\p"
+		"You know what…\p"
+		"Maybe I'll set out to be the first to\n"
+		"map out these untamed seas?\p"
+		"We'll need to start a new “catch”\n"
+		"competition while we're at it.")
+}
+
+text Exp1_Town07_BaronText {
+	format( "Oh, hello, {PLAYER}.\p"
+			"Um, yes. I am out here trying to do a\n"
+			"little bit of training.\p"
+			"I know I'm always running behind you\n"
+			"all. With some more practice and some\l"
+			"training for my Pokémon, I'm hoping I'll\l"
+			"be able to keep up.\p"
+			"At least enough not to slow you all down.\p"
+			"At least that…")
+}
+
+text Exp1_Town07_JaksonText {
+	format( "Oh, hey, {PLAYER}.\p"
+			"I'm trying to think this through, how\n"
+			"everything could have gone wrong like\l"
+			"this.\p"
+			"…{PAUSE 60}I don't disagree with Harper's idea.\n"
+			"Actually, I think she's spot son. That's\l"
+			"what makes me wonder…\p"
+			"If a flag got tripped early on, how did\n"
+			"that happen?\p"
+			"I know Sakura had that wild energy at\n"
+			"the start, but even all the moving\l"
+			"around that she did on the boat\l"
+			"couldn't have done it.\p"
+			"The “flag” was WAY over in the\n"
+			"treasure room.\p"
+			"There's the debug menu… {PAUSE 100}Though no\n"
+			"one noticed it until much later.\p"
+			"Maybe a multiplayer incompatibility?\n"
+			"It'd still be strange to activate a flag\l"
+			"way over there…\p"
+			"Not like we had people running out\n"
+			"and about in the cave by that point.\p"
+			"I mean…\p"
+			"… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
+			"… {PAUSE 30}… {PAUSE 30}…\l"
+			"This is gonna give me a headache.")
+}

@@ -1,0 +1,100 @@
+const IG_BOSS = 3
+const IG_HARPER = 4
+const IG_JAKSON = 5
+const IG_REDD = 6
+const IG_BARON = 7
+const IG_SAKURA = 8
+
+script Expansion1_Rival_Scene10 {
+	msgbox ("Are you prepared to face off\n"
+			"against your final opponents?", MSGBOX_YESNO)
+	closemessage
+	if (var(VAR_RESULT) == YES) {
+		goto (Expansion1_Rival_Scene10b)
+	}
+	else {
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkDown)
+		waitmovement (0)
+	}
+}
+
+script Expansion1_Rival_Scene10b {
+	applymovement (IG_HARPER, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement (0)
+	speakername (CommonText_Harper)
+	msgbox ("{PLAYER}!\n"
+			"It looks like it worked in the end!\l"
+			"Let's take this on together.", MSGBOX_AUTOCLOSE)
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	switch (var(VAR_TEMP_0)) {
+		case 23:
+			applymovement (LOCALID_PLAYER, Common_Movement_WalkRight2)
+		case 24:
+			applymovement (LOCALID_PLAYER, Common_Movement_WalkRight)
+		case 26:
+			applymovement (LOCALID_PLAYER, Common_Movement_WalkLeft)
+		case 27:
+			applymovement (LOCALID_PLAYER, Common_Movement_WalkLeft2)
+		case 28:
+			applymovement (LOCALID_PLAYER, Common_Movement_WalkLeft3)
+		case 29:
+			applymovement (LOCALID_PLAYER, Common_Movement_WalkLeft4)
+	}
+	waitmovement (0)
+	applymovement (IG_HARPER, Common_Movement_WalkInPlaceFasterUp)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkUp2)
+	waitmovement (0)
+	speakername (CommonText_Jakson)
+	msgbox ("Everyone, get ready! This'll be custom,\n"
+			"so there's no telling how it will go!")
+	speakername (CommonText_Redd)
+	msgbox ("Hah… with how everything else has\n"
+			"gone? Custom mechanics sound like a\l"
+			"perfectly chaotic climax.", MSGBOX_AUTOCLOSE)
+	applymovement (IG_BARON, Common_Movement_WalkInPlaceFasterLeft)
+	waitmovement (0)
+	call (GetBaronsName)
+	msgbox ("What?! What do you mean ‘no telling’?!")
+	speakername (CommonText_Sakura)
+	msgbox ("Baron, we can take it! Back to back.\n"
+			"Allies that fight until the final\l"
+			"breath!", MSGBOX_AUTOCLOSE)
+	applymovement (IG_BARON, Common_Movement_WalkInPlaceFasterUp)
+	waitmovement (0)
+
+
+
+	call (GetBaronsName)
+	msgbox ("It-It looks almost dead…?\n"
+			"Did we beat it?")
+	speakername (CommonText_Harper)
+	msgbox ("Tsk. This is when they're at their\n"
+			"most dangerous.\p"
+			"{EMOJI_BIGWHEEL}Clenches fist{EMOJI_BIGWHEEL}\n"
+			"Down with you!", MSGBOX_AUTOCLOSE)
+
+
+
+	speakername (CommonText_Redd)
+	msgbox ("Again? Jeez! This guy won't give up!")
+	speakername (CommonText_Sakura)
+	msgbox ("HAHAHA!\n"
+			"Live up to your name, “Redd”!\l"
+			"Let us BATHE IN THE BLOOD OF OUR\l"
+			"ENEMIES!!!")
+	speakername (CommonText_Redd)
+	msgbox ("That's not-…! F-FINE!\n"
+			"I can go another round!")
+	speakername (CommonText_Jakson)
+	msgbox ("Everything comes in threes.\n"
+			"This should be the last phase!")
+	speakername (CommonText_Harper)
+	msgbox ("One more time!")
+
+
+
+	speakername (CommonText_Redd)
+	msgbox ("Is that…?!")
+	call (GetBaronsName)
+	msgbox ("Did it… Did it actually…?")
+}

@@ -215,8 +215,8 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	setvar VAR_EMERALBODY_RIVAL_STATE, 45
-	warp MAP_ILLUSORY_GROTTO_B4F_2R, 1
+	setvar VAR_EMERALBODY_RIVAL_STATE, 50
+	warp MAP_ILLUSORY_GROTTO_B4F_1R, 21, 15
 	waitstate
 	release
 	end

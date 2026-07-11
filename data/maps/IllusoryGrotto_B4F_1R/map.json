@@ -39,6 +39,90 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "IllusoryGrotto_B4F_1R_Rock",
       "flag": "FLAG_EXP_1_ILLUSORY_GROTTO_B4F_1R_ROCK"
+    },
+    {
+      "local_id": "IG_BOSS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GYARADOS)",
+      "x": 26,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "local_id": "IG_HARPER",
+      "graphics_id": "OBJ_EVENT_GFX_HARPER",
+      "x": 26,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "local_id": "IG_JAKSON",
+      "graphics_id": "OBJ_EVENT_GFX_JAKSON",
+      "x": 24,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "local_id": "IG_REDD",
+      "graphics_id": "OBJ_EVENT_GFX_REDD",
+      "x": 23,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "local_id": "IG_BARON",
+      "graphics_id": "OBJ_EVENT_GFX_BARON",
+      "x": 28,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "local_id": "IG_SAKURA",
+      "graphics_id": "OBJ_EVENT_GFX_SAKURA",
+      "x": 27,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_2"
     }
   ],
   "warp_events": [
@@ -68,6 +152,69 @@
       "var": "VAR_TEMP_3",
       "var_value": "0",
       "script": "IllusoryGrotto_B4F_1R_Monster"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "50",
+      "script": "Expansion1_Rival_Scene10"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "50",
+      "script": "Expansion1_Rival_Scene10"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "50",
+      "script": "Expansion1_Rival_Scene10"
+    },
+    {
+      "type": "trigger",
+      "x": 26,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "50",
+      "script": "Expansion1_Rival_Scene10"
+    },
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "50",
+      "script": "Expansion1_Rival_Scene10"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "50",
+      "script": "Expansion1_Rival_Scene10"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "50",
+      "script": "Expansion1_Rival_Scene10"
     }
   ],
   "bg_events": [

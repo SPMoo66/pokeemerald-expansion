@@ -8,11 +8,17 @@ mapscripts IllusoryGrotto_B4F_1R_MapScripts {
 		}
 	}
 	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_1)
+		setflag (FLAG_TEMP_2)
 		if (flag(FLAG_EXP_1_ILLUSORY_GROTTO_B4F_1R_ROCK)) {
 			setvar (VAR_TEMP_3, 1)
 		}
 		if (var(VAR_EMERALBODY_RIVAL_STATE) == 20) {
 			setflashlevel (8)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 50) {
+			clearflag (FLAG_TEMP_1)
+			clearflag (FLAG_TEMP_2)
 		}
 		setrespawn (HEAL_LOCATION_ILLUSORY_GROTTO_LOWER)
 	}

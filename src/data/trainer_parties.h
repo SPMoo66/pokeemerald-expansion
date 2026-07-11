@@ -21202,6 +21202,57 @@ static const struct TrainerMon sParty_WildPokemonBV2[] = {
     }
 };
 
+static const struct TrainerMon sParty_WildPokemonIG5[] = {
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 75,
+    .species = SPECIES_AMPHAROS_EXP_1,
+    .ability = ABILITY_STAMINA,
+    .heldItem = ITEM_SHUCA_BERRY,
+    .moves = {MOVE_COTTON_GUARD, MOVE_BODY_PRESS, MOVE_STEALTH_ROCK, MOVE_ACCELEROCK}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 75,
+    .species = SPECIES_STARAPTOR,
+    .ability = ABILITY_INTIMIDATE,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_BRAVE_BIRD, MOVE_ROOST, MOVE_U_TURN, MOVE_BLAZE_KICK}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 75,
+    .species = SPECIES_LUXRAY_EMERIBIAN,
+    .ability = ABILITY_PRANKSTER,
+    .heldItem = ITEM_KEE_BERRY,
+    .moves = {MOVE_LUNAR_BLESSING, MOVE_ACUPRESSURE, MOVE_COSMIC_POWER, MOVE_STORED_POWER}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 75,
+    .species = SPECIES_YANMEGA,
+    .ability = ABILITY_FRISK,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_QUIVER_DANCE, MOVE_BUG_BUZZ, MOVE_TAILWIND, MOVE_AIR_SLASH}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 75,
+    .species = SPECIES_CERULEDGE,
+    .ability = ABILITY_WEAK_ARMOR,
+    .heldItem = ITEM_GHOST_GEM,
+    .moves = {MOVE_BITTER_BLADE, MOVE_SHADOW_SNEAK, MOVE_POLTERGEIST, MOVE_SWORDS_DANCE}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 75,
+    .species = SPECIES_REGIAGUA,
+    .ability = ABILITY_WATER_BUBBLE,
+    .heldItem = ITEM_WACAN_BERRY,
+    .moves = {MOVE_ORIGIN_PULSE, MOVE_WOOD_HAMMER, MOVE_HAMMER_ARM, MOVE_EARTH_POWER}
+    }
+};
+
 /*
 
 static const struct TrainerMon sParty_[] = {

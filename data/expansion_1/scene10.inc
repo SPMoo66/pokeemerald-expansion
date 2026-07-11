@@ -92,37 +92,39 @@ Expansion1_Rival_Scene10b_1:
 	speakername CommonText_Harper
 # 75 "data/expansion_1/scene10.pory"
 	msgbox Expansion1_Rival_Scene10b_Text_6, MSGBOX_AUTOCLOSE
-# 82 "data/expansion_1/scene10.pory"
-	speakername CommonText_Redd
+# 79 "data/expansion_1/scene10.pory"
+	trainerbattle_no_intro TRAINER_WILD_POKEMON_IG_5, Exp1_WildPokemonTrainerText_Defeat
 # 83 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_7
+	speakername CommonText_Redd
 # 84 "data/expansion_1/scene10.pory"
-	speakername CommonText_Sakura
+	msgbox Expansion1_Rival_Scene10b_Text_7
 # 85 "data/expansion_1/scene10.pory"
+	speakername CommonText_Sakura
+# 86 "data/expansion_1/scene10.pory"
 	msgbox Expansion1_Rival_Scene10b_Text_8
-# 89 "data/expansion_1/scene10.pory"
-	speakername CommonText_Redd
 # 90 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_9
-# 92 "data/expansion_1/scene10.pory"
-	speakername CommonText_Jakson
-# 93 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_10
-# 95 "data/expansion_1/scene10.pory"
-	speakername CommonText_Harper
-# 96 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_11
-# 97 "data/expansion_1/scene10.pory"
-	playmoncry SPECIES_GYARADOS, CRY_MODE_ENCOUNTER
-# 98 "data/expansion_1/scene10.pory"
-	waitmoncry
-# 102 "data/expansion_1/scene10.pory"
 	speakername CommonText_Redd
+# 91 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10b_Text_9
+# 93 "data/expansion_1/scene10.pory"
+	speakername CommonText_Jakson
+# 94 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10b_Text_10
+# 96 "data/expansion_1/scene10.pory"
+	speakername CommonText_Harper
+# 97 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10b_Text_11
+# 98 "data/expansion_1/scene10.pory"
+	playmoncry SPECIES_GYARADOS, CRY_MODE_ENCOUNTER
+# 99 "data/expansion_1/scene10.pory"
+	waitmoncry
 # 103 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_12
+	speakername CommonText_Redd
 # 104 "data/expansion_1/scene10.pory"
-	call GetBaronsName
+	msgbox Expansion1_Rival_Scene10b_Text_12
 # 105 "data/expansion_1/scene10.pory"
+	call GetBaronsName
+# 106 "data/expansion_1/scene10.pory"
 	msgbox Expansion1_Rival_Scene10b_Text_13
 	return
 
@@ -202,34 +204,34 @@ Expansion1_Rival_Scene10b_Text_6:
 	.string "Down with you!$"
 
 Expansion1_Rival_Scene10b_Text_7:
-# 83 "data/expansion_1/scene10.pory"
+# 84 "data/expansion_1/scene10.pory"
 	.string "Again? Jeez! This guy won't give up!$"
 
 Expansion1_Rival_Scene10b_Text_8:
-# 85 "data/expansion_1/scene10.pory"
+# 86 "data/expansion_1/scene10.pory"
 	.string "HAHAHA!\n"
 	.string "Live up to your name, {PAUSE 60}“Redd”!\l"
 	.string "Let us BATHE IN THE BLOOD OF OUR\l"
 	.string "ENEMIES!!!$"
 
 Expansion1_Rival_Scene10b_Text_9:
-# 90 "data/expansion_1/scene10.pory"
+# 91 "data/expansion_1/scene10.pory"
 	.string "That's not-…{PAUSE 100}! F-{PAUSE 30}FINE!\n"
 	.string "I can go another round!$"
 
 Expansion1_Rival_Scene10b_Text_10:
-# 93 "data/expansion_1/scene10.pory"
+# 94 "data/expansion_1/scene10.pory"
 	.string "Everything comes in threes.\n"
 	.string "This should be the last phase!$"
 
 Expansion1_Rival_Scene10b_Text_11:
-# 96 "data/expansion_1/scene10.pory"
+# 97 "data/expansion_1/scene10.pory"
 	.string "One more time!$"
 
 Expansion1_Rival_Scene10b_Text_12:
-# 103 "data/expansion_1/scene10.pory"
+# 104 "data/expansion_1/scene10.pory"
 	.string "Is that…{PAUSE 100}?!$"
 
 Expansion1_Rival_Scene10b_Text_13:
-# 105 "data/expansion_1/scene10.pory"
+# 106 "data/expansion_1/scene10.pory"
 	.string "Did it… {PAUSE 100}Did it actually…{PAUSE 100}?$"

@@ -76,6 +76,7 @@ script Expansion1_Rival_Scene10b {
 			"most dangerous.\p"
 			"{EMOJI_BIGWHEEL}Clenches fist{EMOJI_BIGWHEEL}\n"
 			"Down with you!", MSGBOX_AUTOCLOSE)
+	trainerbattle_no_intro (TRAINER_WILD_POKEMON_IG_5, Exp1_WildPokemonTrainerText_Defeat)
 
 
 

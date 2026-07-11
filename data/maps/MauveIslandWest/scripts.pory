@@ -13,6 +13,9 @@ mapscripts MauveIslandWest_MapScripts {
 		if (var(VAR_EMERALBODY_RIVAL_STATE) == 40) {
 			clearflag (FLAG_TEMP_2)
 		}
+		if (flag(FLAG_SCENE09_TRANSITION)) {
+			savebgm (MUS_HG_VIRIDIAN_FOREST)
+		}
 	}
 }
 

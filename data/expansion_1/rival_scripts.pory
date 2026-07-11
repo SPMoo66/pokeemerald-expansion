@@ -29,7 +29,16 @@
 	# 42: Set after Scene08                                                       Town05
 	# 43: Set after clearing Bygone Vault 1                                       Town06
 	# 44: Set after clearing Bygone Vault 2
-	# 45: tbd
+	# 45: Set after Scene09                                                       Town07
+	# 46: Set after reentering Illusory Grotto
+	# 47: Set after Sakura Town08
+	# 48: Set after Redd Town08
+	# 49: Set after Baron Town08
+	# 50: Set after Jakson Town08
+	# 51: Set after Harper Town08
+	# 52: Set after Scene10                                                       Town09
+	# 53: tbd
+	
 
 script EventScript_JaksonExpansion1Call {
 	lockall

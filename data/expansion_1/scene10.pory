@@ -44,6 +44,8 @@ script Expansion1_Rival_Scene10b {
 	applymovement (IG_HARPER, Common_Movement_WalkInPlaceFasterUp)
 	applymovement (LOCALID_PLAYER, Common_Movement_WalkUp2)
 	waitmovement (0)
+	special (SpawnCameraObject)
+	applymovement (LOCALID_CAMERA, Common_Movement_WalkDiagNW)
 	speakername (CommonText_Jakson)
 	msgbox ("Everyone, get ready! This'll be custom,\n"
 			"so there's no telling how it will go!")
@@ -61,6 +63,8 @@ script Expansion1_Rival_Scene10b {
 			"breath!", MSGBOX_AUTOCLOSE)
 	applymovement (IG_BARON, Common_Movement_WalkInPlaceFasterUp)
 	waitmovement (0)
+	playmoncry (SPECIES_GYARADOS, CRY_MODE_ENCOUNTER)
+	waitmoncry
 
 
 
@@ -90,6 +94,8 @@ script Expansion1_Rival_Scene10b {
 			"This should be the last phase!")
 	speakername (CommonText_Harper)
 	msgbox ("One more time!")
+	playmoncry (SPECIES_GYARADOS, CRY_MODE_ENCOUNTER)
+	waitmoncry
 
 
 

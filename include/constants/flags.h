@@ -1566,7 +1566,7 @@
 
 #define FLAG_CHALLENGING_TRAINER                    (SYSTEM_FLAGS + 0x88) // Set for challenging trainers so that level sync scales *to max party level*, instead of two levels lower like standard trainers
 #define FLAG_PREVENT_OVERWORLD_SPEEDUP              (SYSTEM_FLAGS + 0x89) // Was unused
-#define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
+#define FLAG_WILD_OPPONENT                          (SYSTEM_FLAGS + 0x8A) // Set when the opponent trainer is a wild Pokemon. For some reason this can't be a special flag. They just can't be read while in battle.
 #define FLAG_NEW_GAME_PLUS                          (SYSTEM_FLAGS + 0x8B) // Set upon beating the Champion for the first time, carries with new games
 #define FLAG_CANT_USE_FLY                           (SYSTEM_FLAGS + 0x8C) // Was unused, set to disable fly
 #define FLAG_SUPERBOSS_TRAINER                      (SYSTEM_FLAGS + 0x8D) // Set for superboss-type trainers so that level sync scales them *three levels higher than max party level*, intead of two levels lower like standard trainers
@@ -1717,7 +1717,7 @@
 #define FLAG_PLAY_AS_FIRST_MON_IN_PARTY         (SPECIAL_FLAGS_START + 0xC)  // Set this flag to have the player sprite be changed to the first pokemon in party
 #define FLAG_SEMI_PERM_HIDE_FOLLOWER            (SPECIAL_FLAGS_START + 0xD)  // Set this flag to hide all following Pokémon until the game is reset
 #define FLAG_SYS_SET_BATTLE_BGM                 (SPECIAL_FLAGS_START + 0xF)  // Set this flag when overriding battle BGM, store BGM in VAR_BATTLE_BGM
-#define FLAG_WILD_OPPONENT                      (SPECIAL_FLAGS_START + 0xF)  // Set when the opponent trainer is a wild Pokemon
+#define FLAG_SPECIAL_FLAG_UNUSED_0x400F         (SPECIAL_FLAGS_START + 0xF)  // Unused Flag
 #define FLAG_SEMI_TEMP_1                        (SPECIAL_FLAGS_START + 0x10) // See 'Special Flag aliases' for uses
 #define FLAG_SEMI_TEMP_2                        (SPECIAL_FLAGS_START + 0x11) //
 #define FLAG_SEMI_TEMP_3                        (SPECIAL_FLAGS_START + 0x12) //

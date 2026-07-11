@@ -225,3 +225,29 @@ script Jakson_Exp1_Town06 {
 	speakername (CommonText_Jakson)
 	msgbox(Exp1_Town06_JaksonText, MSGBOX_NPC)
 }
+
+#Town07
+script Sakura_Exp1_Town07 {
+	speakername (CommonText_Sakura)
+	msgbox(Exp1_Town07_SakuraText, MSGBOX_NPC)
+}
+
+script Harper_Exp1_Town07 {
+	speakername (CommonText_Harper)
+	msgbox(Exp1_Town07_HarperText, MSGBOX_NPC)
+}
+
+script Redd_Exp1_Town07 {
+	speakername (CommonText_Redd)
+	msgbox(Exp1_Town07_ReddText, MSGBOX_NPC)
+}
+
+script Baron_Exp1_Town07 {
+	call (GetBaronsName)
+	msgbox(Exp1_Town07_BaronText, MSGBOX_NPC)
+}
+
+script Jakson_Exp1_Town07 {
+	speakername (CommonText_Jakson)
+	msgbox(Exp1_Town07_JaksonText, MSGBOX_NPC)
+}

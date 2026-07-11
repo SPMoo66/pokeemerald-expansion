@@ -1,7 +1,11 @@
+const MAUVEISLANDWEST_REDD = 4
+const MAUVEISLANDWEST_BARON = 6
+
 mapscripts MauveIslandWest_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag (FLAG_TEMP_1)
 		setflag (FLAG_TEMP_2)
+		setflag (FLAG_TEMP_3)
 		if (var(VAR_EMERALBODY_RIVAL_STATE) < 23) {
 			setflag (FLAG_TEMP_6) // to hide the trainers
 		}
@@ -16,12 +20,24 @@ mapscripts MauveIslandWest_MapScripts {
 		if (flag(FLAG_SCENE09_TRANSITION)) {
 			savebgm (MUS_HG_VIRIDIAN_FOREST)
 		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 45) {
+			clearflag (FLAG_TEMP_1)
+			clearflag (FLAG_TEMP_3)
+			setobjectxyperm (MAUVEISLANDWEST_REDD, 17, 10)
+			setobjectmovementtype (MAUVEISLANDWEST_REDD, MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT)
+			setobjectxyperm (MAUVEISLANDWEST_BARON, 16, 21)
+			setobjectmovementtype (MAUVEISLANDWEST_BARON, MOVEMENT_TYPE_WANDER_UP_AND_DOWN)
+			addobject (MAUVEISLANDWEST_BARON)
+		}
 	}
 }
 
 script MauveIslandWest_Redd {
 	if (var(VAR_EMERALBODY_RIVAL_STATE) < 31) {
 		goto (Redd_Exp1_Town02)
+	}
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 45) {
+		goto (Redd_Exp1_Town07)
 	}
 }
 

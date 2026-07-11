@@ -1,4 +1,5 @@
 const FAROFFSEAWEST_SAKURA = 9
+const FAROFFSEAWEST_JAKSON = 12
 
 mapscripts FarOffSeaWest_MapScripts {
 	MAP_SCRIPT_ON_LOAD {
@@ -29,6 +30,7 @@ mapscripts FarOffSeaWest_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag (FLAG_TEMP_1)
 		setflag (FLAG_TEMP_2)
+		setflag (FLAG_TEMP_3)
 		call (GetPlayerGfxNormal)
 		if (var(VAR_EMERALBODY_RIVAL_STATE) < 23) {
 			setflag (FLAG_TEMP_6) // to hide the trainers
@@ -47,6 +49,11 @@ mapscripts FarOffSeaWest_MapScripts {
 			setobjectxyperm (FAROFFSEAWEST_SAKURA, 55, 3)
 			setobjectmovementtype (FAROFFSEAWEST_SAKURA, MOVEMENT_TYPE_FACE_DOWN)
 			savebgm (MUS_DP_AMITY_SQUARE)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 45) { // Town07
+			clearflag (FLAG_TEMP_3)
+			setobjectxyperm (FAROFFSEAWEST_JAKSON, 57, 45)
+			setobjectmovementtype (FAROFFSEAWEST_JAKSON, MOVEMENT_TYPE_LOOK_AROUND)
 		}
 	}
 }

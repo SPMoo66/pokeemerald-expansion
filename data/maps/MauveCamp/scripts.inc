@@ -3,7 +3,7 @@ MauveCamp_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, MauveCamp_MapScripts_MAP_SCRIPT_ON_LOAD
 # 15 "data/maps/MauveCamp/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION
-# 59 "data/maps/MauveCamp/scripts.pory"
+# 64 "data/maps/MauveCamp/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, MauveCamp_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
@@ -52,7 +52,11 @@ MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_15:
 MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_20:
 # 49 "data/maps/MauveCamp/scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 40
-	goto_if_ge MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_25
+	goto_if_eq MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_26
+MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_25:
+# 58 "data/maps/MauveCamp/scripts.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 45
+	goto_if_eq MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_28
 	return
 
 MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
@@ -115,7 +119,7 @@ MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_22:
 	goto_if_le MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_21
 	goto MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_20
 
-MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_25:
+MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_26:
 # 51 "data/maps/MauveCamp/scripts.pory"
 	setobjectxyperm 11, 23, 17
 # 52 "data/maps/MauveCamp/scripts.pory"
@@ -128,302 +132,318 @@ MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_25:
 	setobjectxyperm 7, 26, 7
 # 56 "data/maps/MauveCamp/scripts.pory"
 	setobjectmovementtype 7, MOVEMENT_TYPE_WANDER_AROUND
+	goto MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_25
+
+MauveCamp_MapScripts_MAP_SCRIPT_ON_TRANSITION_28:
+# 60 "data/maps/MauveCamp/scripts.pory"
+	setobjectxyperm 8, 26, 13
+# 61 "data/maps/MauveCamp/scripts.pory"
+	setobjectmovementtype 8, MOVEMENT_TYPE_WANDER_AROUND
 	return
 
 MauveCamp_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-# 60 "data/maps/MauveCamp/scripts.pory"
+# 65 "data/maps/MauveCamp/scripts.pory"
 	map_script_2 VAR_TEMP_0, 1, MauveCamp_EventScript_FromHeadbuttTree
-# 61 "data/maps/MauveCamp/scripts.pory"
+# 66 "data/maps/MauveCamp/scripts.pory"
 	map_script_2 VAR_EMERALBODY_RIVAL_STATE, 22, Expansion1_Rival_Scene02_Setup
-# 62 "data/maps/MauveCamp/scripts.pory"
+# 67 "data/maps/MauveCamp/scripts.pory"
 	map_script_2 VAR_EMERALBODY_RIVAL_STATE, 31, Expansion1_Rival_Scene05_Setup
 	.2byte 0
 
 
 MauveCamp_RemoveCampTiles::
-# 67 "data/maps/MauveCamp/scripts.pory"
-	setmetatileinrange 21, 8, 29, 18, 0x000
-# 68 "data/maps/MauveCamp/scripts.pory"
-	setmetatileinrange 15, 14, 17, 16, 0x000
-# 69 "data/maps/MauveCamp/scripts.pory"
-	setmetatileinrange 14, 13, 14, 14, 0x000
-# 70 "data/maps/MauveCamp/scripts.pory"
-	setmetatileinrange 30, 17, 30, 18, 0x000
-# 71 "data/maps/MauveCamp/scripts.pory"
-	setmetatileinrange 29, 20, 29, 21, 0x000
 # 72 "data/maps/MauveCamp/scripts.pory"
-	setmetatileinrange 32, 10, 32, 12, 0x000
+	setmetatileinrange 21, 8, 29, 18, 0x000
 # 73 "data/maps/MauveCamp/scripts.pory"
-	setmetatile 28, 7, 0x000, FALSE
+	setmetatileinrange 15, 14, 17, 16, 0x000
 # 74 "data/maps/MauveCamp/scripts.pory"
+	setmetatileinrange 14, 13, 14, 14, 0x000
+# 75 "data/maps/MauveCamp/scripts.pory"
+	setmetatileinrange 30, 17, 30, 18, 0x000
+# 76 "data/maps/MauveCamp/scripts.pory"
+	setmetatileinrange 29, 20, 29, 21, 0x000
+# 77 "data/maps/MauveCamp/scripts.pory"
+	setmetatileinrange 32, 10, 32, 12, 0x000
+# 78 "data/maps/MauveCamp/scripts.pory"
+	setmetatile 28, 7, 0x000, FALSE
+# 79 "data/maps/MauveCamp/scripts.pory"
 	setmetatile 30, 10, 0x000, FALSE
 	return
 
 
 MauveCamp_Jakson::
-# 78 "data/maps/MauveCamp/scripts.pory"
+# 83 "data/maps/MauveCamp/scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 33
 	goto_if_ge MauveCamp_Jakson_2
 MauveCamp_Jakson_1:
-# 81 "data/maps/MauveCamp/scripts.pory"
+# 86 "data/maps/MauveCamp/scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 24
 	goto_if_ge MauveCamp_Jakson_4
 	return
 
 MauveCamp_Jakson_2:
-# 79 "data/maps/MauveCamp/scripts.pory"
+# 84 "data/maps/MauveCamp/scripts.pory"
 	goto Jakson_Exp1_Town03
 	goto MauveCamp_Jakson_1
 
 MauveCamp_Jakson_4:
-# 82 "data/maps/MauveCamp/scripts.pory"
+# 87 "data/maps/MauveCamp/scripts.pory"
 	goto Jakson_Exp1_Town02
 	return
 
 
 MauveCamp_Baron::
-# 87 "data/maps/MauveCamp/scripts.pory"
+# 92 "data/maps/MauveCamp/scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 40
 	goto_if_eq MauveCamp_Baron_2
 MauveCamp_Baron_1:
-# 90 "data/maps/MauveCamp/scripts.pory"
+# 95 "data/maps/MauveCamp/scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 33
 	goto_if_ge MauveCamp_Baron_4
 	return
 
 MauveCamp_Baron_2:
-# 88 "data/maps/MauveCamp/scripts.pory"
+# 93 "data/maps/MauveCamp/scripts.pory"
 	goto Baron_Exp1_Town04
 	goto MauveCamp_Baron_1
 
 MauveCamp_Baron_4:
-# 91 "data/maps/MauveCamp/scripts.pory"
+# 96 "data/maps/MauveCamp/scripts.pory"
 	goto Baron_Exp1_Town03
 	return
 
 
 MauveCamp_Sakura::
-# 96 "data/maps/MauveCamp/scripts.pory"
+# 101 "data/maps/MauveCamp/scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 33
-	goto_if_ge MauveCamp_Sakura_1
-	return
-
+	goto_if_ge MauveCamp_Sakura_2
 MauveCamp_Sakura_1:
-# 97 "data/maps/MauveCamp/scripts.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 38
-	goto_if_le MauveCamp_Sakura_3
+# 106 "data/maps/MauveCamp/scripts.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 45
+	goto_if_eq MauveCamp_Sakura_4
 	return
 
-MauveCamp_Sakura_3:
-# 98 "data/maps/MauveCamp/scripts.pory"
-	goto Sakura_Exp1_Town03
+MauveCamp_Sakura_2:
+# 102 "data/maps/MauveCamp/scripts.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 38
+	goto_if_le MauveCamp_Sakura_6
+	goto MauveCamp_Sakura_1
+
+MauveCamp_Sakura_4:
+# 107 "data/maps/MauveCamp/scripts.pory"
+	goto Sakura_Exp1_Town07
 	return
+
+MauveCamp_Sakura_6:
+# 103 "data/maps/MauveCamp/scripts.pory"
+	goto Sakura_Exp1_Town03
+	goto MauveCamp_Sakura_1
 
 
 MauveCamp_EventScript_FromHeadbuttTree::
-# 104 "data/maps/MauveCamp/scripts.pory"
-	setvar VAR_TEMP_0, 0
-# 105 "data/maps/MauveCamp/scripts.pory"
-	delay 20
-# 106 "data/maps/MauveCamp/scripts.pory"
-	setobjectxyperm 3, 23, 10
-# 107 "data/maps/MauveCamp/scripts.pory"
-	clearflag FLAG_TEMP_2
-# 108 "data/maps/MauveCamp/scripts.pory"
-	addobject 3
-# 109 "data/maps/MauveCamp/scripts.pory"
-	playse SE_EXIT
-# 110 "data/maps/MauveCamp/scripts.pory"
-	waitse
-# 111 "data/maps/MauveCamp/scripts.pory"
-	applymovement 3, Common_Movement_WalkDown
 # 112 "data/maps/MauveCamp/scripts.pory"
-	waitmovement 0
+	setvar VAR_TEMP_0, 0
 # 113 "data/maps/MauveCamp/scripts.pory"
-	applymovement 3, Common_Movement_WalkRight
+	delay 20
 # 114 "data/maps/MauveCamp/scripts.pory"
-	waitmovement 0
+	setobjectxyperm 3, 23, 10
 # 115 "data/maps/MauveCamp/scripts.pory"
-	applymovement 3, Common_Movement_WalkInPlaceLeft
+	clearflag FLAG_TEMP_2
 # 116 "data/maps/MauveCamp/scripts.pory"
-	waitmovement 0
+	addobject 3
 # 117 "data/maps/MauveCamp/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_SetVisible
-# 118 "data/maps/MauveCamp/scripts.pory"
-	waitmovement 0
-# 119 "data/maps/MauveCamp/scripts.pory"
 	playse SE_EXIT
-# 120 "data/maps/MauveCamp/scripts.pory"
+# 118 "data/maps/MauveCamp/scripts.pory"
 	waitse
+# 119 "data/maps/MauveCamp/scripts.pory"
+	applymovement 3, Common_Movement_WalkDown
+# 120 "data/maps/MauveCamp/scripts.pory"
+	waitmovement 0
 # 121 "data/maps/MauveCamp/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkDown2
+	applymovement 3, Common_Movement_WalkRight
 # 122 "data/maps/MauveCamp/scripts.pory"
 	waitmovement 0
 # 123 "data/maps/MauveCamp/scripts.pory"
-	applymovement 3, Common_Movement_WalkLeft
+	applymovement 3, Common_Movement_WalkInPlaceLeft
 # 124 "data/maps/MauveCamp/scripts.pory"
 	waitmovement 0
 # 125 "data/maps/MauveCamp/scripts.pory"
-	applymovement 3, Common_Movement_WalkInPlaceDown
+	applymovement LOCALID_PLAYER, Common_Movement_SetVisible
 # 126 "data/maps/MauveCamp/scripts.pory"
 	waitmovement 0
 # 127 "data/maps/MauveCamp/scripts.pory"
-	delay 20
+	playse SE_EXIT
 # 128 "data/maps/MauveCamp/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceUp
+	waitse
 # 129 "data/maps/MauveCamp/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDown2
 # 130 "data/maps/MauveCamp/scripts.pory"
-	checkplayergender
+	waitmovement 0
 # 131 "data/maps/MauveCamp/scripts.pory"
+	applymovement 3, Common_Movement_WalkLeft
+# 132 "data/maps/MauveCamp/scripts.pory"
+	waitmovement 0
+# 133 "data/maps/MauveCamp/scripts.pory"
+	applymovement 3, Common_Movement_WalkInPlaceDown
+# 134 "data/maps/MauveCamp/scripts.pory"
+	waitmovement 0
+# 135 "data/maps/MauveCamp/scripts.pory"
+	delay 20
+# 136 "data/maps/MauveCamp/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceUp
+# 137 "data/maps/MauveCamp/scripts.pory"
+	waitmovement 0
+# 138 "data/maps/MauveCamp/scripts.pory"
+	checkplayergender
+# 139 "data/maps/MauveCamp/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MauveCamp_EventScript_FromHeadbuttTree_2
-# 135 "data/maps/MauveCamp/scripts.pory"
+# 143 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_EventScript_FromHeadbuttTree_Text_1
 MauveCamp_EventScript_FromHeadbuttTree_1:
-# 137 "data/maps/MauveCamp/scripts.pory"
+# 145 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_EventScript_FromHeadbuttTree_Text_2
-# 138 "data/maps/MauveCamp/scripts.pory"
+# 146 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 MauveCamp_EventScript_FromHeadbuttTree_2:
-# 132 "data/maps/MauveCamp/scripts.pory"
+# 140 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_EventScript_FromHeadbuttTree_Text_0
 	goto MauveCamp_EventScript_FromHeadbuttTree_1
 
 
 MauveCamp_Sailor1::
-# 142 "data/maps/MauveCamp/scripts.pory"
+# 150 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Sailor1_Text_0, MSGBOX_NPC
-# 147 "data/maps/MauveCamp/scripts.pory"
+# 155 "data/maps/MauveCamp/scripts.pory"
 	turnobject 2, DIR_WEST
 	return
 
 
 MauveCamp_Sailor2::
-# 151 "data/maps/MauveCamp/scripts.pory"
+# 159 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Sailor2_Text_0, MSGBOX_NPC
 	return
 
 
 MauveCamp_Sailor3::
-# 156 "data/maps/MauveCamp/scripts.pory"
+# 164 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Sailor3_Text_0, MSGBOX_NPC
 	return
 
 
 MauveCamp_Sailor4::
-# 163 "data/maps/MauveCamp/scripts.pory"
+# 171 "data/maps/MauveCamp/scripts.pory"
 	faceplayer
-# 164 "data/maps/MauveCamp/scripts.pory"
+# 172 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Sailor4_Text_0, MSGBOX_YESNO
-# 166 "data/maps/MauveCamp/scripts.pory"
+# 174 "data/maps/MauveCamp/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne MauveCamp_Sailor4_2
 MauveCamp_Sailor4_1:
-# 170 "data/maps/MauveCamp/scripts.pory"
+# 178 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Sailor4_Text_1
-# 171 "data/maps/MauveCamp/scripts.pory"
+# 179 "data/maps/MauveCamp/scripts.pory"
 	closemessage
-# 172 "data/maps/MauveCamp/scripts.pory"
+# 180 "data/maps/MauveCamp/scripts.pory"
 	release
-# 173 "data/maps/MauveCamp/scripts.pory"
+# 181 "data/maps/MauveCamp/scripts.pory"
 	releaseall
 	return
 
 MauveCamp_Sailor4_2:
-# 167 "data/maps/MauveCamp/scripts.pory"
+# 175 "data/maps/MauveCamp/scripts.pory"
 	closemessage
-# 168 "data/maps/MauveCamp/scripts.pory"
+# 176 "data/maps/MauveCamp/scripts.pory"
 	call Common_EventScript_OutOfCenterPartyHeal
 	goto MauveCamp_Sailor4_1
 
 
 MauveCamp_Ranger::
-# 177 "data/maps/MauveCamp/scripts.pory"
+# 185 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Ranger_Text_0, MSGBOX_NPC
 	return
 
 
 MauveCamp_Sign::
-# 185 "data/maps/MauveCamp/scripts.pory"
+# 193 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Sign_Text_0, MSGBOX_SIGN
 	return
 
 
 MauveCamp_SandCastle::
-# 189 "data/maps/MauveCamp/scripts.pory"
+# 197 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_SandCastle_Text_0
-# 190 "data/maps/MauveCamp/scripts.pory"
+# 198 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 
 MauveCamp_Pokeball::
-# 194 "data/maps/MauveCamp/scripts.pory"
+# 202 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Pokeball_Text_0
-# 195 "data/maps/MauveCamp/scripts.pory"
+# 203 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 
 MauveCamp_Boxes::
-# 199 "data/maps/MauveCamp/scripts.pory"
+# 207 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Boxes_Text_0
-# 200 "data/maps/MauveCamp/scripts.pory"
+# 208 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 
 MauveCamp_Rowboat::
-# 204 "data/maps/MauveCamp/scripts.pory"
+# 212 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Rowboat_Text_0, MSGBOX_YESNO
-# 206 "data/maps/MauveCamp/scripts.pory"
+# 214 "data/maps/MauveCamp/scripts.pory"
 	closemessage
-# 207 "data/maps/MauveCamp/scripts.pory"
+# 215 "data/maps/MauveCamp/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne MauveCamp_Rowboat_1
 	return
 
 MauveCamp_Rowboat_1:
-# 208 "data/maps/MauveCamp/scripts.pory"
+# 216 "data/maps/MauveCamp/scripts.pory"
 	setflag FLAG_REVERSE_SLATEPORT_BOAT_SCENE
-# 209 "data/maps/MauveCamp/scripts.pory"
+# 217 "data/maps/MauveCamp/scripts.pory"
 	goto SlateportRegionMap_BoatSceneInit
 	return
 
 
 MauveCamp_Pot::
-# 214 "data/maps/MauveCamp/scripts.pory"
+# 222 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Pot_Text_0
-# 217 "data/maps/MauveCamp/scripts.pory"
+# 225 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 
 MauveCamp_Shell::
-# 221 "data/maps/MauveCamp/scripts.pory"
+# 229 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Shell_Text_0
-# 224 "data/maps/MauveCamp/scripts.pory"
+# 232 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 
 MauveCamp_EventScript_FromHeadbuttTree_Text_0:
-# 132 "data/maps/MauveCamp/scripts.pory"
+# 140 "data/maps/MauveCamp/scripts.pory"
 	.string "Feeling better, lad?$"
 
 MauveCamp_EventScript_FromHeadbuttTree_Text_1:
-# 135 "data/maps/MauveCamp/scripts.pory"
+# 143 "data/maps/MauveCamp/scripts.pory"
 	.string "Feeling better, lass?$"
 
 MauveCamp_EventScript_FromHeadbuttTree_Text_2:
-# 137 "data/maps/MauveCamp/scripts.pory"
+# 145 "data/maps/MauveCamp/scripts.pory"
 	.string "If ye be feeling hungry, we have plenty\nof food at camp.\pThere's no need to bash down trees with\nyer head in hope of finding coconuts.\pIf ye keep knocking yerself out, we'll\nhave to start chargin' ye!$"
 
 MauveCamp_Sailor1_Text_0:
-# 142 "data/maps/MauveCamp/scripts.pory"
+# 150 "data/maps/MauveCamp/scripts.pory"
 	.string "Aye, trainer.\n"
 	.string "We're here on Mauve Island.\l"
 	.string "Be off on your treasure hunt.\l"
@@ -431,62 +451,62 @@ MauveCamp_Sailor1_Text_0:
 	.string "can all leave this blasted land.$"
 
 MauveCamp_Sailor2_Text_0:
-# 151 "data/maps/MauveCamp/scripts.pory"
+# 159 "data/maps/MauveCamp/scripts.pory"
 	.string "It seems like we have enough supplies\n"
 	.string "to last us for a long time.$"
 
 MauveCamp_Sailor3_Text_0:
-# 156 "data/maps/MauveCamp/scripts.pory"
+# 164 "data/maps/MauveCamp/scripts.pory"
 	.string "This island gives me the spooks.\p"
 	.string "No signs of civilization, yet there's a\n"
 	.string "treasure buried somewhere in these\l"
 	.string "lands?$"
 
 MauveCamp_Sailor4_Text_0:
-# 164 "data/maps/MauveCamp/scripts.pory"
+# 172 "data/maps/MauveCamp/scripts.pory"
 	.string "Ahoy, trainer!\n"
 	.string "Do ye require rest?$"
 
 MauveCamp_Sailor4_Text_1:
-# 170 "data/maps/MauveCamp/scripts.pory"
+# 178 "data/maps/MauveCamp/scripts.pory"
 	.string "Stay safe out in the wilds.$"
 
 MauveCamp_Ranger_Text_0:
-# 177 "data/maps/MauveCamp/scripts.pory"
+# 185 "data/maps/MauveCamp/scripts.pory"
 	.string "A couple of us rangers joined the\n"
 	.string "expedition to help set up camp.\p"
 	.string "My partner already left to scout\n"
 	.string "out the area on her own.$"
 
 MauveCamp_Sign_Text_0:
-# 185 "data/maps/MauveCamp/scripts.pory"
+# 193 "data/maps/MauveCamp/scripts.pory"
 	.string "Mauve Island Base Camp$"
 
 MauveCamp_SandCastle_Text_0:
-# 189 "data/maps/MauveCamp/scripts.pory"
+# 197 "data/maps/MauveCamp/scripts.pory"
 	.string "Did Sakura make this sand castle?$"
 
 MauveCamp_Pokeball_Text_0:
-# 194 "data/maps/MauveCamp/scripts.pory"
+# 202 "data/maps/MauveCamp/scripts.pory"
 	.string "This must be a Pokémon owned by\none of the sailors.$"
 
 MauveCamp_Boxes_Text_0:
-# 199 "data/maps/MauveCamp/scripts.pory"
+# 207 "data/maps/MauveCamp/scripts.pory"
 	.string "The boxes are loaded with supplies.$"
 
 MauveCamp_Rowboat_Text_0:
-# 204 "data/maps/MauveCamp/scripts.pory"
+# 212 "data/maps/MauveCamp/scripts.pory"
 	.string "It's a rowboat!\n"
 	.string "Use it to return to Hoenn?$"
 
 MauveCamp_Pot_Text_0:
-# 214 "data/maps/MauveCamp/scripts.pory"
+# 222 "data/maps/MauveCamp/scripts.pory"
 	.string "{PLAYER} found one Leftovers!\n"
 	.string "… … …\l"
 	.string "Just kidding!$"
 
 MauveCamp_Shell_Text_0:
-# 221 "data/maps/MauveCamp/scripts.pory"
+# 229 "data/maps/MauveCamp/scripts.pory"
 	.string "Wow!\p"
 	.string "When you get close you can hear\n"
 	.string "the ocean!$"

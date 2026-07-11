@@ -299,3 +299,43 @@ Jakson_Exp1_Town06::
 	msgbox Exp1_Town06_JaksonText, MSGBOX_NPC
 	return
 
+
+Sakura_Exp1_Town07::
+# 231 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 232 "data/expansion_1/rival_scripts.pory"
+	msgbox Exp1_Town07_SakuraText, MSGBOX_NPC
+	return
+
+
+Harper_Exp1_Town07::
+# 236 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Harper
+# 237 "data/expansion_1/rival_scripts.pory"
+	msgbox Exp1_Town07_HarperText, MSGBOX_NPC
+	return
+
+
+Redd_Exp1_Town07::
+# 241 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Redd
+# 242 "data/expansion_1/rival_scripts.pory"
+	msgbox Exp1_Town07_ReddText, MSGBOX_NPC
+	return
+
+
+Baron_Exp1_Town07::
+# 246 "data/expansion_1/rival_scripts.pory"
+	call GetBaronsName
+# 247 "data/expansion_1/rival_scripts.pory"
+	msgbox Exp1_Town07_BaronText, MSGBOX_NPC
+	return
+
+
+Jakson_Exp1_Town07::
+# 251 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 252 "data/expansion_1/rival_scripts.pory"
+	msgbox Exp1_Town07_JaksonText, MSGBOX_NPC
+	return
+

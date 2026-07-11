@@ -46,7 +46,7 @@ mapscripts MauveCamp_MapScripts {
 			setobjectxyperm (MAUVECAMP_SAKURA, 20, 29)
 			#setobjectmovementtype (MAUVECAMP_SAKURA, MOVEMENT_TYPE_FACE_LEFT)
 		}
-		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 40) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 40) {
 			// set rival positions, etc. here for Town04
 			setobjectxyperm (MAUVECAMP_HARPER, 23, 17)
 			setobjectmovementtype (MAUVECAMP_HARPER, MOVEMENT_TYPE_FACE_LEFT)
@@ -54,6 +54,11 @@ mapscripts MauveCamp_MapScripts {
 			setobjectmovementtype (MAUVECAMP_REDD, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT)
 			setobjectxyperm (MAUVECAMP_BARON, 26, 7)
 			setobjectmovementtype (MAUVECAMP_BARON, MOVEMENT_TYPE_WANDER_AROUND)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 45) {
+			// set rival positions, etc. here for Town07
+			setobjectxyperm (MAUVECAMP_SAKURA, 26, 13)
+			setobjectmovementtype (MAUVECAMP_SAKURA, MOVEMENT_TYPE_WANDER_AROUND)
 		}
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [
@@ -97,6 +102,9 @@ script MauveCamp_Sakura {
 		if (var(VAR_EMERALBODY_RIVAL_STATE) <= 38) {
 			goto (Sakura_Exp1_Town03)
 		}
+	}
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 45) {
+		goto (Sakura_Exp1_Town07)
 	}
 }
 

@@ -149,8 +149,9 @@ static const u8 sText_SpDefense[] = _("Sp. Def");
 static const u8 sText_Accuracy[] = _("accuracy");
 static const u8 sText_Evasiveness[] = _("evasiveness");
 
-static const u8 sText_WildOpponentWantsToBattle[] = _("You are attacked by a Wild Pokémon!\p");
+static const u8 sText_WildOpponentWantsToBattle[] = _("You are attacked by Wild Pokémon!\p");
 static const u8 sText_WildOpponentSentOutTwoPkmn[] = _("The Wild Pokémon calls forth {B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME}!");
+static const u8 sText_TwoWildOpponentsSentPkmn[] = _("The Wild Pokémon call forth {B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME}!");
 static const u8 sText_WildOpponentIsReady[] = _("The {B_OPPONENT_MON1_NAME} is ready!");
 static const u8 sText_WildOpponentSentOutPkmn[] = _("The Wild Pokémon calls forth {B_BUFF1}!");
 static const u8 sText_PlayerDefeatedWildOpponent[] = _("You drove off the Wild Pokémon!\p");
@@ -509,7 +510,6 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PKMNOBTAINEDX2]                       = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} obtained {B_BUFF2}."),
     [STRINGID_PKMNOBTAINEDXYOBTAINEDZ]              = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} obtained {B_BUFF1}.\p{B_DEF_NAME_WITH_PREFIX} obtained {B_BUFF2}."),
     [STRINGID_BUTNOEFFECT]                          = COMPOUND_STRING("But it had no effect!"),
-    [STRINGID_TWOENEMIESDEFEATED]                   = sText_TwoInGameTrainersDefeated,
     [STRINGID_TRAINER2LOSETEXT]                     = COMPOUND_STRING("{B_TRAINER2_LOSE_TEXT}"),
     [STRINGID_PKMNINCAPABLEOFPOWER]                 = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} appears incapable of using its power!"),
     [STRINGID_GLINTAPPEARSINEYE]                    = COMPOUND_STRING("A glint appears in {B_SCR_NAME_WITH_PREFIX2}'s eyes!"),
@@ -2498,9 +2498,19 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
             else
             {
                 if (BATTLE_TWO_VS_ONE_OPPONENT)
-                    stringPtr = sText_Trainer1WantsToBattle;
+                {
+                    if (FlagGet(FLAG_WILD_OPPONENT) || FlagGet (FLAG_SINGLE_WILD_OPPONENT))
+                        stringPtr = sText_WildOpponentWantsToBattle;
+                    else
+                        stringPtr = sText_Trainer1WantsToBattle;
+                }
                 else if (gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER))
-                    stringPtr = sText_TwoTrainersWantToBattle;
+                {
+                    if (FlagGet(FLAG_WILD_OPPONENT)) // 2v2 multi against wild opponents
+                        stringPtr = sText_WildOpponentWantsToBattle;
+                    else
+                        stringPtr = sText_TwoTrainersWantToBattle;
+			    }
                 else if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
                     stringPtr = sText_TwoTrainersWantToBattle;
                 else if (FlagGet(FLAG_WILD_OPPONENT) || FlagGet(FLAG_SINGLE_WILD_OPPONENT))
@@ -2568,7 +2578,12 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
                 else if ((gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK && gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS) || (gBattleTypeFlags & BATTLE_TYPE_MULTI && (gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK || gBattleTypeFlags & BATTLE_TYPE_LINK)))
                     stringPtr = sText_TwoLinkTrainersIntroSendOutPkmn;
                 else if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS || gBattleTypeFlags & BATTLE_TYPE_TOWER_LINK_MULTI)
-                    stringPtr = sText_TwoTrainersSentPkmn;
+                {
+                    if (FlagGet(FLAG_WILD_OPPONENT)) // 2v2 multi against wild opponents
+                        stringPtr = sText_TwoWildOpponentsSentPkmn;
+                    else
+                        stringPtr = sText_TwoTrainersSentPkmn;
+                }
                 else if (BattlerIsLink(battler) || (BattlerIsRecorded(battler) && BattlerIsOpponent(battler))) // Link Opponent doubles and test opponent
                     stringPtr = sText_LinkTrainerSentOutTwoPkmn;
                 else if (FlagGet(FLAG_SINGLE_WILD_OPPONENT))
@@ -2587,7 +2602,10 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
             }
             else
             {
-                stringPtr = sText_Trainer1SentOutPkmn;
+                if (FlagGet(FLAG_SINGLE_WILD_OPPONENT))
+                    stringPtr = sText_WildOpponentIsReady;
+                else
+                    stringPtr = sText_Trainer1SentOutPkmn;
             }
         }
         break;
@@ -2690,7 +2708,10 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
             }
             else // Opponent A
             {
-                stringPtr = sText_Trainer1SentOutPkmn;
+                if (FlagGet(FLAG_WILD_OPPONENT)) // 2v2 multi against wild opponents
+                    stringPtr = sText_WildOpponentSentOutPkmn;
+                else
+                    stringPtr = sText_Trainer1SentOutPkmn;
             }
         }
         else // battler 2 and 3
@@ -2723,7 +2744,10 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
             }
             else if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS) // Opponent B
             {
-                stringPtr = sText_Trainer2SentOutPkmn;
+                if (FlagGet(FLAG_WILD_OPPONENT)) // 2v2 multi against wild opponents
+                    stringPtr = sText_WildOpponentSentOutPkmn;
+                else
+                    stringPtr = sText_Trainer2SentOutPkmn;
             }
             else // Single trainer double Opponent A
             {
@@ -2818,6 +2842,12 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
         else
             stringPtr = sText_PlayerDefeatedLinkTrainerTrainer1;
 	    break;
+    case STRINGID_TWOENEMIESDEFEATED:
+        if (FlagGet(FLAG_WILD_OPPONENT) || FlagGet(FLAG_SINGLE_WILD_OPPONENT))
+            stringPtr = sText_PlayerDefeatedWildOpponent;
+        else
+            stringPtr = sText_TwoInGameTrainersDefeated;
+        break;
     default: // load a string from the table
         if (stringID >= STRINGID_COUNT)
         {

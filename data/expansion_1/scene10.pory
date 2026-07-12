@@ -4,6 +4,8 @@ const IG_JAKSON = 5
 const IG_REDD = 6
 const IG_BARON = 7
 const IG_SAKURA = 8
+const IG_SHADOWED_LUCARIO_1 = 9
+const IG_SHADOWED_LUCARIO_2 = 10
 
 script Expansion1_Rival_Scene10 {
 	msgbox ("Are you prepared to face off\n"
@@ -86,17 +88,47 @@ script Expansion1_Rival_Scene10b {
 			"most dangerous.\p"
 			"{EMOJI_BIGWHEEL}Clenches fist{EMOJI_BIGWHEEL}\n"
 			"Down with you!", MSGBOX_AUTOCLOSE)
+	
+	playmoncry (SPECIES_GYARADOS, CRY_MODE_HIGH_PITCH)
+	call (WeatherScript_SetAndDo_Rain)
+	delay (60)
+
+	playmoncry (SPECIES_LUCARIO, CRY_MODE_ENCOUNTER)
+	waitmoncry
+	addobject (IG_SHADOWED_LUCARIO_1)
+	addobject (IG_SHADOWED_LUCARIO_2)
+	playse (SE_PIN)
+	applymovement (LOCALID_PLAYER, Common_Movement_ExclamationMark)
+	applymovement (IG_HARPER, Common_Movement_ExclamationMark)
+	applymovement (IG_SHADOWED_LUCARIO_1, Common_Movement_WalkUp)
+	applymovement (IG_SHADOWED_LUCARIO_2, Common_Movement_WalkUp)
+	waitmovement (0)
+	playse (SE_LEDGE)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+	applymovement (IG_HARPER, Common_Movement_WalkInPlaceFasterDown)
+	applymovement (IG_SHADOWED_LUCARIO_1, Common_Movement_JumpUp)
+	applymovement (IG_SHADOWED_LUCARIO_2, Common_Movement_JumpUp)
+	waitmovement (0)
+	applymovement (IG_SHADOWED_LUCARIO_1, Common_Movement_WalkUp2)
+	applymovement (IG_SHADOWED_LUCARIO_2, Common_Movement_WalkUp2)
+	waitmovement (0)
 
 # Battle Part 2
-	setstartingstatus (STARTING_STATUS_TAILWIND_OPPONENT_TEMPORARY)
 	setflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
 	setflag (FLAG_WILD_OPPONENT)
 	setflag (FLAG_SYS_SET_BATTLE_BGM)
+	setflag (FLAG_SYS_CTRL_OBJ_DELETE)
 	setvar (VAR_BATTLE_BGM, MUS_XD_VS_CIPHER_PEON)
 	multi_2_vs_2 (TRAINER_WILD_POKEMON_IG_5, Exp1_WildPokemonTrainerText_Defeat, TRAINER_WILD_POKEMON_IG_6, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
 	clearflag (FLAG_WILD_OPPONENT)
+	clearflag (FLAG_SYS_CTRL_OBJ_DELETE)
+	call (WeatherScript_SetAndDo_None)
+	delay (30)
 
 
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
+	applymovement (IG_HARPER, Common_Movement_WalkInPlaceFasterUp)
+	waitmovement (0)
 	speakername (CommonText_Redd)
 	msgbox ("Again? Jeez! This guy won't give up!")
 	speakername (CommonText_Sakura)
@@ -117,6 +149,7 @@ script Expansion1_Rival_Scene10b {
 	savebgm (MUS_VICTORY_TRAINER)
 
 #Battle Part 3
+	setstartingstatus (STARTING_STATUS_RAINBOW_PLAYER)
 	setflag (FLAG_DONT_TRANSIITON_BATTLE_MUSIC)
 	setflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
 	setflag (FLAG_SINGLE_WILD_OPPONENT)
@@ -131,5 +164,5 @@ script Expansion1_Rival_Scene10b {
 	speakername (CommonText_Redd)
 	msgbox ("Is that…{PAUSE 100}?!")
 	call (GetBaronsName)
-	msgbox ("Did it… {PAUSE 100}Did it actually…{PAUSE 100}?")
+	msgbox ("Did it… {PAUSE 100}Did it actually…{PAUSE 100}?", MSGBOX_AUTOCLOSE)
 }

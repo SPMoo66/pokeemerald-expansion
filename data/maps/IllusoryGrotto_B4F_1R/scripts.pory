@@ -1,4 +1,6 @@
 const ROCK_OBJECT_SCRIPT_B4F = 2
+const IG_SHADOWED_LUCARIO_1 = 9
+const IG_SHADOWED_LUCARIO_2 = 10
 
 mapscripts IllusoryGrotto_B4F_1R_MapScripts {
 	MAP_SCRIPT_ON_LOAD {
@@ -21,6 +23,12 @@ mapscripts IllusoryGrotto_B4F_1R_MapScripts {
 			clearflag (FLAG_TEMP_2)
 		}
 		setrespawn (HEAL_LOCATION_ILLUSORY_GROTTO_LOWER)
+	}
+	MAP_SCRIPT_ON_RESUME {
+		if (flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+			removeobject (IG_SHADOWED_LUCARIO_1)
+			removeobject (IG_SHADOWED_LUCARIO_2)
+		}
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [
 		VAR_EMERALBODY_RIVAL_STATE, 20: IllusoryGrotto_B4F_1R_Scene01_OnFrame

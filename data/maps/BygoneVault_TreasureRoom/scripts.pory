@@ -11,7 +11,7 @@ mapscripts BygoneVault_TreasureRoom_MapScripts {
 		}
 	}
 	MAP_SCRIPT_ON_RESUME {
-		if(flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
+		if (flag(FLAG_SYS_CTRL_OBJ_DELETE)) {
 			removeobject (BYGONEVAULTTREASURE_LUCARIO)
 		}
 		if (flag(FLAG_SEMI_TEMP_1)) {

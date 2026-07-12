@@ -21,6 +21,7 @@ mapscripts IllusoryGrotto_B4F_1R_MapScripts {
 		if (var(VAR_EMERALBODY_RIVAL_STATE) == 50) {
 			clearflag (FLAG_TEMP_1)
 			clearflag (FLAG_TEMP_2)
+			savebgm (MUS_PL_GIRATINA_APPEARS_1)
 		}
 		setrespawn (HEAL_LOCATION_ILLUSORY_GROTTO_LOWER)
 	}

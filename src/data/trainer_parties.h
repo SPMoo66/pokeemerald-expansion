@@ -21202,6 +21202,17 @@ static const struct TrainerMon sParty_WildPokemonBV2[] = {
     }
 };
 
+static const struct TrainerMon sParty_Exp1FinalBattle1[] = {
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 85,
+    .species = SPECIES_CALAMITY_MAW_BOSS,
+    .ability = ABILITY_PROTOSYNTHESIS,
+    .heldItem = ITEM_YACHE_BERRY,
+    .moves = {MOVE_GLAIVE_RUSH, MOVE_CEASELESS_EDGE, MOVE_BREAKING_SWIPE, MOVE_WAVE_CRASH}
+    }
+};
+
 static const struct TrainerMon sParty_WildPokemonIG5[] = {
     {
     .ball = POKEBALL_COUNT,
@@ -21242,6 +21253,41 @@ static const struct TrainerMon sParty_WildPokemonIG5[] = {
     .ability = ABILITY_WEAK_ARMOR,
     .heldItem = ITEM_GHOST_GEM,
     .moves = {MOVE_BITTER_BLADE, MOVE_SHADOW_SNEAK, MOVE_POLTERGEIST, MOVE_SWORDS_DANCE}
+    }
+};
+
+static const struct TrainerMon sParty_WildPokemonIG6[] = {
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 75,
+    .species = SPECIES_BRELOOM,
+    .ability = ABILITY_TECHNICIAN,
+    .heldItem = ITEM_COBA_BERRY,
+    .moves = {MOVE_MACH_PUNCH, MOVE_SPORE, MOVE_TRAILBLAZE, MOVE_BULLDOZE}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 75,
+    .species = SPECIES_GRIMMSNARL,
+    .ability = ABILITY_PRANKSTER,
+    .heldItem = ITEM_BABIRI_BERRY,
+    .moves = {MOVE_FAKE_OUT, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_SPIRIT_BREAK}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 75,
+    .species = SPECIES_STONJOURNER,
+    .ability = ABILITY_POWER_SPOT,
+    .heldItem = ITEM_SALAC_BERRY,
+    .moves = {MOVE_PROTECT, MOVE_WIDE_GUARD, MOVE_ROCK_SLIDE, MOVE_ROCK_POLISH}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 75,
+    .species = SPECIES_MALAMAR,
+    .ability = ABILITY_CONTRARY,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_SUPERPOWER, MOVE_PSYCHO_BOOST, MOVE_PROTECT}
     },
     {
     .ball = POKEBALL_COUNT,
@@ -21250,6 +21296,17 @@ static const struct TrainerMon sParty_WildPokemonIG5[] = {
     .ability = ABILITY_WATER_BUBBLE,
     .heldItem = ITEM_WACAN_BERRY,
     .moves = {MOVE_ORIGIN_PULSE, MOVE_WOOD_HAMMER, MOVE_HAMMER_ARM, MOVE_EARTH_POWER}
+    }
+};
+
+static const struct TrainerMon sParty_Exp1FinalBattle2[] = {
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 85,
+    .species = SPECIES_CALAMITY_MAW_BOSS,
+    .ability = ABILITY_PROTOSYNTHESIS,
+    .heldItem = ITEM_YACHE_BERRY,
+    .moves = {MOVE_GLAIVE_RUSH, MOVE_CEASELESS_EDGE, MOVE_HYPERSPACE_FURY, MOVE_DRAGON_ENERGY}
     }
 };
 

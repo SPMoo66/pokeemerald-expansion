@@ -461,6 +461,8 @@ void Overworld_ResetBattleFlagsAndVars(void)
     FlagClear(FLAG_WILD_PARTNER);
     FlagClear(FLAG_NO_MONEY_LOSS_ON_DEFEAT);
     FlagClear(FLAG_DONT_TRANSIITON_BATTLE_MUSIC);
+//    FlagClear(FLAG_SINGLE_WILD_OPPONENT); // So apparently these two can't be cleared here because it's before battle messages are read
+//    FlagClear(FLAG_WILD_OPPONENT);        //
     FlagClear(B_FLAG_NO_WHITEOUT);
 }
 #endif
@@ -1341,7 +1343,7 @@ static void TransitionMapMusic(void)
     if (gDisableMapMusicChangeOnMapLoad == MUSIC_DISABLE_KEEP)
         return;
 
-    if (FlagGet(FLAG_DONT_TRANSITION_MUSIC) != TRUE)
+    if (!FlagGet(FLAG_DONT_TRANSITION_MUSIC))
     {
         u16 newMusic = GetWarpDestinationMusic();
         u16 currentMusic = GetCurrentMapMusic();
@@ -1392,7 +1394,7 @@ void TryFadeOutOldMapMusic(void)
 {
     u16 currentMusic = GetCurrentMapMusic();
     u16 warpMusic = GetWarpDestinationMusic();
-    if (FlagGet(FLAG_DONT_TRANSITION_MUSIC) != TRUE && warpMusic != GetCurrentMapMusic())
+    if (!FlagGet(FLAG_DONT_TRANSITION_MUSIC) && warpMusic != GetCurrentMapMusic())
     {
         if (currentMusic == MUS_SURF
             && VarGet(VAR_SKY_PILLAR_STATE) == 2

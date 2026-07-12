@@ -117,7 +117,8 @@ void DoSpecialTrainerBattle(void)
         if (gBattleTypeFlags & BATTLE_TYPE_MULTI)
             CalculatePartnerPartyCount();
         CreateTask(Task_StartBattleAfterTransition, 1);
-        PlayMapChosenOrBattleBGM(0);
+        if (!FlagGet(FLAG_DONT_TRANSIITON_BATTLE_MUSIC))
+            PlayMapChosenOrBattleBGM(0);
         if (gSpecialVar_0x8005 & MULTI_BATTLE_2_VS_WILD)
             BattleTransition_StartOnField(GetWildBattleTransition());
         else

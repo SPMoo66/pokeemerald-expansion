@@ -151,6 +151,7 @@ static const u8 sText_Evasiveness[] = _("evasiveness");
 
 static const u8 sText_WildOpponentWantsToBattle[] = _("You are attacked by a Wild Pokémon!\p");
 static const u8 sText_WildOpponentSentOutTwoPkmn[] = _("The Wild Pokémon calls forth {B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME}!");
+static const u8 sText_WildOpponentIsReady[] = _("The {B_OPPONENT_MON1_NAME} is ready!");
 static const u8 sText_WildOpponentSentOutPkmn[] = _("The Wild Pokémon calls forth {B_BUFF1}!");
 static const u8 sText_PlayerDefeatedWildOpponent[] = _("You drove off the Wild Pokémon!\p");
 static const u8 sText_WildOpponentWithdrewPkmn[] = _("{B_BUFF1} withdraws!");
@@ -2502,7 +2503,7 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
                     stringPtr = sText_TwoTrainersWantToBattle;
                 else if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
                     stringPtr = sText_TwoTrainersWantToBattle;
-                else if (FlagGet(FLAG_WILD_OPPONENT))
+                else if (FlagGet(FLAG_WILD_OPPONENT) || FlagGet(FLAG_SINGLE_WILD_OPPONENT))
                     stringPtr = sText_WildOpponentWantsToBattle;
                 else
                     stringPtr = sText_Trainer1WantsToBattle;
@@ -2570,6 +2571,8 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
                     stringPtr = sText_TwoTrainersSentPkmn;
                 else if (BattlerIsLink(battler) || (BattlerIsRecorded(battler) && BattlerIsOpponent(battler))) // Link Opponent doubles and test opponent
                     stringPtr = sText_LinkTrainerSentOutTwoPkmn;
+                else if (FlagGet(FLAG_SINGLE_WILD_OPPONENT))
+                    stringPtr = sText_WildOpponentIsReady;
                 else if (FlagGet(FLAG_WILD_OPPONENT))
                     stringPtr = sText_WildOpponentSentOutTwoPkmn;
                 else
@@ -2810,7 +2813,7 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
         stringPtr = gBattleStruct->trainerSlideMsg;
         break;
     case STRINGID_PLAYERDEFEATEDTRAINER1:
-        if (FlagGet(FLAG_WILD_OPPONENT))
+        if (FlagGet(FLAG_WILD_OPPONENT) || FlagGet(FLAG_SINGLE_WILD_OPPONENT))
             stringPtr = sText_PlayerDefeatedWildOpponent;
         else
             stringPtr = sText_PlayerDefeatedLinkTrainerTrainer1;

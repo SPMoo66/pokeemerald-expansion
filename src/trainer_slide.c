@@ -181,6 +181,8 @@ static const u8 sText_LastHalf_Sakura3[] = _("Even on the edge of defeat, Sakura
 static const u8 sText_LastHalf_Baron2[] = _("Well, this doesn't look good.{PAUSE_UNTIL_PRESS}");
 static const u8 sText_LastHalf_Baron3[] = _("This is okay. It is. I'll go to the very\nend, but perhaps this is for the best.{PAUSE_UNTIL_PRESS}");
 
+static const u8 sText_LowHP_Exp1FinalBoss[] = _("GyashaAAA!");
+
 
 // Partner trainers must be added as TRAINER_PARTNER(PARTNER_XXXX)
 static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINER_PARTNER(PARTNER_COUNT)][TRAINER_SLIDE_COUNT] =
@@ -681,6 +683,10 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINER_PARTNER(PARTNER_
             [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Baron3,
             [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Baron3,
         },
+        [TRAINER_EXP_1_FINAL_BATTLE_2] =
+        {
+            [TRAINER_SLIDE_LAST_LOW_HP] = sText_LowHP_Exp1FinalBoss,
+        },
     },
 };
 
@@ -937,6 +943,8 @@ enum TrainerSlideTargets ShouldDoTrainerSlide(enum BattlerId battler, enum Train
         break;
     case TRAINER_SLIDE_LAST_LOW_HP:
         shouldRun = ShouldRunTrainerSlideLastLowHp(lastId, battler);
+        if (shouldRun == TRUE && TRAINER_BATTLE_PARAM.opponentA == TRAINER_EXP_1_FINAL_BATTLE_2)
+            SetLastPokemonMusic();
         break;
     case TRAINER_SLIDE_BEFORE_FIRST_TURN:
     case TRAINER_SLIDE_MEGA_EVOLUTION:

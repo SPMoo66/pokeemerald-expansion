@@ -12729,6 +12729,19 @@
         .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 
+    [DIFFICULTY_NORMAL][TRAINER_EXP_1_FINAL_BATTLE_1] =
+    {
+        .trainerClass = TRAINER_CLASS_WILD,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_STEVEN,
+        .trainerName = _("Pokémon"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Exp1FinalBattle1),
+        .multiTeamSize = MULTI_TEAM_SIZE_FULL,
+    },
+
     [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_IG_5] =
     {
         .trainerClass = TRAINER_CLASS_WILD,
@@ -12739,6 +12752,32 @@
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
         .party = TRAINER_PARTY(sParty_WildPokemonIG5),
+        .multiTeamSize = MULTI_TEAM_SIZE_FULL,
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_WILD_POKEMON_IG_6] =
+    {
+        .trainerClass = TRAINER_CLASS_WILD,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_SHADOWED_LUCARIO,
+        .trainerName = _("Pokémon"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_WildPokemonIG6),
+        .multiTeamSize = MULTI_TEAM_SIZE_FULL,
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_EXP_1_FINAL_BATTLE_2] =
+    {
+        .trainerClass = TRAINER_CLASS_WILD,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_STEVEN,
+        .trainerName = _("Pokémon"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
+        .party = TRAINER_PARTY(sParty_Exp1FinalBattle2),
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
     },
 

@@ -982,14 +982,17 @@
 #define TRAINER_LEX                         975
 #define TRAINER_WILD_POKEMON_BV_1           976
 #define TRAINER_WILD_POKEMON_BV_2           977
-#define TRAINER_WILD_POKEMON_IG_5           978
-#define TRAINER_STEVEN_EXP_1                979
+#define TRAINER_EXP_1_FINAL_BATTLE_1        978
+#define TRAINER_WILD_POKEMON_IG_5           979
+#define TRAINER_WILD_POKEMON_IG_6           980
+#define TRAINER_EXP_1_FINAL_BATTLE_2        981
+#define TRAINER_STEVEN_EXP_1                982
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_EMERALD              980
+#define TRAINERS_COUNT_EMERALD              983
 #define MAX_TRAINERS_COUNT_EMERALD          1280
 
 #if IS_FRLG

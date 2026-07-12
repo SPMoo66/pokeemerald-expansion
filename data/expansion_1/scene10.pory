@@ -63,9 +63,19 @@ script Expansion1_Rival_Scene10b {
 			"breath!", MSGBOX_AUTOCLOSE)
 	applymovement (IG_BARON, Common_Movement_WalkInPlaceFasterUp)
 	waitmovement (0)
+	playbgm (MUS_B2W2_VS_GHETSIS, TRUE)
+	applymovement (IG_BOSS, Common_Movement_ShakeHorizontal)
 	playmoncry (SPECIES_GYARADOS, CRY_MODE_ENCOUNTER)
 	waitmoncry
-#	setfollowernpc (IG_HARPER, 0, 0, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
+
+# Battle Part 1
+	setflag (FLAG_DONT_TRANSIITON_BATTLE_MUSIC)
+	setflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
+	setflag (FLAG_SINGLE_WILD_OPPONENT)
+	settotemboost (B_POSITION_OPPONENT_LEFT, 0, 1, 0, 0, 1)
+	multi_2_vs_1 (TRAINER_EXP_1_FINAL_BATTLE_1, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
+	clearflag (FLAG_SINGLE_WILD_OPPONENT)
+	clearflag (FLAG_DONT_TRANSIITON_BATTLE_MUSIC)
 
 
 	call (GetBaronsName)
@@ -76,9 +86,16 @@ script Expansion1_Rival_Scene10b {
 			"most dangerous.\p"
 			"{EMOJI_BIGWHEEL}Clenches fist{EMOJI_BIGWHEEL}\n"
 			"Down with you!", MSGBOX_AUTOCLOSE)
-#	trainerbattle_no_intro (TRAINER_WILD_POKEMON_IG_5, Exp1_WildPokemonTrainerText_Defeat)
-	multi_2_vs_1 (TRAINER_WILD_POKEMON_IG_5, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
-#	dotrainerbattle
+
+# Battle Part 2
+	setstartingstatus (STARTING_STATUS_TAILWIND_OPPONENT_TEMPORARY)
+	setflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
+	setflag (FLAG_WILD_OPPONENT)
+	setflag (FLAG_SYS_SET_BATTLE_BGM)
+	setvar (VAR_BATTLE_BGM, MUS_XD_VS_CIPHER_PEON)
+	multi_2_vs_2 (TRAINER_WILD_POKEMON_IG_5, Exp1_WildPokemonTrainerText_Defeat, TRAINER_WILD_POKEMON_IG_6, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
+	clearflag (FLAG_WILD_OPPONENT)
+
 
 	speakername (CommonText_Redd)
 	msgbox ("Again? Jeez! This guy won't give up!")
@@ -97,7 +114,18 @@ script Expansion1_Rival_Scene10b {
 	msgbox ("One more time!")
 	playmoncry (SPECIES_GYARADOS, CRY_MODE_ENCOUNTER)
 	waitmoncry
+	savebgm (MUS_VICTORY_TRAINER)
 
+#Battle Part 3
+	setflag (FLAG_DONT_TRANSIITON_BATTLE_MUSIC)
+	setflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
+	setflag (FLAG_SINGLE_WILD_OPPONENT)
+	settotemboost (B_POSITION_OPPONENT_LEFT, 0, 1, 0, 0, 1)
+	setflag (FLAG_SYS_SET_BATTLE_BGM)
+	setvar (VAR_BATTLE_BGM, MUS_B2W2_VS_GHETSIS)
+	multi_2_vs_1 (TRAINER_EXP_1_FINAL_BATTLE_2, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
+	clearflag (FLAG_SINGLE_WILD_OPPONENT)
+	clearflag (FLAG_DONT_TRANSIITON_BATTLE_MUSIC)
 
 
 	speakername (CommonText_Redd)

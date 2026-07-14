@@ -12733,7 +12733,7 @@
     {
         .trainerClass = TRAINER_CLASS_WILD,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_STEVEN,
+        .trainerPic = TRAINER_PIC_BLANK,
         .trainerName = _("Pokémon"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -12772,7 +12772,7 @@
     {
         .trainerClass = TRAINER_CLASS_WILD,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_STEVEN,
+        .trainerPic = TRAINER_PIC_BLANK,
         .trainerName = _("Pokémon"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,

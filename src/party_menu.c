@@ -8221,7 +8221,7 @@ static void Task_MultiPartnerPartySlideIn(u8 taskId)
     }
 }
 
-static void Task_WaitAfterMultiPartnerFullParty(u8 taskId)
+static void Task_WaitAfterMultiPartnerFullParty(u8 taskId) // the data in these wait tasks are the time for each party slide in
 {
     s16 *data = gTasks[taskId].data;
 
@@ -8230,10 +8230,10 @@ static void Task_WaitAfterMultiPartnerFullParty(u8 taskId)
 
     if (FollowerNPCIsBattlePartner())
     {
-        if (++data[0] == 128)
+        if (++data[0] == 64)
             Task_ClosePartyMenu(taskId);
     }
-    else if (++data[0] == 256)
+    else if (++data[0] == 96)
         Task_ClosePartyMenu(taskId);
 }
 
@@ -8257,10 +8257,10 @@ static void Task_WaitAfterMultiPartnerPartySlideIn(u8 taskId)
     // data[0] used as a timer afterwards rather than the x pos
     if (FollowerNPCIsBattlePartner())
     {
-        if (++data[0] == 128)
+        if (++data[0] == 64)
             Task_ClosePartyMenu(taskId);
     }
-    else if (++data[0] == 256)
+    else if (++data[0] == 96)
         Task_ClosePartyMenu(taskId);
 }
 

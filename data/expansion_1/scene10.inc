@@ -127,7 +127,7 @@ Expansion1_Rival_Scene10b_1:
 # 94 "data/expansion_1/scene10.pory"
 	waitmoncry
 # 97 "data/expansion_1/scene10.pory"
-	setflag FLAG_DONT_TRANSIITON_BATTLE_MUSIC
+	setflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
 # 98 "data/expansion_1/scene10.pory"
 	setflag FLAG_NO_MONEY_LOSS_ON_DEFEAT
 # 99 "data/expansion_1/scene10.pory"
@@ -139,7 +139,7 @@ Expansion1_Rival_Scene10b_1:
 # 102 "data/expansion_1/scene10.pory"
 	clearflag FLAG_SINGLE_WILD_OPPONENT
 # 103 "data/expansion_1/scene10.pory"
-	clearflag FLAG_DONT_TRANSIITON_BATTLE_MUSIC
+	clearflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
 # 106 "data/expansion_1/scene10.pory"
 	call GetBaronsName
 # 107 "data/expansion_1/scene10.pory"
@@ -247,7 +247,7 @@ Expansion1_Rival_Scene10b_1:
 # 175 "data/expansion_1/scene10.pory"
 	setstartingstatus STARTING_STATUS_RAINBOW_PLAYER
 # 176 "data/expansion_1/scene10.pory"
-	setflag FLAG_DONT_TRANSIITON_BATTLE_MUSIC
+	setflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
 # 177 "data/expansion_1/scene10.pory"
 	setflag FLAG_NO_MONEY_LOSS_ON_DEFEAT
 # 178 "data/expansion_1/scene10.pory"
@@ -263,7 +263,7 @@ Expansion1_Rival_Scene10b_1:
 # 183 "data/expansion_1/scene10.pory"
 	clearflag FLAG_SINGLE_WILD_OPPONENT
 # 184 "data/expansion_1/scene10.pory"
-	clearflag FLAG_DONT_TRANSIITON_BATTLE_MUSIC
+	clearflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
 # 187 "data/expansion_1/scene10.pory"
 	speakername CommonText_Redd
 # 188 "data/expansion_1/scene10.pory"

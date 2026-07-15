@@ -94,13 +94,13 @@ script Expansion1_Rival_Scene10b {
 	waitmoncry
 
 # Battle Part 1
-	setflag (FLAG_DONT_TRANSIITON_BATTLE_MUSIC)
+	setflag (FLAG_DONT_TRANSITION_BATTLE_MUSIC)
 	setflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
 	setflag (FLAG_SINGLE_WILD_OPPONENT)
 	settotemboost (B_POSITION_OPPONENT_LEFT, 0, 1, 0, 0, 1)
 	multi_2_vs_1 (TRAINER_EXP_1_FINAL_BATTLE_1, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
 	clearflag (FLAG_SINGLE_WILD_OPPONENT)
-	clearflag (FLAG_DONT_TRANSIITON_BATTLE_MUSIC)
+	clearflag (FLAG_DONT_TRANSITION_BATTLE_MUSIC)
 
 
 	call (GetBaronsName)
@@ -173,7 +173,7 @@ script Expansion1_Rival_Scene10b {
 
 #Battle Part 3
 	setstartingstatus (STARTING_STATUS_RAINBOW_PLAYER)
-	setflag (FLAG_DONT_TRANSIITON_BATTLE_MUSIC)
+	setflag (FLAG_DONT_TRANSITION_BATTLE_MUSIC)
 	setflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
 	setflag (FLAG_SINGLE_WILD_OPPONENT)
 	settotemboost (B_POSITION_OPPONENT_LEFT, 0, 1, 0, 0, 1)
@@ -181,7 +181,7 @@ script Expansion1_Rival_Scene10b {
 	setvar (VAR_BATTLE_BGM, MUS_B2W2_VS_GHETSIS)
 	multi_2_vs_1 (TRAINER_EXP_1_FINAL_BATTLE_2, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
 	clearflag (FLAG_SINGLE_WILD_OPPONENT)
-	clearflag (FLAG_DONT_TRANSIITON_BATTLE_MUSIC)
+	clearflag (FLAG_DONT_TRANSITION_BATTLE_MUSIC)
 
 
 	speakername (CommonText_Redd)

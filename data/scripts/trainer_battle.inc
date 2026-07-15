@@ -2,7 +2,7 @@ EventScript_StartTrainerApproach::
 	selectapproachingtrainer
 	lockfortrainer
 EventScript_TrainerApproach::
-	call_if_unset FLAG_DONT_TRANSIITON_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
+	call_if_unset FLAG_DONT_TRANSITION_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
 	special DoTrainerApproach
 	goto EventScript_ShowTrainerIntroMsg
 
@@ -15,7 +15,7 @@ EventScript_TryDoNormalTrainerBattle::
 	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	specialvar VAR_RESULT, GetTrainerFlag
 	goto_if_ne VAR_RESULT, FALSE, EventScript_NoNormalTrainerBattle
-	call_if_unset FLAG_DONT_TRANSIITON_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
+	call_if_unset FLAG_DONT_TRANSITION_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
 	special SetTrainerFacingDirection
 	goto EventScript_ShowTrainerIntroMsg
 
@@ -30,7 +30,7 @@ EventScript_TryDoDoubleTrainerBattle::
 	goto_if_ne VAR_RESULT, FALSE, EventScript_NoDoubleTrainerBattle
 	special HasEnoughMonsForDoubleBattle
 	goto_if_ne VAR_RESULT, PLAYER_HAS_TWO_USABLE_MONS, EventScript_NotEnoughMonsForDoubleBattle
-	call_if_unset FLAG_DONT_TRANSIITON_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
+	call_if_unset FLAG_DONT_TRANSITION_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
 	special SetTrainerFacingDirection
 	goto EventScript_ShowTrainerIntroMsg
 
@@ -49,7 +49,7 @@ EventScript_DoNoIntroTrainerBattle::
 	applymovement VAR_LAST_TALKED, Movement_RevealTrainer
 	waitmovement 0
 	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
-	call_if_unset FLAG_DONT_TRANSIITON_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
+	call_if_unset FLAG_DONT_TRANSITION_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
 	dotrainerbattle
 	gotopostbattlescript
 
@@ -57,7 +57,7 @@ EventScript_TryDoRematchBattle::
 	call EventScript_RevealTrainer
 	specialvar VAR_RESULT, IsTrainerReadyForRematch
 	goto_if_eq VAR_RESULT, FALSE, EventScript_NoRematchTrainerBattle
-	call_if_unset FLAG_DONT_TRANSIITON_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
+	call_if_unset FLAG_DONT_TRANSITION_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
 	special SetTrainerFacingDirection
 	special ShowTrainerIntroSpeech
 	waitmessage
@@ -74,7 +74,7 @@ EventScript_TryDoDoubleRematchBattle::
 	goto_if_eq VAR_RESULT, FALSE, EventScript_NoDoubleRematchTrainerBattle
 	special HasEnoughMonsForDoubleBattle
 	goto_if_ne VAR_RESULT, PLAYER_HAS_TWO_USABLE_MONS, EventScript_NotEnoughMonsForDoubleRematchBattle
-	call_if_unset FLAG_DONT_TRANSIITON_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
+	call_if_unset FLAG_DONT_TRANSITION_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
 	special SetTrainerFacingDirection
 	special ShowTrainerIntroSpeech
 	waitmessage

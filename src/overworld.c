@@ -460,7 +460,7 @@ void Overworld_ResetBattleFlagsAndVars(void)
     FlagClear(FLAG_ELITE_FOUR_CHALLENGE);
     FlagClear(FLAG_WILD_PARTNER);
     FlagClear(FLAG_NO_MONEY_LOSS_ON_DEFEAT);
-    FlagClear(FLAG_DONT_TRANSIITON_BATTLE_MUSIC);
+    FlagClear(FLAG_DONT_TRANSITION_BATTLE_MUSIC);
 //    FlagClear(FLAG_SINGLE_WILD_OPPONENT); // So apparently these two can't be cleared here because it's before battle messages are read
 //    FlagClear(FLAG_WILD_OPPONENT);        //
     FlagClear(B_FLAG_NO_WHITEOUT);

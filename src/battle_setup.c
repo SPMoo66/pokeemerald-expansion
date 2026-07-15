@@ -275,7 +275,7 @@ static void CreateBattleStartTask(enum BattleTransition transition, u16 song)
     u8 taskId = CreateTask(Task_BattleStart, 1);
 
     gTasks[taskId].tTransition = transition;
-    if (!FlagGet(FLAG_DONT_TRANSIITON_BATTLE_MUSIC))
+    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
         PlayMapChosenOrBattleBGM(song);
 }
 

@@ -5436,7 +5436,7 @@ static void HandleEndTurn_BattleWon(void)
     {
         BattleStopLowHpSound();
         gBattlescriptCurrInstr = BattleScript_FrontierTrainerBattleWon;
-        if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
+        if (!FlagGet(FLAG_DONT_PLAY_VICTORY_MUSIC))
         {
             if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_FRONTIER_BRAIN)
                 PlayBGM(MUS_VICTORY_GYM_LEADER);
@@ -5448,7 +5448,7 @@ static void HandleEndTurn_BattleWon(void)
     {
         BattleStopLowHpSound();
         gBattlescriptCurrInstr = BattleScript_LocalTrainerBattleWon;
-        if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
+        if (!FlagGet(FLAG_DONT_PLAY_VICTORY_MUSIC))
         {
             switch (GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA))
             {
@@ -5478,6 +5478,7 @@ static void HandleEndTurn_BattleWon(void)
         gBattlescriptCurrInstr = BattleScript_PayDayMoneyAndPickUpItems;
     }
 
+    FlagClear(FLAG_DONT_PLAY_VICTORY_MUSIC);
     gBattleMainFunc = HandleEndTurn_FinishBattle;
 }
 

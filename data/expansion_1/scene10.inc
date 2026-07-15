@@ -129,148 +129,152 @@ Expansion1_Rival_Scene10b_1:
 # 97 "data/expansion_1/scene10.pory"
 	setflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
 # 98 "data/expansion_1/scene10.pory"
-	setflag FLAG_NO_MONEY_LOSS_ON_DEFEAT
+	setflag FLAG_DONT_PLAY_VICTORY_MUSIC
 # 99 "data/expansion_1/scene10.pory"
-	setflag FLAG_SINGLE_WILD_OPPONENT
+	setflag FLAG_NO_MONEY_LOSS_ON_DEFEAT
 # 100 "data/expansion_1/scene10.pory"
-	settotemboost B_POSITION_OPPONENT_LEFT, 0, 1, 0, 0, 1
-# 101 "data/expansion_1/scene10.pory"
-	multi_2_vs_1 TRAINER_EXP_1_FINAL_BATTLE_1, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS
-# 102 "data/expansion_1/scene10.pory"
-	clearflag FLAG_SINGLE_WILD_OPPONENT
-# 103 "data/expansion_1/scene10.pory"
-	clearflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
-# 106 "data/expansion_1/scene10.pory"
-	call GetBaronsName
-# 107 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_5
-# 109 "data/expansion_1/scene10.pory"
-	speakername CommonText_Harper
-# 110 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_6, MSGBOX_AUTOCLOSE
-# 115 "data/expansion_1/scene10.pory"
-	playmoncry SPECIES_GYARADOS, CRY_MODE_HIGH_PITCH
-# 116 "data/expansion_1/scene10.pory"
-	call WeatherScript_SetAndDo_Rain
-# 117 "data/expansion_1/scene10.pory"
-	delay 60
-# 119 "data/expansion_1/scene10.pory"
-	playmoncry SPECIES_LUCARIO, CRY_MODE_ENCOUNTER
-# 120 "data/expansion_1/scene10.pory"
-	waitmoncry
-# 121 "data/expansion_1/scene10.pory"
-	addobject 9
-# 122 "data/expansion_1/scene10.pory"
-	addobject 10
-# 123 "data/expansion_1/scene10.pory"
-	playse SE_PIN
-# 124 "data/expansion_1/scene10.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
-# 125 "data/expansion_1/scene10.pory"
-	applymovement 4, Common_Movement_ExclamationMark
-# 126 "data/expansion_1/scene10.pory"
-	applymovement 9, Common_Movement_WalkUp
-# 127 "data/expansion_1/scene10.pory"
-	applymovement 10, Common_Movement_WalkUp
-# 128 "data/expansion_1/scene10.pory"
-	waitmovement 0
-# 129 "data/expansion_1/scene10.pory"
-	playse SE_LEDGE
-# 130 "data/expansion_1/scene10.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
-# 131 "data/expansion_1/scene10.pory"
-	applymovement 4, Common_Movement_WalkInPlaceFasterDown
-# 132 "data/expansion_1/scene10.pory"
-	applymovement 9, Common_Movement_JumpUp
-# 133 "data/expansion_1/scene10.pory"
-	applymovement 10, Common_Movement_JumpUp
-# 134 "data/expansion_1/scene10.pory"
-	waitmovement 0
-# 135 "data/expansion_1/scene10.pory"
-	applymovement 9, Common_Movement_WalkUp2
-# 136 "data/expansion_1/scene10.pory"
-	applymovement 10, Common_Movement_WalkUp2
-# 137 "data/expansion_1/scene10.pory"
-	waitmovement 0
-# 140 "data/expansion_1/scene10.pory"
-	setflag FLAG_NO_MONEY_LOSS_ON_DEFEAT
-# 141 "data/expansion_1/scene10.pory"
-	setflag FLAG_WILD_OPPONENT
-# 142 "data/expansion_1/scene10.pory"
-	setflag FLAG_SYS_SET_BATTLE_BGM
-# 143 "data/expansion_1/scene10.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 144 "data/expansion_1/scene10.pory"
-	setvar VAR_BATTLE_BGM, MUS_XD_VS_CIPHER_PEON
-# 145 "data/expansion_1/scene10.pory"
-	multi_2_vs_2 TRAINER_WILD_POKEMON_IG_5, Exp1_WildPokemonTrainerText_Defeat, TRAINER_WILD_POKEMON_IG_6, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS
-# 146 "data/expansion_1/scene10.pory"
-	clearflag FLAG_WILD_OPPONENT
-# 147 "data/expansion_1/scene10.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 148 "data/expansion_1/scene10.pory"
-	call WeatherScript_SetAndDo_None
-# 149 "data/expansion_1/scene10.pory"
-	delay 30
-# 152 "data/expansion_1/scene10.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
-# 153 "data/expansion_1/scene10.pory"
-	applymovement 4, Common_Movement_WalkInPlaceFasterUp
-# 154 "data/expansion_1/scene10.pory"
-	waitmovement 0
-# 155 "data/expansion_1/scene10.pory"
-	speakername CommonText_Redd
-# 156 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_7
-# 157 "data/expansion_1/scene10.pory"
-	speakername CommonText_Sakura
-# 158 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_8
-# 162 "data/expansion_1/scene10.pory"
-	speakername CommonText_Redd
-# 163 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_9
-# 165 "data/expansion_1/scene10.pory"
-	speakername CommonText_Jakson
-# 166 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_10
-# 168 "data/expansion_1/scene10.pory"
-	speakername CommonText_Harper
-# 169 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_11
-# 170 "data/expansion_1/scene10.pory"
-	playmoncry SPECIES_GYARADOS, CRY_MODE_ENCOUNTER
-# 171 "data/expansion_1/scene10.pory"
-	waitmoncry
-# 172 "data/expansion_1/scene10.pory"
-	savebgm MUS_VICTORY_TRAINER
-# 175 "data/expansion_1/scene10.pory"
-	setstartingstatus STARTING_STATUS_RAINBOW_PLAYER
-# 176 "data/expansion_1/scene10.pory"
-	setflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
-# 177 "data/expansion_1/scene10.pory"
-	setflag FLAG_NO_MONEY_LOSS_ON_DEFEAT
-# 178 "data/expansion_1/scene10.pory"
 	setflag FLAG_SINGLE_WILD_OPPONENT
-# 179 "data/expansion_1/scene10.pory"
+# 101 "data/expansion_1/scene10.pory"
 	settotemboost B_POSITION_OPPONENT_LEFT, 0, 1, 0, 0, 1
-# 180 "data/expansion_1/scene10.pory"
-	setflag FLAG_SYS_SET_BATTLE_BGM
-# 181 "data/expansion_1/scene10.pory"
-	setvar VAR_BATTLE_BGM, MUS_B2W2_VS_GHETSIS
-# 182 "data/expansion_1/scene10.pory"
-	multi_2_vs_1 TRAINER_EXP_1_FINAL_BATTLE_2, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS
-# 183 "data/expansion_1/scene10.pory"
+# 102 "data/expansion_1/scene10.pory"
+	multi_2_vs_1 TRAINER_EXP_1_FINAL_BATTLE_1, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS
+# 103 "data/expansion_1/scene10.pory"
 	clearflag FLAG_SINGLE_WILD_OPPONENT
-# 184 "data/expansion_1/scene10.pory"
+# 104 "data/expansion_1/scene10.pory"
 	clearflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
-# 187 "data/expansion_1/scene10.pory"
-	speakername CommonText_Redd
-# 188 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_12
-# 189 "data/expansion_1/scene10.pory"
+# 107 "data/expansion_1/scene10.pory"
 	call GetBaronsName
+# 108 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10b_Text_5
+# 110 "data/expansion_1/scene10.pory"
+	speakername CommonText_Harper
+# 111 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10b_Text_6, MSGBOX_AUTOCLOSE
+# 116 "data/expansion_1/scene10.pory"
+	playmoncry SPECIES_GYARADOS, CRY_MODE_HIGH_PITCH
+# 117 "data/expansion_1/scene10.pory"
+	call WeatherScript_SetAndDo_Rain
+# 118 "data/expansion_1/scene10.pory"
+	delay 60
+# 120 "data/expansion_1/scene10.pory"
+	playmoncry SPECIES_LUCARIO, CRY_MODE_ENCOUNTER
+# 121 "data/expansion_1/scene10.pory"
+	waitmoncry
+# 122 "data/expansion_1/scene10.pory"
+	addobject 9
+# 123 "data/expansion_1/scene10.pory"
+	addobject 10
+# 124 "data/expansion_1/scene10.pory"
+	playse SE_PIN
+# 125 "data/expansion_1/scene10.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
+# 126 "data/expansion_1/scene10.pory"
+	applymovement 4, Common_Movement_ExclamationMark
+# 127 "data/expansion_1/scene10.pory"
+	applymovement 9, Common_Movement_WalkUp
+# 128 "data/expansion_1/scene10.pory"
+	applymovement 10, Common_Movement_WalkUp
+# 129 "data/expansion_1/scene10.pory"
+	waitmovement 0
+# 130 "data/expansion_1/scene10.pory"
+	playse SE_LEDGE
+# 131 "data/expansion_1/scene10.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+# 132 "data/expansion_1/scene10.pory"
+	applymovement 4, Common_Movement_WalkInPlaceFasterDown
+# 133 "data/expansion_1/scene10.pory"
+	applymovement 9, Common_Movement_JumpUp
+# 134 "data/expansion_1/scene10.pory"
+	applymovement 10, Common_Movement_JumpUp
+# 135 "data/expansion_1/scene10.pory"
+	waitmovement 0
+# 136 "data/expansion_1/scene10.pory"
+	applymovement 9, Common_Movement_WalkUp2
+# 137 "data/expansion_1/scene10.pory"
+	applymovement 10, Common_Movement_WalkUp2
+# 138 "data/expansion_1/scene10.pory"
+	waitmovement 0
+# 141 "data/expansion_1/scene10.pory"
+	setflag FLAG_NO_MONEY_LOSS_ON_DEFEAT
+# 142 "data/expansion_1/scene10.pory"
+	setflag FLAG_WILD_OPPONENT
+# 143 "data/expansion_1/scene10.pory"
+	setflag FLAG_SYS_SET_BATTLE_BGM
+# 144 "data/expansion_1/scene10.pory"
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+# 145 "data/expansion_1/scene10.pory"
+	setvar VAR_BATTLE_BGM, MUS_XD_VS_CIPHER_PEON
+# 146 "data/expansion_1/scene10.pory"
+	setflag FLAG_DONT_PLAY_VICTORY_MUSIC
+# 147 "data/expansion_1/scene10.pory"
+	multi_2_vs_2 TRAINER_WILD_POKEMON_IG_5, Exp1_WildPokemonTrainerText_Defeat, TRAINER_WILD_POKEMON_IG_6, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS
+# 148 "data/expansion_1/scene10.pory"
+	clearflag FLAG_WILD_OPPONENT
+# 149 "data/expansion_1/scene10.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 150 "data/expansion_1/scene10.pory"
+	call WeatherScript_SetAndDo_None
+# 151 "data/expansion_1/scene10.pory"
+	delay 30
+# 154 "data/expansion_1/scene10.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+# 155 "data/expansion_1/scene10.pory"
+	applymovement 4, Common_Movement_WalkInPlaceFasterUp
+# 156 "data/expansion_1/scene10.pory"
+	waitmovement 0
+# 157 "data/expansion_1/scene10.pory"
+	speakername CommonText_Redd
+# 158 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10b_Text_7
+# 159 "data/expansion_1/scene10.pory"
+	speakername CommonText_Sakura
+# 160 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10b_Text_8
+# 164 "data/expansion_1/scene10.pory"
+	speakername CommonText_Redd
+# 165 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10b_Text_9
+# 167 "data/expansion_1/scene10.pory"
+	speakername CommonText_Jakson
+# 168 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10b_Text_10
+# 170 "data/expansion_1/scene10.pory"
+	speakername CommonText_Harper
+# 171 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10b_Text_11
+# 172 "data/expansion_1/scene10.pory"
+	playmoncry SPECIES_GYARADOS, CRY_MODE_ENCOUNTER
+# 173 "data/expansion_1/scene10.pory"
+	waitmoncry
+# 174 "data/expansion_1/scene10.pory"
+	savebgm MUS_VICTORY_TRAINER
+# 177 "data/expansion_1/scene10.pory"
+	setstartingstatus STARTING_STATUS_RAINBOW_PLAYER
+# 178 "data/expansion_1/scene10.pory"
+	setflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
+# 179 "data/expansion_1/scene10.pory"
+	setflag FLAG_NO_MONEY_LOSS_ON_DEFEAT
+# 180 "data/expansion_1/scene10.pory"
+	setflag FLAG_SINGLE_WILD_OPPONENT
+# 181 "data/expansion_1/scene10.pory"
+	settotemboost B_POSITION_OPPONENT_LEFT, 0, 1, 0, 0, 1
+# 182 "data/expansion_1/scene10.pory"
+	setflag FLAG_SYS_SET_BATTLE_BGM
+# 183 "data/expansion_1/scene10.pory"
+	setvar VAR_BATTLE_BGM, MUS_B2W2_VS_GHETSIS
+# 184 "data/expansion_1/scene10.pory"
+	multi_2_vs_1 TRAINER_EXP_1_FINAL_BATTLE_2, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS
+# 185 "data/expansion_1/scene10.pory"
+	clearflag FLAG_SINGLE_WILD_OPPONENT
+# 186 "data/expansion_1/scene10.pory"
+	clearflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
+# 189 "data/expansion_1/scene10.pory"
+	speakername CommonText_Redd
 # 190 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10b_Text_12
+# 191 "data/expansion_1/scene10.pory"
+	call GetBaronsName
+# 192 "data/expansion_1/scene10.pory"
 	msgbox Expansion1_Rival_Scene10b_Text_13, MSGBOX_AUTOCLOSE
 	return
 
@@ -338,46 +342,46 @@ Expansion1_Rival_Scene10b_Text_4:
 	.string "breath!$"
 
 Expansion1_Rival_Scene10b_Text_5:
-# 107 "data/expansion_1/scene10.pory"
+# 108 "data/expansion_1/scene10.pory"
 	.string "It-{PAUSE 30}It looks almost dead…{PAUSE 100}?\n"
 	.string "Did we beat it?$"
 
 Expansion1_Rival_Scene10b_Text_6:
-# 110 "data/expansion_1/scene10.pory"
+# 111 "data/expansion_1/scene10.pory"
 	.string "Tsk. This is when they're at their\n"
 	.string "most dangerous.\p"
 	.string "{EMOJI_BIGWHEEL}Clenches fist{EMOJI_BIGWHEEL}\n"
 	.string "Down with you!$"
 
 Expansion1_Rival_Scene10b_Text_7:
-# 156 "data/expansion_1/scene10.pory"
+# 158 "data/expansion_1/scene10.pory"
 	.string "Again? Jeez! This guy won't give up!$"
 
 Expansion1_Rival_Scene10b_Text_8:
-# 158 "data/expansion_1/scene10.pory"
+# 160 "data/expansion_1/scene10.pory"
 	.string "HAHAHA!\n"
 	.string "Live up to your name, {PAUSE 60}“Redd”!\l"
 	.string "Let us BATHE IN THE BLOOD OF OUR\l"
 	.string "ENEMIES!!!$"
 
 Expansion1_Rival_Scene10b_Text_9:
-# 163 "data/expansion_1/scene10.pory"
+# 165 "data/expansion_1/scene10.pory"
 	.string "That's not-…{PAUSE 100}! F-{PAUSE 30}FINE!\n"
 	.string "I can go another round!$"
 
 Expansion1_Rival_Scene10b_Text_10:
-# 166 "data/expansion_1/scene10.pory"
+# 168 "data/expansion_1/scene10.pory"
 	.string "Everything comes in threes.\n"
 	.string "This should be the last phase!$"
 
 Expansion1_Rival_Scene10b_Text_11:
-# 169 "data/expansion_1/scene10.pory"
+# 171 "data/expansion_1/scene10.pory"
 	.string "One more time!$"
 
 Expansion1_Rival_Scene10b_Text_12:
-# 188 "data/expansion_1/scene10.pory"
+# 190 "data/expansion_1/scene10.pory"
 	.string "Is that…{PAUSE 100}?!$"
 
 Expansion1_Rival_Scene10b_Text_13:
-# 190 "data/expansion_1/scene10.pory"
+# 192 "data/expansion_1/scene10.pory"
 	.string "Did it… {PAUSE 100}Did it actually…{PAUSE 100}?$"

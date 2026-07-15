@@ -95,6 +95,7 @@ script Expansion1_Rival_Scene10b {
 
 # Battle Part 1
 	setflag (FLAG_DONT_TRANSITION_BATTLE_MUSIC)
+	setflag (FLAG_DONT_PLAY_VICTORY_MUSIC)
 	setflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
 	setflag (FLAG_SINGLE_WILD_OPPONENT)
 	settotemboost (B_POSITION_OPPONENT_LEFT, 0, 1, 0, 0, 1)
@@ -142,6 +143,7 @@ script Expansion1_Rival_Scene10b {
 	setflag (FLAG_SYS_SET_BATTLE_BGM)
 	setflag (FLAG_SYS_CTRL_OBJ_DELETE)
 	setvar (VAR_BATTLE_BGM, MUS_XD_VS_CIPHER_PEON)
+	setflag (FLAG_DONT_PLAY_VICTORY_MUSIC)
 	multi_2_vs_2 (TRAINER_WILD_POKEMON_IG_5, Exp1_WildPokemonTrainerText_Defeat, TRAINER_WILD_POKEMON_IG_6, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
 	clearflag (FLAG_WILD_OPPONENT)
 	clearflag (FLAG_SYS_CTRL_OBJ_DELETE)

@@ -1402,7 +1402,7 @@
 #define FLAG_SYS_POKEMON_GET                         (SYSTEM_FLAGS + 0x0) // FLAG_0xA00
 #define FLAG_SYS_POKEDEX_GET                         (SYSTEM_FLAGS + 0x1)
 #define FLAG_SYS_POKENAV_GET                         (SYSTEM_FLAGS + 0x2)
-#define FLAG_SINGLE_WILD_OPPONENT                    (SYSTEM_FLAGS + 0x3) // Was unused
+#define FLAG_SINGLE_WILD_OPPONENT                    (SYSTEM_FLAGS + 0x3) // Set this to get correct battle messages for a single wild opponent using a trainer slot (ie. a legendary or boss battle against 1 Pokémon)
 #define FLAG_SYS_GAME_CLEAR                          (SYSTEM_FLAGS + 0x4)
 #define FLAG_SYS_CHAT_USED                           (SYSTEM_FLAGS + 0x5)
 #define FLAG_UNLOCKED_TRENDY_SAYINGS                 (SYSTEM_FLAGS + 0x6)
@@ -1572,14 +1572,14 @@
 #define FLAG_SUPERBOSS_TRAINER                      (SYSTEM_FLAGS + 0x8D) // Set for superboss-type trainers so that level sync scales them *three levels higher than max party level*, intead of two levels lower like standard trainers
 #define FLAG_DONT_TRANSITION_BATTLE_MUSIC           (SYSTEM_FLAGS + 0x8E) // Set to prevent battles from changing the music, takes map music or music from playbgm. Clear after use.
 #define FLAG_PERM_HIDE_FOLLOWER                     (SYSTEM_FLAGS + 0x8F) // Set to permanently hide following Pokémon
+#define FLAG_DONT_PLAY_VICTORY_MUSIC                (SYSTEM_FLAGS + 0x90) // Set to prevent victory music from playing. Automatically clears after trainer victory.
 
-#define FLAG_LANDMARK_MAUVE_HOLLOW                  (SYSTEM_FLAGS + 0x90)
-#define FLAG_LANDMARK_WELLSPRING_CHASM              (SYSTEM_FLAGS + 0x91)
-#define FLAG_LANDMARK_BLANCHED_DEPTHS               (SYSTEM_FLAGS + 0x92)
-#define FLAG_LANDMARK_SUBMERGED_CAVE                (SYSTEM_FLAGS + 0x93)
-#define FLAG_LANDMARK_BYGONE_VAULT                  (SYSTEM_FLAGS + 0x94)
-#define FLAG_LANDMARK_MAUVE_CAMP                    (SYSTEM_FLAGS + 0x95)
-#define FLAG_UNUSED_0x8F6                           (SYSTEM_FLAGS + 0x96) // Unused Flag
+#define FLAG_LANDMARK_MAUVE_HOLLOW                  (SYSTEM_FLAGS + 0x91)
+#define FLAG_LANDMARK_WELLSPRING_CHASM              (SYSTEM_FLAGS + 0x92)
+#define FLAG_LANDMARK_BLANCHED_DEPTHS               (SYSTEM_FLAGS + 0x93)
+#define FLAG_LANDMARK_SUBMERGED_CAVE                (SYSTEM_FLAGS + 0x94)
+#define FLAG_LANDMARK_BYGONE_VAULT                  (SYSTEM_FLAGS + 0x95)
+#define FLAG_LANDMARK_MAUVE_CAMP                    (SYSTEM_FLAGS + 0x96)
 #define FLAG_UNUSED_0x8F7                           (SYSTEM_FLAGS + 0x97) // Unused Flag
 #define FLAG_UNUSED_0x8F8                           (SYSTEM_FLAGS + 0x98) // Unused Flag
 #define FLAG_UNUSED_0x8F9                           (SYSTEM_FLAGS + 0x99) // Unused Flag

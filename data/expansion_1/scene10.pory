@@ -160,13 +160,17 @@ script Expansion1_Rival_Scene10b {
 	msgbox ("HAHAHA!\n"
 			"Live up to your name, {PAUSE 60}“Redd”!\l"
 			"Let us BATHE IN THE BLOOD OF OUR\l"
-			"ENEMIES!!!")
+			"ENEMIES!!!", MSGBOX_AUTOCLOSE)
+	applymovement (IG_REDD, Common_Movement_WalkInPlaceFasterRight)
+	waitmovement (0)
 	speakername (CommonText_Redd)
 	msgbox ("That's not-…{PAUSE 100}! F-{PAUSE 30}FINE!\n"
 			"I can go another round!")
 	speakername (CommonText_Jakson)
 	msgbox ("Everything comes in threes.\n"
-			"This should be the last phase!")
+			"This should be the last phase!", MSGBOX_AUTOCLOSE)
+	applymovement (IG_REDD, Common_Movement_WalkInPlaceFasterUp)
+	waitmovement (0)
 	speakername (CommonText_Harper)
 	msgbox ("One more time!")
 	playmoncry (SPECIES_GYARADOS, CRY_MODE_ENCOUNTER)

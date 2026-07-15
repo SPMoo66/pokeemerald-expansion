@@ -229,52 +229,60 @@ Expansion1_Rival_Scene10b_1:
 # 159 "data/expansion_1/scene10.pory"
 	speakername CommonText_Sakura
 # 160 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_8
+	msgbox Expansion1_Rival_Scene10b_Text_8, MSGBOX_AUTOCLOSE
 # 164 "data/expansion_1/scene10.pory"
-	speakername CommonText_Redd
+	applymovement 6, Common_Movement_WalkInPlaceFasterRight
 # 165 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_9
-# 167 "data/expansion_1/scene10.pory"
-	speakername CommonText_Jakson
-# 168 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_10
-# 170 "data/expansion_1/scene10.pory"
-	speakername CommonText_Harper
-# 171 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10b_Text_11
-# 172 "data/expansion_1/scene10.pory"
-	playmoncry SPECIES_GYARADOS, CRY_MODE_ENCOUNTER
-# 173 "data/expansion_1/scene10.pory"
-	waitmoncry
-# 174 "data/expansion_1/scene10.pory"
-	savebgm MUS_VICTORY_TRAINER
-# 177 "data/expansion_1/scene10.pory"
-	setstartingstatus STARTING_STATUS_RAINBOW_PLAYER
-# 178 "data/expansion_1/scene10.pory"
-	setflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
-# 179 "data/expansion_1/scene10.pory"
-	setflag FLAG_NO_MONEY_LOSS_ON_DEFEAT
-# 180 "data/expansion_1/scene10.pory"
-	setflag FLAG_SINGLE_WILD_OPPONENT
-# 181 "data/expansion_1/scene10.pory"
-	settotemboost B_POSITION_OPPONENT_LEFT, 0, 1, 0, 0, 1
-# 182 "data/expansion_1/scene10.pory"
-	setflag FLAG_SYS_SET_BATTLE_BGM
-# 183 "data/expansion_1/scene10.pory"
-	setvar VAR_BATTLE_BGM, MUS_B2W2_VS_GHETSIS
-# 184 "data/expansion_1/scene10.pory"
-	multi_2_vs_1 TRAINER_EXP_1_FINAL_BATTLE_2, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS
-# 185 "data/expansion_1/scene10.pory"
-	clearflag FLAG_SINGLE_WILD_OPPONENT
-# 186 "data/expansion_1/scene10.pory"
-	clearflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
-# 189 "data/expansion_1/scene10.pory"
+	waitmovement 0
+# 166 "data/expansion_1/scene10.pory"
 	speakername CommonText_Redd
+# 167 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10b_Text_9
+# 169 "data/expansion_1/scene10.pory"
+	speakername CommonText_Jakson
+# 170 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10b_Text_10, MSGBOX_AUTOCLOSE
+# 172 "data/expansion_1/scene10.pory"
+	applymovement 6, Common_Movement_WalkInPlaceFasterUp
+# 173 "data/expansion_1/scene10.pory"
+	waitmovement 0
+# 174 "data/expansion_1/scene10.pory"
+	speakername CommonText_Harper
+# 175 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10b_Text_11
+# 176 "data/expansion_1/scene10.pory"
+	playmoncry SPECIES_GYARADOS, CRY_MODE_ENCOUNTER
+# 177 "data/expansion_1/scene10.pory"
+	waitmoncry
+# 178 "data/expansion_1/scene10.pory"
+	savebgm MUS_VICTORY_TRAINER
+# 181 "data/expansion_1/scene10.pory"
+	setstartingstatus STARTING_STATUS_RAINBOW_PLAYER
+# 182 "data/expansion_1/scene10.pory"
+	setflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
+# 183 "data/expansion_1/scene10.pory"
+	setflag FLAG_NO_MONEY_LOSS_ON_DEFEAT
+# 184 "data/expansion_1/scene10.pory"
+	setflag FLAG_SINGLE_WILD_OPPONENT
+# 185 "data/expansion_1/scene10.pory"
+	settotemboost B_POSITION_OPPONENT_LEFT, 0, 1, 0, 0, 1
+# 186 "data/expansion_1/scene10.pory"
+	setflag FLAG_SYS_SET_BATTLE_BGM
+# 187 "data/expansion_1/scene10.pory"
+	setvar VAR_BATTLE_BGM, MUS_B2W2_VS_GHETSIS
+# 188 "data/expansion_1/scene10.pory"
+	multi_2_vs_1 TRAINER_EXP_1_FINAL_BATTLE_2, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS
+# 189 "data/expansion_1/scene10.pory"
+	clearflag FLAG_SINGLE_WILD_OPPONENT
 # 190 "data/expansion_1/scene10.pory"
+	clearflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
+# 193 "data/expansion_1/scene10.pory"
+	speakername CommonText_Redd
+# 194 "data/expansion_1/scene10.pory"
 	msgbox Expansion1_Rival_Scene10b_Text_12
-# 191 "data/expansion_1/scene10.pory"
+# 195 "data/expansion_1/scene10.pory"
 	call GetBaronsName
-# 192 "data/expansion_1/scene10.pory"
+# 196 "data/expansion_1/scene10.pory"
 	msgbox Expansion1_Rival_Scene10b_Text_13, MSGBOX_AUTOCLOSE
 	return
 
@@ -365,23 +373,23 @@ Expansion1_Rival_Scene10b_Text_8:
 	.string "ENEMIES!!!$"
 
 Expansion1_Rival_Scene10b_Text_9:
-# 165 "data/expansion_1/scene10.pory"
+# 167 "data/expansion_1/scene10.pory"
 	.string "That's not-…{PAUSE 100}! F-{PAUSE 30}FINE!\n"
 	.string "I can go another round!$"
 
 Expansion1_Rival_Scene10b_Text_10:
-# 168 "data/expansion_1/scene10.pory"
+# 170 "data/expansion_1/scene10.pory"
 	.string "Everything comes in threes.\n"
 	.string "This should be the last phase!$"
 
 Expansion1_Rival_Scene10b_Text_11:
-# 171 "data/expansion_1/scene10.pory"
+# 175 "data/expansion_1/scene10.pory"
 	.string "One more time!$"
 
 Expansion1_Rival_Scene10b_Text_12:
-# 190 "data/expansion_1/scene10.pory"
+# 194 "data/expansion_1/scene10.pory"
 	.string "Is that…{PAUSE 100}?!$"
 
 Expansion1_Rival_Scene10b_Text_13:
-# 192 "data/expansion_1/scene10.pory"
+# 196 "data/expansion_1/scene10.pory"
 	.string "Did it… {PAUSE 100}Did it actually…{PAUSE 100}?$"

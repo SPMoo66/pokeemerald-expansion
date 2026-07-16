@@ -1,4 +1,9 @@
 mapscripts IllusoryGrotto_1F_1R_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 51) {
+			setmetatile (19, 0, 0x01D, TRUE)
+		}
+	}
 	MAP_SCRIPT_ON_TRANSITION {
 		setrespawn (HEAL_LOCATION_ILLUSORY_GROTTO_UPPER)
 		setflag (FLAG_TEMP_1)

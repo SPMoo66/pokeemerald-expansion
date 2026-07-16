@@ -1449,6 +1449,10 @@ static const struct SpriteFrameImage sPicTable_Dynamite[] = {
     overworld_ascending_frames(gObjectEventPic_Dynamite, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_CalamityMawShadowed[] = {
+    obj_frame_tiles(gObjectEventPic_CalamityMawShadowed),
+};
+
 static const struct SpriteFrameImage sPicTable_Kindler[] = {
     overworld_ascending_frames(gObjectEventPic_Kindler, 2, 4),
 };

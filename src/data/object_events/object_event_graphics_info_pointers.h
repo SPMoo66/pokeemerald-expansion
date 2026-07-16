@@ -426,6 +426,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Galactic_Gr
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShadowBaron;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FishBowl;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dynamite;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShadowedLucario;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CalamityMawShadowed;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kindler;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BirdKeeper;
@@ -439,7 +441,6 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AromaLady;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pokemaniac;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PkmnRangerM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PkmnRangerF;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShadowedLucario;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -707,6 +708,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_SHADOW_BARON] =             &gObjectEventGraphicsInfo_ShadowBaron,
     [OBJ_EVENT_GFX_FISH_BOWL] =                &gObjectEventGraphicsInfo_FishBowl,
     [OBJ_EVENT_GFX_DYNAMITE] =                 &gObjectEventGraphicsInfo_Dynamite,
+    [OBJ_EVENT_GFX_SHADOWED_LUCARIO] =         &gObjectEventGraphicsInfo_ShadowedLucario,
+    [OBJ_EVENT_GFX_CALAMITY_MAW_SHADOWED] =    &gObjectEventGraphicsInfo_CalamityMawShadowed,
     [OBJ_EVENT_GFX_KINDLER] =                  &gObjectEventGraphicsInfo_Kindler,
     [OBJ_EVENT_GFX_BIRD_KEEPER] =              &gObjectEventGraphicsInfo_BirdKeeper,
     [OBJ_EVENT_GFX_GUITARIST] =                &gObjectEventGraphicsInfo_Guitarist,
@@ -719,7 +722,6 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_POKEMANIAC] =               &gObjectEventGraphicsInfo_Pokemaniac,
     [OBJ_EVENT_GFX_PKMN_RANGER_M] =            &gObjectEventGraphicsInfo_PkmnRangerM,
     [OBJ_EVENT_GFX_PKMN_RANGER_F] =            &gObjectEventGraphicsInfo_PkmnRangerF,
-    [OBJ_EVENT_GFX_SHADOWED_LUCARIO] =         &gObjectEventGraphicsInfo_ShadowedLucario,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
     [OBJ_EVENT_GFX_LIGHT_SPRITE] =             &gObjectEventGraphicsInfo_BallLight,
     [OBJ_EVENT_GFX_APRICORN_TREE] =            &gObjectEventGraphicsInfo_ApricornTree,

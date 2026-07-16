@@ -42,7 +42,7 @@
     },
     {
       "local_id": "IG_BOSS",
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GYARADOS)",
+      "graphics_id": "OBJ_EVENT_GFX_CALAMITY_MAW_SHADOWED",
       "x": 26,
       "y": 3,
       "elevation": 0,

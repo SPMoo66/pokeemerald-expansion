@@ -21225,10 +21225,10 @@ static const struct TrainerMon sParty_WildPokemonIG5[] = {
     {
     .ball = POKEBALL_COUNT,
     .lvl = 75,
-    .species = SPECIES_STARAPTOR,
-    .ability = ABILITY_INTIMIDATE,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_BRAVE_BIRD, MOVE_ROOST, MOVE_U_TURN, MOVE_BLAZE_KICK}
+    .species = SPECIES_OCEAN_GLEAM,
+    .ability = ABILITY_PROTOSYNTHESIS,
+    .heldItem = ITEM_BOOSTER_ENERGY,
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_WIDE_GUARD, MOVE_BLUE_FLARE, MOVE_CORE_ENFORCER}
     },
     {
     .ball = POKEBALL_COUNT,
@@ -21249,21 +21249,23 @@ static const struct TrainerMon sParty_WildPokemonIG5[] = {
     {
     .ball = POKEBALL_COUNT,
     .lvl = 75,
-    .species = SPECIES_CERULEDGE,
-    .ability = ABILITY_WEAK_ARMOR,
-    .heldItem = ITEM_GHOST_GEM,
-    .moves = {MOVE_BITTER_BLADE, MOVE_SHADOW_SNEAK, MOVE_POLTERGEIST, MOVE_SWORDS_DANCE}
-    }
+    .species = SPECIES_REND_ECLIPSE,
+    .nature = NATURE_MODEST,
+    .ability = ABILITY_PROTOSYNTHESIS,
+    .heldItem = ITEM_BOOSTER_ENERGY,
+    .moves = {MOVE_MOONGEIST_BEAM, MOVE_AEROBLAST, MOVE_TRICK_ROOM, MOVE_AQUA_RING}
+    },
 };
 
 static const struct TrainerMon sParty_WildPokemonIG6[] = {
     {
     .ball = POKEBALL_COUNT,
     .lvl = 75,
-    .species = SPECIES_BRELOOM,
-    .ability = ABILITY_TECHNICIAN,
-    .heldItem = ITEM_COBA_BERRY,
-    .moves = {MOVE_MACH_PUNCH, MOVE_SPORE, MOVE_TRAILBLAZE, MOVE_BULLDOZE}
+    .species = SPECIES_TUNDRA_HUSK,
+    .nature = NATURE_ADAMANT,
+    .ability = ABILITY_PROTOSYNTHESIS,
+    .heldItem = ITEM_BOOSTER_ENERGY,
+    .moves = {MOVE_SHELL_SMASH, MOVE_SPIKY_SHIELD, MOVE_IVY_CUDGEL, MOVE_SALT_CURE}
     },
     {
     .ball = POKEBALL_COUNT,

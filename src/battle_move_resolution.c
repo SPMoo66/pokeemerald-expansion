@@ -1173,8 +1173,8 @@ static enum CancelerResult CancelerMoveFailure(struct BattleCalcValues *cv)
     case EFFECT_DARK_VOID:
         if (gBattleStruct->bouncedMoveIsUsed)
             break;
-        if (B_DARK_VOID_FAIL >= GEN_7 && gBattleMons[cv->battlerAtk].species != SPECIES_DARKRAI)
-            battleScript = BattleScript_PokemonCantUseTheMove;
+//        if (B_DARK_VOID_FAIL >= GEN_7 && gBattleMons[cv->battlerAtk].species != SPECIES_DARKRAI)
+//            battleScript = BattleScript_PokemonCantUseTheMove;
         break;
     case EFFECT_AURA_WHEEL:
         if (gBattleMons[cv->battlerAtk].species != SPECIES_MORPEKO_FULL_BELLY
@@ -1182,10 +1182,10 @@ static enum CancelerResult CancelerMoveFailure(struct BattleCalcValues *cv)
             battleScript = BattleScript_PokemonCantUseTheMove;
         break;
     case EFFECT_HYPERSPACE_FURY:
-        if (gBattleMons[cv->battlerAtk].species == SPECIES_HOOPA_CONFINED)
-            battleScript = BattleScript_ButHoopaCantUseIt;
-        else if (gBattleMons[cv->battlerAtk].species != SPECIES_HOOPA_UNBOUND)
-            battleScript = BattleScript_PokemonCantUseTheMove;
+//        if (gBattleMons[cv->battlerAtk].species == SPECIES_HOOPA_CONFINED)
+//            battleScript = BattleScript_ButHoopaCantUseIt;
+//        else if (gBattleMons[cv->battlerAtk].species != SPECIES_HOOPA_UNBOUND)
+//            battleScript = BattleScript_PokemonCantUseTheMove;
         break;
     case EFFECT_AURORA_VEIL:
         if (!(GetWeather() & B_WEATHER_ICY_ANY))

@@ -9940,6 +9940,16 @@ static u32 ComputeCaptureOdds(u32 wildMonBattler, u32 playerBattler)
     if (battleMon->status1 & STATUS1_CAN_MOVE)
         odds = odds * 15 / 10;
 
+    u8 monTarget = GetCatchingBattler();   // This is weird, but what this block does is determine which
+	if (monTarget == 1)                    // opponent is being captured (because of wild double battles)
+        monTarget = 0;                     // and pass the correct target to the GetMonData function below
+    else                                   // for identifying its held item. GetCatchingBattler returns
+        monTarget = 1;                     // 1 or 3, which is then converted to 0 or 1.
+
+    enum Item heldItem = GetMonData(&gParties[B_TRAINER_OPPONENT_A][monTarget], MON_DATA_HELD_ITEM);
+    if (gItemsInfo[heldItem].holdEffect == HOLD_EFFECT_CATCH_RATE_BOOST)
+        odds = odds * 15 / 10;
+
     return odds;
 }
 

@@ -16274,6 +16274,24 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_TreasureChest,
         .iconPalette = gItemIconPalette_TreasureChest,
     },
+
+    [ITEM_CANDY_JAR] =
+    {
+        .name = ITEM_NAME("Candy Jar"),
+        .price = 10000,
+        .holdEffect = HOLD_EFFECT_CATCH_RATE_BOOST,
+        .description = COMPOUND_STRING(
+            "A Pokémon holding\n"
+            "this item is more\n"
+            "easily captured."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 50,
+        .iconPic = gItemIcon_CandyJar,
+        .iconPalette = gItemIconPalette_CandyJar,
+    },
 };
 
 #undef ITEM_NAME

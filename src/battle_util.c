@@ -8106,6 +8106,14 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
         if (ctx->updateFlags)
             RecordAbilityBattle(ctx->battlerAtk, ctx->abilities[ctx->battlerAtk]);
     }
+    else if ((ctx->moveType == TYPE_FIGHTING || ctx->moveType == TYPE_NORMAL) && defType == TYPE_GHOST
+        && ctx->holdEffects[ctx->battlerAtk] == HOLD_EFFECT_SILPH_SCOPE
+        && mod == UQ_4_12(0.0))
+    {
+        mod = UQ_4_12(1.0);
+        if (ctx->updateFlags)
+            RecordItemEffectBattle(ctx->battlerAtk, HOLD_EFFECT_SILPH_SCOPE);
+    }
     else if ((ctx->moveType == TYPE_POISON) && defType == TYPE_STEEL
         && (ctx->abilities[ctx->battlerAtk] == ABILITY_CORROSION)
         && mod == UQ_4_12(0.0))

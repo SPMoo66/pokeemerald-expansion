@@ -4707,6 +4707,8 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
     case EFFECT_FORESIGHT:
         if (aiData->abilities[battlerAtk] == ABILITY_SCRAPPY || aiData->abilities[battlerAtk] == ABILITY_MINDS_EYE)
             break;
+        else if (aiData->holdEffects[battlerAtk] != HOLD_EFFECT_SILPH_SCOPE)
+            break;
         else if (gBattleMons[battlerDef].statStages[STAT_EVASION] > DEFAULT_STAT_STAGE
          || (IS_BATTLER_OF_TYPE(battlerDef, TYPE_GHOST)
          && (HasMoveWithType(battlerAtk, TYPE_NORMAL)

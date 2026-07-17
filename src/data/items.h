@@ -14892,15 +14892,17 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_SILPH_SCOPE] =
     {
         .name = ITEM_NAME("Silph Scope"),
-        .price = 0,
+        .price = 15000,
+        .holdEffect = HOLD_EFFECT_SILPH_SCOPE,
         .description = COMPOUND_STRING(
-            "Silph Co's scope\n"
-            "makes unseeable\n"
-            "Pokémon visible."),
-        .importance = 1,
-        .pocket = POCKET_KEY_ITEMS,
+            "Allows Normal and\n"
+            "Fighting moves to\n"
+            "hit Ghost-types."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 40,
         .iconPic = gItemIcon_SilphScope,
         .iconPalette = gItemIconPalette_SilphScope,
     },
@@ -16329,9 +16331,8 @@ const struct ItemInfo gItemsInfo[] =
             "inflict a burn."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
-        .type = EVO_HELD_ITEM_TYPE,
-        .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
-        .effect = gItemEffect_EvoItem,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
         .iconPic = gItemIcon_DragonFang,
         .iconPalette = gItemIconPalette_BurntFang,

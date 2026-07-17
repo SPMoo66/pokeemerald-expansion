@@ -1354,6 +1354,7 @@ static bool32 HandleEndTurnThirdEventBlock(enum BattlerId battler)
         switch (holdEffect)
         {
         case HOLD_EFFECT_FLAME_ORB:
+        case HOLD_EFFECT_FROST_ORB:
         case HOLD_EFFECT_STICKY_BARB:
         case HOLD_EFFECT_TOXIC_ORB:
             if (ItemBattleEffects(battler, 0, holdEffect, IsOrbsActivation))

@@ -2293,6 +2293,9 @@ static const u8 *const sHoldEffectNames[HOLD_EFFECT_COUNT] =
     [HOLD_EFFECT_WHETSTONE]        = COMPOUND_STRING("Whetstone"),
     [HOLD_EFFECT_WRIST_WEIGHTS]    = COMPOUND_STRING("Wrist Weights"),
     [HOLD_EFFECT_QUICKEST_CLAW]    = COMPOUND_STRING("Quickest Claw"),
+    [HOLD_EFFECT_WILD_ITEM_BOOST]  = COMPOUND_STRING("Wild Item Boost"),
+    [HOLD_EFFECT_CATCH_RATE_BOOST] = COMPOUND_STRING("Catch Rate Boost"),
+    [HOLD_EFFECT_FROST_ORB]        = COMPOUND_STRING("Frost Orb"),
 };
 
 static const u8 *GetHoldEffectName(enum HoldEffect holdEffect)

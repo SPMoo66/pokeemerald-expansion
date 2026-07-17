@@ -2142,3 +2142,6 @@ const u16 gItemIconPalette_TreasureChest[] = INCGFX_U16("graphics/items/icons/tr
 
 const u32 gItemIcon_CandyJar[] = INCGFX_U32("graphics/items/icons/candy_jar.png", ".4bpp.smol");
 const u16 gItemIconPalette_CandyJar[] = INCGFX_U16("graphics/items/icons/candy_jar.png", ".gbapal");
+
+const u32 gItemIcon_FrostOrb[] = INCGFX_U32("graphics/items/icons/frost_orb.png", ".4bpp.smol");
+const u16 gItemIconPalette_FrostOrb[] = INCGFX_U16("graphics/items/icons/frost_orb.png", ".gbapal");

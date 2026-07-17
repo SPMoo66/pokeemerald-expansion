@@ -1080,6 +1080,7 @@ enum __attribute__((packed)) Item
     ITEM_QUICKEST_CLAW = 899,
     ITEM_TREASURE_CHEST = 900,
     ITEM_CANDY_JAR = 901,
+    ITEM_FROST_ORB = 902,
 
     ITEMS_COUNT,
     ITEM_FIELD_ARROW = ITEMS_COUNT,

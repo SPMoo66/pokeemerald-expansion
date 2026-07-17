@@ -2967,6 +2967,9 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
             case HOLD_EFFECT_FLAME_ORB:
                 SetMoveEffect(battlerAtk, effectBattler, MOVE_EFFECT_BURN, gBattlescriptCurrInstr, NO_FLAGS);
                 break;
+            case HOLD_EFFECT_FROST_ORB:
+                SetMoveEffect(battlerAtk, effectBattler, MOVE_EFFECT_FREEZE_OR_FROSTBITE, gBattlescriptCurrInstr, NO_FLAGS);
+                break;
             case HOLD_EFFECT_TOXIC_ORB:
                 SetMoveEffect(battlerAtk, effectBattler, MOVE_EFFECT_TOXIC, gBattlescriptCurrInstr, NO_FLAGS);
                 break;

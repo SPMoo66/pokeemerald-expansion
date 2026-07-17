@@ -626,4 +626,9 @@ const struct HoldEffectInfo gHoldEffectsInfo[HOLD_EFFECT_COUNT] =
     {
     },
 
+    [HOLD_EFFECT_FROST_ORB] =
+    {
+        .orbs = TRUE,
+    },
+
 };

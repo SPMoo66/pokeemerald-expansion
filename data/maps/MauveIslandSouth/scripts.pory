@@ -16,3 +16,7 @@ mapscripts MauveIslandSouth_MapScripts {
 		}
 	}
 }
+
+script MauveIslandSouth_EventScript_Shuckle {
+	msgbox ("Subobo!", MSGBOX_NPC)
+}

@@ -72,7 +72,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MauveIslandSouth_EventScript_Shuckle",
       "flag": "FLAG_TEMP_3"
     },
     {
@@ -85,7 +85,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MauveIslandSouth_EventScript_Shuckle",
       "flag": "FLAG_TEMP_3"
     },
     {
@@ -98,7 +98,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MauveIslandSouth_EventScript_Shuckle",
       "flag": "FLAG_TEMP_3"
     },
     {

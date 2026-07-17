@@ -41,3 +41,13 @@ MauveIslandSouth_MapScripts_MAP_SCRIPT_ON_TRANSITION_6:
 	setobjectmovementtype MAUVEISLANDSOUTH_REDD, MOVEMENT_TYPE_WANDER_AROUND
 	return
 
+
+MauveIslandSouth_EventScript_Shuckle::
+# 21 "data/maps/MauveIslandSouth/scripts.pory"
+	msgbox MauveIslandSouth_EventScript_Shuckle_Text_0, MSGBOX_NPC
+	return
+
+
+MauveIslandSouth_EventScript_Shuckle_Text_0:
+# 21 "data/maps/MauveIslandSouth/scripts.pory"
+	.string "Subobo!$"

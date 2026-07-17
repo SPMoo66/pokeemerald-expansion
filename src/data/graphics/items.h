@@ -2136,3 +2136,6 @@ const u32 gItemIcon_WristWeights[] = INCGFX_U32("graphics/items/icons/wrist_weig
 const u16 gItemIconPalette_WristWeights[] = INCGFX_U16("graphics/items/icons/wrist_weights.png", ".gbapal");
 
 const u16 gItemIconPalette_QuickestClaw[] = INCGFX_U16("graphics/items/icon_palettes/quickest_claw.pal", ".gbapal");
+
+const u32 gItemIcon_TreasureChest[] = INCGFX_U32("graphics/items/icons/treasure_chest.png", ".4bpp.smol");
+const u16 gItemIconPalette_TreasureChest[] = INCGFX_U16("graphics/items/icons/treasure_chest.png", ".gbapal");

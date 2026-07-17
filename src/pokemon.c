@@ -5855,6 +5855,10 @@ void SetWildMonHeldItem(void)
         u16 chanceNoItem = itemHeldBoost ? 20 : 45;
         u16 chanceNotRare = itemHeldBoost ? 80 : 95;
 
+        enum Item heldItem = GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_HELD_ITEM);
+        if (gItemsInfo[heldItem].holdEffect == HOLD_EFFECT_REPEL)
+            chanceNotRare -= 30;
+
         for (i = 0; i < count; i++)
         {
             if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HELD_ITEM) != ITEM_NONE)

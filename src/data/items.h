@@ -16256,6 +16256,24 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_QuickClaw,
         .iconPalette = gItemIconPalette_QuickestClaw,
     },
+
+    [ITEM_TREASURE_CHEST] =
+    {
+        .name = ITEM_NAME("Treasure Chest"),
+        .price = 10000,
+        .holdEffect = HOLD_EFFECT_WILD_ITEM_BOOST,
+        .description = COMPOUND_STRING(
+            "Makes wild Pokémon\n"
+            "hold rare items\n"
+            "more frequently."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 60,
+        .iconPic = gItemIcon_TreasureChest,
+        .iconPalette = gItemIconPalette_TreasureChest,
+    },
 };
 
 #undef ITEM_NAME

@@ -347,3 +347,27 @@ BattleFrontier_Lounge7_Text_RightTutorWelcomeBack:
 	.string "Ihihihi!\p"
 	.string "Have you come to learn hard and\n"
 	.string "yet pretty Pokémon moves?$"
+
+
+MoveTutor_Text_Exp1MoveTeach:
+	.string "Can you believe it?!\p"
+	.string "So many other regions have tons\n"
+	.string "and tons of Technical Machines!\p"
+	.string "But even here it's just the 120 from\n"
+	.string "Hoenn!\p"
+	.string "Here!\p"
+	.string "I know many moves, so I'll teach your\n"
+	.string "Pokémon some!$"
+
+MoveTutor_Text_Exp1MoveDeclined:
+	.string "Fine\p"
+	.string "Enjoy your pathetic 120 Technical\n"
+	.string "Machines!$"
+
+MoveTutor_Text_Exp1MoveWhichMon:
+	.string "Ah, I knew we were alike!\n"
+	.string "Which Pokémon should I teach?$"
+
+MoveTutor_Text_Exp1MoveTaught:
+	.string "Yes!\p"
+	.string "Go to victory with that move!$"

@@ -1260,26 +1260,112 @@ BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect::
 	return
 
 
-MoveTutor_EventScript_OpenPartyMenu::
-# 551 "data/scripts/move_tutors.pory"
-	chooseboxmon SELECT_PC_MON_MOVE_TUTOR
-# 552 "data/scripts/move_tutors.pory"
-	waitstate
-# 553 "data/scripts/move_tutors.pory"
+MauveIslandWest_EventScript_Exp1MoveTutor::
+# 550 "data/scripts/move_tutors.pory"
 	lock
-# 554 "data/scripts/move_tutors.pory"
+# 551 "data/scripts/move_tutors.pory"
 	faceplayer
-# 555 "data/scripts/move_tutors.pory"
+# 552 "data/scripts/move_tutors.pory"
+	msgbox MoveTutor_Text_Exp1MoveTeach, MSGBOX_YESNO
+# 553 "data/scripts/move_tutors.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq MauveIslandWest_EventScript_Exp1MoveTutor_2
+MauveIslandWest_EventScript_Exp1MoveTutor_1:
+# 556 "data/scripts/move_tutors.pory"
+	msgbox MoveTutor_Text_WhichMoveToTeach, MSGBOX_DEFAULT
+# 557 "data/scripts/move_tutors.pory"
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, MauveIslandWest_EventScript_Exp1MoveTutor_Text_0, MauveIslandWest_EventScript_Exp1MoveTutor_Text_1, MauveIslandWest_EventScript_Exp1MoveTutor_Text_2, MauveIslandWest_EventScript_Exp1MoveTutor_Text_3
+# 558 "data/scripts/move_tutors.pory"
+	switch VAR_RESULT
+# 559 "data/scripts/move_tutors.pory"
+	case 0, MauveIslandWest_EventScript_Exp1MoveTutor_6
+# 561 "data/scripts/move_tutors.pory"
+	case 1, MauveIslandWest_EventScript_Exp1MoveTutor_7
+# 563 "data/scripts/move_tutors.pory"
+	case 2, MauveIslandWest_EventScript_Exp1MoveTutor_8
+# 565 "data/scripts/move_tutors.pory"
+	case 3, MauveIslandWest_EventScript_Exp1MoveTutor_9
+# 567 "data/scripts/move_tutors.pory"
+	case 127, MauveIslandWest_EventScript_Exp1MoveTutor_10
+MauveIslandWest_EventScript_Exp1MoveTutor_4:
+# 570 "data/scripts/move_tutors.pory"
+	msgbox MoveTutor_Text_Exp1MoveWhichMon, MSGBOX_DEFAULT
+# 571 "data/scripts/move_tutors.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 572 "data/scripts/move_tutors.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq MauveIslandWest_EventScript_Exp1MoveTutor_12
+MauveIslandWest_EventScript_Exp1MoveTutor_11:
+# 575 "data/scripts/move_tutors.pory"
+	msgbox MoveTutor_Text_Exp1MoveTaught, MSGBOX_DEFAULT
+# 576 "data/scripts/move_tutors.pory"
+	release
+	return
+
+MauveIslandWest_EventScript_Exp1MoveTutor_2:
+# 554 "data/scripts/move_tutors.pory"
+	goto MoveTutor_EventScript_Exp1MoveDeclined
+	goto MauveIslandWest_EventScript_Exp1MoveTutor_1
+
+MauveIslandWest_EventScript_Exp1MoveTutor_6:
+# 560 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_BODY_PRESS
+	goto MauveIslandWest_EventScript_Exp1MoveTutor_4
+
+MauveIslandWest_EventScript_Exp1MoveTutor_7:
+# 562 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_SPIKES
+	goto MauveIslandWest_EventScript_Exp1MoveTutor_4
+
+MauveIslandWest_EventScript_Exp1MoveTutor_8:
+# 564 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_TOXIC_SPIKES
+	goto MauveIslandWest_EventScript_Exp1MoveTutor_4
+
+MauveIslandWest_EventScript_Exp1MoveTutor_9:
+# 566 "data/scripts/move_tutors.pory"
+	setvar VAR_0x8005, MOVE_CONFUSE_RAY
+	goto MauveIslandWest_EventScript_Exp1MoveTutor_4
+
+MauveIslandWest_EventScript_Exp1MoveTutor_10:
+# 568 "data/scripts/move_tutors.pory"
+	goto MoveTutor_EventScript_CombatMoveDeclined
+	goto MauveIslandWest_EventScript_Exp1MoveTutor_4
+
+MauveIslandWest_EventScript_Exp1MoveTutor_12:
+# 573 "data/scripts/move_tutors.pory"
+	goto MoveTutor_EventScript_Exp1MoveDeclined
+	goto MauveIslandWest_EventScript_Exp1MoveTutor_11
+
+
+MoveTutor_EventScript_Exp1MoveDeclined::
+# 580 "data/scripts/move_tutors.pory"
+	msgbox MoveTutor_Text_Exp1MoveDeclined, MSGBOX_DEFAULT
+# 581 "data/scripts/move_tutors.pory"
+	release
+	return
+
+
+MoveTutor_EventScript_OpenPartyMenu::
+# 587 "data/scripts/move_tutors.pory"
+	chooseboxmon SELECT_PC_MON_MOVE_TUTOR
+# 588 "data/scripts/move_tutors.pory"
+	waitstate
+# 589 "data/scripts/move_tutors.pory"
+	lock
+# 590 "data/scripts/move_tutors.pory"
+	faceplayer
+# 591 "data/scripts/move_tutors.pory"
 	release
 	return
 
 
 MoveTutor_AfterChooseBoxMon::
-# 559 "data/scripts/move_tutors.pory"
+# 595 "data/scripts/move_tutors.pory"
 	waitstate
-# 560 "data/scripts/move_tutors.pory"
+# 596 "data/scripts/move_tutors.pory"
 	special CanTeachMoveBoxMon
-# 561 "data/scripts/move_tutors.pory"
+# 597 "data/scripts/move_tutors.pory"
 	waitstate
 	return
 
@@ -1495,3 +1581,19 @@ BattleFrontier_Lounge7_EventScript_RightMoveTutor2_Text_4:
 BattleFrontier_Lounge7_EventScript_RightMoveTutor2_Text_5:
 # 489 "data/scripts/move_tutors.pory"
 	.string "Behemoth Bash$"
+
+MauveIslandWest_EventScript_Exp1MoveTutor_Text_0:
+# 557 "data/scripts/move_tutors.pory"
+	.string "Body Press$"
+
+MauveIslandWest_EventScript_Exp1MoveTutor_Text_1:
+# 557 "data/scripts/move_tutors.pory"
+	.string "Spikes$"
+
+MauveIslandWest_EventScript_Exp1MoveTutor_Text_2:
+# 557 "data/scripts/move_tutors.pory"
+	.string "Toxic Spikes$"
+
+MauveIslandWest_EventScript_Exp1MoveTutor_Text_3:
+# 557 "data/scripts/move_tutors.pory"
+	.string "Confuse Ray$"

@@ -123,10 +123,6 @@ text Gamecube_Text_Congratulations {
 	"the current series of battles."
 }
 
-text PlayerObtained5BattlePoints {
-	"{PLAYER} obtained\n5 Battle Points."
-}
-
 text Gamecube_Text_ExitingSim {
 	"Closing simulation…\n"
 	"Don't turn off the power…"
@@ -235,9 +231,10 @@ script CynthiasChallenge_Series3 {
 	if (!flag(FLAG_BATTLESIM_DISC_1_3)) {
 		giveitem (ITEM_SHINY_LURE, 1)
 		giveitem (ITEM_EXP_CANDY_XL, 2)
+		buffernumberstring (STR_VAR_1, 5)
 		setvar (VAR_0x8004, 5)
 		special (GiveFrontierBattlePoints)
-		msgbox (PlayerObtained5BattlePoints, MSGBOX_GETPOINTS)
+		msgbox (PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS)
 		setflag (FLAG_BATTLESIM_DISC_1_3)
 	}
 	else {

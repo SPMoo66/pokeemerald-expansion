@@ -185,8 +185,36 @@ script Expansion1_Rival_Scene01 {
 	speakername (CommonText_Sakura)
 	msgbox ("Aye aye, Captain!", MSGBOX_AUTOCLOSE)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 20)
-	warpsilent (MAP_SLATEPORT_CITY_HARBOR, 14, 13)
-	waitstate
+	fadescreen (FADE_TO_BLACK)
+	warpcontinuescript (MAP_SLATEPORT_CITY_HARBOR, 10, 13, Expansion1_Rival_Scene01b)
+}
+
+script Expansion1_Rival_Scene01b {
+	fadescreen (FADE_FROM_BLACK)
+	delay (30)
+	playse (SE_PIN)
+	applymovement (SLATEPORT_HARBOR_JAKSON, Common_Movement_ExclamationMark)
+	delay (40)
+	speakername (CommonText_Jakson)
+	msgbox ("Oh, {PLAYER}!", MSGBOX_AUTOCLOSE)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
+	applymovement (SLATEPORT_HARBOR_JAKSON, Common_Movement_WalkDown)
+	waitmovement (0)
+	msgbox ("I almost forgot.\p"
+			"I already gave these to the others\n"
+			"earlier, but this is a small gift to\l"
+			"help you get ready.", MSGBOX_AUTOCLOSE)
+	buffernumberstring (STR_VAR_1, 5)
+	setvar (VAR_0x8004, 5)
+	special (GiveFrontierBattlePoints)
+	msgbox (PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS)
+	speakername (CommonText_Jakson)
+	msgbox ("Like I said, come see when you're\n"
+			"ready to get going.", MSGBOX_AUTOCLOSE)
+	applymovement (SLATEPORT_HARBOR_JAKSON, Common_Movement_WalkUp)
+	waitmovement (0)
+	applymovement (SLATEPORT_HARBOR_JAKSON, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement (0)
 }
 
 script SlateportHarbor_PostScene01_SetPositions {

@@ -1298,6 +1298,10 @@ text Text_7th {
 	"7th"
 }
 
+text PlayerObtainedXBattlePoints {
+	"{PLAYER} obtained\n{STR_VAR_1} Battle Points."
+}
+
 script IncreasePokevialSize {
 	speakername (NULL)
 	pokevialincreasesize

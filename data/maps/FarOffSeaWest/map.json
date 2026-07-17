@@ -53,8 +53,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "FarOffSeaWest_ChallengeBall",
+      "flag": "FLAG_CHALLENGE_BALL_FAR_OFF_SEA_WEST"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",

@@ -1302,11 +1302,11 @@
 #define FLAG_ITEM_MAUVE_ISLAND_WEST_ITEM                            0x4AD // Needs item
 #define FLAG_ITEM_BYGONE_VAULT_L1_ITEM                              0x4AE // Needs item
 
-#define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
-#define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
-#define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
-#define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
-#define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag
+#define FLAG_CHALLENGE_BALL_ILLUSORY_GROTTO                         0x4AF
+#define FLAG_CHALLENGE_BALL_FAR_OFF_SEA_WEST                        0x4B0
+#define FLAG_CHALLENGE_BALL_MAUVE_ISLAND_SOUTH                      0x4B1
+#define FLAG_CHALLENGE_BALL_MAUVE_HOLLOW                            0x4B2
+#define FLAG_CHALLENGE_BALL_WELLSPRING_CHASM                        0x4B3
 #define FLAG_UNUSED_0x4B4                                           0x4B4 // Unused Flag
 #define FLAG_UNUSED_0x4B5                                           0x4B5 // Unused Flag
 #define FLAG_UNUSED_0x4B6                                           0x4B6 // Unused Flag

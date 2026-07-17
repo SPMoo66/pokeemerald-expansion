@@ -16260,7 +16260,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TREASURE_CHEST] =
     {
         .name = ITEM_NAME("Treasure Chest"),
-        .price = 10000,
+        .price = 12000,
         .holdEffect = HOLD_EFFECT_WILD_ITEM_BOOST,
         .description = COMPOUND_STRING(
             "Makes wild Pokémon\n"
@@ -16315,6 +16315,26 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_FrostOrb,
         .iconPalette = gItemIconPalette_FrostOrb,
+    },
+
+    [ITEM_BURNT_FANG] =
+    {
+        .name = ITEM_NAME("Burnt Fang"),
+        .price = 8000,
+        .holdEffect = HOLD_EFFECT_DRAGON_BURN,
+        .holdEffectParam = 20,
+        .description = COMPOUND_STRING(
+            "When held, Dragon-\n"
+            "type moves may\n"
+            "inflict a burn."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
+        .type = EVO_HELD_ITEM_TYPE,
+        .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
+        .effect = gItemEffect_EvoItem,
+        .flingPower = 80,
+        .iconPic = gItemIcon_DragonFang,
+        .iconPalette = gItemIconPalette_BurntFang,
     },
 };
 

@@ -3481,5 +3481,6 @@ extern const u32 gItemIcon_CandyJar[];
 extern const u16 gItemIconPalette_CandyJar[];
 extern const u32 gItemIcon_FrostOrb[];
 extern const u16 gItemIconPalette_FrostOrb[];
+extern const u16 gItemIconPalette_BurntFang[];
 
 #endif //GUARD_GRAPHICS_H

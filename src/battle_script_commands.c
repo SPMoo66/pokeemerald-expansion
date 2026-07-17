@@ -2964,6 +2964,7 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
             gBattlescriptCurrInstr = BattleScript_RemoveItem;
             switch (holdEffect)
             {
+            case HOLD_EFFECT_DRAGON_BURN:
             case HOLD_EFFECT_FLAME_ORB:
                 SetMoveEffect(battlerAtk, effectBattler, MOVE_EFFECT_BURN, gBattlescriptCurrInstr, NO_FLAGS);
                 break;

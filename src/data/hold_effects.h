@@ -631,4 +631,9 @@ const struct HoldEffectInfo gHoldEffectsInfo[HOLD_EFFECT_COUNT] =
         .orbs = TRUE,
     },
 
+    [HOLD_EFFECT_DRAGON_BURN] =
+    {
+        .onAttackerAfterHit = TRUE,
+    },
+
 };

@@ -1081,6 +1081,7 @@ enum __attribute__((packed)) Item
     ITEM_TREASURE_CHEST = 900,
     ITEM_CANDY_JAR = 901,
     ITEM_FROST_ORB = 902,
+    ITEM_BURNT_FANG = 903,
 
     ITEMS_COUNT,
     ITEM_FIELD_ARROW = ITEMS_COUNT,

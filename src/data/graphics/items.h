@@ -2145,3 +2145,5 @@ const u16 gItemIconPalette_CandyJar[] = INCGFX_U16("graphics/items/icons/candy_j
 
 const u32 gItemIcon_FrostOrb[] = INCGFX_U32("graphics/items/icons/frost_orb.png", ".4bpp.smol");
 const u16 gItemIconPalette_FrostOrb[] = INCGFX_U16("graphics/items/icons/frost_orb.png", ".gbapal");
+
+const u16 gItemIconPalette_BurntFang[] = INCGFX_U16("graphics/items/icon_palettes/burnt_fang.pal", ".gbapal");

@@ -210,6 +210,33 @@ static enum ItemEffect TryKingsRock(enum BattlerId battlerAtk, enum BattlerId ba
     return effect;
 }
 
+static enum ItemEffect TryDragonBurn(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Item item)
+{
+    enum ItemEffect effect = ITEM_NO_EFFECT;
+    enum Ability abilityDef = GetBattlerAbility(battlerDef);
+
+    if (!IsBattlerAlive(battlerDef)
+     || !IsBattlerTurnDamaged(battlerDef, EXCLUDING_SUBSTITUTES)
+     || !CanBeBurned(battlerAtk, battlerDef, abilityDef)
+     || MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_BURN)
+     || GetBattleMoveType(gCurrentMove) != TYPE_DRAGON)
+        return effect;
+
+    enum Ability abilityAtk = GetBattlerAbility(battlerAtk);
+    u32 holdEffectParam = GetItemHoldEffectParam(item);
+
+    if ((B_SERENE_GRACE_BOOST >= GEN_5 && abilityAtk == ABILITY_SERENE_GRACE)
+     || ((gSideStatuses[GetBattlerSide(battlerAtk)] & SIDE_STATUS_RAINBOW) && gCurrentMove != MOVE_SECRET_POWER))
+        holdEffectParam *= 2;
+    if (RandomPercentage(RNG_HOLD_EFFECT_FLINCH, holdEffectParam))
+    {
+        SetMoveEffect(battlerAtk, battlerDef, MOVE_EFFECT_BURN, gBattlescriptCurrInstr, NO_FLAGS);
+        effect = ITEM_EFFECT_OTHER;
+    }
+
+    return effect;
+}
+
 static enum ItemEffect TryAirBalloon(enum BattlerId battler, ActivationTiming timing)
 {
     enum ItemEffect effect = ITEM_NO_EFFECT;
@@ -1137,6 +1164,9 @@ enum ItemEffect ItemBattleEffects(enum BattlerId itemBattler, enum BattlerId bat
         break;
     case HOLD_EFFECT_FLINCH: // Kings Rock
         effect = TryKingsRock(itemBattler, battler, item);
+        break;
+    case HOLD_EFFECT_DRAGON_BURN: // Kings Rock
+        effect = TryDragonBurn(itemBattler, battler, item);
         break;
     case HOLD_EFFECT_AIR_BALLOON:
         effect = TryAirBalloon(itemBattler, timing);

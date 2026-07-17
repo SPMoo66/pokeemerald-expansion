@@ -360,7 +360,7 @@ MoveTutor_Text_Exp1MoveTeach:
 	.string "Pokémon some!$"
 
 MoveTutor_Text_Exp1MoveDeclined:
-	.string "Fine\p"
+	.string "Fine!\p"
 	.string "Enjoy your pathetic 120 Technical\n"
 	.string "Machines!$"
 

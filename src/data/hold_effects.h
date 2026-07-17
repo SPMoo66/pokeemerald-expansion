@@ -606,4 +606,16 @@ const struct HoldEffectInfo gHoldEffectsInfo[HOLD_EFFECT_COUNT] =
     {
         .onSwitchIn = TRUE,
     },
+
+    [HOLD_EFFECT_WHETSTONE] =
+    {
+        .sprayLeppaBlunder = TRUE,
+    },
+
+
+    [HOLD_EFFECT_WRIST_WEIGHTS] =
+    {
+        .sprayLeppaBlunder = TRUE,
+    },
+
 };

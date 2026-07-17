@@ -3469,4 +3469,10 @@ extern const u16 gBattleIcons_Pal2[];
 extern const u32 gGhostFrontPic[];
 extern const u16 gGhostPalette[];
 
+// Custom Held Items
+extern const u32 gItemIcon_Whetstone[];
+extern const u16 gItemIconPalette_Whetstone[];
+extern const u32 gItemIcon_WristWeights[];
+extern const u16 gItemIconPalette_WristWeights[];
+
 #endif //GUARD_GRAPHICS_H

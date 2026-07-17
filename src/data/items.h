@@ -16201,6 +16201,42 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_Lure,
         .iconPalette = gItemIconPalette_Lure,
     },
+
+    [ITEM_WHETSTONE] =
+    {
+        .name = ITEM_NAME("Whetstone"),
+        .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
+        .holdEffect = HOLD_EFFECT_WHETSTONE,
+        .description = COMPOUND_STRING(
+            "Raises Atk. if\n"
+            "the holder uses a\n"
+            "slicing move."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 60,
+        .iconPic = gItemIcon_Whetstone,
+        .iconPalette = gItemIconPalette_Whetstone,
+    },
+
+    [ITEM_WRIST_WEIGHTS] =
+    {
+        .name = ITEM_NAME("Wrist Weights"),
+        .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
+        .holdEffect = HOLD_EFFECT_WRIST_WEIGHTS,
+        .description = COMPOUND_STRING(
+            "Raises Speed if\n"
+            "the holder uses a\n"
+            "punching move."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 50,
+        .iconPic = gItemIcon_WristWeights,
+        .iconPalette = gItemIconPalette_WristWeights,
+    },
 };
 
 #undef ITEM_NAME

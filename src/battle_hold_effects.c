@@ -496,6 +496,44 @@ static enum ItemEffect TryThroatSpray(enum BattlerId battlerAtk)
     return effect;
 }
 
+static enum ItemEffect TryWhetstone(enum BattlerId battlerAtk)
+{
+    enum ItemEffect effect = ITEM_NO_EFFECT;
+
+    if (IsSlicingMove(gCurrentMove)
+     && !gBattleStruct->battlerState[battlerAtk].redCardSwitched
+     && !gBattleStruct->unableToUseMove
+     && (IsAnyTargetTurnDamaged(battlerAtk, INCLUDING_SUBSTITUTES) || (GetBattleMoveCategory(gCurrentMove) == DAMAGE_CATEGORY_STATUS && IsAnyTargetAffected()))
+     && CompareStat(battlerAtk, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN, GetBattlerAbility(battlerAtk))
+     && !NoAliveMonsForEitherParty())   // Don't activate if battle will end
+    {
+        SetStatChange(battlerAtk, STAT_ATK, 1);
+        BattleScriptCall(BattleScript_ItemStatChange);
+        effect = ITEM_STATS_CHANGE;
+    }
+
+    return effect;
+}
+
+static enum ItemEffect TryWristWeights(enum BattlerId battlerAtk)
+{
+    enum ItemEffect effect = ITEM_NO_EFFECT;
+
+    if (IsPunchingMove(gCurrentMove)
+     && !gBattleStruct->battlerState[battlerAtk].redCardSwitched
+     && !gBattleStruct->unableToUseMove
+     && (IsAnyTargetTurnDamaged(battlerAtk, INCLUDING_SUBSTITUTES) || (GetBattleMoveCategory(gCurrentMove) == DAMAGE_CATEGORY_STATUS && IsAnyTargetAffected()))
+     && CompareStat(battlerAtk, STAT_SPEED, MAX_STAT_STAGE, CMP_LESS_THAN, GetBattlerAbility(battlerAtk))
+     && !NoAliveMonsForEitherParty())   // Don't activate if battle will end
+    {
+        SetStatChange(battlerAtk, STAT_SPEED, 1);
+        BattleScriptCall(BattleScript_ItemStatChange);
+        effect = ITEM_STATS_CHANGE;
+    }
+
+    return effect;
+}
+
 static enum ItemEffect DamagedStatBoostBerryEffect(enum BattlerId battlerDef, enum BattlerId battlerAtk, enum Stat statId, enum DamageCategory category)
 {
     enum ItemEffect effect = ITEM_NO_EFFECT;
@@ -1223,6 +1261,12 @@ enum ItemEffect ItemBattleEffects(enum BattlerId itemBattler, enum BattlerId bat
         break;
     case HOLD_EFFECT_MICLE_BERRY:
         effect = TrySetMicleBerry(itemBattler, item);
+        break;
+    case HOLD_EFFECT_WHETSTONE:
+        effect = TryWhetstone(itemBattler);
+        break;
+    case HOLD_EFFECT_WRIST_WEIGHTS:
+        effect = TryWristWeights(itemBattler);
         break;
     default:
         break;

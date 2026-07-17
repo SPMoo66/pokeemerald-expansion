@@ -1743,6 +1743,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/expansion_1/scene09.inc"
 	.include "data/expansion_1/town08.inc"
 	.include "data/expansion_1/scene10.inc"
+	.include "data/expansion_1/challenge_balls.inc"
 
 	.include "data/maps/LeafyClearing/scripts.inc"
 	.include "data/maps/CaveOfDreams/scripts.inc"

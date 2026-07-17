@@ -16205,7 +16205,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_WHETSTONE] =
     {
         .name = ITEM_NAME("Whetstone"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
+        .price = 12000,
         .holdEffect = HOLD_EFFECT_WHETSTONE,
         .description = COMPOUND_STRING(
             "Raises Atk. if\n"
@@ -16215,7 +16215,7 @@ const struct ItemInfo gItemsInfo[] =
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 60,
+        .flingPower = 70,
         .iconPic = gItemIcon_Whetstone,
         .iconPalette = gItemIconPalette_Whetstone,
     },
@@ -16223,7 +16223,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_WRIST_WEIGHTS] =
     {
         .name = ITEM_NAME("Wrist Weights"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
+        .price = 12000,
         .holdEffect = HOLD_EFFECT_WRIST_WEIGHTS,
         .description = COMPOUND_STRING(
             "Raises Speed if\n"
@@ -16233,9 +16233,28 @@ const struct ItemInfo gItemsInfo[] =
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 50,
+        .flingPower = 60,
         .iconPic = gItemIcon_WristWeights,
         .iconPalette = gItemIconPalette_WristWeights,
+    },
+
+    [ITEM_QUICKEST_CLAW] =
+    {
+        .name = ITEM_NAME("Quickest Claw"),
+        .price = 12000,
+        .holdEffect = HOLD_EFFECT_QUICKEST_CLAW,
+        .holdEffectParam = 50,
+        .description = COMPOUND_STRING(
+            "Increases the\n"
+            "power of a high-\n"
+            "priority move."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 90,
+        .iconPic = gItemIcon_QuickClaw,
+        .iconPalette = gItemIconPalette_QuickestClaw,
     },
 };
 

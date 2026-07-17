@@ -143,6 +143,7 @@ enum __attribute__((packed)) HoldEffect
     // Custom hold effects
     HOLD_EFFECT_WHETSTONE,
     HOLD_EFFECT_WRIST_WEIGHTS,
+    HOLD_EFFECT_QUICKEST_CLAW,
     HOLD_EFFECT_COUNT
 };
 

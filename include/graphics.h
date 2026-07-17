@@ -3474,5 +3474,6 @@ extern const u32 gItemIcon_Whetstone[];
 extern const u16 gItemIconPalette_Whetstone[];
 extern const u32 gItemIcon_WristWeights[];
 extern const u16 gItemIconPalette_WristWeights[];
+extern const u16 gItemIconPalette_QuickestClaw[];
 
 #endif //GUARD_GRAPHICS_H

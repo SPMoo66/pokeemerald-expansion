@@ -2134,3 +2134,5 @@ const u16 gItemIconPalette_Whetstone[] = INCGFX_U16("graphics/items/icons/whetst
 
 const u32 gItemIcon_WristWeights[] = INCGFX_U32("graphics/items/icons/wrist_weights.png", ".4bpp.smol");
 const u16 gItemIconPalette_WristWeights[] = INCGFX_U16("graphics/items/icons/wrist_weights.png", ".gbapal");
+
+const u16 gItemIconPalette_QuickestClaw[] = INCGFX_U16("graphics/items/icon_palettes/quickest_claw.pal", ".gbapal");

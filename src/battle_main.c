@@ -6181,6 +6181,13 @@ void SetTypeBeforeUsingMove(enum Move move, enum BattlerId battler)
         gSpecialStatuses[battler].gemParam = GetBattlerHoldEffectParam(battler);
         gSpecialStatuses[battler].gemBoost = TRUE;
     }
+
+    if (holdEffect == HOLD_EFFECT_QUICKEST_CLAW
+        && GetChosenMovePriority(gBattlerAttacker, gBattleMons[battler].ability) > 0)
+    {
+        gSpecialStatuses[battler].gemParam = GetBattlerHoldEffectParam(battler);
+        gSpecialStatuses[battler].gemBoost = TRUE;
+    }
 }
 
 // Queues stat boosts for a given battler for totem battles

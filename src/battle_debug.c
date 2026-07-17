@@ -2292,6 +2292,7 @@ static const u8 *const sHoldEffectNames[HOLD_EFFECT_COUNT] =
     [HOLD_EFFECT_BERSERK_GENE]     = COMPOUND_STRING("Berserk Gene"),
     [HOLD_EFFECT_WHETSTONE]        = COMPOUND_STRING("Whetstone"),
     [HOLD_EFFECT_WRIST_WEIGHTS]    = COMPOUND_STRING("Wrist Weights"),
+    [HOLD_EFFECT_QUICKEST_CLAW]    = COMPOUND_STRING("Quickest Claw"),
 };
 
 static const u8 *GetHoldEffectName(enum HoldEffect holdEffect)

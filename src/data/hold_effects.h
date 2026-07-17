@@ -618,4 +618,8 @@ const struct HoldEffectInfo gHoldEffectsInfo[HOLD_EFFECT_COUNT] =
         .sprayLeppaBlunder = TRUE,
     },
 
+    [HOLD_EFFECT_QUICKEST_CLAW] =
+    {
+    },
+
 };

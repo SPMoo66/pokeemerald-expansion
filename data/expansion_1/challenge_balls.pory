@@ -90,7 +90,7 @@ script WellspringChasm_ChallengeBall {
 		clearflag (FLAG_NO_CATCHING)
 		clearflag (FLAG_NO_RUNNING)
 		clearflag (FLAG_SMART_WILD_AI)
-#		finditem (ITEM_, 1)
+		finditem (ITEM_SILPH_SCOPE, 1)
 		setwildbattle (SPECIES_BULBASAUR, 1)
 	}
 	release

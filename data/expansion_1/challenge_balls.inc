@@ -172,6 +172,8 @@ WellspringChasm_ChallengeBall_2:
 	clearflag FLAG_NO_RUNNING
 # 92 "data/expansion_1/challenge_balls.pory"
 	clearflag FLAG_SMART_WILD_AI
+# 93 "data/expansion_1/challenge_balls.pory"
+	finditem ITEM_SILPH_SCOPE, 1
 # 94 "data/expansion_1/challenge_balls.pory"
 	setwildbattle SPECIES_BULBASAUR, 1
 	goto WellspringChasm_ChallengeBall_1

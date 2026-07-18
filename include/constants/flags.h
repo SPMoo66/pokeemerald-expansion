@@ -1283,31 +1283,31 @@
 #define FLAG_ITEM_ILLUSORY_GROTTO_B4F_2R_ITEM                       0x49A // Needs item
 #define FLAG_ITEM_ILLUSORY_GROTTO_1F_1R_ITEM                        0x49B // Needs item
 #define FLAG_ITEM_ILLUSORY_GROTTO_EXTERIOR_ITEM                     0x49C // Needs item
-#define FLAG_ITEM_FAR_OFF_SEA_WEST_2_ITEM                           0x49D // Needs item
-#define FLAG_ITEM_FAR_OFF_SEA_WEST_ITEM                             0x49E // Needs item
-#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_1     0x49F // Needs item
-#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_2     0x4A0 // Needs item
-#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_3     0x4A1 // Needs item
-#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_4     0x4A2 // Needs item
-#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_5     0x4A3 // Needs item
-#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_6     0x4A4 // Needs item
-#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_7     0x4A5 // Needs item
-#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_2_ITEM_1     0x4A6 // Needs item
-#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_2_ITEM_2     0x4A7 // Needs item
-#define FLAG_ITEM_MAUVE_ISLAND_SOUTHEAST_ITEM                       0x4A8 // Needs item
-#define FLAG_ITEM_BLANCHED_DEPTHS_1F_1R_ITEM                        0x4A9 // Needs item
-#define FLAG_ITEM_BLANCHED_DEPTHS_2F_1R_ITEM                        0x4AA // Needs item
-#define FLAG_HIDDEN_ITEM_MAUVE_HOLLOW_ITEM                          0x4AB // Needs item
-#define FLAG_HIDDEN_ITEM_WELLSPRING_CHASM_2_ITEM                    0x4AC // Needs item
-#define FLAG_ITEM_MAUVE_ISLAND_WEST_ITEM                            0x4AD // Needs item
-#define FLAG_ITEM_BYGONE_VAULT_L1_ITEM                              0x4AE // Needs item
+#define FLAG_ITEM_FAR_OFF_SEA_WEST_2_ITEM_1                         0x49D // Needs item
+#define FLAG_ITEM_FAR_OFF_SEA_WEST_2_ITEM_2                         0x49E // Needs item
+#define FLAG_ITEM_FAR_OFF_SEA_WEST_2_ITEM_3                         0x49F // Needs item
+#define FLAG_ITEM_FAR_OFF_SEA_WEST_ITEM                             0x4A0 // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_1     0x4A1 // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_2     0x4A2 // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_3     0x4A3 // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_4     0x4A4 // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_5     0x4A5 // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_ITEM_6     0x4A6 // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_2_ITEM_1     0x4A7 // Needs item
+#define FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_2_ITEM_2     0x4A8 // Needs item
+#define FLAG_ITEM_MAUVE_ISLAND_SOUTHEAST_ITEM                       0x4A9 // Needs item
+#define FLAG_ITEM_BLANCHED_DEPTHS_1F_1R_ITEM                        0x4AA // Needs item
+#define FLAG_ITEM_BLANCHED_DEPTHS_2F_1R_ITEM                        0x4AB // Needs item
+#define FLAG_HIDDEN_ITEM_MAUVE_HOLLOW_ITEM                          0x4AC // Needs item
+#define FLAG_HIDDEN_ITEM_WELLSPRING_CHASM_2_ITEM                    0x4AD // Needs item
+#define FLAG_ITEM_MAUVE_ISLAND_WEST_ITEM                            0x4AE // Needs item
+#define FLAG_ITEM_BYGONE_VAULT_L1_ITEM                              0x4AF // Needs item
 
-#define FLAG_CHALLENGE_BALL_ILLUSORY_GROTTO                         0x4AF
-#define FLAG_CHALLENGE_BALL_FAR_OFF_SEA_WEST                        0x4B0
-#define FLAG_CHALLENGE_BALL_MAUVE_ISLAND_SOUTH                      0x4B1
-#define FLAG_CHALLENGE_BALL_MAUVE_HOLLOW                            0x4B2
-#define FLAG_CHALLENGE_BALL_WELLSPRING_CHASM                        0x4B3
-#define FLAG_UNUSED_0x4B4                                           0x4B4 // Unused Flag
+#define FLAG_CHALLENGE_BALL_ILLUSORY_GROTTO                         0x4B0
+#define FLAG_CHALLENGE_BALL_FAR_OFF_SEA_WEST                        0x4B1
+#define FLAG_CHALLENGE_BALL_MAUVE_ISLAND_SOUTH                      0x4B2
+#define FLAG_CHALLENGE_BALL_MAUVE_HOLLOW                            0x4B3
+#define FLAG_CHALLENGE_BALL_WELLSPRING_CHASM                        0x4B4
 #define FLAG_UNUSED_0x4B5                                           0x4B5 // Unused Flag
 #define FLAG_UNUSED_0x4B6                                           0x4B6 // Unused Flag
 #define FLAG_UNUSED_0x4B7                                           0x4B7 // Unused Flag

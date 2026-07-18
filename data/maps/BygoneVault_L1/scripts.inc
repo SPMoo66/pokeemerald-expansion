@@ -14,7 +14,7 @@ BygoneVault_L1_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 9 "data/maps/BygoneVault_L1/scripts.pory"
 	goto_if_unset FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH, BygoneVault_L1_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
 # 9 "data/maps/BygoneVault_L1/scripts.pory"
-	goto_if_set FLAG_ITEM_BYGONE_VAULT_L1_ITEM, BygoneVault_L1_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
+	goto_if_set FLAG_ITEM_BYGONE_VAULT_L1_BALM_MUSHROOM, BygoneVault_L1_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
 BygoneVault_L1_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 12 "data/maps/BygoneVault_L1/scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 42
@@ -67,7 +67,7 @@ BygoneVault_L1_Sign::
 
 BygoneVault_L1_ItemBall::
 # 34 "data/maps/BygoneVault_L1/scripts.pory"
-	setflag FLAG_ITEM_BYGONE_VAULT_L1_ITEM
+	setflag FLAG_ITEM_BYGONE_VAULT_L1_BALM_MUSHROOM
 # 35 "data/maps/BygoneVault_L1/scripts.pory"
 	call Common_EventScript_FindItem
 	return

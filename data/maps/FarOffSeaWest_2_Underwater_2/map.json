@@ -43,16 +43,16 @@
       "x": 31,
       "y": 15,
       "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_BIG_PEARL"
+      "item": "ITEM_STAR_PIECE",
+      "flag": "FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_2_STAR_PIECE"
     },
     {
       "type": "hidden_item",
       "x": 5,
       "y": 47,
       "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_BIG_PEARL"
+      "item": "ITEM_PEARL_STRING",
+      "flag": "FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_2_PEARL_STRING"
     }
   ]
 }

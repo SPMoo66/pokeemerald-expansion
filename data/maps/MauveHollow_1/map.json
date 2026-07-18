@@ -90,8 +90,8 @@
       "x": 2,
       "y": 6,
       "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_BIG_PEARL"
+      "item": "ITEM_STAR_PIECE",
+      "flag": "FLAG_HIDDEN_ITEM_MAUVE_HOLLOW_STAR_PIECE"
     }
   ]
 }

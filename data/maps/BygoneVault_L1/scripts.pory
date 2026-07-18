@@ -6,7 +6,7 @@ mapscripts BygoneVault_L1_MapScripts {
 			setmaplayoutindex (LAYOUT_BYGONE_VAULT_L1_DRAINED)
 			clearflag (FLAG_TEMP_1)
 		}
-		if (!flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH) || flag(FLAG_ITEM_BYGONE_VAULT_L1_ITEM)) {
+		if (!flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH) || flag(FLAG_ITEM_BYGONE_VAULT_L1_BALM_MUSHROOM)) {
 			setflag (FLAG_TEMP_2)
 		}
 		if (var(VAR_EMERALBODY_RIVAL_STATE) == 42) {
@@ -31,6 +31,6 @@ script BygoneVault_L1_Sign {
 }
 
 script BygoneVault_L1_ItemBall {
-	setflag (FLAG_ITEM_BYGONE_VAULT_L1_ITEM)
+	setflag (FLAG_ITEM_BYGONE_VAULT_L1_BALM_MUSHROOM)
 	call (Common_EventScript_FindItem)
 }

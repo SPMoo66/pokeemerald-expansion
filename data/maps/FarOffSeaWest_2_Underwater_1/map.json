@@ -51,48 +51,48 @@
       "x": 5,
       "y": 3,
       "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_BIG_PEARL"
+      "item": "ITEM_BIG_PEARL",
+      "flag": "FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_BIG_PEARL_1"
     },
     {
       "type": "hidden_item",
       "x": 4,
       "y": 68,
       "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_BIG_PEARL"
+      "item": "ITEM_STAR_PIECE",
+      "flag": "FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_STAR_PIECE_2"
     },
     {
       "type": "hidden_item",
       "x": 35,
       "y": 72,
       "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_BIG_PEARL"
+      "item": "ITEM_NUGGET",
+      "flag": "FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_NUGGET_1"
     },
     {
       "type": "hidden_item",
       "x": 50,
       "y": 70,
       "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_BIG_PEARL"
+      "item": "ITEM_BIG_PEARL",
+      "flag": "FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_BIG_PEARL_2"
     },
     {
       "type": "hidden_item",
       "x": 60,
       "y": 75,
       "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_BIG_PEARL"
+      "item": "ITEM_NUGGET",
+      "flag": "FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_NUGGET_2"
     },
     {
       "type": "hidden_item",
       "x": 61,
       "y": 2,
       "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_BIG_PEARL"
+      "item": "ITEM_STAR_PIECE",
+      "flag": "FLAG_HIDDEN_ITEM_FAR_OFF_SEA_WEST_2_UNDERWATER_1_STAR_PIECE_1"
     }
   ]
 }

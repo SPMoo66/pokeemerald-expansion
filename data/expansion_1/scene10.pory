@@ -6,6 +6,12 @@ const IG_BARON = 7
 const IG_SAKURA = 8
 const IG_SHADOWED_LUCARIO_1 = 9
 const IG_SHADOWED_LUCARIO_2 = 10
+const MAUVECAMP_JAKSON = 6
+const MAUVECAMP_BARON = 7
+const MAUVECAMP_SAKURA = 8
+const MAUVECAMP_FAKEPLAYER = 9
+const MAUVECAMP_REDD = 10
+const MAUVECAMP_HARPER = 11
 
 script IGB4_MoveCameraUp {
 	if (var(VAR_EMERALBODY_RIVAL_STATE) == 50) {
@@ -194,4 +200,152 @@ script Expansion1_Rival_Scene10b {
 	msgbox ("Is that…{PAUSE 100}?!")
 	call (GetBaronsName)
 	msgbox ("Did it… {PAUSE 100}Did it actually…{PAUSE 100}?", MSGBOX_AUTOCLOSE)
+
+	speakername (CommonText_Harper)
+	msgbox ("Whew… {PAUSE 100}Looks like that's finally it!")
+	speakername (CommonText_Jakson)
+	msgbox ("Yeah, I think we did it, guys!")
+	call (GetBaronsName)
+	msgbox ("I… {PAUSE 100}I did! I did it")
+	speakername (CommonText_Sakura)
+	msgbox ("We {PAUSE 30}ALL {PAUSE 60}did it, Baron{EMOJI_TILDE}{UNK_SPACER}")
+	call (GetBaronsName)
+	msgbox ("We all… {PAUSE 100}Baron…{PAUSE 100}?\p"
+			"…{PAUSE 60}uh, yeah, haha…\p"
+			"You can really lose where you are in\n"
+			"some of those moments, can't you?")
+	speakername (CommonText_Redd)
+	msgbox ("Mission accomplished?")
+	call (GetBaronsName)
+	msgbox ("That was… {PAUSE 100}blood pumping…{PAUSE 100}!")
+	speakername (CommonText_Jakson)
+	msgbox ("“Mission accomplished” seems right.\p"
+			"Time for some fresh air?", MSGBOX_AUTOCLOSE)
+
+	fadescreen (FADE_TO_BLACK)
+	warpcontinuescript (MAP_MAUVE_CAMP, 16, 8, Expansion1_Rival_Scene10c)
+}
+
+script Expansion1_Rival_Scene10c {
+	setobjectxyperm (MAUVECAMP_JAKSON, 15, 10)
+	setobjectmovementtype (MAUVECAMP_JAKSON, MOVEMENT_TYPE_FACE_UP)
+	setobjectxyperm (MAUVECAMP_REDD, 17, 10)
+	setobjectxyperm (MAUVECAMP_BARON, 17, 8)
+	setobjectmovementtype (MAUVECAMP_BARON, MOVEMENT_TYPE_FACE_DOWN)
+	setobjectxyperm (MAUVECAMP_HARPER, 16, 10)
+	setobjectmovementtype (MAUVECAMP_HARPER, MOVEMENT_TYPE_FACE_UP)
+	setobjectxyperm (MAUVECAMP_SAKURA, 15, 8)
+	setobjectmovementtype (MAUVECAMP_SAKURA, MOVEMENT_TYPE_FACE_DOWN)
+	addobject (MAUVECAMP_BARON)
+	addobject (MAUVECAMP_HARPER)
+	addobject (MAUVECAMP_SAKURA)
+	addobject (MAUVECAMP_JAKSON)
+	addobject (MAUVECAMP_REDD)
+	fadescreen (FADE_FROM_BLACK)
+
+	speakername (CommonText_Sakura)
+	msgbox ("We did it!\p"
+			"… {PAUSE 30}… {PAUSE 30}…\p"
+			"Where's my treasure, Jakson?")
+	speakername (CommonText_Redd)
+	msgbox ("No one got any drops?")
+	speakername (CommonText_Jakson)
+	msgbox ("That's the question of the hour,\n"
+			"isn't it?")
+	speakername (CommonText_Redd)
+	msgbox ("What, so our gamemaster doesn't know\n"
+			"either?")
+	speakername (CommonText_Jakson)
+	msgbox ("Well… {PAUSE 100}it's possible that there was never\n"
+			"a real treasure, right?")
+	speakername (CommonText_Sakura)
+	msgbox ("So you set the stage for our grand\n"
+			"treasure hunt without knowing if\l"
+			"there was a treasure to be had?")
+	call (GetBaronsName)
+	msgbox ("Aww… {PAUSE 100}I was really looking forward to\n"
+			"some healing items.")
+	speakername (CommonText_Redd)
+	msgbox ("Baron, you know that…\p"
+			"Never mind.")
+	speakername (CommonText_Harper)
+	msgbox ("Jakson, you think the logic for the\n"
+			"reward being dropped also got\l"
+			"compromised?\p"
+			"That would explain it, if true.")
+	speakername (CommonText_Jakson)
+	msgbox ("We could look into the code behind this\n"
+			"all to see if there was something there.\p"
+			"But… {PAUSE 100}I guess it's hard to know if it\n"
+			"was a weird bug or general messiness\l"
+			"of the mod's creators…\l"
+			"I…\l"
+			"Argh…\l"
+			"I can just spawn in a reward.")
+	speakername (CommonText_Sakura)
+	msgbox ("I sense a thief! The scallywags must've\n"
+			"took our plunder for themselves.")
+	speakername (CommonText_Redd)
+	msgbox ("No, I'm pretty sure that's the end of\n"
+			"the mod's story.")
+	speakername (CommonText_Sakura)
+	msgbox ("Darn. And if they're already gone it'll\n"
+			"be too late for my Sakura Senses to\n"
+			"pick them up.")
+	call (GetBaronsName)
+	msgbox ("{EMOJI_BIGWHEEL}Sigh{EMOJI_BIGWHEEL} It's such an unfortunate\n"
+			"limitation to the Sakura Senses.")
+	speakername (CommonText_Redd)
+	msgbox ("Jakson, I think she's asking for the\n"
+			"reward to be spawned for each one of\l"
+			"us.")
+	speakername (CommonText_Jakson)
+	msgbox ("{EMOJI_BIGWHEEL}Sigh{EMOJI_BIGWHEEL}…")
+	speakername (CommonText_Harper)
+	msgbox ("…{PAUSE 100}Well, anyway. I agree that it seems\n"
+			"like we've hit the ending.")
+	speakername (CommonText_Jakson)
+	msgbox ("I can check again, but I believe we've\n"
+			"concluded with that ‘main story’ part of\l"
+			"this little expansion.")
+	speakername (CommonText_Redd)
+	msgbox ("Anything else? Do you think I could get\n"
+			"one of those ‘Calamity Maw’ for myself?")
+	speakername (CommonText_Jakson)
+	msgbox ("I think so. Pretty sure that was the\n"
+			"Paradox Pokémon naming scheme.\l"
+			"And if not I'll make it so you can.")
+	call (GetBaronsName)
+	msgbox ("It certainly wasn't the only new…{PAUSE 100}\n"
+			"Pokémon… {PAUSE 100}that I saw. I wonder…")
+	speakername (CommonText_Sakura)
+	msgbox ("Gotta prepare for the next expansion\n"
+			"pack, right? Catch 'em all. All the cute\l"
+			"and cool ones, at least.")
+	speakername (CommonText_Jakson)
+	msgbox ("Yeah… {PAUSE 100}I'll keep working on that idea\n"
+			"I had. And…\l"
+			"And I'll not rush anything just because\l"
+			"I'm taking forever myself.")
+	speakername (CommonText_Harper)
+	msgbox ("Pfft. Fine, I'll fix your gaffs.", MSGBOX_AUTOCLOSE)
+
+	speakername (CommonText_Jakson)
+	msgbox ("I… {PAUSE 100}didn't…")
+	speakername (CommonText_Harper)
+	msgbox ("So there were a couple of mods I saw\n"
+			"online that…", MSGBOX_AUTOCLOSE)
+
+	call (GetBaronsName)
+	msgbox ("Was… {PAUSE 100}Harper always this into this\n"
+			"topic?")
+	speakername (CommonText_Redd)
+	msgbox ("Maybe she just likes things feeling\n"
+			"neat and tidy?")
+	speakername (CommonText_Sakura)
+	msgbox ("Or maybe those two are fucking?", MSGBOX_AUTOCLOSE)
+// ! for baron here
+	speakername (CommonText_Jakson)
+	msgbox ("Sakura… {PAUSE 100}We're still here.")
+
 }

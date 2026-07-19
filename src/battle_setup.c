@@ -998,6 +998,12 @@ enum BattleTransition GetTrainerBattleTransition(void)
         || trainerClass == TRAINER_CLASS_BOSS)
         return B_TRANSITION_ROCKET;
 
+    if (trainerId == TRAINER_EXP_1_FINAL_BATTLE_1 || trainerId == TRAINER_EXP_1_FINAL_BATTLE_2)
+        return B_TRANSITION_SPEED_LINES;
+
+    if (trainerClass == TRAINER_CLASS_WILD)
+        return B_TRANSITION_AIRBRUSH_TILE;
+
     switch (GetTrainerBattleType(trainerId))
     {
     case TRAINER_BATTLE_TYPE_SINGLES:

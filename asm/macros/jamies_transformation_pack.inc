@@ -54,7 +54,6 @@
 	.endm
 
 	.macro mosaicmorph localId:req, graphicsId=NUM_OBJ_EVENT_GFX, map
-	playse SE_M_TELEPORT
 	.ifb \map
 		morphobject \localId, MOSAIC_MORPH, \graphicsId
 	.else

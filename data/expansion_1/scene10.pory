@@ -199,14 +199,14 @@ script Expansion1_Rival_Scene10b {
 
 	setvar (VAR_0x8004, 2)  # vertical pan
 	setvar (VAR_0x8005, 6)  # horizontal pan
-	setvar (VAR_0x8006, 30)  # num shakes
+	setvar (VAR_0x8006, 20)  # num shakes
 	setvar (VAR_0x8007, 3)  # shake delay
 	special (ShakeCamera)
+	delay (50)
 	playmoncry (SPECIES_GYARADOS, CRY_MODE_FAINT)
-	applymovement (IG_BOSS, Common_Movement_ShakeHorizontal)
-	waitmovement (0)
 	mosaicmorph (IG_BOSS, OBJ_EVENT_GFX_NONE)
-	delay (60)
+	delay (80)
+	removeobject (IG_BOSS)
 
 	speakername (CommonText_Redd)
 	msgbox ("Is that…{PAUSE 60}?!")
@@ -250,6 +250,7 @@ script Expansion1_Rival_Scene10c {
 	setobjectxyperm (MAUVECAMP_JAKSON, 15, 10)
 	setobjectmovementtype (MAUVECAMP_JAKSON, MOVEMENT_TYPE_FACE_UP)
 	setobjectxyperm (MAUVECAMP_REDD, 17, 10)
+	setobjectmovementtype (MAUVECAMP_REDD, MOVEMENT_TYPE_FACE_UP)
 	setobjectxyperm (MAUVECAMP_BARON, 17, 8)
 	setobjectmovementtype (MAUVECAMP_BARON, MOVEMENT_TYPE_FACE_DOWN)
 	setobjectxyperm (MAUVECAMP_HARPER, 16, 10)

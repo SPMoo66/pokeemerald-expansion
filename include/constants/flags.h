@@ -1716,8 +1716,8 @@
 																			 // This does not prevent opening the debug menu
 #define FLAG_PLAY_AS_FIRST_MON_IN_PARTY         (SPECIAL_FLAGS_START + 0xC)  // Set this flag to have the player sprite be changed to the first pokemon in party
 #define FLAG_SEMI_PERM_HIDE_FOLLOWER            (SPECIAL_FLAGS_START + 0xD)  // Set this flag to hide all following Pokémon until the game is reset
-#define FLAG_SYS_SET_BATTLE_BGM                 (SPECIAL_FLAGS_START + 0xF)  // Set this flag when overriding battle BGM, store BGM in VAR_BATTLE_BGM
-#define FLAG_SPECIAL_FLAG_UNUSED_0x400F         (SPECIAL_FLAGS_START + 0xF)  // Unused Flag
+#define FLAG_SYS_SET_BATTLE_BGM                 (SPECIAL_FLAGS_START + 0xE)  // Set this flag when overriding battle BGM, store BGM in VAR_BATTLE_BGM
+#define FLAG_SYS_SET_BATTLE_TRANSITION          (SPECIAL_FLAGS_START + 0xF)  // Set this flag when overriding battle transitions, store transition in VAR_BATTLE_TRANSITION
 #define FLAG_SEMI_TEMP_1                        (SPECIAL_FLAGS_START + 0x10) // See 'Special Flag aliases' for uses
 #define FLAG_SEMI_TEMP_2                        (SPECIAL_FLAGS_START + 0x11) //
 #define FLAG_SEMI_TEMP_3                        (SPECIAL_FLAGS_START + 0x12) //

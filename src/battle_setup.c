@@ -978,6 +978,18 @@ enum BattleTransition GetTrainerBattleTransition(void)
     u32 trainerId = SanitizeTrainerId(TRAINER_BATTLE_PARAM.opponentA);
     enum TrainerClassID trainerClass = GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA);
 
+    if (FlagGet(FLAG_SYS_SET_BATTLE_TRANSITION))
+    {
+        FlagClear(FLAG_SYS_SET_BATTLE_TRANSITION);
+        switch (VarGet(VAR_TEMP_E))
+        {
+        case 1:
+            return B_TRANSITION_SPEED_LINES;
+        default:
+            return B_TRANSITION_SHRED_SPLIT;
+        }
+    }
+
     if (DoesTrainerHaveMugshot(trainerId))
         return B_TRANSITION_MUGSHOT;
 
@@ -998,8 +1010,8 @@ enum BattleTransition GetTrainerBattleTransition(void)
         || trainerClass == TRAINER_CLASS_BOSS)
         return B_TRANSITION_ROCKET;
 
-    if (trainerId == TRAINER_EXP_1_FINAL_BATTLE_1 || trainerId == TRAINER_EXP_1_FINAL_BATTLE_2)
-        return B_TRANSITION_SPEED_LINES;
+//    if (trainerId == TRAINER_EXP_1_FINAL_BATTLE_1 || trainerId == TRAINER_EXP_1_FINAL_BATTLE_2)
+//        return B_TRANSITION_SPEED_LINES;
 
     if (trainerClass == TRAINER_CLASS_WILD)
         return B_TRANSITION_AIRBRUSH_TILE;

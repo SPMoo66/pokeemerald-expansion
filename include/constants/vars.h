@@ -326,7 +326,8 @@
 
 #define VAR_TEMP_TRANSFERRED_SPECIES  VAR_TEMP_1
 
-#define VAR_BATTLE_BGM  VAR_TEMP_F
+#define VAR_BATTLE_TRANSITION   VAR_TEMP_E // See src/battle_setup.c for results
+#define VAR_BATTLE_BGM          VAR_TEMP_F
 
 #if TESTING
 #define TESTING_VARS_START                  0x9000

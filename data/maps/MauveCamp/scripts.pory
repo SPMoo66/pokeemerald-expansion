@@ -60,6 +60,10 @@ mapscripts MauveCamp_MapScripts {
 			setobjectxyperm (MAUVECAMP_SAKURA, 26, 13)
 			setobjectmovementtype (MAUVECAMP_SAKURA, MOVEMENT_TYPE_WANDER_AROUND)
 		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 50 && flag(FLAG_SCENE10_TRANSITION)) {
+			savebgm (MUS_PL_CONTEST_BEAUTY)
+			clearflag (FLAG_SCENE10_TRANSITION)
+		}
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [
 		VAR_TEMP_0, 1: MauveCamp_EventScript_FromHeadbuttTree

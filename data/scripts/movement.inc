@@ -574,6 +574,13 @@ Common_Movement_WalkFastLeft3:
 	walk_fast_left
 	step_end
 	
+Common_Movement_WalkFastLeft4:
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	step_end
+	
 Common_Movement_WalkFastLeft9:
 	walk_fast_left
 	walk_fast_left
@@ -794,6 +801,18 @@ Common_Movement_WalkLeftFaster::
 	walk_faster_left
 	step_end
 
+Common_Movement_WalkQuarterUp::
+	quarter_step_up
+	step_end
+
+Common_Movement_WalkQuarterDown::
+	quarter_step_down
+	step_end
+
 Common_Movement_WalkQuarterLeft::
 	quarter_step_left
+	step_end
+
+Common_Movement_WalkQuarterRight::
+	quarter_step_right
 	step_end

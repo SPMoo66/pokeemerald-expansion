@@ -250,7 +250,6 @@ script Expansion1_Rival_Scene10c {
 	setobjectxyperm (MAUVECAMP_JAKSON, 15, 10)
 	setobjectmovementtype (MAUVECAMP_JAKSON, MOVEMENT_TYPE_FACE_UP)
 	setobjectxyperm (MAUVECAMP_REDD, 17, 10)
-	setobjectmovementtype (MAUVECAMP_REDD, MOVEMENT_TYPE_FACE_UP)
 	setobjectxyperm (MAUVECAMP_BARON, 17, 8)
 	setobjectmovementtype (MAUVECAMP_BARON, MOVEMENT_TYPE_FACE_DOWN)
 	setobjectxyperm (MAUVECAMP_HARPER, 16, 10)

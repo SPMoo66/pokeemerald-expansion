@@ -947,11 +947,30 @@ static u8 GetSumOfEnemyPartyLevel(u16 opponentId, u8 numMons)
     return sum;
 }
 
+static enum BattleTransition GetVariableBattleTransition(void)
+{
+    FlagClear(FLAG_SYS_SET_BATTLE_TRANSITION);
+    switch (VarGet(VAR_TEMP_E))
+    {
+    case 1:
+        return B_TRANSITION_SPEED_LINES;
+    case 2:
+        return B_TRANSITION_TPP_HOST;
+    default:
+        return B_TRANSITION_SHRED_SPLIT;
+    }
+}
+
 enum BattleTransition GetWildBattleTransition(void)
 {
     u8 transitionType = GetBattleTransitionTypeByMap();
     u8 enemyLevel = GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_LEVEL);
     u8 playerLevel = GetSumOfPlayerPartyLevel(1);
+
+    if (FlagGet(FLAG_SYS_SET_BATTLE_TRANSITION))
+    {
+        return GetVariableBattleTransition();
+    }
 
     if (enemyLevel < playerLevel)
     {
@@ -980,14 +999,7 @@ enum BattleTransition GetTrainerBattleTransition(void)
 
     if (FlagGet(FLAG_SYS_SET_BATTLE_TRANSITION))
     {
-        FlagClear(FLAG_SYS_SET_BATTLE_TRANSITION);
-        switch (VarGet(VAR_TEMP_E))
-        {
-        case 1:
-            return B_TRANSITION_SPEED_LINES;
-        default:
-            return B_TRANSITION_SHRED_SPLIT;
-        }
+        return GetVariableBattleTransition();
     }
 
     if (DoesTrainerHaveMugshot(trainerId))
@@ -1009,9 +1021,6 @@ enum BattleTransition GetTrainerBattleTransition(void)
     if (trainerClass == TRAINER_CLASS_ROCKET
         || trainerClass == TRAINER_CLASS_BOSS)
         return B_TRANSITION_ROCKET;
-
-//    if (trainerId == TRAINER_EXP_1_FINAL_BATTLE_1 || trainerId == TRAINER_EXP_1_FINAL_BATTLE_2)
-//        return B_TRANSITION_SPEED_LINES;
 
     if (trainerClass == TRAINER_CLASS_WILD)
         return B_TRANSITION_AIRBRUSH_TILE;

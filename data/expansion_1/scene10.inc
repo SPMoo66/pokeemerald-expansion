@@ -897,8 +897,10 @@ Expansion1_Rival_Scene10c::
 # 563 "data/expansion_1/scene10.pory"
 	delay 40
 # 564 "data/expansion_1/scene10.pory"
+	setvar VAR_EMERALBODY_RIVAL_STATE, 51
+# 565 "data/expansion_1/scene10.pory"
 	fadescreen FADE_TO_BLACK
-# 566 "data/expansion_1/scene10.pory"
+# 567 "data/expansion_1/scene10.pory"
 	warpcontinuescript MAP_MAUVE_CAMP, 16, 16, Expansion1_Rival_Scene02e
 	return
 

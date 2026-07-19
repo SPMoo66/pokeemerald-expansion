@@ -561,6 +561,7 @@ script Expansion1_Rival_Scene10c {
 	waitmovement (0)
 	applymovement (MAUVECAMP_JAKSON, Common_Movement_WalkDown5)
 	delay (40)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 51)
 	fadescreen (FADE_TO_BLACK)
 
 	warpcontinuescript (MAP_MAUVE_CAMP, 16, 16, Expansion1_Rival_Scene02e)	

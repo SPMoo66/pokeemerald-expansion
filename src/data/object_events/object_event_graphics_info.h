@@ -4885,6 +4885,24 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CalamityMawShadowe
     .images = sPicTable_CalamityMawShadowed,
 };
 
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_None = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ALL_BLACK,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 128,
+    .width = 16,
+    .height = 16,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_NONE,
+    .inanimate = TRUE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x16,
+    .subspriteTables = sOamTables_16x16,
+    .anims = sAnimTable_Inanimate,
+    .images = sPicTable_None,
+};
+
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kindler = {
     .tileTag = TAG_NONE,

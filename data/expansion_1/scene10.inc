@@ -784,85 +784,89 @@ Expansion1_Rival_Scene10c::
 	setobjectxyperm 6, 16, 14
 # 493 "data/expansion_1/scene10.pory"
 	addobject 12
+# 494 "data/expansion_1/scene10.pory"
+	applymovement 12, Common_Movement_WalkQuarterDown
 # 495 "data/expansion_1/scene10.pory"
-	fadescreen FADE_FROM_BLACK
-# 496 "data/expansion_1/scene10.pory"
-	applymovement LOCALID_CAMERA, Common_Movement_WalkUp
-# 497 "data/expansion_1/scene10.pory"
 	waitmovement 0
+# 497 "data/expansion_1/scene10.pory"
+	fadescreen FADE_FROM_BLACK
 # 498 "data/expansion_1/scene10.pory"
-	fadenewbgm MUS_B_PIKE
+	applymovement LOCALID_CAMERA, Common_Movement_WalkUp
 # 499 "data/expansion_1/scene10.pory"
-	delay 80
+	waitmovement 0
 # 500 "data/expansion_1/scene10.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_QuestionMark
+	fadenewbgm MUS_B_PIKE
 # 501 "data/expansion_1/scene10.pory"
 	delay 80
 # 502 "data/expansion_1/scene10.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_PLAYER, Common_Movement_QuestionMark
 # 503 "data/expansion_1/scene10.pory"
-	waitmovement 0
+	delay 80
 # 504 "data/expansion_1/scene10.pory"
-	delay 40
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 # 505 "data/expansion_1/scene10.pory"
-	playse SE_PIN
+	waitmovement 0
 # 506 "data/expansion_1/scene10.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
+	delay 40
 # 507 "data/expansion_1/scene10.pory"
-	delay 100
+	playse SE_PIN
 # 508 "data/expansion_1/scene10.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_Talking
+	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
 # 509 "data/expansion_1/scene10.pory"
 	delay 100
 # 510 "data/expansion_1/scene10.pory"
-	applymovement 12, Common_Movement_WalkUp2
+	applymovement LOCALID_PLAYER, Common_Movement_Talking
 # 511 "data/expansion_1/scene10.pory"
-	waitmovement 0
+	delay 100
 # 512 "data/expansion_1/scene10.pory"
-	removeobject 12
+	applymovement 12, Common_Movement_WalkUp2
 # 513 "data/expansion_1/scene10.pory"
-	addobject 6
+	waitmovement 0
 # 514 "data/expansion_1/scene10.pory"
-	applymovement 6, Common_Movement_WalkUp3
+	removeobject 12
 # 515 "data/expansion_1/scene10.pory"
-	waitmovement 0
+	addobject 6
 # 516 "data/expansion_1/scene10.pory"
-	speakername CommonText_Jakson
+	applymovement 6, Common_Movement_WalkUp3
 # 517 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10c_Text_43, MSGBOX_AUTOCLOSE
-# 518 "data/expansion_1/scene10.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
-# 519 "data/expansion_1/scene10.pory"
 	waitmovement 0
+# 518 "data/expansion_1/scene10.pory"
+	speakername CommonText_Jakson
+# 519 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10c_Text_43, MSGBOX_AUTOCLOSE
 # 520 "data/expansion_1/scene10.pory"
-	applymovement 6, Common_Movement_WalkUp2
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 # 521 "data/expansion_1/scene10.pory"
 	waitmovement 0
 # 522 "data/expansion_1/scene10.pory"
-	delay 20
+	applymovement 6, Common_Movement_WalkUp2
 # 523 "data/expansion_1/scene10.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_Talking
-# 524 "data/expansion_1/scene10.pory"
-	delay 100
-# 525 "data/expansion_1/scene10.pory"
-	applymovement 6, Common_Movement_QuestionMark
-# 526 "data/expansion_1/scene10.pory"
-	delay 40
-# 527 "data/expansion_1/scene10.pory"
-	speakername CommonText_Jakson
-# 528 "data/expansion_1/scene10.pory"
-	msgbox Expansion1_Rival_Scene10c_Text_44, MSGBOX_AUTOCLOSE
-# 543 "data/expansion_1/scene10.pory"
-	applymovement 6, Common_Movement_WalkRight2
-# 544 "data/expansion_1/scene10.pory"
 	waitmovement 0
-# 545 "data/expansion_1/scene10.pory"
-	applymovement 6, Common_Movement_WalkDown5
-# 546 "data/expansion_1/scene10.pory"
+# 524 "data/expansion_1/scene10.pory"
+	delay 20
+# 525 "data/expansion_1/scene10.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_Talking
+# 526 "data/expansion_1/scene10.pory"
+	delay 100
+# 527 "data/expansion_1/scene10.pory"
+	applymovement 6, Common_Movement_QuestionMark
+# 528 "data/expansion_1/scene10.pory"
 	delay 40
+# 529 "data/expansion_1/scene10.pory"
+	speakername CommonText_Jakson
+# 530 "data/expansion_1/scene10.pory"
+	msgbox Expansion1_Rival_Scene10c_Text_44, MSGBOX_AUTOCLOSE
+# 545 "data/expansion_1/scene10.pory"
+	applymovement 6, Common_Movement_WalkRight2
+# 546 "data/expansion_1/scene10.pory"
+	waitmovement 0
 # 547 "data/expansion_1/scene10.pory"
-	fadescreen FADE_TO_BLACK
+	applymovement 6, Common_Movement_WalkDown5
+# 548 "data/expansion_1/scene10.pory"
+	delay 40
 # 549 "data/expansion_1/scene10.pory"
+	fadescreen FADE_TO_BLACK
+# 551 "data/expansion_1/scene10.pory"
 	warpcontinuescript MAP_MAUVE_CAMP, 16, 16, Expansion1_Rival_Scene02e
 	return
 
@@ -1201,11 +1205,11 @@ Expansion1_Rival_Scene10c_Text_42:
 	.string "W-{PAUSE 30}wait! Me as well!$"
 
 Expansion1_Rival_Scene10c_Text_43:
-# 517 "data/expansion_1/scene10.pory"
+# 519 "data/expansion_1/scene10.pory"
 	.string "Uh, you good, {PLAYER}?$"
 
 Expansion1_Rival_Scene10c_Text_44:
-# 528 "data/expansion_1/scene10.pory"
+# 530 "data/expansion_1/scene10.pory"
 	.string "You saw something?\p"
 	.string "… {PAUSE 30}… {PAUSE 30}…\p"
 	.string "If you really think so…\p"

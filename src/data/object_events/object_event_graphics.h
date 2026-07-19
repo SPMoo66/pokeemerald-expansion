@@ -574,6 +574,7 @@ const u32 gFieldEffectObjectPic_ShinySparkle[] = INCGFX_U32("graphics/field_effe
 const u16 gObjectEventPal_AllBlack[] = INCGFX_U16("graphics/object_events/palettes/all_black.pal", ".gbapal");
 
 const u32 gObjectEventPic_ShadowedLucario[] = INCGFX_U32("graphics/pokemon/lucario/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPic_None[] = INCGFX_U16("graphics/object_events/pics/misc/none.png", ".4bpp");
 
 #if IS_FRLG
 

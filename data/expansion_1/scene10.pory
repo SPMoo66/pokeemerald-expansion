@@ -197,6 +197,16 @@ script Expansion1_Rival_Scene10b {
 	clearflag (FLAG_SINGLE_WILD_OPPONENT)
 	clearflag (FLAG_DONT_TRANSITION_BATTLE_MUSIC)
 
+	setvar (VAR_0x8004, 2)  # vertical pan
+	setvar (VAR_0x8005, 6)  # horizontal pan
+	setvar (VAR_0x8006, 30)  # num shakes
+	setvar (VAR_0x8007, 3)  # shake delay
+	special (ShakeCamera)
+	playmoncry (SPECIES_GYARADOS, CRY_MODE_FAINT)
+	applymovement (IG_BOSS, Common_Movement_ShakeHorizontal)
+	waitmovement (0)
+	mosaicmorph (IG_BOSS, OBJ_EVENT_GFX_NONE)
+	delay (60)
 
 	speakername (CommonText_Redd)
 	msgbox ("Is that…{PAUSE 60}?!")

@@ -428,6 +428,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FishBowl;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dynamite;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShadowedLucario;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CalamityMawShadowed;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_None;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kindler;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BirdKeeper;
@@ -710,6 +711,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DYNAMITE] =                 &gObjectEventGraphicsInfo_Dynamite,
     [OBJ_EVENT_GFX_SHADOWED_LUCARIO] =         &gObjectEventGraphicsInfo_ShadowedLucario,
     [OBJ_EVENT_GFX_CALAMITY_MAW_SHADOWED] =    &gObjectEventGraphicsInfo_CalamityMawShadowed,
+    [OBJ_EVENT_GFX_NONE] =                     &gObjectEventGraphicsInfo_None,
     [OBJ_EVENT_GFX_KINDLER] =                  &gObjectEventGraphicsInfo_Kindler,
     [OBJ_EVENT_GFX_BIRD_KEEPER] =              &gObjectEventGraphicsInfo_BirdKeeper,
     [OBJ_EVENT_GFX_GUITARIST] =                &gObjectEventGraphicsInfo_Guitarist,

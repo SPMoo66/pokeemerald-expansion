@@ -3,3 +3,4 @@
 #include "constants/battle_transition/tpp_host.h"
 #include "constants/battle_transition/speed_lines.h"
 #include "constants/battle_transition/triangle_tessellation.h"
+#include "constants/battle_transition/airbrush_tile.h"

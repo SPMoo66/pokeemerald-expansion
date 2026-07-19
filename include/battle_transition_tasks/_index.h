@@ -2,3 +2,4 @@
 #include "battle_transition_tasks/tpp_host.h"
 #include "battle_transition_tasks/speed_lines.h"
 #include "battle_transition_tasks/triangle_tessellation.h"
+#include "battle_transition_tasks/airbrush_tile.h"

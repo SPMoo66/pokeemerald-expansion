@@ -766,11 +766,13 @@ u32 CountPlayerTrainerStars(void)
         stars++;
     if (HasCompletedAllBaseGameChallengeBalls())
         stars++;
+    if (VarGet(VAR_EMERALBODY_RIVAL_STATE) >= 51)
+        stars++;
 
     return stars;
 }
 
-static u8 GetRubyTrainerStars(struct TrainerCard *trainerCard)
+static u8 GetRubyTrainerStars(struct TrainerCard *trainerCard) // I don't know why but this is the function that counts stars for the trainer card. The above is probably just for field specials, but both should be updated
 {
     u8 stars = 0;
 
@@ -783,6 +785,8 @@ static u8 GetRubyTrainerStars(struct TrainerCard *trainerCard)
     if (FlagGet(FLAG_SYS_FACTORY_GOLD))
         stars++;
     if (HasCompletedAllBaseGameChallengeBalls())
+        stars++;
+    if (VarGet(VAR_EMERALBODY_RIVAL_STATE) >= 51)
         stars++;
 
     return stars;
@@ -857,7 +861,7 @@ static void SetPlayerCardData(struct TrainerCard *trainerCard, u8 cardType)
         trainerCard->battleTowerStraightWins = 0;
     // Seems like GF got CARD_TYPE_FRLG and CARD_TYPE_RS wrong.
     case CARD_TYPE_FRLG:
-        trainerCard->pokemonHeals = (GetCappedGameStat(GAME_STAT_USED_POKECENTER, 499) + GetCappedGameStat(GAME_STAT_RESTED_AT_HOME, 499));
+        trainerCard->pokemonHeals = (GetCappedGameStat(GAME_STAT_USED_POKECENTER, 700) + GetCappedGameStat(GAME_STAT_RESTED_AT_HOME, 299));
         trainerCard->completedChallengeBalls = CountCompleteChallengeBalls();
         if (CountPlayerMuseumPaintings() >= CONTEST_CATEGORIES_COUNT)
             trainerCard->hasAllPaintings = TRUE;
@@ -1620,7 +1624,7 @@ static void DrawCardFrontOrBack(u16 *ptr)
     CopyBgTilemapBufferToVram(0);
 }
 
-#define TrainerCardTotalAvailableStars  5  // Change this whenever the available number of stars will increase, also must match number of pals in sHoennTrainerCardPals
+#define TrainerCardTotalAvailableStars  6  // Change this whenever the available number of stars will increase, also must match number of pals in sHoennTrainerCardPals
 
 static void DrawStarsAndBadgesOnCard(void)
 {

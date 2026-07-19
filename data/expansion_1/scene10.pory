@@ -108,7 +108,7 @@ script Expansion1_Rival_Scene10b {
 	setflag (FLAG_SYS_SET_BATTLE_TRANSITION)
 	setvar (VAR_BATTLE_TRANSITION, 1)
 	settotemboost (B_POSITION_OPPONENT_LEFT, 0, 1, 0, 0, 1)
-	multi_2_vs_1 (TRAINER_EXP_1_FINAL_BATTLE_1, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
+	multi_2_vs_1 (TRAINER_EXP_1_FINAL_BATTLE_1, "Gyashaa!", PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
 	clearflag (FLAG_SINGLE_WILD_OPPONENT)
 	clearflag (FLAG_DONT_TRANSITION_BATTLE_MUSIC)
 
@@ -197,7 +197,7 @@ script Expansion1_Rival_Scene10b {
 	setvar (VAR_BATTLE_BGM, MUS_B2W2_VS_GHETSIS)
 	setflag (FLAG_SYS_SET_BATTLE_TRANSITION)
 	setvar (VAR_BATTLE_TRANSITION, 1)
-	multi_2_vs_1 (TRAINER_EXP_1_FINAL_BATTLE_2, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
+	multi_2_vs_1 (TRAINER_EXP_1_FINAL_BATTLE_2, "Gyassshaaa…", PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
 	clearflag (FLAG_SINGLE_WILD_OPPONENT)
 	clearflag (FLAG_DONT_TRANSITION_BATTLE_MUSIC)
 
@@ -216,7 +216,8 @@ script Expansion1_Rival_Scene10b {
 	msgbox ("Is that…{PAUSE 60}?!")
 	call (GetBaronsName)
 	msgbox ("Did it… {PAUSE 100}Did it actually…{PAUSE 60}?", MSGBOX_AUTOCLOSE)
-// dots emotes...   then triumphant music
+	applymovement (LOCALID_PLAYER, Common_Movement_Thinking)
+	delay (80)
 	playbgm (MUS_PL_VICTORY_FRONTIER_BRAIN, FALSE)
 	speakername (CommonText_Harper)
 	msgbox ("Whew… {PAUSE 100}Looks like that's finally it!")

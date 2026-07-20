@@ -19,7 +19,7 @@ IllusoryGrotto_ChallengeBall_2:
 # 17 "data/expansion_1/challenge_balls.pory"
 	settotemboost 1, 1
 # 18 "data/expansion_1/challenge_balls.pory"
-	setwildbattle SPECIES_IRON_VALIANT, 76, ITEM_NONE, 0, SPECIES_NOIVERN, 18, ITEM_NONE, 1, MOVE_THUNDER_PUNCH, MOVE_SACRED_SWORD, MOVE_SPIRIT_BREAK, MOVE_AGILITY, MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONLIGHT, MOVE_DOUBLE_TEAM
+	setwildbattle SPECIES_IRON_VALIANT, 76, ITEM_NONE, 0, SPECIES_NOIVERN, 76, ITEM_NONE, 1, MOVE_THUNDER_PUNCH, MOVE_SACRED_SWORD, MOVE_SPIRIT_BREAK, MOVE_AGILITY, MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONLIGHT, MOVE_DOUBLE_TEAM
 # 19 "data/expansion_1/challenge_balls.pory"
 	dowildbattle
 # 20 "data/expansion_1/challenge_balls.pory"

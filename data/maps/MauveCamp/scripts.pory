@@ -11,6 +11,11 @@ mapscripts MauveCamp_MapScripts {
 		if (flag(FLAG_MAUVE_CAMP_REMOVE_CAMP_TILES)) {
 			call (MauveCamp_RemoveCampTiles)
 		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 51) {
+			setmetatile (25, 6, 0x236, TRUE)
+			setmetatile (25, 7, 0x23E, FALSE)
+			setmetatile (25, 8, 0x246, FALSE)
+		}
 	}
 	MAP_SCRIPT_ON_TRANSITION {
 		setrespawn (HEAL_LOCATION_MAUVE_CAMP)
@@ -64,6 +69,10 @@ mapscripts MauveCamp_MapScripts {
 			savebgm (MUS_PL_CONTEST_BEAUTY)
 			clearflag (FLAG_SCENE10_TRANSITION)
 		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 51) {
+			setobjectmovementtype (MAUVECAMP_SAKURA, MOVEMENT_TYPE_FACE_DOWN)
+			setobjectxyperm (MAUVECAMP_SAKURA, 25, 7)
+		}
 	}
 	MAP_SCRIPT_ON_FRAME_TABLE [
 		VAR_TEMP_0, 1: MauveCamp_EventScript_FromHeadbuttTree
@@ -109,6 +118,9 @@ script MauveCamp_Sakura {
 	}
 	if (var(VAR_EMERALBODY_RIVAL_STATE) == 45) {
 		goto (Sakura_Exp1_Town07)
+	}
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 51) {
+		goto (Sakura_Exp1_Town09)
 	}
 }
 

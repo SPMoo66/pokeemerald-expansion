@@ -230,11 +230,9 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
-	setvar VAR_EMERALBODY_RIVAL_STATE, 19
-	warp MAP_SLATEPORT_CITY, 8
+	setvar VAR_EMERALBODY_RIVAL_STATE, 51
+	warp MAP_RUSTBORO_CITY, 3
 	waitstate
-@	setvar VAR_EMERALBODY_RIVAL_STATE, 20
-@	call SlateportRegionMap_BoatSceneInit
 	release
 	end
 

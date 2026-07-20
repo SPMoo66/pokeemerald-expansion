@@ -250,3 +250,104 @@ script Jakson_Exp1_Town07 {
 	speakername (CommonText_Jakson)
 	msgbox(Exp1_Town07_JaksonText, MSGBOX_NPC)
 }
+
+#Town09
+script Sakura_Exp1_Town09 {
+	speakername (CommonText_Sakura)
+	msgbox(Exp1_Town09_SakuraText, MSGBOX_NPC)
+	turnobject (8, DIR_SOUTH)
+}
+
+script Harper_Exp1_Town09 {
+	if (!flag(FLAG_TEMP_6)) {
+		goto (Town09_MiniScene)
+	}
+	speakername (CommonText_Harper)
+	msgbox(Exp1_Town09_HarperText, MSGBOX_NPC)
+}
+
+script Redd_Exp1_Town09 {
+	speakername (CommonText_Redd)
+	msgbox(Exp1_Town09_ReddText, MSGBOX_NPC)
+}
+
+script Baron_Exp1_Town09 {
+	faceplayer
+	call (GetBaronsName)
+	msgbox(Exp1_Town09_BaronText)
+	if (var(VAR_EMERALBODY_RIVAL) == 0 || var(VAR_EMERALBODY_RIVAL) == 5) {
+		msgbox(Exp1_Town09a_BaronText)
+	}
+	else {
+		msgbox(Exp1_Town09b_BaronText)
+	}
+	msgbox(Exp1_Town09c_BaronText, MSGBOX_AUTOCLOSE)
+}
+
+script Jakson_Exp1_Town09 {
+	if (!flag(FLAG_TEMP_6)) {
+		goto (Town09_MiniScene)
+	}
+	speakername (CommonText_Jakson)
+	msgbox(Exp1_Town09_JaksonText, MSGBOX_NPC)
+}
+
+const TOWN09_HARPER = 31
+const TOWN09_JAKSON = 32
+
+script Town09_MiniScene {
+	speakername (CommonText_Harper)
+	msgbox ("Hmm…{PAUSE 100}\n"
+			"Well, it's not a bad idea, but are you\l"
+			"sure players wouldn't get bored\l"
+			"without battles for so long?\p"
+			"And you better plan this out so we\n"
+			"can't, y'know, sequence break the\l"
+			"entire damn thing again?")
+	speakername (CommonText_Jakson)
+	msgbox ("…{PAUSE 60}Ah, yeah. I think I see what you mean.\p"
+			"Damn, I'll have to rethink that section.", MSGBOX_AUTOCLOSE)
+	applymovement (TOWN09_JAKSON, Common_Movement_FacePlayer)
+	applymovement (TOWN09_HARPER, Common_Movement_FacePlayer)
+	waitmovement (0)
+	speakername (CommonText_Jakson)
+	msgbox ("Oh, hey there, {PLAYER}.\p"
+			"I'm just bouncing some ideas off of\n"
+			"Harper for future content.")
+	speakername (CommonText_Harper)
+	msgbox ("I'm not sure if it's a waste of my time\n"
+			"yet, but I guess this guy's got a poor\l"
+			"track record so far.")
+	speakername (CommonText_Jakson)
+	msgbox ("… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
+			"Well, if it means I get some more help,\l"
+			"maybe I'll play up incompetence some\l"
+			"more.", MSGBOX_AUTOCLOSE)
+	applymovement (TOWN09_JAKSON, Common_Movement_FaceOriginalDirection)
+	waitmovement (0)
+	speakername (CommonText_Jakson)
+	msgbox ("But really, you're a big help, Harper.")
+	applymovement (TOWN09_HARPER, Common_Movement_FaceOriginalDirection)
+	waitmovement (0)
+	speakername (CommonText_Harper)
+	msgbox ("Yeah, yeah… {PAUSE 100}I just hope it's good in\n"
+			"the end. If you can't do it, I'll have\l"
+			"to step in.", MSGBOX_AUTOCLOSE)
+	applymovement (TOWN09_HARPER, Common_Movement_FacePlayer)
+	waitmovement (0)
+	speakername (CommonText_Harper)
+	msgbox ("Oh, and when you want to tell me how\n"
+			"much it sucks, {PLAYER}, please\l"
+			"redirect your ire in the general\l"
+			"direction of Jakson.")
+	applymovement (TOWN09_JAKSON, Common_Movement_FacePlayer)
+	waitmovement (0)
+	speakername (CommonText_Jakson)
+	msgbox ("… {PAUSE 30}… {PAUSE 30}…\p"
+			"Don't worry, I think this is how she\n"
+			"shows affection, {PLAYER}.", MSGBOX_AUTOCLOSE)
+	applymovement (TOWN09_JAKSON, Common_Movement_FaceOriginalDirection)
+	applymovement (TOWN09_HARPER, Common_Movement_FaceOriginalDirection)
+	waitmovement (0)
+	setflag (FLAG_TEMP_6)
+}

@@ -3,7 +3,6 @@
   "name": "RustboroCity",
   "layout": "LAYOUT_RUSTBORO_CITY",
   "music": "MUS_RUSTBORO",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_RUSTBORO_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -433,6 +432,34 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Magearna_ScientistDontLeave",
       "flag": "FLAG_HIDE_MAGEARNA_SCIENTIST"
+    },
+    {
+      "local_id": "TOWN09_HARPER",
+      "graphics_id": "OBJ_EVENT_GFX_HARPER",
+      "x": 23,
+      "y": 40,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Harper_Exp1_Town09",
+      "flag": "FLAG_TEMP_5"
+    },
+    {
+      "local_id": "TOWN09_JAKSON",
+      "graphics_id": "OBJ_EVENT_GFX_JAKSON",
+      "x": 23,
+      "y": 39,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Jakson_Exp1_Town09",
+      "flag": "FLAG_TEMP_5"
     }
   ],
   "warp_events": [
@@ -1000,5 +1027,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "RustboroCity_EventScript_CuttersHouseSign"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

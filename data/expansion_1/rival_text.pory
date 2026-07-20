@@ -1,7 +1,7 @@
 // dots…
 
 # PAUSE XX Rules
-# Stutters - {PAUSE 30}					Ex. "W- {PAUSE 30}When?"
+# Stutters - {PAUSE 30}					Ex. "W-{PAUSE 30}When?"
 # Emphasis - {PAUSE 30} XX {PAUSE 60}	Ex. "You took {PAUSE 30}forever {PAUSE 60)to log-on!"
 # …	- {PAUSE 100}						Ex. "When… {PAUSE 100}are you?"
 #	But … in sequence get {PAUSE 60}	Ex. "… {PAUSE 60}… {PAUSE 60}…"
@@ -521,4 +521,104 @@ text Exp1_Town07_JaksonText {
 			"… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
 			"… {PAUSE 30}… {PAUSE 30}…\l"
 			"This is gonna give me a headache.")
+}
+
+
+#Town09
+text Exp1_Town09_SakuraText {
+	format( "Is that you, {PLAYER}?\p"
+			"Did you have fun with our little\n"
+			"misadventure?\p"
+			"I thought we had a good time regardless.\p"
+			"The secret Professor Birch topless\n"
+			"scene was an odd inclusion, but the\l"
+			"rest seemed good!\p"
+			"But now, it's time to relax.\p"
+			"Make sure not to block the sun, or\n"
+			"you'll make my tan uneven{EMOJI_TILDE}\p"
+			"And if you hear anything new from\n"
+			"Jakson, come wake me up. I might be\l"
+			"deep in my siesta by then{EMOJI_TILDE}{UNK_SPACER}")
+}
+
+text Exp1_Town09_HarperText {
+	format( "Holy Jebus roasted on an open fire…{PAUSE 100}\n"
+			"What do you mean {PAUSE 30}THIS {PAUSE 60}much work goes\l"
+			"into making games?\p"
+			"At least I get why Jakson pulled a\n"
+			"premade one… {PAUSE 100}this takes time.\p"
+			"…{PAUSE 60}a little more respect for how solid\n"
+			"the base game modding was, too…\p"
+			"{EMOJI_BIGWHEEL}Sigh{EMOJI_BIGWHEEL}… {PAUSE 100}maybe I'll relax at the beach\n"
+			"with Sakura later. This didn't suddenly\l"
+			"become the only thing in my life.\p"
+			"In fact… {PAUSE 100}maybe Sakura would have an\n"
+			"idea on how to implement that idea…")
+}
+
+text Exp1_Town09_ReddText {
+	format( "Pokédex check!\p"
+			"…{PAUSE 60}Not bad. {PAUSE 30}Not bad.{PAUSE 30}\n"
+			"You make a worthy rival, even now.\p"
+			"You get a Calamity Maw yet, {PLAYER}?\p"
+			"I know that it's not going to be as\n"
+			"strong as the boss form, but I'm really\l"
+			"looking forward to taking this baby for\l"
+			"a spin.\p"
+			"Maybe I'll have to challenge you with it\n"
+			"at some point.\p"
+			"Oh, but not now.\p"
+			"I know a fresh catch isn't going to\n"
+			"match up to the ones you've trained.")
+}
+
+text Exp1_Town09_BaronText {
+	format( "Hi, {PLAYER}!\n"
+			"How are you doing?\p"
+			"Jakson and Harper headed off to…{PAUSE 100}\n"
+			"what's it called? The place where\l"
+			"we played the main game.\p"
+			"I think they wanted to chat about\n"
+			"some stuff…\l"
+			"…{PAUSE 60}no, they wouldn't be having\l"
+			"intercourse in a game like this.\l"
+			"… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}could they… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}?\p"
+			"I-{PAUSE 30}I'm sorry! It seems Sakura really\n"
+			"sparked my imagination. But you're all\l"
+			"grown adults. It'd be safe.\p"
+			"As for me… {PAUSE 100}I'm out here trying to gain\n"
+			"some more experience, for my Pokémon\l"
+			"and myself as a Trainer.")
+}
+
+text Exp1_Town09a_BaronText {
+	format( "Unfortunately, I think it'll be a little\n"
+			"longer before Baron can join you all.\p"
+			"He still says he's not feeling well, but\n"
+			"I've been hearing a lot more noise from\l"
+			"his room.\p"
+			"Hopefully that means he's regaining\n"
+			"more of his usual energy.")
+}
+
+text Exp1_Town09b_BaronText {
+	format( "I need to hold down the fort…{PAUSE 100}\n"
+			"Hopefully not too much longer.")
+}
+
+text Exp1_Town09c_BaronText {
+	format( "Anyway, I better get back to work.")
+}
+
+text Exp1_Town09_JaksonText {
+	format( "Is the next expansion done yet?\p"
+			"These things do take time, {PLAYER}.\p"
+			"Though… {PAUSE 100}I will admit that Harper's\n"
+			"enthusiasm has been a bit infectious.\p"
+			"No matter how the first expansion\n"
+			"went… {PAUSE 100}Well, I feel a pep in my step.\p"
+			"Sometimes you can have fun watching\n"
+			"a bad movie with friends.\p"
+			"Though… {PAUSE 100}I'll try to craft a good\n"
+			"movie for next time.")
 }

@@ -1,4 +1,10 @@
-mapscripts MauveIslandSoutheast_MapScripts {}
+mapscripts MauveIslandSoutheast_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) != 51) {
+			setflag (FLAG_TEMP_1)
+		}
+	}
+}
 
 script MauveIslandSoutheast_EventScript_Lars {
 	trainerbattle_single (TRAINER_LARS, "I can't find a good start for my climb,\nso distract me with a battle!", "Urgh!")

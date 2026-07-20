@@ -39,7 +39,7 @@ FarOffSeaWest_ChallengeBall::
 # 30 "data/expansion_1/challenge_balls.pory"
 	lock
 # 31 "data/expansion_1/challenge_balls.pory"
-	msgbox IllusoryGrotto_ChallengeBall_Text_0, MSGBOX_YESNO
+	msgbox FarOffSeaWest_ChallengeBall_Text_0, MSGBOX_YESNO
 # 32 "data/expansion_1/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq FarOffSeaWest_ChallengeBall_2
@@ -76,7 +76,7 @@ MauveIslandSouth_ChallengeBall::
 # 48 "data/expansion_1/challenge_balls.pory"
 	lock
 # 49 "data/expansion_1/challenge_balls.pory"
-	msgbox IllusoryGrotto_ChallengeBall_Text_0, MSGBOX_YESNO
+	msgbox MauveIslandSouth_ChallengeBall_Text_0, MSGBOX_YESNO
 # 50 "data/expansion_1/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MauveIslandSouth_ChallengeBall_2
@@ -111,7 +111,7 @@ MauveHollow_ChallengeBall::
 # 65 "data/expansion_1/challenge_balls.pory"
 	lock
 # 66 "data/expansion_1/challenge_balls.pory"
-	msgbox IllusoryGrotto_ChallengeBall_Text_0, MSGBOX_YESNO
+	msgbox MauveHollow_ChallengeBall_Text_0, MSGBOX_YESNO
 # 67 "data/expansion_1/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MauveHollow_ChallengeBall_2
@@ -148,7 +148,7 @@ WellspringChasm_ChallengeBall::
 # 83 "data/expansion_1/challenge_balls.pory"
 	lock
 # 84 "data/expansion_1/challenge_balls.pory"
-	msgbox IllusoryGrotto_ChallengeBall_Text_0, MSGBOX_YESNO
+	msgbox WellspringChasm_ChallengeBall_Text_0, MSGBOX_YESNO
 # 85 "data/expansion_1/challenge_balls.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq WellspringChasm_ChallengeBall_2
@@ -181,4 +181,26 @@ WellspringChasm_ChallengeBall_2:
 
 IllusoryGrotto_ChallengeBall_Text_0:
 # 13 "data/expansion_1/challenge_balls.pory"
-	.string "$"
+	.string "The ground feels sharp.\p"
+	.string "Reach out for the item?$"
+
+FarOffSeaWest_ChallengeBall_Text_0:
+# 31 "data/expansion_1/challenge_balls.pory"
+	.string "Flames lick out at you.\p"
+	.string "Reach out for the item?$"
+
+MauveIslandSouth_ChallengeBall_Text_0:
+# 49 "data/expansion_1/challenge_balls.pory"
+	.string "Caltrops are laid out.\p"
+	.string "Reach out for the item?$"
+
+MauveHollow_ChallengeBall_Text_0:
+# 66 "data/expansion_1/challenge_balls.pory"
+	.string "The area has somehow become sticky and\n"
+	.string "swampy.\p"
+	.string "Reach out for the item?$"
+
+WellspringChasm_ChallengeBall_Text_0:
+# 84 "data/expansion_1/challenge_balls.pory"
+	.string "A rainbow has begun to form.\p"
+	.string "Reach out for the item?$"

@@ -10,7 +10,7 @@
 
 script IllusoryGrotto_ChallengeBall {
 	lock
-	msgbox(format(""), MSGBOX_YESNO)
+	msgbox(format("The ground feels sharp.\pReach out for the item?"), MSGBOX_YESNO)
 	if (var(VAR_RESULT) == 1) {
 		call (SetupChallengeBall)
 		setstartingstatus (STARTING_STATUS_SHARP_STEEL_PLAYER)
@@ -28,7 +28,7 @@ script IllusoryGrotto_ChallengeBall {
 
 script FarOffSeaWest_ChallengeBall {
 	lock
-	msgbox(format(""), MSGBOX_YESNO)
+	msgbox(format("Flames lick out at you.\pReach out for the item?"), MSGBOX_YESNO)
 	if (var(VAR_RESULT) == 1) {
 		call (SetupChallengeBall)
 		setstartingstatus (STARTING_STATUS_SEA_OF_FIRE_PLAYER)
@@ -46,7 +46,7 @@ script FarOffSeaWest_ChallengeBall {
 
 script MauveIslandSouth_ChallengeBall {
 	lock
-	msgbox(format(""), MSGBOX_YESNO)
+	msgbox(format("Caltrops are laid out.\pReach out for the item?"), MSGBOX_YESNO)
 	if (var(VAR_RESULT) == 1) {
 		call (SetupChallengeBall)
 		setstartingstatus (STARTING_STATUS_SPIKES_PLAYER_L1)
@@ -63,7 +63,7 @@ script MauveIslandSouth_ChallengeBall {
 
 script MauveHollow_ChallengeBall {
 	lock
-	msgbox(format(""), MSGBOX_YESNO)
+	msgbox(format("The area has somehow become sticky and swampy.\pReach out for the item?"), MSGBOX_YESNO)
 	if (var(VAR_RESULT) == 1) {
 		call (SetupChallengeBall)
 		setstartingstatus (STARTING_STATUS_STICKY_WEB_PLAYER)
@@ -81,7 +81,7 @@ script MauveHollow_ChallengeBall {
 
 script WellspringChasm_ChallengeBall {
 	lock
-	msgbox(format(""), MSGBOX_YESNO)
+	msgbox(format("A rainbow has begun to form.\pReach out for the item?"), MSGBOX_YESNO)
 	if (var(VAR_RESULT) == 1) {
 		call (SetupChallengeBall)
 		setstartingstatus (STARTING_STATUS_RAINBOW_OPPONENT)

@@ -2995,10 +2995,24 @@ MatchCall_Text_Baron1::
 	.string "up…$"
 
 MatchCall_Text_BaronsMom1::
-	.string "$"
+	.string "… … … … …\p"
+	.string "Baron's Mom: O-Oh! {PLAYER}?!\p"
+	.string "I panicked a little trying to pick\n"
+	.string "up the phone…\p"
+	.string "I-I wasn't expecting you to call\n"
+	.string "me right away.$"
 
 MatchCall_Text_BaronsMom2::
-	.string "$"
+	.string "Baron's Mom: Hello? {PLAYER}?\p"
+	.string "It's good to hear from you again.\p"
+	.string "But I'm hoping that Baron can be\n"
+	.string "here in my place, speaking with\l"
+	.string "you.\p"
+	.string "He'll heal up soon I hope\p"
+	.string "He's been stuck in his room all\n"
+	.string "week, but he needs the rest.\p"
+	.string "I appreciate the call, but I-I\n"
+	.string "need to hurry up and prepare!.$"
 
 MatchCall_Text_BaronsMom3::
 	.string "Baron's Mom: {PLAYER}… is that\n"

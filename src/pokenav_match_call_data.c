@@ -402,11 +402,6 @@ static const struct MatchCallStructNPC sSakuraMatchCallHeader =
 
 static const match_call_text_data_t sBaronTextScripts[] = {
     { MatchCall_Text_Baron1,  0xFFFF,                              0xFFFF },
-    { MatchCall_Text_Baron1,  FLAG_VISITED_MAUVILLE_CITY,          0xFFFF },
-    { MatchCall_Text_Baron1,  FLAG_BADGE05_GET,                    0xFFFF },
-    { MatchCall_Text_Baron1,  FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
-    { MatchCall_Text_Baron1,  FLAG_IS_CHAMPION,                    0xFFFF },
-    { MatchCall_Text_Baron1,  FLAG_EXPANSION_1,                    0xFFFF },
     { NULL,                   0xFFFF,                              0xFFFF }
 };
 
@@ -418,6 +413,23 @@ static const struct MatchCallStructNPC sBaronMatchCallHeader =
     .desc = COMPOUND_STRING("555-800-8135"),
     .name = COMPOUND_STRING("Baron"),
     .textData = sBaronTextScripts
+};
+
+static const match_call_text_data_t sBaronsMomTextScripts[] = {
+    { MatchCall_Text_BaronsMom1,  0xFFFF,                              0xFFFF },
+    { MatchCall_Text_BaronsMom2,  FLAG_IS_CHAMPION,                    0xFFFF },
+    { MatchCall_Text_BaronsMom3,  FLAG_EXPANSION_1,                    0xFFFF },
+    { NULL,                   0xFFFF,                                  0xFFFF }
+};
+
+static const struct MatchCallStructNPC sBaronsMomMatchCallHeader =
+{
+    .type = MC_TYPE_NPC,
+    .mapSec = MAPSEC_NONE,
+    .flag = FLAG_ENABLE_BARONS_MOM_MATCH_CALL,
+    .desc = COMPOUND_STRING("555-800-8134"),
+    .name = COMPOUND_STRING("Baron's Mom"),
+    .textData = sBaronsMomTextScripts
 };
 
 static const match_call_text_data_t sWallyTextScripts[] = {
@@ -704,6 +716,7 @@ static const match_call_t sMatchCallHeaders[] = {
     [MC_HEADER_REDD]       = {.npc    = &sReddMatchCallHeader},
     [MC_HEADER_SAKURA]     = {.npc    = &sSakuraMatchCallHeader},
     [MC_HEADER_BARON]      = {.npc    = &sBaronMatchCallHeader},
+    [MC_HEADER_BARONS_MOM] = {.npc    = &sBaronsMomMatchCallHeader},
     [MC_HEADER_WALLY]      = {.wally  = &sWallyMatchCallHeader},
     [MC_HEADER_NORMAN]     = {.leader = &sNormanMatchCallHeader},
     [MC_HEADER_MOM]        = {.npc    = &sMomMatchCallHeader},
@@ -883,6 +896,17 @@ static const struct MatchCallCheckPageOverride sCheckPageOverrides[] = {
             [CHECK_PAGE_POKEMON]  = gText_MatchCallBaron,
             [CHECK_PAGE_INTRO_1]  = gText_MatchCallBaron,
             [CHECK_PAGE_INTRO_2]  = gText_MatchCallBaron
+        }
+    },
+    {
+        .idx = MC_HEADER_BARONS_MOM,
+        .facilityClass = FACILITY_CLASS_BARON,
+        .flag = 0xFFFF,
+        .flavorTexts = {
+            [CHECK_PAGE_STRATEGY] = COMPOUND_STRING("Heal up when injured!"),
+            [CHECK_PAGE_POKEMON]  = COMPOUND_STRING("Anything that will work…"),
+            [CHECK_PAGE_INTRO_1]  = COMPOUND_STRING("Mother to the best son"),
+            [CHECK_PAGE_INTRO_2]  = COMPOUND_STRING("I could ask for!")
         }
     }
 };

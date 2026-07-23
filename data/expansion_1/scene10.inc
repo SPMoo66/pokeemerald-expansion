@@ -899,8 +899,10 @@ Expansion1_Rival_Scene10c::
 # 564 "data/expansion_1/scene10.pory"
 	setvar VAR_EMERALBODY_RIVAL_STATE, 51
 # 565 "data/expansion_1/scene10.pory"
+	setflag FLAG_EXPANSION_1_MATCH_CALL_4
+# 566 "data/expansion_1/scene10.pory"
 	fadescreen FADE_TO_BLACK
-# 567 "data/expansion_1/scene10.pory"
+# 568 "data/expansion_1/scene10.pory"
 	warpcontinuescript MAP_MAUVE_CAMP, 16, 16, Expansion1_Rival_Scene02e
 	return
 

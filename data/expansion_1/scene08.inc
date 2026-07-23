@@ -862,6 +862,8 @@ Expansion1_Rival_Scene08e::
 # 478 "data/expansion_1/scene08.pory"
 	setvar VAR_EMERALBODY_RIVAL_STATE, 42
 # 479 "data/expansion_1/scene08.pory"
+	setflag FLAG_EXPANSION_1_MATCH_CALL_3
+# 480 "data/expansion_1/scene08.pory"
 	releaseall
 	return
 

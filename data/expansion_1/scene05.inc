@@ -440,10 +440,12 @@ Expansion1_Rival_Scene05b::
 # 281 "data/expansion_1/scene05.pory"
 	setvar VAR_EMERALBODY_RIVAL_STATE, 33
 # 282 "data/expansion_1/scene05.pory"
-	savebgm MUS_DP_CREDITS
+	setflag FLAG_EXPANSION_1_MATCH_CALL_2
 # 283 "data/expansion_1/scene05.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	savebgm MUS_DP_CREDITS
 # 284 "data/expansion_1/scene05.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 285 "data/expansion_1/scene05.pory"
 	warpcontinuescript MAP_MAUVE_CAMP, 16, 16, Expansion1_Rival_Scene02e
 	return
 

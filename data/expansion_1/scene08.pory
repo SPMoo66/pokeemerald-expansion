@@ -476,5 +476,6 @@ script Expansion1_Rival_Scene08e {
 	waitmovement (0)
 	removeobject (BYGONEVAULT1_FAKEPLAYER)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 42)
+	setflag (FLAG_EXPANSION_1_MATCH_CALL_3)
 	releaseall	
 }

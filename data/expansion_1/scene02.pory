@@ -351,6 +351,7 @@ script Expansion1_Rival_Scene02d {
 			"Operation… {PAUSE 100}START-O!!!", MSGBOX_AUTOCLOSE)
 
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 24)
+	setflag (FLAG_EXPANSION_1_MATCH_CALL_1)
 	savebgm (MUS_DP_CREDITS)
 	fadescreenswapbuffers (FADE_TO_BLACK)
 	warpcontinuescript (MAP_MAUVE_CAMP, 16, 16, Expansion1_Rival_Scene02e)	

@@ -616,55 +616,57 @@ Expansion1_Rival_Scene02d::
 # 353 "data/expansion_1/scene02.pory"
 	setvar VAR_EMERALBODY_RIVAL_STATE, 24
 # 354 "data/expansion_1/scene02.pory"
-	savebgm MUS_DP_CREDITS
+	setflag FLAG_EXPANSION_1_MATCH_CALL_1
 # 355 "data/expansion_1/scene02.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	savebgm MUS_DP_CREDITS
 # 356 "data/expansion_1/scene02.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 357 "data/expansion_1/scene02.pory"
 	warpcontinuescript MAP_MAUVE_CAMP, 16, 16, Expansion1_Rival_Scene02e
 	return
 
 
 Expansion1_Rival_Scene02e::
-# 360 "data/expansion_1/scene02.pory"
-	fadescreen FADE_FROM_BLACK
 # 361 "data/expansion_1/scene02.pory"
-	clearflag FLAG_HIDE_MAP_NAME_POPUP
+	fadescreen FADE_FROM_BLACK
 # 362 "data/expansion_1/scene02.pory"
-	setrespawn HEAL_LOCATION_MAUVE_CAMP
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
 # 363 "data/expansion_1/scene02.pory"
+	setrespawn HEAL_LOCATION_MAUVE_CAMP
+# 364 "data/expansion_1/scene02.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 31
 	goto_if_lt Expansion1_Rival_Scene02e_2
 Expansion1_Rival_Scene02e_1:
-# 367 "data/expansion_1/scene02.pory"
+# 368 "data/expansion_1/scene02.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 51
 	goto_if_eq Expansion1_Rival_Scene02e_4
 	return
 
 Expansion1_Rival_Scene02e_2:
-# 364 "data/expansion_1/scene02.pory"
-	delay 20
 # 365 "data/expansion_1/scene02.pory"
+	delay 20
+# 366 "data/expansion_1/scene02.pory"
 	helpwindow HELP_EXPANSION_1_BOAT_EXPLANATION
 	goto Expansion1_Rival_Scene02e_1
 
 Expansion1_Rival_Scene02e_4:
-# 368 "data/expansion_1/scene02.pory"
-	delay 20
 # 369 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02e_Text_0
+	delay 20
 # 370 "data/expansion_1/scene02.pory"
-	giveitem ITEM_BIG_NUGGET, 2
+	msgbox Expansion1_Rival_Scene02e_Text_0
 # 371 "data/expansion_1/scene02.pory"
-	giveitem ITEM_BOTTLE_CAP, 1
+	giveitem ITEM_BIG_NUGGET, 2
 # 372 "data/expansion_1/scene02.pory"
-	buffernumberstring STR_VAR_1, 8
+	giveitem ITEM_BOTTLE_CAP, 1
 # 373 "data/expansion_1/scene02.pory"
-	setvar VAR_0x8004, 8
+	buffernumberstring STR_VAR_1, 8
 # 374 "data/expansion_1/scene02.pory"
-	special GiveFrontierBattlePoints
+	setvar VAR_0x8004, 8
 # 375 "data/expansion_1/scene02.pory"
-	msgbox PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS
+	special GiveFrontierBattlePoints
 # 376 "data/expansion_1/scene02.pory"
+	msgbox PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS
+# 377 "data/expansion_1/scene02.pory"
 	closemessage
 	return
 
@@ -907,5 +909,5 @@ Expansion1_Rival_Scene02d_Text_25:
 	.string "Operation… {PAUSE 100}START-O!!!$"
 
 Expansion1_Rival_Scene02e_Text_0:
-# 369 "data/expansion_1/scene02.pory"
+# 370 "data/expansion_1/scene02.pory"
 	.string "Obtained Jakson's “reward”!$"

@@ -223,8 +223,8 @@
 #define FLAG_EMIB_DEMO_1                     0xC2 // Reserved for Demo (Possible Save import)
 #define FLAG_EMIB_DEMO_2                     0xC3 // Reserved for Demo (Possible Save import)
 #define FLAG_EMIB_DEMO_3                     0xC4 // Reserved for Demo (Possible Save import)
-#define FLAG_EXPANSION_1                     0xC5 // Reserved for potential future expansions (Used for Level Caps)
-#define FLAG_EXPANSION_2                     0xC6 // Reserved for potential future expansions (Used for Level Caps)
+#define FLAG_EXPANSION_1_LEVEL_CAP           0xC5 // Reserved for expansion level caps
+#define FLAG_EXPANSION_2_LEVEL_CAP           0xC6 // Reserved for expansion level caps
 #define FLAG_RUSTURF_TUNNEL_OPENED           0xC7
 #define FLAG_RECEIVED_RED_SCARF              0xC8
 #define FLAG_RECEIVED_BLUE_SCARF             0xC9

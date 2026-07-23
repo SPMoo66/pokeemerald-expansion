@@ -870,7 +870,7 @@ IllusoryGrotto_B4F_1R_Scene01_OnFrame::
 # 489 "data/expansion_1/scene01.pory"
 	setflag FLAG_CANT_USE_ESCAPE_ROPE
 # 490 "data/expansion_1/scene01.pory"
-	setflag FLAG_EXPANSION_1
+	setflag FLAG_EXPANSION_1_LEVEL_CAP
 # 491 "data/expansion_1/scene01.pory"
 	special ShowMapNamePopup
 # 492 "data/expansion_1/scene01.pory"

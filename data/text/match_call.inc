@@ -2752,6 +2752,11 @@ MatchCall_Text_Harper5::
 	.string "feel free to say hi.$"
 
 MatchCall_Text_Harper6::
+	.string "… … … … …\p"
+	.string "Baron doesn't seem to be picking\n"
+	.string "up…$"
+
+MatchCall_Text_Harper7::
 	.string "Harper: Oh, hey {PLAYER}.\p"
 	.string "This is the first time you've\n"
 	.string "called in a while.\p"
@@ -2761,7 +2766,7 @@ MatchCall_Text_Harper6::
 	.string "be outside of these dark dungeons\l"
 	.string "for more time.$"
 
-MatchCall_Text_Harper7::
+MatchCall_Text_Harper8::
 	.string "Harper: Oh, {PLAYER}?\p"
 	.string "Online again? Yeah, I guess I am.\p"
 	.string "Jakson's been calling on my help\n"

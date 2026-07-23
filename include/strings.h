@@ -1762,7 +1762,6 @@ extern const u8 MatchCall_Text_Harper5[];
 extern const u8 MatchCall_Text_Harper6[];
 extern const u8 MatchCall_Text_Harper7[];
 extern const u8 MatchCall_Text_Harper8[];
-extern const u8 MatchCall_Text_Harper9[];
 extern const u8 MatchCall_Text_Redd1[];
 extern const u8 MatchCall_Text_Redd2[];
 extern const u8 MatchCall_Text_Redd3[];

@@ -195,10 +195,10 @@
 #define FLAG_BATTLESIM_DISC_1_2              0xA6 // Was for Gym 2 TM
 #define FLAG_BATTLESIM_DISC_1_3              0xA7 // Was for Gym 3 TM
 #define FLAG_INTRODUCED_BATTLESIM            0xA8 // Was for Gym 4 TM
-#define FLAG_UNUSED_0xA9                     0xA9 // Was for Gym 5 TM
-#define FLAG_UNUSED_0xAA                     0xAA // Was for Gym 6 TM
-#define FLAG_UNUSED_0xAB                     0xAB // Was for Gym 7 TM
-#define FLAG_UNUSED_0xAC                     0xAC // Was for Gym 8 TM
+#define FLAG_EXPANSION_1_MATCH_CALL_1        0xA9 // Was for Gym 5 TM
+#define FLAG_EXPANSION_1_MATCH_CALL_2        0xAA // Was for Gym 6 TM
+#define FLAG_EXPANSION_1_MATCH_CALL_3        0xAB // Was for Gym 7 TM
+#define FLAG_EXPANSION_1_MATCH_CALL_4        0xAC // Was for Gym 8 TM
 #define FLAG_HIDE_SECRET_BASE_TRAINER        0xAD
 #define FLAG_DECORATION_1                    0xAE
 #define FLAG_DECORATION_2                    0xAF

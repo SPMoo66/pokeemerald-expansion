@@ -321,15 +321,16 @@ static const struct MatchCallRival sBrendanMatchCallHeader =
 };
 
 static const match_call_text_data_t sJaksonTextScripts[] = {
-    { MatchCall_Text_Jakson1,  ALWAYS_AVAILABLE,                    NO_FLAG_TO_SET },
-    { MatchCall_Text_Jakson2,  FLAG_VISITED_MAUVILLE_CITY,          NO_FLAG_TO_SET },
-    { MatchCall_Text_Jakson3,  FLAG_BADGE05_GET,                    NO_FLAG_TO_SET },
-    { MatchCall_Text_Jakson4,  FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, NO_FLAG_TO_SET },
-    { MatchCall_Text_Jakson5,  FLAG_IS_CHAMPION,                    NO_FLAG_TO_SET },
-    { MatchCall_Text_Jakson6,  FLAG_EXPANSION_1_MATCH_CALL_1,       NO_FLAG_TO_SET },
-    { MatchCall_Text_Jakson7,  FLAG_EXPANSION_1_MATCH_CALL_2,       NO_FLAG_TO_SET },
-    { MatchCall_Text_Jakson8,  FLAG_EXPANSION_1_MATCH_CALL_3,       NO_FLAG_TO_SET },
-    { MatchCall_Text_Jakson9,  FLAG_EXPANSION_1_MATCH_CALL_4,       NO_FLAG_TO_SET },
+    { MatchCall_Text_Jakson1,           ALWAYS_AVAILABLE,                    NO_FLAG_TO_SET },
+    { MatchCall_Text_Jakson2,           FLAG_VISITED_MAUVILLE_CITY,          NO_FLAG_TO_SET },
+    { MatchCall_Text_Jakson3,           FLAG_BADGE05_GET,                    NO_FLAG_TO_SET },
+    { MatchCall_Text_Jakson4,           FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, NO_FLAG_TO_SET },
+    { MatchCall_Text_Jakson5,           FLAG_IS_CHAMPION,                    NO_FLAG_TO_SET },
+    { MatchCall_Text_JaksonUnavailable, FLAG_EXPANSION_1_LEVEL_CAP,          NO_FLAG_TO_SET },
+    { MatchCall_Text_Jakson6,           FLAG_EXPANSION_1_MATCH_CALL_1,       NO_FLAG_TO_SET },
+    { MatchCall_Text_Jakson7,           FLAG_EXPANSION_1_MATCH_CALL_2,       NO_FLAG_TO_SET },
+    { MatchCall_Text_Jakson8,           FLAG_EXPANSION_1_MATCH_CALL_3,       NO_FLAG_TO_SET },
+    { MatchCall_Text_Jakson9,           FLAG_EXPANSION_1_MATCH_CALL_4,       NO_FLAG_TO_SET },
     MATCH_CALL_TEXT_END
 };
 
@@ -344,14 +345,14 @@ static const struct MatchCallStructNPC sJaksonMatchCallHeader =
 };
 
 static const match_call_text_data_t sHarperTextScripts[] = {
-    { MatchCall_Text_Harper1,  ALWAYS_AVAILABLE,                    NO_FLAG_TO_SET },
-    { MatchCall_Text_Harper2,  FLAG_VISITED_MAUVILLE_CITY,          NO_FLAG_TO_SET },
-    { MatchCall_Text_Harper3,  FLAG_BADGE05_GET,                    NO_FLAG_TO_SET },
-    { MatchCall_Text_Harper4,  FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, NO_FLAG_TO_SET },
-    { MatchCall_Text_Harper5,  FLAG_IS_CHAMPION,                    NO_FLAG_TO_SET },
-    { MatchCall_Text_Harper6,  FLAG_EXPANSION_1_MATCH_CALL_1,       NO_FLAG_TO_SET },
-    { MatchCall_Text_Harper7,  FLAG_EXPANSION_1_MATCH_CALL_3,       NO_FLAG_TO_SET },
-    { MatchCall_Text_Harper8,  FLAG_EXPANSION_1_MATCH_CALL_4,       NO_FLAG_TO_SET },
+    { MatchCall_Text_Harper1,           ALWAYS_AVAILABLE,                    NO_FLAG_TO_SET },
+    { MatchCall_Text_Harper2,           FLAG_VISITED_MAUVILLE_CITY,          NO_FLAG_TO_SET },
+    { MatchCall_Text_Harper3,           FLAG_BADGE05_GET,                    NO_FLAG_TO_SET },
+    { MatchCall_Text_Harper4,           FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, NO_FLAG_TO_SET },
+    { MatchCall_Text_Harper5,           FLAG_IS_CHAMPION,                    NO_FLAG_TO_SET },
+    { MatchCall_Text_HarperUnavailable, FLAG_EXPANSION_1_LEVEL_CAP,          NO_FLAG_TO_SET },
+    { MatchCall_Text_Harper6,           FLAG_EXPANSION_1_MATCH_CALL_3,       NO_FLAG_TO_SET },
+    { MatchCall_Text_Harper7,           FLAG_EXPANSION_1_MATCH_CALL_4,       NO_FLAG_TO_SET },
     MATCH_CALL_TEXT_END
 };
 
@@ -366,15 +367,16 @@ static const struct MatchCallStructNPC sHarperMatchCallHeader =
 };
 
 static const match_call_text_data_t sReddTextScripts[] = {
-    { MatchCall_Text_Redd1,  ALWAYS_AVAILABLE,                    NO_FLAG_TO_SET },
-    { MatchCall_Text_Redd2,  FLAG_VISITED_MAUVILLE_CITY,          NO_FLAG_TO_SET },
-    { MatchCall_Text_Redd3,  FLAG_BADGE05_GET,                    NO_FLAG_TO_SET },
-    { MatchCall_Text_Redd4,  FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, NO_FLAG_TO_SET },
-    { MatchCall_Text_Redd5,  FLAG_IS_CHAMPION,                    NO_FLAG_TO_SET },
-    { MatchCall_Text_Redd6,  FLAG_EXPANSION_1_MATCH_CALL_1,       NO_FLAG_TO_SET },
-    { MatchCall_Text_Redd7,  FLAG_EXPANSION_1_MATCH_CALL_2,       NO_FLAG_TO_SET },
-    { MatchCall_Text_Redd8,  FLAG_EXPANSION_1_MATCH_CALL_3,       NO_FLAG_TO_SET },
-    { MatchCall_Text_Redd9,  FLAG_EXPANSION_1_MATCH_CALL_4,       NO_FLAG_TO_SET },
+    { MatchCall_Text_Redd1,           ALWAYS_AVAILABLE,                    NO_FLAG_TO_SET },
+    { MatchCall_Text_Redd2,           FLAG_VISITED_MAUVILLE_CITY,          NO_FLAG_TO_SET },
+    { MatchCall_Text_Redd3,           FLAG_BADGE05_GET,                    NO_FLAG_TO_SET },
+    { MatchCall_Text_Redd4,           FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, NO_FLAG_TO_SET },
+    { MatchCall_Text_Redd5,           FLAG_IS_CHAMPION,                    NO_FLAG_TO_SET },
+    { MatchCall_Text_ReddUnavailable, FLAG_EXPANSION_1_LEVEL_CAP,          NO_FLAG_TO_SET },
+    { MatchCall_Text_Redd6,           FLAG_EXPANSION_1_MATCH_CALL_1,       NO_FLAG_TO_SET },
+    { MatchCall_Text_Redd7,           FLAG_EXPANSION_1_MATCH_CALL_2,       NO_FLAG_TO_SET },
+    { MatchCall_Text_Redd8,           FLAG_EXPANSION_1_MATCH_CALL_3,       NO_FLAG_TO_SET },
+    { MatchCall_Text_Redd9,           FLAG_EXPANSION_1_MATCH_CALL_4,       NO_FLAG_TO_SET },
     MATCH_CALL_TEXT_END
 };
 
@@ -389,15 +391,16 @@ static const struct MatchCallStructNPC sReddMatchCallHeader =
 };
 
 static const match_call_text_data_t sSakuraTextScripts[] = {
-    { MatchCall_Text_Sakura1,  ALWAYS_AVAILABLE,                    NO_FLAG_TO_SET },
-    { MatchCall_Text_Sakura2,  FLAG_VISITED_MAUVILLE_CITY,          NO_FLAG_TO_SET },
-    { MatchCall_Text_Sakura3,  FLAG_BADGE05_GET,                    NO_FLAG_TO_SET },
-    { MatchCall_Text_Sakura4,  FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, NO_FLAG_TO_SET },
-    { MatchCall_Text_Sakura5,  FLAG_IS_CHAMPION,                    NO_FLAG_TO_SET },
-    { MatchCall_Text_Sakura6,  FLAG_EXPANSION_1_MATCH_CALL_1,       NO_FLAG_TO_SET },
-    { MatchCall_Text_Sakura7,  FLAG_EXPANSION_1_MATCH_CALL_2,       NO_FLAG_TO_SET },
-    { MatchCall_Text_Sakura8,  FLAG_EXPANSION_1_MATCH_CALL_3,       NO_FLAG_TO_SET },
-    { MatchCall_Text_Sakura9,  FLAG_EXPANSION_1_MATCH_CALL_4,       NO_FLAG_TO_SET },
+    { MatchCall_Text_Sakura1,           ALWAYS_AVAILABLE,                    NO_FLAG_TO_SET },
+    { MatchCall_Text_Sakura2,           FLAG_VISITED_MAUVILLE_CITY,          NO_FLAG_TO_SET },
+    { MatchCall_Text_Sakura3,           FLAG_BADGE05_GET,                    NO_FLAG_TO_SET },
+    { MatchCall_Text_Sakura4,           FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, NO_FLAG_TO_SET },
+    { MatchCall_Text_Sakura5,           FLAG_IS_CHAMPION,                    NO_FLAG_TO_SET },
+    { MatchCall_Text_SakuraUnavailable, FLAG_EXPANSION_1_LEVEL_CAP,          NO_FLAG_TO_SET },
+    { MatchCall_Text_Sakura6,           FLAG_EXPANSION_1_MATCH_CALL_1,       NO_FLAG_TO_SET },
+    { MatchCall_Text_Sakura7,           FLAG_EXPANSION_1_MATCH_CALL_2,       NO_FLAG_TO_SET },
+    { MatchCall_Text_Sakura8,           FLAG_EXPANSION_1_MATCH_CALL_3,       NO_FLAG_TO_SET },
+    { MatchCall_Text_Sakura9,           FLAG_EXPANSION_1_MATCH_CALL_4,       NO_FLAG_TO_SET },
     MATCH_CALL_TEXT_END
 };
 
@@ -412,7 +415,7 @@ static const struct MatchCallStructNPC sSakuraMatchCallHeader =
 };
 
 static const match_call_text_data_t sBaronTextScripts[] = {
-    { MatchCall_Text_Baron1, ALWAYS_AVAILABLE, NO_FLAG_TO_SET },
+    { MatchCall_Text_BaronUnavailable, ALWAYS_AVAILABLE, NO_FLAG_TO_SET },
     MATCH_CALL_TEXT_END
 };
 
@@ -427,12 +430,13 @@ static const struct MatchCallStructNPC sBaronMatchCallHeader =
 };
 
 static const match_call_text_data_t sBaronsMomTextScripts[] = {
-    { MatchCall_Text_BaronsMom1,  ALWAYS_AVAILABLE,              NO_FLAG_TO_SET },
-    { MatchCall_Text_BaronsMom2,  FLAG_IS_CHAMPION,              NO_FLAG_TO_SET },
-    { MatchCall_Text_BaronsMom3,  FLAG_EXPANSION_1_MATCH_CALL_1, NO_FLAG_TO_SET },
-    { MatchCall_Text_BaronsMom4,  FLAG_EXPANSION_1_MATCH_CALL_2, NO_FLAG_TO_SET },
-    { MatchCall_Text_BaronsMom5,  FLAG_EXPANSION_1_MATCH_CALL_3, NO_FLAG_TO_SET },
-    { MatchCall_Text_BaronsMom6,  FLAG_EXPANSION_1_MATCH_CALL_4, NO_FLAG_TO_SET },
+    { MatchCall_Text_BaronsMom1,           ALWAYS_AVAILABLE,              NO_FLAG_TO_SET },
+    { MatchCall_Text_BaronsMom2,           FLAG_IS_CHAMPION,              NO_FLAG_TO_SET },
+    { MatchCall_Text_BaronsMomUnavailable, FLAG_EXPANSION_1_LEVEL_CAP,    NO_FLAG_TO_SET },
+    { MatchCall_Text_BaronsMom3,           FLAG_EXPANSION_1_MATCH_CALL_1, NO_FLAG_TO_SET },
+    { MatchCall_Text_BaronsMom4,           FLAG_EXPANSION_1_MATCH_CALL_2, NO_FLAG_TO_SET },
+    { MatchCall_Text_BaronsMom5,           FLAG_EXPANSION_1_MATCH_CALL_3, NO_FLAG_TO_SET },
+    { MatchCall_Text_BaronsMom6,           FLAG_EXPANSION_1_MATCH_CALL_4, NO_FLAG_TO_SET },
     MATCH_CALL_TEXT_END
 };
 

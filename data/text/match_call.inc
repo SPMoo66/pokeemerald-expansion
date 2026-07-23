@@ -2587,6 +2587,11 @@ MatchCall_Text_Brendan15:: @ 2B4D46
 	.string "with you, {PLAYER}, they get pretty\l"
 	.string "envious!$"
 
+MatchCall_Text_JaksonUnavailable::
+	.string "… … … … …\p"
+	.string "Jakson doesn't seem to be picking\n"
+	.string "up…$"
+
 MatchCall_Text_Jakson1::
 	.string "Jakson: Hi, {PLAYER}.\p"
 	.string "It's good to know the Pokénav\n"
@@ -2693,6 +2698,11 @@ MatchCall_Text_Jakson9::
 	.string "into the next one, so give me a\l"
 	.string "little more time, okay?$"
 
+MatchCall_Text_HarperUnavailable::
+	.string "… … … … …\p"
+	.string "Harper doesn't seem to be picking\n"
+	.string "up…$"
+
 MatchCall_Text_Harper1::
 	.string "Harper: H- Hello?\p"
 	.string "It's you, {PLAYER}, right?\n"
@@ -2752,11 +2762,6 @@ MatchCall_Text_Harper5::
 	.string "feel free to say hi.$"
 
 MatchCall_Text_Harper6::
-	.string "… … … … …\p"
-	.string "Baron doesn't seem to be picking\n"
-	.string "up…$"
-
-MatchCall_Text_Harper7::
 	.string "Harper: Oh, hey {PLAYER}.\p"
 	.string "This is the first time you've\n"
 	.string "called in a while.\p"
@@ -2766,7 +2771,7 @@ MatchCall_Text_Harper7::
 	.string "be outside of these dark dungeons\l"
 	.string "for more time.$"
 
-MatchCall_Text_Harper8::
+MatchCall_Text_Harper7::
 	.string "Harper: Oh, {PLAYER}?\p"
 	.string "Online again? Yeah, I guess I am.\p"
 	.string "Jakson's been calling on my help\n"
@@ -2778,6 +2783,11 @@ MatchCall_Text_Harper8::
 	.string "meantime.\p"
 	.string "I'm sure he'll be the one\n"
 	.string "assembling us when it's ready.$"
+
+MatchCall_Text_ReddUnavailable::
+	.string "… … … … …\p"
+	.string "Redd doesn't seem to be picking\n"
+	.string "up…$"
 
 MatchCall_Text_Redd1::
 	.string "Redd: Yo, {PLAYER}!\p"
@@ -2878,6 +2888,11 @@ MatchCall_Text_Redd9::
 	.string "the spotlight, so SOME of us need\l"
 	.string "to work a little harder.\p"
 	.string "See you around!$"
+
+MatchCall_Text_SakuraUnavailable::
+	.string "… … … … …\p"
+	.string "Sakura doesn't seem to be picking\n"
+	.string "up…$"
 
 MatchCall_Text_Sakura1::
 	.string "Sakura: Hi, {PLAYER}!\p"
@@ -2994,9 +3009,14 @@ MatchCall_Text_Sakura9::
 	.string "hard to earn.\p"
 	.string "Enjoy it while you ca{EMOJI_TILDE}{UNK_SPACER}$"
 
-MatchCall_Text_Baron1::
+MatchCall_Text_BaronUnavailable::
 	.string "… … … … …\p"
 	.string "Baron doesn't seem to be picking\n"
+	.string "up…$"
+
+MatchCall_Text_BaronsMomUnavailable::
+	.string "… … … … …\p"
+	.string "Harper doesn't seem to be picking\n"
 	.string "up…$"
 
 MatchCall_Text_BaronsMom1::

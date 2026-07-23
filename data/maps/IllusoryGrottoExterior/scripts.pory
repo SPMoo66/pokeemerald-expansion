@@ -7,6 +7,7 @@ mapscripts IllusoryGrottoExterior_MapScripts {
 		if (var(VAR_EMERALBODY_RIVAL_STATE) == 45) {
 			clearflag (FLAG_TEMP_1)
 		}
+		clearflag (FLAG_CANT_USE_ESCAPE_ROPE)
 	}
 }
 

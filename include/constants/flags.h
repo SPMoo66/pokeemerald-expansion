@@ -1458,7 +1458,7 @@
 #define FLAG_LANDMARK_HUNTERS_HOUSE                 (SYSTEM_FLAGS + 0x5B)
 #define FLAG_LANDMARK_SEALED_CHAMBER                (SYSTEM_FLAGS + 0x5C)
 
-#define FLAG_SYS_TV_LATIAS_LATIOS                   (SYSTEM_FLAGS + 0x5D)
+#define FLAG_UNUSED_0xA5D                           (SYSTEM_FLAGS + 0x5D) // Was FLAG_SYS_TV_LATIAS_LATIOS, but that was converted to a special flag
 
 #define FLAG_LANDMARK_SKY_PILLAR                    (SYSTEM_FLAGS + 0x5E)
 
@@ -1679,6 +1679,7 @@
 #define NUM_SPECIAL_FLAGS                       (SPECIAL_FLAGS_END - SPECIAL_FLAGS_START + 1)
 
 // Special Flag aliases
+#define FLAG_SYS_TV_LATIAS_LATIOS               FLAG_SEMI_TEMP_1
 #define FLAG_REVERSE_SLATEPORT_BOAT_SCENE       FLAG_SEMI_TEMP_1
 #define FLAG_SHOW_FAR_OFF_SEA_WEST_BOATS        FLAG_SEMI_TEMP_1
 #define FLAG_SCENE09_TRANSITION                 FLAG_SEMI_TEMP_1

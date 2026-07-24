@@ -3,17 +3,16 @@
   "name": "MagmaHideout_4F",
   "layout": "LAYOUT_MAGMA_HIDEOUT_4F",
   "music": "MUS_DP_GALACTIC_ETERNA_BUILDING",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_MAGMA_HIDEOUT",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_UNDERGROUND",
+  "map_type": "MAP_TYPE_DUNGEON_WITH_SHADOWS",
   "allow_cycling": true,
   "allow_escaping": true,
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "local_id": "LOCALID_MAGMA_HIDEOUT_4F_GROUDON",
@@ -143,10 +142,7 @@
       "dest_warp_id": "1"
     }
   ],
-  "coord_events": [
-
-  ],
-  "bg_events": [
-
-  ]
+  "coord_events": [],
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }

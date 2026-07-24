@@ -3,11 +3,10 @@
   "name": "SkyPillar_3F",
   "layout": "LAYOUT_SKY_PILLAR_3F",
   "music": "MUS_MT_CHIMNEY",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_SKY_PILLAR",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_UNDERGROUND",
+  "map_type": "MAP_TYPE_DUNGEON_WITH_SHADOWS",
   "allow_cycling": true,
   "allow_escaping": true,
   "allow_running": true,
@@ -53,5 +52,6 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }

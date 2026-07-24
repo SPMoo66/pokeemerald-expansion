@@ -32,7 +32,7 @@ SS_Tidal_Dungeon_1F_1R_Room1_Steven_7:
 # 43 "data/maps/SS_Tidal_Dungeon_1F_1R_Room1/scripts.pory"
 	speakername CommonText_Steven
 # 44 "data/maps/SS_Tidal_Dungeon_1F_1R_Room1/scripts.pory"
-	msgbox SS_Tidal_Dungeon_1F_1R_Room1_Steven_Text_5
+	msgbox SS_Tidal_Dungeon_1F_1R_Room1_Steven_Text_5, MSGBOX_AUTOCLOSE
 	return
 
 SS_Tidal_Dungeon_1F_1R_Room1_Steven_1:

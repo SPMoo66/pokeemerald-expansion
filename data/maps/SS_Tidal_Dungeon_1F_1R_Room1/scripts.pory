@@ -48,6 +48,6 @@ script SS_Tidal_Dungeon_1F_1R_Room1_Steven {
 				"seeing what you've learned since the\l"
 				"last.\p"
 				"I hope you continue journeying.\n"
-				"Learn more and return to me!")
+				"Learn more and return to me!", MSGBOX_AUTOCLOSE)
 	}
 }

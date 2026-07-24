@@ -12785,7 +12785,7 @@
     {
         .trainerClass = TRAINER_CLASS_CHAMPION,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_STEVEN,
+        .trainerPic = TRAINER_PIC_STEVEN_MASTERS,
         .trainerName = _("Steven"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,

@@ -253,6 +253,8 @@ const u16 gTrainerPalette_SisAndBro[] = INCGFX_U16("graphics/trainers/front_pics
 
 const u32 gTrainerFrontPic_Steven[] = INCGFX_U32("graphics/trainers/front_pics/steven.png", ".4bpp.smol");
 const u16 gTrainerPalette_Steven[] = INCGFX_U16("graphics/trainers/front_pics/steven.png", ".gbapal");
+const u32 gTrainerFrontPic_StevenMasters[] = INCGFX_U32("graphics/trainers/front_pics/steven_masters.png", ".4bpp.smol");
+const u16 gTrainerPalette_StevenMasters[] = INCGFX_U16("graphics/trainers/palettes/steven_masters.pal", ".gbapal");
 
 const u32 gTrainerFrontPic_SalonMaidenAnabel[] = INCGFX_U32("graphics/trainers/front_pics/salon_maiden_anabel.png", ".4bpp.smol");
 const u16 gTrainerPalette_SalonMaidenAnabel[] = INCGFX_U16("graphics/trainers/front_pics/salon_maiden_anabel.png", ".gbapal");
@@ -1157,6 +1159,10 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_CYNTHIA] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Cynthia, gTrainerPalette_Cynthia),
+    },
+    [TRAINER_PIC_STEVEN_MASTERS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_StevenMasters, gTrainerPalette_StevenMasters),
     },
     [TRAINER_PIC_SHADOWED_LUCARIO] =
     {

@@ -1,3 +1,9 @@
+script Expansion1_ClearUnusedFlag { // This script clears flags that may have been previously set but are now unused. These flags can be used AFTER this script is run only.
+	clearflag (FLAG_UNUSED_0x34D)
+	clearflag (FLAG_UNUSED_0x34E)
+	clearflag (FLAG_UNUSED_0x0FF)
+}
+
 script HealingSpring_Exp1 {
 	msgbox( format( "It's a restorative spring."))
 	closemessage

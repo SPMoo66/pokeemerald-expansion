@@ -13,8 +13,7 @@ const SSTIDAL_BARON = 10
 // dots…
 
 script Expansion1_Rival_Scene01 {
-	clearflag (FLAG_UNUSED_0x34D)
-	clearflag (FLAG_UNUSED_0x34E)
+	call (Expansion1_ClearUnusedFlag)
 	applymovement (SLATEPORT_HARBOR_BARON, Common_Movement_Talking)
 	waitmovement (0)
 	delay (20)

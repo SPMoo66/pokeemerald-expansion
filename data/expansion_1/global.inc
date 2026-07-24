@@ -1,107 +1,117 @@
-HealingSpring_Exp1::
+Expansion1_ClearUnusedFlag::
 # 2 "data/expansion_1/global.pory"
-	msgbox HealingSpring_Exp1_Text_0
+	clearflag FLAG_UNUSED_0x34D
 # 3 "data/expansion_1/global.pory"
-	closemessage
+	clearflag FLAG_UNUSED_0x34E
 # 4 "data/expansion_1/global.pory"
+	clearflag FLAG_UNUSED_0x0FF
+	return
+
+
+HealingSpring_Exp1::
+# 8 "data/expansion_1/global.pory"
+	msgbox HealingSpring_Exp1_Text_0
+# 9 "data/expansion_1/global.pory"
+	closemessage
+# 10 "data/expansion_1/global.pory"
 	call Common_EventScript_OutOfCenterPartyHeal
 	return
 
 
 IllusoryGrottoMovableRock_Exp1::
-# 8 "data/expansion_1/global.pory"
+# 14 "data/expansion_1/global.pory"
 	getobjectfacingdirection LOCALID_PLAYER, VAR_RESULT
-# 9 "data/expansion_1/global.pory"
+# 15 "data/expansion_1/global.pory"
 	compare VAR_RESULT, DIR_SOUTH
 	goto_if_eq IllusoryGrottoMovableRock_Exp1_1
-# 20 "data/expansion_1/global.pory"
+# 26 "data/expansion_1/global.pory"
 	msgbox IllusoryGrottoMovableRock_Exp1_Text_1
-# 21 "data/expansion_1/global.pory"
+# 27 "data/expansion_1/global.pory"
 	closemessage
-# 22 "data/expansion_1/global.pory"
+# 28 "data/expansion_1/global.pory"
 	release
 	end
 
 IllusoryGrottoMovableRock_Exp1_1:
-# 10 "data/expansion_1/global.pory"
-	msgbox IllusoryGrottoMovableRock_Exp1_Text_0
-# 11 "data/expansion_1/global.pory"
-	closemessage
-# 12 "data/expansion_1/global.pory"
-	setfieldeffectargument 0, VAR_RESULT
-# 13 "data/expansion_1/global.pory"
-	dofieldeffect FLDEFF_USE_STRENGTH
-# 14 "data/expansion_1/global.pory"
-	waitstate
-# 15 "data/expansion_1/global.pory"
-	playse SE_M_STRENGTH
 # 16 "data/expansion_1/global.pory"
-	delay 20
+	msgbox IllusoryGrottoMovableRock_Exp1_Text_0
 # 17 "data/expansion_1/global.pory"
+	closemessage
+# 18 "data/expansion_1/global.pory"
+	setfieldeffectargument 0, VAR_RESULT
+# 19 "data/expansion_1/global.pory"
+	dofieldeffect FLDEFF_USE_STRENGTH
+# 20 "data/expansion_1/global.pory"
+	waitstate
+# 21 "data/expansion_1/global.pory"
+	playse SE_M_STRENGTH
+# 22 "data/expansion_1/global.pory"
+	delay 20
+# 23 "data/expansion_1/global.pory"
 	playse SE_FALL
 	return
 
 
 IllusoryGrotto_MonsterCommon1_Exp1::
-# 28 "data/expansion_1/global.pory"
+# 34 "data/expansion_1/global.pory"
 	delay 10
-# 29 "data/expansion_1/global.pory"
+# 35 "data/expansion_1/global.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceUp
-# 30 "data/expansion_1/global.pory"
+# 36 "data/expansion_1/global.pory"
 	waitmovement 0
-# 31 "data/expansion_1/global.pory"
+# 37 "data/expansion_1/global.pory"
 	delay 10
 	return
 
 
 IllusoryGrotto_MonsterCommon2_Exp1::
-# 35 "data/expansion_1/global.pory"
-	special DrawWholeMapView
-# 36 "data/expansion_1/global.pory"
-	delay 10
-# 37 "data/expansion_1/global.pory"
-	playse SE_M_SNORE
-# 38 "data/expansion_1/global.pory"
-	delay 20
-# 39 "data/expansion_1/global.pory"
-	playse SE_M_HYDRO_PUMP
-# 40 "data/expansion_1/global.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_LockFacingDirection
 # 41 "data/expansion_1/global.pory"
+	special DrawWholeMapView
+# 42 "data/expansion_1/global.pory"
+	delay 10
+# 43 "data/expansion_1/global.pory"
+	playse SE_M_SNORE
+# 44 "data/expansion_1/global.pory"
+	delay 20
+# 45 "data/expansion_1/global.pory"
+	playse SE_M_HYDRO_PUMP
+# 46 "data/expansion_1/global.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_LockFacingDirection
+# 47 "data/expansion_1/global.pory"
 	waitmovement 0
 	return
 
 
 SlateportCity_Harbor_MauveIslandSailor::
-# 53 "data/expansion_1/global.pory"
+# 59 "data/expansion_1/global.pory"
 	faceplayer
-# 54 "data/expansion_1/global.pory"
+# 60 "data/expansion_1/global.pory"
 	msgbox SlateportCity_Harbor_MauveIslandSailor_Text_0, MSGBOX_YESNO
-# 55 "data/expansion_1/global.pory"
+# 61 "data/expansion_1/global.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq SlateportCity_Harbor_MauveIslandSailor_2
 SlateportCity_Harbor_MauveIslandSailor_1:
-# 58 "data/expansion_1/global.pory"
+# 64 "data/expansion_1/global.pory"
 	closemessage
 	return
 
 SlateportCity_Harbor_MauveIslandSailor_2:
-# 56 "data/expansion_1/global.pory"
+# 62 "data/expansion_1/global.pory"
 	goto SlateportRegionMap_BoatSceneInit
 	goto SlateportCity_Harbor_MauveIslandSailor_1
 
 
 HealingSpring_Exp1_Text_0:
-# 2 "data/expansion_1/global.pory"
+# 8 "data/expansion_1/global.pory"
 	.string "It's a restorative spring.$"
 
 IllusoryGrottoMovableRock_Exp1_Text_0:
-# 10 "data/expansion_1/global.pory"
+# 16 "data/expansion_1/global.pory"
 	.string "Oh! Your Pokémon may be able to push\n"
 	.string "this boulder aside!$"
 
 IllusoryGrottoMovableRock_Exp1_Text_1:
-# 20 "data/expansion_1/global.pory"
+# 26 "data/expansion_1/global.pory"
 	.string "Dad's advice…\n"
 	.string "… … …\p"
 	.string "… … …\p"
@@ -109,11 +119,11 @@ IllusoryGrottoMovableRock_Exp1_Text_1:
 	.string "{PLAYER}! Try a different side!$"
 
 SlateportCity_Harbor_MauveIslandSailor_Text_0:
-# 54 "data/expansion_1/global.pory"
+# 60 "data/expansion_1/global.pory"
 	.string "Ahoy!\nAre you looking to return to Mauve\lIsland?$"
 
 Text_TooDarkLetsTurnBack::
-# 44 "data/expansion_1/global.pory"
+# 50 "data/expansion_1/global.pory"
 	.string "…\n"
 	.string "…\l"
 	.string "…\l"
@@ -121,9 +131,9 @@ Text_TooDarkLetsTurnBack::
 	.string "Let's turn back.$"
 
 Exp1_WildPokemonTrainerText_Intro::
-# 61 "data/expansion_1/global.pory"
+# 67 "data/expansion_1/global.pory"
 	.string "Grrrooo!!$"
 
 Exp1_WildPokemonTrainerText_Defeat::
-# 65 "data/expansion_1/global.pory"
+# 71 "data/expansion_1/global.pory"
 	.string "Grooo.$"

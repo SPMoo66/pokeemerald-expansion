@@ -232,7 +232,7 @@
 #define VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE               0x40D2
 #define VAR_DEX_UPGRADE_JOHTO_STARTER_STATE              0x40D3
 #define VAR_SS_TIDAL_SCOTT_STATE                         0x40D4 // Always equal to FLAG_MET_SCOTT_ON_SS_TIDAL
-#define VAR_ROAMER_POKEMON                               0x40D5 // 0 = Latias, 1 = Latios
+#define VAR_UNUSED_0x40D5                                0x40D5 // Was VAR_ROAMER_POKEMON. This may be 0 or 1 already if the player has beaten the game, but can easily be overwritten
 #define VAR_TRAINER_HILL_IS_ACTIVE                       0x40D6
 #define VAR_SKY_PILLAR_RAYQUAZA_CRY_DONE                 0x40D7
 #define VAR_SOOTOPOLIS_WALLACE_STATE                     0x40D8
@@ -241,13 +241,13 @@
 #define VAR_UNUSED_0x40DB                                0x40DB // Unused Var
 #define VAR_UNUSED_0x40DC                                0x40DC // Unused Var
 #define VAR_GIFT_PICHU_SLOT                              0x40DD
-#define VAR_UNUSED_0X40DE                                0x40DE // Was unused Mystery Gift Var
-#define VAR_UNUSED_0X40DF                                0x40DF // Was unused Mystery Gift Var
-#define VAR_UNUSED_0X40E0                                0x40E0 // Was unused Mystery Gift Var
-#define VAR_UNUSED_0X40E1                                0x40E1 // Was unused Mystery Gift Var
-#define VAR_UNUSED_0X40E2                                0x40E2 // Was unused Mystery Gift Var
-#define VAR_UNUSED_0X40E3                                0x40E3 // Was unused Mystery Gift Var
-#define VAR_UNUSED_0X40E4                                0x40E4 // Was unused Mystery Gift Var
+#define VAR_UNUSED_0x40DE                                0x40DE // Was unused Mystery Gift Var
+#define VAR_UNUSED_0x40DF                                0x40DF // Was unused Mystery Gift Var
+#define VAR_UNUSED_0x40E0                                0x40E0 // Was unused Mystery Gift Var
+#define VAR_UNUSED_0x40E1                                0x40E1 // Was unused Mystery Gift Var
+#define VAR_UNUSED_0x40E2                                0x40E2 // Was unused Mystery Gift Var
+#define VAR_UNUSED_0x40E3                                0x40E3 // Was unused Mystery Gift Var
+#define VAR_UNUSED_0x40E4                                0x40E4 // Was unused Mystery Gift Var
 #define VAR_UNUSED_0x40E5                                0x40E5 // Unused Var
 #define VAR_DAILY_SLOTS                                  0x40E6
 #define VAR_DAILY_WILDS                                  0x40E7

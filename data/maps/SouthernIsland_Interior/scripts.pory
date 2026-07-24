@@ -14,10 +14,11 @@ script SouthernIsland_OnResume {
 	}
 }
 
-// VAR_ROAMER_POKEMON is set by the TV event after beating the game. 0 = Latias, 1 = Latios. The TV event will determine which Lati is fought first.
+// The player's gender will determine which Lati is fought first. Female = Latias, Male = Latios
 script SouthernIsland_OnTransition {
-	if (var(VAR_ROAMER_POKEMON) == 0) {
-		if (flag(FLAG_CAUGHT_LATIAS_OR_LATIOS) == false) {     // This checks if the first Lati was caught
+	checkplayergender
+	if (var(VAR_RESULT) == FEMALE) {
+		if (flag(FLAG_CAUGHT_FIRST_LATI) == false) {     // This checks if the first Lati was caught
 			setvar (VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SPECIES(LATIAS))
 			setvar (VAR_TEMP_4, SPECIES_LATIAS)
 			setflag (FLAG_TEMP_3)
@@ -28,7 +29,7 @@ script SouthernIsland_OnTransition {
 		}
 	}
 	else {
-		if (flag(FLAG_CAUGHT_LATIAS_OR_LATIOS) == false) {     // Same as above
+		if (flag(FLAG_CAUGHT_FIRST_LATI) == false) {     // Same as above
 			setvar (VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SPECIES(LATIOS))
 			setvar (VAR_TEMP_4, SPECIES_LATIOS)
 		}
@@ -82,18 +83,16 @@ script SouthernIsland_Interior_EventScript_TryLatiEncounter {
 		clearflag (FLAG_SYS_CTRL_OBJ_DELETE)
 		specialvar (VAR_RESULT, GetBattleOutcome)
 		switch (var(VAR_RESULT)) {
-			case B_OUTCOME_WON:
-			case B_OUTCOME_RAN:
-			case B_OUTCOME_PLAYER_TELEPORTED:
-				copyvar (VAR_0x8004, VAR_TEMP_4)
-				goto (Common_EventScript_LegendaryFlewAway)
-			default:   // This is caught state
-				if (flag(FLAG_CAUGHT_LATIAS_OR_LATIOS) == false) {   // If neither have been caught, set the flag for the first one, else set the flag for both
-					setflag (FLAG_CAUGHT_LATIAS_OR_LATIOS)
+			case B_OUTCOME_CAUGHT:
+				if (flag(FLAG_CAUGHT_FIRST_LATI) == false) {   // If neither have been caught, set the flag for the first one, else set the flag for both
+					setflag (FLAG_CAUGHT_FIRST_LATI)
 				}
 				else {
 					setflag (FLAG_CAUGHT_LATIAS_AND_LATIOS)
 				}
+			default:
+				copyvar (VAR_0x8004, VAR_TEMP_4)
+				goto (Common_EventScript_LegendaryFlewAway)
 		}
 		
 	}

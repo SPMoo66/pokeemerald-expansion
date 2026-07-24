@@ -719,6 +719,7 @@ script EventScript_CapCollector {
 	dynmultipush("Metronome", ITEM_METRONOME)
 	dynmultipush("Grip Claw", ITEM_GRIP_CLAW)
 	dynmultipush("Sticky Barb", ITEM_STICKY_BARB)
+	dynmultipush("Burnt Fang", ITEM_BURNT_FANG)
 	dynmultipush("Shed Shell", ITEM_SHED_SHELL)
 	dynmultipush("Big Root", ITEM_BIG_ROOT)
 	dynmultipush("Light Clay", ITEM_LIGHT_CLAY)
@@ -732,6 +733,7 @@ script EventScript_CapCollector {
 	dynmultipush("Normal Gem", ITEM_NORMAL_GEM)
 	dynmultipush("Flame Orb", ITEM_FLAME_ORB)
 	dynmultipush("Toxic Orb", ITEM_TOXIC_ORB)
+	dynmultipush("Frost Orb", ITEM_FROST_ORB)
 	dynmultipush("Eviolite", ITEM_EVIOLITE)
 	dynmultipush("Terrain Extender", ITEM_TERRAIN_EXTENDER)
 	dynmultipush("Protective Pads", ITEM_PROTECTIVE_PADS)
@@ -741,6 +743,7 @@ script EventScript_CapCollector {
 	dynmultipush("Punching Glove", ITEM_PUNCHING_GLOVE)
 	dynmultipush("Covert Cloak", ITEM_COVERT_CLOAK)
 	dynmultipush("Blunder Policy", ITEM_BLUNDER_POLICY)
+	dynmultipush("Candy Jar", ITEM_CANDY_JAR)
 	special(GetNumberOfBadges)
 	if (var(VAR_RESULT) >= 5) {
 		dynmultipush("Booster Energy", ITEM_BOOSTER_ENERGY)

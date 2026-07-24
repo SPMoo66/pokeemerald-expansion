@@ -1478,9 +1478,9 @@ BottleCapMart1:
 # 746 "data/global.pory"
 	.2byte ITEM_FLAME_ORB
 # 747 "data/global.pory"
-	.2byte ITEM_TOXIC_ORB
-# 748 "data/global.pory"
 	.2byte ITEM_FROST_ORB
+# 748 "data/global.pory"
+	.2byte ITEM_TOXIC_ORB
 # 749 "data/global.pory"
 	.2byte ITEM_EVIOLITE
 # 750 "data/global.pory"
@@ -1539,9 +1539,9 @@ BottleCapMart2:
 # 777 "data/global.pory"
 	.2byte ITEM_FLAME_ORB
 # 778 "data/global.pory"
-	.2byte ITEM_TOXIC_ORB
-# 779 "data/global.pory"
 	.2byte ITEM_FROST_ORB
+# 779 "data/global.pory"
+	.2byte ITEM_TOXIC_ORB
 # 780 "data/global.pory"
 	.2byte ITEM_EVIOLITE
 # 781 "data/global.pory"

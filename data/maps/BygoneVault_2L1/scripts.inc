@@ -71,3 +71,63 @@ BygoneVault_LeftSwitch2_4:
 	setflag FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH_2
 	return
 
+
+BygoneVault_2L1_EventScript_Zed::
+# 39 "data/maps/BygoneVault_2L1/scripts.pory"
+	trainerbattle_single TRAINER_ZED, BygoneVault_2L1_EventScript_Zed_Text_0, BygoneVault_2L1_EventScript_Zed_Text_1
+# 40 "data/maps/BygoneVault_2L1/scripts.pory"
+	msgbox BygoneVault_2L1_EventScript_Zed_Text_2, MSGBOX_AUTOCLOSE
+	return
+
+
+BygoneVault_2L1_EventScript_Tessa::
+# 44 "data/maps/BygoneVault_2L1/scripts.pory"
+	trainerbattle_single TRAINER_TESSA, BygoneVault_2L1_EventScript_Tessa_Text_0, BygoneVault_2L1_EventScript_Tessa_Text_1
+# 45 "data/maps/BygoneVault_2L1/scripts.pory"
+	msgbox BygoneVault_2L1_EventScript_Tessa_Text_2, MSGBOX_AUTOCLOSE
+	return
+
+
+BygoneVault_2L1_EventScript_Lex::
+# 49 "data/maps/BygoneVault_2L1/scripts.pory"
+	trainerbattle_single TRAINER_LEX, BygoneVault_2L1_EventScript_Lex_Text_0, BygoneVault_2L1_EventScript_Lex_Text_1
+# 50 "data/maps/BygoneVault_2L1/scripts.pory"
+	msgbox BygoneVault_2L1_EventScript_Lex_Text_2, MSGBOX_AUTOCLOSE
+	return
+
+
+BygoneVault_2L1_EventScript_Zed_Text_0:
+# 39 "data/maps/BygoneVault_2L1/scripts.pory"
+	.string "The Dragon Tamer's creed! Start!$"
+
+BygoneVault_2L1_EventScript_Zed_Text_1:
+# 39 "data/maps/BygoneVault_2L1/scripts.pory"
+	.string "Even in defeat, roar with your dragon!$"
+
+BygoneVault_2L1_EventScript_Zed_Text_2:
+# 40 "data/maps/BygoneVault_2L1/scripts.pory"
+	.string "The second part of the creed?\pI'm still working that out.$"
+
+BygoneVault_2L1_EventScript_Tessa_Text_0:
+# 44 "data/maps/BygoneVault_2L1/scripts.pory"
+	.string "One who battles endlessly. That's an\nAce Trainer.$"
+
+BygoneVault_2L1_EventScript_Tessa_Text_1:
+# 44 "data/maps/BygoneVault_2L1/scripts.pory"
+	.string "Are you Ace Trainer too?$"
+
+BygoneVault_2L1_EventScript_Tessa_Text_2:
+# 45 "data/maps/BygoneVault_2L1/scripts.pory"
+	.string "If you aren't an Ace, you seem to have\nwhat it takes.$"
+
+BygoneVault_2L1_EventScript_Lex_Text_0:
+# 49 "data/maps/BygoneVault_2L1/scripts.pory"
+	.string "Roar out like a dragon!$"
+
+BygoneVault_2L1_EventScript_Lex_Text_1:
+# 49 "data/maps/BygoneVault_2L1/scripts.pory"
+	.string "Like a what?$"
+
+BygoneVault_2L1_EventScript_Lex_Text_2:
+# 50 "data/maps/BygoneVault_2L1/scripts.pory"
+	.string "Get some dragons and I'll crown you\nthe ultimate!$"

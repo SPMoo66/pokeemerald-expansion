@@ -6,3 +6,13 @@ mapscripts BygoneVault_R1_MapScripts {
 		}
 	}
 }
+
+script BygoneVault_R1_EventScript_Marvin {
+	trainerbattle_single (TRAINER_MARVIN, "My son and I travel the world in search\nof ancient history.", "At least my son wasn't here to see that.")
+	msgbox ("If I want to win battles too, I'll have\nto have my son with me.", MSGBOX_AUTOCLOSE)
+}
+
+script BygoneVault_R1_EventScript_Luthor {
+	trainerbattle_single (TRAINER_LUTHOR, "Even in this ruin I shall train with you.", "Fine! That will do!")
+	msgbox ("Enough training. I need to explore.", MSGBOX_AUTOCLOSE)
+}

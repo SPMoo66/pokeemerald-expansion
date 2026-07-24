@@ -82,6 +82,26 @@ BygoneVault_LeftSwitch_4:
 	return
 
 
+BygoneVault_L2_EventScript_Toby::
+# 52 "data/maps/BygoneVault_L2/scripts.pory"
+	trainerbattle_single TRAINER_TOBY, BygoneVault_L2_EventScript_Toby_Text_0, BygoneVault_L2_EventScript_Toby_Text_1
+# 53 "data/maps/BygoneVault_L2/scripts.pory"
+	msgbox BygoneVault_L2_EventScript_Toby_Text_2, MSGBOX_AUTOCLOSE
+	return
+
+
+BygoneVault_L2_EventScript_Toby_Text_0:
+# 52 "data/maps/BygoneVault_L2/scripts.pory"
+	.string "A fascinating discovery!$"
+
+BygoneVault_L2_EventScript_Toby_Text_1:
+# 52 "data/maps/BygoneVault_L2/scripts.pory"
+	.string "Leave me be! There's much to be\nlearned here!$"
+
+BygoneVault_L2_EventScript_Toby_Text_2:
+# 53 "data/maps/BygoneVault_L2/scripts.pory"
+	.string "These ruins are exactly the kind of\nthing I've been searching for!$"
+
 Text_FlipSwitch::
 # 43 "data/maps/BygoneVault_L2/scripts.pory"
 	.string "Flip the switch?$"

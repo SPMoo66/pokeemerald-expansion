@@ -34,3 +34,18 @@ script BygoneVault_LeftSwitch2 {
 		msgbox (Text_FlippedSwitch, MSGBOX_AUTOCLOSE)
 	}
 }
+
+script BygoneVault_2L1_EventScript_Zed {
+	trainerbattle_single (TRAINER_ZED, "The Dragon Tamer's creed! Start!", "Even in defeat, roar with your dragon!")
+	msgbox ("The second part of the creed?\pI'm still working that out.", MSGBOX_AUTOCLOSE)
+}
+
+script BygoneVault_2L1_EventScript_Tessa {
+	trainerbattle_single (TRAINER_TESSA, "One who battles endlessly. That's an\nAce Trainer.", "Are you Ace Trainer too?")
+	msgbox ("If you aren't an Ace, you seem to have\nwhat it takes.", MSGBOX_AUTOCLOSE)
+}
+
+script BygoneVault_2L1_EventScript_Lex {
+	trainerbattle_single (TRAINER_LEX, "Roar out like a dragon!", "Like a what?")
+	msgbox ("Get some dragons and I'll crown you\nthe ultimate!", MSGBOX_AUTOCLOSE)
+}

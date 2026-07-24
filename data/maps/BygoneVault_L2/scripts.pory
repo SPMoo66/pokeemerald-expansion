@@ -47,3 +47,8 @@ text Text_FlipSwitch {
 text Text_FlippedSwitch {
 	"The switch has been flipped."
 }
+
+script BygoneVault_L2_EventScript_Toby {
+	trainerbattle_single (TRAINER_TOBY, "A fascinating discovery!", "Leave me be! There's much to be\nlearned here!")
+	msgbox ("These ruins are exactly the kind of\nthing I've been searching for!", MSGBOX_AUTOCLOSE)
+}

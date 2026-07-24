@@ -4,6 +4,7 @@ script Expansion1_ClearUnusedFlag { // This script clears flags that may have be
 	clearflag (FLAG_UNUSED_0x34E)
 	clearflag (FLAG_UNUSED_0x38E)
 	clearflag (FLAG_UNUSED_0x38F)
+	clearflag (FLAG_UNUSED_0xA2F)
 }
 
 script HealingSpring_Exp1 {

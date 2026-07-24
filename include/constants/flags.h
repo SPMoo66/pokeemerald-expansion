@@ -1407,7 +1407,7 @@
 #define FLAG_SYS_CRUISE_MODE                        (SYSTEM_FLAGS + 0x2D)
 
 #define FLAG_SYS_DETECTOR_MODE                      (SYSTEM_FLAGS + 0x2E) // allow player to find hidden mons
-#define FLAG_SYS_DEXNAV_GET                         (SYSTEM_FLAGS + 0x2F) // FLAG_0xA2F - dexnav shows in start menu
+#define FLAG_UNUSED_0xA2F                           (SYSTEM_FLAGS + 0x2F) // Unused flag - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 1 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 1, SCENE 01
 
 #define FLAG_SYS_TV_HOME                            (SYSTEM_FLAGS + 0x30)
 #define FLAG_SYS_TV_WATCH                           (SYSTEM_FLAGS + 0x31)

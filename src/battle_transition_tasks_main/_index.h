@@ -1,4 +1,5 @@
 #include "base.h"
+#include "double_clock_wipe_pokeball.h"
 #include "frontier_circles.h"
 #include "tpp_host.h"
 #include "speed_lines.h"

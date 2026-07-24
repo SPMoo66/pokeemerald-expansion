@@ -111,7 +111,11 @@ script Expansion1_Rival_Scene10b {
 	multi_2_vs_1 (TRAINER_EXP_1_FINAL_BATTLE_1, "Gyashaa!", PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
 	clearflag (FLAG_SINGLE_WILD_OPPONENT)
 	clearflag (FLAG_DONT_TRANSITION_BATTLE_MUSIC)
-
+	if (var(VAR_RESULT) != 1) { // if loss
+		clearflag (FLAG_DONT_PLAY_VICTORY_MUSIC)
+		fadescreen (FADE_TO_BLACK)
+		special (SetCB2WhiteOut)
+	}
 
 	call (GetBaronsName)
 	msgbox ("It-{PAUSE 30}It looks almost dead…{PAUSE 100}?\n"
@@ -156,6 +160,11 @@ script Expansion1_Rival_Scene10b {
 	multi_2_vs_2 (TRAINER_WILD_POKEMON_IG_5, Exp1_WildPokemonTrainerText_Defeat, TRAINER_WILD_POKEMON_IG_6, Exp1_WildPokemonTrainerText_Defeat, PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
 	clearflag (FLAG_WILD_OPPONENT)
 	clearflag (FLAG_SYS_CTRL_OBJ_DELETE)
+	if (var(VAR_RESULT) != 1) { // if loss
+		clearflag (FLAG_DONT_PLAY_VICTORY_MUSIC)
+		fadescreen (FADE_TO_BLACK)
+		special (SetCB2WhiteOut)
+	}
 	call (WeatherScript_SetAndDo_None)
 	delay (30)
 
@@ -200,6 +209,11 @@ script Expansion1_Rival_Scene10b {
 	multi_2_vs_1 (TRAINER_EXP_1_FINAL_BATTLE_2, "Gyassshaaa…", PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS)
 	clearflag (FLAG_SINGLE_WILD_OPPONENT)
 	clearflag (FLAG_DONT_TRANSITION_BATTLE_MUSIC)
+	if (var(VAR_RESULT) != 1) { // if loss
+		clearflag (FLAG_DONT_PLAY_VICTORY_MUSIC)
+		fadescreen (FADE_TO_BLACK)
+		special (SetCB2WhiteOut)
+	}
 
 	setvar (VAR_0x8004, 2)  # vertical pan
 	setvar (VAR_0x8005, 6)  # horizontal pan

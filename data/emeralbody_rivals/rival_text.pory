@@ -1971,6 +1971,7 @@ text Battle05_BaronText_PostBattle3 {
 	"… … …\p"
 	"O-Oh? My phone number…?\p"
 	"{PLAYER}, y-you couldn't mean…\p"
+	"… … …\n"
 	"To stay in contact while we're playing?\p"
 	"O-Oh! Of course! Of course that's what\n"
 	"I was thinking. Let me share it with you."

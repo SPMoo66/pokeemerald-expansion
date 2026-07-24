@@ -934,12 +934,13 @@ script Baron_Battle05 {
 	applymovement (BARON_BATTLE05, Common_Movement_WalkInPlaceFasterUp)
 	waitmovement (0)
 	speakername (CommonText_BaronsMom)
-	msgbox (Battle05_BaronText_PostBattle3, MSGBOX_DEFAULT)
+	msgbox (Battle05_BaronText_PostBattle3, MSGBOX_AUTOCLOSE)
 	playfanfare (MUS_REGISTER_MATCH_CALL)
 	bufferstring (STR_VAR_2, CommonText_BaronsMom)
 	msgbox (Text_RegisteredInPokenav_OneInput, MSGBOX_DEFAULT)
 	waitfanfare
 	closemessage
+	setflag (FLAG_ENABLE_BARONS_MOM_MATCH_CALL)
 	delay (20)
 	applymovement (BARON_BATTLE05, Common_Movement_Smile)
 	playse (SE_M_MORNING_SUN)

@@ -3016,7 +3016,7 @@ MatchCall_Text_BaronUnavailable::
 
 MatchCall_Text_BaronsMomUnavailable::
 	.string "… … … … …\p"
-	.string "Harper doesn't seem to be picking\n"
+	.string "Baron's Mom doesn't seem to be picking\n"
 	.string "up…$"
 
 MatchCall_Text_BaronsMom1::
@@ -3033,7 +3033,7 @@ MatchCall_Text_BaronsMom2::
 	.string "But I'm hoping that Baron can be\n"
 	.string "here in my place, speaking with\l"
 	.string "you.\p"
-	.string "He'll heal up soon I hope\p"
+	.string "He'll heal up soon I hope.\p"
 	.string "He's been stuck in his room all\n"
 	.string "week, but he needs the rest.\p"
 	.string "I appreciate the call, but I-I\n"

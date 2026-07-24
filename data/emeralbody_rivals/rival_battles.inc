@@ -1948,7 +1948,7 @@ Baron_Battle05_1:
 # 936 "data/emeralbody_rivals/rival_battles.pory"
 	speakername CommonText_BaronsMom
 # 937 "data/emeralbody_rivals/rival_battles.pory"
-	msgbox Battle05_BaronText_PostBattle3, MSGBOX_DEFAULT
+	msgbox Battle05_BaronText_PostBattle3, MSGBOX_AUTOCLOSE
 # 938 "data/emeralbody_rivals/rival_battles.pory"
 	playfanfare MUS_REGISTER_MATCH_CALL
 # 939 "data/emeralbody_rivals/rival_battles.pory"
@@ -1960,26 +1960,28 @@ Baron_Battle05_1:
 # 942 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 943 "data/emeralbody_rivals/rival_battles.pory"
-	delay 20
+	setflag FLAG_ENABLE_BARONS_MOM_MATCH_CALL
 # 944 "data/emeralbody_rivals/rival_battles.pory"
-	applymovement 12, Common_Movement_Smile
+	delay 20
 # 945 "data/emeralbody_rivals/rival_battles.pory"
-	playse SE_M_MORNING_SUN
+	applymovement 12, Common_Movement_Smile
 # 946 "data/emeralbody_rivals/rival_battles.pory"
-	delay 60
+	playse SE_M_MORNING_SUN
 # 947 "data/emeralbody_rivals/rival_battles.pory"
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	delay 60
 # 948 "data/emeralbody_rivals/rival_battles.pory"
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 949 "data/emeralbody_rivals/rival_battles.pory"
 	compare VAR_TEMP_0, 9
 	goto_if_eq Baron_Battle05_6
-# 952 "data/emeralbody_rivals/rival_battles.pory"
+# 953 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 12, Common_Movement_WalkRight5
 Baron_Battle05_5:
-# 954 "data/emeralbody_rivals/rival_battles.pory"
-	waitmovement 0
 # 955 "data/emeralbody_rivals/rival_battles.pory"
-	applymovement 12, Common_Movement_WalkInPlaceUp
+	waitmovement 0
 # 956 "data/emeralbody_rivals/rival_battles.pory"
+	applymovement 12, Common_Movement_WalkInPlaceUp
+# 957 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
 	return
 
@@ -1989,7 +1991,7 @@ Baron_Battle05_2:
 	goto Baron_Battle05_1
 
 Baron_Battle05_6:
-# 949 "data/emeralbody_rivals/rival_battles.pory"
+# 950 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 12, Common_Movement_WalkRight6
 	goto Baron_Battle05_5
 

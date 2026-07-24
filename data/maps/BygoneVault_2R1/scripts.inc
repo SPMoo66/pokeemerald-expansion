@@ -71,3 +71,58 @@ BygoneVault_RightSwitch2_4:
 	setflag FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2
 	return
 
+
+BygoneVault_2R1_EventScript_WildPokemon1::
+# 39 "data/maps/BygoneVault_2R1/scripts.pory"
+	checktrainerflag TRAINER_WILD_POKEMON_BV_1
+	goto_if 0, BygoneVault_2R1_EventScript_WildPokemon1_2
+BygoneVault_2R1_EventScript_WildPokemon1_1:
+# 62 "data/maps/BygoneVault_2R1/scripts.pory"
+	setvar VAR_TEMP_0, 1
+	return
+
+BygoneVault_2R1_EventScript_WildPokemon1_2:
+# 40 "data/maps/BygoneVault_2R1/scripts.pory"
+	lock
+# 41 "data/maps/BygoneVault_2R1/scripts.pory"
+	setobjectxyperm 1, 27, 13
+# 42 "data/maps/BygoneVault_2R1/scripts.pory"
+	addobject 1
+# 43 "data/maps/BygoneVault_2R1/scripts.pory"
+	setflag FLAG_WILD_OPPONENT
+# 44 "data/maps/BygoneVault_2R1/scripts.pory"
+	setflag FLAG_SYS_SET_BATTLE_BGM
+# 45 "data/maps/BygoneVault_2R1/scripts.pory"
+	setvar VAR_BATTLE_BGM, MUS_XD_VS_CIPHER_PEON
+# 46 "data/maps/BygoneVault_2R1/scripts.pory"
+	applymovement 1, Common_Movement_WalkUpFast5
+# 47 "data/maps/BygoneVault_2R1/scripts.pory"
+	waitmovement 0
+# 48 "data/maps/BygoneVault_2R1/scripts.pory"
+	playmoncry SPECIES_LUCARIO, CRY_MODE_ENCOUNTER
+# 49 "data/maps/BygoneVault_2R1/scripts.pory"
+	waitmoncry
+# 50 "data/maps/BygoneVault_2R1/scripts.pory"
+	msgbox Exp1_WildPokemonTrainerText_Intro, MSGBOX_DEFAULT
+# 51 "data/maps/BygoneVault_2R1/scripts.pory"
+	trainerbattle_no_intro TRAINER_WILD_POKEMON_BV_1, Exp1_WildPokemonTrainerText_Defeat
+# 52 "data/maps/BygoneVault_2R1/scripts.pory"
+	playmoncry SPECIES_LUCARIO, CRY_MODE_WEAK
+# 53 "data/maps/BygoneVault_2R1/scripts.pory"
+	waitmoncry
+# 54 "data/maps/BygoneVault_2R1/scripts.pory"
+	delay 10
+# 55 "data/maps/BygoneVault_2R1/scripts.pory"
+	applymovement 1, Common_Movement_WalkDownFast5
+# 56 "data/maps/BygoneVault_2R1/scripts.pory"
+	waitmovement 0
+# 57 "data/maps/BygoneVault_2R1/scripts.pory"
+	setvar VAR_TEMP_0, 1
+# 58 "data/maps/BygoneVault_2R1/scripts.pory"
+	clearflag FLAG_WILD_OPPONENT
+# 59 "data/maps/BygoneVault_2R1/scripts.pory"
+	removeobject 1
+# 60 "data/maps/BygoneVault_2R1/scripts.pory"
+	release
+	goto BygoneVault_2R1_EventScript_WildPokemon1_1
+

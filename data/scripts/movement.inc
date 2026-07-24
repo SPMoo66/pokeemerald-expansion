@@ -747,6 +747,14 @@ Common_Movement_WalkUpFast3::
 	walk_fast_up
 	step_end
 
+Common_Movement_WalkUpFast5::
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
+
 Common_Movement_WalkDownFast::
 	walk_fast_down
 	step_end

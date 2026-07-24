@@ -34,3 +34,30 @@ script BygoneVault_RightSwitch2 {
 		msgbox (Text_FlippedSwitch, MSGBOX_AUTOCLOSE)
 	}
 }
+
+script BygoneVault_2R1_EventScript_WildPokemon1 {
+	if (!defeated(TRAINER_WILD_POKEMON_BV_1)) {
+		lock
+		setobjectxyperm (1, 27, 13)
+		addobject (1)
+		setflag (FLAG_WILD_OPPONENT)
+		setflag (FLAG_SYS_SET_BATTLE_BGM)
+		setvar (VAR_BATTLE_BGM, MUS_XD_VS_CIPHER_PEON)
+		applymovement (1, Common_Movement_WalkUpFast5)
+		waitmovement (0)
+		playmoncry (SPECIES_LUCARIO, CRY_MODE_ENCOUNTER)
+		waitmoncry
+		msgbox (Exp1_WildPokemonTrainerText_Intro, MSGBOX_DEFAULT)
+		trainerbattle_no_intro (TRAINER_WILD_POKEMON_BV_1, Exp1_WildPokemonTrainerText_Defeat)
+		playmoncry (SPECIES_LUCARIO, CRY_MODE_WEAK)
+		waitmoncry
+		delay (10)
+		applymovement (1, Common_Movement_WalkDownFast5)
+		waitmovement (0)
+		setvar (VAR_TEMP_0, 1)
+		clearflag (FLAG_WILD_OPPONENT)
+		removeobject (1)
+		release
+	}
+	setvar (VAR_TEMP_0, 1)
+}

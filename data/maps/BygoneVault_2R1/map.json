@@ -69,7 +69,26 @@
       "dest_warp_id": "2"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "BygoneVault_2R1_EventScript_WildPokemon1"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "BygoneVault_2R1_EventScript_WildPokemon1"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",

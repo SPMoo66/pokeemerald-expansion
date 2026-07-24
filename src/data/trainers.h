@@ -12789,8 +12789,8 @@
         .trainerName = _("Steven"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE,
-        .party = TRAINER_PARTY(sParty_CynthiaSimulator),
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_StevenExp1),
         .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
 /*

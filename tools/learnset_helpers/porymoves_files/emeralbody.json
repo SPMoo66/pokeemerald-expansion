@@ -8335,7 +8335,7 @@
         "MOVE_SURF",
         "MOVE_STRENGTH",
         "MOVE_ROCK_CLIMB",
-        "MOVE_WATEFALL",
+        "MOVE_WATERFALL",
         "MOVE_DIVE"
 	],
     "EggMoves": [],

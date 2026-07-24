@@ -52285,6 +52285,7 @@ static const u16 sRegiaguaTeachableLearnset[] = {
     MOVE_STRENGTH,
     MOVE_SUBSTITUTE,
     MOVE_SURF,
+    MOVE_WATERFALL,
     MOVE_WATER_PULSE,
     MOVE_BODY_PRESS,
     MOVE_BODY_SLAM,

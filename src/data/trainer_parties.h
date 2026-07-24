@@ -21312,6 +21312,58 @@ static const struct TrainerMon sParty_Exp1FinalBattle2[] = {
     }
 };
 
+static const struct TrainerMon sParty_StevenExp1[] = {
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 80,
+    .species = SPECIES_GHOLDENGO,
+	.ability = ABILITY_GOOD_AS_GOLD,
+    .heldItem = ITEM_WHITE_HERB,
+    .moves = {MOVE_MAKE_IT_RAIN, MOVE_SHADOW_BALL, MOVE_NASTY_PLOT, MOVE_PROTECT}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 80,
+    .species = SPECIES_EXCADRILL,
+	.ability = ABILITY_MOLD_BREAKER,
+    .heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_EARTHQUAKE, MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_PROTECT}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 81,
+    .species = SPECIES_ROARING_MOON,
+	.ability = ABILITY_PROTOSYNTHESIS,
+    .heldItem = ITEM_BOOSTER_ENERGY,
+    .moves = {MOVE_BREAKING_SWIPE, MOVE_KNOCK_OFF, MOVE_PROTECT, MOVE_ACROBATICS}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 81,
+    .species = SPECIES_SKARMORY,
+	.ability = ABILITY_STURDY,
+    .heldItem = ITEM_OCCA_BERRY,
+    .moves = {MOVE_IRON_DEFENSE, MOVE_BODY_PRESS, MOVE_ROOST, MOVE_BRAVE_BIRD}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_REGIAGUA,
+	.ability = ABILITY_WATER_BUBBLE,
+    .heldItem = ITEM_WATER_GEM,
+    .moves = {MOVE_ORIGIN_PULSE, MOVE_FUTURE_SIGHT, MOVE_EARTH_POWER, MOVE_SLUDGE_BOMB}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_METAGROSS,
+	.ability = ABILITY_CLEAR_BODY,
+    .heldItem = ITEM_MEGA_STONE_X,
+	.isShiny = TRUE,
+    .moves = {MOVE_METEOR_MASH, MOVE_ZEN_HEADBUTT, MOVE_SHIFT_GEAR, MOVE_ICE_PUNCH}
+    }
+};
+
 /*
 
 static const struct TrainerMon sParty_[] = {

@@ -959,8 +959,8 @@
 #define FLAG_HIDE_FALLARBOR_AZURILL                                 0x38B
 #define FLAG_HIDE_LILYCOVE_HARBOR_FERRY_ATTENDANT                   0x38C
 #define FLAG_HIDE_LILYCOVE_HARBOR_FERRY_SAILOR                      0x38D
-#define FLAG_HIDE_SOUTHERN_ISLAND_EON_STONE                         0x38E
-#define FLAG_HIDE_SOUTHERN_ISLAND_UNCHOSEN_EON_DUO_MON              0x38F
+#define FLAG_UNUSED_0x38E                                           0x38E // Was used to always hide something in Southern Island
+#define FLAG_UNUSED_0x38F                                           0x38F // Was used to always hide Lati@s in Southern Island
 #define FLAG_HIDE_MAUVILLE_CITY_WATTSON                             0x390
 #define FLAG_HIDE_MAUVILLE_GYM_WATTSON                              0x391
 #define FLAG_HIDE_ROUTE_121_TEAM_AQUA_GRUNTS                        0x392

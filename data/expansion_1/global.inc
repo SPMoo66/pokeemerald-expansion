@@ -1,6 +1,6 @@
 Expansion1_ClearUnusedFlag::
 # 2 "data/expansion_1/global.pory"
-	clearflag FLAG_UNUSED_0x0FF
+	clearflag FLAG_SS_TIDAL_DUNGEON_EON_TICKET
 # 3 "data/expansion_1/global.pory"
 	clearflag FLAG_UNUSED_0x34D
 # 4 "data/expansion_1/global.pory"

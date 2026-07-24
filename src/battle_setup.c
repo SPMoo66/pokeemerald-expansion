@@ -1027,6 +1027,9 @@ enum BattleTransition GetTrainerBattleTransition(void)
     if (trainerClass == TRAINER_CLASS_WILD)
         return B_TRANSITION_AIRBRUSH_TILE;
 
+    if (FollowerNPCIsBattlePartner())
+        return B_TRANSITION_DOUBLE_CLOCK_WIPE_POKEBALL;
+
     switch (GetTrainerBattleType(trainerId))
     {
     case TRAINER_BATTLE_TYPE_SINGLES:

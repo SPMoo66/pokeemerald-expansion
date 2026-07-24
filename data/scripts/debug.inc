@@ -208,9 +208,9 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	clearflag FLAG_DEFEATED_RIVAL_SKY_PILLAR
-	warp MAP_SKY_PILLAR_ENTRANCE, 0
-	waitstate
+	setvar VAR_EMERALBODY_RIVAL, 0
+	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 20
+	setvar VAR_EMERALBODY_RIVAL_STATE, 16
 	release
 	end
 

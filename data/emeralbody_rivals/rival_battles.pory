@@ -925,6 +925,24 @@ script Baron_Battle05 {
 	closemessage
 	applymovement (BARON_BATTLE05, Common_Movement_WalkDown)
 	waitmovement (0)
+	delay (20)
+	applymovement (LOCALID_PLAYER, Common_Movement_Talking)
+	delay (80)
+	playse (SE_PIN)
+	applymovement (BARON_BATTLE05, Common_Movement_ExclamationMark)
+	delay (40)
+	applymovement (BARON_BATTLE05, Common_Movement_WalkInPlaceFasterUp)
+	waitmovement (0)
+	msgbox (Battle05_BaronText_PostBattle3, MSGBOX_DEFAULT)
+	playfanfare (MUS_REGISTER_MATCH_CALL)
+	bufferstring (STR_VAR_2, CommonText_BaronsMom)
+	msgbox (Text_RegisteredInPokenav_OneInput, MSGBOX_DEFAULT)
+	waitfanfare
+	closemessage
+	delay (20)
+	applymovement (BARON_BATTLE05, Common_Movement_Smile)
+	playse (SE_M_MORNING_SUN)
+	delay (60)
 	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
 	if (var(VAR_TEMP_0) == 9) {
 		applymovement (BARON_BATTLE05, Common_Movement_WalkRight6)

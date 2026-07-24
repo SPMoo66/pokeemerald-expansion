@@ -1967,6 +1967,15 @@ text Battle05_BaronText_PostBattle2 {
 	"Thank you for being you. All of you."
 }
 
+text Battle05_BaronText_PostBattle3 {
+	"… … …\p"
+	"O-Oh? My phone number…?\p"
+	"{PLAYER}, y-you couldn't mean…\p"
+	"To stay in contact while we're playing?\p"
+	"O-Oh! Of course! Of course that's what\n"
+	"I was thinking. Let me share it with you."
+}
+
 text Battle05_HarperText_PreBattle {
 	"{PLAYER}! Before you go…\p"
 	"It makes sense to have a warm up\n"

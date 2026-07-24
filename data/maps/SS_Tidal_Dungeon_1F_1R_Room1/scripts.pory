@@ -10,21 +10,44 @@ mapscripts SS_Tidal_Dungeon_1F_1R_Room1_MapScripts {
 script SS_Tidal_Dungeon_1F_1R_Room1_Steven {
 	faceplayer
 	speakername (CommonText_Steven)
-	msgbox ("Oh, hello, {PLAYER}.\p"
-			"Would you happen to be here on\n"
-			"vacation, or…?\p"
-			"Fufufu… The treasure hunt, of course.\n"
-			"It was silly of me to imagine anything\l"
-			"else.\p"
-			"Well, I'm here on vacation, but if you\n"
-			"need anything, you can come to me.", MSGBOX_NPC)
-	speakername (CommonText_Steven)
-	if (flag(FLAG_DEFEATED_METEOR_FALLS_STEVEN)) {
-		msgbox ("And once you're done, perhaps we could\n"
-				"partake in a rematch.", MSGBOX_NPC)
+	if (var(VAR_EMERALBODY_RIVAL_STATE) < 51) {
+		msgbox ("Oh, hello, {PLAYER}.\p"
+				"Would you happen to be here on\n"
+				"vacation, or…?\p"
+				"Fufufu… The treasure hunt, of course.\n"
+				"It was silly of me to imagine anything\l"
+				"else.\p"
+				"Well, I'm here on vacation, but if you\n"
+				"need anything, you can come to me.", MSGBOX_NPC)
+		speakername (CommonText_Steven)
+		if (flag(FLAG_DEFEATED_METEOR_FALLS_STEVEN)) {
+			msgbox ("And once you're done, perhaps we could\n"
+					"partake in a rematch.", MSGBOX_NPC)
+		}
+		else {
+			msgbox ("And once you're done, perhaps we could\n"
+					"have a battle.", MSGBOX_NPC)
+		}
 	}
 	else {
-		msgbox ("And once you're done, perhaps we could\n"
-				"have a battle.", MSGBOX_NPC)
+		if (!defeated(TRAINER_STEVEN_EXP_1)) {
+			msgbox ("Oh? I knew you'd take me up on my offer\n"
+					"for a battle, {PLAYER}.\p"
+					"Well, let's get right to it.\p"
+					"Show me what you've learned after a\n"
+					"new journey!", MSGBOX_NPC)
+			setflag (FLAG_SUPERBOSS_TRAINER)
+			trainerbattle_no_intro (TRAINER_STEVEN_EXP_1, "Yes! What wonderful strength!")
+			clearflag (FLAG_SUPERBOSS_TRAINER)
+		}
+		speakername (CommonText_Steven)
+		msgbox ("Outstanding!\p"
+				"It's just like you, {PLAYER}, to keep\n"
+				"growing.\p"
+				"Every time we meet I look forward to\n"
+				"seeing what you've learned since the\l"
+				"last.\p"
+				"I hope you continue journeying.\n"
+				"Learn more and return to me!")
 	}
 }

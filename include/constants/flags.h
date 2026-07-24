@@ -1348,26 +1348,26 @@
 
 // System Flags
 
-#define SYSTEM_FLAGS                                   (TRAINER_FLAGS_END + 1) // 0xA00
+#define SYSTEM_FLAGS                                (TRAINER_FLAGS_END + 1) // 0xA00
 
-#define FLAG_SYS_POKEMON_GET                         (SYSTEM_FLAGS + 0x0) // FLAG_0xA00
-#define FLAG_SYS_POKEDEX_GET                         (SYSTEM_FLAGS + 0x1)
-#define FLAG_SYS_POKENAV_GET                         (SYSTEM_FLAGS + 0x2)
-#define FLAG_SINGLE_WILD_OPPONENT                    (SYSTEM_FLAGS + 0x3) // Set this to get correct battle messages for a single wild opponent using a trainer slot (ie. a legendary or boss battle against 1 Pokémon)
-#define FLAG_SYS_GAME_CLEAR                          (SYSTEM_FLAGS + 0x4)
-#define FLAG_SYS_CHAT_USED                           (SYSTEM_FLAGS + 0x5)
-#define FLAG_UNLOCKED_TRENDY_SAYINGS                 (SYSTEM_FLAGS + 0x6)
+#define FLAG_SYS_POKEMON_GET                        (SYSTEM_FLAGS + 0x0) // FLAG_0xA00
+#define FLAG_SYS_POKEDEX_GET                        (SYSTEM_FLAGS + 0x1)
+#define FLAG_SYS_POKENAV_GET                        (SYSTEM_FLAGS + 0x2)
+#define FLAG_SINGLE_WILD_OPPONENT                   (SYSTEM_FLAGS + 0x3) // Set this to get correct battle messages for a single wild opponent using a trainer slot (ie. a legendary or boss battle against 1 Pokémon)
+#define FLAG_SYS_GAME_CLEAR                         (SYSTEM_FLAGS + 0x4)
+#define FLAG_SYS_CHAT_USED                          (SYSTEM_FLAGS + 0x5)
+#define FLAG_UNLOCKED_TRENDY_SAYINGS                (SYSTEM_FLAGS + 0x6)
 
 // Badges
-#define FLAG_BADGE01_GET                      (SYSTEM_FLAGS + 0x7)
-#define FLAG_BADGE02_GET                      (SYSTEM_FLAGS + 0x8)
-#define FLAG_BADGE03_GET                      (SYSTEM_FLAGS + 0x9)
-#define FLAG_BADGE04_GET                      (SYSTEM_FLAGS + 0xA)
-#define FLAG_BADGE05_GET                      (SYSTEM_FLAGS + 0xB)
-#define FLAG_BADGE06_GET                      (SYSTEM_FLAGS + 0xC)
-#define FLAG_BADGE07_GET                      (SYSTEM_FLAGS + 0xD)
-#define FLAG_BADGE08_GET                      (SYSTEM_FLAGS + 0xE)
-#define NUM_BADGES                            (1 + FLAG_BADGE08_GET - FLAG_BADGE01_GET)
+#define FLAG_BADGE01_GET                            (SYSTEM_FLAGS + 0x7)
+#define FLAG_BADGE02_GET                            (SYSTEM_FLAGS + 0x8)
+#define FLAG_BADGE03_GET                            (SYSTEM_FLAGS + 0x9)
+#define FLAG_BADGE04_GET                            (SYSTEM_FLAGS + 0xA)
+#define FLAG_BADGE05_GET                            (SYSTEM_FLAGS + 0xB)
+#define FLAG_BADGE06_GET                            (SYSTEM_FLAGS + 0xC)
+#define FLAG_BADGE07_GET                            (SYSTEM_FLAGS + 0xD)
+#define FLAG_BADGE08_GET                            (SYSTEM_FLAGS + 0xE)
+#define NUM_BADGES                                  (1 + FLAG_BADGE08_GET - FLAG_BADGE01_GET)
 
 // Towns and Cities
 #define FLAG_VISITED_LITTLEROOT_TOWN                (SYSTEM_FLAGS + 0xF)
@@ -1446,7 +1446,7 @@
 #define FLAG_SYS_REGIROCK_PUZZLE_COMPLETED          (SYSTEM_FLAGS + 0x50)
 #define FLAG_SYS_BRAILLE_REGICE_COMPLETED           (SYSTEM_FLAGS + 0x51)
 #define FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED         (SYSTEM_FLAGS + 0x52)
-#define FLAG_ENABLE_SHIP_SOUTHERN_ISLAND            (SYSTEM_FLAGS + 0x53)
+#define FLAG_UNUSED_0xA53                           (SYSTEM_FLAGS + 0x53) // Was an additional flag to enable Southern Island from mystery gift
 
 #define FLAG_LANDMARK_POKEMON_LEAGUE                (SYSTEM_FLAGS + 0x54)
 #define FLAG_LANDMARK_ISLAND_CAVE                   (SYSTEM_FLAGS + 0x55)
@@ -1487,8 +1487,8 @@
 
 #define FLAG_MAP_SCRIPT_CHECKED_DEOXYS              (SYSTEM_FLAGS + 0x73)
 #define FLAG_DEOXYS_ROCK_COMPLETE                   (SYSTEM_FLAGS + 0x74)
-#define FLAG_ENABLE_SHIP_BIRTH_ISLAND               (SYSTEM_FLAGS + 0x75)
-#define FLAG_ENABLE_SHIP_FARAWAY_ISLAND             (SYSTEM_FLAGS + 0x76)
+#define FLAG_UNUSED_0xA75                           (SYSTEM_FLAGS + 0x75) // Was an additional flag to enable Birth Island from mystery gift
+#define FLAG_UNUSED_0xA76                           (SYSTEM_FLAGS + 0x76) // Was an additional flag to enable Faraway Island from mystery gift
 
 #define FLAG_SHOWN_BOX_WAS_FULL_MESSAGE             (SYSTEM_FLAGS + 0x77)
 
@@ -1502,7 +1502,7 @@
 #define FLAG_LANDMARK_ALTERING_CAVE                 (SYSTEM_FLAGS + 0x7D)
 #define FLAG_LANDMARK_DESERT_UNDERPASS              (SYSTEM_FLAGS + 0x7E)
 #define FLAG_LANDMARK_ARTISAN_CAVE                  (SYSTEM_FLAGS + 0x7F)
-#define FLAG_ENABLE_SHIP_NAVEL_ROCK                 (SYSTEM_FLAGS + 0x80)
+#define FLAG_UNUSED_0xA80                           (SYSTEM_FLAGS + 0x80) // Was an additional flag to enable Navel Rock from mystery gift
 #define FLAG_ARRIVED_AT_NAVEL_ROCK                  (SYSTEM_FLAGS + 0x81)
 #define FLAG_LANDMARK_TRAINER_HILL                  (SYSTEM_FLAGS + 0x82)
 

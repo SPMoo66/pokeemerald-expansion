@@ -260,6 +260,7 @@ gScriptCmdTable::
 	script_cmd_table_entry SCR_OP_HIDEFOLLOWER                  ScrCmd_hidefollower,                requests_effects=1  @ 0xea
 	script_cmd_table_entry SCR_OP_WARPCONTINUESCRIPT            ScrCmd_warpcontinuescript,          requests_effects=1  @ 0xeb
     script_cmd_table_entry SCR_OP_GETBRAILLESTRINGWIDTH         ScrCmd_getbraillestringwidth,       requests_effects=1  @ 0xec
+    script_cmd_table_entry SCR_OP_CAPMART                       ScrCmd_capmart,                     requests_effects=1  @ 0xed
 
 	.if ALLOCATE_SCRIPT_CMD_TABLE
 gScriptCmdTableEnd::

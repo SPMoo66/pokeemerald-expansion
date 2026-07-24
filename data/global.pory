@@ -716,66 +716,80 @@ script EventScript_CapCollector {
 	}
 	msgbox(DoYouHaveAnyCaps)
 	waitmessage
-	dynmultipush("Metronome", ITEM_METRONOME)
-	dynmultipush("Grip Claw", ITEM_GRIP_CLAW)
-	dynmultipush("Sticky Barb", ITEM_STICKY_BARB)
-	dynmultipush("Burnt Fang", ITEM_BURNT_FANG)
-	dynmultipush("Shed Shell", ITEM_SHED_SHELL)
-	dynmultipush("Big Root", ITEM_BIG_ROOT)
-	dynmultipush("Light Clay", ITEM_LIGHT_CLAY)
-	dynmultipush("Air Balloon", ITEM_AIR_BALLOON)
-	dynmultipush("White Herb", ITEM_WHITE_HERB)
-	dynmultipush("Red Card", ITEM_RED_CARD)
-	dynmultipush("Eject Button", ITEM_EJECT_BUTTON)
-	dynmultipush("Safety Goggles", ITEM_SAFETY_GOGGLES)
-	dynmultipush("Throat Spray", ITEM_THROAT_SPRAY)
-	dynmultipush("Mental Herb", ITEM_MENTAL_HERB)
-	dynmultipush("Normal Gem", ITEM_NORMAL_GEM)
-	dynmultipush("Flame Orb", ITEM_FLAME_ORB)
-	dynmultipush("Toxic Orb", ITEM_TOXIC_ORB)
-	dynmultipush("Frost Orb", ITEM_FROST_ORB)
-	dynmultipush("Eviolite", ITEM_EVIOLITE)
-	dynmultipush("Terrain Extender", ITEM_TERRAIN_EXTENDER)
-	dynmultipush("Protective Pads", ITEM_PROTECTIVE_PADS)
-	dynmultipush("Binding Band", ITEM_BINDING_BAND)
-	dynmultipush("Eject Pack", ITEM_EJECT_PACK)
-	dynmultipush("Ability Shield", ITEM_ABILITY_SHIELD)
-	dynmultipush("Punching Glove", ITEM_PUNCHING_GLOVE)
-	dynmultipush("Covert Cloak", ITEM_COVERT_CLOAK)
-	dynmultipush("Blunder Policy", ITEM_BLUNDER_POLICY)
-	dynmultipush("Candy Jar", ITEM_CANDY_JAR)
 	special(GetNumberOfBadges)
 	if (var(VAR_RESULT) >= 5) {
-		dynmultipush("Booster Energy", ITEM_BOOSTER_ENERGY)
-		dynmultipush("Mirror Herb", ITEM_MIRROR_HERB)
-		dynmultipush("Power Herb", ITEM_POWER_HERB)
+		capmart(BottleCapMart2)
 	}
-	special (ShowBottleCapsWindow)
-	dynmultistack(17, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM)
-	if (var(VAR_RESULT) != 127) {
-		copyvar (VAR_0x8009, VAR_RESULT)
-		checkitem (ITEM_BOTTLE_CAP)
-		if (!var(VAR_RESULT)) {
-			msgbox("You don't seem to have any Bottle Caps,\nthus I have nothing to give you.")
-			special (CloseBattlePointsWindow)
-			release
-			end
-		}
-		checkitemspace (VAR_0x8009)
-		if (var(VAR_RESULT) == FALSE) {
-			msgbox(format("You don't have any room in your Bag for this item."))
-			special (CloseBattlePointsWindow)
-			release
-			end
-		}
-		removeitem (ITEM_BOTTLE_CAP)
-		additem (VAR_0x8009)
-		special (UpdateBottleCapsWindow)
-		playse (SE_SHOP)
+	else {
+		capmart(BottleCapMart1)
 	}
 	msgbox(gText_PleaseComeAgain)
-	special (CloseBattlePointsWindow)
 	release
+}
+
+mart BottleCapMart1 {
+	ITEM_METRONOME
+	ITEM_GRIP_CLAW
+	ITEM_STICKY_BARB
+	ITEM_BURNT_FANG
+	ITEM_SHED_SHELL
+	ITEM_BIG_ROOT
+	ITEM_LIGHT_CLAY
+	ITEM_AIR_BALLOON
+	ITEM_WHITE_HERB
+	ITEM_RED_CARD
+	ITEM_EJECT_BUTTON
+	ITEM_SAFETY_GOGGLES
+	ITEM_THROAT_SPRAY
+	ITEM_MENTAL_HERB
+	ITEM_NORMAL_GEM
+	ITEM_FLAME_ORB
+	ITEM_TOXIC_ORB
+	ITEM_FROST_ORB
+	ITEM_EVIOLITE
+	ITEM_TERRAIN_EXTENDER
+	ITEM_PROTECTIVE_PADS
+	ITEM_BINDING_BAND
+	ITEM_EJECT_PACK
+	ITEM_ABILITY_SHIELD
+	ITEM_PUNCHING_GLOVE
+	ITEM_COVERT_CLOAK
+	ITEM_BLUNDER_POLICY
+	ITEM_CANDY_JAR
+}
+
+mart BottleCapMart2 {
+	ITEM_METRONOME
+	ITEM_GRIP_CLAW
+	ITEM_STICKY_BARB
+	ITEM_BURNT_FANG
+	ITEM_SHED_SHELL
+	ITEM_BIG_ROOT
+	ITEM_LIGHT_CLAY
+	ITEM_AIR_BALLOON
+	ITEM_WHITE_HERB
+	ITEM_RED_CARD
+	ITEM_EJECT_BUTTON
+	ITEM_SAFETY_GOGGLES
+	ITEM_THROAT_SPRAY
+	ITEM_MENTAL_HERB
+	ITEM_NORMAL_GEM
+	ITEM_FLAME_ORB
+	ITEM_TOXIC_ORB
+	ITEM_FROST_ORB
+	ITEM_EVIOLITE
+	ITEM_TERRAIN_EXTENDER
+	ITEM_PROTECTIVE_PADS
+	ITEM_BINDING_BAND
+	ITEM_EJECT_PACK
+	ITEM_ABILITY_SHIELD
+	ITEM_PUNCHING_GLOVE
+	ITEM_COVERT_CLOAK
+	ITEM_BLUNDER_POLICY
+	ITEM_CANDY_JAR
+	ITEM_BOOSTER_ENERGY
+	ITEM_MIRROR_HERB
+	ITEM_POWER_HERB
 }
 
 

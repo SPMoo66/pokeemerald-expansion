@@ -2696,6 +2696,15 @@
 	specialvar VAR_RESULT,CheckWarningOption
 	.endm
 
+@ Cap Mart based on BP Mart from Kasenn
+
+	@ Opens the Pokemart system, offering the specified products for sale.
+	@ Products should be a list of .2byte item values preceded by an .align 2
+	.macro capmart products:req
+	.byte SCR_OP_CAPMART
+	.4byte \products
+	.endm
+
 @ End Custom Functions
 
 	@ Hides any follower Pokémon if present, putting them into their Poké Ball; by default waits for their movement to finish.
@@ -3027,6 +3036,7 @@
 	hidehelpwindow
 	closemessage
 	.endm
+
 
 	@ Makes the player and specified (localId) object face one another.
 	.macro facetogether localIdOne=LOCALID_PLAYER, localIdTwo=VAR_LAST_TALKED

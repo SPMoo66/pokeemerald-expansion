@@ -207,3 +207,15 @@ void RemoveMoneyLabelObject(void)
 {
     DestroySpriteAndFreeResources(&gSprites[sMoneyLabelSpriteId]);
 }
+
+void PrintCapAmount(u8 windowId, u8 x, u8 y, int amount, u8 speed)
+{
+    StringCopy(ConvertIntToDecimalStringN(gStringVar4, amount, STR_CONV_MODE_RIGHT_ALIGN, 4), gText_Caps);
+    AddTextPrinterParameterized(windowId, FONT_NORMAL, gStringVar4, x, y, 0, NULL);
+}
+
+void PrintCapBoxWithBorder(u8 windowId, u16 tileStart, u8 palette, int amount)
+{
+    DrawStdFrameWithCustomTileAndPalette(windowId, FALSE, tileStart, palette);
+    PrintCapAmount(windowId, 0, 1, amount, 0);
+}

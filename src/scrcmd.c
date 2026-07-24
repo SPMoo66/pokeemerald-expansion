@@ -3658,3 +3658,12 @@ void Script_SetVar_RandomPartyMonGfx(struct ScriptContext *ctx)
 
     VarSet(var, graphicsId);
 }
+
+bool8 ScrCmd_capmart(struct ScriptContext *ctx)
+{
+    const void *ptr = (void *)ScriptReadWord(ctx);
+
+    CreateCapMartMenu(ptr);;
+    ScriptContext_Stop();
+    return TRUE;
+}

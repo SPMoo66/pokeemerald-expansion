@@ -1267,6 +1267,7 @@ static void InitMapBasedOnPlayerLocation(void)
         if (sRegionMap->mapSecId == MAPSEC_UNDERWATER_SEAFLOOR_CAVERN || sRegionMap->mapSecId == MAPSEC_UNDERWATER_MARINE_CAVE)
             sRegionMap->playerIsInCave = TRUE;
         break;
+    case MAP_TYPE_DUNGEON_WITH_SHADOWS:
     case MAP_TYPE_UNDERGROUND:
     case MAP_TYPE_UNKNOWN:
         if (gMapHeader.allowEscaping)

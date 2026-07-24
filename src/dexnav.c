@@ -633,7 +633,7 @@ static bool8 DexNavPickTile(enum EncounterType environment, u8 areaX, u8 areaY, 
             case ENCOUNTER_TYPE_LAND:
                 if (MetatileBehavior_IsLandWildEncounter(tileBehaviour))
                 {
-                    if (currMapType == MAP_TYPE_UNDERGROUND)
+                    if (currMapType == MAP_TYPE_UNDERGROUND || currMapType == MAP_TYPE_DUNGEON_WITH_SHADOWS)
                     {
                         // inside (cave)
                         if (IsElevationMismatchAt(gObjectEvents[gPlayerAvatar.spriteId].currentElevation, topX, topY))
@@ -705,7 +705,7 @@ static bool8 TryStartHiddenMonFieldEffect(enum EncounterType environment, u8 xSi
         switch (environment)
         {
         case ENCOUNTER_TYPE_LAND:
-            if (currMapType == MAP_TYPE_UNDERGROUND)
+            if (currMapType == MAP_TYPE_UNDERGROUND || currMapType == MAP_TYPE_DUNGEON_WITH_SHADOWS)
             {
                 fldEffId = FLDEFF_CAVE_DUST;
             }
@@ -1115,7 +1115,7 @@ bool32 OnStep_DexNavSearch(void)
 /*
 
     //Caves and water the pokemon moves around
-    if ((sDexNavSearchDataPtr->environment == ENCOUNTER_TYPE_WATER || GetCurrentMapType() == MAP_TYPE_UNDERGROUND)
+    if ((sDexNavSearchDataPtr->environment == ENCOUNTER_TYPE_WATER || GetCurrentMapType() == MAP_TYPE_UNDERGROUND || currMapType == MAP_TYPE_DUNGEON_WITH_SHADOWS)
         && sDexNavSearchDataPtr->proximity < GetMovementProximityBySearchLevel() && sDexNavSearchDataPtr->movementCount < 2
         && !sDexNavSearchDataPtr->hiddenSearch)
     {

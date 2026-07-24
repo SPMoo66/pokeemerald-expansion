@@ -839,6 +839,7 @@ enum BattleEnvironments BattleSetup_GetEnvironmentId(void)
     case MAP_TYPE_CITY:
     case MAP_TYPE_ROUTE:
         break;
+    case MAP_TYPE_DUNGEON_WITH_SHADOWS:
     case MAP_TYPE_UNDERGROUND:
         if (MetatileBehavior_IsIndoorEncounter(tileBehavior))
             return BATTLE_ENVIRONMENT_BUILDING;
@@ -898,6 +899,7 @@ static enum TransitionType GetBattleTransitionTypeByMap(void)
 
     switch (gMapHeader.mapType)
     {
+    case MAP_TYPE_DUNGEON_WITH_SHADOWS:
     case MAP_TYPE_UNDERGROUND:
         return TRANSITION_TYPE_CAVE;
     case MAP_TYPE_UNDERWATER:

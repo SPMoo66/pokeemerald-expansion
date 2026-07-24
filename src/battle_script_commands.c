@@ -9748,7 +9748,7 @@ static void ComputeBallData(u32 wildMonBattler, u32 playerBattler, struct BallDa
         break;
     case BALL_DUSK:
         i = GetTimeOfDay();
-        if (i == TIME_EVENING || i == TIME_NIGHT || gMapHeader.cave || gMapHeader.mapType == MAP_TYPE_UNDERGROUND)
+        if (i == TIME_EVENING || i == TIME_NIGHT || gMapHeader.cave || gMapHeader.mapType == MAP_TYPE_UNDERGROUND || gMapHeader.mapType == MAP_TYPE_DUNGEON_WITH_SHADOWS)
             ball->multiplier = (B_DUSK_BALL_MODIFIER >= GEN_7 ? 300 : 350);
         break;
     case BALL_TIMER:

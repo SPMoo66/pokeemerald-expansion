@@ -595,7 +595,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "TAUROS_PALDEA_AQUA_BREED": {
+  "TAUROS_PALDEA_AQUA": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -604,7 +604,7 @@
         "MOVE_WAVE_CRASH"
     ]
   },
-  "TAUROS_PALDEA_BLAZE_BREED": {
+  "TAUROS_PALDEA_BLAZE": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [

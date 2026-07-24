@@ -414,6 +414,7 @@ static bool32 HandleEndTurnFirstEventBlock(enum BattlerId battler)
         {
         case ABILITY_HEALER:
         case ABILITY_HYDRATION:
+        case ABILITY_GRIM_FAIRYTALE:
         case ABILITY_SHED_SKIN:
             if (AbilityBattleEffects(ABILITYEFFECT_ENDTURN, battler, ability, MOVE_NONE, TRUE))
                 effect = TRUE;

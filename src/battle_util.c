@@ -2299,6 +2299,12 @@ bool32 CanAbilityAbsorbMove(struct DamageContext *ctx)
                 battleScript = BattleScript_AbilityProtectedTarget;
         }
         break;
+    case ABILITY_GRIM_FAIRYTALE:
+        if (ctx->moveType == TYPE_FAIRY)
+            battleScript = BattleScript_AbilityProtectedTarget;
+        else if (ctx->move == MOVE_PERISH_SONG)
+            battleScript = BattleScript_AbilityProtectedTarget;
+        break;
     default:
         break;
     }
@@ -3576,6 +3582,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                     goto ABILITY_HEAL_MON_STATUS;
                 }
                 break;
+            case ABILITY_GRIM_FAIRYTALE:
             case ABILITY_SHED_SKIN:
                 if ((gBattleMons[battler].status1 & STATUS1_ANY)
                  && (GetConfig(B_ABILITY_TRIGGER_CHANCE) == GEN_4 ? RandomPercentage(RNG_SHED_SKIN, 30) : RandomChance(RNG_SHED_SKIN, 1, 3)))
@@ -7895,7 +7902,7 @@ s32 CalcCritChanceStage(struct DamageContext *ctx)
             critChance = ARRAY_COUNT(sCriticalHitOdds) - 1;
     }
 
-    if (critChance != CRITICAL_HIT_BLOCKED && (ctx->abilities[ctx->battlerDef] == ABILITY_BATTLE_ARMOR || ctx->abilities[ctx->battlerDef] == ABILITY_SHELL_ARMOR))
+    if (critChance != CRITICAL_HIT_BLOCKED && (ctx->abilities[ctx->battlerDef] == ABILITY_BATTLE_ARMOR || ctx->abilities[ctx->battlerDef] == ABILITY_SHELL_ARMOR || ctx->abilities[ctx->battlerDef] == ABILITY_GRIM_FAIRYTALE))
     {
         // Record ability only if move had 100% chance to get a crit
         if (ctx->updateFlags)
@@ -7947,7 +7954,7 @@ s32 CalcCritChanceStageGen1(struct DamageContext *ctx)
     if (critChance > 255)
         critChance = 255;
 
-    if (ctx->abilities[ctx->battlerDef] == ABILITY_BATTLE_ARMOR || ctx->abilities[ctx->battlerDef] == ABILITY_SHELL_ARMOR)
+    if (ctx->abilities[ctx->battlerDef] == ABILITY_BATTLE_ARMOR || ctx->abilities[ctx->battlerDef] == ABILITY_SHELL_ARMOR || ctx->abilities[ctx->battlerDef] == ABILITY_GRIM_FAIRYTALE)
     {
         if (ctx->updateFlags)
             RecordAbilityBattle(ctx->battlerDef, ctx->abilities[ctx->battlerDef]);
@@ -8025,11 +8032,11 @@ s32 GetAdjustedDamage(struct DamageContext *ctx, s32 damage)
     {
         enduredHit = TRUE;
     }
-    else if (GetConfig(B_STURDY) >= GEN_5 && ctx->abilities[ctx->battlerDef] == ABILITY_STURDY && IsBattlerAtMaxHp(ctx->battlerDef))
+    else if (GetConfig(B_STURDY) >= GEN_5 && (ctx->abilities[ctx->battlerDef] == ABILITY_STURDY || ctx->abilities[ctx->battlerDef] == ABILITY_GRIM_FAIRYTALE) && IsBattlerAtMaxHp(ctx->battlerDef))
     {
         enduredHit = TRUE;
-        RecordAbilityBattle(ctx->battlerDef, ABILITY_STURDY);
-        gLastUsedAbility = ABILITY_STURDY;
+        RecordAbilityBattle(ctx->battlerDef, ctx->abilities[ctx->battlerDef]);
+        gLastUsedAbility = ctx->abilities[ctx->battlerDef];
         gBattleStruct->moveResultFlags[ctx->battlerDef] |= MOVE_RESULT_STURDIED;
     }
     else if (ctx->holdEffects[ctx->battlerDef] == HOLD_EFFECT_FOCUS_BAND && rand < GetBattlerHoldEffectParam(ctx->battlerDef))
@@ -10462,7 +10469,7 @@ bool32 DoesOHKOMoveMissTarget(struct BattleCalcValues *cv)
         return TRUE;
     }
 
-    if (cv->abilities[cv->battlerDef] == ABILITY_STURDY)
+    if (cv->abilities[cv->battlerDef] == ABILITY_STURDY || cv->abilities[cv->battlerDef] == ABILITY_GRIM_FAIRYTALE)
     {
         gBattleStruct->moveResultFlags[cv->battlerDef] |= MOVE_RESULT_ONE_HIT_KO_STURDY;
         return TRUE;

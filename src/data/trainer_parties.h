@@ -21207,7 +21207,7 @@ static const struct TrainerMon sParty_Exp1FinalBattle1[] = {
     .ball = POKEBALL_COUNT,
     .lvl = 85,
     .species = SPECIES_CALAMITY_MAW_BOSS,
-    .ability = ABILITY_PROTOSYNTHESIS,
+    .ability = ABILITY_GRIM_FAIRYTALE,
     .heldItem = ITEM_YACHE_BERRY,
     .moves = {MOVE_GLAIVE_RUSH, MOVE_CEASELESS_EDGE, MOVE_BREAKING_SWIPE, MOVE_WAVE_CRASH}
     }
@@ -21306,7 +21306,7 @@ static const struct TrainerMon sParty_Exp1FinalBattle2[] = {
     .ball = POKEBALL_COUNT,
     .lvl = 85,
     .species = SPECIES_CALAMITY_MAW_BOSS,
-    .ability = ABILITY_PROTOSYNTHESIS,
+    .ability = ABILITY_GRIM_FAIRYTALE,
     .heldItem = ITEM_YACHE_BERRY,
     .moves = {MOVE_GLAIVE_RUSH, MOVE_CEASELESS_EDGE, MOVE_HYPERSPACE_FURY, MOVE_DRAGON_ENERGY}
     }

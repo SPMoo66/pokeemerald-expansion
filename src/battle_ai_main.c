@@ -1894,15 +1894,15 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         if (!isBattle1v1)
         {
             if (CountUsablePartyMons(battlerAtk) == 0
-              && aiData->abilities[battlerAtk] != ABILITY_SOUNDPROOF
+              && (aiData->abilities[battlerAtk] != ABILITY_SOUNDPROOF || aiData->abilities[battlerAtk] != ABILITY_GRIM_FAIRYTALE)
               && CountUsablePartyMons(battlerDef) >= 1
-              && (aiData->abilities[BATTLE_PARTNER(battlerAtk)] != ABILITY_SOUNDPROOF || !IsBattlerAlive(BATTLE_PARTNER(battlerAtk))))
+              && (aiData->abilities[BATTLE_PARTNER(battlerAtk)] != ABILITY_SOUNDPROOF || aiData->abilities[BATTLE_PARTNER(battlerAtk)] != ABILITY_GRIM_FAIRYTALE || !IsBattlerAlive(BATTLE_PARTNER(battlerAtk))))
             {
                 ADJUST_SCORE(-10); //Don't wipe your team if you're going to lose
             }
-            else if ((!IsBattlerAlive(LEFT_FOE(battlerAtk)) || aiData->abilities[LEFT_FOE(battlerAtk)] == ABILITY_SOUNDPROOF
+            else if ((!IsBattlerAlive(LEFT_FOE(battlerAtk)) || aiData->abilities[LEFT_FOE(battlerAtk)] == ABILITY_SOUNDPROOF || aiData->abilities[LEFT_FOE(battlerAtk)] == ABILITY_GRIM_FAIRYTALE
               || gBattleMons[LEFT_FOE(battlerAtk)].volatiles.perishSong)
-              && (!IsBattlerAlive(RIGHT_FOE(battlerAtk)) || aiData->abilities[RIGHT_FOE(battlerAtk)] == ABILITY_SOUNDPROOF
+              && (!IsBattlerAlive(RIGHT_FOE(battlerAtk)) || aiData->abilities[RIGHT_FOE(battlerAtk)] == ABILITY_SOUNDPROOF || aiData->abilities[RIGHT_FOE(battlerAtk)] == ABILITY_GRIM_FAIRYTALE
               || gBattleMons[RIGHT_FOE(battlerAtk)].volatiles.perishSong))
             {
                 ADJUST_SCORE(-10); //Both enemies are perish songed
@@ -1914,11 +1914,11 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         }
         else
         {
-            if (CountUsablePartyMons(battlerAtk) == 0 && aiData->abilities[battlerAtk] != ABILITY_SOUNDPROOF
+            if (CountUsablePartyMons(battlerAtk) == 0 && aiData->abilities[battlerAtk] != ABILITY_SOUNDPROOF && aiData->abilities[battlerAtk] != ABILITY_GRIM_FAIRYTALE
               && CountUsablePartyMons(battlerDef) >= 1)
                 ADJUST_SCORE(-10);
 
-            if (gBattleMons[battlerDef].volatiles.perishSong || aiData->abilities[battlerDef] == ABILITY_SOUNDPROOF)
+            if (gBattleMons[battlerDef].volatiles.perishSong || aiData->abilities[battlerDef] == ABILITY_SOUNDPROOF || aiData->abilities[battlerDef] == ABILITY_GRIM_FAIRYTALE)
                 ADJUST_SCORE(-10);
         }
         break;
@@ -2226,7 +2226,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
     case EFFECT_LASER_FOCUS:
         if (gBattleMons[battlerDef].volatiles.laserFocus)
             ADJUST_SCORE(-10);
-        else if (aiData->abilities[battlerDef] == ABILITY_SHELL_ARMOR || aiData->abilities[battlerDef] == ABILITY_BATTLE_ARMOR)
+        else if (aiData->abilities[battlerDef] == ABILITY_SHELL_ARMOR || aiData->abilities[battlerDef] == ABILITY_BATTLE_ARMOR || aiData->abilities[battlerDef] == ABILITY_GRIM_FAIRYTALE)
             ADJUST_SCORE(-8);
         break;
     case EFFECT_SKETCH:
@@ -4473,6 +4473,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
                 ADJUST_SCORE(GOOD_EFFECT);
             }
             else if (aiData->abilities[battlerAtk] == ABILITY_SHED_SKIN
+                  || aiData->abilities[battlerAtk] == ABILITY_GRIM_FAIRYTALE
                   || aiData->abilities[battlerAtk] == ABILITY_EARLY_BIRD)
             {
                 ADJUST_SCORE(DECENT_EFFECT);

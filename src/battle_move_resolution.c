@@ -2244,7 +2244,7 @@ static enum CancelerResult CancelerAccuracyCheck(struct BattleCalcValues *cv)
             }
             else if (gBattleStruct->moveResultFlags[cv->battlerDef] & MOVE_RESULT_ONE_HIT_KO_STURDY)
             {
-                gLastUsedAbility = ABILITY_STURDY;
+                gLastUsedAbility = cv->abilities[cv->battlerDef];
                 gBattlerAbility = cv->battlerDef;
                 BattleScriptCall(BattleScript_SturdyPreventsOHKO);
             }
@@ -2954,12 +2954,15 @@ static enum MoveEndResult MoveEndFaintBlock(struct BattleCalcValues *cv)
              && IsBattlerTurnDamaged(cv->battlerDef, EXCLUDING_SUBSTITUTES)
              && IsBattlerAlive(cv->battlerAtk)
              && GetActiveGimmick(cv->battlerAtk) != GIMMICK_DYNAMAX
-             && !IsBattlerAlly(cv->battlerAtk, cv->battlerDef))
+             && !IsBattlerAlly(cv->battlerAtk, cv->battlerDef)
+             && cv->abilities[cv->battlerAtk] != ABILITY_GRIM_FAIRYTALE)
             {
                 gBattleStruct->passiveHpUpdate[cv->battlerAtk] = gBattleMons[cv->battlerAtk].hp;
                 BattleScriptCall(BattleScript_DestinyBondTakesLife);
                 // Hack: don't change result here so that Faint Target's script plays first
             }
+            else if (cv->abilities[cv->battlerAtk] == ABILITY_GRIM_FAIRYTALE)
+                RecordAbilityBattle(gBattlerAttacker, ABILITY_GRIM_FAIRYTALE);
             gBattleStruct->eventState.moveEndBlock++;
             break;
         case FAINT_BLOCK_FAINT_TARGET:

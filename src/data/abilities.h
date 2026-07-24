@@ -2478,4 +2478,15 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Spicy Spray"),
         .description = COMPOUND_STRING("Burns the foe when damaged."),
     },
+
+    [ABILITY_GRIM_FAIRYTALE] =
+    {
+        .name = _("Grim Fairytale"),
+        .description = COMPOUND_STRING("Oppresses the foe."),
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+    },
 };

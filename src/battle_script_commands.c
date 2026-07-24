@@ -8357,6 +8357,11 @@ static void Cmd_cursetarget(void)
     {
         gBattlescriptCurrInstr = BattleScript_ButItFailed;
     }
+    else if (GetBattlerAbility(gBattlerTarget) == ABILITY_GRIM_FAIRYTALE)
+    {
+        gBattlescriptCurrInstr = BattleScript_ButItFailed;
+        RecordAbilityBattle(gBattlerTarget, ABILITY_GRIM_FAIRYTALE);
+    }
     else
     {
         gBattleScripting.animTurn = 0; // for move anim

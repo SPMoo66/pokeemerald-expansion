@@ -687,6 +687,11 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINER_PARTNER(PARTNER_
         {
             [TRAINER_SLIDE_LAST_LOW_HP] = sText_LowHP_Exp1FinalBoss,
         },
+        [TRAINER_STEVEN_EXP_1] =
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = COMPOUND_STRING("Haha!\nGreat one, {PLAYER}!\lHow are you liking my team so far?"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("And now, a classic!"),
+        },
     },
 };
 

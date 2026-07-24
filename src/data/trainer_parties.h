@@ -21351,7 +21351,8 @@ static const struct TrainerMon sParty_StevenExp1[] = {
     .species = SPECIES_REGIAGUA,
 	.ability = ABILITY_WATER_BUBBLE,
     .heldItem = ITEM_WATER_GEM,
-    .moves = {MOVE_ORIGIN_PULSE, MOVE_FUTURE_SIGHT, MOVE_EARTH_POWER, MOVE_SLUDGE_BOMB}
+    .teraType = TYPE_ELECTRIC,
+    .moves = {MOVE_ORIGIN_PULSE, MOVE_FUTURE_SIGHT, MOVE_EARTH_POWER, MOVE_TERA_BLAST}
     },
     {
     .ball = POKEBALL_COUNT,

@@ -3583,6 +3583,11 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 }
                 break;
             case ABILITY_GRIM_FAIRYTALE:
+                if ((gBattleMons[battler].status1 & STATUS1_ANY)
+                 && (RandomPercentage(RNG_SHED_SKIN, 60)))
+                {
+                    goto ABILITY_HEAL_MON_STATUS;
+                }
             case ABILITY_SHED_SKIN:
                 if ((gBattleMons[battler].status1 & STATUS1_ANY)
                  && (GetConfig(B_ABILITY_TRIGGER_CHANCE) == GEN_4 ? RandomPercentage(RNG_SHED_SKIN, 30) : RandomChance(RNG_SHED_SKIN, 1, 3)))

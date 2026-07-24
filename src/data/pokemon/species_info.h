@@ -1549,11 +1549,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_CALAMITY_MAW_BOSS] =
     {
         .baseHP        = 255,
-        .baseAttack    = 140,
-        .baseDefense   = 185,
-        .baseSpeed     = 95,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 175,
+        .baseAttack    = 110,
+        .baseDefense   = 195,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 180,
         .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
         .catchRate = 20,
         .expYield = 285,

@@ -920,7 +920,7 @@ script Baron_Battle05 {
 	delay (40)
 	applymovement (BARON_BATTLE05, Common_Movement_WalkInPlaceUp)
 	waitmovement (0)
-	call (GetRivalForNameBox)
+	speakername (CommonText_BaronsMom)
 	msgbox (Battle05_BaronText_PostBattle2, MSGBOX_DEFAULT)
 	closemessage
 	applymovement (BARON_BATTLE05, Common_Movement_WalkDown)
@@ -933,6 +933,7 @@ script Baron_Battle05 {
 	delay (40)
 	applymovement (BARON_BATTLE05, Common_Movement_WalkInPlaceFasterUp)
 	waitmovement (0)
+	speakername (CommonText_BaronsMom)
 	msgbox (Battle05_BaronText_PostBattle3, MSGBOX_DEFAULT)
 	playfanfare (MUS_REGISTER_MATCH_CALL)
 	bufferstring (STR_VAR_2, CommonText_BaronsMom)

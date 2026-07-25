@@ -536,7 +536,7 @@ bool32 ShoulDoJaksonExpansion1Call(void)
         case MAP_TYPE_CITY:
         case MAP_TYPE_ROUTE:
         case MAP_TYPE_OCEAN_ROUTE:
-            if (++(*GetVarPointer(VAR_JAKSON_EXPANSION1_CALL_STEP_COUNTER)) < 250)
+            if (++(*GetVarPointer(VAR_JAKSON_EXPANSION1_CALL_STEP_COUNTER)) < 500)
                 return FALSE;
             break;
         default:

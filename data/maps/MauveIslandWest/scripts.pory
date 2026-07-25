@@ -52,27 +52,41 @@ script MauveIslandWest_EventScript_Eryk {
 }
 
 script MauveIslandWest_EventScript_HeadbuttTree {
-	msgbox ("A Pokémon could be in this tree.\nWant to Headbutt it?", MSGBOX_YESNO)
-	if (var(VAR_RESULT)) {
-		msgbox ("{PLAYER} used Headbutt!")
-		closemessage
-		applymovement (LOCALID_PLAYER, Movement_PlayerHeadbutt)
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 24) {
+		msgbox (Text_HeadbuttTree, MSGBOX_YESNO)
+		if (var(VAR_RESULT)) {
+			msgbox ("{PLAYER} used Headbutt!")
+			closemessage
+			applymovement (LOCALID_PLAYER, Movement_PlayerHeadbutt)
+			waitmovement (0)
+			playse (SE_SUPER_EFFECTIVE)
+			setvar (VAR_0x8004, 1)  # vertical pan
+			setvar (VAR_0x8005, 1)  # horizontal pan
+			setvar (VAR_0x8006, 6)  # num shakes
+			setvar (VAR_0x8007, 2)  # shake delay
+			special (ShakeCamera)
+			waitstate
+			setflag (FLAG_SYS_SPAWN_INVISIBLE)
+			setflag (FLAG_MAUVE_CAMP_HEADBUTT_SCENE)
+			fadescreenswapbuffers (FADE_TO_BLACK)
+			delay (40)
+			warpsilent (MAP_MAUVE_CAMP, 23, 10)
+			waitstate
+		}
+	}
+	else {
+		msgbox (Text_HeadbuttTree, MSGBOX_AUTOCLOSE)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
 		waitmovement (0)
-		playse (SE_SUPER_EFFECTIVE)
-		setvar (VAR_0x8004, 1)  # vertical pan
-		setvar (VAR_0x8005, 1)  # horizontal pan
-		setvar (VAR_0x8006, 6)  # num shakes
-		setvar (VAR_0x8007, 2)  # shake delay
-		special (ShakeCamera)
-		waitstate
-		setflag (FLAG_SYS_SPAWN_INVISIBLE)
-		setflag (FLAG_MAUVE_CAMP_HEADBUTT_SCENE)
-		fadescreenswapbuffers (FADE_TO_BLACK)
-		delay (40)
-		warpsilent (MAP_MAUVE_CAMP, 23, 10)
-		waitstate
+		msgbox ("Wait, is that Jakson's voice?\n"
+				"Better check it out first!", MSGBOX_DEFAULT)
 	}
 	closemessage
+}
+
+text Text_HeadbuttTree {
+	"A Pokémon could be in this tree.\n"
+	"Want to Headbutt it?"
 }
 
 movement Movement_PlayerHeadbutt {

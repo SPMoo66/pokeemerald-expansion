@@ -74,6 +74,7 @@
 #include "test/battle.h"
 #include "follower_npc.h"
 #include "load_save.h"
+#include "regions.h"
 
 // Helper for accessing command arguments and advancing gBattlescriptCurrInstr.
 //
@@ -5850,6 +5851,8 @@ static void Cmd_getmoneyreward(void)
         money = GetTrainerMoneyToGive(TRAINER_BATTLE_PARAM.opponentA);
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
             money += GetTrainerMoneyToGive(TRAINER_BATTLE_PARAM.opponentB);
+        if (GetCurrentRegion() == REGION_EXPANSION_1)
+            money *= 1.2;
         AddMoney(&gSaveBlock1Ptr->money, money);
     }
     else

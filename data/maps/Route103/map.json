@@ -3,7 +3,6 @@
   "name": "Route103",
   "layout": "LAYOUT_ROUTE103",
   "music": "MUS_DP_ROUTE206_DAY",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_103",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -304,9 +303,7 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",
@@ -324,5 +321,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "TrainerTipsBattleSpeed"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

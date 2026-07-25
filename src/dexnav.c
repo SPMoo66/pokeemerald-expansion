@@ -2030,7 +2030,7 @@ static void DexNavLoadEncounterData(void)
         for (i = 0; i < FISH_WILD_COUNT; i++)
         {
             species = fishingMonsInfo->wildPokemon[i].species;
-            if (species != SPECIES_NONE)
+            if (species != SPECIES_NONE) // This is how we draw duplicates!! See Land/Water above for how to avoid drawing duplicates.
                 sDexNavUiDataPtr->fishingSpecies[fishingIndex++] = fishingMonsInfo->wildPokemon[i].species;
         }
     }

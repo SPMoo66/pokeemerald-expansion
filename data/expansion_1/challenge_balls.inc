@@ -19,7 +19,7 @@ IllusoryGrotto_ChallengeBall_2:
 # 17 "data/expansion_1/challenge_balls.pory"
 	settotemboost 1, 1
 # 18 "data/expansion_1/challenge_balls.pory"
-	setwildbattle SPECIES_IRON_VALIANT, 76, ITEM_NONE, 0, SPECIES_NOIVERN, 76, ITEM_NONE, 1, MOVE_THUNDER_PUNCH, MOVE_SACRED_SWORD, MOVE_SPIRIT_BREAK, MOVE_AGILITY, MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONLIGHT, MOVE_DOUBLE_TEAM
+	setwildbattle SPECIES_IRON_VALIANT, 80, ITEM_NONE, 0, SPECIES_NOIVERN, 80, ITEM_NONE, 1, MOVE_THUNDER_PUNCH, MOVE_SACRED_SWORD, MOVE_SPIRIT_BREAK, MOVE_AGILITY, MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONLIGHT, MOVE_DOUBLE_TEAM
 # 19 "data/expansion_1/challenge_balls.pory"
 	dowildbattle
 # 20 "data/expansion_1/challenge_balls.pory"
@@ -56,7 +56,7 @@ FarOffSeaWest_ChallengeBall_2:
 # 35 "data/expansion_1/challenge_balls.pory"
 	settotemboost 1, 0, 0, 1
 # 36 "data/expansion_1/challenge_balls.pory"
-	setwildbattle SPECIES_ALTARIA_EXP_1, 78, ITEM_NONE, 2, SPECIES_ROSERADE_EXP_1, 78, ITEM_NONE, 1, MOVE_THUNDERCLAP, MOVE_HURRICANE, MOVE_TAILWIND, MOVE_ELECTRIFY, MOVE_EARTHQUAKE, MOVE_THROAT_CHOP, MOVE_MORNING_SUN, MOVE_SACRED_FIRE
+	setwildbattle SPECIES_ALTARIA_EXP_1, 81, ITEM_NONE, 2, SPECIES_ROSERADE_EXP_1, 81, ITEM_NONE, 1, MOVE_THUNDERCLAP, MOVE_HURRICANE, MOVE_TAILWIND, MOVE_ELECTRIFY, MOVE_EARTHQUAKE, MOVE_THROAT_CHOP, MOVE_MORNING_SUN, MOVE_SACRED_FIRE
 # 37 "data/expansion_1/challenge_balls.pory"
 	dowildbattle
 # 38 "data/expansion_1/challenge_balls.pory"
@@ -91,7 +91,7 @@ MauveIslandSouth_ChallengeBall_2:
 # 52 "data/expansion_1/challenge_balls.pory"
 	setstartingstatus STARTING_STATUS_SPIKES_PLAYER_L1
 # 53 "data/expansion_1/challenge_balls.pory"
-	setwildbattle SPECIES_SHUCKLE_FRIBIAN, 80, ITEM_NONE, 1, SPECIES_NIDOKING, 80, ITEM_NONE, 0, MOVE_RAGE_POWDER, MOVE_SAFEGUARD, MOVE_GASTRO_ACID, MOVE_INFESTATION, MOVE_HEADLONG_RUSH, MOVE_SUCKER_PUNCH, MOVE_POISON_TAIL, MOVE_AQUA_TAIL
+	setwildbattle SPECIES_SHUCKLE_FRIBIAN, 82, ITEM_NONE, 1, SPECIES_NIDOKING, 82, ITEM_NONE, 0, MOVE_RAGE_POWDER, MOVE_SAFEGUARD, MOVE_GASTRO_ACID, MOVE_INFESTATION, MOVE_HEADLONG_RUSH, MOVE_SUCKER_PUNCH, MOVE_POISON_TAIL, MOVE_AQUA_TAIL
 # 54 "data/expansion_1/challenge_balls.pory"
 	dowildbattle
 # 55 "data/expansion_1/challenge_balls.pory"
@@ -128,7 +128,7 @@ MauveHollow_ChallengeBall_2:
 # 70 "data/expansion_1/challenge_balls.pory"
 	setstartingstatus STARTING_STATUS_SWAMP_PLAYER
 # 71 "data/expansion_1/challenge_balls.pory"
-	setwildbattle SPECIES_ARBOK_EXP_1, 82, ITEM_NONE, 0, SPECIES_AMPHAROS_EXP_1, 82, ITEM_NONE, 0, MOVE_DRAGON_TAIL, MOVE_COIL, MOVE_LEECH_LIFE, MOVE_SANDSTORM, MOVE_DRAGON_TAIL, MOVE_TAIL_GLOW, MOVE_THUNDERBOLT, MOVE_POWER_GEM
+	setwildbattle SPECIES_ARBOK_EXP_1, 84, ITEM_NONE, 0, SPECIES_AMPHAROS_EXP_1, 84, ITEM_NONE, 0, MOVE_DRAGON_TAIL, MOVE_COIL, MOVE_LEECH_LIFE, MOVE_SANDSTORM, MOVE_DRAGON_TAIL, MOVE_TAIL_GLOW, MOVE_THUNDERBOLT, MOVE_POWER_GEM
 # 72 "data/expansion_1/challenge_balls.pory"
 	dowildbattle
 # 73 "data/expansion_1/challenge_balls.pory"
@@ -163,7 +163,7 @@ WellspringChasm_ChallengeBall_2:
 # 87 "data/expansion_1/challenge_balls.pory"
 	setstartingstatus STARTING_STATUS_RAINBOW_OPPONENT
 # 88 "data/expansion_1/challenge_balls.pory"
-	setwildbattle SPECIES_TOGEKISS, 84, ITEM_NONE, 1, SPECIES_NINETALES_EMERIBIAN, 84, ITEM_NONE, 1, MOVE_TRI_ATTACK, MOVE_ANCIENT_POWER, MOVE_MOONBLAST, MOVE_MORNING_SUN, MOVE_INFERNAL_PARADE, MOVE_EXTRASENSORY, MOVE_HEAT_WAVE, MOVE_FIRE_SPIN
+	setwildbattle SPECIES_TOGEKISS, 85, ITEM_NONE, 1, SPECIES_NINETALES_EMERIBIAN, 85, ITEM_NONE, 1, MOVE_TRI_ATTACK, MOVE_ANCIENT_POWER, MOVE_MOONBLAST, MOVE_MORNING_SUN, MOVE_INFERNAL_PARADE, MOVE_EXTRASENSORY, MOVE_HEAT_WAVE, MOVE_FIRE_SPIN
 # 89 "data/expansion_1/challenge_balls.pory"
 	dowildbattle
 # 90 "data/expansion_1/challenge_balls.pory"

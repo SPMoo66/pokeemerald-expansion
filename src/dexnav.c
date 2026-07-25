@@ -2084,7 +2084,7 @@ static void DrawSpeciesIcons(void)
 //            CreateMonIcon(SPECIES_NONE, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF); //question mark if detector mode inactive
 //    }
 
-    for (i = 0; i < 6; i++) // The 6 should be FISH_WILD_COUNT, but we want to limit to 6 slots
+    for (i = 0; i < FISH_WILD_COUNT; i++)
     {
         species = sDexNavUiDataPtr->fishingSpecies[i];
         x = ROW_FISHING_ICON_X + 24 * i;

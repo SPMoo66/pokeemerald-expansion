@@ -2437,8 +2437,6 @@ static void Task_DexNavMain(u8 taskId)
         if (sDexNavUiDataPtr->cursorRow == ROW_WATER)
         {
             sDexNavUiDataPtr->cursorRow = ROW_FISHING;
-            if (sDexNavUiDataPtr->cursorCol >= COL_FISHING_COUNT)
-                sDexNavUiDataPtr->cursorCol = COL_FISHING_MAX;
         }
         else
         {
@@ -2456,13 +2454,8 @@ static void Task_DexNavMain(u8 taskId)
         if (sDexNavUiDataPtr->cursorRow == ROW_FISHING)
         {
             sDexNavUiDataPtr->cursorRow = ROW_WATER;
-        }
-        else if (sDexNavUiDataPtr->cursorRow == ROW_LAND_BOT)
-        {
-            if (sDexNavUiDataPtr->cursorCol >= COL_FISHING_COUNT)
-                sDexNavUiDataPtr->cursorCol = COL_FISHING_MAX;
-
-            sDexNavUiDataPtr->cursorRow++;
+            if (sDexNavUiDataPtr->cursorCol >= COL_WATER_COUNT)
+                sDexNavUiDataPtr->cursorCol = COL_WATER_MAX;
         }
         else
         {

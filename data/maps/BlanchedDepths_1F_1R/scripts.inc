@@ -37,7 +37,7 @@ BlanchedDepths_1F_1R_MapScripts_MAP_SCRIPT_ON_RESUME:
 
 BlanchedDepths_1F_1R_MapScripts_MAP_SCRIPT_ON_LOAD:
 # 15 "data/maps/BlanchedDepths_1F_1R/scripts.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 18
+	compare VAR_EMERALBODY_RIVAL_STATE, 24
 	goto_if_eq BlanchedDepths_1F_1R_MapScripts_MAP_SCRIPT_ON_LOAD_1
 	return
 

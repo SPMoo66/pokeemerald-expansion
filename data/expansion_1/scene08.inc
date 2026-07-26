@@ -506,364 +506,366 @@ Expansion1_Rival_Scene08b::
 # 297 "data/expansion_1/scene08.pory"
 	setflag FLAG_SYS_SPAWN_INVISIBLE
 # 298 "data/expansion_1/scene08.pory"
+	setflag FLAG_SYS_DONT_SPAWN_SURF_BLOB
+# 299 "data/expansion_1/scene08.pory"
 	warpcontinuescript MAP_BYGONE_VAULT_2R1, 10, 15, Expansion1_Rival_Scene08c
 	return
 
 
 Expansion1_Rival_Scene08c::
-# 302 "data/expansion_1/scene08.pory"
-	fadescreen FADE_FROM_BLACK
 # 303 "data/expansion_1/scene08.pory"
-	delay 40
+	fadescreen FADE_FROM_BLACK
 # 304 "data/expansion_1/scene08.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkDiagNE8
+	delay 40
 # 305 "data/expansion_1/scene08.pory"
-	delay 110
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDiagNE8
 # 306 "data/expansion_1/scene08.pory"
-	fadescreen FADE_TO_BLACK
+	delay 110
 # 307 "data/expansion_1/scene08.pory"
-	setflag FLAG_SYS_SPAWN_INVISIBLE
+	fadescreen FADE_TO_BLACK
 # 308 "data/expansion_1/scene08.pory"
+	setflag FLAG_SYS_SPAWN_INVISIBLE
+# 309 "data/expansion_1/scene08.pory"
 	warpcontinuescript MAP_BYGONE_VAULT_R2, 8, 6, Expansion1_Rival_Scene08d
 	return
 
 
 Expansion1_Rival_Scene08d::
-# 312 "data/expansion_1/scene08.pory"
-	fadescreen FADE_FROM_BLACK
 # 313 "data/expansion_1/scene08.pory"
-	delay 20
+	fadescreen FADE_FROM_BLACK
 # 314 "data/expansion_1/scene08.pory"
-	applymovement 5, Common_Movement_WalkInPlaceUp
+	delay 20
 # 315 "data/expansion_1/scene08.pory"
-	waitmovement 0
+	applymovement 5, Common_Movement_WalkInPlaceUp
 # 316 "data/expansion_1/scene08.pory"
-	delay 20
+	waitmovement 0
 # 317 "data/expansion_1/scene08.pory"
-	applymovement 5, Common_Movement_WalkUpSlow2
+	delay 20
 # 318 "data/expansion_1/scene08.pory"
-	waitmovement 0
+	applymovement 5, Common_Movement_WalkUpSlow2
 # 319 "data/expansion_1/scene08.pory"
-	special DoMirageTowerCeilingCrumble
+	waitmovement 0
 # 320 "data/expansion_1/scene08.pory"
-	delay 20
+	special DoMirageTowerCeilingCrumble
 # 321 "data/expansion_1/scene08.pory"
-	applymovement 5, Common_Movement_QuestionMark
+	delay 20
 # 322 "data/expansion_1/scene08.pory"
-	delay 40
+	applymovement 5, Common_Movement_QuestionMark
 # 323 "data/expansion_1/scene08.pory"
-	applymovement 5, Common_Movement_WalkInPlaceLeft
-# 324 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 325 "data/expansion_1/scene08.pory"
-	delay 20
-# 326 "data/expansion_1/scene08.pory"
-	applymovement 5, Common_Movement_WalkInPlaceDown
-# 327 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 328 "data/expansion_1/scene08.pory"
-	setmetatile 11, 7, 0x06C, TRUE
-# 329 "data/expansion_1/scene08.pory"
-	special DrawWholeMapView
-# 330 "data/expansion_1/scene08.pory"
-	playse SE_LAVARIDGE_FALL_WARP
-# 331 "data/expansion_1/scene08.pory"
-	waitse
-# 332 "data/expansion_1/scene08.pory"
-	applymovement 5, Common_Movement_ExclamationMark
-# 333 "data/expansion_1/scene08.pory"
-	playse SE_PIN
-# 334 "data/expansion_1/scene08.pory"
 	delay 40
-# 335 "data/expansion_1/scene08.pory"
-	removeobject 5
-# 336 "data/expansion_1/scene08.pory"
-	playse SE_FALL
-# 337 "data/expansion_1/scene08.pory"
-	waitse
-# 338 "data/expansion_1/scene08.pory"
+# 324 "data/expansion_1/scene08.pory"
+	applymovement 5, Common_Movement_WalkInPlaceLeft
+# 325 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 326 "data/expansion_1/scene08.pory"
 	delay 20
+# 327 "data/expansion_1/scene08.pory"
+	applymovement 5, Common_Movement_WalkInPlaceDown
+# 328 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 329 "data/expansion_1/scene08.pory"
+	setmetatile 11, 7, 0x06C, TRUE
+# 330 "data/expansion_1/scene08.pory"
+	special DrawWholeMapView
+# 331 "data/expansion_1/scene08.pory"
+	playse SE_LAVARIDGE_FALL_WARP
+# 332 "data/expansion_1/scene08.pory"
+	waitse
+# 333 "data/expansion_1/scene08.pory"
+	applymovement 5, Common_Movement_ExclamationMark
+# 334 "data/expansion_1/scene08.pory"
+	playse SE_PIN
+# 335 "data/expansion_1/scene08.pory"
+	delay 40
+# 336 "data/expansion_1/scene08.pory"
+	removeobject 5
+# 337 "data/expansion_1/scene08.pory"
+	playse SE_FALL
+# 338 "data/expansion_1/scene08.pory"
+	waitse
 # 339 "data/expansion_1/scene08.pory"
-	fadescreen FADE_TO_BLACK
+	delay 20
 # 340 "data/expansion_1/scene08.pory"
-	setflag FLAG_SYS_SPAWN_INVISIBLE
+	fadescreen FADE_TO_BLACK
 # 341 "data/expansion_1/scene08.pory"
+	setflag FLAG_SYS_SPAWN_INVISIBLE
+# 342 "data/expansion_1/scene08.pory"
 	warpcontinuescript MAP_BYGONE_VAULT_1, 8, 9, Expansion1_Rival_Scene08e
 	return
 
 
 Expansion1_Rival_Scene08e::
-# 345 "data/expansion_1/scene08.pory"
-	fadescreen FADE_FROM_BLACK
 # 346 "data/expansion_1/scene08.pory"
-	delay 40
+	fadescreen FADE_FROM_BLACK
 # 347 "data/expansion_1/scene08.pory"
-	special DoMirageTowerCeilingCrumble
+	delay 40
 # 348 "data/expansion_1/scene08.pory"
-	delay 60
+	special DoMirageTowerCeilingCrumble
 # 349 "data/expansion_1/scene08.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkDown4
-# 350 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 351 "data/expansion_1/scene08.pory"
-	delay 40
-# 352 "data/expansion_1/scene08.pory"
-	addobject 14
-# 353 "data/expansion_1/scene08.pory"
-	playse SE_EXIT
-# 354 "data/expansion_1/scene08.pory"
-	waitse
-# 355 "data/expansion_1/scene08.pory"
-	applymovement 14, Common_Movement_WalkUp5
-# 356 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 357 "data/expansion_1/scene08.pory"
-	delay 40
-# 358 "data/expansion_1/scene08.pory"
-	applymovement 14, Common_Movement_WalkInPlaceFasterRight
-# 359 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 360 "data/expansion_1/scene08.pory"
-	delay 40
-# 361 "data/expansion_1/scene08.pory"
-	applymovement 14, Common_Movement_WalkInPlaceFasterLeft
-# 362 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 363 "data/expansion_1/scene08.pory"
-	delay 40
-# 364 "data/expansion_1/scene08.pory"
-	applymovement 14, Common_Movement_WalkInPlaceFasterUp
-# 365 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 366 "data/expansion_1/scene08.pory"
-	delay 40
-# 367 "data/expansion_1/scene08.pory"
-	applymovement 14, Common_Movement_MusicNote
-# 368 "data/expansion_1/scene08.pory"
-	playse SE_RG_HELP_OPEN
-# 369 "data/expansion_1/scene08.pory"
 	delay 60
-# 370 "data/expansion_1/scene08.pory"
-	applymovement 14, Common_Movement_WalkRight6
-# 371 "data/expansion_1/scene08.pory"
+# 350 "data/expansion_1/scene08.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDown4
+# 351 "data/expansion_1/scene08.pory"
 	waitmovement 0
-# 372 "data/expansion_1/scene08.pory"
-	applymovement 14, Common_Movement_WalkUp3
-# 373 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 374 "data/expansion_1/scene08.pory"
-	applymovement 14, Common_Movement_WalkRight
-# 375 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 376 "data/expansion_1/scene08.pory"
-	removeobject 14
-# 377 "data/expansion_1/scene08.pory"
-	playse SE_EXIT
-# 378 "data/expansion_1/scene08.pory"
-	waitse
-# 379 "data/expansion_1/scene08.pory"
+# 352 "data/expansion_1/scene08.pory"
 	delay 40
+# 353 "data/expansion_1/scene08.pory"
+	addobject 14
+# 354 "data/expansion_1/scene08.pory"
+	playse SE_EXIT
+# 355 "data/expansion_1/scene08.pory"
+	waitse
+# 356 "data/expansion_1/scene08.pory"
+	applymovement 14, Common_Movement_WalkUp5
+# 357 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 358 "data/expansion_1/scene08.pory"
+	delay 40
+# 359 "data/expansion_1/scene08.pory"
+	applymovement 14, Common_Movement_WalkInPlaceFasterRight
+# 360 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 361 "data/expansion_1/scene08.pory"
+	delay 40
+# 362 "data/expansion_1/scene08.pory"
+	applymovement 14, Common_Movement_WalkInPlaceFasterLeft
+# 363 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 364 "data/expansion_1/scene08.pory"
+	delay 40
+# 365 "data/expansion_1/scene08.pory"
+	applymovement 14, Common_Movement_WalkInPlaceFasterUp
+# 366 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 367 "data/expansion_1/scene08.pory"
+	delay 40
+# 368 "data/expansion_1/scene08.pory"
+	applymovement 14, Common_Movement_MusicNote
+# 369 "data/expansion_1/scene08.pory"
+	playse SE_RG_HELP_OPEN
+# 370 "data/expansion_1/scene08.pory"
+	delay 60
+# 371 "data/expansion_1/scene08.pory"
+	applymovement 14, Common_Movement_WalkRight6
+# 372 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 373 "data/expansion_1/scene08.pory"
+	applymovement 14, Common_Movement_WalkUp3
+# 374 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 375 "data/expansion_1/scene08.pory"
+	applymovement 14, Common_Movement_WalkRight
+# 376 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 377 "data/expansion_1/scene08.pory"
+	removeobject 14
+# 378 "data/expansion_1/scene08.pory"
+	playse SE_EXIT
+# 379 "data/expansion_1/scene08.pory"
+	waitse
 # 380 "data/expansion_1/scene08.pory"
-	addobject 15
+	delay 40
 # 381 "data/expansion_1/scene08.pory"
-	playse SE_EXIT
+	addobject 15
 # 382 "data/expansion_1/scene08.pory"
-	waitse
+	playse SE_EXIT
 # 383 "data/expansion_1/scene08.pory"
-	applymovement 15, Common_Movement_WalkUp4
-# 384 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 385 "data/expansion_1/scene08.pory"
-	addobject 16
-# 386 "data/expansion_1/scene08.pory"
-	playse SE_EXIT
-# 387 "data/expansion_1/scene08.pory"
 	waitse
+# 384 "data/expansion_1/scene08.pory"
+	applymovement 15, Common_Movement_WalkUp4
+# 385 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 386 "data/expansion_1/scene08.pory"
+	addobject 16
+# 387 "data/expansion_1/scene08.pory"
+	playse SE_EXIT
 # 388 "data/expansion_1/scene08.pory"
-	applymovement 15, Common_Movement_XMark
+	waitse
 # 389 "data/expansion_1/scene08.pory"
-	playse SE_THUNDER
+	applymovement 15, Common_Movement_XMark
 # 390 "data/expansion_1/scene08.pory"
-	delay 80
+	playse SE_THUNDER
 # 391 "data/expansion_1/scene08.pory"
-	playse SE_M_METRONOME
-# 392 "data/expansion_1/scene08.pory"
-	applymovement 16, Common_Movement_SweatDrop
-# 393 "data/expansion_1/scene08.pory"
-	applymovement 15, Common_Movement_WalkInPlaceFasterRight
-# 394 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 395 "data/expansion_1/scene08.pory"
-	delay 20
-# 396 "data/expansion_1/scene08.pory"
-	applymovement 15, Common_Movement_WalkInPlaceFasterLeft
-# 397 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 398 "data/expansion_1/scene08.pory"
-	delay 20
-# 399 "data/expansion_1/scene08.pory"
-	applymovement 15, Common_Movement_WalkUp2
-# 400 "data/expansion_1/scene08.pory"
-	applymovement 16, Common_Movement_WalkUp2
-# 401 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 402 "data/expansion_1/scene08.pory"
-	addobject 17
-# 403 "data/expansion_1/scene08.pory"
-	playse SE_EXIT
-# 404 "data/expansion_1/scene08.pory"
-	applymovement 16, Common_Movement_WalkUp3
-# 405 "data/expansion_1/scene08.pory"
-	applymovement 15, Common_Movement_WalkLeft4
-# 406 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 407 "data/expansion_1/scene08.pory"
-	applymovement 17, Common_Movement_WalkUp2
-# 408 "data/expansion_1/scene08.pory"
-	applymovement 15, Common_Movement_WalkLeft2
-# 409 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 410 "data/expansion_1/scene08.pory"
-	setobjectxyperm 18, 8, 16
-# 411 "data/expansion_1/scene08.pory"
-	setobjectmovementtype 18, MOVEMENT_TYPE_FACE_UP
-# 412 "data/expansion_1/scene08.pory"
-	addobject 18
-# 413 "data/expansion_1/scene08.pory"
-	playse SE_EXIT
-# 414 "data/expansion_1/scene08.pory"
-	applymovement 16, Common_Movement_WalkInPlaceFasterDown
-# 415 "data/expansion_1/scene08.pory"
-	applymovement 17, Common_Movement_WalkLeft
-# 416 "data/expansion_1/scene08.pory"
-	applymovement 15, Common_Movement_WalkUp
-# 417 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 418 "data/expansion_1/scene08.pory"
-	applymovement 18, Common_Movement_WalkUp
-# 419 "data/expansion_1/scene08.pory"
-	applymovement 17, Common_Movement_WalkUp
-# 420 "data/expansion_1/scene08.pory"
-	applymovement 15, Common_Movement_WalkUp
-# 421 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 422 "data/expansion_1/scene08.pory"
-	applymovement 18, Common_Movement_WalkUp
-# 423 "data/expansion_1/scene08.pory"
-	applymovement 15, Common_Movement_WalkLeft
-# 424 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 425 "data/expansion_1/scene08.pory"
-	removeobject 15
-# 426 "data/expansion_1/scene08.pory"
-	addobject 19
-# 427 "data/expansion_1/scene08.pory"
-	playse SE_EXIT
-# 428 "data/expansion_1/scene08.pory"
-	applymovement 18, Common_Movement_WalkRight
-# 429 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 430 "data/expansion_1/scene08.pory"
-	applymovement 18, Common_Movement_WalkUp
-# 431 "data/expansion_1/scene08.pory"
-	applymovement 19, Common_Movement_WalkUp2
-# 432 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 433 "data/expansion_1/scene08.pory"
-	applymovement 16, Common_Movement_Talking
-# 434 "data/expansion_1/scene08.pory"
 	delay 80
-# 435 "data/expansion_1/scene08.pory"
-	applymovement 17, Common_Movement_QuestionMark
-# 436 "data/expansion_1/scene08.pory"
-	applymovement 16, Common_Movement_WalkRight6
-# 437 "data/expansion_1/scene08.pory"
+# 392 "data/expansion_1/scene08.pory"
+	playse SE_M_METRONOME
+# 393 "data/expansion_1/scene08.pory"
+	applymovement 16, Common_Movement_SweatDrop
+# 394 "data/expansion_1/scene08.pory"
+	applymovement 15, Common_Movement_WalkInPlaceFasterRight
+# 395 "data/expansion_1/scene08.pory"
 	waitmovement 0
-# 438 "data/expansion_1/scene08.pory"
+# 396 "data/expansion_1/scene08.pory"
+	delay 20
+# 397 "data/expansion_1/scene08.pory"
+	applymovement 15, Common_Movement_WalkInPlaceFasterLeft
+# 398 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 399 "data/expansion_1/scene08.pory"
+	delay 20
+# 400 "data/expansion_1/scene08.pory"
+	applymovement 15, Common_Movement_WalkUp2
+# 401 "data/expansion_1/scene08.pory"
+	applymovement 16, Common_Movement_WalkUp2
+# 402 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 403 "data/expansion_1/scene08.pory"
+	addobject 17
+# 404 "data/expansion_1/scene08.pory"
+	playse SE_EXIT
+# 405 "data/expansion_1/scene08.pory"
 	applymovement 16, Common_Movement_WalkUp3
-# 439 "data/expansion_1/scene08.pory"
-	applymovement 17, Common_Movement_WalkUp3
-# 440 "data/expansion_1/scene08.pory"
+# 406 "data/expansion_1/scene08.pory"
+	applymovement 15, Common_Movement_WalkLeft4
+# 407 "data/expansion_1/scene08.pory"
 	waitmovement 0
-# 441 "data/expansion_1/scene08.pory"
-	applymovement 17, Common_Movement_WalkInPlaceFasterRight
-# 442 "data/expansion_1/scene08.pory"
-	applymovement 16, Common_Movement_WalkRight
-# 443 "data/expansion_1/scene08.pory"
-	applymovement 18, Common_Movement_WalkUp
-# 444 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 445 "data/expansion_1/scene08.pory"
-	removeobject 16
-# 446 "data/expansion_1/scene08.pory"
-	playse SE_EXIT
-# 447 "data/expansion_1/scene08.pory"
-	applymovement 18, Common_Movement_WalkLeft
-# 448 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 449 "data/expansion_1/scene08.pory"
-	applymovement 18, Common_Movement_WalkInPlaceFasterDown
-# 450 "data/expansion_1/scene08.pory"
-	applymovement 17, Common_Movement_WalkInPlaceFasterLeft
-# 451 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 452 "data/expansion_1/scene08.pory"
-	applymovement 17, Common_Movement_Thinking
-# 453 "data/expansion_1/scene08.pory"
-	delay 50
-# 454 "data/expansion_1/scene08.pory"
-	applymovement 18, Common_Movement_Talking
-# 455 "data/expansion_1/scene08.pory"
-	delay 30
-# 456 "data/expansion_1/scene08.pory"
-	applymovement 17, Common_Movement_WalkLeft5
-# 457 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 458 "data/expansion_1/scene08.pory"
+# 408 "data/expansion_1/scene08.pory"
 	applymovement 17, Common_Movement_WalkUp2
-# 459 "data/expansion_1/scene08.pory"
-	applymovement 18, Common_Movement_WalkUp2
-# 460 "data/expansion_1/scene08.pory"
+# 409 "data/expansion_1/scene08.pory"
+	applymovement 15, Common_Movement_WalkLeft2
+# 410 "data/expansion_1/scene08.pory"
 	waitmovement 0
-# 461 "data/expansion_1/scene08.pory"
-	applymovement 17, Common_Movement_WalkLeft
-# 462 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 463 "data/expansion_1/scene08.pory"
-	removeobject 17
-# 464 "data/expansion_1/scene08.pory"
-	playse SE_EXIT
-# 465 "data/expansion_1/scene08.pory"
-	applymovement 18, Common_Movement_WalkInPlaceFasterDown
-# 466 "data/expansion_1/scene08.pory"
-	waitmovement 0
-# 467 "data/expansion_1/scene08.pory"
-	removeobject 18
-# 468 "data/expansion_1/scene08.pory"
-	setobjectxyperm 18, 8, 10
-# 469 "data/expansion_1/scene08.pory"
-	setobjectmovementtype 18 MOVEMENT_TYPE_WANDER_AROUND
-# 470 "data/expansion_1/scene08.pory"
+# 411 "data/expansion_1/scene08.pory"
+	setobjectxyperm 18, 8, 16
+# 412 "data/expansion_1/scene08.pory"
+	setobjectmovementtype 18, MOVEMENT_TYPE_FACE_UP
+# 413 "data/expansion_1/scene08.pory"
 	addobject 18
+# 414 "data/expansion_1/scene08.pory"
+	playse SE_EXIT
+# 415 "data/expansion_1/scene08.pory"
+	applymovement 16, Common_Movement_WalkInPlaceFasterDown
+# 416 "data/expansion_1/scene08.pory"
+	applymovement 17, Common_Movement_WalkLeft
+# 417 "data/expansion_1/scene08.pory"
+	applymovement 15, Common_Movement_WalkUp
+# 418 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 419 "data/expansion_1/scene08.pory"
+	applymovement 18, Common_Movement_WalkUp
+# 420 "data/expansion_1/scene08.pory"
+	applymovement 17, Common_Movement_WalkUp
+# 421 "data/expansion_1/scene08.pory"
+	applymovement 15, Common_Movement_WalkUp
+# 422 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 423 "data/expansion_1/scene08.pory"
+	applymovement 18, Common_Movement_WalkUp
+# 424 "data/expansion_1/scene08.pory"
+	applymovement 15, Common_Movement_WalkLeft
+# 425 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 426 "data/expansion_1/scene08.pory"
+	removeobject 15
+# 427 "data/expansion_1/scene08.pory"
+	addobject 19
+# 428 "data/expansion_1/scene08.pory"
+	playse SE_EXIT
+# 429 "data/expansion_1/scene08.pory"
+	applymovement 18, Common_Movement_WalkRight
+# 430 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 431 "data/expansion_1/scene08.pory"
+	applymovement 18, Common_Movement_WalkUp
+# 432 "data/expansion_1/scene08.pory"
+	applymovement 19, Common_Movement_WalkUp2
+# 433 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 434 "data/expansion_1/scene08.pory"
+	applymovement 16, Common_Movement_Talking
+# 435 "data/expansion_1/scene08.pory"
+	delay 80
+# 436 "data/expansion_1/scene08.pory"
+	applymovement 17, Common_Movement_QuestionMark
+# 437 "data/expansion_1/scene08.pory"
+	applymovement 16, Common_Movement_WalkRight6
+# 438 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 439 "data/expansion_1/scene08.pory"
+	applymovement 16, Common_Movement_WalkUp3
+# 440 "data/expansion_1/scene08.pory"
+	applymovement 17, Common_Movement_WalkUp3
+# 441 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 442 "data/expansion_1/scene08.pory"
+	applymovement 17, Common_Movement_WalkInPlaceFasterRight
+# 443 "data/expansion_1/scene08.pory"
+	applymovement 16, Common_Movement_WalkRight
+# 444 "data/expansion_1/scene08.pory"
+	applymovement 18, Common_Movement_WalkUp
+# 445 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 446 "data/expansion_1/scene08.pory"
+	removeobject 16
+# 447 "data/expansion_1/scene08.pory"
+	playse SE_EXIT
+# 448 "data/expansion_1/scene08.pory"
+	applymovement 18, Common_Movement_WalkLeft
+# 449 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 450 "data/expansion_1/scene08.pory"
+	applymovement 18, Common_Movement_WalkInPlaceFasterDown
+# 451 "data/expansion_1/scene08.pory"
+	applymovement 17, Common_Movement_WalkInPlaceFasterLeft
+# 452 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 453 "data/expansion_1/scene08.pory"
+	applymovement 17, Common_Movement_Thinking
+# 454 "data/expansion_1/scene08.pory"
+	delay 50
+# 455 "data/expansion_1/scene08.pory"
+	applymovement 18, Common_Movement_Talking
+# 456 "data/expansion_1/scene08.pory"
+	delay 30
+# 457 "data/expansion_1/scene08.pory"
+	applymovement 17, Common_Movement_WalkLeft5
+# 458 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 459 "data/expansion_1/scene08.pory"
+	applymovement 17, Common_Movement_WalkUp2
+# 460 "data/expansion_1/scene08.pory"
+	applymovement 18, Common_Movement_WalkUp2
+# 461 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 462 "data/expansion_1/scene08.pory"
+	applymovement 17, Common_Movement_WalkLeft
+# 463 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 464 "data/expansion_1/scene08.pory"
+	removeobject 17
+# 465 "data/expansion_1/scene08.pory"
+	playse SE_EXIT
+# 466 "data/expansion_1/scene08.pory"
+	applymovement 18, Common_Movement_WalkInPlaceFasterDown
+# 467 "data/expansion_1/scene08.pory"
+	waitmovement 0
+# 468 "data/expansion_1/scene08.pory"
+	removeobject 18
+# 469 "data/expansion_1/scene08.pory"
+	setobjectxyperm 18, 8, 10
+# 470 "data/expansion_1/scene08.pory"
+	setobjectmovementtype 18 MOVEMENT_TYPE_WANDER_AROUND
 # 471 "data/expansion_1/scene08.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkDown
+	addobject 18
 # 472 "data/expansion_1/scene08.pory"
-	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDown
 # 473 "data/expansion_1/scene08.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
 # 474 "data/expansion_1/scene08.pory"
-	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 # 475 "data/expansion_1/scene08.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_SetVisible
-# 476 "data/expansion_1/scene08.pory"
 	waitmovement 0
+# 476 "data/expansion_1/scene08.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_SetVisible
 # 477 "data/expansion_1/scene08.pory"
-	removeobject 19
+	waitmovement 0
 # 478 "data/expansion_1/scene08.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 42
+	removeobject 19
 # 479 "data/expansion_1/scene08.pory"
-	setflag FLAG_EXPANSION_1_MATCH_CALL_3
+	setvar VAR_EMERALBODY_RIVAL_STATE, 42
 # 480 "data/expansion_1/scene08.pory"
+	setflag FLAG_EXPANSION_1_MATCH_CALL_3
+# 481 "data/expansion_1/scene08.pory"
 	releaseall
 	return
 

@@ -12,7 +12,7 @@ mapscripts BlanchedDepths_1F_1R_MapScripts {
 		setdivewarp (MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_1_BLANCHED_DEPTHS_ENTRANCE, 4, 3)
 	}
 	MAP_SCRIPT_ON_LOAD {
-		if (var(VAR_EMERALBODY_RIVAL_STATE) == 18) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 24) {
 			setflag (FLAG_SYS_SPAWN_INVISIBLE)
 			setflag (FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER)
 		}

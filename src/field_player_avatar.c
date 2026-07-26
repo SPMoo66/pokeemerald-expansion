@@ -1169,7 +1169,7 @@ static void PlayerAvatarTransition_Surfing(struct ObjectEvent *objEvent)
     spriteId = FieldEffectStart(FLDEFF_SURF_BLOB);
     objEvent->fieldEffectSpriteId = spriteId;
     SetSurfBlob_BobState(spriteId, BOB_PLAYER_AND_MON);
-    if (FlagGet(FLAG_SYS_SPAWN_INVISIBLE))
+    if (FlagGet(FLAG_SYS_DONT_SPAWN_SURF_BLOB))
         gSprites[gObjectEvents[gPlayerAvatar.objectEventId].fieldEffectSpriteId].invisible = TRUE;
 }
 

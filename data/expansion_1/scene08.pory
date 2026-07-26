@@ -295,6 +295,7 @@ script Expansion1_Rival_Scene08b {
 	delay (140)
 	fadescreen (FADE_TO_BLACK)
 	setflag (FLAG_SYS_SPAWN_INVISIBLE)
+	setflag (FLAG_SYS_DONT_SPAWN_SURF_BLOB)
 	warpcontinuescript (MAP_BYGONE_VAULT_2R1, 10, 15, Expansion1_Rival_Scene08c)
 }
 

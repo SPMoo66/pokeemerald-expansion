@@ -148,346 +148,348 @@ Sakura_Exp1_Town04::
 # 136 "data/expansion_1/rival_scripts.pory"
 	setflag FLAG_SYS_SPAWN_INVISIBLE
 # 137 "data/expansion_1/rival_scripts.pory"
-	setflag FLAG_HIDE_MAP_NAME_POPUP
+	setflag FLAG_SYS_DONT_SPAWN_SURF_BLOB
 # 138 "data/expansion_1/rival_scripts.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 41
+	setflag FLAG_HIDE_MAP_NAME_POPUP
 # 139 "data/expansion_1/rival_scripts.pory"
-	fadescreen FADE_TO_BLACK
+	setvar VAR_EMERALBODY_RIVAL_STATE, 41
 # 140 "data/expansion_1/rival_scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 141 "data/expansion_1/rival_scripts.pory"
 	warpcontinuescript MAP_FAR_OFF_SEA_WEST, 55, 5, Expansion1_Rival_Scene08
 	return
 
 
 Harper_Exp1_Town04::
-# 144 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Harper
 # 145 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Harper
+# 146 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town04_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Exp1_Town04::
-# 149 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Redd
 # 150 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Redd
+# 151 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town04_ReddText, MSGBOX_NPC
 	return
 
 
 Baron_Exp1_Town04::
-# 154 "data/expansion_1/rival_scripts.pory"
-	lock
 # 155 "data/expansion_1/rival_scripts.pory"
-	faceplayer
+	lock
 # 156 "data/expansion_1/rival_scripts.pory"
-	call GetBaronsName
+	faceplayer
 # 157 "data/expansion_1/rival_scripts.pory"
-	msgbox Exp1_Town04_BaronText
+	call GetBaronsName
 # 158 "data/expansion_1/rival_scripts.pory"
+	msgbox Exp1_Town04_BaronText
+# 159 "data/expansion_1/rival_scripts.pory"
 	compare VAR_EMERALBODY_RIVAL, 0
 	goto_if_ne Baron_Exp1_Town04_2
-# 158 "data/expansion_1/rival_scripts.pory"
+# 159 "data/expansion_1/rival_scripts.pory"
 	compare VAR_EMERALBODY_RIVAL, 5
 	goto_if_ne Baron_Exp1_Town04_2
 Baron_Exp1_Town04_1:
-# 161 "data/expansion_1/rival_scripts.pory"
-	closemessage
 # 162 "data/expansion_1/rival_scripts.pory"
+	closemessage
+# 163 "data/expansion_1/rival_scripts.pory"
 	release
 	return
 
 Baron_Exp1_Town04_2:
-# 159 "data/expansion_1/rival_scripts.pory"
+# 160 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town04b_BaronText
 	goto Baron_Exp1_Town04_1
 
 
 Jakson_Exp1_Town04::
-# 166 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 167 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 168 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town04_JaksonText, MSGBOX_NPC
 	return
 
 
 Sakura_Exp1_Town05::
-# 172 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 173 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 174 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town05_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Exp1_Town05::
-# 177 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Harper
 # 178 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Harper
+# 179 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town05_HarperText, MSGBOX_NPC
 	return
 
 
 Baron_Exp1_Town05::
-# 182 "data/expansion_1/rival_scripts.pory"
-	call GetBaronsName
 # 183 "data/expansion_1/rival_scripts.pory"
+	call GetBaronsName
+# 184 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town05_BaronText, MSGBOX_NPC
 	return
 
 
 Jakson_Exp1_Town05::
-# 187 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 188 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 189 "data/expansion_1/rival_scripts.pory"
 	goto_if_unset FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH, Jakson_Exp1_Town05_2
-# 192 "data/expansion_1/rival_scripts.pory"
+# 193 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town05b_JaksonText, MSGBOX_NPC
 Jakson_Exp1_Town05_1:
-# 194 "data/expansion_1/rival_scripts.pory"
+# 195 "data/expansion_1/rival_scripts.pory"
 	release
 	return
 
 Jakson_Exp1_Town05_2:
-# 189 "data/expansion_1/rival_scripts.pory"
+# 190 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town05_JaksonText, MSGBOX_NPC
 	goto Jakson_Exp1_Town05_1
 
 
 Sakura_Exp1_Town06::
-# 199 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 200 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 201 "data/expansion_1/rival_scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 43
 	goto_if_eq Sakura_Exp1_Town06_1
-# 204 "data/expansion_1/rival_scripts.pory"
+# 205 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town06b_SakuraText, MSGBOX_NPC
 	return
 
 Sakura_Exp1_Town06_1:
-# 201 "data/expansion_1/rival_scripts.pory"
+# 202 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town06_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Exp1_Town06::
-# 209 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Harper
 # 210 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Harper
+# 211 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town06_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Exp1_Town06::
-# 214 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Redd
 # 215 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Redd
+# 216 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town06_ReddText, MSGBOX_NPC
 	return
 
 
 Baron_Exp1_Town06::
-# 219 "data/expansion_1/rival_scripts.pory"
-	call GetBaronsName
 # 220 "data/expansion_1/rival_scripts.pory"
+	call GetBaronsName
+# 221 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town06_BaronText, MSGBOX_NPC
 	return
 
 
 Jakson_Exp1_Town06::
-# 224 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 225 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 226 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town06_JaksonText, MSGBOX_NPC
 	return
 
 
 Sakura_Exp1_Town07::
-# 230 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 231 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Sakura
+# 232 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town07_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Exp1_Town07::
-# 235 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Harper
 # 236 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Harper
+# 237 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town07_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Exp1_Town07::
-# 240 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Redd
 # 241 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Redd
+# 242 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town07_ReddText, MSGBOX_NPC
 	return
 
 
 Baron_Exp1_Town07::
-# 245 "data/expansion_1/rival_scripts.pory"
-	call GetBaronsName
 # 246 "data/expansion_1/rival_scripts.pory"
+	call GetBaronsName
+# 247 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town07_BaronText, MSGBOX_NPC
 	return
 
 
 Jakson_Exp1_Town07::
-# 250 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 251 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 252 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town07_JaksonText, MSGBOX_NPC
 	return
 
 
 Sakura_Exp1_Town09::
-# 256 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Sakura
 # 257 "data/expansion_1/rival_scripts.pory"
-	msgbox Exp1_Town09_SakuraText, MSGBOX_NPC
+	speakername CommonText_Sakura
 # 258 "data/expansion_1/rival_scripts.pory"
+	msgbox Exp1_Town09_SakuraText, MSGBOX_NPC
+# 259 "data/expansion_1/rival_scripts.pory"
 	turnobject 8, DIR_SOUTH
 	return
 
 
 Harper_Exp1_Town09::
-# 262 "data/expansion_1/rival_scripts.pory"
+# 263 "data/expansion_1/rival_scripts.pory"
 	goto_if_unset FLAG_TEMP_6, Harper_Exp1_Town09_2
 Harper_Exp1_Town09_1:
-# 265 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Harper
 # 266 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Harper
+# 267 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town09_HarperText, MSGBOX_NPC
 	return
 
 Harper_Exp1_Town09_2:
-# 263 "data/expansion_1/rival_scripts.pory"
+# 264 "data/expansion_1/rival_scripts.pory"
 	goto Town09_MiniScene
 	goto Harper_Exp1_Town09_1
 
 
 Redd_Exp1_Town09::
-# 270 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Redd
 # 271 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Redd
+# 272 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town09_ReddText, MSGBOX_NPC
 	return
 
 
 Baron_Exp1_Town09::
-# 275 "data/expansion_1/rival_scripts.pory"
-	faceplayer
 # 276 "data/expansion_1/rival_scripts.pory"
-	call GetBaronsName
+	faceplayer
 # 277 "data/expansion_1/rival_scripts.pory"
-	msgbox Exp1_Town09_BaronText
+	call GetBaronsName
 # 278 "data/expansion_1/rival_scripts.pory"
+	msgbox Exp1_Town09_BaronText
+# 279 "data/expansion_1/rival_scripts.pory"
 	compare VAR_EMERALBODY_RIVAL, 0
 	goto_if_eq Baron_Exp1_Town09_2
-# 278 "data/expansion_1/rival_scripts.pory"
+# 279 "data/expansion_1/rival_scripts.pory"
 	compare VAR_EMERALBODY_RIVAL, 5
 	goto_if_eq Baron_Exp1_Town09_2
-# 282 "data/expansion_1/rival_scripts.pory"
+# 283 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town09b_BaronText
 Baron_Exp1_Town09_1:
-# 284 "data/expansion_1/rival_scripts.pory"
+# 285 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town09c_BaronText, MSGBOX_AUTOCLOSE
 	return
 
 Baron_Exp1_Town09_2:
-# 279 "data/expansion_1/rival_scripts.pory"
+# 280 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town09a_BaronText
 	goto Baron_Exp1_Town09_1
 
 
 Jakson_Exp1_Town09::
-# 288 "data/expansion_1/rival_scripts.pory"
+# 289 "data/expansion_1/rival_scripts.pory"
 	goto_if_unset FLAG_TEMP_6, Jakson_Exp1_Town09_2
 Jakson_Exp1_Town09_1:
-# 291 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 292 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 293 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town09_JaksonText, MSGBOX_NPC
 	return
 
 Jakson_Exp1_Town09_2:
-# 289 "data/expansion_1/rival_scripts.pory"
+# 290 "data/expansion_1/rival_scripts.pory"
 	goto Town09_MiniScene
 	goto Jakson_Exp1_Town09_1
 
 
 Town09_MiniScene::
-# 299 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Harper
 # 300 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Harper
+# 301 "data/expansion_1/rival_scripts.pory"
 	msgbox Town09_MiniScene_Text_0
-# 307 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 308 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 309 "data/expansion_1/rival_scripts.pory"
 	msgbox Town09_MiniScene_Text_1, MSGBOX_AUTOCLOSE
-# 310 "data/expansion_1/rival_scripts.pory"
-	applymovement 32, Common_Movement_FacePlayer
 # 311 "data/expansion_1/rival_scripts.pory"
-	applymovement 31, Common_Movement_FacePlayer
-# 312 "data/expansion_1/rival_scripts.pory"
-	waitmovement 0
-# 313 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Jakson
-# 314 "data/expansion_1/rival_scripts.pory"
-	msgbox Town09_MiniScene_Text_2
-# 317 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Harper
-# 318 "data/expansion_1/rival_scripts.pory"
-	msgbox Town09_MiniScene_Text_3
-# 321 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Jakson
-# 322 "data/expansion_1/rival_scripts.pory"
-	msgbox Town09_MiniScene_Text_4, MSGBOX_AUTOCLOSE
-# 326 "data/expansion_1/rival_scripts.pory"
-	applymovement 32, Common_Movement_FaceOriginalDirection
-# 327 "data/expansion_1/rival_scripts.pory"
-	waitmovement 0
-# 328 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Jakson
-# 329 "data/expansion_1/rival_scripts.pory"
-	msgbox Town09_MiniScene_Text_5
-# 330 "data/expansion_1/rival_scripts.pory"
-	applymovement 31, Common_Movement_FaceOriginalDirection
-# 331 "data/expansion_1/rival_scripts.pory"
-	waitmovement 0
-# 332 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Harper
-# 333 "data/expansion_1/rival_scripts.pory"
-	msgbox Town09_MiniScene_Text_6, MSGBOX_AUTOCLOSE
-# 336 "data/expansion_1/rival_scripts.pory"
-	applymovement 31, Common_Movement_FacePlayer
-# 337 "data/expansion_1/rival_scripts.pory"
-	waitmovement 0
-# 338 "data/expansion_1/rival_scripts.pory"
-	speakername CommonText_Harper
-# 339 "data/expansion_1/rival_scripts.pory"
-	msgbox Town09_MiniScene_Text_7
-# 343 "data/expansion_1/rival_scripts.pory"
 	applymovement 32, Common_Movement_FacePlayer
-# 344 "data/expansion_1/rival_scripts.pory"
+# 312 "data/expansion_1/rival_scripts.pory"
+	applymovement 31, Common_Movement_FacePlayer
+# 313 "data/expansion_1/rival_scripts.pory"
 	waitmovement 0
-# 345 "data/expansion_1/rival_scripts.pory"
+# 314 "data/expansion_1/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 346 "data/expansion_1/rival_scripts.pory"
-	msgbox Town09_MiniScene_Text_8, MSGBOX_AUTOCLOSE
-# 349 "data/expansion_1/rival_scripts.pory"
+# 315 "data/expansion_1/rival_scripts.pory"
+	msgbox Town09_MiniScene_Text_2
+# 318 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Harper
+# 319 "data/expansion_1/rival_scripts.pory"
+	msgbox Town09_MiniScene_Text_3
+# 322 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 323 "data/expansion_1/rival_scripts.pory"
+	msgbox Town09_MiniScene_Text_4, MSGBOX_AUTOCLOSE
+# 327 "data/expansion_1/rival_scripts.pory"
 	applymovement 32, Common_Movement_FaceOriginalDirection
-# 350 "data/expansion_1/rival_scripts.pory"
-	applymovement 31, Common_Movement_FaceOriginalDirection
-# 351 "data/expansion_1/rival_scripts.pory"
+# 328 "data/expansion_1/rival_scripts.pory"
 	waitmovement 0
+# 329 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 330 "data/expansion_1/rival_scripts.pory"
+	msgbox Town09_MiniScene_Text_5
+# 331 "data/expansion_1/rival_scripts.pory"
+	applymovement 31, Common_Movement_FaceOriginalDirection
+# 332 "data/expansion_1/rival_scripts.pory"
+	waitmovement 0
+# 333 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Harper
+# 334 "data/expansion_1/rival_scripts.pory"
+	msgbox Town09_MiniScene_Text_6, MSGBOX_AUTOCLOSE
+# 337 "data/expansion_1/rival_scripts.pory"
+	applymovement 31, Common_Movement_FacePlayer
+# 338 "data/expansion_1/rival_scripts.pory"
+	waitmovement 0
+# 339 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Harper
+# 340 "data/expansion_1/rival_scripts.pory"
+	msgbox Town09_MiniScene_Text_7
+# 344 "data/expansion_1/rival_scripts.pory"
+	applymovement 32, Common_Movement_FacePlayer
+# 345 "data/expansion_1/rival_scripts.pory"
+	waitmovement 0
+# 346 "data/expansion_1/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 347 "data/expansion_1/rival_scripts.pory"
+	msgbox Town09_MiniScene_Text_8, MSGBOX_AUTOCLOSE
+# 350 "data/expansion_1/rival_scripts.pory"
+	applymovement 32, Common_Movement_FaceOriginalDirection
+# 351 "data/expansion_1/rival_scripts.pory"
+	applymovement 31, Common_Movement_FaceOriginalDirection
 # 352 "data/expansion_1/rival_scripts.pory"
+	waitmovement 0
+# 353 "data/expansion_1/rival_scripts.pory"
 	setflag FLAG_TEMP_6
 	return
 
 
 Town09_MiniScene_Text_0:
-# 300 "data/expansion_1/rival_scripts.pory"
+# 301 "data/expansion_1/rival_scripts.pory"
 	.string "Hmm…{PAUSE 100}\n"
 	.string "Well, it's not a bad idea, but are you\l"
 	.string "sure players wouldn't get bored\l"
@@ -497,48 +499,48 @@ Town09_MiniScene_Text_0:
 	.string "entire damn thing again?$"
 
 Town09_MiniScene_Text_1:
-# 308 "data/expansion_1/rival_scripts.pory"
+# 309 "data/expansion_1/rival_scripts.pory"
 	.string "…{PAUSE 60}Ah, yeah. I think I see what you mean.\p"
 	.string "Damn, I'll have to rethink that section.$"
 
 Town09_MiniScene_Text_2:
-# 314 "data/expansion_1/rival_scripts.pory"
+# 315 "data/expansion_1/rival_scripts.pory"
 	.string "Oh, hey there, {PLAYER}.\p"
 	.string "I'm just bouncing some ideas off of\n"
 	.string "Harper for future content.$"
 
 Town09_MiniScene_Text_3:
-# 318 "data/expansion_1/rival_scripts.pory"
+# 319 "data/expansion_1/rival_scripts.pory"
 	.string "I'm not sure if it's a waste of my time\n"
 	.string "yet, but I guess this guy's got a poor\l"
 	.string "track record so far.$"
 
 Town09_MiniScene_Text_4:
-# 322 "data/expansion_1/rival_scripts.pory"
+# 323 "data/expansion_1/rival_scripts.pory"
 	.string "… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
 	.string "Well, if it means I get some more help,\l"
 	.string "maybe I'll play up incompetence some\l"
 	.string "more.$"
 
 Town09_MiniScene_Text_5:
-# 329 "data/expansion_1/rival_scripts.pory"
+# 330 "data/expansion_1/rival_scripts.pory"
 	.string "But really, you're a big help, Harper.$"
 
 Town09_MiniScene_Text_6:
-# 333 "data/expansion_1/rival_scripts.pory"
+# 334 "data/expansion_1/rival_scripts.pory"
 	.string "Yeah, yeah… {PAUSE 100}I just hope it's good in\n"
 	.string "the end. If you can't do it, I'll have\l"
 	.string "to step in.$"
 
 Town09_MiniScene_Text_7:
-# 339 "data/expansion_1/rival_scripts.pory"
+# 340 "data/expansion_1/rival_scripts.pory"
 	.string "Oh, and when you want to tell me how\n"
 	.string "much it sucks, {PLAYER}, please\l"
 	.string "redirect your ire in the general\l"
 	.string "direction of Jakson.$"
 
 Town09_MiniScene_Text_8:
-# 346 "data/expansion_1/rival_scripts.pory"
+# 347 "data/expansion_1/rival_scripts.pory"
 	.string "… {PAUSE 30}… {PAUSE 30}…\p"
 	.string "Don't worry, I think this is how she\n"
 	.string "shows affection, {PLAYER}.$"

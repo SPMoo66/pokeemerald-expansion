@@ -134,6 +134,7 @@ script Sakura_Exp1_Town04 {
 	speakername (CommonText_Sakura)
 	msgbox(Exp1_Town04_SakuraText, MSGBOX_NPC)
 	setflag (FLAG_SYS_SPAWN_INVISIBLE)
+	setflag (FLAG_SYS_DONT_SPAWN_SURF_BLOB)
 	setflag (FLAG_HIDE_MAP_NAME_POPUP)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 41)
 	fadescreen (FADE_TO_BLACK)

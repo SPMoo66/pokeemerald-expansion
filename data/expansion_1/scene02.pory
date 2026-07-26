@@ -142,7 +142,7 @@ script Expansion1_Rival_Scene02b {
 	waitmovement (0)
 	call (GetBaronsName)
 	msgbox ("Y-Yes! That was very scary…\p"
-			"…{PAUSE 100}especially in this 2DVR type setting.")
+			"…{PAUSE 100}especially in this 2DVR type setting.", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_JAKSON, Common_Movement_SweatDrop)
 	playse (SE_M_METRONOME)
 	delay (40)
@@ -154,7 +154,7 @@ script Expansion1_Rival_Scene02b {
 	speakername (CommonText_Sakura)
 	msgbox ("Battle of the mods, eh?")
 	speakername (CommonText_Jakson)
-	msgbox ("I still can't say that for sure.")
+	msgbox ("I still can't say that for sure.", MSGBOX_AUTOCLOSE)
 	applymovement (MAUVECAMP_SAKURA, Common_Movement_MusicNote)
 	playse (SE_RG_HELP_OPEN)
 	delay (40)

@@ -228,7 +228,7 @@ Expansion1_Rival_Scene02b::
 # 143 "data/expansion_1/scene02.pory"
 	call GetBaronsName
 # 144 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02b_Text_7
+	msgbox Expansion1_Rival_Scene02b_Text_7, MSGBOX_AUTOCLOSE
 # 146 "data/expansion_1/scene02.pory"
 	applymovement 6, Common_Movement_SweatDrop
 # 147 "data/expansion_1/scene02.pory"
@@ -246,7 +246,7 @@ Expansion1_Rival_Scene02b::
 # 156 "data/expansion_1/scene02.pory"
 	speakername CommonText_Jakson
 # 157 "data/expansion_1/scene02.pory"
-	msgbox Expansion1_Rival_Scene02b_Text_10
+	msgbox Expansion1_Rival_Scene02b_Text_10, MSGBOX_AUTOCLOSE
 # 158 "data/expansion_1/scene02.pory"
 	applymovement 8, Common_Movement_MusicNote
 # 159 "data/expansion_1/scene02.pory"

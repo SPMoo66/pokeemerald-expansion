@@ -9,6 +9,14 @@ mapscripts IllusoryGrotto_B4F_1R_MapScripts {
 			setmetatile (13, 12, 0x011, FALSE)
 			setmetatile (13, 14, 0x023, TRUE)
 		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 51) {
+			setmetatile (12, 13, 0x022, TRUE)
+			setmetatile (13, 13, 0x02B, TRUE)
+			setmetatile (14, 13, 0x02C, TRUE)
+			setmetatile (12, 14, 0x032, TRUE)
+			setmetatile (13, 14, 0x033, FALSE)
+			setmetatile (14, 14, 0x034, TRUE)
+		}
 	}
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag (FLAG_TEMP_1)

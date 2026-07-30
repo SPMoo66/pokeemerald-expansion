@@ -39367,6 +39367,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ILLUSORY_GROTTO_B4F_SPECIAL_ROOM",
+          "base_label": "gIllusoryGrotto_B4F_SpecialRoom",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_OCEAN_GLEAM"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_OCEAN_GLEAM"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_REND_ECLIPSE"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_REND_ECLIPSE"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_TUNDRA_HUSK"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_TUNDRA_HUSK"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_CALAMITY_MAW"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_CALAMITY_MAW"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_OCEAN_GLEAM"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_REND_ECLIPSE"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_TUNDRA_HUSK"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_CALAMITY_MAW"
+              }
+            ]
+          }
         }
       ]
     },

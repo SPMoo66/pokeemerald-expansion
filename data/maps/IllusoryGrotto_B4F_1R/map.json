@@ -160,6 +160,13 @@
       "elevation": 0,
       "dest_map": "MAP_ILLUSORY_GROTTO_B4F_2R",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_ILLUSORY_GROTTO_B4F_SPECIAL_ROOM",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

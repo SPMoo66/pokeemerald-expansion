@@ -668,6 +668,7 @@ enum
     MAP_BYGONE_VAULT_2R1                  = (31 | (34 << 8)),
     MAP_BYGONE_VAULT_2RU                  = (32 | (34 << 8)),
     MAP_TEMPORAL_SPIRE                    = (33 | (34 << 8)),
+    MAP_ILLUSORY_GROTTO_B4F_SPECIAL_ROOM  = (34 | (34 << 8)),
 
     // gMapGroup_Exp1Exteriors
     MAP_MAUVE_CAMP                                               = (0 | (35 << 8)),

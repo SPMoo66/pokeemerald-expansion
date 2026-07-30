@@ -1860,7 +1860,7 @@ static void DexNavLoadCapturedAllSymbols(void)
 //        CreateSprite(&sCaptureAllMonsSpriteTemplate, 114, 123, 0);
 
     if (CapturedAllFishingMons(headerId))
-        CreateSprite(&sCaptureAllMonsSpriteTemplate, 139, 123, 0);
+        CreateSprite(&sCaptureAllMonsSpriteTemplate, 152, 123, 0);
 }
 
 //#define WIN_DETAILS_TILE        0x3a3

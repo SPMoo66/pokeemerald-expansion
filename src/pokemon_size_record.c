@@ -12,7 +12,7 @@
 
 #define DEFAULT_MAX_SIZE 0x8000 // was 0x8100 in Ruby/Sapphire
 #define DEFAULT_MAX_SIZE_MAGIKARP 0
-static u8* ReturnHeightStringNoWhitespace(u32 size);
+//static u8* ReturnHeightStringNoWhitespace(u32 size);
 
 struct UnknownStruct
 {

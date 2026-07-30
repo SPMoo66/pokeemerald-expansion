@@ -11326,8 +11326,8 @@
     {
       "id": "LAYOUT_ILLUSORY_GROTTO_B4F_SPECIAL_ROOM",
       "name": "IllusoryGrotto_B4F_SpecialRoom_Layout",
-      "width": 14,
-      "height": 11,
+      "width": 15,
+      "height": 12,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Cave2_Exp_1",

@@ -157,12 +157,12 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         heldItem1[1] = item1 >> 8;
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HELD_ITEM, heldItem1);
     }
-    SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &abilityNum1);
+    SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &abilityNum1);
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         if (movesMon1[i] == MOVE_NONE || movesMon1[i] >= MOVES_COUNT)
             continue;
-        SetMonMoveSlot(&gEnemyParty[0], movesMon1[i], i);
+        SetMonMoveSlot(&gParties[B_TRAINER_OPPONENT_A][0], movesMon1[i], i);
     }
 
     personality = GetMonPersonality(species2,
@@ -177,12 +177,12 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         heldItem2[1] = item2 >> 8;
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HELD_ITEM, heldItem2);
     }
-    SetMonData(&gEnemyParty[1], MON_DATA_ABILITY_NUM, &abilityNum2);
+    SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ABILITY_NUM, &abilityNum2);
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         if (movesMon2[i] == MOVE_NONE || movesMon2[i] >= MOVES_COUNT)
             continue;
-        SetMonMoveSlot(&gEnemyParty[1], movesMon2[i], i);
+        SetMonMoveSlot(&gParties[B_TRAINER_OPPONENT_A][1], movesMon2[i], i);
     }
 }
 

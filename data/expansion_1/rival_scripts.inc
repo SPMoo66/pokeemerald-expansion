@@ -187,10 +187,7 @@ Baron_Exp1_Town04::
 	msgbox Exp1_Town04_BaronText
 # 159 "data/expansion_1/rival_scripts.pory"
 	compare VAR_EMERALBODY_RIVAL, 0
-	goto_if_ne Baron_Exp1_Town04_2
-# 159 "data/expansion_1/rival_scripts.pory"
-	compare VAR_EMERALBODY_RIVAL, 5
-	goto_if_ne Baron_Exp1_Town04_2
+	goto_if_ne Baron_Exp1_Town04_3
 Baron_Exp1_Town04_1:
 # 162 "data/expansion_1/rival_scripts.pory"
 	closemessage
@@ -201,6 +198,12 @@ Baron_Exp1_Town04_1:
 Baron_Exp1_Town04_2:
 # 160 "data/expansion_1/rival_scripts.pory"
 	msgbox Exp1_Town04b_BaronText
+	goto Baron_Exp1_Town04_1
+
+Baron_Exp1_Town04_3:
+# 159 "data/expansion_1/rival_scripts.pory"
+	compare VAR_EMERALBODY_RIVAL, 5
+	goto_if_ne Baron_Exp1_Town04_2
 	goto Baron_Exp1_Town04_1
 
 

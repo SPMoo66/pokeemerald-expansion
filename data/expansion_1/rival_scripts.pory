@@ -156,7 +156,7 @@ script Baron_Exp1_Town04 {
 	faceplayer
 	call (GetBaronsName)
 	msgbox(Exp1_Town04_BaronText)
-	if (var(VAR_EMERALBODY_RIVAL) != 0 || var(VAR_EMERALBODY_RIVAL) != 5) {
+	if (var(VAR_EMERALBODY_RIVAL) != 0 && var(VAR_EMERALBODY_RIVAL) != 5) {
 		msgbox (Exp1_Town04b_BaronText)
 	}
 	closemessage

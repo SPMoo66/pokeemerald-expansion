@@ -476,7 +476,7 @@ Exp1_Town07_JaksonText::
 	.string "everything could have gone wrong like\l"
 	.string "this.\p"
 	.string "…{PAUSE 60}I don't disagree with Harper's idea.\n"
-	.string "Actually, I think she's spot son. That's\l"
+	.string "Actually, I think she's spot on. That's\l"
 	.string "what makes me wonder…\p"
 	.string "If a flag got tripped early on, how did\n"
 	.string "that happen?\p"

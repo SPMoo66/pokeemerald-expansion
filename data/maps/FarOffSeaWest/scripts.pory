@@ -26,6 +26,12 @@ mapscripts FarOffSeaWest_MapScripts {
 			setmetatile(55, 12, 0x07E, FALSE)
 			setmetatile(56, 12, 0x07E, FALSE)
 		}
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 42) {
+		setmetatile(55, 4, 0x0221, TRUE)
+		setmetatile(54, 5, 0x0228, TRUE)
+		setmetatile(55, 5, 0x0229, FALSE)
+		setmetatile(56, 5, 0x022A, TRUE)
+	}
 	}
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag (FLAG_TEMP_1)

@@ -20985,7 +20985,7 @@ static const struct TrainerMon sParty_Luthor[] = {
     .ball = POKEBALL_COUNT,
     .lvl = 69,
     .species = SPECIES_FALINKS_EMERIBIAN,
-    .ability = ABILITY_VICTORY_STAR,
+    .ability = ABILITY_SPEED_BOOST,
     .heldItem = ITEM_SHUCA_BERRY,
     },
     {

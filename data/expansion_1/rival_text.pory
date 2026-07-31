@@ -265,7 +265,7 @@ text Exp1_Town04_HarperText {
 			"the others along with you…\l"
 			"but would it have gone right without me\l"
 			"there?\p"
-			"Oh, if it was still you… probably?\p"
+			"Oh, if it was still you… {PAUSE 100}probably?\p"
 			"Wait… {PAUSE 100}no. Maybe not. A memory just\n"
 			"popped into my head.\p"
 			"We need to stop trauma-bonding one\n"

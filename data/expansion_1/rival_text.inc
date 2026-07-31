@@ -246,7 +246,7 @@ Exp1_Town04_HarperText::
 	.string "the others along with you…\l"
 	.string "but would it have gone right without me\l"
 	.string "there?\p"
-	.string "Oh, if it was still you… probably?\p"
+	.string "Oh, if it was still you… {PAUSE 100}probably?\p"
 	.string "Wait… {PAUSE 100}no. Maybe not. A memory just\n"
 	.string "popped into my head.\p"
 	.string "We need to stop trauma-bonding one\n"

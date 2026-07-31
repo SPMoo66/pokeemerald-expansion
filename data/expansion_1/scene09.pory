@@ -327,7 +327,7 @@ script Expansion1_Rival_Scene09 {
 	setvar (VAR_BATTLE_TRANSITION, 2)
 	setflag (FLAG_SEMI_TEMP_1)
 	setwilddoubleflag
-	createmon (1, 0, SPECIES_MISSINGNO_YELLOW_BOSS, 80, ITEM_NONE, BALL_POKE, NATURE_HARDY, 0, MON_GENDER_RANDOM, 72, 72, 72, 72, 72, 72, 0, 0, 0, 0, 0, 0, MOVE_SKY_ATTACK, MOVE_SPARKLING_ARIA, MOVE_TRI_ATTACK, MOVE_SPIKY_SHIELD)
+	createmon (1, 0, SPECIES_MISSINGNO_YELLOW_BOSS, 88, ITEM_NONE, BALL_POKE, NATURE_HARDY, 0, MON_GENDER_RANDOM, 72, 72, 72, 72, 72, 72, 0, 0, 0, 0, 0, 0, MOVE_SKY_ATTACK, MOVE_SPARKLING_ARIA, MOVE_TRI_ATTACK, MOVE_SPIKY_SHIELD)
 	dowildbattle
 	clearflag (FLAG_NO_CATCHING)
 	clearflag (FLAG_NO_RUNNING)
@@ -371,6 +371,7 @@ script Expansion1_Rival_Scene09 {
 			"should be the same as the way in.", MSGBOX_AUTOCLOSE)
 	setflag (FLAG_HIDE_MAP_NAME_POPUP)
 	setflag (FLAG_SCENE09_TRANSITION)
+	fadescreen (FADE_TO_BLACK)
 	warpcontinuescript (MAP_MAUVE_ISLAND_WEST, 9, 9, Expansion1_Rival_Scene09b)
 }
 

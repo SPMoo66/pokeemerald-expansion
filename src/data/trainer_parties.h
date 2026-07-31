@@ -19862,7 +19862,7 @@ static const struct TrainerMon sParty_GruntBlanchedDepths6[] = {
 static const struct TrainerMon sParty_MattBlanchedDepths[] = {
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 66,
+    .lvl = 68,
     .species = SPECIES_GOLISOPOD_EXP_1,
     .ability = ABILITY_INTIMIDATE,
     .heldItem = ITEM_SCOPE_LENS,
@@ -19871,7 +19871,7 @@ static const struct TrainerMon sParty_MattBlanchedDepths[] = {
     },
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 66,
+    .lvl = 68,
     .species = SPECIES_HYDRAPPLE,
     .ability = ABILITY_SUPERSWEET_SYRUP,
     .heldItem = ITEM_DRAGON_GEM,
@@ -19879,7 +19879,7 @@ static const struct TrainerMon sParty_MattBlanchedDepths[] = {
     },
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 68,
+    .lvl = 70,
     .species = SPECIES_WAILORD,
     .ability = ABILITY_PRESSURE,
     .heldItem = ITEM_THROAT_SPRAY,
@@ -19887,7 +19887,7 @@ static const struct TrainerMon sParty_MattBlanchedDepths[] = {
     },
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 68,
+    .lvl = 70,
     .species = SPECIES_ABOMASNOW,
     .ability = ABILITY_GRASSY_SURGE,
     .heldItem = ITEM_MEGA_STONE_X,
@@ -19895,7 +19895,7 @@ static const struct TrainerMon sParty_MattBlanchedDepths[] = {
     },
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 70,
+    .lvl = 72,
     .species = SPECIES_QUAQUAVAL,
     .ability = ABILITY_MOXIE,
     .heldItem = ITEM_ASSAULT_VEST,
@@ -19903,7 +19903,7 @@ static const struct TrainerMon sParty_MattBlanchedDepths[] = {
     },
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 70,
+    .lvl = 72,
     .species = SPECIES_VELUZA,
     .ability = ABILITY_SHARPNESS,
     .heldItem = ITEM_SITRUS_BERRY,

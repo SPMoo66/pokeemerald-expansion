@@ -786,7 +786,14 @@ void UpdateEscapeWarp(s16 x, s16 y)
     enum MapType currMapType = GetCurrentMapType();
     enum MapType destMapType = GetMapTypeByGroupAndId(sWarpDestination.mapGroup, sWarpDestination.mapNum);
     if (IsMapTypeOutdoors(currMapType) && IsMapTypeOutdoors(destMapType) != TRUE)
-        SetEscapeWarp(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, WARP_ID_NONE, x - MAP_OFFSET, y - MAP_OFFSET + 1);
+    {
+        if (MetatileBehavior_IsNonAnimDoorWest(MapGridGetMetatileBehaviorAt(x, y)) == TRUE)
+            SetEscapeWarp(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, WARP_ID_NONE, x - MAP_OFFSET + 1, y - MAP_OFFSET);
+        else if (MetatileBehavior_IsNonAnimDoorEast(MapGridGetMetatileBehaviorAt(x, y)) == TRUE)
+            SetEscapeWarp(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, WARP_ID_NONE, x - MAP_OFFSET - 1, y - MAP_OFFSET);
+        else
+            SetEscapeWarp(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, WARP_ID_NONE, x - MAP_OFFSET, y - MAP_OFFSET + 1);
+    }
 }
 
 void SetEscapeWarp(s8 mapGroup, s8 mapNum, s8 warpId, s8 x, s8 y)

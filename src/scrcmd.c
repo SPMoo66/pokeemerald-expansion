@@ -3119,6 +3119,13 @@ void ScriptSetDoubleBattleFlag(struct ScriptContext *ctx)
     sIsScriptedWildDouble = TRUE;
 }
 
+void ScriptClearDoubleBattleFlag(struct ScriptContext *ctx)
+{
+    Script_RequestEffects(SCREFF_V1);
+
+    sIsScriptedWildDouble = FALSE;
+}
+
 //Start Pokevial Branch
 bool8 ScrCmd_pokevial(struct ScriptContext *ctx)
 {

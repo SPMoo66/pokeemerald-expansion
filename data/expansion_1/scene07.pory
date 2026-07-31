@@ -81,6 +81,7 @@ script SS_Tidal_Dungeon_1F_1R_Room1_Dynamite {
 	clearflag (FLAG_NO_CATCHING)
 	clearflag (FLAG_NO_RUNNING)
 	clearflag (FLAG_SMART_WILD_AI)
+	clearwilddoubleflag
 	
 	speakername (CommonText_Harper)
 	msgbox ("Motherfu-{PAUSE 30}\n"

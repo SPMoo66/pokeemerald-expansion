@@ -334,6 +334,7 @@ script Expansion1_Rival_Scene09 {
 	clearflag (FLAG_SMART_WILD_AI)
 	clearflag (FLAG_SYS_SET_BATTLE_BGM)
 	clearflag (FLAG_SEMI_TEMP_1)
+	clearwilddoubleflag
 
 	applymovement (BYGONEVAULTTREASURE_REDD, Common_Movement_Thinking)
 	delay (40)

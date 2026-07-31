@@ -2427,6 +2427,11 @@
 	callnative ScriptSetDoubleBattleFlag, requests_effects=1
 	.endm
 
+	@ clear the wild double battle flag
+	.macro clearwilddoubleflag
+	callnative ScriptClearDoubleBattleFlag, requests_effects=1
+	.endm
+
 	@ Stop using the ORAS dowsing machine.
 	.macro stoporasdowsing
 	callnative EndORASDowsing

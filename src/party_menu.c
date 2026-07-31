@@ -2247,6 +2247,8 @@ static void Task_ReturnToChooseMonAfterText(u8 taskId)
         {
             if (gPartyMenu.action == PARTY_ACTION_SEND_MON_TO_BOX)
                 DisplayPartyMenuStdMessage(PARTY_MSG_CHOOSE_MON_FOR_BOX);
+            else if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(ITEM_POKEMON_BOX_LINK, 1))
+                DisplayPartyMenuStdMessage(PARTY_MSG_CHOOSE_MON_R);
             else
                 DisplayPartyMenuStdMessage(PARTY_MSG_CHOOSE_MON);
             gTasks[taskId].func = Task_HandleChooseMonInput;
@@ -3662,7 +3664,10 @@ static void FinishTwoMonAction(u8 taskId)
     AnimatePartySlot(gPartyMenu.slotId, 0);
     gPartyMenu.slotId = gPartyMenu.slotId2;
     AnimatePartySlot(gPartyMenu.slotId2, 1);
-    DisplayPartyMenuStdMessage(PARTY_MSG_CHOOSE_MON);
+    if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(ITEM_POKEMON_BOX_LINK, 1))
+        DisplayPartyMenuStdMessage(PARTY_MSG_CHOOSE_MON_R);
+    else
+        DisplayPartyMenuStdMessage(PARTY_MSG_CHOOSE_MON);
     gTasks[taskId].func = Task_HandleChooseMonInput;
 }
 
@@ -3686,6 +3691,8 @@ static void CursorCb_Cancel1(u8 taskId)
     PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[1]);
     if (gPartyMenu.menuType == PARTY_MENU_TYPE_DAYCARE)
         DisplayPartyMenuStdMessage(PARTY_MSG_CHOOSE_MON_2);
+    else if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(ITEM_POKEMON_BOX_LINK, 1))
+        DisplayPartyMenuStdMessage(PARTY_MSG_CHOOSE_MON_R);
     else
         DisplayPartyMenuStdMessage(PARTY_MSG_CHOOSE_MON);
     gTasks[taskId].func = Task_HandleChooseMonInput;
@@ -4563,7 +4570,10 @@ bool32 SetUpFieldMove_Fly(void)
 
 void CB2_ReturnToPartyMenuFromFlyMap(void)
 {
-    InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_CHOOSE_MON, TRUE, PARTY_MSG_CHOOSE_MON, Task_HandleChooseMonInput, CB2_ReturnToFieldWithOpenMenu);
+    if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(ITEM_POKEMON_BOX_LINK, 1))
+        InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_CHOOSE_MON, TRUE, PARTY_MSG_CHOOSE_MON_R, Task_HandleChooseMonInput, CB2_ReturnToFieldWithOpenMenu);
+    else
+        InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_CHOOSE_MON, TRUE, PARTY_MSG_CHOOSE_MON, Task_HandleChooseMonInput, CB2_ReturnToFieldWithOpenMenu);
 }
 
 static void FieldCallback_Waterfall(void)
@@ -7332,7 +7342,10 @@ static void TryTutorSelectedMon(u8 taskId)
 
 void CB2_PartyMenuFromStartMenu(void)
 {
-    InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_CHOOSE_MON, FALSE, PARTY_MSG_CHOOSE_MON, Task_HandleChooseMonInput, CB2_ReturnToFieldWithOpenMenu);
+    if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(ITEM_POKEMON_BOX_LINK, 1))
+        InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_CHOOSE_MON, FALSE, PARTY_MSG_CHOOSE_MON_R, Task_HandleChooseMonInput, CB2_ReturnToFieldWithOpenMenu);
+    else
+        InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_CHOOSE_MON, FALSE, PARTY_MSG_CHOOSE_MON, Task_HandleChooseMonInput, CB2_ReturnToFieldWithOpenMenu);
 }
 
 // Giving an item by selecting Give from the bag menu

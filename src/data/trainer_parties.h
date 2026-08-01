@@ -21205,7 +21205,7 @@ static const struct TrainerMon sParty_WildPokemonBV2[] = {
 static const struct TrainerMon sParty_Exp1FinalBattle1[] = {
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 85,
+    .lvl = 87,
     .species = SPECIES_CALAMITY_MAW_BOSS,
     .ability = ABILITY_GRIM_FAIRYTALE,
     .heldItem = ITEM_YACHE_BERRY,
@@ -21216,7 +21216,7 @@ static const struct TrainerMon sParty_Exp1FinalBattle1[] = {
 static const struct TrainerMon sParty_WildPokemonIG5[] = {
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 75,
+    .lvl = 76,
     .species = SPECIES_AMPHAROS_EXP_1,
     .ability = ABILITY_STAMINA,
     .heldItem = ITEM_SHUCA_BERRY,
@@ -21224,7 +21224,7 @@ static const struct TrainerMon sParty_WildPokemonIG5[] = {
     },
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 75,
+    .lvl = 76,
     .species = SPECIES_OCEAN_GLEAM,
     .ability = ABILITY_PROTOSYNTHESIS,
     .heldItem = ITEM_BOOSTER_ENERGY,
@@ -21232,7 +21232,7 @@ static const struct TrainerMon sParty_WildPokemonIG5[] = {
     },
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 75,
+    .lvl = 77,
     .species = SPECIES_LUXRAY_EMERIBIAN,
     .ability = ABILITY_PRANKSTER,
     .heldItem = ITEM_KEE_BERRY,
@@ -21240,7 +21240,7 @@ static const struct TrainerMon sParty_WildPokemonIG5[] = {
     },
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 75,
+    .lvl = 77,
     .species = SPECIES_YANMEGA,
     .ability = ABILITY_FRISK,
     .heldItem = ITEM_MEGA_STONE_X,
@@ -21248,7 +21248,7 @@ static const struct TrainerMon sParty_WildPokemonIG5[] = {
     },
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 75,
+    .lvl = 78,
     .species = SPECIES_REND_ECLIPSE,
     .nature = NATURE_MODEST,
     .ability = ABILITY_PROTOSYNTHESIS,
@@ -21260,7 +21260,7 @@ static const struct TrainerMon sParty_WildPokemonIG5[] = {
 static const struct TrainerMon sParty_WildPokemonIG6[] = {
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 75,
+    .lvl = 76,
     .species = SPECIES_TUNDRA_HUSK,
     .nature = NATURE_ADAMANT,
     .ability = ABILITY_PROTOSYNTHESIS,
@@ -21269,7 +21269,7 @@ static const struct TrainerMon sParty_WildPokemonIG6[] = {
     },
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 75,
+    .lvl = 76,
     .species = SPECIES_GRIMMSNARL,
     .ability = ABILITY_PRANKSTER,
     .heldItem = ITEM_BABIRI_BERRY,
@@ -21277,7 +21277,7 @@ static const struct TrainerMon sParty_WildPokemonIG6[] = {
     },
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 75,
+    .lvl = 77,
     .species = SPECIES_STONJOURNER,
     .ability = ABILITY_POWER_SPOT,
     .heldItem = ITEM_SALAC_BERRY,
@@ -21285,7 +21285,7 @@ static const struct TrainerMon sParty_WildPokemonIG6[] = {
     },
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 75,
+    .lvl = 77,
     .species = SPECIES_MALAMAR,
     .ability = ABILITY_CONTRARY,
     .heldItem = ITEM_MEGA_STONE_X,
@@ -21293,7 +21293,7 @@ static const struct TrainerMon sParty_WildPokemonIG6[] = {
     },
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 75,
+    .lvl = 78,
     .species = SPECIES_REGIAGUA,
     .ability = ABILITY_WATER_BUBBLE,
     .heldItem = ITEM_WACAN_BERRY,
@@ -21304,7 +21304,7 @@ static const struct TrainerMon sParty_WildPokemonIG6[] = {
 static const struct TrainerMon sParty_Exp1FinalBattle2[] = {
     {
     .ball = POKEBALL_COUNT,
-    .lvl = 85,
+    .lvl = 87,
     .species = SPECIES_CALAMITY_MAW_BOSS,
     .ability = ABILITY_GRIM_FAIRYTALE,
     .heldItem = ITEM_YACHE_BERRY,

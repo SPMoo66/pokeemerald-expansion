@@ -855,7 +855,7 @@ Expansion1_Rival_Scene10c::
 # 516 "data/expansion_1/scene10.pory"
 	delay 100
 # 517 "data/expansion_1/scene10.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 519 "data/expansion_1/scene10.pory"
 	removeobject 7
 # 520 "data/expansion_1/scene10.pory"
@@ -875,7 +875,7 @@ Expansion1_Rival_Scene10c::
 # 527 "data/expansion_1/scene10.pory"
 	waitmovement 0
 # 529 "data/expansion_1/scene10.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 530 "data/expansion_1/scene10.pory"
 	applymovement LOCALID_CAMERA, Common_Movement_WalkUp
 # 531 "data/expansion_1/scene10.pory"

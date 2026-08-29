@@ -421,6 +421,23 @@ extern const u8 Debug_BerryWeedsDisabled[];
 
 extern const u8 Common_EventScript_MoveRelearner[];
 
+extern const u8 Upgrade_EmeralbodyRivalBattleState_Var[];
+extern const u8 EmeralbodyDebug_WhoIsRival[];
+extern const u8 EmeralbodyDebug_SetRival_Baron[];
+extern const u8 EmeralbodyDebug_SetRival_Harper[];
+extern const u8 EmeralbodyDebug_SetRival_Jakson[];
+extern const u8 EmeralbodyDebug_SetRival_Redd[];
+extern const u8 EmeralbodyDebug_SetRival_Sakura[];
+extern const u8 EmeralbodyDebug_SetRival_All[];
+extern const u8 EmeralbodyDebug_Expansion1_JaksonsCall[];
+extern const u8 EmeralbodyDebug_Expansion1_IllusoryGrotto_1[];
+extern const u8 EmeralbodyDebug_Expansion1_MauveIsland[];
+extern const u8 EmeralbodyDebug_Expansion1_GotLantern[];
+extern const u8 EmeralbodyDebug_Expansion1_RescuedHarper[];
+extern const u8 EmeralbodyDebug_Expansion1_GotDynamite[];
+extern const u8 EmeralbodyDebug_Expansion1_DidBygoneVault[];
+extern const u8 EmeralbodyDebug_Expansion1_CompletedExp1[];
+
 #include "data/map_group_count.h"
 
 // Text
@@ -664,6 +681,39 @@ static const struct DebugMenuOption sDebugMenu_Actions_Player[] =
     { NULL }
 };
 
+static const struct DebugMenuOption sDebugMenu_Actions_EmeralbodySetRival[] =
+{
+    { COMPOUND_STRING("Set Baron"),  DebugAction_ExecuteScript, EmeralbodyDebug_SetRival_Baron, },
+    { COMPOUND_STRING("Set Harper"), DebugAction_ExecuteScript, EmeralbodyDebug_SetRival_Harper, },
+    { COMPOUND_STRING("Set Jakson"), DebugAction_ExecuteScript, EmeralbodyDebug_SetRival_Jakson, },
+    { COMPOUND_STRING("Set Redd"),   DebugAction_ExecuteScript, EmeralbodyDebug_SetRival_Redd, },
+    { COMPOUND_STRING("Set Sakura"), DebugAction_ExecuteScript, EmeralbodyDebug_SetRival_Sakura, },
+    { COMPOUND_STRING("Set ALL"),    DebugAction_ExecuteScript, EmeralbodyDebug_SetRival_All, },
+    { NULL }
+};
+
+static const struct DebugMenuOption sDebugMenu_Actions_EmeralbodyExp1State[] =
+{
+    { COMPOUND_STRING("After Jakson's Call"),  DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_JaksonsCall, },
+    { COMPOUND_STRING("At Illusory Grotto"), DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_IllusoryGrotto_1, },
+    { COMPOUND_STRING("At Mauve Island"), DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_MauveIsland, },
+    { COMPOUND_STRING("Got Lantern"),   DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_GotLantern, },
+    { COMPOUND_STRING("Rescued Harper"), DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_RescuedHarper, },
+    { COMPOUND_STRING("Got Dynamite"),    DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_GotDynamite, },
+    { COMPOUND_STRING("Did Bygone Vault"),    DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_DidBygoneVault, },
+    { COMPOUND_STRING("Completed Exp. 1!"),    DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_CompletedExp1, },
+    { NULL }
+};
+
+static const struct DebugMenuOption sDebugMenu_Actions_EmeralbodyScripts[] =
+{
+    { COMPOUND_STRING("Update Save"),        DebugAction_ExecuteScript, Upgrade_EmeralbodyRivalBattleState_Var, },
+    { COMPOUND_STRING("Who's my rival?"),    DebugAction_ExecuteScript, EmeralbodyDebug_WhoIsRival, },
+    { COMPOUND_STRING("Change Rival"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_EmeralbodySetRival, },
+    { COMPOUND_STRING("Exp. 1 Story State"), DebugAction_OpenSubMenu, sDebugMenu_Actions_EmeralbodyExp1State, },
+    { NULL }
+};
+
 static const struct DebugMenuOption sDebugMenu_Actions_Scripts[] =
 {
     { COMPOUND_STRING("Script 1"), DebugAction_ExecuteScript, Debug_EventScript_Script_1 },
@@ -745,6 +795,7 @@ static const struct DebugMenuOption sDebugMenu_Actions_Main[] =
     { COMPOUND_STRING("Party…"),        DebugAction_OpenSubMenu, sDebugMenu_Actions_Party, },
     { COMPOUND_STRING("Give X…"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_Give, },
     { COMPOUND_STRING("Player…"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_Player, },
+    { COMPOUND_STRING("Emeralbody Scripts"),   DebugAction_OpenSubMenu, sDebugMenu_Actions_EmeralbodyScripts, },
     { COMPOUND_STRING("Scripts…"),      DebugAction_OpenSubMenu, sDebugMenu_Actions_Scripts, },
     { COMPOUND_STRING("Trainers…"),     DebugAction_OpenSubMenuTrainers, sDebugMenu_Actions_Trainers, },
     { COMPOUND_STRING("Flags & Vars…"), DebugAction_OpenSubMenuFlagsVars, sDebugMenu_Actions_Flags, },

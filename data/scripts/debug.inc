@@ -202,62 +202,62 @@ Debug_EventScript_Text_DefensiveIVs:
 
 Debug_EventScript_Script_1::
 @	call PlayersHouse_2F_EventScript_Notebook
-	cleartrainerflag TRAINER_GRUNT_AQUA_HIDEOUT_3
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_3, CommonText_Mom, CommonText_Mom
+@	cleartrainerflag TRAINER_GRUNT_AQUA_HIDEOUT_3
+@	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_3, CommonText_Mom, CommonText_Mom
 	release
 	end
 
 Debug_EventScript_Script_2::
-	setvar VAR_EMERALBODY_RIVAL, 0
-	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 20
-	setvar VAR_EMERALBODY_RIVAL_STATE, 16
+@	setvar VAR_EMERALBODY_RIVAL, 0
+@	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 20
+@	setvar VAR_EMERALBODY_RIVAL_STATE, 16
 	release
 	end
 
 Debug_EventScript_Script_3::
-	setvar VAR_EMERALBODY_RIVAL_STATE, 50
-	warp MAP_ILLUSORY_GROTTO_B4F_1R, 21, 15
-	waitstate
+@	setvar VAR_EMERALBODY_RIVAL_STATE, 50
+@	warp MAP_ILLUSORY_GROTTO_B4F_1R, 21, 15
+@	waitstate
 	release
 	end
 
 Debug_EventScript_Script_4::
-	setflag FLAG_LANDMARK_MAUVE_CAMP
-	setvar VAR_EMERALBODY_RIVAL_STATE, 31
-	warp MAP_MAUVE_ISLAND_WEST, 23, 11
-	waitstate
+@	setflag FLAG_LANDMARK_MAUVE_CAMP
+@	setvar VAR_EMERALBODY_RIVAL_STATE, 31
+@	warp MAP_MAUVE_ISLAND_WEST, 23, 11
+@	waitstate
 	release
 	end
 
 Debug_EventScript_Script_5::
-	setvar VAR_EMERALBODY_RIVAL_STATE, 51
-	warp MAP_RUSTBORO_CITY, 3
-	waitstate
+@	setvar VAR_EMERALBODY_RIVAL_STATE, 51
+@	warp MAP_RUSTBORO_CITY, 3
+@	waitstate
 	release
 	end
 
 Debug_EventScript_Script_6::
-	setvar VAR_EMERALBODY_RIVAL_STATE, 37
-	setflag FLAG_NO_COLLISION
-	warp MAP_MAUVE_ISLAND_SOUTH, 11, 26
-	waitstate
+@	setvar VAR_EMERALBODY_RIVAL_STATE, 37
+@	setflag FLAG_NO_COLLISION
+@	warp MAP_MAUVE_ISLAND_SOUTH, 11, 26
+@	waitstate
 	release
 	end
 
 Debug_EventScript_Script_7::
-	setvar VAR_EMERALBODY_RIVAL_STATE, 44
-	setflag FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH_2
-	setflag FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2
-	setflag FLAG_NO_COLLISION
-	warp MAP_BYGONE_VAULT_2, 5, 7
-	waitstate
+@	setvar VAR_EMERALBODY_RIVAL_STATE, 44
+@	setflag FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH_2
+@	setflag FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2
+@	setflag FLAG_NO_COLLISION
+@	warp MAP_BYGONE_VAULT_2, 5, 7
+@	waitstate
 	release
 	end
 
 Debug_EventScript_Script_8::
-	setvar VAR_EMERALBODY_RIVAL_STATE, 26
-	warp MAP_SUBMERGED_CAVE_1F_2R, 11, 15
-	waitstate
+@	setvar VAR_EMERALBODY_RIVAL_STATE, 26
+@	warp MAP_SUBMERGED_CAVE_1F_2R, 11, 15
+@	waitstate
 	release
 	end
 

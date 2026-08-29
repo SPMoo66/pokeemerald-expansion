@@ -1716,6 +1716,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/emeralbody_rivals/rival_scene05.inc"
 	.include "data/emeralbody_rivals/rival_scripts.inc"
 	.include "data/emeralbody_rivals/rival_text.inc"
+	.include "data/scripts/debug_emeralbody.inc"
 	.include "data/investor.inc"
 	.include "data/gym_guide.inc"
 	.include "data/challenge_balls.inc"

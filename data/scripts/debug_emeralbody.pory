@@ -1,0 +1,94 @@
+script EmeralbodyDebug_WhoIsRival {
+	switch (var(VAR_EMERALBODY_RIVAL)) {
+		case 0:
+			bufferstring (STR_VAR_1, CommonText_Baron)
+		case 1:
+			bufferstring (STR_VAR_1, CommonText_Harper)
+		case 2:
+			bufferstring (STR_VAR_1, CommonText_Jakson)
+		case 3:
+			bufferstring (STR_VAR_1, CommonText_Redd)
+		case 4:
+			bufferstring (STR_VAR_1, CommonText_Sakura)
+		case 5:
+			msgbox ("You will be challenged by all rivals.")
+			closemessage
+			release
+			end
+	}
+	msgbox ("Your current rival is {STR_VAR_1}.")
+	closemessage
+	release
+}
+
+
+script EmeralbodyDebug_SetRival_Baron {
+	setvar (VAR_EMERALBODY_RIVAL, 0)
+	release
+}
+
+script EmeralbodyDebug_SetRival_Harper {
+	setvar (VAR_EMERALBODY_RIVAL, 1)
+	release
+}
+
+script EmeralbodyDebug_SetRival_Jakson {
+	setvar (VAR_EMERALBODY_RIVAL, 2)
+	release
+}
+
+script EmeralbodyDebug_SetRival_Redd {
+	setvar (VAR_EMERALBODY_RIVAL, 3)
+	release
+}
+
+script EmeralbodyDebug_SetRival_Sakura {
+	setvar (VAR_EMERALBODY_RIVAL, 4)
+	release
+}
+
+script EmeralbodyDebug_SetRival_All {
+	setvar (VAR_EMERALBODY_RIVAL, 5)
+	release
+}
+
+
+script EmeralbodyDebug_Expansion1_JaksonsCall {
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 19)
+	release
+}
+
+script EmeralbodyDebug_Expansion1_IllusoryGrotto_1 {
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 21)
+	release
+}
+
+script EmeralbodyDebug_Expansion1_MauveIsland {
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 24)
+	release
+}
+
+script EmeralbodyDebug_Expansion1_GotLantern {
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 26)
+	release
+}
+
+script EmeralbodyDebug_Expansion1_RescuedHarper {
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 31)
+	release
+}
+
+script EmeralbodyDebug_Expansion1_GotDynamite {
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 40)
+	release
+}
+
+script EmeralbodyDebug_Expansion1_DidBygoneVault {
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 45)
+	release
+}
+
+script EmeralbodyDebug_Expansion1_CompletedExp1 {
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 51)
+	release
+}

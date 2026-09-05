@@ -3675,3 +3675,19 @@ bool8 ScrCmd_capmart(struct ScriptContext *ctx)
     ScriptContext_Stop();
     return TRUE;
 }
+
+bool8 ScrCmd_signmsg(struct ScriptContext *ctx)
+{
+    Script_RequestEffects(SCREFF_V1);
+
+    gMsgIsSignPost = TRUE;
+    return FALSE;
+}
+
+bool8 ScrCmd_normalmsg(struct ScriptContext *ctx)
+{
+    Script_RequestEffects(SCREFF_V1);
+
+    gMsgIsSignPost = FALSE;
+    return FALSE;
+}

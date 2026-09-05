@@ -1499,8 +1499,6 @@ BottleCapMart1:
 	.2byte ITEM_COVERT_CLOAK
 # 757 "data/global.pory"
 	.2byte ITEM_BLUNDER_POLICY
-# 758 "data/global.pory"
-	.2byte ITEM_CANDY_JAR
 	.2byte ITEM_NONE
 
 	.align 2
@@ -1560,8 +1558,6 @@ BottleCapMart2:
 	.2byte ITEM_COVERT_CLOAK
 # 788 "data/global.pory"
 	.2byte ITEM_BLUNDER_POLICY
-# 789 "data/global.pory"
-	.2byte ITEM_CANDY_JAR
 # 790 "data/global.pory"
 	.2byte ITEM_BOOSTER_ENERGY
 # 791 "data/global.pory"

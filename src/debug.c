@@ -423,6 +423,8 @@ extern const u8 Common_EventScript_MoveRelearner[];
 
 extern const u8 Upgrade_EmeralbodyRivalBattleState_Var[];
 extern const u8 EmeralbodyDebug_WhoIsRival[];
+extern const u8 PlayersHouse_2F_EventScript_Notebook[];
+extern const u8 RecommendedHacks[];
 extern const u8 EmeralbodyDebug_SetRival_Baron[];
 extern const u8 EmeralbodyDebug_SetRival_Harper[];
 extern const u8 EmeralbodyDebug_SetRival_Jakson[];
@@ -707,10 +709,12 @@ static const struct DebugMenuOption sDebugMenu_Actions_EmeralbodyExp1State[] =
 
 static const struct DebugMenuOption sDebugMenu_Actions_EmeralbodyScripts[] =
 {
-    { COMPOUND_STRING("Update Save"),        DebugAction_ExecuteScript, Upgrade_EmeralbodyRivalBattleState_Var, },
-    { COMPOUND_STRING("Who's my rival?"),    DebugAction_ExecuteScript, EmeralbodyDebug_WhoIsRival, },
-    { COMPOUND_STRING("Change Rival"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_EmeralbodySetRival, },
-    { COMPOUND_STRING("Exp. 1 Story State"), DebugAction_OpenSubMenu, sDebugMenu_Actions_EmeralbodyExp1State, },
+    { COMPOUND_STRING("Update Save"),          DebugAction_ExecuteScript, Upgrade_EmeralbodyRivalBattleState_Var, },
+    { COMPOUND_STRING("Who's my rival?"),      DebugAction_ExecuteScript, EmeralbodyDebug_WhoIsRival, },
+    { COMPOUND_STRING("Access help notebook"), DebugAction_ExecuteScript, PlayersHouse_2F_EventScript_Notebook, },
+    { COMPOUND_STRING("Reommended hacks"),     DebugAction_ExecuteScript, RecommendedHacks, },
+    { COMPOUND_STRING("Change Rival"),         DebugAction_OpenSubMenu, sDebugMenu_Actions_EmeralbodySetRival, },
+    { COMPOUND_STRING("Exp. 1 Story State"),   DebugAction_OpenSubMenu, sDebugMenu_Actions_EmeralbodyExp1State, },
     { NULL }
 };
 

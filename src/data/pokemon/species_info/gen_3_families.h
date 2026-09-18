@@ -4066,7 +4066,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_BRELOOM_EXP_1] =
     {
-        .baseHP        = 50,
+        .baseHP        = 55,
         .baseAttack    = 140,
         .baseDefense   = 55,
         .baseSpeed     = 110,

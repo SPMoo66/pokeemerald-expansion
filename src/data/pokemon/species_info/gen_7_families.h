@@ -4421,7 +4421,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_GOLISOPOD_EXP_1] =
     {
         .baseHP        = 85,
-        .baseAttack    = 135,
+        .baseAttack    = 130,
         .baseDefense   = 95,
         .baseSpeed     = 105,
         .baseSpAttack  = 40,

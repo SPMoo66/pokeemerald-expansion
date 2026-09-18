@@ -422,6 +422,8 @@ extern const u8 Debug_BerryWeedsDisabled[];
 extern const u8 Common_EventScript_MoveRelearner[];
 
 extern const u8 Upgrade_EmeralbodyRivalBattleState_Var[];
+extern const u8 EmeralbodyDebug_VarRivalState[];
+extern const u8 EmeralbodyDebug_VarRivalBattleState[];
 extern const u8 EmeralbodyDebug_WhoIsRival[];
 extern const u8 PlayersHouse_2F_EventScript_Notebook[];
 extern const u8 RecommendedHacks[];
@@ -707,6 +709,13 @@ static const struct DebugMenuOption sDebugMenu_Actions_EmeralbodyExp1State[] =
     { NULL }
 };
 
+static const struct DebugMenuOption sDebugMenu_Actions_DebugReadVars[] =
+{
+    { COMPOUND_STRING("Rival State"),        DebugAction_ExecuteScript, EmeralbodyDebug_VarRivalState, },
+    { COMPOUND_STRING("Rival Battle State"), DebugAction_ExecuteScript, EmeralbodyDebug_VarRivalBattleState, },
+    { NULL }
+};
+
 static const struct DebugMenuOption sDebugMenu_Actions_EmeralbodyScripts[] =
 {
     { COMPOUND_STRING("Update Save"),          DebugAction_ExecuteScript, Upgrade_EmeralbodyRivalBattleState_Var, },
@@ -715,6 +724,7 @@ static const struct DebugMenuOption sDebugMenu_Actions_EmeralbodyScripts[] =
     { COMPOUND_STRING("Reommended hacks"),     DebugAction_ExecuteScript, RecommendedHacks, },
     { COMPOUND_STRING("Change Rival"),         DebugAction_OpenSubMenu, sDebugMenu_Actions_EmeralbodySetRival, },
     { COMPOUND_STRING("Exp. 1 Story State"),   DebugAction_OpenSubMenu, sDebugMenu_Actions_EmeralbodyExp1State, },
+    { COMPOUND_STRING("Debug: Read Vars"),     DebugAction_OpenSubMenu, sDebugMenu_Actions_DebugReadVars, },
     { NULL }
 };
 

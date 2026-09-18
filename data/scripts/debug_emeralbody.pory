@@ -21,7 +21,7 @@ script EmeralbodyDebug_WhoIsRival {
 	release
 }
 
-
+# Set Rival
 script EmeralbodyDebug_SetRival_Baron {
 	setvar (VAR_EMERALBODY_RIVAL, 0)
 	release
@@ -52,7 +52,7 @@ script EmeralbodyDebug_SetRival_All {
 	release
 }
 
-
+# Set Expansion 1 States
 script EmeralbodyDebug_Expansion1_JaksonsCall {
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 19)
 	release
@@ -91,4 +91,16 @@ script EmeralbodyDebug_Expansion1_DidBygoneVault {
 script EmeralbodyDebug_Expansion1_CompletedExp1 {
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 51)
 	release
+}
+
+script EmeralbodyDebug_VarRivalState {
+	buffernumberstring (0, VAR_EMERALBODY_RIVAL_STATE)
+	msgbox ("{STR_VAR_1}")
+	closemessage
+}
+
+script EmeralbodyDebug_VarRivalBattleState {
+	buffernumberstring (0, VAR_EMERALBODY_RIVAL_BATTLE_STATE)
+	msgbox ("{STR_VAR_1}")
+	closemessage
 }

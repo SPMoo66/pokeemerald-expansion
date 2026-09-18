@@ -169,6 +169,26 @@ EmeralbodyDebug_Expansion1_CompletedExp1::
 	return
 
 
+EmeralbodyDebug_VarRivalState::
+# 97 "data/scripts/debug_emeralbody.pory"
+	buffernumberstring 0, VAR_EMERALBODY_RIVAL_STATE
+# 98 "data/scripts/debug_emeralbody.pory"
+	msgbox EmeralbodyDebug_VarRivalState_Text_0
+# 99 "data/scripts/debug_emeralbody.pory"
+	closemessage
+	return
+
+
+EmeralbodyDebug_VarRivalBattleState::
+# 103 "data/scripts/debug_emeralbody.pory"
+	buffernumberstring 0, VAR_EMERALBODY_RIVAL_BATTLE_STATE
+# 104 "data/scripts/debug_emeralbody.pory"
+	msgbox EmeralbodyDebug_VarRivalState_Text_0
+# 105 "data/scripts/debug_emeralbody.pory"
+	closemessage
+	return
+
+
 EmeralbodyDebug_WhoIsRival_Text_0:
 # 14 "data/scripts/debug_emeralbody.pory"
 	.string "You will be challenged by all rivals.$"
@@ -176,3 +196,7 @@ EmeralbodyDebug_WhoIsRival_Text_0:
 EmeralbodyDebug_WhoIsRival_Text_1:
 # 19 "data/scripts/debug_emeralbody.pory"
 	.string "Your current rival is {STR_VAR_1}.$"
+
+EmeralbodyDebug_VarRivalState_Text_0:
+# 98 "data/scripts/debug_emeralbody.pory"
+	.string "{STR_VAR_1}$"

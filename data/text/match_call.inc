@@ -3007,7 +3007,7 @@ MatchCall_Text_Sakura9::
 	.string "You should try it too. We all\n"
 	.string "deserve the rest we've worked\l"
 	.string "hard to earn.\p"
-	.string "Enjoy it while you ca{EMOJI_TILDE}{UNK_SPACER}$"
+	.string "Enjoy it while you can{EMOJI_TILDE}{UNK_SPACER}$"
 
 MatchCall_Text_BaronUnavailable::
 	.string "… … … … …\p"

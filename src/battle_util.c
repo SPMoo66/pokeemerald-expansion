@@ -6394,7 +6394,7 @@ static inline u32 CalcMoveBasePower(struct DamageContext *ctx)
         break;
     case EFFECT_DYNAMAX_DOUBLE_DMG:
         if (GetActiveGimmick(battlerDef) == GIMMICK_MEGA || GetActiveGimmick(battlerDef) == GIMMICK_DYNAMAX)
-            basePower *= 2;
+            basePower *= 1.5;
         break;
     case EFFECT_HIDDEN_POWER:
     {

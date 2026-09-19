@@ -1028,7 +1028,7 @@ Expansion1_Rival_Scene01_Text_34:
 Expansion1_Rival_Scene01_Text_35:
 # 177 "data/expansion_1/scene01.pory"
 	.string "Well, you should do some prep work,\nyeah. You all should, really.\p"
-	.string "This is going to be a pretty good chunk of\ncontent, so get your teams together,\lbring your best, you know.$"
+	.string "This is going to be a pretty good chunk\nof content, so get your teams\ltogether, bring your best, you know.$"
 
 Expansion1_Rival_Scene01_Text_36:
 # 180 "data/expansion_1/scene01.pory"

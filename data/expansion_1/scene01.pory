@@ -175,7 +175,7 @@ script Expansion1_Rival_Scene01 {
 	delay (20)
 	speakername (CommonText_Jakson)
 	msgbox ("Well, you should do some prep work,\nyeah. You all should, really.\p"
-			"This is going to be a pretty good chunk of\ncontent, so get your teams together,\lbring your best, you know.")
+			"This is going to be a pretty good chunk\nof content, so get your teams\ltogether, bring your best, you know.")
 	speakername (CommonText_Redd)
 	msgbox ("How big is this expansion…?")
 	speakername (CommonText_Jakson)

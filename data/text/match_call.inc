@@ -3025,7 +3025,9 @@ MatchCall_Text_BaronsMom1::
 	.string "I panicked a little trying to pick\n"
 	.string "up the phone…\p"
 	.string "I-I wasn't expecting you to call\n"
-	.string "me right away.$"
+	.string "me right away.\p"
+	.string "I appreciate the call, but I-I\n$"
+	.string "need to hurry up and prepare!$"
 
 MatchCall_Text_BaronsMom2::
 	.string "Baron's Mom: Hello? {PLAYER}?\p"

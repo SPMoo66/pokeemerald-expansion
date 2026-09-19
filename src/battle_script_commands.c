@@ -5643,9 +5643,6 @@ static void Cmd_yesnoboxlearnmove(void)
             else
             {
                 enum Move move = GetMonData(&gParties[B_TRAINER_PLAYER][gBattleStruct->expGetterMonId], MON_DATA_MOVE1 + movePosition);
-                if (IsDoubleBattle()
-                    && gBattlerPartyIndexes[2] == gBattleStruct->expGetterMonId
-                    && MOVE_IS_PERMANENT(2, movePosition))
                 {
                     gBattlescriptCurrInstr = cmd->forgotMovePtr;
 

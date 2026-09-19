@@ -18725,8 +18725,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Behemoth Blade"),
         .description = COMPOUND_STRING(
-            "Strikes as a sword. Deals 2x\n"
-            "damage to Dynamaxed foes."),
+            "Strikes as a sword. Deals 1.5x\n"
+            "damage to Mega Pokémon."),
         .effect = EFFECT_DYNAMAX_DOUBLE_DMG,
         .power = 100,
         .type = TYPE_STEEL,
@@ -18752,8 +18752,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Behemoth Bash"),
         .description = COMPOUND_STRING(
-            "Attacks as a shield. Deals 2x\n"
-            "damage to Dynamaxed foes."),
+            "Attacks as a shield. Deals 1.5x\n"
+            "damage to Mega Pokémon."),
         .effect = EFFECT_DYNAMAX_DOUBLE_DMG,
         .power = 100,
         .type = TYPE_STEEL,

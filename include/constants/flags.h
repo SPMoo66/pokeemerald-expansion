@@ -1446,7 +1446,7 @@
 #define FLAG_SYS_REGIROCK_PUZZLE_COMPLETED          (SYSTEM_FLAGS + 0x50)
 #define FLAG_SYS_BRAILLE_REGICE_COMPLETED           (SYSTEM_FLAGS + 0x51)
 #define FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED         (SYSTEM_FLAGS + 0x52)
-#define FLAG_UNUSED_0xA53                           (SYSTEM_FLAGS + 0x53) // Was an additional flag to enable Southern Island from mystery gift
+#define FLAG_IGNORE_LEVEL_SYNC                      (SYSTEM_FLAGS + 0x53) // Was an additional flag to enable Southern Island from mystery gift. Set this to ignore level sync for when trainer levels are supposed to be much greater than the level cap.
 
 #define FLAG_LANDMARK_POKEMON_LEAGUE                (SYSTEM_FLAGS + 0x54)
 #define FLAG_LANDMARK_ISLAND_CAVE                   (SYSTEM_FLAGS + 0x55)

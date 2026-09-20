@@ -1991,6 +1991,10 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             if (gSaveBlock2Ptr->optionsLevelSync) { // Checks if the level sync option is set
                 u8 lvl = 1;
                 lvl = GetMaxLevel(0);
+                if (FlagGet(FLAG_IGNORE_LEVEL_SYNC)) // Ignore level sync
+                {
+                    CreateMon(&party[i], partyData[monIndex].species, partyData[monIndex].lvl, personalityValue, otId);
+                }
                 if (FlagGet(FLAG_CHALLENGING_TRAINER)) // Checks if the Challenging Trainer flag is set, scales to level if so
                 {
                     CreateMon(&party[i], partyData[monIndex].species, lvl, personalityValue, otId);

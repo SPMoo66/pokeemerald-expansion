@@ -74,6 +74,7 @@ script Baron_Exp1_Town01 {
 }
 
 script Jakson_Exp1_Town01 {
+	faceplayer
 	speakername (CommonText_Jakson)
 	msgbox(Exp1_Town01_JaksonText, MSGBOX_YESNO)
 	if (var(VAR_RESULT) == YES) {

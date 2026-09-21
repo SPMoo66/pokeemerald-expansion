@@ -1995,7 +1995,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 {
                     CreateMon(&party[i], partyData[monIndex].species, partyData[monIndex].lvl, personalityValue, otId);
                 }
-                if (FlagGet(FLAG_CHALLENGING_TRAINER)) // Checks if the Challenging Trainer flag is set, scales to level if so
+                else if (FlagGet(FLAG_CHALLENGING_TRAINER)) // Checks if the Challenging Trainer flag is set, scales to level if so
                 {
                     CreateMon(&party[i], partyData[monIndex].species, lvl, personalityValue, otId);
                 }

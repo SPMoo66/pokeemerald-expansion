@@ -199,7 +199,7 @@ script Expansion1_Rival_Scene10b {
 	waitmoncry
 	savebgm (MUS_NONE)
 
-#Battle Part 3
+# Battle Part 3
 	setflag (FLAG_IGNORE_LEVEL_SYNC)
 	setstartingstatus (STARTING_STATUS_RAINBOW_PLAYER)
 	setflag (FLAG_DONT_TRANSITION_BATTLE_MUSIC)

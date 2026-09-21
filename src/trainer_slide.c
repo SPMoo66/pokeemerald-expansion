@@ -492,17 +492,17 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINER_PARTNER(PARTNER_
         },
         [TRAINER_WALLY_MAUVILLE] = 
         {
-            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Go…! Pokémon?"),
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Go…! Pokémon?{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_WALLY_PETALBURG] = 
         {
-            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Go! Pokémon!"),
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Go! Pokémon!{PAUSE_UNTIL_PRESS}"),
         },
         [TRAINER_WALLY_VR_1] = 
         {
-            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Let's go, team!"),
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Come on, Gallade!"),
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Not so fast, {B_PLAYER_NAME}!\nIt's not over yet!"),
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Let's go, team!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Come on, Gallade!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Not so fast, {B_PLAYER_NAME}!\nIt's not over yet!{PAUSE_UNTIL_PRESS}"),
         },
 
         [TRAINER_JAKSON_1] =
@@ -690,8 +690,8 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINER_PARTNER(PARTNER_
         },
         [TRAINER_STEVEN_EXP_1] =
         {
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = COMPOUND_STRING("Haha!\nGreat one, {PLAYER}!\lHow are you liking my team so far?"),
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("And now, a classic!"),
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = COMPOUND_STRING("Haha!\nGreat one, {B_PLAYER_NAME}!\lHow are you liking my team so far?{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("And now, a classic!{PAUSE_UNTIL_PRESS}"),
         },
     },
 };

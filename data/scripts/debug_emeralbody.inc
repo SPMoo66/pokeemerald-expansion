@@ -145,46 +145,54 @@ EmeralbodyDebug_Expansion1_RescuedHarper::
 	return
 
 
-EmeralbodyDebug_Expansion1_GotDynamite::
+EmeralbodyDebug_Expansion1_BeforeRegiagua::
 # 82 "data/scripts/debug_emeralbody.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 40
+	setvar VAR_EMERALBODY_RIVAL_STATE, 37
 # 83 "data/scripts/debug_emeralbody.pory"
 	release
 	return
 
 
-EmeralbodyDebug_Expansion1_DidBygoneVault::
+EmeralbodyDebug_Expansion1_GotDynamite::
 # 87 "data/scripts/debug_emeralbody.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 45
+	setvar VAR_EMERALBODY_RIVAL_STATE, 40
 # 88 "data/scripts/debug_emeralbody.pory"
 	release
 	return
 
 
-EmeralbodyDebug_Expansion1_CompletedExp1::
+EmeralbodyDebug_Expansion1_DidBygoneVault::
 # 92 "data/scripts/debug_emeralbody.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 51
+	setvar VAR_EMERALBODY_RIVAL_STATE, 45
 # 93 "data/scripts/debug_emeralbody.pory"
 	release
 	return
 
 
-EmeralbodyDebug_VarRivalState::
+EmeralbodyDebug_Expansion1_CompletedExp1::
 # 97 "data/scripts/debug_emeralbody.pory"
-	buffernumberstring 0, VAR_EMERALBODY_RIVAL_STATE
+	setvar VAR_EMERALBODY_RIVAL_STATE, 51
 # 98 "data/scripts/debug_emeralbody.pory"
+	release
+	return
+
+
+EmeralbodyDebug_VarRivalState::
+# 102 "data/scripts/debug_emeralbody.pory"
+	buffernumberstring 0, VAR_EMERALBODY_RIVAL_STATE
+# 103 "data/scripts/debug_emeralbody.pory"
 	msgbox EmeralbodyDebug_VarRivalState_Text_0
-# 99 "data/scripts/debug_emeralbody.pory"
+# 104 "data/scripts/debug_emeralbody.pory"
 	closemessage
 	return
 
 
 EmeralbodyDebug_VarRivalBattleState::
-# 103 "data/scripts/debug_emeralbody.pory"
+# 108 "data/scripts/debug_emeralbody.pory"
 	buffernumberstring 0, VAR_EMERALBODY_RIVAL_BATTLE_STATE
-# 104 "data/scripts/debug_emeralbody.pory"
+# 109 "data/scripts/debug_emeralbody.pory"
 	msgbox EmeralbodyDebug_VarRivalState_Text_0
-# 105 "data/scripts/debug_emeralbody.pory"
+# 110 "data/scripts/debug_emeralbody.pory"
 	closemessage
 	return
 
@@ -198,5 +206,5 @@ EmeralbodyDebug_WhoIsRival_Text_1:
 	.string "Your current rival is {STR_VAR_1}.$"
 
 EmeralbodyDebug_VarRivalState_Text_0:
-# 98 "data/scripts/debug_emeralbody.pory"
+# 103 "data/scripts/debug_emeralbody.pory"
 	.string "{STR_VAR_1}$"

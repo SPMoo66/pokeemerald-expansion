@@ -504,7 +504,10 @@ void BattleSetup_StartScriptedDoubleWildBattle(void)
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     if (IsNPCFollowerWildBattle())
+    {
+        gBattleTypeFlags = 0;
         gBattleTypeFlags |= BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_DOUBLE;
+    }
     else
 	    gBattleTypeFlags = BATTLE_TYPE_DOUBLE;
     CreateBattleStartTask(GetWildBattleTransition(), 0);

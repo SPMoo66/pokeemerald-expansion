@@ -438,6 +438,7 @@ extern const u8 EmeralbodyDebug_Expansion1_IllusoryGrotto_1[];
 extern const u8 EmeralbodyDebug_Expansion1_MauveIsland[];
 extern const u8 EmeralbodyDebug_Expansion1_GotLantern[];
 extern const u8 EmeralbodyDebug_Expansion1_RescuedHarper[];
+extern const u8 EmeralbodyDebug_Expansion1_BeforeRegiagua[];
 extern const u8 EmeralbodyDebug_Expansion1_GotDynamite[];
 extern const u8 EmeralbodyDebug_Expansion1_DidBygoneVault[];
 extern const u8 EmeralbodyDebug_Expansion1_CompletedExp1[];
@@ -703,6 +704,7 @@ static const struct DebugMenuOption sDebugMenu_Actions_EmeralbodyExp1State[] =
     { COMPOUND_STRING("At Mauve Island"), DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_MauveIsland, },
     { COMPOUND_STRING("Got Lantern"),   DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_GotLantern, },
     { COMPOUND_STRING("Rescued Harper"), DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_RescuedHarper, },
+    { COMPOUND_STRING("Before Regiagua"), DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_BeforeRegiagua, },
     { COMPOUND_STRING("Got Dynamite"),    DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_GotDynamite, },
     { COMPOUND_STRING("Did Bygone Vault"),    DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_DidBygoneVault, },
     { COMPOUND_STRING("Completed Exp. 1!"),    DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_CompletedExp1, },

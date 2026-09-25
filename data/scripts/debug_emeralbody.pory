@@ -78,6 +78,11 @@ script EmeralbodyDebug_Expansion1_RescuedHarper {
 	release
 }
 
+script EmeralbodyDebug_Expansion1_BeforeRegiagua {
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 37)
+	release
+}
+
 script EmeralbodyDebug_Expansion1_GotDynamite {
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 40)
 	release

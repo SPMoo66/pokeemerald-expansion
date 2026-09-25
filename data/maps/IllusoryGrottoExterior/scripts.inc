@@ -48,4 +48,4 @@ EventScript_EndEndlessFarOffSea::
 
 EventScript_EndEndlessFarOffSea_Text_0:
 # 22 "data/maps/IllusoryGrottoExterior/scripts.pory"
-	.string "Hello$"
+	.string "After some time lost at sea, you manage\nto drift your way back close to where you\lbegan.$"

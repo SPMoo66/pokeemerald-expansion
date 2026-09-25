@@ -19,7 +19,7 @@ script EventScript_MoveToEndlessFarOffSea {
 
 script EventScript_EndEndlessFarOffSea {
 	lock
-	msgbox ("Hello", MSGBOX_AUTOCLOSE)
+	msgbox ("After some time lost at sea, you manage\nto drift your way back close to where you\lbegan.", MSGBOX_AUTOCLOSE)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 22)
 	warp (MAP_FAR_OFF_SEA_WEST_2, 5, 5)
 	waitstate

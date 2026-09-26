@@ -480,6 +480,8 @@ script Expansion1_Rival_Scene08e {
 	removeobject (BYGONEVAULT1_FAKEPLAYER)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 42)
 	setescapewarp (MAP_FAR_OFF_SEA_WEST, 0)
+	clearflag (FLAG_HIDE_MAP_NAME_POPUP)
 	setflag (FLAG_EXPANSION_1_MATCH_CALL_3)
+	special (ShowMapNamePopup)
 	releaseall	
 }

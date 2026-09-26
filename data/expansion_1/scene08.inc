@@ -870,8 +870,12 @@ Expansion1_Rival_Scene08e::
 # 482 "data/expansion_1/scene08.pory"
 	setescapewarp MAP_FAR_OFF_SEA_WEST, 0
 # 483 "data/expansion_1/scene08.pory"
-	setflag FLAG_EXPANSION_1_MATCH_CALL_3
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
 # 484 "data/expansion_1/scene08.pory"
+	setflag FLAG_EXPANSION_1_MATCH_CALL_3
+# 485 "data/expansion_1/scene08.pory"
+	special ShowMapNamePopup
+# 486 "data/expansion_1/scene08.pory"
 	releaseall
 	return
 

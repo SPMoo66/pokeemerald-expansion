@@ -1322,8 +1322,7 @@ void Overworld_PlaySpecialMapMusic(void)
 /*        else if (GetCurrentMapType() == MAP_TYPE_UNDERWATER)
             music = MUS_UNDERWATER;*/
         else if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING)) {
-            u16 surfMusicOption = gSaveBlock2Ptr->optionsSurfMusic;
-            if (surfMusicOption == 0)
+            if (gSaveBlock2Ptr->optionsSurfMusic == 0 && !FlagGet(FLAG_ENFORCE_NO_SURF_MUSIC))
                 music = (IS_FRLG ? MUS_RG_SURF : MUS_SURF);
         }
     }
@@ -1361,8 +1360,7 @@ static void TransitionMapMusic(void)
             if (currentMusic == MUS_UNDERWATER || currentMusic == (IS_FRLG ? MUS_RG_SURF : MUS_SURF))
                 return;
             if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING)) {
-                u16 surfMusicOption = gSaveBlock2Ptr->optionsSurfMusic;
-                if (surfMusicOption == 0)
+                if (gSaveBlock2Ptr->optionsSurfMusic == 0 && !FlagGet(FLAG_ENFORCE_NO_SURF_MUSIC))
                     newMusic = (IS_FRLG ? MUS_RG_SURF : MUS_SURF);
             }
         }

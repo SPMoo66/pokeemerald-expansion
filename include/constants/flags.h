@@ -1671,11 +1671,12 @@
 #define FLAG_SEMI_PERM_HIDE_FOLLOWER            (SPECIAL_FLAGS_START + 0xE)  // Set this flag to hide all following Pokémon until the game is reset.
 #define FLAG_SYS_SET_BATTLE_BGM                 (SPECIAL_FLAGS_START + 0xF)  // Set this flag when overriding battle BGM, store BGM in VAR_BATTLE_BGM.
 #define FLAG_SYS_SET_BATTLE_TRANSITION          (SPECIAL_FLAGS_START + 0x10) // Set this flag when overriding battle transitions, store transition in VAR_BATTLE_TRANSITION.
-#define FLAG_SEMI_TEMP_1                        (SPECIAL_FLAGS_START + 0x11) // See 'Special Flag aliases' for uses.
-#define FLAG_SEMI_TEMP_2                        (SPECIAL_FLAGS_START + 0x12) //
-#define FLAG_SEMI_TEMP_3                        (SPECIAL_FLAGS_START + 0x13) //
-#define FLAG_SEMI_TEMP_4                        (SPECIAL_FLAGS_START + 0x14) //
-#define FLAG_SEMI_TEMP_5                        (SPECIAL_FLAGS_START + 0x15) //
+#define FLAG_ENFORCE_NO_SURF_MUSIC              (SPECIAL_FLAGS_START + 0x11) // Set this to enforce no surf music changing. This is required for some scenes that warp the player over water as invisible, like Scene08c
+#define FLAG_SEMI_TEMP_1                        (SPECIAL_FLAGS_START + 0x12) // See 'Special Flag aliases' for uses.
+#define FLAG_SEMI_TEMP_2                        (SPECIAL_FLAGS_START + 0x13) //
+#define FLAG_SEMI_TEMP_3                        (SPECIAL_FLAGS_START + 0x14) //
+#define FLAG_SEMI_TEMP_4                        (SPECIAL_FLAGS_START + 0x15) //
+#define FLAG_SEMI_TEMP_5                        (SPECIAL_FLAGS_START + 0x16) //
 // FLAG_SPECIAL_FLAG_0x40XX - 0x407F also exist and are unused
 #define SPECIAL_FLAGS_END                       (SPECIAL_FLAGS_START + 0x7F)
 #define NUM_SPECIAL_FLAGS                       (SPECIAL_FLAGS_END - SPECIAL_FLAGS_START + 1)

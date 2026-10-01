@@ -1,0 +1,136 @@
+const ROCK_OBJECT_SCRIPT_B2F = 1
+
+mapscripts IllusoryGrotto_B2F_1R_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (flag(FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK_IN_PLACE)) {
+			setmetatile (18, 6, 0x01C, TRUE)
+		}
+		if (flag(FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK)) {
+			setmetatile (18, 6, 0x011, FALSE)
+			setmetatile (18, 8, 0x053, TRUE)
+		}
+	}
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_3)
+		if (flag(FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK_IN_PLACE) && !flag(FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK)) {
+			clearflag (FLAG_TEMP_3)
+		}
+		if (flag(FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK)) {
+			setvar (VAR_TEMP_3, 1)
+		}
+		if (defeated(TRAINER_WILD_POKEMON_IG_3)) {
+			setflag (FLAG_TEMP_1)
+		}
+		if (defeated(TRAINER_WILD_POKEMON_IG_4)) {
+			setflag (FLAG_TEMP_2)
+		}
+	}
+}
+
+script IllusoryGrotto_B2F_1R_EventScript_WildPokemon1 {
+	if (!defeated(TRAINER_WILD_POKEMON_IG_3)) {
+		lock
+		setflag (FLAG_WILD_OPPONENT)
+		setflag (FLAG_SYS_SET_BATTLE_BGM)
+		setvar (VAR_BATTLE_BGM, MUS_XD_VS_CIPHER_PEON)
+		playmoncry (SPECIES_LUCARIO, CRY_MODE_ENCOUNTER)
+		waitmoncry
+		msgbox (Exp1_WildPokemonTrainerText_Intro, MSGBOX_DEFAULT)
+		trainerbattle_no_intro (TRAINER_WILD_POKEMON_IG_3, Exp1_WildPokemonTrainerText_Defeat)
+		playmoncry (SPECIES_LUCARIO, CRY_MODE_WEAK)
+		waitmoncry
+		applymovement (2, Common_Movement_WalkDownFast)
+		waitmovement (0)
+		playse (SE_LEDGE)
+		applymovement (2, Common_Movement_JumpDown)
+		waitmovement (0)
+		applymovement (2, Common_Movement_WalkDownFast5)
+		waitmovement (0)
+		setvar (VAR_TEMP_0, 1)
+		clearflag (FLAG_WILD_OPPONENT)
+		removeobject (2)
+		release
+	}
+	setvar (VAR_TEMP_0, 1)
+}
+
+script IllusoryGrotto_B2F_1R_EventScript_WildPokemon2 {
+	if (!defeated(TRAINER_WILD_POKEMON_IG_4)) {
+		lock
+		turnobject (LOCALID_PLAYER, DIR_WEST)
+		setflag (FLAG_WILD_OPPONENT)
+		setflag (FLAG_SYS_SET_BATTLE_BGM)
+		setvar (VAR_BATTLE_BGM, MUS_XD_VS_CIPHER_PEON)
+		playmoncry (SPECIES_LUCARIO, CRY_MODE_ENCOUNTER)
+		waitmoncry
+		msgbox (Exp1_WildPokemonTrainerText_Intro, MSGBOX_DEFAULT)
+		trainerbattle_no_intro (TRAINER_WILD_POKEMON_IG_4, Exp1_WildPokemonTrainerText_Defeat)
+		playmoncry (SPECIES_LUCARIO, CRY_MODE_WEAK)
+		waitmoncry
+		playse (SE_LEDGE)
+		applymovement (3, Common_Movement_JumpLeft2)
+		waitmovement (0)
+		playse (SE_LEDGE)
+		applymovement (3, Common_Movement_JumpLeft2)
+		waitmovement (0)
+		applymovement (3, Common_Movement_WalkLeftFast2)
+		waitmovement (0)
+		setvar (VAR_TEMP_1, 1)
+		clearflag (FLAG_WILD_OPPONENT)
+		removeobject (3)
+		release
+	}
+	setvar (VAR_TEMP_1, 1)
+}
+
+
+script IllusoryGrotto_B2F_1R_Rock {
+	if (flag(FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK_IN_PLACE) && !flag(FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK)) {
+		call (IllusoryGrottoMovableRock_Exp1)
+		setmetatile (18, 6, 0x011, FALSE)
+		setmetatile (18, 7, 0x023, TRUE)
+		special (DrawWholeMapView)
+		delay (10)
+		setmetatile (18, 7, 0x019, TRUE)
+		setmetatile (18, 8, 0x053, TRUE)
+		special (DrawWholeMapView)
+		playse (SE_M_STRENGTH)
+		delay (10)
+		setflag (FLAG_EXP_1_ILLUSORY_GROTTO_B2F_1R_ROCK)
+		setvar (VAR_TEMP_3, 1)
+		setflag (FLAG_TEMP_3)
+		removeobject (ROCK_OBJECT_SCRIPT_B2F)
+	}
+	release
+}
+
+script IllusoryGrotto_B2F_1R_Monster {
+	call (IllusoryGrotto_MonsterCommon1_Exp1)
+	setmetatile (18, 8, 0x04D, TRUE)
+	special (DrawWholeMapView)
+	delay (10)
+	setmetatile (18, 8, 0x04E, TRUE)
+	special (DrawWholeMapView)
+	delay (10)
+	setmetatile (18, 8, 0x04F, TRUE)
+	call (IllusoryGrotto_MonsterCommon2_Exp1)
+	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+	if (var(VAR_TEMP_1) == 9) {
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkFastDown3)
+	}
+	else {
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkFastDown2)
+	}
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_UnlockFacingDirection)
+	waitmovement (0)
+	setmetatile (18, 8, 0x04E, TRUE)
+	special (DrawWholeMapView)
+	delay (10)
+	setmetatile (18, 8, 0x04D, TRUE)
+	special (DrawWholeMapView)
+	delay (10)
+	setmetatile (18, 8, 0x04C, TRUE)
+	special (DrawWholeMapView)
+	release
+}

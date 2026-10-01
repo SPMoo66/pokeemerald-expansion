@@ -329,7 +329,7 @@ text Town03_SakuraText {
 			"That design would thrive with a little more derp and splendor.")
 }
 
-# Scene02
+# Scene03
 text Scene03_BaronText {
 	format(	"Hey uh… {PLAYER}, right?\n"
 			"Mind if I ask a question?\p"
@@ -1965,6 +1965,16 @@ text Battle05_BaronText_PostBattle2 {
 	"Hopefully I'm not a burden until then.\p"
 	"But… whenever that is. Thank you.\n"
 	"Thank you for being you. All of you."
+}
+
+text Battle05_BaronText_PostBattle3 {
+	"… … …\p"
+	"O-Oh? My phone number…?\p"
+	"{PLAYER}, y-you couldn't mean…\p"
+	"… … …\n"
+	"To stay in contact while we're playing?\p"
+	"O-Oh! Of course! Of course that's what\n"
+	"I was thinking. Let me share it with you."
 }
 
 text Battle05_HarperText_PreBattle {

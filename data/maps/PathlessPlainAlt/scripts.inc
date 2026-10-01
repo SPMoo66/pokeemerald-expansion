@@ -51,30 +51,30 @@ PathlessPlainAlt_MapScripts_MAP_SCRIPT_ON_RESUME_1:
 PathlessPlainAlt_Portal::
 # 28 "data/maps/PathlessPlainAlt/scripts.pory"
 	warp MAP_PATHLESS_PLAIN, 0
+# 29 "data/maps/PathlessPlainAlt/scripts.pory"
+	waitstate
 	return
 
 
 BattleIronCrown::
-# 32 "data/maps/PathlessPlainAlt/scripts.pory"
-	lock
 # 33 "data/maps/PathlessPlainAlt/scripts.pory"
-	faceplayer
+	lock
 # 34 "data/maps/PathlessPlainAlt/scripts.pory"
-	setvar VAR_LAST_TALKED, 1
+	faceplayer
 # 35 "data/maps/PathlessPlainAlt/scripts.pory"
-	playmoncry SPECIES_IRON_CROWN, CRY_MODE_ENCOUNTER
+	setvar VAR_LAST_TALKED, 1
 # 36 "data/maps/PathlessPlainAlt/scripts.pory"
-	msgbox BattleIronCrown_Text_0
+	playmoncry SPECIES_IRON_CROWN, CRY_MODE_ENCOUNTER
 # 37 "data/maps/PathlessPlainAlt/scripts.pory"
-	waitmoncry
+	msgbox BattleIronCrown_Text_0
 # 38 "data/maps/PathlessPlainAlt/scripts.pory"
-	setwildbattle SPECIES_IRON_CROWN, 40
+	waitmoncry
 # 39 "data/maps/PathlessPlainAlt/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	setwildbattle SPECIES_IRON_CROWN, 40
 # 40 "data/maps/PathlessPlainAlt/scripts.pory"
-	special StartRegiBattle
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 41 "data/maps/PathlessPlainAlt/scripts.pory"
-	waitstate
+	special StartRegiBattle
 # 42 "data/maps/PathlessPlainAlt/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 43 "data/maps/PathlessPlainAlt/scripts.pory"
@@ -113,66 +113,62 @@ BattleIronBoulder::
 # 60 "data/maps/PathlessPlainAlt/scripts.pory"
 	special StartRegiBattle
 # 61 "data/maps/PathlessPlainAlt/scripts.pory"
-	waitstate
-# 62 "data/maps/PathlessPlainAlt/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 63 "data/maps/PathlessPlainAlt/scripts.pory"
+# 62 "data/maps/PathlessPlainAlt/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 64 "data/maps/PathlessPlainAlt/scripts.pory"
+# 63 "data/maps/PathlessPlainAlt/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleIronBoulder_2
 BattleIronBoulder_1:
-# 67 "data/maps/PathlessPlainAlt/scripts.pory"
+# 66 "data/maps/PathlessPlainAlt/scripts.pory"
 	release
 	end
 
 BattleIronBoulder_2:
-# 65 "data/maps/PathlessPlainAlt/scripts.pory"
+# 64 "data/maps/PathlessPlainAlt/scripts.pory"
 	setflag FLAG_CAUGHT_IRON_BOULDER
 	goto BattleIronBoulder_1
 
 
 BattleIronLeaves::
-# 72 "data/maps/PathlessPlainAlt/scripts.pory"
+# 71 "data/maps/PathlessPlainAlt/scripts.pory"
 	lock
-# 73 "data/maps/PathlessPlainAlt/scripts.pory"
+# 72 "data/maps/PathlessPlainAlt/scripts.pory"
 	faceplayer
-# 74 "data/maps/PathlessPlainAlt/scripts.pory"
+# 73 "data/maps/PathlessPlainAlt/scripts.pory"
 	setvar VAR_LAST_TALKED, 3
-# 75 "data/maps/PathlessPlainAlt/scripts.pory"
+# 74 "data/maps/PathlessPlainAlt/scripts.pory"
 	playmoncry SPECIES_IRON_LEAVES, CRY_MODE_ENCOUNTER
-# 76 "data/maps/PathlessPlainAlt/scripts.pory"
+# 75 "data/maps/PathlessPlainAlt/scripts.pory"
 	msgbox BattleIronLeaves_Text_0
-# 77 "data/maps/PathlessPlainAlt/scripts.pory"
+# 76 "data/maps/PathlessPlainAlt/scripts.pory"
 	waitmoncry
-# 78 "data/maps/PathlessPlainAlt/scripts.pory"
+# 77 "data/maps/PathlessPlainAlt/scripts.pory"
 	setwildbattle SPECIES_IRON_LEAVES, 40
-# 79 "data/maps/PathlessPlainAlt/scripts.pory"
+# 78 "data/maps/PathlessPlainAlt/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 80 "data/maps/PathlessPlainAlt/scripts.pory"
+# 79 "data/maps/PathlessPlainAlt/scripts.pory"
 	special StartRegiBattle
-# 81 "data/maps/PathlessPlainAlt/scripts.pory"
-	waitstate
-# 82 "data/maps/PathlessPlainAlt/scripts.pory"
+# 80 "data/maps/PathlessPlainAlt/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 83 "data/maps/PathlessPlainAlt/scripts.pory"
+# 81 "data/maps/PathlessPlainAlt/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 84 "data/maps/PathlessPlainAlt/scripts.pory"
+# 82 "data/maps/PathlessPlainAlt/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleIronLeaves_2
 BattleIronLeaves_1:
-# 87 "data/maps/PathlessPlainAlt/scripts.pory"
+# 85 "data/maps/PathlessPlainAlt/scripts.pory"
 	release
 	end
 
 BattleIronLeaves_2:
-# 85 "data/maps/PathlessPlainAlt/scripts.pory"
+# 83 "data/maps/PathlessPlainAlt/scripts.pory"
 	setflag FLAG_CAUGHT_IRON_LEAVES
 	goto BattleIronLeaves_1
 
 
 BattleIronCrown_Text_0:
-# 36 "data/maps/PathlessPlainAlt/scripts.pory"
+# 37 "data/maps/PathlessPlainAlt/scripts.pory"
 	.string "Kaw-brah-on!$"
 
 BattleIronBoulder_Text_0:
@@ -180,5 +176,5 @@ BattleIronBoulder_Text_0:
 	.string "Gurr-oonnn!$"
 
 BattleIronLeaves_Text_0:
-# 76 "data/maps/PathlessPlainAlt/scripts.pory"
+# 75 "data/maps/PathlessPlainAlt/scripts.pory"
 	.string "Aeepraaa!$"

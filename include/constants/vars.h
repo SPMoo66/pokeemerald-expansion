@@ -1,6 +1,8 @@
 #ifndef GUARD_CONSTANTS_VARS_H
 #define GUARD_CONSTANTS_VARS_H
 
+#include "constants/vars_frlg.h"
+
 #define VARS_START 0x4000
 
 // temporary vars
@@ -12,8 +14,8 @@
 #define VAR_TEMP_3                 (TEMP_VARS_START + 0x3) // Note: Used when the player checks a TV
 #define VAR_TEMP_4                 (TEMP_VARS_START + 0x4)
 #define VAR_TEMP_5                 (TEMP_VARS_START + 0x5)
-#define VAR_TEMP_6                 (TEMP_VARS_START + 0x6)
-#define VAR_TEMP_7                 (TEMP_VARS_START + 0x7)
+#define VAR_TEMP_6                 (TEMP_VARS_START + 0x6) // Only used for contests, battle warnings
+#define VAR_TEMP_7                 (TEMP_VARS_START + 0x7) // Only used for contests
 #define VAR_TEMP_8                 (TEMP_VARS_START + 0x8)
 #define VAR_TEMP_9                 (TEMP_VARS_START + 0x9)
 #define VAR_TEMP_A                 (TEMP_VARS_START + 0xA)
@@ -32,14 +34,14 @@
 #define VAR_OBJ_GFX_ID_0           0x4010
 #define VAR_OBJ_GFX_ID_1           0x4011
 #define VAR_OBJ_GFX_ID_2           0x4012
-#define VAR_OBJ_GFX_ID_3           0x4013
+#define VAR_OBJ_GFX_ID_3           0x4013    // Used for RSE Rival
 #define VAR_OBJ_GFX_ID_4           0x4014
 #define VAR_OBJ_GFX_ID_5           0x4015
 #define VAR_OBJ_GFX_ID_6           0x4016
 #define VAR_OBJ_GFX_ID_7           0x4017
-#define VAR_OBJ_GFX_ID_8           0x4018
-#define VAR_OBJ_GFX_ID_9           0x4019
-#define VAR_OBJ_GFX_ID_A           0x401A
+#define VAR_OBJ_GFX_ID_8           0x4018    // Only used in contests
+#define VAR_OBJ_GFX_ID_9           0x4019    // Used for fake players
+#define VAR_OBJ_GFX_ID_A           0x401A    // Used for Looker
 #define VAR_OBJ_GFX_ID_B           0x401B    // Used for Emeralbody Rival, Elite 4
 #define VAR_OBJ_GFX_ID_C           0x401C    // Unused
 #define VAR_OBJ_GFX_ID_D           0x401D    // Unused
@@ -162,7 +164,7 @@
 #define VAR_BOARD_BRINEY_BOAT_STATE                      0x408E
 #define VAR_DEVON_CORP_3F_STATE                          0x408F
 #define VAR_BRINEY_HOUSE_STATE                           0x4090
-#define VAR_STARTING_STATUS                              0x4091 // Starting field condition
+#define VAR_UNUSED_0x4091                                0x4091 // Unused
 #define VAR_LITTLEROOT_INTRO_STATE                       0x4092
 #define VAR_MAUVILLE_GYM_STATE                           0x4093
 #define VAR_LILYCOVE_MUSEUM_2F_STATE                     0x4094
@@ -199,9 +201,9 @@
 #define VAR_WEATHER_INSTITUTE_STATE                      0x40B3
 #define VAR_SS_TIDAL_STATE                               0x40B4
 #define VAR_TRICK_HOUSE_ENTER_FROM_CORRIDOR              0x40B5
-#define VAR_UNUSED_0x40B6                                0x40B6 // Unused Var
+#define VAR_FAR_OFF_SEA_ENDLESS_STEP_COUNTER             0x40B6 // Was unused
 #define VAR_SLATEPORT_FAN_CLUB_STATE                     0x40B7
-#define VAR_UNUSED_0x40B8                                0x40B8 // Unused Var
+#define VAR_JAKSON_EXPANSION1_CALL_STEP_COUNTER          0x40B8 // Was unused
 #define VAR_MT_PYRE_STATE                                0x40B9
 #define VAR_NEW_MAUVILLE_STATE                           0x40BA
 #define VAR_UNUSED_0x40BB                                0x40BB // Unused Var
@@ -230,7 +232,7 @@
 #define VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE               0x40D2
 #define VAR_DEX_UPGRADE_JOHTO_STARTER_STATE              0x40D3
 #define VAR_SS_TIDAL_SCOTT_STATE                         0x40D4 // Always equal to FLAG_MET_SCOTT_ON_SS_TIDAL
-#define VAR_ROAMER_POKEMON                               0x40D5 // 0 = Latias, 1 = Latios
+#define VAR_UNUSED_0x40D5                                0x40D5 // Was VAR_ROAMER_POKEMON. This may be 0 or 1 already if the player has beaten the game, but can easily be overwritten
 #define VAR_TRAINER_HILL_IS_ACTIVE                       0x40D6
 #define VAR_SKY_PILLAR_RAYQUAZA_CRY_DONE                 0x40D7
 #define VAR_SOOTOPOLIS_WALLACE_STATE                     0x40D8
@@ -239,13 +241,13 @@
 #define VAR_UNUSED_0x40DB                                0x40DB // Unused Var
 #define VAR_UNUSED_0x40DC                                0x40DC // Unused Var
 #define VAR_GIFT_PICHU_SLOT                              0x40DD
-#define VAR_UNUSED_0X40DE                                0x40DE // Was unused Mystery Gift Var
-#define VAR_UNUSED_0X40DF                                0x40DF // Was unused Mystery Gift Var
-#define VAR_UNUSED_0X40E0                                0x40E0 // Was unused Mystery Gift Var
-#define VAR_UNUSED_0X40E1                                0x40E1 // Was unused Mystery Gift Var
-#define VAR_UNUSED_0X40E2                                0x40E2 // Was unused Mystery Gift Var
-#define VAR_UNUSED_0X40E3                                0x40E3 // Was unused Mystery Gift Var
-#define VAR_UNUSED_0X40E4                                0x40E4 // Was unused Mystery Gift Var
+#define VAR_UNUSED_0x40DE                                0x40DE // Was unused Mystery Gift Var
+#define VAR_UNUSED_0x40DF                                0x40DF // Was unused Mystery Gift Var
+#define VAR_UNUSED_0x40E0                                0x40E0 // Was unused Mystery Gift Var
+#define VAR_UNUSED_0x40E1                                0x40E1 // Was unused Mystery Gift Var
+#define VAR_UNUSED_0x40E2                                0x40E2 // Was unused Mystery Gift Var
+#define VAR_UNUSED_0x40E3                                0x40E3 // Was unused Mystery Gift Var
+#define VAR_UNUSED_0x40E4                                0x40E4 // Was unused Mystery Gift Var
 #define VAR_UNUSED_0x40E5                                0x40E5 // Unused Var
 #define VAR_DAILY_SLOTS                                  0x40E6
 #define VAR_DAILY_WILDS                                  0x40E7
@@ -324,13 +326,14 @@
 
 #define VAR_TEMP_TRANSFERRED_SPECIES  VAR_TEMP_1
 
-#define VAR_BATTLE_BGM  VAR_TEMP_F
+#define VAR_BATTLE_TRANSITION   VAR_TEMP_E // See src/battle_setup.c for results
+#define VAR_BATTLE_BGM          VAR_TEMP_F
 
 #if TESTING
 #define TESTING_VARS_START                  0x9000
 #define TESTING_VAR_DIFFICULTY              (TESTING_VARS_START + 0x0)
-#define TESTING_VAR_STARTING_STATUS         (TESTING_VARS_START + 0x1)
-#define TESTING_VAR_STARTING_STATUS_TIMER   (TESTING_VARS_START + 0x2)
+#define TESTING_VAR_TRAINER_SLIDES          (TESTING_VARS_START + 0x1)
+#define TESTING_VAR_UNUSED_2                (TESTING_VARS_START + 0x2)
 #define TESTING_VAR_UNUSED_3                (TESTING_VARS_START + 0x3)
 #define TESTING_VAR_UNUSED_4                (TESTING_VARS_START + 0x4)
 #define TESTING_VAR_UNUSED_5                (TESTING_VARS_START + 0x5)

@@ -1,15 +1,15 @@
 #ifndef GUARD_CONSTANTS_EXPANSION_H
 #define GUARD_CONSTANTS_EXPANSION_H
 
-// Last version: 1.13.4
+// Last version: 1.16.4
 #define EXPANSION_VERSION_MAJOR 1
-#define EXPANSION_VERSION_MINOR 13
+#define EXPANSION_VERSION_MINOR 16
 #define EXPANSION_VERSION_PATCH 4
 
-// Last version: 1.4.2
-#define EMERALBODY_VERSION_MAJOR 1
-#define EMERALBODY_VERSION_MINOR 4
-#define EMERALBODY_VERSION_PATCH 2
+// Last version: 2.0.4
+#define EMERALBODY_VERSION_MAJOR 2
+#define EMERALBODY_VERSION_MINOR 0
+#define EMERALBODY_VERSION_PATCH 4
 
 // FALSE if this this version of Expansion is not a tagged commit, i.e.
 // it contains unreleased changes.

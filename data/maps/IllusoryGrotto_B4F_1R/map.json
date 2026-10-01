@@ -1,0 +1,310 @@
+{
+  "id": "MAP_ILLUSORY_GROTTO_B4F_1R",
+  "name": "IllusoryGrotto_B4F_1R",
+  "layout": "LAYOUT_ILLUSORY_GROTTO_B4F_1R",
+  "music": "MUS_DP_VICTORY_ROAD",
+  "region_map_section": "MAPSEC_ILLUSORY_GROTTO",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_DUNGEON_WITH_SHADOWS",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_BLUE",
+      "x": 7,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IllusoryGrotto_ChallengeBall",
+      "flag": "FLAG_CHALLENGE_BALL_ILLUSORY_GROTTO"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "x": 13,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IllusoryGrotto_B4F_1R_Rock",
+      "flag": "FLAG_EXP_1_ILLUSORY_GROTTO_B4F_1R_ROCK"
+    },
+    {
+      "local_id": "IG_BOSS",
+      "graphics_id": "OBJ_EVENT_GFX_CALAMITY_MAW_SHADOWED",
+      "x": 26,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "local_id": "IG_HARPER",
+      "graphics_id": "OBJ_EVENT_GFX_HARPER",
+      "x": 26,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "local_id": "IG_JAKSON",
+      "graphics_id": "OBJ_EVENT_GFX_JAKSON",
+      "x": 24,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "local_id": "IG_REDD",
+      "graphics_id": "OBJ_EVENT_GFX_REDD",
+      "x": 23,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Redd_Exp1_Town09",
+      "flag": "FLAG_TEMP_3"
+    },
+    {
+      "local_id": "IG_BARON",
+      "graphics_id": "OBJ_EVENT_GFX_BARON",
+      "x": 28,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "local_id": "IG_SAKURA",
+      "graphics_id": "OBJ_EVENT_GFX_SAKURA",
+      "x": 27,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "local_id": "IG_SHADOWED_LUCARIO_1",
+      "graphics_id": "OBJ_EVENT_GFX_SHADOWED_LUCARIO",
+      "x": 25,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
+    },
+    {
+      "local_id": "IG_SHADOWED_LUCARIO_2",
+      "graphics_id": "OBJ_EVENT_GFX_SHADOWED_LUCARIO",
+      "x": 26,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_ILLUSORY_GROTTO_B4F_2R",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_ILLUSORY_GROTTO_B4F_SPECIAL_ROOM",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_3",
+      "var_value": "0",
+      "script": "IllusoryGrotto_B4F_1R_Monster"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_TEMP_3",
+      "var_value": "0",
+      "script": "IllusoryGrotto_B4F_1R_Monster"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "50",
+      "script": "Expansion1_Rival_Scene10"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "50",
+      "script": "Expansion1_Rival_Scene10"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "50",
+      "script": "Expansion1_Rival_Scene10"
+    },
+    {
+      "type": "trigger",
+      "x": 26,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "50",
+      "script": "Expansion1_Rival_Scene10"
+    },
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "50",
+      "script": "Expansion1_Rival_Scene10"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "50",
+      "script": "Expansion1_Rival_Scene10"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "50",
+      "script": "Expansion1_Rival_Scene10"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "IGB4_MoveCameraUp"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "1",
+      "script": "IGB4_MoveCameraDown"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "IGB4_MoveCameraUp"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "IGB4_MoveCameraUp"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "1",
+      "script": "IGB4_MoveCameraDown"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 28,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_SOUTH",
+      "script": "HealingSpring_Exp1"
+    }
+  ]
+}

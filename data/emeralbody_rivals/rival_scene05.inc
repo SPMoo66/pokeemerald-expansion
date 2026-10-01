@@ -270,7 +270,7 @@ Rival_Scene05_24:
 # 191 "data/emeralbody_rivals/rival_scene05.pory"
 	waitmovement 0
 # 192 "data/emeralbody_rivals/rival_scene05.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 193 "data/emeralbody_rivals/rival_scene05.pory"
 	msgbox Rival_Scene05_Text_10
 # 194 "data/emeralbody_rivals/rival_scene05.pory"
@@ -280,7 +280,7 @@ Rival_Scene05_24:
 # 196 "data/emeralbody_rivals/rival_scene05.pory"
 	playse SE_THUNDER
 # 197 "data/emeralbody_rivals/rival_scene05.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 198 "data/emeralbody_rivals/rival_scene05.pory"
 	applymovement 15, Common_Movement_XMark
 # 199 "data/emeralbody_rivals/rival_scene05.pory"
@@ -334,7 +334,7 @@ Rival_Scene05_28:
 # 227 "data/emeralbody_rivals/rival_scene05.pory"
 	msgbox Rival_Scene05_Text_15
 # 228 "data/emeralbody_rivals/rival_scene05.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 229 "data/emeralbody_rivals/rival_scene05.pory"
 	applymovement 15, Common_Movement_WalkInPlaceDown
 # 230 "data/emeralbody_rivals/rival_scene05.pory"
@@ -360,7 +360,7 @@ Rival_Scene05_32:
 # 243 "data/emeralbody_rivals/rival_scene05.pory"
 	msgbox Rival_Scene05_Text_18
 # 244 "data/emeralbody_rivals/rival_scene05.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 245 "data/emeralbody_rivals/rival_scene05.pory"
 	applymovement 15, Common_Movement_WalkInPlaceRight
 # 246 "data/emeralbody_rivals/rival_scene05.pory"
@@ -408,7 +408,7 @@ Rival_Scene05_36:
 # 272 "data/emeralbody_rivals/rival_scene05.pory"
 	msgbox Rival_Scene05_Text_26
 # 273 "data/emeralbody_rivals/rival_scene05.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 274 "data/emeralbody_rivals/rival_scene05.pory"
 	applymovement 13, Common_Movement_WalkInPlaceRight
 # 275 "data/emeralbody_rivals/rival_scene05.pory"
@@ -464,7 +464,7 @@ Rival_Scene05_36:
 # 300 "data/emeralbody_rivals/rival_scene05.pory"
 	msgbox Rival_Scene05_Text_36
 # 301 "data/emeralbody_rivals/rival_scene05.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 302 "data/emeralbody_rivals/rival_scene05.pory"
 	applymovement 15, Common_Movement_Smile
 # 303 "data/emeralbody_rivals/rival_scene05.pory"
@@ -492,7 +492,7 @@ Rival_Scene05_36:
 # 316 "data/emeralbody_rivals/rival_scene05.pory"
 	msgbox Rival_Scene05_Text_41
 # 317 "data/emeralbody_rivals/rival_scene05.pory"
-	speakername CommonText_Baron
+	call GetBaronsName
 # 318 "data/emeralbody_rivals/rival_scene05.pory"
 	msgbox Rival_Scene05_Text_42
 # 319 "data/emeralbody_rivals/rival_scene05.pory"

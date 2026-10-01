@@ -1,6 +1,7 @@
 LavaridgeTown_Gym_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, LavaridgeTown_Gym_1F_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, LavaridgeTown_Gym_1F_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, LavaridgeTown_Gym_1F_OnFrame
 	.byte 0
 
 LavaridgeTown_Gym_1F_OnLoad:
@@ -66,6 +67,10 @@ LavaridgeTown_Gym_1F_EventScript_CheckBuryDanielle::
 	setobjectmovementtype LOCALID_DANIELLE, MOVEMENT_TYPE_BURIED
 LavaridgeTown_Gym_1F_EventScript_EndCheckBuryTrainers::
 	return
+
+LavaridgeTown_Gym_1F_OnFrame:
+	map_script_2 VAR_TEMP_6, 0, BattleWarningLavaridgeSakuraHelper
+	.2byte 0
 
 LavaridgeTown_Gym_1F_EventScript_Cole::
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, LOCALID_COLE, TRAINER_COLE, LavaridgeTown_Gym_1F_Text_ColeIntro, LavaridgeTown_Gym_1F_Text_ColeDefeat, LavaridgeTown_Gym_EventScript_CheckTrainerScript, OBJ_ID_NONE, TRAINER_NONE, NULL, NULL, NULL, NULL, NULL, FALSE, TRUE, FALSE, FALSE

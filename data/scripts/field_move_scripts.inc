@@ -385,19 +385,19 @@ EventScript_UseRockClimb::
 	waitstate
 	goto EventScript_EndRockClimb
 	end
-	
+
 EventScript_CantRockClimb::
 	msgbox Text_CantRockClimb, MSGBOX_DEFAULT
 	releaseall
 	end
-	
+
 EventScript_EndRockClimb::
 	releaseall
 	end
-    
+
 Text_CantRockClimb:
-    .string "The cliff is steep.\n"
-    .string "A Pokémon may be able to climb it.$"
+	.string "The cliff is steep.\n"
+	.string "A Pokémon may be able to climb it.$"
 
 EventScript_UseDefog::
 	lockall

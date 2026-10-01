@@ -78,138 +78,130 @@ BattleTornadus::
 # 41 "data/maps/GaleforceCliffs/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 42 "data/maps/GaleforceCliffs/scripts.pory"
-	waitstate
-# 43 "data/maps/GaleforceCliffs/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 44 "data/maps/GaleforceCliffs/scripts.pory"
+# 43 "data/maps/GaleforceCliffs/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 45 "data/maps/GaleforceCliffs/scripts.pory"
+# 44 "data/maps/GaleforceCliffs/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleTornadus_2
 BattleTornadus_1:
-# 48 "data/maps/GaleforceCliffs/scripts.pory"
+# 47 "data/maps/GaleforceCliffs/scripts.pory"
 	release
 	end
 
 BattleTornadus_2:
-# 46 "data/maps/GaleforceCliffs/scripts.pory"
+# 45 "data/maps/GaleforceCliffs/scripts.pory"
 	setflag FLAG_CAUGHT_TORNADUS
 	goto BattleTornadus_1
 
 
 BattleThundurus::
-# 53 "data/maps/GaleforceCliffs/scripts.pory"
+# 52 "data/maps/GaleforceCliffs/scripts.pory"
 	lock
-# 54 "data/maps/GaleforceCliffs/scripts.pory"
+# 53 "data/maps/GaleforceCliffs/scripts.pory"
 	faceplayer
-# 55 "data/maps/GaleforceCliffs/scripts.pory"
+# 54 "data/maps/GaleforceCliffs/scripts.pory"
 	setvar VAR_LAST_TALKED, 2
-# 56 "data/maps/GaleforceCliffs/scripts.pory"
+# 55 "data/maps/GaleforceCliffs/scripts.pory"
 	playmoncry SPECIES_THUNDURUS, CRY_MODE_ENCOUNTER
-# 57 "data/maps/GaleforceCliffs/scripts.pory"
+# 56 "data/maps/GaleforceCliffs/scripts.pory"
 	msgbox BattleThundurus_Text_0
-# 58 "data/maps/GaleforceCliffs/scripts.pory"
+# 57 "data/maps/GaleforceCliffs/scripts.pory"
 	waitmoncry
-# 59 "data/maps/GaleforceCliffs/scripts.pory"
+# 58 "data/maps/GaleforceCliffs/scripts.pory"
 	seteventmon SPECIES_THUNDURUS, 40
-# 60 "data/maps/GaleforceCliffs/scripts.pory"
+# 59 "data/maps/GaleforceCliffs/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 61 "data/maps/GaleforceCliffs/scripts.pory"
+# 60 "data/maps/GaleforceCliffs/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 62 "data/maps/GaleforceCliffs/scripts.pory"
-	waitstate
-# 63 "data/maps/GaleforceCliffs/scripts.pory"
+# 61 "data/maps/GaleforceCliffs/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 64 "data/maps/GaleforceCliffs/scripts.pory"
+# 62 "data/maps/GaleforceCliffs/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 65 "data/maps/GaleforceCliffs/scripts.pory"
+# 63 "data/maps/GaleforceCliffs/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleThundurus_2
 BattleThundurus_1:
-# 68 "data/maps/GaleforceCliffs/scripts.pory"
+# 66 "data/maps/GaleforceCliffs/scripts.pory"
 	release
 	end
 
 BattleThundurus_2:
-# 66 "data/maps/GaleforceCliffs/scripts.pory"
+# 64 "data/maps/GaleforceCliffs/scripts.pory"
 	setflag FLAG_CAUGHT_THUNDURUS
 	goto BattleThundurus_1
 
 
 BattleEnamorus::
-# 73 "data/maps/GaleforceCliffs/scripts.pory"
+# 71 "data/maps/GaleforceCliffs/scripts.pory"
 	lock
-# 74 "data/maps/GaleforceCliffs/scripts.pory"
+# 72 "data/maps/GaleforceCliffs/scripts.pory"
 	faceplayer
-# 75 "data/maps/GaleforceCliffs/scripts.pory"
+# 73 "data/maps/GaleforceCliffs/scripts.pory"
 	setvar VAR_LAST_TALKED, 3
-# 76 "data/maps/GaleforceCliffs/scripts.pory"
+# 74 "data/maps/GaleforceCliffs/scripts.pory"
 	playmoncry SPECIES_ENAMORUS, CRY_MODE_ENCOUNTER
-# 77 "data/maps/GaleforceCliffs/scripts.pory"
+# 75 "data/maps/GaleforceCliffs/scripts.pory"
 	msgbox BattleEnamorus_Text_0
-# 78 "data/maps/GaleforceCliffs/scripts.pory"
+# 76 "data/maps/GaleforceCliffs/scripts.pory"
 	waitmoncry
-# 79 "data/maps/GaleforceCliffs/scripts.pory"
+# 77 "data/maps/GaleforceCliffs/scripts.pory"
 	seteventmon SPECIES_ENAMORUS, 40
-# 80 "data/maps/GaleforceCliffs/scripts.pory"
+# 78 "data/maps/GaleforceCliffs/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 81 "data/maps/GaleforceCliffs/scripts.pory"
+# 79 "data/maps/GaleforceCliffs/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 82 "data/maps/GaleforceCliffs/scripts.pory"
-	waitstate
-# 83 "data/maps/GaleforceCliffs/scripts.pory"
+# 80 "data/maps/GaleforceCliffs/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 84 "data/maps/GaleforceCliffs/scripts.pory"
+# 81 "data/maps/GaleforceCliffs/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 85 "data/maps/GaleforceCliffs/scripts.pory"
+# 82 "data/maps/GaleforceCliffs/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleEnamorus_2
 BattleEnamorus_1:
-# 88 "data/maps/GaleforceCliffs/scripts.pory"
+# 85 "data/maps/GaleforceCliffs/scripts.pory"
 	release
 	end
 
 BattleEnamorus_2:
-# 86 "data/maps/GaleforceCliffs/scripts.pory"
+# 83 "data/maps/GaleforceCliffs/scripts.pory"
 	setflag FLAG_CAUGHT_ENAMORUS
 	goto BattleEnamorus_1
 
 
 BattleLandorus::
-# 93 "data/maps/GaleforceCliffs/scripts.pory"
+# 90 "data/maps/GaleforceCliffs/scripts.pory"
 	lock
-# 94 "data/maps/GaleforceCliffs/scripts.pory"
+# 91 "data/maps/GaleforceCliffs/scripts.pory"
 	faceplayer
-# 95 "data/maps/GaleforceCliffs/scripts.pory"
+# 92 "data/maps/GaleforceCliffs/scripts.pory"
 	setvar VAR_LAST_TALKED, 4
-# 96 "data/maps/GaleforceCliffs/scripts.pory"
+# 93 "data/maps/GaleforceCliffs/scripts.pory"
 	playmoncry SPECIES_LANDORUS, CRY_MODE_ENCOUNTER
-# 97 "data/maps/GaleforceCliffs/scripts.pory"
+# 94 "data/maps/GaleforceCliffs/scripts.pory"
 	msgbox BattleLandorus_Text_0
-# 98 "data/maps/GaleforceCliffs/scripts.pory"
+# 95 "data/maps/GaleforceCliffs/scripts.pory"
 	waitmoncry
-# 99 "data/maps/GaleforceCliffs/scripts.pory"
+# 96 "data/maps/GaleforceCliffs/scripts.pory"
 	seteventmon SPECIES_LANDORUS, 50
-# 100 "data/maps/GaleforceCliffs/scripts.pory"
+# 97 "data/maps/GaleforceCliffs/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 101 "data/maps/GaleforceCliffs/scripts.pory"
+# 98 "data/maps/GaleforceCliffs/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 102 "data/maps/GaleforceCliffs/scripts.pory"
-	waitstate
-# 103 "data/maps/GaleforceCliffs/scripts.pory"
+# 99 "data/maps/GaleforceCliffs/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 104 "data/maps/GaleforceCliffs/scripts.pory"
+# 100 "data/maps/GaleforceCliffs/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 105 "data/maps/GaleforceCliffs/scripts.pory"
+# 101 "data/maps/GaleforceCliffs/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleLandorus_2
 BattleLandorus_1:
-# 108 "data/maps/GaleforceCliffs/scripts.pory"
+# 104 "data/maps/GaleforceCliffs/scripts.pory"
 	release
 	end
 
 BattleLandorus_2:
-# 106 "data/maps/GaleforceCliffs/scripts.pory"
+# 102 "data/maps/GaleforceCliffs/scripts.pory"
 	setflag FLAG_CAUGHT_LANDORUS
 	goto BattleLandorus_1
 
@@ -219,13 +211,13 @@ BattleTornadus_Text_0:
 	.string "Whhhwhhhwhhh!!$"
 
 BattleThundurus_Text_0:
-# 57 "data/maps/GaleforceCliffs/scripts.pory"
+# 56 "data/maps/GaleforceCliffs/scripts.pory"
 	.string "GKrrrkrrrkrrak!$"
 
 BattleEnamorus_Text_0:
-# 77 "data/maps/GaleforceCliffs/scripts.pory"
+# 75 "data/maps/GaleforceCliffs/scripts.pory"
 	.string "Amoooooor!$"
 
 BattleLandorus_Text_0:
-# 97 "data/maps/GaleforceCliffs/scripts.pory"
+# 94 "data/maps/GaleforceCliffs/scripts.pory"
 	.string "Karamukukuk!$"

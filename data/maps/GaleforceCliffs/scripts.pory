@@ -39,7 +39,6 @@ script BattleTornadus {
 	seteventmon(SPECIES_TORNADUS, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -59,7 +58,6 @@ script BattleThundurus {
 	seteventmon(SPECIES_THUNDURUS, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -79,7 +77,6 @@ script BattleEnamorus {
 	seteventmon(SPECIES_ENAMORUS, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -99,7 +96,6 @@ script BattleLandorus {
 	seteventmon(SPECIES_LANDORUS, 50)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {

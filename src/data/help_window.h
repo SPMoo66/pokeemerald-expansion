@@ -1,0 +1,113 @@
+// Add entries here
+// These entries are example entries which you can replace, but they exist to get you started.
+// Remember to modify include/constants/help_window.h to include identifiers so they can be used in event scripts.
+const struct HelpWindow gHelpWindowInfo[] =
+{
+    [HELP_EXPANSION_1_BOAT_EXPLANATION] =
+    {
+        .header = COMPOUND_STRING("A New Adventure Begins!"),
+        .desc = COMPOUND_STRING("Travel through the uncharted waters\n"
+                                "and solve the mystery of the island's\n"
+                                "treasure!\n\n"
+                                "You can now use the boat at the camp to\n"
+                                "return to Slateport Harbor."
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_NORMAL
+    },
+    [HELP_EXPANSION_1_NPC_FOLLOWERS] =
+    {
+        .header = COMPOUND_STRING("NPC Followers"),
+        .desc = COMPOUND_STRING("Harper joins you as your first\n"
+                                "NPC Follower!\n\n"
+                                "She will join you in trainer battles.\n\n"
+                                "Your first three Pokémon will be used."
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_NORMAL
+    },
+    [HELP_EXPANSION_1_NPC_FOLLOWERS_2] =
+    {
+        .header = COMPOUND_STRING("NPC Followers 2"),
+        .desc = COMPOUND_STRING("While Harper is following, you will\n"
+                                "respawn within the dungeon.\n\n"
+                                "You are free to back out at any time,\n"
+                                "but the dungeon must be\n"
+                                "completed to progress."
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_NORMAL
+    },
+    [HELP_BATTLE_CONTROLS] =
+    {
+        .header = COMPOUND_STRING("Information: Battle Controls"),
+        .desc = COMPOUND_STRING("More actions have been added to battles!\n\n"
+                                "Press {R_BUTTON} to throw the selected Pokéball\n"
+                                "Hold {R_BUTTON} and press {DPAD_LEFTRIGHT} to cycle Pokéballs\n"
+                                "Press {L_BUTTON} for Move Information\n"
+                                "Hold {L_BUTTON} to force Battle Speed 1x\n"
+                                "Press {START_BUTTON} to Mega Evolve or Terastallize\n"
+                                "Press {SELECT_BUTTON} for the Battle Debug Menu"
+                            ),
+    },
+    [HELP_POKEDEX] =
+    {
+        .header = COMPOUND_STRING("Information: Pokédex"),
+        .desc = COMPOUND_STRING("The Pokédex in Emeralbody is more advanced\n"
+                                "than normal.\n\n"
+                                "Use the Stats and Evo tabs within to view\n"
+                                "learnsets, evolution methods, alternate\n"
+                                "forms, and more."
+                            ),
+    },
+    [HELP_SHOP_INVENTORY] =
+    {
+        .header = COMPOUND_STRING("Information: Shop Inventory"),
+        .desc = COMPOUND_STRING("After obtaining gym badges, the inventory\n"
+                                "of shops will update, including the vendor\n"
+                                "in Slateport City that sells evolution items.\n\n"
+                                "Check out the documentation for details!"
+                            ),
+    },
+    [HELP_FLYING] =
+    {
+        .header = COMPOUND_STRING("Information: Flying"),
+        .desc = COMPOUND_STRING("After obtaining the second gym badge, you\n"
+                                "will be able to use Fly outside of battle.\n\n"
+                                "Open the party menu in the field and select\n"
+                                "one of your Pokémon to use Fly.\n\n"
+                                "No HMs are required."
+                            ),
+    },
+    [HELP_TERASTALLIZATION] =
+    {
+        .header = COMPOUND_STRING("Information: Terastallization"),
+        .desc = COMPOUND_STRING("In battle, press {START_BUTTON} to Terastallize!\n\n"
+                                "The Pokémon must not currently be able\n"
+                                "to Mega Evolve.\n"
+                                "You can only Terastallize once per battle.\n\n"
+                                "You can also Mega Evolve once per battle."
+                            ),
+    },
+    [HELP_MEGA_EVOLUTION] =
+    {
+        .header = COMPOUND_STRING("Information: Mega Evolution"),
+        .desc = COMPOUND_STRING("In battle, press {START_BUTTON} to Mega Evolve!\n\n"
+                                "The Pokémon must hold their Mega Stone\n"
+                                "to be able to Mega Evolve.\n"
+                                "You can only Mega Evolve once per battle.\n\n"
+                                "You can also Terastallize once per battle."
+                            ),
+    },/*
+    [HELP_GIMMIGHOUL_COINS] =
+    {
+        .header = COMPOUND_STRING("Information: Evolving Gimmighoul into Gholdengo"),
+        .desc = COMPOUND_STRING("To evolve Gimmighoul into Gholdengo, you\n"
+                                "need to gather 999 {COLOR RED}Gimmighoul Coins{COLOR DARK_GRAY}.\n\n"
+                                "You can find Gimmighoul Coins scattered\n"
+                                "all around Paldea."
+                            ),
+        .headerFont = FONT_NARROWER,
+    },*/
+    // Add more entries
+};

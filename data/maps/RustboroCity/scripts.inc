@@ -10,8 +10,10 @@ RustboroCity_OnTransition:
 	setflag FLAG_TEMP_2
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_4
+	setflag FLAG_TEMP_5
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 2, RustboroCity_EventScript_UpdateRivalState
 	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 3, EventScript_Clear_FlagTemp1
+	call_if_eq VAR_EMERALBODY_RIVAL_STATE, 51, EventScript_Clear_FlagTemp5
 	call_if_eq VAR_MAGEARNA_STATE, 2, EventScript_Clear_FlagTemp2
 	call_if_eq VAR_MAGEARNA_STATE, 3, EventScript_Clear_FlagTemp3
 	call_if_eq VAR_MAGEARNA_STATE, 4, EventScript_Clear_FlagTemp4
@@ -97,7 +99,6 @@ RustboroCity_EventScript_PleaseSelectPokenav::
 RustboroCity_EventScript_MatchCallTutorial::
 	setflag FLAG_ADDED_MATCH_CALL_TO_POKENAV
 	special ScriptMenu_CreateStartMenuForPokenavTutorial
-	waitstate
 	switch VAR_RESULT
 	case 0, RustboroCity_EventScript_PleaseSelectPokenav
 	case 1, RustboroCity_EventScript_PleaseSelectPokenav
@@ -108,7 +109,6 @@ RustboroCity_EventScript_MatchCallTutorial::
 	case 7, RustboroCity_EventScript_PleaseSelectPokenav
 	case MULTI_B_PRESSED, RustboroCity_EventScript_PleaseSelectPokenav
 	special OpenPokenavForTutorial
-	waitstate
 	delay 20
 	msgbox RustboroCity_Text_IdBetterGetBackToWork, MSGBOX_DEFAULT
 	closemessage

@@ -95,74 +95,72 @@ BattleShaymin::
 # 43 "data/maps/FloralParadise/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 44 "data/maps/FloralParadise/scripts.pory"
-	waitstate
-# 45 "data/maps/FloralParadise/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 46 "data/maps/FloralParadise/scripts.pory"
+# 45 "data/maps/FloralParadise/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 47 "data/maps/FloralParadise/scripts.pory"
+# 46 "data/maps/FloralParadise/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleShaymin_2
 BattleShaymin_1:
-# 50 "data/maps/FloralParadise/scripts.pory"
+# 49 "data/maps/FloralParadise/scripts.pory"
 	release
 	end
 
 BattleShaymin_2:
-# 48 "data/maps/FloralParadise/scripts.pory"
+# 47 "data/maps/FloralParadise/scripts.pory"
 	setflag FLAG_CAUGHT_SHAYMIN
 	goto BattleShaymin_1
 
 
 FloralParadise_GracideaGirl::
-# 55 "data/maps/FloralParadise/scripts.pory"
+# 54 "data/maps/FloralParadise/scripts.pory"
 	lock
-# 56 "data/maps/FloralParadise/scripts.pory"
+# 55 "data/maps/FloralParadise/scripts.pory"
 	faceplayer
-# 57 "data/maps/FloralParadise/scripts.pory"
+# 56 "data/maps/FloralParadise/scripts.pory"
 	checkitem ITEM_GRACIDEA
-# 58 "data/maps/FloralParadise/scripts.pory"
+# 57 "data/maps/FloralParadise/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq FloralParadise_GracideaGirl_2
-# 66 "data/maps/FloralParadise/scripts.pory"
+# 65 "data/maps/FloralParadise/scripts.pory"
 	goto_if_unset FLAG_TEMP_4, FloralParadise_GracideaGirl_3
-# 78 "data/maps/FloralParadise/scripts.pory"
+# 77 "data/maps/FloralParadise/scripts.pory"
 	msgbox FloralParadise_GracideaGirl_Text_4
 FloralParadise_GracideaGirl_1:
-# 80 "data/maps/FloralParadise/scripts.pory"
+# 79 "data/maps/FloralParadise/scripts.pory"
 	release
 	return
 
 FloralParadise_GracideaGirl_2:
-# 59 "data/maps/FloralParadise/scripts.pory"
+# 58 "data/maps/FloralParadise/scripts.pory"
 	msgbox FloralParadise_GracideaGirl_Text_0
-# 62 "data/maps/FloralParadise/scripts.pory"
+# 61 "data/maps/FloralParadise/scripts.pory"
 	giveitem ITEM_GRACIDEA
-# 63 "data/maps/FloralParadise/scripts.pory"
+# 62 "data/maps/FloralParadise/scripts.pory"
 	msgbox FloralParadise_GracideaGirl_Text_1
-# 64 "data/maps/FloralParadise/scripts.pory"
+# 63 "data/maps/FloralParadise/scripts.pory"
 	setflag FLAG_TEMP_4
 	goto FloralParadise_GracideaGirl_1
 
 FloralParadise_GracideaGirl_3:
-# 67 "data/maps/FloralParadise/scripts.pory"
+# 66 "data/maps/FloralParadise/scripts.pory"
 	checkspecies SPECIES_SHAYMIN, NO_PARTY_SCREEN
-# 68 "data/maps/FloralParadise/scripts.pory"
+# 67 "data/maps/FloralParadise/scripts.pory"
 	copyvar VAR_TEMP_1, VAR_RESULT
-# 69 "data/maps/FloralParadise/scripts.pory"
+# 68 "data/maps/FloralParadise/scripts.pory"
 	checkspecies SPECIES_SHAYMIN_SKY, NO_PARTY_SCREEN
-# 70 "data/maps/FloralParadise/scripts.pory"
+# 69 "data/maps/FloralParadise/scripts.pory"
 	compare VAR_TEMP_1, 0
 	goto_if_ne FloralParadise_GracideaGirl_7
-# 70 "data/maps/FloralParadise/scripts.pory"
+# 69 "data/maps/FloralParadise/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne FloralParadise_GracideaGirl_7
-# 74 "data/maps/FloralParadise/scripts.pory"
+# 73 "data/maps/FloralParadise/scripts.pory"
 	msgbox FloralParadise_GracideaGirl_Text_3
 	goto FloralParadise_GracideaGirl_1
 
 FloralParadise_GracideaGirl_7:
-# 71 "data/maps/FloralParadise/scripts.pory"
+# 70 "data/maps/FloralParadise/scripts.pory"
 	msgbox FloralParadise_GracideaGirl_Text_2
 	goto FloralParadise_GracideaGirl_1
 
@@ -172,7 +170,7 @@ BattleShaymin_Text_0:
 	.string "Kyuu uuhn!$"
 
 FloralParadise_GracideaGirl_Text_0:
-# 59 "data/maps/FloralParadise/scripts.pory"
+# 58 "data/maps/FloralParadise/scripts.pory"
 	.string "Hi. Did you just catch Shaymin?\p"
 	.string "I was hoping to come and give it\n"
 	.string "some of its favorite flowers.\p"
@@ -180,21 +178,21 @@ FloralParadise_GracideaGirl_Text_0:
 	.string "Shaymin for me?$"
 
 FloralParadise_GracideaGirl_Text_1:
-# 63 "data/maps/FloralParadise/scripts.pory"
+# 62 "data/maps/FloralParadise/scripts.pory"
 	.string "I'll come back here, so please\n"
 	.string "bring Shaymin by some time!$"
 
 FloralParadise_GracideaGirl_Text_2:
-# 71 "data/maps/FloralParadise/scripts.pory"
+# 70 "data/maps/FloralParadise/scripts.pory"
 	.string "Aww, it looks like Shaymin is doing well.\n"
 	.string "I'm glad I got to see it again.\l"
 	.string "Thank you for taking good care of it!$"
 
 FloralParadise_GracideaGirl_Text_3:
-# 74 "data/maps/FloralParadise/scripts.pory"
+# 73 "data/maps/FloralParadise/scripts.pory"
 	.string "Please bring Shaymin by some time so\n"
 	.string "I can see it again!$"
 
 FloralParadise_GracideaGirl_Text_4:
-# 78 "data/maps/FloralParadise/scripts.pory"
+# 77 "data/maps/FloralParadise/scripts.pory"
 	.string "Please take good care of Shaymin!$"

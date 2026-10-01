@@ -99,14 +99,12 @@ PlayersHouse_2F_EventScript_CheckWallClock::
 	incrementgamestat GAME_STAT_CHECKED_CLOCK
 	fadescreen FADE_TO_BLACK
 	special Special_ViewWallClock
-	waitstate
 	releaseall
 	end
 
 PlayersHouse_2F_EventScript_SetWallClock::
 	fadescreen FADE_TO_BLACK
 	special StartWallClock
-	waitstate
 	return
 
 PlayersHouse_2F_Movement_MomEntersMale:
@@ -464,15 +462,12 @@ PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	msgbox PlayersHouse_1F_Text_LatiEmergencyNewsFlash, MSGBOX_DEFAULT
 	closemessage
 	clearflag FLAG_SYS_TV_LATIAS_LATIOS
-	setflag FLAG_LATIOS_OR_LATIAS_ROAMING
 	special TurnOffTVScreen
 	call_if_eq VAR_0x8008, MALE, PlayersHouse_1F_EventScript_MomApproachPlayerAfterTVMale
 	call_if_eq VAR_0x8008, FEMALE, PlayersHouse_1F_EventScript_MomApproachPlayerAfterTVFemale
 	speakername CommonText_Mom
 	msgbox PlayersHouse_1F_Text_WhatColorDidTheySay, MSGBOX_DEFAULT
 	dynmultichoice 18, 2, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, PlayersHouse_1F_Text_Lati1, PlayersHouse_1F_Text_Lati2, PlayersHouse_1F_Text_Lati3, PlayersHouse_1F_Text_Lati4, PlayersHouse_1F_Text_Lati5, PlayersHouse_1F_Text_Lati6, PlayersHouse_1F_Text_Lati7, PlayersHouse_1F_Text_Lati8, PlayersHouse_1F_Text_Lati9, PlayersHouse_1F_Text_Lati10
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, PlayersHouse_1F_EventScript_SetLatios
 	speakername CommonText_Mom
 	msgbox PlayersHouse_1F_Text_StillUnknownPokemon, MSGBOX_DEFAULT
 	closemessage
@@ -480,10 +475,6 @@ PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 4
 	releaseall
 	end
-
-PlayersHouse_1F_EventScript_SetLatios::
-	copyvar VAR_ROAMER_POKEMON, 1
-	return
 
 PlayersHouse_1F_Text_Lati1:
 	.string "Red$"

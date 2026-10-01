@@ -48,21 +48,19 @@ BattleManaphy::
 # 26 "data/maps/SeasideHollow/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 27 "data/maps/SeasideHollow/scripts.pory"
-	waitstate
-# 28 "data/maps/SeasideHollow/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 29 "data/maps/SeasideHollow/scripts.pory"
+# 28 "data/maps/SeasideHollow/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 30 "data/maps/SeasideHollow/scripts.pory"
+# 29 "data/maps/SeasideHollow/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleManaphy_2
 BattleManaphy_1:
-# 33 "data/maps/SeasideHollow/scripts.pory"
+# 32 "data/maps/SeasideHollow/scripts.pory"
 	release
 	end
 
 BattleManaphy_2:
-# 31 "data/maps/SeasideHollow/scripts.pory"
+# 30 "data/maps/SeasideHollow/scripts.pory"
 	setflag FLAG_CAUGHT_MANAPHY
 	goto BattleManaphy_1
 

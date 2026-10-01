@@ -167,7 +167,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Emote_Test",
+      "script": "NULL",
       "flag": "FLAG_TEMP_3"
     },
     {
@@ -181,7 +181,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Emote_Test",
+      "script": "NULL",
       "flag": "FLAG_ALWAYS_SET"
     },
     {
@@ -195,7 +195,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Emote_Test",
+      "script": "NULL",
       "flag": "FLAG_TEMP_3"
     },
     {
@@ -209,7 +209,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Emote_Test",
+      "script": "NULL",
       "flag": "FLAG_TEMP_3"
     },
     {
@@ -223,7 +223,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Emote_Test",
+      "script": "NULL",
       "flag": "FLAG_ALWAYS_SET"
     },
     {
@@ -397,5 +397,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LittlerootTown_EventScript_MaysHouseSign"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

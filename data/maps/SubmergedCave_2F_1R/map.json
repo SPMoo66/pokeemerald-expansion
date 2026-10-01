@@ -1,0 +1,224 @@
+{
+  "id": "MAP_SUBMERGED_CAVE_2F_1R",
+  "name": "SubmergedCave_2F_1R",
+  "layout": "LAYOUT_SUBMERGED_CAVE_2F_1R",
+  "music": "MUS_DP_STARK_MOUNTAIN",
+  "region_map_section": "MAPSEC_SUBMERGED_CAVE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_DUNGEON_WITH_SHADOWS",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 31,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "SubmergedCave_2F_1R_EventScript_Zaden",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SAILOR",
+      "x": 12,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "SubmergedCave_2F_1R_EventScript_Corvin",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "x": 22,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "SubmergedCave_2F_1R_EventScript_Sable",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
+      "x": 19,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "SubmergedCave_2F_1R_EventScript_Renzo",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RUIN_MANIAC",
+      "x": 18,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "SubmergedCave_2F_1R_EventScript_Theo",
+      "flag": "0"
+    },
+    {
+      "local_id": "HARPER_SUBMERGED_CAVE_2",
+      "graphics_id": "OBJ_EVENT_GFX_HARPER",
+      "x": 9,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALWAYS_SET"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 38,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_SUBMERGED_CAVE_1F_3R",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 7,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_2",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 35,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SubmergedCave_2F_1R_Warp1To2"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SubmergedCave_2F_1R_Warp2To1"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SubmergedCave_2F_1R_Warp2To3"
+    },
+    {
+      "type": "trigger",
+      "x": 41,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SubmergedCave_2F_1R_Warp3To2"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SubmergedCave_2F_1R_Warp3To4"
+    },
+    {
+      "type": "trigger",
+      "x": 40,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SubmergedCave_2F_1R_Warp4To3"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SubmergedCave_2F_1R_Warp4To5"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SubmergedCave_2F_1R_Warp5To4"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "27",
+      "script": "Expansion1_Follower_Harper1_Talking1"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "28",
+      "script": "Expansion1_Follower_Harper1_Talking2"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "29",
+      "script": "Expansion1_Follower_Harper1_Talking3"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_EMERALBODY_RIVAL_STATE",
+      "var_value": "30",
+      "script": "Expansion1_Rival_Scene04"
+    }
+  ],
+  "bg_events": []
+}

@@ -1,5 +1,7 @@
 #include "constants/battle_transition/base.h"
+#include "constants/battle_transition/double_clock_wipe_pokeball.h"
 #include "constants/battle_transition/frontier_circles.h"
 #include "constants/battle_transition/tpp_host.h"
-#include "constants/battle_transition/swords_justice.h"
 #include "constants/battle_transition/speed_lines.h"
+#include "constants/battle_transition/triangle_tessellation.h"
+#include "constants/battle_transition/airbrush_tile.h"

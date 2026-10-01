@@ -9,7 +9,8 @@ enum RowGUIInfo
     ROW_WATER,
     ROW_LAND_TOP,
     ROW_LAND_BOT,
-    ROW_HIDDEN,
+//    ROW_HIDDEN,
+    ROW_FISHING,
     ROWS_COUNT
 };
 
@@ -23,20 +24,26 @@ enum RowGUIInfo
 #define ROW_HIDDEN_ICON_X       52
 #define ROW_HIDDEN_ICON_Y       138
 
+#define ROW_FISHING_ICON_X      ROW_LAND_ICON_X
+#define ROW_FISHING_ICON_Y      138
+
 enum EncounterType
 {
     ENCOUNTER_TYPE_LAND,
     ENCOUNTER_TYPE_WATER,
-    ENCOUNTER_TYPE_HIDDEN // Get from species
+    ENCOUNTER_TYPE_HIDDEN, // Get from species
+    ENCOUNTER_TYPE_FISHING
 };
 
 #define COL_WATER_COUNT         5
 #define COL_LAND_COUNT          6
 #define COL_HIDDEN_COUNT        3
+#define COL_FISHING_COUNT       6
 
 #define COL_WATER_MAX           (COL_WATER_COUNT - 1)
 #define COL_LAND_MAX            (COL_LAND_COUNT - 1)
 #define COL_HIDDEN_MAX          (COL_HIDDEN_COUNT - 1)
+#define COL_FISHING_MAX         (COL_FISHING_COUNT - 1)
 
 // SEARCH INFO
 #define SCANSTART_X             0
@@ -69,15 +76,16 @@ enum EncounterType
 #define DEXNAV_MASK_SPECIES         0x3FFF  // First 14 bits
 #define DEXNAV_MASK_ENVIRONMENT     0xC000  // Last two bit
 
-void EndDexNavSearch(u8 taskId);
+void EndDexNavSearch(void);
 void Task_OpenDexNavFromStartMenu(u8 taskId);
-bool8 TryStartDexNavSearch(void);
+bool32 TryStartDexNavSearch(void);
 void TryIncrementSpeciesSearchLevel(void);
 void ResetDexNavSearch(void);
-bool8 TryFindHiddenPokemon(void);
+//bool32 TryFindHiddenPokemon(void);
 u32 CalculateDexNavShinyRolls(void);
 void IncrementDexNavChain(void);
+bool32 OnStep_DexNavSearch(void);
 
-extern u16 gDexNavSpecies;
+extern enum Species gDexNavSpecies;
 
 #endif // GUARD_DEXNAV_H

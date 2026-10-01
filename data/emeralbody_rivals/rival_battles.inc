@@ -784,11 +784,11 @@ Redd_Battle04_16:
 # 413 "data/emeralbody_rivals/rival_battles.pory"
 	closemessage
 # 414 "data/emeralbody_rivals/rival_battles.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 # 415 "data/emeralbody_rivals/rival_battles.pory"
 	removeobject 10
 # 416 "data/emeralbody_rivals/rival_battles.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	fadescreen FADE_FROM_BLACK
 # 417 "data/emeralbody_rivals/rival_battles.pory"
 	fadedefaultbgm
 # 418 "data/emeralbody_rivals/rival_battles.pory"
@@ -1516,7 +1516,7 @@ Rival_Battle05_21:
 # 760 "data/emeralbody_rivals/rival_battles.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
 # 761 "data/emeralbody_rivals/rival_battles.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 # 762 "data/emeralbody_rivals/rival_battles.pory"
 	warpsilent MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F, 9, 4
 # 763 "data/emeralbody_rivals/rival_battles.pory"
@@ -1920,7 +1920,7 @@ Baron_Battle05_1:
 # 922 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
 # 923 "data/emeralbody_rivals/rival_battles.pory"
-	call GetRivalForNameBox
+	speakername CommonText_BaronsMom
 # 924 "data/emeralbody_rivals/rival_battles.pory"
 	msgbox Battle05_BaronText_PostBattle2, MSGBOX_DEFAULT
 # 925 "data/emeralbody_rivals/rival_battles.pory"
@@ -1930,18 +1930,58 @@ Baron_Battle05_1:
 # 927 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
 # 928 "data/emeralbody_rivals/rival_battles.pory"
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	delay 20
 # 929 "data/emeralbody_rivals/rival_battles.pory"
-	compare VAR_TEMP_0, 9
-	goto_if_eq Baron_Battle05_6
+	applymovement LOCALID_PLAYER, Common_Movement_Talking
+# 930 "data/emeralbody_rivals/rival_battles.pory"
+	delay 80
+# 931 "data/emeralbody_rivals/rival_battles.pory"
+	playse SE_PIN
+# 932 "data/emeralbody_rivals/rival_battles.pory"
+	applymovement 12, Common_Movement_ExclamationMark
 # 933 "data/emeralbody_rivals/rival_battles.pory"
-	applymovement 12, Common_Movement_WalkRight5
-Baron_Battle05_5:
+	delay 40
+# 934 "data/emeralbody_rivals/rival_battles.pory"
+	applymovement 12, Common_Movement_WalkInPlaceFasterUp
 # 935 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
 # 936 "data/emeralbody_rivals/rival_battles.pory"
-	applymovement 12, Common_Movement_WalkInPlaceUp
+	speakername CommonText_BaronsMom
 # 937 "data/emeralbody_rivals/rival_battles.pory"
+	msgbox Battle05_BaronText_PostBattle3, MSGBOX_AUTOCLOSE
+# 938 "data/emeralbody_rivals/rival_battles.pory"
+	playfanfare MUS_REGISTER_MATCH_CALL
+# 939 "data/emeralbody_rivals/rival_battles.pory"
+	bufferstring STR_VAR_2, CommonText_BaronsMom
+# 940 "data/emeralbody_rivals/rival_battles.pory"
+	msgbox Text_RegisteredInPokenav_OneInput, MSGBOX_DEFAULT
+# 941 "data/emeralbody_rivals/rival_battles.pory"
+	waitfanfare
+# 942 "data/emeralbody_rivals/rival_battles.pory"
+	closemessage
+# 943 "data/emeralbody_rivals/rival_battles.pory"
+	setflag FLAG_ENABLE_BARONS_MOM_MATCH_CALL
+# 944 "data/emeralbody_rivals/rival_battles.pory"
+	delay 20
+# 945 "data/emeralbody_rivals/rival_battles.pory"
+	applymovement 12, Common_Movement_Smile
+# 946 "data/emeralbody_rivals/rival_battles.pory"
+	playse SE_M_MORNING_SUN
+# 947 "data/emeralbody_rivals/rival_battles.pory"
+	delay 60
+# 948 "data/emeralbody_rivals/rival_battles.pory"
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 949 "data/emeralbody_rivals/rival_battles.pory"
+	compare VAR_TEMP_0, 9
+	goto_if_eq Baron_Battle05_6
+# 953 "data/emeralbody_rivals/rival_battles.pory"
+	applymovement 12, Common_Movement_WalkRight5
+Baron_Battle05_5:
+# 955 "data/emeralbody_rivals/rival_battles.pory"
+	waitmovement 0
+# 956 "data/emeralbody_rivals/rival_battles.pory"
+	applymovement 12, Common_Movement_WalkInPlaceUp
+# 957 "data/emeralbody_rivals/rival_battles.pory"
 	waitmovement 0
 	return
 
@@ -1951,7 +1991,7 @@ Baron_Battle05_2:
 	goto Baron_Battle05_1
 
 Baron_Battle05_6:
-# 930 "data/emeralbody_rivals/rival_battles.pory"
+# 950 "data/emeralbody_rivals/rival_battles.pory"
 	applymovement 12, Common_Movement_WalkRight6
 	goto Baron_Battle05_5
 

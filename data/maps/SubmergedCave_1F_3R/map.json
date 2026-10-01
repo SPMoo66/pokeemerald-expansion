@@ -1,0 +1,96 @@
+{
+  "id": "MAP_SUBMERGED_CAVE_1F_3R",
+  "name": "SubmergedCave_1F_3R",
+  "layout": "LAYOUT_SUBMERGED_CAVE_1F_3R",
+  "music": "MUS_DP_STARK_MOUNTAIN",
+  "region_map_section": "MAPSEC_SUBMERGED_CAVE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_DUNGEON_WITH_SHADOWS",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "local_id": "HARPER_SUBMERGED_CAVE",
+      "graphics_id": "OBJ_EVENT_GFX_HARPER",
+      "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SubmergedCave_1F_3R_HarperCheck",
+      "flag": "FLAG_TEMP_1"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_SUBMERGED_CAVE_1F_2R",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_SUBMERGED_CAVE_2F_1R",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_TEMP_5",
+      "var_value": "0",
+      "script": "SubmergedCave_1F_3R_ClearHarperFollower"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "SubmergedCave_1F_3R_HarperCheck"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "SubmergedCave_1F_3R_HarperCheck"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "SubmergedCave_1F_3R_HarperCheck"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SubmergedCave_1F_3R_Crystal"
+    }
+  ]
+}

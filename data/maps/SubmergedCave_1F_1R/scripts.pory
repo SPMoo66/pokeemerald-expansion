@@ -1,0 +1,39 @@
+mapscripts SubmergedCave_1F_1R_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) < 26) { // if light is unobtained
+			setflag (FLAG_DONT_START_MUSIC_ON_WARP)
+			setflag (FLAG_SYS_SPAWN_INVISIBLE)
+			setflag (FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER)
+		}
+	}
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_LANDMARK_SUBMERGED_CAVE)
+	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_TEMP_0, 0 {
+			setvar (VAR_TEMP_0, 1)
+			if (var(VAR_EMERALBODY_RIVAL_STATE) < 26) {
+				clearflag (FLAG_DONT_START_MUSIC_ON_WARP)
+				clearflag (FLAG_SYS_SPAWN_INVISIBLE)
+				clearflag (FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER)
+				delay (40)
+				if (!flag(FLAG_TEMP_1)) {
+					msgbox (Text_TooDarkLetsTurnBack, MSGBOX_AUTOCLOSE)
+					setflag(FLAG_TEMP_1)
+					warp (MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_2, 0)
+					waitstate
+				}
+			}
+		}
+	]
+}
+
+script SubmergedCave_1F_1R_EventScript_Max {
+	trainerbattle_single (TRAINER_MAX, "I'm down here to collect everything\nrare!", "Oh, no!")
+	msgbox ("I'm already beaten down, and I only\nmade it to the entrance…", MSGBOX_AUTOCLOSE)
+}
+
+script SubmergedCave_1F_1R_EventScript_Willow {
+	trainerbattle_single (TRAINER_WILLOW, "What a dark cave!\nThank goodness I brought my flashlight!", "Wait, I think my flashlight just\nflickered!")
+	msgbox ("Hey, do you have any extra batteries?\pMy partner must have the others we\nbrought…", MSGBOX_AUTOCLOSE)
+}

@@ -1,0 +1,42 @@
+mapscripts IllusoryGrotto_B4F_2R_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_2)
+		if (defeated(TRAINER_WILD_POKEMON_IG_1)) {
+			setflag (FLAG_TEMP_1)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 49) {
+			clearflag (FLAG_TEMP_2)
+		}
+	}
+}
+
+script IllusoryGrotto_B4F_2R_EventScript_WildPokemon {
+	if (!defeated(TRAINER_WILD_POKEMON_IG_1)) {
+		lock
+		setflag (FLAG_WILD_OPPONENT)
+		setflag (FLAG_SYS_SET_BATTLE_BGM)
+		setvar (VAR_BATTLE_BGM, MUS_XD_VS_CIPHER_PEON)
+		playmoncry (SPECIES_LUCARIO, CRY_MODE_ENCOUNTER)
+		waitmoncry
+		special (SpawnCameraObject)
+		applymovement (LOCALID_CAMERA, Common_Movement_WalkUp2)
+		waitmovement (0)
+		special (RemoveCameraObject)
+		msgbox (Exp1_WildPokemonTrainerText_Intro, MSGBOX_DEFAULT)
+		trainerbattle_no_intro (TRAINER_WILD_POKEMON_IG_1, Exp1_WildPokemonTrainerText_Defeat)
+		playmoncry (SPECIES_LUCARIO, CRY_MODE_WEAK)
+		waitmoncry
+		applymovement (2, Common_Movement_WalkUpFast3)
+		waitmovement (0)
+		special (SpawnCameraObject)
+		delay (20)
+		applymovement (LOCALID_CAMERA, Common_Movement_WalkDown2)
+		waitmovement (0)
+		special (RemoveCameraObject)
+		setvar (VAR_TEMP_3, 1)
+		clearflag (FLAG_WILD_OPPONENT)
+		removeobject (2)
+		release
+	}
+	setvar (VAR_TEMP_3, 1)
+}

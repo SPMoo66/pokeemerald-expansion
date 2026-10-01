@@ -2,6 +2,7 @@
 #include "money.h"
 #include "graphics.h"
 #include "event_data.h"
+#include "palette.h"
 #include "string_util.h"
 #include "text.h"
 #include "menu.h"
@@ -14,7 +15,7 @@
 EWRAM_DATA static u8 sMoneyBoxWindowId = 0;
 EWRAM_DATA static u8 sMoneyLabelSpriteId = 0;
 
-#define MONEY_LABEL_TAG 0x2722
+#define MONEY_LABEL_TAG 0x2722 | BLEND_IMMUNE_FLAG
 
 static const struct OamData sOamData_MoneyLabel =
 {
@@ -50,9 +51,6 @@ static const struct SpriteTemplate sSpriteTemplate_MoneyLabel =
     .paletteTag = MONEY_LABEL_TAG,
     .oam = &sOamData_MoneyLabel,
     .anims = sSpriteAnimTable_MoneyLabel,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = SpriteCallbackDummy
 };
 
 static const struct CompressedSpriteSheet sSpriteSheet_MoneyLabel =
@@ -208,4 +206,16 @@ void AddMoneyLabelObject(u16 x, u16 y)
 void RemoveMoneyLabelObject(void)
 {
     DestroySpriteAndFreeResources(&gSprites[sMoneyLabelSpriteId]);
+}
+
+void PrintCapAmount(u8 windowId, u8 x, u8 y, int amount, u8 speed)
+{
+    StringCopy(ConvertIntToDecimalStringN(gStringVar4, amount, STR_CONV_MODE_RIGHT_ALIGN, 4), gText_Caps);
+    AddTextPrinterParameterized(windowId, FONT_NORMAL, gStringVar4, x, y, 0, NULL);
+}
+
+void PrintCapBoxWithBorder(u8 windowId, u16 tileStart, u8 palette, int amount)
+{
+    DrawStdFrameWithCustomTileAndPalette(windowId, FALSE, tileStart, palette);
+    PrintCapAmount(windowId, 0, 1, amount, 0);
 }

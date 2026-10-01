@@ -1,0 +1,129 @@
+mapscripts BygoneVault_1_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH)) {
+			setmetatile (3, 8, 0x0C6, TRUE)
+		}
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
+			setmetatile (13, 8, 0x0C6, TRUE)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 43) {
+			  # door
+			setmetatile (8, 1, 0x0DD, FALSE)
+			  # big fountains
+			setmetatile (5, 4, 0x0D2, TRUE)
+			setmetatile (6, 4, 0x0D3, TRUE)
+			setmetatile (10, 4, 0x0D2, TRUE)
+			setmetatile (11, 4, 0x0D3, TRUE)
+		}
+	}
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_LANDMARK_BYGONE_VAULT)
+		setflag (FLAG_TEMP_1)
+		setflag (FLAG_TEMP_2)
+		setflag (FLAG_TEMP_3)
+		setflag (FLAG_TEMP_4)
+		call (GetPlayerGfxNormal)
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH)) {
+			clearflag (FLAG_TEMP_1)
+		}
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH)) {
+			clearflag (FLAG_TEMP_2)
+		}
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH) && flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH) && var(VAR_EMERALBODY_RIVAL_STATE) < 43) {
+			setvar (VAR_TEMP_2, 1)
+			clearflag (FLAG_TEMP_3)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 43) {
+			clearflag (FLAG_TEMP_3)
+			setflag (FLAG_TEMP_5)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 42) {
+			clearflag (FLAG_TEMP_4)
+		}
+	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_TEMP_2, 1 {
+			setvar (VAR_TEMP_2, 0)
+			special (SpawnCameraObject)
+			getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+			switch (var(VAR_TEMP_0)) {
+				case 1:   # left side
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkRight4)
+					waitmovement (0)
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkDiagNE3)
+				default:  # right side
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkLeft4)
+					waitmovement (0)
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkDiagNW3)
+			}
+			waitmovement (0)
+			playse (SE_DOWNPOUR)
+			delay (30)
+			playse (SE_DOWNPOUR_STOP)
+			waitse
+			setmetatile (5, 4, 0x0D2, TRUE)
+			setmetatile (6, 4, 0x0D3, TRUE)
+			setmetatile (10, 4, 0x0D2, TRUE)
+			setmetatile (11, 4, 0x0D3, TRUE)
+			special (DrawWholeMapView)
+			delay (70)
+			setvar (VAR_0x8004, 1)  # vertical pan
+			setvar (VAR_0x8005, 1)  # horizontal pan
+			setvar (VAR_0x8006, 12) # num shakes
+			setvar (VAR_0x8007, 2)  # shake delay
+			special (ShakeCamera)
+			waitstate
+			setmetatile (8, 1, 0x0DD, FALSE)
+			special (DrawWholeMapView)
+			delay (10)
+			playfanfare (MUS_DP_TV_END)
+			waitfanfare
+			switch (var(VAR_TEMP_0)) {
+				case 1:   # left side
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkDiagSW3)
+					waitmovement (0)
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkLeft4)
+				default:  # right side
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkDiagSE3)
+					waitmovement (0)
+					applymovement (LOCALID_CAMERA, Common_Movement_WalkRight4)
+			}
+			waitmovement (0)
+			special (RemoveCameraObject)
+			setflag (FLAG_TEMP_5)
+			setvar (VAR_EMERALBODY_RIVAL_STATE, 43)
+			removeobject (5)
+		}
+	]
+}
+
+script BygoneVault_FullBowl {
+	msgbox ("The bowl has filled with water.", MSGBOX_AUTOCLOSE)
+}
+
+script BygoneVault_DoorShut {
+	msgbox ("The door is firmly sealed shut.", MSGBOX_AUTOCLOSE)
+}
+
+script BygoneVault_1_Sign {
+	msgbox ("And as they foretold\n"
+			"The doors were sealed firmly shut\l"
+			"'Til the drought had passed", MSGBOX_SIGN)
+}
+
+#script CreatePokemonSprite {
+#	msgbox ("You are now a Pokemon.", MSGBOX_AUTOCLOSE)
+#	setflag (FLAG_BLOCK_PLAYER_ACTIONS)
+#	setflag (FLAG_PLAY_AS_FIRST_MON_IN_PARTY)
+#	setflag (FLAG_SEMI_PERM_HIDE_FOLLOWER)
+#	warpsilent (MAP_BYGONE_VAULT_1, 8, 11)
+#	waitstate
+#}
+
+script Script_RedrawBygoneVault1Map {
+	if (!flag(FLAG_TEMP_6) && var(VAR_EMERALBODY_RIVAL_STATE) >= 43) {
+		setmetatile (8, 1, 0x0DD, FALSE)
+		special (DrawWholeMapView)
+		setflag (FLAG_TEMP_6)
+	}
+}

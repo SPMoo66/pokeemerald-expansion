@@ -1,5 +1,7 @@
 #include "base.h"
+#include "double_clock_wipe_pokeball.h"
 #include "frontier_circles.h"
 #include "tpp_host.h"
-#include "swords_justice.h"
 #include "speed_lines.h"
+#include "triangle_tessellation.h"
+#include "airbrush_tile.h"

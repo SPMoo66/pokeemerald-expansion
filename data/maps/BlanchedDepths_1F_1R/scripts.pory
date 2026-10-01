@@ -1,0 +1,62 @@
+mapscripts BlanchedDepths_1F_1R_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_1)
+		setflag (FLAG_LANDMARK_BLANCHED_DEPTHS)
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 24) {
+			if (var(VAR_EMERALBODY_RIVAL_STATE) < 30) {
+				clearflag (FLAG_TEMP_1)
+			}
+		}
+	}
+	MAP_SCRIPT_ON_RESUME {
+		setdivewarp (MAP_FAR_OFF_SEA_WEST_2_UNDERWATER_1_BLANCHED_DEPTHS_ENTRANCE, 4, 3)
+	}
+	MAP_SCRIPT_ON_LOAD {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 24) {
+			setflag (FLAG_SYS_SPAWN_INVISIBLE)
+			setflag (FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER)
+		}
+	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_EMERALBODY_RIVAL_STATE, 24 {
+			clearflag (FLAG_SYS_SPAWN_INVISIBLE)
+			clearflag (FLAG_SYS_DO_NOT_FADE_IN_ON_ENTER)
+			setvar (VAR_0x8004, 28)
+			setvar (VAR_0x8005, 19)
+			special (TeleportCamera)
+			fadescreen (FADE_FROM_BLACK)
+			applymovement (LOCALID_PLAYER, Common_Movement_SetVisible)
+			applymovement (LOCALID_CAMERA, BlanchedDepths_1F_1R_IntroCameraMovements)
+			waitmovement (0)
+			special (RemoveCameraObject)
+			setvar (VAR_EMERALBODY_RIVAL_STATE, 25)
+		}
+	]
+}
+
+movement BlanchedDepths_1F_1R_IntroCameraMovements {
+	walk_diag_northwest * 8
+	walk_left * 7
+	walk_diag_southwest * 8
+}
+
+script BlanchedDepths_1F_1R_EventScript_DefeatedAquaGrunt {
+	faceplayer
+	if (!flag(FLAG_TEMP_2)) {
+		setflag (FLAG_TEMP_2)
+		msgbox ("Ack, another kid?!\pNo!\nLeave me alone!\pMuh- my Pokémon are already all fainted!", MSGBOX_AUTOCLOSE)
+	}
+	else {
+		msgbox ("Look… just leave me alone… please?", MSGBOX_AUTOCLOSE)
+	}
+}
+
+script BlanchedDepths_1F_1R_EventScript_AquaGrunt1 {
+	trainerbattle_single (TRAINER_GRUNT_BLANCHED_DEPTHS_1, "Wait, I know you!", "I would've beaten you if I'd been\nprepared!")
+	msgbox ("Hey kid, tell me. Where are we?", MSGBOX_AUTOCLOSE)
+}
+
+script BlanchedDepths_1F_1R_EventScript_AquaGrunt2 {
+	trainerbattle_single (TRAINER_GRUNT_BLANCHED_DEPTHS_2, "Ack, get back!", "First, the submarine gasses out,\nthen I was next!")
+	msgbox ("I'll tell you if you let me go.\pWe came out here in the old sub on the\nhunt for a treasure the boss heard\labout, but we ran out of fuel near\lthis cave.", MSGBOX_AUTOCLOSE)
+}

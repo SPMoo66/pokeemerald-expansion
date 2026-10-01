@@ -853,6 +853,42 @@
       "var": "FLAG_TEMP_6",
       "var_value": "0",
       "script": "Jakson_Battle03"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningRoute119Rival"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 34,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningRoute119Rival"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 102,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningRoute119Jakson"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 102,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "BattleWarningRoute119Jakson"
     }
   ],
   "bg_events": [
@@ -1003,5 +1039,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route119_EventScript_TrainerTipsDecoration"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

@@ -1,0 +1,286 @@
+const MAUVECAMP_JAKSON = 6
+const MAUVECAMP_BARON = 7
+const MAUVECAMP_SAKURA = 8
+const MAUVECAMP_FAKEPLAYER = 9
+const MAUVECAMP_REDD = 10
+const MAUVECAMP_HARPER = 11
+
+// dots…
+
+script Expansion1_Rival_Scene05_Setup {
+	lock
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 32)
+	setflag (FLAG_HIDE_MAP_NAME_POPUP)
+	fadescreenswapbuffers (FADE_TO_BLACK)
+	warpcontinuescript (MAP_MAUVE_CAMP, 2, 13, Expansion1_Rival_Scene05)
+}
+
+script Expansion1_Rival_Scene05 {
+	setflag (FLAG_TEMP_2)
+	setflag (FLAG_TEMP_6)
+	turnobject (LOCALID_PLAYER, DIR_EAST)
+	setobjectxyperm (MAUVECAMP_JAKSON, 20, 12)
+	setobjectxyperm (MAUVECAMP_BARON, 21, 13)
+	setobjectxyperm (MAUVECAMP_SAKURA, 23, 11)
+	setobjectxyperm (MAUVECAMP_REDD, 22, 12)
+	setobjectxyperm (MAUVECAMP_HARPER, 11, 12)
+	setobjectmovementtype (MAUVECAMP_JAKSON, MOVEMENT_TYPE_FACE_RIGHT)
+	setobjectmovementtype (MAUVECAMP_REDD, MOVEMENT_TYPE_FACE_LEFT)
+	setobjectmovementtype (MAUVECAMP_SAKURA, MOVEMENT_TYPE_FACE_UP)
+	setobjectmovementtype (MAUVECAMP_BARON, MOVEMENT_TYPE_FACE_UP)
+	#setobjectmovementtype (MAUVECAMP_HARPER, MOVEMENT_TYPE_FACE_RIGHT)
+	addobject (MAUVECAMP_HARPER)
+	fadescreen (FADE_FROM_BLACK)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight7)
+	waitmovement (0)
+	delay (20)
+	applymovement (MAUVECAMP_HARPER, Common_Movement_WalkInPlaceFasterLeft)
+	waitmovement (0)
+	delay (30)
+	applymovement (MAUVECAMP_HARPER, Common_Movement_WalkRight)
+	waitmovement (0)
+	applymovement (MAUVECAMP_HARPER, Common_Movement_WalkRight5)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkRight7)
+	waitmovement (0)
+	delay (20)
+	special (SpawnCameraObject)
+	applymovement (LOCALID_CAMERA, Common_Movement_WalkRight3)
+	waitmovement (0)
+	delay (20)
+	speakername (CommonText_Harper)
+	msgbox ("Jakson.", MSGBOX_AUTOCLOSE)
+	delay (20)
+	applymovement (MAUVECAMP_JAKSON, Common_Movement_QuestionMark)
+	delay (30)
+	applymovement (MAUVECAMP_JAKSON, Common_Movement_WalkInPlaceFasterLeft)
+	waitmovement (0)
+	speakername (CommonText_Jakson)
+	msgbox ("Hm…?", MSGBOX_AUTOCLOSE)
+	playse (SE_PIN)
+	applymovement (MAUVECAMP_BARON, Common_Movement_WalkInPlaceFasterLeft)
+	applymovement (MAUVECAMP_JAKSON, Common_Movement_ExclamationMark)
+	delay (30)
+	speakername (CommonText_Jakson)
+	msgbox ("Harper! It's good to see you safe.", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_SAKURA, Common_Movement_WalkInPlaceLeft)
+	applymovement (MAUVECAMP_BARON, Common_Movement_Smile)
+	playse (SE_M_MORNING_SUN)
+	delay (40)
+	call (GetBaronsName)
+	msgbox ("What a relief.", MSGBOX_AUTOCLOSE)
+	delay (40)
+	speakername (CommonText_Harper)
+	msgbox ("Jakson.", MSGBOX_AUTOCLOSE)
+	delay (20)
+	speakername (CommonText_Jakson)
+	msgbox ("Y- {PAUSE 30}Yes?", MSGBOX_AUTOCLOSE)
+	fadescreenswapbuffers (FADE_TO_BLACK)
+	playse (SE_M_MEGA_KICK)
+	waitse
+	playse (SE_M_CUT)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkFastRight)
+	delay (20)
+	removeobject (MAUVECAMP_HARPER)
+	setobjectxyperm (MAUVECAMP_HARPER, 19, 12)
+	addobject (MAUVECAMP_HARPER)
+	fadescreenswapbuffers (FADE_FROM_BLACK)
+	msgbox ("Harper moves swiftly, beyond what one\n"
+			"may even think possible in the engine.\p"
+			"Her fingers pinch. {PAUSE 60}Hard.{PAUSE 60}\n"
+			"And Jakson's ear is in her grasp.", MSGBOX_AUTOCLOSE)
+	speakername (CommonText_Jakson)
+	msgbox ("O- {PAUSE 30}O- {PAUSE 30}OW!!!", MSGBOX_AUTOCLOSE)
+	speakername (CommonText_Harper)
+	msgbox ("Do I need to treat you like a child?!\n"
+			"I was in there for hours!")
+	speakername (CommonText_Jakson)
+	msgbox ("W- {PAUSE 30}We were working on it!")
+	speakername (CommonText_Harper)
+	msgbox ("You didn't reply to my messages!", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_REDD, Common_Movement_QuestionMark)
+	delay (30)
+	speakername (CommonText_Redd)
+	msgbox ("Messages?", MSGBOX_AUTOCLOSE)
+	playse (SE_LEDGE)
+	applymovement (MAUVECAMP_HARPER, Common_Movement_JumpInPlaceRight)
+	waitmovement (0)
+	speakername (CommonText_Harper)
+	msgbox ("In ENCORE!!!")
+	speakername (CommonText_Jakson)
+	msgbox ("…{PAUSE 100}shit.", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_HARPER, Common_Movement_XMark)
+	playse (SE_THUNDER)
+	delay (80)
+	applymovement (MAUVECAMP_BARON, Common_Movement_WalkInPlaceFasterUp)
+	waitmovement (0)
+	applymovement (MAUVECAMP_BARON, Common_Movement_QuestionMark)
+	delay (30)
+	call (GetBaronsName)
+	msgbox ("ENCORE?")
+	speakername (CommonText_Jakson)
+	msgbox ("I… {PAUSE 100}have… {PAUSE 100}notifications turned off\n"
+			"in that app when I play.", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_BARON, Common_Movement_WalkInPlaceFasterLeft)
+	applymovement (MAUVECAMP_HARPER, Common_Movement_XMark)
+	playse (SE_THUNDER)
+	delay (40)
+	applymovement (MAUVECAMP_SAKURA, Common_Movement_WalkInPlaceDown)
+	delay (40)
+	speakername (CommonText_Jakson)
+	msgbox ("O- {PAUSE 30}O- {PAUSE 30}OW!!! We all play together,\n"
+			"we don't need a messaging app!", MSGBOX_AUTOCLOSE)
+	speakername (CommonText_Redd)
+	msgbox ("I'm guessing she'd disagree right\n"
+			"about now…")
+	speakername (CommonText_Harper)
+	msgbox ("Ya think?!")
+	speakername (CommonText_Sakura)
+	msgbox ("Hmm…", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_SAKURA, Common_Movement_Thinking)
+	delay (60)
+	applymovement (MAUVECAMP_SAKURA, Common_Movement_WalkInPlaceFasterLeft)
+	speakername (CommonText_Sakura)
+	msgbox ("Hey, Harper.\p"
+			"If you were that distressed, why not\n"
+			"just log-off? We'd have gotten the\l"
+			"log-off notification in-game.", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_HARPER, Common_Movement_Thinking)
+	delay (60)
+	fadescreenswapbuffers (FADE_TO_BLACK)
+	fadescreenswapbuffers (FADE_FROM_BLACK)
+	msgbox ("Harper's grip releases.", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_JAKSON, Common_Movement_SweatDrop)
+	playse (SE_M_METRONOME)
+	delay (40)
+	call (GetBaronsName)
+	msgbox ("People can forget things in the heat\n"
+			"of the moment…")
+	speakername (CommonText_Sakura)
+	msgbox ("Ain't that the truth?")
+	speakername (CommonText_Harper)
+	msgbox ("… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
+			"… {PAUSE 30}… {PAUSE 30}…\l"
+			"Okay, what's the situation?")
+	speakername (CommonText_Redd)
+	msgbox ("So quick to move on!", MSGBOX_AUTOCLOSE)
+	
+	fadescreenswapbuffers (FADE_TO_BLACK)
+	warpcontinuescript (MAP_MAUVE_CAMP, 21, 15, Expansion1_Rival_Scene05b)
+}
+
+script Expansion1_Rival_Scene05b {
+	turnobject (LOCALID_PLAYER, DIR_WEST)
+	removeobject (MAUVECAMP_JAKSON)
+	setobjectxyperm (MAUVECAMP_JAKSON, 20, 13)
+	setobjectxyperm (MAUVECAMP_BARON, 19, 15)
+	setobjectxyperm (MAUVECAMP_SAKURA, 21, 14)
+	setobjectxyperm (MAUVECAMP_REDD, 19, 14)
+	setobjectxyperm (MAUVECAMP_HARPER, 20, 16)
+	setobjectmovementtype (MAUVECAMP_JAKSON, MOVEMENT_TYPE_FACE_DOWN)
+	setobjectmovementtype (MAUVECAMP_BARON, MOVEMENT_TYPE_FACE_RIGHT)
+	#setobjectmovementtype (MAUVECAMP_SAKURA, MOVEMENT_TYPE_FACE_LEFT)
+	setobjectmovementtype (MAUVECAMP_REDD, MOVEMENT_TYPE_FACE_RIGHT)
+	setobjectmovementtype (MAUVECAMP_HARPER, MOVEMENT_TYPE_FACE_UP)
+	addobject (MAUVECAMP_JAKSON)
+	addobject (MAUVECAMP_BARON)
+	addobject (MAUVECAMP_SAKURA)
+	addobject (MAUVECAMP_REDD)
+	addobject (MAUVECAMP_HARPER)
+	fadescreen (FADE_FROM_BLACK)
+	applymovement (MAUVECAMP_JAKSON, Common_Movement_Talking)
+	delay (80)
+	speakername (CommonText_Jakson)
+	msgbox ("…{PAUSE 100}and that's my running theory. Mods\n"
+			"aren't playing nice with each other.", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_HARPER, Common_Movement_Thinking)
+	delay (60)
+	speakername (CommonText_Harper)
+	msgbox ("I was looking up some mods the other\n"
+			"day and I did notice all sorts.")
+	speakername (CommonText_Redd)
+	msgbox ("Pokémon is popular.")
+	speakername (CommonText_Harper)
+	msgbox ("Yeah, and there were a bunch of boss\n"
+			"creatures mods, too.")
+	call (GetBaronsName)
+	msgbox ("You think that's what we saw when\n"
+			"we were on the boat?")
+	speakername (CommonText_Jakson)
+	msgbox ("It'd fit, maybe? Not like anything else\n"
+			"has been outright broken since then.")
+	speakername (CommonText_Harper)
+	msgbox ("Hmm… {PAUSE 100}what else did I see on those\n"
+			"forums…?")
+	speakername (CommonText_Sakura)
+	msgbox ("Well, we'll find out if it even matters\n"
+			"if we keep moving forwards.\p"
+			"And your very own Sakura has some\n"
+			"good news {PAUSE 30}on {PAUSE 30}that {PAUSE 30}front{EMOJI_TILDE}{UNK_SPACER}")
+	speakername (CommonText_Redd)
+	msgbox ("You found a way to move the Pokémon\n"
+			"blockade down South?")
+	speakername (CommonText_Jakson)
+	msgbox ("Yes, I did figure that out shortly\n"
+			"before this. That's what I was about\l"
+			"to announce before Harper returned\l"
+			"to us.\p"
+			"It was just as silly a solution as you\n"
+			"can imagine, but I won't bore you all\l"
+			"with the details of it…\p"
+			"Actually, from what I can tell of the\n"
+			"lore notes around there, the ship\l"
+			"is actually the starting zone.", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_SAKURA, Common_Movement_MusicNote)
+	playse (SE_RG_HELP_OPEN)
+	delay (40)
+	speakername (CommonText_Sakura)
+	msgbox ("Which means my explosive discovery\n"
+			"is all the more useful!")
+	call (GetBaronsName)
+	msgbox ("Explosive?")
+	speakername (CommonText_Sakura)
+	msgbox ("Yep yep! So we just need to blow some\n"
+			"shit up at a cave entrance, and then\l"
+			"we can swoop in to save Harper!")
+	speakername (CommonText_Harper)
+	msgbox ("…{PAUSE 100}I'm right here.")
+	speakername (CommonText_Sakura)
+	msgbox ("Ah. {PAUSE 30}Right. {PAUSE 30}Need to refactor the pitch.\p"
+			"We can… {PAUSE 100}blow things up.\n"
+			"Boom.")
+	call (GetBaronsName)
+	msgbox ("How… {PAUSE 100}eloquent.", MSGBOX_AUTOCLOSE)
+	applymovement (MAUVECAMP_SAKURA, Common_Movement_Smile)
+	playse (SE_M_MORNING_SUN)
+	delay (40)
+	speakername (CommonText_Sakura)
+	msgbox ("I know, right?", MSGBOX_AUTOCLOSE)
+	speakername (CommonText_Redd)
+	msgbox ("Knowing Pokémon, it probably is a place\n"
+			"we need to go. Maybe Rock Smash? You\l"
+			"said it was at a cave entrance?")
+	speakername (CommonText_Jakson)
+	msgbox ("Would post game content be designed\n"
+			"to block the player with Rock Smash?\l"
+			"This is the Flash situation again.")
+	speakername (CommonText_Sakura)
+	msgbox ("Boom?{PAUSE 60}\n"
+			"Boom.")
+	speakername (CommonText_Redd)
+	msgbox ("The one other place we haven't been\n"
+			"is the ship. Maybe…")
+	speakername (CommonText_Jakson)
+	msgbox ("Yeah, we'll probably find some explosive\n"
+			"key item in the ship.\p"
+			"Or… {PAUSE 100}shipwreck, I guess.")
+	speakername (CommonText_Redd)
+	msgbox ("Sounds like a plan to me!")
+	speakername (CommonText_Harper)
+	msgbox ("Hell yeah it does.", MSGBOX_AUTOCLOSE)
+
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 33)
+	setflag (FLAG_EXPANSION_1_MATCH_CALL_2)
+	savebgm (MUS_DP_CREDITS)
+	fadescreenswapbuffers (FADE_TO_BLACK)
+	warpcontinuescript (MAP_MAUVE_CAMP, 16, 16, Expansion1_Rival_Scene02e)	
+}

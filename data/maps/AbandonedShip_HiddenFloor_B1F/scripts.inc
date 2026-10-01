@@ -107,21 +107,19 @@ BattleMelmetal::
 # 56 "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 57 "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.pory"
-	waitstate
-# 58 "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 59 "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.pory"
+# 58 "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 60 "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.pory"
+# 59 "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleMelmetal_2
 BattleMelmetal_1:
-# 63 "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.pory"
+# 62 "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.pory"
 	release
 	return
 
 BattleMelmetal_2:
-# 61 "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.pory"
+# 60 "data/maps/AbandonedShip_HiddenFloor_B1F/scripts.pory"
 	setflag FLAG_CAUGHT_MELMETAL
 	goto BattleMelmetal_1
 

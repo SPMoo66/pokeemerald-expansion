@@ -1,0 +1,26 @@
+const IGEXTERIOR_HARPER = 2
+
+mapscripts IllusoryGrottoExterior_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setrespawn (HEAL_LOCATION_ILLUSORY_GROTTO_UPPER)
+		setflag (FLAG_TEMP_1)
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 45) {
+			clearflag (FLAG_TEMP_1)
+		}
+		clearflag (FLAG_CANT_USE_ESCAPE_ROPE)
+	}
+}
+
+script EventScript_MoveToEndlessFarOffSea {
+	lock
+	warp (MAP_FAR_OFF_SEA_ENDLESS, 12, 2)
+	waitstate
+}
+
+script EventScript_EndEndlessFarOffSea {
+	lock
+	msgbox ("After some time lost at sea, you manage\nto drift your way back close to where you\lbegan.", MSGBOX_AUTOCLOSE)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 22)
+	warp (MAP_FAR_OFF_SEA_WEST_2, 5, 5)
+	waitstate
+}

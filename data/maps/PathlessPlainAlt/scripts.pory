@@ -26,6 +26,7 @@ mapscripts PathlessPlainAlt_MapScripts {
 
 script PathlessPlainAlt_Portal {
 	warp(MAP_PATHLESS_PLAIN, 0)
+	waitstate
 }
 
 script BattleIronCrown {
@@ -38,7 +39,6 @@ script BattleIronCrown {
 	setwildbattle(SPECIES_IRON_CROWN, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(StartRegiBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -58,7 +58,6 @@ script BattleIronBoulder {
 	setwildbattle(SPECIES_IRON_BOULDER, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(StartRegiBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -78,7 +77,6 @@ script BattleIronLeaves {
 	setwildbattle(SPECIES_IRON_LEAVES, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(StartRegiBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {

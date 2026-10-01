@@ -3,6 +3,7 @@
   "name": "Underwater_SootopolisCity",
   "layout": "LAYOUT_UNDERWATER_SOOTOPOLIS_CITY",
   "music": "MUS_UNDERWATER",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_UNDERWATER_SOOTOPOLIS",
   "requires_flash": false,
   "weather": "WEATHER_UNDERWATER_BUBBLES",
@@ -12,10 +13,8 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
-  "object_events": [
-
-  ],
+  "connections": null,
+  "object_events": [],
   "warp_events": [
     {
       "x": 9,
@@ -32,10 +31,6 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-
-  ],
-  "bg_events": [
-
-  ]
+  "coord_events": [],
+  "bg_events": []
 }

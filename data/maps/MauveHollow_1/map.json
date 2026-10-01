@@ -1,0 +1,97 @@
+{
+  "id": "MAP_MAUVE_HOLLOW_1",
+  "name": "MauveHollow_1",
+  "layout": "LAYOUT_MAUVE_HOLLOW_1",
+  "music": "MUS_DP_OREBURGH_GATE",
+  "region_map_section": "MAPSEC_MAUVE_HOLLOW",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_DUNGEON_WITH_SHADOWS",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "x": 14,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "MauveHollow_1_EventScript_Fred",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RUIN_MANIAC",
+      "x": 19,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "MauveHollow_1_EventScript_Humphrey",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DRAGON_TAMER",
+      "x": 12,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "MauveHollow_1_EventScript_Dio",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_BLUE",
+      "x": 25,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MauveHollow_ChallengeBall",
+      "flag": "FLAG_CHALLENGE_BALL_MAUVE_HOLLOW"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 25,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_MAUVE_ISLAND_SOUTHEAST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_MAUVE_ISLAND_SOUTH",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 2,
+      "y": 6,
+      "elevation": 0,
+      "item": "ITEM_STAR_PIECE",
+      "flag": "FLAG_HIDDEN_ITEM_MAUVE_HOLLOW_STAR_PIECE"
+    }
+  ]
+}

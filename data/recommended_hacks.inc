@@ -142,7 +142,7 @@ RecommendedHacks_Text_6:
 
 RecommendedHacks_Text_7:
 # 4 "data/recommended_hacks.pory"
-	.string "Celia's Stupid Romhack (Demo)$"
+	.string "Celia's Stupid Romhack$"
 
 RecommendedHacks_Text_8:
 # 4 "data/recommended_hacks.pory"
@@ -244,7 +244,7 @@ RecommendedHacks_Text_24:
 	.string "described ‘comedy and puzzle romhack’\l"
 	.string "that…\p"
 	.string "Well, it's incredibly creative.\p"
-	.string "Demos are currently available.$"
+	.string "The full release is now available.$"
 
 RecommendedHacks_Text_25:
 # 28 "data/recommended_hacks.pory"

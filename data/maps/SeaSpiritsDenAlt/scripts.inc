@@ -51,30 +51,30 @@ SeaSpiritsDenAlt_MapScripts_MAP_SCRIPT_ON_RESUME_1:
 SeaSpiritsDenAlt_Portal::
 # 28 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	warp MAP_SEA_SPIRITS_DEN, 1
+# 29 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+	waitstate
 	return
 
 
 BattleArticunoG::
-# 32 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	lock
 # 33 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	faceplayer
+	lock
 # 34 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	setvar VAR_LAST_TALKED, 1
+	faceplayer
 # 35 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	playmoncry SPECIES_ARTICUNO_GALAR, CRY_MODE_ENCOUNTER
+	setvar VAR_LAST_TALKED, 1
 # 36 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	msgbox BattleArticunoG_Text_0
+	playmoncry SPECIES_ARTICUNO_GALAR, CRY_MODE_ENCOUNTER
 # 37 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	waitmoncry
+	msgbox BattleArticunoG_Text_0
 # 38 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	seteventmon SPECIES_ARTICUNO_GALAR, 40
+	waitmoncry
 # 39 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_ARTICUNO_GALAR, 40
 # 40 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 41 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 42 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 43 "data/maps/SeaSpiritsDenAlt/scripts.pory"
@@ -113,64 +113,60 @@ BattleZapdosG::
 # 60 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 61 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	waitstate
-# 62 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 63 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 62 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 64 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 63 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleZapdosG_2
 BattleZapdosG_1:
-# 67 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 66 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	release
 	end
 
 BattleZapdosG_2:
-# 65 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 64 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	setflag FLAG_CAUGHT_ZAPDOS_G
 	goto BattleZapdosG_1
 
 
 BattleMoltresG::
-# 72 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 71 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	lock
-# 73 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 72 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	faceplayer
-# 74 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 73 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	setvar VAR_LAST_TALKED, 3
-# 75 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 74 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	playmoncry SPECIES_MOLTRES_GALAR, CRY_MODE_ENCOUNTER
-# 76 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 75 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	msgbox BattleArticunoG_Text_0
-# 77 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 76 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	waitmoncry
-# 78 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 77 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	seteventmon SPECIES_MOLTRES_GALAR, 40
-# 79 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 78 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 80 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 79 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 81 "data/maps/SeaSpiritsDenAlt/scripts.pory"
-	waitstate
-# 82 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 80 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 83 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 81 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 84 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 82 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleMoltresG_2
 BattleMoltresG_1:
-# 87 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 85 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	release
 	end
 
 BattleMoltresG_2:
-# 85 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 83 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	setflag FLAG_CAUGHT_MOLTRES_G
 	goto BattleMoltresG_1
 
 
 BattleArticunoG_Text_0:
-# 36 "data/maps/SeaSpiritsDenAlt/scripts.pory"
+# 37 "data/maps/SeaSpiritsDenAlt/scripts.pory"
 	.string "Gyaoo!$"

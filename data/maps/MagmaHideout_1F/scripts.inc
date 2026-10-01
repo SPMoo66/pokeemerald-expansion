@@ -21,6 +21,7 @@ MagmaHideout_1F_EventScript_UpdateRivalState:
 
 MagmaHideout_1F_EventScript_PortalTeleport::
 	warp MAP_MAGMA_HIDEOUT_PORTAL_ROOM, 0
+	waitstate
 	end
 
 MagmaHideout_1F_EventScript_Grunt1::

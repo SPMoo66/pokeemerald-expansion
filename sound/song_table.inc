@@ -421,7 +421,7 @@ gSongTable::
 	song mus_contest, MUSIC_PLAYER_BGM, 0
 	song mus_encounter_magma, MUSIC_PLAYER_BGM, 0
 	song mus_intro_battle, MUSIC_PLAYER_BGM, 0
-	song mus_weather_kyogre, MUSIC_PLAYER_BGM, 0
+	song mus_abnormal_weather, MUSIC_PLAYER_BGM, 0
 	song mus_weather_groudon, MUSIC_PLAYER_BGM, 0
 	song mus_sootopolis, MUSIC_PLAYER_BGM, 0
 	song mus_contest_results, MUSIC_PLAYER_BGM, 0
@@ -906,6 +906,14 @@ gSongTable::
 	song mus_hg_obtain_b_points, MUSIC_PLAYER_SE2, 2
 	song mus_hg_win_minigame, MUSIC_PLAYER_SE2, 2
 	song mus_victory_is_right_before_your_eyes, MUSIC_PLAYER_BGM, 0
+	song mus_bsb_everybody, MUSIC_PLAYER_BGM, 0
+	song mus_bw_abyssal_ruins, MUSIC_PLAYER_BGM, 0
+	song mus_bw_vs_trainer, MUSIC_PLAYER_BGM, 0
+	song mus_bw_vs_wild, MUSIC_PLAYER_BGM, 0
+	song mus_b2w2_vs_ghetsis, MUSIC_PLAYER_BGM, 0
+	song mus_ff4_fight_2, MUSIC_PLAYER_BGM, 0
+	song mus_md2_dialgas_fight_to_the_finish, MUSIC_PLAYER_BGM, 0
+	song mus_xd_vs_cipher_peon, MUSIC_PLAYER_BGM, 0
 
 	.align 2
 dummy_song_header:

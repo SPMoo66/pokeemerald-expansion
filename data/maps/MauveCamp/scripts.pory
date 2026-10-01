@@ -1,0 +1,249 @@
+const LOCALID_MAUVE_CAMP_SEA_FACING_SAILOR = 2
+const LOCALID_MAUVE_CAMP_HEAL_SAILOR = 3
+const MAUVECAMP_JAKSON = 6
+const MAUVECAMP_BARON = 7
+const MAUVECAMP_SAKURA = 8
+const MAUVECAMP_REDD = 10
+const MAUVECAMP_HARPER = 11
+
+mapscripts MauveCamp_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (flag(FLAG_MAUVE_CAMP_REMOVE_CAMP_TILES)) {
+			call (MauveCamp_RemoveCampTiles)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 51) {
+			setmetatile (25, 6, 0x236, TRUE)
+			setmetatile (25, 7, 0x23E, FALSE)
+			setmetatile (25, 8, 0x246, FALSE)
+		}
+	}
+	MAP_SCRIPT_ON_TRANSITION {
+		setrespawn (HEAL_LOCATION_MAUVE_CAMP)
+		setflag (FLAG_LANDMARK_MAUVE_CAMP)
+		call (GetPlayerGfxNormal)
+		if (flag(FLAG_MAUVE_CAMP_HEADBUTT_SCENE)) {
+			setflag (FLAG_TEMP_2)
+			setvar (VAR_TEMP_0, 1)
+			clearflag (FLAG_MAUVE_CAMP_HEADBUTT_SCENE)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) < 24) {
+			setflag (FLAG_TEMP_6) // to hide the sailors
+			setflag (FLAG_TEMP_2) // to hide the sailors
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 23) { // Scene02
+			savebgm (MUS_DP_SUNYSHORE_DAY)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 24 && var(VAR_EMERALBODY_RIVAL_STATE) <= 32) {
+			// set rival positions, etc. here for Town02
+			setobjectxyperm (MAUVECAMP_JAKSON, 17, 11)
+			setobjectmovementtype (MAUVECAMP_JAKSON, MOVEMENT_TYPE_WANDER_AROUND)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 31 || var(VAR_EMERALBODY_RIVAL_STATE) == 32) { // Scene05
+			setflag (FLAG_TEMP_6)
+			savebgm (MUS_HG_POKEWALKER)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 33 && var(VAR_EMERALBODY_RIVAL_STATE) <= 38) {
+			// set rival positions, etc. here for Town03
+			setobjectxyperm (MAUVECAMP_JAKSON, 25, 18)
+			setobjectmovementtype (MAUVECAMP_JAKSON, MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT)
+			setobjectxyperm (MAUVECAMP_BARON, 10, 12)
+			setobjectmovementtype (MAUVECAMP_BARON, MOVEMENT_TYPE_WANDER_AROUND)
+			setobjectxyperm (MAUVECAMP_SAKURA, 20, 29)
+			#setobjectmovementtype (MAUVECAMP_SAKURA, MOVEMENT_TYPE_FACE_LEFT)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 40) {
+			// set rival positions, etc. here for Town04
+			setobjectxyperm (MAUVECAMP_HARPER, 23, 17)
+			setobjectmovementtype (MAUVECAMP_HARPER, MOVEMENT_TYPE_FACE_LEFT)
+			setobjectxyperm (MAUVECAMP_REDD, 15, 9)
+			setobjectmovementtype (MAUVECAMP_REDD, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT)
+			setobjectxyperm (MAUVECAMP_BARON, 26, 7)
+			setobjectmovementtype (MAUVECAMP_BARON, MOVEMENT_TYPE_WANDER_AROUND)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 45) {
+			// set rival positions, etc. here for Town07
+			setobjectxyperm (MAUVECAMP_SAKURA, 26, 13)
+			setobjectmovementtype (MAUVECAMP_SAKURA, MOVEMENT_TYPE_WANDER_AROUND)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 50 && flag(FLAG_SCENE10_TRANSITION)) {
+			savebgm (MUS_PL_CONTEST_BEAUTY)
+			clearflag (FLAG_SCENE10_TRANSITION)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 51) {
+			setobjectmovementtype (MAUVECAMP_SAKURA, MOVEMENT_TYPE_FACE_DOWN)
+			setobjectxyperm (MAUVECAMP_SAKURA, 25, 7)
+		}
+	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_TEMP_0, 1: MauveCamp_EventScript_FromHeadbuttTree
+		VAR_EMERALBODY_RIVAL_STATE, 22: Expansion1_Rival_Scene02_Setup
+		VAR_EMERALBODY_RIVAL_STATE, 31: Expansion1_Rival_Scene05_Setup
+	]
+}
+
+script MauveCamp_RemoveCampTiles {
+	setmetatileinrange (21, 8, 29, 18, 0x000)
+	setmetatileinrange (15, 14, 17, 16, 0x000)
+	setmetatileinrange (14, 13, 14, 14, 0x000)
+	setmetatileinrange (30, 17, 30, 18, 0x000)
+	setmetatileinrange (29, 20, 29, 21, 0x000)
+	setmetatileinrange (32, 10, 32, 12, 0x000)
+	setmetatile (28, 7, 0x000, FALSE)
+	setmetatile (30, 10, 0x000, FALSE)
+}
+
+script MauveCamp_Jakson {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 33) {
+		goto (Jakson_Exp1_Town03)
+	}
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 24) {
+		goto (Jakson_Exp1_Town02)
+	}
+}
+
+script MauveCamp_Baron {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 40) {
+		goto (Baron_Exp1_Town04)
+	}
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 33) {
+		goto (Baron_Exp1_Town03)
+	}
+}
+
+script MauveCamp_Sakura {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 33) {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) <= 38) {
+			goto (Sakura_Exp1_Town03)
+		}
+	}
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 45) {
+		goto (Sakura_Exp1_Town07)
+	}
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 51) {
+		goto (Sakura_Exp1_Town09)
+	}
+}
+
+script MauveCamp_EventScript_FromHeadbuttTree {
+	setvar (VAR_TEMP_0, 0)
+	delay (20)
+	setobjectxyperm (LOCALID_MAUVE_CAMP_HEAL_SAILOR, 23, 10)
+	clearflag (FLAG_TEMP_2)
+	addobject (LOCALID_MAUVE_CAMP_HEAL_SAILOR)
+	playse (SE_EXIT)
+	waitse
+	applymovement (LOCALID_MAUVE_CAMP_HEAL_SAILOR, Common_Movement_WalkDown)
+	waitmovement (0)
+	applymovement (LOCALID_MAUVE_CAMP_HEAL_SAILOR, Common_Movement_WalkRight)
+	waitmovement (0)
+	applymovement (LOCALID_MAUVE_CAMP_HEAL_SAILOR, Common_Movement_WalkInPlaceLeft)
+	waitmovement (0)
+	applymovement (LOCALID_PLAYER, Common_Movement_SetVisible)
+	waitmovement (0)
+	playse (SE_EXIT)
+	waitse
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkDown2)
+	waitmovement (0)
+	applymovement (LOCALID_MAUVE_CAMP_HEAL_SAILOR, Common_Movement_WalkLeft)
+	waitmovement (0)
+	applymovement (LOCALID_MAUVE_CAMP_HEAL_SAILOR, Common_Movement_WalkInPlaceDown)
+	waitmovement (0)
+	delay (20)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+	checkplayergender
+	if (!var(VAR_RESULT)) {
+		msgbox ("Feeling better, lad?")
+	}
+	else {
+		msgbox ("Feeling better, lass?")
+	}
+	msgbox ("If ye be feeling hungry, we have plenty\nof food at camp.\pThere's no need to bash down trees with\nyer head in hope of finding coconuts.\pIf ye keep knocking yerself out, we'll\nhave to start chargin' ye!")
+	closemessage
+}
+
+script MauveCamp_Sailor1 {
+	msgbox ("Aye, trainer.\n"
+			"We're here on Mauve Island.\l"
+			"Be off on your treasure hunt.\l"
+			"The sooner you finish, the sooner we\l"
+			"can all leave this blasted land.", MSGBOX_NPC)
+	turnobject (LOCALID_MAUVE_CAMP_SEA_FACING_SAILOR, DIR_WEST)
+}
+
+script MauveCamp_Sailor2 {
+	msgbox ("It seems like we have enough supplies\n"
+			"to last us for a long time.", MSGBOX_NPC)
+}
+
+script MauveCamp_Sailor3 {
+	msgbox ("This island gives me the spooks.\p"
+			"No signs of civilization, yet there's a\n"
+			"treasure buried somewhere in these\l"
+			"lands?", MSGBOX_NPC)
+}
+
+script MauveCamp_Sailor4 {
+	faceplayer
+	msgbox ("Ahoy, trainer!\n"
+			"Do ye require rest?", MSGBOX_YESNO)
+	if (var(VAR_RESULT)) {
+		closemessage
+		call (Common_EventScript_OutOfCenterPartyHeal)
+	}
+	msgbox ("Stay safe out in the wilds.")
+	closemessage
+	release
+	releaseall
+}
+
+script MauveCamp_Ranger {
+	msgbox ("A couple of us rangers joined the\n"
+			"expedition to help set up camp.\p"
+			"My partner already left to scout\n"
+			"out the area on her own.", MSGBOX_NPC)
+}
+
+
+script MauveCamp_Sign {
+	msgbox ("Mauve Island Base Camp", MSGBOX_SIGN)
+}
+
+script MauveCamp_SandCastle {
+	msgbox ("Did Sakura make this sand castle?")
+	closemessage
+}
+
+script MauveCamp_Pokeball {
+	msgbox ("This must be a Pokémon owned by\none of the sailors.")
+	closemessage
+}
+
+script MauveCamp_Boxes {
+	msgbox ("The boxes are loaded with supplies.")
+	closemessage
+}
+
+script MauveCamp_Rowboat {
+	msgbox ("It's a rowboat!\n"
+			"Use it to return to Hoenn?", MSGBOX_YESNO)
+	closemessage
+	if (var(VAR_RESULT)) {
+		setflag (FLAG_REVERSE_SLATEPORT_BOAT_SCENE)
+		goto (SlateportRegionMap_BoatSceneInit)
+	}
+}
+
+script MauveCamp_Pot {
+	msgbox ("{PLAYER} found one Leftovers!\n"
+			"… … …\l"
+			"Just kidding!")
+	closemessage
+}
+
+script MauveCamp_Shell {
+	msgbox ("Wow!\p"
+			"When you get close you can hear\n"
+			"the ocean!")
+	closemessage
+}

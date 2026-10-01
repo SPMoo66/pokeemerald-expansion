@@ -13,7 +13,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpAttack  = 50,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FLYING),
-        .catchRate = 45,
+        .catchRate = 60,
         .expYield = 64,
         .evYield_HP = 1,
         .itemRare = ITEM_MIRACLE_SEED,
@@ -67,6 +67,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Rowlet,
             gShinyOverworldPalette_Rowlet
         )
+        .isSkyBattleBanned = B_SKY_BATTLE_STRICT_ELIGIBILITY,
         .levelUpLearnset = sRowletLevelUpLearnset,
         .teachableLearnset = sRowletTeachableLearnset,
         .eggMoveLearnset = sRowletEggMoveLearnset,
@@ -132,7 +133,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following,
+            sAnimTable_Following_Asym,
             gOverworldPalette_Dartrix,
             gShinyOverworldPalette_Dartrix
         )
@@ -220,7 +221,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FIGHTING),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 265 : 239,
+        .expYield = 265,
         .evYield_Attack = 3,
         .genderRatio = PERCENT_FEMALE(12.5),
         .eggCycles = 15,
@@ -287,7 +288,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpAttack  = 60,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_FIRE),
-        .catchRate = 45,
+        .catchRate = 60,
         .expYield = 64,
         .evYield_Speed = 1,
         .itemRare = ITEM_CHARCOAL,
@@ -316,8 +317,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Litten,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_H_STRETCH,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
         .backPic = gMonBackPic_Litten,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
@@ -381,7 +385,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Torracat,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),
         .frontAnimId = ANIM_V_STRETCH,
         .backPic = gMonBackPic_Torracat,
         .backPicSize = MON_COORDS_SIZE(64, 56),
@@ -445,8 +452,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Incineroar,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SHAKE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_V_STRETCH,
         .backPic = gMonBackPic_Incineroar,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
@@ -482,7 +492,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpAttack  = 66,
         .baseSpDefense = 56,
         .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 45,
+        .catchRate = 60,
         .expYield = 64,
         .evYield_SpAttack = 1,
         .itemRare = ITEM_MYSTIC_WATER,
@@ -511,7 +521,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Popplio,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
         .backPic = gMonBackPic_Popplio,
         .backPicSize = MON_COORDS_SIZE(48, 48),
@@ -576,8 +589,13 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Brionne,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_SHRINK_GROW,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 20),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_SWING_CONCAVE_FAST,
         .backPic = gMonBackPic_Brionne,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 9,
@@ -640,7 +658,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Primarina,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 20),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(1, 60),
+            ANIMCMD_FRAME(0, 1),
+		),
         .frontAnimId = ANIM_SHAKE_GLOW_BLUE_SLOW,
         .backPic = gMonBackPic_Primarina,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -680,7 +703,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = 255,
         .expYield = 53,
         .evYield_Attack = 1,
-        .itemRare = ITEM_ORAN_BERRY,
+        .itemCommon = ITEM_ORAN_BERRY,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
@@ -732,6 +755,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Pikipek,
             gShinyOverworldPalette_Pikipek
         )
+        .isSkyBattleBanned = B_SKY_BATTLE_STRICT_ELIGIBILITY,
         .levelUpLearnset = sPikipekLevelUpLearnset,
         .teachableLearnset = sPikipekTeachableLearnset,
         .eggMoveLearnset = sPikipekEggMoveLearnset,
@@ -916,8 +940,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Yungoos,
         .frontPicSize = MON_COORDS_SIZE(64, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_STRETCH,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_GROW_VIBRATE,
         .backPic = gMonBackPic_Yungoos,
         .backPicSize = MON_COORDS_SIZE(48, 40),
         .backPicYOffset = 14,
@@ -978,8 +1005,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Gumshoos,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_H_SHAKE,
+        .frontAnimFrames = sAnims_Gumshoos,
+        .frontAnimId = ANIM_H_SHAKE_SLOW,
         .backPic = gMonBackPic_Gumshoos,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 7,
@@ -1039,8 +1066,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Gumshoos,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_H_SHAKE,
+        .frontAnimFrames = sAnims_Gumshoos,
+        .frontAnimId = ANIM_H_SHAKE_SLOW,
         .backPic = gMonBackPic_Gumshoos,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 7,
@@ -1108,7 +1135,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Grubbin,
         .frontPicSize = MON_COORDS_SIZE(48, 32),
         .frontPicYOffset = 17,
-        .frontAnimFrames = sAnims_Vikavolt,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 1),
+        ),
         .frontAnimId = ANIM_H_SLIDE,
         .backPic = gMonBackPic_Grubbin,
         .backPicSize = MON_COORDS_SIZE(64, 32),
@@ -1279,7 +1309,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 250 : 225,
+        .expYield = 225,
         .evYield_SpAttack = 3,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 15,
@@ -1302,15 +1332,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Vikavolt,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 3,
-        .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 10),
-            ANIMCMD_FRAME(1, 10),
-            ANIMCMD_FRAME(0, 10),
-            ANIMCMD_FRAME(1, 10),
-            ANIMCMD_FRAME(0, 10),
-            ANIMCMD_FRAME(1, 10),
-            ANIMCMD_FRAME(0, 1),
-        ),
+        .frontAnimFrames = sAnims_Vikavolt,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
         .enemyMonElevation = 8,
         .backPic = gMonBackPic_Vikavolt,
@@ -1380,8 +1402,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Crabrawler,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SHAKE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = ANIM_TIP_MOVE_FORWARD,
         .backPic = gMonBackPic_Crabrawler,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
@@ -1398,7 +1423,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following,
+            sAnimTable_Following_Asym,
             gOverworldPalette_Crabrawler,
             gShinyOverworldPalette_Crabrawler
         )
@@ -1447,8 +1472,13 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Crabominable,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE_FAST,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = ANIM_V_SHAKE_TWICE,
         .backPic = gMonBackPic_Crabominable,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
@@ -1465,13 +1495,74 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following,
+            sAnimTable_Following_Asym,
             gOverworldPalette_Crabominable,
             gShinyOverworldPalette_Crabominable
         )
         .levelUpLearnset = sCrabominableLevelUpLearnset,
         .teachableLearnset = sCrabominableTeachableLearnset,
+        .formSpeciesIdTable = sCrabominableFormSpeciesIdTable,
+        .formChangeTable = sCrabominableFormChangeTable,
     },
+
+#if P_GEN_9_MEGA_EVOLUTIONS
+    [SPECIES_CRABOMINABLE_MEGA] =
+    {
+        .baseHP        = 97,
+        .baseAttack    = 157,
+        .baseDefense   = 122,
+        .baseSpeed     = 33,
+        .baseSpAttack  = 62,
+        .baseSpDefense = 107,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_ICE),
+        .catchRate = 60,
+        .expYield = 167,
+        .evYield_Attack = 2,
+        .itemRare = ITEM_CHERI_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_IRON_FIST, ABILITY_IRON_FIST, ABILITY_IRON_FIST },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Crabominable"),
+    #if P_MODIFIED_MEGA_CRIES
+        .cryId = CRY_CRABOMINABLE_MEGA,
+    #else
+        .cryId = CRY_CRABOMINABLE,
+    #endif // P_MODIFIED_MEGA_CRIES
+        .natDexNum = NATIONAL_DEX_CRABOMINABLE,
+        .categoryName = _("Woolly Crab"),
+        .height = 26,
+        .weight = 2528,
+        .description = COMPOUND_STRING(
+            "It can pulverize reinforced concrete with\n"
+            "a light swing of one of its fists, each of\n"
+            "which is covered in a thick layer of ice."),
+        .frontPic = gMonFrontPic_CrabominableMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CrabominableMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 3,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_CrabominableMega,
+        .shinyPalette = gMonShinyPalette_CrabominableMega,
+        .iconSprite = gMonIcon_CrabominableMega,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        FOOTPRINT(Crabominable)
+        SHADOW(-4, 17, SHADOW_SIZE_L)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sCrabominableLevelUpLearnset,
+        .teachableLearnset = sCrabominableTeachableLearnset,
+        .formSpeciesIdTable = sCrabominableFormSpeciesIdTable,
+        .formChangeTable = sCrabominableFormChangeTable,
+    },
+#endif //P_GEN_9_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CRABRAWLER
 
 #if P_FAMILY_ORICORIO
@@ -1514,8 +1605,13 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_OricorioBaile,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_CONCAVE_ARC_SMALL,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = ANIM_GROW_IN_STAGES,
         .backPic = gMonBackPic_OricorioBaile,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
@@ -1582,8 +1678,15 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_OricorioPomPom,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL,
         .backPic = gMonBackPic_OricorioPomPom,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
@@ -1650,8 +1753,15 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_OricorioPau,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = ANIM_H_SLIDE_SLOW,
         .backPic = gMonBackPic_OricorioPau,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
@@ -1718,8 +1828,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_OricorioSensu,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = ANIM_H_STRETCH,
         .backPic = gMonBackPic_OricorioSensu,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
@@ -1761,7 +1874,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = 190,
         .expYield = 61,
         .evYield_Speed = 1,
-        .itemRare = ITEM_HONEY,
+        .itemCommon = ITEM_HONEY,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -2351,7 +2464,14 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_WishiwashiSolo,
         .frontPicSize = MON_COORDS_SIZE(40, 24),
         .frontPicYOffset = 20,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 1),
+		),
         .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
         .enemyMonElevation = 12,
         .backPic = gMonBackPic_WishiwashiSolo,
@@ -2419,8 +2539,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_WishiwashiSchool,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 33),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_GROW,
         .backPic = gMonBackPic_WishiwashiSchool,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
@@ -2479,8 +2602,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Mareanie,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_GLOW_PURPLE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Mareanie,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 15,
@@ -2546,7 +2673,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Toxapex,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),
         .frontAnimId = ANIM_SHAKE_GLOW_PURPLE_SLOW,
         .backPic = gMonBackPic_Toxapex,
         .backPicSize = MON_COORDS_SIZE(64, 56),
@@ -2612,8 +2742,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Mudbray,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SHAKE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 47),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
         .backPic = gMonBackPic_Mudbray,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 8,
@@ -2678,7 +2811,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Mudsdale,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+        ),
         .frontAnimId = ANIM_V_SHAKE_TWICE,
         .backPic = gMonBackPic_Mudsdale,
         .backPicSize = MON_COORDS_SIZE(64, 56),
@@ -2944,8 +3082,15 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Fomantis,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 25),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_TIP_MOVE_FORWARD,
         .backPic = gMonBackPic_Fomantis,
         .backPicSize = MON_COORDS_SIZE(40, 56),
         .backPicYOffset = 5,
@@ -3007,11 +3152,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Lurantis,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 5),
-            ANIMCMD_FRAME(1, 35),
-            ANIMCMD_FRAME(0, 1),
-        ),
+        .frontAnimFrames = sAnims_Lurantis,
         .frontAnimId = ANIM_GROW_VIBRATE,
         .backPic = gMonBackPic_Lurantis,
         .backPicSize = MON_COORDS_SIZE(56, 64),
@@ -3072,7 +3213,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Lurantis,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = sAnims_Lurantis,
         .frontAnimId = ANIM_GROW_VIBRATE,
         .backPic = gMonBackPic_Lurantis,
         .backPicSize = MON_COORDS_SIZE(56, 64),
@@ -3142,8 +3283,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Morelull,
         .frontPicSize = MON_COORDS_SIZE(24, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_SHAKE_FLASH_YELLOW,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 55),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_GLOW_YELLOW,
         .backPic = gMonBackPic_Morelull,
         .backPicSize = MON_COORDS_SIZE(40, 48),
         .backPicYOffset = 9,
@@ -3160,7 +3304,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following,
+            sAnimTable_Following_Asym,
             gOverworldPalette_Morelull,
             gShinyOverworldPalette_Morelull
         )
@@ -3209,7 +3353,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Shiinotic,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 55),
+            ANIMCMD_FRAME(1, 55),
+            ANIMCMD_FRAME(0, 1),
+		),
         .frontAnimId = ANIM_SHAKE_GLOW_WHITE_SLOW,
         .backPic = gMonBackPic_Shiinotic,
         .backPicSize = MON_COORDS_SIZE(64, 48),
@@ -3367,7 +3515,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         )
         .levelUpLearnset = sSalazzleLevelUpLearnset,
         .teachableLearnset = sSalazzleTeachableLearnset,
-        .formSpeciesIdTable = sSalanditFormSpeciesIdTable,
+        .formSpeciesIdTable = sSalazzleFormSpeciesIdTable,
     },
 
     [SPECIES_SALAZZLE_TOTEM] =
@@ -3430,7 +3578,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sSalazzleLevelUpLearnset,
         .teachableLearnset = sSalazzleTeachableLearnset,
-        .formSpeciesIdTable = sSalanditFormSpeciesIdTable,
+        .formSpeciesIdTable = sSalazzleFormSpeciesIdTable,
     },
 #endif //P_FAMILY_SALANDIT
 
@@ -3613,7 +3761,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Bounsweet,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 16,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),			
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Bounsweet,
         .backPicSize = MON_COORDS_SIZE(48, 40),
@@ -3680,8 +3831,13 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Steenee,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_V_JUMPS_BIG,
         .backPic = gMonBackPic_Steenee,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 8,
@@ -3747,8 +3903,13 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Tsareena,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_SHRINK_GROW,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 40),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_V_STRETCH,
         .backPic = gMonBackPic_Tsareena,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
@@ -3875,8 +4036,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Comfey,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_H_SLIDE_WOBBLE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
         .enemyMonElevation = 8,
         .backPic = gMonBackPic_Comfey,
         .backPicSize = MON_COORDS_SIZE(64, 56),
@@ -3894,7 +4058,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following,
+            sAnimTable_Following_Asym,
             gOverworldPalette_Comfey,
             gShinyOverworldPalette_Comfey
         )
@@ -4112,6 +4276,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sWimpodLevelUpLearnset,
         .teachableLearnset = sWimpodTeachableLearnset,
         .eggMoveLearnset = sWimpodEggMoveLearnset,
+        .formSpeciesIdTable = sWimpodFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GOLISOPOD}),
     },
 
@@ -4182,7 +4347,201 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         )
         .levelUpLearnset = sGolisopodLevelUpLearnset,
         .teachableLearnset = sGolisopodTeachableLearnset,
+        .formSpeciesIdTable = sGolisopodFormSpeciesIdTable,
+        .formChangeTable = sGolisopodFormChangeTable,
     },
+
+    [SPECIES_WIMPOD_EXP_1] =
+    {
+        .baseHP        = 115,
+        .baseAttack    = 20,
+        .baseDefense   = 30,
+        .baseSpeed     = 15,
+        .baseSpAttack  = 20,
+        .baseSpDefense = 30,
+        .types = MON_TYPES(TYPE_BUG, TYPE_DARK),
+        .catchRate = 90,
+        .expYield = 46,
+        .evYield_Speed = 1,
+        .itemRare = ITEM_RAWST_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_MOODY, ABILITY_WIMP_OUT },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Wimpod"),
+        .cryId = CRY_WIMPOD,
+        .natDexNum = NATIONAL_DEX_WIMPOD,
+        .categoryName = _("Turn Tail"),
+        .height = 5,
+        .weight = 120,
+        .description = COMPOUND_STRING(
+            "Many an old coot would tell you tales of\n"
+            "how courageous the Wimpod population was\n"
+            "back in their day. In the days of\n"
+            "pirates, there was truth to that."),
+        .pokemonScale = 432,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_WimpodExp1,
+        .frontPicSize = MON_COORDS_SIZE(40, 40),
+        .frontPicYOffset = 14,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_SHAKE_H_SLIDE_FAST,
+        .backPic = gMonBackPic_WimpodExp1,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_WimpodExp1,
+        .shinyPalette = gMonShinyPalette_WimpodExp1,
+        .iconSprite = gMonIcon_WimpodExp1,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
+        SHADOW(-2, -1, SHADOW_SIZE_S)
+        FOOTPRINT(Wimpod)
+        OVERWORLD(
+            sPicTable_Wimpod,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Wimpod,
+            gShinyOverworldPalette_Wimpod
+        )
+        .levelUpLearnset = sWimpodExp1LevelUpLearnset,
+        .teachableLearnset = sWimpodExp1TeachableLearnset,
+        .eggMoveLearnset = sWimpodExp1EggMoveLearnset,
+        .formSpeciesIdTable = sWimpodFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GOLISOPOD_EXP_1}),
+    },
+
+    [SPECIES_GOLISOPOD_EXP_1] =
+    {
+        .baseHP        = 85,
+        .baseAttack    = 130,
+        .baseDefense   = 95,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_BUG, TYPE_DARK),
+        .catchRate = 45,
+        .expYield = 186,
+        .evYield_Defense = 2,
+        .itemCommon = ITEM_RAWST_BERRY,
+        .itemRare = ITEM_EJECT_BUTTON,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_MOODY, ABILITY_EMERGENCY_EXIT },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Golisopod"),
+        .cryId = CRY_GOLISOPOD,
+        .natDexNum = NATIONAL_DEX_GOLISOPOD,
+        .categoryName = _("Hard Scale"),
+        .height = 20,
+        .weight = 1080,
+        .description = COMPOUND_STRING(
+            "It battles skillfully with its six arms,\n"
+            "with a flashing slash of its giant sharp\n"
+            "claws, it cleaves seawater--or even\n"
+            "air--right in two."),
+        .pokemonScale = 261,
+        .pokemonOffset = 1,
+        .trainerScale = 334,
+        .trainerOffset = 4,
+        .frontPic = gMonFrontPic_GolisopodExp1,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE_FAST,
+        .backPic = gMonBackPic_GolisopodExp1,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_GolisopodExp1,
+        .shinyPalette = gMonShinyPalette_GolisopodExp1,
+        .iconSprite = gMonIcon_GolisopodExp1,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(2, 13, SHADOW_SIZE_L)
+        FOOTPRINT(Golisopod)
+        OVERWORLD(
+            sPicTable_Golisopod,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Golisopod,
+            gShinyOverworldPalette_Golisopod
+        )
+        .levelUpLearnset = sGolisopodExp1LevelUpLearnset,
+        .teachableLearnset = sGolisopodExp1TeachableLearnset,
+        .formSpeciesIdTable = sGolisopodFormSpeciesIdTable,
+    },
+
+#if P_GEN_9_MEGA_EVOLUTIONS
+    [SPECIES_GOLISOPOD_MEGA] =
+    {
+        .baseHP        = 75,
+        .baseAttack    = 150,
+        .baseDefense   = 175,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 120,
+        .types = MON_TYPES(TYPE_BUG, TYPE_STEEL),
+        .catchRate = 45,
+        .expYield = 186,
+        .evYield_Defense = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_EMERGENCY_EXIT, ABILITY_SHELL_ARMOR, ABILITY_ANGER_SHELL },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Golisopod"),
+    #if P_MODIFIED_MEGA_CRIES
+        .cryId = CRY_GOLISOPOD_MEGA,
+    #else
+        .cryId = CRY_GOLISOPOD,
+    #endif // P_MODIFIED_MEGA_CRIES
+        .natDexNum = NATIONAL_DEX_GOLISOPOD,
+        .categoryName = _("Hard Scale"),
+        .height = 23,
+        .weight = 1480,
+        .description = COMPOUND_STRING(
+            "It uses four of its arms to fiercely\n"
+            "assail its foes. Once they've been pushed\n"
+            "to the brink of defeat, it finishes them\n"
+            "off with the arms it kept hidden."),
+        .frontPic = gMonFrontPic_GolisopodMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_GolisopodMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 4,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_GolisopodMega,
+        .shinyPalette = gMonShinyPalette_GolisopodMega,
+        .iconSprite = gMonIcon_GolisopodMega,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        FOOTPRINT(Golisopod)
+        SHADOW(0, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sGolisopodLevelUpLearnset,
+        .teachableLearnset = sGolisopodTeachableLearnset,
+        .formSpeciesIdTable = sGolisopodFormSpeciesIdTable,
+        .formChangeTable = sGolisopodFormChangeTable,
+    },
+#endif //P_GEN_9_MEGA_EVOLUTIONS
 #endif //P_FAMILY_WIMPOD
 
 #if P_FAMILY_SANDYGAST
@@ -4224,8 +4583,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Sandygast,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 50),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_H_SHAKE,
         .backPic = gMonBackPic_Sandygast,
         .backPicSize = MON_COORDS_SIZE(40, 48),
         .backPicYOffset = 11,
@@ -4242,10 +4604,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following,
+            sAnimTable_Following_Asym,
             gOverworldPalette_Sandygast,
             gShinyOverworldPalette_Sandygast
         )
+        .isTelekinesisBanned = TRUE,
         .levelUpLearnset = sSandygastLevelUpLearnset,
         .teachableLearnset = sSandygastTeachableLearnset,
         .eggMoveLearnset = sSandygastEggMoveLearnset,
@@ -4291,8 +4654,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Palossand,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_H_VIBRATE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 50),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_GROW_VIBRATE,
         .backPic = gMonBackPic_Palossand,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 2,
@@ -4313,6 +4679,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Palossand,
             gShinyOverworldPalette_Palossand
         )
+        .isTelekinesisBanned = TRUE,
         .levelUpLearnset = sPalossandLevelUpLearnset,
         .teachableLearnset = sPalossandTeachableLearnset,
     },
@@ -4383,6 +4750,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Pyukumuku,
             gShinyOverworldPalette_Pyukumuku
         )
+        .teachingType = TM_ILLITERATE,
         .levelUpLearnset = sPyukumukuLevelUpLearnset,
         .teachableLearnset = sPyukumukuTeachableLearnset,
         .eggMoveLearnset = sPyukumukuEggMoveLearnset,
@@ -4428,7 +4796,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_TypeNull,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),
         .frontAnimId = ANIM_H_SHAKE,
         .backPic = gMonBackPic_TypeNull,
         .backPicSize = MON_COORDS_SIZE(56, 64),
@@ -4450,7 +4821,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_TypeNull,
             gShinyOverworldPalette_TypeNull
         )
-        .isLegendary = TRUE,
+        .isSubLegendary = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTypeNullLevelUpLearnset,
         .teachableLearnset = sTypeNullTeachableLearnset,
@@ -4467,7 +4838,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpDefense = 95,                                                        \
         .types = MON_TYPES(type),                                                   \
         .catchRate = 3,                                                             \
-        .expYield = 257,                                                            \
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 285 : 257,                    \
         .evYield_HP = 3,                                                            \
         .genderRatio = MON_GENDERLESS,                                              \
         .eggCycles = 120,                                                           \
@@ -4493,8 +4864,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Silvally,                                          \
         .frontPicSize = MON_COORDS_SIZE(64, 64),                                    \
         .frontPicYOffset = 0,                                                       \
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,                           \
-        .frontAnimId = ANIM_V_SHAKE,                                                \
+        .frontAnimFrames = ANIM_FRAMES(                                             \
+            ANIMCMD_FRAME(1, 30),                                                   \
+            ANIMCMD_FRAME(0, 1),                                                    \
+        ),                                                                          \
+        .frontAnimId = ANIM_BACK_AND_LUNGE,                                         \
         .backPic = gMonBackPic_Silvally,                                            \
         .backPicSize = MON_COORDS_SIZE(56, 64),                                     \
         .backPicYOffset = 0,                                                        \
@@ -4515,7 +4889,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Silvally,                                             \
             gShinyOverworldPalette_Silvally                                         \
         )                                                                           \
-        .isLegendary = TRUE,                                                        \
+        .isSubLegendary = TRUE,                                                     \
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,                               \
         .levelUpLearnset = sSilvallyLevelUpLearnset,                                \
         .teachableLearnset = sSilvallyTeachableLearnset,                            \
@@ -4574,7 +4948,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_DAWN_STONE, SPECIES_COGMENT}), \
         .formSpeciesIdTable = sMiniorFormSpeciesIdTable
 
-#define MINIOR_METEOR_SPECIES_INFO(Form)                    \
+#define MINIOR_METEOR_SPECIES_INFO(Form, heldItem)          \
     {                                                       \
         .baseHP        = 60,                                \
         .baseAttack    = 60,                                \
@@ -4582,17 +4956,22 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpeed     = 60,                                \
         .baseSpAttack  = 60,                                \
         .baseSpDefense = 100,                               \
+        .itemCommon = heldItem,                             \
         .weight = 400,                                      \
         .description = gMiniorMeteorPokedexText,            \
         .frontPic = gMonFrontPic_MiniorMeteor,              \
         .frontPicSize = MON_COORDS_SIZE(48, 40),            \
         .frontPicYOffset = 14,                              \
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,   \
-        .frontAnimId = ANIM_TUMBLING_FRONT_FLIP_TWICE,      \
+        .frontAnimFrames = ANIM_FRAMES(                     \
+            ANIMCMD_FRAME(0, 10),                           \
+            ANIMCMD_FRAME(1, 30),                           \
+            ANIMCMD_FRAME(0, 1),                            \
+        ),                                                  \
+        .frontAnimId = ANIM_BACK_FLIP_BIG,                  \
         .enemyMonElevation = 17,                            \
         .backPic = gMonBackPic_MiniorMeteor,                \
         .backPicSize = MON_COORDS_SIZE(56, 40),             \
-        .backPicYOffset = 14,                               \
+        .backPicYOffset = 11,                               \
         /*.backAnimId = BACK_ANIM_NONE,*/                   \
         .palette = gMonPalette_MiniorMeteor,                \
         .shinyPalette = gMonShinyPalette_MiniorMeteor,      \
@@ -4613,7 +4992,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         MINIOR_MISC_INFO(BODY_COLOR_BROWN),                 \
     }
 
-#define MINIOR_CORE_SPECIES_INFO(Form, color, iconPal)          \
+#define MINIOR_CORE_SPECIES_INFO(Form, color, iconPal, heldItem)\
     {                                                           \
         .baseHP        = 60,                                    \
         .baseAttack    = 100,                                   \
@@ -4621,17 +5000,22 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpeed     = 120,                                   \
         .baseSpAttack  = 100,                                   \
         .baseSpDefense = 60,                                    \
+        .itemCommon = heldItem,                                 \
         .weight = 3,                                            \
         .description = gMiniorCorePokedexText,                  \
         .frontPic = gMonFrontPic_MiniorCore,                    \
         .frontPicSize = MON_COORDS_SIZE(48, 40),                \
         .frontPicYOffset = 16,                                  \
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,       \
+        .frontAnimFrames = ANIM_FRAMES(                         \
+            ANIMCMD_FRAME(0, 30),                               \
+            ANIMCMD_FRAME(1, 50),                               \
+            ANIMCMD_FRAME(0, 1),                                \
+        ),                                                      \
         .frontAnimId = ANIM_TUMBLING_FRONT_FLIP_TWICE,          \
         .enemyMonElevation = 17,                                \
         .backPic = gMonBackPic_MiniorCore,                      \
         .backPicSize = MON_COORDS_SIZE(56, 40),                 \
-        .backPicYOffset = 15,                                   \
+        .backPicYOffset = 13,                                   \
         /*.backAnimId = BACK_ANIM_NONE,*/                       \
         .palette = gMonPalette_MiniorCore##Form,                \
         .shinyPalette = gMonShinyPalette_MiniorCore,            \
@@ -4643,20 +5027,20 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         MINIOR_MISC_INFO(color),                                \
     }
 
-    [SPECIES_MINIOR_METEOR_RED]    = MINIOR_METEOR_SPECIES_INFO(Red),
-    [SPECIES_MINIOR_METEOR_ORANGE] = MINIOR_METEOR_SPECIES_INFO(Orange),
-    [SPECIES_MINIOR_METEOR_YELLOW] = MINIOR_METEOR_SPECIES_INFO(Yellow),
-    [SPECIES_MINIOR_METEOR_GREEN]  = MINIOR_METEOR_SPECIES_INFO(Green),
-    [SPECIES_MINIOR_METEOR_BLUE]   = MINIOR_METEOR_SPECIES_INFO(Blue),
-    [SPECIES_MINIOR_METEOR_INDIGO] = MINIOR_METEOR_SPECIES_INFO(Indigo),
-    [SPECIES_MINIOR_METEOR_VIOLET] = MINIOR_METEOR_SPECIES_INFO(Violet),
-    [SPECIES_MINIOR_CORE_RED]      = MINIOR_CORE_SPECIES_INFO(Red,    BODY_COLOR_RED,    0),
-    [SPECIES_MINIOR_CORE_ORANGE]   = MINIOR_CORE_SPECIES_INFO(Orange, BODY_COLOR_RED,    0),
-    [SPECIES_MINIOR_CORE_YELLOW]   = MINIOR_CORE_SPECIES_INFO(Yellow, BODY_COLOR_YELLOW, 0),
-    [SPECIES_MINIOR_CORE_GREEN]    = MINIOR_CORE_SPECIES_INFO(Green,  BODY_COLOR_GREEN,  1),
-    [SPECIES_MINIOR_CORE_BLUE]     = MINIOR_CORE_SPECIES_INFO(Blue,   BODY_COLOR_BLUE,   0),
-    [SPECIES_MINIOR_CORE_INDIGO]   = MINIOR_CORE_SPECIES_INFO(Indigo, BODY_COLOR_BLUE,   0),
-    [SPECIES_MINIOR_CORE_VIOLET]   = MINIOR_CORE_SPECIES_INFO(Violet, BODY_COLOR_PURPLE, 2),
+    [SPECIES_MINIOR_METEOR_RED]    = MINIOR_METEOR_SPECIES_INFO(Red,    ITEM_HARD_STONE),
+    [SPECIES_MINIOR_METEOR_ORANGE] = MINIOR_METEOR_SPECIES_INFO(Orange, ITEM_HARD_STONE),
+    [SPECIES_MINIOR_METEOR_YELLOW] = MINIOR_METEOR_SPECIES_INFO(Yellow, ITEM_FLOAT_STONE),
+    [SPECIES_MINIOR_METEOR_GREEN]  = MINIOR_METEOR_SPECIES_INFO(Green,  ITEM_FLOAT_STONE),
+    [SPECIES_MINIOR_METEOR_BLUE]   = MINIOR_METEOR_SPECIES_INFO(Blue,   ITEM_HARD_STONE),
+    [SPECIES_MINIOR_METEOR_INDIGO] = MINIOR_METEOR_SPECIES_INFO(Indigo, ITEM_HARD_STONE),
+    [SPECIES_MINIOR_METEOR_VIOLET] = MINIOR_METEOR_SPECIES_INFO(Violet, ITEM_FLOAT_STONE),
+    [SPECIES_MINIOR_CORE_RED]      = MINIOR_CORE_SPECIES_INFO(Red,    BODY_COLOR_RED,    0, ITEM_HARD_STONE),
+    [SPECIES_MINIOR_CORE_ORANGE]   = MINIOR_CORE_SPECIES_INFO(Orange, BODY_COLOR_RED,    0, ITEM_HARD_STONE),
+    [SPECIES_MINIOR_CORE_YELLOW]   = MINIOR_CORE_SPECIES_INFO(Yellow, BODY_COLOR_YELLOW, 0, ITEM_FLOAT_STONE),
+    [SPECIES_MINIOR_CORE_GREEN]    = MINIOR_CORE_SPECIES_INFO(Green,  BODY_COLOR_GREEN,  1, ITEM_FLOAT_STONE),
+    [SPECIES_MINIOR_CORE_BLUE]     = MINIOR_CORE_SPECIES_INFO(Blue,   BODY_COLOR_BLUE,   0, ITEM_HARD_STONE),
+    [SPECIES_MINIOR_CORE_INDIGO]   = MINIOR_CORE_SPECIES_INFO(Indigo, BODY_COLOR_BLUE,   0, ITEM_HARD_STONE),
+    [SPECIES_MINIOR_CORE_VIOLET]   = MINIOR_CORE_SPECIES_INFO(Violet, BODY_COLOR_PURPLE, 2, ITEM_FLOAT_STONE),
 #endif //P_FAMILY_MINIOR
 
 #if P_FAMILY_KOMALA
@@ -4698,7 +5082,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Komala,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 60),
+            ANIMCMD_FRAME(0, 1),
+		),
         .frontAnimId = ANIM_H_DIP,
         .backPic = gMonBackPic_Komala,
         .backPicSize = MON_COORDS_SIZE(64, 48),
@@ -4716,7 +5103,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following,
+            sAnimTable_Following_Asym,
             gOverworldPalette_Komala,
             gShinyOverworldPalette_Komala
         )
@@ -4961,8 +5348,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_MimikyuDisguised,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
+        .frontAnimFrames = sAnims_MimikyuDisguised,
+        .frontAnimId = ANIM_SWING_CONCAVE_FAST_SHORT,
         .backPic = gMonBackPic_MimikyuDisguised,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 7,
@@ -4979,7 +5366,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following,
+            sAnimTable_Following_Asym,
             gOverworldPalette_MimikyuDisguised,
             gShinyOverworldPalette_MimikyuDisguised
         )
@@ -5028,7 +5415,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_MimikyuBusted,
         .backPicSize = MON_COORDS_SIZE(64, 40),
-        .backPicYOffset = 15,
+        .backPicYOffset = 7,
         //.backAnimId = BACK_ANIM_NONE,
         .palette = gMonPalette_MimikyuBusted,
         .shinyPalette = gMonShinyPalette_MimikyuBusted,
@@ -5078,7 +5465,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_MimikyuDisguised,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = sAnims_MimikyuDisguised,
         .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_MimikyuDisguised,
         .backPicSize = MON_COORDS_SIZE(56, 56),
@@ -5147,7 +5534,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_MimikyuBusted,
         .backPicSize = MON_COORDS_SIZE(64, 40),
-        .backPicYOffset = 15,
+        .backPicYOffset = 7,
         //.backAnimId = BACK_ANIM_NONE,
         .palette = gMonPalette_MimikyuBusted,
         .shinyPalette = gMonShinyPalette_MimikyuBusted,
@@ -5270,8 +5657,13 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Bruxish,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 15,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_RISING_WOBBLE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 20),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_H_SPRING,
         .backPic = gMonBackPic_Bruxish,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 14,
@@ -5365,7 +5757,70 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sDrampaLevelUpLearnset,
         .teachableLearnset = sDrampaTeachableLearnset,
         .eggMoveLearnset = sDrampaEggMoveLearnset,
+        .formSpeciesIdTable = sDrampaFormSpeciesIdTable,
+        .formChangeTable = sDrampaFormChangeTable,
     },
+
+#if P_GEN_9_MEGA_EVOLUTIONS
+    [SPECIES_DRAMPA_MEGA] =
+    {
+        .baseHP        = 78,
+        .baseAttack    = 85,
+        .baseDefense   = 110,
+        .baseSpeed     = 36,
+        .baseSpAttack  = 160,
+        .baseSpDefense = 116,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_DRAGON),
+        .catchRate = 70,
+        .expYield = 170,
+        .evYield_SpAttack = 2,
+        .itemRare = ITEM_PERSIM_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_BERSERK, ABILITY_BERSERK, ABILITY_BERSERK },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Drampa"),
+    #if P_MODIFIED_MEGA_CRIES
+        .cryId = CRY_DRAMPA_MEGA,
+    #else
+        .cryId = CRY_DRAMPA,
+    #endif // P_MODIFIED_MEGA_CRIES
+        .natDexNum = NATIONAL_DEX_DRAMPA,
+        .categoryName = _("Imposing"),
+        .height = 3,
+        .weight = 2405,
+        .description = COMPOUND_STRING(
+            "Drampa's cells have been\n"
+            "invigorated, allowing it to regain\n"
+            "its youth. It manipulates the\n"
+            "atmosphere to summon storms."),
+        .frontPic = gMonFrontPic_DrampaMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .enemyMonElevation = 4,
+        .backPic = gMonBackPic_DrampaMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_DrampaMega,
+        .shinyPalette = gMonShinyPalette_DrampaMega,
+        .iconSprite = gMonIcon_DrampaMega,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        FOOTPRINT(Drampa)
+        SHADOW(-6, 16, SHADOW_SIZE_XL_BATTLE_ONLY)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sDrampaLevelUpLearnset,
+        .teachableLearnset = sDrampaTeachableLearnset,
+        .formSpeciesIdTable = sDrampaFormSpeciesIdTable,
+        .formChangeTable = sDrampaFormChangeTable,
+    },
+#endif //P_GEN_9_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DRAMPA
 
 #if P_FAMILY_DHELMISE
@@ -5408,7 +5863,16 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Dhelmise,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 1),
+		),
         .frontAnimId = ANIM_SWING_CONVEX,
         .enemyMonElevation = 2,
         .backPic = gMonBackPic_Dhelmise,
@@ -5647,7 +6111,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_FIGHTING),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
+        .expYield = 270,
         .evYield_Defense = 3,
         .itemCommon = ITEM_RAZOR_CLAW,
         .genderRatio = PERCENT_FEMALE(50),
@@ -5671,13 +6135,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_KommoO,
         .frontPicSize = MON_COORDS_SIZE(63, 63),
         .frontPicYOffset = 0,
-        .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 10),
-            ANIMCMD_FRAME(1, 20),
-            ANIMCMD_FRAME(0, 20),
-            ANIMCMD_FRAME(1, 20),
-            ANIMCMD_FRAME(0, 1),
-        ),
+        .frontAnimFrames = sAnims_Kommo_O,
         .frontAnimId = ANIM_SHRINK_GROW_VIBRATE_FAST,
         .backPic = gMonBackPic_KommoO,
         .backPicSize = MON_COORDS_SIZE(60, 60),
@@ -5776,7 +6234,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_TapuKoko,
             gShinyOverworldPalette_TapuKoko
         )
-        .isLegendary = TRUE,
+        .isSubLegendary = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTapuKokoLevelUpLearnset,
         .teachableLearnset = sTapuKokoTeachableLearnset,
@@ -5848,7 +6306,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_TapuLele,
             gShinyOverworldPalette_TapuLele
         )
-        .isLegendary = TRUE,
+        .isSubLegendary = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTapuLeleLevelUpLearnset,
         .teachableLearnset = sTapuLeleTeachableLearnset,
@@ -5922,7 +6380,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_TapuBulu,
             gShinyOverworldPalette_TapuBulu
         )
-        .isLegendary = TRUE,
+        .isSubLegendary = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTapuBuluLevelUpLearnset,
         .teachableLearnset = sTapuBuluTeachableLearnset,
@@ -5995,7 +6453,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_TapuFini,
             gShinyOverworldPalette_TapuFini
         )
-        .isLegendary = TRUE,
+        .isSubLegendary = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTapuFiniLevelUpLearnset,
         .teachableLearnset = sTapuFiniTeachableLearnset,
@@ -6012,7 +6470,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpAttack  = 29,
         .baseSpDefense = 31,
         .types = MON_TYPES(TYPE_PSYCHIC),
-        .catchRate = 45,
+        .catchRate = 3,
         .expYield = 40,
         .evYield_HP = 1,
         .genderRatio = MON_GENDERLESS,
@@ -6040,7 +6498,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Cosmog,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         .enemyMonElevation = 7,
         .backPic = gMonBackPic_Cosmog,
@@ -6063,8 +6524,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Cosmog,
             gShinyOverworldPalette_Cosmog
         )
-        .isLegendary = TRUE,
-        .tmIlliterate = TRUE,
+        .isRestrictedLegendary = TRUE,
+        .teachingType = TM_ILLITERATE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sCosmogLevelUpLearnset,
@@ -6081,7 +6542,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpAttack  = 29,
         .baseSpDefense = 131,
         .types = MON_TYPES(TYPE_PSYCHIC),
-        .catchRate = 45,
+        .catchRate = 3,
         .expYield = 140,
         .evYield_Defense = 1,
         .evYield_SpDefense = 1,
@@ -6110,8 +6571,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Cosmoem,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_RISING_WOBBLE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 40),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = ANIM_V_SLIDE_SLOW,
         .enemyMonElevation = 3,
         .backPic = gMonBackPic_Cosmoem,
         .backPicSize = MON_COORDS_SIZE(64, 40),
@@ -6133,8 +6598,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Cosmoem,
             gShinyOverworldPalette_Cosmoem
         )
-        .isLegendary = TRUE,
-        .tmIlliterate = TRUE,
+        .isRestrictedLegendary = TRUE,
+        .teachingType = TM_ILLITERATE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sCosmoemLevelUpLearnset,
@@ -6152,7 +6617,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpAttack  = 113,
         .baseSpDefense = 89,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_STEEL),
-        .catchRate = 45,
+        .catchRate = 3,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 340 : 306,
         .evYield_Attack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -6180,8 +6645,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Solgaleo,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_GROW_VIBRATE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 57),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE_SLOW,
         .backPic = gMonBackPic_Solgaleo,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
@@ -6195,14 +6663,14 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         FOOTPRINT(Solgaleo)
         OVERWORLD(
             sPicTable_Solgaleo,
-            SIZE_32x32,
+            SIZE_32x32, //TODO: 64x64 overworld sprite!
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
             gOverworldPalette_Solgaleo,
             gShinyOverworldPalette_Solgaleo
         )
-        .isLegendary = TRUE,
+        .isRestrictedLegendary = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sSolgaleoLevelUpLearnset,
@@ -6218,7 +6686,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpAttack  = 137,
         .baseSpDefense = 107,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_GHOST),
-        .catchRate = 45,
+        .catchRate = 3,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 340 : 306,
         .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -6246,7 +6714,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Lunala,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 45),
+            ANIMCMD_FRAME(0, 1),
+		),
         .frontAnimId = ANIM_CIRCULAR_VIBRATE,
         .enemyMonElevation = 6,
         .backPic = gMonBackPic_Lunala,
@@ -6262,14 +6733,14 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         FOOTPRINT(Lunala)
         OVERWORLD(
             sPicTable_Lunala,
-            SIZE_32x32,
+            SIZE_32x32, //TODO: 64x64 overworld sprite!
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
             gOverworldPalette_Lunala,
             gShinyOverworldPalette_Lunala
         )
-        .isLegendary = TRUE,
+        .isRestrictedLegendary = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sLunalaLevelUpLearnset,
@@ -6315,8 +6786,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Nihilego,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
         .enemyMonElevation = 6,
         .backPic = gMonBackPic_Nihilego,
         .backPicSize = MON_COORDS_SIZE(64, 48),
@@ -6384,8 +6858,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Buzzwole,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE_FAST,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE_SLOW,
         .backPic = gMonBackPic_Buzzwole,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 14,
@@ -6451,8 +6928,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Pheromosa,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_SHRINK_GROW,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 50),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_H_STRETCH,
         .backPic = gMonBackPic_Pheromosa,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 2,
@@ -6518,7 +6998,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Xurkitree,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 50),
+            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(0, 1),
+		),
         .frontAnimId = ANIM_SHAKE_FLASH_YELLOW_FAST,
         .backPic = gMonBackPic_Xurkitree,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -6536,7 +7020,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following,
+            sAnimTable_Following_Asym,
             gOverworldPalette_Xurkitree,
             gShinyOverworldPalette_Xurkitree
         )
@@ -6587,8 +7071,13 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Celesteela,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_GROW_STUTTER_SLOW,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_CIRCLE_INTO_BG,
         .backPic = gMonBackPic_Celesteela,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
@@ -6654,8 +7143,13 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Kartana,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_H_VIBRATE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = ANIM_SWING_CONVEX_FAST,
         .enemyMonElevation = 3,
         .backPic = gMonBackPic_Kartana,
         .backPicSize = MON_COORDS_SIZE(64, 48),
@@ -6722,7 +7216,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Guzzlord,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 50),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),
         .frontAnimId = ANIM_SHRINK_GROW_VIBRATE_FAST,
         .backPic = gMonBackPic_Guzzlord,
         .backPicSize = MON_COORDS_SIZE(64, 56),
@@ -6761,7 +7259,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpAttack  = 127,
         .baseSpDefense = 89,
         .types = MON_TYPES(TYPE_PSYCHIC),
-        .catchRate = 255,
+        .catchRate = 3,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_Attack = 1,
         .evYield_SpAttack = 2,
@@ -6791,7 +7289,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Necrozma,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 55),
+            ANIMCMD_FRAME(0, 1),
+		),
         .frontAnimId = ANIM_GROW_VIBRATE,
         .enemyMonElevation = 6,
         .backPic = gMonBackPic_Necrozma,
@@ -6807,14 +7308,14 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         FOOTPRINT(Necrozma)
         OVERWORLD(
             sPicTable_Necrozma,
-            SIZE_32x32,
+            SIZE_32x32, //TODO: 64x64 overworld sprite!
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following,
+            sAnimTable_Following_Asym,
             gOverworldPalette_Necrozma,
             gShinyOverworldPalette_Necrozma
         )
-        .isLegendary = TRUE,
+        .isRestrictedLegendary = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sNecrozmaLevelUpLearnset,
@@ -6832,7 +7333,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpAttack  = 113,
         .baseSpDefense = 109,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_STEEL),
-        .catchRate = 255,
+        .catchRate = 3,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 340 : 306,
         .evYield_Attack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -6861,8 +7362,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_NecrozmaDuskMane,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 35),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_GROW_STUTTER_SLOW,
         .backPic = gMonBackPic_NecrozmaDuskMane,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
@@ -6872,18 +7376,18 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .iconSprite = gMonIcon_NecrozmaDuskMane,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-3, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(-1, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Necrozma)
         OVERWORLD(
             sPicTable_NecrozmaDuskMane,
-            SIZE_32x32,
+            SIZE_32x32, //TODO: 64x64 overworld sprite!
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following,
+            sAnimTable_Following_Asym,
             gOverworldPalette_NecrozmaDuskMane,
             gShinyOverworldPalette_NecrozmaDuskMane
         )
-        .isLegendary = TRUE,
+        .isRestrictedLegendary = TRUE,
         .cannotBeTraded = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
@@ -6902,7 +7406,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpAttack  = 157,
         .baseSpDefense = 127,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_GHOST),
-        .catchRate = 255,
+        .catchRate = 3,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 340 : 306,
         .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -6931,8 +7435,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_NecrozmaDawnWings,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
         .enemyMonElevation = 6,
         .backPic = gMonBackPic_NecrozmaDawnWings,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -6947,14 +7454,14 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         FOOTPRINT(Necrozma)
         OVERWORLD(
             sPicTable_NecrozmaDawnWings,
-            SIZE_32x32,
+            SIZE_32x32, //TODO: 64x64 overworld sprite!
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following,
+            sAnimTable_Following_Asym,
             gOverworldPalette_NecrozmaDawnWings,
             gShinyOverworldPalette_NecrozmaDawnWings
         )
-        .isLegendary = TRUE,
+        .isRestrictedLegendary = TRUE,
         .cannotBeTraded = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
@@ -6974,7 +7481,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpAttack  = 167,
         .baseSpDefense = 97,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_DRAGON),
-        .catchRate = 255,
+        .catchRate = 3,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 377 : 339,
         .evYield_Attack = 1,
         .evYield_Speed = 1,
@@ -7022,15 +7529,15 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     #if OW_BATTLE_ONLY_FORMS
         OVERWORLD(
             sPicTable_NecrozmaUltra,
-            SIZE_32x32,
+            SIZE_32x32, //TODO: 64x64 overworld sprite!
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following,
+            sAnimTable_Following_Asym,
             gOverworldPalette_NecrozmaUltra,
             gShinyOverworldPalette_NecrozmaUltra
         )
     #endif //OW_BATTLE_ONLY_FORMS
-        .isLegendary = TRUE,
+        .isRestrictedLegendary = TRUE,
         .isUltraBurst = TRUE,
         .cannotBeTraded = TRUE,
         .isFrontierBanned = TRUE,
@@ -7038,6 +7545,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sNecrozmaLevelUpLearnset,
         .teachableLearnset = sNecrozmaTeachableLearnset,
         .formSpeciesIdTable = sNecrozmaFormSpeciesIdTable,
+        .formChangeTable = sNecrozmaUltraFormChangeTable,
     },
 #endif //P_ULTRA_BURST_FORMS
 #endif //P_FUSION_FORMS
@@ -7081,8 +7589,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Magearna,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_H_SLIDE_SLOW,
+        .frontAnimFrames = sAnims_Magearna,
+        .frontAnimId = ANIM_SWING_CONCAVE_FAST,
         .backPic = gMonBackPic_Magearna,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
@@ -7109,7 +7617,9 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sMagearnaLevelUpLearnset,
         .teachableLearnset = sMagearnaTeachableLearnset,
         .formSpeciesIdTable = sMagearnaFormSpeciesIdTable,
+        .formChangeTable = sMagearnaFormChangeTable,
     },
+
     [SPECIES_MAGEARNA_ORIGINAL] =
     {
         .baseHP        = 80,
@@ -7147,8 +7657,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_MagearnaOriginal,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_H_SLIDE_SLOW,
+        .frontAnimFrames = sAnims_Magearna,
+        .frontAnimId = ANIM_SWING_CONCAVE_FAST,
         .backPic = gMonBackPic_MagearnaOriginal,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
@@ -7175,7 +7685,130 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sMagearnaLevelUpLearnset,
         .teachableLearnset = sMagearnaTeachableLearnset,
         .formSpeciesIdTable = sMagearnaFormSpeciesIdTable,
+        .formChangeTable = sMagearnaOriginalFormChangeTable,
     },
+
+#if P_GEN_9_MEGA_EVOLUTIONS
+    [SPECIES_MAGEARNA_MEGA] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 125,
+        .baseDefense   = 115,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 170,
+        .baseSpDefense = 115,
+        .types = MON_TYPES(TYPE_STEEL, TYPE_FAIRY),
+        .catchRate = 3,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
+        .evYield_SpAttack = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_SOUL_HEART, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Magearna"),
+    #if P_MODIFIED_MEGA_CRIES
+        .cryId = CRY_MAGEARNA_MEGA,
+    #else
+        .cryId = CRY_MAGEARNA,
+    #endif // P_MODIFIED_MEGA_CRIES
+        .natDexNum = NATIONAL_DEX_MAGEARNA,
+        .categoryName = _("Artificial"),
+        .height = 13,
+        .weight = 2481,
+        .description = COMPOUND_STRING(
+            "This is Magearna once a previously hidden\n"
+            "mode activates. The emotions Magearna had\n"
+            "begun to feel now hide away as it fells\n"
+            "foe after foe."),
+        .frontPic = gMonFrontPic_MagearnaMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_MagearnaMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 3,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_MagearnaMega,
+        .shinyPalette = gMonShinyPalette_MagearnaMega,
+        .iconSprite = gMonIcon_MagearnaMega,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        FOOTPRINT(Magearna)
+        SHADOW(-1, 15, SHADOW_SIZE_M)
+        .isMegaEvolution = TRUE,
+        .isMythical = TRUE,
+        .isFrontierBanned = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sMagearnaLevelUpLearnset,
+        .teachableLearnset = sMagearnaTeachableLearnset,
+        .formSpeciesIdTable = sMagearnaFormSpeciesIdTable,
+        .formChangeTable = sMagearnaFormChangeTable,
+    },
+    
+    [SPECIES_MAGEARNA_ORIGINAL_MEGA] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 125,
+        .baseDefense   = 115,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 170,
+        .baseSpDefense = 115,
+        .types = MON_TYPES(TYPE_STEEL, TYPE_FAIRY),
+        .catchRate = 3,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
+        .evYield_SpAttack = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_SOUL_HEART, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Magearna"),
+    #if P_MODIFIED_MEGA_CRIES
+        .cryId = CRY_MAGEARNA_MEGA,
+    #else
+        .cryId = CRY_MAGEARNA,
+    #endif // P_MODIFIED_MEGA_CRIES
+        .natDexNum = NATIONAL_DEX_MAGEARNA,
+        .categoryName = _("Artificial"),
+        .height = 13,
+        .weight = 2481,
+        .description = COMPOUND_STRING(
+            "A mechanism to remove Magearna's\n"
+            "limitations has lain secretly within\n"
+            "Magearna for 500 years. This mechanism\n"
+            "is triggered by a Mega Stone."),
+        .frontPic = gMonFrontPic_MagearnaOriginalMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_MagearnaOriginalMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 3,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_MagearnaOriginalMega,
+        .shinyPalette = gMonShinyPalette_MagearnaOriginalMega,
+        .iconSprite = gMonIcon_MagearnaOriginalMega,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        FOOTPRINT(Magearna)
+        SHADOW(-1, 15, SHADOW_SIZE_M)
+        .isMegaEvolution = TRUE,
+        .isMythical = TRUE,
+        .isFrontierBanned = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sMagearnaLevelUpLearnset,
+        .teachableLearnset = sMagearnaTeachableLearnset,
+        .formSpeciesIdTable = sMagearnaFormSpeciesIdTable,
+        .formChangeTable = sMagearnaOriginalFormChangeTable,
+    },
+#endif //P_GEN_9_MEGA_EVOLUTIONS
 #endif //P_FAMILY_MAGEARNA
 
 #if P_FAMILY_MARSHADOW
@@ -7290,8 +7923,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Poipole,
         .frontPicSize = MON_COORDS_SIZE(40, 56),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_SHAKE_GLOW_PURPLE_SLOW,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 40),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = ANIM_CIRCLE_C_CLOCKWISE_SLOW,
         .enemyMonElevation = 9,
         .backPic = gMonBackPic_Poipole,
         .backPicSize = MON_COORDS_SIZE(48, 56),
@@ -7356,8 +7992,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Naganadel,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_TRIANGLE_DOWN_TWICE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = ANIM_BACK_AND_LUNGE,
         .enemyMonElevation = 7,
         .backPic = gMonBackPic_Naganadel,
         .backPicSize = MON_COORDS_SIZE(64, 56),
@@ -7424,8 +8064,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Stakataka,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_GROW_VIBRATE,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 50),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_V_SHAKE_TWICE_SLOW,
         .backPic = gMonBackPic_Stakataka,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 12,
@@ -7491,7 +8134,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Blacephalon,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 50),
+            ANIMCMD_FRAME(0, 1),
+		),
         .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .backPic = gMonBackPic_Blacephalon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
@@ -7509,7 +8155,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following,
+            sAnimTable_Following_Asym,
             gOverworldPalette_Blacephalon,
             gShinyOverworldPalette_Blacephalon
         )
@@ -7557,8 +8203,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Zeraora,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_STRETCH,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+		),
+        .frontAnimId = ANIM_PIVOT_SHAKE,
         .backPic = gMonBackPic_Zeraora,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 11,
@@ -7584,7 +8233,72 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sZeraoraLevelUpLearnset,
         .teachableLearnset = sZeraoraTeachableLearnset,
+        .formSpeciesIdTable = sZeraoraFormSpeciesIdTable,
+        .formChangeTable = sZeraoraFormChangeTable,
     },
+
+#if P_GEN_9_MEGA_EVOLUTIONS
+    [SPECIES_ZERAORA_MEGA] =
+    {
+        .baseHP        = 88,
+        .baseAttack    = 157,
+        .baseDefense   = 75,
+        .baseSpeed     = 153,
+        .baseSpAttack  = 147,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_ELECTRIC),
+        .catchRate = 3,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
+        .evYield_Speed = 3,
+
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Zeraora"),
+    #if P_MODIFIED_MEGA_CRIES
+        .cryId = CRY_ZERAORA_MEGA,
+    #else
+        .cryId = CRY_ZERAORA,
+    #endif // P_MODIFIED_MEGA_CRIES
+        .natDexNum = NATIONAL_DEX_ZERAORA,
+        .categoryName = _("Thunderclap"),
+        .height = 15,
+        .weight = 445,
+        .description = COMPOUND_STRING(
+            "It stores up 10 lightning strikes' worth\n"
+            "of electricity. When it stops limiting\n"
+            "itself, it's in the strongest class of\n"
+            "electric Pokémon."),
+        .frontPic = gMonFrontPic_ZeraoraMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_ZeraoraMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 9,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_ZeraoraMega,
+        .shinyPalette = gMonShinyPalette_ZeraoraMega,
+        .iconSprite = gMonIcon_ZeraoraMega,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        FOOTPRINT(Zeraora)
+        SHADOW(-6, 12, SHADOW_SIZE_L)
+        .isMegaEvolution = TRUE,
+        .isMythical = TRUE,
+        .isFrontierBanned = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sZeraoraLevelUpLearnset,
+        .teachableLearnset = sZeraoraTeachableLearnset,
+        .formSpeciesIdTable = sZeraoraFormSpeciesIdTable,
+        .formChangeTable = sZeraoraFormChangeTable,
+    },
+#endif //P_GEN_9_MEGA_EVOLUTIONS
 #endif //P_FAMILY_ZERAORA
 
 #if P_FAMILY_MELTAN
@@ -7624,8 +8338,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Meltan,
         .frontPicSize = MON_COORDS_SIZE(32, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_GROW_STUTTER_SLOW,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = ANIM_GROW_VIBRATE,
         .backPic = gMonBackPic_Meltan,
         .backPicSize = MON_COORDS_SIZE(40, 40),
         .backPicYOffset = 12,
@@ -7690,7 +8407,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .frontPic = gMonFrontPic_Melmetal,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 1),
+        ),
         .frontAnimId = ANIM_GROW_VIBRATE,
         .backPic = gMonBackPic_Melmetal,
         .backPicSize = MON_COORDS_SIZE(64, 40),

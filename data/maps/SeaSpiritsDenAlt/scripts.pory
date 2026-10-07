@@ -26,6 +26,7 @@ mapscripts SeaSpiritsDenAlt_MapScripts {
 
 script SeaSpiritsDenAlt_Portal {
 	warp(MAP_SEA_SPIRITS_DEN, 1)
+	waitstate
 }
 
 script BattleArticunoG {
@@ -38,7 +39,6 @@ script BattleArticunoG {
 	seteventmon(SPECIES_ARTICUNO_GALAR, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -58,7 +58,6 @@ script BattleZapdosG {
 	seteventmon(SPECIES_ZAPDOS_GALAR, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -78,7 +77,6 @@ script BattleMoltresG {
 	seteventmon(SPECIES_MOLTRES_GALAR, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {

@@ -1,0 +1,63 @@
+mapscripts BygoneVault_2R1_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2)) {
+			setmetatile (6, 2, 0x2A9, TRUE)
+		}
+	}
+	MAP_SCRIPT_ON_TRANSITION {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) != 43) {
+			setflag (FLAG_TEMP_1)
+		}
+	}
+}
+
+script BygoneVault_RightSwitch2 {
+	if (!flag(FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2)) {
+		msgbox (Text_FlipSwitch, MSGBOX_YESNO)
+		if (var(VAR_RESULT)) {
+			closemessage
+			setmetatile (6, 2, 0x2A9, TRUE)
+			special (DrawWholeMapView)
+			playse (SE_SWITCH)
+			waitse
+			delay (10)
+			setvar (VAR_0x8004, 1)  # vertical pan
+			setvar (VAR_0x8005, 1)  # horizontal pan
+			setvar (VAR_0x8006, 8) # num shakes
+			setvar (VAR_0x8007, 2)  # shake delay
+			special (ShakeCamera)
+			waitstate
+			setflag (FLAG_EXP_1_BYGONE_VAULT_RIGHT_SWITCH_2)
+		}
+	}
+	else {
+		msgbox (Text_FlippedSwitch, MSGBOX_AUTOCLOSE)
+	}
+}
+
+script BygoneVault_2R1_EventScript_WildPokemon1 {
+	if (!defeated(TRAINER_WILD_POKEMON_BV_1)) {
+		lock
+		setobjectxyperm (1, 27, 13)
+		addobject (1)
+		setflag (FLAG_WILD_OPPONENT)
+		setflag (FLAG_SYS_SET_BATTLE_BGM)
+		setvar (VAR_BATTLE_BGM, MUS_XD_VS_CIPHER_PEON)
+		applymovement (1, Common_Movement_WalkUpFast5)
+		waitmovement (0)
+		playmoncry (SPECIES_LUCARIO, CRY_MODE_ENCOUNTER)
+		waitmoncry
+		msgbox (Exp1_WildPokemonTrainerText_Intro, MSGBOX_DEFAULT)
+		trainerbattle_no_intro (TRAINER_WILD_POKEMON_BV_1, Exp1_WildPokemonTrainerText_Defeat)
+		playmoncry (SPECIES_LUCARIO, CRY_MODE_WEAK)
+		waitmoncry
+		delay (10)
+		applymovement (1, Common_Movement_WalkDownFast5)
+		waitmovement (0)
+		setvar (VAR_TEMP_0, 1)
+		clearflag (FLAG_WILD_OPPONENT)
+		removeobject (1)
+		release
+	}
+	setvar (VAR_TEMP_0, 1)
+}

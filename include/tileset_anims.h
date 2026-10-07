@@ -32,4 +32,18 @@ void InitTilesetAnim_EliteFour(void);
 void InitTilesetAnim_BattleDome(void);
 void InitTilesetAnim_BattlePyramid(void);
 
+// FRLG
+void InitTilesetAnim_General_Frlg(void);
+void InitTilesetAnim_CeladonCity(void);
+void InitTilesetAnim_VermilionGym(void);
+void InitTilesetAnim_CeladonGym(void);
+void InitTilesetAnim_SilphCo(void);
+void InitTilesetAnim_MtEmber(void);
+
+// Custom tilesets
+void InitTilesetAnim_Beach(void);
+void InitTilesetAnim_CaveExp1(void);
+void InitTilesetAnim_Cave2_Exp_1(void);
+void InitTilesetAnim_OceanExp1(void);
+
 #endif // GUARD_TILESET_ANIMS_H

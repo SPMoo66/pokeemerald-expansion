@@ -179,10 +179,10 @@ Route125_EventScript_WatchGentleman::
 # 92 "data/maps/Route125/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route125_EventScript_WatchGentleman_2
-# 101 "data/maps/Route125/scripts.pory"
+# 100 "data/maps/Route125/scripts.pory"
 	msgbox Route125_EventScript_WatchGentleman_Text_1
 Route125_EventScript_WatchGentleman_1:
-# 103 "data/maps/Route125/scripts.pory"
+# 102 "data/maps/Route125/scripts.pory"
 	releaseall
 	end
 
@@ -197,8 +197,6 @@ Route125_EventScript_WatchGentleman_2:
 	fadescreen FADE_TO_BLACK
 # 97 "data/maps/Route125/scripts.pory"
 	special Special_ViewWallClock
-# 98 "data/maps/Route125/scripts.pory"
-	waitstate
 	goto Route125_EventScript_WatchGentleman_1
 
 
@@ -208,5 +206,5 @@ Route125_EventScript_WatchGentleman_Text_0:
 	.string "me if it's not the correct time?$"
 
 Route125_EventScript_WatchGentleman_Text_1:
-# 101 "data/maps/Route125/scripts.pory"
+# 100 "data/maps/Route125/scripts.pory"
 	.string "Well then...$"

@@ -914,27 +914,25 @@ MossdeepCity_EventScript_WhiteRock_7:
 # 451 "data/maps/MossdeepCity/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 452 "data/maps/MossdeepCity/scripts.pory"
-	waitstate
-# 453 "data/maps/MossdeepCity/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 454 "data/maps/MossdeepCity/scripts.pory"
+# 453 "data/maps/MossdeepCity/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 455 "data/maps/MossdeepCity/scripts.pory"
+# 454 "data/maps/MossdeepCity/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq MossdeepCity_EventScript_WhiteRock_10
 MossdeepCity_EventScript_WhiteRock_9:
-# 458 "data/maps/MossdeepCity/scripts.pory"
+# 457 "data/maps/MossdeepCity/scripts.pory"
 	setflag FLAG_TEMP_3
 	return
 
 MossdeepCity_EventScript_WhiteRock_10:
-# 456 "data/maps/MossdeepCity/scripts.pory"
+# 455 "data/maps/MossdeepCity/scripts.pory"
 	setflag FLAG_CAUGHT_JIRACHI
 	goto MossdeepCity_EventScript_WhiteRock_9
 
 
 TrainerTipsDiveSprinting::
-# 464 "data/maps/MossdeepCity/scripts.pory"
+# 463 "data/maps/MossdeepCity/scripts.pory"
 	msgbox TrainerTipsDiveSprinting_Text_0, MSGBOX_SIGN
 	return
 
@@ -952,6 +950,6 @@ MossdeepCity_EventScript_WhiteRock_Text_2:
 	.string "Shii?$"
 
 TrainerTipsDiveSprinting_Text_0:
-# 464 "data/maps/MossdeepCity/scripts.pory"
+# 463 "data/maps/MossdeepCity/scripts.pory"
 	.string "Trainer Tips\p"
 	.string "While diving, hold {A_BUTTON} or {B_BUTTON} to move faster.$"

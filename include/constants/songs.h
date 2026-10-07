@@ -278,7 +278,6 @@
 #define SE_PIKE_CURTAIN_CLOSE             267 // SE_CURTAIN
 #define SE_PIKE_CURTAIN_OPEN              268 // SE_CURTAIN1
 #define SE_SUDOWOODO_SHAKE                269 // SE_USSOKI
-#define END_SE                            SE_SUDOWOODO_SHAKE
 // Bard SFX
 // These PH_* constants are phoneme sounds used by the "bard" NPC (see src/bard_music.c and src/mauville_old_man.c).
 // Each comes in a triplet of PH_*_BLEND, PH_*_HELD, and PH_*_SOLO, and the name of each triplet incorporates the English phonetic sound it represents.
@@ -340,7 +339,6 @@
 // Ruby & Sapphire Music 
 #define RS_MUSIC_START                    SONGS_START
 
-#define START_MUS                         322
 #define MUS_LITTLEROOT_TEST               322 // MUS_TETSUJI
 #define MUS_GSC_ROUTE38                   323 // MUS_FIELD13
 #define MUS_CAUGHT                        324 // MUS_KACHI22
@@ -948,11 +946,20 @@
 #define MUS_HG_OBTAIN_CASTLE_POINTS       896 // Received Castle Points!
 #define MUS_HG_OBTAIN_B_POINTS            897 // Received Battle Points!
 #define MUS_HG_WIN_MINIGAME               898 // Cleared Wobbuffet Pop!
-#define MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES 899 // Victory is Right Before Your Eyes (BW)
 
 #define HG_MUSIC_END                      MUS_HG_WIN_MINIGAME
-#define END_MUS                           MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES
-#define SONGS_END                         MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES
+
+#define MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES 899 // Victory is Right Before Your Eyes (BW)
+#define MUS_BSB_EVERYBODY                 900 // Everybody (Backstreet Boys)
+#define MUS_BW_ABYSSAL_RUINS              901 // Abyssal Ruins (BW)
+#define MUS_BW_VS_TRAINER                 902 // Vs. Trainer (BW)
+#define MUS_BW_VS_WILD                    903 // Vs. Wild Pokémon (BW)
+#define MUS_B2W2_VS_GHETSIS               904 // Vs. Ghetsis (B2W2)
+#define MUS_FF4_FIGHT_2                   905 // Fight 2 (Final Fantasy IV)
+#define MUS_MD2_DIALGAS_FIGHT_TO_THE_FINISH 906 // Dialga's Fight to the Finish! (Pokémon Mystery Dungeon: Explorers of Darkness/Time)
+#define MUS_XD_VS_CIPHER_PEON             907 // Battle! (Cipher Peon) (Pokémon XD: Gale of Darkness)
+
+#define SONGS_END                         MUS_XD_VS_CIPHER_PEON
 
 #define MUS_ROUTE118                      0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

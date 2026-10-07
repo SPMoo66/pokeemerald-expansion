@@ -1,0 +1,624 @@
+// dots…
+
+# PAUSE XX Rules
+# Stutters - {PAUSE 30}					Ex. "W-{PAUSE 30}When?"
+# Emphasis - {PAUSE 30} XX {PAUSE 60}	Ex. "You took {PAUSE 30}forever {PAUSE 60)to log-on!"
+# …	- {PAUSE 100}						Ex. "When… {PAUSE 100}are you?"
+#	But … in sequence get {PAUSE 60}	Ex. "… {PAUSE 60}… {PAUSE 60}…"
+#	And … at the start of lines get {PAUSE 60}
+#	If there are a lot of them, use {PAUSE 30}s
+# Other pauses are subjective but keep to 30, 60, 100
+# Don't use any pauses directly before \l or \p
+
+#Call1
+text Call1_JaksonText {
+	format(	"Jakson: Yo, {PLAYER}!\n"
+			"I'm glad I caught you!\p"
+			"If I didn't see you online, I was\n"
+			"going to message you on ENCORE.\p"
+			"I can't believe you're all still\n"
+			"playing enough to contact you\l"
+			"in-game…\p"
+			"A- {PAUSE 30}Anyway, to the point.\p"
+			"It was… {PAUSE 100}a bit of a rush job… {PAUSE 100}but…{PAUSE 100}\n"
+			"I was able to put together a nice\l"
+			"surprise for the whole group.\p"
+			"Drop by Slateport City when you're\n"
+			"next free. {PAUSE 60}Specifically the Harbor.\p"
+			"I'll assemble the others, too.\n"
+			"See you soon!")
+}
+
+#Town01
+text Exp1_Town01_SakuraText {
+	format( "Ooh!\p"
+			"I really wonder if we'll run into\n"
+			"any pirates out there!\p"
+			"If I don't get a chance to fight any,\n"
+			"I'll just have to take up the mantle\l"
+			"myself{EMOJI_TILDE}\p"
+			"Long {PAUSE 30}Sakura {PAUSE 30}Silver{EMOJI_TILDE}\p"
+			"Fun fact!{PAUSE 30}\n"
+			"She's “long” because her neck grows\l"
+			"just a little longer every day!")
+}
+
+text Exp1_Town01_HarperText {
+	format( "Hey, {PLAYER}.\n"
+			"Good to see you.\p"
+			"It's kind of a coincidence that I\n"
+			"logged in today. I wanted to check\l"
+			"something I had seen online, and…\p"
+			"Well, Jakson would've IM'd me if I\n"
+			"hadn't, anyways.\p"
+			"Sakura's just as hyper as ever.{PAUSE 60}\n"
+			"Baron's still a hopeless worrywart.\p"
+			"Even if we don't get as many chances to\n"
+			"get together IRL anymore, doing this in\l"
+			"VR makes it feel so much more…\l"
+			"personal, doesn't it?\p"
+			"Well, I don't remember Baron being as\n"
+			"anxious as he is now.\l"
+			"I wonder if something happened…")
+}
+
+text Exp1_Town01_ReddText {
+	format( "Yo.\p"
+			"I was born and raised on Kanto, then I\n"
+			"stepped up for Hoenn.\p"
+			"And now I head to…{PAUSE 100}\n"
+			"Well shoot, Jakson didn't mention a\l"
+			"name, did he?\p"
+			"Either way, this is pretty adventurous\n"
+			"for me, right?\p"
+			"It shows some real character growth!\p"
+			"If I truly want to do right by the\n"
+			"legacy of my passions, I just need\l"
+			"to conquer each region that comes\l"
+			"after.")
+}
+
+text Exp1_Town01_BaronText {
+	format( "Hi, {PLAYER}.\p"
+			"This ‘expansion’ has me worried. It took\n"
+			"me a lot of money to get through the\l"
+			"game in the first place, so I'm\l"
+			"wondering what I should sell so I can\l"
+			"stock up.\p"
+			"Oh, that {PAUSE 30}‘Pokévial’ {PAUSE 60}thing that you\n"
+			"mentioned before.\p"
+			"Do you think you could show me how to\n"
+			"use that? Maybe that will save me.\p"
+			"We should have some time on the boat,\n"
+			"right?\p"
+			"I'd appreiciate it if you could spare\n"
+			"me a moment later.")
+}
+
+text Exp1_Town01_JaksonText {
+	format( "Hey, {PLAYER}. You ready to go?\n"
+			"Got your team together?")
+}
+
+text Exp1_Town01_JaksonTextAccept {
+	format( "Good, good!\p"
+			"Alright everyone, time to board!\n"
+			"Adventure awaits!")
+}
+
+text Exp1_Town01_JaksonTextDecline {
+	format( "Then hurry up and get ready!\n"
+			"The others are waiting!")
+}
+
+
+#Town02
+text Exp1_Town02_SakuraText {
+	format( "Ahoy, {PLAYER}!\p"
+			"Do you see that sealed off cave there?\p"
+			"I'm wondering if there's a way to open\n"
+			"it again.\p"
+			"Who knows? Maybe Harper slipped in\n"
+			"through the cracks around the rubble.\p"
+			"If not, then maybe some loot hides\n"
+			"behind it? Wouldn't that be fun!\p"
+			"I'd get it open right now, but that\n"
+			"crash has seriously weakened my\l"
+			"Sakura Strength{EMOJI_TILDE}{UNK_SPACER}")
+}
+
+text Exp1_Town02_ReddText {
+	format( "Hey.\p"
+			"I'm pretty sure Harper's not here on\n"
+			"the main island, but I'm giving it one\l"
+			"last thorough search before calling it.\p"
+			"Hah…\p"
+			"You know, that crash seriously had\n"
+			"me scared.\p"
+			"That roar must have been a monster,\n"
+			"right?\p"
+			"That and the… {PAUSE 100}surreal experience\n"
+			"through the VR system…\p"
+			"Well, I had to take a break for a minute\n"
+			"after that.\p"
+			"I'm good now, so let's get back to it!")
+}
+
+text Exp1_Town02_BaronText {
+	format( "Oh! {PLAYER}! You gave me a fright.\p"
+			"Right after that…\p"
+			"Oh, right! The person with the light\n"
+			"is here!\p"
+			"I was going to go after them, but I keep\n"
+			"thinking I'll get some tropical disease\l"
+			"if I make the wrong step…\p"
+			"I- {PAUSE 30}I know it's just digital…{PAUSE 100}\n"
+			"Still…\p"
+			"Would you go on ahead and search for\n"
+			"me?")
+}
+
+text Exp1_Town02b_BaronText {
+	format( "Oh! You found it!\p"
+			"Can you go head and start the search\n"
+			"for her?\p"
+			"I'll go back to the island and tell\n"
+			"the others.\p"
+			"Hold on just a little longer, Harper…")
+}
+
+text Exp1_Town02_JaksonText {
+	format( "I took a peek down South.\p"
+			"Since it's blocked, I'll start looking\n"
+			"for a way to move those Shuckle.\p"
+			"In these games, it's usually something\n"
+			"goofy like needing medicine to cure a\l"
+			"headache.\p"
+			"It's a post game mod, so I doubt they'd\n"
+			"want us to use HMs anyways…\p"
+			"Oh, and Baron went to go search for\n"
+			"that light the sailor was mentioning.\p"
+			"If you haven't, maybe you should check\n"
+			"in on him.")
+}
+
+
+#Town03
+text Exp1_Town03_SakuraText {
+	format( "Let me guess what you're thinking-\p"
+			"“Why didn't we cut this short and\n"
+			"message Harper straight away?\p"
+			"“It's not like Jakson was the only one\n"
+			"who could've remembered…!”\p"
+			"To that I say{EMOJI_TILDE}\p"
+			"Well, where's your sense of adventure,\n"
+			"{PLAYER}?\p"
+			"Isn't it more fun with a damsel in\n"
+			"mysterious, unknown distress?\p"
+			"Besides, would you really have known\n"
+			"where to find her?\p"
+			"Would {PAUSE 30}SHE {PAUSE 60}have known where she was?")
+}
+
+text Exp1_Town03_ReddText {
+	format( "It's good to have the whole crew back\n"
+			"together.\p"
+			"I was wondering what ‘excitement level’\n"
+			"this little mod was going to have, but\l"
+			"this is pretty fun on its own.\p"
+			"Sakura hasn't really gotten the\n"
+			"swashbuckling she wanted but that\l"
+			"hasn't seemed to slow her down.\p"
+			"You think they coded new Pokémon\n"
+			"types to show up on the ship?\p"
+			"I mean, it… {PAUSE 100}probably wasn't supposed\n"
+			"to crash in the first place, right?\l"
+			"…{PAUSE 60}Right?")
+}
+
+text Exp1_Town03_BaronText {
+	format( "Oh, thank you so much for bringing back\n"
+			"Harper, {PLAYER}.\p"
+			"Maybe she wasn't in real danger, but\n"
+			"this entire ‘Virtual Reality’ thing\l"
+			"makes it feel too realistic at times.\p"
+			"I wouldn't want to be trapped with\n"
+			"a blindfold over my eyes!\p"
+			"I'm so happy that she's back, and\n"
+			"that the group is safe and sound.")
+}
+
+text Exp1_Town03_JaksonText {
+	format( "Hey, {PLAYER}.\p"
+			"Harper's already gone off to the ship.\p"
+			"…{PAUSE 60}Yeah, she really gave me an earful…\n"
+			"…{PAUSE 60}in a couple ways…\l"
+			"But, I get it. I understand where she's\l"
+			"coming from.\p"
+			"I should've put a little more time into\n"
+			"vetting this mod. I was too quick to\l"
+			"incorporate it in.\p"
+			"Maybe I merged it into our pack wrong,\n"
+			"or maybe it was made for an earlier\l"
+			"version?\p"
+			"It's not bad enough that we can't keep\n"
+			"going, but I'll- {PAUSE 60}well, maybe Harper and\l"
+			"I both will try to handle any issues.\p"
+			"Either way, let's join her once we're\n"
+			"ready.")
+}
+
+
+#Town04
+text Exp1_Town04_SakuraText {
+	format( "You ready to watch this, {PLAYER}?\p"
+			"Let's get started{EMOJI_TILDE}{UNK_SPACER}")
+}
+
+text Exp1_Town04_HarperText {
+	format( "Ahh… {PAUSE 100}…\p"
+			"I'm just taking a breather, {PLAYER}.\p"
+			"Trapped in one dungeon, then shipped\n"
+			"off to another straight away.\p"
+			"… {PAUSE 30}… {PAUSE 30}…\p"
+			"I guess I could've let you drag one of\n"
+			"the others along with you…\l"
+			"but would it have gone right without me\l"
+			"there?\p"
+			"Oh, if it was still you… {PAUSE 100}probably?\p"
+			"Wait… {PAUSE 100}no. Maybe not. A memory just\n"
+			"popped into my head.\p"
+			"We need to stop trauma-bonding one\n"
+			"of these days.")
+}
+
+text Exp1_Town04_ReddText {
+	format( "Did you miss me, {PLAYER}?\p"
+			"If you had just asked, I would've gone\n"
+			"along into the ship with you.\p"
+			"It would have been cool to see that…{PAUSE 100}\n"
+			"what did you say it was, a water Regi?\p"
+			"You should've caught it to show me!\p"
+			"Dang, one of these days it'll have to be\n"
+			"my turn in the spotlight. Then I won't\l"
+			"miss out on these things!")
+}
+
+text Exp1_Town04_BaronText {
+	format( "{PLAYER}, how's Harper holding up?\p"
+			"Oh, I worry about that girl.\p"
+			"Trapped in that dark cave for so long,\n"
+			"then going through another dungeon\l"
+			"for us straight away.\p"
+			"I imagine if it had been one of my own…")
+}
+
+text Exp1_Town04b_BaronText {
+	format( "…{PAUSE 60}one of my own friends! Of course!\n"
+			"All of you are my very own friends.")
+}
+
+text Exp1_Town04_JaksonText {
+	format( "Maybe Harper deserves more credit\n"
+			"than I give her. She knows more about\l"
+			"game design than I thought she did.\p"
+			"It certainly helped us get back on\n"
+			"track… {PAUSE 100}I'll have to thank her.\p"
+			"O- {PAUSE 30}Oh! No, I haven't forgotten you.\p"
+			"Thank you for going with her to\n"
+			"retrieve the explosives key item.\p"
+			"I'm glad our intuition was correct.")
+}
+
+
+#Town05
+text Exp1_Town05_SakuraText {
+	format( "Well, {PLAYER}?\n"
+			"Are you smelling the treasure yet?\p"
+			"… {PAUSE 30}… {PAUSE 30}…\p"
+			"Oh, me nether, but I'm hot on its trail{EMOJI_TILDE}\p"
+			"I heard once that treasure smells like\n"
+			"chocolate! Keep your nose locked and\l"
+			"loaded for the chocolate crusades!")
+}
+
+text Exp1_Town05_HarperText {
+	format( "Hm? Oh, yeah, I'm hanging back a\n"
+			"bit on purpose.\p"
+			"Jakson's a clever boy. He can solve\n"
+			"a puzzle or two while I take a break.\p"
+			"Though… {PAUSE 100}looking around here, there's\n"
+			"two small fountains and two large ones.\p"
+			"I'd guess you have to fill them for us\n"
+			"to move on, so look for a way to do that.")
+}
+
+text Exp1_Town05_BaronText {
+	format( "Oh!\p"
+			"Gosh, {PLAYER}, you gave me a startle.\p"
+			"Whenever I have to go underwater like\n"
+			"that I always feel the urge to hold my\l"
+			"breath.\p"
+			"Y- {PAUSE 30}Yeah… {PAUSE 100}in real life.\p"
+			"It ends up making me feel a little dizzy.")
+}
+
+text Exp1_Town05_JaksonText {
+	format( "Once the water's gone, it'll appear?\p"
+			"Well, there's water here in this room,\n"
+			"so we must need to drain it somehow.\p"
+			"Baron went on ahead.\n"
+			"Try and see if he's found anything.")
+}
+
+text Exp1_Town05b_JaksonText {
+	format( "That water sure cleared out fast!\p"
+			"It looks like you two did it!\n"
+			"Let's check out the main chamber\l"
+			"when we get a chance.\p"
+			"The odds are that we're one step\n"
+			"closer to completion.")
+}
+
+
+#Town06
+text Exp1_Town06_SakuraText {
+	format( "Come on, {PLAYER}{EMOJI_TILDE}\p"
+			"You have to go hurry up and finish the\n"
+			"puzzles for me!\p"
+			"My treasure senses are tingling, and I\n"
+			"want to get in there right away!")
+}
+
+text Exp1_Town06b_SakuraText {
+	format( "Agh, I want to get in there right now…{PAUSE 100}\n"
+			"but you did do all the work, right,\l"
+			"{PLAYER}?\p"
+			"Okay, you can have the honors of being\n"
+			"first in there, but I'll be right at your\l"
+			"heels!")
+}
+
+text Exp1_Town06_HarperText {
+	format( "Up, {PAUSE 60}down, {PAUSE 60}up, {PAUSE 60}down…\p"
+			"What sick, {PAUSE 30}twisted monster actually\n"
+			"likes these underwater puzzles,\l"
+			"{PLAYER}?\p"
+			"The experience through the headset\n"
+			"alone is… {PAUSE 100} Urk…")
+}
+
+text Exp1_Town06_ReddText {
+	format( "Phew…{PAUSE 100}\n"
+			"You wanna do the honors, {PLAYER}?\p"
+			"There sure are a lot of puzzles and\n"
+			"mazes here, so this has gotta be the\l"
+			"final dungeon, right?\p"
+			"Which means it'll be treasure time.\p"
+			"I wonder what that'll be… {PAUSE 100}what are you\n"
+			"thinking?\p"
+			"Maybe… {PAUSE 100}a masterball. {PAUSE 60}The classics\n"
+			"are the classics for a reason.")
+}
+
+text Exp1_Town06_BaronText {
+	format( "Uh… {PAUSE 100}are you lost too, {PLAYER}?\p"
+			"I've gotten better, definitely, but I'm\n"
+			"still going to struggle with something\l"
+			"like this!\p"
+			"Gosh, maybe we should just moves as\n"
+			"a group next time?\p"
+			"…{PAUSE 60}Oh?\p"
+			"Just use my Escape Rope if I get\n"
+			"stuck?\p"
+			"Thank you for the reminder, {PLAYER}!\n"
+			"You're a good bean.")
+}
+
+text Exp1_Town06_JaksonText {
+	format( "Well… {PAUSE 100}this must be a storage room, huh?\p"
+			"The original builders of this vault sure\n"
+			"didn't make it easy on themselves.\p"
+			"…{PAUSE 60}well, if that were the truth of its\n"
+			"construction, at least.\p"
+			"Whoever made this MOD designed this,\n"
+			"just so we could have had a long maze\l"
+			"to go through.\p"
+			"I'd call it padding, but let's not\n"
+			"pretend Game Freak has ever had\l"
+			"good dungeon designs.\p"
+			"…{PAUSE 60}no.{PAUSE 100}\n"
+			"No, I'm not trying to lower the\l"
+			"expectations for my own work later…")
+}
+
+
+#Town07
+text Exp1_Town07_SakuraText {
+	format( "You know, this place is pretty nice.\p"
+			"Maybe once the treasure hunt winds\n"
+			"down I'll spend some time relaxing here.\p"
+			"A nice heat lamp next to my setup,\n"
+			"find a swanky lounge chair in game…\p"
+			"Yeah, it'll be time to chill{EMOJI_TILDE}\p"
+			"…\p"
+			"Come on, you know I don't mean ‘chill’\n"
+			"literally!")
+}
+
+text Exp1_Town07_HarperText {
+	format( "Well, this is it, right?\p"
+			"The actual ‘final’ dungeon.\n"
+			"The design-intent final dungeon.\p"
+			"I did my best at making it workable\n"
+			"all the way through…\p"
+			"For once I've got a good feeling that I\n"
+			"did a half decent job at it.\p"
+			"Heh. I wonder if Jakson would've even\n"
+			"considered taking that route?\p"
+			"Fuck… {PAUSE 100}gonna start making me think\n"
+			"this was actually fun. Maybe it was…\l"
+			"…{PAUSE 60}a little bit.\p"
+			"I'm not sure what the final boss will be\n"
+			"like, but I sure hope it's an interesting\l"
+			"cap to our adventure.\p"
+			"Let's go, {PLAYER}!")
+}
+
+text Exp1_Town07_ReddText {
+	format( "Yo, {PLAYER}!\p"
+		"I'm glad I caught you.\p"
+		"This dungeon we're headed to is as\n"
+		"far west as you can go, right?\p"
+		"I know you've been there before, but I\n"
+		"haven't been further than the vault\l"
+		"dungeon so far.\p"
+		"Damn, it's like I've let you do it all\n"
+		"yourselves.\p"
+		"You know what…\p"
+		"Maybe I'll set out to be the first to\n"
+		"map out these untamed seas?\p"
+		"We'll need to start a new “catch”\n"
+		"competition while we're at it.")
+}
+
+text Exp1_Town07_BaronText {
+	format( "Oh, hello, {PLAYER}.\p"
+			"Um, yes. I am out here trying to do a\n"
+			"little bit of training.\p"
+			"I know I'm always running behind you\n"
+			"all. With some more practice and some\l"
+			"training for my Pokémon, I'm hoping I'll\l"
+			"be able to keep up.\p"
+			"At least enough not to slow you all down.\p"
+			"At least that…")
+}
+
+text Exp1_Town07_JaksonText {
+	format( "Oh, hey, {PLAYER}.\p"
+			"I'm trying to think this through, how\n"
+			"everything could have gone wrong like\l"
+			"this.\p"
+			"…{PAUSE 60}I don't disagree with Harper's idea.\n"
+			"Actually, I think she's spot on. That's\l"
+			"what makes me wonder…\p"
+			"If a flag got tripped early on, how did\n"
+			"that happen?\p"
+			"I know Sakura had that wild energy at\n"
+			"the start, but even all the moving\l"
+			"around that she did on the boat\l"
+			"couldn't have done it.\p"
+			"The “flag” was WAY over in the\n"
+			"treasure room.\p"
+			"There's the debug menu… {PAUSE 100}Though no\n"
+			"one noticed it until much later.\p"
+			"Maybe a multiplayer incompatibility?\n"
+			"It'd still be strange to activate a flag\l"
+			"way over there…\p"
+			"Not like we had people running out\n"
+			"and about in the cave by that point.\p"
+			"I mean…\p"
+			"… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}\n"
+			"… {PAUSE 30}… {PAUSE 30}…\l"
+			"This is gonna give me a headache.")
+}
+
+
+#Town09
+text Exp1_Town09_SakuraText {
+	format( "Is that you, {PLAYER}?\p"
+			"Did you have fun with our little\n"
+			"misadventure?\p"
+			"I thought we had a good time regardless.\p"
+			"The secret Professor Birch topless\n"
+			"scene was an odd inclusion, but the\l"
+			"rest seemed good!\p"
+			"But now, it's time to relax.\p"
+			"Make sure not to block the sun, or\n"
+			"you'll make my tan uneven{EMOJI_TILDE}\p"
+			"And if you hear anything new from\n"
+			"Jakson, come wake me up. I might be\l"
+			"deep in my siesta by then{EMOJI_TILDE}{UNK_SPACER}")
+}
+
+text Exp1_Town09_HarperText {
+	format( "Holy Jebus roasted on an open fire…{PAUSE 100}\n"
+			"What do you mean {PAUSE 30}THIS {PAUSE 60}much work goes\l"
+			"into making games?\p"
+			"At least I get why Jakson pulled a\n"
+			"premade one… {PAUSE 100}this takes time.\p"
+			"…{PAUSE 60}a little more respect for how solid\n"
+			"the base game modding was, too…\p"
+			"{EMOJI_BIGWHEEL}Sigh{EMOJI_BIGWHEEL}… {PAUSE 100}maybe I'll relax at the beach\n"
+			"with Sakura later. This didn't suddenly\l"
+			"become the only thing in my life.\p"
+			"In fact… {PAUSE 100}maybe Sakura would have an\n"
+			"idea on how to implement that idea…")
+}
+
+text Exp1_Town09_ReddText {
+	format( "Pokédex check!\p"
+			"…{PAUSE 60}Not bad. {PAUSE 30}Not bad.{PAUSE 30}\n"
+			"You make a worthy rival, even now.\p"
+			"You get a Calamity Maw yet, {PLAYER}?\p"
+			"I know that it's not going to be as\n"
+			"strong as the boss form, but I'm really\l"
+			"looking forward to taking this baby for\l"
+			"a spin.\p"
+			"Maybe I'll have to challenge you with it\n"
+			"at some point.\p"
+			"Oh, but not now.\p"
+			"I know a fresh catch isn't going to\n"
+			"match up to the ones you've trained.")
+}
+
+text Exp1_Town09_BaronText {
+	format( "Hi, {PLAYER}!\n"
+			"How are you doing?\p"
+			"Jakson and Harper headed off to…{PAUSE 100}\n"
+			"what's it called? The place where\l"
+			"we played the main game.\p"
+			"I think they wanted to chat about\n"
+			"some stuff…\l"
+			"…{PAUSE 60}no, they wouldn't be having\l"
+			"intercourse in a game like this.\l"
+			"… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}could they… {PAUSE 30}… {PAUSE 30}…{PAUSE 30}?\p"
+			"I-{PAUSE 30}I'm sorry! It seems Sakura really\n"
+			"sparked my imagination. But you're all\l"
+			"grown adults. It'd be safe.\p"
+			"As for me… {PAUSE 100}I'm out here trying to gain\n"
+			"some more experience, for my Pokémon\l"
+			"and myself as a Trainer.")
+}
+
+text Exp1_Town09a_BaronText {
+	format( "Unfortunately, I think it'll be a little\n"
+			"longer before Baron can join you all.\p"
+			"He still says he's not feeling well, but\n"
+			"I've been hearing a lot more noise from\l"
+			"his room.\p"
+			"Hopefully that means he's regaining\n"
+			"more of his usual energy.")
+}
+
+text Exp1_Town09b_BaronText {
+	format( "I need to hold down the fort…{PAUSE 100}\n"
+			"Hopefully not too much longer.")
+}
+
+text Exp1_Town09c_BaronText {
+	format( "Anyway, I better get back to work.")
+}
+
+text Exp1_Town09_JaksonText {
+	format( "Is the next expansion done yet?\p"
+			"These things do take time, {PLAYER}.\p"
+			"Though… {PAUSE 100}I will admit that Harper's\n"
+			"enthusiasm has been a bit infectious.\p"
+			"No matter how the first expansion\n"
+			"went… {PAUSE 100}Well, I feel a pep in my step.\p"
+			"Sometimes you can have fun watching\n"
+			"a bad movie with friends.\p"
+			"Though… {PAUSE 100}I'll try to craft a good\n"
+			"movie for next time.")
+}

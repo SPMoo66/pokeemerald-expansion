@@ -37,6 +37,10 @@ Common_Movement_Thinking:
 	emote_thinking
 	step_end
 
+Common_Movement_ShakeHorizontal:
+	shake_horizontal
+	step_end
+
 Common_Movement_Delay32:
 	delay_16
 	delay_16
@@ -110,6 +114,14 @@ Common_Movement_WalkInPlaceRight:
 
 @ End of follower-safe movements
 Common_Movement_FollowerSafeEnd::
+	step_end
+
+Common_Movement_FollowerEnterBall::
+	enter_pokeball
+	step_end
+
+Common_Movement_FollowerExitBall::
+	exit_pokeball
 	step_end
 
 Common_Movement_WalkUp::
@@ -307,6 +319,20 @@ Common_Movement_WalkRight10:
 	walk_right
 	step_end
 
+Common_Movement_WalkRight11:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
 Common_Movement_WalkLeft::
 	walk_left
 	step_end
@@ -405,7 +431,58 @@ Common_Movement_WalkLeft11:
 	walk_left
 	walk_left
 	step_end
-	
+
+Common_Movement_WalkDiagNE:
+	walk_diag_northeast
+	step_end
+
+Common_Movement_WalkDiagNW:
+	walk_diag_northwest
+	step_end
+
+Common_Movement_WalkDiagSE:
+	walk_diag_southeast
+	step_end
+
+Common_Movement_WalkDiagSW:
+	walk_diag_southwest
+	step_end
+
+Common_Movement_WalkDiagNE3:
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	step_end
+
+Common_Movement_WalkDiagNE8:
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	step_end
+
+Common_Movement_WalkDiagNW3:
+	walk_diag_northwest
+	walk_diag_northwest
+	walk_diag_northwest
+	step_end
+
+Common_Movement_WalkDiagSE3:
+	walk_diag_southeast
+	walk_diag_southeast
+	walk_diag_southeast
+	step_end
+
+Common_Movement_WalkDiagSW3:
+	walk_diag_southwest
+	walk_diag_southwest
+	walk_diag_southwest
+	step_end
+
 Common_Movement_WalkFastUp:
 	walk_fast_up
 	step_end
@@ -429,11 +506,31 @@ Common_Movement_WalkFastDown:
 	walk_fast_down
 	step_end
 	
+Common_Movement_WalkFastDown2:
+	walk_fast_down
+	walk_fast_down
+	step_end
+	
 Common_Movement_WalkFastDown3:
 	walk_fast_down
 	walk_fast_down
 	walk_fast_down
 	step_end
+
+Common_Movement_WalkFastDown4::
+    walk_faster_down
+    walk_faster_down
+    walk_faster_down
+    walk_faster_down
+    step_end
+
+Common_Movement_WalkFastDown5::
+    walk_faster_down
+    walk_faster_down
+    walk_faster_down
+    walk_faster_down
+    walk_faster_down
+    step_end
 	
 Common_Movement_WalkFastDown6:
 	walk_fast_down
@@ -442,6 +539,21 @@ Common_Movement_WalkFastDown6:
 	walk_fast_down
 	walk_fast_down
 	walk_fast_down
+	step_end
+	
+Common_Movement_WalkFastRight:
+	walk_fast_right
+	step_end
+	
+Common_Movement_WalkFastRight2:
+	walk_fast_right
+	walk_fast_right
+	step_end
+	
+Common_Movement_WalkFastRight3:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
 	step_end
 	
 Common_Movement_WalkFastRight9:
@@ -462,6 +574,13 @@ Common_Movement_WalkFastLeft3:
 	walk_fast_left
 	step_end
 	
+Common_Movement_WalkFastLeft4:
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	step_end
+	
 Common_Movement_WalkFastLeft9:
 	walk_fast_left
 	walk_fast_left
@@ -472,6 +591,41 @@ Common_Movement_WalkFastLeft9:
 	walk_fast_left
 	walk_fast_left
 	walk_fast_left
+	step_end
+
+Common_Movement_SlideDown3:
+	slide_down
+	slide_down
+	slide_down
+	step_end
+
+Common_Movement_SlideDown6:
+	slide_down
+	slide_down
+	slide_down
+	slide_down
+	slide_down
+	slide_down
+	step_end
+
+Common_Movement_SlideDown7:
+	slide_down
+	slide_down
+	slide_down
+	slide_down
+	slide_down
+	slide_down
+	slide_down
+	step_end
+
+Common_Movement_SlideRight3:
+	slide_right
+	slide_right
+	slide_right
+	step_end
+
+Common_Movement_JumpInPlaceUp:
+	jump_in_place_up
 	step_end
 
 Common_Movement_JumpInPlaceDown:
@@ -490,8 +644,24 @@ Common_Movement_JumpUp:
 	jump_up
 	step_end
 
+Common_Movement_JumpDown:
+	jump_down
+	step_end
+
+Common_Movement_JumpLeft:
+	jump_left
+	step_end
+
+Common_Movement_JumpUp2:
+	jump_2_up
+	step_end
+
 Common_Movement_JumpDown2:
 	jump_2_down
+	step_end
+
+Common_Movement_JumpRight2:
+	jump_2_right
 	step_end
 
 Common_Movement_JumpLeft2:
@@ -524,55 +694,133 @@ Common_Movement_SetVisible:
 	set_visible
 	step_end
 
+Common_Movement_LockFacingDirection:
+	lock_facing_direction
+	step_end
+
+Common_Movement_UnlockFacingDirection:
+	unlock_facing_direction
+	step_end
+
 @ Follower NPC
 Common_Movement_WalkUpSlow::
     walk_slow_up
     step_end
+
 Common_Movement_WalkUpSlow2::
     walk_slow_up
     walk_slow_up
     step_end
 
 Common_Movement_WalkDownSlow::
-    walk_slow_down
-    step_end
+	walk_slow_down
+	step_end
+
+Common_Movement_WalkDownSlow3::
+	walk_slow_down
+	walk_slow_down
+	walk_slow_down
+	step_end
 
 Common_Movement_WalkRightSlow::
-    walk_slow_right
-    step_end
+	walk_slow_right
+	step_end
+
+Common_Movement_WalkRightSlow4::
+	walk_slow_right
+	walk_slow_right
+	walk_slow_right
+	walk_slow_right
+	step_end
 
 Common_Movement_WalkLeftSlow::
-    walk_slow_left
-    step_end
+	walk_slow_left
+	step_end
 
 Common_Movement_WalkUpFast::
-    walk_fast_up
-    step_end
+	walk_fast_up
+	step_end
+
+Common_Movement_WalkUpFast3::
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
+
+Common_Movement_WalkUpFast5::
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
 
 Common_Movement_WalkDownFast::
-    walk_fast_down
-    step_end
+	walk_fast_down
+	step_end
+
+Common_Movement_WalkDownFast5::
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	step_end
 
 Common_Movement_WalkRightFast::
-    walk_fast_right
-    step_end
+	walk_fast_right
+	step_end
 
 Common_Movement_WalkLeftFast::
-    walk_fast_left
-    step_end
+	walk_fast_left
+	step_end
+
+Common_Movement_WalkLeftFast2::
+	walk_fast_left
+	walk_fast_left
+	step_end
+
+Common_Movement_WalkLeftFast3::
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	step_end
+
+Common_Movement_WalkLeftFast4::
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	step_end
 
 Common_Movement_WalkUpFaster::
-    walk_faster_up
-    step_end
+	walk_faster_up
+	step_end
 
 Common_Movement_WalkDownFaster::
-    walk_faster_down
-    step_end
+	walk_faster_down
+	step_end
 
 Common_Movement_WalkRightFaster::
-    walk_faster_right
-    step_end
+	walk_faster_right
+	step_end
 
 Common_Movement_WalkLeftFaster::
-    walk_faster_left
-    step_end
+	walk_faster_left
+	step_end
+
+Common_Movement_WalkQuarterUp::
+	quarter_step_up
+	step_end
+
+Common_Movement_WalkQuarterDown::
+	quarter_step_down
+	step_end
+
+Common_Movement_WalkQuarterLeft::
+	quarter_step_left
+	step_end
+
+Common_Movement_WalkQuarterRight::
+	quarter_step_right
+	step_end

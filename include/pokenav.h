@@ -196,6 +196,7 @@ enum
     MC_HEADER_REDD,
     MC_HEADER_SAKURA,
     MC_HEADER_BARON,
+    MC_HEADER_BARONS_MOM,
     MC_HEADER_WALLY,
     MC_HEADER_NORMAN,
     MC_HEADER_MOM,
@@ -333,7 +334,7 @@ void SetPokenavVBlankCallback(void);
 void SetVBlankCallback_(IntrCallback callback);
 
 // pokenav_list.c
-bool32 CreatePokenavList(const struct BgTemplate *bgTemplate, struct PokenavListTemplate *listTemplate, s32 tileOffset);
+bool32 CreatePokenavList(const struct BgTemplate *bgTemplate, struct PokenavListTemplate *listTemplate, u32 tileOffset);
 bool32 IsCreatePokenavListTaskActive(void);
 void DestroyPokenavList(void);
 u32 PokenavList_GetSelectedIndex(void);
@@ -422,7 +423,7 @@ struct PokenavMatchCallEntry *GetMatchCallList(void);
 mapsec_u16_t GetMatchCallMapSec(int index);
 bool32 ShouldDrawRematchPokeballIcon(int index);
 void ClearRematchPokeballIcon(u16 windowId, u32 tileOffset);
-int GetMatchCallTrainerPic(int index);
+enum TrainerPicID GetMatchCallTrainerPic(int index);
 const u8 *GetMatchCallFlavorText(int index, int checkPageEntry);
 const u8 *GetMatchCallMessageText(int index, bool8 *newRematchRequest);
 u16 GetMatchCallOptionCursorPos(void);

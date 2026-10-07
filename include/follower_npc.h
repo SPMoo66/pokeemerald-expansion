@@ -28,7 +28,8 @@ enum FollowerNPCDataTypes
     FNPC_DATA_EVENT_FLAG,
     FNPC_DATA_GFX_ID,
     FNPC_DATA_FOLLOWER_FLAGS,
-    FNPC_DATA_BATTLE_PARTNER
+    FNPC_DATA_BATTLE_PARTNER,
+	FNPC_DATA_COME_OUT_DOOR_DIRECTION
 };
 
 enum FollowerNPCSpriteTypes
@@ -45,6 +46,14 @@ enum FollowerNPCDoorStairsStates
     FNPC_DOOR_NONE,
     FNPC_DOOR_NEEDS_TO_EXIT,
     FNPC_DOOR_NO_POS_SET
+};
+
+enum FollowerNPCDoorStairsDirs
+{
+    FNPC_DIR_SOUTH,
+    FNPC_DIR_EAST,
+	FNPC_DIR_WEST,
+	FNPC_DIR_NORTH
 };
 
 enum FollowerNPCWarpEndStates
@@ -81,6 +90,13 @@ enum FollowerNPCHandleEscalatorFinishTaskStates
     MOVEMENT_FINISH
 };
 
+enum FollowerNPCForcedMovementStates
+{
+    FNPC_FORCED_NONE,
+    FNPC_FORCED_FOLLOW,
+    FNPC_FORCED_STAY
+};
+
 #define FOLLOWER_NPC_FLAG_HAS_RUNNING_FRAMES    0x1
 
 #define FNPC_NONE   0
@@ -93,14 +109,14 @@ void ClearFollowerNPCData(void);
 
 void CreateFollowerNPC(u32 gfx, u32 followerFlags, const u8 *scriptPtr);
 void DestroyFollowerNPC(void);
-u32 DetermineFollowerNPCState(struct ObjectEvent *follower, u32 state, u32 direction);
+u32 DetermineFollowerNPCState(struct ObjectEvent *follower, u32 state, enum Direction direction);
 void SetFollowerNPCSprite(u32 spriteIndex);
 
 bool32 PlayerHasFollowerNPC(void);
 void NPCFollow(struct ObjectEvent *npc, u32 state, bool32 ignoreScriptActive);
 void CreateFollowerNPCAvatar(void);
 void FollowerNPC_HandleSprite(void);
-u32 DetermineFollowerNPCDirection(struct ObjectEvent *player, struct ObjectEvent *follower);
+enum Direction DetermineFollowerNPCDirection(struct ObjectEvent *player, struct ObjectEvent *follower);
 u32 GetFollowerNPCObjectId(void);
 bool32 CheckFollowerNPCFlag(u32 flag);
 bool32 FollowerNPC_IsCollisionExempt(struct ObjectEvent *obstacle, struct ObjectEvent *collider);
@@ -117,6 +133,8 @@ void PrepareFollowerNPCDismountSurf(void);
 
 bool32 FollowerNPCComingThroughDoor(void);
 void FollowerNPC_SetIndicatorToComeOutDoor(void);
+void FollowerNPC_SetComeOutDoorDirEast(void);
+void FollowerNPC_SetComeOutDoorDirWest(void);
 
 void EscalatorMoveFollowerNPC(u32 movementType);
 void EscalatorMoveFollowerNPCFinish(void);
@@ -134,5 +152,7 @@ void FollowerNPC_TryRemoveFollowerOnWhiteOut(void);
 
 void Task_MoveNPCFollowerAfterForcedMovement(u8 taskId);
 void Task_HideNPCFollowerAfterMovementFinish(u8 taskId);
+
+void Task_FollowerNPCOutOfDoor(u8 taskId);
 
 #endif // GUARD_FOLLOWER_NPC_H

@@ -1,0 +1,51 @@
+mapscripts BygoneVault_2L1_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH_2)) {
+			setmetatile (15, 14, 0x241, TRUE)
+		}
+	}
+	MAP_SCRIPT_ON_TRANSITION {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) != 43) {
+			setflag (FLAG_TEMP_1)
+		}
+	}
+}
+
+script BygoneVault_LeftSwitch2 {
+	if (!flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH_2)) {
+		msgbox (Text_FlipSwitch, MSGBOX_YESNO)
+		if (var(VAR_RESULT)) {
+			closemessage
+			setmetatile (15, 14, 0x241, TRUE)
+			special (DrawWholeMapView)
+			playse (SE_SWITCH)
+			waitse
+			delay (10)
+			setvar (VAR_0x8004, 1)  # vertical pan
+			setvar (VAR_0x8005, 1)  # horizontal pan
+			setvar (VAR_0x8006, 8) # num shakes
+			setvar (VAR_0x8007, 2)  # shake delay
+			special (ShakeCamera)
+			waitstate
+			setflag (FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH_2)
+		}
+	}
+	else {
+		msgbox (Text_FlippedSwitch, MSGBOX_AUTOCLOSE)
+	}
+}
+
+script BygoneVault_2L1_EventScript_Zed {
+	trainerbattle_single (TRAINER_ZED, "The Dragon Tamer's creed! Start!", "Even in defeat, roar with your dragon!")
+	msgbox ("The second part of the creed?\pI'm still working that out.", MSGBOX_AUTOCLOSE)
+}
+
+script BygoneVault_2L1_EventScript_Tessa {
+	trainerbattle_single (TRAINER_TESSA, "One who battles endlessly. That's an\nAce Trainer.", "Are you Ace Trainer too?")
+	msgbox ("If you aren't an Ace, you seem to have\nwhat it takes.", MSGBOX_AUTOCLOSE)
+}
+
+script BygoneVault_2L1_EventScript_Lex {
+	trainerbattle_single (TRAINER_LEX, "Roar out like a dragon!", "Like a what?")
+	msgbox ("Get some dragons and I'll crown you\nthe ultimate!", MSGBOX_AUTOCLOSE)
+}

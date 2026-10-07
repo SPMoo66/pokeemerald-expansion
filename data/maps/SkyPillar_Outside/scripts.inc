@@ -71,7 +71,6 @@ SkyPillar_Outside_EventScript_WallaceScene::
 	setflag FLAG_SYS_WEATHER_CTRL
 	call WeatherScript_SetAndDo_Abnormal
 	special WaitWeather
-	waitstate
 	delay 30
 	speakername (CommonText_Wallace)
 	msgbox SkyPillar_Outside_Text_GotToGoBackForSootopolis, MSGBOX_DEFAULT

@@ -2,7 +2,7 @@ MysteryGiftScript_OldSeaMap::
 	setvaddress MysteryGiftScript_OldSeaMap
 	lock
 	faceplayer
-	vgoto_if_set FLAG_RECEIVED_OLD_SEA_MAP, AuroraTicket_Obtained
+	vgoto_if_set FLAG_ALWAYS_SET, AuroraTicket_Obtained
 	vgoto_if_set FLAG_CAUGHT_MEW, AuroraTicket_Obtained
 	checkitem ITEM_OLD_SEA_MAP
 	vgoto_if_eq VAR_RESULT, TRUE, AuroraTicket_Obtained
@@ -13,7 +13,7 @@ MysteryGiftScript_OldSeaMap::
 	vgoto_if_eq VAR_RESULT, FALSE, AuroraTicket_NoBagSpace
 	giveitem ITEM_OLD_SEA_MAP
 	setflag FLAG_ENABLE_SHIP_FARAWAY_ISLAND
-	setflag FLAG_RECEIVED_OLD_SEA_MAP
+	setflag FLAG_ALWAYS_SET
 	vmessage sText_AuroraTicketUseAtPort
 	waitmessage
 	waitbuttonpress

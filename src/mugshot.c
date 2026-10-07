@@ -22,15 +22,15 @@ void DrawMugshot(void); //VAR_0x8000 = mugshot id
 void DrawMugshotAtPos(void); //VAR_0x8000 = mugshot id, VAR_0x8001 = x, VAR_0x8002 = y
 void ClearMugshot(void);
 
-static const u32 sMugshotImg_Test[] = INCBIN_U32("graphics/mugshots/test.4bpp.smol");
-static const u16 sMugshotPal_Test[] = INCBIN_U16("graphics/mugshots/test.gbapal");
+static const u32 sMugshotImg_Test[] = INCGFX_U32("graphics/mugshots/test.png", ".4bpp.smol");
+static const u16 sMugshotPal_Test[] = INCGFX_U16("graphics/mugshots/test.png", ".gbapal");
 
-static const u32 sMugshotImg_Jigglypuff1[] = INCBIN_U32("graphics/mugshots/jigglypuff1.4bpp.smol");
-static const u32 sMugshotImg_Jigglypuff2[] = INCBIN_U32("graphics/mugshots/jigglypuff2.4bpp.smol");
-static const u16 sMugshotPal_Jigglypuff[] = INCBIN_U16("graphics/mugshots/jigglypuff2.gbapal");
+static const u32 sMugshotImg_Jigglypuff1[] = INCGFX_U32("graphics/mugshots/jigglypuff1.png", ".4bpp.smol");
+static const u32 sMugshotImg_Jigglypuff2[] = INCGFX_U32("graphics/mugshots/jigglypuff2.png", ".4bpp.smol");
+static const u16 sMugshotPal_Jigglypuff[] = INCGFX_U16("graphics/mugshots/jigglypuff2.png", ".gbapal");
 
-static const u32 sMugshotImg_CynthiasChallenge[] = INCBIN_U32("graphics/mugshots/cynthias_challenge.4bpp.smol");
-static const u16 sMugshotPal_CynthiasChallenge[] = INCBIN_U16("graphics/mugshots/cynthias_challenge.gbapal");
+static const u32 sMugshotImg_CynthiasChallenge[] = INCGFX_U32("graphics/mugshots/cynthias_challenge.png", ".4bpp.smol");
+static const u16 sMugshotPal_CynthiasChallenge[] = INCGFX_U16("graphics/mugshots/cynthias_challenge.png", ".gbapal");
 
 
 // !!!!! IMPORTANT !!!!!
@@ -77,15 +77,18 @@ static void DrawMugshotCore(const struct Mugshot* const mugshot, int x, int y){
         ClearMugshot();
     }
     if (VarGet(VAR_0x8000) == MUGSHOT_TEST) {
-        SetWindowTemplateFields(&t, 1, x, y, mugshot->width/8, mugshot->height/8, MUGSHOT_PALETTE_NUM, mugshot->baseBlock);
+        SetWindowTemplateFields(&t, 1, x, y, mugshot->width/8, mugshot->height/8, 12, mugshot->baseBlock);
     }
     else {
         SetWindowTemplateFields(&t, 0, x, y, mugshot->width/8, mugshot->height/8, MUGSHOT_PALETTE_NUM, mugshot->baseBlock);
     }
     windowId = AddWindow(&t);
     sMugshotWindow = windowId + 1;
-    
-    LoadPalette(mugshot->palette, 16 * MUGSHOT_PALETTE_NUM, 32);
+
+    if (VarGet(VAR_0x8000) == MUGSHOT_TEST)
+        LoadPalette(mugshot->palette, 16 * 12, 32);
+    else
+        LoadPalette(mugshot->palette, 16 * MUGSHOT_PALETTE_NUM, 32);
     CopyToWindowPixelBuffer(windowId, (const void*)mugshot->image, 0, 0);
     PutWindowRectTilemap(windowId, 0, 0, mugshot->width/8, mugshot->height/8);
     CopyWindowToVram(windowId, 3);

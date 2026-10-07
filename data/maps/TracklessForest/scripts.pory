@@ -31,6 +31,7 @@ mapscripts TracklessForest_MapScripts {
 
 script TracklessForest_Portal {
 	warp(MAP_TRACKLESS_FOREST_ALT, 0)
+	waitstate
 }
 
 script BattleRaikou {
@@ -43,7 +44,6 @@ script BattleRaikou {
 	seteventmon(SPECIES_RAIKOU, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -63,7 +63,6 @@ script BattleEntei {
 	seteventmon(SPECIES_ENTEI, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -83,7 +82,6 @@ script BattleSuicune {
 	seteventmon(SPECIES_SUICUNE, 40)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -103,7 +101,6 @@ script BattleCelebi {
 	seteventmon(SPECIES_CELEBI, 50)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	special(BattleSetup_StartLegendaryBattle)
-	waitstate
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar (VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
@@ -126,6 +123,7 @@ script TracklessForest_Teleport {
 			else {
 				warp(MAP_TRACKLESS_FOREST, 0)
 			}
+			waitstate
 		}
 	}
 	release

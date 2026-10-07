@@ -599,9 +599,7 @@ SlateportCity_EventScript_CaptStern::
 	waitmovement 0
 	removeobject LOCALID_SLATEPORT_CAPT_STERN
 	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_CAPTAIN_STERN
-	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_SUBMARINE_SHADOW
-	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_GRUNT
-	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_ARCHIE
+	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_ELEMENTS
 	setvar VAR_SLATEPORT_CITY_STATE, 3
 	warp MAP_SLATEPORT_CITY_HARBOR, 11, 14
 	waitstate
@@ -739,7 +737,6 @@ SlateportCity_EventScript_ChooseBerryPowderItem::
 	waitmessage
 	setvar VAR_0x8004, SCROLL_MULTI_BERRY_POWDER_VENDOR
 	special ShowScrollableMultichoice
-	waitstate
 	switch VAR_RESULT
 	case 0, SlateportCity_EventScript_EnergyPowder
 	case 1, SlateportCity_EventScript_EnergyRoot
@@ -911,7 +908,6 @@ SlateportCity_Movement_ScottExitBattleTent:
 SlateportCity_EventScript_BerryCrushRankingsSign::
 	lockall
 	special ShowBerryCrushRankings
-	waitstate
 	releaseall
 	end
 

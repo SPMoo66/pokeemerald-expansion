@@ -31,30 +31,30 @@ MagmaHideout_PortalRoom_MapScripts_MAP_SCRIPT_ON_RESUME_1:
 MagmaHideout_PortalRoom_EventScript_PortalTeleport::
 # 18 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
 	warp MAP_MAGMA_HIDEOUT_1F, 4
+# 19 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
+	waitstate
 	return
 
 
 BattleHoopa::
-# 22 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
-	lock
 # 23 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
-	faceplayer
+	lock
 # 24 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
-	setvar VAR_LAST_TALKED, 2
+	faceplayer
 # 25 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
-	playmoncry SPECIES_HOOPA, CRY_MODE_ENCOUNTER
+	setvar VAR_LAST_TALKED, 2
 # 26 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
-	msgbox BattleHoopa_Text_0
+	playmoncry SPECIES_HOOPA, CRY_MODE_ENCOUNTER
 # 27 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
-	waitmoncry
+	msgbox BattleHoopa_Text_0
 # 28 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
-	setwildbattle SPECIES_HOOPA, 50
+	waitmoncry
 # 29 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	setwildbattle SPECIES_HOOPA, 50
 # 30 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 31 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 32 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 33 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
@@ -74,5 +74,5 @@ BattleHoopa_2:
 
 
 BattleHoopa_Text_0:
-# 26 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
+# 27 "data/maps/MagmaHideout_PortalRoom/scripts.pory"
 	.string "Hiihiihiii!$"

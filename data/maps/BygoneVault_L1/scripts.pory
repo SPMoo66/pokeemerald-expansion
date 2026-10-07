@@ -1,0 +1,36 @@
+mapscripts BygoneVault_L1_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_1)
+		setflag (FLAG_TEMP_3)
+		if (flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH)) {
+			setmaplayoutindex (LAYOUT_BYGONE_VAULT_L1_DRAINED)
+			clearflag (FLAG_TEMP_1)
+		}
+		if (!flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH) || flag(FLAG_ITEM_BYGONE_VAULT_L1_BALM_MUSHROOM)) {
+			setflag (FLAG_TEMP_2)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 42) {
+			clearflag (FLAG_TEMP_3)
+		}
+	}
+}
+
+script HopDownLedge {
+	msgbox ("Hop down the ledge?", MSGBOX_YESNO)
+	closemessage
+	if (var(VAR_RESULT)) {
+		hidefollower
+		applymovement (LOCALID_PLAYER, Common_Movement_JumpDown2)
+		waitmovement (0)
+	}
+}
+
+script BygoneVault_L1_Sign {
+	msgbox ("When the water has gone,\n"
+			"the water will appear.", MSGBOX_SIGN)
+}
+
+script BygoneVault_L1_ItemBall {
+	setflag (FLAG_ITEM_BYGONE_VAULT_L1_BALM_MUSHROOM)
+	call (Common_EventScript_FindItem)
+}

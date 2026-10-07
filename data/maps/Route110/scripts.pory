@@ -901,3 +901,6 @@ Route110_Text_KeepAnEyeOutForRival:
 	.string "See you again, {PLAYER}{KUN}!$"
 `
 
+script TrainerTipsBoxLinkShortcut {
+	msgbox(format("Trainer Tips\pWith the Pokémon Box Link in bag, press {R_BUTTON} within the party menu to access the PC immediately."), MSGBOX_SIGN)
+}

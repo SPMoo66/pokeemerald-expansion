@@ -8,6 +8,8 @@ Upgrade_EmeralbodyRivalBattleState_Var_3:
 Upgrade_EmeralbodyRivalBattleState_Var_1:
 # 60 "data/conversion_scripts.pory"
 	closemessage
+# 61 "data/conversion_scripts.pory"
+	release
 	return
 
 Upgrade_EmeralbodyRivalBattleState_Var_2:

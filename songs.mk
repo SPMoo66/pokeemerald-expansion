@@ -2342,3 +2342,27 @@ $(MID_SUBDIR)/mus_hg_win_minigame.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_victory_is_right_before_your_eyes.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G274 -V076 -P2
+
+$(MID_SUBDIR)/mus_bsb_everybody.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G276 -V076 -P2
+
+$(MID_SUBDIR)/mus_bw_abyssal_ruins.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G276 -V076 -P2
+
+$(MID_SUBDIR)/mus_bw_vs_trainer.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G276 -V076 -P2
+
+$(MID_SUBDIR)/mus_bw_vs_wild.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G276 -V076 -P2
+
+$(MID_SUBDIR)/mus_b2w2_vs_ghetsis.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G276 -V076 -P2
+
+$(MID_SUBDIR)/mus_ff4_fight_2.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G276 -V076 -P2
+
+$(MID_SUBDIR)/mus_md2_dialgas_fight_to_the_finish.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G276 -V076 -P2
+
+$(MID_SUBDIR)/mus_xd_vs_cipher_peon.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G276 -V076 -P2

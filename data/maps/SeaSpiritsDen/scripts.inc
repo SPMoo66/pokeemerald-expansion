@@ -51,30 +51,30 @@ SeaSpiritsDen_MapScripts_MAP_SCRIPT_ON_RESUME_1:
 SeaSpiritsDen_Portal::
 # 28 "data/maps/SeaSpiritsDen/scripts.pory"
 	warp MAP_SEA_SPIRITS_DEN_ALT, 0
+# 29 "data/maps/SeaSpiritsDen/scripts.pory"
+	waitstate
 	return
 
 
 BattleArticuno::
-# 32 "data/maps/SeaSpiritsDen/scripts.pory"
-	lock
 # 33 "data/maps/SeaSpiritsDen/scripts.pory"
-	faceplayer
+	lock
 # 34 "data/maps/SeaSpiritsDen/scripts.pory"
-	setvar VAR_LAST_TALKED, 1
+	faceplayer
 # 35 "data/maps/SeaSpiritsDen/scripts.pory"
-	playmoncry SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER
+	setvar VAR_LAST_TALKED, 1
 # 36 "data/maps/SeaSpiritsDen/scripts.pory"
-	msgbox BattleArticuno_Text_0
+	playmoncry SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER
 # 37 "data/maps/SeaSpiritsDen/scripts.pory"
-	waitmoncry
+	msgbox BattleArticuno_Text_0
 # 38 "data/maps/SeaSpiritsDen/scripts.pory"
-	seteventmon SPECIES_ARTICUNO, 40
+	waitmoncry
 # 39 "data/maps/SeaSpiritsDen/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_ARTICUNO, 40
 # 40 "data/maps/SeaSpiritsDen/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 41 "data/maps/SeaSpiritsDen/scripts.pory"
-	waitstate
+	special BattleSetup_StartLegendaryBattle
 # 42 "data/maps/SeaSpiritsDen/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 43 "data/maps/SeaSpiritsDen/scripts.pory"
@@ -113,64 +113,60 @@ BattleZapdos::
 # 60 "data/maps/SeaSpiritsDen/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 61 "data/maps/SeaSpiritsDen/scripts.pory"
-	waitstate
-# 62 "data/maps/SeaSpiritsDen/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 63 "data/maps/SeaSpiritsDen/scripts.pory"
+# 62 "data/maps/SeaSpiritsDen/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 64 "data/maps/SeaSpiritsDen/scripts.pory"
+# 63 "data/maps/SeaSpiritsDen/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleZapdos_2
 BattleZapdos_1:
-# 67 "data/maps/SeaSpiritsDen/scripts.pory"
+# 66 "data/maps/SeaSpiritsDen/scripts.pory"
 	release
 	end
 
 BattleZapdos_2:
-# 65 "data/maps/SeaSpiritsDen/scripts.pory"
+# 64 "data/maps/SeaSpiritsDen/scripts.pory"
 	setflag FLAG_CAUGHT_ZAPDOS
 	goto BattleZapdos_1
 
 
 BattleMoltres::
-# 72 "data/maps/SeaSpiritsDen/scripts.pory"
+# 71 "data/maps/SeaSpiritsDen/scripts.pory"
 	lock
-# 73 "data/maps/SeaSpiritsDen/scripts.pory"
+# 72 "data/maps/SeaSpiritsDen/scripts.pory"
 	faceplayer
-# 74 "data/maps/SeaSpiritsDen/scripts.pory"
+# 73 "data/maps/SeaSpiritsDen/scripts.pory"
 	setvar VAR_LAST_TALKED, 3
-# 75 "data/maps/SeaSpiritsDen/scripts.pory"
+# 74 "data/maps/SeaSpiritsDen/scripts.pory"
 	playmoncry SPECIES_MOLTRES, CRY_MODE_ENCOUNTER
-# 76 "data/maps/SeaSpiritsDen/scripts.pory"
+# 75 "data/maps/SeaSpiritsDen/scripts.pory"
 	msgbox BattleArticuno_Text_0
-# 77 "data/maps/SeaSpiritsDen/scripts.pory"
+# 76 "data/maps/SeaSpiritsDen/scripts.pory"
 	waitmoncry
-# 78 "data/maps/SeaSpiritsDen/scripts.pory"
+# 77 "data/maps/SeaSpiritsDen/scripts.pory"
 	seteventmon SPECIES_MOLTRES, 40
-# 79 "data/maps/SeaSpiritsDen/scripts.pory"
+# 78 "data/maps/SeaSpiritsDen/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 80 "data/maps/SeaSpiritsDen/scripts.pory"
+# 79 "data/maps/SeaSpiritsDen/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 81 "data/maps/SeaSpiritsDen/scripts.pory"
-	waitstate
-# 82 "data/maps/SeaSpiritsDen/scripts.pory"
+# 80 "data/maps/SeaSpiritsDen/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 83 "data/maps/SeaSpiritsDen/scripts.pory"
+# 81 "data/maps/SeaSpiritsDen/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 84 "data/maps/SeaSpiritsDen/scripts.pory"
+# 82 "data/maps/SeaSpiritsDen/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleMoltres_2
 BattleMoltres_1:
-# 87 "data/maps/SeaSpiritsDen/scripts.pory"
+# 85 "data/maps/SeaSpiritsDen/scripts.pory"
 	release
 	end
 
 BattleMoltres_2:
-# 85 "data/maps/SeaSpiritsDen/scripts.pory"
+# 83 "data/maps/SeaSpiritsDen/scripts.pory"
 	setflag FLAG_CAUGHT_MOLTRES
 	goto BattleMoltres_1
 
 
 BattleArticuno_Text_0:
-# 36 "data/maps/SeaSpiritsDen/scripts.pory"
+# 37 "data/maps/SeaSpiritsDen/scripts.pory"
 	.string "Gyaoo!$"

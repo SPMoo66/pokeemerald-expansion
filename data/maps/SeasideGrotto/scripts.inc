@@ -78,138 +78,130 @@ BattleTapuBulu::
 # 41 "data/maps/SeasideGrotto/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 42 "data/maps/SeasideGrotto/scripts.pory"
-	waitstate
-# 43 "data/maps/SeasideGrotto/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 44 "data/maps/SeasideGrotto/scripts.pory"
+# 43 "data/maps/SeasideGrotto/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 45 "data/maps/SeasideGrotto/scripts.pory"
+# 44 "data/maps/SeasideGrotto/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleTapuBulu_2
 BattleTapuBulu_1:
-# 48 "data/maps/SeasideGrotto/scripts.pory"
+# 47 "data/maps/SeasideGrotto/scripts.pory"
 	release
 	end
 
 BattleTapuBulu_2:
-# 46 "data/maps/SeasideGrotto/scripts.pory"
+# 45 "data/maps/SeasideGrotto/scripts.pory"
 	setflag FLAG_CAUGHT_TAPU_BULU
 	goto BattleTapuBulu_1
 
 
 BattleTapuFini::
-# 53 "data/maps/SeasideGrotto/scripts.pory"
+# 52 "data/maps/SeasideGrotto/scripts.pory"
 	lock
-# 54 "data/maps/SeasideGrotto/scripts.pory"
+# 53 "data/maps/SeasideGrotto/scripts.pory"
 	faceplayer
-# 55 "data/maps/SeasideGrotto/scripts.pory"
+# 54 "data/maps/SeasideGrotto/scripts.pory"
 	setvar VAR_LAST_TALKED, 2
-# 56 "data/maps/SeasideGrotto/scripts.pory"
+# 55 "data/maps/SeasideGrotto/scripts.pory"
 	playmoncry SPECIES_TAPU_FINI, CRY_MODE_ENCOUNTER
-# 57 "data/maps/SeasideGrotto/scripts.pory"
+# 56 "data/maps/SeasideGrotto/scripts.pory"
 	msgbox BattleTapuFini_Text_0
-# 58 "data/maps/SeasideGrotto/scripts.pory"
+# 57 "data/maps/SeasideGrotto/scripts.pory"
 	waitmoncry
-# 59 "data/maps/SeasideGrotto/scripts.pory"
+# 58 "data/maps/SeasideGrotto/scripts.pory"
 	seteventmon SPECIES_TAPU_FINI, 40
-# 60 "data/maps/SeasideGrotto/scripts.pory"
+# 59 "data/maps/SeasideGrotto/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 61 "data/maps/SeasideGrotto/scripts.pory"
+# 60 "data/maps/SeasideGrotto/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 62 "data/maps/SeasideGrotto/scripts.pory"
-	waitstate
-# 63 "data/maps/SeasideGrotto/scripts.pory"
+# 61 "data/maps/SeasideGrotto/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 64 "data/maps/SeasideGrotto/scripts.pory"
+# 62 "data/maps/SeasideGrotto/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 65 "data/maps/SeasideGrotto/scripts.pory"
+# 63 "data/maps/SeasideGrotto/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleTapuFini_2
 BattleTapuFini_1:
-# 68 "data/maps/SeasideGrotto/scripts.pory"
+# 66 "data/maps/SeasideGrotto/scripts.pory"
 	release
 	end
 
 BattleTapuFini_2:
-# 66 "data/maps/SeasideGrotto/scripts.pory"
+# 64 "data/maps/SeasideGrotto/scripts.pory"
 	setflag FLAG_CAUGHT_TAPU_FINI
 	goto BattleTapuFini_1
 
 
 BattleTapuKoko::
-# 73 "data/maps/SeasideGrotto/scripts.pory"
+# 71 "data/maps/SeasideGrotto/scripts.pory"
 	lock
-# 74 "data/maps/SeasideGrotto/scripts.pory"
+# 72 "data/maps/SeasideGrotto/scripts.pory"
 	faceplayer
-# 75 "data/maps/SeasideGrotto/scripts.pory"
+# 73 "data/maps/SeasideGrotto/scripts.pory"
 	setvar VAR_LAST_TALKED, 3
-# 76 "data/maps/SeasideGrotto/scripts.pory"
+# 74 "data/maps/SeasideGrotto/scripts.pory"
 	playmoncry SPECIES_TAPU_KOKO, CRY_MODE_ENCOUNTER
-# 77 "data/maps/SeasideGrotto/scripts.pory"
+# 75 "data/maps/SeasideGrotto/scripts.pory"
 	msgbox BattleTapuKoko_Text_0
-# 78 "data/maps/SeasideGrotto/scripts.pory"
+# 76 "data/maps/SeasideGrotto/scripts.pory"
 	waitmoncry
-# 79 "data/maps/SeasideGrotto/scripts.pory"
+# 77 "data/maps/SeasideGrotto/scripts.pory"
 	seteventmon SPECIES_TAPU_KOKO, 40
-# 80 "data/maps/SeasideGrotto/scripts.pory"
+# 78 "data/maps/SeasideGrotto/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 81 "data/maps/SeasideGrotto/scripts.pory"
+# 79 "data/maps/SeasideGrotto/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 82 "data/maps/SeasideGrotto/scripts.pory"
-	waitstate
-# 83 "data/maps/SeasideGrotto/scripts.pory"
+# 80 "data/maps/SeasideGrotto/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 84 "data/maps/SeasideGrotto/scripts.pory"
+# 81 "data/maps/SeasideGrotto/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 85 "data/maps/SeasideGrotto/scripts.pory"
+# 82 "data/maps/SeasideGrotto/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleTapuKoko_2
 BattleTapuKoko_1:
-# 88 "data/maps/SeasideGrotto/scripts.pory"
+# 85 "data/maps/SeasideGrotto/scripts.pory"
 	release
 	end
 
 BattleTapuKoko_2:
-# 86 "data/maps/SeasideGrotto/scripts.pory"
+# 83 "data/maps/SeasideGrotto/scripts.pory"
 	setflag FLAG_CAUGHT_TAPU_KOKO
 	goto BattleTapuKoko_1
 
 
 BattleTapuLele::
-# 93 "data/maps/SeasideGrotto/scripts.pory"
+# 90 "data/maps/SeasideGrotto/scripts.pory"
 	lock
-# 94 "data/maps/SeasideGrotto/scripts.pory"
+# 91 "data/maps/SeasideGrotto/scripts.pory"
 	faceplayer
-# 95 "data/maps/SeasideGrotto/scripts.pory"
+# 92 "data/maps/SeasideGrotto/scripts.pory"
 	setvar VAR_LAST_TALKED, 4
-# 96 "data/maps/SeasideGrotto/scripts.pory"
+# 93 "data/maps/SeasideGrotto/scripts.pory"
 	playmoncry SPECIES_TAPU_LELE, CRY_MODE_ENCOUNTER
-# 97 "data/maps/SeasideGrotto/scripts.pory"
+# 94 "data/maps/SeasideGrotto/scripts.pory"
 	msgbox BattleTapuLele_Text_0
-# 98 "data/maps/SeasideGrotto/scripts.pory"
+# 95 "data/maps/SeasideGrotto/scripts.pory"
 	waitmoncry
-# 99 "data/maps/SeasideGrotto/scripts.pory"
+# 96 "data/maps/SeasideGrotto/scripts.pory"
 	seteventmon SPECIES_TAPU_LELE, 40
-# 100 "data/maps/SeasideGrotto/scripts.pory"
+# 97 "data/maps/SeasideGrotto/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-# 101 "data/maps/SeasideGrotto/scripts.pory"
+# 98 "data/maps/SeasideGrotto/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 102 "data/maps/SeasideGrotto/scripts.pory"
-	waitstate
-# 103 "data/maps/SeasideGrotto/scripts.pory"
+# 99 "data/maps/SeasideGrotto/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 104 "data/maps/SeasideGrotto/scripts.pory"
+# 100 "data/maps/SeasideGrotto/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 105 "data/maps/SeasideGrotto/scripts.pory"
+# 101 "data/maps/SeasideGrotto/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattleTapuLele_2
 BattleTapuLele_1:
-# 108 "data/maps/SeasideGrotto/scripts.pory"
+# 104 "data/maps/SeasideGrotto/scripts.pory"
 	release
 	end
 
 BattleTapuLele_2:
-# 106 "data/maps/SeasideGrotto/scripts.pory"
+# 102 "data/maps/SeasideGrotto/scripts.pory"
 	setflag FLAG_CAUGHT_TAPU_LELE
 	goto BattleTapuLele_1
 
@@ -219,13 +211,13 @@ BattleTapuBulu_Text_0:
 	.string "Ta-pu-loooo!$"
 
 BattleTapuFini_Text_0:
-# 57 "data/maps/SeasideGrotto/scripts.pory"
+# 56 "data/maps/SeasideGrotto/scripts.pory"
 	.string "Ta-pu-fiiieee!$"
 
 BattleTapuKoko_Text_0:
-# 77 "data/maps/SeasideGrotto/scripts.pory"
+# 75 "data/maps/SeasideGrotto/scripts.pory"
 	.string "Tapu ko-ko-ko-kooo!!!$"
 
 BattleTapuLele_Text_0:
-# 97 "data/maps/SeasideGrotto/scripts.pory"
+# 94 "data/maps/SeasideGrotto/scripts.pory"
 	.string "Ta-pu leeeh!$"

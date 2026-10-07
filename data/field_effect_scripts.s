@@ -83,12 +83,20 @@ gFieldEffectScriptPointers::
 	.4byte gFieldEffectScript_Defog                     @ FLDEFF_DEFOG
 	.4byte gFieldEffectScript_UseRockClimb              @ FLDEFF_USE_ROCK_CLIMB
 	.4byte gFieldEffectScript_RockClimbDust             @ FLDEFF_ROCK_CLIMB_DUST
+	.4byte gFieldEffectScript_ORASDowse                 @ FLDEFF_ORAS_DOWSE
+
+	.4byte gFldEffScript_SmileyFaceIcon    		        @ FLDEFF_SMILEY_FACE_ICON
+	.4byte gFieldEffectScript_HallOfFameRecordFrlg      @ FLDEFF_HALL_OF_FAME_RECORD_FRLG
+	.4byte gFldEffScript_PhotoFlash                     @ FLDEFF_PHOTO_FLASH
+	.4byte gFieldEffectScript_OWE_SpawnAnim				@ FLDEFF_OW_ENCOUNTER_SPAWN_ANIM
+	.4byte gFieldEffectScript_JumpOnBird                @ FLDEFF_JUMP_ON_BIRD
+	.4byte gFieldEffectScript_JumpOffBird               @ FLDEFF_JUMP_OFF_BIRD
+
 	.4byte gFieldEffectScript_MusicNoteIcon             @ FLDEFF_MUSIC_NOTE_ICON
 	.4byte gFieldEffectScript_SmileIcon                 @ FLDEFF_SMILE_ICON
 	.4byte gFieldEffectScript_SweatDropIcon             @ FLDEFF_SWEAT_DROP_ICON
 	.4byte gFieldEffectScript_TalkingIcon               @ FLDEFF_TALKING_ICON
 	.4byte gFieldEffectScript_ThinkingIcon              @ FLDEFF_THINKING_ICON
-
 
 gFieldEffectScript_ExclamationMarkIcon1::
 	field_eff_callnative FldEff_ExclamationMarkIcon
@@ -390,15 +398,44 @@ gFieldEffectScript_CaveDust::
     field_eff_end
 
 gFieldEffectScript_Defog::
-    field_eff_callnative FldEff_Defog
-    field_eff_end
-	
+	field_eff_callnative FldEff_Defog
+	field_eff_end
+
 gFieldEffectScript_UseRockClimb:: @ 82DBC3F
 	field_eff_callnative FldEff_UseRockClimb
 	field_eff_end
 
 gFieldEffectScript_RockClimbDust:: @ 82DBB28
 	field_eff_loadfadedpal_callnative gSpritePalette_BigDust, FldEff_RockClimbDust
+	field_eff_end
+	
+gFieldEffectScript_ORASDowse::
+	field_eff_callnative FldEff_ORASDowsing
+	field_eff_end
+
+gFldEffScript_SmileyFaceIcon::
+	field_eff_callnative FldEff_SmileyFaceIcon
+	field_eff_end
+
+gFieldEffectScript_HallOfFameRecordFrlg::
+	field_eff_loadfadedpal gSpritePalette_PokeballGlow
+	field_eff_loadfadedpal_callnative gSpritePalette_HofMonitor_Frlg, FldEff_HallOfFameRecord
+	field_eff_end
+
+gFldEffScript_PhotoFlash::
+	field_eff_callnative FldEff_PhotoFlash
+	field_eff_end
+
+gFieldEffectScript_OWE_SpawnAnim::
+	field_eff_callnative FldEff_OWE_SpawnAnim
+	field_eff_end
+
+gFieldEffectScript_JumpOnBird::
+	field_eff_callnative FldEff_JumpOnBird
+	field_eff_end
+
+gFieldEffectScript_JumpOffBird::
+	field_eff_callnative FldEff_JumpOffBird
 	field_eff_end
 
 gFieldEffectScript_MusicNoteIcon::

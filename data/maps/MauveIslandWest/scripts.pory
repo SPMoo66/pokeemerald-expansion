@@ -1,0 +1,102 @@
+const MAUVEISLANDWEST_REDD = 4
+const MAUVEISLANDWEST_BARON = 6
+
+mapscripts MauveIslandWest_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag (FLAG_TEMP_1)
+		setflag (FLAG_TEMP_2)
+		setflag (FLAG_TEMP_3)
+		if (var(VAR_EMERALBODY_RIVAL_STATE) < 23) {
+			setflag (FLAG_TEMP_6) // to hide the trainers
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 24) {
+			if (var(VAR_EMERALBODY_RIVAL_STATE) < 31) {
+				clearflag (FLAG_TEMP_1)
+			}
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 40) {
+			clearflag (FLAG_TEMP_2)
+		}
+		if (flag(FLAG_SCENE09_TRANSITION)) {
+			savebgm (MUS_HG_VIRIDIAN_FOREST)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) == 45) {
+			clearflag (FLAG_TEMP_1)
+			clearflag (FLAG_TEMP_3)
+			setobjectxyperm (MAUVEISLANDWEST_REDD, 17, 10)
+			setobjectmovementtype (MAUVEISLANDWEST_REDD, MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT)
+			setobjectxyperm (MAUVEISLANDWEST_BARON, 16, 21)
+			setobjectmovementtype (MAUVEISLANDWEST_BARON, MOVEMENT_TYPE_WANDER_UP_AND_DOWN)
+			addobject (MAUVEISLANDWEST_BARON)
+		}
+	}
+}
+
+script MauveIslandWest_Redd {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) < 31) {
+		goto (Redd_Exp1_Town02)
+	}
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 45) {
+		goto (Redd_Exp1_Town07)
+	}
+}
+
+script MauveIslandWest_EventScript_Leo {
+	trainerbattle_single (TRAINER_LEO, "I came here to train for my next\ntriathlon!\pI'll use you to train my Pokémon too!", "All I have left is myself!")
+	msgbox ("It seems like I was too focused on\ntraining my own body.", MSGBOX_AUTOCLOSE)
+}
+
+script MauveIslandWest_EventScript_Eryk {
+	trainerbattle_single (TRAINER_ERYK, "New lands, new Pokémon! Help me get\nready to catch some with a battle!", "Blast!")
+	msgbox ("I need to hurry up and catch something\ngood!", MSGBOX_AUTOCLOSE)
+}
+
+script MauveIslandWest_EventScript_HeadbuttTree {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 24) {
+		msgbox (Text_HeadbuttTree, MSGBOX_YESNO)
+		if (var(VAR_RESULT)) {
+			msgbox ("{PLAYER} used Headbutt!")
+			closemessage
+			applymovement (LOCALID_PLAYER, Movement_PlayerHeadbutt)
+			waitmovement (0)
+			playse (SE_SUPER_EFFECTIVE)
+			setvar (VAR_0x8004, 1)  # vertical pan
+			setvar (VAR_0x8005, 1)  # horizontal pan
+			setvar (VAR_0x8006, 6)  # num shakes
+			setvar (VAR_0x8007, 2)  # shake delay
+			special (ShakeCamera)
+			waitstate
+			setflag (FLAG_SYS_SPAWN_INVISIBLE)
+			setflag (FLAG_MAUVE_CAMP_HEADBUTT_SCENE)
+			fadescreenswapbuffers (FADE_TO_BLACK)
+			delay (40)
+			warpsilent (MAP_MAUVE_CAMP, 23, 10)
+			waitstate
+		}
+	}
+	else {
+		msgbox (Text_HeadbuttTree, MSGBOX_AUTOCLOSE)
+		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
+		waitmovement (0)
+		msgbox ("Wait, is that Jakson's voice?\n"
+				"Better check it out first!", MSGBOX_DEFAULT)
+	}
+	closemessage
+}
+
+text Text_HeadbuttTree {
+	"A Pokémon could be in this tree.\n"
+	"Want to Headbutt it?"
+}
+
+movement Movement_PlayerHeadbutt {
+	lock_facing_direction
+	walk_down * 3
+	delay_16 * 3
+	walk_in_place_fast_up * 4
+	walk_faster_up * 3
+}
+
+script TrainerTipsOceanGrass {
+	msgbox ("Trainer Tips\pGrassy areas in the ocean are home\nto different pools of Pokémon than\lthe open oceans.", MSGBOX_SIGN)
+}

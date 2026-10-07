@@ -1800,3 +1800,16 @@ Route110_Text_KeepAnEyeOutForRival:
 	.string "Well, I had better get going.\n"
 # 901 "data/maps/Route110/scripts.pory"
 	.string "See you again, {PLAYER}{KUN}!$"
+
+TrainerTipsBoxLinkShortcut::
+# 905 "data/maps/Route110/scripts.pory"
+	msgbox TrainerTipsBoxLinkShortcut_Text_0, MSGBOX_SIGN
+	return
+
+
+TrainerTipsBoxLinkShortcut_Text_0:
+# 905 "data/maps/Route110/scripts.pory"
+	.string "Trainer Tips\p"
+	.string "With the Pokémon Box Link in bag, press {R_BUTTON}\n"
+	.string "within the party menu to access the PC\l"
+	.string "immediately.$"

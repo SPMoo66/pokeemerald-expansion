@@ -411,9 +411,9 @@ script Redd_Battle04 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 2
 		}
 		msgbox (Battle04_ReddText_PostBattle3, MSGBOX_DEFAULT)
 		closemessage
-		fadescreenswapbuffers (FADE_TO_BLACK)
+		fadescreen (FADE_TO_BLACK)
 		removeobject (REDD_BATTLE04)
-		fadescreenswapbuffers (FADE_FROM_BLACK)
+		fadescreen (FADE_FROM_BLACK)
 		fadedefaultbgm
 		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 18)
 		clearflag (FLAG_CHALLENGING_TRAINER)
@@ -433,37 +433,39 @@ const BARON_BATTLE04 = 27
 script Baron_Battle02 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 0
 	if ((var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 0 && var(VAR_EMERALBODY_RIVAL) == 0)
 	 || (var(VAR_EMERALBODY_RIVAL_BATTLE_STATE) == 7 && var(VAR_EMERALBODY_RIVAL) == 5)) { // Check if Baron is your rival
-		lock
-		setvar (VAR_TEMP_A, 0)
-		call (Common_EventScript_PlayEmRivalBgm)
-		call (GetRivalForNameBox)
-		getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
-		if (var(VAR_TEMP_1) == 9) { // Trigger spot
-			applymovement (BARON_BATTLE02, Common_Movement_WalkInPlaceUp)
-			waitmovement (0)
-			delay (50)
-			applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
-			applymovement (BARON_BATTLE02, Common_Movement_WalkUp)
-			waitmovement (0)
+		if (flag(FLAG_BADGE02_GET)) { // Skip if Brawly not beaten
+			lock
+			setvar (VAR_TEMP_A, 0)
+			call (Common_EventScript_PlayEmRivalBgm)
+			call (GetRivalForNameBox)
+			getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
+			if (var(VAR_TEMP_1) == 9) { // Trigger spot
+				applymovement (BARON_BATTLE02, Common_Movement_WalkInPlaceUp)
+				waitmovement (0)
+				delay (50)
+				applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
+				applymovement (BARON_BATTLE02, Common_Movement_WalkUp)
+				waitmovement (0)
+			}
+			else {
+				faceplayer
+			}
+			msgbox (Battle02_BaronText_PreBattle, MSGBOX_DEFAULT)
+			call (GetRivalMusic)
+			setflag (FLAG_CHALLENGING_TRAINER)
+			trainerbattle_no_intro (TRAINER_BARON_2, Battle02_BaronText_BattleVictory)
+			call (GetRivalForNameBox)
+			msgbox (Battle02_BaronText_PostBattle, MSGBOX_DEFAULT)
+			closemessage
+			fadedefaultbgm
+			setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 8)
+			clearflag (FLAG_CHALLENGING_TRAINER)
+			setflag (FLAG_TEMP_2)
+			fadescreenswapbuffers (FADE_TO_BLACK)
+			removeobject (BARON_BATTLE02)
+			fadescreenswapbuffers (FADE_FROM_BLACK)
+			release
 		}
-		else {
-			faceplayer
-		}
-		msgbox (Battle02_BaronText_PreBattle, MSGBOX_DEFAULT)
-		call (GetRivalMusic)
-		setflag (FLAG_CHALLENGING_TRAINER)
-		trainerbattle_no_intro (TRAINER_BARON_2, Battle02_BaronText_BattleVictory)
-		call (GetRivalForNameBox)
-		msgbox (Battle02_BaronText_PostBattle, MSGBOX_DEFAULT)
-		closemessage
-		fadedefaultbgm
-		setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 8)
-		clearflag (FLAG_CHALLENGING_TRAINER)
-		setflag (FLAG_TEMP_2)
-		fadescreenswapbuffers (FADE_TO_BLACK)
-		removeobject (BARON_BATTLE02)
-		fadescreenswapbuffers (FADE_FROM_BLACK)
-		release
 	}
 	setflag (FLAG_TEMP_6)
 }
@@ -756,7 +758,7 @@ script Rival_Battle05 { // VAR_EMERALBODY_RIVAL_BATTLE_STATE == 3
 			setvar (VAR_EMERALBODY_RIVAL_BATTLE_STATE, 25)
 		}
 		clearflag (FLAG_CHALLENGING_TRAINER)
-		fadescreenswapbuffers (FADE_TO_BLACK)
+		fadescreen (FADE_TO_BLACK)
 		warpsilent (MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F, 9, 4)
 		release
 	}
@@ -918,11 +920,31 @@ script Baron_Battle05 {
 	delay (40)
 	applymovement (BARON_BATTLE05, Common_Movement_WalkInPlaceUp)
 	waitmovement (0)
-	call (GetRivalForNameBox)
+	speakername (CommonText_BaronsMom)
 	msgbox (Battle05_BaronText_PostBattle2, MSGBOX_DEFAULT)
 	closemessage
 	applymovement (BARON_BATTLE05, Common_Movement_WalkDown)
 	waitmovement (0)
+	delay (20)
+	applymovement (LOCALID_PLAYER, Common_Movement_Talking)
+	delay (80)
+	playse (SE_PIN)
+	applymovement (BARON_BATTLE05, Common_Movement_ExclamationMark)
+	delay (40)
+	applymovement (BARON_BATTLE05, Common_Movement_WalkInPlaceFasterUp)
+	waitmovement (0)
+	speakername (CommonText_BaronsMom)
+	msgbox (Battle05_BaronText_PostBattle3, MSGBOX_AUTOCLOSE)
+	playfanfare (MUS_REGISTER_MATCH_CALL)
+	bufferstring (STR_VAR_2, CommonText_BaronsMom)
+	msgbox (Text_RegisteredInPokenav_OneInput, MSGBOX_DEFAULT)
+	waitfanfare
+	closemessage
+	setflag (FLAG_ENABLE_BARONS_MOM_MATCH_CALL)
+	delay (20)
+	applymovement (BARON_BATTLE05, Common_Movement_Smile)
+	playse (SE_M_MORNING_SUN)
+	delay (60)
 	getplayerxy (VAR_TEMP_0, VAR_TEMP_1)
 	if (var(VAR_TEMP_0) == 9) {
 		applymovement (BARON_BATTLE05, Common_Movement_WalkRight6)

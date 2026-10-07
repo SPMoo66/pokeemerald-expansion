@@ -1,0 +1,52 @@
+mapscripts SS_Tidal_Dungeon_1F_1R_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if (flag(FLAG_SYS_HIDE_FOLLOWERS))  {
+			setflag (FLAG_TEMP_1)
+		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 39) {
+			setflag (FLAG_TEMP_1)
+		}
+	}
+	MAP_SCRIPT_ON_LOAD {
+		if (var(VAR_EMERALBODY_RIVAL_STATE) >= 38) {
+			setmetatile (4, 9, METATILE_InsideShip_IntactDoor_Bottom_Unlocked, TRUE)
+		}
+	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_TEMP_0, 0 {
+			if (!flag(FLAG_SYS_HIDE_FOLLOWERS) && var(VAR_EMERALBODY_RIVAL_STATE) < 39) {
+				if (var(VAR_EMERALBODY_RIVAL_STATE) == 33) {
+					call (Expansion1_Rival_Scene06)
+				}
+				else {
+					call (Expansion1_Follower2_Restart)
+				}
+			}
+			setvar (VAR_TEMP_0, 1)
+		}
+	]
+}
+
+script SS_Tidal_Dungeon_1F_1R_LockedRoom {
+	lockall
+	if (var(VAR_EMERALBODY_RIVAL_STATE) == 37) {
+		msgbox ("{PLAYER} inserted and turned the\n"
+				"Room Key.\p"
+				"The inserted Key stuck fast,\n"
+				"but the door opened.", MSGBOX_AUTOCLOSE)
+		setvar (VAR_EMERALBODY_RIVAL_STATE, 38)
+		setmetatile (4, 9, METATILE_InsideShip_IntactDoor_Bottom_Unlocked, TRUE)
+		special (DrawWholeMapView)
+	}
+	elif (var(VAR_EMERALBODY_RIVAL_STATE) < 37) {
+		msgbox ("The door is locked.", MSGBOX_AUTOCLOSE)
+	}
+	else {
+		msgbox (AbandonedShip_Text_TheDoorIsOpen, MSGBOX_AUTOCLOSE)
+	}
+	releaseall
+}
+
+script SS_Tidal_Dungeon_1F_1R_EventScript_Woman {
+	msgbox ("The ocean view on the ride here has\nbeen gorgeous.\pI'd never seen anything like this\nbefore moving to Hoenn.", MSGBOX_NPC)
+}

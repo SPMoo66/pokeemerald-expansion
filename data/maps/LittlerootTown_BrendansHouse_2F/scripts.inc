@@ -237,7 +237,6 @@ LittlerootTown_BrendansHouse_2F_EventScript_CheckPlayersPC::
 	playse SE_PC_ON
 	msgbox gText_PlayerHouseBootPC, MSGBOX_DEFAULT
 	special BedroomPC
-	waitstate
 	releaseall
 	end
 
@@ -251,10 +250,6 @@ LittlerootTown_BrendansHouse_2F_EventScript_TurnOffPlayerPC::
 LittlerootTown_BrendansHouse_2F_EventScript_CheckRivalsPC::
 	msgbox gText_PokemonTrainerSchoolEmail, MSGBOX_DEFAULT
 	releaseall
-	end
-
-PlayersHouse_2F_EventScript_Notebook::
-	msgbox PlayersHouse_2F_Text_Notebook, MSGBOX_SIGN
 	end
 
 PlayersHouse_2F_EventScript_GameCube::
@@ -275,17 +270,9 @@ PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
 	.string "Oh, you should make sure that\n"
 	.string "everything's all there on your desk.$"
 
-PlayersHouse_2F_Text_Notebook:
-	.string "{PLAYER} flipped open the notebook.\p"
-	.string "Adventure Rule no. 1\n"
-	.string "Open the Menu with Start.\p"
-	.string "Adventure Rule no. 2\n"
-	.string "Record your progress with Save.\p"
-	.string "The remaining pages are blank…$"
-
 Common_Text_LookCloserAtMap:
 	.string "{PLAYER} took a closer look at the\n"
-	.string "Hoenn region map.$"
+	.string "{REGION} region map.$"
 
 PlayersHouse_2F_Text_ItsAGameCube:
 	.string "It's a Nintendo GameCube.\p"

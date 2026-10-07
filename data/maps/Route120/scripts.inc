@@ -970,5 +970,7 @@ Rival_RealmsFray_Move1:
 Route120_Portal::
 # 487 "data/maps/Route120/scripts.pory"
 	warp MAP_REALMS_FRAY, 0
+# 488 "data/maps/Route120/scripts.pory"
+	waitstate
 	return
 

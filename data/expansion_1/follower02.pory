@@ -1,0 +1,117 @@
+const SSTIDALDUNGEON_HARPER = 1
+const SSTIDALDUNGEON_ROOMS_HARPER = 0
+
+// dots…
+
+script Expansion1_Rival_Scene06 {
+	speakername (CommonText_Harper)
+	msgbox ("It's about time you showed up,\n"
+			"{PLAYER}.\p"
+			"{EMOJI_BIGWHEEL}Cracks her neck{EMOJI_BIGWHEEL}\p"
+			"I'll let you take point again.\p"
+			"Just make sure we find some action.\n"
+			"I need to vent a bit.\p"
+			"So…\p"
+			"Let's get that dynamite and well…{PAUSE 100}\n"
+			"…\l"
+			"…{PAUSE 100}blow this popsicle stand… {PAUSE 100}right?\p"
+			"Agh, sorry about that one.\p"
+			"Just do what you have to.", MSGBOX_AUTOCLOSE)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 34)
+	playfanfare (MUS_HG_LETS_GO_TOGETHER)
+	delay (20)
+	goto (SSTidalDungeon_StartHarperFollower)
+}
+
+script Expansion1_Follower2_Restart {
+	speakername (CommonText_Harper)
+	msgbox ("Yo, let's get a move on.\p"
+			"There's gotta be something in here.", MSGBOX_AUTOCLOSE)
+	goto (SSTidalDungeon_StartHarperFollower)
+}
+
+
+script SSTidalDungeon_StartHarperFollower {
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkUp)
+	waitmovement (0)
+	setfollowernpc (HARPER_SUBMERGED_CAVE, 0, Expansion1_Follower_Harper2, PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVE)
+	hidefollowernpc
+	setflag (FLAG_SYS_HIDE_FOLLOWERS)
+	setflag (FLAG_TEMP_1)
+	setvar (VAR_TEMP_5, 0)
+	setrespawn (HEAL_LOCATION_SS_TIDAL_DUNGEON_1F_1R)
+	release
+}
+
+script SSTidalDungeon_ClearHarperFollower {
+	if (flag(FLAG_SYS_HIDE_FOLLOWERS) && var(VAR_EMERALBODY_RIVAL_STATE) < 39) {
+		getobjectfacingdirection (LOCALID_PLAYER, VAR_TEMP_0)
+		facefollowernpc
+		speakername (CommonText_Harper)
+		msgbox ("What, are you calling it off for now?", MSGBOX_YESNO)
+		closemessage
+		speakername (CommonText_Harper)
+		if (var(VAR_RESULT) == 1) { // Yes
+			clearflag (FLAG_SYS_HIDE_FOLLOWERS)
+			msgbox ("Alright. I'll wait, then.")
+			closemessage
+			setvar (VAR_TEMP_5, 1)
+			fadescreen (FADE_TO_BLACK)
+			destroyfollowernpc // We keep the follower on screen until the original object appears so there's no frame without the sprite. Also, if there's no delay between setobjectmovementtype and addobject, the object will appear, then turn.
+			setrespawn (HEAL_LOCATION_MAUVE_CAMP)
+			warp (MAP_MAUVE_ISLAND_SOUTH, 0)
+		}
+		else {
+			msgbox ("Good, let's hurry up and get that\n"
+					"dynamite.", MSGBOX_AUTOCLOSE)
+			if (var(VAR_TEMP_0) == DIR_WEST) {
+				applymovement (LOCALID_PLAYER, Common_Movement_WalkRight)
+			}
+			else {
+				applymovement (LOCALID_PLAYER, Common_Movement_WalkUp)
+			}
+			waitmovement (0)
+		}
+		release
+	}
+}
+
+script Expansion1_Follower_Harper2_Talking1 {
+	playse (SE_CLICK)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_Talking)
+	delay (60)
+	facefollowernpc
+	speakername (CommonText_Harper)
+	msgbox ("Well, it doesn't really seem like this is\n"
+			"much of a ‘shipwreck’, does it?\p"
+			"The environment just pulls graphics\n"
+			"from the other ships we've been on.\p"
+			"…{PAUSE 100}I'm starting to think the monster\n"
+			"attack wasn't even a scripted event.\p"
+			"Not like it'd be the first thing to just\n"
+			"break outright in this mod.\p"
+			"Has me on my toes, at least?\n"
+			"There are less interesting journeys.\p"
+			"…{PAUSE 100}better than getting stuck in a dark\n"
+			"cave for most of it, eh?", MSGBOX_AUTOCLOSE)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 35)
+}
+
+script Expansion1_Follower_Harper2_Talking2 {
+	playse (SE_CLICK)
+	applymovement (OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_Talking)
+	delay (60)
+	facefollowernpc
+	speakername (CommonText_Harper)
+	msgbox ("Well, through the basement and now\n"
+			"we're to… {PAUSE 100}more cabins?\p"
+			"Imagine having to walk through storage\n"
+			"every time you go to your room.\p"
+			"I'd criticize Game Freak for the map\n"
+			"design like all the ones before it\l"
+			"but this is all custom, right?\p"
+			"Ah, Jakson…{PAUSE 100}\n"
+			"Vet the mods a little more before you\l"
+			"add them, please.", MSGBOX_AUTOCLOSE)
+	setvar (VAR_EMERALBODY_RIVAL_STATE, 36)
+}

@@ -185,7 +185,6 @@ Route101_EventScript_BirchsBag::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	special ChooseStarter
-	waitstate
 	applymovement LOCALID_ROUTE101_BIRCH, Common_Movement_WalkRight
 	waitmovement 0
 	speakername CommonText_Birch

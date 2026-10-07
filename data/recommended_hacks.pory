@@ -1,7 +1,7 @@
 script RecommendedHacks {
 	lock
 	msgbox (format("Check out these other romhacks!"))
-	dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, "Pokémon Unbound", "Pokémon R.O.W.E.", "Pokémon Emerald Rogue", "The Pit", "Pokémon Voyager (Demo)", "Pokémon Darkfire (Demo)", "Celia's Stupid Romhack (Demo)", "Sovereign of the Skies (Demo)", "Pokémon Peach and Lime (indev)", "Pokémon Samiya (indev)", "Legends Arise - Trinity Aenigma (indev)")
+	dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, "Pokémon Unbound", "Pokémon R.O.W.E.", "Pokémon Emerald Rogue", "The Pit", "Pokémon Voyager (Demo)", "Pokémon Darkfire (Demo)", "Celia's Stupid Romhack", "Sovereign of the Skies (Demo)", "Pokémon Peach and Lime (indev)", "Pokémon Samiya (indev)", "Legends Arise - Trinity Aenigma (indev)")
 		switch (var(VAR_RESULT)) {
 			case 0:
 				speakername ("Unbound")
@@ -23,7 +23,7 @@ script RecommendedHacks {
 				msgbox (format ("Pokémon Darkfire is an upcoming new region hack featuring great custom art, focused on Generation 1-3 Pokémon.\pDemos are currently available."))
 			case 6:
 				speakername ("Celia's")
-				msgbox (format ("Celia's Stupid Romhack is a self described ‘comedy and puzzle romhack’ that…\pWell, it's incredibly creative.\pDemos are currently available."))
+				msgbox (format ("Celia's Stupid Romhack is a self described ‘comedy and puzzle romhack’ that…\pWell, it's incredibly creative.\pThe full release is now available."))
 			case 7:
 				speakername ("SotS")
 				msgbox (format ("Sovereign of the Skies is an upcoming new region romhack featuring incredible custom art, creative puzzles, amazing maps, and more.\pDemos are currently available."))

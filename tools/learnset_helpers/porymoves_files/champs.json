@@ -1,0 +1,320 @@
+{
+  "SCEPTILE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_EARTH_POWER"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "SCOLIPEDE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_LEECH_LIFE"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "EELEKTROSS": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+	],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_RISING_VOLTAGE"
+	]
+  },
+  "PYROAR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_SCORCHING_SANDS"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "BEEDRILL": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_POLLEN_PUFF"
+	],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_SKITTER_SMACK"
+	]
+  },
+  "RAICHU_ALOLA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_DAZZLING_GLEAM"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "SLOWBRO_GALAR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+	],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_TOXIC_SPIKES"
+	]
+  },
+  "STARMIE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_ICE_SPINNER"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "TAUROS_PALDEA_COMBAT": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_IRON_TAIL"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "TAUROS_PALDEA_AQUA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_IRON_TAIL"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "TAUROS_PALDEA_BLAZE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_IRON_TAIL"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "MEGANIUM": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_POLLEN_PUFF"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "HOUNDOOM": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_SCORCHING_SANDS"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "MEDICHAM": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+	],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_COACHING"
+	]
+  },
+  "ABSOL": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_TRAILBLAZE"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "RAMPARDOS": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+	],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_METEOR_BEAM"
+	]
+  },
+  "EMBOAR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_SCORCHING_SANDS"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "WATCHOG": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_TRAILBLAZE"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "LIEPARD": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_TRAILBLAZE"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "SIMISAGE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+	],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_GRASSY_GLIDE"
+	]
+  },
+  "SIMISEAR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+	],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_TEMPER_FLARE"
+	]
+  },
+  "ZOROARK_HISUI": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_PAYBACK"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "VANILLUXE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_ICE_SPINNER"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "GRENINJA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+	],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_SKITTER_SMACK"
+	]
+  },
+  "DIGGSERBY": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_TRAILBLAZE"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "FLOETTE_ETERNAL": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+	],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_ALLURING_VOICE"
+	]
+  },
+  "FLORGES": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+	],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_GRASSY_GLIDE"
+	]
+  },
+  "FURFROU": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_TRAILBLAZE"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "AEGISLASH": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_POLTERGEIST"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "AROMATISSE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+	],
+    "EggMoves": [],
+    "TutorMoves": [
+        "MOVE_ALLURING_VOICE"
+	]
+  },
+  "HELIOLISK": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_TRAILBLAZE"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "AURORUS": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_ICE_SPINNER"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "GOODRA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_GIGA_DRAIN"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "MR_RIME": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+        "MOVE_ICE_SPINNER"
+	],
+    "EggMoves": [],
+    "TutorMoves": []
+  }
+}

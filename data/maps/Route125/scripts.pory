@@ -95,7 +95,6 @@ script Route125_EventScript_WatchGentleman {
 		incrementgamestat (GAME_STAT_CHECKED_CLOCK)
 		fadescreen (FADE_TO_BLACK)
 		special (Special_ViewWallClock)
-		waitstate
 	}
 	else {
 		msgbox("Well then...")

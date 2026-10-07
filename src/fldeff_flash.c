@@ -7,6 +7,7 @@
 #include "fldeff.h"
 #include "gpu_regs.h"
 #include "main.h"
+#include "map_preview_screen.h"
 #include "overworld.h"
 #include "palette.h"
 #include "party_menu.h"
@@ -36,7 +37,6 @@ static void Task_ExitCaveTransition4(u8 taskId);
 static void Task_ExitCaveTransition5(u8 taskId);
 static void DoEnterCaveTransition(void);
 static void Task_EnterCaveTransition1(u8 taskId);
-static void Task_EnterCaveTransition2(u8 taskId);
 static void Task_EnterCaveTransition3(u8 taskId);
 static void Task_EnterCaveTransition4(u8 taskId);
 
@@ -58,16 +58,32 @@ static const struct FlashStruct sTransitionTypes[] =
     {MAP_TYPE_UNDERGROUND, MAP_TYPE_UNKNOWN,     FALSE,  TRUE, DoExitCaveTransition},
     {MAP_TYPE_UNDERGROUND, MAP_TYPE_INDOOR,      FALSE,  TRUE, DoExitCaveTransition},
     {MAP_TYPE_UNDERGROUND, MAP_TYPE_SECRET_BASE, FALSE,  TRUE, DoExitCaveTransition},
+    {MAP_TYPE_TOWN,        MAP_TYPE_DUNGEON_WITH_SHADOWS,  TRUE, FALSE, DoEnterCaveTransition},
+    {MAP_TYPE_CITY,        MAP_TYPE_DUNGEON_WITH_SHADOWS,  TRUE, FALSE, DoEnterCaveTransition},
+    {MAP_TYPE_ROUTE,       MAP_TYPE_DUNGEON_WITH_SHADOWS,  TRUE, FALSE, DoEnterCaveTransition},
+    {MAP_TYPE_UNDERWATER,  MAP_TYPE_DUNGEON_WITH_SHADOWS,  TRUE, FALSE, DoEnterCaveTransition},
+    {MAP_TYPE_OCEAN_ROUTE, MAP_TYPE_DUNGEON_WITH_SHADOWS,  TRUE, FALSE, DoEnterCaveTransition},
+    {MAP_TYPE_UNKNOWN,     MAP_TYPE_DUNGEON_WITH_SHADOWS,  TRUE, FALSE, DoEnterCaveTransition},
+    {MAP_TYPE_INDOOR,      MAP_TYPE_DUNGEON_WITH_SHADOWS,  TRUE, FALSE, DoEnterCaveTransition},
+    {MAP_TYPE_SECRET_BASE, MAP_TYPE_DUNGEON_WITH_SHADOWS,  TRUE, FALSE, DoEnterCaveTransition},
+    {MAP_TYPE_DUNGEON_WITH_SHADOWS, MAP_TYPE_TOWN,        FALSE,  TRUE, DoExitCaveTransition},
+    {MAP_TYPE_DUNGEON_WITH_SHADOWS, MAP_TYPE_CITY,        FALSE,  TRUE, DoExitCaveTransition},
+    {MAP_TYPE_DUNGEON_WITH_SHADOWS, MAP_TYPE_ROUTE,       FALSE,  TRUE, DoExitCaveTransition},
+    {MAP_TYPE_DUNGEON_WITH_SHADOWS, MAP_TYPE_UNDERWATER,  FALSE,  TRUE, DoExitCaveTransition},
+    {MAP_TYPE_DUNGEON_WITH_SHADOWS, MAP_TYPE_OCEAN_ROUTE, FALSE,  TRUE, DoExitCaveTransition},
+    {MAP_TYPE_DUNGEON_WITH_SHADOWS, MAP_TYPE_UNKNOWN,     FALSE,  TRUE, DoExitCaveTransition},
+    {MAP_TYPE_DUNGEON_WITH_SHADOWS, MAP_TYPE_INDOOR,      FALSE,  TRUE, DoExitCaveTransition},
+    {MAP_TYPE_DUNGEON_WITH_SHADOWS, MAP_TYPE_SECRET_BASE, FALSE,  TRUE, DoExitCaveTransition},
     {},
 };
 
-static const u16 sCaveTransitionPalette_White[] = INCBIN_U16("graphics/cave_transition/white.gbapal");
-static const u16 sCaveTransitionPalette_Black[] = INCBIN_U16("graphics/cave_transition/black.gbapal");
+static const u16 sCaveTransitionPalette_White[] = INCGFX_U16("graphics/cave_transition/white.pal", ".gbapal");
+static const u16 sCaveTransitionPalette_Black[] = INCGFX_U16("graphics/cave_transition/black.pal", ".gbapal");
 
-static const u16 sCaveTransitionPalette_Enter[] = INCBIN_U16("graphics/cave_transition/enter.gbapal");
+static const u16 sCaveTransitionPalette_Enter[] = INCGFX_U16("graphics/cave_transition/enter.pal", ".gbapal");
 
-static const u32 sCaveTransitionTilemap[] = INCBIN_U32("graphics/cave_transition/tilemap.bin.smolTM");
-static const u32 sCaveTransitionTiles[] = INCBIN_U32("graphics/cave_transition/tiles.4bpp.smol");
+static const u32 sCaveTransitionTilemap[] = INCGFX_U32("graphics/cave_transition/tilemap.bin", ".smolTM");
+static const u32 sCaveTransitionTiles[] = INCGFX_U32("graphics/cave_transition/tiles.png", ".4bpp.smol");
 
 bool32 SetUpFieldMove_Flash(void)
 {
@@ -122,8 +138,6 @@ static void VBC_ChangeMapVBlank(void)
 
 void CB2_DoChangeMap(void)
 {
-    u16 ime;
-
     SetVBlankCallback(NULL);
     SetGpuReg(REG_OFFSET_DISPCNT, 0);
     SetGpuReg(REG_OFFSET_BG2CNT, 0);
@@ -141,10 +155,7 @@ void CB2_DoChangeMap(void)
     ResetPaletteFade();
     ResetTasks();
     ResetSpriteData();
-    ime = REG_IME;
-    REG_IME = 0;
-    REG_IE |= INTR_FLAG_VBLANK;
-    REG_IME = ime;
+    IntrEnable(INTR_FLAG_VBLANK);
     SetVBlankCallback(VBC_ChangeMapVBlank);
     SetMainCallback2(CB2_ChangeMapMain);
     if (!TryDoMapTransition())
@@ -156,6 +167,12 @@ static bool8 TryDoMapTransition(void)
     u8 i;
     enum MapType fromType = GetLastUsedWarpMapType();
     enum MapType toType = GetCurrentMapType();
+
+    if (ShouldRunMapPreview() && (CurrentMapHasPreviewScreen(MPS_TYPE_CAVE) == TRUE || CurrentMapHasPreviewScreen(MPS_TYPE_BASIC) == TRUE))
+    {
+        RunMapPreviewScreenNonFade(gMapHeader.regionMapSectionId);
+        return TRUE;
+    }
 
     for (i = 0; sTransitionTypes[i].fromType; i++)
     {
@@ -298,7 +315,7 @@ static void Task_EnterCaveTransition1(u8 taskId)
     gTasks[taskId].func = Task_EnterCaveTransition2;
 }
 
-static void Task_EnterCaveTransition2(u8 taskId)
+void Task_EnterCaveTransition2(u8 taskId)
 {
     SetGpuReg(REG_OFFSET_DISPCNT, 0);
     DecompressDataWithHeaderVram(sCaveTransitionTiles, (void *)(VRAM + 0xC000));

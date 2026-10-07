@@ -89,23 +89,16 @@ script Intro_EmibOpening {
 			case 2:
 				addvar (VAR_TEMP_1, 1)
 		}
-
-		if (flag(FLAG_NEW_GAME_PLUS)) { // This question only appears after beating the game once. Answering yes allows battling all rivals in one game run.
+		if (flag(FLAG_NEW_GAME_PLUS)) {
 			speakername (CommonText_Quiz)
-			msgbox("Q??/?/????/ Can you say that you\nlike all of your friends equally?")
-			dynmultichoice(0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Don't think I could", "…Yes?")
-			switch (var(VAR_RESULT)) {
-				case 1:
-					speakername (CommonText_Quiz)
-					msgbox("DANGER\nIncreased strife to follow.\lProceed with caution.")
-					dynmultichoice(0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Wait, I changed my mind!", "Proceed")
-					if (var(VAR_RESULT)) {
-						setvar (VAR_EMERALBODY_RIVAL, 5)
-					}
-				default:
+			msgbox( format( "Q??? Do you show favoritism amongst your friendships?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				msgbox( format ("Are you sure? That could lead to a dangerous journey."), MSGBOX_YESNO)
+				if (var(VAR_RESULT) == YES) {
+					setflag (FLAG_TEMP_6)
+				}
 			}
 		}
-
 		closemessage
 
 		if (var(VAR_EMERALBODY_RIVAL) != 5) { // If VAR_EMERALBODY_RIVAL = 5, meaning all rivals, skip the quiz's calculation
@@ -233,6 +226,9 @@ script Intro_DetermineRival {
 	if(!flag(FLAG_TEMP_10) && !flag(FLAG_TEMP_1) && !flag(FLAG_TEMP_3) && !flag(FLAG_TEMP_4)) {
 		setvar (VAR_EMERALBODY_RIVAL, 2)
 	}
+	if (flag(FLAG_TEMP_6)) {
+		setvar (VAR_EMERALBODY_RIVAL, 5)
+	}
 }
 
 
@@ -269,6 +265,7 @@ script InsideOfTruck_EventScript_MovingBox2 {
 		}
 		setvar (VAR_RESULT, 0)
 		warpsilent (MAP_INSIDE_OF_TRUCK, 2, 2)
+		waitstate
 	}
 	else {
 		msgbox (InsideOfTruck_Text_BoxPrintedWithMonLogo, MSGBOX_SIGN)

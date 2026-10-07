@@ -2,9 +2,8 @@ EventScript_StartTrainerApproach::
 	selectapproachingtrainer
 	lockfortrainer
 EventScript_TrainerApproach::
-	special PlayTrainerEncounterMusic
+	call_if_unset FLAG_DONT_TRANSITION_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
 	special DoTrainerApproach
-	waitstate
 	goto EventScript_ShowTrainerIntroMsg
 
 EventScript_TryDoNormalTrainerBattle::
@@ -16,7 +15,7 @@ EventScript_TryDoNormalTrainerBattle::
 	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	specialvar VAR_RESULT, GetTrainerFlag
 	goto_if_ne VAR_RESULT, FALSE, EventScript_NoNormalTrainerBattle
-	special PlayTrainerEncounterMusic
+	call_if_unset FLAG_DONT_TRANSITION_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
 	special SetTrainerFacingDirection
 	goto EventScript_ShowTrainerIntroMsg
 
@@ -31,7 +30,7 @@ EventScript_TryDoDoubleTrainerBattle::
 	goto_if_ne VAR_RESULT, FALSE, EventScript_NoDoubleTrainerBattle
 	special HasEnoughMonsForDoubleBattle
 	goto_if_ne VAR_RESULT, PLAYER_HAS_TWO_USABLE_MONS, EventScript_NotEnoughMonsForDoubleBattle
-	special PlayTrainerEncounterMusic
+	call_if_unset FLAG_DONT_TRANSITION_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
 	special SetTrainerFacingDirection
 	goto EventScript_ShowTrainerIntroMsg
 
@@ -50,7 +49,7 @@ EventScript_DoNoIntroTrainerBattle::
 	applymovement VAR_LAST_TALKED, Movement_RevealTrainer
 	waitmovement 0
 	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
-	special PlayTrainerEncounterMusic
+	call_if_unset FLAG_DONT_TRANSITION_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
 	dotrainerbattle
 	gotopostbattlescript
 
@@ -58,13 +57,12 @@ EventScript_TryDoRematchBattle::
 	call EventScript_RevealTrainer
 	specialvar VAR_RESULT, IsTrainerReadyForRematch
 	goto_if_eq VAR_RESULT, FALSE, EventScript_NoRematchTrainerBattle
-	special PlayTrainerEncounterMusic
+	call_if_unset FLAG_DONT_TRANSITION_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
 	special SetTrainerFacingDirection
 	special ShowTrainerIntroSpeech
 	waitmessage
 	waitbuttonpress
 	special BattleSetup_StartRematchBattle
-	waitstate
 	releaseall
 	end
 
@@ -76,13 +74,12 @@ EventScript_TryDoDoubleRematchBattle::
 	goto_if_eq VAR_RESULT, FALSE, EventScript_NoDoubleRematchTrainerBattle
 	special HasEnoughMonsForDoubleBattle
 	goto_if_ne VAR_RESULT, PLAYER_HAS_TWO_USABLE_MONS, EventScript_NotEnoughMonsForDoubleRematchBattle
-	special PlayTrainerEncounterMusic
+	call_if_unset FLAG_DONT_TRANSITION_BATTLE_MUSIC, EventScript_PlayTrainerEncounterMusic
 	special SetTrainerFacingDirection
 	special ShowTrainerIntroSpeech
 	waitmessage
 	waitbuttonpress
 	special BattleSetup_StartRematchBattle
-	waitstate
 	releaseall
 	end
 
@@ -134,4 +131,8 @@ Std_MsgboxAutoclose::
 	waitmessage
 	waitbuttonpress
 	release
+	return
+
+EventScript_PlayTrainerEncounterMusic::
+	special PlayTrainerEncounterMusic
 	return

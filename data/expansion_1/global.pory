@@ -1,0 +1,76 @@
+script Expansion1_ClearUnusedFlag { // This script clears flags that may have been previously set but are now unused. These flags can be used AFTER this script is run only.
+	clearflag (FLAG_SS_TIDAL_DUNGEON_EON_TICKET)
+	clearflag (FLAG_UNUSED_0x34D)
+	clearflag (FLAG_UNUSED_0x34E)
+	clearflag (FLAG_UNUSED_0x38E)
+	clearflag (FLAG_UNUSED_0x38F)
+	clearflag (FLAG_UNUSED_0xA2F)
+}
+
+script HealingSpring_Exp1 {
+	msgbox( format( "It's a restorative spring."))
+	closemessage
+	call (Common_EventScript_OutOfCenterPartyHeal)
+}
+
+script IllusoryGrottoMovableRock_Exp1 {
+	getobjectfacingdirection (LOCALID_PLAYER, VAR_RESULT)
+	if (var(VAR_RESULT) == DIR_SOUTH) {
+		msgbox( format( "Oh! Your Pokémon may be able to push this boulder aside!"))
+		closemessage
+		setfieldeffectargument (0, VAR_RESULT)
+		dofieldeffect (FLDEFF_USE_STRENGTH)
+		waitstate
+		playse (SE_M_STRENGTH)
+		delay (20)
+		playse (SE_FALL)
+	}
+	else {
+		msgbox (format( "Dad's advice…\n… … …\p… … …\p… … …\p{PLAYER}! Try a different side!"))
+		closemessage
+		release
+		end
+	}
+}
+
+script IllusoryGrotto_MonsterCommon1_Exp1 {
+	delay (10)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+	delay (10)
+}
+
+script IllusoryGrotto_MonsterCommon2_Exp1 {
+	special (DrawWholeMapView)
+	delay (10)
+	playse (SE_M_SNORE)          // 197
+	delay (20)
+	playse (SE_M_HYDRO_PUMP)     // 164
+	applymovement (LOCALID_PLAYER, Common_Movement_LockFacingDirection)
+	waitmovement (0)
+}
+
+text Text_TooDarkLetsTurnBack {
+	"…\n"
+	"…\l"
+	"…\l"
+	"It appears to be too dark to continue…\l"
+	"Let's turn back."
+}
+
+script SlateportCity_Harbor_MauveIslandSailor {
+	faceplayer
+	msgbox ("Ahoy!\nAre you looking to return to Mauve\lIsland?", MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		goto (SlateportRegionMap_BoatSceneInit)
+	}
+	closemessage
+}
+
+text Exp1_WildPokemonTrainerText_Intro {
+	"Grrrooo!!"
+}
+
+text Exp1_WildPokemonTrainerText_Defeat {
+	"Grooo."
+}

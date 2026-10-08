@@ -278,7 +278,8 @@ struct ObjectEvent
              u32 hideReflection:1;
              u32 shiny:1; // OW mon shininess
              u32 jumpDone:1;
-             u32 padding:2;
+             u32 hasMoveTutorIcon:1;
+             u32 padding:1;
     /*0x04*/ u16 graphicsId; // 12 bits for species; high 4 bits for form
     /*0x06*/ u8 movementType;
     /*0x07*/ u8 trainerType;
@@ -307,7 +308,6 @@ struct ObjectEvent
              u8 directionOverwrite:4;
     /*0x21*/ u8 directionSequenceIndex;
     /*0x22*/ u8 playerCopyableMovement; // COPY_MOVE_*
-             u32 hasMoveTutorIcon:1;
     /*0x23*/ u8 spriteId;
     /*size = 0x24*/
 };

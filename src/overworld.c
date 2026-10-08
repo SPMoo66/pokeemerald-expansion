@@ -83,6 +83,7 @@
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
 #include "constants/weather.h"
+#include "move_tutor_overworld_icon.h"
 
 STATIC_ASSERT((B_FLAG_FOLLOWERS_DISABLED == 0 || OW_FOLLOWERS_ENABLED), FollowersFlagAssignedWithoutEnablingThem);
 
@@ -2075,6 +2076,7 @@ void CB2_ReturnToField(void)
     }
     else
     {
+        RefreshMoveTutorIcons();
         FieldClearVBlankHBlankCallbacks();
         SetMainCallback2(CB2_ReturnToFieldLocal);
     }
@@ -2116,6 +2118,7 @@ void CB2_ReturnToFieldWithOpenMenu(void)
 {
     FieldClearVBlankHBlankCallbacks();
     gFieldCallback2 = FieldCB_ReturnToFieldOpenStartMenu;
+    RefreshMoveTutorIcons();
     CB2_ReturnToField();
 }
 
@@ -2666,6 +2669,7 @@ static void InitObjectEventsLocal(void)
     FollowerNPC_HandleSprite();
     UpdateFollowingPokemon();
     TryRunOnWarpIntoMapScript();
+    RefreshMoveTutorIcons();
 }
 
 static void InitObjectEventsReturnToField(void)
@@ -2673,6 +2677,7 @@ static void InitObjectEventsReturnToField(void)
     SpawnObjectEventsOnReturnToField(0, 0);
     RotatingGate_InitPuzzleAndGraphics();
     RunOnReturnToFieldMapScript();
+    RefreshMoveTutorIcons();
 }
 
 static void SetCameraToTrackPlayer(void)

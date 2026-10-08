@@ -307,6 +307,7 @@ struct ObjectEvent
              u8 directionOverwrite:4;
     /*0x21*/ u8 directionSequenceIndex;
     /*0x22*/ u8 playerCopyableMovement; // COPY_MOVE_*
+             u32 hasMoveTutorIcon:1;
     /*0x23*/ u8 spriteId;
     /*size = 0x24*/
 };

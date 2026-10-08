@@ -97,6 +97,7 @@ gFieldEffectScriptPointers::
 	.4byte gFieldEffectScript_SweatDropIcon             @ FLDEFF_SWEAT_DROP_ICON
 	.4byte gFieldEffectScript_TalkingIcon               @ FLDEFF_TALKING_ICON
 	.4byte gFieldEffectScript_ThinkingIcon              @ FLDEFF_THINKING_ICON
+	.4byte gFieldEffectScript_MoveTutorIcon             @ FLDEFF_MOVE_TUTOR_ICON
 
 gFieldEffectScript_ExclamationMarkIcon1::
 	field_eff_callnative FldEff_ExclamationMarkIcon
@@ -456,4 +457,8 @@ gFieldEffectScript_TalkingIcon::
 
 gFieldEffectScript_ThinkingIcon::
 	field_eff_callnative FldEff_ThinkingIcon
+	field_eff_end
+
+gFieldEffectScript_MoveTutorIcon::
+	field_eff_callnative FldEff_MoveTutorIcon
 	field_eff_end

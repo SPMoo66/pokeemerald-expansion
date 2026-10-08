@@ -92,6 +92,7 @@
 #define FLDEFF_SWEAT_DROP_ICON           86 // new emote
 #define FLDEFF_TALKING_ICON              87 // new emote
 #define FLDEFF_THINKING_ICON             88 // new emote
+#define FLDEFF_MOVE_TUTOR_ICON           89 // new icon for move tutors
 
 #define FLDEFFOBJ_SHADOW_S              0
 #define FLDEFFOBJ_SHADOW_M              1

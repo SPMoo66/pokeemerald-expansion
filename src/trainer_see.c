@@ -1,4 +1,5 @@
 #include "global.h"
+#include "main.h"
 #include "battle_setup.h"
 #include "event_data.h"
 #include "event_object_movement.h"
@@ -22,6 +23,7 @@
 #include "constants/field_effects.h"
 #include "constants/script_commands.h"
 #include "constants/trainer_types.h"
+#include "move_tutor_overworld_icon.h"
 
 // this file's functions
 static u8 CheckTrainer(u8 objectEventId);
@@ -52,6 +54,7 @@ static bool8 JumpInPlaceBuriedTrainer(u8 taskId, struct Task *task, struct Objec
 static bool8 WaitRevealBuriedTrainer(u8 taskId, struct Task *task, struct ObjectEvent *trainerObj);
 
 static void SpriteCB_TrainerIcons(struct Sprite *sprite);
+static void StopMoveTutorIconFieldEffect(struct Sprite *sprite, u32 objEventId);
 
 // IWRAM common
 COMMON_DATA u16 gWhichTrainerToFaceAfterBattle = 0;
@@ -75,6 +78,7 @@ static const u8 sEmotion_SmileGfx[] = INCGFX_U8("graphics/field_effects/pics/emo
 static const u8 sEmotion_SweatDropGfx[] = INCGFX_U8("graphics/field_effects/pics/emotion_sweat_drop.png", ".4bpp");
 static const u8 sEmotion_TalkingGfx[] = INCGFX_U8("graphics/field_effects/pics/emotion_talking.png", ".4bpp");
 static const u8 sEmotion_ThinkingGfx[] = INCGFX_U8("graphics/field_effects/pics/emotion_thinking.png", ".4bpp");
+static const u8 sMoveTutorIconGfx[] = INCGFX_U8("graphics/field_effects/pics/move_tutor_icon.png", ".4bpp", "-mwidth 2 -mheight 2");
 // HGSS emote graphics ripped by Lemon on The Spriters Resource: https://www.spriters-resource.com/ds_dsi/pokemonheartgoldsoulsilver/sheet/30497/
 static const u8 sEmotion_Gfx[] = INCGFX_U8("graphics/misc/emotes.png", ".4bpp", "-mwidth 2 -mheight 2");
 
@@ -284,6 +288,25 @@ static const struct SpriteFrameImage sSpriteImageTable_ThinkingIcon[] =
         .data = sEmotion_ThinkingGfx,
         .size = sizeof(sEmotion_ThinkingGfx)
     }
+};
+
+static const union AnimCmd sSpriteAnim_MoveTutorIcon[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_JUMP(0)
+};
+
+static const union AnimCmd *const sSpriteAnimTable_MoveTutorIcon[] =
+{
+    sSpriteAnim_MoveTutorIcon
+};
+
+static const struct SpriteFrameImage sSpriteImageTable_MoveTutorIcon[] =
+{
+    overworld_frame(sMoveTutorIconGfx, 2, 2, 0),
+    overworld_frame(sMoveTutorIconGfx, 2, 2, 1),
 };
 
 static const struct SpriteFrameImage sSpriteImageTable_Emotes[] =
@@ -531,6 +554,17 @@ static const struct SpriteTemplate sSpriteTemplate_Emote =
     .anims = sSpriteAnimTable_Emotes,
     .images = sSpriteImageTable_Emotes,
     .callback = SpriteCB_TrainerIcons
+};
+
+static const struct SpriteTemplate sSpriteTemplate_MoveTutorIcon =
+{
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .oam = &sOamData_Icons,
+    .anims = sSpriteAnimTable_MoveTutorIcon,
+    .images = sSpriteImageTable_MoveTutorIcon,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_MoveTutorIcon
 };
 
 // code
@@ -1197,6 +1231,41 @@ u8 FldEff_HeartIcon(void)
     }
 
     return 0;
+}
+
+u8 FldEff_MoveTutorIcon(void)
+{
+    u8 spriteId = CreateSpriteAtEnd(&sSpriteTemplate_MoveTutorIcon, 0, 0, 0x53);
+    struct Sprite *sprite;
+    
+    if (spriteId == MAX_SPRITES)
+        return 0;
+
+    sprite = &gSprites[spriteId];
+    SetIconSpriteData(sprite, FLDEFF_MOVE_TUTOR_ICON, 0);
+    UpdateSpritePaletteByTemplate(&sSpriteTemplate_MoveTutorIcon, sprite);
+    sprite->callback(sprite);
+    return 0;
+}
+
+void SpriteCB_MoveTutorIcon(struct Sprite *sprite)
+{
+    u8 objEventId;
+    struct Sprite *objEventSprite;
+
+    if (TryGetObjectEventIdByLocalIdAndMap(sprite->sLocalId, sprite->sMapNum, sprite->sMapGroup, &objEventId))
+        StopMoveTutorIconFieldEffect(sprite, objEventId);
+
+    objEventSprite = &gSprites[gObjectEvents[objEventId].spriteId];
+
+    sprite->x = objEventSprite->x;
+    sprite->y = objEventSprite->y - 16;
+}
+
+static void StopMoveTutorIconFieldEffect(struct Sprite *sprite, u32 objEventId)
+{
+    ResetMoveTutorIconOnObject(&gObjectEvents[objEventId]);
+    FieldEffectStop(sprite, sprite->sFldEffId);
 }
 
 u8 FldEff_DoubleExclMarkIcon(void)

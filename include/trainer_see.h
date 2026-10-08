@@ -28,10 +28,12 @@ u8 FldEff_SmileIcon(void);
 u8 FldEff_SweatDropIcon(void);
 u8 FldEff_TalkingIcon(void);
 u8 FldEff_ThinkingIcon(void);
+u8 FldEff_MoveTutorIcon(void);
 u8 GetCurrentApproachingTrainerObjectEventId(void);
 u8 GetChosenApproachingTrainerObjectEventId(u8 arrayId);
 void PlayerFaceTrainerAfterBattle(void);
 u8 FldEff_DoubleExclMarkIcon(void);
 u8 FldEff_XIcon(void);
+void SpriteCB_MoveTutorIcon(struct Sprite *sprite);
 
 #endif // GUARD_TRAINER_SEE_H

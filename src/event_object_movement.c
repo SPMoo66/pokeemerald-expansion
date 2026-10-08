@@ -57,6 +57,8 @@
 #include "constants/trainer_types.h"
 #include "constants/union_room.h"
 #include "constants/weather.h"
+#include "constants/layouts.h"
+#include "move_tutor_overworld_icon.h"
 
 #define SPECIAL_LOCALIDS_START (min(LOCALID_CAMERA, \
                                 min(LOCALID_PLAYER, \
@@ -1976,6 +1978,9 @@ u8 TrySpawnObjectEventTemplate(const struct ObjectEventTemplate *objectEventTemp
         SetSubspriteTables(&gSprites[gObjectEvents[objectEventId].spriteId], subspriteTables);
 
     OnOverworldWildEncounterSpawn(&gObjectEvents[objectEventId]);
+
+    HandleMoveTutorIconForSingleObjectEvent(&gObjectEvents[objectEventId], objectEventId);
+
     return objectEventId;
 }
 
@@ -3112,6 +3117,8 @@ static void SpawnObjectEventOnReturnToField(u8 objectEventId, s16 x, s16 y)
         SetObjectSubpriorityByElevation(objectEvent->previousElevation, sprite, 1);
         RestoreSavedOWEBehaviorState(objectEvent, sprite);
     }
+
+    HandleMoveTutorIconForSingleObjectEvent(objectEvent,objectEventId);
 }
 
 static void ResetObjectEventFldEffData(struct ObjectEvent *objectEvent)
@@ -3124,6 +3131,7 @@ static void ResetObjectEventFldEffData(struct ObjectEvent *objectEvent)
     objectEvent->inShallowFlowingWater = FALSE;
     objectEvent->inSandPile = FALSE;
     objectEvent->inHotSprings = FALSE;
+    ResetMoveTutorIconOnObject(objectEvent);
     ObjectEventClearHeldMovement(objectEvent);
 }
 

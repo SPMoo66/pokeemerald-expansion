@@ -201,13 +201,11 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
+	call EventScript_TuningFork
 	release
 	end
 
 Debug_EventScript_Script_2::
-@	setvar VAR_EMERALBODY_RIVAL, 0
-@	setvar VAR_EMERALBODY_RIVAL_BATTLE_STATE, 20
-@	setvar VAR_EMERALBODY_RIVAL_STATE, 16
 	release
 	end
 

@@ -87,6 +87,10 @@ BattleDialga::
 	goto_if_eq BattleDialga_2
 BattleDialga_1:
 # 45 "data/maps/TemporalSpire/scripts.pory"
+	checkifmusicunlocked 5, 1
+# 46 "data/maps/TemporalSpire/scripts.pory"
+	call EventScript_MusicUnlocked
+# 47 "data/maps/TemporalSpire/scripts.pory"
 	release
 	end
 
@@ -97,38 +101,38 @@ BattleDialga_2:
 
 
 BattlePalkia::
-# 50 "data/maps/TemporalSpire/scripts.pory"
-	lock
-# 51 "data/maps/TemporalSpire/scripts.pory"
-	faceplayer
 # 52 "data/maps/TemporalSpire/scripts.pory"
-	setvar VAR_LAST_TALKED, 3
+	lock
 # 53 "data/maps/TemporalSpire/scripts.pory"
-	playmoncry SPECIES_PALKIA, CRY_MODE_ENCOUNTER
+	faceplayer
 # 54 "data/maps/TemporalSpire/scripts.pory"
-	msgbox BattlePalkia_Text_0
+	setvar VAR_LAST_TALKED, 3
 # 55 "data/maps/TemporalSpire/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_PALKIA, CRY_MODE_ENCOUNTER
 # 56 "data/maps/TemporalSpire/scripts.pory"
-	setwildbattle SPECIES_PALKIA, 70
+	msgbox BattlePalkia_Text_0
 # 57 "data/maps/TemporalSpire/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	waitmoncry
 # 58 "data/maps/TemporalSpire/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	setwildbattle SPECIES_PALKIA, 70
 # 59 "data/maps/TemporalSpire/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 60 "data/maps/TemporalSpire/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	special BattleSetup_StartLegendaryBattle
 # 61 "data/maps/TemporalSpire/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 62 "data/maps/TemporalSpire/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 63 "data/maps/TemporalSpire/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattlePalkia_2
 BattlePalkia_1:
-# 64 "data/maps/TemporalSpire/scripts.pory"
+# 66 "data/maps/TemporalSpire/scripts.pory"
 	release
 	end
 
 BattlePalkia_2:
-# 62 "data/maps/TemporalSpire/scripts.pory"
+# 64 "data/maps/TemporalSpire/scripts.pory"
 	setflag FLAG_CAUGHT_PALKIA
 	goto BattlePalkia_1
 
@@ -138,5 +142,5 @@ BattleDialga_Text_0:
 	.string "Gugyugubah!$"
 
 BattlePalkia_Text_0:
-# 54 "data/maps/TemporalSpire/scripts.pory"
+# 56 "data/maps/TemporalSpire/scripts.pory"
 	.string "Gagyagyaah!$"

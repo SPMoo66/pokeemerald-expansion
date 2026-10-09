@@ -42,6 +42,8 @@ script BattleDialga {
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
 		setflag (FLAG_CAUGHT_DIALGA)
 	}
+	checkifmusicunlocked (5, 1)
+	call (EventScript_MusicUnlocked)
 	release
 	end
 }

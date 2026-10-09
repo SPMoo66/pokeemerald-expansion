@@ -1868,17 +1868,20 @@ PlayersHouse_2F_EventScript_Notebook_4:
 # 1362 "data/global.pory"
 	switch VAR_RESULT
 # 1363 "data/global.pory"
-	case 0, PlayersHouse_2F_EventScript_Notebook_8
+	case 0, PlayersHouse_2F_EventScript_Notebook_9
 # 1365 "data/global.pory"
-	case 1, PlayersHouse_2F_EventScript_Notebook_9
+	case 1, PlayersHouse_2F_EventScript_Notebook_10
 # 1367 "data/global.pory"
-	case 2, PlayersHouse_2F_EventScript_Notebook_10
+	case 2, PlayersHouse_2F_EventScript_Notebook_11
 # 1369 "data/global.pory"
-	case 3, PlayersHouse_2F_EventScript_Notebook_11
+	case 3, PlayersHouse_2F_EventScript_Notebook_12
 # 1371 "data/global.pory"
-	case 4, PlayersHouse_2F_EventScript_Notebook_12
+	case 4, PlayersHouse_2F_EventScript_Notebook_13
 # 1373 "data/global.pory"
-	case 5, PlayersHouse_2F_EventScript_Notebook_13
+	case 5, PlayersHouse_2F_EventScript_Notebook_14
+PlayersHouse_2F_EventScript_Notebook_7:
+# 1376 "data/global.pory"
+	release
 	return
 
 PlayersHouse_2F_EventScript_Notebook_2:
@@ -1891,35 +1894,35 @@ PlayersHouse_2F_EventScript_Notebook_5:
 	dynmultipush PlayersHouse_2F_EventScript_Notebook_Text_6, 5
 	goto PlayersHouse_2F_EventScript_Notebook_4
 
-PlayersHouse_2F_EventScript_Notebook_8:
+PlayersHouse_2F_EventScript_Notebook_9:
 # 1364 "data/global.pory"
 	helpwindow HELP_BATTLE_CONTROLS
-	return
-
-PlayersHouse_2F_EventScript_Notebook_9:
-# 1366 "data/global.pory"
-	helpwindow HELP_POKEDEX
-	return
+	goto PlayersHouse_2F_EventScript_Notebook_7
 
 PlayersHouse_2F_EventScript_Notebook_10:
-# 1368 "data/global.pory"
-	helpwindow HELP_SHOP_INVENTORY
-	return
+# 1366 "data/global.pory"
+	helpwindow HELP_POKEDEX
+	goto PlayersHouse_2F_EventScript_Notebook_7
 
 PlayersHouse_2F_EventScript_Notebook_11:
-# 1370 "data/global.pory"
-	helpwindow HELP_FLYING
-	return
+# 1368 "data/global.pory"
+	helpwindow HELP_SHOP_INVENTORY
+	goto PlayersHouse_2F_EventScript_Notebook_7
 
 PlayersHouse_2F_EventScript_Notebook_12:
-# 1372 "data/global.pory"
-	helpwindow HELP_TERASTALLIZATION
-	return
+# 1370 "data/global.pory"
+	helpwindow HELP_FLYING
+	goto PlayersHouse_2F_EventScript_Notebook_7
 
 PlayersHouse_2F_EventScript_Notebook_13:
+# 1372 "data/global.pory"
+	helpwindow HELP_TERASTALLIZATION
+	goto PlayersHouse_2F_EventScript_Notebook_7
+
+PlayersHouse_2F_EventScript_Notebook_14:
 # 1374 "data/global.pory"
 	helpwindow HELP_MEGA_EVOLUTION
-	return
+	goto PlayersHouse_2F_EventScript_Notebook_7
 
 
 Mart_EventScript_TMClerk_Text_0:

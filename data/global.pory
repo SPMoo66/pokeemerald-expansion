@@ -1373,6 +1373,7 @@ script PlayersHouse_2F_EventScript_Notebook {
 		case 5:
 			helpwindow(HELP_MEGA_EVOLUTION)
 	}
+	release
 }
 
 #script Emote_Test {
@@ -1412,3 +1413,15 @@ script PlayersHouse_2F_EventScript_Notebook {
 #		msgbox ("FALSE", MSGBOX_AUTOCLOSE)
 #	}
 #}
+#
+#	dynmultichoice example:
+#	msgbox( format(	"Q1. You receive a gift, and are curious about it. What next?"))
+#	dynmultichoice(0, 5, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Open it now", "Open it later", "Get someone else to open it.") // 0: Baron, 1: Harper, 2: Jakson, 3: Redd, 4: Sakura
+#	switch (var(VAR_RESULT)) {
+#		case 0:
+#			addvar (VAR_TEMP_4, 1)
+#		case 1:
+#			addvar (VAR_TEMP_3, 1)
+#		case 2:
+#			addvar (VAR_TEMP_1, 1)
+#	}

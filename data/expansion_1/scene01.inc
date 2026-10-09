@@ -860,18 +860,22 @@ IllusoryGrotto_B4F_1R_Scene01_OnFrame::
 # 483 "data/expansion_1/scene01.pory"
 	setflashlevel 0
 # 485 "data/expansion_1/scene01.pory"
-	playbgm MUS_DP_VICTORY_ROAD, FALSE
+	checkifmusicunlocked 3, 1
 # 486 "data/expansion_1/scene01.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 21
+	call EventScript_MusicUnlocked
 # 487 "data/expansion_1/scene01.pory"
-	clearflag FLAG_DONT_START_MUSIC_ON_WARP
+	playbgm MUS_DP_VICTORY_ROAD, FALSE
 # 488 "data/expansion_1/scene01.pory"
-	setflag FLAG_CANT_USE_ESCAPE_ROPE
+	setvar VAR_EMERALBODY_RIVAL_STATE, 21
 # 489 "data/expansion_1/scene01.pory"
-	setflag FLAG_EXPANSION_1_LEVEL_CAP
+	clearflag FLAG_DONT_START_MUSIC_ON_WARP
 # 490 "data/expansion_1/scene01.pory"
-	special ShowMapNamePopup
+	setflag FLAG_CANT_USE_ESCAPE_ROPE
 # 491 "data/expansion_1/scene01.pory"
+	setflag FLAG_EXPANSION_1_LEVEL_CAP
+# 492 "data/expansion_1/scene01.pory"
+	special ShowMapNamePopup
+# 493 "data/expansion_1/scene01.pory"
 	release
 	return
 

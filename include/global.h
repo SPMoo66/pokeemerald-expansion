@@ -581,22 +581,53 @@ struct RankingHall2P
 
 struct EliteFourOrder
 {
-	u8 eliteFourFirst;
-	u8 eliteFourSecond;
-	u8 eliteFourThird;
-	u8 eliteFourFourth;
+    u8 eliteFourFirst;
+    u8 eliteFourSecond;
+    u8 eliteFourThird;
+    u8 eliteFourFourth;
 };
 
 struct GymLeaderOrder
 {
-	u8 gymLeaderFirst;
-	u8 gymLeaderSecond;
-	u8 gymLeaderThird;
-	u8 gymLeaderFourth;
-	u8 gymLeaderFifth;
-	u8 gymLeaderSixth;
-	u8 gymLeaderSeventh;
-	u8 gymLeaderEighth;
+    u8 gymLeaderFirst;
+    u8 gymLeaderSecond;
+    u8 gymLeaderThird;
+    u8 gymLeaderFourth;
+    u8 gymLeaderFifth;
+    u8 gymLeaderSixth;
+    u8 gymLeaderSeventh;
+    u8 gymLeaderEighth;
+};
+
+struct TuningForkUnlockedMusic
+{
+    bool8 musicEvilTeamBoss;
+    bool8 musicEliteFour;
+    bool8 musicLegendary;
+    bool8 musicBW;
+    bool8 musicB2W2VsGhetsis;
+    bool8 musicMD2Dialga;
+    bool8 musicXDCipherPeon;
+    bool8 padding1;
+    bool8 padding2;
+    bool8 padding3;
+    bool8 padding4;
+    bool8 padding5;
+    bool8 padding6;
+    bool8 padding7;
+    bool8 padding8;
+    bool8 padding9;
+    bool8 padding10;
+    bool8 padding11;
+    bool8 padding12;
+    bool8 padding13;
+    bool8 padding14;
+    bool8 padding15;
+    bool8 padding16;
+    bool8 padding17;
+    bool8 padding18;
+    bool8 padding19;
+    bool8 padding20;
 };
 
 struct SaveBlock2
@@ -657,6 +688,7 @@ struct SaveBlock2
     /*0x64C*/ struct BattleFrontier frontier;
               struct EliteFourOrder eliteFourOrder;
               struct GymLeaderOrder gymLeaderOrder;
+              struct TuningForkUnlockedMusic tuningForkUnlockedMusic;
 }; // sizeof=0xF2C
 
 

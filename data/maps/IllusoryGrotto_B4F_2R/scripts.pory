@@ -36,6 +36,8 @@ script IllusoryGrotto_B4F_2R_EventScript_WildPokemon {
 		setvar (VAR_TEMP_3, 1)
 		clearflag (FLAG_WILD_OPPONENT)
 		removeobject (2)
+		checkifmusicunlocked (6, 1)
+		call (EventScript_MusicUnlocked)
 		release
 	}
 	setvar (VAR_TEMP_3, 1)

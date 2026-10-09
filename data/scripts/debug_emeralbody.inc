@@ -184,17 +184,154 @@ EmeralbodyDebug_VarRivalState::
 	msgbox EmeralbodyDebug_VarRivalState_Text_0
 # 104 "data/scripts/debug_emeralbody.pory"
 	closemessage
+# 105 "data/scripts/debug_emeralbody.pory"
+	release
 	return
 
 
 EmeralbodyDebug_VarRivalBattleState::
-# 108 "data/scripts/debug_emeralbody.pory"
-	buffernumberstring 0, VAR_EMERALBODY_RIVAL_BATTLE_STATE
 # 109 "data/scripts/debug_emeralbody.pory"
-	msgbox EmeralbodyDebug_VarRivalState_Text_0
+	buffernumberstring 0, VAR_EMERALBODY_RIVAL_BATTLE_STATE
 # 110 "data/scripts/debug_emeralbody.pory"
+	msgbox EmeralbodyDebug_VarRivalState_Text_0
+# 111 "data/scripts/debug_emeralbody.pory"
 	closemessage
+# 112 "data/scripts/debug_emeralbody.pory"
+	release
 	return
+
+
+EmeralbodyDebug_ToggleTuningForkMusic_0::
+# 116 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 0
+# 117 "data/scripts/debug_emeralbody.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq EmeralbodyDebug_ToggleTuningForkMusic_0_2
+# 121 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 0, 2
+EmeralbodyDebug_ToggleTuningForkMusic_0_1:
+# 123 "data/scripts/debug_emeralbody.pory"
+	release
+	return
+
+EmeralbodyDebug_ToggleTuningForkMusic_0_2:
+# 118 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 0, 1
+	goto EmeralbodyDebug_ToggleTuningForkMusic_0_1
+
+
+EmeralbodyDebug_ToggleTuningForkMusic_1::
+# 127 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 1
+# 128 "data/scripts/debug_emeralbody.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq EmeralbodyDebug_ToggleTuningForkMusic_1_2
+# 132 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 1, 2
+EmeralbodyDebug_ToggleTuningForkMusic_1_1:
+# 134 "data/scripts/debug_emeralbody.pory"
+	release
+	return
+
+EmeralbodyDebug_ToggleTuningForkMusic_1_2:
+# 129 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 1, 1
+	goto EmeralbodyDebug_ToggleTuningForkMusic_1_1
+
+
+EmeralbodyDebug_ToggleTuningForkMusic_2::
+# 138 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 2
+# 139 "data/scripts/debug_emeralbody.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq EmeralbodyDebug_ToggleTuningForkMusic_2_2
+# 143 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 2, 2
+EmeralbodyDebug_ToggleTuningForkMusic_2_1:
+# 145 "data/scripts/debug_emeralbody.pory"
+	release
+	return
+
+EmeralbodyDebug_ToggleTuningForkMusic_2_2:
+# 140 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 2, 1
+	goto EmeralbodyDebug_ToggleTuningForkMusic_2_1
+
+
+EmeralbodyDebug_ToggleTuningForkMusic_3::
+# 149 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 3
+# 150 "data/scripts/debug_emeralbody.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq EmeralbodyDebug_ToggleTuningForkMusic_3_2
+# 154 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 3, 2
+EmeralbodyDebug_ToggleTuningForkMusic_3_1:
+# 156 "data/scripts/debug_emeralbody.pory"
+	release
+	return
+
+EmeralbodyDebug_ToggleTuningForkMusic_3_2:
+# 151 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 3, 1
+	goto EmeralbodyDebug_ToggleTuningForkMusic_3_1
+
+
+EmeralbodyDebug_ToggleTuningForkMusic_4::
+# 160 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 4
+# 161 "data/scripts/debug_emeralbody.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq EmeralbodyDebug_ToggleTuningForkMusic_4_2
+# 165 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 4, 2
+EmeralbodyDebug_ToggleTuningForkMusic_4_1:
+# 167 "data/scripts/debug_emeralbody.pory"
+	release
+	return
+
+EmeralbodyDebug_ToggleTuningForkMusic_4_2:
+# 162 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 4, 1
+	goto EmeralbodyDebug_ToggleTuningForkMusic_4_1
+
+
+EmeralbodyDebug_ToggleTuningForkMusic_5::
+# 171 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 5
+# 172 "data/scripts/debug_emeralbody.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq EmeralbodyDebug_ToggleTuningForkMusic_5_2
+# 176 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 5, 2
+EmeralbodyDebug_ToggleTuningForkMusic_5_1:
+# 178 "data/scripts/debug_emeralbody.pory"
+	release
+	return
+
+EmeralbodyDebug_ToggleTuningForkMusic_5_2:
+# 173 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 5, 1
+	goto EmeralbodyDebug_ToggleTuningForkMusic_5_1
+
+
+EmeralbodyDebug_ToggleTuningForkMusic_6::
+# 182 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 6
+# 183 "data/scripts/debug_emeralbody.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq EmeralbodyDebug_ToggleTuningForkMusic_6_2
+# 187 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 6, 2
+EmeralbodyDebug_ToggleTuningForkMusic_6_1:
+# 189 "data/scripts/debug_emeralbody.pory"
+	release
+	return
+
+EmeralbodyDebug_ToggleTuningForkMusic_6_2:
+# 184 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 6, 1
+	goto EmeralbodyDebug_ToggleTuningForkMusic_6_1
 
 
 EmeralbodyDebug_WhoIsRival_Text_0:

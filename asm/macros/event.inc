@@ -2713,6 +2713,13 @@
 	.4byte \products
 	.endm
 
+	@ Checks if a song is unlocked, setStatus = 1 to unlock music, setStatus = 2 to lock music
+	.macro checkifmusicunlocked music:req setStatus=FALSE
+	callnative ScrCmd_checkifmusicunlocked
+	.byte \music
+	.byte \setStatus
+	.endm
+
 @ End Custom Functions
 
 	@ Hides any follower Pokémon if present, putting them into their Poké Ball; by default waits for their movement to finish.

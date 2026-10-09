@@ -1373,6 +1373,8 @@ script SootopolisCity_EventScript_StartRayquazaScene {
 		special (SetCB2WhiteOut)
 	}
 	else {
+		checkifmusicunlocked (2, 1)
+		call (EventScript_MusicUnlocked)
 		fadescreenspeed (FADE_TO_BLACK, 2)
 		clearflag (FLAG_NO_CATCHING)
 		clearflag (FLAG_NO_RUNNING)

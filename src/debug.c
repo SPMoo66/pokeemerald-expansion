@@ -433,6 +433,13 @@ extern const u8 EmeralbodyDebug_SetRival_Jakson[];
 extern const u8 EmeralbodyDebug_SetRival_Redd[];
 extern const u8 EmeralbodyDebug_SetRival_Sakura[];
 extern const u8 EmeralbodyDebug_SetRival_All[];
+extern const u8 EmeralbodyDebug_ToggleTuningForkMusic_0[];
+extern const u8 EmeralbodyDebug_ToggleTuningForkMusic_1[];
+extern const u8 EmeralbodyDebug_ToggleTuningForkMusic_2[];
+extern const u8 EmeralbodyDebug_ToggleTuningForkMusic_3[];
+extern const u8 EmeralbodyDebug_ToggleTuningForkMusic_4[];
+extern const u8 EmeralbodyDebug_ToggleTuningForkMusic_5[];
+extern const u8 EmeralbodyDebug_ToggleTuningForkMusic_6[];
 extern const u8 EmeralbodyDebug_Expansion1_JaksonsCall[];
 extern const u8 EmeralbodyDebug_Expansion1_IllusoryGrotto_1[];
 extern const u8 EmeralbodyDebug_Expansion1_MauveIsland[];
@@ -697,6 +704,18 @@ static const struct DebugMenuOption sDebugMenu_Actions_EmeralbodySetRival[] =
     { NULL }
 };
 
+static const struct DebugMenuOption sDebugMenu_Actions_TuningFork[] =
+{
+    { COMPOUND_STRING("Toggle Evil Team"),      DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_0, },
+    { COMPOUND_STRING("Toggle E4/Champ"),       DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_1, },
+    { COMPOUND_STRING("Toggle Legendary"),      DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_2, },
+    { COMPOUND_STRING("Toggle BW"),             DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_3, },
+    { COMPOUND_STRING("Toggle B2W2 Ghetsis"),   DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_4, },
+    { COMPOUND_STRING("Toggle MD2 Dialga"),     DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_5, },
+    { COMPOUND_STRING("Toggle XD Cipher Peon"), DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_6, },
+    { NULL }
+};
+
 static const struct DebugMenuOption sDebugMenu_Actions_EmeralbodyExp1State[] =
 {
     { COMPOUND_STRING("After Jakson's Call"),  DebugAction_ExecuteScript, EmeralbodyDebug_Expansion1_JaksonsCall, },
@@ -725,6 +744,7 @@ static const struct DebugMenuOption sDebugMenu_Actions_EmeralbodyScripts[] =
     { COMPOUND_STRING("Access help notebook"), DebugAction_ExecuteScript, PlayersHouse_2F_EventScript_Notebook, },
     { COMPOUND_STRING("Reommended hacks"),     DebugAction_ExecuteScript, RecommendedHacks, },
     { COMPOUND_STRING("Change Rival"),         DebugAction_OpenSubMenu, sDebugMenu_Actions_EmeralbodySetRival, },
+    { COMPOUND_STRING("Tuning Fork"),          DebugAction_OpenSubMenu, sDebugMenu_Actions_TuningFork, },
     { COMPOUND_STRING("Exp. 1 Story State"),   DebugAction_OpenSubMenu, sDebugMenu_Actions_EmeralbodyExp1State, },
     { COMPOUND_STRING("Debug: Read Vars"),     DebugAction_OpenSubMenu, sDebugMenu_Actions_DebugReadVars, },
     { NULL }
@@ -732,7 +752,6 @@ static const struct DebugMenuOption sDebugMenu_Actions_EmeralbodyScripts[] =
 
 static const struct DebugMenuOption sDebugMenu_Actions_Scripts[] =
 {
-    { COMPOUND_STRING("Upgrade save - 1.4.0"), DebugAction_ExecuteScript, Upgrade_EmeralbodyRivalBattleState_Var },
     { COMPOUND_STRING("Script 1"), DebugAction_ExecuteScript, Debug_EventScript_Script_1 },
     { COMPOUND_STRING("Script 2"), DebugAction_ExecuteScript, Debug_EventScript_Script_2 },
     { COMPOUND_STRING("Script 3"), DebugAction_ExecuteScript, Debug_EventScript_Script_3 },

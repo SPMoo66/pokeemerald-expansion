@@ -48,6 +48,8 @@ MtChimney_EventScript_Maxie::
 	speakername (CommonText_Maxie)
 	msgbox MtChimney_Text_MaxieIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_MAXIE_MT_CHIMNEY, MtChimney_Text_MaxieDefeat
+	checkifmusicunlocked 0, 1
+	call EventScript_MusicUnlocked
 	speakername (CommonText_Maxie)
 	msgbox MtChimney_Text_MaxieYouHaventSeenLastOfMagma, MSGBOX_DEFAULT
 	closemessage

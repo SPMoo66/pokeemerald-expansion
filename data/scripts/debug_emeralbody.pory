@@ -102,10 +102,89 @@ script EmeralbodyDebug_VarRivalState {
 	buffernumberstring (0, VAR_EMERALBODY_RIVAL_STATE)
 	msgbox ("{STR_VAR_1}")
 	closemessage
+	release
 }
 
 script EmeralbodyDebug_VarRivalBattleState {
 	buffernumberstring (0, VAR_EMERALBODY_RIVAL_BATTLE_STATE)
 	msgbox ("{STR_VAR_1}")
 	closemessage
+	release
+}
+
+script EmeralbodyDebug_ToggleTuningForkMusic_0 {
+	checkifmusicunlocked (0)
+	if (!var(VAR_RESULT)) {
+		checkifmusicunlocked (0, 1)
+	}
+	else {
+		checkifmusicunlocked (0, 2)
+	}
+	release
+}
+
+script EmeralbodyDebug_ToggleTuningForkMusic_1 {
+	checkifmusicunlocked (1)
+	if (!var(VAR_RESULT)) {
+		checkifmusicunlocked (1, 1)
+	}
+	else {
+		checkifmusicunlocked (1, 2)
+	}
+	release
+}
+
+script EmeralbodyDebug_ToggleTuningForkMusic_2 {
+	checkifmusicunlocked (2)
+	if (!var(VAR_RESULT)) {
+		checkifmusicunlocked (2, 1)
+	}
+	else {
+		checkifmusicunlocked (2, 2)
+	}
+	release
+}
+
+script EmeralbodyDebug_ToggleTuningForkMusic_3 {
+	checkifmusicunlocked (3)
+	if (!var(VAR_RESULT)) {
+		checkifmusicunlocked (3, 1)
+	}
+	else {
+		checkifmusicunlocked (3, 2)
+	}
+	release
+}
+
+script EmeralbodyDebug_ToggleTuningForkMusic_4 {
+	checkifmusicunlocked (4)
+	if (!var(VAR_RESULT)) {
+		checkifmusicunlocked (4, 1)
+	}
+	else {
+		checkifmusicunlocked (4, 2)
+	}
+	release
+}
+
+script EmeralbodyDebug_ToggleTuningForkMusic_5 {
+	checkifmusicunlocked (5)
+	if (!var(VAR_RESULT)) {
+		checkifmusicunlocked (5, 1)
+	}
+	else {
+		checkifmusicunlocked (5, 2)
+	}
+	release
+}
+
+script EmeralbodyDebug_ToggleTuningForkMusic_6 {
+	checkifmusicunlocked (6)
+	if (!var(VAR_RESULT)) {
+		checkifmusicunlocked (6, 1)
+	}
+	else {
+		checkifmusicunlocked (6, 2)
+	}
+	release
 }

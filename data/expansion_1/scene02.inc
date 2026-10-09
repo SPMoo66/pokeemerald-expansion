@@ -667,6 +667,10 @@ Expansion1_Rival_Scene02e_4:
 # 376 "data/expansion_1/scene02.pory"
 	msgbox PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS
 # 377 "data/expansion_1/scene02.pory"
+	checkifmusicunlocked 4, 1
+# 378 "data/expansion_1/scene02.pory"
+	call EventScript_MusicUnlocked
+# 379 "data/expansion_1/scene02.pory"
 	closemessage
 	return
 

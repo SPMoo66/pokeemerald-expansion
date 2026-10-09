@@ -3507,6 +3507,76 @@ bool8 CheckWarningOption(void)
 	return warningOptionResult;
 }
 
+bool8 ScrCmd_checkifmusicunlocked(struct ScriptContext *ctx)
+{
+    u8 musicToCheck = ScriptReadByte(ctx);
+    bool32 setStatus = ScriptReadByte(ctx);
+
+    switch (musicToCheck)
+    {
+    case 0:
+        if (setStatus == 1)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicEvilTeamBoss = 1;
+        else if (setStatus == 2)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicEvilTeamBoss = 0;
+        else
+            gSpecialVar_Result = gSaveBlock2Ptr->tuningForkUnlockedMusic.musicEvilTeamBoss;
+        break;
+    case 1:
+        if (setStatus == 1)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicEliteFour = 1;
+        else if (setStatus == 2)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicEliteFour = 0;
+        else
+            gSpecialVar_Result = gSaveBlock2Ptr->tuningForkUnlockedMusic.musicEliteFour;
+        break;
+    case 2:
+        if (setStatus == 1)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicLegendary = 1;
+        else if (setStatus == 2)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicLegendary = 0;
+        else
+            gSpecialVar_Result = gSaveBlock2Ptr->tuningForkUnlockedMusic.musicLegendary;
+        break;
+    case 3:
+        if (setStatus == 1)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicBW = 1;
+        else if (setStatus == 2)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicBW = 0;
+        else
+            gSpecialVar_Result = gSaveBlock2Ptr->tuningForkUnlockedMusic.musicBW;
+        break;
+    case 4:
+        if (setStatus == 1)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicB2W2VsGhetsis = 1;
+        else if (setStatus == 2)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicB2W2VsGhetsis = 0;
+        else
+            gSpecialVar_Result = gSaveBlock2Ptr->tuningForkUnlockedMusic.musicB2W2VsGhetsis;
+        break;
+    case 5:
+        if (setStatus == 1)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicMD2Dialga = 1;
+        else if (setStatus == 2)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicMD2Dialga = 0;
+        else
+            gSpecialVar_Result = gSaveBlock2Ptr->tuningForkUnlockedMusic.musicMD2Dialga;
+        break;
+    case 6:
+        if (setStatus == 1)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicXDCipherPeon = 1;
+        else if (setStatus == 2)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicXDCipherPeon = 0;
+        else
+            gSpecialVar_Result = gSaveBlock2Ptr->tuningForkUnlockedMusic.musicXDCipherPeon;
+        break;
+    default:
+        break;
+    }
+
+    return FALSE;
+}
+
 static void FieldCallback_SetupWarpScript(void)
 {
     if (gAfterWarpScript == NULL)

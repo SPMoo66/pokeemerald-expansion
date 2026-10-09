@@ -95,6 +95,8 @@ static void DecryptBoxMon(struct BoxPokemon *boxMon);
 static void Task_PlayMapChosenOrBattleBGM(u8 taskId);
 void TrySpecialOverworldEvo();
 
+static u32 PlayTuningForkMusic(bool32 tuningForkVar);
+
 EWRAM_DATA static u8 sLearningMoveTableID = 0;
 EWRAM_DATA u8 gPartiesCount[MAX_BATTLE_TRAINERS] = {0};
 EWRAM_DATA struct Pokemon gParties[MAX_BATTLE_TRAINERS][PARTY_SIZE] = {0};
@@ -5167,6 +5169,10 @@ u16 GetBattleBGM(void)
         FlagClear(FLAG_SYS_SET_BATTLE_BGM);
         return VarGet(VAR_TEMP_F);
     }
+    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && VarGet(VAR_TUNING_FORK_TRAINER))
+    {
+        return PlayTuningForkMusic(VarGet(VAR_TUNING_FORK_TRAINER));
+    }
     else if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
     {
         switch (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES))
@@ -5327,6 +5333,10 @@ u16 GetBattleBGM(void)
                 }
             }
         }
+    }
+    else if (VarGet(VAR_TUNING_FORK_WILD))
+    {
+        return PlayTuningForkMusic(VarGet(VAR_TUNING_FORK_WILD));
     }
     else
     {
@@ -5517,6 +5527,107 @@ u16 GetBattleBGM(void)
                         return MUS_VS_WILD;
                 }
         }
+    }
+}
+
+static u32 PlayTuningForkMusic(bool32 tuningForkVar)
+{
+    switch (tuningForkVar)
+    {
+    case 2:
+        return MUS_VS_GYM_LEADER;
+    case 3:
+        return MUS_VS_AQUA_MAGMA;
+    case 4:
+        return MUS_VS_AQUA_MAGMA_LEADER;
+    case 5:
+        return MUS_VS_ELITE_FOUR;
+    case 6:
+        return MUS_VS_CHAMPION;
+    case 7:
+        return MUS_VS_FRONTIER_BRAIN;
+    case 8:
+        return MUS_VS_KYOGRE_GROUDON;
+    case 9:
+        return MUS_VS_REGI;
+    case 10:
+        return MUS_VS_RAYQUAZA;
+    case 11:
+        return MUS_VS_MEW;
+    case 12:
+        return MUS_RG_VS_GYM_LEADER;
+    case 13:
+        return MUS_RG_VS_CHAMPION;
+    case 14:
+        return MUS_RG_VS_DEOXYS;
+    case 15:
+        return MUS_RG_VS_MEWTWO;
+    case 16:
+        return MUS_RG_VS_LEGEND;
+    case 17:
+        return MUS_DP_VS_RIVAL;
+    case 18:
+        return MUS_DP_VS_GYM_LEADER;
+    case 19:
+        return MUS_DP_VS_GALACTIC;
+    case 20:
+        return MUS_DP_VS_GALACTIC_COMMANDER;
+    case 21:
+        return MUS_DP_VS_GALACTIC_BOSS;
+    case 22:
+        return MUS_DP_VS_ELITE_FOUR;
+    case 23:
+        return MUS_DP_VS_CHAMPION;
+    case 24:
+        return MUS_DP_VS_DIALGA_PALKIA;
+    case 25:
+        return MUS_DP_VS_UXIE_MESPRIT_AZELF;
+    case 26:
+        return MUS_DP_VS_LEGEND;
+    case 27:
+        return MUS_DP_VS_ARCEUS;
+    case 28:
+        return MUS_PL_VS_FRONTIER_BRAIN;
+    case 29:
+        return MUS_PL_VS_GIRATINA;
+    case 30:
+        return MUS_PL_VS_REGI;
+    case 31:
+        return MUS_HG_VS_RIVAL;
+    case 32:
+        return MUS_HG_VS_GYM_LEADER;
+    case 33:
+        return MUS_HG_VS_GYM_LEADER_KANTO;
+    case 34:
+        return MUS_HG_VS_ROCKET;
+    case 35:
+        return MUS_HG_VS_CHAMPION;
+    case 36:
+        return MUS_HG_VS_HO_OH;
+    case 37:
+        return MUS_HG_VS_LUGIA;
+    case 38:
+        return MUS_HG_VS_SUICUNE;
+    case 39:
+        return MUS_HG_VS_ENTEI;
+    case 40:
+        return MUS_HG_VS_RAIKOU;
+    case 41:
+        return MUS_HG_VS_KYOGRE_GROUDON;
+    case 42:
+        return MUS_BW_VS_TRAINER;
+    case 43:
+        return MUS_BW_VS_WILD;
+    case 44:
+        return MUS_B2W2_VS_GHETSIS;
+    case 45:
+        return MUS_FF4_FIGHT_2;
+    case 46:
+        return MUS_MD2_DIALGAS_FIGHT_TO_THE_FINISH;
+    case 47:
+        return MUS_XD_VS_CIPHER_PEON;
+    default:
+        return MUS_VS_RIVAL;
     }
 }
 

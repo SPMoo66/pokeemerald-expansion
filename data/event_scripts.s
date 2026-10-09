@@ -1707,6 +1707,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/battle_frontier.inc"
 	.include "data/scripts/apricorn_tree.inc"
 	.include "data/scripts/wild_encounter.inc"
+	.include "data/scripts/tuning_fork.inc"
 
 	.include "data/global.inc"
 	.include "data/emeralbody_rivals/all_rivals.inc"
@@ -1834,7 +1835,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/BygoneVault_2L1/scripts.inc"
 	.include "data/maps/BygoneVault_2R1/scripts.inc"
 	.include "data/maps/BygoneVault_2RU/scripts.inc"
-
 	.include "data/maps/TemporalSpire/scripts.inc"
-
 	.include "data/maps/IllusoryGrotto_B4F_SpecialRoom/scripts.inc"

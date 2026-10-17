@@ -316,7 +316,7 @@ text Exp1_Town05_SakuraText {
 	format( "Well, {PLAYER}?\n"
 			"Are you smelling the treasure yet?\p"
 			"… {PAUSE 30}… {PAUSE 30}…\p"
-			"Oh, me nether, but I'm hot on its trail{EMOJI_TILDE}\p"
+			"Oh, me neither, but I'm hot on its trail{EMOJI_TILDE}\p"
 			"I heard once that treasure smells like\n"
 			"chocolate! Keep your nose locked and\l"
 			"loaded for the chocolate crusades!")

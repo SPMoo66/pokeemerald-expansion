@@ -295,7 +295,7 @@ Exp1_Town05_SakuraText::
 	.string "Well, {PLAYER}?\n"
 	.string "Are you smelling the treasure yet?\p"
 	.string "… {PAUSE 30}… {PAUSE 30}…\p"
-	.string "Oh, me nether, but I'm hot on its trail{EMOJI_TILDE}\p"
+	.string "Oh, me neither, but I'm hot on its trail{EMOJI_TILDE}\p"
 	.string "I heard once that treasure smells like\n"
 	.string "chocolate! Keep your nose locked and\l"
 	.string "loaded for the chocolate crusades!$"

@@ -1075,6 +1075,7 @@ enum __attribute__((packed)) Item
     ITEM_BAXCALIBRITE = 894,
     ITEM_TATSUGIRINITE = 895,
     ITEM_GLIMMORANITE = 896,
+
     ITEM_WHETSTONE = 897,
     ITEM_WRIST_WEIGHTS = 898,
     ITEM_QUICKEST_CLAW = 899,
@@ -1082,6 +1083,7 @@ enum __attribute__((packed)) Item
     ITEM_CANDY_JAR = 901,
     ITEM_FROST_ORB = 902,
     ITEM_BURNT_FANG = 903,
+    ITEM_TUNING_FORK = 904,
 
     ITEMS_COUNT,
     ITEM_FIELD_ARROW = ITEMS_COUNT,

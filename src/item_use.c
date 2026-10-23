@@ -85,6 +85,7 @@ static void SetDistanceOfClosestHiddenItem(u8, s16, s16);
 static void CB2_OpenPokeblockFromBag(void);
 static void ItemUseOnFieldCB_Honey(u8 taskId);
 static bool32 IsValidLocationForVsSeeker(void);
+static void Task_UseTuningFork(u8);
 
 //Start Pokevial Branch
 static void UsePokevialFieldYes(u8 taskId);
@@ -1799,4 +1800,16 @@ void ItemUseOutOfBattle_PokeBall(u8 taskId)
     gItemUseCB = ItemUseCB_PokeBall;
     gBagMenu->newScreenCallback = CB2_ShowPartyMenuForItemUse;
     Task_FadeAndCloseBagMenu(taskId);
+}
+
+void ItemUseOutOfBattle_TuningFork(u8 taskId)
+{
+    sItemUseOnFieldCB = Task_UseTuningFork;
+    SetUpItemUseOnFieldCallback(taskId);
+}
+
+static void Task_UseTuningFork(u8 taskId)
+{
+    ScriptContext_SetupScript(EventScript_TuningFork);
+    DestroyTask(taskId);
 }

@@ -69,7 +69,10 @@ script EventScript_MusicUnlocked {
 
 script EventScript_TuningFork {
 	msgbox ("Change music?")
-	dynmultichoice(0, 6, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, "Wild Battle Music", "Trainer Battle Music", "Debug: Set All")
+	dynmultipush("Wild Battle Music", 0)
+	dynmultipush("Trainer Battle Music", 1)
+#	dynmultipush("Debug: Set All", 2)
+	dynmultistack(0, 6, FALSE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
 
 	if (var(VAR_RESULT) == 2)
 	{
@@ -88,6 +91,7 @@ script EventScript_TuningFork {
 		goto (EventScript_TuningFork_ChooseType)
 	}
 	closemessage
+	release
 }
 
 
@@ -131,6 +135,7 @@ script EventScript_TuningFork_ChooseType {
 		msgbox ("Music reset!")
 		goto (EventScript_TuningFork) // reset to beginning
 	}
+	release
 }
 
 
@@ -508,6 +513,7 @@ script EventScript_TuningFork_SetMusic {
 	}
 	msgbox ("Music set!")
 	closemessage
+	release
 }
 
 text TextChooseSong {

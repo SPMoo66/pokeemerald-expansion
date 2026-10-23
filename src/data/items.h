@@ -16337,6 +16337,23 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_DragonFang,
         .iconPalette = gItemIconPalette_BurntFang,
     },
+
+    [ITEM_TUNING_FORK] =
+    {
+        .name = ITEM_NAME("Tuning Fork"),
+        .description = COMPOUND_STRING(
+            "Recalls previously\n"
+            "experienced music\n"
+            "for battles."),
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_TuningFork,
+        .flingPower = 40,
+        .iconPic = gItemIcon_TuningFork,
+        .iconPalette = gItemIconPalette_TuningFork,
+    },
 };
 
 #undef ITEM_NAME

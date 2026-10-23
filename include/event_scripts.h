@@ -589,8 +589,10 @@ extern const u8 RustboroCity_Gym_EventScript_RegisterRoxanne[];
 extern const u8 MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall[];
 extern const u8 SSTidalCorridor_EventScript_ReachedStepCount[];
 extern const u8 EventScript_FallDownHoleMtPyre[];
+
 extern const u8 EventScript_JaksonExpansion1Call[];
 extern const u8 EventScript_EndEndlessFarOffSea[];
+extern const u8 EventScript_TuningFork[];
 
 // Secret Base
 extern const u8 SecretBase_EventScript_PC[];

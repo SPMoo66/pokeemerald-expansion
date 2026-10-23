@@ -329,7 +329,9 @@ script Jakson_Exp1_Town09 {
 		goto (Town09_MiniScene)
 	}
 	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		faceplayer
 		call (EventScript_JaksonGivesTuningFork)
+		applymovement (TOWN09_JAKSON, Common_Movement_FaceOriginalDirection)
 	}
 	else {
 		speakername (CommonText_Jakson)

@@ -1340,9 +1340,9 @@ Trigger_JaksonGivesTuningFork::
 # 806 "data/emeralbody_rivals/rival_scripts.pory"
 	goto_if_unset FLAG_RECEIVED_TUNING_FORK, Trigger_JaksonGivesTuningFork_2
 Trigger_JaksonGivesTuningFork_1:
-# 829 "data/emeralbody_rivals/rival_scripts.pory"
-	setvar VAR_TEMP_0, 1
 # 830 "data/emeralbody_rivals/rival_scripts.pory"
+	setvar VAR_TEMP_0, 1
+# 831 "data/emeralbody_rivals/rival_scripts.pory"
 	release
 	return
 
@@ -1380,6 +1380,8 @@ Trigger_JaksonGivesTuningFork_6:
 	applymovement JAKSON_MAUVILLE, Common_Movement_WalkUp5
 # 826 "data/emeralbody_rivals/rival_scripts.pory"
 	waitmovement 0
+# 827 "data/emeralbody_rivals/rival_scripts.pory"
+	removeobject JAKSON_MAUVILLE
 	goto Trigger_JaksonGivesTuningFork_1
 
 Trigger_JaksonGivesTuningFork_8:
@@ -1404,76 +1406,78 @@ Trigger_JaksonGivesTuningFork_11:
 
 
 EventScript_JaksonGivesTuningFork::
-# 834 "data/emeralbody_rivals/rival_scripts.pory"
-	speakername CommonText_Jakson
 # 835 "data/emeralbody_rivals/rival_scripts.pory"
-	msgbox EventScript_JaksonGivesTuningFork_Text_0
-# 843 "data/emeralbody_rivals/rival_scripts.pory"
-	giveitem ITEM_TUNING_FORK
-# 844 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 845 "data/emeralbody_rivals/rival_scripts.pory"
-	msgbox EventScript_JaksonGivesTuningFork_Text_1
-# 853 "data/emeralbody_rivals/rival_scripts.pory"
+# 836 "data/emeralbody_rivals/rival_scripts.pory"
+	msgbox EventScript_JaksonGivesTuningFork_Text_0
+# 844 "data/emeralbody_rivals/rival_scripts.pory"
 	closemessage
-# 854 "data/emeralbody_rivals/rival_scripts.pory"
-	call EventScript_TuningForkRetroactiveUpdates
+# 845 "data/emeralbody_rivals/rival_scripts.pory"
+	giveitem ITEM_TUNING_FORK
+# 846 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 847 "data/emeralbody_rivals/rival_scripts.pory"
+	msgbox EventScript_JaksonGivesTuningFork_Text_1
 # 855 "data/emeralbody_rivals/rival_scripts.pory"
+	closemessage
+# 856 "data/emeralbody_rivals/rival_scripts.pory"
+	call EventScript_TuningForkRetroactiveUpdates
+# 857 "data/emeralbody_rivals/rival_scripts.pory"
 	setflag FLAG_RECEIVED_TUNING_FORK
 	return
 
 
 EventScript_TuningForkRetroactiveUpdates::
-# 859 "data/emeralbody_rivals/rival_scripts.pory"
+# 861 "data/emeralbody_rivals/rival_scripts.pory"
 	goto_if_set FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, EventScript_TuningForkRetroactiveUpdates_2
 EventScript_TuningForkRetroactiveUpdates_1:
-# 862 "data/emeralbody_rivals/rival_scripts.pory"
+# 864 "data/emeralbody_rivals/rival_scripts.pory"
 	goto_if_set FLAG_SYS_GAME_CLEAR, EventScript_TuningForkRetroactiveUpdates_5
 EventScript_TuningForkRetroactiveUpdates_4:
-# 865 "data/emeralbody_rivals/rival_scripts.pory"
+# 867 "data/emeralbody_rivals/rival_scripts.pory"
 	compare VAR_SKY_PILLAR_STATE, 2
 	goto_if_ge EventScript_TuningForkRetroactiveUpdates_8
 EventScript_TuningForkRetroactiveUpdates_7:
-# 868 "data/emeralbody_rivals/rival_scripts.pory"
+# 870 "data/emeralbody_rivals/rival_scripts.pory"
 	compare VAR_EMERALBODY_RIVAL_STATE, 21
 	goto_if_ge EventScript_TuningForkRetroactiveUpdates_11
 EventScript_TuningForkRetroactiveUpdates_10:
-# 871 "data/emeralbody_rivals/rival_scripts.pory"
-	compare VAR_EMERALBODY_RIVAL_STATE, 55
+# 873 "data/emeralbody_rivals/rival_scripts.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 51
 	goto_if_ge EventScript_TuningForkRetroactiveUpdates_14
 EventScript_TuningForkRetroactiveUpdates_13:
-# 874 "data/emeralbody_rivals/rival_scripts.pory"
+# 876 "data/emeralbody_rivals/rival_scripts.pory"
 	checktrainerflag TRAINER_WILD_POKEMON_IG_1
 	goto_if 1, EventScript_TuningForkRetroactiveUpdates_16
 	return
 
 EventScript_TuningForkRetroactiveUpdates_2:
-# 860 "data/emeralbody_rivals/rival_scripts.pory"
+# 862 "data/emeralbody_rivals/rival_scripts.pory"
 	checkifmusicunlocked 0, 1
 	goto EventScript_TuningForkRetroactiveUpdates_1
 
 EventScript_TuningForkRetroactiveUpdates_5:
-# 863 "data/emeralbody_rivals/rival_scripts.pory"
+# 865 "data/emeralbody_rivals/rival_scripts.pory"
 	checkifmusicunlocked 1, 1
 	goto EventScript_TuningForkRetroactiveUpdates_4
 
 EventScript_TuningForkRetroactiveUpdates_8:
-# 866 "data/emeralbody_rivals/rival_scripts.pory"
+# 868 "data/emeralbody_rivals/rival_scripts.pory"
 	checkifmusicunlocked 2, 1
 	goto EventScript_TuningForkRetroactiveUpdates_7
 
 EventScript_TuningForkRetroactiveUpdates_11:
-# 869 "data/emeralbody_rivals/rival_scripts.pory"
+# 871 "data/emeralbody_rivals/rival_scripts.pory"
 	checkifmusicunlocked 3, 1
 	goto EventScript_TuningForkRetroactiveUpdates_10
 
 EventScript_TuningForkRetroactiveUpdates_14:
-# 872 "data/emeralbody_rivals/rival_scripts.pory"
+# 874 "data/emeralbody_rivals/rival_scripts.pory"
 	checkifmusicunlocked 4, 1
 	goto EventScript_TuningForkRetroactiveUpdates_13
 
 EventScript_TuningForkRetroactiveUpdates_16:
-# 875 "data/emeralbody_rivals/rival_scripts.pory"
+# 877 "data/emeralbody_rivals/rival_scripts.pory"
 	checkifmusicunlocked 6, 1
 	return
 
@@ -1488,7 +1492,7 @@ Rival_Scene03_Text_0:
 	.string "friends.$"
 
 EventScript_JaksonGivesTuningFork_Text_0:
-# 835 "data/emeralbody_rivals/rival_scripts.pory"
+# 836 "data/emeralbody_rivals/rival_scripts.pory"
 	.string "Oh, hey, {PLAYER}.\n"
 	.string "I was just looking for you.\p"
 	.string "I just finished developing a new item.\n"
@@ -1499,7 +1503,7 @@ EventScript_JaksonGivesTuningFork_Text_0:
 	.string "like to hear in battle more directly.$"
 
 EventScript_JaksonGivesTuningFork_Text_1:
-# 845 "data/emeralbody_rivals/rival_scripts.pory"
+# 847 "data/emeralbody_rivals/rival_scripts.pory"
 	.string "It's a key item, so just use it from your\n"
 	.string "bag and follow the menu that comes up.\p"
 	.string "Oh! And more music will unlock as you\n"

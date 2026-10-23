@@ -824,6 +824,7 @@ script Trigger_JaksonGivesTuningFork {
 			call (EventScript_JaksonGivesTuningFork)
 			applymovement (JAKSON_MAUVILLE, Common_Movement_WalkUp5)
 			waitmovement (0)
+			removeobject (JAKSON_MAUVILLE)
 		}
 	}
 	setvar (VAR_TEMP_0, 1)
@@ -840,6 +841,7 @@ script EventScript_JaksonGivesTuningFork {
 			"list.\p"
 			"This'll let you pick the music that you'd\n"
 			"like to hear in battle more directly.")
+	closemessage
 	giveitem (ITEM_TUNING_FORK)
 	speakername (CommonText_Jakson)
 	msgbox ("It's a key item, so just use it from your\n"
@@ -868,7 +870,7 @@ script EventScript_TuningForkRetroactiveUpdates {
 	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 21) {
 		checkifmusicunlocked (3, 1)
 	}
-	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 55) {
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 51) {
 		checkifmusicunlocked (4, 1)
 	}
 	if (defeated(TRAINER_WILD_POKEMON_IG_1)) {

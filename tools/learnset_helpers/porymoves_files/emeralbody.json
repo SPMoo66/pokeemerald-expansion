@@ -21,7 +21,9 @@
     "TMMoves": [
 	],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_WOOD_HAMMER"
+	]
   },
   "CHARMANDER": {
     "LevelMoves": [],
@@ -92,7 +94,9 @@
         "MOVE_AURA_SPHERE"
 	],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_CONFUSE_RAY"
+	]
   },
   "BEEDRILL": {
     "LevelMoves": [],
@@ -518,21 +522,27 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_DIAMOND_STORM"
+	]
   },
   "PERSIAN_ALOLA": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_DIAMOND_STORM"
+	]
   },
   "PERRSERKER": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_DIAMOND_STORM"
+	]
   },
   "PSYDUCK": {
     "LevelMoves": [],
@@ -549,7 +559,8 @@
 	],
     "EggMoves": [],
     "TutorMoves": [
-		"MOVE_TAIL_GLOW"
+		"MOVE_TAIL_GLOW",
+		"MOVE_DIAMOND_STORM"
 	]
   },
   "MANKEY": {
@@ -1395,7 +1406,9 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_BEHEMOTH_BASH"
+	]
   },
   "ARTICUNO": {
     "LevelMoves": [],
@@ -1557,7 +1570,8 @@
 	],
     "EggMoves": [],
     "TutorMoves": [
-		"MOVE_SACRED_FIRE"
+		"MOVE_SACRED_FIRE",
+		"MOVE_FIERY_WRATH"
 	]
   },
   "TOTODILE": {
@@ -1874,7 +1888,8 @@
 	],
     "EggMoves": [],
     "TutorMoves": [
-        "MOVE_PSYCHO_BOOST"
+        "MOVE_PSYCHO_BOOST",
+		"MOVE_DIAMOND_STORM"
 	]
   },
   "UMBREON": {
@@ -2025,7 +2040,9 @@
         "MOVE_AURA_SPHERE"
 	],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_BEHEMOTH_BLADE"
+	]
   },
   "SNEASEL": {
     "LevelMoves": [],
@@ -2530,7 +2547,9 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-        "MOVE_BLEAKWIND_STORM"
+        "MOVE_BLEAKWIND_STORM",
+		"MOVE_FIERY_WRATH",
+		"MOVE_AEROBLAST"
     ]
   },
   "TAILLOW": {
@@ -2940,7 +2959,8 @@
 	],
     "EggMoves": [],
     "TutorMoves": [
-        "MOVE_PSYCHO_BOOST"
+        "MOVE_PSYCHO_BOOST",
+		"MOVE_DIAMOND_STORM"
 	]
   },
   "SPINDA": {
@@ -3215,7 +3235,8 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-        "MOVE_SHADOW_FORCE"
+        "MOVE_SHADOW_FORCE",
+		"MOVE_FIERY_WRATH"
 	]
   },
   "WYNAUT": {
@@ -3370,7 +3391,9 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_BEHEMOTH_BASH"
+	]
   },
   "LATIAS": {
     "LevelMoves": [],
@@ -3416,7 +3439,9 @@
         "MOVE_AURA_SPHERE"
 	],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_DIAMOND_STORM"
+	]
   },
   "DEOXYS_NORMAL": {
     "LevelMoves": [],
@@ -3430,14 +3455,18 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_BEHEMOTH_BLADE"
+	]
   },
   "DEOXYS_DEFENSE": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_BEHEMOTH_BASH"
+	]
   },
   "DEOXYS_SPEED": {
     "LevelMoves": [],
@@ -3816,7 +3845,8 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-        "MOVE_SHADOW_FORCE"
+        "MOVE_SHADOW_FORCE",
+		"MOVE_DIAMOND_STORM"
     ]
   },
   "HONCHKROW": {
@@ -3877,7 +3907,8 @@
 	],
     "EggMoves": [],
     "TutorMoves": [
-        "MOVE_DOOM_DESIRE"
+        "MOVE_DOOM_DESIRE",
+		"MOVE_BEHEMOTH_BASH"
 	]
   },
   "BONSLY": {
@@ -4283,28 +4314,36 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_DIAMOND_STORM"
+	]
   },
   "MESPRIT": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_DIAMOND_STORM"
+	]
   },
   "AZELF": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_DIAMOND_STORM"
+	]
   },
   "DIALGA": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_DIAMOND_STORM"
+	]
   },
   "PALKIA": {
     "LevelMoves": [],
@@ -4370,7 +4409,8 @@
     "EggMoves": [],
     "TutorMoves": [
         "MOVE_ROAR_OF_TIME",
-        "MOVE_SHADOW_FORCE"
+        "MOVE_SHADOW_FORCE",
+		"MOVE_FIERY_WRATH"
     ]
   },
   "SHAYMIN_LAND": {
@@ -4459,7 +4499,8 @@
 	],
     "EggMoves": [],
     "TutorMoves": [
-        "MOVE_STEAM_ERUPTION"
+        "MOVE_STEAM_ERUPTION",
+		"MOVE_BEHEMOTH_BASH"
 	]
   },
   "OSHAWOTT": {
@@ -4824,7 +4865,9 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_BEHEMOTH_BLADE"
+	]
   },
   "COTTONEE": {
     "LevelMoves": [],
@@ -4937,7 +4980,9 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_FIERY_WRATH"
+	]
   },
   "DARMANITAN_GALAR": {
     "LevelMoves": [],
@@ -5649,7 +5694,9 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_BEHEMOTH_BLADE"
+	]
   },
   "TERRAKION": {
     "LevelMoves": [],
@@ -5657,7 +5704,8 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-        "MOVE_ROCK_WRECKER"
+        "MOVE_ROCK_WRECKER",
+		"MOVE_BEHEMOTH_BLADE"
     ]
   },
   "VIRIZION": {
@@ -5665,7 +5713,9 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+		"MOVE_BEHEMOTH_BLADE"
+	]
   },
   "TORNADUS": {
     "LevelMoves": [],
@@ -7067,7 +7117,8 @@
 	],
     "EggMoves": [],
     "TutorMoves": [
-        "MOVE_SHADOW_FORCE"
+        "MOVE_SHADOW_FORCE",
+		"MOVE_FIERY_WRATH"
 	]
   },
   "FARIGIRAF": {
@@ -11432,7 +11483,8 @@
         "MOVE_LASH_OUT",
         "MOVE_STEEL_BEAM",
         "MOVE_BEHEMOTH_BASH",
-        "MOVE_SPIKES"
+        "MOVE_SPIKES",
+		"MOVE_DIAMOND_STORM"
     ]
   },
   "GRIMER_EXP1": {
@@ -11980,7 +12032,8 @@
         "MOVE_SANDSEAR_STORM",
         "MOVE_SACRED_FIRE",
         "MOVE_SPIKES",
-        "MOVE_TOXIC_SPIKES"
+        "MOVE_TOXIC_SPIKES",
+		"MOVE_FIERY_WRATH"
     ]
   },
   "ROSERADE_EXP1": {
@@ -12031,7 +12084,8 @@
         "MOVE_SANDSEAR_STORM",
         "MOVE_SACRED_FIRE",
         "MOVE_SPIKES",
-        "MOVE_TOXIC_SPIKES"
+        "MOVE_TOXIC_SPIKES",
+		"MOVE_FIERY_WRATH"
     ]
   },
   "SWABLU_EXP1": {

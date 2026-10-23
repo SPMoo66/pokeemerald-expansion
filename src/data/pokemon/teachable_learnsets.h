@@ -29452,6 +29452,7 @@ static const u16 sSamurottTeachableLearnset[] = {
     MOVE_WATERFALL,
     MOVE_WATER_PULSE,
     MOVE_X_SCISSOR,
+    MOVE_BEHEMOTH_BLADE,
     MOVE_BODY_SLAM,
     MOVE_HYDRO_CANNON,
     MOVE_ICY_WIND,

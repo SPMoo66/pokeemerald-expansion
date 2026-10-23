@@ -773,482 +773,708 @@ Redd_Town06::
 
 Jakson_Town06::
 # 426 "data/emeralbody_rivals/rival_scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TUNING_FORK, Jakson_Town06_1
+# 430 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 427 "data/emeralbody_rivals/rival_scripts.pory"
+# 431 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town06_JaksonText, MSGBOX_NPC
+	return
+
+Jakson_Town06_1:
+# 427 "data/emeralbody_rivals/rival_scripts.pory"
+	call EventScript_JaksonGivesTuningFork
 	return
 
 
 Baron_Town06::
-# 431 "data/emeralbody_rivals/rival_scripts.pory"
+# 436 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Baron
-# 432 "data/emeralbody_rivals/rival_scripts.pory"
+# 437 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town06_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town07::
-# 438 "data/emeralbody_rivals/rival_scripts.pory"
+# 443 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Sakura
-# 439 "data/emeralbody_rivals/rival_scripts.pory"
+# 444 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town07_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town07::
-# 443 "data/emeralbody_rivals/rival_scripts.pory"
+# 448 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Harper
-# 444 "data/emeralbody_rivals/rival_scripts.pory"
+# 449 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town07_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town07::
-# 448 "data/emeralbody_rivals/rival_scripts.pory"
+# 453 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Redd
-# 449 "data/emeralbody_rivals/rival_scripts.pory"
+# 454 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town07_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town07::
-# 453 "data/emeralbody_rivals/rival_scripts.pory"
+# 458 "data/emeralbody_rivals/rival_scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TUNING_FORK, Jakson_Town07_1
+# 462 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 454 "data/emeralbody_rivals/rival_scripts.pory"
+# 463 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town07_JaksonText, MSGBOX_NPC
+	return
+
+Jakson_Town07_1:
+# 459 "data/emeralbody_rivals/rival_scripts.pory"
+	call EventScript_JaksonGivesTuningFork
 	return
 
 
 Baron_Town07::
-# 458 "data/emeralbody_rivals/rival_scripts.pory"
+# 468 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Baron
-# 459 "data/emeralbody_rivals/rival_scripts.pory"
+# 469 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town07_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town08::
-# 465 "data/emeralbody_rivals/rival_scripts.pory"
+# 475 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Sakura
-# 466 "data/emeralbody_rivals/rival_scripts.pory"
+# 476 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town08_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town08::
-# 470 "data/emeralbody_rivals/rival_scripts.pory"
+# 480 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Harper
-# 471 "data/emeralbody_rivals/rival_scripts.pory"
+# 481 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town08_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town08::
-# 475 "data/emeralbody_rivals/rival_scripts.pory"
+# 485 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Redd
-# 476 "data/emeralbody_rivals/rival_scripts.pory"
+# 486 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town08_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town08::
-# 480 "data/emeralbody_rivals/rival_scripts.pory"
+# 490 "data/emeralbody_rivals/rival_scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TUNING_FORK, Jakson_Town08_1
+# 494 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 481 "data/emeralbody_rivals/rival_scripts.pory"
+# 495 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town08_JaksonText, MSGBOX_NPC
+	return
+
+Jakson_Town08_1:
+# 491 "data/emeralbody_rivals/rival_scripts.pory"
+	call EventScript_JaksonGivesTuningFork
 	return
 
 
 Baron_Town08::
-# 485 "data/emeralbody_rivals/rival_scripts.pory"
+# 500 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Baron
-# 486 "data/emeralbody_rivals/rival_scripts.pory"
+# 501 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town08_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town09::
-# 492 "data/emeralbody_rivals/rival_scripts.pory"
+# 507 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Sakura
-# 493 "data/emeralbody_rivals/rival_scripts.pory"
+# 508 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town09_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town09::
-# 497 "data/emeralbody_rivals/rival_scripts.pory"
+# 512 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Harper
-# 498 "data/emeralbody_rivals/rival_scripts.pory"
+# 513 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town09_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town09::
-# 502 "data/emeralbody_rivals/rival_scripts.pory"
+# 517 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Redd
-# 503 "data/emeralbody_rivals/rival_scripts.pory"
+# 518 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town09_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town09::
-# 507 "data/emeralbody_rivals/rival_scripts.pory"
+# 522 "data/emeralbody_rivals/rival_scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TUNING_FORK, Jakson_Town09_1
+# 526 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 508 "data/emeralbody_rivals/rival_scripts.pory"
+# 527 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town09_JaksonText, MSGBOX_NPC
+	return
+
+Jakson_Town09_1:
+# 523 "data/emeralbody_rivals/rival_scripts.pory"
+	call EventScript_JaksonGivesTuningFork
 	return
 
 
 Baron_Town09::
-# 512 "data/emeralbody_rivals/rival_scripts.pory"
+# 532 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Baron
-# 513 "data/emeralbody_rivals/rival_scripts.pory"
+# 533 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town09_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town10::
-# 519 "data/emeralbody_rivals/rival_scripts.pory"
+# 539 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Sakura
-# 520 "data/emeralbody_rivals/rival_scripts.pory"
+# 540 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town10_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town10::
-# 524 "data/emeralbody_rivals/rival_scripts.pory"
+# 544 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Harper
-# 525 "data/emeralbody_rivals/rival_scripts.pory"
+# 545 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town10_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town10::
-# 529 "data/emeralbody_rivals/rival_scripts.pory"
+# 549 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Redd
-# 530 "data/emeralbody_rivals/rival_scripts.pory"
+# 550 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town10_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town10::
-# 534 "data/emeralbody_rivals/rival_scripts.pory"
+# 554 "data/emeralbody_rivals/rival_scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TUNING_FORK, Jakson_Town10_1
+# 558 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 535 "data/emeralbody_rivals/rival_scripts.pory"
+# 559 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town10_JaksonText, MSGBOX_NPC
+	return
+
+Jakson_Town10_1:
+# 555 "data/emeralbody_rivals/rival_scripts.pory"
+	call EventScript_JaksonGivesTuningFork
 	return
 
 
 Baron_Town10::
-# 539 "data/emeralbody_rivals/rival_scripts.pory"
+# 564 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Baron
-# 540 "data/emeralbody_rivals/rival_scripts.pory"
+# 565 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town10_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town11::
-# 546 "data/emeralbody_rivals/rival_scripts.pory"
+# 571 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Sakura
-# 547 "data/emeralbody_rivals/rival_scripts.pory"
+# 572 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town11_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town11::
-# 551 "data/emeralbody_rivals/rival_scripts.pory"
+# 576 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Harper
-# 552 "data/emeralbody_rivals/rival_scripts.pory"
+# 577 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town11_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town11::
-# 556 "data/emeralbody_rivals/rival_scripts.pory"
+# 581 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Redd
-# 557 "data/emeralbody_rivals/rival_scripts.pory"
+# 582 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town11_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town11::
-# 561 "data/emeralbody_rivals/rival_scripts.pory"
+# 586 "data/emeralbody_rivals/rival_scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TUNING_FORK, Jakson_Town11_1
+# 590 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 562 "data/emeralbody_rivals/rival_scripts.pory"
+# 591 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town11_JaksonText, MSGBOX_NPC
+	return
+
+Jakson_Town11_1:
+# 587 "data/emeralbody_rivals/rival_scripts.pory"
+	call EventScript_JaksonGivesTuningFork
 	return
 
 
 Baron_Town11::
-# 566 "data/emeralbody_rivals/rival_scripts.pory"
+# 596 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Baron
-# 567 "data/emeralbody_rivals/rival_scripts.pory"
+# 597 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town11_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town12::
-# 573 "data/emeralbody_rivals/rival_scripts.pory"
+# 603 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Sakura
-# 574 "data/emeralbody_rivals/rival_scripts.pory"
+# 604 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town12_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town12::
-# 578 "data/emeralbody_rivals/rival_scripts.pory"
+# 608 "data/emeralbody_rivals/rival_scripts.pory"
 	lock
-# 579 "data/emeralbody_rivals/rival_scripts.pory"
+# 609 "data/emeralbody_rivals/rival_scripts.pory"
 	faceplayer
-# 580 "data/emeralbody_rivals/rival_scripts.pory"
+# 610 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Harper
-# 581 "data/emeralbody_rivals/rival_scripts.pory"
+# 611 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town12_HarperTextQ, MSGBOX_YESNO
-# 582 "data/emeralbody_rivals/rival_scripts.pory"
+# 612 "data/emeralbody_rivals/rival_scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Harper_Town12_2
-# 586 "data/emeralbody_rivals/rival_scripts.pory"
+# 616 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town12_HarperTextNo, MSGBOX_NPC
 Harper_Town12_1:
-# 588 "data/emeralbody_rivals/rival_scripts.pory"
+# 618 "data/emeralbody_rivals/rival_scripts.pory"
 	release
 	return
 
 Harper_Town12_2:
-# 583 "data/emeralbody_rivals/rival_scripts.pory"
+# 613 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town12_HarperTextYes, MSGBOX_NPC
 	goto Harper_Town12_1
 
 
 Redd_Town12::
-# 592 "data/emeralbody_rivals/rival_scripts.pory"
+# 622 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Redd
-# 593 "data/emeralbody_rivals/rival_scripts.pory"
+# 623 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town12_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town12::
-# 597 "data/emeralbody_rivals/rival_scripts.pory"
+# 627 "data/emeralbody_rivals/rival_scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TUNING_FORK, Jakson_Town12_1
+# 631 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 598 "data/emeralbody_rivals/rival_scripts.pory"
+# 632 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town12_JaksonText, MSGBOX_NPC
+	return
+
+Jakson_Town12_1:
+# 628 "data/emeralbody_rivals/rival_scripts.pory"
+	call EventScript_JaksonGivesTuningFork
 	return
 
 
 Baron_Town12::
-# 602 "data/emeralbody_rivals/rival_scripts.pory"
+# 637 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Baron
-# 603 "data/emeralbody_rivals/rival_scripts.pory"
+# 638 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town12_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town13::
-# 609 "data/emeralbody_rivals/rival_scripts.pory"
+# 644 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Sakura
-# 610 "data/emeralbody_rivals/rival_scripts.pory"
+# 645 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town13_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town13::
-# 614 "data/emeralbody_rivals/rival_scripts.pory"
+# 649 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Harper
-# 615 "data/emeralbody_rivals/rival_scripts.pory"
+# 650 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town13_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town13::
-# 619 "data/emeralbody_rivals/rival_scripts.pory"
+# 654 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Redd
-# 620 "data/emeralbody_rivals/rival_scripts.pory"
+# 655 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town13_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town13::
-# 624 "data/emeralbody_rivals/rival_scripts.pory"
+# 659 "data/emeralbody_rivals/rival_scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TUNING_FORK, Jakson_Town13_1
+# 663 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 625 "data/emeralbody_rivals/rival_scripts.pory"
+# 664 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town13_JaksonText, MSGBOX_NPC
-# 626 "data/emeralbody_rivals/rival_scripts.pory"
+# 665 "data/emeralbody_rivals/rival_scripts.pory"
 	closemessage
-# 627 "data/emeralbody_rivals/rival_scripts.pory"
+# 666 "data/emeralbody_rivals/rival_scripts.pory"
 	call Common_EventScript_OutOfCenterPartyHeal
-# 628 "data/emeralbody_rivals/rival_scripts.pory"
+# 667 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 629 "data/emeralbody_rivals/rival_scripts.pory"
+# 668 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town13_JaksonTextAfter, MSGBOX_NPC
+	return
+
+Jakson_Town13_1:
+# 660 "data/emeralbody_rivals/rival_scripts.pory"
+	call EventScript_JaksonGivesTuningFork
 	return
 
 
 Baron_Town13::
-# 633 "data/emeralbody_rivals/rival_scripts.pory"
+# 673 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Baron
-# 634 "data/emeralbody_rivals/rival_scripts.pory"
+# 674 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town13_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town14::
-# 640 "data/emeralbody_rivals/rival_scripts.pory"
+# 680 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Sakura
-# 641 "data/emeralbody_rivals/rival_scripts.pory"
+# 681 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town14_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town14::
-# 645 "data/emeralbody_rivals/rival_scripts.pory"
+# 685 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Harper
-# 646 "data/emeralbody_rivals/rival_scripts.pory"
+# 686 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town14_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town14::
-# 650 "data/emeralbody_rivals/rival_scripts.pory"
+# 690 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Redd
-# 651 "data/emeralbody_rivals/rival_scripts.pory"
+# 691 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town14_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town14::
-# 655 "data/emeralbody_rivals/rival_scripts.pory"
+# 695 "data/emeralbody_rivals/rival_scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TUNING_FORK, Jakson_Town14_1
+# 699 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 656 "data/emeralbody_rivals/rival_scripts.pory"
+# 700 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town14_JaksonText, MSGBOX_NPC
+	return
+
+Jakson_Town14_1:
+# 696 "data/emeralbody_rivals/rival_scripts.pory"
+	call EventScript_JaksonGivesTuningFork
 	return
 
 
 Baron_Town14::
-# 660 "data/emeralbody_rivals/rival_scripts.pory"
+# 705 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Baron
-# 661 "data/emeralbody_rivals/rival_scripts.pory"
+# 706 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town14_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town15::
-# 667 "data/emeralbody_rivals/rival_scripts.pory"
+# 712 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Sakura
-# 668 "data/emeralbody_rivals/rival_scripts.pory"
+# 713 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town15_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town15::
-# 672 "data/emeralbody_rivals/rival_scripts.pory"
+# 717 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Harper
-# 673 "data/emeralbody_rivals/rival_scripts.pory"
+# 718 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town15_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town15::
-# 677 "data/emeralbody_rivals/rival_scripts.pory"
+# 722 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Redd
-# 678 "data/emeralbody_rivals/rival_scripts.pory"
+# 723 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town15_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town15::
-# 682 "data/emeralbody_rivals/rival_scripts.pory"
+# 727 "data/emeralbody_rivals/rival_scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TUNING_FORK, Jakson_Town15_1
+# 731 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 683 "data/emeralbody_rivals/rival_scripts.pory"
+# 732 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town15_JaksonText, MSGBOX_NPC
+	return
+
+Jakson_Town15_1:
+# 728 "data/emeralbody_rivals/rival_scripts.pory"
+	call EventScript_JaksonGivesTuningFork
 	return
 
 
 Baron_Town15::
-# 687 "data/emeralbody_rivals/rival_scripts.pory"
+# 737 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Baron
-# 688 "data/emeralbody_rivals/rival_scripts.pory"
+# 738 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town15_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town16::
-# 694 "data/emeralbody_rivals/rival_scripts.pory"
+# 744 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Sakura
-# 695 "data/emeralbody_rivals/rival_scripts.pory"
+# 745 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town16_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town16::
-# 699 "data/emeralbody_rivals/rival_scripts.pory"
+# 749 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Harper
-# 700 "data/emeralbody_rivals/rival_scripts.pory"
+# 750 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town16_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town16::
-# 704 "data/emeralbody_rivals/rival_scripts.pory"
+# 754 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Redd
-# 705 "data/emeralbody_rivals/rival_scripts.pory"
+# 755 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town16_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town16::
-# 709 "data/emeralbody_rivals/rival_scripts.pory"
+# 759 "data/emeralbody_rivals/rival_scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TUNING_FORK, Jakson_Town16_1
+# 763 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 710 "data/emeralbody_rivals/rival_scripts.pory"
+# 764 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town16_JaksonText, MSGBOX_NPC
+	return
+
+Jakson_Town16_1:
+# 760 "data/emeralbody_rivals/rival_scripts.pory"
+	call EventScript_JaksonGivesTuningFork
 	return
 
 
 Baron_Town16::
-# 714 "data/emeralbody_rivals/rival_scripts.pory"
+# 769 "data/emeralbody_rivals/rival_scripts.pory"
 	call GetBaronsName
-# 715 "data/emeralbody_rivals/rival_scripts.pory"
+# 770 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town16_BaronText, MSGBOX_NPC
 	return
 
 
 Sakura_Town18::
-# 721 "data/emeralbody_rivals/rival_scripts.pory"
+# 776 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Sakura
-# 722 "data/emeralbody_rivals/rival_scripts.pory"
+# 777 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town18_SakuraText, MSGBOX_NPC
 	return
 
 
 Harper_Town18::
-# 726 "data/emeralbody_rivals/rival_scripts.pory"
+# 781 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Harper
-# 727 "data/emeralbody_rivals/rival_scripts.pory"
+# 782 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town18_HarperText, MSGBOX_NPC
 	return
 
 
 Redd_Town18::
-# 731 "data/emeralbody_rivals/rival_scripts.pory"
+# 786 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Redd
-# 732 "data/emeralbody_rivals/rival_scripts.pory"
+# 787 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town18_ReddText, MSGBOX_NPC
 	return
 
 
 Jakson_Town18::
-# 736 "data/emeralbody_rivals/rival_scripts.pory"
+# 791 "data/emeralbody_rivals/rival_scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TUNING_FORK, Jakson_Town18_1
+# 795 "data/emeralbody_rivals/rival_scripts.pory"
 	speakername CommonText_Jakson
-# 737 "data/emeralbody_rivals/rival_scripts.pory"
+# 796 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town18_JaksonText, MSGBOX_NPC
+	return
+
+Jakson_Town18_1:
+# 792 "data/emeralbody_rivals/rival_scripts.pory"
+	call EventScript_JaksonGivesTuningFork
 	return
 
 
 Baron_Town18::
-# 741 "data/emeralbody_rivals/rival_scripts.pory"
+# 801 "data/emeralbody_rivals/rival_scripts.pory"
 	call GetBaronsName
-# 742 "data/emeralbody_rivals/rival_scripts.pory"
+# 802 "data/emeralbody_rivals/rival_scripts.pory"
 	msgbox Town18_BaronText, MSGBOX_NPC
+	return
+
+
+Trigger_JaksonGivesTuningFork::
+# 806 "data/emeralbody_rivals/rival_scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TUNING_FORK, Trigger_JaksonGivesTuningFork_2
+Trigger_JaksonGivesTuningFork_1:
+# 829 "data/emeralbody_rivals/rival_scripts.pory"
+	setvar VAR_TEMP_0, 1
+# 830 "data/emeralbody_rivals/rival_scripts.pory"
+	release
+	return
+
+Trigger_JaksonGivesTuningFork_2:
+# 807 "data/emeralbody_rivals/rival_scripts.pory"
+	getobjectfacingdirection LOCALID_PLAYER, VAR_TEMP_1
+# 808 "data/emeralbody_rivals/rival_scripts.pory"
+	compare VAR_TEMP_1, DIR_NORTH
+	goto_if_eq Trigger_JaksonGivesTuningFork_4
+	goto Trigger_JaksonGivesTuningFork_1
+
+Trigger_JaksonGivesTuningFork_4:
+# 809 "data/emeralbody_rivals/rival_scripts.pory"
+	addobject JAKSON_MAUVILLE
+# 810 "data/emeralbody_rivals/rival_scripts.pory"
+	getplayerxy VAR_TEMP_1, VAR_TEMP_2
+# 811 "data/emeralbody_rivals/rival_scripts.pory"
+	switch VAR_TEMP_1
+# 812 "data/emeralbody_rivals/rival_scripts.pory"
+	case 26, Trigger_JaksonGivesTuningFork_8
+# 814 "data/emeralbody_rivals/rival_scripts.pory"
+	case 27, Trigger_JaksonGivesTuningFork_9
+# 816 "data/emeralbody_rivals/rival_scripts.pory"
+	case 29, Trigger_JaksonGivesTuningFork_10
+# 818 "data/emeralbody_rivals/rival_scripts.pory"
+	case 30, Trigger_JaksonGivesTuningFork_11
+Trigger_JaksonGivesTuningFork_6:
+# 822 "data/emeralbody_rivals/rival_scripts.pory"
+	applymovement JAKSON_MAUVILLE, Common_Movement_WalkDown5
+# 823 "data/emeralbody_rivals/rival_scripts.pory"
+	waitmovement 0
+# 824 "data/emeralbody_rivals/rival_scripts.pory"
+	call EventScript_JaksonGivesTuningFork
+# 825 "data/emeralbody_rivals/rival_scripts.pory"
+	applymovement JAKSON_MAUVILLE, Common_Movement_WalkUp5
+# 826 "data/emeralbody_rivals/rival_scripts.pory"
+	waitmovement 0
+	goto Trigger_JaksonGivesTuningFork_1
+
+Trigger_JaksonGivesTuningFork_8:
+# 813 "data/emeralbody_rivals/rival_scripts.pory"
+	setobjectxy JAKSON_MAUVILLE, 26, 8
+	goto Trigger_JaksonGivesTuningFork_6
+
+Trigger_JaksonGivesTuningFork_9:
+# 815 "data/emeralbody_rivals/rival_scripts.pory"
+	setobjectxy JAKSON_MAUVILLE, 27, 8
+	goto Trigger_JaksonGivesTuningFork_6
+
+Trigger_JaksonGivesTuningFork_10:
+# 817 "data/emeralbody_rivals/rival_scripts.pory"
+	setobjectxy JAKSON_MAUVILLE, 29, 8
+	goto Trigger_JaksonGivesTuningFork_6
+
+Trigger_JaksonGivesTuningFork_11:
+# 819 "data/emeralbody_rivals/rival_scripts.pory"
+	setobjectxy JAKSON_MAUVILLE, 30, 8
+	goto Trigger_JaksonGivesTuningFork_6
+
+
+EventScript_JaksonGivesTuningFork::
+# 834 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 835 "data/emeralbody_rivals/rival_scripts.pory"
+	msgbox EventScript_JaksonGivesTuningFork_Text_0
+# 843 "data/emeralbody_rivals/rival_scripts.pory"
+	giveitem ITEM_TUNING_FORK
+# 844 "data/emeralbody_rivals/rival_scripts.pory"
+	speakername CommonText_Jakson
+# 845 "data/emeralbody_rivals/rival_scripts.pory"
+	msgbox EventScript_JaksonGivesTuningFork_Text_1
+# 853 "data/emeralbody_rivals/rival_scripts.pory"
+	closemessage
+# 854 "data/emeralbody_rivals/rival_scripts.pory"
+	call EventScript_TuningForkRetroactiveUpdates
+# 855 "data/emeralbody_rivals/rival_scripts.pory"
+	setflag FLAG_RECEIVED_TUNING_FORK
+	return
+
+
+EventScript_TuningForkRetroactiveUpdates::
+# 859 "data/emeralbody_rivals/rival_scripts.pory"
+	goto_if_set FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, EventScript_TuningForkRetroactiveUpdates_2
+EventScript_TuningForkRetroactiveUpdates_1:
+# 862 "data/emeralbody_rivals/rival_scripts.pory"
+	goto_if_set FLAG_SYS_GAME_CLEAR, EventScript_TuningForkRetroactiveUpdates_5
+EventScript_TuningForkRetroactiveUpdates_4:
+# 865 "data/emeralbody_rivals/rival_scripts.pory"
+	compare VAR_SKY_PILLAR_STATE, 2
+	goto_if_ge EventScript_TuningForkRetroactiveUpdates_8
+EventScript_TuningForkRetroactiveUpdates_7:
+# 868 "data/emeralbody_rivals/rival_scripts.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 21
+	goto_if_ge EventScript_TuningForkRetroactiveUpdates_11
+EventScript_TuningForkRetroactiveUpdates_10:
+# 871 "data/emeralbody_rivals/rival_scripts.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 55
+	goto_if_ge EventScript_TuningForkRetroactiveUpdates_14
+EventScript_TuningForkRetroactiveUpdates_13:
+# 874 "data/emeralbody_rivals/rival_scripts.pory"
+	checktrainerflag TRAINER_WILD_POKEMON_IG_1
+	goto_if 1, EventScript_TuningForkRetroactiveUpdates_16
+	return
+
+EventScript_TuningForkRetroactiveUpdates_2:
+# 860 "data/emeralbody_rivals/rival_scripts.pory"
+	checkifmusicunlocked 0, 1
+	goto EventScript_TuningForkRetroactiveUpdates_1
+
+EventScript_TuningForkRetroactiveUpdates_5:
+# 863 "data/emeralbody_rivals/rival_scripts.pory"
+	checkifmusicunlocked 1, 1
+	goto EventScript_TuningForkRetroactiveUpdates_4
+
+EventScript_TuningForkRetroactiveUpdates_8:
+# 866 "data/emeralbody_rivals/rival_scripts.pory"
+	checkifmusicunlocked 2, 1
+	goto EventScript_TuningForkRetroactiveUpdates_7
+
+EventScript_TuningForkRetroactiveUpdates_11:
+# 869 "data/emeralbody_rivals/rival_scripts.pory"
+	checkifmusicunlocked 3, 1
+	goto EventScript_TuningForkRetroactiveUpdates_10
+
+EventScript_TuningForkRetroactiveUpdates_14:
+# 872 "data/emeralbody_rivals/rival_scripts.pory"
+	checkifmusicunlocked 4, 1
+	goto EventScript_TuningForkRetroactiveUpdates_13
+
+EventScript_TuningForkRetroactiveUpdates_16:
+# 875 "data/emeralbody_rivals/rival_scripts.pory"
+	checkifmusicunlocked 6, 1
 	return
 
 
@@ -1260,3 +1486,25 @@ Rival_Scene03_Text_0:
 # 322 "data/emeralbody_rivals/rival_scripts.pory"
 	.string "You exchanged PokéNav info with your\n"
 	.string "friends.$"
+
+EventScript_JaksonGivesTuningFork_Text_0:
+# 835 "data/emeralbody_rivals/rival_scripts.pory"
+	.string "Oh, hey, {PLAYER}.\n"
+	.string "I was just looking for you.\p"
+	.string "I just finished developing a new item.\n"
+	.string "I've handed it out to all of the others\l"
+	.string "already, so you were the last one on my\l"
+	.string "list.\p"
+	.string "This'll let you pick the music that you'd\n"
+	.string "like to hear in battle more directly.$"
+
+EventScript_JaksonGivesTuningFork_Text_1:
+# 845 "data/emeralbody_rivals/rival_scripts.pory"
+	.string "It's a key item, so just use it from your\n"
+	.string "bag and follow the menu that comes up.\p"
+	.string "Oh! And more music will unlock as you\n"
+	.string "play through the game.\p"
+	.string "Of course, you can just ignore it if you\n"
+	.string "like the default battle music.\p"
+	.string "I hope you all like it.\n"
+	.string "Take care, {PLAYER}!$"

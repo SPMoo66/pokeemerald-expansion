@@ -423,8 +423,13 @@ script Redd_Town06 {
 }
 
 script Jakson_Town06 {
-	speakername (CommonText_Jakson)
-	msgbox(Town06_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Town06_JaksonText, MSGBOX_NPC)
+	}
 }
 
 script Baron_Town06 {
@@ -450,8 +455,13 @@ script Redd_Town07 {
 }
 
 script Jakson_Town07 {
-	speakername (CommonText_Jakson)
-	msgbox(Town07_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Town07_JaksonText, MSGBOX_NPC)
+	}
 }
 
 script Baron_Town07 {
@@ -477,8 +487,13 @@ script Redd_Town08 {
 }
 
 script Jakson_Town08 {
-	speakername (CommonText_Jakson)
-	msgbox(Town08_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Town08_JaksonText, MSGBOX_NPC)
+	}
 }
 
 script Baron_Town08 {
@@ -504,8 +519,13 @@ script Redd_Town09 {
 }
 
 script Jakson_Town09 {
-	speakername (CommonText_Jakson)
-	msgbox(Town09_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Town09_JaksonText, MSGBOX_NPC)
+	}
 }
 
 script Baron_Town09 {
@@ -531,8 +551,13 @@ script Redd_Town10 {
 }
 
 script Jakson_Town10 {
-	speakername (CommonText_Jakson)
-	msgbox(Town10_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Town10_JaksonText, MSGBOX_NPC)
+	}
 }
 
 script Baron_Town10 {
@@ -558,8 +583,13 @@ script Redd_Town11 {
 }
 
 script Jakson_Town11 {
-	speakername (CommonText_Jakson)
-	msgbox(Town11_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Town11_JaksonText, MSGBOX_NPC)
+	}
 }
 
 script Baron_Town11 {
@@ -594,8 +624,13 @@ script Redd_Town12 {
 }
 
 script Jakson_Town12 {
-	speakername (CommonText_Jakson)
-	msgbox(Town12_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Town12_JaksonText, MSGBOX_NPC)
+	}
 }
 
 script Baron_Town12 {
@@ -621,12 +656,17 @@ script Redd_Town13 {
 }
 
 script Jakson_Town13 {
-	speakername (CommonText_Jakson)
-	msgbox(Town13_JaksonText, MSGBOX_NPC)
-	closemessage
-	call (Common_EventScript_OutOfCenterPartyHeal)
-	speakername (CommonText_Jakson)
-	msgbox(Town13_JaksonTextAfter, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Town13_JaksonText, MSGBOX_NPC)
+		closemessage
+		call (Common_EventScript_OutOfCenterPartyHeal)
+		speakername (CommonText_Jakson)
+		msgbox(Town13_JaksonTextAfter, MSGBOX_NPC)
+	}
 }
 
 script Baron_Town13 {
@@ -652,8 +692,13 @@ script Redd_Town14 {
 }
 
 script Jakson_Town14 {
-	speakername (CommonText_Jakson)
-	msgbox(Town14_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Town14_JaksonText, MSGBOX_NPC)
+	}
 }
 
 script Baron_Town14 {
@@ -679,8 +724,13 @@ script Redd_Town15 {
 }
 
 script Jakson_Town15 {
-	speakername (CommonText_Jakson)
-	msgbox(Town15_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Town15_JaksonText, MSGBOX_NPC)
+	}
 }
 
 script Baron_Town15 {
@@ -706,8 +756,13 @@ script Redd_Town16 {
 }
 
 script Jakson_Town16 {
-	speakername (CommonText_Jakson)
-	msgbox(Town16_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Town16_JaksonText, MSGBOX_NPC)
+	}
 }
 
 script Baron_Town16 {
@@ -733,11 +788,90 @@ script Redd_Town18 {
 }
 
 script Jakson_Town18 {
-	speakername (CommonText_Jakson)
-	msgbox(Town18_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Town18_JaksonText, MSGBOX_NPC)
+	}
 }
 
 script Baron_Town18 {
 	call (GetBaronsName)
 	msgbox(Town18_BaronText, MSGBOX_NPC)
+}
+
+script Trigger_JaksonGivesTuningFork {
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		getobjectfacingdirection (LOCALID_PLAYER, VAR_TEMP_1)
+		if (var(VAR_TEMP_1) == DIR_NORTH) {
+			addobject (JAKSON_MAUVILLE)
+			getplayerxy (VAR_TEMP_1, VAR_TEMP_2)
+			switch (var(VAR_TEMP_1)) {
+			case 26:
+				setobjectxy (JAKSON_MAUVILLE, 26, 8)
+			case 27:
+				setobjectxy (JAKSON_MAUVILLE, 27, 8)
+			case 29:
+				setobjectxy (JAKSON_MAUVILLE, 29, 8)
+			case 30:
+				setobjectxy (JAKSON_MAUVILLE, 30, 8)
+			default:
+			}
+			applymovement (JAKSON_MAUVILLE, Common_Movement_WalkDown5)
+			waitmovement (0)			
+			call (EventScript_JaksonGivesTuningFork)
+			applymovement (JAKSON_MAUVILLE, Common_Movement_WalkUp5)
+			waitmovement (0)
+		}
+	}
+	setvar (VAR_TEMP_0, 1)
+	release
+}
+
+script EventScript_JaksonGivesTuningFork {
+	speakername (CommonText_Jakson)
+	msgbox ("Oh, hey, {PLAYER}.\n"
+			"I was just looking for you.\p"
+			"I just finished developing a new item.\n"
+			"I've handed it out to all of the others\l"
+			"already, so you were the last one on my\l"
+			"list.\p"
+			"This'll let you pick the music that you'd\n"
+			"like to hear in battle more directly.")
+	giveitem (ITEM_TUNING_FORK)
+	speakername (CommonText_Jakson)
+	msgbox ("It's a key item, so just use it from your\n"
+			"bag and follow the menu that comes up.\p"
+			"Oh! And more music will unlock as you\n"
+			"play through the game.\p"
+			"Of course, you can just ignore it if you\n"
+			"like the default battle music.\p"
+			"I hope you all like it.\n"
+			"Take care, {PLAYER}!")
+	closemessage
+	call (EventScript_TuningForkRetroactiveUpdates)
+	setflag (FLAG_RECEIVED_TUNING_FORK)
+}
+
+script EventScript_TuningForkRetroactiveUpdates {
+	if (flag(FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY)) {
+		checkifmusicunlocked (0, 1)
+	}
+	if (flag(FLAG_SYS_GAME_CLEAR)) {
+		checkifmusicunlocked (1, 1)
+	}
+	if (var(VAR_SKY_PILLAR_STATE) >= 2) {
+		checkifmusicunlocked (2, 1)
+	}
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 21) {
+		checkifmusicunlocked (3, 1)
+	}
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 55) {
+		checkifmusicunlocked (4, 1)
+	}
+	if (defeated(TRAINER_WILD_POKEMON_IG_1)) {
+		checkifmusicunlocked (6, 1)
+	}
 }

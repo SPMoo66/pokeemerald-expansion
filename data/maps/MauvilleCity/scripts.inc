@@ -1,3 +1,5 @@
+.set JAKSON_MAUVILLE, 15
+
 MauvilleCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, MauvilleCity_OnTransition
 	.byte 0

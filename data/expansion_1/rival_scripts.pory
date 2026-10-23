@@ -75,14 +75,19 @@ script Baron_Exp1_Town01 {
 
 script Jakson_Exp1_Town01 {
 	faceplayer
-	speakername (CommonText_Jakson)
-	msgbox(Exp1_Town01_JaksonText, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == YES) {
-		msgbox(Exp1_Town01_JaksonTextAccept, MSGBOX_AUTOCLOSE)
-		goto (SlateportRegionMap_BoatSceneInit)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
 	}
 	else {
-		msgbox(Exp1_Town01_JaksonTextDecline, MSGBOX_AUTOCLOSE)
+		speakername (CommonText_Jakson)
+		msgbox(Exp1_Town01_JaksonText, MSGBOX_YESNO)
+		if (var(VAR_RESULT) == YES) {
+			msgbox(Exp1_Town01_JaksonTextAccept, MSGBOX_AUTOCLOSE)
+			goto (SlateportRegionMap_BoatSceneInit)
+		}
+		else {
+			msgbox(Exp1_Town01_JaksonTextDecline, MSGBOX_AUTOCLOSE)
+		}
 	}
 }
 
@@ -108,8 +113,13 @@ script Baron_Exp1_Town02 {
 }
 
 script Jakson_Exp1_Town02 {
-	speakername (CommonText_Jakson)
-	msgbox(Exp1_Town02_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Exp1_Town02_JaksonText, MSGBOX_NPC)
+	}
 }
 
 #Town03
@@ -129,8 +139,13 @@ script Baron_Exp1_Town03 {
 }
 
 script Jakson_Exp1_Town03 {
-	speakername (CommonText_Jakson)
-	msgbox(Exp1_Town03_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Exp1_Town03_JaksonText, MSGBOX_NPC)
+	}
 }
 
 #Town04
@@ -168,8 +183,13 @@ script Baron_Exp1_Town04 {
 }
 
 script Jakson_Exp1_Town04 {
-	speakername (CommonText_Jakson)
-	msgbox(Exp1_Town04_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Exp1_Town04_JaksonText, MSGBOX_NPC)
+	}
 }
 
 #Town05
@@ -189,12 +209,17 @@ script Baron_Exp1_Town05 {
 }
 
 script Jakson_Exp1_Town05 {
-	speakername (CommonText_Jakson)
-	if (!flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH)) {
-		msgbox(Exp1_Town05_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
 	}
 	else {
-		msgbox(Exp1_Town05b_JaksonText, MSGBOX_NPC)
+		speakername (CommonText_Jakson)
+		if (!flag(FLAG_EXP_1_BYGONE_VAULT_LEFT_SWITCH)) {
+			msgbox(Exp1_Town05_JaksonText, MSGBOX_NPC)
+		}
+		else {
+			msgbox(Exp1_Town05b_JaksonText, MSGBOX_NPC)
+		}
 	}
 	release
 }
@@ -226,8 +251,13 @@ script Baron_Exp1_Town06 {
 }
 
 script Jakson_Exp1_Town06 {
-	speakername (CommonText_Jakson)
-	msgbox(Exp1_Town06_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Exp1_Town06_JaksonText, MSGBOX_NPC)
+	}
 }
 
 #Town07
@@ -252,8 +282,13 @@ script Baron_Exp1_Town07 {
 }
 
 script Jakson_Exp1_Town07 {
-	speakername (CommonText_Jakson)
-	msgbox(Exp1_Town07_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Exp1_Town07_JaksonText, MSGBOX_NPC)
+	}
 }
 
 #Town09
@@ -293,8 +328,13 @@ script Jakson_Exp1_Town09 {
 	if (!flag(FLAG_TEMP_6)) {
 		goto (Town09_MiniScene)
 	}
-	speakername (CommonText_Jakson)
-	msgbox(Exp1_Town09_JaksonText, MSGBOX_NPC)
+	if (!flag(FLAG_RECEIVED_TUNING_FORK)) {
+		call (EventScript_JaksonGivesTuningFork)
+	}
+	else {
+		speakername (CommonText_Jakson)
+		msgbox(Exp1_Town09_JaksonText, MSGBOX_NPC)
+	}
 }
 
 const TOWN09_HARPER = 31

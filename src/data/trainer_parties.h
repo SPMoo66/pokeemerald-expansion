@@ -5002,7 +5002,7 @@ static const struct TrainerMon sParty_Juan1[] = {
     .lvl = 53,
     .species = SPECIES_ZOROARK_HISUI,
     .heldItem = ITEM_NORMAL_GEM,
-    .ability = ABILITY_DISGUISE,
+    .ability = ABILITY_ILLUSION,
     .moves = {MOVE_COMEUPPANCE, MOVE_BITTER_MALICE, MOVE_HYPER_BEAM, MOVE_HYPER_VOICE}
     },
     {
@@ -17316,7 +17316,7 @@ static const struct TrainerMon sParty_Jakson4[] = {
     .ball = POKEBALL_COUNT,
     .lvl = 55,
     .species = SPECIES_ZOROARK,
-    .ability = ABILITY_DISGUISE,
+    .ability = ABILITY_ILLUSION,
     .heldItem = ITEM_ASSAULT_VEST,
     .moves = {MOVE_GRASS_KNOT, MOVE_HYPER_VOICE, MOVE_FOUL_PLAY, MOVE_INFERNAL_PARADE}
     },
@@ -21364,7 +21364,111 @@ static const struct TrainerMon sParty_StevenExp1[] = {
     .moves = {MOVE_METEOR_MASH, MOVE_ZEN_HEADBUTT, MOVE_SHIFT_GEAR, MOVE_ICE_PUNCH}
     }
 };
-
+/*
+static const struct TrainerMon sParty_CynthiaExp1[] = {
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_BRAVIARY,
+    .ability = ABILITY_SHEER_FORCE,
+    .heldItem = ITEM_NORMAL_GEM,
+    .moves = {MOVE_BRAVE_BIRD, MOVE_CRUSH_CLAW, MOVE_TAILWIND, MOVE_CLOSE_COMBAT}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_EELEKTROSS,
+    .ability = ABILITY_LEVITATE,
+    .heldItem = ITEM_WRIST_WEIGHTS,
+    .moves = {MOVE_WILD_CHARGE, MOVE_KNOCK_OFF, MOVE_COIL, MOVE_DRAIN_PUNCH}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 83,
+    .species = SPECIES_SNEASLER,
+    .ability = ABILITY_POISON_TOUCH,
+    .heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_FAKE_OUT, MOVE_DIRE_CLAW, MOVE_SWORDS_DANCE}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 83,
+    .species = SPECIES_GHOLDENGO,
+    .ability = ABILITY_GOOD_AS_GOLD,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_MAKE_IT_RAIN, MOVE_NASTY_PLOT, MOVE_PROTECT, MOVE_SHADOW_BALL}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 84,
+    .species = SPECIES_MILOTIC,
+    .ability = ABILITY_COMPETITIVE,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_ICE_BEAM, MOVE_STEAM_ERUPTION, MOVE_HAZE, MOVE_RECOVER}
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 84,
+    .species = SPECIES_GARCHOMP,
+    .ability = ABILITY_SAND_VEIL,
+    .heldItem = ITEM_MEGA_STONE_Y,
+    .moves = {MOVE_DRACO_METEOR, MOVE_PROTECT, MOVE_POWER_GEM, MOVE_EARTH_POWER}
+    }
+};
+*/
+/*
+static const struct TrainerMon sParty_Unknown[] = {
+    {
+    .ball = BALL_STRANGE,
+    .lvl = 88,
+    .species = SPECIES_ZOROARK_HISUI,
+    .ability = ABILITY_ILLUSION,
+    .heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_HYPER_VOICE, MOVE_NASTY_PLOT, MOVE_U_TURN, MOVE_BITTER_MALICE}
+    },
+    {
+    .ball = BALL_STRANGE,
+    .lvl = 88,
+    .species = SPECIES_TITANEON,
+    .ability = ABILITY_TRIAGE,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_BODY_PRESS, MOVE_HEAL_ORDER, MOVE_HEAL_PULSE, MOVE_REVIVAL_BLESSING}
+    },
+    {
+    .ball = BALL_STRANGE,
+    .lvl = 88,
+    .species = SPECIES_CORPELLA,
+    .ability = ABILITY_REGENERATOR,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_FLEUR_CANNON, MOVE_SPIKY_SHIELD, MOVE_EARTH_POWER, MOVE_STEAM_ERUPTION}
+    },
+    {
+    .ball = BALL_STRANGE,
+    .lvl = 88,
+    .species = SPECIES_DELIJOY,
+    .ability = ABILITY_SOUL_HEART,
+    .heldItem = ITEM_ICE_GEM,
+    .moves = {MOVE_PROTECT, MOVE_DECORATE, MOVE_GLACIATE, MOVE_BLEAKWIND_STORM}
+    },
+    {
+    .ball = BALL_STRANGE,
+    .lvl = 88,
+    .species = SPECIES_OGERPON,
+    .ability = ABILITY_DEFIANT,
+    .teraType = TYPE_FIRE,
+    .heldItem = ITEM_HEARTHFLAME_MASK,
+    .moves = {MOVE_SWORDS_DANCE, MOVE_IVY_CUDGEL, MOVE_HORN_LEECH, MOVE_KNOCK_OFF}
+    },
+    {
+    .ball = BALL_STRANGE,
+    .lvl = 88,
+    .species = SPECIES_DUDUNSPARCE,
+    .ability = ABILITY_RUN_AWAY,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_HYPER_DRILL, MOVE_COIL, MOVE_DRAGON_RUSH, MOVE_ROOST}
+    }
+};
+*/
 /*
 
 static const struct TrainerMon sParty_[] = {

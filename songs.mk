@@ -2366,3 +2366,6 @@ $(MID_SUBDIR)/mus_md2_dialgas_fight_to_the_finish.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_xd_vs_cipher_peon.s: %.s: %.mid
 	$(MID) $< $@ -E -R0 -G276 -V076 -P2
+
+$(MID_SUBDIR)/mus_kh1_disappeared.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G276 -V076 -P2

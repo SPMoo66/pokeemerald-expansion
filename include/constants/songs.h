@@ -950,16 +950,17 @@
 #define HG_MUSIC_END                      MUS_HG_WIN_MINIGAME
 
 #define MUS_VICTORY_IS_RIGHT_BEFORE_YOUR_EYES 899 // Victory is Right Before Your Eyes (BW)
-#define MUS_BSB_EVERYBODY                 900 // Everybody (Backstreet Boys)
-#define MUS_BW_ABYSSAL_RUINS              901 // Abyssal Ruins (BW)
-#define MUS_BW_VS_TRAINER                 902 // Vs. Trainer (BW)
-#define MUS_BW_VS_WILD                    903 // Vs. Wild Pokémon (BW)
-#define MUS_B2W2_VS_GHETSIS               904 // Vs. Ghetsis (B2W2)
-#define MUS_FF4_FIGHT_2                   905 // Fight 2 (Final Fantasy IV)
-#define MUS_MD2_DIALGAS_FIGHT_TO_THE_FINISH 906 // Dialga's Fight to the Finish! (Pokémon Mystery Dungeon: Explorers of Darkness/Time)
-#define MUS_XD_VS_CIPHER_PEON             907 // Battle! (Cipher Peon) (Pokémon XD: Gale of Darkness)
+#define MUS_BSB_EVERYBODY                     900 // Everybody (Backstreet Boys)
+#define MUS_BW_ABYSSAL_RUINS                  901 // Abyssal Ruins (BW)
+#define MUS_BW_VS_TRAINER                     902 // Vs. Trainer (BW)
+#define MUS_BW_VS_WILD                        903 // Vs. Wild Pokémon (BW)
+#define MUS_B2W2_VS_GHETSIS                   904 // Vs. Ghetsis (B2W2)
+#define MUS_FF4_FIGHT_2                       905 // Fight 2 (Final Fantasy IV)
+#define MUS_MD2_DIALGAS_FIGHT_TO_THE_FINISH   906 // Dialga's Fight to the Finish! (Pokémon Mystery Dungeon: Explorers of Darkness/Time)
+#define MUS_XD_VS_CIPHER_PEON                 907 // Battle! (Cipher Peon) (Pokémon XD: Gale of Darkness)
+#define MUS_KH1_DISAPPEARED                   908 // Disappeared (KH1FM)
 
-#define SONGS_END                         MUS_XD_VS_CIPHER_PEON
+#define SONGS_END                         MUS_KH1_DISAPPEARED
 
 #define MUS_ROUTE118                      0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

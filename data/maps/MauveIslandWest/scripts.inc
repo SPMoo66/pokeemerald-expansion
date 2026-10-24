@@ -253,59 +253,89 @@ MauveIslandWest_EventScript_Unknown::
 # 121 "data/maps/MauveIslandWest/scripts.pory"
 	delay 10
 # 122 "data/maps/MauveIslandWest/scripts.pory"
-	speakername CommonText_Q
+	playbgm MUS_KH1_DISAPPEARED, FALSE
 # 123 "data/maps/MauveIslandWest/scripts.pory"
-	msgbox MauveIslandWest_EventScript_Unknown_Text_0
-# 124 "data/maps/MauveIslandWest/scripts.pory"
-	closemessage
-# 125 "data/maps/MauveIslandWest/scripts.pory"
-	delay 10
-# 126 "data/maps/MauveIslandWest/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_Talking
-# 127 "data/maps/MauveIslandWest/scripts.pory"
-	delay 60
-# 128 "data/maps/MauveIslandWest/scripts.pory"
 	speakername CommonText_Q
-# 129 "data/maps/MauveIslandWest/scripts.pory"
-	msgbox MauveIslandWest_EventScript_Unknown_Text_0
-# 130 "data/maps/MauveIslandWest/scripts.pory"
+# 124 "data/maps/MauveIslandWest/scripts.pory"
+	messageautoscroll MauveIslandWest_EventScript_Unknown_Text_0
+# 125 "data/maps/MauveIslandWest/scripts.pory"
+	waitmessage
+# 126 "data/maps/MauveIslandWest/scripts.pory"
 	closemessage
-# 131 "data/maps/MauveIslandWest/scripts.pory"
-	playbgm MUS_HG_VIRIDIAN_FOREST, FALSE
-# 132 "data/maps/MauveIslandWest/scripts.pory"
-	delay 20
-# 133 "data/maps/MauveIslandWest/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
-# 134 "data/maps/MauveIslandWest/scripts.pory"
-	playse SE_PIN
-# 135 "data/maps/MauveIslandWest/scripts.pory"
-	delay 40
-# 136 "data/maps/MauveIslandWest/scripts.pory"
-	setflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
-# 137 "data/maps/MauveIslandWest/scripts.pory"
-	setflag FLAG_SUPERBOSS_TRAINER
-# 138 "data/maps/MauveIslandWest/scripts.pory"
-	setflag FLAG_IGNORE_LEVEL_SYNC
-# 139 "data/maps/MauveIslandWest/scripts.pory"
-	trainerbattle_no_intro TRAINER_UNKNOWN, MauveIslandWest_EventScript_Unknown_Text_1
-# 140 "data/maps/MauveIslandWest/scripts.pory"
-	clearflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
-# 141 "data/maps/MauveIslandWest/scripts.pory"
-	clearflag FLAG_SUPERBOSS_TRAINER
-# 142 "data/maps/MauveIslandWest/scripts.pory"
-	clearflag FLAG_IGNORE_LEVEL_SYNC
-# 143 "data/maps/MauveIslandWest/scripts.pory"
-	mosaicmorph 10, OBJ_EVENT_GFX_NONE
-# 144 "data/maps/MauveIslandWest/scripts.pory"
+# 127 "data/maps/MauveIslandWest/scripts.pory"
+	delay 10
+# 128 "data/maps/MauveIslandWest/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_Talking
+# 129 "data/maps/MauveIslandWest/scripts.pory"
 	delay 80
+# 130 "data/maps/MauveIslandWest/scripts.pory"
+	speakername CommonText_Q
+# 131 "data/maps/MauveIslandWest/scripts.pory"
+	messageautoscroll MauveIslandWest_EventScript_Unknown_Text_0
+# 132 "data/maps/MauveIslandWest/scripts.pory"
+	waitmessage
+# 133 "data/maps/MauveIslandWest/scripts.pory"
+	closemessage
+# 134 "data/maps/MauveIslandWest/scripts.pory"
+	delay 20
+# 135 "data/maps/MauveIslandWest/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_LockFacingDirection
+# 136 "data/maps/MauveIslandWest/scripts.pory"
+	waitmovement 0
+# 137 "data/maps/MauveIslandWest/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkQuarterDown
+# 138 "data/maps/MauveIslandWest/scripts.pory"
+	waitmovement 0
+# 139 "data/maps/MauveIslandWest/scripts.pory"
+	delay 20
+# 140 "data/maps/MauveIslandWest/scripts.pory"
+	applymovement 10, Common_Movement_WalkDownSlow
+# 141 "data/maps/MauveIslandWest/scripts.pory"
+	waitmovement 0
+# 142 "data/maps/MauveIslandWest/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
+# 143 "data/maps/MauveIslandWest/scripts.pory"
+	playse SE_PIN
+# 144 "data/maps/MauveIslandWest/scripts.pory"
+	delay 60
 # 145 "data/maps/MauveIslandWest/scripts.pory"
-	removeobject IG_BOSS
+	setflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
 # 146 "data/maps/MauveIslandWest/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_SweatDrop
+	setflag FLAG_SUPERBOSS_TRAINER
 # 147 "data/maps/MauveIslandWest/scripts.pory"
-	playse SE_M_METRONOME
+	setflag FLAG_IGNORE_LEVEL_SYNC
 # 148 "data/maps/MauveIslandWest/scripts.pory"
-	delay 40
+	trainerbattle_no_intro TRAINER_UNKNOWN, MauveIslandWest_EventScript_Unknown_Text_1
+# 149 "data/maps/MauveIslandWest/scripts.pory"
+	clearflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
+# 150 "data/maps/MauveIslandWest/scripts.pory"
+	clearflag FLAG_SUPERBOSS_TRAINER
+# 151 "data/maps/MauveIslandWest/scripts.pory"
+	clearflag FLAG_IGNORE_LEVEL_SYNC
+# 152 "data/maps/MauveIslandWest/scripts.pory"
+	mosaicmorph 10, OBJ_EVENT_GFX_NONE
+# 153 "data/maps/MauveIslandWest/scripts.pory"
+	delay 25
+# 154 "data/maps/MauveIslandWest/scripts.pory"
+	removeobject 10
+# 155 "data/maps/MauveIslandWest/scripts.pory"
+	delay 60
+# 156 "data/maps/MauveIslandWest/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_SweatDrop
+# 157 "data/maps/MauveIslandWest/scripts.pory"
+	playse SE_M_METRONOME
+# 158 "data/maps/MauveIslandWest/scripts.pory"
+	delay 60
+# 159 "data/maps/MauveIslandWest/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
+# 160 "data/maps/MauveIslandWest/scripts.pory"
+	waitmovement 0
+# 161 "data/maps/MauveIslandWest/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 162 "data/maps/MauveIslandWest/scripts.pory"
+	warpsilent MAP_MAUVE_ISLAND_WEST, 23, 9
+# 163 "data/maps/MauveIslandWest/scripts.pory"
+	waitstate
 	return
 
 
@@ -347,11 +377,11 @@ TrainerTipsOceanGrass_Text_0:
 	.string "Trainer Tips\pGrassy areas in the ocean are home\nto different pools of Pokémon than\lthe open oceans.$"
 
 MauveIslandWest_EventScript_Unknown_Text_0:
-# 123 "data/maps/MauveIslandWest/scripts.pory"
-	.string "{PAUSE 100}…$"
+# 124 "data/maps/MauveIslandWest/scripts.pory"
+	.string "{PAUSE 100}…{PAUSE 100} …{PAUSE 100} …{PAUSE 200}$"
 
 MauveIslandWest_EventScript_Unknown_Text_1:
-# 139 "data/maps/MauveIslandWest/scripts.pory"
+# 148 "data/maps/MauveIslandWest/scripts.pory"
 	.string "…{PAUSE 60} …{PAUSE 60} …$"
 
 Text_HeadbuttTree::

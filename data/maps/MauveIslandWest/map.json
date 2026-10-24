@@ -15,12 +15,12 @@
   "connections": [
     {
       "map": "MAP_MAUVE_CAMP",
-      "offset": -1,
+      "offset": 0,
       "direction": "right"
     },
     {
       "map": "MAP_FAR_OFF_SEA_WEST",
-      "offset": 0,
+      "offset": 1,
       "direction": "left"
     }
   ],
@@ -28,7 +28,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 16,
-      "y": 9,
+      "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -41,7 +41,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M",
       "x": 17,
-      "y": 16,
+      "y": 17,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_LEFT_DOWN_RIGHT",
       "movement_range_x": 6,
@@ -54,7 +54,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
       "x": 8,
-      "y": 15,
+      "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -68,7 +68,7 @@
       "local_id": "MAUVEISLANDWEST_REDD",
       "graphics_id": "OBJ_EVENT_GFX_REDD",
       "x": 23,
-      "y": 9,
+      "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
@@ -82,7 +82,7 @@
       "local_id": "MAUVEISLANDWEST_JAKSON",
       "graphics_id": "OBJ_EVENT_GFX_JAKSON",
       "x": 13,
-      "y": 14,
+      "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -96,7 +96,7 @@
       "local_id": "MAUVEISLANDWEST_BARON",
       "graphics_id": "OBJ_EVENT_GFX_BARON",
       "x": 16,
-      "y": 0,
+      "y": 1,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -110,7 +110,7 @@
       "local_id": "MAUVEISLANDWEST_HARPER",
       "graphics_id": "OBJ_EVENT_GFX_HARPER",
       "x": 17,
-      "y": 0,
+      "y": 1,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -124,7 +124,7 @@
       "local_id": "MAUVEISLANDWEST_SAKURA",
       "graphics_id": "OBJ_EVENT_GFX_SAKURA",
       "x": 18,
-      "y": 0,
+      "y": 1,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -137,7 +137,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
       "x": 26,
-      "y": 19,
+      "y": 20,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
@@ -146,6 +146,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MauveIslandWest_EventScript_Exp1MoveTutor",
       "flag": "FLAG_TEMP_6"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SHADOW_BARON",
+      "x": 30,
+      "y": 1,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [],
@@ -154,7 +167,7 @@
     {
       "type": "sign",
       "x": 10,
-      "y": 9,
+      "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MauveCamp_Shell"
@@ -162,7 +175,7 @@
     {
       "type": "sign",
       "x": 20,
-      "y": 6,
+      "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MauveIslandWest_EventScript_HeadbuttTree"
@@ -170,7 +183,7 @@
     {
       "type": "sign",
       "x": 21,
-      "y": 6,
+      "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MauveIslandWest_EventScript_HeadbuttTree"
@@ -178,7 +191,7 @@
     {
       "type": "sign",
       "x": 15,
-      "y": 25,
+      "y": 26,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "TrainerTipsOceanGrass"

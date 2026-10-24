@@ -66,12 +66,19 @@ script MauveIslandWest_EventScript_HeadbuttTree {
 			setvar (VAR_0x8007, 2)  # shake delay
 			special (ShakeCamera)
 			waitstate
-			setflag (FLAG_SYS_SPAWN_INVISIBLE)
-			setflag (FLAG_MAUVE_CAMP_HEADBUTT_SCENE)
 			fadescreenswapbuffers (FADE_TO_BLACK)
-			delay (40)
-			warpsilent (MAP_MAUVE_CAMP, 23, 10)
-			waitstate
+			if (var(VAR_EMERALBODY_RIVAL_STATE) >= 51 && !defeated(TRAINER_UNKNOWN)) {
+				setflag (FLAG_DONT_START_MUSIC_ON_WARP)
+				setflag (FLAG_HIDE_MAP_NAME_POPUP)
+				warpcontinuescript (MAP_MAUVE_ISLAND_WEST, 30, 5, MauveIslandWest_EventScript_Unknown)	
+			}
+			else {
+				setflag (FLAG_SYS_SPAWN_INVISIBLE)
+				setflag (FLAG_MAUVE_CAMP_HEADBUTT_SCENE)
+				delay (40)
+				warpsilent (MAP_MAUVE_CAMP, 23, 10)
+				waitstate
+			}
 		}
 	}
 	else {
@@ -99,4 +106,45 @@ movement Movement_PlayerHeadbutt {
 
 script TrainerTipsOceanGrass {
 	msgbox ("Trainer Tips\pGrassy areas in the ocean are home\nto different pools of Pokémon than\lthe open oceans.", MSGBOX_SIGN)
+}
+
+script MauveIslandWest_EventScript_Unknown {
+	clearflag (FLAG_DONT_START_MUSIC_ON_WARP)
+	clearflag (FLAG_HIDE_MAP_NAME_POPUP)
+	delay (80)
+	fadescreenspeed (FADE_FROM_BLACK, 3)
+	delay (20)
+	applymovement (LOCALID_PLAYER, Common_Movement_QuestionMark)
+	delay (60)
+	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceUp)
+	waitmovement (0)
+	delay (10)
+	speakername (CommonText_Q)
+	msgbox ("{PAUSE 100}…")
+	closemessage
+	delay (10)
+	applymovement (LOCALID_PLAYER, Common_Movement_Talking)
+	delay (60)
+	speakername (CommonText_Q)
+	msgbox ("{PAUSE 100}…")
+	closemessage
+	playbgm (MUS_HG_VIRIDIAN_FOREST, FALSE)
+	delay (20)
+	applymovement (LOCALID_PLAYER, Common_Movement_ExclamationMark)
+	playse (SE_PIN)
+	delay (40)
+	setflag (FLAG_DONT_TRANSITION_BATTLE_MUSIC)
+	setflag (FLAG_SUPERBOSS_TRAINER)
+	setflag (FLAG_IGNORE_LEVEL_SYNC)
+	trainerbattle_no_intro (TRAINER_UNKNOWN, "…{PAUSE 60} …{PAUSE 60} …")
+	clearflag (FLAG_DONT_TRANSITION_BATTLE_MUSIC)
+	clearflag (FLAG_SUPERBOSS_TRAINER)
+	clearflag (FLAG_IGNORE_LEVEL_SYNC)
+	mosaicmorph (10, OBJ_EVENT_GFX_NONE)
+	delay (80)
+	removeobject (IG_BOSS)
+	applymovement (LOCALID_PLAYER, Common_Movement_SweatDrop)
+	playse (SE_M_METRONOME)
+	delay (40)
+	
 }

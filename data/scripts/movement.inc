@@ -492,6 +492,12 @@ Common_Movement_WalkFastUp2:
 	walk_fast_up
 	step_end
 	
+Common_Movement_WalkFastUp3:
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
+	
 Common_Movement_WalkFastUp7:
 	walk_fast_up
 	walk_fast_up
@@ -557,6 +563,19 @@ Common_Movement_WalkFastRight3:
 	step_end
 	
 Common_Movement_WalkFastRight9:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+	
+Common_Movement_WalkFastRight10:
+	walk_fast_right
 	walk_fast_right
 	walk_fast_right
 	walk_fast_right

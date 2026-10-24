@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_MAUVE_ISLAND_WEST",
-      "offset": 1,
+      "offset": 0,
       "direction": "left"
     }
   ],

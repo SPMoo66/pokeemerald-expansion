@@ -12799,7 +12799,7 @@
     {
         .trainerClass = TRAINER_CLASS_CHAMPION,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_CYNTHIA,
+        .trainerPic = TRAINER_PIC_CYNTHIA_MASTERS,
         .trainerName = _("Cynthia"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
@@ -12810,9 +12810,9 @@
 
     [DIFFICULTY_NORMAL][TRAINER_UNKNOWN] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+        .trainerClass = TRAINER_CLASS_BLANK,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerPic = TRAINER_PIC_SHADOWED_BRENDAN,
         .trainerName = _("Unknown"),
         .items = {},
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,

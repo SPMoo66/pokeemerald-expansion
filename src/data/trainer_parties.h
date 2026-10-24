@@ -21372,6 +21372,7 @@ static const struct TrainerMon sParty_CynthiaExp1[] = {
     .species = SPECIES_BRAVIARY,
     .ability = ABILITY_SHEER_FORCE,
     .heldItem = ITEM_NORMAL_GEM,
+    .teraType = TYPE_FIGHTING,
     .moves = {MOVE_BRAVE_BIRD, MOVE_CRUSH_CLAW, MOVE_TAILWIND, MOVE_CLOSE_COMBAT}
     },
     {

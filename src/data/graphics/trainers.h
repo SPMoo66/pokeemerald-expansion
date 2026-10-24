@@ -1174,6 +1174,10 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CynthiaMasters, gTrainerPalette_CynthiaMasters),
     },
+    [TRAINER_PIC_SHADOWED_BRENDAN] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Brendan, gTrainerPalette_AllBlack),
+    },
     [TRAINER_PIC_YOUNGSTER_FRLG] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_YoungsterFrlg, gTrainerPalette_YoungsterFrlg),

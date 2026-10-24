@@ -21364,7 +21364,7 @@ static const struct TrainerMon sParty_StevenExp1[] = {
     .moves = {MOVE_METEOR_MASH, MOVE_ZEN_HEADBUTT, MOVE_SHIFT_GEAR, MOVE_ICE_PUNCH}
     }
 };
-/*
+
 static const struct TrainerMon sParty_CynthiaExp1[] = {
     {
     .ball = POKEBALL_COUNT,
@@ -21415,8 +21415,7 @@ static const struct TrainerMon sParty_CynthiaExp1[] = {
     .moves = {MOVE_DRACO_METEOR, MOVE_PROTECT, MOVE_POWER_GEM, MOVE_EARTH_POWER}
     }
 };
-*/
-/*
+
 static const struct TrainerMon sParty_Unknown[] = {
     {
     .ball = BALL_STRANGE,
@@ -21468,7 +21467,6 @@ static const struct TrainerMon sParty_Unknown[] = {
     .moves = {MOVE_HYPER_DRILL, MOVE_COIL, MOVE_DRAGON_RUSH, MOVE_ROOST}
     }
 };
-*/
 /*
 
 static const struct TrainerMon sParty_[] = {

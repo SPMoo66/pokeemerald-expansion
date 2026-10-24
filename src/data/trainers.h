@@ -12794,6 +12794,32 @@
         .party = TRAINER_PARTY(sParty_StevenExp1),
         .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
+
+    [DIFFICULTY_NORMAL][TRAINER_CYNTHIA_EXP_1] =
+    {
+        .trainerClass = TRAINER_CLASS_CHAMPION,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_CYNTHIA,
+        .trainerName = _("Cynthia"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_CynthiaExp1),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_UNKNOWN] =
+    {
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerName = _("Unknown"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_Unknown),
+        .multiTeamSize = MULTI_TEAM_SIZE_HALF,
+    },
 /*
 
     [DIFFICULTY_NORMAL][TRAINER_] =

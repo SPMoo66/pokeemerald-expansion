@@ -550,6 +550,8 @@ const u32 gTrainerFrontPic_EliteFourLucian[] = INCGFX_U32("graphics/trainers/fro
 const u16 gTrainerPalette_EliteFourLucian[] = INCGFX_U16("graphics/trainers/front_pics/g4/lucian.png", ".gbapal");
 const u32 gTrainerFrontPic_Cynthia[] = INCGFX_U32("graphics/trainers/front_pics/g4/cynthia.png", ".4bpp.smol");
 const u16 gTrainerPalette_Cynthia[] = INCGFX_U16("graphics/trainers/front_pics/g4/cynthia.png", ".gbapal");
+const u32 gTrainerFrontPic_CynthiaMasters[] = INCGFX_U32("graphics/trainers/front_pics/cynthia_masters.png", ".4bpp.smol");
+const u16 gTrainerPalette_CynthiaMasters[] = INCGFX_U16("graphics/trainers/front_pics/cynthia_masters.png", ".gbapal");
 const u32 gTrainerFrontPic_ShadowedLucario[] = INCGFX_U32("graphics/trainers/front_pics/lucario.png", ".4bpp.smol");
 // This is a palette with all slots filled (0,0,0), used to alter objects to be all black
 const u16 gTrainerPalette_AllBlack[] = INCGFX_U16("graphics/object_events/palettes/all_black.pal", ".gbapal");
@@ -1167,6 +1169,10 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_SHADOWED_LUCARIO] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_ShadowedLucario, gTrainerPalette_AllBlack),
+    },
+    [TRAINER_PIC_CYNTHIA_MASTERS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CynthiaMasters, gTrainerPalette_CynthiaMasters),
     },
     [TRAINER_PIC_YOUNGSTER_FRLG] =
     {

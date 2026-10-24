@@ -608,6 +608,7 @@ struct TuningForkUnlockedMusic
     bool8 musicB2W2VsGhetsis;
     bool8 musicMD2Dialga;
     bool8 musicXDCipherPeon;
+    bool8 musicKH1Disappeared;
     bool8 padding1;
     bool8 padding2;
     bool8 padding3;

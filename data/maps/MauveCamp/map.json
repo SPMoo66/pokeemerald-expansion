@@ -178,7 +178,7 @@
     },
     {
       "local_id": "MAUVECAMP_SHADOW_BARON",
-      "graphics_id": "OBJ_EVENT_GFX_SHADOW_BARON",
+      "graphics_id": "OBJ_EVENT_GFX_UNKNOWN_CHARACTER",
       "x": 16,
       "y": 3,
       "elevation": 0,

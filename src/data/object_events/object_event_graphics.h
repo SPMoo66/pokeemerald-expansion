@@ -449,6 +449,7 @@ const u16 gObjectEventPal_FishBowl[] = INCGFX_U16("graphics/object_events/palett
 const u32 gObjectEventPic_Dynamite[] = INCGFX_U32("graphics/object_events/pics/misc/dynamite.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPal_Dynamite[] = INCGFX_U16("graphics/object_events/palettes/dynamite.pal", ".gbapal");
 const u32 gObjectEventPic_CalamityMawShadowed[] = INCGFX_U32("graphics/object_events/pics/misc/calamity_maw_shadowed.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u32 gObjectEventPic_UnknownCharacter[] = INCGFX_U32("graphics/object_events/pics/people/unknown_character.png", ".4bpp", "-mwidth 2 -mheight 4");
 
 //EeveeExpo Overworld Trainers
 const u32 gObjectEventPic_Kindler[] = INCGFX_U32("graphics/object_events/pics/people/custom/kindler.png", ".4bpp", "-mwidth 2 -mheight 4");

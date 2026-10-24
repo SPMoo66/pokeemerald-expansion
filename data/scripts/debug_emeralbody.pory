@@ -188,3 +188,14 @@ script EmeralbodyDebug_ToggleTuningForkMusic_6 {
 	}
 	release
 }
+
+script EmeralbodyDebug_ToggleTuningForkMusic_7 {
+	checkifmusicunlocked (7)
+	if (!var(VAR_RESULT)) {
+		checkifmusicunlocked (7, 1)
+	}
+	else {
+		checkifmusicunlocked (7, 2)
+	}
+	release
+}

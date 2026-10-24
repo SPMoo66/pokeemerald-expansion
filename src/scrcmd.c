@@ -3570,6 +3570,14 @@ bool8 ScrCmd_checkifmusicunlocked(struct ScriptContext *ctx)
         else
             gSpecialVar_Result = gSaveBlock2Ptr->tuningForkUnlockedMusic.musicXDCipherPeon;
         break;
+    case 7:
+        if (setStatus == 1)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicKH1Disappeared = 1;
+        else if (setStatus == 2)
+            gSaveBlock2Ptr->tuningForkUnlockedMusic.musicKH1Disappeared = 0;
+        else
+            gSpecialVar_Result = gSaveBlock2Ptr->tuningForkUnlockedMusic.musicKH1Disappeared;
+        break;
     default:
         break;
     }

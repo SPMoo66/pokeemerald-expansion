@@ -1096,7 +1096,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ItemBallBlue = {
     .images = sPicTable_PokeBall,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShadowBaron = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnknownCharacter = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_ALL_BLACK,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -1111,7 +1111,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShadowBaron = {
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_Baron,
+    .images = sPicTable_UnknownCharacter,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 

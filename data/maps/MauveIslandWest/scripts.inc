@@ -251,90 +251,94 @@ MauveIslandWest_EventScript_Unknown::
 # 120 "data/maps/MauveIslandWest/scripts.pory"
 	waitmovement 0
 # 121 "data/maps/MauveIslandWest/scripts.pory"
-	delay 10
-# 122 "data/maps/MauveIslandWest/scripts.pory"
 	playbgm MUS_KH1_DISAPPEARED, FALSE
+# 122 "data/maps/MauveIslandWest/scripts.pory"
+	delay 40
 # 123 "data/maps/MauveIslandWest/scripts.pory"
-	speakername CommonText_Q
-# 124 "data/maps/MauveIslandWest/scripts.pory"
-	messageautoscroll MauveIslandWest_EventScript_Unknown_Text_0
-# 125 "data/maps/MauveIslandWest/scripts.pory"
-	waitmessage
-# 126 "data/maps/MauveIslandWest/scripts.pory"
-	closemessage
-# 127 "data/maps/MauveIslandWest/scripts.pory"
-	delay 10
-# 128 "data/maps/MauveIslandWest/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_Talking
-# 129 "data/maps/MauveIslandWest/scripts.pory"
+# 124 "data/maps/MauveIslandWest/scripts.pory"
 	delay 80
-# 130 "data/maps/MauveIslandWest/scripts.pory"
-	speakername CommonText_Q
-# 131 "data/maps/MauveIslandWest/scripts.pory"
-	messageautoscroll MauveIslandWest_EventScript_Unknown_Text_0
-# 132 "data/maps/MauveIslandWest/scripts.pory"
-	waitmessage
-# 133 "data/maps/MauveIslandWest/scripts.pory"
-	closemessage
-# 134 "data/maps/MauveIslandWest/scripts.pory"
+# 125 "data/maps/MauveIslandWest/scripts.pory"
+	applymovement 10, Common_Movement_WalkInPlaceDown
+# 126 "data/maps/MauveIslandWest/scripts.pory"
+	waitmovement 0
+# 127 "data/maps/MauveIslandWest/scripts.pory"
 	delay 20
-# 135 "data/maps/MauveIslandWest/scripts.pory"
+# 128 "data/maps/MauveIslandWest/scripts.pory"
+	speakername CommonText_Q
+# 129 "data/maps/MauveIslandWest/scripts.pory"
+	messageautoscroll MauveIslandWest_EventScript_Unknown_Text_0
+# 130 "data/maps/MauveIslandWest/scripts.pory"
+	waitmessage
+# 131 "data/maps/MauveIslandWest/scripts.pory"
+	closemessage
+# 132 "data/maps/MauveIslandWest/scripts.pory"
+	delay 20
+# 133 "data/maps/MauveIslandWest/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_LockFacingDirection
+# 134 "data/maps/MauveIslandWest/scripts.pory"
+	waitmovement 0
+# 135 "data/maps/MauveIslandWest/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkQuarterDown
 # 136 "data/maps/MauveIslandWest/scripts.pory"
 	waitmovement 0
 # 137 "data/maps/MauveIslandWest/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkQuarterDown
-# 138 "data/maps/MauveIslandWest/scripts.pory"
-	waitmovement 0
-# 139 "data/maps/MauveIslandWest/scripts.pory"
 	delay 20
-# 140 "data/maps/MauveIslandWest/scripts.pory"
+# 138 "data/maps/MauveIslandWest/scripts.pory"
 	applymovement 10, Common_Movement_WalkDownSlow
-# 141 "data/maps/MauveIslandWest/scripts.pory"
+# 139 "data/maps/MauveIslandWest/scripts.pory"
 	waitmovement 0
-# 142 "data/maps/MauveIslandWest/scripts.pory"
+# 140 "data/maps/MauveIslandWest/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
-# 143 "data/maps/MauveIslandWest/scripts.pory"
+# 141 "data/maps/MauveIslandWest/scripts.pory"
 	playse SE_PIN
-# 144 "data/maps/MauveIslandWest/scripts.pory"
+# 142 "data/maps/MauveIslandWest/scripts.pory"
 	delay 60
-# 145 "data/maps/MauveIslandWest/scripts.pory"
+# 143 "data/maps/MauveIslandWest/scripts.pory"
 	setflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
-# 146 "data/maps/MauveIslandWest/scripts.pory"
+# 144 "data/maps/MauveIslandWest/scripts.pory"
 	setflag FLAG_SUPERBOSS_TRAINER
-# 147 "data/maps/MauveIslandWest/scripts.pory"
+# 145 "data/maps/MauveIslandWest/scripts.pory"
 	setflag FLAG_IGNORE_LEVEL_SYNC
-# 148 "data/maps/MauveIslandWest/scripts.pory"
+# 146 "data/maps/MauveIslandWest/scripts.pory"
 	trainerbattle_no_intro TRAINER_UNKNOWN, MauveIslandWest_EventScript_Unknown_Text_1
-# 149 "data/maps/MauveIslandWest/scripts.pory"
+# 147 "data/maps/MauveIslandWest/scripts.pory"
 	clearflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
-# 150 "data/maps/MauveIslandWest/scripts.pory"
+# 148 "data/maps/MauveIslandWest/scripts.pory"
 	clearflag FLAG_SUPERBOSS_TRAINER
-# 151 "data/maps/MauveIslandWest/scripts.pory"
+# 149 "data/maps/MauveIslandWest/scripts.pory"
 	clearflag FLAG_IGNORE_LEVEL_SYNC
-# 152 "data/maps/MauveIslandWest/scripts.pory"
+# 150 "data/maps/MauveIslandWest/scripts.pory"
+	delay 20
+# 151 "data/maps/MauveIslandWest/scripts.pory"
 	mosaicmorph 10, OBJ_EVENT_GFX_NONE
-# 153 "data/maps/MauveIslandWest/scripts.pory"
+# 152 "data/maps/MauveIslandWest/scripts.pory"
 	delay 25
-# 154 "data/maps/MauveIslandWest/scripts.pory"
+# 153 "data/maps/MauveIslandWest/scripts.pory"
 	removeobject 10
+# 154 "data/maps/MauveIslandWest/scripts.pory"
+	delay 60
 # 155 "data/maps/MauveIslandWest/scripts.pory"
-	delay 60
+	checkifmusicunlocked 7, 1
 # 156 "data/maps/MauveIslandWest/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_SweatDrop
+	call EventScript_MusicUnlocked
 # 157 "data/maps/MauveIslandWest/scripts.pory"
-	playse SE_M_METRONOME
+	applymovement LOCALID_PLAYER, Common_Movement_SweatDrop
 # 158 "data/maps/MauveIslandWest/scripts.pory"
-	delay 60
+	playse SE_M_METRONOME
 # 159 "data/maps/MauveIslandWest/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
+	delay 60
 # 160 "data/maps/MauveIslandWest/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
 # 161 "data/maps/MauveIslandWest/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	waitmovement 0
 # 162 "data/maps/MauveIslandWest/scripts.pory"
-	warpsilent MAP_MAUVE_ISLAND_WEST, 23, 9
+	delay 20
 # 163 "data/maps/MauveIslandWest/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 164 "data/maps/MauveIslandWest/scripts.pory"
+	warpsilent MAP_MAUVE_ISLAND_WEST, 23, 9
+# 165 "data/maps/MauveIslandWest/scripts.pory"
 	waitstate
 	return
 
@@ -377,11 +381,11 @@ TrainerTipsOceanGrass_Text_0:
 	.string "Trainer Tips\pGrassy areas in the ocean are home\nto different pools of Pokémon than\lthe open oceans.$"
 
 MauveIslandWest_EventScript_Unknown_Text_0:
-# 124 "data/maps/MauveIslandWest/scripts.pory"
+# 129 "data/maps/MauveIslandWest/scripts.pory"
 	.string "{PAUSE 100}…{PAUSE 100} …{PAUSE 100} …{PAUSE 200}$"
 
 MauveIslandWest_EventScript_Unknown_Text_1:
-# 148 "data/maps/MauveIslandWest/scripts.pory"
+# 146 "data/maps/MauveIslandWest/scripts.pory"
 	.string "…{PAUSE 60} …{PAUSE 60} …$"
 
 Text_HeadbuttTree::

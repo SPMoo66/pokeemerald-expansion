@@ -440,6 +440,7 @@ extern const u8 EmeralbodyDebug_ToggleTuningForkMusic_3[];
 extern const u8 EmeralbodyDebug_ToggleTuningForkMusic_4[];
 extern const u8 EmeralbodyDebug_ToggleTuningForkMusic_5[];
 extern const u8 EmeralbodyDebug_ToggleTuningForkMusic_6[];
+extern const u8 EmeralbodyDebug_ToggleTuningForkMusic_7[];
 extern const u8 EmeralbodyDebug_Expansion1_JaksonsCall[];
 extern const u8 EmeralbodyDebug_Expansion1_IllusoryGrotto_1[];
 extern const u8 EmeralbodyDebug_Expansion1_MauveIsland[];
@@ -706,13 +707,14 @@ static const struct DebugMenuOption sDebugMenu_Actions_EmeralbodySetRival[] =
 
 static const struct DebugMenuOption sDebugMenu_Actions_TuningFork[] =
 {
-    { COMPOUND_STRING("Toggle Evil Team"),      DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_0, },
-    { COMPOUND_STRING("Toggle E4/Champ"),       DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_1, },
-    { COMPOUND_STRING("Toggle Legendary"),      DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_2, },
-    { COMPOUND_STRING("Toggle BW"),             DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_3, },
-    { COMPOUND_STRING("Toggle B2W2 Ghetsis"),   DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_4, },
-    { COMPOUND_STRING("Toggle MD2 Dialga"),     DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_5, },
-    { COMPOUND_STRING("Toggle XD Cipher Peon"), DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_6, },
+    { COMPOUND_STRING("Toggle Evil Team"),       DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_0, },
+    { COMPOUND_STRING("Toggle E4/Champ"),        DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_1, },
+    { COMPOUND_STRING("Toggle Legendary"),       DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_2, },
+    { COMPOUND_STRING("Toggle BW"),              DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_3, },
+    { COMPOUND_STRING("Toggle B2W2 Ghetsis"),    DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_4, },
+    { COMPOUND_STRING("Toggle MD2 Dialga"),      DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_5, },
+    { COMPOUND_STRING("Toggle XD Cipher Peon"),  DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_6, },
+    { COMPOUND_STRING("Toggle KH1 Disappeared"), DebugAction_ExecuteScript, EmeralbodyDebug_ToggleTuningForkMusic_7, },
     { NULL }
 };
 

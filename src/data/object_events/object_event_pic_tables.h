@@ -1455,6 +1455,10 @@ static const struct SpriteFrameImage sPicTable_None[] = {
     obj_frame_tiles(gObjectEventPic_None),
 };
 
+static const struct SpriteFrameImage sPicTable_UnknownCharacter[] = {
+    overworld_ascending_frames(gObjectEventPic_UnknownCharacter, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_Kindler[] = {
     overworld_ascending_frames(gObjectEventPic_Kindler, 2, 4),
 };

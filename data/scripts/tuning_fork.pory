@@ -54,7 +54,7 @@
 #  45: MUS_FF4_FIGHT_2
 #  46: MUS_MD2_DIALGAS_FIGHT_TO_THE_FINISH
 #  47: MUS_XD_VS_CIPHER_PEON
-#  48: 
+#  48: MUS_KH1_DISAPPEARED
 #  49: 
 #  50: 
 
@@ -83,6 +83,7 @@ script EventScript_TuningFork {
 		checkifmusicunlocked (4, 1)
 		checkifmusicunlocked (5, 1)
 		checkifmusicunlocked (6, 1)
+		checkifmusicunlocked (7, 1)
 		goto (EventScript_TuningFork)
 	}
 
@@ -489,6 +490,11 @@ script EventScript_TuningFork_PokemonOther {
 script EventScript_TuningFork_Other {
 	msgbox (TextChooseSong)
 	dynmultipush ("FF4: Battle 2", 0)
+	checkifmusicunlocked (7) // checks for the below song
+	if (var(VAR_RESULT))
+	{
+		dynmultipush ("KH1: Disappeared", 1)
+	}
 
 	dynmultistack(0, 2, FALSE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
 
@@ -496,6 +502,9 @@ script EventScript_TuningFork_Other {
 	{
 	case 0:
 		setvar (VAR_TEMP_2, 45)
+		goto (EventScript_TuningFork_SetMusic)
+	case 1:
+		setvar (VAR_TEMP_2, 48)
 		goto (EventScript_TuningFork_SetMusic)
 	default: // pressed B
 		goto (EventScript_TuningFork_ChooseType)

@@ -334,6 +334,25 @@ EmeralbodyDebug_ToggleTuningForkMusic_6_2:
 	goto EmeralbodyDebug_ToggleTuningForkMusic_6_1
 
 
+EmeralbodyDebug_ToggleTuningForkMusic_7::
+# 193 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 7
+# 194 "data/scripts/debug_emeralbody.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq EmeralbodyDebug_ToggleTuningForkMusic_7_2
+# 198 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 7, 2
+EmeralbodyDebug_ToggleTuningForkMusic_7_1:
+# 200 "data/scripts/debug_emeralbody.pory"
+	release
+	return
+
+EmeralbodyDebug_ToggleTuningForkMusic_7_2:
+# 195 "data/scripts/debug_emeralbody.pory"
+	checkifmusicunlocked 7, 1
+	goto EmeralbodyDebug_ToggleTuningForkMusic_7_1
+
+
 EmeralbodyDebug_WhoIsRival_Text_0:
 # 14 "data/scripts/debug_emeralbody.pory"
 	.string "You will be challenged by all rivals.$"

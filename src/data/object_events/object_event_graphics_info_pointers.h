@@ -423,7 +423,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ProfRowan;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cynthia;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Galactic_Grunt_M;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Galactic_Grunt_F;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShadowBaron;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnknownCharacter;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FishBowl;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dynamite;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShadowedLucario;
@@ -706,7 +706,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_GALACTIC_GRUNT_M] =         &gObjectEventGraphicsInfo_Galactic_Grunt_M,
     [OBJ_EVENT_GFX_GALACTIC_GRUNT_F] =         &gObjectEventGraphicsInfo_Galactic_Grunt_F,
-    [OBJ_EVENT_GFX_SHADOW_BARON] =             &gObjectEventGraphicsInfo_ShadowBaron,
+    [OBJ_EVENT_GFX_UNKNOWN_CHARACTER] =        &gObjectEventGraphicsInfo_UnknownCharacter,
     [OBJ_EVENT_GFX_FISH_BOWL] =                &gObjectEventGraphicsInfo_FishBowl,
     [OBJ_EVENT_GFX_DYNAMITE] =                 &gObjectEventGraphicsInfo_Dynamite,
     [OBJ_EVENT_GFX_SHADOWED_LUCARIO] =         &gObjectEventGraphicsInfo_ShadowedLucario,

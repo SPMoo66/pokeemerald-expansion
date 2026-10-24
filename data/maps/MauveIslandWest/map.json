@@ -148,11 +148,11 @@
       "flag": "FLAG_TEMP_6"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SHADOW_BARON",
+      "graphics_id": "OBJ_EVENT_GFX_UNKNOWN_CHARACTER",
       "x": 30,
       "y": 1,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",

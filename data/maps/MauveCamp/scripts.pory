@@ -69,6 +69,9 @@ mapscripts MauveCamp_MapScripts {
 			savebgm (MUS_PL_CONTEST_BEAUTY)
 			clearflag (FLAG_SCENE10_TRANSITION)
 		}
+		if (var(VAR_EMERALBODY_RIVAL_STATE) < 51) {
+			setflag (FLAG_TEMP_8)
+		}
 		if (var(VAR_EMERALBODY_RIVAL_STATE) == 51) {
 			setobjectmovementtype (MAUVECAMP_SAKURA, MOVEMENT_TYPE_FACE_DOWN)
 			setobjectxyperm (MAUVECAMP_SAKURA, 25, 7)
@@ -202,6 +205,42 @@ script MauveCamp_Ranger {
 			"expedition to help set up camp.\p"
 			"My partner already left to scout\n"
 			"out the area on her own.", MSGBOX_NPC)
+}
+
+script MauveCamp_Cynthia {
+	faceplayer
+	speakername (CommonText_Cynthia)
+	if (!defeated(TRAINER_CYNTHIA_EXP_1)) {
+		msgbox ("Oh, hello.\p"
+				"… {PAUSE 60}… {PAUSE 60}…{PAUSE 60}\n"
+				"I seem familiar?\p"
+				"I can assure you, we have not met\n"
+				"before.\p"
+				"Though… {PAUSE 60}I have heard of you,\n"
+				"Champion of Hoenn.\p"
+				"I may be on vacation, but I can still\n"
+				"appreciate a battle.\p"
+				"Steven was a good warmup, but show me\n"
+				"what you are made of, {PLAYER}!", MSGBOX_NPC)
+		setflag (FLAG_SUPERBOSS_TRAINER)
+		setflag (FLAG_IGNORE_LEVEL_SYNC)
+		trainerbattle_no_intro (TRAINER_CYNTHIA_EXP_1, "A superb style of battling.\pSteven, you've really declined if a child\nlike this puts up a better challenge…")
+		clearflag (FLAG_SUPERBOSS_TRAINER)
+		clearflag (FLAG_IGNORE_LEVEL_SYNC)
+	}
+	speakername (CommonText_Cynthia)
+	msgbox ("No… {PAUSE 60}I'm quite sure we had not met\n"
+			"before now.\p"
+			"I'm not sure what gave you that idea.\p"
+			"But it is good to have finally have\n"
+			"met you.\p"
+			"The community of Pokémon Champions is\n"
+			"small… {PAUSE 60}and it can be rather awkward\l"
+			"when we can't get along.\p"
+			"I already exchanged pleasantries with\n"
+			"Steven.\p"
+			"I didn't take the initial boat ride over,\n"
+			"but I did visit him in his cabin.", MSGBOX_AUTOCLOSE)
 }
 
 

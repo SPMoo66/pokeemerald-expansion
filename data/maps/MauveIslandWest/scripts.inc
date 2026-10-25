@@ -297,54 +297,50 @@ MauveIslandWest_EventScript_Unknown::
 # 143 "data/maps/MauveIslandWest/scripts.pory"
 	setflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
 # 144 "data/maps/MauveIslandWest/scripts.pory"
-	setflag FLAG_SUPERBOSS_TRAINER
-# 145 "data/maps/MauveIslandWest/scripts.pory"
 	setflag FLAG_IGNORE_LEVEL_SYNC
-# 146 "data/maps/MauveIslandWest/scripts.pory"
+# 145 "data/maps/MauveIslandWest/scripts.pory"
 	trainerbattle_no_intro TRAINER_UNKNOWN, MauveIslandWest_EventScript_Unknown_Text_1
-# 147 "data/maps/MauveIslandWest/scripts.pory"
+# 146 "data/maps/MauveIslandWest/scripts.pory"
 	clearflag FLAG_DONT_TRANSITION_BATTLE_MUSIC
-# 148 "data/maps/MauveIslandWest/scripts.pory"
-	clearflag FLAG_SUPERBOSS_TRAINER
-# 149 "data/maps/MauveIslandWest/scripts.pory"
+# 147 "data/maps/MauveIslandWest/scripts.pory"
 	clearflag FLAG_IGNORE_LEVEL_SYNC
-# 150 "data/maps/MauveIslandWest/scripts.pory"
+# 148 "data/maps/MauveIslandWest/scripts.pory"
 	delay 20
-# 151 "data/maps/MauveIslandWest/scripts.pory"
+# 149 "data/maps/MauveIslandWest/scripts.pory"
 	mosaicmorph 10, OBJ_EVENT_GFX_NONE
-# 152 "data/maps/MauveIslandWest/scripts.pory"
+# 150 "data/maps/MauveIslandWest/scripts.pory"
 	delay 25
-# 153 "data/maps/MauveIslandWest/scripts.pory"
+# 151 "data/maps/MauveIslandWest/scripts.pory"
 	removeobject 10
-# 154 "data/maps/MauveIslandWest/scripts.pory"
+# 152 "data/maps/MauveIslandWest/scripts.pory"
 	delay 60
-# 155 "data/maps/MauveIslandWest/scripts.pory"
+# 153 "data/maps/MauveIslandWest/scripts.pory"
 	goto_if_set FLAG_RECEIVED_TUNING_FORK, MauveIslandWest_EventScript_Unknown_2
 MauveIslandWest_EventScript_Unknown_1:
-# 159 "data/maps/MauveIslandWest/scripts.pory"
+# 157 "data/maps/MauveIslandWest/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_SweatDrop
-# 160 "data/maps/MauveIslandWest/scripts.pory"
+# 158 "data/maps/MauveIslandWest/scripts.pory"
 	playse SE_M_METRONOME
-# 161 "data/maps/MauveIslandWest/scripts.pory"
+# 159 "data/maps/MauveIslandWest/scripts.pory"
 	delay 60
-# 162 "data/maps/MauveIslandWest/scripts.pory"
+# 160 "data/maps/MauveIslandWest/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceDown
-# 163 "data/maps/MauveIslandWest/scripts.pory"
+# 161 "data/maps/MauveIslandWest/scripts.pory"
 	waitmovement 0
-# 164 "data/maps/MauveIslandWest/scripts.pory"
+# 162 "data/maps/MauveIslandWest/scripts.pory"
 	delay 20
-# 165 "data/maps/MauveIslandWest/scripts.pory"
+# 163 "data/maps/MauveIslandWest/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 166 "data/maps/MauveIslandWest/scripts.pory"
+# 164 "data/maps/MauveIslandWest/scripts.pory"
 	warpsilent MAP_MAUVE_ISLAND_WEST, 23, 9
-# 167 "data/maps/MauveIslandWest/scripts.pory"
+# 165 "data/maps/MauveIslandWest/scripts.pory"
 	waitstate
 	return
 
 MauveIslandWest_EventScript_Unknown_2:
-# 156 "data/maps/MauveIslandWest/scripts.pory"
+# 154 "data/maps/MauveIslandWest/scripts.pory"
 	checkifmusicunlocked 7, 1
-# 157 "data/maps/MauveIslandWest/scripts.pory"
+# 155 "data/maps/MauveIslandWest/scripts.pory"
 	call EventScript_MusicUnlocked
 	goto MauveIslandWest_EventScript_Unknown_1
 
@@ -391,7 +387,7 @@ MauveIslandWest_EventScript_Unknown_Text_0:
 	.string "{PAUSE 100}…{PAUSE 100} …{PAUSE 100} …{PAUSE 200}$"
 
 MauveIslandWest_EventScript_Unknown_Text_1:
-# 146 "data/maps/MauveIslandWest/scripts.pory"
+# 145 "data/maps/MauveIslandWest/scripts.pory"
 	.string "…{PAUSE 60} …{PAUSE 60} …$"
 
 Text_HeadbuttTree::

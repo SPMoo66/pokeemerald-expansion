@@ -433,9 +433,9 @@ MauveCamp_Cynthia::
 	checktrainerflag TRAINER_CYNTHIA_EXP_1
 	goto_if 0, MauveCamp_Cynthia_2
 MauveCamp_Cynthia_1:
-# 231 "data/maps/MauveCamp/scripts.pory"
+# 229 "data/maps/MauveCamp/scripts.pory"
 	speakername CommonText_Cynthia
-# 232 "data/maps/MauveCamp/scripts.pory"
+# 230 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Cynthia_Text_2, MSGBOX_AUTOCLOSE
 	return
 
@@ -443,78 +443,74 @@ MauveCamp_Cynthia_2:
 # 214 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Cynthia_Text_0, MSGBOX_NPC
 # 225 "data/maps/MauveCamp/scripts.pory"
-	setflag FLAG_SUPERBOSS_TRAINER
-# 226 "data/maps/MauveCamp/scripts.pory"
 	setflag FLAG_IGNORE_LEVEL_SYNC
-# 227 "data/maps/MauveCamp/scripts.pory"
+# 226 "data/maps/MauveCamp/scripts.pory"
 	trainerbattle_no_intro TRAINER_CYNTHIA_EXP_1, MauveCamp_Cynthia_Text_1
-# 228 "data/maps/MauveCamp/scripts.pory"
-	clearflag FLAG_SUPERBOSS_TRAINER
-# 229 "data/maps/MauveCamp/scripts.pory"
+# 227 "data/maps/MauveCamp/scripts.pory"
 	clearflag FLAG_IGNORE_LEVEL_SYNC
 	goto MauveCamp_Cynthia_1
 
 
 MauveCamp_Sign::
-# 248 "data/maps/MauveCamp/scripts.pory"
+# 246 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Sign_Text_0, MSGBOX_SIGN
 	return
 
 
 MauveCamp_SandCastle::
-# 252 "data/maps/MauveCamp/scripts.pory"
+# 250 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_SandCastle_Text_0
-# 253 "data/maps/MauveCamp/scripts.pory"
+# 251 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 
 MauveCamp_Pokeball::
-# 257 "data/maps/MauveCamp/scripts.pory"
+# 255 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Pokeball_Text_0
-# 258 "data/maps/MauveCamp/scripts.pory"
+# 256 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 
 MauveCamp_Boxes::
-# 262 "data/maps/MauveCamp/scripts.pory"
+# 260 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Boxes_Text_0
-# 263 "data/maps/MauveCamp/scripts.pory"
+# 261 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 
 MauveCamp_Rowboat::
-# 267 "data/maps/MauveCamp/scripts.pory"
+# 265 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Rowboat_Text_0, MSGBOX_YESNO
-# 269 "data/maps/MauveCamp/scripts.pory"
+# 267 "data/maps/MauveCamp/scripts.pory"
 	closemessage
-# 270 "data/maps/MauveCamp/scripts.pory"
+# 268 "data/maps/MauveCamp/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne MauveCamp_Rowboat_1
 	return
 
 MauveCamp_Rowboat_1:
-# 271 "data/maps/MauveCamp/scripts.pory"
+# 269 "data/maps/MauveCamp/scripts.pory"
 	setflag FLAG_REVERSE_SLATEPORT_BOAT_SCENE
-# 272 "data/maps/MauveCamp/scripts.pory"
+# 270 "data/maps/MauveCamp/scripts.pory"
 	goto SlateportRegionMap_BoatSceneInit
 	return
 
 
 MauveCamp_Pot::
-# 277 "data/maps/MauveCamp/scripts.pory"
+# 275 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Pot_Text_0
-# 280 "data/maps/MauveCamp/scripts.pory"
+# 278 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
 
 MauveCamp_Shell::
-# 284 "data/maps/MauveCamp/scripts.pory"
+# 282 "data/maps/MauveCamp/scripts.pory"
 	msgbox MauveCamp_Shell_Text_0
-# 287 "data/maps/MauveCamp/scripts.pory"
+# 285 "data/maps/MauveCamp/scripts.pory"
 	closemessage
 	return
 
@@ -582,11 +578,11 @@ MauveCamp_Cynthia_Text_0:
 	.string "what you are made of, {PLAYER}!$"
 
 MauveCamp_Cynthia_Text_1:
-# 227 "data/maps/MauveCamp/scripts.pory"
+# 226 "data/maps/MauveCamp/scripts.pory"
 	.string "A superb style of battling.\pSteven, you've really declined if a child\nlike this puts up a better challenge…$"
 
 MauveCamp_Cynthia_Text_2:
-# 232 "data/maps/MauveCamp/scripts.pory"
+# 230 "data/maps/MauveCamp/scripts.pory"
 	.string "No… {PAUSE 60}I'm quite sure we had not met\n"
 	.string "before now.\p"
 	.string "I'm not sure what gave you that idea.\p"
@@ -601,34 +597,34 @@ MauveCamp_Cynthia_Text_2:
 	.string "but I did visit him in his cabin.$"
 
 MauveCamp_Sign_Text_0:
-# 248 "data/maps/MauveCamp/scripts.pory"
+# 246 "data/maps/MauveCamp/scripts.pory"
 	.string "Mauve Island Base Camp$"
 
 MauveCamp_SandCastle_Text_0:
-# 252 "data/maps/MauveCamp/scripts.pory"
+# 250 "data/maps/MauveCamp/scripts.pory"
 	.string "Did Sakura make this sand castle?$"
 
 MauveCamp_Pokeball_Text_0:
-# 257 "data/maps/MauveCamp/scripts.pory"
+# 255 "data/maps/MauveCamp/scripts.pory"
 	.string "This must be a Pokémon owned by\none of the sailors.$"
 
 MauveCamp_Boxes_Text_0:
-# 262 "data/maps/MauveCamp/scripts.pory"
+# 260 "data/maps/MauveCamp/scripts.pory"
 	.string "The boxes are loaded with supplies.$"
 
 MauveCamp_Rowboat_Text_0:
-# 267 "data/maps/MauveCamp/scripts.pory"
+# 265 "data/maps/MauveCamp/scripts.pory"
 	.string "It's a rowboat!\n"
 	.string "Use it to return to Hoenn?$"
 
 MauveCamp_Pot_Text_0:
-# 277 "data/maps/MauveCamp/scripts.pory"
+# 275 "data/maps/MauveCamp/scripts.pory"
 	.string "{PLAYER} found one Leftovers!\n"
 	.string "… … …\l"
 	.string "Just kidding!$"
 
 MauveCamp_Shell_Text_0:
-# 284 "data/maps/MauveCamp/scripts.pory"
+# 282 "data/maps/MauveCamp/scripts.pory"
 	.string "Wow!\p"
 	.string "When you get close you can hear\n"
 	.string "the ocean!$"

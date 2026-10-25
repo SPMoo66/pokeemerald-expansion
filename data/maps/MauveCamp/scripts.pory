@@ -222,10 +222,8 @@ script MauveCamp_Cynthia {
 				"appreciate a battle.\p"
 				"Steven was a good warmup, but show me\n"
 				"what you are made of, {PLAYER}!", MSGBOX_NPC)
-		setflag (FLAG_SUPERBOSS_TRAINER)
 		setflag (FLAG_IGNORE_LEVEL_SYNC)
 		trainerbattle_no_intro (TRAINER_CYNTHIA_EXP_1, "A superb style of battling.\pSteven, you've really declined if a child\nlike this puts up a better challenge…")
-		clearflag (FLAG_SUPERBOSS_TRAINER)
 		clearflag (FLAG_IGNORE_LEVEL_SYNC)
 	}
 	speakername (CommonText_Cynthia)

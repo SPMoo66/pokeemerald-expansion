@@ -1,12 +1,15 @@
 #include "global.h"
 #include "main.h"
 #include "battle.h"
+#include "battle_main.h"
 #include "battle_partner.h"
 #include "battle_frontier.h"
 #include "data.h"
 #include "frontier_util.h"
 #include "difficulty.h"
+#include "malloc.h"
 #include "string_util.h"
+#include "trainer_util.h"
 #include "text.h"
 
 #include "constants/abilities.h"
@@ -28,6 +31,7 @@ void FillPartnerParty(u16 trainerId)
     u32 ivs, level, personality;
     u16 monId;
     u32 otID;
+
     u8 trainerName[(PLAYER_NAME_LENGTH * 3) + 1];
     enum DifficultyLevel difficulty = GetBattlePartnerDifficultyLevel(trainerId);
     SetFacilityPtrsGetLevel();
@@ -37,8 +41,14 @@ void FillPartnerParty(u16 trainerId)
     {
         s32 lastIndex = AreMultiPartiesFullTeams() ? PARTY_SIZE : MULTI_PARTY_SIZE;
 
-        for (i = 0; i < lastIndex && i < gBattlePartners[difficulty][trainerId - TRAINER_PARTNER(PARTNER_NONE)].partySize; i++)
+        const struct Trainer *partner = GetTrainerStructFromId(trainerId);
+        struct TrainerGenerator partnerGen;
+        MakePartnerGenerator(&partnerGen, partner);
+        if (trainerId == TRAINER_PARTNER(PARTNER_STEVEN_MOSSDEEP))
+            partnerGen.otID = OTID_STRUCT_PRESET(STEVEN_OTID);
+        for (i = 0; i < lastIndex && i < partner->partySize; i++)
         {
+//<<<<<<< HEAD
             const struct TrainerMon *partyData = gBattlePartners[difficulty][trainerId - TRAINER_PARTNER(PARTNER_NONE)].party;
             const u8 *partnerName = gBattlePartners[difficulty][trainerId - TRAINER_PARTNER(PARTNER_NONE)].trainerName;
 
@@ -119,6 +129,8 @@ void FillPartnerParty(u16 trainerId)
             SetMonData(&gParties[B_TRAINER_PARTNER][i], MON_DATA_OT_NAME, trainerName);
             j = gBattlePartners[difficulty][partnerId].gender;
             SetMonData(&gParties[B_TRAINER_PARTNER][i], MON_DATA_OT_GENDER, &j);
+//=======
+//            GenerateMonFromTrainerMon(&gParties[B_TRAINER_PARTNER][i], &partner->party[i], &partnerGen);
         }
     }
     else if (trainerId == TRAINER_EREADER)
@@ -130,7 +142,7 @@ void FillPartnerParty(u16 trainerId)
     {
         level = SetFacilityPtrsGetLevel();
         ivs = GetFrontierTrainerFixedIvs(trainerId);
-        otID = Random32();
+        u32 otID = Random32();
         for (i = 0; i < FRONTIER_MULTI_PARTY_SIZE; i++)
         {
             monId = gSaveBlock2Ptr->frontier.trainerIds[i + 18];

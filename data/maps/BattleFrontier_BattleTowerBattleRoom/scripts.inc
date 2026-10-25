@@ -52,7 +52,7 @@ BattleFrontier_BattleTowerBattleRoom_EventScript_DefeatedOpponent::
 	call BattleFrontier_EventScript_IncrementWinStreak
 	tower_setbattlewon
 	switch VAR_RESULT
-	case 7, BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobbyWon
+	case FRONTIER_STAGES_PER_CHALLENGE, BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobbyWon
 	applymovement LOCALID_TOWER_BATTLE_OPPONENT, Common_Movement_WalkUp4
 	waitmovement 0
 	removeobject LOCALID_TOWER_BATTLE_OPPONENT

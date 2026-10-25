@@ -1,5 +1,6 @@
 #include "global.h"
 #include "battle.h"
+#include "battle_ai_util.h"
 #include "battle_anim.h"
 #include "battle_controllers.h"
 #include "battle_message.h"
@@ -44,15 +45,14 @@
 static u32 BattlerHPPercentage(enum BattlerId battler, enum ComparisonOperators operation, u32 threshold);
 static u32 GetPartyMonCount(u32 lastId, struct Pokemon *party, bool32 onlyAlive);
 static bool32 DoesTrainerHaveSlideMessage(enum DifficultyLevel difficulty, u32 trainerId, u32 slideId);
-static bool32 ShouldRunTrainerSlidePlayerLandsFirstCriticalHit(enum BattlerId battler, enum TrainerSlideType slideId);
-static bool32 ShouldRunTrainerSlideEnemyLandsFirstCriticalHit(enum BattlerId battler, enum TrainerSlideType slideId);
-static bool32 ShouldRunTrainerSlidePlayerLandsFirstSuperEffectiveHit(enum BattlerId battler, enum TrainerSlideType slideId);
-static bool32 ShouldRunTrainerSlidePlayerLandsFirstSTABMove(u32 lastId, enum BattlerId battler, enum TrainerSlideType slideId);
-static bool32 ShouldRunTrainerSlidePlayerLandsFirstDown(u32 lastId, enum BattlerId battler);
-static bool32 ShouldRunTrainerSlideEnemyMonUnaffected(u32 lastId, enum BattlerId battler, enum TrainerSlideType slideId);
-static bool32 ShouldRunTrainerSlideLastSwitchIn(enum BattlerId battler);
-static bool32 ShouldRunTrainerSlideLastHalfHP(u32 lastId, enum BattlerId battler);
-static bool32 ShouldRunTrainerSlideLastLowHp(u32 lastId, enum BattlerId battler);
+static bool32 ShouldRunTrainerSlideLandsFirstCriticalHit(enum BattlerId battler, enum TrainerSlideType slideId);
+static bool32 ShouldRunTrainerSlideLandsFirstSuperEffectiveHit(enum BattlerId battler, enum TrainerSlideType slideId);
+static bool32 ShouldRunTrainerSlideLandsFirstSTABMove(u32 lastId, enum BattlerId battler, enum TrainerSlideType slideId);
+static bool32 ShouldRunTrainerSlideLandsFirstDown(u32 lastId, enum BattlerId battler, enum TrainerSlideType slideId);
+static bool32 ShouldRunTrainerSlideMonUnaffected(u32 lastId, enum BattlerId battler, enum TrainerSlideType slideId);
+static bool32 ShouldRunTrainerSlideLastSwitchIn(enum BattlerId battler, enum TrainerSlideType slideId);
+static bool32 ShouldRunTrainerSlideLastHalfHP(u32 lastId, enum BattlerId battler, enum TrainerSlideType slideId);
+static bool32 ShouldRunTrainerSlideLastLowHp(u32 lastId, enum BattlerId battler, enum TrainerSlideType slideId);
 static void SetTrainerSlideParameters(enum BattlerId battler, u32* lastId, u32* trainerId, u32* retValue);
 static bool32 IsSlideInitalizedOrPlayed(enum BattlerId battler, enum TrainerSlideType slideId);
 
@@ -192,303 +192,303 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINER_PARTNER(PARTNER_
     {
         [TRAINER_ROXANNE_1] =
 		{
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = sText_FirstDownRoxanne,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchRoxanne,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownRoxanne,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchRoxanne,
         },
         [TRAINER_BRAWLY_1] =
 		{
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = sText_FirstDownBrawly,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchBrawly,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownBrawly,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchBrawly,
         },
         [TRAINER_WATTSON_1] =
 		{
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = sText_FirstDownWattson,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchWattson,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownWattson,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchWattson,
         },
         [TRAINER_FLANNERY_1] =
 		{
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = sText_FirstDownFlannery,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchFlannery
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownFlannery,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchFlannery
         },
         [TRAINER_NORMAN_1] =
 		{
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = sText_FirstDownNorman,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchNorman
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownNorman,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchNorman
         },
         [TRAINER_WINONA_1] =
 		{
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = sText_FirstDownWinona,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchWinona
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownWinona,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchWinona
         },
         [TRAINER_TATE_AND_LIZA_1] =
 		{
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = sText_FirstDownLizaTate,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_MegaLizaTate,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchLizaTate
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownLizaTate,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaLizaTate,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchLizaTate
         },
         [TRAINER_JUAN_1] =
 		{
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = sText_FirstDownJuan,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_MegaJuan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchJuan
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownJuan,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaJuan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchJuan
         },
         [TRAINER_SIDNEY] =
 		{
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = sText_FirstDownSidney,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_MegaSidney,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchSidney,
-            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalfSidney
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownSidney,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaSidney,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchSidney,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalfSidney
         },
         [TRAINER_PHOEBE] =
 		{
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = sText_FirstDownPhoebe,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_MegaPhoebe,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchPhoebe,
-            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalfPhoebe
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownPhoebe,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaPhoebe,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchPhoebe,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalfPhoebe
         },
         [TRAINER_GLACIA] =
 		{
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = sText_FirstDownGlacia,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_MegaGlacia,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchGlacia,
-            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalfGlacia
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownGlacia,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaGlacia,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchGlacia,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalfGlacia
         },
         [TRAINER_DRAKE] =
 		{
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = sText_FirstDownDrake,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_MegaDrake,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchDrake,
-            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalfDrake
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownDrake,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaDrake,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchDrake,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalfDrake
         },
         [TRAINER_WALLACE] =
 		{
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurnWallace,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = sText_FirstDownWallace,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_MegaWallace,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchWallace,
-            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalfWallace
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownWallace,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaWallace,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchWallace,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalfWallace
         },
         [TRAINER_ARCHIE] =
 		{
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_MegaArchie,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchArchie,
-            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalfArchie,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT] = sText_CriticalHitArchie
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaArchie,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchArchie,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalfArchie,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_CRITICAL_HIT] = sText_CriticalHitArchie
         },
         [TRAINER_MAXIE_MT_CHIMNEY] =
 		{
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchMaxieMtChimney,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT] = sText_CriticalHitMaxie
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchMaxieMtChimney,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_CRITICAL_HIT] = sText_CriticalHitMaxie
         },
         [TRAINER_MAXIE_MAGMA_HIDEOUT] =
 		{
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_MegaMaxieMagmaHideout,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchMaxieMagmaHideout,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT] = sText_CriticalHitMaxie
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaMaxieMagmaHideout,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchMaxieMagmaHideout,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_CRITICAL_HIT] = sText_CriticalHitMaxie
         },
         [TRAINER_MAXIE_MOSSDEEP] =
 		{
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitchMaxieMossdeep,
-            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalfMaxieMossdeep,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT] = sText_CriticalHitMaxie
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchMaxieMossdeep,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalfMaxieMossdeep,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_CRITICAL_HIT] = sText_CriticalHitMaxie
         },
         [TRAINER_GIOVANNI_REFUGE] =
 		{
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("You're about to learn why you\nshouldn't have interfered!{PAUSE_UNTIL_PRESS}"),
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("More power! Obey me!!{PAUSE_UNTIL_PRESS}"),
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Arrgh!! This isn't over!!{PAUSE_UNTIL_PRESS}")
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = COMPOUND_STRING("More power! Obey me!!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = COMPOUND_STRING("Arrgh!! This isn't over!!{PAUSE_UNTIL_PRESS}")
         },
         [TRAINER_BRENDAN_ROUTE_103_MUDKIP] = 
         {
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Brendan,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Brendan,
         },
         [TRAINER_BRENDAN_ROUTE_103_TORCHIC] = 
         {
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Brendan,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Brendan,
         },
         [TRAINER_BRENDAN_ROUTE_103_TREECKO] = 
         {
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Brendan,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Brendan,
         },
         [TRAINER_MAY_ROUTE_103_MUDKIP] = 
         {
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_May,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_May,
         },
         [TRAINER_MAY_ROUTE_103_TORCHIC] = 
         {
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_May,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_May,
         },
         [TRAINER_MAY_ROUTE_103_TREECKO] = 
         {
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_May,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_May,
         },
         [TRAINER_BRENDAN_RUSTBORO_MUDKIP] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
         },
         [TRAINER_BRENDAN_RUSTBORO_TORCHIC] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
         },
         [TRAINER_BRENDAN_RUSTBORO_TREECKO] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
         },
         [TRAINER_MAY_RUSTBORO_MUDKIP] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_May,
         },
         [TRAINER_MAY_RUSTBORO_TORCHIC] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_May,
         },
         [TRAINER_MAY_RUSTBORO_TREECKO] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_May,
         },
         [TRAINER_BRENDAN_ROUTE_110_MUDKIP] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
         },
         [TRAINER_BRENDAN_ROUTE_110_TORCHIC] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
         },
         [TRAINER_BRENDAN_ROUTE_110_TREECKO] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
         },
         [TRAINER_MAY_ROUTE_110_MUDKIP] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_May,
         },
         [TRAINER_MAY_ROUTE_110_TORCHIC] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_May,
         },
         [TRAINER_MAY_ROUTE_110_TREECKO] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_May,
         },
         [TRAINER_BRENDAN_ROUTE_119_MUDKIP] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
         },
         [TRAINER_BRENDAN_ROUTE_119_TORCHIC] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
         },
         [TRAINER_BRENDAN_ROUTE_119_TREECKO] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
         },
         [TRAINER_MAY_ROUTE_119_MUDKIP] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_May,
         },
         [TRAINER_MAY_ROUTE_119_TORCHIC] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_May,
         },
         [TRAINER_MAY_ROUTE_119_TREECKO] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_May,
         },
         [TRAINER_BRENDAN_LILYCOVE_MUDKIP] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_Brendan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_Mega_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
         },
         [TRAINER_BRENDAN_LILYCOVE_TORCHIC] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_Brendan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_Mega_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
         },
         [TRAINER_BRENDAN_LILYCOVE_TREECKO] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_Brendan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_Mega_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
         },
         [TRAINER_MAY_LILYCOVE_MUDKIP] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_May,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_Mega_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_May,
         },
         [TRAINER_MAY_LILYCOVE_TORCHIC] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_May,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_Mega_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_May,
         },
         [TRAINER_MAY_LILYCOVE_TREECKO] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_May,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_Mega_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_May,
         },
         [TRAINER_BRENDAN_SKY_PILLAR_MUDKIP] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_Brendan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
-            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalf_Brendan,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_Mega_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalf_Brendan,
         },
         [TRAINER_BRENDAN_SKY_PILLAR_TORCHIC] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_Brendan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
-            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalf_Brendan,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_Mega_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalf_Brendan,
         },
         [TRAINER_BRENDAN_SKY_PILLAR_TREECKO] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_Brendan,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_Brendan,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
-            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalf_Brendan,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_Mega_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_Brendan,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalf_Brendan,
         },
         [TRAINER_MAY_SKY_PILLAR_MUDKIP] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_May,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
-            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalf_May,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_Mega_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalf_May,
         },
         [TRAINER_MAY_SKY_PILLAR_TORCHIC] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_May,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
-            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalf_May,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_Mega_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalf_May,
         },
         [TRAINER_MAY_SKY_PILLAR_TREECKO] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurn_May,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = sText_Mega_May,
-            [TRAINER_SLIDE_LAST_SWITCHIN] = sText_LastSwitch_May,
-            [TRAINER_SLIDE_LAST_HALF_HP] = sText_LastHalf_May,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_Mega_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitch_May,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalf_May,
         },
         [TRAINER_WALLY_MAUVILLE] = 
         {
@@ -501,197 +501,197 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINER_PARTNER(PARTNER_
         [TRAINER_WALLY_VR_1] = 
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Let's go, team!{PAUSE_UNTIL_PRESS}"),
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Come on, Gallade!{PAUSE_UNTIL_PRESS}"),
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Not so fast, {B_PLAYER_NAME}!\nIt's not over yet!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = COMPOUND_STRING("Come on, Gallade!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = COMPOUND_STRING("Not so fast, {B_PLAYER_NAME}!\nIt's not over yet!{PAUSE_UNTIL_PRESS}"),
         },
 
         [TRAINER_JAKSON_1] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Jakson1,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Jakson1,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Jakson1,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Jakson1,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Jakson1,
         },
         [TRAINER_HARPER_1] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Harper1,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Harper1,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Harper1,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Harper1,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Harper1,
         },
         [TRAINER_REDD_1] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Redd1,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Redd1,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Redd1,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Redd1,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Redd1,
         },
         [TRAINER_SAKURA_1] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Sakura1,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Sakura1,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Sakura1,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Sakura1,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Sakura1,
         },
         [TRAINER_BARON_1] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Baron1,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Baron1,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Baron1,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Baron1,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Baron1,
         },
 
         [TRAINER_JAKSON_2] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Jakson2,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Jakson2,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Jakson2,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Jakson2,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Jakson2,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Jakson2,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Jakson2,
         },
         [TRAINER_HARPER_2] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Harper2,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Harper2,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Harper2,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Harper2,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Harper2,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Harper2,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Harper2,
         },
         [TRAINER_REDD_2] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Redd2,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Redd2,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Redd2,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Redd2,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Redd2,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Redd2,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Redd2,
         },
         [TRAINER_SAKURA_2] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Sakura2,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Sakura2,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Sakura2,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Sakura2,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Sakura2,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Sakura2,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Sakura2,
         },
         [TRAINER_BARON_2] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Baron2,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Baron2,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Baron2,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Baron2,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Baron2,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Baron2,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Baron2,
         },
 
         [TRAINER_JAKSON_3] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Jakson2,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Jakson2,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Jakson2,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Jakson2,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Jakson2,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Jakson2,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Jakson2,
         },
         [TRAINER_HARPER_3] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Harper2,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Harper2,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Harper2,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Harper2,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Harper2,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Harper2,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Harper2,
         },
         [TRAINER_REDD_3] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Redd2,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Redd2,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Redd2,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Redd2,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Redd2,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Redd2,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Redd2,
         },
         [TRAINER_SAKURA_3] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Sakura2,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Sakura2,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Sakura2,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Sakura2,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Sakura2,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Sakura2,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Sakura2,
         },
         [TRAINER_BARON_3] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Baron2,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Baron2,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Baron2,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Baron2,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Baron2,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Baron2,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Baron2,
         },
 
         [TRAINER_JAKSON_4] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Jakson2,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Jakson2,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Jakson2,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Jakson2,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Jakson2,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Jakson2,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Jakson2,
         },
         [TRAINER_HARPER_4] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Harper2,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Harper2,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Harper2,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Harper2,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Harper2,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Harper2,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Harper2,
         },
         [TRAINER_REDD_4] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Redd2,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Redd2,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Redd2,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Redd2,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Redd2,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Redd2,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Redd2,
         },
         [TRAINER_SAKURA_4] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Sakura2,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Sakura2,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Sakura2,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Sakura2,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Sakura2,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Sakura2,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Sakura2,
         },
         [TRAINER_BARON_4] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Baron2,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Baron2,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Baron2,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Baron2,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Baron2,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Baron2,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Baron2,
         },
 
         [TRAINER_JAKSON_5] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Jakson3,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Jakson3,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] =                         sText_MegaEvolution_Jakson,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Jakson3,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Jakson3,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Jakson3,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] =                         sText_MegaEvolution_Jakson,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Jakson3,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Jakson3,
         },
         [TRAINER_HARPER_5] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Harper3,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Harper3,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] =                         sText_MegaEvolution_Harper,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Harper3,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Harper3,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Harper3,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] =                         sText_MegaEvolution_Harper,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Harper3,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Harper3,
         },
         [TRAINER_REDD_5] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Redd3,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Redd3,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] =                         sText_MegaEvolution_Redd,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Redd3,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Redd3,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Redd3,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] =                         sText_MegaEvolution_Redd,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Redd3,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Redd3,
         },
         [TRAINER_SAKURA_5] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Sakura3,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Sakura3,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] =                         sText_MegaEvolution_Sakura,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Sakura3,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Sakura3,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Sakura3,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] =                         sText_MegaEvolution_Sakura,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Sakura3,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Sakura3,
         },
         [TRAINER_BARON_5] =
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] =                      sText_BeforeFirstTurn_Baron3,
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Baron3,
-            [TRAINER_SLIDE_MEGA_EVOLUTION] =                         sText_MegaEvolution_Baron,
-            [TRAINER_SLIDE_LAST_SWITCHIN] =                          sText_LastSwitch_Baron3,
-            [TRAINER_SLIDE_LAST_HALF_HP] =                           sText_LastHalf_Baron3,
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = sText_FirstSuperEffectiveHit_Baron3,
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] =                         sText_MegaEvolution_Baron,
+            [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] =                          sText_LastSwitch_Baron3,
+            [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] =                           sText_LastHalf_Baron3,
         },
         [TRAINER_EXP_1_FINAL_BATTLE_2] =
         {
-            [TRAINER_SLIDE_LAST_LOW_HP] = sText_LowHP_Exp1FinalBoss,
+            [TRAINER_SLIDE_OPPONENT_LAST_LOW_HP] = sText_LowHP_Exp1FinalBoss,
         },
         [TRAINER_STEVEN_EXP_1] =
         {
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = COMPOUND_STRING("Haha!\nGreat one, {B_PLAYER_NAME}!\lHow are you liking my team so far?{PAUSE_UNTIL_PRESS}"),
-            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("And now, a classic!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = COMPOUND_STRING("Haha!\nGreat one, {B_PLAYER_NAME}!\lHow are you liking my team so far?{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = COMPOUND_STRING("And now, a classic!{PAUSE_UNTIL_PRESS}"),
         },
     },
 };
@@ -800,18 +800,24 @@ void SetTrainerSlideMessage(enum DifficultyLevel difficulty, u32 trainerId, u32 
         gBattleStruct->trainerSlideMsg = trainerSlidesNormal[slideId];
 }
 
-static bool32 ShouldRunTrainerSlidePlayerLandsFirstCriticalHit(enum BattlerId battler, enum TrainerSlideType slideId)
+static bool32 ShouldRunTrainerSlideLandsFirstCriticalHit(enum BattlerId battler, enum TrainerSlideType slideId)
 {
     return IsTrainerSlideInitialized(battler, slideId);
 }
 
-static bool32 ShouldRunTrainerSlideEnemyLandsFirstCriticalHit(enum BattlerId battler, enum TrainerSlideType slideId)
+static bool32 ShouldRunTrainerSlideLandsFirstSuperEffectiveHit(enum BattlerId battler, enum TrainerSlideType slideId)
 {
-    return IsTrainerSlideInitialized(battler, slideId);
-}
+    if (slideId == TRAINER_SLIDE_DEFENDER_TAKES_FIRST_SUPER_EFFECTIVE_HIT)
+    {
+        if (GetBattlerSide(battler) == GetBattlerSide(gBattlerAttacker))
+            return FALSE;
+    }
+    else
+    {
+        if (GetBattlerSide(battler) != GetBattlerSide(gBattlerAttacker))
+            return FALSE;
+    }
 
-static bool32 ShouldRunTrainerSlidePlayerLandsFirstSuperEffectiveHit(enum BattlerId battler, enum TrainerSlideType slideId)
-{
     if (!IsTrainerSlideInitialized(battler, slideId))
         return FALSE;
 
@@ -821,7 +827,7 @@ static bool32 ShouldRunTrainerSlidePlayerLandsFirstSuperEffectiveHit(enum Battle
     return TRUE;
 }
 
-static bool32 ShouldRunTrainerSlidePlayerLandsFirstSTABMove(u32 lastId, enum BattlerId battler, enum TrainerSlideType slideId)
+static bool32 ShouldRunTrainerSlideLandsFirstSTABMove(u32 lastId, enum BattlerId battler, enum TrainerSlideType slideId)
 {
     if (!IsTrainerSlideInitialized(battler, slideId))
         return FALSE;
@@ -832,12 +838,20 @@ static bool32 ShouldRunTrainerSlidePlayerLandsFirstSTABMove(u32 lastId, enum Bat
     return TRUE;
 }
 
-static bool32 ShouldRunTrainerSlidePlayerLandsFirstDown(u32 lastId, enum BattlerId battler)
+static bool32 ShouldRunTrainerSlideLandsFirstDown(u32 lastId, enum BattlerId battler, enum TrainerSlideType slideId)
 {
-    return ((GetPartyMonCount(lastId, GetBattlerParty(battler), TRUE) == (GetPartyMonCount(lastId, GetBattlerParty(battler), FALSE) - 1)));
+    if (gBattlerFainted == GetPartnerBattler(battler))
+        return FALSE;
+
+    enum BattlerId partyBattler = battler;
+
+    if (slideId == TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN)
+        partyBattler = gBattlerFainted;
+
+    return ((GetPartyMonCount(lastId, GetBattlerParty(partyBattler), TRUE) == (GetPartyMonCount(lastId, GetBattlerParty(partyBattler), FALSE) - 1)));
 }
 
-static bool32 ShouldRunTrainerSlideEnemyMonUnaffected(u32 lastId, enum BattlerId battler, enum TrainerSlideType slideId)
+static bool32 ShouldRunTrainerSlideMonUnaffected(u32 lastId, enum BattlerId battler, enum TrainerSlideType slideId)
 {
     if (!IsTrainerSlideInitialized(battler, slideId))
         return FALSE;
@@ -845,31 +859,81 @@ static bool32 ShouldRunTrainerSlideEnemyMonUnaffected(u32 lastId, enum BattlerId
     return (GetPartyMonCount(lastId, GetBattlerParty(battler), TRUE) == GetPartyMonCount(lastId, GetBattlerParty(battler), FALSE));
 }
 
-static bool32 ShouldRunTrainerSlideLastSwitchIn(enum BattlerId battler)
+static bool32 ShouldRunTrainerSlideLastSwitchIn(enum BattlerId battler, enum TrainerSlideType slideId)
 {
+    if (slideId == TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN)
+    {
+        enum BattlerId oppositeBattler = GetOppositeBattler(battler);
+        enum BattlerId oppositePartner = GetPartnerBattler(oppositeBattler);
+
+        return (CountUsablePartyMons(oppositeBattler) == 0 && CountUsablePartyMons(oppositePartner) == 0);
+    }
     return !CanBattlerSwitch(battler);
 }
 
-static bool32 ShouldRunTrainerSlideLastHalfHP(u32 lastId, enum BattlerId battler)
+static bool32 ShouldRunTrainerSlideLastHalfHP(u32 lastId, enum BattlerId battler, enum TrainerSlideType slideId)
 {
-    if (GetPartyMonCount(lastId, GetBattlerParty(battler), TRUE) != 1)
+    if (IsSlideInitalizedOrPlayed(battler, slideId))
         return FALSE;
 
-    if (BattlerHPPercentage(battler, GREATER_THAN, 2))
-        return FALSE;
+    if (slideId == TRAINER_SLIDE_OPPONENT_LAST_HALF_HP)
+    {
+        enum BattlerId oppositeBattler = GetOppositeBattler(battler);
+        enum BattlerId oppositePartner = GetPartnerBattler(oppositeBattler);
 
-    return (BattlerHPPercentage(battler, GREATER_THAN, 4));
+        bool32 oppositeLastMon = GetPartyMonCount(lastId, GetBattlerParty(oppositeBattler), TRUE) == 1;
+        bool32 partnerLastMon = GetPartyMonCount(lastId, GetBattlerParty(oppositePartner), TRUE) == 1;
+
+        if (!(oppositeLastMon || partnerLastMon))
+            return FALSE;
+
+        return ((oppositeLastMon && BattlerHPPercentage(oppositeBattler, GREATER_THAN, 4) && BattlerHPPercentage(oppositeBattler, LESS_THAN_OR_EQUAL, 2))
+         || (partnerLastMon && BattlerHPPercentage(oppositePartner, GREATER_THAN, 4) && BattlerHPPercentage(oppositePartner, LESS_THAN_OR_EQUAL, 2)));
+    }
+    else
+    {
+        if (GetPartyMonCount(lastId, GetBattlerParty(battler), TRUE) != 1)
+            return FALSE;
+
+        if (BattlerHPPercentage(battler, GREATER_THAN, 2))
+            return FALSE;
+
+        return (BattlerHPPercentage(battler, GREATER_THAN, 4));
+    }
 }
 
-static bool32 ShouldRunTrainerSlideLastLowHp(u32 lastId, enum BattlerId battler)
+static bool32 ShouldRunTrainerSlideLastLowHp(u32 lastId, enum BattlerId battler, enum TrainerSlideType slideId)
 {
-    if (GetPartyMonCount(lastId, GetBattlerParty(battler), TRUE) != 1)
+    if (IsSlideInitalizedOrPlayed(battler, slideId))
         return FALSE;
 
-    if (!IsBattlerAlive(battler))
-        return FALSE;
+    if (slideId == TRAINER_SLIDE_OPPONENT_LAST_LOW_HP)
+    {
+        enum BattlerId oppositeBattler = GetOppositeBattler(battler);
+        enum BattlerId oppositePartner = GetPartnerBattler(oppositeBattler);
 
-    return (BattlerHPPercentage(battler, LESS_THAN_OR_EQUAL, 4));
+        bool32 oppositeLastMon = GetPartyMonCount(lastId, GetBattlerParty(oppositeBattler), TRUE) == 1;
+        bool32 partnerLastMon = GetPartyMonCount(lastId, GetBattlerParty(oppositePartner), TRUE) == 1;
+
+        if (!(oppositeLastMon || partnerLastMon))
+            return FALSE;
+
+        if (!IsBattlerAlive(battler))
+            return FALSE;
+
+        return ((oppositeLastMon && BattlerHPPercentage(oppositeBattler, LESS_THAN_OR_EQUAL, 4))
+         || (partnerLastMon && BattlerHPPercentage(oppositePartner, LESS_THAN_OR_EQUAL, 4)));
+    }
+    else
+    {
+        if (GetPartyMonCount(lastId, GetBattlerParty(battler), TRUE) != 1)
+            return FALSE;
+
+        if (!IsBattlerAlive(battler))
+            return FALSE;
+
+        return (BattlerHPPercentage(battler, LESS_THAN_OR_EQUAL, 4));
+    }
 }
 
 static void SetTrainerSlideParameters(enum BattlerId battler, u32* lastId, u32* trainerId, u32* retValue)
@@ -894,10 +958,18 @@ static void SetTrainerSlideParameters(enum BattlerId battler, u32* lastId, u32* 
         *trainerId = gPartnerTrainerId;
         *retValue = TRAINER_SLIDE_TARGET_TRAINER_PARTNER;
     }
+    else if (BattlerIsPlayer(battler))
+    {
+        *trainerId = TRAINER_NONE;
+        *retValue = TRAINER_SLIDE_TARGET_NONE;
+    }
 }
 
 enum TrainerSlideTargets ShouldDoTrainerSlide(enum BattlerId battler, enum TrainerSlideType slideId)
 {
+    if (BattlerIsPlayer(battler))
+        return TRAINER_SLIDE_TARGET_NONE;
+
     u32 lastId = PARTY_SIZE, trainerId = TRAINER_BATTLE_PARAM.opponentA;
     u32 retValue = TRAINER_SLIDE_TARGET_TRAINER_A;
     bool32 shouldRun = FALSE;
@@ -926,42 +998,53 @@ enum TrainerSlideTargets ShouldDoTrainerSlide(enum BattlerId battler, enum Train
 
     switch (slideId)
     {
-    case TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT:
-        shouldRun = ShouldRunTrainerSlidePlayerLandsFirstCriticalHit(battler, slideId);
-        break;
-    case TRAINER_SLIDE_ENEMY_LANDS_FIRST_CRITICAL_HIT:
-        shouldRun = ShouldRunTrainerSlideEnemyLandsFirstCriticalHit(battler, slideId);
-        break;
-    case TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT:
-        shouldRun = ShouldRunTrainerSlidePlayerLandsFirstSuperEffectiveHit(battler, slideId);
-        break;
-    case TRAINER_SLIDE_PLAYER_LANDS_FIRST_STAB_MOVE:
-        shouldRun = ShouldRunTrainerSlidePlayerLandsFirstSTABMove(lastId, battler, slideId);
-        break;
-    case TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN:
-        shouldRun = ShouldRunTrainerSlidePlayerLandsFirstDown(lastId, battler);
-        break;
-    case TRAINER_SLIDE_ENEMY_MON_UNAFFECTED:
-        shouldRun = ShouldRunTrainerSlideEnemyMonUnaffected(lastId, battler, slideId);
-        break;
-    case TRAINER_SLIDE_LAST_SWITCHIN:
-        shouldRun = ShouldRunTrainerSlideLastSwitchIn(battler);
-        break;
-    case TRAINER_SLIDE_LAST_HALF_HP:
-        shouldRun = ShouldRunTrainerSlideLastHalfHP(lastId, battler);
-        break;
-    case TRAINER_SLIDE_LAST_LOW_HP:
-        shouldRun = ShouldRunTrainerSlideLastLowHp(lastId, battler);
-        if (shouldRun == TRUE && TRAINER_BATTLE_PARAM.opponentA == TRAINER_EXP_1_FINAL_BATTLE_2)
-            SetLastPokemonMusic();
-        break;
-    case TRAINER_SLIDE_BEFORE_FIRST_TURN:
-    case TRAINER_SLIDE_MEGA_EVOLUTION:
-    case TRAINER_SLIDE_Z_MOVE:
-    case TRAINER_SLIDE_DYNAMAX:
-        shouldRun = TRUE;
-        break;
-    default:
+        case TRAINER_SLIDE_DEFENDER_TAKES_FIRST_CRITICAL_HIT:
+        case TRAINER_SLIDE_ATTACKER_LANDS_FIRST_CRITICAL_HIT:
+            shouldRun = ShouldRunTrainerSlideLandsFirstCriticalHit(battler, slideId);
+            break;
+        case TRAINER_SLIDE_DEFENDER_TAKES_FIRST_SUPER_EFFECTIVE_HIT:
+        case TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT:
+            shouldRun = ShouldRunTrainerSlideLandsFirstSuperEffectiveHit(battler, slideId);
+            break;
+        case TRAINER_SLIDE_DEFENDER_TAKES_FIRST_STAB_MOVE:
+        case TRAINER_SLIDE_ATTACKER_LANDS_FIRST_STAB_MOVE:
+            shouldRun = ShouldRunTrainerSlideLandsFirstSTABMove(lastId, battler, slideId);
+            break;
+        case TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN:
+        case TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN:
+            shouldRun = ShouldRunTrainerSlideLandsFirstDown(lastId, battler, slideId);
+            break;
+        case TRAINER_SLIDE_OPPONENT_MON_UNAFFECTED:
+        case TRAINER_SLIDE_SELF_MON_UNAFFECTED:
+            shouldRun = ShouldRunTrainerSlideMonUnaffected(lastId, battler, slideId);
+            break;
+        case TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN:
+        case TRAINER_SLIDE_SELF_LAST_SWITCHIN:
+            shouldRun = ShouldRunTrainerSlideLastSwitchIn(battler, slideId);
+            break;
+        case TRAINER_SLIDE_OPPONENT_LAST_HALF_HP:
+        case TRAINER_SLIDE_SELF_LAST_HALF_HP:
+            shouldRun = ShouldRunTrainerSlideLastHalfHP(lastId, battler, slideId);
+            break;
+        case TRAINER_SLIDE_OPPONENT_LAST_LOW_HP:
+            shouldRun = ShouldRunTrainerSlideLastLowHp(lastId, battler, slideId);
+            if (shouldRun == TRUE && TRAINER_BATTLE_PARAM.opponentA == TRAINER_EXP_1_FINAL_BATTLE_2)
+                SetLastPokemonMusic();
+        case TRAINER_SLIDE_SELF_LAST_LOW_HP:
+            shouldRun = ShouldRunTrainerSlideLastLowHp(lastId, battler, slideId);
+            break;
+        case TRAINER_SLIDE_BEFORE_FIRST_TURN:
+        case TRAINER_SLIDE_ATTACKER_MEGA_EVOLUTION:
+        case TRAINER_SLIDE_ATTACKER_Z_MOVE:
+        case TRAINER_SLIDE_ATTACKER_DYNAMAX:
+        case TRAINER_SLIDE_ATTACKER_TERA:
+        case TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION:
+        case TRAINER_SLIDE_OPPONENT_Z_MOVE:
+        case TRAINER_SLIDE_OPPONENT_DYNAMAX:
+        case TRAINER_SLIDE_OPPONENT_TERA:
+            shouldRun = TRUE;
+            break;
+        default:
             return TRAINER_SLIDE_TARGET_NONE;
     }
 
@@ -990,23 +1073,51 @@ static bool32 IsSlideInitalizedOrPlayed(enum BattlerId battler, enum TrainerSlid
 
 void TryInitializeFirstSTABMoveTrainerSlide(enum BattlerId battlerDef, enum BattlerId battlerAtk, enum Type moveType)
 {
-    enum TrainerSlideType slideId = TRAINER_SLIDE_PLAYER_LANDS_FIRST_STAB_MOVE;
+    /*enum TrainerSlideType slideId = TRAINER_SLIDE_ATTACKER_LANDS_FIRST_STAB_MOVE;
+    enum BattlerId slideBattler = battlerAtk;
 
-    if (IsSlideInitalizedOrPlayed(battlerDef, slideId))
-        return;
+    if (BattlerIsPlayer(battlerAtk))
+    {
+        slideId = TRAINER_SLIDE_DEFENDER_TAKES_FIRST_STAB_MOVE;
+        slideBattler = battlerDef;
+    }
 
-    if ((IsOnPlayerSide(battlerDef)))
+    if (IsSlideInitalizedOrPlayed(slideBattler, slideId))
         return;
 
     if (IS_BATTLER_OF_TYPE(battlerAtk, moveType) == FALSE)
         return;
 
-    InitalizeTrainerSlide(battlerDef, slideId);
+    InitalizeTrainerSlide(slideBattler, slideId);*/
+
+    enum TrainerSlideType slideId = TRAINER_SLIDE_ATTACKER_LANDS_FIRST_STAB_MOVE;
+    enum BattlerId slideBattler = battlerAtk;
+    bool32 skip = FALSE;
+
+    if (IsSlideInitalizedOrPlayed(slideBattler, slideId))
+        skip = TRUE;
+
+    if (IS_BATTLER_OF_TYPE(battlerAtk, moveType) == FALSE)
+        return;
+
+    if (GetBattlerSide(battlerDef) == GetBattlerSide(battlerAtk))
+        return;
+
+    if (!skip)
+        InitalizeTrainerSlide(slideBattler, slideId);
+
+    slideId = TRAINER_SLIDE_DEFENDER_TAKES_FIRST_STAB_MOVE;
+    slideBattler = battlerDef;
+
+    if (IsSlideInitalizedOrPlayed(slideBattler, slideId))
+        return;
+
+    InitalizeTrainerSlide(slideBattler, slideId);
 }
 
-void TryInitializeTrainerSlidePlayerLandsFirstCriticalHit(u32 target)
+void TryInitializeTrainerSlidePlayerLandsFirstCriticalHit(enum BattlerId target)
 {
-    enum TrainerSlideType slideId = TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT;
+    enum TrainerSlideType slideId = TRAINER_SLIDE_DEFENDER_TAKES_FIRST_CRITICAL_HIT;
 
     if (IsSlideInitalizedOrPlayed(target, slideId))
         return;
@@ -1017,9 +1128,9 @@ void TryInitializeTrainerSlidePlayerLandsFirstCriticalHit(u32 target)
     InitalizeTrainerSlide(target, slideId);
 }
 
-void TryInitializeTrainerSlideEnemyLandsFirstCriticalHit(u32 target)
+void TryInitializeTrainerSlideEnemyLandsFirstCriticalHit(enum BattlerId target)
 {
-    enum TrainerSlideType slideId = TRAINER_SLIDE_ENEMY_LANDS_FIRST_CRITICAL_HIT;
+    enum TrainerSlideType slideId = TRAINER_SLIDE_ATTACKER_LANDS_FIRST_CRITICAL_HIT;
 
     if (IsSlideInitalizedOrPlayed(gBattlerAttacker, slideId))
         return;
@@ -1030,30 +1141,52 @@ void TryInitializeTrainerSlideEnemyLandsFirstCriticalHit(u32 target)
     InitalizeTrainerSlide(gBattlerAttacker, slideId);
 }
 
-void TryInitializeTrainerSlidePlayerLandsFirstSuperEffectiveHit(u32 target)
+void TryInitializeTrainerSlideLandsFirstSuperEffectiveHit(enum BattlerId battlerDef, enum BattlerId battlerAtk)
 {
-    enum TrainerSlideType slideId = TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT;
+    enum TrainerSlideType slideId = TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT;
+    enum BattlerId slideBattler = battlerAtk;
+    bool32 skip = FALSE;
 
-    if (IsSlideInitalizedOrPlayed(target, slideId))
+    if (IsSlideInitalizedOrPlayed(slideBattler, slideId))
+        skip = TRUE;
+
+    if (GetBattlerSide(battlerDef) == GetBattlerSide(battlerAtk))
         return;
 
-    if (IsOnPlayerSide(target))
+    if (!skip)
+        InitalizeTrainerSlide(slideBattler, slideId);
+
+    slideId = TRAINER_SLIDE_DEFENDER_TAKES_FIRST_SUPER_EFFECTIVE_HIT;
+    slideBattler = battlerDef;
+
+    if (IsSlideInitalizedOrPlayed(slideBattler, slideId))
         return;
 
-    InitalizeTrainerSlide(target, slideId);
+    InitalizeTrainerSlide(slideBattler, slideId);
 }
 
-void TryInitializeTrainerSlideEnemyMonUnaffected(u32 target)
+void TryInitializeTrainerSlideMonUnaffected(enum BattlerId battlerDef, enum BattlerId battlerAtk)
 {
-    enum TrainerSlideType slideId = TRAINER_SLIDE_ENEMY_MON_UNAFFECTED;
+    enum TrainerSlideType slideId = TRAINER_SLIDE_OPPONENT_MON_UNAFFECTED;
+    enum BattlerId slideBattler = battlerAtk;
+    bool32 skip = FALSE;
 
-    if (IsSlideInitalizedOrPlayed(target, slideId))
+    if (IsSlideInitalizedOrPlayed(slideBattler, slideId))
+        skip = TRUE;
+
+    if (GetBattlerSide(battlerDef) == GetBattlerSide(battlerAtk))
         return;
 
-    if (IsOnPlayerSide(target))
+    if (!skip)
+        InitalizeTrainerSlide(slideBattler, slideId);
+
+    slideId = TRAINER_SLIDE_SELF_MON_UNAFFECTED;
+    slideBattler = battlerDef;
+
+    if (IsSlideInitalizedOrPlayed(slideBattler, slideId))
         return;
 
-    InitalizeTrainerSlide(target, slideId);
+    InitalizeTrainerSlide(slideBattler, slideId);
 }
 
 bool32 IsTrainerSlideInitialized(enum BattlerId battler, enum TrainerSlideType slideId)

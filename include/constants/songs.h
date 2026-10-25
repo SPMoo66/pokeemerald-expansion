@@ -337,7 +337,8 @@
 
 #define SONGS_START                       (SOUND_EFFECTS_END + 1)
 // Ruby & Sapphire Music 
-#define RS_MUSIC_START                    SONGS_START
+#define START_MUS                         SONGS_START
+#define RS_MUSIC_START                    START_MUS
 
 #define MUS_LITTLEROOT_TEST               322 // MUS_TETSUJI
 #define MUS_GSC_ROUTE38                   323 // MUS_FIELD13
@@ -960,7 +961,8 @@
 #define MUS_XD_VS_CIPHER_PEON                 907 // Battle! (Cipher Peon) (Pokémon XD: Gale of Darkness)
 #define MUS_KH1_DISAPPEARED                   908 // Disappeared (KH1FM)
 
-#define SONGS_END                         MUS_KH1_DISAPPEARED
+#define END_MUS                           MUS_KH1_DISAPPEARED
+#define SONGS_END                         END_MUS
 
 #define MUS_ROUTE118                      0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

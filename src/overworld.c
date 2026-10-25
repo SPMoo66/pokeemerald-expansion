@@ -61,6 +61,7 @@
 #include "script_pokemon_util.h"
 #include "secret_base.h"
 #include "sound.h"
+#include "sprite.h"
 #include "start_menu.h"
 #include "string_util.h"
 #include "task.h"
@@ -196,7 +197,6 @@ static void CameraCB_CreditsPan(struct CameraObject *camera);
 static void Task_OvwldCredits_FadeOut(u8 taskId);
 static void Task_OvwldCredits_WaitFade(u8 taskId);
 
-static void *sUnusedOverworldCallback;
 static u8 sPlayerLinkStates[MAX_LINK_PLAYERS];
 // This callback is called with a player's key code. It then returns an
 // adjusted key code, effectively intercepting the input before anything
@@ -836,11 +836,6 @@ static void SetWarpDestinationToContinueGameWarp(void)
     sWarpDestination = gSaveBlock1Ptr->continueGameWarp;
 }
 
-void SetContinueGameWarp(s8 mapGroup, s8 mapNum, s8 warpId, s8 x, s8 y)
-{
-    SetWarpData(&gSaveBlock1Ptr->continueGameWarp, mapGroup, mapNum, warpId, x, y);
-}
-
 void SetContinueGameWarpToHealLocation(u8 healLocationId)
 {
     const struct HealLocation *healLocation = GetHealLocation(healLocationId);
@@ -1162,12 +1157,6 @@ void SetObjectEventLoadFlag(u8 flag)
     sObjectEventLoadFlag = flag;
 }
 
-// sObjectEventLoadFlag is read directly
-static u8 UNUSED GetObjectEventLoadFlag(void)
-{
-    return sObjectEventLoadFlag;
-}
-
 static bool16 ShouldLegendaryMusicPlayAtLocation(struct WarpData *warp)
 {
     if (!FlagGet(FLAG_SYS_WEATHER_CTRL))
@@ -1240,6 +1229,20 @@ static bool16 IsInfiltratedSpaceCenter(struct WarpData *warp)
     return FALSE;
 }
 
+static const u16 sNightMusicTable[END_MUS - START_MUS] =
+{
+    // example usage: [MUS_SOOTOPOLIS - START_MUS] = MUS_LITTLEROOT,
+};
+
+static u16 GetNightMusicFromTrack(u16 track)
+{
+    if (GetTimeOfDay() != TIME_NIGHT)
+        return track;
+    if (sNightMusicTable[track - START_MUS] >= START_MUS && sNightMusicTable[track - START_MUS] <= END_MUS)
+        return sNightMusicTable[track - START_MUS];
+    return track;
+}
+
 u16 GetLocationMusic(struct WarpData *warp)
 {
     if (NoMusicInSootopolisWithLegendaries(warp) == TRUE)
@@ -1254,8 +1257,12 @@ u16 GetLocationMusic(struct WarpData *warp)
         return MUS_HG_SS_AQUA;
     else if (FlagGet(FLAG_DONT_START_MUSIC_ON_WARP))
         return MUS_NONE;
-    else
-        return Overworld_GetMapHeaderByGroupAndId(warp->mapGroup, warp->mapNum)->music;
+
+    const struct MapHeader *mapHeader = Overworld_GetMapHeaderByGroupAndId(warp->mapGroup, warp->mapNum);
+    if (mapHeader->nightMusic != MUS_NONE && GetTimeOfDay() == TIME_NIGHT)
+        return mapHeader->nightMusic;
+    
+    return mapHeader->music;
 }
 
 u16 GetCurrLocationDefaultMusic(void)
@@ -1328,6 +1335,8 @@ void Overworld_PlaySpecialMapMusic(void)
         }
     }
 
+    music = GetNightMusicFromTrack(music);
+
     if (music != GetCurrentMapMusic())
         PlayNewMapMusic(music);
 }
@@ -1365,6 +1374,7 @@ static void TransitionMapMusic(void)
                     newMusic = (IS_FRLG ? MUS_RG_SURF : MUS_SURF);
             }
         }
+        newMusic = GetNightMusicFromTrack(newMusic);
         if (newMusic != currentMusic)
         {
             if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_MACH_BIKE | PLAYER_AVATAR_FLAG_ACRO_BIKE))
@@ -1401,8 +1411,8 @@ u8 GetMapMusicFadeoutSpeed(void)
 void TryFadeOutOldMapMusic(void)
 {
     u16 currentMusic = GetCurrentMapMusic();
-    u16 warpMusic = GetWarpDestinationMusic();
-    if (!FlagGet(FLAG_DONT_TRANSITION_MUSIC) && warpMusic != GetCurrentMapMusic())
+    u16 warpMusic = GetNightMusicFromTrack(GetWarpDestinationMusic());
+    if (FlagGet(FLAG_DONT_TRANSITION_MUSIC) != TRUE && warpMusic != GetCurrentMapMusic())
     {
         if (currentMusic == MUS_SURF
             && VarGet(VAR_SKY_PILLAR_STATE) == 2
@@ -1931,12 +1941,6 @@ void SetMainCallback1(MainCallback cb)
     gMain.callback1 = cb;
 }
 
-// This function is never called.
-void SetUnusedCallback(void *func)
-{
-    sUnusedOverworldCallback = func;
-}
-
 static bool8 RunFieldCallback(void)
 {
     if (gFieldCallback2)
@@ -2244,7 +2248,7 @@ static void InitCurrentFlashLevelScanlineEffect(void)
 {
     u8 flashLevel;
 
-    if (InBattlePyramid_())
+    if (InBattlePyramid())
     {
         WriteBattlePyramidViewScanlineEffectBuffer();
         ScanlineEffect_SetParams(sFlashEffectParams);
@@ -3745,7 +3749,6 @@ bool8 GetSetItemObtained(enum Item item, enum ItemObtainFlags caseId)
 
 EWRAM_DATA static u8 sHeaderBoxWindowId = 0;
 EWRAM_DATA u8 sItemIconSpriteId = 0;
-EWRAM_DATA u8 sItemIconSpriteId2 = 0;
 
 static void ShowItemIconSprite(enum Item item, bool8 firstTime, bool8 flash);
 static void DestroyItemIconSprite(void);
@@ -3776,7 +3779,7 @@ void ScriptShowItemDescription(struct ScriptContext *ctx)
     u8 *dst;
     bool8 handleFlash = FALSE;
 
-    if (GetFlashLevel() > 0 || InBattlePyramid_())
+    if (GetFlashLevel() > 0 || InBattlePyramid())
         handleFlash = TRUE;
 
     if (headerType == 1) // berry
@@ -3830,7 +3833,6 @@ static void ShowItemIconSprite(enum Item item, bool8 firstTime, bool8 flash)
 {
     s16 x = 0, y = 0;
     u8 iconSpriteId;
-    u8 spriteId2 = MAX_SPRITES;
 
     if (flash)
     {
@@ -3839,8 +3841,10 @@ static void ShowItemIconSprite(enum Item item, bool8 firstTime, bool8 flash)
     }
 
     iconSpriteId = AddItemIconSprite(ITEM_TAG, ITEM_TAG, item);
+
     if (flash)
-        spriteId2 = AddItemIconSprite(ITEM_TAG, ITEM_TAG, item);
+        gSprites[iconSpriteId].copyToObjWin = TRUE;
+
     if (iconSpriteId != MAX_SPRITES)
     {
         if (!firstTime)
@@ -3861,15 +3865,6 @@ static void ShowItemIconSprite(enum Item item, bool8 firstTime, bool8 flash)
         gSprites[iconSpriteId].oam.priority = 0;
     }
 
-    if (spriteId2 != MAX_SPRITES)
-    {
-        gSprites[spriteId2].x2 = x;
-        gSprites[spriteId2].y2 = y;
-        gSprites[spriteId2].oam.priority = 0;
-        gSprites[spriteId2].oam.objMode = ST_OAM_OBJ_WINDOW;
-        sItemIconSpriteId2 = spriteId2;
-    }
-
     sItemIconSpriteId = iconSpriteId;
 }
 
@@ -3879,12 +3874,6 @@ static void DestroyItemIconSprite(void)
     FreeSpritePaletteByTag(ITEM_TAG);
     FreeSpriteOamMatrix(&gSprites[sItemIconSpriteId]);
     DestroySprite(&gSprites[sItemIconSpriteId]);
-
-    if ((GetFlashLevel() > 0 || InBattlePyramid_()) && sItemIconSpriteId2 != MAX_SPRITES)
-    {
-        FreeSpriteOamMatrix(&gSprites[sItemIconSpriteId2]);
-        DestroySprite(&gSprites[sItemIconSpriteId2]);
-    }
 }
 
 u8 OverworldSpeedup_AdditionalIterations(u16 speed, bool32 overworld)
@@ -3916,12 +3905,6 @@ u16 SetTimeOfDay(u16 hours)
     sHoursOverride = hours;
     gTimeUpdateCounter = 0;
     return oldHours;
-}
-
-bool8 ScrFunc_settimeofday(struct ScriptContext *ctx)
-{
-    SetTimeOfDay(ScriptReadByte(ctx));
-    return FALSE;
 }
 
 static const u8 sMapsecToRegion[] = {

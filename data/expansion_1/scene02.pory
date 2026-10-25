@@ -374,7 +374,9 @@ script Expansion1_Rival_Scene02e {
 		setvar (VAR_0x8004, 8)
 		special (GiveFrontierBattlePoints)
 		msgbox (PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS)
-		checkifmusicunlocked (4, 1)
+		if (flag(FLAG_RECEIVED_TUNING_FORK)) {
+			checkifmusicunlocked (4, 1)
+		}
 		call (EventScript_MusicUnlocked)
 		closemessage
 	}

@@ -48,8 +48,7 @@ MtChimney_EventScript_Maxie::
 	speakername (CommonText_Maxie)
 	msgbox MtChimney_Text_MaxieIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_MAXIE_MT_CHIMNEY, MtChimney_Text_MaxieDefeat
-	checkifmusicunlocked 0, 1
-	call EventScript_MusicUnlocked
+	call_if_set FLAG_RECEIVED_TUNING_FORK, MtChimney_EventScript_UnlockTuningForkMusic
 	speakername (CommonText_Maxie)
 	msgbox MtChimney_Text_MaxieYouHaventSeenLastOfMagma, MSGBOX_DEFAULT
 	closemessage
@@ -82,6 +81,11 @@ MtChimney_EventScript_Maxie::
 	setvar VAR_EMERALBODY_RIVAL_STATE, 8
 	releaseall
 	end
+
+MtChimney_EventScript_UnlockTuningForkMusic::
+	checkifmusicunlocked 0, 1
+	call EventScript_MusicUnlocked
+	return
 
 MtChimney_EventScript_ArchieApproachPlayerEast::
 	applymovement LOCALID_MT_CHIMNEY_ARCHIE, MtChimney_Movement_ArchieApproachPlayerEast

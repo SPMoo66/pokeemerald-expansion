@@ -31,7 +31,7 @@ IllusoryGrotto_B4F_2R_EventScript_WildPokemon::
 	checktrainerflag TRAINER_WILD_POKEMON_IG_1
 	goto_if 0, IllusoryGrotto_B4F_2R_EventScript_WildPokemon_2
 IllusoryGrotto_B4F_2R_EventScript_WildPokemon_1:
-# 43 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+# 45 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
 	setvar VAR_TEMP_3, 1
 	return
 
@@ -85,10 +85,16 @@ IllusoryGrotto_B4F_2R_EventScript_WildPokemon_2:
 # 38 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
 	removeobject 2
 # 39 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
-	checkifmusicunlocked 6, 1
-# 40 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
-	call EventScript_MusicUnlocked
-# 41 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+	goto_if_set FLAG_RECEIVED_TUNING_FORK, IllusoryGrotto_B4F_2R_EventScript_WildPokemon_5
+IllusoryGrotto_B4F_2R_EventScript_WildPokemon_4:
+# 43 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
 	release
 	goto IllusoryGrotto_B4F_2R_EventScript_WildPokemon_1
+
+IllusoryGrotto_B4F_2R_EventScript_WildPokemon_5:
+# 40 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+	checkifmusicunlocked 6, 1
+# 41 "data/maps/IllusoryGrotto_B4F_2R/scripts.pory"
+	call EventScript_MusicUnlocked
+	goto IllusoryGrotto_B4F_2R_EventScript_WildPokemon_4
 

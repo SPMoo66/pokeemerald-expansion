@@ -152,8 +152,10 @@ script MauveIslandWest_EventScript_Unknown {
 	delay (25)
 	removeobject (10)
 	delay (60)
-	checkifmusicunlocked (7, 1)
-	call (EventScript_MusicUnlocked)
+	if (flag(FLAG_RECEIVED_TUNING_FORK)) {
+		checkifmusicunlocked (7, 1)
+		call (EventScript_MusicUnlocked)
+	}
 	applymovement (LOCALID_PLAYER, Common_Movement_SweatDrop)
 	playse (SE_M_METRONOME)
 	delay (60)

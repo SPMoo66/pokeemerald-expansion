@@ -44,7 +44,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Wallace::
 
 EverGrandeCity_ChampionsRoom_EventScript_Defeated::
 	checkifmusicunlocked 1
-	call_if_eq VAR_RESULT, 0, EverGrandeCity_ChampionsRoom_EventScript_UnlockChampionMusicForFork
+	call_if_eq VAR_RESULT, 0, EverGrandeCity_ChampionsRoom_EventScript_OneMoreTuningForkCheck
 	playse SE_DOOR
 	setmetatile 6, 1, METATILE_EliteFour_OpenDoorChampion_Frame, FALSE
 	setmetatile 6, 2, METATILE_EliteFour_OpenDoorChampion_Opening, FALSE
@@ -62,6 +62,10 @@ EverGrandeCity_ChampionsRoom_EventScript_Defeated::
 	goto_if_eq VAR_RESULT, MALE, EverGrandeCity_ChampionsRoom_EventScript_MayAdvice
 	goto_if_eq VAR_RESULT, FEMALE, EverGrandeCity_ChampionsRoom_EventScript_BrendanAdvice
 	end
+
+EverGrandeCity_ChampionsRoom_EventScript_OneMoreTuningForkCheck::
+	call_if_set FLAG_RECEIVED_TUNING_FORK, EverGrandeCity_ChampionsRoom_EventScript_UnlockChampionMusicForFork
+	return
 
 EverGrandeCity_ChampionsRoom_EventScript_UnlockChampionMusicForFork::
 	checkifmusicunlocked 1, 1

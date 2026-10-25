@@ -87,10 +87,12 @@ BattleDialga::
 	goto_if_eq BattleDialga_2
 BattleDialga_1:
 # 45 "data/maps/TemporalSpire/scripts.pory"
-	checkifmusicunlocked 5, 1
+	checkifmusicunlocked 5
 # 46 "data/maps/TemporalSpire/scripts.pory"
-	call EventScript_MusicUnlocked
-# 47 "data/maps/TemporalSpire/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq BattleDialga_6
+BattleDialga_4:
+# 50 "data/maps/TemporalSpire/scripts.pory"
 	release
 	end
 
@@ -99,40 +101,52 @@ BattleDialga_2:
 	setflag FLAG_CAUGHT_DIALGA
 	goto BattleDialga_1
 
+BattleDialga_5:
+# 47 "data/maps/TemporalSpire/scripts.pory"
+	checkifmusicunlocked 5, 1
+# 48 "data/maps/TemporalSpire/scripts.pory"
+	call EventScript_MusicUnlocked
+	goto BattleDialga_4
+
+BattleDialga_6:
+# 46 "data/maps/TemporalSpire/scripts.pory"
+	goto_if_set FLAG_RECEIVED_TUNING_FORK, BattleDialga_5
+	goto BattleDialga_4
+
 
 BattlePalkia::
-# 52 "data/maps/TemporalSpire/scripts.pory"
-	lock
-# 53 "data/maps/TemporalSpire/scripts.pory"
-	faceplayer
-# 54 "data/maps/TemporalSpire/scripts.pory"
-	setvar VAR_LAST_TALKED, 3
 # 55 "data/maps/TemporalSpire/scripts.pory"
-	playmoncry SPECIES_PALKIA, CRY_MODE_ENCOUNTER
+	lock
 # 56 "data/maps/TemporalSpire/scripts.pory"
-	msgbox BattlePalkia_Text_0
+	faceplayer
 # 57 "data/maps/TemporalSpire/scripts.pory"
-	waitmoncry
+	setvar VAR_LAST_TALKED, 3
 # 58 "data/maps/TemporalSpire/scripts.pory"
-	setwildbattle SPECIES_PALKIA, 70
+	playmoncry SPECIES_PALKIA, CRY_MODE_ENCOUNTER
 # 59 "data/maps/TemporalSpire/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	msgbox BattlePalkia_Text_0
 # 60 "data/maps/TemporalSpire/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	waitmoncry
 # 61 "data/maps/TemporalSpire/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	setwildbattle SPECIES_PALKIA, 70
 # 62 "data/maps/TemporalSpire/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 63 "data/maps/TemporalSpire/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 64 "data/maps/TemporalSpire/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 65 "data/maps/TemporalSpire/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 66 "data/maps/TemporalSpire/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq BattlePalkia_2
 BattlePalkia_1:
-# 66 "data/maps/TemporalSpire/scripts.pory"
+# 69 "data/maps/TemporalSpire/scripts.pory"
 	release
 	end
 
 BattlePalkia_2:
-# 64 "data/maps/TemporalSpire/scripts.pory"
+# 67 "data/maps/TemporalSpire/scripts.pory"
 	setflag FLAG_CAUGHT_PALKIA
 	goto BattlePalkia_1
 
@@ -142,5 +156,5 @@ BattleDialga_Text_0:
 	.string "Gugyugubah!$"
 
 BattlePalkia_Text_0:
-# 56 "data/maps/TemporalSpire/scripts.pory"
+# 59 "data/maps/TemporalSpire/scripts.pory"
 	.string "Gagyagyaah!$"

@@ -42,8 +42,11 @@ script BattleDialga {
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
 		setflag (FLAG_CAUGHT_DIALGA)
 	}
-	checkifmusicunlocked (5, 1)
-	call (EventScript_MusicUnlocked)
+	checkifmusicunlocked (5) // This is to check so we don't 'unlock' the music every time you fight Dialga, only the first
+	if (var(VAR_RESULT) == 0 && flag(FLAG_RECEIVED_TUNING_FORK)) {
+		checkifmusicunlocked (5, 1)
+		call (EventScript_MusicUnlocked)
+	}
 	release
 	end
 }

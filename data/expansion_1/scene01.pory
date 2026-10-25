@@ -482,8 +482,10 @@ script IllusoryGrotto_B4F_1R_Scene01_OnFrame {
 	animateflash (0)
 	setflashlevel (0)
 
-	checkifmusicunlocked (3, 1)
-	call (EventScript_MusicUnlocked)
+	if (flag(FLAG_RECEIVED_TUNING_FORK)) {
+		checkifmusicunlocked (3, 1)
+		call (EventScript_MusicUnlocked)
+	}
 	playbgm (MUS_DP_VICTORY_ROAD, FALSE)
 	setvar (VAR_EMERALBODY_RIVAL_STATE, 21)
 	clearflag (FLAG_DONT_START_MUSIC_ON_WARP)

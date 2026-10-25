@@ -667,12 +667,18 @@ Expansion1_Rival_Scene02e_4:
 # 376 "data/expansion_1/scene02.pory"
 	msgbox PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS
 # 377 "data/expansion_1/scene02.pory"
-	checkifmusicunlocked 4, 1
-# 378 "data/expansion_1/scene02.pory"
+	goto_if_set FLAG_RECEIVED_TUNING_FORK, Expansion1_Rival_Scene02e_7
+Expansion1_Rival_Scene02e_6:
+# 380 "data/expansion_1/scene02.pory"
 	call EventScript_MusicUnlocked
-# 379 "data/expansion_1/scene02.pory"
+# 381 "data/expansion_1/scene02.pory"
 	closemessage
 	return
+
+Expansion1_Rival_Scene02e_7:
+# 378 "data/expansion_1/scene02.pory"
+	checkifmusicunlocked 4, 1
+	goto Expansion1_Rival_Scene02e_6
 
 
 Expansion1_Rival_Scene02_Text_0:

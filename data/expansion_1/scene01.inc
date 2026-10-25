@@ -860,24 +860,30 @@ IllusoryGrotto_B4F_1R_Scene01_OnFrame::
 # 483 "data/expansion_1/scene01.pory"
 	setflashlevel 0
 # 485 "data/expansion_1/scene01.pory"
-	checkifmusicunlocked 3, 1
-# 486 "data/expansion_1/scene01.pory"
-	call EventScript_MusicUnlocked
-# 487 "data/expansion_1/scene01.pory"
-	playbgm MUS_DP_VICTORY_ROAD, FALSE
-# 488 "data/expansion_1/scene01.pory"
-	setvar VAR_EMERALBODY_RIVAL_STATE, 21
+	goto_if_set FLAG_RECEIVED_TUNING_FORK, IllusoryGrotto_B4F_1R_Scene01_OnFrame_2
+IllusoryGrotto_B4F_1R_Scene01_OnFrame_1:
 # 489 "data/expansion_1/scene01.pory"
-	clearflag FLAG_DONT_START_MUSIC_ON_WARP
+	playbgm MUS_DP_VICTORY_ROAD, FALSE
 # 490 "data/expansion_1/scene01.pory"
-	setflag FLAG_CANT_USE_ESCAPE_ROPE
+	setvar VAR_EMERALBODY_RIVAL_STATE, 21
 # 491 "data/expansion_1/scene01.pory"
-	setflag FLAG_EXPANSION_1_LEVEL_CAP
+	clearflag FLAG_DONT_START_MUSIC_ON_WARP
 # 492 "data/expansion_1/scene01.pory"
-	special ShowMapNamePopup
+	setflag FLAG_CANT_USE_ESCAPE_ROPE
 # 493 "data/expansion_1/scene01.pory"
+	setflag FLAG_EXPANSION_1_LEVEL_CAP
+# 494 "data/expansion_1/scene01.pory"
+	special ShowMapNamePopup
+# 495 "data/expansion_1/scene01.pory"
 	release
 	return
+
+IllusoryGrotto_B4F_1R_Scene01_OnFrame_2:
+# 486 "data/expansion_1/scene01.pory"
+	checkifmusicunlocked 3, 1
+# 487 "data/expansion_1/scene01.pory"
+	call EventScript_MusicUnlocked
+	goto IllusoryGrotto_B4F_1R_Scene01_OnFrame_1
 
 
 Expansion1_Rival_Scene01_Text_0:

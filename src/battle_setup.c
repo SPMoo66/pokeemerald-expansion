@@ -1305,7 +1305,8 @@ static void BattleSetup_ConfigureApproachingFacilityTrainerBattle(TrainerBattleP
     SetMapVarsToTrainerA();
 
     PUSH(EventSnippet_StartTrainerApproach)
-    PUSH(EventSnippet_PlayTrainerEncounterMusic)
+    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
+        PUSH(EventSnippet_PlayTrainerEncounterMusic)
     PUSH(EventSnippet_TrainerApproach)
     PUSH(EventSnippet_ShowTrainerIntroMsg)
 
@@ -1314,7 +1315,8 @@ static void BattleSetup_ConfigureApproachingFacilityTrainerBattle(TrainerBattleP
         SetMapVarsToTrainerB();
 
         PUSH(EventSnippet_PrepareSecondTrainerApproach)
-        PUSH(EventSnippet_PlayTrainerEncounterMusic)
+    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
+            PUSH(EventSnippet_PlayTrainerEncounterMusic)
         PUSH(EventSnippet_TrainerApproach)
         PUSH(EventSnippet_ShowTrainerIntroMsg)
     }
@@ -1336,7 +1338,8 @@ static void BattleSetup_ConfigureFacilityTrainerBattle(TrainerBattleParameter *b
         return;
     }
 
-    PUSH(EventSnippet_PlayTrainerEncounterMusic)
+    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
+        PUSH(EventSnippet_PlayTrainerEncounterMusic)
     PUSH(EventSnippet_SetTrainerFacingDirection)
     PUSH(EventSnippet_ShowTrainerIntroMsg)
     PUSH(EventSnippet_DoTrainerBattle)
@@ -1350,7 +1353,8 @@ static void BattleSetup_ConfigureApproachingTrainerBattle(TrainerBattleParameter
     SetMapVarsToTrainerA();
 
     PUSH       (EventSnippet_StartTrainerApproach)
-    PUSH_IF_SET(EventSnippet_PlayTrainerEncounterMusic, battleParams->params.playMusicA)
+    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
+        PUSH_IF_SET(EventSnippet_PlayTrainerEncounterMusic, battleParams->params.playMusicA)
     PUSH       (EventSnippet_TrainerApproach)
     PUSH_IF_SET(EventSnippet_ShowTrainerIntroMsg, battleParams->params.introTextA)
 
@@ -1359,7 +1363,8 @@ static void BattleSetup_ConfigureApproachingTrainerBattle(TrainerBattleParameter
         SetMapVarsToTrainerB();
 
         PUSH       (EventSnippet_PrepareSecondTrainerApproach)
-        PUSH_IF_SET(EventSnippet_PlayTrainerEncounterMusic, battleParams->params.playMusicB)
+        if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
+            PUSH_IF_SET(EventSnippet_PlayTrainerEncounterMusic, battleParams->params.playMusicB)
         PUSH       (EventSnippet_TrainerApproach)
         PUSH_IF_SET(EventSnippet_ShowTrainerIntroMsg, battleParams->params.introTextB)
     }
@@ -1403,7 +1408,8 @@ static void BattleSetup_ConfigureTrainerBattle(TrainerBattleParameter *battlePar
     }
 #endif //FREE_MATCH_CALL
     
-    PUSH_IF_SET(EventSnippet_PlayTrainerEncounterMusic, battleParams->params.playMusicA)
+    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
+        PUSH_IF_SET(EventSnippet_PlayTrainerEncounterMusic, battleParams->params.playMusicA)
     PUSH_IF_SET(EventSnippet_SetTrainerFacingDirection, battleParams->params.facePlayer);
     PUSH_IF_SET(EventSnippet_ShowTrainerIntroMsg, battleParams->params.introTextA)
     PUSH_IF_ELSE(EventSnippet_DoRematchTrainerBattle, EventSnippet_DoTrainerBattle, battleParams->params.isRematch)

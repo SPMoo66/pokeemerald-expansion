@@ -784,6 +784,7 @@ static void (*const sTextPrinterTasks[])(u8 taskId) =
 
 enum BWCategoryIcon
 {
+    CATEGORY_ICON_NONE,
     CATEGORY_ICON_PHYSICAL,
     CATEGORY_ICON_SPECIAL,
     CATEGORY_ICON_STATUS,

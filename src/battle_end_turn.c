@@ -687,6 +687,10 @@ static bool32 HandleEndTurnWrap(enum BattlerId battler)
                 bindDamage = GetNonDynamaxMaxHP(battler) / (GetConfig(B_BINDING_DAMAGE) >= GEN_6 ? 6 : 8);
             else
                 bindDamage = GetNonDynamaxMaxHP(battler) / (GetConfig(B_BINDING_DAMAGE) >= GEN_6 ? 8 : 16);
+
+            if (IsAbilityAndRecord(battler, GetBattlerAbility(battler), ABILITY_GRIM_FAIRYTALE))
+                bindDamage /= 4;
+
             SetPassiveDamageAmount(battler, bindDamage);
         }
         else  // broke free

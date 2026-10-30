@@ -5701,6 +5701,10 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             break;
         }
         break;
+    case EFFECT_DYNAMAX_DOUBLE_DMG:
+        if (GetActiveGimmick(battlerDef) == GIMMICK_MEGA)
+            ADJUST_SCORE(GOOD_EFFECT);
+        break;
     default:
         break;
     } // move effect checks

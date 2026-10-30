@@ -20456,7 +20456,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Bleakwind Storm"),
         .description = COMPOUND_STRING(
             "Hits with brutal, cold winds.\n"
-            "May lower foes' Speed."),
+            "May cause frostbite."),
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 100 : 95,
         .type = TYPE_FLYING,

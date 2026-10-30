@@ -388,6 +388,12 @@
       "map": "MAP_SUBMERGED_CAVE_1F_3R",
       "x": 5,
       "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_ILLUSORY_GROTTO_EXTERIOR",
+      "map": "MAP_ILLUSORY_GROTTO_EXTERIOR",
+      "x": 12,
+      "y": 13
     }
   ]
 }

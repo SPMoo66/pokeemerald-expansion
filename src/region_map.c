@@ -1522,6 +1522,8 @@ static u8 GetMapsecType(mapsec_u16_t mapSecId)
         return FlagGet(FLAG_WORLD_MAP_ROUTE10_POKEMON_CENTER_1F) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     case MAPSEC_MAUVE_CAMP:
         return FlagGet(FLAG_LANDMARK_MAUVE_CAMP) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    case MAPSEC_ILLUSORY_GROTTO:
+        return FlagGet(FLAG_LANDMARK_BLANCHED_DEPTHS) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     default:
         return MAPSECTYPE_ROUTE;
     }
@@ -2401,6 +2403,11 @@ static const struct FlyLocation sRedOutlineFlyDestinations[] =
         .mapsec = MAPSEC_MAUVE_CAMP,
         .flag = FLAG_LANDMARK_MAUVE_CAMP,
     },
+    {
+        .regionMapType = REGION_MAP_EXPANSION_1,
+        .mapsec = MAPSEC_ILLUSORY_GROTTO,
+        .flag = FLAG_LANDMARK_BLANCHED_DEPTHS,
+    },
 };
 
 // Draw a red outline box on the mapsec if its corresponding flag has been set
@@ -2425,7 +2432,7 @@ static void TryCreateRedOutlineFlyDestIcons(void)
             GetMapSecDimensions(sRedOutlineFlyDestinations[i].mapsec, &x, &y, &width, &height);
             x = (x + MAPCURSOR_X_MIN) * 8;
             y = (y + MAPCURSOR_Y_MIN) * 8;
-            if (sRedOutlineFlyDestinations[i].regionMapType == REGION_MAP_EXPANSION_1)
+            if (sRedOutlineFlyDestinations[i].mapsec == MAPSEC_MAUVE_CAMP)
             {
                 x += 4;
                 y += 4;
@@ -2555,6 +2562,8 @@ u32 FilterFlyDestination(struct RegionMap* regionMap)
         return (FlagGet(FLAG_LANDMARK_POKEMON_LEAGUE) && regionMap->posWithinMapSec == 0 ? HEAL_LOCATION_EVER_GRANDE_CITY_POKEMON_LEAGUE : HEAL_LOCATION_EVER_GRANDE_CITY);
     case MAPSEC_MAUVE_CAMP:
         return HEAL_LOCATION_MAUVE_CAMP;
+    case MAPSEC_ILLUSORY_GROTTO:
+        return HEAL_LOCATION_ILLUSORY_GROTTO_EXTERIOR;
     default:
         if (sMapHealLocations[regionMap->mapSecId][2] != HEAL_LOCATION_NONE)
             return sMapHealLocations[regionMap->mapSecId][2];

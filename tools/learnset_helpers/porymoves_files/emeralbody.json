@@ -5830,6 +5830,27 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "FENNEKIN": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "BRAIXEN": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "DELPHOX": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "FROAKIE": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -5857,6 +5878,27 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "BUNNELBY": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "DIGGERSBY": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "FLETCHLING": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "FLETCHINDER": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -5875,12 +5917,40 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "VIVILLON": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "LITLEO": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "PYROAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
         "MOVE_EARTH_POWER"
 	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "FLABEBE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "FLOETTE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -5930,6 +6000,41 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "ESPURR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "MEOWSTIC_M": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "MEOWSTIC_F": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "HONEDGE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "DOUBLADE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "AEGISLASH": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -5942,6 +6047,13 @@
 		"MOVE_BEHEMOTH_BASH"
 	]
   },
+  "SPRITZEE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "AROMATISSE": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -5951,6 +6063,27 @@
 		"MOVE_FLEUR_CANNON"
 	]
   },
+  "SWIRLIX": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "SLURPUFF": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "INKAY": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "MALAMAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -5959,6 +6092,27 @@
     "TutorMoves": [
 		"MOVE_PSYCHO_BOOST"
 	]
+  },
+  "BINACLE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "BARBARACLE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "SKRELP": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
   },
   "DRAGALGE": {
       "LevelMoves": [],
@@ -5972,6 +6126,13 @@
 		"MOVE_STEAM_ERUPTION",
 		"MOVE_MALIGNANT_CHAIN"
     ]
+  },
+  "CLAUNCHER": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
   },
   "CLAWITZER": {
     "LevelMoves": [],
@@ -5999,6 +6160,13 @@
         "MOVE_VACUUM_WAVE",
         "MOVE_POWER_GEM"
 	],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "TYRUNT": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -6031,6 +6199,20 @@
 		"MOVE_DIAMOND_STORM"
 	]
   },
+  "SYLVEON": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "HAWLUCHA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "DEDENNE": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -6048,6 +6230,27 @@
     "TutorMoves": [
         "MOVE_DIAMOND_STORM"
     ]
+  },
+  "GOOMY": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "SLIGGOO": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "SLIGGOO_HISUI": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
   },
   "GOODRA": {
     "LevelMoves": [],
@@ -6079,6 +6282,13 @@
         "MOVE_BEHEMOTH_BLADE"
     ]
   },
+  "PHANTUMP": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "TREVENANT": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -6088,6 +6298,13 @@
         "MOVE_SHADOW_FORCE"
     ]
   },
+  "PUMPKABOO": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "GOURGEIST": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -6096,6 +6313,13 @@
     "TutorMoves": [
         "MOVE_SHADOW_FORCE"
     ]
+  },
+  "BERGMITE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
   },
   "AVALUGG": {
     "LevelMoves": [],

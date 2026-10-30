@@ -26291,6 +26291,11 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_MausholdFour[] = INCGFX_U16("graphics/pokemon/maushold/four/overworld_shiny.pal", ".gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_MausholdMega[] = INCGFX_U32("graphics/pokemon/maushold/mega/front.png", ".4bpp.smol");
+    const u32 gMonBackPic_MausholdMega[] = INCGFX_U32("graphics/pokemon/maushold/mega/back.png", ".4bpp.smol");
+    const u16 gMonPalette_MausholdMega[] = INCGFX_U16("graphics/pokemon/maushold/mega/normal.pal", ".gbapal");
+    const u16 gMonShinyPalette_MausholdMega[] = INCGFX_U16("graphics/pokemon/maushold/mega/shiny.pal", ".gbapal");
 #endif //P_FAMILY_TANDEMAUS
 
 #if P_FAMILY_FIDOUGH

@@ -3054,6 +3054,8 @@ static const u16 sOinkologneFormSpeciesIdTable[] = {
 static const u16 sMausholdFormSpeciesIdTable[] = {
     SPECIES_MAUSHOLD_THREE,
     SPECIES_MAUSHOLD_FOUR,
+    SPECIES_MAUSHOLD_THREE_MEGA,
+    SPECIES_MAUSHOLD_FOUR_MEGA,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_TANDEMAUS

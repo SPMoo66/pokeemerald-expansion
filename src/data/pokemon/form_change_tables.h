@@ -2539,6 +2539,24 @@ static const struct FormChange sEnamorusFormChangeTable[] =
 };
 #endif //P_FAMILY_ENAMORUS
 
+#if P_FAMILY_TANDEMAUS
+static const struct FormChange sMausholdThreeFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MAUSHOLD_THREE_MEGA, ITEM_MEGA_STONE_X},
+    {FORM_CHANGE_FAINT,                         SPECIES_MAUSHOLD_THREE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MAUSHOLD_THREE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMausholdFourFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MAUSHOLD_FOUR_MEGA, ITEM_MEGA_STONE_X},
+    {FORM_CHANGE_FAINT,                         SPECIES_MAUSHOLD_FOUR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MAUSHOLD_FOUR},
+    {FORM_CHANGE_TERMINATOR},
+};
+#endif //P_FAMILY_TANDEMAUS
+
 #if P_FAMILY_CAPSAKID
 static const struct FormChange sScovillainFormChangeTable[] =
 {

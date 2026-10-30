@@ -1381,6 +1381,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sMausholdLevelUpLearnset,
         .teachableLearnset = sMausholdTeachableLearnset,
         .formSpeciesIdTable = sMausholdFormSpeciesIdTable,
+        .formChangeTable = sMausholdThreeFormChangeTable,
     },
 
     [SPECIES_MAUSHOLD_FOUR] =
@@ -1446,6 +1447,139 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sMausholdLevelUpLearnset,
         .teachableLearnset = sMausholdTeachableLearnset,
         .formSpeciesIdTable = sMausholdFormSpeciesIdTable,
+        .formChangeTable = sMausholdFourFormChangeTable,
+    },
+
+    [SPECIES_MAUSHOLD_THREE_MEGA] =
+    {
+        .baseHP        = 74,
+        .baseAttack    = 125,
+        .baseDefense   = 90,
+        .baseSpeed     = 131,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .catchRate = 75,
+        .expYield = 165,
+        .evYield_Speed = 2,
+        .itemCommon = ITEM_SILK_SCARF,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_PARENTAL_BOND, ABILITY_PARENTAL_BOND, ABILITY_PARENTAL_BOND },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Maushold"),
+        .cryId = CRY_MAUSHOLD_THREE,
+        .natDexNum = NATIONAL_DEX_MAUSHOLD,
+        .categoryName = _("Family"),
+        .height = 3,
+        .weight = 28,
+        .description = COMPOUND_STRING(
+            "The larger pair protects the little\n"
+            "ones during battles. When facing\n"
+            "strong opponents, the whole group\n"
+            "will join the fight."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MausholdMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 12,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        .backPic = gMonBackPic_MausholdMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 15,
+        /*.backAnimId = BACK_ANIM_NONE,*/
+        .palette = gMonPalette_MausholdMega,
+        .shinyPalette = gMonShinyPalette_MausholdMega,
+        .iconSprite = gMonIcon_MausholdThree,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
+        SHADOW(0, -1, SHADOW_SIZE_L)
+        FOOTPRINT(MausholdThree)
+        OVERWORLD(
+            sPicTable_MausholdThree,
+            SIZE_32x32,
+            SHADOW_SIZE_S,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_MausholdThree,
+            gShinyOverworldPalette_MausholdThree
+        )
+        .levelUpLearnset = sMausholdLevelUpLearnset,
+        .teachableLearnset = sMausholdTeachableLearnset,
+        .formSpeciesIdTable = sMausholdFormSpeciesIdTable,
+        .formChangeTable = sMausholdThreeFormChangeTable,
+    },
+
+    [SPECIES_MAUSHOLD_FOUR_MEGA] =
+    {
+        .baseHP        = 74,
+        .baseAttack    = 125,
+        .baseDefense   = 90,
+        .baseSpeed     = 131,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .catchRate = 75,
+        .expYield = 165,
+        .evYield_Speed = 2,
+        .itemCommon = ITEM_SILK_SCARF,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_PARENTAL_BOND, ABILITY_PARENTAL_BOND, ABILITY_PARENTAL_BOND },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Maushold"),
+        .cryId = CRY_MAUSHOLD_FOUR,
+        .natDexNum = NATIONAL_DEX_MAUSHOLD,
+        .categoryName = _("Family"),
+        .height = 3,
+        .weight = 28,
+        .description = COMPOUND_STRING(
+            "The larger pair protects the little\n"
+            "ones during battles. When facing\n"
+            "strong opponents, the whole group\n"
+            "will join the fight."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MausholdMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 12,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        .backPic = gMonBackPic_MausholdMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 15,
+        /*.backAnimId = BACK_ANIM_NONE,*/
+        .palette = gMonPalette_MausholdMega,
+        .shinyPalette = gMonShinyPalette_MausholdMega,
+        .iconSprite = gMonIcon_MausholdFour,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
+        SHADOW(0, -1, SHADOW_SIZE_L)
+        FOOTPRINT(MausholdFour)
+        OVERWORLD(
+            sPicTable_MausholdFour,
+            SIZE_32x32,
+            SHADOW_SIZE_S,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_MausholdFour,
+            gShinyOverworldPalette_MausholdFour
+        )
+        .levelUpLearnset = sMausholdLevelUpLearnset,
+        .teachableLearnset = sMausholdTeachableLearnset,
+        .formSpeciesIdTable = sMausholdFormSpeciesIdTable,
+        .formChangeTable = sMausholdFourFormChangeTable,
     },
 #endif //P_FAMILY_TANDEMAUS
 

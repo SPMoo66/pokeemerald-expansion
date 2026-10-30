@@ -1193,7 +1193,7 @@ BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_1:
 # 520 "data/scripts/move_tutors.pory"
 	specialvar VAR_TEMP_1, GetFrontierBattlePoints
 # 521 "data/scripts/move_tutors.pory"
-	compare VAR_TEMP_1, 4
+	compare VAR_TEMP_1, 3
 	goto_if_ge BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_5
 BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection_4:
 # 524 "data/scripts/move_tutors.pory"
@@ -1235,7 +1235,7 @@ BattleFrontier_Lounge7_EventScript_TeachTutorMove::
 	goto_if_eq BattleFrontier_Lounge7_EventScript_TeachTutorMove_2
 BattleFrontier_Lounge7_EventScript_TeachTutorMove_1:
 # 536 "data/scripts/move_tutors.pory"
-	setvar VAR_0x8004, 4
+	setvar VAR_0x8004, 3
 # 537 "data/scripts/move_tutors.pory"
 	msgbox BattleFrontier_Lounge7_Text_IllTakeBattlePoints, MSGBOX_DEFAULT
 # 538 "data/scripts/move_tutors.pory"

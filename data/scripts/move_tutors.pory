@@ -518,7 +518,7 @@ script BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection {
 		}
 	}
 	specialvar (VAR_TEMP_1, GetFrontierBattlePoints)
-	if (var(VAR_TEMP_1) >= 4) {
+	if (var(VAR_TEMP_1) >= 3) {
 		goto (BattleFrontier_Lounge7_EventScript_TeachTutorMove)
 	}
 	msgbox (BattleFrontier_Lounge7_Text_HaventGotEnoughPoints, MSGBOX_DEFAULT)
@@ -533,7 +533,7 @@ script BattleFrontier_Lounge7_EventScript_TeachTutorMove {
 	if (var(VAR_RESULT) == FALSE) {
 		goto (BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect)
 	}
-	setvar (VAR_0x8004, 4)
+	setvar (VAR_0x8004, 3)
 	msgbox (BattleFrontier_Lounge7_Text_IllTakeBattlePoints, MSGBOX_DEFAULT)
 	special (TakeFrontierBattlePoints)
 	release

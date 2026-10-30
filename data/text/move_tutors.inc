@@ -301,11 +301,11 @@ BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack:
 BattleFrontier_Lounge7_Text_TeachWhichMove:
 	.string "Fine, fine, look here!\n"
 	.string "Which move should I teach?\l"
-	.string "All of them will run you 4BP.$"
+	.string "All of them will run you 3BP.$"
 
 BattleFrontier_Lounge7_Text_MoveWillBe4BattlePoints:
 	.string "The move {STR_VAR_1}, is it?\n"
-	.string "That will be 4 Battle Points, okay?$"
+	.string "That will be 3 Battle Points, okay?$"
 
 BattleFrontier_Lounge7_Text_TeachMoveToWhichMon:
 	.string "Fine, fine, now pick the Pokémon\n"

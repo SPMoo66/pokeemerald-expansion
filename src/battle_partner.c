@@ -77,9 +77,9 @@ void FillPartnerParty(u16 trainerId)
 
             personality = Random32();
             if (partyData[i].gender == TRAINER_MON_MALE)
-                personality = (personality & 0xFFFFFF00) | GeneratePersonalityForGender(MON_MALE, partyData[i].species);
+                personality = (personality & 0xFFFFFF00) | GeneratePersonalityForGender(MON_MALE, partyData[i].species, Random32());
             else if (partyData[i].gender == TRAINER_MON_FEMALE)
-                personality = (personality & 0xFFFFFF00) | GeneratePersonalityForGender(MON_FEMALE, partyData[i].species);
+                personality = (personality & 0xFFFFFF00) | GeneratePersonalityForGender(MON_FEMALE, partyData[i].species, Random32());
             ModifyPersonalityForNature(&personality, partyData[i].nature);
             if (gSaveBlock2Ptr->optionsLevelSync) // Checks if the level sync option is set
                 CreateMon(&gParties[B_TRAINER_PARTNER][i], partyData[i].species, GetMaxLevel(0) - 2, personality, OTID_STRUCT_PRESET(otID));

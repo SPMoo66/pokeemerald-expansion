@@ -676,7 +676,11 @@ static enum ItemEffect TryFrostOrb(enum BattlerId battler)
     enum ItemEffect effect = ITEM_NO_EFFECT;
     enum Ability ability = GetBattlerAbility(battler);
 
-    if (CanBeFrozen(battler, battler, ability))
+    gBattleStruct->ignoreOrbFailure = TRUE;
+    bool32 canBeFrostbitten = CanBeFrozen(battler, battler, ability);
+    gBattleStruct->ignoreOrbFailure = FALSE;
+
+    if (canBeFrostbitten)
     {
         gBattleMons[battler].status1 = STATUS1_FROSTBITE;
         gEffectBattler = battler;

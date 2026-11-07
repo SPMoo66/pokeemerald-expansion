@@ -3590,7 +3590,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Constrict"),
         .description = COMPOUND_STRING(
             "Constricts to inflict pain.\n"
-            "May lower Speed."),
+            "Lowers Speed."),
         .effect = EFFECT_HIT,
         .power = 15,
         .type = TYPE_NORMAL,

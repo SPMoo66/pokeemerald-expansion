@@ -1484,7 +1484,7 @@ EventScript_TuningForkRetroactiveUpdates_16:
 
 Baron_Town01_Text_0:
 # 110 "data/emeralbody_rivals/rival_scripts.pory"
-	.string "Left foot… Right foot…\nLeft foot… Right foot…$"
+	.string "Left foot… {PAUSE 60}Right foot…{PAUSE 60}\nLeft foot… {PAUSE 60}Right foot…$"
 
 Rival_Scene03_Text_0:
 # 322 "data/emeralbody_rivals/rival_scripts.pory"

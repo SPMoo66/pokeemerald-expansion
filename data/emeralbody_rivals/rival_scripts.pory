@@ -107,7 +107,7 @@ script Baron_Town01 {
 	applymovement (BARON_LITTLEROOT, Baron_Town01_Move)
 	waitmovement (0)
 	speakername (CommonText_Baron)
-	msgbox("Left foot… Right foot…\nLeft foot… Right foot…")
+	msgbox("Left foot… {PAUSE 60}Right foot…{PAUSE 60}\nLeft foot… {PAUSE 60}Right foot…")
 	closemessage
 	faceplayer
 	playse (SE_PIN)

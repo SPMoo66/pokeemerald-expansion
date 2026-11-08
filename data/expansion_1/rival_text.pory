@@ -19,7 +19,7 @@ text Call1_JaksonText {
 			"I can't believe you're all still\n"
 			"playing enough to contact you\l"
 			"in-game…\p"
-			"A- {PAUSE 30}Anyway, to the point.\p"
+			"A-{PAUSE 30}Anyway, to the point.\p"
 			"It was… {PAUSE 100}a bit of a rush job… {PAUSE 100}but…{PAUSE 100}\n"
 			"I was able to put together a nice\l"
 			"surprise for the whole group.\p"
@@ -152,7 +152,7 @@ text Exp1_Town02_BaronText {
 			"I was going to go after them, but I keep\n"
 			"thinking I'll get some tropical disease\l"
 			"if I make the wrong step…\p"
-			"I- {PAUSE 30}I know it's just digital…{PAUSE 100}\n"
+			"I-{PAUSE 30}I know it's just digital…{PAUSE 100}\n"
 			"Still…\p"
 			"Would you go on ahead and search for\n"
 			"me?")
@@ -304,7 +304,7 @@ text Exp1_Town04_JaksonText {
 			"game design than I thought she did.\p"
 			"It certainly helped us get back on\n"
 			"track… {PAUSE 100}I'll have to thank her.\p"
-			"O- {PAUSE 30}Oh! No, I haven't forgotten you.\p"
+			"O-{PAUSE 30}Oh! No, I haven't forgotten you.\p"
 			"Thank you for going with her to\n"
 			"retrieve the explosives key item.\p"
 			"I'm glad our intuition was correct.")
@@ -339,7 +339,7 @@ text Exp1_Town05_BaronText {
 			"Whenever I have to go underwater like\n"
 			"that I always feel the urge to hold my\l"
 			"breath.\p"
-			"Y- {PAUSE 30}Yeah… {PAUSE 100}in real life.\p"
+			"Y-{PAUSE 30}Yeah… {PAUSE 100}in real life.\p"
 			"It ends up making me feel a little dizzy.")
 }
 

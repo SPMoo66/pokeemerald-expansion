@@ -32,6 +32,9 @@ static const u16 sMugshotPal_Jigglypuff[] = INCGFX_U16("graphics/mugshots/jiggly
 static const u32 sMugshotImg_CynthiasChallenge[] = INCGFX_U32("graphics/mugshots/cynthias_challenge.png", ".4bpp.smol");
 static const u16 sMugshotPal_CynthiasChallenge[] = INCGFX_U16("graphics/mugshots/cynthias_challenge.png", ".gbapal");
 
+static const u32 sMugshotImg_AWaltzWithWally[] = INCGFX_U32("graphics/mugshots/a_waltz_with_wally.png", ".4bpp.smol");
+static const u16 sMugshotPal_AWaltzWithWally[] = INCGFX_U16("graphics/mugshots/a_waltz_with_wally.png", ".gbapal");
+
 
 // !!!!! IMPORTANT !!!!!
 // .baseBlock determines which range in tile memory that the mugshot is drawn.
@@ -54,6 +57,7 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_JIGGLYPUFF_1] = {.x = 0, .y = 1, .width = 96, .height = 96, .image = sMugshotImg_Jigglypuff1, .palette = sMugshotPal_Jigglypuff, .baseBlock = 0x40},
     [MUGSHOT_JIGGLYPUFF_2] = {.x = 0, .y = 1, .width = 96, .height = 96, .image = sMugshotImg_Jigglypuff2, .palette = sMugshotPal_Jigglypuff, .baseBlock = 0x40},
     [MUGSHOT_CYNTHIAS_CHALLENGE] = {.x = 8, .y = 1, .width = 128, .height = 32, .image = sMugshotImg_CynthiasChallenge, .palette = sMugshotPal_CynthiasChallenge, .baseBlock = 0x10},
+    [MUGSHOT_A_WALTZ_WITH_WALLY] = {.x = 8, .y = 1, .width = 128, .height = 32, .image = sMugshotImg_AWaltzWithWally, .palette = sMugshotPal_AWaltzWithWally, .baseBlock = 0x10},
 };
 
 

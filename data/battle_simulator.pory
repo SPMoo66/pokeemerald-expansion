@@ -261,8 +261,7 @@ script CynthiasChallenge_Series3 {
 script AWaltzWithWally_Main {
 	setflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
 	setflag (FLAG_CHALLENGING_TRAINER)
-//	setvar (VAR_0x8000, MUGSHOT_A_WALTZ_WITH_WALLY)
-	setvar (VAR_0x8000, MUGSHOT_CYNTHIAS_CHALLENGE)
+	setvar (VAR_0x8000, MUGSHOT_A_WALTZ_WITH_WALLY)
 	callnative (DrawMugshot)
 	msgbox ("Welcome to A Waltz with Wally!\n"
 			"Please select a battle series.")
@@ -286,6 +285,8 @@ script AWaltzWithWally_Main {
 
 
 script AWaltzWithWally_Series1 {
+	fadescreen (FADE_FROM_BLACK)
+	delay (20)
 	call (Motel_BattleSimulator_FinalTrainer)
 	multi_2_vs_2 (TRAINER_SIMULATOR_ROXANNE, RustboroCity_Gym_Text_RoxanneRematchDefeat, TRAINER_SIMULATOR_WATTSON, MauvilleCity_Gym_Text_WattsonRematchDefeat, PARTNER_WALLY_SIMULATOR)
 	if (var(VAR_RESULT) == B_OUTCOME_LOST || var(VAR_RESULT) == B_OUTCOME_FORFEITED) {

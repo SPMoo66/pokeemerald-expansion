@@ -456,86 +456,90 @@ AWaltzWithWally_Main::
 	setflag FLAG_NO_MONEY_LOSS_ON_DEFEAT
 # 263 "data/battle_simulator.pory"
 	setflag FLAG_CHALLENGING_TRAINER
+# 264 "data/battle_simulator.pory"
+	setvar VAR_0x8000, MUGSHOT_A_WALTZ_WITH_WALLY
 # 265 "data/battle_simulator.pory"
-	setvar VAR_0x8000, MUGSHOT_CYNTHIAS_CHALLENGE
-# 266 "data/battle_simulator.pory"
 	callnative DrawMugshot
-# 267 "data/battle_simulator.pory"
+# 266 "data/battle_simulator.pory"
 	msgbox AWaltzWithWally_Main_Text_0
-# 269 "data/battle_simulator.pory"
+# 268 "data/battle_simulator.pory"
 	goto_if_unset FLAG_BATTLESIM_DISC_2_1, AWaltzWithWally_Main_2
-# 273 "data/battle_simulator.pory"
+# 272 "data/battle_simulator.pory"
 	dynmultipush AWaltzWithWally_Main_Text_2, 0
 AWaltzWithWally_Main_1:
-# 275 "data/battle_simulator.pory"
+# 274 "data/battle_simulator.pory"
 	dynmultistack 0, 6, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE
-# 276 "data/battle_simulator.pory"
+# 275 "data/battle_simulator.pory"
 	callnative ClearMugshot
-# 277 "data/battle_simulator.pory"
+# 276 "data/battle_simulator.pory"
 	switch VAR_RESULT
-# 278 "data/battle_simulator.pory"
+# 277 "data/battle_simulator.pory"
 	case 0, AWaltzWithWally_Main_6
 	return
 
 AWaltzWithWally_Main_2:
-# 270 "data/battle_simulator.pory"
+# 269 "data/battle_simulator.pory"
 	dynmultipush AWaltzWithWally_Main_Text_1, 0
 	goto AWaltzWithWally_Main_1
 
 AWaltzWithWally_Main_6:
-# 279 "data/battle_simulator.pory"
+# 278 "data/battle_simulator.pory"
 	fadeoutbgm 0
-# 280 "data/battle_simulator.pory"
+# 279 "data/battle_simulator.pory"
 	fadescreen FADE_TO_BLACK
-# 281 "data/battle_simulator.pory"
+# 280 "data/battle_simulator.pory"
 	warpcontinuescript MAP_LILYCOVE_CITY_BATTLE_SIMULATOR, 1, 2, AWaltzWithWally_Series1
 	return
 
 
 AWaltzWithWally_Series1::
+# 288 "data/battle_simulator.pory"
+	fadescreen FADE_FROM_BLACK
 # 289 "data/battle_simulator.pory"
-	call Motel_BattleSimulator_FinalTrainer
+	delay 20
 # 290 "data/battle_simulator.pory"
-	multi_2_vs_2 TRAINER_SIMULATOR_ROXANNE, RustboroCity_Gym_Text_RoxanneRematchDefeat, TRAINER_SIMULATOR_WATTSON, MauvilleCity_Gym_Text_WattsonRematchDefeat, PARTNER_WALLY_SIMULATOR
+	call Motel_BattleSimulator_FinalTrainer
 # 291 "data/battle_simulator.pory"
+	multi_2_vs_2 TRAINER_SIMULATOR_ROXANNE, RustboroCity_Gym_Text_RoxanneRematchDefeat, TRAINER_SIMULATOR_WATTSON, MauvilleCity_Gym_Text_WattsonRematchDefeat, PARTNER_WALLY_SIMULATOR
+# 292 "data/battle_simulator.pory"
 	compare VAR_RESULT, B_OUTCOME_LOST
 	goto_if_eq AWaltzWithWally_Series1_2
-# 291 "data/battle_simulator.pory"
+# 292 "data/battle_simulator.pory"
 	compare VAR_RESULT, B_OUTCOME_FORFEITED
 	goto_if_eq AWaltzWithWally_Series1_2
 AWaltzWithWally_Series1_1:
-# 295 "data/battle_simulator.pory"
-	call Motel_BattleSimulator_Congratulations
 # 296 "data/battle_simulator.pory"
+	call Motel_BattleSimulator_Congratulations
+# 297 "data/battle_simulator.pory"
 	goto_if_unset FLAG_BATTLESIM_DISC_2_1, AWaltzWithWally_Series1_7
-# 306 "data/battle_simulator.pory"
+# 307 "data/battle_simulator.pory"
 	giveitem ITEM_BALM_MUSHROOM, 1
 AWaltzWithWally_Series1_6:
-# 308 "data/battle_simulator.pory"
+# 309 "data/battle_simulator.pory"
 	goto Motel_BattleSimulator_ExitSimulation
 	return
 
 AWaltzWithWally_Series1_2:
-# 292 "data/battle_simulator.pory"
-	fadescreen FADE_TO_BLACK
 # 293 "data/battle_simulator.pory"
+	fadescreen FADE_TO_BLACK
+# 294 "data/battle_simulator.pory"
 	special SetCB2WhiteOut
 	goto AWaltzWithWally_Series1_1
 
 AWaltzWithWally_Series1_7:
-# 297 "data/battle_simulator.pory"
-	giveitem ITEM_STELLAR_TERA_SHARD, 2
 # 298 "data/battle_simulator.pory"
-	giveitem ITEM_EXP_CANDY_XL, 2
+	giveitem ITEM_STELLAR_TERA_SHARD, 2
 # 299 "data/battle_simulator.pory"
-	buffernumberstring STR_VAR_1, 5
+	giveitem ITEM_EXP_CANDY_XL, 2
 # 300 "data/battle_simulator.pory"
-	setvar VAR_0x8004, 5
+	buffernumberstring STR_VAR_1, 5
 # 301 "data/battle_simulator.pory"
-	special GiveFrontierBattlePoints
+	setvar VAR_0x8004, 5
 # 302 "data/battle_simulator.pory"
-	msgbox PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS
+	special GiveFrontierBattlePoints
 # 303 "data/battle_simulator.pory"
+	msgbox PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS
+# 304 "data/battle_simulator.pory"
 	setflag FLAG_BATTLESIM_DISC_2_1
 	goto AWaltzWithWally_Series1_6
 
@@ -694,16 +698,16 @@ CynthiasChallenge_Series3_Text_4:
 	.string "…Just a few moments ago, you were the\nmost powerful challenger. And just now,\lyou became the most powerful of all the\lTrainers.$"
 
 AWaltzWithWally_Main_Text_0:
-# 267 "data/battle_simulator.pory"
+# 266 "data/battle_simulator.pory"
 	.string "Welcome to A Waltz with Wally!\n"
 	.string "Please select a battle series.$"
 
 AWaltzWithWally_Main_Text_1:
-# 270 "data/battle_simulator.pory"
+# 269 "data/battle_simulator.pory"
 	.string "Part 1$"
 
 AWaltzWithWally_Main_Text_2:
-# 273 "data/battle_simulator.pory"
+# 272 "data/battle_simulator.pory"
 	.string "Part 1 - Complete!$"
 
 Gamecube_Text_Congratulations::

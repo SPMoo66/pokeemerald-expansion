@@ -10359,7 +10359,7 @@ static const struct TrainerMon sParty_Edwin5[] = {
 
 static const struct TrainerMon sParty_WallyVR1[] = {
     {
-    .ball = POKEBALL_COUNT,
+    .ball = BALL_NEST,
     .lvl = 56,
     .species = SPECIES_GYARADOS,
     .ability = ABILITY_INTIMIDATE,
@@ -10368,7 +10368,7 @@ static const struct TrainerMon sParty_WallyVR1[] = {
     .gender = TRAINER_MON_RANDOM_GENDER,
     },
     {
-    .ball = POKEBALL_COUNT,
+    .ball = BALL_NEST,
     .lvl = 56,
     .species = SPECIES_KROOKODILE,
     .ability = ABILITY_INTIMIDATE,
@@ -10377,7 +10377,7 @@ static const struct TrainerMon sParty_WallyVR1[] = {
     .gender = TRAINER_MON_RANDOM_GENDER,
     },
     {
-    .ball = POKEBALL_COUNT,
+    .ball = BALL_NEST,
     .lvl = 57,
     .species = SPECIES_GOLISOPOD,
     .ability = ABILITY_EMERGENCY_EXIT,
@@ -10386,7 +10386,7 @@ static const struct TrainerMon sParty_WallyVR1[] = {
     .gender = TRAINER_MON_RANDOM_GENDER,
     },
     {
-    .ball = POKEBALL_COUNT,
+    .ball = BALL_NEST,
     .lvl = 57,
     .species = SPECIES_VOLCARONA,
     .ability = ABILITY_COSTAR,
@@ -10395,7 +10395,7 @@ static const struct TrainerMon sParty_WallyVR1[] = {
     .gender = TRAINER_MON_RANDOM_GENDER,
     },
     {
-    .ball = POKEBALL_COUNT,
+    .ball = BALL_NEST,
     .lvl = 59,
     .species = SPECIES_SOLGALEO,
     .ability = ABILITY_FULL_METAL_BODY,
@@ -10404,7 +10404,7 @@ static const struct TrainerMon sParty_WallyVR1[] = {
     .gender = TRAINER_MON_RANDOM_GENDER,
     },
     {
-    .ball = POKEBALL_COUNT,
+    .ball = BALL_NEST,
     .lvl = 59,
     .species = SPECIES_GALLADE,
     .ability = ABILITY_SHARPNESS,
@@ -13737,14 +13737,14 @@ static const struct TrainerMon sParty_Ashley[] = {
 
 static const struct TrainerMon sParty_WallyMauville[] = {
     {
-    .ball = POKEBALL_COUNT,
+    .ball = BALL_NEST,
     .lvl = 20,
     .species = SPECIES_RALTS,
     .moves = {MOVE_PSYBEAM, MOVE_DRAINING_KISS, MOVE_LIFE_DEW, MOVE_HYPNOSIS},
     .gender = TRAINER_MON_RANDOM_GENDER,
     },
     {
-    .ball = POKEBALL_COUNT,
+    .ball = BALL_NEST,
     .lvl = 20,
     .species = SPECIES_COSMOG,
     .heldItem = ITEM_EVIOLITE,
@@ -19230,7 +19230,7 @@ static const struct TrainerMon sParty_MagmaGruntMGraniteCave[] = {
 
 static const struct TrainerMon sParty_WallyPetalburg[] = {
     {
-    .ball = POKEBALL_COUNT,
+    .ball = BALL_NEST,
     .lvl = 35,
     .species = SPECIES_MAGIKARP,
     .ability = ABILITY_RATTLED,
@@ -19239,7 +19239,7 @@ static const struct TrainerMon sParty_WallyPetalburg[] = {
     .gender = TRAINER_MON_RANDOM_GENDER,
     },
     {
-    .ball = POKEBALL_COUNT,
+    .ball = BALL_NEST,
     .lvl = 35,
     .species = SPECIES_KIRLIA,
     .ability = ABILITY_TELEPATHY,
@@ -19248,7 +19248,7 @@ static const struct TrainerMon sParty_WallyPetalburg[] = {
     .gender = TRAINER_MON_RANDOM_GENDER,
     },
     {
-    .ball = POKEBALL_COUNT,
+    .ball = BALL_NEST,
     .lvl = 35,
     .species = SPECIES_SANDILE,
     .ability = ABILITY_INTIMIDATE,
@@ -19257,7 +19257,7 @@ static const struct TrainerMon sParty_WallyPetalburg[] = {
     .gender = TRAINER_MON_RANDOM_GENDER,
     },
     {
-    .ball = POKEBALL_COUNT,
+    .ball = BALL_NEST,
     .lvl = 35,
     .species = SPECIES_WIMPOD,
     .ability = ABILITY_WIMP_OUT,
@@ -19266,7 +19266,7 @@ static const struct TrainerMon sParty_WallyPetalburg[] = {
     .gender = TRAINER_MON_RANDOM_GENDER,
     },
     {
-    .ball = POKEBALL_COUNT,
+    .ball = BALL_NEST,
     .lvl = 35,
     .species = SPECIES_LARVESTA,
     .ability = ABILITY_FLAME_BODY,
@@ -19275,7 +19275,7 @@ static const struct TrainerMon sParty_WallyPetalburg[] = {
     .gender = TRAINER_MON_RANDOM_GENDER,
     },
     {
-    .ball = POKEBALL_COUNT,
+    .ball = BALL_NEST,
     .lvl = 36,
     .species = SPECIES_COSMOEM,
     .ability = ABILITY_STURDY,
@@ -24453,6 +24453,120 @@ static const struct TrainerMon sParty_Unknown[] = {
     .ability = ABILITY_RUN_AWAY,
     .heldItem = ITEM_MEGA_STONE_X,
     .moves = {MOVE_HYPER_DRILL, MOVE_COIL, MOVE_DRAGON_RUSH, MOVE_ROOST},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    }
+};
+
+static const struct TrainerMon sParty_RoxanneSimulator[] = {
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_DUGTRIO_ALOLA,
+    .ability = ABILITY_TANGLING_HAIR,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = {MOVE_SCORCHING_SANDS, MOVE_IRON_HEAD, MOVE_STONE_EDGE, MOVE_AERIAL_ACE},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_BAXCALIBUR,
+    .ability = ABILITY_THERMAL_EXCHANGE,
+    .heldItem = ITEM_LOADED_DICE,
+    .moves = {MOVE_ICICLE_SPEAR, MOVE_SCALE_SHOT, MOVE_DRAGON_DANCE, MOVE_FOCUS_ENERGY},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_GOLURK,
+    .ability = ABILITY_IRON_FIST,
+    .heldItem = ITEM_PUNCHING_GLOVE,
+    .moves = {MOVE_DRAIN_PUNCH, MOVE_BULLET_PUNCH, MOVE_ICE_PUNCH, MOVE_SHADOW_PUNCH},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_IRON_BUNDLE,
+    .ability = ABILITY_QUARK_DRIVE,
+    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_DRILL_PECK, MOVE_FREEZE_DRY, MOVE_FLIP_TURN, MOVE_HAIL},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_AURORUS,
+    .ability = ABILITY_SNOW_WARNING,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_GLACIATE, MOVE_ALLURING_VOICE, MOVE_ENCORE, MOVE_THUNDER_WAVE},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_MAMOSWINE,
+    .ability = ABILITY_SNOW_CLOAK,
+    .heldItem = ITEM_GROUND_GEM,
+    .moves = {MOVE_HAIL, MOVE_HIGH_HORSEPOWER, MOVE_ICICLE_CRASH, MOVE_KNOCK_OFF},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    }
+};
+
+static const struct TrainerMon sParty_WattsonSimulator[] = {
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_IRON_TREADS,
+    .ability = ABILITY_QUARK_DRIVE,
+    .heldItem = ITEM_BOOSTER_ENERGY,
+    .moves = {MOVE_STEALTH_ROCK, MOVE_MEGAHORN, MOVE_BEHEMOTH_BASH, MOVE_STOMPING_TANTRUM},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_SLOWKING_GALAR,
+    .ability = ABILITY_REGENERATOR,
+    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_TOXIC, MOVE_FUTURE_SIGHT, MOVE_CHILLY_RECEPTION, MOVE_SLUDGE_BOMB},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_KINGAMBIT,
+    .ability = ABILITY_SUPREME_OVERLORD,
+    .heldItem = ITEM_SHUCA_BERRY,
+    .moves = {MOVE_KOWTOW_CLEAVE, MOVE_SUCKER_PUNCH, MOVE_SWORDS_DANCE, MOVE_IRON_HEAD},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_FALINKS_EMERIBIAN,
+    .ability = ABILITY_SPEED_BOOST,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_BANEFUL_BUNKER, MOVE_POISON_JAB, MOVE_NO_RETREAT, MOVE_STEEL_ROLLER},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_EMPOLEON,
+    .ability = ABILITY_TORRENT,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_WAVE_CRASH, MOVE_TRIPLE_AXEL, MOVE_ROOST, MOVE_BULLDOZE},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_REVAVROOM,
+    .ability = ABILITY_FILTER,
+    .heldItem = ITEM_AIR_BALLOON,
+    .moves = {MOVE_SHIFT_GEAR, MOVE_MAGNET_RISE, MOVE_SPIN_OUT, MOVE_GUNK_SHOT},
     .gender = TRAINER_MON_RANDOM_GENDER,
     }
 };

@@ -667,16 +667,22 @@ Expansion1_Rival_Scene02e_4:
 # 376 "data/expansion_1/scene02.pory"
 	msgbox PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS
 # 377 "data/expansion_1/scene02.pory"
+	message Expansion1_Rival_Scene02e_Text_1
+# 379 "data/expansion_1/scene02.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 380 "data/expansion_1/scene02.pory"
+	waitmessage
+# 381 "data/expansion_1/scene02.pory"
 	goto_if_set FLAG_RECEIVED_TUNING_FORK, Expansion1_Rival_Scene02e_7
 Expansion1_Rival_Scene02e_6:
-# 380 "data/expansion_1/scene02.pory"
+# 384 "data/expansion_1/scene02.pory"
 	call EventScript_MusicUnlocked
-# 381 "data/expansion_1/scene02.pory"
+# 385 "data/expansion_1/scene02.pory"
 	closemessage
 	return
 
 Expansion1_Rival_Scene02e_7:
-# 378 "data/expansion_1/scene02.pory"
+# 382 "data/expansion_1/scene02.pory"
 	checkifmusicunlocked 4, 1
 	goto Expansion1_Rival_Scene02e_6
 
@@ -921,3 +927,8 @@ Expansion1_Rival_Scene02d_Text_25:
 Expansion1_Rival_Scene02e_Text_0:
 # 370 "data/expansion_1/scene02.pory"
 	.string "Obtained Jakson's “reward”!$"
+
+Expansion1_Rival_Scene02e_Text_1:
+# 377 "data/expansion_1/scene02.pory"
+	.string "Battle Simulator disc ‘A Waltz with\n"
+	.string "Wally’ was added to your library!$"

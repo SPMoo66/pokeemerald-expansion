@@ -374,6 +374,10 @@ script Expansion1_Rival_Scene02e {
 		setvar (VAR_0x8004, 8)
 		special (GiveFrontierBattlePoints)
 		msgbox (PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS)
+		message ("Battle Simulator disc ‘A Waltz with\n"
+				 "Wally’ was added to your library!")
+		playfanfare (MUS_OBTAIN_ITEM)
+		waitmessage
 		if (flag(FLAG_RECEIVED_TUNING_FORK)) {
 			checkifmusicunlocked (4, 1)
 		}

@@ -10,6 +10,7 @@
 #define PARTNER_STEVEN_GRANITE_CAVE               5
 #define PARTNER_FOLLOWER_HARPER_SUBMERGED_CAVE    6
 #define PARTNER_FOLLOWER_HARPER_EXP_1_FINAL_BOSS  7
-#define PARTNER_COUNT                             8
+#define PARTNER_WALLY_SIMULATOR                   8
+#define PARTNER_COUNT                             9
 
 #endif  // GUARD_CONSTANTS_BATTLE_PARTNERS_H

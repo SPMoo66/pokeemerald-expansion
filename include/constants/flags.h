@@ -345,7 +345,7 @@
 #define FLAG_RECEIVED_HM_WATERFALL           0x138
 #define FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS    0x139
 #define FLAG_RECEIVED_TUNING_FORK            0x13A // Was for Aurora Ticket
-#define FLAG_UNUSED_0x13B                    0x13B // Was for Mystic Ticket
+#define FLAG_BATTLESIM_DISC_2_1              0x13B // Was for Mystic Ticket
 #define FLAG_ITEM_BYGONE_VAULT_2L1_OLD_SEA_MAP  0x13C // Was for Old Sea Map
 #define FLAG_WONDER_CARD_UNUSED_1            0x13D // These Wonder Card flags are referenced but never set
 #define FLAG_WONDER_CARD_UNUSED_2            0x13E

@@ -41,7 +41,12 @@ script Motel_BattleSimulator {
 			"Want to use it?", MSGBOX_DEFAULT)
 	dynmultichoice (0, 6, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, gText_Yes, gText_Info, gText_No)
 	if (var(VAR_RESULT) == 0) {
-		call (CynthiasChallenge_Main)
+		if (var(VAR_EMERALBODY_RIVAL_STATE) < 51) {
+			call (CynthiasChallenge_Main)
+		}
+		else {
+			call (Gamecube_ChooseDisc)
+		}
 	}
 	elif (var(VAR_RESULT) == 1) {
 		call (Gamecube_Info)
@@ -51,14 +56,23 @@ script Motel_BattleSimulator {
 	closemessage
 }
 
-//script Gamecube_ChooseDisc {
-//	msgbox ("Which disc will you insert?", MSGBOX_DEFAULT)
-//	dynmultipush ("Cynthia's Challenge!", 0)
-//	if (!flag(FLAG_TEMP_5)) {
-//		dynmultipush ("Disc 2", 1)
-//	}
-//	dynmultistack (0, 6, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
-//}
+script Gamecube_ChooseDisc {
+	msgbox ("Which disc will you insert?", MSGBOX_DEFAULT)
+	dynmultipush ("Cynthia's Challenge (70)", 0)
+	if (var(VAR_EMERALBODY_RIVAL_STATE) >= 51) {
+		dynmultipush ("A Waltz with Wally (80)", 1)
+	}
+	dynmultistack (0, 6, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+	closemessage
+	switch (var(VAR_RESULT)) {
+		case 0:
+			call (CynthiasChallenge_Main)
+		case 1:
+			call (AWaltzWithWally_Main)
+		default:
+			break
+	}
+}
 
 script CynthiasChallenge_Main {
 	setflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
@@ -239,6 +253,57 @@ script CynthiasChallenge_Series3 {
 	}
 	else {
 		giveitem (ITEM_PEARL_STRING, 1)
+	}
+	goto (Motel_BattleSimulator_ExitSimulation)
+}
+
+
+script AWaltzWithWally_Main {
+	setflag (FLAG_NO_MONEY_LOSS_ON_DEFEAT)
+	setflag (FLAG_CHALLENGING_TRAINER)
+//	setvar (VAR_0x8000, MUGSHOT_A_WALTZ_WITH_WALLY)
+	setvar (VAR_0x8000, MUGSHOT_CYNTHIAS_CHALLENGE)
+	callnative (DrawMugshot)
+	msgbox ("Welcome to A Waltz with Wally!\n"
+			"Please select a battle series.")
+	if (!flag(FLAG_BATTLESIM_DISC_2_1)) {
+		dynmultipush ("Part 1", 0)
+	}
+	else {
+		dynmultipush ("Part 1 - Complete!", 0)
+	}
+	dynmultistack (0, 6, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+	callnative (ClearMugshot)
+	switch (var(VAR_RESULT)) {
+		case 0:
+			fadeoutbgm (0)
+			fadescreen (FADE_TO_BLACK)
+			warpcontinuescript (MAP_LILYCOVE_CITY_BATTLE_SIMULATOR, 1, 2, AWaltzWithWally_Series1)
+		default:
+			break
+	}
+}
+
+
+script AWaltzWithWally_Series1 {
+	call (Motel_BattleSimulator_FinalTrainer)
+	multi_2_vs_2 (TRAINER_SIMULATOR_ROXANNE, RustboroCity_Gym_Text_RoxanneRematchDefeat, TRAINER_SIMULATOR_WATTSON, MauvilleCity_Gym_Text_WattsonRematchDefeat, PARTNER_WALLY_SIMULATOR)
+	if (var(VAR_RESULT) == B_OUTCOME_LOST || var(VAR_RESULT) == B_OUTCOME_FORFEITED) {
+		fadescreen (FADE_TO_BLACK)
+		special (SetCB2WhiteOut)
+	}
+	call (Motel_BattleSimulator_Congratulations)
+	if (!flag(FLAG_BATTLESIM_DISC_2_1)) {
+		giveitem (ITEM_STELLAR_TERA_SHARD, 2)
+		giveitem (ITEM_EXP_CANDY_XL, 2)
+		buffernumberstring (STR_VAR_1, 5)
+		setvar (VAR_0x8004, 5)
+		special (GiveFrontierBattlePoints)
+		msgbox (PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS)
+		setflag (FLAG_BATTLESIM_DISC_2_1)
+	}
+	else {
+		giveitem (ITEM_BALM_MUSHROOM, 1)
 	}
 	goto (Motel_BattleSimulator_ExitSimulation)
 }

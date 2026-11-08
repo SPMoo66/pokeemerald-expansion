@@ -12820,6 +12820,32 @@
         .party = TRAINER_PARTY(sParty_Unknown),
         .multiTeamSize = MULTI_TEAM_SIZE_HALF,
     },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_ROXANNE] =
+    {
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
+        .trainerName = _("Roxanne"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_RoxanneSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_FULL,
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_WATTSON] =
+    {
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_LEADER_WATTSON,
+        .trainerName = _("Wattson"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_WattsonSimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_FULL,
+    },
 /*
 
     [DIFFICULTY_NORMAL][TRAINER_] =

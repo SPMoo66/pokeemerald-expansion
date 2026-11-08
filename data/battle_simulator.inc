@@ -1,463 +1,609 @@
 Motel_BattleSimulator_Intro::
-# 2 "data/cynthias_challenge.pory"
+# 2 "data/battle_simulator.pory"
 	special SpawnCameraObject
-# 3 "data/cynthias_challenge.pory"
+# 3 "data/battle_simulator.pory"
 	applymovement LOCALID_CAMERA, Common_Movement_WalkUp3
-# 4 "data/cynthias_challenge.pory"
+# 4 "data/battle_simulator.pory"
 	waitmovement 0
-# 5 "data/cynthias_challenge.pory"
+# 5 "data/battle_simulator.pory"
 	applymovement 1, Common_Movement_WalkInPlaceDown
-# 6 "data/cynthias_challenge.pory"
+# 6 "data/battle_simulator.pory"
 	waitmovement 0
-# 7 "data/cynthias_challenge.pory"
+# 7 "data/battle_simulator.pory"
 	msgbox Motel_BattleSimulator_Intro_Text_0, MSGBOX_DEFAULT
-# 8 "data/cynthias_challenge.pory"
+# 8 "data/battle_simulator.pory"
 	closemessage
-# 9 "data/cynthias_challenge.pory"
+# 9 "data/battle_simulator.pory"
 	delay 10
-# 10 "data/cynthias_challenge.pory"
+# 10 "data/battle_simulator.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_Smile
-# 11 "data/cynthias_challenge.pory"
+# 11 "data/battle_simulator.pory"
 	playse SE_M_MORNING_SUN
-# 12 "data/cynthias_challenge.pory"
+# 12 "data/battle_simulator.pory"
 	delay 60
-# 13 "data/cynthias_challenge.pory"
+# 13 "data/battle_simulator.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkUp3
-# 14 "data/cynthias_challenge.pory"
+# 14 "data/battle_simulator.pory"
 	waitmovement 0
-# 15 "data/cynthias_challenge.pory"
+# 15 "data/battle_simulator.pory"
 	special RemoveCameraObject
-# 16 "data/cynthias_challenge.pory"
+# 16 "data/battle_simulator.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkUp2
-# 17 "data/cynthias_challenge.pory"
+# 17 "data/battle_simulator.pory"
 	waitmovement 0
-# 18 "data/cynthias_challenge.pory"
+# 18 "data/battle_simulator.pory"
 	applymovement 1, Common_Movement_WalkInPlaceLeft
-# 19 "data/cynthias_challenge.pory"
+# 19 "data/battle_simulator.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkRight4
-# 20 "data/cynthias_challenge.pory"
+# 20 "data/battle_simulator.pory"
 	waitmovement 0
-# 21 "data/cynthias_challenge.pory"
+# 21 "data/battle_simulator.pory"
 	msgbox Motel_BattleSimulator_Intro_Text_1, MSGBOX_DEFAULT
-# 22 "data/cynthias_challenge.pory"
+# 22 "data/battle_simulator.pory"
 	closemessage
-# 23 "data/cynthias_challenge.pory"
+# 23 "data/battle_simulator.pory"
 	applymovement 1, Common_Movement_WalkInPlaceUp
-# 24 "data/cynthias_challenge.pory"
+# 24 "data/battle_simulator.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceUp
-# 25 "data/cynthias_challenge.pory"
+# 25 "data/battle_simulator.pory"
 	waitmovement 0
-# 26 "data/cynthias_challenge.pory"
+# 26 "data/battle_simulator.pory"
 	msgbox Motel_BattleSimulator_Intro_Text_2, MSGBOX_DEFAULT
-# 27 "data/cynthias_challenge.pory"
+# 27 "data/battle_simulator.pory"
 	closemessage
-# 28 "data/cynthias_challenge.pory"
+# 28 "data/battle_simulator.pory"
 	applymovement 1, Common_Movement_WalkInPlaceLeft
-# 29 "data/cynthias_challenge.pory"
+# 29 "data/battle_simulator.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceRight
-# 30 "data/cynthias_challenge.pory"
+# 30 "data/battle_simulator.pory"
 	waitmovement 0
-# 31 "data/cynthias_challenge.pory"
+# 31 "data/battle_simulator.pory"
 	msgbox Motel_BattleSimulator_Intro_Text_3, MSGBOX_DEFAULT
-# 32 "data/cynthias_challenge.pory"
+# 32 "data/battle_simulator.pory"
 	closemessage
-# 33 "data/cynthias_challenge.pory"
+# 33 "data/battle_simulator.pory"
 	applymovement 1, Common_Movement_WalkInPlaceUp
-# 34 "data/cynthias_challenge.pory"
+# 34 "data/battle_simulator.pory"
 	waitmovement 0
-# 35 "data/cynthias_challenge.pory"
+# 35 "data/battle_simulator.pory"
 	setflag FLAG_INTRODUCED_BATTLESIM
-# 36 "data/cynthias_challenge.pory"
+# 36 "data/battle_simulator.pory"
 	setvar VAR_TEMP_5, 0
 	return
 
 
 Motel_BattleSimulator::
-# 40 "data/cynthias_challenge.pory"
+# 40 "data/battle_simulator.pory"
 	msgbox Motel_BattleSimulator_Text_0, MSGBOX_DEFAULT
-# 42 "data/cynthias_challenge.pory"
+# 42 "data/battle_simulator.pory"
 	dynmultichoice 0, 6, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, gText_Yes, gText_Info, gText_No
-# 43 "data/cynthias_challenge.pory"
+# 43 "data/battle_simulator.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Motel_BattleSimulator_2
-# 46 "data/cynthias_challenge.pory"
+# 51 "data/battle_simulator.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Motel_BattleSimulator_3
 Motel_BattleSimulator_1:
-# 49 "data/cynthias_challenge.pory"
+# 54 "data/battle_simulator.pory"
 	clearflag FLAG_NO_MONEY_LOSS_ON_DEFEAT
-# 50 "data/cynthias_challenge.pory"
+# 55 "data/battle_simulator.pory"
 	clearflag FLAG_CHALLENGING_TRAINER
-# 51 "data/cynthias_challenge.pory"
+# 56 "data/battle_simulator.pory"
 	closemessage
 	return
 
 Motel_BattleSimulator_2:
-# 44 "data/cynthias_challenge.pory"
-	call CynthiasChallenge_Main
+# 44 "data/battle_simulator.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 51
+	goto_if_lt Motel_BattleSimulator_6
+# 48 "data/battle_simulator.pory"
+	call Gamecube_ChooseDisc
 	goto Motel_BattleSimulator_1
 
 Motel_BattleSimulator_3:
-# 47 "data/cynthias_challenge.pory"
+# 52 "data/battle_simulator.pory"
 	call Gamecube_Info
 	goto Motel_BattleSimulator_1
 
+Motel_BattleSimulator_6:
+# 45 "data/battle_simulator.pory"
+	call CynthiasChallenge_Main
+	goto Motel_BattleSimulator_1
+
+
+Gamecube_ChooseDisc::
+# 60 "data/battle_simulator.pory"
+	msgbox Gamecube_ChooseDisc_Text_0, MSGBOX_DEFAULT
+# 61 "data/battle_simulator.pory"
+	dynmultipush Gamecube_ChooseDisc_Text_1, 0
+# 62 "data/battle_simulator.pory"
+	compare VAR_EMERALBODY_RIVAL_STATE, 51
+	goto_if_ge Gamecube_ChooseDisc_2
+Gamecube_ChooseDisc_1:
+# 65 "data/battle_simulator.pory"
+	dynmultistack 0, 6, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE
+# 66 "data/battle_simulator.pory"
+	closemessage
+# 67 "data/battle_simulator.pory"
+	switch VAR_RESULT
+# 68 "data/battle_simulator.pory"
+	case 0, Gamecube_ChooseDisc_5
+# 70 "data/battle_simulator.pory"
+	case 1, Gamecube_ChooseDisc_6
+	return
+
+Gamecube_ChooseDisc_2:
+# 63 "data/battle_simulator.pory"
+	dynmultipush Gamecube_ChooseDisc_Text_2, 1
+	goto Gamecube_ChooseDisc_1
+
+Gamecube_ChooseDisc_5:
+# 69 "data/battle_simulator.pory"
+	call CynthiasChallenge_Main
+	return
+
+Gamecube_ChooseDisc_6:
+# 71 "data/battle_simulator.pory"
+	call AWaltzWithWally_Main
+	return
+
 
 CynthiasChallenge_Main::
-# 64 "data/cynthias_challenge.pory"
+# 78 "data/battle_simulator.pory"
 	setflag FLAG_NO_MONEY_LOSS_ON_DEFEAT
-# 65 "data/cynthias_challenge.pory"
+# 79 "data/battle_simulator.pory"
 	setflag FLAG_CHALLENGING_TRAINER
-# 66 "data/cynthias_challenge.pory"
+# 80 "data/battle_simulator.pory"
 	setvar VAR_0x8000, MUGSHOT_CYNTHIAS_CHALLENGE
-# 67 "data/cynthias_challenge.pory"
+# 81 "data/battle_simulator.pory"
 	callnative DrawMugshot
-# 68 "data/cynthias_challenge.pory"
+# 82 "data/battle_simulator.pory"
 	msgbox CynthiasChallenge_Main_Text_0
-# 70 "data/cynthias_challenge.pory"
+# 84 "data/battle_simulator.pory"
 	goto_if_unset FLAG_BATTLESIM_DISC_1_1, CynthiasChallenge_Main_2
-# 74 "data/cynthias_challenge.pory"
+# 88 "data/battle_simulator.pory"
 	dynmultipush CynthiasChallenge_Main_Text_2, 0
 CynthiasChallenge_Main_1:
-# 76 "data/cynthias_challenge.pory"
+# 90 "data/battle_simulator.pory"
 	goto_if_unset FLAG_BATTLESIM_DISC_1_2, CynthiasChallenge_Main_6
-# 80 "data/cynthias_challenge.pory"
+# 94 "data/battle_simulator.pory"
 	dynmultipush CynthiasChallenge_Main_Text_4, 1
 CynthiasChallenge_Main_5:
-# 82 "data/cynthias_challenge.pory"
+# 96 "data/battle_simulator.pory"
 	goto_if_set FLAG_BATTLESIM_DISC_1_1, CynthiasChallenge_Main_11
 CynthiasChallenge_Main_9:
-# 90 "data/cynthias_challenge.pory"
+# 104 "data/battle_simulator.pory"
 	dynmultistack 0, 6, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE
-# 91 "data/cynthias_challenge.pory"
+# 105 "data/battle_simulator.pory"
 	callnative ClearMugshot
-# 92 "data/cynthias_challenge.pory"
+# 106 "data/battle_simulator.pory"
 	switch VAR_RESULT
-# 93 "data/cynthias_challenge.pory"
+# 107 "data/battle_simulator.pory"
 	case 0, CynthiasChallenge_Main_15
-# 97 "data/cynthias_challenge.pory"
+# 111 "data/battle_simulator.pory"
 	case 1, CynthiasChallenge_Main_16
-# 101 "data/cynthias_challenge.pory"
+# 115 "data/battle_simulator.pory"
 	case 2, CynthiasChallenge_Main_17
 	return
 
 CynthiasChallenge_Main_2:
-# 71 "data/cynthias_challenge.pory"
+# 85 "data/battle_simulator.pory"
 	dynmultipush CynthiasChallenge_Main_Text_1, 0
 	goto CynthiasChallenge_Main_1
 
 CynthiasChallenge_Main_6:
-# 77 "data/cynthias_challenge.pory"
+# 91 "data/battle_simulator.pory"
 	dynmultipush CynthiasChallenge_Main_Text_3, 1
 	goto CynthiasChallenge_Main_5
 
 CynthiasChallenge_Main_10:
-# 83 "data/cynthias_challenge.pory"
+# 97 "data/battle_simulator.pory"
 	goto_if_unset FLAG_BATTLESIM_DISC_1_3, CynthiasChallenge_Main_19
-# 87 "data/cynthias_challenge.pory"
+# 101 "data/battle_simulator.pory"
 	dynmultipush CynthiasChallenge_Main_Text_6, 2
 	goto CynthiasChallenge_Main_9
 
 CynthiasChallenge_Main_11:
-# 82 "data/cynthias_challenge.pory"
+# 96 "data/battle_simulator.pory"
 	goto_if_set FLAG_BATTLESIM_DISC_1_2, CynthiasChallenge_Main_10
 	goto CynthiasChallenge_Main_9
 
 CynthiasChallenge_Main_15:
-# 94 "data/cynthias_challenge.pory"
+# 108 "data/battle_simulator.pory"
 	fadeoutbgm 0
-# 95 "data/cynthias_challenge.pory"
+# 109 "data/battle_simulator.pory"
 	fadescreen FADE_TO_BLACK
-# 96 "data/cynthias_challenge.pory"
+# 110 "data/battle_simulator.pory"
 	warpcontinuescript MAP_LILYCOVE_CITY_BATTLE_SIMULATOR, 1, 2, CynthiasChallenge_Series1
 	return
 
 CynthiasChallenge_Main_16:
-# 98 "data/cynthias_challenge.pory"
+# 112 "data/battle_simulator.pory"
 	fadeoutbgm 0
-# 99 "data/cynthias_challenge.pory"
+# 113 "data/battle_simulator.pory"
 	fadescreen FADE_TO_BLACK
-# 100 "data/cynthias_challenge.pory"
+# 114 "data/battle_simulator.pory"
 	warpcontinuescript MAP_LILYCOVE_CITY_BATTLE_SIMULATOR, 1, 2, CynthiasChallenge_Series2
 	return
 
 CynthiasChallenge_Main_17:
-# 102 "data/cynthias_challenge.pory"
+# 116 "data/battle_simulator.pory"
 	fadeoutbgm 0
-# 103 "data/cynthias_challenge.pory"
+# 117 "data/battle_simulator.pory"
 	fadescreen FADE_TO_BLACK
-# 104 "data/cynthias_challenge.pory"
+# 118 "data/battle_simulator.pory"
 	warpcontinuescript MAP_LILYCOVE_CITY_BATTLE_SIMULATOR, 1, 2, CynthiasChallenge_Series3
 	return
 
 CynthiasChallenge_Main_19:
-# 84 "data/cynthias_challenge.pory"
+# 98 "data/battle_simulator.pory"
 	dynmultipush CynthiasChallenge_Main_Text_5, 2
 	goto CynthiasChallenge_Main_9
 
 
 Gamecube_Info::
-# 112 "data/cynthias_challenge.pory"
+# 126 "data/battle_simulator.pory"
 	msgbox Gamecube_Info_Text_0
-# 118 "data/cynthias_challenge.pory"
+# 132 "data/battle_simulator.pory"
 	goto Motel_BattleSimulator
 	return
 
 
 Motel_BattleSimulator_FirstTrainer::
-# 132 "data/cynthias_challenge.pory"
+# 146 "data/battle_simulator.pory"
 	fadescreen FADE_FROM_BLACK
-# 133 "data/cynthias_challenge.pory"
+# 147 "data/battle_simulator.pory"
 	delay 20
-# 134 "data/cynthias_challenge.pory"
+# 148 "data/battle_simulator.pory"
 	special HealPlayerParty
-# 135 "data/cynthias_challenge.pory"
+# 149 "data/battle_simulator.pory"
 	speakername Text_System
-# 136 "data/cynthias_challenge.pory"
+# 150 "data/battle_simulator.pory"
 	msgbox Motel_BattleSimulator_FirstTrainer_Text_0, MSGBOX_AUTOCLOSE
 	return
 
 
 Motel_BattleSimulator_SecondTrainer::
-# 140 "data/cynthias_challenge.pory"
+# 154 "data/battle_simulator.pory"
 	special HealPlayerParty
-# 141 "data/cynthias_challenge.pory"
+# 155 "data/battle_simulator.pory"
 	speakername Text_System
-# 142 "data/cynthias_challenge.pory"
+# 156 "data/battle_simulator.pory"
 	msgbox Motel_BattleSimulator_SecondTrainer_Text_0, MSGBOX_AUTOCLOSE
 	return
 
 
 Motel_BattleSimulator_ThirdTrainer::
-# 146 "data/cynthias_challenge.pory"
+# 160 "data/battle_simulator.pory"
 	special HealPlayerParty
-# 147 "data/cynthias_challenge.pory"
+# 161 "data/battle_simulator.pory"
 	speakername Text_System
-# 148 "data/cynthias_challenge.pory"
+# 162 "data/battle_simulator.pory"
 	msgbox Motel_BattleSimulator_ThirdTrainer_Text_0, MSGBOX_AUTOCLOSE
 	return
 
 
 Motel_BattleSimulator_FourthTrainer::
-# 152 "data/cynthias_challenge.pory"
+# 166 "data/battle_simulator.pory"
 	special HealPlayerParty
-# 153 "data/cynthias_challenge.pory"
+# 167 "data/battle_simulator.pory"
 	speakername Text_System
-# 154 "data/cynthias_challenge.pory"
+# 168 "data/battle_simulator.pory"
 	msgbox Motel_BattleSimulator_FourthTrainer_Text_0, MSGBOX_AUTOCLOSE
 	return
 
 
 Motel_BattleSimulator_FinalTrainer::
-# 158 "data/cynthias_challenge.pory"
+# 172 "data/battle_simulator.pory"
 	special HealPlayerParty
-# 159 "data/cynthias_challenge.pory"
+# 173 "data/battle_simulator.pory"
 	speakername Text_System
-# 160 "data/cynthias_challenge.pory"
+# 174 "data/battle_simulator.pory"
 	msgbox Motel_BattleSimulator_FinalTrainer_Text_0, MSGBOX_AUTOCLOSE
 	return
 
 
 Motel_BattleSimulator_Congratulations::
-# 164 "data/cynthias_challenge.pory"
+# 178 "data/battle_simulator.pory"
 	special HealPlayerParty
-# 165 "data/cynthias_challenge.pory"
+# 179 "data/battle_simulator.pory"
 	speakername Text_System
-# 166 "data/cynthias_challenge.pory"
+# 180 "data/battle_simulator.pory"
 	msgbox Gamecube_Text_Congratulations, MSGBOX_AUTOCLOSE
 	return
 
 
 Motel_BattleSimulator_ExitSimulation::
-# 170 "data/cynthias_challenge.pory"
+# 184 "data/battle_simulator.pory"
 	speakername Text_System
-# 171 "data/cynthias_challenge.pory"
+# 185 "data/battle_simulator.pory"
 	msgbox Gamecube_Text_ExitingSim, MSGBOX_AUTOCLOSE
-# 172 "data/cynthias_challenge.pory"
+# 186 "data/battle_simulator.pory"
 	warp MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_1F, 9, 2
-# 173 "data/cynthias_challenge.pory"
+# 187 "data/battle_simulator.pory"
 	waitstate
 	return
 
 
 CynthiasChallenge_Series1::
-# 178 "data/cynthias_challenge.pory"
+# 192 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_FirstTrainer
-# 179 "data/cynthias_challenge.pory"
+# 193 "data/battle_simulator.pory"
 	trainerbattle_no_intro TRAINER_SIMULATOR_ROARK, CynthiasChallenge_Series1_Text_0
-# 180 "data/cynthias_challenge.pory"
+# 194 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_SecondTrainer
-# 181 "data/cynthias_challenge.pory"
+# 195 "data/battle_simulator.pory"
 	trainerbattle_no_intro TRAINER_SIMULATOR_GARDENIA, CynthiasChallenge_Series1_Text_1
-# 182 "data/cynthias_challenge.pory"
+# 196 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_ThirdTrainer
-# 183 "data/cynthias_challenge.pory"
+# 197 "data/battle_simulator.pory"
 	trainerbattle_no_intro TRAINER_SIMULATOR_MAYLENE, CynthiasChallenge_Series1_Text_2
-# 184 "data/cynthias_challenge.pory"
+# 198 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_FinalTrainer
-# 185 "data/cynthias_challenge.pory"
+# 199 "data/battle_simulator.pory"
 	trainerbattle_no_intro TRAINER_SIMULATOR_WAKE, CynthiasChallenge_Series1_Text_3
-# 186 "data/cynthias_challenge.pory"
+# 200 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_Congratulations
-# 187 "data/cynthias_challenge.pory"
+# 201 "data/battle_simulator.pory"
 	goto_if_unset FLAG_BATTLESIM_DISC_1_1, CynthiasChallenge_Series1_2
-# 193 "data/cynthias_challenge.pory"
+# 207 "data/battle_simulator.pory"
 	giveitem ITEM_BALM_MUSHROOM, 1
 CynthiasChallenge_Series1_1:
-# 195 "data/cynthias_challenge.pory"
+# 209 "data/battle_simulator.pory"
 	goto Motel_BattleSimulator_ExitSimulation
 	return
 
 CynthiasChallenge_Series1_2:
-# 188 "data/cynthias_challenge.pory"
+# 202 "data/battle_simulator.pory"
 	giveitem ITEM_STELLAR_TERA_SHARD, 2
-# 189 "data/cynthias_challenge.pory"
+# 203 "data/battle_simulator.pory"
 	giveitem ITEM_EXP_CANDY_L, 2
-# 190 "data/cynthias_challenge.pory"
+# 204 "data/battle_simulator.pory"
 	setflag FLAG_BATTLESIM_DISC_1_1
 	goto CynthiasChallenge_Series1_1
 
 
 CynthiasChallenge_Series2::
-# 199 "data/cynthias_challenge.pory"
+# 213 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_FirstTrainer
-# 200 "data/cynthias_challenge.pory"
+# 214 "data/battle_simulator.pory"
 	trainerbattle_no_intro TRAINER_SIMULATOR_FANTINA, CynthiasChallenge_Series2_Text_0
-# 201 "data/cynthias_challenge.pory"
+# 215 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_SecondTrainer
-# 202 "data/cynthias_challenge.pory"
+# 216 "data/battle_simulator.pory"
 	trainerbattle_no_intro TRAINER_SIMULATOR_BYRON, CynthiasChallenge_Series2_Text_1
-# 203 "data/cynthias_challenge.pory"
+# 217 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_ThirdTrainer
-# 204 "data/cynthias_challenge.pory"
+# 218 "data/battle_simulator.pory"
 	trainerbattle_no_intro TRAINER_SIMULATOR_CANDICE, CynthiasChallenge_Series2_Text_2
-# 205 "data/cynthias_challenge.pory"
+# 219 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_FinalTrainer
-# 206 "data/cynthias_challenge.pory"
+# 220 "data/battle_simulator.pory"
 	trainerbattle_no_intro TRAINER_SIMULATOR_VOLKNER, CynthiasChallenge_Series2_Text_3
-# 207 "data/cynthias_challenge.pory"
+# 221 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_Congratulations
-# 208 "data/cynthias_challenge.pory"
+# 222 "data/battle_simulator.pory"
 	goto_if_unset FLAG_BATTLESIM_DISC_1_2, CynthiasChallenge_Series2_2
-# 214 "data/cynthias_challenge.pory"
+# 228 "data/battle_simulator.pory"
 	giveitem ITEM_BALM_MUSHROOM, 1
 CynthiasChallenge_Series2_1:
-# 216 "data/cynthias_challenge.pory"
+# 230 "data/battle_simulator.pory"
 	goto Motel_BattleSimulator_ExitSimulation
 	return
 
 CynthiasChallenge_Series2_2:
-# 209 "data/cynthias_challenge.pory"
+# 223 "data/battle_simulator.pory"
 	giveitem ITEM_STELLAR_TERA_SHARD, 2
-# 210 "data/cynthias_challenge.pory"
+# 224 "data/battle_simulator.pory"
 	giveitem ITEM_EXP_CANDY_L, 2
-# 211 "data/cynthias_challenge.pory"
+# 225 "data/battle_simulator.pory"
 	setflag FLAG_BATTLESIM_DISC_1_2
 	goto CynthiasChallenge_Series2_1
 
 
 CynthiasChallenge_Series3::
-# 220 "data/cynthias_challenge.pory"
+# 234 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_FirstTrainer
-# 221 "data/cynthias_challenge.pory"
+# 235 "data/battle_simulator.pory"
 	trainerbattle_no_intro TRAINER_SIMULATOR_AARON, CynthiasChallenge_Series3_Text_0
-# 222 "data/cynthias_challenge.pory"
+# 236 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_SecondTrainer
-# 223 "data/cynthias_challenge.pory"
+# 237 "data/battle_simulator.pory"
 	trainerbattle_no_intro TRAINER_SIMULATOR_BERTHA, CynthiasChallenge_Series3_Text_1
-# 224 "data/cynthias_challenge.pory"
+# 238 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_ThirdTrainer
-# 225 "data/cynthias_challenge.pory"
+# 239 "data/battle_simulator.pory"
 	trainerbattle_no_intro TRAINER_SIMULATOR_FLINT, CynthiasChallenge_Series3_Text_2
-# 226 "data/cynthias_challenge.pory"
+# 240 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_FourthTrainer
-# 227 "data/cynthias_challenge.pory"
+# 241 "data/battle_simulator.pory"
 	trainerbattle_no_intro TRAINER_SIMULATOR_LUCIAN, CynthiasChallenge_Series3_Text_3
-# 228 "data/cynthias_challenge.pory"
+# 242 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_FinalTrainer
-# 229 "data/cynthias_challenge.pory"
+# 243 "data/battle_simulator.pory"
 	trainerbattle_no_intro TRAINER_SIMULATOR_CYNTHIA, CynthiasChallenge_Series3_Text_4
-# 230 "data/cynthias_challenge.pory"
+# 244 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_Congratulations
-# 231 "data/cynthias_challenge.pory"
+# 245 "data/battle_simulator.pory"
 	goto_if_unset FLAG_BATTLESIM_DISC_1_3, CynthiasChallenge_Series3_2
-# 241 "data/cynthias_challenge.pory"
+# 255 "data/battle_simulator.pory"
 	giveitem ITEM_PEARL_STRING, 1
 CynthiasChallenge_Series3_1:
-# 243 "data/cynthias_challenge.pory"
+# 257 "data/battle_simulator.pory"
 	goto Motel_BattleSimulator_ExitSimulation
 	return
 
 CynthiasChallenge_Series3_2:
-# 232 "data/cynthias_challenge.pory"
+# 246 "data/battle_simulator.pory"
 	giveitem ITEM_SHINY_LURE, 1
-# 233 "data/cynthias_challenge.pory"
+# 247 "data/battle_simulator.pory"
 	giveitem ITEM_EXP_CANDY_XL, 2
-# 234 "data/cynthias_challenge.pory"
+# 248 "data/battle_simulator.pory"
 	buffernumberstring STR_VAR_1, 5
-# 235 "data/cynthias_challenge.pory"
+# 249 "data/battle_simulator.pory"
 	setvar VAR_0x8004, 5
-# 236 "data/cynthias_challenge.pory"
+# 250 "data/battle_simulator.pory"
 	special GiveFrontierBattlePoints
-# 237 "data/cynthias_challenge.pory"
+# 251 "data/battle_simulator.pory"
 	msgbox PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS
-# 238 "data/cynthias_challenge.pory"
+# 252 "data/battle_simulator.pory"
 	setflag FLAG_BATTLESIM_DISC_1_3
 	goto CynthiasChallenge_Series3_1
 
 
+AWaltzWithWally_Main::
+# 262 "data/battle_simulator.pory"
+	setflag FLAG_NO_MONEY_LOSS_ON_DEFEAT
+# 263 "data/battle_simulator.pory"
+	setflag FLAG_CHALLENGING_TRAINER
+# 265 "data/battle_simulator.pory"
+	setvar VAR_0x8000, MUGSHOT_CYNTHIAS_CHALLENGE
+# 266 "data/battle_simulator.pory"
+	callnative DrawMugshot
+# 267 "data/battle_simulator.pory"
+	msgbox AWaltzWithWally_Main_Text_0
+# 269 "data/battle_simulator.pory"
+	goto_if_unset FLAG_BATTLESIM_DISC_2_1, AWaltzWithWally_Main_2
+# 273 "data/battle_simulator.pory"
+	dynmultipush AWaltzWithWally_Main_Text_2, 0
+AWaltzWithWally_Main_1:
+# 275 "data/battle_simulator.pory"
+	dynmultistack 0, 6, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE
+# 276 "data/battle_simulator.pory"
+	callnative ClearMugshot
+# 277 "data/battle_simulator.pory"
+	switch VAR_RESULT
+# 278 "data/battle_simulator.pory"
+	case 0, AWaltzWithWally_Main_6
+	return
+
+AWaltzWithWally_Main_2:
+# 270 "data/battle_simulator.pory"
+	dynmultipush AWaltzWithWally_Main_Text_1, 0
+	goto AWaltzWithWally_Main_1
+
+AWaltzWithWally_Main_6:
+# 279 "data/battle_simulator.pory"
+	fadeoutbgm 0
+# 280 "data/battle_simulator.pory"
+	fadescreen FADE_TO_BLACK
+# 281 "data/battle_simulator.pory"
+	warpcontinuescript MAP_LILYCOVE_CITY_BATTLE_SIMULATOR, 1, 2, AWaltzWithWally_Series1
+	return
+
+
+AWaltzWithWally_Series1::
+# 289 "data/battle_simulator.pory"
+	call Motel_BattleSimulator_FinalTrainer
+# 290 "data/battle_simulator.pory"
+	multi_2_vs_2 TRAINER_SIMULATOR_ROXANNE, RustboroCity_Gym_Text_RoxanneRematchDefeat, TRAINER_SIMULATOR_WATTSON, MauvilleCity_Gym_Text_WattsonRematchDefeat, PARTNER_WALLY_SIMULATOR
+# 291 "data/battle_simulator.pory"
+	compare VAR_RESULT, B_OUTCOME_LOST
+	goto_if_eq AWaltzWithWally_Series1_2
+# 291 "data/battle_simulator.pory"
+	compare VAR_RESULT, B_OUTCOME_FORFEITED
+	goto_if_eq AWaltzWithWally_Series1_2
+AWaltzWithWally_Series1_1:
+# 295 "data/battle_simulator.pory"
+	call Motel_BattleSimulator_Congratulations
+# 296 "data/battle_simulator.pory"
+	goto_if_unset FLAG_BATTLESIM_DISC_2_1, AWaltzWithWally_Series1_7
+# 306 "data/battle_simulator.pory"
+	giveitem ITEM_BALM_MUSHROOM, 1
+AWaltzWithWally_Series1_6:
+# 308 "data/battle_simulator.pory"
+	goto Motel_BattleSimulator_ExitSimulation
+	return
+
+AWaltzWithWally_Series1_2:
+# 292 "data/battle_simulator.pory"
+	fadescreen FADE_TO_BLACK
+# 293 "data/battle_simulator.pory"
+	special SetCB2WhiteOut
+	goto AWaltzWithWally_Series1_1
+
+AWaltzWithWally_Series1_7:
+# 297 "data/battle_simulator.pory"
+	giveitem ITEM_STELLAR_TERA_SHARD, 2
+# 298 "data/battle_simulator.pory"
+	giveitem ITEM_EXP_CANDY_XL, 2
+# 299 "data/battle_simulator.pory"
+	buffernumberstring STR_VAR_1, 5
+# 300 "data/battle_simulator.pory"
+	setvar VAR_0x8004, 5
+# 301 "data/battle_simulator.pory"
+	special GiveFrontierBattlePoints
+# 302 "data/battle_simulator.pory"
+	msgbox PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS
+# 303 "data/battle_simulator.pory"
+	setflag FLAG_BATTLESIM_DISC_2_1
+	goto AWaltzWithWally_Series1_6
+
+
 Motel_BattleSimulator_Intro_Text_0:
-# 7 "data/cynthias_challenge.pory"
+# 7 "data/battle_simulator.pory"
 	.string "Oh, hey!\nAre you {PLAYER}?$"
 
 Motel_BattleSimulator_Intro_Text_1:
-# 21 "data/cynthias_challenge.pory"
+# 21 "data/battle_simulator.pory"
 	.string "The group that checked in this morning\nleft this thing here for someone named\l{PLAYER}. That must be you then.$"
 
 Motel_BattleSimulator_Intro_Text_2:
-# 26 "data/cynthias_challenge.pory"
+# 26 "data/battle_simulator.pory"
 	.string "They said it's a battle simulator.\pComes with its own instructions and\neverything!\pI'd love to use that sort of thing,\nbut we've got no Pokémon here.$"
 
 Motel_BattleSimulator_Intro_Text_3:
-# 31 "data/cynthias_challenge.pory"
+# 31 "data/battle_simulator.pory"
 	.string "Feel free to use it whenever you're\nhere…\pJust try not to interrupt my TV time!$"
 
 Motel_BattleSimulator_Text_0:
-# 40 "data/cynthias_challenge.pory"
+# 40 "data/battle_simulator.pory"
 	.string "It's a battle simulator!\n"
 	.string "Want to use it?$"
 
+Gamecube_ChooseDisc_Text_0:
+# 60 "data/battle_simulator.pory"
+	.string "Which disc will you insert?$"
+
+Gamecube_ChooseDisc_Text_1:
+# 61 "data/battle_simulator.pory"
+	.string "Cynthia's Challenge (70)$"
+
+Gamecube_ChooseDisc_Text_2:
+# 63 "data/battle_simulator.pory"
+	.string "A Waltz with Wally (80)$"
+
 CynthiasChallenge_Main_Text_0:
-# 68 "data/cynthias_challenge.pory"
+# 82 "data/battle_simulator.pory"
 	.string "Welcome to Cynthia's Challenge!\n"
 	.string "Please select a battle series.$"
 
 CynthiasChallenge_Main_Text_1:
-# 71 "data/cynthias_challenge.pory"
+# 85 "data/battle_simulator.pory"
 	.string "Gym Leaders Part 1$"
 
 CynthiasChallenge_Main_Text_2:
-# 74 "data/cynthias_challenge.pory"
+# 88 "data/battle_simulator.pory"
 	.string "Gym Leaders Part 1 - Complete!$"
 
 CynthiasChallenge_Main_Text_3:
-# 77 "data/cynthias_challenge.pory"
+# 91 "data/battle_simulator.pory"
 	.string "Gym Leaders Part 2$"
 
 CynthiasChallenge_Main_Text_4:
-# 80 "data/cynthias_challenge.pory"
+# 94 "data/battle_simulator.pory"
 	.string "Gym Leaders Part 2 - Complete!$"
 
 CynthiasChallenge_Main_Text_5:
-# 84 "data/cynthias_challenge.pory"
+# 98 "data/battle_simulator.pory"
 	.string "Sinnoh League$"
 
 CynthiasChallenge_Main_Text_6:
-# 87 "data/cynthias_challenge.pory"
+# 101 "data/battle_simulator.pory"
 	.string "Sinnoh League - Complete!$"
 
 Gamecube_Info_Text_0:
-# 112 "data/cynthias_challenge.pory"
+# 126 "data/battle_simulator.pory"
 	.string "In the battle simulator you will use\n"
 	.string "your own party to face a series of\l"
 	.string "consecutive battles.\p"
@@ -476,83 +622,96 @@ Gamecube_Info_Text_0:
 	.string "rewards!$"
 
 Motel_BattleSimulator_FirstTrainer_Text_0:
-# 136 "data/cynthias_challenge.pory"
+# 150 "data/battle_simulator.pory"
 	.string "First trainer.\nInitializing…\l… … …$"
 
 Motel_BattleSimulator_SecondTrainer_Text_0:
-# 142 "data/cynthias_challenge.pory"
+# 156 "data/battle_simulator.pory"
 	.string "Second trainer.\nInitializing…\l… … …$"
 
 Motel_BattleSimulator_ThirdTrainer_Text_0:
-# 148 "data/cynthias_challenge.pory"
+# 162 "data/battle_simulator.pory"
 	.string "Third trainer.\nInitializing…\l… … …$"
 
 Motel_BattleSimulator_FourthTrainer_Text_0:
-# 154 "data/cynthias_challenge.pory"
+# 168 "data/battle_simulator.pory"
 	.string "Fourth trainer.\nInitializing…\l… … …$"
 
 Motel_BattleSimulator_FinalTrainer_Text_0:
-# 160 "data/cynthias_challenge.pory"
+# 174 "data/battle_simulator.pory"
 	.string "Final trainer.\nInitializing…\l… … …$"
 
 CynthiasChallenge_Series1_Text_0:
-# 179 "data/cynthias_challenge.pory"
+# 193 "data/battle_simulator.pory"
 	.string "W-what? That can't be!\nMy buffed-up Pokémon!$"
 
 CynthiasChallenge_Series1_Text_1:
-# 181 "data/cynthias_challenge.pory"
+# 195 "data/battle_simulator.pory"
 	.string "Amazing!\nYou're very good, aren't you?$"
 
 CynthiasChallenge_Series1_Text_2:
-# 183 "data/cynthias_challenge.pory"
+# 197 "data/battle_simulator.pory"
 	.string "I shall admit defeat…\nYou are much too strong.$"
 
 CynthiasChallenge_Series1_Text_3:
-# 185 "data/cynthias_challenge.pory"
+# 199 "data/battle_simulator.pory"
 	.string "Hunwah! It's gone and ended!\nHow will I say this… I want more!\lI wanted to battle a lot more!$"
 
 CynthiasChallenge_Series2_Text_0:
-# 200 "data/cynthias_challenge.pory"
+# 214 "data/battle_simulator.pory"
 	.string "You are so fantastically strong.\nI know now why I have lost.$"
 
 CynthiasChallenge_Series2_Text_1:
-# 202 "data/cynthias_challenge.pory"
+# 216 "data/battle_simulator.pory"
 	.string "Hmm! My sturdy Pokémon, defeated!$"
 
 CynthiasChallenge_Series2_Text_2:
-# 204 "data/cynthias_challenge.pory"
+# 218 "data/battle_simulator.pory"
 	.string "I must say, I'm warmed up to you!\nI might even admire you a little.$"
 
 CynthiasChallenge_Series2_Text_3:
-# 206 "data/cynthias_challenge.pory"
+# 220 "data/battle_simulator.pory"
 	.string "You've got me beat…\nYour desire and the noble way your\lPokémon battled for you…\lI even felt thrilled during our match.\lThat was a very good battle.$"
 
 CynthiasChallenge_Series3_Text_0:
-# 221 "data/cynthias_challenge.pory"
+# 235 "data/battle_simulator.pory"
 	.string "I will now concede defeat. But I think\nyou came to see how great Bug-type\lPokémon can be. Battling is a deep and\lcomplex affair…$"
 
 CynthiasChallenge_Series3_Text_1:
-# 223 "data/cynthias_challenge.pory"
+# 237 "data/battle_simulator.pory"
 	.string "Well! Dear child, I must say, that was\nmost impressive. Your Pokémon believed\lin you and did their best to earn you\lthe win.$"
 
 CynthiasChallenge_Series3_Text_2:
-# 225 "data/cynthias_challenge.pory"
+# 239 "data/battle_simulator.pory"
 	.string "…! I wasn't expecting this! I wasn't\nlooking down on you… But I didn't think\lfor one second that I'd lose!$"
 
 CynthiasChallenge_Series3_Text_3:
-# 227 "data/cynthias_challenge.pory"
+# 241 "data/battle_simulator.pory"
 	.string "I see… You getting past the three\nbefore me was no fluke. Your power\lis real.$"
 
 CynthiasChallenge_Series3_Text_4:
-# 229 "data/cynthias_challenge.pory"
+# 243 "data/battle_simulator.pory"
 	.string "…Just a few moments ago, you were the\nmost powerful challenger. And just now,\lyou became the most powerful of all the\lTrainers.$"
 
+AWaltzWithWally_Main_Text_0:
+# 267 "data/battle_simulator.pory"
+	.string "Welcome to A Waltz with Wally!\n"
+	.string "Please select a battle series.$"
+
+AWaltzWithWally_Main_Text_1:
+# 270 "data/battle_simulator.pory"
+	.string "Part 1$"
+
+AWaltzWithWally_Main_Text_2:
+# 273 "data/battle_simulator.pory"
+	.string "Part 1 - Complete!$"
+
 Gamecube_Text_Congratulations::
-# 121 "data/cynthias_challenge.pory"
+# 135 "data/battle_simulator.pory"
 	.string "Congratulations. You have completed\n"
 	.string "the current series of battles.$"
 
 Gamecube_Text_ExitingSim::
-# 126 "data/cynthias_challenge.pory"
+# 140 "data/battle_simulator.pory"
 	.string "Closing simulation…\n"
 	.string "Don't turn off the power…$"

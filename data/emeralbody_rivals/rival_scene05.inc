@@ -985,7 +985,7 @@ Rival_Scene05_Text_1:
 
 Rival_Scene05_Text_2:
 # 103 "data/emeralbody_rivals/rival_scene05.pory"
-	.string "Yeah, I know… I just thought I might\nhave a chance after all that research\land training…$"
+	.string "Yeah, I know… {PAUSE 100}I just thought I might\nhave a chance after all that research\land training…$"
 
 Rival_Scene05_Text_3:
 # 106 "data/emeralbody_rivals/rival_scene05.pory"
@@ -993,7 +993,7 @@ Rival_Scene05_Text_3:
 
 Rival_Scene05_Text_4:
 # 109 "data/emeralbody_rivals/rival_scene05.pory"
-	.string "Yeah, but- …But I didn't need to\nimprove! This was but a new horizon\lto conquer!$"
+	.string "Yeah, but- {PAUSE 30}…{PAUSE 60}But I didn't need to\nimprove! This was but a new horizon\lto conquer!$"
 
 Rival_Scene05_Text_5:
 # 145 "data/emeralbody_rivals/rival_scene05.pory"
@@ -1001,12 +1001,12 @@ Rival_Scene05_Text_5:
 
 Rival_Scene05_Text_6:
 # 149 "data/emeralbody_rivals/rival_scene05.pory"
-	.string "Ah… now they're making bets? I don't\nrecall giving you all permission to bet\lon me.\p"
+	.string "Ah… {PAUSE 100}now they're making bets? I don't\nrecall giving you all permission to bet\lon me.\p"
 	.string "Get your rowdy bunch of ne'er-do-wells\nunder control, why don't you, Jakson?$"
 
 Rival_Scene05_Text_7:
 # 154 "data/emeralbody_rivals/rival_scene05.pory"
-	.string "Haha… for what it's worth, I did have my\nmoney on you next…$"
+	.string "Haha… {PAUSE 100}for what it's worth, I did have my\nmoney on you next…$"
 
 Rival_Scene05_Text_8:
 # 160 "data/emeralbody_rivals/rival_scene05.pory"
@@ -1027,7 +1027,7 @@ Rival_Scene05_Text_11:
 
 Rival_Scene05_Text_12:
 # 201 "data/emeralbody_rivals/rival_scene05.pory"
-	.string "And I'm last to complete it… Agh!\nI thought I'd gotten better.$"
+	.string "And I'm last to complete it… {PAUSE 100}Agh!\nI thought I'd gotten better.$"
 
 Rival_Scene05_Text_13:
 # 203 "data/emeralbody_rivals/rival_scene05.pory"
@@ -1043,7 +1043,7 @@ Rival_Scene05_Text_15:
 
 Rival_Scene05_Text_16:
 # 230 "data/emeralbody_rivals/rival_scene05.pory"
-	.string "…Huh? What do you mean?$"
+	.string "…{PAUSE 60}Huh? What do you mean?$"
 
 Rival_Scene05_Text_17:
 # 233 "data/emeralbody_rivals/rival_scene05.pory"
@@ -1077,7 +1077,7 @@ Rival_Scene05_Text_23:
 
 Rival_Scene05_Text_24:
 # 268 "data/emeralbody_rivals/rival_scene05.pory"
-	.string "Haha… Well… This is pretty much it for\nnow. As much as I wish there were more,\lthis is all I've gotten done so far.$"
+	.string "Haha… {PAUSE 100}Well… {PAUSE 100}This is pretty much it for\nnow. As much as I wish there were more,\lthis is all I've gotten done so far.$"
 
 Rival_Scene05_Text_25:
 # 270 "data/emeralbody_rivals/rival_scene05.pory"
@@ -1121,11 +1121,11 @@ Rival_Scene05_Text_34:
 
 Rival_Scene05_Text_35:
 # 297 "data/emeralbody_rivals/rival_scene05.pory"
-	.string "Wow, you really went hard on this\nmod-pack over like… a week, was it?$"
+	.string "Wow, you really went hard on this\nmod-pack over like… {PAUSE 100}a week, was it?$"
 
 Rival_Scene05_Text_36:
 # 300 "data/emeralbody_rivals/rival_scene05.pory"
-	.string "I… may have started on it a while\nbefore I asked if you all were in\lor not.$"
+	.string "I… {PAUSE 100}may have started on it a while\nbefore I asked if you all were in\lor not.$"
 
 Rival_Scene05_Text_37:
 # 304 "data/emeralbody_rivals/rival_scene05.pory"
@@ -1133,7 +1133,7 @@ Rival_Scene05_Text_37:
 
 Rival_Scene05_Text_38:
 # 307 "data/emeralbody_rivals/rival_scene05.pory"
-	.string "I- Well… {EMOJI_BIGWHEEL}Clears throat{EMOJI_BIGWHEEL}\nI'm happy you all enjoyed it.\p"
+	.string "I- {PAUSE 30}Well… {PAUSE 100}{EMOJI_BIGWHEEL}Clears throat{EMOJI_BIGWHEEL}\nI'm happy you all enjoyed it.\p"
 	.string "And I hope that continues for the\nendgame content I managed to do.\p"
 	.string "I hope you all… Baron, Sakura, Redd,\nHarper… and {PLAYER}. I hope you\lgive it a shot.$"
 
@@ -1159,7 +1159,7 @@ Rival_Scene05_Text_43:
 
 Rival_Scene05_Text_44:
 # 343 "data/emeralbody_rivals/rival_scene05.pory"
-	.string "Alright then… Shall we begin?\nOne more time.$"
+	.string "Alright then… {PAUSE 100}Shall we begin?\nOne more time.$"
 
 Scene05_Text_Sakura1::
 # 502 "data/emeralbody_rivals/rival_scene05.pory"

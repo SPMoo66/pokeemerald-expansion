@@ -64,7 +64,7 @@ script Rival_Scene04 {
 	applymovement (SAKURA_SCENE04, Common_Movement_WalkInPlaceUp)
 	playse (SE_M_METRONOME)
 	speakername (CommonText_Baron)
-	msgbox("W- Well… I'm not as slow as I was\nbefore…")
+	msgbox("W-{PAUSE 30}Well… {PAUSE 100}I'm not as slow as I was\nbefore…")
 	applymovement (JAKSON_SCENE04, Common_Movement_WalkInPlaceRight)
 	speakername (CommonText_Jakson)
 	msgbox("That's true. You, Redd, and Harper have\nimproved a lot.")
@@ -77,7 +77,7 @@ script Rival_Scene04 {
 	closemessage
 	delay (20)
 	speakername (CommonText_Harper)
-	msgbox("Doesn't that mean you started towards\nthe back if you could be “left behind”?")
+	msgbox("Doesn't that mean you started towards\nthe back if you {PAUSE 30}could {PAUSE 60}be “left behind”?")
 	applymovement (REDD_SCENE04, Common_Movement_WalkInPlaceDown)
 	applymovement (JAKSON_SCENE04, Common_Movement_WalkInPlaceDown)
 	waitmovement (0)
@@ -88,7 +88,7 @@ script Rival_Scene04 {
 	playse (SE_RG_HELP_OPEN)
 	msgbox("Maybe he did! I wouldn't know. I never\nbothered to look back, heheh{EMOJI_TILDE}{UNK_SPACER}")
 	speakername (CommonText_Redd)
-	msgbox("W- What are you implying?")
+	msgbox("W-{PAUSE 30}What are you implying?")
 	closemessage
 	applymovement (SAKURA_SCENE04, Common_Movement_WalkInPlaceUp)
 	waitmovement (0)

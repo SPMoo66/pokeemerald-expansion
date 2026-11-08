@@ -246,7 +246,7 @@ Rival_Scene04_Text_2:
 
 Rival_Scene04_Text_3:
 # 67 "data/emeralbody_rivals/rival_scene04.pory"
-	.string "W- Well… I'm not as slow as I was\nbefore…$"
+	.string "W-{PAUSE 30}Well… {PAUSE 100}I'm not as slow as I was\nbefore…$"
 
 Rival_Scene04_Text_4:
 # 70 "data/emeralbody_rivals/rival_scene04.pory"
@@ -258,7 +258,7 @@ Rival_Scene04_Text_5:
 
 Rival_Scene04_Text_6:
 # 80 "data/emeralbody_rivals/rival_scene04.pory"
-	.string "Doesn't that mean you started towards\nthe back if you could be “left behind”?$"
+	.string "Doesn't that mean you started towards\nthe back if you {PAUSE 30}could {PAUSE 60}be “left behind”?$"
 
 Rival_Scene04_Text_7:
 # 89 "data/emeralbody_rivals/rival_scene04.pory"
@@ -266,7 +266,7 @@ Rival_Scene04_Text_7:
 
 Rival_Scene04_Text_8:
 # 91 "data/emeralbody_rivals/rival_scene04.pory"
-	.string "W- What are you implying?$"
+	.string "W-{PAUSE 30}What are you implying?$"
 
 Rival_Scene04_Text_9:
 # 98 "data/emeralbody_rivals/rival_scene04.pory"

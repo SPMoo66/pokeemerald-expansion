@@ -212,7 +212,7 @@ script MauveCamp_Cynthia {
 	speakername (CommonText_Cynthia)
 	if (!defeated(TRAINER_CYNTHIA_EXP_1)) {
 		msgbox ("Oh, hello.\p"
-				"… {PAUSE 60}… {PAUSE 60}…{PAUSE 60}\n"
+				"{DOTS_WITH_PAUSES}{PAUSE 60}\n"
 				"I seem familiar?\p"
 				"I can assure you, we have not met\n"
 				"before.\p"

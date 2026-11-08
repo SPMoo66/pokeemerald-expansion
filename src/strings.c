@@ -20,6 +20,7 @@ const u8 gText_ExpandedPlaceholder_Brendan[] = _("Brendan");
 const u8 gText_ExpandedPlaceholder_May[] = _("May");
 const u8 gText_ExpandedPlaceholder_Red[] = _("Red");
 const u8 gText_ExpandedPlaceholder_Green[] = _("Green");
+const u8 gText_ExpandedPlaceholder_DotsWithPauses[] = _("… {PAUSE 60}… {PAUSE 60}…");
 const u8 gText_EggNickname[POKEMON_NAME_LENGTH + 1] = _("Egg");
 const u8 gText_Pokemon[POKEMON_NAME_LENGTH + 1] = _("Pokémon");
 const u8 gText_Time[] = _("Time");

@@ -244,7 +244,7 @@ script Rival_Scene05 {
 	call (GetBaronsName)
 	applymovement (BARON_SCENE05, Common_Movement_WalkInPlaceRight)
 	msgbox ("Trust me, you didn't want to see…\p"
-			"… … …")
+			"{DOTS_WITH_PAUSES}")
 	applymovement (BARON_SCENE05, Common_Movement_WalkInPlaceLeft)
 	msgbox ("Well, maybe it would've been nice to\nhave you all watching.\p"
 			"Maybe you could work on that next,\nJakson?")

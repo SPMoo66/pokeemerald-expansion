@@ -1056,7 +1056,7 @@ Rival_Scene05_Text_18:
 Rival_Scene05_Text_19:
 # 246 "data/emeralbody_rivals/rival_scene05.pory"
 	.string "Trust me, you didn't want to see…\p"
-	.string "… … …$"
+	.string "{DOTS_WITH_PAUSES}$"
 
 Rival_Scene05_Text_20:
 # 249 "data/emeralbody_rivals/rival_scene05.pory"

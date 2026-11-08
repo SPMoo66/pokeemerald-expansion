@@ -348,7 +348,7 @@ script SSTidal_Scene01_OnFrame {
 	applymovement (SSTIDAL_REDD, Common_Movement_QuestionMark)
 	fadeoutbgm (1)
 	speakername (CommonText_Redd)
-	msgbox ("…{PAUSE 60} …{PAUSE 60} …\p"
+	msgbox ("{DOTS_WITH_PAUSES}\p"
 			"The hell is… {PAUSE 100}that?", MSGBOX_AUTOCLOSE)
 	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
 	applymovement (SSTIDAL_JAKSON, Common_Movement_QuestionMark)
@@ -455,7 +455,7 @@ script IllusoryGrotto_B4F_1R_Scene01_OnFrame {
 	playse (SE_RAIN_STOP)
 	delay (30)
 
-	msgbox ("… {PAUSE 60}… {PAUSE 60}…\p"
+	msgbox ("{DOTS_WITH_PAUSES}\p"
 			"You wake in a dark cave, the gentle\nsounds of waves crashing against a\lshoreline.", MSGBOX_AUTOCLOSE)
 
 	setflashlevel (8)
@@ -476,7 +476,7 @@ script IllusoryGrotto_B4F_1R_Scene01_OnFrame {
 	delay (20)
 	applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceDown)
 	waitmovement (0)
-	msgbox ("… {PAUSE 60}… {PAUSE 60}…\p"
+	msgbox ("{DOTS_WITH_PAUSES}\p"
 			"Where is everyone?", MSGBOX_AUTOCLOSE)
 
 	animateflash (0)

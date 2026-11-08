@@ -13,7 +13,7 @@ text Scene01_BaronText {
 	format(	"H-{PAUSE 30}Hello…? {PAUSE 100}You don't look like you're stapled in place like the others.\p"
 			"Ack!?{PAUSE 30} It moved!?{PAUSE 30} Stay back, demon!\n"
 			"Stay back or else I'll… {PAUSE 100}I'll…{PAUSE 60}!!!\p"
-			"… {PAUSE 60}… {PAUSE 60}…?\p"
+			"{DOTS_WITH_PAUSES}?\p"
 			"…{PLAYER}?{PAUSE 60} Why do you look like that?\p"
 			"It's nothing like how I thought…{PAUSE 60}\n"
 			"…how I remembered you looking?\p"
@@ -29,14 +29,14 @@ text Scene01_BaronText {
 text Scene01_HarperText {
 	format(	"Sigh… {PAUSE 100}well, this is disorientating.\p"
 			"I hope I get used to walking around in 2D. Such a mindfuck at first.\p"
-			"… {PAUSE 60}… {PAUSE 60}…\n"
+			"{DOTS_WITH_PAUSES}\n"
 			"Are you another NPC? Do I need to do something to get you to move?\p"
-			"… {PAUSE 60}… {PAUSE 60}…\n"
+			"{DOTS_WITH_PAUSES}\n"
 			"{PLAYER}?\p"
 			"Well that looks nothing like your ENCORE avatar like mine is.\p"
 			"The default avatar? Alright, noted.\n"
 			"Never played this Pokémon gen before.\l"
-			"… {PAUSE 60}… {PAUSE 60}…\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Nah, I should be fine. I might just need to… {PAUSE 100}sit down for a bit first.\p"
 			"Feel free to go on ahead. I'll catch up later when I get my bearings.\p"
 			"I'll wait here for the others while I get used to it.")
@@ -46,7 +46,7 @@ text Scene01_JaksonText {
 	format(	"Oh, that's interesting to see you from the outside looking in.\p"
 			"You must've been first in the server if you claimed the default avatar.\p"
 			"My avatar not looking too janky?\l"
-			"… {PAUSE 60}… {PAUSE 60}…\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Good. I think it just converted my ENCORE avatar into this format.\p"
 			"The others should be connected soon enough. They'll probably be the same.\p"
 			"If you're already up to getting your starter, go on ahead.\p"
@@ -58,7 +58,7 @@ text Scene01_ReddText {
 	format(	"Yo, {PLAYER}? That you?\n"
 			"You actually got the default avatar?\p"
 			"I wonder if everyone will look like that or just the first person in?\p"
-			"… {PAUSE 60}… {PAUSE 60}…\n"
+			"{DOTS_WITH_PAUSES}\n"
 			"Me? This is my old custom avatar from the base game.\p"
 			"It's actually pretty cool. It's almost like I'm continuing my journey.\p"
 			"First I conquered Kanto, and now I'll reign supreme over Hoenn, too!\p"
@@ -73,7 +73,7 @@ text Scene01_SakuraText {
 			"I haven't played many of these 2D spatial reality games, but it always throws me for a loop when I do.\p"
 			"So who do we have here? Jakson?\p"
 			"It {PAUSE 30}is {PAUSE 60}his modpack, after all. He'd probably be the first one in to grab the default avatar.\p"
-			"… {PAUSE 60}… {PAUSE 60}…\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Oh, really? {PAUSE 30}{PLAYER}? {PAUSE 60}You've got quite the deft hand to beat him to the punch.\p"
 			"I'll have to stay on my guard around you this time{EMOJI_TILDE}\p"
 			"As for me, I'm happy the system could convert my ENCORE avatar for this.\p"
@@ -125,7 +125,7 @@ text Town01_SakuraText {
 			"For me, I wanna get the cutest option possible as my starter.\p"
 			"My endgame goal is a majestic and cute queen {PAUSE 30}sitting upon her throne, {PAUSE 30}with steeled and awesome-bodied guards flanking her.\p"
 			"Each willing to risk life and limb to bring glory to her queendom.\p"
-			"… {PAUSE 60}… {PAUSE 60}…\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Yeah? Of course I realize we're playing a Pokémon game.\p"
 			"You're so {PAUSE 30}weird {PAUSE 60}sometimes, {PLAYER}, hahaha.")
 }
@@ -133,8 +133,8 @@ text Town01_SakuraText {
 # Scene02
 text Scene02_BaronText_PreBattle {
 	format(	"H-{PAUSE 30}Hello? It's… good to… see…\n"
-			"You… {PAUSE 60}… {PAUSE 60}… {PAUSE 60}… {PAUSE 30}… {PAUSE 30}{PLAYER}?\l"
-			"… {PAUSE 60}… {PAUSE 60}…\p"
+			"You{DOTS_WITH_PAUSES} {PAUSE 60}… {PAUSE 30}… {PAUSE 30}{PLAYER}?\l"
+			"{DOTS_WITH_PAUSES}\p"
 			"Oh, thank God that's you. That's not your normal look, right?\p"
 			"Just trying to remember what each person looks like is a task…\p"
 			"Let alone remember everything I was told about-\p"
@@ -147,11 +147,11 @@ text Scene02_BaronText_PreBattle {
 text Scene02_HarperText_PreBattle {
 	format(	"Yo. How ya doing?\p"
 			"Catch any interesting… {PAUSE 100}Uh… {PAUSE 100}Pokémon, right?\p"
-			"… {PAUSE 60}… {PAUSE 60}…\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Yeah, I know. I've played the games before today after all.\p"
 			"I'm just seeing some of these and wondering if Jakson modded in some.\p"
 			"Like one of these has gotta be a Digimon or something, right?\p"
-			"… {PAUSE 60}… {PAUSE 60}…\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"There's no way that's a real one.\n"
 			"C'mon, show me.")
 }
@@ -160,7 +160,7 @@ text Scene02_JaksonText_PreBattle {
 	format(	"{PLAYER}.\p"
 			"Everything running smoothly?\n"
 			"Nothing catastrophic break?\l"
-			"… {PAUSE 60}… {PAUSE 60}…\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Nah, I wouldn't say I think something is broken. It just feels… {PAUSE 100}inevitable.\p"
 			"If I'm just being paranoid, then all the better. Then it means the tweaks I made are working as intended and we can enjoy all the new stuff.\p"
 			"With that said… {PAUSE 100}maybe it could use a little more testing of the battles.\p"
@@ -171,7 +171,7 @@ text Scene02_JaksonText_PreBattle {
 text Scene02_ReddText_PreBattle {
 	format(	"If it isn't the “Blue” to my “Red”?\n"
 			"Or maybe you'd prefer “Green”?\p"
-			"… {PAUSE 60}… {PAUSE 60}…\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Ah, just have fun with it.\p"
 			"What's a Pokémon game without rivals, after all?\p"
 			"That is to say… {PAUSE 100}don't let your guard down and fall behind.\p"
@@ -183,7 +183,7 @@ text Scene02_SakuraText_PreBattle {
 	format(	"{PLAYER}, you're alive and kickin'?\n"
 			"Never was a doubt in my mind.\p"
 			"Better watch out, yeah? Turn a corner and the next thing you know… {PAUSE 100}Dead!\p"
-			"… {PAUSE 60}… {PAUSE 60}…\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Haha{EMOJI_TILDE} Of course I'm serious.\p"
 			"How about we test just how much permadeath is baked into the game?\p"
 			"Cuteness Inspector Sakura…{PAUSE 100}\n"
@@ -217,7 +217,7 @@ text Scene02_BaronText_PostBattle {
 			"S-{PAUSE 30}Sorry. I should just try and not make a mess of everything.\p"
 			"Please go have fun with everyone.\p"
 			"I need to learn how to control this better and actually help.\l"
-			"… {PAUSE 60}… {PAUSE 60}…\l"
+			"{DOTS_WITH_PAUSES}\l"
 			"Cookies? {PAUSE 60}Maybe cookies…")
 }
 
@@ -225,7 +225,7 @@ text Scene02_HarperText_PostBattle {
 	format(	"Sigh… {PAUSE 100}I knew there was a reason I was dodging those trainers.\p"
 			"Maybe I really should've sat this one out.\p"
 			"This is… {PAUSE 100}more complicated than that phone game I played.\p"
-			"… {PAUSE 60}… {PAUSE 60}…\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"No, just go on ahead, I think I need to take another break.\p"
 			"Seriously, don't worry.\n"
 			"I'm just tired.")
@@ -241,7 +241,7 @@ text Scene02_JaksonText_PostBattle {
 text Scene02_ReddText_PostBattle {
 	format(	"Ack. What are you, Route 22 Blue?!\p"
 			"I knew I should've grinded more…\p"
-			"… {PAUSE 60}… {PAUSE 60}…\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Well, good job not falling behind!\p"
 			"It's only gonna get harder from her on out. So… {PAUSE 100}uh…\p"
 			"S-{PAUSE 30}Smell ya later!")
@@ -307,7 +307,7 @@ text Town03_BaronText2 {
 
 text Town03_HarperText {
 	format(	"Cool, an actual city. Wonder if they have much of a night life?\p"
-			"… … … What?\p"
+			"{DOTS_WITH_PAUSES} {PAUSE 60}What?\p"
 			"There's no… night in this game's base\n"
 			"version?\p"
 			"So… it wouldn't have that in the\n"
@@ -344,7 +344,7 @@ text Scene03_BaronText {
 	format(	"Hey uh… {PLAYER}, right?\n"
 			"Mind if I ask a question?\p"
 			"Is it just me or did they give me a flip phone?\p"
-			"… … … PokéNav?\n"
+			"{DOTS_WITH_PAUSES} {PAUSE 60}PokéNav?\n"
 			"That's… I guess that makes sense.\p"
 			"Thank you."
 			"Now, how to… uh… work… this…")
@@ -393,7 +393,7 @@ text Battle02_BaronText_PreBattle {
 	"This is the boss room place, right?\p"
 	"That Jakson said I should try these\n"
 	"to test if I am getting any better.\p"
-	"… … …\p"
+	"{DOTS_WITH_PAUSES}\p"
 	"Oh!\p"
 	"How about we do the thing?\n"
 	"You'd tell me what I'm doing wrong."
@@ -407,7 +407,7 @@ text Battle02_BaronText_BattleVictory {
 text Battle02_BaronText_PostBattle {
 	"You won again. So what did I do\n"
 	"wrong this time?\p"
-	"… … …\p"
+	"{DOTS_WITH_PAUSES}\p"
 	"Is it that obvious? So much so that\n"
 	"you're unwilling to say anything?\p"
 	"I was hoping to learn that the gym\n"
@@ -459,7 +459,7 @@ text Battle02_JaksonText_PreBattle {
 	"Mauville to here in Fallarbor, isn't it?\p"
 	"One could say the journey is the trial of\n"
 	"any adventure. The struggle, the loss…\p"
-	"… … …\p"
+	"{DOTS_WITH_PAUSES}\p"
 	"Heh.\p"
 	"Yeah, of course we're going to\n"
 	"battle!\p"
@@ -1065,7 +1065,7 @@ text Town09_BaronText {
 			"Is there a place to practice?\p"
 			"I haven't surfed for… oh, it feels like\n"
 			"it's going on decades at this point.\p"
-			"… … …\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Oh… it's that simple?")
 }
 
@@ -1103,7 +1103,7 @@ text Town09_ReddText {
 			"simpler routes.\p"
 			"Like I'm not playing Pokémon for a\n"
 			"platforming challenge.\p"
-			"… … …\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Wait, that later generation game\n"
 			"did simpler routes, too?\p"
 			"I guess… Hmmm…\p"
@@ -1177,7 +1177,7 @@ text Town10_ReddText {
 			"I could've sworn they always did\n"
 			"single type before.\p"
 			"It really forces you to think…\p"
-			"… … …\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Yes, I was thinking before this all!\p"
 			"It's just… like a good learning\n"
 			"experience and stuff.\p"
@@ -1199,7 +1199,7 @@ text Town10_SakuraText {
 
 # Town11
 text Town11_BaronText {
-	format(	"… … …\p"
+	format(	"{DOTS_WITH_PAUSES}\p"
 			"… Oh, {PLAYER}. I didn't see you there.\p"
 			"I've been working on this puzzle for\n"
 			"a while.\p"
@@ -1292,7 +1292,7 @@ text Battle04_BaronText_PreBattle {
 	"Those routes were really long and it\n"
 	"gave me a lot of time to practice, train\l"
 	"and strategize.\p"
-	"… … …\p"
+	"{DOTS_WITH_PAUSES}\p"
 	"You'll be kind enough to let me know if\n"
 	"I've improved, right?"
 }
@@ -1547,7 +1547,7 @@ text Town12_JaksonText {
 			"about being able to see the rocket\l"
 			"launching?\p"
 			"Wouldn't it be cool?\p"
-			"… … …\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Haha… No, I can't promise anything\n"
 			"mod wise.")
 }
@@ -1557,7 +1557,7 @@ text Town12_ReddText {
 			"‘Too much water’ thing kicks in,\l"
 			"isn't it?\p"
 			"Oh…\n"
-			"… … …\l"
+			"{DOTS_WITH_PAUSES}\l"
 			"Oh no…\p"
 			"Please. Anything to get back\n"
 			"Cinnabar Island's routes.\p"
@@ -1571,7 +1571,7 @@ text Town12_SakuraText {
 			"twin thing going on since we started\l"
 			"yeah?\p"
 			"Here, let me read your mind.\p"
-			"… … …\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"“Sakura is the best Pokémon trainer\n"
 			"that there is!”\p"
 			"“…and… and…!”\p"
@@ -1638,7 +1638,7 @@ text Town13_ReddText {
 			"got an item.\p"
 			"This diving thing sure is a unique\n"
 			"new mechanic.\p"
-			"… … …\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Honestly, the more I think on it, maybe\n"
 			"I should be looking for where ‘{BIG_MULT_X}’\l"
 			"marks the spot?")
@@ -1668,7 +1668,7 @@ text Town14_BaronText {
 			"I've been trying to get out for a while\n"
 			"and… oh no… that center pit sure looks\l"
 			"unstable.\p"
-			"… … …\n"
+			"{DOTS_WITH_PAUSES}{PAUSE 60}\n"
 			"No luck?\p"
 			"I'll… I'll keep wiggling around more, and\n"
 			"hopefully I can get myself free.\p"
@@ -1833,7 +1833,7 @@ text Town16_BaronText {
 			"get me through the Elite Four.\p"
 			"It's sort of like doing math when\n"
 			"buying groceries, to be honest, haha.\p"
-			"… … …\n"
+			"{DOTS_WITH_PAUSES}{PAUSE 60}\n"
 			"Huh…?\p"
 			"Pokévial…?\p"
 			"What's that?")
@@ -1852,7 +1852,7 @@ text Town16_HarperText {
 			"Oh, right. You played this as a kid.\n"
 			"No slight meant towards you. You seem\l"
 			"like you were the patient sort of kid?\p"
-			"… … …\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Have I gotten less patient… or do I\n"
 			"just know what I like better…?\p"
 			"Ah, screw it. We've got a job to finish\n"
@@ -1929,12 +1929,12 @@ text Battle05_BaronText_PreBattle {
 }
 
 text Battle05_BaronText_PreBattle2 {
-	"… … …\p"
+	"{DOTS_WITH_PAUSES}\p"
 	"It seems like we're reaching the end.\p"
 	"You'll be headed into the final\n"
 	"gauntlet soon, I imagine.\p"
 	"Before you go… I… I need to…\p"
-	"… … …\p"
+	"{DOTS_WITH_PAUSES}\p"
 	"Well, how about this. If you beat me\n"
 	"here, then we'll talk.\p"
 	"After all, if I can beat you, maybe it\n"
@@ -1978,10 +1978,10 @@ text Battle05_BaronText_PostBattle2 {
 }
 
 text Battle05_BaronText_PostBattle3 {
-	"… … …\p"
+	"{DOTS_WITH_PAUSES}\p"
 	"O-Oh? My phone number…?\p"
 	"{PLAYER}, y-you couldn't mean…\p"
-	"… … …\n"
+	"{DOTS_WITH_PAUSES}{PAUSE 60}\n"
 	"To stay in contact while we're playing?\p"
 	"O-Oh! Of course! Of course that's what\n"
 	"I was thinking. Let me share it with you."
@@ -2080,7 +2080,7 @@ text Battle05_JaksonText_PostBattle {
 	"It's just a fun race, after all. Who\n"
 	"knows who'll get to the finish line\l"
 	"first now?\p"
-	"… … …\p"
+	"{DOTS_WITH_PAUSES}\p"
 	"I wonder if this is what it feels\n"
 	"like to be in a “rivalry”?\p"
 	"Honestly, I sort of get why the rivals\n"
@@ -2149,7 +2149,7 @@ text Battle05_ReddText_PostBattle2 {
 	"mistakes in raising my Pokémon here.\p"
 	"It stings, of course, always being one\n"
 	"step behind you.\p"
-	"… … …"
+	"{DOTS_WITH_PAUSES}"
 }
 
 text Battle05_ReddText_PostBattle3 {
@@ -2197,7 +2197,7 @@ text Battle05_SakuraText_BattleVictory {
 }
 
 text Battle05_SakuraText_PostBattle {
-	"… … …\p"
+	"{DOTS_WITH_PAUSES}\p"
 	"…Hah.\p"
 	"Hahahah!\p"
 	"{PLAYER}, going through this with you\n"
@@ -2212,7 +2212,7 @@ text Battle05_SakuraText_PostBattle {
 	"I get an audience. We should… Maybe\l"
 	"we should do this more often…\p"
 	"This, truly, has been fun.\p"
-	"… … … Ah!\p"
+	"{DOTS_WITH_PAUSES} {PAUSE 60}Ah!\p"
 	"Alright, we're not done yet{EMOJI_TILDE}\p"
 	"Race ya to be Champion! Don't you\n"
 	"drown in my wake!"
@@ -2249,7 +2249,7 @@ text Town18_HarperText {
 			"Is everything gonna feel super real\n"
 			"at a point? Will the real world start\l"
 			"to feel weird in comparison?\p"
-			"… … …\p"
+			"{DOTS_WITH_PAUSES}\p"
 			"Maybe I should try to find something a\n"
 			"little more relaxing.\p"
 			"Evergrande City was nice… Maybe I'll\n"

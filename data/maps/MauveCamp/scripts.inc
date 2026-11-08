@@ -566,7 +566,7 @@ MauveCamp_Ranger_Text_0:
 MauveCamp_Cynthia_Text_0:
 # 214 "data/maps/MauveCamp/scripts.pory"
 	.string "Oh, hello.\p"
-	.string "… {PAUSE 60}… {PAUSE 60}…{PAUSE 60}\n"
+	.string "{DOTS_WITH_PAUSES}{PAUSE 60}\n"
 	.string "I seem familiar?\p"
 	.string "I can assure you, we have not met\n"
 	.string "before.\p"

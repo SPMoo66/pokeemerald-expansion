@@ -1166,7 +1166,7 @@ SSTidal_Scene01_OnFrame_Text_22:
 
 SSTidal_Scene01_OnFrame_Text_23:
 # 351 "data/expansion_1/scene01.pory"
-	.string "…{PAUSE 60} …{PAUSE 60} …\p"
+	.string "{DOTS_WITH_PAUSES}\p"
 	.string "The hell is… {PAUSE 100}that?$"
 
 SSTidal_Scene01_OnFrame_Text_24:
@@ -1225,10 +1225,10 @@ SSTidal_Scene01_OnFrame_Text_36:
 
 IllusoryGrotto_B4F_1R_Scene01_OnFrame_Text_0:
 # 458 "data/expansion_1/scene01.pory"
-	.string "… {PAUSE 60}… {PAUSE 60}…\p"
+	.string "{DOTS_WITH_PAUSES}\p"
 	.string "You wake in a dark cave, the gentle\nsounds of waves crashing against a\lshoreline.$"
 
 IllusoryGrotto_B4F_1R_Scene01_OnFrame_Text_1:
 # 479 "data/expansion_1/scene01.pory"
-	.string "… {PAUSE 60}… {PAUSE 60}…\p"
+	.string "{DOTS_WITH_PAUSES}\p"
 	.string "Where is everyone?$"

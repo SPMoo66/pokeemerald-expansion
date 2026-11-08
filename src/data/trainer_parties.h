@@ -10725,8 +10725,8 @@ static const struct TrainerMon sParty_BrendanRoute119Torchic[] = {
     .ball = POKEBALL_COUNT,
     .lvl = 40,
     .species = SPECIES_INTELEON,
-    .ability = ABILITY_INTIMIDATE,
-	.heldItem = ITEM_ASSAULT_VEST,
+    .ability = ABILITY_SNIPER,
+	.heldItem = ITEM_SCOPE_LENS,
     .moves = {MOVE_SNIPE_SHOT, MOVE_DARK_PULSE, MOVE_ICE_BEAM, MOVE_PROTECT},
     .gender = TRAINER_MON_RANDOM_GENDER,
     }
@@ -19449,8 +19449,8 @@ static const struct TrainerMon sParty_BrendanSkyPillarTorchic[] = {
     .ball = POKEBALL_COUNT,
     .lvl = 54,
     .species = SPECIES_INTELEON,
-    .ability = ABILITY_INTIMIDATE,
-	.heldItem = ITEM_ASSAULT_VEST,
+    .ability = ABILITY_SNIPER,
+	.heldItem = ITEM_SCOPE_LENS,
     .moves = {MOVE_SNIPE_SHOT, MOVE_DARK_PULSE, MOVE_ICE_BEAM, MOVE_PROTECT},
     .gender = TRAINER_MON_RANDOM_GENDER,
     }

@@ -5,7 +5,7 @@ Scene01_BaronText::
 	.string "Ack!?{PAUSE 30} It moved!?{PAUSE 30} Stay back, demon!\n"
 	.string "Stay back or else I'll… {PAUSE 100}I'll…{PAUSE 60}!!!\p"
 	.string "{DOTS_WITH_PAUSES}?\p"
-	.string "…{PLAYER}?{PAUSE 60} Why do you look like that?\p"
+	.string "…{PAUSE 60}{PLAYER}? Why do you look like that?\p"
 	.string "It's nothing like how I thought…{PAUSE 60}\n"
 	.string "…how I remembered you looking?\p"
 	.string "Avatars? And I have a converted\n"
@@ -201,7 +201,7 @@ Scene02_BaronText_PreBattle::
 	.string "person looks like is a task…\p"
 	.string "Let alone remember everything I was\n"
 	.string "told about-\p"
-	.string "…A-{PAUSE 30}Actually. I got a gift for you.\p"
+	.string "…{PAUSE 60}A-{PAUSE 30}Actually. I got a gift for you.\p"
 	.string "You like this sort of thing, right?\n"
 	.string "Now, {PAUSE 60}how {PAUSE 30}do {PAUSE 30}I…\l"
 	.string "Do I just… {PAUSE 100}press this…?$"
@@ -401,7 +401,7 @@ Town02_SakuraText::
 
 Town03_BaronText1::
 # 296 "data/emeralbody_rivals/rival_text.pory"
-	.string "One step… two step… three step… four\n"
+	.string "One step… {PAUSE 60}two step… {PAUSE 60}three step… {PAUSE 60}four\n"
 	.string "step…?$"
 
 Town03_BaronText2::
@@ -419,14 +419,14 @@ Town03_HarperText::
 	.string "Cool, an actual city. Wonder if they\n"
 	.string "have much of a night life?\p"
 	.string "{DOTS_WITH_PAUSES} {PAUSE 60}What?\p"
-	.string "There's no… night in this game's base\n"
+	.string "There's no… {PAUSE 100}night in this game's base\n"
 	.string "version?\p"
-	.string "So… it wouldn't have that in the\n"
+	.string "So… {PAUSE 100}it wouldn't have that in the\n"
 	.string "game…?$"
 
 Town03_JaksonText::
 # 317 "data/emeralbody_rivals/rival_text.pory"
-	.string "Hmm… I wonder if there could be like 5\n"
+	.string "Hmm… {PAUSE 100}I wonder if there could be like 5\n"
 	.string "of them at once…?\p"
 	.string "Oh, hey {PLAYER}. I was just\n"
 	.string "considering how the online works.\p"
@@ -444,28 +444,28 @@ Town03_ReddText::
 	.string "They do like to hide secrets on NPCs.\n"
 	.string "Jakson could have done that, too.\p"
 	.string "He's the sort that might've gave a\n"
-	.string "trade evolution an everstone…$"
+	.string "trade evolution an Everstone…$"
 
 Town03_SakuraText::
 # 333 "data/emeralbody_rivals/rival_text.pory"
 	.string "Badge numero uno is mine{EMOJI_TILDE}\p"
 	.string "Did you see her Nosepass?\n"
 	.string "It's so…!\l"
-	.string "… unfortunate… I wonder if they ever\l"
-	.string "gave it a cuter form? A regional form,\l"
-	.string "maybe?\p"
+	.string "… {PAUSE 100}unfortunate…\p"
+	.string "I wonder if they ever gave it a cuter\n"
+	.string "form? A regional form, maybe?\p"
 	.string "That design would thrive with a little\n"
 	.string "more derp and splendor.$"
 
 Scene03_BaronText::
 # 343 "data/emeralbody_rivals/rival_text.pory"
-	.string "Hey uh… {PLAYER}, right?\n"
+	.string "Hey uh… {PAUSE 100}{PLAYER}, right?\n"
 	.string "Mind if I ask a question?\p"
 	.string "Is it just me or did they give me a flip\n"
 	.string "phone?\p"
 	.string "{DOTS_WITH_PAUSES} {PAUSE 60}PokéNav?\n"
-	.string "That's… I guess that makes sense.\p"
-	.string "Thank you. Now, how to… uh… work… this…$"
+	.string "That's… {PAUSE 100}I guess that makes sense.\p"
+	.string "Thank you. Now, how to… {PAUSE 60}uh… {PAUSE 60}work… {PAUSE 60}this…$"
 
 Scene03_HarperText::
 # 353 "data/emeralbody_rivals/rival_text.pory"
@@ -501,8 +501,8 @@ Scene03_SakuraText::
 	.string "Samesies for me.\p"
 	.string "I wonder if they let you customize it at\n"
 	.string "all?\p"
-	.string "It is a bit… super retro flip phone\n"
-	.string "style. That was so many decades ago.\p"
+	.string "It is a bit… {PAUSE 100}super retro flip phone\n"
+	.string "style. That was {PAUSE 30}so {PAUSE 60}many decades ago.\p"
 	.string "Well, if not. Then I'll have to deck out\n"
 	.string "my profile to be cool as can be{EMOJI_TILDE}{UNK_SPACER}$"
 
@@ -520,7 +520,7 @@ Battle02_BaronText_PreBattle::
 
 Battle02_BaronText_BattleVictory::
 # 402 "data/emeralbody_rivals/rival_text.pory"
-	.string "Oh no… Does that mean I need to\n"
+	.string "Oh no… {PAUSE 100}Does that mean I need to\n"
 	.string "go back to the cave?$"
 
 Battle02_BaronText_PostBattle::
@@ -551,18 +551,18 @@ Battle02_HarperText_PreBattle::
 	.string "out at a point?\p"
 	.string "Actually, maybe this wouldn't be a bad\n"
 	.string "time to try that battling thing again?\p"
-	.string "So, I just press… what button?\n"
+	.string "So, I just press… {PAUSE 100}what button?\n"
 	.string "What does ‘duel’ mea-$"
 
 Battle02_HarperText_BattleVictory::
 # 438 "data/emeralbody_rivals/rival_text.pory"
-	.string "Ach… Dang, you got me again.$"
+	.string "Ach… {PAUSE 100}Dang, you got me again.$"
 
 Battle02_HarperText_PostBattle::
 # 442 "data/emeralbody_rivals/rival_text.pory"
 	.string "Well, I did a little better that time, right?\p"
 	.string "I haven't been avoiding the NPCs.\n"
-	.string "…as much as before.\p"
+	.string "{PAUSE 100}…as much as before.\p"
 	.string "Though, I can't tell if it's experience or\n"
 	.string "natural talent that differentiates us.\p"
 	.string "I sort of wanna give you a real\n"
@@ -635,9 +635,9 @@ Battle02_ReddText_PostBattle::
 # 515 "data/emeralbody_rivals/rival_text.pory"
 	.string "Sheesh, you didn't need to…\p"
 	.string "…\p"
-	.string "Hmm… What was that move you used?\n"
+	.string "Hmm… {PAUSE 100}What was that move you used?\n"
 	.string "It sort of flipped the battle.\p"
-	.string "Tsk, you know waht, never mind. Not\n"
+	.string "Tsk, you know what, never mind. Not\n"
 	.string "like it's worth trying to keep up with.\p"
 	.string "I just need to buckle down and do my\n"
 	.string "Pokémon proud. No excuses for me.\p"
@@ -647,7 +647,7 @@ Battle02_ReddText_PostBattle::
 
 Battle02_SakuraText_PreBattle::
 # 529 "data/emeralbody_rivals/rival_text.pory"
-	.string "Hii-yah! Sakura Strike!\p"
+	.string "Hii-{PAUSE 30}yah! {PAUSE 30}Sakura Strike!\p"
 	.string "You think you can just waltz on through\n"
 	.string "the cave without difficulty?\p"
 	.string "Not on my watch!\p"
@@ -664,31 +664,31 @@ Battle02_SakuraText_PostBattle::
 	.string "Oh well{EMOJI_TILDE}\p"
 	.string "On one hand, it would be fun if you\n"
 	.string "were easy to beat, but…\p"
-	.string "A cat CAN be at their cutest when\n"
+	.string "A cat {PAUSE 30}CAN {PAUSE 60}be at their cutest when\n"
 	.string "they get to play with their food, too.\p"
 	.string "Go on then, I suppose.\n"
 	.string "Deliver your ‘Letter to Steven’.\p"
 	.string "Watch out, though. He's so cool that\n"
 	.string "it starts to veer into cute territory.\p"
 	.string "If you aren't careful you might get\n"
-	.string "lost in his eyes. And you're MY rival.$"
+	.string "lost in his eyes. And you're {PAUSE 30}MY {PAUSE 60}rival.$"
 
 Town04_BaronText::
 # 558 "data/emeralbody_rivals/rival_text.pory"
 	.string "Oh, um, hi {PLAYER}.\p"
 	.string "Sorry, I'm just having a lot of trouble\n"
 	.string "talking to this Mr. Briney person.\p"
-	.string "He just… moves so fast, right?\p"
+	.string "He just… {PAUSE 100}moves so fast, right?\p"
 	.string "The battles were challenging enough\n"
 	.string "already…\p"
-	.string "Y- You go on ahead, okay?$"
+	.string "Y-{PAUSE 30}You go on ahead, okay?$"
 
 Town04_HarperText::
 # 568 "data/emeralbody_rivals/rival_text.pory"
 	.string "It's actually not that bad in here.\p"
 	.string "One of the earlier trainers mentioned\n"
 	.string "that this cave was super dark before…\p"
-	.string "Wait, it was in the original? …What\n"
+	.string "Wait, it was in the original? {PAUSE 100}…What\n"
 	.string "would that even look like to us?\p"
 	.string "I guess we can thank Jakson a\n"
 	.string "little bit for what we have now.$"
@@ -704,7 +704,7 @@ Town04_JaksonText::
 	.string "that let you customize the experience.\p"
 	.string "Big props to the community that\n"
 	.string "develop them.\p"
-	.string "…even if they're not always the\n"
+	.string "…{PAUSE 60}even if they're not always the\n"
 	.string "easiest to implement every time\l"
 	.string "an update comes out…$"
 
@@ -717,8 +717,8 @@ Town04_ReddText::
 	.string "You know, they could have tried a little\n"
 	.string "harder to make this place stand out\l"
 	.string "from Cinnabar Island.\p"
-	.string "Though… a volcano sounds pretty\n"
-	.string "cool right now… Hmmm…$"
+	.string "Though… {PAUSE 100}a volcano sounds pretty\n"
+	.string "cool right now… {PAUSE 100}Hmmm…$"
 
 Town04_SakuraText::
 # 605 "data/emeralbody_rivals/rival_text.pory"
@@ -737,7 +737,7 @@ Town05_BaronText::
 	.string "I wanted to thank you for your\n"
 	.string "patience with me learning the controls.\p"
 	.string "…\p"
-	.string "I am… not… just trying to put off\n"
+	.string "I am… {PAUSE 100}not… {PAUSE 100}just trying to put off\n"
 	.string "the ‘bike’ event I was told about.\p"
 	.string "…\p"
 	.string "Please tell me it doesn't hurt when\n"
@@ -749,8 +749,8 @@ Town05_HarperText::
 	.string "I suppose.\p"
 	.string "Just overrun by all the mindless\n"
 	.string "drones around us.\p"
-	.string "…and pixelated to hell and back…\p"
-	.string "Is this charming or…\n"
+	.string "…{PAUSE 60}and pixelated to hell and back…\p"
+	.string "Is this charming or…{PAUSE 100}\n"
 	.string "Stockholm Syndrome?\p"
 	.string "But hey, at least we all run into each\n"
 	.string "other now and then.\p"
@@ -762,7 +762,7 @@ Town05_JaksonText::
 	.string "Good to see you made it here,\n"
 	.string "{PLAYER}.\p"
 	.string "I've always liked Slateport City.\n"
-	.string "The beach, the market, the harbor…\p"
+	.string "The beach, {PAUSE 30}the market, {PAUSE 30}the harbor…\p"
 	.string "It's got such a cozy feel to it.\p"
 	.string "And then you've got that long\n"
 	.string "Route 110 to go through.\p"
@@ -780,7 +780,7 @@ Town05_ReddText::
 	.string "neat strategies you won't see coming.\p"
 	.string "This city's pretty neat at least.\p"
 	.string "Looking at the harbor, it might be cool\n"
-	.string "if they made Vermillion more detailed.$"
+	.string "if they made Vermilion more detailed.$"
 
 Town05_SakuraText::
 # 669 "data/emeralbody_rivals/rival_text.pory"
@@ -794,17 +794,17 @@ Town05_SakuraText::
 	.string "for them to be jerks, right?\p"
 	.string "I still hope I get a chance to kick\n"
 	.string "his butt!\p"
-	.string "And if not…\n"
+	.string "And if not…{PAUSE 100}\n"
 	.string "Jakson's will do.$"
 
 Town06_BaronText::
 # 686 "data/emeralbody_rivals/rival_text.pory"
-	.string "Hi… {PLAYER}.\p"
+	.string "Hi… {PAUSE 100}{PLAYER}.\p"
 	.string "Is it just me or is there no way to\n"
 	.string "move these rocks?\p"
 	.string "Can you break them? Or do we need to\n"
 	.string "wait for the authorities to do that?\p"
-	.string "I guess… I'll head back and see if\n"
+	.string "I guess… {PAUSE 100}I'll head back and see if\n"
 	.string "there was something I missed.$"
 
 Town06_HarperText::
@@ -848,7 +848,7 @@ Town06_SakuraText::
 	.string "ready to shred up the road with my bike!\p"
 	.string "I'll leave you in the dust while I'm\n"
 	.string "at it{EMOJI_TILDE}\p"
-	.string "Actually… hey {PLAYER}, stand there.\p"
+	.string "Actually… {PAUSE 100}hey {PLAYER}, stand there.\p"
 	.string "If I do it fast enough, maybe I can\n"
 	.string "make a picture with the dust clouds?$"
 
@@ -865,7 +865,7 @@ Town07_BaronText::
 	.string "my medical bill here?\p"
 	.string "Do they even have banks here?\n"
 	.string "Ones that offer loans…?\p"
-	.string "Hmm… Maybe I should ask Jakson?$"
+	.string "Hmm… {PAUSE 100}Maybe I should ask Jakson?$"
 
 Town07_HarperText::
 # 758 "data/emeralbody_rivals/rival_text.pory"
@@ -877,7 +877,7 @@ Town07_HarperText::
 	.string "also Route 111?\p"
 	.string "Redd said the routes were simple.\n"
 	.string "“Just walk forward”, he said.\p"
-	.string "Oh, I'll have him just walk forward…\n"
+	.string "Oh, I'll have him just walk forward…{PAUSE 100}\n"
 	.string "into my fist next time I see him.$"
 
 Town07_JaksonText::
@@ -902,12 +902,12 @@ Town07_ReddText::
 	.string "balloon thing and it was on fire!\p"
 	.string "And last route I thought I saw a\n"
 	.string "Growlithe but it was rock type!\p"
-	.string "I also caught this Voltorb, so…\n"
+	.string "I also caught this Voltorb, so…{PAUSE 100}\n"
 	.string "Wait, is this guy made of wood?\p"
-	.string "Uh… Wait, really? That's a fun take\n"
+	.string "Uh… {PAUSE 100}Wait, really? That's a fun take\n"
 	.string "on Voltorb. Like an old version of-\p"
-	.string "Ah… Ignore me.\n"
-	.string "… {EMOJI_BIGWHEEL}Clears throat{EMOJI_BIGWHEEL}{UNK_SPACER}$"
+	.string "Ah… {PAUSE 100}Ignore me.\n"
+	.string "… {PAUSE 100}{EMOJI_BIGWHEEL}Clears throat{EMOJI_BIGWHEEL}{UNK_SPACER}$"
 
 Town07_SakuraText::
 # 800 "data/emeralbody_rivals/rival_text.pory"
@@ -927,7 +927,7 @@ Town07_SakuraText::
 
 Town08_BaronText::
 # 818 "data/emeralbody_rivals/rival_text.pory"
-	.string "Oh… {PLAYER}.\p"
+	.string "Oh… {PAUSE 100}{PLAYER}.\p"
 	.string "Wait, if you're here then did you\n"
 	.string "already beat the fourth gym?\p"
 	.string "I should try harder to keep up with\n"
@@ -940,7 +940,7 @@ Town08_HarperText::
 	.string "Huh.\p"
 	.string "Yeah, I don't feel anything in this hot\n"
 	.string "spring.\p"
-	.string "I guess it's not… surprising…\p"
+	.string "I guess it's not… {PAUSE 100}surprising…\p"
 	.string "But if you're gonna mod a game,\n"
 	.string "why not make that work?!\p"
 	.string "Hmph!$"
@@ -979,7 +979,7 @@ Town08_SakuraText::
 	.string "When we're done with this I think I'd\n"
 	.string "like to visit a hot springs in real life.\p"
 	.string "Though, if it's mixed bathing,\n"
-	.string "that'd be bad, so… Hmm…\p"
+	.string "that'd be bad, so… {PAUSE 100}Hmm…\p"
 	.string "Then it's settled.\p"
 	.string "{PLAYER}, when this is over we\n"
 	.string "shall build our own hot springs!\p"
@@ -987,46 +987,46 @@ Town08_SakuraText::
 
 Battle03_BaronText_PreBattle::
 # 881 "data/emeralbody_rivals/rival_text.pory"
-	.string "W- Wait, {PLAYER}!\p"
+	.string "W-{PAUSE 30}Wait, {PLAYER}!\p"
 	.string "If you're heading this way, then…\p"
 	.string "Gosh, are you already leaving for the\n"
 	.string "next area?\p"
-	.string "I- I haven't even beat the gym yet…\p"
+	.string "I-{PAUSE 30}I haven't even beat the gym yet…\p"
 	.string "You're my life preserver, don't head\n"
 	.string "out and leave me to my fate…!\p"
-	.string "Can you help me by… uh… maybe…\n"
+	.string "Can you help me by… {PAUSE 60}uh… {PAUSE 60}maybe…{PAUSE 60}\n"
 	.string "higher levels?\p"
 	.string "I'm pretty sure higher levels mean\n"
 	.string "that the critters do better.\p"
-	.string "Where's that button…? Here.\p"
-	.string "Okay… So please… just don't…\n"
-	.string "fight… back…!$"
+	.string "Where's that button…? {PAUSE 100}Here.\p"
+	.string "Okay… {PAUSE 60}So please… {PAUSE 60}just don't…{PAUSE 60}\n"
+	.string "fight… {PAUSE 60}back…!$"
 
 Battle03_BaronText_BattleVictory::
 # 898 "data/emeralbody_rivals/rival_text.pory"
-	.string "Ah… I don't know if that's going to be\n"
+	.string "Ah… {PAUSE 100}I don't know if that's going to be\n"
 	.string "enough…$"
 
 Battle03_BaronText_PostBattle::
 # 903 "data/emeralbody_rivals/rival_text.pory"
-	.string "A- A rematch!\p"
-	.string "No… that's rude of me. This has all\n"
+	.string "A-{PAUSE 30}A rematch!\p"
+	.string "No… {PAUSE 100}that's rude of me. This has all\n"
 	.string "been rude of me. I'm sorry…\p"
-	.string "I…I will make this work\n"
+	.string "I…{PAUSE 100}I will make this work\n"
 	.string "or else my name isn't-\p"
-	.string "…isn't… B- Baron.\p"
+	.string "…{PAUSE 60}isn't… {PAUSE 100}B-{PAUSE 60}Baron.\p"
 	.string "{EMOJI_BIGWHEEL}Clears throat{EMOJI_BIGWHEEL}\p"
 	.string "You are a good friend to me, Baron.\p"
 	.string "I'll head off to that Petalburg\n"
 	.string "town now.\p"
 	.string "Please don't wait up for my slowness.\n"
-	.string "But… please don't get too far ahead.\p"
-	.string "W- Wish me luck, please!$"
+	.string "But… {PAUSE 100}please don't get too far ahead.\p"
+	.string "W-{PAUSE 30}Wish me luck, please!$"
 
 Battle03_HarperText_PreBattle::
 # 919 "data/emeralbody_rivals/rival_text.pory"
 	.string "Where am I?\p"
-	.string "…Petalburg? Am I supposed to be\n"
+	.string "…{PAUSE 60}Petalburg? Am I supposed to be\n"
 	.string "here?\p"
 	.string "There was the waterfall cave, and\n"
 	.string "the motherfreakin' volcano…\p"
@@ -1038,14 +1038,14 @@ Battle03_HarperText_PreBattle::
 	.string "Whoever designed this is gonna have\n"
 	.string "a nice peanut butter and knuckle\l"
 	.string "sandwich to wake up to…\p"
-	.string "Maybe Jakson, too…\n"
+	.string "Maybe Jakson, too…{PAUSE 100}\n"
 	.string "Argh! So confusing…\p"
 	.string "Screw it. Fight me.\n"
 	.string "Think of saying no and I'll bite you!$"
 
 Battle03_HarperText_BattleVictory::
 # 939 "data/emeralbody_rivals/rival_text.pory"
-	.string "Hah… Okay, I think that's it.$"
+	.string "Hah… {PAUSE 100}Okay, I think that's it.$"
 
 Battle03_HarperText_PostBattle::
 # 943 "data/emeralbody_rivals/rival_text.pory"
@@ -1055,7 +1055,7 @@ Battle03_HarperText_PostBattle::
 	.string "anger at least.\p"
 	.string "I'm gonna go heal up my Pokémon at\n"
 	.string "the red building.\p"
-	.string "Maybe Jakson will be there to…\n"
+	.string "Maybe Jakson will be there to…{PAUSE 100}\n"
 	.string "help me rethink my gym strategy.\p"
 	.string "I've got a second stomach for\n"
 	.string "second helpings on that dish.\p"
@@ -1064,7 +1064,7 @@ Battle03_HarperText_PostBattle::
 Battle03_JaksonText_PreBattle::
 # 957 "data/emeralbody_rivals/rival_text.pory"
 	.string "Hey, {PLAYER}.\p"
-	.string "I spy, with my little eye…\n"
+	.string "I spy, with my little eye…{PAUSE 100}\n"
 	.string "The Heat and Balance Badge?\p"
 	.string "That's a nice little gauntlet. Good to\n"
 	.string "see you get over that barrier.\p"
@@ -1105,7 +1105,7 @@ Battle03_ReddText_PreBattle::
 	.string "Aw, come on. You know why you\n"
 	.string "stopped by here of all places.\p"
 	.string "I was even waiting for you here.\p"
-	.string "In this… you know, this ghostly\n"
+	.string "In this… {PAUSE 100}you know, this ghostly\n"
 	.string "graveyard backdrop…\p"
 	.string "Your Pokémon aren't even dead!\p"
 	.string "Well, I can at least make them faint.\p"
@@ -1128,15 +1128,15 @@ Battle03_ReddText_PostBattle::
 	.string "faster than I did.\p"
 	.string "Who knows, maybe I caught the\n"
 	.string "last one?\p"
-	.string "Well, I beter get going. I've still got a\n"
-	.string "lot more to accomplish.\p"
+	.string "Well, I better get going. I've still got\n"
+	.string "a lot more to accomplish.\p"
 	.string "See ya!$"
 
 Battle03_SakuraText_PreBattle::
 # 1028 "data/emeralbody_rivals/rival_text.pory"
 	.string "Wa-cha!\p"
 	.string "Flannery has already fallen to me!\p"
-	.string "And via it, I have acquired ALL of\n"
+	.string "And via it, I have acquired {PAUSE 30}ALL {PAUSE 60}of\n"
 	.string "the Lavaridge Gym badges!\p"
 	.string "Why yes, that means you must go\n"
 	.string "through me to acquire your trophy!\p"
@@ -1145,7 +1145,7 @@ Battle03_SakuraText_PreBattle::
 
 Battle03_SakuraText_BattleVictory::
 # 1039 "data/emeralbody_rivals/rival_text.pory"
-	.string "Put me down like a dog…\n"
+	.string "Put me down like a dog…{PAUSE 100}\n"
 	.string "How dare you.$"
 
 Battle03_SakuraText_PostBattle::
@@ -1153,7 +1153,7 @@ Battle03_SakuraText_PostBattle::
 	.string "Well, fine.\p"
 	.string "I didn't really have the entire supply\n"
 	.string "of gym badges anyways.\p"
-	.string "Oh, do trust me. I TRIED.\p"
+	.string "Oh, do trust me. I {PAUSE 30}TRIED.\p"
 	.string "But turns out it's infinite.\n"
 	.string "Or I hit the inventory limit?\p"
 	.string "After that showing, though, you've\n"
@@ -1164,15 +1164,15 @@ Battle03_SakuraText_PostBattle::
 
 Town09_BaronText::
 # 1060 "data/emeralbody_rivals/rival_text.pory"
-	.string "So… {PLAYER}, one of the others told\n"
-	.string "me that I need to… ‘surf’.\p"
-	.string "Like, the water? In it? On it?\p"
+	.string "So… {PAUSE 100}{PLAYER}, one of the others told\n"
+	.string "me that I need to… {PAUSE 100}‘surf’.\p"
+	.string "Like, the water? {PAUSE 60}In it? {PAUSE 60}On it?\p"
 	.string "Where do I get a board?\n"
 	.string "Is there a place to practice?\p"
-	.string "I haven't surfed for… oh, it feels like\n"
+	.string "I haven't surfed for… {PAUSE 100}oh, it feels like\n"
 	.string "it's going on decades at this point.\p"
 	.string "{DOTS_WITH_PAUSES}\p"
-	.string "Oh… it's that simple?$"
+	.string "Oh… {PAUSE 100}it's that simple?$"
 
 Town09_HarperText::
 # 1072 "data/emeralbody_rivals/rival_text.pory"
@@ -1183,7 +1183,7 @@ Town09_HarperText::
 	.string "A group of people that move like literal\n"
 	.string "robots, who will stay still forever if\l"
 	.string "you do…\p"
-	.string "Could… Could Jakson program in like\n"
+	.string "Could… {PAUSE 100}Could Jakson program in like\n"
 	.string "automated movement routes for player\l"
 	.string "characters?\p"
 	.string "Scary.$"
@@ -1212,9 +1212,9 @@ Town09_ReddText::
 	.string "{DOTS_WITH_PAUSES}\p"
 	.string "Wait, that later generation game\n"
 	.string "did simpler routes, too?\p"
-	.string "I guess… Hmmm…\p"
-	.string "Sigh… I guess they both have their\n"
-	.string "place… if I'm in the mood for it.$"
+	.string "I guess… {PAUSE 100}Hmmm…\p"
+	.string "Sigh… {PAUSE 100}I guess they both have their\n"
+	.string "place… {PAUSE 100}if I'm in the mood for it.$"
 
 Town09_SakuraText::
 # 1114 "data/emeralbody_rivals/rival_text.pory"
@@ -1225,7 +1225,7 @@ Town09_SakuraText::
 	.string "Milotic with my own eyes at least\l"
 	.string "once!\p"
 	.string "I'll trade you for it if you find one!\n"
-	.string "I'll give you like… 30 gym badges?\p"
+	.string "I'll give you like… {PAUSE 100}30 gym badges?\p"
 	.string "Sure, there are some duplicates that\n"
 	.string "I stole in there, but…\p"
 	.string "They gotta be worth something on\n"
@@ -1796,7 +1796,7 @@ Town14_JaksonText::
 	.string "are such a nice touch to the\l"
 	.string "atmosphere.\p"
 	.string "All without the downside of a constant\n"
-	.string "fear of it sinking in the dephs, like\l"
+	.string "fear of it sinking in the depths, like\l"
 	.string "you'd have for a place like this IRL.\p"
 	.string "It's a shame that the town is sort of\n"
 	.string "forgettable overall.\p"

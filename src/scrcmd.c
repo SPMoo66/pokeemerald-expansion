@@ -67,6 +67,7 @@
 #include "constants/event_objects.h"
 #include "constants/map_types.h"
 #include "constants/party_menu.h"
+#include "constants/songs.h"
 
 #include "pokevial.h" //Pokevial Branch
 
@@ -1202,6 +1203,8 @@ bool8 ScrCmd_playbgm(struct ScriptContext *ctx)
 {
     u16 songId = ScriptReadHalfword(ctx);
     bool8 save = ScriptReadByte(ctx);
+    if (gSaveBlock2Ptr->optionsMusicMute == TRUE)
+        songId = MUS_NONE;
 
     Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE | SCREFF_HARDWARE);
 
@@ -1215,7 +1218,8 @@ bool8 ScrCmd_savebgm(struct ScriptContext *ctx)
 {
     Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE);
 
-    Overworld_SetSavedMusic(ScriptReadHalfword(ctx));
+    if (gSaveBlock2Ptr->optionsMusicMute == FALSE)
+        Overworld_SetSavedMusic(ScriptReadHalfword(ctx));
     return FALSE;
 }
 
@@ -1231,7 +1235,8 @@ bool8 ScrCmd_fadenewbgm(struct ScriptContext *ctx)
 {
     Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE | SCREFF_HARDWARE);
 
-    Overworld_ChangeMusicTo(ScriptReadHalfword(ctx));
+    if (gSaveBlock2Ptr->optionsMusicMute == FALSE)
+        Overworld_ChangeMusicTo(ScriptReadHalfword(ctx));
     return FALSE;
 }
 

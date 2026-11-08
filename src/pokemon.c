@@ -5099,7 +5099,9 @@ bool32 IsSpeciesInHoennDex(enum Species species)
 
 u16 GetBattleBGM(void)
 {
-    if (FlagGet(FLAG_SYS_SET_BATTLE_BGM)) // This is custom code to override battle music when FLAG_SYS_SET_BATTLE_BGM is set. The BGM used is stored in VAR_TEMP_F
+    if (gSaveBlock2Ptr->optionsMusicMute == TRUE)
+        return MUS_NONE;
+    else if (FlagGet(FLAG_SYS_SET_BATTLE_BGM)) // This is custom code to override battle music when FLAG_SYS_SET_BATTLE_BGM is set. The BGM used is stored in VAR_TEMP_F
     {
         FlagClear(FLAG_SYS_SET_BATTLE_BGM);
         return VarGet(VAR_TEMP_F);

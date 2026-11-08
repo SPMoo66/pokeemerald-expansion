@@ -1315,7 +1315,7 @@ void Overworld_PlaySpecialMapMusic(void)
 {
     u16 music = GetCurrLocationDefaultMusic();
 
-    if (gDisableMapMusicChangeOnMapLoad == MUSIC_DISABLE_STOP)
+    if (gDisableMapMusicChangeOnMapLoad == MUSIC_DISABLE_STOP || gSaveBlock2Ptr->optionsMusicMute == TRUE)
     {
         StopMapMusic();
         return;
@@ -1353,7 +1353,7 @@ void Overworld_ClearSavedMusic(void)
 
 static void TransitionMapMusic(void)
 {
-    if (gDisableMapMusicChangeOnMapLoad == MUSIC_DISABLE_STOP)
+    if (gDisableMapMusicChangeOnMapLoad == MUSIC_DISABLE_STOP || gSaveBlock2Ptr->optionsMusicMute == TRUE)
     {
         StopMapMusic();
         return;
@@ -1388,14 +1388,18 @@ static void TransitionMapMusic(void)
 void Overworld_ChangeMusicToDefault(void)
 {
     u16 currentMusic = GetCurrentMapMusic();
-    if (currentMusic != GetCurrLocationDefaultMusic())
+    if (gSaveBlock2Ptr->optionsMusicMute == FALSE)
+        FadeOutAndPlayNewMapMusic(MUS_NONE, 8);
+    else if (currentMusic != GetCurrLocationDefaultMusic())
         FadeOutAndPlayNewMapMusic(GetCurrLocationDefaultMusic(), 8);
 }
 
 void Overworld_ChangeMusicTo(u16 newMusic)
 {
     u16 currentMusic = GetCurrentMapMusic();
-    if (currentMusic != newMusic && currentMusic != MUS_ABNORMAL_WEATHER)
+    if (gSaveBlock2Ptr->optionsMusicMute == FALSE)
+        FadeOutAndPlayNewMapMusic(MUS_NONE, 8);
+    else if (currentMusic != newMusic && currentMusic != MUS_ABNORMAL_WEATHER)
         FadeOutAndPlayNewMapMusic(newMusic, 8);
 }
 

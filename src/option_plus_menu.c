@@ -2,6 +2,7 @@
 #include "option_plus_menu.h"
 #include "main.h"
 #include "menu.h"
+#include "overworld.h"
 #include "scanline_effect.h"
 #include "palette.h"
 #include "sprite.h"
@@ -15,6 +16,7 @@
 #include "text.h"
 #include "text_window.h"
 #include "international_string_util.h"
+#include "sound.h"
 #include "string_util.h"
 #include "strings.h"
 #include "gba/m4a_internal.h"
@@ -48,6 +50,7 @@ enum
     MENUITEM_CUSTOM_OVERWORLD_SPEED,
     MENUITEM_CUSTOM_FONT,
     MENUITEM_CUSTOM_MATCHCALL,
+    MENUITEM_CUSTOM_MUSIC_MUTE,
     MENUITEM_CUSTOM_MUSIC_REGION,
     MENUITEM_CUSTOM_SURF_MUSIC,
     MENUITEM_CUSTOM_LEVEL_CAPS,
@@ -175,6 +178,7 @@ static void DrawChoices_UnitSystem(int selection, int y);
 static void DrawChoices_Font(int selection, int y);
 static void DrawChoices_FrameType(int selection, int y);
 static void DrawChoices_MatchCall(int selection, int y);
+static void DrawChoices_MusicMute(int selection, int y);
 static void DrawChoices_MusicRegion(int selection, int y);
 static void DrawChoices_BattleSpeed(int selection, int y);
 static void DrawChoices_OverworldSpeed(int selection, int y);
@@ -236,6 +240,7 @@ struct // MENU_CUSTOM
     [MENUITEM_CUSTOM_OVERWORLD_SPEED]   = {DrawChoices_OverworldSpeed,   ProcessInput_Options_Four},
     [MENUITEM_CUSTOM_FONT]              = {DrawChoices_Font,             ProcessInput_Options_Two}, 
     [MENUITEM_CUSTOM_MATCHCALL]         = {DrawChoices_MatchCall,        ProcessInput_Options_Two},
+    [MENUITEM_CUSTOM_MUSIC_MUTE]        = {DrawChoices_MusicMute,        ProcessInput_Options_Two},
     [MENUITEM_CUSTOM_MUSIC_REGION]      = {DrawChoices_MusicRegion,      ProcessInput_Options_Four},
     [MENUITEM_CUSTOM_SURF_MUSIC]        = {DrawChoices_SurfMusic,        ProcessInput_Options_Two},
     [MENUITEM_CUSTOM_LEVEL_CAPS]        = {DrawChoices_LevelCaps,        ProcessInput_Options_Two},
@@ -250,6 +255,7 @@ static const u8 sText_HpBar[]            = _("HP bar");
 static const u8 sText_BattleSpeed[]      = _("Battle speed");
 static const u8 sText_OverworldSpeed[]   = _("Overworld speed");
 static const u8 sText_UnitSystem[]       = _("Unit System");
+static const u8 gText_MusicMute[]        = _("Music");
 static const u8 gText_MusicRegion[]      = _("Battle music");
 static const u8 gText_SurfMusic[]        = _("Surf music");
 static const u8 gText_LevelCaps[]        = _("Level caps");
@@ -275,6 +281,7 @@ static const u8 *const sOptionMenuItemsNamesCustom[MENUITEM_CUSTOM_COUNT] =
     [MENUITEM_CUSTOM_OVERWORLD_SPEED]   = sText_OverworldSpeed,
     [MENUITEM_CUSTOM_FONT]              = gText_Font,
     [MENUITEM_CUSTOM_MATCHCALL]         = gText_OptionMatchCalls,
+    [MENUITEM_CUSTOM_MUSIC_MUTE]        = gText_MusicMute,
     [MENUITEM_CUSTOM_MUSIC_REGION]      = gText_MusicRegion,
     [MENUITEM_CUSTOM_SURF_MUSIC]        = gText_SurfMusic,
     [MENUITEM_CUSTOM_LEVEL_CAPS]        = gText_LevelCaps,
@@ -319,6 +326,7 @@ static bool8 CheckConditions(int selection)
         case MENUITEM_CUSTOM_OVERWORLD_SPEED:   return TRUE;
         case MENUITEM_CUSTOM_FONT:              return TRUE;
         case MENUITEM_CUSTOM_MATCHCALL:         return TRUE;
+        case MENUITEM_CUSTOM_MUSIC_MUTE:        return TRUE;
         case MENUITEM_CUSTOM_MUSIC_REGION:      return TRUE;
         case MENUITEM_CUSTOM_SURF_MUSIC:        return TRUE;
         case MENUITEM_CUSTOM_LEVEL_CAPS:        return TRUE;
@@ -367,6 +375,7 @@ static const u8 sText_Desc_OverworldSpeed[]      = _("Choose how quickly the ove
 static const u8 sText_Desc_FontType[]            = _("Choose the font design.");
 static const u8 sText_Desc_OverworldCallsOn[]    = _("Trainers will be able to call you,\noffering rematches and info.");
 static const u8 sText_Desc_OverworldCallsOff[]   = _("You will not receive calls.\nSpecial events will still occur.");
+static const u8 sText_Desc_MusicMute[]           = _("Choose whether music plays.");
 static const u8 sText_Desc_MusicRegion[]         = _("Choose battle music from any\nlisted region.");
 static const u8 sText_Desc_SurfMusic[]           = _("Choose whether music changes\nwhile surfing.");
 static const u8 sText_Desc_LevelCapsOn[]         = _("Level caps are enabled.\nCurrent level cap: {STR_VAR_1}.");
@@ -383,6 +392,7 @@ static const u8 *const sOptionMenuItemDescriptionsCustom[MENUITEM_CUSTOM_COUNT][
     [MENUITEM_CUSTOM_OVERWORLD_SPEED]   = {sText_Desc_OverworldSpeed,      sText_Empty,                    sText_Empty},
     [MENUITEM_CUSTOM_FONT]              = {sText_Desc_FontType,            sText_Desc_FontType,            sText_Empty},
     [MENUITEM_CUSTOM_MATCHCALL]         = {sText_Desc_OverworldCallsOn,    sText_Desc_OverworldCallsOff,   sText_Empty},
+    [MENUITEM_CUSTOM_MUSIC_MUTE]        = {sText_Desc_MusicMute,           sText_Desc_MusicMute,           sText_Empty},
     [MENUITEM_CUSTOM_MUSIC_REGION]      = {sText_Desc_MusicRegion,         sText_Empty,                    sText_Empty},
     [MENUITEM_CUSTOM_SURF_MUSIC]        = {sText_Desc_SurfMusic,           sText_Desc_SurfMusic,           sText_Empty},
     [MENUITEM_CUSTOM_LEVEL_CAPS]        = {sText_Desc_LevelCapsOn,         sText_Desc_LevelCapsOff,        sText_Empty},
@@ -415,6 +425,7 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledCustom[MENUITEM_CUSTOM
     [MENUITEM_CUSTOM_OVERWORLD_SPEED]   = sText_Empty,
     [MENUITEM_CUSTOM_FONT]              = sText_Empty,
     [MENUITEM_CUSTOM_MATCHCALL]         = sText_Empty,
+    [MENUITEM_CUSTOM_MUSIC_MUTE]        = sText_Empty,
     [MENUITEM_CUSTOM_MUSIC_REGION]      = sText_Empty,
     [MENUITEM_CUSTOM_SURF_MUSIC]        = sText_Empty,
     [MENUITEM_CUSTOM_LEVEL_CAPS]        = sText_Empty,
@@ -685,6 +696,7 @@ void CB2_InitOptionPlusMenu(void)
         sOptions->sel_custom[MENUITEM_CUSTOM_OVERWORLD_SPEED]   = gSaveBlock2Ptr->optionsOverworldSpeed;
         sOptions->sel_custom[MENUITEM_CUSTOM_FONT]              = gSaveBlock2Ptr->optionsCurrentFont;
         sOptions->sel_custom[MENUITEM_CUSTOM_MATCHCALL]         = gSaveBlock2Ptr->optionsDisableMatchCall;
+        sOptions->sel_custom[MENUITEM_CUSTOM_MUSIC_MUTE]        = gSaveBlock2Ptr->optionsMusicMute;
         sOptions->sel_custom[MENUITEM_CUSTOM_MUSIC_REGION]      = gSaveBlock2Ptr->optionsMusicRegion;
         sOptions->sel_custom[MENUITEM_CUSTOM_SURF_MUSIC]        = gSaveBlock2Ptr->optionsSurfMusic;
         sOptions->sel_custom[MENUITEM_CUSTOM_LEVEL_CAPS]        = gSaveBlock2Ptr->optionsLevelCaps;
@@ -879,6 +891,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsOverworldSpeed   = sOptions->sel_custom[MENUITEM_CUSTOM_OVERWORLD_SPEED];
     gSaveBlock2Ptr->optionsCurrentFont      = sOptions->sel_custom[MENUITEM_CUSTOM_FONT];
     gSaveBlock2Ptr->optionsDisableMatchCall = sOptions->sel_custom[MENUITEM_CUSTOM_MATCHCALL];
+    gSaveBlock2Ptr->optionsMusicMute        = sOptions->sel_custom[MENUITEM_CUSTOM_MUSIC_MUTE];
     gSaveBlock2Ptr->optionsMusicRegion      = sOptions->sel_custom[MENUITEM_CUSTOM_MUSIC_REGION];
     gSaveBlock2Ptr->optionsSurfMusic        = sOptions->sel_custom[MENUITEM_CUSTOM_SURF_MUSIC];
     gSaveBlock2Ptr->optionsLevelCaps        = sOptions->sel_custom[MENUITEM_CUSTOM_LEVEL_CAPS];
@@ -887,6 +900,11 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsWarnings         = sOptions->sel_custom[MENUITEM_CUSTOM_WARNINGS_SPOILERS];
 
     VarSet (VAR_TEMP_6, 0);
+
+    if (gSaveBlock2Ptr->optionsMusicMute == TRUE)
+        StopMapMusic();
+    else
+        Overworld_PlaySpecialMapMusic();
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
@@ -1257,6 +1275,16 @@ static void DrawChoices_OverworldSpeed(int selection, int y)
 {
     bool8 active = CheckConditions(MENUITEM_CUSTOM_OVERWORLD_SPEED);
     DrawChoices_Options_Four(sTextBattleSpeedStrings, selection, y, active); //Reuse 1x-4x from BattleSpeed
+}
+
+static void DrawChoices_MusicMute(int selection, int y)
+{
+    bool8 active = CheckConditions(MENUITEM_CUSTOM_MUSIC_MUTE);
+    u8 styles[2] = {0};
+    styles[selection] = 1;
+
+    DrawOptionMenuChoice(gText_BattleSceneOn, 104, y, styles[0], active);
+    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(FONT_NORMAL, gText_BattleSceneOff, 198), y, styles[1], active);
 }
 
 static void DrawChoices_SurfMusic(int selection, int y)

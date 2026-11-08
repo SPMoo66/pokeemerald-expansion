@@ -1129,7 +1129,7 @@ text Town09_SakuraText {
 
 # Town10
 text Town10_BaronText {
-	format(	"Finally… some sunshine…\p"
+	format(	"Finally… {PAUSE 100}some sunshine…\p"
 			"Did you have trouble in that rain,\n"
 			"{PLAYER}?\p"
 			"The sandstorm in the desert had some\n"
@@ -1143,11 +1143,11 @@ text Town10_BaronText {
 
 text Town10_HarperText {
 	format(	"Hey, {PLAYER}.\p"
-			"Did you just see Jakson…\n"
+			"Did you just see Jakson…{PAUSE 100}\n"
 			"Or maybe Baron?\p"
 			"I could have sworn I just saw someone,\n"
 			"then they just disappeared…\p"
-			"Oh, come on…\n"
+			"Oh, come on…{PAUSE 100}\n"
 			"Don't look at me like I'm crazy.\p"
 			"Must be the water effect blurring\n"
 			"my vision…\p"
@@ -1166,7 +1166,7 @@ text Town10_JaksonText {
 			"Weird how they design it like that, isn't\n"
 			"it?\p"
 			"A dire situation plays out up the\n"
-			"mountain… So that means there's\l"
+			"mountain… {PAUSE 100}So that means there's\l"
 			"plenty of time to hang out at the mall.")
 }
 
@@ -1179,7 +1179,7 @@ text Town10_ReddText {
 			"It really forces you to think…\p"
 			"{DOTS_WITH_PAUSES}\p"
 			"Yes, I was thinking before this all!\p"
-			"It's just… like a good learning\n"
+			"It's just… {PAUSE 100}like a good learning\n"
 			"experience and stuff.\p"
 			"The next one won't catch me\n"
 			"off-guard!")
@@ -1200,12 +1200,12 @@ text Town10_SakuraText {
 # Town11
 text Town11_BaronText {
 	format(	"{DOTS_WITH_PAUSES}\p"
-			"… Oh, {PLAYER}. I didn't see you there.\p"
+			"…{PAUSE 60}Oh, {PLAYER}. I didn't see you there.\p"
 			"I've been working on this puzzle for\n"
 			"a while.\p"
 			"Look at the building layout, it's\n"
 			"probably an ‘optional’ dead end.\p"
-			"But… I sort of want to see what's at\n"
+			"But… {PAUSE 100}I sort of want to see what's at\n"
 			"the end. It could even be a bunch of\l"
 			"potions!\p"
 			"If it helps at all, I think the goal\n"
@@ -1218,10 +1218,10 @@ text Town11_HarperText {
 	format(	"Oh my fucking goodness…\p"
 			"WHOSE IDEA WAS IT TO SIMULATE\n"
 			"THE ACTUAL HEAT OF THIS PLACE?!\p"
-			"Uuuuggghhhhhhhhhhhhhh……………\p"
-			"Just gotta hurry up and beat these…\n"
+			"Uuuuggghhhhhhhhhhhhhh…{PAUSE 10}…{PAUSE 10}…{PAUSE 10}…{PAUSE 10}…\p"
+			"Just gotta hurry up and beat these…{PAUSE 100}\n"
 			"Team Magma people, right?\p"
-			"…Who on earth thought this was\n"
+			"…{PAUSE 60}Who on earth thought this was\n"
 			"a good idea?\p"
 			"Wait, you think my headset could be\n"
 			"overheating?\p"
@@ -1237,7 +1237,7 @@ text Town11_JaksonText {
 			"or Harper when it comes to that…\p"
 			"If you see them struggling, give them\n"
 			"a little push onwards. Redd too.\p"
-			"As for Sakura… she might do a hostile\n"
+			"As for Sakura… {PAUSE 100}she might do a hostile\n"
 			"takeover of Team Magma and Aqua\l"
 			"before we need to worry about her.\p"
 			"That, or she'd be the one dragging\n"
@@ -1255,7 +1255,7 @@ text Town11_ReddText {
 			"Well, no, I actually don't miss them.\p"
 			"That's one thing that I don't think\n"
 			"anybody liked.\p"
-			"Why DID they do that anyways?\p"
+			"Why {PAUSE 30}DID {PAUSE 60}they do that anyways?\p"
 			"Sure, it was sort of fun to try and\n"
 			"“game the system” by not even using\l"
 			"flash as an early shortcut, but…\p"
@@ -1287,7 +1287,7 @@ text Battle04_BaronText_PreBattle {
 	"{EMOJI_BIGWHEEL}Does a slight bow.{EMOJI_BIGWHEEL}\p"
 	"Where are you now? In this story,\n"
 	"I mean.\p"
-	"…Ah. Does that mean…\n"
+	"…{PAUSE 60}Ah. Does that mean…{PAUSE 100}\n"
 	"I've caught up?\p"
 	"Those routes were really long and it\n"
 	"gave me a lot of time to practice, train\l"
@@ -1298,7 +1298,7 @@ text Battle04_BaronText_PreBattle {
 }
 
 text Battle04_BaronText_BattleVictory {
-	"Ah…! I was close, I feel. If I just…"
+	"Ah…{PAUSE 60}! I was close, I feel. If I just…"
 }
 
 text Battle04_BaronText_PostBattle {
@@ -1311,7 +1311,7 @@ text Battle04_BaronText_PostBattle {
 	"You've been nothing but helpful.\n"
 	"You really are a great friend.\p"
 	"I appreciate you being there for\n"
-	"h- …for the whole group here.\p"
+	"h-{PAUSE 30} …{PAUSE 60}for the whole group here.\p"
 	"I'll see you soon, okay?"
 }
 
@@ -1319,11 +1319,11 @@ text Battle04_HarperText_PreBattle {
 	"Yo, {PLAYER}.\p"
 	"Heading in to take on this gym, too?\n"
 	"I'm giving it a 2nd try myself.\p"
-	"Maybe… I think some moves let me\n"
+	"Maybe… {PAUSE 100}I think some moves let me\n"
 	"move first. I could try that?\p"
-	"Ugh… Maybe not though. I could just\n"
+	"Ugh… {PAUSE 100}Maybe not though. I could just\n"
 	"go get a few more levels first.\p"
-	"Which… Hmm…\p"
+	"Which… {PAUSE 100}Hmm…\p"
 	"Hey, {PLAYER}. You got those good\n"
 	"Pokemans, yeah?\p"
 	"Give me a few levels.\n"
@@ -1338,7 +1338,7 @@ text Battle04_HarperText_PostBattle {
 	"Why do you have to be so good at\n"
 	"this, {PLAYER}?\p"
 	"Oh well, if only I used that one\n"
-	"move instead of the other… That\l"
+	"move instead of the other… {PAUSE 100}That\l"
 	"could've turned the tide, maybe.\p"
 	"If I got another one of those Choice\n"
 	"items, it'd have been enough to take\l"
@@ -1366,7 +1366,7 @@ text Battle04_JaksonText_PreBattle {
 	"I won't say I'm fully out of surprises.\n"
 	"There may be a few more arcs to hit\l"
 	"their peak, even still.\p"
-	"For example… {EMOJI_BIGWHEEL}Clears throat{EMOJI_BIGWHEEL}\p"
+	"For example… {PAUSE 100}{EMOJI_BIGWHEEL}Clears throat{EMOJI_BIGWHEEL}\p"
 	"You don't think you'll get past\n"
 	"here so easily, do you?"
 }
@@ -1390,7 +1390,7 @@ text Battle04_JaksonText_PostBattle {
 	"Though, I'm not sure you were ever\n"
 	"the one that I needed to worry about\l"
 	"on that.\p"
-	"Some of the others… yeah.\p"
+	"Some of the others… {PAUSE 100}yeah.\p"
 	"But everyone's doing well now!\p"
 	"It's a bit like watching your kids grow\n"
 	"up.\p"
@@ -1406,8 +1406,8 @@ text Battle04_ReddText_PreBattle {
 	"I knew reading a guide on the game's\n"
 	"progression would come in handy.\p"
 	"But you did take while.\p"
-	"Did that Magma grunts downstairs hold\n"
-	"you up?\p"
+	"Did those Magma grunts downstairs\n"
+	"hold you up?\p"
 	"Well, I hope you haven't been falling\n"
 	"behind already. All that work I've been\l"
 	"doing to refine my team needs a test.\p"
@@ -1421,7 +1421,7 @@ text Battle04_ReddText_BattleVictory {
 }
 
 text Battle04_ReddText_PostBattle1 {
-	"That thing was a powerhouse… Mmm…\p"
+	"That thing was a powerhouse… {PAUSE 100}Mmm…\p"
 	"Damn, then. Good work, {PLAYER}.\n"
 	"I picked a good rival to push me.\p"
 	"I've really started to fall back to\n"
@@ -1439,8 +1439,8 @@ text Battle04_ReddText_PostBattle2a {
 }
 
 text Battle04_ReddText_PostBattle2b {
-	"We're… not so far off in terms of\n"
-	"our research… But! But I've seen\l"
+	"We're… {PAUSE 100}not so far off in terms of\n"
+	"our research… {PAUSE 100}But! But I've seen\l"
 	"your team now. So be prepared."
 }
 
@@ -1473,7 +1473,7 @@ text Battle04_SakuraText_PostBattle {
 	"A worthy battle for our age.\p"
 	"Now, we shall drink, and be merry!\n"
 	"Off to the halls of Valhalla with us!\p"
-	"…There's no way Jakson actually\n"
+	"…{PAUSE 60}There's no way Jakson actually\n"
 	"modded in alcohol into this, yeah?\p"
 	"Eh, it's fine. I sort of went from the\n"
 	"oblivion to the snow tipped rims of\l"
@@ -1486,9 +1486,9 @@ text Battle04_SakuraText_PostBattle {
 	"me, hehe{EMOJI_TILDE}\p"
 	"But anyway, go on ahead. The world is\n"
 	"waiting for you to save it!\p"
-	"Alternatively… Valhalla is still on\n"
+	"Alternatively… {PAUSE 100}Valhalla is still on\n"
 	"the table, maybe?\p"
-	"…Nah, go beat their butts."
+	"…{PAUSE 60}Nah, go beat their butts."
 }
 
 
@@ -1509,7 +1509,7 @@ text Town12_BaronText {
 			"item for a lot.\p"
 			"That should cover the trip nicely.\n"
 			"Maybe we can even have a picnic?\p"
-			"… Huh?\p"
+			"…{PAUSE 60}Huh?\p"
 			"Are you okay, {PLAYER}?\n"
 			"You've gone silent.\p"
 			"Well, I'll see you out there!")
@@ -1525,7 +1525,7 @@ text Town12_HarperTextQ {
 text Town12_HarperTextYes {
 	format(	"Huh, well if you think it's any good\n"
 			"I might spend some time trying.\p"
-			"But I swear, if it turns out to be like…\n"
+			"But I swear, if it turns out to be like…{PAUSE 100}\n"
 			"I don't know, a swimsuit mod…\p"
 			"Then someone's getting smacked.\n"
 			"You and Jakson can draw lots.")
@@ -1548,7 +1548,7 @@ text Town12_JaksonText {
 			"launching?\p"
 			"Wouldn't it be cool?\p"
 			"{DOTS_WITH_PAUSES}\p"
-			"Haha… No, I can't promise anything\n"
+			"Haha… {PAUSE 100}No, I can't promise anything\n"
 			"mod wise.")
 }
 
@@ -1556,7 +1556,7 @@ text Town12_ReddText {
 	format(	"Wait, this is where that whole\n"
 			"‘Too much water’ thing kicks in,\l"
 			"isn't it?\p"
-			"Oh…\n"
+			"Oh…{PAUSE 100}\n"
 			"{DOTS_WITH_PAUSES}\l"
 			"Oh no…\p"
 			"Please. Anything to get back\n"
@@ -1574,8 +1574,8 @@ text Town12_SakuraText {
 			"{DOTS_WITH_PAUSES}\p"
 			"“Sakura is the best Pokémon trainer\n"
 			"that there is!”\p"
-			"“…and… and…!”\p"
-			"“…I will give her twenty bucks\n"
+			"“…{PAUSE 60}and… {PAUSE 100}and…!”\p"
+			"“…{PAUSE 60}I will give her twenty bucks\n"
 			"just for being so cute and cool.”\p"
 			"Wow, what an astute thought,\n"
 			"{PLAYER}!")
@@ -1588,7 +1588,7 @@ text Town13_BaronText {
 			"Oh, you scared me, {PLAYER}.\p"
 			"I was traveling and the very first time\n"
 			"I tried to use Dive I found this cave.\p"
-			"…You know, Jakson also looked at\n"
+			"…{PAUSE 60}You know, Jakson also looked at\n"
 			"me weird when I told him that.\p"
 			"But thank the Pokémon gods that he\n"
 			"was around to heal. I'd be in trouble\l"
@@ -1605,8 +1605,8 @@ text Town13_HarperText {
 			"What was it we were supposed to be\n"
 			"doing out here? The ‘dive’ mechanic\l"
 			"thing?\p"
-			"It… won't get my hair wet or anything.\n"
-			"Of course it won't, Harper… it's a game.\p"
+			"It… {PAUSE 100}won't get my hair wet or anything.\n"
+			"Of course it won't, Harper… {PAUSE 100}it's a game.\p"
 			"Argh! Head first then!\p"
 			"I'll just dive in somewhere along that\n"
 			"long stretch and see if I can find any\l"
@@ -1648,7 +1648,7 @@ text Town13_SakuraText {
 	format(	"Ah! You caught me, {PLAYER}{EMOJI_TILDE}\p"
 			"The schoolyard rumors tell of a fun\n"
 			"lil something being on Mirage Island.\p"
-			"And… that's here!\p"
+			"And… {PAUSE 100}that's here!\p"
 			"Oh, don't worry. I'll be back to the\n"
 			"Seafloor Cavern in a jiffy.\p"
 			"Were you able to find it yet?\p"
@@ -1660,17 +1660,17 @@ text Town13_SakuraText {
 # Town14
 text Town14_BaronText {
 	format(	"Ah! {PLAYER}!\p"
-			"H- Hey… You wouldn't happen to have\n"
+			"H-{PAUSE 30}Hey… {PAUSE 100}You wouldn't happen to have\n"
 			"any useful advice for this…?\p"
 			"I dropped down from the ceiling through\n"
 			"one of those cracked floors, but\l"
 			"somehow I landed on this rock wall!\p"
 			"I've been trying to get out for a while\n"
-			"and… oh no… that center pit sure looks\l"
+			"and… {PAUSE 100}oh no… {PAUSE 100}that center pit sure looks\l"
 			"unstable.\p"
 			"{DOTS_WITH_PAUSES}{PAUSE 60}\n"
 			"No luck?\p"
-			"I'll… I'll keep wiggling around more, and\n"
+			"I'll… {PAUSE 100}I'll keep wiggling around more, and\n"
 			"hopefully I can get myself free.\p"
 			"Just try not to do the same thing,\n"
 			"{PLAYER}.")
@@ -1678,7 +1678,7 @@ text Town14_BaronText {
 
 text Town14_HarperText {
 	format(	"Woah…\p"
-			"Watching all that from here…\n"
+			"Watching all that from here…{PAUSE 100}\n"
 			"Wow, that was some crazy stuff.\p"
 			"For everything else that has happened\n"
 			"in this game, that one managed to really\l"
@@ -1716,20 +1716,20 @@ text Town14_JaksonText {
 text Town14_ReddText {
 	format(	"Yo, {PLAYER}.\p"
 			"You doing okay? No headaches?\p"
-			"Two  giant monsters causing chaos\n"
+			"Two giant monsters causing chaos\n"
 			"with the weather…\p"
 			"I've been trying to search for Pokémon\n"
 			"for my team, but the weather effects\l"
 			"are making that sort of hard at times.\p"
 			"Maybe I should just get this part\n"
 			"of the game over with right away…?\p"
-			"Argh… But Jakson said what I was\n"
+			"Argh… {PAUSE 100}But Jakson said what I was\n"
 			"looking for was over here and…\p"
-			"He wouldn't… lie? Would he?")
+			"He wouldn't… {PAUSE 100}lie? Would he?")
 }
 
 text Town14_SakuraText {
-	format(	"Ah…\n"
+	format(	"Ah…{PAUSE 100}\n"
 			"It's a real shame you can't catch this\l"
 			"guy yet.\p"
 			"I'd love to ride into battle on him.\p"
@@ -1746,13 +1746,13 @@ text Town14_SakuraText {
 
 # Town15
 text Town15_BaronText {
-	format(	"O- Oh, you scared me, {PLAYER}.\p"
+	format(	"O-{PAUSE 30}Oh, you scared me, {PLAYER}.\p"
 			"Have you completed any of the levels of\n"
 			"this Trick House yet?\p"
 			"I've done a few. The early ones took me\n"
 			"a long time, especially the trivia one,\l"
 			"but I'm getting better.\p"
-			"The rewards are… well, they're no\n"
+			"The rewards are… {PAUSE 100}well, they're no\n"
 			"potions, but anything with a dollar\l"
 			"value helps with that.\p"
 			"Those bigger potions sure are\n"
@@ -1764,13 +1764,13 @@ text Town15_HarperText {
 			"I'm just taking a break here.\p"
 			"You know, I didn't know if I'd finish\n"
 			"this when we started. Getting this\l"
-			"far is… yeah. Not bad, right?\p"
+			"far is… {PAUSE 100}yeah. Not bad, right?\p"
 			"Not that I wouldn't prefer something\n"
 			"a notch more modern, but it ain't half\l"
 			"bad.\p"
 			"Now, we're all close to the end.\p"
 			"For the last location to be this flower\n"
-			"place… it's actually sort of nice.\l"
+			"place… {PAUSE 100}it's actually sort of nice.\l"
 			"Very relaxing.\p"
 			"Oh, I know about the cave up there.\n"
 			"I already peeked in.\p"
@@ -1793,15 +1793,15 @@ text Town15_JaksonText {
 }
 
 text Town15_ReddText {
-	format(	"Ah… Victory Road!\p"
+	format(	"Ah… {PAUSE 100}Victory Road!\p"
 			"The hellish gauntlet to test your\n"
 			"resilience entering the final\l"
 			"stretch of the game…\p"
 			"I've been training on Kanto Victory\n"
 			"Road all my life.\p"
 			"This will be nothing to me!\p"
-			"…is what I'd like to say.\p"
-			"I… may be getting distracted with\n"
+			"…{PAUSE 60}is what I'd like to say.\p"
+			"I… {PAUSE 100}may be getting distracted with\n"
 			"the new encounter table here.\p"
 			"They're endgame Pokémon! They've\n"
 			"gotta be the best of the best.")
@@ -1809,7 +1809,7 @@ text Town15_ReddText {
 
 text Town15_SakuraText {
 	format(	"Come on, {PLAYER}, don't give up yet!\p"
-			"…What, you think I'm gonna unleash a\n"
+			"…{PAUSE 60}What, you think I'm gonna unleash a\n"
 			"surprise attack on you now?\p"
 			"I'm not that cruel, {PLAYER} come now.\p"
 			"That's Wally's job, after all! You don't\n"
@@ -1823,12 +1823,12 @@ text Town16_BaronText {
 			"I'm just trying to finalize my\n"
 			"preparations for the battles.\p"
 			"I know that I've become more competent\n"
-			"in the gameplay for this, but… I'm\l"
+			"in the gameplay for this, but… {PAUSE 100}I'm\l"
 			"still inclined to stock up on potions.\p"
 			"Jakson was kind enough to let me\n"
 			"take out a loan for the prep, too.\p"
-			"The limit is 999… 20HP per potion\n"
-			"means… Hmm…\p"
+			"The limit is 999… {PAUSE 100}20HP per potion\n"
+			"means… {PAUSE 100}Hmm…\p"
 			"I'm thinking that should be enough to\n"
 			"get me through the Elite Four.\p"
 			"It's sort of like doing math when\n"
@@ -1842,8 +1842,8 @@ text Town16_BaronText {
 text Town16_HarperText {
 	format(	"Heyo. We're all here now, then.\p"
 			"Good to see you get through alright.\n"
-			"I managed… with some directions from\l"
-			"Sakura… but I am here now.\p"
+			"I managed… {PAUSE 100}with some directions from\l"
+			"Sakura… {PAUSE 100}but I am here now.\p"
 			"I'm sort of surprised they made that\n"
 			"thinking kids would get through.\p"
 			"Maybe they just used to make things\n"
@@ -1853,7 +1853,7 @@ text Town16_HarperText {
 			"No slight meant towards you. You seem\l"
 			"like you were the patient sort of kid?\p"
 			"{DOTS_WITH_PAUSES}\p"
-			"Have I gotten less patient… or do I\n"
+			"Have I gotten less patient… {PAUSE 100}or do I\n"
 			"just know what I like better…?\p"
 			"Ah, screw it. We've got a job to finish\n"
 			"here. Let's both clean up.")
@@ -1884,19 +1884,19 @@ text Town16_ReddText {
 			"to get a feel for all that, too.\p"
 			"Jakson has a strategy for sure, even\n"
 			"if I'm not entirely sure what it is.\p"
-			"Baron is… well, more like what I\n"
+			"Baron is… {PAUSE 100}well, more like what I\n"
 			"expected of him when this all started.\l"
 			"Quite good, despite the slow start.\p"
 			"For Harper, it seems good. I think\n"
 			"she finally ditched the Furret.\l"
 			"I know she likes it, but… a Furret…\p"
-			"And Sakura's is… well…\p"
+			"And Sakura's is… {PAUSE 100}well…\p"
 			"Sorry, I'm still trying to come to terms\n"
 			"with what a ‘Ceruledge’ is.\p"
 			"I've been to each corner of this\n"
 			"region now and some of them are just\l"
 			"hard to wrap my head around.\p"
-			"And that's WITH just the first\n"
+			"And that's {PAUSE 30}WITH {PAUSE 60}just the first\n"
 			"nine gens in play…\p"
 			"Well, unless Jakson throws some crazy\n"
 			"custom thing at us, I think we're all\l"
@@ -1933,18 +1933,18 @@ text Battle05_BaronText_PreBattle2 {
 	"It seems like we're reaching the end.\p"
 	"You'll be headed into the final\n"
 	"gauntlet soon, I imagine.\p"
-	"Before you go… I… I need to…\p"
+	"Before you go… {PAUSE 100}I… {PAUSE 100}I need to…\p"
 	"{DOTS_WITH_PAUSES}\p"
 	"Well, how about this. If you beat me\n"
 	"here, then we'll talk.\p"
 	"After all, if I can beat you, maybe it\n"
 	"isn't even needed.\p"
-	"So… Shall we have one last practice\n"
+	"So… {PAUSE 100}Shall we have one last practice\n"
 	"round? A dance to a finale."
 }
 
 text Battle05_BaronText_BattleVictory {
-	"So close…! No…No. I'm happy about\n"
+	"So close…{PAUSE 30}! No…{PAUSE 60} No. I'm happy about\n"
 	"this. This is what I wanted, in the end."
 }
 
@@ -1952,7 +1952,7 @@ text Battle05_BaronText_PostBattle {
 	"{PLAYER}, you are very skilled at this\n"
 	"game. It helped me realize what I\l"
 	"could be when playing it…\p"
-	"Playing it for… my son."
+	"Playing it for… {PAUSE 100}my son."
 }
 
 text Battle05_BaronText_PostBattle2 {
@@ -1963,7 +1963,7 @@ text Battle05_BaronText_PostBattle2 {
 	"Oh, don't worry! I've been taking good\n"
 	"care of my son. We went to the doctor\l"
 	"early on and he just needs bedrest.\p"
-	"He was just… so excited to play with\n"
+	"He was just… {PAUSE 100}so excited to play with\n"
 	"you all. I was hoping I could hand the\l"
 	"game back to him when he got better.\p"
 	"I'm sorry I didn't tell you sooner.\p"
@@ -1973,17 +1973,17 @@ text Battle05_BaronText_PostBattle2 {
 	"I'll be sure to give him the account\n"
 	"back when he does recover, of course.\l"
 	"Hopefully I'm not a burden until then.\p"
-	"But… whenever that is. Thank you.\n"
+	"But… {PAUSE 100}whenever that is. Thank you.\n"
 	"Thank you for being you. All of you."
 }
 
 text Battle05_BaronText_PostBattle3 {
 	"{DOTS_WITH_PAUSES}\p"
-	"O-Oh? My phone number…?\p"
-	"{PLAYER}, y-you couldn't mean…\p"
+	"O-{PAUSE 30}Oh? My phone number…?\p"
+	"{PLAYER}, y-{PAUSE 30}you couldn't mean…\p"
 	"{DOTS_WITH_PAUSES}{PAUSE 60}\n"
 	"To stay in contact while we're playing?\p"
-	"O-Oh! Of course! Of course that's what\n"
+	"O-{PAUSE 30}Oh! Of course! Of course that's what\n"
 	"I was thinking. Let me share it with you."
 }
 
@@ -2000,7 +2000,7 @@ text Battle05_HarperText_PreBattle {
 	"kicked my butt it sort of fired me up.\p"
 	"I've learned a lot from you, and from\n"
 	"battling against everyone else.\p"
-	"Baron… Sakura… Redd… Jakson.\n"
+	"Baron… {PAUSE 100}Sakura… {PAUSE 100}Redd… {PAUSE 100}Jakson.\n"
 	"I've beaten them all at this point.\p"
 	"So if this is the game's end…\n"
 	"You're next.\p"
@@ -2014,9 +2014,9 @@ text Battle05_HarperText_BattleVictory {
 }
 
 text Battle05_HarperText_PostBattle {
-	"No, no… I know how this went down.\n"
+	"No, no… {PAUSE 100}I know how this went down.\n"
 	"I know why I lost to your secret skill.\p"
-	"Ha… Because there is no secret."
+	"Ha… {PAUSE 100}Because there is no secret."
 }
 
 text Battle05_HarperText_PostBattle2 {
@@ -2026,14 +2026,14 @@ text Battle05_HarperText_PostBattle2 {
 	"Redd feels like he knows half the\n"
 	"Pokédex now. Baron sees through\l"
 	"my strategies so quickly now.\p"
-	"You… feel like you got all of that.\p"
+	"You… {PAUSE 100}feel like you got all of that.\p"
 	"I originally came along just to play\n"
 	"a game with some friends. And maybe\l"
 	"I regretted it at first.\p"
 	"Now I got this stupid tick in my head\n"
 	"that says “win win win”. I've got you\l"
 	"guys to blame for that.\p"
-	"Haha… It's been fun.\p"
+	"Haha… {PAUSE 100}It's been fun.\p"
 	"So don't go losing until I get a chance\n"
 	"to knock you down a peg or two.\p"
 	"Go out there and win, {PLAYER}.\n"
@@ -2054,7 +2054,7 @@ text Battle05_JaksonText_PreBattle {
 	"thinking about what ability I\l"
 	"preferred on a Pokémon.\p"
 	"I am proud of it. Rightfully.\p"
-	"But… I don't know if I'll win.\n"
+	"But… {PAUSE 100}I don't know if I'll win.\n"
 	"Whether I am really and truly ready.\p"
 	"Strange, no?"
 }
@@ -2062,17 +2062,17 @@ text Battle05_JaksonText_PreBattle {
 text Battle05_JaksonText_PreBattle2 {
 	"Do not hold anything back.\p"
 	"Don't even consider it for a second.\p"
-	"When we are done… there will be\n"
+	"When we are done… {PAUSE 100}there will be\n"
 	"nothing left to prove.\p"
 	"{PLAYER}. I challenge you."
 }
 
 text Battle05_JaksonText_BattleVictory {
-	"And there it is… “The End.”"
+	"And there it is… {PAUSE 100}“The End.”"
 }
 
 text Battle05_JaksonText_PostBattle {
-	"Haha… You know… This IS just for\n"
+	"Haha… {PAUSE 100}You know… {PAUSE 100}This {PAUSE 30}IS {PAUSE 60}just for\n"
 	"fun, technically, right?\p"
 	"I feel very ready for the Elite Four\n"
 	"after that.\p"
@@ -2113,13 +2113,13 @@ text Battle05_ReddText_PreBattle2a {
 
 text Battle05_ReddText_PreBattle2b {
 	"It seems you've caught up to me in\n"
-	"the research battle… Well that just\l"
+	"the research battle… {PAUSE 100}Well that just\l"
 	"means we'll have to battle."
 }
 
 text Battle05_ReddText_PreBattle3 {
 	"I sort of wanted to do this after\n"
-	"the Elite 4… but…I don't think\l"
+	"the Elite 4… {PAUSE 100}but…{PAUSE 100} I don't think\l"
 	"I can go and replace the champ.\p"
 	"A shame, but this setting is good too.\n"
 	"Here, at the top of this hill.\p"
@@ -2178,7 +2178,7 @@ text Battle05_SakuraText_PreBattle {
 	"itself around the neck of the scared\l"
 	"sheep sleeping under the barren\l"
 	"moonlight.\p"
-	"She…\n"
+	"She…{PAUSE 100}\n"
 	"is…\l"
 	"SAKURA!!!\p"
 	"Her opponent: The weakling little\n"
@@ -2193,12 +2193,12 @@ text Battle05_SakuraText_PreBattle {
 
 text Battle05_SakuraText_BattleVictory {
 	"And so, the beloved Cuteness Inspector\n"
-	"Sakura falls once again! Ah!"
+	"Sakura falls once again! {PAUSE 60}Ah!"
 }
 
 text Battle05_SakuraText_PostBattle {
 	"{DOTS_WITH_PAUSES}\p"
-	"…Hah.\p"
+	"…{PAUSE 60}Hah.\p"
 	"Hahahah!\p"
 	"{PLAYER}, going through this with you\n"
 	"all has been a blast. Especially with\l"
@@ -2206,7 +2206,7 @@ text Battle05_SakuraText_PostBattle {
 	"No matter how much I train up, you've\n"
 	"always kept me on my toes.\p"
 	"To put my serious face on for just a\n"
-	"moment… thank you for playing along\l"
+	"moment… {PAUSE 100}thank you for playing along\l"
 	"with us and putting up with my antics.\p"
 	"This is all the more electrifying when\n"
 	"I get an audience. We should… Maybe\l"
@@ -2239,8 +2239,8 @@ text Town18_BaronText {
 }
 
 text Town18_HarperText {
-	format(	"My goodness this building is CRAZY.\p"
-			"Like… in a cool way. I think?\p"
+	format(	"My goodness this building is {PAUSE 30}CRAZY.\p"
+			"Like… {PAUSE 100}in a cool way. I think?\p"
 			"Like needing to enter through the\n"
 			"mouth of a snake? It makes me realize\l"
 			"how real some of this feels now.\p"
@@ -2252,7 +2252,7 @@ text Town18_HarperText {
 			"{DOTS_WITH_PAUSES}\p"
 			"Maybe I should try to find something a\n"
 			"little more relaxing.\p"
-			"Evergrande City was nice… Maybe I'll\n"
+			"Evergrande City was nice… {PAUSE 100}Maybe I'll\n"
 			"visit again.")
 }
 
@@ -2284,7 +2284,7 @@ text Town18_ReddText {
 			"my handle on the game is getting better\l"
 			"by the day.\p"
 			"I do sort of wish there was some kind\n"
-			"of… Gen 1 only pool, or something.\p"
+			"of… {PAUSE 100}Gen 1 only pool, or something.\p"
 			"I mean, yeah, the others were good too,\n"
 			"but comfort food is always nice.")
 }
@@ -2302,12 +2302,12 @@ text Town18_SakuraText {
 			"This Battle Frontier's just been too\n"
 			"easy for me.\p"
 			"Jakson needs to hurry up and add some\n"
-			"more stuff… and make it more difficult\l"
+			"more stuff… {PAUSE 100}and make it more difficult\l"
 			"too!\p"
 			"Oh, maybe we could get a second floor\n"
 			"on this place!\p"
 			"I just need to get Scott to move!\p"
-			"I mean…\n"
+			"I mean…{PAUSE 100}\n"
 			"If Scott refuses to leave…\l"
 			"I could just burn it down and rebuild.")
 }

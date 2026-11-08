@@ -610,26 +610,7 @@ struct TuningForkUnlockedMusic
     bool8 musicMD2Dialga;
     bool8 musicXDCipherPeon;
     bool8 musicKH1Disappeared;
-    bool8 padding1;
-    bool8 padding2;
-    bool8 padding3;
-    bool8 padding4;
-    bool8 padding5;
-    bool8 padding6;
-    bool8 padding7;
-    bool8 padding8;
-    bool8 padding9;
-    bool8 padding10;
-    bool8 padding11;
-    bool8 padding12;
-    bool8 padding13;
-    bool8 padding14;
-    bool8 padding15;
-    bool8 padding16;
-    bool8 padding17;
-    bool8 padding18;
-    bool8 padding19;
-    bool8 padding20;
+    bool8 padding1[0x38]; // total of 64 bool8 for tuning fork... no way that much music will even fit... probably...
 };
 
 struct SaveBlock2

@@ -903,7 +903,7 @@ static void Task_OptionMenuSave(u8 taskId)
 
     if (gSaveBlock2Ptr->optionsMusicMute == TRUE)
         StopMapMusic();
-    else
+    else if (gMain.savedCallback == CB2_ReturnToFieldWithOpenMenu)
         Overworld_PlaySpecialMapMusic();
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);

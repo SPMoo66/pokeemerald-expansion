@@ -12846,6 +12846,32 @@
         .party = TRAINER_PARTY(sParty_WattsonSimulator),
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
     },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_BRAWLY] =
+    {
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
+        .trainerName = _("Brawly"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_BrawlySimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_FULL,
+    },
+
+    [DIFFICULTY_NORMAL][TRAINER_SIMULATOR_FLANNERY] =
+    {
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
+        .trainerName = _("Flannery"),
+        .items = {},
+        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE/* | AI_FLAG_ACE_POKEMON*/ | AI_FLAG_SMART_SWITCHING,
+        .party = TRAINER_PARTY(sParty_FlannerySimulator),
+        .multiTeamSize = MULTI_TEAM_SIZE_FULL,
+    },
 /*
 
     [DIFFICULTY_NORMAL][TRAINER_] =

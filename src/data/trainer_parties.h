@@ -24570,6 +24570,120 @@ static const struct TrainerMon sParty_WattsonSimulator[] = {
     .gender = TRAINER_MON_RANDOM_GENDER,
     }
 };
+
+static const struct TrainerMon sParty_BrawlySimulator[] = {
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_BRONZONG,
+    .ability = ABILITY_LEVITATE,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_HARD_PRESS, MOVE_BODY_PRESS, MOVE_EXPANDING_FORCE, MOVE_PSYCHIC_TERRAIN},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_KILOWATTREL,
+    .ability = ABILITY_VOLT_ABSORB,
+    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_THUNDERBOLT, MOVE_HURRICANE, MOVE_VOLT_SWITCH, MOVE_ROOST},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_WYRDEER,
+    .ability = ABILITY_INTIMIDATE,
+    .heldItem = ITEM_CHOICE_SPECS,
+    .moves = {MOVE_PSYSHIELD_BASH, MOVE_EARTH_POWER, MOVE_HYPER_BEAM, MOVE_TRICK},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_BRAVIARY_HISUI,
+    .ability = ABILITY_TINTED_LENS,
+    .heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_BRAVE_BIRD, MOVE_U_TURN, MOVE_ESPER_WING, MOVE_WHIRLWIND},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_IRON_JUGULIS,
+    .ability = ABILITY_QUARK_DRIVE,
+    .heldItem = ITEM_BOOSTER_ENERGY,
+    .moves = {MOVE_DARK_PULSE, MOVE_OBLIVION_WING, MOVE_TRI_ATTACK, MOVE_FLAMETHROWER},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_CHIMECHO,
+    .ability = ABILITY_LEVITATE,
+    .heldItem = ITEM_MEGA_STONE_Y,
+    .moves = {MOVE_HELPING_HAND, MOVE_RECOVER, MOVE_PSYCHIC, MOVE_TRI_ATTACK},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    }
+};
+
+static const struct TrainerMon sParty_FlannerySimulator[] = {
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_PELIPPER,
+    .ability = ABILITY_DRIZZLE,
+    .heldItem = ITEM_DAMP_ROCK,
+    .moves = {MOVE_SURF, MOVE_U_TURN, MOVE_ROOST, MOVE_HURRICANE},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_WHIMSICOTT,
+    .ability = ABILITY_PRANKSTER,
+    .heldItem = ITEM_KEBIA_BERRY,
+    .moves = {MOVE_HURRICANE, MOVE_TAILWIND, MOVE_ENCORE, MOVE_HELPING_HAND},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_WEEZING_GALAR,
+    .ability = ABILITY_NEUTRALIZING_GAS,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_STRANGE_STEAM, MOVE_WILL_O_WISP, MOVE_SLUDGE_BOMB, MOVE_FLAMETHROWER},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_GRENINJA,
+    .ability = ABILITY_BATTLE_BOND,
+    .heldItem = ITEM_LOADED_DICE,
+    .moves = {MOVE_WATER_SHURIKEN, MOVE_DARK_PULSE, MOVE_U_TURN, MOVE_SUBSTITUTE},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_FLUTTER_MANE,
+    .ability = ABILITY_PROTOSYNTHESIS,
+    .heldItem = ITEM_BOOSTER_ENERGY,
+    .moves = {MOVE_SHADOW_BALL, MOVE_MOONBLAST, MOVE_MYSTICAL_FIRE, MOVE_PSYSHOCK},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    },
+    {
+    .ball = POKEBALL_COUNT,
+    .lvl = 82,
+    .species = SPECIES_MILOTIC,
+    .ability = ABILITY_COMPETITIVE,
+    .heldItem = ITEM_MEGA_STONE_X,
+    .moves = {MOVE_MIRROR_COAT, MOVE_STEAM_ERUPTION, MOVE_ALLURING_VOICE, MOVE_RECOVER},
+    .gender = TRAINER_MON_RANDOM_GENDER,
+    }
+};
 /*
 
 static const struct TrainerMon sParty_[] = {

@@ -468,13 +468,20 @@ AWaltzWithWally_Main::
 	dynmultipush AWaltzWithWally_Main_Text_2, 0
 AWaltzWithWally_Main_1:
 # 274 "data/battle_simulator.pory"
+	goto_if_unset FLAG_BATTLESIM_DISC_2_2, AWaltzWithWally_Main_6
+# 278 "data/battle_simulator.pory"
+	dynmultipush AWaltzWithWally_Main_Text_4, 0
+AWaltzWithWally_Main_5:
+# 280 "data/battle_simulator.pory"
 	dynmultistack 0, 6, FALSE, 3, FALSE, 0, DYN_MULTICHOICE_CB_NONE
-# 275 "data/battle_simulator.pory"
+# 281 "data/battle_simulator.pory"
 	callnative ClearMugshot
-# 276 "data/battle_simulator.pory"
+# 282 "data/battle_simulator.pory"
 	switch VAR_RESULT
-# 277 "data/battle_simulator.pory"
-	case 0, AWaltzWithWally_Main_6
+# 283 "data/battle_simulator.pory"
+	case 0, AWaltzWithWally_Main_10
+# 287 "data/battle_simulator.pory"
+	case 1, AWaltzWithWally_Main_11
 	return
 
 AWaltzWithWally_Main_2:
@@ -483,65 +490,131 @@ AWaltzWithWally_Main_2:
 	goto AWaltzWithWally_Main_1
 
 AWaltzWithWally_Main_6:
-# 278 "data/battle_simulator.pory"
+# 275 "data/battle_simulator.pory"
+	dynmultipush AWaltzWithWally_Main_Text_3, 0
+	goto AWaltzWithWally_Main_5
+
+AWaltzWithWally_Main_10:
+# 284 "data/battle_simulator.pory"
 	fadeoutbgm 0
-# 279 "data/battle_simulator.pory"
+# 285 "data/battle_simulator.pory"
 	fadescreen FADE_TO_BLACK
-# 280 "data/battle_simulator.pory"
+# 286 "data/battle_simulator.pory"
 	warpcontinuescript MAP_LILYCOVE_CITY_BATTLE_SIMULATOR, 1, 2, AWaltzWithWally_Series1
+	return
+
+AWaltzWithWally_Main_11:
+# 288 "data/battle_simulator.pory"
+	fadeoutbgm 0
+# 289 "data/battle_simulator.pory"
+	fadescreen FADE_TO_BLACK
+# 290 "data/battle_simulator.pory"
+	warpcontinuescript MAP_LILYCOVE_CITY_BATTLE_SIMULATOR, 1, 2, AWaltzWithWally_Series2
 	return
 
 
 AWaltzWithWally_Series1::
-# 288 "data/battle_simulator.pory"
+# 298 "data/battle_simulator.pory"
 	fadescreen FADE_FROM_BLACK
-# 289 "data/battle_simulator.pory"
+# 299 "data/battle_simulator.pory"
 	delay 20
-# 290 "data/battle_simulator.pory"
+# 300 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_FinalTrainer
-# 291 "data/battle_simulator.pory"
+# 301 "data/battle_simulator.pory"
 	multi_2_vs_2 TRAINER_SIMULATOR_ROXANNE, RustboroCity_Gym_Text_RoxanneRematchDefeat, TRAINER_SIMULATOR_WATTSON, MauvilleCity_Gym_Text_WattsonRematchDefeat, PARTNER_WALLY_SIMULATOR
-# 292 "data/battle_simulator.pory"
+# 302 "data/battle_simulator.pory"
 	compare VAR_RESULT, B_OUTCOME_LOST
 	goto_if_eq AWaltzWithWally_Series1_2
-# 292 "data/battle_simulator.pory"
+# 302 "data/battle_simulator.pory"
 	compare VAR_RESULT, B_OUTCOME_FORFEITED
 	goto_if_eq AWaltzWithWally_Series1_2
 AWaltzWithWally_Series1_1:
-# 296 "data/battle_simulator.pory"
+# 306 "data/battle_simulator.pory"
 	call Motel_BattleSimulator_Congratulations
-# 297 "data/battle_simulator.pory"
-	goto_if_unset FLAG_BATTLESIM_DISC_2_1, AWaltzWithWally_Series1_7
 # 307 "data/battle_simulator.pory"
+	goto_if_unset FLAG_BATTLESIM_DISC_2_1, AWaltzWithWally_Series1_7
+# 317 "data/battle_simulator.pory"
 	giveitem ITEM_BALM_MUSHROOM, 1
 AWaltzWithWally_Series1_6:
-# 309 "data/battle_simulator.pory"
+# 319 "data/battle_simulator.pory"
 	goto Motel_BattleSimulator_ExitSimulation
 	return
 
 AWaltzWithWally_Series1_2:
-# 293 "data/battle_simulator.pory"
+# 303 "data/battle_simulator.pory"
 	fadescreen FADE_TO_BLACK
-# 294 "data/battle_simulator.pory"
+# 304 "data/battle_simulator.pory"
 	special SetCB2WhiteOut
 	goto AWaltzWithWally_Series1_1
 
 AWaltzWithWally_Series1_7:
-# 298 "data/battle_simulator.pory"
+# 308 "data/battle_simulator.pory"
 	giveitem ITEM_STELLAR_TERA_SHARD, 2
-# 299 "data/battle_simulator.pory"
-	giveitem ITEM_EXP_CANDY_XL, 2
-# 300 "data/battle_simulator.pory"
-	buffernumberstring STR_VAR_1, 5
-# 301 "data/battle_simulator.pory"
-	setvar VAR_0x8004, 5
-# 302 "data/battle_simulator.pory"
+# 309 "data/battle_simulator.pory"
+	giveitem ITEM_EXP_CANDY_L, 2
+# 310 "data/battle_simulator.pory"
+	buffernumberstring STR_VAR_1, 3
+# 311 "data/battle_simulator.pory"
+	setvar VAR_0x8004, 3
+# 312 "data/battle_simulator.pory"
 	special GiveFrontierBattlePoints
-# 303 "data/battle_simulator.pory"
+# 313 "data/battle_simulator.pory"
 	msgbox PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS
-# 304 "data/battle_simulator.pory"
+# 314 "data/battle_simulator.pory"
 	setflag FLAG_BATTLESIM_DISC_2_1
 	goto AWaltzWithWally_Series1_6
+
+
+AWaltzWithWally_Series2::
+# 323 "data/battle_simulator.pory"
+	fadescreen FADE_FROM_BLACK
+# 324 "data/battle_simulator.pory"
+	delay 20
+# 325 "data/battle_simulator.pory"
+	call Motel_BattleSimulator_FinalTrainer
+# 326 "data/battle_simulator.pory"
+	multi_2_vs_2 TRAINER_SIMULATOR_BRAWLY, RustboroCity_Gym_Text_RoxanneRematchDefeat, TRAINER_SIMULATOR_FLANNERY, MauvilleCity_Gym_Text_WattsonRematchDefeat, PARTNER_WALLY_SIMULATOR
+# 327 "data/battle_simulator.pory"
+	compare VAR_RESULT, B_OUTCOME_LOST
+	goto_if_eq AWaltzWithWally_Series2_2
+# 327 "data/battle_simulator.pory"
+	compare VAR_RESULT, B_OUTCOME_FORFEITED
+	goto_if_eq AWaltzWithWally_Series2_2
+AWaltzWithWally_Series2_1:
+# 331 "data/battle_simulator.pory"
+	call Motel_BattleSimulator_Congratulations
+# 332 "data/battle_simulator.pory"
+	goto_if_unset FLAG_BATTLESIM_DISC_2_2, AWaltzWithWally_Series2_7
+# 342 "data/battle_simulator.pory"
+	giveitem ITEM_BALM_MUSHROOM, 1
+AWaltzWithWally_Series2_6:
+# 344 "data/battle_simulator.pory"
+	goto Motel_BattleSimulator_ExitSimulation
+	return
+
+AWaltzWithWally_Series2_2:
+# 328 "data/battle_simulator.pory"
+	fadescreen FADE_TO_BLACK
+# 329 "data/battle_simulator.pory"
+	special SetCB2WhiteOut
+	goto AWaltzWithWally_Series2_1
+
+AWaltzWithWally_Series2_7:
+# 333 "data/battle_simulator.pory"
+	giveitem ITEM_STELLAR_TERA_SHARD, 2
+# 334 "data/battle_simulator.pory"
+	giveitem ITEM_EXP_CANDY_L, 2
+# 335 "data/battle_simulator.pory"
+	buffernumberstring STR_VAR_1, 3
+# 336 "data/battle_simulator.pory"
+	setvar VAR_0x8004, 3
+# 337 "data/battle_simulator.pory"
+	special GiveFrontierBattlePoints
+# 338 "data/battle_simulator.pory"
+	msgbox PlayerObtainedXBattlePoints, MSGBOX_GETPOINTS
+# 339 "data/battle_simulator.pory"
+	setflag FLAG_BATTLESIM_DISC_2_2
+	goto AWaltzWithWally_Series2_6
 
 
 Motel_BattleSimulator_Intro_Text_0:
@@ -709,6 +782,14 @@ AWaltzWithWally_Main_Text_1:
 AWaltzWithWally_Main_Text_2:
 # 272 "data/battle_simulator.pory"
 	.string "Part 1 - Complete!$"
+
+AWaltzWithWally_Main_Text_3:
+# 275 "data/battle_simulator.pory"
+	.string "Part 2$"
+
+AWaltzWithWally_Main_Text_4:
+# 278 "data/battle_simulator.pory"
+	.string "Part 2 - Complete!$"
 
 Gamecube_Text_Congratulations::
 # 135 "data/battle_simulator.pory"

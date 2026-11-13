@@ -991,12 +991,14 @@
 #define TRAINER_UNKNOWN                     984
 #define TRAINER_SIMULATOR_ROXANNE           985
 #define TRAINER_SIMULATOR_WATTSON           986
+#define TRAINER_SIMULATOR_BRAWLY            987
+#define TRAINER_SIMULATOR_FLANNERY          988
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_EMERALD              987
+#define TRAINERS_COUNT_EMERALD              989
 #define MAX_TRAINERS_COUNT_EMERALD          1280
 
 #if IS_FRLG

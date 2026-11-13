@@ -476,7 +476,7 @@
 #define FLAG_SHOWN_AURORA_TICKET             0x1AF
 #define FLAG_SHOWN_OLD_SEA_MAP               0x1B0
 #define FLAG_LOOKER_SOOTOPOLIS_CALL          0x1B1 // Was Swagger flag
-#define FLAG_UNUSED_0x1B2                    0x1B2 // Was Rollout flag
+#define FLAG_BATTLESIM_DISC_2_2              0x1B2 // Was Rollout flag
 #define FLAG_UNUSED_0x1B3                    0x1B3 // Was Fury Cutter flag
 #define FLAG_UNUSED_0x1B4                    0x1B4 // Was Mimic flag
 #define FLAG_UNUSED_0x1B5                    0x1B5 // Was Metronome flag

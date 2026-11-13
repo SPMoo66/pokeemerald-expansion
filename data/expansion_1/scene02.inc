@@ -669,7 +669,7 @@ Expansion1_Rival_Scene02e_4:
 # 377 "data/expansion_1/scene02.pory"
 	message Expansion1_Rival_Scene02e_Text_1
 # 379 "data/expansion_1/scene02.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	playfanfare MUS_RG_PHOTO
 # 380 "data/expansion_1/scene02.pory"
 	waitmessage
 # 381 "data/expansion_1/scene02.pory"

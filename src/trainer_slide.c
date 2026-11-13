@@ -192,70 +192,70 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINER_PARTNER(PARTNER_
     {
         [TRAINER_ROXANNE_1] =
 		{
-            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownRoxanne,
+            [TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN] = sText_FirstDownRoxanne,
             [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchRoxanne,
         },
         [TRAINER_BRAWLY_1] =
 		{
-            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownBrawly,
+            [TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN] = sText_FirstDownBrawly,
             [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchBrawly,
         },
         [TRAINER_WATTSON_1] =
 		{
-            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownWattson,
+            [TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN] = sText_FirstDownWattson,
             [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchWattson,
         },
         [TRAINER_FLANNERY_1] =
 		{
-            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownFlannery,
+            [TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN] = sText_FirstDownFlannery,
             [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchFlannery
         },
         [TRAINER_NORMAN_1] =
 		{
-            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownNorman,
+            [TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN] = sText_FirstDownNorman,
             [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchNorman
         },
         [TRAINER_WINONA_1] =
 		{
-            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownWinona,
+            [TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN] = sText_FirstDownWinona,
             [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchWinona
         },
         [TRAINER_TATE_AND_LIZA_1] =
 		{
-            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownLizaTate,
+            [TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN] = sText_FirstDownLizaTate,
             [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaLizaTate,
             [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchLizaTate
         },
         [TRAINER_JUAN_1] =
 		{
-            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownJuan,
+            [TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN] = sText_FirstDownJuan,
             [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaJuan,
             [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchJuan
         },
         [TRAINER_SIDNEY] =
 		{
-            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownSidney,
+            [TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN] = sText_FirstDownSidney,
             [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaSidney,
             [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchSidney,
             [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalfSidney
         },
         [TRAINER_PHOEBE] =
 		{
-            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownPhoebe,
+            [TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN] = sText_FirstDownPhoebe,
             [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaPhoebe,
             [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchPhoebe,
             [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalfPhoebe
         },
         [TRAINER_GLACIA] =
 		{
-            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownGlacia,
+            [TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN] = sText_FirstDownGlacia,
             [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaGlacia,
             [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchGlacia,
             [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalfGlacia
         },
         [TRAINER_DRAKE] =
 		{
-            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownDrake,
+            [TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN] = sText_FirstDownDrake,
             [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaDrake,
             [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchDrake,
             [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalfDrake
@@ -263,7 +263,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINER_PARTNER(PARTNER_
         [TRAINER_WALLACE] =
 		{
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = sText_BeforeFirstTurnWallace,
-            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = sText_FirstDownWallace,
+            [TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN] = sText_FirstDownWallace,
             [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = sText_MegaWallace,
             [TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN] = sText_LastSwitchWallace,
             [TRAINER_SLIDE_OPPONENT_LAST_HALF_HP] = sText_LastHalfWallace
@@ -690,7 +690,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINER_PARTNER(PARTNER_
         },
         [TRAINER_STEVEN_EXP_1] =
         {
-            [TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN] = COMPOUND_STRING("Haha!\nGreat one, {B_PLAYER_NAME}!\lHow are you liking my team so far?{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN] = COMPOUND_STRING("Haha!\nGreat one, {B_PLAYER_NAME}!\lHow are you liking my team so far?{PAUSE_UNTIL_PRESS}"),
             [TRAINER_SLIDE_OPPONENT_MEGA_EVOLUTION] = COMPOUND_STRING("And now, a classic!{PAUSE_UNTIL_PRESS}"),
         },
     },
@@ -845,7 +845,7 @@ static bool32 ShouldRunTrainerSlideLandsFirstDown(u32 lastId, enum BattlerId bat
 
     enum BattlerId partyBattler = battler;
 
-    if (slideId == TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN)
+    if (slideId == TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN)
         partyBattler = gBattlerFainted;
 
     return ((GetPartyMonCount(lastId, GetBattlerParty(partyBattler), TRUE) == (GetPartyMonCount(lastId, GetBattlerParty(partyBattler), FALSE) - 1)));

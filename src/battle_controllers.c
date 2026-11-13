@@ -3112,7 +3112,8 @@ u32 Rogue_GetBattleSpeedScale(bool32 forHealthbar)
 
 void SetLastPokemonMusic (void)
 {
-    TryLastMonBGM();
+    if (gSaveBlock2Ptr->optionsMusicMute == FALSE)
+        TryLastMonBGM();
 }
 
 void AnimateMonAfterPokeBallFail(enum BattlerId battler)

@@ -280,7 +280,7 @@ static void CreateBattleStartTask(enum BattleTransition transition, u16 song)
     u8 taskId = CreateTask(Task_BattleStart, 1);
 
     gTasks[taskId].tTransition = transition;
-    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
+    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC) && gSaveBlock2Ptr->optionsMusicMute == FALSE)
         PlayMapChosenOrBattleBGM(song);
 }
 
@@ -1305,7 +1305,7 @@ static void BattleSetup_ConfigureApproachingFacilityTrainerBattle(TrainerBattleP
     SetMapVarsToTrainerA();
 
     PUSH(EventSnippet_StartTrainerApproach)
-    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
+    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC) && gSaveBlock2Ptr->optionsMusicMute == FALSE)
         PUSH(EventSnippet_PlayTrainerEncounterMusic)
     PUSH(EventSnippet_TrainerApproach)
     PUSH(EventSnippet_ShowTrainerIntroMsg)
@@ -1315,7 +1315,7 @@ static void BattleSetup_ConfigureApproachingFacilityTrainerBattle(TrainerBattleP
         SetMapVarsToTrainerB();
 
         PUSH(EventSnippet_PrepareSecondTrainerApproach)
-    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
+    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC) && gSaveBlock2Ptr->optionsMusicMute == FALSE)
             PUSH(EventSnippet_PlayTrainerEncounterMusic)
         PUSH(EventSnippet_TrainerApproach)
         PUSH(EventSnippet_ShowTrainerIntroMsg)
@@ -1338,7 +1338,7 @@ static void BattleSetup_ConfigureFacilityTrainerBattle(TrainerBattleParameter *b
         return;
     }
 
-    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
+    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC) && gSaveBlock2Ptr->optionsMusicMute == FALSE)
         PUSH(EventSnippet_PlayTrainerEncounterMusic)
     PUSH(EventSnippet_SetTrainerFacingDirection)
     PUSH(EventSnippet_ShowTrainerIntroMsg)
@@ -1353,7 +1353,7 @@ static void BattleSetup_ConfigureApproachingTrainerBattle(TrainerBattleParameter
     SetMapVarsToTrainerA();
 
     PUSH       (EventSnippet_StartTrainerApproach)
-    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
+    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC) && gSaveBlock2Ptr->optionsMusicMute == FALSE)
         PUSH_IF_SET(EventSnippet_PlayTrainerEncounterMusic, battleParams->params.playMusicA)
     PUSH       (EventSnippet_TrainerApproach)
     PUSH_IF_SET(EventSnippet_ShowTrainerIntroMsg, battleParams->params.introTextA)
@@ -1363,7 +1363,7 @@ static void BattleSetup_ConfigureApproachingTrainerBattle(TrainerBattleParameter
         SetMapVarsToTrainerB();
 
         PUSH       (EventSnippet_PrepareSecondTrainerApproach)
-        if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
+        if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC) && gSaveBlock2Ptr->optionsMusicMute == FALSE)
             PUSH_IF_SET(EventSnippet_PlayTrainerEncounterMusic, battleParams->params.playMusicB)
         PUSH       (EventSnippet_TrainerApproach)
         PUSH_IF_SET(EventSnippet_ShowTrainerIntroMsg, battleParams->params.introTextB)
@@ -1408,7 +1408,7 @@ static void BattleSetup_ConfigureTrainerBattle(TrainerBattleParameter *battlePar
     }
 #endif //FREE_MATCH_CALL
     
-    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC))
+    if (!FlagGet(FLAG_DONT_TRANSITION_BATTLE_MUSIC) && gSaveBlock2Ptr->optionsMusicMute == FALSE)
         PUSH_IF_SET(EventSnippet_PlayTrainerEncounterMusic, battleParams->params.playMusicA)
     PUSH_IF_SET(EventSnippet_SetTrainerFacingDirection, battleParams->params.facePlayer);
     PUSH_IF_SET(EventSnippet_ShowTrainerIntroMsg, battleParams->params.introTextA)

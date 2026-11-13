@@ -178,12 +178,13 @@ static u8 WriteSaveSectorOrSlot(u16 sectorId, const struct SaveSectorLocation *l
         gLastWrittenSector = gLastWrittenSector % NUM_SECTORS_PER_SLOT;
         gSaveCounter++;
         status = SAVE_STATUS_OK;
-        prevVblankCB = gMain.vblankCallback;
-        SetVBlankCallback(VBlankCB_Saving);
+		prevVblankCB = gMain.vblankCallback;
+        if (gSaveBlock1Ptr->flashLevel == 0) // if the screen is darkened for Flash, don't show the save throbber
+		    SetVBlankCallback(VBlankCB_Saving);
         for (i = 0; i < NUM_SECTORS_PER_SLOT; i++)
             HandleWriteSector(i, locations);
-        SetVBlankCallback(prevVblankCB);
-
+        if (gSaveBlock1Ptr->flashLevel == 0) // if the screen is darkened for Flash, don't show the save throbber
+            SetVBlankCallback(prevVblankCB);
         if (gDamagedSaveSectors)
         {
             // At least one sector save failed

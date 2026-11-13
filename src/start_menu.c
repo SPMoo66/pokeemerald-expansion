@@ -1209,7 +1209,8 @@ static u8 SaveOverwriteInputCallback(void)
 
 static u8 SaveSavingMessageCallback(void)
 {
-    ShowThrobber();
+    if (gSaveBlock1Ptr->flashLevel == 0) // if the screen is darkened for Flash, don't show the save throbber
+        ShowThrobber();
     ShowSaveMessage(gText_SavingDontTurnOff, SaveDoSaveCallback);
     return SAVE_IN_PROGRESS;
 }
@@ -1234,12 +1235,14 @@ static u8 SaveDoSaveCallback(void)
     if (saveStatus == SAVE_STATUS_OK)
     {
         ShowSaveMessage(gText_PlayerSavedGame, SaveSuccessCallback);
-        DestroySprite(&gSprites[spriteId]);
+        if (gSaveBlock1Ptr->flashLevel == 0) // if the screen is darkened for Flash, don't show the save throbber
+            DestroySprite(&gSprites[spriteId]);
     }
     else
     {
         ShowSaveMessage(gText_SaveError, SaveErrorCallback);
-        DestroySprite(&gSprites[spriteId]);
+        if (gSaveBlock1Ptr->flashLevel == 0) // if the screen is darkened for Flash, don't show the save throbber
+            DestroySprite(&gSprites[spriteId]);
     }
     SaveStartTimer();
     return SAVE_IN_PROGRESS;

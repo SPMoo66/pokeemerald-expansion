@@ -1390,7 +1390,7 @@ void Overworld_ChangeMusicToDefault(void)
     u16 currentMusic = GetCurrentMapMusic();
     if (gSaveBlock2Ptr->optionsMusicMute == FALSE)
         FadeOutAndPlayNewMapMusic(MUS_NONE, 8);
-    else if (currentMusic != GetCurrLocationDefaultMusic())
+    else if (currentMusic != GetCurrLocationDefaultMusic() && gSaveBlock2Ptr->optionsMusicMute == FALSE)
         FadeOutAndPlayNewMapMusic(GetCurrLocationDefaultMusic(), 8);
 }
 

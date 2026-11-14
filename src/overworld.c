@@ -1397,7 +1397,7 @@ void Overworld_ChangeMusicToDefault(void)
 void Overworld_ChangeMusicTo(u16 newMusic)
 {
     u16 currentMusic = GetCurrentMapMusic();
-    if (gSaveBlock2Ptr->optionsMusicMute == FALSE)
+    if (!gSaveBlock2Ptr->optionsMusicMute == FALSE)
         FadeOutAndPlayNewMapMusic(MUS_NONE, 8);
     else if (currentMusic != newMusic && currentMusic != MUS_ABNORMAL_WEATHER)
         FadeOutAndPlayNewMapMusic(newMusic, 8);

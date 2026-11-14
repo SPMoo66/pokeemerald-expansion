@@ -1235,8 +1235,7 @@ bool8 ScrCmd_fadenewbgm(struct ScriptContext *ctx)
 {
     Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE | SCREFF_HARDWARE);
 
-    if (gSaveBlock2Ptr->optionsMusicMute == FALSE)
-        Overworld_ChangeMusicTo(ScriptReadHalfword(ctx));
+    Overworld_ChangeMusicTo(ScriptReadHalfword(ctx));
     return FALSE;
 }
 

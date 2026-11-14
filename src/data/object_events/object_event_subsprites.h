@@ -3015,28 +3015,28 @@ static const struct Subsprite sOamTable_48x16[] = {
         .x = -24,
         .y =  -8,
         SUBSPRITE_SHAPE(32, 8),
-        .tileOffset = 12,
+        .tileOffset = 0,
         .priority = 2
     },
     {
         .x =   8,
         .y =  -8,
         SUBSPRITE_SHAPE(16, 8),
-        .tileOffset = 16,
+        .tileOffset = 4,
         .priority = 2
     },
     {
         .x = -24,
         .y =   0,
         SUBSPRITE_SHAPE(32, 8),
-        .tileOffset = 18,
+        .tileOffset = 6,
         .priority = 2
     },
     {
         .x =   8,
         .y =   0,
         SUBSPRITE_SHAPE(16, 8),
-        .tileOffset = 22,
+        .tileOffset = 10,
         .priority = 2
     }
 };

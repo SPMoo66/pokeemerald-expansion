@@ -3009,3 +3009,44 @@ static const struct SubspriteTable sOamTables_48x48[] = {
     SUBSPRITE_TABLE_ENTRY(sOamTable_48x48_Grass2), // long grass
     SUBSPRITE_TABLE_ENTRY(sOamTable_48x48_Grass1) // long grass priority 1
 };
+
+static const struct Subsprite sOamTable_48x16[] = {
+    {
+        .x = -24,
+        .y =  -8,
+        SUBSPRITE_SHAPE(32, 8),
+        .tileOffset = 12,
+        .priority = 2
+    },
+    {
+        .x =   8,
+        .y =  -8,
+        SUBSPRITE_SHAPE(16, 8),
+        .tileOffset = 16,
+        .priority = 2
+    },
+    {
+        .x = -24,
+        .y =   0,
+        SUBSPRITE_SHAPE(32, 8),
+        .tileOffset = 18,
+        .priority = 2
+    },
+    {
+        .x =   8,
+        .y =   0,
+        SUBSPRITE_SHAPE(16, 8),
+        .tileOffset = 22,
+        .priority = 2
+    }
+};
+
+// Also used for truck
+static const struct SubspriteTable sOamTables_48x16[] = {
+    SUBSPRITE_TABLE_ENTRY(sOamTable_48x16), // reflections
+    SUBSPRITE_TABLE_ENTRY(sOamTable_48x16), // elevation 3
+    SUBSPRITE_TABLE_ENTRY(sOamTable_48x16), // elevation 4
+    SUBSPRITE_TABLE_ENTRY(sOamTable_48x16), // hot springs
+    SUBSPRITE_TABLE_ENTRY(sOamTable_48x16), // long grass
+    SUBSPRITE_TABLE_ENTRY(sOamTable_48x16) // long grass priority 1
+};

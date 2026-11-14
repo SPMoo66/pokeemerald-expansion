@@ -898,7 +898,7 @@ static void Task_BuyMenu(u8 taskId)
             }
             else if (sMartInfo.martType == MART_TYPE_CAP && CountTotalItemQuantityInBag(ITEM_BOTTLE_CAP) == 0)
             {
-                BuyMenuDisplayMessage(taskId, COMPOUND_STRING("You don't have enough Bottle\nCaps to purchase this item."), BuyMenuReturnToItemList);
+                BuyMenuDisplayMessage(taskId, COMPOUND_STRING("You don't have enough Bottle\nCaps to purchase this item.{PAUSE_UNTIL_PRESS}"), BuyMenuReturnToItemList);
             }
             else
             {

@@ -1074,4 +1074,4 @@ const u8 gText_Sakura[] = _("Sakura");
 const u8 gText_Baron[] = _("Baron");
 const u8 gText_BaronsMom[] = _("Baron's Mom");
 
-const u8 gText_EmeralbodyVersionNumber[] = _("2.3.0");
+const u8 gText_EmeralbodyVersionNumber[] = _("2.3.1");

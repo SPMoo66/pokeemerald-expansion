@@ -851,7 +851,7 @@ bool32 ShouldDefiantCompetitiveActivate(enum BattlerId battler, enum Ability abi
             return FALSE;
         break;
     case ABILITY_KEEN_EYE:
-        if (CompareStat(battler, STAT_EVASION, MAX_STAT_STAGE, CMP_EQUAL, ability))
+        if (CompareStat(battler, STAT_ACC, MAX_STAT_STAGE, CMP_EQUAL, ability))
             return FALSE;
         break;
     default:

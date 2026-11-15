@@ -12112,7 +12112,7 @@ void BS_TryDefiantRattled(void)
             else if (ability == ABILITY_COMPETITIVE)
                 SetStatChange2(battler, STAT_SPATK, 2);
             else
-                SetStatChange2(battler, STAT_EVASION, 1);
+                SetStatChange2(battler, STAT_ACC, 2);
             gBattlerAbility = battler;
             RecordAbilityBattle(battler, ability);
             BattleScriptPush(cmd->nextInstr);

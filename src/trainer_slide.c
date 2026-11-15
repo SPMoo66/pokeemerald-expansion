@@ -845,7 +845,7 @@ static bool32 ShouldRunTrainerSlideLandsFirstDown(u32 lastId, enum BattlerId bat
 
     enum BattlerId partyBattler = battler;
 
-    if (slideId == TRAINER_SLIDE_DEFENDER_TAKES_FIRST_DOWN)
+    if (slideId == TRAINER_SLIDE_ATTACKER_LANDS_FIRST_DOWN)
         partyBattler = gBattlerFainted;
 
     return ((GetPartyMonCount(lastId, GetBattlerParty(partyBattler), TRUE) == (GetPartyMonCount(lastId, GetBattlerParty(partyBattler), FALSE) - 1)));
@@ -1021,6 +1021,8 @@ enum TrainerSlideTargets ShouldDoTrainerSlide(enum BattlerId battler, enum Train
         case TRAINER_SLIDE_OPPONENT_LAST_SWITCHIN:
         case TRAINER_SLIDE_SELF_LAST_SWITCHIN:
             shouldRun = ShouldRunTrainerSlideLastSwitchIn(battler, slideId);
+            if (shouldRun == TRUE)
+                SetLastPokemonMusic();
             break;
         case TRAINER_SLIDE_OPPONENT_LAST_HALF_HP:
         case TRAINER_SLIDE_SELF_LAST_HALF_HP:

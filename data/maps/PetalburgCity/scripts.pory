@@ -780,6 +780,7 @@ script PetalburgCity_EventScript_WallyBattle {
 	setflag (FLAG_SYS_SET_BATTLE_BGM)
 	setvar (VAR_BATTLE_BGM, MUS_HG_VS_WILD)
 	trainerbattle_no_intro (TRAINER_WALLY_PETALBURG, "Ah…\nI think I see now…")
+	speakername (CommonText_Wally)
 	msgbox( format( "{PLAYER}, you're strong.\p"
 					"You're really strong.\p"
 					"Thank you for the battle.\n"

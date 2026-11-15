@@ -1474,24 +1474,26 @@ PetalburgCity_EventScript_WallyBattle_1:
 # 782 "data/maps/PetalburgCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_WALLY_PETALBURG, PetalburgCity_EventScript_WallyBattle_Text_2
 # 783 "data/maps/PetalburgCity/scripts.pory"
+	speakername CommonText_Wally
+# 784 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_WallyBattle_Text_3
-# 788 "data/maps/PetalburgCity/scripts.pory"
-	closemessage
 # 789 "data/maps/PetalburgCity/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	closemessage
 # 790 "data/maps/PetalburgCity/scripts.pory"
-	removeobject LOCALID_PETALBURG_WALLY
+	fadescreenswapbuffers FADE_TO_BLACK
 # 791 "data/maps/PetalburgCity/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	removeobject LOCALID_PETALBURG_WALLY
 # 792 "data/maps/PetalburgCity/scripts.pory"
-	setvar VAR_PETALBURG_CITY_STATE, 6
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 793 "data/maps/PetalburgCity/scripts.pory"
-	clearflag FLAG_CHALLENGING_TRAINER
+	setvar VAR_PETALBURG_CITY_STATE, 6
 # 794 "data/maps/PetalburgCity/scripts.pory"
-	clearflag FLAG_CANT_USE_FLY
+	clearflag FLAG_CHALLENGING_TRAINER
 # 795 "data/maps/PetalburgCity/scripts.pory"
-	fadedefaultbgm
+	clearflag FLAG_CANT_USE_FLY
 # 796 "data/maps/PetalburgCity/scripts.pory"
+	fadedefaultbgm
+# 797 "data/maps/PetalburgCity/scripts.pory"
 	release
 	return
 
@@ -1610,7 +1612,7 @@ PetalburgCity_EventScript_WallyBattle_Text_2:
 	.string "Ah…\nI think I see now…$"
 
 PetalburgCity_EventScript_WallyBattle_Text_3:
-# 783 "data/maps/PetalburgCity/scripts.pory"
+# 784 "data/maps/PetalburgCity/scripts.pory"
 	.string "{PLAYER}, you're strong.\p"
 	.string "You're really strong.\p"
 	.string "Thank you for the battle.\n"

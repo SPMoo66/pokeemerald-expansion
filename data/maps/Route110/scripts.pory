@@ -481,6 +481,7 @@ Route110_EventScript_RivalExit::
 	addobject LOCALID_ROUTE110_RIVAL_ON_BIKE
 	delay 45
 	applymovement LOCALID_ROUTE110_RIVAL_ON_BIKE, Common_Movement_WalkFastUp7
+	waitmovement 0
 	removeobject LOCALID_ROUTE110_RIVAL_ON_BIKE
 	setvar VAR_ROUTE110_STATE, 1
 	savebgm MUS_DUMMY

@@ -1,0 +1,6 @@
+script Expansion2_ClearUnusedFlag { // This script clears flags that may have been previously set but are now unused. These flags can be used AFTER this script is run only.
+	clearflag (FLAG_UNUSED_0x39A)
+	clearflag (FLAG_UNUSED_0x353)
+	clearflag (FLAG_UNUSED_0x39B)
+	clearflag (FLAG_UNUSED_0x312)
+}

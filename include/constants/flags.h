@@ -835,7 +835,7 @@
 #define FLAG_HIDE_TERRA_CAVE_GROUDON                                0x30F
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_MOM          0x310
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM              0x311
-#define FLAG_HIDE_ROUTE_119_SCOTT                                   0x312
+#define FLAG_UNUSED_0x312                                           0x312 // Was for hiding Scott on Route 119
 #define FLAG_HIDE_LILYCOVE_MOTEL_SCOTT                              0x313
 #define FLAG_HIDE_MOSSDEEP_CITY_SCOTT                               0x314
 #define FLAG_HIDE_FANCLUB_OLD_LADY                                  0x315
@@ -900,7 +900,7 @@
 #define FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_ELEMENTS               0x350 // Controls Submarine, Aqua Grunt, and Archie
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_PICHU_DOLL          0x351
 #define FLAG_HIDE_MAGMA_HIDEOUT_4F_GROUDON_ASLEEP                   0x352
-#define FLAG_HIDE_ROUTE_119_RIVAL                                   0x353
+#define FLAG_UNUSED_0x353                                           0x353 // Was for hiding the rival on Route 119
 #define FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS                         0x354
 #define FLAG_HIDE_MAGMA_HIDEOUT_4F_GROUDON                          0x355
 #define FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS                         0x356
@@ -971,8 +971,8 @@
 #define FLAG_HIDE_ROUTE_110_RIVAL                                   0x397
 #define FLAG_HIDE_CHAMPIONS_ROOM_RIVAL                              0x398
 #define FLAG_HIDE_CHAMPIONS_ROOM_BIRCH                              0x399
-#define FLAG_HIDE_ROUTE_110_RIVAL_ON_BIKE                           0x39A
-#define FLAG_HIDE_ROUTE_119_RIVAL_ON_BIKE                           0x39B
+#define FLAG_UNUSED_0x39A                                           0x39A // Was for hiding the rival on bike on Route 110
+#define FLAG_UNUSED_0x39B                                           0x39B // Was for hiding the rival on bike on Route 119
 #define FLAG_HIDE_AQUA_HIDEOUT_GRUNTS                               0x39C
 #define FLAG_HIDE_LILYCOVE_MOTEL_GAME_DESIGNERS                     0x39D
 #define FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA                              0x39E

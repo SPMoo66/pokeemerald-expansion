@@ -1,3 +1,7 @@
+script Unused_MoveTutors {
+	setvar (VAR_0x8005, MOVE_TERA_BLAST)
+}
+
 script SlateportCity_PokemonFanClub_EventScript_SwaggerTutor {
 	lock
 	faceplayer

@@ -856,7 +856,7 @@
 #define FLAG_HIDE_MAUVILLE_CITY_WALLY                               0x324
 #define FLAG_HIDE_MAUVILLE_CITY_WALLYS_UNCLE                        0x325
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY                0x326
-#define FLAG_HIDE_RUSTURF_TUNNEL_WANDAS_BOYFRIEND                   0x327
+#define FLAG_HIDE_RUSTURF_TUNNEL_WANDA_AND_BOYFRIEND                0x327
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WANDA_AND_BOYFRIEND  0x328
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLYS_UNCLE         0x329
 #define FLAG_HIDE_SS_TIDAL_CORRIDOR_SCOTT                           0x32A
@@ -1032,7 +1032,7 @@
 #define FLAG_HIDE_UNDERWATER_SEA_FLOOR_CAVERN_STOLEN_SUBMARINE      0x3D4
 #define FLAG_HIDE_ROUTE_120_KECLEON_BRIDGE_SHADOW                   0x3D5
 #define FLAG_HIDE_ROUTE_120_KECLEON_1                               0x3D6
-#define FLAG_HIDE_RUSTURF_TUNNEL_WANDA                              0x3D7
+#define FLAG_UNUSED_0x3D7                                           0x3D7 // Was used to hide Wanda in Rusturf Tunnel, now shares flag with boyfriend - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 2 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 2, SCENE 01
 #define FLAG_UNUSED_0x3D8                                           0x3D8 // Was used to hide Wanda in Verdanturf Town house, now shares flag with boyfriend - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 2 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 2, SCENE 01
 #define FLAG_HIDE_ROUTE_120_KECLEON_2                               0x3D9
 #define FLAG_HIDE_ROUTE_120_KECLEON_3                               0x3DA

@@ -47,7 +47,7 @@ void HealPlayerParty(void)
 	PokevialRefill(); //Pokevial Branch
 
     // Recharge Tera Orb, if possible.
-    if (!IsTeraOrbCharged() && CheckBagHasItem(ITEM_TERA_ORB, 1))
+    if (CheckBagHasItem(ITEM_TERA_ORB, 1))
         FlagSet(B_FLAG_TERA_ORB_CHARGED);
 }
 

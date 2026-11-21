@@ -15,5 +15,7 @@ Expansion2_ClearUnusedFlag::
 	clearflag FLAG_UNUSED_0x2DB
 # 9 "data/expansion_2/global.pory"
 	clearflag FLAG_UNUSED_0x34C
+# 10 "data/expansion_2/global.pory"
+	clearflag FLAG_UNUSED_0x371
 	return
 

@@ -838,10 +838,10 @@
 #define FLAG_UNUSED_0x312                                           0x312 // Was used for hiding Scott on Route 119 - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 2 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 2, SCENE 01
 #define FLAG_HIDE_LILYCOVE_MOTEL_SCOTT                              0x313
 #define FLAG_HIDE_MOSSDEEP_CITY_SCOTT                               0x314
-#define FLAG_HIDE_FANCLUB_OLD_LADY                                  0x315
-#define FLAG_HIDE_FANCLUB_BOY                                       0x316
-#define FLAG_HIDE_FANCLUB_LITTLE_BOY                                0x317
-#define FLAG_HIDE_FANCLUB_LADY                                      0x318
+#define FLAG_HIDE_FANCLUB_MEMBERS                                   0x315
+#define FLAG_UNUSED_0x316                                           0x316 // Was used for hiding a fan club member - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 2 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 2, SCENE 01
+#define FLAG_UNUSED_0x317                                           0x317 // Was used for hiding a fan club member - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 2 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 2, SCENE 01
+#define FLAG_UNUSED_0x318                                           0x318 // Was used for hiding a fan club member - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 2 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 2, SCENE 01
 #define FLAG_HIDE_EVER_GRANDE_POKEMON_CENTER_1F_SCOTT               0x319
 #define FLAG_HIDE_LITTLEROOT_TOWN_RIVAL                             0x31A
 #define FLAG_HIDE_LITTLEROOT_TOWN_BIRCH                             0x31B

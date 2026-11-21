@@ -767,7 +767,7 @@
 #define FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS            0x2CD
 #define FLAG_HIDE_MEW                                               0x2CE
 #define FLAG_HIDE_ROUTE_104_RIVAL                                   0x2CF // Hides the rival on Route 104, used when rival is not fought in Rustboro City
-#define FLAG_UNUSED_0x2D0                                           0x2D0 // Was a flag to hide Birch or his bag
+#define FLAG_UNUSED_0x2D0                                           0x2D0 // Was used to hide Birch or his bag  - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 2 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 2, SCENE 01
 #define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH                  0x2D1
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM          0x2D2
 #define FLAG_HIDE_ROUTE_103_RIVAL                                   0x2D3
@@ -780,7 +780,7 @@
 #define FLAG_ENABLE_BARONS_MOM_MATCH_CALL                           0x2D9 // Was unused
 
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
-#define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB
+#define FLAG_UNUSED_0x2DB                                           0x2DB // Was used to hide the Aqua grunt in Rustboro City  - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 2 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 2, SCENE 01
 #define FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1                    0x2DC
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE_ASLEEP              0x2DD
 #define FLAG_HIDE_PLAYERS_HOUSE_DAD                                 0x2DE
@@ -835,7 +835,7 @@
 #define FLAG_HIDE_TERRA_CAVE_GROUDON                                0x30F
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_MOM          0x310
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM              0x311
-#define FLAG_UNUSED_0x312                                           0x312 // Was for hiding Scott on Route 119
+#define FLAG_UNUSED_0x312                                           0x312 // Was used for hiding Scott on Route 119  - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 2 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 2, SCENE 01
 #define FLAG_HIDE_LILYCOVE_MOTEL_SCOTT                              0x313
 #define FLAG_HIDE_MOSSDEEP_CITY_SCOTT                               0x314
 #define FLAG_HIDE_FANCLUB_OLD_LADY                                  0x315
@@ -893,14 +893,14 @@
 #define FLAG_HIDE_SLATEPORT_CITY_HARBOR_CAPTAIN_STERN               0x349
 #define FLAG_HIDE_BATTLE_FRONTIER_SUDOWOODO                         0x34A
 #define FLAG_UNUSED_0x34B                                           0x34B // Unused, was a duplicate for Rock Smash scripting
-#define FLAG_HIDE_RUSTBORO_CITY_SCIENTIST                           0x34C
+#define FLAG_UNUSED_0x34C                                           0x34C // Was used to hide the scientist in Rustboro City - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 2 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 2, SCENE 01
 #define FLAG_UNUSED_0x34D                                           0x34D // Was used to hide Aqua Grunt in Slateport Harbor - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 1 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 1, SCENE 01
 #define FLAG_UNUSED_0x34E                                           0x34E // Was used to hide Archie in Slateport Harbor     - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 1 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 1, SCENE 01
 #define FLAG_HIDE_JAGGED_PASS_MAGMA_GUARD                           0x34F
 #define FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_ELEMENTS               0x350 // Controls Submarine, Aqua Grunt, and Archie
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_PICHU_DOLL          0x351
 #define FLAG_HIDE_MAGMA_HIDEOUT_4F_GROUDON_ASLEEP                   0x352
-#define FLAG_UNUSED_0x353                                           0x353 // Was for hiding the rival on Route 119
+#define FLAG_UNUSED_0x353                                           0x353 // Was used for hiding the rival on Route 119  - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 2 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 2, SCENE 01
 #define FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS                         0x354
 #define FLAG_HIDE_MAGMA_HIDEOUT_4F_GROUDON                          0x355
 #define FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS                         0x356
@@ -971,8 +971,8 @@
 #define FLAG_HIDE_ROUTE_110_RIVAL                                   0x397
 #define FLAG_HIDE_CHAMPIONS_ROOM_RIVAL                              0x398
 #define FLAG_HIDE_CHAMPIONS_ROOM_BIRCH                              0x399
-#define FLAG_UNUSED_0x39A                                           0x39A // Was for hiding the rival on bike on Route 110
-#define FLAG_UNUSED_0x39B                                           0x39B // Was for hiding the rival on bike on Route 119
+#define FLAG_UNUSED_0x39A                                           0x39A // Was used to hide the rival on bike on Route 110 - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 2 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 2, SCENE 01
+#define FLAG_UNUSED_0x39B                                           0x39B // Was used to hide the rival on bike on Route 119 - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 2 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 2, SCENE 01
 #define FLAG_HIDE_AQUA_HIDEOUT_GRUNTS                               0x39C
 #define FLAG_HIDE_LILYCOVE_MOTEL_GAME_DESIGNERS                     0x39D
 #define FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA                              0x39E
@@ -1044,7 +1044,7 @@
 #define FLAG_HIDE_WEATHER_INSTITUTE_2F_AQUA_GRUNT_M                 0x3E0
 #define FLAG_HIDE_LILYCOVE_POKEMON_CENTER_CONTEST_LADY_MON          0x3E1
 #define FLAG_HIDE_MT_CHIMNEY_LAVA_COOKIE_LADY                       0x3E2
-#define FLAG_UNUSED_0x3E3                                           0x3E3 // Was a flag to hide Scott in Petalburg City
+#define FLAG_UNUSED_0x3E3                                           0x3E3 // Was used to hide Scott in Petalburg City - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 2 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 2, SCENE 01
 #define FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA                          0x3E4
 #define FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE                            0x3E5
 #define FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON                           0x3E6

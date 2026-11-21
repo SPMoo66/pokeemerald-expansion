@@ -116,7 +116,6 @@ RustboroCity_EventScript_MatchCallTutorial::
 	waitmovement 0
 	playse SE_EXIT
 	removeobject LOCALID_RUSTBORO_SCIENTIST
-	setflag FLAG_HIDE_RUSTBORO_CITY_SCIENTIST
 	setvar VAR_RUSTBORO_CITY_STATE, 7
 	setrespawn HEAL_LOCATION_RUSTBORO_CITY
 	clearflag FLAG_HIDE_MAP_NAME_POPUP

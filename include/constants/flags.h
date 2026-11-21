@@ -814,7 +814,7 @@
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK                  0x2FA
 #define FLAG_HIDE_DEOXYS                                            0x2FB
 #define FLAG_HIDE_BIRTH_ISLAND_DEOXYS_TRIANGLE                      0x2FC
-#define FLAG_HIDE_MAUVILLE_CITY_SCOTT                               0x2FD
+#define FLAG_UNUSED_0x2FD                                           0x2FD // Was used to hide Scott in Mauville City - DO NOT REUSE THIS FOR ANYTHING EARLIER THAN EXPANSION 2 AS IT MAY BE PREVIOUSLY SET, THIS WILL BE CLEARED IN EXPANSION 2, SCENE 01
 #define FLAG_HIDE_VERDANTURF_TOWN_SCOTT                             0x2FE
 #define FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT                  0x2FF
 #define FLAG_HIDE_ROUTE_111_VICTOR_WINSTRATE                        0x300

@@ -15,4 +15,7 @@ script Expansion2_ClearUnusedFlag { // This script clears flags that may have be
 	clearflag (FLAG_UNUSED_0x318)
 	clearflag (FLAG_UNUSED_0x3D7)
 	clearflag (FLAG_UNUSED_0x3D8)
+	clearflag (FLAG_UNUSED_0x374)
+	clearflag (FLAG_UNUSED_0x375)
+	clearflag (FLAG_UNUSED_0x376)
 }

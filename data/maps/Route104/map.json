@@ -3,7 +3,6 @@
   "name": "Route104",
   "layout": "LAYOUT_ROUTE104",
   "music": "MUS_ROUTE104",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_104",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -236,9 +235,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
       "x": 31,
-      "y": 3,
+      "y": 8,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -672,5 +671,6 @@
       "item": "ITEM_TINY_MUSHROOM",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_TINY_MUSHROOM_2"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

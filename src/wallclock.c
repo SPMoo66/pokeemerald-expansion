@@ -69,6 +69,7 @@ enum {
 enum {
     WIN_MSG,
     WIN_BUTTON_LABEL,
+    WIN_BUTTON_SET,
 };
 
 static const u32 sHand_Gfx[] = INCGFX_U32("graphics/wallclock/hand.png", ".4bpp.smol");
@@ -93,6 +94,15 @@ static const struct WindowTemplate sWindowTemplates[] =
         .height = 2,
         .paletteNum = 12,
         .baseBlock = 560
+    },
+    [WIN_BUTTON_SET] = {
+        .bg = 2,
+        .tilemapLeft = 3,
+        .tilemapTop = 16,
+        .width = 6,
+        .height = 2,
+        .paletteNum = 12,
+        .baseBlock = 608
     },
     DUMMY_WIN_TEMPLATE
 };
@@ -760,6 +770,8 @@ void CB2_ViewWallClock(void)
 
     WallClockInit();
 
+    AddTextPrinterParameterized(WIN_BUTTON_SET, FONT_NORMAL, COMPOUND_STRING(" Set"), 0, 1, 0, NULL);
+    PutWindowTilemap(WIN_BUTTON_SET);
     AddTextPrinterParameterized(WIN_BUTTON_LABEL, FONT_NORMAL, gText_Cancel, 0, 1, 0, NULL);
     PutWindowTilemap(WIN_BUTTON_LABEL);
     ScheduleBgCopyTilemapToVram(2);
@@ -879,6 +891,7 @@ static void Task_ViewClock_HandleInput(u8 taskId)
         gTasks[taskId].func = Task_ViewClock_FadeOut;
     if (JOY_NEW(R_BUTTON)){
         PlaySE(SE_SELECT);
+        ClearWindowTilemap(WIN_BUTTON_SET);
         DecompressDataWithHeaderVram(gWallClockStart_Tilemap, (u16 *)BG_SCREEN_ADDR(7));
         AddTextPrinterParameterized(1, FONT_NORMAL, gMenuText_Confirm, 0, 1, 0, NULL);
         PutWindowTilemap(1);

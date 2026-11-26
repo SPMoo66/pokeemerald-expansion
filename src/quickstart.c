@@ -5,6 +5,7 @@
 #include "decompress.h"
 #include "graphics.h"
 #include "main.h"
+#include "main_menu.h"
 #include "overworld.h"
 #include "palette.h"
 #include "config/quickstart.h"
@@ -17,6 +18,8 @@
 
 
 #define TAG_SKIP_INTRO 2000
+
+#define NUM_PRESET_NAMES 25
 
 static const u32 gQuickstartHudGfx[] = INCGFX_U32("graphics/quickstart/quickstart_hud.png", ".4bpp.smol");
 #if FIRERED
@@ -79,15 +82,16 @@ static void CB2_SkipToNewGame(void)
     static const u8 sText_PlayerFemale[] = _("Leaf");
     static const u8 sText_Rival[] = _("Blue");
 #else
-    static const u8 sText_PlayerMale[] = _("Brendan");
-    static const u8 sText_PlayerFemale[] = _("May");
+//    static const u8 sText_PlayerMale[] = _("Brendan");
+//    static const u8 sText_PlayerFemale[] = _("May");
 #endif  // IS_FRLG
 
     if (!UpdatePaletteFade())
     {
         gSaveBlock2Ptr->playerGender = SetQuickstartPlayerGender();
-        const u8* textPtr = gSaveBlock2Ptr->playerGender == FEMALE ? sText_PlayerFemale : sText_PlayerMale;
-        StringCopy_PlayerName(gSaveBlock2Ptr->playerName, textPtr);
+//        const u8* textPtr = gSaveBlock2Ptr->playerGender == FEMALE ? sText_PlayerFemale : sText_PlayerMale;
+//        StringCopy_PlayerName(gSaveBlock2Ptr->playerName, textPtr);
+        NewGameBirchSpeech_SetDefaultPlayerName(Random() % NUM_PRESET_NAMES);
 
 #if IS_FRLG
         StringCopy_PlayerName(gSaveBlock1Ptr->rivalName, sText_Rival);

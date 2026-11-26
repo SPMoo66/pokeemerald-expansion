@@ -464,6 +464,7 @@ void Overworld_ResetBattleFlagsAndVars(void)
     FlagClear(FLAG_WILD_PARTNER);
     FlagClear(FLAG_NO_MONEY_LOSS_ON_DEFEAT);
     FlagClear(FLAG_DONT_TRANSITION_BATTLE_MUSIC);
+    FlagClear(FLAG_PREVENT_OVERWORLD_SPEEDUP_FOR_BATTLE);
 //    FlagClear(FLAG_SINGLE_WILD_OPPONENT); // So apparently these two can't be cleared here because it's before battle messages are read
 //    FlagClear(FLAG_WILD_OPPONENT);        //
     FlagClear(B_FLAG_NO_WHITEOUT);
@@ -3874,9 +3875,10 @@ static void DestroyItemIconSprite(void)
 u8 OverworldSpeedup_AdditionalIterations(u16 speed, bool32 overworld)
 {
     if (overworld
-        && speed == OPTIONS_OVERWORLD_SPEED_1X
+//        && speed == OPTIONS_OVERWORLD_SPEED_1X
         && (JOY_HELD(R_BUTTON)
         || (FlagGet(FLAG_PREVENT_OVERWORLD_SPEEDUP) && FLAG_PREVENT_OVERWORLD_SPEEDUP != 0)
+         || FlagGet(FLAG_PREVENT_OVERWORLD_SPEEDUP_FOR_BATTLE)
          || FlagGet(FLAG_SYS_DEXNAV_SEARCH)        //Other conditions when no speedup is wanted.
         ))
     {

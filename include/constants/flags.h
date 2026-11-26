@@ -1458,7 +1458,7 @@
 #define FLAG_LANDMARK_HUNTERS_HOUSE                 (SYSTEM_FLAGS + 0x5B)
 #define FLAG_LANDMARK_SEALED_CHAMBER                (SYSTEM_FLAGS + 0x5C)
 
-#define FLAG_UNUSED_0xA5D                           (SYSTEM_FLAGS + 0x5D) // Was FLAG_SYS_TV_LATIAS_LATIOS, but that was converted to a special flag
+#define FLAG_PREVENT_OVERWORLD_SPEEDUP_FOR_BATTLE   (SYSTEM_FLAGS + 0x5D) // Was FLAG_SYS_TV_LATIAS_LATIOS, but that was converted to a special flag
 
 #define FLAG_LANDMARK_SKY_PILLAR                    (SYSTEM_FLAGS + 0x5E)
 

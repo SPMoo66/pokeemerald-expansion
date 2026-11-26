@@ -173,7 +173,10 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
     metatileBehavior = MapGridGetMetatileBehaviorAt(position.x, position.y);
 
     if (CheckForTrainersWantingBattle() == TRUE)
+    {
+        FlagSet (FLAG_PREVENT_OVERWORLD_SPEEDUP_FOR_BATTLE);
         return TRUE;
+    }
 
     if (TryRunOnFrameMapScript() == TRUE)
         return TRUE;

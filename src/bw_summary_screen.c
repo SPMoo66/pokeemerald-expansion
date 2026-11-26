@@ -3879,7 +3879,8 @@ static void PutPageWindowTilemaps(u8 page)
         break;
     case PSS_PAGE_BATTLE_MOVES:
         PutWindowTilemap(PSS_LABEL_WINDOW_BATTLE_MOVES_TITLE);
-        if(!gMain.inBattle && !sMonSummaryScreen->summary.isEgg)
+        if(!gMain.inBattle && !sMonSummaryScreen->summary.isEgg
+            && (sMonSummaryScreen->mode != SUMMARY_MODE_SELECT_MOVE))
         {
             PutWindowTilemap(PSS_LABEL_WINDOW_PROMPT_DEX);
         }

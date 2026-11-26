@@ -219,6 +219,7 @@ Route111_EventScript_Victor::
 	lock
 	faceplayer
 	setflag FLAG_LANDMARK_WINSTRATE_FAMILY
+	speakername (CommonText_Victor)
 	msgbox Route111_Text_BattleOurFamily, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, Route111_EventScript_BattleWinstrates
 	msgbox Route111_Text_IsThatSo, MSGBOX_DEFAULT

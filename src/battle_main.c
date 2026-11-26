@@ -5364,6 +5364,7 @@ static void HandleEndTurn_FinishBattle(void)
         BeginFastPaletteFade(3);
         FadeOutMapMusic(5);
         TryRestoreHeldItems();
+        FlagClear(FLAG_PREVENT_OVERWORLD_SPEEDUP_FOR_BATTLE);
 
         for (u32 i = 0; i < PARTY_SIZE; i++)
         {

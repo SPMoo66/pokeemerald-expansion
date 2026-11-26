@@ -27,4 +27,8 @@ u8* ConvertMonHeightToString(u32 height);
 u8* ConvertMonWeightToString(u32 weight);
 bool32 ShouldSkipPokedexListEntry(enum NationalDexOrder dexNum);
 
+u8 ClearMonSprites(void);
+void FreeWindowAndBgBuffers(void);
+void CB2_Pokedex(void);
+
 #endif // GUARD_POKEDEX_H

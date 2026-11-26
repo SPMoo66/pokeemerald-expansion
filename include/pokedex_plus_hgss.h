@@ -10,6 +10,8 @@ bool32 Task_TryLoadInfoScreen_HGSS(u8);
 bool32 TryHandleInfoScreenInput_HGSS(u8 taskId);
 bool32 TryLoadAreaScreen_HGSS(u8 taskId);
 bool32 TrySwitchScreensFromAreaScreen_HGSS(u8 taskId);
+void CB2_OpenPokedexPlusHGSSToMon(void);
+extern enum Species gSpeciesToLoad;
 void Task_DisplayCaughtMonDexPageHGSS(u8);
 bool32 TryLoadCryScreen_HGSS(u8 taskId);
 bool32 TrySwitchScreensFromCryScreen_HGSS(u8 taskId);
@@ -22,5 +24,6 @@ void HandleCreateStatBars_HGSS(void);
 void HandleCreateStatBarsDPAD_HGSS(void);
 void HandleCaughtMonPageTypeIcons_HGSS(void);
 bool32 TryHandleCaughtMonPageFlicker_HGSS(u8 taskId);
+void Task_ClosePokedexToSummaryScreen(u8);
 
 #endif // GUARD_POKEDEX_PLUS_HGSS_H

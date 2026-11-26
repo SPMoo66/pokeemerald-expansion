@@ -75,7 +75,6 @@ struct SearchMenuItem
 };
 
 // this file's functions
-static void CB2_Pokedex(void);
 static void Task_OpenPokedexMainPage(u8);
 static void Task_WaitForScroll(u8);
 static void Task_HandlePokedexStartMenuInput(u8);
@@ -92,12 +91,10 @@ static void Task_WaitForExitSearchResultsInfoScreen(u8);
 static void Task_ReturnToPokedexFromSearchResults(u8);
 static void Task_ClosePokedexFromSearchResultsStartMenu(u8);
 static bool8 LoadPokedexListPage(u8);
-static void FreeWindowAndBgBuffers(void);
 static bool8 UpdateDexListScroll(u8, u8, u8);
 static u16 TryDoPokedexScroll(u16, u16);
 static void UpdateSelectedMonSpriteId(void);
 static bool8 TryDoInfoScreenScroll(void);
-static u8 ClearMonSprites(void);
 static u16 GetPokemonSpriteToDisplay(u16);
 static u32 CreatePokedexMonSprite(u16, s16, s16);
 static void CreateInterfaceSprites(u8);
@@ -1499,7 +1496,7 @@ void CB2_OpenPokedex(void)
     }
 }
 
-static void CB2_Pokedex(void)
+void CB2_Pokedex(void)
 {
     RunTasks();
     AnimateSprites();
@@ -2040,7 +2037,7 @@ void LoadPokedexBgPalette(bool8 isSearchResults)
     LoadPalette(GetOverworldTextboxPalettePtr(), BG_PLTT_ID(15), PLTT_SIZE_4BPP);
 }
 
-static void FreeWindowAndBgBuffers(void)
+void FreeWindowAndBgBuffers(void)
 {
     void *tilemapBuffer;
 
@@ -2673,7 +2670,7 @@ static bool8 TryDoInfoScreenScroll(void)
     return FALSE;
 }
 
-static u8 ClearMonSprites(void)
+u8 ClearMonSprites(void)
 {
     u16 i;
 
@@ -3357,7 +3354,16 @@ void Task_HandleInfoScreenInput(u8 taskId)
     if (JOY_NEW(B_BUTTON))
     {
         BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
-        gTasks[taskId].func = Task_ExitInfoScreen;
+        if(gSpeciesToLoad != SPECIES_NONE)
+        {
+            FreeAndDestroyMonPicSprite(gTasks[taskId].tMonSpriteId);
+            gTasks[taskId].func = Task_ClosePokedexToSummaryScreen;
+            gSpeciesToLoad = SPECIES_NONE;
+        }
+        else
+        {
+            gTasks[taskId].func = Task_ExitInfoScreen;
+        }
         PlaySE(SE_PC_OFF);
         return;
     }

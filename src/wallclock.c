@@ -97,9 +97,9 @@ static const struct WindowTemplate sWindowTemplates[] =
     },
     [WIN_BUTTON_SET] = {
         .bg = 2,
-        .tilemapLeft = 3,
-        .tilemapTop = 16,
-        .width = 6,
+        .tilemapLeft = 24,
+        .tilemapTop = 1,
+        .width = 4,
         .height = 2,
         .paletteNum = 12,
         .baseBlock = 608

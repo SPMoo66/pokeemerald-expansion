@@ -177,6 +177,7 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
         FlagSet (FLAG_PREVENT_OVERWORLD_SPEEDUP_FOR_BATTLE);
         return TRUE;
     }
+    FlagClear (FLAG_PREVENT_OVERWORLD_SPEEDUP_FOR_BATTLE);
 
     if (TryRunOnFrameMapScript() == TRUE)
         return TRUE;

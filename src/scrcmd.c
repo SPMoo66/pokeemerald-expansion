@@ -2416,6 +2416,7 @@ bool8 ScrCmd_trainerbattle(struct ScriptContext *ctx)
 {
     Script_RequestEffects(SCREFF_V1 | SCREFF_TRAINERBATTLE);
 
+    FlagSet (FLAG_PREVENT_OVERWORLD_SPEEDUP_FOR_BATTLE);
     ConfigureTrainerBattle(ctx);
     return FALSE;
 }

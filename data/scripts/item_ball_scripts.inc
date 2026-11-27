@@ -1,4 +1,6 @@
 Common_EventScript_FindItem::
+	setflag (FLAG_PREVENT_OVERWORLD_SPEEDUP_FOR_BATTLE)
 	callnative GetItemBallIdAndAmountFromTemplate
 	finditem VAR_RESULT VAR_0x8009
+	clearflag (FLAG_PREVENT_OVERWORLD_SPEEDUP_FOR_BATTLE)
 	end

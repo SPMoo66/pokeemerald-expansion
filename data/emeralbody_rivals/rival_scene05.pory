@@ -62,6 +62,7 @@ script Rival_Scene05 {
 		applymovement (JAKSON_SCENE05, Common_Movement_WalkInPlaceLeft)
 		applymovement (REDD_SCENE05, Common_Movement_WalkInPlaceLeft)
 		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceRight)
+		waitmovement (0)
 		speakername (CommonText_Sakura)
 		msgbox (Scene05_Text_Sakura1)
 		closemessage
@@ -83,6 +84,7 @@ script Rival_Scene05 {
 		waitmovement (0)
 		applymovement (REDD_SCENE05, Common_Movement_WalkInPlaceRight)
 		applymovement (LOCALID_PLAYER, Common_Movement_WalkInPlaceLeft)
+		waitmovement (0)
 		speakername (CommonText_Sakura)
 		msgbox (Scene05_Text_Sakura1)
 		closemessage
